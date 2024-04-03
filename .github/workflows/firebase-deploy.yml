@@ -3,14 +3,14 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - main  # Set this to your default branch
+      - main  # Automatic build on push to main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: npm install
