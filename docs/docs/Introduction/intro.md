@@ -26,12 +26,27 @@ You can [sign up](https://app.flutterflow.io/create-account) via Apple, Google, 
 
 ## System Requirements
 
-FlutterFlow is a web app that can be used from your browser. Please review these system requirements for the best experience:
+The FlutterFlow application can be accessed from your browser or installed as a desktop app.
 
-- Building on any laptop or desktop is currently supported.
-- Using a screen that is at least **1280 x 1084** is recommended.
-- FlutterFlow works best on **Google Chrome** (if you are experiencing any issues, we recommend switching to Chrome).
-- [Allow pop-up and redirects and ClipBoard](/troubleshooting/miscellaneous#i-cant-copy-paste-widgets.) from app.flutterflow.io.
+### General recommendations:
+- Use a screen that is at least **1280 x 1084** 
+
+### Browser recommendations:
+- FlutterFlow works best on **Google Chrome** 
+- We recommend keeping your browser up-to-date, specifically within the latest two versions
+- You should [allow pop-up and redirects and ClipBoard](/troubleshooting/miscellaneous#i-cant-copy-paste-widgets.) from app.flutterflow.io.
+
+### Desktop recommendations:
+- **macOS**: While FlutterFlow should work on 10.13 or higher, we recommend using 13 or higher
+- **Windows**: While FlutterFlow should work on 7 or higher, we recommend using 10 or higher
+- **Windows**: While FlutterFlow should work on 7 or higher, we recommend using 10 or higher
+
+For details on target platform system requirements, please see the [Flutter documentation](https://docs.flutter.dev/reference/supported-platforms).
+
+### Desktop vs Web:
+We recommend using the desktop application for improved performance and access to features like [local run](TOD0). 
+
+However, our desktop applications are currently in a preview phase, which may result in some instability. 
 
 ## Need Help?
 
