@@ -7,7 +7,7 @@ const markdownImageRegex = /!\[(.*?)\]\((.*?)\)/g;
 function convertImageSyntax(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
     content = content.replace(markdownImageRegex, (match, alt, src) => {
-        return `<img src="${src}" alt="${alt}" class="small-image"  />`; // Customize this string as needed
+        return `<img src="${src}" alt="${alt}"  />`; // Customize this string as needed
     });
     fs.writeFileSync(filePath, content, 'utf8');
 }
