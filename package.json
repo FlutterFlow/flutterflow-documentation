@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "node scripts/snippet-inclusion.js && docusaurus start",
-    "build": "node scripts/snippet-inclusion.js && docusaurus build",
+    "start": "node scripts/convertImages.js && docusaurus start",
+    "build": "node scripts/convertImages.js && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -46,5 +46,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "description": "Docusaurus example project (classic-typescript template)"
+  "description": "FlutterFlow Documentation"
 }
