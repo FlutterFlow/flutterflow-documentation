@@ -72,7 +72,7 @@ The `initialize()` method creates an instance of SharedPreferences, preparing it
 :::info
 Also note that this initialization occurs only because the 'Persist Auth Sessions' option has been enabled in the Custom Authentication Settings.
 
-![Alt text for the image](/img/persist-auth-session.png)
+<img src="/img/persist-auth-session.png" alt="Alt text for the image" />
 
 :::
 
@@ -86,7 +86,7 @@ Upon calling the signIn method, it triggers the `_updateCurrentUser` method from
 This method receives various parameters such as `authenticationToken`, `refreshToken`, `tokenExpiration`, `authUid`, and `userData`, updating the CustomAuthManager class's properties with these details. Consequently, this stores the current session's authentication and user information effectively.
 
 :::info
-To learn more about the concepts of Authentication Token, Refresh Token, and Token Expiry Time, please refer the [Concepts](../Authentication/Concepts/Token.md) doc.
+To learn more about the concepts of Authentication Token, Refresh Token, and Token Expiry Time, please refer the [Concepts](Concepts/Token.md) doc.
 :::
 
 A new user object, marked as logged in (`loggedIn` set to true), along with the provided `authUid` and `userData`, is then added to the user object stream mentioned earlier. This update informs all the stream's subscribers about the changed user state, signaling that the user has successfully logged in.
