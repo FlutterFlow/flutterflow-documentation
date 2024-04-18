@@ -21,7 +21,7 @@ const config: Config = {
           breadcrumbs: false,
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          // editUrl: '/',
+          editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
           // exclude: ['README.md'],
           // lastVersion: 'current',
           // versions: {
@@ -35,7 +35,10 @@ const config: Config = {
         // },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'FlutterFlow Blog',
+          blogSidebarCount: 'ALL'
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,7 +65,7 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          docId: 'troubleshooting/support-articles/create-a-blog-post', // Adjust to the first document in "Troubleshooting"
+          docId: 'troubleshooting/overview', // Adjust to the first document in "Troubleshooting"
           position: 'left',
           label: 'Troubleshooting',
         },
@@ -72,14 +75,8 @@ const config: Config = {
           position: 'left',
           label: 'Changelog',
         },
-        // {
-        //   type: 'doc',
-        //   docId: 'documentation/', // Adjust to the first document in "Changelog"
-        //   position: 'left',
-        //   label: 'Docs',
-        // },
         {
-          to: '/blog',
+          to: '/blog/overview',
           label: 'Blog',
           position: 'left'
         },
