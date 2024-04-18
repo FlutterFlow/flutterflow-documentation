@@ -35,7 +35,10 @@ const config: Config = {
         // },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'FlutterFlow Blog',
+          blogSidebarCount: 'ALL'
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,14 +75,8 @@ const config: Config = {
           position: 'left',
           label: 'Changelog',
         },
-        // {
-        //   type: 'doc',
-        //   docId: 'documentation/', // Adjust to the first document in "Changelog"
-        //   position: 'left',
-        //   label: 'Docs',
-        // },
         {
-          to: '/blog',
+          to: '/blog/overview',
           label: 'Blog',
           position: 'left'
         },

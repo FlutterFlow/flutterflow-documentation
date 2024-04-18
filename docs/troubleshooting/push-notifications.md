@@ -1,18 +1,15 @@
 ---
 slug: push-notifications
 title: Push Notification Issues
-authors:
-  - name: Barry
-    title: FlutterFlow Support Team
-    # url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
+authors: barry
 tags: []
+toc_max_heading_level: 5
 ---
 
 Push notifications play a vital role in mobile apps, letting you connect with your audience and update them on key developments. But, there are instances when push notifications fail to deliver. In this guide, we'll explore some typical problems that hinder push notifications in FlutterFlow and offer detailed instructions on how to fix them.
 
 
-![Alt text](image.png)
+![Firebase Console](./push-notification-assets/push-notifications-ff.png)
 
 :::tip Using CodeMagic? [Skip ahead!](https://mdxjs.com/playground/)
 
@@ -23,7 +20,7 @@ Push notifications play a vital role in mobile apps, letting you connect with yo
 #### 1. Ensure your subscription status hasn't changed.
 Head to the [Firebase Console](https://console.firebase.google.com/) and select Project Settings > Usage & Billing > Details & Settings. 
 
-![Alt text](image-1.png)
+![Firebase Console](./push-notification-assets/firebase-console.png)
 
 If you see Spark listed, you will need to select Modify Plan and upgrade to a Blaze Plan. 
 
@@ -32,3 +29,4 @@ If you see Spark listed, you will need to select Modify Plan and upgrade to a Bl
 #### 2. Ensure your subscription status hasn't changed.
 
 
+...
