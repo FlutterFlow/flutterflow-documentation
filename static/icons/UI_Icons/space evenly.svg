@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UI Icons/UI InspectorPanel/space evenly</title>
+    <g id="UI-Icons/UI-InspectorPanel/space-evenly" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 4.000000)" fill="#95A1AC">
+            <rect id="Rectangle" x="8.8" y="6.79041916" width="3" height="2.39520958"></rect>
+            <path d="M1.19760479,6.79041916 L2.30414747,6.79041916 L2.30414747,6.79041916 L2.30414747,9.18562874 L1.19760479,9.18562874 C0.536185928,9.18562874 8.10004492e-17,8.64944281 0,7.98802395 C-8.10004492e-17,7.32660509 0.536185928,6.79041916 1.19760479,6.79041916 Z" id="Rectangle-Copy-3"></path>
+            <path d="M18.1520737,6.79041916 L19.2586164,6.79041916 C19.9200353,6.79041916 20.4562212,7.32660509 20.4562212,7.98802395 C20.4562212,8.64944281 19.9200353,9.18562874 19.2586164,9.18562874 L18.1520737,9.18562874 L18.1520737,9.18562874 L18.1520737,6.79041916 Z" id="Rectangle-Copy-4"></path>
+            <rect id="Rectangle-Copy" x="13.1520737" y="0" width="4" height="16" rx="1"></rect>
+            <rect id="Rectangle-Copy-2" x="3.30414747" y="0" width="4" height="16" rx="1"></rect>
+        </g>
+    </g>
+</svg>

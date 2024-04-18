@@ -1,0 +1,23 @@
+.infoCard {
+  border: var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.infoCard:hover {
+  border: var(--selected-border);
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+.infoCardIcon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.infoCardTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UI Icons/format_sizev0</title>
+    <defs>
+        <path d="M9,4 L9,7 L14,7 L14,19 L17,19 L17,7 L22,7 L22,4 L9,4 L9,4 Z M3,12 L6,12 L6,19 L9,19 L9,12 L12,12 L12,9 L3,9 L3,12 L3,12 Z" id="path-1"></path>
+    </defs>
+    <g id="UI-Icons/format_size" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#95A1AC" xlink:href="#path-1"></use>
+    </g>
+</svg>
