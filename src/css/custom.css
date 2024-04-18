@@ -1,32 +1,59 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Product Sans', sans-serif;
+  --ifm-font-family-monospace: 'Roboto Mono', monospace; /* For monospace font if needed */
+  --border: 1px solid #ccc;
+  --selected-border: 1px solid var(--ifm-color-primary);
+  --ifm-code-font-size: 95%; /* Adjusted code font size */
+  --graytext: #95a1ac;
+  --secondary-400: #ee8b60;
+  --gray500: #7c8791;
+  --primary: #4b39ef;
+  --dark-600: #1a1f24;
+  --medium-blue: #3124a1;
+  --dark_600: #262d34;
+  --dark_800: #14181b;
+  --tertiary: #39d2c0;
+  --light_alternate: #dee2ed;
+  --white: white;
+  --black-700: #1d2429;
+  --black-900: #090f13;
+  --tertiary600: #249689;
+  --light-background: #f8faff;
+  --primary-30: rgba(75, 57, 239, .3);
+  --line: #323b45;
+  --primary200: #9489f5;
+  --gradient-1: #ffb6f5;
+  --error: #e65454;
+  --gradient-2: #ffedc4;
+  --tertiary-600: #c3724c;
+  --size: 8px;
+  --size-2: 12px;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+html[data-theme='light'] {
+  --primary-text: var(--black-900);
+  --ifm-color-primary: #4B39EF; /* Primary brand color */
+  --ifm-color-primary-dark: #3B2FBF; /* Darker shade for hover states */
+  --ifm-color-primary-darker: #2D25A1; /* Even darker shade for active states */
+  --ifm-color-primary-darkest: #1E1A82; /* Darkest shade used for accents */
+  --ifm-color-primary-light: #5C51FF; /* Lighter primary shade */
+  --ifm-color-primary-lighter: #8A82FF; /* Even lighter shade for backgrounds */
+  --ifm-color-primary-lightest: #B7B2FF; /* Lightest primary shade */  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Line highlighting in code */
+
+}
+
+html[data-theme='dark'] {
+  --primary-text: var(--graytext);
+  --ifm-color-primary: #786aff; /* Primary brand color, lighter purple for visibility on dark backgrounds */
+  --ifm-color-primary-dark: #6255c8; /* Dark shade for hover states, toned down for dark mode */
+  --ifm-color-primary-darker: #5042a3; /* Even darker shade for active states, balanced for contrast */
+  --ifm-color-primary-darkest: #3d3180; /* Darkest shade used for accents, dark yet visible */
+  --ifm-color-primary-light: #8e7eff; /* Lighter primary shade, appears vibrant against dark surfaces */
+  --ifm-color-primary-lighter: #a295ff; /* Even lighter shade for backgrounds, soft and subtle */
+  --ifm-color-primary-lightest: #b6adff; /* Lightest primary shade, nearly pastel against dark modes */
+  --ifm-code-font-size: 95%; /* Maintained font size for readability */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter line highlighting in code for dark mode */
 }
 
 .video-container {
@@ -47,4 +74,41 @@
 .small-image {
   width: 400px;
   height: auto;
+}
+
+body {
+  color: #333;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+  color:var(--primary-text);
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+h3 {
+  color:var(--graytext);
+  font-weight: 200;
+}
+
+
+p {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }
