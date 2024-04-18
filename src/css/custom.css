@@ -44,7 +44,7 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --primary-text: var(--white);
+  --primary-text: var(--graytext);
   --ifm-color-primary: #786aff; /* Primary brand color, lighter purple for visibility on dark backgrounds */
   --ifm-color-primary-dark: #6255c8; /* Dark shade for hover states, toned down for dark mode */
   --ifm-color-primary-darker: #5042a3; /* Even darker shade for active states, balanced for contrast */
@@ -66,7 +66,7 @@ html[data-theme='dark'] {
 body {
   color: #333;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 20px;
 }
 
@@ -88,8 +88,8 @@ h2 {
 }
 
 h3 {
-  color: var(--graytext);
-  font-weight: 500;
+  color:var(--graytext);
+  font-weight: 200;
 }
 
 

@@ -4,7 +4,7 @@ import InfoCard from '../InfoCard';
 import styles from './index.module.css';
 
 const InfoCards = ({ children }) => {
-  return <div className="card-container">{children}</div>;
+  return <div className={styles.cardContainer}>{children}</div>;
 };
 
 export default InfoCards;

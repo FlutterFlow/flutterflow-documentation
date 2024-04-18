@@ -1,9 +1,10 @@
 .infoCard {
   border: var(--border);
   border-radius: 4px;
-  padding: 20px;
+  padding: 30px;
   transition: background-color 0.3s;
 }
+
 
 .infoCard:hover {
   border: var(--selected-border);
@@ -17,7 +18,18 @@
 
 .infoCardTitle {
   font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  height: 1.5em; /* 1em typically equals the font-size of the parent, which is the h2 in this case */
+  padding-right: 10px;
+  width: auto; /* Maintain the aspect ratio of the image */
 }
 

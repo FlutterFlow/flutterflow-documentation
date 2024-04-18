@@ -1,7 +1,6 @@
-/* App.css */
 .cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: -10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    gap: 40px; 
 }

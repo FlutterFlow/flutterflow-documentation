@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 
 const FlutterFlowDocsLogo = () => {
-  const title = "FlutterFlow Documentation";
+  const title = "FlutterFlow Docs";
   const logoSrc = "/logos/logoMark_outlinePrimary_transparent.svg"; // Path relative to the static directory
 
   return (

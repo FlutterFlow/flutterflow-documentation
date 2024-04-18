@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>UI Icons/SVG /RazorPay</title>
-    <g id="UI-Icons/RazorPay" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M17.2476302,5 L10.2493537,9.53366983 L9.5707251,12.0314539 L13.4550659,9.51945094 L10.9146251,18.9978456 L13.4947064,19 L17.2476302,5 Z M12.4519882,10.8939431 L6.06857073,15.0152653 L5,19 L10.2881325,19 L12.4519882,10.8939431 Z" id="Combined-Shape" fill="#95A1AC"></path>
-    </g>
-</svg>

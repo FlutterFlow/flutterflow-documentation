@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>UI Icons/UI InspectorPanel/spacing center vert</title>
-    <g id="UI-Icons/UI-InspectorPanel/spacing-center-vert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M22,11 L22,13 C22,13.5522847 21.5522847,14 21,14 L3,14 C2.44771525,14 2,13.5522847 2,13 L2,11 C2,10.4477153 2.44771525,10 3,10 L21,10 C21.5522847,10 22,10.4477153 22,11 Z M13,16 L11,16 L11,21 C11,21.5522847 11.4477153,22 12,22 C12.5522847,22 13,21.5522847 13,21 L13,16 Z M13,8 L11,8 L11,3 C11,2.44771525 11.4477153,2 12,2 C12.5522847,2 13,2.44771525 13,3 L13,8 Z" id="Combined-Shape" fill="#95A1AC"></path>
-    </g>
-</svg>

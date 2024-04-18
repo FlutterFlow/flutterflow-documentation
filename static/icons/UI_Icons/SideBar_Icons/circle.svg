@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>UI Icons/Sidebar Icons/SVG /circle</title>
-    <g id="UI-Icons/Sidebar-Icons/circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Play" transform="translate(7.5, 7.5)" fill="#95A1AC" fill-rule="nonzero">
-            <path d="M22.5,0 C10.0736121,0 0,10.0736121 0,22.5 C0,34.9263879 10.0736121,45 22.5,45 C34.9263879,45 45,34.9263879 45,22.5 C45,10.0736121 34.9263879,0 22.5,0 Z M22.5,3.13953488 C33.1924706,3.13953488 41.8604651,11.8075294 41.8604651,22.5 C41.8604651,33.1924706 33.1924706,41.8604651 22.5,41.8604651 C11.8075294,41.8604651 3.13953488,33.1924706 3.13953488,22.5 C3.13953488,11.8075294 11.8075294,3.13953488 22.5,3.13953488 Z"></path>
-        </g>
-    </g>
-</svg>
