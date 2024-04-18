@@ -1,22 +1,14 @@
 ---
-description: Introduction to FlutterFlow.
+title: Setting Up FlutterFlow
+description: Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow.
 ---
-
-# Introduction
-
-Welcome To FlutterFlow Docs!
 
 ## What is FlutterFlow?
 
-FlutterFlow is a low-code builder for developing native mobile applications. You can use our simple drag-and-drop interface to build your app 10x faster than traditional development.
+FlutterFlow is a visual development envirionment for building native mobile and web applications. FlutterFlow helps you build apps faster, without sacfiricing on app quality or features.
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-## New to FlutterFlow?
-
-The [Getting Started](/getting-started/dashboard) section will give you a quick overview of the FlutterFlow interface and guide you on building your first app with FlutterFlow.
-
-If there are any topics you'd like us to add to our documentation, please share your feedback [here](https://flutterflow.typeform.com/to/hxg5nxbo).
 
 ## Create an account
 
@@ -47,20 +39,5 @@ We recommend using the desktop application for improved performance and access t
 
 However, our desktop applications are currently in a preview phase, which may result in some instability. 
 
-## Need Help?
 
-To contact us directly, email [support@flutterflow.io](mailto:support@flutterflow.io). Thank you for being a part of the FlutterFlow journey!
 
-[Community Forum](https://community.flutterflow.io/)
-
-[YouTube](https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q)
-
-[FAQs](https://docs.flutterflow.io/troubleshooting/basic-troubleshooting-guide)
-
-[Blog](https://blog.flutterflow.io/)
-
----
-
-[Next: Dashboard](/getting-started/dashboard)
-
-Last updated 6 days ago

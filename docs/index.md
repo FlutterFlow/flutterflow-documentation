@@ -25,7 +25,7 @@ import BranchIcon from '@site/static/icons/branch_New.png';
 ### FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
 
 <InfoCards>
-    <InfoCard icon={GearIcon} title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." />
+    <InfoCard icon={GearIcon} title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/intro/before-you-begin/setting-up-flutterflow" />
     <InfoCard icon={DocsIcon}  title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." />
     <InfoCard icon={DeviceIcon}  title="Start Building" description="Jump right into a quick start on how to build a simple app." />
     <InfoCard icon={CheckIcon}  title="Troubleshooting Guides" description=" Solutions and tips to solve common FlutterFlow development hurdles." />

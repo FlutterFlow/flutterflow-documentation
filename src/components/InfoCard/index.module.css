@@ -3,8 +3,14 @@
   border-radius: 4px;
   padding: 30px;
   transition: background-color 0.3s;
+  box-sizing: border-box; /* Ensures padding is included in width/height */
 }
 
+@media (max-width: 768px) { /* For landscape phones and smaller tablets */
+  .infoCard {
+      padding: 20px; /* Smaller padding on smaller screens */
+  }
+}
 
 .infoCard:hover {
   border: var(--selected-border);
@@ -21,7 +27,7 @@
   font-size: 20px;
 }
 
-.container {
+.titleContainer {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
@@ -33,3 +39,12 @@
   width: auto; /* Maintain the aspect ratio of the image */
 }
 
+.infoCardLink {
+  display: flex;
+  color: var(--primary-texr); 
+}
+
+.infoCardLink:hover {
+  color: var(--primary-texr); 
+  text-decoration: none;
+}

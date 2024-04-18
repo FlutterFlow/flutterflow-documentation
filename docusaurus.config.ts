@@ -21,7 +21,7 @@ const config: Config = {
           breadcrumbs: false,
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          // editUrl: '/',
+          editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
           // exclude: ['README.md'],
           // lastVersion: 'current',
           // versions: {
@@ -62,7 +62,7 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          docId: 'troubleshooting/support-articles/create-a-blog-post', // Adjust to the first document in "Troubleshooting"
+          docId: 'troubleshooting/overview', // Adjust to the first document in "Troubleshooting"
           position: 'left',
           label: 'Troubleshooting',
         },

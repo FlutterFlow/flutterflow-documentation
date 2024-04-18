@@ -20,21 +20,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Getting Started',
       collapsed: false,
-      items: ['index', 'intro/app-architecture'],
+      items: ['index', {type: 'category', label: "Before You Begin", items: [
+        'intro/before-you-begin/setting-up-flutterflow', 'intro/before-you-begin/app-architecture'
+    ]}],
     }
   ]
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
 };
 
 export default sidebars;
