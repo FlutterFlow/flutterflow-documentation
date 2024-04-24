@@ -11,7 +11,15 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: ['index', {type: 'category', label: "Before You Begin", items: [
         'intro/before-you-begin/setting-up-flutterflow', 'intro/before-you-begin/app-architecture'
-    ]}],
+    ]}]
+    },
+    {
+      type: 'category',
+      label: 'Understanding the FlutterFlow UI',
+      collapsed: false,
+      items: [{type: 'category', label: "Projects", items: [
+        'understanding-the-flutterflow-ui/projects/how-to-modify-project-settings'
+    ]}]
     }
   ]
 };
