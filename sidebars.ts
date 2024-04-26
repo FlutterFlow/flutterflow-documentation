@@ -20,7 +20,8 @@ const sidebars: SidebarsConfig = {
                 'understanding-the-flutterflow-ui/projects/what-is-a-project',
                 'understanding-the-flutterflow-ui/projects/how-to-create-find-organize-projects',
                 'understanding-the-flutterflow-ui/projects/how-to-run-test-projects',
-                'understanding-the-flutterflow-ui/projects/how-to-collaborate-on-projects'
+                'understanding-the-flutterflow-ui/projects/how-to-collaborate-on-projects',
+                'understanding-the-flutterflow-ui/projects/how-to-create-use-app-state'
               ]
             },
           ]
