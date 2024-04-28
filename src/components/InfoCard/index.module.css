@@ -1,0 +1,50 @@
+.infoCard {
+  border: var(--border);
+  border-radius: 4px;
+  padding: 30px;
+  transition: background-color 0.3s;
+  box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+@media (max-width: 768px) { /* For landscape phones and smaller tablets */
+  .infoCard {
+      padding: 20px; /* Smaller padding on smaller screens */
+  }
+}
+
+.infoCard:hover {
+  border: var(--selected-border);
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+.infoCardIcon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.infoCardTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  height: 1.5em; /* 1em typically equals the font-size of the parent, which is the h2 in this case */
+  padding-right: 10px;
+  width: auto; /* Maintain the aspect ratio of the image */
+}
+
+.infoCardLink {
+  display: flex;
+  color: var(--primary-texr); 
+}
+
+.infoCardLink:hover {
+  color: var(--primary-texr); 
+  text-decoration: none;
+}

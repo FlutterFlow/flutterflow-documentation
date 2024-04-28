@@ -1,0 +1,22 @@
+
+.cardContainer {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to three columns */
+    grid-auto-rows: 1fr; /* Each row has equal height, adjusting to content */
+    gap: 20px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* For tablets and smaller desktops */
+    .cardContainer {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+  }
+  
+@media (max-width: 768px) { /* For landscape phones and smaller tablets */
+.cardContainer {
+    grid-template-columns: 1fr; /* Single column for small devices */
+}
+}
