@@ -1,5 +1,6 @@
 ---
 title: Firebase Auth Setup
+sidebar_position: 1
 ---
 
 # Initial Setup for Enabling Firebase Authentication
