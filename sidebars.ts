@@ -11,7 +11,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: ['index', {type: 'category', label: "Before You Begin", items: [
         'intro/before-you-begin/setting-up-flutterflow', 'intro/before-you-begin/app-architecture'
-    ]}],
+    ]},'intro/build-your-first-app'],
     }
   ]
 };
