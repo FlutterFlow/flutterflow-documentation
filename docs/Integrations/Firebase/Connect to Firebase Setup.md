@@ -51,7 +51,7 @@ In the dialog, scroll down to **Setup Firebase**, check that option, and click *
 2. Select **Add Member** from the top right.
 
 3. Add **firebase@flutterflow.io** as an "**Editor**" for your project and select **Done**. Then press **Add Member**.
-
+<img src="firebase-add-member.png" alt="firebase-add-member.png"  />
 4. On the same page (i.e., Users and Permissions), select **Advanced Permission Settings** (small blue text below the table). This will open the Google Cloud console in a new browser window.
 
 <img src="/img/firebase/project-settings.png" alt="Steps 2, 3 and 4" />
@@ -120,11 +120,11 @@ To configure Firestore Database:
 
 1. From the Firebase dashboard of your project, navigate to the far left menu. Under Build, select Firestore Database and then select Create Database (marked in yellow in the screenshot).
 
-![Alt text](/img/firebase/firebase-db-enable.png)
+<img src="/img/firebase/firebase-db-enable.png" alt="Alt text"  />
 
 2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next. 
 
-![Alt text](/img/firebase/firebase-security.png)
+<img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
 :::info
 We recommend updating your Firebase security rules before deploying your app. Please see [this link](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules) for additional information on Firestore security rules.
@@ -132,7 +132,7 @@ We recommend updating your Firebase security rules before deploying your app. Pl
 
 3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.
 
-![Alt text](/img/firebase/firebase-location.png)
+<img src="/img/firebase/firebase-location.png" alt="Alt text"  />
 
 On completion, you land at the panel view of Cloud Firestore and can start creating collections and documents right away!
 
@@ -145,4 +145,4 @@ If you want to deploy functions (e.g., Braintree payments, Push Notifications), 
 
 2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a new page to provide your payment information. Otherwise, you can set a project budget. Please see [this link](https://firebase.google.com/pricing) for additional information on Firebase pricing.
 
-![Alt text](/img/firebase/billing.png)
+<img src="/img/firebase/billing.png" alt="Alt text"  />
