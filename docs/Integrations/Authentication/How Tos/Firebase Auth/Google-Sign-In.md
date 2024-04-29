@@ -12,9 +12,9 @@ Google Sign-In allows users to authenticate using their Google Accounts.
 Before getting started with this section, ensure you have:
 
 Completed all steps in
-the [Firebase Setup](/docs/Integrations/Authentication/Firebase Auth/initial-setup.md).
+the [Firebase Setup](/docs/Integrations/Authentication/How%20Tos/Firebase%20Authebase%20Auth/initial-setup.md).
 
-Completed [Initial Setup](/docs/Integrations/Authentication/Firebase Auth/initial-setup.md)
+Completed [Initial Setup](/docs/Integrations/Authentication/How%20Tos/Firebase%20Authebase%20Auth/initial-setup.md)
 required for authentication.
 
 Added SHA-1 key and regerenated Config Keys.
