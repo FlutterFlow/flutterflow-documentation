@@ -99,3 +99,5 @@ You can create your own or use the one from page templates.
 
 ## Verify user creation
 To confirm the successful integration of Google authentication and the creation of users, navigate to your Firebase project > Authentication > Users and check the user entries.
+
+![verify-google-auth-users.png](verify-google-auth-users.png)
