@@ -30,11 +30,11 @@ It’s very straightforward yet introduces you to some fundamental concepts in a
 
 To kick off your project, the first step is to [create a new project](#). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account.
 
-![clone-project.png](../../static/img/clone-project.png)
+<img src="../../static/img/clone-project.png" alt="clone-project.png"  />
 
 After cloning the project, you’ll see a page with product images and description and you’ll add a feature that allows users to update the product quantity.
 
-![zero-to-final.png](../../static/img/zero-to-final.png)
+<img src="../../static/img/zero-to-final.png" alt="zero-to-final.png"  />
 
 ## 2. Building UI {#build-ui}
 
