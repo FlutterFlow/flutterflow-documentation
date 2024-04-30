@@ -14,11 +14,11 @@ const sidebars: SidebarsConfig = {
           'intro/before-you-begin/setting-up-flutterflow', 'intro/before-you-begin/app-architecture'
         ]
       }, {
-          type: 'category', label: "Understanding The FlutterFlow UI", items: [
+          type: 'category', label: "Resources", items: [
             {
               type: 'category', label: "Projects", items: [
-                'understanding-the-flutterflow-ui/projects/what-is-a-project',
-                'understanding-the-flutterflow-ui/projects/how-to-create-find-organize-projects',
+                'resources/projects/what-is-a-project',
+                'resources/projects/how-to-create-find-organize-projects',
               ]
             },
           ]
