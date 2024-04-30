@@ -25,7 +25,7 @@ To enable authentication in FlutterFlow:
 - To ensure that your users are directed to the appropriate pages based on their
   login status, you must set the **initial pages**.
 
-<img src="enable-auth-fr.png" alt="enable-auth-fr.png"  />
+<img src="imgs/enable-auth-fr.png" alt="enable-auth-fr.png"  />
 
 ### Setting Initial Pages for Authentication
 
@@ -176,5 +176,5 @@ To regenerate the config files:
 
 - Click on the Regenerate Config Files.
 
-<img src="regerenate.png" alt="regerenate.png"  />
+<img src="imgs/regerenate.png" alt="regerenate.png"  />
 

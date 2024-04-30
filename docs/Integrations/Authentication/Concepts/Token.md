@@ -1,6 +1,7 @@
 ---
 id: auth-token
 sidebar_label: Tokens
+sidebar_position: 2
 ---
 
 # Tokens

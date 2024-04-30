@@ -96,9 +96,9 @@ You can create your own or use the one from page templates.
    clicking + CREATE CREDENTIALS, selecting OAuth client ID and then select
    Application type to Web application.
 
-<img src="add-app.gif" alt="add-app.gif"  />
+<img src="imgs/add-app.gif" alt="add-app.gif"  />
 
-## Verify user creation
+### Verify user creation
 To confirm the successful integration of Google authentication and the creation of users, navigate to your Firebase project > Authentication > Users and check the user entries.
 
-<img src="verify-google-auth-users.png" alt="verify-google-auth-users.png"  />
+<img src="imgs/verify-google-auth-users.png" alt="verify-google-auth-users.png"  />

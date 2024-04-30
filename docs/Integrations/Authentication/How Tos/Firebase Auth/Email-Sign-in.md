@@ -82,7 +82,7 @@ To enable this in FlutterFlow, follow these steps:
       already
       created in the 'users' collection.
 
-<img src="create-account-action.png" alt="create-account-action.png"  />
+<img src="imgs/create-account-action.png" alt="create-account-action.png"  />
 
 ## Log In Action
 
@@ -108,9 +108,9 @@ To enable this in FlutterFlow, follow these steps:
    found
    under Widget State > Field Name.
 
-<img src="login-action.png" alt="login-action.png"  />
+<img src="imgs/login-action.png" alt="login-action.png"  />
 
-## Verify user creation
+### Verify user created in Firebase Dashboard
 
 To verify that you have successfully added the email authentication and that
 users are being created, you can head over to your **Firebase project >
