@@ -35,7 +35,7 @@ Added SHA-1 key and regerenated Config Keys.
 To allow users to authenticate, you need a Login or Sign-in Page with a button.
 You can create your own or use the one from page templates.
 
-### Add Sign-in Action
+### Add Login Action
 
 - On your Google Login button, select **Actions** from the properties panel (the
   right menu) and select Add Action.
@@ -98,7 +98,7 @@ You can create your own or use the one from page templates.
 
 <img src="imgs/add-app.gif" alt="add-app.gif"  />
 
-### Verify user creation
+### Verify user created in Firebase Dashboard
 To confirm the successful integration of Google authentication and the creation of users, navigate to your Firebase project > Authentication > Users and check the user entries.
 
 <img src="imgs/verify-google-auth-users.png" alt="verify-google-auth-users.png"  />

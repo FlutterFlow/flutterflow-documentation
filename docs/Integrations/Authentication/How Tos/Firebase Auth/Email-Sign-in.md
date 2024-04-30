@@ -1,9 +1,9 @@
 ---
-title: Email Sign-in
+title: Email Login
 sidebar_position: 2
 ---
 
-# Email SignIn using Firebase
+# Email Login using Firebase
 
 :::info[Prerequisites]
 
@@ -17,7 +17,7 @@ required for authentication.
 
 :::
 
-## Enable Email Sign-in Provider in Firebase
+## Enable Email Login Provider in Firebase
 
 - Open the Firebase Console and click on Authentication
 - Click on the Get started button (this may not be visible if you have already
@@ -84,6 +84,19 @@ To enable this in FlutterFlow, follow these steps:
 
 <img src="imgs/create-account-action.png" alt="create-account-action.png"  />
 
+## Email Verification
+
+:::info
+To understand why email verification is required when authenticating with an email and password, refer to [Concepts doc - Authentication Approaches](docs/Integrations/Authentication/Concepts/authentication-approaches.md)
+:::
+
+1. Add a new action immediately after the Create Account action.
+2. Search for and select the Send Email Verification Link (located under Backend/Database > Firebase Authentication) action. The user's email is automatically retrieved from Firebase Authentication, and a verification link is sent to the user for confirmation.
+
+<iframe src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+
+The user should receive an email verification link in their inbox. Upon successful verification, they will see a success message.
+
 ## Log In Action
 
 The Log In action, on the other hand, is for users who already have an account.
@@ -115,6 +128,10 @@ To enable this in FlutterFlow, follow these steps:
 To verify that you have successfully added the email authentication and that
 users are being created, you can head over to your **Firebase project >
 Authentication > Users** and verify the user entries.
+
+
+
+
 
 
 
