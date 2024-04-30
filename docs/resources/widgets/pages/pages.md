@@ -49,7 +49,7 @@ Elements.
 
 :::tip[Generated Code]
 
-[See how](generated-code.md) FlutterFlow converts your page into Flutter
+[See how](../generated-code.md) FlutterFlow converts your page into Flutter
 code
 :::
 

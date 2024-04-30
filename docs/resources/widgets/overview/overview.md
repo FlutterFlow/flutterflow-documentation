@@ -1,7 +1,7 @@
 ---
-title: Widgets
+title: Overview
 ---
-
+# 
 ## What's a widget?
 
 In FlutterFlow, a widget is like a building block used to create the user
@@ -23,7 +23,7 @@ cross-platform apps from a single codebase. In Flutter, _everything is a widget_
 and interaction. FlutterFlow leverages this same concept by providing a visual
 editor where you can create and configure these widgets.
 
-<img src="img.png" alt="img.png"  />
+<img src="../imgs/img.png" alt="img.png"  />
 #TODO change image
 
 ## Widget categories
@@ -100,5 +100,5 @@ structure. For example, you might have a main screen widget that contains a
 column widget, and inside that column, there are text widgets, button widgets,
 and so on.
 
-<img src="widget-tree.png" alt="widget-tree.png"  />
+<img src="../imgs/widget-tree.png" alt="widget-tree.png"  />
 
