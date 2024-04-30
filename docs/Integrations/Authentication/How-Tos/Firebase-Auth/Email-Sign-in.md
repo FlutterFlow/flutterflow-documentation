@@ -10,9 +10,9 @@ sidebar_position: 2
 Before getting started with this section, ensure you have:
 
 Completed all steps in
-the [Firebase Setup](/docs/Integrations/Authentication/How%20Tos/Firebase%20Authebase%20Auth/initial-setup.md).
+the [Firebase Setup](docs/Integrations/Firebase/Connect to Firebase Setup.md).
 
-Completed [Initial Setup](/docs/Integrations/Authentication/How%20Tos/Firebase%20Authebase%20Auth/initial-setup.md)
+Completed [Initial Setup](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
 required for authentication.
 
 :::

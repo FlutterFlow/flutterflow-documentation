@@ -37,12 +37,28 @@ approach minimizes the risk of exposing sensitive user data and streamlines the
 login process across various platforms.
 
 ## Phone Authentication
+
 Another method is phone authentication, where a user's phone number is used as a
 form of identity verification. Upon registering or logging in, the user receives
 a text message with a verification code that must be entered to proceed. This
 method leverages the security of mobile networks and the uniqueness of phone
 numbers to ensure that the person attempting access is the legitimate owner of
 the account.
+
+## Anonymous Authentication
+
+Anonymous Authentication allows users to interact with your application without
+signing in with permanent credentials, by creating temporary anonymous accounts.
+This method is beneficial for users who want to test services before committing
+to creating an account. If a user decides to sign up later, their anonymous
+account can be upgraded to a regular account, preserving their data and
+interactions.
+
+Each anonymous session is typically isolated, with strict permissions to prevent
+access to sensitive features or user data. When upgrading to a full account,
+secure practices are used to link the anonymous data to the new authenticated
+profile, ensuring that no data leakage or unauthorized access occurs during the
+transition.
 
 Each authentication method aims to balance user convenience with high security,
 ensuring that personal and sensitive data remains protected while providing a
