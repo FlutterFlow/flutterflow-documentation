@@ -28,7 +28,7 @@ It’s very straightforward yet introduces you to some fundamental concepts in a
 
 ## 1. Clone or create project {#clone-project}
 
-To kick off your project, the first step is to [create a new project](#). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account.
+To kick off your project, the first step is to [create a new project](#). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account. 
 
 ![clone-project.png](../../static/img/clone-project.png)
 
