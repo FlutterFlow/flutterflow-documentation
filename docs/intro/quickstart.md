@@ -35,13 +35,13 @@ To kick off your project, the first step is to [create a new project](#). Howeve
 
 <img src="../../static/img/clone-project.png" alt="clone-project.png"  />
 
-After cloning the project, you’ll see a page with product images and description and you’ll add a feature that allows users to update the product quantity.
+After cloning the project, you’ll see a page with product images and descriptions. You’ll add a feature that allows users to update the product quantity.
 
 <img src="../../static/img/zero-to-final.png" alt="zero-to-final.png"  />
 
 ## 2. Building UI {#build-ui}
 
-In this section, we will see how to build the user interface (UI) for this feature. This involves creating a layout and adding various widgets to our page.
+In this section, we'll see how to build the user interface (UI) for this feature. This involves creating a layout and adding various widgets to our page.
 
 To build the UI:
 
