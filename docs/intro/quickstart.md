@@ -1,15 +1,17 @@
 ---
-slug: build-your-first-app
-title: Build your first app
+slug: quickstart
+title: Quick Start Guide
 tags: []
 ---
 
-# **Build your first app**
+# **Quick Start Guide**
 
-This guide will walk you through creating and running your first FlutterFlow app. In this app, users can adjust the quantity of a product before adding it to their shopping cart.
+Welcome to the FlutterFlow Quickstart Guide! This guide is tailored for those eager to dive right into building their first FlutterFlow application. Here, you'll build a screen that lets users adjust the quantity of a product before adding it to their shopping cart.
 
-It’s very straightforward yet introduces you to some fundamental concepts in app development. Here's how it looks when completed:
+This quickstart is designed to be straightforward and accessible, introducing you to basic FlutterFlow concepts quickly. For those seeking a deeper understanding of FlutterFlow's capabilities, we recommend reading through the FlutterFlow concepts pages.
+<!-- TO DO: add links to resource section later on -->
 
+Below is a preview of what your app will look like once completed:
 <iframe src="https://demo.arcade.software/YXXxpSfeOUgkt9JAOxUL?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="800"></iframe>
 
 > **What you'll learn**
@@ -31,11 +33,11 @@ The steps to build the app are as follows:
 
 To kick off your project, the first step is to [create a new project](#). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account. 
 
-![clone-project.png](../../static/img/clone-project.png)
+<img src="../../static/img/clone-project.png" alt="clone-project.png"  />
 
 After cloning the project, you’ll see a page with product images and description and you’ll add a feature that allows users to update the product quantity.
 
-![zero-to-final.png](../../static/img/zero-to-final.png)
+<img src="../../static/img/zero-to-final.png" alt="zero-to-final.png"  />
 
 ## 2. Building UI {#build-ui}
 
