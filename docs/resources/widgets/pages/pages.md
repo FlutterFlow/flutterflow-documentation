@@ -55,27 +55,54 @@ code
 
 Here's how the Scaffold contributes to page design in FlutterFlow:
 
-#### AppBar
-
-The Scaffold allows you to easily include an AppBar at the top of the page,
+**AppBar** : Scaffold allows you to easily include an AppBar at the top of the
+page,
 which can house the title, navigation controls, and other actions.
 
-#### Floating Action Button (FAB)
+**Floating Action Button (FAB)**: An action button that is commonly used for
+primary actions on the screen, like adding a new contact or composing a message.
 
-The Scaffold provides a specific spot for a FAB, which is used for a primary
-action on the page, such as adding a new item or composing a message.
+**Drawer & End-Drawer**: A slide-out menu for app navigation, accessible from
+the AppBar or by swiping from the side.
 
-#### Drawer & End-Drawer
+**Body:** The main content area where you place your widgets. In FlutterFlow,
+you
+won't find a section explicitly labeled "Body." However, the widget tree that
+you assemble under your PageName widget essentially functions as the body of the
+page. This is where you add and organize all the interactive and static elements
+that make up the user interface of that particular page.
 
-You can also include side menus (drawers) that slide in from the edges,
-typically used for navigation links or additional settings.
+## Navigation / Routing
 
-Parameters
-Scaffold / properties Properties of pages, app bar + nav bar
+Navigation in FlutterFlow involves moving between different pages. This is
+handled through routing, where each page is identified by a unique route.
+Navigation can be programmed to happen on events like button clicks, leading to
+actions such as pushing a new route (opening a new page) or popping a route (
+returning to a previous page). FlutterFlow simplifies the routing process,
+allowing you to visually design the navigation flow of your app.
+
+## Page Parameters
+
+Parameters in FlutterFlow are used to pass data between pages. When navigating
+from one page to another, you can send parameters to configure the destination
+page based on the data from the current page. This is useful for tasks like
+passing a user ID to a profile page or specific details to a detailed view page.
 
 ## Page state
 
-## Page lifecycle
+**Page state** refers to the information that a page tracks about its current
+condition or the data it displays. This can include things like which tabs are
+active, the contents of a form, or any user interactions. Managing state is
+crucial for dynamic pages that interact with user inputs or load varying data.
 
-## Navigation / routing	
+## Page Lifecycle
+
+The page lifecycle in FlutterFlow involves the stages a page goes through from
+creation to disposal. Understanding this is key for managing resources and data
+correctly. Key moments in the lifecycle include initialization (where you might
+set up controllers or initial state), rendering (when the page is built and
+displayed), updating (when data changes and the page might need to rebuild), and
+disposal (when the page is closed and resources need to be freed).
+
+
 	

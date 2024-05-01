@@ -29,6 +29,14 @@ process and ensuring consistency across your project.
 FlutterFlow has already created a bunch of such template widget classes for you
 that you can use in different places in your app with your own characteristics.
 
+:::info [More about Built-in Widgets]
+To know more about the built-in widgets, refer to the Widgets category & Built In Widgets section
+:::
+
 You can also create custom classes (called Components in FlutterFlow), where you
 set the properties and behavior that you can reuse in multiple places of the
 app.
+
+:::info [More about Components]
+To know more about components, refer here.
+:::
