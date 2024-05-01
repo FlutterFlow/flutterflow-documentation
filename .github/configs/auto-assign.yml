@@ -8,7 +8,8 @@ addAssignees: false
 reviewers:
   - johnbhiggins7
   - pinkeshmars
-
+  - PoojaB26
+  - leighajarett
 
 # A number of reviewers added to the pull request
 # Set 0 to add all the reviewers (default: 0)
