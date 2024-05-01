@@ -98,6 +98,12 @@ loads.
 **Running Animations:** Start animations that welcome users or draw attention to
 certain UI elements on the page.
 
+#### Add OnPageLoad Action
+To add an action to "On Page Load" action trigger, follow the steps: 
+
+<iframe src="https://demo.arcade.software/ii0otHqkoRtPY66n4c2y?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+
+
 ### Backend Query
 ![props.png](imgs/backend-query.png)
 
@@ -107,6 +113,10 @@ Setting up a backend query allows the page to display dynamic content, such as
 user profiles, product lists, or any other data your app needs to retrieve from
 a server.
 
+:::info
+To learn more about how to connect to a backend source, refer to our Database section
+:::
+
 ### State Management
 ![props.png](imgs/statemgm.png)
 
@@ -115,3 +125,5 @@ status of a page across user interactions or app sessions. This can include
 tracking user inputs, remembering user choices, or preserving the app's state
 during navigation between pages. Proper state management ensures a smooth and
 consistent experience for users as they interact with your app.
+
+<iframe src="https://demo.arcade.software/Qhg62nqMjhg8973XPQhb?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
