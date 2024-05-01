@@ -6,8 +6,6 @@ addAssignees: false
 
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
-  - PoojaB26
-  - leighajarett
   - johnbhiggins7
   - pinkeshmars
 
