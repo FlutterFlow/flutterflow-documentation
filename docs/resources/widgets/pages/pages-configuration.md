@@ -67,7 +67,7 @@ dynamic data handling, and more tailored user experiences. Here's an overview of
 these additional configurations:
 
 ### Actions  
-![props.png](imgs/props.png)
+<img src="imgs/props.png" alt="props.png"  />
 
 This section allows you to define and manage interactions or events triggered by
 user actions. For example, you can configure a button to navigate to another
@@ -82,7 +82,7 @@ a page is first loaded or entered by a user. This action is part of the page's
 lifecycle methods, which are functions that execute at different stages of a
 page’s existence in the app, such as when it's created, displayed, or closed.
 
-![action-props.png](imgs/action-props.png)
+<img src="imgs/action-props.png" alt="action-props.png"  />
 
 #### Uses of On Page Load Action
 
@@ -105,7 +105,7 @@ To add an action to "On Page Load" action trigger, follow the steps:
 
 
 ### Backend Query
-![props.png](imgs/backend-query.png)
+<img src="imgs/backend-query.png" alt="props.png"  />
 
 Here, you can configure the page to fetch data from a backend source or
 database. This is typically done through API calls or direct database queries.
@@ -118,7 +118,7 @@ To learn more about how to connect to a backend source, refer to our Database se
 :::
 
 ### State Management
-![props.png](imgs/statemgm.png)
+<img src="imgs/statemgm.png" alt="props.png"  />
 
 State management configurations are essential for maintaining the state or
 status of a page across user interactions or app sessions. This can include

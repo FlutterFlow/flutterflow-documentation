@@ -10,8 +10,8 @@ to know.
 When you create UI elements for your app using the widget tree or through drag &
 drop, you are utilizing widget classes and creating instances of them.
 
-For example, Icon is a widget "class." When you use it in different parts of
-your application, you are creating an instance of the Icon widget class and
+For example, `Icon` is a widget *class*. When you use it in different parts of
+your application, you are creating an instance of the `Icon` widget class and
 providing different values to it in each usage.
 
 Think of classes as templates that outline the structure and features of
