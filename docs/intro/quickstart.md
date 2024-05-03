@@ -12,9 +12,9 @@ This quickstart is designed to be straightforward and accessible, introducing yo
 <!-- TO DO: add links to resource section later on -->
 
 Below is a preview of what your app will look like once completed:
-<iframe src="https://demo.arcade.software/YXXxpSfeOUgkt9JAOxUL?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="800"></iframe>
+![flutterflow-quick-start-app-demo.avif](../../static/img/flutterflow-quick-start-app-demo.avif)
 
-> **What you'll learn**
+## **What you'll learn**
 > - Creating layouts (add widgets)
 > - Adding interactivity to UI elements
 > - Handle app behavior in response to user interactions (manage state).
@@ -73,7 +73,7 @@ To customize the style:
 
 Once your UI is set up, it's time to make your app interactive by adding a state. This means setting up your app to respond to user interactions. For example, when a user clicks the button to increase the quantity, the number displayed on the label should increase accordingly.
 
-We can achieve this behavior by adding the state variables. A state variable represents a piece of data that can change over time. For this specific use case, Let’s add a [page state variable](#) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
+We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](#) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
 
 Here's how to add and use state variables:
 
@@ -86,7 +86,7 @@ Here's how to add and use state variables:
 
 ## 5. Run the App {#run-app}
 
-Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [Test](#) and [Run](#) mode. The Run mode typically requires around 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[Hot Reload](#)" feature.
+Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [Test](#) and [Run](#) mode. The Run mode requires 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[Hot Reload](#)" feature.
 
 
 <iframe src="https://demo.arcade.software/TxetiPgtHe50ZcLsHyFH?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
