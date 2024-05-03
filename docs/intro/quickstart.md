@@ -45,27 +45,17 @@ In this section, we'll see how to build the user interface (UI) for this feature
 
 To build the UI:
 
-1. We'll begin by adding a [Container](#) widget. This will serve as the parent widget for our buttons and labels.
-2. Within the Container, add the [Row](#) > [Text](#) widget to display the ‘Quantity’ label. The Row widget is used to arrange its children (in this case, the Text widget) in a horizontal row.
-3. Next, add another Row widget containing two [IconButtons](#). Users will interact with these to increase or decrease the product quantity. Also, include a Text widget to display the updated quantity.
-    1. Adjust the padding of the widgets to create a spacious and balanced layout.
-    2. Change the icon of the decrease button to a minus symbol.
-
-> You can learn more about creating layouts [here](#).
-
-
 <iframe src="https://demo.arcade.software/5CNFKTzhvnHPrLyZNzgZ?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="500"></iframe>
+
+:::info
+    You can learn more about creating layouts [here](#).
+:::
 
 ## 3. Customize Style {#customize-style}
 
 The next step is to customize the style of UI elements. This includes changing the colors, fonts, and sizes of your buttons and labels. In FlutterFlow, you can do this via the [properties panel](#) which provides a range of options for customization.
 
 To customize the style:
-
-1. Adjust the height and color of the Container, and add a border radius.
-2. Change the font weight, size of the quantity label and its value.
-3. Change the color of the increase and decrease buttons to match your design.
-
 
 <iframe src="https://demo.arcade.software/MGpg8TSzMGBusCGyOk89?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
@@ -76,11 +66,6 @@ Once your UI is set up, it's time to make your app interactive by adding a state
 We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](#) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
 
 Here's how to add and use state variables:
-
-1. Add a page state variable named ‘productQuantity’ with the *Type* set to Integer and an *Initial Field Value* of 1.
-2. Bind this newly created variable to the Text widget that displays the current product quantity.
-3. When buttons are tapped, add actions to [update the value of the page state variable](#).
-
 
 <iframe src="https://demo.arcade.software/UI92tJF6DX0lOVuidaSH?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
