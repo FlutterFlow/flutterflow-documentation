@@ -33,7 +33,7 @@ The primary benefit of "Preview Mode" is that it allows your app to load instant
 :::
 
 ## Test Mode
-Test mode uses Flutter's "Hot Reload" feature, which lets you immediately see any changes made to code in an emulator or on-device. Running your app in _Test_ Mode helps you experiment, test UIs, and fix bugs faster.
+_Test Mode_ runs a web version of your Flutter app and uses Flutter's "Hot Reload" feature, which lets you immediately see any changes made to code in an emulator or on-device. Running your app in _Test Mode_ helps you experiment, test UIs, and fix bugs faster.
 
 To run your app in Test Mode:
 1. Click on the **Test icon** or press **Cmd/Ctrl + I** (a keyboard shortcut). This will run your app in a new browser window.
@@ -55,6 +55,7 @@ If you see a progress bar at the top of the device running for over 15 seconds, 
 :::
 
 :::caution[Test Mode Limitations]
+_Test Mode_ has certain limitations because some packages are not supported on the web and because of the way FlutterFlow configures your project to run in the cloud.
 - 30 minute testing time. After the 30 minutes has expired, you can start another test mode.
 - If you see a grey "broken" screen with a sad face, it may be a DNS server issue with your network provider. We recommend using CloudFlare's 1.1.1.1 DNS server. Click here to see instructions.
 - Lottie animation may not load if you provide a variable path.
@@ -82,6 +83,6 @@ Run Mode does not support Hot Reloading so any changes you make to your app will
 :::
 
 ## Local Run
-You can test your app on an emulator or physical mobile device with Local Run feature, which is available in the FlutterFlow Desktop App. Local Run automatically tracks changes in your FlutterFlow project, downloads the code locally, and gives you the option to use Flutter's Hot Reload or Hot Restart to see your changes instantly on a device.
+You can test your app on an emulator or physical mobile device with Local Run feature, which is available in the FlutterFlow Desktop App. Local Run downloads the code locally and gives you the option to use Flutter's Hot Reload or Hot Restart to see your changes instantly on a device.
 
 [How to Setup Local Run](https://docs.flutterflow.io)
