@@ -15,10 +15,10 @@ Below is a preview of what your app will look like once completed:
 ![flutterflow-quick-start-app-demo.avif](../../static/img/flutterflow-quick-start-app-demo.avif)
 
 ## **What you'll learn**
-> - Creating layouts (add widgets)
-> - Adding interactivity to UI elements
-> - Handle app behavior in response to user interactions (manage state).
-> - Running your app
+- Creating layouts (add widgets)
+- Adding interactivity to UI elements
+- Handle app behavior in response to user interactions (manage state).
+- Running your app
 
 <br/>
 The steps to build the app are as follows:
@@ -26,7 +26,7 @@ The steps to build the app are as follows:
 1. [Clone or create project](#clone-project)
 2. [Building UI](#build-ui)
 3. [Customize style](#customize-style)
-4. [Add state](#add-state)
+4. [Manage state](#manage-state)
 5. [Run the app](#run-app)
 
 ## 1. Clone or create project {#clone-project}
@@ -45,10 +45,34 @@ In this section, we'll see how to build the user interface (UI) for this feature
 
 To build the UI:
 
-<iframe src="https://demo.arcade.software/5CNFKTzhvnHPrLyZNzgZ?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="500"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/5CNFKTzhvnHPrLyZNzgZ?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 :::info
-    You can learn more about creating layouts [here](#).
+You can learn more about creating layouts [here](#).
 :::
 
 ## 3. Customize Style {#customize-style}
@@ -57,24 +81,129 @@ The next step is to customize the style of UI elements. This includes changing t
 
 To customize the style:
 
-<iframe src="https://demo.arcade.software/MGpg8TSzMGBusCGyOk89?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/MGpg8TSzMGBusCGyOk89?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
-## 4. Add State {#add-state}
+## 4. Manage State {#manage-state}
 
 Once your UI is set up, it's time to make your app interactive by adding a state. This means setting up your app to respond to user interactions. For example, when a user clicks the button to increase the quantity, the number displayed on the label should increase accordingly.
+
+### 4.1 Add state variable
 
 We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](#) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
 
 Here's how to add and use state variables:
 
-<iframe src="https://demo.arcade.software/UI92tJF6DX0lOVuidaSH?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/UI92tJF6DX0lOVuidaSH?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+### 4.2 Update state variable
+
+To update the state variable, we will need to add actions. Actions are essentially functions that are triggered by the user's interaction, in this case, by clicking either the "Increase" or "Decrease" buttons. You can add actions to your buttons via the [actions panel](#). 
+
+Here's how to add actions to your buttons and update the state variable:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/6UIpWtPzuhEmK3rdZ7QI?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 ## 5. Run the App {#run-app}
 
 Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [Test](#) and [Run](#) mode. The Run mode requires 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[Hot Reload](#)" feature.
 
-
-<iframe src="https://demo.arcade.software/TxetiPgtHe50ZcLsHyFH?embed&show_copy_link=true" title="Update product quantity" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/TxetiPgtHe50ZcLsHyFH?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 Congratulations! You've built your first app with FlutterFlow.
 
