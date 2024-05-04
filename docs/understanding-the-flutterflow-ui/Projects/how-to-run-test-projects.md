@@ -3,6 +3,8 @@ slug: how-to-run-test-projects
 title: How to Run and Test Projects
 tags: []
 toc_max_heading_level: 5
+sidebar_position: 3
+
 ---
 There are 4 ways to test your project in FlutterFlow.
 - Preview

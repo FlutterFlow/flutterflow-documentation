@@ -4,6 +4,7 @@ title: What is a Project?
 authors: john
 tags: []
 toc_max_heading_level: 5
+sidebar_position: 1
 ---
 A "Project" in FlutterFlow represents a complete Flutter application. It contains all the generated code for a Flutter app. This means that you can export your code and your app will run as a normal Flutter app without requiring FlutterFlow.
 
