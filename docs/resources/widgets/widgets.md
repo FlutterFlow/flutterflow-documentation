@@ -20,11 +20,10 @@ write a lot of code.
 FlutterFlow is built with Flutter, Google's popular framework for building
 cross-platform apps from a single codebase. In Flutter, _everything is a widget_
 —every part of the app's UI is built using widgets that handle layout, styling,
-and interaction. FlutterFlow leverages this same concept by providing a visual
+and interaction. FlutterFlow leverages a similar concept by providing a visual
 editor where you can create and configure these widgets.
 
-<img src="imgs/img.png" alt="img.png"  />
-#TODO change image
+![everything-widget.png](imgs%2Feverything-widget.png)
 
 ## Widget categories
 
@@ -100,5 +99,5 @@ structure. For example, you might have a main screen widget that contains a
 column widget, and inside that column, there are text widgets, button widgets,
 and so on.
 
-<img src="imgs/widget-tree.png" alt="widget-tree.png"  />
+![Widget-tree.png](imgs%2FWidget-tree.png)
 
