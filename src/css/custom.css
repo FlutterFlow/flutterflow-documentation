@@ -85,10 +85,17 @@ h2 {
 }
 
 h3 {
-  color:var(--graytext);
+  color:var(--black-700);
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 700;
   
+}
+
+h4 {
+  color:var(--black-700);
+  font-size: 18px;
+  font-weight: 500;
+
 }
 
 
