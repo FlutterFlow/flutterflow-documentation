@@ -1,3 +1,8 @@
+---
+title: Composing Widgets
+sidebar_position: 2
+---
+
 # Composing widgets
 
 When creating a user interface in FlutterFlow, you can think of using widgets

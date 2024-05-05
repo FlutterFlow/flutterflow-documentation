@@ -4,12 +4,11 @@ sidebar_position: 2
 ---
 
 #
-
 FlutterFlow allows you to easily create new pages using the Page Selector
 button, which is available in the Widget Tree menu (Tab+2). This will help you
 quickly start and add new pages to your app.
 
-<img src="imgs/page-selector.png" alt="page-selector.png" width="200"/>
+![page-selector.png](imgs%2Fpage-selector.png)
 
 ## Create an empty page
 
@@ -25,7 +24,32 @@ pages, which you can quickly customize with your own styling, widgets, and text.
 
 To utilize a template from FlutterFlow, follow these steps:
 
-<iframe src="https://demo.arcade.software/bkaz68ipgi497Pf4v8EB?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/bkaz68ipgi497Pf4v8EB?embed&show_copy_link=true"
+        title="Create a page from a popular template"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 
 ## Create an AI generated page
 
@@ -38,8 +62,32 @@ both light and dark themes, and add new themes as desired. You also have the
 option to view the page's code and regenerate images as needed.
 
 To create an AI Generated page, follow the steps:
-<iframe src="https://demo.arcade.software/hLpE44TVjb72rzTTpxRK?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/hLpE44TVjb72rzTTpxRK?embed&show_copy_link=true"
+        title="Create an AI generated page"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 In FlutterFlow, setting page properties is an essential step to customizing the
 behavior and appearance of your app’s pages. Here’s an overview of how you can

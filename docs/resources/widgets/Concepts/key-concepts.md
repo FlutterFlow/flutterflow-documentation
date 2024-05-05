@@ -1,5 +1,6 @@
 ---
-title: Concepts
+title: Key Concepts
+sidebar_position: 1
 ---
 #
 When building widgets and pages in FlutterFlow, it's important to understand what's
@@ -7,8 +8,7 @@ happening behind the scenes. Let's explore some key concepts that are beneficial
 to know.
 ## Classes vs Instances
 
-When you create UI elements for your app using the widget tree or through drag &
-drop, you are utilizing widget classes and creating instances of them.
+When you add a UI element to your page, you are utilizing widget *classes* and creating *instances* of them.
 
 For example, `Icon` is a widget *class*. When you use it in different parts of
 your application, you are creating an instance of the `Icon` widget class and
