@@ -96,11 +96,11 @@ these properties in FlutterFlow:
 
 ## Modifying Page Properties
 
-### How to navigate?
+### Navigating from one page to another
 
 Within an app, navigation is the process of moving between different pages,
 enabling users to interact with various features and content
-efficiently. Let's see how to do that in FlutterFlow: 
+efficiently. Let's see how to do that in FlutterFlow:
 
 <div style={{
     position: 'relative',
@@ -127,6 +127,35 @@ efficiently. Let's see how to do that in FlutterFlow:
         allow="clipboard-write">
     </iframe>
 </div>
+
+#### **Navigate To** Action
+
+The Navigate To Action allows you to set the next page and modify other
+navigation-related properties:
+
+**Allow Back Navigation:** Toggle this to prevent the user from navigating back
+to
+this page after moving to the next page.
+
+**Replace Route:** Use this option to replace the current page in the navigation
+stack. For example, if a user navigates from Page A to Page B and then to Page
+C, pressing the back button on Page C would normally return to Page B. However,
+if **Replace Route** is enabled on Page B, the route changes to Page A -> Page
+C;
+therefore, pressing the back button on Page C will take the user back to Page A.
+
+**Transition Type:** This allows you to specify an animation that will be
+applied
+while navigating away from a screen. Options include **Default, Instant, Fade
+In,
+Slide Up, Slide Down, Slide Left, Slide Right,** and **Scale**.
+
+**Transition Duration:** Set the duration of the transition animation in
+milliseconds.
+
+**Page Parameters:** Use this to send data to the next page during navigation.
+
+![Nav.png](..%2Fimgs%2FNav.png)
 
 ### Page Parameters
 
