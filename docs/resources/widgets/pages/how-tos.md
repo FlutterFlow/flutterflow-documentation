@@ -127,7 +127,7 @@ efficiently. Let's see how to do that in FlutterFlow:
     </iframe>
 </div>
 
-### Navigate To Action
+### Navigate To [Action]
 
 The Navigate To Action allows you to set the next page and modify other
 navigation-related properties:
@@ -162,7 +162,7 @@ milliseconds.
 
 ![Nav.png](..%2Fimgs%2FNav.png)
 
-### Navigate Back Action
+### Navigate Back [Action]
 
 In the next page you are navigating to, ensure that you add a 'Navigate Back'
 action to the AppBar or wherever you want users to navigate from. Let's add a '
@@ -394,7 +394,7 @@ string to a variable.
 
 ![Page-State.png](..%2Fimgs%2FPage-State.png)
 
-#### Update Page State value
+#### Update Page State [Action]
 
 Page State values can only be updated via **Actions**. Whenever you want to
 update
