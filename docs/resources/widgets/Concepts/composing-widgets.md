@@ -73,13 +73,25 @@ The main axis is the primary direction in which child widgets are laid out in a
 left
 to right.
 
-![row-main-axis.png](..%2Fimgs%2Frow-main-axis.png)
+FlutterFlow allows you to set Row's Main Axis property to the following
+types:
+
+<figure>
+    ![row-main-axis.png](..%2Fimgs%2Frow-main-axis.png)
+  <figcaption class="centered-caption">Row's Main Axis property has the following types: Start, End, Center, SpaceEvenly, SpaceAround, SpaceBetween</figcaption>
+</figure>
+
 
 **Column:** The main axis runs **vertically**. Child widgets are laid out from
 top
 to bottom.
 
-![column-main-axis.png](..%2Fimgs%2Fcolumn-main-axis.png)
+FlutterFlow allows you to set Column's Main Axis property to the following
+types:
+<figure>
+    ![column-main-axis.png](..%2Fimgs%2Fcolumn-main-axis.png)
+  <figcaption class="centered-caption">Column's Main Axis property has the following types: Start, End, Center, SpaceEvenly, SpaceAround, SpaceBetween</figcaption>
+</figure>
 
 Manipulating the main axis allows you to control how widgets are spaced and how
 they should expand or align in relation to each other along this primary
@@ -89,14 +101,15 @@ direction.
 
 The cross axis is **perpendicular to the main axis** and controls the alignment
 and
-spacing of widgets across this secondary direction.
+spacing of widgets across this secondary direction. It has the following types:
+Start, Center, End.
 
 **Row:** The cross axis runs **vertically**. It determines how child widgets are
 aligned from top to bottom within the row.
 
 <figure>
     ![row-cross.png](..%2Fimgs%2Frow-cross.png)
-  <figcaption class="centered-caption">Cross Axis variations for Row. Main Axis of Row is set to Center.</figcaption>
+  <figcaption class="centered-caption">Cross Axis types for Row. Main Axis of Row is set to Center.</figcaption>
 </figure>
 
 
@@ -105,7 +118,7 @@ align from left to right within the column.
 
 <figure>
     ![column-cross.png](..%2Fimgs%2Fcolumn-cross.png)
-  <figcaption class="centered-caption">Cross Axis variations for Column. Main Axis of Column is set to Center</figcaption>
+  <figcaption class="centered-caption">Cross Axis types for Column. Main Axis of Column is set to Center</figcaption>
 </figure>
 
 ### Stack Alignment
@@ -113,7 +126,8 @@ align from left to right within the column.
 For `Stacks`, the concept of main and cross axes is less applicable because
 widgets are aligned relative to the entire area of the `Stack`. In
 FlutterFlow you can control the `Stack` children's alignment using the
-`Stack` property called _Default Child Alignment_ which positions the children using
+`Stack` property called _Default Child Alignment_ which positions the children
+using
 `X` and `Y` coordinates.
 
 Understanding these axes and their properties is essential for effectively

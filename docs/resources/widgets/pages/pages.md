@@ -17,21 +17,21 @@ Here's how pages work in FlutterFlow:
 #### Structure and Layout
 
 Each page can be structured using layout widgets like
-Rows, Columns, and Stacks, which help organize the other widgets on the page.
+`Rows`, `Columns`, and `Stacks`, which help organize the other widgets on the page.
 This organization is crucial for creating intuitive and user-friendly
 interfaces.
 
 #### Navigation
 
-Pages in FlutterFlow are also the main units of navigation. You
+**Pages** in FlutterFlow are also the main units of navigation. You
 design your app's flow by linking pages together through navigation widgets,
-like buttons or menu items, that can take users from one page to another. This
+like _buttons_ or _menu items_, that can take users from one page to another. This
 makes it possible to build complex multi-page apps with varying functionalities.
 
 #### Interactivity
 
-By integrating interactive widgets, like buttons and form
-elements, you can make each page responsive to user inputs, leading to a dynamic
+By integrating interactive widgets, like `Button` and `Form 
+Elements`, you can make each page responsive to user inputs, leading to a dynamic
 user experience where actions on one page can lead to changes on another or
 alter the overall app behavior.
 
@@ -41,11 +41,11 @@ In FlutterFlow, each page you create is fundamentally structured using a
 **Scaffold**, which is
 a [widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html)
 that provides the basic material design
-visual layout structure. The Scaffold widget offers a consistent framework for
+visual layout structure. The `Scaffold` widget offers a consistent framework for
 each page, allowing you to define and organize its structure, including the
-header (AppBar), body, floating action buttons, drawers, and other typical page
-components. In FlutterFlow, you will find these page widgets under Page
-Elements.
+**Header** (`AppBar`), **Body**, **Floating Action Button, Drawer,** and other typical page
+components. In FlutterFlow, you will find these page widgets under **Page
+Elements**.
 
 :::tip[Generated Code]
 
@@ -53,9 +53,9 @@ Elements.
 code
 :::
 
-Here's how the Scaffold contributes to page design in FlutterFlow:
+Here's how the `Scaffold` contributes to page design in FlutterFlow:
 
-**AppBar** : Scaffold allows you to easily include an AppBar at the top of the
+**AppBar** : Scaffold allows you to easily include an `AppBar` at the top of the
 page,
 which can house the title, navigation controls, and other actions.
 
@@ -63,14 +63,16 @@ which can house the title, navigation controls, and other actions.
 primary actions on the screen, like adding a new contact or composing a message.
 
 **Drawer & End-Drawer**: A slide-out menu for app navigation, accessible from
-the AppBar or by swiping from the side.
+the `AppBar` or by swiping from the side.
 
 **Body:** The main content area where you place your widgets. In FlutterFlow,
 you
-won't find a section explicitly labeled "Body." However, the widget tree that
-you assemble under your PageName widget essentially functions as the body of the
+won't find a section explicitly labeled "Body". However, the widget tree that
+you assemble under your "PageNameWidget" essentially functions as the body of the
 page. This is where you add and organize all the interactive and static elements
 that make up the user interface of that particular page.
+
+![body-page.png](..%2Fimgs%2Fbody-page.png)
 
 ## Navigation / Routing
 
