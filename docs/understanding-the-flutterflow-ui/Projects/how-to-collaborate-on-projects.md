@@ -22,7 +22,7 @@ When you invite users to your project, you have the flexibility to assign them d
 
 ### How to Invite Users
 
-<div style={{
+<div class="arcade-container" style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
@@ -48,14 +48,10 @@ When you invite users to your project, you have the flexibility to assign them d
     </iframe>
 </div>
 
-1. Navigate to **Settings & Integrations** (from the left *Navigation Menu*) **> Project Setup > Collaboration > Invite Users**.
-2. Click on the **Invite User**. This will open a popup to enter user's email.
-3. Input their **email address** and select **Invite**.
-4. If a user isn't already a FlutterFlow user, we will send them an invite email. Their status will be shown as **Pending** until they create an account.
-5. To provide read-only access, tick the **Read Only** checkbox.
 
 :::info
-FlutterFlow subscriptions are seat based. A user added to your project will only have access to the features of their account plan.
+- If a user isn't already a FlutterFlow user, we will send them an invite email. Their status will be shown as **Pending** until they create an account.
+- FlutterFlow subscriptions are seat based. A user added to your project will only have access to the features of their account plan.
 :::
 
 ## Branching Permissions
@@ -93,7 +89,7 @@ The owner of a project can manage permissions related to branching. Owners can c
 ## Sharing a Project with an Organization
 To share a project with all team members in your organization, enable the "Share with my organization" option.
 
-![Share Project With Organization](../../../static/img/share-project-with-organization.avif)
+<img src="../../../static/img/share-project-with-organization.avif" alt="Share Project With Organization"  />
 
 ## Real-Time Collaboration
 Real-Time Collaboration is a powerful feature that allows multiple builders to work together on the same project or, rather same page and design system simultaneously. With this, all builders can see the changes being made to the page as they happen and can also make their own changes to the page without interfering with the work of others.
@@ -103,16 +99,17 @@ This increases efficiency and productivity, as multiple builders can work on var
 
 To enable real-time collaboration, navigate to Settings & Integrations (from the left Navigation Menu) > Project Setup > Collaboration > click Enable Updated Collaboration.
 
-![Realtime Collaboration Setup](../../../static/img/realtime-collaboration-setup.png)
+<img src="../../../static/img/realtime-collaboration-setup.png" alt="Realtime Collaboration Setup"  />
 
 Now when multiple builders are on the same page, it looks like this:
 
-![Realtime Collaboration](../../../static/img/real-time-collaboration.gif)
+<img src="../../../static/img/real-time-collaboration.gif" alt="Realtime Collaboration"  />
 
 To disable this feature anytime, click the Disable Updated Collaboration button.
 
 :::caution
 - This feature is still in Beta, and unexpected issues may occur. Ensure you regularly create project versions as a backup.
+<!-- TODO - Add link to versioning -->
   :::
   :::info
 - Real-Time collaboration is a feature of our Teams and Enterprise plans.
@@ -122,7 +119,7 @@ To disable this feature anytime, click the Disable Updated Collaboration button.
 This step can not be undone. If you want to regain project ownership, the new project owner will need to transfer ownership back to you.
 :::
 
-<div style={{
+<div class ="arcade-container" style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Maintain aspect ratio plus extra padding
     height: 0,
@@ -148,15 +145,10 @@ This step can not be undone. If you want to regain project ownership, the new pr
     </iframe>
 </div>
 
-
-1. Navigate to **Settings & Integrations** (from the left Navigation Menu) **> Project Setup > Collaboration > Invite Users.**
-2. Click on the **Status** (e.g., Active) of the person you want to transfer project ownership to. You can only transfer ownership to someone with a status of **Active**.
-3. A popup will appear, and select **Yes**.
-
 ## Project Activity
 You can see a running history of changes made while building that helps you track progress and stay up to date on project changes. This feature allows team members to see all the updates made to a project in real-time, enabling them to understand how the project is evolving and collaborate more efficiently.
 
-![Project Activity](../../../static/img/flutterflow-project-activity.avif)
+<img src="../../../static/img/flutterflow-project-activity.avif" alt="Project Activity"  />
 
 :::info
 Teams users can access the last 7 days of project edits, while FlutterFlow Enterprise users can access and download all previous project edits.

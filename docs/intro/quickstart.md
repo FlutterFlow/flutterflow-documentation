@@ -12,7 +12,7 @@ This quickstart is designed to be straightforward and accessible, introducing yo
 <!-- TO DO: add links to resource section later on -->
 
 Below is a preview of what your app will look like once completed:
-![flutterflow-quick-start-app-demo.avif](../../static/img/flutterflow-quick-start-app-demo.avif)
+<img src="../../static/img/flutterflow-quick-start-app-demo.avif" alt="flutterflow-quick-start-app-demo.avif"  />
 
 ## **What you'll learn**
 - Creating layouts (add widgets)
