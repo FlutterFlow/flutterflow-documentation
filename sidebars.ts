@@ -11,7 +11,9 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: ['index', {type: 'category', label: "Before You Begin", items: [
         'intro/before-you-begin/setting-up-flutterflow', 'intro/before-you-begin/app-architecture','intro/quickstart'
-    ]}],
+    ]},{type: 'category', label: "FlutterFlow UI", items: [
+      'intro/ff-ui/builder', 'intro/ff-ui/navigation-menu','intro/ff-ui/toolbar','intro/ff-ui/canvas','intro/ff-ui/properties-panel','intro/ff-ui/resource-hierarchy'
+  ]}],
     }
   ]
 };
