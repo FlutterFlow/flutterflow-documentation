@@ -1,6 +1,7 @@
 ---
 title: How-to
 sidebar_position: 2
+toc_max_heading_level: 5
 ---
 
 #
@@ -94,9 +95,7 @@ behavior and appearance of your app’s pages. Here’s an overview of how you c
 set and manage
 these properties in FlutterFlow:
 
-## Modifying Page Properties
-
-### Navigating from one page to another
+## Navigation
 
 Within an app, navigation is the process of moving between different pages,
 enabling users to interact with various features and content
@@ -128,7 +127,7 @@ efficiently. Let's see how to do that in FlutterFlow:
     </iframe>
 </div>
 
-#### **Navigate To** Action
+### Navigate To Action
 
 The Navigate To Action allows you to set the next page and modify other
 navigation-related properties:
@@ -163,7 +162,7 @@ milliseconds.
 
 ![Nav.png](..%2Fimgs%2FNav.png)
 
-#### **Navigate Back** Action
+### Navigate Back Action
 
 In the next page you are navigating to, ensure that you add a 'Navigate Back'
 action to the AppBar or wherever you want users to navigate from. Let's add a '
@@ -195,6 +194,8 @@ previous section:
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Modifying Page Properties
 
 ### Page Parameters
 
@@ -445,3 +446,36 @@ and use rebuilds judiciously to maintain optimal app performance.
 To learn more about what happens behind the scenes, refer to
 the [Generated Page] section.
 :::
+
+## Page Action Triggers
+
+**Action Triggers** serve as event listeners or handlers that respond to
+specific
+events or user interactions within an application. FlutterFlow provides
+developers with a way to define logic that responds to various events, such as
+button clicks, page loads, form submissions, or data changes.
+
+For Pages, we have exposed the following Action Triggers:
+
+- **On Page Load**: This allows you to set actions when the page loads or
+  initializes. It enables developers to perform tasks or execute logic at
+  specific
+  points in the page lifecycle, such as fetching data from an API, initializing
+  variables, or updating UI elements.
+
+- **On Phone Shake:** Actions added under this trigger are triggered when the
+  user
+  shakes their phone. This is useful when you want to perform certain tasks or
+  trigger specific actions in response to a phone shake gesture.
+  For example, you can use this to build functionalities like:
+
+    - Randomizing content: Shake the phone to generate a random number, display
+      a
+      random quote, or change the background image.
+
+    - Refreshing data: Shake the phone to trigger a data refresh, such as
+      fetching the
+      latest news articles or updating a live feed.
+    - Resetting the app state: Shake the phone to reset the app state, clear
+      form
+      fields, or return to the app's home screen.
