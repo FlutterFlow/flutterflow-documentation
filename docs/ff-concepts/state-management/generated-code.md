@@ -1,6 +1,6 @@
 ---
-slug: how-to-create-use-app-state
-title: How to Create and Use App State
+slug: generated-code
+title: Generated Code
 tags: []
 toc_max_heading_level: 5
 sidebar_position: 5
