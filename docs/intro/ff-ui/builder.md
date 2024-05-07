@@ -24,4 +24,4 @@ In the [Canvas Area](canvas), you can see a preview of your mobile device's scre
 
 ## 4. Properties Panel
 
-The [Properties Panel](properties-panel) is present on the right side of the canvas. It displays all the properties you can customize for the selected widget or page.
+The Properties Panel lets you modify both the visual appearance and interactive behavior of UI elements on the canvas. It allows you to add Actions, set up a Backend Query, add Animations and more.

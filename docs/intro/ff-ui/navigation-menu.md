@@ -16,7 +16,7 @@ From here, you can go to the [dashboard](#) to manage your projects. This includ
 
 ## 2. Widget Palette
 
-The [Widget Palette](#) gives you access to all the widgets that can be added to the app.
+The [Widget Palette](widget-palette) gives you access to all the widgets that can be added to the app.
 
 ## 3. Page Selector
 
@@ -36,7 +36,7 @@ The [Widget Tree](#) panel gives you a high-level overview of all the widgets yo
 
 ## 5. Storyboard
 
-The [storyboard](#) helps you visualize your entire app's design and navigation in a single interface.
+The [storyboard](storyboard) helps you visualize your entire app's design and navigation in a single interface.
 
 ## 6. Firestore
 

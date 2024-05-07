@@ -104,3 +104,11 @@ p {
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+div.alert {
+  margin-bottom: 24px;
+}
+
+.arcade-container {
+margin-bottom: 24px;
+}
