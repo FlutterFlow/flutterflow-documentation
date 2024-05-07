@@ -116,3 +116,10 @@ p {
   text-align: center;
   font-size: 12px; /* Set the font size to 16px */
 }
+div.alert {
+  margin-bottom: 24px;
+}
+
+.arcade-container {
+margin-bottom: 24px;
+}
