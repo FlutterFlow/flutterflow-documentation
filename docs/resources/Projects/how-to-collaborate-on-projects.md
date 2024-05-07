@@ -89,7 +89,7 @@ The owner of a project can manage permissions related to branching. Owners can c
 ## Sharing a Project with an Organization
 To share a project with all team members in your organization, enable the "Share with my organization" option.
 
-<img src="../../../static/img/share-project-with-organization.avif" alt="Share Project With Organization"  />
+[share-project-with-organization.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fshare-project-with-organization.avif)
 
 ## Real-Time Collaboration
 Real-Time Collaboration is a powerful feature that allows multiple builders to work together on the same project or, rather same page and design system simultaneously. With this, all builders can see the changes being made to the page as they happen and can also make their own changes to the page without interfering with the work of others.
@@ -99,11 +99,11 @@ This increases efficiency and productivity, as multiple builders can work on var
 
 To enable real-time collaboration, navigate to Settings & Integrations (from the left Navigation Menu) > Project Setup > Collaboration > click Enable Updated Collaboration.
 
-<img src="../../../static/img/realtime-collaboration-setup.png" alt="Realtime Collaboration Setup"  />
+![realtime-collaboration-setup.png](..%2F..%2F..%2Fstatic%2Fimg%2Frealtime-collaboration-setup.png)
 
 Now when multiple builders are on the same page, it looks like this:
 
-<img src="../../../static/img/real-time-collaboration.gif" alt="Realtime Collaboration"  />
+![real-time-collaboration.gif](..%2F..%2F..%2Fstatic%2Fimg%2Freal-time-collaboration.gif)
 
 To disable this feature anytime, click the Disable Updated Collaboration button.
 
@@ -148,7 +148,7 @@ This step can not be undone. If you want to regain project ownership, the new pr
 ## Project Activity
 You can see a running history of changes made while building that helps you track progress and stay up to date on project changes. This feature allows team members to see all the updates made to a project in real-time, enabling them to understand how the project is evolving and collaborate more efficiently.
 
-<img src="../../../static/img/flutterflow-project-activity.avif" alt="Project Activity"  />
+[flutterflow-project-activity.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fflutterflow-project-activity.avif)
 
 :::info
 Teams users can access the last 7 days of project edits, while FlutterFlow Enterprise users can access and download all previous project edits.

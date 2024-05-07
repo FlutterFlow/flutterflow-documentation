@@ -7,7 +7,7 @@ toc_max_heading_level: 5
 ## How to Create a Project
 To create a new project, go to the Dashboard and click the “Create New” button in the upper right corner. This will open the “Create Project” window where you can choose to start with a template app or a blank project. Name the project and then select a blank project or template. 
 
-<img src="../../../static/img/create-new-project.avif" alt="Create New Project"  />
+[create-new-project.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fcreate-new-project.avif)
 
 During project creation, you can access a three-step "Project Setup" window, which is optional. If you prefer to bypass this, simply click "Skip." All setup options will remain accessible under “Settings and Integrations” → “Firebase” → Wizard hat icon.
 
