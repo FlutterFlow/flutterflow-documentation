@@ -26,7 +26,7 @@ The AppBar is divided into the following sections:
 - **Actions:** Hosts icon buttons for various operations like search, share, and more, situated on
   the right end.
 
-To add an AppBar, follow the steps:
+### Add an AppBar to your Page
 
 <div style={{
     position: 'relative',
@@ -55,6 +55,50 @@ To add an AppBar, follow the steps:
 </div>
 
 ## FloatingActionButton
+
+**Floating Action Button (FAB)** is a distinctive circular button that hovers over content, commonly
+used for a primary action within an app, like adding a new item or composing a message.
+
+### Extended Property
+
+This variant of the `FAB` includes both an icon and a label, making it larger than the standard
+circular `FAB`. It is useful when you want the action button to convey more information than just the
+icon can provide, such as text explaining the action ("Add Task", "Create Post", etc.).
+
+**Use-cases**
+
+The **extended** `FAB` is particularly beneficial in applications where the action needs clear and
+immediate recognition from the user, which cannot be fully achieved by an icon alone. It is also
+useful in interfaces where there is ample space to accommodate a longer button without cluttering
+the UI.
+
+### Adding a Floating Action Button to your Page
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/TfHpfAQYIc5iaALgbK2O?embed&show_copy_link=true"
+        title="Add FAB"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 ## Drawers
 
