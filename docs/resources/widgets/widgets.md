@@ -99,5 +99,4 @@ structure. For example, you might have a main screen widget that contains a
 column widget, and inside that column, there are text widgets, button widgets,
 and so on.
 
-![Widget-tree.png](imgs%2FWidget-tree.png)
-
+![widget-tree.png](imgs%2Fwidget-tree.png)
