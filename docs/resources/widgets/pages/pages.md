@@ -30,7 +30,7 @@ makes it possible to build complex multi-page apps with varying functionalities.
 
 #### Interactivity
 
-By integrating interactive widgets, like `Button` and `Form 
+By integrating interactive widgets, like `Button` and `Form
 Elements`, you can make each page responsive to user inputs, leading to a dynamic
 user experience where actions on one page can lead to changes on another or
 alter the overall app behavior.
@@ -41,10 +41,11 @@ In FlutterFlow, each page you create is fundamentally structured using a
 **Scaffold**, which is
 a [widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html)
 that provides the basic material design
-visual layout structure. The `Scaffold` widget offers a consistent framework for
+visual layout structure. The `Scaffold` widget, or in FlutterFlow often referred to as a Page,
+offers a consistent framework for
 each page, allowing you to define and organize its structure, including the
 **Header** (`AppBar`), **Body**, **Floating Action Button, Drawer,** and other typical page
-components. In FlutterFlow, you will find these page widgets under **Page
+components. In FlutterFlow, you will find these page elements under **Page
 Elements**.
 
 :::tip[Generated Code]
@@ -62,8 +63,12 @@ which can house the title, navigation controls, and other actions.
 **Floating Action Button (FAB)**: An action button that is commonly used for
 primary actions on the screen, like adding a new contact or composing a message.
 
-**Drawer & End-Drawer**: A slide-out menu for app navigation, accessible from
-the `AppBar` or by swiping from the side.
+**Drawer & End-Drawer**: A slide-in menu that allows navigation to different views within the app,
+accessible from the `AppBar` or by swiping from the side.
+
+**SnackBar:** A temporary, lightweight message that appears at the bottom of the screen.
+
+**BottomNavigationBar:** A bottom bar that can display multiple items for navigation purposes.
 
 **Body:** The main content area where you place your widgets. In FlutterFlow,
 you
@@ -129,7 +134,8 @@ Let's delve into the key moments in the page lifecycle:
   event listeners, or subscriptions, need to be released to free up memory and
   prevent memory leaks.
 
-FlutterFlow only exposes the [OnPageLoad Action Trigger](how-tos.md#page-action-triggers) to allow you to set up
+FlutterFlow only exposes the [OnPageLoad Action Trigger](how-tos.md#page-action-triggers) to allow
+you to set up
 any initial logic of the page and also allows you to rebuild the page on data
 changes. [See the Update Page State action](how-tos.md#update-page-state-action).
 The rest of the lifecycle logic is handled internally by FlutterFlow. 
