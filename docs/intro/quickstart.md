@@ -2,6 +2,7 @@
 slug: quickstart
 title: Quick Start Guide
 tags: []
+description: Jumpstart your FlutterFlow journey with our Quick Start Guide. Learn to build a dynamic app and explore essential FlutterFlow features like UI building, state management, and app execution.
 ---
 
 # **Quick Start Guide**
@@ -12,7 +13,8 @@ This quickstart is designed to be straightforward and accessible, introducing yo
 <!-- TO DO: add links to resource section later on -->
 
 Below is a preview of what your app will look like once completed:
-<img src="../../static/img/flutterflow-quick-start-app-demo.avif" alt="flutterflow-quick-start-app-demo.avif"  />
+
+![Quick start demo app](../../static/img/flutterflow-quick-start-app-demo.avif)
 
 ## **What you'll learn**
 - Creating layouts (add widgets)

@@ -2,6 +2,7 @@
 slug: canvas
 title: Canvas
 tags: []
+description: Dive into the versatile Canvas in FlutterFlow, where you can effortlessly design and preview your app’s interface.
 ---
 
 # Canvas 
@@ -48,7 +49,7 @@ This becomes really helpful in testing your app design with translated text with
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/ViB374dOSglo4Z1afa0o?embed&show_copy_link=true"
+        src="https://demo.arcade.software/E6otMpbcKewMYCfkjl9d?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',

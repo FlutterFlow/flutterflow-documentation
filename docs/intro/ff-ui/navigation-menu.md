@@ -2,6 +2,7 @@
 slug: navigation-menu
 title: Navigation Menu
 tags: []
+description: Explore the Navigation Menu in FlutterFlow, your central hub for accessing a wealth of development features and tools.
 ---
 
 # Navigation Menu

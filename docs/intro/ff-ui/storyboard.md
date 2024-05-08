@@ -2,6 +2,7 @@
 slug: storyboard
 title: Storyboard
 tags: []
+description: Master the Storyboard view in FlutterFlow to visualize your app’s design and user navigation. The Storyboard allows you to see screens and interactions, ensuring a seamless user experience.
 ---
 
 # Storyboard
@@ -30,7 +31,7 @@ We use the following elements inside the storyboard:
 
 ## Highlight routes on a page
 
-With so many pages displayed on a Storyboard, it may be difficult to identify what routes are coming and where they go from a specific page, especially when lines overlap each other. To highlight the incoming and outgoing routes on a specific page, just click on a page, and the routes will be highlighted in blue color.
+With so many pages displayed on a storyboard, it may be difficult to identify which routes are coming and where they go from a specific page, especially when lines overlap each other. To highlight the incoming and outgoing routes on a specific page, simply click on the page, and the routes will be highlighted in blue.
 
 ![highlight-routes.avif](imgs/highlight-routes.avif)
 

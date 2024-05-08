@@ -2,6 +2,7 @@
 slug: toolbar
 title: Toolbar
 tags: []
+description: Navigate the Toolbar in FlutterFlow for efficient access to essential tools and features. This includes project management, version control, interactive help resources, and direct actions like running your app, reporting issues, and customizing your workspace.
 ---
 
 # Toolbar
@@ -95,23 +96,14 @@ We allow you to visualize and design your app for various mobile, tablet, and de
         allow="clipboard-write">
     </iframe>
 </div>
+
 ## 6. Project history
 
-Versions
+### Versions
 
 Versions enable you to save specific named states of your project. This function is particularly useful for recovery purposes. If you accidentally delete a page or component or change settings, you can easily revert to a saved version.
 
-Snapshots
-
-Snapshots are automatically saved as you build.
-
-:::info
-
-Users on the *Free* and *Standard* plans can access only one day of snapshots.
-
-:::
-
-### 6.1 Saving a version
+#### 6.1 Saving a version
 
 Saving the latest changes will store the current state of your app in the version control. In the future, if anything goes wrong, you can restore your app to the currently saved state.
 
@@ -142,11 +134,22 @@ Ideally, you should save the version whenever you accomplish something important
         allow="clipboard-write">
     </iframe>
 </div>
-### 6.2 Restoring a version
 
-Restoring the previous version will preserve the current version, then load the changes from the version you're restoring. Before restoration, you may want to view the changes in the previous version. To do this, select the Peek option, which opens the previous version in a new tab.
+#### 6.2 Restoring a version
 
-![Screenshot 2024-05-06 at 10.57.51 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/09694bda-16f5-490f-aaac-3601b64ca6a2/62cabaee-ff75-496b-be7e-6df40a3cd8f2/Screenshot_2024-05-06_at_10.57.51_AM.png)
+Restoring the previous version will preserve the current version, then load the changes from the version you're restoring. Before restoration, you may want to view the changes in the previous version. To do this, select the **Peek** option, which opens the previous version in a new tab.
+
+![restore-version.png](imgs/restore-version.png)
+
+### Snapshots
+
+Snapshots are automatically saved as you build.
+
+:::info
+
+Users on the *Free* and *Standard* plans can access only one day of snapshots.
+
+:::
 
 ## 7. Project comments
 
@@ -162,9 +165,9 @@ To tag users, select the @ symbol and choose the project team member(s).
 
 We scan and suggest enhancements to elevate your app's design and speed. Imagine having a personal consultant for design and performance dedicated to improving the user experience of your app.
 
-Optimizations: We spotlight elements that may slow down your app. For example, a query on a column, unused and duplicate backend query, a widget with unbounded size, etc.
+**Optimizations**: We spotlight elements that may slow down your app. For example, a query on a column, unused and duplicate backend query, a widget with unbounded size, etc.
 
-UI Enhancements: We offer tips for a more visually appealing and user-friendly design, like resizing a small tap target of any widget.
+**UI Enhancements**: We offer tips for a more visually appealing and user-friendly design, like resizing a small tap target of any widget.
 
 :::info
 
@@ -178,6 +181,10 @@ You can control what kind of suggestions you would like to receive by clicking o
 
 If there are any issues or warnings present in your current project that might result in a build failure or app crash, they will be displayed in this section. You can click this option to view a short description of each issue and navigate to the place where you can fix the issue by clicking on the respective issue.
 
+Errors prevent your app from compiling and running. These must be resolved in order to run the app. They can be due to missing actions, errors in custom code, incorrect data types, and so on.
+
+Warnings, while not preventing compilation, indicate potential issues such as incorrect rules setup or performance problems. Although it's possible to ignore warnings, addressing them can enhance the quality of your app and prevent future issues.
+
 ![Warning-and-errors.avif](imgs/Warning-and-errors.avif)
 
 ## 10. Branching
@@ -188,23 +195,31 @@ If there are any issues or warnings present in your current project that might r
 
 From here, you can view the code for your project, connect to GitHub, and also download the source code for your project.
 
-## 11.1 View Code
+### 11.1 View Code
 
 This option lets you display the *Dart* code for all the pages of your FlutterFlow project. You can also take a look at the dependencies being used by the app here.
 
-## 11.2 Connect GitHub Repo (Paid Feature)
+### 11.2 Connect GitHub Repo (Paid Feature)
 
 You can use this option to connect your project with your [GitHub](https://github.com/) account and upload it to a GitHub repository. When you click this option, you will be navigated to the Settings and Integrations > Integrations > Github section.
 
 From there, you can configure your project to add GitHub integration to it. You can get a detailed [step-by-step guide](#) for connecting to GitHub.
 
-### 11.3 Download Code (Paid Feature)
+### 11.3 Download Code
 
 You can download the entire codebase of the app generated by FlutterFlow using this option. It will download a `.zip` file. You can open the contents using any code editor to make modifications.
 
-### 11.4 Download APK (Paid Feature)
+:::note
+This feature requires a paid plan.
+:::
+
+### 11.4 Download APK
 
 Use this to generate a release build of your app. It will automatically download the `.apk` file after the building process is complete.
+
+:::note
+This feature requires a paid plan.
+:::
 
 ### 11.5 FlutterFlow CLI
 
@@ -223,12 +238,12 @@ You can make a project public so that others can view and clone your project. Be
 
 ## 13. Preview
 
-You can use the Preview mode to quickly try out your app on a virtual device without waiting for it to build. This helps you to have a good overview of the navigation and animations you have added to your app. You can also preview your app in the Dark/Light mode and visualize it on various mobile, tablet, and desktop devices.
+You can use the [Preview mode](../../resources/Projects/how-to-run-test-projects#preview-mode) to quickly try out your app on a virtual device without waiting for it to build. This helps you to have a good overview of the navigation and animations you have added to your app. You can also preview your app in the Dark/Light mode and visualize it on various mobile, tablet, and desktop devices.
 
-This mode has a few limitations; you can't use Firebase or perform API calls in the *Preview* mode. However, the onDoubleTap, onLongPress, and onSubmit works in this mode.
+This mode has a few limitations; you can't use Firebase or perform API calls in the Preview mode. However, the onDoubleTap, onLongPress, and onSubmit works in this mode.
 
-A list of unsupported features is displayed in the Known Issues menu in *Preview mode*.
+A list of unsupported features is displayed in the Known Issues menu in Preview mode.
 
 ## 14. Testing
 
-This menu allows you to run your app in [Test](#) or [Run](#) mode.
+This menu allows you to run your app in [Test](../../resources/Projects/how-to-run-test-projects#test-mode) or [Run](../../resources/Projects/how-to-run-test-projects#run-mode) mode.

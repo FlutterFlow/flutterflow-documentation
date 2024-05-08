@@ -2,6 +2,7 @@
 slug: widget-palette
 title: Widget Palette
 tags: []
+description: Explore the Widget Palette in FlutterFlow to access a wide range of UI elements. This feature offers an intuitive interface for dragging and dropping Flutter widgets onto your canvas.
 ---
 # Widget Palette
 

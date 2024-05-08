@@ -2,6 +2,7 @@
 slug: resource-hierarchy
 title: Resource Hierarchy Overview
 tags: []
+description: Explore the Resource Hierarchy Overview to understand the correlation between traditional Flutter app components and their equivalents in FlutterFlow.
 ---
 
 # Resource hierarchy overview
@@ -14,7 +15,7 @@ This diagram serves as a useful guide for developers transitioning from a tradit
 
 ## 1. MyApp to Project
 
-In Flutter, `MyApp` typically represents the root of your application, where you set up routes and other global configurations. In FlutterFlow, the equivalent is the "Project," which encompasses the entire application you are building, including its configurations and settings. Learn more about creating a project [here](#).
+In Flutter, `MyApp` typically represents the root of your application, where you set up routes and other global configurations. In FlutterFlow, the equivalent is the "Project," which encompasses the entire application you are building, including its configurations and settings. Learn more about creating a project [here](../../resources/Projects/how-to-create-find-organize-projects#how-to-create-a-project).
 
 ## 2. MyPage to Page
 
