@@ -7,9 +7,8 @@ sidebar_position: 1
 
 ## Enabling authentication in FlutterFlow
 
-:::info [Skip if...]
-...you have already enabled authentication while creating a new project
-with a Firebase setup.
+:::tip[Skip if...]
+...you have already enabled authentication while creating a [**new project with Firebase setup.**](..%2F..%2F..%2FFirebase%2FConnect%20to%20Firebase%20Setup.md)
 :::
 
 To enable authentication in FlutterFlow:
@@ -25,7 +24,7 @@ To enable authentication in FlutterFlow:
 - To ensure that your users are directed to the appropriate pages based on their
   login status, you must set the **initial pages**.
 
-<img src="imgs/enable-auth-fr.png" alt="enable-auth-fr.png"  />
+![enable-auth-fr.png](imgs%2Fenable-auth-fr.png)
 
 ### Setting Initial Pages for Authentication
 
@@ -45,7 +44,7 @@ successful sign-in attempt.
 
 ## Creating the 'users' collection
 
-:::tip[Prerequisities]
+:::info[Prerequisities]
 To allow FlutterFlow to create user documents during authentication steps, it is
 important to enable Firestore Access in Firebase. Follow this section to enable
 it first.
@@ -53,7 +52,7 @@ it first.
 
 The 'users' collection stores the information for authenticated users.
 
-:::info [Skip if...]
+:::tip[Skip if...]
 ...you have already enabled 'Create User Collection' while creating a new
 project with a Firebase setup.
 
@@ -96,15 +95,15 @@ frameborder="0" allowFullScreen style={{ width: '100%', height: '600px' }}></ifr
 To store and collect additional information or modify the default fields list,
 see how to add fields.
 
-:::danger[ WARNING]
+:::warning[ WARNING]
 You do not need to create a password field. This is handled internally by
 Firebase.
 :::
 
 ## Setup for Google or Phone sign-in setup for Android Apps
 
-:::info
-If you aren't planning to use Google or Phone Sign-In, you can skip these steps.
+:::tip[OPTIONAL]
+If you aren't planning to use **Google** or **Phone Sign-In**, you can skip these steps.
 :::
 
 ### Generate the SHA-1 key
@@ -113,9 +112,9 @@ An SHA-1 key (aka the 'Secure Hash Algorithm') is required if you want to use
 Google Sign-in and Phone Sign-in. To learn more about the SHA-1 key, see
 this [link](https://developers.google.com/android/guides/client-auth).
 
-:::info[Note]
+:::warning[Release Guidelines]
 While releasing the app, make sure
-to [get the key from the Play Console](https://docs.flutterflow.io/data-and-backend/firebase/authentication/phone-sign-in#release-mode).
+to [**get the key from Play Console**](https://docs.flutterflow.io/data-and-backend/firebase/authentication/phone-sign-in#release-mode).
 :::
 
 1. Open a terminal window:

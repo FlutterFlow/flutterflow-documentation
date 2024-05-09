@@ -9,14 +9,13 @@ sidebar_position: 3
 
 Before getting started with this section, ensure you have:
 
-Completed all steps in
-the [Firebase Setup](docs/Integrations/Firebase/Connect to Firebase Setup.md).
+- Completed all steps in [**Firebase Setup**](..%2F..%2F..%2FFirebase%2FConnect%20to%20Firebase%20Setup.md).
 
-Completed [Initial Setup](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
+- Completed [**Initial Setup**](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
 required for authentication.
 
-Learn more about the concepts
-of [Anonymous Authentication](docs/Integrations/Authentication/Concepts/authentication-approaches.md)
+- Learn more about the concepts
+of [**Anonymous Authentication**](docs/Integrations/Authentication/Concepts/authentication-approaches.md)
 :::
 
 ## Enable Anonymous Authentication in Firebase
@@ -28,10 +27,12 @@ the authentication provider:
 
 ## Add Anonymous Login Action
 
-1. On the button designated for anonymous authentication, add a new Action. 
+1. On the button designated for anonymous authentication, add a new Action.
 
-2. Search for and select the **Log In** action (located under Backend/Database > Firebase Authentication).
+2. Search for and select the **Log In** action (located under Backend/Database > Firebase
+   Authentication).
 
 3. Set the Auth Provider to **Anonymous**.
 
-4. Enable the **Create User Document** toggle and set the Collection to _users_. This action will create an entry for the user in the database without any details upon successful login.
+4. Enable the **Create User Document** toggle and set the Collection to _users_. This action will
+   create an entry for the user in the database without any details upon successful login.
