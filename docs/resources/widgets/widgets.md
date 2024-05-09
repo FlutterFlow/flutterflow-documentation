@@ -50,7 +50,7 @@ overlapping elements.
 **Container**: Provides a box model for a single child widget, with optional
 padding, margins, borders, and background color.
 
-_Check out your builder for the entire list_
+_Check out the builder for the entire list_
 
 ### Base Elements
 
