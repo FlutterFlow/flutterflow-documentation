@@ -120,6 +120,9 @@ When resizing a widget, you can snap its size to the specific pixel values or a 
     </iframe>
 </div>
 
+### 11.3 Change canvas color
+Changing the canvas color can be helpful when creating components, especially when you want to preview them against the background color of the page. For example, if you have a text component that is black or dark-colored, and the default background is also dark, changing the canvas color to a lighter shade can improve visibility and make the design process easier.
+
 ## 12. Add NavBar
 
 This button allows you to add the [NavBar](#) to your page. Clicking on this button opens the popup that allows you to enable NavBar for your project. Once the NavBar is enabled, you can customize it to match your design.
