@@ -54,7 +54,7 @@ The AppBar is divided into the following sections:
     </iframe>
 </div>
 
-## FloatingActionButton
+## Floating Action Button (FAB)
 
 **Floating Action Button (FAB)** is a distinctive circular button that hovers over content, commonly
 used for a primary action within an app, like adding a new item or composing a message.
@@ -71,6 +71,8 @@ The **extended** `FAB` is particularly beneficial in applications where the acti
 immediate recognition from the user, which cannot be fully achieved by an icon alone. It is also
 useful in interfaces where there is ample space to accommodate a longer button without cluttering
 the UI.
+
+![fab-comparison.png](imgs%2Ffab-comparison.png)
 
 ### Adding a Floating Action Button to your Page
 
@@ -243,13 +245,14 @@ selected and unselected items.
 
 **Styling Properties**
 
-- **Show Labels (Selected)** - Toggle: Allows you to enable or disable the display of labels for
-  selected items in the NavBar.
-- **Show Labels (Unselected)** - Toggle: Allows you to enable or disable the display of labels for
-  unselected items in the NavBar.
-- **NavBar Color:** Sets the background color of the NavBar.
-- **Selected Icon Color:** Specifies the color of the icons when they are selected.
-- **Unselected Icon Color:** Specifies the color of the icons when they are not selected.
+| Property | Type        | Description                                                                             |
+|----------|-------------|-----------------------------------------------------------------------------------------|
+|  **Show Labels (Selected)** | Toggle      | Allows you to enable or disable the display of labels for selected items in the `NavBar`. |
+|**Show Labels (Unselected)**  | Toggle      | Allows you to enable or disable the display of labels for unselected items in the `NavBar` |
+| **NavBar Color**  | Color Wheel | Sets the background color of the `NavBar`                                                 |
+| **Selected Icon Color**   | Color Wheel | Specifies the color of the icons when they are selected.                                |
+| **Unselected Icon Color** |  Color Wheel | Specifies the color of the icons when they are not selected.                            |
+
 
 #### Google Nav Bar
 
@@ -352,20 +355,21 @@ Here are some common usages of a SnackBar in an app:
 Material Design allows you to add an interactive element to the SnackBar
 notification, allowing users to respond directly from the snack message.
 
-Here’s how they work:
 
-**Action Button:** Typically, a SnackBar can include a single action button. This button is
+### Add Action Property
+
+Typically, a SnackBar can include a single action button. This button is
 used to offer users an immediate option to interact with the snack message.
 
 Common uses include undoing an action that the snack message refers to (like undoing a deletion),
 retrying a failed task (like reconnecting to a network), or any other quick recovery or response
 tasks.
 
-**Customization:** The action within a SnackBar is customizable. You can define the button's
+- **Customization:** The action within a SnackBar is customizable. You can define the button's
 label, appearance, and the function it executes when pressed. This allows the SnackBar to not only
 inform users but also engage them in meaningful ways to enhance the user experience.
 
-**Timeouts and Visibility:** The presence of an action can affect the duration the SnackBar is
+- **Timeouts and Visibility:** The presence of an action can affect the duration the SnackBar is
 displayed. By default, a SnackBar may auto-dismiss after a few seconds, but if an action button is
 present, users might need more time to read the message and respond, thus you might consider
 adjusting the display duration accordingly.
