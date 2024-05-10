@@ -51,11 +51,11 @@ depends on how you need to arrange your UI components:
 
 ![row-col-stack.png](..%2Fimgs%2Frow-col-stack.png)
 
-Use a **Row** for side-by-side layout.
+- Use a **Row** for side-by-side layout.
 
-Use a **Column** for a top-to-bottom layout.
+- Use a **Column** for a top-to-bottom layout.
 
-Use a **Stack** for overlapping elements.
+- Use a **Stack** for overlapping elements.
 
 #### Choosing your parent widget
 
