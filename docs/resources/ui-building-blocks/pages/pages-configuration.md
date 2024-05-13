@@ -3,9 +3,8 @@ title: Page Configurations
 sidebar_position: 1
 ---
 
-#
+# Property Panel
 
-## Properties Panel
 
 In FlutterFlow, the properties panel located on the right side of the interface
 plays a crucial role in configuring and managing the various aspects of your

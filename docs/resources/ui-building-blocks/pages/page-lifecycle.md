@@ -104,8 +104,12 @@ A state variable holds information or data about your UI at any given moment. To
 about **states and state management, [refer here](#)**
 :::
 
-A **Page State** variable holds information about your page configurations and data resources and is
-only accessible within that particular page.
+
+**Page state** refers to the information that a page tracks about its current
+condition or the data it displays. This can include things like which tabs are
+active, the contents of a form, or any user interactions. Managing state is
+crucial for dynamic pages that interact with user inputs or load varying data. Page State 
+variables are only accessible within the given Page scope. 
 
 This type of variable can be useful for storing data that needs to be shared between different
 widgets on the page, such as saving form data, a search query, and filtering and sorting options.

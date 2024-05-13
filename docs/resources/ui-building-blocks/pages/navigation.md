@@ -98,8 +98,10 @@ previous section:
 
 ### Page Parameters
 
-As discussed in the [Page Concepts](resources/widgets/pages/#page-parameters)
-page, Page Parameters are used to pass data between pages.
+**Parameters** in FlutterFlow are used to pass data between pages. When navigating
+from one page to another, you can send parameters to configure the destination
+page based on the data from the current page. This is useful for tasks like
+passing a user ID to a profile page or specific details to a detailed view page.
 
 To create a page parameter, follow the steps:
 
