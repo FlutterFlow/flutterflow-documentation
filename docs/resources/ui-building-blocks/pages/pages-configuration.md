@@ -51,21 +51,21 @@ Here's an overview of these additional configurations:
 This section is where you set the fundamental aspects of a page’s layout and
 behavior, including:
 
-**Background Color:** This property allows you to set a background color for the
+- **Background Color:** This property allows you to set a background color for the
 entire page. You can choose a color that fits the theme and design of your app.
 
-**Safe Area:** When this toggle is enabled, the page content will be
+- **Safe Area:** When this toggle is enabled, the page content will be
 automatically adjusted to not overlap with the system status bar, navigation
 bar, and other critical device UI elements. This ensures that all elements of
 the page are visible and accessible on different devices.
 
-**Hide Keyboard on Tap:** Enabling this option makes the keyboard retract when
+- **Hide Keyboard on Tap:** Enabling this option makes the keyboard retract when
 the
 user taps anywhere outside the keyboard area on the screen. This is particularly
 useful for improving user experience by preventing the keyboard from obscuring
 content.
 
-**Disable Android Back Button:** This toggle, when activated, prevents the
+- **Disable Android Back Button:** This toggle, when activated, prevents the
 Android
 back button from affecting the navigation on this particular page. This can be
 useful in scenarios where you don't want users to navigate back to the previous

@@ -186,18 +186,18 @@ persisted in the app’s global state but is necessary for specific
 functionalities or displays on the subsequent page. Here’s a
 breakdown of typical uses:
 
-**Contextual Data:** Information that defines the context of the new page, such
+- **Contextual Data:** Information that defines the context of the new page, such
 as
 identifiers for items or entities that the page must display. This could include
 identifiers for transactions, specific products, or user profiles that were
 selected on the previous page.
 
-**Configuration Options:** Settings or options chosen by the user that affect
+- **Configuration Options:** Settings or options chosen by the user that affect
 how
 the next page functions or appears. For example, filter or sort preferences
 selected on a list page that need to be applied on a subsequent results page.
 
-**Operational Parameters:** Values needed for calculations or logic on the next
+- **Operational Parameters:** Values needed for calculations or logic on the next
 page
 that are generated through user activities on the current page. These could be
 values like quantities, dates, or configuration details necessary to perform
