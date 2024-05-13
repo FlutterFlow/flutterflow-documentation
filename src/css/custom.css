@@ -91,19 +91,24 @@ h1 {
 h2 {
   margin-top: 20px;
   font-size: 26px;
+  font-family: Product Sans, sans-serif;
+
 }
 
 h3 {
   color:var(--black-700);
   font-size: 22px;
   font-weight: 700;
-  
+  font-family: Product Sans, sans-serif;
+
+
 }
 
 h4 {
   color:var(--black-700);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: Product Sans, sans-serif;
 
 }
 
