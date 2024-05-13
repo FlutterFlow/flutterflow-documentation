@@ -1,6 +1,6 @@
 
 :root {
-  --ifm-font-family-base: 'Product Sans', sans-serif;
+  --ifm-font-family-base: 'Arial', 'Helvetica', sans-serif;
   --ifm-font-family-monospace: 'Roboto Mono', monospace; /* For monospace font if needed */
   --border: 1px solid #d9d6d6;
   --selected-border: 1px solid var(--ifm-color-primary);
@@ -84,6 +84,8 @@ h1 {
   font-weight: 700;
   line-height: 44px;
   color:var(--primary-text);
+  font-family: Product Sans, sans-serif;
+
 }
 
 h2 {
@@ -106,11 +108,7 @@ h4 {
 }
 
 
-p {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .centered-caption {
   text-align: center;
