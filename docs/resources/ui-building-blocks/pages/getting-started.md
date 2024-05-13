@@ -26,10 +26,10 @@ Here's how the `Scaffold` contributes to page design in FlutterFlow:
 - **Body:** The main content area where you place your widgets for the body of the Page.
 
 :::note[PLEASE NOTE]
-In FlutterFlow, you won't find a section explicitly labeled as "Body".
-For example, in the following example, we have the `ProductDetailPage` and the ListView is
-the root of the widget tree and the rest of the body child widgets assembled under
-![body-page.png](..%2Fimgs%2Fbody-page.png)
+In FlutterFlow, you won't find a section explicitly labeled as "Body". For example, in the 
+`ProfileSettingsPage`, the `Column` serves as the root of the widget tree for the body, with the rest of the child widgets assembled underneath.
+
+![scaffold-elements.png](..%2Fimgs%2Fscaffold-elements.png)
 :::
 
 In FlutterFlow, you will find these Page Widgets under **Page Elements** in Widget Pallete.

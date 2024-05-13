@@ -7,9 +7,9 @@ sidebar_position: 3
 Navigation in FlutterFlow involves moving between different pages. This is
 handled through routing, where each page is identified by a unique route.
 Navigation can be programmed to happen on events like button clicks, leading to
-actions such as pushing a new route (opening a new page) or popping a route (
-returning to a previous page). FlutterFlow simplifies the routing process,
-allowing you to visually design the navigation flow of your app.
+actions such as pushing a new route (opening a new page) or popping a route (returning to a previous
+page). FlutterFlow simplifies the routing process, allowing you to visually design the navigation
+flow of your app.
 
 Let's see how to do that in FlutterFlow:
 
@@ -50,10 +50,7 @@ navigation-related properties:
 | **Replace Route**         | Toggle    | Use this option to replace the current page in the navigation stack. For example, if a user navigates from Page A to Page B and then to Page C, pressing the back button on Page C would normally return to Page B. However, if **Replace Route** is enabled on Page B, the route changes to Page A -> Page C; therefore, pressing the back button on Page C will take the user back to Page A. |
 | **Transition Type**       | Drop Down | This allows you to specify an animation that will be applied while navigating away from a screen. Options include **Default, Instant, Fade In, Slide Up, Slide Down, Slide Left, Slide Right,** and **Scale**.                                                                                                                                                                                  |
 | **Transition Duration**   | Double    | Set the duration of the transition animation in milliseconds                                                                                                                                                                                                                                                                                                                                    |
-| **Page Parameters**       | ?         | Use this to send data to the next page during navigation.                                                                                                                                                                                                                                                                                                                                       |
-
-
-
+| **Page Parameters**       |          | Use this to send data to the next page during navigation.                                                                                                                                                                                                                                                                                                                                       |
 
 :::info[Note]
 **Allow Back Navigation** does not affect the Android back button. To disable the Android back
@@ -61,8 +58,10 @@ button,
 set **Disable Android Back Button** property on the destination page.
 :::
 
-
-![Nav.png](..%2Fimgs%2FNav.png)
+<figure>
+    ![Nav.png](..%2Fimgs%2FNav.png)
+  <figcaption class="centered-caption">Properties of a Navigate To Action</figcaption>
+</figure>
 
 ### Navigate Back [Action]
 
@@ -96,7 +95,6 @@ previous section:
         allow="clipboard-write">
     </iframe>
 </div>
-
 
 ### Page Parameters
 
@@ -142,7 +140,7 @@ optional.
 
 ![Page-Params.png](..%2Fimgs%2FPage-Params.png)
 
-If you have created a Required Page Parameter and there is a Navigation Action
+If you have created a **Required** Page Parameter and there is a Navigation Action
 already set on your previous page, FlutterFlow will throw errors because this
 required parameter has not yet been sent from the previous page. Let's fix that:
 
@@ -173,10 +171,13 @@ required parameter has not yet been sent from the previous page. Let's fix that:
     </iframe>
 </div>
 
+<figure>
+    
+  <figcaption class="centered-caption"></figcaption>
+</figure>
 
 
-
-
+ 
 :::info[When to use Page Parameters?]
 Page parameters are used to pass essential data between pages that is not
 persisted in the app’s global state but is necessary for specific
