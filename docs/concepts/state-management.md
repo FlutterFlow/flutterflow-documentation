@@ -9,8 +9,10 @@ You can think of the UI as a function of your state variables, where changes in 
 
 In FlutterFlow, there are a few types of state variables that you can create:
 
-
-![App State is shared across multiple pages in the application. Component State is specific to a component. Page State is shared across widgets on the page.](<state_management_overview.png>)
+<figure>
+   ![app stage overview](state_management_overview.png)
+  <figcaption class="centered-caption">App State is shared across multiple pages in the application. Component State is specific to a component. Page State is shared across widgets on the page.</figcaption>
+</figure>
 
 
 - State variables are themselves variables - meaning they have a *name* and a *data type*. 
@@ -19,8 +21,9 @@ In FlutterFlow, there are a few types of state variables that you can create:
 - You can update the value of state variables using the *Update State Variable* action.
 
 You can learn more about state management from this video:
-<div class="video-container"><iframe src="https://www.youtube.com/watch?v=jD6L4xjYjJA" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/jD6L4xjYjJA?si=-RjniUB-K0ZsMoB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 <!-- TO DO: link to variables section + action secton -->
