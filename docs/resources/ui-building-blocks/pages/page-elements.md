@@ -72,7 +72,7 @@ immediate recognition from the user, which cannot be fully achieved by an icon a
 useful in interfaces where there is ample space to accommodate a longer button without cluttering
 the UI.
 
-![fab-comparison.png](imgs%2Ffab-comparison.png)
+![fab-comparison.png](..%2Fimgs%2Ffab-comparison.png)
 
 ### Adding a Floating Action Button to your Page
 
@@ -169,7 +169,7 @@ create at least two pages. If you need help with adding a new page, you can find
 [more information here](how-tos.md#create-an-empty-page).
 :::
 
-![nav-bar.png](imgs%2Fnav-bar.png)
+![nav-bar.png](..%2Fimgs%2Fnav-bar.png)
 
 **Responsive Visibility:** To ensure that your NavBar is visible only on certain screen sizes, you
 can
@@ -241,7 +241,7 @@ Style dropdown to one of the following:
 This is the standard material style NavBar. You have the option to show or hide labels for both
 selected and unselected items.
 
-![nav-bar-default.png](imgs%2Fnav-bar-default.png)
+![nav-bar-default.png](..%2Fimgs%2Fnav-bar-default.png)
 
 **Styling Properties**
 
@@ -259,7 +259,7 @@ selected and unselected items.
 This modern Google-style NavBar features a subtle animation that reveals the item label (page name)
 but only displays the label for the selected item.
 
-![nav-bar-google.png](imgs%2Fnav-bar-google.png)
+![nav-bar-google.png](..%2Fimgs%2Fnav-bar-google.png)
 
 **Styling Properties**
 
@@ -286,7 +286,7 @@ but only displays the label for the selected item.
 This NavBar style appears as a floating element above the pages and shows labels for all items
 present in the NavBar.
 
-![nav-bar-floating.png](imgs%2Fnav-bar-floating.png)
+![nav-bar-floating.png](..%2Fimgs%2Fnav-bar-floating.png)
 
 **Styling Properties**
 
@@ -374,12 +374,12 @@ displayed. By default, a SnackBar may auto-dismiss after a few seconds, but if a
 present, users might need more time to read the message and respond, thus you might consider
 adjusting the display duration accordingly.
 
-![snackbar-action-props.png](imgs%2Fsnackbar-action-props.png)
+![snackbar-action-props.png](..%2Fimgs%2Fsnackbar-action-props.png)
 
 Adding actions to SnackBars helps make them not just informative but also interactive, facilitating
 a more dynamic user interaction model where feedback and actions are closely linked.
 
-![snackbar.png](imgs%2Fsnackbar.png)
+![snackbar.png](..%2Fimgs%2Fsnackbar.png)
 
 ### Hide SnackBar [Action]
 
