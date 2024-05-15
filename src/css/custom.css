@@ -1,6 +1,6 @@
 
 :root {
-  --ifm-font-family-base: 'Product Sans', sans-serif;
+  --ifm-font-family-base: 'Arial', 'Helvetica', sans-serif;
   --ifm-font-family-monospace: 'Roboto Mono', monospace; /* For monospace font if needed */
   --border: 1px solid #d9d6d6;
   --selected-border: 1px solid var(--ifm-color-primary);
@@ -44,7 +44,7 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --primary-text: var(--graytext);
+  --primary-text: var(--white);
   --ifm-color-primary: #786aff; /* Primary brand color, lighter purple for visibility on dark backgrounds */
   --ifm-color-primary-dark: #6255c8; /* Dark shade for hover states, toned down for dark mode */
   --ifm-color-primary-darker: #5042a3; /* Even darker shade for active states, balanced for contrast */
@@ -54,6 +54,13 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: #b6adff; /* Lightest primary shade, nearly pastel against dark modes */
   --ifm-code-font-size: 95%; /* Maintained font size for readability */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter line highlighting in code for dark mode */
+  h1, h2, h3, h4, h5, h6, p {
+    color: #ffffff; /* Set the text color for headings and body text */
+  }
+  ul, ol {
+    color: #ffffff; /* Set the text color for lists */
+  }
+
 }
 
 
@@ -77,38 +84,61 @@ h1 {
   font-weight: 700;
   line-height: 44px;
   color:var(--primary-text);
+  font-family: Product Sans, sans-serif;
+
 }
 
 h2 {
   margin-top: 20px;
   font-size: 26px;
+  font-family: Product Sans, sans-serif;
+
 }
 
 h3 {
   color:var(--black-700);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  
+  font-family: Product Sans, sans-serif;
+
+
 }
 
 h4 {
   color:var(--black-700);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Product Sans, sans-serif;
 
 }
 
 
-p {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
+
+.centered-caption {
+  text-align: center;
+  font-size: 12px; /* Set the font size to 16px */
+}
 div.alert {
   margin-bottom: 24px;
 }
 
 .arcade-container {
 margin-bottom: 24px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
