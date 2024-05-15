@@ -3,6 +3,7 @@ slug: storyboard
 title: Storyboard
 tags: []
 description: Master the Storyboard view in FlutterFlow to visualize your app’s design and user navigation. The Storyboard allows you to see screens and interactions, ensuring a seamless user experience.
+sidebar_position: 3
 ---
 
 # Storyboard
@@ -11,7 +12,7 @@ The Storyboard view allows you to visualize the overall design and navigation of
 
 :::info
 
-Our *Beta* release of Storyboarding is optimized for projects with 30 or fewer pages.
+This feature is currently in Beta. It is optimized for projects with 30 pages or less.
 
 :::
 
@@ -31,7 +32,7 @@ We use the following elements inside the storyboard:
 
 ## Highlight routes on a page
 
-With so many pages displayed on a storyboard, it may be difficult to identify which routes are coming and where they go from a specific page, especially when lines overlap each other. To highlight the incoming and outgoing routes on a specific page, simply click on the page, and the routes will be highlighted in blue.
+With so many pages displayed on a Storyboard, it may be difficult to identify the route path from a specific page, especially when lines overlap each other. To highlight the pathways leading into and out of a specific page, just click on a page, and the routes will be highlighted in blue color.
 
 ![highlight-routes.avif](imgs/highlight-routes.avif)
 
@@ -47,7 +48,7 @@ You can also open a page directly from a Storyboard. To do so, simply double-cli
 
 ## Video guide
 
-If you prefer watching a video tutorial, here's the one for you:
+Watch this video if you prefer watching a video tutorial.
 <div class="video-container"><iframe width="760" height="428" src="https://www.youtube.com/embed/ukBii81pwm4" title="Navigating Pages &amp; Storyboard | FlutterFlow University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 ---
 

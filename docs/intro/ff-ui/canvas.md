@@ -3,14 +3,15 @@ slug: canvas
 title: Canvas
 tags: []
 description: Dive into the versatile Canvas in FlutterFlow, where you can effortlessly design and preview your app’s interface.
+sidebar_position: 2
 ---
 
 # Canvas 
-The Canvas shows the mobile device screen where you can add widgets by dragging and dropping them. You can select, move, and position widgets anywhere on the Canvas. 
+The Canvas shows the screen of the device, which could be mobile, iPad, web, or desktop. It allows you to add widgets via drag-and-drop. You can select, move, and position widgets anywhere on the Canvas.
 
-It allows zoom level adjustments and previews in light or dark mode. It also includes features for multi-language preview, adding AppBar and NavBar, simulating larger font visualization, and more.
+It allows zoom level adjustments and previews in light or dark mode. It also includes features for multi-language preview, adding App Bar and Nav Bar, simulating larger font visualization, and more.
 
-![CanvasArea.avif](imgs/CanvasArea.avif)
+![canvas area](imgs/canvas-new.avif)
 
 ## 1. Preview Screen
 
@@ -28,9 +29,9 @@ There's a zoom in ( + ) and a zoom out ( - ) button to control the zoom level of
 
 From here, you can [create a page using AI](#).
 
-## 5. Add AppBar
+## 5. Add App Bar
 
-From here, you can add an [AppBar](#) to your page. Clicking this button opens a popup displaying different [AppBar styles](#) for you to choose from. Just select any AppBar style from the list and it will appear in the Preview Screen.
+From here, you can add an [App Bar](#) to your page. Clicking this button opens a popup displaying different [App Bar styles](#) for you to choose from. Just select any App Bar style from the list and it will appear in the Preview Screen.
 
 ![AddAppBar.avif](imgs/AddAppBar.avif)
 
@@ -38,8 +39,8 @@ From here, you can add an [AppBar](#) to your page. Clicking this button opens a
 
 If you've enabled the multi-language feature for your project, you can use this to preview your app in different languages. Just select the language from the dropdown menu, and the text in your app will be translated accordingly.
 
-:::info
-This becomes really helpful in testing your app design with translated text without having you run your app.
+:::tip
+This feature is valuable for testing your app across multiple locales without needing to run your app.
 :::
 
 <div style={{
@@ -76,23 +77,27 @@ This toggle lets you switch between light and dark mode in your app, allowing yo
 
 You can use this to show the device frame in the preview. This might come in handy if you want to visualize better or capture the user interface on a particular device.
 
-## 9. Display Resize Handle Bars
+## 9. Handle Bars
 
 Enabling the Resize Handle Bars will show the handle bards at the right and bottom sides of the preview screen. This allows you to change the size of the preview screen to better test your app on a screen with a custom resolution and the overall responsiveness of your app.
 
-## 10. Larger Font Visualization
+![handle-bars](imgs/handle-bars.gif)
+
+## 10. Show or hide Keyboard
+This option, when enabled, displays a virtual keyboard on the device preview screen. This is particularly useful for visualizing the user interface with the keyboard displayed.
+
+## 11. Larger Font Visualization
 
 This enables you to simulate how your app appears when users adjust text scale or accessibility settings on their devices. It's vital for developing an app that's visually appealing and also accessible, especially for those requiring larger text sizes.
 
-## 11. Canvas Settings
+## 12. Canvas Settings
+![canvas-settings](imgs/canvas-settings.avif)
+### Safe Area
+The Safe Area is a concept in mobile design that prevents content from being obscured by physical features of the device, such as camera notches, sensors, or rounded display edges. In this context, the FlutterFlow offers a Safe Area switch which allows you to enable or disable this feature as needed.
 
-### 11.1 Safe Area
+### Resize Snapping
 
-When the safe area is enabled, it ensures that content isn't hidden behind physical features like camera notches, sensors, or rounded edges of the display. You can enable or disable it using the Safe Area switch.
-
-### 11.2 Resize Snapping
-
-When resizing a widget, you can snap its size to the specific pixel values or a percentage of the screen size. By default, it is set to 1 px. To change this, click here, ensure Resize Snapping is enabled, and enter the pixel or percentage value.
+When resizing a widget, you can snap its size to the specific pixel values or a percentage of the screen size.
 
 <div style={{
     position: 'relative',
@@ -120,12 +125,12 @@ When resizing a widget, you can snap its size to the specific pixel values or a 
     </iframe>
 </div>
 
-### 11.3 Change canvas color
+### Change canvas color
 Changing the canvas color can be helpful when creating components, especially when you want to preview them against the background color of the page. For example, if you have a text component that is black or dark-colored, and the default background is also dark, changing the canvas color to a lighter shade can improve visibility and make the design process easier.
 
-## 12. Add NavBar
+## 13. Add Nav Bar
 
-This button allows you to add the [NavBar](#) to your page. Clicking on this button opens the popup that allows you to enable NavBar for your project. Once the NavBar is enabled, you can customize it to match your design.
+This button allows you to add the [Nav Bar](#) to your page. Clicking on this button opens the popup that allows you to enable Nav Bar for your project. Once the Nav Bar is enabled, you can customize it to match your design.
 
 ![AddNavBar.avif](imgs/AddNavBar.avif)
 
@@ -133,7 +138,7 @@ This button allows you to add the [NavBar](#) to your page. Clicking on this but
 
 ## Video guide
 
-If you prefer watching a video tutorial, here's the one for you:
+Watch this video if you prefer watching a video tutorial.
 <div class="video-container"><iframe width="760" height="428" src="https://www.youtube.com/embed/NDrte4nOXYc" title="The Canvas | FlutterFlow University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ---
