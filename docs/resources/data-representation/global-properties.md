@@ -17,7 +17,7 @@ You can access these properties via the **Set from Variable menu > Global Proper
 ![global-properties.avif](../imgs/global-properties.avif)
 
 :::note
-Global properties are FlutterFlow supported. You can't create one by yourself.
+Global properties are provided by FlutterFlow. You can't create one by yourself.
 :::
 
 ## List of Global Properties
