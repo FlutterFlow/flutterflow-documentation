@@ -22,14 +22,14 @@ Composite data types are made up of primitive data types. They can hold multiple
 You can also create your own custom data types. This can be especially useful when you need a specific structure for your data that doesn't fit into the predefined types. For example, you might create a custom data type for a user profile, which includes several pieces of data like a name, an email address, and a profile picture.
 
 :::info
-Learn more about creating and using custom data types [**here**](custom-data-types.md).
+Learn more about creating and using custom data types [**here**](custom-data-types).
 :::
 
 ## Built-in Data Types
 
 FlutterFlow's built-in data types are essential for effectively managing and organizing diverse information. They ensure data consistency and easy data retrieval. They handle functionalities from storing simple color values and media URLs to complex geographical data.
 
-For instance, the GooglePlace data type manages location data like coordinates, place name, and address, while the Uploaded File type handles uploaded file data, including file name, binary data, and image dimensions. This standardization is crucial as it allows you to focus on higher-level application logic without worrying about the underlying data handling specifics.
+For instance, the **GooglePlace** data type manages location data like coordinates, place name, and address, while the **Uploaded File** type handles uploaded file data, including file name, binary data, and image dimensions. This standardization is crucial as it allows you to focus on higher-level application logic without worrying about the underlying data handling specifics.
 Below is a list of all supported built-in data types:
 
 - **Color**: Stores color values.
@@ -53,6 +53,6 @@ Enums, or enumerated types, are a special kind of data type that consists of a s
 
 :::info
 
-Learn more about creating and using enums [**here**](enums.md).
+Learn more about creating and using enums [**here**](enums).
 
 :::

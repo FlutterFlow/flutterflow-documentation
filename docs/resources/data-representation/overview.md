@@ -27,7 +27,7 @@ Variables are used in practically all areas of the app, from the user interface 
 
 To create a variable, start by defining its name and data type. If it's going to contain a list, you can specify that. Certain variables, such as page state and component state variables, are non-nullable by default, meaning they must contain a value. After defining the variable, you can assign a value to it.
 
-Learn more about creating [app state variables](app-state.md), [page state variables](#), and [component state variables](#).
+Learn more about creating [app state variables](app-state), [page state variables](#), and [component state variables](#).
 
 ### Setting and using variables
 
@@ -41,14 +41,14 @@ Data types are used to define the kind of data that variables can store and mani
 
 :::info
 
-Learn more about data types [**here**](data-types.md).
+Learn more about data types [**here**](data-types).
 
 :::
 
 ## Data mutability
 
-All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [Constants](constants.md) that cannot be changed once they have been set.
+All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [Constants](constants) that cannot be changed once they have been set.
 
 ## Global data
 
-Global data are accessible from anywhere within the app. They are helpful, especially when the data is required frequently or by various components or pages. In FlutterFlow, they are available as [Global Properties](global-properties.md).
+Global data are accessible from anywhere within the app. They are helpful, especially when the data is required frequently or by various components or pages. In FlutterFlow, they are available as [Global Properties](global-properties).

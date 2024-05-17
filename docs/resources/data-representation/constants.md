@@ -13,16 +13,10 @@ Here are some real-world examples where using constants is beneficial:
 
 - **Educational Apps**: Constants for course-related data like the number of questions in a quiz or passing grade percentage.
 - **Fitness Apps**: Standard values like target heart rate zones or calorie burn rates based on specific exercises.
-- **Game Development**: Constants for game settings like default player health, speed, or levels. For example, `const int maxHealth = 100;`.
+- **Game Development**: Constants for game settings like default player health, speed, or levels.
 
-:::tip
-
-**When to use Constants?**
-Use constants when the same value is used in multiple places, and changing the value will change it everywhere it's used.
-
-**How are Constants different from the [App state variables](app-state.md)?**
-Constants don't change. Once you set its value, you can't change it from within the app. On the other hand, app state variables are dynamic. They can change and manage the app's changing data, like user status or preference.
-
+:::tip[When to use Constants vs **[App state variables](app-state)?**]
+Constants don't change. Once you set its value (in builder), you can't change it from within the app. On the other hand, app state variables are dynamic. They can be updated in response to interactions in the application, such as a user clicking a button or entering data.
 :::
 
 ## Create and use Constants

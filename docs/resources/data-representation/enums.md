@@ -8,13 +8,17 @@ sidebar_position: 3
 
 # Enums
 
-Enums prevent invalid values from being assigned. For example, if you have an enum for days of the week, you can't mistakenly assign a non-existent day. In contrast, with strings or numbers, you might accidentally use an invalid or misspelled value like "Sundey" or "Sinday".
+In FlutterFlow, Enums (enumerations) provide a method for defining a set of named constants. They are typically used to represent a group of related values in a more readable and safe manner. 
+
+They prevent invalid values from being assigned. For example, if you have an enum for days of the week, you can't mistakenly assign a non-existent day. In contrast, with strings or numbers, you might accidentally use an invalid or misspelled value like "Sundey" or "Sinday".
+
+![enums](../imgs/enums-fi.avif)
 
 Here are some real-world examples where using Enums is beneficial:
 
-- **Application States**: A media player might use enums to keep track of playback states (e.g., PLAYING, PAUSED, STOPPED).
-- **Product Types, Sizes, or Categories**: A clothing store app might use enums to categorize clothing sizes (SMALL, MEDIUM, LARGE).
-- **Order or Process Status**: For tracking the status of orders, processes, or tasks (PENDING, IN_PROGRESS, COMPLETED, CANCELED).
+1. **Application States**: A media player might use enums to keep track of playback states (e.g., playing, paused, stopped).
+2. **Product Types, Sizes, or Categories**: A clothing store app might use enums to categorize clothing sizes (small, medium, large).
+3. **Order or Process Status**: For tracking the status of orders, processes, or tasks (pending, inProgress, completed, canceled).
 
 ## Create and use Enums
 
@@ -45,6 +49,7 @@ Here are some real-world examples where using Enums is beneficial:
         allow="clipboard-write">
     </iframe>
 </div>
-1. Access the Enum values by navigating to the **Set from Variable** menu, then selecting **Enums > [your enum name] > Values**.
+
+2. Access the Enum values by navigating to the **Set from Variable** menu, then selecting **Enums > [your enum name] > Values**.
 
 ![enums.avif](../imgs/enums.avif)
