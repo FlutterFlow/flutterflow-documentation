@@ -13,16 +13,16 @@ Components help in the following ways:
 - **Consistency:** Components provide a consistent look and behavior, reducing the likelihood of
   discrepancies that can occur when the same UI elements are recreated multiple times.
 
-- **Centralized Updates:** By creating a component once and reusing it across 
-  different parts of your app, you ensure that any design or functionality changes are made in 
+- **Centralized Updates:** By creating a component once and reusing it across
+  different parts of your app, you ensure that any design or functionality changes are made in
   one place. When that component is updated, all instances of that component across the
   app automatically reflect those changes. This significantly reduces the effort required to
   maintain and update the app.
 
-   :::tip[CLasses vs Instances]
-    Learn more about **[Classes and their Instances](..%2Foverview.md)** and what they mean in
-    FlutterFlow.
-    :::
+  :::tip[CLasses vs Instances]
+  Learn more about **[Classes and their Instances](..%2Foverview.md)** and what they mean in
+  FlutterFlow.
+  :::
 
 - **Error Reduction:** Since components reduce design duplication, the risk of errors
   decreases. Fixing an issue in a component means it is fixed everywhere, leading to fewer bugs and
@@ -32,13 +32,12 @@ Components help in the following ways:
   to scale. Adding new features or modifying existing ones becomes more straightforward and less
   prone to introducing errors.
   :::tip[DRY PRINCIPLE]
-  The **DRY (Don't Repeat Yourself)** principle is a software development concept that emphasizes the
+  The **DRY (Don't Repeat Yourself)** principle is a software development concept that emphasizes
+  the
   importance of reducing repetition within code and design.
   :::
 
 Leveraging components effectively helps you build a consistent, efficient, and maintainable app.
-
-
 
 ## Types of Components in FlutterFlow
 
@@ -57,19 +56,23 @@ Leveraging components effectively helps you build a consistent, efficient, and m
   allows users to develop their own Custom Widgets. This involves writing Flutter code from
   scratch, offering the highest level of customization and flexibility.
 
-- **Themed Widgets:**
+- **Themed Widgets:** Themed widgets can be reused across your app, making it easy to update styles
+  universally. If you decide to change any properties, such as color schemes or fonts, you can
+  update the theme widget instead of modifying each widget individually.
 
 ## Common Use-cases
 
 Components can be used in various scenarios to accelerate your app development process. Here are
 some common use-cases.
 
-1. Design a **standard button once** and reuse it across multiple screens to maintain a cohesive look.
+1. Design a **standard button once** and reuse it across multiple screens to maintain a cohesive
+   look.
 
 2. Utilize components for **card designs** frequently used in your app, such as product cards, user
    profiles, or news articles.
 
-3. **Standardize input forms** for tasks like user registration, login, or feedback collection, ensuring
+3. **Standardize input forms** for tasks like user registration, login, or feedback collection,
+   ensuring
    a consistent user experience.
 
 4. Design **pop-up messages or dialogs** that match the overall theme of your app, enhancing visual
@@ -81,6 +84,6 @@ some common use-cases.
 6. Design sections of a screen that are frequently repeated, such as testimonials, image galleries,
    or feature highlights, and reuse them to maintain a cohesive layout.
 
-Here's an example of all the widely used components used in the EcommerceFlow demo app. 
+Here's an example of all the widely used components used in the EcommerceFlow demo app.
 // Image will be added once all components are built in project
 
