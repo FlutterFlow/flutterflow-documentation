@@ -1,6 +1,7 @@
 ---
 title: Component Lifecycle
 sidebar_position: 3
+toc_max_heading_level: 5
 ---
 
 # Component Lifecycle
@@ -40,8 +41,7 @@ Let's read more about them in the following sections:
 
 During the initialization of a **Component**, FlutterFlow exposes the `On Initialization` **Action
 Trigger** that assist you in loading resources or initializing data when the Component is loaded in
-a
-Page or a Component.
+a Page or a Component.
 
 :::info[What are Action Triggers?]
 **Action Triggers** serve as event listeners or handlers that respond to
@@ -93,6 +93,164 @@ For example,
 
 When the value of a component state variable is changed, the component can be re-rendered with the
 updated values, displaying the latest state of the component with these updates.
+
+### Creating a Component State
+
+To create a new **Component State variable** in your component, follow the steps:
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/nEmCDqupF7YHUTi4hKvW?embed&show_copy_link=true"
+        title="Create Component State"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+While creating a Component State, the following properties are included:
+
+- **Is List:** This property determines whether the variable can hold multiple values of the same
+  data type (like a list or array) or just a single value.
+
+- **Initial Field Value:** This property sets the default value for the variable when it is first
+  created. It's like setting the starting point or the value that the variable begins with before
+  anything else happens.
+
+- **Nullable:** This property determines whether the variable can have a null value. When "*
+  *Nullable**" is set to true, it means the variable can be empty or have a null value. This is
+  useful when dealing with optional data or scenarios where the absence of a value is valid.
+
+Now, let's apply these concepts to the `isFavourite` variable in the context of the above example:
+
+- For the `isFavourite` variable, it is a single value (boolean), so **Is List** would be set to
+  false.
+
+- The **Initial Field Value** would also be set to **false**, indicating that the item is not
+  favorited by default.
+
+- **Nullable** property will be set to false, as the variable should always have a boolean value
+  (true or false) and never be null.
+
+:::note
+You can set the **Data Type** of your Component State variable to any primitive data types such as *
+*String,
+Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
+Type, Document,** etc. To learn more about the available data types, refer the [**Data
+Representation Section.** ](#)
+:::
+
+### Get Component State Value
+
+In the following example, we demonstrate how to toggle the heart icon from an outlined to a filled
+icon based on the `isFavourite` state variable. We introduce a `Conditional Builder` widget that
+allows us to show a widget tree based on **If/Else If/Else** conditions. The goal is to visually
+indicate whether a product has been favorited by the user.
+
+Follow the steps as below:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/Y96decdgYWVll3SP9Jk8?embed&show_copy_link=true"
+        title="Get Component State"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+### Update Component State [Action]
+
+**Component state** values can only be updated via actions. Whenever you want to update the
+component state, call an action called **Update Component State** from the Action Flow Editor
+of the component.
+
+In the following demo, we open the Action Flow Editor on the parent widget` Conditional Builder` and
+call the **Update Component State** action to toggle the value of `isFavourite`.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/Y96decdgYWVll3SP9Jk8?embed&show_copy_link=true"
+        title="Get Component State"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+#### Rebuild on Update
+
+When updating your component state in Flutter, you'll often come across the **Update
+Type** property in your Action properties. Here's what it means:
+
+- **Rebuild Containing Page:** This option triggers a re-rendering of the page
+  containing this component.
+
+- **Rebuild Current Component:** This option triggers a re-rendering of the current component only.
+
+- **No Rebuild:** Choose this option when you need to update the state value without
+  immediately reflecting the changes in the UI.
+
+:::warning[Expensive Rebuilds]
+Too many rebuilds can impact performance because rebuilding the widget tree
+frequently consumes resources and may lead to decreased responsiveness and
+increased battery usage. Therefore, it's essential to consider the trade-offs
+and use rebuilds judiciously to maintain optimal app performance.
+
+To learn more about what happens behind the scenes, refer to
+the [Generated Page] section.
+:::
+
+
 
 
 
