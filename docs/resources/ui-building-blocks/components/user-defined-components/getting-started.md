@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+sidebar_position: 1
 ---
 
 # User Defined Components
@@ -136,3 +137,54 @@ schemes, in both light and dark themes, and make modifications as desired.
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Component Properties Panel
+
+When you select a component from the widget tree, the properties panel opens up on the right
+side of the interface. It plays a crucial role in configuring and managing the various aspects of
+your components.
+
+Here’s a detailed look at what you can typically find and modify in this panel:
+
+![components-configurations.png](..%2F..%2Fimgs%2Fcomponents-configurations.png)
+
+### Component Parameters
+
+Component parameters in FlutterFlow are values that a component receives from its parent entity,
+such as a page or another component. These parameters allow the component to be dynamic and
+adaptable based on the context in which it is used. Parameters enable you to customize components
+for different use cases without altering the underlying design or functionality.
+
+By using parameters, you can create flexible components that can be reused across different parts of
+your app, enhancing modularity and reducing redundancy.
+
+:::info
+Learn [**how to add a component to an entity,**](using-components) such as a page or another
+component, and how to pass parameters.
+:::
+
+### Actions
+
+This section allows you to define and manage interactions or events triggered by user actions. For
+example, you can configure a button to navigate to another page or execute a callback action from
+the page using the current component.
+
+For component actions, you can establish specific behaviors or functions that are triggered by
+certain events related to the component's lifecycle, such as On Initialization.
+
+:::info
+To add an action to your Component [**refer here,**](component-actions.md)
+:::
+
+### State Management
+
+Components can have their own internal state variables that track information like form inputs,
+toggles, or other user interactions. Components can update their state in response to user
+actions (e.g., clicking a button) or external events (e.g., receiving new data from an API).
+
+Effective state management ensures that components dynamically update their UI to reflect changes in
+state, providing a responsive user experience.
+
+:::info 
+Learn how to create a State variable for your components and how to update them
+:::
