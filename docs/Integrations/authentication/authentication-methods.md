@@ -6,9 +6,12 @@ sidebar_position: 1
 
 # Authentication Methods Overview
 
-Authentication enables users to create accounts and log into your app, establishing a secure, verified connection. In the dynamic world of applications, users can authenticate using various methods, including **email login**, **OAuth**, and **phone authentication**, among others. 
+Authentication enables users to create accounts and log into your app, establishing a secure,
+verified connection. In the dynamic world of applications, users can authenticate using various
+methods, including **email login**, **OAuth**, and **phone authentication**, among others.
 
-While each method has its unique features and advantages, they all share a common goal: enhancing security and verifying the identity of users to provide a safe and personalized user experience.
+While each method has its unique features and advantages, they all share a common goal: enhancing
+security and verifying the identity of users to provide a safe and personalized user experience.
 
 ## Email Login Authentication
 
@@ -19,6 +22,8 @@ Security in this approach is enhanced through **Email Verification**,
 where a link or code is sent to the user's email to confirm ownership. This step
 prevents unauthorized account creation and ensures that the user can recover
 their account and receive important communications.
+
+![email-login.png](imgs%2Femail-login.png)
 
 ## OAuth (Open Authorization)
 
@@ -44,6 +49,8 @@ method leverages the security of mobile networks and the uniqueness of phone
 numbers to ensure that the person attempting access is the legitimate owner of
 the account.
 
+![phone-login.png](imgs%2Fphone-login.png)
+
 ## Anonymous Authentication
 
 Anonymous Authentication allows users to interact with your application without
@@ -63,3 +70,4 @@ Each authentication method aims to balance user convenience with high security,
 ensuring that personal and sensitive data remains protected while providing a
 seamless user experience. 
 
+![anon-user.png](imgs%2Fanon-user.png)
