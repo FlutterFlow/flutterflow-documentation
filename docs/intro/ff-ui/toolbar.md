@@ -10,7 +10,7 @@ sidebar_position: 1
 
 The Toolbar, located at the top of the app builder, provides easy access to numerous tools and features. It includes options for project configuration, saving your app version, accessing help, reporting or debugging issues, viewing project comments, downloading your app code, and running your app directly in FlutterFlow.
 
-![toolbar](imgs/toolbar.avif)
+![toolbar](imgs/toolbar-new.avif)
 
 ## Project info
 
