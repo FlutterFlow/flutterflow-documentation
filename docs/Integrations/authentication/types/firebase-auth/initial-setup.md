@@ -1,6 +1,6 @@
 ---
-title: Firebase Auth Setup
-slug: firebase-auth-setup
+title: Initial Setup
+slug: initial-setup
 sidebar_position: 1
 ---
 
