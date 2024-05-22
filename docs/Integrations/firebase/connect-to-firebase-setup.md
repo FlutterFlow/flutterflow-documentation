@@ -51,7 +51,7 @@ In the dialog, scroll down to **Setup Firebase**, check that option, and click *
 2. Select **Add Member** from the top right.
 
 3. Add **firebase@flutterflow.io** as an "**Editor**" for your project and select **Done**. Then press **Add Member**.
-<img src="firebase-add-member.png" alt="firebase-add-member.png"  />
+![firebase-add-member.png](firebase-add-member.png)
 4. On the same page (i.e., Users and Permissions), select **Advanced Permission Settings** (small blue text below the table). This will open the Google Cloud console in a new browser window.
 
 <img src="/img/firebase/project-settings.png" alt="Steps 2, 3 and 4" />

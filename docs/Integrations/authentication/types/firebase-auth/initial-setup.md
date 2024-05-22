@@ -1,11 +1,10 @@
 ---
 title: Firebase Auth Setup
+slug: firebase-auth-setup
 sidebar_position: 1
 ---
 
-# Initial Setup for Enabling Firebase Authentication
-
-## Enabling authentication in FlutterFlow
+# Enabling Firebase Auth in FlutterFlow
 
 :::tip[Skip if...]
 ...you have already enabled authentication while creating a [**new project with Firebase setup.**](..%2F..%2F..%2FFirebase%2FConnect%20to%20Firebase%20Setup.md)
@@ -22,23 +21,19 @@ To enable authentication in FlutterFlow:
   **Firebase**.
 
 - To ensure that your users are directed to the appropriate pages based on their
-  login status, you must set the **initial pages**.
+  login status, you must set the **Initial Page**.
 
-![enable-auth-fr.png](imgs%2Fenable-auth-fr.png)
+![enable-auth-fr.png](..%2F..%2Fimgs%2Fenable-auth-fr.png)
 
 ### Setting Initial Pages for Authentication
 
-You can specify your app's Entry Page and Logged In Page from this section.
+You can specify your app's **Entry Page** and **Logged In Page** from this section.
 
-#### Entry Page
-
-This page will be displayed if the user is not logged in. This is
+- **Entry Page** : This page will be displayed if the user is not logged in. This is
 typically used to display the onboarding flow or to provide the login/sign-up
 page.
 
-#### Logged In Page
-
-This page will be displayed if the user is already logged in to
+- **Logged In Page**: This page will be displayed if the user is already logged in to
 your app. Users are automatically navigated to the page you specify here on a
 successful sign-in attempt.
 

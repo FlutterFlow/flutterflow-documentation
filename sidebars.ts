@@ -28,7 +28,7 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'Building Concepts',
+            label: 'Building concepts',
             collapsed: false,
             items: [
                 {

@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting
+name: Deploy to firebase Hosting
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Firebase
+      - name: Deploy to firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting

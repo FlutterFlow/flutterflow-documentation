@@ -1,9 +1,9 @@
 ---
-title: Custom Authentication
+title: custom-auth
 sidebar_position: 3
 ---
 
-# Enabling custom authentication [TODO]
+# Enabling custom authentication [TODO / Different PR]
 To enable custom authentication in FlutterFlow:
 - Open Setting and Integrations > App Settings > Authentication.
 - Turn on the **Enable Authentication** toggle and set Authentication Type to Custom.

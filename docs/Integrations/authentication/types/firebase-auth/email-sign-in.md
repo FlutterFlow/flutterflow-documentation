@@ -9,12 +9,9 @@ sidebar_position: 2
 
 Before getting started with this section, ensure you have:
 
-Completed all steps in
-the [Firebase Setup](docs/Integrations/Firebase/Connect to Firebase Setup.md).
+- Completed all steps in the [**Firebase Setup**](../../../Firebase%2FConnect%20to%20Firebase%20Setup)
 
-Completed [Initial Setup](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
-required for authentication.
-
+- Completed the [**Initial Setup**](initial-setup.md)
 :::
 
 ## Enable Email Login Provider in Firebase
@@ -82,24 +79,29 @@ To enable this in FlutterFlow, follow these steps:
       already
       created in the 'users' collection.
 
-<img src="imgs/create-account-action.png" alt="create-account-action.png"  />
+![create-account-action.png](..%2F..%2Fimgs%2Fcreate-account-action.png)
 
-## Email Verification
+## Send Email Verification Link [Action]
 
 :::info
-To understand why email verification is required when authenticating with an email and password, refer to [Concepts doc - Authentication Approaches](docs/Integrations/Authentication/Concepts/authentication-approaches.md)
+To understand why email verification is required when authenticating with an email and password,
+refer
+to [**Authentication Approaches**](../../concepts/authentication-approaches)
 :::
 
 1. Add a new action immediately after the Create Account action.
-2. Search for and select the Send Email Verification Link (located under Backend/Database > Firebase Authentication) action. The user's email is automatically retrieved from Firebase Authentication, and a verification link is sent to the user for confirmation.
+2. Search for and select the Send Email Verification Link (located under Backend/Database > Firebase
+   Authentication) action. The user's email is automatically retrieved from Firebase Authentication,
+   and a verification link is sent to the user for confirmation.
 
 <iframe src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
-The user should receive an email verification link in their inbox. Upon successful verification, they will see a success message.
+The user should receive an email verification link in their inbox. Upon successful verification,
+they will see a success message.
 
-## Log In Action
+## Log In [Action]
 
-The Log In action, on the other hand, is for users who already have an account.
+The **Log In** action, on the other hand, is for users who already have an account.
 It involves verifying the credentials provided by a returning user against
 stored data to grant access to the system. This action is crucial for
 maintaining secure access control as it ensures that the entity attempting to
@@ -121,7 +123,7 @@ To enable this in FlutterFlow, follow these steps:
    found
    under Widget State > Field Name.
 
-<img src="imgs/login-action.png" alt="login-action.png"  />
+![login-action.png](..%2F..%2Fimgs%2Flogin-action.png)
 
 ### Verify user created in Firebase Dashboard
 

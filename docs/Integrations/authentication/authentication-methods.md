@@ -1,22 +1,21 @@
 ---
-title: Authentication Approaches
+title: Auth Methods
 sidebar_position: 1
 
 ---
 
-# Authentication Approaches
+# Authentication Methods Overview
 
-In the world of apps, users can associate with applications through
-various authentication methods, such as email login, OAuth, phone
-authentication and more.
+Authentication enables users to create accounts and log into your app, establishing a secure, verified connection. In the dynamic world of applications, users can authenticate using various methods, including **email login**, **OAuth**, and **phone authentication**, among others. 
 
-Each approach has its own unique features but shares a common
-goal: to ensure security and verify the identity of users.
+While each method has its unique features and advantages, they all share a common goal: enhancing security and verifying the identity of users to provide a safe and personalized user experience.
 
 ## Email Login Authentication
 
 The email login method involves users registering with an email address and
-password. Security in this approach is enhanced through email verification,
+password.
+
+Security in this approach is enhanced through **Email Verification**,
 where a link or code is sent to the user's email to confirm ownership. This step
 prevents unauthorized account creation and ensures that the user can recover
 their account and receive important communications.
