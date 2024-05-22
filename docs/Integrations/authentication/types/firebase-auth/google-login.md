@@ -11,13 +11,12 @@ Google Sign-In allows users to authenticate using their Google Accounts.
 
 Before getting started with this section, ensure you have:
 
-Completed all steps in
-the [Firebase Setup](docs/Integrations/Firebase/Connect to Firebase Setup.md).
+- Completed all steps in
+the [**Firebase Setup**](..%2F..%2F..%2Ffirebase%2Fconnect-to-firebase-setup.md)
 
-Completed [Initial Setup](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
-required for authentication.
+- Completed [**Initial Setup**](initial-setup.md) required for authentication.
 
-Added SHA-1 key and regerenated Config Keys.
+- Added **SHA-1 key** and regenerated **Config Keys**.
 
 :::
 
@@ -76,29 +75,39 @@ You can create your own or use the one from page templates.
 3. To add in Google cloud console:
 
     - Head over to
-      your [Project Credentials](https://console.cloud.google.com/apis/credentials?project=_)
-      page.
+      your [Project Credentials](https://console.cloud.google.com/apis/credentials?project=_) page.
+   
     - Ensure you are on the correct project. In our case, we are using the
       EcommerceFlow project, it will be different for you.
-      <img src="credential-page.png" alt="credential-page.png"  />
-    - Under the 'OAuth 2.0 Client IDs', select 'Web client (auto created by
+   
+   ![credential-page.png](..%2F..%2Fimgs%2Fcredential-page.png)
+
+    - Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
       Google Service)'.
 
-    - Under the 'Authorized JavaScript origins', click ADD URI and add both the
+    - Under the '**Authorized JavaScript origins**', click ADD URI and add both the
       URL.
-    - Similarly, under the 'Authorized redirect URIs', click ADD URI, add both
+    - Similarly, under the '**Authorized redirect URIs**', click ADD URI, add both
       the URL and append '/__/auth/handler' at the end.
 
+<iframe src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0"
+allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
 
-<iframe src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0" allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
+<figure>
+    
+  <figcaption class="centered-caption"></figcaption>
+</figure>
 
 4. If you don't see the Web client created yet, you can create new one by
-   clicking + CREATE CREDENTIALS, selecting OAuth client ID and then select
+   clicking **+ CREATE CREDENTIALS**, selecting OAuth client ID and then select
    Application type to Web application.
 
-<img src="imgs/add-app.gif" alt="add-app.gif"  />
+
+![add-app.gif](..%2F..%2Fimgs%2Fadd-app.gif)
 
 ### Verify user created in Firebase Dashboard
-To confirm the successful integration of Google authentication and the creation of users, navigate to your Firebase project > Authentication > Users and check the user entries.
 
-<img src="imgs/verify-google-auth-users.png" alt="verify-google-auth-users.png"  />
+To confirm the successful integration of Google authentication and the creation of users, navigate
+to your Firebase project > Authentication > Users and check the user entries.
+
+![verify-google-auth-users.png](..%2F..%2Fimgs%2Fverify-google-auth-users.png)

@@ -16,11 +16,11 @@ Before getting started with this section, ensure you have:
 
 ## Enable Email Login Provider in Firebase
 
-- Open the Firebase Console and click on Authentication
+- Open the Firebase Console and click on **Authentication**
 - Click on the Get started button (this may not be visible if you have already
   set up other forms of Authentication).
 
-- Select the Sign-in method tab.
+- Select the **Sign-in** method tab.
 
 - Click on Email/Password (Under the 'Native providers' section). If you have
   already added any other provider, click on Add new provider and then click on
@@ -34,7 +34,9 @@ Before getting started with this section, ensure you have:
 
 In FlutterFlow, you can utilize the Page Templates feature to create a new
 authentication page that includes both a "Create Account" component and a "Log
-In" component. This setup aligns with Firebase's authentication process, which
+In" component. 
+
+This setup aligns with Firebase's authentication process, which
 requires users to first create an account using their email and then allows them
 to sign in using the email ID they registered with.
 
@@ -58,8 +60,7 @@ To enable this in FlutterFlow, follow these steps:
    additional fields.
 2. Add a "Create Account" or "Sign Up" button and attach an action to it.
 
-3. Search for and select the **Create Account** action under *
-   *Backend/Database >
+3. Search for and select the **Create Account** action under **Backend/Database >
    Firebase Authentication**.
 4. Set the **Auth Provider to Email**.
 5. Configure the fields to retrieve values from variables, which are usually
@@ -86,16 +87,44 @@ To enable this in FlutterFlow, follow these steps:
 :::info
 To understand why email verification is required when authenticating with an email and password,
 refer
-to [**Authentication Approaches**](../../concepts/authentication-approaches)
+to [**Authentication Methods**](../../authentication-methods)
 :::
+1. Add a new action immediately after the **Create Account** action.
 
-1. Add a new action immediately after the Create Account action.
-2. Search for and select the Send Email Verification Link (located under Backend/Database > Firebase
-   Authentication) action. The user's email is automatically retrieved from Firebase Authentication,
+2. Search for and select the **Send Email Verification Link** (located under **Backend/Database > Firebase
+   Authentication**) action. The user's email is automatically retrieved from Firebase Authentication,
    and a verification link is sent to the user for confirmation.
 
-<iframe src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true"
+        title="Send Email Verification Link"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
+<figure>
+    
+  <figcaption class="centered-caption"></figcaption>
+</figure>
 The user should receive an email verification link in their inbox. Upon successful verification,
 they will see a success message.
 
