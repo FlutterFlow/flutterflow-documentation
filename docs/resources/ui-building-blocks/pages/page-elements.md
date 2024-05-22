@@ -1,6 +1,7 @@
 ---
 title: Page/Scaffold Elements
 slug: scaffold-elements
+sidebar_position: 2
 toc_max_heading_level: 5
 ---
 
@@ -356,7 +357,7 @@ Material Design allows you to add an interactive element to the SnackBar
 notification, allowing users to respond directly from the snack message.
 
 
-### Add Action Property
+#### Add Action Property
 
 Typically, a SnackBar can include a single action button. This button is
 used to offer users an immediate option to interact with the snack message.
