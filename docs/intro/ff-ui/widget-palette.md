@@ -25,8 +25,10 @@ Templates are predefined and ready-to-use widgets. These include UI elements tha
 
 ## 4. Theme Widgets
 
-Theme Widgets allow you to customize the visual appearance of a single widget and then reuse it throughout the app. Once you [create a theme widget](#), you can access it from here.
+Theme Widgets enable you to customize the visual appearance of individual widgets and reuse them consistently throughout your app. They are an integral part of the design system, allowing you to build widgets based on your theme. Once you [create a theme widget](#), you can access it from here.
 
 ## 5. Floating Widget Palette
 
-The floating widget palette gives you quick access to widgets directly from the canvas. This feature is useful for swiftly adding widgets without the need to open the widget palette via the navigation menu.
+The Floating Widget Palette gives you quick access to widgets directly from the canvas. This feature is useful for swiftly adding widgets without the need to open the widget palette via the navigation menu.
+
+![Floating Widget Palette](imgs/floating-widget-palette.gif)

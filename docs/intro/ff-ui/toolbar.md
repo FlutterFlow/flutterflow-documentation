@@ -12,11 +12,11 @@ The Toolbar, located at the top of the app builder, provides easy access to nume
 
 ![toolbar](imgs/toolbar.avif)
 
-## 1. Project info
+## Project info
 
 Hovering over this section reveals the essential information about your project. Here, you can easily check the project name, the current version of FlutterFlow that you're using, along with its release date. Additionally, it shows the Flutter version that your project is currently running on.
 
-## 2. Help
+## Help
 
 From here, you will get access to essential resource links that will come in handy while building your apps.
 
@@ -30,19 +30,19 @@ From here, you will get access to essential resource links that will come in han
 8. **Current Status/Known Issues**: We want to keep you informed about the current status of FlutterFlow and provide updates regarding any known issues. We aim to ensure transparency and keep you in the loop about the platform's performance and potential issues.
 9. **Show/Hide Chat**: You can use this option to show or hide the chat button at the bottom right of the app builder.
 
-## 3. Keyboard shortcuts
+## Keyboard shortcuts
 
 With keyboard shortcuts, you can perform common actions related to widgets and run your project in Test or Run mode with just a few keystrokes, saving you time and effort. Select this option to see all the shortcuts.
 
 ![keyboard-shortcut.avif](imgs/keyboard-shortcut.avif)
 
-## 4. Command Palette
+## Command Palette
 
 The Command Palette makes it easy to find and use things in the App Builder. Open the Command Palette by clicking the search button or pressing **Cmd/Ctrl + K**. Search for anything, and to find out where it's used, click the right arrow – we'll show you every place. To directly access the item, just click on it.
 
 ![command-palette.avif](imgs/command-palette.avif)
 
-## 5. Canvas size
+## Canvas size
 
 We allow you to visualize and design your app for various mobile, tablet, and desktop devices. The [canvas](#) size is defined as width (in pixels) x height (in pixels). This size is determined according to the device selected. To set a custom canvas size, click on the Canvas Size and enter the width and height (in pixels) you want.
 
@@ -72,11 +72,11 @@ We allow you to visualize and design your app for various mobile, tablet, and de
     </iframe>
 </div>
 
-## 6. Project history
+## Project history
 
 Understand the crucial concepts of project history, such as saving and versioning [here](#).
 
-## 7. Project comments
+## Project comments
 
 This helps you leave your thoughts, opinions, questions, or feedback on a specific widget with your project team or a client. While adding a comment, you can tag users, and they will be able to respond, creating a thread of conversation.
 
@@ -86,7 +86,7 @@ To tag users, select the @ symbol and choose the project team member(s).
 
 :::
 
-## 8. Optimizations & Enhancements
+## Optimizations & Enhancements
 
 We scan and suggest enhancements to elevate your app's design and speed. Imagine having a personal consultant for design and performance dedicated to improving the user experience of your app.
 
@@ -102,7 +102,7 @@ You can control what kind of suggestions you would like to receive by clicking o
 
 ![Optimization.avif](imgs/Optimization.avif)
 
-## 9. Project issues
+## Project issues
 
 If there are any issues or warnings present in your current project that might result in a build failure or app crash, they will be displayed in this section. You can click this option to view a short description of each issue and navigate to the place where you can fix the issue by clicking on the respective issue.
 
@@ -114,11 +114,11 @@ If there are any issues or warnings present in your current project that might r
 
 ![Warning-and-errors.avif](imgs/Warning-and-errors.avif)
 
-## 10. Branching
+## Branching
 
 [Branching](#) enables you to create a separate copy of your existing project, allowing you to develop new features without affecting the current functionality.
 
-## 11. Developer menu
+## Developer menu
 The Developer Menu provides developers with access to tools such as code viewing, GitHub integration, and source code download capabilities.
 
 1. **View Code**: This option lets you display the *Dart* code for all the pages of your FlutterFlow project. You can also take a look at the dependencies being used by the app here.
@@ -135,7 +135,7 @@ The Developer Menu provides developers with access to tools such as code viewing
 _Connect GitHub Repo_, _Download Code_, and _Download APK_ features requires a [**paid plan**](https://flutterflow.io/pricing).
 :::
 
-## 12. Share project
+## Share project
 
 You can make a project public so that others can view and clone your project. Before you share your project, make sure to remove any sensitive information.
 
@@ -146,10 +146,10 @@ You can make a project public so that others can view and clone your project. Be
 
 :::
 
-## 13. Preview
+## Preview
 
 You can use this option to run your app in [Preview mode](../../resources/Projects/how-to-run-test-projects#preview-mode).
 
-## 14. Testing
+## Testing
 
 This menu allows you to run your app in [Test](../../resources/Projects/how-to-run-test-projects#test-mode) or [Run](../../resources/Projects/how-to-run-test-projects#run-mode) mode.

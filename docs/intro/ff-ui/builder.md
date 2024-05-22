@@ -12,7 +12,7 @@ On opening the project, you'll see the App Builder, which consists of four main 
 
 ![app-builder](imgs/builder.avif)
 
-## 1. Navigation Menu {#navigation-menu}
+## Navigation Menu {#navigation-menu}
 
 The Navigation Menu, located on the left side of the builder, allows you to switch between various FlutterFlow features. These include designing the UI, managing databases, setting up API, adjusting app settings, adding integrations, and more.
 
@@ -34,14 +34,14 @@ Here is a list of all the features accessible from the navigation menu:
 14. **Theme settings**: Customize visual appearance.
 15. **Settings and Integrations**: Access app-related settings and integrations.
 
-## 2. Tool Bar {#toolbar}
+## ToolBar {#toolbar}
 
-From [Tool Bar](toolbar), you can search for project resources, change canvas size, see project history, branching, optimization and enhancements, view-download code, and run your app.
+From [ToolBar](toolbar), you can search for project resources, change canvas size, see project history, branching, optimization and enhancements, view-download code, and run your app.
 
-## 3. Canvas Area {#canvas-area}
+## Canvas Area {#canvas-area}
 
-In the [Canvas Area](canvas), you can see a preview of your mobile device's screen and build your app page.
+In the [Canvas Area](canvas), you can see a preview of a device's screen and build your app page.
 
-## 4. Properties Panel {#properties-panel}
+## Properties Panel {#properties-panel}
 
 The Properties Panel lets you modify both the visual appearance and interactive behavior of UI elements on the canvas. It allows you to add [Actions](#), set up a [Backend Query](#), add [Animations](#) and more.
