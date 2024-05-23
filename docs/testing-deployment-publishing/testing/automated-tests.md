@@ -71,6 +71,9 @@ When this is selected, you have to [locate a widget](#selection-method) that you
 - **Finds Num Widgets:** Expect a certain number of widgets to be present.
 - **Finds One Widget:** Confirms that exactly one widget is present.
 - **Finds Widgets:** Expect multiple widgets to be found.
+- **Is Enabled**: Verifies that the widget is not only visible but also functional.
+- **Is Disabled**: Verifies that the widget is in a disabled state, meaning it is inactive and will not respond to user interactions.
+- **Has State**: Confirms that a widget is in a specific state, such as _True_ or _False_. For example, verify whether a checkbox is checked.
 
 ### Selection Method
 
