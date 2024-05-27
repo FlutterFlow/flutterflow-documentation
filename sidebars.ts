@@ -58,7 +58,7 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'Testing, Deployment & Publishing',
+            label: 'Testing & Publishing',
             collapsed: false,
             items: [
                 {
