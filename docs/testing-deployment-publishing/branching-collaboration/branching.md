@@ -20,7 +20,7 @@ This feature is only available for teams and enterprise users.
 
 :::warning
 
-Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within FlutterFlow. If you are looking to manage custom code in Github, check out the tutorial [**here**](../exporting-code/push-to-github#manage-custom-code-in-github).
+Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within FlutterFlow. If you are looking to manage custom code in GitHub, check out the tutorial [**here**](../exporting-code/push-to-github#manage-custom-code-in-github).
 
 :::
 ## Create and merge branch
@@ -31,12 +31,12 @@ Before you create and merge a branch, it is essential to understand the general 
 
 First, create a new branch from the 'main' branch. After making your changes and finalizing the feature, proceed to merge this new branch back into the main branch. If there are any conflicts, you must resolve them, and you'll able to merge the new branch into the main branch successfully.
 
-:::note [Few things to note here]
+:::note Few things to note here
 
-- At the moment, we support merging only back into the main branch.
-- Only the user who initiated the merge can access both the main project and the branch during an ongoing merge.
+- At the moment, FlutterFlow only supports merging into `main`.
+- Only the user who initiated the merge can access both the `main`` branch and the branch during an ongoing merge.
 - Changes that don't conflict are resolved automatically.
-- Undo/redo doesn't work with merges, but a merge can be aborted if you want to start over.
+- You cannot current undo a merge, but a merge can be aborted if you want to start over.
 - If you leave the project during the merging and come back, the progress you have made on the merge will be preserved.
 
 :::
