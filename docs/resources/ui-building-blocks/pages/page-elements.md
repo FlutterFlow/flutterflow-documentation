@@ -8,15 +8,15 @@ toc_max_heading_level: 5
 # Scaffold Elements
 
 :::info
-To learn about Scaffold and the various page elements under it, refer to the [Behind a
-FlutterFlow Page](pages.md#behind-a-flutterflow-page) section.
+To learn about Scaffold and the various page elements under it, refer to the [**Behind a
+FlutterFlow Page**](#) section.
 :::
 
 ## AppBar
 
 **AppBar** is a widget that displays a toolbar at the top of the screen, typically used for
-branding, navigation, and actions related to the current screen. It supports title, icons, and can
-be customized with various styles and functionalities.
+branding, navigation, and actions related to the current screen. It supports title and icons, 
+and offers customization with a variety of styles and functionalities.
 
 The AppBar is divided into the following sections:
 
@@ -167,7 +167,7 @@ enable Nav Bar.
 Initially, your NavBar will not have any pages in it. You'll see a message
 instructing you to add at least two pages. Before proceeding, make sure to
 create at least two pages. If you need help with adding a new page, you can find
-[more information here](how-tos.md#create-an-empty-page).
+[**more information here**](getting-started.md#creating-a-page).
 :::
 
 ![nav-bar.png](..%2Fimgs%2Fnav-bar.png)
@@ -303,6 +303,9 @@ present in the NavBar.
 - **Button Border Radius:** Specifies the radius for the borders of each button within the NavBar.
 - **Nav Button Margin:** Sets the margin around each nav button
 - **Nav Button Padding:** Controls the padding inside each nav button.
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/Qhe8X5ykK54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 
 ## SnackBar
 
