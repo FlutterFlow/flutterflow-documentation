@@ -165,15 +165,20 @@ component, and how to pass parameters.
 
 ### Actions
 
-This section allows you to define and manage interactions or events triggered by user actions. For
+This tab allows you to define and manage interactions or events triggered by user actions. For
 example, you can configure a button to navigate to another page or execute a callback action from
 the page using the current component.
 
+Adding an action to a component element is exactly the same experience as adding actions to any page elements. Here's a quick overview:
+
+![component-actions.png](..%2F..%2Fimgs%2Fcomponent-actions.png)
+
 For component actions, you can establish specific behaviors or functions that are triggered by
-certain events related to the component's lifecycle, such as On Initialization.
+certain events related to the component's lifecycle, such as **On Initialization**.
 
 :::info
-To add an action to your Component [**refer here,**](component-actions.md)
+To learn more about component lifecycle and adding **On Initialization** action to your component 
+[**refer here.**](component-lifecycle.md)
 :::
 
 ### State Management
@@ -186,5 +191,7 @@ Effective state management ensures that components dynamically update their UI t
 state, providing a responsive user experience.
 
 :::info 
-Learn how to create a State variable for your components and how to update them
+Learn how to **[Create a State variable](component-lifecycle.md/#creating-a-component-state)** 
+for your components and how to 
+**[Update them](component-lifecycle.md/#update-component-state-action)**.
 :::

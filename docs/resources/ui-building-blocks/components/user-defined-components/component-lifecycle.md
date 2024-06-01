@@ -12,11 +12,11 @@ app's performance.
 Let's delve into the key moments in the lifecycle of a **Component**:
 
 - **Creation**: Component instances are created dynamically when they are utilized within a page
-  or another component. This means that components instances are created as needed, which helps in
+  or another component. This means that component instances are created as needed, which helps in
   managing resources efficiently and avoiding unnecessary overhead.
 
 - **Initialization:** Actions defined in the `On Initialization` **Action Trigger** are executed
-  during this phase. For instance, you can initialize local state variables with initial valuues, or
+  during this phase. For instance, you can initialize local state variables with initial values, or
   start component animations in this phase.
   At this stage, component state variables with their default values (if any) are also created.
   These variables hold data specific to the component, such as form inputs or toggle states, and are
@@ -48,7 +48,7 @@ a Page or a Component.
 specific events or user interactions within an application. FlutterFlow provides
 developers with a way to define logic that responds to various events, such as
 button clicks, page loads, form submissions, or data changes.
-To learn more, head over to **[Action Flow Editor](#)** section
+To learn more, head over to **[Action Flow Editor](#)** section.
 :::
 
 As you open the [Action Flow Editor](#) for your Component, you can see the `On Initialization`
@@ -70,7 +70,7 @@ created.
 
 :::note[STATE VARIABLES]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here](#)**
+about **states and state management, [refer here.](#)**
 :::
 
 **Component state** refers to the information that a component tracks about its current condition or
@@ -134,8 +134,7 @@ While creating a Component State, the following properties are included:
   created. It's like setting the starting point or the value that the variable begins with before
   anything else happens.
 
-- **Nullable:** This property determines whether the variable can have a null value. When "*
-  *Nullable**" is set to true, it means the variable can be empty or have a null value. This is
+- **Nullable:** This property determines whether the variable can have a null value. When "**Nullable**" is set to true, it means the variable can be empty or have a null value. This is
   useful when dealing with optional data or scenarios where the absence of a value is valid.
 
 Now, let's apply these concepts to the `isFavourite` variable in the context of the above example:
@@ -150,9 +149,7 @@ Now, let's apply these concepts to the `isFavourite` variable in the context of 
   (true or false) and never be null.
 
 :::note
-You can set the **Data Type** of your Component State variable to any primitive data types such as *
-*String,
-Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
+You can set the **Data Type** of your Component State variable to any primitive data types such as **String, Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
 Type, Document,** etc. To learn more about the available data types, refer the [**Data
 Representation Section.** ](#)
 :::
@@ -198,7 +195,7 @@ Follow the steps as below:
 component state, call an action called **Update Component State** from the Action Flow Editor
 of the component.
 
-In the following demo, we open the Action Flow Editor on the parent widget` Conditional Builder` and
+In the following demo, we open the Action Flow Editor on the parent widget `Conditional Builder` and
 call the **Update Component State** action to toggle the value of `isFavourite`.
 
 <div style={{
@@ -229,7 +226,7 @@ call the **Update Component State** action to toggle the value of `isFavourite`.
 
 #### Rebuild on Update
 
-When updating your component state in Flutter, you'll often come across the **Update
+When updating your component state in FlutterFlow, you'll often come across the **Update
 Type** property in your Action properties. Here's what it means:
 
 - **Rebuild Containing Page:** This option triggers a re-rendering of the page
@@ -247,7 +244,7 @@ increased battery usage. Therefore, it's essential to consider the trade-offs
 and use rebuilds judiciously to maintain optimal app performance.
 
 To learn more about what happens behind the scenes, refer to
-the [Generated Page] section.
+the [**Generated Page**](#) section.
 :::
 
 

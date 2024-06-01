@@ -47,7 +47,7 @@ scenarios without altering the base design or functionality.
 ### To add a Parameter
 
 You can choose to pass primitive data, a custom data type object, or an action for the component to
-execute. To add a parameter, choose the component to which you want to add parameters:
+execute. To add a parameter, select the component and follow the steps below:
 
 <div style={{
     position: 'relative',
@@ -80,7 +80,7 @@ execute. To add a parameter, choose the component to which you want to add param
 Once you have created a component parameter, you can link data from the parent entity to your
 component.
 
-Here's a small example of how we bound the parameters created in `ProfileListItem` to their
+Here's a small example of how we can bind the parameters created in `ProfileListItem` to their
 respective widgets and action triggers.
 
 <div style={{
@@ -176,4 +176,4 @@ can adapt to different data and behavior.
 
 ## Add Components to Components
 
-//TODO Will add in a  new PR when new feature gets deployed. 
+//TODO Will add in a new PR when new feature gets deployed. 
