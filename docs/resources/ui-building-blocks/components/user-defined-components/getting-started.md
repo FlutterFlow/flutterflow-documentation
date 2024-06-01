@@ -7,7 +7,7 @@ sidebar_position: 1
 
 User-defined components in FlutterFlow are custom elements you create to meet specific needs in your
 app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
-create reusable UI elements tailored to your requirements. This approach ensures consistency, saves
+create reusable UI elements. This approach ensures consistency, saves
 time, and simplifies maintenance across your project.
 
 ## Creating a component from scratch
@@ -150,13 +150,7 @@ Here’s a detailed look at what you can typically find and modify in this panel
 
 ### Component Parameters
 
-Component parameters in FlutterFlow are values that a component receives from its parent entity,
-such as a page or another component. These parameters allow the component to be dynamic and
-adaptable based on the context in which it is used. Parameters enable you to customize components
-for different use cases without altering the underlying design or functionality.
-
-By using parameters, you can create flexible components that can be reused across different parts of
-your app, enhancing modularity and reducing redundancy.
+In FlutterFlow, component parameters are values passed down from a parent entity like a page or another component. These parameters make the component adaptable and dynamic, adjusting to the context in which it is used.
 
 :::info
 Learn [**how to add a component to an entity,**](using-components) such as a page or another
