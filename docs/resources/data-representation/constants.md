@@ -9,11 +9,7 @@ sidebar_position: 5
 # Constants
 Constants are used to define values that remain unchanged throughout the lifetime of an application. Using constants is a good practice for values that do not need to be recalculated or reassigned.
 
-Here are some real-world examples where using constants is beneficial:
-
-- **Educational Apps**: Constants for course-related data like the number of questions in a quiz or passing grade percentage.
-- **Fitness Apps**: Standard values like target heart rate zones or calorie burn rates based on specific exercises.
-- **Game Development**: Constants for game settings like default player health, speed, or levels.
+Constants are used to define values that you believe are fixed, like API endpoints, standard mathematical values, maximum size limits set by business rules, etc.
 
 :::tip[When to use Constants vs **[App state variables](app-state)?**]
 Constants don't change. Once you set its value (in builder), you can't change it from within the app. On the other hand, app state variables are dynamic. They can be updated in response to interactions in the application, such as a user clicking a button or entering data.
