@@ -378,7 +378,8 @@ To navigate to the ViewBroadcast page and pass the URL of the live or past strea
       on the ViewBroadcast page.
 
 :::info[CLONABLE APP]
-Get the clonable version of this app [**here**](https://app.flutterflow.io/project/my-live-stream-u7blmw).
+Get the clonable version of this app [**here
+**](https://app.flutterflow.io/project/my-live-stream-u7blmw).
 :::
 
 ## Run & Test
@@ -404,11 +405,18 @@ On the canvas, when you add this widget, it shows the 'Before streaming' view (i
 a start streaming button). To see how it will look when the stream is started, you can turn on this
 option from the [properties panel](/getting-started/ui-builder/properties-panel).
 
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/show-straming-view.gif?alt=media&token=daeb95b8-e231-482d-baa9-d03cc305d717"></img>
+  <figcaption class="centered-caption">Show streaming view</figcaption>
+</figure>
+
 ### Broadcast audio channel
 
 This option allows you to decide the type of audio recording while you broadcast. You can choose
 between **Mono** and **Stereo**. By default, it is set to stereo which can provide a better
 listening experience.
+
+![img_16.png](img_16.png)
 
 ### Changing size
 
@@ -420,29 +428,45 @@ can use the **Height** and **Width** property.
 To create a rounded border around this widget, use this property. Toggle the lock icon () to edit
 all values together or individually.
 
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/border-radius.gif?alt=media&token=fc9a25f6-9ab6-4d26-ba40-8e409b05ffa3"></img>
+  <figcaption class="centered-caption">Border Radius</figcaption>
+</figure>
+
 ### Customizing start button
 
 To customize a button that allows you to start a stream:
 
-2. Select the **MuxBroadcast** widget and move to the properties panel.
-5. To change the button's appearance such as size, color, elevation, and border, use the properties
+1. Select the **MuxBroadcast** widget and move to the properties panel.
+
+2. To change the button's appearance such as size, color, elevation, and border, use the properties
    under the **Start Button Style** section.
-8. To change the button's text, open the **Start Button Text** section and set the **Text**. You can
+
+3. To change the button's text, open the **Start Button Text** section and set the **Text**. You can
    also [customize the text](/widgets-and-components/widgets/widget-commonalities#styling-text) if
    needed.
-11. To change the button's icon, open the **Start Button Icon** section and select the new icon. You
-    can also change its **Size** and **Color**.
+
+4. To change the button's icon, open the **Start Button Icon** section and select the new icon. You
+   can also change its **Size** and **Color**.
+
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/customize-start-button.gif?alt=media&token=ca57808d-f9a4-4e3e-8ea7-91cb493736ce"></img>
+  <figcaption class="centered-caption">Customizing start button</figcaption>
+</figure>
 
 ### Customizing stop button
 
 To customize a button that allows you to stop a stream:
 
-2. Select the **MuxBroadcast** widget and move to the properties panel.
-5. Enable
-   the [show streaming view](/widgets-and-components/widgets/base-elements/muxbroadcast#show-streaming-view).
-8. Find the **Stop Button** section. From here, you can change the icon, size, and color.
-11. By default, the background color of the stop button is set to red. To change, use the *
-    *Background Color** property.
+1. Find the **Stop Button** section. From here, you can change the icon, size, and color.
+
+2. By default, the background color of the stop button is set to red. To change, use the *
+   *Background Color** property.
+
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/customize-stop-button.gif?alt=media&token=3f30625c-f632-43ef-953f-2e71ebb175f7"></img>
+  <figcaption class="centered-caption">Customizing stop button</figcaption>
+</figure>
 
 ### Customizing the flip camera button
 
@@ -452,22 +476,28 @@ start broadcasting.
 To customize this button's appearance, open the **Flip Camera Button** section and use the property
 such as **Icon**, **Icon size**, **Icon Color**, and **Background Color**.
 
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/flip-camera.gif?alt=media&token=b41b2c50-64a0-45bd-b6dc-c74cef69a8ec"></img>
+  <figcaption class="centered-caption">Customizing the flip camera button</figcaption>
+</figure>
+
 ### Customizing live indicator
 
 The live indicator appears as soon as you start live streaming (at the top left side of the screen).
 
 To customize the live indicator:
 
-2. Select the **MuxBroadcast** widget and move to the properties panel.
-5. Enable
-   the [show streaming view](/widgets-and-components/widgets/base-elements/muxbroadcast#show-streaming-view).
-8. To change its text (i.e. from LIVE to something else), open the **Live Text Style** section and
-   set the **Text**. You can
-   also [customize the text](/widgets-and-components/widgets/widget-commonalities#styling-text) if
-   needed.
-11. To change the indicator appearance, open the **Live Container & Icon** section and use the
-    property such as **Icon**, **Icon size**, **Icon Color**, **Background Color**, and **Border
-    Radius**.
+* To change its text (i.e. from LIVE to something else), open the **Live Text Style** section and
+  set the **Text**. You can also [customize the text](#) if
+  needed.
+* To change the indicator appearance, open the **Live Container & Icon** section and use the
+  property such as **Icon**, **Icon size**, **Icon Color**, **Background Color**, and **Border
+  Radius**.
+
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/customize-live-indicator.gif?alt=media&token=6a8cb471-04da-4188-9f91-700ae685732a"></img>
+  <figcaption class="centered-caption">Customizing live indicator</figcaption>
+</figure>
 
 ### Customizing duration indicator
 
@@ -476,12 +506,14 @@ screen).
 
 To customize the duration indicator:
 
-2. Select the **MuxBroadcast** widget and move to the properties panel.
-5. Enable
-   the [show streaming view](/widgets-and-components/widgets/base-elements/muxbroadcast#show-streaming-view).
-8. Open the **Duration Text Style** section
+1. Open the **Duration Text Style** section
    and [change its text style](/widgets-and-components/widgets/widget-commonalities#styling-text).
-11. To change the indicator appearance, open the **Duration Container** section and use the property
+2. To change the indicator appearance, open the **Duration Container** section and use the property
     such as **Background Color** and **Border Radius**.
+
+<figure>
+    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/customize-duration.gif?alt=media&token=0fc7deec-d4f0-4e42-ba57-263598c81b36"></img>
+  <figcaption class="centered-caption">Customizing duration indicator</figcaption>
+</figure>
 
 Additionally, you can also add padding, alignment, show/hide this widget from the Properties Panel. 
