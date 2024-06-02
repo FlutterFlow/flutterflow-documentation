@@ -1,4 +1,6 @@
-
+---
+title: Getting Started
+---
 
 # Gemini
 
