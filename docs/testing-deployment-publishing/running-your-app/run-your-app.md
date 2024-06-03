@@ -105,6 +105,11 @@ cloud.
   Settings to test recording audio or test it on emulator via Local Run.
   :::
 
+### Debug info
+Test mode also includes a **Debug Info** panel, which provides a real-time view of all variables with their current values. It includes search and filter options, allowing you to find variables based on type or nullability. This is particularly useful for developers who need to track the state of the app and diagnose issues efficiently.
+
+![deubg-info](../imgs/deubg-info.avif)
+
 ## Run Mode
 
 You can test a fully functional version of your app using the **Run Mode**,
