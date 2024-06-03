@@ -9,7 +9,7 @@ sidebar_position: 1
 # Branching
 Branching creates a separate copy of your work, so you can add new features without disrupting your current progress. It enables multiple developers or teams to work simultaneously on different features without interfering with each other.
 
-Suppose you have a digital cookbook app and you want to introduce a new feature, such as a shopping list. Instead of adding it directly to your main app and possibly causing issues, you create a branch to work on this new feature. Once it's done, you can bring it back into the main app.
+Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your main app and potentially causing problems, you create a branch to work on this new feature. Once it's completed, you can integrate it back into the main app.
 
 :::info
 
@@ -116,8 +116,24 @@ You can also create a new branch from any existing branch.
 
 ![merge](../imgs/merge.avif)
 
-### Resolve conflicts
-While you make changes in the new branch, if there is any change in the 'main' branch for the same page at the same location, you'll likely get conflicts. Here’s how you resolve them.
+### Resolve merge conflicts
+A merge conflict occurs when multiple team members make changes to the same part of the project such as modify the same screen, widget, or configuration simultaneously.
+
+For example, imagine two developers, Alice and Bob, are working on the same FlutterFlow project and both decide to update the same button widget.
+
+**Alice's Changes (Branch: `feature-alice`)**
+
+- Changes the button text to "Submit Form"
+- Changes the button color to blue
+
+**Bob's Changes (Branch: `feature-bob`)**
+
+- Changes the button text to "Send"
+- Changes the button color to green
+
+When Alice's changes are merged into the main project first, her updates will be integrated without any issues. However, when Bob tries to merge his changes afterward, a merge conflict will occur because the changes to the button text and color have already been modified by Alice.
+
+If you get merge conflicts, here’s how you resolve them.
 
 <div style={{
     position: 'relative',
@@ -144,6 +160,10 @@ While you make changes in the new branch, if there is any change in the 'main' b
         allow="clipboard-write">
     </iframe>
 </div>
+
+For certain conflicts, such as those involving variables and API configurations, you'll see a **View Configuration**     option. Enabling this option allows you to easily identify what has changed.
+
+![view-configuration](../imgs/view-configuration.avif)
 
 ### Resolve conflicts manually
 If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
@@ -191,8 +211,6 @@ Let's understand the difference in detail with a scenario; Imagine you are worki
 ### Before merging or rebasing
 
 Your feature branch has two commits: Commit 1 and Commit 3 (which are your changes), and Commit 2 (made by a colleague in the main branch).
-
-Before Merging/Rebasing
 
 ![before-merge-rebase](../imgs/before-merge-rebase.avif)
 
