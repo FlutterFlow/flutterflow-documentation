@@ -403,6 +403,34 @@ To resolve this, enable this option, and you'll see that the release will be cre
 
 ---
 
+## Video guide
+Watch this video if you prefer watching a video tutorial.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/kLfcAzAHA6o"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 ## FAQs
 
 <details>
