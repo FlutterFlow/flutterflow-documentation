@@ -7,13 +7,13 @@ Adding animations to your app enhances the user experience. A well-choreographed
 
 In FlutterFlow, you have the following options to add animations to your app:
 
-1. Widget Animations: add animation effects to an entire widget
-1. Implicit Animations: animate changes in specific widget properties (i.e. change in height of a Container)
-1. Hero Animations: animate a widget that flies between screens (also known as shared element transitions)
-1. Import Lottie or Rive animations: import animations you've created in other tools
-1. Page transitions: specify transitions between pages within your
+1. **Widget Animations**: add animation effects to an entire widget
+1. **Implicit Animations**: animate changes in specific widget properties (i.e. change in height of a Container)
+1. **Hero Animations**: animate a widget that flies between screens (also known as shared element transitions)
+1. **Import Lottie or Rive animations**: import animations you've created in other tools
+1. **Page transitions**: specify transitions between pages within your
 
 To learn more about animations in FlutterFlow checkout this video:
-<!-- TO DO embed video-->
+<div class="video-container"><iframe src="https://www.youtube.com/embed/-quxi_t0eWU?si=GdZBMFcuEZEyFplB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <!-- TO DO create animations showcase-->
