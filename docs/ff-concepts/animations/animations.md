@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting Guides Overview
+title: Animations
 sidebar_position: 1
 ---
 
