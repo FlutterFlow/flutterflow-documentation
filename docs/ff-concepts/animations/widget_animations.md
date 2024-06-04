@@ -66,11 +66,19 @@ To create an experience like this, we need to:
 2. Add a fade animation to the widget that displays the query result, to gradually present it on the screen.
 
 
+## Staggering animations on page load
+There are also cases where you may want to stagger widgets loading on a page. In this case you can use the "Apply same duration & delay"  property. 
+
+For example, say you want to have the various elements on your login page 
+
+
 
 ## Triggering an animation as part of an action flow
+Beyond triggering widget animations on load, you can trigger an animation to occur as part of an action. 
+
+For example, say you want a like button to be enlarged when a user clicks it. 
 
 
 
-## Types of widget animation curves
 
 

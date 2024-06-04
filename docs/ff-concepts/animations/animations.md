@@ -14,4 +14,6 @@ In FlutterFlow, you have the following options to add animations to your app:
 1. Page transitions: specify transitions between pages within your
 
 To learn more about animations in FlutterFlow checkout this video:
-<!-- TO DO -->
+<!-- TO DO embed video-->
+
+<!-- TO DO create animations showcase-->
