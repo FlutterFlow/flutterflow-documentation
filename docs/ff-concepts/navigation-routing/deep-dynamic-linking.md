@@ -15,7 +15,7 @@ any website link would work.
 The figure below illustrates how it works:
 
 <figure>
-    ![img.png](img.png)
+    ![img.png](imgs/img.png)
   <figcaption class="centered-caption">Deep and Dynamic link flow</figcaption>
 </figure>
 
@@ -38,12 +38,12 @@ links to work, you must have the app installed on your device.
 The deep link consists of three parts. It begins with the scheme followed by the host and page name,
 such as `designersapp://designersapp.com/profile`.
 
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 
 If the page name is not provided (i.e. `designersapp://mydesignersapp.com/)`It will open the app's
 landing page.
 
-![img_2.png](img_2.png)
+![img_2.png](imgs/img_2.png)
 
 ### Adding Deep Link
 
@@ -78,7 +78,7 @@ In this step, You will set the URL scheme. To do that:
    the back button from a deep link page, enable the **Pages Are Subroutes of Root Page** option. *
    *Tip**: we recommend enabling this option to increase user engagement with your app.
 
-![img_3.png](img_3.png)
+![img_3.png](imgs/img_3.png)
 
 #### 2. Setting page URL
 
@@ -287,7 +287,7 @@ In this step, You will set the URL scheme. To do that:
    the back button from a deep link page, enable the **Pages Are Subroutes of Root Page** option. *
    *Tip**: we recommend enabling this option to increase user engagement with your app.
 
-![img_4.png](img_4.png)
+![img_4.png](imgs/img_4.png)
 
 #### 4. Setting page URL
 
@@ -377,7 +377,7 @@ To pass custom data with the link, you need to have the following:
 1. Make sure you have a parameter defined on a page you want to pass in a dynamic link.
 
 <figure>
-    ![img_5.png](img_5.png)
+    ![img_5.png](imgs/img_5.png)
   <figcaption class="centered-caption">Adding parameter on page</figcaption>
 </figure>
 
@@ -386,7 +386,7 @@ To pass custom data with the link, you need to have the following:
 
 
 <figure>
-   ![img_6.png](img_6.png) 
+   ![img_6.png](imgs/img_6.png) 
   <figcaption class="centered-caption">Including a parameter in the route</figcaption>
 </figure>
 
