@@ -60,7 +60,7 @@ variables or updating UI elements.
 
 :::tip[Possible usecases]
 
-- **Initializing Data:** You can use the On Load action to initiate API calls,
+- **Initializing Data:** You can use the **On Page Load** action trigger to initiate API calls,
 database queries, or read from local storage, setting up the data that the page
 needs to display. This ensures that all necessary data is ready and available by
 the time the user sees the page.

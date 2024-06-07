@@ -180,7 +180,8 @@ from scratch everytime.
 - **Built-in Widgets:** FlutterFlow includes a variety of built-in widgets that serve as ready-made
   components, such as the `CreditCard` or `Signature` widget. These are out-of-the-box solutions 
   provided by FlutterFlow that can be directly integrated into any project to offer specific functionalities.
-- **User-Created Components:** Users can also build their own components by assembling multiple
+
+- **User-Defined Components:** Users can also build their own components by assembling multiple
   widgets using FlutterFlow’s drag-and-drop interface. This method involves strategically
   positioning atomic widgets such as `TextField`, `Button`s, or `Image`s, etc within the molecular
   widgets like `Row`, `Column`, or `Stack` to create a combined widget that serve a specific 
