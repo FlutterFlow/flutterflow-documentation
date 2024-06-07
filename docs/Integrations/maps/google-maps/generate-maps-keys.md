@@ -1,15 +1,15 @@
 ---
-title: Getting Started
+title: Generate Maps Keys
 sidebar_position: 1
 
 ---
 
-# Google Maps
+# Maps & Places APIs
 
-FlutterFlow natively supports Google Maps, providing a seamless and efficient way to embed
-interactive maps into your FlutterFlow apps.
+FlutterFlow natively supports **Google Maps**, providing a seamless and efficient way to embed
+interactive maps into your FlutterFlow apps. It also supports **Places API** that returns formatted location data and imagery about establishments, geographic locations, or prominent points of interest.
 
-## Getting Started
+## Add Maps APIs
 
 To enable **Google Maps** in your project, please follow the steps:
 
@@ -31,11 +31,10 @@ Cloud Console](https://console.cloud.google.com/).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<p></p>
 
 :::warning
-To secure your API keys, refer to the [**Best Practices guide: Secure API Keys
-**](..%2F..%2Fcloud%2Frestrict-keys.md)
+To secure your API keys, refer to the [**Best Practices guide: Secure API Keys**](..%2F..%2Fcloud%2Frestrict-keys.md)
 :::
 
 - Click on the Credentials menu from the left panel.
@@ -64,6 +63,13 @@ Firebase) in the Google developer console, here are the steps to create one:
 com/embed/2c644aa950c44f76b19c6787784cf3b5?sid=3e22206e-4b4b-4734-b842-0c644d32f344" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
+## Add Places APIs
 
+To enable **Places API** in your project, please follow the steps under 
+["Add Maps API" section](#add-maps-apis) and additionally also enable Places API from the API 
+library if not 
+already enabled. 
+
+![places-api.png](places-api.png)
 
 

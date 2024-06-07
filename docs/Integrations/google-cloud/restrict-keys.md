@@ -39,7 +39,7 @@ their unique identifiers.
 At this stage, you should already have API keys created, but they are currently unrestricted. If
 they are not yet created, you can follow the integration process for any of the Google Cloud
 services we support in FlutterFlow, or for Maps, [**you can go here.
-**](../maps/google-maps/getting-started)
+**](../maps/google-maps/generate-maps-keys)
 
 All your created API keys should be available on
 the [Cloud Credentials Page](https://console.cloud.google.com/apis/credentials). (Ensure you are
