@@ -39,6 +39,8 @@ To solve this issue, you can create a design system outlining common design guid
     </iframe>
 </div>
 
+
+
 ## Adding Design System
 
 To create your own design system:
@@ -74,6 +76,8 @@ To create your own design system:
     </iframe>
 </div>
 
+
+<p></p>
 6. To use the design system, open your project and navigate to **Theme Settings > Design System**.
 7. Click on the **No Design System Selected**.
 8. A pop will open displaying the list of the design systems, click on the newly created design system to add it to your project. **Note** that the design system created in [My Organization](#) will also be available here.
@@ -108,6 +112,7 @@ After selecting the design system, you can't change the Colors, Typography, and 
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 ---
 
@@ -157,6 +162,7 @@ To import the Figma theme:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 If you prefer watching a video tutorial, here is the guide for you:
 
@@ -184,6 +190,7 @@ If you prefer watching a video tutorial, here is the guide for you:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 ---
 
@@ -215,6 +222,7 @@ To customize the loading indicators used in the app, you can make changes in thi
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 If you prefer watching a video tutorial, here is the guide for you:
 
@@ -242,6 +250,7 @@ If you prefer watching a video tutorial, here is the guide for you:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 ---
 
@@ -320,6 +329,7 @@ You can modify its color, background color, and stroke width. In the 'Preview' s
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 ## FAQs
 
