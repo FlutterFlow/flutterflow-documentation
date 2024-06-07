@@ -92,7 +92,10 @@ Here are the steps to use local run:
 </div>
 
 
-8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. *Hot Reload* updates UI instantly without losing its state, while *Hot Restart* recompiles and reloads the entire app, resetting its state. For more info, you can visit [Flutter's Hot Reload documentation](https://docs.flutter.dev/tools/hot-reload).
+8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
+
+**Hot Reload** updates UI instantly without losing its state, while **Hot Restart** recompiles 
+and reloads the entire app, resetting its state. For more info, you can visit [Flutter's Hot Reload documentation](https://docs.flutter.dev/tools/hot-reload).
 
 ![run-controls](../imgs/run-controls.avif)
 
@@ -230,7 +233,8 @@ To run your app on a device:
     2. Run the command `flutter pub get`.
     3. Now, enter the command `flutter run`. VS Code will build and run your app. You'll see the output in the terminal, and the app should launch in the selected emulator or physical device.
 3. For **Android Studio**:
-    1. Open the terminal within Android Studio by clicking "View" -> "Tool Windows" -> "Terminal."
+    1. Open the terminal within Android Studio by clicking **"View" -> "Tool Windows" -> 
+       "Terminal"**.
     2. Run the command `flutter pub get`.
     3. Click the green "Run" button (a right-facing triangle) located in the top toolbar. Choose the target device (emulator or physical device) where you want to run the app. Android Studio will build and run your app. You'll see the output in the "Run" panel at the bottom, and the app should launch in the selected emulator or device.
 

@@ -62,10 +62,10 @@ To run your app in Test Mode:
 :::info[Test Mode Button Colors]
 The test mode button color indicates the following status:
 
-- Orange: Building
-- Green: Ready
-- Yellow: Expiring Soon
-- Red: Expired
+- **Orange**: Building
+- **Green**: Ready
+- **Yellow**: Expiring Soon
+- **Red**: Expired
 :::
 
 ### When to use Test Mode
@@ -76,7 +76,7 @@ Its "Hot Reloading" allows for fast
 iteration and testing. Its downsides compared to Local Run are its restricted
 time (30 min.) and lack of access to some features (e.g. camera).
 
-:::warning[Troubleshooting – Slow Loading]
+:::danger[Troubleshooting – Slow Loading]
 If you see a progress bar at the top of the device running for over 15 seconds,
 try refreshing the page.
 :::

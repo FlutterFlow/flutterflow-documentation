@@ -18,9 +18,9 @@ FlutterFlow doesn’t support running tests on the platform yet.
 
 :::info[Pricing Details]
 
-- Free users: This feature is not available.
-- Standard plan: Limited to creating up to 3 tests (Note: Limit may vary).
-- Pro and Team plan: Unlimited test creation allowed.
+- **Free users:** This feature is not available.
+- **Standard plan:** Limited to creating up to 3 tests (Note: Limit may vary).
+- **Pro and Team plan:** Unlimited test creation allowed.
 :::
 
 ## Basics
@@ -57,7 +57,7 @@ When this is selected, you have options to adjust:
 :::tip[Best practices]
 
 - Start your test with this step for about 3 seconds (i.e., 3000ms).
-- After every "Interact with Widget" step, it's usually wise to add another "Wait to Load."
+- After every "Interact with Widget" step, it's usually wise to add another "Wait to Load".
 
 :::
 
@@ -163,7 +163,7 @@ To run the tests locally:
 
 1. [Download the project code](../exporting-code/ff-cli.md).
 2. Go to `your_project/integration_test/test.dart`.
-3. To run a specific test, click the play button next to it. To execute all tests at once, double-click the play button next to 'void main'.
+3. To run a specific test, click the play button next to it. To execute all tests at once, double-click the play button next to `void main`.
 4. Alternatively, you can use the terminal and enter the command: `flutter test integration_test/test.dart`."
 
 :::info

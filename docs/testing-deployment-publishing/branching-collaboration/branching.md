@@ -29,21 +29,24 @@ Before you create and merge a branch, it is essential to understand the general 
 
 ![branching](../imgs/branching.avif)
 
-First, create a new branch from the 'main' branch. After making your changes and finalizing the feature, proceed to merge this new branch back into the main branch. If there are any conflicts, you must resolve them, and you'll able to merge the new branch into the main branch successfully.
+First, create a new branch from the 'main' branch. After making your changes and finalizing the 
+feature, proceed to merge this new branch back into the main branch. If there are any conflicts, 
+you must resolve them first, and then you'll be able to merge the new branch into the main branch 
+successfully.
 
 :::note Few things to note here
 
 - At the moment, FlutterFlow only supports merging into `main`.
-- Only the user who initiated the merge can access both the `main`` branch and the branch during an ongoing merge.
+- Only the user who initiated the merge can access both the `main` branch and the branch during an ongoing merge.
 - Changes that don't conflict are resolved automatically.
-- You cannot current undo a merge, but a merge can be aborted if you want to start over.
+- You cannot currently undo a merge, but a merge can be aborted if you want to start over.
 - If you leave the project during the merging and come back, the progress you have made on the merge will be preserved.
 
 :::
 
 Let's see how to create, merge branches, and resolve conflicts with a practical example. Here's how you do it.
 
-1. Create a new branch from the ‘main’ branch.
+1. Create a new branch from the `main` branch.
 
 :::tip
 
