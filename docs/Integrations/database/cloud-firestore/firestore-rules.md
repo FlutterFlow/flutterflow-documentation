@@ -1,4 +1,7 @@
-
+---
+title: Deploy Firestore Rules
+sidebar_position: 2
+---
 
 # Firestore Rules
 
