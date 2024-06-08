@@ -136,6 +136,27 @@ We recommend updating your Firebase security rules before deploying your app. Pl
 
 On completion, you land at the panel view of Cloud Firestore and can start creating collections and documents right away!
 
+### Adding Indexes
+
+Deploying indexes is necessary to perform certain queries in your Firestore database. Firestore automatically adds indexes for the most basic queries. However, when you apply both filtering and ordering while querying a collection, an index is necessary, and a warning will be generated to add it.
+
+We create indexes for you. The only thing you need to do is deploy them to your Firestore database.
+
+Here are the steps to deploy indexes.
+
+- Click on the Firestore from the Navigation Menu (left side of your screen).
+- Switch to the **Settings** tab.
+- Scroll down to the **Firestore Indexes** section and click on **Deploy**.
+
+:::caution[Please note]
+If you add a filtering/ordering on the query or change the existing filtering/ordering settings, you should deploy the Firestore Indexes again.
+:::
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/1abddd1120db477da2c085dbc6b7a742?sid=5b161c8b-3957-4ac9-b27f-dc5ebc03f550" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
 
 ## Enable Billing for Cloud Functions Access
 
