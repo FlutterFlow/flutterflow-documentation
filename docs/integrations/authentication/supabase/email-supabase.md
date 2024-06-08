@@ -9,8 +9,8 @@ Supabase email authentication is a secure and easy way to allow users to sign up
 :::info[Prerequisites]
 Before getting started with this section, ensure you have,
 
-1. Completed all steps in the [Supabase setup](..%2F..%2Fsupabase%2Fsupabase-setup.md)
-2. Completed [Initial setup](initial-setup.md) 
+1. Completed all steps in the [**Supabase setup**](..%2F..%2Fsupabase%2Fsupabase-setup.md)
+2. Completed [**Initial setup**](initial-setup.md) 
    required for authentication.
 :::
 
