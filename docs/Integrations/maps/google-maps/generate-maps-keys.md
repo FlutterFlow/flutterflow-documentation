@@ -70,6 +70,6 @@ To enable **Places API** in your project, please follow the steps under
 library if not 
 already enabled. 
 
-![places-api.png](places-api.png)
+![places-api.png](imgs/places-api.png)
 
 

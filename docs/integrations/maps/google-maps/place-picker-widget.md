@@ -39,8 +39,10 @@ Here's an example from the Demo app:
     </iframe>
 </div>
 
+<p></p>
+
 :::note[Prerequisites]
-- Ensure you have enabled **Places API** from Cloud console. This is a similar process to enabling Maps API for showing Google Maps
+- Ensure you have enabled **Places API** from Cloud console. [**Check out the Setup docs.**](generate-maps-keys)
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
 - Add API keys as suggested in [Getting Started](generate-maps-keys) guide.
 
@@ -54,8 +56,101 @@ Here's an example from the Demo app:
 
 To add the PlacePicker widget to your project:
 
-- Drag the `PlacePicker` widget from the **Form Elements tab** (in the Widget Panel) or add it directly from the widget tree.
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/uWaLSOHPZctjnGik03Pu?embed&show_copy_link=true"
+        title="Add Place Picker widget"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
-- Below the `PlacePicker` widget add some Text widgets to show the information about the place.
+<p></p>
 
-![img.png](img.png)
+By default, the `Place Picker` widget features an icon and the text "Select Location" on the 
+button. You can modify the styling and properties of these elements from the Properties Panel on 
+the right.
+
+If you retain the Text widget, the text will update to the name of the selected location when a user makes a selection. Both the icon and text are optional; adjust them according to your design requirements.
+
+<figure>
+    ![place-picker-properties.png](imgs%2Fplace-picker-properties.png)
+  <figcaption class="centered-caption">The widget properties of Place Picker widget</figcaption>
+</figure>
+
+## Use PlacePicker widget state values
+
+The values associated with the selected place are stored in a `GooglePlace` custom data type exposed by FlutterFlow. It holds fields such as the selected place's Name, Address, LatLng, City, State, Country, and Zipcode. Users can use these values in any widget, either to directly set them in a Text widget or for further conditional calculations.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/uWaLSOHPZctjnGik03Pu?embed&show_copy_link=true"
+        title="Use PlacePicker widget state"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+Let's test this change in Test Mode:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/2ncapOklwNGM3ETCntdl?embed&show_copy_link=true"
+        title="Place Picker Test"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
