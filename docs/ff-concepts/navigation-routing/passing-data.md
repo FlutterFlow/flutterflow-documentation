@@ -3,7 +3,7 @@ slug: passing-data
 title: Passing Data
 tags: []
 description: Learn how to pass data between pages in FlutterFlow.
-sidebar_position: 4
+sidebar_position: 1
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

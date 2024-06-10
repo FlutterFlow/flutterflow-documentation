@@ -3,7 +3,7 @@ slug: overview
 title: Overview
 tags: []
 description: Learn how to add navigation in FlutterFlow.
-sidebar_position: 4
+sidebar_position: 0
 ---
 
 # Overview
