@@ -5,6 +5,8 @@ tags: []
 description: Learn how to pass data between pages in FlutterFlow.
 sidebar_position: 4
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Passing Data between Pages
 
@@ -22,7 +24,7 @@ Passing data can only be tested in **Run** and **Test** Mode (it can not be test
 
 ## How to pass data
 
-To enable data passing between pages, start by defining the parameter(s) on the destination page. Next, on the first page, add the [navigate](https://docs.flutterflow.io/actions/actions/navigation/navigate) action and pass the desired parameter value. On the subsequent page, you can utilize the parameter value just as you would with any other variable.
+To enable data passing between pages, start by defining the parameter(s) on the destination page. Next, on the first page, add the [navigate](#) action and pass the desired parameter value. On the subsequent page, you can utilize the parameter value just as you would with any other variable.
 
 The figure below illustrates the data passing flow:
 
@@ -30,7 +32,7 @@ The figure below illustrates the data passing flow:
 
 ## What you can pass
 
-You can pass any [supported data](https://docs.flutterflow.io/data-and-backend/passing-data#when-to-use-which-data-type) from one page to another via *page parameter(s)*. You can think of a *page parameter* as a variable that holds the value being passed from one page to another.
+You can pass any supported data from one page to another via *page parameter(s)*. You can think of a *page parameter* as a variable that holds the value being passed from one page to another.
 
 If you are using Firestore Database, most of the time, you would pass the *Document* (an actual record inside the Firestore collection) and *Document Reference (points to actual document)* between the pages.
 
@@ -63,48 +65,40 @@ This section provides instructions on how to build some everyday use cases in yo
 
 Here are they:
 
-1. [Passing data to the next page](https://docs.flutterflow.io/data-and-backend/passing-data#1.-passing-data-to-the-next-page)
-2. [Passing ListView item](https://docs.flutterflow.io/data-and-backend/passing-data#2.-passing-listview-item)
-3. [Passing a document reference](https://docs.flutterflow.io/data-and-backend/passing-data#3.-passing-a-document-reference)
-4. [Passing data to a component](https://docs.flutterflow.io/data-and-backend/passing-data#4.-passing-data-to-a-component)
+1. [Passing data to the next page](#1-passing-data-to-the-next-page)
+2. [Passing ListView item](#2-passing-listview-item)
+3. [Passing a document reference](#3-passing-a-document-reference)
+4. [Passing data to a component](#4-passing-data-to-a-component)
 
 ### 1. Passing data to the next page
 
 Let's see how to send the typed message to the next page.
-
-Sending a message to the next page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252F9UfYExQdh977f7nUsiwG%252F1-passing-simple-data-demo.gif%3Falt%3Dmedia%26token%3D9e1e25da-8393-4515-bac2-c47e6c1c0e3b&width=768&dpr=4&quality=100&sign=74423ec153b464802420c3d274daafc3b80d7fdb4476f59b1bbc462ca02d2c2d
+![passing-data-next-page](imgs/passing-data-next-page.gif)
 
 The steps to pass data from one page to another are as follows:
 
-1. [Building the first page](https://docs.flutterflow.io/data-and-backend/passing-data#1.1-building-the-first-page)
-2. [Building the second page](https://docs.flutterflow.io/data-and-backend/passing-data#1.2-building-the-second-page)
-3. [Add a parameter on the second page](https://docs.flutterflow.io/data-and-backend/passing-data#1.3-add-a-parameter-on-the-second-page)
-4. [Pass data from the first page](https://docs.flutterflow.io/data-and-backend/passing-data#1.4-pass-data-from-the-first-page)
-5. [Showing parameter value in UI element](https://docs.flutterflow.io/data-and-backend/passing-data#1.5-showing-parameter-value-in-ui-element)
+1. [Building the first page](#11-building-the-first-page)
+2. [Building the second page](#12-building-the-second-page)
+3. [Add a parameter on the second page](#13-add-a-parameter-on-the-second-page)
+4. [Pass data from the first page](#14-pass-data-from-the-first-page)
+5. [Showing parameter value in UI element](#15-showing-parameter-value-in-ui-element)
 
 :::info
 
-If you have already created your pages, you can skip to [Step 3](https://docs.flutterflow.io/data-and-backend/passing-data#1.3-add-a-parameter-on-the-second-page).
+If you have already created your pages, you can skip to [**Step 3**](#13-add-a-parameter-on-the-second-page).
 
 :::
 
 #### 1.1 Building the first page
 
-Before you pass any data to the next page, you must capture the data on the first page. To do so, you can add a [TextField](https://docs.flutterflow.io/widgets-and-components/widgets/form-elements-1/textfield) and [Button](https://docs.flutterflow.io/widgets-and-components/widgets/base-elements/button). Here's how it looks:
+Before you pass any data to the next page, you must capture the data on the first page. To do so, you can add a [TextField](#) and [Button](#). Here's how it looks:
 
-First page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FjPb5PEiLMXge8iB7PRDi%252FScreenshot%25202023-08-04%2520at%252012.18.42%2520PM.png%3Falt%3Dmedia%26token%3D8a2d25ff-0ecb-45b9-85ec-59ce294ea3cb&width=768&dpr=4&quality=100&sign=01f9a737dae5e62e31fa32451e9be51adc76d4409d8ca8ebf4f73747f65347ff
+![build-first-page](imgs/build-first-page.png)
 
 #### 1.2 Building the second page
 
 Now, create a second page to receive the data. To show a message on the second page, simply add a **Text** widget to a page.
-
-Second page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252F1tQgSILIXCs6XxpVUju9%252FScreenshot%25202023-08-04%2520at%252012.21.23%2520PM.png%3Falt%3Dmedia%26token%3Dcef8d7b1-87ce-4ddb-af5f-dbd3d43119dc&width=768&dpr=4&quality=100&sign=0eb330d4e34aa62a4929ef763bbbf84561a583f92c310ddf32bbd0cfeac0654f
+![build-second-page](imgs/build-second-page.png)
 
 #### 1.3 Add a parameter on the second page
 
@@ -119,15 +113,66 @@ To add a parameter:
 5. Optionally you can also add a default value to this parameter which will be displayed if the incoming value is null or empty.
 6. Click **Confirm**.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/f0fe32f0bb1f486b9577b477e26b5ee2?sid=490b8932-68a1-4823-ae40-bd4e295fadf5"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+
 #### 1.4 Pass data from the first page
 
 To pass data from the first page:
 
-1. Select the first page. On the Button widget, add the [**Navigate To**](https://docs.flutterflow.io/actions/actions/navigation/navigate) action.
+1. Select the first page. On the Button widget, add the [**Navigate To**](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) action.
 2. Select the page you want to navigate to (e.g., *PageB).*
 3. Click on the **Pass** button below. Now the parameter (created on the second page) will be displayed. Tip: You can also define a new parameter for the second page from here itself by clicking on the **+ Define** button.
 4. Click on the parameter name. This will open the set from variable menu.
 5. Now select **Widget State -> TextFieldName** (that accepts the message).
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/00543aa0026d4eb08e7fd4e9c536f0c0?sid=a8a0ddf7-7410-43c3-98e1-e113cc507168"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 #### 1.5 Showing parameter value in UI element
 
@@ -138,39 +183,60 @@ To show data from parameters in the Text widget:
 3. Select the **Page Parameters > parameter name** (defined on this page).
 4. Click **Confirm**.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/5023210283704558ac5dc654b79d250d?sid=b2be9ba7-9149-4d73-9729-7ce83ecbc1f3"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 ### 2. Passing ListView item
 
 Let's see how to pass the ListView items (from Firestore Database or API call) to the next page (e.g., a details page).
 
-Passing record from ListView to the details page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FoouAbhMEWHFUohJ0pAVB%252Fitem-pass-data-3.gif%3Falt%3Dmedia%26token%3Dd0bbdce7-f377-4a4a-8e95-f14f4fd5ef60&width=768&dpr=4&quality=100&sign=e8f3f986eecf08132a13aff2832f86c9bc289adafb49281bc04808df6c64266e
+![passing-listview-item](imgs/passing-listview-item.gif)
 
 Passing a record from a ListView to a details page includes the following steps:
 
-1. [Show list of items](https://docs.flutterflow.io/data-and-backend/passing-data#2.1-show-list-of-items)
-2. [Building a details page](https://docs.flutterflow.io/data-and-backend/passing-data#2.2-building-a-details-page)
-3. [Add the parameter on the details page](https://docs.flutterflow.io/data-and-backend/passing-data#2.3-adding-parameter-on-the-details-page)
-4. [Passing item](https://docs.flutterflow.io/data-and-backend/passing-data#2.4-passing-item)
-5. [Show item details from the parameter](https://docs.flutterflow.io/data-and-backend/passing-data#2.5-show-the-item-details-from-the-parameter)
+1. [Show list of items](#21-show-list-of-items)
+2. [Building a details page](#22-building-a-details-page)
+3. [Add the parameter on the details page](#23-adding-parameter-on-the-details-page)
+4. [Passing item](#24-passing-item)
+5. [Show item details from the parameter](#25-show-item-details-from-the-parameter)
 
 :::info
 
-If you already have a list of items displayed on a screen, you can skip to [Step 3](https://docs.flutterflow.io/data-and-backend/passing-data#2.3-adding-parameter-on-the-details-page).
+If you already have a list of items displayed on a screen, you can skip to [**Step 3**](#23-adding-parameter-on-the-details-page).
 
 :::
 
 #### 2.1 Show list of items
 
-Add the first page with [ListView](https://docs.flutterflow.io/widgets-and-components/widgets/layout-elements/listview) and display some items using the [Firestore Database](https://docs.flutterflow.io/widgets-and-components/widgets/layout-elements/listview#1.-showing-data-from-firestore) or [API call](https://docs.flutterflow.io/widgets-and-components/widgets/layout-elements/listview#2.-showing-data-from-api-call).
+Add the first page with [ListView](#) and display some items using the [Firestore Database](#) or [API call](#).
 
 #### 2.2 Building a details page
 
-Add a page with some [**Text**](https://docs.flutterflow.io/widgets-and-components/widgets/base-elements/text) widgets that look like the below:
+Add a page with some [**Text**](#) widgets that look like the below:
 
-Details page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FcBowS42D2QRb3d7fqtU3%252FScreenshot%25202022-10-11%2520at%252010.06.11%2520AM.png%3Falt%3Dmedia%26token%3D9cf0da39-eb57-4f1f-82e9-82e1213c432c&width=768&dpr=4&quality=100&sign=cb05341139ae67ba8d799f20926ec803c547636cae46362fad853d7e1376a7b2
+![build-listview-details-page](imgs/build-listview-details-page.png)
 
 #### 2.3 Adding parameter on the details page
 
@@ -184,26 +250,82 @@ To add a parameter:
     2. To receive the item of API response, set it to **JSON**.
 5. Click **Confirm**.
 
-Adding parameter to receive Firestore DocumentA parameter that will receive JSON item from API call
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FKYLJQimhjMziMe2YoidH%252FScreen-Recording-2022-10-11-at-1.gif%3Falt%3Dmedia%26token%3D2116daeb-eaf9-483a-8e35-eae776fa6787&width=768&dpr=4&quality=100&sign=e5813d165052ebc349bb436808e07231f72a774787c1c793da0d94ecff840ad2
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FYWEbrRcSME6toDQoN8Ag%252FScreenshot%25202022-10-11%2520at%252010.50.34%2520AM.png%3Falt%3Dmedia%26token%3Dc7314697-23fc-4d7e-b81a-896435202690&width=768&dpr=4&quality=100&sign=4dabb46ea4399430db52f51b141d4ae3489c8ca35536072f6b64e331e02e6d7e
+<Tabs>
+<TabItem value="1" label="Adding parameter to receive Firestore Document" default>
+![adding-parameter-details-page](imgs/adding-parameter-details-page.gif)
+</TabItem>
+<TabItem value="2" label="A parameter that will receive JSON item from API call">
+![todo-details-copy](imgs/todo-details-copy.png)
+</TabItem>
+</Tabs>
 
 #### 2.4 Passing item
 
-An item inside the ListView can be passed to the next page by adding a [navigate](https://docs.flutterflow.io/actions/actions/navigation/navigate#navigate-to-action) action.
+An item inside the ListView can be passed to the next page by adding a [navigate](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) action.
 
 To do so:
 
-1. On ListTile, add the [navigate](https://docs.flutterflow.io/actions/actions/navigation/navigate#navigate-to-action) action.
+1. On ListTile, add the [navigate](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) action.
 2. While adding this action, click on the **Pass** button below. Now the parameter (created on the second page) will be displayed. **Tip**: You can also define a new parameter for the next page from here itself by clicking on the **+ Define** button.
 3. Click on the **UNSET** and select the source of the item:
     1. To pass the Firestore Document, select the **[collection_name] Document** and then select **Document (collection_name)**.
     2. To pass the item of API response, select the **[dynamic_children_variable_name] item**.
 4. Click **Confirm**.
 
-**Passing Firestore DocumentPassing item from API response**
+<Tabs>
+<TabItem value="1" label="Passing Firestore Document" default>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/d367b6f1ee9e4cde92836ab605223c3e?sid=5c1abd27-9a8e-4a82-9e36-bdccd371644a"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+</TabItem>
+<TabItem value="2" label="Passing an item from API response">
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/4f6fd5242e154e79a3be1e3e8837d71b?sid=a9910d56-3038-4fed-af22-38767dbd2297"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+</TabItem>
+</Tabs>
 
 #### 2.5 Show item details from the parameter
 
@@ -215,24 +337,73 @@ To display item information from parameter:
 2. Select the **Text** widget, move to the properties panel, and click on the **Set from Variable**. This will open a popup on the left side.
 3. Select the **Page Parameters >** **parameter name** (defined on this page).
     1. If it's a Firestore Document, set the **Document Properties** to the **Field** that you want to display.
-    2. If it's a JSON, set the **Available Options** to **JSON Path** and **JSON Path** to the custom JSON path. See how to [create a JSON path](https://docs.flutterflow.io/data-and-backend/api-calls/api-calls-101#json-path).
+    2. If it's a JSON, set the **Available Options** to **JSON Path** and **JSON Path** to the custom JSON path. See how to [create a JSON path](#).
 4. Click **Confirm**.
 
-**Show the item (Firestore Document) detailsShow the item (API response - JSON) details**
+<Tabs>
+<TabItem value="1" label="Show the item (Firestore Document) details" default>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1fea92f534ec43229f91eac11a4c2612?sid=c8edb137-3ef6-4b93-bbb9-5233f2656fd9"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+</TabItem>
+<TabItem value="2" label="Show the item (API response - JSON) details">
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/e17424550a1a4730b203c8575ee7790d?sid=aab44d49-1eb8-462e-b84b-a461a35e19a6"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+</TabItem>
+</Tabs>
 
 ### 3. Passing a document reference
 
 A Document Reference points to the location where the record (actual data) resides in the Firestore collection. You can use the document reference to retrieve the additional data associated with that record. For example, you could use the user document reference inside the Todo document to identify the user and its details (e.g., name, location, etc.).
 
-User's document reference inside the Todo document
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FQ4JZeiI0j9XeaHZzFjsx%252FPass%2520document%2520Reference%25402x%2520%283%29.png%3Falt%3Dmedia%26token%3D98563ec3-0ca4-44a5-8ebb-d07fd316afc9&width=768&dpr=4&quality=100&sign=c5d92c9481f39dfb2e62d295b719c84eb296dcdf3f91ffc9c9e924666e62ce8a
+![pass-doc-reference](imgs/passing-doc-reference.png)
 
 In Firestore Data Manager, the document reference looks like this:
 
-Todo collection
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FKgVOBKqd6rxpjQ141HQo%252FScreenshot%25202022-05-16%2520at%25204.28.16%2520PM.png%3Falt%3Dmedia%26token%3D60bc8a42-a4e2-477a-bac3-0b2dbdf79661&width=768&dpr=4&quality=100&sign=3585cde62abff8885899e24747987c52aec5e534369934bfdd089ee726e7ed67
+![firestore-data-manager](imgs/firestore-data-manager.avif)
 
 **When you should pass document reference**
 
@@ -246,40 +417,34 @@ Here's an example of this situation:
 
 For this situation, you'll build an example that passes the document reference of the user to the next page and then query additional user details.
 
-Example of passing document reference to another page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FnciFp0gQlns4InJv4JT8%252Frr-demo-2.gif%3Falt%3Dmedia%26token%3D318b1a95-1b0f-43a8-95dc-7464911434be&width=768&dpr=4&quality=100&sign=b2650023ccb2b69553e368327a603426eb5f34dc398b20ae088c496a83322c6c
+![pass-doc-reference](imgs/pass-doc-reference.gif)
 
 Passing a document reference to another page includes the following steps:
 
-1. [Building Todo details page (first page)](https://docs.flutterflow.io/data-and-backend/passing-data#3.1-building-todo-details-page-first-page)
-2. [Building a user details page (second page)](https://docs.flutterflow.io/data-and-backend/passing-data#3.2-building-a-user-details-page-second-page)
-3. [Adding a parameter on the user details page](https://docs.flutterflow.io/data-and-backend/passing-data#3.3-adding-a-parameter-on-the-user-details-page)
-4. [Passing item reference](https://docs.flutterflow.io/data-and-backend/passing-data#3.4-passing-item-reference)
-5. [Query a document based on document reference](https://docs.flutterflow.io/data-and-backend/passing-data#3.5-query-a-document-based-on-document-reference)
-6. [Showing data in UI elements](https://docs.flutterflow.io/data-and-backend/passing-data#3.6-showing-data-in-ui-elements)
+1. [Building Todo details page (first page)](#31-building-todo-details-page-first-page)
+2. [Building a user details page (second page)](#32-building-a-user-details-page-second-page)
+3. [Adding a parameter on the user details page](#33-adding-a-parameter-on-the-user-details-page)
+4. [Passing item reference](#34-passing-item-reference)
+5. [Query a document based on document reference](#35-query-a-document-based-on-document-reference)
+6. [Showing data in UI elements](#36-showing-data-in-ui-elements)
 
-If you have already created your pages, you can skip to [Step 3](https://docs.flutterflow.io/data-and-backend/passing-data#3.3-adding-a-parameter-on-the-user-details-page).
+If you have already created your pages, you can skip to [**Step 3**](#33-adding-a-parameter-on-the-user-details-page).
 
 #### 3.1 Building Todo details page (first page)
 
-To show a list of documents (query collection), find the instructions [here](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection).
+To show a list of documents (query collection), find the instructions [here](#).
 
-To show a single document data, follow the instructions [here](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-document).
+To show a single document data, follow the instructions [here](#).
 
 The Todo details page looks like this:
 
-Todo detail page (first page)
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252FS0cWaRDXijyv8V72amS1%252FScreenshot%25202022-05-13%2520at%25202.50.31%2520PM.png%3Falt%3Dmedia%26token%3Deec39b07-ada6-4d3f-aa90-5030c0d1d4dc&width=768&dpr=4&quality=100&sign=ee5a78581da786421922072294e9247a704196e9c37e44a9f02ab8f1bd2b1eb6
+![doc-reference-todo-details](imgs/doc-reference-todo-details.png)
 
 #### 3.2 Building a user details page (second page)
 
-The user details page consists of [CircleImage](https://docs.flutterflow.io/widgets-and-components/widgets/base-elements/circleimage) widget and two [Text](https://docs.flutterflow.io/widgets-and-components/widgets/base-elements/text) widgets:
+The user details page consists of [CircleImage](#) widget and two [Text](#) widgets:
 
-User details page
-
-https://docs.flutterflow.io/~gitbook/image?url=https%3A%2F%2F468516190-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MhFNOxEwcl8ED58MUC_%252Fuploads%252F0mFApLgjrb6x2D7W4XVU%252FScreenshot%25202023-08-04%2520at%25204.27.32%2520PM.png%3Falt%3Dmedia%26token%3Dc5bf9013-321f-403e-8c92-7d76697c7be4&width=768&dpr=4&quality=100&sign=dcc3896d3ccc59dd3df1f66d1af1996c949e776dbccd3f2409f0c4ccadcca162
+![doc-reference-todo-details-2](imgs/doc-referenence-todo-details.png)
 
 #### 3.3 Adding a parameter on the user details page
 
@@ -291,6 +456,31 @@ To add a parameter:
 4. Set the **Type** to **DocumentReference**. This allows you to carry a single document/record reference from the previous page.
 5. Set the **Collection Type** to the Firestore collection that holds the data.
 6. Click **Confirm**.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/480b60fd745d4b30836f083fdf6de6a1?sid=2e561f97-8c8a-4f2a-a6d5-a0d852436c33"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 #### 3.4 Passing item reference
 
@@ -306,6 +496,31 @@ To add an action:
 6. Set the **Source** to a document and then set the **Document Properties** to the **Field** that holds the document reference (e.g., *created_by* field).
 7. Click **Confirm**.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/606a0efefdb14087b80dac461005e3d5?sid=2a5021f7-22d9-44f8-ae4a-887440438601"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 #### 3.5 Query a document based on document reference
 
 Once you have access to the document reference, you can use it to query the additional information on a page or a widget. The ideal place to query a document is at the page level so that you can access the document data from anywhere within a page.
@@ -317,22 +532,96 @@ Once you have access to the document reference, you can use it to query the addi
 5. Click on the **UNSET** and select the parameter name that holds the document reference.
 6. Click **Confirm**.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/a485d26487984edaab6b24bd7a3f41dc?sid=810d6422-827c-4988-9a85-5ae2352a03ba"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 #### 3.6 Showing data in UI elements
 
 To show data on the user details page:
 
 1. Select the **Image** widget, move to the property panel, and scroll down to the **path** property.
 2. Click on the **Set from Variable** text. This will open a popup on the left side.
-    1. Select the document (retrieved in the [previous step](https://docs.flutterflow.io/data-and-backend/passing-data#5.-query-a-document-based-on-document-reference)) as a source (e.g., **[collection_name] Document**).
+    1. Select the document (retrieved in the previous step as a source (e.g., **[collection_name] Document**).
     2. Now select the field that holds the image URL path.
 3. Similarly, show the data for other UI elements.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/4a8ec8485b8e4031bea857e6cd6eb0ef?sid=d1584e13-7cce-412d-aa50-d86687fefb37"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 ### 4. Passing data to a component
 
-See how to [pass data from a page to your component](https://docs.flutterflow.io/widgets-and-components/custom-components#passing-data).
+See how to [pass data from a page to your component](#).
 
 ---
 
 ## Video guide
 
 If you prefer watching a video tutorial, here's the one for you:
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/F_4O1uWm22g"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
