@@ -2,7 +2,7 @@
 slug: webview
 title: WebView
 tags: []
-description: Learn how to use WebView in FlutterFlow.
+description: Learn how to use the WebView widget in FlutterFlow to display website content directly within your app.
 sidebar_position: 6
 ---
 
