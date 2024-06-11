@@ -1,5 +1,5 @@
 ---
-slug: how-to-collaborate-on-projects
+slug: types-collaborate-on-projects
 title: How to Collaborate on Projects
 tags: [ ]
 toc_max_heading_level: 5
