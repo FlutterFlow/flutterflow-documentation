@@ -24,7 +24,7 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          repoToken: "${{ secrets.FIREBASE_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_flutterflow_docs_82026 }}"
           projectId: flutterflow-docs-82026
 
