@@ -1,5 +1,5 @@
 ---
-slug: how-to-run-test-projects
+slug: types-run-test-projects
 title: How to Run and Test Projects
 tags: [ ]
 toc_max_heading_level: 5
