@@ -1,5 +1,6 @@
 ---
 title: Deep & Dynamic Linking
+sidebar_position: 4
 ---
 
 # Deep & Dynamic Linking

@@ -1,3 +1,8 @@
+---
+title: Generate Current Page Link
+sidebar_position: 5
+---
+
 # Generate Current Page Link
 
 Using this action, you can generate the dynamic link for the current page.
