@@ -195,6 +195,13 @@ showing how a higher number increases the space allocation relative to other wid
   factor allows the widget to occupy more space, albeit still less than Child 2 due to its lower Flex factor.
 :::
 
+Find a video tutorial about Expanded & Flexible: 
+
+<div class="video-container"><iframe src="https://www.youtube.
+com/embed/Mmzwb0mYEQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
 ## Scrollability
 Scrollability for **Row or Column** widgets in Flutter determines whether the content within these layouts can extend beyond the visible boundaries of the screen or container, enabling horizontal or vertical scrolling:
 
