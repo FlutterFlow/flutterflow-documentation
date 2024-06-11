@@ -21,9 +21,12 @@ jobs:
       - name: List Build Directory
         run: ls -R ./build  # Ensure build output is correct
 
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          repoToken: "${{ secrets.FIREBASE_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_flutterflow_docs_82026 }}"
+          projectId: flutterflow-docs-82026
+
+
+
