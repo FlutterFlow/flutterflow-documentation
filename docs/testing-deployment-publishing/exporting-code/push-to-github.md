@@ -43,6 +43,7 @@ Here’s how you do it:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 2. Once the repository is created, install the [FlutterFlow GitHub App](https://github.com/apps/flutterflow-github-app) in your GitHub account.
     
@@ -71,6 +72,7 @@ Here’s how you do it:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 3. You can now push your code to the repository.
 
@@ -99,9 +101,10 @@ Here’s how you do it:
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 :::tip
-- FlutterFlow always pushes changes to a branch named '**flutterflow**'. Avoid making direct changes to this branch, as your changes will be overwritten by the next push from FlutterFlow.
+- FlutterFlow always pushes changes to a branch named `flutterflow`. Avoid making direct changes to this branch, as your changes will be overwritten by the next push from FlutterFlow.
 - If you need to modify the code, make changes in a separate branch. Learn more about managing custom code.
 :::
 
@@ -121,28 +124,32 @@ First, set up the connection between your FlutterFlow project and GitHub reposit
 
 ### 2. Establish a custom code branch
 
-After pushing your FlutterFlow code to GitHub, it lands in the 'flutterflow' branch. To safeguard your custom modifications from being overwritten by future pushes, create a 'develop' branch.
+After pushing your FlutterFlow code to GitHub, it lands in the `flutterflow` branch. To safeguard your custom modifications from being overwritten by future pushes, create a `develop` branch.
 
 1. Navigate to your GitHub repository.
-2. Switch from 'main' to 'flutterflow' in the branch dropdown.
-3. In the branch creation field, enter 'develop' and create the branch from 'flutterflow'.
+2. Switch from `main` to `flutterflow` in the branch dropdown.
+3. In the branch creation field, enter `develop` and create the branch from `flutterflow`.
 
 ### 3. Add custom code
 
-Once your 'develop' branch is ready, [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your local machine. Open the project in your IDE, switch to the 'develop' branch, and add your custom code.
+Once your `develop` branch is ready, [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your local machine. Open the project in your IDE, switch to the `develop` branch, and add your custom code.
 
-After making changes, commit and push them back to the 'develop' branch.
+After making changes, commit and push them back to the `develop` branch.
 
 ### 4. Merge changes from FlutterFlow
 
 To integrate the latest updates of your FlutterFlow project into your custom code:
 
-1. Create a pull request on GitHub from 'flutterflow' to 'develop'.
+1. Create a pull request on GitHub from `flutterflow` to `develop`.
 2. Review and merge the changes, resolving any conflicts if necessary.
 
 ### 5. Final testing and deployment
 
-After testing the changes in 'develop':
+After testing the changes in `develop`:
 
-1. Merge 'develop' into 'main' via a new pull request on GitHub.
-2. Once reviewed and merged, deploy your application from the 'main' branch using FlutterFlow’s deployment features.
+1. Merge `develop` into `main` via a new pull request on GitHub.
+2. Once reviewed and merged, deploy your application from the `main` branch using FlutterFlow’s deployment features.
+
+:::tip
+Also, see how you can download the code using [**FlutterFlow CLI**](ff-cli) and [**Local Run**](../running-your-app/local-run.md).
+:::

@@ -45,6 +45,7 @@ Ideally, you should save the version whenever you accomplish something important
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 ### Restoring a version
 

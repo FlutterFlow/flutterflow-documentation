@@ -79,6 +79,7 @@ You can also create a new branch from any existing branch.
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 2. Make some changes in the new branch, and from the same menu, select the **Merge** option.
 
@@ -114,6 +115,7 @@ You can also create a new branch from any existing branch.
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 3. Now, you'll see a screen that will display if there are any conflicts. If you don’t have any conflicts, you can simply go ahead and click **Merge Branch**.
 
@@ -124,19 +126,16 @@ A merge conflict occurs when multiple team members make changes to the same part
 
 For example, imagine two developers, Alice and Bob, are working on the same FlutterFlow project and both decide to update the same button widget.
 
-**Alice's Changes (Branch: `feature-alice`)**
-
-- Changes the button text to "Submit Form"
-- Changes the button color to blue
-
-**Bob's Changes (Branch: `feature-bob`)**
-
-- Changes the button text to "Send"
-- Changes the button color to green
+| **Developer**       | **Branch Name**     | **Changes**                                        |
+|---------------------|---------------------|----------------------------------------------------|
+| Alice               | `feature-alice`     | - Changes the button text to "Submit Form"         |
+|                     |                     | - Changes the button color to blue                 |
+| Bob                 | `feature-bob`       | - Changes the button text to "Send"                |
+|                     |                     | - Changes the button color to green                |
 
 When Alice's changes are merged into the main project first, her updates will be integrated without any issues. However, when Bob tries to merge his changes afterward, a merge conflict will occur because the changes to the button text and color have already been modified by Alice.
 
-If you get merge conflicts, here’s how you resolve them.
+In your project, if you get merge conflicts, here’s how you resolve them.
 
 <div style={{
     position: 'relative',
@@ -163,8 +162,9 @@ If you get merge conflicts, here’s how you resolve them.
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
-For certain conflicts, such as those involving variables and API configurations, you'll see a **View Configuration**     option. Enabling this option allows you to easily identify what has changed.
+For certain conflicts (apart from widgets), such as those involving variables and API configurations, you'll see a **View Configuration** option. Enabling this option opens the split screen view displaying changes from the new branch, allowing you to easily identify what has changed. 
 
 ![view-configuration](../imgs/view-configuration.avif)
 
@@ -196,6 +196,7 @@ If you choose to resolve manually, you can directly make changes in the **Accept
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
 
 :::info
 
@@ -213,7 +214,7 @@ Let's understand the difference in detail with a scenario; Imagine you are worki
 
 ### Before merging or rebasing
 
-Your feature branch has two commits: Commit 1 and Commit 3 (which are your changes), and Commit 2 (made by a colleague in the main branch).
+Your feature branch has two commits: `Commit 1` and `Commit 3` (which are your changes), and `Commit 2` (made by a colleague in the main branch).
 
 ![before-merge-rebase](../imgs/before-merge-rebase.avif)
 
@@ -221,13 +222,13 @@ Your feature branch has two commits: Commit 1 and Commit 3 (which are your chang
 
 It creates a new merge commit. This merge commit ties together the histories of the feature and main branches. The result is a divergent history that converges with the merge commit, preserving the sequence of commits as they were originally made.
 
-![after-merging](../imgs/after-merging.avif)
+![after-merging](../imgs/after-merge.avif)
 
 ### After rebasing
 
-Your commits (Commit 1 and Commit 3) are replayed on top of Commit 2, which is the latest in the main branch. This makes it look like your changes were made after your colleague's changes, creating a clean, linear history.
+Your commits (`Commit 1` and `Commit 3`) are replayed on top of `Commit 2`, which is the latest in the main branch. This makes it look like your changes were made after your colleague's changes, creating a clean, linear history.
 
-![after-rebasing.avif](../imgs/after-rebasing.avif)
+![after-rebasing.avif](../imgs/after-rebase.avif)
 
 :::warning
 
