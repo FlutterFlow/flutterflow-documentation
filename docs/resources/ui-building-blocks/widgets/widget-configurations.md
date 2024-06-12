@@ -56,14 +56,14 @@ Some of the widgets that can handle multiple children include **Column, Row, Sta
 GridView, and PageView**.
 
 :::info
-To learn more about **Generating Dynamic Children**, refer here.
+To learn more about [**Generating Dynamic Children**](generate-dynamic-children), refer here.
 :::
 
 ## Animations
 You can apply animations to a widget to enhance the visual appeal and user experience. Animations can be used to draw attention to important elements, provide feedback on user interactions, or create visually engaging transitions between states. 
 
 :::info
-Learn more about adding animations here
+Learn more about adding **[animations](#)** here
 :::
 
 ## Documentation and Semantic Labels
