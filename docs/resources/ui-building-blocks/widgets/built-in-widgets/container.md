@@ -18,24 +18,7 @@ appearance and placement of that box within the screen layout.
 The Container properties can be adjusted to customize the appearance and layout of a Container
 widget. Here's a brief explanation of each:
 
-- **Width & Height:** Specify the dimensions of the container in pixels (px) or as a percentage (%)
-  of the parent container's size.
-
-- **Fill Color:** Sets the background color of the Container. You can choose this color from defined
-  Theme Colors, use a color picker, or enter a specific hexadecimal (hex) code (e.g., `#e0ddfe`).
-
-- **Border Color:** Determines the color of the Container's border. If unset, the container will
-  have
-  no border color.
-
-- **Border Radius:** This adjusts how rounded the corners of the Container are. A higher value
-  increases the roundness.
-
-- **Border Width:** Defines the thickness of the border around the Container. A higher value results
-  in a thicker border.
-
-- **Elevation:** Typically used to create a shadow around the Container, giving it a 3D effect
-  that makes it appear elevated above other widgets.
+![container-props.png](imgs%2Fcontainer-props.png)
 
 ### Limiting Size
 
