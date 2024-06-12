@@ -148,8 +148,8 @@ You can make a project public so that others can view and clone your project. Be
 
 ## Preview
 
-You can use this option to run your app in [Preview mode](../../resources/Projects/how-to-run-test-projects#preview-mode).
+You can use this option to run your app in [Preview mode](../../testing-deployment-publishing/running-your-app/run-your-app#preview-mode).
 
 ## Testing
 
-This menu allows you to run your app in [Test](../../resources/Projects/how-to-run-test-projects#test-mode) or [Run](../../resources/Projects/how-to-run-test-projects#run-mode) mode.
+This menu allows you to run your app in [Test](../../testing-deployment-publishing/running-your-app/run-your-app#test-mode) or [Run](../../testing-deployment-publishing/running-your-app/run-your-app#run-mode) mode.
