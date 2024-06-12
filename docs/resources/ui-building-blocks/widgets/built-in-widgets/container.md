@@ -37,15 +37,34 @@ widget. Here's a brief explanation of each:
 - **Elevation:** Typically used to create a shadow around the Container, giving it a 3D effect
   that makes it appear elevated above other widgets.
 
+### Limiting Size
+
+Sometimes, you don't set the height and width of the container explicitly and allow it to be the size of its child widget. If you do so, you may find layout issues where widgets may become too large or too small on different devices, leading to a poor user experience. To overcome this, you can limit the size of the container by specifying the Min W, Min H, Max W, and Max H.
+
+For example, in a responsive design, you might want a button to grow with the screen size but not exceed a certain width. By setting these properties, you can ensure the button is at least a certain size for usability but doesn't become too large on bigger screens.
+
 - **Min W (Minimum Width) & Min H (Minimum Height):** These set the minimum dimensions the Container
   can shrink to, in pixels or percentage.
 
 - **Max W (Maximum Width) & Max H (Maximum Height):** These set the maximum dimensions the Container
   can expand to, in pixels or percentage.
 
-- **Clip Content:** Determines whether the content inside the Container should be clipped if it
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/08c0b595502e4aa7ae865071533ffd64?sid=e1a84140-3667-459e-9808-7192b8a73f36" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+
+### Clip Content
+
+Determines whether the content inside the Container should be clipped if it
   exceeds the boundaries of the Container. When enabled, anything outside the Container's bounds
   will not be visible.
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/5eeaeea02f9d43fba5ac9b148aaf5693?sid=bce9230d-d5f3-4e42-9766-c68805a6dcde" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
 
 ## Box Shadow Properties
 
@@ -61,13 +80,23 @@ Here's a brief explanation of each property:
   shadow,
   while a lower value makes the shadow sharper and more defined.
 
-- **Spread:** Controls the spread radius of the shadow. Increasing this value will expand the area
-  that the shadow covers, making it appear larger and more extensive.
+- **Spread:** Controls the **spread radius of the shadow**. **Increasing** this value will **expand** the area
+  that the shadow covers, making it appear larger.
 
 - **Offset X & Offset Y:** These properties set the horizontal (X) and vertical (Y) displacement of
-  the shadow relative to the widget. **Offset X** shifts the shadow horizontally, and **Offset Y**
-  moves it vertically. Positive values move the shadow right and down, respectively, while negative
-  values move it left and up.
+  the shadow relative to the widget. 
+
+  **Offset X** shifts the shadow horizontally, and **Offset Y**
+    moves it vertically. 
+  Positive values move the shadow right and down, respectively, while negative
+      values move it left and up.
+
+Here's a quick demo to show the box shadow property in Container: 
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/afde4e70630a4ff4aa6d7ce6831f7731?sid=1ad86738-3f6b-4b83-a91c-e033da1976a7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
 
 ## Gradient Properties
 
@@ -75,10 +104,10 @@ The Gradient properties allow you to create and customize a gradient effect for 
 Here's an overview of each property:
 
 - **Angle (Degrees):** Sets the orientation of the gradient by specifying the angle in degrees. An
-  angle of 0 degrees creates a horizontal gradient, and 90 degrees would make it vertical.
+  angle of **0 degrees** creates a **horizontal** gradient, and **90 degrees** would make it **vertical**.
 
 - **Colors**: These are the colors used in the gradient. You can set these colors
-  using Theme Colors, a color picker, or hex codes. By default, two color values are added by
+  using Theme Colors, a color picker, or hex codes. Two color values are added by
   default.
     - **Add Color:** This option allows you to add additional colors to the gradient, further
       customizing the effect by adjusting their transition points
@@ -98,10 +127,12 @@ In the above example,
   and choosing from Theme Colors, a color picker, or hex codes.
 
 ## Background Image Properties
-
-The Background Image properties provide options for setting up an image as the background of a 
-Container widget. For a detailed guide on configuring **common Image properties**, please refer 
-to the relevant section [here](image.md#common-image-properties).
+The Background Image properties provide options for setting up an image as the background of a
+Container widget.
+:::info
+ For a detailed guide on configuring **common Image properties**, please refer 
+to the relevant section [**here**](image.md#common-image-properties).
+:::
 
 
 ## Child Properties
@@ -116,7 +147,68 @@ to the relevant section [here](image.md#common-image-properties).
 This property enables the use of implicit animations for changes in the Container’s properties (like
 size or color). This makes transitions between property changes smoother and visually appealing.
 
-The properties are as follows:
+Here's an example of Container's width and color changing without the use of Implicit Animation. 
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/lpzJoDHTDylLJ3sniFYi?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+Now we enable **Implicit Animation** for this Container and see the difference: 
+
+<p></p>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/b2w2d8ddS6aKkSNrtUX4?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+
+
+The properties of Implicit Animation are as follows:
 
 - **Animation Curve:** Specifies how the animation progresses over time. The options are Ease In,
   Ease in Out, Ease Out, Bounce, Linear, Elastic.
@@ -129,3 +221,8 @@ The properties are as follows:
 This toggle ensures that the Container and its contents are positioned within the safe area of the
 device’s screen, avoiding obscured areas like notches or rounded corners. This is particularly
 useful for ensuring good visibility and interactivity across different devices.
+
+To enable the safe area, navigate to the properties panel and turn on the Safe Area toggle.
+
+
+![img_1.png](imgs%2Fimg_1.png)

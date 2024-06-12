@@ -44,7 +44,14 @@ In the demo app, we have predefined custom `DataTypes`. One such DataType is "**
     </iframe>
 </div>
 
+<p></p>
+
 The value is stored in a variable (in this example, `allCategoriesList`) and can be used to populate any scrollable view. In our example, we populate the `ListView` widget, which creates multiple instances, each holding a Column with a circular Container and Text. 
+
+:::tip[What are Instances? ]
+Learn about **[Instances](../overview.md#classes-vs-instances)** and how it compares with **Classes** in this 
+[**document**](../overview.md#classes-vs-instances).
+:::
 
 To make changes, you need to **modify only the first child** and set the variable sources to the first 
 child widgets. These changes will be applied to all children widgets in the `ListView`. The number of children will match the length of the List variable unless you have set a limit in the **Max Items** option under the **Generating Dynamic Children** tab.
