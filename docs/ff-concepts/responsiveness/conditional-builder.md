@@ -5,7 +5,7 @@ The `ConditionalBuilder` widget allows you to dynamically display different widg
 
 For example, displaying different charts based on user roles. For team members, an individual progress chart can be shown. Team leads can view the overall progress of the entire team, while project managers can see over project progress chart. Just like the below:
 
-![img.png](img.png)
+![img.png](../../resources/ui-building-blocks/components/built-in-components/img.png)
 
 ## Adding ConditionalBuilder widget
 

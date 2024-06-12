@@ -99,48 +99,10 @@ In the above example,
 
 ## Background Image Properties
 
-The Background Image properties allow you to configure how an image is displayed as a
-background in a Container widget. Here’s a breakdown of each property:
+The Background Image properties provide options for setting up an image as the background of a 
+Container widget. For a detailed guide on configuring **common Image properties**, please refer 
+to the relevant section [here](image.md#common-image-properties).
 
-- **Image Type:** Specifies the source of the image. Options include:
-    - **Network:** Enter the URL of the image in the Path input field. This is used for images
-      hosted online.
-
-    - **Asset:** Click the Upload Image + button to upload an image from your computer or select
-      from previously uploaded assets. When this option is selected, you can enable the "Set Dark
-      Mode" toggle to specify a separate background image for dark mode environments, enhancing the
-      visual experience under different lighting conditions.
-
-    - **Uploaded File:** Selecting this option allows for dynamic handling of image data within your
-      app, accommodating images that users upload during app usage. This makes it suitable for
-      applications requiring user-specific or user-generated content. Set this to use Widget State >
-      Uploaded File to manage the image as part of the app's state.
-
-- **Cached:** Determines whether the image should be cached for performance optimization. When
-  toggled on, it stores the image locally to speed up load times on subsequent views.
-
-
-- **Box Fit:** Determines how this widget should take up
-  the available space. The options are:
-
-    - **Fill:** Scale the image to completely fill the container, which might distort the image.
-    - **Contain:** Scale the image to fit within the container without distorting it, which might
-      leave some empty space.
-    - **Cover:** Scale the image to completely cover the container without distorting it,
-      potentially cropping some parts of the image.
-    - **FitWidth:** Scale the image to fit the width of the container, possibly leaving empty space
-      vertically.
-    - **FitHeight:** Scale the image to fit the height of the container, possibly leaving empty
-      space horizontally.
-    - **None:** No scaling or adjustment, showing the image in its original size.
-
-- **Image Alignment:** Controls the alignment of the image within the container. This grid allows
-  you
-  to position the image precisely within the container, with options to align it to the center, top,
-  bottom, left, right, and combinations of these.
-
-- **X & Y:** Adjusts the fine positioning of the background image along the X (horizontal) and Y
-  (vertical) axes. This is useful for making precise adjustments to the image placement.
 
 ## Child Properties
 
