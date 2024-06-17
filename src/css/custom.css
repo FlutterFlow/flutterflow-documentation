@@ -148,8 +148,12 @@ margin-bottom: 24px;
   height: 100%;
 }
 
-
 /* table {
   max-height: 20px;
 } */
 
+
+.landscape-image {
+  width: auto;
+  height: 400px;
+}

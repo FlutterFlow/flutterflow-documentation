@@ -1,5 +1,5 @@
 ---
-slug: how-to-create-find-organize-projects
+slug: types-create-find-organize-projects
 title: How to Create, Find, and Organize Projects
 tags: []
 toc_max_heading_level: 5
