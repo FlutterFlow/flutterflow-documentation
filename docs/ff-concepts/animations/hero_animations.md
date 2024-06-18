@@ -1,6 +1,6 @@
 ---
 title: Hero Animations
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## Hero Animation Overview

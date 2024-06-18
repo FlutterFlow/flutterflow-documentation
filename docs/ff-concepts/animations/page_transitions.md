@@ -1,6 +1,6 @@
 ---
-title: Navigation Transitions
-sidebar_position: 1
+title: Page Transitions
+sidebar_position: 4
 ---
 
 The animation that plays while going from one page of the app to another is known as the navigation transition. While defining a Navigate To Action on any widget, you will notice the transition type is set as Default but you can change that animation easily.
