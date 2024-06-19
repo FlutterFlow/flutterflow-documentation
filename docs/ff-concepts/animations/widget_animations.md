@@ -1,6 +1,7 @@
 ---
 title: Widget Animations
 sidebar_position: 1
+description: Learn how to add widget animations in FlutterFlow.
 ---
 import fadeGif from '@site/static/img/animations/animation_gifs/fade.gif';
 import scaleGif from '@site/static/img/animations/animation_gifs/scale.gif';

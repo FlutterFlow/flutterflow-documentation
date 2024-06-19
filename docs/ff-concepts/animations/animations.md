@@ -1,6 +1,7 @@
 ---
 title: Animations
 sidebar_position: 1
+description: Learn the basics of animations in FlutterFlow.
 ---
 
 Enhancing your app with animations significantly improves the user experience, making it more engaging and intuitive. In FlutterFlow, you have several options to add animations to your app:
