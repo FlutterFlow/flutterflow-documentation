@@ -1,4 +1,5 @@
 ---
+slug: widget-animations
 title: Widget Animations
 sidebar_position: 1
 description: Learn how to add widget animations in FlutterFlow.

@@ -1,4 +1,5 @@
 ---
+slug: hero-animations
 title: Hero Animations
 sidebar_position: 3
 description: Learn how to add Hero Animations in your FlutterFlow app.
@@ -76,7 +77,7 @@ The steps to build such an example are as follows:
     </div>
     <p></p>
 
-3. Add [navigation action](#) from page 1 to page 2.
+3. Add [navigation action](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) from page 1 to page 2.
 
 
 

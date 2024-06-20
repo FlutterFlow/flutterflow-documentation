@@ -1,4 +1,5 @@
 ---
+slug: implicit-animations
 title: Implicit Animations
 sidebar_position: 2
 description: Learn how to add implicit animations in FlutterFlow.

@@ -1,37 +1,60 @@
 ---
-title: Page Transitions
+slug: page-transition-animations
+title: Page Transition Animations
 sidebar_position: 4
+description: Learn how to add page transition animations in your FlutterFlow app.
 ---
 
-The animation that plays while going from one page of the app to another is known as the navigation transition. While defining a Navigate To Action on any widget, you will notice the transition type is set as Default but you can change that animation easily.
+The animation that plays while transitioning from one page of the app to another is known as a page transition. In FlutterFlow, you can customize this animation to enhance the user experience.
 
 You can choose from any of the following transition animations:
 
-<!-- gif -->
-
-
+:::info
 Here, the transitions are recorded with the duration set to 1000ms to make the animation clearly visible. But inside the app, it's recommended to keep the duration between 200-400ms.
+:::
 
+| Transition Type | Description                                    | Example                   |
+|-----------------|------------------------------------------------|---------------------------|
+| Instant         | Transition with no animation, switching pages immediately. | ![Instant](animation_gifs/instant-page-transitions.gif) |
+| Fade In         | Gradually fades the new page into view.        | ![Fade In](animation_gifs/fade-page-transitions.gif) |
+| Slide Up        | Slides the new page up from the bottom.        | ![Slide Up](animation_gifs/slide-up-page-transition.gif) |
+| Slide Down      | Slides the new page down from the top.         | ![Slide Down](animation_gifs/slide-down-page-transition.gif) |
+| Slide Left      | Slides the new page in from the right.         | ![Slide Left](animation_gifs/slide-left-page-transition.gif) |
+| Slide Right     | Slides the new page in from the left.          | ![Slide Right](animation_gifs/slide-right-page-transition.gif) |
+| Scale           | Scales the new page in from a smaller size to full screen. | ![Scale](animation_gifs/scale-page-transitions.gif) |
 
-Apply single navigate transition
-To set a transition animation for a single navigate action, follow the steps below:
+## Animate single navigate transition
 
-Select a widget on which you want to set the navigation action.
-From the Properties Panel (right), click on +Add inside the Actions section.
-Make sure you have the On Tap tab selected on top.
-Click + Add Action.
-Set the action as Navigate To and choose the page you want the user to be navigated to from the dropdown.
-To change the transition animation, select an animation from the Transition Type dropdown.
-By default, the animations use 300 milliseconds as the duration for which it plays but you can change it by specifying a value inside the Duration (ms) field.
-Click Close.
+To set a transition animation for a single navigate action, first, ensure that you have added a [**Navigate To**](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) action and then select an animation from the **Transition Type** dropdown. By default, the animations use 300 milliseconds as the duration for which it plays but you can change it by specifying a value inside the **Duration** (ms) field.
 
+![single-navigate-transition-animation.avif](animation_gifs/single-navigate-transition-animation.avif)
 
-Change global navigate transition
+## Change global navigate transition
+
 To change the default transition animation of your entire app, follow the steps below:
 
-Go to the Settings and Integrations page from the Navigation Menu (right).
-Under the General section, select App Details.
-In the Navigation Transition section, check Override Default Transition.
-Now, you can set the Transition Type and Duration from here.
-While defining any Navigate To action, use the Default transition type. FlutterFlow will automatically pick up the global transition animation that you have set.
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/n5nw5nnzrgEQ5pRdwYBh?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
