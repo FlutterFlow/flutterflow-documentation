@@ -13,6 +13,7 @@ This page outlines the important steps and checks to be made before publishing y
 Here’s a comprehensive list of these prechecks:
 
 1. **Functionality Testing**: Test the app manually across devices. You can also implement integration tests using FlutterFlow’s [Automated Tests](#) framework to cover various scenarios.
+
 2. **Get Feedback**: Run your app in Run Mode to generate a [shareable link](#) to the session. You can share these links to gather feedback from users and testers, providing valuable insights and potential areas of improvement before the public release.
 3. **Optimizations & Enhancements**: Improve performance by implementing [optimization and enhancement](#) suggestions. Ensure that images are properly sized, consider using higher compression for assets, and remove unused assets and custom widgets. These will help improve your app's speed and size.
 4. **User Interface:** Check UI consistency across different screen sizes and resolutions using the [Canvas Size](#) option.

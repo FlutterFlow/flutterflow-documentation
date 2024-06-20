@@ -40,6 +40,7 @@ Follow the steps below to create an app on Google Play Store:
 4. Accept the **Declarations**.
 5. Click **Create app** at the bottom.
 
+<p></p>
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -65,6 +66,9 @@ Follow the steps below to create an app on Google Play Store:
     </iframe>
 </div>
 
+<p></p>
+
+
 ### 2. Set up your app
 
 To successfully deploy the app, you must fill in all the app details required by the Google Play Store.
@@ -87,7 +91,7 @@ To create the Service Account, you can follow the instructions from [here](https
     ![enable-play-api](../imgs/enable-play-api.avif)
     
 3. In Google Cloud Console, go to [Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts), click + **CREATE SERVICE ACCOUNT,** and follow the steps as per in the visual below.
-
+<p></p>
     <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -112,6 +116,9 @@ To create the Service Account, you can follow the instructions from [here](https
             allow="clipboard-write">
         </iframe>
     </div>
+
+<p></p>
+
 
 4. On the right side of the newly created service account, click the action menu (three dots) icon and select **Manage keys**. Then, click **ADD Key > Create new key > select JSON > CREATE**. Keep the downloaded file at a safe place.
 
@@ -140,6 +147,7 @@ To create the Service Account, you can follow the instructions from [here](https
         </iframe>
     </div>
 
+<p></p>
 
 5. Now, return to the Google Play Console and follow the steps below:
     1. Go to the [Users & Permissions](https://play.google.com/console/users-and-permissions) page.
@@ -151,7 +159,7 @@ To create the Service Account, you can follow the instructions from [here](https
         - "Manage testing tracks and edit tester lists"
     4. Click **Invite user**.
 
-
+<p></p>
     <div style={{
         position: 'relative',
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -184,6 +192,9 @@ To upload the service account credentials on FlutterFlow:
 
 1. Return to FlutterFlow, navigate to **Settings & Integrations > App Settings >** **Mobile** **Deployment,** and scroll down to the **Google Play Store** section.
 2. Under the **Service Account Credentials**, Click on **Upload Credentials** and select the downloaded credential, i.e., the `.json` file in the previous step no.4.
+
+<p></p>
+
 
 <div style={{
     position: 'relative',

@@ -40,6 +40,7 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 #### Advanced Web Settings
 
 1. **Use Original Engine Initialization**: This uses original Flutter web engine initialization, which sometimes helps in better loading time in the deployed web app.
+
 2. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. **Note** that when using CanvasKit, some images can be blocked from loading if the server is not configured to allow loading them from other websites. To deal with this issue, you can set any of the following options, depending on where the images are hosted.
     - **None:** If you are only loading images from your Firebase Storage, select this option and follow the steps [here](#).
     - **Deploy with Firebase**: If images are not hosted on Firebase Storage *but you use Firebase to build your app*, choose this option and hit Deploy button.

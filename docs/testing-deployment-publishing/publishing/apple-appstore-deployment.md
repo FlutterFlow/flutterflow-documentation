@@ -39,6 +39,7 @@ A Bundle Identifier (ID) is a unique number that identifies your app within the 
 Please follow these steps to create a Bundle ID:
 
 1. Open your FlutterFlow project and navigate to **Settings & Integrations > General > App Details.** Copy the **Package Name**.
+
 2. Open the Apple Developer homepage, select **Certificates, IDs & Profiles** (far left menu), and then select **Identifiers.**
 3. Click on the **Add button (+).**
 4. The **Register a new identifier** page will open. Select **App IDs** and then select **Continue.**
@@ -81,6 +82,7 @@ Please follow these steps to create a Bundle ID:
 Please follow these steps to add a new app to App Store Connect:
 
 1. Navigate to [App Store Connect](https://appstoreconnect.apple.com/login) and then select **My Apps.**
+
 2. Click on the **Add button (+)** and then select **New App.**
 3. A popup will appear. Enter your [app information:](https://help.apple.com/app-store-connect/#/dev2cd126805)
     1. **Platform:** for mobile apps, this will be **iOS**.
@@ -125,6 +127,7 @@ An App ID is used by Apple to identify your app and associate it with your devel
 Please follow these steps to add your App ID to FlutterFlow:
 
 1. From [App Store Connect](https://appstoreconnect.apple.com/login), select **My Apps,** and then select **your app**.
+
 2. Select **App Information** (under **General** on the left sidebar).
 3. Scroll down to **General Information** and find your **Apple ID.**
 4. Select the **Apple ID** and copy it.
@@ -161,6 +164,7 @@ Please follow these steps to add your App ID to FlutterFlow:
 Please follow these steps to generate your API Key:
 
 1. Return to the App Store Connect page. If you have closed this window, navigate to [App Store Connect](https://appstoreconnect.apple.com/login) and select **Users and Access,** and then select **Keys** (blue text).
+
 2. If you see the **Request Access** button, click on it.
 3. If you haven't added any key before, click on the **Generate API Key**. Otherwise, select the **Add button (+).**
 4. A popup will appear. Enter your API Key Information:
@@ -170,6 +174,7 @@ Please follow these steps to generate your API Key:
 ![generate-api-key](../imgs/generate-api-key.avif)
     
 5. When you are done, select **Generate.**
+
 6. Find the row for the API Key you just generated and select **Download API Key.** A popup will appear; select **Download.**
 7. Return to FlutterFlow and navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
 8. Click on **Upload Private Key** and upload the **API Key File**.
@@ -208,6 +213,7 @@ If you don't see the **Download API Key** link immediately, refresh your page.
 ### 5. Add your issuer ID to FlutterFlow
 
 1. Navigate to [App Store Connect](https://appstoreconnect.apple.com/login) and select **Users and Access,** and then select **Keys** (blue text).
+
 2. Locate the **Issuer ID** and select **Copy.**
 3. Return to FlutterFlow and navigate to **Settings & Integrations > App Settings** **>** **Mobile Deployment > App Store**.
 4. Paste the **Issuer ID**.
@@ -240,6 +246,7 @@ If you don't see the **Download API Key** link immediately, refresh your page.
 ### 6. Add your Key ID to FlutterFlow
 
 1. Return to the App Store Connect page. If you have closed this window, navigate to [App Store Connect](https://appstoreconnect.apple.com/login) and select **Users and Access,** and then select **Keys** (blue text).
+
 2. Find the row for the API Key you just generated and select **Copy Key ID.**
 3. Return to FlutterFlow and navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
 4. Paste the **Key ID**.
@@ -278,6 +285,7 @@ You can deploy directly from FlutterFlow or from your GitHub repository.
 Please follow these steps to deploy from FlutterFlow:
 
 1. From FlutterFlow, navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
+
 2. Scroll down to find the **App Store** section and click on the arrow icon on the right to open it.
 3. Click on the **Deploy To App Store.**
 4. A popup will appear. **Select Deploy.** If another deployment is in progress, selecting Deploy will cancel the previous deployment.
@@ -318,6 +326,7 @@ Associating the Github repo allows you to introduce the custom code into your Fl
 To deploy from Github repo:
 
 1. If you haven't added the Github repo yet, you can do so using the instructions [here](#).
+
 2. From FlutterFlow, navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
 3. Find the **Deployment Settings** section and click on the arrow icon on the right to open it.
 4. Under the **Deployment Source**, checkmark the **Use Github repo: 'your repo URL'**.
@@ -353,6 +362,7 @@ To deploy from Github repo:
 ### 8. Submit your app for App Store approval
 
 1. From App Store Connect, select **My Apps**, and then select **your app**.
+
 2. Enter your **Version Information.** [This page](https://help.apple.com/app-store-connect/en.lproj/static.html#devfc3066644) contains additional information on what is required, localized, and editable.
 3. When you are done, select **Submit For Review.**
 
