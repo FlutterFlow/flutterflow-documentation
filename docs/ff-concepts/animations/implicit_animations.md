@@ -14,18 +14,15 @@ In Implicit Animation, the widget automatically animates to a new property's val
 Implicit Animation is recommended only when you want to run the animation once (after the properties are changed).
 :::
 
-Here's an example of how it looks when you update the container properties with and without Implicit Animation.
+Here are some examples of how it looks when you update the widget properties with and without Implicit Animation.
 
-<Tabs>
-<TabItem value="1" label="Without Implicit Animation" default>
-![Without Implicit Animation](animation_gifs/without-implicit-animation.gif)
-</TabItem>
-<TabItem value="2" label="With Implicit Animation">
-![With Implicit Animation](animation_gifs/with-implicit-animation.gif)
-</TabItem>
-</Tabs>
+|  | Without Implicit Animation | With Implicit Animation |
+| --- | --- | --- |
+| **Container** | ![Without Implicit Animation](animation_gifs/without-implicit-animation.gif) | ![With Implicit Animation](animation_gifs/with-implicit-animation.gif) |
+| **Text** | ![Without Implicit Animation](animation_gifs/without-implicit-animation-text.gif) | ![Wit Implicit Animation](animation_gifs/with-implicit-animation-text.gif) |
 
-Here's how you add the Implicit Animation on Container widget:
+
+Here's an exammple of how you add the Implicit Animation on Container widget:
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
