@@ -2,7 +2,7 @@
 title: Action Flow Editor
 tags: [ ]
 toc_max_heading_level: 5
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # Actions
@@ -27,7 +27,7 @@ Actions are tasks or operations that are performed in response to an event detec
 The Action Flow Editor is a visual, node-based editor used to configure the functions that run in
 response to a trigger. This editor simplifies the process of creating and managing business logic.
 
-![Action Flow Editor](../../../../../static/img/action-flow-editor.avif)
+![Action Flow Editor](../../../../static/img/action-flow-editor.avif)
 
 ### Action Triggers
 
@@ -36,7 +36,7 @@ triggers. Each trigger has its own separate node editor, allowing you to create 
 flows for different events. When you switch between triggers, the node editor updates to display
 the logic specific to the selected action trigger.
 
-![Triggers](../../../../../static/img/action-flow-editor-triggers.avif)
+![Triggers](../../../../static/img/action-flow-editor-triggers.avif)
 
 :::warning[Exposed by FlutterFlow]
 Please note that Action Triggers are provided by FlutterFlow and are not user-generated. You can
@@ -179,10 +179,13 @@ The Right Panel serves two main purposes:
 
 ### Widget Binding
 
-The icon in the upper left corner of the Action Flow Editor identifies the widget to which the
-current action flow is bound.
+In the Action Flow Editor, the icon in the upper left corner indicates the widget to which the current action flow is bound.
 
-![Action Flow Editor](../../../../../static/img/action-flow-editor-widget.avif)
+![Action Flow Editor](../../../../static/img/action-flow-editor-widget.avif)
+
+If you rename your widget, the new name will automatically be updated and associated with this action flow. This makes it easier to keep track of the logic associated with each widget, ensuring clarity and better organization of your action flows.
+
+![img.png](img%2Fimg.png)
 
 ### Issues
 
@@ -223,4 +226,35 @@ The diamond icon in the Action Flow Editor opens a menu where you can create and
 **Action Blocks** are reusable action flows that can accept parameters and return values, promoting code
 reusability and modularity.
 
-![action-block.avif](../../../../../static/img/action-block.avif)
+![action-block.avif](../../../../static/img/action-block.avif)
+
+
+### Example
+
+Here's a quick demo of how you can add an action or multiple sequential actions to a widget:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/w3B62goFPcrUn1FFno3V?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>

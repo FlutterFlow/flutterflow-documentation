@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: Built-in Functions
+sidebar_position: 2
 ---
 
 # Utility Functions
@@ -13,12 +14,14 @@ manipulation directly within the visual builder.
 
 FlutterFlow has the following built-in functions:
 
+* **Combine Text:** A built-in function that lets you concatenate strings, making it easy to join
+  multiple text elements together seamlessly.
+
 * **Code Expression:**  This feature allows you to perform simple calculations and data
   manipulations
   quickly and efficiently.
 
-* **Combine Text:** A built-in function that lets you concatenate strings, making it easy to join
-  multiple text elements together seamlessly.
+
 
 ## Combine Text
 
