@@ -282,5 +282,5 @@ com/embed/zZTCMyz8U1w" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 :::info
 To enable pull to refresh on this widget, you can follow the 
-[instructions here](../widget-commonalities.md#enable-pull-to-refresh).
+[**instructions here**](../widget-commonalities.md#enable-pull-to-refresh).
 :::
