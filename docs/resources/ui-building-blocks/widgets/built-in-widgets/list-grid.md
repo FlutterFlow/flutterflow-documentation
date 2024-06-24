@@ -188,7 +188,7 @@ You can customize the Title (Text), Subtitle (Text) and Icon properties from the
 ![list-tile.png](imgs%2Flist-tile.png)
 
 :::info
-To learn about how to customize the Text widgets in this component, refer the [Text document](text.md). 
+To learn about how to customize the Text widgets in this component, refer the [**Text widget**](text.md). 
 :::
 
 ### Convert into SlidableListTile
