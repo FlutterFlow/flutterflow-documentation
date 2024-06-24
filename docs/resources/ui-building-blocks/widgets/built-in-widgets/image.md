@@ -14,7 +14,7 @@ interactions. Different types of image widgets cater to various design requireme
   to display images in a circular format, commonly used for profile pictures or branding elements.
 
 
-The properties for the Image widget provide various customization options, from sizing and fitting to advanced animations
+The properties for the Image widget provide various customization options, from sizing and fitting to advanced animations.
 
 ## Common Image Properties
 
