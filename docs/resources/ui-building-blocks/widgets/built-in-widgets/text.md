@@ -2,7 +2,7 @@
 # Text
 
 Text is a fundamental element in any user interface, used to convey information and interact 
-with users. In app development,effectively presenting text can significantly enhance the user 
+with users. In app development, effectively presenting text can significantly enhance the user 
 experience, making information accessible and interactions intuitive. Two common widgets used 
 for displaying text in FlutterFlow are the Text widget and the RichText widget. Each serves a 
 distinct purpose and offers different capabilities for integrating text into an application.
