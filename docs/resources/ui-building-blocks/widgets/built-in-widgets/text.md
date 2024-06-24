@@ -155,7 +155,7 @@ Below are the types of formatting that we support:
 - **Percent**: Shows numbers in percentage format (e.g., 28%, 99.99%).
 - **Scientific**: Shows numbers in scientific format (e.g., 1e3, 1E6).
 - **Compact**: Shows numbers in compact format (e.g., 2.1K, 2.3M, 5B).
-- **Compact Long** : Shows numbers in compact long format (e.g., 2.1 thousand, 2.3 million, 5 billion).
+- **Compact Long**: Shows numbers in compact long format (e.g., 2.1 thousand, 2.3 million, 5 billion).
 - **Custom** : If the given formatting options do not fit your requirement, you can use specify a 
   custom format.
 
