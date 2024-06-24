@@ -24,7 +24,7 @@ Here are the properties in detail:
   - **Dashed**: A series of dashes.
   - **Dashdotted:** A combination of dashes and dots.
 
-- **Color** : Defines the color of the divider line. This can be set using predefined theme colors or 
+- **Color**: Defines the color of the divider line. This can be set using predefined theme colors or 
   custom values to match or contrast with the application's design scheme.
 
 - **Thickness**: Specifies the thickness of the divider line, influencing its visual prominence. 
