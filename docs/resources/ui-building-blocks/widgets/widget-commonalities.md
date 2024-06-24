@@ -33,7 +33,7 @@ Here's what the final result looks like:
 Here are the steps:
 
 1. Select the widget from the widget tree or canvas area. 
-2. Move to the properties panel -> enable Conditional. 
+2. Move to the properties panel > enable Conditional. 
 3. Click on the Unset and provide the condition that determines whether a UI element should be displayed or hidden. For this example, we'll directly use the Is User Logged In global property. This will show the widget if the user is logged in.
 
 4. You can toggle Show in UI Builder to test the effect of showing/hiding that widget in the UI builder. Note that this option is only to help you visualize the effect of visibility on the widget, and it does not affect your app.
