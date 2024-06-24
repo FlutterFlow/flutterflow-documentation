@@ -51,7 +51,7 @@ com/embed/5eeaeea02f9d43fba5ac9b148aaf5693?sid=bce9230d-d5f3-4e42-9766-c68805a6d
 
 ## Box Shadow Properties
 
-The properties Box Shadow properties allow you to add and customize a shadow effect for your
+The Box Shadow properties allow you to add and customize a shadow effect for your
 Container widget.
 Here's a brief explanation of each property:
 
