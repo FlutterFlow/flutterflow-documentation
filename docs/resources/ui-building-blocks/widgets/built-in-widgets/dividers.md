@@ -4,7 +4,7 @@
 Add a thin horizontal or vertical line, with padding on either side. Customize the color, width 
 or height, and style of the divider from the Properties Panel. 
 
-Here are the properties in details:
+Here are the properties in detail:
 
 
 <figure>
