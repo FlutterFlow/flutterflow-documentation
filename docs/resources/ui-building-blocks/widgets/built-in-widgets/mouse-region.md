@@ -18,7 +18,7 @@ Elements** tab or add it directly from the widget tree.
 
 	1. Add the [Widget Animation](#) action to start the animation on a Button.
 14. Select the **On Mouse Exit** tab. Actions added under this will be triggered whenever the mouse leaves the MouseRegionwidget.
-	- Add the [Widget Animation](#) action to stop the animation on a Button.
+	1. Add the [Widget Animation](#) action to stop the animation on a Button.
 
 <div style={{
     position: 'relative',
