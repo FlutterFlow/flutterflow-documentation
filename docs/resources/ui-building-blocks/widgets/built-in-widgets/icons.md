@@ -8,7 +8,7 @@ Icons are integral elements in user interfaces, providing visual cues that enhan
 
 ## Types of Icon widgets
 
-FlutterFlow allows a bunch of widgets and components t: 
+FlutterFlow allows a bunch of widgets and components: 
 
 - **Icon Widget**: The Icon widget in Flutter is used for displaying symbols from a variety of 
   available icon packs like Material Icons. It's straightforward to use, allowing for quick integration of visual symbols into your app.
