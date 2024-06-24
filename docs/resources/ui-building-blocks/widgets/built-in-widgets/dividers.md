@@ -19,7 +19,7 @@ Here are the properties in details:
 
 - **Line Style**: This property determines the visual pattern of the divider line. Options 
   typically include:
-  - Solid: A continuous line.
+  - **Solid**: A continuous line.
   - **Dotted**: A series of dots.
   - **Dashed**: A series of dashes.
   - **Dashdotted:** A combination of dashes and dots.
