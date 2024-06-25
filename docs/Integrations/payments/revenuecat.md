@@ -196,7 +196,7 @@ This action allows you to purchase the item. Here’s how you add it:
 
 ### Restore Purchases [Action]
 
-Using this action, you can allow users to re-activate the subscription he has already paid for. This is helpful when a user has reinstalled the app or logged in to a new device.
+Using this action, you can allow users to re-activate the subscription they have already paid for. This is helpful when a user has reinstalled the app or logged in to a new device.
 
 :::info
 
