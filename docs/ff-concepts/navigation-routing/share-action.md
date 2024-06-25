@@ -36,7 +36,12 @@ Demo of defining Share Action using a **Specific Value** is as follows:
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/share-with-value.gif?alt=media&token=415cf039-dae7-4ee0-ad3c-c31a8c5c4a50"></img>
 
+<p></p>
+
 Alternatively, a demo of defining Share Action using **From Variable** option is as follows:
+
+<p></p>
+
 
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/share-with-variable.gif?alt=media&token=7d77df34-7c82-47fe-ba50-8eedf699c6ea"></img>
