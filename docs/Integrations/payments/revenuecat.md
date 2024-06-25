@@ -10,6 +10,10 @@ sidebar_position: 1
 
 [RevenueCat](https://www.revenuecat.com/) simplifies implementing in-app purchases and subscriptions by handling all purchase validation operations.
 
+:::warning[Pub.Dev package and Limitations]
+The underlying package for RevenueCat does not support web. Any functionality related to in-app purchases or subscriptions managed through RevenueCat will not be available on web platforms.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -53,12 +57,19 @@ To set up the RevenueCat, follow these steps carefully:
 2. [Create a project](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-create-a-project), [add your app](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-add-an-app--platform), and ensure that you [add service credentials](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-service-credentials) to help RevenueCat communicate with the app stores on your behalf.
 3. [Create subscriptions](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-store-setup) in the respective stores.
     1. While creating subscriptions in Google Play Console, if you see a message saying '***Your app doesn't have any in-app products yet**'* like in this picture, follow the steps below:
+    <p></p>
     ![error-while-creating-sub-in-play-console.avif](error-while-creating-sub-in-play-console.avif)
+    
     2. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
+    
     3. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
+    
     4. Now, from the toolbar menu, click **Download APK** 
+    
     5. In the Play Console, create a [Closed testing](https://play.google.com/console/about/closed-testing/) track and create a new release.
+    
     6. Upload your **App Bundle** or **APK**, enter the release name, and create the release.
+    
     7. Open the **Subscriptions** tab again. It should let you manage subscriptions now.
 4. [Create Products and Entitlements in RevenueCat](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-configure-products-and-entitlements-in-revenuecat).
 
@@ -205,7 +216,11 @@ Using this action, you can allow users to re-activate the subscription they have
 
 :::
 
-![adding-restore-purchase-action.avif](adding-restore-purchase-action.avif)
+<figure>
+    ![adding-restore-purchase-action.avif](adding-restore-purchase-action.avif)
+  <figcaption class="centered-caption">Adding action to restore purchase</figcaption>
+</figure>
+
 
 ## 5. Testing
 
