@@ -126,7 +126,7 @@ Here is an example of retrieving monthly subscription details:
 
 ## 4. Add RevenueCat actions
 
-To manage in-app purchases and subscriptions inside your FlutterFlow app, you have to use the RevenueCat Actions. Below are the types of RevenueCat action:
+To manage in-app purchases and subscriptions inside your FlutterFlow app, you have to use the RevenueCat Actions. Below are the types of RevenueCat actions:
 
 - **Paywall**
 - **Purchase**
