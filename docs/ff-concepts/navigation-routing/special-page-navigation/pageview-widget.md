@@ -285,18 +285,6 @@ Here's an example of scrolling PageView on button press:
 2. [Customize the PageView](#customizing) widget and add buttons to go to the previous and next pages.
 3. Now select any button and define the [Control Page View action](#).
 
-### Show/Hide widget
-
-See how to show or hide any widget using the [Conditional Visibility](#) property.
-
-### Responsive visibility
-
-See how to [add responsive visibility](#) to any widget.
-
-### Add padding & alignment
-
-See how to add [padding](#) and [alignment](#) to any widget.
-
 ---
 
 ## Video guide

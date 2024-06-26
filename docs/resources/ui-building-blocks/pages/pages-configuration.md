@@ -3,7 +3,7 @@ title: Page Configurations
 sidebar_position: 1
 ---
 
-# Property Panel
+# Properties Panel
 
 
 In FlutterFlow, the properties panel located on the right side of the interface
@@ -20,7 +20,7 @@ This section allows you to define and manage parameters that your page can
 receive from other pages of the app. Parameters are essentially variables that
 hold values which can be passed between pages. For example, you might pass a
 user ID from a list page to a detail page to display specific information about
-that user.
+that user. Learn more about passing data between pages [here](../../../ff-concepts/navigation-routing/passing-data).
 
 ### Route Settings
 
@@ -28,7 +28,7 @@ In FlutterFlow, Route Settings are essential for defining how pages within your
 application are accessed and interacted with. These settings allow you to
 customize the URL paths for web and mobile deep linking, set meaningful Page
 Names as unique identifiers, integrate dynamic parameters into your routes, and
-set access restrictions based on user authentication.
+set access restrictions based on user authentication. Learn more about Routing [here](../../../ff-concepts/navigation-routing/overview).
 
 ## Advanced Configurations
 

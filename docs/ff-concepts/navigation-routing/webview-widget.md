@@ -79,15 +79,3 @@ To do so, enable the **Load content from HTML** and then enter your **Webview HT
         allow="clipboard-write">
     </iframe>
 </div>
-
-### Show/Hide widget
-
-See how to show or hide any widget using the [Conditional Visibility](#) property.
-
-### Responsive visibility
-
-See how to [add responsive visibility](#) to any widget.
-
-### Add padding & alignment
-
-See how to add [padding](#) and [alignment](#) to any widget.

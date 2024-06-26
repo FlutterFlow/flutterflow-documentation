@@ -243,18 +243,6 @@ To keep the tab state alive, select the **TabBar** widget **> Properties Panel >
     </iframe>
 </div>
 
-### Show/Hide widget
-
-See how to show or hide any widget using the [Conditional Visibility](#) property.
-
-### Responsive visibility
-
-See how to [add responsive visibility](#) to any widget.
-
-### Add padding & alignment
-
-See how to add [padding](#) to any widget.
-
 ---
 
 ## Video guide

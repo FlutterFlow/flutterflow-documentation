@@ -25,8 +25,7 @@ Follow the steps below to add this action to any widget.
 ---
 
 ## URL schemes
-
-The following are some common URL schemes that can be handled by an external app present on the user's device.
+A URL scheme is a way to define how different types of links, such as webpages, phone numbers, SMS messages, and emails, should be handled by an app or browser. The following are some common URL schemes that can be handled by an external app present on the user's device.
 
 ### Open a webpage
 
