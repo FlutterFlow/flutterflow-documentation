@@ -7,7 +7,8 @@ sidebar_position: 1
 # Enabling Firebase Auth in FlutterFlow
 
 :::tip[Skip if...]
-...you have already enabled authentication while creating a [**new project with Firebase setup.**](..%2F..%2F..%2FFirebase%2FConnect%20to%20Firebase%20Setup.md)
+...you have already enabled authentication while creating a [**new project with Firebase setup.
+**](../../../firebase/connect-to-firebase-setup.md)
 :::
 
 To enable authentication in FlutterFlow:
