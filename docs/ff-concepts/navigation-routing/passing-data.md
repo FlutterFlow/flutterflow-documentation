@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 As you build your app, you'll often encounter the need to pass through or transfer data from one page to another. For instance, when a user taps on a product item, you may want to send product data to the next page to display its details.
 
-## How to pass data
+## Page parameters
 This process of passing data between pages is accomplished using **Parameters**. When navigating
 from one page to another, you can send parameters to configure the destination
 page based on the data from the current page. This is useful for tasks like
@@ -125,12 +125,13 @@ Page parameters are thus essential for maintaining a seamless user experience,
 enabling the new page to function as intended based on the specific needs and
 inputs from a previous interaction.
 
-## What you can pass
+## Allowed Data Types
 
 You can pass any supported data from one page to another via *page parameter(s)*. You can think of a *page parameter* as a variable that holds the value being passed from one page to another.
 
+:::info
 If you are using Firestore Database, most of the time, you would pass the *Document* (an actual record inside the Firestore collection) and *Document Reference (points to actual document)* between the pages.
-
+:::
 ---
 
 ## Video guide
