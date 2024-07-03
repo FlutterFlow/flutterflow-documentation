@@ -40,9 +40,6 @@ Now, when you switch to Test Mode and try out different devices, you'll see the 
 </Tabs>
 
 
-
-
-
 This is to show you that these screen values are always accessible as global properties. You can use them to design your UI logic effectively.
 
 ## Expanded & Flex
@@ -123,7 +120,7 @@ Make sure to set the Wrap Direction to 'Horizontal' in the Wrap properties. You'
 
 The Wrap widget efficiently manages layout for varying screen sizes by automatically adjusting its children into multiple rows or columns. It prevents overflow and ensures a clean, responsive design, especially useful for adapting content like category cards from desktop to mobile views.
 
----
+## Responsive Breakpoints
 
 Moving on to more complex layout scenarios, where the UI significantly differs between mobile and web platforms, it's important to first understand breakpoints.
 
