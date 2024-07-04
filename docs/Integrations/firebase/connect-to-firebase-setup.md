@@ -38,7 +38,7 @@ The configuration files are necessary when connecting to Firebase. It contains v
 
 ## Connect an existing Firebase project manually 
 
-If you already have a Firebase project and want to connect it to your current FlutterFlow project, go to Settings & Integrations > Project Setup > Firebase and click on the Firebase Setup Wizard. A pop-up dialog will appear. Follow these steps:
+If you already have a Firebase project and want to connect it to your current FlutterFlow project, go to **Settings & Integrations > Project Setup > Firebase** and click on the Firebase Setup Wizard. A pop-up dialog will appear. Follow these steps:
 
 #### Setup Firebase
 
