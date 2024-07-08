@@ -17,7 +17,7 @@ backend, ensuring a secure and scalable solution.
 
 :::info
 Learn how to enable Firebase Authentication and integrate popular auth providers in your FlutterFlow
-app. [Learn more here](#)
+app. [**Learn more here**](#)
 :::
 
 ## Supabase Authentication
@@ -29,7 +29,7 @@ unique advantages like support for PostgreSQL.
 
 :::info
 Discover how to set up Supabase Authentication and link it with available auth providers within your
-FlutterFlow app. [Learn more here](#)
+FlutterFlow app. [**Learn more here**](#)
 :::
 
 ## Custom Authentication
@@ -42,5 +42,5 @@ custom authentication provides the necessary control.
 
 :::info
 Explore how to implement custom authentication strategies in your FlutterFlow app, ensuring your
-authentication flow aligns with your business requirements. [Learn more here](#)
+authentication flow aligns with your business requirements. [**Learn more here**](#)
 :::

@@ -7,21 +7,17 @@ sidebar_position: 1
 # Enabling Firebase Auth in FlutterFlow
 
 :::tip[Skip if...]
-...you have already enabled authentication while creating a [**new project with Firebase setup.
-**](../../../firebase/connect-to-firebase-setup.md)
+You have already enabled authentication while creating a [**new project with Firebase setup.**](../../../firebase/connect-to-firebase-setup.md)
 :::
 
 To enable authentication in FlutterFlow:
 
-- Open your FlutterFlow project where you are planning to use Firebase
+1. Open your FlutterFlow project where you are planning to use Firebase
   Authentication.
-
-- Open **Setting and Integrations > App Settings > Authentication**.
-
-- Turn on the Enable Authentication toggle and select **Authentication Type** to
+2. Open **Setting and Integrations > App Settings > Authentication**.
+3. Turn on the Enable Authentication toggle and select **Authentication Type** to
   **Firebase**.
-
-- To ensure that your users are directed to the appropriate pages based on their
+4. To ensure that your users are directed to the appropriate pages based on their
   login status, you must set the **Initial Page**.
 
 ![enable-auth-fr.png](..%2F..%2Fimgs%2Fenable-auth-fr.png)
@@ -49,39 +45,57 @@ it first.
 The 'users' collection stores the information for authenticated users.
 
 :::tip[Skip if...]
-...you have already enabled 'Create User Collection' while creating a new
+You have already enabled 'Create User Collection' while creating a new
 project with a Firebase setup.
 
 :::
 
-- Click on the Firestore tab from the Navigation Menu (left side of your
+1. Click on the Firestore tab from the Navigation Menu (left side of your
   screen).
-
-- Click on the **+ Create Collection** button. If you have any other collection
+2. Click on the **+ Create Collection** button. If you have any other collection
   already added, you can click on the Plus button.
-
-- Enter a collection_name (this can be anything, but we recommend 'users') and
+3. Enter a collection_name (this can be anything, but we recommend 'users') and
   click on Create button.
-
-- If you enter 'users' a popup will open which asks you to populate this
+4. If you enter 'users' a popup will open which asks you to populate this
   collection with default fields. You can click Yes, and we will add all the
   fields.
 
 Follow the quicklink to see the steps
 
-<iframe src="https://demo.arcade.software/89TZAX3avXKxRpdZH3bK?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/89TZAX3avXKxRpdZH3bK?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::tip[Add Default Fields if skipped previously]
 
-- Click on the Settings icon in the Firestore tab.
-
-- Find the **Users Collection** switch and enable it.
-
-- Find the **Collection** dropdown below, click on the **Unset**, and select the
+1. Click on the Settings icon in the Firestore tab.
+2. Find the **Users Collection** switch and enable it.
+3. Find the **Collection** dropdown below, click on the **Unset**, and select the
   name of
   the collection you just created.
-
-- Now switch to the **Collection** tab. Now you should see all the default
+4. Now switch to the **Collection** tab. Now you should see all the default
   fields.
 
 <iframe src="https://www.loom.com/embed/ba977f72f606497b92ee9ff45c620451"
@@ -150,26 +164,21 @@ to [**get the key from Play Console**](https://docs.flutterflow.io/data-and-back
 
 #### Add the SHA-1 key in the Firebase Console
 
-- Open the **Firebase console > Project Overview > Project Settings** and scroll
+1. Open the **Firebase console > Project Overview > Project Settings** and scroll
   down to Your App section.
-
-- Select your Android App from the left side menu.
-
-- Find the SHA certificate fingerprints section and click on the Add
+2. Select your Android App from the left side menu.
+3. Find the SHA certificate fingerprints section and click on the Add
   fingerprint.
-
-- Enter the copied SHA-1 into the input box and click on Save.
+4. Enter the copied SHA-1 into the input box and click on Save.
 
 ### Regenerate config files
 
 After adding the SHA-1 key you must re-generate the config files in FlutterFlow.
 
 To regenerate the config files:
-
-- Return to FlutterFlow. From the Navigation Menu, select **Settings &
+1. Return to FlutterFlow. From the Navigation Menu, select **Settings &
   Integrations > Project Setup > Firebase**.
+2. Click on the Regenerate Config Files.
 
-- Click on the Regenerate Config Files.
-
-<img src="imgs/regerenate.png" alt="regerenate.png"  />
+![regerenate](../../imgs/regerenate.png)
 
