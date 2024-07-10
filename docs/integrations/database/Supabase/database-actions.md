@@ -194,7 +194,7 @@ You could choose the order based on your requirements. For example, to show assi
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/244eea2a4f694120b08524b7b8cf67de?sid=13d47ef5-5d48-4986-88da-d335ce23bd06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-
+<p></p>
 :::info
 Additional Note: Currently, you can only add "and" conditions to Supabase query filters. If you want to add an "or" filter like "status == 5 or status == 8", you can consider logic to apply "status in (5,8)" or any other logic. Fully customizable using API calls or custom actions.
 :::
