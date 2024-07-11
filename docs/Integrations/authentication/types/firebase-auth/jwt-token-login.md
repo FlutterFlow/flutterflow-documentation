@@ -142,7 +142,7 @@ Here are the step by step instructions:
 
 ### 4. Adding logout action
 
-To let users log out of your app, you can use [this](#) action.
+To let users log out of your app, you can use [this](logout-action.md) action.
 
 ### 5. Verify user creation
 

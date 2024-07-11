@@ -47,6 +47,10 @@ You can create your own or use the one from page templates.
   name, and photo, into the 'users' collection. If a user already exists, it
   won't add details again.
 
+:::info
+To let users log out of your app, you can use [**this**](logout-action.md) action.
+:::
+
 ## Test Google Login in various platforms
 
 ### Running on Test Mode/Run Mode

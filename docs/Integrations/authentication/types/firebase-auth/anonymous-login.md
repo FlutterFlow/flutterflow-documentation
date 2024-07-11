@@ -58,3 +58,8 @@ the authentication provider:
 
 4. Enable the **Create User Document** toggle and set the Collection to _users_. This action will
    create an entry for the user in the database without any details upon successful login.
+
+   
+:::info
+To let users log out of your app, you can use [**this**](logout-action.md) action.
+:::
