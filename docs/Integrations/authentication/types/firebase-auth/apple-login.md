@@ -3,7 +3,7 @@ slug: apple
 title: Apple Login
 tags: []
 description: Learn how to add Apple login in your FlutterFlow app.
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 

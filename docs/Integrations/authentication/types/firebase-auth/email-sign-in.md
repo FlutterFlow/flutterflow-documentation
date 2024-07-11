@@ -1,6 +1,6 @@
 ---
 title: Email Login
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Email Login using Firebase

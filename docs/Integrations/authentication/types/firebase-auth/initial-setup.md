@@ -1,7 +1,7 @@
 ---
 title: Initial Setup
 slug: initial-setup
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Enabling Firebase Auth in FlutterFlow
