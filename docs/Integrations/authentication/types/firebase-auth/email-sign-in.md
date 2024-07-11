@@ -7,10 +7,10 @@ sidebar_position: 2
 
 :::info[Prerequisites]
 
-Before getting started with this section, ensure you have:
+Before getting started with this section:
 
-- Completed all steps in the [**Firebase Setup**](../../../Firebase%2FConnect%20to%20Firebase%20Setup)
-- Completed the [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](#)
+- Complete [**Initial Setup**](initial-setup.md)
 :::
 
 ## Enable Email Login Provider in Firebase

@@ -37,11 +37,13 @@ Phone login allows a user to sign in by sending an SMS message to the user's pho
 <p></p>
 
 :::info[Prerequisites]
-Before getting started with this section, ensure you have:
 
-- Completed all steps in the [**Firebase Setup**](#).
-- Completed [**Initial setup**](#) required for authentication. (**Please note**: Skip if you have already enabled authentication and created a 'users' collection while creating your project with Firebase Setup.)
+Before getting started with this section:
+
+1. Complete [**Firebase Setup**](#).
+2. Complete [**Initial setup**](initial-setup.md) required for authentication.
 :::
+
 
 ## Adding Phone sign-in
 

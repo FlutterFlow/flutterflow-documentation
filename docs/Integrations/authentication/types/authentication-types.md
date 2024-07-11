@@ -1,9 +1,10 @@
 ---
-title: Authentication Types
+slug: overview
+title: Overview
 sidebar_position: 1
 ---
 
-# Authentication Types
+# Overview
 FlutterFlow provides native support for a variety of Authentication Services, including **Firebase**, **Supabase**, and **Custom Authentication** options. To integrate these services into your app, simply navigate to 'App Settings,' select 'Authentication,' and then choose your preferred service. From there, you can set up initial pages for both entry and logged-in states. Follow any additional steps as necessary to complete the setup.
 
 ## Firebase Authentication

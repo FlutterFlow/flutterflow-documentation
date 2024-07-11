@@ -9,16 +9,13 @@ Google Sign-In allows users to authenticate using their Google Accounts.
 
 :::info[Prerequisites]
 
-Before getting started with this section, ensure you have:
+Before getting started with this section:
 
-- Completed all steps in
-the [**Firebase Setup**](..%2F..%2F..%2Ffirebase%2Fconnect-to-firebase-setup.md)
-
-- Completed [**Initial Setup**](initial-setup.md) required for authentication.
-
+- Complete [**Firebase Setup**](#)
+- Complete [**Initial Setup**](initial-setup.md)
 - Added **SHA-1 key** and regenerated **Config Keys**.
-
 :::
+
 
 ## Enable Google Sign-in Provider in Firebase
 

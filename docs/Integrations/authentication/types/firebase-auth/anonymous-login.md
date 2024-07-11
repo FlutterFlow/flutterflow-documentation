@@ -7,12 +7,10 @@ sidebar_position: 3
 
 :::info[Prerequisites]
 
-Before getting started with this section, ensure you have:
+Before getting started with this section:
 
-- Completed all steps in [**Firebase Setup**](..%2F..%2F..%2FFirebase%2FConnect%20to%20Firebase%20Setup.md).
-
-- Completed [**Initial Setup**](docs/Integrations/Authentication/How-Tos/Firebase-Auth/initial-setup.md)
-required for authentication.
+- Complete [**Firebase Setup**](#)
+- Complete [**Initial Setup**](initial-setup.md) required for authentication.
 
 - Learn more about the concepts
 of [**Anonymous Authentication**](docs/Integrations/Authentication/Concepts/authentication-approaches.md)

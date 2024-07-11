@@ -43,12 +43,13 @@ Apple sign-in functionality is only supported for iOS.
 </div>
 <p></p>
 
+
 :::info[Prerequisites]
 
-Before getting started with this section, ensure you have:
+Before getting started with this section:
 
-1. Completed all steps in the [**Firebase Setup**](#).
-2. Completed [**Initial setup**](#) required for authentication. (**Please note**: Skip if you have already enabled authentication and created a 'users' collection while creating your project with Firebase Setup.)
+1. Complete [**Firebase Setup**](#).
+2. Complete [**Initial setup**](initial-setup.md) required for authentication.
 3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2F).
 4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [**this link**](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
 5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or emulator.
