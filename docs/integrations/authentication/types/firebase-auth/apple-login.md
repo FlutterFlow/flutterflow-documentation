@@ -258,7 +258,7 @@ To add login action:
 
 ### 6. Adding logout action
 
-To let users log out of your app, you can use [this](logout-action.md) action.
+To let users log out of your app, you can use [this](../../logout-action.md) action.
 
 ### 7. Preparing to test the app
 

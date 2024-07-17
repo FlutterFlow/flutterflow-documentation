@@ -145,7 +145,7 @@ To enable this in FlutterFlow, follow these steps:
 ![login-action.png](..%2F..%2Fimgs%2Flogin-action.png)
 
 :::info
-To let users log out of your app, you can use [**this**](logout-action.md) action.
+To let users log out of your app, you can use [**this**](../../logout-action.md) action.
 :::
 
 ### Verify user created in Firebase Dashboard

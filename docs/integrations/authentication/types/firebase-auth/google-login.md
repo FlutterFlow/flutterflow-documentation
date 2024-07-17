@@ -48,7 +48,7 @@ You can create your own or use the one from page templates.
   won't add details again.
 
 :::info
-To let users log out of your app, you can use [**this**](logout-action.md) action.
+To let users log out of your app, you can use [**this**](../../logout-action.md) action.
 :::
 
 ## Test Google Login in various platforms

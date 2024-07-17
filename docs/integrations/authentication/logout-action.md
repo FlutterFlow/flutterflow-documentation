@@ -18,4 +18,4 @@ Follow the steps below to add this action:
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Logout** (under *Backend/Database > Firebase Authentication*) action.
 
-![logout](../../imgs/logout-action.png)
+![logout](imgs/logout-action.png)
