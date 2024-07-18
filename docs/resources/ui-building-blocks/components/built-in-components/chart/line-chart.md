@@ -2,8 +2,8 @@
 slug: line-chart
 title: Line Chart
 tags: []
-description: Learn how to add Line Chart wiget in your FlutterFlow project.
-sidebar_position: 1
+description: Learn how to add Line Chart widget in your FlutterFlow project.
+sidebar_position: 0
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

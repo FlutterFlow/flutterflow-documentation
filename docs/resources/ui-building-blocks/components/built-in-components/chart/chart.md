@@ -2,7 +2,7 @@
 slug: overview
 title: Chart
 tags: []
-description: Learn how to add Chart wiget in your FlutterFlow project.
+description: Learn how to add Chart widget in your FlutterFlow project.
 sidebar_position: 1
 ---
 import Tabs from '@theme/Tabs';
