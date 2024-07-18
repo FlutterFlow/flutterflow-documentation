@@ -1,5 +1,5 @@
 ---
-slug: chart
+slug: overview
 title: Chart
 tags: []
 description: Learn how to add Chart wiget in your FlutterFlow project.
@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 # Chart
 The chart widget is used to represent the information in a graphical format. You can use it to display complex information in an easily understandable format.
 
-![chart-fi.png](imgs/chart-fi.png)
+![chart-fi.png](../imgs/chart-fi.png)
 
 ## Types of chart
 
@@ -34,7 +34,7 @@ The following instructions will have a similar effect on the Bar chart.
 
 Legend helps users identify the data drawn over the chart. It's a small box that shows the chart data name/text next to its color (a color used to draw a line or bar).
 
-![legend.webp](imgs/legend.webp)
+![legend.webp](../imgs/legend.webp)
 
 To show legend:
 
@@ -203,12 +203,12 @@ To set the axis bounds:
 
 <Tabs>
 <TabItem value="1" label="Chart without axis bounds" default>
-![chart-without-axis-bound.png](imgs/chart-without-axis-bound.png)
+![chart-without-axis-bound.png](../imgs/chart-without-axis-bound.png)
 </TabItem>
 <TabItem value="2" label="Chart with axis bounds">
 The line chart with bounds set to **Min X:0 ,Min Y:0, Max X:7 and Max Y:100** looks like this:
 
-![chart-with-axis-bound.avif](imgs/chart-with-axis-bound.avif)
+![chart-with-axis-bound.avif](../imgs/chart-with-axis-bound.avif)
 </TabItem>
 </Tabs>
 
@@ -324,10 +324,10 @@ To display numbers on the X-axis:
 
 <Tabs>
 <TabItem value="1" label="Displaying numbers on the X axis" default>
-![Displaying numbers on the X axis](imgs/display-numbers-on-x-axis.gif)
+![Displaying numbers on the X axis](../imgs/display-numbers-on-x-axis.gif)
 </TabItem>
 <TabItem value="2" label="Displaying numbers (with formatting) on the X axis">
-![Displaying numbers (with formatting) on the X axis](imgs/display-numbers-with-formatting-on-x-axis.gif)
+![Displaying numbers (with formatting) on the X axis](../imgs/display-numbers-with-formatting-on-x-axis.gif)
 </TabItem>
 </Tabs>
 
@@ -393,9 +393,9 @@ To display numbers on the Y axis:
 
 <Tabs>
 <TabItem value="1" label="Displaying numbers on the Y axis" default>
-![display-numbers-on-y-axis](imgs/display-numbers-on-y-axis.gif)
+![display-numbers-on-y-axis](../imgs/display-numbers-on-y-axis.gif)
 </TabItem>
 <TabItem value="2" label="Displaying numbers (with formatting) on the Y axis">
-![display-numbers-with-formatting-on-y-axis](imgs/display-numbers-with-formatting-on-y-axis.gif)
+![display-numbers-with-formatting-on-y-axis](../imgs/display-numbers-with-formatting-on-y-axis.gif)
 </TabItem>
 </Tabs>
