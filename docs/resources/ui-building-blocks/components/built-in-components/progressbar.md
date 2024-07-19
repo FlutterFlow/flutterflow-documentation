@@ -6,9 +6,7 @@ description: Learn how to add ProgressBar widget in your FlutterFlow project.
 sidebar_position: 2
 ---
 
-The ProgressBar widget is used to represent the progress of any task.
-
-You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
+The ProgressBar widget is used to represent the progress of any task. You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
 
 ![progress-bar-2.png](../../imgs/progress-bar-2.png)
 
