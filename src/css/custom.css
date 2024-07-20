@@ -117,6 +117,14 @@ h4 {
 
 }
 
+h5 {
+  color:var(--black-700);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Product Sans, sans-serif;
+
+}
+
 
 
 
