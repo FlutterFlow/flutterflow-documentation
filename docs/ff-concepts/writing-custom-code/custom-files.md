@@ -12,13 +12,16 @@ By default, the file you want to edit is in 'read-only' mode. However, using our
 You can only add custom actions that have no arguments (including *BuildContext*).
 :::
 
-## Edit *main.dart*
+## Edit `main.dart`
 
-The *main.dart* is a critical file in your project, as it serves as the entry point for the application. This file contains the `main()` function, which is responsible for starting the application by running the code that builds the UI and initializes any other necessary components.
+The **main.dart** is a critical file in your project, as it serves as the entry point for the 
+application. This file contains the `main()` function, which is responsible for starting the application by running the code that builds the UI and initializes any other necessary components.
 
-You can edit the *main.dart* file to include anything in `main()` function that we don't yet support. For example, initializing third-party plugins or libraries and setting up system-level configurations, such as changing the status bar color or orientation.
+You can edit the **main.dart** file to include anything in `main()` function that we don't yet 
+support. For example, initializing third-party plugins or libraries and setting up system-level configurations, such as changing the status bar color or orientation.
 
-Let's see an example of how you can add a code in *main.dart* file to change the status bar color for the mobile app. Here's how it looks:
+Let's see an example of how you can add a code in **main.dart** file to change the status bar 
+color for the mobile app. Here's how it looks:
 
 <figure>
     ![img_3.png](imgs%2Fimg_3.png)
@@ -27,7 +30,8 @@ Let's see an example of how you can add a code in *main.dart* file to change the
 
 To do so, you can edit *main.dart* file by following the steps below:
 
-2. Create a [custom action](/customizing-your-app/custom-functions/custom-actions#adding-custom-action) for the code you want to include in a *main.dart* file. For this example, here's code in a custom action named 'setStatusbarColor'.
+1. Create a [custom action](/customizing-your-app/custom-functions/custom-actions#adding-custom
+-action) for the code you want to include in a *main.dart* file. For this example, here's code in a custom action named 'setStatusbarColor'.
 
 ```dart
 // Automatic FlutterFlow imports
