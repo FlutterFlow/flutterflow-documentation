@@ -19,7 +19,7 @@ ensure they meet your app development needs before integration.
 ![google-maps-widget.png](..%2Fimgs%2Fgoogle-maps-widget.png)
 
 :::info[Prerequisite]
-Ensure you have added the Google Map API keys before adding the Google Maps widget to your project
+Ensure you have added the [**Google Map API keys**](generate-maps-keys#get-api-keys) before adding the Google Maps widget to your project
 :::
 
 ## Add Google Map widget
@@ -73,7 +73,7 @@ A marker is an icon that appears over the map, indicating a location. To add mar
 
 - Set the Marker Type to **Document** if the data is on Firestore Collection
 
-- Incase of Documents, create a collection and query it on any widget (must be a parent of
+- In case of Documents, create a collection and query it on any widget (must be a parent of
   GoogleMap) or page.
 
 - In Marker Document, set the source of markers as shown in the following video.
@@ -93,6 +93,7 @@ com/embed/e0cf2e67ab0e45b7aedc3bb96b212d73?sid=38a4bdce-89f5-4278-aaa2-4ad8e859f
 
 To change the marker color, move to the Properties Panel > Google Map > set the Marker Color
 dropdown value to the color you like:
+<p></p>
 ![marker-color.png](..%2Fimgs%2Fmarker-color.png)
 
 ### Set Marker Image
