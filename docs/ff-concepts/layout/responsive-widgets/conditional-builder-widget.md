@@ -19,6 +19,7 @@ For example, displaying different charts based on user roles. For team members, 
 To add the `ConditionalBuilder` widget to your app:
 
 1. Add the **ConditionalBuilder** widget (from the **Base Elements**) to where you want to display dynamic widgets.
+
 5. Move to the **Properties Panel** **>** **Conditional Builder Properties,** andUnder the **First Condition**, provide the **IF** [condition](/advanced-functionality/conditional-logic) by clicking on **UNSET**.
 8. Now, besides the **THEN**, click **Empty**. This will automatically select the **IF** widget in the widget tree. Inside that, add a widget that you want to display if this condition is true.
 11. To add one more condition-based widget, click on the "+" button, add a condition for the **ELSE IF** section, and add a widget inside the **Else If** widget in the widget tree.

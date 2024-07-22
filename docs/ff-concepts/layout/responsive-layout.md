@@ -12,7 +12,10 @@ import TabItem from '@theme/TabItem';
 
 FlutterFlow is great at creating applications adaptable to a wide range of screen sizes, devices, and platforms. Ensuring that our screens maintain their aesthetic appeal across all these variations is crucial. Below, we outline various methods to enhance the responsiveness of your UI screens.
 
-Note: Please check out the examples in the order they're given, as they use the same example. Jumping to sections might make things confusing.
+**Note:** 
+Please check out the examples in the order they're given, as they use the same 
+example. Jumping to sections might make things confusing.
+
 
 ### Global Properties
 
