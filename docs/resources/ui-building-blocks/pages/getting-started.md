@@ -32,7 +32,7 @@ In FlutterFlow, you won't find a section explicitly labeled as "Body". For examp
 ![scaffold-elements.png](..%2Fimgs%2Fscaffold-elements.png)
 :::
 
-In FlutterFlow, you will find these Page Widgets under **Page Elements** in Widget Pallete.
+In FlutterFlow, you will find these Page Widgets under **Page Elements** in Widget Palette.
 
 :::tip[Generated Code]
 

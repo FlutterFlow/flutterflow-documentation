@@ -1,3 +1,8 @@
+---
+title: Generate Current Page Link
+sidebar_position: 5
+---
+
 # Generate Current Page Link
 
 Using this action, you can generate the dynamic link for the current page.
@@ -9,7 +14,7 @@ Using this action, you can generate the dynamic link for the current page.
 
 :::info[Prerequisites]
 
-Before adding this action, ensure you have performed all the steps to[add the dynamic link](deep-dynamic-linking.md#adding-dynamic-link).
+Before adding this action, ensure you have performed all the steps to [**add the dynamic link**](deep-dynamic-linking.md#adding-dynamic-link).
 :::
 
 ## Defining Generate Current Page Link action
