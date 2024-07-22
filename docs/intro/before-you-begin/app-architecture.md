@@ -42,10 +42,10 @@ Frontend code runs on the user's device. This could be a web browser for web app
 
 When it comes to developing the frontend of your application, there are several key architectural patterns and best practices to consider. These include:
 
-- Component-Based Architecture: Breaking down the UI into reusable components, each responsible for a specific part of the interface. This makes the code more modular and easier to maintain.
-- State Management: Managing the state of the application, which includes the data displayed in the UI and the user's interactions.
-- Responsive Design: Ensuring that your application looks and works well on different screen sizes and orientations. This involves using flexible layouts and scalable assets.
-- Performance Optimization: Making sure your app runs smoothly by optimizing rendering, minimizing the number of network requests, and reducing the size of your assets.
+- **Component-Based Architecture:** Breaking down the UI into reusable components, each responsible for a specific part of the interface. This makes the code more modular and easier to maintain.
+- **State Management:** Managing the state of the application, which includes the data displayed in the UI and the user's interactions.
+- **Responsive Design:** Ensuring that your application looks and works well on different screen sizes and orientations. This involves using flexible layouts and scalable assets.
+- **Performance Optimization:** Making sure your app runs smoothly by optimizing rendering, minimizing the number of network requests, and reducing the size of your assets.
 
 
 By understanding these concepts and implementing best practices, you can create robust and user-friendly applications with FlutterFlow.
