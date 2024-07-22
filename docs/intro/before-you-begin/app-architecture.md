@@ -8,7 +8,7 @@ Before you jump in and start using FlutterFlow, it's helpful to have an idea of 
 
 Traditionally, developing an app required writing a lot of code. You can think of code as a set of instructions for the computer, or device, executing the code. 
 
-The codebase is usually dividied up into two pieces: instructions for the frontend, and instructions for the backend. 
+The codebase is usually divided up into two pieces: instructions for the frontend, and instructions for the backend. 
 
 # Frontend vs Backend
 
