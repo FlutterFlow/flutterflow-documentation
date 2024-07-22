@@ -1,34 +1,29 @@
 ---
 title: Email Login
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Email Login using Firebase
 
 :::info[Prerequisites]
 
-Before getting started with this section, ensure you have:
+Before getting started with this section:
 
-- Completed all steps in the [**Firebase Setup**](../../../Firebase%2FConnect%20to%20Firebase%20Setup)
-
-- Completed the [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](#)
+- Complete [**Initial Setup**](initial-setup.md)
 :::
 
 ## Enable Email Login Provider in Firebase
 
-- Open the Firebase Console and click on **Authentication**
-- Click on the Get started button (this may not be visible if you have already
+1. Open the Firebase Console and click on **Authentication**
+2. Click on the Get started button (this may not be visible if you have already
   set up other forms of Authentication).
-
-- Select the **Sign-in** method tab.
-
-- Click on Email/Password (Under the 'Native providers' section). If you have
+3. Select the **Sign-in** method tab.
+4. Click on Email/Password (Under the 'Native providers' section). If you have
   already added any other provider, click on Add new provider and then click on
   Email/Password.
-
-- Find the Email/Password switch and enable it.
-
-- Click on the Save button.
+5. Find the Email/Password switch and enable it.
+6. Click on the Save button.
 
 ## Add a Login Screen with Email/Password Fields
 
@@ -54,12 +49,8 @@ usernames or email addresses etc.
 
 To enable this in FlutterFlow, follow these steps:
 
-1. Create a page using Page Templates or from scratch, and add fields such as
-   Email, Password, and Confirm Password. Based on your requirements, you may
-   add
-   additional fields.
+1. Create a page using Page Templates or from scratch, and add fields such as Email, Password, and Confirm Password. Based on your requirements, you may add additional fields.
 2. Add a "Create Account" or "Sign Up" button and attach an action to it.
-
 3. Search for and select the **Create Account** action under **Backend/Database >
    Firebase Authentication**.
 4. Set the **Auth Provider to Email**.
@@ -71,8 +62,7 @@ To enable this in FlutterFlow, follow these steps:
    be created in the 'users' collection after the user is authenticated, if it
    does
    not already exist with details like email and UID.
-
-    - To create a user document in a different collection, adjust the **Created
+       - To create a user document in a different collection, adjust the **Created
       Document > Collection** dropdown to the desired collection.
     - If additional details such as name, age, and birthday are needed at
       signup,
@@ -153,6 +143,10 @@ To enable this in FlutterFlow, follow these steps:
    under Widget State > Field Name.
 
 ![login-action.png](..%2F..%2Fimgs%2Flogin-action.png)
+
+:::info
+To let users log out of your app, you can use the [**Logout**](../../logout-action.md) action.
+:::
 
 ### Verify user created in Firebase Dashboard
 

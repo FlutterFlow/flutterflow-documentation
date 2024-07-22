@@ -6,8 +6,7 @@ sidebar_position: 1
 
 # Tokens: Types and Lifespans
 
-Before diving into **Authentication**, let's first clarify some key terms we'll encounter. These
-concepts are essential for understanding how secure access and user verification work.
+Here are some key terms we'll encounter in [Custom Autentication](custom-auth.md).
 
 - **Authentication Token**: An Auth Token acts as a digital key provided to
   client apps upon successful login. This key verifies the user's identity for subsequent actions
