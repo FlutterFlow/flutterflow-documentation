@@ -9,7 +9,7 @@ The `PlacePicker` widget is designed to retrieve information about places, such 
 
 This widget is particularly useful in applications like cab booking services. For instance, it can be used to capture the exact location and full address of a destination, displaying this information on a page or integrating it into a Google Map.
 
-Visually, the PlacePicker appears as a button. When tapped, it enables you to search for a place by typing its name, displaying a dropdown list of matching locations. Once a place is selected, its name is displayed on the button, and additional details are accessible through the placePickerValue variable from Widget State.
+Visually, the PlacePicker appears as a button. When tapped, it enables you to search for a place by typing its name, and displaying a dropdown list of matching locations. Once a place is selected, its name is displayed on the button, and additional details are accessible through the placePickerValue variable from Widget State.
 
 Here's an example from the Demo app:
 
