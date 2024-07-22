@@ -1,6 +1,6 @@
 ---
 title: Custom Actions
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Custom Actions
@@ -115,8 +115,11 @@ Flow.
 <p></p>
 
 :::tip[LOOKING for other CUSTOM action properties?]
-To learn more about Custom Action settings, such as the Exclude From Compilation toggle, Include
-Build Context toggle, and other properties like Callback Actions, please check out this
+To learn more about Custom Action settings, such as the 
+[**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation), 
+[**Include Build Context toggle**](custom-code.md#include-buildcontext), 
+and other properties like [**Callback Actions**](custom-code.md#add-a-callback-action), 
+[**Pub Dependencies**](custom-code.md#adding-a-pub-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::
 
