@@ -102,6 +102,7 @@ The login process involves two steps. First, you trigger an API call to your ser
 Here are the step by step instructions:
 
 1. Select the **Widget** (e.g., Sign In) on which you want to define the action.
+
 2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. [Add the login api](#) and provide the **Action Output Variable Name**. ****If the call succeeds, this will be used to retrieve the token.
 4. Inside the **TRUE** section, click on the **+** button and select **Add Action**.
@@ -142,7 +143,7 @@ Here are the step by step instructions:
 
 ### 4. Adding logout action
 
-To let users log out of your app, you can use [this](../../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](../../logout-action.md) action.
 
 ### 5. Verify user creation
 
@@ -159,6 +160,7 @@ Use this method only for testing purposes. Ideally, you should be doing this on 
 Below are steps to create a JWT token locally using Node.js:
 
 1. In the Firebase dashboard of your project, navigate to the far left menu. Select **Project Settings( )** -> **Service accounts**.
+
 2. Select **Generate new private key**. This will open a new popup. Again, click **Generate key** and save the `.json` file in some folder. You will need it while generating the token.
 3. Now, download and Install [node.js](https://nodejs.org/en/download/).
 4. Open a terminal at the folder where you have saved the `.json` file and enter this command: `npm install firebase-admin`. This will install Firebase Admin SDK inside the folder.
@@ -183,6 +185,7 @@ admin.auth().createCustomToken(uid)
 ```
 
 6. To run this `index.js` file inside the terminal (at the same location where this file is located), hit this command: `node index.js`. This will print the JWT token in the console.
+
 7. Copy this JWT token, return to FlutterFlow, and save it in the **app state variable** (String Datatype).
 8. Open the JWT token action, click on **UNSET** (or a variable if you have already set it), and select the **App State -> variableName** (that holds the JWT token).
 

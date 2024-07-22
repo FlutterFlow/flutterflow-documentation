@@ -68,6 +68,7 @@ To use phone sign-in, you must [get the SHA-1 key](#) and [regenerate the config
 To enable authentication in the Firebase:
 
 1. Open the [Firebase console](https://console.firebase.google.com/) and click on **Authentication**.
+
 2. Click on the **Get started** button (this may not be visible if you have already set up other forms of Authentication).
 3. Select the **Sign-in method** tab.
 4. Click on **Phone** (Under the 'Native Providers' section). If you have already added any other provider, click on the **Add new provider** and then click on **Phone**.
@@ -168,6 +169,7 @@ On click the 'sign-in' or 'send code' button, you will add the 'Phone Sing In' a
 To add this action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
+
 2. Select **Actions** from the [properties panel](#) (the right menu) and select **Add Action**.
 3. Search and select the **Phone Sign In** (under *Backend/Database > Firebase Authentication*) action.
 4. Now provide the **Phone Number** via **Widget State > TextField** (that accepts the phone number).
@@ -204,6 +206,7 @@ To add this action:
 On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action, which opens the home page if the action is successful.
 
 1. Select the widget (e.g., Button) on which you want to add the action.
+
 2. Select **Actions** from the [properties panel](#) (the right menu) and select **Add Action**.
 3. Search and select the **Verify SMS Code** (under *Backend/Database > Firebase Authentication*) action.
 4. Now provide the **SMS Code** via **Widget State > TextField** (that accepts the code).
@@ -236,7 +239,7 @@ On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action,
 
 ### 7. Adding logout action
 
-To let users log out of your app, you can use [this](../../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](../../logout-action.md) action.
 
 ### 8. Testing phone sign-in
 

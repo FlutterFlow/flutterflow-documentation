@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Custom authentication allows you to manage auth-related data (login details) while utilizing your own backend to authenticate users.
 
-:::info
+:::tip[concepts]
 
 Understanding the concept of [**Token**](token.md) is essential for grasping how secure access and user verification work in an application.
 
@@ -60,7 +60,8 @@ The steps to add custom authentication are as follows:
 
 To enable custom authentication in FlutterFlow:
 
-1. Open **Setting and Integrations** () **>** **App Settings > Authentication**.    
+1. Open **Setting and Integrations** () **>** **App Settings > Authentication**.  
+
 2. Turn on the **Enable Authentication** toggle and set **Authentication Type** to **Custom**.
 3. To ensure that your users are directed to the appropriate pages based on their login status, you must set the initial pages.
 4. By default, the **Persist Auth Sessions** option is enabled, which means users remain logged in until they actively log out. With this option enabled, your app will automatically open to the homepage whenever it's restarted.
@@ -135,6 +136,7 @@ On each page, on click of a button, you can add appropriate authentication relat
 After successful authentication, you can save the auth related data using the 'Log in' action. Here's how you do it:
 
 1. Inside the **TRUE** branch of the [previous API call](#3-authenticate-users), add the **Log in** (under *Backend/Database > Custom Authentication*) action.
+
 2. Under the **User Auth Properties**, you can set values for **Authentication Token**, **Refresh Token**, **Token Expiry Time**, and **User UID**. **Note that for the 'Persist Auth Sessions' option to work, you must set the Authentication Token**.
 3. **Set User Data** to store the result of the previous API call (i.e., auth details) in a custom Data Type. See how to get the [JSON into Data Type](#).
 
@@ -201,6 +203,7 @@ You may want to update the auth data in situations like updating the access toke
 Here's exactly how you do it:
 
 1. Once you get the 401 status code, i.e., unauthorized user error, ensure to make an API call to renew the access token.
+
 2. On getting the new access token, add a new action named **Update Authenticated User**.
 3. Under the **User Auth Properties**, you can update a value for the **Authentication Token** with a new access token.
 

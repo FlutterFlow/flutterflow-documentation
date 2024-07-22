@@ -26,11 +26,12 @@ Adding GitHub auth comprises of following steps:
 1. [Enabling GitHub authentication in Firebase](#1-enabling-github-authentication-in-firebase)
 2. [Adding GitHub login action](#2-adding-github-login-action)
 
-### 1. Enabling GitHub authentication in Firebase
+### 1. Enabling GitHub Authentication in Firebase
 
 To enable GitHub authentication in the Firebase:
 
 1. Open the [Firebase console](https://console.firebase.google.com/), Click on **Authentication** ( in the left side menu).
+
 2. Select the **Sign-in method** tab, and select **GitHub**. If you have already added another provider, click on the **Add new provider**, select **GitHub**, and **Enable** it.
 3. To get the **Client ID** and **Client Secret**, [register your app](https://github.com/settings/applications/new) as a developer application on GitHub, and while doing so, paste the authorization callback URL to your GitHub app configuration.
 4. Click **Save**.
@@ -66,11 +67,12 @@ To enable GitHub authentication in the Firebase:
 ![adding-authorized-domain-2.png](../../imgs/adding-authorized-domain-2.png)
     
 
-### 2. Adding GitHub login action
+### 2. Adding GitHub Login Action
 
 Follow the steps below to add GitHub login action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
+
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Login** (under *Backend/Database > Firebase Authentication*) action.
 4. Set **Auth Provider** to **GitHub**.
@@ -78,5 +80,5 @@ Follow the steps below to add GitHub login action:
 ![adding-github-login-action.png](../../imgs/adding-github-login-action.png)
 
 :::info
-To let users log out of your app, you can use [**this**](../../logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](../../logout-action.md) action.
 :::

@@ -56,6 +56,7 @@ On click of the 'Send Link' button, you'll add the 'Reset Password' action, whic
 To add reset password action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
+
 2. Select **Actions** from the properties panel (the right menu) and select **Add Action**.
 3. Search and select the **Reset Password** (under *Backend/Database > Firebase Authentication*) action.
 4. Set the **Email** **Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
