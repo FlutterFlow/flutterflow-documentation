@@ -18,14 +18,14 @@ To enable **Google Maps** in your project, please follow the steps:
 To start working with **Google Maps APIs**, you need to enable the **Maps API** from the [Google
 Cloud Console](https://console.cloud.google.com/).
 
-- As you land on the Cloud console, make sure you are in the correct Google Cloud project. Then,
+1. As you land on the Cloud console, make sure you are in the correct Google Cloud project. Then,
   from the right menu, click on [**Library**](https://console.cloud.google.com/apis/library) and
   search for **Maps**.
 
-- You may receive a prompt from Google Cloud to add a billing account. Please add a billing account
+2. You may receive a prompt from Google Cloud to add a billing account. Please add a billing account
   to continue.
 
-- You will see options such as the **Maps SDK for iOS, Maps SDK for Android**, and the **Maps
+3. You will see options such as the **Maps SDK for iOS, Maps SDK for Android**, and the **Maps
   Javascript API**. Select the platform you wish to support and then click **Enable**.
   If you are running on Run Mode, ensure that your Maps Javascript API is enabled.
 

@@ -24,29 +24,28 @@ Ensure you have added the Google Map API keys before adding the Google Maps widg
 
 ## Add Google Map widget
 
-- Open the Widget Palette and locate the **Google Map** widget under the **Base Elements** tab. You
+1. Open the Widget Palette and locate the **Google Map** widget under the **Base Elements** tab. You
   can
   drag it to your desired location or add it directly from the widget tree or canvas area.
 
-- By default, the map displays a random location. To set a specific location, go to the
+2. By default, the map displays a random location. To set a specific location, go to the
   **Properties Panel > Initial Location**.
 
-- Enter the latitude and longitude values in the **Lat and Lng** fields to specify the location. To
+3. Enter the latitude and longitude values in the **Lat and Lng** fields to specify the location. To
   use the user's current location, set a variable through the **Set Variable menu > Global
   Properties > Current Device Location**.
 
-- To change the map type, go to the **Properties Panel > Map Type** and select one of the following
+4. To change the map type, go to the **Properties Panel > Map Type** and select one of the following
   options:
     - **Roadmap:** Displays the default road map view.
     - **Terrain:** Shows a physical map based on terrain information.
     - **Hybrid:** Combines normal and satellite views.
     - **Satellite:** Displays satellite images from Google Earth.
 
-- To customize the visual appearance of your map, navigate to the **Properties Panel > Map Style**.
+5. To customize the visual appearance of your map, navigate to the **Properties Panel > Map Style**.
 
-- To set the **initial zoom level** of the map, go to the **Properties Panel > Initial Zoom** of Map
-  and
-  enter the desired value. Note that a higher value will zoom in on the map while a lower value will
+6. To set the **initial zoom level** of the map, go to the **Properties Panel > Initial Zoom** 
+   of Map and enter the desired value. Note that a higher value will zoom in on the map while a lower value will
   zoom out.
 
 <div class="video-container"><iframe src="https://www.loom.
