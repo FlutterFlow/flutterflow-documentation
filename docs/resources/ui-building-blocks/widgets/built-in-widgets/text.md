@@ -111,6 +111,7 @@ To set the text overflow replacement:
 
 1. Select the **Text** widget, navigate to the **Properties Panel > Text Properties >** enter the 
 value for **Max character** to limit the number of characters.
+
 5. Set the **Text Overflow Replacement** to either **Clip/Cutoff** or **Ellipsis (...)**
 
 ![img_1.png](img_1.png)
@@ -128,9 +129,11 @@ Here's how you do it:
 
 1. Select the **Text** widget, navigate to the **Properties Panel > Text Properties >** enable the 
 **Gradient** toggle.
+
 8. To add your own colors:
 	1. Select the **Type** among the **Linear** and **Radial**. The *Linear* distributes the 
    colors horizontally, whereas the *Radial* circularly spreads the color.
+   
 	5. If you choose *Linear*, specify the **Direction,** and for *Radial*, specify the **Radius**.
 	8. Add/Remove or customize the existing colors.
 
@@ -174,11 +177,13 @@ Use the instructions below to format a number:
    can be shown in two ways, i.e., 1,200 (with a comma) and 1.200 (with a period). 
 
 		1. Select **Automatic** to show decimal value based on the user's country.
+       
 		5. Select **Period for Decimal** to show decimal value with a period (e.g., 1.200).
 		8. Select **Comma for Decimal** to show decimal value with a comma (e.g., 1,200).
 	5. If you choose **Custom**:
 
 		1. Find the **Custom Format** box, and enter your format. For example, entering `###,###.###` will convert the number 123456.789 into 123,456.789, and 000.00 will convert the number 12.786 into 012.79.
+       
 		5. In the **Locale** input box, enter the locale in which you want to display the number. (If you leave this property empty, the locale is automatically set as per the user's location). Learn more about how to format a number [here](https://pub.dev/documentation/intl/latest/intl/NumberFormat-class.html).
 8. To display this number as currency, enable the **Display as Currency** toggle and specify the **Currency Symbol**.
 11. Click **Confirm**.

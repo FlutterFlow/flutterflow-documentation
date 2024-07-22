@@ -12,6 +12,7 @@ To add a Transform widget to your app:
 
 1. First, click on the **+ Add Widget**, drag the **Transform** widget from the **Base Elements** 
 tab, or add it directly from the widget tree.
+
 5. Add a child widget inside the Transform widget that you want to transform.
 8. By default, the transformation applied to a child widget is the **Skew** transformation. This type of transformation allows you to tilt the child widget, i.e., top and bottom or the left and right sides no longer remain to be parallel. To add/customize tilt to the child widget:
 
