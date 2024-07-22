@@ -4,8 +4,8 @@
 Add a thin horizontal or vertical line, with padding on either side. Customize the color, width 
 or height, and style of the divider from the Properties Panel. 
 
+## Divider Properties
 Here are the properties in detail:
-
 
 <figure>
     ![divider.png](imgs%2Fdivider.png)

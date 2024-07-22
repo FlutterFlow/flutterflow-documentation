@@ -209,3 +209,33 @@ To enable the safe area, navigate to the properties panel and turn on the Safe A
 
 
 ![img_1.png](imgs%2Fimg_1.png)
+
+:::tip[Watch the video tutorial]
+If you prefer watching a video tutorial, here is the guide for you:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/EQgUvPEMd2E"
+        title="Containers"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+:::

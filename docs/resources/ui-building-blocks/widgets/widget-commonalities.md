@@ -83,10 +83,6 @@ For example, if you define a custom breakpoint at 575 pixels, positioning it bet
 com/embed/33f17613e5704e0b9d23629c243232c0?sid=1d862e15-2047-4184-af29-a1b4676fe4ba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-
-
-Customize responsive breakpoint
-
 Furthermore, you can utilize these breakpoint values throughout your app to tweak the widget properties based on the screen size. For example, you might set different width and height values for a Container widget depending on whether the screen size matches with small, medium, or large.
 
 You can access the breakpoint values via the *Set from Variable* menu. Here's an example of setting the Container width based on the screen size.
@@ -200,7 +196,7 @@ com/embed/aa1755b1b7b94ef3ac3a72da431d844f?sid=982c1f26-b768-4c8d-ab77-c085219eb
 
 To change color for any widget property:
 
-2. Navigate to a widget property that allows you to set a color.
+1. Navigate to a widget property that allows you to set a color.
 5. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
 8. By default, theme colors are displayed. Simply click on a color to apply it.
 11. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.

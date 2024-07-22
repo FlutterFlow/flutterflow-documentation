@@ -21,8 +21,7 @@ based on the type of widget and also add other advanced configurations to the wi
 ### Widget name
 
 When you select any widget, its name appears on the properties panel. The default name for any
-widget is its type. For example, if you select the Container widget, the name appears as '
-Container'. However, you can use the edit icon on the right to change its name.
+widget is its type. For example, if you select the Container widget, the name appears as '**Container**'. However, you can use the edit icon on the right to change its name.
 
 ![widget-properties.png](..%2Fimgs%2Fwidget-properties.png)
 
