@@ -3,7 +3,7 @@ slug: carousel
 title: Carousel
 tags: []
 description: Learn how to add Carousel widget in your FlutterFlow project.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Carousel

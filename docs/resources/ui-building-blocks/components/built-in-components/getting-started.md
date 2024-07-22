@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+sidebar_position: 0
 ---
 
 # Built-in Components
