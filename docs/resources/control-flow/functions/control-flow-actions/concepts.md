@@ -23,7 +23,7 @@ these evaluations, different logic sequences are executed.
 
 The primary conditional statements are `if`, `if-else`, and `else`.
 
-- **`if` Statement:**
+- **`if` Statement:** The if statement evaluates a condition and executes a block of code if the condition is true.
 
 The if statement evaluates a condition and executes a block of code if the condition is true.
 
@@ -84,12 +84,12 @@ In FlutterFlow, you can implement conditional logic in two primary ways:
   Example: If the user clicks a button and a form is valid, navigate to the next screen; otherwise, show an error message.
 
 :::info 
-Checkout the [**complete guide**](conditional-logic) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
+Check out the [**complete guide**](conditional-logic) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
 :::
 
 ## Sequential vs Parallel Logic Flow
 
-- **Sequential Logic Flow**
+- **Sequential Logic Flow**:
   Actions are executed **one after the other**. Each action waits for the 
 previous one to complete before starting. This is useful for tasks that depend on the outcome of previous actions. 
 
@@ -164,5 +164,5 @@ To ensure proper execution, make only those actions non-blocking whose subsequen
 | **Only asynchronous** functions can be made non-blocking.                  | **Both asynchronous and synchronous** functions can be included in parallel actions.      |
 | Ideal for tasks where the result of the action is not immediately needed by the next action. | Ideal for independent tasks that can be executed simultaneously to improve efficiency. |
 | Ensures the app remains responsive by not waiting for long-running tasks. | Helps in reducing overall execution time by performing multiple tasks concurrently.   |
-| **Example**: Fetching data in the background while allowing user interaction. | **Example**: Loading data from two APIs simulataneously to save time.                     |
+| **Example**: Fetching data in the background while allowing user interaction. | **Example**: Loading data from two APIs simultaneously to save time.                     |
 

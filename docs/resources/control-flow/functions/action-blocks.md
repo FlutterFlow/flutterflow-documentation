@@ -30,12 +30,12 @@ Usually, you will see a dropdown to choose between App Level, Page Level, or Com
 ### Input Parameters
 
 Action Blocks have access to the state variables available in the same scope as the Action Block 
-(for e.g Page State variables can be accessed from Page Level Action Blocks). However, there 
+(for e.g., Page State variables can be accessed from Page Level Action Blocks). However, there 
 will be times when you may need to input some parameters for the Action Block to perform its logic. These are called **Action Parameters**, and they can be added from the Action Flow Editor when you create a new Action.
 
 For example, here is a small demo where we create an Action Block with an input parameter.
 
-n this example, we add an item to the wishlist of an e-commerce app. Let's say our local wishlist is saved in an App State variable called `localWishlist`, and we have a reusable Action Block called `addToWishlist` that takes an input parameter called productId and performs the actions to add it to the `localWishlist` object.
+In this example, we add an item to the wishlist of an e-commerce app. Let's say our local wishlist is saved in an App State variable called `localWishlist`, and we have a reusable Action Block called `addToWishlist` that takes an input parameter called productId and performs the actions to add it to the `localWishlist` object.
 
 <div style={{
     position: 'relative',

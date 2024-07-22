@@ -18,7 +18,7 @@ app responds to user inputs and events. Here are some key elements:
   content based on their authentication status.
 
 * **Loops:**
-  Loops such as `for` and `while` allow your app to repeat a string of logic multiple times. 
+  Loops such as `for` and `while` allow your app to repeat a sequence of logic multiple times. 
   This is useful for tasks like iterating through a list of items or retrying a failed operation.
 
 * **Event Handling:**
@@ -27,7 +27,7 @@ app responds to user inputs and events. Here are some key elements:
   Understanding how to handle such events effectively ensures that your app reacts appropriately to
   user interactions.
 
-And **Logic** or **Functions** refer to the core operations and behaviors that determine how an app 
+**Logic** or **Functions** refer to the core operations and behaviors that determine how an app 
 responds to user actions and interacts with data. This could include: 
 
 * **Business Logic:** This is the part of the app that manages the rules and processes of the real 
@@ -62,9 +62,9 @@ There are different types of functions you can use in your app. Some examples in
 * **[Built-in Utility Functions](built-in-functions.md):** Functions that perform general utility 
   tasks, such as 
   formatting 
-data or performing calculations. In FlutterFlow, you can use Code Expression for simple data manipulation tasks or use the Combine Text built-in function to concatenate strings.
+data or performing calculations. In FlutterFlow, you can use [Code Expression](#) for simple data manipulation tasks or use the Combine Text built-in function to concatenate strings.
 
-* **[Actions](actions)** : Sequence of Logic performed in response to user interactions:
+* **[Actions](actions):** Sequence of Logic performed in response to user interactions:
   * **Updating State Variables:** Functions that modify the current state or data of the app,
     page, or
     component.

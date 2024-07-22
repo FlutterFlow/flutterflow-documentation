@@ -96,7 +96,7 @@ one to complete.
 following tasks to proceed without waiting for them to finish.
 :::
 
-### Creating An Action
+### Creating Action
 
 If there is no initial action or if there is an action and you want to add another one and press the
 plus icon, the following options will be available:
@@ -109,7 +109,7 @@ plus icon, the following options will be available:
    boolean expression.
 3. **Add Loop**: Adds a loop flow that contains an input boolean expression and an action flow. The
    actions within the loop will be executed repeatedly as long as the expression evaluates to true (
-   similar to a while loop).
+  similar to a while loop).
 4. **Add Parallel**: Adds two action flow branches that will be executed in parallel.
 5. **Paste Action(s)**: Allows you to paste actions previously copied to the clipboard.
 
