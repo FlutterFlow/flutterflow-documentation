@@ -6,7 +6,7 @@ description: Learn how to add SwipeableStack widget in your FlutterFlow project.
 sidebar_position: 5
 ---
 
-# SwipeableStackWid
+# SwipeableStack
 
 The SwipeableStack is a widget designed to stack cards or content layers that users can swipe in any direction. It is commonly used in dating apps like Tinder for profile browsing.
 
@@ -36,7 +36,7 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
 </div>
 <p></p>
 
-## Adding *SwipeableStack* widget
+## Adding SwipeableStack widget
 
 To add a Stack widget:
 
