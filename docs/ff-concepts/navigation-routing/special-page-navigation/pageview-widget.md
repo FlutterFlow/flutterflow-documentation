@@ -1,9 +1,10 @@
 ---
-slug: pageview
+slug: /concepts/navigation/pageview
 title: PageView
-tags: []
 description: Learn how to use the PageView widget for creating swipeable pages, perfect for creating onboarding screens or multi-step forms.
+tags: [PageView, FlutterFlow, UI, Widgets]
 sidebar_position: 2
+keywords: [PageView, FlutterFlow, UI, Widgets]
 ---
 
 # PageView

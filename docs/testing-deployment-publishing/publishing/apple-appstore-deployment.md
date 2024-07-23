@@ -1,10 +1,12 @@
 ---
-slug: apple-app-store-deployment
+slug: /deployment/apple-app-store-deployment
 title: Apple App Store Deployment
-tags: []
 description: Learn how to seamlessly deploy your apps to the Apple App Store using FlutterFlow.
+tags: [Apple App Store, Deployment, FlutterFlow, iOS]
 sidebar_position: 4
+keywords: [Apple App Store, Deployment, FlutterFlow, iOS]
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

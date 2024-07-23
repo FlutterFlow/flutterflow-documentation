@@ -1,9 +1,10 @@
 ---
-slug: pre-checks-before-publishing
+slug: /deployment/pre-checks-before-publishing
 title: Pre-checks Before Publishing
-tags: []
-description: Ensure your app is ready for launch with this detailed guide on essential pre-publishing checks. 
+description: Ensure your app is ready for launch with this detailed guide on essential pre-publishing checks.
+tags: [Pre-checks, Publishing, Deployment]
 sidebar_position: 1
+keywords: [Pre-checks, Publishing, Deployment, FlutterFlow]
 ---
 
 # Pre-checks Before Publishing

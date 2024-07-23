@@ -1,9 +1,10 @@
 ---
-slug: web-publishing
+slug: /deployment/web-publishing
 title: Web Publishing
-tags: []
-description: Discover how to effortlessly publish your applications on the web with FlutterFlow. This guide covers everything from enabling web support to deploying your app and adding custom domains. 
+description: Discover how to effortlessly publish your applications on the web with FlutterFlow. This guide covers everything from enabling web support to deploying your app and adding custom domains.
+tags: [Web Publishing, Deployment]
 sidebar_position: 2
+keywords: [Web Publishing, Deployment, FlutterFlow, Custom Domains]
 ---
 
 # Web Publishing
