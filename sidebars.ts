@@ -11,7 +11,7 @@ const sidebars: SidebarsConfig = {
             collapsed: false,
             items: ['index'],
         },
-        ,'intro/quickstart',
+        'intro/quickstart',
         {
             type: 'category',
             label: 'Before You Begin',
