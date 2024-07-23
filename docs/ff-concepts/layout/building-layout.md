@@ -1,5 +1,5 @@
 ---
-slug: /concepts/building-layout
+slug: /concepts/layouts
 title: Building Layout
 description: Learn how to build layout in your FlutterFlow app.
 tags: [FlutterFlow, Building Layout, Concepts]

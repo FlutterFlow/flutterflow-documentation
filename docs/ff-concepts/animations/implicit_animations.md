@@ -1,5 +1,5 @@
 ---
-slug: /concepts/implicit-animations
+slug: /concepts/animations/implicit
 title: Implicit Animations
 description: Learn how to add implicit animations in FlutterFlow.
 tags: [FlutterFlow, Implicit Animations, Concepts]

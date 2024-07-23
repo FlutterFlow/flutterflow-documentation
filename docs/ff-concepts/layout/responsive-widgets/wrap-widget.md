@@ -1,5 +1,5 @@
 ---
-slug: /concepts/responsive/wrap
+slug: /concepts/layouts/wrap
 title: Wrap
 description: Learn how to add the Wrap widget in your FlutterFlow app.
 tags: [FlutterFlow, Wrap, Concepts]

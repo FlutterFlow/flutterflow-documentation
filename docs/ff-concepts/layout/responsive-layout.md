@@ -1,5 +1,5 @@
 ---
-slug: /concepts/responsive-layout
+slug: /concepts/layouts/responsive
 title: Responsive Layout
 description: Learn how to create responsive layout in your FlutterFlow app.
 tags: [FlutterFlow, Responsive Layout, Concepts]
