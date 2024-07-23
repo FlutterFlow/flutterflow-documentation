@@ -229,7 +229,6 @@ When working with Server Sent Events (SSE) in FlutterFlow, it's essential to und
 
 This field captures the result of JSON parsing. For example:
 
-Copy
 ```
 event: chat
 
@@ -239,7 +238,6 @@ id: 2
 ```
 The Server Sent Event Data JSON would be:
 
-Copy
 ```
 {
   "response": "hello",
@@ -248,7 +246,6 @@ Copy
 ```
 **Note that** If the data is not in JSON format, it will be null:
 
-Copy
 ```
 event: ping
 
@@ -262,7 +259,6 @@ The Server Sent Event Data JSON would be `null`.
 
 This field contains just the text of the "data" field from the SSE. If there are multiple "data" entries, they are concatenated with a new line. For example, from the event:
 
-Copy
 ```
 event: ping
 
@@ -274,7 +270,6 @@ The Server Sent Event Data Text would be: `Server time is 2024-06-28T11:52:56+00
 
 And from the event:
 
-Copy
 ```
 event: journalEntry
 
@@ -286,7 +281,6 @@ id: 3
 ```
 The Server Sent Event Data Text would be:
 
-Copy
 ```
 Today I went to the park.
 
@@ -296,7 +290,6 @@ For Lunch I had a sandwich.
 
 This field contains the text of the "event" field from the SSE. For example:
 
-Copy
 ```
 event: ping
 
@@ -310,7 +303,6 @@ The Server Sent Event Name would be `ping`.
 
 This field contains the text of the "id" field from the SSE, typically used to keep track of the last sent item from the server. For example:
 
-Copy
 ```
 event: ping
 
@@ -328,7 +320,6 @@ This field contains the "retry" field from the SSE, typically used to communicat
 
 This includes the entire Server Sent Event (SSE) message, including new lines and fields ('data', 'event', 'id', 'retry'). For example:
 
-Copy
 ```
 event: ping
 

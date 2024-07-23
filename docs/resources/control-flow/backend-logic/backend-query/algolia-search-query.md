@@ -27,13 +27,13 @@ You will need a text to be used as the **search term** while using the Algolia s
 
 Follow the steps below to create this UI:
 
-1. Drag a `**TextField**` widget from the [Widget Panel]
-(/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and drop it onto the canvas. (In the demo below, the `TextField` is placed inside the `AppBar` of the app).
-5. You can customize the `TextField` properties to match your app's design style. Add a search `Icon` to signify that it's a search field.
-8. Check the **Update Page On Change** checkbox. This helps to update the page as the user types inside the `TextField`. This would be required to use the latest text field value as the search term.
+1. Drag a TextField widget from the [Widget Panel]
+(/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and drop it onto the canvas. (In the demo below, the TextField is placed inside the AppBar of the app).
+5. You can customize the TextField properties to match your app's design style. Add a search Icon to signify that it's a search field.
+8. Check the **Update Page On Change** checkbox. This helps to update the page as the user types inside the TextField. This would be required to use the latest text field value as the search term.
 11. Set an **Update Delay** (in milliseconds). This specifies the amount of time after the user stops typing to update the page.
-14. Now, drag and drop a `**ListView**` widget onto the canvas.
-17. Similarly, you can add widgets inside the `ListView` that you need for displaying the search result. (In the following demo, you will find that two `Text` widgets are added inside a `Column`).
+14. Now, drag and drop a ListView widget onto the canvas.
+17. Similarly, you can add widgets inside the ListView that you need for displaying the search result. (In the following demo, you will find that two Text widgets are added inside a Column).
 
 <div style={{
     position: 'relative',
@@ -73,7 +73,7 @@ apply the query on the `ListView` widget.
 8. Select the **Query Type** as ***Algolia Search***.
 11. Choose the **Firebase Collection** on which to perform the search.
 14. Define from where to get the **Search Term**. You can either choose ***Specific Value*** or ***From Variable***. If you want to use a `TextField` value as the search term, you should choose *From Variable*.
-17. If you have chosen ***Specific Value****,*define the term inside the field present.
+17. If you have chosen **Specific Value**,define the term inside the field present.
 20. If you have chosen ***From Variable***, select a **Source** from the dropdown menu and then select an option from the **Available Options**. For example, if you want to use the value of a `TextField`, select the Source as ***Widget State*** and choose the field name under Available Options.
 23. Set the number of maximum search results to fetch under **Max Results**. Keep this field blank if you want to fetch all the matching search results.
 

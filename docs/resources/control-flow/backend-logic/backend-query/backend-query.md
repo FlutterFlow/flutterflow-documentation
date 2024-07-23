@@ -64,12 +64,12 @@ While the backend query is busy retrieving results, it shows the default *Projec
 To change the loading indicator:
 
 1. Ensure you have added a backend query.
-5. Open the **Backend Query** section (on the right side) and scroll down to the **Backend Query Loading Widget**. Open it by clicking on the arrow icon.
-8. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](/widgets-and-components/custom-components) if you have already designed a loading component.
-11. Enable the **View in UI Builder**. This allows you to see your custom loading indicator on canvas (before you actually run the app).
-14. Choose the **Image Type**, [add the image](/widgets-and-components/widgets/widget-commonalities#changing-image-type), and adjust its **Padding** and **Width**.
-17. To show the indicator in the center, turn on the **Center Image** toggle.
-20. Run the app, and your custom loading indicator will appear while the data is being loaded.
+2. Open the **Backend Query** section (on the right side) and scroll down to the **Backend Query Loading Widget**. Open it by clicking on the arrow icon.
+3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](/widgets-and-components/custom-components) if you have already designed a loading component.
+4. Enable the **View in UI Builder**. This allows you to see your custom loading indicator on canvas (before you actually run the app).
+5. Choose the **Image Type**, [add the image](/widgets-and-components/widgets/widget-commonalities#changing-image-type), and adjust its **Padding** and **Width**.
+6. To show the indicator in the center, turn on the **Center Image** toggle.
+7. Run the app, and your custom loading indicator will appear while the data is being loaded.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/342529d978644aabac485e518eff4a76?sid=83c5d7c7-1a94-44c0-aec4-12786f768b2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -110,11 +110,11 @@ The *Empty List* widget is a widget used to display a message when there are no 
 
 To display the empty list widget:
 
-2. Ensure you have added a backend query on any scrollable widget, such as [ListView](/widgets-and-components/widgets/layout-elements/listview), [GridView](/widgets-and-components/widgets/layout-elements/gridview), [Column](/widgets-and-components/widgets/layout-elements/columns), [Row](/widgets-and-components/widgets/layout-elements/row), DataTable, and [StaggeredView](/widgets-and-components/widgets/layout-elements/staggeredview).
-5. Select the scrollable widget (on which you have added the backend query), move to the properties panel, and turn on the **Show Empty List Widget**.
-8. Set **Widget Type** to **Image** or **Component**. The further options are available based on what you choose.
-11. Try toggling the **View in UI Builder**. This allows you to see your empty list widget on canvas (before you actually run the app).
-14. You can also control the size and centering of the widget using the available options.
+1. Ensure you have added a backend query on any scrollable widget, such as [ListView](/widgets-and-components/widgets/layout-elements/listview), [GridView](/widgets-and-components/widgets/layout-elements/gridview), [Column](/widgets-and-components/widgets/layout-elements/columns), [Row](/widgets-and-components/widgets/layout-elements/row), DataTable, and [StaggeredView](/widgets-and-components/widgets/layout-elements/staggeredview).
+2. Select the scrollable widget (on which you have added the backend query), move to the properties panel, and turn on the **Show Empty List Widget**.
+3. Set **Widget Type** to **Image** or **Component**. The further options are available based on what you choose.
+4. Try toggling the **View in UI Builder**. This allows you to see your empty list widget on canvas (before you actually run the app).
+5. You can also control the size and centering of the widget using the available options.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/667ed7fd6cdd40b7b602dcae6000f151?sid=8e5a3e88-6b32-4bf9-b156-372b297be16a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
