@@ -4,6 +4,9 @@
   See css var + hsl color palette technique:
   https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
    */
+  --border: 1px solid #d9d6d6;
+  --selected-border: 1px solid var(--ifm-color-primary);
+
   --site-primary-hue-saturation: 167 68%;
   --site-color-feedback-background: #f0f8ff;
   --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
