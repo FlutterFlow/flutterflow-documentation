@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Pages
 slug: getting-started
 sidebar_position: 1
 ---

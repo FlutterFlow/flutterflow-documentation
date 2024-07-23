@@ -1,9 +1,10 @@
 ---
-slug: enums
+slug: /resources/data-representation/enums
 title: Enums
-tags: []
 description: Learn how Enums can enhance the management of application states, product types, and process statuses by providing a robust method to handle predefined sets of values.
+tags: [Enums, FlutterFlow, Data Representation]
 sidebar_position: 3
+keywords: [Enums, FlutterFlow, Data Representation]
 ---
 
 # Enums

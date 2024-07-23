@@ -1,6 +1,10 @@
 ---
+slug: /resources/backend-query/api-call-query
 title: API Call Query
+description: Learn how to perform an API call query in your FlutterFlow app.
+tags: [API Call, Backend Logic, Control Flow, FlutterFlow, Backend Query]
 sidebar_position: 4
+keywords: [API Call, Backend Logic, Control Flow, FlutterFlow, Backend Query]
 ---
 
 # API Call Query

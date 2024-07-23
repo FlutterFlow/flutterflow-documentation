@@ -1,6 +1,10 @@
 ---
+slug: /resources/time-based-logic/periodic-action
 title: Periodic [Action]
+description: Learn how to use the Periodic Action in your FlutterFlow app to perform actions at regular intervals.
+tags: [Periodic Action, Time-Based Logic, FlutterFlow]
 sidebar_position: 3
+keywords: [Periodic Action, Time-Based Logic, FlutterFlow]
 ---
 
 # Periodic Action

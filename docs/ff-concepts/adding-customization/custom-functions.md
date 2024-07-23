@@ -1,6 +1,10 @@
 ---
+slug: /concepts/custom-code/custom-functions
 title: Custom Functions
+description: Learn how to create and use custom functions in your FlutterFlow app to add custom functionalities.
+tags: [FlutterFlow, Custom Functions, Custom Code]
 sidebar_position: 2
+keywords: [FlutterFlow, Custom Functions, Customizations, Flutter, Dart, Pub.dev]
 ---
 
 # Custom Functions

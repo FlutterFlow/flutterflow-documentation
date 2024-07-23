@@ -1,10 +1,11 @@
 ---
-slug: types-collaborate-on-projects
+slug: /resources/projects/how-to-collaborate-on-projects
 title: How to Collaborate on Projects
-tags: [ ]
+description: Learn how to collaborate effectively on projects in FlutterFlow, including best practices for teamwork and project management.
+tags: [Collaboration, FlutterFlow, Project Management]
 toc_max_heading_level: 5
 sidebar_position: 4
-
+keywords: [Collaboration, FlutterFlow, Project Management]
 ---
 
 FlutterFlow allows for multiple ways to collaborate on a project as well as the

@@ -1,9 +1,10 @@
 ---
-slug: facebook
+slug: /integrations/authentication/firebase/facebook
 title: Facebook Login
-tags: []
 description: Learn how to add Facebook login in your FlutterFlow app.
+tags: [FlutterFlow, Facebook Login, Authentication, Firebase]
 sidebar_position: 4
+keywords: [FlutterFlow, Facebook Login, Authentication, Firebase]
 ---
 
 import Tabs from '@theme/Tabs';

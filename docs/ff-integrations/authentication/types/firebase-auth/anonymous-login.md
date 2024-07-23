@@ -1,6 +1,10 @@
 ---
+slug: /integrations/authentication/firebase/anonymous-login
 title: Anonymous Login
+description: Learn how to implement anonymous login in your FlutterFlow app.
+tags: [FlutterFlow, Anonymous Login, Authentication, Firebase]
 sidebar_position: 6
+keywords: [FlutterFlow, Anonymous Login, Authentication, Firebase]
 ---
 
 # Anonymous Login

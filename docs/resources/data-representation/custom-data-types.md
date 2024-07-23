@@ -1,9 +1,10 @@
 ---
-slug: custom-data-types
+slug: /resources/data-representation/custom-data-types
 title: Custom Data Types
-tags: []
 description: Learn how to create and utilize custom data types in FlutterFlow to handle complex data structures that predefined types can't cover.
+tags: [Custom Data Types, FlutterFlow, Data Representation]
 sidebar_position: 2
+keywords: [Custom Data Types, FlutterFlow, Data Representation]
 ---
 
 # Custom Data Types

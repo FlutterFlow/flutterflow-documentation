@@ -1,10 +1,12 @@
 ---
-slug: widget-palette
+slug: /intro/flutterflow-ui/widget-palette
 title: Widget Palette
-tags: []
 description: Explore the Widget Palette in FlutterFlow to access a wide range of UI elements. This feature offers an intuitive interface for dragging and dropping Flutter widgets onto your canvas.
+tags: [Widget Palette, FlutterFlow, UI, Widgets]
 sidebar_position: 4
+keywords: [Widget Palette, FlutterFlow, UI, Widgets]
 ---
+
 # Widget Palette
 
 The Widget Palette in FlutterFlow provides access to all UI elements. These are essentially Flutter widgets that can be dragged and dropped onto the canvas. You can use the search bar to quickly locate a specific widget for your application.

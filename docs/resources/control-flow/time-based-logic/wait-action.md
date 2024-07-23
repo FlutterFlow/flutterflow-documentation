@@ -1,6 +1,10 @@
 ---
+slug: /resources/time-based-logic/wait-action
 title: Wait [Action]
+description: Learn how to use the Wait Action in your FlutterFlow app to pause actions for a specified duration.
+tags: [Wait Action, Time-Based Logic, FlutterFlow]
 sidebar_position: 1
+keywords: [Wait Action, Time-Based Logic, FlutterFlow]
 ---
 
 # Wait [Action]

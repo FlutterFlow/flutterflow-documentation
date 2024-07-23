@@ -1,10 +1,12 @@
 ---
-slug: app-state
+slug: /resources/data-representation/app-state
 title: App State
-tags: []
 description: Learn how to effectively utilize App State Variables in FlutterFlow to maintain and manage global application states across all pages and components.
+tags: [App State, FlutterFlow, Data Representation]
 sidebar_position: 4
+keywords: [App State, FlutterFlow, Data Representation]
 ---
+
 
 # App State
 

@@ -1,10 +1,12 @@
 ---
-slug: building-layout
+slug: /concepts/building-layout
 title: Building Layout
-tags: []
 description: Learn how to build layout in your FlutterFlow app.
+tags: [FlutterFlow, Building Layout, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, Building Layout, Concepts]
 ---
+
 # Building Layout
 
 In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](#), [Buttons](#), [Images](#), and [Icons](#), are visible on the screen. Others, like [Containers](#), [Rows](#), [Columns](#), and [Stacks](#), are not directly visible but help arrange and position the visible elements on the page.

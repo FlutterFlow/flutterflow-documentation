@@ -1,6 +1,10 @@
 ---
+slug: /resources/backend-query/algolia-search-query
 title: Algolia Search Query
+description: Learn how to perform an Algolia search query in your FlutterFlow app.
+tags: [Algolia, Search, API, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 5
+keywords: [Algolia, Search, API, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # Algolia Search Query

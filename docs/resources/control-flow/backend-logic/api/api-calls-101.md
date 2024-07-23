@@ -1,5 +1,10 @@
 ---
+slug: /resources/backend-logic/api-calls-101
 title: API Calls 101
+description: Learn the basics of making API calls in your backend logic.
+tags: [API, Backend Logic, Control Flow, FlutterFlow]
+sidebar_position: 1
+keywords: [API, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # API Calls 101

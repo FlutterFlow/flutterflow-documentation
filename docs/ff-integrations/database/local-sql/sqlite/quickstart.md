@@ -1,6 +1,12 @@
 ---
-title: Quickstart
+slug: /integrations/database/sqlite/quickstart
+title: SQLIte Quickstart
+description: Learn how to quickly get started with SQLite in your FlutterFlow app for local data storage.
+tags: [FlutterFlow, SQLite, Database, Quickstart, Local Storage]
+sidebar_position: 1
+keywords: [FlutterFlow, SQLite, Database, Quickstart, Local Storage]
 ---
+
 # SQLite
 
 SQLite is a compact, efficient database management system. Unlike conventional databases that require a server, SQLite is serverless and embeds directly into applications.

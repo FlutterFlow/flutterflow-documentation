@@ -1,9 +1,10 @@
 ---
-slug: password-reset
+slug: /integrations/authentication/firebase/password-reset
 title: Password Reset [Action]
-tags: []
 description: Learn how to add password reset action in your FlutterFlow app.
+tags: [FlutterFlow, Password Reset, Authentication, Firebase]
 sidebar_position: 8
+keywords: [FlutterFlow, Password Reset, Authentication, Firebase]
 ---
 
 # Password Reset

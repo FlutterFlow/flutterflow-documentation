@@ -1,12 +1,17 @@
 ---
 id: auth-token
+slug: /integrations/authentication/tokens
+title: Tokens
+description: Learn about the types and lifespans of tokens in custom authentication.
+tags: [FlutterFlow, Tokens, Authentication, Custom Authentication]
 sidebar_label: Tokens
 sidebar_position: 1
+keywords: [FlutterFlow, Tokens, Authentication, Custom Authentication]
 ---
 
 # Tokens: Types and Lifespans
 
-Here are some key terms we'll encounter in [Custom Autentication](custom-auth.md).
+Here are some key terms we'll encounter in [**Custom Authentication**](custom-auth.md).
 
 - **Authentication Token**: An Auth Token acts as a digital key provided to
   client apps upon successful login. This key verifies the user's identity for subsequent actions

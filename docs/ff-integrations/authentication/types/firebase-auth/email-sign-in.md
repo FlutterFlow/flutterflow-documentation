@@ -1,6 +1,10 @@
 ---
+slug: /integrations/authentication/firebase/email-login
 title: Email Login
+description: Learn how to add email login in your FlutterFlow app.
+tags: [FlutterFlow, Email Login, Authentication, Firebase]
 sidebar_position: 3
+keywords: [FlutterFlow, Email Login, Authentication, Firebase]
 ---
 
 # Email Login using Firebase

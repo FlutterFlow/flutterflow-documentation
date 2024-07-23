@@ -1,9 +1,10 @@
 ---
-slug: overview
+slug: /concepts/navigation/overview
 title: Overview
-tags: []
 description: Learn how to add navigation in FlutterFlow.
+tags: [FlutterFlow, Navigation, Concepts]
 sidebar_position: 0
+keywords: [FlutterFlow, Navigation, Concepts]
 ---
 
 # Overview

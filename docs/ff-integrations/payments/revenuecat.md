@@ -1,9 +1,10 @@
 ---
-slug: revenuecat
+slug: /integrations/payments/revenuecat
 title: RevenueCat
-tags: []
-description: Learn how to integrate RevenueCat in your FlutterFlow app.
+description: Learn how to integrate RevenueCat payments in your FlutterFlow app.
+tags: [FlutterFlow, RevenueCat, Payments, Integration]
 sidebar_position: 1
+keywords: [FlutterFlow, RevenueCat, Payments, Integration]
 ---
 
 # RevenueCat
@@ -11,7 +12,7 @@ sidebar_position: 1
 [RevenueCat](https://www.revenuecat.com/) simplifies implementing in-app purchases and subscriptions by handling all purchase validation operations.
 
 :::warning[Pub.Dev package and Limitations]
-The underlying package for RevenueCat does not support web. Any functionality related to in-app purchases or subscriptions managed through RevenueCat will not be available on web platforms.
+The [**underlying package for RevenueCat**](https://pub.dev/packages/purchases_flutter) does not support web. Any functionality related to in-app purchases or subscriptions managed through RevenueCat will not be available on web platforms.
 :::
 
 <div style={{

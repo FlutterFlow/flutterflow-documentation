@@ -1,6 +1,10 @@
 ---
+slug: /resources/time-based-logic/timer-widget
 title: Timer [Widget]
+description: Learn how to use the Timer Widget in your FlutterFlow app to manage timed events and actions.
+tags: [Timer Widget, Time-Based Logic, FlutterFlow]
 sidebar_position: 2
+keywords: [Timer Widget, Time-Based Logic, FlutterFlow]
 ---
 
 **Timer [Widget]** allows developers to create countdown or count-up timers within your page. It is

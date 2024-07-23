@@ -1,9 +1,12 @@
 ---
-slug: implicit-animations
+slug: /concepts/implicit-animations
 title: Implicit Animations
-sidebar_position: 2
 description: Learn how to add implicit animations in FlutterFlow.
+tags: [FlutterFlow, Implicit Animations, Concepts]
+sidebar_position: 2
+keywords: [FlutterFlow, Implicit Animations, Concepts]
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

@@ -1,6 +1,10 @@
 ---
+slug: /concepts/custom-code/custom-widgets
 title: Custom Widgets
+description: Learn how to create and use custom widgets in your FlutterFlow app to enhance its user interface.
+tags: [FlutterFlow, Custom Widgets, Custom Code]
 sidebar_position: 4
+keywords: [FlutterFlow, Custom Widgets, Customizations, Flutter, Dart, Pub.dev]
 ---
 
 # Custom Widgets
