@@ -94,7 +94,7 @@ correctness of your custom code. It automatically checks your Dart code for erro
 providing real-time feedback as you write.
 ![code-analyzer.png](imgs%2Fcode-analyzer.png)
 When there is a compilation error, the code analyzer will stop running and display the errors caught
-by the compiler. Once fixed, save the code and rerun the Compile Code button. The code analyzer
+by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
 should then be reconnected. You can also manually reconnect it if needed.
 
 ### Custom Code Automatic Imports
@@ -263,7 +263,7 @@ the **Copy to Clipboard** icon.
 <p></p>
 
 :::warning
-The current dependency might depend on other dependencies to work.So make sure you also copy the
+The current dependency might depend on other dependencies to work. So make sure you also copy the
 name and version of all the additional dependencies to specify in the code editor.
 :::
 

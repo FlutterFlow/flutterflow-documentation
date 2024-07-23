@@ -10,7 +10,7 @@ sidebar_position: 6
 We allow you to write and deploy Firebase Cloud Functions directly within the platform. With an integrated code editor, writing JavaScript cloud functions is quick and user-friendly. Each function has customizable boilerplate settings, including pre-configured essentials like memory, region, and timeout.
 
 :::note
-You can find some interesting use cases [here](https://firebase.google.com/docs/functions/use-cases).
+You can find some interesting use cases [*here*](https://firebase.google.com/docs/functions/use-cases).
 :::
 
 ## Adding Cloud Functions
@@ -119,7 +119,7 @@ For a list, the function should return:
 ```
     
 #### To deploy
-1. Click the `[**</>**]` icon to view the boilerplate code; a popup will open with the updated 
+1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated 
 code, and then click **`</> Copy to Editor`**. **Tip**: To see if you are able to deploy the cloud function (before adding your own code), proceed directly with steps 8 and 9.
 2. Inside the code editor, add the cloud function code. **Tip**: You can copy the boilerplate code 
    to [ChatGPT](https://chat.openai.com/) and ask it to write the desired code based on that.

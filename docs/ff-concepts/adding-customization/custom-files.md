@@ -4,7 +4,7 @@ sidebar_position: 5
 ---
 # Custom Files
 
-We allow you to add a custom code directly into the `*main.dart*` file of your app. This means that you can easily implement specific functionalities and customize your app as per your requirements without downloading the entire project and manually modifying the file.
+We allow you to add a custom code directly into the `main.dart` file of your app. This means that you can easily implement specific functionalities and customize your app as per your requirements without downloading the entire project and manually modifying the file.
 
 By default, the file you want to edit is in 'read-only' mode. However, using our editor, you can add a code snippet in the form of [custom actions](/customizing-your-app/custom-functions/custom-actions).
 
