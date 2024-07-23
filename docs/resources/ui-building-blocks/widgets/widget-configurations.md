@@ -21,8 +21,7 @@ based on the type of widget and also add other advanced configurations to the wi
 ### Widget name
 
 When you select any widget, its name appears on the properties panel. The default name for any
-widget is its type. For example, if you select the Container widget, the name appears as '
-Container'. However, you can use the edit icon on the right to change its name.
+widget is its type. For example, if you select the Container widget, the name appears as '**Container**'. However, you can use the edit icon on the right to change its name.
 
 ![widget-properties.png](..%2Fimgs%2Fwidget-properties.png)
 
@@ -56,14 +55,14 @@ Some of the widgets that can handle multiple children include **Column, Row, Sta
 GridView, and PageView**.
 
 :::info
-To learn more about **Generating Dynamic Children**, refer here.
+To learn more about [**Generating Dynamic Children**](generate-dynamic-children), refer here.
 :::
 
 ## Animations
 You can apply animations to a widget to enhance the visual appeal and user experience. Animations can be used to draw attention to important elements, provide feedback on user interactions, or create visually engaging transitions between states. 
 
 :::info
-Learn more about adding animations here
+Learn more about adding **[animations](#)** here
 :::
 
 ## Documentation and Semantic Labels
