@@ -66,13 +66,7 @@ Here's a brief explanation of each property:
 - **Spread:** Controls the **spread radius of the shadow**. **Increasing** this value will **expand** the area
   that the shadow covers, making it appear larger.
 
-- **Offset X & Offset Y:** These properties set the horizontal (X) and vertical (Y) displacement of
-  the shadow relative to the widget. 
-
-  **Offset X** shifts the shadow horizontally, and **Offset Y**
-    moves it vertically. 
-  Positive values move the shadow right and down, respectively, while negative
-      values move it left and up.
+- **Offset X & Offset Y:** These properties set the horizontal (X) and vertical (Y) displacement of the shadow relative to the widget. **Offset X** shifts the shadow horizontally, and **Offset Y** moves it vertically. Positive values move the shadow right and down, respectively, while negative values move it left and up.
 
 Here's a quick demo to show the box shadow property in Container: 
 
@@ -92,8 +86,8 @@ Here's an overview of each property:
 - **Colors**: These are the colors used in the gradient. You can set these colors
   using Theme Colors, a color picker, or hex codes. Two color values are added by
   default.
-    - **Add Color:** This option allows you to add additional colors to the gradient, further
-      customizing the effect by adjusting their transition points
+- **Add Color:** This option allows you to add additional colors to the gradient, further
+      customizing the effect by adjusting their transition points and choosing from Theme Colors, a color picker, or hex codes.
 - **Transition Point:** These values determine where each color starts transitioning within the
   gradient. Transition points are set as a fraction of the total gradient distance:
 
@@ -106,8 +100,8 @@ In the above example,
 - The Transition Point for Color 2 is 0.5, indicating that this color starts transitioning at the
   halfway point.
 - The Transition Point for Color 3 is 1, which places the start of this color's transition at the
-  end of the gradient.
-  and choosing from Theme Colors, a color picker, or hex codes.
+end of the gradient.
+  
 
 ## Background Image Properties
 The Background Image properties provide options for setting up an image as the background of a

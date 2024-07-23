@@ -11,13 +11,12 @@ Here are the step-by-step instructions to build such an example:
 
 1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base 
 Elements** tab or add it directly from the widget tree.
-5. Add a [**Button**](button.md) (inside MouseRegion) 
+2. Add a [**Button**](button.md) (inside MouseRegion) 
    with [**On Action Trigger**](#) animation.
-8. Select the **MouseRegion** widget, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
-11. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegionwidget.
-
-	1. Add the [Widget Animation](#) action to start the animation on a Button.
-14. Select the **On Mouse Exit** tab. Actions added under this will be triggered whenever the mouse leaves the MouseRegionwidget.
+3. Select the **MouseRegion** widget, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
+4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegionwidget.
+    1. Add the [Widget Animation](#) action to start the animation on a Button.
+15. Select the **On Mouse Exit** tab. Actions added under this will be triggered whenever the mouse leaves the MouseRegionwidget.
 	1. Add the [Widget Animation](#) action to stop the animation on a Button.
 
 <div style={{
