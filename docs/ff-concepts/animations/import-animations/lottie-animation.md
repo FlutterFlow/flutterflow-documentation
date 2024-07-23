@@ -1,9 +1,10 @@
 ---
-slug: lottie-animation
+slug: /concepts/animations/lottie-animation
 title: Lottie Animation
-tags: []
-description: Learn how to add lottie animation in your FlutterFlow app.
+description: Learn how to add Lottie animation in your FlutterFlow app.
+tags: [Lottie Animation, FlutterFlow, Animations]
 sidebar_position: 1
+keywords: [Lottie Animation, FlutterFlow, Animations]
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

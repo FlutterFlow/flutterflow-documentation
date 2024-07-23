@@ -1,9 +1,10 @@
 ---
-slug: rive-animation
+slug: /concepts/animations/rive-animation
 title: Rive Animation
-tags: []
 description: Learn how to add Rive animation in your FlutterFlow app.
+tags: [Rive Animation, FlutterFlow, Animations]
 sidebar_position: 2
+keywords: [Rive Animation, FlutterFlow, Animations]
 ---
 
 # Rive Animation

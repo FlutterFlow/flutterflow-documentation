@@ -1,9 +1,10 @@
 ---
-slug: branching
+slug: /collaboration/branching
 title: Branching
-tags: []
 description: Learn how branching in FlutterFlow allows you to add new features without disrupting your current progress. Understand the workflow of creating and merging branches, resolving conflicts, and the difference between merging and rebasing, with practical examples and tips.
+tags: [Branching, Collaboration]
 sidebar_position: 1
+keywords: [Branching, Collaboration, FlutterFlow, Concepts]
 ---
 
 # Branching

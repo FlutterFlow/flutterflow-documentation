@@ -1,9 +1,10 @@
 ---
-slug: run-your-app
+slug: /testing/run-your-app
 title: Run your App
-tags: [ ]
-description: Discover the essentials of running and testing your FlutterFlow app with this comprehensive guide. 
+description: Discover the essentials of running and testing your FlutterFlow app with this comprehensive guide.
+tags: [Run, Testing, FlutterFlow]
 sidebar_position: 0
+keywords: [Run, Testing, FlutterFlow]
 ---
 
 Running and testing your app is a crucial part of the app development process. This page provides a comprehensive guide on how to run and test your FlutterFlow app. It covers various modes of testing, including [Preview](#preview-mode), [Test](#test-mode), [Run](#run-mode), and [Local Run](#local-run) modes, with detailed steps and indications of when to use each mode. 

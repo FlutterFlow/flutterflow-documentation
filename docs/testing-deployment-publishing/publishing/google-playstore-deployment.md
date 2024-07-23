@@ -1,11 +1,14 @@
 ---
-slug: google-playstore-deployment
+slug: /deployment/google-playstore-deployment
 title: Google Play Store Deployment
-tags: []
 description: Learn how to seamlessly deploy your apps to the Google Play Store using FlutterFlow.
+tags: [Google Play Store, Deployment, FlutterFlow, Android]
 sidebar_position: 3
 toc_max_heading_level: 4
+keywords: [Google Play Store, Deployment, FlutterFlow, Android]
 ---
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

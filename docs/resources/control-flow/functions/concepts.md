@@ -1,6 +1,12 @@
 ---
+slug: /concepts/control-flow
 title: Concepts
+description: Understand and implement control flow in your FlutterFlow app to manage the execution of statements, instructions, and function calls under various conditions.
+tags: [Control Flow, FlutterFlow, Concepts]
+sidebar_position: 1
+keywords: [Control Flow, FlutterFlow, Concepts]
 ---
+
 
 # Control Flow Concepts
 

@@ -1,5 +1,5 @@
 ---
-slug: /resources/action-blocks
+slug: /resources/actions/action-blocks
 title: Action Blocks
 description: Learn how to use Action Blocks in your FlutterFlow app to and create reusable actions.
 tags: [Action Blocks, Backend Query, Backend Logic, Control Flow, FlutterFlow]

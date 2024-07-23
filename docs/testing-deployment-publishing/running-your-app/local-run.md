@@ -1,10 +1,12 @@
 ---
-slug: local-run
+slug: /testing/local-run
 title: Local Run
-tags: [ ]
 description: Local Run downloads the code locally and gives you the option to use Flutter's Hot Reload to see your changes instantly on a device.
+tags: [Local Run, Testing, Hot Reload]
 sidebar_position: 1
+keywords: [Local Run, Testing, FlutterFlow, Hot Reload]
 ---
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

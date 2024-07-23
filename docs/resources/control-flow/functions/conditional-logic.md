@@ -1,5 +1,5 @@
 ---
-slug: /resources/conditional-logic
+slug: /resources/functions/conditional-logic
 title: Conditional Logic
 description: Learn how to implement conditional logic in your FlutterFlow app to control the 
   flow of actions or generate properties based on certain conditions.
