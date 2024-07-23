@@ -22,9 +22,9 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
-          // exclude: ['README.md'],
+          exclude: ['docs/index.md'],
           // lastVersion: 'current',
           // versions: {
           //   current: {
