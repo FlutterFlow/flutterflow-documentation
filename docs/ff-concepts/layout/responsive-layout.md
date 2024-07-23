@@ -1,10 +1,13 @@
 ---
-slug: responsive-layout
+slug: /concepts/responsive-layout
 title: Responsive Layout
-tags: []
 description: Learn how to create responsive layout in your FlutterFlow app.
+tags: [FlutterFlow, Responsive Layout, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, Responsive Layout, Concepts]
 ---
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

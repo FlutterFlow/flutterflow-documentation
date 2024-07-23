@@ -1,7 +1,12 @@
 ---
+slug: /concepts/custom-code/custom-files
 title: Custom Files
+description: Learn how to manage and use custom files in your FlutterFlow app to extend its capabilities.
+tags: [FlutterFlow, Custom Files, Custom Code]
 sidebar_position: 5
+keywords: [FlutterFlow, Custom Files, Customizations, Flutter, Dart, Pub.dev]
 ---
+
 # Custom Files
 
 We allow you to add a custom code directly into the `main.dart` file of your app. This means that you can easily implement specific functionalities and customize your app as per your requirements without downloading the entire project and manually modifying the file.

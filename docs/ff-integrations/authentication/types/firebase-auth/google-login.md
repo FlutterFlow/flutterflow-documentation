@@ -1,6 +1,10 @@
 ---
-title: Google Login
+slug: /integrations/authentication/firebase/google-oauth-login
+title: Google OAuth Login
+description: Learn how to add Google OAuth login in your FlutterFlow app.
+tags: [FlutterFlow, Google OAuth, Authentication, Firebase]
 sidebar_position: 1
+keywords: [FlutterFlow, Google OAuth, Authentication, Firebase]
 ---
 
 # Google Login

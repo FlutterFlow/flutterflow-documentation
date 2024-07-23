@@ -1,9 +1,12 @@
 ---
-slug: widget-animations
+slug: /concepts/widget-animations
 title: Widget Animations
-sidebar_position: 1
 description: Learn how to add widget animations in FlutterFlow.
+tags: [FlutterFlow, Widget Animations, Concepts]
+sidebar_position: 1
+keywords: [FlutterFlow, Widget Animations, Concepts]
 ---
+
 import fadeGif from '@site/static/img/animations/animation_gifs/fade.gif';
 import scaleGif from '@site/static/img/animations/animation_gifs/scale.gif';
 import slideGif from '@site/static/img/animations/animation_gifs/slide.gif';

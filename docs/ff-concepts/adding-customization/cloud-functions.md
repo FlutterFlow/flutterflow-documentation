@@ -1,6 +1,10 @@
 ---
+slug: /concepts/custom-code/custom-functions
 title: Cloud Functions
+description: Learn how to use Cloud Functions in your FlutterFlow app for serverless backend functionality.
+tags: [FlutterFlow, Cloud Functions, Serverless, Integration]
 sidebar_position: 6
+keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
 ---
 
 # Cloud Functions

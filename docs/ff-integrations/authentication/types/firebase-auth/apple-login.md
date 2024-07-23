@@ -1,9 +1,10 @@
 ---
-slug: apple
+slug: /integrations/authentication/firebase/apple
 title: Apple Login
-tags: []
 description: Learn how to add Apple login in your FlutterFlow app.
+tags: [FlutterFlow, Apple Login, Authentication, Firebase]
 sidebar_position: 2
+keywords: [FlutterFlow, Apple Login, Authentication, Firebase]
 ---
 
 

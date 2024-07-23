@@ -84,7 +84,7 @@ In FlutterFlow, you can implement conditional logic in two primary ways:
   Example: If the user clicks a button and a form is valid, navigate to the next screen; otherwise, show an error message.
 
 :::info 
-Check out the [**complete guide**](conditional-logic) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
+Check out the [**complete guide**](conditional-logic.md) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
 :::
 
 ## Sequential vs Parallel Logic Flow
@@ -101,7 +101,7 @@ previous one to complete before starting. This is useful for tasks that depend o
 other. This is useful for tasks that can be done simultaneously and do not depend on each other's outcomes.
   
   **Example:** Loading data from multiple sources simultaneously to speed up the data fetching process.
-![parallel-sequential.png](..%2Fimg%2Fparallel-sequential.png)
+![parallel-sequential.png](img%2Fparallel-sequential.png)
 
 ## Asynchronous Functions
 

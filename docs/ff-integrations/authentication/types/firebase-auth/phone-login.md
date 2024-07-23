@@ -1,9 +1,10 @@
 ---
-slug: phone
+slug: /integrations/authentication/firebase/phone
 title: Phone Login
-tags: []
-description: Learn how to add Phone login in your FlutterFlow app.
+description: Learn how to add phone login in your FlutterFlow app.
+tags: [FlutterFlow, Phone Login, Authentication, Firebase]
 sidebar_position: 5
+keywords: [FlutterFlow, Phone Login, Authentication, Firebase]
 ---
 
 # Phone Login

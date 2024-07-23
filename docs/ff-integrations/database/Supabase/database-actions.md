@@ -1,7 +1,11 @@
 ---
+slug: /integrations/database/supabase/database-actions
 title: Database Actions
+description: Learn about Supabase database actions in your FlutterFlow app, including how to perform various database operations.
+tags: [FlutterFlow, Supabase, Database, Actions]
+sidebar_position: 1
+keywords: [FlutterFlow, Supabase, Database, Actions]
 toc_max_heading_level: 5
-
 ---
 
 # Supabase Database Actions

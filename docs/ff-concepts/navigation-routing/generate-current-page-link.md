@@ -1,6 +1,10 @@
 ---
+slug: /concepts/navigation/generate-current-page-link
 title: Generate Current Page Link
+description: Learn how to generate the current page link in your FlutterFlow app.
+tags: [FlutterFlow, Navigation, Page Link, Concepts]
 sidebar_position: 5
+keywords: [FlutterFlow, Navigation, Page Link, Concepts]
 ---
 
 # Generate Current Page Link

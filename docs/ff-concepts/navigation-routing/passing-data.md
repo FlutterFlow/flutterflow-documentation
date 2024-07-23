@@ -1,10 +1,12 @@
 ---
-slug: passing-data
+slug: /concepts/navigation/passing-data
 title: Passing Data
-tags: []
 description: Learn how to pass data between pages in FlutterFlow.
+tags: [FlutterFlow, Passing Data, Navigation, Concepts]
 sidebar_position: 2
+keywords: [FlutterFlow, Passing Data, Navigation, Concepts]
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

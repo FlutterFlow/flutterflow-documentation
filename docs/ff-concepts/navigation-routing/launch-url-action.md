@@ -1,9 +1,10 @@
 ---
-slug: launch-url
+slug: /concepts/navigation/launch-url
 title: Launch URL [Action]
-tags: []
 description: Learn how to use the Launch URL Action in FlutterFlow to open URLs with supporting apps.
+tags: [FlutterFlow, Launch URL, Action, Concepts]
 sidebar_position: 7
+keywords: [FlutterFlow, Launch URL, Action, Concepts]
 ---
 
 The Launch URL Action lets you specify a URL that will be opened using an app supporting it. If there is more than one app that can handle the specified URL, the user will be presented with a dialog from where one of the apps can be selected.

@@ -1,9 +1,11 @@
 ---
-slug: builder
+slug: /intro/flutterflow-ui/builder
 title: App Builder
-tags: []
-description: Explore the App Builder in FlutterFlow, featuring a comprehensive interface with four main sections. Navigation Menu, Toolbar, Canvas, and Properties Panel.
+description: Explore the App Builder in FlutterFlow, featuring a comprehensive interface with 
+  four main sections-Navigation Menu, Toolbar, Canvas, and Properties Panel.
+tags: [App Builder, FlutterFlow, UI, Design]
 sidebar_position: 0
+keywords: [App Builder, FlutterFlow, UI, Design]
 ---
 
 # App Builder

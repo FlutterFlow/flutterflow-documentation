@@ -1,6 +1,10 @@
 ---
+slug: /resources/built-in-functions
 title: Built-in Functions
+description: Learn about the built-in functions available in FlutterFlow to enhance your app's backend logic.
+tags: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 2
+keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # Utility Functions

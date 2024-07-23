@@ -1,6 +1,10 @@
 ---
-title: Getting Started
+slug: /integrations/mux/getting-started
+title: Integrate Mux Livestream
+description: Learn how to get started with MuxBroadcast in your FlutterFlow app for live video broadcasting.
+tags: [FlutterFlow, MuxBroadcast, Integration, Setup]
 sidebar_position: 2
+keywords: [FlutterFlow, MuxBroadcast, Integration, Setup]
 ---
 
 # MuxBroadcast

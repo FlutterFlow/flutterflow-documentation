@@ -1,7 +1,10 @@
 ---
+slug: /integrations/authentication/firebase/initial-setup
 title: Initial Setup
-slug: initial-setup
+description: Learn how to perform the initial setup for Firebase authentication in your FlutterFlow app.
+tags: [FlutterFlow, Initial Setup, Authentication, Firebase]
 sidebar_position: 0
+keywords: [FlutterFlow, Initial Setup, Authentication, Firebase]
 ---
 
 # Enabling Firebase Auth in FlutterFlow

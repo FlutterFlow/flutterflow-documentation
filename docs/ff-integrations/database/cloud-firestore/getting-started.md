@@ -1,6 +1,10 @@
 ---
+slug: /integrations/database/cloud-firestore/getting-started
 title: Getting Started
+description: Learn how to get started with Cloud Firestore in your FlutterFlow app to manage your app's data.
+tags: [FlutterFlow, Cloud Firestore, Database, Getting Started]
 sidebar_position: 1
+keywords: [FlutterFlow, Cloud Firestore, Database, Getting Started]
 ---
 
 # Cloud Firestore

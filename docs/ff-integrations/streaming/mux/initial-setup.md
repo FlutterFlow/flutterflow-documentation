@@ -1,7 +1,10 @@
 ---
+slug: /integrations/mux/initial-setup
 title: Initial Setup
+description: Learn how to set up Mux LiveStream in your FlutterFlow app for live video streaming.
+tags: [FlutterFlow, Mux, LiveStream, Integration, Setup]
 sidebar_position: 1
-
+keywords: [FlutterFlow, Mux, LiveStream, Integration, Setup]
 ---
 
 # Mux LiveStream
@@ -36,5 +39,5 @@ Here is how you can set up the Mux Livestream:
 Before releasing your app to production, create new keys (with Environment set to Production) and deploy them again.
 
 :::info
-Visit the complete guide on [**how to add a live stream feature**](getting-started.md)to your app.
+Visit the complete guide on [**how to add a live stream feature**](integrate-mux)to your app.
 :::

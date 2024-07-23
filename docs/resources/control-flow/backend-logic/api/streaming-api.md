@@ -1,5 +1,10 @@
 ---
+slug: /resources/backend-logic/api/streaming-apis
 title: Streaming APIs
+description: Learn how to use streaming APIs in your backend logic with FlutterFlow.
+tags: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
+sidebar_position: 2
+keywords: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 

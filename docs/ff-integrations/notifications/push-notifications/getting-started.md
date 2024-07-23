@@ -1,5 +1,10 @@
 ---
-title: Getting Started
+slug: /integrations/push-notifications
+title: Push Notifications
+description: Learn how to enable and use push notifications in your FlutterFlow app, including instant and scheduled notifications.
+tags: [FlutterFlow, Push Notifications, Firebase Cloud Messaging, Integration]
+sidebar_position: 1
+keywords: [FlutterFlow, Push Notifications, Firebase Cloud Messaging, Integration]
 ---
 
 # Push Notifications

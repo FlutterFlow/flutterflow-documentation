@@ -1,9 +1,10 @@
 ---
-slug: page-navigation
+slug: /concepts/navigation/page-navigation
 title: Page Navigation
-tags: []
 description: Learn how to navigate between pages in FlutterFlow.
+tags: [FlutterFlow, Page Navigation, Navigation, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, Page Navigation, Navigation, Concepts]
 ---
 
 # Page Navigation

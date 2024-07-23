@@ -1,9 +1,12 @@
 ---
-slug: types-create-find-organize-projects
+slug: /resources/projects/how-to-create-find-organize-projects
 title: How to Create, Find, and Organize Projects
-tags: []
+description: Learn how to create, find, and organize projects in FlutterFlow to streamline your app development process.
+tags: [Project Management, FlutterFlow, Organization, Projects]
 toc_max_heading_level: 5
+keywords: [Project Management, FlutterFlow, Organization, Projects]
 ---
+
 #
 ## How to Create a Project
 To create a new project, go to the Dashboard and click the “Create New” button in the upper right corner. This will open the “Create Project” window where you can choose to start with a template app or a blank project. Name the project and then select a blank project or template. 

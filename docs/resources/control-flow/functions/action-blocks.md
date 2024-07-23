@@ -1,7 +1,11 @@
 ---
+slug: /resources/action-blocks
 title: Action Blocks
+description: Learn how to use Action Blocks in your FlutterFlow app to and create reusable actions.
+tags: [Action Blocks, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+sidebar_position: 7
+keywords: [Action Blocks, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
-
 
 An Action Block is a set of actions that perform a specific task and can be reused in different parts of the app. If you find yourself repeatedly performing a particular set of operations in your app, it may be helpful to create an Action Block. This allows you to break down complex actions into smaller, more manageable units, making them easier to understand and modify in the future.
 

@@ -1,4 +1,9 @@
 ---
+slug: /integrations/authentication/generated-code
+title: Generated Code
+description: Learn about the generated code behind enabling authentication in FlutterFlow.
+tags: [FlutterFlow, Authentication, Generated Code, Custom Authentication, Firebase, Supabase]
+keywords: [FlutterFlow, Authentication, Generated Code, Custom Authentication, Firebase, Supabase]
 sidebar_label: Generated Code
 ---
 

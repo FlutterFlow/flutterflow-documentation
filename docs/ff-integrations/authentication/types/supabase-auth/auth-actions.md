@@ -1,3 +1,11 @@
+---
+slug: /integrations/authentication/supabase/auth-actions
+title: Auth Actions
+description: Learn how to add Supabase authentication actions in your FlutterFlow app.
+tags: [FlutterFlow, Auth Actions, Authentication, Supabase]
+sidebar_position: 1
+keywords: [FlutterFlow, Auth Actions, Authentication, Supabase]
+---
 
 # Authentication Actions
 Currently FlutterFlow supports the following Actions for Supabase Authentication:
@@ -8,7 +16,7 @@ This action provides users with multiple login options to access their accounts.
 
 Follow the steps below to add email login action:
 
-2. Select the widget(e.g., Button) on which you want to add the action.
+1. Select the widget(e.g., Button) on which you want to add the action.
 5. Select **Actions** from the [properties panel](/getting-started/ui-builder/properties-panel) (the right menu) and click + **Add Action**.
 8. Search and select the **Log in** (under *Backend/Database > Supabase Authentication*) action.
 11. Set **Auth Provider** to **Email**.
