@@ -1,5 +1,5 @@
 ---
-slug: /concepts/responsive/conditional-builder
+slug: /concepts/layouts/conditional-builder
 title: ConditionalBuilder
 description: Learn how to display different widgets based on certain conditions in your FlutterFlow app.
 tags: [FlutterFlow, ConditionalBuilder, Concepts]
