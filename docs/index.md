@@ -1,5 +1,7 @@
 ---
 title: FlutterFlow Documentation
+custom_edit_url: null
+showLastUpdateTime: false
 hide_title: true
 sidebar_label: Overview
 slug: /
@@ -18,11 +20,11 @@ import UsersIcon from '@site/static/icons/users.png';
 import BranchIcon from '@site/static/icons/branch_New.png';
 
 
-<FlutterFlowDocsLogo />
 
 
-# Quickly build beautiful apps, without limitation.
-### FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
+
+## Quickly build beautiful apps, without limitation.
+FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
 
 <InfoCards>
     <InfoCard icon={GearIcon} title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/intro/before-you-begin/setting-up-flutterflow" />
