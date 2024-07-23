@@ -104,4 +104,8 @@ You can find out if the user was successfuly added to the subscription by naviga
 ![img_2.png](img_2.png)
 
 
-Note: Currently, OneSignal integration supports Firebase authentication. If you want to use Supabase authentication, you will need to provide custom code to notify your users.
+:::info
+
+Currently, Our OneSignal integration supports Firebase authentication. If you want to use Supabase authentication, you may need to provide custom code to notify your users for now.
+
+:::
