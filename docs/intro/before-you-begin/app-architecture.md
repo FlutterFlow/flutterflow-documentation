@@ -8,7 +8,7 @@ Before you jump in and start using FlutterFlow, it's helpful to have an idea of 
 
 Traditionally, developing an app required writing a lot of code. You can think of code as a set of instructions for the computer, or device, executing the code. 
 
-The codebase is usually dividied up into two pieces: instructions for the frontend, and instructions for the backend. 
+The codebase is usually divided up into two pieces: instructions for the frontend, and instructions for the backend. 
 
 # Frontend vs Backend
 
@@ -33,11 +33,19 @@ The backend handles the request, and sends some data back in response - which th
 
 # Where does the code execute?
 
-Backend code runs on a server
+Backend code runs on a server, which could be located in a data center or hosted on a cloud platform like AWS, Google Cloud, or Azure. The server is responsible for handling requests, processing data, and sending responses back to the frontend.
 
-When you're dealing with native applications, like 
-
+Frontend code runs on the user's device. This could be a web browser for web applications or the operating system for mobile applications. The frontend code is responsible for displaying the user interface and handling user interactions.
 
 
 # Frontend architecture 
-When it comes to developing the frontend of your application, 
+
+When it comes to developing the frontend of your application, there are several key architectural patterns and best practices to consider. These include:
+
+- **Component-Based Architecture:** Breaking down the UI into reusable components, each responsible for a specific part of the interface. This makes the code more modular and easier to maintain.
+- **State Management:** Managing the state of the application, which includes the data displayed in the UI and the user's interactions.
+- **Responsive Design:** Ensuring that your application looks and works well on different screen sizes and orientations. This involves using flexible layouts and scalable assets.
+- **Performance Optimization:** Making sure your app runs smoothly by optimizing rendering, minimizing the number of network requests, and reducing the size of your assets.
+
+
+By understanding these concepts and implementing best practices, you can create robust and user-friendly applications with FlutterFlow.

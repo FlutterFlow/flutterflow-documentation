@@ -7,7 +7,9 @@ Linear ticket and [magic word](https://linear.app/docs/github#link-prs) Fixes DE
 ## Type of change
 - [ ] Typo fix 
 - [ ] New feature 
+- [ ] Enhancement to current docs
 - [ ] Removed outdated references
+- [ ] Update assets
 
 
 
