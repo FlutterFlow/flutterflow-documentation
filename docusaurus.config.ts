@@ -40,7 +40,10 @@ const config: Config = {
           blogSidebarTitle: 'FlutterFlow Blog',
           blogSidebarCount: 'ALL'
         },
-
+        gtag: {
+          trackingID: 'G-LC4SC6JY70',
+          anonymizeIP: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -134,44 +137,39 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} FlutterFlow. Built with Docusaurus.`,
     },
-    plugins: [
-      [
-        '@docusaurus/plugin-google-gtag',
-        {
-          trackingID: 'G-XXXXXXXXXX', // Your GA4 Measurement ID
-          anonymizeIP: true, // Optional: Anonymizes the IP address of the sender
-        },
-      ],
-    ],
-    // algolia: {
-    //   // The application ID provided by Algolia
-    //   appId: 'YOUR_APP_ID',
 
-    //   // Public API key: it is safe to commit it
-    //   apiKey: 'YOUR_SEARCH_API_KEY',
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'L5VTR6TWVD',
 
-    //   indexName: 'YOUR_INDEX_NAME',
+      // Public API key: it is safe to commit it
+      apiKey: 'bab16fbb5188c4b49fad968ebc643dd3',
 
-    //   // Optional: see doc section below
-    //   contextualSearch: true,
+      indexName: 'flutterflow--82026',
 
-    //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-    //   externalUrlRegex: 'external\\.com|domain\\.com',
+      // Optional: see doc section below
+      contextualSearch: true,
 
-    //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-    //   replaceSearchResultPathname: {
-    //     from: '/docs/', // or as RegExp: /\/docs\//
-    //     to: '/',
-    //   },
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      // externalUrlRegex: 'external\\.com|domain\\.com',
 
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
 
-    //   // Optional: path for search page that enabled by default (`false` to disable it)
-    //   searchPagePath: 'search',
+      // Optional: Algolia search parameters
+      searchParameters: {},
 
-    //   //... other Algolia params
-    // },
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: true,
+
+      //... other Algolia params
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
