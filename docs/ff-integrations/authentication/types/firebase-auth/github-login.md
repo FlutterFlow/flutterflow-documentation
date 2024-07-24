@@ -16,8 +16,8 @@ The GitHub auth provides a convenient way for users to authenticate and log in t
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#).
-- Complete [**Initial setup**](initial-setup.md) required for authentication.
+- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md).
+- Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 :::
 
 

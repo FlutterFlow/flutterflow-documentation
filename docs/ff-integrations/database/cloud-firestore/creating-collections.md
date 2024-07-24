@@ -19,7 +19,8 @@ A collection is a group of documents. For example, you could have a 'users*'* co
 :::info[Getting Started: Things to Know First]
 
 - Get to know how to [**structure the Firebase Database**](getting-started.md#structuring-the-database).
-- Ensure you've gone through and completed every step in the [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md) 
+- Ensure you've gone through and completed every step in the 
+[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md) 
   for your project.
 :::
 

@@ -20,7 +20,8 @@ FlutterFlow uses [**Firebase Cloud Messaging**](https://firebase.google.com/docs
 
 Before getting started with this section, ensure you have:
 
-* Completed all steps in the [**Firebase Setup**](/data-and-backend/firebase/firebase-setup).
+* Completed all steps in the 
+[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
 * Upgraded to a [**Blaze plan**](https://firebase.google.com/pricing) for your Firebase project.
 :::
 

@@ -15,8 +15,8 @@ Google Sign-In allows users to authenticate using their Google Accounts.
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#)
-- Complete [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md)
+- Complete [**Initial Setup**](auth-initial-setup)
 - Added **SHA-1 key** and regenerated **Config Keys**.
 :::
 

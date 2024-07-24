@@ -14,7 +14,8 @@ keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
 We allow you to write and deploy Firebase Cloud Functions directly within the platform. With an integrated code editor, writing JavaScript cloud functions is quick and user-friendly. Each function has customizable boilerplate settings, including pre-configured essentials like memory, region, and timeout.
 
 :::note
-You can find some interesting use cases [*here*](https://firebase.google.com/docs/functions/use-cases).
+Read up on some interesting use cases of 
+[**Cloud Functions**](https://firebase.google.com/docs/functions/use-cases).
 :::
 
 ## Adding Cloud Functions
@@ -40,7 +41,8 @@ Here are the step-by-step instructions to build such an example:
 :::info[Before you Begin]
 
 * Make sure the project is on Blaze plan on Firebase.
-* Completed all steps in the [Firebase Setup](/data-and-backend/firebase/firebase-setup).
+* Completed all steps in the
+[**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 :::
 
 ### 1. Add page state variables
@@ -50,6 +52,8 @@ For this example, you'll need to set up two [page state variables](/data-and-bac
 1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a 
 loading indicator during the logo creation process. Its value is set to *True* before initiating the API call and switched to *False* once the logo generation is complete.
 5. **logoImage (*****Type: ImagePath*****)**: This is used to hold the generated logo image. After a successful API call, the retrieved image URL is stored here, allowing the logo to be displayed in the Image widget.
+
+<p></p>
 ![img_6.png](imgs%2Fimg_6.png)
 
 ### 2. Build a page

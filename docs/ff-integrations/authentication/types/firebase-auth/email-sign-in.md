@@ -13,8 +13,8 @@ keywords: [FlutterFlow, Email Login, Authentication, Firebase]
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#)
-- Complete [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md)
+- Complete [**Initial Setup**](auth-initial-setup)
 :::
 
 ## Enable Email Login Provider in Firebase

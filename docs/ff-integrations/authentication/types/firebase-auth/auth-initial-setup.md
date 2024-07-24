@@ -2,7 +2,7 @@
 slug: /integrations/authentication/firebase/initial-setup
 title: Initial Setup
 description: Learn how to perform the initial setup for Firebase authentication in your FlutterFlow app.
-tags: [FlutterFlow, Initial Setup, Authentication, Firebase]
+tags: [Initial Setup, Authentication, Firebase]
 sidebar_position: 0
 keywords: [FlutterFlow, Initial Setup, Authentication, Firebase]
 ---
@@ -49,8 +49,7 @@ The 'users' collection stores the information for authenticated users.
 
 :::tip[Skip if...]
 You have already enabled 'Create User Collection' while creating a new
-project with a Firebase setup.
-
+project with [Firebase Setup](../../../firebase/connect-to-firebase-setup.md).
 :::
 
 1. Click on the Firestore tab from the Navigation Menu (left side of your
