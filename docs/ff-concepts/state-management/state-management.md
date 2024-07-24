@@ -15,7 +15,7 @@ In FlutterFlow, there are a few types of state variables that you can create:
 </figure>
 
 
-- State variables are themselves variables - meaning they have a *name* and a *data type*. 
+- State variables are themselves **variables** - meaning they have a *name* and a *data type*. 
 - They also have an initial value that is set when you create the variable. 
 - Once you create a state variable, it's value can be used to change the configuration of widget properties - like any other variable. 
 - You can update the value of state variables using the *Update State Variable* action.
@@ -25,10 +25,13 @@ You can learn more about state management from this video:
 <iframe src="https://www.youtube.com/embed/jD6L4xjYjJA?si=-RjniUB-K0ZsMoB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<p></p>
 
-<!-- TO DO: link to variables section + action secton -->
-
-<!-- TO DO: add link to app, page and component state variable sections -- and also link to something about widget state in built in widget section -->
+:::tip
+To learn more about state management in FlutterFlow, read up on [**Variables**](#) and how [**Page 
+State**](#), or 
+[**Component State**](#) or [**App State variables**](#) are modified in FlutterFlow. 
+:::
 
 
 
