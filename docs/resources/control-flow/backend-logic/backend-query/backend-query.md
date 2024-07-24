@@ -36,7 +36,10 @@ We offer you the following types of Backend Queries that you can specify on any 
 
 ## Change loading indicator
 
-While the backend query is busy retrieving results, it shows the default *Project Theme Loading Indicator* (which you can change from [*Navigation menu*](/getting-started/ui-builder/navigation-menu) *> Theme Settings > Design System > Loading Indicator*.) However, if you want to replace this with a custom loading indicator in a specific backend query, follow the instructions below:
+While the backend query is busy retrieving results, it shows the default *Project Theme Loading 
+Indicator* (which you can change from 
+[**Navigation menu**](../../../../../docs/intro/ff-ui/builder.md#navigation-menu) *> Theme 
+Settings > Design System > Loading Indicator*.) However, if you want to replace this with a custom loading indicator in a specific backend query, follow the instructions below:
 
 <div style={{
     position: 'relative',
@@ -138,7 +141,7 @@ For example, an e-commerce app can cache product data, such as product descripti
 Caching backend queries works for all [types of queries](/data-and-backend/backend-query#types-of-query).
 :::
 
-:::Tip[Single time Query]
+:::tip[Single time Query]
 For Firebase queries, enable Single Time Query if you want the query to fetch data only once. Otherwise, the query operates in real-time, updating automatically as soon as the data changes.
 :::
 

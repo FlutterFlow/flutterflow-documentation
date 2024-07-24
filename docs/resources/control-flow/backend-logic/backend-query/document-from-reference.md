@@ -14,7 +14,7 @@ This backend query would help you in retrieving information from a document refe
 :::info[Prerequisites]
 In order to use this backend query, you should have:
 * Completed all the steps of 
-[Firebase Setup](docs/ff-integrations/firebase/connect-to-firebase-setup.md) for 
+[Firebase Setup](../../../../../docs/ff-integrations/firebase/connect-to-firebase-setup.md) for 
   your project.
 * At least one **Firestore Collection** is defined in your project.
 :::

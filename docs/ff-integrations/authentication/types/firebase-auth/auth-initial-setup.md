@@ -52,8 +52,8 @@ You have already enabled 'Create User Collection' while creating a new
 project with [Firebase Setup](../../../firebase/connect-to-firebase-setup.md).
 :::
 
-1. Click on the Firestore tab from the Navigation Menu (left side of your
-  screen).
+1. Click on the Firestore tab from the 
+[**Navigation Menu**](../../../../../docs/intro/ff-ui/builder.md#navigation-menu).
 2. Click on the **+ Create Collection** button. If you have any other collection
   already added, you can click on the Plus button.
 3. Enter a collection_name (this can be anything, but we recommend 'users') and
