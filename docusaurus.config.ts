@@ -40,7 +40,10 @@ const config: Config = {
           blogSidebarTitle: 'FlutterFlow Blog',
           blogSidebarCount: 'ALL'
         },
-
+        gtag: {
+          trackingID: 'G-LC4SC6JY70',
+          anonymizeIP: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -134,15 +137,7 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} FlutterFlow. Built with Docusaurus.`,
     },
-    plugins: [
-      [
-        '@docusaurus/plugin-google-gtag',
-        {
-          trackingID: 'G-XXXXXXXXXX', // Your GA4 Measurement ID
-          anonymizeIP: true, // Optional: Anonymizes the IP address of the sender
-        },
-      ],
-    ],
+
     // algolia: {
     //   // The application ID provided by Algolia
     //   appId: 'YOUR_APP_ID',
