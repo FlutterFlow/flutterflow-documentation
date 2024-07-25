@@ -15,11 +15,14 @@ keywords: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
 
 We offer you the following types of Backend Queries that you can specify on any widget or page.
 
-* [**Query Collection**](/data-and-backend/backend-query/query-collection)**:** This query type is used to fetch a single record or a list of records from a Firestore Collection.
-* [**Document from Reference**](/data-and-backend/backend-query/document-from-reference)**:** Used to retrieve the details from a document reference.
-* [**API Call**](/data-and-backend/backend-query/api-call-query)**:** Used to initiate an API call.
-* [**SQLite Query**](/data-and-backend/backend-query/sqlite-query): Used to execute the SQL statement defined [here](/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries).
-* [**Algolia Search**](/data-and-backend/backend-query/algolia-search-query)**:** Used to trigger an Algolia search on a Firestore Collection.
+* [**Query Collection**](query-collection.md)**:** This query type is used to fetch a single record or a list of 
+  records from a Firestore Collection.
+* [**Document from Reference**](document-from-reference.md)**:** Used to retrieve the details from a document reference.
+* [**API Call Query**](api-call-query.md)**:** Used to initiate an API 
+  call.
+* [**SQLite Query**](sqlite-query.md): Used to execute the SQL statement defined [here]
+  (/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries).
+* [**Algolia Search**](algolia-search-query.md)**:** Used to trigger an Algolia search on a Firestore Collection.
 
 ## Difference between Actions & Backend Query
 
@@ -138,7 +141,7 @@ Caching a query can bring significant benefits to your app, including improved p
 For example, an e-commerce app can cache product data, such as product descriptions, prices, and images, to avoid making unnecessary API calls for each page load.
 
 :::note
-Caching backend queries works for all [types of queries](/data-and-backend/backend-query#types-of-query).
+Caching backend queries works for all [types of queries](#types-of-query).
 :::
 
 :::tip[Single time Query]

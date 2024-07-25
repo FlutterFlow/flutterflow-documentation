@@ -126,7 +126,7 @@ this [link](https://developers.google.com/android/guides/client-auth).
 
 :::warning[Release Guidelines]
 While releasing the app, make sure
-to [**get the key from Play Console**](https://docs.flutterflow.io/data-and-backend/firebase/authentication/phone-sign-in#release-mode).
+to [**get the key from Play Console**](#).
 :::
 
 1. Open a terminal window:

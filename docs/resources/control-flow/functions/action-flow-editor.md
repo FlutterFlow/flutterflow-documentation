@@ -4,7 +4,7 @@ title: Actions
 description: Learn how to use the Action Flow Editor in your FlutterFlow app to manage and streamline your backend logic.
 tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, Actions]
 toc_max_heading_level: 5
-sidebar_position: 3
+sidebar_position: 2
 keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 

@@ -28,8 +28,10 @@ You can learn more about state management from this video:
 <p></p>
 
 :::tip
-To learn more about state management in FlutterFlow, read up on [**Variables**](#) and how [**Page 
-State**](#), or 
+To learn more about state management in FlutterFlow, read up on 
+[**Variables**](../../resources/data-representation/overview.md#variable) and how 
+[**Page 
+State**](../../resources/ui-building-blocks/pages/page-lifecycle.md#page-state), or 
 [**Component State**](#) or [**App State variables**](#) are modified in FlutterFlow. 
 :::
 

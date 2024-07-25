@@ -3,7 +3,7 @@ slug: /resources/functions/utility
 title: Utility Functions
 description: Learn about the built-in utility functions available in FlutterFlow to enhance your app's UI logic.
 tags: [Functions]
-sidebar_position: 2
+sidebar_position: 1
 keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 
