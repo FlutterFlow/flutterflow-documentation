@@ -46,7 +46,7 @@ Here’s how you do it:
 </div>
 <p></p>
 
-1. Once the repository is created, install the [FlutterFlow GitHub App](https://github.com/apps/flutterflow-github-app) in your GitHub account.
+2. Once the repository is created, install the [FlutterFlow GitHub App](https://github.com/apps/flutterflow-github-app) in your GitHub account.
     
 <div style={{
     position: 'relative',
@@ -75,7 +75,7 @@ Here’s how you do it:
 </div>
 <p></p>
 
-1. You can now push your code to the repository.
+3. You can now push your code to the repository.
 
 <div style={{
     position: 'relative',

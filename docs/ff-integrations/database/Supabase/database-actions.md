@@ -150,9 +150,9 @@ com/embed/99f47689b5b147678ed197c6ea0facf6?sid=615f2ecf-c8d0-4124-b2fa-ca9798893
 <p></p>
 
 
-1. Now, you can use the **Action Output Variable Name** provided in the previous step to generate 
+8. Now, you can use the **Action Output Variable Name** provided in the previous step to generate 
 children from a variable on **ListView**.
-2. Finally, you can display data in a **Text** widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu > ***[children_from_variable_name]*** item > Get Row Field > select the row field** you want to display.
+9. Finally, you can display data in a **Text** widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu > ***[children_from_variable_name]*** item > Get Row Field > select the row field** you want to display.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/d30acf8e4451459689b0d295b87bb5f9?sid=9a4f5aec-59ef-4fa3-9e76-0de72e75f278" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

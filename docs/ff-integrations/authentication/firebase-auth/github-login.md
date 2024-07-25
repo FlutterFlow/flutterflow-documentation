@@ -64,7 +64,7 @@ To enable GitHub authentication in the Firebase:
 </div>
 <p></p>
 
-1. To test the app in Run Mode, add our domain to **Authorized domains**.
+5. To test the app in Run Mode, add our domain to **Authorized domains**.
     
 ![adding-authorized-domain-2.png](../imgs/adding-authorized-domain-2.png)
     

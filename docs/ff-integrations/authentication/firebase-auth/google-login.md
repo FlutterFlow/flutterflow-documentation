@@ -103,7 +103,7 @@ allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
-1. If you don't see the Web client created yet, you can create new one by
+4. If you don't see the Web client created yet, you can create new one by
    clicking **+ CREATE CREDENTIALS**, selecting OAuth client ID and then select
    Application type to Web application.
 

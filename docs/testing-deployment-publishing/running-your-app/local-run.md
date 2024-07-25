@@ -38,16 +38,16 @@ Here are the steps to use local run:
     
 ![setup-local-run](../imgs/setup-local-run.avif)
     
-1. To run the app locally, you'll need the Flutter SDK. Click the **Download** button to download it. **Note** that for iOS, ensure you have *Xcode* and *CocoaPods* installed, select the checkmark, and then click **Download**.
+3. To run the app locally, you'll need the Flutter SDK. Click the **Download** button to download it. **Note** that for iOS, ensure you have *Xcode* and *CocoaPods* installed, select the checkmark, and then click **Download**.
     
 ![download-flutter-sdk](../imgs/download-flutter-sdk.avif)
 
-1. Once it's ready to use, click the **Continue** button. This will run the **`Flutter Doctor`** command to check your environment for any issues that might prevent you from running the applications. It performs a series of checks to verify that the necessary tools and dependencies are correctly installed and configured on your system.
+4. Once it's ready to use, click the **Continue** button. This will run the **`Flutter Doctor`** command to check your environment for any issues that might prevent you from running the applications. It performs a series of checks to verify that the necessary tools and dependencies are correctly installed and configured on your system.
     
     
 ![doctor-output](../imgs/doctor-output.avif)
 
-1. Optional: You can set up your preferred IDE to open the project code directly from the local run. To do this, select your IDE, **Select Path**, and click **Save**. This feature is useful for debugging and understanding your project code. For this step, ensure you have setup [Flutter SDK](#2-setup-flutter-sdk) and [IDE](#3-installing-ide-and-plugins).
+5. Optional: You can set up your preferred IDE to open the project code directly from the local run. To do this, select your IDE, **Select Path**, and click **Save**. This feature is useful for debugging and understanding your project code. For this step, ensure you have setup [Flutter SDK](#2-setup-flutter-sdk) and [IDE](#3-installing-ide-and-plugins).
 
 :::info
 
@@ -61,11 +61,11 @@ Here are the steps to use local run:
 ![config-IDE](../imgs/config-IDE.avif)
 
 
-1. You can also specify whether the code exported by local run should be formatted. Disabling code formatting improves the export speed which helps in faster iteration. But if you want to look into the code or make changes, it's recommended to keep this enabled.
+6. You can also specify whether the code exported by local run should be formatted. Disabling code formatting improves the export speed which helps in faster iteration. But if you want to look into the code or make changes, it's recommended to keep this enabled.
     
 ![code-export](../imgs/code-export.avif)
 
-1. From the test menu, click on the **Get Devices** button. This will list devices connected to your system. You can add or remove devices from the list by clicking on the **+** and **-** buttons, respectively. Once you've finalized your selection, simply click on the **Test** button to see your app running on selected devices. **Tip**: In the Mac OS desktop app, you can directly open the simulator by clicking on the **Launch iOS Simulator** text.
+7. From the test menu, click on the **Get Devices** button. This will list devices connected to your system. You can add or remove devices from the list by clicking on the **+** and **-** buttons, respectively. Once you've finalized your selection, simply click on the **Test** button to see your app running on selected devices. **Tip**: In the Mac OS desktop app, you can directly open the simulator by clicking on the **Launch iOS Simulator** text.
 
 <div style={{
     position: 'relative',
@@ -94,7 +94,7 @@ Here are the steps to use local run:
 </div>
 <p></p>
 
-1. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
+8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
 
 **Hot Reload** updates UI instantly without losing its state, while **Hot Restart** recompiles 
 and reloads the entire app, resetting its state. For more info, you can visit [Flutter's Hot Reload documentation](https://docs.flutter.dev/tools/hot-reload).
@@ -337,7 +337,7 @@ If you don't see your device in the list after refreshing, follow these steps:
     
     This will list all connected devices that the Local Run recognizes.
     
-1. If you still don't see your device, try restarting it.
+3. If you still don't see your device, try restarting it.
     1. **For iOS**: Open Xcode, go to the "Window" menu, select "Devices and Simulators," choose your simulator, and click "Restart."
     2. **For Android**: Open the Android Studio > Device Manager, choose your emulator, and click the "Play" button.
     3. You can also restart the emulator directly from the command line using Flutter:
@@ -350,7 +350,7 @@ If you don't see your device in the list after refreshing, follow these steps:
         
         **Note** that replace `<emulator_id>` with the ID of your emulator. You can find the ID by running `flutter emulators`.
         
-1. Try running `flutter devices` again.
+4. Try running `flutter devices` again.
 </p>
 </details>
 

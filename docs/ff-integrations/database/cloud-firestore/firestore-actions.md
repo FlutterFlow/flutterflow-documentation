@@ -93,7 +93,7 @@ com/embed/7da68f8517f147b8b51a5059655f9729?sid=780aa288-9e06-4f79-92cc-2d66782f8
 
 <p></p>
 
-1. Now, you can use the *Action Output Variable Name* provided in the previous step to fetch the 
+7. Now, you can use the *Action Output Variable Name* provided in the previous step to fetch the 
 details. For example, to display data on Text widget, select the **Text widget > Properties Panel > Text > Set Variable menu > ***[action_output_variable_name]*** > select the field** you want to display.
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -165,9 +165,9 @@ To manually query a collection, follow the steps below to define this action to 
 com/embed/f416df1ad705467780a389c6381eae77?sid=776597d6-4574-40f1-8339-d5aedb0acf92" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
-1. Now, you can use the *Action Output Variable Name* provided in the previous step to generate 
+9. Now, you can use the *Action Output Variable Name* provided in the previous step to generate 
 children from a variable on **ListView**.
-2. Finally, you can display data in a **Text** 
+10. Finally, you can display data in a **Text** 
    widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu** 
    **> [children_from_variable_name] item > select the field** you want to display.
 

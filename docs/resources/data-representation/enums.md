@@ -51,6 +51,6 @@ Here are some real-world examples where using Enums is beneficial:
     </iframe>
 </div>
 
-1. Access the Enum values by navigating to the **Set from Variable** menu, then selecting **Enums > [your enum name] > Values**.
+2. Access the Enum values by navigating to the **Set from Variable** menu, then selecting **Enums > [your enum name] > Values**.
 
 ![enums.avif](../imgs/enums.avif)

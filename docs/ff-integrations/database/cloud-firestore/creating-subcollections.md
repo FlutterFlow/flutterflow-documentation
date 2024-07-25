@@ -121,7 +121,7 @@ The steps to build the chat room page are as follows:
 
 ![img_24.png](img_24.png)
 
-1. On the ListView, query a subcollection as you would query any 
+2. On the ListView, query a subcollection as you would query any 
    other collection; except 
    for the subcollection, you must provide its parent collection reference (i.e., chat_rooms reference in this case). This way, you'll only see messages from that specific chat room.
 
@@ -130,7 +130,7 @@ com/embed/e069c07b5dd14b228099534464997bca?sid=05c512e7-60f7-4495-89e7-e0fb9f915
 
 <p></p>
 
-1. On tap of 'Send' button, add the [create document](firestore-actions.md#create-document-action) 
+3. On tap of 'Send' button, add the [create document](firestore-actions.md#create-document-action) 
    action for 
    `messages` collection and provide current `chat_rooms` reference. Also, provide the message 
    to add via **From Variable > Widget State > [TextFieldName]**.

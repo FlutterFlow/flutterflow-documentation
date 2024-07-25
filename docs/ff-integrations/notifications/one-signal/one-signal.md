@@ -62,11 +62,11 @@ com/embed/55a72de8e15e418581cc8b49fc108b12?sid=052ead4c-96e4-4e9a-95c5-40162eb0d
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
-1. Now, at appropriate event in your app, you can [add an action](/actions/actions/integrations/onesignal#adding-onesignal-action) that adds the user to the OneSignal's subscription.
+4. Now, at appropriate event in your app, you can [add an action](/actions/actions/integrations/onesignal#adding-onesignal-action) that adds the user to the OneSignal's subscription.
 
-2. To test SMS functionality, follow the continuation of the instructions in the [SMS documentation](https://documentation.onesignal.com/docs/sending-sms-messages#sending-sms-notifications-from-dashboard).
+5. To test SMS functionality, follow the continuation of the instructions in the [SMS documentation](https://documentation.onesignal.com/docs/sending-sms-messages#sending-sms-notifications-from-dashboard).
 
-3. To try out sending Emails, continue with instructions
+6. To try out sending Emails, continue with instructions
    from [here](https://documentation.onesignal.com/docs/sending-email#sending-email-notifications-from-dashboard).
 
 

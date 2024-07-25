@@ -145,13 +145,13 @@ Here are the steps to build such an example:
 
 ![img_2.png](imgs/img_2.png)
 
-1. Prepare a list of contacts.
+2. Prepare a list of contacts.
 
 <p></p>
 
 ![img_3.png](imgs/img_3.png)
 
-1. Add the **ListView > StickyHeader** widgets.
+3. Add the **ListView > StickyHeader** widgets.
 
     1. In ListView, generate dynamic children from a variable that holds the letters.
     2. Inside the `StickyHeader` section, add a widget to display the current letter.
@@ -161,7 +161,7 @@ com/embed/39bb5fc9068f4a759a4b0d6fd62e3f16?sid=ed5c274e-f1e0-4830-9702-dd35ac2d6
 
 
 
-1. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container** 
+4. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container** 
 inside to display the list of matching contacts.
 
     1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Code expression](/advanced-functionality/code-expression).

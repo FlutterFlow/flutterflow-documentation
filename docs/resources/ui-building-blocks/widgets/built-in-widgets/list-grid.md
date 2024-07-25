@@ -111,7 +111,7 @@ return list;
 }
 ```
 
-1. The custom action returns the modified list, which you can use to update the actual list using the update app state variable action.
+5. The custom action returns the modified list, which you can use to update the actual list using the update app state variable action.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/bb961c71d11a4e7d8869170727d1423d?sid=a356162d-76df-45bb-930c-bebf8358ce6c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

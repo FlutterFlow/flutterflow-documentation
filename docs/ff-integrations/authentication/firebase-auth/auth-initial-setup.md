@@ -136,7 +136,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#).
 - **Windows**: Click the Windows icon, navigate to the 'Windows System' folder,
   and open 'Command Prompt' either by clicking or right-clicking it.
 
-1. Copy the following command (based on your operating system) and select Enter.
+2. Copy the following command (based on your operating system) and select Enter.
 
 <details>
   <summary>Windows</summary>
@@ -159,9 +159,9 @@ While releasing the app, make sure to [**get the key from Play Console**](#).
   </div>
 </details>
 
-1. After being prompted for the key password, type 'android' and press 'Enter'.
+3. After being prompted for the key password, type 'android' and press 'Enter'.
    Note: For security reasons, you won't see the password as you type it.
-2. Copy the SHA1 key.
+4. Copy the SHA1 key.
 
 #### Add the SHA-1 key in the Firebase Console
 

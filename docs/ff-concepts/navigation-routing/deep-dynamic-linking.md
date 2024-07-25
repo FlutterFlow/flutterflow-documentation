@@ -386,7 +386,7 @@ To pass custom data with the link, you need to have the following:
   <figcaption class="centered-caption">Adding parameter on page</figcaption>
 </figure>
 
-1. In the **Route Settings**, include a parameter as part of the route by prefixing it with a
+2. In the **Route Settings**, include a parameter as part of the route by prefixing it with a
    colon (**:**) for example, `profilePage/:profileId`.
 
 

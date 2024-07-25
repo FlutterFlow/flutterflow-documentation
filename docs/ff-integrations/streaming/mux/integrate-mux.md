@@ -120,7 +120,7 @@ It should look like this:
   <figcaption class="centered-caption">BroadcastName (BottomSheet Component)</figcaption>
 </figure>
 
-#### **2.3 StartBroadcast Page**
+#### 2.3 StartBroadcast Page
 
 This page hosts the MuxBroadcast widget that is responsible for starting and stopping the live
 broadcast.
@@ -135,7 +135,7 @@ Here's how it looks:
   <figcaption class="centered-caption">StartBroadcast Page</figcaption>
 </figure>
 
-#### **2.4 ViewBroadcast Page**
+#### 2.4 ViewBroadcast Page
 
 This page hosts the **VideoPlayer** widget showing the live or past stream.
 
@@ -183,7 +183,7 @@ To do so:
   <figcaption class="centered-caption">Action to open bottom sheet</figcaption>
 </figure>
 
-1. Now, on click of a button (inside the bottom sheet,) add
+2. Now, on click of a button (inside the bottom sheet,) add
    an action to Navigate to the StartBroadcast page.
 
     * Inside this action, click on the **Define** button. This will open the StartBroadcast page,
@@ -191,7 +191,7 @@ To do so:
     * After defining the parameter, open this action again and pass its value **From Variable >
       Widget State > [TextField name]**.
 
-2. Add one more action to dismiss the bottom sheet.
+3. Add one more action to dismiss the bottom sheet.
 
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/navigate-1.gif?alt=media&token=67b2c9ec-4e15-4ae6-83ae-f53c29c3f0bf"></img>>
@@ -336,7 +336,7 @@ like the below:
   <figcaption class="centered-caption">getPlaybackIdFromUrl</figcaption>
 </figure>
 
-1. createUrlFromPlaybackId
+2. createUrlFromPlaybackId
 
 <figure>
     ![img_15.png](img_15.png)
