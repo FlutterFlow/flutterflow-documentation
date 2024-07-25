@@ -1,9 +1,10 @@
 ---
-slug: tabbar
+slug: /concepts/navigation/tabbar
 title: TabBar
-tags: []
 description: Learn how to use the TabBar widget in FlutterFlow to create a horizontal row of tabs for navigating different content views in your app.
+tags: [TabBar, FlutterFlow, Navigation, Widgets]
 sidebar_position: 1
+keywords: [TabBar, FlutterFlow, Navigation, Widgets]
 ---
 
 # TabBar

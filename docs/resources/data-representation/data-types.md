@@ -1,9 +1,10 @@
 ---
-slug: data-types
+slug: /resources/data-representation/data-types
 title: Data Types
-tags: []
 description: Dive into the diverse range of data types supported by FlutterFlow, from basic primitives like integers and strings to complex composite types and built-in functionalities tailored for app development.
+tags: [Data Types, FlutterFlow, Data Representation]
 sidebar_position: 1
+keywords: [Data Types, FlutterFlow, Data Representation]
 ---
 
 # Data Types

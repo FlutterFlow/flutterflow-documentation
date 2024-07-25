@@ -1,9 +1,10 @@
 ---
-slug: push-to-github
+slug: /exporting/push-to-github
 title: Push to GitHub Repo
-tags: []
 description: Learn how to connect your Flutter project to a GitHub repository and manage custom code.
+tags: [GitHub, Custom Code]
 sidebar_position: 0
+keywords: [GitHub, Collaboration, FlutterFlow, Custom Code]
 ---
 
 # Push to GitHub Repo

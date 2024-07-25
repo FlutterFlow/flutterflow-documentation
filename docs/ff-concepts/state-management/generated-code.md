@@ -1,10 +1,13 @@
 ---
-slug: generated-code
+slug: /concepts/state-management/generated-code
 title: Generated Code
-tags: []
+description: Learn about the state management used in FlutterFlow's generated code.
+tags: [FlutterFlow, Generated Code, Concepts, State Management]
 toc_max_heading_level: 5
 sidebar_position: 5
+keywords: [FlutterFlow, Generated Code, State Management, Concepts]
 ---
+
 # State Management
 
 FlutterFlow manages state in several ways, depending on the scope.

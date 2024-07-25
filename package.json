@@ -16,10 +16,12 @@
     "dev": "docusaurus start"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.1",
-    "@docusaurus/plugin-content-docs": "^3.2.1",
-    "@docusaurus/plugin-google-gtag": "^3.2.0",
-    "@docusaurus/preset-classic": "3.1.1",
+    "@docsearch/css": "^3.6.1",
+    "@docsearch/js": "^3.6.1",
+    "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-content-docs": "^3.4.0",
+    "@docusaurus/plugin-google-gtag": "^3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",

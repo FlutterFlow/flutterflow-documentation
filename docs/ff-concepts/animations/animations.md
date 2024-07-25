@@ -1,8 +1,10 @@
 ---
-slug: animations
+slug: /concepts/animations
 title: Animations
-sidebar_position: 1
 description: Learn the basics of animations in FlutterFlow.
+tags: [FlutterFlow, Animations, Concepts]
+sidebar_position: 1
+keywords: [FlutterFlow, Animations, Concepts]
 ---
 
 Enhancing your app with animations significantly improves the user experience, making it more engaging and intuitive. In FlutterFlow, you have several options to add animations to your app:

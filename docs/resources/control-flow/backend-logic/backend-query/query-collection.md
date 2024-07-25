@@ -1,8 +1,11 @@
 ---
+slug: /resources/backend-query/query-collection
 title: Query Collection
+description: Learn how to query a collection in your FlutterFlow app.
+tags: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 2
+keywords: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
-
 # Query Collection
 
 **Query Collection** helps you to retrieve a record (or a list of records) automatically whenever a

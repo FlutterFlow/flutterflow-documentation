@@ -1,9 +1,10 @@
 ---
-slug: design-system
+slug: /concepts/design-system
 title: Design System
-tags: []
 description: Discover how to create a consistent UI/UX across your app with a design system in FlutterFlow.
+tags: [FlutterFlow, Design System, UI/UX, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, Design System, UI/UX, Concepts]
 ---
 
 # Design System

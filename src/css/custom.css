@@ -1,70 +1,49 @@
 
 :root {
-  --ifm-font-family-base: 'Arial', 'Helvetica', sans-serif;
-  --ifm-font-family-monospace: 'Roboto Mono', monospace; /* For monospace font if needed */
+  /*
+  See css var + hsl color palette technique:
+  https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
+   */
   --border: 1px solid #d9d6d6;
   --selected-border: 1px solid var(--ifm-color-primary);
-  --ifm-code-font-size: 95%; /* Adjusted code font size */
-  --graytext: #95a1ac;
-  --secondary-400: #ee8b60;
-  --gray500: #7c8791;
-  --primary: #4b39ef;
-  --dark-600: #1a1f24;
-  --medium-blue: #3124a1;
-  --dark_600: #262d34;
-  --dark_800: #14181b;
-  --tertiary: #39d2c0;
-  --light_alternate: #dee2ed;
-  --white: white;
-  --black-700: #1d2429;
-  --black-900: #090f13;
-  --tertiary600: #249689;
-  --light-background: #f8faff;
-  --primary-30: rgba(75, 57, 239, .3);
-  --line: #323b45;
-  --primary200: #9489f5;
-  --gradient-1: #ffb6f5;
-  --error: #e65454;
-  --gradient-2: #ffedc4;
-  --tertiary-600: #c3724c;
-  --size: 8px;
-  --size-2: 12px;
-}
 
-html[data-theme='light'] {
-  --primary-text: var(--black-900);
-  --ifm-color-primary: #4B39EF; /* Primary brand color */
-  --ifm-color-primary-dark: #3B2FBF; /* Darker shade for hover states */
-  --ifm-color-primary-darker: #2D25A1; /* Even darker shade for active states */
-  --ifm-color-primary-darkest: #1E1A82; /* Darkest shade used for accents */
-  --ifm-color-primary-light: #5C51FF; /* Lighter primary shade */
-  --ifm-color-primary-lighter: #8A82FF; /* Even lighter shade for backgrounds */
-  --ifm-color-primary-lightest: #B7B2FF; /* Lightest primary shade */  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Line highlighting in code */
-
+  --site-primary-hue-saturation: 167 68%;
+  --site-color-feedback-background: #f0f8ff;
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
+  /* Use a darker color to ensure contrast, ideally we don't need important */
+  --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
+  --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
 }
 
 html[data-theme='dark'] {
-  --primary-text: var(--white);
-  --ifm-color-primary: #786aff; /* Primary brand color, lighter purple for visibility on dark backgrounds */
-  --ifm-color-primary-dark: #6255c8; /* Dark shade for hover states, toned down for dark mode */
-  --ifm-color-primary-darker: #5042a3; /* Even darker shade for active states, balanced for contrast */
-  --ifm-color-primary-darkest: #3d3180; /* Darkest shade used for accents, dark yet visible */
-  --ifm-color-primary-light: #8e7eff; /* Lighter primary shade, appears vibrant against dark surfaces */
-  --ifm-color-primary-lighter: #a295ff; /* Even lighter shade for backgrounds, soft and subtle */
-  --ifm-color-primary-lightest: #b6adff; /* Lightest primary shade, nearly pastel against dark modes */
-  --ifm-code-font-size: 95%; /* Maintained font size for readability */
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter line highlighting in code for dark mode */
-  h1, h2, h3, h4, h5, h6, p {
-    color: #ffffff; /* Set the text color for headings and body text */
-  }
-  ul, ol {
-    color: #ffffff; /* Set the text color for lists */
-  }
-
+  --site-color-feedback-background: #2a2929;
+  --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
 }
 
+[data-theme='light'] {
+  --ifm-color-primary: #4b39ef; /* Primary brand color */
+  --ifm-color-primary-dark: #3d2fbd; /* Darker shade for hover states */
+  --ifm-color-primary-darker: #372aae; /* Even darker shade for active states */
+  --ifm-color-primary-darkest: #211778; /* Darkest shade used for accents */
+  --ifm-color-primary-light: #4737dc; /* Lighter primary shade (Adjusted) */
+  --ifm-color-primary-lighter: #6050f6; /* Even lighter shade for backgrounds (Adjusted) */
+  --ifm-color-primary-lightest: #6c5cfa; /* Lightest primary shade (Adjusted) */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Line highlighting in code */
+}
 
+[data-theme='dark'] {
+  --primary-text: var(--white);
+  --ifm-color-primary: #39d2c0; /* Primary brand color, lighter purple for visibility on dark backgrounds */
+  --ifm-color-primary-dark: #2cb5a5; /* Dark shade for hover states, toned down for dark mode */
+  --ifm-color-primary-darker: #24a697; /* Even darker shade for active states, balanced for contrast */
+  --ifm-color-primary-darkest: #1b9c8d; /* Darkest shade used for accents, dark yet visible */
+  --ifm-color-primary-light: #67f6e5; /* Lighter primary shade, appears vibrant against dark surfaces (Adjusted) */
+  --ifm-color-primary-lighter: #7bfaeb; /* Even lighter shade for backgrounds, soft and subtle (Adjusted) */
+  --ifm-color-primary-lightest: #8afbee; /* Lightest primary shade, nearly pastel against dark modes (Adjusted) */
+  --ifm-code-font-size: 95%; /* Maintained font size for readability */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter line highlighting in code for dark mode */
 
+}
 .small-image {
   width: 400px;
   height: auto;
@@ -75,67 +54,103 @@ html[data-theme='dark'] {
   height: auto;
 }
 
-body {
-  color: #333;
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 20px;
+
+.footer--dark {
+  --ifm-footer-background-color: #2b3137;
 }
 
-h1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 44px;
-  color:var(--primary-text);
-  font-family: Product Sans, sans-serif;
-
+.unique-tabs .tabs__item {
+  line-height: 16px;
+  margin-right: 8px;
 }
 
-h2 {
-  margin-top: 20px;
-  font-size: 26px;
-  font-family: Product Sans, sans-serif;
-
+.unique-tabs .tabs__item--active {
+  border: 0;
+  color: #fff;
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-tabs-color-active);
 }
 
-h3 {
-  color:var(--black-700);
-  font-size: 22px;
-  font-weight: 700;
-  font-family: Product Sans, sans-serif;
-
-
+[data-theme='light'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: rebeccapurple;
 }
 
-h4 {
-  color:var(--black-700);
-  font-size: 20px;
-  font-weight: 600;
-  font-family: Product Sans, sans-serif;
+[data-theme='dark'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: rebeccapurple;
+}
 
+[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-emphasis-700);
+  --docsearch-container-background: rgb(94 100 112 / 70%);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgb(47 55 69 / 70%);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+          -26.5deg,
+          var(--ifm-color-emphasis-200) 0%,
+          var(--ifm-color-emphasis-100) 100%
+  );
 }
 
 
+.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
 
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
 
+/* Used to test CSS insertion order */
+.test-marker-site-custom-css-unique-rule {
+  content: 'site-custom-css-unique-rule';
+}
 .centered-caption {
   text-align: center;
   font-size: 12px; /* Set the font size to 16px */
-}
-div.alert {
-  margin-bottom: 24px;
-}
-
-.arcade-container {
-margin-bottom: 24px;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 59.5256312165264%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
 }
@@ -156,4 +171,13 @@ margin-bottom: 24px;
 .landscape-image {
   width: auto;
   height: 400px;
+}
+
+
+div.alert {
+  margin-bottom: 24px;
+}
+
+.arcade-container {
+margin-bottom: 24px;
 }

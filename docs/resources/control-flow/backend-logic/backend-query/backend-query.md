@@ -1,5 +1,10 @@
 ---
+slug: /resources/backend-query
 title: Backend Query
+description: Learn about backend queries in your FlutterFlow app, including how to set up and manage queries.
+tags: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
+sidebar_position: 1
+keywords: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # Backend Query

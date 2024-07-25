@@ -1,9 +1,10 @@
 ---
-slug: automated-tests
+slug: /testing/automated-tests
 title: Automated Tests
-tags: []
 description: Discover how to effectively utilize automated testing in FlutterFlow to ensure your app performs as intended.
+tags: [Automated Tests, Testing]
 sidebar_position: 0
+keywords: [Automated Tests, Testing, FlutterFlow]
 ---
 
 # Automated Tests

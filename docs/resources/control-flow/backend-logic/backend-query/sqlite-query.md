@@ -1,7 +1,12 @@
 ---
+slug: /resources/backend-query/sqlite-query
 title: SQLite Query
+description: Learn how to perform SQLite queries in your FlutterFlow app.
+tags: [SQLite, Query, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 6
+keywords: [SQLite, Query, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
+
 # SQLite Query
 
 SQLite Query can be set up to automatically execute SQL statements as soon as a page or widget loads. This feature is useful for fetching data from the database to display on a page or widget, such as populating a ListView with items or showing user preferences in Text widgets.

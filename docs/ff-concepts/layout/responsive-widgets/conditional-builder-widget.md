@@ -1,11 +1,11 @@
 ---
-slug: conditional-builder
+slug: /concepts/layouts/conditional-builder
 title: ConditionalBuilder
-tags: []
 description: Learn how to display different widgets based on certain conditions in your FlutterFlow app.
+tags: [FlutterFlow, ConditionalBuilder, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, ConditionalBuilder, Concepts]
 ---
-
 # ConditionalBuilder
 
 The `ConditionalBuilder` widget allows you to dynamically display different widgets based on certain conditions (either [single](/advanced-functionality/conditional-logic#single-condition) or [multiple](/advanced-functionality/conditional-logic#multiple-conditions-and-or)). Using this widget, you can define different conditions, each associated with a specific widget to be displayed when that condition is true. It's like having a switch that shows different things depending on what's happening in your app.

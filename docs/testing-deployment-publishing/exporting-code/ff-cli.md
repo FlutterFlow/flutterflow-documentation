@@ -1,10 +1,12 @@
 ---
-slug: ff-cli
+slug: /exporting/ff-cli
 title: FlutterFlow CLI
-tags: []
 description: Learn how to download and manage your FlutterFlow projects locally using the FlutterFlow CLI.
+tags: [CLI, Collaboration, FlutterFlow]
 sidebar_position: 1
+keywords: [CLI, Collaboration, FlutterFlow, Projects, Local Management]
 ---
+
 
 # FlutterFlow CLI
 
@@ -14,7 +16,7 @@ The [FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli) tool allows you 
 
 To use the FlutterFlow CLI, you first need to install it globally using Dart's package manager with the following command:
 
-```json
+```
 dart pub global activate flutterflow_cli
 ```
 

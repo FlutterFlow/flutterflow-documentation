@@ -1,8 +1,10 @@
 ---
-slug: page-transition-animations
+slug: /concepts/animations/page-transition
 title: Page Transition Animations
-sidebar_position: 4
 description: Learn how to add page transition animations in your FlutterFlow app.
+tags: [FlutterFlow, Page Transition Animations, Concepts]
+sidebar_position: 4
+keywords: [FlutterFlow, Page Transition Animations, Concepts]
 ---
 
 The animation that plays while transitioning from one page of the app to another is known as a page transition. In FlutterFlow, you can customize this animation to enhance the user experience.
