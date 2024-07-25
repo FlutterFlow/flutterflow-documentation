@@ -25,7 +25,13 @@ The steps to build such an example are as follows:
 
 ### 1. Create page state variable
 
-In this example, we have two images of a shelf: one with empty space for one plant and another with all plants on the shelf. To control which image to show based on whether the correct item is dropped on the shelf, we need a [page state variable](/data-and-backend/state-management/page-state). Therefore, [create a page state variable](/data-and-backend/state-management/page-state#id-1.-creating-page-state-variable) named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
+In this example, we have two images of a shelf: one with empty space for one plant and another 
+with all plants on the shelf. To control which image to show based on whether the correct item 
+is dropped on the shelf, we need a 
+[page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#page-state). 
+Therefore, 
+[create a page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state)
+named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
 
 <figure>
     ![img_1.png](img_1.png)

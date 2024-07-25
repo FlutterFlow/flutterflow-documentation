@@ -126,7 +126,7 @@ Now you can pass the dynamic token:
 
 1. Select the **Headers** tab and click on the **+ Add Header** button.
 5. Inside the input box, enter the header name as **Authorization** followed by a colon (:) and then enter any variable name inside the brackets (e.g., **Authorization: Bearer [auth\_token]**).
-8. Select the **Variables** tab and [create a new variable](/data-and-backend/api-calls/api-calls-101#creating-variables) with the same name you provided inside the brackets. This will be used to pass the token value from the app state variable to the API call.
+8. Select the **Variables** tab and [create a new variable](#creating-variables) with the same name you provided inside the brackets. This will be used to pass the token value from the app state variable to the API call.
 
 Now from the API call (that requires an authentication token), pass the token value from the app state variable.
 
@@ -168,7 +168,7 @@ To pass the query parameters for `GET` or `DELETE` API call:
 5. Enter the **Name** of the query parameter.
 8. Set the **Value Source** to **Specific Value** or **From Variable**.
 	1. If you want to pass this value from your page, app state variable, or any other source (i.e.
-   , dynamic value), choose the **From Variable,** and then from the **Select Variable** dropdown, choose the already created variable (see how to [create variable](/data-and-backend/api-calls/api-calls-101#creating-variables)) or click on **+ Create New Variable**. Note: This will immediately create a new variable with the same name as of query parameter. However, you still need to open the **Variables** tab and set its **Type**.
+   , dynamic value), choose the **From Variable,** and then from the **Select Variable** dropdown, choose the already created variable (see how to [create variable](#creating-variables)) or click on **+ Create New Variable**. Note: This will immediately create a new variable with the same name as of query parameter. However, you still need to open the **Variables** tab and set its **Type**.
 	5. If you want to pass a static/fixed value, select the **Specific Value**, set its **Type,** and enter its **Value**.
 
 Below is the example of passing query parameter for the URL -> `https://api.instantwebtools.net/v2/passenger?page=10&size=20`
@@ -183,7 +183,7 @@ In a rare case, you might want to pass the query parameters for the other method
 
 1. In your API URL, replace the hard-coded values with a meaningful name inside the brackets (e.g.,
 from `https://api.instantwebtools.net/v2/passenger?``**page=0**` to `https://api.instantwebtools.net/v2/passenger?``**page=[page]**`).
-5. Select the **Variables** tab and [create a new variable](/data-and-backend/api-calls/api-calls-101#creating-variables) with the same name you provided inside the brackets.
+5. Select the **Variables** tab and [create a new variable](#creating-variables) with the same name you provided inside the brackets.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b394eae85f5641aebb961316069a5eac?sid=ecd9e11f-bc3d-4484-a692-c3ced1d6d38b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -253,8 +253,7 @@ Here you'll see creating a request body in the following formats:
 
 To create a request body in JSON format:
 
-1. First, If you haven't already, [create variables]
-(/data-and-backend/api-calls/api-calls-101#creating-variables) (e.g., username and password variables that will be required to pass values from a login page to the login API call).
+1. First, If you haven't already, [create variables](#creating-variables) (e.g., username and password variables that will be required to pass values from a login page to the login API call).
 5. Select the **Body** tab and set the Body dropdown to **JSON**.
 8. Copy-paste your request body and replace the values with the variables by dragging and dropping them inside your JSON body.
 
@@ -282,13 +281,12 @@ com/embed/f0fb3fbd67804c33b5e3b077381a86cb?sid=c6050f21-c200-4290-b16e-bbfe84420
 
 To create a request body in x-www-form-urlencoded format:
 
-1. First, If you haven't already, [create variables]
-(/data-and-backend/api-calls/api-calls-101#creating-variables) (e.g., username and password variables that will be required to pass values from a login page to the login API call).
+1. First, If you haven't already, [create variables](#creating-variables) (e.g., username and password variables that will be required to pass values from a login page to the login API call).
 5. Select the **Body** tab and set the Body dropdown to **x-www-form-urlencoded**.
 8. Click on the **+ Add Parameter** and enter the **Name** of the parameter.
 11. Set the **Value Source** to **Specific Value** or **From Variable**.
 	1. If you want to pass this value from your page, app state variable, or from any other source 
-    (i.e., dynamic value), choose the **From Variable,** and then from the **Select Variable** dropdown, choose the already created variable (see how to [create variable](/data-and-backend/api-calls/api-calls-101#creating-variables)) or click on **+ Create New Variable**. Note: This will immediately create a new variable with the same name as of parameter. However, you still need to open the **Variables** tab and set its **Type**.
+    (i.e., dynamic value), choose the **From Variable,** and then from the **Select Variable** dropdown, choose the already created variable (see how to [create variable](#creating-variables)) or click on **+ Create New Variable**. Note: This will immediately create a new variable with the same name as of parameter. However, you still need to open the **Variables** tab and set its **Type**.
 	5. If you want to pass a static/fixed value, select the **Specific Value**, set its **Type,** and enter its **Value**.
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -314,15 +312,19 @@ com/embed/89c86a2f87df4a7c9316e4ade9563976?sid=23eea851-5c59-45d0-8699-d952c62d7
 
 ## API response (JSON) to/from Data Type
 
-Converting between API Response (JSON) and Data Types is often referred to as JSON deserialization and serialization. It allows you to convert JSON data from an API response into a [custom Data Type](/data-and-backend/custom-data-types) when you receive it. Also, it enables you to convert your custom Data Type back into JSON when sending data in an API request.
+Converting between API Response (JSON) and Data Types is often referred to as JSON 
+deserialization and serialization. It allows you to convert JSON data from an API response into 
+a [**Custom Data Type**](../../../data-representation/custom-data-types.md) when you receive it. Also, 
+it enables you to convert your custom Data Type back into JSON when sending data in an API request.
 
 :::info
-This is a more robust and maintainable way to work with JSON data in your app. It reduces complexity and potential errors (e.g., typos) compared to manually navigating [JSON paths](/data-and-backend/api-calls/api-calls-101#json-path).
+This is a more robust and maintainable way to work with JSON data in your app. It reduces complexity and potential errors (e.g., typos) compared to manually navigating [JSON paths](#json-path).
 :::
 
 ### Create custom Data Type matching to JSON structure
 
-First, [create a Data Type](/data-and-backend/custom-data-types#creating-custom-data-type) with the same structure as your API response. Here's what the sample JSON response looks like after mapping it into a custom Data Type.
+First, [create a Data Type](../../../data-representation/custom-data-types.md#creating-custom-data-type) with the same 
+structure as your API response. Here's what the sample JSON response looks like after mapping it into a custom Data Type.
 
 
 <figure>
@@ -330,7 +332,8 @@ First, [create a Data Type](/data-and-backend/custom-data-types#creating-custom-
   <figcaption class="centered-caption">Creating custom data type as per the JSON response</figcaption>
 </figure>
 
-After this, you can choose to [convert to](/data-and-backend/api-calls/api-calls-101#json-to-data-type) or [from](/data-and-backend/api-calls/api-calls-101#json-from-data-type) the Data Type based on your requirements.
+After this, you can choose to [convert to](#json-to-data-type) or [from](#json-from-data-type) 
+the Data Type based on your requirements.
 
 ### JSON to Data Type
 
@@ -340,8 +343,7 @@ Let's see how to get the JSON into the custom Data Type using an example that fe
 
 Here's how you do it:
 
-1. First, ensure that you [create a custom data type]
-(/data-and-backend/api-calls/api-calls-101#create-custom-data-type-matching-to-json-structure) that matches your JSON structure.
+1. First, ensure that you [create a custom data type](#create-custom-data-type-matching-to-json-structure) that matches your JSON structure.
 2. Open your API call definition> **Response & Test tab > Response Type >** enablethe **Parse as 
    Data Type**. Select the **Data Type** that you want to convert into. For this example, it's 'AllProducts'.
 
@@ -349,8 +351,7 @@ Here's how you do it:
 
 <p></p>
 
-3. On ListView, after adding the [API call backend query]
-(/data-and-backend/backend-query/api-call-query), access the values by setting the following options.
+3. On ListView, after adding the [API call backend query](docs/resources/control-flow/backend-logic/backend-query/api-call-query.md), access the values by setting the following options.
 
 	1. **Generate Children from Variable** by setting **API Response Options** to **As Data Type**.
 	5. Set **Available Options** to **Data Structure Field** because we want to grab only a specific field, which has a list of products and not other items such as 'total' and 'skip'.
@@ -572,8 +573,8 @@ Learn more about **[JSONPath](https://support.smartbear.com/alertsite/docs/monit
 
 To add JSON path:
 
-1. First, [create](/data-and-backend/api-calls/create-and-test-api-call#creating-api-calls) and 
-[test](/data-and-backend/api-calls/create-and-test-api-call#testing-api-calls) your API call.
+1. First, [create](#) and [test](#) your API call.
+
 5. Inside the **JSON Paths** section, click on the **+ Add JSON Path**.
 8. Enter your **JSON Path** and give it a **Name**.
 11. If you entered the valid expression, you'll see the starting part of the response under the **Response Preview** column. To see the complete response, click on the **Preview** icon.
@@ -616,8 +617,13 @@ To make the API call private, open the **Advanced Settings** tab, turn on the **
 Optionally, you can force a user to be authenticated via the Firebase authentication to make this API call. To do so, turn on the **Require Authentication** toggle.
 
 :::info
-* If you make the API call private, **Firebase** should be connected to your project. Follow the instructions on [**this page**](/data-and-backend/firebase/firebase-setup) for integrating Firebase with FlutterFlow.
-* If you enable the **Require Authentication** toggle, **Firebase Authentication** must be configured appropriately. Check out [this page](/data-and-backend/firebase/authentication/initial-setup) for setting up authentication.
+* If you make the API call private, **Firebase** should be connected to your project. Follow the 
+  instructions on 
+[**this page**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) for integrating Firebase with FlutterFlow.
+* If you enable the **Require Authentication** toggle, **Firebase Authentication** must be 
+  configured appropriately. Check out 
+[this page](../../../../ff-integrations/authentication/types/firebase-auth/initial-setup.md) for 
+  setting up authentication.
 :::
 
 <div style={{
@@ -657,7 +663,7 @@ You can usually determine if an API supports streaming by checking its documenta
 :::
 
 :::note[Learn More]
-Learn more about adding and using Streaming API [**here**](/data-and-backend/api-calls/streaming-api-example-ai-review-summary).
+Learn more about adding and using [**Streaming APIs**](streaming-api.md).
 :::
 
 ### Change proxy settings
@@ -675,7 +681,9 @@ To disable current proxy settings and provide your proxy URL:
 
 ### Cache API Results
 
-You can enable this option for a specific API call. So when your app runs, multiple calls to this endpoint with the same arguments will be cached. Learn more about caching [here](/data-and-backend/backend-query#backend-query-caching).
+You can enable this option for a specific API call. So when your app runs, multiple calls to 
+this endpoint with the same arguments will be cached. Learn more about caching 
+[here](../backend-query/backend-query.md#backend-query-caching).
 
 ### Decode Responses as UTF-8
 
@@ -703,7 +711,8 @@ You can copy the boilerplate code into ChatGPT and request the completion for th
 
 :::tip[Additonally]
 * You can add multiple interceptors to any API call.
-* When the same interceptor is used by multiple APIs, you can create an [**API group**](/data-and-backend/api-calls/create-and-test-api-call#grouping-api-calls) and add the interceptor under the **Advanced Group Settings**. However, you can override the interceptor for any API within the group if you wish to.
+* When the same interceptor is used by multiple APIs, you can create an [**API group**](#) and 
+  add the interceptor under the **Advanced Group Settings**. However, you can override the interceptor for any API within the group if you wish to.
 :::
 
 <div class="video-container"><iframe src="https://www.loom.

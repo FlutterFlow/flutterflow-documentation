@@ -261,18 +261,22 @@ com/embed/238400b5445b444db712f492584b0d6e?sid=7b496882-0280-4920-924c-640fddeff
 
 To do so:
 
-1. Ensure you have [**Query Collection**]
-(/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection) or [**Document from Reference**](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-document) added on a widget with **Single Time Query** disabled.
+1. Ensure you have [**Query Collection**](#) or [**Document from Reference**](#) added on a widget with **Single Time Query** disabled.
 5. Now select the widget, head over to **Actions**, and click **+ Add Action**.
 8. Select the **On Data Change** tab. That means actions added under this will be called whenever the data changes.
-11. Now, you can [add any action](/actions/actions#adding-action) here.
+11. Now, you can 
+[add any Action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) 
+    here.
 
 :::info
 * Actions will be triggered whenever the data is added, updated, or deleted.
 * If you are adding this on ListView, ensure you disable the infinite scroll.
 :::
 
-Here is an example showing the [snackbar](/actions/actions/alerts-notifications/show-snack-bar) message when the data changes in a collection.
+Here is an example showing the 
+[**Snackbar**](../../../resources/ui-building-blocks/pages/page-elements.md#show-snackbar-action)
+message when the data 
+changes in a collection.
 
 <figure>
     ![img_27.png](img_27.png)

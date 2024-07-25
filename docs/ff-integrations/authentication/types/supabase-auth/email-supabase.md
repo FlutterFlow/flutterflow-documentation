@@ -62,8 +62,8 @@ Also, see how to [build a page layout](/widgets-and-components/ui-and-layout-101
 Now, you can proceed to add an account creation flow, which basically consists of three actions in the following order:
 
 1. Supabase [Create Account Action](/actions/actions/backend-database/supabase-authentication/create-account#email-signup)
-5. Supabase [insert row action](/actions/actions/backend-database/supabase#1.-insert-row-action)
-8. [Navigate](#) action
+5. Supabase [Insert row action](/actions/actions/backend-database/supabase#1.-insert-row-action)
+8. [Navigate](../../../../ff-concepts/navigation-routing/nav-overview.md) action
 
 The first one creates an account in Supabase and adds an email and password in the "auth.users" table (i.e., *Protected schemas > schema auth*). However, this action does not create an entry in the "users" table you created [here](/data-and-backend/supabase/supabase-authentication/initial-setup#1.-creating-a-users-table). To do so, you need to add another action called Supabase *insert row* action with the user's details, such as email and profile\_pic. Once the entry has been created, you can navigate to the home page using the navigate action.
 

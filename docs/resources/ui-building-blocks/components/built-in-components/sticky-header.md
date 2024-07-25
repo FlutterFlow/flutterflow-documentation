@@ -93,7 +93,7 @@ Here are the steps to build such an example:
 5. Add the **StickyHeader** widget from the **Base Elements** tab.
 8. Inside the **StickyHeader Header**, add a widget that you want to stay at the top when scrolling. For this example, it's the search bar.
 11. Inside the **StickyHeader Content**, add the **ListView > Container** widgets to display a list of users.
-14. Query and display a list of users in a **ListView**. See how to do this [here](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection).
+14. Query and display a list of users in a **ListView**. See how to do this [here](#).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/fb1aa4fcb11240ce95f5e4539ee0c224?sid=c1e3773c-993d-4752-a5ff-770dde87545b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

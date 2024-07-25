@@ -38,8 +38,8 @@ These steps are mandatory if you want to send push notifications to iOS devices:
 
 Here are the steps to send push notifications:
 
-1. [Enabling push notification](#1-enabling-push-notification)
-2. [Only for iOS: Configuring iOS app](#2-only-for-ios-configuring-ios-app)
+1. [Enabling push notification](#enabling-push-notification)
+2. [Only for iOS: Configuring iOS app](#only-for-ios-configuring-ios-app)
 3. [Sending push notifications](#3-sending-push-notifications)
 
 ### Enabling push notification
@@ -48,7 +48,9 @@ Here are the steps to send push notifications:
 **Please note, push notifications will not work in these scenarios:**
 
 * Push notifications will not work on an iOS simulator. To test you will need to use a real device.
-* Push notifications will not be delivered to users who are logged out of your app. To send push notifications to users who are not logged in, consider implementing [**anonymous Firebase login**](/data-and-backend/firebase/authentication/anonymous-sign-in) within your app
+* Push notifications will not be delivered to users who are logged out of your app. To send push 
+  notifications to users who are not logged in, consider implementing [**Anonymous Firebase 
+  Login**](../../authentication/types/firebase-auth/anonymous-login.md) within your app
 * Push notifications will not work if you have the app open on your device.
 :::
 
@@ -235,7 +237,10 @@ If you need to send push notifications to multiple users, consider a scenario wh
   <figcaption class="centered-caption">Multiple user document references in app state variable</figcaption>
 </figure>
 
-Learn more about working with [app state variables](/data-and-backend/state-management/app-state).
+:::info
+Learn more about working with 
+[**App State variables**](../../../resources/data-representation/app-state.md).
+:::
 
 ### 2. Trigger Push Notification [Action]
 

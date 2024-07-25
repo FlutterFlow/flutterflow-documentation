@@ -135,7 +135,9 @@ To configure Firestore Database:
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
 :::info
-We recommend updating your Firebase security rules before deploying your app. Please see [this link](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules) for additional information on Firestore security rules.
+We recommend updating your Firebase security rules before deploying your app. Please see [this 
+link](../database/cloud-firestore/firestore-rules.md) for additional information on 
+Firestore security rules.
 :::
 
 3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.

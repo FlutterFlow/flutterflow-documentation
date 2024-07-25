@@ -79,14 +79,14 @@ is based on the other collection. For example, loading or searching the comments
 
 :::info
 
-You can secure the data using the [**Firestore Rules**](/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules).
+You can secure the data using the [**Firestore Rules**](firestore-rules.md).
 :::
 
 
 ---
 
 :::tip[Learn more]
-[MongoDB](https://www.mongodb.com/), [Cassandra](https://cassandra.apache.org/_/index.html), and [ElasticSearch](https://www.elastic.co/) are the other No-SQL database solutions that exist in the market.
+[**MongoDB**](https://www.mongodb.com/), [**Cassandra**](https://cassandra.apache.org/_/index.html), and [**ElasticSearch**](https://www.elastic.co/) are the other No-SQL database solutions that exist in the market.
 
 If you are a visual learner, you can check out the video:
 

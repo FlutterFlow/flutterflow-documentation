@@ -47,7 +47,8 @@ Here are the step-by-step instructions to build such an example:
 
 ### 1. Add page state variables
 
-For this example, you'll need to set up two [page state variables](/data-and-backend/state-management/page-state#1.-creating-page-state-variable):
+For this example, you'll need to set up two 
+[Page State variables](../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state):
 
 1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a 
 loading indicator during the logo creation process. Its value is set to *True* before initiating the API call and switched to *False* once the logo generation is complete.
@@ -100,7 +101,8 @@ by configuring the input and output.
         appropriate Type for the output, like 'String' for text. For this example, set it to *ImagePath* to get the URL of the generated logo.
 
 5. To input data: Click **+ Add parameters**. **Name** the parameter, select its **Type**, choose single or multiple items (**Is List** option), and uncheck **Nullable** if the value can be null. For this example, add a parameter 'prompt' with *Type* set to *String*.
-8. When using [Custom Data Types](/data-and-backend/custom-data-types), Cloud Function expects JSON, matching each field in the Data Type to a key-value pair in the JSON. If the Data Type is a list, the function expects a list of JSONs. For example, for a custom data type named 'Person' with fields 'Name' and 'Age,' the function should return:
+8. When using [Custom Data Types](../../resources/data-representation/custom-data-types.md), 
+   Cloud Function expects JSON, matching each field in the Data Type to a key-value pair in the JSON. If the Data Type is a list, the function expects a list of JSONs. For example, for a custom data type named 'Person' with fields 'Name' and 'Age,' the function should return:
 
  ```
         //JSON:

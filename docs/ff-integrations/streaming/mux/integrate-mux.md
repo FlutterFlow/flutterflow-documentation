@@ -187,8 +187,7 @@ To do so:
 </figure>
 
 2. Now, on click of a button (inside the bottom sheet,) add
-   an [action to navigate](/actions/actions/navigation/navigate#navigate-to-action) to the
-   StartBroadcast page.
+   an action to Navigate to the StartBroadcast page.
 
     * Inside this action, click on the **Define** button. This will open the StartBroadcast page,
       where you can define a parameter that will accept the stream name.
@@ -205,7 +204,7 @@ To do so:
 ### 5. Adding broadcast action (start and stop)
 
 On the StartBroadcast page, you have the MuxBroadcast widget (already added in
-step [4.3](/widgets-and-components/widgets/base-elements/muxbroadcast#4.3-startbroadcast-page)). You
+step 4.3). You
 can use this widget to add the following broadcast actions:
 
 * **On Broadcast Start**: Triggers when you click on the start the broadcast button.

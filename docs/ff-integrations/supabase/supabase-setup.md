@@ -2,7 +2,7 @@
 slug: /integrations/supabase/setup
 title: Supabase Setup
 description: Learn how to set up Supabase in your FlutterFlow app for database and authentication functionalities.
-tags: [FlutterFlow, Supabase, Setup, Integration]
+tags: [Supabase, Setup, Integration]
 sidebar_position: 1
 keywords: [FlutterFlow, Supabase, Setup, Integration]
 ---
@@ -49,7 +49,8 @@ com/embed/048ec7fadee04a11acab7c0ff65e0593?sid=3a429983-8512-4d60-af85-f2ffc1bac
 
 
 :::note
-To use Supabase authentication, you must [**create a "users" table**](/data-and-backend/supabase/supabase-authentication/initial-setup#1.-creating-a-users-table).
+To use Supabase authentication, you must 
+[**create a "users" table**](../authentication/types/supabase-auth/initial-setup.md#1-creating-a-users-table).
 
 :::
 
