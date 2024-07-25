@@ -82,7 +82,7 @@ You can also create a new branch from any existing branch.
 </div>
 <p></p>
 
-2. Make some changes in the new branch, and from the same menu, select the **Merge** option.
+1. Make some changes in the new branch, and from the same menu, select the **Merge** option.
 
 :::info
 
@@ -118,7 +118,7 @@ You can also create a new branch from any existing branch.
 </div>
 <p></p>
 
-3. Now, you'll see a screen that will display if there are any conflicts. If you don’t have any conflicts, you can simply go ahead and click **Merge Branch**.
+1. Now, you'll see a screen that will display if there are any conflicts. If you don’t have any conflicts, you can simply go ahead and click **Merge Branch**.
 
 ![merge](../imgs/merge.avif)
 

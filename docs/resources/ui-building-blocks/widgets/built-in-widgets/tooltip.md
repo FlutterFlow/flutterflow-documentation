@@ -16,7 +16,7 @@ To add the *Tooltip* widget to your app:
 
 1. Identify the widget you want to provide a description for and right-click on it. Select **Wrap 
 Widget** and then select **Tooltip** widget.
-5. Now select the **Tooltip** widget, move to the **Properties Panel > Message > Text**, and enter the message you want to display.
+2. Now select the **Tooltip** widget, move to the **Properties Panel > Message > Text**, and enter the message you want to display.
 
 <div style={{
     position: 'relative',

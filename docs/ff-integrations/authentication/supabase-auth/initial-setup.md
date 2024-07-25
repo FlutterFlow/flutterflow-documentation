@@ -17,7 +17,7 @@ To use authentication, you will need to complete the following initial setup:
 
 :::info[Prerequisites]
 Before you begin, make sure you have completed the 
-[**Supabase Setup**](../../../supabase/supabase-setup.md).
+[**Supabase Setup**](../../supabase/supabase-setup.md).
 :::
 
 ### 1. Creating a "users" table

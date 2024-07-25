@@ -11,7 +11,7 @@ keywords: [App Builder, FlutterFlow, UI, Design]
 # App Builder
 
 On opening the project, you'll see the App Builder, which consists of four main sections: 
-[Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties panel](#properties-panel).
+[Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties Panel](#properties-panel).
 
 ![app-builder](imgs/builder.avif)
 
@@ -39,12 +39,13 @@ Here is a list of all the features accessible from the navigation menu:
 
 ## ToolBar
 
-From [ToolBar](toolbar), you can search for project resources, change canvas size, see project history, branching, optimization and enhancements, view-download code, and run your app.
+From [ToolBar](toolbar.md), you can search for project resources, change canvas size, see project history, branching, optimization and enhancements, view-download code, and run your app.
 
 ## Canvas Area
 
-In the [Canvas Area](canvas), you can see a preview of a device's screen and build your app page.
+In the [Canvas Area](canvas.md), you can see a preview of a device's screen and build your app page.
 
 ## Properties Panel
 
-The Properties Panel lets you modify both the visual appearance and interactive behavior of UI elements on the canvas. It allows you to add [Actions](#), set up a [Backend Query](#), add [Animations](#) and more.
+The Properties Panel lets you modify both the visual appearance and interactive behavior of UI 
+elements on the canvas. It allows you to add [Actions](../../resources/control-flow/functions/action-flow-editor.md), set up a [Backend Query](../../resources/control-flow/backend-logic/backend-query/backend-query.md), add [Animations](../../ff-concepts/animations/animations.md) and more.

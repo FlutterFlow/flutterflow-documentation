@@ -80,6 +80,7 @@ To update the app state variable, we need to add an action to the 'Add to Bag' b
         allow="clipboard-write">
     </iframe>
 </div>
+
 ### Use app state variable
 
 The variable can now be accessed via set from variable menu. For example, on the cart page, you can loop through the app state variable to display each item.

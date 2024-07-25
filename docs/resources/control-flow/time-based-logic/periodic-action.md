@@ -28,7 +28,7 @@ Page Load** action trigger of your page or on any widget that should start the p
 
 The properties of the Periodic Action look like this:
 
-![periodic-action.png](imgs%2Fperiodic-action.png)
+![periodic-action.png](imgs/periodic-action.png)
 
 ## Stop Periodic Action
 

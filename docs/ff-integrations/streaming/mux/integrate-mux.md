@@ -91,15 +91,12 @@ sheet. Let's see how to do that:
 
 On this page:
 
-1. [Add the ListView](#)
-   to show all broadcasts.
+1. Add the **ListView** to show all broadcasts.
 
     * Inside the ListView, add
-      the [Card](/widgets-and-components/widgets/layout-elements/card) > [Row](/widgets-and-components/widgets/layout-elements/row) > [Text](/widgets-and-components/widgets/base-elements/text) (
-      to show stream name) and [Icon](/widgets-and-components/widgets/base-elements/icon) (to
-      indicate if the stream is live).
+      the **Card** > **Row** > **Text** (to show stream name) and Icon (to indicate if the stream is live).
 
-2. [Add the FloatingActionButton](#)
+2. Add the **FloatingActionButton**
    to open a bottom sheet.
 
 After adding, it should look similar to this:
@@ -114,7 +111,7 @@ After adding, it should look similar to this:
 This will be used to get the stream name from users.
 
 Create a new component called *BroadcastName*which will be used as
-a [Bottom sheet](#). Inside the component, add a [TextField](#) and a [Button](#).
+a **Bottom sheet**. Inside the component, add a **TextField** and a **Button**.
 
 It should look like this:
 
@@ -140,9 +137,9 @@ Here's how it looks:
 
 #### **2.4 ViewBroadcast Page**
 
-This page hosts the *VideoPlayer* widget showing the live or past stream.
+This page hosts the **VideoPlayer** widget showing the live or past stream.
 
-On this page, add the [VideoPlayer](/widgets-and-components/widgets/base-elements/videoplayer)
+On this page, add the **VideoPlayer**
 widget and remove its height and width (This will make it fullscreen).
 
 <figure>
@@ -158,12 +155,12 @@ the broadcast icon based on whether the stream is live.
 
 To do so:
 
-2. [Query a collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection)
+1. [Query a collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection)
    called *broadcasts* on a ListView.
-5. [Order the collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#ordering-a-collection-query)
+2. [Order the collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#ordering-a-collection-query)
    by *time* field.
-8. [Add the conditional visibility](/advanced-functionality/conditional-visibility#adding-conditional-visibility)
-   on an icon (that indicates if the stream is live) based on the *is\_live* field.
+3. [Add the conditional visibility](/advanced-functionality/conditional-visibility#adding-conditional-visibility)
+   on an icon (that indicates if the stream is live) based on the *is_live* field.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/retrieve-list.gif?alt=media&token=1889ef3c-35b9-4aa2-8576-5f8440243538"></img>>
 
@@ -186,7 +183,7 @@ To do so:
   <figcaption class="centered-caption">Action to open bottom sheet</figcaption>
 </figure>
 
-2. Now, on click of a button (inside the bottom sheet,) add
+1. Now, on click of a button (inside the bottom sheet,) add
    an action to Navigate to the StartBroadcast page.
 
     * Inside this action, click on the **Define** button. This will open the StartBroadcast page,
@@ -194,7 +191,7 @@ To do so:
     * After defining the parameter, open this action again and pass its value **From Variable >
       Widget State > [TextField name]**.
 
-3. Add one more action to dismiss the bottom sheet.
+2. Add one more action to dismiss the bottom sheet.
 
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/navigate-1.gif?alt=media&token=67b2c9ec-4e15-4ae6-83ae-f53c29c3f0bf"></img>>
@@ -217,17 +214,15 @@ To create a new document when the broadcast is started:
 
 1. Select the **MuxBroadcast** widget from the widget tree or canvas area.
 
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open
    an **Action flow Editor** in a new popup window.
 
 3. Under the **On Broadcast Start:**
 
-    - Add
-      the [Create Document](/actions/actions/backend-database/firestore#1.-defining-create-document-action)
-      action.
+    - Add the Create Document action.
     - Set the collection to *broadcasts*.
     - Click on the **+ Add Fields** button and set the value of the field as per the following:
-        - **is\_live** > Specific Value > True.
+        - **is_live** > Specific Value > True.
         - **name** > From Variable > broadcastName (page parameter name).
         - **url** > From Variable > Widget State > Mux Playback URL (This holds the URL of the
           Livestream and is available when you add the MuxBroadcast widget).
@@ -240,11 +235,11 @@ To create a new document when the broadcast is started:
   <figcaption class="centered-caption">Creating a document when a broadcast is started</figcaption>
 </figure>
 
-When the broadcast is stopped, you must update the same document for the *is\_live* field with
+When the broadcast is stopped, you must update the same document for the *is_live* field with
 False. To do so:
 
 1. Select the **MuxBroadcast** widget from the widget tree or canvas area.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open
    an **Action flow Editor** in a new popup window.
 3. Under the **On Broadcast Stop:**
 
@@ -253,7 +248,7 @@ False. To do so:
       action.
     - Set the reference to Action Outputs > broadcastOutput (action output variable name set in
       previous step) > Reference.
-    - Click on the **+ Add Fields** button and set the **is\_live** > Specific Value > False.
+    - Click on the **+ Add Fields** button and set the **is_live** > Specific Value > False.
 
 4. Also, add one more action to **Navigate Back**.
 
@@ -281,15 +276,14 @@ Here's the flow to retrieve playback Id of an ended stream:
 
 You can achieve this by adding the following two APIs to your project:
 
-* [**getLiveStreamId
-  **](https://docs.mux.com/api-reference/video#operation/get-asset-or-livestream-id): Returns live
+* [**getLiveStreamId**](https://docs.mux.com/api-reference/video#operation/get-asset-or-livestream-id): Returns live
   stream Id based on the current playback Id.
 * [**getPastLiveStream**](https://docs.mux.com/api-reference/video#operation/list-assets): Returns
   playback id of ended stream based on the live stream Id.
 
 :::info
 
-* Learn more about adding APIs [**here**](#) to your project.
+* Learn more about adding [**APIs**](../../../resources/control-flow/backend-logic/api/rest-api.md) to your project.
 * These APIs will be used in [**step 8**](#8-navigate-to-the-viewbroadcast-page).
   :::
 
@@ -312,8 +306,8 @@ And here is the JSON path you can use to extract the required value.
 
 ![img_12.png](img_12.png)
 
-You can get the Authorization token by performing base64 encoding on your 'MUX\_TOKEN\_ID:
-MUX\_TOKEN\_SECRET'. You can also use [this](https://www.base64encode.org/) online tool to do just
+You can get the Authorization token by performing base64 encoding on your 'MUX_TOKEN_ID:
+MUX_TOKEN_SECRET'. You can also use [this](https://www.base64encode.org/) online tool to do just
 that.
 
 ![img_13.png](img_13.png)
@@ -332,7 +326,7 @@ When you call the APIs created in the previous step, you will need to extract th
 the URL and create the URL back from the playback Id.
 
 To achieve this, you
-can [create two custom functions](/customizing-your-app/custom-functions/custom-functions) that look
+can [create two custom functions](../../../ff-concepts/adding-customization/custom-functions.md) that look
 like the below:
 
 1. getPlaybackIdFromUrl
@@ -342,7 +336,7 @@ like the below:
   <figcaption class="centered-caption">getPlaybackIdFromUrl</figcaption>
 </figure>
 
-2. createUrlFromPlaybackId
+1. createUrlFromPlaybackId
 
 <figure>
     ![img_15.png](img_15.png)
@@ -361,7 +355,7 @@ To navigate to the ViewBroadcast page and pass the URL of the live or past strea
 
 1. Select the Card widget from the widget tree or canvas area.
 2. Open the action flow editor and click on the **+ Add Conditional Action**.
-3. Select the **broadcasts Document > is\_live**.
+3. Select the **broadcasts Document > is_live**.
 4. Under the **TRUE** section:
 
     * Add an action to navigate to the ViewBroadcast page. **Note**: While doing so, define the
@@ -400,13 +394,13 @@ to [**test it on real device devices**](#).
 ## Customizing MuxBroadcast
 
 You can customize the appearance and behavior of this widget using the various properties available
-under the [properties panel](/getting-started/ui-builder/properties-panel).
+under the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel).
 
 ### Show streaming view
 
 On the canvas, when you add this widget, it shows the 'Before streaming' view (i.e., flip camera and
 a start streaming button). To see how it will look when the stream is started, you can turn on this
-option from the [properties panel](/getting-started/ui-builder/properties-panel).
+option from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel).
 
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/show-straming-view.gif?alt=media&token=daeb95b8-e231-482d-baa9-d03cc305d717"></img>
@@ -446,7 +440,7 @@ To customize a button that allows you to start a stream:
    under the **Start Button Style** section.
 
 3. To change the button's text, open the **Start Button Text** section and set the **Text**. You can
-   also [customize the text](/widgets-and-components/widgets/widget-commonalities#styling-text) if
+   also [customize the text](../../../resources/ui-building-blocks/widgets/widget-commonalities.md#styling-text) if
    needed.
 
 4. To change the button's icon, open the **Start Button Icon** section and select the new icon. You
@@ -510,7 +504,7 @@ screen).
 To customize the duration indicator:
 
 1. Open the **Duration Text Style** section
-   and [change its text style](/widgets-and-components/widgets/widget-commonalities#styling-text).
+   and [change its text style](../../../resources/ui-building-blocks/widgets/widget-commonalities.md#styling-text).
 2. To change the indicator appearance, open the **Duration Container** section and use the property
     such as **Background Color** and **Border Radius**.
 

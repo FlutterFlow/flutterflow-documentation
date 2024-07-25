@@ -14,14 +14,14 @@ Currently FlutterFlow supports the following Actions for Supabase Authentication
 
 This action provides users with multiple login options to access their accounts.
 
-Follow the steps below to add email login action:
+Follow the steps below to add Email Login action:
 
 1. Select the widget(e.g., Button) on which you want to add the action.
-5. Select **Actions** from the [properties panel](/getting-started/ui-builder/properties-panel) (the right menu) and click + **Add Action**.
-8. Search and select the **Log in** (under *Backend/Database > Supabase Authentication*) action.
-11. Set **Auth Provider** to **Email**.
-14. Set the **Email Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
-17. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu) and click + **Add Action**.
+3. Search and select the **Log in** (under *Backend/Database > Supabase Authentication*) action.
+4. Set **Auth Provider** to **Email**.
+5. Set the **Email Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
+6. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/supabase-login-action.gif?alt=media&token=a4aa0271-50b9-450f-b1e0-69860f0e66b3"></img>
 
@@ -38,12 +38,12 @@ Follow the steps below to add email signup action:
 
 1. Select the widget(e.g., Button) on which you want to add the action.
 
-5. Select **Actions** from the [properties panel](/getting-started/ui-builder/properties-panel) (the right menu), **Open** the **Action Flow Editor,** and click + **Add Action**.
-8. Search and select the **Create Account** (under *Backend/Database > Supabase Authentication*) action.
-11. Set **Auth Provider** to **Email**.
-14. Set the **Email** **Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
-17. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
-20. Similarly, If you have a confirm password field in your UI, set the **Confirm Password Field** to the appropriate one.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu), **Open** the **Action Flow Editor,** and click + **Add Action**.
+3. Search and select the **Create Account** (under *Backend/Database > Supabase Authentication*) action.
+4. Set **Auth Provider** to **Email**.
+5. Set the **Email** **Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
+6. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
+7. Similarly, If you have a confirm password field in your UI, set the **Confirm Password Field** to the appropriate one.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/create-account-action.gif?alt=media&token=372a8285-bd24-4279-b141-4a02085168c0"></img>
 
@@ -55,10 +55,10 @@ Follow the steps below to add this action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
 
-5. Select **Actions** from the Properties Panel (the right menu), If it's the first action, 
+2. Select **Actions** from the Properties Panel (the right menu), If it's the first action, 
    click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action 
    tile (inside **Action Flow Editor**) and select **Add Action**.
-8. Search and select the **Log Out** (under **Backend/Database > Supabase Authentication**) action.
+3. Search and select the **Log Out** (under **Backend/Database > Supabase Authentication**) action.
 
 ![img_6.png](img_6.png)
 

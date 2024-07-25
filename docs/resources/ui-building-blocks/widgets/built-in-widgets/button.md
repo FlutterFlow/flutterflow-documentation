@@ -23,13 +23,13 @@ Some significant properties are illustrated below:
 Define the initial appearance of your button, including its size, color, border, and padding. 
 These settings determine how the button looks under default conditions.
 
-![button.png](imgs%2Fbutton.png)
+![button.png](imgs/button.png)
 
 ### Button Disabled & Hover Settings
 
 Customize how your button appears when disabled or when a user hovers over it. These settings allow you to alter the button's color, border, and elevation to indicate its state visually.
 
-![button-disabled.png](imgs%2Fbutton-disabled.png)
+![button-disabled.png](imgs/button-disabled.png)
 
 Additionally, you can define the style of the text inside the Button and, if enabled, the style of the Icon within the Button.
 

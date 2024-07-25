@@ -8,12 +8,12 @@ or height, and style of the divider from the Properties Panel.
 Here are the properties in detail:
 
 <figure>
-    ![divider.png](imgs%2Fdivider.png)
+    ![divider.png](imgs/divider.png)
   <figcaption class="centered-caption">Divider (Horizontal) Properties </figcaption>
 </figure>
 
 <figure>
-    ![v-divider.png](imgs%2Fv-divider.png)
+    ![v-divider.png](imgs/v-divider.png)
   <figcaption class="centered-caption">Vertical Divider Properties </figcaption>
 </figure>
 

@@ -15,7 +15,7 @@ Google Sign-In allows users to authenticate using their Google Accounts.
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md)
+- Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
 - Complete [**Initial Setup**](auth-initial-setup)
 - Added **SHA-1 key** and regenerated **Config Keys**.
 :::
@@ -52,7 +52,7 @@ You can create your own or use the one from page templates.
   won't add details again.
 
 :::info
-To let users log out of your app, you can use the [**Logout**](../../logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](../logout-action.md) action.
 :::
 
 ## Test Google Login in various platforms
@@ -85,7 +85,7 @@ To let users log out of your app, you can use the [**Logout**](../../logout-acti
     - Ensure you are on the correct project. In our case, we are using the
       EcommerceFlow project, it will be different for you.
    
-   ![credential-page.png](..%2F..%2Fimgs%2Fcredential-page.png)
+   ![credential-page.png](../imgs/credential-page.png)
 
     - Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
       Google Service)'.
@@ -103,16 +103,16 @@ allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
-4. If you don't see the Web client created yet, you can create new one by
+1. If you don't see the Web client created yet, you can create new one by
    clicking **+ CREATE CREDENTIALS**, selecting OAuth client ID and then select
    Application type to Web application.
 
 
-![add-app.gif](..%2F..%2Fimgs%2Fadd-app.gif)
+![add-app.gif](../imgs/add-app.gif)
 
 ### Verify user created in Firebase Dashboard
 
 To confirm the successful integration of Google authentication and the creation of users, navigate
 to your Firebase project > Authentication > Users and check the user entries.
 
-![verify-google-auth-users.png](..%2F..%2Fimgs%2Fverify-google-auth-users.png)
+![verify-google-auth-users.png](../imgs/verify-google-auth-users.png)

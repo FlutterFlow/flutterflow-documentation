@@ -1,6 +1,6 @@
 ---
 slug: /integrations/authentication-types
-title: Overview of FlutterFlow Authentication Services
+title: Auth Services
 description: Learn about integrating various authentication services like Firebase, Supabase, and Custom Authentication in FlutterFlow.
 keywords: [FlutterFlow, Authentication, Firebase, Supabase, Custom Authentication, App Settings]
 sidebar_position: 1

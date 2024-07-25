@@ -86,7 +86,7 @@ In this step, you must provide general information about your web app by followi
 
 ![web-pub-general-settings](../imgs/web-pub-general-settings.avif)
 
-2. Inside the **General Information** section, enter the following details:
+1. Inside the **General Information** section, enter the following details:
 - **Site URL**: You can define the *Site URL* by adding the subdomain, for example, *mywebapp.flutterflow.app*. You can only change the subdomain, i.e., the part before *flutterflow.app*.
     
     :::warning

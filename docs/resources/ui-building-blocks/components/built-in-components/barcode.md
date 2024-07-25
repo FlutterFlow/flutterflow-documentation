@@ -9,7 +9,7 @@ The Barcode widget is used to embed the information inside the series of lines a
 
 It is typically used to retrieve product information quickly and accurately. For example, you could track the inventory/books (e.g., price, description, location, etc.), share website/app URL, quick onboarding process, and so on.
 
-![img_4.png](imgs%2Fimg_4.png)
+![img_4.png](imgs/img_4.png)
 
 
 ## Adding Barcode widget
@@ -19,9 +19,9 @@ To add a Barcode widget to your app:
 1. First, click on the **+ Add Widget**, drag the **Barcode** widget from the **Base Elements** 
 tab, or add it directly from the widget tree.
 
-5. By default, the barcode is displayed in a linear fashion called **1D Barcode**. (i.e., a series of lines and space of various widths). To display the barcode in a matrix form, such as QR-Code, move to the properties panel and set the **Barcode Dimensions** to the **2D Barcode**.
-8. Now, you'll need to figure out the type of information you want to embed and select the **Barcode Type**. The barcode type options are available based on the *Barcode Dimensions* you selected in the previous step. For example, to label the retail products (i.e., 12 digits numeric only number), you can set it to *UPC-A* or *UPC-E*, and to embed the URL, you can set it to the *QR-Code*. If you are unsure which type to choose, [here](https://packagex.io/blog/barcode-types) is a guide to help.
-11. Finally, you can provide the data/information into the **Barcode Value** property. You can also click **Set from Variable** to set it based on the value from the app state, your backend, or any other source.
+2. By default, the barcode is displayed in a linear fashion called **1D Barcode**. (i.e., a series of lines and space of various widths). To display the barcode in a matrix form, such as QR-Code, move to the properties panel and set the **Barcode Dimensions** to the **2D Barcode**.
+3. Now, you'll need to figure out the type of information you want to embed and select the **Barcode Type**. The barcode type options are available based on the *Barcode Dimensions* you selected in the previous step. For example, to label the retail products (i.e., 12 digits numeric only number), you can set it to *UPC-A* or *UPC-E*, and to embed the URL, you can set it to the *QR-Code*. If you are unsure which type to choose, [here](https://packagex.io/blog/barcode-types) is a guide to help.
+4. Finally, you can provide the data/information into the **Barcode Value** property. You can also click **Set from Variable** to set it based on the value from the app state, your backend, or any other source.
 
 <div style={{
     position: 'relative',
@@ -86,7 +86,7 @@ To change the size of the barcode widget, select the **Barcode** widget, move to
 
 ### Changing color
 
-To change barcode colors, select the **Barcode** widget, move to the properties panel, and [change the colors](/widgets-and-components/widgets/widget-commonalities#change-color) for the following properties:
+To change barcode colors, select the **Barcode** widget, move to the properties panel, and [change the colors](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#change-color) for the following properties:
 
 * **Foreground Color**: This sets the line or pattern color.
 * **Background Color**: This sets the background color behind the line or pattern.

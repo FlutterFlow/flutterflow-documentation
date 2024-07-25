@@ -118,7 +118,7 @@ To share the deep link of the current page:
 
 2. From that page, select any widget (e.g. share button) from the widget tree or the canvas area.
 
-3. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open
+3. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open
    an **Action flow Editor** in a new popup window.
 
     1. Click on the **+ Add Action**.
@@ -386,7 +386,7 @@ To pass custom data with the link, you need to have the following:
   <figcaption class="centered-caption">Adding parameter on page</figcaption>
 </figure>
 
-2. In the **Route Settings**, include a parameter as part of the route by prefixing it with a
+1. In the **Route Settings**, include a parameter as part of the route by prefixing it with a
    colon (**:**) for example, `profilePage/:profileId`.
 
 

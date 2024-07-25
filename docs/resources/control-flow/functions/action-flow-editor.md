@@ -101,7 +101,7 @@ following tasks to proceed without waiting for them to finish.
 
 ### Creating Action
 
-If there is no initial action or if there is an action and you want to add another one and press the
+If there is no initial action or if there is an action,and you want to add another one and press the
 plus icon, the following options will be available:
 
 1. **Add Action**: Adds a single action node to the flow. You can add multiple synchronous actions
@@ -188,7 +188,7 @@ In the Action Flow Editor, the icon in the upper left corner indicates the widge
 
 If you rename your widget, the new name will automatically be updated and associated with this action flow. This makes it easier to keep track of the logic associated with each widget, ensuring clarity and better organization of your action flows.
 
-![img.png](img%2Fimg.png)
+![img.png](img/img.png)
 
 ### Issues
 

@@ -123,7 +123,7 @@ To create the Service Account, you can follow the instructions from [here](https
 <p></p>
 
 
-4. On the right side of the newly created service account, click the action menu (three dots) icon and select **Manage keys**. Then, click **ADD Key > Create new key > select JSON > CREATE**. Keep the downloaded file at a safe place.
+1. On the right side of the newly created service account, click the action menu (three dots) icon and select **Manage keys**. Then, click **ADD Key > Create new key > select JSON > CREATE**. Keep the downloaded file at a safe place.
 
     <div style={{
         position: 'relative',
@@ -152,7 +152,7 @@ To create the Service Account, you can follow the instructions from [here](https
 
 <p></p>
 
-5. Now, return to the Google Play Console and follow the steps below:
+1. Now, return to the Google Play Console and follow the steps below:
     1. Go to the [Users & Permissions](https://play.google.com/console/users-and-permissions) page.
     2. Click **Invite new users**.
     3. Put the email address for your service account in the email address field and grant the necessary rights to perform actions:
@@ -477,6 +477,6 @@ If you are experiencing problems deploying or uploading to the Google Play Store
     ![deploy-github-issue](../imgs/deploy-github-issue.avif)
 
 
-4. Lastly, change `debug` (shown in the red box above) to `release` before deploying.
+1. Lastly, change `debug` (shown in the red box above) to `release` before deploying.
 </p>
 </details>

@@ -24,10 +24,10 @@ In order to use this backend query, you should have:
 Go to your project page on FlutterFlow and follow the steps below to define a **Document from Reference** backend query:
 
 1. Select the **widget** (or page) on which to apply the query.
-5. Select **Backend Query** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu).
-8. Select the **Query Type** as ***Document from Reference***.
-11. Choose a **Collection** from the dropdown to which the document reference belongs.
-14. Select the **Source** as the record reference name.
+2. Select **Backend Query** from the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) (the right menu).
+3. Select the **Query Type** as ***Document from Reference***.
+4. Choose a **Collection** from the dropdown to which the document reference belongs.
+5. Select the **Source** as the record reference name.
 
 <div style={{
     position: 'relative',
@@ -60,11 +60,11 @@ Go to your project page on FlutterFlow and follow the steps below to define a **
 The document information retrieved from the backend query can now be set on the widgets present inside. Follow the steps below:
 
 1. Select the **widget** (eg, `Text`) on which you want to set the record data.
-5. From the [Properties Panel](/getting-started/ui-builder/properties-panel), select **Set from Variable**.
-8. Choose the **Source** as the record variable.
-11. Under **Available Options**, select a field name.
-14. You can also specify a **Default Value** (it is used if the record field is empty).
-17. Click **Save**.
+2. From the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel), select **Set from Variable**.
+3. Choose the **Source** as the record variable.
+4. Under **Available Options**, select a field name.
+5. You can also specify a **Default Value** (it is used if the record field is empty).
+6. Click **Save**.
 
 You can follow similar steps for using the record data on the other widgets as well.
 

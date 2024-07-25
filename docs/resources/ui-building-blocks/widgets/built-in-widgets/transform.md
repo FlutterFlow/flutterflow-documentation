@@ -13,14 +13,14 @@ To add a Transform widget to your app:
 1. First, click on the **+ Add Widget**, drag the **Transform** widget from the **Base Elements** 
 tab, or add it directly from the widget tree.
 
-5. Add a child widget inside the Transform widget that you want to transform.
-8. By default, the transformation applied to a child widget is the **Skew** transformation. This type of transformation allows you to tilt the child widget, i.e., top and bottom or the left and right sides no longer remain to be parallel. To add/customize tilt to the child widget:
+2. Add a child widget inside the Transform widget that you want to transform.
+3. By default, the transformation applied to a child widget is the **Skew** transformation. This type of transformation allows you to tilt the child widget, i.e., top and bottom or the left and right sides no longer remain to be parallel. To add/customize tilt to the child widget:
 
-	1. Select the **Transform** widget and move to the properties panel.
-	5. To add tilt in the horizontal direction, find the **Skew X** property and use the slider or directly enter the value into the box. The positive value will move the top side to the left and the bottom side to the right.
-	8. To add tilt in the vertical direction, use the **Skew Y** property. The positive value will move the left side in an upward direction and the right side in a downward direction.
-	11. The negative value will move the sides in the opposite direction.
-11. Optional: To change the position of the origin (a center of the transform widget), you can use the **Transform Orgin and Alignment** options.
+    1. Select the **Transform** widget and move to the properties panel.
+    5. To add tilt in the horizontal direction, find the **Skew X** property and use the slider or directly enter the value into the box. The positive value will move the top side to the left and the bottom side to the right.
+    8. To add tilt in the vertical direction, use the **Skew Y** property. The positive value will move the left side in an upward direction and the right side in a downward direction.
+    11. The negative value will move the sides in the opposite direction.
+4. Optional: To change the position of the origin (a center of the transform widget), you can use the **Transform Orgin and Alignment** options.
 
 <div style={{
     position: 'relative',
@@ -52,7 +52,7 @@ tab, or add it directly from the widget tree.
 
 ## Customizing
 
-You can customize the appearance and behavior of this widget using the various properties available under the [properties panel](/getting-started/ui-builder/properties-panel).
+You can customize the appearance and behavior of this widget using the various properties available under the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel).
 
 ### Changing transform type
 

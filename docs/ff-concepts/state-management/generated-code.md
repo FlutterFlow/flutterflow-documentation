@@ -14,7 +14,7 @@ FlutterFlow manages state in several ways, depending on the scope.
 
 Generally, state management is handled using the Provider package, which facilitates the provisioning of data models for components, pages, and the overall app state.
 
-![state-management.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fstate-management.avif)
+![state-management.avif](../../../static/img/state-management.avif)
 
 ## Page & Component Models
 

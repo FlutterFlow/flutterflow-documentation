@@ -38,16 +38,16 @@ Here are the steps to use local run:
     
 ![setup-local-run](../imgs/setup-local-run.avif)
     
-3. To run the app locally, you'll need the Flutter SDK. Click the **Download** button to download it. **Note** that for iOS, ensure you have *Xcode* and *CocoaPods* installed, select the checkmark, and then click **Download**.
+1. To run the app locally, you'll need the Flutter SDK. Click the **Download** button to download it. **Note** that for iOS, ensure you have *Xcode* and *CocoaPods* installed, select the checkmark, and then click **Download**.
     
 ![download-flutter-sdk](../imgs/download-flutter-sdk.avif)
 
-4. Once it's ready to use, click the **Continue** button. This will run the **`Flutter Doctor`** command to check your environment for any issues that might prevent you from running the applications. It performs a series of checks to verify that the necessary tools and dependencies are correctly installed and configured on your system.
+1. Once it's ready to use, click the **Continue** button. This will run the **`Flutter Doctor`** command to check your environment for any issues that might prevent you from running the applications. It performs a series of checks to verify that the necessary tools and dependencies are correctly installed and configured on your system.
     
     
 ![doctor-output](../imgs/doctor-output.avif)
 
-5. Optional: You can set up your preferred IDE to open the project code directly from the local run. To do this, select your IDE, **Select Path**, and click **Save**. This feature is useful for debugging and understanding your project code. For this step, ensure you have setup [Flutter SDK](#2-setup-flutter-sdk) and [IDE](#3-installing-ide-and-plugins).
+1. Optional: You can set up your preferred IDE to open the project code directly from the local run. To do this, select your IDE, **Select Path**, and click **Save**. This feature is useful for debugging and understanding your project code. For this step, ensure you have setup [Flutter SDK](#2-setup-flutter-sdk) and [IDE](#3-installing-ide-and-plugins).
 
 :::info
 
@@ -61,11 +61,11 @@ Here are the steps to use local run:
 ![config-IDE](../imgs/config-IDE.avif)
 
 
-6. You can also specify whether the code exported by local run should be formatted. Disabling code formatting improves the export speed which helps in faster iteration. But if you want to look into the code or make changes, it's recommended to keep this enabled.
+1. You can also specify whether the code exported by local run should be formatted. Disabling code formatting improves the export speed which helps in faster iteration. But if you want to look into the code or make changes, it's recommended to keep this enabled.
     
 ![code-export](../imgs/code-export.avif)
 
-7. From the test menu, click on the **Get Devices** button. This will list devices connected to your system. You can add or remove devices from the list by clicking on the **+** and **-** buttons, respectively. Once you've finalized your selection, simply click on the **Test** button to see your app running on selected devices. **Tip**: In the Mac OS desktop app, you can directly open the simulator by clicking on the **Launch iOS Simulator** text.
+1. From the test menu, click on the **Get Devices** button. This will list devices connected to your system. You can add or remove devices from the list by clicking on the **+** and **-** buttons, respectively. Once you've finalized your selection, simply click on the **Test** button to see your app running on selected devices. **Tip**: In the Mac OS desktop app, you can directly open the simulator by clicking on the **Launch iOS Simulator** text.
 
 <div style={{
     position: 'relative',
@@ -94,7 +94,7 @@ Here are the steps to use local run:
 </div>
 <p></p>
 
-8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
+1. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
 
 **Hot Reload** updates UI instantly without losing its state, while **Hot Restart** recompiles 
 and reloads the entire app, resetting its state. For more info, you can visit [Flutter's Hot Reload documentation](https://docs.flutter.dev/tools/hot-reload).
@@ -187,7 +187,8 @@ To download your app code, you have two options:
 
 You can download the latest Flutter SDK from [here](https://docs.flutter.dev/get-started/install). However, we recommend using the Flutter SDK downloaded by the [local run](#using-local-run), whether you have already downloaded the Flutter SDK or not. This approach ensures compatibility with FlutterFlow projects and helps you avoid issues arising from version differences.
 
-To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it to your system path](#command-not-found-flutter-add-flutter-to-systems-path).
+To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it 
+to your system path](#troubleshooting).
 
 ![setup-flutter-SDK](../imgs/setup-flutter-SDK.avif)
 
@@ -197,9 +198,9 @@ If you prefer to use your existing Flutter SDK, you can follow the steps below t
     
 ![check-flutter-version.avif](../imgs/check-flutter-version-2.avif)
 
-2. Check your current Flutter SDK version by entering the following command in the terminal. `flutter --version`
-3. If that is different from what FlutterFlow uses, you may need to switch to the supported version.
-4. To install a specific version of Flutter, use the following command:
+1. Check your current Flutter SDK version by entering the following command in the terminal. `flutter --version`
+2. If that is different from what FlutterFlow uses, you may need to switch to the supported version.
+3. To install a specific version of Flutter, use the following command:
     1. To **downgrade** flutter version:
         ```
         flutter downgrade <version_number>
@@ -251,7 +252,10 @@ To run your app on a device:
 Running your app on a Desktop involves:
 
 1. **Adding platforms**: Navigate to **Setting and Integrations** from the Navigation Menu > **Project Setup** > **Platforms** and enable your desired platform.
-2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users, some design adjustments may be necessary to ensure that the UI is optimized for both platforms. You can create separate widgets for different platforms and control their visibility using [Responsive Visibility](#).
+2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users, 
+   some design adjustments may be necessary to ensure that the UI is optimized for both 
+   platforms. You can create separate widgets for different platforms and control their 
+   visibility using [Responsive Visibility](../../ff-concepts/layout/responsive-layout.md#responsive-visibility).
 3. **Run the app on a desktop**: Use the Local Run feature in the FlutterFlow Desktop app or manually download and run the code, choosing your target device (e.g., macOS) before running.
 
 ## Video guide
@@ -333,7 +337,7 @@ If you don't see your device in the list after refreshing, follow these steps:
     
     This will list all connected devices that the Local Run recognizes.
     
-3. If you still don't see your device, try restarting it.
+1. If you still don't see your device, try restarting it.
     1. **For iOS**: Open Xcode, go to the "Window" menu, select "Devices and Simulators," choose your simulator, and click "Restart."
     2. **For Android**: Open the Android Studio > Device Manager, choose your emulator, and click the "Play" button.
     3. You can also restart the emulator directly from the command line using Flutter:
@@ -346,7 +350,7 @@ If you don't see your device in the list after refreshing, follow these steps:
         
         **Note** that replace `<emulator_id>` with the ID of your emulator. You can find the ID by running `flutter emulators`.
         
-4. Try running `flutter devices` again.
+1. Try running `flutter devices` again.
 </p>
 </details>
 

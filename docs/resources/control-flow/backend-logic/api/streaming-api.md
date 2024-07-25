@@ -90,10 +90,10 @@ The final app looks like this:
 The steps to build the app are as follows:
 
 1. [Build UI](#1-build-ui)
-5. [Create API](#2-create-api)
-8. [Create page state variable](#3-create-page-state-variables)
-11. [Trigger and Parse API response](#4-trigger-and-extract-data-from-api-response)
-14. [Extract chart data](#5-extract-chart-data)
+2. [Create API](#2-create-api)
+3. [Create page state variable](#3-create-page-state-variables)
+4. [Trigger and Parse API response](#4-trigger-and-extract-data-from-api-response)
+5. [Extract chart data](#5-extract-chart-data)
 
 ### 1. Build UI
 
@@ -105,7 +105,7 @@ The user interface includes a section for the average rating, and number of revi
 * [**Chart (Bar chart) Widget**](/widgets-and-components/widgets/base-elements/chart/bar-chart): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
 
 <p></p>
-![streaming-api-example-demo.png](..%2Fimgs%2Fstreaming-api-example-demo.png)
+![streaming-api-example-demo.png](../imgs/streaming-api-example-demo.png)
 
 ### 2. Create API
 
@@ -149,9 +149,9 @@ Here's how you do it:
 
 In this example, to hold and display the result of the generated AI summary, you'll need two variables.
 
-2. `summary`: This variable will hold the full text of the summary that includes the overall sentiment of the reviews, key points mentioned by customers, and lists of pros and cons. It is initialized as an empty string and will later be updated with the AI-generated text.
-5. `sentimentValues`: This variable will store the sentiment distribution values. It is a list of *double* representing the number of positive, neutral, and negative reviews. **Note that**, these values will be used to provide the *Bar Values* in a bar chart. It is initialized with three zeros and will later be updated with the actual counts of positive, neutral, and negative reviews.
-![streaming-page-state.png](..%2Fimgs%2Fstreaming-page-state.png)
+1. `summary`: This variable will hold the full text of the summary that includes the overall sentiment of the reviews, key points mentioned by customers, and lists of pros and cons. It is initialized as an empty string and will later be updated with the AI-generated text.
+2. `sentimentValues`: This variable will store the sentiment distribution values. It is a list of *double* representing the number of positive, neutral, and negative reviews. **Note that**, these values will be used to provide the *Bar Values* in a bar chart. It is initialized with three zeros and will later be updated with the actual counts of positive, neutral, and negative reviews.
+![streaming-page-state.png](../imgs/streaming-page-state.png)
 
 ### 4. Trigger and extract data from API response
 

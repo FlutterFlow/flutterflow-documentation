@@ -161,7 +161,7 @@ You might want to trigger an action when the page is swiped in the PageView widg
 To trigger action on swipe:
 
 1. Select the widget from the widget tree or canvas area.
-2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
+2. Select **Actions** from the Properties Panel (the right menu), and click **+ Add Action**.
 3. You will notice that the **Type of Action** (aka callback) is already set to **On Page Swipe**. That means actions added under this will be called whenever the page is swiped.
 4. Now, you can add any action here.
 
@@ -246,10 +246,10 @@ To customize the indicator:
 The width of the active dot is calculated by multiplying the value of the **Dot Width** property with the value of the **Expansion Factor** property. That means if the Dot Width is set to 40 and *Expansion Factor* is set to 2, then the width of the Active dot will be 80.
 :::
 
-7. To add space between the indicator dots, use the **Spacing** property.
-8. To adjust the rounded corner of indicator dots, use the **Border Radius** property.
-9. To show only the border, enable the **Outline** toggle.
-10. If you want to hide the indicators, disable the **Show Indicator** toggle.
+1. To add space between the indicator dots, use the **Spacing** property.
+2. To adjust the rounded corner of indicator dots, use the **Border Radius** property.
+3. To show only the border, enable the **Outline** toggle.
+4. If you want to hide the indicators, disable the **Show Indicator** toggle.
 
 <div style={{
     position: 'relative',

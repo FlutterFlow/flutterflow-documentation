@@ -30,17 +30,17 @@ Here's a detailed, step-by-step guide to help you integrate OneSignal:
 
 ![img_1.png](img_1.png)
 
-2. After creating your app, activate the services you need, like SMS and Email. Go to your app
+1. After creating your app, activate the services you need, like SMS and Email. Go to your app
    settings by clicking **App > Settings > Platforms** and then select **Activate** for the services
    you want to use.
 
-	* If you're planning to use SMS, you'll need a [Twilio](https://twilio.com/) account and then 
+    * If you're planning to use SMS, you'll need a [Twilio](https://twilio.com/) account and then 
    follow the steps from the official [SMS Quickstart documentation](https://documentation.onesignal.com/docs/twilio-setup#step-2-twilio-account-setup).
    <figure>
        <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/activate-SMS-service.gif?alt=media&token=b655cf4b-0c4c-4e0a-99bb-be8cebc85997"></img>
      <figcaption class="centered-caption">SMS Configuration</figcaption>
    </figure>
-	* For sending emails, configure your settings as per the guidelines provided in the OneSignal 
+    * For sending emails, configure your settings as per the guidelines provided in the OneSignal 
       [documentation](https://documentation.onesignal.com/docs/email-quickstart).
 
 ### Setup in FlutterFlow
@@ -62,11 +62,11 @@ com/embed/55a72de8e15e418581cc8b49fc108b12?sid=052ead4c-96e4-4e9a-95c5-40162eb0d
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
-4. Now, at appropriate event in your app, you can [add an action](/actions/actions/integrations/onesignal#adding-onesignal-action) that adds the user to the OneSignal's subscription.
+1. Now, at appropriate event in your app, you can [add an action](/actions/actions/integrations/onesignal#adding-onesignal-action) that adds the user to the OneSignal's subscription.
 
-5. To test SMS functionality, follow the continuation of the instructions in the [SMS documentation](https://documentation.onesignal.com/docs/sending-sms-messages#sending-sms-notifications-from-dashboard).
+2. To test SMS functionality, follow the continuation of the instructions in the [SMS documentation](https://documentation.onesignal.com/docs/sending-sms-messages#sending-sms-notifications-from-dashboard).
 
-6. To try out sending Emails, continue with instructions
+3. To try out sending Emails, continue with instructions
    from [here](https://documentation.onesignal.com/docs/sending-email#sending-email-notifications-from-dashboard).
 
 

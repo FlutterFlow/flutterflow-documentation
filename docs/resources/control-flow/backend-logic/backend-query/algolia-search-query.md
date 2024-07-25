@@ -16,8 +16,8 @@ You can set up an Algolia Search backend query to automatically trigger a search
 There are some prerequisites before you start defining the search query:
 
 1. A properly configured **Algolia account**.
-5. Have at least one **Firestore Collection** connected to the Algolia account.
-8. Completed Algolia configuration on **FlutterFlow**.
+2. Have at least one **Firestore Collection** connected to the Algolia account.
+3. Completed Algolia configuration on **FlutterFlow**.
 :::
 
 :::warning[Complete setup]
@@ -33,11 +33,11 @@ Follow the steps below to create this UI:
 
 1. Drag a TextField widget from the [Widget Panel]
 (/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and drop it onto the canvas. (In the demo below, the TextField is placed inside the AppBar of the app).
-5. You can customize the TextField properties to match your app's design style. Add a search Icon to signify that it's a search field.
-8. Check the **Update Page On Change** checkbox. This helps to update the page as the user types inside the TextField. This would be required to use the latest text field value as the search term.
-11. Set an **Update Delay** (in milliseconds). This specifies the amount of time after the user stops typing to update the page.
-14. Now, drag and drop a ListView widget onto the canvas.
-17. Similarly, you can add widgets inside the ListView that you need for displaying the search result. (In the following demo, you will find that two Text widgets are added inside a Column).
+2. You can customize the TextField properties to match your app's design style. Add a search Icon to signify that it's a search field.
+3. Check the **Update Page On Change** checkbox. This helps to update the page as the user types inside the TextField. This would be required to use the latest text field value as the search term.
+4. Set an **Update Delay** (in milliseconds). This specifies the amount of time after the user stops typing to update the page.
+5. Now, drag and drop a ListView widget onto the canvas.
+6. Similarly, you can add widgets inside the ListView that you need for displaying the search result. (In the following demo, you will find that two Text widgets are added inside a Column).
 
 <div style={{
     position: 'relative',
@@ -73,13 +73,13 @@ Follow the steps below to define the Backend Query:
 
 1. Select the **widget** (or page) on which to apply the query. In this case, it's recommended to 
 apply the query on the `ListView` widget.
-5. Select **Backend Query** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu).
-8. Select the **Query Type** as ***Algolia Search***.
-11. Choose the **Firebase Collection** on which to perform the search.
-14. Define from where to get the **Search Term**. You can either choose ***Specific Value*** or ***From Variable***. If you want to use a `TextField` value as the search term, you should choose *From Variable*.
-17. If you have chosen **Specific Value**,define the term inside the field present.
-20. If you have chosen ***From Variable***, select a **Source** from the dropdown menu and then select an option from the **Available Options**. For example, if you want to use the value of a `TextField`, select the Source as ***Widget State*** and choose the field name under Available Options.
-23. Set the number of maximum search results to fetch under **Max Results**. Keep this field blank if you want to fetch all the matching search results.
+2. Select **Backend Query** from the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) (the right menu).
+3. Select the **Query Type** as ***Algolia Search***.
+4. Choose the **Firebase Collection** on which to perform the search.
+5. Define from where to get the **Search Term**. You can either choose ***Specific Value*** or ***From Variable***. If you want to use a `TextField` value as the search term, you should choose *From Variable*.
+6. If you have chosen **Specific Value**,define the term inside the field present.
+7. If you have chosen ***From Variable***, select a **Source** from the dropdown menu and then select an option from the **Available Options**. For example, if you want to use the value of a `TextField`, select the Source as ***Widget State*** and choose the field name under Available Options.
+8. Set the number of maximum search results to fetch under **Max Results**. Keep this field blank if you want to fetch all the matching search results.
 
 <div style={{
     position: 'relative',
@@ -112,12 +112,12 @@ apply the query on the `ListView` widget.
 Follow the step below to display the search results inside the `ListView`:
 
 1. Select a **widget** present inside the `ListView`, for example, a `Text` widget.
-5. Click **Set from Variable** from the [Properties Panel](/getting-started/ui-builder/properties-panel) (right menu).
-8. From the **Source** dropdown menu, choose the response of the Algolia Search that you had defined on the ListView widget.
-11. Under **Available Options** select the name of the field whose value you want to use.
-14. (Optional) You can specify a **Default Value** that would be shown if the field value is empty.
-17. Click **Save**.
-20. Repeat **Steps 1 to 6** for using the search response data on any other widget.
+2. Click **Set from Variable** from the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) (right menu).
+3. From the **Source** dropdown menu, choose the response of the Algolia Search that you had defined on the ListView widget.
+4. Under **Available Options** select the name of the field whose value you want to use.
+5. (Optional) You can specify a **Default Value** that would be shown if the field value is empty.
+6. Click **Save**.
+7. Repeat **Steps 1 to 6** for using the search response data on any other widget.
 
 <div style={{
     position: 'relative',

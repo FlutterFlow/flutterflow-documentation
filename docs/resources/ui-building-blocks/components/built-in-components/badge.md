@@ -14,8 +14,8 @@ Here's an example of how you can add the Badge widget to your project:
 
 1. First, drag the **Badge** widget from the Base Elements tab and carefully drop it into the 
 Actions section of the AppBar.
-5. Now, add the **IconButton** widget inside the **Badge** widget. Customize the Icon and its color as per your requirement.
-8. Select the **Badge** widget, move to the properties panel, and set the **top** side padding to 5 and **right** side padding to 15.
+2. Now, add the **IconButton** widget inside the **Badge** widget. Customize the Icon and its color as per your requirement.
+3. Select the **Badge** widget, move to the properties panel, and set the **top** side padding to 5 and **right** side padding to 15.
 
 
 <div style={{
@@ -58,8 +58,8 @@ You can set the badge text that appears inside the badge. Usually, it's a numeri
 To set the badge text:
 
 1. Select the **Badge** widget from the widget or the canvas area.
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Text** property and enter a value. You would probably set this value from the variable or field from the backend database, such as the API response variable and Firestore document field. To do so, click on the **Set from Variable**.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Text** property and enter a value. You would probably set this value from the variable or field from the backend database, such as the API response variable and Firestore document field. To do so, click on the **Set from Variable**.
 
 <p></p>
 
@@ -96,8 +96,8 @@ To set the badge text:
 To change the badge text style:
 
 1. Select the **Badge** widget from the widget or the canvas area.
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Theme Text Style** property and change the style as per instructions 
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Theme Text Style** property and change the style as per instructions 
 [here](../../widgets/built-in-widgets/text.md).
 
 ### Show/hide badge
@@ -107,8 +107,8 @@ You might want to hide the badge widget initially and only show it when some ite
 To show/hide the badge widget:
 
 1. Select the **Badge** widget from the widget or the canvas area.
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Show Badge** property and check/uncheck to show/hide the badge. Most probably, you would set this value from the variable such as the app state variable and variable from API response. To do so, click on the **Set from Variable**.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Show Badge** property and check/uncheck to show/hide the badge. Most probably, you would set this value from the variable such as the app state variable and variable from API response. To do so, click on the **Set from Variable**.
 
 <div style={{
     position: 'relative',
@@ -141,8 +141,8 @@ To show/hide the badge widget:
 To change the badge color:
 
 1. Select the **Badge** widget from the widget or the canvas area.
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the Badge Color property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected colorand enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the Badge Color property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected colorand enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 
 <div style={{
     position: 'relative',
@@ -176,8 +176,8 @@ To change the elevation (depth or Z-axis) of the badge:
 
 1. Select the **Badge** widget from the widget or the canvas area.
 
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Elevation** input box and enter the value to see the drop shadow effect below the badge. The Higher value sets the bigger size of the shadow, and the 0 value removes the shadow.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Elevation** input box and enter the value to see the drop shadow effect below the badge. The Higher value sets the bigger size of the shadow, and the 0 value removes the shadow.
 
 <div style={{
     position: 'relative',
@@ -212,8 +212,8 @@ By default, the badge is displayed on the top right side of its child widget. Yo
 To change the badge position:
 
 1. Select the **Badge** widget from the widget or the canvas area.
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Position (Start or End)** property and click on the icons to change the position.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Position (Start or End)** property and click on the icons to change the position.
 
 <div style={{
     position: 'relative',
@@ -249,8 +249,8 @@ To allow/disallows animating badge:
 
 1. Select the **Badge** widget from the widget or the canvas area.
 
-5. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
-8. Find the **Animate** toggle, and then turn it on or off.
+2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
+3. Find the **Animate** toggle, and then turn it on or off.
 
 <div style={{
     position: 'relative',

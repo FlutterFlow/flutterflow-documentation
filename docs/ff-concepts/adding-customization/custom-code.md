@@ -16,11 +16,14 @@ This
 is where writing custom code comes into play. We provide the following features to accommodate
 these needs:
 
-* **Custom Functions:** Write custom Dart functions to perform specific tasks or calculations.
-* **Custom Actions:** Implement custom actions that can be triggered by user interactions or
+* **[Custom Functions](custom-functions.md):** Write custom Dart functions to perform specific tasks or 
+  calculations.
+* **[Custom Actions](custom-actions.md):** Implement custom actions that can be triggered by user 
+  interactions or
   other action triggers.
-* **Custom Widgets:** Create custom Flutter widgets to achieve unique UI designs or behaviors.
-* **Custom Files:** Ability to edit some parts of the `main.dart` file.
+* **[Custom Widgets](custom-widgets.md):** Create custom Flutter widgets to achieve unique UI designs or 
+  behaviors.
+* **[Custom Files:](custom-files.md)** Ability to edit some parts of the `main.dart` file.
 
 :::tip[Why Write Custom Code?]
 
@@ -38,7 +41,7 @@ There are several properties and settings that are common to each type of custom
 FlutterFlow. Most of these common properties are highlighted in the diagram below. For more
 information about some of these properties, see the details provided below.
 
-![custom-code-common.png](imgs%2Fcustom-code-common.png)
+![custom-code-common.png](imgs/custom-code-common.png)
 
 ### Code Copilot
 
@@ -86,7 +89,7 @@ compilation errors. To do so, click the **Compile Code** button.
 
 
 <figure>
-    ![compile-errors.png](imgs%2Fcompile-errors.png)
+    ![compile-errors.png](imgs/compile-errors.png)
   <figcaption class="centered-caption">How to recognize compile time errors</figcaption>
 </figure>
 
@@ -95,7 +98,7 @@ compilation errors. To do so, click the **Compile Code** button.
 The code analyzer is available in all your custom code snippets and ensures the quality and
 correctness of your custom code. It automatically checks your Dart code for errors and warnings,
 providing real-time feedback as you write.
-![code-analyzer.png](imgs%2Fcode-analyzer.png)
+![code-analyzer.png](imgs/code-analyzer.png)
 When there is a compilation error, the code analyzer will stop running and display the errors caught
 by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
 should then be reconnected. You can also manually reconnect it if needed.
@@ -104,7 +107,7 @@ should then be reconnected. You can also manually reconnect it if needed.
 
 When creating a new custom code snippet (actions, widgets, or functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
 
-![automatic-imports.png](imgs%2Fautomatic-imports.png)
+![automatic-imports.png](imgs/automatic-imports.png)
 
 ### Custom Code Settings
 
@@ -122,7 +125,7 @@ compile process.
 
 This option is only available for Custom Widgets and Custom Actions.
 :::
-![action-settings.png](imgs%2Faction-settings.png)
+![action-settings.png](imgs/action-settings.png)
 
 #### Include BuildContext
 
@@ -144,7 +147,7 @@ scenarios within your application.
 
 Here's an example of an action that takes 2 arguments: `cartItems` that is a `List of
 ItemsStruct` and `productId` that is a String.
-![action-arguments.png](imgs%2Faction-arguments.png)
+![action-arguments.png](imgs/action-arguments.png)
 
 :::tip[Generated Code for custom data types]
 When you define a custom data type in FlutterFlow, the generated code will refer to the type
@@ -166,7 +169,7 @@ occurs.
 In the following example, we have a Custom Action that takes an `onError(searchKeyword)` callback 
 action with an Action Parameter `searchKeyword`. This means that the custom action will provide this search keyword back to the callback action when it calls it. 
 
-![explain-callback-action.png](imgs%2Fexplain-callback-action.png)
+![explain-callback-action.png](imgs/explain-callback-action.png)
 
 ##### Provide an Action to Callback Action
 
@@ -212,7 +215,7 @@ return a value at the moment.
 
 Here's an example of an Action that returns a _nullable_ integer.
 
-![return-value-actions.png](imgs%2Freturn-value-actions.png)
+![return-value-actions.png](imgs/return-value-actions.png)
 
 #### Adding a Pub Dependency
 
@@ -224,8 +227,8 @@ If you plan to use a dependency from [*pub.dev*](https://pub.dev/) into a custom
 you must go through the following steps:
 
 1. [Choosing dependency](#1-choosing-dependency)
-5. [Copying dependency/package name](#2-copying-dependency-name)
-8. [Copying import statement](#3-copying-import-statement)
+2. [Copying dependency/package name](#2-copying-dependency-name)
+3. [Copying import statement](#3-copying-import-statement)
 
 ##### 1. Choosing dependency
 
@@ -252,7 +255,7 @@ one.
 
 <p></p>
 
-![Dependency-score.png](imgs%2FDependency-score.png)
+![Dependency-score.png](imgs/Dependency-score.png)
 
 ##### 2. Copying dependency name
 
@@ -261,7 +264,7 @@ the **Copy to Clipboard** icon.
 
 <p></p>
 
-![img.png](imgs%2Fimg.png)
+![img.png](imgs/img.png)
 
 <p></p>
 
@@ -273,7 +276,7 @@ name and version of all the additional dependencies to specify in the code edito
 You can check if the current dependency has any additional dependencies inside the '*Dependencies'*
 section at the bottom right side.
 
-![img_1.png](imgs%2Fimg_1.png)
+![img_1.png](imgs/img_1.png)
 
 ##### 3. Copying import statement
 
@@ -283,7 +286,7 @@ action, place this statement at the beginning of the code editor.
 Open the dependency page and select the installing tab; under the Import it section, you'll find
 the import statement. To copy, click the **Copy to Clipboard**  icon.
 
-![img_2.png](imgs%2Fimg_2.png)
+![img_2.png](imgs/img_2.png)
 
 
 

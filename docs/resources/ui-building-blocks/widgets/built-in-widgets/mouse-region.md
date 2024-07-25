@@ -13,11 +13,11 @@ Here are the step-by-step instructions to build such an example:
 Elements** tab or add it directly from the widget tree.
 2. Add a [**Button**](button.md) (inside MouseRegion) 
    with [**On Action Trigger**](#) animation.
-3. Select the **MouseRegion** widget, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
+3. Select the **MouseRegion** widget, select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegionwidget.
     1. Add the [Widget Animation](#) action to start the animation on a Button.
-15. Select the **On Mouse Exit** tab. Actions added under this will be triggered whenever the mouse leaves the MouseRegionwidget.
-	1. Add the [Widget Animation](#) action to stop the animation on a Button.
+5. Select the **On Mouse Exit** tab. Actions added under this will be triggered whenever the mouse leaves the MouseRegionwidget.
+   1. Add the [Widget Animation](#) action to stop the animation on a Button.
 
 <div style={{
     position: 'relative',
@@ -83,7 +83,7 @@ Here are the step-by-step instructions:
 
 1. First, add the Stack **>** **Container** **> MouseRegion >** **IconButton** to display the menu 
 icon.
-5. Add the **Container > MouseRegion >** **Column** (with some menu items/options) inside the same Stack widget.
+2. Add the **Container > MouseRegion >** **Column** (with some menu items/options) inside the same Stack widget.
 
 :::info[Note] 
 Note that we wrapped the menu icon and its options inside the MouseRegion widget. In 
@@ -92,12 +92,12 @@ the next step, we will add the same actions for both MouseRegion widgets so that
 
 ![img_9.png](img_9.png)
 
-3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
+1. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
    and use it 
 to 
 [add conditional visibility](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#conditional) 
    on menu options.
-5. On both MouseRegion widgets, add an [update app state variable](/actions/actions/state-management/update-app-state) action to set **True** when the mouse enters and **False** when the mouse exit.
+2. On both MouseRegion widgets, add an [update app state variable](/actions/actions/state-management/update-app-state) action to set **True** when the mouse enters and **False** when the mouse exit.
 
 <figure>
     <div style={{

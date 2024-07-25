@@ -29,7 +29,7 @@ Before getting started with this section, ensure you have:
 
 These steps are mandatory if you want to send push notifications to iOS devices:
 
-* Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2F).
+* Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 * [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [this link](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
 
 :::
@@ -50,7 +50,7 @@ Here are the steps to send push notifications:
 * Push notifications will not work on an iOS simulator. To test you will need to use a real device.
 * Push notifications will not be delivered to users who are logged out of your app. To send push 
   notifications to users who are not logged in, consider implementing [**Anonymous Firebase 
-  Login**](../../authentication/types/firebase-auth/anonymous-login.md) within your app
+  Login**](../../authentication/firebase-auth/anonymous-login.md) within your app
 * Push notifications will not work if you have the app open on your device.
 :::
 
@@ -162,19 +162,19 @@ Use these steps to create and send push notifications:
 
 1. Click on the **Settings and Integrations** -> App Settings -> **Push Notifications**.
 
-5. Find the **Manually Trigger Notifications** section and click on it to expand the section.
+2. Find the **Manually Trigger Notifications** section and click on it to expand the section.
 
-8. In the **Notification Title**, enter the text that you want to set as a title for notification.
+3. In the **Notification Title**, enter the text that you want to set as a title for notification.
 
-11. In the **Notification Text**, enter the content of your notification.
-14. Optional: Click on the **Upload Notification Image** to set the image that you want to appear in the notification.
-17. Find the **Target Audience** dropdown. Keep the **All** option selected if you want to send notifications to both *Android* and *iOS* users. You can select **Android** or **iOS** if you wish to target OS-specific users.
-20. Enable **Deliver With Sound** if you wish to.
-23. If you have more than 10K users, you might want to enable the **Batch Notifications**.
-26. To send push notifications to a specific or few users, enter the user document reference (from the 'users' collection in Firestore) into the *User References*.
-29. Find the **Initial Page** dropdown and select a page that you would like to open when a user clicks on the notification.
-32. Click on **Send Notification**.
-35. To confirm you want to send this notification, a popup will appear. You need to enter the text '**Send Notification**' and click on **Send Notification** again.
+4. In the **Notification Text**, enter the content of your notification.
+5. Optional: Click on the **Upload Notification Image** to set the image that you want to appear in the notification.
+6. Find the **Target Audience** dropdown. Keep the **All** option selected if you want to send notifications to both *Android* and *iOS* users. You can select **Android** or **iOS** if you wish to target OS-specific users.
+7. Enable **Deliver With Sound** if you wish to.
+8. If you have more than 10K users, you might want to enable the **Batch Notifications**.
+9. To send push notifications to a specific or few users, enter the user document reference (from the 'users' collection in Firestore) into the *User References*.
+10. Find the **Initial Page** dropdown and select a page that you would like to open when a user clicks on the notification.
+11. Click on **Send Notification**.
+12. To confirm you want to send this notification, a popup will appear. You need to enter the text '**Send Notification**' and click on **Send Notification** again.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/e60604c910ca45f58e995407c16110e9?sid=2c8fa30b-3b43-42fe-a12f-e09f82868953" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -194,10 +194,10 @@ Currently we only support sending *Firestore document references* as data.
 To send a push notification with data:
 
 1. You must have a page that accepts a parameter of type 'DocumentReference'.
-5. Build a notification using the instructions [here](/settings-and-integrations/app-settings/push-notifications#add-push-notifications).
-8. Set the **Initial Page** to the one that accepts the parameter.
-11. Find the **Parameter Data** section, copy the document reference from the Firestore, and paste it into the input box below.
-14. Click on **Send Notification**.
+2. Build a notification using the instructions [here](/settings-and-integrations/app-settings/push-notifications#add-push-notifications).
+3. Set the **Initial Page** to the one that accepts the parameter.
+4. Find the **Parameter Data** section, copy the document reference from the Firestore, and paste it into the input box below.
+5. Click on **Send Notification**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/f6a0aa69b9274b1c965a85d72dcfdda5?sid=dfdebe15-61bf-4bf1-8cd6-238c7b9a5744" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -223,7 +223,7 @@ Here are the steps:
 
 The document reference of the user is required to send a push notification to a specific user, in this case, it would be the document reference of the post creator.
 
-Normally, you would obtain the user document reference from the Firestore document, where a field like 'created\_by' stores the document reference of the post creator. However, for the sake of simplicity, let's assume that we are storing this reference in an app state variable, which looks like this:
+Normally, you would obtain the user document reference from the Firestore document, where a field like 'created_by' stores the document reference of the post creator. However, for the sake of simplicity, let's assume that we are storing this reference in an app state variable, which looks like this:
 
 <figure>
     ![img_1.png](img_1.png)
@@ -250,21 +250,21 @@ Follow the steps below to add this action to any widget.
 
 1. Select the **Widget** (e.g., IconButton, Button, etc.) on which you want to add the action.
 
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-	1. Click on the **+ Add Action**.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+    1. Click on the **+ Add Action**.
    
-	2. On the right side, search and select the **Trigger Push Notification** action.
-	3. To set who should receive the push notification, set the **Audience** to **Single 
+    2. On the right side, search and select the **Trigger Push Notification** action.
+    3. To set who should receive the push notification, set the **Audience** to **Single 
        Recipient** or **Multiple Recipient**.
-		* If you want to send a notification to a single user, set it to 'Single Recipient'. For example, sending a notification only to the group creator when someone joins the group.
-		* If you want to send a notification to multiple users, set it to 'Multiple Recipients'. For example, sending a notification to all group members when someone joins the group.
-	11. Set the **Source** of user document reference (e.g., app state variable or Firestore document).
-	14. Further options are available based on the selected source.
-	17. To set the specific notification title text, enter the **Notification Title**.
-	20. You can set the **Notification Text** from a variable.
-	23. Optional: Open the **Notification Image** section to set the image that you want to appear in the notification.
-	26. Turn on the **Deliver with Sound** if you want to send a notification with the user's default sound/vibration.
-	29. To set which page to open when a user taps the notification, set the **Initial Page** to the page you would like to open. You can also [pass on the parameters](/settings-and-integrations/app-settings/push-notifications#push-notifications-with-data) if page requests.
+        * If you want to send a notification to a single user, set it to 'Single Recipient'. For example, sending a notification only to the group creator when someone joins the group.
+        * If you want to send a notification to multiple users, set it to 'Multiple Recipients'. For example, sending a notification to all group members when someone joins the group.
+    4. Set the **Source** of user document reference (e.g., app state variable or Firestore document).
+    5. Further options are available based on the selected source.
+    6. To set the specific notification title text, enter the **Notification Title**.
+    7. You can set the **Notification Text** from a variable.
+    8. Optional: Open the **Notification Image** section to set the image that you want to appear in the notification.
+    9. Turn on the **Deliver with Sound** if you want to send a notification with the user's default sound/vibration.
+    10. To set which page to open when a user taps the notification, set the **Initial Page** to the page you would like to open. You can also [pass on the parameters](/settings-and-integrations/app-settings/push-notifications#push-notifications-with-data) if page requests.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/5a6fa52d6802486fa0581f5ced56899e?sid=ca075c66-1b9a-4938-b882-0b3d7c803cb5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -277,7 +277,7 @@ com/embed/5a6fa52d6802486fa0581f5ced56899e?sid=ca075c66-1b9a-4938-b882-0b3d7c803
 ## FAQs
 
 <details>
-<summary>Push notifications not working; Getting cloud function error: PERMISSION\_DENIED: Missing or insufficient permissions</summary>
+<summary>Push notifications not working; Getting cloud function error: PERMISSION_DENIED: Missing or insufficient permissions</summary>
 
 If you encounter an error with push notifications, specifically a cloud function failure due to permission issues, it might be related to your Google Cloud organization's settings. Organizations can disable automatic IAM grants for default service accounts, leading to this error.
 

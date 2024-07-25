@@ -125,7 +125,7 @@ Here are the step-by-step instructions on adding tests:
 </div>
 <p></p>
 
-2. Next, find and simulate on tap event on the favorite button with the 'ValueKey' as the product id. **Important**: By using the 'ValueKey', we precisely target the favorite button for a specific product. Without this specificity, the test will encounter multiple favorite buttons and become uncertain about which one to tap, leading to a failed test.
+1. Next, find and simulate on tap event on the favorite button with the 'ValueKey' as the product id. **Important**: By using the 'ValueKey', we precisely target the favorite button for a specific product. Without this specificity, the test will encounter multiple favorite buttons and become uncertain about which one to tap, leading to a failed test.
 
 <div style={{
     position: 'relative',
@@ -154,7 +154,7 @@ Here are the step-by-step instructions on adding tests:
 </div>
 <p></p>
 
-3. Similarly, you can now duplicate the test and make changes for the 'RemoveFromFavorites' test. **Tip**: While doing so, ensure that in the last step (i.e., **Expect Result**), you set the **Expectations** to **Finds Nothing**. This ensures that the removed item is not visible on the favorites list.
+1. Similarly, you can now duplicate the test and make changes for the 'RemoveFromFavorites' test. **Tip**: While doing so, ensure that in the last step (i.e., **Expect Result**), you set the **Expectations** to **Finds Nothing**. This ensures that the removed item is not visible on the favorites list.
 
 ![remove-from-favorites](../imgs/remove-from-favorites.avif)
 

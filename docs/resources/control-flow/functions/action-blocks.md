@@ -29,7 +29,7 @@ As discussed, Action Blocks can be **App Level, Page Level**, or **Component Lev
 
 Usually, you will see a dropdown to choose between App Level, Page Level, or Component Level. Choose the scope based on your Action Block's use case.
 
-![action-blocks.png](img%2Faction-blocks.png)
+![action-blocks.png](img/action-blocks.png)
 
 
 ### Input Parameters

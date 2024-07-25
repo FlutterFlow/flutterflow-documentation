@@ -44,7 +44,7 @@ If you plan to use Firebase storage in your app, click on the Enable Storage on 
 The configuration files are necessary when connecting to Firebase. It contains various settings and keys that enable your project to communicate with Firebase services. To generate those files, click on Auto Generate Config Files and then click Generate Files.
 
 
-## Connect an existing Firebase project manually 
+## Connect an existing Firebase project manually
 
 If you already have a Firebase project and want to connect it to your current FlutterFlow project, go to **Settings & Integrations > Project Setup > Firebase** and click on the Firebase Setup Wizard. A pop-up dialog will appear. Follow these steps:
 
@@ -64,17 +64,17 @@ In the dialog, scroll down to **Setup Firebase**, check that option, and click *
 
 <img src="/img/firebase/project-settings.png" alt="Steps 2, 3 and 4" />
 
-5. Find the row containing *firebase@flutterflow.io* and select **Edit principal** (pencil on the far right of the row).
+1. Find the row containing *firebase@flutterflow.io* and select **Edit principal** (pencil on the far right of the row).
 
 <img src="/img/firebase/firebase-principal.png" alt="In the Google Cloud console page" />
 
-6. Select **+ Add Another Role.**
+1. Select **+ Add Another Role.**
 
-7. Under **Select A Role**, search for **Service Account User** (you may need to scroll to find this). Select **Service Account User**.
+2. Under **Select A Role**, search for **Service Account User** (you may need to scroll to find this). Select **Service Account User**.
 
 <img src="/img/firebase/service-account-user.png" alt="On choosing Select A Role and searching for Service Account User" class="small-image"/>
 
-8. Select **+ Add Another Role** again. Under **Select A Role**, search for **Cloud Functions Admin**. Select **Cloud Functions Admin**.
+1. Select **+ Add Another Role** again. Under **Select A Role**, search for **Cloud Functions Admin**. Select **Cloud Functions Admin**.
 
 :::info
 Note: The option to add Cloud Functions Admin may only show up if you are on a Firebase Blaze plan. In addition, you may need to  [enable cloud functions](https://console.cloud.google.com/marketplace/product/google/cloudfunctions.googleapis.com) first.
@@ -130,7 +130,7 @@ To configure Firestore Database:
 
 <img src="/img/firebase/firebase-db-enable.png" alt="Alt text"  />
 
-2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next. 
+1. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next. 
 
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
@@ -140,7 +140,7 @@ link](../database/cloud-firestore/firestore-rules.md) for additional information
 Firestore security rules.
 :::
 
-3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.
+1. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.
 
 <img src="/img/firebase/firebase-location.png" alt="Alt text"  />
 
