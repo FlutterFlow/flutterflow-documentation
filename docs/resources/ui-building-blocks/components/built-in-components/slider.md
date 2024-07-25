@@ -3,7 +3,7 @@ slug: slider
 title: Slider
 tags: []
 description: Learn how to add Slider in your FlutterFlow app.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Slider
@@ -16,7 +16,7 @@ For example, you can use the Slider widget to allow users to set the volume, set
 
 Let's build an example of using the Slider widget and retrieve its value in a Text widget.
 
-![Slider widget](../../imgs/slider-demo.gif)
+![Slider widget](../../../control-flow/user-interactivity/imgs/slider-demo.gif)
 
 The steps to build the example are as follows:
 
@@ -28,13 +28,13 @@ The steps to build the example are as follows:
     3. Set the **Number Format Option** if you wish to.
     4. Click **Confirm**.
 
-![Slider demo](../../imgs/adding-slider.gif)
+![Slider demo](../../../control-flow/user-interactivity/imgs/adding-slider.gif)
 
 ## Setting initial value
 
 Sometimes you might want to display the slider with the default value. For example, showing the volume slider with the audible volume value. You can do so by setting the initial value for the Slider.
 
-![slider-set-initial-value](../../imgs/slider-set-initial-value.gif)
+![slider-set-initial-value](../../../control-flow/user-interactivity/imgs/slider-set-initial-value.gif)
 
 ## Customization
 
@@ -50,7 +50,7 @@ To set the platform type:
 2. Move to the properties panel and open the **Platform** section.
 3. Set the **Platform Type** among the **Android** or **Adaptive**.
 
-![Setting platform type](../../imgs/set-platform-type.gif)
+![Setting platform type](../../../control-flow/user-interactivity/imgs/set-platform-type.gif)
 
 ### Defining slider range
 
@@ -63,7 +63,7 @@ To set the min and max values:
 3. Find the **Min** property and enter the value. This will be the start value of the range.
 4. Find the **Max** property and enter the value. This will be the end value of the range.
 
-![Defining slider range](../../imgs/slider-range.gif)
+![Defining slider range](../../../control-flow/user-interactivity/imgs/slider-range.gif)
 
 ### Setting step size
 
@@ -79,7 +79,7 @@ To set the step size:
 2. Move to the properties panel and scroll down to the **Slider Properties** section.
 3. Find the **Step Size** property and enter the value.
 
-![Setting step size](../../imgs/slider-step-size.gif)
+![Setting step size](../../../control-flow/user-interactivity/imgs/slider-step-size.gif)
 
 ### Changing color
 
@@ -90,7 +90,7 @@ To change the slider colors:
 3. To change the active color, find the **Active Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 4. To change the inactive color, find the **Inactive Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 
-![Changing color](../../imgs/slider-color.gif)
+![Changing color](../../../control-flow/user-interactivity/imgs/slider-color.gif)
 
 ### Showing slider value
 
@@ -102,7 +102,7 @@ To show the slider value:
 2. Move to the properties panel and scroll down to the **Slider Properties** section.
 3. Find the **Show Value** property and turn on the toggle.
 
-![Showing slider value](../../imgs/showing-slider-value.gif)
+![Showing slider value](../../../control-flow/user-interactivity/imgs/showing-slider-value.gif)
 
 ## Trigger action on change
 

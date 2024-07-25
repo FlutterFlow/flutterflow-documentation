@@ -9,7 +9,7 @@ sidebar_position: 2
 
 # Form Validation
 
-The Form widget allows you to validate the user input and display a message if validation fails. This widget can contain any number of form fields, which are typically input fields such as [TextFields](form-widgets/textfield), [Dropdown](form-widgets/dropdown), [RadioButton](form-widgets/radiobutton), or [Date/Time picker](#).
+You can add validations to input fields by wrapping them inside the Form widget. The Form widget enables you to validate user inputs and display appropriate messages when validation criteria are not met.
 
 For example, you could use it to check if a user has given a valid email and password. This makes it easy to handle user input and ensure that the data is correct before it is submitted to the server or stored locally.
 

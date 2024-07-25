@@ -3,7 +3,7 @@ slug: pincode
 title: PinCode
 tags: []
 description: Learn how to add PinCodewidget in your FlutterFlow app.
-sidebar_position: 3
+sidebar_position: 4
 ---
 # PinCode
 
@@ -48,7 +48,7 @@ To add a PinCode widget:
 
 Let's see how to trigger an action when you are done entering the value in this widget. This is helpful when you want to compare the entered value with the one stored in your backend.
 
-![Displaying a snackbar message with the entered value in PinCode widget](../../imgs/trigger-on-completed-demo.gif)
+![Displaying a snackbar message with the entered value in PinCode widget](../../../control-flow/user-interactivity/imgs/trigger-on-completed-demo.gif)
 
 To do so:
 
@@ -88,7 +88,7 @@ Here is an example of displaying a snackbar message that shows the entered value
 
 Let's see how to trigger an action whenever you enter or delete the value in each field of this widget. This is helpful when you want to provide immediate feedback to the user. For instance, you can check the validity of the entered digit as soon as the user types it in and show a message that it is not valid.
 
-![Trigger action On Change](../../imgs/trigger-action-on-change.gif)
+![Trigger action On Change](../../../control-flow/user-interactivity/imgs/trigger-action-on-change.gif)
 
 To do so:
 
@@ -128,11 +128,11 @@ Here is an example of displaying a snackbar message when a user enters a non-num
 
 You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](#) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](#) action. This will display an error message when a user tries to submit the form without a pincode value.
 
-![Pincode validation](../../imgs/pincode-validation.gif)
+![Pincode validation](../../../control-flow/user-interactivity/imgs/pincode-validation.gif)
 
 You can also adjust the height to the error text from **Properties Panel > Error text height**.
 
-![Set error text height](../../imgs/set-error-text-height.png)
+![Set error text height](../../../control-flow/user-interactivity/imgs/set-error-text-height.png)
 
 ## Customizing
 
@@ -142,9 +142,9 @@ You can customize the appearance and behavior of this widget using the various p
 
 When the keyboard opens by default, you can enter only numbers. But you might want to allow users to enter both letters and numbers. To do so, select the **PinCode** widget, move to the **Properties Panel** **> PinCode Properties >** set the **Keyboard Type** to the **Visible Password**.
 
-![Keyboard Type](../../imgs/keyboard-type.webp)
+![Keyboard Type](../../../control-flow/user-interactivity/imgs/keyboard-type.webp)
 
-![Keyboard type: Visible Password](../../imgs/keyboard-type-visible-password.png)
+![Keyboard type: Visible Password](../../../control-flow/user-interactivity/imgs/keyboard-type-visible-password.png)
 
 
 ### Using PinCode for secret pin
@@ -243,7 +243,7 @@ When enabled, it mimics the tap event and immediately shows the keyboard. This m
 
 When this is enabled, it can read and auto fill the code from your messages app.
 
-![Auto Fill enabled](../../imgs/auto-fill-enabled.png)
+![Auto Fill enabled](../../../control-flow/user-interactivity/imgs/auto-fill-enabled.png)
 
 ### Aligning pin code fields
 
@@ -259,7 +259,7 @@ The following options help you align the pin code fields:
 - **Space Between**: Place the free space evenly between the pin code fields.
 To configure the space between and around the pin fields, select the **PinCode** widget, move to the properties panel, find the **Pin Code Alignment** property and select among the above options.
 
-![Aligning pin code fields](../../imgs/align-pin-code-fields.gif)
+![Aligning pin code fields](../../../control-flow/user-interactivity/imgs/align-pin-code-fields.gif)
 
 ### Changing pin field shape and size
 

@@ -3,7 +3,7 @@ slug: ratingbar
 title: RatingBar
 tags: []
 description: Learn how to add RatingBar in your FlutterFlow app.
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # RatingBar
@@ -20,7 +20,7 @@ Here's an example of how you can use the RatingBar widget in your project:
 4. Add another **Text** widget. Change the **name** to **Item Description** and the **Theme Style** to **Subtitle 2.** Set the **Left Padding** to 10.
 5. Finally, add the **RatingBar** widget from the **Form Elements** tab or add it directly from the widget tree.
 
-![](../../imgs/ratingbar-demo.gif)
+![](../../../control-flow/user-interactivity/imgs/ratingbar-demo.gif)
 
 ### Collectings Ratings from Users (Interactive RatingBar)
 
@@ -30,7 +30,7 @@ To collect ratings from users:
 2. Move to the Property Editor and scroll down to the **Rating Bar Properties** section.
 3. Find the **Interactive** property and checkmark it (click on it).
 
-![collect-ratings](../../imgs/collect-ratings.gif)
+![collect-ratings](../../../control-flow/user-interactivity/imgs/collect-ratings.gif)
 
 ### Setting The Rating Value
 
@@ -46,7 +46,7 @@ To manually set the Rating value for the RatingBar:
 You can also enter the value in decimal such as 1.5. When a decimal is used, a portion of the icon will be colored.
 :::
 
-![set-rating-value](../../imgs/set-rating-value.gif)
+![set-rating-value](../../../control-flow/user-interactivity/imgs/set-rating-value.gif)
 
 ### Customize the Icon
 
@@ -58,7 +58,7 @@ Here's an example of how you can customize the icons appearing in the RatingBar:
 4. Set the **Icon Size** property to 30.
 5. Find the **Icon Selector** property below, Click on the **Start Rounded** button, then search and select the icon name with **FontAwesome.smile**.
 
-![customize-icon](../../imgs/customize-icon.gif)
+![customize-icon](../../../control-flow/user-interactivity/imgs/customize-icon.gif)
 
 ### Changing the Rated/Unrated Color
 
@@ -69,7 +69,7 @@ To change the rated and unrated color (color for icons that are not filled in) f
 3. Now, find the **Rated Color** property, Click on the box next to **Secondary**, select the color, and then click **Use Selected Color** or click on **Secondary** and enter a Hex Code directly. You can also choose the color by clicking on the Palette and Simple button.
 4. Similarly, set the **Unrated** **Color** as well.
 
-![changing-ratingbar-color](../../imgs/changing-ratingbar-color.gif)
+![changing-ratingbar-color](../../../control-flow/user-interactivity/imgs/changing-ratingbar-color.gif)
 
 ### Add Padding between Icons
 
@@ -83,7 +83,7 @@ To add padding between icons:
 Use the Lock button to change the Left, Top, Right and Bottom padding all at the same time. Unlocking will allow you to modify each value separately.
 :::
 
-![ratingbar-adding-padding-between-icons](../../imgs/ratingbar-adding-padding-between-icons.gif)
+![ratingbar-adding-padding-between-icons](../../../control-flow/user-interactivity/imgs/ratingbar-adding-padding-between-icons.gif)
 
 ### Changing the Axis
 
@@ -95,7 +95,7 @@ To change the Axis:
 2. Move to the Property Editor and scroll down to the **Rating Bar Properties** section.
 3. Find the **Axis** dropdown and change it to **Vertical**.
 
-![ratingbar-change-axis](../../imgs/ratingbar-change-axis.gif)
+![ratingbar-change-axis](../../../control-flow/user-interactivity/imgs/ratingbar-change-axis.gif)
 
 ## Trigger action on change
 
