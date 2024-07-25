@@ -1,8 +1,8 @@
 ---
-slug: /resources/actions/action-blocks
+slug: /resources/functions/action-blocks
 title: Action Blocks
 description: Learn how to use Action Blocks in your FlutterFlow app to and create reusable actions.
-tags: [Action Blocks, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+tags: [Action Blocks, Backend Query, Backend Logic, Control Flow]
 sidebar_position: 7
 keywords: [Action Blocks, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
@@ -18,7 +18,8 @@ Action Blocks have different scopes, which determine their availability:
 
 
 ## Action Blocks Structure
-When creating an action block, the process of defining the flow is similar to defining Actions. 
+When creating an Action Block, the process of defining the flow is similar to **[defining 
+Actions](action-flow-editor.md#adding-an-action-example)**. 
 The main difference is in choosing the scope and defining the input & output values of the 
 Action Block.
 

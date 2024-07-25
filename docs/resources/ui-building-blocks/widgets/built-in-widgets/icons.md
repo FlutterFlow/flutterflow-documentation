@@ -71,4 +71,4 @@ By default, FlutterFlow handles the toggling of the State variable from true to 
 
 In this example, we trigger the SnackBar action that displays the value of the State variable.
 
-//TODO show the app demo
+<!--- TODO Show the App DEMO --->

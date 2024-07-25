@@ -39,8 +39,10 @@ depends on how you need to arrange your UI components:
 
 #### Choosing your parent widget
 
-//TODO link to quickstart for how to choose parent widget [Rows/Column/Stacks]
-with examples
+
+<!---TODO link to quickstart for how to choose parent widget [Rows/Column/Stacks]
+with examples --->
+
 
 ## Common Property: Alignment
 

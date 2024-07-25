@@ -3,7 +3,7 @@ title: State Management
 description: An overview of state management in FlutterFlow
 ---
 
-State management is a crucial concept focused on maintaining and controlling the *state* of an application. Simply put, it involves monitoring the changes within your app and updating the user interface to reflect these changes. 
+State management is a crucial concept focused on maintaining and controlling the **state** of an application. Simply put, it involves monitoring the changes within your app and updating the user interface to reflect these changes. 
 
 You can think of the UI as a function of your state variables, where changes in these variables directly influence what the UI displays.
 

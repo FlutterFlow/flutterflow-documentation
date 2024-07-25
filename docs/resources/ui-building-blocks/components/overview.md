@@ -88,5 +88,8 @@ some common use-cases.
    or feature highlights, and reuse them to maintain a cohesive layout.
 
 Here's an example of all the widely used components used in the EcommerceFlow demo app.
-// TODO Image will be added once all components are built in project
+
+
+<!---TODO Image will be added once all components are built in project --->
+
 

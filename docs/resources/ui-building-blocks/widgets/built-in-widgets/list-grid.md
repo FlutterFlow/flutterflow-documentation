@@ -39,7 +39,9 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 - **Primary:** If set to true, the ListView will act as the primary scrolling view in the context.
   This usually affects how the view interacts with other scrolling views and whether it stretches to fill the viewport.
 
-TODO: Video comparison
+
+<!---TODO: Video comparison --->
+
 
 - **Reverse:** This property, when enabled, reverses the order in which items appear in the ListView.
   For a vertical list, this means starting from the bottom and for a horizontal list, starting from the right.

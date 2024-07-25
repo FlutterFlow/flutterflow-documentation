@@ -1,7 +1,7 @@
 ---
 slug: /resources/functions/utility
-title: Built-in Functions
-description: Learn about the built-in functions available in FlutterFlow to enhance your app's backend logic.
+title: Utility Functions
+description: Learn about the built-in utility functions available in FlutterFlow to enhance your app's UI logic.
 tags: [Functions]
 sidebar_position: 2
 keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
@@ -52,7 +52,7 @@ to a widget that only accepts `String` data types.
 
 Here is a quick demo:
 
-// TODO Arcade
+<!--- TODO Arcade --->
 
 :::warning[Combine Text vs RichText widget]
 The **Combine Text** built-in function only allows you to combine multiple values (dynamic or

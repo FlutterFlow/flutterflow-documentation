@@ -1,7 +1,8 @@
 ---
-slug: overview
+slug: /resources/control-flow-overview
 title: Overview
-tags: [ ]
+tags: [Control Flow]
+keywords: [control flow, programming, logic, app development, user inputs, event handling, software engineering, coding, programming constructs, software logic]
 toc_max_heading_level: 5
 sidebar_position: 1
 ---
@@ -12,20 +13,21 @@ Control flow in programming refers to the order in which individual statements, 
 function calls are executed or evaluated. Proper control flow is crucial for determining how your
 app responds to user inputs and events. Here are some key elements:
 
-* **Conditional Statements:**
-  These include `if`, `else if`, and `else` statements that allow your app to make decisions based on
+* **[Conditional Flows:](concepts.md)**
+  These include `if`, `else if`, and `else` flows that allow your app to make decisions 
+  based on
   certain conditions. For example, you might check if a user is logged in and then show different
   content based on their authentication status.
 
-* **Loops:**
-  Loops such as `for` and `while` allow your app to repeat a sequence of logic multiple times. 
+* **[Loops:](functions/loops.md)**
+  Loops allow your app to repeat a sequence of logic multiple times. 
   This is useful for tasks like iterating through a list of items or retrying a failed operation.
 
-* **Event Handling:**
+* **[Event Handling:](functions/action-flow-editor.md#action-triggers)**
   In certain cases, you will execute functions that are triggered by specific events such as user
-  interactions (e.g., taps, swipes) or system events (e.g., page load, API response).
+  interactions (e.g., taps, swipes) or system events (e.g., page load, on focus change).
   Understanding how to handle such events effectively ensures that your app reacts appropriately to
-  user interactions.
+  user interactions or events.
 
 **Logic** or **Functions** refer to the core operations and behaviors that determine how an app 
 responds to user actions and interacts with data. This could include: 
@@ -37,7 +39,7 @@ world. For example, in an e-commerce app, it handles tasks like processing order
 tasks like validating forms, navigating between screens, and updating content based on user actions.
 
 * **Data Logic:** This manages the app's data. It includes tasks like fetching, storing, updating, 
-and deleting data from databases.
+and deleting data from databases or via APIs.
 
 
 
@@ -59,12 +61,17 @@ response to specific events, such as a button click or a page load.
 
 There are different types of functions you can use in your app. Some examples in FlutterFlow are:
 
-* **[Built-in Utility Functions](built-in-functions.md):** Functions that perform general utility 
+* **[Built-in Utility Functions](functions/utility-functions.md):** Functions that perform general utility 
   tasks, such as 
   formatting 
-data or performing calculations. In FlutterFlow, you can use [Code Expression](#) for simple data manipulation tasks or use the Combine Text built-in function to concatenate strings.
+data or performing calculations. In FlutterFlow, you can use 
+[**Code Expression**](functions/utility-functions.md#code-expressions) for simple data 
+  manipulation tasks or use the 
+  **[Combine Text](functions/utility-functions.md#combine-text)** built-in 
+  function to concatenate strings.
 
-* **[Actions](actions):** Sequence of Logic performed in response to user interactions:
+* **[Actions](functions/action-flow-editor.md):** Sequence of Logic performed in response to 
+  user interactions. For example: 
   * **Updating State Variables:** Functions that modify the current state or data of the app,
     page, or
     component.
@@ -76,15 +83,20 @@ data or performing calculations. In FlutterFlow, you can use [Code Expression](#
   * **Custom Actions:** More complex actions written in **Flutter & Dart** that can be added as a node to
     the action flow editor.
 
-* **Navigation:** Functions that handle the movement between different pages or screens within
+* **[Navigation:](../../ff-concepts/navigation-routing/nav-overview.md)** Functions that handle 
+  the movement between different pages or screens within
   your app, including opening bottom sheets or dialogs. In FlutterFlow, such functions can
   either run automatically after certain related operations, such as Login/Create Account, or they
   can be added as individual **Actions** if the developer enables it.
 
-* **Backend Queries:** Functions that interact with your database or external services to
+* **[Backend Queries:](backend-logic/backend-query/backend-query.md)** Functions that interact with your 
+  database or external 
+  services to
   retrieve or manipulate data.
 
-* **Custom Functions:** Complex manipulation code written in **Dart**, used to set properties of a
+* **[Custom Functions:](../../ff-concepts/adding-customization/custom-functions.md)** Complex 
+  manipulation code written in **Dart**, used to set 
+  properties of a
   widget or an action.
 
 

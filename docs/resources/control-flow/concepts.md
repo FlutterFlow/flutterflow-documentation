@@ -1,9 +1,9 @@
 ---
-slug: /concepts/control-flow
-title: Concepts
+slug: /resources/control-flow-concepts
+title: Control Flow Concepts
 description: Understand and implement control flow in your FlutterFlow app to manage the execution of statements, instructions, and function calls under various conditions.
 tags: [Control Flow, FlutterFlow, Concepts]
-sidebar_position: 1
+sidebar_position: 2
 keywords: [Control Flow, FlutterFlow, Concepts]
 ---
 
@@ -33,7 +33,8 @@ The primary conditional statements are `if`, `if-else`, and `else`.
 
 The if statement evaluates a condition and executes a block of code if the condition is true.
 
-//show diagram here
+
+<!---TODO show diagram here --->
 
 ```
 if (userIsLoggedIn) {
@@ -72,16 +73,16 @@ if (userIsLoggedIn) {
 
 This example demonstrates multiple conditions. If `userIsLoggedIn` is true, it shows a welcome message. If not, it checks if `userIsGuest` is true and shows a guest message. If neither condition is met, it prompts the user to log in.
 
-// TODO diagram for conditionals
+<!--- TODO Diagram for Conditionals --->
 
 ### Implementing Conditionals
 In FlutterFlow, you can implement conditional logic in two primary ways: 
 
-- **When Setting Properties**
+- **[When Setting Properties](functions/conditional-logic.md#setting-widget-properties-with-conditional-logic)**
 
     In FlutterFlow, you can set properties of widgets conditionally. For example, you might want to change the color of a button based on a variable's value. You can use conditional expressions to dynamically set these properties during runtime.
 
-- **Conditional Actions**
+- **[Conditional Actions](functions/conditional-logic.md#conditional-actions)**
 
   You can also perform conditional actions in FlutterFlow, where certain actions are executed 
   only if specified conditions are met. This is useful for implementing logic like 
@@ -90,7 +91,7 @@ In FlutterFlow, you can implement conditional logic in two primary ways:
   Example: If the user clicks a button and a form is valid, navigate to the next screen; otherwise, show an error message.
 
 :::info 
-Check out the [**complete guide**](conditional-logic.md) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
+Check out the [**complete guide**](functions/conditional-logic.md) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
 :::
 
 ## Sequential vs Parallel Logic Flow
@@ -107,8 +108,7 @@ previous one to complete before starting. This is useful for tasks that depend o
 other. This is useful for tasks that can be done simultaneously and do not depend on each other's outcomes.
   
   **Example:** Loading data from multiple sources simultaneously to speed up the data fetching process.
-![parallel-sequential.png](img%2Fparallel-sequential.png)
-
+![parallel-sequential.png](functions%2Fimg%2Fparallel-sequential.png)
 ## Asynchronous Functions
 
 Asynchronous functions are operations that do not complete immediately and may finish at a
