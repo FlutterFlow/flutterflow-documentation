@@ -1,5 +1,5 @@
 ---
-slug: /resources/actions/loops
+slug: /resources/functions/loops
 title: Loops
 description: Learn how to implement loops in your FlutterFlow app to iterate over data and perform repeated actions.
 tags: [Loops, Backend Query, Backend Logic, Control Flow, FlutterFlow]

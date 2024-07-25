@@ -19,8 +19,8 @@ Facebook login allows users to authenticate using their Facebook Accounts.
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#)
-- Complete [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md)
+- Complete [**Initial Setup**](auth-initial-setup)
 :::
 
 ## Adding Facebook sign-in

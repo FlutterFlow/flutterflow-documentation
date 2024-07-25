@@ -41,8 +41,8 @@ Phone login allows a user to sign in by sending an SMS message to the user's pho
 
 Before getting started with this section:
 
-1. Complete [**Firebase Setup**](#).
-2. Complete [**Initial setup**](initial-setup.md) required for authentication.
+1. Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md).
+2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
 :::
 
 

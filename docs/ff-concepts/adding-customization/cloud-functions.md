@@ -2,19 +2,20 @@
 slug: /concepts/custom-code/cloud-functions
 title: Cloud Functions
 description: Learn how to use Cloud Functions in your FlutterFlow app for serverless backend functionality.
-tags: [FlutterFlow, Cloud Functions, Serverless, Integration]
+tags: [Cloud Functions, Serverless, Integration]
 sidebar_position: 6
 keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
 ---
 
 # Cloud Functions
 
-[Cloud Functions](https://firebase.google.com/docs/functions) allows you to run backend code in response to events triggered by Firebase features and HTTPS requests. For example, you want to automatically send a welcome email to users when they sign up for your app. You can do this using a Cloud Function that triggers on Firebase Authentication's user creation event.
+[**Cloud Functions**](https://firebase.google.com/docs/functions) allows you to run backend code in response to events triggered by Firebase features and HTTPS requests. For example, you want to automatically send a welcome email to users when they sign up for your app. You can do this using a Cloud Function that triggers on Firebase Authentication's user creation event.
 
 We allow you to write and deploy Firebase Cloud Functions directly within the platform. With an integrated code editor, writing JavaScript cloud functions is quick and user-friendly. Each function has customizable boilerplate settings, including pre-configured essentials like memory, region, and timeout.
 
 :::note
-You can find some interesting use cases [*here*](https://firebase.google.com/docs/functions/use-cases).
+Read up on some interesting use cases of 
+[**Cloud Functions**](https://firebase.google.com/docs/functions/use-cases).
 :::
 
 ## Adding Cloud Functions
@@ -40,7 +41,8 @@ Here are the step-by-step instructions to build such an example:
 :::info[Before you Begin]
 
 * Make sure the project is on Blaze plan on Firebase.
-* Completed all steps in the [Firebase Setup](/data-and-backend/firebase/firebase-setup).
+* Completed all steps in the
+[**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 :::
 
 ### 1. Add page state variables
@@ -50,6 +52,8 @@ For this example, you'll need to set up two [page state variables](/data-and-bac
 1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a 
 loading indicator during the logo creation process. Its value is set to *True* before initiating the API call and switched to *False* once the logo generation is complete.
 5. **logoImage (*****Type: ImagePath*****)**: This is used to hold the generated logo image. After a successful API call, the retrieved image URL is stored here, allowing the logo to be displayed in the Image widget.
+
+<p></p>
 ![img_6.png](imgs%2Fimg_6.png)
 
 ### 2. Build a page
@@ -69,9 +73,10 @@ Few things to note here:
 
 To create and deploy a *Cloud Function* :
 
-1. Click on the **Cloud Functions** from the [*Navigation Menu*]
-(/getting-started/ui-builder/navigation-menu) (left side of your screen).
-5. Click **+ Add**. This will add the default newCloudFunction*.*
+1. Click on the **Cloud Functions** from the 
+[**Navigation Menu**](../../../docs/intro/ff-ui/builder.md#navigation-menu) (left side of your 
+   screen).
+5. Click **+ Add**. This will add the default `newCloudFunction`.
 8. Set the **Cloud Function Name**.
 
 #### Boilerplate Settings
@@ -79,6 +84,7 @@ To create and deploy a *Cloud Function* :
 On the right side, you can configure the following Boilerplate Settings:
 1. **Memory Allocation**: You can specify the amount of memory your function should have when 
     it's executed based on its complexity and needs. This setting is crucial as it influences the function's performance and the cost of running it. More memory can enhance performance for intensive tasks but also increase costs.
+
 5. **Timeout (s)**: This refers to the maximum amount of time, in seconds, that a function is allowed to run before it is automatically terminated. If your function takes longer to execute, increasing the timeout setting may be necessary. However, be aware that longer timeouts can incur higher costs since billing is based on execution time.
 8. **Require Authentication**: Turn on this setting if you want users to be authenticated to execute this cloud function.
 11. **Cloud Function Region**: This determines the geographical location of the servers where your functions are hosted and executed. Ideally, you should keep this same as your *Default GCP resource location* and the Cloud Function Region specified in the Firebase Advanced Settings.
@@ -92,6 +98,7 @@ by configuring the input and output.
 
 1. To receive output from a Cloud Function, enable the **Return Value** and choose an 
         appropriate Type for the output, like 'String' for text. For this example, set it to *ImagePath* to get the URL of the generated logo.
+
 5. To input data: Click **+ Add parameters**. **Name** the parameter, select its **Type**, choose single or multiple items (**Is List** option), and uncheck **Nullable** if the value can be null. For this example, add a parameter 'prompt' with *Type* set to *String*.
 8. When using [Custom Data Types](/data-and-backend/custom-data-types), Cloud Function expects JSON, matching each field in the Data Type to a key-value pair in the JSON. If the Data Type is a list, the function expects a list of JSONs. For example, for a custom data type named 'Person' with fields 'Name' and 'Age,' the function should return:
 
@@ -125,6 +132,7 @@ For a list, the function should return:
 #### To deploy
 1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated 
 code, and then click **`</> Copy to Editor`**. **Tip**: To see if you are able to deploy the cloud function (before adding your own code), proceed directly with steps 8 and 9.
+
 2. Inside the code editor, add the cloud function code. **Tip**: You can copy the boilerplate code 
    to [ChatGPT](https://chat.openai.com/) and ask it to write the desired code based on that.
 3. Click **Save Cloud Function**.

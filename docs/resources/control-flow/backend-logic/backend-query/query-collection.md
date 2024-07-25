@@ -16,10 +16,11 @@ be used to update any widget present inside.
 
 In order to use this backend query, you should have:
 
-1. Completed all the steps of [Firebase Setup](/data-and-backend/firebase/firebase-setup) for your
+1. Completed all the steps of 
+[**Firebase Setup**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) for your
    project.
-5. At least one **Firestore Collection** defined in your project.
-   :::
+2. At least one **Firestore Collection** defined in your project.
+:::
 
 ## Defining the Query
 

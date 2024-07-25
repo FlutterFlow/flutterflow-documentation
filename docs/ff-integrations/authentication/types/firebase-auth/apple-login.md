@@ -12,7 +12,7 @@ keywords: [FlutterFlow, Apple Login, Authentication, Firebase]
 
 Apple Sign-In allows users to authenticate using their Apple Accounts.
 
-:::warning
+:::warning[Support]
 
 Apple sign-in functionality is only supported for iOS.
 
@@ -49,11 +49,13 @@ Apple sign-in functionality is only supported for iOS.
 
 Before getting started with this section:
 
-1. Complete [**Firebase Setup**](#).
-2. Complete [**Initial setup**](initial-setup.md) required for authentication.
+1. Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md).
+2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
 3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2F).
-4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [**this link**](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
-5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or emulator.
+4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). 
+   Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.
+5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or 
+   emulator. Try with Local Run!
 :::
 
 ## Adding Apple sign-in

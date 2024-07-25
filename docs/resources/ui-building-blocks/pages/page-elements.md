@@ -154,7 +154,9 @@ From the NavBar settings page, you can add the NavBar and make modifications
 such as changing the display style, reordering icons, customizing its
 appearance, and more.
 
-// TODO Image from demo app
+<!---TODO Image from demo app--->
+
+ 
 
 ### Enable Nav Bar in settings
 

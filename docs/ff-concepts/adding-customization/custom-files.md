@@ -66,7 +66,8 @@ Future setStatusbarColor() async {
 }
 ```
 
-2. Now click on **Custom Functions** from the [*Navigation Menu*](/getting-started/ui-builder/navigation-menu) (left side of your screen) and open the **Custom Files > main.dart**.
+2. Now click on **Custom Functions** from the 
+[**Navigation Menu**](../../../docs/intro/ff-ui/builder.md#navigation-menu) and open the **Custom Files > main.dart**.
 5. Determine where to place the code (i.e., **Initial Action** or **Final Action**), click the **+** button, and select the custom action.
 8. Click **Save**.
 

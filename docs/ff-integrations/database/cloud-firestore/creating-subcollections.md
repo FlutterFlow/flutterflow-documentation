@@ -54,7 +54,9 @@ Building the chat room example comprises the following steps:
 
 ### 1. Creating a collection
 
-[Create the collection](/data-and-backend/firebase/firestore-database-cloud-firestore/creating-collections#creating-a-collection) called *chat\_rooms*. This will be used to hold the chat room details. While defining the schema for *chat\_rooms* collection, add the fields to display its name, i.e., *chat\_room\_name.*
+[**Create the collection**](creating-collections.md) called *chat\_rooms*. This will be used to hold the chat room 
+details.
+While defining the schema for *chat\_rooms* collection, add the fields to display its name, i.e., *chat\_room\_name.*
 
 ![img_23.png](img_23.png)
 
@@ -63,12 +65,15 @@ Building the chat room example comprises the following steps:
 To create the subcollection:
 
 1. Click on the **Firestore** from the Navigation Menu (left side of your screen).
+
 5. Click on the **(+)** Plus sign button.
 8. A popup will appear; enter the collection name as '*messages.'*
 11. **Turn on** the **Is Subcollection** toggle.
 14. The dropdown list with existing collections will appear. Click on the **Unset** and select the parent collection, *chat\_rooms* in this case.
 17. Click **Create** Button.
-20. Next, [define the document schema](/data-and-backend/firebase/firestore-database-cloud-firestore/creating-collections#define-schema-creating-fields). While defining the schema for the 'messages' subcollection, add the fields such as *message* (to store the message body) and *from* (to store the sender name).
+20. Next, [define the document schema](creating-collections.md#define-schema-creating-fields). While defining the schema for 
+    the 'messages' 
+    subcollection, add the fields such as *message* (to store the message body) and *from* (to store the sender name).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/242ba30097fd4a3986844489027185d9?sid=1c4e4ba9-dc46-4959-8b3f-5463ab004229" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -92,9 +97,13 @@ The first page shows the chat room listing, and when you tap, it opens the new p
 
 The steps to build the chat room page are as follows:
 
-1. Query the *chat\_rooms* collection and display the chat room names in a ListTile (inside 
-ListView) using the instructions [here](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection).
-5. Add the **Navigate To** action **on Tap** of the **ListTile** and open the messages page using the instructions [here](/actions/actions/navigation/navigate#navigate-to-action). **Note**: While navigating, pass the chat room record to the next page. Learn how to pass data to the next page [here](/data-and-backend/passing-data#passing-a-record-from-a-listview-to-a-details-page).
+1. Query the **chat_rooms** collection and display the chat room names in a ListTile (inside 
+ListView).
+
+5. Add the **[Navigate To](../../../ff-concepts/navigation-routing/nav-overview.md#navigation-actions)** action **on 
+   Tap** of the **ListTile** and open the messages page. **Note**: While navigating, pass the 
+   chat room record to the next page. Learn how to 
+[pass data to the next page](../../../ff-concepts/navigation-routing/passing-data.md). .
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/4ff47a7a33d64386a2e2865f87574fc2?sid=b84bf267-e569-4d3b-9b63-e20d92d2fe6f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -113,8 +122,9 @@ The steps to build the chat room page are as follows:
 
 ![img_24.png](img_24.png)
 
-2. On the ListView, [query](/data-and-backend/firebase/firestore-database-cloud-firestore
-/retrieving-data#querying-a-collection) a subcollection as you would query any other collection; except for the subcollection, you must provide its parent collection reference (i.e., chat\_rooms reference in this case). This way, you'll only see messages from that specific chat room.
+2. On the ListView, query a subcollection as you would query any 
+   other collection; except 
+   for the subcollection, you must provide its parent collection reference (i.e., chat\_rooms reference in this case). This way, you'll only see messages from that specific chat room.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/e069c07b5dd14b228099534464997bca?sid=05c512e7-60f7-4495-89e7-e0fb9f915bfa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

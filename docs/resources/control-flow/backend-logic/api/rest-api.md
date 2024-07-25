@@ -1,25 +1,25 @@
 ---
-slug: /resources/backend-logic/api-calls-101
-title: API Calls 101
+slug: /resources/backend-logic/rest-api
+title: REST APIs
 description: Learn the basics of making API calls in your backend logic.
-tags: [API, Backend Logic, Control Flow, FlutterFlow]
+tags: [API, Backend Logic, Control Flow]
 sidebar_position: 1
-keywords: [API, Backend Logic, Control Flow, FlutterFlow]
+keywords: [API, Rest API, Backend Logic, Control Flow, FlutterFlow]
 ---
 
-# API Calls 101
+# API Calls
 
 On this page, you will learn the most basic knowledge on various concepts for adding an API call to your project. They are the building blocks of adding an API call. Depending on the API's definition, you may utilize some or all of these concepts to successfully implement the API call in your project.
 
 Here are they:
 
-* [Headers](/data-and-backend/api-calls/api-calls-101#headers)
-* [Query Parameters](/data-and-backend/api-calls/api-calls-101#query-parameters)
-* [Variables](/data-and-backend/api-calls/api-calls-101#variables)
-* [Body](/data-and-backend/api-calls/api-calls-101#body)
-* [API response (JSON) to/from Data Type](/data-and-backend/api-calls/api-calls-101#api-response-json-to-from-data-type)
-* [JSON Path](/data-and-backend/api-calls/api-calls-101#json-path)
-* [Advanced Settings](/data-and-backend/api-calls/api-calls-101#advanced-settings)
+* [Headers](#headers)
+* [Query Parameters](#query-parameters)
+* [Variables](#variables)
+* [Body](#body)
+* [API response (JSON) to/from Data Type](#api-response-json-tofrom-data-type)
+* [JSON Path](#json-path)
+* [Advanced Settings](#advanced-settings)
 
 ## Headers
 
@@ -565,7 +565,7 @@ with a numeric character. However, in cases where you have keys with numeric pre
 :::
 
 :::info
-Learn more about JSONPath and how to define a proper expression from [this page](https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html).
+Learn more about **[JSONPath](https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html)** and how to define a proper expression.
 :::
 
 ### Adding JSON Path
