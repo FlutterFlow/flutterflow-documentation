@@ -11,7 +11,7 @@ keywords: [SQLite, Query, Backend Query, Backend Logic, Control Flow, FlutterFlo
 
 SQLite Query can be set up to automatically execute SQL statements as soon as a page or widget loads. This feature is useful for fetching data from the database to display on a page or widget, such as populating a ListView with items or showing user preferences in Text widgets.
 
-![img_4.png](..%2Fimgs%2Fimg_4.png)
+![img_4.png](../imgs/img_4.png)
 
 :::info[Prerequisites]
 
@@ -22,18 +22,18 @@ Before you add this query, ensure you configure the database and define the quer
 
 Let's see how to display a list of items from the database using the SQLite query. Here are the steps:
 
-1. [Add query](/data-and-backend/backend-query/sqlite-query#id-1.-add-query)
-5. [Showing query data in UI element](/data-and-backend/backend-query/sqlite-query#showing-query-data-in-ui-element)
+1. [Add query](#1-add-query)
+2. [Showing query data in UI element](#2-showing-query-data-in-ui-element)
 
 ### 1. Add query
 
 Go to your project page and follow the steps below to define an SQLite query:
 
 1. Select the **widget** (or page) on which to apply the query.
-5. Select **Backend Query** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu).
-8. Click **Add Query** and set the **Query Type** to **SQLite Query**.
-11. Select the **Query Name**. (Only *Read Queries* will be displayed here.)
-14. Click **Confirm**.
+2. Select **Backend Query** from the Properties Panel (the right menu).
+3. Click **Add Query** and set the **Query Type** to **SQLite Query**.
+4. Select the **Query Name**. (Only *Read Queries* will be displayed here.)
+5. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=d5be04cc-1ce3-4f16-98e1-5b929c0f6673" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -45,7 +45,7 @@ com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=d5be04cc-1ce3-4f16-98e1-5b929c0f6
 Once you have the SQLite query defined, you can use the data retrieved from the query to display on widgets present inside. Follow the steps below:
 
 1. Select the **widget** (e.g., `Text`) on which you want to display the data.
-2. From the [Properties Panel](/getting-started/ui-builder/properties-panel), open the **Set from Variable** menu **>** select **[your query name] Row** **>** select the column data that you want display here.
+2. From the Properties Panel, open the **Set from Variable** menu **>** select **[your query name] Row** **>** select the column data that you want display here.
 3. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.

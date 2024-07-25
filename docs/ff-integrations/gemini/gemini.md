@@ -27,15 +27,15 @@ Integrating [Gemini AI](https://gemini.google.com/app) into FlutterFlow unlocks 
 2. Once the API key is generated, copy it.
 
 :::tip
-To secure your API keys, refer to the Best Practices guide: [Secure API Keys](/advanced-functionality/best-practices-secure-api-keys)
+To secure your API keys, refer to the Best Practices guide: [Secure API Keys](../google-cloud/secure-keys.md)
 :::
 
-3. Go back to FlutterFlow and navigate to **Settings and Integrations > Integrations > Gemini**. 
+1. Go back to FlutterFlow and navigate to **Settings and Integrations > Integrations > Gemini**. 
 
-4. Toggle on the **Enable Gemini** option and paste the copied **API key** into the designated 
+2. Toggle on the **Enable Gemini** option and paste the copied **API key** into the designated 
    field. 
 
-5. Now, you can add [Gemini actions](/actions/actions/integrations/gemini) at appropriate events 
+3. Now, you can add [Gemini actions](#gemini-action) at appropriate events 
 within your app.
 
 With these steps, you’re all set to enhance your FlutterFlow app with powerful AI features.
@@ -47,11 +47,11 @@ To add a Gemini Action, follow these steps:
 
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window. Click on the **+ Add Action**.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window. Click on the **+ Add Action**.
 
 3. On the right side, search and select the **Gemini** (under *Integrations*) action. 
 
-4. Set the [**Action Type**](/actions/actions/integrations/gemini#types-of-gemini-action). **Note** that If you set this type to *Text from Image*, you must provide the image as well.
+4. Set the [**Action Type**](#types-of-gemini-action). **Note** that If you set this type to *Text from Image*, you must provide the image as well.
 
 5. Provide the **Text prompt** that will be used to generate the result from the Gemini AI model. For this example, we use this prompt: `When users upload a photo, you analyze the food in the photo and tell if it is healthy to eat`. 
 

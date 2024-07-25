@@ -19,7 +19,7 @@ From the Widgets tab, you can access all standard FlutterFlow widgets. They are 
 
 ## 2. Components
 
-Components are widgets with certain functionalities that can be reused throughout your app. They are constructed from either standard or custom widgets. Once you have created a [component](#) or [custom widget](#), you can access it from here.
+Components are widgets with certain functionalities that can be reused throughout your app. They are constructed from either standard or custom widgets. Once you have created a [component](#) or [custom widget](../../ff-concepts/adding-customization/custom-widgets.md), you can access it from here.
 
 ## 3. Templates
 
@@ -31,6 +31,6 @@ Theme Widgets enable you to customize the visual appearance of individual widget
 
 ## 5. Floating Widget Palette
 
-The Floating Widget Palette gives you quick access to widgets directly from the canvas. This feature is useful for swiftly adding widgets without the need to open the widget palette via the navigation menu.
+The Floating Widget Palette gives you quick access to widgets directly from the canvas. This feature is useful for swiftly adding widgets without the need to open the Widget Palette via the navigation menu.
 
 ![Floating Widget Palette](imgs/floating-widget-palette.gif)

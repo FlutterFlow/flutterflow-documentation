@@ -6,7 +6,7 @@ The [Card](https://api.flutter.dev/flutter/material/Card-class.html) widget is u
 
 The Card widget is often used with a List to display the item information for a specific record.
 
-![img.png](imgs%2Fimg.png)
+![img.png](imgs/img.png)
 
 ## Adding Card Widget
 
@@ -14,7 +14,7 @@ Here's an example of how you can use a Card widget in your project:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **Card** 
    widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
-5. Start with adding a `Row` or `Column` widget inside the Card and build the UI as per your requirements.
+2. Start with adding a `Row` or `Column` widget inside the Card and build the UI as per your requirements.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/c2827a818b9549da997adf5e45e85f0f?sid=555f628d-9dbd-4874-9237-2c2b9b679c84" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -33,9 +33,9 @@ Styling helps you customize a widget that matches your design. The Card widget a
 Here's how you stylize the Card widget:
 
 1. Select the **Card** widget and move to the **Properties Panel > Card Properties**.
-5. To change the background color, [modify the Color](/widgets-and-components/widgets/widget-commonalities#change-color) property.
-8. To change the elevation (depth or Z-axis), enter the value in the **Elevation** property.
-11. To create the rounded border, use the **Border Radius** property. For uniform curvature on all sides, use the **Uniform Radius** option by sliding the adjustment bar or inputting your preferred value directly.
+2. To change the background color, [modify the Color](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#change-color) property.
+3. To change the elevation (depth or Z-axis), enter the value in the **Elevation** property.
+4. To create the rounded border, use the **Border Radius** property. For uniform curvature on all sides, use the **Uniform Radius** option by sliding the adjustment bar or inputting your preferred value directly.
 
 <p></p>
 

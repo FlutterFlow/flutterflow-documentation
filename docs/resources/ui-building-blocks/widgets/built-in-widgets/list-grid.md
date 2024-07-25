@@ -18,7 +18,7 @@ You can customize the ListView properties and functionalities, some are as follo
 Axis sets the orientation of the ListView. You can select either "Vertical" or
   "Horizontal" depending on whether you want the list to scroll vertically or horizontally.
 
-![listview-axis.png](imgs%2Flistview-axis.png)
+![listview-axis.png](imgs/listview-axis.png)
 
 ### Spacing 
 
@@ -46,7 +46,7 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 - **Reverse:** This property, when enabled, reverses the order in which items appear in the ListView.
   For a vertical list, this means starting from the bottom and for a horizontal list, starting from the right.
 
-![listview-reverse.png](imgs%2Flistview-reverse.png)
+![listview-reverse.png](imgs/listview-reverse.png)
 
 #### Make List Reorderable
 Whether to allow reordering of items in the list. On Web or Desktop this will 
@@ -187,7 +187,7 @@ ListTile should be used when you require a simple, effective layout with standar
 
 You can customize the Title (Text), Subtitle (Text) and Icon properties from the Properties Panel
 
-![list-tile.png](imgs%2Flist-tile.png)
+![list-tile.png](imgs/list-tile.png)
 
 :::info
 To learn about how to customize the Text widgets in this component, refer the [**Text widget**](text.md). 

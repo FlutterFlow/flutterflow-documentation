@@ -61,17 +61,17 @@ To set up the RevenueCat, follow these steps carefully:
     <p></p>
     ![error-while-creating-sub-in-play-console.avif](error-while-creating-sub-in-play-console.avif)
     
-    2. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
+    1. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
     
-    3. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
+    2. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
     
-    4. Now, from the toolbar menu, click **Download APK** 
+    3. Now, from the toolbar menu, click **Download APK** 
     
-    5. In the Play Console, create a [Closed testing](https://play.google.com/console/about/closed-testing/) track and create a new release.
+    4. In the Play Console, create a [Closed testing](https://play.google.com/console/about/closed-testing/) track and create a new release.
     
-    6. Upload your **App Bundle** or **APK**, enter the release name, and create the release.
+    5. Upload your **App Bundle** or **APK**, enter the release name, and create the release.
     
-    7. Open the **Subscriptions** tab again. It should let you manage subscriptions now.
+    6. Open the **Subscriptions** tab again. It should let you manage subscriptions now.
 4. [Create Products and Entitlements in RevenueCat](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-configure-products-and-entitlements-in-revenuecat).
 
 ## 2. Enable RevenueCat in FlutterFlow

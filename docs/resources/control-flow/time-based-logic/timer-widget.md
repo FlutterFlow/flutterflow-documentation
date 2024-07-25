@@ -30,14 +30,14 @@ and various time-sensitive activities.
 On adding the Timer widget to your page, you can specify the type of timer and other properties
 as mentioned here:
 
-![timer-widget.png](imgs%2Ftimer-widget.png)
+![timer-widget.png](imgs/timer-widget.png)
 
 ## On Timer End [Action Trigger]
 
 You can also specify a flow of actions when the timer ends. You can find this Action Trigger on
 clicking the Action Flow Editor on the Timer widget.
 
-![timer-widget-action.png](imgs%2Ftimer-widget-action.png)
+![timer-widget-action.png](imgs/timer-widget-action.png)
 
 ## Controlling the Timer
 
@@ -51,7 +51,7 @@ You can control the timer from anywhere on the page. Using any widget's Action F
 
 - **Reset Timer:** This resets the timer and brings it to the initial state.
 
-![timer-control.png](imgs%2Ftimer-control.png)
+![timer-control.png](imgs/timer-control.png)
 
 ## Periodic Action vs Timer
 

@@ -15,15 +15,15 @@ Simply navigate to **Settings and Integrations** > **Integrations** > **Google A
 ## Default Events
 Currently, we support automatic logging for the following events:
 
-* **On Page Load**: This logs an event when a user opens a page. It is logged with the Firebase recommended name, i.e., **screen\_view,** but you will find the actual screen name, i.e., page title, inside the parameter (click on the screen\_name to reveal the parameter).
+* **On Page Load**: This logs an event when a user opens a page. It is logged with the Firebase recommended name, i.e., **screen_view,** but you will find the actual screen name, i.e., page title, inside the parameter (click on the screen_name to reveal the parameter).
 
 * **On Action Start**: This logs an event when a user interacts with widgets to trigger an action. It will be logged as
-`{WIDGET\_NAME}\_{TRIGGER\_TYPE}` For example, when the user taps a button and navigates to the 
-  next page, the event will be logged as **Button\_navigate\_to**.
+`{WIDGET_NAME}_{TRIGGER_TYPE}` For example, when the user taps a button and navigates to the 
+  next page, the event will be logged as **Button_navigate_to**.
 
-* **On Each Individual Action**: This logs an event for every individual action or action chain for a given widget. It will be logged as `{WIDGET\_NAME}\_{TRIGGER\_TYPE}` For example, when the user taps on a button and adds the *Upload Media* action followed by the *Update App State* action, the event will be logged as `Button\_upload\_media` and `Button\_update\_local\_state`.
+* **On Each Individual Action**: This logs an event for every individual action or action chain for a given widget. It will be logged as `{WIDGET_NAME}_{TRIGGER_TYPE}` For example, when the user taps on a button and adds the *Upload Media* action followed by the *Update App State* action, the event will be logged as `Button_upload_media` and `Button_update_local_state`.
 
-* **On Authentication**: This logs an event for every authentication action. That means whenever you signup, log in, log out, reset your password, or delete your account. The event will be logged as `{ACTION\_TYPE}` (e.g., sign\_up, login, etc.).
+* **On Authentication**: This logs an event for every authentication action. That means whenever you signup, log in, log out, reset your password, or delete your account. The event will be logged as `{ACTION_TYPE}` (e.g., sign_up, login, etc.).
 
 :::tip
 To clearly identify the widgets (on which the events are logged) in the analytics dashboard, you can rename and provide an easily recognizable name to the widget (e.g., BuyButton instead of just Button).
@@ -37,7 +37,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action. 
 
-2. Select **Actions** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu), and click **+ Add Action**.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu), and click **+ Add Action**.
 	* Search and select the **Google Analytics Event** action.
 	* Enter the name of the event in the **Value** input field. This name will be displayed on 
       the Analytics dashboard.
@@ -48,7 +48,7 @@ All the logged events can be accessed from the Analytics dashboard of your [Fire
 :::
 
 :::tip
-Event names must be 40 characters or less. Event names may only contain alphanumeric characters and underscores ("\_"), and must start with an alphabetic character.
+Event names must be 40 characters or less. Event names may only contain alphanumeric characters and underscores ("_"), and must start with an alphabetic character.
 :::
 
 <figure>
@@ -64,11 +64,11 @@ Here's how you can log an event by the tab name when a tab within the TabBar is 
 
 1. Select the **Tab** (inside TabBar) on which you want to define the action. 
 
-2. Select **Actions** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu), and click **+ Add Action**.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu), and click **+ Add Action**.
 	* Search and select the **Google Analytics Event** action.
-	* Enter the name of the event in the **Value** input field, such as *Tabbar\_On\_Tap*.
+	* Enter the name of the event in the **Value** input field, such as *Tabbar_On_Tap*.
 	* Click on the **+ Add Parameter** and open the **Param 1** section.
-	* Inside the **Key** section, enter **Value** as **Tab\_Name**.
+	* Inside the **Key** section, enter **Value** as **Tab_Name**.
 	* Inside the **Value** section, enter the **Value** as the name of the tab (e.g., *Upcoming*, 
 	  *Past)*.
    

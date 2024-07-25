@@ -108,7 +108,7 @@ previous one to complete before starting. This is useful for tasks that depend o
 other. This is useful for tasks that can be done simultaneously and do not depend on each other's outcomes.
   
   **Example:** Loading data from multiple sources simultaneously to speed up the data fetching process.
-![parallel-sequential.png](functions%2Fimg%2Fparallel-sequential.png)
+![parallel-sequential.png](functions/img/parallel-sequential.png)
 ## Asynchronous Functions
 
 Asynchronous functions are operations that do not complete immediately and may finish at a

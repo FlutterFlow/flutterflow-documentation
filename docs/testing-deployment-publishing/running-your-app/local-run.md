@@ -187,7 +187,8 @@ To download your app code, you have two options:
 
 You can download the latest Flutter SDK from [here](https://docs.flutter.dev/get-started/install). However, we recommend using the Flutter SDK downloaded by the [local run](#using-local-run), whether you have already downloaded the Flutter SDK or not. This approach ensures compatibility with FlutterFlow projects and helps you avoid issues arising from version differences.
 
-To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it to your system path](#command-not-found-flutter-add-flutter-to-systems-path).
+To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it 
+to your system path](#troubleshooting).
 
 ![setup-flutter-SDK](../imgs/setup-flutter-SDK.avif)
 
@@ -197,9 +198,9 @@ If you prefer to use your existing Flutter SDK, you can follow the steps below t
     
 ![check-flutter-version.avif](../imgs/check-flutter-version-2.avif)
 
-2. Check your current Flutter SDK version by entering the following command in the terminal. `flutter --version`
-3. If that is different from what FlutterFlow uses, you may need to switch to the supported version.
-4. To install a specific version of Flutter, use the following command:
+1. Check your current Flutter SDK version by entering the following command in the terminal. `flutter --version`
+2. If that is different from what FlutterFlow uses, you may need to switch to the supported version.
+3. To install a specific version of Flutter, use the following command:
     1. To **downgrade** flutter version:
         ```
         flutter downgrade <version_number>
@@ -251,7 +252,10 @@ To run your app on a device:
 Running your app on a Desktop involves:
 
 1. **Adding platforms**: Navigate to **Setting and Integrations** from the Navigation Menu > **Project Setup** > **Platforms** and enable your desired platform.
-2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users, some design adjustments may be necessary to ensure that the UI is optimized for both platforms. You can create separate widgets for different platforms and control their visibility using [Responsive Visibility](#).
+2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users, 
+   some design adjustments may be necessary to ensure that the UI is optimized for both 
+   platforms. You can create separate widgets for different platforms and control their 
+   visibility using [Responsive Visibility](../../ff-concepts/layout/responsive-layout.md#responsive-visibility).
 3. **Run the app on a desktop**: Use the Local Run feature in the FlutterFlow Desktop app or manually download and run the code, choosing your target device (e.g., macOS) before running.
 
 ## Video guide

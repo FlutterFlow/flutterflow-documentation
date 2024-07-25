@@ -10,13 +10,13 @@ keywords: [FlutterFlow, GitHub Login, Authentication, Firebase]
 # GitHub Login
 The GitHub auth provides a convenient way for users to authenticate and log in to your application using their GitHub accounts.
 
-![github-demo.gif](../../imgs/github-demo.gif)
+![github-demo.gif](../imgs/github-demo.gif)
 
 :::info[Prerequisites]
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](../../../firebase/connect-to-firebase-setup.md).
+- Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
 - Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 :::
 
@@ -66,7 +66,7 @@ To enable GitHub authentication in the Firebase:
 
 5. To test the app in Run Mode, add our domain to **Authorized domains**.
     
-![adding-authorized-domain-2.png](../../imgs/adding-authorized-domain-2.png)
+![adding-authorized-domain-2.png](../imgs/adding-authorized-domain-2.png)
     
 
 ### 2. Adding GitHub Login Action
@@ -79,8 +79,8 @@ Follow the steps below to add GitHub login action:
 3. Search and select the **Login** (under *Backend/Database > Firebase Authentication*) action.
 4. Set **Auth Provider** to **GitHub**.
 
-![adding-github-login-action.png](../../imgs/adding-github-login-action.png)
+![adding-github-login-action.png](../imgs/adding-github-login-action.png)
 
 :::info
-To let users log out of your app, you can use the [**Logout**](../../logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](../logout-action.md) action.
 :::

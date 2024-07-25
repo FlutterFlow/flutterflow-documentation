@@ -13,10 +13,10 @@ keywords: [FlutterFlow, Anonymous Login, Authentication, Firebase]
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](.././../../firebase/connect-to-firebase-setup.md)
+- Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
 - Complete [**Initial Setup**](auth-initial-setup) required for authentication.
 - Learn more about the concepts
-of [**Anonymous Authentication**](authentication-approaches.md)
+of [**Anonymous Authentication**](../authentication-methods.md#anonymous-authentication)
 :::
 
 ## Enable Anonymous Authentication in Firebase
@@ -64,5 +64,5 @@ the authentication provider:
 
    
 :::info
-To let users log out of your app, you can use the [**Logout**](logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](../logout-action.md) action.
 :::

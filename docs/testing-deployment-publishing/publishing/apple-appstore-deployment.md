@@ -14,7 +14,7 @@ FlutterFlow allows you to seamlessly deploy your apps directly to the App Store,
 
 :::info [Prerequisites]
 
-- Create an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2F).
+- Create an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 - [**Purchase an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [**this link**](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
 - Set an App Launcher Icon for your app (under Settings & Integrations > General > App Assets). **The App Launcher icon can't be transparent or contain an alpha channel.**
 - We recommend testing your application on a real device. [**Here are instructions**](#) on how to do this.
@@ -175,11 +175,11 @@ Please follow these steps to generate your API Key:
     
 ![generate-api-key](../imgs/generate-api-key.avif)
     
-5. When you are done, select **Generate.**
+1. When you are done, select **Generate.**
 
-6. Find the row for the API Key you just generated and select **Download API Key.** A popup will appear; select **Download.**
-7. Return to FlutterFlow and navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
-8. Click on **Upload Private Key** and upload the **API Key File**.
+2. Find the row for the API Key you just generated and select **Download API Key.** A popup will appear; select **Download.**
+3. Return to FlutterFlow and navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
+4. Click on **Upload Private Key** and upload the **API Key File**.
 
 :::info
 

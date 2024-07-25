@@ -34,9 +34,8 @@ Not all login APIs will return an Auth Token, Refresh Token, and Token Expiry Ti
 the response depend on the configuration of your backend API. Always check your API documentation to
 understand what is returned upon successful authentication.
 :::
-
 <figure>
-    ![login-request.png](..%2F..%2Fimgs%2Flogin-request.png)
+    ![login-request.png](../imgs/login-request.png)
   <figcaption class="centered-caption">1.1 An example of a Login API transaction that 
 returns the above values in its response</figcaption>
 </figure>
@@ -51,9 +50,8 @@ authenticate API requests (_as shown in diagram 1.1_).
 If you need to use the token, it is typically included in any authenticated API request, such as
 accessing a list of users available only to logged-in users. In this case, the app sends a request
 to the API with a header that includes an Authorization header containing the authentication token.
-
 <figure>
-    ![token-success-request.png](..%2F..%2Fimgs%2Ftoken-success-request.png)
+    ![token-success-request.png](../imgs/token-success-request.png)
   <figcaption class="centered-caption">An example of an Authenticated API request that 
 sends a Authorization Bearer Token that uses the saved Auth Token</figcaption>
 </figure>
@@ -65,7 +63,7 @@ To retrieve a new token, a common practice involves the client app making a requ
 endpoint, submitting the saved refresh token in the request body. The server then validates the
 refresh token and responds with a new authentication token.
 
-![token-fail-request.png](..%2F..%2Fimgs%2Ftoken-fail-request.png)
+![token-fail-request.png](../imgs/token-fail-request.png)
 
 Thanks to the refresh token, users can continue accessing the app without needing to log in again.
 This process enhances security by limiting the lifespan of each token while ensuring a seamless

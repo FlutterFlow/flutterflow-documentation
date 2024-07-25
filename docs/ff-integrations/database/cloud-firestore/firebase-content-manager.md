@@ -22,16 +22,16 @@ to your [**Firestore database**](getting-started.md).
 Before getting started with this section, ensure you:
 
 1. Become familiar with [**Structuring the Firebase Database**](getting-started.md#structuring-the-database).
-5. Completed all steps in the [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
-11. Create a [**Collection**](creating-collections.md).
-14. [**Defined the Fields**](creating-collections.md#define-schema-creating-fields) for the collection. Only fields defined in 
-    your Firebase schema are 
-    shown in the Firebase Content Manager.
+2. Completed all steps in the [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
+3. Create a [**Collection**](creating-collections.md).
+4. [**Defined the Fields**](creating-collections.md#define-schema-creating-fields) for the collection. Only fields defined in 
+   your Firebase schema are 
+   shown in the Firebase Content Manager.
 :::
 
 ## Adding Document
 
-Before you add a new document to the collection, make sure you have some Fields added. For instance, the 'exam\_result' collection with basic fields looks like this:
+Before you add a new document to the collection, make sure you have some Fields added. For instance, the 'exam_result' collection with basic fields looks like this:
 
 <figure>
     ![img_12.png](img_12.png)
@@ -42,12 +42,12 @@ To add a document:
 
 1. Head to the **Firestore** (left side Navigation Menu) and click **Manage Content**. This will 
 open up a new browser window.
-5. Select the **Collection** to which you want to add a document and then select + **Add Document.** A popup will appear.
-8. Enter the information for the record and click **Add Document**.
+2. Select the **Collection** to which you want to add a document and then select + **Add Document.** A popup will appear.
+3. Enter the information for the record and click **Add Document**.
 
 :::caution
 If you get this error "**Could not create an account as firebase@flutterflow.io to your Firebase 
-project**", just enable the '[**Email Sign-In**](../../authentication/types/firebase-auth/email-sign-in.md)' in your 
+project**", just enable the '[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md)' in your 
 Firebase 
 project.
 
@@ -86,11 +86,11 @@ Here's how you upload the CSV file:
 
 1. Select the **Collection** and click the **Upload CSV** button (see top right side). A popup 
 will open.
-5. Click **Select File** and upload your CSV file.
-8. Now, you can choose the **Separator Type** and enter the **Number of Rows to Upload**. If you leave this empty, all records will be imported.
-11. Click **Upload CSV** button.
-14. Once the file is uploaded, you'll see the preview of data with field name and its data type.
-17. Click **Validate & Import**. If everything looks good, this will import the data and you can **Finish and Close**. If there is any issue with data type mismatch or formatting issue, you'll see a message like this:
+2. Click **Select File** and upload your CSV file.
+3. Now, you can choose the **Separator Type** and enter the **Number of Rows to Upload**. If you leave this empty, all records will be imported.
+4. Click **Upload CSV** button.
+5. Once the file is uploaded, you'll see the preview of data with field name and its data type.
+6. Click **Validate & Import**. If everything looks good, this will import the data and you can **Finish and Close**. If there is any issue with data type mismatch or formatting issue, you'll see a message like this:
 
 
 <figure>
@@ -131,10 +131,10 @@ The field looks like this:
 To add a document reference:
 
 1. First, select the **Collection** from which you want to get a document reference.
-5. Click on the **id** of the record to **copy** the document reference.
-8. Now, select the **Collection** you would like to add a document to and then select + **Add Document.** A popup will appear.
-	1. Find the **Field** that accepts document reference and **paste** it
-	5. Click **Add Document**.
+2. Click on the **id** of the record to **copy** the document reference.
+3. Now, select the **Collection** you would like to add a document to and then select + **Add Document.** A popup will appear.
+    1. Find the **Field** that accepts document reference and **paste** it
+    2. Click **Add Document**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/4a967e69a73f4654a14e208ba2c599fb?sid=38acc42c-2df2-4acd-a16b-c6b67ae6d786" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -153,9 +153,9 @@ To add a Date Time:
 
 Select the **Collection** you would like to add a document to and then select + **Add Document.** A popup will appear.
    1. Find the **Field** that accepts DateTime.
-   5. Click on it, choose the **Date,** and then click **OK**.
-   8. Now, select **Time** and click **OK**.
-   11. Click **Add Document**.
+   2. Click on it, choose the **Date,** and then click **OK**.
+   3. Now, select **Time** and click **OK**.
+   4. Click **Add Document**.
 
 :::note
 To modify the given Date Time, click on the Date Time Field again to open the Date Picker dialog.
@@ -180,7 +180,7 @@ Select the **Collection** you would like to add a document to and then select + 
 1. Find the **Field** that accepts LatLng. There are two ways you can add LatLng.
    * Directly add LatLng value for any place.
    * Click on the icon to find the place and get the LatLng.
-5. Click **Add Document**.
+2. Click **Add Document**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/1f0d58f3d1f64f6ab5e40fe34d49fc39?sid=de5cd66e-2b99-4fea-8fb1-8c5eb2c5008a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -198,7 +198,7 @@ The field looks like this:
 
 To add data to List Field:
 
-2. Select the **Collection** you would like to add a document to and then select + **Add Document.** A popup will appear.
+1. Select the **Collection** you would like to add a document to and then select + **Add Document.** A popup will appear.
 
 
 	2. Find the **Field** that accepts a list and click on it.
@@ -232,8 +232,8 @@ To update a document:
 
 1. Select the **pencil icon** in the row of the Document you want to update**.** You can also open 
 the record by long-pressing any field in the Document (excluding the ID).
-5. A popup will appear. Update the document as needed and then select **Update Document.**
-8. You will now see the updated information displayed in your collection.
+2. A popup will appear. Update the document as needed and then select **Update Document.**
+3. You will now see the updated information displayed in your collection.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/7d528b68a69346f2bdd51b7c5152d695?sid=5021b80a-ebe2-44cd-a0f6-87bb008a9497" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -261,6 +261,6 @@ To fix this issue, you must [**deploy the Firestore Rules**](firestore-rules.md#
 <summary>Getting the error "Could not create an account as firebase@flutterflow.io to your Firebase project.</summary>
 
 If you encounter such an issue, you just need to enable the 
-[**Email Sign-In**](../../authentication/types/firebase-auth/email-sign-in.md) in your 
+[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md) in your 
 Firebase project.
 </details>

@@ -17,7 +17,7 @@ Column or Row where the **Main Axis Alignment** is set to **Space Around**, **Sp
 To use the Spacer widget, add it between the children of your Row or Column wherever you like, and set the flex value to a positive whole number. By default, it is set to 1.
 
 <figure>
-    ![spacer-widget.png](imgs%2Fspacer-widget.png)
+    ![spacer-widget.png](imgs/spacer-widget.png)
   <figcaption class="centered-caption">Spacer Example </figcaption>
 </figure>
 

@@ -16,14 +16,14 @@ When you click on a widget from the Widget Tree, the **Widget Properties Panel**
 right side. There you can customize the properties for the selected widget, which may vary
 based on the type of widget and also add other advanced configurations to the widget.
 
-![advanced-configs-widgets.png](..%2Fimgs%2Fadvanced-configs-widgets.png)
+![advanced-configs-widgets.png](../imgs/advanced-configs-widgets.png)
 
 ### Widget name
 
 When you select any widget, its name appears on the properties panel. The default name for any
 widget is its type. For example, if you select the Container widget, the name appears as '**Container**'. However, you can use the edit icon on the right to change its name.
 
-![widget-properties.png](..%2Fimgs%2Fwidget-properties.png)
+![widget-properties.png](../imgs/widget-properties.png)
 
 ## Actions
 

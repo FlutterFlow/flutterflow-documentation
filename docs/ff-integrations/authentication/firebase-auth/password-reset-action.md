@@ -48,7 +48,7 @@ Adding password reset comprises of following steps:
 
 Let's add a page that allows users to provide their email address. To speed up, you can add a page from the [template](#). Here is what the template page (named 'Forgot Password 01') looks like:
 
-![password reset build ui](../../imgs/password-reset-build-ui.png)
+![password reset build ui](../imgs/password-reset-build-ui.png)
 
 ### 2. Adding reset password action
 
@@ -62,4 +62,4 @@ To add reset password action:
 3. Search and select the **Reset Password** (under *Backend/Database > Firebase Authentication*) action.
 4. Set the **Email** **Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
 
-![password reset action](../../imgs/password-reset-action.png)
+![password reset action](../imgs/password-reset-action.png)

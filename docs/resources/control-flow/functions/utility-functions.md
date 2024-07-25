@@ -58,7 +58,7 @@ Here is a quick demo:
 The **Combine Text** built-in function only allows you to combine multiple values (dynamic or
 static)
 together, with the same text style applied to all of them. If you need to combine multiple String
-values with different text styles for each, consider using the **[RichText](#)** widget.
+values with different text styles for each, consider using the **RichText** widget.
 :::
 
 ## Code Expressions

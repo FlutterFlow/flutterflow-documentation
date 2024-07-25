@@ -16,7 +16,7 @@ It allows zoom level adjustments and previews in light or dark mode. It also inc
 
 ## Preview Screen
 
-This is the canvas of the device screen where you can build the user interface. You can customize the screen by adding widgets using drag and drop from the [Widget Palette](#) and by applying properties present in the [Properties Panel](#).
+This is the canvas of the device screen where you can build the user interface. You can customize the screen by adding widgets using drag and drop from the [Widget Palette](../../intro/ff-ui/widget-palette.md) and by applying properties present in the [Properties Panel](../../intro/ff-ui/builder.md#properties-panel).
 
 ## Show or hide Navigation Menu
 

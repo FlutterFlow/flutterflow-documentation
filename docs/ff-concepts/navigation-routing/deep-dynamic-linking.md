@@ -118,7 +118,7 @@ To share the deep link of the current page:
 
 2. From that page, select any widget (e.g. share button) from the widget tree or the canvas area.
 
-3. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open
+3. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open
    an **Action flow Editor** in a new popup window.
 
     1. Click on the **+ Add Action**.

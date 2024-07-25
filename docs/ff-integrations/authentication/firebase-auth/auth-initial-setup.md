@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Initial Setup, Authentication, Firebase]
 # Enabling Firebase Auth in FlutterFlow
 
 :::tip[Skip if...]
-You have already enabled authentication while creating a [**new project with Firebase setup.**](../../../firebase/connect-to-firebase-setup.md)
+You have already enabled authentication while creating a [**new project with Firebase setup.**](../../firebase/connect-to-firebase-setup.md)
 :::
 
 To enable authentication in FlutterFlow:
@@ -23,7 +23,7 @@ To enable authentication in FlutterFlow:
 4. To ensure that your users are directed to the appropriate pages based on their
   login status, you must set the **Initial Page**.
 
-![enable-auth-fr.png](..%2F..%2Fimgs%2Fenable-auth-fr.png)
+![enable-auth-fr.png](../imgs/enable-auth-fr.png)
 
 ### Setting Initial Pages for Authentication
 
@@ -49,11 +49,11 @@ The 'users' collection stores the information for authenticated users.
 
 :::tip[Skip if...]
 You have already enabled 'Create User Collection' while creating a new
-project with [Firebase Setup](../../../firebase/connect-to-firebase-setup.md).
+project with [Firebase Setup](../../firebase/connect-to-firebase-setup.md).
 :::
 
 1. Click on the Firestore tab from the 
-[**Navigation Menu**](../../../../../docs/intro/ff-ui/builder.md#navigation-menu).
+[**Navigation Menu**](../../../intro/ff-ui/builder.md#navigation-menu).
 2. Click on the **+ Create Collection** button. If you have any other collection
   already added, you can click on the Plus button.
 3. Enter a collection_name (this can be anything, but we recommend 'users') and
@@ -125,8 +125,7 @@ Google Sign-in and Phone Sign-in. To learn more about the SHA-1 key, see
 this [link](https://developers.google.com/android/guides/client-auth).
 
 :::warning[Release Guidelines]
-While releasing the app, make sure
-to [**get the key from Play Console**](#).
+While releasing the app, make sure to [**get the key from Play Console**](#).
 :::
 
 1. Open a terminal window:
@@ -182,5 +181,5 @@ To regenerate the config files:
   Integrations > Project Setup > Firebase**.
 2. Click on the Regenerate Config Files.
 
-![regerenate](../../imgs/regerenate.png)
+![regerenate](../imgs/regerenate.png)
 

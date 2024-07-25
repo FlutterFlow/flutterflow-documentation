@@ -22,7 +22,7 @@ If you are brand new to Firestore rules, check out this overview about [**Gettin
 There are two ways you can set the Firestore Rules:
 
 1. [Using FlutterFlow Firestore setting](#1-using-flutterflow-firestore-settings)
-5. [Using Firestore Database Console](#2-using-firestore-database-console)
+2. [Using Firestore Database Console](#2-using-firestore-database-console)
 
 ### 1. Using FlutterFlow Firestore Settings
 
@@ -115,12 +115,12 @@ Let's take an example to set up the rules on a *todos* collection for the follow
 To set up the Firestore Rules for the above requirements:
 
 1. Inside the **Firestore Rules** section, set the **Create** to **Authenticated Users**.
-5. Set the **Read** to **Everyone**.
-8. Set the **Write** to **Tagged Users**. This will open a popup named **Tag Users**.
-	2. Inside the dropdown, click on **Unset** and select the field that contains either user reference or user id.
-	5. Click **Save Changes**.
-11. Set the **Delete** to **No One**.
-14. Now you can [deploy](#deploy) the rules.
+2. Set the **Read** to **Everyone**.
+3. Set the **Write** to **Tagged Users**. This will open a popup named **Tag Users**.
+    2. Inside the dropdown, click on **Unset** and select the field that contains either user reference or user id.
+    5. Click **Save Changes**.
+4. Set the **Delete** to **No One**.
+5. Now you can [deploy](#deploy) the rules.
 
 :::caution
 The rules set in the above examples are for simplification purposes. You should carefully understand your requirements and set the rules accordingly.
@@ -166,8 +166,8 @@ To set up the Firestore Rules for the above requirements:
 
 1. Open the Firebase console of your project, and click on the **Firestore Database** in the left 
 side menu.
-5. Select the **Rules** tab.
-8. Paste the following code and click on **Publish**.
+2. Select the **Rules** tab.
+3. Paste the following code and click on **Publish**.
 
 ```
 rules_version = '2';
@@ -218,12 +218,12 @@ service cloud.firestore {
 Here’s a quick rundown of what’s going on in the code above:
 
 1. **isSignedIn()**: This checks whether a user is authenticated.
-5. **verified()**: This checks whether the user is verified via email or phone.
-8. **isValidItem()**: This checks whether the Todo item is not empty.
-11. **create**: Allow to create a Todo item only if a user is authenticated, verified, and created a valid Todo item.
-14. **read**: Allow all users to see all Todo items.
-17. **write**: Allow to update a Todo item with valid details to a user who created it.
-20. **delete**: Allow to delete a Todo item to a user who created it.
+2. **verified()**: This checks whether the user is verified via email or phone.
+3. **isValidItem()**: This checks whether the Todo item is not empty.
+4. **create**: Allow to create a Todo item only if a user is authenticated, verified, and created a valid Todo item.
+5. **read**: Allow all users to see all Todo items.
+6. **write**: Allow to update a Todo item with valid details to a user who created it.
+7. **delete**: Allow to delete a Todo item to a user who created it.
 
 <div style={{
     position: 'relative',
@@ -270,10 +270,10 @@ You can go back to the previous rule state with Firebase Cloud Firestore Console
 
 1. Open the Firebase console of your project, and click on the **Firestore Database** in the left 
 side menu.
-5. Select the **Rules** tab.
-8. Select and copy the previous rule from the left-side menu.
-11. Select the current rule from the left side menu and paste the previous rule.
-14. Click on **Publish**.
+2. Select the **Rules** tab.
+3. Select and copy the previous rule from the left-side menu.
+4. Select the current rule from the left side menu and paste the previous rule.
+5. Click on **Publish**.
 
 :::tip[Learn More]
 Learn more about [**creating custom Firestore Rules**](https://fireship.io/snippets/firestore-rules-recipes/).
@@ -296,7 +296,7 @@ If you encounter such issues, the 'Default GCP resource location" is probably no
 
 1. First, ensure that you have 
 [**configured the Cloud Firestore**](../../firebase/connect-to-firebase-setup.md#enable-firestore-for-database-access)
-5. And then, head over to the second link (from the error) and set the GCP resource location.
+2. And then, head over to the second link (from the error) and set the GCP resource location.
 
 <figure>
     ![img_10.png](img_10.png)
