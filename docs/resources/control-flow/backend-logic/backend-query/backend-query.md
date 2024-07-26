@@ -15,11 +15,14 @@ keywords: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
 
 We offer you the following types of Backend Queries that you can specify on any widget or page.
 
-* [**Query Collection**](/data-and-backend/backend-query/query-collection)**:** This query type is used to fetch a single record or a list of records from a Firestore Collection.
-* [**Document from Reference**](/data-and-backend/backend-query/document-from-reference)**:** Used to retrieve the details from a document reference.
-* [**API Call**](/data-and-backend/backend-query/api-call-query)**:** Used to initiate an API call.
-* [**SQLite Query**](/data-and-backend/backend-query/sqlite-query): Used to execute the SQL statement defined [here](/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries).
-* [**Algolia Search**](/data-and-backend/backend-query/algolia-search-query)**:** Used to trigger an Algolia search on a Firestore Collection.
+* [**Query Collection**](query-collection.md)**:** This query type is used to fetch a single record or a list of 
+  records from a Firestore Collection.
+* [**Document from Reference**](document-from-reference.md)**:** Used to retrieve the details from a document reference.
+* [**API Call Query**](api-call-query.md)**:** Used to initiate an API 
+  call.
+* [**SQLite Query**](sqlite-query.md): Used to execute the SQL statement defined [here]
+  (/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries).
+* [**Algolia Search**](algolia-search-query.md)**:** Used to trigger an Algolia search on a Firestore Collection.
 
 ## Difference between Actions & Backend Query
 
@@ -36,7 +39,10 @@ We offer you the following types of Backend Queries that you can specify on any 
 
 ## Change loading indicator
 
-While the backend query is busy retrieving results, it shows the default *Project Theme Loading Indicator* (which you can change from [*Navigation menu*](/getting-started/ui-builder/navigation-menu) *> Theme Settings > Design System > Loading Indicator*.) However, if you want to replace this with a custom loading indicator in a specific backend query, follow the instructions below:
+While the backend query is busy retrieving results, it shows the default *Project Theme Loading 
+Indicator* (which you can change from 
+[**Navigation menu**](../../../../../docs/intro/ff-ui/builder.md#navigation-menu) *> Theme 
+Settings > Design System > Loading Indicator*.) However, if you want to replace this with a custom loading indicator in a specific backend query, follow the instructions below:
 
 <div style={{
     position: 'relative',
@@ -72,7 +78,7 @@ To change the loading indicator:
 2. Open the **Backend Query** section (on the right side) and scroll down to the **Backend Query Loading Widget**. Open it by clicking on the arrow icon.
 3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](/widgets-and-components/custom-components) if you have already designed a loading component.
 4. Enable the **View in UI Builder**. This allows you to see your custom loading indicator on canvas (before you actually run the app).
-5. Choose the **Image Type**, [add the image](/widgets-and-components/widgets/widget-commonalities#changing-image-type), and adjust its **Padding** and **Width**.
+5. Choose the **Image Type**, [add the image](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#changing-image-type), and adjust its **Padding** and **Width**.
 6. To show the indicator in the center, turn on the **Center Image** toggle.
 7. Run the app, and your custom loading indicator will appear while the data is being loaded.
 
@@ -89,9 +95,9 @@ To copy-paste the query:
 
 1. Select the widget (e.g., ListView, GridView, etc.) where you have already added the backend 
    query.
-5. Select the **Backend Query** tab, and click the **Copy** button.
-8. Now, select the widget (where you want to add the query), move to the **Backend Query** tab, and click **Paste Backend Query** button.
-11. Click **Confirm**.
+2. Select the **Backend Query** tab, and click the **Copy** button.
+3. Now, select the widget (where you want to add the query), move to the **Backend Query** tab, and click **Paste Backend Query** button.
+4. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/9f6e9d436e1a4f9db63d05d835a75e51?sid=351e3c1a-71a3-4489-be07-c2850b2475fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -115,7 +121,7 @@ The *Empty List* widget is a widget used to display a message when there are no 
 
 To display the empty list widget:
 
-1. Ensure you have added a backend query on any scrollable widget, such as [ListView](/widgets-and-components/widgets/layout-elements/listview), [GridView](/widgets-and-components/widgets/layout-elements/gridview), [Column](/widgets-and-components/widgets/layout-elements/columns), [Row](/widgets-and-components/widgets/layout-elements/row), DataTable, and [StaggeredView](/widgets-and-components/widgets/layout-elements/staggeredview).
+1. Ensure you have added a backend query on any scrollable widget, such as **ListView**, **GridView**, **Column**, **Row**, DataTable, and **StaggeredView**.
 2. Select the scrollable widget (on which you have added the backend query), move to the properties panel, and turn on the **Show Empty List Widget**.
 3. Set **Widget Type** to **Image** or **Component**. The further options are available based on what you choose.
 4. Try toggling the **View in UI Builder**. This allows you to see your empty list widget on canvas (before you actually run the app).
@@ -135,10 +141,10 @@ Caching a query can bring significant benefits to your app, including improved p
 For example, an e-commerce app can cache product data, such as product descriptions, prices, and images, to avoid making unnecessary API calls for each page load.
 
 :::note
-Caching backend queries works for all [types of queries](/data-and-backend/backend-query#types-of-query).
+Caching backend queries works for all [types of queries](#types-of-query).
 :::
 
-:::Tip[Single time Query]
+:::tip[Single time Query]
 For Firebase queries, enable Single Time Query if you want the query to fetch data only once. Otherwise, the query operates in real-time, updating automatically as soon as the data changes.
 :::
 
@@ -151,18 +157,18 @@ For Firebase queries, enable Single Time Query if you want the query to fetch da
 
 In general, any data that is static, slowly changing, or read more often than they are updated can be cached to improve performance and reduce the load on the server. A few examples are
 
-2. Static content such as images and videos.
-5. Configuration data such as application settings or system parameters.
-8. Data that is expensive to compute, such as complex reports or analytics.
+1. Static content such as images and videos.
+2. Configuration data such as application settings or system parameters.
+3. Data that is expensive to compute, such as complex reports or analytics.
 
 ### When NOT to cache
 
 Sometimes, it's not a good idea to cache the backend query. Here are some examples:
 
-2. Large amounts of data can cause performance issues and may not be appropriate.
-5. Sensitive or confidential data should not be cached, as it could lead to unauthorized access.
-8. Frequently changing data, such as in real-time or near real-time scenarios, caching may not be appropriate as the cached data could quickly become stale or outdated.
-11. Critical response time where the data needs to be up-to-date and accurate at all times.
+1. Large amounts of data can cause performance issues and may not be appropriate.
+2. Sensitive or confidential data should not be cached, as it could lead to unauthorized access.
+3. Frequently changing data, such as in real-time or near real-time scenarios, caching may not be appropriate as the cached data could quickly become stale or outdated.
+4. Critical response time where the data needs to be up-to-date and accurate at all times.
 
 ### Example
 
@@ -188,20 +194,20 @@ document, we add a backend query at the page level as *Single Time Query*. We us
 
 
 <figure>
-    ![example-bq.png](..%2Fimgs%2Fexample-bq.png)
+    ![example-bq.png](../imgs/example-bq.png)
   <figcaption class="centered-caption">Querying employee details using document reference</figcaption>
 </figure>
 
-2. Open **Query Cache Settings** and **Enable Query Caching**.
-5. Determine the **Scope** of the cache. If you set it to **App Level** and the *exact* same query is made on any other page of the app, it will display the result from the cache. However, if you set the **Page Level**, the cached result will be used only on that page if the query is made multiple times on the same page.
-8. If the current query is completely new/different, create a **Query Name**. If not, and you want to use the cached result of this query (that might be created somewhere else), select the name from the list.
+1. Open **Query Cache Settings** and **Enable Query Caching**.
+2. Determine the **Scope** of the cache. If you set it to **App Level** and the *exact* same query is made on any other page of the app, it will display the result from the cache. However, if you set the **Page Level**, the cached result will be used only on that page if the query is made multiple times on the same page.
+3. If the current query is completely new/different, create a **Query Name**. If not, and you want to use the cached result of this query (that might be created somewhere else), select the name from the list.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/f2efd72f590e4e83b67fe70da18ee193?sid=618d1d7d-a8de-4a78-b177-1fdab616638e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
-5. If we leave this example here, we'll have data inaccuracy issues. That means when any employee 
+1. If we leave this example here, we'll have data inaccuracy issues. That means when any employee 
 data is cached, the same data will be used for all employees, which is not what we want. We want to cache data for all individual employees. To do so, we can set the **Unique Key**. Here the unique key can be the employee id or the document reference.
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -214,30 +220,30 @@ com/embed/ed9716ec74e542d8a264e87235ce3aec?sid=7b03c276-a8bb-4dbf-9131-acf0a1fa9
 
 <p></p>
 
-6. At this point, we have enabled the caching, but we still have one problem. Once the query is 
+1. At this point, we have enabled the caching, but we still have one problem. Once the query is 
 cached, it will be used forever, although we update the data in our backend. This is because we are not clearing or invalidating the cache at the appropriate time. To properly invalidate the cache, you can use the **Should Override Cache** property OR [**Clear Query Cache**](/actions/actions/state-management/clear-query-cache) action. This helps you remove the cached data that has become stale or outdated.
 
-	1. The *Should Override Cache* property accepts a boolean (True/False). That means we can 
+    1. The *Should Override Cache* property accepts a boolean (True/False). That means we can 
    provide a variable (e.g., an *App State* variable named *isCacheOverride)* that knows when to override the cache. So create one and set it here.
-	5. Create one more *App State* variable, something like *lastCacheTime,* and set the current time as default. This will be used to save the time of results retrieved from the backend. You'll better understand how helpful it is in the logic we add in the next step.
+    2. Create one more *App State* variable, something like *lastCacheTime,* and set the current time as default. This will be used to save the time of results retrieved from the backend. You'll better understand how helpful it is in the logic we add in the next step.
 
 <figure>
-    ![img_3.png](..%2Fimgs%2Fimg_3.png)
+    ![img_3.png](../imgs/img_3.png)
   <figcaption class="centered-caption">Setting Should Override Cache to App State variable</figcaption>
 </figure>
 
 <p></p>
 
-7. Now, we must add a logic that determines whether to override the cache (every time when the 
+1. Now, we must add a logic that determines whether to override the cache (every time when the 
 page is loaded) and set the *isCacheOverride* variable accordingly. Here is how it goes:
 
-	1. First, check if the *lastCacheTime* is set or not. If not, set the current time to it.
-	5. Then the idea is to create one custom action that checks if the current time is more than 30 minutes ahead of the *lastCacheTime*. **Note** that 30 minutes is the cache expiration time, and here, it is kept minimum just for simplification purposes; It's important to carefully choose the appropriate expiration time for your cache based on the nature of your data.
-	8. if **True** :
-		1. [Update](/actions/actions/state-management/update-app-state) the **lastCacheTime** with 
+    1. First, check if the *lastCacheTime* is set or not. If not, set the current time to it.
+    2. Then the idea is to create one custom action that checks if the current time is more than 30 minutes ahead of the *lastCacheTime*. **Note** that 30 minutes is the cache expiration time, and here, it is kept minimum just for simplification purposes; It's important to carefully choose the appropriate expiration time for your cache based on the nature of your data.
+    3. if **True** :
+        1. [Update](/actions/actions/state-management/update-app-state) the **lastCacheTime** with 
        the current time and **isCacheOverride** to True. Make sure you keep the **Update Type** to **Rebuild Current Page** so that the backend query is made again, which will invalidate the cache and display updated data.
-		5. You can also add an action to [Clear Query Cache](/actions/actions/state-management/clear-query-cache).
-		8. Continuing the same action flow, [wait](/actions/actions/utilities/wait) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.
+        2. You can also add an action to [Clear Query Cache](/actions/actions/state-management/clear-query-cache).
+        3. Continuing the same action flow, [wait](/actions/actions/utilities/wait) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b5ca17571da943f2811db8b485ed4f02?sid=5e0a2480-727a-4868-8dd1-11f58e60d1f8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -259,7 +265,7 @@ bool isOverrideCacheAction(DateTime cacheTime) {
 
 
 <figure>
-    ![custom-func-cache-override.png](..%2Fimgs%2Fcustom-func-cache-override.png)
+    ![custom-func-cache-override.png](../imgs/custom-func-cache-override.png)
   <figcaption class="centered-caption">Custom function to know if last cache time is more than 30 minutes</figcaption>
 </figure>
 

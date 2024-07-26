@@ -14,7 +14,7 @@ The Launch URL Action lets you specify a URL that will be opened using an app su
 Follow the steps below to add this action to any widget.
 
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. Click on the **+ Add Action**.
 4. On the right side, search and select the **Launch URL** (under widget/UI Interactions) action.
 5. In the *URL Value Type* property, select either **Specify URL** (to add the URL as a String) or **From Variable** (to use the value stored in a String variable).

@@ -19,13 +19,19 @@ com/embed/68dcc413ad664a7e887e4e305aaec6c2?sid=59c1dcf4-2b71-4dd4-9f13-4cee933bc
 The steps to build such an example are as follows:
 
 1. [Create page state variable](#1-create-page-state-variable)
-5. [Add Draggable widgets](#2-add-draggable-widgets)
-8. [Add DragTarget widget](#3-add-dragtarget-widget)
-11. [Get notified on drag events](#4-get-notified-on-drag-events)
+2. [Add Draggable widgets](#2-add-draggable-widgets)
+3. [Add DragTarget widget](#3-add-dragtarget-widget)
+4. [Get notified on drag events](#4-get-notified-on-drag-events)
 
 ### 1. Create page state variable
 
-In this example, we have two images of a shelf: one with empty space for one plant and another with all plants on the shelf. To control which image to show based on whether the correct item is dropped on the shelf, we need a [page state variable](/data-and-backend/state-management/page-state). Therefore, [create a page state variable](/data-and-backend/state-management/page-state#id-1.-creating-page-state-variable) named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
+In this example, we have two images of a shelf: one with empty space for one plant and another 
+with all plants on the shelf. To control which image to show based on whether the correct item 
+is dropped on the shelf, we need a 
+[page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#page-state). 
+Therefore, 
+[create a page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state)
+named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
 
 <figure>
     ![img_1.png](img_1.png)
@@ -42,10 +48,10 @@ As we proceed in this section, you'll learn how this information is crucial for 
 
 In this example, the draggable items are a plant, a spoon, and a football. Let's see how to add them:
 
-1. Inside the [**Row**](/widgets-and-components/widgets/layout-elements/row) widget, add 
+1. Inside the **Row** widget, add 
 **Draggable** widgets directly from the widget tree or canvas area.
-5. Inside the **Draggable** widget, you can add any widget as a child widget. For this example, we use the [**image**](/widgets-and-components/widgets/base-elements/image) widget.
-8. To add data to draggable widgets, select the **Draggable widget > Properties Panel > Draggable Properties >** specify the **Type** of the data and its **Value**.
+2. Inside the **Draggable** widget, you can add any widget as a child widget. For this example, we use the **Image** widget.
+3. To add data to draggable widgets, select the **Draggable widget > Properties Panel > Draggable Properties >** specify the **Type** of the data and its **Value**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/09755c639a8f4aaaa2ea2df8bb8b0324?sid=c4738082-d7ee-4e9b-8940-e887334e476b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -58,10 +64,9 @@ The DragTarget widget in this example allows users to drop items onto the shelf.
 
 Let's see how to add DragTarget widget:
 
-1. Open the [Widget Palette](https://docs.flutterflow.
-io/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and locate the **DragTarget** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree.
-5. Inside the **DragTarget** widget, add a [**Container**](/widgets-and-components/widgets/layout-elements/container) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
-8. Now, you need to specify the type of data this target will receive. To do so select the **DragTarget widget > Properties Panel > Draggable Properties >** specify the **Type** of the data. This is crucial for ensuring that only the correct items can be dropped on the target.
+1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DragTarget** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree.
+2. Inside the **DragTarget** widget, add a [**Container**](/widgets-and-components/widgets/layout-elements/container) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
+3. Now, you need to specify the type of data this target will receive. To do so select the **DragTarget widget > Properties Panel > Draggable Properties >** specify the **Type** of the data. This is crucial for ensuring that only the correct items can be dropped on the target.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/ffe78e15510d4cf2b34c1bbe0a54bad2?sid=97dadbab-779b-41ac-a23f-4f8d42e067b3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -89,15 +94,15 @@ It's crucial to think about the user experience you wish to create. For instance
 
 Let's see how to add drag events for this example:
 
-1. Select **DragTarget** widget, select **Actions** from the Properties panel (the right menu), 
+1. Select **DragTarget** widget, select **Actions** from the Properties Panel (the right menu), 
 and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-5. To ensure that only a plant item is being dropped:
+2. To ensure that only a plant item is being dropped:
 
-	1. Select the **On Drag Accept** and select **+ Add Conditional Action**.
-	5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](/widgets-and-components/widgets/base-elements/draggable-+-dragtarget#id-2.-add-draggable-widgets).
-	8. Check if the captured data matches the expected item, i.e., plant.
-	11. In the **TRUE** branch, you can add a [snackbar message](/actions/actions/alerts-notifications/show-snack-bar) and [update](/actions/actions/state-management/update-page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
-8. Now, select the **On Drag Exit** andadd an action to [update](/actions/actions/state-management/update-page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.
+    1. Select the **On Drag Accept** and select **+ Add Conditional Action**.
+    5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](/widgets-and-components/widgets/base-elements/draggable-+-dragtarget#id-2.-add-draggable-widgets).
+    8. Check if the captured data matches the expected item, i.e., plant.
+    11. In the **TRUE** branch, you can add a [snackbar message](/actions/actions/alerts-notifications/show-snack-bar) and [update](/actions/actions/state-management/update-page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
+3. Now, select the **On Drag Exit** andadd an action to [update](/actions/actions/state-management/update-page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.
 
 <details>
 <summary>On Drag Accept</summary>

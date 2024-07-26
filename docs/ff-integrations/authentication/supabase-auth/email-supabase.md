@@ -14,7 +14,7 @@ Supabase email authentication is a secure and easy way to allow users to sign up
 :::info[Prerequisites]
 Before getting started with this section, ensure you have,
 
-1. Completed all steps in the [Supabase setup](..%2F..%2Fsupabase%2Fsupabase-setup.md)
+1. Completed all steps in the [Supabase setup](../../supabase/supabase-setup.md)
 2. Completed [Initial setup](initial-setup.md) 
    required for authentication.
 :::
@@ -53,7 +53,7 @@ Here's how you disable email verification on the Supabase side:
 
 Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the [template](/getting-started/adding-new-page#add-page). Here is the page added from the templates, and after some modification, it looks the below:
 
-Also, see how to [build a page layout](/widgets-and-components/ui-and-layout-101) in case you want to build a page from scratch.
+Also, see how to build a page layout in case you want to build a page from scratch.
 
 ![img_3.png](img_3.png)
 
@@ -62,10 +62,10 @@ Also, see how to [build a page layout](/widgets-and-components/ui-and-layout-101
 Now, you can proceed to add an account creation flow, which basically consists of three actions in the following order:
 
 1. Supabase [Create Account Action](/actions/actions/backend-database/supabase-authentication/create-account#email-signup)
-5. Supabase [insert row action](/actions/actions/backend-database/supabase#1.-insert-row-action)
-8. [Navigate](#) action
+2. Supabase [Insert row action](/actions/actions/backend-database/supabase#1.-insert-row-action)
+3. [Navigate](../../../ff-concepts/navigation-routing/nav-overview.md) action
 
-The first one creates an account in Supabase and adds an email and password in the "auth.users" table (i.e., *Protected schemas > schema auth*). However, this action does not create an entry in the "users" table you created [here](/data-and-backend/supabase/supabase-authentication/initial-setup#1.-creating-a-users-table). To do so, you need to add another action called Supabase *insert row* action with the user's details, such as email and profile\_pic. Once the entry has been created, you can navigate to the home page using the navigate action.
+The first one creates an account in Supabase and adds an email and password in the "auth.users" table (i.e., *Protected schemas > schema auth*). However, this action does not create an entry in the "users" table you created [here](/data-and-backend/supabase/supabase-authentication/initial-setup#1.-creating-a-users-table). To do so, you need to add another action called Supabase *insert row* action with the user's details, such as email and profile_pic. Once the entry has been created, you can navigate to the home page using the navigate action.
 
 Here's how it looks:
 

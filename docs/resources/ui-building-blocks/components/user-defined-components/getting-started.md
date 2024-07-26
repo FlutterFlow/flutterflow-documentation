@@ -146,7 +146,7 @@ your components.
 
 Here’s a detailed look at what you can typically find and modify in this panel:
 
-![components-configurations.png](..%2F..%2Fimgs%2Fcomponents-configurations.png)
+![components-configurations.png](../../imgs/components-configurations.png)
 
 ### Component Parameters
 
@@ -165,7 +165,7 @@ the page using the current component.
 
 Adding an action to a component element is exactly the same experience as adding actions to any page elements. Here's a quick overview:
 
-![component-actions.png](..%2F..%2Fimgs%2Fcomponent-actions.png)
+![component-actions.png](../../imgs/component-actions.png)
 
 For component actions, you can establish specific behaviors or functions that are triggered by
 certain events related to the component's lifecycle, such as **On Initialization**.
@@ -185,7 +185,7 @@ Effective state management ensures that components dynamically update their UI t
 state, providing a responsive user experience.
 
 :::info 
-Learn how to **[Create a State variable](component-lifecycle.md/#creating-a-component-state)** 
+Learn how to **[Create a State variable](component-lifecycle.md#creating-a-component-state)** 
 for your components and how to 
-**[Update them](component-lifecycle.md/#update-component-state-action)**.
+**[Update them](component-lifecycle.md#update-component-state-action)**.
 :::

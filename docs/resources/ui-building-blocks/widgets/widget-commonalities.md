@@ -133,10 +133,10 @@ Padding is the empty space around the outer side of the widget.
 To add a padding:
 
 1. Select the widgetfrom the widget tree or from the canvas area.
-5. Move to the [properties panel](/getting-started/ui-builder/properties-panel) and navigate to the **Padding & Alignment** section.
-8. Enter values for Left (L), Top (T), Right (R), Bottom (B).
-11. To apply the same padding on all sides, switch to the **Uniform Padding** option. You can then adjust the padding by either moving the slider or entering the desired value directly.
-14. Use the refresh icon button to reset all values.
+2. Move to the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) and navigate to the **Padding & Alignment** section.
+3. Enter values for Left (L), Top (T), Right (R), Bottom (B).
+4. To apply the same padding on all sides, switch to the **Uniform Padding** option. You can then adjust the padding by either moving the slider or entering the desired value directly.
+5. Use the refresh icon button to reset all values.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/ebe08aa5510f4acdb9915d94191a0dae?sid=477f0152-0351-47d2-a912-6631d8a36b15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -160,9 +160,8 @@ This property helps you position the widget in two ways.
 
 To change the alignment:
 
-1. Select the widget, and head over to [Properties Panel]
-(/getting-started/ui-builder/properties-panel) **> Padding & Alignment** section.
-5. Use the alignment box to align the widget at a fixed position or directly enter a value in the **Horizontal** and **Vertical** input box.
+1. Select the widget, and head over to [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) **> Padding & Alignment** section.
+2. Use the alignment box to align the widget at a fixed position or directly enter a value in the **Horizontal** and **Vertical** input box.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/7fa1d8caf5b84f7c89bc7d95ee8dbd85?sid=02ca8efe-b4d7-4e3b-b1f2-14e767f0d403" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -178,7 +177,7 @@ com/embed/vuJ2fTnYyCM" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 ## Testing
 
-This property enables you to specify the **Value Key** for the current widget, which serves as a reference point during automated test runs. Please refer to the detailed guide provided [here](/deploying-your-app/testing-your-app/automated-tests).
+This property enables you to specify the **Value Key** for the current widget, which serves as a reference point during automated test runs. Please refer to the detailed guide provided [here](../../../testing-deployment-publishing/testing/automated-tests.md).
 
 ## Changing the size
 
@@ -197,10 +196,10 @@ com/embed/aa1755b1b7b94ef3ac3a72da431d844f?sid=982c1f26-b768-4c8d-ab77-c085219eb
 To change color for any widget property:
 
 1. Navigate to a widget property that allows you to set a color.
-5. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
-8. By default, theme colors are displayed. Simply click on a color to apply it.
-11. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.
-14. You can also set a [color from variable](#setting-color-from-variable).
+2. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
+3. By default, theme colors are displayed. Simply click on a color to apply it.
+4. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.
+5. You can also set a [color from variable](#setting-color-from-variable).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/7fb8cd068bbb45c9ae34cfd4f325a3dc?sid=b3559d67-9e11-4501-8a17-7f4e92bd5847" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -267,7 +266,7 @@ You may want to apply dynamic colors to widget properties like Container backgro
 To set a color from a variable:
 
 1. Navigate to a widget property that allows you to set a color.
-5. From the **Set from Variable** menu, you can select the source of your color. Below is an example of setting color from an app state variable.
+2. From the **Set from Variable** menu, you can select the source of your color. Below is an example of setting color from an app state variable.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/6bffe7446e1d414f99baee759fda8fc0?sid=abfedd7c-3bc4-4eda-a9ab-341b72e4b98a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -283,10 +282,10 @@ If you have a complex variable value (e.g., using [Conditional Logic](/advanced-
 To copy-paste a variable:
 
 1. Open the **Set from Variable** menu and select the **Variable Options** (three dots) icon.
-5. Select the **Copy Variable**.
-8. Move to the place where you want to paste the variable, and open the **Set from Variable** menu.
-11. Click on the **Paste Variable** icon.
-14. Click **Confirm**.
+2. Select the **Copy Variable**.
+3. Move to the place where you want to paste the variable, and open the **Set from Variable** menu.
+4. Click on the **Paste Variable** icon.
+5. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/d4a7a2a5c7aa415894dd977330c2dabe?sid=b199450c-a915-4533-828e-cf6fa9e8bbff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -317,7 +316,7 @@ com/embed/6954aafd8e494e74b52a2e89d4744e39?sid=8cd4d95b-e338-41f1-ae8a-912422f58
 
 ## UI builder display value
 
-For widgets like [**Text**](/widgets-and-components/widgets/base-elements/text) and [**RichText**](/widgets-and-components/widgets/base-elements/richtext), when their content is coming from a variable, you have the option to set a placeholder value that will be displayed only in the app builder. Keep in mind that this display value is solely for visualization purposes within the canvas and will be replaced with the actual variable value when the app is running.
+For widgets like **Text** and **RichText**, when their content is coming from a variable, you have the option to set a placeholder value that will be displayed only in the app builder. Keep in mind that this display value is solely for visualization purposes within the canvas and will be replaced with the actual variable value when the app is running.
 
 This is helpful in assessing spacing and alignment without the need to remove variable bindings.
 

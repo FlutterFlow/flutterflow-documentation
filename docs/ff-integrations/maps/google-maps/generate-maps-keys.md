@@ -37,7 +37,8 @@ com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer
 <p></p>
 
 :::warning
-To secure your API keys, refer to the [**Best Practices guide: Secure API Keys**](..%2F..%2Fcloud%2Frestrict-keys.md)
+To secure your API keys, refer to the 
+[**Best Practices guide: Secure API Keys**](../../google-cloud/secure-keys)
 :::
 
 - Click on the Credentials menu from the left panel.
@@ -48,7 +49,7 @@ To secure your API keys, refer to the [**Best Practices guide: Secure API Keys**
 
 Now add the API keys platform wise to FlutterFlow Settings page
 
-![g-maps-settings.png](..%2Fimgs%2Fg-maps-settings.png)
+![g-maps-settings.png](../imgs/g-maps-settings.png)
 
 ### Create a new Key if not available
 

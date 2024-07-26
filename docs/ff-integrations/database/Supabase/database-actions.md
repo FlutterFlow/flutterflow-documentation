@@ -15,7 +15,7 @@ The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row
 :::note[Prerequisites]
 Before getting started with this section, ensure you have,
 
-1. Completed all steps in the [**Supabase setup**](..%2F..%2Fsupabase%2Fsupabase-setup.md)
+1. Completed all steps in the [**Supabase setup**](../../supabase/supabase-setup.md)
 2. Ensure you have a table created for adding, updating, and deleting data.
 :::
 
@@ -33,18 +33,18 @@ Following are the types of actions you can perform on a Supabase table.
 ### Insert Row [Action]
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
-5. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will 
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will 
    open an **Action Flow Editor** in a new popup window.
 
-	1. Click on **+ Add Action**.
-	5. On the right side, search and select the **Supabase** > **Insert Row** action.
-	8. Set the **Table** to your table name (e.g., assignments).
-	11. Under the **Set Fields** section, click on the **+ Add Field** button.
-	14. Click on the Field name.
+    1. Click on **+ Add Action**.
+    2. On the right side, search and select the **Supabase** > **Insert Row** action.
+    3. Set the **Table** to your table name (e.g., assignments).
+    4. Under the **Set Fields** section, click on the **+ Add Field** button.
+    5. Click on the Field name.
 
-		1. Scroll down to find the **Value Source** dropdown and change it to **From Variable**.
-		5. Click on **UNSET** and select **Widget State > Name** of the TextField.
-	17. Similarly, add the field for the other UI elements.
+       1. Scroll down to find the **Value Source** dropdown and change it to **From Variable**.
+       2. Click on **UNSET** and select **Widget State > Name** of the TextField.
+    6. Similarly, add the field for the other UI elements.
 
 :::tip[Pro Tip]
 While adding this action, you can leave the **id** (if marked as *Primary*) and 
@@ -59,25 +59,25 @@ com/embed/f2a75f9b0e144f6aab06cc1f0965541b?sid=6f57ff8a-ca2a-4c47-833d-03fa928b8
 ### Update Row [Action]
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
-5. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will 
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will 
    open an **Action Flow Editor** in a new popup window.
 
-	1. Click on **+ Add Action**.
-	5. On the right side, search and select the **Supabase** > **Update Row** action.
-	8. Set the **Table** to your table name (e.g., assignments).
-	11. Optional: If you want to get the rows after the update is finished, enable the **Return Matching Rows** option.
-	14. Now, you must set the row you want to update. Usually, this is done by finding a row in a table that matches the current row ID. To do so, click **+ Add Filter** button inside the **Matching Rows** section.
+    1. Click on **+ Add Action**.
+    2. On the right side, search and select the **Supabase** > **Update Row** action.
+    3. Set the **Table** to your table name (e.g., assignments).
+    4. Optional: If you want to get the rows after the update is finished, enable the **Return Matching Rows** option.
+    5. Now, you must set the row you want to update. Usually, this is done by finding a row in a table that matches the current row ID. To do so, click **+ Add Filter** button inside the **Matching Rows** section.
 
-		1. Set the **Field Name** to the field that contains the IDs. Typically, this is the 
-        **id** column.
-		5. Set the **Relation** to **Equal To** because you want to find a row with the exact id.
-		8. Into the **Value Source**, you can select the **From Variable** and provide the id of the row for which you just updated values in the UI.
-	17. Under the **Set Fields** section, click on the **+ Add Field** button.
-	20. Click on the Field Name.
+       1. Set the **Field Name** to the field that contains the IDs. Typically, this is the 
+       **id** column.
+       2. Set the **Relation** to **Equal To** because you want to find a row with the exact id.
+       3. Into the **Value Source**, you can select the **From Variable** and provide the id of the row for which you just updated values in the UI.
+    6. Under the **Set Fields** section, click on the **+ Add Field** button.
+    7. Click on the Field Name.
 	
-		1. Scroll down to find the **Value Source** dropdown and change it to **From Variable**.
-		5. Click on **UNSET** and select **Widget State > Name** of the TextField.
-	23. Similarly, add the field for the other UI elements.
+       1. Scroll down to find the **Value Source** dropdown and change it to **From Variable**.
+       2. Click on **UNSET** and select **Widget State > Name** of the TextField.
+    8. Similarly, add the field for the other UI elements.
 
 
 
@@ -100,19 +100,19 @@ If you have a flow like this, *HomePage* -> *AssignmentDetailsPage* ->
 Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 
-	1. Click on **+ Add Action**.
-	5. On the right side, search and select the **Supabase** -> **Delete Row** action.
-	8. Set the **Table** to your table name (e.g., assignments).
-	11. Optional: If you want to know which rows were deleted from a table, enable the **Return 
-		Matching Rows** option.
-	14. Now, you must set the row you want to delete. Usually, this is done by finding a row in a table that matches the current row ID. To do so, click **+ Add Filter** button inside the **Matching Rows** section.
+    1. Click on **+ Add Action**.
+    2. On the right side, search and select the **Supabase** -> **Delete Row** action.
+    3. Set the **Table** to your table name (e.g., assignments).
+    4. Optional: If you want to know which rows were deleted from a table, enable the **Return 
+       Matching Rows** option.
+    5. Now, you must set the row you want to delete. Usually, this is done by finding a row in a table that matches the current row ID. To do so, click **+ Add Filter** button inside the **Matching Rows** section.
 
-		1. Set the **Field Name** to the field that contains the IDs. Typically, this is the 
-        **id** column.
-		5. Set the **Relation** to **Equal To** because you want to find a row with the exact id.
-		8. Into the **Value Source**, you can select the **From Variable** and provide the id of the row you want to delete.
+       1. Set the **Field Name** to the field that contains the IDs. Typically, this is the 
+       **id** column.
+       2. Set the **Relation** to **Equal To** because you want to find a row with the exact id.
+       3. Into the **Value Source**, you can select the **From Variable** and provide the id of the row you want to delete.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/309e0e40832146df8909c2e533e9b11e?sid=34f4ba89-cc53-47c3-8b8d-8859c03a0f6f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -135,12 +135,12 @@ To manually query a Supabase table, follow the steps below to define this action
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
 
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Supabase** > **Query Rows** action.
-14. Select the **Table** you want to query.
-17. You can also [Filter](#filtering-table-data) and [Order](#ordering-table-data) the query results.
-20. Provide the **Action Output Variable Name**. This will be used to store the query result.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Supabase** > **Query Rows** action.
+5. Select the **Table** you want to query.
+6. You can also [Filter](#filtering-table-data) and [Order](#ordering-table-data) the query results.
+7. Provide the **Action Output Variable Name**. This will be used to store the query result.
 
 <p></p>
 
@@ -151,8 +151,8 @@ com/embed/99f47689b5b147678ed197c6ea0facf6?sid=615f2ecf-c8d0-4124-b2fa-ca9798893
 
 
 8. Now, you can use the **Action Output Variable Name** provided in the previous step to generate 
-children from a variable on [ListView](/widgets-and-components/widgets/layout-elements/listview).
-5. Finally, you can display data in a [Text](/widgets-and-components/widgets/base-elements/text) widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu > ***[children\_from\_variable\_name]*** item > Get Row Field > select the row field** you want to display.
+children from a variable on **ListView**.
+9. Finally, you can display data in a **Text** widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu > ***[children_from_variable_name]*** item > Get Row Field > select the row field** you want to display.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/d30acf8e4451459689b0d295b87bb5f9?sid=9a4f5aec-59ef-4fa3-9e76-0de72e75f278" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

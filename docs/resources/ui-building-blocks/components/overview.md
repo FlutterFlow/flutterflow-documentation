@@ -20,7 +20,7 @@ Components help in the following ways:
   maintain and update the app.
 
   :::tip[CLasses vs Instances]
-  Learn more about **[Classes and their Instances](..%2Foverview.md)** and what they mean in
+  Learn more about **[Classes and their Instances](../overview.md)** and what they mean in
   FlutterFlow.
   :::
 
@@ -41,7 +41,7 @@ Leveraging components effectively helps you build a consistent, efficient, and m
 
 ## Types of Components in FlutterFlow
 
-- **[Build-in Components](built-in-components%2Fgetting-started.md):** FlutterFlow 
+- **[Build-in Components](built-in-components/getting-started.md):** FlutterFlow 
   includes a variety of built-in pre-defined widgets that
   serve as ready-made components, such as the `CreditCard` or `Signature` widget. These are
   out-of-the-box solutions provided by FlutterFlow that can be directly integrated into any project
@@ -88,5 +88,8 @@ some common use-cases.
    or feature highlights, and reuse them to maintain a cohesive layout.
 
 Here's an example of all the widely used components used in the EcommerceFlow demo app.
-// TODO Image will be added once all components are built in project
+
+
+<!---TODO Image will be added once all components are built in project --->
+
 

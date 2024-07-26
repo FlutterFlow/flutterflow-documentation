@@ -1,5 +1,5 @@
 ---
-slug: /resources/backend-logic/streaming-apis
+slug: /resources/backend-logic/streaming-api
 title: Streaming APIs
 description: Learn how to use streaming APIs in your backend logic with FlutterFlow.
 tags: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
@@ -8,7 +8,7 @@ keywords: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 
-# Streaming API Example: AI Review Summary
+# Streaming APIs
 
 Streaming APIs provide a continuous flow of data over a long-lived HTTP connection, enabling real-time updates for your application.
 
@@ -53,7 +53,7 @@ The primary difference between REST APIs and Streaming APIs lies in their data d
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "3-2"}
 	```
 
-## Building an App
+## Example: AI Review Summary 
 
 Let's see how you can use streaming APIs in FlutterFlow by building an example that allows users to see an AI summary of product reviews. On page load, the app displays the AI summary in real-time, letting users watch the analysis unfold as it's being generated.
 
@@ -89,27 +89,33 @@ The final app looks like this:
 
 The steps to build the app are as follows:
 
-1. [Build UI](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#id-1.-build-ui)
-5. [Create API](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#id-2.-create-api)
-8. [Create page state variable](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#id-3.-create-page-state-variable)
-11. [Trigger and Parse API response](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#id-4.-trigger-and-extract-data-from-api-response)
-14. [Extract chart data](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#id-5.-extract-chart-data)
+1. [Build UI](#1-build-ui)
+2. [Create API](#2-create-api)
+3. [Create page state variable](#3-create-page-state-variables)
+4. [Trigger and Parse API response](#4-trigger-and-extract-data-from-api-response)
+5. [Extract chart data](#5-extract-chart-data)
 
 ### 1. Build UI
 
 The user interface includes a section for the average rating, and number of reviews, followed by a detailed summary of the reviews including pros, cons, and sentiment distribution visualization. Here are key widgets to build the page:
 
-* [**Text Widget**](/widgets-and-components/widgets/base-elements/text): Displays the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
+* [**Text Widget**](../../../../resources/ui-building-blocks/widgets/built-in-widgets/text.md): 
+  Displays 
+  the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
 * [**Chart (Bar chart) Widget**](/widgets-and-components/widgets/base-elements/chart/bar-chart): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
-![streaming-api-example-demo.png](..%2Fimgs%2Fstreaming-api-example-demo.png)
+
+<p></p>
+![streaming-api-example-demo.png](../imgs/streaming-api-example-demo.png)
 
 ### 2. Create API
 
-For building this app, we will use [OpenAI's Chat Completion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) to generate a summary based on given reviews. Before you build anything related to APIs in your app, it's essential to create and test the APIs to ensure they work correctly. So let's [create and test](/data-and-backend/api-calls/create-and-test-api-call) the Chat Completion API in our project.
+For building this app, we will use [OpenAI's Chat Completion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) to generate a summary based on given reviews. Before you build anything related to APIs in your app, it's essential to create and test the APIs to ensure they work correctly. So let's [create and test](#) the Chat Completion API in our project.
 
 Once created, open the **Advanced Settings** and **enable** the **Process Stream Response** toggle.
 
 Here's how you do it:
+
+<p></p>
 
 <div style={{
     position: 'relative',
@@ -143,9 +149,9 @@ Here's how you do it:
 
 In this example, to hold and display the result of the generated AI summary, you'll need two variables.
 
-2. `summary`: This variable will hold the full text of the summary that includes the overall sentiment of the reviews, key points mentioned by customers, and lists of pros and cons. It is initialized as an empty string and will later be updated with the AI-generated text.
-5. `sentimentValues`: This variable will store the sentiment distribution values. It is a list of *double* representing the number of positive, neutral, and negative reviews. **Note that**, these values will be used to provide the *Bar Values* in a bar chart. It is initialized with three zeros and will later be updated with the actual counts of positive, neutral, and negative reviews.
-![streaming-page-state.png](..%2Fimgs%2Fstreaming-page-state.png)
+1. `summary`: This variable will hold the full text of the summary that includes the overall sentiment of the reviews, key points mentioned by customers, and lists of pros and cons. It is initialized as an empty string and will later be updated with the AI-generated text.
+2. `sentimentValues`: This variable will store the sentiment distribution values. It is a list of *double* representing the number of positive, neutral, and negative reviews. **Note that**, these values will be used to provide the *Bar Values* in a bar chart. It is initialized with three zeros and will later be updated with the actual counts of positive, neutral, and negative reviews.
+![streaming-page-state.png](../imgs/streaming-page-state.png)
 
 ### 4. Trigger and extract data from API response
 
@@ -155,7 +161,7 @@ You can trigger the streaming API just like any other regular API. However, the 
 * **onError:** This action is triggered when there is an error in the streaming connection. You can use this action to handle errors gracefully, such as displaying an error message to the user or attempting to reconnect.
 * **onClose:** This action is triggered when the streaming connection is closed. You can use this action to perform cleanup tasks or to notify the user that the stream has ended.
 
-Whenever the data is received, you can access the response body via the **OnMessage > Set Variable menu > Action Parameters > OnMessageInput**. and then use the [**Response Stream Message Options**](/data-and-backend/api-calls/streaming-api-example-ai-review-summary#response-stream-message-options) to extract the data.
+Whenever the data is received, you can access the response body via the **OnMessage > Set Variable menu > Action Parameters > OnMessageInput**. and then use the [**Response Stream Message Options**](#response-stream-message-options) to extract the data.
 
 For this specific example, we use the *Server Sent Event Stream Data JSON* option and then use this JSON path `$['choices'][0]['delta']['content']` to retrieve the story data.
 

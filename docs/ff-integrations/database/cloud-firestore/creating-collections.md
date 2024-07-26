@@ -19,7 +19,8 @@ A collection is a group of documents. For example, you could have a 'users*'* co
 :::info[Getting Started: Things to Know First]
 
 - Get to know how to [**structure the Firebase Database**](getting-started.md#structuring-the-database).
-- Ensure you've gone through and completed every step in the [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md) 
+- Ensure you've gone through and completed every step in the 
+[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md) 
   for your project.
 :::
 
@@ -27,11 +28,11 @@ A collection is a group of documents. For example, you could have a 'users*'* co
 
 Here are the steps to create a collection:
 
-2. Click on the **Firestore** from the Navigation Menu (left side of your screen).
+1. Click on the **Firestore** from the Navigation Menu (left side of your screen).
 
-5. Click on the **(+)** Plus sign button.
-8. A popup will appear, Enter the collection name and click **Create** Button.
-11. Next, [define the collection schema](#define-schema-creating-fields) (create Fields) and 
+2. Click on the **(+)** Plus sign button.
+3. A popup will appear, Enter the collection name and click **Create** Button.
+4. Next, [define the collection schema](#define-schema-creating-fields) (create Fields) and 
 [add some data](firestore-actions.md#create-document-action) to the collection.
 
 :::info
@@ -56,19 +57,19 @@ Field names cannot be changed, so ensure that you have used the correct Field na
 To define the schema (create fields) for the document:
 
 1. Select your collection from the list on the left side.
-5. If you haven't added any fields yet:
+2. If you haven't added any fields yet:
 
-	1. You can choose from the template collections that have common fields needed in most 
+    1. You can choose from the template collections that have common fields needed in most 
        applications. This will auto-add all the fields.
-	5. Click on **Start from scratch** to define your own schema.
-	8. Or, use [AI Gen Schema](#create-schema-using-ai-gen).
-8. To add a new field, start typing its name (e.g., title, description, date, etc.) and choose the suitable **Data Type**.
-11. While choosing the Data Type, you can set if it will be a list or not using **Is List?** toggle.
+    5. Click on **Start from scratch** to define your own schema.
+    8. Or, use [AI Gen Schema](#create-schema-using-ai-gen).
+3. To add a new field, start typing its name (e.g., title, description, date, etc.) and choose the suitable **Data Type**.
+4. While choosing the Data Type, you can set if it will be a list or not using **Is List?** toggle.
 
-	1. You can keep it disabled for storing only a single value. For example, fields such as title,
-    description, price, etc., can have only one value. You can't have multiple titles for a single post.
-	5. You can enable it to store multiple values of the same data type. For example, to store the list of accessory names for the field accessories.
-14. Click on the **Done** icon.
+   1. You can keep it disabled for storing only a single value. For example, fields such as title,
+   description, price, etc., can have only one value. You can't have multiple titles for a single post.
+   2. You can enable it to store multiple values of the same data type. For example, to store the list of accessory names for the field accessories.
+5. Click on the **Done** icon.
 
 :::tip
 You can also use *Tab* and *Enter* keys to navigate quickly while creating fields.

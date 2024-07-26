@@ -11,7 +11,8 @@ keywords: [FlutterFlow, Custom Files, Customizations, Flutter, Dart, Pub.dev]
 
 We allow you to add a custom code directly into the `main.dart` file of your app. This means that you can easily implement specific functionalities and customize your app as per your requirements without downloading the entire project and manually modifying the file.
 
-By default, the file you want to edit is in 'read-only' mode. However, using our editor, you can add a code snippet in the form of [custom actions](/customizing-your-app/custom-functions/custom-actions).
+By default, the file you want to edit is in 'read-only' mode. However, using our editor, you can 
+add a code snippet in the form of [Custom Actions](custom-actions.md).
 
 :::warning[Please note]
 You can only add custom actions that have no arguments (including *BuildContext*).
@@ -29,14 +30,15 @@ Let's see an example of how you can add a code in **main.dart** file to change t
 color for the mobile app. Here's how it looks:
 
 <figure>
-    ![img_3.png](imgs%2Fimg_3.png)
+    ![img_3.png](imgs/img_3.png)
   <figcaption class="centered-caption">Changing the status bar color for the mobile device</figcaption>
 </figure>
 
 To do so, you can edit *main.dart* file by following the steps below:
 
-1. Create a [custom action](/customizing-your-app/custom-functions/custom-actions#adding-custom
--action) for the code you want to include in a *main.dart* file. For this example, here's code in a custom action named 'setStatusbarColor'.
+1. Create a [Custom Action](custom-actions.md#custom-actions) for the code you want to include in a `main.
+   dart` file. For this 
+   example, here's code in a custom action named 'setStatusbarColor'.
 
 ```dart
 // Automatic FlutterFlow imports
@@ -66,9 +68,10 @@ Future setStatusbarColor() async {
 }
 ```
 
-2. Now click on **Custom Functions** from the [*Navigation Menu*](/getting-started/ui-builder/navigation-menu) (left side of your screen) and open the **Custom Files > main.dart**.
-5. Determine where to place the code (i.e., **Initial Action** or **Final Action**), click the **+** button, and select the custom action.
-8. Click **Save**.
+1. Now click on **Custom Functions** from the 
+[**Navigation Menu**](../../../docs/intro/ff-ui/builder.md#navigation-menu) and open the **Custom Files > main.dart**.
+2. Determine where to place the code (i.e., **Initial Action** or **Final Action**), click the **+** button, and select the custom action.
+3. Click **Save**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/e8e12fad4fce42bba29080f83a1f4b74?sid=3f01f3b7-38f0-4f01-8bec-6442db66fe07" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -82,7 +85,8 @@ Let's see some more examples of adding code to the *main.dart* file to solidify 
 
 You might want to lock the device orientation in portrait or landscape mode to prevent it from rotating the screen automatically when the user tilts or rotates the device. This is useful in scenarios where the layout of the app is designed to work only in one specific orientation or when you want to ensure that the app is always displayed in a consistent manner.
 
-To set the device orientation in landscape-only mode, [create a custom action](/customizing-your-app/custom-functions/custom-actions#adding-custom-action) with the following code and [add it to a *main.dart*](/customizing-your-app/custom-functions/custom-files#edit-main.dart) file.
+To set the device orientation in landscape-only mode, [create a custom action](custom-actions.md) with the 
+following code and [add it to a `main.dart`](#edit-maindart) file.
 
 ```dart
 // Automatic FlutterFlow imports
@@ -107,7 +111,7 @@ Future setLandscapeMode() async {
 ```
 
 <figure>
-    ![img_4.png](imgs%2Fimg_4.png)
+    ![img_4.png](imgs/img_4.png)
   <figcaption class="centered-caption">Edit main.dart file to lock the device orientation</figcaption>
 </figure>
 
@@ -116,7 +120,7 @@ Future setLandscapeMode() async {
 
 If you want to ensure that your app appropriately manages its lifecycle and handles any necessary actions when it transitions between different states, such as 'resumed' and 'paused,' you can add the `AppLifecycleObserver` in the *main.dart* file.
 
-To do so, [create a custom action](/customizing-your-app/custom-functions/custom-actions#adding-custom-action) with the following code and [add it to a *main.dart*](/customizing-your-app/custom-functions/custom-files#edit-main.dart) file.
+To do so, [create a custom action](custom-actions.md) with the following code and [add it to a `main.dart`](#edit-maindart) file.
 
 
 ```dart
@@ -149,6 +153,6 @@ print('App is in background');
 }
 ```
 <figure>
-    ![img_5.png](imgs%2Fimg_5.png)
+    ![img_5.png](imgs/img_5.png)
   <figcaption class="centered-caption">Edit main.dart file to get lifecycle callback</figcaption>
 </figure>

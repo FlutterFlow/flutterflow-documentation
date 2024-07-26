@@ -26,15 +26,13 @@ com/embed/a35c0fab4b9b4c2ba4f479d82e402f44?sid=f5fb3f4e-c4bb-4ec5-a5b5-60f6aed47
 
 Here are the steps to build such an example:
 
-1. [Enable SQLite](/settings-and-integrations/integrations/sqlite#id-1.-enable-sqlite)
-5. [Database configuration](/settings-and-integrations/integrations/sqlite#id-2.-database-configuration)
-8. [Add SQL queries](/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries)
-11. [Display all notes](/settings-and-integrations/integrations/sqlite#id-4.-display-all-notes)
-14. [Add note](/settings-and-integrations/integrations/sqlite#id-5.-add-note)
-17. [Update note](/settings-and-integrations/integrations/sqlite#id-6.-update-note)
-20. [Delete note](/settings-and-integrations/integrations/sqlite#id-7.-delete-note)
-23. [Running app on a device](/settings-and-integrations/integrations/sqlite#id-8.-running-app-on-a-device)
-26. [Example project](/settings-and-integrations/integrations/sqlite#id-9.-example-project)
+1. [Enable SQLite](#1-enable-sqlite)
+2. [Database configuration](#2-database-configuration)
+3. [Add SQL queries](#3-add-sql-queries)
+4. [Display all notes](#4-display-all-notes)
+5. [Add note](#5-add-note)
+6. [Update note](#6-update-note)
+7. [Delete note](#7-delete-note)
 
 ## 1. Enable SQLite
 
@@ -154,7 +152,7 @@ com/embed/aa0bb7bea67145c8b0b61ce57485a5c2?sid=9d950aba-c498-484c-8507-c795bee74
 
 ## 4. Display all notes
 
-To show a list of notes, you can use the [ListView](/widgets-and-components/widgets/layout-elements/listview) > [Container](/widgets-and-components/widgets/layout-elements/container) widgets to [design a page](/widgets-and-components/ui-and-layout-101) that looks like the following:
+To show a list of notes, you can use the **ListView** > **Container** widgets to design a page that looks like the following:
 
 ![img_2.png](img_2.png)
 
@@ -165,7 +163,7 @@ Now, on the ListView widget, add a [SQLite backend query](/data-and-backend/back
 Go to your project page and follow the steps below to define an SQLite query:
 
 - Select the widget (or page) on which to apply the query.
-- Select **Backend Query** from the Properties panel (the right menu).
+- Select **Backend Query** from the Properties Panel (the right menu).
 - Click **Add Query** and set the Query Type to **SQLite Query**.
 - Select the **Query Name**. (Only Read Queries will be displayed here.) and click **Confirm**.
 
@@ -217,7 +215,7 @@ com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72
 
 :::info
 
-* In this example, we are updating the note on a bottom sheet component. To provide a better user experience, we initially display the current values of the note, ensuring that users have a clear idea of what they are going to edit. To display the note values in bottom sheet, we [pass](/widgets-and-components/custom-components#passing-data) the current note with **Type** set to **SQLite Row**.
+* In this example, we are updating the note on a bottom sheet component. To provide a better user experience, we initially display the current values of the note, ensuring that users have a clear idea of what they are going to edit. To display the note values in bottom sheet, we [pass](../../../../ff-concepts/navigation-routing/passing-data.md) the current note with **Type** set to **SQLite Row**.
 
 ![img_3.png](img_3.png)
 
@@ -229,7 +227,7 @@ com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72
 You can delete an existing note from the database using the [SQLite query action](/actions/actions/backend-database/sqlite-query) with the type set to *Update Query* and Query Name to [DeleteNote](/settings-and-integrations/integrations/sqlite#id-4.-deletenote).
 
 :::tip[Pro Tip] 
-To refresh the page, simply add an [**Update App State Action**](#) action with the Update Type set 
+To refresh the page, simply add an [**Update App State Action**](../../../../resources/data-representation/app-state.md) Action with the Update Type set 
 to 'Rebuild Current Page'.
 :::
 Here's how you do it:

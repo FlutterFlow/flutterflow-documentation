@@ -20,11 +20,11 @@ To add the `ConditionalBuilder` widget to your app:
 
 1. Add the **ConditionalBuilder** widget (from the **Base Elements**) to where you want to display dynamic widgets.
 
-5. Move to the **Properties Panel** **>** **Conditional Builder Properties,** andUnder the **First Condition**, provide the **IF** [condition](/advanced-functionality/conditional-logic) by clicking on **UNSET**.
-8. Now, besides the **THEN**, click **Empty**. This will automatically select the **IF** widget in the widget tree. Inside that, add a widget that you want to display if this condition is true.
-11. To add one more condition-based widget, click on the "+" button, add a condition for the **ELSE IF** section, and add a widget inside the **Else If** widget in the widget tree.
-14. If none of the conditions are satisfied, add a default widget to display inside the **Else** widget.
-17. Use the **Show In UI Builder** option to see that particular widget in the [canvas area](/getting-started/ui-builder/canvas-area). You can see only one widget at a time.
+2. Move to the **Properties Panel** **>** **Conditional Builder Properties,** andUnder the **First Condition**, provide the **IF** [condition](/advanced-functionality/conditional-logic) by clicking on **UNSET**.
+3. Now, besides the **THEN**, click **Empty**. This will automatically select the **IF** widget in the widget tree. Inside that, add a widget that you want to display if this condition is true.
+4. To add one more condition-based widget, click on the "+" button, add a condition for the **ELSE IF** section, and add a widget inside the **Else If** widget in the widget tree.
+5. If none of the conditions are satisfied, add a default widget to display inside the **Else** widget.
+6. Use the **Show In UI Builder** option to see that particular widget in the [canvas area](/getting-started/ui-builder/canvas-area). You can see only one widget at a time.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/fe8edb48bdf744abab13f3ba7f925c5c?sid=85533669-195d-4f5e-aeae-029ceee40cb5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

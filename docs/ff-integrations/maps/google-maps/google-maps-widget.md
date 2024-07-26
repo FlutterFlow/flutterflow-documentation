@@ -20,7 +20,7 @@ yet feature-complete. We encourage you to review the available APIs and features
 ensure they meet your app development needs before integration.
 :::
 
-![google-maps-widget.png](..%2Fimgs%2Fgoogle-maps-widget.png)
+![google-maps-widget.png](../imgs/google-maps-widget.png)
 
 :::info[Prerequisite]
 Ensure you have added the [**Google Map API keys**](generate-maps-keys#get-api-keys) before adding the Google Maps widget to your project
@@ -62,7 +62,7 @@ com/embed/11c929da4a82492fb2d9e690779051d8?sid=477a3de8-3f0c-42e1-a8b6-7556c3e72
 :::tip
 If you don't see your current location while testing, make sure you have enabled location permission in your browser.
 
-![location-browser.png](..%2Fimgs%2Flocation-browser.png)
+![location-browser.png](../imgs/location-browser.png)
 :::
 
 ## Markers
@@ -98,7 +98,7 @@ com/embed/e0cf2e67ab0e45b7aedc3bb96b212d73?sid=38a4bdce-89f5-4278-aaa2-4ad8e859f
 To change the marker color, move to the Properties Panel > Google Map > set the Marker Color
 dropdown value to the color you like:
 <p></p>
-![marker-color.png](..%2Fimgs%2Fmarker-color.png)
+![marker-color.png](../imgs/marker-color.png)
 
 ### Set Marker Image
 
@@ -132,10 +132,10 @@ initiating other actions based on the selected marker.
 Here’s how you do it:
 
 - Select the **Google Map** widget.
-- From the Properties panel, select **Actions** and open the **Action Flow Editor**.
+- From the Properties Panel, select **Actions** and open the **Action Flow Editor**.
 - Under the action trigger **On Marker Tap**, add any actions here.
 
-![marker-tap.png](..%2Fimgs%2Fmarker-tap.png)
+![marker-tap.png](../imgs/marker-tap.png)
 
 ## Advanced Customizations
 

@@ -4,7 +4,7 @@
 
 Icons are integral elements in user interfaces, providing visual cues that enhance user interaction and aesthetic appeal. They communicate action, represent functionality, and improve navigation efficiency within applications. 
 
-![icon.png](imgs%2Ficon.png)
+![icon.png](imgs/icon.png)
 
 ## Types of Icon widgets
 
@@ -63,7 +63,7 @@ To get a quick demo of the styling changes, check this out:
 
 ToggleIcon is a special component created for you that lets you add a toggle on and toggle off icon, and define a State variable that determines the state of the Toggle icon. The properties are straightforward and include the following:
 
-![toggle.png](imgs%2Ftoggle.png)
+![toggle.png](imgs/toggle.png)
 
 ### On Toggle [Action]
 
@@ -71,4 +71,4 @@ By default, FlutterFlow handles the toggling of the State variable from true to 
 
 In this example, we trigger the SnackBar action that displays the value of the State variable.
 
-//TODO show the app demo
+<!--- TODO Show the App DEMO --->

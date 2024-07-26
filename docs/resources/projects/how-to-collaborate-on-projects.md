@@ -111,7 +111,7 @@ control two types of branching permissions:
 To share a project with all team members in your organization, enable the "Share
 with my organization" option.
 
-![share-project-with-organization.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fshare-project-with-organization.avif)
+![share-project-with-organization.avif](../../../static/img/share-project-with-organization.avif)
 
 ## Real-Time Collaboration
 
@@ -128,11 +128,11 @@ To enable real-time collaboration, navigate to **Settings & Integrations (from t
 left Navigation Menu) > Project Setup > Collaboration > click Enable Updated
 Collaboration**.
 
-![realtime-collaboration-setup.png](..%2F..%2F..%2Fstatic%2Fimg%2Frealtime-collaboration-setup.png)
+![realtime-collaboration-setup.png](../../../static/img/realtime-collaboration-setup.png)
 
 Now when multiple builders are on the same page, it looks like this:
 
-![real-time-collaboration.gif](..%2F..%2F..%2Fstatic%2Fimg%2Freal-time-collaboration.gif)
+![real-time-collaboration.gif](../../../static/img/real-time-collaboration.gif)
 
 To disable this feature anytime, click the **Disable Updated Collaboration** button.
 
@@ -188,7 +188,7 @@ track progress and stay up to date on project changes. This feature allows team
 members to see all the updates made to a project in real-time, enabling them to
 understand how the project is evolving and collaborate more efficiently.
 
-![flutterflow-project-activity.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fflutterflow-project-activity.avif)
+![flutterflow-project-activity.avif](../../../static/img/flutterflow-project-activity.avif)
 
 :::info
 Teams users can access the last 7 days of project edits, while FlutterFlow

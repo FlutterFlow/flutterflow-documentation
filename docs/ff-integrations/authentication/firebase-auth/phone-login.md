@@ -41,8 +41,8 @@ Phone login allows a user to sign in by sending an SMS message to the user's pho
 
 Before getting started with this section:
 
-1. Complete [**Firebase Setup**](#).
-2. Complete [**Initial setup**](initial-setup.md) required for authentication.
+1. Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
+2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
 :::
 
 
@@ -171,7 +171,7 @@ To add this action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
 
-2. Select **Actions** from the [properties panel](#) (the right menu) and select **Add Action**.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu) and select **Add Action**.
 3. Search and select the **Phone Sign In** (under *Backend/Database > Firebase Authentication*) action.
 4. Now provide the **Phone Number** via **Widget State > TextField** (that accepts the phone number).
 5. Now, **Select Page** that you created to verify code.
@@ -208,7 +208,7 @@ On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action,
 
 1. Select the widget (e.g., Button) on which you want to add the action.
 
-2. Select **Actions** from the [properties panel](#) (the right menu) and select **Add Action**.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu) and select **Add Action**.
 3. Search and select the **Verify SMS Code** (under *Backend/Database > Firebase Authentication*) action.
 4. Now provide the **SMS Code** via **Widget State > TextField** (that accepts the code).
 
@@ -240,7 +240,7 @@ On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action,
 
 ### 7. Adding logout action
 
-To let users log out of your app, you can use the [Logout](../../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](../logout-action.md) action.
 
 ### 8. Testing phone sign-in
 
@@ -284,7 +284,7 @@ Here's how you add the authorized domain:
 
 Here's how it should look:
 
-![adding-authorized-domain](../../imgs/adding-authorized-domain.png)
+![adding-authorized-domain](../imgs/adding-authorized-domain.png)
 
 #### 8.2 Test on a real device
 
@@ -302,11 +302,11 @@ Skip if you find the below steps already completed by our automated Firebase int
 While releasing the app, make sure to [**get the key from the Play Console**](#).
 :::
 
-![SHA-256 key](../../imgs/sha-256-key.png)
+![SHA-256 key](../imgs/sha-256-key.png)
 
 
-2. Open the [Google Developers Console](https://console.developers.google.com/) (Make sure your project is selected in the dropdown at the top), Click on the **Library** menu on the left, search for the **Google Play Integrity API,** and enable it.
-3. Now, download and test the app using the instructions [here](#).
+1. Open the [Google Developers Console](https://console.developers.google.com/) (Make sure your project is selected in the dropdown at the top), Click on the **Library** menu on the left, search for the **Google Play Integrity API,** and enable it.
+2. Now, download and test the app using the instructions [here](#).
 
 <div style={{
     position: 'relative',
@@ -390,11 +390,11 @@ To add the fictitious number:
 <p>
 1. First, ensure you have clicked the "Save" button while [Enabling phone authentication in Firebase](#).
     
-![Enabling phone authentication in Firebase](../../imgs/adding-authorized-domain.png)
+![Enabling phone authentication in Firebase](../imgs/adding-authorized-domain.png)
 
-2. If this is already enabled, head over to **Settings > SMS region policy >** select **Allow > Select regions** you want to support and click **Save**.
+1. If this is already enabled, head over to **Settings > SMS region policy >** select **Allow > Select regions** you want to support and click **Save**.
     
-![SMS region](../../imgs/sms-region.webp)
+![SMS region](../imgs/sms-region.webp)
 </p>
 </details>
 

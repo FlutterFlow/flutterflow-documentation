@@ -29,16 +29,18 @@ Here's how the `Scaffold` contributes to page design in FlutterFlow:
 In FlutterFlow, you won't find a section explicitly labeled as "Body". For example, in the 
 `ProfileSettingsPage`, the `Column` serves as the root of the widget tree for the body, with the rest of the child widgets assembled underneath.
 
-![scaffold-elements.png](..%2Fimgs%2Fscaffold-elements.png)
+![scaffold-elements.png](../imgs/scaffold-elements.png)
 :::
 
 In FlutterFlow, you will find these Page Widgets under **Page Elements** in Widget Palette.
 
+<!--
 :::tip[Generated Code]
 
 [See how](../generated-code.md) FlutterFlow converts your page into Flutter
 code
 :::
+-->
 
 ## Creating a Page
 

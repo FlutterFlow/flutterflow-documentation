@@ -95,7 +95,7 @@ the right.
 If you retain the Text widget, the text will update to the name of the selected location when a user makes a selection. Both the icon and text are optional; adjust them according to your design requirements.
 
 <figure>
-    ![place-picker-properties.png](imgs%2Fplace-picker-properties.png)
+    ![place-picker-properties.png](imgs/place-picker-properties.png)
   <figcaption class="centered-caption">The widget properties of Place Picker widget</figcaption>
 </figure>
 

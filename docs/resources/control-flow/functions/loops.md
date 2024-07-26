@@ -1,5 +1,5 @@
 ---
-slug: /resources/actions/loops
+slug: /resources/functions/loops
 title: Loops
 description: Learn how to implement loops in your FlutterFlow app to iterate over data and perform repeated actions.
 tags: [Loops, Backend Query, Backend Logic, Control Flow, FlutterFlow]
@@ -14,7 +14,7 @@ Every loop requires a condition, and the actions within the loop will continue t
 long as the condition holds true. When the condition becomes false, the loop terminates, and the next actions in the workflow will trigger.
 :::
 
-![loop-block.png](img%2Floop-block.png)
+![loop-block.png](img/loop-block.png)
 ## Loop Breaks 
 
 :::danger[AVOID an INFINITE LOOP]
@@ -34,4 +34,4 @@ actions.
 - **Implementation:** Typically implemented with the "Add Break" node in Action Flow Editor.
 - **Usage:** Commonly used to avoid infinite loops or to stop looping once a desired result is achieved.
 
-![loop-block-return.png](img%2Floop-block-return.png)
+![loop-block-return.png](img/loop-block-return.png)

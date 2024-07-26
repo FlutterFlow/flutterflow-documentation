@@ -43,26 +43,27 @@ You can use the **API Call Query** to trigger an API call automatically as soon 
 
 :::info[Prerequisites]
 
-Before you add this query, ensure you [create an API call](../api/api-calls-101.md) in your project
+Before you add this query, ensure you [create an API call](../api/rest-api) in your project
 :::
 
 ## Adding API Call query
 
 Adding API call query comprises the following steps:
 
-2. [Querying API call](/data-and-backend/backend-query/api-call-query#quering-api-call)
-5. [Showing query data in UI element](/data-and-backend/backend-query/api-call-query#showing-query-data-in-ui-element)
+1. [Querying API call](#1-querying-api-call)
+2. [Showing query data in UI element](#2-showing-query-data-in-ui-element)
 
-### 1. Quering API call
+### 1. Querying API call
 
 Go to your project page and follow the steps below to define an **API Call** backend query:
 
 1. Select the **widget** (or page) on which to apply the query.
-5. Select **Backend Query** from the [Properties panel](/getting-started/ui-builder/properties-panel) (the right menu).
-8. Select the **Query Type** as ***API Call***.
-11. Choose the API **Group or Call Name** from the dropdown. It would display all the API Calls created in your project.
-14. If your API call requires variables (e.g., auth token, query parameters, user id, etc.), pass their value by clicking on the **+ Set Additional Variable** button.
-17. Click **Confirm**.
+
+2. Select **Backend Query** from the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) (the right menu).
+3. Select the **Query Type** as ***API Call***.
+4. Choose the API **Group or Call Name** from the dropdown. It would display all the API Calls created in your project.
+5. If your API call requires variables (e.g., auth token, query parameters, user id, etc.), pass their value by clicking on the **+ Set Additional Variable** button.
+6. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/a97de9dc59654495b5fa17d388360379?sid=5bf7009c-cf76-4905-a02e-aa21928882e4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -73,13 +74,15 @@ com/embed/a97de9dc59654495b5fa17d388360379?sid=5bf7009c-cf76-4905-a02e-aa2192888
 
 Once you have the API Call query defined, you can use the data retrieved from the query to display on widgets present inside. Follow the steps below:
 
-2. Select the **widget** (e.g., `Text`) on which you want to display the data.
-5. From the [Properties Panel](/getting-started/ui-builder/properties-panel), select **Set from Variable**.
-8. Select the **Source** as the **YOUR\_API\_CALL\_NAME Response**.
-11. Set the **API response Options** to **JSON Body**.
-14. Set the **Available Options** to **JSON Path**.
-17. Set the **JSON Path Name** to either the custom JSON path or use the already created JSON path. See how to [create a JSON path](/data-and-backend/api-calls/api-calls-101#adding-json-path).
-20. Click **Confirm**.
+1. Select the **widget** (e.g., `Text`) on which you want to display the data.
+
+2. From the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel), select **Set from Variable**.
+3. Select the **Source** as the **YOUR_API_CALL_NAME Response**.
+4. Set the **API response Options** to **JSON Body**.
+5. Set the **Available Options** to **JSON Path**.
+6. Set the **JSON Path Name** to either the custom JSON path or use the already created JSON 
+   path. See how to [**create a JSON path**](../../backend-logic/api/rest-api.md#adding-json-path).
+7. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/f706a263428b45358c1f6a2c7e3df05d?sid=b35ffd12-e894-4cdd-8cb6-0a11888116c2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

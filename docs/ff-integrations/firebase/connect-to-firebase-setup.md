@@ -44,7 +44,7 @@ If you plan to use Firebase storage in your app, click on the Enable Storage on 
 The configuration files are necessary when connecting to Firebase. It contains various settings and keys that enable your project to communicate with Firebase services. To generate those files, click on Auto Generate Config Files and then click Generate Files.
 
 
-## Connect an existing Firebase project manually 
+## Connect an existing Firebase project manually
 
 If you already have a Firebase project and want to connect it to your current FlutterFlow project, go to **Settings & Integrations > Project Setup > Firebase** and click on the Firebase Setup Wizard. A pop-up dialog will appear. Follow these steps:
 
@@ -135,7 +135,9 @@ To configure Firestore Database:
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
 :::info
-We recommend updating your Firebase security rules before deploying your app. Please see [this link](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules) for additional information on Firestore security rules.
+We recommend updating your Firebase security rules before deploying your app. Please see [this 
+link](../database/cloud-firestore/firestore-rules.md) for additional information on 
+Firestore security rules.
 :::
 
 3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.

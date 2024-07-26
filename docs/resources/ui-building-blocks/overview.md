@@ -67,7 +67,7 @@ parent-child relationships that define the layout and functionality of your UI, 
 atoms and molecules interact in atomic design.
 
 :::info[WIDGET TREE BREAKDOWN]
-![tree.png](imgs%2Ftree.png)
+![tree.png](imgs/tree.png)
 
 The above diagram illustrates a widget tree for an `ExamplePage`. The page is
 structured using a hierarchy of widgets that define its layout and functionality.
@@ -216,7 +216,7 @@ an `instance`. For example, in the `ProductListPage`, we have created an **insta
 `topSellingProductCard` for use in the Top Selling section. Similarly, in the
 `CategoryProductListPage`, we've created an **instance** called `categoryProductCard`.
 
-![Class-Instance.png](imgs%2FClass-Instance.png)
+![Class-Instance.png](imgs/Class-Instance.png)
 
 You can customize each **instance** of your component to perform different
 actions or to fit different parts of your app, but they all start from the

@@ -1,7 +1,7 @@
 ---
 slug: /integrations/authentication/firebase/email-login
 title: Email Login
-description: Learn how to add email login in your FlutterFlow app.
+description: Learn how to add Email Login in your FlutterFlow app.
 tags: [FlutterFlow, Email Login, Authentication, Firebase]
 sidebar_position: 3
 keywords: [FlutterFlow, Email Login, Authentication, Firebase]
@@ -13,8 +13,8 @@ keywords: [FlutterFlow, Email Login, Authentication, Firebase]
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#)
-- Complete [**Initial Setup**](initial-setup.md)
+- Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
+- Complete [**Initial Setup**](auth-initial-setup)
 :::
 
 ## Enable Email Login Provider in Firebase
@@ -74,14 +74,14 @@ To enable this in FlutterFlow, follow these steps:
       already
       created in the 'users' collection.
 
-![create-account-action.png](..%2F..%2Fimgs%2Fcreate-account-action.png)
+![create-account-action.png](../imgs/create-account-action.png)
 
 ## Send Email Verification Link [Action]
 
 :::info
 To understand why email verification is required when authenticating with an email and password,
 refer
-to [**Authentication Methods**](../../authentication-methods)
+to [**Authentication Methods**](../authentication-methods)
 :::
 1. Add a new action immediately after the **Create Account** action.
 
@@ -146,10 +146,10 @@ To enable this in FlutterFlow, follow these steps:
    found
    under Widget State > Field Name.
 
-![login-action.png](..%2F..%2Fimgs%2Flogin-action.png)
+![login-action.png](../imgs/login-action.png)
 
 :::info
-To let users log out of your app, you can use the [**Logout**](../../logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](../logout-action.md) action.
 :::
 
 ### Verify user created in Firebase Dashboard

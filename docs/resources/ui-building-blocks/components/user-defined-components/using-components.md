@@ -28,8 +28,7 @@ defined by the parent, such as navigation, data updates, or displaying dialogs.
   simply by passing different callbacks.
   :::
 
-TODO Add diagram
-
+<!---TODO Add Diagram --->
 ### Execute Callback [Action]
 
 Using this action, you can execute any action passed as a parameter to the component. This is
@@ -174,6 +173,7 @@ can adapt to different data and behavior.
     </iframe>
 </div>
 
-## Add Components to Components
+## Recursive Components
 
-//TODO Will add in a new PR when new feature gets deployed. 
+<!--- TODO Will add in a new PR when new feature gets deployed. --->
+

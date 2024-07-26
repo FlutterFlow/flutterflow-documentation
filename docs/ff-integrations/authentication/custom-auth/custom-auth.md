@@ -66,7 +66,7 @@ To enable custom authentication in FlutterFlow:
 2. Turn on the **Enable Authentication** toggle and set **Authentication Type** to **Custom**.
 3. To ensure that your users are directed to the appropriate pages based on their login status, you must set the initial pages.
 4. By default, the **Persist Auth Sessions** option is enabled, which means users remain logged in until they actively log out. With this option enabled, your app will automatically open to the homepage whenever it's restarted.
-5. After successful authentication, your backend typically sends login details like an authentication token, a refresh token, and user details. To keep the user logged in within your app, you must store this data. You can achieve this by enabling **Associate User Data Type** and setting **User Data Type** to the [custom Data Type](../../../../resources/data-representation/custom-data-types). **Note** that the structure of your custom Data Type should closely resemble the structure of a successful authentication's JSON response. At the very least, it should include critical fields like the authentication token.
+5. After successful authentication, your backend typically sends login details like an authentication token, a refresh token, and user details. To keep the user logged in within your app, you must store this data. You can achieve this by enabling **Associate User Data Type** and setting **User Data Type** to the [Custom Data Type](../../../resources/data-representation/custom-data-types.md). **Note** that the structure of your Custom Data Type should closely resemble the structure of a successful authentication's JSON response. At the very least, it should include critical fields like the authentication token.
 
 <div style={{
     position: 'relative',
@@ -100,7 +100,7 @@ Let's add a page that allows users to create accounts and log in. To speed up, y
 
 Also, see how to [build a page layout](#) in case you want to build a page from scratch.
 
-![auth-2-template.avif](../../imgs/auth-2-template.avif)
+![auth-2-template.avif](../imgs/auth-2-template.avif)
 
 ### 3. Authenticate users
 
@@ -139,7 +139,7 @@ After successful authentication, you can save the auth related data using the 'L
 1. Inside the **TRUE** branch of the [previous API call](#3-authenticate-users), add the **Log in** (under *Backend/Database > Custom Authentication*) action.
 
 2. Under the **User Auth Properties**, you can set values for **Authentication Token**, **Refresh Token**, **Token Expiry Time**, and **User UID**. **Note that for the 'Persist Auth Sessions' option to work, you must set the Authentication Token**.
-3. **Set User Data** to store the result of the previous API call (i.e., auth details) in a custom Data Type. See how to get the [JSON into Data Type](#).
+3. **Set User Data** to store the result of the previous API call (i.e., auth details) in a Custom Data Type. See how to get the [JSON into Data Type](#).
 
 <div style={{
     position: 'relative',
@@ -208,10 +208,10 @@ Here's exactly how you do it:
 2. On getting the new access token, add a new action named **Update Authenticated User**.
 3. Under the **User Auth Properties**, you can update a value for the **Authentication Token** with a new access token.
 
-![update-auth-data.avif](../../imgs/update-auth-data.avif)
+![update-auth-data.avif](../imgs/update-auth-data.avif)
 
 ### 7. Logout
 
-You can logout a user by [this](../../logout-action.md) action.
+You can logout a user by [this](../logout-action.md) action.
 
-![logout.avif](../../imgs/logout.avif)
+![logout.avif](../imgs/logout.avif)

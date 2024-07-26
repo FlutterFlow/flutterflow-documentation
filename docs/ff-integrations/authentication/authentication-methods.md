@@ -9,14 +9,14 @@ slug: /integrations/authentication-methods
 
 Authentication enables users to create accounts and log into your app, establishing a secure,
 verified connection. In the dynamic world of applications, users can authenticate using various
-methods, including **email login**, **OAuth**, and **phone authentication**, among others.
+methods, including **Email Login**, **OAuth**, and **phone authentication**, among others.
 
 While each method has its unique features and advantages, they all share a common goal: enhancing
 security and verifying the identity of users to provide a safe and personalized user experience.
 
 ## Email Login Authentication
 
-The email login method involves users registering with an email address and
+The Email Login method involves users registering with an email address and
 password.
 
 Security in this approach is enhanced through **Email Verification**,
@@ -24,7 +24,7 @@ where a link or code is sent to the user's email to confirm ownership. This step
 prevents unauthorized account creation and ensures that the user can recover
 their account and receive important communications.
 
-![email-login.png](imgs%2Femail-login.png)
+![email-login.png](imgs/email-login.png)
 
 ## OAuth (Open Authorization)
 
@@ -50,7 +50,7 @@ method leverages the security of mobile networks and the uniqueness of phone
 numbers to ensure that the person attempting access is the legitimate owner of
 the account.
 
-![phone-login.png](imgs%2Fphone-login.png)
+![phone-login.png](imgs/phone-login.png)
 
 ## Anonymous Authentication
 
@@ -71,4 +71,4 @@ Each authentication method aims to balance user convenience with high security,
 ensuring that personal and sensitive data remains protected while providing a
 seamless user experience. 
 
-![anon-user.png](imgs%2Fanon-user.png)
+![anon-user.png](imgs/anon-user.png)

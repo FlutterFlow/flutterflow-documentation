@@ -161,7 +161,7 @@ variable `userRating`.
 
 FlutterFlow also allows you to view your custom widget once it is successfully compiled. 
 
-![preview-widget.png](imgs%2Fpreview-widget.png)
+![preview-widget.png](imgs/preview-widget.png)
 
 :::tip[LOOKING for other CUSTOM action properties?]
 To learn more about Custom Widget settings, such as the

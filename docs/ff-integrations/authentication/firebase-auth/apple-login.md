@@ -12,7 +12,7 @@ keywords: [FlutterFlow, Apple Login, Authentication, Firebase]
 
 Apple Sign-In allows users to authenticate using their Apple Accounts.
 
-:::warning
+:::warning[Support]
 
 Apple sign-in functionality is only supported for iOS.
 
@@ -49,11 +49,13 @@ Apple sign-in functionality is only supported for iOS.
 
 Before getting started with this section:
 
-1. Complete [**Firebase Setup**](#).
-2. Complete [**Initial setup**](initial-setup.md) required for authentication.
-3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A%2F%2Fdeveloper.apple.com%2Faccount%2F).
-4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [**this link**](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
-5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or emulator.
+1. Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
+2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
+3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
+4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). 
+   Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.
+5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or 
+   emulator. Try with Local Run!
 :::
 
 ## Adding Apple sign-in
@@ -73,7 +75,7 @@ Adding Apple sign-in comprises of the following steps:
 
 "Apple sign-in" is a privacy-focused authentication system. One of its notable features is the ability to hide a user's real email address when signing up for apps and services. When users choose to hide their email, you get one random email address that forwards to the user's actual Apple ID email. This helps users keep their real email addresses private.
 
-![User opting to hide the email address](../../imgs/opt-to-hide-email.png)
+![User opting to hide the email address](../imgs/opt-to-hide-email.png)
 
 So, in order to contact such users, you must register email sources that your organization will use for communication.
 
@@ -226,7 +228,7 @@ When you click the Apple sign-in button, it will trigger the 'Log In' action, pr
 To add login action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
-2. Select **Actions** from the [properties panel](#) (the right menu) and select **Add Action**.
+2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu) and select **Add Action**.
 3. Search and select the **Log in** (under *Backend/Database > Firebase Authentication*) action.
 4. Set **Auth Provider** to **Apple**.
 5. Tick the **Create User Document** and set the **Collection** to **users**. After successful login, this will insert the user's email address into the 'users' collection. If a user already exists, it won't add details again.
@@ -259,7 +261,7 @@ To add login action:
 
 ### 6. Adding logout action
 
-To let users log out of your app, you can use the [Logout](../../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](../logout-action.md) action.
 
 ### 7. Preparing to test the app
 

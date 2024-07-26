@@ -26,29 +26,29 @@ Following are the types of Firestore database action:
 
 1. [**Create Document**](#create-document-action)**:** Creates a new record inside the specified 
    Firestore Collection.
-5. [**Read Document**](#read-document-action): Fetches document data using a reference.
-8. [**Update Document**](#update-document-action)**:** Updates the specified field value of the 
+2. [**Read Document**](#read-document-action): Fetches document data using a reference.
+3. [**Update Document**](#update-document-action)**:** Updates the specified field value of the 
    existing document.
-11. [**Delete Document**](#delete-document-action)**:** Deletes records inside the specified 
-    Firestore Collection.
-14. [**Query Collection**](#query-collection-action): Retrieves record(s) from the Firstore 
-    collection.
+4. [**Delete Document**](#delete-document-action)**:** Deletes records inside the specified 
+   Firestore Collection.
+5. [**Query Collection**](#query-collection-action): Retrieves record(s) from the Firstore 
+   collection.
 
 ### Create Document [Action]
 
 Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
 
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Firestore** > **Create Document** action.
-14. Set the **Collection** to your collection name.
-17. Under the **Set Fields** section, click on the **+ Add Field** button.
-20. Open the *Field* to pass its value from a widget:
-	- Set the **Value Source** to **From Variable**.
-	- Click on **UNSET** and select **Widget State > Name** of the TextField.
-23. Similarly, add the field for the other UI elements.
-26. By default, documents are added with an auto-generated ID. However, if you prefer to use your own ID for the document, you can enable the **Custom ID** toggle.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Firestore** > **Create Document** action.
+5. Set the **Collection** to your collection name.
+6. Under the **Set Fields** section, click on the **+ Add Field** button.
+7. Open the *Field* to pass its value from a widget:
+   - Set the **Value Source** to **From Variable**.
+   - Click on **UNSET** and select **Widget State > Name** of the TextField.
+8. Similarly, add the field for the other UI elements.
+9. By default, documents are added with an auto-generated ID. However, if you prefer to use your own ID for the document, you can enable the **Custom ID** toggle.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/cb4db8e0ec364d63ade1c8ddb8f40e49?sid=c4b45e2d-4d89-4544-a7f9-86c6bd11566a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -80,11 +80,11 @@ Here's how collections are setup:
 Follow the steps below to define this action to any widget:
 
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Firestore** > **Read Document** action.
-14. Now, **Select Reference to Read** data from.
-17. Provide the **Action Output Variable Name**. This will be used to store the document data.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Firestore** > **Read Document** action.
+5. Now, **Select Reference to Read** data from.
+6. Provide the **Action Output Variable Name**. This will be used to store the document data.
 
 <p></p>
 
@@ -94,7 +94,7 @@ com/embed/7da68f8517f147b8b51a5059655f9729?sid=780aa288-9e06-4f79-92cc-2d66782f8
 <p></p>
 
 7. Now, you can use the *Action Output Variable Name* provided in the previous step to fetch the 
-details. For example, to display data on Text widget, select the **Text widget > Properties Panel > Text > Set Variable menu > ***[action\_output\_variable\_name]*** > select the field** you want to display.
+details. For example, to display data on Text widget, select the **Text widget > Properties Panel > Text > Set Variable menu > ***[action_output_variable_name]*** > select the field** you want to display.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/94de6ff1dfb44fafa573f0ef519199c9?sid=5d8cb7aa-fe85-462b-981f-5c673960ed4f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -106,16 +106,16 @@ com/embed/94de6ff1dfb44fafa573f0ef519199c9?sid=5d8cb7aa-fe85-462b-981f-5c673960e
 Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
 
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Firestore** > **Update Document** action.
-14. In order to update a specific document within a Firebase collection, you need to specify the reference to that document. The reference acts as a pointer to the exact document you want to update.
-17. Under the **Set Fields** section, click on the **+ Add Field** button.
-20. Open the *Field* to pass its value from a widget:
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Firestore** > **Update Document** action.
+5. In order to update a specific document within a Firebase collection, you need to specify the reference to that document. The reference acts as a pointer to the exact document you want to update.
+6. Under the **Set Fields** section, click on the **+ Add Field** button.
+7. Open the *Field* to pass its value from a widget:
 
-	1. Set the **Value Source** to **From Variable**.
-	5. Click on **UNSET** and select **Widget State > Name** of the TextField.
-23. Similarly, add the field for the other UI elements.
+   1. Set the **Value Source** to **From Variable**.
+   2. Click on **UNSET** and select **Widget State > Name** of the TextField.
+8. Similarly, add the field for the other UI elements.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/1f4675229ddb4a3188891f9859e297a0?sid=d3a0d32a-c669-44ba-b916-bc456330b97c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -127,10 +127,10 @@ com/embed/1f4675229ddb4a3188891f9859e297a0?sid=d3a0d32a-c669-44ba-b916-bc456330b
 Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
 
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Firestore** > **Delete Document** action.
-14. In order to delete a specific document within a Firebase collection, you need to specify the reference to that document. The reference acts as a pointer to the exact document you want to delete.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Firestore** > **Delete Document** action.
+5. In order to delete a specific document within a Firebase collection, you need to specify the reference to that document. The reference acts as a pointer to the exact document you want to delete.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/db7b60cf67cb49148ec10284c11215d5?sid=7acf6f3f-e7c4-48ae-acd7-0b07eaaa8aac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -147,29 +147,29 @@ To manually query a collection, follow the steps below to define this action to 
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
 
-5. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-8. Click on **+ Add Action**.
-11. On the right side, search and select the **Firestore** > **Query Collection** action.
-14. Choose the **Collection** you want to query.
-17. Choose the **Query Type** among the following:
-    - **List of Documents:** Use this option when you need to query an entire list of documents from 
-    a collection. This is useful for retrieving multiple documents that can be ordered or filtered by specific criteria, such as a keyword.
-    - **Single Document:** Select this when you want to fetch a specific single document from a 
-      collection, typically identified by its unique ID.
-    - **Count:** Choose this option to determine the number of documents that meet certain criteria 
-      without retrieving the documents themselves. This is useful for getting quick insights or summaries, like the total number of entries that match a filter.
-20. You can also [Filter](#filtering-a-collection-query) and [Order](#ordering-a-collection-query) the query result.
-23. Provide the **Action Output Variable Name**. This will be used to store the query result.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on **+ Add Action**.
+4. On the right side, search and select the **Firestore** > **Query Collection** action.
+5. Choose the **Collection** you want to query.
+6. Choose the **Query Type** among the following:
+   - **List of Documents:** Use this option when you need to query an entire list of documents from 
+   a collection. This is useful for retrieving multiple documents that can be ordered or filtered by specific criteria, such as a keyword.
+   - **Single Document:** Select this when you want to fetch a specific single document from a 
+     collection, typically identified by its unique ID.
+   - **Count:** Choose this option to determine the number of documents that meet certain criteria 
+     without retrieving the documents themselves. This is useful for getting quick insights or summaries, like the total number of entries that match a filter.
+7. You can also [Filter](#filtering-a-collection-query) and [Order](#ordering-a-collection-query) the query result.
+8. Provide the **Action Output Variable Name**. This will be used to store the query result.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/f416df1ad705467780a389c6381eae77?sid=776597d6-4574-40f1-8339-d5aedb0acf92" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 9. Now, you can use the *Action Output Variable Name* provided in the previous step to generate 
-children from a variable on [ListView](/widgets-and-components/widgets/layout-elements/listview).
-5. Finally, you can display data in a [Text](/widgets-and-components/widgets/base-elements/text) 
+children from a variable on **ListView**.
+10. Finally, you can display data in a **Text** 
    widget. To do so, select the **Text widget > Properties Panel > Text > Set from Variable menu** 
-   **> [children\_from\_variable\_name] item > select the field** you want to display.
+   **> [children_from_variable_name] item > select the field** you want to display.
 
 <p></p>
 <div class="video-container"><iframe src="https://www.loom.
@@ -261,18 +261,22 @@ com/embed/238400b5445b444db712f492584b0d6e?sid=7b496882-0280-4920-924c-640fddeff
 
 To do so:
 
-1. Ensure you have [**Query Collection**]
-(/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection) or [**Document from Reference**](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-document) added on a widget with **Single Time Query** disabled.
-5. Now select the widget, head over to **Actions**, and click **+ Add Action**.
-8. Select the **On Data Change** tab. That means actions added under this will be called whenever the data changes.
-11. Now, you can [add any action](/actions/actions#adding-action) here.
+1. Ensure you have [**Query Collection**](#) or [**Document from Reference**](#) added on a widget with **Single Time Query** disabled.
+2. Now select the widget, head over to **Actions**, and click **+ Add Action**.
+3. Select the **On Data Change** tab. That means actions added under this will be called whenever the data changes.
+4. Now, you can 
+[add any Action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) 
+   here.
 
 :::info
 * Actions will be triggered whenever the data is added, updated, or deleted.
 * If you are adding this on ListView, ensure you disable the infinite scroll.
 :::
 
-Here is an example showing the [snackbar](/actions/actions/alerts-notifications/show-snack-bar) message when the data changes in a collection.
+Here is an example showing the 
+[**Snackbar**](../../../resources/ui-building-blocks/pages/page-elements.md#show-snackbar-action)
+message when the data 
+changes in a collection.
 
 <figure>
     ![img_27.png](img_27.png)

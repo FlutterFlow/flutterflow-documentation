@@ -25,12 +25,12 @@ To deploy the storage rules:
 1. First, make sure Firebase Storage is enabled or configured in your project by visiting the 
 [Firebase console](https://console.firebase.google.com/u/0/) and viewing the **Storage** tab.
 
-5. Return to FlutterFlow, navigate to **Settings & Integrations > Project Setup > Firebase**.
-8. Scroll down to the **Firebase Storage** section.
-11. To set the storage rules outside of the FlutterFlow (i.e., from the Firebase Console), enable the **Manage Outside of FlutterFlow**.
-14. To only allow accessing the images, videos, files, etc., to the users who uploaded it, enable **Make Users Uploads Private**.
-17. Click the **Deploy** button.
-20. A pop-up will open. Click **Yes** to continue and click **Deploy Now**.
+2. Return to FlutterFlow, navigate to **Settings & Integrations > Project Setup > Firebase**.
+3. Scroll down to the **Firebase Storage** section.
+4. To set the storage rules outside of the FlutterFlow (i.e., from the Firebase Console), enable the **Manage Outside of FlutterFlow**.
+5. To only allow accessing the images, videos, files, etc., to the users who uploaded it, enable **Make Users Uploads Private**.
+6. Click the **Deploy** button.
+7. A pop-up will open. Click **Yes** to continue and click **Deploy Now**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b8c1267bb2d048308c506ee6721001da?sid=8c88648a-5980-4961-907c-2f2e0c0c4ab9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

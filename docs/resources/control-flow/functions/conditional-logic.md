@@ -15,7 +15,7 @@ Conditional logic is a fundamental concept in programming and software developme
 - **True Path:** The set of actions to execute if the condition is true.
 - **False Path:** The set of actions to execute if the condition is false.
 
-![true-false.png](img%2Ftrue-false.png)
+![true-false.png](img/true-false.png)
 ## Conditional Flows
 Conditional flows enhance basic true-false logic by handling multiple conditions and executing specific actions based on those conditions. This is achieved through more complex flows, such as single conditions, multiple conditions (using AND/OR), and conditional values with If/Then/Else logic.
 
@@ -33,16 +33,16 @@ This flow allows you to define a condition based on the comparison of two values
 - Is Set
 - Is Not Set
 
-![single-condition.png](img%2Fsingle-condition.png)
+![single-condition.png](img/single-condition.png)
 ### Multiple Conditions (AND/OR)
 This flow lets you combine multiple single conditions using logical AND or OR operators. It is useful for more complex decision-making processes.
 
-![multiple-condition.png](img%2Fmultiple-condition.png)
+![multiple-condition.png](img/multiple-condition.png)
 
 ### Conditional Value (If/Then/Else)
 Conditional Value allows you to set a dynamic variable based on different conditions. For each condition, you can specify a value that will be assigned if the condition is true. A default value can be provided if none of the conditions are met.
 
-Arcade
+<!--- TODO Arcade --->
 
 ## Setting Widget Properties with Conditional Logic
 

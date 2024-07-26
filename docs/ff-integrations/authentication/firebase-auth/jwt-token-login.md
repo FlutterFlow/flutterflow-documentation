@@ -11,7 +11,7 @@ keywords: [FlutterFlow, JWT, Authentication, Firebase]
 
 [JWT](https://jwt.io/introduction) token sign-in allows you to log in and use the Firebase services such as Firebase Database and push notifications using the account created on your own server/backend.
 
-![JWT-login-flow.avif](../../imgs/JWT-login-flow.avif)
+![JWT-login-flow.avif](../imgs/JWT-login-flow.avif)
 
 In JWT token authentication, you send login credentials, like email and password, to your server through an API endpoint. The server then creates a user account, generates a custom JWT token, and returns it to your app. This JWT token allows you to log in to Firebase and access its services.
 
@@ -23,14 +23,14 @@ You can learn more about Firebase and JWT tokens [**here**](https://firebase.goo
 
 Let's build an example that uses a JWT token to log into the app. Here's how it looks when completed:
 
-![JET-token-authentication.gif](../../imgs/JET-token-authentication.gif)
+![JET-token-authentication.gif](../imgs/JET-token-authentication.gif)
 
 :::info[Prerequisites]
 
 Before getting started with this section:
 
-- Complete [**Firebase Setup**](#).
-- Complete [**Initial setup**](initial-setup.md) required for authentication.
+- Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
+- Complete [**Initial setup**](auth-initial-setup) required for authentication.
 :::
 
 
@@ -94,7 +94,7 @@ If you want to try the JWT token authentication without creating an API endpoint
 
 Let's [add a sign-in page from the templates](#) and choose the **Authenticate Solo Alt** from under the **Auth** tab. Tip: After adding, remove the other social sign-in buttons.
 
-![login-page.avif](../../imgs/login-page.avif)
+![login-page.avif](../imgs/login-page.avif)
 
 ### 3. Add login action
 
@@ -104,7 +104,7 @@ Here are the step by step instructions:
 
 1. Select the **Widget** (e.g., Sign In) on which you want to define the action.
 
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. [Add the login api](#) and provide the **Action Output Variable Name**. ****If the call succeeds, this will be used to retrieve the token.
 4. Inside the **TRUE** section, click on the **+** button and select **Add Action**.
 5. On the right side, search and select the **Log in** (under Firebase Authentication) action.
@@ -144,7 +144,7 @@ Here are the step by step instructions:
 
 ### 4. Adding logout action
 
-To let users log out of your app, you can use the [Logout](../../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](../logout-action.md) action.
 
 ### 5. Verify user creation
 
@@ -185,10 +185,10 @@ admin.auth().createCustomToken(uid)
   });
 ```
 
-6. To run this `index.js` file inside the terminal (at the same location where this file is located), hit this command: `node index.js`. This will print the JWT token in the console.
+1. To run this `index.js` file inside the terminal (at the same location where this file is located), hit this command: `node index.js`. This will print the JWT token in the console.
 
-7. Copy this JWT token, return to FlutterFlow, and save it in the **app state variable** (String Datatype).
-8. Open the JWT token action, click on **UNSET** (or a variable if you have already set it), and select the **App State -> variableName** (that holds the JWT token).
+2. Copy this JWT token, return to FlutterFlow, and save it in the **app state variable** (String Datatype).
+3. Open the JWT token action, click on **UNSET** (or a variable if you have already set it), and select the **App State -> variableName** (that holds the JWT token).
 
 <div style={{
     position: 'relative',
@@ -222,7 +222,7 @@ Once you log in via the JWT token, the *Authenticated User* object is available.
 
 Here's an example of how you can use the *Authenticated User* object to filter the to-do items based on the user who created it.
 
-![access-firebase-database.avif](../../imgs/access-firebase-database.avif)
+![access-firebase-database.avif](../imgs/access-firebase-database.avif)
 
 ## Sending push notifications
 
@@ -230,6 +230,6 @@ Once you log in via the JWT token, the *Authenticated User* object is available.
 
 When such user reference is stored inside the Firestore documents, you can use them ****inside the **Single** or **Multiple Recipient** while defining the **Audience** inside the [Trigger Push Notification](#) action, as shown in the image below:
 
-![send-push-notification-to-users-created-via-JWT-token.png](../../imgs/send-push-notification-to-users-created-via-JWT-token.png)
+![send-push-notification-to-users-created-via-JWT-token.png](../imgs/send-push-notification-to-users-created-via-JWT-token.png)
 
 To learn more about how to use user references for sending push notifications, please check the [push notification](#) section.

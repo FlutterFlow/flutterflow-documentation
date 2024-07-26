@@ -1,11 +1,11 @@
 ---
-slug: /resources/actions/action-flow-editor
-title: Action Flow Editor
+slug: /resources/functions/action-flow-editor
+title: Actions
 description: Learn how to use the Action Flow Editor in your FlutterFlow app to manage and streamline your backend logic.
-tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, Actions]
 toc_max_heading_level: 5
-sidebar_position: 3
-keywords: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+sidebar_position: 2
+keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # Actions
@@ -101,7 +101,7 @@ following tasks to proceed without waiting for them to finish.
 
 ### Creating Action
 
-If there is no initial action or if there is an action and you want to add another one and press the
+If there is no initial action or if there is an action,and you want to add another one and press the
 plus icon, the following options will be available:
 
 1. **Add Action**: Adds a single action node to the flow. You can add multiple synchronous actions
@@ -188,7 +188,7 @@ In the Action Flow Editor, the icon in the upper left corner indicates the widge
 
 If you rename your widget, the new name will automatically be updated and associated with this action flow. This makes it easier to keep track of the logic associated with each widget, ensuring clarity and better organization of your action flows.
 
-![img.png](img%2Fimg.png)
+![img.png](img/img.png)
 
 ### Issues
 
@@ -231,8 +231,11 @@ reusability and modularity.
 
 ![action-block.avif](../../../../static/img/action-block.avif)
 
+:::tip[Deep Dive on Action Blocks]
+Learn more about different types of **[Action Blocks](action-blocks.md)** and their scopes.
+:::
 
-### Example
+## Adding an Action [Example]
 
 Here's a quick demo of how you can add an action or multiple sequential actions to a widget:
 
