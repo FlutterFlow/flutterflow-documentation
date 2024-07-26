@@ -134,7 +134,7 @@ To set the label, move to the **Properties Panel > Label Properties >** enter th
 
 ![adding-label](../../imgs/adding-label.avif)
 
-When the TextField is set to [Multiline](#making-textfield-multiline-auto-expand) the label appears in the center. To get it closer to the hint text, switch on the **Align Label With Hint** property.
+When the TextField is set to [Multiline](#adding-multilineauto-expand-support) the label appears in the center. To get it closer to the hint text, switch on the **Align Label With Hint** property.
 
 <div style={{
     position: 'relative',
@@ -307,7 +307,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 
 ### Changing error message styling
 
-You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](#).
+You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text#common-text-properties).
 
 ![changing-error-message-styling](../../imgs/changing-error-message-styling.avif)
 
@@ -317,7 +317,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](#).
+You can also [customize the icon's size and color](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/icons#common-icon-properties).
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
@@ -651,10 +651,6 @@ You might want to restrict the type of characters that can be entered into a Tex
 
 To filter the user input, select the TextField widget, move to the **Properties Panel** **> Additional Properties >** set the **Filter** dropdown to the one you need.
 
-:::info
-To check user input for certain criteria or requirements (e.g., email), see *step 3* on how to [add validation](#).
-:::
-
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -836,8 +832,8 @@ Let's see an example of controlling the visibility of a Text widget based on the
 
 To do so:
 
-1. On a Text widget, add a [Conditional Visibility](#) based on the TextField's Focus state. You can access via **Set from Variable** menu **> Widget Focus State > [TextField name]**.
-2. Now, on a TextField widget, under the [On Focus Change](#trigger-action--listen-callback) callback, simply add an action to refresh the page by adding the [update app state](#) variable.
+1. On a Text widget, add a [Conditional Visibility](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#conditional) based on the TextField's Focus state. You can access via **Set from Variable** menu **> Widget Focus State > [TextField name]**.
+2. Now, on a TextField widget, under the [On Focus Change](#trigger-action--listen-callback) callback, simply add an action to refresh the page by adding the update app state variable.
 
 <div style={{
     position: 'relative',

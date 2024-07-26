@@ -115,7 +115,7 @@ You can customize the appearance and behavior of the widget using the various pr
 
 ### Setting platform type
 
-You can set the platform type to *Adaptive or Android* for **this widget. Selecting the Adaptive type will display the widget in its native style. That means the widget will show iOS-style rendering when running on iOS devices and Android-style rendering when running on Android devices.
+You can set the platform type to *Adaptive or Android* for this widget. Selecting the Adaptive type will display the widget in its native style. That means the widget will show iOS-style rendering when running on iOS devices and Android-style rendering when running on Android devices.
 
 To set the platform type:
 
@@ -233,8 +233,8 @@ To change the slider colors:
 
 1. Select the **Slider** widget from the widget tree or the canvas area.
 2. Move to the properties panel and scroll down to the **Slider Properties** section.
-3. To change the active color, find the **Active Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
-4. To change the inactive color, find the **Inactive Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
+3. To change the active color, find the **Active Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
+4. To change the inactive color, find the **Inactive Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 
 <div style={{
     position: 'relative',
