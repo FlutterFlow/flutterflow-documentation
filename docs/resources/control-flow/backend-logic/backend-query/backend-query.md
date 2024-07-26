@@ -20,8 +20,7 @@ We offer you the following types of Backend Queries that you can specify on any 
 * [**Document from Reference**](document-from-reference.md)**:** Used to retrieve the details from a document reference.
 * [**API Call Query**](api-call-query.md)**:** Used to initiate an API 
   call.
-* [**SQLite Query**](sqlite-query.md): Used to execute the SQL statement defined [here]
-  (/settings-and-integrations/integrations/sqlite#id-3.-add-sql-queries).
+* [**SQLite Query**](sqlite-query.md): Used to execute the SQL statements.
 * [**Algolia Search**](algolia-search-query.md)**:** Used to trigger an Algolia search on a Firestore Collection.
 
 ## Difference between Actions & Backend Query
