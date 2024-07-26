@@ -224,7 +224,7 @@ com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72
 
 ## 7. Delete note
 
-You can delete an existing note from the database using the [SQLite query action](/actions/actions/backend-database/sqlite-query) with the type set to *Update Query* and Query Name to [DeleteNote](/settings-and-integrations/integrations/sqlite#id-4.-deletenote).
+You can delete an existing note from the database using the [SQLite query action](../../../../resources/control-flow/backend-logic/backend-query/sqlite-query.md) with the type set to *Update Query* and Query Name to **Delete Note**.
 
 :::tip[Pro Tip] 
 To refresh the page, simply add an [**Update App State Action**](../../../../resources/data-representation/app-state.md) Action with the Update Type set 

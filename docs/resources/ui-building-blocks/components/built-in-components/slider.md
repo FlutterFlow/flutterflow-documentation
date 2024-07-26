@@ -300,5 +300,5 @@ To show the slider value:
 
 
 :::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+See how to [**trigger an action when a selection changes**](../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
 :::

@@ -62,7 +62,7 @@ To modify the RichTextSpan objects, see the quick demo below:
 </div>
 
 
-## Common Text Properties
+## Common Text Styling Properties
 
 ![text-props.png](imgs/text-props.png)
 

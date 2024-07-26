@@ -273,11 +273,11 @@ com/embed/6bffe7446e1d414f99baee759fda8fc0?sid=abfedd7c-3bc4-4eda-a9ab-341b72e4b
 
 <p></p>
 
-Here is another example of setting the [color from *Conditional Value*](/advanced-functionality/conditional-logic#conditional-value-if-then-else).
+You can also set the color from a [conditional value](../../../resources/control-flow/functions/conditional-logic.md#setting-widget-properties-with-conditional-logic).
 
 ## Copy variable
 
-If you have a complex variable value (e.g., using [Conditional Logic](/advanced-functionality/conditional-logic)) and want to use the same logic in another variable value, you can do so by copying a variable.
+If you have a complex variable value (e.g., using [Conditional Logic](../../../resources/control-flow/functions/conditional-logic.md)) and want to use the same logic in another variable value, you can do so by copying a variable.
 
 To copy-paste a variable:
 

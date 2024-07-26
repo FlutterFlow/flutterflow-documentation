@@ -43,14 +43,15 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 1. **Use Original Engine Initialization**: This uses original Flutter web engine initialization, which sometimes helps in better loading time in the deployed web app.
 
 2. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. **Note** that when using CanvasKit, some images can be blocked from loading if the server is not configured to allow loading them from other websites. To deal with this issue, you can set any of the following options, depending on where the images are hosted.
-    - **None:** If you are only loading images from your Firebase Storage, select this option and follow the steps [here](#).
+    - **None:** If you are only loading images from your Firebase Storage, select this option and follow the steps [here](#). <!--pinkesh add link-->
     - **Deploy with Firebase**: If images are not hosted on Firebase Storage *but you use Firebase to build your app*, choose this option and hit Deploy button.
     - **Custom Proxy URL**: If you are not using Firebase or prefer to set up your own CORS proxy, you can specify your own Custom Proxy URL. If you don't have one, you can create one by following the steps [here](https://github.com/Rob--W/cors-anywhere).
 3. **Import Emoji library**: Importing the Emoji library is necessary if your app may use emojis anywhere in any text widget. However, this will increase the size of your app on web.
 
 :::info
 
-Enabling web support automatically enables [**deep linking**](#) for your project. This helps in creating URLs for every page of your app.
+Enabling web support automatically enables 
+[**deep linking**](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for your project. This helps in creating URLs for every page of your app.
 
 :::
 
@@ -58,7 +59,7 @@ Enabling web support automatically enables [**deep linking**](#) for your projec
 
 If you're creating a web-only application, setting the canvas size to desktop and building pages accordingly can work well. However, if you plan to target both mobile and web users, some design adjustments may be necessary to ensure that the UI is optimized for both platforms.
 
-You can create separate widgets for different platforms and control their visibility using [Responsive Visibility](#).
+You can create separate widgets for different platforms and control their visibility using [Responsive Visibility](../../ff-concepts/layout/responsive-layout.md#responsive-visibility).
 
 ### 3. Resolving web compatibility warnings
 
@@ -68,7 +69,7 @@ Any known *Web Support* Issues will be displayed as a **Platform Support Warning
 
 ![platform-warnings](../imgs/platform-warnings.avif)
 
-In such a situation, you can try to find a replacement package on *[pub.dev](https://pub.dev/)* (considering it meets your requirements and has a good score).
+In such a situation, you can try to find a replacement package on [pub.dev](https://pub.dev/) (considering it meets your requirements and has a good score).
 
 :::warning
 
@@ -154,7 +155,7 @@ Adding a custom domain to your web app can give it a more professional look and 
 :::info[Important]
 
 - Only *Pro* and *Teams* plans include **one** free custom domain. The *Teams* plan comes with one custom domain for the whole team. If you are on the *Standard* plan, you will need to purchase a custom domain, as it is not included in the plan for free.
-- Only paid plans can purchase domains. *Standard* and *Pro* users can buy from their *Account* page, and Teams owners can buy it from [**My Organization**](#).
+- Only paid plans can purchase domains. *Standard* and *Pro* users can buy from their *Account* page, and Teams owners can buy it from **[My Organization](../../resources/projects/how-to-collaborate-on-projects.md#sharing-a-project-with-an-organization)**.
 - A single custom domain slot can be linked to only one domain or subdomain.
 - You can connect only one domain to a project, which can be either a root domain (like 'myapp.com') or a subdomain (such as 'beta.myapp.com'). That means if you connect a root domain, none of the subdomains under it will connected to the project. This leads to the rule of '*One project => One domain OR subdomain'*.
 
@@ -162,7 +163,7 @@ Adding a custom domain to your web app can give it a more professional look and 
 
 To add a custom domain:
 
-1. Enter your **Custom Domain URL**. Ensure you only enter the domain name (without www) and extension (e.g., *mywebapp.com* and not *www.mywebapp.com*).
+1. Enter your **Custom Domain URL**. Ensure you only enter the domain name (without www) and extension (e.g.,*mywebapp.com* and not *www.mywebapp.com*).
 2. Now, you must set up the DNS. To do so:
     1. Visit the website from where you bought the domain.
     2. Open the DNS manager and create the records as per displayed in UI. **Note** that there should not be other A or AAA records after adding this. Here are quick links on how to do this on popular domain-selling websites. 1) [Godaddy](https://in.godaddy.com/help/add-an-a-record-19238) 2) [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain/) 3) [Google Domains](https://support.google.com/a/answer/2579934?hl=en). Here's an example of how it looks in Godaddy.

@@ -307,7 +307,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 
 ### Changing error message styling
 
-You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](#).
+You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text.md#common-text-styling-properties).
 
 ![changing-error-message-styling](../../imgs/changing-error-message-styling.avif)
 
@@ -317,7 +317,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](#).
+You can also customize the icon's size and color.
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
@@ -683,7 +683,7 @@ To check user input for certain criteria or requirements (e.g., email), see *ste
 
 ### Validating input
 
-You can validate the TextField value by wrapping it inside the [Form](../forms/form-validation) widget and adding the validation criteria.
+You can validate the TextField value by wrapping it inside the [Form](../form-validation.md) widget and adding the validation criteria.
 
 :::tip
 Filtering ensures that only the allowed characters or values are entered, whereas the validation checks the entire input data against certain criteria. Both techniques can be used together or independently to ensure the correctness of user input in a TextField widget.

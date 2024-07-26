@@ -1,10 +1,10 @@
 ---
 slug: /integrations/authentication/supabase/email-authentication
 title: Email Authentication
-description: Learn how to integrate Email Login of Supabase Auth into your FlutterFlow app.
-tags: [FlutterFlow, Email Authentication, Authentication, Supabase]
+description: Learn how to integrate Email Login of supabase Auth into your FlutterFlow app.
+tags: [FlutterFlow, Email Authentication, Authentication, supabase]
 sidebar_position: 2
-keywords: [FlutterFlow, Email Authentication, Authentication, Supabase]
+keywords: [FlutterFlow, Email Authentication, Authentication, supabase]
 ---
 
 # Email Authentication
@@ -61,8 +61,8 @@ Also, see how to build a page layout in case you want to build a page from scrat
 
 Now, you can proceed to add an account creation flow, which basically consists of three actions in the following order:
 
-1. Supabase [Create Account Action](/actions/actions/backend-database/supabase-authentication/create-account#email-signup)
-2. Supabase [Insert row action](/actions/actions/backend-database/supabase#1.-insert-row-action)
+1. Supabase [Create Account Action](auth-actions.md#create-account-action)
+2. Supabase [Insert row action](../../database/supabase/database-actions.md#insert-row-action)
 3. [Navigate](../../../ff-concepts/navigation-routing/nav-overview.md) action
 
 The first one creates an account in Supabase and adds an email and password in the "auth.users" table (i.e., *Protected schemas > schema auth*). However, this action does not create an entry in the "users" table you created [here](/data-and-backend/supabase/supabase-authentication/initial-setup#1.-creating-a-users-table). To do so, you need to add another action called Supabase *insert row* action with the user's details, such as email and profile_pic. Once the entry has been created, you can navigate to the home page using the navigate action.
@@ -79,11 +79,11 @@ Here's how it looks:
 
 ### Adding Log In [Action]
 
-To allow users to log in with their credentials, you can use [this](/actions/actions/backend-database/supabase-authentication/log-in#email-login) action.
+To allow users to log in with their credentials, you can use [this](auth-actions.md#log-in-action) action.
 
 ### Adding Logout [Action]
 
-To let users log out of your app, you can use [this](/actions/actions/backend-database/supabase-authentication/log-out) action.
+To let users log out of your app, you can use [this](auth-actions.md#log-out-action) action.
 
 ### Verify user creation
 
