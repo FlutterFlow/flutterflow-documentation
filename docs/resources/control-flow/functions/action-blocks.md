@@ -32,7 +32,7 @@ Usually, you will see a dropdown to choose between App Level, Page Level, or Com
 ![action-blocks.png](img/action-blocks.png)
 
 
-### Input Parameters
+### Action Parameters
 
 Action Blocks have access to the state variables available in the same scope as the Action Block 
 (for e.g., Page State variables can be accessed from Page Level Action Blocks). However, there 

@@ -141,7 +141,7 @@ Sometimes you might want to retrieve the values of the response headers. For exa
 
 To access the response header:
 
-1. Ensure you have added the [API call action](/actions/actions/backend-database/api-call) and 
+1. Ensure you have added the [API call action](../api/rest-api.md) and 
 provided the **Action Output Variable Name**.
 2. Now, whenever/wherever the **Value Source** is set to **From Variable**, select the **Action Outputs > [Action Output Variable Name]** (e.g., Action Outputs > loginResponse).
 3. Set the **API Response Options** to **Get Response Header**.
@@ -303,7 +303,7 @@ To create a request body in the multipart format:
 1. Select the **Body** tab and set the *Body* dropdown to **Multipart**.
 2. Click on the **+ Add Parameter** and enter the **Name** of the parameter.
 3. Set the **Value Source** to **From Variable,** and then from the **Select Variable** dropdown, click on **+ Create New Variable**. Note: This will immediately create a new variable with the same name as of parameter.
-4. Now move to the **Variables** tab and set the **Type** to **Uploaded File**. This will allow you to pass the file stored locally on the device using an action such as [Upload/Save Media](/actions/actions/utilities/upload-data/upload-save-media).
+4. Now move to the **Variables** tab and set the **Type** to **Uploaded File**. This will allow you to pass the file stored locally on the device using an action such as **Upload/Save Media**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/89c86a2f87df4a7c9316e4ade9563976?sid=23eea851-5c59-45d0-8699-d952c62d7e6a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -351,7 +351,7 @@ Here's how you do it:
 
 <p></p>
 
-3. On ListView, after adding the [API call backend query](docs/resources/control-flow/backend-logic/backend-query/api-call-query.md), access the values by setting the following options.
+3. On ListView, after adding the [API call backend query](../../../../resources/control-flow/backend-logic/backend-query/api-call-query.md), access the values by setting the following options.
 
     1. **Generate Children from Variable** by setting **API Response Options** to **As Data Type**.
     2. Set **Available Options** to **Data Structure Field** because we want to grab only a specific field, which has a list of products and not other items such as 'total' and 'skip'.
@@ -698,7 +698,7 @@ It acts as a middleman between your app and the API server. So, when you make an
 Let's see how to add an interceptor:
 
 1. Navigate to the **Advanced Settings** tab.
-2. Click on **+ Add Interceptors** and select **+ Create New Interceptor** to open the [Custom Action](/customizing-your-app/custom-functions/custom-actions) editor.
+2. Click on **+ Add Interceptors** and select **+ Create New Interceptor** to open the [Custom Action](../../../../ff-concepts/adding-customization/custom-actions.md) editor.
 3. Enter the **Action Name**.
 4. In the boilerplate code, add your custom code within the `onRequest` function for request interception and modification and within the `onResponse` function for response interception and modification. 
 

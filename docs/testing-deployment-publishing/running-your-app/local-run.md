@@ -326,9 +326,9 @@ If you downloaded Flutter via local run, it might not be added to your system's 
 
 If you don't see your device in the list after refreshing, follow these steps:
 
-1. Ensure you have added [Flutter to your path](#command-not-found-flutter-add-flutter-to-systems-path).
+1. Ensure you have added Flutter to your path.
 2. Open the Terminal and run the following command:
-    
+
 
     
     ```

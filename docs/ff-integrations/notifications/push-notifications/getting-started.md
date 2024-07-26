@@ -208,7 +208,7 @@ com/embed/f6a0aa69b9274b1c965a85d72dcfdda5?sid=dfdebe15-61bf-4bf1-8cd6-238c7b9a5
 
 You might want to send a push notification when something happens in your app. For example, sending a push notification on a message sent, a push notification on a new appointment booked, a push notification on a price change, etc.
 
-You can send the push notification on such event occurrence by adding the [Trigger Push Notification](/actions/actions/alerts-notifications/trigger-push-notification-action) action.
+You can send the push notification on such event occurrence by adding the **Trigger Push Notification** action.
 
 For demonstration purposes, consider an example of sending a push notification to a post creator when someone comments on a post.
 

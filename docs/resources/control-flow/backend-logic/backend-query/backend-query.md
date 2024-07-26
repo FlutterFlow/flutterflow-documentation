@@ -75,9 +75,9 @@ To change the loading indicator:
 
 1. Ensure you have added a backend query.
 2. Open the **Backend Query** section (on the right side) and scroll down to the **Backend Query Loading Widget**. Open it by clicking on the arrow icon.
-3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](/widgets-and-components/custom-components) if you have already designed a loading component.
+3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](../../../../resources/ui-building-blocks/components/user-defined-components/getting-started.md) if you have already designed a loading component.
 4. Enable the **View in UI Builder**. This allows you to see your custom loading indicator on canvas (before you actually run the app).
-5. Choose the **Image Type**, [add the image](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#changing-image-type), and adjust its **Padding** and **Width**.
+5. Choose the **Image Type**, [add the image](../../../../resources/ui-building-blocks/widgets/built-in-widgets/image.md#image-type), and adjust its **Padding** and **Width**.
 6. To show the indicator in the center, turn on the **Center Image** toggle.
 7. Run the app, and your custom loading indicator will appear while the data is being loaded.
 
@@ -220,7 +220,7 @@ com/embed/ed9716ec74e542d8a264e87235ce3aec?sid=7b03c276-a8bb-4dbf-9131-acf0a1fa9
 <p></p>
 
 1. At this point, we have enabled the caching, but we still have one problem. Once the query is 
-cached, it will be used forever, although we update the data in our backend. This is because we are not clearing or invalidating the cache at the appropriate time. To properly invalidate the cache, you can use the **Should Override Cache** property OR [**Clear Query Cache**](/actions/actions/state-management/clear-query-cache) action. This helps you remove the cached data that has become stale or outdated.
+cached, it will be used forever, although we update the data in our backend. This is because we are not clearing or invalidating the cache at the appropriate time. To properly invalidate the cache, you can use the **Should Override Cache** property OR **Clear Query Cache** action. This helps you remove the cached data that has become stale or outdated.
 
     1. The *Should Override Cache* property accepts a boolean (True/False). That means we can 
    provide a variable (e.g., an *App State* variable named *isCacheOverride)* that knows when to override the cache. So create one and set it here.
@@ -242,7 +242,7 @@ page is loaded) and set the *isCacheOverride* variable accordingly. Here is how 
         1. [Update](/actions/actions/state-management/update-app-state) the **lastCacheTime** with 
        the current time and **isCacheOverride** to True. Make sure you keep the **Update Type** to **Rebuild Current Page** so that the backend query is made again, which will invalidate the cache and display updated data.
         2. You can also add an action to [Clear Query Cache](/actions/actions/state-management/clear-query-cache).
-        3. Continuing the same action flow, [wait](/actions/actions/utilities/wait) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.
+        3. Continuing the same action flow, [wait](../../../../resources/control-flow/time-based-logic/wait-action.md) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b5ca17571da943f2811db8b485ed4f02?sid=5e0a2480-727a-4868-8dd1-11f58e60d1f8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

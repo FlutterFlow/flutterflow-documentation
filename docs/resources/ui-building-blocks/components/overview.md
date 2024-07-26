@@ -55,7 +55,7 @@ Leveraging components effectively helps you build a consistent, efficient, and m
   widgets like `Row`, `Column`, or `Stack` to create a combined widget that serve a specific
   function, like a `LoginComponent` or a `SearchBar`.
 
-- **Custom Widgets:** For scenarios where more complex functionalities are required, FlutterFlow
+- **[Custom Widgets:](../../../ff-concepts/adding-customization/custom-widgets.md)** For scenarios where more complex functionalities are required, FlutterFlow
   allows you to develop their own Custom Widgets. This involves writing Flutter code from
   scratch, offering the highest level of customization and flexibility.
 

@@ -17,13 +17,13 @@ FlutterFlow allows you to seamlessly deploy your apps directly to the App Store,
 - Create an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 - [**Purchase an Apple Developer membership**](https://developer.apple.com/programs/enroll/). Please see [**this link**](https://developer.apple.com/programs/) for more details on the Apple Developer program and how to sign up.
 - Set an App Launcher Icon for your app (under Settings & Integrations > General > App Assets). **The App Launcher icon can't be transparent or contain an alpha channel.**
-- We recommend testing your application on a real device. [**Here are instructions**](#) on how to do this.
+- We recommend testing your application on a real device. [**Here are instructions**](../running-your-app/local-run.md) on how to do this.
 
 :::
 
 ## Deploy to App Store
 
-Deploying to App Store comprises of the following steps:
+Deploying to App Store consists of the following steps:
 
 1. [Create a Bundle Identifier](#1-create-a-bundle-identifier)
 2. [Add a new app to App Store Connect](#2-add-a-new-app-to-app-store-connect)
@@ -327,7 +327,7 @@ Associating the Github repo allows you to introduce the custom code into your Fl
 
 To deploy from Github repo:
 
-1. If you haven't added the Github repo yet, you can do so using the instructions [here](#).
+1. If you haven't added the Github repo yet, you can do so using the instructions [here](../exporting-code/push-to-github.md).
 
 2. From FlutterFlow, navigate to **Settings & Integrations > App Settings >** **Mobile Deployment > App Store**.
 3. Find the **Deployment Settings** section and click on the arrow icon on the right to open it.
