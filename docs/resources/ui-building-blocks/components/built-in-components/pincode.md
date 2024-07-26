@@ -3,7 +3,6 @@ slug: pincode
 title: PinCode
 tags: []
 description: Learn how to add PinCodewidget in your FlutterFlow app.
-sidebar_position: 4
 ---
 # PinCode
 
@@ -13,7 +12,7 @@ The PinCode widget allows you to enter the PIN or OTP. You could use this widget
 
 To add a PinCode widget:
 
-1. Open the [Widget Palette](../../../../../intro/ff-ui/widget-palette) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
+1. Open the [Widget Palette](../../../../intro/flutterflow-ui/widget-palette) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. To increase the pin length (number of values users can enter), move to the properties panel, see the **Pin Length** property, and enter the value. **Note**: You can only set this value up to 8.
 3. If you are using this widget to get a secret PIN from users, you can obscure it with a special character. To do so, enable the **Obscure Text** toggle and select the **Obscuring Character** among the *,-,?, and •.
 4. You can also enable/disable the **Hint Text** toggle and select the **Hint Character** displayed when you haven't entered anything.
@@ -48,7 +47,31 @@ To add a PinCode widget:
 
 Let's see how to trigger an action when you are done entering the value in this widget. This is helpful when you want to compare the entered value with the one stored in your backend.
 
-![Displaying a snackbar message with the entered value in PinCode widget](../../../control-flow/user-interactivity/imgs/trigger-on-completed-demo.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ZFvwMLCJxOUTDKX7j7KR?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 To do so:
 
@@ -88,7 +111,31 @@ Here is an example of displaying a snackbar message that shows the entered value
 
 Let's see how to trigger an action whenever you enter or delete the value in each field of this widget. This is helpful when you want to provide immediate feedback to the user. For instance, you can check the validity of the entered digit as soon as the user types it in and show a message that it is not valid.
 
-![Trigger action On Change](../../../control-flow/user-interactivity/imgs/trigger-action-on-change.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Tu67UorxewVzqpgA5Rx8?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 To do so:
 
@@ -128,7 +175,32 @@ Here is an example of displaying a snackbar message when a user enters a non-num
 
 You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](#) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](#) action. This will display an error message when a user tries to submit the form without a pincode value.
 
-![Pincode validation](../../../control-flow/user-interactivity/imgs/pincode-validation.gif)
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/iIPpBcXSnv1z3rcC6Qtf?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 You can also adjust the height to the error text from **Properties Panel > Error text height**.
 
@@ -259,7 +331,31 @@ The following options help you align the pin code fields:
 - **Space Between**: Place the free space evenly between the pin code fields.
 To configure the space between and around the pin fields, select the **PinCode** widget, move to the properties panel, find the **Pin Code Alignment** property and select among the above options.
 
-![Aligning pin code fields](../../../control-flow/user-interactivity/imgs/align-pin-code-fields.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/wibrITSlEuquRbg68w2B?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing pin field shape and size
 
@@ -334,6 +430,6 @@ You can change colors for the different states of the pin fields. To do so:
 
 You can show/hide the cursor using the **Show Cursor** toggle and change the color using the **Cursor Color** property.
 
-### Clear pin code value
-
-See how to [reset the pin code value](#).
+:::info[Clear pin code value]
+See how to [reset the pin code value](../../../control-flow/user-interactivity/forms/form-actions/reset-form-field).
+:::

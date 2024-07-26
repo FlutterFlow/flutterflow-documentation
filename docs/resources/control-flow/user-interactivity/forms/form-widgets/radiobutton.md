@@ -24,7 +24,31 @@ Here's an example of how you can use the RadioButton widget in your project:
 The RadioButton widget adds a single option named **Option 1** by default.
 :::
 
-![radio-button](../../imgs/radio-button.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/uwTpWnFeSb9XfXbLwnmq?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing Option Name
 
@@ -34,7 +58,31 @@ To change the name of the option:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Define Options** section.
 3. Find the **Option 1** property and change the **name**.
 
-![change-option-name](../../imgs/change-option-name.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/dWJ8ApFRyGHK6QJwYQRT?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Adding or Removing Option
 
@@ -46,7 +94,32 @@ To add or remove an option from the RadioButton:
 4. Enter the name in **Option 2 Text**.
 5. To remove the option, simply click on the cancel icon () displayed in the **Option name** property.
     
-![add-remove-option](../../imgs/add-remove-option.gif)
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/dwOVrA7UXfNYNCJU2niE?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Setting Initial Option
 
@@ -58,8 +131,31 @@ To set the initial option:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Initial Option** property.
 3. Enter the **name** of the option. For example, entering a value as **Jupiter** will show the second option selected on running the app.
 
-
-![setting-initial-option](../../imgs/setting-initial-option.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/q2WMmLXgDBHxa8Q2ToHV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Styling Selected Option
 
@@ -70,13 +166,61 @@ To change the text style of the selected option:
 3. Checkmark the **Change Selected Text Style**. (Click on it)
 4. Under the **Radio Button Selected Text Style** section, change the text style.
 
-![styling-selected-option](../../imgs/styling-selected-option.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/on8RaGEIy2DoY9DkGBv8?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Retrieving RadioButton Selection
 
 Let's build an example of showing the selected option in a Text widget.
 
-![retrieve-radio-button](../../imgs/retrieve-radio-button.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/SrCgHmkDwxuUnnL7CISA?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::info
 For simplification purposes, the selected option is shown in the Text widget. In a real-world scenario, you may pass the RadioButton selection to your Backend (Firestore Database/API call).
@@ -91,7 +235,31 @@ To retrieve the user's selection:
 5. (Optional) Set the default value if you wish to.
 6. Click **Save**.
 
-![retrieve-radio-button-2](../../imgs/retrieve-radio-button-2.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/pOctjajxyXfATzcV4mIx?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 
 ## Changing the Properties
@@ -106,7 +274,31 @@ To change the height of all options:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Radio Button Properties** section.
 3. Enter the desired height into the **Option Height** box.
 
-![changing-option-height](../../imgs/changing-option-height.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CJW7yVt563za26klU2Mb?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Adding Space Around Option Text
 
@@ -121,8 +313,31 @@ To add some space around the option text:
 Use the Lock button to change the Left, Top, Right and Bottom padding all at the same time. Unlocking will allow you to modify each value separately.
 :::
 
-
-![adding-space-around-option-text](../../imgs/adding-space-around-option-text.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/6Pm0bPjJG6wMMDblFXFM?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Showing Options Horizontally
 
@@ -134,7 +349,31 @@ To display all options horizontally:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Radio Button Properties** section.
 3. Find the **Axis** property, change it to **Horizontal**.
 
-![show-option-horizontally](../../imgs/show-option-horizontally.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/o4YRXamuP9uJxZNNFLkJ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Aligning Options
 
@@ -147,7 +386,31 @@ To change the option alignment:
 3. Find the **Alignment** dropdown and select from the options displayed that include Start, Center, End.
 4. If the **Axis** property is set to **Horizontal**, you will see options that include Start, Center, End, Space evenly, Space between, and Space around.
 
-![align-option](../../imgs/align-option.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/likoUqGPJhPJsUhu57jJ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing Button Position
 
@@ -159,7 +422,32 @@ To change the button position:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Radio Button Properties** section.
 3. Find the **Button Position** property, change it to **Right**.
 
-![change-button-position](../../imgs/change-button-position.gif)
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/kWA0nm3WfmJIhm0oAeCJ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Styling Radio Button
 
@@ -170,9 +458,33 @@ To change the color of selected and unselected options:
 3. Find the **Selected Color** property, click on the box next to **Unset**, select the color, and then click **Use Selected Color** or click on **Unset** and enter a Hex Code directly. You can also choose the color by clicking on the Palette and Simple button.
 4. Find the **Unselected Color** property, click on the box next to **Unset**, select the color, and then click **Use Selected Color** or click on **Unset** and enter a Hex Code directly. You can also choose the color by clicking on the Palette and Simple button.
 
-![styling-radio-button](../../imgs/styling-radio-button.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Wgs9lGUinPRvTGaOM0j0?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 
-## Trigger action on change
-
-See how to [trigger an action when a selection changes](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::info[Trigger action on change]
+See how to [**trigger an action when a selection changes**](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::

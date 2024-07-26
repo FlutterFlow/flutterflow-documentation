@@ -17,7 +17,31 @@ For example, you could use it to check if a user has given a valid email and pas
 
 Let's see how to add a *Form* widget by building a signup example. Here's how it looks:
 
-![Validating input fields in a signup form](../imgs/form-demo.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/O4QCIh6cr0s5NBSa3v6U?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 Building and validating a *Form* includes the following steps:
 
@@ -105,13 +129,14 @@ Follow the steps below to add this action to any widget.
 4. Set the **Select Form to Validate** to your **Form name**.
 5. You can chain the next action that will be triggered if the validation passes.
 
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/BlAIvaCybghOW8f5AHFW?embed&show_copy_link=true"
+        src="https://demo.arcade.software/rMFiIB9NYEird1QfKfP3?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -137,7 +162,31 @@ Rather than displaying an error message after the user submits the form, you can
 
 To auto validate a form, select **TextField >** move to the **Properties Panel > Add validations >** and then enable the **Automatically Validate**.
 
-![Auto validating](../imgs/auto-validating-demo.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ina1dmwmKmL1WAHSQClx?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ![Enabling auto validate](../imgs/enable-auto-validate.avif)
 
@@ -146,7 +195,31 @@ To auto validate a form, select **TextField >** move to the **Properties Panel >
 
 You can also validate a form when you are done entering a value inside the *TextField* using the *On Submit* action.
 
-![Validating a Form on TextField On Submit](../imgs/validating-form-on-textfield-onsubmit.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/t2NPQ2ze94DPSXJnLcVU?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 
 To validate a form on *TextField* *On Submit*:
@@ -156,7 +229,31 @@ To validate a form on *TextField* *On Submit*:
 3. Search, and select the **Validate Form** (under UI Interactions) action.
 4. Set the **Select Form to Validate** to your **Form name**.
 
-![Validating a Form on TextField On Submit](../imgs/adding-validating-form-on-textfield-onsubmit.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/r1HoR4uC99HcxnqqCmGB?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ---
 

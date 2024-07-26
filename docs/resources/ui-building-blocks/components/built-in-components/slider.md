@@ -3,7 +3,6 @@ slug: slider
 title: Slider
 tags: []
 description: Learn how to add Slider in your FlutterFlow app.
-sidebar_position: 5
 ---
 
 # Slider
@@ -16,7 +15,31 @@ For example, you can use the Slider widget to allow users to set the volume, set
 
 Let's build an example of using the Slider widget and retrieve its value in a Text widget.
 
-![Slider widget](../../../control-flow/user-interactivity/imgs/slider-demo.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/G5dcYFeajqmKcN5a68Fu?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 The steps to build the example are as follows:
 
@@ -28,13 +51,61 @@ The steps to build the example are as follows:
     3. Set the **Number Format Option** if you wish to.
     4. Click **Confirm**.
 
-![Slider demo](../../../control-flow/user-interactivity/imgs/adding-slider.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/7pg64sKF7KzKK1TzmY8a?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Setting initial value
 
 Sometimes you might want to display the slider with the default value. For example, showing the volume slider with the audible volume value. You can do so by setting the initial value for the Slider.
 
-![slider-set-initial-value](../../../control-flow/user-interactivity/imgs/slider-set-initial-value.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/dwdXqb2mLwZ3ShwQdjN1?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Customization
 
@@ -50,7 +121,31 @@ To set the platform type:
 2. Move to the properties panel and open the **Platform** section.
 3. Set the **Platform Type** among the **Android** or **Adaptive**.
 
-![Setting platform type](../../../control-flow/user-interactivity/imgs/set-platform-type.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/S15LCQAKU5VvcgDZOXVA?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Defining slider range
 
@@ -63,7 +158,31 @@ To set the min and max values:
 3. Find the **Min** property and enter the value. This will be the start value of the range.
 4. Find the **Max** property and enter the value. This will be the end value of the range.
 
-![Defining slider range](../../../control-flow/user-interactivity/imgs/slider-range.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Z4sBW9iUwIOB4as0y3XH?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Setting step size
 
@@ -79,7 +198,32 @@ To set the step size:
 2. Move to the properties panel and scroll down to the **Slider Properties** section.
 3. Find the **Step Size** property and enter the value.
 
-![Setting step size](../../../control-flow/user-interactivity/imgs/slider-step-size.gif)
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/vcXVcyvrLoDeTKHacqaj?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing color
 
@@ -90,7 +234,31 @@ To change the slider colors:
 3. To change the active color, find the **Active Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 4. To change the inactive color, find the **Inactive Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 
-![Changing color](../../../control-flow/user-interactivity/imgs/slider-color.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/GTK1gx13TYLBuowLjTk6?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Showing slider value
 
@@ -102,8 +270,33 @@ To show the slider value:
 2. Move to the properties panel and scroll down to the **Slider Properties** section.
 3. Find the **Show Value** property and turn on the toggle.
 
-![Showing slider value](../../../control-flow/user-interactivity/imgs/showing-slider-value.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/yZO6X8ExdIErBNwv0lrb?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
-## Trigger action on change
 
-See how to [trigger an action when a selection changes](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::info[Trigger action on change]
+See how to [**trigger an action when a selection changes**](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::

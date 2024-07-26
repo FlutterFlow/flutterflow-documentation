@@ -392,3 +392,41 @@ Here is an example showing the snackbar message when the Dropdown selection chan
     </iframe>
 </div>
 <p></p>
+
+## Adding border
+
+To add a border to any widget:
+
+1. Find the **Border Color** property and change the color using the instructions [here](https://docs.flutterflow.io/widgets-and-components/widgets/widget-commonalities#change-color).
+2. To create the rounded border, use the **Border Radius** property.
+3. Enter values for TL (Top left), TR (top right), BL (bottom left), and BR (bottom right).
+4. To apply the same radius on all sides, switch to the **Uniform Radius** option. You can then adjust the radius by either moving the slider or entering the desired value directly.
+5. Use the refresh icon button to reset all values.
+6. To increase the border thickness, use the **Border Width** property.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/8ce81ac703a44af2a4f8fffc4eeffa1a?sid=300557b1-b922-4bb1-95c0-384302334eee"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

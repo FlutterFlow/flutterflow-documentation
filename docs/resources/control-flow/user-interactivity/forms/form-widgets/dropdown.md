@@ -16,7 +16,31 @@ You can use this widget in any situation where you want users to select from a s
 
 Let's see how to add a *DropDown* widget and build an example that shows the selected value on a Text widget. Here's how it looks:
 
-![dropdown-widget](../../imgs/dropdown-widget.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/W83rbxwxh8Bru695kqOs?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 1. Add the **DropDown** widget, move to the **Properties Panel > Define Options >** click **Add Options** to add items.
 2. To display the default value, move to the **Initial Configuration** section and enter the value. Ensure it matches one of the options added in the previous step.
@@ -187,7 +211,31 @@ To make the dropdown widget a searchable one:
 
 You might need to disable a dropdown when certain conditions are not yet met or need to be fulfilled. For example, when the dropdown options are dependent on other fields, and those fields are not filled yet.
 
-![Disabled dropdown](../../imgs/disabled-dropdown.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/42Bn1gyDN1eCHCk4kXZ8?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 To disable the dropdown:
 
@@ -271,7 +319,31 @@ If needed, you can also control the dropdown height using the **Max Height** pro
 
 Margin adds a space between the DropDown's text and its border. To change the margin, select the **DropDown** widget, move to the **Properties Panel > DropDown Properties >** find the **Margin** property, and change the values.
 
-![Adding margin](../../imgs/adding-margin.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/3U91Y8JXTXXvKUyxlCoC?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing background color
 
@@ -291,13 +363,37 @@ The higher value draws the bigger size of the shadow.
 
 ### Adding border
 
-See how to [add a border](#).
+See how to [add a border](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#adding-border).
 
 ### Show/hide underline
 
 To show or hide the dropdown underline, move the **Properties Panel >** **DropDown Style** > use the **Hides Underline** toggle.
 
-![Show hide underline](../../imgs/show-hide-underline.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/SireMWgr1E8ADdHlz5cu?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Fix position
 
@@ -305,6 +401,6 @@ By default, the dropdown options are displayed over/above the dropdown button. T
 
 ![Fix position for dropdown options](../../imgs/fix-position.webp)
 
-### Trigger action on change
-
-See how to [trigger an action when a selection changes](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::info[Trigger action on change]
+See how to [**trigger an action when a selection changes**](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+:::
