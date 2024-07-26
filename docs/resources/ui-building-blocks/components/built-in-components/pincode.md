@@ -174,7 +174,7 @@ Here is an example of displaying a snackbar message when a user enters a non-num
 
 ## Validation
 
-You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](#) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](#) action. This will display an error message when a user tries to submit the form without a pincode value.
+You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](../../../../resources/forms/form-validation#adding-form-widget) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](../../../../resources/forms/form-validation#3-adding-validate-action) action. This will display an error message when a user tries to submit the form without a pincode value.
 
 
 <div style={{

@@ -18,7 +18,7 @@ You can use the RadioButton widget for implementing a single selection such as g
 
 Here's an example of how you can use the RadioButton widget in your project:
 
-1. First, drag the [**Column**](#) widget from the **Layout Elements** tab (in the Widget Panel) or add it directly from the widget tree. Set its **Cross Axis Alignment** to **Stretch**.
+1. First, drag the **Column** widget from the **Layout Elements** tab (in the Widget Panel) or add it directly from the widget tree. Set its **Cross Axis Alignment** to **Stretch**.
 2. Now add the **RadioButton** widget from the **Form Elements** tab or add it directly from the widget tree.
 
 :::info
@@ -229,7 +229,7 @@ For simplification purposes, the selected option is shown in the Text widget. In
 
 To retrieve the user's selection:
 
-1. Add the [**Text**](#) widget to your page.
+1. Add the [**Text**](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text/) widget to your page.
 2. Move to property editor and click on the **Set from Variable** text. (This will open a new panel)
 3. Set the **Source** to **Widget State**.
 4. Set the **Available Options** to **RadioButton**.
@@ -342,7 +342,7 @@ Use the Lock button to change the Left, Top, Right and Bottom padding all at the
 
 ### Showing Options Horizontally
 
-By default, all options are shown as if they were inside the [Column](#) widget. Using *Axis* property, you can change this behavior to display all options horizontally as if they are inside the [Row](#) widget.
+By default, all options are shown as if they were inside the Column widget. Using *Axis* property, you can change this behavior to display all options horizontally as if they are inside the Row widget.
 
 To display all options horizontally:
 
