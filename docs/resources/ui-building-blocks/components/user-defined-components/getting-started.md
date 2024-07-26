@@ -1,12 +1,14 @@
 ---
-title: Getting Started
+title: Creating a Component
 sidebar_position: 1
+slug: creating-components.md
+keywords: [Custom Components]
+tags: [Components]
 ---
 
 # User Defined Components
 
-User-defined components in FlutterFlow are custom elements you create to meet specific needs in your
-app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
+User-defined Components or just Custom Components in FlutterFlow are custom elements you create to meet specific needs in your app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
 create reusable UI elements. This approach ensures consistency, saves
 time, and simplifies maintenance across your project.
 

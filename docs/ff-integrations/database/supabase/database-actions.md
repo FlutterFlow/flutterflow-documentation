@@ -1,7 +1,7 @@
 ---
 slug: /integrations/database/supabase/database-actions
 title: Database Actions
-description: Learn about Supabase database actions in your FlutterFlow app, including how to perform various database operations.
+description: Learn about Supabase Database actions in your FlutterFlow app, including how to perform various database operations.
 tags: [FlutterFlow, Supabase, Database, Actions]
 sidebar_position: 1
 keywords: [FlutterFlow, Supabase, Database, Actions]
@@ -80,17 +80,15 @@ com/embed/f2a75f9b0e144f6aab06cc1f0965541b?sid=6f57ff8a-ca2a-4c47-833d-03fa928b8
     8. Similarly, add the field for the other UI elements.
 
 
-
-
-
 :::tip[How to & Tips]
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/08cb8a851350428bbc226f2e7ce9d2b3?sid=b3d097cf-6f84-4f69-893a-3a363cbf7143" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
+
 If you have a flow like this, *HomePage* -> *AssignmentDetailsPage* ->
-*UpdateAssignmentPage*, you can enable the **Replace Route** option (see point no. 5 [here](/actions/actions/navigation/navigate)) when you navigate from *AssignmentDetailsPage* to *UpdateAssignmentPage*. And then chain the [Navigate Back](/actions/actions/navigation/navigate-back#adding-navigate-back-action) action after the update action. This will directly open the *HomePage* after the row is updated.
+*UpdateAssignmentPage*, you can enable the **Replace Route** option (see point no. 5 [here](../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action)) when you navigate from *AssignmentDetailsPage* to *UpdateAssignmentPage*. And then chain the [Navigate Back](../../../ff-concepts/navigation-routing/page-navigation.md#navigate-back-action) action after the update action. This will directly open the *HomePage* after the row is updated.
 :::
 
 

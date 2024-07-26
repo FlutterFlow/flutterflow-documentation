@@ -67,7 +67,7 @@ Also, see how to [build a page layout](/widgets-and-components/ui-and-layout-101
 
 Few things to note here:
 
-* We use the [ConditionalBuilder](/widgets-and-components/widgets/base-elements/conditionalbuilder) widget to show/hide the loading indicator based on the *generatingImage* variable. **Tip**: The Else branch of this widget is nothing but a ProgressBar inside the Container with a [rotating loop animation](/widgets-and-components/animations#4.-rotate).
+* We use the [**ConditionalBuilder**](../layout/responsive-widgets/conditional-builder-widget.md) widget to show/hide the loading indicator based on the *generatingImage* variable. **Tip**: The Else branch of this widget is nothing but a ProgressBar inside the Container with a [rotating loop animation](../animations/widget_animations.md).
 * The Image widget uses the *logoImage* variable to display the logo.
 
 ### 3. Create and deploy Cloud Function
@@ -230,7 +230,7 @@ To add a dependency, open the `package.json` file and specify your package in th
 
 ### 5. Trigger Cloud Function
 
-The newly created *Cloud Function* will be available as an action when you are adding one. For this example, on click of a button, we'll first set the *generatingImage*to *True* and then [trigger the Cloud Function](/actions/actions/cloud-function).
+The newly created *Cloud Function* will be available as an action when you are adding one. For this example, on click of a button, we'll first set the *generatingImage*to *True* and then trigger the **Cloud Function Action**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/5c712863f95c4fcabd5c3851a3cbe56b?sid=a7ac875f-11b5-4b5a-b3e2-8ae03ce49571" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

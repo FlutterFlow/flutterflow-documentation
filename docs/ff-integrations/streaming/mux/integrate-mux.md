@@ -244,7 +244,7 @@ False. To do so:
 3. Under the **On Broadcast Stop:**
 
     - Add
-      the [Update Document](/actions/actions/backend-database/firestore#2.-defining-update-document-action)
+      the [Update Document](../../database/cloud-firestore/firestore-actions.md#update-document-action)
       action.
     - Set the reference to Action Outputs > broadcastOutput (action output variable name set in
       previous step) > Reference.

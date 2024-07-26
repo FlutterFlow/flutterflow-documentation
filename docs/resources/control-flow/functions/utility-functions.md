@@ -64,8 +64,8 @@ values with different text styles for each, consider using the **RichText** widg
 ## Code Expressions
 
 Oftentimes, you may need to quickly format data, convert a data type from one form to another,
-or perform a simple calculation before setting the variable to a data source, such as a [widget
-value source](#) or an [action parameter](#).
+or perform a simple calculation before setting the variable to a data source, such as a widget
+value source.
 
 **Code Expression** built-in functions can help with
 these tasks. A code expression is a piece of code that combines operators, variables, and/or values
@@ -153,5 +153,5 @@ Here are some common expressions you can use for your business logic:
 You can also use custom functions to handle slightly more complex calculations or to process a wider range of data types that are not supported in Code Expression.
 
 :::info
-To learn more about Custom Functions, **[refer](#)** here.
+Learn more about [**Custom Functions**](../../../ff-concepts/adding-customization/custom-functions.md).
 :::

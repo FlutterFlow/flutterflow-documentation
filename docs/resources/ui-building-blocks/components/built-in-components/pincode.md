@@ -13,7 +13,7 @@ The PinCode widget allows you to enter the PIN or OTP. You could use this widget
 
 To add a PinCode widget:
 
-1. Open the [Widget Palette](../../../../intro/flutterflow-ui/widget-palette) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
+1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. To increase the pin length (number of values users can enter), move to the properties panel, see the **Pin Length** property, and enter the value. **Note**: You can only set this value up to 8.
 3. If you are using this widget to get a secret PIN from users, you can obscure it with a special character. To do so, enable the **Obscure Text** toggle and select the **Obscuring Character** among the *,-,?, and •.
 4. You can also enable/disable the **Hint Text** toggle and select the **Hint Character** displayed when you haven't entered anything.
@@ -432,5 +432,5 @@ You can change colors for the different states of the pin fields. To do so:
 You can show/hide the cursor using the **Show Cursor** toggle and change the color using the **Cursor Color** property.
 
 :::info[Clear pin code value]
-See how to [**reset the pin code value**](../../../../resources/forms/reset-form-field).
+See how to [**reset the pin code value**](../../../../resources/control-flow/user-interactivity/forms/form-actions/reset-form-field.md).
 :::
