@@ -2,19 +2,26 @@
   border: var(--border);
   border-radius: 4px;
   padding: 30px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
   box-sizing: border-box; /* Ensures padding is included in width/height */
+  box-shadow: none; /* Initial shadow */
 }
 
 @media (max-width: 768px) { /* For landscape phones and smaller tablets */
   .infoCard {
-      padding: 20px; /* Smaller padding on smaller screens */
+    padding: 20px; /* Smaller padding on smaller screens */
   }
 }
 
 .infoCard:hover {
-  border: var(--selected-border);
-  background-color: var(--ifm-menu-color-background-active);
+  border: var(--selected-border); /* Keep the initial border */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8); /* Elevation effect for light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  .infoCard:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Elevation effect for dark mode */
+  }
 }
 
 .infoCardIcon {
@@ -41,10 +48,10 @@
 
 .infoCardLink {
   display: flex;
-  color: var(--primary-texr); 
+  color: var(--primary-texr);
 }
 
 .infoCardLink:hover {
-  color: var(--primary-texr); 
+  color: var(--primary-texr);
   text-decoration: none;
 }
