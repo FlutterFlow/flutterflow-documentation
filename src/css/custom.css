@@ -33,16 +33,23 @@ html[data-theme='dark'] {
 
 [data-theme='dark'] {
   --primary-text: var(--white);
-  --ifm-color-primary: #39d2c0; /* Primary brand color, lighter purple for visibility on dark backgrounds */
-  --ifm-color-primary-dark: #2cb5a5; /* Dark shade for hover states, toned down for dark mode */
-  --ifm-color-primary-darker: #24a697; /* Even darker shade for active states, balanced for contrast */
-  --ifm-color-primary-darkest: #1b9c8d; /* Darkest shade used for accents, dark yet visible */
-  --ifm-color-primary-light: #67f6e5; /* Lighter primary shade, appears vibrant against dark surfaces (Adjusted) */
-  --ifm-color-primary-lighter: #7bfaeb; /* Even lighter shade for backgrounds, soft and subtle (Adjusted) */
-  --ifm-color-primary-lightest: #8afbee; /* Lightest primary shade, nearly pastel against dark modes (Adjusted) */
-  --ifm-code-font-size: 95%; /* Maintained font size for readability */
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Lighter line highlighting in code for dark mode */
+  --ifm-color-primary: #7e71f4; /* Primary brand color */
+  --ifm-color-primary-dark: #7262f3; /* Darker shade for hover states */
+  --ifm-color-primary-darker: #9386f6; /* Even darker shade for active states */
+  --ifm-color-primary-darkest: #b3a8fa; /* Darkest shade used for accents */
+  --ifm-color-primary-light: #827acf; /* Lighter primary shade */
+  --ifm-color-primary-lighter: #574ebd; /* Even lighter shade for backgrounds */
+  --ifm-color-primary-lightest: #4c41af; /* Lightest primary shade */
 
+  --ifm-background-color: #1a1a1a; /* Dark background color */
+  --ifm-background-secondary-color: #2a2a2a; /* Slightly lighter background for contrast */
+  --ifm-background-code-color: #2a2a2a; /* Background for code blocks */
+  --ifm-background-code-line-color: #333; /* Background for highlighted lines in code blocks */
+  --ifm-text-color: #e0e0e0; /* Primary text color */
+  --ifm-text-secondary-color: #c0c0c0; /* Secondary text color */
+  --ifm-border-color: #444; /* Border color */
+  --ifm-hover-color: #555; /* Hover color for interactive elements */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 .small-image {
   width: 400px;

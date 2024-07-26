@@ -68,25 +68,9 @@ const config: Config = {
         src: '/logos/logoMark_outlinePrimary_transparent.svg',
       },
       items: [
+
         {
-          type: 'doc',
-          docId: 'troubleshooting/overview', // Adjust to the first document in "Troubleshooting"
-          position: 'left',
-          label: 'Troubleshooting',
-        },
-        {
-          type: 'doc',
-          docId: 'changelog/changelog', // Adjust to the first document in "Changelog"
-          position: 'left',
-          label: 'Changelog',
-        },
-        {
-          to: '/blog/overview',
-          label: 'Blog',
-          position: 'left'
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/FlutterFlow/flutterflow-documentation',
           label: 'GitHub',
           position: 'right',
         },
@@ -100,7 +84,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '#',
             },
           ],
         },
@@ -108,16 +92,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Community Forum',
+              href: 'https://community.flutterflow.io',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/flutterflow',
             },
           ],
         },
@@ -126,11 +106,11 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              to: 'https://blog.flutterflow.io',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/FlutterFlow/flutterflow-documentation',
             },
           ],
         },

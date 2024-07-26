@@ -7,7 +7,6 @@ const InfoCard = ({ icon, title, description, pagePath })=> {
     <a href={pagePath} className={styles.infoCardLink}> {/* Link the card */}
     <div className={styles.infoCard}> 
       <div className={styles.titleContainer}>
-        <img src={icon} alt={`${title} Logo`} className={styles.logo} />
         <div className={styles.infoCardTitle}>{title}</div>
       </div>
       <div className={styles.infoCardDescription}>{description}</div>
