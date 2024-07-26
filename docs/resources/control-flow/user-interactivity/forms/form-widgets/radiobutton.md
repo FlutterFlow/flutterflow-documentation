@@ -1,7 +1,7 @@
 ---
 slug: /resources/forms/radiobutton
 title: RadioButton
-tags: [FlutterFlow, widget, RadioButton, form, input, UI, selection]
+tags: [Widget, RadioButton, Form]
 keywords: [FlutterFlow, RadioButton, form input, user interface, mobile app development, Flutter widget, selection control]
 description: Learn how to add RadioButton widget in your FlutterFlow app.
 sidebar_position: 2

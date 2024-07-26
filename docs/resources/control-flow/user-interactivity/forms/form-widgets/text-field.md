@@ -1,7 +1,7 @@
 ---
 slug: /resources/forms/textfield
 title: TextField
-tags: [FlutterFlow, widget, TextField, form, input, UI]
+tags: [Widget, TextField, Form]
 keywords: [FlutterFlow, TextField, form input, user interface, mobile app development, Flutter widget, text input]
 description: Learn how to add TextField widget in your FlutterFlow app.
 sidebar_position: 0
@@ -650,7 +650,6 @@ If the required format is not on the list, you can select **Custom** and specify
 You might want to restrict the type of characters that can be entered into a TextField. Let's say you are building an app that requires its employees to enter their employee ID when they clock in and out for their shifts. The employee ID consists of only letters and numbers, and the app should only allow these characters to be entered. You can do so by filtering the user input
 
 To filter the user input, select the TextField widget, move to the **Properties Panel** **> Additional Properties >** set the **Filter** dropdown to the one you need.
-
 
 <div style={{
     position: 'relative',
