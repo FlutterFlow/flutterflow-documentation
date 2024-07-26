@@ -79,7 +79,7 @@ The steps to build such an example are as follows:
     </div>
     <p></p>
 
-3. Add [navigation action](../../resources/ui-building-blocks/pages/navigation-.md#navigate-to-action) from page 1 to page 2.
+3. Add [navigation action](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) from page 1 to page 2.
 
 
 
