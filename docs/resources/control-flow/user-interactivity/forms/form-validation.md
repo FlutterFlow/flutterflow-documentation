@@ -1,7 +1,7 @@
 ---
 slug: /resources/forms/form-validation
 title: Form Validation
-tags: [FlutterFlow, form, validation, input, error handling, UI]
+tags: [Form, Validation, Error Handling]
 keywords: [FlutterFlow, form validation, input validation, error handling, user interface, mobile app development, data integrity]
 description: Learn how to add Form Validation widget in your FlutterFlow app.
 sidebar_position: 2

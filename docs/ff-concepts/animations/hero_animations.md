@@ -187,6 +187,6 @@ This is because the image on the second page does not exist on the very first fr
 
 To fix this issue, you can avoid loading an image directly from Firestore. Instead, you can pass the image URL (which would have already been retrieved from the Firestore) from the previous page to the second page. And then use that URL to load the image.
 
-See how to [pass data](#) from one page to another.
+See how to [pass data](../../ff-concepts/navigation-routing/passing-data.md) from one page to another.
 </p>
 </details>

@@ -1,7 +1,7 @@
 ---
 slug: /resources/forms/textfield
 title: TextField
-tags: [FlutterFlow, widget, TextField, form, input, UI]
+tags: [Widget, TextField, Form]
 keywords: [FlutterFlow, TextField, form input, user interface, mobile app development, Flutter widget, text input]
 description: Learn how to add TextField widget in your FlutterFlow app.
 sidebar_position: 0

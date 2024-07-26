@@ -12,5 +12,5 @@ sidebar_position: 0
 Forms are a fundamental part of many applications, serving as the primary method for users to input and submit data. Whether you're building a simple contact form or a complex multi-step survey, FlutterFlow provides a comprehensive set of tools to create, validate, and manage forms effectively.
 
 :::tip
-In this section, you'll learn how to add form widgets such as [**TextField**](forms/textfield), [**Dropdown**](forms/dropdown), [**RadioButton**](forms/radiobutton), [**CheckboxGroup**](forms/checkboxgroup) and add [**Validations**](forms/form-validation) and [**set**](forms/set-form-field)/[**reset**](forms/reset-form-field) actions on these widgets.
+In this section, you'll learn how to add form widgets such as [**TextField**](forms/textfield), [**Dropdown**](forms/dropdown), [**RadioButton**](forms/radiobutton), [**CheckboxGroup**](forms/checkboxgroup), add [**set**](forms/set-form-field)/[**reset**](forms/reset-form-field) actions on these widgets and add [**Validations**](forms/form-validation) to forms.
 :::
