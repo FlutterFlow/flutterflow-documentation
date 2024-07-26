@@ -307,7 +307,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 
 ### Changing error message styling
 
-You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../../resources/ui-building-blocks/widgets/widget-commonalities/#styling-text).
+You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text#common-text-properties).
 
 ![changing-error-message-styling](../../imgs/changing-error-message-styling.avif)
 
@@ -317,7 +317,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](../../../../../resources/ui-building-blocks/widgets/widget-commonalities/#customizing-icon).
+You can also [customize the icon's size and color](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/icons#common-icon-properties).
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
