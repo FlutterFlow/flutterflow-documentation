@@ -1,7 +1,8 @@
 ---
-slug: dropdown
+slug: /resources/forms/dropdown
 title: Dropdown
-tags: []
+tags: [FlutterFlow, widget, Dropdown, form, input, UI, selection]
+keywords: [FlutterFlow, Dropdown, form input, user interface, mobile app development, Flutter widget, selection menu]
 description: Learn how to add Dropdown widget in your FlutterFlow app.
 sidebar_position: 1
 ---

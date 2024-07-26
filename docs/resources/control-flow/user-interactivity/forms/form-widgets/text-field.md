@@ -1,7 +1,8 @@
 ---
-slug: textfield
+slug: /resources/forms/textfield
 title: TextField
-tags: []
+tags: [FlutterFlow, widget, TextField, form, input, UI]
+keywords: [FlutterFlow, TextField, form input, user interface, mobile app development, Flutter widget, text input]
 description: Learn how to add TextField widget in your FlutterFlow app.
 sidebar_position: 0
 ---
@@ -45,7 +46,7 @@ Let's see how to add a TextField widget and see an example of displaying its val
 Here are the steps:
 
 1. First, add the TextField widget, move to the properties panel and give it a name.
-2. Add the [**Button**](#) widget and on tap of it, add an [Alert Dialog action](#). While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
+2. Add the [**Button**](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/button) widget and on tap of it, add an [Alert Dialog action](#). While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
 
 <div style={{
     position: 'relative',
@@ -682,7 +683,7 @@ To check user input for certain criteria or requirements (e.g., email), see *ste
 
 ### Validating input
 
-You can validate the TextField value by wrapping it inside the [Form](../form-validation) widget and adding the validation criteria.
+You can validate the TextField value by wrapping it inside the [Form](../forms/form-validation) widget and adding the validation criteria.
 
 :::tip
 Filtering ensures that only the allowed characters or values are entered, whereas the validation checks the entire input data against certain criteria. Both techniques can be used together or independently to ensure the correctness of user input in a TextField widget.

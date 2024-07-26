@@ -1,9 +1,11 @@
 ---
 slug: slider
 title: Slider
-tags: []
+tags: [FlutterFlow, Slider, Form Widget, App Development]
+keywords: [FlutterFlow, Slider, Form Widget, App Development, Input Field, Flutter]
 description: Learn how to add Slider in your FlutterFlow app.
 ---
+
 
 # Slider
 

@@ -1,8 +1,9 @@
 ---
 slug: pincode
 title: PinCode
-tags: []
-description: Learn how to add PinCodewidget in your FlutterFlow app.
+tags: [FlutterFlow, PinCode, Form Widget, App Development]
+keywords: [FlutterFlow, PinCode, Form Widget, App Development, Input Field, Flutter]
+description: Learn how to add the PinCode widget in your FlutterFlow app.
 ---
 # PinCode
 
@@ -431,5 +432,5 @@ You can change colors for the different states of the pin fields. To do so:
 You can show/hide the cursor using the **Show Cursor** toggle and change the color using the **Cursor Color** property.
 
 :::info[Clear pin code value]
-See how to [reset the pin code value](../../../control-flow/user-interactivity/forms/form-actions/reset-form-field).
+See how to [**reset the pin code value**](../../../../resources/forms/reset-form-field).
 :::

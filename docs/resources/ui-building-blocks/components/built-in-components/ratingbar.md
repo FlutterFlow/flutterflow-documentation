@@ -1,9 +1,11 @@
 ---
 slug: ratingbar
 title: RatingBar
-tags: []
+tags: [FlutterFlow, RatingBar, Form Widget, App Development]
+keywords: [FlutterFlow, RatingBar, Form Widget, App Development, Input Field, Flutter]
 description: Learn how to add RatingBar in your FlutterFlow app.
 ---
+
 
 # RatingBar
 

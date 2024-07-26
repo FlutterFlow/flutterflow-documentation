@@ -1,7 +1,8 @@
 ---
-slug: checkboxgroup
+slug: /resources/forms/checkboxgroup
 title: CheckboxGroup
-tags: []
+tags: [FlutterFlow, widget, CheckboxGroup, form, input, UI, multiple selection]
+keywords: [FlutterFlow, CheckboxGroup, form input, user interface, mobile app development, Flutter widget, multiple choice]
 description: Learn how to add CheckboxGroup widget in your FlutterFlow app.
 sidebar_position: 3
 ---
