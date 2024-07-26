@@ -1,7 +1,7 @@
 ---
 slug: /integrations/authentication/supabase/initial-setup
 title: Initial Setup
-description: Learn how to perform the initial setup for supabase authentication in your FlutterFlow app.
+description: Learn how to perform the initial setup for Supabaseauthentication in your FlutterFlow app.
 tags: [FlutterFlow, Initial Setup, Authentication, supabase]
 sidebar_position: 0
 keywords: [FlutterFlow, Initial Setup, Authentication, supabase]

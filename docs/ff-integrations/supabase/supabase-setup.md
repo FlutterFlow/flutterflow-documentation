@@ -1,7 +1,7 @@
 ---
 slug: /integrations/supabase/setup
-title: supabase Setup
-description: Learn how to set up supabase in your FlutterFlow app for database and authentication functionalities.
+title: SupabaseSetup
+description: Learn how to set up Supabasein your FlutterFlow app for database and authentication functionalities.
 tags: [supabase, Setup, Integration]
 sidebar_position: 1
 keywords: [FlutterFlow, supabase, Setup, Integration]

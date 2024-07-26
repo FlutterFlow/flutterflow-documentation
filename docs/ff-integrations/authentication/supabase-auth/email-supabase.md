@@ -1,7 +1,7 @@
 ---
 slug: /integrations/authentication/supabase/email-authentication
 title: Email Authentication
-description: Learn how to integrate Email Login of supabase Auth into your FlutterFlow app.
+description: Learn how to integrate Email Login of SupabaseAuth into your FlutterFlow app.
 tags: [FlutterFlow, Email Authentication, Authentication, supabase]
 sidebar_position: 2
 keywords: [FlutterFlow, Email Authentication, Authentication, supabase]
