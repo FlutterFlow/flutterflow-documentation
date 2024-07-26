@@ -79,7 +79,7 @@ The steps to build such an example are as follows:
     </div>
     <p></p>
 
-3. Add [navigation action](../../resources/ui-building-blocks/pages/navigation-.md#navigate-to-action) from page 1 to page 2.
+3. Add [navigation action](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) from page 1 to page 2.
 
 
 
@@ -187,6 +187,6 @@ This is because the image on the second page does not exist on the very first fr
 
 To fix this issue, you can avoid loading an image directly from Firestore. Instead, you can pass the image URL (which would have already been retrieved from the Firestore) from the previous page to the second page. And then use that URL to load the image.
 
-See how to [pass data](#) from one page to another.
+See how to [pass data](../../ff-concepts/navigation-routing/passing-data.md) from one page to another.
 </p>
 </details>

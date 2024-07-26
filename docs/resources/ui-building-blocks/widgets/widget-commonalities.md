@@ -322,3 +322,110 @@ This is helpful in assessing spacing and alignment without the need to remove va
 
 
 ![img_4.png](img_4.png)
+
+## Trigger action on selection change
+
+Here, you will see how to trigger an action when the selection changes for any Form widget such as Dropdown, RadioButton, ChoiseChips, Slider, and RatingBar.
+
+:::info
+To simplify, we've used the Dropdown widget as an example. However, the same instructions apply to other Form widgets as well.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1722ccd359a2401a9064f50b0ca38350?sid=9118cb06-4b88-4c69-b3ac-6ec0794b9e62"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+To do so:
+
+1. Select the widget.
+2. Select **Actions** from the properties panel, and click **+ Add Action**.
+3. You will notice that the **Type of Action** (aka callback) is already set to **On Selected**. That means actions added under this will be called whenever the selection changes.
+4. Now you can add any action here.
+
+Here is an example showing the snackbar message when the Dropdown selection changes.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1e6748c17cbb49fe869feeff30ad3eb4?sid=cfc3fb5b-262f-4e50-8213-f23ba0610100"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Adding border
+
+To add a border to any widget:
+
+1. Find the **Border Color** property and change the color using the instructions [here](https://docs.flutterflow.io/widgets-and-components/widgets/widget-commonalities#change-color).
+2. To create the rounded border, use the **Border Radius** property.
+3. Enter values for TL (Top left), TR (top right), BL (bottom left), and BR (bottom right).
+4. To apply the same radius on all sides, switch to the **Uniform Radius** option. You can then adjust the radius by either moving the slider or entering the desired value directly.
+5. Use the refresh icon button to reset all values.
+6. To increase the border thickness, use the **Border Width** property.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/8ce81ac703a44af2a4f8fffc4eeffa1a?sid=300557b1-b922-4bb1-95c0-384302334eee"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
