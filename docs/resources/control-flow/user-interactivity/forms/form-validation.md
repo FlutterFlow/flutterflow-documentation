@@ -55,10 +55,10 @@ Building and validating a *Form* includes the following steps:
 A form widget can only validate if there are any input fields. Here's an example of adding input fields for the signup form.
 
 1. First, add the **Form** widget itself from the **Form Elements**.
-2. Inside the form, add the [**Column**](#) widget from the **Layout Elements** tab.
-3. Now, add two [**TextFields**](form-widgets/textfield) (one for email and one for password).
-4. Add a [**Button**](#) widget and then add [Date/Time Picker](#) action to get the date of birth.
-5. Add one more [**Button**](#) to validate and submit the form.
+2. Inside the form, add the **Column** widget from the **Layout Elements** tab.
+3. Now, add two [**TextFields**](textfield) (one for email and one for password).
+4. Add a [**Button**](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/button/) widget and then add [Date/Time Picker](#) action to get the date of birth.
+5. Add one more **Button** to validate and submit the form.
 
 Here's how it looks:
 
