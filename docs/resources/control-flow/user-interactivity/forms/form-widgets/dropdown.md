@@ -45,7 +45,7 @@ Let's see how to add a *DropDown* widget and build an example that shows the sel
 
 1. Add the **DropDown** widget, move to the **Properties Panel > Define Options >** click **Add Options** to add items.
 2. To display the default value, move to the **Initial Configuration** section and enter the value. Ensure it matches one of the options added in the previous step.
-3. The selected dropdown value can be accessed via *Widget State > DropDown*. To display it on the *Text* widget, add a [**Text**](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > DropDown** (i.e., name of your dropdown).
+3. The selected dropdown value can be accessed via *Widget State > DropDown*. To display it on the *Text* widget, add a [**Text**](../../../../ui/widgets/built-in-widgets/text) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > DropDown** (i.e., name of your dropdown).
 
 <div style={{
     position: 'relative',
@@ -116,7 +116,7 @@ To set an initial value:
 
 You might want to save the dropdown value as soon as the selection changes. This approach is useful when you want to ensure that the user's selection is immediately saved without having to wait for them to submit the form. By doing so, you can provide a better user experience and reduce the risk of data loss in case of any interruption.
 
-You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../../../ui/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
 
 ![Saving *DropDown* value on selection change](../../imgs/saving-dp-value-on-selection-change.webp)
 
@@ -364,7 +364,7 @@ The higher value draws the bigger size of the shadow.
 
 ### Adding border
 
-See how to [add a border](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#adding-border).
+See how to [add a border](../../../../ui/widgets/widget-commonalities#adding-border).
 
 ### Show/hide underline
 
@@ -403,5 +403,5 @@ By default, the dropdown options are displayed over/above the dropdown button. T
 ![Fix position for dropdown options](../../imgs/fix-position.webp)
 
 :::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
 :::

@@ -31,8 +31,7 @@ You will need a text to be used as the **search term** while using the Algolia s
 
 Follow the steps below to create this UI:
 
-1. Drag a TextField widget from the [Widget Panel]
-(/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and drop it onto the canvas. (In the demo below, the TextField is placed inside the AppBar of the app).
+1. Drag a TextField widget from the [Widget Panel](/getting-started/ui-builder/navigation-menu/widget-and-component-panel) and drop it onto the canvas. (In the demo below, the TextField is placed inside the AppBar of the app).
 2. You can customize the TextField properties to match your app's design style. Add a search Icon to signify that it's a search field.
 3. Check the **Update Page On Change** checkbox. This helps to update the page as the user types inside the TextField. This would be required to use the latest text field value as the search term.
 4. Set an **Update Delay** (in milliseconds). This specifies the amount of time after the user stops typing to update the page.

@@ -36,8 +36,8 @@ You can set the value of variables using [actions](#) in FlutterFlow. For instan
 
 Here are examples of setting and using an app state variable ([update]
 (app-state#update-app-state-variable) and [use](app-state#use-app-state)), as well as a 
-page state variable ([set](../ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state) 
-and [use](../ui-building-blocks/pages/page-lifecycle.md#get-page-state-value)).
+page state variable ([set](../ui/pages/page-lifecycle.md#creating-a-page-state) 
+and [use](../ui/pages/page-lifecycle.md#get-page-state-value)).
 
 ## Data types
 

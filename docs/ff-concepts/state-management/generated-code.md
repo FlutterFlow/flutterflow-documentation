@@ -24,13 +24,13 @@ Additionally, they provide space for action blocks, which are a set of actions t
 
 ## Page State
 
-Variables used exclusively within a page—such as a text field validator or the value of a checkbox—are stored in the Model of each page. These variables can be accessed by other component children on the same page. For instance, on a page with a form, tapping a button in one component may need to access the value of a text field in a different component.
+[Variables](../../resources/ui/pages/page-lifecycle.md) used exclusively within a page — such as a text field validator or the value of a checkbox — are stored in the `Model` of each page. These variables can be accessed by other component children on the same page. For instance, on a page with a form, tapping a button in one component may need to access the value of a text field in a different component.
 
-Variables within a page are tracked through StatefulWidgets and are encapsulated into that page’s Model.
+Variables within a page are tracked through `StatefulWidget` and are encapsulated into that page’s Model.
 
 ## Component State
 
-Similar to page state, component variables are accessible within the component where they are defined. Each component has a corresponding Model and Widget class. Variables may be passed in from their parent as parameters. Additionally, you can access component state values from its parent Page widget.
+Similar to page state, [**Component State variables**](../../resources/ui/components/custom-components/component-lifecycle.md) are accessible within the component where they are defined. Each component has a corresponding `Model` and `Widget` class. Variables may be passed in from their parent as parameters. Additionally, you can access component state values from its parent Page widget.
 
 This accessibility is possible because the Model of a component is instantiated within the parent Page model. It utilizes the Provider method `context.read()`, which returns any existing model in the tree before instantiating a new one. Thus, any updates to the state in the component model will reflect in the parent’s instance of that component model.
 

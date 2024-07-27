@@ -33,7 +33,7 @@ Styling helps you customize a widget that matches your design. The Card widget a
 Here's how you stylize the Card widget:
 
 1. Select the **Card** widget and move to the **Properties Panel > Card Properties**.
-2. To change the background color, [modify the Color](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#change-color) property.
+2. To change the background color, [modify the Color](../../widgets/widget-commonalities.md#change-color) property.
 3. To change the elevation (depth or Z-axis), enter the value in the **Elevation** property.
 4. To create the rounded border, use the **Border Radius** property. For uniform curvature on all sides, use the **Uniform Radius** option by sliding the adjustment bar or inputting your preferred value directly.
 

@@ -440,7 +440,7 @@ To customize a button that allows you to start a stream:
    under the **Start Button Style** section.
 
 3. To change the button's text, open the **Start Button Text** section and set the **Text**. You can
-   also [customize the text](../../../resources/ui-building-blocks/widgets/widget-commonalities.md#styling-text) if
+   also [customize the text](../../../resources/ui/widgets/widget-commonalities.md#styling-text) if
    needed.
 
 4. To change the button's icon, open the **Start Button Icon** section and select the new icon. You
@@ -504,7 +504,7 @@ screen).
 To customize the duration indicator:
 
 1. Open the **Duration Text Style** section
-   and [change its text style](../../../resources/ui-building-blocks/widgets/widget-commonalities.md#styling-text).
+   and [change its text style](../../../resources/ui/widgets/widget-commonalities.md#styling-text).
 2. To change the indicator appearance, open the **Duration Container** section and use the property
     such as **Background Color** and **Border Radius**.
 
