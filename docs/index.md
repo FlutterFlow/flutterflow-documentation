@@ -1,9 +1,8 @@
 ---
-title: FlutterFlow Documentation
+title: Getting Started
 custom_edit_url: null
 showLastUpdateTime: false
 hide_title: true
-sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
 ---
