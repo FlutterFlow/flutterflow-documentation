@@ -97,7 +97,7 @@ the next step, we will add the same actions for both MouseRegion widgets so that
 to 
 [add conditional visibility](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#conditional) 
    on menu options.
-4. On both MouseRegion widgets, add an [update app state variable](/actions/actions/state-management/update-app-state) action to set **True** when the mouse enters and **False** when the mouse exit.
+4. On both MouseRegion widgets, add an [update app state variable](../../../../resources/data-representation/app-state.md#update-app-state-action) action to set **True** when the mouse enters and **False** when the mouse exit.
 
 <figure>
     <div style={{

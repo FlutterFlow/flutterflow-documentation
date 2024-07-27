@@ -239,7 +239,7 @@ page is loaded) and set the *isCacheOverride* variable accordingly. Here is how 
     1. First, check if the *lastCacheTime* is set or not. If not, set the current time to it.
     2. Then the idea is to create one custom action that checks if the current time is more than 30 minutes ahead of the *lastCacheTime*. **Note** that 30 minutes is the cache expiration time, and here, it is kept minimum just for simplification purposes; It's important to carefully choose the appropriate expiration time for your cache based on the nature of your data.
     3. if **True** :
-        1. [Update](/actions/actions/state-management/update-app-state) the **lastCacheTime** with 
+        1. [Update](../../../../resources/data-representation/app-state.md#update-app-state-action) the **lastCacheTime** with 
        the current time and **isCacheOverride** to True. Make sure you keep the **Update Type** to **Rebuild Current Page** so that the backend query is made again, which will invalidate the cache and display updated data.
         2. You can also add an action to [Clear Query Cache](/actions/actions/state-management/clear-query-cache).
         3. Continuing the same action flow, [wait](../../../../resources/control-flow/time-based-logic/wait-action.md) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.

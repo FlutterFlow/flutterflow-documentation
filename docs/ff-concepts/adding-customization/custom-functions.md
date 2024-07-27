@@ -71,7 +71,7 @@ You can't have imports in a custom function. To be able to add imports, consider
 <details>
 <summary>Getting error: The function 'FFAppState' isn't defined.</summary>
 
-You can't use the app state variable (i.e., FFAppState().variablename) directly in your custom 
+You can't use the app state variable (i.e., `FFAppState().variablename`) directly in your custom 
 function code. Instead, you can pass the app state variable as a parameter and then use it in your code.
 
 </details>

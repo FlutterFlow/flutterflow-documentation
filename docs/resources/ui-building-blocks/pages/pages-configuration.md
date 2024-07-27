@@ -103,7 +103,7 @@ user profiles, product lists, or any other data your app needs to retrieve from
 a server.
 
 :::info[LEARN MORE]
-To learn more about how to connect to a backend source, refer to our [**Database section**](#)
+To learn more about how to connect to a backend source, refer to our [**Database section**](../../../resources/control-flow/backend-logic/backend-query/backend-query.md)
 :::
 
 ### State Management
@@ -114,5 +114,5 @@ tracking user inputs, remembering user choices, or preserving the app's state
 during navigation between pages. 
 
 :::info[LEARN MORE]
-Learn how to **[how to create and manage the update lifecycle](#)** of Page State variables
+Learn how to create and **[manage the update lifecycle](page-lifecycle.md)** of Page State variables.
 :::
