@@ -11,6 +11,9 @@ The ChoiceChips widget allows users to select a single option from a group of ch
 
 You could use this widget to implement a filter feature in an e-commerce app to let users select different product attributes like size, color, or price range.
 
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [Widget States](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
 
 ## Adding ChoiceChips widget
 

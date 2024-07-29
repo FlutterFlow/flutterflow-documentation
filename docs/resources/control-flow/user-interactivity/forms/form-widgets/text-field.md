@@ -13,6 +13,10 @@ import TabItem from '@theme/TabItem';
 
 The TextField widget allows users to enter text, numbers, and symbols in your app. You can use the TextField widget to build forms, send messages, dialogs, search, etc.
 
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [Widget States](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
+
 ## Adding TextField widget
 
 Let's see how to add a TextField widget and see an example of displaying its value in an [Alert Dialog](#).
