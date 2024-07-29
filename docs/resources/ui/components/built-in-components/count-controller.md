@@ -12,7 +12,7 @@ The CountController widget is used to increment and decrement the count or numbe
 You could use the CountController widget to set the quantity of any product when buying in an e-commerce app.
 
 :::tip[Widget State]
-Before diving into form widgets, check out our guide on [Widget States](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
 :::
 
 ## Adding CountController to your project

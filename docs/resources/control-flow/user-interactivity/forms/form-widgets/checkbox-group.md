@@ -15,7 +15,7 @@ The CheckboxGroup widget is used to allow a user to select multiple items. The c
 You can use the CheckboxGroup widget for implementing multiple selections such as repeating days for alarm, languages a user can speak, and allowing users to select pizza toppings.
 
 :::tip[Widget State]
-Before diving into form widgets, check out our guide on [Widget States](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
 :::
 
 ## Adding CheckboxGroup

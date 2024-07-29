@@ -14,7 +14,7 @@ The DropDown widget enables users to choose from a list of options. It requires 
 You can use this widget in any situation where you want users to select from a set of options, such as selecting a country, choosing a language, or picking a color.
 
 :::tip[Widget State]
-Before diving into form widgets, check out our guide on [Widget States](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
 :::
 
 ## Adding DropDown widget
