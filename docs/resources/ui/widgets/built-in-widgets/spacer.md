@@ -1,3 +1,7 @@
+---
+tags: [Layout Elements]
+---
+
 # Spacer
 
 The [Spacer widget](https://www.youtube.com/watch?v=7FJgd7QN1zI) is used to insert a flexible empty

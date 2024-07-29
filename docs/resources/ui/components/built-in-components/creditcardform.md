@@ -1,7 +1,7 @@
 ---
 slug: credit-card-form
 title: CreditCardForm
-tags: []
+tags: [Form Elements]
 description: Learn how to add CreditCardForm in your FlutterFlow app.
 ---
 # CreditCardForm

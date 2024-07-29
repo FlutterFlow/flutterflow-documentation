@@ -1,3 +1,7 @@
+---
+tags: [Base Elements]
+---
+
 # Draggable + DragTarget
 
 The Draggable widget is used to make a widget that can be dragged and dropped to a different location within the app. It allows users to interact with the app by moving an item using touch gestures or a mouse. The DragTarget widget is used in conjunction with the Draggable widget to specify where a dragged item can be dropped. It creates a region that can accept the data carried by the Draggable widget.

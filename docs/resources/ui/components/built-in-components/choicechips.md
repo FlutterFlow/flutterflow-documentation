@@ -1,7 +1,7 @@
 ---
 slug: choice-chips
 title: ChoiceChips
-tags: []
+tags: [Form Elements]
 description: Learn how to add ChoiceChips in your FlutterFlow app.
 ---
 

@@ -1,7 +1,7 @@
 ---
 slug: pincode
 title: PinCode
-tags: [FlutterFlow, PinCode, Form Widget, App Development]
+tags: [PinCode, Form Elements]
 keywords: [FlutterFlow, PinCode, Form Widget, App Development, Input Field, Flutter]
 description: Learn how to add the PinCode widget in your FlutterFlow app.
 ---

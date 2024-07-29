@@ -1,5 +1,7 @@
 ---
+slug: container
 title: Container
+tags: [Layout Elements]
 ---
 
 # Container
