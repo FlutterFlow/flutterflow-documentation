@@ -5,7 +5,7 @@ authors: john
 description: Understand what constitutes a project in FlutterFlow and how to manage them effectively.
 tags: [Project Management, FlutterFlow, Projects]
 toc_max_heading_level: 5
-sidebar_position: 1
+sidebar_position: 0
 keywords: [Project Management, FlutterFlow, Projects]
 ---
 
