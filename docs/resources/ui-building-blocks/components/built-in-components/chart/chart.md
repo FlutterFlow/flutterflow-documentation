@@ -11,7 +11,6 @@ import TabItem from '@theme/TabItem';
 # Chart
 The chart widget is used to represent the information in a graphical format. You can use it to display complex information in an easily understandable format.
 
-![chart-fi.png](../imgs/chart-fi.png)
 
 ## Types of chart
 
@@ -324,10 +323,58 @@ To display numbers on the X-axis:
 
 <Tabs>
 <TabItem value="1" label="Displaying numbers on the X axis" default>
-![Displaying numbers on the X axis](../imgs/display-numbers-on-x-axis.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/5AcZkCLWyOzTn5fwhLaX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 </TabItem>
 <TabItem value="2" label="Displaying numbers (with formatting) on the X axis">
-![Displaying numbers (with formatting) on the X axis](../imgs/display-numbers-with-formatting-on-x-axis.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/JEOGGv8mqnZIdupEMGo1?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 </TabItem>
 </Tabs>
 
@@ -390,12 +437,59 @@ To display numbers on the Y axis:
 5. You can also customize the appearance of the numbers.
 
 
-
 <Tabs>
 <TabItem value="1" label="Displaying numbers on the Y axis" default>
-![display-numbers-on-y-axis](../imgs/display-numbers-on-y-axis.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/qJn8HQDX9R64b2AI66vc?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 </TabItem>
 <TabItem value="2" label="Displaying numbers (with formatting) on the Y axis">
-![display-numbers-with-formatting-on-y-axis](../imgs/display-numbers-with-formatting-on-y-axis.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/iXMOcpbMLmmlDbiauyg7?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 </TabItem>
 </Tabs>

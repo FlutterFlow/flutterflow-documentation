@@ -13,7 +13,6 @@ The Pie Chart divides the circle (aka Donut) into slices/sections representing d
 
 For example, you could use the Pie Chart to show which animal dominates the pet world.
 
-![pie-chart-fi.avif](../imgs/pie-chart-fi.avif)
 
 ## Adding pie chart
 

@@ -6,9 +6,8 @@ description: Learn how to add ProgressBar widget in your FlutterFlow project.
 sidebar_position: 2
 ---
 
+# ProgressBar
 The ProgressBar widget is used to represent the progress of any task. You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
-
-![progress-bar-2.png](../../imgs/progress-bar-2.png)
 
 ## Adding ProgressBar
 
@@ -65,7 +64,31 @@ To change the size of the Circular progress bar:
     - To set to an **exact size,** select **PX** and enter the desired values.
     - To set the size as a **% of the screen size**, select **%** and enter the desired value.
 
-![changing-size.gif](../../imgs/changing-size.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/fj6FUOogYFAxJG7nfAuO?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing thickness
 
@@ -75,7 +98,31 @@ Changing the thickness property allows you to change the size of the progress ba
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Progress Bar Properties** section.
 3. Find the **Thickness** property and enter the value.
 
-![changing-tickness.gif](../../imgs/changing-tickness.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/jeAyY0xdzi3INgac33it?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing start angle
 
@@ -87,7 +134,31 @@ To change the start angle:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Progress Bar Properties** section.
 3. Find the **Start Angle (degree)** property and enter the value in degree. For example, entering a value of 90 fills the progress bar from the right. Whereas the value of 180 fills the progress bar from the bottom.
 
-![changing-start-angle.gif](../../imgs/changing-start-angle.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/99JpuWlT7fQidzQ6BwqW?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Customizing linear progress bar
 
@@ -105,7 +176,31 @@ To change the size of the Linear Progress Bar:
     - To set to an **exact size,** select **PX** and enter the desired values.
     - To set the size as a **% of the screen size**, select **%** and enter the desired value.
 
-![changing-size-lp.gif](../../imgs/changing-size-lp.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/9xNRyCbbIRZXu3xFDXcQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing thickness
 
@@ -115,7 +210,31 @@ Changing the thickness property allows you to change the height of the progress 
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Progress Bar Properties** section.
 3. Find the **Thickness** property and enter the value.
 
-![changing-tickness-lp.gif](../../imgs/changing-tickness-lp.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/u7enthjVYkwcKPG3ofJR?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing end radius
 
@@ -127,4 +246,28 @@ To change the end radius:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Progress Bar Properties** section.
 3. Find the **End Radius** property and enter the value.
 
-![change-end-radius.gif](../../imgs/change-end-radius.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ZTLozkXuPWEUEOXx4IX9?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

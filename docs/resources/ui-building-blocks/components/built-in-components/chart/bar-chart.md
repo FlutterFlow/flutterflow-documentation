@@ -14,7 +14,6 @@ The Bar Chart shows the rectangular bars on a graph whose height varies as per i
 
 For example, you could use the Bar chart to display each year's income and expense value together.
 
-![bar-chart-fi.avif](../imgs/bar-chart-fi.avif)
 
 ## Adding bar chart
 

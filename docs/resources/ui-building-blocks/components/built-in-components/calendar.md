@@ -9,7 +9,6 @@ sidebar_position: 3
 # Calendar
 The Calendar widget shows days in a month and a week. You can use the Calendar widget to filter the event list by date. For example, showing appointments on a specific date.
 
-![calendar](imgs/calendar-fi.avif)
 
 ## Adding Calendar to your project
 
@@ -52,7 +51,31 @@ When you select/change any date on the calendar, you can display it on the page 
 
 Let's build an example of showing the selected date in a Text widget that looks like the one below:
 
-![showing-selected-date.gif](imgs/showing-selected-date.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/flTBTqgrm4qEVJKVX9CK?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 The steps to show the selected date in the Text widget are as follows:  
 
@@ -281,13 +304,61 @@ You can change the color of the icons displayed on the top right side of the cal
 2. Move to the Properties panel and scroll down to the **Calendar** section.
 3. Find the **Icon Colors** property, click on the box next to **Unset**, select the color, and then click **Use Color** or click on **Unset** and enter a Hex Code directly. You can also choose the color by clicking the Palette and Simple button.
 
-![changing-icon-color.gif](imgs/changing-icon-color.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/fB2aHoT3Qv9FrlXP4wGV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Separate title and icons
 
 By default, the calendar title (displaying the current month-year) and the icon for changing the month are positioned on the same row. If you wish to place them in separate rows, navigate to the **Properties Panel > Calendar >** and **enable the Two-row Header** option.
 
-![separate-title-icon.gif](imgs/separate-title-icon.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/C6QmsfHDwktnhPyFkuYi?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Changing row height
 
@@ -299,4 +370,28 @@ To change the row height:
 2. Move to the Properties panel and scroll down to the **Calendar** section.
 3. Find the **Row Height** property and enter the value.
 
-![changing-row-height.gif](imgs/changing-row-height.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/srhb02TuijJ6YI555RV0?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

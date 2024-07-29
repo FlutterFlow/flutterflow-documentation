@@ -22,13 +22,61 @@ Here's an example of how you can use a CountController widget in your project:
 4. The Step Size property sets the value by which the count should be increased or decreased. The default value is 1. To change this, enter the value in the **Step Size** input box.
 5. To allow users to set the valid count or quantity, you can limit the CountController range (min and max count) by specifying the value in the **Minimum** and **Maximum** input boxes.
 
-![Adding CountController widget](imgs/adding-count-controller-widget.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/QxOXTN0E8F6GO608EikB?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Trigger action on count change
 
 Let's see how to trigger an action when the count changes on this widget. This is helpful when you want to update the latest count in your backend (make API call, create/update Firestore document) as the count changes.
 
-![Showing the latest count as it changes](imgs/show-latest-count.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/HmJC32jKu1Ha2DvUDGQX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 To do so:
 
@@ -38,7 +86,31 @@ To do so:
 
 Here is an example of updating the count in an [app state variable](../../../../resources/data-representation/app-state).
 
-![Trigger action on count change](imgs/adding-on-count-change.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/55UjuTZTlCQEI1ZibV7R?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Customizing CountController
 
@@ -54,4 +126,28 @@ To customize the decrement icon:
 4. To change the icon size, enter the value in the **Icon Size** property.
 5. To change the icon color, find the **Icon Color** property, click on the box next to the selected color, select the color, and click **Use Color** or click on **Unset** and enter a Hex Code directly.
 
-![customize-icon](imgs/customize-icon.gif)
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/YBrT2IY4lwjbYPOpSRif?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

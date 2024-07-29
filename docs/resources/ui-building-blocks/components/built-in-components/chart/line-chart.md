@@ -14,8 +14,6 @@ The Line Chart connects the data points on a graph with a line. This is typicall
 
 For example, you could use this widget to show progress over some time. This will plot the progress value on a chart that becomes easily digestible for the users instead of just showing numbers in a tabular format.
 
-![line-chart-fi.avif](../imgs/line-chart-fi.avif)
-
 ## Adding line chart
 
 Adding a chart comprises of following steps:
