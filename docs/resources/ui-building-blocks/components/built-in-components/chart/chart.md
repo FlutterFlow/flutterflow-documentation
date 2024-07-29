@@ -16,9 +16,9 @@ The chart widget is used to represent the information in a graphical format. You
 
 You can add the following types of charts:
 
-1. [Line Chart](#)
-2. [Bar Chart](#)
-3. [Pie Chart](#)
+1. [Line Chart](line-chart.md)
+2. [Bar Chart](bar-chart.md)
+3. [Pie Chart](pie-chart.md)
 
 
 ## Customizing chart
@@ -113,7 +113,7 @@ You can change the appearance of the legend box by following the instructions be
 To customize the legend text and indicator:
 
 1. First, [enable the legend](#showing-legend).
-2. To style the legend text, scroll down to the **Legend Properties** > **Legend Text Properties** and change the style as per [here](#).
+2. To style the legend text, scroll down to the **Legend Properties** > **Legend Text Properties** and change the style as per [here](../../../../../resources/ui-building-blocks/widgets/built-in-widgets/text.md#common-text-styling-properties).
 3. To add space between the indicator and the text, adjust the **Text Padding** property.
 4. You can change the indicator size by entering a value inside the **Indicator Size** property.
 5. To create rounded corners around the indicator, you can use the **Indicator Border Radius** property.
@@ -317,7 +317,7 @@ To display numbers on the X-axis:
 
 1. Select the **Chart** widget, head over to the properties panel, and scroll down to the **Chart Properties** section.
 2. Scroll down to the **X Axis Properties** and enable the **Show Label** option.
-3. When it comes to displaying numbers, it's usually acceptable to show up to two digits as is. However, if the number exceeds that limit, it's recommended to set the **Label Format Type** to **Number** and configure the appropriate [**Number Format Options**](#).
+3. When it comes to displaying numbers, it's usually acceptable to show up to two digits as is. However, if the number exceeds that limit, it's recommended to set the **Label Format Type** to **Number** and configure the appropriate **Number Format Options**.
 4. Enter the value in the **Label Interval** input box.
 5. You can also customize the appearance of the numbers.
 
@@ -432,7 +432,7 @@ To display numbers on the Y axis:
 
 1. Select the **Chart** widget, head over to the properties panel, and scroll down to the **Chart Properties** section.
 2. Scroll down to the **Y Axis Properties** and enable the **Show Label** option.
-3. When it comes to displaying numbers, it's usually acceptable to show up to two digits as is. However, if the number exceeds that limit, it's recommended to set the **Label Format Type** to **Number** and configure the appropriate [**Number Format Options**](#).
+3. When it comes to displaying numbers, it's usually acceptable to show up to two digits as is. However, if the number exceeds that limit, it's recommended to set the **Label Format Type** to **Number** and configure the appropriate **Number Format Options**.
 4. Enter the value in the **Label Interval** input box.
 5. You can also customize the appearance of the numbers.
 

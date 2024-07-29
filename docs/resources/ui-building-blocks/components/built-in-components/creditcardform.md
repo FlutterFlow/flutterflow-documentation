@@ -8,8 +8,6 @@ sidebar_position: 7
 # CreditCardForm
 The CreditCardForm widget allows users to enter their credit card details such as card number, expiry date, and CVV.
 
-You can use this widget when you want to accept payment via credit card while using the [Braintree payment](#) method.
-
 ## Adding CreditCardForm widget
 
 Here's an example of how you can add the CreditCardForm widget to your project:

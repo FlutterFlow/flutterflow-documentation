@@ -48,7 +48,7 @@ Let's see how to add a DataTable widget by building an example that shows a list
 
 The steps to add DataTable and display the employees' details are:
 
-1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette) and locate the **DataTable** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
+1. Open the [Widget Palette](../../../../intro/flutterflow-ui/widget-palette) and locate the **DataTable** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. It adds two types of predefined widgets:
     1. **DataTableHeader**: This refers to the top row of the table, which displays the names of the columns. To change its text, click on the **DataTableHeader > Text** widget, move to the properties panel and give it a name.
     2. **DataTableCell**: This displays the actual data. By default, it comes with the Text widget. However, you can replace it with any other widget based on your requirements.
@@ -194,7 +194,7 @@ List<EmployeesRecord> sortMyData(
 
 ## Searching
 
-You can add search functionality to the DataTable widget using our Simple Search feature. However, for this specific widget, instead of using a [Conditional Builder](#) widget, you can directly utilize the [Conditional Value](#) to determine which result to display based on the `IsShowFullList` variable.
+You can add search functionality to the DataTable widget using our Simple Search feature. However, for this specific widget, instead of using a [Conditional Builder](../../../../ff-concepts/layout/responsive-widgets/conditional-builder-widget.md) widget, you can directly utilize the [Conditional Value](../../../../resources/control-flow/functions/conditional-logic.md#conditional-value-ifthenelse) to determine which result to display based on the `IsShowFullList` variable.
 
 ![searching-through-table](imgs/searching-through-table.avif)
 
@@ -228,13 +228,13 @@ You might want to allow users to select one or more of its rows for tasks like e
 </div>
 <p></p>
 
-To achieve this, create a [page state variable](#) to store the selected list. Upon button click, update this variable with the chosen selections from the DataTable. **Note that** the DataTable provides a list of selected row indices; you'll need a [custom function](#) to retrieve the actual rows corresponding to these indices.
+To achieve this, create a page state variable to store the selected list. Upon button click, update this variable with the chosen selections from the DataTable. **Note that** the DataTable provides a list of selected row indices; you'll need a [custom function](../../../../ff-concepts/adding-customization/cloud-functions.md) to retrieve the actual rows corresponding to these indices.
 
 Here are the exact steps:
 
-1. First, create a [page state](#) variable that will hold the list of selected rows.
+1. First, create a [page state](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state) variable that will hold the list of selected rows.
 2. Select the **DataTable**, move to the **Properties Panel > Paginated Data Table Properties >** turn on the **Selectable** toggle.
-3. On button click, [update the page state](#) variable with the selected rows. While adding this action, use the following custom function to retrieve the selected items based on the indices. You can get the list of selected rows indices via **Widget State > DataTable Selected Rows**.
+3. On button click, [update the page state](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#update-page-state-action) variable with the selected rows. While adding this action, use the following custom function to retrieve the selected items based on the indices. You can get the list of selected rows indices via **Widget State > DataTable Selected Rows**.
 4. Optionally, you could pass this variable to a new page to display the selection.
 
 Custom function:
@@ -320,7 +320,7 @@ To do so:
 1. Select the **DataTable** widget.
 2. Select **Actions** from the Properties panel and open **Action Flow Editor**.
 3. Select **On Page Changed**. This callback gives you the **Current Row Index**, which is the index of the first row of a new page. For example, if you have 25 items (0-24) on the current page, the **Current Row Index** value will be 25. This is helpful in APIs that fetch a fixed set of data by specifying a starting position ([offset](https://developer.box.com/guides/api-calls/pagination/offset-based/)).
-4. Now, add an action to call the paginated API (that returns the result in chunks). See [how to add the paginated API](#) call by adding query parameters. For this example, we use this API: https://reqres.in/api/users?per_page=7&page=1. **Note**: this API uses page-based rather than offset-based pagination, requiring manual adjustment of the page variable.
+4. Now, add an action to call the paginated API (that returns the result in chunks). See [how to add the paginated API](../../../../resources/control-flow/backend-logic/api/rest-api.md#query-parameters) call by adding query parameters. For this example, we use this API: https://reqres.in/api/users?per_page=7&page=1. **Note**: this API uses page-based rather than offset-based pagination, requiring manual adjustment of the page variable.
 5. On the success of the API call, you can add an action to append the new data in the current list. For this, you can add the following custom function to add new results to existing data.
 
 ```dart
