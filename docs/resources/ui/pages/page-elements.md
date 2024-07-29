@@ -7,10 +7,12 @@ toc_max_heading_level: 5
 
 # Scaffold Elements
 
+<!--
 :::info
 To learn about Scaffold and the various page elements under it, refer to the [**Behind a
 FlutterFlow Page**](#) section.
 :::
+-->
 
 ## AppBar
 
