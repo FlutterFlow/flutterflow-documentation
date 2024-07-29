@@ -28,9 +28,9 @@ The steps to build such an example are as follows:
 In this example, we have two images of a shelf: one with empty space for one plant and another 
 with all plants on the shelf. To control which image to show based on whether the correct item 
 is dropped on the shelf, we need a 
-[page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#page-state). 
+[page state variable](../../pages/page-lifecycle.md#page-state). 
 Therefore, 
-[create a page state variable](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state)
+[create a page state variable](../../pages/page-lifecycle.md#creating-a-page-state)
 named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
 
 <figure>
@@ -101,8 +101,8 @@ and click **Open**. This will open an **Action Flow Editor** in a new popup wind
     1. Select the **On Drag Accept** and select **+ Add Conditional Action**.
     5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](/widgets-and-components/widgets/base-elements/draggable-+-dragtarget#id-2.-add-draggable-widgets).
     8. Check if the captured data matches the expected item, i.e., plant.
-    11. In the **TRUE** branch, you can add a [snackbar message](../../../ui-building-blocks/pages/page-elements.md#snackbar) and [update](../../../ui-building-blocks/pages/page-lifecycle.md#page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
-3. Now, select the **On Drag Exit** andadd an action to [update](../../../ui-building-blocks/pages/page-lifecycle.md#page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.
+    11. In the **TRUE** branch, you can add a [snackbar message](../../pages/page-elements.md#snackbar) and [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
+3. Now, select the **On Drag Exit** andadd an action to [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.
 
 <details>
 <summary>On Drag Accept</summary>

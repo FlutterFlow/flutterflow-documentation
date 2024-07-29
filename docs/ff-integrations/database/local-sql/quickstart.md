@@ -1,5 +1,5 @@
 ---
-slug: /integrations/database/sqlite/quickstart
+slug: /integrations/database/sqlite
 title: SQLIte Quickstart
 description: Learn how to quickly get started with SQLite in your FlutterFlow app for local data storage.
 tags: [FlutterFlow, SQLite, Database, Quickstart, Local Storage]
@@ -38,7 +38,7 @@ Here are the steps to build such an example:
 
 To enable SQLite in FlutterFlow, navigate to Settings and Integrations > Integrations > SQLite > switch on the **Enable SQLite** toggle.
 
-![img.png](img.png)
+![img.png](imgs/img.png)
 
 ## 2. Database configuration
 
@@ -86,7 +86,7 @@ In general, to add any query, you need to provide a name, the query statement, a
 
 * To use variables, simply use the syntax `${variableName}`. For example: `SELECT \* FROM Notes WHERE id = ${noteId}`
 * When passing string or text data in queries, enclose variables in single quotes, like `${title}`, to signify them as strings.
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 :::
 
 Below are the queries that we'll require for this example:
@@ -154,7 +154,7 @@ com/embed/aa0bb7bea67145c8b0b61ce57485a5c2?sid=9d950aba-c498-484c-8507-c795bee74
 
 To show a list of notes, you can use the **ListView** > **Container** widgets to design a page that looks like the following:
 
-![img_2.png](img_2.png)
+![img_2.png](imgs/img_2.png)
 
 Now, on the ListView widget, add a [SQLite backend query](/data-and-backend/backend-query/sqlite-query) and display data in UI elements.
 
@@ -204,7 +204,7 @@ com/embed/bb775d5da5614117ac6fbe6542b6c29f?sid=877e565c-be16-4c77-a92c-9a6a95408
 
 For updating note values, like marking a note as completed or modifying other fields, utilize 
 the SQLite Query Action and set the type to **Update Query**. Here, set the Query Name to 
-[UpdateNote](#3-updatenote).
+[Update Note](#3-updatenote).
 
 
 
@@ -215,19 +215,19 @@ com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72
 
 :::info
 
-* In this example, we are updating the note on a bottom sheet component. To provide a better user experience, we initially display the current values of the note, ensuring that users have a clear idea of what they are going to edit. To display the note values in bottom sheet, we [pass](../../../../ff-concepts/navigation-routing/passing-data.md) the current note with **Type** set to **SQLite Row**.
+* In this example, we are updating the note on a bottom sheet component. To provide a better user experience, we initially display the current values of the note, ensuring that users have a clear idea of what they are going to edit. To display the note values in bottom sheet, we [pass](../../../ff-concepts/navigation-routing/passing-data.md) the current note with **Type** set to **SQLite Row**.
 
-![img_3.png](img_3.png)
+![img_3.png](imgs/img_3.png)
 
 * When updating a date value, we also verify if the date has been modified. If there's no change, we simply pass back the same value we received.
 :::
 
 ## 7. Delete note
 
-You can delete an existing note from the database using the [SQLite query action](../../../../resources/control-flow/backend-logic/backend-query/sqlite-query.md) with the type set to *Update Query* and Query Name to **Delete Note**.
+You can delete an existing note from the database using the [SQLite query action](../../../resources/control-flow/backend-logic/backend-query/sqlite-query.md) with the type set to *Update Query* and Query Name to **Delete Note**.
 
 :::tip[Pro Tip] 
-To refresh the page, simply add an [**Update App State Action**](../../../../resources/data-representation/app-state.md) Action with the Update Type set 
+To refresh the page, simply add an [**Update App State Action**](../../../resources/data-representation/app-state.md) Action with the Update Type set 
 to 'Rebuild Current Page'.
 :::
 Here's how you do it:

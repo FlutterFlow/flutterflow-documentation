@@ -13,14 +13,14 @@ consistent framework for each page, allowing you to define and organize its stru
 
 Here's how the `Scaffold` contributes to page design in FlutterFlow:
 
-- **AppBar** : Scaffold allows you to easily include an `AppBar` at the top of the
+- **[AppBar](page-elements.md#appbar)** : Scaffold allows you to easily include an `AppBar` at the top of the
   page,
   which can house the title, navigation controls, and other actions.
 
-- **Floating Action Button (FAB)**: An action button that is commonly used for
+- **[Floating Action Button (FAB)](page-elements.md#floating-action-button-fab)**: An action button that is commonly used for
   primary actions on the screen, like adding a new contact or composing a message.
 
-- **Drawer & End-Drawer**: A slide-out menu for app navigation, accessible from
+- **[Drawer & End-Drawer](page-elements.md#drawers)**: A slide-out menu for app navigation, accessible from
   the `AppBar` or by swiping from the side.
 
 - **Body:** The main content area where you place your widgets for the body of the Page.
@@ -32,7 +32,7 @@ In FlutterFlow, you won't find a section explicitly labeled as "Body". For examp
 ![scaffold-elements.png](../imgs/scaffold-elements.png)
 :::
 
-In FlutterFlow, you will find these Page Widgets under **Page Elements** in Widget Palette.
+In FlutterFlow, you will find these Page Widgets under **[Page Elements](page-elements.md)** in Widget Palette.
 
 <!--
 :::tip[Generated Code]

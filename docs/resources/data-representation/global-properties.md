@@ -40,3 +40,8 @@ A list of all the available global properties is as follows:
 - **Is Dark Mode:** Checks if the app's current theme mode is set to dark.
 - **Is Light Mode:** Checks if the app's current theme mode is set to light.
 - **Is On-Screen Keyboard Visible:** Checks if the on-screen or soft keyboard is visible. This is helpful in making UI adjustments if keyboard is visible on screen.
+
+
+:::tip[Generated Code]
+Learn more about the [**Generated Code**](../../ff-concepts/state-management/generated-code.md#global-state) behind Global Properties.
+:::

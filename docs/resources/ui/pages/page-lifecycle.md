@@ -43,10 +43,10 @@ and ready for use by the time the first version of the **Page** is initialized.
 specific events or user interactions within an application. FlutterFlow provides
 developers with a way to define logic that responds to various events, such as
 button clicks, page loads, form submissions, or data changes.
-To learn more, head over to **[Action Flow Editor](#)** section
+To learn more, head over to **[Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md)** section
 :::
 
-As you open the [Action Flow Editor](#) for your Scaffold (Page), you can see the following Action
+As you open the [Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md) for your Scaffold (Page), you can see the following Action
 Triggers exposed for your Page.
 
 ![actions-triggers.png](../imgs/actions-triggers.png)
@@ -99,9 +99,9 @@ trigger specific actions in response to a phone shake gesture.
 
 ## Page state
 
-:::note[STATE VARIABLES]
+:::note[State Variables]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here](#)**
+about **states and state management, [refer here](../../../ff-concepts/state-management/state-management.md)**
 :::
 
 
@@ -198,7 +198,7 @@ the above example:
 You can set the Data Type of your Page State variable to any primitive data types such as **String,
 Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
 Type, Document,** etc. To learn more about the available data types, refer the [**Data
-Representation Section.** ](#)
+Representation Section.** ](../../data-representation/overview.md)
 :::
 
 ### Get Page State value

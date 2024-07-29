@@ -51,14 +51,14 @@ To add the ChoiceChips widget to your app:
 
 ## Trigger action on change
 
-See how to [trigger an action when a selection changes](../../../../../resources/ui-building-blocks/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+See how to [trigger an action when a selection changes](../../../../resources/ui/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
 
 ## Select or clear all choices [Action]
 
 Users may need to swiftly deselect all chips or choose all available choice chips at once. You can do so by adding the **Clear All/Select All** action.
 
 :::info
-Before you add this action, ensure you [**allow multiselect**](#allow-mulitselect) on this widget.
+Before you add this action, ensure you [**allow multiselect**](#allow-multiselect) on this widget.
 :::
 
 ## Customizing

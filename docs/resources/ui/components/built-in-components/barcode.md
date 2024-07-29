@@ -86,7 +86,7 @@ To change the size of the barcode widget, select the **Barcode** widget, move to
 
 ### Changing color
 
-To change barcode colors, select the **Barcode** widget, move to the properties panel, and [change the colors](../../../../resources/ui-building-blocks/widgets/widget-commonalities.md#change-color) for the following properties:
+To change barcode colors, select the **Barcode** widget, move to the properties panel, and [change the colors](../../widgets/widget-commonalities.md#change-color) for the following properties:
 
 * **Foreground Color**: This sets the line or pattern color.
 * **Background Color**: This sets the background color behind the line or pattern.

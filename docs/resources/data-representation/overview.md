@@ -35,9 +35,9 @@ Learn more about creating [app state variables](app-state), [page state variable
 You can set the value of variables using [actions](#) in FlutterFlow. For instance, when a button is clicked, you can set a variable to a certain value. Variables can be accessed to control the behavior of UI components, such as visibility, text content, and styling. For example, a text widget can display the value of a variable.
 
 Here are examples of setting and using an app state variable ([update]
-(app-state#update-app-state-variable) and [use](app-state#use-app-state-variable)), as well as a 
-page state variable ([set](../ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state) 
-and [use](../ui-building-blocks/pages/page-lifecycle.md#get-page-state-value)).
+(app-state#update-app-state-variable) and [use](app-state#use-app-state)), as well as a 
+page state variable ([set](../ui/pages/page-lifecycle.md#creating-a-page-state) 
+and [use](../ui/pages/page-lifecycle.md#get-page-state-value)).
 
 ## Data types
 

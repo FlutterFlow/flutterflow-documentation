@@ -110,7 +110,7 @@ To set the page URL:
 #### 3. Sharing deep link
 
 You can share the deep link of the current page by adding
-the [share action](/actions/actions/share/share).
+the [share action](share-action.md).
 
 To share the deep link of the current page:
 
@@ -320,7 +320,7 @@ To set the page URL:
 
 You can share the dynamic link of the current page by adding the [**Generate Current Page Link
 **](generate-current-page-link.md)
-action and then sharing it using the [**Share Action**](/actions/actions/share/share).
+action and then sharing it using the [**Share Action**](share-action.md).
 
 To share the dynamic link of the page:
 

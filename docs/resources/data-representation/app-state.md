@@ -18,11 +18,11 @@ App state variables should be used in scenarios where the same data needs to be 
 
 App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](#) or [component state](#) variable instead.
 
-## Working with App State Variables
+## App State Variables
 
 Let’s see how you can manage the app state variable using an example of adding items to a cart in a shopping app. 
 
-### Create app state variable
+### Create App State variable
 
 Head over to the left-side navigation menu and follow the steps below to create a variable.
 
@@ -51,9 +51,38 @@ Head over to the left-side navigation menu and follow the steps below to create 
         allow="clipboard-write">
     </iframe>
 </div>
-### Update app state variable
 
-To update the app state variable, we need to add an action to the 'Add to Bag' button. Within this action, we'll provide the product details and configure it to add to the current cart list.
+#### App State Properties
+
+- **isList:** Whether this field is a list type (e.g List of String or List of Custom Data Type)
+- **Persisted:** Whether this app state is saved to disk so that it can be loaded when the app is restarted. Otherwise the field will be reset on restart.
+ 
+:::tip[Generated Code]
+  Curious about what happens when the **Persisted** toggle is on? Check out the [**Generated Code**](../../ff-concepts/state-management/generated-code.md#persisting-app-state) guide.
+ :::
+
+
+### Use App State
+
+The variable can now be accessed via set from variable menu. For example, on the cart page, you can loop through the app state variable to display each item.
+
+![access-app-state-variable.avif](../imgs/access-app-state-variable.avif)
+
+### Update App State [Action]
+
+You can update an app state from the Actions Panel anywhere in the app, whether it's on tap of a widget in a component or page, or via custom code in FlutterFlow.
+
+When you update the app state via the Action Flow Editor, you will find the following options in the Action Settings.
+![update-app-state-action.png](..%2Fimgs%2Fupdate-app-state-action.png)
+
+#### Update Type
+How this app state update will affect your app.
+
+- **Rebuild All Pages:** Rebuilds all pages in the app when this app state is updated. 
+- **Rebuild Current Page:** Rebuilds only the current page when this app state is updated. 
+- **No Rebuild:** No rebuild is required. 
+
+Here's a quick guide to updating the app state variable. We need to add an action to the 'Add to Bag' button. Within this action, we'll provide the product details and configure it to add to the current cart list.
 
 <div style={{
     position: 'relative',
@@ -81,8 +110,3 @@ To update the app state variable, we need to add an action to the 'Add to Bag' b
     </iframe>
 </div>
 
-### Use app state variable
-
-The variable can now be accessed via set from variable menu. For example, on the cart page, you can loop through the app state variable to display each item.
-
-![access-app-state-variable.avif](../imgs/access-app-state-variable.avif)
