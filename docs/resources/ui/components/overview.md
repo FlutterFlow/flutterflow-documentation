@@ -1,6 +1,6 @@
 ---
 title: Overview
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Components
