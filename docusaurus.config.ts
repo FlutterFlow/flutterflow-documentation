@@ -70,6 +70,12 @@ const config: Config = {
       items: [
 
         {
+          type: 'doc',
+          docId: 'marketplace/index',
+          position: 'left',
+          label: 'Marketplace',
+        },
+        {
           href: 'https://github.com/FlutterFlow/flutterflow-documentation',
           label: 'GitHub',
           position: 'right',
@@ -87,7 +93,9 @@ const config: Config = {
               to: '#',
             },
           ],
+
         },
+
         {
           title: 'Community',
           items: [
