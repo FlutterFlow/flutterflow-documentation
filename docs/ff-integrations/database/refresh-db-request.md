@@ -3,7 +3,7 @@ slug: /integrations/database/refresh-db-request
 title: Refresh DB Request Action
 description: Learn how to use the Refresh DB Request action in your FlutterFlow app to refresh your database content.
 tags: [FlutterFlow, Database, Refresh, Action]
-sidebar_position: 1
+sidebar_position: 4
 keywords: [FlutterFlow, Database, Refresh, Action]
 ---
 

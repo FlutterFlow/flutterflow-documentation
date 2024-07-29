@@ -25,15 +25,15 @@ Below is a preview of what your app will look like once completed:
 <br/>
 The steps to build the app are as follows:
 
-1. [Clone or create project](#clone-project)
+1. [Clone or create project](#1-clone-or-create-project)
 2. [Building UI](#build-ui)
 3. [Customize style](#customize-style)
 4. [Manage state](#manage-state)
 5. [Run the app](#run-app)
 
-## 1. Clone or create project {#clone-project}
+## 1. Clone or create project
 
-To kick off your project, the first step is to [create a new project](#). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account. 
+To kick off your project, the first step is to [create a new project](../resources/projects/how-to-create-find-organize-projects.md#how-to-create-a-project). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account. 
 
 ![clone-project.png](clone-project.png)
 
@@ -115,7 +115,7 @@ Once your UI is set up, it's time to make your app interactive by adding a state
 
 ### 4.1 Add state variable
 
-We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](#) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
+We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](../resources/ui/pages/page-lifecycle.md) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
 
 Here's how to add and use state variables:
 
@@ -147,7 +147,7 @@ Here's how to add and use state variables:
 
 ### 4.2 Update state variable
 
-To update the state variable, we will need to add actions. Actions are essentially functions that are triggered by the user's interaction, in this case, by clicking either the "Increase" or "Decrease" buttons. You can add actions to your buttons via the [actions panel](#). 
+To update the state variable, we will need to add actions. Actions are essentially functions that are triggered by the user's interaction, in this case, by clicking either the "Increase" or "Decrease" buttons. You can add actions to your buttons via the [Actions Panel](../resources/control-flow/functions/action-flow-editor.md). 
 
 Here's how to add actions to your buttons and update the state variable:
 
@@ -179,7 +179,7 @@ Here's how to add actions to your buttons and update the state variable:
 
 ## 5. Run the App {#run-app}
 
-Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [Test](#) and [Run](#) mode. The Run mode requires 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[Hot Reload](#)" feature.
+Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [**Test**](../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) and [**Run**](../testing-deployment-publishing/running-your-app/run-your-app.md#run-mode) mode. The Run mode requires 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[**Hot Reload**](https://docs.flutter.dev/tools/hot-reload)" feature.
 
 <div style={{
     position: 'relative',
@@ -211,4 +211,6 @@ Congratulations! You've built your first app with FlutterFlow.
 
 ## **Problems?**
 
-If you're experiencing any issues with the app, ensure that you have followed the instructions correctly. For troubleshooting, refer to our [comprehensive guide](#) or seek assistance from the [Community Forum](https://flutterflow.bettermode.io/). If you're still encountering problems, don't hesitate to report the issue to our support team.
+If you're experiencing any issues with the app, ensure that you have followed the instructions correctly. 
+<!-- For troubleshooting, refer to our [comprehensive guide](#) or -->
+To seek assistance from the [Community Forum](https://community.flutterflow.io/). If you're still encountering problems, don't hesitate to report the issue to our support team.

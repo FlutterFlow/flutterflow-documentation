@@ -274,7 +274,7 @@ To do so:
 :::
 
 Here is an example showing the 
-[**Snackbar**](../../../resources/ui-building-blocks/pages/page-elements.md#show-snackbar-action)
+[**Snackbar**](../../../resources/ui/pages/page-elements.md#show-snackbar-action)
 message when the data 
 changes in a collection.
 

@@ -48,7 +48,7 @@ Here are the step-by-step instructions to build such an example:
 ### 1. Add page state variables
 
 For this example, you'll need to set up two 
-[Page State variables](../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state):
+[Page State variables](../../resources/ui/pages/page-lifecycle.md#creating-a-page-state):
 
 1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a 
 loading indicator during the logo creation process. Its value is set to *True* before initiating the API call and switched to *False* once the logo generation is complete.

@@ -28,7 +28,7 @@ Here is a list of all the features accessible from the navigation menu:
 5. **Storyboard**: Visualize app's design and navigation.
 6. **Firestore**: Create collections and adjust Firestore-related settings.
 7. **Data Types**: Create custom data types for your app.
-8. **App Values**: Manage App State variables and Constants.
+8. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
 9. **API Calls**: Define API calls.
 10. **Media Assets**: Upload assets for your app and team.
 11. **Custom Functions**: Add custom functionalities, widgets, and actions.

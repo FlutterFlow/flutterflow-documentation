@@ -91,7 +91,7 @@ In FlutterFlow, you can implement conditional logic in two primary ways:
   Example: If the user clicks a button and a form is valid, navigate to the next screen; otherwise, show an error message.
 
 :::info 
-Check out the [**complete guide**](functions/conditional-logic.md) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](#)** guide instead. 
+Check out the [**complete guide**](functions/conditional-logic.md) here. Are you looking to learn about implementing conditional UI instead? Check out our **[Responsiveness 101](../../ff-concepts/layout/responsive-layout.md)** guide instead. 
 :::
 
 ## Sequential vs Parallel Logic Flow
