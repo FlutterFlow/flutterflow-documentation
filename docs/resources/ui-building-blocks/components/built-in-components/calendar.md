@@ -3,7 +3,6 @@ slug: calendar
 title: Calendar
 tags: []
 description: Learn how to add Calendar widget in your FlutterFlow project.
-sidebar_position: 3
 ---
 
 # Calendar

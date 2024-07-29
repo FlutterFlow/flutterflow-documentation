@@ -1,9 +1,8 @@
 ---
-slug: choicechips
+slug: choice-chips
 title: ChoiceChips
 tags: []
 description: Learn how to add ChoiceChips in your FlutterFlow app.
-sidebar_position: 9
 ---
 
 

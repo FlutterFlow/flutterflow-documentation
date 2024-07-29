@@ -1,9 +1,8 @@
 ---
-slug: countcontroller
+slug: count-controller
 title: CountController
 tags: []
 description: Learn how to add CountController in your FlutterFlow app.
-sidebar_position: 8
 ---
 
 # CountController

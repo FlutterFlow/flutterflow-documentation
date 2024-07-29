@@ -3,7 +3,6 @@ slug: progressbar
 title: ProgressBar
 tags: []
 description: Learn how to add ProgressBar widget in your FlutterFlow project.
-sidebar_position: 2
 ---
 
 # ProgressBar

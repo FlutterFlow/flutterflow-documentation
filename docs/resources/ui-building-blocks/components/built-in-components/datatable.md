@@ -3,7 +3,6 @@ slug: datatable
 title: DataTable
 tags: []
 description: Learn how to add DataTable widget in your FlutterFlow project.
-sidebar_position: 6
 ---
 
 # DataTable (Paginated)
