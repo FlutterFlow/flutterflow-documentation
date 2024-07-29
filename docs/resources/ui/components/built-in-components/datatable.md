@@ -231,9 +231,9 @@ To achieve this, create a page state variable to store the selected list. Upon b
 
 Here are the exact steps:
 
-1. First, create a [page state](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#creating-a-page-state) variable that will hold the list of selected rows.
+1. First, create a [page state](../../../../resources/ui/pages/page-lifecycle.md#creating-a-page-state) variable that will hold the list of selected rows.
 2. Select the **DataTable**, move to the **Properties Panel > Paginated Data Table Properties >** turn on the **Selectable** toggle.
-3. On button click, [update the page state](../../../../resources/ui-building-blocks/pages/page-lifecycle.md#update-page-state-action) variable with the selected rows. While adding this action, use the following custom function to retrieve the selected items based on the indices. You can get the list of selected rows indices via **Widget State > DataTable Selected Rows**.
+3. On button click, [update the page state](../../../../resources/ui/pages/page-lifecycle.md#update-page-state-action) variable with the selected rows. While adding this action, use the following custom function to retrieve the selected items based on the indices. You can get the list of selected rows indices via **Widget State > DataTable Selected Rows**.
 4. Optionally, you could pass this variable to a new page to display the selection.
 
 Custom function:
