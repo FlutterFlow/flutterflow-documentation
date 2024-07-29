@@ -1,7 +1,7 @@
 ---
 title: Creating a Component
 sidebar_position: 1
-slug: creating-components.md
+slug: creating-components
 keywords: [Custom Components]
 tags: [Components]
 ---
