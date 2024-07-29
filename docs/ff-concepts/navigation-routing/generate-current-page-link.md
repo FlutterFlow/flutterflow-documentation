@@ -1,6 +1,10 @@
 ---
+slug: /concepts/navigation/generate-current-page-link
 title: Generate Current Page Link
+description: Learn how to generate the current page link in your FlutterFlow app.
+tags: [FlutterFlow, Navigation, Page Link, Concepts]
 sidebar_position: 5
+keywords: [FlutterFlow, Navigation, Page Link, Concepts]
 ---
 
 # Generate Current Page Link
@@ -23,7 +27,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 
 1. Select the **Widget** (e.g. share button) on which you want to define the action.
 
-2. Select **Actions** from the [Properties panel](/getting-started/ui-builder/properties-panel) 
+2. Select **Actions** from the [Properties Panel](../../intro/ff-ui/builder.md#properties-panel) 
    (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 	1. Click on the **+ Add Action**.
 	2. On the right side, search and select the **Generate Current Page Link** action and click 

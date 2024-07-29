@@ -1,9 +1,10 @@
 ---
-slug: launch-url
+slug: /concepts/navigation/launch-url
 title: Launch URL [Action]
-tags: []
 description: Learn how to use the Launch URL Action in FlutterFlow to open URLs with supporting apps.
+tags: [FlutterFlow, Launch URL, Action, Concepts]
 sidebar_position: 7
+keywords: [FlutterFlow, Launch URL, Action, Concepts]
 ---
 
 The Launch URL Action lets you specify a URL that will be opened using an app supporting it. If there is more than one app that can handle the specified URL, the user will be presented with a dialog from where one of the apps can be selected.
@@ -13,7 +14,7 @@ The Launch URL Action lets you specify a URL that will be opened using an app su
 Follow the steps below to add this action to any widget.
 
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. Click on the **+ Add Action**.
 4. On the right side, search and select the **Launch URL** (under widget/UI Interactions) action.
 5. In the *URL Value Type* property, select either **Specify URL** (to add the URL as a String) or **From Variable** (to use the value stored in a String variable).

@@ -1,9 +1,10 @@
 ---
-slug: overview
+slug: /resources/data-representation
 title: Overview
-tags: []
 description: Explore the essentials of data representation in app development, focusing on the use of variables in FlutterFlow.
+tags: [Data Representation, FlutterFlow, Variables]
 sidebar_position: 0
+keywords: [Data Representation, FlutterFlow, Variables]
 ---
 
 # Overview

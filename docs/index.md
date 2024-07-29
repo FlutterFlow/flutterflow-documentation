@@ -1,15 +1,17 @@
 ---
 title: FlutterFlow Documentation
+custom_edit_url: null
+showLastUpdateTime: false
 hide_title: true
 sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
-
 ---
 
 import InfoCard from '@site/src/components/InfoCard';
 import InfoCards from '@site/src/components/InfoCards';
 import FlutterFlowDocsLogo from '@site/src/components/FlutterFlowDocsLogo';
+import FlutterFlowLogo from '@site/src/components/FlutterFlowLogo';
 import GearIcon from '@site/static/icons/_icon_Setting.png';
 import DocsIcon from '@site/static/icons/document.png';
 import DeviceIcon from '@site/static/icons/deviceMobile.png';
@@ -18,17 +20,23 @@ import UsersIcon from '@site/static/icons/users.png';
 import BranchIcon from '@site/static/icons/branch_New.png';
 
 
-<FlutterFlowDocsLogo />
 
+<FlutterFlowLogo></FlutterFlowLogo>
 
-# Quickly build beautiful apps, without limitation.
-### FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
+# Visual Development Environment
+FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
 
 <InfoCards>
-    <InfoCard icon={GearIcon} title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/intro/before-you-begin/setting-up-flutterflow" />
-    <InfoCard icon={DocsIcon}  title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." />
-    <InfoCard icon={DeviceIcon}  title="Start Building" description="Jump right into a quick start on how to build a simple app." />
-    <InfoCard icon={CheckIcon}  title="Troubleshooting Guides" description=" Solutions and tips to solve common FlutterFlow development hurdles." />
-    <InfoCard icon={UsersIcon}  title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." />
-    <InfoCard icon={BranchIcon}  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." />
+    <InfoCard title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/intro/before-you-begin/setting-up-flutterflow" />
+    <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/>
+    <InfoCard   title="Start Building" description="Jump right into a quick start on how to build a simple app." pagePath="/quickstart"/>
+    <InfoCard title="Troubleshooting Guides" description=" Solutions and tips to solve common FlutterFlow development hurdles." />
+    <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
+    <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
 </InfoCards>
+
+<p></p>
+
+### FlutterFlow Tour
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

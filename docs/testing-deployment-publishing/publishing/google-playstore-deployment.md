@@ -1,11 +1,14 @@
 ---
-slug: google-playstore-deployment
+slug: /deployment/google-playstore-deployment
 title: Google Play Store Deployment
-tags: []
 description: Learn how to seamlessly deploy your apps to the Google Play Store using FlutterFlow.
+tags: [Google Play Store, Deployment, FlutterFlow, Android]
 sidebar_position: 3
 toc_max_heading_level: 4
+keywords: [Google Play Store, Deployment, FlutterFlow, Android]
 ---
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -15,7 +18,7 @@ FlutterFlow allows you to seamlessly deploy your apps directly to the Google Pla
 
 :::info[Prerequisites]
 1. Register for a [**Google Play Developer account**](https://play.google.com/console/u/0/signup).
-2. [**Test your application**](#) on a real device.
+2. [**Test your application**](../running-your-app/local-run.md) on a real device.
 3. Confirm the [**app details**](#). Especially the package name, which can't be changed after your app is deployed.
 4. Set an [**App Launcher Icon**](#). The App Launcher icon can't be transparent or contain an alpha channel.
 
@@ -325,11 +328,11 @@ You can now deploy directly from FlutterFlow or from your GitHub repository.
   </TabItem>
   <TabItem value="GitHub" label="Deploy From Github">
     
-[Connecting the Github](#) repo allows you to introduce the custom code into your FlutterFlow project. You may want to deploy the modified code directly from your Github repo to Play Store.
+[Connecting the Github](../exporting-code/push-to-github.md) repo allows you to introduce the custom code into your FlutterFlow project. You may want to deploy the modified code directly from your Github repo to Play Store.
 
 To deploy from Github repo:
 
-1. If you haven't added the Github repo yet, you can do so using the instructions [here](#).
+1. If you haven't added the Github repo yet, you can do so using the instructions [here](../exporting-code/push-to-github.md).
 2. Navigate to **Settings & Integrations > App Settings >** **Mobile** **Deployment**.
 3. Find the **Deployment Settings** section and click on the arrow icon on the right to open it.
 4. Under the **Deployment Source**, enable the **Use Github repo**.

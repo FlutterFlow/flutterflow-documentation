@@ -12,7 +12,7 @@ pages. This panel is divided into several sections, each dedicated to different
 settings and adjustments you can make to customize your pages.
 
 Here’s a detailed look at what you can typically find and modify in this panel:
-![props-panel.png](..%2Fimgs%2Fprops-panel.png)
+![props-panel.png](../imgs/props-panel.png)
 
 ### Page Parameters
 
@@ -35,7 +35,7 @@ Names as unique identifiers, integrate dynamic parameters into your routes, and
 set access restrictions based on user authentication.
 
 :::info[LEARN MORE]
-Learn more about Routing [**here**](../../../ff-concepts/navigation-routing/overview).
+Learn more about Routing [**here**](../../../ff-concepts/navigation-routing/nav-overview.md).
 :::
 
 ## Advanced Configurations
@@ -52,7 +52,7 @@ Here's an overview of these additional configurations:
 - [Backend Query](#backend-query)
 - [State Management](#state-management)
 
-![advanced-configs.png](..%2Fimgs%2Fadvanced-configs.png)
+![advanced-configs.png](../imgs/advanced-configs.png)
 
 ### Page (Scaffold) Properties
 

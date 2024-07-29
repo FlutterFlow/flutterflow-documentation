@@ -1,10 +1,12 @@
 ---
-slug: app-state
+slug: /resources/data-representation/app-state
 title: App State
-tags: []
 description: Learn how to effectively utilize App State Variables in FlutterFlow to maintain and manage global application states across all pages and components.
+tags: [App State, FlutterFlow, Data Representation]
 sidebar_position: 4
+keywords: [App State, FlutterFlow, Data Representation]
 ---
+
 
 # App State
 
@@ -78,6 +80,7 @@ To update the app state variable, we need to add an action to the 'Add to Bag' b
         allow="clipboard-write">
     </iframe>
 </div>
+
 ### Use app state variable
 
 The variable can now be accessed via set from variable menu. For example, on the cart page, you can loop through the app state variable to display each item.

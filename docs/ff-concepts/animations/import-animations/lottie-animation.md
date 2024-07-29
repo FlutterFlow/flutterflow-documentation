@@ -1,9 +1,10 @@
 ---
-slug: lottie-animation
+slug: /concepts/animations/lottie-animation
 title: Lottie Animation
-tags: []
-description: Learn how to add lottie animation in your FlutterFlow app.
+description: Learn how to add Lottie animation in your FlutterFlow app.
+tags: [Lottie Animation, FlutterFlow, Animations]
 sidebar_position: 1
+keywords: [Lottie Animation, FlutterFlow, Animations]
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -352,7 +353,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 Follow the steps below to add this action to any widget.
 
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. Click on the **+ Add Action**.
 4. On the right side, search and select **Lottie Animation**.
 5. **Choose Lottie Animation** from the dropdown.

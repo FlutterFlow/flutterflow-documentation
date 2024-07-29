@@ -1,6 +1,10 @@
 ---
+slug: /concepts/navigation/share-action
 title: Share [Action]
+description: Learn how to use the Share Action in your FlutterFlow app to share content.
+tags: [FlutterFlow, Share Action, Navigation, Concepts]
 sidebar_position: 6
+keywords: [FlutterFlow, Share Action, Navigation, Concepts]
 ---
 
 # Share [Action]
@@ -53,6 +57,6 @@ Alternatively, a demo of defining Share Action using **From Variable** option is
 You won't be able to try out this Action using FlutterFlow's *Run Mode* or *Preview Mode*. To 
 test this Action, you have to run it on an iOS or Android device or emulator. You can either 
 **Download the Code** (by going to `Developer Menu > Download Code`) and build it for your 
-device, or use the **Build APK** button (present on the [**Tool Bar**](..%2F..%2Fintro%2Fff-ui%2Ftoolbar.md) to generate an APK that 
+device, or use the **Build APK** button (present on the [**Tool Bar**](../../intro/ff-ui/toolbar.md) to generate an APK that 
 you can run on your Android device.
 :::

@@ -1,9 +1,10 @@
 ---
-slug: saving-versioning
+slug: /collaboration/saving-versioning
 title: Saving and Versioning
-tags: []
 description: Learn about the crucial concepts of saving and versioning in your FlutterFlow project.
+tags: [Saving, Versioning, Collaboration]
 sidebar_position: 2
+keywords: [Saving, Versioning, Collaboration, FlutterFlow, Concepts]
 ---
 
 # Saving and Versioning

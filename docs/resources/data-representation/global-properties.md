@@ -1,9 +1,10 @@
 ---
-slug: global-properties
+slug: /resources/data-representation/global-properties
 title: Global Properties
-tags: []
 description: Discover the role of Global Properties in FlutterFlow, which provide universal access across all pages of your app to facilitate common tasks and enhance functionality.
+tags: [Global Properties, FlutterFlow, Data Representation]
 sidebar_position: 6
+keywords: [Global Properties, FlutterFlow, Data Representation]
 ---
 
 # Global Properties

@@ -1,9 +1,10 @@
 ---
-slug: branching
+slug: /collaboration/branching
 title: Branching
-tags: []
 description: Learn how branching in FlutterFlow allows you to add new features without disrupting your current progress. Understand the workflow of creating and merging branches, resolving conflicts, and the difference between merging and rebasing, with practical examples and tips.
+tags: [Branching, Collaboration]
 sidebar_position: 1
+keywords: [Branching, Collaboration, FlutterFlow, Concepts]
 ---
 
 # Branching
@@ -12,15 +13,15 @@ Branching creates a separate copy of your work, so you can add new features with
 Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your main app and potentially causing problems, you create a branch to work on this new feature. Once it's completed, you can integrate it back into the main app.
 
 :::info
-
 This feature is only available for teams and enterprise users.
-
 :::
 
 
 :::warning
 
-Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within FlutterFlow. If you are looking to manage custom code in GitHub, check out the tutorial [**here**](../exporting-code/push-to-github#manage-custom-code-in-github).
+Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within 
+FlutterFlow. You can also learn more about 
+[**managing custom code on GitHub**](../exporting-code/push-to-github.md#manage-custom-code-on-github).
 
 :::
 ## Create and merge branch

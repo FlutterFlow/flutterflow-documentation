@@ -49,7 +49,7 @@ To learn more, head over to **[Action Flow Editor](#)** section
 As you open the [Action Flow Editor](#) for your Scaffold (Page), you can see the following Action
 Triggers exposed for your Page.
 
-![actions-triggers.png](..%2Fimgs%2Factions-triggers.png)
+![actions-triggers.png](../imgs/actions-triggers.png)
 
 ### On Page Load [Action Trigger]
 
@@ -210,7 +210,7 @@ transactional logic.
 You can set the source value of the widget wherever you see the following icon. This icon indicates
 that you can link the widget’s value to a variable.
 
-![Page-State.png](..%2Fimgs%2FPage-State.png)
+![Page-State.png](../imgs/Page-State.png)
 
 ### Update Page State [Action]
 

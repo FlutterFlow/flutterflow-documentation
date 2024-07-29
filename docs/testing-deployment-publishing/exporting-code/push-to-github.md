@@ -1,9 +1,10 @@
 ---
-slug: push-to-github
+slug: /exporting/push-to-github
 title: Push to GitHub Repo
-tags: []
 description: Learn how to connect your Flutter project to a GitHub repository and manage custom code.
+tags: [GitHub, Custom Code]
 sidebar_position: 0
+keywords: [GitHub, Collaboration, FlutterFlow, Custom Code]
 ---
 
 # Push to GitHub Repo
@@ -108,7 +109,7 @@ Here’s how you do it:
 - If you need to modify the code, make changes in a separate branch. Learn more about managing custom code.
 :::
 
-## Manage Custom Code In GitHub
+## Manage Custom Code on GitHub
 
 Writing custom code allows you to add features that are not supported by FlutterFlow's current functionality. This section outlines how you can manage custom code using GitHub to prevent FlutterFlow from overriding it.
 

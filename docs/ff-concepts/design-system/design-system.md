@@ -1,9 +1,10 @@
 ---
-slug: design-system
+slug: /concepts/design-system
 title: Design System
-tags: []
 description: Discover how to create a consistent UI/UX across your app with a design system in FlutterFlow.
+tags: [FlutterFlow, Design System, UI/UX, Concepts]
 sidebar_position: 1
+keywords: [FlutterFlow, Design System, UI/UX, Concepts]
 ---
 
 # Design System
@@ -78,9 +79,10 @@ To create your own design system:
 
 
 <p></p>
+
 6. To use the design system, open your project and navigate to **Theme Settings > Design System**.
 7. Click on the **No Design System Selected**.
-8. A pop will open displaying the list of the design systems, click on the newly created design system to add it to your project. **Note** that the design system created in [My Organization](#) will also be available here.
+8. A pop will open displaying the list of the design systems, click on the newly created design system to add it to your project. **Note** that the design system created in [My Organization](../../resources/projects/how-to-collaborate-on-projects.md#sharing-a-project-with-an-organization) will also be available here.
 
 :::info
 

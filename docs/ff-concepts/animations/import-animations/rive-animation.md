@@ -1,9 +1,10 @@
 ---
-slug: rive-animation
+slug: /concepts/animations/rive-animation
 title: Rive Animation
-tags: []
 description: Learn how to add Rive animation in your FlutterFlow app.
+tags: [Rive Animation, FlutterFlow, Animations]
 sidebar_position: 2
+keywords: [Rive Animation, FlutterFlow, Animations]
 ---
 
 # Rive Animation
@@ -112,7 +113,7 @@ To trigger a RiveAnimation to start playing using an Action, you can use the **R
 Follow the steps below to define an action to start the animation:
 
 1. Select the **widget** (eg., `Button`) on which you want to define the action.
-2. Select **Actions** from the Properties panel.
+2. Select **Actions** from the Properties Panel.
 3. Click **+ Add Action** button.
 4. Choose a gesture from the dropdown among **On Tap, On Double Tap,** or **On Long Press**.
 5. Select the **Action Type** as ***Animation**.*

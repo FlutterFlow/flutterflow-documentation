@@ -3,14 +3,8 @@ title: Setting Up FlutterFlow
 description: Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow.
 ---
 
-## What is FlutterFlow?
 
-FlutterFlow is a visual development envirionment for building native mobile and web applications. FlutterFlow helps you build apps faster, without sacfiricing on app quality or features.
-
-<div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-## Create an account
+# Create an account
 
 Create your free account to get started with FlutterFlow. After you've set up your account, you'll be able to create as many projects as you like.
 

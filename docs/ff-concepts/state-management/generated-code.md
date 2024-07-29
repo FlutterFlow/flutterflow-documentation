@@ -1,17 +1,20 @@
 ---
-slug: generated-code
+slug: /concepts/state-management/generated-code
 title: Generated Code
-tags: []
+description: Learn about the state management used in FlutterFlow's generated code.
+tags: [FlutterFlow, Generated Code, Concepts, State Management]
 toc_max_heading_level: 5
 sidebar_position: 5
+keywords: [FlutterFlow, Generated Code, State Management, Concepts]
 ---
+
 # State Management
 
 FlutterFlow manages state in several ways, depending on the scope.
 
 Generally, state management is handled using the Provider package, which facilitates the provisioning of data models for components, pages, and the overall app state.
 
-![state-management.avif](..%2F..%2F..%2Fstatic%2Fimg%2Fstate-management.avif)
+![state-management.avif](../../../static/img/state-management.avif)
 
 ## Page & Component Models
 

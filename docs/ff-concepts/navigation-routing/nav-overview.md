@@ -1,9 +1,10 @@
 ---
-slug: overview
+slug: /concepts/navigation/overview
 title: Overview
-tags: []
 description: Learn how to add navigation in FlutterFlow.
+tags: [FlutterFlow, Navigation, Concepts]
 sidebar_position: 0
+keywords: [FlutterFlow, Navigation, Concepts]
 ---
 
 # Overview
@@ -67,7 +68,7 @@ This action involves navigating to a new screen by pushing a new route onto the 
 
 :::info
 
-Learn more about adding this action [**here**](../../resources/ui-building-blocks/pages/navigation#navigate-to-action).
+Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
 
 :::
 
@@ -82,7 +83,7 @@ This action involves navigating back to the previous screen by popping the curre
 
 :::info
 
-Learn more about adding this action [**here**](../../resources/ui-building-blocks/pages/navigation#navigate-back-action).
+Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-back-action).
 
 :::
 
@@ -97,6 +98,6 @@ This action involves replacing the current route with a new route. Unlike pushin
 :::info
 
 - This is useful when you want to prevent the user from navigating back to the previous screen.
-- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action [**here**](../../resources/ui-building-blocks/pages/navigation#navigate-to-action).
+- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
 
 :::

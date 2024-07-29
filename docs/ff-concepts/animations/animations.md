@@ -1,16 +1,18 @@
 ---
-slug: animations
+slug: /concepts/animations
 title: Animations
-sidebar_position: 1
 description: Learn the basics of animations in FlutterFlow.
+tags: [FlutterFlow, Animations, Concepts]
+sidebar_position: 1
+keywords: [FlutterFlow, Animations, Concepts]
 ---
 
 Enhancing your app with animations significantly improves the user experience, making it more engaging and intuitive. In FlutterFlow, you have several options to add animations to your app:
 
-- [**Widget Animations**](widget-animations): Add animation effects to an entire widget.
-- [**Implicit Animations**](implicit-animations): Animate changes in specific widget properties, such as the height of a Container.
-- [**Hero Animations**](hero-animations): Animate a widget that transitions smoothly between screens, also known as shared element transitions.
-- [**Page Transition Animations**](page-transition-animations): Specify transitions between pages within your app.
+- [**Widget Animations**](widget_animations.md): Add animation effects to an entire widget.
+- [**Implicit Animations**](implicit_animations.md): Animate changes in specific widget properties, such as the height of a Container.
+- [**Hero Animations**](hero_animations.md): Animate a widget that transitions smoothly between screens, also known as shared element transitions.
+- [**Page Transition Animations**](page_transitions.md): Specify transitions between pages within your app.
 - **Import Animations**: Import animations you've created using other tools such [lottiefiles](import-animations/lottie-animation) and [Rive](import-animations/rive-animation).
 
 

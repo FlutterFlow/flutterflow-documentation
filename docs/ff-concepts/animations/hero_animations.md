@@ -1,8 +1,10 @@
 ---
-slug: hero-animations
+slug: /concepts/animations/hero-animations
 title: Hero Animations
-sidebar_position: 3
 description: Learn how to add Hero Animations in your FlutterFlow app.
+tags: [FlutterFlow, Hero Animations, Concepts]
+sidebar_position: 3
+keywords: [FlutterFlow, Hero Animations, Concepts]
 ---
 
 # Hero Animation
@@ -77,7 +79,7 @@ The steps to build such an example are as follows:
     </div>
     <p></p>
 
-3. Add [navigation action](../../resources/ui-building-blocks/pages/navigation#navigate-to-action) from page 1 to page 2.
+3. Add [navigation action](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) from page 1 to page 2.
 
 
 
@@ -174,7 +176,7 @@ The steps to add hero animation on a component are as follows:
     </div>
     <p></p>
 
-3. Add [navigation action](#) from page 1 to page 2.
+3. Add [navigation action](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) from page 1 to page 2.
 
 ## FAQs
 
@@ -185,6 +187,6 @@ This is because the image on the second page does not exist on the very first fr
 
 To fix this issue, you can avoid loading an image directly from Firestore. Instead, you can pass the image URL (which would have already been retrieved from the Firestore) from the previous page to the second page. And then use that URL to load the image.
 
-See how to [pass data](#) from one page to another.
+See how to [pass data](../../ff-concepts/navigation-routing/passing-data.md) from one page to another.
 </p>
 </details>

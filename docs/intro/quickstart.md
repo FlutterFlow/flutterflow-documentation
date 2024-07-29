@@ -1,5 +1,5 @@
 ---
-slug: quickstart
+slug: /quickstart
 title: Quick Start Guide
 tags: []
 description: Jumpstart your FlutterFlow journey with our Quick Start Guide. Learn to build a dynamic app and explore essential FlutterFlow features like UI building, state management, and app execution.
@@ -39,7 +39,7 @@ To kick off your project, the first step is to [create a new project](#). Howeve
 
 After cloning the project, you’ll see a page with product images and descriptions. You’ll add a feature that allows users to update the product quantity.
 
-![zero-to-final.png](..%2F..%2Fstatic%2Fimg%2Fzero-to-final.png)
+![zero-to-final.png](../../static/img/zero-to-final.png)
 
 ## 2. Building UI {#build-ui}
 
@@ -79,7 +79,7 @@ You can learn more about creating layouts [here](#).
 
 ## 3. Customize Style {#customize-style}
 
-The next step is to customize the style of UI elements. This includes changing the colors, fonts, and sizes of your buttons and labels. In FlutterFlow, you can do this via the [properties panel](#) which provides a range of options for customization.
+The next step is to customize the style of UI elements. This includes changing the colors, fonts, and sizes of your buttons and labels. In FlutterFlow, you can do this via the [Properties Panel](../intro/ff-ui/builder.md#properties-panel) which provides a range of options for customization.
 
 To customize the style:
 

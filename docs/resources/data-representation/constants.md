@@ -1,9 +1,10 @@
 ---
-slug: constants
+slug: /resources/data-representation/constants
 title: Constants
-tags: []
 description: Explore the importance of using Constants in FlutterFlow to define unchanging values throughout your application.
+tags: [Constants, FlutterFlow, Data Representation]
 sidebar_position: 5
+keywords: [Constants, FlutterFlow, Data Representation]
 ---
 
 # Constants

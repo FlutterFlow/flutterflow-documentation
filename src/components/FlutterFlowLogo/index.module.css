@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4em; /* 1em typically equals the font-size of the parent, which is the h2 in this case */
+  width: auto; /* Maintain the aspect ratio of the image */
+}
+
+.title {
+  font-size: 1.5rem; /* Adjust this as necessary for your design */
+  margin: 0; /* Remove default margins from h2 */
+}

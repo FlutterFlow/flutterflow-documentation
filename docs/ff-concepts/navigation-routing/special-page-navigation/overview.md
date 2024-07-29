@@ -1,9 +1,10 @@
 ---
-slug: overview
+slug: /concepts/navigation/special-page-navigations
 title: Overview
-tags: []
 description: Learn how to add Special Page Navigations in FlutterFlow.
+tags: [Special Page Navigations, FlutterFlow, Navigation]
 sidebar_position: 0
+keywords: [Special Page Navigations, FlutterFlow, Navigation]
 ---
 
 # Overview
