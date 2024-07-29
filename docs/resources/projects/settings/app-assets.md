@@ -86,3 +86,4 @@ See the following resources for more information on Android adaptive icons.
 - [Understanding Android Adaptive Icons](https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2)
 - [Designing Adaptive Icons](https://medium.com/google-design/designing-adaptive-icons-515af294c783)
 - [Implementing Adaptive Icons](https://medium.com/google-developers/implementing-adaptive-icons-1e4d1795470e)
+
