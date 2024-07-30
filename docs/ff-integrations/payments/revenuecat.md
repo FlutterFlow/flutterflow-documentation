@@ -59,7 +59,7 @@ To set up the RevenueCat, follow these steps carefully:
 3. [Create subscriptions](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-store-setup) in the respective stores.
     1. While creating subscriptions in Google Play Console, if you see a message saying '***Your app doesn't have any in-app products yet**'* like in this picture, follow the steps below:
     <p></p>
-    ![error-while-creating-sub-in-play-console.avif](error-while-creating-sub-in-play-console.avif)
+    ![error-while-creating-sub-in-play-console.avif](imgs/error-while-creating-sub-in-play-console.avif)
     
     1. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
     
@@ -218,7 +218,7 @@ Using this action, you can allow users to re-activate the subscription they have
 :::
 
 <figure>
-    ![adding-restore-purchase-action.avif](adding-restore-purchase-action.avif)
+    ![adding-restore-purchase-action.avif](imgs/adding-restore-purchase-action.avif)
   <figcaption class="centered-caption">Adding action to restore purchase</figcaption>
 </figure>
 
