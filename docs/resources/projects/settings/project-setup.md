@@ -206,3 +206,33 @@ Follow the steps below to add this action to any widget.
 <p></p>
 </TabItem>
 </Tabs>
+
+--- 
+## Platforms
+By default, the generated project can run on Android, iOS, and the Web without any additional effort. However, to run your app on the desktop, you need to enable a platform (e.g., MacOS, Windows, Linux) from this page.
+
+### Advanced Android Settings
+
+- **Kotlin Version**: There are various situations where you may need to modify or configure the Kotlin version in your Android project. This could include updating to the latest version, adapting the version to accommodate a specific library or tool, or other specific requirements. To change the default version, enter the value here.
+- **Minimum SDK Version**: This defines the lowest version of Android that your app can run on. Setting a higher minimum SDK version ensures your app can use newer APIs and features but may limit the devices that can install it.
+- **Compile SDK Version**: This refers to the version of Android that your code is compiled against. It determines the APIs your app can use. To change it, enter the desired SDK version here.
+- **Target SDK Version**: This is the version of Android that your app is intended to run on. It helps Android ensure forward compatibility by applying certain behavior changes only if the target SDK is high enough. To adjust this, enter the desired version here.
+
+---
+
+### Advanced iOS Settings
+
+- **Disable iPad Support:** If the app is specifically designed for an iPhone and doesn't provide a good user experience on an iPad, you might want to trun on this setting.
+- **Minimum iOS Version**: This specifies the lowest version of iOS that your app can run on.
+
+---
+
+### Advanced Web Settings
+
+- **Use Original Engine Initialization**: This setting uses the original Flutter web engine initialization, which can sometimes improve loading times in deployed web apps. Enable this option if you experience performance issues with the custom initialization process.
+- **Use CanvasKit**: CanvasKit provides better performance and fidelity for rendering on the web by leveraging WebAssembly. This setting can improve the visual quality and performance of your app, especially for complex graphics and animations. Enable this option to use CanvasKit for rendering on the web.
+
+---
+
+## Multiple Languages
+To support multiple languages in your app, refer [here](#).
