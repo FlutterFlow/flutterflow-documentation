@@ -1,17 +1,119 @@
 ---
-slug: app-assets
-title: App Assets
-tags: [assets, splash screen, launcher icon, adaptive icon]
-keywords: [assets, splash screen, launcher icon, adaptive icon]
-description: Learn how to configure app assets for your FlutterFlow app.
-sidebar_position: 1
+slug: general-settings
+title: General Settings
+tags: [project, assets, splash screen, launcher icon, adaptive icon]
+keywords: [project name, package name, asset, download settings, assets, splash screen, launcher icon, adaptive icon]
+description: Learn how to configure general settings for your FlutterFlow app.
+sidebar_position: 0
 ---
 
-# App Assets
+# General Settings
+This section serves as the control center for configuring essential aspects of your app.
+
+
+## App Details
+This section allows you to customize a wide range of settings that are crucial for the overall functionality and appearance of your application. From basic configurations like project and package (bundle) name to more advanced settings like theme customization and navigation control.
+
+### Change Project, Package, and Display Name
+
+If you didn't decide on the app or package name when creating a new project, you might have entered a random name. From here, you can change the name anytime.
+
+You can set a different name for the *App Store* and *Play Store* using the **Display Name**.
+
+:::tip
+After changing the package name, errors may appear on the toolbar due to invalidated Firebase config files. To resolve this, generate new config files by going to **Settings & Integrations > Project Setup > Firebase > Regenerate Config Files**.
+:::
+---
+
+### Initial Page
+
+You can specify your app's **Entry Page** and **Logged In** **Page** from this section.
+
+- **Entry Page**: This is the home page for your app. If authentication is enabled, users who are not logged in will see this page, which is typically set to a login/signup or onboarding page.
+- **Logged In Page** (*available only if auth is enabled*): This page is displayed on the app start if a user is already logged in. Users are automatically navigated to the page you specify here on a successful sign-in attempt.
+
+To set the page, simply choose the page that you want to use from the dropdown menu.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/EgYmUSzJ4IkHhG6fgpQ0?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+---
+
+### Folder Organization
+
+If you want the improved folder organization for your project, **Enable Updated Folder Organization**.  This is especially helpful for older projects; for new projects, this is enabled by default.
+
+---
+
+### Download Settings
+
+- **Run "dart fix"**: Enabling this will run the `dart fix` command when downloading the code. This makes the generated code cleaner and potentially more performant.
+- **Download Unused Project Assets**: Enable this option to download all assets, including those that are not currently used in the project. This is useful when you need to access and use the assets in custom code or other parts of your project.
+
+---
+
+### Routing & Deep Linking
+
+From here, you can configure the global settings for navigation and deep link in your app [here](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md).
+
+
+If you prefer watching a video tutorial, here is the guide for you:
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/H_3yQsa8wT8"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+---
+## App Assets
 
 This allows you to upload the images to be used by the app. From here, you can upload the Initial splash image and the image for the app launcher icon.
 
-## Splash
+### Splash
 
 Splash screens are the first thing users see when your app starts up. They give the app time to get ready while showing you something fun or informative. This screen typically contains the image or logo of the app.
 
@@ -31,7 +133,9 @@ The steps to configure the splash screen are as follows:
 
 ![splash-screen-configuration](../imgs/splash-screen-configuration.png)
 
-## Launcher Icon
+---
+
+### Launcher Icon
 
 The launcher icon (also known as the app icon) represents your application. When you open the launcher app, it shows the app icons for all the installed apps. It acts as an entry point for your app. The image asset that you will upload here will be used as the app launcher icon.
 
@@ -47,8 +151,8 @@ To add the app launcher icon:
     
 6. [Run your app](../../../testing-deployment-publishing/running-your-app/run-your-app.md) on a real device or emulator to see the app launcher icon.
 
-
-## Android Adaptive Icon
+---
+### Android Adaptive Icon
 
 [Adaptive icons](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive) are a design specification that allows app icons to adapt to different device environments without losing consistency in appearance. Unlike traditional launcher icons, which are static and can appear out of place or poorly scaled on different devices, adaptive icons consist of two layers:
 
@@ -69,11 +173,11 @@ Here are the steps to add adaptive icons:
 
 ![android-adaptive-icon](../imgs/android-adaptive-icon.png)
 
-### Useful resources
+#### Useful resources
 
 See the following resources for more information on Android adaptive icons.
 
-### Create Adaptive Icon
+#### Create Adaptive Icon
 
 - [Create app icons in Android Studio](https://developer.android.com/studio/write/create-app-icons#create-adaptive)
 - [Figma template](https://material.uplabs.com/posts/adaptive-icon-sticker-sheet) (requires login)
@@ -81,9 +185,11 @@ See the following resources for more information on Android adaptive icons.
 - [Bjango templates](https://github.com/bjango/Bjango-Templates) include adaptive icons
 - [Adobe XD template](https://github.com/faizmalkani/adaptive-icon-template-xd)
 
-### Adaptive Icon Fundamentals
+#### Adaptive Icon Fundamentals
 
 - [Understanding Android Adaptive Icons](https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2)
 - [Designing Adaptive Icons](https://medium.com/google-design/designing-adaptive-icons-515af294c783)
 - [Implementing Adaptive Icons](https://medium.com/google-developers/implementing-adaptive-icons-1e4d1795470e)
 
+## Nav Bar & App Bar
+See how to configure the [Nav Bar](../../ui/pages/page-elements.md#enable-nav-bar-in-settings) and the [App Bar](../../ui/pages/page-elements.md#appbar).
