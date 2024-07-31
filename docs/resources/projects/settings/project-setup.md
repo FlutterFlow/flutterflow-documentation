@@ -1,8 +1,8 @@
 ---
 slug: project-setup
 title: Project Setup
-tags: [permissions, multiple languages, multi-platform]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions]
+tags: [permissions, multiple languages, multi-platform, walkthrough]
+keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0
 ---
@@ -236,3 +236,300 @@ By default, the generated project can run on Android, iOS, and the Web without a
 
 ## Multiple Languages
 To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/add-multiple-languages.md).
+
+---
+
+## Walkthroughs
+
+A walkthrough in app development is a guided tour of the app's features and functionality, typically presented to the user when they first launch the app. It is designed to help new users understand how to use the app and navigate its various sections.
+
+For example, consider a news article app. When a new user opens the app for the first time, they might be greeted with a series of pop-ups that highlight key features such as watching article videos, subscribing to article updates, and filtering articles by tags.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/cc0e2560855d4e988a6b881ca1b63377?sid=8f959be3-b08a-4043-a3df-bea460297b2a"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+The steps to create and display a walkthrough in your app are as follows:
+
+1. [Create walkthrough](#1-create-walkthrough)
+2. [Start walkthrough](#2-start-walkthrough)
+3. [Get notified on walkthrough skipped and completed](#3-get-notified-on-walkthrough-skipped-and-completed)
+
+### 1. Create walkthrough
+
+To create a walkthrough:
+
+1. Navigate to **Settings and Integrations** > **General** > **Walkthroughs >** click **Create New**.
+2. Start with providing the **Name**, **Description** and then select the **Page** on which you want to show the walkthrough. The name you enter will be used to initiate the walkthrough later.
+3. Now, we must add the steps for our walkthrough. Each step that we add here acts as a separate screen or popup that nicely animates to highlight the UI element. To add steps:
+    1. Click on the **+ Add Step**.
+    2. Choose the widget to highlight by clicking **Widget Unset**. In the right-side preview, select the desired widget and click **Confirm**.
+    3. When the widget is in focus, you may want to present information about it; this could be a simple text or a custom component (e.g., a text with an arrow). You have complete control over what you want to display via a [component](../../../resources/ui/components/overview.md). Click the diamond icon to create a new component and then set it to **Content**.
+    4. You can also choose where the Content will be displayed by setting the **Content Alignment**.
+    5. Choose a **Focus Shape** for the widget—either **Circle** or **Rectangle**.
+    6. Pick an **Overlay Color** that you want to display when the widget is highlighted.
+    7. By default, we also add a skip button on the screen, and you can align it using the **Skip Alignment** option.
+    8. Add additional steps by repeating the process for all UI elements you wish to feature.
+        
+        ![Walkthrough Step](../imgs/wt-steps.png)
+        
+4. To preview the walkthrough, click the **Start Preview** button and use the arrows to navigate through the steps.
+5. To rearrange the steps, enable the **Reorder** option and then use the arrows to adjust their sequence.
+6. Click the **Add Walkthrough** to save.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1ea4a7c79626421095a0b1363356efe8?sid=5e8fa4e8-18c3-4191-9304-8b131028df29"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### 2. Start Walkthrough [Action]
+
+After creating a walkthrough, you can display it on a page using the Start Walkthrough action. Follow the steps below to add this action on a page load.
+
+1. Walkthroughs are generally presented immediately upon page load. Therefore, open the page where you would like the walkthrough to be showcased.
+2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Ensure the **On Page Load** is selected and click on the **+ Add Action**.
+4. On the right side, search and select the **Walkthrough > Start Walkthrough** (under *Widget/UI Interactions*) action.
+5. Click to **Select Walkthrough** that you have created.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/13ff22ea7a624d54b3874256fac88b9c?sid=91ed6db7-8e16-4464-a133-b532846eaa36"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### 3. Get notified on walkthrough skipped and completed
+
+Sometimes, you might want to get a callback to know whether the walkthrough is skipped or completed. For example, you could set up a callback to gather analytics or trigger a specific action once the walkthrough is finished, such as directing the user to a new page or enabling certain features of the app.
+
+When a walkthrough is added on a page, you'll see the following types of actions (aka callbacks), and you can choose any of them to add actions under it.
+
+1. **On Walkthrough Complete**: Actions added under this will be triggered whenever the user finishes all the steps of the walkthrough.
+2. **On Walkthrough Skip**: Actions added under this will be triggered whenever the user chooses to skip the walkthrough.
+
+<Tabs>
+<TabItem value="1" label="On Walkthrough Complete" default>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/fceb1c6ed1c842c6ab1a697719cfed60?sid=b41d279d-ea29-4536-b36a-0104e3f8fe0c"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</TabItem>
+<TabItem value="2" label="On Walkthrough Skip">
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/adce2ee91ed2406db4ff3e010eb39a85?sid=9235994c-3da9-4b7b-b0ed-ace0afecf010"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</TabItem>
+</Tabs>
+
+Here's how you do it:
+
+1. Open the page, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+2. Select **On** **Walkthrough Complete** or **On Walkthrough Skip** and add actions under it.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/53546557a01d4e65864f997467cea6ad?sid=f8f999ae-97cc-4a96-9b8a-7736a6561907"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Video guide
+
+If you prefer watching a video tutorial, here's the one for you:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/FFpR1SDrZEQ"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### FAQs
+
+<details>
+<summary>How do I fix when walkthrough misaligns on a widget, not focusing on the component?</summary>
+<p>
+This issue typically arises when a widget's animation and the walkthrough start simultaneously. As the walkthrough initiates, it captures the widget's initial position before the animation completes. Consequently, after the animation concludes, the widget may have shifted to a different location, leading to misalignment.
+
+![Misaligned focus example](../imgs/misaligned-focus-example.png)
+
+To resolve this, simply add a delay ([Wait](../../../resources/control-flow/time-based-logic/wait-action.md) action) before initiating the walkthrough. **Remember,** the wait duration must be equal to or greater than the duration of the animation.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/890eb9c517e84302afd0d8934c3f29fa?sid=85faf200-c076-4dee-b75b-604582f1b43c"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</p>
+</details>
+
+<details>
+<summary>My widget is not highlighting on a scrollable page. What should I do?</summary>
+<p>
+We are aware of a limitation where widgets that are not visible on a page (i.e., you need to scroll down to see them) may not be highlighted. We are actively working to resolve this issue. As a temporary workaround, you can try placing the widget in an area that is visible without scrolling. We appreciate your patience and hope to have a fix soon!
+</p>
+</details>
