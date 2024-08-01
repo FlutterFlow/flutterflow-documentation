@@ -1,7 +1,7 @@
 ---
-slug: overview
+slug: chart
 title: Chart
-tags: []
+tags: [Base Elements]
 description: Learn how to add Chart widget in your FlutterFlow project.
 sidebar_position: 1
 ---

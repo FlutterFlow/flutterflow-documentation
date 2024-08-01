@@ -3,7 +3,7 @@ slug: /integrations/firebase/connect-to-firebase
 title: Connect to Firebase
 description: Learn how to integrate Firebase with your FlutterFlow app to add user authentication, cloud storage, real-time databases, and more.
 tags: [FlutterFlow, Firebase, Integration, User Authentication, Cloud Storage, Real-Time Database]
-sidebar_position: 1
+sidebar_position: 0
 keywords: [FlutterFlow, Firebase, Integration, User Authentication, Cloud Storage, Real-Time Database]
 ---
 

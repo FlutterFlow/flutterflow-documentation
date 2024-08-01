@@ -1,4 +1,7 @@
-
+---
+slug: card
+tags: [Layout Elements]
+---
 
 # Card
 

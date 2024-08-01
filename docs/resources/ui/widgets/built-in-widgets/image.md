@@ -1,5 +1,6 @@
 ---
 title: Image
+tags: [Base Elements]
 ---
 
 

@@ -1,11 +1,15 @@
 ---
 slug: credit-card-form
 title: CreditCardForm
-tags: []
+tags: [Form Elements]
 description: Learn how to add CreditCardForm in your FlutterFlow app.
 ---
 # CreditCardForm
 The CreditCardForm widget allows users to enter their credit card details such as card number, expiry date, and CVV.
+
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
 
 ## Adding CreditCardForm widget
 

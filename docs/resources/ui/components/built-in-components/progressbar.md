@@ -1,7 +1,7 @@
 ---
 slug: progressbar
 title: ProgressBar
-tags: []
+tags: [Form Elements]
 description: Learn how to add ProgressBar widget in your FlutterFlow project.
 ---
 
