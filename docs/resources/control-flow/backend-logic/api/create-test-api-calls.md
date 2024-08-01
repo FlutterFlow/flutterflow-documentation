@@ -26,14 +26,14 @@ Follow the steps below to create an API Call:
 If you want to use a dynamic URL, for example, `<https://reqres.in/api/users/2>` where 2 is dynamic and `<https://reqres.in/api/users?page=5>` where 5 is dynamic:
 
 1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
-2. And then, [create a new variable](rest-api.md#creating-variables) with the same name you provided inside the brackets.
+2. And then, [**create a new variable**](rest-api.md#creating-variables) with the same name you provided inside the brackets.
 :::
 
 The further instructions are based on the **Method Type** you selected.
 
 ### For `GET` & `DELETE` call
 
-If you selected `**GET**`or `**DELETE**` as the method type, follow the steps below:
+If you selected `GET` or `DELETE` as the method type, follow the steps below:
 
 1. Optional: If the API call requires request headers such as an authorization token, [add a header](rest-api.md#passing-request-headers).
 2. Optional: If the API call requires query parameters such as page number or user id, [add query parameters](rest-api.md#passing-query-parameters).

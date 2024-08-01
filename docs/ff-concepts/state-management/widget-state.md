@@ -46,16 +46,16 @@ FlutterFlow allows you to bind action triggers to widget states, such as calling
 **Most common Action Triggers exposed by form widgets:**
 
 - **On Focus Change:** Triggered when a widget, such as a text field, gains or loses focus.
-E.g Showing additional tips or validation messages when the user starts typing in a text field.
+For example, showing additional tips or validation messages when the user starts typing in a text field.
 
-- **On Submit:** Triggered when a form or text field is submitted. E.g Validating input and submitting data when the user presses the enter key or clicks a submit button.
+- **On Submit:** Triggered when a form or text field is submitted. For example, validating input and submitting data when the user presses the enter key or clicks a submit button.
 
-- **On Change:** Triggered when the value of a widget changes. E.g Real-time validation or updating state as the user types in a text field or changes a selection in a dropdown.
+- **On Change:** Triggered when the value of a widget changes. For example, real-time validation or updating state as the user types in a text field or changes a selection in a dropdown.
 
 - **On Completed:** Triggered when a specific input is completed, such as entering a pincode.
-E.g Automatically moving to the next step in a process after a complete and valid pincode is entered.
+For example, automatically moving to the next step in a process after a complete and valid pincode is entered.
 
-- **On Selected:** Triggered when an option is selected in widgets like choice chips, checkboxes, radio buttons, or sliders. E.g Updating the UI or performing actions based on the selected option.
+- **On Selected:** Triggered when an option is selected in widgets like choice chips, checkboxes, radio buttons, or sliders. For example, updating the UI or performing actions based on the selected option.
 
 These triggers allow developers to create interactive and responsive applications by defining specific actions that occur in response to user interactions with form widgets.
 
