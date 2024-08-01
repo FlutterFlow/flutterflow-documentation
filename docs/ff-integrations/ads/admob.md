@@ -43,7 +43,7 @@ You should be creating two AdMob Apps to display advertisements in both Android 
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://www.loom.com/embed/470902676107457894a2ff354947174d?sid=569d7656-150e-4aea-acf6-f4c72b6bccbb"
         title=""
         style={{
             position: 'absolute',
@@ -81,7 +81,7 @@ To add the APP keys:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://www.loom.com/embed/81ac98a0ba5c477f95c3aed4f95b7b64?sid=45ad83d1-68cd-4037-8caa-305bb654a017"
         title=""
         style={{
             position: 'absolute',
@@ -131,14 +131,13 @@ To add the AdBanner widget to your project:
 :::info
 If you leave the Width property empty, AdBanner will take the full width of the screen.
 :::
-
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/PBkC8jgpGHT2zrPhl5yh?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -179,7 +178,7 @@ To assign the ad unit Id:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/rL445JrvJkBjPivJZlDo?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -215,7 +214,7 @@ To enable the test ads:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/tRCqieHMarFAuF0kukPt?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -250,7 +249,7 @@ To test Ads:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/ITIaBQou0jEiGCtLVcSX?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -280,7 +279,7 @@ Using this action, you can display the [interstitial ad](https://developers.goog
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/U1vhnf7cXTds2hPUiCVA?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -353,7 +352,7 @@ To get the ad unit Id:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/pdhDPc4jY5o3nd47Iyyc?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -408,7 +407,7 @@ To load the ad on page load:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/UcgFTZurQPXXud7WLyzD?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -446,7 +445,6 @@ The steps to display an interstitial ad are as follows:
 8. In the end, add an action to [navigate](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) to the next page.
 
 
-
 <Tabs>
 <TabItem value="1" label="Action flow for displaying interstitial Ad" default>
 <div style={{
@@ -455,7 +453,7 @@ The steps to display an interstitial ad are as follows:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
+        src="https://demo.arcade.software/HXXxlkxn9FtIo0EepzAp?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',

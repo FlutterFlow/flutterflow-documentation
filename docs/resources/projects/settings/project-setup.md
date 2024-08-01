@@ -1,7 +1,7 @@
 ---
 slug: project-setup
 title: Project Setup
-tags: [permissions, multiple languages, multi-platform, walkthrough]
+tags: [Setup, Permissions, Multiple Languages]
 keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0

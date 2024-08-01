@@ -1,7 +1,7 @@
 ---
 slug: general-settings
 title: General Settings
-tags: [project, assets, splash screen, launcher icon, adaptive icon]
+tags: [Project, Assets]
 keywords: [project name, package name, asset, download settings, assets, splash screen, launcher icon, adaptive icon]
 description: Learn how to configure general settings for your FlutterFlow app.
 sidebar_position: 0
@@ -23,7 +23,6 @@ You can set a different name for the *App Store* and *Play Store* using the **Di
 :::tip
 After changing the package name, errors may appear on the toolbar due to invalidated Firebase config files. To resolve this, generate new config files by going to **Settings & Integrations > Project Setup > Firebase > Regenerate Config Files**.
 :::
----
 
 ### Initial Page
 
@@ -61,20 +60,17 @@ To set the page, simply choose the page that you want to use from the dropdown m
 </div>
 <p></p>
 
----
 
 ### Folder Organization
 
 If you want the improved folder organization for your project, **Enable Updated Folder Organization**.  This is especially helpful for older projects; for new projects, this is enabled by default.
 
----
 
 ### Download Settings
 
 - **Run "dart fix"**: Enabling this will run the `dart fix` command when downloading the code. This makes the generated code cleaner and potentially more performant.
 - **Download Unused Project Assets**: Enable this option to download all assets, including those that are not currently used in the project. This is useful when you need to access and use the assets in custom code or other parts of your project.
 
----
 
 ### Routing & Deep Linking
 
@@ -108,7 +104,6 @@ If you prefer watching a video tutorial, here is the guide for you:
 </div>
 <p></p>
 
----
 ## App Assets
 
 This allows you to upload the images to be used by the app. From here, you can upload the Initial splash image and the image for the app launcher icon.
@@ -133,7 +128,6 @@ The steps to configure the splash screen are as follows:
 
 ![splash-screen-configuration](../imgs/splash-screen-configuration.png)
 
----
 
 ### Launcher Icon
 
@@ -151,7 +145,6 @@ To add the app launcher icon:
     
 6. [Run your app](../../../testing-deployment-publishing/running-your-app/run-your-app.md) on a real device or emulator to see the app launcher icon.
 
----
 ### Android Adaptive Icon
 
 [Adaptive icons](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive) are a design specification that allows app icons to adapt to different device environments without losing consistency in appearance. Unlike traditional launcher icons, which are static and can appear out of place or poorly scaled on different devices, adaptive icons consist of two layers:
