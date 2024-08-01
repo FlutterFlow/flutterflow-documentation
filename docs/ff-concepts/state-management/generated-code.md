@@ -4,7 +4,7 @@ title: Generated Code
 description: Learn about the state management used in FlutterFlow's generated code.
 tags: [FlutterFlow, Generated Code, Concepts, State Management]
 toc_max_heading_level: 5
-sidebar_position: 5
+sidebar_position: 2
 keywords: [FlutterFlow, Generated Code, State Management, Concepts]
 ---
 

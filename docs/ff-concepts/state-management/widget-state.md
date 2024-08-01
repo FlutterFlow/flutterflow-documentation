@@ -1,5 +1,6 @@
 ---
 title: Widget State
+sidebar_position: 1
 ---
 
 # Widget State
@@ -31,8 +32,15 @@ In the following example, we find widget state and widget focus state of a TextF
 
 ![using-widget-state.png](imgs%2Fusing-widget-state.png)
 
-:::note[Scope]
-Widget states are only available for access on the page or component where they were created.
+:::tip[Scope]
+**Widget states** are mostly available for access on the page or component where they were created. However, when you add a component to a page, the widget states exposed in the component will also be available in its parent page.
+
+For instance, consider a component with two `TextFields` – one for the username and another for the password. This component could be utilized in both sign-in and sign-up pages. In such cases, you need to be able to retrieve the values from each TextField as if they were added directly to the page.
+
+You can access the widget state of a component's widgets on your page, just as you would for other widgets. Simply navigate to the **Set Variable menu > Widget State > [component_name] > [your_widget]**.
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/4dca7e59da1643629dcbb7cd2065580d?sid=3f2cd864-7d72-41ee-adc2-bb96e3ddc1b5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 :::
 
 FlutterFlow allows you to update the state of these widgets through actions exposed by the platform. For example, if you want to clear a TextField when the Send button is clicked on a form-like page, then in the Actions Flow, you can find relevant actions such as **Clear TextField**. This enables dynamic interaction and state management directly within the visual development environment.
@@ -60,5 +68,7 @@ For example, automatically moving to the next step in a process after a complete
 These triggers allow developers to create interactive and responsive applications by defining specific actions that occur in response to user interactions with form widgets.
 
 ![action-triggers-widget-state.png](imgs%2Faction-triggers-widget-state.png)
+
+
 
 
