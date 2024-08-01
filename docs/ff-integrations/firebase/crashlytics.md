@@ -2,7 +2,7 @@
 slug: /integrations/firebase/crashlytics
 title: Crashlytics
 description: Learn how to integrate Firebase Crashlytics in your FlutterFlow app.
-tags: [FlutterFlow, Firebase, Crashlytics]
+tags: [Firebase, Crashlytics]
 sidebar_position: 2
 keywords: [FlutterFlow, Firebase, Crashlytics]
 ---

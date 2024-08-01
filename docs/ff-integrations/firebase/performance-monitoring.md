@@ -2,7 +2,7 @@
 slug: /integrations/firebase/performance-monitoring
 title: Performance Monitoring
 description: Learn how to integrate Firebase Performance Monitoring in your FlutterFlow app.
-tags: [FlutterFlow, Firebase, Performance Monitoring]
+tags: [Firebase, Performance Monitoring]
 sidebar_position: 4
 keywords: [FlutterFlow, Firebase, Performance Monitoring]
 ---
