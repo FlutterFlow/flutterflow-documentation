@@ -1,6 +1,6 @@
 ---
 title: Marketplace
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 // Show all possible links
