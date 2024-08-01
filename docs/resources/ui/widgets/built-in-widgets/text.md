@@ -1,3 +1,6 @@
+---
+tags: [Base Elements]
+---
 
 # Text
 

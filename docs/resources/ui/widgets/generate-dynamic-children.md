@@ -1,4 +1,7 @@
-
+---
+title: Generating Dynamic Children
+sidebar_position: 3
+---
 
 # Generating Dynamic Children
 

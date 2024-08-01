@@ -120,7 +120,7 @@ Common layout elements include:
 | **Stack**     | Layers its child widgets on top of each other, allowing for overlapping elements.                                         | <img src="/img/widgets/stack-example.png" width="400px" /> |
 | **Container** | Provides a box model for a single child widget, with optional padding, margins, borders, box shadow and background color. | <img src="/img/widgets/cont-example.png" width="400px" />  |
 
-_Check out the builder for the entire list_
+Find the entire list on this [**index page**](/tags/layout-elements). 
 
 #### Base Elements
 
@@ -136,7 +136,7 @@ Examples include:
 | **Icon**   | Displays icon.                                                                                                                         | <img src="/img/widgets/icon-example.png" width="200px" />   |
 | **Button** | A widget meant to trigger actions and take users to another flow in the app. It can be styled with different colors, borders, and text | <img src="/img/widgets/button-example.png" width="200px" /> |
 
-_...and more._
+Find the entire list on this [**index page**](/tags/base-elements).
 
 #### Page Elements
 
@@ -161,6 +161,8 @@ Examples include:
 | **Text Field**   | Allows users to enter text.                                       | <img src="/img/widgets/txtfield-ex.png" width="300" alt="Textfield Example" /> |
 | **Radio Button** | Allows users to select one option from a set.                     | <img src="/img/widgets/radio-ex.png" width="150" alt="Radio Button Example" /> |
 | **Dropdown**     | Provides a menu with multiple options where users can select one. | <img src="/img/widgets/dropdwn-ex.png" width="300" alt="Dropdown Example" />   |
+
+Find the entire list on this [**index page**](/tags/form-elements).
 
 Each category in FlutterFlow serves distinct purposes, helping you design both
 the appearance and functionality of your app more efficiently.

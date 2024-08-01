@@ -1,7 +1,7 @@
 ---
 slug: swipeable-stack
 title: SwipeableStack
-tags: []
+tags: [Layout Elements]
 description: Learn how to add SwipeableStack widget in your FlutterFlow project.
 ---
 
