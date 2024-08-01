@@ -72,13 +72,25 @@ Here are the steps:
 
 1. Create a new Razorpay account from [here](https://dashboard.razorpay.com/signup). If you already have an account, [log in](https://dashboard.razorpay.com/signin).
 2. Once you are logged in, turn on the **Test Mode**. Test mode helps you simulate the payments without involving real money transactions.
+<p></p>
+
 ![Enabling test mode](imgs/enable-test-mode.avif)
+<p></p>
+
+
 3. From the left side menu, select **Account & Settings** > Under **Website and app settings** section, select **API keys**.
 4. If you're asked to add a website link but your app isn't published yet, you can temporarily publish it to a subdomain using our [web publishing](../../testing-deployment-publishing/publishing/web-publishing.md) feature. Later, you can update this to your actual domain in both FlutterFlow and Razorpay.
+<p></p>
+
 ![add-website-link](imgs/add-website-link.avif)
+<p></p>
+
 5. Click **Generate Test Key** and copy the **Key Id** and **Key Secret**. To regenerate, click on **Regenerate Test Key** and choose how you want to deactivate the old key.
+<p></p>
+
 ![Generate Test Key](imgs/generate-test-key.webp)
 
+<p></p>
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -103,12 +115,16 @@ Here are the steps:
         allow="clipboard-write">
     </iframe>
 </div>
+
 <p></p>
 
 6. Return to the FlutterFlow project, navigate to **Settings and Integrations** > **In App Purchases & Subscriptions** > **Razorpay**. Use the toggle to **Enable Razorpay Payments**.
 7. Under **Test Credentials**, paste the **Key ID** and **Key Secret** obtained in the previous step.
 8. Set your **Business Name**.
 9. Click the **Deploy** button.
+
+<p></p>
+
 ![deploy](imgs/deploy.png)
 
 ### 2. Trigger Razorpay payment [Action]
@@ -124,6 +140,8 @@ Follow the steps below to add this action:
     - For example, *$24.99* should be passed as *2499* (as a round-off integer; otherwise, it would be automatically rounded); similarly, for an amount of ₹120.00, 12000 should be passed.
     - Most probably, you'll specify this value from a variable. If you do so, you might need this [code expression](../../resources/control-flow/functions/utility-functions.md#code-expressions) to convert the total amount in the required format: `amount.toStringAsFixed(2).replaceAll(".", "");`
 5. Enter the **Currency Code** to be used for the amount, for example, *INR*, *USD*, *EUR*, or *BRL*. Make sure you enter a valid currency code; otherwise, the transaction won't go through. Download the complete [list of supported currencies](https://razorpay.com/docs/build/browser/assets/images/international-currency-list.xlsx).
+<p></p>
+
 ![Specifying amount and country code manually](imgs/specify-amount-and-code-manually.avif)
 
 <div style={{
@@ -181,7 +199,11 @@ Follow the steps below to add this action:
 <p></p>
 
 7. You can also customize the color scheme for the payment sheet using properties such as **Dialog Color, Barrier Color,** **Text Color**, **Processing Color**, **Success Color**, **Error Color,** and more.
+
+<p></p>
+
 ![Customizing Razorpay payment sheet](imgs/customize-payment-sheet.avif)
+
 8. Enter an **Action** **Output Variable Name** where the payment ID would be stored on a successful transaction.
 9. Now you must check if the payment was successful. You can do so by adding the [conditional action](../../resources/control-flow/functions/conditional-logic.md#conditional-actions). To do so, click the "**+**" button below the previous action tile and select **Add Conditional**.
 10. On the right side (**Set Condition for Action**),
@@ -218,7 +240,7 @@ Follow the steps below to add this action:
 <p></p>
 
 :::warning
-Ensure the user is authenticated before triggering this action; otherwise, it will result in an error. You can follow the steps on [this page](../authentication/firebase-auth/auth-initial-setup.md) to set up Firebase Authentication.
+Ensure the user is authenticated before triggering this action; otherwise, it will result in an error. You can follow the steps on [**this page**](../authentication/firebase-auth/auth-initial-setup.md) to set up Firebase Authentication.
 :::
 
 ### 3. Testing

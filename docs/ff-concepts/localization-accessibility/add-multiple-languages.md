@@ -1,10 +1,10 @@
 ---
 slug: multiple-languages
 title: Languages
-tags: [multilingual, localization, internationalization]
+tags: [Multilingual, Localization, Internationalization]
 keywords: [FlutterFlow, multiple languages, app localization, internationalization, multilingual support]
 description: Learn how to support multiple languages in your FlutterFlow app.
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # Languages
@@ -223,10 +223,10 @@ Managing your app's text translation includes updating the translated text (prod
 
 There are two ways you can manage the app text translation:
 
-1. [Inside Language Settings](#1-inside-language-settings)
-2. [Inside App Builder](#2-inside-app-builder)
+- [Inside Language Settings](#1-inside-language-settings)
+- [Inside App Builder](#2-inside-app-builder)
 
-### 1. Inside Language Settings
+### Inside Language Settings
 
 The Language Settings page lists all your app's text grouped by page name. You can use the Language Settings page when you want to manage the text in bulk.
 
@@ -247,7 +247,7 @@ The Translate Page button will create a translation for all the texts on a page.
   <figcaption class="centered-caption">Manage text translation inside language settings page</figcaption>
 </figure>
 
-### 2. Inside App Builder
+### Inside App Builder
 
 While building your app, you can translate or update the translation for the individual text right inside the app builder.
 
@@ -270,10 +270,10 @@ FlutterFlow allows you to manage the translation for predefined messages, such a
 
 There are two types of messages you can translate:
 
-1. [iOS Permission Messages](#1-ios-permission-messages)
-2. [Preset Snackbar Messages](#2-preset-snackbar-messages)
+- [iOS Permission Messages](#1-ios-permission-messages)
+- [Preset Snackbar Messages](#2-preset-snackbar-messages)
 
-### 1. iOS Permission Messages
+### iOS Permission Messages
 
 iOS permission messages are the messages that iOS users will see when prompted to grant permissions to your app (such as a camera or photo library access).
 
@@ -318,7 +318,7 @@ To add translations for the iOS permission messages:
 </div>
 <p></p>
 
-### 2. Preset Snackbar Messages
+### Preset Snackbar Messages
 
 Preset Snackbar Messages are ones we show for a certain action inside the Snackbar.
 
@@ -390,10 +390,10 @@ While building a multi-language app, sometimes you may need language-related dat
 
 In FlutterFlow, you can get the following two types of language-related data:
 
-1. [Current language code](#1-current-language-code)
-2. [Language dependent text](#2-language-dependent-text)
+- [Current language code](#1-current-language-code)
+- [Language dependent text](#2-language-dependent-text)
 
-### 1. Current language code
+### Current language code
 
 The Current language code gives you the ISO language code for the current app language, such as *en*, *de*, *fr*, etc.
 
@@ -460,7 +460,7 @@ To retrieve the current language code:
 </div>
 <p></p>
 
-### 2. Language dependent text
+### Language dependent text
 
 Sometimes you might want to store/process a text that is dependent on the current app language—for example, showing/storing the nation/country flag or name based on the current app language.
 

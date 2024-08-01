@@ -2,7 +2,7 @@
 slug: /integrations/firebase/remote-config
 title: Remote Config
 description: Learn how to integrate Firebase Remote Config in your FlutterFlow app.
-tags: [FlutterFlow, Firebase, Remote Config]
+tags: [Firebase, Remote Config]
 sidebar_position: 1
 keywords: [FlutterFlow, Firebase, Remote Config]
 ---
@@ -166,4 +166,3 @@ Here's another example that changes the app's background using the color value f
 </div>
 <p></p>
 
-and all this happens without requiring users to download the new app update. Isn't it cool!

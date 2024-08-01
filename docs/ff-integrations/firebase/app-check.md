@@ -2,7 +2,7 @@
 slug: /integrations/firebase/app-check
 title: App Check
 description: Learn how to integrate Firebase App Check in your FlutterFlow app.
-tags: [FlutterFlow, Firebase, App Check]
+tags: [Firebase, App Check]
 sidebar_position: 3
 keywords: [FlutterFlow, Firebase, App Check]
 ---
