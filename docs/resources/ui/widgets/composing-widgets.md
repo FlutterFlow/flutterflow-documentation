@@ -1,6 +1,7 @@
 ---
 title: Composing Widgets
 sidebar_position: 2
+tags: [Layout Elements]
 ---
 
 # Composing widgets

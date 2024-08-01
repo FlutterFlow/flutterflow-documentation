@@ -1,4 +1,6 @@
-
+---
+tags: [Layout Elements]
+---
 # Dividers
 
 Add a thin horizontal or vertical line, with padding on either side. Customize the color, width 

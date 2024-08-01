@@ -1,7 +1,7 @@
 ---
 slug: calendar
 title: Calendar
-tags: []
+tags: [Base Elements]
 description: Learn how to add Calendar widget in your FlutterFlow project.
 ---
 

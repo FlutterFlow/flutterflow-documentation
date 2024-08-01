@@ -1,13 +1,17 @@
 ---
 slug: pincode
 title: PinCode
-tags: [FlutterFlow, PinCode, Form Widget, App Development]
+tags: [PinCode, Form Elements]
 keywords: [FlutterFlow, PinCode, Form Widget, App Development, Input Field, Flutter]
 description: Learn how to add the PinCode widget in your FlutterFlow app.
 ---
 # PinCode
 
 The PinCode widget allows you to enter the PIN or OTP. You could use this widget to verify the user identity or a transaction before making payments in fintech apps.
+
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
 
 ## Adding PinCode widget
 

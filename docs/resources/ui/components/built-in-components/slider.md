@@ -1,7 +1,7 @@
 ---
 slug: slider
 title: Slider
-tags: [FlutterFlow, Slider, Form Widget, App Development]
+tags: [Slider, Form Elements]
 keywords: [FlutterFlow, Slider, Form Widget, App Development, Input Field, Flutter]
 description: Learn how to add Slider in your FlutterFlow app.
 ---
@@ -11,7 +11,11 @@ description: Learn how to add Slider in your FlutterFlow app.
 
 The Slider widget is used to select a single value from a range of values. You define the min and max value for the slider, and users can choose the value between the specified range by dragging the slider thumb (sliding circle).
 
-For example, you can use the Slider widget to allow users to set the volume, set the donation amount, etc.
+For example, you can use the **Slider** widget to allow users to set the volume, set the donation amount, etc.
+
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
 
 ## Adding Slider
 

@@ -1,7 +1,7 @@
 ---
 slug: datatable
 title: DataTable
-tags: []
+tags: [Layout Elements]
 description: Learn how to add DataTable widget in your FlutterFlow project.
 ---
 

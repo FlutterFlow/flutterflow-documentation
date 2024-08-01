@@ -1,3 +1,6 @@
+---
+tags: [Base Elements]
+---
 
 # Button 
 The Button widget is a fundamental component in user interface design, utilized extensively across web and mobile applications. It serves as a primary means of user interaction, allowing users to execute actions or commands within an application. Buttons are essential for:

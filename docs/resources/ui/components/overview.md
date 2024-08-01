@@ -41,7 +41,7 @@ Leveraging components effectively helps you build a consistent, efficient, and m
 
 ## Types of Components in FlutterFlow
 
-- **[Build-in Components](built-in-components/getting-started.md):** FlutterFlow 
+- **Built-in Components:** FlutterFlow 
   includes a variety of built-in pre-defined widgets that
   serve as ready-made components, such as the `CreditCard` or `Signature` widget. These are
   out-of-the-box solutions provided by FlutterFlow that can be directly integrated into any project
