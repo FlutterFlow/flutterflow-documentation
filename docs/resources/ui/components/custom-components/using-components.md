@@ -173,7 +173,32 @@ can adapt to different data and behavior.
     </iframe>
 </div>
 
+
+
+## Set Unique Key
+When you have a component in a dynamically generated list, this option becomes available. Imagine you have a dynamic list where items can change frequently – like a to-do list where tasks are added and removed. Think of it as giving each task a unique ID number. This is important for a few reasons:
+
+- **Tracking Changes:** The 'Unique Key' helps the app recognize which tasks are new, completed, or removed, ensuring accurate updates.
+
+- **Efficiency:** With unique IDs, the app updates only the tasks that have changed instead of the entire list, improving performance.
+
+- **Retaining Details:** When you modify a task and move away from it, the 'Unique Key' ensures the changes are remembered and displayed correctly when you return.
+
+:::tip
+If it’s a list of Documents the unique key might be the Document ID.
+:::
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/61d061adf14741bbb25178b439b50b4f?sid=8277e59a-effe-4cf8-a3f6-3f81a7e2a690" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
 ## Recursive Components
 
-<!--- TODO Will add in a new PR when new feature gets deployed. --->
+You can create a recursive component, meaning the component can include an instance of itself within its own widget tree. Using the recursive component, you can build complex and dynamic user interfaces.
+
+For example, in social media applications or forums, comments can have replies, and each reply can have further replies. A recursive component can display this nested structure effectively.
+
+![recursive-comp.png](..%2F..%2Fimgs%2Frecursive-comp.png)
+
 

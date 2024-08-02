@@ -1,6 +1,7 @@
 ---
-title: State Management
-description: An overview of state management in FlutterFlow
+title: State Variables
+description: An overview of state management & state variables in FlutterFlow.
+sidebar_position: 0
 ---
 # State Management 
 State management is a crucial concept focused on maintaining and controlling the **state** of an application. Simply put, it involves monitoring the changes within your app and updating the user interface to reflect these changes. 
