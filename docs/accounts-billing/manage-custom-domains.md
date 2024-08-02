@@ -8,8 +8,8 @@ Only *Pro* and *Teams* plans include **one** free custom domain. The *Teams* pla
 
 To purchase domains:
 
-1. *Standard* and *Pro* users can go to their [**account**](https://app.flutterflow.io/account)page, find the **Custom Domains** section, and click the **Add Domains** button.
-2. The *Team* owner can buy from the [My Organization](/getting-started/dashboard/my-organization#add-domains) page.
+1. *Standard* and *Pro* users can go to their [**account**](https://app.flutterflow.io/account) page, find the **Custom Domains** section, and click the **Add Domains** button.
+2. The *Team* owner can buy from the My Organization page.
 3. Click **Add Domains** to buy a new one.
 
 :::note
@@ -22,8 +22,8 @@ Note that purchasing a domain is not possible during the trial period. If you're
 
 To remove the custom domain:
 
-1. *Standard* and *Pro* users can go to their [**account**](https://app.flutterflow.io/account)page, find the **Custom Domains** section, and click the **Add Domains** button.
-2. The *Team* owner can buy from the [My Organization](/getting-started/dashboard/my-organization#add-domains) page.
+1. *Standard* and *Pro* users can go to their [**account**](https://app.flutterflow.io/account) page, find the **Custom Domains** section, and click the **Add Domains** button.
+2. The *Team* owner can buy from the My Organization page.
 3. Click **Remove Domains** to remove the existing custom domain.
 
 

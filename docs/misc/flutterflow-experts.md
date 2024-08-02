@@ -1,6 +1,6 @@
 # FlutterFlow Experts
 
-The FlutterFlow Experts is a platform that [connects](/miscellaneous/flutterflow-experts#connect-with-an-expert) users with independent professionals and agencies who have expertise in FlutterFlow. It also allows users to apply to [become experts](/miscellaneous/flutterflow-experts#become-an-expert) themselves.
+The FlutterFlow Experts is a platform that [connects](#connect-with-an-expert) users with independent professionals and agencies who have expertise in FlutterFlow. It also allows users to apply to [become experts](#become-an-expert) themselves.
 
 To get started, go to `<https://experts.flutterflow.io/>` and create an account.
 
@@ -20,9 +20,9 @@ To connect with an expert:
 
 ![img.png](imgs%2Fimg.png)
 
-1. Click **Continue,** and you will be asked to enter details about your project, including key features, preferred tools or platforms, project size, and budget.
+2. Click **Continue,** and you will be asked to enter details about your project, including key features, preferred tools or platforms, project size, and budget.
 
-2. Once completed, you can review the proposal details and **Go to Expert Selection**.
+3. Once completed, you can review the proposal details and **Go to Expert Selection**.
 
 <p></p>
 
@@ -30,13 +30,13 @@ To connect with an expert:
 
 <p></p>
 
-3. To invite experts to view your proposal, click on the **Send Invite** button, write a personalized message, and send the invite. You can send up to three invites at a time.
+4. To invite experts to view your proposal, click on the **Send Invite** button, write a personalized message, and send the invite. You can send up to three invites at a time.
 <p></p>
 
 ![img_2.png](imgs%2Fimg_2.png)
 <p></p>
 
-4. Alternatively, you can browse through expert profiles on the [experts page](https://experts.flutterflow.io/experts), see their details, and click the **Hire** button to send them a personalized project proposal.
+5. Alternatively, you can browse through expert profiles on the [experts page](https://experts.flutterflow.io/experts), see their details, and click the **Hire** button to send them a personalized project proposal.
 
 <p></p>
 ![img_3.png](imgs%2Fimg_3.png)

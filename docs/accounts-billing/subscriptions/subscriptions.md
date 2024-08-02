@@ -43,7 +43,7 @@ To view your plan details, go to the [**FlutterFlow Account Page**](https://app.
 The **Current Plan** section will show which plan you are subscribed to.
 
 :::warning[Teams Plan]
-For information on the Teams plan, please use [this link](subscriptions/flutterflow-for-teams).
+For information on the Teams plan, please use [**this link**](flutterflow-for-teams.md).
 :::
 
 

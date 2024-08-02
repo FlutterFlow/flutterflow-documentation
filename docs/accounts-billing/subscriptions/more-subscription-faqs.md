@@ -36,5 +36,5 @@ Upgrades are automatic, so the system will count the remaining days from the Sta
 For example, if you have paid $42 for Standard and you have 15 days remaining in the billing cycle, then on upgrading to Pro(let's say priced at $70) you will eventually pay $(70-21) = $49.
 
 :::info
-FlutterFlow provides different pricing options depending on your region. To see the exact prices for your area, visit the [Plans & Pricing](/account/plans-and-pricing) page in our documentation.
+FlutterFlow provides different pricing options depending on your region. To see the exact prices for your area, visit the [**Plans & Pricing**](../plan-pricing.md) page in our documentation.
 :::

@@ -34,7 +34,7 @@ The following topics are out of the scope of our support team:
 
 ### Additional Resources
 
-**Tutorials & How-To Guides**Our [YouTube channel](https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q/featured) contains a variety of tutorials and how-to videos. In addition to our documentation, our [blog](https://blog.flutterflow.io/) also contains a number of how-to guides.
+**Tutorials & How-To Guides** Our [YouTube channel](https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q/featured) contains a variety of tutorials and how-to videos. In addition to our documentation, our [blog](https://blog.flutterflow.io/) also contains a number of how-to guides.
 
 **Troubleshooting Guides**Our documentation contains a number of [troubleshooting guides](https://docs.flutterflow.io/troubleshooting/basic-troubleshooting-guide) to help you diagnose and fix common issues.
 
@@ -57,5 +57,3 @@ If you think you've found a bug, please submit an [in-app bug report](https://do
 To ensure we fix the most critical issues first, we assess each bug based on the severity and number of users impacted.
 
 Our highest priority is fixing critical issues that impact a large number of users. Issues impacting a smaller number of users or that have a workaround are addressed after any critical issues are fixed.
-
-We provide updates on our bug fixes in our marketing emails and in our [Release Tracker](https://docs.flutterflow.io/miscellaneous/documentation-release-tracker).

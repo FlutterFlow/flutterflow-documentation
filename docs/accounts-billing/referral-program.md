@@ -27,8 +27,8 @@ Your personal referral code is listed on your [My Account Page](https://app.flut
 
 You can track your referrals in the **Referrals** section on the [My Account Page](https://app.flutterflow.io/account). Here you will see:
 
-* **Signed Up:** how many people have signed up for FluterFlow using your referral link.
-* **Subscribed:** how many people have subscribed to FlutterFlow Pro or Standard using your referral link.
+* **Signed Up:** How many people have signed up for FluterFlow using your referral link.
+* **Subscribed:** How many people have subscribed to FlutterFlow Pro or Standard using your referral link.
 
 ![img_20.png](imgs%2Fimg_20.png)
 

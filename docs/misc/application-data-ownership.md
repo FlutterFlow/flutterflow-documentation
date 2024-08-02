@@ -10,7 +10,7 @@ FlutterFlow incorporates open-source packages which are included in the code you
 Please be aware that third-party Flutter packages may undergo license changes or have dependencies that are not as commercially permissive. We recommend adhering to industry-standard practices to ensure compliance with all relevant licensing requirements.
 
 :::info
-Please read our [Terms of Service](https://flutterflow.io/tos) for full details on our Intellectual Property policies.
+Please read our [**Terms of Service**](https://flutterflow.io/tos) for full details on our Intellectual Property policies.
 :::
 
 ## Data Handling and Privacy
@@ -23,5 +23,5 @@ FlutterFlow maintains a strict policy of non-interference with your end-users' d
 
 
 :::info
-Please read our [Privacy Policy](https://flutterflow.io/privacy) for full details.
+Please read our [**Privacy Policy**](https://flutterflow.io/privacy) for full details.
 :::

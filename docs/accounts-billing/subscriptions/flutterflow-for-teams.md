@@ -34,10 +34,7 @@ To change your account to a Teams Plan, please follow these steps:
 
 To add users to your Teams plan, you will need to complete two steps:
 
-1. [Adding seats to your organization](/account/subscriptions/flutterflow-for-teams#1.-adding-seats-to-your-organization)
-2. [Inviting users to your Team](/account/subscriptions/flutterflow-for-teams#2.-inviting-users-to-your-team)
-
-### Adding seats to your organization
+### 1. Adding seats to your organization
 
 A seat grants one user the ability to use Flutterflow. You will need to purchase a seat for each team member that you would like to add to your Team. To do so:
 
@@ -61,10 +58,10 @@ You can see how many seats you have used here
 :::
 
 
-### Inviting users to your Team
+### 2. Inviting users to your Team
 
 :::warning
-If you add an existing Flutterflow user to your Teams plan, they will need to manually cancel their subscription using these [instructions](https://docs.flutterflow.io/account/subscriptions/cancel-my-plan). Once this is completed, please reach out to support@flutterflow.io or chat to process the refund for any remaining time on your monthly plan. We're working on automating this process soon!
+If you add an existing Flutterflow user to your Teams plan, they will need to manually cancel their subscription using these [**instructions**](subscriptions.md#cancel-my-plan). Once this is completed, please reach out to support@flutterflow.io or chat to process the refund for any remaining time on your monthly plan. We're working on automating this process soon!
 :::
 
 1. After you've purchased your seats, this will be reflected in the **Seats** section under **My Organization** (example below).
