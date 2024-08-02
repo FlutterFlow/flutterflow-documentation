@@ -62,7 +62,7 @@ Adding Phone sign-in comprises the following steps:
 
 ### 1. Setting up phone sign-in
 
-To use phone sign-in, you must [get the SHA-1 key](#) and [regenerate the configuration files](#). You can find the detailed instructions [here](#). **Note** that this step is often missed, so ensure you must complete this step before you proceed further.
+To use phone sign-in, you must [get the SHA-1 key](auth-initial-setup.md#generate-the-sha-1-key) and [regenerate the configuration files](auth-initial-setup.md#regenerate-config-files). You can find the detailed instructions [here](auth-initial-setup.md). **Note** that this step is often missed, so ensure you must complete this step before you proceed further.
 
 ### 2. Enabling phone authentication in Firebase
 
@@ -104,7 +104,7 @@ To enable authentication in the Firebase:
 
 ### 3. Building phone number page
 
-To allow users to authenticate using their phone number, you need to create a page to accept the user's phone number. We provide a collection of ready-to-use templates. You can use one of our templates or [create a page from scratch](#).
+To allow users to authenticate using their phone number, you need to create a page to accept the user's phone number. We provide a collection of ready-to-use templates. You can use one of our templates or create a page from scratch.
 
 Here is the page added from the templates, and after some modification, it looks the below:
 <div style={{
@@ -296,17 +296,17 @@ To test on a real device, add the SHA-256 key in the Firebase console and enable
 Skip if you find the below steps already completed by our automated Firebase integration.
 :::
 
-1. Get the SHA-256 key/fingerprint, add it to your Firebase project, and then regenerate the Firebase config files in FlutterFlow. **Note**: The instructions are similar to generating the SHA-1 key and are explained [here](#). You will find the SHA-256 key in the terminal just below the SHA-1 key. This is required for the Firebase to verify that the sign-in request is coming from a legitimate device.
+1. Get the SHA-256 key/fingerprint, add it to your Firebase project, and then regenerate the Firebase config files in FlutterFlow. **Note**: The instructions are similar to generating the SHA-1 key and are explained [here](auth-initial-setup.md#generate-the-sha-1-key). You will find the SHA-256 key in the terminal just below the SHA-1 key. This is required for the Firebase to verify that the sign-in request is coming from a legitimate device.
 
 :::warning
-While releasing the app, make sure to [**get the key from the Play Console**](#).
+While releasing the app, make sure to [**get the key from the Play Console**](auth-initial-setup.md#getting-sha-keys-for-release-mode).
 :::
 
 ![SHA-256 key](../imgs/sha-256-key.png)
 
 
 1. Open the [Google Developers Console](https://console.developers.google.com/) (Make sure your project is selected in the dropdown at the top), Click on the **Library** menu on the left, search for the **Google Play Integrity API,** and enable it.
-2. Now, download and test the app using the instructions [here](#).
+2. Now, download and test the app using the instructions [here](../../../testing-deployment-publishing/exporting-code/ff-cli.md).
 
 <div style={{
     position: 'relative',
@@ -388,7 +388,7 @@ To add the fictitious number:
 <details>
 <summary>Getting this error: "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth Section."</summary>
 <p>
-1. First, ensure you have clicked the "Save" button while [Enabling phone authentication in Firebase](#).
+1. First, ensure you have clicked the "Save" button while [Enabling phone authentication in Firebase](#2-enabling-phone-authentication-in-firebase).
     
 ![Enabling phone authentication in Firebase](../imgs/adding-authorized-domain.png)
 

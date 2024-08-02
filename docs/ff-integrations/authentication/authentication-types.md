@@ -19,8 +19,8 @@ standards like OAuth 2.0 and OpenID Connect. This makes it highly adaptable for 
 backend, ensuring a secure and scalable solution.
 
 :::info
-Learn how to enable Firebase Authentication and integrate popular auth providers in your FlutterFlow
-app. [**Learn more here**](#)
+Learn how to enable [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md) and integrate popular auth providers in your FlutterFlow
+app.
 :::
 
 ## Supabase Authentication
@@ -31,8 +31,8 @@ Supabase provides a powerful and flexible authentication solution, similar to Fi
 unique advantages like support for PostgreSQL.
 
 :::info
-Discover how to set up Supabase Authentication and link it with available auth providers within your
-FlutterFlow app. [**Learn more here**](#)
+Discover how to set up [**Supabase Authentication**](../authentication/supabase-auth/initial-setup.md) and link it with available auth providers within your
+FlutterFlow app.
 :::
 
 ## Custom Authentication
@@ -44,6 +44,6 @@ application. Whether you need to work with legacy systems or have specific secur
 custom authentication provides the necessary control.
 
 :::info
-Explore how to implement custom authentication strategies in your FlutterFlow app, ensuring your
-authentication flow aligns with your business requirements. [**Learn more here**](#)
+Explore how to implement [custom authentication](../authentication/custom-auth/custom-auth.md) strategies in your FlutterFlow app, ensuring your
+authentication flow aligns with your business requirements.
 :::

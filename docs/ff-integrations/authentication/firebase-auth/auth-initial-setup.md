@@ -125,7 +125,7 @@ Google Sign-in and Phone Sign-in. To learn more about the SHA-1 key, see
 this [link](https://developers.google.com/android/guides/client-auth).
 
 :::warning[Release Guidelines]
-While releasing the app, make sure to [**get the key from Play Console**](#).
+While releasing the app, make sure to [**get the key from Play Console**](#getting-sha-keys-for-release-mode).
 :::
 
 1. Open a terminal window:
@@ -172,6 +172,14 @@ While releasing the app, make sure to [**get the key from Play Console**](#).
   fingerprint.
 4. Enter the copied SHA-1 into the input box and click on Save.
 
+#### Getting SHA keys for release mode
+
+If you're releasing your app to the Play Store, you must add the SHA certificate fingerprints from the Play Console.
+
+To get the keys for the release app, navigate to **Play Store Console > Your project > Release Setup > App Signing** and copy the **SHA-1** and **SHA-256** keys.
+
+![release-sha1-key](../imgs/release-sha1-key.avif)
+
 ### Regenerate config files
 
 After adding the SHA-1 key you must re-generate the config files in FlutterFlow.
@@ -182,4 +190,5 @@ To regenerate the config files:
 2. Click on the Regenerate Config Files.
 
 ![regerenate](../imgs/regerenate.png)
+
 

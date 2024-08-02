@@ -191,7 +191,7 @@ To enable Apple authentication in the Firebase:
 
 ### 4. Add an Apple sign-in button
 
-To allow users to authenticate, you need a login page with a button. You can create your own or use the one from the [widget template](#) or page template.
+To allow users to authenticate, you need a login page with a button. You can create your own or use the one from the widget template or page template.
 
 Here's how you can add the Apple sign-in button from our page template:
 
@@ -265,7 +265,7 @@ To let users log out of your app, you can use the [Logout](../logout-action.md) 
 
 ### 7. Preparing to test the app
 
-For [testing your app](#) on a real device, you must configure the project in Xcode. This includes adding a team to your project and setting an appropriate signing certificate.
+For testing your app on a real device, you must configure the project in Xcode. This includes adding a team to your project and setting an appropriate signing certificate.
 
 Here's how you configure your project in Xcode:
 
