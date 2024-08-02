@@ -9,17 +9,17 @@ keywords: [FlutterFlow, Building Layout, Concepts]
 
 # Building Layout
 
-In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/built-in-widgets/text.md), [Buttons](#), [Images](#), and [Icons](#), are visible on the screen. Others, like [Containers](#), [Rows](#), [Columns](#), and [Stacks](#), are not directly visible but help arrange and position the visible elements on the page.
+In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/built-in-widgets/text.md), [Buttons](../../resources/ui/widgets/built-in-widgets/button.md), [Images](#), and [Icons](../../resources/ui/widgets/built-in-widgets/icons.md), are visible on the screen. Others, like [Containers](../../resources/ui/widgets/built-in-widgets/container.md), [Rows](#), [Columns](#), and [Stacks](#), are not directly visible but help arrange and position the visible elements on the page.
 
-These widgets are categorized into four main types: [Layout Elements](#), [Base Elements](#), 
-[Page Elements](#), and [Form Elements](#). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
+These widgets are categorized into four main types: [Layout Elements](/tags/layout-elements), [Base Elements](/tags/base-elements), 
+[Page Elements](/tags/page-elements), and [Form Elements](/tags/form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
 
 ## Understanding layout concept
 
 One of the most common layout patterns is to arrange widgets either **vertically** or **horizontally**. To display widgets in a vertical layout, use the **Column** widget. For a horizontal layout, use the **Row** widget. If you need to place one widget on top of another, use the **Stack** widget.
 
 :::info
-**Composing widgets** is a fundamental aspect of creating layouts in FlutterFlow. It involves combining different widgets to form a cohesive and functional user interface. Understanding how to effectively compose widgets allows you to design complex layouts and create intuitive, user-friendly apps. Learn more about composing widgets [**here**](#).
+**Composing widgets** is a fundamental aspect of creating layouts in FlutterFlow. It involves combining different widgets to form a cohesive and functional user interface. Understanding how to effectively compose widgets allows you to design complex layouts and create intuitive, user-friendly apps. Learn more about composing widgets [**here**](../../resources/ui/widgets/composing-widgets.md).
 
 :::
 
@@ -155,13 +155,13 @@ The review section consists of multiple different widgets. First, add a Column t
 
 Apart from Row, Column, and Stack widgets, there are some other widgets that are widely used for building the page layout. Here are some of them:
 
-- [Container](#)
-- [Card](#)
-- [ListView](#)
-- [GridView](#)
-- [TabBar](#)
-- [PageView](#)
-- [Form](#)
+- [Container](../../resources/ui/widgets/built-in-widgets/container.md)
+- [Card](../../resources/ui/widgets/built-in-widgets/card.md)
+- [ListView](../../resources/ui/widgets/built-in-widgets/list-grid.md)
+- [GridView](../../resources/ui/widgets/built-in-widgets/list-grid.md)
+- [TabBar](../../ff-concepts/navigation-routing/special-page-navigation/tabbar-widget.md)
+- [PageView](../../ff-concepts/navigation-routing/special-page-navigation/pageview-widget.md)
+- [Form](../../resources/control-flow/user-interactivity/forms/forms.md)
 
 ## Video guides
 

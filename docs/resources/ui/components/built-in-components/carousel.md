@@ -1,7 +1,7 @@
 ---
 slug: carousel
 title: Carousel
-tags: []
+tags: [Layout Elements]
 description: Learn how to add Carousel widget in your FlutterFlow project.
 ---
 

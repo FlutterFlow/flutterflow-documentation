@@ -1,25 +1,20 @@
 ---
 slug: /resources/backend-query/query-collection
-title: Query Collection
+title: Query Collection / Table
 description: Learn how to query a collection in your FlutterFlow app.
 tags: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 2
 keywords: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
-# Query Collection
+# Query Collection / Table
 
-**Query Collection** helps you to retrieve a record (or a list of records) automatically whenever a
+Quering Firestore Collection or Supabase Table helps you to retrieve a record (or a list of records) automatically whenever a
 user navigates to the page containing the query. The information that is present in the record can
 be used to update any widget present inside.
 
 :::info[Prerequisites]
-
-In order to use this backend query, you should have:
-
-1. Completed all the steps of 
-[**Firebase Setup**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) for your
-   project.
-2. At least one **Firestore Collection** defined in your project.
+- To query Firestore collection, complete the [**Firebase setup**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) and have some data in a [**Collection**](../../../../ff-integrations/database/cloud-firestore/creating-collections.md).
+- To query Supabase table, complete the [**Supabase**](../../../../ff-integrations/supabase/supabase-setup.md) Setup and have some data in a [**table**](../../../../ff-integrations/supabase/supabase-setup.md#create-tables-in-supabase).
 :::
 
 ## Defining the Query
@@ -44,9 +39,12 @@ backend query:
    button. Select a **Field Name** to be used for ordering, and choose the **Order** to be
    either `Increasing` or `Decreasing`.
 9. Click **Save**.
-10. If the selected query returns a list of documents and if it's applied to any flexible widget (
-    like `Column`, `Row`, or `ListView`) then FlutterFlow will generate the children widgets
+10. If the selected query returns a list of documents and if it's applied to any flexible widget (like `Column`, `Row`, or `ListView`) then FlutterFlow will generate the children widgets
     dynamically. A dialog will be displayed with a similar message, click **Ok**.
+
+:::info
+The instructions to query a Supabase table are almost the same, except that for **Query Type**, you should select **Supabase Query**.
+:::
 
 <div style={{
     position: 'relative',
