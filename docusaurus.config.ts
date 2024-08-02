@@ -9,6 +9,7 @@ const config: Config = {
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'log',
+  favicon: 'logos/favicon.png',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
