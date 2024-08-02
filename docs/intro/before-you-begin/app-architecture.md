@@ -1,4 +1,5 @@
 ---
+slug: /before-you-begin/app-architecture
 title: App Architecture
 ---
 

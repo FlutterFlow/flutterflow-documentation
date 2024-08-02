@@ -11,8 +11,8 @@ Push notifications play a vital role in mobile apps, letting you connect with yo
 
 <img src="./push-notification-assets/push-notifications-ff.png" alt="Firebase Console"  />
 
-:::tip Using CodeMagic? [Skip ahead!](https://mdxjs.com/playground/)
-
+:::tip 
+Using CodeMagic? [Skip ahead!](https://mdxjs.com/playground/)
 :::
 
 ### Without CodeMagic 

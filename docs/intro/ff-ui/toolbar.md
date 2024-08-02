@@ -1,5 +1,5 @@
 ---
-slug: /intro/flutterflow-ui/toolbar
+slug: /flutterflow-ui/toolbar
 title: Toolbar
 description: Navigate the Toolbar in FlutterFlow for efficient access to essential tools and features. This includes project management, version control, interactive help resources, and direct actions like running your app, reporting issues, and customizing your workspace.
 tags: [Toolbar, FlutterFlow, UI, Tools, Project Management]

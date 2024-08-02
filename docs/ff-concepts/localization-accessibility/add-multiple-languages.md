@@ -1,5 +1,5 @@
 ---
-slug: multiple-languages
+slug: concepts/multiple-languages
 title: Languages
 tags: [Multilingual, Localization, Internationalization]
 keywords: [FlutterFlow, multiple languages, app localization, internationalization, multilingual support]

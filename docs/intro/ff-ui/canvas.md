@@ -1,5 +1,5 @@
 ---
-slug: /intro/flutterflow-ui/canvas
+slug: /flutterflow-ui/canvas
 title: Canvas
 description: Dive into the versatile Canvas in FlutterFlow, where you can effortlessly design and preview your app’s interface.
 tags: [Canvas, FlutterFlow, UI, Design]

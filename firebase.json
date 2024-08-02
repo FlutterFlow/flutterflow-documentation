@@ -11,6 +11,2088 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/blog/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/dashboard",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/dashboard/my-organization",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder",
+        "destination": "/flutterflow-ui/builder",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/navigation-menu",
+        "destination": "/flutterflow-ui/widget-palette",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/navigation-menu/widget-and-component-panel",
+        "destination": "/resources/ui/widgets/widget-configurations",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/navigation-menu/storyboard",
+        "destination": "/flutterflow-ui/storyboard",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/tool-bar",
+        "destination": "/flutterflow-ui/toolbar",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/tool-bar/branching",
+        "destination": "/collaboration/branching",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/canvas-area",
+        "destination": "/flutterflow-ui/canvas",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/ui-builder/properties-panel",
+        "destination": "/flutterflow-ui/builder",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/creating-new-project",
+        "destination": "/resources/projects",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/adding-new-page",
+        "destination": "/resources/ui/pages/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/build-your-first-app",
+        "destination": "/quickstart",
+        "type": 301
+      },
+      {
+        "source": "/getting-started/resources",
+        "destination": "/flutterflow-ui/resource-hierarchy",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings",
+        "destination": "/resources/projects/settings/general-settings",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/app-details",
+        "destination": "/resources/projects/settings/general-settings",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/app-assets",
+        "destination": "/resources/projects/settings/general-settings",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/navbar-and-appbar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/navbar-and-appbar/navbar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/navbar-and-appbar/appbar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/general-settings/walkthroughs",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/collaboration",
+        "destination": "/resources/projects/how-to-collaborate-on-projects",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/firebase",
+        "destination": "/integrations/authentication/firebase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/firebase/remote-config",
+        "destination": "/integrations/firebase/remote-config",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/firebase/crashlytics",
+        "destination": "/integrations/firebase/crashlytics",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/firebase/app-check",
+        "destination": "/integrations/firebase/app-check",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/firebase/performance-monitoring",
+        "destination": "/integrations/firebase/performance-monitoring",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/languages",
+        "destination": "/concepts/multiple-languages",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/platforms",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/permissions",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings",
+        "destination": "/resources/projects/settings/general-settings",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/authentication",
+        "destination": "/integrations/authentication/firebase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/push-notifications",
+        "destination": "/integrations/push-notifications",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/mobile-deployment",
+        "destination": "/deployment/google-playstore-deployment",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/mobile-deployment/app-store-deployment",
+        "destination": "/deployment/apple-app-store-deployment",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/mobile-deployment/google-play-store-deployment",
+        "destination": "/deployment/google-playstore-deployment",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/app-settings/web-publishing",
+        "destination": "/deployment/web-publishing",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/in-app-purchases-and-subscriptions",
+        "destination": "/integrations/payments/stripe",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/stripe",
+        "destination": "/integrations/payments/stripe",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/braintree",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/revenuecat",
+        "destination": "/integrations/payments/revenuecat",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/razorpay",
+        "destination": "/integrations/payments/razorpay",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations",
+        "destination": "/integrations",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/supabase",
+        "destination": "/integrations/supabase/setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/github",
+        "destination": "/exporting/push-to-github",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/algolia",
+        "destination": "/integrations/search/algolia-search",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/google-analytics",
+        "destination": "/integrations/google-analytics",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/google-maps",
+        "destination": "/integrations/google-maps/generate-maps-keys",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/admob",
+        "destination": "/integrations/ads/admob",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/mux-livestream",
+        "destination": "/integrations/mux/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/sqlite",
+        "destination": "/integrations/database/sqlite/quickstart",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/onesignal",
+        "destination": "/integrations/notifications/one-signal",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/integrations/gemini",
+        "destination": "/integrations/gemini",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/ui-and-layout-101",
+        "destination": "/concepts/layouts",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets",
+        "destination": "/resources/ui/overview",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements",
+        "destination": "/resources/ui/overview",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/container",
+        "destination": "/resources/ui/widgets/built-in-widgets/container",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/row",
+        "destination": "/resources/ui/widgets/composing-widgets",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/columns",
+        "destination": "/resources/ui/widgets/composing-widgets",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/stack",
+        "destination": "/resources/ui/widgets/composing-widgets",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/card",
+        "destination": "/resources/ui/widgets/built-in-widgets/card",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/listview",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/gridview",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/spacer",
+        "destination": "/resources/ui/widgets/built-in-widgets/spacer",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/divider",
+        "destination": "/resources/ui/widgets/built-in-widgets/dividers",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/vertical-divider",
+        "destination": "/resources/ui/widgets/built-in-widgets/dividers",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/tabbar",
+        "destination": "/concepts/navigation/tabbar",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/pageview",
+        "destination": "/concepts/navigation/pageview",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/expandable",
+        "destination": "/resources/ui/components/built-in-components/expandable",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/staggeredview",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/flippablecard",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/wrap",
+        "destination": "/concepts/layouts/wrap",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/carousel",
+        "destination": "/resources/ui/components/built-in-components/carousel",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/swipeablestack",
+        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/layout-elements/datatable-paginated",
+        "destination": "/resources/ui/components/built-in-components/datatable",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/page-elements",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/page-elements/appbar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/page-elements/floatingactionbutton",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/page-elements/drawer",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/page-elements/enddrawer",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements",
+        "destination": "/tags/base-elements/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/text",
+        "destination": "/resources/ui/widgets/built-in-widgets/text",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/richtext",
+        "destination": "/resources/ui/widgets/built-in-widgets/text",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/image",
+        "destination": "/resources/ui/widgets/built-in-widgets/image",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/circleimage",
+        "destination": "/resources/ui/widgets/built-in-widgets/image",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/icon",
+        "destination": "/resources/ui/widgets/built-in-widgets/icons",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/button",
+        "destination": "/resources/ui/widgets/built-in-widgets/button",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/iconbutton",
+        "destination": "/resources/ui/widgets/built-in-widgets/icons",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/listtile",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/slidablelisttile",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/videoplayer",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/youtubeplayer",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/calendar",
+        "destination": "/resources/ui/components/built-in-components/calendar",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/checkbox",
+        "destination": "/resources/forms/checkbox-group",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/checkboxlisttile",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/switch",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/switchlisttile",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/toggleicon",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/audioplayer",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/webview",
+        "destination": "/concepts/navigation/webview",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/staticmap",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/googlemap",
+        "destination": "/integrations/google-maps/google-maps-widget",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/adbanner",
+        "destination": "/integrations/ads/admob",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/lottieanimation",
+        "destination": "/concepts/animations/lottie-animation",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/blur",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/transform",
+        "destination": "/resources/ui/widgets/built-in-widgets/transform",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/mediadisplay",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/riveanimation",
+        "destination": "/concepts/animations/rive-animation",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/pdfviewer",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/progressbar",
+        "destination": "/resources/ui/components/built-in-components/progressbar",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/languageselector",
+        "destination": "/concepts/multiple-languages",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/badge",
+        "destination": "/resources/ui/components/built-in-components/badge",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/chart",
+        "destination": "/resources/ui/components/built-in-components/chart/chart",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/chart/line-chart",
+        "destination": "/resources/ui/components/built-in-components/chart/line-chart",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/chart/bar-chart",
+        "destination": "/resources/ui/components/built-in-components/chart/bar-chart",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/chart/pie-chart",
+        "destination": "/resources/ui/components/built-in-components/chart/pie-chart",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/muxbroadcast",
+        "destination": "/integrations/mux/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/timer",
+        "destination": "/resources/time-based-logic/timer-widget",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/mouseregion",
+        "destination": "/resources/ui/widgets/built-in-widgets/mouse-region",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/barcode",
+        "destination": "/resources/ui/components/built-in-components/barcode",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/tooltip",
+        "destination": "/resources/ui/widgets/built-in-widgets/tooltip",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/conditionalbuilder",
+        "destination": "/concepts/layouts/conditional-builder",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/stickyheader",
+        "destination": "/resources/ui/components/built-in-components/sticky-header",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/markdown",
+        "destination": "/resources/ui/components/built-in-components/markdown",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/base-elements/draggable-+-dragtarget",
+        "destination": "/resources/ui/components/built-in-components/draggable",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1",
+        "destination": "/resources/forms",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/textfield",
+        "destination": "/resources/forms/textfield",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/dropdown",
+        "destination": "/resources/forms/dropdown",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/radiobutton",
+        "destination": "/resources/forms/radiobutton",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/pincode",
+        "destination": "/resources/ui/components/built-in-components/pincode",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/slider",
+        "destination": "/resources/ui/components/built-in-components/slider",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/ratingbar",
+        "destination": "/resources/ui/components/built-in-components/ratingbar",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/creditcardform",
+        "destination": "/resources/ui/components/built-in-components/credit-card-form",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/countcontroller",
+        "destination": "/resources/ui/components/built-in-components/count-controller",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/choicechips",
+        "destination": "/resources/ui/components/built-in-components/choice-chips",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/placepicker",
+        "destination": "/integrations/google-maps/place-picker-widget",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/form",
+        "destination": "/resources/forms",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/checkboxgroup",
+        "destination": "/resources/forms/checkbox-group",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/form-elements-1/signature",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/widgets/widget-commonalities",
+        "destination": "/resources/ui/widgets/widget-commonalities",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/custom-components",
+        "destination": "/resources/ui/components/custom-components/using-components",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/custom-components/bottom-sheet",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/animations",
+        "destination": "/concepts/animations",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/animations/widget-animations",
+        "destination": "/concepts/animations/widget-animations",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/animations/hero-animations",
+        "destination": "/concepts/animations/hero-animations",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/theme-settings",
+        "destination": "/concepts/design-system",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/theme-settings/design-system",
+        "destination": "/concepts/design-system",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/theme-settings/colors",
+        "destination": "/concepts/design-system",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/theme-settings/typography-and-icons",
+        "destination": "/concepts/design-system",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/theme-settings/theme-widgets",
+        "destination": "/concepts/design-system",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/flows",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/widgets-and-components/responsive-layouts-guide",
+        "destination": "/concepts/layouts/responsive",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions",
+        "destination": "/resources/functions/action-blocks",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/navigation",
+        "destination": "/concepts/navigation/overview",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/navigation/navigate",
+        "destination": "/concepts/navigation/page-navigation",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/navigation/navigate-back",
+        "destination": "/concepts/navigation/page-navigation",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/navigation/close-dialog-drawer-etc.",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database",
+        "destination": "/integrations/database/cloud-firestore/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firestore",
+        "destination": "/integrations/database/cloud-firestore/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/api-call",
+        "destination": "/resources/backend-logic/rest-api",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/refresh-database-request",
+        "destination": "/integrations/database/refresh-db-request",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication",
+        "destination": "/integrations/authentication/firebase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/login",
+        "destination": "/integrations/authentication/firebase/email-login",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/create-account",
+        "destination": "/integrations/authentication/firebase/email-login",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/send-e-mail-verification-link",
+        "destination": "/integrations/authentication/firebase/email-login",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/logout",
+        "destination": "/integration/authentication/logout",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/delete-user",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/firebase-authentication/update-email",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase-authentication",
+        "destination": "/integrations/authentication/supabase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase-authentication/log-in",
+        "destination": "/integrations/authentication/supabase/email-authentication",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase-authentication/create-account",
+        "destination": "/integrations/authentication/supabase/email-authentication",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase-authentication/log-out",
+        "destination": "/integrations/authentication/supabase/auth-actions",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase-authentication/delete-user",
+        "destination": "/integrations/authentication/supabase/auth-actions",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/simple-search-action",
+        "destination": "/integrations/search/simple-search",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/supabase",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/algolia-search",
+        "destination": "/integrations/search/algolia-search",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/google-analytics-event",
+        "destination": "/integrations/google-analytics",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/generate-current-page-link",
+        "destination": "/concepts/navigation/generate-current-page-link",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/backend-database/sqlite-query",
+        "destination": "/resources/backend-query/sqlite-query",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management",
+        "destination": "/concepts/state-management",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/update-app-state",
+        "destination": "/resources/data-representation/app-state",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/update-page-state",
+        "destination": "/concepts/state-management",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/update-component-state",
+        "destination": "/concepts/state-management",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/set-form-field",
+        "destination": "/resources/forms/set-form-field",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/reset-form-fields",
+        "destination": "/resources/forms/reset-form-field",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/state-management/clear-query-cache",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/bottom-sheet",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/date-time-picker",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/color-picker",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/control-tab-bar",
+        "destination": "/concepts/navigation/tabbar",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/validate-form",
+        "destination": "/resources/forms/form-validation",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/clear-text-fields-pin-codes",
+        "destination": "/concepts/state-management/widget-state",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/scroll-to",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/scan-barcode-qr-code",
+        "destination": "/resources/ui/components/built-in-components/barcode",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/launch-map",
+        "destination": "/integrations/google-maps/google-maps-widget",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/walkthrough",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/clear-all-select-all",
+        "destination": "/concepts/state-management/widget-state",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/drawer",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/control-page-view",
+        "destination": "/concepts/navigation/pageview",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/timer",
+        "destination": "/resources/time-based-logic/timer-widget",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/expand-image",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/google-map",
+        "destination": "/integrations/google-maps/google-maps-widget",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/google-map/move-map-center",
+        "destination": "/integrations/google-maps/move-map-center-action",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/group-chat-action",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/upload-signature",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/clear-signatures",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/control-swipeable-stack",
+        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/widget-ui-interactions/control-carousel",
+        "destination": "/resources/ui/components/built-in-components/carousel",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/alert-dialog",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/dismiss-custom-dialog",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/show-snack-bar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/hide-snackbar",
+        "destination": "/resources/ui/pages/scaffold-elements",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/haptic-feedback",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/request-permission",
+        "destination": "/resources/projects/settings/project-setup",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/play-sound",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/stop-sound",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/trigger-push-notification-action",
+        "destination": "/integrations/push-notifications",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/alerts-notifications/update-app-badge-count-ios-only",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/upload-data",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/upload-data/upload-save-media",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/upload-data/upload-save-file",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/delete-data",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/wait",
+        "destination": "/resources/time-based-logic/wait-action",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/periodic-action",
+        "destination": "/resources/time-based-logic/periodic-action",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/set-dark-mode-setting",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/copy-to-clipboard",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/biometric-verification",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/audio-recording",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/clear-uploaded-data",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/set-app-language",
+        "destination": "/concepts/multiple-languages",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/utilities/execute-callback",
+        "destination": "/resources/ui/components/custom-components/using-components",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share",
+        "destination": "/concepts/navigation/share-action",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share/share",
+        "destination": "/concepts/navigation/share-action",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share/launch-url",
+        "destination": "/concepts/navigation/launch-url",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share/send-email",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share/call-number",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/share/send-sms",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/animation",
+        "destination": "/concepts/animations",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/animation/widget-animation",
+        "destination": "/concepts/animations/widget-animations",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/animation/lottie-animation",
+        "destination": "/concepts/animations/lottie-animation",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/animation/rive-animation",
+        "destination": "/concepts/animations/rive-animation",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations",
+        "destination": "/integrations",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/stripe-payment",
+        "destination": "/integrations/payments/stripe",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/braintree-payment",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/razorpay-payment",
+        "destination": "/integrations/payments/razorpay",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/gemini",
+        "destination": "/integrations/gemini",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/admob",
+        "destination": "/integrations/ads/admob",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/admob/load-show-interstitial-ad",
+        "destination": "/integrations/ads/admob",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/revenuecat",
+        "destination": "/integrations/payments/revenuecat",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/integrations/onesignal",
+        "destination": "/integrations/notifications/one-signal",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/custom-action",
+        "destination": "/concepts/custom-code/custom-actions",
+        "type": 301
+      },
+      {
+        "source": "/actions/actions/cloud-function",
+        "destination": "/concepts/custom-code/cloud-functions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase",
+        "destination": "/integrations/firebase/connect-to-firebase",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firebase-setup",
+        "destination": "/integrations/firebase/connect-to-firebase",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication",
+        "destination": "/integrations/authentication-methods",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/initial-setup",
+        "destination": "/integrations/authentication/firebase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/email-sign-in",
+        "destination": "/integrations/authentication/firebase/email-login",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/password-resets",
+        "destination": "/integrations/authentication/firebase/password-reset",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/google-sign-in",
+        "destination": "/integrations/authentication/firebase/google-oauth-login",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/apple-sign-in",
+        "destination": "/integrations/authentication/firebase/apple",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/facebook-sign-in",
+        "destination": "/integrations/authentication/firebase/facebook",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/phone-sign-in",
+        "destination": "/integrations/authentication/firebase/phone",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/anonymous-sign-in",
+        "destination": "/integrations/authentication/firebase/anonymous-login",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/jwt-token",
+        "destination": "/integrations/authentication/firebase/jwt-auth",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/authentication/github",
+        "destination": "/integrations/authentication/firebase/github",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore",
+        "destination": "/integrations/database/cloud-firestore/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/creating-collections",
+        "destination": "/integrations/database/cloud-firestore/creating-collections",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/creating-subcollections",
+        "destination": "/integrations/database/cloud-firestore/creating-subcollections",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules",
+        "destination": "/integrations/database/cloud-firestore/firestore-rules",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/storage-rules",
+        "destination": "/integrations/firebase-storage/storage-rules",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/firebase-content-manager",
+        "destination": "/integrations/database/cloud-firestore/firestore-content-manager",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data",
+        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data/adding-indexes",
+        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/adding-data",
+        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/updating-data",
+        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/deleting-data",
+        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase",
+        "destination": "/integrations/supabase/setup",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-setup",
+        "destination": "/integrations/supabase/setup",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-authentication",
+        "destination": "/integrations/authentication/supabase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-authentication/initial-setup",
+        "destination": "/integrations/authentication/supabase/initial-setup",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-authentication/email-supabase",
+        "destination": "/integrations/authentication/supabase/email-authentication",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-authentication/google-sign-in-supabase",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-database",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-database/retrieving-data",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-database/adding-data",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-database/updating-data",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/supabase/supabase-database/deleting-data",
+        "destination": "/integrations/database/supabase/database-actions",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-authentication",
+        "destination": "/integrations/authentication/custom-authentication",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/passing-data",
+        "destination": "/concepts/navigation/passing-data",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/searching-data",
+        "destination": "/integrations/search/simple-search",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/searching-data/simple-search",
+        "destination": "/integrations/search/simple-search",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/searching-data/algolia-search",
+        "destination": "/integrations/search/algolia-search",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/state-management",
+        "destination": "/concepts/state-management",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/state-management/app-state",
+        "destination": "/resources/data-representation/app-state",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/state-management/page-state",
+        "destination": "/resources/ui/pages/getting-started",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/state-management/component-state",
+        "destination": "/resources/ui/components/custom-components/component-lifecycle",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/state-management/constants",
+        "destination": "/resources/data-representation/constants",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls",
+        "destination": "/resources/backend-logic/rest-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls/api-calls-101",
+        "destination": "/resources/backend-logic/rest-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls/create-and-test-api-call",
+        "destination": "/resources/backend-logic/create-test-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls/rest-api-example-airline-passengers",
+        "destination": "/resources/backend-logic/rest-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls/soap-api-example-countries",
+        "destination": "/resources/backend-logic/rest-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/api-calls/streaming-api-example-ai-review-summary",
+        "destination": "/resources/backend-logic/streaming-api",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query",
+        "destination": "/resources/backend-query",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query/query-collection",
+        "destination": "/resources/backend-query/query-collection",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query/document-from-reference",
+        "destination": "/resources/backend-query/document-from-reference",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query/api-call-query",
+        "destination": "/resources/backend-query/api-call-query",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query/algolia-search-query",
+        "destination": "/resources/backend-query/algolia-search-query",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/backend-query/sqlite-query",
+        "destination": "/resources/backend-query/sqlite-query",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/showing-data-in-ui-elements",
+        "destination": "/resources/ui/widgets/generate-dynamic-children",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types",
+        "destination": "/resources/data-representation/custom-data-types",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types/custom-data-type-in-firestore-document",
+        "destination": "/resources/data-representation/custom-data-types",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types/custom-data-type-in-app-state",
+        "destination": "/resources/data-representation/custom-data-types",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types/custom-data-type-with-api",
+        "destination": "/resources/data-representation/custom-data-types",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types/custom-data-type-in-custom-code",
+        "destination": "/concepts/custom-code",
+        "type": 301
+      },
+      {
+        "source": "/data-and-backend/custom-data-types/enums",
+        "destination": "/resources/data-representation/enums",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/custom-functions",
+        "destination": "/concepts/custom-code",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/custom-functions/custom-functions",
+        "destination": "/concepts/custom-code/custom-functions",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/custom-functions/custom-widgets",
+        "destination": "/concepts/custom-code/custom-widgets",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/custom-functions/custom-actions",
+        "destination": "/concepts/custom-code/custom-actions",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/custom-functions/custom-files",
+        "destination": "/concepts/custom-code/custom-files",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/cloud-functions",
+        "destination": "/concepts/custom-code/cloud-functions",
+        "type": 301
+      },
+      {
+        "source": "/customizing-your-app/manage-custom-code-in-github",
+        "destination": "/exporting/push-to-github",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/conditional-visibility",
+        "destination": "/concepts/layouts/responsive",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/conditional-logic",
+        "destination": "/resources/functions/conditional-logic",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/is-user-logged-in",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/current-time",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/current-device-location",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/is-android-ios-web",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/fraction-of-screen-width-and-height",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/is-light-or-dark-mode",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/global-properties/is-on-screen-keyboard-visible",
+        "destination": "/resources/data-representation/global-properties",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/deep-and-dynamic-linking",
+        "destination": "/concepts/navigation/deep-dynamic-linking",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/chat-+-group-chat",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/code-expression",
+        "destination": "/resources/functions/utility",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/ai-gen",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/advanced-functionality/best-practices-secure-api-keys",
+        "destination": "/best-practices/secure-api-keys",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/testing-your-app",
+        "destination": "/testing/run-your-app",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/testing-your-app/testing-on-mobile-device",
+        "destination": "/testing/run-your-app",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/testing-your-app/testing-on-desktop",
+        "destination": "/testing/run-your-app",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/testing-your-app/automated-tests",
+        "destination": "/testing/automated-tests",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/deploy-mobile-app",
+        "destination": "/deployment/google-playstore-deployment",
+        "type": 301
+      },
+      {
+        "source": "/deploying-your-app/generate-screenshots",
+        "destination": "/deployment/pre-checks-before-publishing",
+        "type": 301
+      },
+      {
+        "source": "/flutter/flutterflow-for-flutter-developers",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/flutter/generated-code",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/flutter/generated-code/directory-structure",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/flutter/generated-code/flutterflow-classes",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/flutter/generated-code/state-management",
+        "destination": "/concepts/state-management/generated-code",
+        "type": 301
+      },
+      {
+        "source": "/flutter/generated-code/authentication",
+        "destination": "/integrations/authentication/generated-code",
+        "type": 301
+      },
+      {
+        "source": "/flutter/custom-code-deep-dive",
+        "destination": "/concepts/custom-code",
+        "type": 301
+      },
+      {
+        "source": "/flutter/export-flutterflow-ui-code-to-your-flutter-project",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/adding-and-purchasing-items",
+        "destination": "/marketplace/adding-purchasing-item",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/adding-and-purchasing-items/refund-policy",
+        "destination": "/marketplace/refund-policy",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/submitting-feedback-for-items",
+        "destination": "/marketplace/submit-feedback",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub",
+        "destination": "/marketplace/creators-hub",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/submitting-an-item-for-review",
+        "destination": "/marketplace/creators-hub/submit-item-for-reivew",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria",
+        "destination": "/marketplace/creators-hub/submission-criteria",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/legal-guidelines-for-creators",
+        "destination": "/marketplace/creators-hub/submission-criteria",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/legal-guidelines-for-creators/copyright-dmca-process",
+        "destination": "/marketplace/creators-hub/copyright-dmca-process",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses",
+        "destination": "/marketplace/creators-hub/navigating-external-licenses",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/creator-faqs",
+        "destination": "/marketplace/creators-hub/creator-faqs",
+        "type": 301
+      },
+      {
+        "source": "/account/account-management",
+        "destination": "/accounts-billing/account-management",
+        "type": 301
+      },
+      {
+        "source": "/account/account-management/password",
+        "destination": "/accounts-billing/account-management",
+        "type": 301
+      },
+      {
+        "source": "/account/account-management/verify-account",
+        "destination": "/accounts-billing/account-management",
+        "type": 301
+      },
+      {
+        "source": "/account/account-management/delete-account",
+        "destination": "/accounts-billing/account-management",
+        "type": 301
+      },
+      {
+        "source": "/account/account-management/change-update-email-address",
+        "destination": "/accounts-billing/account-management",
+        "type": 301
+      },
+      {
+        "source": "/account/plans-and-pricing",
+        "destination": "/accounts-billing/plan-pricing",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/free-trials",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/upgrade-or-change-plan",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/downgrade-to-free-plan",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/cancel-my-plan",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/refunds",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/flutterflow-for-teams",
+        "destination": "/accounts-billing/subscriptions/subscriptions/flutterflow-teams",
+        "type": 301
+      },
+      {
+        "source": "/account/subscriptions/other-subscription-questions",
+        "destination": "/accounts-billing/subscriptions/more-subscription-faqs",
+        "type": 301
+      },
+      {
+        "source": "/account/billing",
+        "destination": "/accounts-billing/payments-billing",
+        "type": 301
+      },
+      {
+        "source": "/account/billing/payment-methods",
+        "destination": "/accounts-billing/payments-billing",
+        "type": 301
+      },
+      {
+        "source": "/account/billing/change-credit-card",
+        "destination": "/accounts-billing/payments-billing",
+        "type": 301
+      },
+      {
+        "source": "/account/billing/refunds",
+        "destination": "/accounts-billing/payments-billing",
+        "type": 301
+      },
+      {
+        "source": "/account/billing/invoices",
+        "destination": "/accounts-billing/payments-billing",
+        "type": 301
+      },
+      {
+        "source": "/account/manage-custom-domains",
+        "destination": "/accounts-billing/manage-custom-domains",
+        "type": 301
+      },
+      {
+        "source": "/account/referral-program",
+        "destination": "/accounts-billing/referral-program",
+        "type": 301
+      },
+      {
+        "source": "/account/privacy-and-terms-of-service",
+        "destination": "/accounts-billing/privacy-terms-of-service",
+        "type": 301
+      },
+      {
+        "source": "/account/privacy-and-terms-of-service/personal-data",
+        "destination": "/accounts-billing/privacy-terms-of-service",
+        "type": 301
+      },
+      {
+        "source": "/account/privacy-and-terms-of-service/unsubscribe-from-emails",
+        "destination": "/accounts-billing/privacy-terms-of-service",
+        "type": 301
+      },
+      {
+        "source": "/account/privacy-and-terms-of-service/policies",
+        "destination": "/accounts-billing/privacy-terms-of-service",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/customer-support-policy",
+        "destination": "/misc/customer-support-policy",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/enterprise-support-policy",
+        "destination": "/misc/enterprise-support-policy",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/flutterflow-experts",
+        "destination": "/misc/flutterflow-experts",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/additional-resources",
+        "destination": "/misc/additional-resources",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/application-and-data-ownership",
+        "destination": "/misc/application-data-ownership",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/security",
+        "destination": "/misc/security",
+        "type": 301
+      },
+      {
+        "source": "nan",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "nan",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "nan",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "nan",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "nan",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/guides/building-custom-signature-widget-with-custom-code",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/guides/build-a-notes-app-with-flutterflow-and-supabase",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/flutterflow-beta-testers",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/documentation-release-tracker",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/design-resources",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/miscellaneous/available-sample-apps",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/flutterflow-status",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/basic-troubleshooting-guide",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/advanced-troubleshooting-guides",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/enterprise",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/submit-bug-reports",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/miscellaneous",
+        "destination": "/",
+        "type": 301
+      }
     ]
   }
 }

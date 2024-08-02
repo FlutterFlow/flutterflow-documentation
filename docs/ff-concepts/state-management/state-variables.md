@@ -1,4 +1,5 @@
 ---
+slug: concepts/state-management
 title: State Variables
 description: An overview of state management & state variables in FlutterFlow.
 sidebar_position: 0

@@ -1,5 +1,5 @@
 ---
-slug: /intro/flutterflow-ui/storyboard
+slug: /flutterflow-ui/storyboard
 title: Storyboard
 description: Master the Storyboard view in FlutterFlow to visualize your app’s design and user navigation. The Storyboard allows you to see screens and interactions, ensuring a seamless user experience.
 tags: [Storyboard, FlutterFlow, UI, User Navigation]
