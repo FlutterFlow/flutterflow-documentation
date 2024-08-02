@@ -1,6 +1,6 @@
 ---
 title: Create & Test API Calls
-slug: create-test-api
+slug: resources/backend-logic/create-test-api
 tag: [API Calls]
 keywords: [API Calls, FlutterFlow]
 sidebar_position: 2
