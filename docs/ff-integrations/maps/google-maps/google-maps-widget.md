@@ -2,7 +2,7 @@
 slug: /integrations/google-maps/google-maps-widget
 title: Google Maps Widget
 description: Learn how to add and configure the Google Maps widget in your FlutterFlow app.
-tags: [FlutterFlow, Google Maps, Widget, Integration]
+tags: [Google Maps, Widget, Integration]
 sidebar_position: 2
 keywords: [FlutterFlow, Google Maps, Widget, Integration]
 ---

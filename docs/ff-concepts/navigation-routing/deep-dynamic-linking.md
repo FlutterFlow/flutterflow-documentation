@@ -2,7 +2,7 @@
 slug: /concepts/navigation/deep-dynamic-linking
 title: Deep & Dynamic Linking
 description: Learn how to implement deep and dynamic linking in your FlutterFlow app.
-tags: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
+tags: [Deep Linking, Dynamic Linking, Concepts]
 sidebar_position: 4
 keywords: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
 ---

@@ -2,7 +2,7 @@
 slug: /concepts/animations/hero-animations
 title: Hero Animations
 description: Learn how to add Hero Animations in your FlutterFlow app.
-tags: [FlutterFlow, Hero Animations, Concepts]
+tags: [Hero Animations, Concepts]
 sidebar_position: 3
 keywords: [FlutterFlow, Hero Animations, Concepts]
 ---

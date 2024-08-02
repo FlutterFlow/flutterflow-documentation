@@ -2,7 +2,7 @@
 slug: /integration/authentication/logout
 title: Logout [Action]
 description: Learn how to add a logout action in your FlutterFlow app.
-tags: [FlutterFlow, Logout, Authentication, Action]
+tags: [Logout, Authentication, Action]
 sidebar_position: 7
 keywords: [FlutterFlow, Logout, Authentication, Session Security]
 ---

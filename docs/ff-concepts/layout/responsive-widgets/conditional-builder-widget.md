@@ -2,7 +2,7 @@
 slug: /concepts/layouts/conditional-builder
 title: ConditionalBuilder
 description: Learn how to display different widgets based on certain conditions in your FlutterFlow app.
-tags: [FlutterFlow, ConditionalBuilder, Concepts]
+tags: [ConditionalBuilder, Concepts]
 sidebar_position: 1
 keywords: [FlutterFlow, ConditionalBuilder, Concepts]
 ---

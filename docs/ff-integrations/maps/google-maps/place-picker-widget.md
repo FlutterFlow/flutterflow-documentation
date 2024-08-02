@@ -2,7 +2,7 @@
 slug: /integrations/google-maps/place-picker-widget
 title: Place Picker Widget
 description: Learn how to add and configure the Place Picker widget in your FlutterFlow app.
-tags: [FlutterFlow, Google Maps, Place Picker, Widget, Integration]
+tags: [Google Maps, Place Picker, Widget, Integration]
 sidebar_position: 3
 keywords: [FlutterFlow, Google Maps, Place Picker, Widget, Integration]
 ---

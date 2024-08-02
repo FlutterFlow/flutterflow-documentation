@@ -2,7 +2,7 @@
 slug: /concepts/custom-code/custom-files
 title: Custom Files
 description: Learn how to manage and use custom files in your FlutterFlow app to extend its capabilities.
-tags: [FlutterFlow, Custom Files, Custom Code]
+tags: [Custom Files, Custom Code]
 sidebar_position: 5
 keywords: [FlutterFlow, Custom Files, Customizations, Flutter, Dart, Pub.dev]
 ---

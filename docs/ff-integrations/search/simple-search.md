@@ -2,7 +2,7 @@
 slug: /integrations/search/simple-search
 title: Simple Search
 description: Learn how to implement simple search functionality in your FlutterFlow app to search local data on a device.
-tags: [FlutterFlow, Simple Search, Local Search, Firestore]
+tags: [Simple Search, Local Search, Firestore]
 sidebar_position: 0
 keywords: [FlutterFlow, Simple Search, Local Search, Firestore]
 ---

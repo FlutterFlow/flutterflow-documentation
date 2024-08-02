@@ -2,7 +2,7 @@
 slug: /integrations/authentication/firebase/github
 title: GitHub Login
 description: Learn how to add GitHub authentication in your FlutterFlow app.
-tags: [FlutterFlow, GitHub Login, Authentication, Firebase]
+tags: [GitHub Login, Authentication, Firebase]
 sidebar_position: 7
 keywords: [FlutterFlow, GitHub Login, Authentication, Firebase]
 ---

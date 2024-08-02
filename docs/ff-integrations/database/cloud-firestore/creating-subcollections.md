@@ -2,7 +2,7 @@
 slug: /integrations/database/cloud-firestore/creating-subcollections
 title: Creating Subcollections
 description: Learn how to create subcollections in Firestore for your FlutterFlow app, including organizing documents within subcollections.
-tags: [FlutterFlow, Firestore, Database, Subcollections, Cloud Firestore]
+tags: [Firestore, Database, Subcollections, Cloud Firestore]
 sidebar_position: 4
 keywords: [FlutterFlow, Firestore, Database, Subcollections, Cloud Firestore]
 ---

@@ -2,7 +2,7 @@
 slug: /concepts/navigation/passing-data
 title: Passing Data
 description: Learn how to pass data between pages in FlutterFlow.
-tags: [FlutterFlow, Passing Data, Navigation, Concepts]
+tags: [Passing Data, Navigation, Concepts]
 sidebar_position: 2
 keywords: [FlutterFlow, Passing Data, Navigation, Concepts]
 ---

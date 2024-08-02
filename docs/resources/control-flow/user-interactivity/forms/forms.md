@@ -1,7 +1,7 @@
 ---
 slug: /resources/forms
 title: Overview
-tags: [FlutterFlow, forms, input, UI, user interaction]
+tags: [Forms]
 keywords: [FlutterFlow, forms, input fields, user interface, mobile app development, data collection, user interaction]
 description: Learn how to work with Forms in FlutterFlow app.
 sidebar_position: 0

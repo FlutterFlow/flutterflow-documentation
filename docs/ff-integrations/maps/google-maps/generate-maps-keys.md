@@ -2,7 +2,7 @@
 slug: /integrations/google-maps/generate-maps-keys
 title: Generate Maps Keys
 description: Learn how to generate and use Maps keys for Google Maps integration in your FlutterFlow app.
-tags: [FlutterFlow, Google Maps, API Keys, Integration]
+tags: [Google Maps, API Keys, Integration]
 sidebar_position: 1
 keywords: [FlutterFlow, Google Maps, API Keys, Integration]
 ---

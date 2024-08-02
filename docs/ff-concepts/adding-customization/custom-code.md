@@ -2,7 +2,7 @@
 slug: /concepts/custom-code
 title: Writing Custom Code
 description: Learn how to write and integrate custom code in your FlutterFlow app to add custom functionalities.
-tags: [FlutterFlow, Custom Code, Customizations]
+tags: [Custom Code, Customizations]
 sidebar_position: 1
 keywords: [FlutterFlow, Custom Code, Customizations, Flutter, Dart, Pub.dev]
 toc_max_heading_level: 4
