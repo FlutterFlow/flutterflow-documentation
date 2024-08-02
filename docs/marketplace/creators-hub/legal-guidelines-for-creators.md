@@ -19,14 +19,14 @@ As part of our creative community, your contributions are invaluable in helping 
 
 ### What to Avoid in Your Submissions
 
-- **❌ Designs from External Marketplaces:** Please refrain from submitting designs or templates that you've acquired from other marketplaces. Typically, these items are licensed, not sold, and come with restrictions that prohibit their redistribution on our platform. For guidance on navigating external licenses and understanding your rights, please review [Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses).
+- **❌ Designs from External Marketplaces:** Please refrain from submitting designs or templates that you've acquired from other marketplaces. Typically, these items are licensed, not sold, and come with restrictions that prohibit their redistribution on our platform. For guidance on navigating external licenses and understanding your rights, please review [Navigating External Licenses](navigating-external-licenses.md).
 - **❌ Proprietary Code or Data**: Do not include any proprietary code, data, or APIs that you do not have explicit rights to use and redistribute. This includes direct copies of proprietary software or use of internal SDKs not intended for public distribution.
 - **❌ Trademarked Material Without Permission**: Avoid using trademarked names, logos, or branding elements in your templates unless you have obtained explicit permission from the trademark owner. This includes mimicking the UI of a proprietary app exactly.
 - **❌ Misleading Content**: Ensure your template does not mislead users into thinking it's officially affiliated with or endorsed by any brand or service it might resemble, especially in educational or demonstrative templates.
 
 ### Best Practices for Template Submission
 
-- **✍️ Clear Attribution**: If your template includes third-party open-source components, ensure you comply with their licenses by properly attributing the original creators and including any required license texts or notices. Also see [Open Source Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators#open-source-licenses).
+- **✍️ Clear Attribution**: If your template includes third-party open-source components, ensure you comply with their licenses by properly attributing the original creators and including any required license texts or notices. Also see [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
 - **💎 Use Generic Elements**: For educational or demonstrative templates, use generic names and design elements to avoid trademark issues while still providing valuable learning experiences.
 - **⚖️ Include Disclaimers**: When necessary, include disclaimers clarifying the purpose of your template, especially if it's for educational use, to avoid any potential confusion about its unofficial status.
 - **📣 Stay Informed**: Licenses and legal requirements can change, so it's crucial to stay informed about the legal aspects of the components and APIs you use in your templates.
@@ -45,7 +45,7 @@ Embracing open-source is part of our ethos, but not all licenses are created equ
 
 We understand that inspiration can come from lots of different sources, including other marketplaces. However, it's important to respect legal and ethical standards, especially with the reuse of design elements and templates purchased elsewhere. Here’s what you should know:
 
-- **🤝 Ownership and Licensing**: When you purchase a design or template from other marketplaces, you're typically acquiring a license to use that item, not owning it outright. These licenses often come with significant restrictions, particularly around redistribution and creating derivative works meant for resale. It’s best to carefully review the license terms for each item and marketplace you use. See [Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses) for some examples.
+- **🤝 Ownership and Licensing**: When you purchase a design or template from other marketplaces, you're typically acquiring a license to use that item, not owning it outright. These licenses often come with significant restrictions, particularly around redistribution and creating derivative works meant for resale. It’s best to carefully review the license terms for each item and marketplace you use. See [Navigating External Licenses](navigating-external-licenses.md) for some examples.
 - **⚠️ End Products and Redistribution**: Most marketplace licenses restrict the use of their items as part of an “end product” that is not meant for redistribution or resale. For example, using a downloaded Figma design to create a template that you then sell on FlutterFlow Marketplace may violate the original marketplace's license terms, even under extended licenses. When in doubt, ask the original content provider. Obtaining explicit permission or clarification can prevent future disputes and legal challenges.
 - **Clarifications and Examples**:
     - **❌ Likely Prohibited**: Using a UI design purchased from another marketplace to create a FlutterFlow template that you intend to distribute or sell.
@@ -54,7 +54,7 @@ We understand that inspiration can come from lots of different sources, includin
 
 For more details and examples, please review:
 
-[Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses)
+[Navigating External Licenses](navigating-external-licenses.md)
 
 ## Item Reports and Complaints
 
@@ -70,7 +70,7 @@ We encourage our community members to resolve disputes amicably whenever possibl
 
 When you receive a report about an item you've listed on FlutterFlow Marketplace, it's important to respond promptly and thoughtfully. We've put together a breakdown of our process for responding to DMCA and other infringements here:
 
-[Copyright (DMCA) Process](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/copyright-dmca-process)
+[Copyright (DMCA) Process](copyright-dmca-process.md)
 
 Our goal is to foster a creative, respectful, and lawful environment for all users. By following these steps, you help us achieve this goal and ensure FlutterFlow remains a platform where innovation thrives within the bounds of respect and legality.
 

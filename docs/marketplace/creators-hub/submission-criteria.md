@@ -58,12 +58,12 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
 
 #### 1.5 Original Project Content
 
-- **Criteria:** All project content—text, images, designs—must be original or appropriately licensed for commercial use. Please see [Legal Guidelines for Creators](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators) and [Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses) for more info.
+- **Criteria:** All project content—text, images, designs—must be original or appropriately licensed for commercial use. Please see [Legal Guidelines for Creators](legal-guidelines-for-creators.md) and [Navigating External Licenses](navigating-external-licenses.md) for more info.
 - **Why It Matters:** Using copyrighted material without permission can lead to legal issues and undermines the professional nature of the Marketplace.
 - **What To Do:**
     - **Create your own assets:** This is the best way to ensure originality.
-    - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators#open-source-licenses).
-    - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators#open-source-licenses) and [Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses).
+    - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
+    - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](legal-guidelines-for-creators.md#open-source-licenses) and [Navigating External Licenses](navigating-external-licenses.md).
 
 
 
@@ -453,9 +453,9 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
 - **Criteria:** Projects must not include any unauthorized use of copyrighted material, such as:
     - Images, illustrations, or graphics
     - Music or sound effects
-    - Code snippets or libraries — see our docs on [Open Source Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators#open-source-licenses) for details
-- **Why it Matters:** Using copyrighted material without permission is a legal infringement and can result in serious legal consequences, including [DMCA takedown](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/copyright-dmca-process).
-- **What To Do:** Please review our [Legal Guidelines for Creators](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators) and [Navigating External Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses) for more details.
+    - Code snippets or libraries — see our docs on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses) for details
+- **Why it Matters:** Using copyrighted material without permission is a legal infringement and can result in serious legal consequences, including [DMCA takedown](copyright-dmca-process.md).
+- **What To Do:** Please review our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) and [Navigating External Licenses](navigating-external-licenses.md) for more details.
 
 
 
@@ -465,8 +465,8 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
     - Brand names
     - Logos
     - Slogans
-- **Why it Matters:** Trademark infringement can lead to legal disputes and damage the reputation of FlutterFlow Marketplace. Please see our [Legal Guidelines for Creators](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators) for more details.
-- **What To Do:** Please review our [Legal Guidelines for Creators](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators) for more details.
+- **Why it Matters:** Trademark infringement can lead to legal disputes and damage the reputation of FlutterFlow Marketplace. Please see our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) for more details.
+- **What To Do:** Please review our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) for more details.
 
 
 #### 7.4 Free of Confidential Data
@@ -487,11 +487,11 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
 
 To help streamline your submission process, here are some of the most frequent reasons projects are flagged:
 
-- [**Lack of Anonymous Authentication**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria#id-4.2-user-sign-in-anonymous-auth): Make it easy for users to test your project without requiring logins.
-- [**Unclear Usage Instructions**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria#id-2.7-professional-instructions): Provide detailed, step-by-step guidance on how to use and customize your template.
-- [**Image Issues**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria#id-2.9-high-quality-images): Ensure images are high-resolution, sized appropriately, and don't include the FlutterFlow logo.
-- [**Poor Widget Tree Organization**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria#id-5.10-organized-widget-tree): Utilize components and naming effectively to create a clean, well-structured project.
-- [**Use of Copyrighted Assets**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria#id-7.2-free-of-copyrighted-material): Only include assets that you have created or have the legal right to use commercially.
+- [**Lack of Anonymous Authentication**](submission-criteria.md#42-user-sign-in-anonymous-auth): Make it easy for users to test your project without requiring logins.
+- [**Unclear Usage Instructions**](submission-criteria.md#27-professional-instructions): Provide detailed, step-by-step guidance on how to use and customize your template.
+- [**Image Issues**](submission-criteria.md#29-high-quality-images): Ensure images are high-resolution, sized appropriately, and don't include the FlutterFlow logo.
+- [**Poor Widget Tree Organization**](submission-criteria.md#510-organized-widget-tree): Utilize components and naming effectively to create a clean, well-structured project.
+- [**Use of Copyrighted Assets**](submission-criteria.md#72-free-of-copyrighted-material): Only include assets that you have created or have the legal right to use commercially.
 
 
 

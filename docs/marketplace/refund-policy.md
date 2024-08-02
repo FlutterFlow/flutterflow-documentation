@@ -32,6 +32,6 @@ If you believe an item qualifies, please contact us directly by emailing [market
 
 Your feedback is vital in helping us improve the quality of the offerings on our Marketplace. If the template didn’t meet your expectations, please consider:
 
-- **Providing Feedback:** You can [rate the item](#) in your Marketplace dashboard, which helps us maintain quality standards and assists other users in making informed decisions.
-- **Contacting the Creator:** [Reach out directly](#) to the item creator to express any dissatisfaction.
-- **Reporting Issues:** If you believe the item violates our standards or policies, please [report it](#). We take these concerns seriously and investigate every report.
+- **Providing Feedback:** You can [rate the item](submit-feedback.md#rate-an-item) in your Marketplace dashboard, which helps us maintain quality standards and assists other users in making informed decisions.
+- **Contacting the Creator:** [Reach out directly](submit-feedback.md#contact-the-item-creator) to the item creator to express any dissatisfaction.
+- **Reporting Issues:** If you believe the item violates our standards or policies, please [report it](submit-feedback.md#report-an-item). We take these concerns seriously and investigate every report.

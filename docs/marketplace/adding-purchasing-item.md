@@ -54,6 +54,6 @@ You will need to add the item to each individual project that you want to use th
 3. Upon successful payment, navigate to the **Owned Items** tab in your [dashboard](https://marketplace.flutterflow.io/dashboard)
 4. You can now start a new project using the template
 
-**Note:** Template App purchases are single-use only and non-refundable. See [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) and our [Refund Policy](https://docs.flutterflow.io/marketplace/adding-and-purchasing-items/refund-policy) for details.
+**Note:** Template App purchases are single-use only and non-refundable. See [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) and our [Refund Policy](refund-policy.md) for details.
 </TabItem>
 </Tabs>

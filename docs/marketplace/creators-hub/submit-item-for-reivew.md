@@ -15,7 +15,7 @@ All items submitted to the Marketplace are subject to a comprehensive review pro
 
 :::danger[Important: Review Submission Policies]
 
-Please review our [**Submission Guidelines**](https://docs.flutterflow.io/marketplace/creators-hub/submitting-an-item-for-review/item-submission-criteria) and our [**Marketplace Terms of Service**](https://flutterflow.io/tos-marketplace) before submitting your item. It may also be helpful to review our [**Legal Guidelines for Creators**](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators), which explain your legal responsibility in plain language.
+Please review our [**Submission Guidelines**](submission-criteria.md) and our [**Marketplace Terms of Service**](https://flutterflow.io/tos-marketplace) before submitting your item. It may also be helpful to review our [**Legal Guidelines for Creators**](legal-guidelines-for-creators.md), which explain your legal responsibility in plain language.
 :::
 
 ## How to Submit an Item
@@ -119,8 +119,8 @@ Pages or Components are assembled modules that can be used within FlutterFlow. T
 Custom Code is Dart code that can be used within FlutterFlow projects. There are 3 sub-types:
 
 - **Custom Functions:** synchronous functions that do not have external dependencies.
-- **Custom Actions:** synchronous or asynchronous functions that may have external dependencies. If your action contains dependencies, please review our guide on [Open Source Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators).
-- **Custom Widgets:** user-defined Dart widgets that extend the capabilities of the standard FlutterFlow widget collection. If your widget contains dependencies, please review our guide on [Open Source Licenses](https://docs.flutterflow.io/marketplace/creators-hub/legal-guidelines-for-creators).
+- **Custom Actions:** synchronous or asynchronous functions that may have external dependencies. If your action contains dependencies, please review our guide on [Open Source Licenses](legal-guidelines-for-creators.md).
+- **Custom Widgets:** user-defined Dart widgets that extend the capabilities of the standard FlutterFlow widget collection. If your widget contains dependencies, please review our guide on [Open Source Licenses](legal-guidelines-for-creators.md).
 
 *Please note that each custom code item needs to be submitted separately.*
 
