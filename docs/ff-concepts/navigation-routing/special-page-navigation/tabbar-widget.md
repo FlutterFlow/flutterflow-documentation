@@ -19,12 +19,12 @@ It can be used in various types of apps, such as news apps with different catego
 
 To add the TabBar widget to your app:
 
-1. [Add](#) the **TabBar** widget from the **Layout Elements** tab.
-2. By default, it adds three tabs to the page and shows the first one in the canvas. In the [widget tree](#), it is represented as **Tab** and **TabBar Page**. To see another tab in the canvas, select the **TabBar** widget, move to the **Properties Panel,** and ****set the **Active Tab** to the one you want to see.
+1. Add the **TabBar** widget from the **Layout Elements** tab.
+2. By default, it adds three tabs to the page and shows the first one in the canvas. In the widget tree, it is represented as **Tab** and **TabBar Page**. To see another tab in the canvas, select the **TabBar** widget, move to the **Properties Panel,** and ****set the **Active Tab** to the one you want to see.
 3. To customize the Tab:
     1. Select the **Tab >** Move to **Properties Panel**.
     2. Use the **Text** property to change the label of the Tab.
-    3. You can also [add **Icon**](#), align it horizontally, and set its margin. **Tip**: To only display Icon, remove the Text value.
+    3. You can also [add Icon](../../../resources/ui/widgets/built-in-widgets/icons.md), align it horizontally, and set its margin. **Tip**: To only display Icon, remove the Text value.
 4. Inside the **TabBar Page**, you can replace the existing **Text** widget with any widget of your choice.
 5. To add a new tab, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 
@@ -60,7 +60,7 @@ To add the TabBar widget to your app:
 
 ## Change tab in response to widget action
 
-If you want to change the tab selection in response to a widget action, such as a button click, you can do so by adding the [Control Tab Bar](#) action.
+If you want to change the tab selection in response to a widget action, such as a button click, you can do so by adding the [Control Tab Bar](#control-tab-bar-action) action.
 
 ## Customizing
 
@@ -71,9 +71,9 @@ You can customize the appearance and behavior of this widget using the various p
 To customize the tab label:
 
 1. Select the **TabBar** widget > move to the **Properties Panel > Label Properties**.
-2. To [set different colors](#) when the tab is selected and unselected, use the **Selected Color** and **Unselected Color** properties.
+2. To set different colors when the tab is selected and unselected, use the **Selected Color** and **Unselected Color** properties.
 3. To add some space around the label, use the **Label Padding** property.
-4. Use the **Label Style** property to change its [styling](#). You can also set the label styling for the unselected tab text by enabling the **Custom Unselected Label Style**.
+4. Use the **Label Style** property to change its [styling](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties). You can also set the label styling for the unselected tab text by enabling the **Custom Unselected Label Style**.
 
 <div style={{
     position: 'relative',
@@ -243,6 +243,83 @@ To keep the tab state alive, select the **TabBar** widget **> Properties Panel >
         allow="clipboard-write">
     </iframe>
 </div>
+
+--- 
+## Control Tab Bar [Action]
+
+By using this action, you can gain more control over the tab-switching behavior of the TabBar widget. For instance, you can enable users to move to the next or previous tab with a single tap of a button or to quickly jump to a specific tab based on their preferences.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/7a8454f15bec4df5a45b4e54c967b3cd?sid=36c3441f-66ba-42ff-a354-f7727f14ea81"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Types of action
+
+These are the types of actions you can add to the TabBar.
+
+- **Previous**: Switch to the previous tab in the TabBar.
+- **Next**: Switch to the next tab in the TabBar.
+- **First**: Switch to the first tab in the TabBar.
+- **Last**: Switch to the last tab in the TabBar.
+- **Jump to**: Switch to a specific tab in the TabBar. Please **note** that the tab index starts from 0. So, if you want to jump to tab 1, you should enter 0. If you want to jump to tab 2, you should enter 1, and so on.
+
+### Adding Control Tab Bar action
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
+2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
+3. Search and select the **Control Tab Bar** (under *Widget/UI Interactions*) action.
+4. Set the **Tab Bar to Control** to the **name** of the tab bar added to your page.
+5. Select the [action type](#types-of-action).
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/4b3bbd2ea16e43928f91827ef019064a?sid=ee520d4c-3c5e-4308-bb0a-9e318f3be83f"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ---
 

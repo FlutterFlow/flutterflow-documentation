@@ -22,7 +22,7 @@ To add the PageView widget to your app:
 2. By default, it adds three pages and shows the first one in the canvas. In the widget tree, it is represented as **PageView Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the page you want to see.
 3. To add a new page, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 4. To delete any page, select the **PageView Page** (which you want to delete) from the widget tree or the canvas area and press the **Delete** key on the keyboard.
-5. By default, PageView Page contains an [Image](#) widget; however, you can customize it as per your requirement. For example, if you want to use the PageView widget to create an onboarding experience, you could wrap (`⌘` + B) the default image widget inside the [Stack](#) widget and then add some more widgets.
+5. By default, PageView Page contains an [Image](../../../resources/ui/widgets/built-in-widgets/image.md) widget; however, you can customize it as per your requirement. For example, if you want to use the PageView widget to create an onboarding experience, you could wrap (`⌘` + B) the default image widget inside the Stack widget and then add some more widgets.
 
 <div style={{
     position: 'relative',
@@ -55,7 +55,7 @@ The PageView widget is an incredibly versatile widget that can be utilized in a 
 
 In such situations, you might consider adding an infinite scroll on this widget, which automatically loads the new pages as you swipe.
 
-We have already covered how to [add infinite scroll on ListView](#) widget, which will give you an overall idea of how to add infinite scroll on the PageView widget as well.
+We have already covered how to [add infinite scroll on ListView](../../../resources/ui/widgets/built-in-widgets/list-grid.md#adding-infinite-scroll) widget, which will give you an overall idea of how to add infinite scroll on the PageView widget as well.
 
 ## Customizing
 
@@ -165,7 +165,7 @@ To trigger action on swipe:
 3. You will notice that the **Type of Action** (aka callback) is already set to **On Page Swipe**. That means actions added under this will be called whenever the page is swiped.
 4. Now, you can add any action here.
 
-Here is an example showing the [snackbar](#) message whenever the page is swiped to the second page.
+Here is an example showing the [snackbar](../../../resources/ui/pages/page-elements.md#snackbar) message whenever the page is swiped to the second page.
 
 <div style={{
     position: 'relative',
@@ -280,12 +280,90 @@ The width of the active dot is calculated by multiplying the value of the **Dot 
 
 If you use the PageView widget to create the onboarding experience, you may probably want to allow users to scroll the pages on button press (e.g., next, previous, and skip buttons) in addition to the swipe to scroll. You can do so by adding the PageView and then defining the Control Page View action on the Tap of a Button widget.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/WOqGJeiT2HU8lMq47soV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 Here's an example of scrolling PageView on button press:
 
 1. First, [add the PageView](#adding-pageview-widget) widget.
 2. [Customize the PageView](#customizing) widget and add buttons to go to the previous and next pages.
-3. Now select any button and define the [Control Page View action](#).
+3. Now select any button and define the [Control Page View action](#control-page-view-action).
 
+---
+
+## Control Page View [Action]
+
+By using this action, you can gain more control over the scrolling behavior of the PageView widget. For instance, you can enable your users to move to the next or previous page with a single tap of a button or to quickly jump to a specific page index based on their preferences.
+
+
+### Types of page view action
+
+These are the types of actions you can add to the pageview.
+
+- **Previous**: Scroll to the previous page in the pageview.
+- **Next**: Scroll to the next page in the pageview.
+- **First**: Scroll to the first page in the pageview.
+- **Last**: Scroll to the last page in the pageview.
+- **Jump to**: Scroll to a specific page in the pageview. Please note that the page index starts from 0. So, if you want to jump to page 1, you should enter 0. If you want to jump to page 2, you should enter 1, and so on.
+
+### Adding Control Page View action
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
+2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
+3. Search and select the **Control Page View** (under *Widget/UI Interactions*) action.
+4. Set the **Page View to Control** to the **name** of the page view added to your page.
+5. Select the [**Page View Action Type**](#types-of-page-view-action).
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/io0ECo1Q53Z2l50rgDJV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 ---
 
 ## Video guide

@@ -208,7 +208,7 @@ If you notice carefully, the items appear in a staggered fashion. This can be ac
 
 Select the item in the list and add the Slide animation.
 
-In the Delay property, open the variable menu and add a [code expression](#) to calculate the delay value based on the item's index. For this example, we use the formula `[index] * 100`, where `index` represents the position of the item, and `100` is the delay in milliseconds. This means the first item will slide in after 100 ms, the second after 200 ms, and so on, creating a staggered animation effect.
+In the Delay property, open the variable menu and add a [code expression](../../resources/control-flow/functions/utility-functions.md#code-expressions) to calculate the delay value based on the item's index. For this example, we use the formula `[index] * 100`, where `index` represents the position of the item, and `100` is the delay in milliseconds. This means the first item will slide in after 100 ms, the second after 200 ms, and so on, creating a staggered animation effect.
 
 <div style={{
     position: 'relative',
