@@ -14,6 +14,16 @@
     ],
     "redirects": [
       {
+        "source": "/blog/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/troubleshooting/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
         "source": "/getting-started/dashboard",
         "destination": "/",
         "type": 301

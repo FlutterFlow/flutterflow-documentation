@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /tags/
+Disallow: /blog/
+Disallow: /troubleshooting/
+Allow: /
+
+Sitemap: https://docs.flutterflow.io/sitemap.xml
