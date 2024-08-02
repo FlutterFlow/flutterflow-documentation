@@ -1,7 +1,7 @@
 ---
 slug: submit-feedback
 title: Submit Feedback
-description: Learn more about the submiting feedback on FlutterFlow marketplace items.
+description: Learn more about the submitting feedback on FlutterFlow marketplace items.
 tags: [MarketPlace, Submit Feedback]
 sidebar_position: 2
 keywords: [FlutterFlow, MarketPlace, Submit Feedback]
@@ -17,7 +17,7 @@ For direct feedback or questions, we recommend contacting the item creator. This
 
 1. Navigate to the creator's profile on Marketplace.
 2. Click the **Contact** button. This action will copy the creator's official email address to your clipboard.
-3. Send an email to the copied email address.
+3. Send an Email to the copied email address.
 
 ### Rate an Item
 
