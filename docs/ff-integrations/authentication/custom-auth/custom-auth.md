@@ -1,7 +1,7 @@
 ---
 slug: /integrations/authentication/custom-authentication
 title: Custom Authentication
-tags: [FlutterFlow, Custom Authentication, Authentication]
+tags: [Custom Authentication, Authentication]
 description: Learn how to add custom authentication in your FlutterFlow app.
 sidebar_position: 1
 keywords: [FlutterFlow, Custom Authentication, Authentication]

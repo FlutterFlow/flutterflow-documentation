@@ -2,7 +2,7 @@
 slug: /concepts/animations
 title: Animations
 description: Learn the basics of animations in FlutterFlow.
-tags: [FlutterFlow, Animations, Concepts]
+tags: [Animations, Concepts]
 sidebar_position: 1
 keywords: [FlutterFlow, Animations, Concepts]
 ---

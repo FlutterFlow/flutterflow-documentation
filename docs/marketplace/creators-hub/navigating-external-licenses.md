@@ -2,7 +2,7 @@
 slug: navigating-external-licenses
 title: Navigating External Licenses
 description: Understand the key concepts that will assist you in creating unique and compliant content for FlutterFlow Marketplace.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 4
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines, Navigating External Licenses]
 ---

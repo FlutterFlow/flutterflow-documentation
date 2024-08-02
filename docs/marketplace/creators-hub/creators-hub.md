@@ -2,7 +2,7 @@
 slug: /marketplace/creators-hub
 title: Creators Hub
 description: This section is designed to provide you with all the necessary information to contribute effectively and responsibly to Marketplace.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 0
 keywords: [FlutterFlow, MarketPlace, Creators Hub]
 ---

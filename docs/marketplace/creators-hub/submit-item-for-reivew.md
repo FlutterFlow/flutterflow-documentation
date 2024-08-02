@@ -2,7 +2,7 @@
 slug: submit-item-for-reivew
 title: Submitting Item for Review
 description: Learn how to submit an item to the FlutterFlow Marketplace.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 0
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Submit Item]
 ---

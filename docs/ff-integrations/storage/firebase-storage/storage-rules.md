@@ -2,7 +2,7 @@
 slug: /integrations/firebase-storage/storage-rules
 title: Deploy Storage Rules
 description: Learn how to deploy storage rules in your FlutterFlow app to manage and secure your Firebase storage.
-tags: [FlutterFlow, Firebase Storage, Storage Rules, Integration, Security]
+tags: [Firebase Storage, Storage Rules, Integration, Security]
 sidebar_position: 1
 keywords: [FlutterFlow, Firebase Storage, Storage Rules, Integration, Security]
 ---

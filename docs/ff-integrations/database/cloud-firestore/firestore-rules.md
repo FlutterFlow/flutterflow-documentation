@@ -2,7 +2,7 @@
 slug: /integrations/database/cloud-firestore/firestore-rules
 title: Deploy Firestore Rules
 description: Learn how to deploy Firestore rules in your FlutterFlow app to manage data access and security.
-tags: [FlutterFlow, Firestore, Database, Rules, Cloud Firestore]
+tags: [Firestore, Database, Rules, Cloud Firestore]
 sidebar_position: 2
 keywords: [FlutterFlow, Firestore, Database, Rules, Cloud Firestore]
 ---

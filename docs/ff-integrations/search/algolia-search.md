@@ -2,7 +2,7 @@
 slug: /integrations/search/algolia-search
 title: Algolia Search
 description: Learn how to implement algolia search functionality in your FlutterFlow app.
-tags: [FlutterFlow, Algolia Search, Firestore Search]
+tags: [Algolia, Firestore Search]
 sidebar_position: 1
 keywords: [FlutterFlow, Algolia Search, Firestore Search]
 ---

@@ -2,7 +2,7 @@
 slug: /concepts/animations/widget-animations
 title: Widget Animations
 description: Learn how to add widget animations in FlutterFlow.
-tags: [FlutterFlow, Widget Animations, Concepts]
+tags: [Widget Animations, Concepts]
 sidebar_position: 1
 keywords: [FlutterFlow, Widget Animations, Concepts]
 ---

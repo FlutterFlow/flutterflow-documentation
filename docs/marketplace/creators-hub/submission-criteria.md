@@ -2,7 +2,7 @@
 slug: submission-criteria
 title: Submission Criteria
 description: Learn about marketplace item submission criteria.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 1
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Item Submission Criteria]
 ---

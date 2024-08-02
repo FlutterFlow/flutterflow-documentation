@@ -3,7 +3,7 @@ id: auth-token
 slug: /integrations/authentication/tokens
 title: Tokens
 description: Learn about the types and lifespans of tokens in custom authentication.
-tags: [FlutterFlow, Tokens, Authentication, Custom Authentication]
+tags: [Tokens, Authentication, Custom Authentication]
 sidebar_label: Tokens
 sidebar_position: 1
 keywords: [FlutterFlow, Tokens, Authentication, Custom Authentication]

@@ -1,8 +1,8 @@
 ---
-slug: flutterflow-marketplace
+slug: /marketplace
 title: FlutterFlow Marketplace
 description: Discover how to explore, purchase, and contribute to the FlutterFlow Marketplace, including guidelines for submissions and handling copyrights.
-tags: [FlutterFlow, Marketplace , Creator Hub]
+tags: [Marketplace , Creator Hub]
 sidebar_position: 0
 keywords: [FlutterFlow, Marketplace, Add and Purchase Items, Refund Policy, Submit Feedback, Creator Hub, Submission Criteria, Legal Guidelines, Copyright, DMCA Process, External Licensing, Creators FAQs]
 ---

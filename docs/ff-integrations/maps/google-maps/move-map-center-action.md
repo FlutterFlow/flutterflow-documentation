@@ -2,7 +2,7 @@
 slug: /integrations/google-maps/move-map-center-action
 title: Move Map Center Action
 description: Learn how to use the Move Map Center action in your FlutterFlow app to adjust the center of the Google Map.
-tags: [FlutterFlow, Google Maps, Action, Integration]
+tags: [Google Maps, Action, Integration]
 sidebar_position: 3
 keywords: [FlutterFlow, Google Maps, Action, Integration]
 ---

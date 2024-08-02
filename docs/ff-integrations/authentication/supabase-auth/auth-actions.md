@@ -2,7 +2,7 @@
 slug: /integrations/authentication/supabase/auth-actions
 title: Auth Actions
 description: Learn how to add Supabase Authentication actions in your FlutterFlow app.
-tags: [FlutterFlow, Auth Actions, Authentication, Supabase]
+tags: [Auth Actions, Authentication, Supabase]
 sidebar_position: 1
 keywords: [FlutterFlow, Auth Actions, Authentication, Supabase]
 ---

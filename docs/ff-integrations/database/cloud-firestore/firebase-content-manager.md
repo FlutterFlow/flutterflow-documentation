@@ -2,7 +2,7 @@
 slug: /integrations/database/cloud-firestore/firestore-content-manager
 title: Firestore Content Manager
 description: Learn how to use the Firestore Content Manager in your FlutterFlow app to manage Firestore data efficiently.
-tags: [FlutterFlow, Firestore, Database, Content Manager, Cloud Firestore]
+tags: [Firestore, Database, Content Manager, Cloud Firestore]
 sidebar_position: 5
 keywords: [FlutterFlow, Firestore, Database, Content Manager, Cloud Firestore]
 ---

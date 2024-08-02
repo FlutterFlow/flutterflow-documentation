@@ -2,7 +2,7 @@
 slug: submit-feedback
 title: Submit Feedback
 description: Learn more about the submiting feedback on FlutterFlow marketplace items.
-tags: [FlutterFlow, MarketPlace, Submit Feedback]
+tags: [MarketPlace, Submit Feedback]
 sidebar_position: 2
 keywords: [FlutterFlow, MarketPlace, Submit Feedback]
 ---

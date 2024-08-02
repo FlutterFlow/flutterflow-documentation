@@ -2,7 +2,7 @@
 slug: /integrations/authentication/firebase/jwt-auth
 title: JWT Token
 description: Learn how to implement JWT authentication in your FlutterFlow app.
-tags: [FlutterFlow, JWT, Authentication, Firebase]
+tags: [JWT, Authentication, Firebase]
 sidebar_position: 6
 keywords: [FlutterFlow, JWT, Authentication, Firebase]
 ---

@@ -2,7 +2,7 @@
 slug: /concepts/layouts/wrap
 title: Wrap
 description: Learn how to add the Wrap widget in your FlutterFlow app.
-tags: [FlutterFlow, Wrap, Concepts]
+tags: [Wrap, Widget, Concepts]
 sidebar_position: 1
 keywords: [FlutterFlow, Wrap, Concepts]
 ---

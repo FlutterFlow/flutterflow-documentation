@@ -2,7 +2,7 @@
 slug: creator-faqs
 title: Creator FAQs
 description: Learn about creator's FAQs in FlutterFlow Marketplace.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 5
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Creators FAQs]
 ---

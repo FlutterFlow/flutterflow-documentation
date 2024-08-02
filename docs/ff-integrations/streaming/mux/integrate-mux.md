@@ -2,15 +2,15 @@
 slug: /integrations/mux/getting-started
 title: Integrate Mux Livestream
 description: Learn how to get started with MuxBroadcast in your FlutterFlow app for live video broadcasting.
-tags: [FlutterFlow, MuxBroadcast, Integration, Setup]
+tags: [MuxBroadcast, Integration, Setup]
 sidebar_position: 2
 keywords: [FlutterFlow, MuxBroadcast, Integration, Setup]
 ---
 
 # MuxBroadcast
 
-Adding a live streaming or broadcast feature allows users to watch the event in real-time.
-Instead of building the live streaming from scratch, you can use the built-in widget called
+Adding a live-streaming or broadcast feature allows users to watch the event in real-time.
+Instead of building the live-streaming from scratch, you can use the built-in widget called
 **MuxBroadcast**, which is provided by FlutterFlow. The **MuxBroadcast** widget allows you to build
 a
 broadcast feature in minutes, and you can focus more on your app's core features.

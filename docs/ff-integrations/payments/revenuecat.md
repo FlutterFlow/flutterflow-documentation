@@ -2,7 +2,7 @@
 slug: /integrations/payments/revenuecat
 title: RevenueCat
 description: Learn how to integrate RevenueCat payments in your FlutterFlow app.
-tags: [FlutterFlow, RevenueCat, Payments, Integration]
+tags: [RevenueCat, Payments, Integration]
 sidebar_position: 1
 keywords: [FlutterFlow, RevenueCat, Payments, Integration]
 ---

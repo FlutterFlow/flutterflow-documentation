@@ -2,7 +2,7 @@
 slug: /integrations/ads/admob
 title: AdMob
 description: Learn how to add AdMob in your FlutterFlow app.
-tags: [FlutterFlow, AdMob, AdBanner, Interstitial Ad]
+tags: [AdMob, AdBanner, Interstitial Ad]
 sidebar_position: 1
 keywords: [FlutterFlow, AdMob, AdBanner, Interstitial Ad]
 ---

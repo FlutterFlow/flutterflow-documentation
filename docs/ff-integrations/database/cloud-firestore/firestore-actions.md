@@ -2,7 +2,7 @@
 slug: /integrations/database/cloud-firestore/firestore-actions
 title: Firestore Actions
 description: Learn about Firestore actions in your FlutterFlow app, including how to perform various database operations.
-tags: [FlutterFlow, Firestore, Database, Actions, Cloud Firestore]
+tags: [Firestore, Database, Actions, Cloud Firestore]
 sidebar_position: 6
 keywords: [FlutterFlow, Firestore, Database, Actions, Cloud Firestore]
 toc_max_heading_level: 5

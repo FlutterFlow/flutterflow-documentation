@@ -2,7 +2,7 @@
 slug: adding-purchasing-item
 title: Adding & Purchasing Items
 description: Learn how to add and purchase FlutterFlow marketplace items.
-tags: [FlutterFlow, MarketPlace, Add Item, Purchase Item]
+tags: [MarketPlace, Add Item, Purchase Item]
 sidebar_position: 1
 keywords: [FlutterFlow, MarketPlace, Add Item, Purchase Item]
 ---

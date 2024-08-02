@@ -2,7 +2,7 @@
 slug: /integrations/database/cloud-firestore/creating-collections
 title: Creating Collections
 description: Learn how to create collections in Firestore for your FlutterFlow app, including organizing documents within collections.
-tags: [FlutterFlow, Firestore, Database, Collections, Cloud Firestore]
+tags: [Firestore, Database, Collections, Cloud Firestore]
 sidebar_position: 3
 keywords: [FlutterFlow, Firestore, Database, Collections, Cloud Firestore]
 ---

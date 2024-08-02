@@ -2,7 +2,7 @@
 slug: /best-practices/secure-api-keys
 title: Secure API Keys
 description: Learn best practices for securing API keys in your FlutterFlow app, including key restrictions, geographical restrictions, IP address binding, and service-specific limitations.
-tags: [FlutterFlow, API Keys, Security, Best Practices, Google Cloud]
+tags: [API Keys, Security, Best Practices, Google Cloud]
 sidebar_position: 1
 keywords: [FlutterFlow, API Keys, Security, Best Practices, Google Cloud]
 ---

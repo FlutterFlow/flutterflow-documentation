@@ -2,7 +2,7 @@
 slug: /concepts/animations/page-transition
 title: Page Transition Animations
 description: Learn how to add page transition animations in your FlutterFlow app.
-tags: [FlutterFlow, Page Transition Animations, Concepts]
+tags: [Page Transition Animations, Concepts]
 sidebar_position: 4
 keywords: [FlutterFlow, Page Transition Animations, Concepts]
 ---

@@ -2,7 +2,7 @@
 slug: /integrations/mux/initial-setup
 title: Initial Setup
 description: Learn how to set up Mux LiveStream in your FlutterFlow app for live video streaming.
-tags: [FlutterFlow, Mux, LiveStream, Integration, Setup]
+tags: [Mux, LiveStream, Integration, Setup]
 sidebar_position: 1
 keywords: [FlutterFlow, Mux, LiveStream, Integration, Setup]
 ---

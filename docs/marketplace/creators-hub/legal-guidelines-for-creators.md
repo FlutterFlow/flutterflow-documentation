@@ -2,7 +2,7 @@
 slug: legal-guidelines-for-creators
 title: Legal Guidelines for Creators
 description: Understand the legal guidlines for creating marketplace items.
-tags: [FlutterFlow, MarketPlace, Creators Hub]
+tags: [MarketPlace, Creators Hub]
 sidebar_position: 2
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines]
 ---
