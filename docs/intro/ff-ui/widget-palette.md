@@ -15,7 +15,7 @@ The Widget Palette in FlutterFlow provides access to all UI elements. These are 
 
 ## 1. Widgets
 
-From the Widgets tab, you can access all standard FlutterFlow widgets. They are organized into [different categories](#) based on their purpose, making it easier to navigate and find the appropriate widget for your app.
+From the Widgets tab, you can access all standard FlutterFlow widgets. They are organized into different categories based on their purpose, making it easier to navigate and find the appropriate widget for your app.
 
 ## 2. Components
 

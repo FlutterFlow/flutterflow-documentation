@@ -48,10 +48,10 @@ a Page or a Component.
 specific events or user interactions within an application. FlutterFlow provides
 developers with a way to define logic that responds to various events, such as
 button clicks, page loads, form submissions, or data changes.
-To learn more, head over to **[Action Flow Editor](#)** section.
+To learn more, head over to [**Action Flow Editor**](../../../../resources/control-flow/functions/action-flow-editor.md) section.
 :::
 
-As you open the [Action Flow Editor](#) for your Component, you can see the `On Initialization`
+As you open the Action Flow Editor for your Component, you can see the `On Initialization`
 **Action Trigger** exposed for your **Component**.
 
 ### On Initialization [Action Trigger]
@@ -70,7 +70,7 @@ created.
 
 :::note[STATE VARIABLES]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here.](#)**
+about **states and state management, [refer here.](../../../../ff-concepts/state-management/generated-code.md)**
 :::
 
 **Component state** refers to the information that a component tracks about its current condition or
@@ -149,9 +149,7 @@ Now, let's apply these concepts to the `isFavourite` variable in the context of 
   (true or false) and never be null.
 
 :::note
-You can set the **Data Type** of your Component State variable to any primitive data types such as **String, Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
-Type, Document,** etc. To learn more about the available data types, refer the [**Data
-Representation Section.** ](#)
+You can set the **Data Type** of your Component State variable to any primitive data types such as **String, Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data Type, Document,** etc. To learn more about the available data types, refer the [**Data Representation Section**](../../../data-representation/overview.md).
 :::
 
 ### Get Component State Value

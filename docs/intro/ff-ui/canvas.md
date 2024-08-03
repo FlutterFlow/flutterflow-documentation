@@ -29,11 +29,11 @@ There's a zoom in ( + ) and a zoom out ( - ) button to control the zoom level of
 
 ## AI Generated Page
 
-From here, you can [create a page using AI](#).
+From here, you can [create a page using AI](../../resources/ui/pages/pages.md#create-an-ai-generated-page).
 
 ## Add App Bar
 
-From here, you can add an [App Bar](#) to your page. Clicking this button opens a popup displaying different [App Bar styles](#) for you to choose from. Just select any App Bar style from the list and it will appear in the Preview Screen.
+From here, you can add an [App Bar](../../resources/ui/pages/page-elements.md#appbar) to your page. Clicking this button opens a popup displaying different App Bar styles for you to choose from. Just select any App Bar style from the list and it will appear in the Preview Screen.
 
 ![AddAppBar.avif](imgs/AddAppBar.avif)
 
@@ -132,7 +132,7 @@ Changing the canvas color can be helpful when creating components, especially wh
 
 ## Add Nav Bar
 
-This button allows you to add the [Nav Bar](#) to your page. Clicking on this button opens the popup that allows you to enable Nav Bar for your project. Once the Nav Bar is enabled, you can customize it to match your design.
+This button allows you to add the [Nav Bar](../../resources/ui/pages/page-elements.md#nav-bar) to your page. Clicking on this button opens the popup that allows you to enable Nav Bar for your project. Once the Nav Bar is enabled, you can customize it to match your design.
 
 ![AddNavBar.avif](imgs/AddNavBar.avif)
 

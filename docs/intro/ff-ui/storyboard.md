@@ -27,8 +27,8 @@ We use the following elements inside the storyboard:
 
 ![storyboard-legend.avif](imgs/storyboard-legend.avif)
 
-1. The solid line is used to represent the [Navigate](#) or [Login](#) action.
-2. The dotted line is used to represent the [Bottom Sheet](#) action.
+1. The solid line is used to represent the [Navigate](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) or Login action.
+2. The dotted line is used to represent the Bottom Sheet action.
 3. The right arrow icon represents hidden widgets. These widgets may not be visible in the current page view (e.g., they might be on another tab) but they still have a navigation action to display them.
 
 ## Highlight routes on a page
@@ -57,5 +57,5 @@ Watch this video if you prefer watching a video tutorial.
 
 <details>
 <summary>I am getting "Error: Unable to initialize Storyboard</summary>
-<p>This error typically occurs because the initial page has not been set. To resolve this, please set the initial page in the [App Details](#) settings of your project.</p>
+<p>This error typically occurs because the initial page has not been set. To resolve this, please set the initial page in the [App Details](../../resources/projects/settings/general-settings.md#app-details) settings of your project.</p>
 </details>

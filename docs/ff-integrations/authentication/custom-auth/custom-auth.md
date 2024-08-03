@@ -98,13 +98,13 @@ To enable custom authentication in FlutterFlow:
 
 Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the template. Here is the page added from the templates, and after some modification, it looks the below:
 
-Also, see how to [build a page layout](#) in case you want to build a page from scratch.
+Also, see how to [build a page layout](../../../ff-concepts/layout/building-layout.md) in case you want to build a page from scratch.
 
 ![auth-2-template.avif](../imgs/auth-2-template.avif)
 
 ### 3. Authenticate users
 
-On each page, on click of a button, you can add appropriate authentication related [API calls](#). For this example, we use [this](https://dummyjson.com/docs/auth).
+On each page, on click of a button, you can add appropriate authentication related [API calls](../../../resources/control-flow/backend-logic/api/rest-api.md). For this example, we use [this](https://dummyjson.com/docs/auth).
 
 <div style={{
     position: 'relative',
@@ -139,7 +139,7 @@ After successful authentication, you can save the auth related data using the 'L
 1. Inside the **TRUE** branch of the [previous API call](#3-authenticate-users), add the **Log in** (under *Backend/Database > Custom Authentication*) action.
 
 2. Under the **User Auth Properties**, you can set values for **Authentication Token**, **Refresh Token**, **Token Expiry Time**, and **User UID**. **Note that for the 'Persist Auth Sessions' option to work, you must set the Authentication Token**.
-3. **Set User Data** to store the result of the previous API call (i.e., auth details) in a Custom Data Type. See how to get the [JSON into Data Type](#).
+3. **Set User Data** to store the result of the previous API call (i.e., auth details) in a Custom Data Type. See how to get the [JSON into Data Type](../../../resources/control-flow/backend-logic/api/rest-api.md#json-to-data-type).
 
 <div style={{
     position: 'relative',

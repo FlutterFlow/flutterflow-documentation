@@ -241,7 +241,7 @@ page is loaded) and set the *isCacheOverride* variable accordingly. Here is how 
     3. if **True** :
         1. [Update](../../../../resources/data-representation/app-state.md#update-app-state-action) the **lastCacheTime** with 
        the current time and **isCacheOverride** to True. Make sure you keep the **Update Type** to **Rebuild Current Page** so that the backend query is made again, which will invalidate the cache and display updated data.
-        2. You can also add an action to [Clear Query Cache](/actions/actions/state-management/clear-query-cache).
+        2. You can also add an action to [Clear Query Cache](#).
         3. Continuing the same action flow, [wait](../../../../resources/control-flow/time-based-logic/wait-action.md) for 1 sec and again update **isCacheOverride** to **False** so that the cached result won't override on page load for the next 30 min.
 
 <div class="video-container"><iframe src="https://www.loom.

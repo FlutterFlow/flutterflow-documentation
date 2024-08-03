@@ -14,7 +14,7 @@ keywords: [FlutterFlow, Email Login, Authentication, Firebase]
 Before getting started with this section:
 
 - Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
-- Complete [**Initial Setup**](auth-initial-setup)
+- Complete [**Initial Setup**](auth-initial-setup.md)
 :::
 
 ## Enable Email Login Provider in Firebase
@@ -81,7 +81,7 @@ To enable this in FlutterFlow, follow these steps:
 :::info
 To understand why email verification is required when authenticating with an email and password,
 refer
-to [**Authentication Methods**](../authentication-methods)
+to [**Authentication Methods**](../authentication-methods.md)
 :::
 1. Add a new action immediately after the **Create Account** action.
 

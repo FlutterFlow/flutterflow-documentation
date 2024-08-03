@@ -30,7 +30,7 @@ Let's build an example that uses a JWT token to log into the app. Here's how it 
 Before getting started with this section:
 
 - Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
-- Complete [**Initial setup**](auth-initial-setup) required for authentication.
+- Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 :::
 
 
@@ -44,12 +44,12 @@ Adding JWT token authentication comprises the following steps:
 
 ### 1. Add login API
 
-You must [create an API](#) endpoint on your server that accepts email/username and password. If the credentials are valid, it generates the JWT token and passes it back in response.
+You must [create an API](../../../resources/control-flow/backend-logic/api/create-test-api-calls.md) endpoint on your server that accepts email/username and password. If the credentials are valid, it generates the JWT token and passes it back in response.
 
 At your server, you can generate the JWT token either using the [Firebase Admin SDK](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_the_firebase_admin_sdk) or a [third-party JWT library](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_a_third-party_jwt_library). You can find the detailed instructions [here](https://firebase.google.com/docs/auth/admin/create-custom-tokens).
 
 :::info
-Alternatively, you can integrate Supabase authentication into your app and use the JWT token generated after [**account creation**](#).
+Alternatively, you can integrate Supabase authentication into your app and use the JWT token generated after [**account creation**](../supabase-auth/auth-actions.md#log-in-action).
 :::
 
 The API endpoint should be similar to the following (Tip: Expand and see the '200 OK' section):
@@ -87,12 +87,12 @@ In most cases, you would make the app content available right after creating a n
 :::
 
 :::info
-If you want to try the JWT token authentication without creating an API endpoint right now, you can [**generate the JWT token locally**](#) for testing.
+If you want to try the JWT token authentication without creating an API endpoint right now, you can [**generate the JWT token locally**](#create-a-jwt-token-locally) for testing.
 :::
 
 ### 2. Adding login page
 
-Let's [add a sign-in page from the templates](#) and choose the **Authenticate Solo Alt** from under the **Auth** tab. Tip: After adding, remove the other social sign-in buttons.
+Let's add a sign-in page from the templates and choose the **Authenticate Solo Alt** from under the **Auth** tab. Tip: After adding, remove the other social sign-in buttons.
 
 ![login-page.avif](../imgs/login-page.avif)
 
@@ -105,7 +105,7 @@ Here are the step by step instructions:
 1. Select the **Widget** (e.g., Sign In) on which you want to define the action.
 
 2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-3. [Add the login api](#) and provide the **Action Output Variable Name**. ****If the call succeeds, this will be used to retrieve the token.
+3. Add the login api and provide the **Action Output Variable Name**. If the call succeeds, this will be used to retrieve the token.
 4. Inside the **TRUE** section, click on the **+** button and select **Add Action**.
 5. On the right side, search and select the **Log in** (under Firebase Authentication) action.
 6. Set the **Auth Provider** to **JWT token**.
@@ -113,8 +113,8 @@ Here are the step by step instructions:
     1. Click on the **UNSET** and select the **Action Outputs -> Action Output Variable Name** (that you specified in the API call section.)
     2. Set the **API Response Options** to **JSON Body** and **Available Options** to **JSON Path**.
     3. Enter the **JSON Path** to locate the token in API response, such as `$.token,` and click **Confirm**.
-8. (Optional) add the [snackbar action](#) to display the success message.
-9. (Optional) Inside the **False** section, add the [snackbar action](#) to display the failure message.
+8. (Optional) add the [snackbar action](../../../resources/ui/pages/page-elements.md#show-snackbar-action) to display the success message.
+9. (Optional) Inside the **False** section, add the snackbar action to display the failure message.
 
 <div style={{
     position: 'relative',
@@ -152,7 +152,7 @@ To confirm the successful integration and the creation of users, navigate to you
 
 ## Create a JWT token locally
 
-Sometimes you might want to build and test the JWT authentication before the login or create account API is ready. You can achieve this by creating the JWT token locally and passing it inside the [login action](#).
+Sometimes you might want to build and test the JWT authentication before the login or create account API is ready. You can achieve this by creating the JWT token locally and passing it inside the [login action](#3-add-login-action).
 
 :::warning
 Use this method only for testing purposes. Ideally, you should be doing this on the server side.
@@ -228,8 +228,8 @@ Here's an example of how you can use the *Authenticated User* object to filter t
 
 Once you log in via the JWT token, the *Authenticated User* object is available. This object contains the fields (i.e., logged-in user's data), especially **User Reference (users ref),** that you may need to provide while adding or retrieving Firestore documents.
 
-When such user reference is stored inside the Firestore documents, you can use them ****inside the **Single** or **Multiple Recipient** while defining the **Audience** inside the [Trigger Push Notification](#) action, as shown in the image below:
+When such user reference is stored inside the Firestore documents, you can use them inside the **Single** or **Multiple Recipient** while defining the **Audience** inside the [Trigger Push Notification](../../notifications/push-notifications/getting-started.md#trigger-push-notification) action, as shown in the image below:
 
 ![send-push-notification-to-users-created-via-JWT-token.png](../imgs/send-push-notification-to-users-created-via-JWT-token.png)
 
-To learn more about how to use user references for sending push notifications, please check the [push notification](#) section.
+To learn more about how to use user references for sending push notifications, please check the [push notification](../../notifications/push-notifications/getting-started.md) section.

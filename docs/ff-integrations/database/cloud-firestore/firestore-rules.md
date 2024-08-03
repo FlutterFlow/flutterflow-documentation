@@ -65,7 +65,7 @@ For 'Tagged Users,' the document must contain a field that can either be a refer
 
 #### Default rules applied to new collections
 
-When you create a new collection inside the [Firestore Content Manager](/data-and-backend/firebase/firestore-database-cloud-firestore/firebase-content-manager), below are the default rules applied to the collection:
+When you create a new collection inside the [Firestore Content Manager](../../database/cloud-firestore/firebase-content-manager.md), below are the default rules applied to the collection:
 
 * **Create -> Everyone**: All users can create a document.
 * **Read -> Everyone**: All users can read documents.

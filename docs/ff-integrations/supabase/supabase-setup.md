@@ -78,5 +78,4 @@ Whenever you make changes related to tables in Supabase, hit the **Get Schema** 
 </figure>
 
 
-Now you have completed the Supabase Setup! You can continue to learn about how to add Supabase [Authentication](/authentication/supabase/initial-setup/) and [Database](/database/supabase/database-actions/).
-
+Now you have completed the Supabase Setup! You can continue to learn about how to add Supabase [Authentication](../authentication/supabase-auth/initial-setup.md) and [Database](../database/supabase/database-actions.md).

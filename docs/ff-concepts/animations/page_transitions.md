@@ -27,7 +27,7 @@ Here, the transitions are recorded with the duration set to 1000ms to make the a
 
 ## Animate single navigate transition
 
-To set a transition animation for a single navigate action, first, ensure that you have added a [**Navigate To**](../../resources/ui/pages/navigation#navigate-to-action) action and then select an animation from the **Transition Type** dropdown. By default, the animations use 300 milliseconds as the duration for which it plays but you can change it by specifying a value inside the **Duration** (ms) field.
+To set a transition animation for a single navigate action, first, ensure that you have added a [**Navigate To**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) action and then select an animation from the **Transition Type** dropdown. By default, the animations use 300 milliseconds as the duration for which it plays but you can change it by specifying a value inside the **Duration** (ms) field.
 
 ![single-navigate-transition-animation.avif](animation_gifs/single-navigate-transition-animation.avif)
 

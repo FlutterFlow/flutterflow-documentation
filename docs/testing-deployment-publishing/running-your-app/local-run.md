@@ -34,7 +34,7 @@ For Android app testing on a device or emulator, configure your machine ([**Wind
 Here are the steps to use local run:
 
 1. Download the [desktop](https://flutterflow.io/desktop) app and open your project.
-2. In the [Toolbar](../../intro/ff-ui/toolbar), click on the **dropdown** next to the *Test Mode* button and click **Setup Local Run**. This will open the setup wizard.
+2. In the [Toolbar](../../intro/ff-ui/toolbar.md), click on the **dropdown** next to the *Test Mode* button and click **Setup Local Run**. This will open the setup wizard.
     
 ![setup-local-run](../imgs/setup-local-run.avif)
     
@@ -368,9 +368,6 @@ This warning can usually be safely ignored. It typically occurs when multiple to
 2. **Close and Reopen**: Close the warning prompt and, if necessary, close and reopen Xcode to refresh the project files.
 3. **Clean the Build**: If the warning persists, try cleaning the build folder in Xcode by going to "Product" > "Clean Build Folder."
 4. **Flutter Clean**: You can also run `flutter clean` in your terminal to clean the build cache for your project, which can sometimes resolve issues related to outdated or conflicting files.
-
-
-Also, see [how to troubleshoot issues using device logs](#).
 </p>
 </details>
 

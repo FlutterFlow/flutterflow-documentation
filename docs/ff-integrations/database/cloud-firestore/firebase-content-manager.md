@@ -189,8 +189,7 @@ com/embed/1f0d58f3d1f64f6ab5e40fe34d49fc39?sid=de5cd66e-2b99-4fea-8fb1-8c5eb2c50
 
 ### Multiple Items
 
-To store the multiple items of the same data type, For example, a list of Fruit names, make sure 
-you have a Field with **Data Type** set to any from [this](/data-and-backend/firebase/firestore-database-cloud-firestore/creating-collections#data-types-within-flutterflow) and **Field Type** set to **List**.
+To store the multiple items of the same data type, For example, a list of Fruit names, make sure you have a Field with **Data Type** set and **Field Type** set to **List**.
 
 The field looks like this:
 

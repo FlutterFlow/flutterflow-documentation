@@ -30,10 +30,7 @@ To minimize potential damage from compromised API keys:
 
 ## Add restrictions to your API key
 
-API keys are unrestricted by default. Unrestricted keys are insecure because they can be used by
-anyone, from anywhere. You can add either [**application restrictions
-**](https://cloud.google.com/docs/authentication/api-keys?#adding-application-restrictions) or [*
-*API restrictions**](https://cloud.google.com/docs/authentication/api-keys?#api_key_restrictions) to
+API keys are unrestricted by default. Unrestricted keys are insecure because they can be used by anyone, from anywhere. You can add either [application restrictions](https://cloud.google.com/docs/authentication/api-keys?#adding-application-restrictions) or [API restrictions](https://cloud.google.com/docs/authentication/api-keys?#api_key_restrictions) to
 enhance
 security.
 
@@ -43,8 +40,7 @@ their unique identifiers.
 
 At this stage, you should already have API keys created, but they are currently unrestricted. If
 they are not yet created, you can follow the integration process for any of the Google Cloud
-services we support in FlutterFlow, or for Maps, [**you can go here.
-**](../maps/google-maps/generate-maps-keys)
+services we support in FlutterFlow, or for Maps, [you can go here.](../maps/google-maps/generate-maps-keys.md)
 
 All your created API keys should be available on
 the [Cloud Credentials Page](https://console.cloud.google.com/apis/credentials). (Ensure you are

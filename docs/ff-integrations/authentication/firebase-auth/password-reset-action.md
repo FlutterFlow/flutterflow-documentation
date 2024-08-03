@@ -46,7 +46,7 @@ Adding password reset comprises of following steps:
 
 ### 1. Building page
 
-Let's add a page that allows users to provide their email address. To speed up, you can add a page from the [template](#). Here is what the template page (named 'Forgot Password 01') looks like:
+Let's add a page that allows users to provide their email address. To speed up, you can add a page from the template. Here is what the template page (named 'Forgot Password 01') looks like:
 
 ![password reset build ui](../imgs/password-reset-build-ui.png)
 

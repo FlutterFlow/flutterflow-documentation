@@ -15,7 +15,7 @@ SQLite Query can be set up to automatically execute SQL statements as soon as a 
 
 :::info[Prerequisites]
 
-Before you add this query, ensure you configure the database and define the query. Check detailed instructions [here](/settings-and-integrations/integrations/sqlite).
+Before you add this query, ensure you configure the database and define the query. Check detailed instructions [here](../../../../ff-integrations/database/local-sql/quickstart.md).
 :::
 
 ## Adding SQLite query

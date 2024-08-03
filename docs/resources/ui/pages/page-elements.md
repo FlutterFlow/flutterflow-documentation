@@ -171,7 +171,7 @@ enable Nav Bar.
 Initially, your NavBar will not have any pages in it. You'll see a message
 instructing you to add at least two pages. Before proceeding, make sure to
 create at least two pages. If you need help with adding a new page, you can find
-[**more information here**](pages#creating-a-page).
+[**more information here**](pages.md#creating-a-page).
 :::
 
 ![nav-bar.png](../imgs/nav-bar.png)

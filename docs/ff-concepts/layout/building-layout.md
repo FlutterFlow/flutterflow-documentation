@@ -9,7 +9,7 @@ keywords: [FlutterFlow, Building Layout, Concepts]
 
 # Building Layout
 
-In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/built-in-widgets/text.md), [Buttons](../../resources/ui/widgets/built-in-widgets/button.md), [Images](#), and [Icons](../../resources/ui/widgets/built-in-widgets/icons.md), are visible on the screen. Others, like [Containers](../../resources/ui/widgets/built-in-widgets/container.md), [Rows](#), [Columns](#), and [Stacks](#), are not directly visible but help arrange and position the visible elements on the page.
+In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/built-in-widgets/text.md), [Buttons](../../resources/ui/widgets/built-in-widgets/button.md), [Images](../../resources/ui/widgets/built-in-widgets/image.md), and [Icons](../../resources/ui/widgets/built-in-widgets/icons.md), are visible on the screen. Others, like [Containers](../../resources/ui/widgets/built-in-widgets/container.md), Rows, Columns, and Stacks, are not directly visible but help arrange and position the visible elements on the page.
 
 These widgets are categorized into four main types: [Layout Elements](/tags/layout-elements), [Base Elements](/tags/base-elements), 
 [Page Elements](/tags/page-elements), and [Form Elements](/tags/form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
