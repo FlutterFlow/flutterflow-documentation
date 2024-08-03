@@ -23,7 +23,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
-          showLastUpdateAuthor: false,
+          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           exclude: ['docs/index.md'],
           // lastVersion: 'current',
@@ -32,15 +32,11 @@ const config: Config = {
           //     label: 'v8',
           //   },
         },
-        // Will be passed to @docusaurus/plugin-google-tag-manager.
-        // googleTagManager: {
-        //   containerId: 'GTM-TKMGCBC',
+        // blog: {
+        //   showReadingTime: true,
+        //   blogSidebarTitle: 'FlutterFlow Blog',
+        //   blogSidebarCount: 'ALL'
         // },
-        blog: {
-          showReadingTime: true,
-          blogSidebarTitle: 'FlutterFlow Blog',
-          blogSidebarCount: 'ALL'
-        },
         gtag: {
           trackingID: 'G-LC4SC6JY70',
           anonymizeIP: true,
