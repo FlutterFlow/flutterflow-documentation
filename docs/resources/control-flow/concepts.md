@@ -54,7 +54,6 @@ The `else if` statement can be used to check multiple conditions sequentially.
 
 This example demonstrates multiple conditions. If `userIsLoggedIn` is true, it shows a welcome message. If not, it checks if `userIsGuest` is true and shows a guest message. If neither condition is met, it prompts the user to log in.
 
-<!--- TODO Diagram for Conditionals --->
 
 ### Implementing Conditionals
 In FlutterFlow, you can implement conditional logic in two primary ways: 

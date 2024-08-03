@@ -90,6 +90,8 @@ some common use-cases.
 Here's an example of all the widely used components used in the EcommerceFlow demo app.
 
 
-<!---TODO Image will be added once all components are built in project --->
-
+<figure>
+    ![custom-components-demo-list.png](..%2Fimgs%2Fcustom-components-demo-list.png)
+  <figcaption class="centered-caption">Some of the custom components from the Ecommerce Demo App</figcaption>
+</figure>
 
