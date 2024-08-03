@@ -52,13 +52,39 @@ to a widget that only accepts `String` data types.
 
 Here is a quick demo:
 
-<!--- TODO Arcade --->
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/v6bfWg0Nfpd1K5RjrTNx?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
 
 :::warning[Combine Text vs RichText widget]
 The **Combine Text** built-in function only allows you to combine multiple values (dynamic or
 static)
 together, with the same text style applied to all of them. If you need to combine multiple String
-values with different text styles for each, consider using the **RichText** widget.
+values with different text styles for each, consider using the **[RichText](../../../resources/ui/widgets/built-in-widgets/text.md#richtext-widget)** widget.
 :::
 
 ## Code Expressions
