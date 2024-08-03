@@ -38,10 +38,8 @@ depends on how you need to arrange your UI components:
 
 ![row-col-stack.png](../imgs/row-col-stack.png)
 
-<!---TODO Choosing your parent widget --->
-
-
-<!---TODO link to quickstart for how to choose parent widget [Rows/Column/Stacks]
+<!---TODO #### Choosing your parent widget
+link to quickstart for how to choose parent widget [Rows/Column/Stacks]
 with examples --->
 
 

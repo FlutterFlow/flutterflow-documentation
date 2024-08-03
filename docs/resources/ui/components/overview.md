@@ -87,9 +87,11 @@ some common use-cases.
 - Design sections of a screen that are frequently repeated, such as testimonials, image galleries,
    or feature highlights, and reuse them to maintain a cohesive layout.
 
-Here's an example of all the widely used components used in the EcommerceFlow demo app.
+Here's an example of all the widely used components used in the [EcommerceFlow demo](https://bit.ly/ff-docs-demo-v1) app.
 
 
-<!---TODO Image will be added once all components are built in project --->
-
+<figure>
+    ![custom-components-demo-list.png](../imgs/custom-components-demo-list.png)
+  <figcaption class="centered-caption">Some of the custom components from the Ecommerce Demo App</figcaption>
+</figure>
 

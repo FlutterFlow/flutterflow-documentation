@@ -73,7 +73,7 @@ The variable can now be accessed via set from variable menu. For example, on the
 You can update an app state from the Actions Panel anywhere in the app, whether it's on tap of a widget in a component or page, or via custom code in FlutterFlow.
 
 When you update the app state via the Action Flow Editor, you will find the following options in the Action Settings.
-![update-app-state-action.png](..%2Fimgs%2Fupdate-app-state-action.png)
+![update-app-state-action.png](../imgs/update-app-state-action.png)
 
 #### Update Type
 How this app state update will affect your app.

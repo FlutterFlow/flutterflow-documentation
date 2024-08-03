@@ -208,7 +208,7 @@ you're creating an **instance** of the `Icon` widget class and providing differe
 each use.
 
 Think of classes as templates that outline the structure and features of
-something you want to create multiple times. For instance, in our demo app EcommerceFlow, we
+something you want to create multiple times. For instance, in our demo app [EcommerceFlow](https://bit.ly/ff-docs-demo-v1), we
 have a reusable component called `ProductListCard` with specific characteristics such as image,
 product information text, and actions it should perform when clicked. Here, we've essentially
 created a **class**.

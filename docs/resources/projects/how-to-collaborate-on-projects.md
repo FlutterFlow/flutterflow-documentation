@@ -139,10 +139,9 @@ To disable this feature anytime, click the **Disable Updated Collaboration** but
 :::caution
 
 This feature is still in Beta, and unexpected issues may occur. Ensure you
-  regularly create project versions as a backup.
-
-<!---TODO - Add link to versioning -->
+  regularly create **[project versions](../../testing-deployment-publishing/branching-collaboration/saving-versioning.md)** as a backup.
 :::
+
 :::info
 
 Real-Time collaboration is a feature of our Teams and Enterprise plans.

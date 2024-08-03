@@ -16,7 +16,7 @@ To purchase domains:
 Note that purchasing a domain is not possible during the trial period. If you're interested in obtaining a domain, please reach out to our support team for further assistance.
 :::
 
-![img_15.png](imgs%2Fimg_15.png)
+![img_15.png](imgs/img_15.png)
 
 ### How do I remove custom domains?
 
@@ -27,4 +27,4 @@ To remove the custom domain:
 3. Click **Remove Domains** to remove the existing custom domain.
 
 
-![img_16.png](imgs%2Fimg_16.png)
+![img_16.png](imgs/img_16.png)

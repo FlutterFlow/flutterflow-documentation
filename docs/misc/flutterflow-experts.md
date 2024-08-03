@@ -18,7 +18,7 @@ To connect with an expert:
 
 1. From the [Dashboard](https://experts.flutterflow.io/dashboard) or [My Proposal](https://experts.flutterflow.io/proposals) page, click on the **+ Create Proposal** button.
 
-![img.png](imgs%2Fimg.png)
+![img.png](imgs/img.png)
 
 2. Click **Continue,** and you will be asked to enter details about your project, including key features, preferred tools or platforms, project size, and budget.
 
@@ -26,20 +26,20 @@ To connect with an expert:
 
 <p></p>
 
-![img_1.png](imgs%2Fimg_1.png)
+![img_1.png](imgs/img_1.png)
 
 <p></p>
 
 4. To invite experts to view your proposal, click on the **Send Invite** button, write a personalized message, and send the invite. You can send up to three invites at a time.
 <p></p>
 
-![img_2.png](imgs%2Fimg_2.png)
+![img_2.png](imgs/img_2.png)
 <p></p>
 
 5. Alternatively, you can browse through expert profiles on the [experts page](https://experts.flutterflow.io/experts), see their details, and click the **Hire** button to send them a personalized project proposal.
 
 <p></p>
-![img_3.png](imgs%2Fimg_3.png)
+![img_3.png](imgs/img_3.png)
 
 :::warning[]
 Please do not send the proposal to many experts at the same time.
@@ -49,7 +49,7 @@ Please do not send the proposal to many experts at the same time.
 
 As a FlutterFlow expert, you'll have the opportunity to assist users in implementing complex features, troubleshooting issues, and even designing and building entire apps. To apply, navigate to our [Dashboard](https://experts.flutterflow.io/dashboard) and click the **Apply Now** button.
 
-![img_4.png](imgs%2Fimg_4.png)
+![img_4.png](imgs/img_4.png)
 
 ### FAQs
 

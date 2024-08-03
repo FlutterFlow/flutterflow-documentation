@@ -12,13 +12,13 @@ To join the FlutterFlow community,
 2. Next Navigate to Resources tab on the left side
 3. Click on "FlutterFlow Community". This will automatically log you in to the community.
 
-![img_5.png](imgs%2Fimg_5.png)
+![img_5.png](imgs/img_5.png)
 
 Alternatively,
 
 If you are already in your project view, you can also find the **Help Menu** and click on **Community Forum**.
 
-![img_6.png](imgs%2Fimg_6.png)
+![img_6.png](imgs/img_6.png)
 
 ### YouTube
 

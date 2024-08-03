@@ -30,7 +30,7 @@ You can use these steps to update your payment method on an open invoice (where 
 3. Scroll to **Invoice History**
 4. Locate the invoice that failed (should be at the top) and click the icon
 
-![img_17.png](imgs%2Fimg_17.png)
+![img_17.png](imgs/img_17.png)
 
 5. Enter your updated payment information
 

@@ -69,8 +69,7 @@ ToggleIcon is a special component created for you that lets you add a toggle on 
 
 ### On Toggle [Action]
 
-By default, FlutterFlow handles the toggling of the State variable from true to false and vice versa when the button is clicked. However, you can also add an additional action under the On Toggle action trigger to perform extra tasks.
+By default, FlutterFlow handles the toggling of the State variable from true to false and vice versa when the button is clicked. However, you can also add another action under the On Toggle action trigger to perform extra tasks.
 
-In this example, we trigger the SnackBar action that displays the value of the State variable.
-
-<!--- TODO Show the App DEMO --->
+<!--- TODO In this example, we trigger the SnackBar action that displays the value of the State variable.
+ Show the App DEMO --->

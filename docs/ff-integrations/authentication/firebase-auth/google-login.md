@@ -83,7 +83,7 @@ To let users log out of your app, you can use the [**Logout**](../logout-action.
       your [Project Credentials](https://console.cloud.google.com/apis/credentials?project=_) page.
    
     - Ensure you are on the correct project. In our case, we are using the
-      EcommerceFlow project, it will be different for you.
+      [EcommerceFlow demo project](https://bit.ly/ff-docs-demo-v1), it will be different for you.
    
    ![credential-page.png](../imgs/credential-page.png)
 

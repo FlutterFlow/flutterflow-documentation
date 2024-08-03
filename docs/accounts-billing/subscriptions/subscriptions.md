@@ -74,5 +74,5 @@ When you cancel a paid plan, your account will be converted to a Free account.
 
 You can confirm your account has been canceled from the My Plan section of the **[Account Page](https://app.flutterflow.io/account)**. Your account will now say **ends at** vs. **renews at.**
 
-![img_3.png](..%2Fimgs%2Fimg_3.png)
+![img_3.png](../imgs/img_3.png)
 

@@ -19,7 +19,7 @@ Add new functionality to your app in seconds! The FlutterFlow Marketplace featur
 
 To add a Marketplace Item to your project, head to your FlutterFlow dashboard and select **Marketplace** or head over to [marketplace.flutterflow.io](https://marketplace.flutterflow.io/). In Marketplace, click on any item to learn more about it. 
 
-![img.png](imgs%2Fimg.png)
+![img.png](imgs/img.png)
 
 :::tip
 You can directly search for an item or filter by item type at the top (e.g., Template Apps).

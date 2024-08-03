@@ -7,7 +7,7 @@
 You can view the next billing cycle date in the "My Plan" section of the [Flutterflow Account Page](https://app.flutterflow.io/account).
 
 <figure>
-    ![img_14.png](..%2Fimgs%2Fimg_14.png)
+    ![img_14.png](../imgs/img_14.png)
   <figcaption class="centered-caption">The next billing cycle date for this account is August 31, 2021</figcaption>
 </figure>
 

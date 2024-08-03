@@ -36,7 +36,7 @@ Deploying to App Store consists of the following steps:
 
 ### 1. Create a Bundle Identifier
 
-A Bundle Identifier (ID) is a unique number that identifies your app within the Apple ecosystem.
+A Bundle Identifier (ID) is a unique **string** that identifies your app within the Apple ecosystem. It's typically formatted in reverse domain name notation, such as `com.example.myapp`.
 
 Please follow these steps to create a Bundle ID:
 

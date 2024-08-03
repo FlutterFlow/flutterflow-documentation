@@ -38,11 +38,7 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
   its children, meaning it won’t take more space than necessary. This is useful for lists that do not need to be scrollable because they fit within their constraints.
 
 - **Primary:** If set to true, the ListView will act as the primary scrolling view in the context.
-  This usually affects how the view interacts with other scrolling views and whether it stretches to fill the viewport.
-
-
-<!---TODO: Video comparison --->
-
+  This usually affects how the view interacts with other scrolling views and whether it stretches to fill the viewport. [**See more info here**](#primary-property).
 
 - **Reverse:** This property, when enabled, reverses the order in which items appear in the ListView.
   For a vertical list, this means starting from the bottom and for a horizontal list, starting from the right.
@@ -270,7 +266,7 @@ Here's a quick demo to show how to add a GridView widget and modify its properti
 
 - **Shrink Wrap:** By default, the GridView widget takes up all the available space in its main axis. That means if the Axis property is set to Vertical, GridView will occupy all vertical space on the screen. Similarly, if the Axis is set to Horizontal, then GridView will reserve all the horizontal space.
 
-- **Primary:** When set, this indicates whether the GridView is the primary scrollable widget in the layout. A primary GridView handles the scroll interactions, usually necessary when there's only one scrolling view in the viewport.
+- **Primary:** When set, this indicates whether the GridView is the primary scrollable widget in the layout. A primary GridView handles the scroll interactions, usually necessary when there's only one scrolling view in the viewport. [**See more info here**](#primary-property).
 
 :::tip[Video Tutorial]
 If you prefer watching a video tutorial, here's the one for you:
@@ -422,9 +418,46 @@ This step includes adding the ListView -> ListTile widget and querying the pagin
 </div>
 <p></p>
 
+
+## Primary property
+When this property is true and even if the content inside the scrollable widget, such as ListView, or GridView, doesn't overflow the visible area, the user can still attempt to scroll it. The content might move slightly and then bounce back, especially noticeable on iOS with the bounce effect.
+
+:::tip
+In situations where you have multiple scrollable widgets nested within each other, only one should typically be set as primary.
+:::
+
+In most cases, the outermost scrollable widget (usually the one that takes up the most space or the full screen) is set as primary, while inner scrollables are not. For example, when you have a widget structure like this Column > ListView, you should keep the Column as primary and ListView as non-primary.
+
+![img_2.png](imgs/img_2.png)
+
+<p></p>
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/eefd3dd2cd9348e8a9efa460c7e88389?sid=e8c01ce5-5029-4011-9542-816e3db4d514" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
 ## Pull to Refresh on ListView or GridView
 
-:::info
-To enable pull to refresh on this widget, you can follow the 
-[**instructions here**](../widget-commonalities.md#enable-pull-to-refresh).
-:::
+If you've enabled the Single Time Query for a Backend Query in a scrollable widget, it won't refresh the list when items are updated in the backend. To address this, add a pull-to-refresh feature.
+
+This user interface pattern allows users to manually refresh content by pulling down the content area, such as a list. When pulled down sufficiently and released, the app will refresh, fetching the latest data or updates.
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/d346382211cb4ee3a0d113dd5520f034?sid=e994b1b5-8da1-4b30-9244-c330475d5c09" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<p></p>
+
+
+To enable pull to refresh:
+
+1. Select your scrollable widget, such as `ListView`, `GridView`, or `StaggeredView`.
+2. Move to the properties panel and select the **Backend Query**.
+3. Open the already added query (e.g., Query collection or API call) and make sure the **Single Time Query** is enabled.
+4. Switch on the **Enable Pull to Refresh** toggle. This will automatically add the **Refresh Database Request** action on a pull to refresh gesture.
+
+<div class="video-container"><iframe src="https://www.loom.
+com/embed/a83bfb12645340ae80a36ccf2cb9a63d?sid=28c284ff-342d-4535-bf0e-a288ca52d15c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<p></p>
+
