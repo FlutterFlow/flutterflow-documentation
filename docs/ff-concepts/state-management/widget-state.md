@@ -16,7 +16,7 @@ Additionally, **Widget Focus State** refers to the state that indicates whether 
 - **Automatic Management:** FlutterFlow handles the state, so developers do not need to write explicit state management code.
 - **Reactive Updates:** Changes in the state automatically update the widget's display. 
 
-![widget-state.png](imgs%2Fwidget-state.png)
+![widget-state.png](imgs/widget-state.png)
 
 ## Managing Widget States
 
@@ -31,7 +31,7 @@ Some examples of widget states exposed by FlutterFlow:
 
 In the following example, we find widget state and widget focus state of a TextField being exposed by FlutterFlow on the page it was created and available as an option in the variable menu.
 
-![using-widget-state.png](imgs%2Fusing-widget-state.png)
+![using-widget-state.png](imgs/using-widget-state.png)
 
 :::tip[Scope]
 **Widget states** are mostly available for access on the page or component where they were created. However, when you add a component to a page, the widget states exposed in the component will also be available in its parent page.
@@ -46,7 +46,7 @@ com/embed/4dca7e59da1643629dcbb7cd2065580d?sid=3f2cd864-7d72-41ee-adc2-bb96e3ddc
 
 FlutterFlow allows you to update the state of these widgets through actions exposed by the platform. For example, if you want to clear a TextField when the Send button is clicked on a form-like page, then in the Actions Flow, you can find relevant actions such as **Clear TextField**. This enables dynamic interaction and state management directly within the visual development environment.
 
-![managing-widget-state.png](imgs%2Fmanaging-widget-state.png)
+![managing-widget-state.png](imgs/managing-widget-state.png)
 
 
 ## Action Triggers for Form Widgets
@@ -68,7 +68,7 @@ For example, automatically moving to the next step in a process after a complete
 
 These triggers allow developers to create interactive and responsive applications by defining specific actions that occur in response to user interactions with form widgets.
 
-![action-triggers-widget-state.png](imgs%2Faction-triggers-widget-state.png)
+![action-triggers-widget-state.png](imgs/action-triggers-widget-state.png)
 
 
 

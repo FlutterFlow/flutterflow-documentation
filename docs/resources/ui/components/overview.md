@@ -91,7 +91,7 @@ Here's an example of all the widely used components used in the EcommerceFlow de
 
 
 <figure>
-    ![custom-components-demo-list.png](..%2Fimgs%2Fcustom-components-demo-list.png)
+    ![custom-components-demo-list.png](../imgs/custom-components-demo-list.png)
   <figcaption class="centered-caption">Some of the custom components from the Ecommerce Demo App</figcaption>
 </figure>
 

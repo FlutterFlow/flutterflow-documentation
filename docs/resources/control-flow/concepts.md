@@ -34,13 +34,13 @@ The primary conditional statements are `if`, `if-else`, and `else`.
 The if statement evaluates a condition and executes a block of code if the condition is true.
 
 
-![if-condition.png](functions%2Fimg%2Fif-condition.png)
+![if-condition.png](functions/img/if-condition.png)
 
 - **`if-else` Statement:**
 
 The if-else statement provides an alternative block of code to execute if the condition is false.
 
-![if-else-condition.png](functions%2Fimg%2Fif-else-condition.png)
+![if-else-condition.png](functions/img/if-else-condition.png)
 
 Here, if `userIsLoggedIn` is true, the app will show a welcome message. Otherwise, it will prompt the user to log in.
 
@@ -50,7 +50,7 @@ Here, if `userIsLoggedIn` is true, the app will show a welcome message. Otherwis
 
 The `else if` statement can be used to check multiple conditions sequentially.
 
-![if-elseif-condition.png](functions%2Fimg%2Fif-elseif-condition.png)
+![if-elseif-condition.png](functions/img/if-elseif-condition.png)
 
 This example demonstrates multiple conditions. If `userIsLoggedIn` is true, it shows a welcome message. If not, it checks if `userIsGuest` is true and shows a guest message. If neither condition is met, it prompts the user to log in.
 

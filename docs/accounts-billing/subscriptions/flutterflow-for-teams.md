@@ -22,13 +22,13 @@ To change your account to a Teams Plan, please follow these steps:
 
 <p></p>
 
-![img_4.png](..%2Fimgs%2Fimg_4.png)
+![img_4.png](../imgs/img_4.png)
 
 <p></p>
 
 3. Next, enter your organization name (e.g. FlutterFlow) and your website/email domain (e.g. flutterflow.io) and select **Create Team**.
 
-![img_5.png](..%2Fimgs%2Fimg_5.png)
+![img_5.png](../imgs/img_5.png)
 
 ## How do I add users to my *Teams* plan?
 
@@ -40,20 +40,20 @@ A seat grants one user the ability to use Flutterflow. You will need to purchase
 
 1. From the **My Organization** tab, select **Subscribe**.
 
-![img_6.png](..%2Fimgs%2Fimg_6.png)
+![img_6.png](../imgs/img_6.png)
 
 2. A popup will appear, select the number of seats (subscriptions) and Billing Cycle Additional users can be added to your team at any time. **You can select from a monthly or annual plan.**
 
 
-![img_7.png](..%2Fimgs%2Fimg_7.png)
+![img_7.png](../imgs/img_7.png)
 
 3. A checkout page will appear for you to complete the purchase. **Please note: this can take a few seconds to load.** If you want to add more seats at a later time, you can do so by selecting the Add Seats button.
 
-![img_8.png](..%2Fimgs%2Fimg_8.png)
+![img_8.png](../imgs/img_8.png)
 
 :::tip
 You can see how many seats you have used here
-![img_9.png](..%2Fimgs%2Fimg_9.png)
+![img_9.png](../imgs/img_9.png)
 
 :::
 
@@ -67,7 +67,7 @@ If you add an existing Flutterflow user to your Teams plan, they will need to ma
 1. After you've purchased your seats, this will be reflected in the **Seats** section under **My Organization** (example below).
 2. To invite a new user, select the **Invite User(s)** button.
 
-![img_10.png](..%2Fimgs%2Fimg_10.png)
+![img_10.png](../imgs/img_10.png)
 
 3. A popup will appear, type the email of the user you would like to add.
 4. If they are not an existing user of FlutterFlow, they will be sent an invitation to join.
@@ -77,7 +77,7 @@ If you add an existing Flutterflow user to your Teams plan, they will need to ma
 * You must verify your email before inviting users.
 :::
 
-![img_11.png](..%2Fimgs%2Fimg_11.png)
+![img_11.png](../imgs/img_11.png)
 
 
 ## Delete users from Teams plan
@@ -86,13 +86,13 @@ To remove a user from the teams, click on the **red cancel button** and select *
 
 
 <figure>
-   ![img_12.png](..%2Fimgs%2Fimg_12.png)
+   ![img_12.png](../imgs/img_12.png)
   <figcaption class="centered-caption">Delete users from Teams Plan</figcaption>
 </figure>
 
 
 <figure class="centered-caption">
-    ![img_13.png](..%2Fimgs%2Fimg_13.png)
+    ![img_13.png](../imgs/img_13.png)
   <figcaption class="centered-caption">Confirmation Popup</figcaption>
 </figure>
 

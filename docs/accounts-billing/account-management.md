@@ -48,7 +48,7 @@ To check if you have verified your account:
 2. Navigate to the Profile Information section. 
 3. If you have a green checkmark next to your email, your account is verified.
 
-![img_1.png](imgs%2Fimg_1.png)
+![img_1.png](imgs/img_1.png)
 
 ### I Didn't Get The Email To Verify My Account / How Do I Resend The Verification Email?
 If you did not receive a verification email, please follow these steps:
@@ -60,7 +60,7 @@ If you did not receive a verification email, please follow these steps:
 
 You should receive a new confirmation email. If you do not receive the verification email, please contact us at support@flutterflow.io.
 
-![img.png](imgs%2Fimg.png)
+![img.png](imgs/img.png)
 
 ## Delete Account
 ### How Do I Delete My Account
@@ -90,4 +90,4 @@ To change your login email in FlutterFlow:
 
 Now, you are ready to log in with your new email address and password.
 
-![img_2.png](imgs%2Fimg_2.png)
+![img_2.png](imgs/img_2.png)

@@ -428,7 +428,7 @@ In situations where you have multiple scrollable widgets nested within each othe
 
 In most cases, the outermost scrollable widget (usually the one that takes up the most space or the full screen) is set as primary, while inner scrollables are not. For example, when you have a widget structure like this Column > ListView, you should keep the Column as primary and ListView as non-primary.
 
-![img_2.png](imgs%2Fimg_2.png)
+![img_2.png](imgs/img_2.png)
 
 <p></p>
 
