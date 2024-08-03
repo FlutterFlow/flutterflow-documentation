@@ -34,8 +34,7 @@ Learn more about creating [app state variables](../data-representation/app-state
 
 You can set the value of variables using [actions](../../resources/control-flow/functions/action-flow-editor.md) in FlutterFlow. For instance, when a button is clicked, you can set a variable to a certain value. Variables can be accessed to control the behavior of UI components, such as visibility, text content, and styling. For example, a text widget can display the value of a variable.
 
-Here are examples of setting and using an app state variable ([update]
-(app-state#update-app-state-variable) and [use](app-state#use-app-state)), as well as a 
+Here are examples of setting and using an app state variable [update](app-state.md#update-app-state-action) and [use](app-state.md#use-app-state), as well as a 
 page state variable ([set](../ui/pages/page-lifecycle.md#creating-a-page-state) 
 and [use](../ui/pages/page-lifecycle.md#get-page-state-value)).
 
@@ -45,17 +44,17 @@ Data types are used to define the kind of data that variables can store and mani
 
 :::info
 
-Learn more about data types [**here**](data-types).
+Learn more about data types [**here**](data-types.md).
 
 :::
 
 ## Data mutability
 
-All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [Constants](constants) that cannot be changed once they have been set.
+All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [Constants](constants.md) that cannot be changed once they have been set.
 
 ## Global data
 
-Global data are accessible from anywhere within the app. They are helpful, especially when the data is required frequently or by various components or pages. In FlutterFlow, they are available as [Global Properties](global-properties).
+Global data are accessible from anywhere within the app. They are helpful, especially when the data is required frequently or by various components or pages. In FlutterFlow, they are available as [Global Properties](global-properties.md).
 
 ## Encapsulation
 

@@ -52,7 +52,6 @@ To enable authentication in FlutterFlow:
 
 3. Turn on the **Enable Authentication** toggle and select **Authentication Type** to **Supabase**.
 
-4. To ensure that your users are directed to the appropriate pages based on their login status, 
-   you must set the [initial pages](/settings-and-integrations/general-settings/app-details#initial-page).
+4. To ensure that your users are directed to the appropriate pages based on their login status, you must set the [initial pages](../../../resources/projects/settings/general-settings.md#initial-page).
 
 ![img_1.png](img_1.png)

@@ -23,7 +23,7 @@ user ID from a list page to a detail page to display specific information about
 that user.
 
 :::info[LEARN MORE]
-Learn more about passing data between pages [**here**](../../../ff-concepts/navigation-routing/passing-data).
+Learn more about passing data between pages [**here**](../../../ff-concepts/navigation-routing/passing-data.md).
 :::
 
 ### Route Settings

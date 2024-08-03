@@ -50,7 +50,7 @@ Apple sign-in functionality is only supported for iOS.
 Before getting started with this section:
 
 1. Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
-2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
+2. Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). 
    Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.

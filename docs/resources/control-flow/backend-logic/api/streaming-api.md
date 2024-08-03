@@ -102,7 +102,7 @@ The user interface includes a section for the average rating, and number of revi
 * [**Text Widget**](../../../ui/widgets/built-in-widgets/text.md): 
   Displays 
   the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
-* [**Chart (Bar chart) Widget**](/widgets-and-components/widgets/base-elements/chart/bar-chart): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
+* [**Chart (Bar chart) Widget**](../../../ui/components/built-in-components/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
 
 <p></p>
 ![streaming-api-example-demo.png](../imgs/streaming-api-example-demo.png)
@@ -195,7 +195,7 @@ Here's how exactly you do it:
 
 ### 5. Extract chart data
 
-The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](/customizing-your-app/custom-functions/custom-functions). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
+The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](../../../../ff-concepts/adding-customization/cloud-functions.md). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
 
 Here's how you do it:
 
@@ -356,8 +356,7 @@ id: 2
 ```
 The Server Sent Event Data JSON will be `null` because the data cannot be parsed as JSON.
 
-You can fix this by using the following expression inside the [Code Expression](/advanced-functionality/code-expression) to handle the `null` case:
-
+You can fix this by using the following expression inside the [Code Expression](../../../control-flow/functions/utility-functions.md#code-expressions) to handle the `null` case:
 
 ```
 responseData ?? ''

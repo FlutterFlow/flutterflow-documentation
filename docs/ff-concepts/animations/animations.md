@@ -13,7 +13,7 @@ Enhancing your app with animations significantly improves the user experience, m
 - [**Implicit Animations**](implicit_animations.md): Animate changes in specific widget properties, such as the height of a Container.
 - [**Hero Animations**](hero_animations.md): Animate a widget that transitions smoothly between screens, also known as shared element transitions.
 - [**Page Transition Animations**](page_transitions.md): Specify transitions between pages within your app.
-- **Import Animations**: Import animations you've created using other tools such [lottiefiles](import-animations/lottie-animation) and [Rive](import-animations/rive-animation).
+- **Import Animations**: Import animations you've created using other tools such [lottiefiles](import-animations/lottie-animation.md) and [Rive](import-animations/rive-animation.md).
 
 
 To learn more about animations in FlutterFlow, check out this video:

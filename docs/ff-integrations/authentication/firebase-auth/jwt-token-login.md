@@ -30,7 +30,7 @@ Let's build an example that uses a JWT token to log into the app. Here's how it 
 Before getting started with this section:
 
 - Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
-- Complete [**Initial setup**](auth-initial-setup) required for authentication.
+- Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 :::
 
 

@@ -59,9 +59,9 @@ loading indicator during the logo creation process. Its value is set to *True* b
 
 ### 2. Build a page
 
-Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the [template](/getting-started/adding-new-page#add-page) or use [AI Page Gen](/getting-started/adding-new-page#ai-gen-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
+Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the template or use [AI Page Gen](../../resources/ui/pages/pages.md#create-an-ai-generated-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
 
-Also, see how to [build a page layout](/widgets-and-components/ui-and-layout-101) if you want to build a page from scratch.
+Also, see how to [build a page layout](../../ff-concepts/layout/building-layout.md) if you want to build a page from scratch.
 
 ![img_7.png](imgs/img_7.png)
 

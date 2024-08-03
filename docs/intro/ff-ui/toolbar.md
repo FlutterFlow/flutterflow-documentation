@@ -143,14 +143,14 @@ You can make a project public so that others can view and clone your project. Be
 :::note
 
 - You can only share projects where you are the owner.
-- The share feature can be used to create Marketplace items. You can learn more about this [here](https://docs.flutterflow.io/marketplace/adding-and-purchasing-items#adding-a-marketplace-item).
+- The share feature can be used to create Marketplace items. You can learn more about this [here](../../marketplace/index.md).
 
 :::
 
 ## Preview
 
-You can use this option to run your app in [Preview mode](../../testing-deployment-publishing/running-your-app/run-your-app#preview-mode).
+You can use this option to run your app in [Preview mode](../../testing-deployment-publishing/running-your-app/run-your-app.md#preview-mode).
 
 ## Testing
 
-This menu allows you to run your app in [Test](../../testing-deployment-publishing/running-your-app/run-your-app#test-mode) or [Run](../../testing-deployment-publishing/running-your-app/run-your-app#run-mode) mode.
+This menu allows you to run your app in [Test](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) or [Run](../../testing-deployment-publishing/running-your-app/run-your-app.md#run-mode) mode.

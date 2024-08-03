@@ -6,7 +6,7 @@ tags: [Base Elements]
 
 # Barcode
 
-The Barcode widget is used to embed the information inside the series of lines and patterns. The data inside the barcode can be easily retried with a scanner machine, an app like [Google Lens](https://lens.google/) (Android), [Apple Camera](https://support.apple.com/en-in/HT208843) (iOS), or your [own app](https://docs.flutterflow.io/actions-and-api-calls/actions/scan-barcode-qr-code) created using FlutterFlow.
+The Barcode widget is used to embed the information inside the series of lines and patterns. The data inside the barcode can be easily retried with a scanner machine, an app like [Google Lens](https://lens.google/) (Android), [Apple Camera](https://support.apple.com/en-in/HT208843) (iOS), or your [own app](#) created using FlutterFlow.
 
 
 It is typically used to retrieve product information quickly and accurately. For example, you could track the inventory/books (e.g., price, description, location, etc.), share website/app URL, quick onboarding process, and so on.

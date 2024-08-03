@@ -233,7 +233,7 @@ For simplification purposes, the selected option is shown in the Text widget. In
 
 To retrieve the user's selection:
 
-1. Add the [**Text**](../../../../ui/widgets/built-in-widgets/text/) widget to your page.
+1. Add the [**Text**](../../../../ui/widgets/built-in-widgets/text.md) widget to your page.
 2. Move to property editor and click on the **Set from Variable** text. (This will open a new panel)
 3. Set the **Source** to **Widget State**.
 4. Set the **Available Options** to **RadioButton**.
@@ -491,5 +491,5 @@ To change the color of selected and unselected options:
 
 
 :::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
 :::

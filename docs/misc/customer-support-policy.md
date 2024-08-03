@@ -36,7 +36,7 @@ The following topics are out of the scope of our support team:
 
 **Tutorials & How-To Guides** Our [YouTube channel](https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q/featured) contains a variety of tutorials and how-to videos. In addition to our documentation, our [blog](https://blog.flutterflow.io/) also contains a number of how-to guides.
 
-**Troubleshooting Guides**Our documentation contains a number of [troubleshooting guides](https://docs.flutterflow.io/troubleshooting/basic-troubleshooting-guide) to help you diagnose and fix common issues.
+**Troubleshooting Guides**Our documentation contains a number of [troubleshooting guides](#) to help you diagnose and fix common issues.
 
 Additionally, our [Community Forum](https://community.flutterflow.io/) is a great place to get ideas and troubleshooting tips from fellow FlutterFlow builders.
 
@@ -46,7 +46,7 @@ Lastly, you can connect with a [FlutterFlow Expert](https://experts.flutterflow.
 
 We regularly release feature updates and bug releases. To make sure you are on the most recent version of FlutterFlow select Ctrl/Cmd + R.
 
-If you think you've found a bug, please submit an [in-app bug report](https://docs.flutterflow.io/building-your-ui/ui-builder/tool-bar#3.-help) or let us know via chat (Standard and Pro users only). Please make sure to include:
+If you think you've found a bug, please submit an [in-app bug report](../intro/ff-ui/toolbar.md#help) or let us know via chat (Standard and Pro users only). Please make sure to include:
 
 * A link to your project
 * The page(s) effected

@@ -156,7 +156,7 @@ com/embed/06916f7d74d1418d9fdb818d1e001635?sid=bb4c6e0e-ea37-48d7-b52f-d4a81db15
 
 
 
-### 3. Sending push notifications
+### Sending push notifications
 
 Use these steps to create and send push notifications:
 
@@ -194,7 +194,7 @@ Currently we only support sending *Firestore document references* as data.
 To send a push notification with data:
 
 1. You must have a page that accepts a parameter of type 'DocumentReference'.
-2. Build a notification using the instructions [here](/settings-and-integrations/app-settings/push-notifications#add-push-notifications).
+2. Build a notification using the instructions [here](#add-push-notifications).
 3. Set the **Initial Page** to the one that accepts the parameter.
 4. Find the **Parameter Data** section, copy the document reference from the Firestore, and paste it into the input box below.
 5. Click on **Send Notification**.
@@ -264,7 +264,7 @@ Follow the steps below to add this action to any widget.
     7. You can set the **Notification Text** from a variable.
     8. Optional: Open the **Notification Image** section to set the image that you want to appear in the notification.
     9. Turn on the **Deliver with Sound** if you want to send a notification with the user's default sound/vibration.
-    10. To set which page to open when a user taps the notification, set the **Initial Page** to the page you would like to open. You can also [pass on the parameters](/settings-and-integrations/app-settings/push-notifications#push-notifications-with-data) if page requests.
+    10. To set which page to open when a user taps the notification, set the **Initial Page** to the page you would like to open. You can also [pass on the parameters](#push-notifications-with-data) if page requests.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/5a6fa52d6802486fa0581f5ced56899e?sid=ca075c66-1b9a-4938-b882-0b3d7c803cb5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

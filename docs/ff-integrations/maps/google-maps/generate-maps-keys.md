@@ -38,7 +38,7 @@ com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer
 
 :::warning
 To secure your API keys, refer to the 
-[**Best Practices guide: Secure API Keys**](../../google-cloud/secure-keys)
+[**Best Practices guide: Secure API Keys**](../../google-cloud/secure-keys.md)
 :::
 
 - Click on the Credentials menu from the left panel.

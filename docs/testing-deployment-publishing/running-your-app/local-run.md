@@ -34,7 +34,7 @@ For Android app testing on a device or emulator, configure your machine ([**Wind
 Here are the steps to use local run:
 
 1. Download the [desktop](https://flutterflow.io/desktop) app and open your project.
-2. In the [Toolbar](../../intro/ff-ui/toolbar), click on the **dropdown** next to the *Test Mode* button and click **Setup Local Run**. This will open the setup wizard.
+2. In the [Toolbar](../../intro/ff-ui/toolbar.md), click on the **dropdown** next to the *Test Mode* button and click **Setup Local Run**. This will open the setup wizard.
     
 ![setup-local-run](../imgs/setup-local-run.avif)
     

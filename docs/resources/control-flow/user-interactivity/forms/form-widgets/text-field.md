@@ -50,7 +50,7 @@ Let's see how to add a TextField widget and see an example of displaying its val
 Here are the steps:
 
 1. First, add the TextField widget, move to the properties panel and give it a name.
-2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
+2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button.md) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
 
 <div style={{
     position: 'relative',
@@ -321,7 +321,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](../../../../ui/widgets/built-in-widgets/icons#common-icon-properties).
+You can also [customize the icon's size and color](../../../../ui/widgets/built-in-widgets/icons.md#common-icon-properties).
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
@@ -836,7 +836,7 @@ Let's see an example of controlling the visibility of a Text widget based on the
 
 To do so:
 
-1. On a Text widget, add a [Conditional Visibility](../../../../ui/widgets/widget-commonalities#conditional) based on the TextField's Focus state. You can access via **Set from Variable** menu **> Widget Focus State > [TextField name]**.
+1. On a Text widget, add a [Conditional Visibility](../../../../ui/widgets/widget-commonalities.md#conditional) based on the TextField's Focus state. You can access via **Set from Variable** menu **> Widget Focus State > [TextField name]**.
 2. Now, on a TextField widget, under the [On Focus Change](#trigger-action--listen-callback) callback, simply add an action to refresh the page by adding the update app state variable.
 
 <div style={{

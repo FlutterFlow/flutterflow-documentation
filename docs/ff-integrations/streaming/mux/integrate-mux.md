@@ -155,11 +155,10 @@ the broadcast icon based on whether the stream is live.
 
 To do so:
 
-1. [Query a collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection)
+1. [Query a collection](../../../resources/control-flow/backend-logic/backend-query/query-collection.md)
    called *broadcasts* on a ListView.
-2. [Order the collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#ordering-a-collection-query)
-   by *time* field.
-3. [Add the conditional visibility](/advanced-functionality/conditional-visibility#adding-conditional-visibility)
+2. Order the collection by *time* field.
+3. [Add the conditional visibility](../../../resources/ui/widgets/widget-commonalities.md#visibility)
    on an icon (that indicates if the stream is live) based on the *is_live* field.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/retrieve-list.gif?alt=media&token=1889ef3c-35b9-4aa2-8576-5f8440243538"></img>>
@@ -174,9 +173,7 @@ broadcast name as a parameter.
 To do so:
 
 1. Select the FloatingActionButton and add
-   an [action to open the bottom](/widgets-and-components/custom-components/bottom-sheet#action-to-open-the-bottom-sheet)
-   sheet (created
-   in [4.2](/widgets-and-components/widgets/base-elements/muxbroadcast#4.2-boradcastname-custom-component-bottomsheet))
+   an action to open the bottom sheet (createdin [4.2])
 
 <figure>
     ![img_8.png](img_8.png)

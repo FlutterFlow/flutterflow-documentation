@@ -47,7 +47,7 @@ Let's see how to add a DataTable widget by building an example that shows a list
 
 The steps to add DataTable and display the employees' details are:
 
-1. Open the [Widget Palette](../../../../intro/flutterflow-ui/widget-palette) and locate the **DataTable** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
+1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DataTable** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. It adds two types of predefined widgets:
     1. **DataTableHeader**: This refers to the top row of the table, which displays the names of the columns. To change its text, click on the **DataTableHeader > Text** widget, move to the properties panel and give it a name.
     2. **DataTableCell**: This displays the actual data. By default, it comes with the Text widget. However, you can replace it with any other widget based on your requirements.

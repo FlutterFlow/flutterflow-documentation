@@ -234,4 +234,4 @@ To customize all bars together:
 
 ## Customizing chart
 
-You can [customize the chart](../chart/overview#customizing-chart) to match your design by changing the background color, setting axis bounds, showing grids, displaying borders, and more.
+You can [customize the chart](chart.md#customizing-chart) to match your design by changing the background color, setting axis bounds, showing grids, displaying borders, and more.

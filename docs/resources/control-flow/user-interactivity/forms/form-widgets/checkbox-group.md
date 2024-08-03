@@ -269,5 +269,5 @@ To customize the checkbox border:
 <p></p>
 
 :::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities#trigger-action-on-selection-change) on this widget.
+See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
 :::
