@@ -28,7 +28,7 @@ A list of all the available global properties is as follows:
 - **Is User Logged In:** Indicates whether a user is currently logged into the app. Useful for providing exclusive features to registered users or adjusting UI elements based on login status.
 - **Current Time:** Retrieves the current date and time.
 - **Current Device Location:** Obtains the user's current location, useful for updating the user's position on Google Maps or storing in a backend database.
-- **Link To Current Page:** Provides the deep link of the current page. Learn more about [adding deep links here](#).
+- **Link To Current Page:** Provides the deep link of the current page. Learn more about [adding deep links here](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#adding-deep-link).
 - **Fraction of Screen Width:** Determines the proportional width of the device's screen.
 - **Fraction of Screen Height:** Determines the proportional height of the device's screen.
 - **Screen Width:** Provides the total width of the current device's screen in pixels.

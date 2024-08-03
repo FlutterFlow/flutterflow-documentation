@@ -19,7 +19,7 @@ Before diving into form widgets, check out our guide on [**Widget States**](../.
 
 ## Adding TextField widget
 
-Let's see how to add a TextField widget and see an example of displaying its value in an [Alert Dialog](#).
+Let's see how to add a TextField widget and see an example of displaying its value in an Alert Dialog.
 
 <div style={{
     position: 'relative',
@@ -50,7 +50,7 @@ Let's see how to add a TextField widget and see an example of displaying its val
 Here are the steps:
 
 1. First, add the TextField widget, move to the properties panel and give it a name.
-2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button) widget and on tap of it, add an [Alert Dialog action](#). While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
+2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
 
 <div style={{
     position: 'relative',

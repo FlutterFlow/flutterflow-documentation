@@ -74,7 +74,7 @@ To build the UI:
 </div>
 
 :::info
-You can learn more about creating layouts [here](#).
+You can learn more about creating layouts [here](../ff-concepts/layout/building-layout.md).
 :::
 
 ## 3. Customize Style {#customize-style}
@@ -212,5 +212,5 @@ Congratulations! You've built your first app with FlutterFlow.
 ## **Problems?**
 
 If you're experiencing any issues with the app, ensure that you have followed the instructions correctly. 
-<!-- For troubleshooting, refer to our [comprehensive guide](#) or -->
+<!-- For troubleshooting, refer to our comprehensive guide or -->
 To seek assistance from the [Community Forum](https://community.flutterflow.io/). If you're still encountering problems, don't hesitate to report the issue to our support team.

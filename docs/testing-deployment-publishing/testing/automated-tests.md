@@ -83,7 +83,7 @@ This is the method by which you locate the widget you want to select or verify. 
 - **Select from UI Builder:** Use the UI Builder's interface to visually select the widget you want to verify.
 - **Find By ValueKey:** Locates the widget by its unique ValueKey. **Tip**: To add a ValueKey to a widget, use the 'Value Key' property located under the 'Testing' section on the widget properties panel.
 - **Find By Type:** Search for a widget based on its type, like `Text` or `Button`.
-- **Find By Semantics Label:** Useful for locating widgets that have a specific [semantics label](#).
+- **Find By Semantics Label:** Useful for locating widgets that have a specific semantics label.
 - **Find By Text:** Locate a widget that displays specific text.
 - **Find By Descendent:** Search for a widget that has a specific child or ancestor.
 

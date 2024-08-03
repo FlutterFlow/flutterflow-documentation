@@ -28,11 +28,11 @@ Variables are used in practically all areas of the app, from the user interface 
 
 To create a variable, start by defining its name and data type. If it's going to contain a list, you can specify that. Certain variables, such as page state and component state variables, are non-nullable by default, meaning they must contain a value. After defining the variable, you can assign a value to it.
 
-Learn more about creating [app state variables](app-state), [page state variables](#), and [component state variables](#).
+Learn more about creating [app state variables](../data-representation/app-state.md), [page state variables](../../resources/ui/pages/page-lifecycle/#page-state), and [component state variables](../../ff-concepts/state-management/generated-code.md#component-state).
 
 ### Setting and using variables
 
-You can set the value of variables using [actions](#) in FlutterFlow. For instance, when a button is clicked, you can set a variable to a certain value. Variables can be accessed to control the behavior of UI components, such as visibility, text content, and styling. For example, a text widget can display the value of a variable.
+You can set the value of variables using [actions](../../resources/control-flow/functions/action-flow-editor.md) in FlutterFlow. For instance, when a button is clicked, you can set a variable to a certain value. Variables can be accessed to control the behavior of UI components, such as visibility, text content, and styling. For example, a text widget can display the value of a variable.
 
 Here are examples of setting and using an app state variable ([update]
 (app-state#update-app-state-variable) and [use](app-state#use-app-state)), as well as a 

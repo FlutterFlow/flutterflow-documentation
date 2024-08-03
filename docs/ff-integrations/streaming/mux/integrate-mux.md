@@ -59,7 +59,7 @@ The following flow illustrates how these pages will work together:
 
 :::note[Prerequisites]
 
-- [**Set up Firebase**](#) for your project and [**Enable Billing**](#). This is required to deploy
+- [**Set up Firebase**](../../firebase/connect-to-firebase-setup.md) for your project and [**Enable Billing**](https://firebase.google.com/pricing). This is required to deploy
   the cloud functions (to your Firebase project) that will create the live
   stream on the Mux server.
 
@@ -76,8 +76,8 @@ store the stream information, and it looks like this:
 
 The steps to create a collection are as follows:
 
-- Be familiar with [**Structuring the Firebase Database**](#).
-- Create a [**Collection**](#) and provision at least four fields that store broadcast information
+- Be familiar with [**Structuring the Firebase Database**](../../database/cloud-firestore/getting-started.md#structuring-the-database).
+- Create a [**Collection**](../../database/cloud-firestore/creating-collections.md) and provision at least four fields that store broadcast information
   such as `is_live`, `name`, `url`, and `time` (this will be used to filter the list by latest
   stream first).
   ![img_3.png](img_3.png)
@@ -388,7 +388,7 @@ Now you can run the app and test your widget.
 
 :::info
 Mux Livestream can not be tested in Run Mode. Instead, you will need
-to [**test it on real device devices**](#).
+to **test it on real device devices**.
 :::
 
 ## Customizing MuxBroadcast
@@ -485,7 +485,7 @@ The live indicator appears as soon as you start live streaming (at the top left 
 To customize the live indicator:
 
 * To change its text (i.e. from LIVE to something else), open the **Live Text Style** section and
-  set the **Text**. You can also [customize the text](#) if
+  set the **Text**. You can also [customize the text](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties) if
   needed.
 * To change the indicator appearance, open the **Live Container & Icon** section and use the
   property such as **Icon**, **Icon size**, **Icon Color**, **Background Color**, and **Border

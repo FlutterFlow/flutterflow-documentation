@@ -63,7 +63,7 @@ You can create separate widgets for different platforms and control their visibi
 
 ### 3. Resolving web compatibility warnings
 
-If you have previously built a mobile app and have recently enabled web support, you may encounter warnings regarding web compatibility. Due to the distinct nature of mobile and web platforms, some of the widgets and actions in FlutterFlow, including [AdMob](#), [RevenueCat](#), [Share](#) action, and [Launch Map](#) action, or your custom widgets may not function as expected because they are not yet supported on the web.
+If you have previously built a mobile app and have recently enabled web support, you may encounter warnings regarding web compatibility. Due to the distinct nature of mobile and web platforms, some of the widgets and actions in FlutterFlow, including [AdMob](../../ff-integrations/ads/admob.md), [RevenueCat](../../ff-integrations/payments/revenuecat.md), [Share](../../ff-concepts/navigation-routing/share-action.md) action, and [Launch Map](#) action, or your custom widgets may not function as expected because they are not yet supported on the web.
 
 Any known *Web Support* Issues will be displayed as a **Platform Support Warning**. This won't stop you from deploying your app to the web, but it can result in poor user experience and unexpected app behavior.
 

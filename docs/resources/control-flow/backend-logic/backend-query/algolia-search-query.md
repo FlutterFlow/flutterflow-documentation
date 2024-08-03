@@ -22,7 +22,7 @@ There are some prerequisites before you start defining the search query:
 
 :::warning[Complete setup]
 If you haven't completed these steps, please follow the instructions present on the following 
-page before proceeding: [Algolia Search](#)
+page before proceeding: [Algolia Search](../../../../ff-integrations/search/algolia-search.md)
 :::
 
 ## Building Search UI

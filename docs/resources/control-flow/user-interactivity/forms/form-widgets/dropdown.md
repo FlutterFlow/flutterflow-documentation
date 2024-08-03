@@ -256,7 +256,7 @@ You might want to allow users to select multiple options from the dropdown list.
 To allow multi-select, select the **Dropdown** widget, move to the properties panel, find the **Allow Multi Select** property, and enable it.
 
 :::info
-To clear the selection, you can use the [Reset Form Fields](#) action and choose the **Reset Dropdown Fields** option. Then, simply select the name of the dropdown widget you wish to reset.
+To clear the selection, you can use the [Reset Form Fields](../form-actions/reset-form-field.md) action and choose the **Reset Dropdown Fields** option. Then, simply select the name of the dropdown widget you wish to reset.
 :::
 
 <div style={{
