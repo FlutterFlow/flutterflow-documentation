@@ -25,8 +25,9 @@ const Feedback = () => {
             window.gtag('event', 'feedback', {
                 event_category: 'Feedback',
                 event_label: window.location.pathname,
-                feedback_type: type,
-                feedback_text: text,
+                feedback_type: String(type), // Ensure feedback_type is a string
+                feedback_text: String(text), // Ensure feedback_text is a string
+                value: type === "thumbs_down" ? 0 : 1, // Keep value as a number
             });
         }
         setSubmitted(true);
