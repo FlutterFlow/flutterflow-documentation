@@ -43,7 +43,7 @@ You can use the **API Call Query** to trigger an API call automatically as soon 
 
 :::info[Prerequisites]
 
-Before you add this query, ensure you [create an API call](../api/rest-api) in your project
+Before you add this query, ensure you [create an API call](../api/rest-api.md) in your project
 :::
 
 ## Adding API Call query

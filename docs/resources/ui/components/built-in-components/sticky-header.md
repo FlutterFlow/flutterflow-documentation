@@ -95,7 +95,7 @@ Here are the steps to build such an example:
 2. Add the **StickyHeader** widget from the **Base Elements** tab.
 3. Inside the **StickyHeader Header**, add a widget that you want to stay at the top when scrolling. For this example, it's the search bar.
 4. Inside the **StickyHeader Content**, add the **ListView > Container** widgets to display a list of users.
-5. Query and display a list of users in a **ListView**. See how to do this [here](#).
+5. Query and display a list of users in a ListView.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/fb1aa4fcb11240ce95f5e4539ee0c224?sid=c1e3773c-993d-4752-a5ff-770dde87545b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -166,7 +166,7 @@ com/embed/39bb5fc9068f4a759a4b0d6fd62e3f16?sid=ed5c274e-f1e0-4830-9702-dd35ac2d6
 4. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container** 
 inside to display the list of matching contacts.
 
-    1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Code expression](/advanced-functionality/code-expression).
+    1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Code expression](../../../../resources/control-flow/functions/utility-functions.md#code-expressions).
     2. Now you can display the contact's details, such as name, inside the UI.
 
 <div class="video-container"><iframe src="https://www.loom.

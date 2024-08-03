@@ -19,8 +19,8 @@ FlutterFlow allows you to seamlessly deploy your apps directly to the Google Pla
 :::info[Prerequisites]
 1. Register for a [**Google Play Developer account**](https://play.google.com/console/u/0/signup).
 2. [**Test your application**](../running-your-app/local-run.md) on a real device.
-3. Confirm the [**app details**](#). Especially the package name, which can't be changed after your app is deployed.
-4. Set an [**App Launcher Icon**](#). The App Launcher icon can't be transparent or contain an alpha channel.
+3. Confirm the [**app details**](../../resources/projects/settings/general-settings.md#app-details). Especially the package name, which can't be changed after your app is deployed.
+4. Set an [**App Launcher Icon**](../../resources/projects/settings/general-settings.md#launcher-icon). The App Launcher icon can't be transparent or contain an alpha channel.
 
 :::
 

@@ -156,9 +156,9 @@ To show a list of notes, you can use the **ListView** > **Container** widgets to
 
 ![img_2.png](imgs/img_2.png)
 
-Now, on the ListView widget, add a [SQLite backend query](/data-and-backend/backend-query/sqlite-query) and display data in UI elements.
+Now, on the ListView widget, add a SQLite backend query as per the following instructions:
 
-### To add a SQLite Query:
+### Add a SQLite Query:
 
 Go to your project page and follow the steps below to define an SQLite query:
 

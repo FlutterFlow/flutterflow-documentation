@@ -39,7 +39,7 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
 
 To add a Stack widget:
 
-1. Open the [Widget Palette](../../../../intro/flutterflow-ui/widget-palette) and locate the **SwipeableStack** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
+1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **SwipeableStack** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. By default, it adds four cards and is represented as **SwipeableStack Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the card you want to see.
 3. To add a new card, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 4. To delete any card, select the **SwipeableStack Page** (which you want to delete) from the widget tree or the canvas area and press the **Delete** key on the keyboard.

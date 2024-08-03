@@ -62,7 +62,7 @@ To learn more about [**Generating Dynamic Children**](generate-dynamic-children)
 You can apply animations to a widget to enhance the visual appeal and user experience. Animations can be used to draw attention to important elements, provide feedback on user interactions, or create visually engaging transitions between states. 
 
 :::info
-Learn more about adding **[animations](#)** here
+Learn more about adding **[animations](../../../ff-concepts/animations/animations.md)** here
 :::
 
 ## Documentation and Semantic Labels

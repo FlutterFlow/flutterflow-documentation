@@ -241,7 +241,7 @@ By enabling Firestore batch write, you can group multiple operations and send th
 
 Suppose you have an e-commerce application, and after a successful order, you need to update the product inventory count and create a new document in the 'orders' collection. Using a batch write, you can combine these operations and execute them together to ensure data consistency.
 
-To enable Firestore batch write, you must have multiple Firestore ([any combination of)](#) 
+To enable Firestore batch write, you must have multiple Firestore any combination of 
 actions; inside the action editor, at the top right side, enable **Batch Firestore Writes**.
 
 <figure>
@@ -261,7 +261,7 @@ com/embed/238400b5445b444db712f492584b0d6e?sid=7b496882-0280-4920-924c-640fddeff
 
 To do so:
 
-1. Ensure you have [**Query Collection**](#) or [**Document from Reference**](#) added on a widget with **Single Time Query** disabled.
+1. Ensure you have **Query Collection** or **Document from Reference** added on a widget with **Single Time Query** disabled.
 2. Now select the widget, head over to **Actions**, and click **+ Add Action**.
 3. Select the **On Data Change** tab. That means actions added under this will be called whenever the data changes.
 4. Now, you can 

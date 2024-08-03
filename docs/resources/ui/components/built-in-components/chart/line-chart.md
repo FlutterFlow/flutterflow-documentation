@@ -192,4 +192,4 @@ To customize the line:
 
 ## Customizing chart
 
-You can [customize the chart](../chart/overview#customizing-chart) to match your design such as changing the background color, setting axis bounds, show grids, displaying borders, and more.
+You can [customize the chart](chart.md#customizing-chart) to match your design such as changing the background color, setting axis bounds, show grids, displaying borders, and more.

@@ -50,7 +50,7 @@ Apple sign-in functionality is only supported for iOS.
 Before getting started with this section:
 
 1. Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
-2. Complete [**Initial setup**](auth-initial-setup) required for authentication.
+2. Complete [**Initial setup**](auth-initial-setup.md) required for authentication.
 3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/). 
    Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.
@@ -191,7 +191,7 @@ To enable Apple authentication in the Firebase:
 
 ### 4. Add an Apple sign-in button
 
-To allow users to authenticate, you need a login page with a button. You can create your own or use the one from the [widget template](#) or page template.
+To allow users to authenticate, you need a login page with a button. You can create your own or use the one from the widget template or page template.
 
 Here's how you can add the Apple sign-in button from our page template:
 
@@ -265,7 +265,7 @@ To let users log out of your app, you can use the [Logout](../logout-action.md) 
 
 ### 7. Preparing to test the app
 
-For [testing your app](#) on a real device, you must configure the project in Xcode. This includes adding a team to your project and setting an appropriate signing certificate.
+For testing your app on a real device, you must configure the project in Xcode. This includes adding a team to your project and setting an appropriate signing certificate.
 
 Here's how you configure your project in Xcode:
 

@@ -14,7 +14,7 @@ keywords: [FlutterFlow, Anonymous Login, Authentication, Firebase]
 Before getting started with this section:
 
 - Complete [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
-- Complete [**Initial Setup**](auth-initial-setup) required for authentication.
+- Complete [**Initial Setup**](auth-initial-setup.md) required for authentication.
 - Learn more about the concepts
 of [**Anonymous Authentication**](../authentication-methods.md#anonymous-authentication)
 :::

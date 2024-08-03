@@ -374,7 +374,7 @@ Here is an example showing the snackbar message when the Dropdown selection chan
 
 To add a border to any widget:
 
-1. Find the **Border Color** property and change the color using the instructions [here](https://docs.flutterflow.io/widgets-and-components/widgets/widget-commonalities#change-color).
+1. Find the **Border Color** property and change the color.
 2. To create the rounded border, use the **Border Radius** property.
 3. Enter values for TL (Top left), TR (top right), BL (bottom left), and BR (bottom right).
 4. To apply the same radius on all sides, switch to the **Uniform Radius** option. You can then adjust the radius by either moving the slider or entering the desired value directly.

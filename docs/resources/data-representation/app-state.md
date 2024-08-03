@@ -16,7 +16,7 @@ App state variables are specific variables that hold the current state of an app
 
 App state variables should be used in scenarios where the same data needs to be accessed and modified from multiple locations within the app. For instance, in a shopping cart app, items in a user's cart are usually accessible across different pages.
 
-App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](#) or [component state](#) variable instead.
+App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](../../resources/ui/pages/page-lifecycle/#page-state) or [component state](../../ff-concepts/state-management/generated-code.md#component-state) variable instead.
 
 ## App State Variables
 

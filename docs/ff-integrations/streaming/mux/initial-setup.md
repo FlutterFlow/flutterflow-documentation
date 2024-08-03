@@ -39,5 +39,5 @@ Here is how you can set up the Mux Livestream:
 Before releasing your app to production, create new keys (with Environment set to Production) and deploy them again.
 
 :::info
-Visit the complete guide on [**how to add a live stream feature**](integrate-mux)to your app.
+Visit the complete guide on [**how to add a live stream feature**](integrate-mux.md)to your app.
 :::

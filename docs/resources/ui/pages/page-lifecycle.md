@@ -101,7 +101,7 @@ trigger specific actions in response to a phone shake gesture.
 
 :::note[State Variables]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here](../../../ff-concepts/state-management/state-variables)**
+about **states and state management, [refer here](../../../ff-concepts/state-management/generated-code.md)**
 :::
 
 

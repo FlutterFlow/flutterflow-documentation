@@ -573,7 +573,7 @@ Learn more about **[JSONPath](https://support.smartbear.com/alertsite/docs/monit
 
 To add JSON path:
 
-1. First, [create](#) and [test](#) your API call.
+1. First, [create and test](../api/create-test-api-calls.md) your API call.
 
 2. Inside the **JSON Paths** section, click on the **+ Add JSON Path**.
 3. Enter your **JSON Path** and give it a **Name**.
@@ -711,7 +711,7 @@ You can copy the boilerplate code into ChatGPT and request the completion for th
 
 :::tip[Additonally]
 * You can add multiple interceptors to any API call.
-* When the same interceptor is used by multiple APIs, you can create an [**API group**](#) and 
+* When the same interceptor is used by multiple APIs, you can create an [**API group**](../api/create-test-api-calls.md#grouping-api-calls) and 
   add the interceptor under the **Advanced Group Settings**. However, you can override the interceptor for any API within the group if you wish to.
 :::
 

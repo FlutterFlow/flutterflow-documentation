@@ -93,7 +93,7 @@ This action enables your app to analyze images and generate descriptive text abo
 * **Input**: *Image Type* - There are two ways you can provide an image.
 
 	+ **Image Network URL**: You can provide the URL of the image hosted on the internet. If you upload an image to **Firebase** or **Supabase**, you can provide the image via ***Widget State > Uploaded File URL****.*
-	+ **Uploaded Image File**: You can also provide an image file directly [from your device](/actions/actions/utilities/upload-data#id-3.-local-upload-widget-state) via ***Widget State > Uploaded Local File****.*
+	+ **Uploaded Image File**: You can also provide an image file directly [from your device](#) via ***Widget State > Uploaded Local File****.*
 * **Output**: *Action Output Variable Name* - "This is a pipe organ. It is a large musical instrument that is used in churches, concert halls, and other large buildings. The sound of a pipe organ is very powerful and can be used to create a wide variety of music."
 
 

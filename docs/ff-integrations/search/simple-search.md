@@ -14,7 +14,7 @@ The simple search allows you to search the data present locally on a device. For
 :::caution[When to use Simple Search vs Algolia]
 We advise using a simple search only for the smaller Firestore collection (with limited records).
 Otherwise, it can be slow and/or expensive. For a more extensive collection, consider using the 
-[**Algolia search**](#).
+[**Algolia search**](../search/algolia-search.md).
 :::
 
 <div class="video-container"><iframe src="https://www.loom.

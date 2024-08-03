@@ -237,4 +237,4 @@ You can customize the look and feel of each section to match your design by foll
 
 Legend helps users identify the data drawn over the chart. It's a small box that shows the chart data name/text (label) next to its color (a color used to draw a section).
 
-To show and customize the legend follow the instructions [here](../chart/overview#showing-legend).
+To show and customize the legend follow the instructions [here](chart.md#customizing-chart).

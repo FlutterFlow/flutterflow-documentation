@@ -64,12 +64,12 @@ com/embed/09755c639a8f4aaaa2ea2df8bb8b0324?sid=c4738082-d7ee-4e9b-8940-e887334e4
 
 ### 3. Add DragTarget widget
 
-The DragTarget widget in this example allows users to drop items onto the shelf. We utilize the [Stack](/widgets-and-components/widgets/layout-elements/stack) widget to layer the DragTarget widget over the shelf image. Moreover, the display of the shelf image is controlled by the [ConditionalBuilder](/widgets-and-components/widgets/base-elements/conditionalbuilder) widget, which uses the `isShelfFull` variable to determine which image to show. This widget arrangement ensures that the shelf image updates dynamically based on whether the shelf is full or not.
+The DragTarget widget in this example allows users to drop items onto the shelf. We utilize the Stack widget to layer the DragTarget widget over the shelf image. Moreover, the display of the shelf image is controlled by the [ConditionalBuilder](../../../../ff-concepts/layout/responsive-widgets/conditional-builder-widget.md) widget, which uses the `isShelfFull` variable to determine which image to show. This widget arrangement ensures that the shelf image updates dynamically based on whether the shelf is full or not.
 
 Let's see how to add DragTarget widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DragTarget** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree.
-2. Inside the **DragTarget** widget, add a [**Container**](/widgets-and-components/widgets/layout-elements/container) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
+2. Inside the **DragTarget** widget, add a [**Container**](../../widgets/built-in-widgets/container.md) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
 3. Now, you need to specify the type of data this target will receive. To do so select the **DragTarget widget > Properties Panel > Draggable Properties >** specify the **Type** of the data. This is crucial for ensuring that only the correct items can be dropped on the target.
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -103,7 +103,7 @@ and click **Open**. This will open an **Action Flow Editor** in a new popup wind
 2. To ensure that only a plant item is being dropped:
 
     1. Select the **On Drag Accept** and select **+ Add Conditional Action**.
-    5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](/widgets-and-components/widgets/base-elements/draggable-+-dragtarget#id-2.-add-draggable-widgets).
+    5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](#2-add-draggable-widgets).
     8. Check if the captured data matches the expected item, i.e., plant.
     11. In the **TRUE** branch, you can add a [snackbar message](../../pages/page-elements.md#snackbar) and [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
 3. Now, select the **On Drag Exit** andadd an action to [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.

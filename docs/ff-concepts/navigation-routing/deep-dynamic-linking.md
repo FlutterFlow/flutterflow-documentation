@@ -180,7 +180,7 @@ respective store to install the app. After the app is installed, users can be ta
 intended app page.
 
 For the dynamic link to work, you need to enable
-the [deep link](/advanced-functionality/deep-and-dynamic-linking#deep-link). You can think of a
+the [deep link](#adding-deep-link). You can think of a
 dynamic link as the additional benefit of the deep link.
 
 :::note

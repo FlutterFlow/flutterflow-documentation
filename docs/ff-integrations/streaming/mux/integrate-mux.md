@@ -59,7 +59,7 @@ The following flow illustrates how these pages will work together:
 
 :::note[Prerequisites]
 
-- [**Set up Firebase**](#) for your project and [**Enable Billing**](#). This is required to deploy
+- [**Set up Firebase**](../../firebase/connect-to-firebase-setup.md) for your project and [**Enable Billing**](https://firebase.google.com/pricing). This is required to deploy
   the cloud functions (to your Firebase project) that will create the live
   stream on the Mux server.
 
@@ -76,8 +76,8 @@ store the stream information, and it looks like this:
 
 The steps to create a collection are as follows:
 
-- Be familiar with [**Structuring the Firebase Database**](#).
-- Create a [**Collection**](#) and provision at least four fields that store broadcast information
+- Be familiar with [**Structuring the Firebase Database**](../../database/cloud-firestore/getting-started.md#structuring-the-database).
+- Create a [**Collection**](../../database/cloud-firestore/creating-collections.md) and provision at least four fields that store broadcast information
   such as `is_live`, `name`, `url`, and `time` (this will be used to filter the list by latest
   stream first).
   ![img_3.png](img_3.png)
@@ -155,11 +155,10 @@ the broadcast icon based on whether the stream is live.
 
 To do so:
 
-1. [Query a collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#querying-a-collection)
+1. [Query a collection](../../../resources/control-flow/backend-logic/backend-query/query-collection.md)
    called *broadcasts* on a ListView.
-2. [Order the collection](/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data#ordering-a-collection-query)
-   by *time* field.
-3. [Add the conditional visibility](/advanced-functionality/conditional-visibility#adding-conditional-visibility)
+2. Order the collection by *time* field.
+3. [Add the conditional visibility](../../../resources/ui/widgets/widget-commonalities.md#visibility)
    on an icon (that indicates if the stream is live) based on the *is_live* field.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/retrieve-list.gif?alt=media&token=1889ef3c-35b9-4aa2-8576-5f8440243538"></img>>
@@ -174,9 +173,7 @@ broadcast name as a parameter.
 To do so:
 
 1. Select the FloatingActionButton and add
-   an [action to open the bottom](/widgets-and-components/custom-components/bottom-sheet#action-to-open-the-bottom-sheet)
-   sheet (created
-   in [4.2](/widgets-and-components/widgets/base-elements/muxbroadcast#4.2-boradcastname-custom-component-bottomsheet))
+   an action to open the bottom sheet (createdin [4.2])
 
 <figure>
     ![img_8.png](img_8.png)
@@ -388,7 +385,7 @@ Now you can run the app and test your widget.
 
 :::info
 Mux Livestream can not be tested in Run Mode. Instead, you will need
-to [**test it on real device devices**](#).
+to **test it on real device devices**.
 :::
 
 ## Customizing MuxBroadcast
@@ -485,7 +482,7 @@ The live indicator appears as soon as you start live streaming (at the top left 
 To customize the live indicator:
 
 * To change its text (i.e. from LIVE to something else), open the **Live Text Style** section and
-  set the **Text**. You can also [customize the text](#) if
+  set the **Text**. You can also [customize the text](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties) if
   needed.
 * To change the indicator appearance, open the **Live Container & Icon** section and use the
   property such as **Icon**, **Icon size**, **Icon Color**, **Background Color**, and **Border

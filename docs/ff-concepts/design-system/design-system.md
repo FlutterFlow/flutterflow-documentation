@@ -49,7 +49,7 @@ To create your own design system:
 1. Open the **Theme Settings > Design System**.
 2. Click **Create Design Library**.
 3. Enter the **Design Library Project Name**.
-4. Now you can configure the [Colors](#), [Typography & Icons](#), [App Assets](#), [NavBar & AppBar](#), and [Theme Settings](#).
+4. Now you can configure the Colors, Typography & Icons, App Assets, NavBar & AppBar, and Theme Settings.
 5. To see how the app will look for the new design system, you can open it in preview mode (click the eye icon at the top right side).
 
 <div style={{
@@ -337,5 +337,5 @@ You can modify its color, background color, and stroke width. In the 'Preview' s
 
 <details>
 <summary>How do I create a new design system if I don't see a button for it?</summary>
-<p>Currently, creating a design system requires you to have a team set up, even if you're working solo. You can quickly create a team by following the instructions outlined [here](#). We are working on a solution that will allow for the creation of design systems without needing a team setup. Stay tuned for updates!</p>
+<p>Currently, creating a design system requires you to have a team set up, even if you're working solo. You can quickly create a team by following the instructions outlined [here](../../accounts-billing/subscriptions/flutterflow-for-teams.md). We are working on a solution that will allow for the creation of design systems without needing a team setup. Stay tuned for updates!</p>
 </details>
