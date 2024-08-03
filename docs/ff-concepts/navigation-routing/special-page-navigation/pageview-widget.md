@@ -312,7 +312,6 @@ Here's an example of scrolling PageView on button press:
 2. [Customize the PageView](#customizing) widget and add buttons to go to the previous and next pages.
 3. Now select any button and define the [Control Page View action](#control-page-view-action).
 
----
 
 ## Control Page View [Action]
 
@@ -364,7 +363,6 @@ Follow the steps below to add this action to any widget.
     </iframe>
 </div>
 <p></p>
----
 
 ## Video guide
 

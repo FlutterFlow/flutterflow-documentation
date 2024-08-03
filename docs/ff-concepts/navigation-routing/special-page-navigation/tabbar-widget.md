@@ -244,7 +244,6 @@ To keep the tab state alive, select the **TabBar** widget **> Properties Panel >
     </iframe>
 </div>
 
---- 
 ## Control Tab Bar [Action]
 
 By using this action, you can gain more control over the tab-switching behavior of the TabBar widget. For instance, you can enable users to move to the next or previous tab with a single tap of a button or to quickly jump to a specific tab based on their preferences.
@@ -321,7 +320,6 @@ Follow the steps below to add this action to any widget.
 </div>
 <p></p>
 
----
 
 ## Video guide
 
