@@ -2,7 +2,7 @@
 slug: color-picker
 title: Color Picker
 tags: [Layout Elements, Components]
-keywords: [Color Picker, Layout Element, Component, Widget]
+keywords: [Color Picker, Layout Element, Component, Action]
 description: Learn how to add Color Picker in your FlutterFlow app.
 ---
 import Tabs from '@theme/Tabs';
