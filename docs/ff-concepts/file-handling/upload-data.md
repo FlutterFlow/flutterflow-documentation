@@ -77,4 +77,5 @@ gsutil cors set cors.json gs://FIREBASE_PROJECT_ID.appspot.com
 If you get a message to "Authorize Cloud Shell" make sure to hit "Authorize". Once the command runs it should give you an output similar to below. If so, it worked!
 
 ![img_12.png](imgs/img_12.png)
+
 And with that you are done! PDFs and other uploaded files will now load in the web with no issues!
