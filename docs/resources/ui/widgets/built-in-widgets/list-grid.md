@@ -2,6 +2,8 @@
 title: Lists & Grids
 tags: [Layout Elements]
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 In FlutterFlow, `ListView` and `GridView` are versatile widgets designed for displaying lists and grids 
 of elements, respectively. Both are highly customizable and optimized for dynamic content displays, making them essential for any app that requires scrolling through a collection of items such as images, text, or interactive elements.
@@ -230,7 +232,20 @@ GridView provides a two-dimensional array of children. It is the widget of choic
 
 Like ListView, GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
 
+:::info
+GridView and StaggeredView are almost similar widgets in FlutterFlow, with the primary difference being that StaggeredView is typically used to create a layout similar to the Pinterest app and has fewer properties than GridView.
+:::
+
+<Tabs>
+<TabItem value="1" label="GridView" default>
 ![img_2.png](img_2.png)
+</TabItem>
+<TabItem value="2" label="StaggeredView">
+![staggeredView](imgs/staggeredView.png)
+</TabItem>
+</Tabs>
+
+
 
 Here's a quick demo to show how to add a GridView widget and modify its properties: 
 
