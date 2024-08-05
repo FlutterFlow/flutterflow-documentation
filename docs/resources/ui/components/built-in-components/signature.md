@@ -1,8 +1,8 @@
 ---
 slug: signature
 title: Signature
-tags: [Layout Elements, Components]
-keywords: [Signature, Layout Element, Component, Widget]
+tags: [Form Elements, Components]
+keywords: [Signature, Form Element, Component, Widget]
 description: Learn how to add Signature widget in your FlutterFlow app.
 ---
 

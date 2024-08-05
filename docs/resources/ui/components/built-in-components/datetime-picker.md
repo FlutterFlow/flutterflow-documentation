@@ -1,8 +1,8 @@
 ---
 slug: datetime-picker
 title: DateTime Picker
-tags: [Layout Elements, Components]
-keywords: [DateTime Picker, Layout Element, Component, Action]
+tags: [Actions, Components]
+keywords: [DateTime Picker, Component, Action]
 description: Learn how to add DateTime Picker in your FlutterFlow app.
 ---
 # DateTime Picker
