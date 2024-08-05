@@ -1,3 +1,11 @@
+---
+title: Upload/Save Media
+slug: /concepts/file-handling/upload-save-media
+sidebar_position: 2
+tags: [Media, Upload Data, File Management]
+keywords: [Media, Upload Data, Firebase Storage, Supabase Storage]
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
