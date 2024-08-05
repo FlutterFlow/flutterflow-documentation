@@ -614,6 +614,11 @@
         "type": 301
       },
       {
+        "source": "widgets-and-components/widgets-ui-elements/base-elements/muxbroadcast",
+        "destination": "/integrations/mux/getting-started",
+        "type": 301
+      },
+      {
         "source": "/widgets-and-components/widgets/base-elements/timer",
         "destination": "/resources/time-based-logic/timer-widget",
         "type": 301
@@ -1314,62 +1319,62 @@
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication",
+        "source": "/**/firebase/authentication",
         "destination": "/integrations/authentication-methods",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/initial-setup",
+        "source": "/**/firebase/authentication/initial-setup",
         "destination": "/integrations/authentication/firebase/initial-setup",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/email-sign-in",
+        "source": "/**/firebase/authentication/email-sign-in",
         "destination": "/integrations/authentication/firebase/email-login",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/password-resets",
+        "source": "/**/firebase/authentication/password-resets",
         "destination": "/integrations/authentication/firebase/password-reset",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/google-sign-in",
+        "source": "/**/firebase/authentication/google-sign-in",
         "destination": "/integrations/authentication/firebase/google-oauth-login",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/apple-sign-in",
+        "source": "/**/firebase/authentication/apple-sign-in",
         "destination": "/integrations/authentication/firebase/apple",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/facebook-sign-in",
+        "source": "/**/firebase/authentication/facebook-sign-in",
         "destination": "/integrations/authentication/firebase/facebook",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/phone-sign-in",
+        "source": "/**/firebase/authentication/phone-sign-in",
         "destination": "/integrations/authentication/firebase/phone",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/anonymous-sign-in",
+        "source": "/**/firebase/authentication/anonymous-sign-in",
         "destination": "/integrations/authentication/firebase/anonymous-login",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/jwt-token",
+        "source": "/**/firebase/authentication/jwt-token",
         "destination": "/integrations/authentication/firebase/jwt-auth",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/authentication/github",
+        "source": "/**/firebase/authentication/github",
         "destination": "/integrations/authentication/firebase/github",
         "type": 301
       },
       {
-        "source": "/data-and-backend/firebase/firestore-database-cloud-firestore",
+        "source": "/**/firebase/firestore-database-cloud-firestore",
         "destination": "/integrations/database/cloud-firestore/getting-started",
         "type": 301
       },
@@ -2091,6 +2096,11 @@
       {
         "source": "/troubleshooting/miscellaneous",
         "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/settings-and-integrations/project-setup/team",
+        "destination": "/resources/projects/how-to-collaborate-on-projects",
         "type": 301
       }
     ]
