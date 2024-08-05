@@ -63,8 +63,7 @@ To let users log out of your app, you can use the [**Logout**](../logout-action.
    domain in the Firebase console and Google cloud console.
 
     - **For Test mode**, you can open the browser console, try logging in, and
-      get the domain from the browser console. It should look like '
-      ff-debug-service-frontend-ygxkweukma-uc.a.run.app'.
+      get the domain from the browser console. It should look like `ff-debug-service-frontend-ygxkweukma-uc.a.run.app`. For *Pro* users, the above URL will also include `-pro`, such as `ff-debug-service-frontend-pro-ygxkweukma-uc.a.run.app`.
 
     - **For Run mode**, you can simply use 'app.flutterflow.io'.
 
