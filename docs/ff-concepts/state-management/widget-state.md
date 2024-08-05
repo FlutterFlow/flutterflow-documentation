@@ -1,5 +1,5 @@
 ---
-slug: concepts/state-management/widget-state
+slug: /concepts/state-management/widget-state
 title: Widget State
 sidebar_position: 1
 ---
