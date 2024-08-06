@@ -475,7 +475,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/slidablelisttile",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#convert-into-slidablelisttile",
         "type": 301
       },
       {
@@ -1135,22 +1135,22 @@
       },
       {
         "source": "/actions/actions/utilities",
-        "destination": "/",
+        "destination": "/concepts",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/upload-data",
-        "destination": "/",
+        "destination": "/concepts/file-handling/upload-data",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/upload-data/upload-save-media",
-        "destination": "/",
+        "destination": "/concepts/file-handling/upload-save-media",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/upload-data/upload-save-file",
-        "destination": "/",
+        "destination": "/concepts/file-handling/upload-save-file",
         "type": 301
       },
       {
@@ -2014,31 +2014,6 @@
         "type": 301
       },
       {
-        "source": "nan",
-        "destination": "/",
-        "type": 301
-      },
-      {
-        "source": "nan",
-        "destination": "/",
-        "type": 301
-      },
-      {
-        "source": "nan",
-        "destination": "/",
-        "type": 301
-      },
-      {
-        "source": "nan",
-        "destination": "/",
-        "type": 301
-      },
-      {
-        "source": "nan",
-        "destination": "/",
-        "type": 301
-      },
-      {
         "source": "/guides/building-custom-signature-widget-with-custom-code",
         "destination": "/",
         "type": 301
@@ -2085,7 +2060,7 @@
       },
       {
         "source": "/troubleshooting/enterprise",
-        "destination": "/",
+        "destination": "/misc/enterprise-support-policy",
         "type": 301
       },
       {
