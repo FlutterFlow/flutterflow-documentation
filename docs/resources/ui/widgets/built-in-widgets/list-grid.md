@@ -230,21 +230,9 @@ the Actions:
 ## GridView Widget
 GridView provides a two-dimensional array of children. It is the widget of choice when you need to display items in a grid pattern, like a photo gallery or a board game layout. 
 
-Like ListView, GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
+Like [ListView](#listview-widget), GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
 
-:::info
-GridView and StaggeredView are similar widgets in FlutterFlow, with the main difference being the layout and sizing of their children. GridView arranges its children in a fixed-size grid, while StaggeredView allows for variable-sized children, creating a more flexible and dynamic layout. StaggeredView is ideal for layouts with items of varying sizes. For example, it can be used to create a layout similar to the Pinterest app.
-:::
-
-<Tabs>
-<TabItem value="1" label="GridView" default>
 ![img_2.png](img_2.png)
-</TabItem>
-<TabItem value="2" label="StaggeredView">
-![staggeredView](imgs/staggeredView.png)
-</TabItem>
-</Tabs>
-
 
 
 Here's a quick demo to show how to add a GridView widget and modify its properties: 
@@ -276,6 +264,13 @@ Here's a quick demo to show how to add a GridView widget and modify its properti
 </div>
 
 <p></p>
+
+### Staggered View
+:::tip[Grid View vs Staggered View]
+**GridView** and **StaggeredView** are similar widgets in FlutterFlow, with the main difference being the layout and sizing of their children. GridView arranges its children in a fixed-size grid, while StaggeredView allows for variable-sized children, creating a more flexible and dynamic layout. StaggeredView is ideal for layouts with items of varying sizes. For example, it can be used to create a layout similar to the Pinterest app.
+
+![staggeredView](imgs/staggeredView.png)
+:::
 
 ### Advanced Functionalities
 
