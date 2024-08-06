@@ -505,12 +505,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/switch",
-        "destination": "/",
+        "destination": "/resources/forms/switch",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/switchlisttile",
-        "destination": "/",
+        "destination": "/resources/forms/switch",
         "type": 301
       },
       {
