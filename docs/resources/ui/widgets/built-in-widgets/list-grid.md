@@ -233,7 +233,7 @@ GridView provides a two-dimensional array of children. It is the widget of choic
 Like ListView, GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
 
 :::info
-GridView and StaggeredView are almost similar widgets in FlutterFlow, with the primary difference being that StaggeredView is typically used to create a layout similar to the Pinterest app and has fewer properties than GridView.
+GridView and StaggeredView are similar widgets in FlutterFlow, with the main difference being the layout and sizing of their children. GridView arranges its children in a fixed-size grid, while StaggeredView allows for variable-sized children, creating a more flexible and dynamic layout. StaggeredView is ideal for layouts with items of varying sizes. For example, it can be used to create a layout similar to the Pinterest app.
 :::
 
 <Tabs>

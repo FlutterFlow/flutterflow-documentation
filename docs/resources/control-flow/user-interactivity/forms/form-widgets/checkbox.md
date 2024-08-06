@@ -1,12 +1,17 @@
 ---
 slug: /resources/forms/checkbox
-title: Checkboxes
+title: Checkbox
 tags: [Widgets, Form Elements]
 keywords: [FlutterFlow, Checkbox, CheckboxGroup, CheckboxListTile, Multiple Choice]
 description: Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your FlutterFlow app.
 ---
-# Checkboxes
-In FlutterFlow, checkboxes are versatile input widgets used to capture binary choices from users, such as true/false or yes/no options. They are ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary checkbox widgets: [**Checkbox**](#checkbox), [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#CheckboxGroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
+# Checkbox
+In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: [**Checkbox**](#checkbox), [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
+
+:::tip[Widget State]
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+:::
+
 
 ## Checkbox
 
@@ -266,10 +271,6 @@ CheckboxListTile is ideal for use cases where you want to provide more context o
 ## CheckboxGroup
 
 The **CheckboxGroup** widget allows you to present a group of checkboxes as a single entity. This is particularly useful when you want users to select multiple options from a list. Each checkbox within the group can be checked or unchecked independently of the others.
-
-:::tip[Widget State]
-Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
-:::
 
 ### Adding CheckboxGroup
 
