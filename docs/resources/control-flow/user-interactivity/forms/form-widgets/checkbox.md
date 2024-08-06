@@ -4,7 +4,6 @@ title: Checkboxes
 tags: [Widgets, Form Elements]
 keywords: [FlutterFlow, Checkbox, CheckboxGroup, CheckboxListTile, Multiple Choice]
 description: Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your FlutterFlow app.
-sidebar_position: 3
 ---
 # Checkboxes
 In FlutterFlow, checkboxes are versatile input widgets used to capture binary choices from users, such as true/false or yes/no options. They are ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary checkbox widgets: [**Checkbox**](#checkbox), [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#CheckboxGroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.

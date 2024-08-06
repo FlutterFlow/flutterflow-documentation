@@ -1,5 +1,5 @@
 ---
-slug: choice-chips
+slug: /resources/forms/choice-chips
 title: ChoiceChips
 tags: [Form Elements]
 description: Learn how to add ChoiceChips in your FlutterFlow app.
@@ -12,7 +12,7 @@ The ChoiceChips widget allows users to select a single option from a group of ch
 You could use this widget to implement a filter feature in an e-commerce app to let users select different product attributes like size, color, or price range.
 
 :::tip[Widget State]
-Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
+Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
 :::
 
 ## Adding ChoiceChips widget
@@ -54,7 +54,7 @@ To add the ChoiceChips widget to your app:
 
 ## Trigger action on change
 
-See how to [trigger an action when a selection changes](../../../../resources/ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
+See how to [trigger an action when a selection changes](../../../../../resources/ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
 
 ## Select or clear all choices [Action]
 
@@ -104,7 +104,7 @@ To allow multiselect, select the **ChoiceChips** widget, move to the properties 
 
 Sometimes, you may want to present the choices in a read-only mode, preventing users from making any changes.
 
-To do so, move to the **Properties Panel** **>** turn on **Disable >** click **Unset,** and set the [**Conditions**](../../../../resources/functions/conditional-logic). This can be the [**Single Condition**](../../../../resources/functions/conditional-logic#single-condition) or [**Combine Conditions**](../../../../resources/functions/conditional-logic#multiple-conditions-andor) based on your requirement. **Note:** The ChoiceChips widget will be disabled only when condition(s) is true.
+To do so, move to the **Properties Panel** **>** turn on **Disable >** click **Unset,** and set the [**Conditions**](../../../../../resources/functions/conditional-logic). This can be the [**Single Condition**](../../../../../resources/functions/conditional-logic#single-condition) or [**Combine Conditions**](../../../../../resources/functions/conditional-logic#multiple-conditions-andor) based on your requirement. **Note:** The ChoiceChips widget will be disabled only when condition(s) is true.
 
 <div style={{
     position: 'relative',
@@ -171,7 +171,7 @@ When you have chips in multiple rows, you can align them using the **Alignment**
 
 <div style={{
     position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    paddingBottom: 'calc(45.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
@@ -234,4 +234,4 @@ Various properties under the **Selected Chip Style** and **Unselected Chip Style
 
 7. Similarly, you can customize the properties under the **Unselected Chip Style**.
 
-![Customizing unselected chip style](imgs/customize-unselected-choice.png)
+![Customizing unselected chip style](../../imgs/customize-unselected-choice.png)

@@ -4,7 +4,6 @@ title: Dropdown
 tags: [Widget, Dropdown, Form]
 keywords: [FlutterFlow, Dropdown, form input, user interface, mobile app development, Flutter widget, selection menu]
 description: Learn how to add Dropdown widget in your FlutterFlow app.
-sidebar_position: 1
 ---
 
 # Dropdown
