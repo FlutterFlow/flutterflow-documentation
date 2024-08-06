@@ -495,12 +495,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/checkbox",
-        "destination": "/resources/forms/checkbox-group",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/checkboxlisttile",
-        "destination": "/",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
@@ -720,7 +720,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/checkboxgroup",
-        "destination": "/resources/forms/checkbox-group",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
