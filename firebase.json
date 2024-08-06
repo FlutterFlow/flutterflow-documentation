@@ -380,7 +380,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/flippablecard",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/flippable-card",
         "type": 301
       },
       {
@@ -495,22 +495,22 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/checkbox",
-        "destination": "/resources/forms/checkbox-group",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/checkboxlisttile",
-        "destination": "/",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/switch",
-        "destination": "/",
+        "destination": "/resources/forms/switch",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/switchlisttile",
-        "destination": "/",
+        "destination": "/resources/forms/switch",
         "type": 301
       },
       {
@@ -705,7 +705,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/choicechips",
-        "destination": "/resources/ui/components/built-in-components/choice-chips",
+        "destination": "/resources/forms/choice-chips",
         "type": 301
       },
       {
@@ -720,7 +720,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/checkboxgroup",
-        "destination": "/resources/forms/checkbox-group",
+        "destination": "/resources/forms/checkbox",
         "type": 301
       },
       {
@@ -975,12 +975,12 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/date-time-picker",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions#datetime-picker",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/color-picker",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions#color-picker",
         "type": 301
       },
       {
