@@ -1,11 +1,11 @@
 ---
 slug: /resources/forms/switch
-title: Switches
+title: Switch
 tags: [Widgets, Form Elements]
 keywords: [FlutterFlow, Switch, SwitchListTile]
 description: Learn how to add Switch and SwitchListTile widget in your FlutterFlow app.
 ---
-# Switches
+# Switch
 
 In FlutterFlow, switch widgets provide an intuitive way for users to toggle between two states, such as on/off or enabled/disabled. They are useful for settings, preferences, and other scenarios where a simple binary choice is required. FlutterFlow offers two primary switch widgets: [**Switch**](#switch) and [**SwitchListTile**](#switchlisttile). Each of these widgets provides unique features and use cases, making it easy to incorporate toggle functionality into your app's interface.
 
