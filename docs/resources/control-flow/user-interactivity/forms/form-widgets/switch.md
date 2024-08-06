@@ -5,9 +5,9 @@ tags: [Widgets, Form Elements]
 keywords: [FlutterFlow, Switch, SwitchListTile]
 description: Learn how to add Switch and SwitchListTile widget in your FlutterFlow app.
 ---
-# Switch
+# Switch Widgets
 
-In FlutterFlow, switch widgets provide an intuitive way for users to toggle between two states, such as on/off or enabled/disabled. They are useful for settings, preferences, and other scenarios where a simple binary choice is required. FlutterFlow offers two primary switch widgets: [**Switch**](#switch) and [**SwitchListTile**](#switchlisttile). Each of these widgets provides unique features and use cases, making it easy to incorporate toggle functionality into your app's interface.
+In FlutterFlow, **Switch** widgets provide an intuitive way for users to toggle between two states, such as on/off or enabled/disabled. They are useful for settings, preferences, and other scenarios where a simple binary choice is required. FlutterFlow offers two primary switch widgets: [**Switch**](#switch) and [**SwitchListTile**](#switchlisttile). Each of these widgets provides unique features and use cases, making it easy to incorporate toggle functionality into your app's interface.
 
 ## Switch
 
@@ -196,7 +196,7 @@ To disable a switch, move to the **Properties Panel** **>** turn on the **Switch
 
 ## SwitchListTile
 
-The **SwitchListTile** widget combines the functionality of a switch with a list tile, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element. 
+The **SwitchListTile** widget combines the functionality of a switch with a **[ListTile](../../../../ui/widgets/built-in-widgets/list-grid.md#listtile-widget)**, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element. 
 
 SwitchListTile is ideal for use cases where you want to provide more context or descriptive text alongside the switch, such as in a settings menu or a form with detailed options.
 
@@ -321,11 +321,13 @@ To make the switch appear before the title:
 2. Move to the Properties panel and scroll down to the **Switch List Tile Properties** section.
 3. Scroll down and checkmark the **Leading** property (click on it).
 
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
-    width: '100%'}}>
+    width: '100%'
+}}>
     <iframe 
         src="https://demo.arcade.software/l9WoMbxvJ5QOzEguXUw1?embed&show_copy_link=true"
         title=""

@@ -975,12 +975,12 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/date-time-picker",
-        "destination": "/resources/ui/components/built-in-components/date-time-picker",
+        "destination": "/resources/functions/utility-actions#datetime-picker",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/color-picker",
-        "destination": "/resources/ui/components/built-in-components/color-picker",
+        "destination": "/resources/functions/utility-actions#color-picker",
         "type": 301
       },
       {

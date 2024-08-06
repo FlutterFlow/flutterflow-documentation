@@ -303,7 +303,7 @@ This is helpful in assessing spacing and alignment without the need to remove va
 
 ## Trigger action on selection change
 
-Here, you will see how to trigger an action when the selection changes for any Form widget such as Dropdown, RadioButton, ChoiseChips, Slider, and RatingBar.
+Here, you will see how to trigger an action when the selection changes for any Form widget such as Dropdown, RadioButton, ChoiceChips, Slider, and RatingBar.
 
 :::info
 To simplify, we've used the Dropdown widget as an example. However, the same instructions apply to other Form widgets as well.
