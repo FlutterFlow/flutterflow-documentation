@@ -1090,7 +1090,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/dismiss-custom-dialog",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/dismiss-custom-dialog",
         "type": 301
       },
       {
