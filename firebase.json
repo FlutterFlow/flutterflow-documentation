@@ -285,7 +285,7 @@
       },
       {
         "source": "/settings-and-integrations/integrations/onesignal",
-        "destination": "/integrations/notifications/one-signal",
+        "destination": "/concepts/alerts-notification/one-signal",
         "type": 301
       },
       {
@@ -1295,7 +1295,7 @@
       },
       {
         "source": "/actions/actions/integrations/onesignal",
-        "destination": "/integrations/notifications/one-signal",
+        "destination": "/concepts/alerts-notification/one-signal",
         "type": 301
       },
       {
