@@ -1085,7 +1085,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/alert-dialog",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/alert-dialog",
         "type": 301
       },
       {
