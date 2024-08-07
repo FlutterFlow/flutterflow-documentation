@@ -570,7 +570,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/pdfviewer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/pdf-viewer",
         "type": 301
       },
       {
