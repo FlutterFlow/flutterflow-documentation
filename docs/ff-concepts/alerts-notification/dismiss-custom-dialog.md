@@ -1,7 +1,7 @@
 ---
 title: Dismiss Custom Dialog
 slug: /concepts/alerts-notification/dismiss-custom-dialog
-sidebar_position: 2
+sidebar_position: 1
 tags: [Actions, Alerts & Notifications]
 keywords: [FlutterFlow, Actions, Alerts & Notifications, Dismiss Custom Dialog]
 ---

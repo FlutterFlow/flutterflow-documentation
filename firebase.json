@@ -190,7 +190,7 @@
       },
       {
         "source": "/settings-and-integrations/app-settings/push-notifications",
-        "destination": "/integrations/push-notifications",
+        "destination": "/concepts/alerts-notification/push-notifications",
         "type": 301
       },
       {
@@ -1125,7 +1125,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/trigger-push-notification-action",
-        "destination": "/integrations/push-notifications",
+        "destination": "/concepts/alerts-notification/push-notifications",
         "type": 301
       },
       {
