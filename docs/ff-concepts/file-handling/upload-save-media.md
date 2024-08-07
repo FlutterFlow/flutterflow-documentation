@@ -1,7 +1,7 @@
 ---
 title: Upload/Save Media
 slug: /concepts/file-handling/upload-save-media
-sidebar_position: 2
+sidebar_position: 5
 tags: [Media, Upload Data, File Management]
 keywords: [Media, Upload Data, Firebase Storage, Supabase Storage]
 ---

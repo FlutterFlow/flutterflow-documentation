@@ -520,7 +520,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/audioplayer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/audio-player",
         "type": 301
       },
       {
@@ -1115,12 +1115,12 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/play-sound",
-        "destination": "/",
+        "destination": "/concepts/file-handling/play-stop-sound",
         "type": 301
       },
       {
         "source": "/actions/actions/alerts-notifications/stop-sound",
-        "destination": "/",
+        "destination": "/concepts/file-handling/play-stop-sound",
         "type": 301
       },
       {
@@ -1185,7 +1185,7 @@
       },
       {
         "source": "/actions/actions/utilities/audio-recording",
-        "destination": "/",
+        "destination": "/concepts/file-handling/audio-recording",
         "type": 301
       },
       {
