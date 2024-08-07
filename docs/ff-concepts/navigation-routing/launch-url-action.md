@@ -3,7 +3,7 @@ slug: /concepts/navigation/launch-url
 title: Launch URL [Action]
 description: Learn how to use the Launch URL Action in FlutterFlow to open URLs with supporting apps.
 tags: [Launch URL, Action, Concepts]
-sidebar_position: 7
+sidebar_position: 9
 keywords: [FlutterFlow, Launch URL, Action, Concepts]
 ---
 

@@ -740,7 +740,7 @@
       },
       {
         "source": "/widgets-and-components/custom-components/bottom-sheet",
-        "destination": "/",
+        "destination": "/concepts/navigation/bottom-sheet",
         "type": 301
       },
       {
@@ -970,7 +970,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/bottom-sheet",
-        "destination": "/",
+        "destination": "/concepts/navigation/bottom-sheet",
         "type": 301
       },
       {

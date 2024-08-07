@@ -3,7 +3,7 @@ slug: /concepts/navigation/share-action
 title: Share [Action]
 description: Learn how to use the Share Action in your FlutterFlow app to share content.
 tags: [Share Action, Navigation, Concepts]
-sidebar_position: 6
+sidebar_position: 8
 keywords: [FlutterFlow, Share Action, Navigation, Concepts]
 ---
 
