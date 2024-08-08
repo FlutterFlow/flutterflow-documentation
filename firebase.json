@@ -1180,7 +1180,7 @@
       },
       {
         "source": "/actions/actions/utilities/biometric-verification",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions#biometric-verification",
         "type": 301
       },
       {
