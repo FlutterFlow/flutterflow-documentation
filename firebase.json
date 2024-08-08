@@ -1105,7 +1105,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/haptic-feedback",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/haptic-feedback",
         "type": 301
       },
       {
