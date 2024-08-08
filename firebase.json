@@ -880,12 +880,12 @@
       },
       {
         "source": "/actions/actions/backend-database/supabase-authentication/log-in",
-        "destination": "/integrations/authentication/supabase/email-authentication",
+        "destination": "/integrations/authentication/supabase/email",
         "type": 301
       },
       {
         "source": "/actions/actions/backend-database/supabase-authentication/create-account",
-        "destination": "/integrations/authentication/supabase/email-authentication",
+        "destination": "/integrations/authentication/supabase/email",
         "type": 301
       },
       {
@@ -1450,7 +1450,7 @@
       },
       {
         "source": "/data-and-backend/supabase/supabase-authentication/email-supabase",
-        "destination": "/integrations/authentication/supabase/email-authentication",
+        "destination": "/integrations/authentication/supabase/email",
         "type": 301
       },
       {
