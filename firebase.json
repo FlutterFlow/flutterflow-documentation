@@ -795,7 +795,7 @@
       },
       {
         "source": "/actions/actions",
-        "destination": "/resources/functions/action-blocks",
+        "destination": "/resources/functions/action-flow-editor",
         "type": 301
       },
       {
