@@ -40,7 +40,7 @@ Here are the steps to send push notifications:
 
 1. [Enabling push notification](#enabling-push-notification)
 2. [Only for iOS: Configuring iOS app](#only-for-ios-configuring-ios-app)
-3. [Sending push notifications](#3-sending-push-notifications)
+3. [Sending push notifications](#sending-push-notifications)
 
 ### Enabling push notification
 

@@ -130,7 +130,7 @@ Changing the app language manually includes the following steps:
 
 1. [Building a page](#1-building-a-page)
 2. [Translating app content](#2-translating-app-content)
-3. [Adding action to change the language](#3-adding-action-to-change-the-language)
+3. [Adding action to change the language](#3-add-set-app-language-action)
 
 ### 1. Building a page
 
@@ -223,8 +223,8 @@ Managing your app's text translation includes updating the translated text (prod
 
 There are two ways you can manage the app text translation:
 
-- [Inside Language Settings](#1-inside-language-settings)
-- [Inside App Builder](#2-inside-app-builder)
+- [Inside Language Settings](#inside-language-settings)
+- [Inside App Builder](#inside-app-builder)
 
 ### Inside Language Settings
 
@@ -270,8 +270,8 @@ FlutterFlow allows you to manage the translation for predefined messages, such a
 
 There are two types of messages you can translate:
 
-- [iOS Permission Messages](#1-ios-permission-messages)
-- [Preset Snackbar Messages](#2-preset-snackbar-messages)
+- [iOS Permission Messages](#ios-permission-messages)
+- [Preset Snackbar Messages](#preset-snackbar-messages)
 
 ### iOS Permission Messages
 
@@ -390,8 +390,8 @@ While building a multi-language app, sometimes you may need language-related dat
 
 In FlutterFlow, you can get the following two types of language-related data:
 
-- [Current language code](#1-current-language-code)
-- [Language dependent text](#2-language-dependent-text)
+- [Current language code](#current-language-code)
+- [Language dependent text](#language-dependent-text)
 
 ### Current language code
 
