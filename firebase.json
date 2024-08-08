@@ -115,17 +115,17 @@
       },
       {
         "source": "/settings-and-integrations/general-settings/navbar-and-appbar/navbar",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements/#nav-bar",
         "type": 301
       },
       {
         "source": "/settings-and-integrations/general-settings/navbar-and-appbar/appbar",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements/#appbar",
         "type": 301
       },
       {
         "source": "/settings-and-integrations/general-settings/walkthroughs",
-        "destination": "/resources/projects/settings/project-setup",
+        "destination": "/resources/projects/settings/project-setup/#walkthroughs",
         "type": 301
       },
       {
@@ -135,7 +135,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/collaboration",
-        "destination": "/resources/projects/how-to-collaborate-on-projects",
+        "destination": "/resources/projects/collaboration",
         "type": 301
       },
       {
@@ -1080,7 +1080,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/alert-dialog",
         "type": 301
       },
       {
@@ -1095,12 +1095,12 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/show-snack-bar",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements/#snackbar",
         "type": 301
       },
       {
         "source": "/actions/actions/alerts-notifications/hide-snackbar",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements/#snackbar",
         "type": 301
       },
       {
@@ -1110,7 +1110,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/request-permission",
-        "destination": "/resources/projects/settings/project-setup",
+        "destination": "/resources/projects/settings/project-setup/#permissions",
         "type": 301
       },
       {
@@ -1130,7 +1130,7 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/update-app-badge-count-ios-only",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#update-app-badge-count-ios-only",
         "type": 301
       },
       {
@@ -2075,7 +2075,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/team",
-        "destination": "/resources/projects/how-to-collaborate-on-projects",
+        "destination": "/resources/projects/collaboration",
         "type": 301
       }
     ]
