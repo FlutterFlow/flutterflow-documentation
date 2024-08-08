@@ -190,7 +190,7 @@
       },
       {
         "source": "/settings-and-integrations/app-settings/push-notifications",
-        "destination": "/integrations/push-notifications",
+        "destination": "/concepts/alerts-notification/push-notifications",
         "type": 301
       },
       {
@@ -285,7 +285,7 @@
       },
       {
         "source": "/settings-and-integrations/integrations/onesignal",
-        "destination": "/integrations/notifications/one-signal",
+        "destination": "/concepts/alerts-notification/one-signal",
         "type": 301
       },
       {
@@ -520,7 +520,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/audioplayer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/audio-player",
         "type": 301
       },
       {
@@ -570,7 +570,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/pdfviewer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/pdf-viewer",
         "type": 301
       },
       {
@@ -740,7 +740,7 @@
       },
       {
         "source": "/widgets-and-components/custom-components/bottom-sheet",
-        "destination": "/",
+        "destination": "/concepts/navigation/bottom-sheet",
         "type": 301
       },
       {
@@ -795,7 +795,7 @@
       },
       {
         "source": "/actions/actions",
-        "destination": "/resources/functions/action-blocks",
+        "destination": "/resources/functions/action-flow-editor",
         "type": 301
       },
       {
@@ -970,7 +970,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/bottom-sheet",
-        "destination": "/",
+        "destination": "/concepts/navigation/bottom-sheet",
         "type": 301
       },
       {
@@ -1085,12 +1085,12 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/alert-dialog",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/alert-dialog",
         "type": 301
       },
       {
         "source": "/actions/actions/alerts-notifications/dismiss-custom-dialog",
-        "destination": "/",
+        "destination": "/concepts/alerts-notification/dismiss-custom-dialog",
         "type": 301
       },
       {
@@ -1115,17 +1115,17 @@
       },
       {
         "source": "/actions/actions/alerts-notifications/play-sound",
-        "destination": "/",
+        "destination": "/concepts/file-handling/play-stop-sound",
         "type": 301
       },
       {
         "source": "/actions/actions/alerts-notifications/stop-sound",
-        "destination": "/",
+        "destination": "/concepts/file-handling/play-stop-sound",
         "type": 301
       },
       {
         "source": "/actions/actions/alerts-notifications/trigger-push-notification-action",
-        "destination": "/integrations/push-notifications",
+        "destination": "/concepts/alerts-notification/push-notifications",
         "type": 301
       },
       {
@@ -1180,12 +1180,12 @@
       },
       {
         "source": "/actions/actions/utilities/biometric-verification",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions#biometric-verification",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/audio-recording",
-        "destination": "/",
+        "destination": "/concepts/file-handling/audio-recording",
         "type": 301
       },
       {
@@ -1295,7 +1295,7 @@
       },
       {
         "source": "/actions/actions/integrations/onesignal",
-        "destination": "/integrations/notifications/one-signal",
+        "destination": "/concepts/alerts-notification/one-signal",
         "type": 301
       },
       {

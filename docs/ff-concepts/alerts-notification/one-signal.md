@@ -1,11 +1,11 @@
 ---
-slug: /integrations/notifications/one-signal
-title: OneSignal Notifications
-description: Learn how to get started with OneSignal in your FlutterFlow app for push notifications.
-tags: [OneSignal, Notifications, Integration]
-sidebar_position: 1
-keywords: [FlutterFlow, OneSignal, Notifications, Integration]
+title: OneSignal
+slug: /concepts/alerts-notification/one-signal
+sidebar_position: 3
+tags: [Actions, Alerts & Notifications, Integration]
+keywords: [FlutterFlow, Actions, Alerts & Notifications, OneSignal]
 ---
+
 
 # OneSignal
 
@@ -13,7 +13,7 @@ Integrating OneSignal lets you send emails and SMS (text messages) to your users
 get more engagement, make more sales, and keep users coming back. After you set up OneSignal, you'll
 be able to easily add users to or remove them from OneSignal's subscription list.
 
-![img.png](img.png)
+![img.png](imgs/os-img.png)
 
 :::note[Prerequisites]
 - Before you begin, make sure the project is on **Blaze plan** on Firebase.
@@ -28,7 +28,7 @@ Here's a detailed, step-by-step guide to help you integrate OneSignal:
 1. To get started, you need an app created on OneSignal. You can create one from
    the [dashboard](https://dashboard.onesignal.com/apps).
 
-![img_1.png](img_1.png)
+![img_1.png](imgs/os-img_1.png)
 
 1. After creating your app, activate the services you need, like SMS and Email. Go to your app
    settings by clicking **App > Settings > Platforms** and then select **Activate** for the services
@@ -106,10 +106,10 @@ com/embed/f06e63054a2b4c94883994b61182b7d2?sid=647d815a-d53d-41dc-a569-8cc3186eb
 
 You can find out if the user was successfuly added to the subscription by navigating to **OneSignal dashboard > App > Audience > Subscriptions**.
 
-![img_2.png](img_2.png)
+![img_2.png](imgs/os-img_2.png)
 
 :::info[OneSignal for Supabase Users]
-Currently, our OneSignal integration supports only Firebase authentication. If you want to use [**Supabase authentication**](../../authentication/supabase-auth/initial-setup.md), you may need to use [**custom code**](../../../ff-concepts/adding-customization/custom-code.md) to notify your users.
+Currently, our OneSignal integration supports only Firebase authentication. If you want to use [**Supabase authentication**](../../ff-integrations/authentication/supabase-auth/initial-setup.md), you may need to use [**custom code**](../../ff-concepts/adding-customization/custom-code.md) to notify your users.
 :::
 
 

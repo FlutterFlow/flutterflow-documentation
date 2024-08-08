@@ -228,8 +228,8 @@ Here's an example of how you can use the *Authenticated User* object to filter t
 
 Once you log in via the JWT token, the *Authenticated User* object is available. This object contains the fields (i.e., logged-in user's data), especially **User Reference (users ref),** that you may need to provide while adding or retrieving Firestore documents.
 
-When such user reference is stored inside the Firestore documents, you can use them inside the **Single** or **Multiple Recipient** while defining the **Audience** inside the [Trigger Push Notification](../../notifications/push-notifications/getting-started.md#trigger-push-notification) action, as shown in the image below:
+When such user reference is stored inside the Firestore documents, you can use them inside the **Single** or **Multiple Recipient** while defining the **Audience** inside the [Trigger Push Notification](../../../ff-concepts/alerts-notification/push-notifications.md#trigger-push-notification) action, as shown in the image below:
 
 ![send-push-notification-to-users-created-via-JWT-token.png](../imgs/send-push-notification-to-users-created-via-JWT-token.png)
 
-To learn more about how to use user references for sending push notifications, please check the [push notification](../../notifications/push-notifications/getting-started.md) section.
+To learn more about how to use user references for sending push notifications, please check the [push notification](../../../ff-concepts/alerts-notification/push-notifications.md) section.

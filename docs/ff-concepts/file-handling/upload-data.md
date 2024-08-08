@@ -1,7 +1,7 @@
 ---
 title: Upload Data
 slug: /concepts/file-handling/upload-data
-sidebar_position: 1
+sidebar_position: 3
 tags: [Media, Upload Data]
 keywords: [Media, Upload Data, Firebase Storage, Supabase Storage]
 ---

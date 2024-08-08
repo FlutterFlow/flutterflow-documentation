@@ -1,11 +1,11 @@
 ---
-slug: /integrations/push-notifications
 title: Push Notifications
-description: Learn how to enable and use push notifications in your FlutterFlow app, including instant and scheduled notifications.
-tags: [Push Notifications, Firebase Cloud Messaging, Integration]
-sidebar_position: 1
-keywords: [FlutterFlow, Push Notifications, Firebase Cloud Messaging, Integration]
+slug: /concepts/alerts-notification/push-notifications
+sidebar_position: 2
+tags: [Actions, Alerts & Notifications, Integration]
+keywords: [FlutterFlow, Actions, Alerts & Notifications, Push Notifications]
 ---
+
 
 # Push Notifications
 
@@ -21,7 +21,7 @@ FlutterFlow uses [**Firebase Cloud Messaging**](https://firebase.google.com/docs
 Before getting started with this section, ensure you have:
 
 * Completed all steps in the 
-[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
+[**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 * Upgraded to a [**Blaze plan**](https://firebase.google.com/pricing) for your Firebase project.
 :::
 
@@ -48,9 +48,7 @@ Here are the steps to send push notifications:
 **Please note, push notifications will not work in these scenarios:**
 
 * Push notifications will not work on an iOS simulator. To test you will need to use a real device.
-* Push notifications will not be delivered to users who are logged out of your app. To send push 
-  notifications to users who are not logged in, consider implementing [**Anonymous Firebase 
-  Login**](../../authentication/firebase-auth/anonymous-login.md) within your app
+* Push notifications will not be delivered to users who are logged out of your app. To send push notifications to users who are not logged in, consider implementing [**Anonymous Firebase Login**](../../ff-integrations/authentication/firebase-auth/anonymous-login.md) within your app
 * Push notifications will not work if you have the app open on your device.
 :::
 
@@ -61,7 +59,7 @@ To enable push notifications:
 2. Now, click on the **Deploy** button. This will create and deploy the *Cloud Functions* in your 
    Firebase project that are necessary for push notifications to work.
 
-![img.png](img.png)
+![img.png](imgs/img.png)
 
 ### Only for iOS: Configuring iOS app
 
@@ -118,7 +116,7 @@ You must add an Identifier to be able to send the push notifications to the iOS 
 
 To add an Identifier:
 
-1. From your *Apple developer account* open the [**Identifiers**](https://developer.apple.com/account/resources/identifiers/list)section.
+1. From your *Apple developer account* open the [**Identifiers**](https://developer.apple.com/account/resources/identifiers/list) section.
 
 2. Click on the **(+)** button on the right side of the **Identifiers** label.
 
@@ -145,7 +143,7 @@ Continue with this step only if you have an APP or Bundle ID created in your dev
 
 Add the 'Push Notifications' capability to your existing App ID in order to avoid any issues when you re-deploy your app. Here's how you do it:
 
-1. From your *Apple developer account,* open the [**Identifiers**](https://developer.apple.com/account/resources/identifiers/list)section.
+1. From your *Apple developer account,* open the [**Identifiers**](https://developer.apple.com/account/resources/identifiers/list) section.
 
 2. Open the identifier with your existing APP ID.
 
@@ -226,20 +224,20 @@ The document reference of the user is required to send a push notification to a 
 Normally, you would obtain the user document reference from the Firestore document, where a field like 'created_by' stores the document reference of the post creator. However, for the sake of simplicity, let's assume that we are storing this reference in an app state variable, which looks like this:
 
 <figure>
-    ![img_1.png](img_1.png)
+    ![img_1.png](imgs/img_1.png)
   <figcaption class="centered-caption">User document reference in app state variable</figcaption>
 </figure>
 
 If you need to send push notifications to multiple users, consider a scenario where you want to notify all users who liked a post when someone comments on it. You can retrieve the list or array of user document references from the Firestore document or any app state variable within your app. Here's what a list of document references in an app state variable might look like:
 
 <figure>
-    ![img_2.png](img_2.png)
+    ![img_2.png](imgs/img_2.png)
   <figcaption class="centered-caption">Multiple user document references in app state variable</figcaption>
 </figure>
 
 :::info
 Learn more about working with 
-[**App State variables**](../../../resources/data-representation/app-state.md).
+[**App State variables**](../../resources/data-representation/app-state.md).
 :::
 
 ### 2. Trigger Push Notification [Action]

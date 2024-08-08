@@ -187,3 +187,80 @@ Here's an example of adding the date time picker action and displaying the value
     </iframe>
 </div>
 <p></p>
+
+
+## Biometric Verification
+
+Most modern devices come with biometric sensors to strengthen the device's security. Using this action, you can leverage on-device authentication such as fingerprint or face recognition to protect your app's privacy.
+
+When this action triggers, it checks for the enrolled biometric. If it finds any, it asks users to verify their identity. If the biometric authentication fails, it opens up the screen lock option (e.g., Pattern, PIN, Password, Swipe, etc.) as a fallback method to authenticate users.
+
+A common use case of this action is to allow only the intended user to open an app that involves financial or confidential information, such as an online payment app, stock trading app, or online storage app.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/nzMmo0lGgvZ4LybXBSy2?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Biometric Verification [Action]
+
+Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to define the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on the **+ Add Action**.
+4. On the right side, search and select the **Biometric Verification** (under *Utilities*) action.
+    1. By default, if the biometric verification fails, it opens the on-device credentials such as Pattern and PIN. This helps in a case where the biometric sensor can't recognize a valid fingerprint or face. However, you can disable this behavior and only allow biometric verification. To do so, turn on the **Allow biometric only** toggle.
+    2. Enter the **Biometric Reason text**. This message is displayed inside the biometric recognition UI.
+    3. Provide the **Action Output Variable Name**. The status of biometric verification, True (pass) or False(fail), is stored in this variable. You can use this variable to decide the following action. For example, showing a success or failure message.
+    4. To show a success or failure message, **Add Conditional** action by clicking on the + button inside the already added action.
+        1. Click on the **UNSET**, select **Action Output**, and select the action output variable name.
+        2. Under the **TRUE** section, add an action to [show the snackbar](../../../resources/ui/pages/page-elements.md#snackbar) with a success message.
+        3. Similarly, add the failure message under the **FALSE** section.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/87E8n4OAqZWl6pVqMeyp?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
