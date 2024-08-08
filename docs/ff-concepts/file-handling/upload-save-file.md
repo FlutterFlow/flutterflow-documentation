@@ -1,5 +1,5 @@
 ---
-title: Upload/Save File
+title: Upload or Save File
 slug: /concepts/file-handling/upload-save-file
 sidebar_position: 4
 tags: [Media, Upload Data, File Management]
@@ -11,7 +11,7 @@ keywords: [Media, Upload Data, Firebase Storage, Supabase Storage]
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Upload/Save File
+# Upload or Save File
 
 Using this action, you can upload any type of file to your app (e.g., PDF, MP3, etc.). You can store the file on [Firebase](https://firebase.google.com/docs/storage), [Supabase](https://supabase.com/docs/guides/storage) storage, or your own server using an API. Once uploaded, you can access the file through its generated URL. This URL can be used to display the content immediately or store it in a database for future retrieval.
 
