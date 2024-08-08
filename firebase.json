@@ -1010,7 +1010,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/launch-map",
-        "destination": "/integrations/google-maps/google-maps-widget",
+        "destination": "/integrations/maps/launch-map",
         "type": 301
       },
       {
