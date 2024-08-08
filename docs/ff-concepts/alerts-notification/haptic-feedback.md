@@ -8,7 +8,7 @@ keywords: [FlutterFlow, Actions, Alerts & Notifications, Haptic Feedback]
 # Haptic Feedback
 Using this action, you can vibrate the user's device. Typically this is used to draw users' attention to the action they have performed. For example, vibrating the user's device on setting the alarm.
 
-## Types of haptic feedback
+## Types of Haptic Feedback
 
 Depending on the action a user has performed (e.g., bookmark an item, on-off flashlight), you can set the different vibration intensity and duration types.
 

@@ -1,12 +1,12 @@
 ---
-title: Clear/Delete Media
+title: Clear or Delete Media
 slug: /concepts/file-handling/clear-delete-media
 sidebar_position: 6
 tags: [Media, Action]
 keywords: [Media, Clear Data, Delete Data Firebase Storage, Supabase Storage]
 ---
 
-# Clear/Delete Media
+# Clear or Delete Media
 
 The Clear and Delete Media actions provide essential functionalities for managing media files efficiently.
 

@@ -1,5 +1,5 @@
 ---
-title: Upload/Save Media
+title: Upload or Save Media
 slug: /concepts/file-handling/upload-save-media
 sidebar_position: 5
 tags: [Media, Upload Data, File Management]
@@ -10,7 +10,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Upload/Save Media
+# Upload or Save Media
 
 This action allows you to easily upload a photo or video to your app. You have the flexibility to store the file on [Firebase](https://firebase.google.com/docs/storage), [Supabase](https://supabase.com/docs/guides/storage) storage, or your own server using an API. Once uploaded, you can access the file through its generated URL. This URL can be used to display the content immediately or store it in a database for future retrieval.
 
