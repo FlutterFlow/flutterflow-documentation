@@ -47,7 +47,10 @@ Below are the types of Bottom Sheet actions:
 
 Follow the steps below to add an action that opens the bottom sheet:
 
-1. Create a bottom sheet [component](../../resources/ui/components/overview.md). Tip: you can also create one from the 'BottomSheet' templates.
+1. First, create a bottom sheet [component](../../resources/ui/components/overview.md).
+:::tip
+You can also create one from the 'BottomSheet' [**templates**](../../resources/ui/components/custom-components/getting-started.md#creating-a-component-from-a-popular-template).
+:::
     
 <div style={{
     position: 'relative',

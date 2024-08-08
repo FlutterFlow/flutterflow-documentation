@@ -25,7 +25,7 @@ Here's how you can add the AudioPlayer widget to your project:
     3. **Disabled, pause**: This stops the audio player as soon as the app goes in the background.
 
 :::info
-By default, every AudioPlayer widget added to the project will show sample audio from the internet.
+By default, every AudioPlayer widget added to the project will play a sample audio file from a network URL.
 :::
 
 <div style={{
