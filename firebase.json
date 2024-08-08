@@ -1079,6 +1079,11 @@
         "type": 301
       },
       {
+        "source": "/concepts/alerts-notification/",
+        "destination": "/concepts/alerts-notification/alert-dialog",
+        "type": 301
+      },
+      {
         "source": "/actions/actions/alerts-notifications",
         "destination": "/concepts/alerts-notification/alert-dialog",
         "type": 301
