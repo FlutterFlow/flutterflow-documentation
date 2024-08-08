@@ -1455,7 +1455,7 @@
       },
       {
         "source": "/data-and-backend/supabase/supabase-authentication/google-sign-in-supabase",
-        "destination": "/",
+        "destination": "/integrations/authentication/supabase/google",
         "type": 301
       },
       {
