@@ -1155,7 +1155,7 @@
       },
       {
         "source": "/actions/actions/utilities/delete-data",
-        "destination": "/",
+        "destination": "/concepts/file-handling/clear-delete-media#delete-data",
         "type": 301
       },
       {
@@ -1190,7 +1190,7 @@
       },
       {
         "source": "/actions/actions/utilities/clear-uploaded-data",
-        "destination": "/",
+        "destination": "/concepts/file-handling/clear-delete-media#clear-uploaded-data",
         "type": 301
       },
       {
