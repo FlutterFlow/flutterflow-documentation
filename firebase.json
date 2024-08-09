@@ -485,7 +485,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/youtubeplayer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/youtube-player",
         "type": 301
       },
       {
