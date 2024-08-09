@@ -281,8 +281,15 @@ If you encounter an error with push notifications, specifically a cloud function
 
 To fix this issue, manually grant the Editor role to the default service account used by your project. You can do this by visiting the GCP IAM page and assigning the Editor role to the following service account:
 
-* For App Engine (Gen 1): `{project-id}@appspot.gserviceaccount.com`
-* For Compute Engine (Gen 2): `{project-number}-compute@developer.gserviceaccount.com`
+- For App Engine (Gen 1): `{firebase-project-id}@appspot.gserviceaccount.com`
+- For Compute Engine (Gen 2): `{project-number}-compute@developer.gserviceaccount.com`
+
+![pn-faq-img-1](imgs/pn-faq-img-1.png)
+
+Also, ensure that these principals (emails) and their roles are present in the permissions tabs in *App Engine Default service account*, *Default compute service account*, and *firebase-adminsdk*. You can do this by visiting the GCP Service Accounts page, clicking on each service account email, and granting access to these principals in the permissions tab.
+
+Below is a sample image for App Engine Default service account.
+![pn-faq-img-2](imgs/pn-faq-img-2.png)
 </details>
 
 
