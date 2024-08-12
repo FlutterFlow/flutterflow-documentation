@@ -1,7 +1,7 @@
 ---
 title: YoutubePlayer
 slug: /concepts/file-handling/youtube-player
-sidebar_position: 0
+sidebar_position: 1
 tags: [Media, Widget]
 keywords: [Media, YoutubePlayer, Play YouTube Video]
 ---
