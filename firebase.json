@@ -550,7 +550,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/blur",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/blur",
         "type": 301
       },
       {
