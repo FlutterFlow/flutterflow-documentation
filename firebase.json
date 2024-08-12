@@ -865,12 +865,12 @@
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/delete-user",
-        "destination": "/",
+        "destination": "/integrations/authentication/firebase/auth-actions#delete-user-action",
         "type": 301
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/update-email",
-        "destination": "/",
+        "destination": "/integrations/authentication/firebase/auth-actions#update-email-action",
         "type": 301
       },
       {
