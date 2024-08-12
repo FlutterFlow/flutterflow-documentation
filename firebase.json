@@ -225,7 +225,7 @@
       },
       {
         "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/braintree",
-        "destination": "/",
+        "destination": "/integrations/payments/braintree",
         "type": 301
       },
       {
@@ -1270,7 +1270,7 @@
       },
       {
         "source": "/actions/actions/integrations/braintree-payment",
-        "destination": "/",
+        "destination": "/integrations/payments/braintree#3-trigger-payment-action",
         "type": 301
       },
       {
