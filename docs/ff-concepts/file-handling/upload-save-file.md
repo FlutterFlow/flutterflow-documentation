@@ -75,7 +75,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 3. Click on the **+ Add Action**.
 4. Search and select the **Upload/Save File** (under *Utilities > Upload Data*) action.
-5. Set the [**Upload Type**](upload-data.md#types-of-upload). If you haven't integrated Firebase or Supabase yet, the default upload type will be *Local (Widget State)*.
+5. If you haven't integrated Firebase or Supabase yet, the default upload type will be **[Store media for upload](upload-data.md#local-upload-widget-state)**. However, once integrated, you can choose the **Upload Type** as [Firebase](upload-data.md#firebase), [Supabase](upload-data.md#supabase) or [Local (Widget State)](upload-data.md#local-upload-widget-state).
 6. Use the **File Type** dropdown to specify whether you want to upload a **PDF**, **Audio (MP3),** **ANY,** or **Uploaded Media**. The *Uploaded Media* option is there for uploading the media stored on the device. If you choose **Uploaded Media**, ensure you add one more same action (before this action) with **Upload Type** set to [**Local Upload (Widget State)**](upload-data.md#local-upload-widget-state).
 7. You can **Allow multiple Files** to be uploaded. After the multiple files are uploaded, you can access them via *Set from Variable menu > Widget State > Uploaded File URLs (`List <String>`).*
 8. To let users know whether the file is still being uploaded, you can enable the 'Show Snackbar' option.

@@ -119,6 +119,10 @@ Furthermore, the ability to import Swagger/OpenAPI definitions directly into Flu
 We also add all settings that are required to run the API, such as [headers](rest-api.md#headers), [query parameters](rest-api.md#query-parameters), [variables](rest-api.md#variables), and body as they are defined in the Swagger file. However, you might need to replace the hard-coded values in [Body](rest-api.md#body) text with the [variables](rest-api.md#variables).
 :::
 
+:::warning
+Please note that while it is possible to import APIs created with OAS 2.0 in FlutterFlow, you might face some issues, such as the body request being lost during the import process. Our import functionality is built based on the OAS 3.0 standard, so for the best experience and compatibility, it is recommended to use APIs that adhere to OAS 3.0 or above.
+:::
+
 To import API call definitions:
 
 1. Click the **Import OpenAPI** icon. This will open a new popup.
