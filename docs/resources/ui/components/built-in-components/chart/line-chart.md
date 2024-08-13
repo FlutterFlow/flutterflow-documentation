@@ -156,7 +156,7 @@ To customize the line:
 
 1. Select the **Chart** widget from the widget tree or the canvas area.
 2. Move to the properties panel, open the **Chart Data** section and then open the **Line Properties** section.
-3. To change the **Line Color**, click on the box next to the already selected color, select any dark/light color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly.
+3. To change the **Line Color**, click on the box next to the already selected color, select any dark/light color, and then click **Use Color** or click on an already selected color and enter a Hex Code directly.
 4. To change the thickness of the line, change the value in the **Line Thickness** input box.
 5. By default, all the data points are connected with a smooth curve line; to disable this, simply **turn off** the **Curved Lines** property. This will draw a straight line between two points.
     1. If you keep this property enabled, you may notice that for some data points the curve goes beyond/above the actual value. To prevent this, you can **enable** the **Prevent curve from overshooting**.
