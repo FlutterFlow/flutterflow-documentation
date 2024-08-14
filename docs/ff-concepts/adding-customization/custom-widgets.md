@@ -61,7 +61,7 @@ this example, we will create a `ProductRatingBar` widget that uses a pub.dev dep
 
 For custom widgets, it is mandatory to specify both width and height. These properties are required to size the custom widget appropriately. Without setting these dimensions, the custom widget will not render correctly within your application.
 
-## Adding a pub.dev dependency
+## Add Dependency to Custom Widgets
 
 In this example, we are using the 
 [**flutter_rating_bar**](https://pub.dev/packages/flutter_rating_bar) dependency to create a 
@@ -94,6 +94,10 @@ FlutterFlow:
         allow="clipboard-write">
     </iframe>
 </div>
+
+:::tip[Choosing a Pubspec Dependency]
+For a comprehensive guide on navigating external packages using pub.dev, evaluating packages, and making the best choices for your app, [**follow the guide**](custom-code.md#adding-a-pubspec-dependency).
+:::
 
 ## Using a Custom Widget
 To add a custom widget to your page, you can drag and drop it from the Widget Palette's Components section or through the Widget Tree section. Here is a demo:
@@ -167,7 +171,7 @@ FlutterFlow also allows you to view your custom widget once it is successfully c
 To learn more about Custom Widget settings, such as the
 [**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation),
 and other properties like [**Callback Actions**](custom-code.md#add-a-callback-action),
-[**Pub Dependencies**](custom-code.md#adding-a-pub-dependency), please check out this
+[**Pub Dependencies**](custom-code.md#adding-a-pubspec-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::
 

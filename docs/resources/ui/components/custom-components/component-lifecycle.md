@@ -70,7 +70,7 @@ created.
 
 :::note[STATE VARIABLES]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here.](../../../../ff-concepts/state-management/generated-code.md)**
+about **states and state management, [refer here.](../../../../ff-concepts/state-management/state-variables.md)**
 :::
 
 **Component state** refers to the information that a component tracks about its current condition or
