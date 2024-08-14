@@ -141,7 +141,7 @@ create another Run Mode.
 
 ## Local Run
 
-Local Run downloads the code locally and gives you the option to use [Flutter's Hot Reload](https://docs.flutter.dev/tools/hot-reload) or Hot Restart to see your changes instantly on a device. See how to setup Local Run [here](local-run).
+Local Run downloads the code locally and gives you the option to use [Flutter's Hot Reload](https://docs.flutter.dev/tools/hot-reload) or Hot Restart to see your changes instantly on a device. See how to setup Local Run [here](local-run.md).
 
 :::info
 Please note that Local Run is currently available only on the [**Paid Plans**](https://flutterflow.io/pricing).

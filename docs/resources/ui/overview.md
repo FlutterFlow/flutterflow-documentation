@@ -56,17 +56,20 @@ ProfilePage, etc.
 
 ## Widgets
 
-A Page usually contains a combination of widgets and components. Let's talk about widgets first, 
-which are the atomic elements or building blocks of the UI structure in FlutterFlow. 
+A Page usually contains a combination of widgets and components. 
+![everything-widget.png](imgs%2Feverything-widget.png)
+
+Let's talk about widgets first, 
+which are the the atomic elements or building blocks of the UI structure in FlutterFlow. 
 
 Each widget can be thought of as an atom or a molecule, depending on its complexity and its parent-child
 relationship. For example, an atomic widget (such as `TextField`) cannot hold a child element, but 
 molecular widgets (such as `Column` or `Row`) can.
 
-This brings us to the concept of the **Widget Tree**, a visual and structural representation of how
-widgets—atomic & molecular elements—organized within a **Page**. It outlines the
-parent-child relationships that define the layout and functionality of your UI, analogous to how
-atoms and molecules interact in atomic design.
+This brings us to the concept of the **Widget Tree**. 
+
+### Widget Tree
+Widget Tree is a visual and structural representation of how widgets—atomic & molecular elements—organized within a **Page**. It outlines the parent-child relationships that define the layout and functionality of your UI, analogous to how atoms and molecules interact in atomic design.
 
 :::info[WIDGET TREE BREAKDOWN]
 ![tree.png](imgs/tree.png)
@@ -92,6 +95,9 @@ structured using a hierarchy of widgets that define its layout and functionality
 Each widget in this tree plays a specific role in constructing the user interface, from basic
 elements like `Text` and `Image` to layout structures like `Row`s and `Column`s that organize these
 elements.
+
+Here's how this widget tree would be represented in FlutterFlow:
+![widget-tree-new.png](imgs%2Fwidget-tree-new.png)
 :::
 
 Understanding the widget tree is crucial for developers using FlutterFlow because it helps visualize

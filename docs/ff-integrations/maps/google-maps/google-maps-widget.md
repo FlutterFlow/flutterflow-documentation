@@ -204,6 +204,10 @@ Traffic on Map toggle.
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/8cf915f27803412cb9b2247b5cfb257a?sid=45dac67a-0f2d-4f7d-a390-25b2ce8bc16f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-
-
-
+## FAQ
+<details>
+<summary>Why Google Maps custom markers are not working in run mode or test mode?</summary>
+<p>
+Due to a recent update, Google Maps custom markers won't work in Run or Test mode unless CanvasKit is enabled. This is expected behavior. To use custom markers effectively, enable CanvasKit from [**Advanced Web Settings**](../../../resources/projects/settings/project-setup.md#advanced-web-settings).
+</p>
+</details>

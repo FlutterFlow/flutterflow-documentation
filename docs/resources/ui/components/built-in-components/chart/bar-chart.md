@@ -164,7 +164,7 @@ To customize the bar for each chart data:
 
 1. Select the **Chart** widget from the widget tree or the canvas area.
 2. Move to the properties panel, and open the **Chart Data** > **Bar Properties**.
-3. To change the **Bar Color**, click on the box next to the already selected color, select any dark/light color, and then click **Use Color** or click on an already selected color ****and enter a Hex Code directly.
+3. To change the **Bar Color**, click on the box next to the already selected color, select any dark/light color, and then click **Use Color** or click on an already selected color and enter a Hex Code directly.
 4. To add a border around the bar, enter the **Border Width** value and change its **Border Color**.
 
 
