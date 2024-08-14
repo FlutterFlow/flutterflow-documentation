@@ -1,6 +1,8 @@
 ---
 title: Overview
 sidebar_position: 1
+keywords: [Widget, Widget Tree, Components, Page, UI Building Blocks, Atoms, Molecules, Atomic Design]
+tags: [Widget, UI, Widget Tree]
 ---
 
 # UI Building Blocks
@@ -55,7 +57,7 @@ ProfilePage, etc.
 ## Widgets
 
 A Page usually contains a combination of widgets and components. Let's talk about widgets first, 
-which are the the atomic elements or building blocks of the UI structure in FlutterFlow. 
+which are the atomic elements or building blocks of the UI structure in FlutterFlow. 
 
 Each widget can be thought of as an atom or a molecule, depending on its complexity and its parent-child
 relationship. For example, an atomic widget (such as `TextField`) cannot hold a child element, but 
