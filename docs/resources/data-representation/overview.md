@@ -52,9 +52,9 @@ Learn more about data types [**here**](data-types.md).
 
 All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [Constants](constants.md) that cannot be changed once they have been set.
 
-## Global data
+## Global Properties
 
-Global data are accessible from anywhere within the app. They are helpful, especially when the data is required frequently or by various components or pages. In FlutterFlow, they are available as [Global Properties](global-properties.md).
+Global properties in FlutterFlow are built-in variables that you can use across your app, but they cannot be created or modified by users. Learn [how to leverage these predefined properties](global-properties.md) to simplify common tasks.
 
 ## Encapsulation
 
