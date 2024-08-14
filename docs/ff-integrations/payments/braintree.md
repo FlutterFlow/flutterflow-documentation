@@ -8,7 +8,7 @@ keywords: [FlutterFlow, Braintree, Payments, Integration]
 
 # Braintree
 
-You can accept payments in your app using Braintree (a service provided by PayPal) integration. This will also allow your users to pay directly using a credit card or using a service like PayPal, Google Pay, or Apple Pay
+You can accept payments in your app using [Braintree](https://developer.paypal.com/braintree/docs/start/overview) (a service provided by PayPal) integration. This will also allow your users to pay directly using a credit card or using a service like PayPal, Google Pay, or Apple Pay
 
 <div style={{
     position: 'relative',

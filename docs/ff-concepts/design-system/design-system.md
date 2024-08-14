@@ -720,6 +720,34 @@ To add the *Custom Fonts*:
 </div>
 <p></p>
 
+If you prefer watching a video tutorial, here's the one for you:
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/NsR7f1OZeSY"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
 ### Adding Custom Icons
 
 Adding *Custom Icons* to your app helps you build the brand identity. Before you add the Custom Icons in FlutterFlow, you need to generate them from any icon generation site (like [fluttericon](https://www.fluttericon.com/) and [iconmoon](https://icomoon.io/)) and export them using appropriate settings.
@@ -827,34 +855,6 @@ If you prefer watching a video tutorial, here is the guide for you:
 </div>
 <p></p>
 
-### Video guide
-
-If you prefer watching a video tutorial, here's the one for you:
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/NsR7f1OZeSY"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
 
 
 ## Theme Widgets
@@ -1023,12 +1023,6 @@ If you prefer watching a video tutorial, here's the one for you:
 ## FAQs
 
 <details>
-<summary>How do I create a new design system if I don't see a button for it?</summary>
-<p>Currently, creating a design system requires you to have a team set up, even if you're working solo. You can quickly create a team by following the instructions outlined [here](../../accounts-billing/subscriptions/flutterflow-for-teams.md). We are working on a solution that will allow for the creation of design systems without needing a team setup. Stay tuned for updates!</p>
-</details>
-
-<details>
 <summary>How is the theme widget different from creating a template and component?</summary>
 <p>The Theme Widget allows you to customize the visual appearance of a single widget, whereas templates consist of multiple widgets that create a unique UI layout with a specific purpose. On the other hand, components are fully-featured custom widgets that combine multiple widgets and actions to complete a task.</p>
 </details>
-
