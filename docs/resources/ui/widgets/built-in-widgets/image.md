@@ -17,6 +17,11 @@ interactions. Different types of image widgets cater to various design requireme
 
 The properties for the Image widget provide various customization options, from sizing and fitting to advanced animations.
 
+## MediaDisplay Widget
+The **MediaDisplay** widget in FlutterFlow automatically detects the type of media fetched from a URL and adjusts the widget accordingly. For instance, if the URL returns an image, the widget will behave as an Image widget.
+
+This versatility allows you to easily present various types of media within your app. For example, it can be integrated into scrollable widgets like [ListView](../built-in-widgets/list-grid.md#listview-widget) for displaying activity feeds or [GridView](../built-in-widgets/list-grid.md#gridview-widget) for presenting photos and videos together.
+
 ## Common Image Properties
 
 - **Width & Height:** Specify the dimensions of the image. Values can be in pixels (px) or as a 
