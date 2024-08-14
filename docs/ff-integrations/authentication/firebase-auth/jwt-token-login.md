@@ -144,7 +144,7 @@ Here are the step by step instructions:
 
 ### 4. Adding logout action
 
-To let users log out of your app, you can use the [Logout](../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](auth-actions.md#logout-action) action.
 
 ### 5. Verify user creation
 

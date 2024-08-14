@@ -27,7 +27,7 @@ Templates are predefined and ready-to-use widgets. These include UI elements tha
 
 ## 4. Theme Widgets
 
-Theme Widgets enable you to customize the visual appearance of individual widgets and reuse them consistently throughout your app. They are an integral part of the design system, allowing you to build widgets based on your theme. Once you [create a theme widget](#), you can access it from here.
+Theme Widgets enable you to customize the visual appearance of individual widgets and reuse them consistently throughout your app. They are an integral part of the design system, allowing you to build widgets based on your theme. Once you [create a theme widget](../../ff-concepts/design-system/design-system.md#theme-widgets), you can access it from here.
 
 ## 5. Floating Widget Palette
 

@@ -47,7 +47,7 @@ Leveraging components effectively helps you build a consistent, efficient, and m
   out-of-the-box solutions provided by FlutterFlow that can be directly integrated into any project
   to offer specific functionalities.
 
-- **[Custom Components](custom-components/getting-started.md):** You can also build your own 
+- **[Custom Components](custom-components/getting-started.md)**: You can also build your own 
   components by assembling 
   multiple
   widgets using FlutterFlow’s drag-and-drop interface. This method involves strategically
@@ -55,11 +55,11 @@ Leveraging components effectively helps you build a consistent, efficient, and m
   widgets like `Row`, `Column`, or `Stack` to create a combined widget that serve a specific
   function, like a `LoginComponent` or a `SearchBar`.
 
-- **[Custom Widgets:](../../../ff-concepts/adding-customization/custom-widgets.md)** For scenarios where more complex functionalities are required, FlutterFlow
+- **[Custom Widgets](../../../ff-concepts/adding-customization/custom-widgets.md)**: For scenarios where more complex functionalities are required, FlutterFlow
   allows you to develop their own Custom Widgets. This involves writing Flutter code from
   scratch, offering the highest level of customization and flexibility.
 
-- **Themed Widgets:** Themed widgets can be reused across your app, making it easy to update styles
+- **[Themed Widgets](../../../ff-concepts/design-system/design-system.md#theme-widgets)**: Themed widgets can be reused across your app, making it easy to update styles
   universally. If you decide to change any properties, such as color schemes or fonts, you can
   update the theme widget instead of modifying each widget individually.
 
