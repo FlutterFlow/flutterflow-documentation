@@ -212,6 +212,6 @@ Here's exactly how you do it:
 
 ### 7. Logout
 
-You can logout a user by [this](../logout-action.md) action.
+You can logout a user by adding the **Log Out** action.
 
 ![logout.avif](../imgs/logout.avif)

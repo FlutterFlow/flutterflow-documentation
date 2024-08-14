@@ -64,5 +64,5 @@ the authentication provider:
 
    
 :::info
-To let users log out of your app, you can use the [**Logout**](../logout-action.md) action.
+To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
 :::

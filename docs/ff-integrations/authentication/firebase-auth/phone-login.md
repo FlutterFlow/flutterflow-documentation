@@ -240,7 +240,7 @@ On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action,
 
 ### 7. Adding logout action
 
-To let users log out of your app, you can use the [Logout](../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](auth-actions.md#logout-action) action.
 
 ### 8. Testing phone sign-in
 

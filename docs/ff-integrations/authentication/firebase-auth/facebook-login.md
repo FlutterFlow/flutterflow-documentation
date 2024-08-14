@@ -266,7 +266,7 @@ Switch on the **Create User Document** and set the **Collection** to **users**. 
 
 ### 8. Add logout action
 
-To let users log out of your app, you can use the [Logout](../logout-action.md) action.
+To let users log out of your app, you can use the [Logout](auth-actions.md#logout-action) action.
 
 ### 9. Prepare to test the app
 

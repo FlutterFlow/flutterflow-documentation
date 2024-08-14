@@ -860,7 +860,7 @@
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/logout",
-        "destination": "/integration/authentication/logout",
+        "destination": "/integrations/authentication/firebase/auth-actions#logout-action",
         "type": 301
       },
       {
