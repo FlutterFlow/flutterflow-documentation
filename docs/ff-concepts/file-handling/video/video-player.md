@@ -98,11 +98,6 @@ To use the uploaded video:
 3. Find the **Video Type** dropdown. Click on **Network** (inside the dropdown) and select **Asset**.
 4. Click on **No asset select** (inside the dropdown) and choose the video.
 
-## MediaDisplay Widget
-The **MediaDisplay** widget in FlutterFlow automatically detects the type of media fetched from a URL and adjusts the widget accordingly. For example, if the URL returns a video, the widget will function as a VideoPlayer widget.
-
-This versatility allows you to easily present various types of media within your app. For example, it can be integrated into scrollable widgets like [ListView](../built-in-widgets/list-grid.md#listview-widget) for displaying activity feeds or [GridView](../built-in-widgets/list-grid.md#gridview-widget) for presenting photos and videos together.
-
 ## Customization
 
 You can customize the appearance of this widget using the various properties available under the properties panel.
