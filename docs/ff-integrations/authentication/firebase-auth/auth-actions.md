@@ -1,12 +1,14 @@
 ---
 slug: /integrations/authentication/firebase/auth-actions
-title: Auth Actions
+title: Common Auth Actions
 description: Learn how to add Firebase Authentication actions in your FlutterFlow app.
 tags: [Auth Actions, Authentication, Firebase]
 sidebar_position: 1
 keywords: [FlutterFlow, Auth Actions, Authentication, Firebase]
 ---
-# Authentication Actions
+# Common Auth Actions
+
+Here's a list of common authentication actions:
 
 ## Logout [Action]
 
