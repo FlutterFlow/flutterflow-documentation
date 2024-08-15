@@ -9,16 +9,18 @@ keywords: [Global Properties, FlutterFlow, Data Representation]
 
 # Global Properties
 
-Global properties are accessible across all pages of your app. They act as a utility function to accomplish a common task regardless of the type of app you are developing. 
+Global properties are **built-in variable**s in FlutterFlow that you can use across all pages of your app. These properties are predefined by FlutterFlow, meaning you cannot create or modify them yourself. They are designed to help you perform common tasks efficiently, no matter what type of app you’re developing.
 
-For instance, you may need to redirect to a different page if a user is not logged in. Or, you may want to enable specific functionality based on the platform. In such scenarios, global properties are useful.
+For example, global properties can be used to redirect users to another page if they are not logged in or to enable specific functionality based on the platform your app is running on.
 
-You can access these properties via the **Set from Variable menu > Global Properties**.
+You can access these properties through the **Set from Variable** menu **> Global Properties**.
+
+<p></p>
 
 ![global-properties.avif](../imgs/global-properties.avif)
 
-:::note
-Global properties are variables exposed by FlutterFlow. You can't create one by yourself.
+:::caution
+Global properties are built-in variables exposed by FlutterFlow. You can't create one by yourself.
 :::
 
 ## List of Global Properties

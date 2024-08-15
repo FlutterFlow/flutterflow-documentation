@@ -2,7 +2,7 @@
 slug: flippable-card
 title: Flippable Card
 tags: [Layout Elements, Components]
-keywords: [DateTime Picker, Layout Element, Component, Widget]
+keywords: [Flippable Card, Layout Element, Component, Widget]
 description: Learn how to add Flippable Card widget in your FlutterFlow app.
 ---
 

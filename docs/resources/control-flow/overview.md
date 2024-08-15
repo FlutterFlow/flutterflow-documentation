@@ -72,7 +72,7 @@ data or performing calculations. In FlutterFlow, you can use
 
 * **[Actions](functions/action-flow-editor.md):** Sequence of Logic performed in response to 
   user interactions. For example: 
-  * **Updating State Variables:** Functions that modify the current state or data of the app,
+  * **[Updating State Variables:](../../ff-concepts/state-management/state-variables.md)** Functions that modify the current state or data of the app,
     page, or
     component.
 
@@ -80,7 +80,7 @@ data or performing calculations. In FlutterFlow, you can use
     actions, such as scrolling to an item in a ListView, clearing text fields, or calling third-party
     integration functions.
 
-  * **Custom Actions:** More complex actions written in **Flutter & Dart** that can be added as a node to
+  * **[Custom Actions:](../../ff-concepts/adding-customization/custom-actions.md)** More complex actions written in **Flutter & Dart** that can be added as a node to
     the action flow editor.
 
 * **[Navigation:](../../ff-concepts/navigation-routing/nav-overview.md)** Functions that handle 

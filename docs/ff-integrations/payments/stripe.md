@@ -3,7 +3,6 @@ slug: /integrations/payments/stripe
 title: Stripe
 description: Learn how to integrate Stripe in your FlutterFlow app.
 tags: [Stripe, Payments, Integration]
-sidebar_position: 1
 keywords: [FlutterFlow, Stripe, Payments, Integration]
 ---
 
