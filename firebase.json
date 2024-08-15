@@ -25,7 +25,7 @@
       },
       {
         "source": "/getting-started/dashboard",
-        "destination": "/",
+        "destination": "/flutterflow-ui/dashboard",
         "type": 301
       },
       {
