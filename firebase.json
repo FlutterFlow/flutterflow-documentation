@@ -30,7 +30,7 @@
       },
       {
         "source": "/getting-started/dashboard/my-organization",
-        "destination": "/",
+        "destination": "/accounts-billing/my-organization",
         "type": 301
       },
       {
