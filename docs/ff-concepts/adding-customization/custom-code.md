@@ -226,7 +226,7 @@ You can only add a pubspec dependency to [**Custom Action**](custom-actions.md) 
 ###  Pub.dev 
 [Pub.dev](https://pub.dev) is the official package repository for Dart and Flutter. It hosts a wide range of packages, libraries, and tools that developers can use to extend the functionality of their Dart and Flutter applications.
 
-:::info[Flutter Favourite Packages]
+:::info[Flutter Favorite Packages]
 
 Flutter Favorite packages are a curated set of packages on pub.dev that have been recognized by the Flutter team and the community for their quality, popularity, and usefulness in Flutter development. These packages are marked with a "Flutter Favorite" badge, indicating that they meet a high standard of quality, reliability, and best practices.
 
