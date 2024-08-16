@@ -18,7 +18,7 @@ Action Blocks have different scopes, which determine their availability:
 
 :::info[Note]
 Some actions are not supported and cannot be used in an Action Block. By default, these actions are hidden in the Action Block Editor. 
-For example actions like all the actions under the **Firebase Authentication** category, **Start Periodic Action**, **Upload Data**, etc
+For example, actions under the **Firebase Authentication** category, **Start Periodic Action**, **Upload Data**, and others.
 :::
 
 ## Action Blocks Structure
