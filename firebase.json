@@ -1175,7 +1175,7 @@
       },
       {
         "source": "/actions/actions/utilities/set-dark-mode-setting",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#set-dark-mode-setting",
         "type": 301
       },
       {

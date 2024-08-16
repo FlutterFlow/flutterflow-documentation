@@ -354,3 +354,109 @@ At present, testing this action isn't possible in Test mode, but you can use the
     </iframe>
 </div>
 <p></p>
+
+## Set Dark Mode Setting
+
+Using this Action, you can set the app theme to Light/Dark or set it as per the system.
+
+<Tabs>
+<TabItem value="1" label="As Per System" default>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/wtG5H6CD2K0bAB0SSuTW?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</TabItem>
+<TabItem value="2" label="Manually Setting Theme Mode">
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/kIk9WQB7Y0EigQsJzyxB?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</TabItem>
+</Tabs>
+
+### Types of Dark Mode Setting
+
+There are three types of the mode you can set:
+
+- **From System**: Set the Light/Dark Mode based on system preference. That means you don't need to build the Light/Dark Mode switch UI in your app. The dark mode will be set automatically if a user has set the dark mode in the Android/iOS operating system.
+- **Light Mode**: Set the theme mode to Light.
+- **Dark Mode**: Set the theme mode to Dark.
+
+### Defining Set Dark Mode Setting [Action]
+
+Go to your project page on FlutterFlow and follow the steps below to define the Set Dark Mode Setting Action to any widget.
+
+1. Select **Actions** from the [properties panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu)
+2. Click **+ Add Action** button
+3. Choose a gesture from the dropdown among **On Tap**, **On Double Tap**, or **On Long Press**.
+4. Select the **Action Type** as **Set Dark Mode Setting**.
+5. Set the **Setting Source** to **Select Setting**.
+6. Set the **Dark Mode Setting** to any amongst the **From System**, **Light Mode**, **Dark Mode**.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Xcb0FwRDqEBLwu3VWqQr?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
