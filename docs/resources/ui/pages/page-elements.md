@@ -65,7 +65,7 @@ However, it's important to note that this default icon won't appear in the Flutt
 If you wish to replace the default icon with another icon in the leading space, follow the [guide on adding an AppBar](#add-an-appbar-to-your-page).
 
 :::tip[Generated Code]
-In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if a back navigation option or Drawer is detected when you run the app. 
+In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if back navigation is enabled or Drawer is detected when you run the app. 
 :::
 
 ## Floating Action Button (FAB)
