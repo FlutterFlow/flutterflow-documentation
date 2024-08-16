@@ -1180,7 +1180,7 @@
       },
       {
         "source": "/actions/actions/utilities/copy-to-clipboard",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#copy-to-clipboard",
         "type": 301
       },
       {

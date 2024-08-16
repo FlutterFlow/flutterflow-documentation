@@ -14,7 +14,6 @@ import TabItem from '@theme/TabItem';
 Utility Actions provide essential functionalities that enhance your app's capabilities, such as data manipulation and system interactions. These actions streamline processes and improve the overall user experience. Examples include copying text to the clipboard and selecting colors or dates.
 
 
-
 ## Color Picker
 
 Using this action, you can allow users to pick their favorite color from the palette or by entering a HEX/RGB color value. You might, for instance, utilize this to give customers the option of choosing the color of a product you offer.
@@ -284,3 +283,74 @@ Follow the steps below to add this action to any widget.
 5. Set the Badget Count Value.
 
 ![badge-count.png](img%2Fbadge-count.png)
+
+## Copy to Clipboard
+Using this action, you can allow users to copy a particular text from your app. For example, copying a message or transaction ID and then pasting it into another application.
+
+When this action is triggered, the data is stored temporarily in a special part of the device's memory called the clipboard. The user can then paste the copied text into another application by using the "paste" command.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/R5Qqlm6UXicmBBgwBJH5?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Copy to Clipboard [Action]
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to add the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on the **+ Add Action**.
+4. Search and select the **Copy to Clipboard** (under *Utilities*) action.
+5. Most probably, this value would be dynamic; hence, you can set the **Value Source** to **From Variable** and set the **Source** accordingly.
+
+:::warning
+At present, testing this action isn't possible in Test mode, but you can use the Run mode for this purpose.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/m5IDs1JW299lokr3kvhN?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
