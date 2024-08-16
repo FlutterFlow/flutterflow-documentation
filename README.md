@@ -1,10 +1,11 @@
 # Welcome to the FlutterFlow Documentation Repository!
-We're thrilled to have you here! Our documentation is a crucial resource for both new and existing users of FlutterFlow, and it grows and improves with contributions from our community. Whether you're fixing a typo, discussing a new topic, or sharing your experiences, your contributions help everyone.
+We're thrilled to have you here! Our documentation is a crucial resource for both new and existing users of FlutterFlow, and it grows and improves with contributions from our community. Whether you're fixing a typo, or adding a new topic, your contributions help everyone.
 
 Below you'll find guidelines on how you can contribute to different parts of the documentation.
 
 ## A Little Note on Tooling
-Most of our documentation is written in `Markdown`, making it super easy to edit files. You can choose to edit Markdown directly in GitHub or open up the entire repository in StackBlitz.
+- Most of our documentation is written in `Markdown`, making it super easy to edit files. 
+- You can choose to edit Markdown directly in GitHub or open up the entire repository in StackBlitz.
 
 Either way, you'll need to open up a pull request and get approval from at least one code owner.
 
