@@ -526,3 +526,68 @@ Follow the steps below to add this action to any widget.
     </iframe>
 </div>
 <p></p>
+
+## Call Number
+
+Using this action, you can make a call to the specified number. This action does not directly call a number. Instead, it redirects you to the native Calls app and prefills the specified number; you have to press the call button to make a call.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/oLWgwLfwPRH7kuS75NXE?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Call Number [Action]
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to add the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
+3. Search and select the **Call Number** (under *Share*) action.
+4. Inside the **Phone Number** section, provide the valid phone number. The call will be made to this number.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/DfvPa2xvLDixvM08rTq2?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
