@@ -16,6 +16,10 @@ Action Blocks have different scopes, which determine their availability:
 | **Page Level Action Blocks**     | Restricted to the page in which they were created. These can access the state variables available in their scope, such as page state variables, as well as variables above their scope, such as [App State variables](../../../resources/data-representation/app-state.md). | Page Level Action Blocks can access page state variables and App State variables.                                                                              |
 | **Component Level Action Blocks**| Restricted to the component in which they were created. These can access the state variables available in their scope, such as component state variables, as well as variables from higher scopes, like page and App State variables. | Component Level Action Blocks can access component state variables, page state variables, and App State variables.                                             |
 
+:::note[Unsupported Actions in Action Blocks]
+Some actions are not supported and cannot be used in an Action Block. By default, these actions are hidden in the Action Block Editor. 
+For example, actions under the **Firebase Authentication** category, **Start Periodic Action**, **Upload Data**, and others.
+:::
 
 ## Action Blocks Structure
 When creating an Action Block, the process of defining the flow is similar to **[defining 
