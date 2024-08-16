@@ -217,20 +217,24 @@ Here's an example of an Action that returns a _nullable_ integer.
 
 ![return-value-actions.png](imgs/return-value-actions.png)
 
-#### Adding a Pub Dependency
+## Adding a Pubspec Dependency
 
 :::tip[Scope]
-You can only add a pub dependency to Custom Action & Custom Widgets.
+You can only add a pubspec dependency to [**Custom Action**](custom-actions.md) & [**Custom Widgets**](custom-widgets.md).
 :::
 
-If you plan to use a dependency from [*pub.dev*](https://pub.dev/) into a custom widget or action,
-you must go through the following steps:
+###  Pub.dev 
+[Pub.dev](https://pub.dev) is the official package repository for Dart and Flutter. It hosts a wide range of packages, libraries, and tools that developers can use to extend the functionality of their Dart and Flutter applications.
 
-1. [Choosing dependency](#1-choosing-dependency)
-2. [Copying dependency/package name](#2-copying-dependency-name)
-3. [Copying import statement](#3-copying-import-statement)
+:::info[Flutter Favorite Packages]
 
-##### 1. Choosing dependency
+Flutter Favorite packages are a curated set of packages on pub.dev that have been recognized by the Flutter team and the community for their quality, popularity, and usefulness in Flutter development. These packages are marked with a "Flutter Favorite" badge, indicating that they meet a high standard of quality, reliability, and best practices.
+
+You can explore the Flutter Favorite packages on **[pub.dev's Flutter Favorites page](https://pub.dev/packages?q=is%3Aflutter-favorite)**.
+
+:::
+
+### Choosing the correct package from pub.dev
 
 You will find varieties of dependencies for a specific requirement, and choosing the best one can be
 challenging. This section helps you identify the right dependency by examining its score.
@@ -257,7 +261,9 @@ one.
 
 ![Dependency-score.png](imgs/Dependency-score.png)
 
-##### 2. Copying dependency name
+When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of information: the [package name with its version number](#copy-package-name--version-) and the [import statement](#copying-import-statement).
+
+#### Copy Package Name & Version 
 
 To use the dependency code in our code editor, copy its name with the version. To do so, click
 the **Copy to Clipboard** icon.
@@ -278,7 +284,7 @@ section at the bottom right side.
 
 ![img_1.png](imgs/img_1.png)
 
-##### 3. Copying import statement
+#### Copying import statement
 
 An import statement points to where the dependency's code is located. When making a custom widget or
 action, place this statement at the beginning of the code editor.
@@ -288,7 +294,44 @@ the import statement. To copy, click the **Copy to Clipboard**  icon.
 
 ![img_2.png](imgs/img_2.png)
 
+### Add Pubspec Dependency to Custom Code: Guide
+In this example, we are using the
+[**flutter_rating_bar**](https://pub.dev/packages/flutter_rating_bar) dependency to create a
+`ProductRatingBar` custom widget for our
+Product pages. See how we utilize the example code from pub.dev and add the customized widget in
+FlutterFlow:
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/EAqWwTSfjumXzJ3xB6FX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+
+:::note
+This example demonstrates how to add a [pub.dev](https://pub.dev) package to a Custom Widget snippet, but you can follow the same process for adding a package to Custom Actions. For a deep dive, explore the detailed documentation on **[Custom Widgets](custom-widgets.md)** and [Custom Actions](custom-actions.md).
+:::
 
 
 

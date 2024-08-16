@@ -22,7 +22,7 @@ and offers customization with a variety of styles and functionalities.
 
 The AppBar is divided into the following sections:
 
-- **Leading:** Typically holds a menu or back button, providing navigation control.
+- **Leading:** Typically holds a **menu** or **back icon** that provides navigation control. By default, if there is a [**drawer**](#drawers) or [**page navigation**](../../../ff-concepts/navigation-routing/page-navigation.md) with ["Allow Back Navigation" enabled](../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action), a specific icon (such as a menu or back arrow) is displayed. However, you can override this with another [**Icon widget**](../../ui/widgets/built-in-widgets/icons.md) if desired, allowing for more tailored navigation options.
 - **Title:** Primarily serves to indicate the content of the active screen or to display the
   name of the application, aiding users in recognizing their context within the app. This section
   can also be customized with different widgets for a more tailored visual representation.
@@ -56,6 +56,17 @@ The AppBar is divided into the following sections:
         allow="clipboard-write">
     </iframe>
 </div>
+
+### Enable Default Button
+The "Show Default Button" toggle in the **AppBar** Properties Panel controls whether the default leading icon (usually a back arrow or a menu icon) appears when the user can [navigate back](../../../ff-concepts/navigation-routing/page-navigation.md) or when a [Drawer](#drawers) is present on the page.
+
+However, it's important to note that this default icon won't appear in the FlutterFlow canvas during the design stage. It only becomes visible when the app is running, and the conditions for showing the button are met.
+
+If you wish to replace the default icon with another icon in the leading space, follow the [guide on adding an AppBar](#add-an-appbar-to-your-page).
+
+:::tip[Generated Code]
+In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if a back navigation option or Drawer is detected when you run the app. 
+:::
 
 ## Floating Action Button (FAB)
 

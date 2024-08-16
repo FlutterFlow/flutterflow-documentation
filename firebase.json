@@ -225,7 +225,7 @@
       },
       {
         "source": "/settings-and-integrations/in-app-purchases-and-subscriptions/braintree",
-        "destination": "/",
+        "destination": "/integrations/payments/braintree",
         "type": 301
       },
       {
@@ -480,12 +480,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/videoplayer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/video-player",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/youtubeplayer",
-        "destination": "/",
+        "destination": "/concepts/file-handling/youtube-player",
         "type": 301
       },
       {
@@ -550,7 +550,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/blur",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/blur",
         "type": 301
       },
       {
@@ -770,17 +770,17 @@
       },
       {
         "source": "/widgets-and-components/theme-settings/colors",
-        "destination": "/concepts/design-system",
+        "destination": "/concepts/design-system/#colors",
         "type": 301
       },
       {
         "source": "/widgets-and-components/theme-settings/typography-and-icons",
-        "destination": "/concepts/design-system",
+        "destination": "/concepts/design-system/#typography--icons",
         "type": 301
       },
       {
         "source": "/widgets-and-components/theme-settings/theme-widgets",
-        "destination": "/concepts/design-system",
+        "destination": "/concepts/design-system/#theme-widgets",
         "type": 301
       },
       {
@@ -860,17 +860,17 @@
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/logout",
-        "destination": "/integration/authentication/logout",
+        "destination": "/integrations/authentication/firebase/auth-actions#logout-action",
         "type": 301
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/delete-user",
-        "destination": "/",
+        "destination": "/integrations/authentication/firebase/auth-actions#delete-user-action",
         "type": 301
       },
       {
         "source": "/actions/actions/backend-database/firebase-authentication/update-email",
-        "destination": "/",
+        "destination": "/integrations/authentication/firebase/auth-actions#update-email-action",
         "type": 301
       },
       {
@@ -1270,7 +1270,7 @@
       },
       {
         "source": "/actions/actions/integrations/braintree-payment",
-        "destination": "/",
+        "destination": "/integrations/payments/braintree#3-trigger-payment-action",
         "type": 301
       },
       {
@@ -1340,7 +1340,7 @@
       },
       {
         "source": "/**/firebase/authentication/password-resets",
-        "destination": "/integrations/authentication/firebase/password-reset",
+        "destination": "/integrations/authentication/firebase/auth-actions#reset-password-action",
         "type": 301
       },
       {

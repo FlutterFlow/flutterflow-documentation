@@ -3,7 +3,6 @@ slug: /integrations/payments/razorpay
 title: Razorpay
 description: Learn how to integrate Razorpay in your FlutterFlow app.
 tags: [Razorpay, Payments, Integration]
-sidebar_position: 1
 keywords: [FlutterFlow, Razorpay, Payments, Integration]
 ---
 # RazorPay
