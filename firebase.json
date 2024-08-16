@@ -1225,7 +1225,7 @@
       },
       {
         "source": "/actions/actions/share/send-email",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-email",
         "type": 301
       },
       {

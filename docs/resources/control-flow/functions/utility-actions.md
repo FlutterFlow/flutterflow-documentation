@@ -460,3 +460,69 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     </iframe>
 </div>
 <p></p>
+
+## Send Email
+
+Using this action, you can send an Email to the specified email Id. This action does not directly send an email. Instead, it redirects you to the email app and prefills the subject and message body, and you have to press the send button to send an email finally.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/TmrSeayVTqMK1fpQd6xb?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Send Email [Action]
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to add the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
+3. Search and select the **Send Email** (under *Share*) action.
+4. Inside the **Email Address** section, provide the valid email id. Your message will be sent to this email Id.
+5. Also, provide the **Subject** and **Body** of the message to be sent.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/4wvjE3fIJ2vErnB9FTMY?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
