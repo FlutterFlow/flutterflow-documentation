@@ -1235,7 +1235,7 @@
       },
       {
         "source": "/actions/actions/share/send-sms",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-sms",
         "type": 301
       },
       {

@@ -591,3 +591,69 @@ Follow the steps below to add this action to any widget.
     </iframe>
 </div>
 <p></p>
+
+## Send SMS
+
+Using this action, you can send an SMS to the specified number. This action does not directly send SMS. Instead, it redirects you to the native SMS app and prefills your message, and you have to press the send button to send the message finally.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/cUs9dsVARZWhoDPA61mb?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Send SMS [Action]
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to add the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
+3. Search and select the **Send SMS** (under *Share*) action.
+4. Inside the **Phone Number** section, provide the valid phone number. Your message will be sent to this number.
+5. Inside the **SMS Body** section, provide the message you want to send.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/51SGElsPLws7p7kCeIJH?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
