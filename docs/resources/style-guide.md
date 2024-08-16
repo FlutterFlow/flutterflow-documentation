@@ -25,13 +25,16 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 ### Components and Widgets  
 
+Use UpperCamelCase for all widget and component names to maintain consistency and readability. Always suffix widget names with their type (e.g., "Widget" or "Component") to clearly indicate their purpose.This aligns with Dart conventions for class names.
+
 :::tip[Do's]
-- **Use UpperCamelCase for Class Names:** Always write class names, including widgets and components, in UpperCamelCase. Example: `MyCustomButton`, `UserProfileWidget`, `MainViewComponent`.
+- **Use UpperCamelCase for Widget Names:** Always write widgets and component names in UpperCamelCase. Example: `MyCustomButton`, `UserProfileWidget`, `MainViewComponent`.
 
 - **Suffix Widget Names with the Type of Widget:** When naming widgets, include a suffix that indicates the type of widget. Example: `LoginButtonWidget`, `ProfileCardComponent`, `HeaderViewWidget`.
 
 - **Use Prefixes for Clarity When Necessary:** Add a prefix only if it significantly improves clarity or helps avoid naming conflicts. Example: `AppUserProfileWidget` (if `UserProfileWidget` is already in use).
 :::
+
 
 :::danger[Don'ts]
 - **Don’t Use Prefixes Unnecessarily:** Avoid adding prefixes that do not enhance clarity or that are redundant. Bad Example: `MyAppButtonWidget` (if `ButtonWidget` would suffice).
@@ -43,8 +46,10 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 ### Pages & Screens
 
+Use **UpperCamelCase** for page and screen file names with "Screen" or "Page" in the name to ensure clarity and consistency. This helps developers quickly identify and distinguish UI elements, improving project organization and readability.
+
 :::tip[Do's]
-- **Use CamelCase for Page Names:** Name your Pages using CamelCase to clearly indicate their purpose. Example: `HomePage`, `SearchResultsScreen`, `UserProfilePage`.
+- **Use UpperCamelCase for Page Names:** Name your Pages using UpperCamelCase to clearly indicate their purpose. Example: `HomePage`, `SearchResultsScreen`, `UserProfilePage`.
 
 - **Include "Screen" or "Page" in the Page Name:** Always include the word "Screen" or "Page" in the file name to clearly identify UI screens or pages. Example: `LoginScreen`, `SettingsPage`.
 
@@ -56,5 +61,21 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 - **Don’t Use Generic Names Without Purpose:** Avoid generic names that do not clearly indicate the file’s purpose or content. Bad Example: `Main`, `View`, `Screen1`.
 
-- **Don’t Mix Naming Conventions:** Consistently use CamelCase for all page names related to pages and screens. Mixing conventions can make your project harder to navigate. Bad Example: `search_results_screen`, `Userprofilepage`.
+- **Don’t Mix Naming Conventions:** Consistently use UpperCamelCase for all page names related to pages and screens. Mixing conventions can make your project harder to navigate. Bad Example: `search_results_screen`, `Userprofilepage`.
 :::
+
+
+### Custom Data Types
+
+When naming data types, use **UpperCamelCase** for consistency and opt for descriptive names that clearly represent the entity. 
+
+:::tip[Do's]
+
+- Use UpperCamelCase for Custom Data Types: Name custom data types using UpperCamelCase and ensure that the class names are clear and descriptive, accurately reflecting the entity they represent Example: `UserModel`, `ProductDetails`, `OrderItem`.
+:::
+
+:::danger[Don'ts]
+
+- **Don’t Use All Lowercase or Mixed Case for Custom Data Types:** Avoid using all lowercase or inconsistent casing in data model class names, as it reduces readability. Bad Example: `usermodel`, `product_details`.
+
+- **Don’t Use Vague or Non-Descriptive Names**: Avoid using generic or unclear names that do not clearly describe the data entity. Bad Example: `DataModel`, `Entity`, `Item`.
