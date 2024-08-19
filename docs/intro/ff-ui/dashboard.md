@@ -7,11 +7,11 @@ sidebar_position: 0
 keywords: [Dashboard, FlutterFlow, UI, Design]
 ---
 # Dashboard
-The first thing you see when you log in to FlutterFlow is the *Dashboard*. It provides a centralized location for managing projects, such as creating new ones, searching, deleting, and duplicating project. In addition, the dashboard allows you to set the desired theme, whether dark or light, for easy viewing.
+When you log in to FlutterFlow, the first thing you’ll encounter is the **Dashboard**. It serves as a central hub for managing your projects, including creating new ones, searching, deleting, and duplicating projects. Additionally, the Dashboard lets you choose your preferred theme—**dark or light**—for a more comfortable viewing experience.
 
-The dashboard enables easy access to organizational resources, enabling team members to collaborate and work together seamlessly. Furthermore, the dashboard is integrated with a marketplace, allowing users to browse and download widgets, templates, and plugins.
+The Dashboard provides convenient access to organizational resources, facilitating seamless collaboration among team members. Additionally, it integrates with a marketplace where users can browse and download widgets, templates, and plugins.
 
-You can also get links to various resources to help you build apps using FlutterFlow. Your account information and plan details are also accessible from this page.
+You can also find links to various resources to assist in building apps with FlutterFlow. Your account information and plan details are easily accessible from this page as well.
 
 ![dashboard](imgs/dashboard.avif)
 
@@ -20,7 +20,7 @@ You can also get links to various resources to help you build apps using Flutter
 This section displays the projects you have created in FlutterFlow. You can easily navigate to any of them from here. Use the overflow menu to rename, duplicate, delete, leave the project, add tags, and open the project in a new browser tab.
 
 :::info
-When you duplicate a project containing the Firebase setup, you must delete the config files in your duplicated project and complete a new [**Firebase setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md) for your project.
+When you duplicate a project containing the Firebase setup, you must delete the config files in your duplicated project and initiate a new [**Firebase setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md) for your project.
 :::
 
 ## Dark/Light mode switch
