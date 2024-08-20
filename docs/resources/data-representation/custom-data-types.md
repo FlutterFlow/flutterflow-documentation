@@ -23,7 +23,7 @@ Custom data types have several key advantages:
 :::info
 
 - Use custom data type when predefined data types, such as _integer_ and _string_ may not be enough to store certain kinds of information.
-- FlutterFlow also supports some [**Built-in Data Types**](data-types#built-in-data-types).
+- FlutterFlow also supports some [**Built-in Data Types**](data-types.md#built-in-data-types).
 
 :::
 
@@ -66,7 +66,7 @@ To create a custom data type, specify its name and the corresponding fields. Eac
 
 ## Accessing Custom Data Type
 
-After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state#working-with-app-state-variables).
+After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state.md#working-with-app-state-variables).
 
 ### Custom Data Type in Custom Code
 Sometimes, you might want to access the custom data type in your custom code. Our custom code editor allows you to receive and pass data into a variable of a custom data type. For example, you could manipulate or analyze the data as needed, and then return the modified result in the custom data type. 
