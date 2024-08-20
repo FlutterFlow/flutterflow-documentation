@@ -28,7 +28,7 @@ Variables are used in practically all areas of the app, from the user interface 
 
 To create a variable, start by defining its name and data type. If it's going to contain a list, you can specify that. Certain variables, such as page state and component state variables, are non-nullable by default, meaning they must contain a value. After defining the variable, you can assign a value to it.
 
-Learn more about creating [app state variables](../data-representation/app-state.md), [page state variables](../../resources/ui/pages/page-lifecycle/#page-state), and [component state variables](../ui/components/custom-components/component-lifecycle#component-state).
+Learn more about creating [app state variables](../data-representation/app-state.md), [page state variables](../../resources/ui/pages/page-lifecycle.md#page-state), and [component state variables](../ui/components/custom-components/component-lifecycle.md#component-state).
 
 ### Setting and using variables
 
