@@ -3,7 +3,7 @@
 title: Launch Map
 slug: /integrations/maps/launch-map
 description: Learn how to open Map app installed on your device from your FlutterFlow app.
-sidebar_position: 1
+sidebar_position: 2
 tags: [Maps, Action]
 keywords: [FlutterFlow, Launch Maps, Action,]
 ---

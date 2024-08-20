@@ -530,7 +530,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/staticmap",
-        "destination": "/",
+        "destination": "/integrations/mapbox/staticmap-widget",
         "type": 301
       },
       {
