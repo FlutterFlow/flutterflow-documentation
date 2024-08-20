@@ -164,10 +164,76 @@ com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931e
 
 <p></p>
 
-## Trigger API calls
+## Trigger API calls [Action]
 
-There are two methods to trigger an API call in your app:
+Using this action, you can trigger the API Call defined in your project.
 
-* Add an **Action** to trigger the API Call based upon a user gesture.
-* Add the API Call as a **Backend Query** that gets triggered automatically when the page or widget is loaded on the screen.
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/gzZislYM72aLHNpjuVhU?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
+:::tip
+You can also add the API Call as a [**Backend Query**](../backend-query/api-call-query.md) that gets triggered automatically when the page or widget is loaded on the screen.
+:::
+
+
+Go to your project and follow the steps below to define the Action to any widget.
+
+1. Select the **Widget** (e.g., Button) on which you want to define the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
+3. Click on the **+ Add Action**.
+4. On the right side, search and select the **API Call** (under *Backend/Database*) action.
+    1. Select the **Group or Call Name** from the dropdown.
+    2. Optional: If your API call requires variables (e.g., auth token, query parameters, user id, etc.), pass their value by clicking on the **+ Variable** button.
+    3. The **Action Output Variable Name** helps you retrieve the response of an API call. By default, we set it to any random name. However, you can change it to a meaningful name if you wish to. (e.g., loginResponse).
+    4. You can add a conditional action that checks if the API call is succeeded.
+    5. If the API call is succeeded, all actions under the TRUE path will be executed. For example, [navigate](../../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) to the home page if the login is successful.
+    6. If the API call is failed, all actions under the FALSE path will be executed. For example, [showing a snackbar](../../../ui/pages/page-elements.md#snackbar) if the login is unsuccessful.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/4c3412e806844b048dc8eb388bca45e0?sid=1408359c-f167-4b21-a8b4-d5803a21adb1"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

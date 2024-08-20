@@ -830,7 +830,7 @@
       },
       {
         "source": "/actions/actions/backend-database/api-call",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/create-test-api#trigger-api-calls-action",
         "type": 301
       },
       {
