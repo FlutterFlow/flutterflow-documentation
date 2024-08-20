@@ -1000,7 +1000,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/scroll-to",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid#scroll-to-action",
         "type": 301
       },
       {
