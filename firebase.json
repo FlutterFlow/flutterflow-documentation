@@ -580,7 +580,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/languageselector",
-        "destination": "/concepts/multiple-languages",
+        "destination": "/resources/ui/components/built-in-components/language-selector",
         "type": 301
       },
       {
