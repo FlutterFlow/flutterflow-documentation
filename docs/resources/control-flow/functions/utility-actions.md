@@ -58,6 +58,8 @@ Follow the steps below to add this action to any widget.
 7. Recent colors help users choose any previous color they have used. Disable the **Show Recent Color** toggle if you don't want to show them.
 8. The selected color is now available at **Widget State > Color Picked**. You can access it from any widget's color property or click the "**+**" button and add the following action to update the selected color in your backend or app state.
 
+<p></p>
+
 :::info
 After the user has selected the desired color, the picker will close automatically, and the selected color can then be accessed via the **Widget State > Color Picked**.
 :::
@@ -147,8 +149,14 @@ Follow the steps below to add this action to any widget.
 6. To define the range of selectable dates, use the **Minimum Date/Time** and **Maximum Date/Time** properties. Click on **Unset** to specify your dates.
 7. Control whether the past and future dates/times are selectable with **Allow Past Date/Time** and **Allow Future Date/Time**. **Tip**: If you explicitly set the min or max date, this option will be disabled.
 8. For an iOS-style display, activate the **Use Cupertino-style** toggle.
+
+<p></p>
+
    ![cupertino-style](img/cupertino-style.png)
 9. For more personalized styling, turn off **Use Default Theme** and tweak the settings in the **Appearance Properties** section.
+
+<p></p>
+
    ![appearance-properties](img/appearance-properties.png)
 
 :::info
