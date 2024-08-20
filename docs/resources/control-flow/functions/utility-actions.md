@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 Utility Actions provide essential functionalities that enhance your app's capabilities, such as data manipulation and system interactions. These actions streamline processes and improve the overall user experience. Examples include copying text to the clipboard and selecting colors or dates.
 
 
-## Color Picker
+## Color Picker [Action]
 
 Using this action, you can allow users to pick their favorite color from the palette or by entering a HEX/RGB color value. You might, for instance, utilize this to give customers the option of choosing the color of a product you offer.
 
@@ -46,8 +46,6 @@ When this action is triggered, it opens the color picker, where users can custom
 </div>
 <p></p>
 
-
-### Adding Color Picker [Action]
 
 Follow the steps below to add this action to any widget.
 
@@ -100,7 +98,7 @@ Here's an example of adding the color picker action and updating the selected co
 </Tabs>
 
 
-## DateTime Picker
+## DateTime Picker [Action]
 This action allows the user to select a date and time. You could use it to schedule appointments, set a reminder for a specific date, choose travel dates and times, etc.
 
 When this action is triggered, it opens the graphical calendar and clock interface that the user can interact with to select a specific date and time.
@@ -138,8 +136,6 @@ You can choose to open the following types of *Date/Time* picker dialog:
 - **Date**: Allows you to only select a date.
 - **Date+Time**: Allows you to select the date followed by the time.
 - **Time**: Allows you to only select a time.
-
-### Adding Date/Time Picker [Action]
 
 Follow the steps below to add this action to any widget.
 
@@ -188,7 +184,8 @@ Here's an example of adding the date time picker action and displaying the value
 <p></p>
 
 
-## Biometric Verification
+
+## Biometric Verification [Action]
 
 Most modern devices come with biometric sensors to strengthen the device's security. Using this action, you can leverage on-device authentication such as fingerprint or face recognition to protect your app's privacy.
 
@@ -221,8 +218,6 @@ A common use case of this action is to allow only the intended user to open an a
     </iframe>
 </div>
 <p></p>
-
-### Adding Biometric Verification [Action]
 
 Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
 
@@ -265,7 +260,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 <p></p>
 
 
-## Update App Badge Count (iOS only)
+## Update App Badge Count (iOS only) [Action]
 This action enables you to display a badge icon with counts over iOS app icons. For example, you could use this action to show unread messages, today's reminders, or upcoming events.
 
 :::info[Platform Support]
@@ -273,7 +268,6 @@ In Android, badges automatically appear on app icons with push notifications. We
 :::
 ![badge-count-demo.png](img%2Fbadge-count-demo.png)
 
-### Adding Update App Badge Count [Action]
 Follow the steps below to add this action to any widget.
 
 1. Select the Widget (e.g., Container, Button, etc.) on which you want to add the action. However, you would probably chain this action after something happens in your app. 
@@ -284,7 +278,7 @@ Follow the steps below to add this action to any widget.
 
 ![badge-count.png](img%2Fbadge-count.png)
 
-## Copy to Clipboard
+## Copy to Clipboard [Action]
 Using this action, you can allow users to copy a particular text from your app. For example, copying a message or transaction ID and then pasting it into another application.
 
 When this action is triggered, the data is stored temporarily in a special part of the device's memory called the clipboard. The user can then paste the copied text into another application by using the "paste" command.
@@ -314,8 +308,6 @@ When this action is triggered, the data is stored temporarily in a special part 
     </iframe>
 </div>
 <p></p>
-
-### Adding Copy to Clipboard [Action]
 
 Follow the steps below to add this action to any widget.
 
@@ -355,7 +347,7 @@ At present, testing this action isn't possible in Test mode, but you can use the
 </div>
 <p></p>
 
-## Set Dark Mode Setting
+## Set Dark Mode Setting [Action]
 
 Using this Action, you can set the app theme to Light/Dark or set it as per the system.
 
@@ -424,7 +416,6 @@ There are three types of the mode you can set:
 - **Light Mode**: Set the theme mode to Light.
 - **Dark Mode**: Set the theme mode to Dark.
 
-### Defining Set Dark Mode Setting [Action]
 
 Go to your project page on FlutterFlow and follow the steps below to define the Set Dark Mode Setting Action to any widget.
 
@@ -461,7 +452,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 </div>
 <p></p>
 
-## Send Email
+## Send Email [Action]
 
 Using this action, you can send an Email to the specified email Id. This action does not directly send an email. Instead, it redirects you to the email app and prefills the subject and message body, and you have to press the send button to send an email finally.
 
@@ -490,8 +481,6 @@ Using this action, you can send an Email to the specified email Id. This action 
     </iframe>
 </div>
 <p></p>
-
-### Adding Send Email [Action]
 
 Follow the steps below to add this action to any widget.
 
@@ -527,7 +516,7 @@ Follow the steps below to add this action to any widget.
 </div>
 <p></p>
 
-## Call Number
+## Call Number [Action]
 
 Using this action, you can make a call to the specified number. This action does not directly call a number. Instead, it redirects you to the native Calls app and prefills the specified number; you have to press the call button to make a call.
 
@@ -556,8 +545,6 @@ Using this action, you can make a call to the specified number. This action does
     </iframe>
 </div>
 <p></p>
-
-### Adding Call Number [Action]
 
 Follow the steps below to add this action to any widget.
 
@@ -592,7 +579,7 @@ Follow the steps below to add this action to any widget.
 </div>
 <p></p>
 
-## Send SMS
+## Send SMS [Action]
 
 Using this action, you can send an SMS to the specified number. This action does not directly send SMS. Instead, it redirects you to the native SMS app and prefills your message, and you have to press the send button to send the message finally.
 
@@ -621,8 +608,6 @@ Using this action, you can send an SMS to the specified number. This action does
     </iframe>
 </div>
 <p></p>
-
-### Adding Send SMS [Action]
 
 Follow the steps below to add this action to any widget.
 
