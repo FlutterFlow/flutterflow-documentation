@@ -30,7 +30,7 @@
       },
       {
         "source": "/getting-started/dashboard/my-organization",
-        "destination": "/accounts-billing/my-organization",
+        "destination": "/flutterflow-ui/my-organization",
         "type": 301
       },
       {
@@ -40,7 +40,7 @@
       },
       {
         "source": "/getting-started/ui-builder/navigation-menu",
-        "destination": "/flutterflow-ui/widget-palette",
+        "destination": "/flutterflow-ui/builder#navigation-menu",
         "type": 301
       },
       {

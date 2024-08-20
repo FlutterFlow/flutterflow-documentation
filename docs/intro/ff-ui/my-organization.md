@@ -1,9 +1,9 @@
 ---
-slug: my-organization
+slug: /flutterflow-ui/my-organization
 title: My Organization
-tags: [Accounts, Billing]
+tags: [My Organization, FlutterFlow, UI, Design]
 keywords: [Accounts, Billing, My Organization, Team Code, Team Media Assets, Team Design Library, Team API Library, Adding Domains ]
-sidebar_position: 1
+sidebar_position: 5
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,7 +14,7 @@ From here, you can manage billing for your team, edit projects simultaneously, a
 With the ability to easily collaborate and share resources, you can create amazing apps faster than ever before.
 
 :::info
-Learn [**how to create a team**](subscriptions/flutterflow-for-teams.md) to get started.
+Learn [**how to create a team**](../../accounts-billing/subscriptions/flutterflow-for-teams.md) to get started.
 :::
 
 
@@ -26,14 +26,14 @@ Learn [**how to create a team**](subscriptions/flutterflow-for-teams.md) to get 
 
 ## Team code
 
-Imagine you are working on multiple apps. As the project progresses, you realize that some of the custom code can be used across multiple apps. With *Team Code*, you can create [Custom Functions](../ff-concepts/adding-customization/custom-functions.md), [Widgets](../resources/ui/widgets/composing-widgets.md), and [Actions](../resources/control-flow/functions/action-flow-editor.md) that will be shared between your team members and their projects.
+Imagine you are working on multiple apps. As the project progresses, you realize that some of the custom code can be used across multiple apps. With *Team Code*, you can create [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Widgets](../../resources/ui/widgets/composing-widgets.md), and [Actions](../../resources/control-flow/functions/action-flow-editor.md) that will be shared between your team members and their projects.
 
 This helps you reduce building time, effort, and costs by allowing members to reuse existing code. Furthermore, shared code is easier to maintain as changes only need to be made in one place.
 
 Here's how you can share the custom code:
 
 1. Navigate to **My Organization > Team Code**.
-2. Click **+ Add** and select what you want to create and share. See how to create [*Custom Function*](../ff-concepts/adding-customization/custom-functions.md), [*Custom Widget*](../ff-concepts/adding-customization/custom-widgets.md), and [Custom Action](../ff-concepts/adding-customization/custom-actions.md).
+2. Click **+ Add** and select what you want to create and share. See how to create [*Custom Function*](../../ff-concepts/adding-customization/custom-functions.md), [*Custom Widget*](../../ff-concepts/adding-customization/custom-widgets.md), and [Custom Action](../../ff-concepts/adding-customization/custom-actions.md).
 
 <div style={{
     position: 'relative',
@@ -152,7 +152,7 @@ Here's how you can share the design library:
 
 1. Navigate to **My Organization > Team Design Library** and click **+ Create New**.
 2. Provide a name to the **Design System Project**.
-3. A new project will open where you can configure the Theme, [NavBar](../resources/ui/pages/page-elements.md#nav-bar) & [AppBar](../resources/ui/pages/page-elements.md#appbar), and [App Assets](../resources/projects/settings/general-settings.md#app-assets).
+3. A new project will open where you can configure the Theme, [NavBar](../../resources/ui/pages/page-elements.md#nav-bar) & [AppBar](../../resources/ui/pages/page-elements.md#appbar), and [App Assets](../../resources/projects/settings/general-settings.md#app-assets).
 
 <div style={{
     position: 'relative',
@@ -219,7 +219,7 @@ To ensure consistency and efficiency across all the apps, the company decides to
 Here's how you can share APIs:
 
 1. Navigate to **My Organization > Team API Library**.
-2. Click on the **+** button and select [**Create API Call**](../resources/control-flow/backend-logic/api/create-test-api-calls.md).
+2. Click on the **+** button and select [**Create API Call**](../../resources/control-flow/backend-logic/api/create-test-api-calls.md).
 3. To use the shared API, open the project in which you want to use the API and click on **API Calls** from the Navigation Menu.
     1. Click **+** and select **Use Team API**.
     2. A pop will open displaying the list of shared APIs, click on it to add it to your project.
