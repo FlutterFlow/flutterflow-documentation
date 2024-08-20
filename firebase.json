@@ -420,12 +420,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/enddrawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#end-drawer",
         "type": 301
       },
       {
@@ -815,7 +815,7 @@
       },
       {
         "source": "/actions/actions/navigation/close-dialog-drawer-etc.",
-        "destination": "/",
+        "destination": "/resources/ui/pages/scaffold-elements#drawer-action",
         "type": 301
       },
       {
@@ -1025,7 +1025,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
