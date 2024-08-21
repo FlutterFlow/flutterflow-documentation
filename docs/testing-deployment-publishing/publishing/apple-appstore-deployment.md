@@ -167,6 +167,8 @@ Please follow these steps to generate your API Key:
 
 1. Return to the App Store Connect page. If you have closed this window, navigate to [App Store Connect](https://appstoreconnect.apple.com/login) and select **Users and Access,** and then select **Keys** (blue text).
 
+*INSERT NEW INFOMATION HERE* If you haven't added a key before, click 'Integrations' and you will see 'request access'. For further details, view FlutterFlow Video here> https://youtu.be/L2BpgVog4so?si=yS9r_PBeORgd6Uhp&t=240
+
 2. If you see the **Request Access** button, click on it.
 3. If you haven't added any key before, click on the **Generate API Key**. Otherwise, select the **Add button (+).**
 4. A popup will appear. Enter your API Key Information:
