@@ -25,12 +25,12 @@
       },
       {
         "source": "/getting-started/dashboard",
-        "destination": "/",
+        "destination": "/flutterflow-ui/dashboard",
         "type": 301
       },
       {
         "source": "/getting-started/dashboard/my-organization",
-        "destination": "/",
+        "destination": "/flutterflow-ui/my-organization",
         "type": 301
       },
       {
@@ -40,7 +40,7 @@
       },
       {
         "source": "/getting-started/ui-builder/navigation-menu",
-        "destination": "/flutterflow-ui/widget-palette",
+        "destination": "/flutterflow-ui/builder#navigation-menu",
         "type": 301
       },
       {
@@ -1175,12 +1175,12 @@
       },
       {
         "source": "/actions/actions/utilities/set-dark-mode-setting",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#set-dark-mode-setting",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/copy-to-clipboard",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#copy-to-clipboard",
         "type": 301
       },
       {
@@ -1225,17 +1225,17 @@
       },
       {
         "source": "/actions/actions/share/send-email",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-email",
         "type": 301
       },
       {
         "source": "/actions/actions/share/call-number",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#call-number",
         "type": 301
       },
       {
         "source": "/actions/actions/share/send-sms",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-sms",
         "type": 301
       },
       {

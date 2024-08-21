@@ -6,6 +6,8 @@ tags: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
 sidebar_position: 1
 keywords: [Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Backend Query
 
@@ -147,11 +149,6 @@ Caching backend queries works for all [types of queries](#types-of-query).
 For Firebase queries, enable Single Time Query if you want the query to fetch data only once. Otherwise, the query operates in real-time, updating automatically as soon as the data changes.
 :::
 
-
-
-
-
-
 ### When to cache
 
 In general, any data that is static, slowly changing, or read more often than they are updated can be cached to improve performance and reduce the load on the server. A few examples are
@@ -191,35 +188,37 @@ To cache the backend query:
 1. Ensure you have added a backend query. For this example, to retrieve data from a Firebase 
 document, we add a backend query at the page level as *Single Time Query*. We use a document reference to get the employee details.
 
+  <figure>
+      ![example-bq.png](../imgs/example-bq.png)
+    <figcaption class="centered-caption">Querying employee details using document reference</figcaption>
+  </figure>
 
-<figure>
-    ![example-bq.png](../imgs/example-bq.png)
-  <figcaption class="centered-caption">Querying employee details using document reference</figcaption>
-</figure>
-
-1. Open **Query Cache Settings** and **Enable Query Caching**.
-2. Determine the **Scope** of the cache. If you set it to **App Level** and the *exact* same query is made on any other page of the app, it will display the result from the cache. However, if you set the **Page Level**, the cached result will be used only on that page if the query is made multiple times on the same page.
-3. If the current query is completely new/different, create a **Query Name**. If not, and you want to use the cached result of this query (that might be created somewhere else), select the name from the list.
+2. Open **Query Cache Settings** and **Enable Query Caching**.
+3. Determine the **Scope** of the cache. If you set it to **App Level** and the *exact* same query is made on any other page of the app, it will display the result from the cache. However, if you set the **Page Level**, the cached result will be used only on that page if the query is made multiple times on the same page.
+4. If the current query is completely new/different, create a **Query Name**. If not, and you want to use the cached result of this query (that might be created somewhere else), select the name from the list.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/f2efd72f590e4e83b67fe70da18ee193?sid=618d1d7d-a8de-4a78-b177-1fdab616638e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
-1. If we leave this example here, we'll have data inaccuracy issues. That means when any employee 
+5. If we leave this example here, we'll have data inaccuracy issues. That means when any employee 
 data is cached, the same data will be used for all employees, which is not what we want. We want to cache data for all individual employees. To do so, we can set the **Unique Key**. Here the unique key can be the employee id or the document reference.
 
+<Tabs>
+<TabItem value="1" label="Data inaccuracy without Unique Key" default>
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b0383a28dd2c4ad4aa761c27be9f7d3d?sid=2d6ec072-976a-4116-b971-78c1c8e79704" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
+</TabItem>
+<TabItem value="2" label="Adding Unique Key ">
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/ed9716ec74e542d8a264e87235ce3aec?sid=7b03c276-a8bb-4dbf-9131-acf0a1fa9e8b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</TabItem>
+</Tabs>
 
 <p></p>
 
-1. At this point, we have enabled the caching, but we still have one problem. Once the query is 
+6. At this point, we have enabled the caching, but we still have one problem. Once the query is 
 cached, it will be used forever, although we update the data in our backend. This is because we are not clearing or invalidating the cache at the appropriate time. To properly invalidate the cache, you can use the **Should Override Cache** property OR **Clear Query Cache** action. This helps you remove the cached data that has become stale or outdated.
 
     1. The *Should Override Cache* property accepts a boolean (True/False). That means we can 
@@ -233,7 +232,7 @@ cached, it will be used forever, although we update the data in our backend. Thi
 
 <p></p>
 
-1. Now, we must add a logic that determines whether to override the cache (every time when the 
+7. Now, we must add a logic that determines whether to override the cache (every time when the 
 page is loaded) and set the *isCacheOverride* variable accordingly. Here is how it goes:
 
     1. First, check if the *lastCacheTime* is set or not. If not, set the current time to it.
@@ -276,3 +275,44 @@ conflict with others. Failing to do so may keep on updating the common *lastCach
 
 :::
 
+### Clear Query Cache [Action]
+This action provides a simple way to clear the query cache, which can be helpful in situations where the cached data is no longer accurate or needs to be refreshed. By executing this action, you reset the query cache, allowing the app to fetch and display the most up-to-date data.
+
+:::tip
+This can help improve app performance and ensure users see the most recent information available.
+:::
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
+2. Select **Actions** from the [properties panel](../../../../intro/ff-ui/builder.md#properties-panel) (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
+3. Search and select the **Clear Query Cache** (under *State Management*) action.
+4. Determine the **Scope** of the cache, whether it lives at the **App Level** or **Page Level**.
+5. Set the **Query Name** to the one you gave while adding the query cache.
+6. If you have set the **Unique Key** while caching a query, you should add the same key here as well. This ensures that the cache will be removed only for specific data.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Dd7WqsRVbJbAL4ml2Gse?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
