@@ -1560,7 +1560,7 @@
       },
       {
         "source": "/data-and-backend/api-calls/soap-api-example-countries",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/soap-api",
         "type": 301
       },
       {
