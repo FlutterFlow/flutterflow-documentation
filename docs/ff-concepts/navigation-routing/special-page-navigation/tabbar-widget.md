@@ -24,7 +24,7 @@ To add the TabBar widget to your app:
 3. To customize the Tab:
     1. Select the **Tab >** Move to **Properties Panel**.
     2. Use the **Text** property to change the label of the Tab.
-    3. You can also [add Icon](../../../resources/ui/widgets/built-in-widgets/icons.md), align it horizontally, and set its margin. **Tip**: To only display Icon, remove the Text value.
+    3. You can also [add Icon](../../../resources/ui/widgets/basic-widgets/icons.md), align it horizontally, and set its margin. **Tip**: To only display Icon, remove the Text value.
 4. Inside the **TabBar Page**, you can replace the existing **Text** widget with any widget of your choice.
 5. To add a new tab, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 
@@ -73,7 +73,7 @@ To customize the tab label:
 1. Select the **TabBar** widget > move to the **Properties Panel > Label Properties**.
 2. To set different colors when the tab is selected and unselected, use the **Selected Color** and **Unselected Color** properties.
 3. To add some space around the label, use the **Label Padding** property.
-4. Use the **Label Style** property to change its [styling](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties). You can also set the label styling for the unselected tab text by enabling the **Custom Unselected Label Style**.
+4. Use the **Label Style** property to change its [styling](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties). You can also set the label styling for the unselected tab text by enabling the **Custom Unselected Label Style**.
 
 <div style={{
     position: 'relative',

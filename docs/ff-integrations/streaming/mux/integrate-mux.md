@@ -482,7 +482,7 @@ The live indicator appears as soon as you start live streaming (at the top left 
 To customize the live indicator:
 
 * To change its text (i.e. from LIVE to something else), open the **Live Text Style** section and
-  set the **Text**. You can also [customize the text](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties) if
+  set the **Text**. You can also [customize the text](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties) if
   needed.
 * To change the indicator appearance, open the **Live Container & Icon** section and use the
   property such as **Icon**, **Icon size**, **Icon Color**, **Background Color**, and **Border

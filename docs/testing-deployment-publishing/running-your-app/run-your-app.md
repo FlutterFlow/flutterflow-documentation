@@ -48,7 +48,7 @@ functionality.
 
 ## Test Mode
 
-The **Test Mode** runs a web version of your Flutter app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
+The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
 emulator or on-device. Running your app in Test Mode helps you experiment,
 test UIs, and fix bugs faster.
 

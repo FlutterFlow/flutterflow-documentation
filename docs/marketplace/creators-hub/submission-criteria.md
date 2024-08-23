@@ -368,7 +368,7 @@ Building a solid app template goes beyond surface-level design. It's about creat
 - **Why It Matters:** A clean and organized widget tree makes your project more understandable, maintainable, and less prone to errors. It also makes it easier for others to collaborate on your project.
 - **What To Do:**
     - **Use descriptive names for widgets and variables:** Make your code self-documenting by using clear and meaningful names for major nodes.
-    - **Avoid deeply nested widgets:** If your widget tree becomes too deeply nested (>10 levels), consider breaking it down into smaller, reusable [components](../../resources/ui/components/overview.md).
+    - **Avoid deeply nested widgets:** If your widget tree becomes too deeply nested (>10 levels), consider breaking it down into smaller, reusable [components](../../resources/ui/components/intro-components).
 
 
 

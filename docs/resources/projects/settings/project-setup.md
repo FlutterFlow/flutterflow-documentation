@@ -286,7 +286,7 @@ To create a walkthrough:
 3. Now, we must add the steps for our walkthrough. Each step that we add here acts as a separate screen or popup that nicely animates to highlight the UI element. To add steps:
     1. Click on the **+ Add Step**.
     2. Choose the widget to highlight by clicking **Widget Unset**. In the right-side preview, select the desired widget and click **Confirm**.
-    3. When the widget is in focus, you may want to present information about it; this could be a simple text or a custom component (e.g., a text with an arrow). You have complete control over what you want to display via a [component](../../../resources/ui/components/overview.md). Click the diamond icon to create a new component and then set it to **Content**.
+    3. When the widget is in focus, you may want to present information about it; this could be a simple text or a custom component (e.g., a text with an arrow). You have complete control over what you want to display via a [component](../../../resources/ui/components/intro-components). Click the diamond icon to create a new component and then set it to **Content**.
     4. You can also choose where the Content will be displayed by setting the **Content Alignment**.
     5. Choose a **Focus Shape** for the widget—either **Circle** or **Rectangle**.
     6. Pick an **Overlay Color** that you want to display when the widget is highlighted.

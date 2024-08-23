@@ -22,7 +22,7 @@ To add the PageView widget to your app:
 2. By default, it adds three pages and shows the first one in the canvas. In the widget tree, it is represented as **PageView Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the page you want to see.
 3. To add a new page, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 4. To delete any page, select the **PageView Page** (which you want to delete) from the widget tree or the canvas area and press the **Delete** key on the keyboard.
-5. By default, PageView Page contains an [Image](../../../resources/ui/widgets/built-in-widgets/image.md) widget; however, you can customize it as per your requirement. For example, if you want to use the PageView widget to create an onboarding experience, you could wrap (`⌘` + B) the default image widget inside the Stack widget and then add some more widgets.
+5. By default, PageView Page contains an [Image](../../../resources/ui/widgets/basic-widgets/image.md) widget; however, you can customize it as per your requirement. For example, if you want to use the PageView widget to create an onboarding experience, you could wrap (`⌘` + B) the default image widget inside the Stack widget and then add some more widgets.
 
 <div style={{
     position: 'relative',
@@ -55,7 +55,7 @@ The PageView widget is an incredibly versatile widget that can be utilized in a 
 
 In such situations, you might consider adding an infinite scroll on this widget, which automatically loads the new pages as you swipe.
 
-We have already covered how to [add infinite scroll on ListView](../../../resources/ui/widgets/built-in-widgets/list-grid.md#adding-infinite-scroll) widget, which will give you an overall idea of how to add infinite scroll on the PageView widget as well.
+We have already covered how to [add infinite scroll on ListView](../../../resources/ui/widgets/composing-widgets/list-grid.md#adding-infinite-scroll) widget, which will give you an overall idea of how to add infinite scroll on the PageView widget as well.
 
 ## Customizing
 

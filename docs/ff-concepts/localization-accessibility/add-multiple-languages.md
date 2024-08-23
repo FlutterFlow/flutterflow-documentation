@@ -139,8 +139,8 @@ You can skip this step if you have already built your page.
 To build a page:
 
 1. Create a page and add the Column widget.
-3. Add a [**Text**](../../resources/ui/widgets/built-in-widgets/text.md) Widget that shows some texts.
-4. Add a [**Button**](../../resources/ui/widgets/built-in-widgets/button.md) to change the language and add some padding around it.
+3. Add a [**Text**](../../resources/ui/widgets/basic-widgets/text.md) Widget that shows some texts.
+4. Add a [**Button**](../../resources/ui/widgets/basic-widgets/button.md) to change the language and add some padding around it.
 
 <div style={{
     position: 'relative',
@@ -427,12 +427,12 @@ Let's build an example of showing the current language code in a Text widget.
 
 To retrieve the current language code:
 
-1. Add the **Column > [Text](../../resources/ui/widgets/built-in-widgets/text.md)** widget to your app.
+1. Add the **Column > [Text](../../resources/ui/widgets/basic-widgets/text.md)** widget to your app.
 2. Move to the property panel and click on the **Set from Variable** text.
 3. Select **Source** as **Internationalization** and **Available Options** as the **Current Language Code**.
 4. (Optional) Set the *Default Variable Value* if you wish to.
 5. Click **Confirm**.
-6. Add [**Button**](../../resources/ui/widgets/built-in-widgets/button.md) widgets with an action to change the language. To change the language manually, find the instructions [here](#changing-app-language-manually).
+6. Add [**Button**](../../resources/ui/widgets/basic-widgets/button.md) widgets with an action to change the language. To change the language manually, find the instructions [here](#changing-app-language-manually).
 
 <div style={{
     position: 'relative',
@@ -494,14 +494,14 @@ Let's build an example of showing the nation/country flag in a Text widget.
 
 To show the language-dependent text:
 
-1. Add the **Column > [Text](../../resources/ui/widgets/built-in-widgets/text.md)** widget to your app.
+1. Add the **Column > [Text](../../resources/ui/widgets/basic-widgets/text.md)** widget to your app.
 2. Move to the property panel and click on the **Set from Variable** text.
 3. Select **Source** as **Internationalization** and **Available Options** as the **Language Dependent Text**.
 4. Click on the language name to open the section and enter your text inside the **Value** input box.
 5. Similarly, enter a value for other languages as well.
 6. (Optional) Set the default value if you wish to.
 7. Click **Confirm**.
-8. Add [**Button**](../../resources/ui/widgets/built-in-widgets/button.md) widgets with an action to change the language. To change the language manually, find the instructions [here](#changing-app-language-manually).
+8. Add [**Button**](../../resources/ui/widgets/basic-widgets/button.md) widgets with an action to change the language. To change the language manually, find the instructions [here](#changing-app-language-manually).
 
 <div style={{
     position: 'relative',

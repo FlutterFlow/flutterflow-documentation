@@ -15,7 +15,7 @@ The Wrap widget is similar to Row and Column as it shows its children one after 
 
 Here's an example of how you can use a Wrap widget in your project:
 
-1. First, drag the [**Container**](../../../resources/ui/widgets/built-in-widgets/container.md) widget from the **Layout Elements** tab (in the Widget Panel) or add it directly from the widget tree and set its **width** to **infinity** and **height** to **200**.
+1. First, drag the [**Container**](../../../resources/ui/widgets/basic-widgets/container.md) widget from the **Layout Elements** tab (in the Widget Panel) or add it directly from the widget tree and set its **width** to **infinity** and **height** to **200**.
 
 2. Add the **Wrap** widget from the **Layout Elements** tab inside the Container.
 3. Add the **Button** widget inside the Wrap widget.
