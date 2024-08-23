@@ -3,7 +3,7 @@ slug: /resources/data-representation/custom-data-types
 title: Custom Data Types
 description: Learn how to create and utilize custom data types in FlutterFlow to handle complex data structures that predefined types can't cover.
 tags: [Custom Data Types, FlutterFlow, Data Representation]
-sidebar_position: 2
+sidebar_position: 3
 keywords: [Custom Data Types, FlutterFlow, Data Representation]
 ---
 
@@ -21,13 +21,11 @@ Custom data types have several key advantages:
 - **Efficient**: Simplifies complex data handling, reducing errors and redundant code.
 
 :::info
-
 - Use custom data type when predefined data types, such as _integer_ and _string_ may not be enough to store certain kinds of information.
 - FlutterFlow also supports some [**Built-in Data Types**](data-types.md#built-in-data-types).
-
 :::
+![custom-data-types.avif](..%2Fimgs%2Fcustom-data-types.avif)
 
-![custom data type](../imgs/custom-data-type.avif)
 When you create a custom data type, it internally creates a Struct. A struct, or structure, is a composite data type that lets you combine fields of different data types to construct a data structure to suit your specific needs.
 
 :::info
