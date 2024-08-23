@@ -29,9 +29,10 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
     <InfoCard title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
     <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/>
     <InfoCard   title="Start Building" description="Jump right into a quick start on how to build a simple app." pagePath="/quickstart"/>
-    <InfoCard title="Marketplace Guides" description="Comprehensive guides on creating, buying, and submitting items on the Marketplace." pagePath="/marketplace" />
-    <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
     <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
+    <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
+    <InfoCard title="Submit Bug Report" description="Detailed guide on submitting bug report." pagePath="/misc/submit-bug-report" />
+
 </InfoCards>
 
 <p></p>

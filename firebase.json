@@ -2070,7 +2070,7 @@
       },
       {
         "source": "/troubleshooting/submit-bug-reports",
-        "destination": "/",
+        "destination": "/misc/submit-bug-report",
         "type": 301
       },
       {
