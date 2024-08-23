@@ -1,21 +1,13 @@
 ---
-title: Composing Widgets
-sidebar_position: 2
-tags: [Layout Elements]
+title: Rows, Column & Stack
+sidebar_position: 1
+tags: [Layout Elements, Widgets]
+keywords: [Rows, Columns, Stack, Layout, Widgets]
+slug: /resources/ui/widgets/composing-widgets/rows-column-stack
 ---
 
-# Composing widgets
 
-When creating a user interface in FlutterFlow, you can think of using widgets
-like building with blocks. Each widget can be
-combined with others to form more complex parts of your app's interface. For
-instance, you might use a basic widget like a `Text` or `Button`, and place it
-inside a layout widget such as a `Row` or `Column` to position it alongside
-other
-elements. As you nest these widgets inside one another, you create a layered and
-interconnected structure.
-
-## Rows vs Columns vs Stack
+# Rows, Column & Stack
 
 In Flutter, `Rows`, `Columns`, and `Stacks` are fundamental layout widgets that
 help
@@ -36,7 +28,7 @@ edges of the `Stack`, giving you control over the exact location of each element
 Each of these widgets serves different purposes and choosing between them
 depends on how you need to arrange your UI components:
 
-![row-col-stack.png](../imgs/row-col-stack.png)
+![row-col-stack.png](../../imgs/row-col-stack.png)
 
 <!---TODO #### Choosing your parent widget
 link to quickstart for how to choose parent widget [Rows/Column/Stacks]
@@ -58,7 +50,7 @@ FlutterFlow allows you to set Row's Main Axis property to the following
 types:
 
 <figure>
-    ![row-main-axis.png](../imgs/row-main-axis.png)
+    ![row-main-axis.png](..%2F..%2Fimgs%2Frow-main-axis.png)
   <figcaption class="centered-caption">Row's Main Axis property has the following types: Start, End, Center, SpaceEvenly, SpaceAround, SpaceBetween</figcaption>
 </figure>
 
@@ -70,7 +62,7 @@ to bottom.
 FlutterFlow allows you to set Column's Main Axis property to the following
 types:
 <figure>
-    ![column-main-axis.png](../imgs/column-main-axis.png)
+    ![column-main-axis.png](..%2F..%2Fimgs%2Fcolumn-main-axis.png)
   <figcaption class="centered-caption">Column's Main Axis property has the following types: Start, End, Center, SpaceEvenly, SpaceAround, SpaceBetween</figcaption>
 </figure>
 
@@ -89,7 +81,7 @@ Start, Center, End.
 aligned from top to bottom within the row.
 
 <figure>
-    ![row-cross.png](../imgs/row-cross.png)
+    ![row-cross.png](..%2F..%2Fimgs%2Frow-cross.png)
   <figcaption class="centered-caption">Cross Axis types for Row. Main Axis of Row is set to Center.</figcaption>
 </figure>
 
@@ -98,7 +90,7 @@ aligned from top to bottom within the row.
 align from left to right within the column.
 
 <figure>
-    ![column-cross.png](../imgs/column-cross.png)
+    ![column-cross.png](..%2F..%2Fimgs%2Fcolumn-cross.png)
   <figcaption class="centered-caption">Cross Axis types for Column. Main Axis of Column is set to Center</figcaption>
 </figure>
 
@@ -111,7 +103,7 @@ FlutterFlow you can control the `Stack` children's alignment using the
 using
 `X` and `Y` coordinates.
 
-![stack-align.png](built-in-widgets/imgs/stack-align.png)
+![stack-align.png](../built-in-widgets/imgs/stack-align.png)
 
 Understanding these axes and their properties is essential for effectively
 designing layouts that behave as expected on different screen sizes and
@@ -143,7 +135,7 @@ but otherwise will be constrained to the available width.
 - **Expanded:** Make the widget fill the space along the main axis (horizontal for Row, vertical for Column).
 
 :::tip[Using Expanded & Flexible in an Example]
-![expanded.png](built-in-widgets/imgs/expanded.png)
+![expanded.png](../built-in-widgets/imgs/expanded.png)
 
 1. **Default Behavior:** Here, you see two child widgets displayed next to each other, each 
    occupying only the necessary space to show its content without any expansion.
@@ -163,7 +155,7 @@ Let's understand Flexible concept with another example:
 
 :::tip[Flexible Concept]
 
-![flexible.png](built-in-widgets/imgs/flexible.png)
+![flexible.png](../built-in-widgets/imgs/flexible.png)
 
 - In the left image, Child 2 (in purple) and Child 3 (in green) retain their intrinsic sizes due to **default settings**, causing their content to appear cut off when the container's width is limited. They cannot adapt to smaller spaces, leading to potential content clipping. This highlights the limitations of default settings in confined spaces where dynamic resizing would improve content visibility.
 
@@ -187,7 +179,7 @@ in the parent container. It will occupy only the space required for its content 
 When you assign a flex factor, the widget can expand to fill any available space in the parent container. For instance, in a Row or Column, if one widget has a flex factor of 1 and another has a flex factor of 2, the second widget will take up twice as much space as the first.
 
 :::tip[Flex Example]
-![flex.png](built-in-widgets/imgs/flex.png)
+![flex.png](../built-in-widgets/imgs/flex.png)
 
 - Child 2 (purple) with a higher Flex factor (8) consistently occupies a larger portion of space, 
 showing how a higher number increases the space allocation relative to other widgets.
@@ -204,7 +196,7 @@ com/embed/Mmzwb0mYEQ4" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 
 ## Scrollability
-Scrollability for **Row or Column** widgets in Flutter determines whether the content within these layouts can extend beyond the visible boundaries of the screen or container, enabling horizontal or vertical scrolling:
+Scrollability for **Row or Column** widgets in FlutterFlow determines whether the content within these layouts can extend beyond the visible boundaries of the screen or container, enabling horizontal or vertical scrolling:
 
 - **Allow Scrolling:** When enabled, this allows the content to exceed the device or parent 
   container’s screen limits, making the overflow content accessible through scrolling.

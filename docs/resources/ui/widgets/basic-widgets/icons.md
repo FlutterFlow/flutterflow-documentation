@@ -1,24 +1,25 @@
 ---
 tags: [Base Elements]
+slug: /resources/ui/widgets/icons
 ---
 
 # Icons
 
 Icons are integral elements in user interfaces, providing visual cues that enhance user interaction and aesthetic appeal. They communicate action, represent functionality, and improve navigation efficiency within applications. 
 
-![icon.png](imgs/icon.png)
+![icon.png](../built-in-widgets/imgs/icon.png)
 
 ## Types of Icon widgets
 
 FlutterFlow allows a bunch of widgets and components: 
 
-- **Icon Widget**: The Icon widget in Flutter is used for displaying symbols from a variety of 
+- **Icon Widget**: The **Icon** widget in FlutterFlow is used for displaying symbols from a variety of 
   available icon packs like Material Icons. It's straightforward to use, allowing for quick integration of visual symbols into your app.
 
-- **IconButton Widget**: The IconButton widget combines the functionality of an icon with the 
+- **Icon Button Widget**: The **IconButton** widget combines the functionality of an icon with the 
   capabilities of a button, making it a clickable icon. It's commonly used for actions like opening a menu, submitting a form, or any other interactive task.
 
-- **ToggleIcon Widget**: The ToggleIcon widget offers a specific functionality where the icon 
+- **Toggle Icon Widget**: The **ToggleIcon** widget offers a specific functionality where the icon 
   toggles between two states based on a boolean condition. This widget is ideal for "favorite" or "like" buttons, where the icon state changes to represent an active or inactive state. The ToggleIcon reacts to user taps, changing its appearance and also allowing for callback functionality to handle the state change.
 
 ## Common Icon Properties
@@ -29,7 +30,7 @@ Upon selecting the Icon, you can modify properties such as **Icon color** and **
 You can also upload your own licensed Custom Icons. Check out [**this video**](https://youtu.be/rlGkbnhP75g) to learn more.
 :::
 
-## IconButton Properties
+## Icon Button Properties
 The Properties Panel for your IconButton allows you to modify the Icon Properties, Button Styling, Disabled state, and Hovered state properties. It also lets you determine if you want a loading indicator when the icon button is clicked.
 
 To get a quick demo of the styling changes, check this out:
@@ -60,12 +61,12 @@ To get a quick demo of the styling changes, check this out:
 </div>
 
 
-## ToggleIcon Properties
+## Toggle Icon Properties
 
 
 ToggleIcon is a special component created for you that lets you add a toggle on and toggle off icon, and define a State variable that determines the state of the Toggle icon. The properties are straightforward and include the following:
 
-![toggle.png](imgs/toggle.png)
+![toggle.png](../built-in-widgets/imgs/toggle.png)
 
 ### On Toggle [Action]
 

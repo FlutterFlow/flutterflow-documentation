@@ -1,6 +1,7 @@
 ---
-title: Widget Configurations
-sidebar_position: 1
+title: Widget Properties
+slug: /resources/ui/widgets/properties
+sidebar_position: 2
 ---
 
 # Properties Panel
@@ -55,7 +56,7 @@ Some of the widgets that can handle multiple children include **Column, Row, Sta
 GridView, and PageView**.
 
 :::info
-To learn more about [**Generating Dynamic Children**](generate-dynamic-children), refer here.
+To learn more about [**Generating Dynamic Children**](composing-widgets/generate-dynamic-children.md), refer here.
 :::
 
 ## Animations

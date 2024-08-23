@@ -1,11 +1,35 @@
 ---
-title: Page/Scaffold Elements
-slug: scaffold-elements
+title: Page Elements
+slug: /resources/ui/pages/scaffold
 sidebar_position: 2
 toc_max_heading_level: 5
 ---
 
-# Scaffold Elements
+# Page Elements
+
+Page elements in FlutterFlow are the key elements that define the structure and functionality of each page in your app. Understanding these elements is crucial for building intuitive and effective user interfaces. From navigational elements like the **AppBar** and Drawer to interactive components like **Floating Action Buttons (FABs)**, each element plays a specific role in shaping the user experience.
+
+
+Here's how the `Scaffold` contributes to page design in FlutterFlow:
+
+- **[AppBar](page-elements.md#appbar)** : Scaffold allows you to easily include an `AppBar` at the top of the
+  page,
+  which can house the title, navigation controls, and other actions.
+
+- **[Floating Action Button (FAB)](page-elements.md#floating-action-button-fab)**: An action button that is commonly used for
+  primary actions on the screen, like adding a new contact or composing a message.
+
+- **[Drawer & End-Drawer](page-elements.md#drawers)**: A slide-out menu for app navigation, accessible from
+  the `AppBar` or by swiping from the side.
+
+- **Body:** The main content area where you place your widgets for the body of the Page.
+
+:::note[PLEASE NOTE]
+In FlutterFlow, you won't find a section explicitly labeled as "Body". For example, in the
+`ProfileSettingsPage`, the `Column` serves as the root of the widget tree for the body, with the rest of the child widgets assembled underneath.
+
+![scaffold-elements.png](../imgs/scaffold-elements.png)
+:::
 
 <!--
 :::info
@@ -22,7 +46,7 @@ and offers customization with a variety of styles and functionalities.
 
 The AppBar is divided into the following sections:
 
-- **Leading:** Typically holds a **menu** or **back icon** that provides navigation control. By default, if there is a [**drawer**](#drawers) or [**page navigation**](../../../ff-concepts/navigation-routing/page-navigation.md) with ["Allow Back Navigation" enabled](../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action), a specific icon (such as a menu or back arrow) is displayed. However, you can override this with another [**Icon widget**](../../ui/widgets/built-in-widgets/icons.md) if desired, allowing for more tailored navigation options.
+- **Leading:** Typically holds a **menu** or **back icon** that provides navigation control. By default, if there is a [**drawer**](#drawers) or [**page navigation**](../../../ff-concepts/navigation-routing/page-navigation.md) with ["Allow Back Navigation" enabled](../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action), a specific icon (such as a menu or back arrow) is displayed. However, you can override this with another [**Icon widget**](../widgets/basic-widgets/icons.md) if desired, allowing for more tailored navigation options.
 - **Title:** Primarily serves to indicate the content of the active screen or to display the
   name of the application, aiding users in recognizing their context within the app. This section
   can also be customized with different widgets for a more tailored visual representation.
@@ -182,7 +206,7 @@ enable Nav Bar.
 Initially, your NavBar will not have any pages in it. You'll see a message
 instructing you to add at least two pages. Before proceeding, make sure to
 create at least two pages. If you need help with adding a new page, you can find
-[**more information here**](pages.md#creating-a-page).
+[**more information here**](intro-pages#creating-a-page).
 :::
 
 ![nav-bar.png](../imgs/nav-bar.png)

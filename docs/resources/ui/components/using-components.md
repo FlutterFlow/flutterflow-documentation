@@ -199,6 +199,6 @@ You can create a recursive component, meaning the component can include an insta
 
 For example, in social media applications or forums, comments can have replies, and each reply can have further replies. A recursive component can display this nested structure effectively.
 
-![recursive-comp.png](../../imgs/recursive-comp.png)
+![recursive-comp.png](../imgs/recursive-comp.png)
 
 

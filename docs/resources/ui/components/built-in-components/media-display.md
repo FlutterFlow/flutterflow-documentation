@@ -8,7 +8,7 @@ description: Learn how to add MediaDisplay widget in your FlutterFlow app.
 # MediaDisplay
 The **MediaDisplay** widget in FlutterFlow automatically detects the type of media fetched from a URL and adjusts the widget accordingly. For instance, if the URL returns an image, the widget will behave as an Image widget.
 
-This versatility allows you to easily present various types of media within your app. For example, it can be integrated into scrollable widgets like [ListView](../../widgets/built-in-widgets/list-grid.md#listview-widget) for displaying activity feeds or [GridView](../../widgets/built-in-widgets/list-grid.md#gridview-widget) for presenting photos and videos together.
+This versatility allows you to easily present various types of media within your app. For example, it can be integrated into scrollable widgets like [ListView](../../widgets/composing-widgets/list-grid.md#listview-widget) for displaying activity feeds or [GridView](../../widgets/composing-widgets/list-grid.md#gridview-widget) for presenting photos and videos together.
 
 ## Adding MediaDisplay widget
 
@@ -106,7 +106,7 @@ You can customize the appearance and behavior of the widget using the various pr
 
 ### Customizing Image
 
-To customize the widget when image is displayed, refer [here](../../widgets/built-in-widgets/image.md#common-image-properties).
+To customize the widget when image is displayed, refer [here](../../widgets/basic-widgets/image.md#common-image-properties).
 
 ### Customizing Video
 

@@ -1,5 +1,6 @@
 ---
-title: Page Configurations
+title: Page Properties
+slug: /resources/ui/pages/properties
 sidebar_position: 1
 ---
 

@@ -6,7 +6,7 @@ keywords: [Custom Components]
 tags: [Components]
 ---
 
-# Custom Components
+# Components
 
 Custom Components or just user-defined Components in FlutterFlow are custom widgets you create to meet specific needs in your app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
 create reusable UI elements. This approach ensures consistency, saves
@@ -148,14 +148,14 @@ your components.
 
 Here’s a detailed look at what you can typically find and modify in this panel:
 
-![components-configurations.png](../../imgs/components-configurations.png)
+![components-configurations.png](../imgs/components-configurations.png)
 
 ### Component Parameters
 
 In FlutterFlow, component parameters are values passed down from a parent entity like a page or another component. These parameters make the component adaptable and dynamic, adjusting to the context in which it is used.
 
 :::info
-Learn [**how to add a component to an entity,**](using-components) such as a page or another
+Learn [**how to add a component to an entity,**](using-components.md) such as a page or another
 component, and how to pass parameters.
 :::
 
@@ -167,7 +167,7 @@ the page using the current component.
 
 Adding an action to a component element is exactly the same experience as adding actions to any page elements. Here's a quick overview:
 
-![component-actions.png](../../imgs/component-actions.png)
+![component-actions.png](../imgs/component-actions.png)
 
 For component actions, you can establish specific behaviors or functions that are triggered by
 certain events related to the component's lifecycle, such as **On Initialization**.

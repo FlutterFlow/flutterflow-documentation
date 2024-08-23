@@ -69,7 +69,7 @@ The DragTarget widget in this example allows users to drop items onto the shelf.
 Let's see how to add DragTarget widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DragTarget** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree.
-2. Inside the **DragTarget** widget, add a [**Container**](../../widgets/built-in-widgets/container.md) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
+2. Inside the **DragTarget** widget, add a [**Container**](../../widgets/basic-widgets/container.md) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
 3. Now, you need to specify the type of data this target will receive. To do so select the **DragTarget widget > Properties Panel > Draggable Properties >** specify the **Type** of the data. This is crucial for ensuring that only the correct items can be dropped on the target.
 
 <div class="video-container"><iframe src="https://www.loom.

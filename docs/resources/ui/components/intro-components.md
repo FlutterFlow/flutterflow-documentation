@@ -1,11 +1,12 @@
 ---
-title: Overview
+title: Introduction to Components
 sidebar_position: 0
+slug: /resources/ui/components
 ---
 
 # Components
 
-Components in FlutterFlow are reusable elements. You design once and utilize throughout your app
+Components in FlutterFlow are reusable widgets. You design the widget once and utilize throughout your app
 to save time, ensure consistency, and simplify maintenance.
 
 Components help in the following ways:
@@ -47,11 +48,8 @@ Leveraging components effectively helps you build a consistent, efficient, and m
   out-of-the-box solutions provided by FlutterFlow that can be directly integrated into any project
   to offer specific functionalities.
 
-- **[Custom Components](custom-components/getting-started.md)**: You can also build your own 
-  components by assembling 
-  multiple
-  widgets using FlutterFlow’s drag-and-drop interface. This method involves strategically
-  positioning atomic widgets such as `TextField`, `Button`s, or `Image`s, etc within the molecular
+- **[Custom Components](creating-components)**: You can also build your own 
+  components by assembling multiple widgets using FlutterFlow’s drag-and-drop interface. This method involves strategically positioning atomic widgets such as `TextField`, `Button`s, or `Image`s, etc within the molecular
   widgets like `Row`, `Column`, or `Stack` to create a combined widget that serve a specific
   function, like a `LoginComponent` or a `SearchBar`.
 
