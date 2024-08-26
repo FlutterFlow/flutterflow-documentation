@@ -1,13 +1,13 @@
 ---
 slug: /concepts/multiple-languages
-title: Languages
+title: Localizing App
 tags: [Multilingual, Localization, Internationalization]
 keywords: [FlutterFlow, multiple languages, app localization, internationalization, multilingual support]
 description: Learn how to support multiple languages in your FlutterFlow app.
 sidebar_position: 1
 ---
 
-# Languages
+# Localizing App
 
 A multi-language feature allows you to show all your app's text in different languages.
 
@@ -528,3 +528,7 @@ To show the language-dependent text:
     </iframe>
 </div>
 <p></p>
+
+:::tip[Language Selector Widget]
+You can also use our in built component **[LanguageSelector widget](language-selector.md)** to allow the user the set the language of your app from a language dropdown.
+:::

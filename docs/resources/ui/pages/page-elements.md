@@ -154,6 +154,82 @@ of an app without cluttering the main interface.
 
 Using a similar approach, you can also add an End Drawer to your page.
 
+### Drawer [Action]
+
+Using this action, you can open and close the drawers with a tap of a button. For example, opening the drawer from the widget placed outside the Appbar and closing it from the widget placed inside the drawer.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/1kiL82Ri7aIzIn0TyHGy?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
+#### Types of drawer action
+
+There are three types of actions you can add to the drawer.
+
+- **Open Drawer**: Opens the regular drawer.
+- **Open End Drawer**: Opens the end drawer.
+- **Close Drawers**: Closes all the open drawers.
+
+
+Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
+
+1. Select the **Widget** (e.g. IconButton, Button) on which you want to define the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
+    1. Click on the **+ Add Action**.
+    2. On the right side, search and select the **Drawer** action.
+    3. Select the **Drawer Action Type** among the **Open Drawer**, **Open End Drawer**, and **Close Drawers.**
+    4. Click **Close**.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/b1KwyEEqfqH7orND2mkc?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
 ## Nav Bar
 
 The NavBar (or Navigation Bar) allows you to quickly navigate between pages of
