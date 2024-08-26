@@ -31,7 +31,7 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
     <InfoCard   title="Start Building" description="Jump right into a quick start on how to build a simple app." pagePath="/quickstart"/>
     <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
     <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
-    <InfoCard title="Submit Bug Report" description="Detailed guide on submitting bug report." pagePath="/misc/submit-bug-report" />
+    <InfoCard title="Submit Bug Report" description="Encountered a bug in FlutterFlow? Help us improve by submitting a bug report." pagePath="/misc/submit-bug-report" />
 
 </InfoCards>
 
