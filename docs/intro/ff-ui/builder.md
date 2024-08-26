@@ -49,3 +49,8 @@ In the [Canvas Area](canvas.md), you can see a preview of a device's screen and 
 
 The Properties Panel lets you modify both the visual appearance and interactive behavior of UI 
 elements on the canvas. It allows you to add [Actions](../../resources/control-flow/functions/action-flow-editor.md), set up a [Backend Query](../../resources/control-flow/backend-logic/backend-query/backend-query.md), add [Animations](../../ff-concepts/animations/animations.md) and more.
+
+The Properties Panel will vary slightly depending on the entity you have selected. To explore the details of each Properties Panel, click on the following:
+
+- **[Page Properties](../../resources/ui/pages/pages-properties.md)** (when you have selected a Page)
+- **[Widget Properties](../../resources/ui/widgets/widget-properties.md)** (when you have selected any widget, including built-in components)

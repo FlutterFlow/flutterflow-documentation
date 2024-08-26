@@ -49,7 +49,7 @@ Let's see how to add a TextField widget and see an example of displaying its val
 Here are the steps:
 
 1. First, add the TextField widget, move to the properties panel and give it a name.
-2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button.md) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
+2. Add the [**Button**](../../../../ui/widgets/basic-widgets/button.md) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
 
 <div style={{
     position: 'relative',
@@ -310,7 +310,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 
 ### Changing error message styling
 
-You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../ui/widgets/built-in-widgets/text.md#common-text-styling-properties).
+You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../ui/widgets/basic-widgets/text.md#common-text-styling-properties).
 
 ![changing-error-message-styling](../../imgs/changing-error-message-styling.avif)
 
@@ -320,7 +320,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](../../../../ui/widgets/built-in-widgets/icons.md#common-icon-properties).
+You can also [customize the icon's size and color](../../../../ui/widgets/basic-widgets/icons.md#common-icon-properties).
 
 ![adding-icon](../../imgs/adding-icon.avif)
 

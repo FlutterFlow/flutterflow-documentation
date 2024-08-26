@@ -113,7 +113,7 @@ You can change the appearance of the legend box by following the instructions be
 To customize the legend text and indicator:
 
 1. First, [enable the legend](#showing-legend).
-2. To style the legend text, scroll down to the **Legend Properties** > **Legend Text Properties** and change the style as per [here](../../../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties).
+2. To style the legend text, scroll down to the **Legend Properties** > **Legend Text Properties** and change the style as per [here](../../../widgets/basic-widgets/text.md#common-text-styling-properties).
 3. To add space between the indicator and the text, adjust the **Text Padding** property.
 4. You can change the indicator size by entering a value inside the **Indicator Size** property.
 5. To create rounded corners around the indicator, you can use the **Indicator Border Radius** property.

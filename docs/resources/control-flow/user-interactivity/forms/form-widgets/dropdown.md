@@ -48,7 +48,7 @@ Let's see how to add a *DropDown* widget and build an example that shows the sel
 
 1. Add the **DropDown** widget, move to the **Properties Panel > Define Options >** click **Add Options** to add items.
 2. To display the default value, move to the **Initial Configuration** section and enter the value. Ensure it matches one of the options added in the previous step.
-3. The selected dropdown value can be accessed via *Widget State > DropDown*. To display it on the *Text* widget, add a [**Text**](../../../../ui/widgets/built-in-widgets/text.md) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > DropDown** (i.e., name of your dropdown).
+3. The selected dropdown value can be accessed via *Widget State > DropDown*. To display it on the *Text* widget, add a [**Text**](../../../../ui/widgets/basic-widgets/text.md) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > DropDown** (i.e., name of your dropdown).
 
 <div style={{
     position: 'relative',

@@ -29,7 +29,7 @@ There's a zoom in ( + ) and a zoom out ( - ) button to control the zoom level of
 
 ## AI Generated Page
 
-From here, you can [create a page using AI](../../resources/ui/pages/pages.md#create-an-ai-generated-page).
+From here, you can [create a page using AI](../../resources/ui/pages/intro-pages.md#create-an-ai-generated-page).
 
 ## Add App Bar
 

@@ -17,16 +17,15 @@ Let's delve into the key moments in the lifecycle of a **Page**:
   page.
 - **Rendering**: Here, the page is actually drawn or rendered on the screen. This includes
   setting up the layout, styles, and any interactive elements. The user can now see the page in its
-  initial state.
+  initial [state](#page-state).
 - **Updating:** After rendering, the page becomes interactive and can respond to user inputs such as
   clicks, typing, or other gestures. It may re-render parts of the page or the entire page to
-  reflect
-  the changes due to interaction or new data.
+  reflect the changes due to interaction or new data.
 - **Disposal**: When the page is no longer needed, or the user navigates away, this phase is
   triggered. This is where resources related to the page are released from memory and are no longer
-  accessible.
+  accessible. 
 
-In FlutterFlow, most of these lifecycle stages are handled internally by FlutterFlow's architecture.
+In FlutterFlow, most of these lifecycle phases are handled internally by FlutterFlow's architecture.
 However, we expose some of the methods so that you, as a developer, can decide what additional
 configurations to load upon initialization and when to re-render the UI based on interactions. 
 
@@ -34,19 +33,19 @@ Let's read more about them in the following sections:
 
 ## Initialization Action Triggers
 
-During the initialization of a **Page**, we provide several Action Triggers that assist you in
+During the initialization of a **Page**, we provide several **[Action Triggers](../../control-flow/functions/action-flow-editor.md#action-triggers)** that assist you in
 loading resources or initializing data. These triggers ensure that all necessary data is prepared
-and ready for use by the time the first version of the **Page** is initialized.
+and ready for use by the time the first frame of the **Page** is rendered.
 
 :::info[What are Action Triggers?]
 **Action Triggers** serve as event listeners or handlers that respond to
 specific events or user interactions within an application. FlutterFlow provides
 developers with a way to define logic that responds to various events, such as
 button clicks, page loads, form submissions, or data changes.
-To learn more, head over to **[Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md)** section
+To learn more, head over to **[Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md)** section.
 :::
 
-As you open the [Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md) for your Scaffold (Page), you can see the following Action
+As you open the [Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md) for your Page, you can see the following Action
 Triggers exposed for your Page.
 
 ![actions-triggers.png](../imgs/actions-triggers.png)
@@ -75,7 +74,7 @@ certain UI elements on the page.
 
 #### Adding an Action
 
-To add an action to "On Page Load" action trigger, follow the steps:
+To add an action to **On Page Load** action trigger, follow the steps:
 
 <iframe src="https://demo.arcade.software/ii0otHqkoRtPY66n4c2y?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
@@ -210,7 +209,7 @@ transactional logic.
 You can set the source value of the widget wherever you see the following icon. This icon indicates
 that you can link the widget’s value to a variable.
 
-![Page-State.png](../imgs/Page-State.png)
+![Page-State.png](../imgs/page-state.png)
 
 ### Update Page State [Action]
 

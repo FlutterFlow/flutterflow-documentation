@@ -232,7 +232,7 @@ For simplification purposes, the selected option is shown in the Text widget. In
 
 To retrieve the user's selection:
 
-1. Add the [**Text**](../../../../ui/widgets/built-in-widgets/text.md) widget to your page.
+1. Add the [**Text**](../../../../ui/widgets/basic-widgets/text.md) widget to your page.
 2. Move to property editor and click on the **Set from Variable** text. (This will open a new panel)
 3. Set the **Source** to **Widget State**.
 4. Set the **Available Options** to **RadioButton**.

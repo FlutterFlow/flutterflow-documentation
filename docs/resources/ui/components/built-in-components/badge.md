@@ -100,7 +100,7 @@ To change the badge text style:
 1. Select the **Badge** widget from the widget or the canvas area.
 2. Move to the properties panel (on the right side of your screen), and scroll down to the **Badge Properties** section.
 3. Find the **Theme Text Style** property and change the style as per instructions 
-[here](../../widgets/built-in-widgets/text.md).
+[here](../../widgets/basic-widgets/text.md).
 
 ### Show/hide badge
 

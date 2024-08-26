@@ -1,5 +1,5 @@
 ---
-slug: container
+slug: /resources/ui/widgets/container
 title: Container
 tags: [Layout Elements]
 ---
@@ -20,7 +20,7 @@ appearance and placement of that box within the screen layout.
 The Container properties can be adjusted to customize the appearance and layout of a Container
 widget. Here's a brief explanation of each:
 
-![container-props.png](imgs/container-props.png)
+![container-props.png](../built-in-widgets/imgs/container-props.png)
 
 ### Limiting Size
 
@@ -93,7 +93,7 @@ Here's an overview of each property:
 - **Transition Point:** These values determine where each color starts transitioning within the
   gradient. Transition points are set as a fraction of the total gradient distance:
 
-![gradient-cont.png](imgs/gradient-cont.png)
+![gradient-cont.png](../built-in-widgets/imgs/gradient-cont.png)
 
 In the above example,
 
@@ -204,7 +204,7 @@ useful for ensuring good visibility and interactivity across different devices.
 To enable the safe area, navigate to the properties panel and turn on the Safe Area toggle.
 
 
-![img_1.png](imgs/img_1.png)
+![img_1.png](../built-in-widgets/imgs/img_1.png)
 
 :::tip[Watch the video tutorial]
 If you prefer watching a video tutorial, here is the guide for you:

@@ -1,38 +1,17 @@
 ---
-title: Pages
-slug: getting-started
+title: Introduction to Pages
+slug: /resources/ui/pages
 sidebar_position: 1
 ---
 
-# Getting Started with Pages
+# Introduction to Pages
 
-In FlutterFlow, each **Page** you create is fundamentally structured using a **Scaffold**, which is
-a [widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html)
-that provides the basic material design visual layout structure. The `Scaffold` widget offers a
-consistent framework for each page, allowing you to define and organize its structure.
 
-Here's how the `Scaffold` contributes to page design in FlutterFlow:
+In FlutterFlow, each **Page** you create is fundamentally structured using a **Scaffold**, a [foundational widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html) that provides a structured layout for your app. The Scaffold offers essential elements like the AppBar, Floating Action Button (FAB), Drawer, and Body, allowing you to easily organize and design your pages.
 
-- **[AppBar](page-elements.md#appbar)** : Scaffold allows you to easily include an `AppBar` at the top of the
-  page,
-  which can house the title, navigation controls, and other actions.
-
-- **[Floating Action Button (FAB)](page-elements.md#floating-action-button-fab)**: An action button that is commonly used for
-  primary actions on the screen, like adding a new contact or composing a message.
-
-- **[Drawer & End-Drawer](page-elements.md#drawers)**: A slide-out menu for app navigation, accessible from
-  the `AppBar` or by swiping from the side.
-
-- **Body:** The main content area where you place your widgets for the body of the Page.
-
-:::note[PLEASE NOTE]
-In FlutterFlow, you won't find a section explicitly labeled as "Body". For example, in the 
-`ProfileSettingsPage`, the `Column` serves as the root of the widget tree for the body, with the rest of the child widgets assembled underneath.
-
-![scaffold-elements.png](../imgs/scaffold-elements.png)
+:::info
+For more details on how to use Scaffold and the various Page Elements in FlutterFlow, see the dedicated **[Page Elements](page-elements.md)** guide.
 :::
-
-In FlutterFlow, you will find these Page Widgets under **[Page Elements](page-elements.md)** in Widget Palette.
 
 <!--
 :::tip[Generated Code]

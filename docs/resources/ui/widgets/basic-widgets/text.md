@@ -1,5 +1,6 @@
 ---
 tags: [Base Elements]
+slug: /resources/ui/widgets/text
 ---
 
 # Text
@@ -13,7 +14,7 @@ distinct purpose and offers different capabilities for integrating text into an 
 ## Text Widget
 The Text widget is used to display a piece of text on the screen. It's one of the most commonly used widgets in app development.
 
-![text-example.png](imgs/text-example.png)
+![text-example.png](../built-in-widgets/imgs/text-example.png)
 
 For example, in this screen, the Text widget is used to present different pieces of information 
 clearly and effectively. The Text widgets display the product name, "Men's Harrington Jacket," its price, "$148," and a detailed description of the product. These Text widgets are styled differently to emphasize specific pieces of information.
@@ -31,7 +32,7 @@ This widget uses a tree of **TextSpan** objects to define the rich formatting op
 The RichText widget can be found under the **Base Elements** tab in the **Widget Palette**. You can 
 either drag it to your desired location on the screen or insert it directly via the widget tree.
 
-![richtext-eg.png](imgs/richtext-eg.png)
+![richtext-eg.png](../built-in-widgets/imgs/richtext-eg.png)
 
 When the RichText widget is added to your widget tree, FlutterFlow automatically creates two RichTextSpan child objects. You can modify the text value and styling of each object to create multiple styles within your paragraph.
 
@@ -67,7 +68,7 @@ To modify the RichTextSpan objects, see the quick demo below:
 
 ## Common Text Styling Properties
 
-![text-props.png](imgs/text-props.png)
+![text-props.png](../built-in-widgets/imgs/text-props.png)
 
 :::tip
 For consistency, we recommend defining your Typography and custom text styles from **Theme
@@ -117,7 +118,7 @@ value for **Max character** to limit the number of characters.
 
 2. Set the **Text Overflow Replacement** to either **Clip/Cutoff** or **Ellipsis (...)**
 
-![img_1.png](img_1.png)
+![img_1.png](../built-in-widgets/img_1.png)
 
 
 ### Adding Gradient color

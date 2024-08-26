@@ -114,13 +114,13 @@ Let's start with building the UI for both pages.
 
 #### 1.1 Home page
 
-On this page you display the list of all countries using [**ListView**](../../../ui/widgets/built-in-widgets/list-grid.md#listview-widget) and [**ListTile**](../../../ui/widgets/built-in-widgets/list-grid.md#listview-widget) widgets.
+On this page you display the list of all countries using [**ListView**](../../../ui/widgets/composing-widgets/list-grid.md#listview-widget) and [**ListTile**](../../../ui/widgets/composing-widgets/list-grid.md#listview-widget) widgets.
 
 ![HomePage](imgs/home-page.avif)
 
 #### 1.2 Country details page
 
-This page shows the country flag using the [**Image**](../../../ui/widgets/built-in-widgets/image.md) widget.
+This page shows the country flag using the [**Image**](../../../ui/widgets/basic-widgets/image.md) widget.
 
 ![CountryDetails Page](imgs/details-page.avif)
 
@@ -308,7 +308,7 @@ You can now proceed to display the country list in *HomePage*. Here are the step
     </div>
     <p></p>
 
-4. On ListView, [generate dynamic children](../../../ui/widgets/generate-dynamic-children.md) using the page state variable.
+4. On ListView, [generate dynamic children](../../../ui/widgets/composing-widgets/generate-dynamic-children.md) using the page state variable.
 5. The page state variable stores the country name and code as a single string (e.g., Australia - AT). To display the name and code separately in a *ListTile*, we can use a [code expression](../../../control-flow/functions/utility-functions.md#code-expressions). To display the country name, we can use `var1.split("-")[1].trim()`, where `var1` is the current item in the list. To display the country code, we can use the same expression and replace `[1]` with `[0]`.
 
     <div style={{

@@ -99,7 +99,7 @@ The steps to build the app are as follows:
 
 The user interface includes a section for the average rating, and number of reviews, followed by a detailed summary of the reviews including pros, cons, and sentiment distribution visualization. Here are key widgets to build the page:
 
-* [**Text Widget**](../../../ui/widgets/built-in-widgets/text.md): 
+* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md): 
   Displays 
   the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
 * [**Chart (Bar chart) Widget**](../../../ui/components/built-in-components/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.

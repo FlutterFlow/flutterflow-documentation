@@ -1,6 +1,7 @@
 ---
 title: Lists & Grids
 tags: [Layout Elements]
+sidebar_position: 2
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,7 +22,7 @@ You can customize the ListView properties and functionalities, some are as follo
 Axis sets the orientation of the ListView. You can select either "Vertical" or
   "Horizontal" depending on whether you want the list to scroll vertically or horizontally.
 
-![listview-axis.png](imgs/listview-axis.png)
+![listview-axis.png](../built-in-widgets/imgs/listview-axis.png)
 
 ### Spacing 
 
@@ -42,10 +43,9 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 - **Primary:** If set to true, the ListView will act as the primary scrolling view in the context.
   This usually affects how the view interacts with other scrolling views and whether it stretches to fill the viewport. [**See more info here**](#primary-property).
 
-- **Reverse:** This property, when enabled, reverses the order in which items appear in the ListView.
-  For a vertical list, this means starting from the bottom and for a horizontal list, starting from the right.
+- **Reverse:** In lists, when the reverse property is enabled, it reverses the order in which items appear in the ListView. For a vertical list, this means starting from the bottom and for a horizontal list, starting from the right.
 
-![listview-reverse.png](imgs/listview-reverse.png)
+![listview-reverse.png](../built-in-widgets/imgs/listview-reverse.png)
 
 #### Make List Reorderable
 Whether to allow reordering of items in the list. On Web or Desktop this will 
@@ -186,10 +186,10 @@ ListTile should be used when you require a simple, effective layout with standar
 
 You can customize the Title (Text), Subtitle (Text) and Icon properties from the Properties Panel
 
-![list-tile.png](imgs/list-tile.png)
+![list-tile.png](../built-in-widgets/imgs/list-tile.png)
 
 :::info
-To learn about how to customize the Text widgets in this component, refer the [**Text widget**](text.md). 
+To learn about how to customize the Text widgets in this component, refer the [**Text widget**](../basic-widgets/text.md). 
 :::
 
 ### Convert into SlidableListTile
@@ -232,7 +232,7 @@ GridView provides a two-dimensional array of children. It is the widget of choic
 
 Like [ListView](#listview-widget), GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
 
-![img_2.png](img_2.png)
+![img_2.png](../built-in-widgets/img_2.png)
 
 
 Here's a quick demo to show how to add a GridView widget and modify its properties: 
@@ -269,7 +269,7 @@ Here's a quick demo to show how to add a GridView widget and modify its properti
 :::tip[Grid View vs Staggered View]
 **GridView** and **StaggeredView** are similar widgets in FlutterFlow, with the main difference being the layout and sizing of their children. GridView arranges its children in a fixed-size grid, while StaggeredView allows for variable-sized children, creating a more flexible and dynamic layout. StaggeredView is ideal for layouts with items of varying sizes. For example, it can be used to create a layout similar to the Pinterest app.
 
-![staggeredView](imgs/staggeredView.png)
+![staggeredView](../built-in-widgets/imgs/staggeredView.png)
 :::
 
 ### Advanced Functionalities
@@ -315,7 +315,7 @@ The infinite scroll automatically loads the new items as you scroll down the lis
 </div>
 <p></p>
 
-![Infinite scroll behind the scene](imgs/infinite-scroll-behind-scene.avif)
+![Infinite scroll behind the scene](../built-in-widgets/imgs/infinite-scroll-behind-scene.avif)
 
 Adding infinite scroll helps you improve the user experience by reducing the initial waiting time (as without infinite scroll, it would take more time to load the long list) and loading new items only when required.
 
@@ -371,7 +371,7 @@ To add an infinite scroll on the API call, you must have an endpoint that suppor
 
 When you add the paginated API call in the builder and enable the infinite scroll, we provide you the following pagination variables that you can pass to your API variables. These will be available inside the **Set Variable** menu.
 
-![Pagination Variables](imgs/pagination-variable.png)
+![Pagination Variables](../built-in-widgets/imgs/pagination-variable.png)
 
 1. **Next Page Index**: You can pass this variable for the query parameter that accepts the page number. The default value is 0 and keeps increasing by one as you scroll down the list until it reaches the end.
 2. **#(Number of) Loaded Items**: This equals the number of items returned by the paginated API call.
@@ -438,7 +438,7 @@ In situations where you have multiple scrollable widgets nested within each othe
 
 In most cases, the outermost scrollable widget (usually the one that takes up the most space or the full screen) is set as primary, while inner scrollables are not. For example, when you have a widget structure like this Column > ListView, you should keep the Column as primary and ListView as non-primary.
 
-![img_2.png](imgs/img_2.png)
+![img_2.png](../built-in-widgets/imgs/img_2.png)
 
 <p></p>
 

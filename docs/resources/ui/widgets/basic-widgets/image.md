@@ -1,6 +1,7 @@
 ---
 title: Image
 tags: [Base Elements]
+slug: /resources/ui/widgets/image
 ---
 
 
@@ -60,7 +61,7 @@ Specifies the source of the image. Options include:
 Determines how this widget should take up the available space. The options are:
 
 <figure>
-    ![image-boxfit.png](imgs/image-boxfit.png)
+    ![image-boxfit.png](..%2Fbuilt-in-widgets%2Fimgs%2Fimage-boxfit.png)
   <figcaption class="centered-caption">Example of a horizontal & vertical image in 
 different BoxFit options</figcaption>
 </figure>

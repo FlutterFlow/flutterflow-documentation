@@ -29,7 +29,7 @@ Let's see how to add conditional visibility with an example that allows users to
 Here's what the final result looks like:
 
 <figure>
-   ![img.png](img.png) 
+   ![icon-img.png](..%2Fimgs%2Ficon-img.png)
   <figcaption class="centered-caption">Left side: user not logged in | Right side: user logged in</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ When developing user interfaces with widgets, you'll notice certain properties a
 Below are the common properties; you can use the navigation links on the right to quickly access detailed information about each property.
 
 <figure>
-    ![img_1.png](img_1.png)
+    ![img_1.png](..%2Fimgs%2Fimg_1.png)
   <figcaption class="centered-caption">The navigation menu on the web and mobile</figcaption>
 </figure>
 
@@ -66,12 +66,12 @@ In the example above, the navigation menu created for the web or desktop (on the
 Here is how it is done:
 
 <figure>
-    ![img_2.png](img_2.png)
+    ![img_2.png](..%2Fimgs%2Fimg_2.png)
   <figcaption class="centered-caption">Responsive visibility for mobile</figcaption>
 </figure>
 
 <figure>
-    ![img_3.png](img_3.png)
+    ![img_3.png](..%2Fimgs%2Fimg_3.png)
   <figcaption class="centered-caption">Responsive visibility for web</figcaption>
 </figure>
 
@@ -299,8 +299,8 @@ For widgets like **Text** and **RichText**, when their content is coming from a 
 This is helpful in assessing spacing and alignment without the need to remove variable bindings.
 
 
-![img_4.png](img_4.png)
 
+![img_4.png](..%2Fimgs%2Fimg_4.png)
 ## Trigger action on selection change
 
 Here, you will see how to trigger an action when the selection changes for any Form widget such as Dropdown, RadioButton, ChoiceChips, Slider, and RatingBar.

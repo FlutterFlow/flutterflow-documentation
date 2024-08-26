@@ -16,7 +16,7 @@ Here are the step-by-step instructions to build such an example:
 
 1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base 
 Elements** tab or add it directly from the widget tree.
-2. Add a [**Button**](button.md) (inside MouseRegion) 
+2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion) 
    with [**On Action Trigger**](../../../../ff-concepts/animations/widget_animations.md#animation-on-action-trigger) animation.
 3. Select the **MouseRegion** widget, select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegion widget.

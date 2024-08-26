@@ -2050,7 +2050,7 @@
       },
       {
         "source": "/flutterflow-status",
-        "destination": "/",
+        "destination": "https://status.flutterflow.io/",
         "type": 301
       },
       {
@@ -2081,6 +2081,76 @@
       {
         "source": "/settings-and-integrations/project-setup/team",
         "destination": "/flutterflow-ui/my-organization/",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/pages-configuration",
+        "destination": "/resources/ui/pages/properties",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/widget-configurations",
+        "destination": "/resources/ui/widgets/properties",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/button",
+        "destination": "/resources/ui/widgets/button",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/text",
+        "destination": "/resources/ui/widgets/text",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/icon",
+        "destination": "/resources/ui/widgets/icons",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/container",
+        "destination": "/resources/ui/widgets/container",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/image",
+        "destination": "/resources/ui/widgets/image",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/composing-widgets",
+        "destination": "/resources/ui/widgets/composing-widgets/rows-column-stack",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/generate-dynamic-children",
+        "destination": "/resources/ui/widgets/composing-widgets/generate-dynamic-children",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/composing-widgets/list-grid",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/overview",
+        "destination": "/resources/ui/components",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/getting-started",
+        "destination": "/resources/ui/pages",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/overview#widget-tree",
+        "destination": "/resources/ui/widgets#widget-tree",
         "type": 301
       }
     ]
