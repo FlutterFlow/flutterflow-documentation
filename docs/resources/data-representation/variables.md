@@ -78,7 +78,7 @@ For step-by-step guides on how to create App State, Page State, and Component St
 
 ## Set Variable
 
-The **Set from Variable** or **Set Variable** menu in FlutterFlow is a powerful feature that allows you to dynamically control the content or behavior of your widgets using **data** stored in [variables](#variable). When you select a variable from this menu, you're instructing FlutterFlow to use the value of that variable to populate or modify the widget's properties, such as text, visibility, or styling.
+The **Set from Variable** or **Set Variable** menu in FlutterFlow is a powerful feature that allows you to dynamically control the content or behavior of your widgets using **data** stored in variables. When you select a variable from this menu, you're instructing FlutterFlow to use the value of that variable to populate or modify the widget's properties, such as text, visibility, or styling.
 
 This menu provides a variety of variable **sources**, including data that's specific to the page or component, global properties that apply across the entire app, constants, and more. By choosing the appropriate variable, you can make your app more interactive and responsive to user input, data changes, or other conditions.
 
@@ -101,7 +101,7 @@ These manipulations enable you to create more dynamic and responsive user interf
 
 ### List Options
 
-While working with a list, you may need to extract specific data based on specific criteria. The List options provides a range of functionalities for efficient data extraction from these lists. Here's what it includes:
+While working with a list, you may need to extract specific data based on specific criteria. The List options provide a range of functionalities for efficient data extraction from these lists. Here's what it includes:
 
 #### Map List Items
 
@@ -158,7 +158,7 @@ com/embed/4d505788441745c490a69687628f4126?sid=cdca45e3-bd8f-40fc-bd1f-c9e6a7f6a
 
 This option helps you create a list with unique items, such as extracting distinct product categories or unique customer names from a larger dataset.
 
-Here's an example of displaying a list of unique cat breed:
+Here's an example of displaying a list of unique cat breeds:
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/02bab8cf7a4c48228700b2493c155f7d?sid=a7fb6c23-31c4-4bed-a590-011aaca6d71f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

@@ -77,7 +77,7 @@ To change the loading indicator:
 
 1. Ensure you have added a backend query.
 2. Open the **Backend Query** section (on the right side) and scroll down to the **Backend Query Loading Widget**. Open it by clicking on the arrow icon.
-3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](../../../ui/components/creating-components) if you have already designed a loading component.
+3. Set the **Loading Widget Type** to **Image**. You can also choose a [**Component**](../../../ui/components/creating-components.md) if you have already designed a loading component.
 4. Enable the **View in UI Builder**. This allows you to see your custom loading indicator on canvas (before you actually run the app).
 5. Choose the **Image Type**, [add the image](../../../ui/widgets/basic-widgets/image.md#image-type), and adjust its **Padding** and **Width**.
 6. To show the indicator in the center, turn on the **Center Image** toggle.

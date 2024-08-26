@@ -51,7 +51,7 @@ Here's how you disable email verification on the Supabase side:
 
 ### Building pages
 
-Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the [template](../../../resources/ui/pages/intro-pages#create-a-page-from-a-popular-template). Here is the page added from the templates, and after some modification, it looks the below:
+Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the [template](../../../resources/ui/pages/intro-pages.md#create-a-page-from-a-popular-template). Here is the page added from the templates, and after some modification, it looks the below:
 
 Also, see how to build a page layout in case you want to build a page from scratch.
 

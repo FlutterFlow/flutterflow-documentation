@@ -19,7 +19,7 @@ From the Widgets tab, you can access all standard FlutterFlow widgets. They are 
 
 ## 2. Components
 
-Components are widgets with certain functionalities that can be reused throughout your app. They are constructed from either standard or custom widgets. Once you have created a [component](../../resources/ui/components/creating-components) or [custom widget](../../ff-concepts/adding-customization/custom-widgets.md), you can access it from here.
+Components are widgets with certain functionalities that can be reused throughout your app. They are constructed from either standard or custom widgets. Once you have created a [component](../../resources/ui/components/creating-components.md) or [custom widget](../../ff-concepts/adding-customization/custom-widgets.md), you can access it from here.
 
 ## 3. Templates
 
