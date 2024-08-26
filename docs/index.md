@@ -22,8 +22,8 @@ import BranchIcon from '@site/static/icons/branch_New.png';
 
 <FlutterFlowLogo></FlutterFlowLogo>
 
-# Visual Development Environment
-FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
+# Visual Development Platform
+FlutterFlow is a visual development platform that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
 
 <InfoCards>
     <InfoCard title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
