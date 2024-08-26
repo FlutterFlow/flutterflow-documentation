@@ -472,3 +472,72 @@ com/embed/a83bfb12645340ae80a36ccf2cb9a63d?sid=28c284ff-342d-4535-bf0e-a288ca52d
 <p></p>
 
 
+## Scroll To [Action]
+
+Using this action, you scroll the scrollable widget to the beginning or end.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/jCtNOAZbIqmtjGgIlB5s?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::info
+Before adding this action, make sure you have a scrollable widget, such as a **ListView, StaggeredView**, or **GridView**, with enough items to enable scrolling.
+:::
+
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., FloatingActionButton) on which you want to add the action.
+2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
+3. Search and select the **Scroll To** (under *Widget/UI Interactions*) action.
+4. Set the **Scrollable Widget to Control** to the **name** of the scrollable widget (e.g., ListView) added to your page.
+5. Set the **Scroll To** either **Beginning** (to scroll to the start) or **End** (to scroll to the end) of the list.
+6. Specify the **Duration** in milliseconds (i.e., 1000ms = 1 second). This determines how long the scroll animation will take to complete. **Tip:** If you expect the list to be extensive, consider setting a shorter duration.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/BTvSTFDKc5kVO58CDpb3?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

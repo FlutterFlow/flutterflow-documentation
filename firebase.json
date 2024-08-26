@@ -70,12 +70,12 @@
       },
       {
         "source": "/getting-started/ui-builder/properties-panel",
-        "destination": "/flutterflow-ui/builder",
+        "destination": "/resources/ui/widgets/widget-configurations",
         "type": 301
       },
       {
         "source": "/getting-started/creating-new-project",
-        "destination": "/resources/projects",
+        "destination": "/resources/projects/how-to-create-find-organize-projects#how-to-create-a-project",
         "type": 301
       },
       {
@@ -100,12 +100,12 @@
       },
       {
         "source": "/settings-and-integrations/general-settings/app-details",
-        "destination": "/resources/projects/settings/general-settings",
+        "destination": "/resources/projects/settings/general-settings#app-details",
         "type": 301
       },
       {
         "source": "/settings-and-integrations/general-settings/app-assets",
-        "destination": "/resources/projects/settings/general-settings",
+        "destination": "/resources/projects/settings/general-settings#app-assets",
         "type": 301
       },
       {
@@ -175,7 +175,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/permissions",
-        "destination": "/resources/projects/settings/project-setup",
+        "destination": "/resources/projects/settings/project-setup#permissions",
         "type": 301
       },
       {
@@ -335,12 +335,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/listview",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#listview-widget",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/gridview",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#gridview-widget",
         "type": 301
       },
       {
@@ -375,7 +375,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/staggeredview",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#staggered-view",
         "type": 301
       },
       {
@@ -420,12 +420,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/enddrawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#end-drawer",
         "type": 301
       },
       {
@@ -470,7 +470,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/listtile",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#listtile-widget",
         "type": 301
       },
       {
@@ -515,7 +515,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/toggleicon",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/icons/#toggleicon-properties",
         "type": 301
       },
       {
@@ -530,7 +530,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/staticmap",
-        "destination": "/",
+        "destination": "/integrations/mapbox/staticmap-widget",
         "type": 301
       },
       {
@@ -560,7 +560,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/mediadisplay",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/media-display",
         "type": 301
       },
       {
@@ -580,7 +580,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/languageselector",
-        "destination": "/concepts/multiple-languages",
+        "destination": "/concepts/multiple-languages/language-selector",
         "type": 301
       },
       {
@@ -725,7 +725,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/signature",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/signature/",
         "type": 301
       },
       {
@@ -815,7 +815,7 @@
       },
       {
         "source": "/actions/actions/navigation/close-dialog-drawer-etc.",
-        "destination": "/",
+        "destination": "/resources/ui/pages/scaffold-elements#drawer-action",
         "type": 301
       },
       {
@@ -830,7 +830,7 @@
       },
       {
         "source": "/actions/actions/backend-database/api-call",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/create-test-api#trigger-api-calls-action",
         "type": 301
       },
       {
@@ -935,12 +935,12 @@
       },
       {
         "source": "/actions/actions/state-management/update-app-state",
-        "destination": "/resources/data-representation/app-state",
+        "destination": "/resources/data-representation/app-state/#update-app-state-action",
         "type": 301
       },
       {
         "source": "/actions/actions/state-management/update-page-state",
-        "destination": "/concepts/state-management",
+        "destination": "/resources/ui/pages/page-lifecycle/#update-page-state-action",
         "type": 301
       },
       {
@@ -960,7 +960,7 @@
       },
       {
         "source": "/actions/actions/state-management/clear-query-cache",
-        "destination": "/",
+        "destination": "/resources/backend-query/#clear-query-cache-action",
         "type": 301
       },
       {
@@ -985,7 +985,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-tab-bar",
-        "destination": "/concepts/navigation/tabbar",
+        "destination": "/concepts/navigation/tabbar/#control-tab-bar-action",
         "type": 301
       },
       {
@@ -995,12 +995,12 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/clear-text-fields-pin-codes",
-        "destination": "/concepts/state-management/widget-state",
+        "destination": "/resources/forms/textfield/#adding-clear-text-fieldspin-codes-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/scroll-to",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid#scroll-to-action",
         "type": 301
       },
       {
@@ -1025,7 +1025,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
@@ -1040,7 +1040,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/expand-image",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/image/#advanced-image-functionalities",
         "type": 301
       },
       {
@@ -1060,22 +1060,22 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/upload-signature",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/signature/#2-upload-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/clear-signatures",
-        "destination": "/",
+        "destination": "/resources/ui/components/built-in-components/signature/#clear-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-swipeable-stack",
-        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "destination": "/resources/ui/components/built-in-components/swipeable-stack/#control-swipeable-stack-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-carousel",
-        "destination": "/resources/ui/components/built-in-components/carousel",
+        "destination": "/resources/ui/components/built-in-components/carousel/#control-carousel-action",
         "type": 301
       },
       {
@@ -1140,7 +1140,7 @@
       },
       {
         "source": "/actions/actions/utilities",
-        "destination": "/concepts",
+        "destination": "/resources/functions/utility-actions",
         "type": 301
       },
       {
@@ -1205,7 +1205,7 @@
       },
       {
         "source": "/actions/actions/utilities/execute-callback",
-        "destination": "/resources/ui/components/custom-components/using-components",
+        "destination": "/resources/ui/components/custom-components/using-components/#execute-callback-action",
         "type": 301
       },
       {
@@ -1415,7 +1415,7 @@
       },
       {
         "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data/adding-indexes",
-        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "destination": "/integrations/firebase/connect-to-firebase/#adding-indexes",
         "type": 301
       },
       {
@@ -1525,12 +1525,12 @@
       },
       {
         "source": "/data-and-backend/state-management/page-state",
-        "destination": "/resources/ui/pages/getting-started",
+        "destination": "/resources/ui/pages/page-lifecycle#page-state",
         "type": 301
       },
       {
         "source": "/data-and-backend/state-management/component-state",
-        "destination": "/resources/ui/components/custom-components/component-lifecycle",
+        "destination": "/resources/ui/components/custom-components/component-lifecycle/#component-state",
         "type": 301
       },
       {
@@ -1560,7 +1560,7 @@
       },
       {
         "source": "/data-and-backend/api-calls/soap-api-example-countries",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/soap-api",
         "type": 301
       },
       {
@@ -1670,7 +1670,7 @@
       },
       {
         "source": "/advanced-functionality/conditional-visibility",
-        "destination": "/concepts/layouts/responsive",
+        "destination": "/resources/ui/widgets/widget-commonalities#conditional",
         "type": 301
       },
       {
@@ -1730,7 +1730,7 @@
       },
       {
         "source": "/advanced-functionality/code-expression",
-        "destination": "/resources/functions/utility",
+        "destination": "/resources/functions/utility/#code-expressions",
         "type": 301
       },
       {
@@ -1770,7 +1770,7 @@
       },
       {
         "source": "/deploying-your-app/generate-screenshots",
-        "destination": "/deployment/pre-checks-before-publishing",
+        "destination": "/deployment/pre-checks-before-publishing/#generate-screenshots",
         "type": 301
       },
       {
@@ -2070,7 +2070,7 @@
       },
       {
         "source": "/troubleshooting/submit-bug-reports",
-        "destination": "/",
+        "destination": "/misc/submit-bug-report",
         "type": 301
       },
       {
@@ -2080,7 +2080,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/team",
-        "destination": "/resources/projects/collaboration",
+        "destination": "/flutterflow-ui/my-organization/",
         "type": 301
       },
       {

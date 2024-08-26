@@ -1,6 +1,6 @@
 ---
 slug: /resources/backend-logic/rest-api
-title: REST APIs
+title: API Calls
 description: Learn the basics of making API calls in your backend logic.
 tags: [API, Backend Logic, Control Flow]
 sidebar_position: 1

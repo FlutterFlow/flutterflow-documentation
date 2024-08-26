@@ -346,7 +346,7 @@ To clear a TextField, move to the **Properties Panel > Additional Properties >**
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/8yA0Ncb41MRy8hHy1mm7?embed&show_copy_link=true"
+        src="https://demo.arcade.software/9rfrbl4Up6MHN56l4abD?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -365,6 +365,18 @@ To clear a TextField, move to the **Properties Panel > Additional Properties >**
     </iframe>
 </div>
 <p></p>
+
+#### Adding Clear Text Fields/Pin Codes [Action]
+This action lets you clear the values from single or multiple TextField and PinCode widgets. This comes in handy while implementing a form inside your app, and you want to let the user reset the form with one click.
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., IconButton, Button, etc.) on which you want to add the action.
+2. Select **Actions** from the properties panel (the right menu), click **+** **Add Action** button.
+3. Search and select the **Clear Text Fields/Pin Codes** (under *Widget/UI Interactions*) action.
+4. Select the *TextFields* and *PinCode* widgets you want to reset.
+
+![adding-clear-textfield-action](../../imgs/adding-clear-textfield-action.avif)
 
 ### Autofocusing TextField
 
