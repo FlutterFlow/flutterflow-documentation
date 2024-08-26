@@ -1,17 +1,17 @@
 ---
 slug: /integrations/mapbox/staticmap-widget
-title: StaticMap Widget
+title: Static Map Widget
 description: Learn how to add and configure the StaticMap (Mapbox) widget in your FlutterFlow app.
 tags: [Widget, Integration]
 sidebar_position: 2
 keywords: [StaticMap, Mapbox, Widget, Integration]
 ---
 
-# StaticMap Widget
+# Static Map Widget
 The StaticMap widget shows an image of the map from the [mapbox](https://www.mapbox.com/). This widget is a good choice when you want to display a location on a map without interactivity or controls such as zoom-in, zoom-out, and map scrolling.
 
 :::tip
-To display a map with interactivity or controls, use the [**GoogleMap**](../google-maps/google-maps-widget.md) widget.
+To display a map with interactivity or controls, use the [**GoogleMaps**](../google-maps/google-maps-widget.md) widget.
 :::
 
 
@@ -24,7 +24,7 @@ Here's an example of how you can add the StaticMap widget to your project:
 3. To display your location on the map, enter the **Latitude** and **Longitude** values inside the **Lat** and **Lng** input boxes.
 
 :::tip
-To get the lat long values for any location, open to Google Map, right-click on any place and click on the first item from the list. It should look like this 19.080045795863743, 72.8794235725136.
+To get the lat long values for any location, open to Google Map, right-click on any place and click on the first item from the list. It should look like this `19.080045795863743`, `72.8794235725136`.
 :::
 
 <div style={{

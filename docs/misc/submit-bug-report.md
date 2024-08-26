@@ -11,12 +11,12 @@ keywords: [Submit Bug Reports, Issue, Troubleshooting]
 
 This page guides you on submitting the bug reports in the GitHub issue tracker.
 
-We have created a [GitHub repository](https://github.com/FlutterFlow/flutterflow-issues/issues) specifically dedicated to tracking bug reports from our community of users. By doing so, we aim to foster a more open and collaborative relationship with our users, encouraging them to report any bugs or glitches they encounter while using FlutterFlow.
+We have created a [**GitHub repository**](https://github.com/FlutterFlow/flutterflow-issues/issues) specifically for tracking bug reports from our user community. This initiative fosters a more open and collaborative relationship with our users, encouraging them to report any bugs or glitches they encounter while using FlutterFlow.
 
-This will enable us to track, triage, and resolve issues in a timely and efficient manner. So, if you encounter any bugs or issues, please don't hesitate to report them to us on our GitHub repository! 🐛
+This will enable us to track, triage, and resolve issues in a timely and efficient manner. So, if you encounter any bugs or issues, please don't hesitate to report them on our GitHub repository! 🐛
 
 :::info
-- You should use this only for reporting *FlutterFlow bugs* and improvements/addition to the *Documentation*.
+- You should use this only for reporting **FlutterFlow bugs**.
 - Any new features, suggestions, and questions should be discussed in the [**community**](https://community.flutterflow.io/home) or submitted through our user feedback form.
 :::
 
@@ -91,7 +91,6 @@ Here are the step-by-step instructions:
 
 :::tip
 You can attach any media by dragging it here.
-:::
 
 <div style={{
     position: 'relative',
@@ -118,6 +117,7 @@ You can attach any media by dragging it here.
     </iframe>
 </div>
 <p></p>
+:::
 
 11. We must know the environment in which you experienced the issue. You can post such information under the '**Environment**' section.
 

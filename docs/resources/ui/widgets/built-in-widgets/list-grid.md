@@ -503,7 +503,7 @@ Using this action, you scroll the scrollable widget to the beginning or end.
 <p></p>
 
 :::info
-Before you add this action, ensure you have a scrollable widget such as ListView, StaggereView, and GridView with enough items so that you can scroll.
+Before adding this action, make sure you have a scrollable widget, such as a **ListView, StaggeredView**, or **GridView**, with enough items to enable scrolling.
 :::
 
 
@@ -514,7 +514,7 @@ Follow the steps below to add this action to any widget.
 3. Search and select the **Scroll To** (under *Widget/UI Interactions*) action.
 4. Set the **Scrollable Widget to Control** to the **name** of the scrollable widget (e.g., ListView) added to your page.
 5. Set the **Scroll To** either **Beginning** (to scroll to the start) or **End** (to scroll to the end) of the list.
-6. Specify the **Duration** in milliseconds (i.e., 1000ms = 1 second). This is the amount of time the scroll animation will take to complete. Note: If you suspect the list will be extensive, set the lower duration value.
+6. Specify the **Duration** in milliseconds (i.e., 1000ms = 1 second). This determines how long the scroll animation will take to complete. **Tip:** If you expect the list to be extensive, consider setting a shorter duration.
 
 <div style={{
     position: 'relative',
