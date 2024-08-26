@@ -46,7 +46,7 @@ To add LanguageSelector to your project:
 1. Make sure you have added multi-language support to your app. If you haven't already done so, find the instructions here.
 2. First, drag the **Column** widget from the **Layout Elements** tab (in the Widget Panel).
 3. Now, add the **LanguageSelector** widget (inside Column) by dragging it from the **Base Elements** tab or adding it directly from the widget tree. Align it in the center.
-4. Add the [**Text**](../../widgets/built-in-widgets/text.md) widget to show the text.
+4. Add the [**Text**](../../resources/ui/widgets/basic-widgets/text.md) widget to show the text.
 5. Translate the text by navigating to Settings and Integration -> General -> Languages -> App Content Translations -> Page Name -> Your Text.
 6. Find the language dropdown above the canvas and try changing it to other languages and see the translated text appear on the canvas.
 
@@ -79,7 +79,7 @@ To add LanguageSelector to your project:
 
 ## Customization
 
-You can customize the behavior of this widget using the various properties available under the [properties panel](../../../../intro/ff-ui/builder.md#navigation-menu).
+You can customize the behavior of this widget using the various properties available under the [Properties Panel](../../resources/ui/widgets/widget-properties.md).
 
 ### Customizing Flag
 
