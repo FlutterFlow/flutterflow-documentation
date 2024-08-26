@@ -1,8 +1,8 @@
 ---
-slug: language-selector
-title: LanguageSelector
+slug: /concepts/multiple-languages/language-selector
+title: Language Selector Widget
 tags: [Multilingual, Base Elements]
-keywords: [FlutterFlow, LanguageSelector, Base Widget, Multilingual, Localization, Internationalization]
+keywords: [FlutterFlow, Language Selector, Base Widget, Multilingual, Localization, Internationalization]
 description: Learn how to add the LanguageSelector widget in your FlutterFlow app.
 ---
 
