@@ -80,7 +80,7 @@
       },
       {
         "source": "/getting-started/adding-new-page",
-        "destination": "/resources/ui/pages/getting-started#creating-a-page",
+        "destination": "/resources/ui/pages/getting-started",
         "type": 301
       },
       {
