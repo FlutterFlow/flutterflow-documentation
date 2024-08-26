@@ -2050,7 +2050,7 @@
       },
       {
         "source": "/flutterflow-status",
-        "destination": "/",
+        "destination": "https://status.flutterflow.io/",
         "type": 301
       },
       {
