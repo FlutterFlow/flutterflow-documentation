@@ -1780,17 +1780,17 @@
       },
       {
         "source": "/flutter/generated-code",
-        "destination": "/",
+        "destination": "/generated-code/project-structure",
         "type": 301
       },
       {
         "source": "/flutter/generated-code/directory-structure",
-        "destination": "/",
+        "destination": "/generated-code/project-structure",
         "type": 301
       },
       {
         "source": "/flutter/generated-code/flutterflow-classes",
-        "destination": "/",
+        "destination": "/generated-code/page-model",
         "type": 301
       },
       {
