@@ -13,6 +13,8 @@
   /* Use a darker color to ensure contrast, ideally we don't need important */
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
+  --inline-code-bg-color: #fafafa; /* Light mode background */
+  --inline-code-text-color: #aa54bf; /* Light mode text color */
 }
 
 html[data-theme='dark'] {
@@ -50,6 +52,8 @@ html[data-theme='dark'] {
   --ifm-border-color: #444; /* Border color */
   --ifm-hover-color: #555; /* Hover color for interactive elements */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  --inline-code-bg-color: #464752; /* Dark mode background */
+  --inline-code-text-color: #eca1ff; /* Dark mode text color */
 }
 .small-image {
   width: 400px;
@@ -187,4 +191,17 @@ div.alert {
 
 .arcade-container {
 margin-bottom: 24px;
+}
+
+code {
+  background-color: var(--inline-code-bg-color);
+  color: var(--inline-code-text-color);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.9em;
+}
+
+/* Override styles for inline code within admonitions */
+.theme-admonition code {
+  background-color: inherit; /* Ensures the background color is inherited */
 }
