@@ -3,9 +3,14 @@ title: PageModel class
 ---
 # PageModel Class
 
-When you create a new page in FlutterFlow, it automatically generates two files: a `Widget` file and a `Model` file. The `PageModel` classes are responsible for managing the state of individual pages. These classes extend the `FlutterFlowModel` class, which provides a consistent structure and shared functionality across all page models.
+:::info[Prerequisites]
+This guide uses example of the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
+:::
 
-A `PageModel` class typically holds local state fields specific to the page, which correspond to the **[Page State variables](#)**. For example, in the `product_list_page_model.dart` file (which is the `Model` file for the `ProductListPage`), one of the state fields might be `_searchString`. This private field stores the current search string and includes a getter and setter to manage its value while logging any changes.
+
+When you create a new page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. The `PageModel` classes are responsible for managing the state of individual pages and initializing the components used in these Pages. These classes extend the `FlutterFlowModel` class, which provides a consistent structure and shared functionality across all page models.
+
+A `PageModel` class typically holds local state fields specific to the page, which correspond to the **[Page State variables](../resources/ui/pages/page-lifecycle.md#page-state)**. For example, in the `product_list_page_model.dart` [file](https://github.com/FlutterFlow/sample-apps/blob/main/ecommerce_flow/lib/product/product_list_page/product_list_page_model.dart) (which is the `Model` file for the `ProductListPage`), one of the state fields might be `_searchString`. This private field stores the current search string and includes a getter and setter to manage its value while logging any changes.
 
 ```js
 String? _searchString;

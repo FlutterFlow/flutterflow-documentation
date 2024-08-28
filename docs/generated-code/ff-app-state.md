@@ -4,11 +4,15 @@ title: FFAppState
 
 # FFAppState
 
+:::info[Prerequisites]
+This guide uses example of the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
+:::
+
 The `FFAppState` class in FlutterFlow acts as a central hub for managing the application's global state. It's designed as a singleton, meaning there's only one instance of this class throughout the app's lifecycle. This class extends [**ChangeNotifier**](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html), allowing widgets to listen and react to state changes.
 
-It includes methods for initializing and updating the app's persisted state and also defines various state variables with corresponding getters and setters for manipulating these values.
+It includes methods for initializing and updating the app's persisted state and also defines various state variables with corresponding **getters and setters** for manipulating these values.
 
-Here is a basic template of the class, taken from the eCommerce app's generated code:
+Here is a basic template of the class, taken from the [**eCommerceFlow demo app**](https://bit.ly/ff-docs-demo-v1)'s generated code:
 
 ```js
 class FFAppState extends ChangeNotifier {
