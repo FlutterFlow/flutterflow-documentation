@@ -13,13 +13,8 @@ In FlutterFlow, each **Page** you create is fundamentally structured using a **S
 For more details on how to use Scaffold and the various Page Elements in FlutterFlow, see the dedicated **[Page Elements](page-elements.md)** guide.
 :::
 
-<!--
-:::tip[Generated Code]
 
-[See how](../generated-code.md) FlutterFlow converts your page into Flutter
-code
-:::
--->
+
 
 ## Creating a Page
 
@@ -30,6 +25,10 @@ there are several pathways to achieve the desired functionality and aesthetic of
 FlutterFlow allows you to easily create new pages using the Page Selector
 button, which is available in the **Widget Tree menu (Tab+2)**. This will help you
 quickly start and add new pages to your app.
+
+:::tip[Generated Code]
+When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/page-model.md).
+:::
 
 
 <img src="/img/page-selector.png" width="50%" />
