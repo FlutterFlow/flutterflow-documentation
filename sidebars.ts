@@ -10,8 +10,9 @@ const sidebars: SidebarsConfig = {
             type: 'doc',
             id: 'index',
             label: 'Getting Started',
-        },,
+        },
         'intro/quickstart',
+        'intro/roadmap',
         {
             type: 'category',
             label: 'Before You Begin',
