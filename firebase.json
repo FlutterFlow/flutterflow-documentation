@@ -2152,6 +2152,11 @@
         "source": "/resources/ui/overview#widget-tree",
         "destination": "/resources/ui/widgets#widget-tree",
         "type": 301
+      },
+      {
+        "source": "/firebase-setup",
+        "destination": "/integrations/firebase/connect-to-firebase",
+        "type": 301
       }
     ]
   }
