@@ -1,6 +1,6 @@
 ---
 slug: /resources/projects/how-to-run-test-projects
-title: How to Run and Test Projects
+title: Run and Test Projects
 description: Learn how to run and test projects in FlutterFlow to ensure your app functions correctly and meets your requirements.
 tags: [Testing, Project Management, FlutterFlow, Projects]
 toc_max_heading_level: 5
