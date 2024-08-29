@@ -73,6 +73,12 @@ const config: Config = {
           label: 'Marketplace',
         },
         {
+          type: 'doc',
+          docId: 'troubleshooting/index',
+          position: 'left',
+          label: 'Troubleshooting',
+        },
+        {
           href: 'https://github.com/FlutterFlow/flutterflow-documentation',
           label: 'GitHub',
           position: 'right',

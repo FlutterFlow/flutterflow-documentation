@@ -20,7 +20,7 @@
       },
       {
         "source": "/troubleshooting/**",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
@@ -2055,17 +2055,17 @@
       },
       {
         "source": "/troubleshooting/basic-troubleshooting-guide",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
         "source": "/troubleshooting/advanced-troubleshooting-guides",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
         "source": "/troubleshooting/enterprise",
-        "destination": "/misc/enterprise-support-policy",
+        "destination": "/troubleshooting/enterprise",
         "type": 301
       },
       {
@@ -2075,7 +2075,7 @@
       },
       {
         "source": "/troubleshooting/miscellaneous",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {

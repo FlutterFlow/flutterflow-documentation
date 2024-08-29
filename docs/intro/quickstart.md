@@ -1,6 +1,6 @@
 ---
 slug: /quickstart
-title: Quick Start Guide
+title: Quickstart Guide
 tags: []
 description: Jumpstart your FlutterFlow journey with our Quick Start Guide. Learn to build a dynamic app and explore essential FlutterFlow features like UI building, state management, and app execution.
 ---
