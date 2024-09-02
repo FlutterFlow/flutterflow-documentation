@@ -25,7 +25,7 @@ Follow the steps below to use the Remote Config:
 
 ### 1. Enable Remote Config
 
-To enable it, navigate to **Settings and Integrations** > **Project Setup** > **Firebase** > Expand the **Remote Config** section and **Enable Remote Config**.
+To enable Remote Config, navigate to **Settings and Integrations** > **Project Setup** > **Firebase** > Expand the **Remote Config** section and **Enable Remote Config**.
 
 ![Enabling Remote Config](imgs/remote-config.avif)
 
