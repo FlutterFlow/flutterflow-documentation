@@ -56,7 +56,7 @@ Follow the steps below to add this type of action to any widget:
 
 ## Delete Data
 
-Using this action, you can delete the uploaded media, such as photos, videos, and PDF files, from the [Firebase Storage](https://firebase.google.com/docs/storage).
+Using this action, you can delete the uploaded media, such as photos, videos, and PDF files, from the [Firebase Storage](https://firebase.google.com/docs/storage) or [Supabase Storage](https://supabase.com/storage).
 
 <div style={{
     position: 'relative',
