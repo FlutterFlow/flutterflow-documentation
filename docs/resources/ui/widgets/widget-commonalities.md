@@ -136,7 +136,7 @@ Padding is the empty space around the outer side of the widget.
 
 To add a padding:
 
-1. Select the widgetfrom the widget tree or from the canvas area.
+1. Select the widget from the widget tree or from the canvas area.
 2. Move to the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) and navigate to the **Padding & Alignment** section.
 3. Enter values for Left (L), Top (T), Right (R), Bottom (B).
 4. To apply the same padding on all sides, switch to the **Uniform Padding** option. You can then adjust the padding by either moving the slider or entering the desired value directly.
