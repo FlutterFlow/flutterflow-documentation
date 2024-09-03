@@ -30,16 +30,13 @@ Actions are tasks or operations that are performed in response to an event detec
 The Action Flow Editor is a visual, node-based editor used to configure the functions that run in
 response to a trigger. This editor simplifies the process of creating and managing business logic.
 
-![Action Flow Editor](../../../../static/img/action-flow-editor.avif)
+![Action Flow Editor](img/actions.avif)
 
 ### Action Triggers
 
-The **Action Triggers** toolbar, located at the top of the editor, displays a list of available
-triggers. Each trigger has its own separate node editor, allowing you to create distinct logic
-flows for different events. When you switch between triggers, the node editor updates to display
-the logic specific to the selected action trigger.
+When you open Action Flow Editor you must add atleast one trigger. The **Action Triggers** bar, located at the left of the editor, displays all added triggers. Each trigger has its own separate node editor, allowing you to create distinct logic flows for different events. When you switch between triggers, the node editor updates to display the logic specific to the selected action trigger.
 
-![Triggers](../../../../static/img/action-flow-editor-triggers.avif)
+![Triggers](img/action-triggers.avif)
 
 :::warning[Exposed by FlutterFlow]
 Please note that Action Triggers are provided by FlutterFlow and are not user-generated. You can
@@ -57,7 +54,7 @@ specific to the selected trigger.
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/JvaQ229YQSXBXsNRdA3l?embed&show_copy_link=true"
+        src="https://demo.arcade.software/IazHon14tfvS4UljRsqu?embed&show_copy_link=true"
         title="Switching Triggers"
         style={{
             position: 'absolute',
@@ -127,7 +124,7 @@ the function body with the desired logic.
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/AvnbHPyUl6FYbbnCAU8f?embed&show_copy_link=true"
+        src="https://demo.arcade.software/I9valjo4KqgEs8qol2Wp?embed&show_copy_link=true"
         title="Create New Action"
         style={{
             position: 'absolute',
@@ -161,7 +158,7 @@ The Right Panel serves two main purposes:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/nfgVsa6x5Rb2uCtw5oIJ?embed&show_copy_link=true"
+        src="https://demo.arcade.software/oHXsShi0Kyo5hbOIYZL5?embed&show_copy_link=true"
         title="Arcade Flow (Fri May 10 2024)"
         style={{
             position: 'absolute',
@@ -184,11 +181,11 @@ The Right Panel serves two main purposes:
 
 In the Action Flow Editor, the icon in the upper left corner indicates the widget to which the current action flow is bound.
 
-![Action Flow Editor](../../../../static/img/action-flow-editor-widget.avif)
+![Widget Binding](img/widget-binding.avif)
 
+:::info
 If you rename your widget, the new name will automatically be updated and associated with this action flow. This makes it easier to keep track of the logic associated with each widget, ensuring clarity and better organization of your action flows.
-
-![img.png](img/img.png)
+:::
 
 ### Issues
 
@@ -197,31 +194,7 @@ these are neither issues in the whole project nor issues in all of the action fl
 generated from the action flows bound to *this* widget. This includes *all* the action flows on
 *all* the triggers and not just currently visible action flow on the selected trigger.
 
-<div className="arcade-container" style={{
-    position: 'relative',
-    paddingBottom: 'calc(55.441478439425055% + 41px)', // Preserves the original aspect ratio and padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/RxkkYgCTWU2Zo2i7Tzuz?embed&show_copy_link=true"
-        title="Issues"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light',
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
+![Issues](img/action-errors.avif)
 
 ### Action Blocks
 
@@ -229,7 +202,7 @@ The diamond icon in the Action Flow Editor opens a menu where you can create and
 **Action Blocks** are reusable action flows that can accept parameters and return values, promoting code
 reusability and modularity.
 
-![action-block.avif](../../../../static/img/action-block.avif)
+![action-block.avif](img/action-block-icon.avif)
 
 :::tip[Deep Dive on Action Blocks]
 Learn more about different types of **[Action Blocks](action-blocks.md)** and their scopes.
@@ -246,7 +219,7 @@ Here's a quick demo of how you can add an action or multiple sequential actions 
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/w3B62goFPcrUn1FFno3V?embed&show_copy_link=true"
+        src="https://demo.arcade.software/pzHtQyaiPVeLC01vbgbs?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
