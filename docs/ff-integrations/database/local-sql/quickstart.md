@@ -1,6 +1,6 @@
 ---
 slug: /integrations/database/sqlite
-title: SQLIte Quickstart
+title: SQLite Quickstart
 description: Learn how to quickly get started with SQLite in your FlutterFlow app for local data storage.
 tags: [SQLite, Database, Quickstart, Local Storage]
 sidebar_position: 1
