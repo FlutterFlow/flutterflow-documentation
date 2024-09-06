@@ -149,7 +149,7 @@ See how to effectively use gesture detector triggers and access XY data in the f
 
 ### Example: Swipe to delete cart items
 
-Let's walk through an example that demonstrates how to implement a "Swipe to Delete" feature for cart items using only Gesture Detectors. Here's a preview of how it works:
+Let's walk through an example that demonstrates how to implement a "Swipe to Delete" feature for cart items **entirely** using Gesture Detectors. Here's a preview of how it works:
 
 
 <div style={{
@@ -193,56 +193,56 @@ Here’s how you do it:
 
 3.  On the main Container, we add the `onHorizontalDragUpdate` action trigger. This will called continuously as the user drags the item horizontally. On this event, we update the `offsetX` variable with the new position based on the swipe movement (using **Delta X** Data) and trigger the animation. This real-time update makes the item slide on the screen.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9XkpLuC3tpiFFapWi7ao?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/E3H0XAAY1AO7VaoZbNHw?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
 
 4. Now we need to check if the swipe meets the threshold to delete the item or reset the item's position back to its original location. For that, we add the `onHorizontalDragEnd` trigger. In the `onHorizontalDragEnd` trigger, we check if the `offsetX` value exceeds 100. If it does, we send the item index back to the page or component (via execute callback action) to delete the item from the list. If not, we reverse the slide animation. Lastly, we reset the `offsetX` value to 0 to ensure it's ready for the next interaction.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HQOWI06X33hGFms27T4G?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/HQOWI06X33hGFms27T4G?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
