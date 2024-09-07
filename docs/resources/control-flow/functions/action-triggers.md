@@ -4,13 +4,13 @@ title: Action Triggers
 description: Explore the action triggers available in FlutterFlow.
 tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, Actions]
 toc_max_heading_level: 5
-sidebar_position: 3
+sidebar_position: 2
 keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
 
 # Action Triggers
 
-**Action Triggers** represent specific events that occur when a user interacts with the app. Whether it's tapping a button, selecting an option from a dropdown list, or loading a new page. Once an Action Trigger detects an interaction, it initiates a corresponding **Action**—a task or operation that responds to the event.
+**Action Triggers** represent specific events that occur when a user interacts with the app, such as tapping a button, selecting an option from a dropdown, or loading a new page. When an Action Trigger is invoked by one of these interactions, it initiates a corresponding **Action**—a task or operation that responds to the event.
 
 In essence, Action Triggers are the 'listeners' in your app, keeping an eye out for user interactions and signaling when it's time for your app to respond. By understanding and utilizing Action Triggers, you can craft a more dynamic and user-friendly application experience.
 
@@ -65,9 +65,43 @@ Widget specific triggers are available on certain widgets. Here are they:
 - **On Completed, On Change**: Specific to the PinCode widget, these triggers activate when the user completes or alters a pin entry.
 - **On Count Changed**: Present in the CountController widget, this trigger responds to changes in the count.
 
-### Additional Gesture Detector Triggers
+## Gesture Detector Triggers
 
-FlutterFlow also provides additional action triggers that enhance the capabilities of gesture-based interactions. Here are all of the available triggers:
+Gesture Detector Triggers enable you to respond to user gestures, such as taps, drags, swipes, and pinches. These triggers are invoked based on specific gestures and allow you to add actions in response to user interactions. For example, the `onDoubleTap` trigger is invoked whenever a user quickly taps twice on a widget, which can be used to toggle a 'like' state or zoom in on content.
+
+### Lifecycle stages
+
+The lifecycle of gesture triggers involves four key stages: **Start**, **Update**, **End/Stop**, and **Cancel**. These stages dictate how gestures are detected and handled, from the initial interaction to completion or cancellation. Understanding this lifecycle is crucial for building intuitive gesture-based interactions in your app.
+
+![lifecycle-stage.avif](img/lifecycle-stage.avif)
+
+- **Start:** This is where the gesture begins, and it involves detecting the initial contact (like a touch, tap, or drag). Examples are:
+        - `onHorizontalDragStart`: Fires when the user starts dragging their finger horizontally on the screen.
+        - `onTapDown`: Fires when the user places their finger on the screen to initiate a tap.
+- **Update:** The Update stage tracks the movement or progress of the gesture. During this stage, you can capture real-time data like the finger's position (`deltaX`, `deltaY`), which is useful for implementing interactive features. Examples are:
+        - `onHorizontalDragUpdate`: Fired as the user drags their finger horizontally across the screen, allowing the app to track the distance moved.
+        - `onScaleUpdate`: Tracks the scale gesture as the user pinches to zoom in or out.
+- **End/Stop:** The End or Stop stage occurs when the user completes the gesture by lifting their finger, completing the action. Examples are:
+        - `onHorizontalDragEnd`: Triggered when the user finishes dragging horizontally and lifts their finger off the screen.
+        - `onPanEnd`: Fires when the user lifts their finger after completing a pan gesture (scrolling or dragging).
+- **Cancel:** The Cancel stage occurs when the gesture is interrupted, either by the user or by another action, preventing the gesture from completing. Examples are:
+        - `onHorizontalDragCancel`: Triggered when a horizontal drag is canceled due to some interruption (e.g., user releases finger before completing the drag).
+        - `onTapCancel`: Fires when a tap is canceled, for instance, if the user moves their finger too much before lifting it.
+
+#### Cancel before End
+
+The gesture lifecycle doesn't always strictly follow the sequence of **Start**, **Update**, **End/Stop**. The **Cancel** stage can occur at any point, even before **End/Stop**, depending on the interaction. Here are couple of examples:
+
+- **Tap Gesture**: If the user touches the screen but moves their finger too much before lifting, `onTapCancel` is triggered instead of `onTapUp`.
+- **Drag Gesture**: If a horizontal drag is interrupted before the drag completes (for example, if another gesture takes precedence), `onHorizontalDragCancel` is triggered instead of `onHorizontalDragEnd`.
+
+So, while most gestures follow the **Start ➡️ Update ➡️ End/Stop** flow, there are cases where the lifecycle stages sequence might be different. For example, see the visual below:
+
+![lifecycle-stage-cancel.avif](img/lifecycle-stage-cancel.avif)
+
+### Available Gesture Detector Triggers
+
+Below is a complete list of available gesture detector triggers in FlutterFlow to enhance the capabilities of gesture-based interactions.
 
 - **onDoubleTapCancel**: Triggered when a double-tap gesture is recognized but does not complete successfully.
 - **onDoubleTapDown**: Triggered when the user presses down on the screen for the first tap in a double-tap sequence.
@@ -123,40 +157,6 @@ FlutterFlow also provides additional action triggers that enhance the capabiliti
 - **onVerticalDragEnd**: Triggered when the user ends a vertical drag gesture.
 - **onVerticalDragStart**: Triggered when the user begins a vertical drag gesture.
 - **onVerticalDragUpdate**: Triggered continuously as the user drags vertically.
-
-## Gesture Detector Triggers
-
-Gesture Detector Triggers allow you to create complex interactions that can make your app feel more intuitive and delightful. This is particularly useful in applications where gestures can trigger a variety of different actions based on the context or the state of the application. Explore the [complete list](#additional-gesture-detector-triggers) of gesture detector triggers available in FlutterFlow.
-
-### Lifecycle stages
-
-The lifecycle of gesture triggers involves four key stages: **Start**, **Update**, **End/Stop**, and **Cancel**. These stages dictate how gestures are detected and handled, from the initial interaction to completion or cancellation. Understanding this lifecycle is crucial for building intuitive gesture-based interactions in your app.
-
-![lifecycle-stage.avif](img/lifecycle-stage.avif)
-
-- **Start:** This is where the gesture begins, and it involves detecting the initial contact (like a touch, tap, or drag). Examples are:
-        - `onTapDown`: Fires when the user places their finger on the screen to initiate a tap.
-        - `onHorizontalDragStart`: Fires when the user starts dragging their finger horizontally on the screen.
-- **Update:** The Update stage tracks the movement or progress of the gesture. During this stage, you can capture real-time data like the finger's position (`deltaX`, `deltaY`), which is useful for implementing interactive features. Examples are:
-        - `onHorizontalDragUpdate`: Fired as the user drags their finger horizontally across the screen, allowing the app to track the distance moved.
-        - `onScaleUpdate`: Tracks the scale gesture as the user pinches to zoom in or out.
-- **End/Stop:** The End or Stop stage occurs when the user completes the gesture by lifting their finger, completing the action. Examples are:
-        - `onHorizontalDragEnd`: Triggered when the user finishes dragging horizontally and lifts their finger off the screen.
-        - `onPanEnd`: Fires when the user lifts their finger after completing a pan gesture (scrolling or dragging).
-- **Cancel:** The Cancel stage occurs when the gesture is interrupted, either by the user or by another action, preventing the gesture from completing. Examples are:
-        - `onTapCancel`: Fires when a tap is canceled, for instance, if the user moves their finger too much before lifting it.
-        - `onHorizontalDragCancel`: Triggered when a horizontal drag is canceled due to some interruption (e.g., user releases finger before completing the drag).
-
-#### Cancel before End
-
-The gesture lifecycle doesn't always strictly follow the sequence of **Start**, **Update**, **End/Stop**. The **Cancel** stage can occur at any point, even before **End/Stop**, depending on the interaction. Here are couple of examples:
-
-- **Tap Gesture**: If the user touches the screen but moves their finger too much before lifting, `onTapCancel` is triggered instead of `onTapUp`.
-- **Drag Gesture**: If a horizontal drag is interrupted before the drag completes (for example, if another gesture takes precedence), `onHorizontalDragCancel` is triggered instead of `onHorizontalDragEnd`.
-
-So, while most gestures follow the **Start ➡️ Update ➡️ End/Stop** flow, there are cases where the lifecycle stages sequence might be different. For example, see the visual below:
-
-![lifecycle-stage-cancel.avif](img/lifecycle-stage-cancel.avif)
 
 ### Accessing Gesture Detector XY Data
 
