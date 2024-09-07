@@ -39,7 +39,7 @@ Below is a list of all supported built-in data types:
 - **Audio Path**: Stores the URL of uploaded audio files.
 - **Document Reference**: Stores references to documents, simplifying data fetching.
 - **Document**: Stores actual Firestore documents.
-- **Timestamp**: Stores date and time values.
+- **Date Time**: Stores date and time values.
 - **Json**: Stores JSON values, such as `{"firstName":"John", "lastName":"Doe"}`.
 - **LatLng**: Stores the latitude and longitude of specific locations, aiding Google Maps integration.
 - **TimestampRange**: Stores start and end date-time values.
