@@ -34,9 +34,37 @@ response to a trigger. This editor simplifies the process of creating and managi
 
 ### Action Triggers
 
-When you open Action Flow Editor you must add atleast one trigger. The **Action Triggers** bar, located at the left of the editor, displays all added triggers. Each trigger has its own separate node editor, allowing you to create distinct logic flows for different events. When you switch between triggers, the node editor updates to display the logic specific to the selected action trigger.
+When you open the Action Flow Editor, no triggers are added by default. To add a trigger, simply search for and select the desired one from the available options. The Action Triggers bar, located at the left of the editor, displays all added triggers.
 
-![Triggers](img/action-triggers.avif)
+:::info
+To learn more about the Action Trigger and its types, refer [**here**](action-triggers.md).
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/2kuQfhvjyPnW8PvbsaUw?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::warning[Exposed by FlutterFlow]
 Please note that Action Triggers are provided by FlutterFlow and are not user-generated. You can
