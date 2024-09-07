@@ -22,8 +22,7 @@ In FlutterFlow, you can craft a page tailored to your expertise, design preferen
 use case needs. Whether you're starting from scratch, using a template, or leveraging AI tools,
 there are several pathways to achieve the desired functionality and aesthetic of your desired Page.
 
-FlutterFlow allows you to easily create new pages using the Page Selector
-button, which is available in the **Widget Tree menu (Tab+2)**. This will help you
+FlutterFlow allows you to easily create new pages using the "Add Page, Component, or Flow" button, which is available in the **Page Selector menu (Tab+2)**. This will help you
 quickly start and add new pages to your app.
 
 :::tip[Generated Code]
