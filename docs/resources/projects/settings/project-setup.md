@@ -2,7 +2,7 @@
 slug: project-setup
 title: Project Setup
 tags: [Setup, Permissions, Multiple Languages]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
+keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0
 ---
@@ -531,5 +531,89 @@ To resolve this, simply add a delay ([Wait](../../../resources/control-flow/time
 <summary>My widget is not highlighting on a scrollable page. What should I do?</summary>
 <p>
 We are aware of a limitation where widgets that are not visible on a page (i.e., you need to scroll down to see them) may not be highlighted. We are actively working to resolve this issue. As a temporary workaround, you can try placing the widget in an area that is visible without scrolling. We appreciate your patience and hope to have a fix soon!
+</p>
+</details>
+
+## Development Environments
+
+Development environments in FlutterFlow allow users to set up multiple environments for their apps, such as **Development**, **Staging**, and **Production**. This enables you to test new features, make changes, or troubleshoot issues without impacting the live production data. 
+
+For example, when working on an e-commerce app, you might want to test new payment gateways or inventory management features in a dev or staging environment. This allows you to ensure that the backend updates are working properly without affecting the live production environment where real customer orders and data are processed.
+
+:::warning
+Currently, we only support the environments for Firebase. We’re working on expanding support for other integrations, such as API calls and Supabase.
+:::
+
+### Create and Switch Environments
+
+To create and switch environments, follow the steps below:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/k3b1TorDKd8ybTcMb8fZ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::info
+After switching to an environment, FlutterFlow generates code specific to that environment, for any of the following interactions:
+- Test / Run mode sessions
+- Local Run
+- Code export
+- Deployment
+:::
+
+### Configuring Firebase for each Environment
+
+After creating and switching to a new environment, you'll need to [**manually configure a new Firebase project**](../../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for that environment. This requires setting up a new project in the Firebase console and linking it to the selected environment in FlutterFlow. 
+
+:::info
+Additionally, you must manually set up [**Firebase rules**](../../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
+:::
+
+A single FlutterFlow project can have multiple environments, but each environment is tied to its own Firebase project, meaning each "FlutterFlow Environment" maps to a separate Firebase project. This ensures that each environment (Development, Staging, Production, etc.) remains independent, giving you more control over your app's data and behavior during different stages of development.
+
+![dev-env-firebase.avif](../imgs/dev-env-firebase.avif)
+
+### FAQ
+
+<details>
+<summary>How to push code from one environment to another?</summary>
+<p>
+It’s important to note that the **Development Environments** feature in FlutterFlow is primarily designed to configure different environments for testing; for example, testing app on a backend other than production. 
+
+If you are building new features, you should consider using [**Branching**](../../../testing-deployment-publishing/branching-collaboration/branching.md) to separate new changes from stable code. You can develop and test new features on a new branch and use Environment to point to dev backend. Once tested, you can merge the branch into `main` and switch to the **Production** Environment to go live.
+</p>
+</details>
+
+<details>
+<summary>Are you using Flutter flavors under the hood?</summary>
+<p>
+
+No, FlutterFlow does not use Flutter flavors. Instead, it generates code based on the environment selected in FlutterFlow. The environment-specific code is generated and applied for the following actions:
+
+- Test / Run mode sessions
+- Local Run
+- Code export
+- Deployment
 </p>
 </details>
