@@ -16,7 +16,7 @@ Designing interactivity involves two steps:
 1. Listening for Interaction (**Action Triggers**)
 2. Responding to Interaction (**Actions**)
 
-Action Triggers represent a specific event, while Actions are functions executed in response to the
+**Action Triggers** represent a specific event, while **Actions** are functions executed in response to the
 triggered event. Common triggers are:
 
 - **On Tap**: Triggered on tapping on a widget or specifically buttons.
