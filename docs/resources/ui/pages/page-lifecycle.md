@@ -113,7 +113,6 @@ Keyboard shortcuts won't trigger when a TextField widget is in focus. This is be
 
 Implementing keyboard shortcuts is a straightforward process in FlutterFlow. You can define as many shortcuts as you want, each mapped to specific actions that will trigger when the corresponding key combination is pressed. Let’s see an example of an eCommerce web app where users can quickly access the cart page by pressing the `C` key.
 
-demo arcade
 
 Here’s how you do it:
 
