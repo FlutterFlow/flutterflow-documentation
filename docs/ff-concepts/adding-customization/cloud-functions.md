@@ -250,6 +250,27 @@ com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e
 ## FAQs
 
 <details>
+<summary>Why do cloud function deployments fail on newly created projects?</summary>
+
+This issue occurs because the newly created Google Cloud Platform (GCP) project hasn't been fully configured with the necessary APIs and permissions. Follow the steps below to enable the required APIs and set proper permissions.
+
+1. Open your browser and navigate to the following URL:
+`https://console.cloud.google.com/functions/list?referrer=search&hl=en&project=<projectID>`
+Replace `<projectID>` with your GCP or Firebase project ID.
+2. Click on the **Create Function** button. GCP will prompt you to enable the necessary APIs: **Cloud Build** and **Cloud Functions**.
+3. After clicking **Next**, you will be prompted to enable the **Cloud Run Admin API**.
+![cloud-run-admin-api](imgs/cloud-run-admin-api.png)
+4. Now, you need to grant the default compute service account the appropriate permissions. In the next page, you will see the option to deploy an example cloud function like `helloHttp`. Deploy this function. You will be prompted to grant permissions to the default compute service account. The message will look like:
+`You need to grant the following roles to the build service account to deploy a function:
+roles/cloudbuild.builds.builder to <projectID>-compute@developer.gserviceaccount.com.`
+5. Click **Grant** to provide the required permissions and deploy the example cloud function. Once deployed, you can delete this function if you wish.
+
+With the required permissions granted, you should now be able to deploy cloud functions from FlutterFlow without any further issues.
+
+</details>
+
+
+<details>
 <summary>I am getting Cloud Function Deployment Errors</summary>
 
 ![img_10.png](imgs/img_10.png)
