@@ -107,7 +107,10 @@ This action trigger allows you to bind keyboard shortcuts to actions. This is in
 :::
 
 :::info[important]
-Keyboard shortcuts won't trigger when a TextField widget is in focus. This is because the TextField takes priority over other keyboard inputs to allow users to type.
+- When a keyboard shortcut is created at the page level, it won't trigger if a TextField is in focus, and you also won’t be able to type the shortcut key into the TextField.
+- When a keyboard shortcut is created at the component level, it also won't trigger if a TextField is in focus, but you’ll still be able to type the shortcut key into the TextField.
+- **To avoid conflicts, it's recommended to use shortcuts that users are unlikely to type, such as Command + S, instead of a single key like 'S'.**
+- There’s currently a known issue with Flutter's autofocus functionality. If a TextField inside a component has autofocus enabled, and the component has a keyboard shortcut, the TextField will not autofocus as expected.
 :::
 
 
