@@ -12,7 +12,7 @@ keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Fl
 
 **Action Triggers** represent specific events that occur when a user interacts with the app, such as tapping a button, selecting an option from a dropdown, or loading a new page. When an Action Trigger is invoked by one of these interactions, it initiates a corresponding **Action**—a task or operation that responds to the event.
 
-In essence, Action Triggers are the 'listeners' in your app, keeping an eye out for user interactions and signaling when it's time for your app to respond. By understanding and utilizing Action Triggers, you can craft a more dynamic and user-friendly application experience.
+In essence, Action Triggers are the '_listeners_' in your app, keeping an eye out for user interactions and signaling when it's time for your app to respond. By understanding and utilizing Action Triggers, you can craft a more dynamic and user-friendly application experience.
 
 ## Types of Action Triggers
 
@@ -24,7 +24,7 @@ FlutterFlow provides several basic action triggers that can be easily added:
 - **On Double Tap**: This trigger is activated when a user taps a widget twice quickly. A typical example might be zooming in on an image or photo when the user double-taps on it.
 - **On Long Press**: This trigger is activated when a user presses and holds down on a widget for an extended period. A common use case is to show additional options or a context menu, such as allowing a user to delete or rename a file when long-pressing on it.
 
-Here’s an example of showing a message on button click using the On Tap trigger:
+Here’s an example of showing a message on button click using the **On Tap** trigger:
 
 <div style={{
     position: 'relative',
