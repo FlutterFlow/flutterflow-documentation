@@ -37,7 +37,7 @@ response to a trigger. This editor simplifies the process of creating and managi
 When you open the Action Flow Editor, no triggers are added by default. To add a trigger, simply search for and select the desired one from the available options. The Action Triggers bar, located at the left of the editor, displays all added triggers.
 
 :::info
-To learn more about the Action Trigger and its types, refer [**here**](action-triggers.md).
+To learn more about **Action Triggers** and its types, refer [**here**](action-triggers.md).
 :::
 
 <div style={{
@@ -67,8 +67,8 @@ To learn more about the Action Trigger and its types, refer [**here**](action-tr
 <p></p>
 
 :::warning[Exposed by FlutterFlow]
-Please note that Action Triggers are provided by FlutterFlow and are not user-generated. You can
-only work with the ones provided by FlutterFlow.
+Please note that Action Triggers are exposed by FlutterFlow and are not user-generated. You can
+only work with the ones provided in the Action Flow Editor.
 :::
 
 Each trigger has its own separate node-editor, allowing you to create distinct logic flows for
