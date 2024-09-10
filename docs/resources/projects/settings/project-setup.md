@@ -587,7 +587,8 @@ After switching to an environment, FlutterFlow generates code specific to that e
 After creating and switching to a new environment, you'll need to [**manually configure a new Firebase project**](../../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for that environment. This requires setting up a new project in the Firebase console and linking it to the selected environment in FlutterFlow. 
 
 :::info
-Additionally, you must manually set up [**Firebase rules**](../../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
+- You must complete the Firebase setup for the new environment before fully testing it. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to production, and you can keep testing while finishing the setup for the new environment.
+- Additionally, you must manually set up [**Firebase rules**](../../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
 :::
 
 A single FlutterFlow project can have multiple environments, but each environment is tied to its own Firebase project, meaning each "FlutterFlow Environment" maps to a separate Firebase project. This ensures that each environment (Development, Staging, Production, etc.) remains independent, giving you more control over your app's data and behavior during different stages of development.
