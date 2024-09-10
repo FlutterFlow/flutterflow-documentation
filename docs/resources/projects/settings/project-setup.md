@@ -591,7 +591,7 @@ After creating and switching to a new environment, you'll need to [**manually co
 - Additionally, you must manually set up [**Firebase rules**](../../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
 :::
 
-A single FlutterFlow project can have multiple environments, but each environment is tied to its own Firebase project, meaning each "FlutterFlow Environment" maps to a separate Firebase project. This ensures that each environment (Development, Staging, Production, etc.) remains independent, giving you more control over your app's data and behavior during different stages of development.
+A single FlutterFlow project can have **multiple environments**, each mapped to its **own Firebase project**. This ensures that environments like `Development`, `Staging`, and `Production` remain independent, giving you better control over your app's data and behavior throughout different stages of development.
 
 ![dev-env-firebase.avif](../imgs/dev-env-firebase.avif)
 
