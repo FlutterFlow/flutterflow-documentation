@@ -538,10 +538,22 @@ We are aware of a limitation where widgets that are not visible on a page (i.e.,
 
 Development environments in FlutterFlow allow users to set up multiple environments for their apps, such as **Development**, **Staging**, and **Production**. This enables you to test new features, make changes, or troubleshoot issues without impacting the live production data. 
 
+:::note
+By default, every FlutterFlow project starts with a Production environment, where real users interact with the data.
+:::
+
 For example, when working on an e-commerce app, you might want to test new payment gateways or inventory management features in a dev or staging environment. This allows you to ensure that the backend updates are working properly without affecting the live production environment where real customer orders and data are processed.
 
 :::warning
 Currently, we only support the environments for Firebase. We’re working on expanding support for other integrations, such as API calls and Supabase.
+:::
+
+:::info[When to Use Dev vs. Staging Environments]
+- **Dev Environment**: Use for testing and developing new features without affecting production data.
+- **Staging Environment**: Use to simulate the production environment before launching, and is isolated from the actual production data.
+
+
+*This is a common best practice, but you can create custom environments with different names for your own workflow style.*
 :::
 
 ### Create and Switch Environments
@@ -593,7 +605,7 @@ After creating and switching to a new environment, you'll need to [**manually co
 
 A single FlutterFlow project can have **multiple environments**, each mapped to its **own Firebase project**. This ensures that environments like `Development`, `Staging`, and `Production` remain independent, giving you better control over your app's data and behavior throughout different stages of development.
 
-![dev-env-firebase.avif](../imgs/dev-env-firebase.avif)
+![flutterflow-environment.avif](../imgs/flutterflow-environment.avif)
 
 ### FAQ
 
