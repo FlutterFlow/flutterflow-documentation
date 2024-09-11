@@ -73,31 +73,40 @@ Gesture Detector Triggers enable you to respond to user gestures, such as taps, 
 
 The lifecycle of gesture triggers involves four key stages: **Start**, **Update**, **End/Stop**, and **Cancel**. These stages dictate how gestures are detected and handled, from the initial interaction to completion or cancellation. Understanding this lifecycle is crucial for building intuitive gesture-based interactions in your app.
 
+#### Tap Gesture Lifecycle
+
+Tap gestures have a simpler lifecycle, focusing primarily on detecting taps and whether they complete or get canceled. Here's how the tap lifecycle works:
+
+1. **Start**: This stage begins when the user places their finger on the screen to initiate a tap. For example: `onTapDown` is triggered when the user touches the screen to start a tap.
+2. **End/Stop**: The tap gesture is completed when the user lifts their finger from the screen. For example: `onTapUp` is triggered when the user completes the tap by lifting their finger.
+3. **Cancel**: If the user moves their finger too much before lifting it, the tap is canceled, preventing the completion of the action. For example: `onTapCancel` is triggered when a tap gesture is canceled.
+
+Here’s how the lifecycle flows for tap gestures:
+
+![tap-gesture-lifecycle](img/tap-gesture-lifecycle.avif)
+
+#### Drag Gesture Lifecycle
+
+Drag gestures are more complex, involving continuous tracking of movement across the screen. The drag lifecycle involves the following stages:
+
+1. **Start**: This stage occurs when the user begins dragging their finger on the screen. For example: `onHorizontalDragStart` is triggered when a horizontal drag is initiated.
+2. **Update**: During the drag, the gesture’s movement is tracked, allowing you to capture real-time data like the pointer's position or delta values. For example: `onHorizontalDragUpdate` is triggered as the user drags their finger, enabling the app to track the drag’s progress.
+3. **End/Stop**: The drag gesture is completed when the user lifts their finger, finalizing the interaction. For example: `onHorizontalDragEnd` is triggered when the user finishes dragging and lifts their finger off the screen.
+4. **Cancel**: If the drag gesture is interrupted before it completes (for instance, by another gesture), it will be canceled. For example: `onHorizontalDragCancel` is triggered if the drag is interrupted before finishing.
+
+Here’s how the lifecycle flows for drag gestures:
+
 ![lifecycle-stage.avif](img/lifecycle-stage.avif)
 
-- **Start:** This is where the gesture begins, and it involves detecting the initial contact (like a touch, tap, or drag). Examples are:
-        - `onHorizontalDragStart`: Fires when the user starts dragging their finger horizontally on the screen.
-        - `onTapDown`: Fires when the user places their finger on the screen to initiate a tap.
-- **Update:** The Update stage tracks the movement or progress of the gesture. During this stage, you can capture real-time data like the finger's position (`deltaX`, `deltaY`), which is useful for implementing interactive features. Examples are:
-        - `onHorizontalDragUpdate`: Fired as the user drags their finger horizontally across the screen, allowing the app to track the distance moved.
-        - `onScaleUpdate`: Tracks the scale gesture as the user pinches to zoom in or out.
-- **End/Stop:** The End or Stop stage occurs when the user completes the gesture by lifting their finger, completing the action. Examples are:
-        - `onHorizontalDragEnd`: Triggered when the user finishes dragging horizontally and lifts their finger off the screen.
-        - `onPanEnd`: Fires when the user lifts their finger after completing a pan gesture (scrolling or dragging).
-- **Cancel:** The Cancel stage occurs when the gesture is interrupted, either by the user or by another action, preventing the gesture from completing. Examples are:
-        - `onHorizontalDragCancel`: Triggered when a horizontal drag is canceled due to some interruption (e.g., user releases finger before completing the drag).
-        - `onTapCancel`: Fires when a tap is canceled, for instance, if the user moves their finger too much before lifting it.
+##### Drag Gesture Cancellation
 
-#### Cancel before End
+For drag gestures, lifecycle doesn't always strictly follow the sequence of **Start**, **Update**, **End/Stop**. The **Cancel** stage can occur at any point, even before **End/Stop**, depending on the interaction. This is different from tap gestures because a drag can be canceled after it has started or even while it is being updated.
 
-The gesture lifecycle doesn't always strictly follow the sequence of **Start**, **Update**, **End/Stop**. The **Cancel** stage can occur at any point, even before **End/Stop**, depending on the interaction. Here are couple of examples:
-
-- **Tap Gesture**: If the user touches the screen but moves their finger too much before lifting, `onTapCancel` is triggered instead of `onTapUp`.
-- **Drag Gesture**: If a horizontal drag is interrupted before the drag completes (for example, if another gesture takes precedence), `onHorizontalDragCancel` is triggered instead of `onHorizontalDragEnd`.
-
-So, while most gestures follow the **Start ➡️ Update ➡️ End/Stop** flow, there are cases where the lifecycle stages sequence might be different. For example, see the visual below:
+For example, If a horizontal drag is interrupted before the drag completes (for example, if another gesture takes precedence), `onHorizontalDragCancel` is triggered instead of `onHorizontalDragEnd`.
 
 ![lifecycle-stage-cancel.avif](img/lifecycle-stage-cancel.avif)
+
+
 
 ### Available Gesture Detector Triggers
 
