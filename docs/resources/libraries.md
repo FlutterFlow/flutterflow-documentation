@@ -82,6 +82,7 @@ To publish a project as a library, start by creating a FlutterFlow project as yo
 
 :::info
 
+- You can only publish libraries if you have access to branching, which is available to Pro+ users.
 - Libraries can only be published from the main branch, and each published version is linked to a specific commit, ensuring robust version control.
 - You can add new features and publish updated versions of the library. Each time a new version is published, the version number will automatically increment.
 
