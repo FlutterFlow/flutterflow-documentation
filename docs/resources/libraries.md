@@ -131,6 +131,32 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ![update-library.avif](imgs/update-library.avif)
 
+### Manage Dependency Conflict while Import
+
+A **Dependency Conflict** occurs when two or more libraries added by a project depend on different versions of the same dependency. This creates a situation where the project cannot resolve which version to use, leading to a project error.
+
+![dependency-conflict.avif](imgs/dependency-conflict.avif)
+
+Let's say you are building an eCommerce app that uses multiple libraries for different purposes:
+
+- **User Auth Library** is used for handling user authentication.
+- **Payment Gateway Library** is used for managing the payment gateway.
+
+Both libraries depend on a common library called **Components Library** but with different versions:
+
+- **User Auth Library** depends on Components Library **v1.5.0**.
+- **Payment Gateway Library** depends on Components Library **v2.0.0**.
+
+In this scenario, eCommerce App project will detect the dependency conflict because it can't add both v1.5.0 and v2.0.0 of Components Library at the same time.
+
+#### Steps to Fix Dependency Conflict
+
+Follow these steps to ensure both libraries rely on the same version of Components Library:
+
+1. **Upgrade both libraries**: Start by upgrading libraries to their latest versions. Often, newer versions are built to rely on a common or more flexible version of Components Library, which can resolve conflicts.
+2. **Modify libraries**: If you have access to the library projects, adjust the dependencies of either User Auth Library or Payment Gateway Library (or both) to use the same version of Components Library.
+3. **Contact library maintainers**: If you cannot resolve the conflict yourself, reach out to the maintainers of User Auth Library and Payment Gateway Library. They may provide guidance, suggest workarounds, or release a version that addresses the conflict.
+
 ## Access Library Resources
 
 Once the library is imported, components and resources are accessible within the project. It's important to note that these resources show up where they are instantiated. For example:
