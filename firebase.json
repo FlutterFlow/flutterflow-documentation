@@ -19,11 +19,6 @@
         "type": 301
       },
       {
-        "source": "/troubleshooting/**",
-        "destination": "/troubleshooting",
-        "type": 301
-      },
-      {
         "source": "/getting-started/dashboard",
         "destination": "/flutterflow-ui/dashboard",
         "type": 301
