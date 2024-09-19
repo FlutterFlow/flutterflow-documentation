@@ -175,7 +175,7 @@ Here are the FAQs in the requested format:
 <details>
 <summary>What will happen to existing team libraries?</summary>
 <p>
-Team code and API libraries will be migrated to standard projects. These projects will be imported as a library with the “latest version” specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
+Team code and API libraries will be migrated to Library Projects. These projects will be imported as a library with the latest version specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
 </p>
 </details>
 
