@@ -534,19 +534,16 @@ We are aware of a limitation where widgets that are not visible on a page (i.e.,
 </p>
 </details>
 
-## Development Environments
+## Dev Environments
 
-Development environments in FlutterFlow allow users to set up multiple environments for their apps, such as **Development**, **Staging**, and **Production**. This enables you to test new features, make changes, or troubleshoot issues without impacting the live production data. 
+Dev environments in FlutterFlow allow you to set up multiple environments for your apps, such as **Development**, **Staging**, and **Production**. For each environment, you can create environment-specific variables, which can be used throughout your app to change its behavior based on the selected environment.
+
+For example, in an e-commerce app, you might define an `apiUrl` variable that points to different backends for Development, Staging, and Production. This allows you to test new payment gateways or inventory management features in a dev or staging environment. It ensures that backend updates are functioning correctly without affecting the live production environment, where real customer orders are processed.
 
 :::note
 By default, every FlutterFlow project starts with a Production environment, where real users interact with the data.
 :::
 
-For example, when working on an e-commerce app, you might want to test new payment gateways or inventory management features in a dev or staging environment. This allows you to ensure that the backend updates are working properly without affecting the live production environment where real customer orders and data are processed.
-
-:::warning
-Currently, we only support the environments for Firebase. We’re working on expanding support for other integrations, such as API calls and Supabase.
-:::
 
 :::info[When to Use Dev vs. Staging Environments]
 - **Dev Environment**: Use for testing and developing new features without affecting production data.
@@ -566,7 +563,36 @@ To create and switch environments, follow the steps below:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/k3b1TorDKd8ybTcMb8fZ?embed&show_copy_link=true"
+        src="https://demo.arcade.software/yR8P5pFPOKtuQ0jFSOJ7?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Use Environment Variables
+Let's see an example of creating and using `apiUrl` as an environment variable in an e-commerce app.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/bAVpkNAanVDlBTyeRwJy?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
