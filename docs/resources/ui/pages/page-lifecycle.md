@@ -72,7 +72,6 @@ loads.
 certain UI elements on the page.
   :::
 
-#### Adding an Action
 
 To add an action to **On Page Load** action trigger, follow the steps:
 
@@ -95,6 +94,56 @@ trigger specific actions in response to a phone shake gesture.
   form
   fields, or return to the app's home screen.
   :::
+
+### On Shortcut Press [Action Trigger]
+
+This action trigger allows you to bind keyboard shortcuts to actions. This is incredibly helpful for improving accessibility and enhancing user experience, especially in web and desktop apps.
+
+:::tip[Possible usecases]
+
+- **Create New Issues in Project Management Apps:** In project management apps like Linear, users can press `C` to quickly open a form for creating a new issue or task.
+- **Form Submission:** Users can press a key combination (e.g., `Ctrl + Enter`) to submit a form.
+- **Navigating Between Pages:** Use shortcuts like `Ctrl + Right Arrow` to navigate between pages without using the mouse.
+:::
+
+:::info[important]
+- When a keyboard shortcut is created at the page level, it won't trigger if a TextField is in focus, and you also won’t be able to type the shortcut key into the TextField.
+- When a keyboard shortcut is created at the component level, it also won't trigger if a TextField is in focus, but you’ll still be able to type the shortcut key into the TextField.
+- **To avoid conflicts, it's recommended to use shortcuts that users are unlikely to type, such as Command + S, instead of a single key like 'S'.**
+- There’s currently a known issue with Flutter's autofocus functionality. If a TextField inside a component has autofocus enabled, and the component has a keyboard shortcut, the TextField will not autofocus as expected.
+:::
+
+
+Implementing keyboard shortcuts is a straightforward process in FlutterFlow. You can define as many shortcuts as you want, each mapped to specific actions that will trigger when the corresponding key combination is pressed. Let’s see an example of an eCommerce web app where users can quickly access the cart page by pressing the `C` key.
+
+
+Here’s how you do it:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ABFMLi4ozS0u5xKOTjwi?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Page state
 
