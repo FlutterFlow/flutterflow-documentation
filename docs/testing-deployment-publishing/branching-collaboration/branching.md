@@ -205,6 +205,95 @@ If the visual editor doesn't display something in the split screen UI that you n
 
 :::
 
+## Commits
+
+A commit is essentially a saved snapshot of your project at a particular point in time. When you make changes to your project (such as adding new widgets, modifying actions, or configuring integrations), you can create a commit to save these changes. Each commit stores a record of what has been modified and serves as a version history for your project, making it easy to roll back to previous versions if needed.
+
+### Create Commits
+
+To create a commit, follow these steps:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(53.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/bfqijjODDijWLszOOQqV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip[Best Practices for Commits]
+- **Commit Frequently:** Save your work often to ensure that changes are tracked, and you have a detailed version history.
+- **Use Clear Messages:** Always provide meaningful commit messages that explain what was done.
+- **Test Before Committing:** Ensure that the project works as expected before committing significant changes.
+:::
+
+### View Commit Changes
+
+Once the commit is created, you can see the list of all commits under the **Branch History** section. Here, each commit is displayed with a timestamp, the user who made the changes, and a commit message. You can also search and filter through commits by specific users and date range.
+
+To see the commit changes, simply click on the commit.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(53.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/3WbkSc5kCtZNzQf1DlKQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Commit Options
+
+The options provided for each commit are as follows:
+
+- **View Commit:** This option lets you view the details of a particular commit.
+- **Restore Branch to Commit:** If you need to roll back your project to a previous version, this option allows you to restore your current branch to the state of a specific commit. This can be useful if a commit change introduces an issue, and you need to revert to a stable point in the project.
+- **Copy Commit ID:** Every commit is assigned a unique ID. This option allows you to copy the commit ID, which can be useful for referencing specific commits in collaboration with team members.
+
+
+
+## Branch-level Permissions
+In your project, you have the ability to assign specific roles such as **Editors** and **Mergers** to team members for each branch. Editors assigned to a branch have the authority to make direct modifications to the project while working within that branch. On the other hand, mergers are tasked solely with integrating changes from the current branch into main.
+
+To configure these permissions, navigate to **Settings & Integrations > Project Setup > Collaboration > Branch Permissions**.
+
+![branch-permission](../imgs/branch-permission.png)
+
 ## Merge vs Rebase
 
 The **Merge** option combines changes from different branches with a new commit, keeping a branched history. It's easier and more suitable for teams with simultaneous updates.
