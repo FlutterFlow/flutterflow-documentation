@@ -207,7 +207,7 @@ If the visual editor doesn't display something in the split screen UI that you n
 
 ## Commits
 
-A commit is essentially a saved snapshot of your project at a particular point in time. When you make changes to your project (such as adding new widgets, modifying actions, or configuring integrations), you can create a commit to save these changes. Each commit stores a record of what has been modified and serves as a version history for your project, making it easy to roll back to previous versions if needed.
+A commit is essentially a saved snapshot of your project at a particular point in time. When you make changes to your project (such as adding new widgets, modifying actions, or configuring integrations), you can create a commit to save these changes. Each commit stores a record of what has been modified and serves as a version history for your branch, making it easy to see what has changed and roll back to previous versions if needed.
 
 ### Create Commits
 
@@ -285,6 +285,11 @@ The options provided for each commit are as follows:
 - **Restore Branch to Commit:** If you need to roll back your project to a previous version, this option allows you to restore your current branch to the state of a specific commit. This can be useful if a commit change introduces an issue, and you need to revert to a stable point in the project.
 - **Copy Commit ID:** Every commit is assigned a unique ID. This option allows you to copy the commit ID, which can be useful for referencing specific commits in collaboration with team members.
 
+### Commits vs. Snapshots and Versions
+FlutterFlow offers multiple ways to save the state of your project at specific points in time.
+
+Snapshots are automatically created as you edit your project. Think of them as automatic backups that you can revert to whenever needed.
+Versions and commits, on the other hand, are manually created checkpoints. While both serve a similar purpose, commits offer more flexibility by allowing you to view the specific changes made in each commit. If you're using a plan that supports branching, it's recommended to use commits for better tracking and version control.
 
 
 ## Branch-level Permissions
