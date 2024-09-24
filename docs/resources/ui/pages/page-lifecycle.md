@@ -142,7 +142,7 @@ To create a shortcut, use the **On Shorcut Press** action trigger, then type the
 </div>
 <p></p>
 
-:::note[Keyboard Shorcuts & Text Fields]
+:::warning[Keyboard Shorcuts & Text Fields]
 When implementing keyboard shortcuts on a page or component with a text field, you may need to ensure the text field ignores those shortcuts.
 
 For instance, if you have a shortcut assigned to the letter "C" and a user tries to type "C" in the text field, you likely want the input to capture the keypress without triggering the shortcut.
