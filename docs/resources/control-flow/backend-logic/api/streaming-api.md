@@ -195,7 +195,7 @@ Here's how exactly you do it:
 
 ### 5. Extract chart data
 
-The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](../../../../ff-concepts/adding-customization/cloud-functions.md). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
+The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](../../../../ff-concepts/adding-customization/custom-functions.md). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
 
 Here's how you do it:
 
