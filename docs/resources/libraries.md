@@ -31,7 +31,7 @@ With the Libraries, you can publish the complete FlutterFlow project as a librar
 
 :::
 
-### What’s Included When Importing a Library
+### Library Resources
 
 When you import a library into a FlutterFlow project, the following resources are accessible for use:
 
