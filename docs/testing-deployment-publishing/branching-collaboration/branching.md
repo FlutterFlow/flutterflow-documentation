@@ -158,6 +158,8 @@ FlutterFlow offers multiple ways to save the state of your project at specific p
 - **Snapshots** are automatically created as you edit your project. Think of them as automatic backups that you can revert to whenever needed.
 - **Versions and commits**, on the other hand, are manually created checkpoints. While both serve a similar purpose, commits offer more flexibility by allowing you to view the specific changes made in each commit. If you're using a plan that supports branching, it's recommended to use commits for better tracking and version control.
 
+You can learn more about [snapshots and versions here](/collaboration/saving-versioning). 
+
 ## Merging
 
 Merging allows you to push the changes you've made in one branch into another. For example, you may want to push your changes from a feature branch, or a branch where you are developing a new feature, back into the `main` branch once it's ready to be deployed to your users.

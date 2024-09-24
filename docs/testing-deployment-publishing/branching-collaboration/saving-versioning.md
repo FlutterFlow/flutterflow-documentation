@@ -57,7 +57,7 @@ Restoring the previous version will preserve the current version, then load the 
 
 ## Commits
 
-Commits are similar to versions in that you can save the state of your project at a point in time. Commits are saved to a specific branch's history. With commits you can view the specific changes made in that commit and restore a branch to the state of a specific commit. 
+Commits are similar to versions in that you can save the state of your project at a point in time. Commits are saved to a specific branch's history. With commits you can view the specific changes made in that commit and restore a branch to the state of a specific commit. For more details see this page on [Branching and Commits](/collaboration/branching#commits).
 
 ## Snapshots
 
