@@ -75,7 +75,7 @@ When you add a component to the widget tree, you can set the parameter values by
 
 
 
-## Seting a Unique Key
+## Setting a Unique Key
 When you have a component in a dynamically generated list, you have an option to set a unique key. Imagine you have a dynamic list where items can change frequently – like a to-do list where tasks are added and removed. Think of it as giving each task a unique ID number. This is important for a few reasons:
 
 - **Tracking Changes:** The 'Unique Key' helps the app recognize which tasks are new, completed, or removed, ensuring accurate updates.
