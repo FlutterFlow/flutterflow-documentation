@@ -1,5 +1,5 @@
 ---
-slug: testing/dev-environments
+slug: /testing/dev-environments
 title: Development Environments
 description: Learn how to create and leverage development environments in FlutterFlow.
 tags: [Dev Environments, Backend, Testing]
