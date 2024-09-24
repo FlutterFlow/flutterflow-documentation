@@ -108,6 +108,145 @@ respective widgets and action triggers.
     </iframe>
 </div>
 
+### Widget Builder as Parameter
+
+Sometimes, you might want to create a component that maintain a consistent design while also allowing for customization. This is where passing widgets as parameters becomes valuable. By allowing you to define a base structure for your components and pass in custom widgets as needed, you can easily reuse components in different parts of your app while adapting them to various styles or content.
+
+For example, consider a custom dropdown component. While the overall structure of the dropdown remains the same, you might need to change the style or content of the dropdown items based on different use cases. By passing the dropdown item as a parameter, you can use the dropdown's appearance and behavior without creating new components for each variation.
+
+:::tip[possible use casses]
+- **Custom Cards**: Imagine you need to display product cards in an e-commerce app. You can build a reusable card component with parameters for the image, header, content, and call-to-action button. This card can be reused across multiple pages but with different content.
+- **Dynamic Forms**: Build a form component where different fields (TextFields, Dropdowns, or Checkboxes) are passed in as parameters. This allows you to reuse the same form structure but adapt to various input fields.
+- **Modular Layouts**: Create a consistent layout structure with areas like headers and footers that remain the same while passing in different body content as parameters to adapt to different pages.
+:::
+
+Let’s see an example from an eCommerce app. On the shipping address page, you can maintain a consistent style and layout for input fields while allowing customization for the type of input—such as a TextField for the name, and a Dropdown for selecting country. Moreover, you can reuse the same component across other pages, such as the profile update.
+
+![widget-builder-as-parameter-example.avif](imgs/widget-builder-as-parameter-example.avif)
+
+Here’s exactly how you do it:
+
+1. If you haven't already, start by creating a new component and add the base widgets that will be unmodified. Next, define a parameter and set its type to **Widget Builder**. To [pass data from the current component to the widget builder](#pass-parameter-from-component-to-widget-builder), you can specify a parameter within it.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(55.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/4JjEozeplDTGYYr1pqnF?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+2. Then, add the widget builder placeholder into the desired spot in the component’s widget tree where the dynamic element should appear.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/WIQE90y3f14ajwx2Wy7H?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+3. Now, you can use the component and pass in different widget builders (as components) to customize the content according to your needs. In this example, we create two additional components for TextField and Dropdown—and pass them as widget builder. 
+
+    :::info
+    Currently, you can only pass components as a widget builder, but in the future, you will be able to pass any widget.
+    :::
+
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/zlTGZrEymy56lONPvSn5?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+#### Pass Parameter from Component to Widget Builder
+
+Sometimes, you may need to pass data from the component to the widget builder. For instance, on the shipping address page, you might want the hint text in an input field to match the label text. In such cases, you can pass the parameter received in the component further to the widget builder.
+
+Here’s how you do it:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/eNz0LKXEpeh90p9qNIyU?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ## To add a Component to Page
 
 To add a component to a Page, choose the Page where you want to add the new component, and follow
