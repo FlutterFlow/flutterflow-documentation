@@ -1,6 +1,7 @@
 ---
 title: Widget Builder Parameters
 sidebar_position: 5
+slug: widget-builder
 ---
 
 # Widget Builder Parameters
