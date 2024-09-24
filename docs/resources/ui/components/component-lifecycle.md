@@ -1,5 +1,5 @@
 ---
-title: Component Lifecycle
+title: Component Actions & Lifecycle
 sidebar_position: 3
 toc_max_heading_level: 5
 ---
