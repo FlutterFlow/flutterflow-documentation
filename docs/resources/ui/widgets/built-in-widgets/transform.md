@@ -6,7 +6,7 @@ tags: [Base Elements]
 
 The `Transform` widget applies graphic transformations such as skew (or tilt), rotate, scale, and translate (or slide) to its child widget. You could use this widget in combination with animations to build visually engaging apps.
 
-![img_10.png](img_10.png)
+![transform.png](imgs/transform.png)
 
 ## Adding Transform widget
 
