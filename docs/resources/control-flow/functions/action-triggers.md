@@ -16,6 +16,11 @@ In essence, Action Triggers are the '_listeners_' in your app, keeping an eye ou
 
 ## Types of Action Triggers
 
+### Page & Component Root Level Triggers
+FlutterFlow provides several action triggers that allow you to respond to a page or component being initialized, or things like a key press event. 
+
+For more information on these triggers, see the [Page Actions & Lifecycle](/resources/ui/pages/page-lifecycle) and [Components Actions & Lifecycle](/resources/ui/components/component-lifecycle) pages.
+
 ### Basic Triggers
 
 FlutterFlow provides several basic action triggers that can be easily added:
@@ -68,6 +73,8 @@ Widget specific triggers are available on certain widgets. Here are they:
 ## Gesture Detector Triggers
 
 Gesture Detector Triggers enable you to respond to user gestures, such as taps, drags, swipes, and pinches. These triggers are invoked based on specific gestures and allow you to add actions in response to user interactions. For example, the `onDoubleTap` trigger is invoked whenever a user quickly taps twice on a widget, which can be used to toggle a 'like' state or zoom in on content.
+
+These triggers are accesible when you add an action onto a `Container`.
 
 ### Lifecycle stages
 
@@ -167,17 +174,17 @@ Below is a complete list of available gesture detector triggers in FlutterFlow t
 - **onVerticalDragStart**: Triggered when the user begins a vertical drag gesture.
 - **onVerticalDragUpdate**: Triggered continuously as the user drags vertically.
 
-### Accessing Gesture Detector XY Data
+### Accessing Gesture Detector Data
 
-Gesture detectors not only recognize types of gestures but also provide the exact location (XY coordinates) where they occur. This feature is essential for apps that require precise interaction, like drawing applications or interactive maps.
+Gesture detectors not only recognize types of gestures but also provide relevant data based on the trigger. For example, the exact location (XY coordinates) where a drag event occurs. 
 
-Examples of using XY data include:
+Examples of using gesture data include:
 
-- **Drawing Apps:** Use the touch coordinates to let users paint or draw directly on their device screen.
-- **Interactive Maps:** Implement gestures to navigate around the map or adjust the zoom level based on where the user touches.
+- **Custom Slider:** Use the coordinates to update the position of the thumb of a custom slider on its track.
+- **Interactive Zoom:** Used the data provided by the scale gesture to appropriately zoom in or out.
 - **Dynamic Interfaces:** Create effects that react to touch, like animations that start from where the user taps the screen.
 
-You can access the Gesture Detector XY data after adding the relevant gesture detector triggers. Once added, you can retrieve this data via the Set from Variable menu inside the Action Flow Editor. Depending on your specific needs, you can choose from the following options:
+You can access the Gesture Detector data after adding the relevant gesture detector triggers. Once added, you can retrieve this data via the **Set from Variable** menu inside the **Action Flow Editor**. Depending on your specific needs, you can choose from the following options:
 
 - **Global Position X**: The x-coordinate of the pointer relative to the left edge of the screen when the gesture was triggered.
 - **Global Position Y**: The y-coordinate of the pointer relative to the top edge of the screen when the gesture was triggered.
