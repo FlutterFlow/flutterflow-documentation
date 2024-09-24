@@ -11,13 +11,13 @@ import TabItem from '@theme/TabItem';
 
 # Libraries
 
-The Libraries feature enables you to share and reuse entire FlutterFlow projects as libraries across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
+Libraries enables you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
 
 Imagine you're building an e-commerce app, and different teams are working on various features. One team develops a complex payment system. By using the Libraries, they can publish the payment system as a reusable library and allow other teams to easily import and integrate it into multiple projects without duplicating development efforts.
 
 ![libraries.avif](imgs/libraries.avif)
 
-### Why Libraries
+### Importance of Libraries
 
 Previously, FlutterFlow offered several methods to share resources between projects, such as team code libraries, design systems, API libraries, and by leveraging marketplace items. However, these methods had limitations, including the inability to share custom data types or custom functions alongside components or API calls and the absence of version control.
 
@@ -52,7 +52,7 @@ Pages are still being worked on and may come in future updates.
 
 ## Publishing a Library
 
-To publish a project as a library, start by creating a FlutterFlow project as you normally would, then follow these steps:
+To publish a FlutterFlow project as a library, start by creating a FlutterFlow project as you normally would, then follow these steps:
 
 <div style={{
     position: 'relative',
@@ -131,7 +131,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ![update-library.avif](imgs/update-library.avif)
 
-### Manage Dependency Conflict while Import
+### Dependency Conflicts
 
 A **Dependency Conflict** occurs when two or more libraries added by a project depend on different versions of the same dependency. This creates a situation where the project cannot resolve which version to use, leading to a project error.
 
@@ -142,20 +142,20 @@ Let's say you are building an eCommerce app that uses multiple libraries for dif
 - **User Auth Library** is used for handling user authentication.
 - **Payment Gateway Library** is used for managing the payment gateway.
 
-Both libraries depend on a common library called **Components Library** but with different versions:
+Both library projects depend on a common library called **Components Library** but imports different versions respectively:
 
-- **User Auth Library** depends on Components Library **v1.5.0**.
-- **Payment Gateway Library** depends on Components Library **v2.0.0**.
+- **User Auth Library** depends on `Components Library v1.5.0`.
+- **Payment Gateway Library** depends on `Components Library v2.0.0`.
 
-In this scenario, eCommerce App project will detect the dependency conflict because it can't add both v1.5.0 and v2.0.0 of Components Library at the same time.
+In this scenario, the eCommerce project will detect the dependency conflict because it can't add both `v1.5.0` and `v2.0.0` of the Components Library at the same time.
 
-#### Steps to Fix Dependency Conflict
+#### Fixing Dependency Conflicts
 
 Follow these steps to ensure both libraries rely on the same version of Components Library:
 
 1. **Upgrade both libraries**: Start by upgrading libraries to their latest versions. Often, newer versions are built to rely on a common or more flexible version of Components Library, which can resolve conflicts.
-2. **Modify libraries**: If you have access to the library projects, adjust the dependencies of either User Auth Library or Payment Gateway Library (or both) to use the same version of Components Library.
-3. **Contact library maintainers**: If you cannot resolve the conflict yourself, reach out to the maintainers of User Auth Library and Payment Gateway Library. They may provide guidance, suggest workarounds, or release a version that addresses the conflict.
+2. **Modify Libraries**: If you have access to the library projects, adjust the dependencies of either User Auth Library or Payment Gateway Library (or both) to use the same version of the Components Library.
+3. **Contact Library Maintainers**: If you do not own the library yourself, reach out to the maintainers of the library projects. They may provide guidance, suggest workarounds, or release a version that addresses the conflict.
 
 ## Access Library Resources
 
