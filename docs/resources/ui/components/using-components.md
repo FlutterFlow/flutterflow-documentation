@@ -110,9 +110,9 @@ respective widgets and action triggers.
 
 ### Widget Builder as Parameter
 
-The Widget Builder as Parameter feature allows you to create flexible and reusable UI components by passing widgets as parameters. This helps maintain a consistent design while allowing for customization when using the component in different places. By defining a base structure, you can easily reuse it with different content or styles across your app.
+Sometimes, you might want to create a component that maintain a consistent design while also allowing for customization. This is where passing widgets as parameters becomes valuable. By allowing you to define a base structure for your components and pass in custom widgets as needed, you can easily reuse components in different parts of your app while adapting them to various styles or content.
 
-For example, say you’re building a custom dropdown component that displays a list of items. The structure of the dropdown remains the same, but the style and content of the dropdown items might differ. Without this feature, you would need to create multiple separate dropdown components for each style or content type. However, with this feature, you can pass the dropdown item as a parameter, making the dropdown component flexible enough to be used in various scenarios without creating new components every time.
+For example, consider a custom dropdown component. While the overall structure of the dropdown remains the same, you might need to change the style or content of the dropdown items based on different use cases. By passing the dropdown item as a parameter, you can use the dropdown's appearance and behavior without creating new components for each variation.
 
 :::tip[possible use casses]
 - **Custom Cards**: Imagine you need to display product cards in an e-commerce app. You can build a reusable card component with parameters for the image, header, content, and call-to-action button. This card can be reused across multiple pages but with different content.
@@ -120,13 +120,13 @@ For example, say you’re building a custom dropdown component that displays a l
 - **Modular Layouts**: Create a consistent layout structure with areas like headers and footers that remain the same while passing in different body content as parameters to adapt to different pages.
 :::
 
-Let’s see how to use this feature with an example from an eComm app. On the shipping address page, you can maintain a consistent style and layout for input fields while allowing customization for the type of input—such as a TextField for the name, and a Dropdown for selecting country. Moreover, you can reuse the same component across other pages, such as the profile update.
+Let’s see an example from an eCommerce app. On the shipping address page, you can maintain a consistent style and layout for input fields while allowing customization for the type of input—such as a TextField for the name, and a Dropdown for selecting country. Moreover, you can reuse the same component across other pages, such as the profile update.
 
 ![widget-builder-as-parameter-example.avif](imgs/widget-builder-as-parameter-example.avif)
 
 Here’s exactly how you do it:
 
-1. If you haven't already, start by creating a new component. Next, define a parameter and set its type to **Widget Builder**. To [pass data from the current component to the widget builder](#pass-parameter-from-component-to-widget-builder), you can specify a parameter within it.
+1. If you haven't already, start by creating a new component and add the base widgets that will be unmodified. Next, define a parameter and set its type to **Widget Builder**. To [pass data from the current component to the widget builder](#pass-parameter-from-component-to-widget-builder), you can specify a parameter within it.
 
     <div style={{
         position: 'relative',
@@ -154,7 +154,7 @@ Here’s exactly how you do it:
     </div>
     <p></p>
 
-2. Then, add the widget builder placeholder to the appropriate location within the component’s widget tree.
+2. Then, add the widget builder placeholder into the desired spot in the component’s widget tree where the dynamic element should appear.
 
     <div style={{
         position: 'relative',
