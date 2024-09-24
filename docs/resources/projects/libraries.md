@@ -40,7 +40,7 @@ When you import a library into a FlutterFlow project, the following resources ar
 
 :::note
 
-Pages and Collections are still being worked on and may come in future updates.
+Pages and Firestore Collections are still being worked on and may come in future updates.
 
 :::
 
