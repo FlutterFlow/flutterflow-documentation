@@ -54,7 +54,7 @@ Here’s an example of showing a message on button click using the **On Tap** tr
 
 ### Widget Specific Triggers
 
-Widget specific triggers are available on certain widgets. Here are they:
+Certain widgets offer specific triggers that activate based on user interactions or device events. These triggers enable developers to define custom behaviors for various situations. Below are examples of widget-specific triggers:
 
 - **On Submit**: Triggered on the TextField widget when the user presses "submit" or "done," finalizing text entry.
 - **On Page Load**: Available on the page widget, this trigger activates as soon as the page loads, useful for tasks like data fetching or content updates.
@@ -77,9 +77,10 @@ The lifecycle of gesture triggers involves four key stages: **Start**, **Update*
 
 Tap gestures have a simpler lifecycle, focusing primarily on detecting taps and whether they complete or get canceled. Here's how the tap lifecycle works:
 
-1. **Start**: This stage begins when the user places their finger on the screen to initiate a tap. For example: `onTapDown` is triggered when the user touches the screen to start a tap.
-2. **End/Stop**: The tap gesture is completed when the user lifts their finger from the screen. For example: `onTapUp` is triggered when the user completes the tap by lifting their finger.
-3. **Cancel**: If the user moves their finger too much before lifting it, the tap is canceled, preventing the completion of the action. For example: `onTapCancel` is triggered when a tap gesture is canceled.
+1. **Down**: This stage begins when the user places their finger on the screen to initiate a tap. For example: `onTapDown` is triggered when the user touches the screen to start a tap.
+2. **Up**: The tap gesture is completed when the user lifts their finger from the screen. For example: `onTapUp` is triggered when the user completes the tap by lifting their finger.
+3. **Tap**: After both of the above actions are successfully completed, `onTap` is triggered indicating a full tap gesture has occurred.
+3. **Cancel**: If the user moves their finger too much before lifting it, the tap is canceled, preventing the completion of the action. For example: `onTapCancel` will be called, and `onTap` will not be triggered.
 
 Here’s how the lifecycle flows for tap gestures:
 
@@ -181,8 +182,8 @@ You can access the Gesture Detector XY data after adding the relevant gesture de
 
 - **Global Position X**: The x-coordinate of the pointer relative to the left edge of the screen when the gesture was triggered.
 - **Global Position Y**: The y-coordinate of the pointer relative to the top edge of the screen when the gesture was triggered.
-- **Local Position X**: The x-coordinate of the pointer relative to the left edge of the widget that detected the gesture.
-- **Local Position Y**: The y-coordinate of the pointer relative to the top edge of the widget that detected the gesture.
+- **Local Position X**: The x-coordinate of the pointer relative to the left edge of the widget that has the action triggers applied.
+- **Local Position Y**: The y-coordinate of the pointer relative to the top edge of the widget that has the action triggers applied.
 - **Delta X**: The horizontal distance the pointer moved during the gesture.
 - **Delta Y**: The vertical distance the pointer moved during the gesture.
 
