@@ -232,7 +232,7 @@ GridView provides a two-dimensional array of children. It is the widget of choic
 
 Like [ListView](#listview-widget), GridView only renders the visible items, making it efficient for displaying large collections of elements. GridView supports multiple configurations for column count, spacing, aspect ratio, and scroll directions, offering robust customization options for diverse layout needs.
 
-![img_2.png](../built-in-widgets/img_2.png)
+![gridview.png](imgs/gridview.png)
 
 
 Here's a quick demo to show how to add a GridView widget and modify its properties: 

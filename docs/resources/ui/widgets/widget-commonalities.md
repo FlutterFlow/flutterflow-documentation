@@ -1,6 +1,6 @@
 ---
 title: Common Widget Properties
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Common Widget Properties

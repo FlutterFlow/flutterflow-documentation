@@ -8,13 +8,12 @@ tags: [Components]
 
 # Components
 
-Custom Components or just user-defined Components in FlutterFlow are custom widgets you create to meet specific needs in your app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
-create reusable UI elements. This approach ensures consistency, saves
+Components are reusable widgets you create to meet the specific needs of your app. This approach ensures consistency, saves
 time, and simplifies maintenance across your project.
 
 ## Creating a component from scratch
 
-To create a component from scratch, you can do the following:
+To create a component from scratch, click the **Add Button** in the **Page Selector** or **Widget Tree** tab. Then choose **New Component.**
 
 <div style={{
     position: 'relative',
@@ -44,11 +43,10 @@ To create a component from scratch, you can do the following:
 
 ## Convert into a component
 
-If you have already built a complex widget into your page and realize later that it can serve as a
-reusable component, you can convert that entire widget into a component and reuse it multiple times.
+If you have already built a complex widget in your page, you can convert that entire widget into a component and reuse it throughout your app.
 
-To convert a complex widget into a reusable component, select the root widget that contains the
-entire widget you want to convert, and follow these steps:
+To convert a complex widget into a reusable component, right click on the root widget that contains the
+entire widget tree you want to convert, then select **Convert to Component.**
 
 <div style={{
     position: 'relative',
@@ -155,9 +153,19 @@ Here’s a detailed look at what you can typically find and modify in this panel
 In FlutterFlow, component parameters are values passed down from a parent entity like a page or another component. These parameters make the component adaptable and dynamic, adjusting to the context in which it is used.
 
 :::info
-Learn [**how to add a component to an entity,**](using-components.md) such as a page or another
-component, and how to pass parameters.
+Learn [**how to add a component to the widget tree of a page or another component,**](using-components.md) and how to pass in parameters.
 :::
+
+Once a parameter has been defined, it can be used throughout the component itself - for example, you may pass in the `ProductName as a parameter and leverage
+
+#### Parameter Types
+
+Aside from standard data types used throughout FlutterFlow, you can also create parameters that are of type:
+
+- **Action (callback)**: This allows component users to pass in actions into the component. The component can then invoke the action, usually referred to as a callback, in its own action flows. Callbacks are often using to handle events, like updating a parent's state when a button has been pressed. 
+
+- **Widget Builders**: Widget builders allow the component users to pass in widgets to be used within the component's widget tree. This is especially useful 
+
 
 ### Actions
 

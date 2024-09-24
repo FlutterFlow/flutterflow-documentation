@@ -38,7 +38,7 @@ Therefore,
 named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
 
 <figure>
-    ![img_1.png](img_1.png)
+    ![img_1.png](imgs/img_1.png)
   <figcaption class="centered-caption">Control image display based on page state variable</figcaption>
 </figure>
 
@@ -120,5 +120,5 @@ com/embed/53acd90e5f394581951173d4626c68a9?sid=0438be54-ed23-46e8-9f45-2cc369740
 <details>
 <summary>On Drag Exit</summary>
 
-![img_2.png](img_2.png)
+![img_2.png](imgs/img_2.png)
 </details>

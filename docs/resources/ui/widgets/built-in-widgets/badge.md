@@ -8,7 +8,7 @@ The Badget widget indicates the number of items that need your attention. Typica
 
 For example, You could use the badge widget to show the number of unread notifications and items in your shopping cart.
 
-![img_3.png](img_3.png)
+![img_3.png](imgs/img_3.png)
 
 ## Adding Badge widget
 
