@@ -14,18 +14,18 @@ import TabItem from '@theme/TabItem';
 Libraries enables you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
 
 :::info
-A **Dependency** refers to an external library or resource that your project relies on to function correctly. When you create a new FlutterFlow project, certain dependencies are automatically added to support the generated code. Also, when you use a [Custom Widget](../ff-concepts/adding-customization/custom-widgets.md), you are essentially adding dependencies to your project. Libraries take this concept further by allowing you to add entire FlutterFlow projects as dependencies.
+A **Dependency** refers to an external library or resource that your project relies on to function correctly. When you create a new FlutterFlow project, certain dependencies are automatically added to support the generated code. Also, when you use a [Custom Widget](../../ff-concepts/adding-customization/custom-widgets.md), you are essentially adding dependencies to your project. Libraries take this concept further by allowing you to add entire FlutterFlow projects as dependencies.
 :::
 
 Imagine you're building an e-commerce app, and different teams are working on various features. One team develops a complex payment system. By using the Libraries, they can publish the payment system as a reusable library and allow other teams to easily import and integrate it into multiple projects without duplicating development efforts.
 
-![libraries.avif](imgs/libraries.avif)
+![libraries.avif](../imgs/libraries.avif)
 
 ### Importance of Libraries
 
 Previously, FlutterFlow offered several methods to share resources between projects, such as team code libraries, design systems, API libraries, and by leveraging marketplace items. However, these methods had limitations, including the inability to share custom data types or custom functions alongside components or API calls and the absence of version control.
 
-With the Libraries, you can publish the complete FlutterFlow project as a library and import it as a dependency into other projects.
+With Libraries, you can publish the complete FlutterFlow project as a library and import it as a dependency into other projects.
 
 :::tip[possible usecases]
 
@@ -109,7 +109,7 @@ You can only select a library if you have been added as a collaborator in that l
 
 A **Dependency Conflict** occurs when two or more libraries added by a project depend on different versions of the same dependency. This creates a situation where the project cannot resolve which version to use, leading to a project error.
 
-![dependency-conflict.avif](imgs/dependency-conflict.avif)
+![dependency-conflict.avif](../imgs/dependency-conflict.avif)
 
 Let's say you are building an eCommerce app that uses multiple libraries for different purposes:
 
@@ -135,14 +135,14 @@ Follow these steps to ensure both libraries rely on the same version of Componen
 
 Once the library is imported, following resources are accessible for use:
 
-- [Components](../resources/ui/components/intro-components.md)
-- [Data Types & Enums](../resources/data-representation/custom-data-types.md)
-- [App State Variables](../resources/data-representation/app-state.md)
-- [Constants](../resources/data-representation/constants.md)
-- [API Calls](../resources/control-flow/backend-logic/api/rest-api.md)
-- [Action Blocks](../resources/control-flow/functions/action-blocks.md)
-- [Custom Functions](../ff-concepts/adding-customization/custom-functions.md), [Actions](../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../resources/ui/widgets/intro-widgets.md)
-- [Assets](../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned) 
+- [Components](../../resources/ui/components/intro-components.md)
+- [Data Types & Enums](../../resources/data-representation/custom-data-types.md)
+- [App State Variables](../../resources/data-representation/app-state.md)
+- [Constants](../../resources/data-representation/constants.md)
+- [API Calls](../../resources/control-flow/backend-logic/api/rest-api.md)
+- [Action Blocks](../../resources/control-flow/functions/action-blocks.md)
+- [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Actions](../../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../../resources/ui/widgets/intro-widgets.md)
+- [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned) 
 
 :::note
 Pages are still being worked on and may come in future updates.
@@ -156,7 +156,7 @@ It's important to note that these resources show up where they are instantiated.
 
 This ensures that only relevant resources are shown where they are needed, optimizing performance and discoverability.
 
-![access-library-resources.avif](imgs/access-library-resources.avif)
+![access-library-resources.avif](../imgs/access-library-resources.avif)
 
 ## Library Versioning
 Library versioning allows you to manage different versions of a library project over time. Using versioning, library users can control which version of a library to use in a project, ensuring compatibility and reducing the risk of breaking changes.
@@ -182,7 +182,7 @@ When you're ready to update your library, ensure that all modifications are comm
 
 When importing a library into a project, you have the flexibility to choose which version of the library to use. By default, the latest version will be selected.
 
-![import-specific-library-version.avif](imgs/import-specific-library-version.avif)
+![import-specific-library-version.avif](../imgs/import-specific-library-version.avif)
 
 ### Update to Latest Version
 
@@ -195,7 +195,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 :::
 
-![update-library](imgs/update-library.avif)
+![update-library](../imgs/update-library.avif)
 
 ## FAQs
 
