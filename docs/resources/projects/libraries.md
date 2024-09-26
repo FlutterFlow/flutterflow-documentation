@@ -19,7 +19,7 @@ A **Dependency** refers to an external library or resource that your project rel
 
 Imagine you're building an e-commerce app, and different teams are working on various features. One team develops a complex payment system. By using the Libraries, they can publish the payment system as a reusable library and allow other teams to easily import and integrate it into multiple projects without duplicating development efforts.
 
-![libraries.avif](../imgs/libraries.avif)
+![libraries.avif](imgs/libraries.avif)
 
 ### Importance of Libraries
 
@@ -109,7 +109,7 @@ You can only select a library if you have been added as a collaborator in that l
 
 A **Dependency Conflict** occurs when two or more libraries added by a project depend on different versions of the same dependency. This creates a situation where the project cannot resolve which version to use, leading to a project error.
 
-![dependency-conflict.avif](../imgs/dependency-conflict.avif)
+![dependency-conflict.avif](imgs/dependency-conflict.avif)
 
 Let's say you are building an eCommerce app that uses multiple libraries for different purposes:
 
@@ -156,7 +156,7 @@ It's important to note that these resources show up where they are instantiated.
 
 This ensures that only relevant resources are shown where they are needed, optimizing performance and discoverability.
 
-![access-library-resources.avif](../imgs/access-library-resources.avif)
+![access-library-resources.avif](imgs/access-library-resources.avif)
 
 ## Library Versioning
 Library versioning allows you to manage different versions of a library project over time. Using versioning, library users can control which version of a library to use in a project, ensuring compatibility and reducing the risk of breaking changes.
@@ -195,7 +195,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 :::
 
-![update-library](../imgs/update-library.avif)
+![update-library](imgs/update-library.avif)
 
 ## FAQs
 
