@@ -111,7 +111,7 @@ The user interface includes a section for the average rating, and number of revi
 
 For building this app, we will use [OpenAI's Chat Completion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) to generate a summary based on given reviews. Before you build anything related to APIs in your app, it's essential to create and test the APIs to ensure they work correctly. So let's [create and test](../api/create-test-api-calls.md) the Chat Completion API in our project.
 
-Once created, open the **Advanced Settings** and **enable** the **Process Stream Response** toggle.
+Once created, open the **Advanced Settings** and **enable** the **Process Streaming Response** toggle.
 
 Here's how you do it:
 
