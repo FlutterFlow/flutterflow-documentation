@@ -3,8 +3,8 @@ slug: libraries
 title: Libraries
 tags: [Libraries]
 keywords: [Libraries, Share, Reuse, Collaborate, Modularize, Dependency]
-description: Learn how to share and reuse entire FlutterFlow projects suing libraries.
-sidebar_position: 4
+description: Learn how to share and reuse entire FlutterFlow projects using libraries.
+sidebar_position: 6
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -46,7 +46,7 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/CTuBPgISjpRWy5TT6rRD?embed&show_copy_link=true"
-        title=""
+        title="Publishing a Library"
         style={{
             position: 'absolute',
             top: 0,
@@ -68,6 +68,8 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 :::info
 - You can only publish libraries if you have access to branching, which is available to Pro+ users.
 - Libraries can only be published from the main branch, and each published version is linked to a specific commit, ensuring robust version control.
+- You must commit your changes before publishing a new version of the library.
+- It's recommended to include a message that tells users what has changed in the version your are publishing.
 :::
 
 ### Disabled Features in a Library
@@ -92,7 +94,7 @@ When a project is converted into a library, the following features are disabled 
 
 ## Importing a Library
 
-Open the FlutterFlow project where you'd like to import a library, then follow these steps:
+To import a library project into another FlutterFlow project, you must go to the **Project Dependencies** page in **App Settings**. Here you can specify the library project and version you are importing.
 
 <div style={{
     position: 'relative',
@@ -101,7 +103,7 @@ Open the FlutterFlow project where you'd like to import a library, then follow t
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/DrzjKuhTWZXOxBB5yGJn?embed&show_copy_link=true"
-        title=""
+        title="Importing a Library"
         style={{
             position: 'absolute',
             top: 0,
@@ -121,7 +123,14 @@ Open the FlutterFlow project where you'd like to import a library, then follow t
 <p></p>
 
 :::info
-You can only select a library if you have been added as a collaborator in that library project. To use a library, you must have one of these roles in the library project: Owner, Manager, Editor, or Read-Only.
+
+- You can only select a library if you have at least read access on the library project. 
+- For a library project to show in the drop down, you must be added as a collaborator on the project and the library project must have a published version.
+- You can import publicly accessible libraries by specifying the project ID in the text field when adding a library dependency.
+- By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
+- You can also import the `current` version of the library to use the latest state of the library on the main branch - however, this is not recommended.
+- You must have a paid plan to import a library.
+
 :::
 
 
@@ -222,19 +231,19 @@ You can easily upgrade to newer versions of the libraries as they become availab
 <details>
 <summary>What will happen to existing team libraries?</summary>
 <p>
-Team code and API libraries will be migrated to Library Projects. These projects will be imported as a library with the latest version specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
+Team code and API libraries will be migrated to library Projects. These projects will be imported as a library with the latest version specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
 </p>
 </details>
 
 <details>
-<summary>Will Libraries work with Marketplace?</summary>
+<summary>Will libraries work with Marketplace?</summary>
 <p>
 We plan to allow users to import a marketplace project as a library, making it easier to integrate marketplace resources into your projects.
 </p>
 </details>
 
 <details>
-<summary>How do Libraries work with themes?</summary>
+<summary>How do libraries work with themes?</summary>
 <p>
 The parent project's design system takes precedence over the imported library's design system. For example, if a library uses the standard FlutterFlow color scheme, the values defined in the parent project will override those in the library. However, if the library project has a custom color that the parent project does not have, it will be used as-is in the parent project.
 </p>
@@ -243,13 +252,13 @@ The parent project's design system takes precedence over the imported library's 
 <details>
 <summary>How are API keys shared?</summary>
 <p>
-We're planning to leverage environment variables, as part of the Development Environment features, to allow users to add their API keys to their own projects. This ensures that the API key is not shared when the project is published as a library.
+We're working on Library Values, which will allow users to set specific values when they import a library. This feature will be available soon.
 </p>
 </details>
 
 <details>
 <summary>How does nested dependencies work?</summary>
 <p>
-Projects can import Libraries that themselves have imported other Libraries as dependencies. However, if the project and the Library share the same dependency, the version must match exactly to avoid conflicts.
+Projects can import libraries that themselves have imported other Libraries as dependencies. However, if the project and the library share the same dependency, the version must match exactly to avoid conflicts.
 </p>
 </details>
