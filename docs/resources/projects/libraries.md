@@ -70,6 +70,26 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 - Libraries can only be published from the main branch, and each published version is linked to a specific commit, ensuring robust version control.
 :::
 
+### Disabled Features in a Library
+
+When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
+
+- App settings 
+  - Firebase 
+  - Development environment
+  - Authentication
+  - Push notifications 
+  - Mobile deployment 
+  - Web deployment 
+  - Stripe 
+  - Braintree 
+  - Razorpay 
+  - Google Analytics 
+  - OneSignal 
+  - Mux 
+- Cloud functions
+- Firestore Collections
+
 ## Importing a Library
 
 Open the FlutterFlow project where you'd like to import a library, then follow these steps:
