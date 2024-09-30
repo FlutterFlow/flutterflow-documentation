@@ -46,7 +46,8 @@ The Command Palette makes it easy to find and use things in the App Builder. Ope
 ## AI Tools
 FlutterFlow AI Tools is a powerful set of features designed to speed up app development by leveraging artificial intelligence. These tools allow you to quickly generate app elements such as pages, components, and even entire page layouts with relevant widgets automatically populated.
 
-- **New Page Creation:** Instantly create complete app pages with the necessary layout and widgets. This can be particularly useful when you're unsure where to start.
+### New Page Creation
+Instantly create complete app pages with the necessary layout and widgets. This can be particularly useful when you're unsure where to start.
 
     <div style={{
         position: 'relative',
@@ -74,7 +75,8 @@ FlutterFlow AI Tools is a powerful set of features designed to speed up app deve
     </div>
     <p></p>
 
-- **New Component Creation:** Build reusable components quickly using AI.
+### New Component Creation
+Build reusable components quickly using AI.
 
     <div style={{
         position: 'relative',
@@ -102,7 +104,8 @@ FlutterFlow AI Tools is a powerful set of features designed to speed up app deve
     </div>
     <p></p>
 
-- **Sketch To Component:** Simply sketch out your desired layout, and FlutterFlow AI will turn your sketch into actual Components.
+### Sketch To Component
+Simply sketch out your desired layout, and FlutterFlow AI will turn your sketch into actual Components.
 
 
     <div style={{
@@ -131,7 +134,8 @@ FlutterFlow AI Tools is a powerful set of features designed to speed up app deve
     </div>
     <p></p>
 
-- **Page Autocomplete:** This intelligently adds relevant widgets to a page based on the pages’s context, making it easy to complete partially built pages.
+### Page Autocomplete
+This intelligently adds relevant widgets to a page based on the pages’s context, making it easy to complete partially built pages.
 
 
     <div style={{
