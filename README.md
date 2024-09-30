@@ -27,7 +27,6 @@ You may want to run the docs site locally to test and visualize changes you are 
 
 1. **Install Dependencies:** Run **`npm install`** in your terminal to install the necessary dependencies.
 2. **Preview Changes:** To see your changes in real-time as you edit the files, you can run a local development server. This server will host your website and reflect the latest changes. Use the command **`npm run start`**.
-3. **Build the Website:** When you're ready, use **`npm run build`** to compile the website.
 
 ## Ready to Contribute?
 Your contributions are vital to keeping FlutterFlow's documentation clear, up-to-date, and helpful. We look forward to seeing your pull requests and are excited to welcome you into our community of contributors!
