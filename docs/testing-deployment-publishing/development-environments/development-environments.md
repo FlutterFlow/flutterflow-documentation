@@ -105,11 +105,11 @@ A single FlutterFlow project can have **multiple environments**, each mapped to 
 
 ![flutterflow-environment](../imgs/flutterflow-environment.avif)
 
-If your project uses Firebase, you'll need to [**manually configure a new Firebase project**](../../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each environment. This requires setting up a new project in the Firebase console and linking it to the selected environment in FlutterFlow. 
+If your project uses Firebase, you'll need to [**manually configure a new Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each environment. This requires setting up a new project in the Firebase console and linking it to the selected environment in FlutterFlow. 
 
 :::info
 - You must complete the Firebase setup for the new environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to production, and you can keep testing while finishing the setup for the new environment.
-- You must manually set up [**Firebase rules**](../../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
+- You must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
 - Data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected
 :::
 
@@ -122,7 +122,7 @@ If your project uses Firebase, you'll need to [**manually configure a new Fireba
 <p>
 It’s important to note that the **Development Environments** feature in FlutterFlow is primarily designed to configure different backends for testing
 
-If you are building new features, you should consider using [**Branching**](../../../testing-deployment-publishing/branching-collaboration/branching.md). You can develop and test new features on a new branch by selecting a development environment. Once tested, you can merge the branch into `main` and switch to the `Production` Environment to go live.
+If you are building new features, you should consider using [**Branching**](../branching-collaboration/branching.md). You can develop and test new features on a new branch by selecting a development environment. Once tested, you can merge the branch into `main` and switch to the `Production` Environment to go live.
 </p>
 </details>
 
