@@ -105,7 +105,7 @@ Aside from pages, you can also create [Components](/resources/ui/components) dir
     <p></p>
 
 ### Sketch To Component
-Sketch to Component allows you to add a sketch out your [Component](/resources/ui/components). This sketch can include outlines of widgets or layouts to incorporate, and it can also include annotations that tell the AI tool more about the design you have in mind. 
+Sketch to Component allows you to add a sketch of your [Component](/resources/ui/components). This sketch can include outlines of widgets or layouts to incorporate, and it can also include annotations that tell the AI tool more about the design you have in mind. 
 
 To create a Component from a sketch, open the **AI Tools** menu from the Toolbar. Next, select **Sketch to Component** and draw directly in the input or upload an image file of your sketch.
 
