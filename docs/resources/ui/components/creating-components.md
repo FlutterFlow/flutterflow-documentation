@@ -226,7 +226,7 @@ Aside from standard data types used throughout FlutterFlow, you can also create 
 
 - **Action (callback)**: This allows component users to pass in actions into the component. The component can then invoke the action, usually referred to as a callback, in its own action flows. Callbacks are often using to handle events, like updating a parent's state when a button has been pressed. [You can learn more about how to use callbacks here.](/resources/ui/components/callbacks)
 
-- **Widget Builders**: Widget builders allow the component users to pass in widgets to be used within the component's widget tree. This is especially useful when you want users to dynamically subsitute content for some part of a component - like displaying an item in a custom dropdown, or creating a component for some consistent layout. [You can learn more about how to use Widget Builders here.](/resources/ui/components/widget-builder-parameters)
+- **Widget Builders**: Widget builders allow the component users to pass in widgets to be used within the component's widget tree. This is especially useful when you want users to dynamically subsitute content for some part of a component - like displaying an item in a custom dropdown, or creating a component for some consistent layout. [You can learn more about how to use Widget Builders here.](widget-builder-parameters.md)
 
 
 ### Actions
