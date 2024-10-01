@@ -54,7 +54,7 @@ While you can edit custom code inside of FlutterFlow's in-app code editor, editi
 </div>
 <p></p>
 
-### Add API Keys[](http://localhost:3000/concepts/custom-code/visual-studio-code-extension#settings)
+### Add API Keys
 
 To use the Visual Studio Code extension, you must set your API key in the Visual Studio Code extension settings. You can generate an API key from the [FlutterFlow account page](https://app.flutterflow.io/account) and then add it to the extension settings page in Visual Studio Code. Here’s exactly how you do it:
 
