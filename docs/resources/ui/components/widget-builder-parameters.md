@@ -8,7 +8,7 @@ slug: widget-builder
 
 Sometimes, you want to create a component that offers some consistent design, while also allowing for customization. This is where passing widget builder as parameters becomes valuable. 
 
-Widget builder parameters allow component authors to subsitute in dynamic content within the widget tree of the component. This means that when someone uses the component, they can dynamically pass in pieces of UI to be used within the component. 
+Widget builder parameters allow component authors to substitute in dynamic content within the widget tree of the component. This means that when someone uses the component, they can dynamically pass in pieces of UI to be used within the component. 
 
 For example, consider a custom dropdown component. While the overall structure of the dropdown remains the same, you might need to change the style or content of the dropdown items based on different use cases. By passing the dropdown item widget as a parameter, you can use the dropdown's appearance and behavior without creating new components for each variation.
 
