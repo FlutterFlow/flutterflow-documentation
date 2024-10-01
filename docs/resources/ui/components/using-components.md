@@ -8,7 +8,7 @@ sidebar_position: 2
 Components in FlutterFlow can be added to the widget tree of a page or another component. They help streamline
 development by allowing you to reuse design and functionality throughout your app. Components can
 accept parameters, making them adaptable to specific contexts. Additionally, you can use [callbacks](/resources/ui/components/callbacks)
-to pass actions from parent entities to child components, enabling dynamic and interactive behavior. You can also use [widget builders](/resources/ui/components/widget-builder-parameters) to subsitute dynamic content into the component's widget tree.
+to pass actions from parent entities to child components, enabling dynamic and interactive behavior. You can also use [widget builders](widget-builder-parameters.md) to subsitute dynamic content into the component's widget tree.
 
 To learn more about creating components, see [this page](/resources/ui/components/creating-components).
 
