@@ -22,6 +22,12 @@ Before you start contributing, please take a moment to review our [Contribution 
 3. **Create a PR to `main`**:
    After making these changes, commit them to a new branch, and then create a pull request (PR) for review from FlutterFlow team.
 
+## Running the Docs Site Locally
+You may want to run the docs site locally to test and visualize changes you are proposing to the documentation. To run the docs site locally, please enter the following commands in the terminal of the downloaded repository:
+
+1. **Install Dependencies:** Run **`npm install`** in your terminal to install the necessary dependencies.
+2. **Preview Changes:** To see your changes in real-time as you edit the files, you can run a local development server. This server will host your website and reflect the latest changes. Use the command **`npm run start`**.
+
 ## Ready to Contribute?
 Your contributions are vital to keeping FlutterFlow's documentation clear, up-to-date, and helpful. We look forward to seeing your pull requests and are excited to welcome you into our community of contributors!
 

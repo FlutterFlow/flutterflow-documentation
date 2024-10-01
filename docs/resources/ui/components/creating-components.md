@@ -5,16 +5,17 @@ slug: creating-components
 keywords: [Custom Components]
 tags: [Components]
 ---
+import setComponentParam from '@site/static/img/set-component-parameter.png';
+import levComponentParam from '@site/static/img/leverage-component-parameter.png';
 
 # Components
 
-Custom Components or just user-defined Components in FlutterFlow are custom widgets you create to meet specific needs in your app. These components can be designed using FlutterFlow's drag-and-drop interface, allowing you to
-create reusable UI elements. This approach ensures consistency, saves
+Components are reusable widgets you create to meet the specific needs of your app. This approach ensures consistency, saves
 time, and simplifies maintenance across your project.
 
 ## Creating a component from scratch
 
-To create a component from scratch, you can do the following:
+To create a component from scratch, click the **Add Button** in the **Page Selector** or **Widget Tree** tab. Then choose **New Component.**
 
 <div style={{
     position: 'relative',
@@ -44,11 +45,10 @@ To create a component from scratch, you can do the following:
 
 ## Convert into a component
 
-If you have already built a complex widget into your page and realize later that it can serve as a
-reusable component, you can convert that entire widget into a component and reuse it multiple times.
+If you have already built a complex widget in your page, you can convert that entire widget into a component and reuse it throughout your app.
 
-To convert a complex widget into a reusable component, select the root widget that contains the
-entire widget you want to convert, and follow these steps:
+To convert a complex widget into a reusable component, right click on the root widget that contains the
+entire widget tree you want to convert, then select **Convert to Component.**
 
 <div style={{
     position: 'relative',
@@ -150,14 +150,84 @@ Here’s a detailed look at what you can typically find and modify in this panel
 
 ![components-configurations.png](../imgs/components-configurations.png)
 
-### Component Parameters
+## Component Parameters
 
-In FlutterFlow, component parameters are values passed down from a parent entity like a page or another component. These parameters make the component adaptable and dynamic, adjusting to the context in which it is used.
+Component parameters are values that a component receives from its parent entity, such as a page or
+another component. These parameters allow the component to be dynamic and adaptable based on the
+context in which it is used. By using parameters, you can customize components for different
+scenarios without altering the base design or functionality.
 
-:::info
-Learn [**how to add a component to an entity,**](using-components.md) such as a page or another
-component, and how to pass parameters.
-:::
+### Creating a Component Parameter
+
+To create a component parameter, go to the root widget in the component's widget tree.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/chgEkWJpUFAIUzoB0LuG?embed&show_copy_link=true"
+        title="Adding a Parameter"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+### Bind the Parameter
+
+Once you have created a component parameter, you can link data from the parent entity to your
+component.
+
+Here's a small example of how we can bind the parameters created in `ProfileListItem` to their
+respective widgets and action triggers.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/ixR32sxe5W97bEaS1hTt?embed&show_copy_link=true"
+        title="Bind Parameters in Components"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+
+Aside from standard data types used throughout FlutterFlow, you can also create parameters that are of type:
+
+- **Action (callback)**: This allows component users to pass in actions into the component. The component can then invoke the action, usually referred to as a callback, in its own action flows. Callbacks are often using to handle events, like updating a parent's state when a button has been pressed. [You can learn more about how to use callbacks here.](/resources/ui/components/callbacks)
+
+- **Widget Builders**: Widget builders allow the component users to pass in widgets to be used within the component's widget tree. This is especially useful when you want users to dynamically subsitute content for some part of a component - like displaying an item in a custom dropdown, or creating a component for some consistent layout. [You can learn more about how to use Widget Builders here.](/resources/ui/components/widget-builder-parameters)
+
 
 ### Actions
 

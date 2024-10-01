@@ -223,6 +223,6 @@ To add a new Custom Function, simply create a new Dart function in the `lib/flut
 To delete a Custom Action or Widget, delete the associated file. 
 
 ### Adding New Dependencies
-You can add custom [pub.dev](pub.dev) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
+You can add custom [pub.dev](https://pub.dev/) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
 
 

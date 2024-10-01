@@ -13,8 +13,20 @@ Widgets are the building blocks of your app's user interface in FlutterFlow. Eac
 
 Understanding the parent-child relationship between widgets is crucial, as it forms the foundation of the [**Widget Tree**](#widget-tree), which defines the structure and hierarchy of your app's UI.
 
+## Types of Widgets in FlutterFlow
+
+- **Built-in Widgets**: You can choose from a variety of built-in widgets in FlutterFlow. These are discussed throughout this section. 
+
+- **[Components](creating-components.md)**: You can also build your own reusable widgets, or 
+  Components by assembling multiple widgets using FlutterFlow’s drag-and-drop interface. 
+
+- **[Custom Widgets](../../../ff-concepts/adding-customization/custom-widgets.md)**: For scenarios where more complex functionalities are required, FlutterFlow
+  allows you to develop your own Custom Widgets using code. 
+
+- **[Theme Widgets](../../../ff-concepts/design-system/design-system.md#theme-widgets)**: Themed widgets can be reused across your app, making it easy to update styles universally. If you decide to change any properties, such as color schemes or fonts, you can update the theme widget instead of modifying each widget individually.
+
 ## Widget Tree
-Widget Tree is a visual and structural representation of how widgets—ranging from [atomic elements](../overview.md) like Text and Button to more [complex molecules and organisms](../overview.md)—organized within a Page. It outlines the parent-child relationships that define the layout and functionality of your UI. This hierarchy is similar to the concept of atomic design, where atoms and molecules combine to form more complex structures, ultimately creating a cohesive interface.
+The Widget Tree is a structural representation of how widgets—ranging from [atomic elements](../overview.md) like Text and Button to more [complex molecules and organisms](../overview.md)—organized within a Page. It outlines the parent-child relationships that define the layout and functionality of your UI. This hierarchy is similar to the concept of atomic design, where atoms and molecules combine to form more complex structures, ultimately creating a cohesive interface.
 
 :::info[WIDGET TREE BREAKDOWN]
 ![tree.png](../imgs/tree.png)

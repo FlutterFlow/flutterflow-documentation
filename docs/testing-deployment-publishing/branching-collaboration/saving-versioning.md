@@ -9,7 +9,7 @@ keywords: [Saving, Versioning, Collaboration, FlutterFlow, Concepts]
 
 # Saving and Versioning
 
-In this section, we discuss the important concepts of saving and versioning in your project. Understanding how to use versions and snapshots can be crucial in preventing loss of work and maintaining progress.
+In this section, we discuss the important concepts of saving and versioning in your project. Understanding how to use versions, snapshots and commits can be crucial in preventing loss of work and maintaining progress.
 
 ## Versions
 
@@ -53,6 +53,11 @@ Ideally, you should save the version whenever you accomplish something important
 Restoring the previous version will preserve the current version, then load the changes from the version you're restoring. Before restoration, you may want to view the changes in the previous version. To do this, select the **Peek** option, which opens the previous version in a new tab.
 
 ![restore-version](../imgs/restore-version.avif)
+
+
+## Commits
+
+Commits are similar to versions in that you can save the state of your project at a point in time. Commits are saved to a specific branch's history. With commits you can view the specific changes made in that commit and restore a branch to the state of a specific commit. For more details see this page on [Branching and Commits](../branching-collaboration/branching.md#commits).
 
 ## Snapshots
 

@@ -2,7 +2,7 @@
 slug: project-setup
 title: Project Setup
 tags: [Setup, Permissions, Multiple Languages]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
+keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0
 ---
@@ -274,7 +274,7 @@ For example, consider a news article app. When a new user opens the app for the 
 The steps to create and display a walkthrough in your app are as follows:
 
 1. [Create walkthrough](#1-create-walkthrough)
-2. [Start walkthrough](#2-start-walkthrough)
+2. [Start walkthrough](#2-start-walkthrough-action)
 3. [Get notified on walkthrough skipped and completed](#3-get-notified-on-walkthrough-skipped-and-completed)
 
 ### 1. Create walkthrough
@@ -533,3 +533,4 @@ To resolve this, simply add a delay ([Wait](../../../resources/control-flow/time
 We are aware of a limitation where widgets that are not visible on a page (i.e., you need to scroll down to see them) may not be highlighted. We are actively working to resolve this issue. As a temporary workaround, you can try placing the widget in an area that is visible without scrolling. We appreciate your patience and hope to have a fix soon!
 </p>
 </details>
+
