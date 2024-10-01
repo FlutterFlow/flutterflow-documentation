@@ -437,7 +437,7 @@ To customize a button that allows you to start a stream:
    under the **Start Button Style** section.
 
 3. To change the button's text, open the **Start Button Text** section and set the **Text**. You can
-   also [customize the text](../../../resources/ui/widgets/widget-commonalities.md#styling-text) if
+   also [customize the text](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties) if
    needed.
 
 4. To change the button's icon, open the **Start Button Icon** section and select the new icon. You

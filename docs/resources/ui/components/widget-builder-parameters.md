@@ -27,7 +27,7 @@ Let’s see an example from an eCommerce app. On the shipping address page, you 
 To create a component with a widget builder as a parameter, use the steps outlined below. 
 
 ### Create a Parameter of Type Widget Builder
-Create a new component and add the base widgets that will be unmodified. Next, define a parameter and set its type to **Widget Builder**. To [pass data from the current component to the widget builder](#pass-parameter-from-component-to-widget-builder), you can specify a parameter for the widget builder.
+Create a new component and add the base widgets that will be unmodified. Next, define a parameter and set its type to **Widget Builder**. To pass data from the current component to the widget builder, you can specify a parameter for the widget builder.
 
     <div style={{
         position: 'relative',

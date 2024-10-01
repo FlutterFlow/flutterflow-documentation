@@ -17,7 +17,7 @@ Understanding the parent-child relationship between widgets is crucial, as it fo
 
 - **Built-in Widgets**: You can choose from a variety of built-in widgets in FlutterFlow. These are discussed throughout this section. 
 
-- **[Components](creating-components.md)**: You can also build your own reusable widgets, or 
+- **[Components](../components/creating-components.md)**: You can also build your own reusable widgets, or 
   Components by assembling multiple widgets using FlutterFlow’s drag-and-drop interface. 
 
 - **[Custom Widgets](../../../ff-concepts/adding-customization/custom-widgets.md)**: For scenarios where more complex functionalities are required, FlutterFlow

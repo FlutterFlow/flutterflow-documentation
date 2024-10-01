@@ -160,7 +160,7 @@ When working with custom code, it's important to test your implementations. We r
 
 You can then choose to test your app from FlutterFlow, using a [Test Mode session](https://docs.flutterflow.io/testing/run-your-app/#test-mode) or [Local Run](https://docs.flutterflow.io/testing/local-run), or run your app locally from Visual Studio Code.
 
-Before testing from FlutterFlow, ensure you’ve [pushed your changes](#pushing-changes-from-visual-studio-code).
+Before testing from FlutterFlow, ensure you’ve [pushed your changes](#push-changes-to-flutterflow).
 
 To run your project from Visual Studio Code, make sure the Flutter extension is installed. Once set up, you can simply click the Run (play) button. For further details, refer to [Flutter’s official documentation](https://docs.flutter.dev/tools/vs-code#running-and-debugging).
 

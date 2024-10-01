@@ -82,7 +82,7 @@ The steps to show the selected date in the Text widget are as follows:
 
 Changing the date on the calendar widget emits the selected date in a variable called *calendarSelectedDay*. You can't use this value directly in the Text widget because the Text widget can only accept String values. Hence it would help if you created an app state variable that will store the *calendarSelectedDay* value and then display the selected date in a Text widget (using Date Format Options).
 
-To create the app state variable, please find the instructions [here](../../../../resources/data-representation/app-state#create-app-state-variable).
+To create the app state variable, please find the instructions [here](../../../../resources/data-representation/app-state.md#create-app-state-variable).
 
 It should look something like this:
 

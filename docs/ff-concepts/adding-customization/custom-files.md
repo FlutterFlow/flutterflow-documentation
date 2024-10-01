@@ -36,7 +36,7 @@ color for the mobile app. Here's how it looks:
 
 To do so, you can edit *main.dart* file by following the steps below:
 
-1. Create a [Custom Action](custom-actions.md#custom-actions) for the code you want to include in a `main.
+1. Create a [Custom Action](custom-actions.md) for the code you want to include in a `main.
    dart` file. For this 
    example, here's code in a custom action named 'setStatusbarColor'.
 

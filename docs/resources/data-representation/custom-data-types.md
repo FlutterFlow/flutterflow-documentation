@@ -64,7 +64,7 @@ To create a custom data type, specify its name and the corresponding fields. Eac
 
 ## Accessing Custom Data Type
 
-After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state.md#working-with-app-state-variables).
+After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state.md#app-state-variables).
 
 ### Custom Data Type in Custom Code
 Sometimes, you might want to access the custom data type in your custom code. Our custom code editor allows you to receive and pass data into a variable of a custom data type. For example, you could manipulate or analyze the data as needed, and then return the modified result in the custom data type. 
