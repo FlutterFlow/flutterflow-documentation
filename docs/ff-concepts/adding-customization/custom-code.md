@@ -34,8 +34,8 @@ There are a few different ways to make custom code accessible in FlutterFLow:
 # Writing Custom Code
 There are two main ways to write custom code in FlutterFlow:
 
-1. Using the [In-App Code Editor](#using-the-in-app-code-editor)
-2. Using the [Visual Studio Code Extension](/concepts/custom-code/Visual Studio Code-extension)
+1. Using the [**In-App Code Editor**](#using-the-in-app-code-editor)
+2. Using the [**Visual Studio Code Extension**](vscode-extension.md)
 
 
 ### Using the In-App Code Editor
@@ -45,7 +45,7 @@ You can use the In-App Code Editor to view and edit custom code directly in the 
 
 :::warning[Using the In-App Code Editor on Desktop]
 Note that the desktop version of the In-App Code Editor is limited. We recommend using the Web editor
-or the VSCode Extension
+or the **[VSCode Extension](vscode-extension.md)**.
   :::
 
 
