@@ -204,7 +204,7 @@ useful for ensuring good visibility and interactivity across different devices.
 To enable the safe area, navigate to the properties panel and turn on the Safe Area toggle.
 
 
-![img_1.png](../built-in-widgets/imgs/img_1.png)
+![safe-area.png](imgs/safe-area.png)
 
 :::tip[Watch the video tutorial]
 If you prefer watching a video tutorial, here is the guide for you:

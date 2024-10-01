@@ -26,7 +26,7 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'Understanding FlutterFlow UI',
+            label: 'FlutterFlow Platform',
             collapsed: true,
             items: [
                 {

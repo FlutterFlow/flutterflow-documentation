@@ -95,7 +95,7 @@ Note that we wrapped the menu icon and its options inside the MouseRegion widget
 the next step, we will add the same actions for both MouseRegion widgets so that the menu options stay visible as long as you hover over them.
 :::
 
-![img_9.png](img_9.png)
+![img_9.png](imgs/img_9.png)
 
 3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
    and use it 

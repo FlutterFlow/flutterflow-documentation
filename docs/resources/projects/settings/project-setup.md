@@ -2,7 +2,7 @@
 slug: project-setup
 title: Project Setup
 tags: [Setup, Permissions, Multiple Languages]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
+keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0
 ---
@@ -533,3 +533,4 @@ To resolve this, simply add a delay ([Wait](../../../resources/control-flow/time
 We are aware of a limitation where widgets that are not visible on a page (i.e., you need to scroll down to see them) may not be highlighted. We are actively working to resolve this issue. As a temporary workaround, you can try placing the widget in an area that is visible without scrolling. We appreciate your patience and hope to have a fix soon!
 </p>
 </details>
+

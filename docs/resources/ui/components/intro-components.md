@@ -6,13 +6,13 @@ slug: /resources/ui/components
 
 # Components
 
-Components in FlutterFlow are reusable widgets. You design the widget once and utilize throughout your app
-to save time, ensure consistency, and simplify maintenance.
+Components in FlutterFlow are reusable widgets. You design the widget once and can use it throughout your app
+to save time, ensure consistency, and make it easier to maintain.
 
 Components help in the following ways:
 
 - **Consistency:** Components provide a consistent look and behavior, reducing the likelihood of
-  discrepancies that can occur when the same UI elements are recreated multiple times.
+  discrepancies that can occur when the same UI elements are created multiple times.
 
 - **Centralized Updates:** By creating a component once and reusing it across
   different parts of your app, you ensure that any design or functionality changes are made in
@@ -40,26 +40,6 @@ Components help in the following ways:
 
 Leveraging components effectively helps you build a consistent, efficient, and maintainable app.
 
-## Types of Components in FlutterFlow
-
-- **Built-in Components:** FlutterFlow 
-  includes a variety of built-in pre-defined widgets that
-  serve as ready-made components, such as the `CreditCard` or `Signature` widget. These are
-  out-of-the-box solutions provided by FlutterFlow that can be directly integrated into any project
-  to offer specific functionalities.
-
-- **[Custom Components](creating-components.md)**: You can also build your own 
-  components by assembling multiple widgets using FlutterFlow’s drag-and-drop interface. This method involves strategically positioning atomic widgets such as `TextField`, `Button`s, or `Image`s, etc within the molecular
-  widgets like `Row`, `Column`, or `Stack` to create a combined widget that serve a specific
-  function, like a `LoginComponent` or a `SearchBar`.
-
-- **[Custom Widgets](../../../ff-concepts/adding-customization/custom-widgets.md)**: For scenarios where more complex functionalities are required, FlutterFlow
-  allows you to develop their own Custom Widgets. This involves writing Flutter code from
-  scratch, offering the highest level of customization and flexibility.
-
-- **[Themed Widgets](../../../ff-concepts/design-system/design-system.md#theme-widgets)**: Themed widgets can be reused across your app, making it easy to update styles
-  universally. If you decide to change any properties, such as color schemes or fonts, you can
-  update the theme widget instead of modifying each widget individually.
 
 ## Common Use-cases
 
