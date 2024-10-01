@@ -76,7 +76,8 @@ Now, you are ready to log in with your new email address and password.
 ![update-email.png](imgs/update-email.png)
 
 ### How do I generate an API Token?
-An API token is required to use the [CLI](https://docs.flutterflow.io/exporting/ff-cli/) and the [VSCode Extension](https://marketplace.visualstudio.com/items?itemName=FlutterFlow.flutterflow-custom-code-editor&ssr=false#overview).
+An API token is required to use the [CLI](https://docs.flutterflow.io/exporting/ff-cli/) and the [Visual Studio Code Extension](/concepts/custom-code/Visual%20Studio%20Code-extension)
+.
 
 To create an API token tied to your account:
 

@@ -11,19 +11,15 @@ toc_max_heading_level: 4
 # Custom Code
 
 While FlutterFlow provides a wide range of pre-built components and functionalities, there may be
-times when you need to extend your app with custom logic or features that are not readily available.
-This
-is where writing custom code comes into play. We provide the following features to accommodate
-these needs:
+times when you need to extend your app with custom logic or UI components that are not available out of the box.
+This is where writing custom code comes into play. 
 
-* **[Custom Functions](custom-functions.md):** Write custom Dart functions to perform specific tasks or 
-  calculations.
-* **[Custom Actions](custom-actions.md):** Implement custom actions that can be triggered by user 
-  interactions or
-  other action triggers.
-* **[Custom Widgets](custom-widgets.md):** Create custom Flutter widgets to achieve unique UI designs or 
-  behaviors.
-* **[Custom Files:](custom-files.md)** Ability to edit some parts of the `main.dart` file.
+There are a few different ways to make custom code accessible in FlutterFLow:
+
+* **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
+* **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import custom package dependencies.
+* **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets, which can be used in the same way [Components](https://docs.flutterflow.io/resources/ui/components) are used throughout your project. 
+
 
 :::tip[Why Write Custom Code?]
 
@@ -35,13 +31,28 @@ these needs:
   interactions.
   :::
 
-## Common Properties
+# Writing Custom Code
+There are two main ways to write custom code in FlutterFlow:
 
-There are several properties and settings that are common to each type of custom code in
-FlutterFlow. Most of these common properties are highlighted in the diagram below. For more
-information about some of these properties, see the details provided below.
+1. Using the [In-App Code Editor](#using-the-in-app-code-editor)
+2. Using the [Visual Studio Code Extension](/concepts/custom-code/Visual Studio Code-extension)
+
+
+### Using the In-App Code Editor
+You can use the In-App Code Editor to view and edit custom code directly in the FlutterFlow application. 
 
 ![custom-code-common.png](imgs/custom-code-common.png)
+
+:::warning[Using the In-App Code Editor on Desktop]
+Note that the desktop version of the In-App Code Editor is limited. We recommend using the Web editor
+or the VSCode Extension
+  :::
+
+
+Beyond the custom code resoureces outlined above, you'll also see an additional section in the left 
+hand sidebar of the Custom Code page - [Custom Files:](custom-files.md). 
+
+Within Custom Files you'll have the ability to edit some parts of the `main.dart` file.
 
 ### Code Copilot
 
@@ -85,13 +96,20 @@ knowledge, making it especially useful for custom functions and actions.
 ### Compile Code
 
 When you are done adding your code snippets, you can compile it to ensure there are no
-compilation errors. To do so, click the **Compile Code** button.
+compilation errors and that your code can be transformed into something that can execute when your app is running.
 
+To do so, click the **Compile Code** button.
 
 <figure>
     ![compile-errors.png](imgs/compile-errors.png)
   <figcaption class="centered-caption">How to recognize compile time errors</figcaption>
 </figure>
+
+To run your app, you must make sure **Custom Functions** are compiled. 
+
+Custom Widgets and Actions don't need to be compiled to export code or test your app. However, you won't be able to preview Custom Widgets in the builder until they are compiled.  You'll see a project warning if you don't compile Custom Widgets or Actions.
+
+Compiling Custom Functions should be pretty fast, but sometimes, compiling Custom Actions and Widgets takes a while. 
 
 ### Code Analyzer
 
@@ -99,21 +117,22 @@ The code analyzer is available in all your custom code snippets and ensures the 
 correctness of your custom code. It automatically checks your Dart code for errors and warnings,
 providing real-time feedback as you write.
 ![code-analyzer.png](imgs/code-analyzer.png)
+
 When there is a compilation error, the code analyzer will stop running and display the errors caught
 by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
 should then be reconnected. You can also manually reconnect it if needed.
 
 ### Custom Code Automatic Imports
 
-When creating a new custom code snippet (actions, widgets, or functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
+When creating a new custom code snippet (Actions, Widgets, or Functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
 
 ![automatic-imports.png](imgs/automatic-imports.png)
 
 ### Custom Code Settings
 
 When you edit a custom code snippet in FlutterFlow, the Settings block will open on the right. This
-block may vary slightly depending on the type of custom code (actions, functions, widgets), but here
-we will discuss the common settings.
+block may vary slightly depending on the type of custom code (Actions, Functions, Widgets), but here
+we'll discuss the common settings.
 
 #### Exclude From Compilation
 
