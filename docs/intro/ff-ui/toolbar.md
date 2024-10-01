@@ -11,11 +11,11 @@ keywords: [Toolbar, FlutterFlow, UI, Tools, Project Management]
 
 The Toolbar, located at the top of the app builder, provides easy access to numerous tools and features. It includes options for project configuration, saving your app version, accessing help, reporting or debugging issues, viewing project comments, downloading your app code, and running your app directly in FlutterFlow.
 
-![toolbar](imgs/toolbar-new.avif)
+![toolbar](imgs/toolbar.avif)
 
 ## Project info
 
-Hovering over this section reveals the essential information about your project. Here, you can easily check the project name, the current version of FlutterFlow that you're using, along with its release date. Additionally, it shows the Flutter version that your project is currently running on.
+Hovering over this section reveals the essential information about your project. Here, you can easily check the project name, branch name, environment name and the current version of FlutterFlow that you're using, along with its release date. Additionally, it shows the Flutter version that your project is currently running on.
 
 ## Help
 
@@ -42,6 +42,133 @@ With keyboard shortcuts, you can perform common actions related to widgets and r
 The Command Palette makes it easy to find and use things in the App Builder. Open the Command Palette by clicking the search button or pressing **Cmd/Ctrl + K**. Search for anything, and to find out where it's used, click the right arrow – we'll show you every place. To directly access the item, just click on it.
 
 ![command-palette.avif](imgs/command-palette.avif)
+
+## AI Tools
+FlutterFlow AI Tools is a powerful set of features designed to speed up app development by leveraging artificial intelligence. These tools allow you to quickly generate app elements such as pages, components, and even entire page layouts with relevant widgets automatically populated.
+
+### New Page Creation
+Instantly create pages in your app from a prompt. To create a page, open the **AI Tools** menu from the Toolbar. Next, select **New Page Creation** and enter a description for your page.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/jAH6Ar0X8fTIk3PTRNej?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+### New Component Creation
+Aside from pages, you can also create [Components](/resources/ui/components) directly from a prompt. To create a component, open the **AI Tools** menu from the Toolbar. Next, select **New Component Creation** and enter a description for your UI component.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/qTqZVHv7EOjw0Gcfp697?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+### Sketch To Component
+Sketch to Component allows you to add a sketch out your [Component](/resources/ui/components). This sketch can include outlines of widgets or layouts to incorporate, and it can also include annotations that tell the AI tool more about the design you have in mind. 
+
+To create a Component from a sketch, open the **AI Tools** menu from the Toolbar. Next, select **Sketch to Component** and draw directly in the input or upload an image file of your sketch.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/llUMoLjlVutwhBfi5rxH?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
+
+### Page Autocomplete
+Page Autocomplete intelligently adds relevant widgets to a page based on the pages’s context, making it easy to complete partially built pages.
+The project context includes the existing widgets and design of those widgets, as well as the page's description. 
+
+If the page does not have a description, you will be asked to describe what you want the page to contain. 
+
+To use Page Autocomplete, open the **AI Tools** menu from the Toolbar. Next, and select **Page Autocomplete** on the page that
+you want FlutterFlow AI to complete.
+
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/nI1ECv9gcuY4iurJaWJC?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
 
 ## Canvas size
 
