@@ -47,7 +47,7 @@ The Command Palette makes it easy to find and use things in the App Builder. Ope
 FlutterFlow AI Tools is a powerful set of features designed to speed up app development by leveraging artificial intelligence. These tools allow you to quickly generate app elements such as pages, components, and even entire page layouts with relevant widgets automatically populated.
 
 ### New Page Creation
-Instantly create complete app pages with the necessary layout and widgets. This can be particularly useful when you're unsure where to start.
+Instantly create pages in your app from a prompt. To create a page, open the **AI Tools** menu from the Toolbar. Next, select **New Page Creation** and enter a description for your page.
 
     <div style={{
         position: 'relative',
@@ -76,7 +76,7 @@ Instantly create complete app pages with the necessary layout and widgets. This 
     <p></p>
 
 ### New Component Creation
-Build reusable components quickly using AI.
+Aside from pages, you can also create [Components](/resources/ui/components) directly from a prompt. To create a component, open the **AI Tools** menu from the Toolbar. Next, select **New Component Creation** and enter a description for your UI component.
 
     <div style={{
         position: 'relative',
@@ -105,8 +105,9 @@ Build reusable components quickly using AI.
     <p></p>
 
 ### Sketch To Component
-Simply sketch out your desired layout, and FlutterFlow AI will turn your sketch into actual Components.
+Sketch to Component allows you to add a sketch out your [Component](/resources/ui/components). This sketch can include outlines of widgets or layouts to incorporate, and it can also include annotations that tell the AI tool more about the design you have in mind. 
 
+To create a Component from a sketch, open the **AI Tools** menu from the Toolbar. Next, select **Sketch to Component** and draw directly in the input or upload an image file of your sketch.
 
     <div style={{
         position: 'relative',
@@ -135,8 +136,13 @@ Simply sketch out your desired layout, and FlutterFlow AI will turn your sketch 
     <p></p>
 
 ### Page Autocomplete
-This intelligently adds relevant widgets to a page based on the pages’s context, making it easy to complete partially built pages.
+Page Autocomplete intelligently adds relevant widgets to a page based on the pages’s context, making it easy to complete partially built pages.
+The project context includes the existing widgets and design of those widgets, as well as the page's description. 
 
+If the page does not have a description, you will be asked to describe what you want the page to contain. 
+
+To use Page Autocomplete, open the **AI Tools** menu from the Toolbar. Next, and select **Page Autocomplete** on the page that
+you want FlutterFlow AI to complete.
 
     <div style={{
         position: 'relative',
