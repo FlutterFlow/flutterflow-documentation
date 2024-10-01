@@ -274,7 +274,7 @@ For example, consider a news article app. When a new user opens the app for the 
 The steps to create and display a walkthrough in your app are as follows:
 
 1. [Create walkthrough](#1-create-walkthrough)
-2. [Start walkthrough](#2-start-walkthrough)
+2. [Start walkthrough](#2-start-walkthrough-action)
 3. [Get notified on walkthrough skipped and completed](#3-get-notified-on-walkthrough-skipped-and-completed)
 
 ### 1. Create walkthrough

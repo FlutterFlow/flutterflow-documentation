@@ -97,7 +97,7 @@ Here are the steps in detail:
 1. Select the **Calendar** widget from the widget tree or canvas area.
 2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
     1. Click on the **+ Add Action**.
-    2. On the right side, search and select the [**Update App State**](../../../../resources/data-representation/app-state#update-app-state-variable) action.
+    2. On the right side, search and select the [**Update App State**](../../../../resources/data-representation/app-state.md#update-app-state-variable) action.
     3. Set the **Select field to update** to the App State variable **name**.
     4. Choose the **Select Update Type** to **Set Value**.
     5. Set the **Value Source** to **From Variable**.

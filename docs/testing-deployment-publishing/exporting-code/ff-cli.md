@@ -51,6 +51,9 @@ Follow the steps below to export your project.
 </div>
 <p></p>
 
+### API Token
+To use the CLI, you'll need to create an API token and use it in your requests. See the documentation [here on how to generate an API token.](/accounts-billing/account-management)
+
 ### CLI command details
 
 - If you wish to exclude assets from the download, use `-no-include-assets` in your command. This will download the project code without the assets. For example: `flutterflow export-code --project your_project_id --dest path_to_output_folde --no-include-assets --token your_token`
