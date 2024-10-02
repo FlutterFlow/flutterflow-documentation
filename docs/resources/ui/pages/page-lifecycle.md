@@ -251,7 +251,7 @@ the above example:
 You can set the Data Type of your Page State variable to any primitive data types such as **String,
 Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
 Type, Document,** etc. To learn more about the available data types, refer the [**Data
-Representation Section.** ](../../data-representation/overview.md)
+Representation Section.** ](../../../data-representation/overview.md)
 :::
 
 ### Get Page State value
