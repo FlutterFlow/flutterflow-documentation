@@ -7,8 +7,8 @@ const config: Config = {
   tagline: 'Learn how to build mobile, web and desktop apps incredibly fast - without sacrificing on app quality or features',
   url: 'https://docs.flutterflow.io',
   baseUrl: '/',
-  onBrokenLinks: 'log',
-  onBrokenMarkdownLinks: 'log',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'logos/favicon.png',
   i18n: {
     defaultLocale: 'en',
