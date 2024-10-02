@@ -205,6 +205,9 @@ For Custom Actions and Custom Widgets, there’s a one-to-one relationship betwe
 
 For Custom Functions, all functions are contained within a single file: `lib/flutter_flow/custom_functions.dart`. You can add, edit, or delete custom functions directly within this file.
 
+For Package Dependencies, you can [add new dependencies](#adding-new-dependencies) in the `pubspec.yaml` file, but you cannot modify the existing ones. When you add a new dependency, it will appear in **Settings and Integrations > Project Dependencies > Custom Code Dependencies** section.
+
+![custom-code-dependencies](imgs/custom-code-dependencies.png)
 
 ### Renaming Files
 
