@@ -45,11 +45,13 @@ You can create your own or use the one from page templates.
 
 <iframe src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
-- Enable the **Create User Document** and set the **Collection** to **users**.
-  After successful login, this will insert the user's account details, such as
-  email,
-  name, and photo, into the 'users' collection. If a user already exists, it
-  won't add details again.
+In **Connect Menu > Firestore Settings >** :
+- **Storage Icon >** : Create the **users** collection. You can accept the suggestion to prepopulate it with the default user fields.
+- **Cog Icon >** : Enable the **Users Collection** radio button and select the **Collection** to **users**.
+
+After successful login, this will insert the user's account details, such as
+email, name, and photo, into the 'users' collection. If a user already exists, it
+won't add details again.
 
 :::info
 To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
