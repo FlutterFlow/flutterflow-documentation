@@ -1394,6 +1394,11 @@
         "type": 301
       },
       {
+        "source": "/data-and-backend/firebase/firestore-database/storage-rules",
+        "destination": "/integrations/database/cloud-firestore/firestore-rules",
+        "type": 301
+      },
+      {
         "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/storage-rules",
         "destination": "/integrations/firebase-storage/storage-rules",
         "type": 301
