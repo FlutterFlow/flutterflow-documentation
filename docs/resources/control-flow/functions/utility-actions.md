@@ -3,7 +3,7 @@ slug: /resources/functions/utility-actions
 title: Utility Actions
 description: Learn about the built-in utility Actions available in FlutterFlow to enhance your app's UI logic.
 tags: [Functions]
-sidebar_position: 5
+sidebar_position: 6
 keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow, pub.dev]
 ---
 import Tabs from '@theme/Tabs';

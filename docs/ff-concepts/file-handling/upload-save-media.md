@@ -269,9 +269,9 @@ Here's how it looks when images are loaded with BlurHash:
 
 Here are the steps to generate and use the BlurHash:
 
-1. [Generate BlurHash](#1-generate-blurhash)
-2. [Save BlurHash](#2-save-blurhash)
-3. [Use BlurHash](#3-use-blurhash)
+1. [Generate BlurHash](#generate-blurhash)
+2. [Save BlurHash](#save-blurhash)
+3. [Use BlurHash](#use-blurhash)
 
 #### Generate BlurHash
 

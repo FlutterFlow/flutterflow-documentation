@@ -26,7 +26,7 @@ Learn [**how to create a team**](../../accounts-billing/subscriptions/flutterflo
 
 ## Team code
 
-Imagine you are working on multiple apps. As the project progresses, you realize that some of the custom code can be used across multiple apps. With *Team Code*, you can create [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Widgets](../../resources/ui/widgets/composing-widgets.md), and [Actions](../../resources/control-flow/functions/action-flow-editor.md) that will be shared between your team members and their projects.
+Imagine you are working on multiple apps. As the project progresses, you realize that some of the custom code can be used across multiple apps. With *Team Code*, you can create [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Widgets](../../resources/ui/widgets/composing-widgets/rows-column-stack.md), and [Actions](../../resources/control-flow/functions/action-flow-editor.md) that will be shared between your team members and their projects.
 
 This helps you reduce building time, effort, and costs by allowing members to reuse existing code. Furthermore, shared code is easier to maintain as changes only need to be made in one place.
 

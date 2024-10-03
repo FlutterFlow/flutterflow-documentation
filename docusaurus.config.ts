@@ -7,8 +7,8 @@ const config: Config = {
   tagline: 'Learn how to build mobile, web and desktop apps incredibly fast - without sacrificing on app quality or features',
   url: 'https://docs.flutterflow.io',
   baseUrl: '/',
-  onBrokenLinks: 'log',
-  onBrokenMarkdownLinks: 'log',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'logos/favicon.png',
   i18n: {
     defaultLocale: 'en',
@@ -71,6 +71,12 @@ const config: Config = {
           docId: 'marketplace/index',
           position: 'left',
           label: 'Marketplace',
+        },
+        {
+          type: 'doc',
+          docId: 'troubleshooting/index',
+          position: 'left',
+          label: 'Troubleshooting',
         },
         {
           href: 'https://github.com/FlutterFlow/flutterflow-documentation',

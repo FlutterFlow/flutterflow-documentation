@@ -1,6 +1,6 @@
 ---
 slug: /resources/projects/how-to-create-find-organize-projects
-title: How to Create, Find, and Organize Projects
+title: Create, Find and Organize Projects
 description: Learn how to create, find, and organize projects in FlutterFlow to streamline your app development process.
 tags: [Project Management, FlutterFlow, Organization, Projects]
 toc_max_heading_level: 5

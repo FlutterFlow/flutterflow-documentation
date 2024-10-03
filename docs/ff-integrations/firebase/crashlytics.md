@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Firebase, Crashlytics]
 # Firebase Crashlytics
 [Firebase Crashlytics](https://firebase.google.com/products/crashlytics) is a crash-reporting tool that helps you catch errors. It enables you to troubleshoot the issue by logging the details, such as the exact line number that caused the error, device name, OS version, and time when the crash happened.
 
-To enable Firebase Crashlytics, navigate to **Settings and Integrations** > **Integrations** > **Firebase Crashlytics** and **Enable Firebase Crashlytics**.
+To enable Firebase Crashlytics, navigate to **Settings and Integrations** > **Project Setup** > **Firebase** > Expand the **Crashlytics** section and **Enable Crashlytics**.
 
 Firebase Crashlytics only supports catching errors on mobile platforms (Android and iOS).
 

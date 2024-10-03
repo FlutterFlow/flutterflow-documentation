@@ -182,7 +182,7 @@ To change the title text style:
 
 1. Select the **AudioPlayer** widget from the widget tree or the canvas area.
 2. Move to the properties panel (on the right side of your screen) and scroll down to the **Title Text Style** section.
-3. Find the **Theme Text Style** property and change the style as per instructions [here](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties).
+3. Find the **Theme Text Style** property and change the style as per instructions [here](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties).
 
 
 ### Styling playback duration text
@@ -191,4 +191,4 @@ To change the playback duration text style:
 
 1. Select the **AudioPlayer** widget from the widget tree or the canvas area.
 2. Move to the properties panel (on the right side of your screen) and scroll down to the **Playback Duration Text Style** section.
-3. Find the **Theme Text Style** property and change the style as per instructions [here](../../../resources/ui/widgets/built-in-widgets/text.md#common-text-styling-properties).
+3. Find the **Theme Text Style** property and change the style as per instructions [here](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties).

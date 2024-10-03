@@ -36,11 +36,11 @@ color for the mobile app. Here's how it looks:
 
 To do so, you can edit *main.dart* file by following the steps below:
 
-1. Create a [Custom Action](custom-actions.md#custom-actions) for the code you want to include in a `main.
+1. Create a [Custom Action](custom-actions.md) for the code you want to include in a `main.
    dart` file. For this 
    example, here's code in a custom action named 'setStatusbarColor'.
 
-```dart
+```js
 // Automatic FlutterFlow imports
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -88,7 +88,7 @@ You might want to lock the device orientation in portrait or landscape mode to p
 To set the device orientation in landscape-only mode, [create a custom action](custom-actions.md) with the 
 following code and [add it to a `main.dart`](#edit-maindart) file.
 
-```dart
+```js
 // Automatic FlutterFlow imports
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -123,7 +123,7 @@ If you want to ensure that your app appropriately manages its lifecycle and hand
 To do so, [create a custom action](custom-actions.md) with the following code and [add it to a `main.dart`](#edit-maindart) file.
 
 
-```dart
+```js
 // Automatic FlutterFlow imports
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -136,21 +136,22 @@ import 'package:flutter/material.dart';
 
 Future onAppBackground() async {
 // Add your function code here!
-WidgetsBinding.instance.addObserver(AppLifecycleObserver());
+   WidgetsBinding.instance.addObserver(AppLifecycleObserver());
 }
 
 class AppLifecycleObserver with WidgetsBindingObserver {
 @override
-void didChangeAppLifecycleState(AppLifecycleState state) {
-if (state == AppLifecycleState.resumed) {
+   void didChangeAppLifecycleState(AppLifecycleState state) {
+      if (state == AppLifecycleState.resumed) {
 // Do something when app is resumed
-print('App is in foreground');
-} else if (state == AppLifecycleState.paused) {
+         print('App is in foreground');
+      } else if (state == AppLifecycleState.paused) {
 // Do something when app is paused
-print('App is in background');
+         print('App is in background');
+      }
+   }
 }
-}
-}
+
 ```
 <figure>
     ![img_5.png](imgs/img_5.png)

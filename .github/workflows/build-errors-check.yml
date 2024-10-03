@@ -1,0 +1,26 @@
+name: Check Build Errors
+
+on:
+  pull_request:
+    branches:
+      - main  # Run on PRs targeting the main branch
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+
+
+
+
