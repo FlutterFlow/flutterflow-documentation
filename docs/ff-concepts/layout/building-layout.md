@@ -12,7 +12,7 @@ keywords: [FlutterFlow, Building Layout, Concepts]
 In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/basic-widgets/text.md), [Buttons](../../resources/ui/widgets/basic-widgets/button.md), [Images](../../resources/ui/widgets/basic-widgets/image.md), and [Icons](../../resources/ui/widgets/basic-widgets/icons.md), are visible on the screen. Others, like [Containers](../../resources/ui/widgets/basic-widgets/container.md), Rows, Columns, and Stacks, are not directly visible but help arrange and position the visible elements on the page.
 
 These widgets are categorized into four main types: [Layout Elements](/tags/layout-elements), [Base Elements](/tags/base-elements), 
-[Page Elements](/tags/page-elements), and [Form Elements](/tags/form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
+[Page Elements](../../resources/ui/pages/page-elements.md), and [Form Elements](/tags/form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
 
 ## Understanding Layout Concept
 

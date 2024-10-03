@@ -16,7 +16,7 @@ You can [**sign up**](https://app.flutterflow.io/create-account) via Apple, Goog
 The FlutterFlow application can be accessed from your browser or installed as a desktop app.
 
 ### General recommendations:
-- Use a screen that is at least **1280 x 1084** 
+- Use a screen that is at least **1280 x 1024** 
 
 ### Browser recommendations:
 - FlutterFlow works best on **Google Chrome** 

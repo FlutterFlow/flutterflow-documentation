@@ -19,11 +19,6 @@
         "type": 301
       },
       {
-        "source": "/troubleshooting/**",
-        "destination": "/troubleshooting",
-        "type": 301
-      },
-      {
         "source": "/getting-started/dashboard",
         "destination": "/flutterflow-ui/dashboard",
         "type": 301
@@ -370,7 +365,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/expandable",
-        "destination": "/resources/ui/components/built-in-components/expandable",
+        "destination": "/resources/ui/widgets/built-in-widgets/expandable",
         "type": 301
       },
       {
@@ -380,7 +375,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/flippablecard",
-        "destination": "/resources/ui/components/built-in-components/flippable-card",
+        "destination": "/resources/ui/widgets/built-in-widgets/flippable-card",
         "type": 301
       },
       {
@@ -390,17 +385,17 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/carousel",
-        "destination": "/resources/ui/components/built-in-components/carousel",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/swipeablestack",
-        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/datatable-paginated",
-        "destination": "/resources/ui/components/built-in-components/datatable",
+        "destination": "/resources/ui/widgets/built-in-widgets/datatable",
         "type": 301
       },
       {
@@ -490,7 +485,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/calendar",
-        "destination": "/resources/ui/components/built-in-components/calendar",
+        "destination": "/resources/ui/widgets/built-in-widgets/calendar",
         "type": 301
       },
       {
@@ -550,7 +545,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/blur",
-        "destination": "/resources/ui/components/built-in-components/blur",
+        "destination": "/resources/ui/widgets/built-in-widgets/blur",
         "type": 301
       },
       {
@@ -560,7 +555,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/mediadisplay",
-        "destination": "/resources/ui/components/built-in-components/media-display",
+        "destination": "/resources/ui/widgets/built-in-widgets/media-display",
         "type": 301
       },
       {
@@ -575,7 +570,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/progressbar",
-        "destination": "/resources/ui/components/built-in-components/progressbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/progressbar",
         "type": 301
       },
       {
@@ -585,27 +580,27 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/badge",
-        "destination": "/resources/ui/components/built-in-components/badge",
+        "destination": "/resources/ui/widgets/built-in-widgets/badge",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart",
-        "destination": "/resources/ui/components/built-in-components/chart/chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/line-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/line-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/line-chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/bar-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/bar-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/bar-chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/pie-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/pie-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/pie-chart",
         "type": 301
       },
       {
@@ -630,7 +625,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/barcode",
-        "destination": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
         "type": 301
       },
       {
@@ -645,17 +640,17 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/stickyheader",
-        "destination": "/resources/ui/components/built-in-components/sticky-header",
+        "destination": "/resources/ui/widgets/built-in-widgets/sticky-header",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/markdown",
-        "destination": "/resources/ui/components/built-in-components/markdown",
+        "destination": "/resources/ui/widgets/built-in-widgets/markdown",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/draggable-+-dragtarget",
-        "destination": "/resources/ui/components/built-in-components/draggable",
+        "destination": "/resources/ui/widgets/built-in-widgets/draggable",
         "type": 301
       },
       {
@@ -680,27 +675,27 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/pincode",
-        "destination": "/resources/ui/components/built-in-components/pincode",
+        "destination": "/resources/ui/widgets/built-in-widgets/pincode",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/slider",
-        "destination": "/resources/ui/components/built-in-components/slider",
+        "destination": "/resources/ui/widgets/built-in-widgets/slider",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/ratingbar",
-        "destination": "/resources/ui/components/built-in-components/ratingbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/ratingbar",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/creditcardform",
-        "destination": "/resources/ui/components/built-in-components/credit-card-form",
+        "destination": "/resources/ui/widgets/built-in-widgets/credit-card-form",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/countcontroller",
-        "destination": "/resources/ui/components/built-in-components/count-controller",
+        "destination": "/resources/ui/widgets/built-in-widgets/count-controller",
         "type": 301
       },
       {
@@ -725,7 +720,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/signature",
-        "destination": "/resources/ui/components/built-in-components/signature/",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/",
         "type": 301
       },
       {
@@ -1005,7 +1000,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/scan-barcode-qr-code",
-        "destination": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
         "type": 301
       },
       {
@@ -1060,22 +1055,22 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/upload-signature",
-        "destination": "/resources/ui/components/built-in-components/signature/#2-upload-signature-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#2-upload-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/clear-signatures",
-        "destination": "/resources/ui/components/built-in-components/signature/#clear-signature-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#clear-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-swipeable-stack",
-        "destination": "/resources/ui/components/built-in-components/swipeable-stack/#control-swipeable-stack-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack/#control-swipeable-stack-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-carousel",
-        "destination": "/resources/ui/components/built-in-components/carousel/#control-carousel-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel/#control-carousel-action",
         "type": 301
       },
       {

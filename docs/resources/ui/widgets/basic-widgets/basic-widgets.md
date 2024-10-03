@@ -6,7 +6,7 @@ slug: /resources/ui/widgets/basic-widgets
 # Basic Widgets
 FlutterFlow offers a range of basic widgets that are the building blocks of a Page or Component. In this guide, we'll cover five fundamental widgets: **Container**, **Text, Icon, Button,** and **Image**. Understanding these widgets is crucial for building any FlutterFlow app.
 
-![basic-widgets.png](..%2F..%2Fimgs%2Fbasic-widgets.png)
+![basic-widgets.png](../../imgs/basic-widgets.png)
 
 Some basic widgets include: 
 - **[Container](container.md)**: The **Container** widget is one of the most commonly used widgets in FlutterFlow. It allows you to create a rectangular or circular box that is allowed to have one single child - any other basic or advanced widget, and you can style it with various properties such as padding, margins, borders, and colors, etc.

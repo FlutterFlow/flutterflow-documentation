@@ -3,7 +3,7 @@ slug: /concepts/custom-code/custom-actions
 title: Custom Actions
 description: Learn how to create and use custom actions in your FlutterFlow app to enhance functionality.
 tags: [Custom Actions, Custom Code]
-sidebar_position: 3
+sidebar_position: 4
 keywords: [FlutterFlow, Custom Actions, Customizations, Flutter, Dart, Pub.dev]
 ---
 

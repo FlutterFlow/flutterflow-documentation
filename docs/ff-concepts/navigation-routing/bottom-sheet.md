@@ -88,7 +88,7 @@ You can also create one from the 'BottomSheet' [**templates**](../../resources/u
     
     ![Set Background and Barrier color](imgs/bottom-sheet-background-color.png)
     
-9. You can also [pass parameters](../../resources/ui/components/using-components.md#pass-down-values) to a bottom sheet component.
+9. You can also [pass parameters](../../resources/ui/components/creating-components.md#creating-a-component-parameter) to a bottom sheet component.
 10. By default, this type of action blocks the following action (if any) from triggering while this action is in progress. (i.e., meaning the bottom sheet is present on the screen). However, in some cases, you might want to allow the next action (after this) to execute, for example, making an API call immediately after showing the bottom sheet. To do so, enable **Non Blocking** option.
 11. By default, **Non Dismissble** option closes the bottom sheet when you click outside of it. To disable this behavior, enable this option.
 12. With **Enable Drag** option, you can open and close the bottom sheet using a swipe gesture.

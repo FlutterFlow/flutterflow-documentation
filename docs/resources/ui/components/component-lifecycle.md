@@ -1,10 +1,10 @@
 ---
-title: Component Lifecycle
+title: Component Actions & Lifecycle
 sidebar_position: 3
 toc_max_heading_level: 5
 ---
 
-# Component Lifecycle
+# Component Actions & Lifecycle
 
 In FlutterFlow, knowing component lifecycle is crucial for managing state and optimizing your
 app's performance.
@@ -65,6 +65,11 @@ the actions under the **On Initialization** action trigger will be re-triggered 
 setup tasks are re-executed. For dynamically generated components, such as those in a ListView with
 a query, each instance will trigger the actions under `On Initialization` action trigger when it is
 created.
+
+### On Shortcut Press [Action Trigger]
+
+Your component can also respond to certain keypress events. For more details on setting this up, see [this section on 
+keyboard shortcuts](/resources/ui/pages/page-lifecycle#on-shortcut-press-action-trigger).
 
 ## Component state
 

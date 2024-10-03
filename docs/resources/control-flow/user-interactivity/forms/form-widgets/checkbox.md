@@ -6,7 +6,7 @@ keywords: [FlutterFlow, Checkbox, CheckboxGroup, CheckboxListTile, Multiple Choi
 description: Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your FlutterFlow app.
 ---
 # Checkbox
-In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: [**Checkbox**](#checkbox), [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
+In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: **Checkbox**, [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
 
 :::tip[Widget State]
 Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.

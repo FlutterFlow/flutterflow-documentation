@@ -8,7 +8,7 @@ tags: [Base Elements]
 
 The `MouseRegion` widget lets you know whenever the mouse pointer enters or exits from a widget. You could use it to build a user experience (UX), such as animating buttons when a user hovers over them and revealing or hiding menu items when a user hovers over the menu icon.
 
-On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#show-hide-elements-using-mouseregion), and [customize](#customizing) it.
+On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#showhide-elements-using-mouseregion), and [customize](#customizing) it.
 
 ## Adding MouseRegion widget
 
@@ -95,7 +95,7 @@ Note that we wrapped the menu icon and its options inside the MouseRegion widget
 the next step, we will add the same actions for both MouseRegion widgets so that the menu options stay visible as long as you hover over them.
 :::
 
-![img_9.png](img_9.png)
+![img_9.png](imgs/img_9.png)
 
 3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
    and use it 

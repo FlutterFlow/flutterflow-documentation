@@ -118,7 +118,7 @@ value for **Max character** to limit the number of characters.
 
 2. Set the **Text Overflow Replacement** to either **Clip/Cutoff** or **Ellipsis (...)**
 
-![img_1.png](../built-in-widgets/img_1.png)
+![text-overflow.png](imgs/text-overflow.png)
 
 
 ### Adding Gradient color
