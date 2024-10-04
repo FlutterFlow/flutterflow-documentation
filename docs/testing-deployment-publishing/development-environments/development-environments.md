@@ -100,18 +100,50 @@ After switching to an environment, FlutterFlow generates code specific to that e
 You also may see different project errors depending on which environment you have selected.
 :::
 
-### Configuring Firebase for each Environment
-A single FlutterFlow project can have **multiple environments**, each mapped to its **own Firebase project**. This ensures that environments like `Development`, `Staging`, and `Production` remain independent, giving you better control over your app's data and behavior throughout different stages of development.
+### Configuring Firebase or Supabase for each Environment
+A single FlutterFlow project can have **multiple environments**, each mapped to its **own Firebase or Supabase project**. This ensures that environments like `Development`, `Staging`, and `Production` remain independent, giving you better control over your app's data and behavior throughout different stages of development.
 
-![flutterflow-environment](../imgs/flutterflow-environment.avif)
+![flutterflow-environment](../imgs/flutterflow-environment-update.avif)
 
-If your project uses Firebase, you'll need to [**manually configure a new Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each environment. This requires setting up a new project in the Firebase console and linking it to the selected environment in FlutterFlow. 
+:::info[For Firebase]
+If your project uses Firebase, you'll need to create a separate Firebase project in the Firebase Console for each environment and then follow the steps to [**manually configure the Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each one. Additionally, you must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
 
-:::info
-- You must complete the Firebase setup for the new environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to production, and you can keep testing while finishing the setup for the new environment.
-- You must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
-- Data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected
+**Note** that the data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected.
 :::
+
+:::info[For Supabase]
+If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment. Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, and then configure the Supabase properties to point to these newly created values. Below is an example of how it would look like.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/VxEaC6uxhnB4zzluIE9i?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+Whenever you switch to a different environment, be sure to click the **Get Schema** button to fetch any updates or changes in the database.
+:::
+
+You must complete the Firebase or Supabase setup for the new environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to production, and you can keep testing while finishing the setup for the new environment.
 
 
 
