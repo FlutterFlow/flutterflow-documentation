@@ -501,7 +501,7 @@ screen).
 To customize the duration indicator:
 
 1. Open the **Duration Text Style** section
-   and [change its text style](../../../resources/ui/widgets/widget-commonalities.md#styling-text).
+   and [change its text style](../../../resources/ui/widgets/basic-widgets/text.md#common-text-styling-properties).
 2. To change the indicator appearance, open the **Duration Container** section and use the property
     such as **Background Color** and **Border Radius**.
 

@@ -40,7 +40,6 @@ To pass the request header:
 1. Select the **Headers** tab and click on the **+ Add Header** button.
 2. Inside the input box, enter the header name followed by the colon(:) and its value (e.g., **Content-Length: application/json**).
 
-
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -48,7 +47,7 @@ To pass the request header:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/mgjg0BAJW3dqxAQSvVZW?embed&show_copy_link=true"
+        src="https://demo.arcade.software/AGgxnI4qdOL9veyDRVV1?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -93,7 +92,7 @@ To pass the static auth token:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/9nVwxVq0iaNQ0OpQYojW?embed&show_copy_link=true"
+        src="https://demo.arcade.software/lMEvyl0gjA7qMOLu8XAq?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -214,7 +213,7 @@ Now you can pass values to these variables while triggering the API call from yo
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/AdAx0UxdHANPgQ04la5Y?embed&show_copy_link=true"
+        src="https://demo.arcade.software/Gw8MilWu4GV2XtlLh3Fj?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -633,7 +632,7 @@ Optionally, you can force a user to be authenticated via the Firebase authentica
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/3mptnc82659m28DX5yE5?embed&show_copy_link=true"
+        src="https://demo.arcade.software/xoPi2UVZuw3JMqyXPeau?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -726,6 +725,3 @@ If you prefer watching a video tutorial, here's the one for you:
 <div class="video-container"><iframe src="https://www.youtube.
 com/embed/L5qj2f9skt4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 :::
-
-
-
