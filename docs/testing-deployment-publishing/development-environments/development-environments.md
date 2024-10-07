@@ -105,14 +105,24 @@ A single FlutterFlow project can have **multiple environments**, each mapped to
 
 ![flutterflow-environment](../imgs/flutterflow-environment-update.avif)
 
-:::info[For Firebase]
-If your project uses Firebase, you'll need to create a separate Firebase project in the Firebase Console for each environment and then follow the steps to [**manually configure the Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each one. Additionally, you must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
+You must complete the Firebase or Supabase setup for an environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to Production, and you can keep testing while finishing the setup for the new environment.
 
-**Note** that the data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected.
+#### Configuring Firebase
+If your project uses Firebase, you'll need to create a separate Firebase project in the Firebase Console for each environment. Then, you can change the selected environment in the Firebase settings page (see below), and follow the steps to [**manually configure the Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each one. 
+
+
+![firebase-dev-env-config.png](../imgs/firebase-dev-env-config.png)
+
+Additionally, you must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
+
+:::info
+The data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected.
 :::
 
-:::info[For Supabase]
-If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment. Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, and then configure the Supabase properties to point to these newly created values. Below is an example of how it would look like.
+#### Comnfiguring Supabase
+If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment. 
+
+Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, and then configure the Supabase properties to point to these newly created values. Below is an example of how it would look like.
 
 <div style={{
     position: 'relative',
@@ -140,10 +150,12 @@ If your project uses Supabase, you'll need to [**set up a new Supabase project**
 </div>
 <p></p>
 
-Whenever you switch to a different environment, be sure to click the **Get Schema** button to fetch any updates or changes in the database.
-:::
+:::note
+It's recommended that you keep schemas consistent between the different Supabase environments. It's also recommended that you
+**Get Schema** from the Productio environment and build from there.
+ :::
 
-You must complete the Firebase or Supabase setup for the new environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to production, and you can keep testing while finishing the setup for the new environment.
+
 
 
 
