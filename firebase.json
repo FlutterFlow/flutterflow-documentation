@@ -1974,11 +1974,6 @@
         "type": 301
       },
       {
-        "source": "/marketplace/creators-hub",
-        "destination": "/marketplace/creators-hub",
-        "type": 301
-      },
-      {
         "source": "/marketplace/creators-hub/submitting-an-item-for-review",
         "destination": "/marketplace/creators-hub/submit-item-for-reivew",
         "type": 301
@@ -2001,11 +1996,6 @@
       {
         "source": "/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses",
         "destination": "/marketplace/creators-hub/navigating-external-licenses",
-        "type": 301
-      },
-      {
-        "source": "/marketplace/creators-hub/creator-faqs",
-        "destination": "/marketplace/creators-hub/creator-faqs",
         "type": 301
       },
       {

@@ -314,3 +314,51 @@ To configure these permissions, navigate to **Settings & Integrations > Project 
 - **Editors** assigned to a branch have the authority to make direct modifications to the project while working within that branch. 
 - **Mergers** on the other hand, are only allowed to merge other branches into that branch. This is especially useful for protected branches where you don't want any users to make direct modifications. Instead, users should only merge other branches into that branch.
 
+## Closing Branch
+
+Closing a branch is a common practice after the branch has served its purpose, typically once its changes have been merged into another branch (like the `main` or `development` branch). By regularly closing inactive or merged branches, you help maintain a clean, efficient, and well-organized project.
+
+### When to Close a Branch
+
+- **After a Merge:** Once the branch’s changes have been merged into the `main` branch (or another target branch), it’s safe to close the branch. This often happens after a feature is complete or a bug is fixed.
+- **Unused Branch:** If a branch is no longer needed (e.g., a feature was abandoned or changes were made in another branch), it’s a good idea to close it.
+
+:::warning
+
+Once a branch is closed, it will no longer appear in the list of active **Branches**, meaning no further changes can be made. **This action is permanent and cannot be undone**, so ensure that all necessary work is completed or merged before closing the branch.
+
+:::
+
+Here’s how you can close a branch:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/4k3cjnyfVo8uHtjC2PR2?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip[Best Practices]
+
+- **Review before deletion:** Before closing a branch, ensure that all necessary changes have been merged or no longer need to be kept.
+- **Coordinate with your team:** If you’re working in a team, ensure that no one is actively using the branch before you close it, to avoid disrupting ongoing work.
+:::
