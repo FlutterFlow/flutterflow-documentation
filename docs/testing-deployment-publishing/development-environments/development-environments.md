@@ -152,7 +152,7 @@ Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, 
 
 :::note
 It's recommended that you keep schemas consistent between the different Supabase environments. It's also recommended that you
-**Get Schema** from the Productio environment and build from there.
+**Get Schema** from the Production environment and build from there.
  :::
 
 
