@@ -445,38 +445,3 @@ Watch this video if you prefer watching a video tutorial.
     </iframe>
 </div>
 
-## FAQs
-
-<details>
-<summary>I am having an issue while Deploying from a GitHub branch</summary>
-<p>
-
-If you are experiencing problems deploying or uploading to the Google Play Store and are deploying from a Github branch, check to make sure your `build.gradle` file is correct.
-
-1. Open your `android/app/build.gradle` file.
-2. Ensure your file has these lines of code:
-
-    ```
-    def keystoreProperties = new Properties()
-    def keystorePropertiesFile = rootProject.file('key.properties')
-    if (keystorePropertiesFile.exists()) {
-        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-    }
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
-        }
-    }
-    ```
-
-3. Newer Flutterflow code will automatically have these lines added. If yours doesn't, you can push it to your `flutterflow` branch on GitHub and merge in the changes or add them like so:
-
-    ![deploy-github-issue](../imgs/deploy-github-issue.avif)
-
-
-4. Lastly, change `debug` (shown in the red box above) to `release` before deploying.
-</p>
-</details>
