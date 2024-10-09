@@ -222,6 +222,7 @@ To deploy your app from FlutterFlow, go to **Settings & Integrations > App Setti
 ![deploy-to-appstore.avif](../imgs/deploy-to-appstore.avif)
 
 :::info
+- Every time you deploy, we'll auto increment the **Build Number** (i.e., version code in Android) to ensure that each release is identifiable. If needed, you can update the *App Version* and *Build Number* yourself.
 - If another deployment is already in progress, deploying a new build will cancel the previous one.
 - It may take a few minutes for the request to process. Once completed, the status will be updated to **Submitted**.
 :::

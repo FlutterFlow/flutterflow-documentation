@@ -314,57 +314,19 @@ You can now deploy directly from FlutterFlow or from your GitHub repository.
 
 :::info
 
-- Every time you deploy, we'll auto increment the 'Build Number' (i.e., version code in Android). If needed, you can update the **App Version** and **Build Number** yourself.
+- Every time you deploy, we'll auto increment the **Build Number** (i.e., version code in Android) to ensure that each release is identifiable. If needed, you can update the *App Version* and *Build Number* yourself.
 - We'll [**auto-generate**](https://developer.android.com/studio/publish/app-signing#generate-key) and [**sign**](https://developer.android.com/studio/publish/app-signing#sign_release) your app for the release with the Keystore (i.e., upload key). If you wish to download the keystore, click the orange key button.
 
 :::
 
-<Tabs>
-  <TabItem value="FF" label="Deploy From FlutterFlow" default>
-   Ensure the **Google Play Track** is set to **Internal** and hit the **Deloy to Play Store** again. On successful deployment, you will see the status as 'finished'.
+Ensure the **Google Play Track** is set to **Internal** and hit the **Deloy to Play Store** again. On successful deployment, you will see the status as 'finished'.
 
 ![deploy-flutterflow](../imgs/deploy-flutterflow.avif)
 
-  </TabItem>
-  <TabItem value="GitHub" label="Deploy From Github">
-    
-[Connecting the Github](../exporting-code/push-to-github.md) repo allows you to introduce the custom code into your FlutterFlow project. You may want to deploy the modified code directly from your Github repo to Play Store.
 
-To deploy from Github repo:
-
-1. If you haven't added the Github repo yet, you can do so using the instructions [here](../exporting-code/push-to-github.md).
-2. Navigate to **Settings & Integrations > App Settings >** **Mobile** **Deployment**.
-3. Find the **Deployment Settings** section and click on the arrow icon on the right to open it.
-4. Under the **Deployment Source**, enable the **Use Github repo**.
-5. Enter the **Branch Name** of your repo, from which you want to deploy the code. Make sure to enter the correct branch name.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/402bba6f50a24f388930b192cce7f554?sid=3d572cc0-0296-45fd-b981-f580cee591ff"
-        title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-
-  </TabItem>
-</Tabs>
+:::tip
+You also have the option to [**Deploy apps from your GitHub repository**](deploy-from-github.md).
+:::
 
 
 #### 4.4 Verify deployment

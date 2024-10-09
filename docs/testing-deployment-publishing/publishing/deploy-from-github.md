@@ -31,7 +31,7 @@ To deploy from a GitHub repository:
 
 :::info[important]
 
-When deploying from your GitHub branch, you will need to manage the app versioning manually. This is done through the `pubspec.yaml` file. For example, to set the version to **1.1.0** and the build number to **2**, you can use the format: `version: 1.1.0+2`. Learn more about app versioning [**here**](#).
+When deploying from your GitHub branch, you will need to manage the app versioning manually. This is done through the `pubspec.yaml` file. For example, to set the version to **1.1.0** and the build number to **2**, you can use the format: `version: 1.1.0+2`.
 
 ![update-version.avif](../imgs/update-version.avif)
 
