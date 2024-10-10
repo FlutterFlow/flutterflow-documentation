@@ -57,6 +57,10 @@ this example, we will create a `ProductRatingBar` widget that uses a pub.dev dep
     </iframe>
 </div>
 
+:::info[Widget Builder as Parameter]
+You can also leverage [**Widget Builders**](../../resources/ui/components/widget-builder-parameters.md) that allow you to pass in widgets to be used within the custom widget tree. This is especially useful when you want to dynamically substitute content for some part of a custom widget - like displaying an item in a custom widget popup.
+:::
+
 ### Properties: Width & Height
 
 For custom widgets, it is mandatory to specify both width and height. These properties are required to size the custom widget appropriately. Without setting these dimensions, the custom widget will not render correctly within your application.
