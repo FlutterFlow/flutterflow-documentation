@@ -46,9 +46,9 @@ Here's an example from the Demo app:
 <p></p>
 
 :::note[Prerequisites]
-- Ensure you have enabled **Places API** from Cloud console. [**Check out the Setup docs.**](generate-maps-keys)
+- Ensure you have enabled **Places API** from Cloud console. [**Check out the Setup docs.**](generate-maps-keys.md#add-places-apis)
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
-- Add API keys as suggested in [**Getting Started**](generate-maps-keys) guide.
+- Add API keys as suggested in [**Getting Started**](generate-maps-keys.md#add-keys-to-flutterflow) guide.
 
 :::
 <figure>
