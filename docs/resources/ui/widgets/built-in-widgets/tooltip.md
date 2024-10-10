@@ -4,7 +4,7 @@ tags: [Base Elements]
 
 # Tooltip
 
-The Tooltip widget provides a textual description of a widget in a small popup box. It appears when the user taps or long-presses the widget or hovers over it. It's typically used to provide an explanation about the function of a widget.
+The Tooltip widget provides additional information or visual cues of a widget in a small popup box. It appears when the user taps or long-presses the widget or hovers over it. It's typically used to provide an explanation about the function of a widget.
 
 :::info
 It is not frequently used on touch devices where tapping or long-pressing can initiate other actions. But they can be incredibly useful in the desktop environment where hover functionality is available.
@@ -12,7 +12,7 @@ It is not frequently used on touch devices where tapping or long-pressing can in
 
 ![tooltip.png](imgs/tooltip.png)
 
-## Adding *Tooltip* widget
+## Adding Tooltip widget
 
 To add the *Tooltip* widget to your app:
 
@@ -50,6 +50,38 @@ Widget** and then select **Tooltip** widget.
 
 You can customize the appearance and behavior of this widget using the various properties 
 available under the Properties Panel.
+
+### Component as Tooltip
+
+Sometimes, you may want to display more than just text in a tooltip—such as images, icons, buttons, or other custom components. For example, in an e-commerce app, a tooltip could show a detailed breakdown of customer reviews when users hover over the overall rating.
+
+To achieve this, simply set the **Tooltip Type** to **Component** and select the custom component you'd like to display.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/jnFUZZQ9pmCH5vgvhVVA?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Change trigger mode
 
