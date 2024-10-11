@@ -226,6 +226,82 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ![update-library](imgs/update-library.avif)
 
+## Library Values
+
+**Library Values** are essentially variables created by a library publisher and intended to be set by the library consumer. These values allow library publishers to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow consumers to input specific data required for the library to function properly in their project.
+
+For example, If someone has built a library that uses OpenAI API, they would define a Library Value for the OpenAI API key. As the consumer of the library, when you import, you must provide your own API key to ensure the library functions properly.
+
+By using Library Values, the publisher allows consumers to adapt the library to their own configurations without hardcoding sensitive or project-specific data, like API keys, into the library itself.
+
+### Create Library Values
+
+The publisher defines the variable name, data type (e.g., string, enum), whether the variable is nullable, and an optional default value.
+
+To create library values, navigate to **Settings and Integrations > App Settings > Publish as Library > Library Values** section and click **+ Add Value**. 
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/vGIveMr1UmSlaiOreYmR?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Set Library Values
+
+To set library values, navigate to **Settings and Integrations > Project Setup > Project Dependencies** page. When you import a library, you'll be prompted to set values for required Library Values. If the library has already been added, click on **View Details**, which will open a dialog and then you can enter a value.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/JG68MN6oBpZpPvHnKDmh?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+After setting Library Values, they function just like any other variable in FlutterFlow. You can bind them to components, actions, or API calls, allowing you to easily configure dynamic settings across your project.
+
+:::tip
+For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#use-environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
+:::
+
 ## FAQs
 
 <details>
