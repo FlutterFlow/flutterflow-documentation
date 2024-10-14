@@ -64,11 +64,14 @@ To use the CLI, you'll need to create an API token and use it in your requests. 
 
 | Flag | Behavior | Default |
 | --- | --- | --- |
-| --dest / -d | Specifies a destination folder other than the current directory | Current directory |
-| --[no]-include-assets | Option to download assets (images, GIFs). Useful for consecutive code exports if the assets folder hasn't changed | False |
-| --branch-name / -b | Downloads from a specific branch | Main |
-| --[no]-fix | Option to run dart fix on the code after downloading | False |
-| --[no]-parent-folder | Option to download the code into a subfolder instead of directly into the directory | False |
+| --dest / -d | Specifies a destination folder other than the current directory. | Current directory |
+| --[no]-include-assets | Option to download assets (images, GIFs). Useful for consecutive code exports if the assets folder hasn't changed. | False |
+| --branch-name / -b | Downloads from a specific branch. | Main |
+| --[no]-fix | Option to run dart fix on the code after downloading. | False |
+| --[no]-parent-folder | Option to download the code into a subfolder instead of directly into the directory. | False |
+| --[no]-as-module | Whether to generate the project as a Flutter module. | False |
+| --[no]-as-debug | Whether to generate the project with debug logging to be able to use FlutterFlow Debug Panel inside the DevTools. | False |
+| --project-environment | Which [development environment](../development-environments/development-environments.md) to be used. If empty, the current environment in the project will be downloaded. | Current environment |
 
 ## Filtered exports
 
