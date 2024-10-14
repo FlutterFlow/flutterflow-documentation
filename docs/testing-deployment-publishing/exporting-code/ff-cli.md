@@ -76,3 +76,15 @@ To use the CLI, you'll need to create an API token and use it in your requests. 
 ## Filtered exports
 
 We've developed [a solution](https://github.com/krabhishek/flutterflow-filtered-pull) that allows you to use the CLI tool without overwriting specific files or directories. This is especially useful if you're managing code outside of FlutterFlow and want to prevent it from being overwritten during a code export.
+
+## FAQ
+<details>
+<summary>I am getting an error as FormatException: Missing argument for…</summary>
+<p>
+This error likely indicates that you haven't correctly entered the command option along with its value. Double-check that all required information has been entered. If everything is correct and you're still encountering the error, it might be due to using an outdated version of the FlutterFlow CLI. To resolve this, you can update to the latest version by running the installation command:
+```
+dart pub global activate flutterflow_cli
+```
+This should update the CLI and fix the issue.
+</p>
+</details>
