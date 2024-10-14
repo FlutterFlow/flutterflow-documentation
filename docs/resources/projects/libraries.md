@@ -228,13 +228,13 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Values
 
-**Library Values** are essentially variables created by a library publisher and intended to be set by the library consumer. These values allow library publishers to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow consumers to input specific data required for the library to function properly in their project.
+**Library values** are essentially variables created and used by a library publisher and intended to have their values set by the library consumer. These values allow library publishers to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow consumers to input specific data required for the library to function properly in their project.
 
 For example, If someone has built a library that uses OpenAI API, they would define a Library Value for the OpenAI API key. As the consumer of the library, when you import, you must provide your own API key to ensure the library functions properly.
 
 By using Library Values, the publisher allows consumers to adapt the library to their own configurations without hardcoding sensitive or project-specific data, like API keys, into the library itself.
 
-### Create Library Values
+### Create Library Values as Publisher
 
 The publisher defines the variable name, data type (e.g., string, enum), whether the variable is nullable, and an optional default value.
 
@@ -266,7 +266,16 @@ To create library values, navigate to **Settings and Integrations > App Settings
 </div>
 <p></p>
 
-### Set Library Values
+#### Use Library Values
+After setting Library Values, they function just like any other variable in FlutterFlow. You can bind them to components, actions, API calls, or any property that allows you to configure dynamic values across your library project. You can access Library Values via the ****Set from Variable**** menu.
+
+:::tip
+Library values are used only within the library project and are not available for use in the consumer project. The library consumer can only set their values.
+:::
+
+![access-library-values](imgs/access-library-values.png)
+
+### Set Library Values as Consumer
 
 To set library values, navigate to **Settings and Integrations > Project Setup > Project Dependencies** page. When you import a library, you'll be prompted to set values for required Library Values. If the library has already been added, click on **View Details**, which will open a dialog and then you can enter a value.
 
@@ -295,8 +304,6 @@ To set library values, navigate to **Settings and Integrations > Project Setup >
     </iframe>
 </div>
 <p></p>
-
-After setting Library Values, they function just like any other variable in FlutterFlow. You can bind them to components, actions, or API calls, allowing you to easily configure dynamic settings across your project.
 
 :::tip
 For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#use-environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
