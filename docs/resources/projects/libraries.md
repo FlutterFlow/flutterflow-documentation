@@ -273,7 +273,7 @@ After setting Library Values, they function just like any other variable in Flut
 Library values are used only within the library project and are not available for use in the consumer project. The library consumer can only set their values.
 :::
 
-![access-library-values](imgs/access-library-values.png)
+![access-library-values](imgs/access-library-values.avif)
 
 ### Set Library Values as Consumer
 
