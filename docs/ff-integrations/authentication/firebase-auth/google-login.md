@@ -23,10 +23,33 @@ Before getting started with this section:
 
 ## Enable Google Sign-in Provider in Firebase
 
-- Open the Firebase Console and click on Authentication
-- Follow the steps to enable Google Sign in for your Firebase project
+Open the **Firebase Console**, click on **Authentication** and then follow the steps below to enable Google Sign in for your Firebase project.
 
-<iframe src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true" title="EcommerceFlow - Authentication - Sign-in method - Firebase console" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Add a Login Screen with Google Login Action
 
@@ -37,21 +60,42 @@ You can create your own or use the one from page templates.
 
 ### Add Login Action
 
-- On your Google Login button, select **Actions** from the properties panel (the
-  right menu) and select Add Action.
-- Search and select the Log In (under **Backend/Database > Firebase
+1. On your Google Login button, select **Actions** from the properties panel (the
+  right menu) and select **Add Action**.
+2. Search and select the Log In (under **Backend/Database > Firebase
   Authentication**) action.
-- Set Auth Provider to Google.
+3. Set **Auth Provider** to **Google**.
+4. Enable **Create User Document** and set the **Collection** to **users**. After successful login, this will insert the user's details, such as email, name, and photo, into the *users* collection. **Note** that, if a user exists already, it won't add the details again.
 
-<iframe src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+If you haven’t already, see how to [create *users* collection](auth-initial-setup.md#creating-the-users-collection).
 
-- Enable the **Create User Document** and set the **Collection** to **users**.
-  After successful login, this will insert the user's account details, such as
-  email,
-  name, and photo, into the 'users' collection. If a user already exists, it
-  won't add details again.
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
-:::info
+:::tip
 To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
 :::
 
@@ -69,29 +113,29 @@ To let users log out of your app, you can use the [**Logout**](auth-actions.md#l
 
 2. To add in Firebase console:
 
-    - Open the Firebase console and click on Authentication and select the
+    1. Open the Firebase console and click on Authentication and select the
       Setting tab.
 
-    - Select **Authorized domains** from the left side menu.
+    2. Select **Authorized domains** from the left side menu.
 
-    - Click **Add domain**.
+    3. Click **Add domain**.
 
 3. To add in Google cloud console:
 
-    - Head over to
+    1. Head over to
       your [Project Credentials](https://console.cloud.google.com/apis/credentials?project=_) page.
    
-    - Ensure you are on the correct project. In our case, we are using the
+    2. Ensure you are on the correct project. In our case, we are using the
       [EcommerceFlow demo project](https://bit.ly/ff-docs-demo-v1), it will be different for you.
    
-   ![credential-page.png](../imgs/credential-page.png)
+    ![credential-page.png](../imgs/credential-page.png)
 
-    - Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
+    3. Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
       Google Service)'.
 
-    - Under the '**Authorized JavaScript origins**', click ADD URI and add both the
+    4. Under the '**Authorized JavaScript origins**', click ADD URI and add both the
       URL.
-    - Similarly, under the '**Authorized redirect URIs**', click ADD URI, add both
+    5. Similarly, under the '**Authorized redirect URIs**', click ADD URI, add both
       the URL and append '/__/auth/handler' at the end.
 
 <iframe src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0"
@@ -112,6 +156,6 @@ allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
 ### Verify user created in Firebase Dashboard
 
 To confirm the successful integration of Google authentication and the creation of users, navigate
-to your Firebase project > Authentication > Users and check the user entries.
+to your **Firebase project > Authentication > Users** and check the entries.
 
 ![verify-google-auth-users.png](../imgs/verify-google-auth-users.png)
