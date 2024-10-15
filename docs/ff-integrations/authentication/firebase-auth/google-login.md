@@ -25,7 +25,31 @@ Before getting started with this section:
 
 Open the **Firebase Console**, click on **Authentication** and then follow the steps below to enable Google Sign in for your Firebase project.
 
-<iframe src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true" title="EcommerceFlow - Authentication - Sign-in method - Firebase console" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Add a Login Screen with Google Login Action
 
@@ -41,10 +65,35 @@ You can create your own or use the one from page templates.
 2. Search and select the Log In (under **Backend/Database > Firebase
   Authentication**) action.
 3. Set **Auth Provider** to **Google**.
-4. Enable **Create User Document** and set the **Collection** to **users**. After successful login, this will insert the user's details, such as email, name, and photo, into the *users* collection. If you haven’t already, see how to [create *users* collection](auth-initial-setup.md#creating-the-users-collection). **Note** that, If a user already exists, it won't add details again.
+4. Enable **Create User Document** and set the **Collection** to **users**. After successful login, this will insert the user's details, such as email, name, and photo, into the *users* collection. **Note** that, if a user exists already, it won't add the details again.
 
-<iframe src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true" title="EcommerceFlow - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+If you haven’t already, see how to [create *users* collection](auth-initial-setup.md#creating-the-users-collection).
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::tip
 To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
