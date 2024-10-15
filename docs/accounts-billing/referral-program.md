@@ -21,7 +21,7 @@ Your personal referral code is listed on your [My Account Page](https://app.flut
 1. Navigate to the [My Account Page](https://app.flutterflow.io/account) and scroll down to the **Referrals** section.
 2. To copy your referral code, press the copy icon.
 
-![img_19.png](imgs/img_19.png)
+![referral-link](imgs/referral-link.avif)
 
 ### How To Track How Many People Have Signed Up Using Your Referral Code
 
@@ -30,7 +30,7 @@ You can track your referrals in the **Referrals** section on the [My Account Pag
 * **Signed Up:** How many people have signed up for FluterFlow using your referral link.
 * **Subscribed:** How many people have subscribed to FlutterFlow Pro or Standard using your referral link.
 
-![img_20.png](imgs/img_20.png)
+![track-referrals.png](imgs/track-referral.avif)
 
 ### I forgot to sign-up using the referral link, can I add this after creating account?
 
