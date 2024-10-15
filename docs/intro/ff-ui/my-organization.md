@@ -26,6 +26,10 @@ Learn [**how to create a team**](../../accounts-billing/subscriptions/flutterflo
 
 ## Team code
 
+:::warning
+**Team Code Libraries are now deprecated**. Please use the new [**Libraries**](../../resources/projects/libraries.md) to share and reuse projects across multiple projects.
+:::
+
 Imagine you are working on multiple apps. As the project progresses, you realize that some of the custom code can be used across multiple apps. With *Team Code*, you can create [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Widgets](../../resources/ui/widgets/composing-widgets/rows-column-stack.md), and [Actions](../../resources/control-flow/functions/action-flow-editor.md) that will be shared between your team members and their projects.
 
 This helps you reduce building time, effort, and costs by allowing members to reuse existing code. Furthermore, shared code is easier to maintain as changes only need to be made in one place.
@@ -211,7 +215,9 @@ Here's how you can share the design library:
 <p></p>
 
 ## Team API library
-
+:::warning
+**Team API Libraries are now deprecated**. Please use the new [**Libraries**](../../resources/projects/libraries.md) to share and reuse projects across multiple projects.
+:::
 Imagine a company that has multiple mobile apps for different purposes, such as a shopping app, a loyalty app, and a delivery app. All these apps require similar functionalities, such as user authentication, product information, and order management. However, each app is developed by a different team.
 
 To ensure consistency and efficiency across all the apps, the company decides to create a centralized API that can be used and modified as per the team's requirements. Sharing API calls also allows for easier testing and debugging, as any issues can be traced back to a single source.
