@@ -325,7 +325,7 @@ Ensure the **Google Play Track** is set to **Internal** and hit the **Deloy to P
 
 
 :::tip
-You also have the option to [**Deploy apps from your GitHub repository**](deploy-from-github.md).
+If you prefer to manage your deployment process outside of FlutterFlow, such as integrating with your own CI/CD pipeline, or if you want more control over versioning and custom code management directly on GitHub. You also have the option to [**Deploy apps from your GitHub repository**](deploy-from-github.md).
 :::
 
 

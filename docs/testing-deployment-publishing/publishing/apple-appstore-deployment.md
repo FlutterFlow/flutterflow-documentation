@@ -29,7 +29,7 @@ The App Store deployment involves the following steps:
 
 A **Bundle Identifier (ID)** is a **unique string** that identifies your app within the Apple ecosystem, typically formatted in reverse domain name notation like `com.example.myapp`.
 
-To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2Fresources%2Fcertificates%2Flist&rv=1) page, add a new **App ID**, and provide these details:
+To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://developer.apple.com/account/resources/identifiers/list) page, add a new **App ID**, and provide these details:
 
 1. **Bundle ID:** Copy the **Package Name** from FlutterFlow.
 2. **Description:** Add a brief description of your app.
@@ -228,7 +228,7 @@ To deploy your app from FlutterFlow, go to **Settings & Integrations > App Setti
 :::
 
 :::tip
-You also have the option to [**Deploy apps from your GitHub repository**](deploy-from-github.md).
+If you prefer to manage your deployment process outside of FlutterFlow, such as integrating with your own CI/CD pipeline, or if you want more control over versioning and custom code management directly on GitHub. You also have the option to [**Deploy apps from your GitHub repository**](deploy-from-github.md).
 :::
 
 

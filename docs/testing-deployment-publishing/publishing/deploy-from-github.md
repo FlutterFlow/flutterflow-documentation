@@ -7,14 +7,14 @@ sidebar_position: 5
 keywords: [Apple App Store, Google Play Store, Deployment, GitHub]
 ---
 
-You can deploy your FlutterFlow app directly from a GitHub repository. This is especially useful when you are managing your app’s code on GitHub. Managing code on GitHub enables you to add custom features or advanced functionality that may not be fully supported by FlutterFlow's capabilities.
+If your FlutterFlow project is connected to a GitHub repository, the generated code can be pushed to GitHub, giving you full control over your project’s code. Then, you can deploy your app directly from the same repository, rather than deploying through FlutterFlow.
 
 Deploying from GitHub is particularly beneficial when:
 
 - You have written custom code that cannot be managed directly in FlutterFlow, such as features that require advanced Flutter functionality.
 - You want to manage the source code in an external GitHub repository for better version control.
 - You want to automate the process of deploying your app directly from GitHub to the Play Store or App Store after modifying the code.
-- You need full control over your project’s code and want to deploy a specific branch of your GitHub repository.
+- You want to deploy from a specific branch of your GitHub repository.
 
 ## Steps to Deploy
 
