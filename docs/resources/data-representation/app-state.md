@@ -83,7 +83,7 @@ How this app state update will affect your app.
 - **No Rebuild:** No rebuild is required. 
 
 :::tip[Generated Code]
-Curious about how state changes are handled internally when you choose different **Update Type** options? Explore the detailed [**FFAppState**](../../generated-code/ff-app-state) guide.
+Curious about how state changes are handled internally when you choose different **Update Type** options? Explore the detailed [**FFAppState**](../../generated-code/ff-app-state.md) guide.
 :::
 
 Here's a quick guide to updating the app state variable. We need to add an action to the 'Add to Bag' button. Within this action, we'll provide the product details and configure it to add to the current cart list.
