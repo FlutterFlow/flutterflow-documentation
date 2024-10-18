@@ -9,23 +9,17 @@ keywords: [FlutterFlow, Wrap, Concepts]
 
 # Flex
 
-The **Flex** widget can be used as an alternative to **Rows** and **Columns**, which allows you to dynamically set the layout axis (horizontal or vertical) based on specific conditions or logic. This is useful in scenarios where the layout needs to adapt to different screen sizes or device orientations.
+The **Flex** widget can be used as an alternative to **Row** and **Column**.  It allows you to dynamically set the layout axis (horizontal or vertical) based on specific conditions or logic. This is especially useful for creative responsive layouts - where child elements should be horizontal when the screen is wide, and vertical when the screen is narrow. 
 
-For instance, the Flex widget can lay out items horizontally on wider screens and switch to a vertical layout when screen space is limited, ensuring an optimal user experience on any device.
+![flex.png](imgs/flex.png)
 
-:::tip[Possible use cases]
 
-- **Responsive Dashboards**: In admin dashboards, the Flex widget can adjust charts, tables, and stats based on screen size or orientation.
-- **Profile Layouts**: In social media profiles, the Flex widget can arrange pictures, usernames, and stats.
-- **Cards Layout:** In credit card management apps, Flex can be used to layout credit cards dynamically, switching between a horizontal or vertical layout based on screen width.
-
-:::
 
 ## Adding Flex Widget
 
-To use the Flex widget, add it from the **Layout Elements**, then add child widgets inside it. Then, from the properties panel, set a condition for the **Is Horizontal** property. When this condition evaluates to TRUE, the items will be laid out horizontally.
+To use the Flex widget, add it from the **Layout Elements** section of the **Widget Palette**, then add child widgets inside it. From the properties panel, set a condition for the **Is Horizontal** property. When this condition evaluates to `True`, the items will be laid out horizontally.
 
-Consider an e-commerce app where recent orders are displayed vertically on mobile devices and switch to a horizontal layout on larger screens to make better use of the available space.
+Consider an ecommerce app where recent orders are displayed vertically on mobile devices and switch to a horizontal layout on larger screens to make better use of the available space.
 
 <div style={{
     position: 'relative',
@@ -91,6 +85,6 @@ Here's another example of using a Flex widget on a create account page to dynami
 
 ## Customization
 
-When **Is Horizontal** property is disabled, the Flex widget behaves like a Column, and when enabled, it acts as a Row. Settings like [main axis alignment](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#main-axis), [cross axis alignment](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#cross-axis), [scrollability](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#scrollability), and [spacing](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#spacing) works the same way they do for the Column and Row widgets.
+When **Is Horizontal** property is disabled, the Flex widget behaves like a Column, and when enabled, it acts as a Row. Settings like [main axis alignment](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#main-axis), [cross axis alignment](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#cross-axis), [scrollability](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#scrollability), and [spacing](../../../resources/ui/widgets/composing-widgets/rows-column-stack.md#spacing) work the same way they do for the Column and Row widgets.
 
 
