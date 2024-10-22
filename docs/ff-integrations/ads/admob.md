@@ -10,31 +10,20 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # AdMob
-Integrating AdMob in your FlutterFlow app allows you to effortlessly include various types of advertisements, such as banner ads and interstitial ads. Here's a quick guide on how to add an AdMob banner widget and display interstitial ads in your app.
+Adding ads to your FlutterFlow project can be a powerful way to monetize your app. FlutterFlow supports the integration of popular advertising platforms like [Google AdMob](https://admob.google.com/home/), making it easy for you to add [Banner](https://developers.google.com/admob/android/banner) and [Interstitial](https://developers.google.com/admob/android/interstitial) ads to your projects. This guide provides a step-by-step walkthrough for integrating ads within your FlutterFlow project.
 
-## Getting API Keys
+## Setup AdMob
 
-Acquiring the API keys comprises the following steps:
-
-1. [Creating AdMob app](#1-creating-admob-app)
-2. [Adding keys to FlutterFlow](#2-adding-keys-to-flutterflow)
+Setting up an AdMob involves creating AdMob apps for both Android and iOS, obtaining the app keys, and configuring some optional settings.
 
 ### 1. Creating AdMob app
 
-To create an AdMob app:
-
-1. Visit the AdMob homepage and [signup using your Google account](https://admob.google.com/home/).
-2. Go to the Dashboard, and click **Apps** on the left side menu.
-3. Now, click **Add App**.
-4. Select the Platform as **Android**.
-5. For the **Is the app listed on a supported app store?,** select **Yes** if your app is published on Playstore or Appstore. Select **No** if your app is still under development.
-6. Click on **Continue**.
-7. Enter the **App Name** and click **ADD APP**.
-8. Click **Done**.
-9. Similarly, create another AdMob App for iOS app.
+Visit the AdMob homepage and [sign up](https://admob.google.com/home/) using your Google account. Once logged in, create an Android and iOS app with the necessary details, such as platform and app name.
 
 :::info
-You should be creating two AdMob Apps to display advertisements in both Android and iOS apps.
+
+You should create two AdMob apps to display ads in both Android and iOS versions.
+
 :::
 
 <div style={{
@@ -43,7 +32,7 @@ You should be creating two AdMob Apps to display advertisements in both Android 
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/470902676107457894a2ff354947174d?sid=569d7656-150e-4aea-acf6-f4c72b6bccbb"
+        src="https://demo.arcade.software/xFOz1T9ksdXL3ElhtMW3?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -67,13 +56,7 @@ You should be creating two AdMob Apps to display advertisements in both Android 
 
 You must add the App keys to your FlutterFlow project that will allow your app to communicate with the AdMob server.
 
-To add the APP keys:
-
-1. First, get the APP key by visiting the **AdMob dashboard > Select the App > App Settings (left side menu) > Copy the App ID**.
-2. Now, return to the FlutterFlow project and navigate to **Settings and Integrations** > **Integrations** > **AdMob**.
-3. To display the GDPR consent dialog for users in the European Union (EU), enable the **Show GDPR Consent Dialog at App Launch** toggle.
-4. Find the **AdMob** **Android App Key** input box and enter the key.
-5. Similarly, add the **AdMob** **iOS App Key** from the iOS AdMob app.
+To do so, get the app key from the AdMob App Settings, navigate to **Settings and Integrations** in FlutterFlow, and add the Android and iOS app keys under **AdMob** integration settings.
 
 <div style={{
     position: 'relative',
@@ -81,7 +64,7 @@ To add the APP keys:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/81ac98a0ba5c477f95c3aed4f95b7b64?sid=45ad83d1-68cd-4037-8caa-305bb654a017"
+        src="https://demo.arcade.software/ZCwInN2vMMPBAknkR5yL?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -101,43 +84,48 @@ To add the APP keys:
 </div>
 <p></p>
 
-## Showing ads
+### 3. Configure optional settings
 
-After adding the keys, you can find the instructions to display the ad on below pages:
+Below are some AdMob settings (under **Settings and Integrations** menu) that you might need to configure based on your app and target audience.
 
-# **AdBanner**
+- **Show Test Ads**: To enable test ads during development, enable this option. This allows you to click on ads without charging Google advertisers and prevents your account from being flagged for invalid activity.
+- **Show GDPR Consent Dialog at App Launch**: To display the GDPR consent dialog for users in the European Union (EU), enable this option. **Note that** the dialog will only appear if the user is from the EU and you created a [European regulations message](https://support.google.com/admob/answer/10113207).
+- **Child-Directed Settings**: To indicate that your content is directed towards children, enable this option. This will ensure that Google treats your content as child-directed when making ad requests.
+- **Users Under the Age of Consent**: This setting allows you to comply with privacy regulations for users in the European Economic Area (EEA) who are under the age of consent. It ensures that ad requests are appropriately handled, limiting data collection and targeting to meet legal requirements. This is important to protect user privacy and to avoid penalties for non-compliance.
+- **Ad Content Filtering**: To filter the type of ads displayed, select the appropriate content rating. AdMob will ensure that ads returned for these requests have a content rating at or below the level selected.
+    
+    These are the levels you can set:
+    
+    - **G (General Audience)**: Suitable for all audiences, with no adult content or explicit themes.
+    - **PG (Parental Guidance)**: Ads may contain mild content, suitable for children with parental supervision.
+    - **T (Teen)**: Ads with content appropriate for teenagers; may include some mature topics.
+    - **MA (Mature Audience)**: Ads intended for adults, which may include strong themes or explicit content.
 
-The AdBanner widget is used to show an advertisement banner inside your app. The AdBanner widget may display texts, images, and other rich media such as video ads. 
+Once the setup is completed, you can start to display [AdBanner](#adbanner) or [Interstitial ads](#interstitial-ad) in your app.
 
-:::info
-Our AdBanner widget uses Admob which is an Ad network from Google.
-:::
+## AdBanner
 
-Showing AdBanner From AdMob comprises of following steps:
+The **AdBanner** widget displays advertisement banners within your app. It can feature text, images, and rich media, including video ads.
 
-1. [Adding AdBanner widget](#1-adding-adbanner-widget)
-2. [Assigning Ad Unit ID](#2-assigning-ad-unit-id)
-3. [Enabling test ads](#3-enabling-test-ads)
-4. [Testing ads](#4-testing-ads)
+To display an **AdBanner** from AdMob, follow these steps:
 
 ### 1. Adding AdBanner widget
 
-To add the AdBanner widget to your project:
+First, add the **AdBanner** widget from the **Base Elements**. Next, create a new Banner Ad unit in AdMob, then copy and paste its **unit ID** into FlutterFlow. The Ad unit ID is a unique identifier assigned to each ad created in AdMob.
 
-1. Add the Column widget from the widget tree or from the canvas area.
-2. Drag the **AdBanner** widget from the **Base Elements** tab (in the Widget Panel) or add it directly from the widget tree.
-3. Move to the property editor and scroll down to the **Ad Banner Dimensions** section and adjust the **Width** and **Height** property.
+:::tip
 
-:::info
-If you leave the Width property empty, AdBanner will take the full width of the screen.
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to [**enable Test Ads during development**](#enable-test-ads).
+
 :::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/PBkC8jgpGHT2zrPhl5yh?embed&show_copy_link=true"
+        src="https://demo.arcade.software/vlm11muoQuU7YRS2AzQW?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -157,202 +145,89 @@ If you leave the Width property empty, AdBanner will take the full width of the 
 </div>
 <p></p>
 
-### 2. Assigning Ad Unit ID
+### 2. Testing
 
-The Ad Unit ID is the unique identifier given to every ad on Admob. You can get this by creating a new ad unit from your Admob account.
+Ads cannot be tested in Test or Run Mode. They can only be tested on a real device or emulator. To do this, you can use [Local run](../../testing-deployment-publishing/running-your-app/local-run.md) or [download the code](../../testing-deployment-publishing/exporting-code/ff-cli.md) and run it in your IDE.
 
-To assign the ad unit Id:
+## Interstitial Ad
 
-1. Go to the Admob account dashboard, click **Apps** on the left side menu and select your app.
-2. Select **Ad units** and then click on the **Add add unit**.
-3. Select the **Banner** Ad.
-4. Enter the **Ad unit name**.
-5. Click **Create ad unit**.
-6. Copy the ad unit ID (the second one) and then click **Done**.
-7. Paste it into the **Android Ad Unit ID** input box.
-8. Similarly, create, copy and paste Ad unit for the iOS app as well.
+An **Interstitial Ad** is a type of full-screen ad that appears at natural transitions or pauses in an app, such as when switching between pages. Unlike banner ads, which stay on-screen while users interact with the app, interstitial ads are shown at key moments and are designed to be closed before the user can continue. They typically support multiple formats, including:
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/rL445JrvJkBjPivJZlDo?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+- **Image ads**
+- **Video ads**
+- **Rich media (interactive ads)**
 
-### 3. Enabling test ads
+To display an interstitial ad in FlutterFlow, you need to use the **Load Interstitial Ad** and **Show Interstitial Ad** actions together. Here's how it works:
 
-To prevent the risk of your AdMob account ban, it is best to enable the test ads while you are still developing the app.
+![interstitial_ad_flow](imgs/interstitial_ad_flow.png)
 
-To enable the test ads:
-
-1. Select the **AdBanner** Widget from the widget tree or from the canvas area.
-2. Move to property editor and scroll down to the **Ad properties** section.
-3. Checkmark the **Show Test Ads**. Uncheck it only when you are about to publish the app.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tRCqieHMarFAuF0kukPt?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-### 4. Testing ads
-
-You can't test Ads in Run Mode, It can be only tested on a real device or emulator. For that, you will need to [download](../../testing-deployment-publishing/exporting-code/ff-cli.md) the code and run it in your IDE.
-
-To test Ads:
-
-1. Open and Run the app from your preferred IDE.
-2. See the Banner ads appearing on the screen.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ITIaBQou0jEiGCtLVcSX?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-# **Load/Show Interstitial Ad**
-
-Using this action, you can display the [interstitial ad](https://developers.google.com/admob/android/interstitial#:~:text=Interstitial%20ads%20are%20full%2Dscreen,between%20levels%20in%20a%20game.). This type of ad is a full-screen ad (shows an image or video inside) and is typically displayed during natural pauses in your app/game, such as moving to the next page/level.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/U1vhnf7cXTds2hPUiCVA?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-## Displaying Interstitial Ad
-
-To display an interstitial ad, you need to use both **Load Interstitial Ad** and **Show Interstitial Ad** actions. Here is how it works:
-
-![Load and show an interstitial ad](imgs/load-show-inerstatial.avif)
-
-First, you must load the ad using the **Load Interstitial Ad** action and display it using the **Show Interstitial Ad** action. When the ad is visible, users can choose to either open or dismiss it. When the ad is dismissed, you can't show the same ad again. Hence, it would be best if you loaded the ad again. The newly loaded ad will be displayed next time you trigger the **Show Interstitial Ad** action.
+First, load the ad using the **Load Interstitial Ad** action, then display it with the **Show Interstitial Ad** action. Once the ad is shown, users can choose to either interact with it or dismiss it. After the ad is dismissed, it cannot be displayed again, so you'll need to load a new ad. The newly loaded ad will then be ready for display the next time you trigger the **Show Interstitial Ad** action.
 
 :::warning
-**Allow sufficient time after calling *Load Interstitial Ad* before you call *Show Interstitial Ad.*** It might take some time to load the ad. Hence, it's advisable to load the ad well in advance before showing it. Otherwise, the ad won't display. For example, if you want to display an ad with the tap of a widget, you must load the ad as soon as the page is loaded.
+
+***Allow sufficient time between calling Load Interstitial Ad and Show Interstitial Ad to ensure the ad has fully loaded.*** Since loading may take some time, it's recommended to load the ad well in advance to avoid display issues. For example, if you want to show an ad when a widget is tapped, you should load the ad as soon as the page loads. If the ad isn’t loaded in time, it won’t be displayed.
+
 :::
 
-:::info
-Learn the best practices to add the interstitial ad [**here**](https://support.google.com/admob/answer/6066980?hl=en&ref_topic=2936214).
-:::
+Let's see an example displaying the interstitial ad when you navigate to the next page like this:
 
-Let's apply this basic fundamental and build an example that shows the interstitial ad when you navigate to the next page. Here's how it looks:
+TK
 
-![Showing interstitial ad when navigating to next page](imgs/showing-intersitial-when-navigating.avif)
-
-On the first page, trigger the **Load Interstitial Ad** action when the page is loaded. On tap of a widget, add the **Show Interstitial Ad** action. This action gives the result of whether the ad is dismissed or not inside the `interstitialAdSuccess` variable. If this is true, you can load the ad again and then navigate to the next page.
+On the first page, trigger the **Load Interstitial Ad** action as soon as the page loads. Then, on a widget tap, add the **Show Interstitial Ad** action. The result of whether the ad is dismissed will be stored in the `interstitialAdSuccess` variable. If this value is true (the ad was dismissed), you can load a new ad and proceed to navigate to the next page.
 
 Here are the step-by-step instructions:
 
-1. [Getting Ad Unit ID](#1-getting-ad-unit-id)
-2. [Adding pages](#2-adding-pages)
-3. [Loading ad on page load](#3-loading-ad-on-page-load)
-4. [Display ad](#4-display-ad)
-
 ### 1. Getting Ad Unit ID
 
-The Ad Unit ID is the unique identifier given to every ad on Admob. You can get this by creating a new Interstitial ad unit from your Admob account.
+The Ad Unit ID is the unique identifier given to every ad on Admob. You can get this by creating a new Interstitial ad unit from your Admob account. You’ll need this ID when loading the ad.
 
-:::info
-This will be needed when you load the ad.
+To get the ad unit ID, go to the AdMob dashboard, select your app under **Apps**, and create an **Interstitial** ad unit by following the steps under **Ad units**. Once created, copy the ad unit ID, and repeat the process for the iOS version if needed.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/2wSXjAoYe6V4y1pZKLyB?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### 2. Loading Ad on page load
+
+Always load the ad in advance before you intend to display it. This ensures the ad has enough time to fully load its content, whether it's an image or video, before being shown. The best place to do it is the **On Page Load**.
+
+To load the ad when the page loads, select the page, add the **On Page Load** action trigger, and set the action to **Load Interstitial Ad**. Enter the iOS and Android **Ad Unit ID**s you obtained in [step 1](#1-getting-ad-unit-id).
+
+:::tip
+
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to [**enable Test Ads during development**](#enable-test-ads).
+
 :::
 
-To get the ad unit Id:
-
-1. Go to the Admob account dashboard, click **Apps** on the left side menu and select your app.
-2. Select **Ad units** and then click on the **Add add unit**.
-3. Select the **Interstitial** Ad.
-4. Enter the **Ad unit name**.
-5. Click **Create ad unit**.
-6. Copy the ad unit ID (the second one) and then click **Done**.
-7. Similarly, create and copy Ad unit for the iOS app as well.
-
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/pdhDPc4jY5o3nd47Iyyc?embed&show_copy_link=true"
+        src="https://demo.arcade.software/6EsZj1z7A2tUSOnYUzrw?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -372,34 +247,9 @@ To get the ad unit Id:
 </div>
 <p></p>
 
-### 2. Adding pages
+### 3. Display Ad
 
-:::info
-You can skip this step if you already have a few pages with proper navigation.
-:::
-
-Let's add two sample pages from the templates as shown below:
-
-<Tabs>
-<TabItem value="1" label="First Page" default>
-![first-page](imgs/first-page.avif)
-</TabItem>
-<TabItem value="2" label="Second Page">
-![second-page](imgs/second-page.avif)
-</TabItem>
-</Tabs>
-
-### 3. Loading ad on page load
-
-You should always load the ad ahead of time before you intend to show it. This allows an ad to fully load its content (image or video) before you show it. The best place to do it is the On Page Load.
-
-To load the ad on page load:
-
-1. Select the **Page**.
-2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
-    1. Search and select **Load Interstitial Ad** (under *Integrations > Admob*) action.
-    2. If you click too many live ads, your AdMob account may get flagged for invalid activity. Hence, the **Show Test Ads** option is enabled by default. You should keep it enabled as long as you are building the app. Only disable it when you are about to publish your app.
-    3. Enter the iOS and Android Ad Unit ID obtained in [step 1](#1-getting-ad-unit-id).
+Now, you can display the ad using the **Show Interstitial Ad** action. This action returns `interstitialAdSuccess` (as an action output variable), which can be used to check if the user has dismissed the ad. If the ad is dismissed, load a new one and then proceed to navigate to the next page.
 
 <div style={{
     position: 'relative',
@@ -407,7 +257,7 @@ To load the ad on page load:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/UcgFTZurQPXXud7WLyzD?embed&show_copy_link=true"
+        src="https://demo.arcade.software/4DUgIr5gJGDY7P6yixLH?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -427,53 +277,30 @@ To load the ad on page load:
 </div>
 <p></p>
 
-### 4. Display Ad
+## Enable Test Ads
 
-In this step, you will show the ad plus check if a user has dismissed the ad. If so, you will load the new ad and then move to the next page.
+To avoid the risk of your AdMob account being banned, it's essential to display **Test Ads** during app development. Test ads are placeholders provided by AdMob that simulate real ads without impacting your account or violating AdMob's policies. Failing to do so may lead to your account being flagged for invalid ad activity, as live ads are not meant to be interacted with in a testing environment.
 
-The steps to display an interstitial ad are as follows:
+To enable test ads, simply leave the ad unit IDs empty. Once your app is ready for production, you can disable test ads by adding the actual ad unit IDs to serve real ads.
 
-1. Select the **Widget** (e.g., ListTile) on which you want to define the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
-3. Click on the **+ Add Action**.
-4. On the right side, search and select the **Show Interstitial Ad** (under *Integrations > Admob*) action.
-5. By default, the action output variable name is set to **interstitialAdSuccess**. This will be used to check if a user has dismissed the ad.
-6. Click on the plus button and select the **Add Conditional**.
-7. On the right side (**Set Condition for Action**), select the **Action Output > interstitialAdSuccess** (action output variable name).
-    1. Under the **TRUE** section, add **Load Interstitial Ad** and provide the Ad Unit IDs. This means a user has dismissed the ad, and it will load a new ad.
-    2. Under the **False** section, you can add an action to show the snackbar with a failure message.
-8. In the end, add an action to [navigate](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) to the next page.
+![enable-test-ads.avif](imgs/enable-test-ads.avif)
 
+## Best Practices
 
-<Tabs>
-<TabItem value="1" label="Action flow for displaying interstitial Ad" default>
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HXXxlkxn9FtIo0EepzAp?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-</TabItem>
-<TabItem value="2" label="Final action flow for displaying interstitial Ad">
-![final-action-flow-displaying-interstitial-ad](imgs/final-action-flow-displaying-interstitial-ad.png)
-</TabItem>
-</Tabs>
+To maximize the effectiveness of AdMob ads in your app while maintaining a positive user experience and complying with AdMob policies, follow these overall best practices:
+
+1. **Use Test Ads During Development**: Always [enable Test Ads](#enable-test-ads) during development to avoid invalid traffic and protect your AdMob account from being flagged or banned.
+2. **Comply with AdMob Policies**: Adhere strictly to AdMob’s guidelines regarding ad placement, frequency, and user interaction. This includes avoiding accidental clicks and ensuring that ads are not too intrusive. Learn more about [AdMob Policies & Restrictions](https://support.google.com/admob/answer/6128543?hl=en).
+3. **Respect User Privacy**: Follow data privacy regulations (e.g., GDPR, CCPA) and give users control over their ad preferences by integrating privacy options. Learn more about [AdMob Privacy & Consent](https://support.google.com/admob/answer/7676680?hl=en)
+
+### AdBanner Best Practices
+
+1. **Strategic Placement**: Position AdBanner widgets in non-intrusive areas of the app, such as at the bottom or top of the screen, so they don’t interfere with the user’s interaction with the app’s core content. Learn more about [Banner Ad Placement Guide](https://support.google.com/admob/answer/6128877?hl=en).
+2. **Avoid Clickbait**: Make sure the banner ad does not blend too much with the app content. Users should easily differentiate between the ad and the app’s content to avoid accidental clicks.
+
+### Interstitial Ad Best Practices
+
+1. **Loading Ads in Advance**: Interstitial ads should be loaded before they are needed, typically in the background, to avoid delays when it’s time to display the ad.
+2. **Displaying at the Right Time**: Ensure ads are shown at natural transition points. Showing ads in the middle of an activity can disrupt the user experience.
+3. **Monitoring Frequency**: Overuse of interstitial ads can lead to a negative user experience. It's recommended to show them sparingly and at appropriate times.
+4. **Test Before Production**: [Use test ads](#enable-test-ads) during development to ensure that your implementation is correct and that you don’t accidentally trigger invalid ad interactions, which could lead to an AdMob account suspension.
