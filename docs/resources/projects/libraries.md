@@ -228,15 +228,15 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Values
 
-**Library values** are essentially variables created and used by a library publisher and intended to have their values set by the library consumer. These values allow library publishers to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow consumers to input specific data required for the library to function properly in their project.
+**Library values** are essentially variables created and used by a library author and intended to have their values set by the library user. These values allow library author to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow library users to input specific data required for the library to function properly in their project.
 
-For example, If someone has built a library that uses OpenAI API, they would define a Library Value for the OpenAI API key. As the consumer of the library, when you import, you must provide your own API key to ensure the library functions properly.
+For example, If someone has built a library that uses OpenAI API, they would define a Library Value for the OpenAI API key. As the user of the library, when you import, you must provide your own API key to ensure the library functions properly.
 
-By using Library Values, the publisher allows consumers to adapt the library to their own configurations without hardcoding sensitive or project-specific data, like API keys, into the library itself.
+By using Library Values, the library author allows users to adapt the library to their own configurations without hardcoding sensitive or project-specific data, like API keys, into the library itself.
 
-### Create Library Values as Publisher
+### Create Library Values as Author
 
-The publisher defines the variable name, data type (e.g., string, enum), whether the variable is nullable, and an optional default value.
+The library author defines the variable name, data type (e.g., string, enum), whether the variable is nullable, and an optional default value.
 
 To create library values, navigate to **Settings and Integrations > App Settings > Publish as Library > Library Values** section and click **+ Add Value**. 
 
@@ -270,12 +270,12 @@ To create library values, navigate to **Settings and Integrations > App Settings
 After setting Library Values, they function just like any other variable in FlutterFlow. You can bind them to components, actions, API calls, or any property that allows you to configure dynamic values across your library project. You can access Library Values via the ****Set from Variable**** menu.
 
 :::tip
-Library values are used only within the library project and are not available for use in the consumer project. The library consumer can only set their values.
+Library values are used only within the library project and are not available for use in the project that imports it. The library user can only set their values.
 :::
 
 ![access-library-values](imgs/access-library-values.avif)
 
-### Set Library Values as Consumer
+### Set Library Values as User
 
 To set library values, navigate to **Settings and Integrations > Project Setup > Project Dependencies** page. When you import a library, you'll be prompted to set values for required Library Values. If the library has already been added, click on **View Details**, which will open a dialog and then you can enter a value.
 
