@@ -26,6 +26,7 @@ Learn [**how to create a team**](../../accounts-billing/subscriptions/flutterflo
 
 ## Team code
 
+
 :::warning
 **Team Code Libraries are now deprecated**. Please use the new [**Libraries**](../../resources/projects/libraries.md) to share and reuse projects across multiple projects.
 :::
@@ -150,7 +151,11 @@ The shared media assets will have the 'teams' icon at the bottom right side.
 
 A company may have a website, a mobile app, and a desktop app, each with its own user interface and user experience. In such a case, rather than creating the same UI configuration for each project, creating a shared design system can help speed up the work and ensure consistency across all projects.
 
-A design system includes colors, typography, fonts, icons, app assets, a nav bar, and an app bar, as well as pre-designed UI components such as buttons and text widgets.
+A design system includes colors, typography, fonts, icons, app assets, a nav bar, and an app bar.
+
+:::tip
+To store pre-designed UI components, we highly recommend using [**Libraries**](../../resources/projects/libraries.md) for easy reuse across projects.
+:::
 
 Here's how you can share the design library:
 
