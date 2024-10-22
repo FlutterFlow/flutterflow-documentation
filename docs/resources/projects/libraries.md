@@ -37,6 +37,14 @@ With Libraries, you can publish the complete FlutterFlow project as a library an
 
 ## Publishing a Library
 
+To make the resources in your project available for others to use, publish your project as Library. 
+
+When you publish your project as a Library, your project will become a **Library Project**, and [certain features](#disabled-features-in-a-library) will no longer be available. 
+
+:::note 
+When you publish your project as Library, it can not be reverted. If you want to restore your project so that it is no longer a Library, you can clone the project. However, things like your deployment and Firestore settings will be cleared. If you want to preserve the state of your project before turning it into a Library, you should clone it first and then publish.
+:::
+
 To publish a FlutterFlow project as a library, start by creating a FlutterFlow project as you normally would, then follow these steps:
 
 <div style={{
@@ -78,7 +86,7 @@ When a project is converted into a library, the following features are disabled 
 
 - App settings 
   - Firebase 
-  - Development environment
+  - Development environments
   - Authentication
   - Push notifications 
   - Mobile deployment 
