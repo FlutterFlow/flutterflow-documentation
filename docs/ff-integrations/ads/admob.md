@@ -88,7 +88,9 @@ To do so, get the app key from the AdMob App Settings, navigate to **Settings an
 
 Below are some AdMob settings (under **Settings and Integrations** menu) that you might need to configure based on your app and target audience.
 
-- **Show Test Ads**: To enable test ads during development, enable this option. This allows you to click on ads without charging Google advertisers and prevents your account from being flagged for invalid activity.
+- **Show Test Ads**: Test ads are placeholders provided by AdMob that simulate real ads. To enable test ads during development, enable this option. This allows you to click on ads without charging Google advertisers and prevents your account from being flagged for invalid activity. Once your app is ready for production, you can disable this setting to serve real ads.
+
+
 - **Show GDPR Consent Dialog at App Launch**: To display the GDPR consent dialog for users in the European Union (EU), enable this option. **Note that** the dialog will only appear if the user is from the EU and you created a [European regulations message](https://support.google.com/admob/answer/10113207).
 - **Child-Directed Settings**: To indicate that your content is directed towards children, enable this option. This will ensure that Google treats your content as child-directed when making ad requests.
 - **Users Under the Age of Consent**: This setting allows you to comply with privacy regulations for users in the European Economic Area (EEA) who are under the age of consent. It ensures that ad requests are appropriately handled, limiting data collection and targeting to meet legal requirements. This is important to protect user privacy and to avoid penalties for non-compliance.
@@ -115,7 +117,7 @@ First, add the **AdBanner** widget from the **Base Elements**. Next, create a ne
 
 :::tip
 
-While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to [**enable Test Ads during development**](#enable-test-ads).
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development.
 
 :::
 
@@ -217,7 +219,7 @@ To load the ad when the page loads, select the page, add the **On Page Load** ac
 
 :::tip
 
-While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to [**enable Test Ads during development**](#enable-test-ads).
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development.
 
 :::
 
@@ -277,19 +279,11 @@ Now, you can display the ad using the **Show Interstitial Ad** action. This acti
 </div>
 <p></p>
 
-## Enable Test Ads
-
-To avoid the risk of your AdMob account being banned, it's essential to display **Test Ads** during app development. Test ads are placeholders provided by AdMob that simulate real ads without impacting your account or violating AdMob's policies. Failing to do so may lead to your account being flagged for invalid ad activity, as live ads are not meant to be interacted with in a testing environment.
-
-To enable test ads, simply leave the ad unit IDs empty. Once your app is ready for production, you can disable test ads by adding the actual ad unit IDs to serve real ads.
-
-![enable-test-ads.avif](imgs/enable-test-ads.avif)
-
 ## Best Practices
 
 To maximize the effectiveness of AdMob ads in your app while maintaining a positive user experience and complying with AdMob policies, follow these overall best practices:
 
-1. **Use Test Ads During Development**: Always [enable Test Ads](#enable-test-ads) during development to avoid invalid traffic and protect your AdMob account from being flagged or banned.
+1. **Use Test Ads During Development**: Always enable Test Ads during development to avoid invalid traffic and protect your AdMob account from being flagged or banned.
 2. **Comply with AdMob Policies**: Adhere strictly to AdMob’s guidelines regarding ad placement, frequency, and user interaction. This includes avoiding accidental clicks and ensuring that ads are not too intrusive. Learn more about [AdMob Policies & Restrictions](https://support.google.com/admob/answer/6128543?hl=en).
 3. **Respect User Privacy**: Follow data privacy regulations (e.g., GDPR, CCPA) and give users control over their ad preferences by integrating privacy options. Learn more about [AdMob Privacy & Consent](https://support.google.com/admob/answer/7676680?hl=en)
 
@@ -303,4 +297,4 @@ To maximize the effectiveness of AdMob ads in your app while maintaining a posit
 1. **Loading Ads in Advance**: Interstitial ads should be loaded before they are needed, typically in the background, to avoid delays when it’s time to display the ad.
 2. **Displaying at the Right Time**: Ensure ads are shown at natural transition points. Showing ads in the middle of an activity can disrupt the user experience.
 3. **Monitoring Frequency**: Overuse of interstitial ads can lead to a negative user experience. It's recommended to show them sparingly and at appropriate times.
-4. **Test Before Production**: [Use test ads](#enable-test-ads) during development to ensure that your implementation is correct and that you don’t accidentally trigger invalid ad interactions, which could lead to an AdMob account suspension.
+4. **Test Before Production**: Use test ads during development to ensure that your implementation is correct and that you don’t accidentally trigger invalid ad interactions, which could lead to an AdMob account suspension.
