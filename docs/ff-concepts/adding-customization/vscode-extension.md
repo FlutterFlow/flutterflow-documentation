@@ -229,3 +229,42 @@ To delete a Custom Action or Widget, delete the associated file.
 You can add custom [pub.dev](https://pub.dev/) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
 
 
+## FAQs
+<details>
+<summary>How do I download code from the Beta or Enterprise version of FlutterFlow?</summary>
+<p>
+If you're using a different version of FlutterFlow, such as *Beta* or *Enterprise*, you can override the URL by modifying the **Extension Settings > settings.json** file.
+
+For example:
+
+- For the **Beta** version, set the `flutterflow.urlOverride` value to `https://api-beta.flutterflow.io/v1`.
+- For the **Enterprise** version, set the `flutterflow.urlOverride` value to `https://api-enterprise-[region].flutterflow.io` (replace [region] with your specific region).
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/nt5zn8DE5GxLPbKeZVL3?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+</p>
+</details>

@@ -119,7 +119,7 @@ Additionally, you must manually set up [**Firestore rules**](../../ff-integratio
 The data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected.
 :::
 
-#### Comnfiguring Supabase
+#### Configuring Supabase
 If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment. 
 
 Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, and then configure the Supabase properties to point to these newly created values. Below is an example of how it would look like.
