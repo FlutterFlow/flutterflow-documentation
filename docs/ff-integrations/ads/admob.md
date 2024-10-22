@@ -171,9 +171,9 @@ First, load the ad using the **Load Interstitial Ad** action, then display it wi
 
 :::
 
-Let's see an example displaying the interstitial ad when you navigate to the next page like this:
+Let's see an example displaying the interstitial ad when you navigate to the next page:
 
-TK
+![interstitial-ad-flow-2](imgs/interstitial-ad-flow-2.avif)
 
 On the first page, trigger the **Load Interstitial Ad** action as soon as the page loads. Then, on a widget tap, add the **Show Interstitial Ad** action. The result of whether the ad is dismissed will be stored in the `interstitialAdSuccess` variable. If this value is true (the ad was dismissed), you can load a new ad and proceed to navigate to the next page.
 
