@@ -6,11 +6,9 @@ sidebar_position: 1
 
 # Properties Panel
 
+In FlutterFlow, the properties panel on the right helps you set up and manage your pages. It opens when you click on the root element in the [Widget Tree](../widgets/intro-widgets.md#widget-tree) (on the left).
 
-In FlutterFlow, the properties panel located on the right side of the interface
-plays a crucial role in configuring and managing the various aspects of your
-pages. This panel is divided into several sections, each dedicated to different
-settings and adjustments you can make to customize your pages.
+The panel is organized into sections, each focusing on different settings to customize your pages.
 
 Here’s a detailed look at what you can typically find and modify in this panel:
 ![props-panel.png](../imgs/props-panel.png)

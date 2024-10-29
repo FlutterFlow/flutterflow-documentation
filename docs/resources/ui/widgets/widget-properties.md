@@ -6,16 +6,9 @@ sidebar_position: 2
 
 # Properties Panel
 
-In FlutterFlow, the Properties Panel located on the right side of the interface plays a crucial role
-in configuring and managing the various aspects of your widgets. This panel is divided into several
-sections, each dedicated to different settings and adjustments you can make to customize your
-widgets.
+In FlutterFlow, the Properties Panel on the right helps you configure and manage your widgets. It opens when you click on a widget or [component](../components/intro-components.md) in the [**Widget Tree**](../widgets/intro-widgets.md#widget-tree).
 
-## Widget Properties
-
-When you click on a widget from the Widget Tree, the **Widget Properties Panel** opens up on the
-right side. There you can customize the properties for the selected widget, which may vary
-based on the type of widget and also add other advanced configurations to the widget.
+The panel is divided into sections, each focusing on settings specific to the selected widget. The available options may vary depending on the widget type, with additional advanced configurations available for further customization.
 
 ![advanced-configs-widgets.png](../imgs/advanced-configs-widgets.png)
 
