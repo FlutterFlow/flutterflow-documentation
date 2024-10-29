@@ -7,7 +7,7 @@ sidebar_position: 1
 # Introduction to Pages
 
 
-In FlutterFlow, each **Page** you create is fundamentally structured using a **Scaffold**, a [foundational widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html) that provides a structured layout for your app. The Scaffold offers essential elements like the AppBar, Floating Action Button (FAB), Drawer, and Body, allowing you to easily organize and design your pages.
+In FlutterFlow, a **Page** represents a single screen in your app. Under-the-hood pages use a **Scaffold**, a [foundational widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html) that provides a structured layout for a screen within your app. The Scaffold offers essential elements like the AppBar and Body, allowing you to easily build screens.
 
 :::info
 For more details on how to use Scaffold and the various Page Elements in FlutterFlow, see the dedicated **[Page Elements](page-elements.md)** guide.
@@ -15,20 +15,21 @@ For more details on how to use Scaffold and the various Page Elements in Flutter
 
 
 
-
 ## Creating a Page
 
-In FlutterFlow, you can craft a page tailored to your expertise, design preferences, or specific
-use case needs. Whether you're starting from scratch, using a template, or leveraging AI tools,
+In FlutterFlow, you can seamlessly craft a page tailored to your needs and design preferences.
+Whether you're starting from scratch, using a template, or leveraging AI tools,
 there are several pathways to achieve the desired functionality and aesthetic of your desired Page.
 
-FlutterFlow allows you to easily create new pages using the "Add Page, Component, or Flow" button, which is available from the Pages view. This will help you
-quickly start and add new pages to your app.
 
 :::tip[Generated Code]
 When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/page-model.md).
 :::
 
+
+FlutterFlow allows you to easily create new pages using the **Add Page, Component, or Flow** button, 
+which is available from the **Page Selector** tab in the **Navgation Menu**. This will help you
+quickly start and add new pages to your app.
 
 <img src="/img/page-selector.png" width="50%" />
 
