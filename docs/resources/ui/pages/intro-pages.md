@@ -6,13 +6,15 @@ sidebar_position: 1
 
 # Introduction to Pages
 
-
 In FlutterFlow, a **Page** represents a single screen in your app. Under-the-hood pages use a **Scaffold**, a [foundational widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html) that provides a structured layout for a screen within your app. The Scaffold offers essential elements like the AppBar and Body, allowing you to easily build screens.
+
+Pages are composed of various UI elements, or widgets. Widgets are added to a page when they are added to the page's **Widget Tree**. 
+
+In FlutterFlow, pages are automatically configured to handle [routing](https://docs.flutterflow.io/resources/ui/pages/properties#route-settings). Additionally, pages can have [input parameters](https://docs.flutterflow.io/resources/ui/pages/properties#page-parameters) and [state variables](https://docs.flutterflow.io/resources/ui/pages/page-lifecycle#page-state). 
 
 :::info
 For more details on how to use Scaffold and the various Page Elements in FlutterFlow, see the dedicated **[Page Elements](page-elements.md)** guide.
 :::
-
 
 
 ## Creating a Page
@@ -21,11 +23,9 @@ In FlutterFlow, you can seamlessly craft a page tailored to your needs and desig
 Whether you're starting from scratch, using a template, or leveraging AI tools,
 there are several pathways to achieve the desired functionality and aesthetic of your desired Page.
 
-
 :::tip[Generated Code]
 When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/page-model.md).
 :::
-
 
 FlutterFlow allows you to easily create new pages using the **Add Page, Component, or Flow** button, 
 which is available from the **Page Selector** tab in the **Navgation Menu**. This will help you
