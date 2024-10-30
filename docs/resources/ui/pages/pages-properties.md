@@ -11,7 +11,7 @@ In FlutterFlow, the properties panel on the right helps you set up and manage yo
 The panel is organized into sections, each focusing on different settings to customize your pages.
 
 Here’s a detailed look at what you can typically find and modify in this panel:
-![props-panel.png](../imgs/props-panel.png)
+![page-properties-panel.avif](../imgs/page-properties-panel.avif)
 
 ### Page Parameters
 
