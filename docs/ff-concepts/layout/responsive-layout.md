@@ -85,7 +85,7 @@ For `Row 2`, set its Expansion property to *Flexible* (the middle icon) and assi
 
 ![test-expansion.avif](imgs/test-expansion.avif)
 
-I encourage you to test with different web dimensions and sizes to see how well this adapts.
+We encourage you to test with different web dimensions and sizes to see how well this adapts.
 
 Depending on your design needs, there are various approaches to managing space. Let's consider a different scenario: What if we want the searchBar to always occupy 40% of the screen width, with `Row 2` taking up the remaining space after placing the `searchBar` and `search IconButton`?
 
