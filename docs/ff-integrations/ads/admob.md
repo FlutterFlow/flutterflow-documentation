@@ -111,7 +111,7 @@ The **AdBanner** widget displays advertisement banners within your app. It can f
 
 To display an **AdBanner** from AdMob, follow these steps:
 
-### 1. Adding AdBanner widget
+### Adding AdBanner widget
 
 First, add the **AdBanner** widget from the **Base Elements**. Next, create a new Banner Ad unit in AdMob, then copy and paste its **unit ID** into FlutterFlow. The Ad unit ID is a unique identifier assigned to each ad created in AdMob.
 
@@ -147,7 +147,7 @@ While building your app, clicking on too many ads may cause your AdMob account t
 </div>
 <p></p>
 
-### 2. Testing
+### Testing AdBanner
 
 Ads cannot be tested in Test or Run Mode. They can only be tested on a real device or emulator. To do this, you can use [Local run](../../testing-deployment-publishing/running-your-app/local-run.md) or [download the code](../../testing-deployment-publishing/exporting-code/ff-cli.md) and run it in your IDE.
 
@@ -179,7 +179,7 @@ On the first page, trigger the **Load Interstitial Ad** action as soon as the pa
 
 Here are the step-by-step instructions:
 
-### 1. Getting Ad Unit ID
+### Getting Ad Unit ID
 
 The Ad Unit ID is the unique identifier given to every ad on Admob. You can get this by creating a new Interstitial ad unit from your Admob account. You’ll need this ID when loading the ad.
 
@@ -211,7 +211,7 @@ To get the ad unit ID, go to the AdMob dashboard, select your app under **Apps**
 </div>
 <p></p>
 
-### 2. Loading Ad on page load
+### Loading Ad on Page Load
 
 Always load the ad in advance before you intend to display it. This ensures the ad has enough time to fully load its content, whether it's an image or video, before being shown. The best place to do it is the **On Page Load**.
 
@@ -249,7 +249,7 @@ While building your app, clicking on too many ads may cause your AdMob account t
 </div>
 <p></p>
 
-### 3. Display Ad
+### Display Interstitial Ad
 
 Now, you can display the ad using the **Show Interstitial Ad** action. This action returns `interstitialAdSuccess` (as an action output variable), which can be used to check if the user has dismissed the ad. If the ad is dismissed, load a new one and then proceed to navigate to the next page.
 
