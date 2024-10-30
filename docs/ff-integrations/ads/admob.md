@@ -215,7 +215,7 @@ To get the ad unit ID, go to the AdMob dashboard, select your app under **Apps**
 
 Always load the ad in advance before you intend to display it. This ensures the ad has enough time to fully load its content, whether it's an image or video, before being shown. The best place to do it is the **On Page Load**.
 
-To load the ad when the page loads, select the page, add the **On Page Load** action trigger, and set the action to **Load Interstitial Ad**. Enter the iOS and Android **Ad Unit ID**s you obtained in [step 1](#1-getting-ad-unit-id).
+To load the ad when the page loads, select the page, add the **On Page Load** action trigger, and set the action to **Load Interstitial Ad**. Enter the iOS and Android **Ad Unit ID**s you obtained in [step 1](#getting-ad-unit-id).
 
 :::tip
 
