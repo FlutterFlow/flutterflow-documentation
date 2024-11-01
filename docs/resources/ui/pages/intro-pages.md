@@ -10,6 +10,10 @@ In FlutterFlow, a **Page** represents a single screen in your app. Under-the-hoo
 
 Pages are composed of various UI elements, or widgets. Widgets are added to a page when they are added to the page's **Widget Tree**. 
 
+:::note[Widget Tree]
+The **Widget Tree** is a structural representation of how widgets are organized within a Page. To learn more, check out the [**Widget Overview**](../widgets/intro-widgets.md#widget-tree) documentation.
+:::
+
 In FlutterFlow, pages are automatically configured to handle [routing](https://docs.flutterflow.io/resources/ui/pages/properties#route-settings). Additionally, pages can have [input parameters](https://docs.flutterflow.io/resources/ui/pages/properties#page-parameters) and [state variables](https://docs.flutterflow.io/resources/ui/pages/page-lifecycle#page-state). 
 
 :::info

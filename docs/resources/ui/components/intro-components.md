@@ -9,6 +9,8 @@ slug: /resources/ui/components
 Components in FlutterFlow are reusable widgets. You design the widget once and can use it throughout your app
 to save time, ensure consistency, and make it easier to maintain.
 
+When you add a component to a [**Page**](../pages/intro-pages.md), it becomes part of that page's **[Widget Tree](../widgets/intro-widgets.md#widget-tree)**. This allows the component to interact with other widgets, inherit properties, and respond to state changes as part of the page's structure.
+
 Components help in the following ways:
 
 - **Consistency:** Components provide a consistent look and behavior, reducing the likelihood of
@@ -20,7 +22,7 @@ Components help in the following ways:
   app automatically reflect those changes. This significantly reduces the effort required to
   maintain and update the app.
 
-  :::tip[CLasses vs Instances]
+  :::info[CLasses vs Instances]
   Learn more about **[Classes and their Instances](../overview.md)** and what they mean in
   FlutterFlow.
   :::
