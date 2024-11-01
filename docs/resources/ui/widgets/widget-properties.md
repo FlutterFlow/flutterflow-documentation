@@ -8,6 +8,34 @@ sidebar_position: 2
 
 In FlutterFlow, the Properties Panel on the right helps you configure and manage your widgets. It opens when you click on a widget or [component](../components/intro-components.md) in the [**Widget Tree**](../widgets/intro-widgets.md#widget-tree).
 
+Here's a quick demo showing how to add a widget to the canvas, which opens the widget properties panel on the right, allowing you to update the widget's properties:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/pHghP4lV54SC3RqwCWBt?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 The panel is divided into sections, each focusing on settings specific to the selected widget. The available options may vary depending on the widget type, with additional advanced configurations available for further customization.
 
 ![advanced-configs-widgets.png](../imgs/advanced-configs-widgets.png)
