@@ -111,11 +111,16 @@ Once the setup is completed, you can start to display [AdBanner](#adbanner) or [
 
 The **AdBanner** widget displays advertisement banners within your app. It can feature text, images, and rich media, including video ads.
 
+Here's an example for AdBanner widget with a test ad:
+![adbanner-widget-with-test-ad](imgs/adbanner-widget-with-test-ad.avif)
+
 To display an **AdBanner** from AdMob, follow these steps:
 
 ### Adding AdBanner widget
 
 First, add the **AdBanner** widget from the **Base Elements**. Next, create a new Banner Ad unit in AdMob, then copy and paste its **unit ID** into FlutterFlow. The Ad unit ID is a unique identifier assigned to each ad created in AdMob.
+
+
 
 :::info
 By default, ad banners are set to a dimension of 100 (width) x 50 (height).
@@ -149,8 +154,7 @@ By default, ad banners are set to a dimension of 100 (width) x 50 (height).
 
 :::tip
 
-While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development. Here's how the AdBanner widget with test ads look like:
-![adbanner-widget-with-test-ad](imgs/adbanner-widget-with-test-ad.avif)
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development. 
 :::
 
 ### Testing AdBanner
