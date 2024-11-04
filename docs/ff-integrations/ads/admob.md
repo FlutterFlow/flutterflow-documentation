@@ -88,6 +88,8 @@ To do so, get the app key from the AdMob App Settings, navigate to **Settings an
 
 Below are some AdMob settings (under **Settings and Integrations** menu) that you might need to configure based on your app and target audience.
 
+![admob-settings](imgs/admob-settings.avif)
+
 - **Show Test Ads**: Test ads are placeholders provided by AdMob that simulate real ads. To enable test ads during development, enable this option. This allows you to click on ads without charging Google advertisers and prevents your account from being flagged for invalid activity. Once your app is ready for production, you can disable this setting to serve real ads.
 
 
@@ -115,10 +117,8 @@ To display an **AdBanner** from AdMob, follow these steps:
 
 First, add the **AdBanner** widget from the **Base Elements**. Next, create a new Banner Ad unit in AdMob, then copy and paste its **unit ID** into FlutterFlow. The Ad unit ID is a unique identifier assigned to each ad created in AdMob.
 
-:::tip
-
-While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development.
-
+:::info
+By default, ad banners are set to a dimension of 100 (width) x 50 (height).
 :::
 
 <div style={{
@@ -146,6 +146,12 @@ While building your app, clicking on too many ads may cause your AdMob account t
     </iframe>
 </div>
 <p></p>
+
+:::tip
+
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development. Here's how the AdBanner widget with test ads look like:
+![adbanner-widget-with-test-ad](imgs/adbanner-widget-with-test-ad.avif)
+:::
 
 ### Testing AdBanner
 
@@ -283,18 +289,18 @@ Now, you can display the ad using the **Show Interstitial Ad** action. This acti
 
 To maximize the effectiveness of AdMob ads in your app while maintaining a positive user experience and complying with AdMob policies, follow these overall best practices:
 
-1. **Use Test Ads During Development**: Always enable Test Ads during development to avoid invalid traffic and protect your AdMob account from being flagged or banned.
-2. **Comply with AdMob Policies**: Adhere strictly to AdMob’s guidelines regarding ad placement, frequency, and user interaction. This includes avoiding accidental clicks and ensuring that ads are not too intrusive. Learn more about [AdMob Policies & Restrictions](https://support.google.com/admob/answer/6128543?hl=en).
-3. **Respect User Privacy**: Follow data privacy regulations (e.g., GDPR, CCPA) and give users control over their ad preferences by integrating privacy options. Learn more about [AdMob Privacy & Consent](https://support.google.com/admob/answer/7676680?hl=en)
+- **Use Test Ads During Development**: Always enable Test Ads during development to avoid invalid traffic and protect your AdMob account from being flagged or banned.
+- **Comply with AdMob Policies**: Adhere strictly to AdMob’s guidelines regarding ad placement, frequency, and user interaction. This includes avoiding accidental clicks and ensuring that ads are not too intrusive. Learn more about [AdMob Policies & Restrictions](https://support.google.com/admob/answer/6128543?hl=en).
+- **Respect User Privacy**: Follow data privacy regulations (e.g., GDPR, CCPA) and give users control over their ad preferences by integrating privacy options. Learn more about [AdMob Privacy & Consent](https://support.google.com/admob/answer/7676680?hl=en)
 
 ### AdBanner Best Practices
 
-1. **Strategic Placement**: Position AdBanner widgets in non-intrusive areas of the app, such as at the bottom or top of the screen, so they don’t interfere with the user’s interaction with the app’s core content. Learn more about [Banner Ad Placement Guide](https://support.google.com/admob/answer/6128877?hl=en).
-2. **Avoid Clickbait**: Make sure the banner ad does not blend too much with the app content. Users should easily differentiate between the ad and the app’s content to avoid accidental clicks.
+- **Strategic Placement**: Position AdBanner widgets in non-intrusive areas of the app, such as at the bottom or top of the screen, so they don’t interfere with the user’s interaction with the app’s core content. Learn more about [Banner Ad Placement Guide](https://support.google.com/admob/answer/6128877?hl=en).
+- **Avoid Clickbait**: Make sure the banner ad does not blend too much with the app content. Users should easily differentiate between the ad and the app’s content to avoid accidental clicks.
 
 ### Interstitial Ad Best Practices
 
-1. **Loading Ads in Advance**: Interstitial ads should be loaded before they are needed, typically in the background, to avoid delays when it’s time to display the ad.
-2. **Displaying at the Right Time**: Ensure ads are shown at natural transition points. Showing ads in the middle of an activity can disrupt the user experience.
-3. **Monitoring Frequency**: Overuse of interstitial ads can lead to a negative user experience. It's recommended to show them sparingly and at appropriate times.
-4. **Test Before Production**: Use test ads during development to ensure that your implementation is correct and that you don’t accidentally trigger invalid ad interactions, which could lead to an AdMob account suspension.
+- **Loading Ads in Advance**: Interstitial ads should be loaded before they are needed, typically in the background, to avoid delays when it’s time to display the ad.
+- **Displaying at the Right Time**: Ensure ads are shown at natural transition points. Showing ads in the middle of an activity can disrupt the user experience.
+- **Monitoring Frequency**: Overuse of interstitial ads can lead to a negative user experience. It's recommended to show them sparingly and at appropriate times.
+- **Test Before Production**: Use test ads during development to ensure that your implementation is correct and that you don’t accidentally trigger invalid ad interactions, which could lead to an AdMob account suspension.
