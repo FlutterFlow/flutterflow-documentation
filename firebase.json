@@ -2294,6 +2294,11 @@
         "type": 301
       },
       {
+        "source": "/building-your-ui/ui-builder/properties-panel",
+        "destination": "/resources/ui/widgets/properties",
+        "type": 301
+      },
+      {
         "source": "/concepts/multiple-languages",
         "destination": "/concepts/localization",
         "type": 301
