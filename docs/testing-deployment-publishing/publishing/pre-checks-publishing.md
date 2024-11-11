@@ -21,7 +21,7 @@ Here’s a comprehensive list of these prechecks:
 5. **Accessibility Checks**: Add semantic labels to make the app more accessible to users with disabilities by providing meaningful descriptions.
 6. **Security Measures**: Make sure all data handling practices comply with legal standards, including GDPR if applicable. Use HTTPS for all network connections and ensure that sensitive data is encrypted.
 7. **Compliance with Store Guidelines**: Review the submission guidelines for [Apple’s App Store](https://developer.apple.com/app-store/review/guidelines/) and [Google Play Store](https://play.google/developer-content-policy/). Check for any specific requirements such as app metadata, privacy policies, and minimum functionality.
-8. **Localization and Internationalization**: If your app targets users in multiple countries, consider [adding multi-language](../../ff-concepts/localization-accessibility/add-multiple-languages.md) support.
+8. **Localization and Internationalization**: If your app targets users in multiple countries, consider [adding multi-language](../../ff-concepts/localization-accessibility/localization.md) support.
 9. **License and Third-Party Attributions**: Adhere to licenses and include necessary attributions for third-party libraries and assets.
 10. **Prepare Marketing Assets**: Prepare all the necessary marketing assets, such as screenshots, app icons, and promotional text. You can easily [generate screenshots](../publishing/pre-checks-publishing.md#generate-screenshots) right within FlutterFlow.
 

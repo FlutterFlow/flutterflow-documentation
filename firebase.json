@@ -2292,6 +2292,16 @@
         "source": "/firebase-setup",
         "destination": "/integrations/firebase/connect-to-firebase",
         "type": 301
+      },
+      {
+        "source": "/concepts/multiple-languages",
+        "destination": "/concepts/localization",
+        "type": 301
+      },
+      {
+        "source": "/concepts/multiple-languages/language-selector",
+        "destination": "/concepts/localization",
+        "type": 301
       }
     ]
   }

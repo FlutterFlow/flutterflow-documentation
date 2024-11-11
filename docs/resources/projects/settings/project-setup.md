@@ -87,7 +87,7 @@ To add custom permission:
 <p></p>
 
 :::info[Adding translation for messages]
-You can also add multilingual permission messages by following the instructions [**here**](../../../ff-concepts/localization-accessibility/add-multiple-languages.md).
+You can also add multilingual permission messages by following the instructions [**here**](../../../ff-concepts/localization-accessibility/localization.md).
 :::
 
 ### Request Permission [Action]
@@ -235,7 +235,7 @@ By default, the generated project can run on Android, iOS, and the Web without a
 ---
 
 ## Multiple Languages
-To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/add-multiple-languages.md).
+To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/localization.md).
 
 ---
 

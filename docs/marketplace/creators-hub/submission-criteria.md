@@ -75,7 +75,7 @@ Clear, engaging, and accurate metadata helps users discover and understand the v
 
 - **Criteria:** All item metadata (title, description, tags, etc.) must be in English.
 - **Why it Matters:** To ensure a broad understanding among our global community, all Marketplace items must be in English.
-- **What To Do:** Use clear, concise English throughout your submission. If English isn't your first language, consider using FlutterFlow's automatic [translation](../../ff-concepts/localization-accessibility/add-multiple-languages.md) feature.
+- **What To Do:** Use clear, concise English throughout your submission. If English isn't your first language, consider using FlutterFlow's automatic [translation](../../ff-concepts/localization-accessibility/localization.md) feature.
 
 
 
