@@ -117,7 +117,7 @@ When there is a compilation error, the code analyzer will stop running and displ
 by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
 should then be reconnected. You can also manually reconnect it if needed.
 
-### Custom Code Default Imports
+### Automatic FlutterFlow Imports
 
 When creating a new custom code snippet (Actions, Widgets, or Functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
 
