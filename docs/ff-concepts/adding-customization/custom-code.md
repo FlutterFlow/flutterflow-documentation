@@ -295,7 +295,7 @@ one.
 
 ![Dependency-score.png](imgs/Dependency-score.png)
 
-When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of information: the [package name with its version number](#copy-package-name--version) and the [import statement](#copying-import-statement).
+When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of [information](#setup-code): the Package name with its Version number and the Import statement.
 
 ### Setup Code
 To configure your custom code with the package, copy and paste the following items from the package's pub.dev page:
