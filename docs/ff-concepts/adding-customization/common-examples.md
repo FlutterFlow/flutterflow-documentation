@@ -251,3 +251,34 @@ Future addDynamicReviews(ProductStruct product, List<ReviewStruct> newReviews) {
 }
 
 ```
+
+
+### Using Firebase Auth Variables in Custom Code
+
+When using Firebase Authentication for your app, FlutterFlow provides access to key authentication data, such as `currentUserDisplayName`, `currentUserUid`, and more. These variables can be used in your Custom Actions to build additional features that require such common data from authenticated users.
+
+For example, you can check if a user’s email is verified before proceeding with certain actions:
+
+```js
+if (currentUserEmailVerified) {
+  // Perform action for verified users
+}
+```
+
+Or, if you need to create a directory path that includes the user’s unique ID:
+```js
+String directoryPath = '/users/' + currentUserUid + '/files';
+```
+
+Here’s a list of other Firebase Auth variables that can be referenced in Custom Code:
+
+- `currentUserEmail` – The email address of the current user.
+- `currentUserUid` – The unique ID of the current user.
+- `currentUserDisplayName` – The display name set by the user.
+- `currentUserPhoto` – The profile photo URL of the current user.
+- `currentPhoneNumber` – The user’s phone number, if available.
+- `currentJwtToken` – The current user’s JWT token for secure requests.
+- `currentUserEmailVerified` – Boolean indicating if the user’s email is verified.
+
+- These variables make it easy to integrate Firebase Auth data into custom functionality, enhancing the user experience.
+
