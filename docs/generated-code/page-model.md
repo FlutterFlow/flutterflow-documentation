@@ -1,7 +1,8 @@
 ---
 title: PageModel class
+sidebar_position: 4
 ---
-# PageModel Class
+# PageModel class
 
 :::info[Prerequisites]
 This guide uses example of the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
