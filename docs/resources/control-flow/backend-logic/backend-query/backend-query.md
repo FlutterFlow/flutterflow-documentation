@@ -17,8 +17,7 @@ import TabItem from '@theme/TabItem';
 
 We offer you the following types of Backend Queries that you can specify on any widget or page.
 
-* [**Query Collection**](query-collection.md)**:** This query type is used to fetch a single record or a list of 
-  records from a Firestore Collection.
+* [**Query Collection or Table**](query-collection.md)**:** This query type is used to fetch a single record or a list of records from a Firestore Collection or Supabase Table.
 * [**Document from Reference**](document-from-reference.md)**:** Used to retrieve the details from a document reference.
 * [**API Call Query**](api-call-query.md)**:** Used to initiate an API 
   call.

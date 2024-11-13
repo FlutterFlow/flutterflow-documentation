@@ -10,7 +10,10 @@ toc_max_heading_level: 5
 
 # Supabase Database Actions
 
-The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row** from a Supabase table.
+The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row** from a Supabase table. 
+
+Note that beyond actions, you can also setup [**Backend Queries**](../../../resources/control-flow/backend-logic/backend-query/backend-query.md) for Supabase. This includes realtime streaming queries.
+
 
 :::note[Prerequisites]
 Before getting started with this section, ensure you have,
