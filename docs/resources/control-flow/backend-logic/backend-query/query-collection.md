@@ -156,7 +156,7 @@ You can follow similar steps for using the record data on the other widgets as w
 
 ## FAQs
 <details>
-<summary>Why are real-time updates for Supabase not working?</summary>
+<summary>Why aren't real-time updates working for my table in Supabase project?</summary>
 <p>
 First, ensure that the **Single Time Query** option is disabled in the query where you've added it. Then, verify that the real-time feature is enabled for your table in Supabase project. You can find this option in the top-right corner of the table viewer.
 
