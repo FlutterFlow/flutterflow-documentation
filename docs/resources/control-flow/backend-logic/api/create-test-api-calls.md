@@ -8,26 +8,57 @@ sidebar_position: 2
 
 # Create & Test API Call
 
-On this page, you will learn how to [create](#creating-api-calls) and [test](#testing-api-calls) the API call.
+In this guide, you'll learn how to create and test API calls in FlutterFlow. Integrating API calls allows your app to interact with external services, bringing in real-time data and functionality that enhances your app's capabilities.
 
-## Creating API calls
+## Create API Call
+To use an API in your app, you first need to create the API call in FlutterFlow.
 
-To use an API in your app, first, you have to create the API Call.
+Simply select API Calls from the left navigation menu, click the **+ Add** button, and choose **Create API Call**. Enter an **API Call Name**, select the **Method Type** (GET, POST, DELETE, PUT, or PATCH), and input the API URL of the service you wish to access.
 
-Follow the steps below to create an API Call:
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/JbgiAq8d2VzqYHuXH4DN?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
-1. Select **API Calls** from the left [Navigation Menu](../../../../intro/ff-ui/builder.md#navigation-menu).
-2. Click on the **+ Add** button and select **Create API Call**.
-3. Enter the **API Call Name**.
-4. Select the **Method Type**: *GET, POST, DELETE, PUT, or PATCH*.
-5. Enter the **API URL** of the service you want to access.
+<p></p>
 
-:::note
+:::tip[Method Types]
+The Method Type specifies the type of operation the API call will perform. Here’s a breakdown of common method types:
+
+- **GET:** Retrieves data from the server.
+- **POST:** Sends data to create or update a resource.
+- **DELETE:** Removes a resource from the server.
+- **PUT:** Updates or creates a resource with full data.
+- **PATCH:** Partially updates a resource.
+:::
+
+### Dynamic API URLs
+
 If you want to use a dynamic URL, for example, `<https://reqres.in/api/users/2>` where 2 is dynamic and `<https://reqres.in/api/users?page=5>` where 5 is dynamic:
 
 1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
 2. And then, [**create a new variable**](rest-api.md#creating-variables) with the same name you provided inside the brackets.
-:::
 
 The further instructions are based on the **Method Type** you selected.
 
@@ -164,35 +195,13 @@ com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931e
 
 <p></p>
 
-## Trigger API calls [Action]
+## API Call [Action]
 
-Using this action, you can trigger the API Call defined in your project.
+Once the API calls are defined in your FlutterFlow project, you can use them wherever needed.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/gzZislYM72aLHNpjuVhU?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+Open the Action Flow Editor on the widget where the API call should be triggered. After selecting the desired Action Trigger, search for "API Calls" in the Actions dropdown and select the API call you want to use.
+
+![use-api-call.png](imgs/use-api-call.png)
 
 :::tip
 You can also add the API Call as a [**Backend Query**](../backend-query/api-call-query.md) that gets triggered automatically when the page or widget is loaded on the screen.

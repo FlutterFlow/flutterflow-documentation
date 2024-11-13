@@ -238,7 +238,7 @@ If you're using a different version of FlutterFlow, such as *Beta* or *Enterpris
 For example:
 
 - For the **Beta** version, set the `flutterflow.urlOverride` value to `https://api-beta.flutterflow.io/v1`.
-- For the **Enterprise** version, set the `flutterflow.urlOverride` value to `https://api-enterprise-[region].flutterflow.io` (replace [region] with your specific region).
+- For the **Enterprise** version, set the `flutterflow.urlOverride` value to `https://api-enterprise-[region].flutterflow.io/v1` (replace [region] with your specific region).
 
 <div style={{
     position: 'relative',

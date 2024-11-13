@@ -565,7 +565,7 @@ with a numeric character. However, in cases where you have keys with numeric pre
 :::
 
 :::info
-Learn more about **[JSONPath](https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html)** and how to define a proper expression.
+Learn more about **[JSONPath](https://www.rfc-editor.org/rfc/rfc9535.html)** and how to define a proper expression.
 :::
 
 ### Adding JSON Path
