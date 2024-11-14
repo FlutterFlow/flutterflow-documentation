@@ -24,7 +24,7 @@ In a nutshell, internationalization is about making your app to support multiple
 
 FlutterFlow enables you to translate all text in your app at once using Google Translate or to manually adjust translations as needed. Additionally, you can localize predefined messages, such as permission prompts, authentication snackbars, and other in-app notifications.
 
-Adding multi-language support is essential for making your app accessible to a wider audience. For instance, if your app provides exercise instructions only in English, non-English speakers may struggle to understand and choose a different app, even if it's less effective, simply because it's available in their language. Implementing a multi-language feature helps your app succeed globally by offering a user-friendly experience for diverse audiences.
+Adding multi-language support is essential for making your app accessible to a wider audience. For instance, if your app provides exercise instructions only in English, non-English speakers may find it hard to understand and might choose a different app, even if it’s less effective, simply because it’s available in their language. Implementing a multi-language feature helps your app succeed globally by offering a user-friendly experience for diverse audiences.
 
 To add multi-language support in FlutterFlow, navigate to **Settings and Integrations** > **Languages**, add the languages to support, set a primary language as a fallback, and optionally choose a display language. Then, use **Translate All** for automatic translations and adjust them if needed. Finally, verify translations on different pages by changing the language dropdown in the canvas.
 
@@ -75,7 +75,7 @@ You can customize the appearance using the various properties available under th
 
 :::tip
 
-By default, the LanguageSelector widget does not persist the user's language choice across app sessions. To retain the selected language, enable the **Persist Selection** option under language settings.
+By default, the **LanguageSelector** widget does not persist the user's language choice across app sessions. To retain the selected language, enable the **Persist Selection** option under Language Settings.
 
 :::
 
@@ -159,7 +159,7 @@ Permission messages are displayed based on the features included in your app. Fo
 </div>
 <p></p>
 
-## Retrieving Language Related Data
+## Accessing Language-Specific Data
 
 When building a multi-language app, you may need data like the current language code or language-specific text.
 

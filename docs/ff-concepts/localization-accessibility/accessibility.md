@@ -28,7 +28,7 @@ Here are some key accessibility features you can use:
 
 You can use **Semantic Labels** to provide custom descriptions, hints, or to emphasize the importance of specific parts of the widget tree. This ensures that screen reader users receive clear and meaningful information about each widget more effectively.
 
-For example, in an e-commerce app, you can add a semantic label to an '*Add to Bag*' button with a message like '*Add this item to cart*', which helps users better understand the button's action.
+For example, in an e-commerce app, you can add a semantic label to an '*Add to Bag*' button with a message like '*Add the selected item to cart*', which helps users better understand the button's action.
 
 To add a semantic label for any widget, select the widget, move to the properties panel (right side), tap the document icon inside the **Accessibility & Semantic Label** section, add the message, and click **Save**.
 
