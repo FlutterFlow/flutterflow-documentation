@@ -18,13 +18,11 @@ Here are some examples of how accessibility can help users with disabilities:
 - **Keyboard Navigation for Physical Impairments**: Users unable to use touchscreens can navigate the app effectively with keyboard controls.
 - **Haptic Feedback**: Tactile responses help users with visual or motor impairments understand when interactions are successful.
 
-## Adding Accessibility
-
 In FlutterFlow, you can enhance the accessibility of your app by incorporating various accessibility features, such as semantic labels, keyboard navigation, haptic feedback, responsive fonts, and proper color contrast.
 
 Here are some key accessibility features you can use:
 
-### Semantic Label
+## Semantic Label
 
 You can use **Semantic Labels** to provide custom descriptions, hints, or to emphasize the importance of specific parts of the widget tree. This ensures that screen reader users receive clear and meaningful information about each widget more effectively.
 
@@ -73,25 +71,25 @@ After you add semantic labels, enable **TalkBack** on Android or **VoiceOver** o
 
 Learn more about [enabling screen reader on your device](https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility#screen-readers).
 
-### Keyboard Navigation
+## Keyboard Navigation
 
 You can use the [On Shortcut Press](../../resources/ui/pages/page-lifecycle.md#on-shortcut-press-action-trigger) action trigger to bind keyboard shortcuts to specific actions. This makes it easier for users with disabilities to navigate your app, especially in web and desktop environments.
 
 It enhances accessibility by allowing users to interact without relying solely on a mouse or touchscreen, making the experience more inclusive and efficient.
 
-### Haptic Feedback
+## Haptic Feedback
 
 Using [Haptic Feedback](../alerts-notification/haptic-feedback.md), you can vibrate the user's device, which is particularly helpful for users with visual or cognitive impairments. It provides a tactile response to indicate that an action has been completed.
 
 For example, vibrating the user's device when successfully submitting a form.
 
-### Responsive Fonts
+## Responsive Fonts
 
 When developing an app, it's important to consider the different platforms on which it will run. Text may appear smaller on devices with higher screen resolution, such as tablets, web, or desktops, which can negatively impact accessibility for users with visual impairments.
 
 [Adding responsive text](../design-system/design-system.md#adding-responsive-text-styles) that adjusts font size based on the platform helps make content more readable, improving accessibility for users who need larger or more legible text.
 
-### Color Contrast
+## Color Contrast
 
 Use sufficient color contrast to make text and interactive elements readable for users with visual impairments or color blindness. This helps ensure that content is easily distinguishable, even for users with limited vision. Learn more about using various ways to [add colors](../design-system/design-system.md#colors) in your FlutterFlow app.
 

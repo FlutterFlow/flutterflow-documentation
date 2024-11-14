@@ -97,7 +97,7 @@ Note that this action affects only the app's language and does not modify the de
 
 There are two ways you can manage the app text translation:
 
-### Inside Language Settings
+**Inside Language Settings**
 
 The Language Settings page lists all of your app's text, grouped by page, making it easy to manage translations in bulk.
 
@@ -107,7 +107,7 @@ To use Google Translate for new or existing text, click **Translate Page.**
 
 ![manage-translation-in-language-settings.avif](imgs/manage-translation-in-language-settings.avif)
 
-### Inside Properties Panel
+**Inside Properties Panel**
 
 You can also add or update translations for individual text directly inside the properties panel. To do so, select the widget (e.g., Text, TextField, etc.), go to the properties panel, and click on the Globe icon. This will open a new panel.
 
@@ -172,11 +172,8 @@ These options are accessible through **Set from Variable > Internationalization*
 
 ![retrieve-lang-data.png](imgs/retrieve-lang-data.png)
 
-## Formatting Dates, Numbers, and Currency
 
-Localization isn't just about translating strings. It also involves adapting dates, numbers, and currencies to the user's locale.
-
-### Dates
+## Localizing Dates
 
 To ensure your app displays dates in formats familiar to users from different regions, you can use the predefined **DateTime Format Options** while displaying dates.
 
@@ -195,7 +192,7 @@ For custom locale-specific date formats, you can also [**create your own pattern
 
 :::
 
-### Numbers
+## Localizing Numbers
 
 Different regions use different symbols for decimal and thousand separators. For example, the U.S. uses a period for decimals and a comma for thousands, while many European countries use the opposite.
 
@@ -203,7 +200,7 @@ To localize the numbers, set the [**Number Format Options**](../../resources/ui/
 
 ![localize-numbers.avif](imgs/localize-numbers.avif)
 
-### Currency
+## Localizing Currency
 
 Currency symbols and their placement vary by locale. For example, in the U.S., the dollar sign appears before the amount (`$1,000.00`), whereas in countries like France, the currency symbol is placed after the amount (e.g., `1 000,50 €`).
 
