@@ -175,7 +175,7 @@ To enable Supabase Apple authentication in FlutterFlow, go to **Settings and Int
 
 ![enable-apple-auth-flutterflow.avif](imgs/enable-apple-auth-flutterflow.avif)
 
-## Creating Account [Action]
+## Create Account [Action]
 
 Now, proceed to add an account creation flow, which consists of the following two actions:
 
