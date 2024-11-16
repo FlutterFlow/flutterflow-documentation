@@ -17,10 +17,10 @@ Most custom FlutterFlow classes are prefixed with `FF<ClassName>` or `FlutterFlo
 
 ![suggestions-dropdown.png](imgs/suggestions-dropdown.png)
 
-### Returning Component from Custom Widget 
+### Leveraging Component from Custom Widget 
 
 In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from 
-[pub.dev](custom-code.md#pubdev), you can simply return an existing Component created on the canvas, rather than coding the content from scratch.
+[pub.dev](custom-code.md#pubdev), you can simply return an existing Component created on the canvas, rather than coding a new one from scratch.
 
 :::tip[Imports]
 When referencing a Component class in your code, FlutterFlow will automatically add the necessary import statement.
@@ -114,7 +114,7 @@ Future enableDarkMode() async {
 
 - **Modifying a List in AppState Using Helper Functions**
 
-The `FFAppState` class offers a variety of helper functions to easily manage list variables in AppState. For a detailed overview of this generated class, check out **[this guide](../../generated-code/ff-app-state.md#managing-appstatelist)**. Here’s some examples of how to use these helper functions to modify an AppState list variable:
+The `FFAppState` class offers a variety of helper functions to easily manage list variables in AppState. For a detailed overview of this generated class, check out **[this guide](../../generated-code/ff-app-state.md#managing-appstatelist)**. Here are some examples of how to use these helper functions to modify an AppState list variable:
 
 ```js
 Future addLocation(LatLng value) async {
@@ -144,7 +144,7 @@ Future insertLocationAtIndex(int index, LatLng value) async {
 ```
 
 
-### Manipulate Custom Data Types
+### Leverage Custom Data Types
 When you create a custom data type in FlutterFlow, it **[generates a corresponding `<Name>Struct` class](../../generated-code/custom-data-type-gen.md)**. In FlutterFlow's custom code, you can create new instances of such data types, pass instances back into an action, or manipulate and retrieve information from existing objects. Here are some examples to help illustrate working with an example `ProductStruct` class.
 
 #### Example 1: Creating a new Instance of `ProductStruct`
@@ -242,7 +242,7 @@ Future addNewReviews(ProductStruct product) {
 }
 ```
 
-or if the new list of reviews are being provided to the Custom Action, then: 
+or if the new list of reviews is being provided to the Custom Action, then: 
 
 ```js
 Future addDynamicReviews(ProductStruct product, List<ReviewStruct> newReviews) {
