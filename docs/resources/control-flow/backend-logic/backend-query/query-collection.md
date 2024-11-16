@@ -6,6 +6,9 @@ tags: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow
 sidebar_position: 2
 keywords: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Query Collection / Table
 
 Quering Firestore Collection or Supabase Table helps you to retrieve a record (or a list of records) automatically whenever a
@@ -38,9 +41,14 @@ backend query:
 8. You can also set the **order** in which the documents should be returned, click **+ Order By**
    button. Select a **Field Name** to be used for ordering, and choose the **Order** to be
    either `Increasing` or `Decreasing`.
-9. Click **Save**.
-10. If the selected query returns a list of documents and if it's applied to any flexible widget (like `Column`, `Row`, or `ListView`) then FlutterFlow will generate the children widgets
-    dynamically. A dialog will be displayed with a similar message, click **Ok**.
+9. Below are some optional settings that you can configure based on your requirements:
+    - **Single Time Query**: When this is disabled, the query results will automatically refresh whenever documents or rows are created, updated, or deleted. However, for **Supabase**, this option is enabled by default, meaning the query will run only once. To enable real-time updates, you must turn it off.
+    - **Ignore Empty Filter Values**: Disabled by default, meaning the query will attempt to find documents with empty text fields if any filter value is empty. When enabled, the query will ignore fields with empty filter values instead.
+    - **Filter on Null Values**: By default, if any filter value is null, the query will ignore that filter. Enabling this option will include null filters in the query.
+    - **Enable Infinite Scroll**: To implement infinite scrolling, enable this option and follow the instructions here.
+10. Click **Confirm**.
+11. If the selected query returns a list of documents and if it's applied to any flexible widget (like `Column`, `Row`, or `ListView`) then FlutterFlow will generate the children widgets
+    dynamically. A dialog will be displayed with a similar message, click **Confirm**.
 
 :::info
 The instructions to query a Supabase table are almost the same, except that for **Query Type**, you should select **Supabase Query**.
@@ -53,7 +61,7 @@ The instructions to query a Supabase table are almost the same, except that for 
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/tpt7z1YZLfAogh0eWxUU?embed&show_copy_link=true"
+        src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -89,14 +97,15 @@ present inside. Follow the steps below to use the document record data:
 
 You can follow similar steps for using the record data on the other widgets as well.
 
+<Tabs>
+<TabItem value="1" label="Display Data from Firestore Collection" default>
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
-    width: '100%'
-}}>
+    width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/1EXbONj7gwa3EiQbdDLo?embed&show_copy_link=true"
+        src="https://demo.arcade.software/lduCQak3hFCUC1xNVP1c?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -114,3 +123,47 @@ You can follow similar steps for using the record data on the other widgets as w
         allow="clipboard-write">
     </iframe>
 </div>
+<p></p>
+</TabItem>
+<TabItem value="2" label="Display Data from Supabase Table">
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/utIKpcL7km05zSnZvLaz?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+</TabItem>
+</Tabs>
+
+## FAQs
+<details>
+<summary>Why aren't real-time updates working for my table in Supabase project?</summary>
+<p>
+First, ensure that the **Single Time Query** option is disabled in the query where you've added it. Then, verify that the real-time feature is enabled for your table in Supabase project. You can find this option in the top-right corner of the table viewer.
+
+![enable-realtime-updates-sb-table.avif](../imgs/enable-realtime-updates-sb-table.avif)
+
+Additionally, you can enable real-time updates when creating a new table.
+
+![enable-realtime-updates-sb-table.avif](../imgs/enable-realtime-updates-sb-table-2.avif)
+</p>
+</details>
