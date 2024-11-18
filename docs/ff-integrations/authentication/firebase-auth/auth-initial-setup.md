@@ -141,7 +141,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 <details>
   <summary>Windows</summary>
   <div>
-   ```keytool -list -v -keystore C:\Users\leon\.android\debug.keystore -alias androiddebugkey```
+   ```keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android```
 
     If you get the following error while trying the above command:
 
@@ -155,7 +155,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 <details>
   <summary>Mac/Linux</summary>
   <div>
-   ```keytool -list -v \ -alias androiddebugkey -keystore ~/.android/debug.keystore``` 
+   ```keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android``` 
   </div>
 </details>
 
