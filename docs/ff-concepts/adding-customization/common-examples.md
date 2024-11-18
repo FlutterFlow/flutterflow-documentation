@@ -11,9 +11,33 @@ keywords: [FlutterFlow, Custom Actions, Customizations, Flutter, Dart, Pub.dev, 
 
 The custom code feature in FlutterFlow allows you to extend functionality by accessing generated classes and modifying global variables like App States and FlutterFlow themes. This guide covers common scenarios where you can leverage custom code to enhance your project by working directly with data models and other resources within your code.
 
+:::warning[Disclaimer]
+Custom Functions cannot import new files or packages outside of the default dedicated imports. Therefore, most of the suggestions below that involve adding a new import will not work in Custom Functions due to this restriction. However, they will work for Custom Widgets and Custom Actions.
+
+For example, a new [**Custom Function**](custom-functions.md) typically includes the following packages and files. Your custom function code changes should use only these packages & files:
+
+```js
+import 'dart:convert';
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
+import 'package:timeago/timeago.dart' as timeago;
+import 'lat_lng.dart';
+import 'place.dart';
+import 'uploaded_file.dart';
+import '/backend/backend.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import '/backend/schema/structs/index.dart';
+import '/backend/schema/enums/enums.dart';
+import '/auth/firebase_auth/auth_util.dart';
+```
+
+::: 
 ### Accessing FlutterFlow Generated Classes
 
-Most custom FlutterFlow classes are prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them easily.
+Most custom FlutterFlow classes in the generated code are prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them easily.
 
 ![suggestions-dropdown.png](imgs/suggestions-dropdown.png)
 
