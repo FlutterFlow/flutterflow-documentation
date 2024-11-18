@@ -222,13 +222,13 @@ List<String> getProductReviewComments(ProductStruct product) {
 You can also modify the properties of an existing `ProductStruct` object. This can be helpful if you want to update a field before saving the data back to Firebase or passing it into an action.
 
 - **Simple Property Modification**
-In this example, we’ll modify a single property, like `productId`, of an existing `ProductStruct` object. This example is straightforward and demonstrates how to update a basic field in the object.
+In this example, we’ll modify a single property, like `productName`, of an existing `ProductStruct` object. This example is straightforward and demonstrates how to update a basic field in the object.
 
 ```js
-// Function to update the product ID of a ProductStruct instance
-Future updateProductId(ProductStruct product, String newProductId) {
-  // Update the product ID with the new value
-  product.productId = newProductId;
+// Function to update the product name of a ProductStruct instance
+Future updateProductName(ProductStruct product, String newProductName) {
+  // Update the product name with the new value
+  product.productName = newProductName;
 }
 ```
 
