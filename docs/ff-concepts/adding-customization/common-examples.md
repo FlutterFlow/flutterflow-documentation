@@ -63,7 +63,7 @@ When referencing a Component class in your code, FlutterFlow will automatically 
 
 When building custom widgets, you often need to style parts of the widget, such as setting colors. Instead of using hardcoded color values, you can directly access the **FlutterFlow Theme**. This theme provides consistent styling across your app and reflects colors set by you or your project developer.
 
-To access theme colors in your custom widget, use the `FlutterFlowTheme.of(context)` method. This allows you to retrieve any theme color, such as the **primary color, accent color**, or **background color**, ensuring that your custom widget aligns with the app’s overall theme.
+To access theme colors in your custom widget, use the `FlutterFlowTheme.of(context)` method. This allows you to retrieve any theme property, such as the default `primary`, `primaryBackground`, or other custom-created colors, as well as text styles like `bodyLarge` or `bodyMedium`, ensuring that your custom widget aligns with the app’s overall theme.
 
 Here’s an example of how to use the primary color from FlutterFlow Theme in a custom widget:
 
@@ -95,10 +95,10 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: isPressed
+        backgroundColor: isPressed
             ? FlutterFlowTheme.of(context).primary // Primary color when pressed
             : FlutterFlowTheme.of(context).secondaryBackground, // Default color
-        onPrimary: FlutterFlowTheme.of(context).secondaryText, // Text color
+        foregroundColor: FlutterFlowTheme.of(context).secondaryText, // Text color
       ),
       onPressed: toggleButton,
       child: Text(
@@ -109,7 +109,8 @@ class _CustomButtonState extends State<CustomButton> {
   }
 }
 ```
-
+:::info
+Find the list of colors, 
 
 ### Manipulating AppState from Custom Code
 
