@@ -201,7 +201,9 @@ final newProduct = ProductStruct(
 
 #### Example 2: Accessing Properties of an Existing `ProductStruct` object
 
-If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. Let's assume you have an Action that calls a Custom Action to retrieve a field value from the provided `ProductStruct` object.
+If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. 
+
+Let's assume you have an Action that calls a Custom Action to retrieve a field value from the provided `ProductStruct` object.
 
 - **Returning a Single Field from ProductStruct**
 
@@ -213,6 +215,18 @@ String? getProductName(ProductStruct product) {
     return product.name;
 }
 ```
+
+- **Checking if a Field Exists in a `ProductStruct` Object**
+This function determines whether the `ProductStruct` object contains a non-null value for a specific field, such as `description`. It returns `true` if the field exists and is not null, and `false` otherwise.
+
+```js
+// Function to check if the description field exists in a ProductStruct instance
+bool hasDescription(ProductStruct product) {
+    // Return true if the description is not null, false otherwise
+    return product.description != null;
+}
+```
+
 - **Returning a List of Review Comments from ProductStruct**
 
 This function retrieves a list of review comments from the reviews field in the `ProductStruct`. The return type is `List<String>` as it returns a list of comments (or an empty list if there are no reviews).
