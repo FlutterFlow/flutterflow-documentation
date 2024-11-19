@@ -134,6 +134,13 @@ Here’s how you can add the Supabase reset password feature to your app:
 </div>
 <p></p>
 
+:::tip
+**For mobile**, you must set the **deep link URL** as the Site URL. To find this, navigate to **FlutterFlow > Settings & Integrations > App Details > Routing & Deep Linking**, open the **URL Scheme** tooltip, and copy the URL.
+
+![mobile-deeplink.avif](imgs/mobile-deeplink.avif)
+:::
+
+
 ## Delete User 
 
 At present, we do not support deleting Supabase user action. However, you can refer to this community video for guidance on how to do so.
