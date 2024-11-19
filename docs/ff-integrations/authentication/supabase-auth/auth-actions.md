@@ -1,6 +1,6 @@
 ---
 slug: /integrations/authentication/supabase/auth-actions
-title: Auth Actions
+title: Common Auth Actions
 description: Learn how to add Supabase Authentication actions in your FlutterFlow app.
 tags: [Auth Actions, Authentication, Supabase]
 sidebar_position: 1
@@ -62,6 +62,72 @@ Follow the steps below to add this action:
 
 ![img_6.png](img_6.png)
 
+## Reset Password [Action]
+
+This action allows users to reset their password by sending a reset link to their registered email address.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/PkAwpUU2WsXbG1DpzNCX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::info[Prerequisites]
+
+To build the reset password functionality, you need to create the following two pages in your app:
+
+1. **ForgotPassword Page**: This page allows users to enter their email address and request a password reset link.
+2. **UpdatePassword Page**: This page allows users to set a new password after clicking on the reset link.
+:::
+
+Here’s how you can add the Supabase reset password feature to your app:
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/GqayWApqWV2xInXc1SUO?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Delete User 
 
