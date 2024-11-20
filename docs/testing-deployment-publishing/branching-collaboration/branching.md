@@ -307,7 +307,7 @@ If the visual editor doesn't display something in the split screen UI that you n
 ## Branch-level Permissions
 In your project, you have the ability to assign specific roles such as **Editors** and **Mergers** to project members for each branch.
 
-To configure these permissions, navigate to **Settings & Integrations > Project Setup > Collaboration > Branch Permissions**.
+To configure these permissions, navigate to **Settings & Integrations > Project Setup > Collaboration > Branch-Level Access**.
 
 ![branch-permission](../imgs/branch-permission.png)
 
