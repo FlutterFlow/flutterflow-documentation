@@ -37,7 +37,26 @@ import '/auth/firebase_auth/auth_util.dart';
 ::: 
 ### Accessing FlutterFlow Generated Classes
 
-Most custom FlutterFlow classes in the generated code are prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them easily.
+FlutterFlow generates a complete Flutter codebase for you as you build apps in its platform. Part of this code includes custom classes that are designed to streamline common tasks and encapsulate reusable properties or logic.
+
+For example:
+
+- **Button Widgets:** FlutterFlow provides custom button classes like `FFButton` that come with built-in styling and behaviors.
+- **Google Places:** The `FFPlace` class encapsulates properties of a Google Place, such as name, address, and coordinates.
+- **File Uploads:** The `FFUploadedFile` class represents files uploaded to your app, encapsulating properties like the file name, bytes, and URL.
+
+
+:::tip[What is a Class?]
+In programming, a class is a blueprint for creating objects. It defines properties (data) and methods (functions) that belong to objects of that type. 
+
+For example,
+
+- A `Car` class might have properties like `color` and `speed` and methods like `drive()` and `stop()`.
+- In FlutterFlow, a class like `FFPlace` might have properties like `address` and `latLng`, and methods to manipulate or retrieve these values. 
+:::
+
+These custom FlutterFlow classes in the generated code are mostly prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them quick.
+
 
 ![suggestions-dropdown.png](imgs/suggestions-dropdown.png)
 
