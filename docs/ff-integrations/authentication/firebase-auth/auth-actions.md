@@ -22,9 +22,29 @@ Follow the steps below to add this action:
 
 ![logout](../imgs/logout-action.png)
 
-## Reset Password [Action]
+## Reset Password 
 
-Resetting password allows users to change their password by sending them a password reset link to their email address.
+With Firebase Authentication, there are two ways you can allow users to reset their password in your FlutterFlow app:
+
+### In-App Password Change
+
+This option allows users to change their password while they are logged into the app. This is useful when a user is authenticated but wants to update their password for security reasons.
+
+To implement this, create a new page in your app, such as a **ChangePassword** page. This page should include two **TextFields** for the user to enter a new password and confirm it, along with a button (e.g., **Update Password**) to submit.
+
+On the button's click, add the **Update Password** action (under *Backend/Database > Firebase Authentication*) and bind the **Password Field** and **Confirm Password Field** to their respective input widgets.
+
+![firebase-update-password.avif](../imgs/firebase-update-password.avif)
+
+:::info
+
+By default, the **Navigate Automatically** option is enabled. This means that after the password is successfully updated, the user will be redirected to the **Logged In Page** specified in your [**Initial Page**](../../../resources/projects/settings/general-settings.md#initial-page) settings.
+
+:::
+
+### Reset Password Link
+
+This allows users who are logged out to reset their password. It sends a password reset link to the user's email address. When clicked, the user is directed to a Firebase-hosted webpage where they can set a new password.
 
 <div style={{
     position: 'relative',
@@ -32,7 +52,7 @@ Resetting password allows users to change their password by sending them a passw
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/ecbcbe948925431da777b6393f8b5b10?sid=07e6bcbe-610a-4b7c-8572-271527cd956c"
+        src="https://demo.arcade.software/5hyA37XqJy6mrl7Onc8e?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -53,15 +73,11 @@ Resetting password allows users to change their password by sending them a passw
 <p></p>
 
 
-On click of the 'Send Link' button, add the 'Reset Password' action, which sends the password reset link to the given email address. Here are the steps:
+To set this up, create a page in your app, such as a **ForgotPassword** page. This page should include a **TextField** for the user to enter their email address and a button (e.g., **Send Reset Link**) to submit the request.
 
-1. Select the widget (e.g., Button) on which you want to add the action.
+On the button's click, add the **Send Reset Password Email** action (under *Backend/Database > Firebase Authentication*) and set the **Email Field** dropdown to the widget that takes user’s email. This action will send a password reset link to the provided email address.
 
-2. Select **Actions** from the properties panel (the right menu) and select **Add Action**.
-3. Search and select the **Reset Password** (under *Backend/Database > Firebase Authentication*) action.
-4. Set the **Email** **Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
-
-![password reset action](../imgs/password-reset-action.png)
+![firebase-send-reset-link.avif](../imgs/firebase-send-reset-link.avif)
 
 ## Update Email [Action]
 
