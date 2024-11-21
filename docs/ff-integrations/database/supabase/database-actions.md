@@ -204,6 +204,39 @@ com/embed/244eea2a4f694120b08524b7b8cf67de?sid=13d47ef5-5d48-4986-88da-d335ce23b
 Additional Note: Currently, you can only add "and" conditions to Supabase query filters. If you want to add an "or" filter like "status == 5 or status == 8", you can consider logic to apply "status in (5,8)" or any other logic. Fully customizable using API calls or custom actions.
 :::
 
+## Trigger Action On Data Change
+
+Sometimes, you may want to trigger an action whenever data changes in a Supabase table. For instance, in an ecommerce app, you might want to notify users on the orders page when the status of their order is updated.
+
+To respond to data changes in a Supabase table:
+
+1. Ensure you have added a **Supabase Query** to a widget (e.g., a ListView) with **Single Time Query** disabled to enable real-time updates.
+2. On the widget with the **Supabase Query**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
+3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
 
 
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ghFiQWGsQuJu5reUyXnl?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
