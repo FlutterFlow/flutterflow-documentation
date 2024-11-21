@@ -80,6 +80,16 @@ The instructions to query a Supabase table are almost the same, except that for 
     </iframe>
 </div>
 
+:::warning[Limitations of Supabase Streaming with Filters]
+When using Supabase query with real-time updates enabled, you have the following limitations:
+
+1. **Only One Filter is Supported:** Supabase streaming supports only a single filter. Combining multiple filters (e.g., `isActive = true AND city = 'Los Angeles'`) is not allowed.
+2. **Delete Events Are Not Filterable:** Streaming queries do not detect deletions, even if the deleted row matches the filter condition. For example, If you are streaming rows with the filter `city = 'New York’` and a row is deleted, the query output will not reflect the deletion.
+3. **Updates That Remove Rows from Filteres Are Not Tracked:** Changes that make a row no longer match the filter condition (e.g., updating `isActive` from `true` to `false`) will not trigger an update in the query output.
+
+For more details, refer the limitations [**here**](https://supabase.com/docs/guides/realtime/postgres-changes?queryGroups=language&language=js&queryGroups=database-method&database-method=dashboard#delete-events-are-not-filterable).
+:::
+
 ## Using Query Data
 
 The documents retrieved from the backend query can be used to set the record values to the widgets
