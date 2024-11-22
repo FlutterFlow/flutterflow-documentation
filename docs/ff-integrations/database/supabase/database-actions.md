@@ -214,6 +214,9 @@ To respond to data changes in a Supabase table:
 2. On the widget with the **Supabase Query**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
 3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
 
+:::info
+If you are using this trigger on a ListView, make sure to **disable** the **Infinite Scroll**.
+:::
 
 <div style={{
     position: 'relative',
