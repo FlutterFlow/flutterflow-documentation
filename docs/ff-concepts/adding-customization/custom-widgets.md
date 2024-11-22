@@ -3,7 +3,7 @@ slug: /concepts/custom-code/custom-widgets
 title: Custom Widgets
 description: Learn how to create and use custom widgets in your FlutterFlow app to enhance its user interface.
 tags: [Custom Widgets, Custom Code]
-sidebar_position: 5
+sidebar_position: 2
 keywords: [FlutterFlow, Custom Widgets, Customizations, Flutter, Dart, Pub.dev]
 ---
 
@@ -174,7 +174,7 @@ FlutterFlow also allows you to view your custom widget once it is successfully c
 :::tip[LOOKING for other CUSTOM action properties?]
 To learn more about Custom Widget settings, such as the
 [**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation),
-and other properties like [**Callback Actions**](custom-code.md#add-a-callback-action),
+and other properties like [**Callback Actions**](custom-code.md#callback-action-as-parameter),
 [**Pub Dependencies**](custom-code.md#adding-a-pubspec-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::
