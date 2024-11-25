@@ -24,7 +24,7 @@ Custom data types have several key advantages:
 - Use custom data type when predefined data types, such as _integer_ and _string_ may not be enough to store certain kinds of information.
 - FlutterFlow also supports some [**Built-in Data Types**](data-types.md#built-in-data-types).
 :::
-![custom-data-types.avif](..%2Fimgs%2Fcustom-data-types.avif)
+![custom-data-types.avif](../imgs/custom-data-types.avif)
 
 When you create a custom data type, it internally creates a Struct. A struct, or structure, is a composite data type that lets you combine fields of different data types to construct a data structure to suit your specific needs.
 
