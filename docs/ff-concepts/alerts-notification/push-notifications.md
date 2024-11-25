@@ -58,9 +58,9 @@ To enable push notifications:
 ![img.png](imgs/enable-push-notification.avif)
 
 :::info
-By default, the **Automatically Prompt Users for Permission** option is enabled, meaning your app will automatically prompt users for permission to receive push notifications when FlutterFlow detects it's necessary. 
+By default, the **Automatically Prompt Users for Permission** option is enabled, meaning your app will automatically prompt users requesting for permission to receive push notifications when the app is started. However, this may be disruptive to your user sign-in flow.
 
-If you disable it, you will need to manually request permission using the [**Request Permission**](../../resources/projects/settings/project-setup.md#request-permission-action) action at the appropriate point in your app. **It is recommended to keep this option always enabled**.
+If you disable it, you can control when the permission is requested. To do so, you will need to manually [**Request Permission**](../../resources/projects/settings/project-setup.md#request-permission-action) at the appropriate point in your app. **It is recommended to keep this option always enabled**.
 :::
 
 ### Only for iOS: Configuring iOS app
