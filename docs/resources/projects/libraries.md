@@ -85,7 +85,8 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
 
 - App settings 
-  - Firebase 
+  - Firebase
+  - Supabase
   - Development environments
   - Authentication
   - Push notifications 
