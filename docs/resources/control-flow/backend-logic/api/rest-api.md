@@ -615,14 +615,18 @@ To make the API call private, open the **Advanced Settings** tab, turn on the **
 
 Optionally, you can force a user to be authenticated via the Firebase authentication to make this API call. To do so, turn on the **Require Authentication** toggle.
 
+
 :::info
-* If you make the API call private, **Firebase** should be connected to your project. Follow the 
-  instructions on 
-[**this page**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) for integrating Firebase with FlutterFlow.
-* If you enable the **Require Authentication** toggle, **Firebase Authentication** must be 
-  configured appropriately. Check out 
-[this page](../../../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) for 
-  setting up authentication.
+
+Private APIs are deployed as [**Cloud Functions**](https://firebase.google.com/docs/functions) within your Firebase project. While deploying, you can configure the following options:
+
+- **Use Custom Name for Cloud Function**: When enabled, allows you to specify a custom name for the deployed Cloud Function. By default, this option is disabled and Cloud Function is named as `ffPrivateApiCall`.
+- **Private API Cloud Function Instances**: You can configure the number of Cloud Function instances to optimize performance and manage costs.
+    - **Min Instances**: Set the minimum number of active instances to reduce latency and avoid cold starts. Setting this value greater than 0 will keep instances warm but may incur additional costs.
+    - **Max Instances**: Define the maximum number of instances that can be scaled up based on demand.
+    
+    **Note**: To minimize costs, you can set the **Min Instances** value to 0. For detailed pricing information, refer to the [**Cloud Functions Pricing page**](https://cloud.google.com/functions/pricing-overview).
+  
 :::
 
 <div style={{
@@ -632,7 +636,7 @@ Optionally, you can force a user to be authenticated via the Firebase authentica
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/xoPi2UVZuw3JMqyXPeau?embed&show_copy_link=true"
+        src="https://demo.arcade.software/TLjzzkK3n9PQGBFDte4L?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -650,6 +654,16 @@ Optionally, you can force a user to be authenticated via the Firebase authentica
         allow="clipboard-write">
     </iframe>
 </div>
+
+:::note
+* If you make the API call private, **Firebase** should be connected to your project. Follow the 
+  instructions on 
+[**this page**](../../../../ff-integrations/firebase/connect-to-firebase-setup.md) for integrating Firebase with FlutterFlow.
+* If you enable the **Require Authentication** toggle, **Firebase Authentication** must be 
+  configured appropriately. Check out 
+[**this page**](../../../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) for 
+  setting up authentication.
+:::
 
 ### Process Streaming Response
 
