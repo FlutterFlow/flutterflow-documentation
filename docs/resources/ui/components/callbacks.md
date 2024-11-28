@@ -1,6 +1,9 @@
 ---
 title: Action Parameters (Callbacks)
 sidebar_position: 4
+tags: [Components, Actions]
+keywords: [Components, Actions, Action Parameter, Callbacks]
+description: Learn how to add action parameters or callbacks to custom components.
 ---
 
 # Action Parameters (Callbacks)
@@ -33,13 +36,13 @@ This makes the *image upload component* component reusable, as it doesn't need t
 
 ## Adding Callbacks
 
-Let’s continue with our previous example (image upload component) and see how to add callbacks on it:
+Let’s continue with our previous example (*image upload component*) and see how to add callbacks on it:
 
 ### Creating a Callback Parameter
 
 In order to create a component that will execute a callback, you must create a component with a parameter of **Type** **Action**. You can create an action parameter called `uploadAction`, which represents the action that will be executed after the image is uploaded.
 
-When you create an action parameter, you can also specify parameters that will be passed into the action. For this example, the action that will be executed will likely need to know the uploaded image URL to process it further, such as resizing and compressing the image, updating it in the database, and refreshing the profile picture. So, you can specify an action parameter called `uploadedURL`.
+When you create an action parameter, you can also specify parameters that will be passed into the action. For this example, the action that will be executed will likely need to know the uploaded image URL to process it further. So, you can specify an action parameter called uploadedURL.
 
 Now, the page or component that uses this button can utilize this parameter in its own action flow. An example of this is shown below.
 
@@ -141,34 +144,30 @@ You can access the value passed to the callback by navigating to the **Set Varia
 </div>
 <p></p>
 
-:::tip
 
-Now that we have an image upload component with action parameters, it can be reused across different pages or contexts, as it relies on the parent to define the post-upload logic. For example, the same component can be used to upload an image while posting reviews for a product, eliminating the need to create a separate component for this functionality.
+Now that we have an *image upload component* with action parameters set up, it can be reused across different pages or contexts, as it relies on the parent to define the post-upload logic. For example, the same component can be used to upload an image while posting reviews for a product, eliminating the need to create a separate component for this functionality.
 
 ![component-action-parameters.avif](imgs/component-action-parameters.avif)
 
-:::
 
 ## More Examples
 
-Let's see some more examples of adding action parameters (callbacks) to component to solidify understanding and use it in real-world scenarios.
+Let's see some more examples of adding action parameters (callbacks) to deepen the understanding and use it in real-world scenarios.
 
-### Example 1: Dynamic Dialog Components
+### Example 1: Dynamic Dialog Component
 
 Let’s take another example of a reusable dialog component that uses callbacks to handle context-specific actions like confirming a deletion, logging out, or saving data. In one context, "Yes" deletes an item. In another, it logs out a user.
 
-Here the dialog component can execute different actions based on the context in which it's used. The specific logic for each action is defined by the parent component or page using the dialog. The dialog itself does not need to know the specifics of what should happen—it simply executes the callback passed to it.
+The specific logic for each action is defined by the parent component or page using the dialog. The dialog itself does not need to know of what should happen—it simply executes the callback passed to it when users click on the "Yes" button.
 
-[image]
+![dialog-component-action-parameters.avif](imgs/dialog-component-action-parameters.avif)
 
-[how to]
+### Example 2: Custom Navigation Bar in Super App
 
-### Example 2: Custom Navigation Bar
+Using Action Parameters to build a Custom Navigation Bar in a Super App is an excellent way to create a dynamic, reusable, and modular navigation solution. A **Super App** typically hosts multiple mini-apps or features, each requiring specific navigation logic. Action Parameters allows you to define navigation behavior dynamically, depending on the active context, making it perfect for this scenario.
 
-[info]
+Here, the navigation bar doesn’t require hardcoded routes. Instead, the navigation logic can be customized for each mini-app, allowing the navigation bar to remain focused solely on its UI role.
 
-[image]
+For example, in an **ecommerce mini-app**, the home button navigates to the product listing page, while the main (middle) button opens the shopping cart. In contrast, in a **cab booking mini-app**, the home button navigates to the dashboard, and the main (middle) button opens the quick booking page.
 
-[how to]
-
-## Best practices
+![navigation-bar-action-parameters.avif](imgs/navigation-bar-action-parameters.avif)
