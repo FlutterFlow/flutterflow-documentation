@@ -44,7 +44,7 @@ The **Download File** action allows you to enable users to download or save file
 
 :::
 
-## Add Download File [Action]
+## Download File [Action]
 
 To add a download file action, select the **Widget** (e.g., button or any interactive widget) where you want users to initiate the file download and set the **Source** to one of the following.
 
