@@ -31,7 +31,7 @@ Follow the steps below to add Email Login action:
 By using this action, you can provide your users with the flexibility to create their accounts in different ways, according to their preferences.
 
 :::note
-As of now, we support creating accounts with Email/Password and Google.
+As of now, we support creating accounts with Email/Password, Google and Apple auth providers.
 :::
 
 Follow the steps below to add email signup action:
