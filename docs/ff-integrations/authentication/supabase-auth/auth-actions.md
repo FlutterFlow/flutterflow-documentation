@@ -62,7 +62,7 @@ Follow the steps below to add this action:
 
 ![img_6.png](img_6.png)
 
-## Reset Password [Action]
+## Send Reset Password Email [Action]
 
 This action allows users to reset their password by sending a reset link to their registered email address.
 
