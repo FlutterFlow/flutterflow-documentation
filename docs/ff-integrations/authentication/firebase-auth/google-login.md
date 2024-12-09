@@ -161,5 +161,5 @@ to your **Firebase project > Authentication > Users** and check the entries.
 ![verify-google-auth-users.png](../imgs/verify-google-auth-users.png)
 
 :::info
-To ensure that your Android release will authenticate to Google, make sure to use Google Play Console's SHA keys - see how to [Getting *SHA* keys for release mode](initial-setup.md/#getting-sha-keys-for-release-mode).
+To ensure that your Android release will authenticate to Google, make sure to use Google Play Console's SHA keys - see how to [**Get SHA keys for release mode**](auth-initial-setup.md#getting-sha-keys-for-release-mode).
 :::
