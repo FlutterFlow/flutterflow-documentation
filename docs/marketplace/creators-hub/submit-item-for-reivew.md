@@ -120,7 +120,7 @@ Template apps contain multiple screens. There are 2 sub-types:
 - **UI Kit**: purely design-based templates and layouts
 
 :::note
-*Template Apps* can be monetized. The minimum price for Template Apps is $200.
+*Template Apps* can be monetized. The minimum price for Full Apps is $400 while the minimum for UI Kits is $50.
 :::
 </TabItem>
 <TabItem value="3" label="Page or Component">
