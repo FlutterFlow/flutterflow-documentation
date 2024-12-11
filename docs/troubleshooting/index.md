@@ -11,7 +11,7 @@ keywords: [Troubleshooting, Debugging, Detect Issues, Runtime Errors]
 
 This is a general troubleshooting guide for any issues that occur within FlutterFlow projects.
 
-## Detecting issue
+## Detecting issues
 
 We've improved our issue detection capabilities and added features to provide clearer insights into what might be causing these problems. Here are some options you can use to troubleshoot the issue.
 
