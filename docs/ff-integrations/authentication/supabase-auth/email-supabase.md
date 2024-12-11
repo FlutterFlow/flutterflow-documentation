@@ -79,11 +79,11 @@ Here's how it looks:
 
 ### Adding Log In [Action]
 
-To allow users to log in with their credentials, you can use [this](auth-actions.md#log-in-action) action.
+To allow users to log in with their credentials, you can use the [**Log In**](auth-actions.md#log-in-action) action.
 
 ### Adding Logout [Action]
 
-To let users log out of your app, you can use [this](auth-actions.md#log-out-action) action.
+To let users log out of your app, you can use the [**Log Out**](auth-actions.md#log-out-action) action.
 
 ### Verify user creation
 
