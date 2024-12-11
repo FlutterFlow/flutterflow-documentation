@@ -20,6 +20,8 @@ Please review our [**Submission Guidelines**](submission-criteria.md) and our [*
 
 ## How to Submit an Item
 
+An item can be an enitre project (in the case of Temlate Apps or Libraries), a page or a component (in the case of Template Page & Components) or a Custom Function, Action or Widget (in the case of Custom Code).
+
 ### 1. Set your project as a Marketplace project
 
 Marketplace items should belong to projects that are specifically made to publish Marketplace items (i.e., they should not be inside of a production project).
@@ -91,21 +93,37 @@ Provide clear and concise instructions on how to implement and utilize your item
 
 #### Marketplace Item Type
 
-Three types of items can be submitted:
+Four types of items can be submitted:
 
-**Template AppPage or ComponentCustom Code**
+- Libraries
+- Template Apps
+- Template Page or Components
+- Custom Code 
+
+
 <Tabs>
-<TabItem value="1" label="Template App" default>
+<TabItem value="1" label="Libraries" default>
+Libraries allow you to share resources like API endpoints, UI components, custom data types, custom code, action blocks and more with complete version control.
+
+To submit a Library to the Marketplace, first publish your project as a Library. Note that there are some limitations on Library projects - most notably there is currently no support for Firebase or Pages.
+
+For more details, see the [documentation on Libraries](/docs/resources/projects/libraries.md).
+
+:::note
+*Libraries* can be monetized. The minimum price for Libraries is $50.
+:::
+</TabItem>
+<TabItem value="2" label="Template App" default>
 Template apps contain multiple screens. There are 2 sub-types:
 
 - **Full App:** an app with authentication, complete navigation, multiple pages/flows, database schema, complete action trees, etc.
 - **UI Kit**: purely design-based templates and layouts
 
 :::note
-*Template Apps* can be monetized. The minimum price for Template Apps is $200.
+*Template Apps* can be monetized. The minimum price for Full Apps is $400 while the minimum for UI Kits is $50.
 :::
 </TabItem>
-<TabItem value="2" label="Page or Component">
+<TabItem value="3" label="Page or Component">
 Pages or Components are assembled modules that can be used within FlutterFlow. There are 2 sub-types:
 
 - **Page:** a single page in a FlutterFlow project
@@ -115,7 +133,7 @@ Pages or Components are assembled modules that can be used within FlutterFlow. T
 *Pages and Components* cannot be monetized at this time.
 :::
 </TabItem>
-<TabItem value="3" label="Custom Code">
+<TabItem value="4" label="Custom Code">
 Custom Code is Dart code that can be used within FlutterFlow projects. There are 3 sub-types:
 
 - **Custom Functions:** synchronous functions that do not have external dependencies.
