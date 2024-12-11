@@ -174,7 +174,17 @@ Let's see how to filter the Supabase table to display only desired items:
 - Find the **Value** property and set it to an appropriate value and click Confirm.
 
 :::tip
-You could choose a Filter relation based on your requirements. For example, to show only completed assignments, set the Field Name to the column that holds completed status, e.g., is_done, set the Relation to Equal To, and set the Value to True. Here's another example. For showing only users older than 30, create a column called Age, set the Relation to Greater Than, and set the Value to 30.
+You could choose a filter relation based on your requirements. For example:
+
+- **Equal To**: To show only completed assignments, set the **Field Name** to the column that holds the completion status (e.g., **is_done**), set the **Relation** to **Equal To**, and set the **Value** to **True**.
+- **Greater Than**: To show only users older than 30, set the **Field Name** to the **age** column, set the **Relation** to **Greater Than**, and set the **Value** to 30.
+- **Like**: For filtering addresses with zip codes starting with '35,' set the **Field Name** to the **zip_code** column, set the **Relation** to **LIKE**, and set the **Value** to **35%**. In the value field, you use the following wildcards to perform flexible pattern matching to filter your data effectively.
+    - **Percent (`%`) Wildcard**: Represents zero, one, or multiple characters.
+        - Example: `'A%'` matches any string starting with `'A'` (e.g., `'Apple'`, `'Apex'`).
+        - Example: `'%A%'` matches any string containing `'A'` (e.g., `'Canada'`, `'Australia'`).
+    - **Underscore (`_`) Wildcard**: Represents a single character.
+        - Example: `'A_'` matches any two-character string starting with `'A'` (e.g., `'An'`, `'At'`).
+        - Example: `'A__'` matches any three-character string starting with `'A'` (e.g., `'Ant'`, `'Art'`).
 :::
 
 <div class="video-container"><iframe src="https://www.loom.
