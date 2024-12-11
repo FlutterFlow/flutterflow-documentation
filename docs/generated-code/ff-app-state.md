@@ -1,5 +1,6 @@
 ---
 title: FFAppState
+sidebar_position: 2
 ---
 
 # FFAppState
@@ -47,8 +48,8 @@ class FFAppState extends ChangeNotifier {
 
 The `_enableDarkMode` is an App State variable created by developer that creates its own corresponding getter and setter. 
 
-## Updating FFAppState
-When updating the FFAppState from the Action Flow Editor, you will be presented with several **[update type](../resources/data-representation/app-state.md#update-type)** options such as **Rebuild All Pages**, **Rebuild Current Page**, and **No Rebuild**. Let's see how the generated code changes when these options are selected.
+## Rebuild on Updating AppState
+When updating an `AppState` variable from the Action Flow Editor, you will be presented with several **[update type](../resources/data-representation/app-state.md#update-type)** options such as **Rebuild All Pages**, **Rebuild Current Page**, and **No Rebuild** in the Action Settings. Let's see how the generated code changes when these options are selected.
 
 ### Rebuild Current Page
 When a developer chooses to update App State with the update type set to **Rebuild Current Page**, the corresponding `setter` is called. Immediately after, `setState((){});` is invoked, which updates only the current page. 

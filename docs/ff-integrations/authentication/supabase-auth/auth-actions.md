@@ -31,7 +31,7 @@ Follow the steps below to add Email Login action:
 By using this action, you can provide your users with the flexibility to create their accounts in different ways, according to their preferences.
 
 :::note
-As of now, we support creating accounts with Email/Password and Google.
+As of now, we support creating accounts with Email/Password, Google and Apple auth providers.
 :::
 
 Follow the steps below to add email signup action:
@@ -62,7 +62,7 @@ Follow the steps below to add this action:
 
 ![img_6.png](img_6.png)
 
-## Reset Password [Action]
+## Send Reset Password Email [Action]
 
 This action allows users to reset their password by sending a reset link to their registered email address.
 

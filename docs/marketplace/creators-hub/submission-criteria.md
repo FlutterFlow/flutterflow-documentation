@@ -6,13 +6,12 @@ tags: [MarketPlace, Creators Hub]
 sidebar_position: 1
 keywords: [FlutterFlow, MarketPlace, Creators Hub, Item Submission Criteria]
 ---
+
 # Item Submission Criteria
 
 ## Item Submission Standards
 
 Below, you'll find the criteria our Submission Review Team uses to review items submitted to FlutterFlow Marketplace.
-
-
 
 ### 1. Originality and Ownership
 
@@ -22,10 +21,8 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
 - **Why it Matters:** Only the original creator has the right to share and potentially sell their work. This ensures fairness, prevents unauthorized distribution, and protects intellectual property.
 - **What To Do:**
     - **If you're the sole creator:** Great! Make sure you're submitting the project from your own FlutterFlow account.
-    - **If you're collaborating:** The project owner should be the one to submit it to the Marketplace. Discuss this with your collaborators beforehand.
+    - **If you're collaborating:** The project owner should be the one to submit it to Marketplace. Discuss this with your collaborators beforehand.
     - **If you've acquired a project:** Ensure the original creator has officially [transferred ownership](../../resources/projects/how-to-collaborate-on-projects.md#transferring-project) rights to you. This may involve legal documentation, so it's important to handle it properly.
-
-
 
 #### 1.2 Significant Edits Made
 
@@ -35,17 +32,13 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
     - **Highlight your modifications:** Clearly demonstrate the unique components, functionalities, or design choices you've implemented.
     - **Go beyond superficial changes:** If your modifications are primarily visual (e.g., color swaps, logo replacements), consider adding more substantive improvements.
 
-
-
 #### 1.3 Not Based on an Existing Marketplace Item
 
 - **Criteria:** Projects must not be direct derivatives of existing Marketplace items.
-- **Why It Matters:** Originality is key! Duplicating existing offerings diminishes the diversity and value of the Marketplace. We want to empower users with a wide range of unique choices.
+- **Why It Matters:** Originality is key! Duplicating existing offerings diminishes the diversity and value of Marketplace. We want to empower users with a wide range of unique choices.
 - **What To Do:**
     - **Draw inspiration, don't duplicate:** While you can certainly learn from existing projects, aim to differentiate yours significantly.
     - **Add your own flavor:** Infuse your unique style, features, or functionalities to make the project distinctively yours.
-
-
 
 #### 1.4 Not Based on a Sample App
 
@@ -55,17 +48,29 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
     - **Use sample apps as a foundation:** Treat them as a starting point. Experiment, expand, and transform them into something new.
     - **Demonstrate advanced skills:** Go beyond basic layouts and features; integrate custom code, complex animations, or add helpful API calls.
 
-
 #### 1.5 Original Project Content
 
 - **Criteria:** All project content—text, images, designs—must be original or appropriately licensed for commercial use. Please see [Legal Guidelines for Creators](legal-guidelines-for-creators.md) and [Navigating External Licenses](navigating-external-licenses.md) for more info.
-- **Why It Matters:** Using copyrighted material without permission can lead to legal issues and undermines the professional nature of the Marketplace.
+- **Why It Matters:** Using copyrighted material without permission can lead to legal issues and undermines the professional nature of Marketplace.
 - **What To Do:**
     - **Create your own assets:** This is the best way to ensure originality.
     - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
     - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](legal-guidelines-for-creators.md#open-source-licenses) and [Navigating External Licenses](navigating-external-licenses.md).
 
+#### 1.6 No Library Dependencies (Libraries Only)
 
+- **Criteria:** Libraries cannot depend on other libraries.
+- **Why It Matters:** Dependencies between libraries create complexity in permissions management and version control, potentially leading to compatibility issues or broken functionality.
+- **What To Do:**
+    - **Build Self-Contained:** Ensure your library contains all necessary functionality without requiring other libraries (from Marketplace or personal libraries).
+
+:::info
+When you publish a free item to Marketplace, you agree to license it under the [MIT License](https://opensource.org/licenses/MIT), which grants users perpetual rights to use, modify, and distribute the project. Paid items are subject to the license terms specified in our [Marketplace Terms of Service](https://www.flutterflow.io/tos-marketplace).
+
+While creators may remove their items from Marketplace at any time, this does not affect the rights of users who obtained the item while it was published - they retain their license rights according to the terms that were in effect when they acquired the item.
+
+Please review our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) for more details about licensing and intellectual property rights.
+:::
 
 ### 2. Metadata
 
@@ -77,8 +82,6 @@ Clear, engaging, and accurate metadata helps users discover and understand the v
 - **Why it Matters:** To ensure a broad understanding among our global community, all Marketplace items must be in English.
 - **What To Do:** Use clear, concise English throughout your submission. If English isn't your first language, consider using FlutterFlow's automatic [translation](../../ff-concepts/localization-accessibility/localization.md) feature.
 
-
-
 #### 2.2 Professional Title
 
 - **Criteria:** Your project title should be clear, concise, and free of grammatical errors.
@@ -88,17 +91,13 @@ Clear, engaging, and accurate metadata helps users discover and understand the v
     - **Use relevant keywords:** This helps users find your project when searching on Marketplace.
     - **Proofread carefully:** Typos and grammatical errors create a negative first impression.
 
-
-
 #### 2.3 Unique Title
 
-- **Criteria:** Your title should be distinct from other items in the Marketplace.
+- **Criteria:** Your title should be distinct from other items in Marketplace.
 - **Why it Matters:** A unique title helps your project stand out and prevents confusion among users.
 - **What To Do:**
     - **Research existing titles:** Before settling on a title, do a quick search to make sure it isn't already in use.
     - **Get creative with wording:** If you find similar titles, brainstorm alternative phrases or keywords that accurately describe your project's unique selling points.
-
-
 
 #### 2.4 Professional Description
 
@@ -114,16 +113,13 @@ Clear, engaging, and accurate metadata helps users discover and understand the v
 While tools like ChatGPT can assist in drafting content, they often generate generic text that might not fully capture the unique aspects of your project or could sound overly promotional and insincere. Always personalize and proofread AI-generated content to ensure it aligns with your item's features and capabilities.
 :::
 
-
 #### 2.5 Accurate Description
 
 - **Criteria:** The description should accurately reflect the project's functionality and avoid exaggerating its capabilities.
-- **Why it Matters:** Misleading descriptions lead to negative user experiences. Transparency builds trust within the Marketplace.
+- **Why it Matters:** Misleading descriptions lead to negative user experiences. Transparency builds trust within Marketplace.
 - **What To Do:**
     - **Be truthful and transparent:** Clearly state what your project can and cannot do.
     - **Avoid hype and jargon:** Focus on clear, concise language that everyone can understand. Do not overpromise.
-
-
 
 #### 2.6 Third-Party Service Information
 
@@ -132,8 +128,6 @@ While tools like ChatGPT can assist in drafting content, they often generate gen
 - **What To Do:**
     - **List all external services:** Include the name of the service, its purpose within your project, and whether it requires a paid subscription or API key.
     - **Provide links (if applicable):** Direct users to relevant documentation or pricing pages for the third-party service.
-
-
 
 #### 2.7 Professional Instructions
 
@@ -145,8 +139,6 @@ While tools like ChatGPT can assist in drafting content, they often generate gen
     - **Include video links:** Use the documentation URL to point users to a visual video walkthrough. Alternatively, point users to a Google Doc or similar written documentation for your item.
     - **Test your instructions:** Have someone else follow your instructions to identify any points of confusion.
 
-
-
 #### 2.8 Accurate Tags
 
 - **Criteria:** Use relevant tags that accurately describe your project's category, features, and functionality.
@@ -155,8 +147,6 @@ While tools like ChatGPT can assist in drafting content, they often generate gen
     - **Think like a user:** What keywords would someone use to search for a project like yours?
     - **Use a mix of broad and specific tags:** For example, use general tags like "e-commerce" or "social media" along with more specific ones like "shopping cart" or "user authentication".
     - **Don't use irrelevant tags:** This only makes it harder for users to find what they're looking for.
-
-
 
 #### 2.9 High-Quality Images
 
@@ -171,24 +161,19 @@ While tools like ChatGPT can assist in drafting content, they often generate gen
 Use FlutterFlow's [**screenshot generator**](../../testing-deployment-publishing/publishing/pre-checks-publishing.md#generate-screenshots) along with services like [**Shots.so**](https://shots.so/) to create beautiful cover images.
 :::
 
-
 #### 2.10 Image Representativeness
 
 - **Criteria:** Images must accurately reflect the actual content and functionality of your project.
-- **Why it Matters:** Misleading images create a negative experience for users and erode trust in the Marketplace.
+- **Why it Matters:** Misleading images create a negative experience for users and erode trust in Marketplace.
 - **What To Do:**
     - **Use genuine screenshots or recordings:** Avoid showcasing designs or features that are not actually present in your project.
     - **Use abstract images sparingly:** While a certain level of abstraction or illustration can be effective for concepts that are hard to capture with screenshots, they should be used judiciously. Prefer to showcase actual product screenshots in your gallery images.
-
-
 
 #### 2.11 No FlutterFlow Logo in Images
 
 - **Criteria:** Do not include the FlutterFlow logo in your cover photos.
 - **Why it Matters:** Using the FlutterFlow logo might suggest an official endorsement or the appearance of an official template, neither of which may be accurate. Additionally, including the logo is redundant, as all items are exclusively offered through the FlutterFlow Marketplace.
 - **What To Do:** Remove any references to the FlutterFlow logo in your images.
-
-
 
 ### 3. Aesthetics & Design
 
@@ -204,8 +189,6 @@ First impressions matter! We're looking for projects that go beyond basic functi
     - **Maintain consistency:** Aim to use a theme colors and typography throughout your project, as well as consistent padding, list spacing, border radii, and navigation elements.
     - **Test with real users:** Get feedback from others to identify any areas of your design that are confusing or frustrating to use.
 
-
-
 #### 3.2 Screen Size Compatibility (Responsiveness)
 
 - **Criteria:** Projects should be designed to adapt seamlessly to various screen sizes.
@@ -213,8 +196,6 @@ First impressions matter! We're looking for projects that go beyond basic functi
 - **What To Do:**
     - **Follow responsive design best practices:** Use `Wrap`, Responsive Visibility, and Flex features to ensure your app can scale across devices. Read more about building responsively in [Responsive Layouts: 101](../../ff-concepts/layout/responsive-layout.md).
     - **Test on different devices:** Use FlutterFlow's different virtual devices in Test and Run Modes to test your project on a variety of screen sizes. Experiment with the canvas size in the builder to check how your designs scale.
-
-
 
 ### 4. Test Experience
 
@@ -227,8 +208,6 @@ A seamless and positive test experience is crucial for users to evaluate your Fl
 - **What To Do:**
     - **Double-check your link:** Before submitting, test the link multiple times to confirm it showcases the experience you want potential buyers to have.
 
-
-
 #### 4.2 User Sign-In (Anonymous Auth)
 
 - **Criteria:** Users should be able to explore the core functionality of your item *without* being required to create an account or log in.
@@ -237,8 +216,6 @@ A seamless and positive test experience is crucial for users to evaluate your Fl
     - **Provide pre-filled demo credentials:** If your demo relies heavily on user-specific data, consider creating a demo account with pre-populated sample data accessible to guest users. Pre-fill the username and password on the sign in screen so that users can easily begin exploring your item.
     - **Implement anonymous authentication:** FlutterFlow supports easy integration with Firebase for [anonymous sign-in](../../ff-integrations/authentication/firebase-auth/anonymous-login.md). This allows users to access your project's demo mode without creating an account.
     - **Remove authentication:** Another option is to remove the need for any authentication altogether. This will enable users to start exploring your item immediately without any barriers.
-
-
 
 #### 4.3 Accessible Navigation
 
@@ -249,8 +226,6 @@ A seamless and positive test experience is crucial for users to evaluate your Fl
     - **Review your project's [Storyboard](../../intro/ff-ui/storyboard.md) view:** This view displays the navigation across various pages and can help highlight any gaps. Please note that any page which is not accessible will not be shown.
     - **Test navigation thoroughly:** Click through *every* button, link, and menu item in Run Mode to make sure they lead to the correct destinations.
 
-
-
 #### 4.4 Functional Template
 
 - **Criteria:** All core features and functionalities within your project must be working correctly.
@@ -259,8 +234,6 @@ A seamless and positive test experience is crucial for users to evaluate your Fl
     - **Rigorous testing is essential:** Test *every* aspect of your project – from button clicks and form submissions to API calls and animations.
     - **Emulate real-world scenarios:** Don't just test with ideal data or happy paths. Introduce potential edge cases or user errors to see how your project handles them.
     - **Get fresh eyes on it:** Ask someone unfamiliar with your project to test it and provide feedback.
-
-
 
 ### 5. Build Quality
 
@@ -275,8 +248,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Use FlutterFlow's debugging tools:** Take advantage of FlutterFlow's built-in debugging panel to identify and resolve issues.
     - **Handle nulls and errors gracefully:** Add default values for variables in case their value is ever `null`. Implement conditionals in action chains to respond appropriately to API errors or other cases when something goes wrong.
 
-
-
 #### 5.2 No Pixel Overflow
 
 - **Criteria:** Ensure your UI elements are positioned and sized correctly to avoid content overflowing its container, leading to visual glitches / cut off content.
@@ -285,8 +256,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Preview pixel overflows:** Toggle the pixel overflow icon in the top-right of the canvas to see if there are any overflow issues.
     - **Leverage FlutterFlow's layout tools:** Use Expanded and Flex values to help prevent layout issues. Make `Columns` or `Rows` scrollable to prevent overflows. Use auto-sizing text or text clipping where it makes sense. Remove hard-coded width and height where it makes sense.
     - **Test on different screen sizes:** Resize the canvas while building to preview any potential issues.
-
-
 
 #### 5.3 Error-Free Custom Code
 
@@ -297,8 +266,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Test custom code thoroughly:** Isolate and test your custom code units (functions, actions) to ensure they work as expected.
     - **Use FlutterFlow's code validation:** Pay close attention to any warnings or errors highlighted by FlutterFlow's built-in code validation.
 
-
-
 #### 5.4 Coherent & Relevant Custom Code
 
 - **Criteria:** Custom code should be purposefully integrated and enhance your project's functionality in a meaningful way. Avoid unnecessary or redundant code. Avoid including unused or irrelevant custom code.
@@ -308,8 +275,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Comment your code effectively:** Explain the purpose and logic behind your custom code to improve readability and maintainability.
     - **Keep it modular:** Break down complex logic into smaller, reusable functions or actions. Prefer code blocks when a Custom Function is relatively short and will only be used once.
 
-
-
 #### 5.5 Testable Custom Code in Run Mode
 
 - **Criteria:** Ensure that the functionality implemented using custom code is accessible and verifiable within the Run Mode demo.
@@ -317,8 +282,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
 - **What To Do:**
     - **Add a page that uses your custom code:** This page should ideally expose the ideal use case of your custom code or perhaps allow users to set and control parameter values in Run Mode.
     - **Provide clear instructions:** If special steps are required for users to test certain custom code functionalities in Run Mode, explain these instructions clearly within your project description or documentation.
-
-
 
 #### 5.6 Proper Firestore Rules (If Applicable)
 
@@ -328,16 +291,12 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Implement Firestore Security Rules:** Familiarize yourself with how FlutterFlow exposes [Firestore rules](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and make the necessary modifications in your base project.
     - **Test your rules thoroughly:** Create test accounts and attempt add, update, and delete operations on your data across different authentication states to verify your rules are working as intended.
 
-
-
 #### 5.7 Spelling and Grammar
 
 - **Criteria:** Maintain a professional tone with correct spelling and grammar throughout your project's UI text, descriptions, and documentation.
 - **Why it Matters:** Even small typos can detract from your project's credibility and create a negative user experience.
 - **What To Do:**
     - **Proofread, proofread, proofread:** Carefully review all text elements within your project. Ask a friend or colleague to review your text for errors.
-
-
 
 #### 5.8 User-Friendly Template
 
@@ -350,8 +309,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Documentation is key:** Provide clear and comprehensive documentation that guides users on how to use and customize your template effectively. Include explanations of key features, customization options, and potential use cases.
     - **Test with diverse users:** Get feedback from users with varying levels of FlutterFlow experience. This helps identify potential pain points or areas where your template could be more user-friendly.
 
-
-
 #### 5.9 Appropriate State Management
 
 - **Criteria:** Implement state management effectively to ensure data is updated and reflected correctly across your application.
@@ -360,8 +317,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
     - **Choose the right state management scope:** FlutterFlow supports (1) [App State](../../resources/data-representation/app-state.md) (2) [Page State](../../resources/ui/pages/page-lifecycle.md#page-state) and (3) [Component State](../../ff-concepts/state-management/generated-code.md#component-state) variables. Familiarize yourself with these options and scope any state variables to where they are needed. For instance, do not use App State to control the value of a checkbox within a component.
     - **Rebuild efficiently:** Ensure changes to state rebuild only the necessary scope for efficiency.
 
-
-
 #### 5.10 Organized Widget Tree
 
 - **Criteria:** Maintain a well-structured and organized widget tree within your FlutterFlow project.
@@ -369,8 +324,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
 - **What To Do:**
     - **Use descriptive names for widgets and variables:** Make your code self-documenting by using clear and meaningful names for major nodes.
     - **Avoid deeply nested widgets:** If your widget tree becomes too deeply nested (>10 levels), consider breaking it down into smaller, reusable [components](../../resources/ui/components/intro-components.md).
-
-
 
 #### 5.11 Follow FlutterFlow Best Practices
 
@@ -383,8 +336,6 @@ Building a solid app template goes beyond surface-level design. It's about creat
 Stay tuned for an upcoming "style guide" we're publishing that goes into deeper detail about best practices for building in FlutterFlow.
 :::
 
-
-
 #### 5.12 Limit Static Images
 
 - **Criteria**: Minimize the use of large, unoptimized static images within your project to prevent app bloat and ensure that your template accurately represents the functionality of your app.
@@ -394,16 +345,12 @@ Stay tuned for an upcoming "style guide" we're publishing that goes into deeper 
     - **Use optimized images**: Reduce image file size using online compression tools, which maintain quality while decreasing load times.
     - **Leverage caching**: Implement image caching for network images to minimize repeated downloads of the same images, which enhances performance.
 
-
-
 #### 5.13 Limit Custom Code (When Possible)
 
 - **Criteria:** While custom code is powerful, strive to achieve as much functionality as possible using FlutterFlow's visual builder and built-in features.
 - **Why It Matters:** Over-reliance on custom code can make your project less maintainable, less user-friendly, and potentially more prone to errors.
 - **What To Do:**
     - **Explore FlutterFlow's capabilities:** Familiarize yourself with FlutterFlow's extensive library of pre-built widgets, actions, and integrations to see if they can fulfill your requirements before resorting to custom code.
-
-
 
 #### 5.14 Efficient Component Use & Avoiding Duplication
 
@@ -413,8 +360,29 @@ Stay tuned for an upcoming "style guide" we're publishing that goes into deeper 
     - **Leverage Components:** Create reusable components for elements that repeat throughout your project (e.g., product cards, list items, headers, footers).
     - **Utilize Parameters:** Pass data and customize component instances using parameters instead of duplicating and hardcoding values.
     - **Review for Redundancies:** Before submitting, carefully examine your project for any unnecessarily duplicated pages, widgets, or action chains that could be consolidated or streamlined.
+  
+#### 5.15 Library Values Implementation (Libraries Only)
 
+- **Criteria:** Libraries must use [Library Values](../../resources/projects/libraries.md) for sensitive keys and customizable elements that users need to configure.
+- **Why It Matters:** Library Values allow users to safely provide their own API keys and customize critical configuration without modifying the library's core functionality. This improves security and makes libraries more flexible and reusable.
+- **What To Do:**
+    - **Identify Configurable Elements:** Review your library for any API keys, endpoints, or other values that users should be able to customize.
+    - **Create Library Values:** Set up Library Values for these configurable elements in Settings > App Settings > Publish as Library.
+    - **Document Requirements:** Clearly explain in your item description if any Library Values are required for your library to function correctly.
+    - **Test Configuration:** Verify that your library functions correctly when Library Values are changed by users.
 
+#### 5.16 Automated Tests (Strongly Recommended)
+
+- **Criteria:** Projects should include automated tests that verify core functionality and key user workflows. While not required for approval, this is strongly recommended for libraries and will positively impact visibility.
+- **Why It Matters:** Automated tests help ensure reliability, catch regressions, and demonstrate your commitment to quality. They also improve your item's visibility.
+- **What To Do:**
+    - **Add Integration Tests:** Use FlutterFlow's [automated testing](../../testing-deployment-publishing/testing/automated-tests.md) features to verify your item's core functionality.
+    - **Test Key Workflows:** Focus on testing critical user paths and features that users will rely on.
+    - **For Libraries:** Since libraries are often used as building blocks in larger applications, thorough testing is particularly important to:
+        - Verify that Library Values are properly implemented
+        - Ensure core functionality works across different configurations
+        - Demonstrate expected behavior to potential users
+        - Catch issues before they affect downstream applications
 
 ### 6. Value (Paid Items)
 
@@ -422,14 +390,18 @@ A successful Marketplace item goes beyond just a functional app—it provides re
 
 #### 6.1 High Value Proposition
 
-- **Criteria:** Item should offer a compelling value proposition that justifies their price.
+- **Criteria:** Items should offer a compelling value proposition that justifies their price.
 - **Why It Matters:** Users are looking for solutions that save them time, effort, or resources, or that provide a unique experience they can't easily find elsewhere.
 - **What To Do:**
-    - **Define Your Unique Value**: Identify and articulate what sets your project apart from others. Ensure it solves a specific problem in a way that is not readily available in the Marketplace.
-    - **Tag Appropriately**: Accurately categorize your item—whether it's a full app or a UI kit—to set the right expectations for potential users.
+    - **Define Your Unique Value**: Identify and articulate what sets your project apart from others. Ensure it solves a specific problem in a way that is not readily available in Marketplace.
+    - **Tag Appropriately**: Accurately categorize your item—whether it's a full app, UI kit, or library—to set the right expectations for potential users.
     - **Justify Your Pricing**: Make sure the pricing of your item reflects its true value and stands in fair comparison to similar offerings. Ensure it offers enough depth and uniqueness to warrant the minimum price point.
-
-
+    - **For Paid Libraries**: Libraries should excel in at least one of these areas:
+        - 🧘 Simplifying technical complexity (ease)
+        - ⚡️ Enabling quick and seamless integrations (speed)  
+        - 🎛️ Offering diverse reusable components and features (quantity)
+        - 🛠️ Providing robust, reliable functionality (quality)
+        - 🙋‍♂️ Addressing specific, high-demand use cases with thoughtful solutions (relevance)
 
 ### 7. Legal & Security
 
@@ -446,8 +418,6 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
     - **Review your content carefully:** Ensure all text, images, and other assets align with community standards and legal guidelines.
     - **Err on the side of caution:** When in doubt, it's best to avoid potentially controversial content.
 
-
-
 #### 7.2 Free of Copyrighted Material
 
 - **Criteria:** Projects must not include any unauthorized use of copyrighted material, such as:
@@ -457,8 +427,6 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
 - **Why it Matters:** Using copyrighted material without permission is a legal infringement and can result in serious legal consequences, including [DMCA takedown](copyright-dmca-process.md).
 - **What To Do:** Please review our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) and [Navigating External Licenses](navigating-external-licenses.md) for more details.
 
-
-
 #### 7.3 Free of Trademarked Material
 
 - **Criteria:** Items must not misuse or infringe upon registered trademarks, including:
@@ -467,7 +435,6 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
     - Slogans
 - **Why it Matters:** Trademark infringement can lead to legal disputes and damage the reputation of FlutterFlow Marketplace. Please see our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) for more details.
 - **What To Do:** Please review our [Legal Guidelines for Creators](legal-guidelines-for-creators.md) for more details.
-
 
 #### 7.4 Free of Confidential Data
 
@@ -481,8 +448,6 @@ Building trust in the FlutterFlow Marketplace requires respecting legal boundari
     - **Require users to provide their own API keys:** Use ephemeral, user-provided API keys in calls rather than hardcoding your own keys directly into code.
     - **Scrub your project before submission:** Double-check your project files and codebase to ensure no confidential information is accidentally included.
 
-
-
 ## Common Rejection Reasons
 
 To help streamline your submission process, here are some of the most frequent reasons projects are flagged:
@@ -492,7 +457,6 @@ To help streamline your submission process, here are some of the most frequent r
 - [**Image Issues**](submission-criteria.md#29-high-quality-images): Ensure images are high-resolution, sized appropriately, and don't include the FlutterFlow logo.
 - [**Poor Widget Tree Organization**](submission-criteria.md#510-organized-widget-tree): Utilize components and naming effectively to create a clean, well-structured project.
 - [**Use of Copyrighted Assets**](submission-criteria.md#72-free-of-copyrighted-material): Only include assets that you have created or have the legal right to use commercially.
+- [**Library Dependencies**](submission-criteria.md#515-library-values-implementation-libraries-only): Libraries cannot currently depend on other libraries from Marketplace.
 
-
-
-We're excited to see the amazing FlutterFlow projects you bring to the Marketplace! By following these guidelines, you'll help us maintain a high-quality platform that benefits the entire FlutterFlow community. **Let's build something incredible together!** 🚀
+We're excited to see the amazing FlutterFlow projects you bring to Marketplace! By following these guidelines, you'll help us maintain a high-quality platform that benefits the entire FlutterFlow community. **Let's build something incredible together!** 🚀
