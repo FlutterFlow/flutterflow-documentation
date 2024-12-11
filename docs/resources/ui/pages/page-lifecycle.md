@@ -150,6 +150,18 @@ For instance, if you have a shortcut assigned to the letter "C" and a user tries
 To handle this, you can enable the option on the `TextField` widget to bypass keyboard shortcuts. However, it’s generally better to assign more unique combinations, like Cmd + C, which are less likely to conflict with normal typing in a text field.
 :::
 
+### On Dispose [Action Trigger]
+
+The **On Dispose** action trigger allows you to define actions that execute when a page is navigated away from or removed from memory. It is particularly useful for performing cleanup tasks, such as closing long-lived connections, canceling subscriptions, or releasing resources, to prevent memory leaks and ensure efficient resource management.
+
+:::tip[Possible Use Cases]
+
+- **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
+- **Saving Data:** Save user inputs, application state, or progress to local storage or a database before the page is removed. This ensures that no critical information is lost during navigation or app lifecycle changes.
+- **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
+:::
+![page-on-dispose.avif](imgs/page-on-dispose.avif)
+
 ## Page state
 
 :::note[State Variables]
