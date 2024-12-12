@@ -152,13 +152,17 @@ To handle this, you can enable the option on the `TextField` widget to bypass ke
 
 ### On Dispose [Action Trigger]
 
-The **On Dispose** action trigger allows you to define actions that execute when a page is navigated away from or removed from memory. It is particularly useful for performing cleanup tasks, such as closing long-lived connections, canceling subscriptions, or releasing resources, to prevent memory leaks and ensure efficient resource management.
+The **On Dispose** action trigger allows you to define actions that execute when a page is navigated away from or removed from memory. It is particularly useful for stopping ongoing operations.
+
+Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/audio/audio-recroding.md) is started when the page loads using the [On Page Load](#on-page-load-action-trigger) action trigger. The recording process runs as long as the user remains on the page. However, when the user navigates away, you need to stop the recording to save resources and ensure the recorded audio is finalized. By using the On Dispose action trigger, you can safely stop the recording and save the file.
+
+Additionally, if you are using a third-party package that relies on persistent connections or listeners, you can leverage [Custom Actions](../../../ff-concepts/adding-customization/custom-actions.md) with the On Dispose action trigger to close streams or cancel subscriptions.
 
 :::tip[Possible Use Cases]
-
-- **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
-- **Saving Data:** Save user inputs, application state, or progress to local storage or a database before the page is removed. This ensures that no critical information is lost during navigation or app lifecycle changes.
-- **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
+- **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
+    - For example, real-time applications, such as stock trading platforms, rely on WebSocket connections to fetch live updates. A homepage displaying a live ticker of stock prices would require opening the WebSocket connection on page load and closing it on On Dispose. Without an On Dispose trigger, the WebSocket connection could remain open unnecessarily, leading to wasted resources and app instability.
+- **Finalizing Database Transactions**: Commit or roll back database transactions if the user leaves the page before completing the process.
+- **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
 :::
 ![page-on-dispose.avif](imgs/page-on-dispose.avif)
 

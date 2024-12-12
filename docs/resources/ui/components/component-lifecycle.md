@@ -72,7 +72,9 @@ Your component can also respond to certain keypress events. For more details on 
 keyboard shortcuts](/resources/ui/pages/page-lifecycle#on-shortcut-press-action-trigger).
 
 ### On Dispose [Action Trigger]
-The **On Dispose** action trigger for components allows you to define actions that execute when the page containing the component is navigated away or removed from memory. This is particularly useful for performing cleanup tasks specific to the component, such as closing streams, canceling subscriptions, or releasing resources, ensuring efficient memory and resource management.
+The **On Dispose** action trigger for components allows you to define actions that execute when the page containing the component is navigated away or removed from memory. It is particularly useful for stopping ongoing operations.
+
+Imagine a scenario where a [periodic action](../../../resources/control-flow/time-based-logic/periodic-action.md), such as fetching live weather updates, is started in a component when it is loaded (i.e, [On Initialization](#on-initialization-action-trigger)). The action runs periodically, providing real-time data updates as long as the component is active. However, when the page containg the component is navigated away, you need to stop the periodic action to conserve resources and prevent unnecessary processing. By using the On Dispose action trigger, you can safely stop the periodic updates and clean up any associated resources.
 
 :::info
 The **On Dispose** action trigger is always executed before the [**parent page’s On Dispose**](../pages/page-lifecycle.md#on-dispose-action-trigger). This ensures that the component cleans up its resources first, allowing the parent to finalize its disposal without dependencies on the child.
