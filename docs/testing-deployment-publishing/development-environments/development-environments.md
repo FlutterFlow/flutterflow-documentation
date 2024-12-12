@@ -183,3 +183,9 @@ No, FlutterFlow does not use Flutter flavors. Instead, it generates code based o
 </p>
 </details>
 
+<details>
+<summary>How to deploy apps for different environments?</summary>
+<p>
+You can configure deployment settings for each environment using the dropdown interface on the deployment page. For mobile, set a new package name, and for web, set a new site URL. Once done, deploy your app as usual. See how to do it in [**detail here**](../publishing/deploy-for-environment.md).
+</p>
+</details>
