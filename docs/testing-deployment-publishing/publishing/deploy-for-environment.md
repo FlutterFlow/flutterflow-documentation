@@ -24,8 +24,6 @@ For example, in an ecommerce app, you can set environment values for package nam
 
 Once this setup is complete, you can deploy to [App Store](apple-appstore-deployment.md) and [Play Store](google-playstore-deployment.md) as usual.
 
-[TK]
-
 :::tip[For iOS]
 
 - You can publish your apps as unlisted on the App Store to allow different builds without public exposure.
@@ -40,5 +38,3 @@ Web deployment in FlutterFlow provides you with the ability to configure the ent
 To set up deployment for different environments, navigate to **Settings & Integrations > App Settings > Web Deployment**, and select the desired environment from the **Current Environment** dropdown on the right side. Then, set a new **Site URL** for the selected environment and [publish](web-publishing.md) your app as usual.
 
 ![deploy-web-app-for-environments.avif](imgs/deploy-web-app-for-environments.avif)
-
-## FAQs
