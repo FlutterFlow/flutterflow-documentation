@@ -104,7 +104,7 @@ Here’s how you can add the Supabase reset password feature to your app:
 
 1. On the **ForgotPassword Page**, add the **Send Reset Password Email** action and set the **Email Field** dropdown to the widget that accepts the user's email address. This action will send the reset password link to the provided email.
 2. The reset link sent to the user will open the **UpdatePassword Page**. On that page, add the **Update Password** action and set the **Password Field** and **Confirm Password Field** to the respective input widgets.
-3. Copy the route name of the **UpdatePassword Page** and paste it into the **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source**. Just after **`"{{ .ConfirmationURL}}[here]"`**. This ensures that when users click the reset link, they are directed to the **UpdatePassword** page to set their new password.
+3. Copy the route name of the **UpdatePassword Page** and paste it into the **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source**. After **`"{{ .ConfirmationURL}}"`** add **`"/[here]"`** only if you're not using a custom redirect URL. If using a custom redirect URL, the confirmation URL will redirect directly to your specified path.
 4. [Deploy your app to the web](../../../testing-deployment-publishing/publishing/web-publishing.md).
 5. Copy the URL of your deployed project and paste it into the **Supabase Dashboard > Authentication > URL Configuration > Site URL**.
 

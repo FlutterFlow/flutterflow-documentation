@@ -38,10 +38,6 @@ These steps are mandatory if you want to send push notifications to iOS devices:
 
 Here are the steps to send push notifications:
 
-1. [Enabling push notification](#enabling-push-notification)
-2. [Only for iOS: Configuring iOS app](#only-for-ios-configuring-ios-app)
-3. [Sending push notifications](#sending-push-notifications)
-
 ### Enabling push notification
 
 :::warning
@@ -54,12 +50,18 @@ Here are the steps to send push notifications:
 
 To enable push notifications:
 
-1. Click on the **Settings and Integrations** -> App Settings -> **Push Notifications** and 
+1. Navigate to the **Settings and Integrations -> App Settings -> Push Notifications** and 
 **Enable Push Notifications**.
 2. Now, click on the **Deploy** button. This will create and deploy the *Cloud Functions* in your 
    Firebase project that are necessary for push notifications to work.
 
-![img.png](imgs/img.png)
+![img.png](imgs/enable-push-notification.avif)
+
+:::info
+By default, the **Automatically Prompt Users for Permission** option is enabled, meaning your app will automatically prompt users requesting for permission to receive push notifications when the app is started. However, this may be disruptive to your user sign-in flow.
+
+If you disable it, you can control when the permission is requested. To do so, you will need to manually [**Request Permission**](../../resources/projects/settings/project-setup.md#request-permission-action) at the appropriate point in your app. **It is recommended to keep this option always enabled**.
+:::
 
 ### Only for iOS: Configuring iOS app
 
