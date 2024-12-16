@@ -31,7 +31,7 @@ Follow the steps below to add Email Login action:
 By using this action, you can provide your users with the flexibility to create their accounts in different ways, according to their preferences.
 
 :::note
-As of now, we support creating accounts with Email/Password and Google.
+As of now, we support creating accounts with Email/Password, Google and Apple auth providers.
 :::
 
 Follow the steps below to add email signup action:
@@ -62,7 +62,7 @@ Follow the steps below to add this action:
 
 ![img_6.png](img_6.png)
 
-## Reset Password [Action]
+## Send Reset Password Email [Action]
 
 This action allows users to reset their password by sending a reset link to their registered email address.
 
@@ -104,7 +104,7 @@ Here’s how you can add the Supabase reset password feature to your app:
 
 1. On the **ForgotPassword Page**, add the **Send Reset Password Email** action and set the **Email Field** dropdown to the widget that accepts the user's email address. This action will send the reset password link to the provided email.
 2. The reset link sent to the user will open the **UpdatePassword Page**. On that page, add the **Update Password** action and set the **Password Field** and **Confirm Password Field** to the respective input widgets.
-3. Copy the route name of the **UpdatePassword Page** and paste it into the **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source**. Just after **`"{{ .ConfirmationURL}}[here]"`**. This ensures that when users click the reset link, they are directed to the **UpdatePassword** page to set their new password.
+3. Copy the route name of the **UpdatePassword Page** and paste it into the **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source**. After **`"{{ .ConfirmationURL}}"`** add **`"/[here]"`** only if you're not using a [custom redirect URL](#use-custom-redirect-urls). If using a custom redirect URL, the confirmation URL will redirect directly to your specified path.
 4. [Deploy your app to the web](../../../testing-deployment-publishing/publishing/web-publishing.md).
 5. Copy the URL of your deployed project and paste it into the **Supabase Dashboard > Authentication > URL Configuration > Site URL**.
 
@@ -140,7 +140,41 @@ Here’s how you can add the Supabase reset password feature to your app:
 </div>
 <p></p>
 
+### Use Custom Redirect URLs
 
+Instead of relying on the default `{{ .ConfirmationURL }}` path, you could optionally configure a **custom redirect URL** in Supabase. This option allows you to bypass the default setup and send users directly to a custom page in your app for resetting their password.
+
+To configure a custom redirect URL:
+
+1. When adding the **Send Reset Password Email** action in FlutterFlow, enter the **Redirect To** URL. For example `http://my-site.com/resetPassword`.
+2. Whitelist this custom URL by navigating to **Supabase Dashboard > Authentication > URL Configuration > Redirect URL**, and click **Add URL** to include it.
+3. Update the reset password template. Go to **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source** and ensure only `{{ .ConfirmationURL }}` is present in the template (remove any appended route names).
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/TaAYPINhn20QEgR6TR5F?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Delete User 
 
