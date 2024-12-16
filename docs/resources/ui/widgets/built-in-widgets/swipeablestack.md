@@ -169,7 +169,7 @@ To do so, navigate to the **Properties Panel > SwipeableStack Properties > Allow
 - **Vertical**: Swipe up or down.
 - **Horizontal**: Swipe left or right.
 
-For example, in a dating app, you can set the **Allowed Swipe Direction** to **Horizontal**, enabling users to swipe left to "dislike" and right to "like" a profile.
+For example, in Tinder-like Swipeable Cards layout, you can set the **Allowed Swipe Direction** to **Horizontal**, enabling users to swipe left to "dislike" and right to "like" a profile.
 
 ![allowed-swipe-direction.png](imgs/allowed-swipe-direction.png)
 
