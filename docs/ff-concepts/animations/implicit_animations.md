@@ -25,7 +25,7 @@ Here are some examples of how it looks when you update the widget properties wit
 | **Text** | ![Without Implicit Animation](animation_gifs/without-implicit-animation-text.gif) | ![Wit Implicit Animation](animation_gifs/with-implicit-animation-text.gif) |
 
 
-Here's an exammple of how you add the Implicit Animation on Container widget:
+Here's an example of how you add the Implicit Animation on Container widget:
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
