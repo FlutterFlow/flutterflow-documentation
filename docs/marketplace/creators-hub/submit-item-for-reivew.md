@@ -30,8 +30,9 @@ In order to submit an item, it must be inside of a project that has been Set For
 
 To set a project for Marketplace:
 
-1. Select the [**Share Icon**](../../intro/ff-ui/toolbar.md#share-project) from the Toolbar (top right side of the screen).
-2. Select **Create New Item > Set For Marketplace > Yes**
+1. Prerequisite: please enroll as a Marketplace creator first by setting up a profile in [Marketplace](https://marketplace.flutterflow.io/profile). You can optionally also apply to become a paid creator, which allows you to monetize your items.
+2. Select the [**Share Icon**](../../intro/ff-ui/toolbar.md#share-project) from the Toolbar (top right side of the screen). Please note that you must be the project owner to see this icon and to submit an item.
+3. Select **Create New Item > Set For Marketplace > Yes**
 
 :::tip
 You can also clone an existing project and then set it as a Marketplace Project.
@@ -42,7 +43,7 @@ You can also clone an existing project and then set it as a Marketplace Project.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324"
         title=""
         style={{
@@ -98,8 +99,7 @@ Four types of items can be submitted:
 - Libraries
 - Template Apps
 - Template Page or Components
-- Custom Code 
-
+- Custom Code
 
 <Tabs>
 <TabItem value="1" label="Libraries" default>
@@ -148,7 +148,6 @@ Custom Code is Dart code that can be used within FlutterFlow projects. There are
 </TabItem>
 </Tabs>
 
-
 #### Template Tags (optional)
 
 Template tags help users sort and filter items. If the tags listed don't match your item, enter your desired search terms under *Keywords*.
@@ -181,6 +180,7 @@ Your item will be shown in your [Dashboard](https://marketplace.flutterflow.io/d
 ![Item in "Pending Approval"](../imgs/image.avif)
 
 ### 4. Edit an approved item
+
 :::info
 At this time, it is not possible to edit an approved Marketplace Item. We are working to add this functionality soon.
 :::
