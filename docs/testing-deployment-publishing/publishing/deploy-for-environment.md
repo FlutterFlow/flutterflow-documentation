@@ -18,9 +18,35 @@ You can configure and publish environment-specific builds of your app for both i
 
 To set up deployment for different environments, go to **Settings & Integrations > App Settings > Mobile Deployment**, and select the desired environment from the **Current Environment** dropdown on the right side.
 
-To submit an environment-specific build to the App Store and Play Store, you must have unique package names representing each environment. To achieve this, create [environment values](../development-environments/development-environments.md#use-environment-values) for the package name and set it into **Settings & Integrations > General > App Details > Package Name**. This ensures that when you switch environments, the package name changes and you can submit separate builds to the App Store and Play Store.
+Now, to submit an environment-specific build to the App Store and Play Store, you must have unique package names representing each environment. To set this up, go to **Settings & Integrations > General > App Details > Package Name**, select the **Current Environment** from the dropdown (on the right), and specify the package name for that environment. This ensures that when you switch environments, the package name changes and you can submit separate builds to the App Store and Play Store.
 
-For example, in an ecommerce app, you can set environment values for package names such as `io.flutterflow.ecommerceflow.dev` for the development environment and `io.flutterflow.ecommerceflow.staging` for the staging environment.
+For example, in an ecommerce app, you can set package names such as `io.flutterflow.ecommerceflow.dev` for the development environment and `io.flutterflow.ecommerceflow.staging` for the staging environment.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/WecD2unE4ERmisWzAVgz?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 Once this setup is complete, you can deploy to [App Store](apple-appstore-deployment.md) and [Play Store](google-playstore-deployment.md) as usual.
 
