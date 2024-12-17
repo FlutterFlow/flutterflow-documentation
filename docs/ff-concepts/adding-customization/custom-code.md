@@ -374,6 +374,36 @@ FlutterFlow:
 This example demonstrates how to add a [**pub.dev**](https://pub.dev) package to a Custom Widget snippet, but you can follow the same process for adding a package to Custom Actions. For a deep dive, explore the detailed documentation on **[Custom Widgets](custom-widgets.md)** and [**Custom Actions**](custom-actions.md).
 :::
 
+## Manage Dependencies
 
+You can also add packages directly on the **Dependencies** page (at **Settings and Integrations > Project Setup > Project Dependencies**) and they will be reflected in your custom actions or custom widgets, because packages are managed at the project level.
 
+Additionally, when you create a new custom action or widget, all previously added custom dependencies will be listed on the **Pubspec** **Dependencies** list on the right side. This ensures that you can easily track all custom dependencies in the project, avoiding duplication or conflicts that could override each other or cause project errors.
 
+If any project errors related to packages arise, they will be displayed in both the custom code editor and the Dependencies page. You can also update the version numbers of custom packages directly from the Dependencies page. This streamlined process helps maintain consistency and reduces potential issues related to custom packages.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/aaX1a8s4Z1xytVa2DYd5?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

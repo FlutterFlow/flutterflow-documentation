@@ -156,6 +156,23 @@ To loop the cards in SwipeableStack, move to the **Properties Panel > SwipeableS
 
 ![loopcard](imgs/loopcard.avif)
 
+### Allowed Swipe Direction
+You can control the directions in which users can swipe cards by adjusting the **Allowed Swipe Direction** property. It enables you to customize how users interact with the SwipeableStack, letting you limit swipes to certain directions or enable swiping in any direction.
+
+To do so, navigate to the **Properties Panel > SwipeableStack Properties > Allowed Swipe Direction**, and select one of the following options:
+
+- **All**: Users can swipe in all directions.
+- **Left**: Swipe only to the left.
+- **Right**: Swipe only to the right.
+- **Down**: Swipe only downward.
+- **Up**: Swipe only upward.
+- **Vertical**: Swipe up or down.
+- **Horizontal**: Swipe left or right.
+
+For example, in Tinder-like Swipeable Cards layout, you can set the **Allowed Swipe Direction** to **Horizontal**, enabling users to swipe left to "dislike" and right to "like" a profile.
+
+![allowed-swipe-direction.png](imgs/allowed-swipe-direction.png)
+
 ### Customize card display count and scale
 
 You can adjust how many cards are visible in the stack at one time and how they are scaled. This customization enhances the UX by letting you create a more engaging and visually appealing card stack, where the depth and hierarchy of cards can be easily perceived by users.
