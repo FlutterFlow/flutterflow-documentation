@@ -187,6 +187,10 @@ You could choose a filter relation based on your requirements. For example:
         - Example: `'A__'` matches any three-character string starting with `'A'` (e.g., `'Ant'`, `'Art'`).
 :::
 
+:::info
+You can combine multiple filters using **AND** or **OR** operators to create more advanced filtering logic. This enables you to refine your data query to match specific conditions.
+:::
+
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/b5a62eac1f5d4d9698d30b064c395326?sid=4e8c4972-7fac-4c9b-b495-c9f0cb783717" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 

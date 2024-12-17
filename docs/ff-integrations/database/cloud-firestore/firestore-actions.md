@@ -189,10 +189,9 @@ To add a filter when querying a collection:
 
 
 :::info
-Select a filter relation that aligns with your specific needs. For instance, if you wish to display only incomplete todos, you can create a field named 'isDone,' set the relation to 'Equal To,' and define the value as 'False.' 
-
-Another example would be to showcase users older than 30; in this case, you'd create a 'Age' field, set the relation to 'Greater Than,' and specify the value as 30.
-
+- Select a filter relation that aligns with your specific needs. For instance, if you wish to display only incomplete todos, you can create a field named 'isDone,' set the relation to 'Equal To,' and define the value as 'False.' 
+- Another example would be to showcase users older than 30; in this case, you'd create a 'Age' field, set the relation to 'Greater Than,' and specify the value as 30.
+- You can combine multiple filters using **AND** or **OR** operators to create more advanced filtering logic. This enables you to refine your data query to match specific conditions.
 :::
 
 <div class="video-container"><iframe src="https://www.loom.
