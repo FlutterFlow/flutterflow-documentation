@@ -30,7 +30,7 @@ In order to submit an item, it must be inside of a project that has been Set For
 
 To set a project for Marketplace:
 
-1. Select the [**Share Icon**](../../intro/ff-ui/toolbar.md#share-project) from the Toolbar (top right side of the screen).
+1. Click on the [**Share Project**](../../intro/ff-ui/toolbar.md#share-project) button from the Toolbar (top right side of the screen). **Note that** only project owners can see the share button and have the ability to submit projects to the Marketplace.
 2. Select **Create New Item > Set For Marketplace > Yes**
 
 :::tip
