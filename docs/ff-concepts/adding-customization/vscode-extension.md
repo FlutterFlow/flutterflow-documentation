@@ -19,6 +19,9 @@ While you can edit custom code inside FlutterFlow's in-app code editor, editing 
 3. **Leverage Flutter & Dart Tooling**: Using Visual Studio Code allows you to take advantage of existing Flutter and Dart tools, making it easier to develop and refactor your custom code. 
 4. **Leverage the AI Ecosystem**: Additionally, you can easily utilize AI tools available in the Visual Studio ecosystem, such as Copilot.
 
+:::info
+The VS Code extension requires downloading code, for which you must be on [**paid plan**](https://www.flutterflow.io/pricing).
+:::
 
 ## Installation
 
