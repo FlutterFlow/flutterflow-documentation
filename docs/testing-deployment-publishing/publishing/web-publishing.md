@@ -83,7 +83,7 @@ In such a situation, you can try to find a replacement package on [pub.dev](http
 
 In this step, you must provide general information about your web app by following the steps below:
 
-1. Navigate to the **Setting and Integrations >** **App Settings >** **Web Publishing**.
+1. Navigate to the **Setting and Integrations >** **App Settings >** **Web Deployment**.
 
 ![web-pub-general-settings](../imgs/web-pub-general-settings.avif)
 
@@ -91,7 +91,7 @@ Inside the **General Information** section, enter the following details:
 - **Site URL**: You can define the *Site URL* by adding the subdomain, for example, *mywebapp.flutterflow.app*. You can only change the subdomain, i.e., the part before *flutterflow.app*.
     
     :::warning
-    - You can remove or change the existing subdomain by simply entering the new one and hitting the publish button. Note that when you change your subdomain, it only takes effect the next time you publish.
+    - You can remove or change the existing subdomain by simply entering the new one and hitting the publish button. Note that when you change your subdomain, it only takes effect the next time you deploy.
     - Old addresses can stop working anytime and be given to another user.
     - There is a limit on the number of subdomains you can register per user. *Paying users can register up to 20 subdomains*. You will receive an in-app warning if you are approaching the limit.
     :::
