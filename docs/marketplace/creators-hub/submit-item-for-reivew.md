@@ -74,11 +74,13 @@ If you aren't ready to submit your item, select **Save As Draft** to continue ed
 
 #### Cover Photo
 
-The cover photo should be 1200x800 pixels and help the users understand the purpose of the item. Please do not include the FlutterFlow logo in your cover image.
+The cover photo should be **1200x800 pixels** and help the users understand the purpose of the item. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. Please do not include the FlutterFlow logo in your cover image.
 
 #### Gallery Photos (optional)
 
-Include up to 4 additional photos that showcase your item's features. Each should be should be 1200x800 pixels.
+Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. 
+
+Each should be should be **1200x800 pixels**.
 
 #### Name
 
@@ -86,11 +88,13 @@ The item name should be professional, unique, and help the users understand the 
 
 #### Description
 
-The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. If the item includes any third-party paid services, those should also be mentioned in the description. Please use correct grammar and capitalization.
+The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. 
+
+If the item includes any third-party paid services or pub.dev packages/dependencies, those should also be mentioned in the description. Please use correct grammar and capitalization.
 
 #### Usage Instructions
 
-Provide clear and concise instructions on how to implement and utilize your item within FlutterFlow. Include any necessary steps, code snippets, or configurations required to get started. If your item depends on any third party services, please show users where to find relevant API keys or more information. Please use correct grammar and capitalization.
+Provide clear and concise instructions on how to implement and utilize your item within FlutterFlow. Include any necessary steps, code snippets, or configurations required to get started. If your item depends on any third party services or pub.dev packages/dependencies, please provide full details of these including showing users where to find relevant API keys or more information. Please use correct grammar and capitalization.
 
 #### Marketplace Item Type
 
