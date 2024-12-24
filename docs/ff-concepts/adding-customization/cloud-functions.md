@@ -282,5 +282,23 @@ If you encounter deployment errors, it may be helpful to check out [this communi
 </details>
 
 
+<details>
+<summary>Why am I getting a CORS error when executing my Cloud Function?</summary>
+<p>
+The CORS error occurs because the **Access-Control-Allow-Origin** header is missing from the response, preventing your request from being completed. This issue can arise with new Cloud Functions, whether deployed through FlutterFlow or not.
+
+Follow the steps below to fix the issue:
+
+1. Open your Google Cloud Project's [**Cloud Functions List**](https://console.cloud.google.com/functions/list)
+2. Select the function causing the issue.
+3. Navigate to the **Permissions** tab.
+4. Open the **VIEW BY ROLES** tab.
+5. Ensure there's a row with `Cloud Functions Invoker` with principal set to `allUsers`. If it’s missing, click on the **Grant Access**, add `allUsers` with the `Cloud Functions Invoker` role.
+
+![add-cf-invoker-role](imgs/add-cf-invoker-role.avif)
+</p>
+</details>
+
+
 
 
