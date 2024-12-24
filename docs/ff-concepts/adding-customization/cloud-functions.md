@@ -281,12 +281,6 @@ If you encounter deployment errors, it may be helpful to check out [this communi
 
 </details>
 
-<details>
-<summary>I am getting "Error: Unable to initialize Storyboard</summary>
-<p>
-This error typically occurs because the initial page has n
-</p>
-</details>
 
 <details>
 <summary>Why am I getting a CORS error when executing my Cloud Function?</summary>
