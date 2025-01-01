@@ -297,7 +297,7 @@ one.
 
 When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of [information](#setup-code): the Package name with its Version number and the Import statement.
 
-### Using Private or Unpublished Packages
+### Using Unpublished or Private Packages
 FlutterFlow supports the use of unpublished packages, which allows you to integrate packages that are not yet available on **pub.dev**. This capability is particularly useful when working with custom, forked, or private packages hosted on public or private repositories. By leveraging this, you can enhance your app’s functionality with customized or proprietary libraries tailored to your specific needs.
 
 :::info[Possible Use Cases]
