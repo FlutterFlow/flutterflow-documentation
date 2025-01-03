@@ -5,6 +5,7 @@ description: Learn how branching in FlutterFlow allows you to add new features w
 tags: [Branching, Collaboration]
 sidebar_position: 1
 keywords: [Branching, Collaboration, FlutterFlow, Concepts]
+toc_max_heading_level: 4
 ---
 
 # Branching
@@ -185,8 +186,22 @@ During a merge, FlutterFlow compares the changes made in both branches, if the c
 
 ### Initiating a merge
 
-You can initiate a merge in either direction by selecting the **Branch Options** button next to the current branch in the **Branching Menu.**
+FlutterFlow currently supports **two merging approaches**: the existing “**Merge**” functionality and the new “**Git Merge**” (v2). Below is a comprehensive overview of both approaches and detailed guidance on the recommended workflow.
 
+- [**Merge (Legacy)**](#): The legacy merge uses a custom tool (originally built in FlutterFlow) to calculate differences and conflicts between branches.
+- [**Git Merge (New)**](#): The new Git Merge option leverages Git's robust repository and conflict-resolution capabilities.
+
+:::warning
+
+At present, both methods are available side by side, allowing you to either continue using the legacy merge or adopt Git Merge. Over time, as Git Merge proves its stability, the legacy merge may be deprecated. 
+
+The Merge (Legacy) option has some known issues with merges being incorrectly calculated. Therefore, **we strongly recommend using [Git Merge](#) whenever possible for a smoother and more accurate merge process.**
+
+:::
+
+#### Merge (Legacy)
+
+You can initiate a merge in either direction—merging from a parent branch into a child branch or from a child branch back into the parent branch—by selecting the Branch Options button next to the current branch in the Branching Menu.
 
 <div style={{
     position: 'relative',
@@ -220,6 +235,95 @@ Next, you'll see a screen that will display if there are any conflicts. If you d
 
 ![merge](../imgs/merge.avif)
 
+#### Git Merge (New)
+
+The new Git Merge option uses Git under the hood to calculate differences between project files. Each project is backed by a repository of YAML files (except for custom code, which appears as Dart files). These YAML files map directly to various project properties, and Git calculates differences among these files to identify merge conflicts. This method provides clearer and more consistent conflict detection compared to [legacy Merge](https://www.notion.so/Merge-V2-16fc6675fc3180bb9ad5c7ac2e3dbd06?pvs=21) (a custom solution).
+
+:::info
+
+This option is currently in **beta**. In addition to fixing any issues, here’s what we have planned:
+
+- **Hover-Based Documentation**: Display helpful tooltips for YAML fields (scheduled before production release).
+- **Inline YAML Errors**: Show errors directly in the file for quicker fixes (scheduled before production release).
+- **Simplified YAML**: Make YAML files and errors more user-friendly and understandable.
+- **Enhanced Visual Diff Tools**: Provide more intuitive views for comparing changes.
+- **User Experience Improvements**: Continuously refine merging workflows and UI elements.
+- **Performance Optimizations**: Improve speed when initiating merges.
+
+:::
+
+[how to initiate merge with this option; just like previous one]
+
+When performing a Git merge in FlutterFlow, you’ll see a screen with multiple panels and info sections. Here are the details of it.
+
+[image]
+
+**Top Panel**
+
+- **Branch Information**: At the top of the merge interface, you’ll see exactly which branches are being merged. You have two options for merging directions:
+    - **Parent → Child**: Pulls changes down from the parent into the child branch, often used to keep a feature branch in sync with upstream updates.
+    - **Child → Parent**: Pushes features (or other changes) from the child branch back up to the parent, commonly done once a feature is ready for the main codebase.
+- **YAML Validation Errors**: Occurs when manual edits to the YAML files produce invalid syntax. Clicking on these errors should redirect you to the specific file, and invalid lines will be underlined in red within the file. Note that, you **cannot** complete the merge while YAML errors exist.
+- **Project Errors**: Project errors occur when the result of a merge creates a problem in your project. For example, this might happen if the merge results in two data types having the same name. These errors need to be resolved to ensure your project works as expected. You have several options to deal with project errors:
+    - **Fix the Errors During the Merge**: This approach ensures that the merged project is error-free right from the start. Here’s how you can do it:
+        - **Edit the YAML files:** Update the YAML files to fix issues, such as renaming a data type that causes a conflict.
+        - **Edit the project directly while merging:** While still in the merge process, open the project, make the necessary changes (like renaming the conflicting data type), and then continue.
+    - **Fix the Errors After the Merge**: If you prefer, you can complete the merge first and address the errors later. For example, finish the merge process as it is. After merging, go back to the project and resolve any issues.
+- **Cancel**: Abandons the merge process and discards any conflict resolutions you’ve already applied during this merge session.
+- **Merge**: Finalizes the merge once all merge conflicts and YAML validation errors are cleared. Project errors can remain if you choose to resolve them later.
+- **Bulk Accept Changes**: Accessible via the arrow next to “Merge,” this option lets you accept all changes from one branch at once—handy if you already know which branch’s changes take precedence.
+
+**Left-Hand Side Panel: Project Configuration YAML Files**
+
+The left-hand side panel displays all the project configuration YAML files, which are crucial for managing your project’s settings and structure.
+
+YAML (Yet Another Markup Language) files use a simple, human-readable format to define configuration data. They are [particularly useful](https://www.notion.so/Merge-V2-16fc6675fc3180bb9ad5c7ac2e3dbd06?pvs=21) during a merge because they allow you to directly review, understand, and resolve any changes or conflicts in your project’s configuration.
+
+- **Filter Files:** You can use filters to narrow down the list of YAML files based on specific criteria:
+    - **All Files:** Shows every YAML file in the project.
+    - **Files with Changes:** Displays only files where a change has been made on either branch.
+    - **Files with Conflicts:** Shows only files that have merge conflicts, where the changes in one branch directly contradict the changes in the other.
+
+
+    :::tip
+    - A **change** refers to any update, addition, or deletion made to a YAML file on one of the branches. For example, modifying a field name or changing the properties of a widget.
+    - A **conflict** occurs when the same part of a file has been changed in both branches, making it unclear which version to keep. For instance, if one branch changes the color of the Container to blue and the other changes it to red, this creates a conflict.
+    
+    :::
+    
+- **Search for a Specific File:** If you’re looking for a particular YAML file, you can use the search bar to locate it quickly. This is especially useful in larger projects with many configuration files.
+    
+    :::info
+    
+    - Some YAML file names may include a **key**, which serves as a unique identifier.
+    - Clicking on a YAML file in the panel opens it in the editor, allowing you to view, edit, and resolve issues directly.
+    
+    :::
+    
+
+**Lower Panel: The Merge Result**
+
+The **Lower Panel** displays the final merged files after Git applies its merging logic. It gives you a chance to manually inspect and edit the outcome—whether or not a conflict occurs.
+
+Git attempts to combine changes from both branches automatically. If Git can’t reconcile certain lines, it flags a **merge conflict** in the file. Conflicts appear with special markers like `<<<<<<< HEAD`, `=======`, and `>>>>>>>`.
+
+- `<<<<<<< HEAD`: Marks the beginning of your current branch’s changes.
+- `=======`: Separates your current branch’s changes from the other branch’s changes.
+- `>>>>>>> <other-branch>`: Marks the end of the conflict, indicating the other branch’s changes.
+
+:::info
+
+Git may label branches as `HEAD` or a commit reference, which can differ from the friendly branch names shown in FlutterFlow.
+
+- **HEAD**: Refers to the current branch (or commit) you’re on—essentially your “main viewpoint” in Git.
+- **Other Branch**: Denotes the second branch (or commit) you’re merging in, which might be labeled using a commit hash or the branch name from the repository.
+
+:::
+
+You can modify files in the lower panel at any time—even if there’s no conflict. You could also choose which branch’s changes to keep here. You might decide to keep certain lines from `HEAD` (your current branch) or from the other branch or combine them manually.
+
+After editing, click Save to confirm your changes. A red Reset button appears if you want to undo your edits and restore the file to its initial merged state before you began editing.
+
 ### Resolve merge conflicts
 A merge conflict occurs when multiple team members make changes to the same part of the project.
 
@@ -235,6 +339,8 @@ For example, imagine two developers, Alice and Bob, are working on the same Flut
 When Alice's changes are merged into the main project first, her updates will be integrated without any issues. However, when Bob tries to merge his changes afterward, a merge conflict will occur because the changes to the button text and color have already been modified by Alice.
 
 In your project, if you get merge conflicts, here’s how you resolve them.
+
+#### Merge (Legacy)
 
 <div style={{
     position: 'relative',
@@ -266,6 +372,25 @@ In your project, if you get merge conflicts, here’s how you resolve them.
 For certain conflicts, such as those involving variables and API configurations, you'll see a **View Configuration** option. Enabling this option opens the split screen view displaying changes from the new branch, allowing you to easily identify what has changed.  In this view, you can see things that were removed highlighted in red, and things that were added highlighted in green.
 
 ![view-configuration](../imgs/view-configuration.avif)
+
+#### Git Merge (New)
+When you initiate a merge using Git, the system attempts to automatically reconcile your project files. Any conflicts that cannot be automatically resolved are flagged for your attention.
+
+You can review each file with merge conflicts and choose to:
+
+- Accept all changes from one branch.
+- Pick specific changes from each branch.
+- Manually edit the merged YAML files.
+
+After conflict resolution, it’s essential to correct any YAML validation errors that arise from manual edits.
+
+Finally, complete the merge by clicking “Merge.” If you merged a child branch into its parent and are confident everything looks correct, you may delete the child branch.
+
+:::tip
+Should you discover a mistake in your merge, you can revert your branch to a prior commit, though any work done since that commit will be lost.
+:::
+
+[Arcade]
 
 ### Resolve conflicts manually
 If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
