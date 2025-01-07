@@ -139,7 +139,7 @@ To import a library project into another FlutterFlow project, you must go to the
 - By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
 - You can also import the `current` version of the library to use the latest state of the library on the main branch - however, this is not recommended.
 - You must have a paid plan to import a library.
-
+- When you import a library into a project or another library, the library’s version must be lower than the project or library it’s being imported into. Learn more about managing the library’s FlutterFlow version [**here**](version-management.md) and [**here**](version-management.md#version-management-with-libraries).
 :::
 
 
@@ -234,6 +234,8 @@ You can easily upgrade to newer versions of the libraries as they become availab
 :::
 
 ![update-library](imgs/update-library.avif)
+
+
 
 ## Library Values
 
