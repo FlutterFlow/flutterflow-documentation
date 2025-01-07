@@ -69,14 +69,14 @@ You can upgrade to a newer release or switch to an older one. However, if you ch
 
 ## Recommended FlutterFlow Version Workflow
 
+If you have a complex app with custom code that depends on specific versions of package dependencies, it may be helpful to pin your project to a specific version. This is the workflow we recommend for managing the version of your projects.
 
-![versioning-workflow.avif](imgs/versioning-workflow.avif)
+1. You’ll be notified when a new stable version is released, typically every four weeks.
+2. When a new stable version is released, you can choose when you would like to upgrade based on your own release schedule and development process. For instance, you might wait until you're not actively developing a new feature, or you could check the release notes first to see if there are must-have features that would prompt you to upgrade sooner.
+3. When you’re ready to upgrade, update the pinned version and create a new branch in your project. Run your app on the platforms you support—using a simulator, emulator, or physical device to ensure everything works as intended.
+4. If everything looks good, you're good to go! If for some reason your app is not working as expected, you can choose to revert the version and lose those testing changes until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e., [upgrade dependencies](../../ff-concepts/adding-customization/custom-code.md#manage-dependencies)/custom code).
 
-1. **Encounter a Breaking Change**: Suppose you upgrade from **FlutterFlow version 4.2** to **4.3**, and notice breaking changes in your custom code. Rather than scrambling to fix these errors or getting stuck in version 4.3, you can opt to **pin your project to version 4**, a reliable stable release.
-2. **Pin a Project**: By pinning your project to version 4, you effectively freeze the Flutter version, pubspec dependencies, and code generation at that stable point. This prevents all new updates from affecting your project or introducing further breakage.
-3. **Skip Intermediate Versions**: While FlutterFlow continues to release newer versions (4.3, 4.4, 4.5), you remain on 4 until you decide it’s time to upgrade. This approach lets you safely build and publish your app without worrying about incremental breaking changes.
-4. **Upgrade Directly to the Next Stable Release**: When FlutterFlow designates a future stable release, you can jump straight from 4 to 4.5 or 5, bypassing any issues in the in-between versions. This way, you only upgrade once, reducing the risk of multiple compatibility checks along the way.
-5. **Stay in Control**: While pinned to a stable release, FlutterFlow will **not** automatically update your project. You alone decide when (and if) to move to a later stable release or whatever latest version by unpinning the project.
+For a deeper look at workflow, check out our video guide for more details.
 
 ## Version Management with Libraries
 
