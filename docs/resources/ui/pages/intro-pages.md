@@ -28,7 +28,7 @@ Whether you're starting from scratch, using a template, or leveraging AI tools,
 there are several pathways to achieve the desired functionality and aesthetic of your desired Page.
 
 :::tip[Generated Code]
-When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/page-model.md).
+When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/pages-generated-code).
 :::
 
 FlutterFlow allows you to easily create new pages using the **Add Page, Component, or Flow** button, 
