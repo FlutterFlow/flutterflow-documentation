@@ -297,6 +297,101 @@ one.
 
 When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of [information](#setup-code): the Package name with its Version number and the Import statement.
 
+### Using Unpublished or Private Packages
+FlutterFlow supports the use of unpublished packages, which allows you to integrate packages that are not yet available on **pub.dev**. This capability is particularly useful when working with custom, forked, or private packages hosted on public or private repositories. By leveraging this, you can enhance your app’s functionality with customized or proprietary libraries tailored to your specific needs.
+
+:::info[Possible Use Cases]
+
+- **Using a Different Branch of a Package**: When you need to test or use features that are only available on a specific branch of a package.
+- **Forked Version for Customizing Features**: When you need to fork a package to customize its functionality or fix issues that the original maintainer hasn’t addressed.
+- **Private Packages for Internal Use**: Companies or enterprises may have internal Flutter libraries that they want to use in their FlutterFlow app but cannot publish publicly due to confidentiality or proprietary restrictions.
+
+:::
+
+#### Add Packages from Public Repositories
+
+For packages hosted on public repositories (e.g., GitHub), you can add them to your FlutterFlow project by specifying the repository URL in the following format.
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+```
+
+You can also fine-tune the dependency by using additional parameters like `ref` and `path` in the given format. Here are some examples:
+
+- **To use a specific branch** (e.g., `development`):
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      ref: development
+```
+
+- **To use from a specific commit**:
+
+```js
+dependencies:
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      ref: a1b2c3d4
+
+```
+
+- **To use package located in a subdirectory of the repository**:
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      path: packages/subpackage_name
+```
+
+Here’s exactly how you do it:
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CgLCKJzdiCuaxMF04pg6?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### Add Packages from Private Repositories
+
+For packages hosted in private repositories, you’ll need to authenticate access. This can be done using HTTPS with a personal access token.
+
+For GitHub, you can go to your GitHub account’s settings and [generate a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) with the necessary permissions and use it in the following format. You can also create and use a [fine-grained access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) that only has certain permissions.
+
+```js
+package_name:
+    git:
+      url: https://<username>:<personal-access-token>@github.com/username/private_repo.git
+```
+
+Replace `<username>` with your GitHub username and `<personal-access-token>` with the generated token.
+
 ### Setup Code
 To configure your custom code with the package, copy and paste the following items from the package's pub.dev page:
 
