@@ -74,9 +74,11 @@ If you have a complex app with custom code that depends on specific versions of 
 1. You’ll be notified when a new stable version is released, typically every four weeks.
 2. When a new stable version is released, you can choose when you would like to upgrade based on your own release schedule and development process. For instance, you might wait until you're not actively developing a new feature, or you could check the release notes first to see if there are must-have features that would prompt you to upgrade sooner.
 3. When you’re ready to upgrade, update the pinned version and create a new branch in your project. Run your app on the platforms you support—using a simulator, emulator, or physical device to ensure everything works as intended.
-4. If everything looks good, you're good to go! If for some reason your app is not working as expected, you can choose to revert the version and lose those testing changes until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e., [upgrade dependencies](../../ff-concepts/adding-customization/custom-code.md#manage-dependencies)/custom code).
+4. If everything looks good, you're good to go! If for some reason your app is not working as expected, you can choose to revert the version and lose those testing changes until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e., upgrade dependencies/custom code).
 
-For a deeper look at workflow, check out our video guide for more details.
+:::tip
+See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating [**dependencies**](../../ff-concepts/adding-customization/custom-code.md#manage-dependencies).
+:::
 
 ## Version Management with Libraries
 
