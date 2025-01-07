@@ -91,37 +91,40 @@ Finally, the `dispose` function in the `ProductListPageModel` class is used to c
 The `PageWidget` classes are responsible for creating the UI of individual pages and holding the widget tree as designed in the FlutterFlow canvas. These classes always extend Flutter's `StatefulWidget` class utilizing Flutter's built-in state management through `setState` to handle dynamic updates and interact with the app's lifecycle.
 
 ```js
-class OrderListPageWidget extends StatefulWidget {
-  const OrderListPageWidget({
-    super.key,
-    …
-  });
+class ProductListPageWidget extends StatefulWidget {
+    const ProductListPageWidget({super.key});
 
-  final int? productId;
-  …
-
-  @override
-  State<OrderListPageWidget> createState() =>
-      _OrderListPageWidgetState();
+    @override
+    State<ProductListPageWidget> createState() => _ProductListPageWidgetState();
 }
 
 ```
 
-#### Route Awareness
-In the generated code, FlutterFlow automatically includes the `RouteAware` mixin in the **State** class. This makes the page aware of changes in the navigator's session history, allowing it to handle lifecycle events such as when the page becomes visible again after being removed.
+#### PageModel Initialization
+Within the State class, the `PageModel` object is initialized. [This class](#pagemodel-class) serves as a centralized place to manage the page’s state, handle business logic, and interact with the data layer.
 
 ```js
-class _OrderListPageWidgetState extends State<OrderListPageWidget>
-    with RouteAware {
+class _ProductListPageWidgetState extends State<ProductListPageWidget> {
+    late ProductListPageModel _model;
+
+    @override
+    void initState() {
+        super.initState();
+        _model = createModel(context, () => ProductDetailPageModel());
+
+    }
+
 ```
 
-#### PageModel Initialization
-Additionally, the `PageModel` class is initialized within the state class. This class serves as a centralized place to manage the page’s state, handle business logic, and interact with the data layer.
+#### PageModel Dispose
+Similarly, the [`dispose` method](#dispose) of the `PageModel` class is invoked from the **overridden** `dispose` method of the widget's **State** class. This ensures that any resources managed by the `PageModel`, such as listeners or controllers, are properly released when the widget is removed from the widget tree.
 
 ```js
-class _OrderListPageWidgetState extends State<OrderListPageWidget>
-    with RouteAware {
-  late OrderListPageModel _model;
+  @override
+  void dispose() {
+    _model.dispose();
+    super.dispose();
+  }
 ```
 
 #### Global Scaffold Key
@@ -136,14 +139,37 @@ return Scaffold(
 ```
 
 #### Keyboard Dismissal
-Moreover, the root widget of every page is a `GestureDetector` with an `onTap` callback that unfocuses the current input field. This ensures that any active keyboard is dismissed when tapping outside an input field, improving the user experience across pages.
+Moreover, the root widget of every page is a `GestureDetector` with an `onTap` callback that unfocuses the current input field. This approach ensures that tapping anywhere outside an input field dismisses the keyboard or removes focus, creating a better user experience.
 
 ```js
 return GestureDetector(
-    onTap: () => FocusScope.of(context).unfocus(),
-    child: Scaffold(
-    ...)
+    onTap: () {
+    FocusScope.of(context).unfocus();
+    FocusManager.instance.primaryFocus?.unfocus();
+    },
+...)
 ```
 
 These functionalities are automatically added by FlutterFlow to ensure seamless navigation and proper keyboard handling across pages.
 
+### onPageLoad Action: Generated Code
+
+When you define actions for the `onPageLoad` action trigger of a Page, these actions are added inside an `addPostFrameCallback` method within the page's `initState` method. This ensures that the actions are executed only after the initial widget tree is built.
+
+```js
+ @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => ProductListPageModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      _model.searchString = null;
+      safeSetState(() {});
+      ... // more actions
+    });
+    
+  }
+```
+
+The `addPostFrameCallback` ensures that onPageLoad actions are executed after the widget is fully built and rendered. This avoids issues caused by trying to update the UI before it is ready.
