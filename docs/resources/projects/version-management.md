@@ -49,7 +49,7 @@ When you “pin” your project to a stable release, no updates from FlutterFlow
 
 :::info
 - **For Desktop**: You will [**download**](https://www.flutterflow.io/desktop) and install the dedicated binary for the pinned stable release. This binary won’t auto-update to give you a consistent development environment.
-- **For Web**: You will access a unique URL to open the FlutterFlow pinned to that specific release.
+- **For Web**: You will be automatically redirected to the unique URL when you open a project from the dashboard.
 - **No forced upgrades**: You won’t be prompted to switch to the latest FlutterFlow release until your pinned version’s support window (e.g., 6 months) has ended.
 - **Pinning only from main branch**: You can only pin a FlutterFlow version if your project is on the main branch; pinning from other branches isn’t allowed.
 :::
