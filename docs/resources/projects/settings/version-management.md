@@ -109,12 +109,12 @@ If you have a complex app with custom code that depends on specific versions of 
 4. If everything looks good, you're good to go! If for some reason your app is not working as expected, you can choose to revert the version and lose those testing changes until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e. upgrade dependencies/custom code).
 
 :::tip
-See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating [**dependencies**](../../ff-concepts/adding-customization/custom-code.md#manage-dependencies).
+See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating [**dependencies**](../../../ff-concepts/adding-customization/custom-code.md#manage-dependencies).
 :::
 
 ## Version Management with Libraries
 
-[Libraries](libraries.md) have their own versions, and each library version corresponds to a specific FlutterFlow version. The FlutterFlow version of the library version is determined by the version used (pinned or otherwise) when the project was updated.
+[Libraries](../libraries.md) have their own versions, and each library version corresponds to a specific FlutterFlow version. The FlutterFlow version of the library version is determined by the version used (pinned or otherwise) when the project was updated.
 
 Library projects can also be pinned to a specific version, ensuring that all library versions use that FlutterFlow release until the pinned version is changed.
 
