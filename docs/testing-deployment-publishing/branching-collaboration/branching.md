@@ -252,7 +252,34 @@ This option is currently in **beta**. In addition to fixing any issues, here’s
 
 :::
 
-[how to initiate merge with this option; just like previous one]
+To initiate a Git Merge, navigate to **Toolbar >** select **Branching > Branching options >** select **Git Merge**.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/8RY2cm1vYI5waxHLGImY?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 
 When performing a Git merge in FlutterFlow, you’ll see a screen with multiple panels and info sections. Here are the details of it.
 
@@ -318,6 +345,8 @@ Git attempts to combine changes from both branches automatically. If Git can’t
 - `=======`: Separates your current branch’s changes from the other branch’s changes.
 - `>>>>>>> <other-branch>`: Marks the end of the conflict, indicating the other branch’s changes.
 
+You might decide to keep certain lines from `HEAD` (your current branch) or from the other branch or combine them manually.
+
 :::info
 
 During merge conflict, Git may label branches as `HEAD` or a commit reference, which can differ from the friendly branch names you given.
@@ -327,7 +356,7 @@ During merge conflict, Git may label branches as `HEAD` or a commit reference, w
 
 :::
 
-You can modify files in the lower panel at any time—even if there’s no conflict. You could also choose which branch’s changes to keep here. You might decide to keep certain lines from `HEAD` (your current branch) or from the other branch or combine them manually.
+You can modify files or edit the project directly from the lower panel at any time—even if there’s no conflict.
 
 After editing, click **Save Changes** to confirm your changes. A red reset button appears if you want to undo your edits and restore the file to its initial state before you began editing.
 
