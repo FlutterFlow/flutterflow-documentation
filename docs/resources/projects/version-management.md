@@ -58,7 +58,11 @@ When you “pin” your project to a stable release, no updates from FlutterFlow
 
 You can check the project’s pinned FlutterFlow version from the Dashboard.
 
+![see-pinned-project-in-dashboard](imgs/see-pinned-project-in-dashboard.avif)
+
 To change the pinned version, navigate to **Settings and Integrations > General > App Details >** scroll down to the **Version Pinning** section and select the stable release you want to lock into. Once you update the pinned version, you can only edit the project using that version of FlutterFlow.
+
+![pin-version](imgs/pin-version.avif)
 
 You can upgrade to a newer release or switch to an older one. However, if you choose to downgrade, any changes made after moving to a higher version will be lost.
 
