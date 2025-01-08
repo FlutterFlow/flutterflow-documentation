@@ -409,6 +409,43 @@ For certain conflicts, such as those involving variables and API configurations,
 
 ![view-configuration](../imgs/view-configuration.avif)
 
+
+If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/xZsRHG7d5rfNf5z937hZ?embed&show_copy_link=true"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::info
+
+If the visual editor doesn't display something in the split screen UI that you need to manage during a merge, click the **Edit Project** button and edit the project as usual.
+
+::::
+
+
 #### Git Merge (New)
 When you initiate a merge using Git, the system attempts to automatically reconcile your project files. Any conflicts that cannot be automatically resolved are flagged for your attention.
 
@@ -450,44 +487,6 @@ Finally, complete the merge by clicking **Merge**.
 - If you merged a child branch into its parent and are confident everything looks correct, you may delete the child branch.
 - If you find any issues after the merge, you can revert the branch to an earlier commit. However, be aware that any changes made after that commit will be lost.
 :::
-
-
-### Resolve Conflicts Manually
-If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/xZsRHG7d5rfNf5z937hZ?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-:::info
-
-If the visual editor doesn't display something in the split screen UI that you need to manage during a merge, click the **Edit Project** button and edit the project as usual.
-
-::::
-
 
 ## Branch-level Permissions
 In your project, you have the ability to assign specific roles such as **Editors** and **Mergers** to project members for each branch.
