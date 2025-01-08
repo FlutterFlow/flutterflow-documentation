@@ -256,7 +256,7 @@ This option is currently in **beta**. In addition to fixing any issues, here’s
 
 When performing a Git merge in FlutterFlow, you’ll see a screen with multiple panels and info sections. Here are the details of it.
 
-[image]
+![merging-window](imgs/merging-window.avif)
 
 **Top Panel**
 
@@ -271,9 +271,9 @@ When performing a Git merge in FlutterFlow, you’ll see a screen with multiple 
     - **Fix Errors After the Merge**: If you prefer, you can complete the merge first and address the errors later. For example, finish the merge process as it is. After merging, go back to the project and resolve any issues.
 - **Cancel**: Abandons the merge process and discards any conflict resolutions you’ve already applied during this merge session.
 - **Merge**: Finalizes the merge once all merge conflicts and YAML validation errors are cleared. Project errors can remain if you choose to resolve them later.
-- **Bulk Accept Changes**: Accessible via the arrow next to “Merge,” this option lets you accept all changes from one branch at once—handy if you already know which branch’s changes take precedence.
+- **Bulk Accept Changes**: Accessible via the **arrow** next to **Merge** button. this option lets you accept all changes from one branch at once—handy if you already know which branch’s changes take precedence.
 
-**Left-Hand Side Panel**
+**Left Panel**
 
 The left-hand side panel displays all the project configuration YAML files, which are crucial for managing your project’s settings and structure.
 
@@ -281,9 +281,9 @@ YAML (Yet Another Markup Language) files use a simple, human-readable format to 
 
 - **Filter Files:** You can use filters to narrow down the list of YAML files based on specific criteria:
     
-    - **All Files:** Shows every YAML file in the project.
-    - **Files with Changes:** Displays only files where a change has been made on either branch.
-    - **Files with Conflicts:** Shows only files that have merge conflicts, where the changes in one branch directly contradict the changes in the other.
+    - **All Files (Unchanged Files)**: Shows every YAML file in the project.
+    - **Files with Changes**: Displays only files where a change has been made on either branch.
+    - **Files with Conflicts**: Shows only files that have merge conflicts, where the changes in one branch directly contradict the changes in the other.
 
         :::info
         - A **change** refers to any update, addition, or deletion made in one of the branches. For example, modifying a field name or changing the properties of a widget.
@@ -294,8 +294,21 @@ YAML (Yet Another Markup Language) files use a simple, human-readable format to 
     
 Clicking on a file in the panel opens it in the editor, allowing you to view, edit, and resolve issues directly.
     
+**Right Upper Panel**
 
-**Lower Panel**
+The Upper Right Panel offers a quick, side-by-side comparison of file changes from both branches, along with easy one-click accept buttons and previews. This panel makes it simple to decide which changes to keep or discard.
+
+:::info
+We highlight edits using green and red (Git) color coding:
+
+- **Green** indicates lines or values **added** (or unique) in one branch.
+- **Red** indicates lines or values **removed** (or replaced) by that branch.
+:::
+
+- **Accept Change Button**: Quickly accept changes from one branch if you know it has the correct edits.
+- **Eye (Preview) Icon**: Open or view the file in the FlutterFlow builder to see how the changes look. For example, you can preview a theme color change visually rather than just reading its name in YAML.
+
+**Right Lower Panel**
 
 The **Lower Panel** displays the final merged files after Git applies its merging logic. It gives you a chance to manually inspect and edit the outcome—whether or not a conflict occurs.
 
@@ -307,7 +320,7 @@ Git attempts to combine changes from both branches automatically. If Git can’t
 
 :::info
 
-Git may label branches as `HEAD` or a commit reference, which can differ from the friendly branch names you given.
+During merge conflict, Git may label branches as `HEAD` or a commit reference, which can differ from the friendly branch names you given.
 
 - **HEAD**: Refers to the current branch (or commit) you’re on—essentially your “main viewpoint” in Git.
 - **Other Branch**: Denotes the second branch (or commit) you’re merging in, which might be labeled using a commit hash.
@@ -316,7 +329,7 @@ Git may label branches as `HEAD` or a commit reference, which can differ from th
 
 You can modify files in the lower panel at any time—even if there’s no conflict. You could also choose which branch’s changes to keep here. You might decide to keep certain lines from `HEAD` (your current branch) or from the other branch or combine them manually.
 
-After editing, click **Save** to confirm your changes. A red reset button appears if you want to undo your edits and restore the file to its initial state before you began editing.
+After editing, click **Save Changes** to confirm your changes. A red reset button appears if you want to undo your edits and restore the file to its initial state before you began editing.
 
 ### Resolve Merge Conflicts
 A merge conflict occurs when multiple team members make changes to the same part of the project.
@@ -373,8 +386,35 @@ When you initiate a merge using Git, the system attempts to automatically reconc
 You can review each file with merge conflicts and choose to:
 
 - Accept all changes from one branch.
-- Pick specific changes from each branch.
+![accept-all-from-one-branch](imgs/accept-all-from-one-branch.avif)
+- Pick specific changes from any branch.
+![accept-specific-change-from-file](imgs/accept-specific-change-from-file.avif)
 - Manually edit the YAML files. **Note that** it’s essential to correct any YAML validation errors that arise from manual edits.
+    <div style={{
+        position: 'relative',
+        paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+        height: 0,
+        width: '100%'}}>
+        <iframe 
+            src="https://demo.arcade.software/hphsdsKGyT8Vid7c0NxX?embed&show_copy_link=true"
+            title=""
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                colorScheme: 'light'
+            }}
+            frameborder="0"
+            loading="lazy"
+            webkitAllowFullScreen
+            mozAllowFullScreen
+            allowFullScreen
+            allow="clipboard-write">
+        </iframe>
+    </div>
+    <p></p>
 
 Finally, complete the merge by clicking **Merge**.
 :::tip
@@ -382,7 +422,6 @@ Finally, complete the merge by clicking **Merge**.
 - If you find any issues after the merge, you can revert the branch to an earlier commit. However, be aware that any changes made after that commit will be lost.
 :::
 
-[Arcade]
 
 ### Resolve Conflicts Manually
 If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
