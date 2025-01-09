@@ -196,6 +196,47 @@ If you prefer watching a video tutorial, here is the guide for you:
 </div>
 <p></p>
 
+## Use Library as Design System
+
+You can also import a design system from the [Library](../../resources/projects/libraries.md) added to your project. A library can serve as a central repository for your design assets, components, and styles—effectively becoming a Design Library for your application(s).
+
+:::tip[possible use cases]
+
+- **Enterprise Applications:** Large organizations can develop a centralized design system as a library to ensure all internal applications maintain a cohesive look and feel, enhancing brand identity and user experience.
+- **Startup MVPs:** Startups can expedite the development of Minimum Viable Products (MVPs) by leveraging a pre-built design library like [**shadcn**](https://marketplace.flutterflow.io/item/cNlm0zWW1Nfq11cFXBmp), allowing them to focus on functionality and user validation.
+- **Cross-Platform Consistency:** Teams aiming to deploy apps across multiple platforms (iOS, Android, Web) can use a popular design system library to ensure uniformity in design, reducing the effort required for platform-specific adjustments.
+
+:::
+
+To add a design system from a library, first, ensure that you [add a library to your project](../../resources/projects/libraries.md#importing-a-library). Then, navigate to **Theme Settings > Design System** and click on **No Design System Selected**. From the dropdown menu, **Select a library** you want to use.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/G3PekDcZNsWYrKoz3xnE?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ---
 
 ## Loading Indicator
