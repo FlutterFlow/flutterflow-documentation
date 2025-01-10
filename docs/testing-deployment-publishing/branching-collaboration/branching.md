@@ -289,22 +289,20 @@ When performing a Git merge in FlutterFlow, you’ll see a screen with multiple 
 
 - **Branch Information**: At the top of the merge interface, you’ll see exactly which branches are being merged. You have two options for merging directions:
     - **Parent → Child**: Pulls changes down from the parent into the child branch, often used to keep a feature branch in sync with the parent branch.
-    - **Child → Parent**: Pushes features (or other changes) from the child branch back up to the parent, commonly done once a feature is ready to go into parent branch.
-- **YAML Validation Errors**: Occurs when manual edits to the YAML files produce invalid syntax. Clicking on these errors should redirect you to the specific file. Invalid lines will be underlined in red within the file and, you **cannot** complete the merge while YAML errors exist.
+    - **Child → Parent**: Pushes features (or other changes) from the child branch back up to the parent, commonly done once a feature is ready to go into the parent branch.
+- **YAML Validation Errors**: Occurs when manual edits to the project files produce invalid syntax. Clicking on these errors should redirect you to the specific file. Invalid lines will be underlined in red within the file, and, you **cannot** complete the merge while YAML errors exist.
 - **Project Errors**: Project errors occur when the result of a merge creates a problem in your project. For example, this might happen if the merge results in two data types having the same name. These errors need to be resolved to ensure your project works as expected. You have several options to deal with project errors:
     - **Fix Errors During the Merge**: This approach ensures that the merged project is error-free right from the start. Here’s how you can do it:
-        - **Edit the YAML files:** Update the YAML files to fix issues, such as renaming a data type that causes a conflict.
+        - **Edit the YAML files:** Update the project YAML files (in the Right Lower Panel) to fix issues, such as renaming a data type that causes a conflict.
         - **Edit the Project Directly while Merging:** While still in the merge process, open the project, make the necessary changes (like renaming the conflicting data type), and then continue.
     - **Fix Errors After the Merge**: If you prefer, you can complete the merge first and address the errors later. For example, finish the merge process as it is. After merging, go back to the project and resolve any issues.
 - **Cancel**: Abandons the merge process and discards any conflict resolutions you’ve already applied during this merge session.
 - **Merge**: Finalizes the merge once all merge conflicts and YAML validation errors are cleared. Project errors can remain if you choose to resolve them later.
-- **Bulk Accept Changes**: Accessible via the **arrow** next to **Merge** button. this option lets you accept all changes from one branch at once—handy if you already know which branch’s changes take precedence.
+- **Bulk Accept Changes**: Accessible via the **arrow** next to **Merge** button. This option lets you accept all changes from one branch at once—handy if you already know which branch’s changes take precedence.
 
 **Left Panel**
 
-The left-hand side panel displays all the project configuration YAML files, which are crucial for managing your project’s settings and structure.
-
-YAML (Yet Another Markup Language) files use a simple, human-readable format to define configuration data. They are particularly useful during a merge because they allow you to directly review, understand, and resolve any changes or conflicts in your project’s configuration.
+The left-hand side panel displays all the project files in YAML format. YAML (Yet Another Markup Language) files use a simple, human-readable format to define configuration data. They are particularly useful during a merge because they allow you to directly review, understand, and resolve any changes or conflicts in your project’s file.
 
 - **Filter Files:** You can use filters to narrow down the list of YAML files based on specific criteria:
     
@@ -317,7 +315,7 @@ YAML (Yet Another Markup Language) files use a simple, human-readable format to 
         - A **conflict** occurs when the same part of a file has been changed in both branches, making it unclear which version to keep. For instance, if one branch changes the color of the Container to blue and the other changes it to red, this creates a conflict.
         :::
     
-- **Search File:** If you’re looking for a particular file, you can use the search bar to locate it quickly. This is especially useful in larger projects with many configuration files.
+- **Search File:** If you’re looking for a particular file, you can use the search bar to locate it quickly. This is especially useful in larger projects with many files.
     
 Clicking on a file in the panel opens it in the editor, allowing you to view, edit, and resolve issues directly.
     
@@ -326,39 +324,32 @@ Clicking on a file in the panel opens it in the editor, allowing you to view, ed
 The Upper Right Panel offers a quick, side-by-side comparison of file changes from both branches, along with easy one-click accept buttons and previews. This panel makes it simple to decide which changes to keep or discard.
 
 :::info
-We highlight edits using green and red (Git) color coding:
+The edits are highlighted using green and red (Git) color coding:
 
 - **Green** indicates lines or values **added** (or unique) in one branch.
 - **Red** indicates lines or values **removed** (or replaced) by that branch.
 :::
 
 - **Accept Change Button**: Quickly accept changes from one branch if you know it has the correct edits.
-- **Eye (Preview) Icon**: Open or view the file in the FlutterFlow builder to see how the changes look. For example, you can preview a theme color change visually rather than just reading its name in YAML.
+- **Eye (Preview) Icon**: Open or view the file in the FlutterFlow builder to see how the changes look. For example, you can preview a theme color change visually rather than just reading its name in the file.
 
 **Right Lower Panel**
 
 The **Lower Panel** displays the final merged files after Git applies its merging logic. It gives you a chance to manually inspect and edit the outcome—whether or not a conflict occurs.
 
-Git attempts to combine changes from both branches automatically. If Git can’t reconcile certain lines, it flags a **merge conflict** in the file. Conflicts appear with special markers like `<<<<<<< HEAD`, `=======`, and `>>>>>>>`.
+Git attempts to combine changes from both branches automatically. If Git can’t reconcile certain lines, it flags a **merge conflict** in the file. Conflicts appear with special markers like `<<<<<<<`, `=======`, and `>>>>>>>`.
 
-- `<<<<<<< HEAD`: Marks the beginning of your current branch’s changes.
+- `<<<<<<<`: Marks the beginning of other branch’s changes
 - `=======`: Separates your current branch’s changes from the other branch’s changes.
-- `>>>>>>> <other-branch>`: Marks the end of the conflict, indicating the other branch’s changes.
+- `>>>>>>>`: Marks the end of the conflict, indicating your current branch’s changes.
 
-You might decide to keep certain lines from `HEAD` (your current branch) or from the other branch or combine them manually.
-
-:::info
-
-During merge conflict, Git may label branches as `HEAD` or a commit reference, which can differ from the friendly branch names you given.
-
-- **HEAD**: Refers to the current branch (or commit) you’re on—essentially your “main viewpoint” in Git.
-- **Other Branch**: Denotes the second branch (or commit) you’re merging in, which might be labeled using a commit hash.
-
+:::tip
+You might decide to keep certain lines from `<<<<<<<` (from the other branch) or `>>>>>>>` (from your branch) or combine them manually.
 :::
 
 You can modify files or edit the project directly from the lower panel at any time—even if there’s no conflict.
 
-After editing, click **Save Changes** to confirm your changes. A red reset button appears if you want to undo your edits and restore the file to its initial state before you began editing.
+After editing, click **Save Changes** to confirm your changes. A red reset button appears if you want to undo your changes and restore the file to its initial state before you began editing.
 
 ### Resolve Merge Conflicts
 A merge conflict occurs when multiple team members make changes to the same part of the project.
