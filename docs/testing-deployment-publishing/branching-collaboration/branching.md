@@ -241,7 +241,7 @@ The new Git Merge option uses Git under the hood to calculate differences betwee
 
 :::info
 
-This option is currently in **beta**. In addition to fixing any issues, here’s what we have planned:
+This option is currently in **Beta**. In addition to fixing any issues, here’s what we have planned:
 
 - **Hover-Based Documentation**: Display helpful tooltips for YAML fields (scheduled before production release).
 - **Inline YAML Errors**: Show errors directly in the file for quicker fixes (scheduled before production release).
