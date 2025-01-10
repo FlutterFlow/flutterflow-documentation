@@ -188,8 +188,8 @@ During a merge, FlutterFlow compares the changes made in both branches, if the c
 
 FlutterFlow currently supports **two merging approaches**: the existing “**Merge**” functionality and the new “**Git Merge**” (v2).
 
-- [**Merge (Legacy)**](#): The legacy merge uses a custom tool (originally built in FlutterFlow) to calculate differences and conflicts between branches.
-- [**Git Merge (New)**](#): The new Git Merge option leverages Git's robust repository and conflict-resolution capabilities.
+- [**Merge (Legacy)**](#merge-legacy): The legacy merge uses a custom tool (originally built in FlutterFlow) to calculate differences and conflicts between branches.
+- [**Git Merge (New)**](#git-merge-new): The new Git Merge option leverages Git's robust repository and conflict-resolution capabilities.
 
 :::warning
 
