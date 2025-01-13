@@ -13,11 +13,11 @@ FlutterFlow automatically generates the `flutter_flow_model.dart` file, which co
 The diagram below illustrates how these utility classes and methods are utilized in a widget or model class:
 
 
-![page-generated.png](imgs%2Fpage-generated.png)
+![page-generated.png](imgs/page-generated.png)
 
 When a component is added to your page (and every component you create [generates both a widget and a model class)](component-gen-code.md), the flow below explains how the utility classes are used when there is a child component:
 
-![page-component-generated.png](imgs%2Fpage-component-generated.png)
+![page-component-generated.png](imgs/page-component-generated.png)
 
 <p></p>
 
