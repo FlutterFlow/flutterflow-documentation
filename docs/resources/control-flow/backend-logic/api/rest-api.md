@@ -38,7 +38,7 @@ Some of the common request headers that you might need while sending a request a
 To pass the request header:
 
 1. Select the **Headers** tab and click on the **+ Add Header** button.
-2. Inside the input box, enter the header name followed by the colon(:) and its value (e.g., **Content-Length: application/json**).
+2. Inside the input box, enter the header name followed by the colon(:) and its value (e.g., **Content-Type: application/json**).
 
 <div style={{
     position: 'relative',
