@@ -208,7 +208,7 @@ You can also import a design system from the [Library](../../resources/projects/
 
 :::
 
-To add a design system from a library, first, ensure that you [add a library to your project](../../resources/projects/libraries.md#importing-a-library). Then, navigate to **Theme Settings > Design System** and click on **No Design System Selected**. From the dropdown menu, **Select a library** you want to use.
+To add a design system from a library, first, ensure that you [add a library dependency to your project](../../resources/projects/libraries.md#importing-a-library). Then, navigate to **Theme Settings > Design System** and click on **No Design System Selected**. From the dropdown menu, **Select a library** you want to use.
 
 
 <div style={{
