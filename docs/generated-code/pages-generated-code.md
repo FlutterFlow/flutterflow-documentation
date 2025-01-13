@@ -1,12 +1,12 @@
 ---
 title: Pages
 slug: /generated-code/page-model
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Generated Code: Pages
 
-When you create a new page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. So if the name of the page you created is called ProductListPage, FlutterFlow generation backend will automatically create ProductListPageWidget class and ProductListPageModel class. 
+When you create a new Page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. So if the name of the page you created is called **ProductListPage**, FlutterFlow generation backend will automatically create **ProductListPageWidget** class and **ProductListPageModel** class. 
 
 :::info[Prerequisites]
 This guide uses example of the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
@@ -15,6 +15,15 @@ This guide uses example of the generated code of the **[EcommerceFlow demo app](
 ## PageModel class
 
  The `PageModel` classes are responsible for managing the state of individual pages and initializing the components used in these Pages. These classes extend the `FlutterFlowModel` class, which provides a consistent structure and shared functionality across all page models.
+
+The following diagram shows how FlutterFlow generates the model and widget class when you create a new Page in FlutterFlow: 
+![page-generation-initial.png](imgs/page-generation-initial.png)
+
+:::tip[FlutterFlow Model]
+To learn more about the utility classes and methods that FlutterFlow generates for all pages & components, see [**the FlutterFlowModel document**](flutterflow-model.md). 
+:::
+
+
 
 #### Managing Local State
 
@@ -154,7 +163,7 @@ These functionalities are automatically added by FlutterFlow to ensure seamless 
 
 ### onPageLoad Action: Generated Code
 
-When you define actions for the `onPageLoad` action trigger of a Page, these actions are added inside an `addPostFrameCallback` method within the page's `initState` method. This ensures that the actions are executed only after the initial widget tree is built.
+When you define actions for the `onPageLoad` action trigger of a Page, these actions are added inside an `addPostFrameCallback` method within the page's `initState` method. This ensures that the **on Page Load** actions are executed after the widget is fully built and rendered. This avoids issues caused by trying to update the UI before it is ready.
 
 ```js
  @override
@@ -172,4 +181,6 @@ When you define actions for the `onPageLoad` action trigger of a Page, these act
   }
 ```
 
-The `addPostFrameCallback` ensures that onPageLoad actions are executed after the widget is fully built and rendered. This avoids issues caused by trying to update the UI before it is ready.
+:::tip[safe Set State]
+The `safeSetState` method is a custom implementation built on top of Flutter's `setState` method. It ensures that `setState` is only called when the widget is currently mounted, preventing potential runtime errors.
+:::
