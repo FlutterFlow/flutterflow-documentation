@@ -7,9 +7,9 @@ sidebar_position: 2
 keywords: [FlutterFlow, Google Maps, Widget, Integration]
 ---
 
-# Adding Google Maps widget
+# Google Maps Widget
 
-The Google Maps widget enables the integration of interactive maps into your app, offering users
+The **Google Maps** widget enables the integration of interactive maps into your app, offering users
 valuable geographical insights. For instance, in a food delivery app, this widget could display the
 locations of restaurants. It offers a range of customization options, allowing you to tailor the
 display with various map types and markers to suit your specific needs.

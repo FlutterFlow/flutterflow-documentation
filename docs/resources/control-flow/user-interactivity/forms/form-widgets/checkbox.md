@@ -6,7 +6,7 @@ keywords: [FlutterFlow, Checkbox, CheckboxGroup, CheckboxListTile, Multiple Choi
 description: Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your FlutterFlow app.
 ---
 # Checkbox
-In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: [**Checkbox**](#checkbox), [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
+In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: **Checkbox**, [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
 
 :::tip[Widget State]
 Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
@@ -49,7 +49,7 @@ Let's see how to add a checkbox widget and build an example that shows its value
 Here is a simple way to do it:
 
 1. First, click on the **+ Add Widget**, drag the **Checkbox** widget from the **Base Elements** tab, or add it directly from the widget tree.
-2. Below the Checkbox, add a [**Text**](../../../../ui/widgets/built-in-widgets/text.md) widget, move to the properties panel, click on **Set from Variable,** and choose the **Widget State > checkboxValue** (i.e., name of your checkbox).
+2. Below the Checkbox, add a [**Text**](../../../../ui/widgets/basic-widgets/text.md) widget, move to the properties panel, click on **Set from Variable,** and choose the **Widget State > checkboxValue** (i.e., name of your checkbox).
 
 <div style={{
     position: 'relative',
@@ -263,7 +263,7 @@ To disable a checkbox, move to the **Properties Panel** **>** turn on the **Chec
 
 ## CheckboxListTile
 
-The **CheckboxListTile** widget combines the functionality of a checkbox with a [ListTile](../../../../ui/widgets/built-in-widgets/list-grid.md#listtile-widget), providing a more comprehensive option for displaying checkboxes alongside additional information. Unlike the Checkbox this widget includes a title, and an optional subtitle, all within a single, cohesive element.
+The **CheckboxListTile** widget combines the functionality of a checkbox with a [ListTile](../../../../ui/widgets/composing-widgets/list-grid.md#listtile-widget), providing a more comprehensive option for displaying checkboxes alongside additional information. Unlike the Checkbox this widget includes a title, and an optional subtitle, all within a single, cohesive element.
 
 CheckboxListTile is ideal for use cases where you want to provide more context or descriptive text alongside the checkbox, such as in a settings menu or a form with detailed options.
 

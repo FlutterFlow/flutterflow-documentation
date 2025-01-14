@@ -8,7 +8,7 @@ tags: [Base Elements]
 
 The `MouseRegion` widget lets you know whenever the mouse pointer enters or exits from a widget. You could use it to build a user experience (UX), such as animating buttons when a user hovers over them and revealing or hiding menu items when a user hovers over the menu icon.
 
-On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#show-hide-elements-using-mouseregion), and [customize](#customizing) it.
+On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#showhide-elements-using-mouseregion), and [customize](#customizing) it.
 
 ## Adding MouseRegion widget
 
@@ -16,7 +16,7 @@ Here are the step-by-step instructions to build such an example:
 
 1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base 
 Elements** tab or add it directly from the widget tree.
-2. Add a [**Button**](button.md) (inside MouseRegion) 
+2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion) 
    with [**On Action Trigger**](../../../../ff-concepts/animations/widget_animations.md#animation-on-action-trigger) animation.
 3. Select the **MouseRegion** widget, select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegion widget.
@@ -95,7 +95,7 @@ Note that we wrapped the menu icon and its options inside the MouseRegion widget
 the next step, we will add the same actions for both MouseRegion widgets so that the menu options stay visible as long as you hover over them.
 :::
 
-![img_9.png](img_9.png)
+![img_9.png](imgs/img_9.png)
 
 3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
    and use it 

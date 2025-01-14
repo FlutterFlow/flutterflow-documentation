@@ -3,7 +3,7 @@ slug: /resources/data-representation/app-state
 title: App State
 description: Learn how to effectively utilize App State Variables in FlutterFlow to maintain and manage global application states across all pages and components.
 tags: [App State, FlutterFlow, Data Representation]
-sidebar_position: 4
+sidebar_position: 5
 keywords: [App State, FlutterFlow, Data Representation]
 ---
 
@@ -16,7 +16,7 @@ App state variables are specific variables that hold the current state of an app
 
 App state variables should be used in scenarios where the same data needs to be accessed and modified from multiple locations within the app. For instance, in a shopping cart app, items in a user's cart are usually accessible across different pages.
 
-App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](../../resources/ui/pages/page-lifecycle/#page-state) or [component state](../../ff-concepts/state-management/generated-code.md#component-state) variable instead.
+App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](../../resources/ui/pages/page-lifecycle.md#page-state) or [component state](../../ff-concepts/state-management/generated-code.md#component-state) variable instead.
 
 ## App State Variables
 
@@ -81,6 +81,10 @@ How this app state update will affect your app.
 - **Rebuild All Pages:** Rebuilds all pages in the app when this app state is updated. 
 - **Rebuild Current Page:** Rebuilds only the current page when this app state is updated. 
 - **No Rebuild:** No rebuild is required. 
+
+:::tip[Generated Code]
+Curious about how state changes are handled internally when you choose different **Update Type** options? Explore the detailed [**FFAppState**](../../generated-code/ff-app-state.md) guide.
+:::
 
 Here's a quick guide to updating the app state variable. We need to add an action to the 'Add to Bag' button. Within this action, we'll provide the product details and configure it to add to the current cart list.
 

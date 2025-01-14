@@ -11,19 +11,16 @@ toc_max_heading_level: 4
 # Custom Code
 
 While FlutterFlow provides a wide range of pre-built components and functionalities, there may be
-times when you need to extend your app with custom logic or features that are not readily available.
-This
-is where writing custom code comes into play. We provide the following features to accommodate
-these needs:
+times when you need to extend your app with custom logic or UI components that are not available out of the box.
+This is where writing custom code comes into play. 
 
-* **[Custom Functions](custom-functions.md):** Write custom Dart functions to perform specific tasks or 
-  calculations.
-* **[Custom Actions](custom-actions.md):** Implement custom actions that can be triggered by user 
-  interactions or
-  other action triggers.
-* **[Custom Widgets](custom-widgets.md):** Create custom Flutter widgets to achieve unique UI designs or 
-  behaviors.
-* **[Custom Files:](custom-files.md)** Ability to edit some parts of the `main.dart` file.
+There are a few different ways to make custom code accessible in FlutterFLow:
+
+* **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
+* **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import [custom package dependencies](#adding-a-pubspec-dependency).
+* **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets that can also import [custom package dependencies](#adding-a-pubspec-dependency) and be used in the same way as [Components](https://docs.flutterflow.io/resources/ui/components) throughout your project. 
+* **[Custom Files](custom-files.md):** Within Custom Files, you'll have the ability to edit some parts of the `main.dart` file.
+
 
 :::tip[Why Write Custom Code?]
 
@@ -35,13 +32,22 @@ these needs:
   interactions.
   :::
 
-## Common Properties
+# Writing Custom Code
+There are two main ways to write custom code in FlutterFlow:
 
-There are several properties and settings that are common to each type of custom code in
-FlutterFlow. Most of these common properties are highlighted in the diagram below. For more
-information about some of these properties, see the details provided below.
+1. Using the [**In-App Code Editor**](#using-the-in-app-code-editor)
+2. Using the [**Visual Studio Code Extension**](vscode-extension.md)
+
+
+### Using the In-App Code Editor
+You can use the In-App Code Editor to view and edit custom code directly in the FlutterFlow application. 
 
 ![custom-code-common.png](imgs/custom-code-common.png)
+
+:::warning[Using the In-App Code Editor on Desktop]
+Note that the desktop version of the In-App Code Editor is limited. We recommend using the Web editor
+or the **[VSCode Extension](vscode-extension.md)**.
+  :::
 
 ### Code Copilot
 
@@ -85,13 +91,20 @@ knowledge, making it especially useful for custom functions and actions.
 ### Compile Code
 
 When you are done adding your code snippets, you can compile it to ensure there are no
-compilation errors. To do so, click the **Compile Code** button.
+compilation errors and that your code can be transformed into something that can execute when your app is running.
 
+To do so, click the **Compile Code** button.
 
 <figure>
     ![compile-errors.png](imgs/compile-errors.png)
   <figcaption class="centered-caption">How to recognize compile time errors</figcaption>
 </figure>
+
+To run your app, you must make sure **Custom Functions** are compiled. 
+
+Custom Widgets and Actions don't need to be compiled to export code or test your app. However, you won't be able to preview Custom Widgets in the builder until they are compiled.  You'll see a project warning if you don't compile Custom Widgets or Actions.
+
+Compiling Custom Functions should be pretty fast, but sometimes, compiling Custom Actions and Widgets takes a while. 
 
 ### Code Analyzer
 
@@ -99,21 +112,28 @@ The code analyzer is available in all your custom code snippets and ensures the 
 correctness of your custom code. It automatically checks your Dart code for errors and warnings,
 providing real-time feedback as you write.
 ![code-analyzer.png](imgs/code-analyzer.png)
+
 When there is a compilation error, the code analyzer will stop running and display the errors caught
 by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
 should then be reconnected. You can also manually reconnect it if needed.
 
-### Custom Code Automatic Imports
+### Automatic FlutterFlow Imports
 
-When creating a new custom code snippet (actions, widgets, or functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
+When creating a new custom code snippet (Actions, Widgets, or Functions) in FlutterFlow, some fundamental imports will be automatically added for you. These imports cannot be modified by the developer. Custom Functions do not allow adding any custom imports, but you can add custom imports in Custom Actions and Widgets after the line **"Do not remove or modify the code above"**.
 
 ![automatic-imports.png](imgs/automatic-imports.png)
 
 ### Custom Code Settings
 
-When you edit a custom code snippet in FlutterFlow, the Settings block will open on the right. This
-block may vary slightly depending on the type of custom code (actions, functions, widgets), but here
-we will discuss the common settings.
+When you edit a custom code snippet in FlutterFlow, the Settings menu opens on the right. This menu may vary slightly depending on the type of custom code (Actions, Functions, or Widgets), but here, we’ll cover the common settings.
+
+#### Generate Boilerplate Code
+This setting allows you to generate boilerplate code, providing a structured starting point with essential code imports and a basic widget or function structure.
+
+![copy-boilerplate-code.png](imgs/copy-boilerplate-code.png)
+
+After creating a new resource file, click the code icon on the Widget Settings menu to generate the boilerplate code. Then, click "Copy to Editor" to add the boilerplate to your resource file’s code editor, where you can further customize it.
+
 
 #### Exclude From Compilation
 
@@ -137,7 +157,7 @@ context-specific data.
 This option is only available for Custom Actions.
 :::
 
-#### Input Arguments
+## Input Arguments
 
 When writing custom code in FlutterFlow, you can define input arguments to make your custom
 functions, widgets, or actions more dynamic and reusable. Input arguments allow you to pass data
@@ -155,7 +175,7 @@ as `<YourTypeName>Struct`. For example, if your custom data type is called `Item
 referenced in the generated code as `ItemsStruct`.
 :::
 
-##### Add a Callback Action
+### Callback Action As Parameter
 
 A callback action is an action passed as a parameter to a custom action or widget and triggered at some point in the future when a specific event occurs.
 
@@ -171,7 +191,7 @@ action with an Action Parameter `searchKeyword`. This means that the custom acti
 
 ![explain-callback-action.png](imgs/explain-callback-action.png)
 
-##### Provide an Action to Callback Action
+### Add an Action to Callback Action
 
 
 To provide a callback action to your main custom action, check out this quick guide where we provide a "**Show Snackbar**" action to `onError`, displaying a combined text using the search keyword.
@@ -202,7 +222,7 @@ To provide a callback action to your main custom action, check out this quick gu
     </iframe>
 </div>
 
-#### Return Values
+## Return Values
 
 In FlutterFlow, custom code can not only take input arguments but also return values, back to
 the caller. Return values allow your custom functions, or actions to pass data back to the
@@ -218,21 +238,35 @@ Here's an example of an Action that returns a _nullable_ integer.
 ![return-value-actions.png](imgs/return-value-actions.png)
 
 ## Adding a Pubspec Dependency
+To utilize community-built Flutter solutions in your FlutterFlow projects, you can add a "pubspec dependency". The **pubspec file** is the configuration file in Flutter projects that lists external packages or libraries, along with other project configurations.
+
 
 :::tip[Scope]
-You can only add a pubspec dependency to [**Custom Action**](custom-actions.md) & [**Custom Widgets**](custom-widgets.md).
+You can only add a pubspec dependency to [**Custom Actions**](custom-actions.md) & [**Custom Widgets**](custom-widgets.md).
 :::
 
-###  Pub.dev 
+####  Pub.dev
 [Pub.dev](https://pub.dev) is the official package repository for Dart and Flutter. It hosts a wide range of packages, libraries, and tools that developers can use to extend the functionality of their Dart and Flutter applications.
 
-:::info[Flutter Favourite Packages]
+:::info[Flutter Favorite Packages]
 
 Flutter Favorite packages are a curated set of packages on pub.dev that have been recognized by the Flutter team and the community for their quality, popularity, and usefulness in Flutter development. These packages are marked with a "Flutter Favorite" badge, indicating that they meet a high standard of quality, reliability, and best practices.
 
 You can explore the Flutter Favorite packages on **[pub.dev's Flutter Favorites page](https://pub.dev/packages?q=is%3Aflutter-favorite)**.
 
 :::
+
+To add a pubspec dependency from [**pub.dev**](#pubdev), follow these steps:
+
+1. Create a new Custom Widget or Custom Action resource file, and be sure to give it a meaningful name.
+
+2. [**Generate the boilerplate code**](#generate-boilerplate-code) and copy the basic widget or function structure into the code editor.
+
+3. Select the [**package you want from pub.dev**](#choosing-the-correct-package-from-pubdev) and review its details.
+
+4. Copy the package name and version, and add them to the Custom Code settings in FlutterFlow. Then, copy the import statement and add it to the list of imports in the Custom Code resource. You can also copy example code from the Example tab on the package’s pub.dev page and modify it as needed — see more in the **[Setup Code](#setup-code)** section.
+
+5. Click "Save & **[Compile Code](#compile-code)**" to apply the changes.
 
 ### Choosing the correct package from pub.dev
 
@@ -261,40 +295,142 @@ one.
 
 ![Dependency-score.png](imgs/Dependency-score.png)
 
-When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of information: the [package name with its version number](#copy-package-name--version-) and the [import statement](#copying-import-statement).
+When adding a pubspec dependency to your custom code in FlutterFlow, you’ll need two pieces of [information](#setup-code): the Package name with its Version number and the Import statement.
 
-#### Copy Package Name & Version 
+### Using Unpublished or Private Packages
+FlutterFlow supports the use of unpublished packages, which allows you to integrate packages that are not yet available on **pub.dev**. This capability is particularly useful when working with custom, forked, or private packages hosted on public or private repositories. By leveraging this, you can enhance your app’s functionality with customized or proprietary libraries tailored to your specific needs.
 
-To use the dependency code in our code editor, copy its name with the version. To do so, click
-the **Copy to Clipboard** icon.
+:::info[Possible Use Cases]
 
+- **Using a Different Branch of a Package**: When you need to test or use features that are only available on a specific branch of a package.
+- **Forked Version for Customizing Features**: When you need to fork a package to customize its functionality or fix issues that the original maintainer hasn’t addressed.
+- **Private Packages for Internal Use**: Companies or enterprises may have internal Flutter libraries that they want to use in their FlutterFlow app but cannot publish publicly due to confidentiality or proprietary restrictions.
+
+:::
+
+#### Add Packages from Public Repositories
+
+For packages hosted on public repositories (e.g., GitHub), you can add them to your FlutterFlow project by specifying the repository URL in the following format.
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+```
+
+You can also fine-tune the dependency by using additional parameters like `ref` and `path` in the given format. Here are some examples:
+
+- **To use a specific branch** (e.g., `development`):
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      ref: development
+```
+
+- **To use from a specific commit**:
+
+```js
+dependencies:
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      ref: a1b2c3d4
+
+```
+
+- **To use package located in a subdirectory of the repository**:
+
+```js
+  package_name:
+    git:
+      url: https://github.com/username/repository_name.git
+      path: packages/subpackage_name
+```
+
+Here’s exactly how you do it:
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CgLCKJzdiCuaxMF04pg6?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 <p></p>
 
-![img.png](imgs/img.png)
+#### Add Packages from Private Repositories
 
-<p></p>
+For packages hosted in private repositories, you’ll need to authenticate access. This can be done using HTTPS with a personal access token.
+
+For GitHub, you can go to your GitHub account’s settings and [generate a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) with the necessary permissions and use it in the following format. You can also create and use a [fine-grained access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) that only has certain permissions.
+
+```js
+package_name:
+    git:
+      url: https://<username>:<personal-access-token>@github.com/username/private_repo.git
+```
+
+Replace `<username>` with your GitHub username and `<personal-access-token>` with the generated token.
+
+### Setup Code
+To configure your custom code with the package, copy and paste the following items from the package's pub.dev page:
+
+1. **Copy Package Name & Version** 
+
+To use the dependency in your Custom Action or Custom Widget resource file, go to the package's pub.dev page and click the **Copy to Clipboard** icon next to the package name and version. Then, paste it into the **Pubspec Dependency** section (bottom right) of the FlutterFlow code editor. 
+
+![package-dependency-version-copy.png](imgs/package-dependency-version-copy.png)
+
+
+See **[example](#add-pubspec-dependency-to-custom-code-example-guide)** for more information.
+
+
 
 :::warning
 The current dependency might depend on other dependencies to work. So make sure you also copy the
-name and version of all the additional dependencies to specify in the code editor.
-:::
+name and version of all the additional dependencies to specify in the code 
 
 You can check if the current dependency has any additional dependencies inside the '*Dependencies'*
 section at the bottom right side.
 
+
 ![img_1.png](imgs/img_1.png)
+:::
 
-#### Copying import statement
+2. **Copying Import Statement**
 
-An import statement points to where the dependency's code is located. When making a custom widget or
-action, place this statement at the beginning of the code editor.
+An import statement specifies the location of the dependency's code. When creating a custom widget or action, add this statement at the end of the default import statements in the code editor.
 
-Open the dependency page and select the installing tab; under the Import it section, you'll find
+Open the dependency page and select the **Installing** tab; under the **Import It** section, you'll find
 the import statement. To copy, click the **Copy to Clipboard**  icon.
 
-![img_2.png](imgs/img_2.png)
+![copy-import-statement.png](imgs/copy-import-statement.png)
 
-### Add Pubspec Dependency to Custom Code: Guide
+3. **Copy Example Code**
+
+Example code is always available in the **Example** tab on the package’s pub.dev page. Copy any relevant snippets that demonstrate usage, and paste them into your custom widget or function file. You can then modify the code as needed to fit your project.
+
+## Add Pubspec Dependency to Custom Code: Example Guide
 In this example, we are using the
 [**flutter_rating_bar**](https://pub.dev/packages/flutter_rating_bar) dependency to create a
 `ProductRatingBar` custom widget for our
@@ -330,9 +466,39 @@ FlutterFlow:
 <p></p>
 
 :::note
-This example demonstrates how to add a [pub.dev](https://pub.dev) package to a Custom Widget snippet, but you can follow the same process for adding a package to Custom Actions. For a deep dive, explore the detailed documentation on **[Custom Widgets](custom-widgets.md)** and [Custom Actions](custom-actions.md).
+This example demonstrates how to add a [**pub.dev**](https://pub.dev) package to a Custom Widget snippet, but you can follow the same process for adding a package to Custom Actions. For a deep dive, explore the detailed documentation on **[Custom Widgets](custom-widgets.md)** and [**Custom Actions**](custom-actions.md).
 :::
 
+## Manage Dependencies
 
+You can also add packages directly on the **Dependencies** page (at **Settings and Integrations > Project Setup > Project Dependencies**) and they will be reflected in your custom actions or custom widgets, because packages are managed at the project level.
 
+Additionally, when you create a new custom action or widget, all previously added custom dependencies will be listed on the **Pubspec** **Dependencies** list on the right side. This ensures that you can easily track all custom dependencies in the project, avoiding duplication or conflicts that could override each other or cause project errors.
 
+If any project errors related to packages arise, they will be displayed in both the custom code editor and the Dependencies page. You can also update the version numbers of custom packages directly from the Dependencies page. This streamlined process helps maintain consistency and reduces potential issues related to custom packages.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/aaX1a8s4Z1xytVa2DYd5?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

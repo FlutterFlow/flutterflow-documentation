@@ -3,7 +3,7 @@ slug: /resources/backend-logic/streaming-api
 title: Streaming APIs
 description: Learn how to use streaming APIs in your backend logic with FlutterFlow.
 tags: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
-sidebar_position: 3
+sidebar_position: 4
 keywords: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
 ---
 
@@ -99,10 +99,10 @@ The steps to build the app are as follows:
 
 The user interface includes a section for the average rating, and number of reviews, followed by a detailed summary of the reviews including pros, cons, and sentiment distribution visualization. Here are key widgets to build the page:
 
-* [**Text Widget**](../../../ui/widgets/built-in-widgets/text.md): 
+* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md): 
   Displays 
   the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
-* [**Chart (Bar chart) Widget**](../../../ui/components/built-in-components/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
+* [**Chart (Bar chart) Widget**](../../../ui/widgets/built-in-widgets/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
 
 <p></p>
 ![streaming-api-example-demo.png](../imgs/streaming-api-example-demo.png)
@@ -111,7 +111,7 @@ The user interface includes a section for the average rating, and number of revi
 
 For building this app, we will use [OpenAI's Chat Completion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) to generate a summary based on given reviews. Before you build anything related to APIs in your app, it's essential to create and test the APIs to ensure they work correctly. So let's [create and test](../api/create-test-api-calls.md) the Chat Completion API in our project.
 
-Once created, open the **Advanced Settings** and **enable** the **Process Stream Response** toggle.
+Once created, open the **Advanced Settings** and **enable** the **Process Streaming Response** toggle.
 
 Here's how you do it:
 
@@ -195,7 +195,7 @@ Here's how exactly you do it:
 
 ### 5. Extract chart data
 
-The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](../../../../ff-concepts/adding-customization/cloud-functions.md). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
+The API returns a detailed summary as text, but to display counts of positive, neutral, and negative reviews on chart, you need to extract these data from the text. To achieve this, you can write a simple [custom function](../../../../ff-concepts/adding-customization/custom-functions.md). Once the stream ends, pass the full text to the custom function to extract the relevant data and save the output in the `sentimentValues` page state variable we created earlier.
 
 Here's how you do it:
 

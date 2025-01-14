@@ -48,7 +48,7 @@ functionality.
 
 ## Test Mode
 
-The **Test Mode** runs a web version of your Flutter app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
+The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
 emulator or on-device. Running your app in Test Mode helps you experiment,
 test UIs, and fix bugs faster.
 
@@ -125,11 +125,9 @@ To run the app in Run Mode, click on the **dropdown** next to the Test Mode butt
 
 ### When to use Run Mode
 
-The main benefit of Run Mode is the ability to share a running app. The link to
-this Run Mode session is public and shareable. All Run Mode sessions will persist and
-can be
-accessed in the dropdown menu next to the lightning bolt icon in the upper right of
-the FlutterFlow builder.
+The main benefit of Run Mode is the ability to share a running app within your team via a link. Please note that, **Run Mode links are not public**; they are only accessible to project members. Even if the project is made public (allowing others to view and clone the project), the visibility of Run Mode links remains restricted to project members.
+
+All Run Mode sessions will persist and can be accessed from the dropdown menu next to the lightning bolt icon in the upper right of the FlutterFlow builder.
 
 ![run-project-versions](../imgs/run-project-versions.avif)
 

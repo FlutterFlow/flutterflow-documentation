@@ -189,10 +189,9 @@ To add a filter when querying a collection:
 
 
 :::info
-Select a filter relation that aligns with your specific needs. For instance, if you wish to display only incomplete todos, you can create a field named 'isDone,' set the relation to 'Equal To,' and define the value as 'False.' 
-
-Another example would be to showcase users older than 30; in this case, you'd create a 'Age' field, set the relation to 'Greater Than,' and specify the value as 30.
-
+- Select a filter relation that aligns with your specific needs. For instance, if you wish to display only incomplete todos, you can create a field named 'isDone,' set the relation to 'Equal To,' and define the value as 'False.' 
+- Another example would be to showcase users older than 30; in this case, you'd create a 'Age' field, set the relation to 'Greater Than,' and specify the value as 30.
+- You can combine multiple filters using **AND** or **OR** operators to create more advanced filtering logic. This enables you to refine your data query to match specific conditions.
 :::
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -261,26 +260,37 @@ com/embed/238400b5445b444db712f492584b0d6e?sid=7b496882-0280-4920-924c-640fddeff
 
 To do so:
 
-1. Ensure you have **Query Collection** or **Document from Reference** added on a widget with **Single Time Query** disabled.
-2. Now select the widget, head over to **Actions**, and click **+ Add Action**.
-3. Select the **On Data Change** tab. That means actions added under this will be called whenever the data changes.
-4. Now, you can 
-[add any Action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) 
-   here.
+1. Ensure you have added a **Query Collection** or **Document from Reference** on a widget with **Single Time Query** disabled.
+2. Now, on the widget with **Query Collection** or **Document from Reference**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
+3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
 
 :::info
-* Actions will be triggered whenever the data is added, updated, or deleted.
-* If you are adding this on ListView, ensure you disable the infinite scroll.
+If you are using this trigger on a ListView, make sure to **disable** the **Infinite Scroll**.
 :::
 
-Here is an example showing the 
-[**Snackbar**](../../../resources/ui/pages/page-elements.md#show-snackbar-action)
-message when the data 
-changes in a collection.
-
-<figure>
-    ![img_27.png](img_27.png)
-  <figcaption class="centered-caption">Trigger snackbar action on data change</figcaption>
-</figure>
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ghFiQWGsQuJu5reUyXnl?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 

@@ -2,7 +2,7 @@
 slug: project-setup
 title: Project Setup
 tags: [Setup, Permissions, Multiple Languages]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough]
+keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
 description: Learn how to setup your project in FlutterFlow.
 sidebar_position: 0
 ---
@@ -87,7 +87,7 @@ To add custom permission:
 <p></p>
 
 :::info[Adding translation for messages]
-You can also add multilingual permission messages by following the instructions [**here**](../../../ff-concepts/localization-accessibility/add-multiple-languages.md).
+You can also add multilingual permission messages by following the instructions [**here**](../../../ff-concepts/localization-accessibility/localization.md).
 :::
 
 ### Request Permission [Action]
@@ -235,7 +235,7 @@ By default, the generated project can run on Android, iOS, and the Web without a
 ---
 
 ## Multiple Languages
-To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/add-multiple-languages.md).
+To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/localization.md).
 
 ---
 
@@ -274,7 +274,7 @@ For example, consider a news article app. When a new user opens the app for the 
 The steps to create and display a walkthrough in your app are as follows:
 
 1. [Create walkthrough](#1-create-walkthrough)
-2. [Start walkthrough](#2-start-walkthrough)
+2. [Start walkthrough](#2-start-walkthrough-action)
 3. [Get notified on walkthrough skipped and completed](#3-get-notified-on-walkthrough-skipped-and-completed)
 
 ### 1. Create walkthrough
@@ -286,7 +286,7 @@ To create a walkthrough:
 3. Now, we must add the steps for our walkthrough. Each step that we add here acts as a separate screen or popup that nicely animates to highlight the UI element. To add steps:
     1. Click on the **+ Add Step**.
     2. Choose the widget to highlight by clicking **Widget Unset**. In the right-side preview, select the desired widget and click **Confirm**.
-    3. When the widget is in focus, you may want to present information about it; this could be a simple text or a custom component (e.g., a text with an arrow). You have complete control over what you want to display via a [component](../../../resources/ui/components/overview.md). Click the diamond icon to create a new component and then set it to **Content**.
+    3. When the widget is in focus, you may want to present information about it; this could be a simple text or a custom component (e.g., a text with an arrow). You have complete control over what you want to display via a [component](../../../resources/ui/components/intro-components.md). Click the diamond icon to create a new component and then set it to **Content**.
     4. You can also choose where the Content will be displayed by setting the **Content Alignment**.
     5. Choose a **Focus Shape** for the widget—either **Circle** or **Rectangle**.
     6. Pick an **Overlay Color** that you want to display when the widget is highlighted.
@@ -533,3 +533,4 @@ To resolve this, simply add a delay ([Wait](../../../resources/control-flow/time
 We are aware of a limitation where widgets that are not visible on a page (i.e., you need to scroll down to see them) may not be highlighted. We are actively working to resolve this issue. As a temporary workaround, you can try placing the widget in an area that is visible without scrolling. We appreciate your patience and hope to have a fix soon!
 </p>
 </details>
+

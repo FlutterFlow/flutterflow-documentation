@@ -49,7 +49,7 @@ Let's see how to add a TextField widget and see an example of displaying its val
 Here are the steps:
 
 1. First, add the TextField widget, move to the properties panel and give it a name.
-2. Add the [**Button**](../../../../ui/widgets/built-in-widgets/button.md) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
+2. Add the [**Button**](../../../../ui/widgets/basic-widgets/button.md) widget and on tap of it, add an Alert Dialog action. While adding this action, provide the Message **From Variable > Widget State > [TextFieldName]**.
 
 <div style={{
     position: 'relative',
@@ -310,7 +310,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 
 ### Changing error message styling
 
-You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../ui/widgets/built-in-widgets/text.md#common-text-styling-properties).
+You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../ui/widgets/basic-widgets/text.md#common-text-styling-properties).
 
 ![changing-error-message-styling](../../imgs/changing-error-message-styling.avif)
 
@@ -320,7 +320,7 @@ You might want to add an icon inside the TextField, either at the start or end. 
 
 To add a leading or trailing icon, move to the **Properties Panel >** find the **Leading** and **Trailing Icon** property > Click on the **None** button **>** search and select the icon.
 
-You can also [customize the icon's size and color](../../../../ui/widgets/built-in-widgets/icons.md#common-icon-properties).
+You can also [customize the icon's size and color](../../../../ui/widgets/basic-widgets/icons.md#common-icon-properties).
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
@@ -346,7 +346,7 @@ To clear a TextField, move to the **Properties Panel > Additional Properties >**
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/8yA0Ncb41MRy8hHy1mm7?embed&show_copy_link=true"
+        src="https://demo.arcade.software/9rfrbl4Up6MHN56l4abD?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -365,6 +365,18 @@ To clear a TextField, move to the **Properties Panel > Additional Properties >**
     </iframe>
 </div>
 <p></p>
+
+#### Adding Clear Text Fields/Pin Codes [Action]
+This action lets you clear the values from single or multiple TextField and PinCode widgets. This comes in handy while implementing a form inside your app, and you want to let the user reset the form with one click.
+
+Follow the steps below to add this action to any widget.
+
+1. Select the **Widget** (e.g., IconButton, Button, etc.) on which you want to add the action.
+2. Select **Actions** from the properties panel (the right menu), click **+** **Add Action** button.
+3. Search and select the **Clear Text Fields/Pin Codes** (under *Widget/UI Interactions*) action.
+4. Select the *TextFields* and *PinCode* widgets you want to reset.
+
+![adding-clear-textfield-action](../../imgs/adding-clear-textfield-action.avif)
 
 ### Autofocusing TextField
 

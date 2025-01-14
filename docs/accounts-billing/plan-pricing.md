@@ -8,7 +8,7 @@ sidebar_position: 2
 
 # Plans & Pricing
 :::note
-For our most upto date information, please visit **[FlutterFlow pricing](https://flutterflow.io/pricing.html)**.
+For our most up-to-date information, please visit **[FlutterFlow pricing](https://flutterflow.io/pricing)**.
 :::
 
 :::note

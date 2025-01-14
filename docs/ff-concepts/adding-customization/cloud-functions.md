@@ -3,7 +3,7 @@ slug: /concepts/custom-code/cloud-functions
 title: Cloud Functions
 description: Learn how to use Cloud Functions in your FlutterFlow app for serverless backend functionality.
 tags: [Cloud Functions, Serverless, Integration]
-sidebar_position: 6
+sidebar_position: 7
 keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
 ---
 
@@ -59,7 +59,7 @@ loading indicator during the logo creation process. Its value is set to *True* b
 
 ### 2. Build a page
 
-Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the template or use [AI Page Gen](../../resources/ui/pages/pages.md#create-an-ai-generated-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
+Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the template or use [AI Page Gen](../../resources/ui/pages/intro-pages.md#create-an-ai-generated-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
 
 Also, see how to [build a page layout](../../ff-concepts/layout/building-layout.md) if you want to build a page from scratch.
 
@@ -250,6 +250,27 @@ com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e
 ## FAQs
 
 <details>
+<summary>Why do cloud function deployments fail on newly created projects?</summary>
+
+This issue occurs because the newly created Google Cloud Platform (GCP) project hasn't been fully configured with the necessary APIs and permissions. Follow the steps below to enable the required APIs and set proper permissions.
+
+1. Open your browser and navigate to the following URL:
+`https://console.cloud.google.com/functions/list?referrer=search&hl=en&project=<projectID>`
+Replace `<projectID>` with your GCP or Firebase project ID.
+2. Click on the **Create Function** button. GCP will prompt you to enable the necessary APIs: **Cloud Build** and **Cloud Functions**.
+3. After clicking **Next**, you will be prompted to enable the **Cloud Run Admin API**.
+![cloud-run-admin-api](imgs/cloud-run-admin-api.png)
+4. Now, you need to grant the default compute service account the appropriate permissions. In the next page, you will see the option to deploy an example cloud function like `helloHttp`. Deploy this function. You will be prompted to grant permissions to the default compute service account. The message will look like:
+`You need to grant the following roles to the build service account to deploy a function:
+roles/cloudbuild.builds.builder to <projectID>-compute@developer.gserviceaccount.com.`
+5. Click **Grant** to provide the required permissions and deploy the example cloud function. Once deployed, you can delete this function if you wish.
+
+With the required permissions granted, you should now be able to deploy cloud functions from FlutterFlow without any further issues.
+
+</details>
+
+
+<details>
 <summary>I am getting Cloud Function Deployment Errors</summary>
 
 ![img_10.png](imgs/img_10.png)
@@ -258,6 +279,24 @@ com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e
 
 If you encounter deployment errors, it may be helpful to check out [this community post](https://community.flutterflow.io/discussions/post/how-to-fix-cloud-function-deployment-errors-all-solutions-discussion-wgfMLgpLrBlmnUI) for possible solutions and insights.
 
+</details>
+
+
+<details>
+<summary>Why am I getting a CORS error when executing my Cloud Function?</summary>
+<p>
+The CORS error occurs because the **Access-Control-Allow-Origin** header is missing from the response, preventing your request from being completed. This issue can arise with new Cloud Functions, whether deployed through FlutterFlow or not.
+
+Follow the steps below to fix the issue:
+
+1. Open your Google Cloud Project's [**Cloud Functions List**](https://console.cloud.google.com/functions/list)
+2. Select the function causing the issue.
+3. Navigate to the **Permissions** tab.
+4. Open the **VIEW BY ROLES** tab.
+5. Ensure there's a row with `Cloud Functions Invoker` with principal set to `allUsers`. If it’s missing, click on the **Grant Access**, add `allUsers` with the `Cloud Functions Invoker` role.
+
+![add-cf-invoker-role](imgs/add-cf-invoker-role.avif)
+</p>
 </details>
 
 

@@ -19,18 +19,13 @@
         "type": 301
       },
       {
-        "source": "/troubleshooting/**",
-        "destination": "/",
-        "type": 301
-      },
-      {
         "source": "/getting-started/dashboard",
-        "destination": "/",
+        "destination": "/flutterflow-ui/dashboard",
         "type": 301
       },
       {
         "source": "/getting-started/dashboard/my-organization",
-        "destination": "/",
+        "destination": "/flutterflow-ui/my-organization",
         "type": 301
       },
       {
@@ -40,7 +35,7 @@
       },
       {
         "source": "/getting-started/ui-builder/navigation-menu",
-        "destination": "/flutterflow-ui/widget-palette",
+        "destination": "/flutterflow-ui/builder#navigation-menu",
         "type": 301
       },
       {
@@ -70,12 +65,12 @@
       },
       {
         "source": "/getting-started/ui-builder/properties-panel",
-        "destination": "/flutterflow-ui/builder",
+        "destination": "/resources/ui/widgets/widget-configurations",
         "type": 301
       },
       {
         "source": "/getting-started/creating-new-project",
-        "destination": "/resources/projects",
+        "destination": "/resources/projects/how-to-create-find-organize-projects#how-to-create-a-project",
         "type": 301
       },
       {
@@ -100,12 +95,12 @@
       },
       {
         "source": "/settings-and-integrations/general-settings/app-details",
-        "destination": "/resources/projects/settings/general-settings",
+        "destination": "/resources/projects/settings/general-settings#app-details",
         "type": 301
       },
       {
         "source": "/settings-and-integrations/general-settings/app-assets",
-        "destination": "/resources/projects/settings/general-settings",
+        "destination": "/resources/projects/settings/general-settings#app-assets",
         "type": 301
       },
       {
@@ -175,7 +170,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/permissions",
-        "destination": "/resources/projects/settings/project-setup",
+        "destination": "/resources/projects/settings/project-setup#permissions",
         "type": 301
       },
       {
@@ -335,12 +330,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/listview",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#listview-widget",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/gridview",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#gridview-widget",
         "type": 301
       },
       {
@@ -370,17 +365,27 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/expandable",
-        "destination": "/resources/ui/components/built-in-components/expandable",
+        "destination": "/resources/ui/widgets/built-in-widgets/expandable",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/expandable",
+        "destination": "/resources/ui/widgets/built-in-widgets/expandable",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/staggeredview",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#staggered-view",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/flippablecard",
-        "destination": "/resources/ui/components/built-in-components/flippable-card",
+        "destination": "/resources/ui/widgets/built-in-widgets/flippable-card",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/flippable-card",
+        "destination": "/resources/ui/widgets/built-in-widgets/flippable-card",
         "type": 301
       },
       {
@@ -390,17 +395,32 @@
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/carousel",
-        "destination": "/resources/ui/components/built-in-components/carousel",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/carousel",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/swipeablestack",
-        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/swipeable-stack",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/layout-elements/datatable-paginated",
-        "destination": "/resources/ui/components/built-in-components/datatable",
+        "destination": "/resources/ui/widgets/built-in-widgets/datatable",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/datatable",
+        "destination": "/resources/ui/widgets/built-in-widgets/datatable",
         "type": 301
       },
       {
@@ -420,12 +440,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/page-elements/enddrawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#end-drawer",
         "type": 301
       },
       {
@@ -470,7 +490,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/listtile",
-        "destination": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid/#listtile-widget",
         "type": 301
       },
       {
@@ -490,7 +510,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/calendar",
-        "destination": "/resources/ui/components/built-in-components/calendar",
+        "destination": "/resources/ui/widgets/built-in-widgets/calendar",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/calendar",
+        "destination": "/resources/ui/widgets/built-in-widgets/calendar",
         "type": 301
       },
       {
@@ -515,7 +540,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/toggleicon",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/icons/#toggleicon-properties",
         "type": 301
       },
       {
@@ -530,7 +555,7 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/staticmap",
-        "destination": "/",
+        "destination": "/integrations/mapbox/staticmap-widget",
         "type": 301
       },
       {
@@ -550,7 +575,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/blur",
-        "destination": "/resources/ui/components/built-in-components/blur",
+        "destination": "/resources/ui/widgets/built-in-widgets/blur",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/blur",
+        "destination": "/resources/ui/widgets/built-in-widgets/blur",
         "type": 301
       },
       {
@@ -560,7 +590,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/mediadisplay",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/media-display",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/media-display",
+        "destination": "/resources/ui/widgets/built-in-widgets/media-display",
         "type": 301
       },
       {
@@ -575,37 +610,67 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/progressbar",
-        "destination": "/resources/ui/components/built-in-components/progressbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/progressbar",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/progressbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/progressbar",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/languageselector",
-        "destination": "/concepts/multiple-languages",
+        "destination": "/concepts/multiple-languages/language-selector",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/badge",
-        "destination": "/resources/ui/components/built-in-components/badge",
+        "destination": "/resources/ui/widgets/built-in-widgets/badge",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/badge",
+        "destination": "/resources/ui/widgets/built-in-widgets/badge",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart",
-        "destination": "/resources/ui/components/built-in-components/chart/chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/chart",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/chart/chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/line-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/line-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/line-chart",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/chart/line-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/line-chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/bar-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/bar-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/bar-chart",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/chart/bar-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/bar-chart",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/chart/pie-chart",
-        "destination": "/resources/ui/components/built-in-components/chart/pie-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/pie-chart",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/chart/pie-chart",
+        "destination": "/resources/ui/widgets/built-in-widgets/chart/pie-chart",
         "type": 301
       },
       {
@@ -630,7 +695,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/barcode",
-        "destination": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
         "type": 301
       },
       {
@@ -645,17 +715,32 @@
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/stickyheader",
-        "destination": "/resources/ui/components/built-in-components/sticky-header",
+        "destination": "/resources/ui/widgets/built-in-widgets/sticky-header",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/sticky-header",
+        "destination": "/resources/ui/widgets/built-in-widgets/sticky-header",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/markdown",
-        "destination": "/resources/ui/components/built-in-components/markdown",
+        "destination": "/resources/ui/widgets/built-in-widgets/markdown",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/markdown",
+        "destination": "/resources/ui/widgets/built-in-widgets/markdown",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/base-elements/draggable-+-dragtarget",
-        "destination": "/resources/ui/components/built-in-components/draggable",
+        "destination": "/resources/ui/widgets/built-in-widgets/draggable",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/draggable",
+        "destination": "/resources/ui/widgets/built-in-widgets/draggable",
         "type": 301
       },
       {
@@ -680,27 +765,52 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/pincode",
-        "destination": "/resources/ui/components/built-in-components/pincode",
+        "destination": "/resources/ui/widgets/built-in-widgets/pincode",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/pincode",
+        "destination": "/resources/ui/widgets/built-in-widgets/pincode",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/slider",
-        "destination": "/resources/ui/components/built-in-components/slider",
+        "destination": "/resources/ui/widgets/built-in-widgets/slider",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/slider",
+        "destination": "/resources/ui/widgets/built-in-widgets/slider",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/ratingbar",
-        "destination": "/resources/ui/components/built-in-components/ratingbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/ratingbar",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/ratingbar",
+        "destination": "/resources/ui/widgets/built-in-widgets/ratingbar",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/creditcardform",
-        "destination": "/resources/ui/components/built-in-components/credit-card-form",
+        "destination": "/resources/ui/widgets/built-in-widgets/credit-card-form",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/credit-card-form",
+        "destination": "/resources/ui/widgets/built-in-widgets/credit-card-form",
         "type": 301
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/countcontroller",
-        "destination": "/resources/ui/components/built-in-components/count-controller",
+        "destination": "/resources/ui/widgets/built-in-widgets/count-controller",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/count-controller",
+        "destination": "/resources/ui/widgets/built-in-widgets/count-controller",
         "type": 301
       },
       {
@@ -725,7 +835,12 @@
       },
       {
         "source": "/widgets-and-components/widgets/form-elements-1/signature",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/signature/",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/",
         "type": 301
       },
       {
@@ -815,7 +930,7 @@
       },
       {
         "source": "/actions/actions/navigation/close-dialog-drawer-etc.",
-        "destination": "/",
+        "destination": "/resources/ui/pages/scaffold-elements#drawer-action",
         "type": 301
       },
       {
@@ -830,7 +945,7 @@
       },
       {
         "source": "/actions/actions/backend-database/api-call",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/create-test-api#trigger-api-calls-action",
         "type": 301
       },
       {
@@ -935,12 +1050,12 @@
       },
       {
         "source": "/actions/actions/state-management/update-app-state",
-        "destination": "/resources/data-representation/app-state",
+        "destination": "/resources/data-representation/app-state/#update-app-state-action",
         "type": 301
       },
       {
         "source": "/actions/actions/state-management/update-page-state",
-        "destination": "/concepts/state-management",
+        "destination": "/resources/ui/pages/page-lifecycle/#update-page-state-action",
         "type": 301
       },
       {
@@ -960,7 +1075,7 @@
       },
       {
         "source": "/actions/actions/state-management/clear-query-cache",
-        "destination": "/",
+        "destination": "/resources/backend-query/#clear-query-cache-action",
         "type": 301
       },
       {
@@ -985,7 +1100,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-tab-bar",
-        "destination": "/concepts/navigation/tabbar",
+        "destination": "/concepts/navigation/tabbar/#control-tab-bar-action",
         "type": 301
       },
       {
@@ -995,17 +1110,22 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/clear-text-fields-pin-codes",
-        "destination": "/concepts/state-management/widget-state",
+        "destination": "/resources/forms/textfield/#adding-clear-text-fieldspin-codes-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/scroll-to",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/list-grid#scroll-to-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/scan-barcode-qr-code",
-        "destination": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/barcode",
+        "destination": "/resources/ui/widgets/built-in-widgets/barcode",
         "type": 301
       },
       {
@@ -1025,7 +1145,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/drawer",
-        "destination": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold-elements#drawers",
         "type": 301
       },
       {
@@ -1040,7 +1160,7 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/expand-image",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/image/#advanced-image-functionalities",
         "type": 301
       },
       {
@@ -1060,22 +1180,42 @@
       },
       {
         "source": "/actions/actions/widget-ui-interactions/upload-signature",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#2-upload-signature-action",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/signature/#2-upload-signature-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#2-upload-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/clear-signatures",
-        "destination": "/",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#clear-signature-action",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/signature/#clear-signature-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/signature/#clear-signature-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-swipeable-stack",
-        "destination": "/resources/ui/components/built-in-components/swipeable-stack",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack/#control-swipeable-stack-action",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/swipeable-stack/#control-swipeable-stack-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/swipeable-stack/#control-swipeable-stack-action",
         "type": 301
       },
       {
         "source": "/actions/actions/widget-ui-interactions/control-carousel",
-        "destination": "/resources/ui/components/built-in-components/carousel",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel/#control-carousel-action",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/built-in-components/carousel/#control-carousel-action",
+        "destination": "/resources/ui/widgets/built-in-widgets/carousel/#control-carousel-action",
         "type": 301
       },
       {
@@ -1140,7 +1280,7 @@
       },
       {
         "source": "/actions/actions/utilities",
-        "destination": "/concepts",
+        "destination": "/resources/functions/utility-actions",
         "type": 301
       },
       {
@@ -1175,12 +1315,12 @@
       },
       {
         "source": "/actions/actions/utilities/set-dark-mode-setting",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#set-dark-mode-setting",
         "type": 301
       },
       {
         "source": "/actions/actions/utilities/copy-to-clipboard",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#copy-to-clipboard",
         "type": 301
       },
       {
@@ -1205,7 +1345,7 @@
       },
       {
         "source": "/actions/actions/utilities/execute-callback",
-        "destination": "/resources/ui/components/custom-components/using-components",
+        "destination": "/resources/ui/components/custom-components/using-components/#execute-callback-action",
         "type": 301
       },
       {
@@ -1225,17 +1365,17 @@
       },
       {
         "source": "/actions/actions/share/send-email",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-email",
         "type": 301
       },
       {
         "source": "/actions/actions/share/call-number",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#call-number",
         "type": 301
       },
       {
         "source": "/actions/actions/share/send-sms",
-        "destination": "/",
+        "destination": "/resources/functions/utility-actions/#send-sms",
         "type": 301
       },
       {
@@ -1399,6 +1539,11 @@
         "type": 301
       },
       {
+        "source": "/data-and-backend/firebase/firestore-database/storage-rules",
+        "destination": "/integrations/database/cloud-firestore/firestore-rules",
+        "type": 301
+      },
+      {
         "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/storage-rules",
         "destination": "/integrations/firebase-storage/storage-rules",
         "type": 301
@@ -1415,7 +1560,7 @@
       },
       {
         "source": "/data-and-backend/firebase/firestore-database-cloud-firestore/retrieving-data/adding-indexes",
-        "destination": "/integrations/database/cloud-firestore/firestore-actions",
+        "destination": "/integrations/firebase/connect-to-firebase/#adding-indexes",
         "type": 301
       },
       {
@@ -1525,12 +1670,12 @@
       },
       {
         "source": "/data-and-backend/state-management/page-state",
-        "destination": "/resources/ui/pages/getting-started",
+        "destination": "/resources/ui/pages/page-lifecycle#page-state",
         "type": 301
       },
       {
         "source": "/data-and-backend/state-management/component-state",
-        "destination": "/resources/ui/components/custom-components/component-lifecycle",
+        "destination": "/resources/ui/components/custom-components/component-lifecycle/#component-state",
         "type": 301
       },
       {
@@ -1560,7 +1705,7 @@
       },
       {
         "source": "/data-and-backend/api-calls/soap-api-example-countries",
-        "destination": "/resources/backend-logic/rest-api",
+        "destination": "/resources/backend-logic/soap-api",
         "type": 301
       },
       {
@@ -1670,7 +1815,7 @@
       },
       {
         "source": "/advanced-functionality/conditional-visibility",
-        "destination": "/concepts/layouts/responsive",
+        "destination": "/resources/ui/widgets/widget-commonalities#conditional",
         "type": 301
       },
       {
@@ -1730,7 +1875,7 @@
       },
       {
         "source": "/advanced-functionality/code-expression",
-        "destination": "/resources/functions/utility",
+        "destination": "/resources/functions/utility/#code-expressions",
         "type": 301
       },
       {
@@ -1770,7 +1915,7 @@
       },
       {
         "source": "/deploying-your-app/generate-screenshots",
-        "destination": "/deployment/pre-checks-before-publishing",
+        "destination": "/deployment/pre-checks-before-publishing/#generate-screenshots",
         "type": 301
       },
       {
@@ -1780,17 +1925,17 @@
       },
       {
         "source": "/flutter/generated-code",
-        "destination": "/",
+        "destination": "/generated-code/project-structure",
         "type": 301
       },
       {
         "source": "/flutter/generated-code/directory-structure",
-        "destination": "/",
+        "destination": "/generated-code/project-structure",
         "type": 301
       },
       {
         "source": "/flutter/generated-code/flutterflow-classes",
-        "destination": "/",
+        "destination": "/generated-code/page-model",
         "type": 301
       },
       {
@@ -1829,11 +1974,6 @@
         "type": 301
       },
       {
-        "source": "/marketplace/creators-hub",
-        "destination": "/marketplace/creators-hub",
-        "type": 301
-      },
-      {
         "source": "/marketplace/creators-hub/submitting-an-item-for-review",
         "destination": "/marketplace/creators-hub/submit-item-for-reivew",
         "type": 301
@@ -1856,11 +1996,6 @@
       {
         "source": "/marketplace/creators-hub/legal-guidelines-for-creators/navigating-external-licenses",
         "destination": "/marketplace/creators-hub/navigating-external-licenses",
-        "type": 301
-      },
-      {
-        "source": "/marketplace/creators-hub/creator-faqs",
-        "destination": "/marketplace/creators-hub/creator-faqs",
         "type": 301
       },
       {
@@ -2050,37 +2185,127 @@
       },
       {
         "source": "/flutterflow-status",
-        "destination": "/",
+        "destination": "https://status.flutterflow.io/",
         "type": 301
       },
       {
         "source": "/troubleshooting/basic-troubleshooting-guide",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
         "source": "/troubleshooting/advanced-troubleshooting-guides",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
         "source": "/troubleshooting/enterprise",
-        "destination": "/misc/enterprise-support-policy",
+        "destination": "/troubleshooting/enterprise",
         "type": 301
       },
       {
         "source": "/troubleshooting/submit-bug-reports",
-        "destination": "/",
+        "destination": "/misc/submit-bug-report",
         "type": 301
       },
       {
         "source": "/troubleshooting/miscellaneous",
-        "destination": "/",
+        "destination": "/troubleshooting",
         "type": 301
       },
       {
         "source": "/settings-and-integrations/project-setup/team",
-        "destination": "/resources/projects/collaboration",
+        "destination": "/flutterflow-ui/my-organization/",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/pages-configuration",
+        "destination": "/resources/ui/pages/properties",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/widget-configurations",
+        "destination": "/resources/ui/widgets/properties",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/scaffold-elements",
+        "destination": "/resources/ui/pages/scaffold",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/button",
+        "destination": "/resources/ui/widgets/button",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/text",
+        "destination": "/resources/ui/widgets/text",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/icon",
+        "destination": "/resources/ui/widgets/icons",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/container",
+        "destination": "/resources/ui/widgets/container",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/image",
+        "destination": "/resources/ui/widgets/image",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/composing-widgets",
+        "destination": "/resources/ui/widgets/composing-widgets/rows-column-stack",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/generate-dynamic-children",
+        "destination": "/resources/ui/widgets/composing-widgets/generate-dynamic-children",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/widgets/built-in-widgets/list-grid",
+        "destination": "/resources/ui/widgets/composing-widgets/list-grid",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/components/overview",
+        "destination": "/resources/ui/components",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/pages/getting-started",
+        "destination": "/resources/ui/pages",
+        "type": 301
+      },
+      {
+        "source": "/resources/ui/overview#widget-tree",
+        "destination": "/resources/ui/widgets#widget-tree",
+        "type": 301
+      },
+      {
+        "source": "/firebase-setup",
+        "destination": "/integrations/firebase/connect-to-firebase",
+        "type": 301
+      },
+      {
+        "source": "/building-your-ui/ui-builder/properties-panel",
+        "destination": "/resources/ui/widgets/properties",
+        "type": 301
+      },
+      {
+        "source": "/concepts/multiple-languages",
+        "destination": "/concepts/localization",
+        "type": 301
+      },
+      {
+        "source": "/concepts/multiple-languages/language-selector",
+        "destination": "/concepts/localization",
         "type": 301
       }
     ]

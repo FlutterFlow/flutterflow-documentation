@@ -3,7 +3,7 @@ slug: /concepts/custom-code/custom-widgets
 title: Custom Widgets
 description: Learn how to create and use custom widgets in your FlutterFlow app to enhance its user interface.
 tags: [Custom Widgets, Custom Code]
-sidebar_position: 4
+sidebar_position: 2
 keywords: [FlutterFlow, Custom Widgets, Customizations, Flutter, Dart, Pub.dev]
 ---
 
@@ -56,6 +56,10 @@ this example, we will create a `ProductRatingBar` widget that uses a pub.dev dep
         allow="clipboard-write">
     </iframe>
 </div>
+
+:::info[Widget Builder as Parameter]
+You can also leverage [**Widget Builders**](../../resources/ui/components/widget-builder-parameters.md) that allow you to pass in widgets to be used within the custom widget tree. This is especially useful when you want to dynamically substitute content for some part of a custom widget - like displaying an item in a custom widget popup.
+:::
 
 ### Properties: Width & Height
 
@@ -170,7 +174,7 @@ FlutterFlow also allows you to view your custom widget once it is successfully c
 :::tip[LOOKING for other CUSTOM action properties?]
 To learn more about Custom Widget settings, such as the
 [**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation),
-and other properties like [**Callback Actions**](custom-code.md#add-a-callback-action),
+and other properties like [**Callback Actions**](custom-code.md#callback-action-as-parameter),
 [**Pub Dependencies**](custom-code.md#adding-a-pubspec-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::

@@ -46,7 +46,7 @@ Let's see how to add a switch widget and build an example that shows its value o
 Here is a simple way to do it:
 
 1. First, click on the **+ Add Widget**, drag the **Switch** widget from the **Base Elements** tab, or add it directly from the widget tree.
-2. Below the Switch, add a [**Text**](../../../../ui/widgets/built-in-widgets/text.md) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > switchValue** (i.e., name of your switch).
+2. Below the Switch, add a [**Text**](../../../../ui/widgets/basic-widgets/text.md) widget, move to the properties panel, click on **Set from Variable** and choose the **Widget State > switchValue** (i.e., name of your switch).
 
 <div style={{
     position: 'relative',
@@ -196,7 +196,7 @@ To disable a switch, move to the **Properties Panel** **>** turn on the **Switch
 
 ## SwitchListTile
 
-The **SwitchListTile** widget combines the functionality of a switch with a **[ListTile](../../../../ui/widgets/built-in-widgets/list-grid.md#listtile-widget)**, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element. 
+The **SwitchListTile** widget combines the functionality of a switch with a **[ListTile](../../../../ui/widgets/composing-widgets/list-grid.md#listtile-widget)**, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element. 
 
 SwitchListTile is ideal for use cases where you want to provide more context or descriptive text alongside the switch, such as in a settings menu or a form with detailed options.
 

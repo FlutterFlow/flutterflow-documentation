@@ -42,7 +42,7 @@ We allow you to define two types of Alert Dialog Actions:
 
 - **Informational Dialog:** To show some information the user should be aware of before interacting with the app. Contains only a single action button.
 - **Confirm Dialog:** This dialog can contain two action buttons. It can trigger the subsequent action based on whether a user confirms the action. It can also be used before performing any non-revertable user action, for example, before deleting a user account.
-- **Custom Dialog**: This is a fully customizable dialog that you can create using [components](../../resources/ui/components/overview.md).
+- **Custom Dialog**: This is a fully customizable dialog that you can create using [components](../../resources/ui/components/intro-components.md).
 
 ### Adding Informational Dialog [Action]
 
@@ -126,7 +126,7 @@ Follow the steps below to add this type of action to any widget:
 
 ### Adding Custom Dialog [Action]
 
-Before you add this action, ensure you [create a component](../../resources/ui/components/custom-components/getting-started.md) that you want to display as a custom dialog. Now follow the steps below to add this type of action to any widget:
+Before you add this action, ensure you [create a component](../../resources/ui/components/creating-components.md) that you want to display as a custom dialog. Now follow the steps below to add this type of action to any widget:
 
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
 2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.

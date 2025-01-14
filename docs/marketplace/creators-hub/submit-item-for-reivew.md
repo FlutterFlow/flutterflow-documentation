@@ -20,6 +20,8 @@ Please review our [**Submission Guidelines**](submission-criteria.md) and our [*
 
 ## How to Submit an Item
 
+An item can be an enitre project (in the case of Temlate Apps or Libraries), a page or a component (in the case of Template Page & Components) or a Custom Function, Action or Widget (in the case of Custom Code).
+
 ### 1. Set your project as a Marketplace project
 
 Marketplace items should belong to projects that are specifically made to publish Marketplace items (i.e., they should not be inside of a production project).
@@ -28,8 +30,9 @@ In order to submit an item, it must be inside of a project that has been Set For
 
 To set a project for Marketplace:
 
-1. Select the [**Share Icon**](../../intro/ff-ui/toolbar.md#share-project) from the Toolbar (top right side of the screen).
-2. Select **Create New Item > Set For Marketplace > Yes**
+1. Prerequisite: please enroll as a Marketplace creator first by setting up a profile in [Marketplace](https://marketplace.flutterflow.io/profile). You can optionally also apply to become a paid creator, which allows you to monetize your items.
+2. Select the [**Share Icon**](../../intro/ff-ui/toolbar.md#share-project) from the Toolbar (top right side of the screen). Please note that you must be the project owner to see this icon and to submit an item.
+3. Select **Create New Item > Set For Marketplace > Yes**
 
 :::tip
 You can also clone an existing project and then set it as a Marketplace Project.
@@ -40,7 +43,7 @@ You can also clone an existing project and then set it as a Marketplace Project.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324"
         title=""
         style={{
@@ -71,11 +74,13 @@ If you aren't ready to submit your item, select **Save As Draft** to continue ed
 
 #### Cover Photo
 
-The cover photo should be 1200x800 pixels and help the users understand the purpose of the item. Please do not include the FlutterFlow logo in your cover image.
+The cover photo should be **1200x800 pixels** and help the users understand the purpose of the item. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. Please do not include the FlutterFlow logo in your cover image.
 
 #### Gallery Photos (optional)
 
-Include up to 4 additional photos that showcase your item's features. Each should be should be 1200x800 pixels.
+Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. 
+
+Each should be should be **1200x800 pixels**.
 
 #### Name
 
@@ -83,29 +88,46 @@ The item name should be professional, unique, and help the users understand the 
 
 #### Description
 
-The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. If the item includes any third-party paid services, those should also be mentioned in the description. Please use correct grammar and capitalization.
+The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. 
+
+If the item includes any third-party paid services or pub.dev packages/dependencies, those should also be mentioned in the description. Please use correct grammar and capitalization.
 
 #### Usage Instructions
 
-Provide clear and concise instructions on how to implement and utilize your item within FlutterFlow. Include any necessary steps, code snippets, or configurations required to get started. If your item depends on any third party services, please show users where to find relevant API keys or more information. Please use correct grammar and capitalization.
+Provide clear and concise instructions on how to implement and utilize your item within FlutterFlow. Include any necessary steps, code snippets, or configurations required to get started. If your item depends on any third party services or pub.dev packages/dependencies, please provide full details of these including showing users where to find relevant API keys or more information. Please use correct grammar and capitalization.
 
 #### Marketplace Item Type
 
-Three types of items can be submitted:
+Four types of items can be submitted:
 
-**Template AppPage or ComponentCustom Code**
+- Libraries
+- Template Apps
+- Template Page or Components
+- Custom Code
+
 <Tabs>
-<TabItem value="1" label="Template App" default>
+<TabItem value="1" label="Libraries" default>
+Libraries allow you to share resources like API endpoints, UI components, custom data types, custom code, action blocks and more with complete version control.
+
+To submit a Library to the Marketplace, first publish your project as a Library. Note that there are some limitations on Library projects - most notably there is currently no support for Firebase or Pages.
+
+For more details, see the [documentation on Libraries](/docs/resources/projects/libraries.md).
+
+:::note
+*Libraries* can be monetized. The minimum price for Libraries is $50.
+:::
+</TabItem>
+<TabItem value="2" label="Template App" default>
 Template apps contain multiple screens. There are 2 sub-types:
 
 - **Full App:** an app with authentication, complete navigation, multiple pages/flows, database schema, complete action trees, etc.
 - **UI Kit**: purely design-based templates and layouts
 
 :::note
-*Template Apps* can be monetized. The minimum price for Template Apps is $200.
+*Template Apps* can be monetized. The minimum price for Full Apps is $400 while the minimum for UI Kits is $50.
 :::
 </TabItem>
-<TabItem value="2" label="Page or Component">
+<TabItem value="3" label="Page or Component">
 Pages or Components are assembled modules that can be used within FlutterFlow. There are 2 sub-types:
 
 - **Page:** a single page in a FlutterFlow project
@@ -115,7 +137,7 @@ Pages or Components are assembled modules that can be used within FlutterFlow. T
 *Pages and Components* cannot be monetized at this time.
 :::
 </TabItem>
-<TabItem value="3" label="Custom Code">
+<TabItem value="4" label="Custom Code">
 Custom Code is Dart code that can be used within FlutterFlow projects. There are 3 sub-types:
 
 - **Custom Functions:** synchronous functions that do not have external dependencies.
@@ -129,7 +151,6 @@ Custom Code is Dart code that can be used within FlutterFlow projects. There are
 :::
 </TabItem>
 </Tabs>
-
 
 #### Template Tags (optional)
 
@@ -163,6 +184,7 @@ Your item will be shown in your [Dashboard](https://marketplace.flutterflow.io/d
 ![Item in "Pending Approval"](../imgs/image.avif)
 
 ### 4. Edit an approved item
+
 :::info
 At this time, it is not possible to edit an approved Marketplace Item. We are working to add this functionality soon.
 :::

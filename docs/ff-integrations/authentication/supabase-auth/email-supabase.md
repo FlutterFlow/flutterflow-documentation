@@ -51,7 +51,7 @@ Here's how you disable email verification on the Supabase side:
 
 ### Building pages
 
-Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the [template](../../../resources/ui/pages/pages.md#create-a-page-from-a-popular-template). Here is the page added from the templates, and after some modification, it looks the below:
+Let's add a page that allows users to create accounts and log in. To speed up, you can add a page from the [template](../../../resources/ui/pages/intro-pages.md#create-a-page-from-a-popular-template). Here is the page added from the templates, and after some modification, it looks the below:
 
 Also, see how to build a page layout in case you want to build a page from scratch.
 
@@ -79,11 +79,11 @@ Here's how it looks:
 
 ### Adding Log In [Action]
 
-To allow users to log in with their credentials, you can use [this](auth-actions.md#log-in-action) action.
+To allow users to log in with their credentials, you can use the [**Log In**](auth-actions.md#log-in-action) action.
 
 ### Adding Logout [Action]
 
-To let users log out of your app, you can use [this](auth-actions.md#log-out-action) action.
+To let users log out of your app, you can use the [**Log Out**](auth-actions.md#log-out-action) action.
 
 ### Verify user creation
 

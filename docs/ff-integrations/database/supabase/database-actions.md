@@ -10,7 +10,10 @@ toc_max_heading_level: 5
 
 # Supabase Database Actions
 
-The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row** from a Supabase table.
+The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row** from a Supabase table. 
+
+Note that beyond actions, you can also setup [**Backend Queries**](../../../resources/control-flow/backend-logic/backend-query/backend-query.md) for Supabase. This includes realtime streaming queries.
+
 
 :::note[Prerequisites]
 Before getting started with this section, ensure you have,
@@ -171,7 +174,21 @@ Let's see how to filter the Supabase table to display only desired items:
 - Find the **Value** property and set it to an appropriate value and click Confirm.
 
 :::tip
-You could choose a Filter relation based on your requirements. For example, to show only completed assignments, set the Field Name to the column that holds completed status, e.g., is_done, set the Relation to Equal To, and set the Value to True. Here's another example. For showing only users older than 30, create a column called Age, set the Relation to Greater Than, and set the Value to 30.
+You could choose a filter relation based on your requirements. For example:
+
+- **Equal To**: To show only completed assignments, set the **Field Name** to the column that holds the completion status (e.g., **is_done**), set the **Relation** to **Equal To**, and set the **Value** to **True**.
+- **Greater Than**: To show only users older than 30, set the **Field Name** to the **age** column, set the **Relation** to **Greater Than**, and set the **Value** to 30.
+- **Like**: For filtering addresses with zip codes starting with '35,' set the **Field Name** to the **zip_code** column, set the **Relation** to **LIKE**, and set the **Value** to **35%**. In the value field, you use the following wildcards to perform flexible pattern matching to filter your data effectively.
+    - **Percent (`%`) Wildcard**: Represents zero, one, or multiple characters.
+        - Example: `'A%'` matches any string starting with `'A'` (e.g., `'Apple'`, `'Apex'`).
+        - Example: `'%A%'` matches any string containing `'A'` (e.g., `'Canada'`, `'Australia'`).
+    - **Underscore (`_`) Wildcard**: Represents a single character.
+        - Example: `'A_'` matches any two-character string starting with `'A'` (e.g., `'An'`, `'At'`).
+        - Example: `'A__'` matches any three-character string starting with `'A'` (e.g., `'Ant'`, `'Art'`).
+:::
+
+:::info
+You can combine multiple filters using **AND** or **OR** operators to create more advanced filtering logic. This enables you to refine your data query to match specific conditions.
 :::
 
 <div class="video-container"><iframe src="https://www.loom.
@@ -201,6 +218,42 @@ com/embed/244eea2a4f694120b08524b7b8cf67de?sid=13d47ef5-5d48-4986-88da-d335ce23b
 Additional Note: Currently, you can only add "and" conditions to Supabase query filters. If you want to add an "or" filter like "status == 5 or status == 8", you can consider logic to apply "status in (5,8)" or any other logic. Fully customizable using API calls or custom actions.
 :::
 
+## Trigger Action On Data Change
 
+Sometimes, you may want to trigger an action whenever data changes in a Supabase table. For instance, in an ecommerce app, you might want to notify users on the orders page when the status of their order is updated.
 
+To respond to data changes in a Supabase table:
 
+1. Ensure you have added a **Supabase Query** to a widget (e.g., a ListView) with **Single Time Query** disabled to enable real-time updates.
+2. On the widget with the **Supabase Query**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
+3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
+
+:::info
+If you are using this trigger on a ListView, make sure to **disable** the **Infinite Scroll**.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ghFiQWGsQuJu5reUyXnl?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>

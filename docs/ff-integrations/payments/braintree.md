@@ -183,7 +183,7 @@ Make sure the user is authenticated before triggering the Braintree Payment Acti
 If you want to keep only the Credit Card option on your checkout page, you'll need to add the **CreditCardFrom** widget to the page. Follow the steps below:
 
 1. Select the **Payment Method** as ***Credit Card***.
-2. Drag and drop the [**CreditCardFrom**](../../resources/ui/components/built-in-components/creditcardform.md) widget onto the canvas.
+2. Drag and drop the [**CreditCardFrom**](../../resources/ui/widgets/built-in-widgets/creditcardform.md) widget onto the canvas.
 3. You can modify the design of the form widget as per your app's needs.
 4. Again select the **checkout button** to complete defining the Action.
 5. Enter the **Currency Code** and you can define the optional attributes like **Tax Rate Percentage** and **Shipping Cost**.

@@ -27,7 +27,7 @@ In FlutterFlow, there are a few types of state variables that you can create:
 ### Creating State Variables
 - To create an **App State variable**, refer to this **[guide](../../resources/data-representation/app-state.md#create-app-state-variable)**.
 - To create a **Page State variable**, refer to this [**guide**](../../resources/ui/pages/page-lifecycle.md#creating-a-page-state).
-- To create a **Component State variable**, refer to this [**guide**](../../resources/ui/components/custom-components/component-lifecycle.md#creating-a-component-state).
+- To create a **Component State variable**, refer to this [**guide**](../../resources/ui/components/component-lifecycle.md#creating-a-component-state).
 
 Note: Users cannot create **widget state variables**. These are automatically exposed by FlutterFlow when a Form widget is used.
 
@@ -36,7 +36,7 @@ Note: Users cannot create **widget state variables**. These are automatically ex
 ### Updating State Variables
 - To update an **App State variable**, refer to this **[guide](../../resources/data-representation/app-state.md#update-app-state-action)**.
 - Refer to the [**Page Lifecycle**](../../resources/ui/pages/page-lifecycle.md) guide to learn about updating **[Page State variables](../../resources/ui/pages/page-lifecycle.md#update-page-state-action)**.
-- Refer to the [**Component Lifecycle**](../../resources/ui/components/custom-components/component-lifecycle.md) guide to learn about updating **[Component State variables](../../resources/ui/components/custom-components/component-lifecycle.md#update-component-state-action)**.
+- Refer to the [**Component Lifecycle**](../../resources/ui/components/component-lifecycle.md) guide to learn about updating **[Component State variables](../../resources/ui/components/component-lifecycle.md#update-component-state-action)**.
 
 <p></p>
 
