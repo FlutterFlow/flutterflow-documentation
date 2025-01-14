@@ -198,9 +198,9 @@ If you prefer watching a video tutorial, here is the guide for you:
 
 ---
 
-## Loading Indicator
+## Loading Indicators
 
-To customize the loading indicators used in the app, you can make changes in this section. You have the option to specify the **Indicator Type**, **Color**, and **Radius**, and the preview of the changes will be displayed below.
+To customize the **Loading Indicators** used in the app, you can make changes in this section. You have the option to specify the **Indicator Type**, **Color**, and **Radius**, and the preview of the changes will be displayed below.
 
 <div style={{
     position: 'relative',
@@ -227,6 +227,10 @@ To customize the loading indicators used in the app, you can make changes in thi
     </iframe>
 </div>
 <p></p>
+
+:::tip
+Avoid mis-sized loading indicators or components, which lead to jumping layouts. Ensure loading components match the size and position of the content they replace.
+:::
 
 If you prefer watching a video tutorial, here is the guide for you:
 

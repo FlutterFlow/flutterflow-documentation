@@ -222,6 +222,10 @@ incoming constraints and the scrolling movement, effectively managing overflow b
   Column. You can specify a static numerical value that determines the pixel spacing between 
   adjacent children or set it from a variable.
 
+:::tip[Items Spacing vs Padding]
+Prefer “Items Spacing” set on the parent row or column instead of padding on individual elements. This ensures consistency, especially on non-dynamically generated lists.
+:::
+
 - **Apply to Start & End:** When toggled on, this applies the specified item spacing to the 
   beginning and the end of the Row or Column. This effectively adds padding at the start and end of the layout in addition to between the items.
 

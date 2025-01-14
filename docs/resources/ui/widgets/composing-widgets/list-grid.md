@@ -29,6 +29,10 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 - **Items Spacing:** This defines the space between individual items in the ListView. You can
   specify the spacing in pixels.
 
+:::tip[Items Spacing vs Padding]
+Prefer “Items Spacing” set on the parent row or column instead of padding on individual elements. This ensures consistency, especially on non-dynamically generated lists.
+:::
+
 - **Apply to Start & End:** When enabled, the item spacing will also be applied to the start and the
   end of the ListView, adding a margin at the beginning and end of the list. This effectively adds padding at the start and end of the layout in addition to between the items.
 
