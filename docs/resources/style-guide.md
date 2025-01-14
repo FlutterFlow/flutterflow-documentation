@@ -1,7 +1,7 @@
 ---
 slug: /resources/style-guide
 title: How to name variables? 
-description: 
+description: Naming conventions for FlutterFlow, including guidelines for widgets, components, state variables, constants, and more.
 tags: [Style Guide, Variables]
 keywords: [Style Guide, Variables]
 ---
