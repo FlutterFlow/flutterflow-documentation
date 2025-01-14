@@ -85,10 +85,26 @@ Flutter prefers using a lowercase `k` prefix for constants to indicate their imm
 
 :::tip[Do's]
 - **Start Constants with a k Prefix:** Always use a lowercase `k` followed by **UpperCamelCase** for constants in FlutterFlow projects.
-- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid using abbreviations unless they are widely understood. Examples: `kUserRoleAdmin`, `kMaxUploadSizeMb`
+- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid using abbreviations unless they are widely understood. Examples: `kDefaultPadding`, `kMaxUploadSizeMb`
 :::
 
 :::danger[Don'ts]
-- **Don’t Omit the k Prefix for Constants:** Avoid using plain names for constants in a Flutter-specific project, as they might conflict with variables or methods. Bad Examples: `maxItems`, `apiEndpoint`.
+- **Don’t Omit the k Prefix for Constants:** Avoid using plain names for constants in a Flutter-specific project, as they might conflict with variables or methods. Bad Examples: `padding`, `uploadSize`.
 - **Don’t Use Vague or Generic Names:** Avoid using names that fail to describe the purpose of the constant. Bad Examples: `VALUE`, `DATA`, `X`, `Y`.
+:::
+
+### State Variables 
+
+State variable names follow the **lowerCamelCase** naming style to align with Dart's conventions.
+
+:::tip[Do's]
+- **Be Descriptive and Clear:** Use variable names that clearly describe their purpose, avoiding generic or vague terms. Examples: `isFormValid`, `errorMessage`, `availableProducts`.
+- **Prefix Boolean Variables with `is`, `has`, or `should`:** For readability, use prefixes that denote the variable's purpose when naming Boolean values. Examples: `isActive`, `hasErrors`, `shouldReload`.
+- **Use Consistent Prefixes to denote state:** When managing UI or asynchronous state, use prefixes like `current`, `selected`, or `pending` for better context. Examples: `currentTabIndex`, `selectedUserId`, `pendingAction`.
+:::
+
+:::danger[Don'ts]
+- **Don’t Use Abbreviations or Single Letters:** Avoid abbreviations or single-character names that obscure the variable's intent. Bad Examples: `usrNm`, `f`, `cnt`.
+- **Don’t Use Generic Names:** Avoid using generic terms that do not convey the variable’s purpose. Bad Examples: `data`, `value`, `temp`.
+- **Don’t Start State Variables with Uppercase:** Follow Dart conventions by starting variable names with lowercase. Bad Examples: `UserName`, `IsLoading`.
 :::
