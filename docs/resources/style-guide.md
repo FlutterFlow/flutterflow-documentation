@@ -1,8 +1,12 @@
+---
+slug: /resources/style-guide
+title: How to name variables? 
+description: 
+tags: [Style Guide, Variables]
+keywords: [Style Guide, Variables]
+---
 
-
-# Consistency
-
-## Variable Naming
+# Naming Variables
 
 Follow a consistent naming convention for variables, functions, and components to make your code more readable and maintainable.
 
@@ -16,6 +20,8 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 - **lowercase_with_underscores** names use only lowercase letters, even for acronyms, and separate words with _.
 
+![various-naming-styles.png](imgs/various-naming-styles.png)
+
 **General Principles**
 - **Be Consistent:** Whatever conventions you choose, apply them consistently across the project.
 - **Be Descriptive:** Names should be self-explanatory, reducing the need for additional comments to explain what a variable, function, or class does.
@@ -23,55 +29,45 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 
 
-### Components and Widgets  
+### Pages & Components
+Use **UpperCamelCase** for all widget, component, page, and screen names to maintain consistency and readability. FlutterFlow ensures clarity by automatically adding "Widget" to widget names when generating code. For components, you can suffix the name with "Component" to clearly distinguish them. 
 
-Use UpperCamelCase for all widget and component names to maintain consistency and readability. Always suffix widget names with their type (e.g., "Widget" or "Component") to clearly indicate their purpose.This aligns with Dart conventions for class names.
-
-:::tip[Do's]
-- **Use UpperCamelCase for Widget Names:** Always write widgets and component names in UpperCamelCase. Example: `MyCustomButton`, `UserProfileWidget`, `MainViewComponent`.
-
-- **Suffix Widget Names with the Type of Widget:** When naming widgets, include a suffix that indicates the type of widget. Example: `LoginButtonWidget`, `ProfileCardComponent`, `HeaderViewWidget`.
-
-- **Use Prefixes for Clarity When Necessary:** Add a prefix only if it significantly improves clarity or helps avoid naming conflicts. Example: `AppUserProfileWidget` (if `UserProfileWidget` is already in use).
-:::
-
-
-:::danger[Don'ts]
-- **Don’t Use Prefixes Unnecessarily:** Avoid adding prefixes that do not enhance clarity or that are redundant. Bad Example: `MyAppButtonWidget` (if `ButtonWidget` would suffice).
-
-- **Don’t Use LowerCamelCase for Class Names:** Avoid using **lowerCamelCase** for class names, which is generally reserved for variables and method names. Bad Example: `loginButtonWidget`, `userProfileComponent`.
-
-- **Don’t Mix Naming Conventions:** Stick to **UpperCamelCase** consistently for all class names and widgets. Mixing conventions can reduce code readability. Bad Example: `userLoginWidget`, `ProfilecardComponent`, `headerView`.
-:::
-
-### Pages & Screens
-
-Use **UpperCamelCase** for page and screen file names with "Screen" or "Page" in the name to ensure clarity and consistency. This helps developers quickly identify and distinguish UI elements, improving project organization and readability.
+Similarly, for pages and screens, include "Page" or "Screen" in the name to indicate their purpose. This approach aligns with Dart conventions for class names and ensures a well-organized project structure.
 
 :::tip[Do's]
-- **Use UpperCamelCase for Page Names:** Name your Pages using UpperCamelCase to clearly indicate their purpose. Example: `HomePage`, `SearchResultsScreen`, `UserProfilePage`.
+- **Use UpperCamelCase for Names:** Always use **UpperCamelCase** for widgets, components, pages, and screens. Examples: `CustomButton`, `UserProfilePage`, `MainViewComponent`.
 
-- **Include "Screen" or "Page" in the Page Name:** Always include the word "Screen" or "Page" in the file name to clearly identify UI screens or pages. Example: `LoginScreen`, `SettingsPage`.
+- **Include "Screen" or "Page" in Page Names:** Use "Screen" or "Page" in file names to identify UI screens or pages. Examples: `LoginScreen`, `SettingsPage`.
 
-- **Be Descriptive and Clear in File Names:** Ensure that file names are descriptive enough to convey their purpose or content at a glance. Example: `OrderConfirmationScreen`, `ProductDetailsPage`.
+- **Use Prefixes for Clarity When Necessary:** Add a prefix if it significantly improves clarity or prevents naming conflicts. Example: `AdminUserProfile` (to differentiate it from `CustomerUserProfile` or `UserProfile`).
+
+- **Be Descriptive and Clear in File Names:** Ensure names are descriptive enough to convey their purpose at a glance. Examples: `OrderConfirmationScreen`, `ProductDetailsPage`.
 :::
 
 :::danger[Don'ts]
-- **Don’t Use All Lowercase or Mixed Case in Page Names:** Avoid using all lowercase or inconsistent casing in file names, as it can lead to confusion and reduce readability. Bad Example: `homepage`, `searchResultscreen`.
+- **Don’t Use Unnecessary Prefixes:** Avoid prefixes that do not add clarity or are redundant. Bad Example: `AppPrimaryButton` (if `PrimaryButton` is sufficient).
 
-- **Don’t Use Generic Names Without Purpose:** Avoid generic names that do not clearly indicate the file’s purpose or content. Bad Example: `Main`, `View`, `Screen1`.
+- **Don’t Add "Widget" Explicitly:** Avoid adding "Widget" to class or component names manually, as FlutterFlow already appends it during code generation. Bad Examples: `ButtonWidget`, `ProfileCardWidget`.
 
-- **Don’t Mix Naming Conventions:** Consistently use UpperCamelCase for all page names related to pages and screens. Mixing conventions can make your project harder to navigate. Bad Example: `search_results_screen`, `Userprofilepage`.
+- **Don’t Use LowerCamelCase for Class Names:** Reserve **lowerCamelCase** for variables and methods, not for components, or pages. Bad Examples: `loginButton`, `userProfile`.
+
+- **Don’t Mix Naming Conventions:** Maintain consistency with UpperCamelCase for all widgets, components, pages, and screens. Bad Examples: `userLogin`, `Profilecard`, `headerView`.
+
+- **Don’t Use Generic Names Without Purpose:** Avoid overly generic names that do not clearly convey the file’s intent. Bad Examples: `Main`, `View`, `Screen1`.
+
 :::
 
+### Custom Data Types & Enums
 
-### Custom Data Types
-
-When naming data types, use **UpperCamelCase** for consistency and opt for descriptive names that clearly represent the entity. 
+When naming custom data types and enums, use UpperCamelCase for consistency and clarity. Ensure that names are descriptive, providing a clear representation of the entity or purpose.
 
 :::tip[Do's]
 
-- Use UpperCamelCase for Custom Data Types: Name custom data types using UpperCamelCase and ensure that the class names are clear and descriptive, accurately reflecting the entity they represent Example: `UserModel`, `ProductDetails`, `OrderItem`.
+- **Use UpperCamelCase for Custom Data Types:** Name your custom data types using **UpperCamelCase**. Ensure that names are clear, concise, and descriptive, reflecting the entity they represent. Good Examples: `UserModel`, `ProductDetails`, `OrderItem`.
+
+- **Use consistent naming for Enum Names and Values:** Use **UpperCamelCase** for the enum name such as `Status`, `ConnectionState`, `UserRole` and **lowerCamelCase** for its values for e.g `{active, inactive, pending}`. This approach aligns with Dart's enum naming guidelines and ensures consistency.
+
+- **Use Plural Names for Lists:** If the data type represents a List, use a plural name to clarify its purpose. Good Example: `OrderItems` (to represent multiple `OrderItem` objects).
 :::
 
 :::danger[Don'ts]
@@ -79,3 +75,20 @@ When naming data types, use **UpperCamelCase** for consistency and opt for descr
 - **Don’t Use All Lowercase or Mixed Case for Custom Data Types:** Avoid using all lowercase or inconsistent casing in data model class names, as it reduces readability. Bad Example: `usermodel`, `product_details`.
 
 - **Don’t Use Vague or Non-Descriptive Names**: Avoid using generic or unclear names that do not clearly describe the data entity. Bad Example: `DataModel`, `Entity`, `Item`.
+
+- **Don’t Mix Naming Conventions for Enums:** Maintain consistent capitalization between enum names and their values. Bad Example: `enum UserRole { Admin, EDITOR, viewer }`
+:::
+
+### Constants
+
+Flutter prefers using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. Use **SCREAMING_SNAKE_CASE** only when contributing to global or legacy projects where it is already in use.
+
+:::tip[Do's]
+- **Start Constants with a k Prefix:** Always use a lowercase `k` followed by **UpperCamelCase** for constants in FlutterFlow projects.
+- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid using abbreviations unless they are widely understood. Examples: `kUserRoleAdmin`, `kMaxUploadSizeMb`
+:::
+
+:::danger[Don'ts]
+- **Don’t Omit the k Prefix for Constants:** Avoid using plain names for constants in a Flutter-specific project, as they might conflict with variables or methods. Bad Examples: `maxItems`, `apiEndpoint`.
+- **Don’t Use Vague or Generic Names:** Avoid using names that fail to describe the purpose of the constant. Bad Examples: `VALUE`, `DATA`, `X`, `Y`.
+:::
