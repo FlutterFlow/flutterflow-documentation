@@ -193,9 +193,9 @@ FlutterFlow currently supports **two merging approaches**: the existing “**Mer
 
 :::warning
 
-At present, both methods are available side by side, allowing you to either continue using the legacy merge or adopt Git Merge. Over time, as Git Merge proves its stability, the legacy merge may be deprecated. 
+At present, both methods are available side by side, allowing you to either continue using the legacy merge or adopt Git Merge. Over time, as Git Merge proves its stability, the Legacy Merge option may be deprecated. 
 
-The Merge (Legacy) option has some known issues with merges being incorrectly calculated. Therefore, **we strongly recommend using [Git Merge](#git-merge-new) whenever possible for a smoother and more accurate merge process.**
+The Merge (Legacy) option has some known issues with merges being incorrectly calculated. Therefore, we **strongly recommend using [Git Merge](#git-merge-new)** whenever possible for a smoother and more accurate merge process.
 
 :::
 
@@ -237,9 +237,9 @@ Next, you'll see a screen that will display if there are any conflicts. If you d
 
 #### Git Merge (New)
 
-The new Git Merge option uses Git under the hood to calculate differences between project files. Each project is backed by a repository of YAML files (except for custom code, which appears as Dart files). These YAML files map directly to various project properties, and Git calculates differences among these files to identify merge conflicts. This method provides clearer and more consistent conflict detection compared to [legacy Merge](#merge-legacy) (a custom solution).
+The new Git Merge option uses Git under the hood to calculate differences between project files. Each project is backed by a repository of YAML files (except for custom code, which appears as Dart files). These YAML files map directly to various project properties, and Git calculates differences among these files to identify merge conflicts. This method provides clearer and more consistent conflict detection compared to [Merge (legacy)](#merge-legacy) (a custom solution).
 
-:::info
+:::info[Future Plans]
 
 This option is currently in **Beta**. In addition to fixing any issues, here’s what we have planned:
 
