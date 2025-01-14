@@ -30,6 +30,10 @@ depends on how you need to arrange your UI components:
 
 ![row-col-stack.png](../../imgs/row-col-stack.png)
 
+:::tip[Minimum Layout Nesting]
+Use the minimum amount of rows/columns necessary to achieve your layout to avoid unnecessary complexity. No page or component should nest more than 10 levels deep. Reaching this limit likely signals the need for **[converting a part of the widget tree into components](../../components/creating-components.md#convert-into-a-component)**.
+:::
+
 <!---TODO #### Choosing your parent widget
 link to quickstart for how to choose parent widget [Rows/Column/Stacks]
 with examples --->
