@@ -203,7 +203,7 @@ To change color for any widget property:
 2. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
 3. By default, theme colors are displayed. Simply click on a color to apply it.
 4. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.
-5. You can also set a [color from variable](#setting-color-from-variable).
+5. You can also set a [color from variable](#set-color-from-variable).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/7fb8cd068bbb45c9ae34cfd4f325a3dc?sid=b3559d67-9e11-4501-8a17-7f4e92bd5847" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
