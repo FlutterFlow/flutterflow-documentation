@@ -14,7 +14,7 @@ to your [**Firestore database**](getting-started.md).
 
 :::info
 * Subcollections are not supported in Content Manager at this time.
-* This feature is included in our **Pro plans**.
+* Firestore Content Manager is included in the **Pro plan**.
 :::
 
 :::note[Prerequisites]
