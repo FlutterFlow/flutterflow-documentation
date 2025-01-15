@@ -47,7 +47,7 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 
 ![listview-reverse.png](../built-in-widgets/imgs/listview-reverse.png)
 
-### On Reorder
+### Reorderable List
 Whether to allow reordering of items in the list. On Web or Desktop this will 
 add drag handles, but on mobile
   the reorder is triggerred by long pressing an item.
