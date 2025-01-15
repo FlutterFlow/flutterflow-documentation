@@ -326,9 +326,10 @@ Any indexes or security rules defined in the library are recognized by the impor
 Libraries work with Firebase but have **some limitations**. The **Firebase Auth** and **Firebase Storage** are not directly supported in library projects at this time. If you need these features in your library’s functionality, you can include an action that accomplishes this task as a [**callback**](../../resources/ui/components/callbacks.md). 
 :::
 
+If your team has multiple projects that share a common Firebase feature, turning it into a library is a great idea. This ensures the same logic is used and connects to the same Firestore project across all apps.
+
 Here are some examples of library projects you can build with Firebase:
 
-- **Notes or Reminders Lists**: A library that manages basic collections for notes, tasks, or reminders.
 - **Basic Analytics or Tracking**: A library that logs events to Firestore; useful for aggregating usage data at an application level.
 - **Configuration or Settings**: A library that serves app-wide configurations (like feature flags, UI themes, or layout choices) is handled in Firebase Remote Config.
 
