@@ -47,7 +47,7 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 
 ![listview-reverse.png](../built-in-widgets/imgs/listview-reverse.png)
 
-#### Make List Reorderable
+### On Reorder
 Whether to allow reordering of items in the list. On Web or Desktop this will 
 add drag handles, but on mobile
   the reorder is triggerred by long pressing an item.
@@ -64,7 +64,7 @@ action trigger to make any necessary changes yourself.
 
 Here's a quick tutorial to set up your Reorderable ListView:
 
-##### Using App State variable
+#### Using App State variable
 
 1. First, create an app state variable with a few items of type String and display them on the 
 ListView widget.
@@ -116,7 +116,7 @@ return list;
 com/embed/bb961c71d11a4e7d8869170727d1423d?sid=a356162d-76df-45bb-930c-bebf8358ce6c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-##### Reordering Items in a Firebase Query
+#### Reordering Items in a Firebase Query
 
 If you want to reorder the list items retrieved via Firebase query collection, the steps are almost similar except for the following changes.
 
