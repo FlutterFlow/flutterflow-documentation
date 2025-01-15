@@ -328,16 +328,16 @@ Team code and API libraries will be migrated to library Projects. These projects
 </details>
 
 <details>
-<summary>Will libraries work with Marketplace?</summary>
+<summary>Do libraries work with Marketplace?</summary>
 <p>
-We plan to allow users to import a marketplace project as a library, making it easier to integrate marketplace resources into your projects.
+Yes, you can add and import a Marketplace project as a library.
 </p>
 </details>
 
 <details>
-<summary>How do libraries work with themes?</summary>
+<summary>How do libraries work with themes (design systems)?</summary>
 <p>
-The parent project's design system takes precedence over the imported library's design system. For example, if a library uses the standard FlutterFlow color scheme, the values defined in the parent project will override those in the library. However, if the library project has a custom color that the parent project does not have, it will be used as-is in the parent project.
+By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#use-library-as-design-system) page.
 </p>
 </details>
 
