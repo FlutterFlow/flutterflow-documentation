@@ -322,7 +322,7 @@ In library projects, you won’t see an option to link to a Firebase project. In
 
 Any indexes or security rules defined in the library are recognized by the importing project and deployed accordingly.
 
-:::warning
+:::warning[Limitations]
 Libraries work with Firebase but have **some limitations**. The **Firebase Auth** and **Firebase Storage** are not directly supported in library projects at this time. If you need these features in your library’s functionality, you can include an action that accomplishes this task as a [**callback**](../../resources/ui/components/callbacks.md). 
 :::
 
