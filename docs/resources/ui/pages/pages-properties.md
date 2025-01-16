@@ -120,8 +120,8 @@ page, submit form data, or call an API. Actions are crucial for creating
 interactive and functional apps.
 
 In the case of Scaffold (Page) actions, you can establish specific behaviors or
-functions that are triggered by certain events related to the page's lifecycle such as **On Page 
-Load** or **On Phone Shake**. 
+functions that are triggered by certain events related to the page's lifecycle such as [**On Page 
+Load**](page-lifecycle.md#on-page-load-action-trigger) or [**On Phone Shake**](page-lifecycle.md#on-phone-shake-action-trigger). 
 
 :::info[LEARN MORE]
 To learn about the page lifecycle and other methods exposed by FlutterFlow, [**refer to this resource**](page-lifecycle.md).
