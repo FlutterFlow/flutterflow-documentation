@@ -64,6 +64,7 @@ FFRoute(
     builder: (context, params) => PromotionPageWidget(),
   )
 ```
+:::
 
 
 :::info[LEARN MORE]
