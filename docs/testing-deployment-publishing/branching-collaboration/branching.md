@@ -306,7 +306,7 @@ The left-hand side panel displays all the project files in YAML format. YAML (Ye
 
 - **Filter Files:** You can use filters to narrow down the list of YAML files based on specific criteria:
     
-    - **All Files (Unchanged Files)**: Shows every YAML file in the project.
+    - **All Files (Unchanged Files)**: Shows every YAML file in the project that has no changes.
     - **Files with Changes**: Displays only files where a change has been made on either branch.
     - **Files with Conflicts**: Shows only files that have merge conflicts, where the changes in one branch directly contradict the changes in the other.
 
