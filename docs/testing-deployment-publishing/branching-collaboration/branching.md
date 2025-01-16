@@ -294,6 +294,33 @@ When performing a Git merge in FlutterFlow, you’ll see a screen with multiple 
 - **Project Errors**: Project errors occur when the result of a merge creates a problem in your project. For example, this might happen if the merge results in two data types having the same name. These errors need to be resolved to ensure your project works as expected. You have several options to deal with project errors:
     - **Fix Errors During the Merge**: This approach ensures that the merged project is error-free right from the start. Here’s how you can do it:
         - **Edit the YAML files:** Update the project YAML files (in the Right Lower Panel) to fix issues, such as renaming a data type that causes a conflict.
+        
+            <div style={{
+                position: 'relative',
+                paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+                height: 0,
+                width: '100%'}}>
+                <iframe 
+                    src="https://demo.arcade.software/nMguF4fBc0xk27yLd1rw?embed&show_copy_link=true"
+                    title=""
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        colorScheme: 'light'
+                    }}
+                    frameborder="0"
+                    loading="lazy"
+                    webkitAllowFullScreen
+                    mozAllowFullScreen
+                    allowFullScreen
+                    allow="clipboard-write">
+                </iframe>
+            </div>
+            <p></p>
+
         - **Edit the Project Directly while Merging:** While still in the merge process, open the project, make the necessary changes (like renaming the conflicting data type), and then continue.
     - **Fix Errors After the Merge**: If you prefer, you can complete the merge first and address the errors later. For example, finish the merge process as it is. After merging, go back to the project and resolve any issues.
 - **Cancel**: Abandons the merge process and discards any conflict resolutions you’ve already applied during this merge session.
@@ -312,7 +339,9 @@ The left-hand side panel displays all the project files in YAML format. YAML (Ye
 
         :::info
         - A **change** refers to any update, addition, or deletion made in one of the branches. For example, modifying a field name or changing the properties of a widget.
+        ![change](imgs/change.avif)
         - A **conflict** occurs when the same part of a file has been changed in both branches, making it unclear which version to keep. For instance, if one branch changes the color of the Container to blue and the other changes it to red, this creates a conflict.
+        ![conflict](imgs/conflict.avif)
         :::
     
 - **Search File:** If you’re looking for a particular file, you can use the search bar to locate it quickly. This is especially useful in larger projects with many files.
@@ -453,7 +482,7 @@ You can review each file with merge conflicts and choose to:
         height: 0,
         width: '100%'}}>
         <iframe 
-            src="https://demo.arcade.software/hphsdsKGyT8Vid7c0NxX?embed&show_copy_link=true"
+            src="https://demo.arcade.software/P5NM88UwmeiZ1PHwcnp6?embed&show_copy_link=true"
             title=""
             style={{
                 position: 'absolute',
