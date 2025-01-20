@@ -144,7 +144,7 @@ Here are the steps to add adaptive icons:
 
 See the following resources for more information on Android adaptive icons.
 
-**Create Adaptive Icon**
+#### Create Adaptive Icon
 
 - [Create app icons in Android Studio](https://developer.android.com/studio/write/create-app-icons#create-adaptive)
 - [Figma template](https://material.uplabs.com/posts/adaptive-icon-sticker-sheet) (requires login)
@@ -152,7 +152,7 @@ See the following resources for more information on Android adaptive icons.
 - [Bjango templates](https://github.com/bjango/Bjango-Templates) include adaptive icons
 - [Adobe XD template](https://github.com/faizmalkani/adaptive-icon-template-xd)
 
-**Adaptive Icon Fundamentals**
+#### Adaptive Icon Fundamentals
 
 - [Understanding Android Adaptive Icons](https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2)
 - [Designing Adaptive Icons](https://medium.com/google-design/designing-adaptive-icons-515af294c783)
