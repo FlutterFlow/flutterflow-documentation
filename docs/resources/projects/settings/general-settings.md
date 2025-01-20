@@ -16,7 +16,7 @@ This section allows you to customize a wide range of settings that are crucial f
 
 ### Change Project, Package, and Display Name
 
-If you didn't decide on the app or package name when creating a new project, you might have entered a random name. From here, you can change the name anytime.
+Modify the app or package name of your project from this settings. You can also define different package names based on the development environment selected. 
 
 You can set a different name for the *App Store* and *Play Store* using the **Display Name**.
 
@@ -28,8 +28,9 @@ After changing the package name, errors may appear on the toolbar due to invalid
 
 You can specify your app's **Entry Page** and **Logged In** **Page** from this section.
 
-- **Entry Page**: This is the home page for your app. If authentication is enabled, users who are not logged in will see this page, which is typically set to a login/signup or onboarding page.
-- **Logged In Page** (*available only if auth is enabled*): This page is displayed on the app start if a user is already logged in. Users are automatically navigated to the page you specify here on a successful sign-in attempt.
+- **Entry Page**: This serves as the home page for your app. When authentication is disabled, all users are directed to this page by default. If authentication is enabled, this page becomes the login, signup, or onboarding page for users who are not authenticated.
+- **Logged In Page** (*available only if auth is enabled*): This page is displayed when the app starts for authenticated users. If a user successfully signs in, they are automatically redirected to the page specified here. If the user is already authenticated, this page bypasses the Entry Page.
+
 
 To set the page, simply choose the page that you want to use from the dropdown menu.
 
@@ -74,35 +75,8 @@ If you want the improved folder organization for your project, **Enable Updated 
 
 ### Routing & Deep Linking
 
-From here, you can configure the global settings for navigation and deep link in your app [here](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md).
+Configure the global settings for navigation and deep link in your app. To learn, how to set up deeplinks, check out the **[Deep & Dynamic Linking](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md)** guide.
 
-
-If you prefer watching a video tutorial, here is the guide for you:
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/H_3yQsa8wT8"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
 
 ## App Assets
 
