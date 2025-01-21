@@ -53,7 +53,7 @@ To get matched with developers based on your project requirements, follow the st
 
 :::info[Please Note]
 
-You can send your request to up to five Developers at a time.
+You can send your request upto 5 Developers at a time.
 
 :::
 
