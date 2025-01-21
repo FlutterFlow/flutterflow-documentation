@@ -2307,6 +2307,11 @@
         "source": "/concepts/multiple-languages/language-selector",
         "destination": "/concepts/localization",
         "type": 301
+      },
+      {
+        "source": "/misc/flutterflow-experts",
+        "destination": "/misc/hire-flutterflow-developer",
+        "type": 301
       }
     ]
   }

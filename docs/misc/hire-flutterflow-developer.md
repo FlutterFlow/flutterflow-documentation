@@ -1,4 +1,5 @@
 ---
+slug: /misc/hire-flutterflow-developer
 title: Hire FlutterFlow Developer
 description: Learn how to hire a FlutterFlow Developer.
 sidebar_position: 1
