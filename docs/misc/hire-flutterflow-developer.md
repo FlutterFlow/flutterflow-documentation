@@ -9,7 +9,7 @@ keywords: [Hire FlutterFlow Developer, FlutterFlow Expert]
 
 You can hire a skilled FlutterFlow Developer to build your app at: https://www.flutterflow.io/hire-developer.
 
-FlutterFlow Developers include agencies and freelancers skilled in building apps using FlutterFlow. Many of them have the **FlutterFlow Expert** badge, awarded to those who demonstrate advanced technical proficiency. To earn this recognition, they must pass the FlutterFlow Expert training and submit a portfolio of their work for our evaluation.
+**FlutterFlow Developers** include agencies and freelancers skilled in building apps using FlutterFlow. Many of them have the **FlutterFlow Expert** badge, awarded to those who demonstrate advanced technical proficiency. To earn this recognition, they must pass the FlutterFlow Expert training and submit a portfolio of their work for our evaluation.
 
 :::warning[Please Note]
 
