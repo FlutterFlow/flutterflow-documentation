@@ -85,7 +85,6 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
 
 - App settings 
-  - Firebase
   - Supabase
   - Development environments
   - Authentication
@@ -98,8 +97,6 @@ When a project is converted into a library, the following features are disabled 
   - Google Analytics 
   - OneSignal 
   - Mux 
-- Cloud functions
-- Firestore Collections
 
 ## Importing a Library
 
@@ -318,6 +315,24 @@ To set library values, navigate to **Settings and Integrations > Project Setup >
 For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#use-environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
 :::
 
+## Libraries with Firebase
+You can create collections and enable various Firebase features in library projects without connecting a separate Firebase project.
+
+In library projects, you won’t see an option to link to a Firebase project. Instead, the project that imports the library handles the actual Firebase connection.
+
+Any indexes or security rules defined in the library are recognized by the importing project and deployed accordingly.
+
+:::warning[Limitations]
+Libraries work with Firebase but have **some limitations**. The **Firebase Auth** and **Firebase Storage** are not directly supported in library projects at this time. If you need these features in your library’s functionality, you can include an action that accomplishes this task as a [**callback**](../../resources/ui/components/callbacks.md). 
+:::
+
+If your team has multiple projects that share a common Firebase feature, turning it into a library is a great idea. This ensures the same logic is used and connects to the same Firestore project across all apps.
+
+Here are some examples of library projects you can build with Firebase:
+
+- **Basic Analytics or Tracking**: A library that logs events to Firestore; useful for aggregating usage data at an application level.
+- **Configuration or Settings**: A library that serves app-wide configurations (like feature flags, UI themes, or layout choices) is handled in Firebase Remote Config.
+
 ## FAQs
 
 <details>
@@ -328,16 +343,16 @@ Team code and API libraries will be migrated to library Projects. These projects
 </details>
 
 <details>
-<summary>Will libraries work with Marketplace?</summary>
+<summary>Do libraries work with Marketplace?</summary>
 <p>
-We plan to allow users to import a marketplace project as a library, making it easier to integrate marketplace resources into your projects.
+Yes, you can add and import a Marketplace project as a library.
 </p>
 </details>
 
 <details>
-<summary>How do libraries work with themes?</summary>
+<summary>How do libraries work with themes (design systems)?</summary>
 <p>
-The parent project's design system takes precedence over the imported library's design system. For example, if a library uses the standard FlutterFlow color scheme, the values defined in the parent project will override those in the library. However, if the library project has a custom color that the parent project does not have, it will be used as-is in the parent project.
+By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#use-library-as-design-system) page.
 </p>
 </details>
 
