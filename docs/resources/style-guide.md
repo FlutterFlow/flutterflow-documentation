@@ -1,6 +1,6 @@
 ---
 slug: /resources/style-guide
-title: How to name variables? 
+title: Naming Variables
 description: Naming conventions for FlutterFlow, including guidelines for widgets, components, state variables, constants, and more.
 tags: [Style Guide, Variables]
 keywords: [Style Guide, Variables]
@@ -8,9 +8,9 @@ keywords: [Style Guide, Variables]
 
 # Naming Variables
 
-Follow a consistent naming convention for variables, functions, and components to make your code more readable and maintainable.
+To make your code more maintainable, readable, and consistent, it’s essential to adopt clear naming conventions for variables, functions, and components.
 
-Best practices for naming conventions in app development, especially for projects using Flutter, aim to improve code readability, maintainability, and consistency across the application. Here are some general guidelines tailored for different aspects of a Flutter project:
+Best practices for naming conventions in app development (especially for projects using Flutter), aim to improve code readability, maintainability, and consistency across the application. Here are some general guidelines tailored for different aspects of a Flutter project:
 
 Various naming styles (as suggested by [Dart Effective Style Guide](https://dart.dev/effective-dart/style#identifiers)):
 
@@ -30,7 +30,7 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 
 
 ### Pages & Components
-Use **UpperCamelCase** for all widget, component, page, and screen names to maintain consistency and readability. FlutterFlow ensures clarity by automatically adding "Widget" to widget names when generating code. For components, you can suffix the name with "Component" to clearly distinguish them. 
+Use **UpperCamelCase** for all widgets, components, pages, and screen names to maintain consistency and readability. FlutterFlow ensures clarity by automatically adding "Widget" to widget names when generating code. For components, you can suffix the name with "Component" to clearly distinguish them. 
 
 Similarly, for pages and screens, include "Page" or "Screen" in the name to indicate their purpose. This approach aligns with Dart conventions for class names and ensures a well-organized project structure.
 
@@ -65,7 +65,7 @@ When naming custom data types and enums, use UpperCamelCase for consistency and 
 
 - **Use UpperCamelCase for Custom Data Types:** Name your custom data types using **UpperCamelCase**. Ensure that names are clear, concise, and descriptive, reflecting the entity they represent. Good Examples: `UserModel`, `ProductDetails`, `OrderItem`.
 
-- **Use consistent naming for Enum Names and Values:** Use **UpperCamelCase** for the enum name such as `Status`, `ConnectionState`, `UserRole` and **lowerCamelCase** for its values for e.g `{active, inactive, pending}`. This approach aligns with Dart's enum naming guidelines and ensures consistency.
+- **Use consistent naming for Enum Names and Values:** Use **UpperCamelCase** for the enum name such as, `Status`, `ConnectionState`, `UserRole` and **lowerCamelCase** for its values e.g., `{active, inactive, pending}`. This approach aligns with Dart's enum naming guidelines and ensures consistency.
 
 - **Use Plural Names for Lists:** If the data type represents a List, use a plural name to clarify its purpose. Good Example: `OrderItems` (to represent multiple `OrderItem` objects).
 :::
