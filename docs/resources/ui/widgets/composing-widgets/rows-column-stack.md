@@ -30,6 +30,10 @@ depends on how you need to arrange your UI components:
 
 ![row-col-stack.png](../../imgs/row-col-stack.png)
 
+:::tip[Minimum Layout Nesting]
+Use the minimum amount of rows/columns necessary to achieve your layout to avoid unnecessary complexity. No page or component should nest more than 10 levels deep. Reaching this limit likely signals the need for **[converting a part of the widget tree into components](../../components/creating-components.md#convert-into-a-component)**.
+:::
+
 <!---TODO #### Choosing your parent widget
 link to quickstart for how to choose parent widget [Rows/Column/Stacks]
 with examples --->
@@ -217,6 +221,10 @@ incoming constraints and the scrolling movement, effectively managing overflow b
 - **Items Spacing:** This field sets the space between each child widget within the Row or 
   Column. You can specify a static numerical value that determines the pixel spacing between 
   adjacent children or set it from a variable.
+
+:::tip[Items Spacing vs Padding]
+Prefer “Items Spacing” set on the parent row or column instead of padding on individual elements. This ensures consistency, especially on non-dynamically generated lists.
+:::
 
 - **Apply to Start & End:** When toggled on, this applies the specified item spacing to the 
   beginning and the end of the Row or Column. This effectively adds padding at the start and end of the layout in addition to between the items.
