@@ -1,12 +1,12 @@
 ---
 slug: /resources/style-guide
-title: Naming Variables
+title: Naming Variables & Functions
 description: Naming conventions for FlutterFlow, including guidelines for widgets, components, state variables, constants, and more.
 tags: [Style Guide, Variables]
 keywords: [Style Guide, Variables]
 ---
 
-# Naming Variables
+# Naming Variables & Functions
 
 To make your code more maintainable, readable, and consistent, it’s essential to adopt clear naming conventions for variables, functions, and components.
 
@@ -27,6 +27,9 @@ Various naming styles (as suggested by [Dart Effective Style Guide](https://dart
 - **Be Descriptive:** Names should be self-explanatory, reducing the need for additional comments to explain what a variable, function, or class does.
 - **Avoid Abbreviations:** Unless it's a well-known abbreviation, spell out words to avoid confusion.
 
+
+## Variable Naming Convention
+This section outlines naming conventions for pages, components, state variables, custom data types, enums, and constants to ensure clarity and consistency throughout the project.
 
 
 ### Pages & Components
@@ -57,9 +60,13 @@ Similarly, for pages and screens, include "Page" or "Screen" in the name to indi
 
 :::
 
+
+Note that the style guidelines for Pages and Components also apply to **[Custom Widgets](../ff-concepts/adding-customization/custom-widgets.md)**, as Pages and Components created in FlutterFlow are internally generated as widgets.
+
+
 ### Custom Data Types & Enums
 
-When naming custom data types and enums, use UpperCamelCase for consistency and clarity. Ensure that names are descriptive, providing a clear representation of the entity or purpose.
+When naming custom data types and enums, use **UpperCamelCase** for consistency and clarity. Ensure that names are descriptive, providing a clear representation of the entity or purpose.
 
 :::tip[Do's]
 
@@ -108,3 +115,23 @@ State variable names follow the **lowerCamelCase** naming style to align with Da
 - **Don’t Use Generic Names:** Avoid using generic terms that do not convey the variable’s purpose. Bad Examples: `data`, `value`, `temp`.
 - **Don’t Start State Variables with Uppercase:** Follow Dart conventions by starting variable names with lowercase. Bad Examples: `UserName`, `IsLoading`.
 :::
+
+## Function Naming Convention
+This section defines naming conventions for custom functions, actions, and action blocks to maintain consistency, readability, and ease of understanding across the codebase.
+
+### Custom Functions & Actions
+
+Custom functions and custom actions created in the Custom Code tab of FlutterFlow should follow the **lowerCamelCase** naming convention. These typically reflect an action or behavior.
+
+:::tip[Do's]
+- **Be descriptive and concise:** Use clear, meaningful names that describe the action or purpose of the function (e.g., `validateForm` instead of `doCheck`, or `fetchUserData` instead of `userData`).
+- **Use action-oriented names:** Start with verbs to indicate behavior (e.g., `submitForm`, `processPayment`).
+:::
+
+:::danger[Dont's]
+- **Avoid using underscores or spaces:** Names like `fetch_user_data` do not align with **lowerCamelCase** conventions.
+- **Avoid redundant prefixes or suffixes:** There’s no need to prefix with `custom` or suffix with `Func` unless absolutely necessary for clarity (e.g., `customSubmitFormFunc` is redundant).
+- **Don’t use overly generic names:** Avoid vague terms like `doSomething` or `functionOne`, which don’t provide context.
+:::
+
+Note that **[Action Blocks](../resources/control-flow/functions/action-blocks.md)** should follow the same naming convention as custom actions, as they are both technically Dart functions internally in the generated code.
