@@ -33,7 +33,7 @@ A list of all the available global properties is as follows:
 
 - **Current Device Location:** Obtains he user's current location, ideal for updating their position on Google Maps or storing it in a backend database. [Check out examples](#current-device-location) on how to retrieve and save the current device location.
 
-- **Link To Current Page:** Provides the deep link of the current page. Learn more about [adding deep links here](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#adding-deep-link).
+- **Current Route Path**: Provides the route name of the currently active or visible page in your app. In some cases, pages may continue to run in the background without being visible to the user. For example, if you launch the app through a push notification, the home page might still run in the background, even if the notification directs you to a different page. This could lead to unnecessary action triggers, such as On Page Load from the home page. Using this action, you can block or adjust specific actions if the active page isn't the one you expect.
 - **Fraction of Screen Width:** Determines the proportional width of the device's screen.
 - **Fraction of Screen Height:** Determines the proportional height of the device's screen.
 - **Screen Width:** Provides the total width of the current device's screen in pixels.
