@@ -2307,6 +2307,11 @@
         "source": "/concepts/multiple-languages/language-selector",
         "destination": "/concepts/localization",
         "type": 301
+      },
+      {
+        "source": "/misc/enterprise-support-policy",
+        "destination": "/misc/enterprise#enterprise-support-policy",
+        "type": 301
       }
     ]
   }
