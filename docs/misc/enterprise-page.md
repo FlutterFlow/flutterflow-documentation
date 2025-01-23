@@ -11,7 +11,7 @@ keywords: [Enterprise Support Policy, Whitelist URLs]
 
 ## Whitelist URLs
 
-Enterprise environments might have restrictions in accessing the internet. For example, allowing only safe URLs that are related to their work. If you have such restrictions, you may not be able to use FlutterFlow or its features. Because FlutterFlow accesses multiple services—Firestore, Cloud Functions, and various APIs—these URLs must be allowed in your corporate firewall for everything to function correctly.
+Enterprise environments often restrict internet access to enhance security and compliance. For example, they may allow access only to approved URLs that are essential for work-related tasks. FlutterFlow won't properly work in such restrictions because it accesses multiple services—Firestore, Cloud Functions, and various APIs—these URLs must be allowed in your corporate firewall for everything to function correctly.
 
 To find out which URLs you need to whitelist, open the **URL Access** page from the FlutterFlow [dashboard](../intro/ff-ui/dashboard.md). Any **Inaccessible** URLs are currently blocked by your network and preventing certain features from working. You can copy these URLs individually or use the **Copy All Inaccessible URLs** button in the top-right corner to gather them at once, then provide them to your IT team for whitelisting.
 
