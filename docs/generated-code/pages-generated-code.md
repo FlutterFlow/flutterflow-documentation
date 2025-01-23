@@ -120,6 +120,7 @@ class _ProductListPageWidgetState extends State<ProductListPageWidget> {
         _model = createModel(context, () => ProductDetailPageModel());
 
     }
+
 ```
 
 #### PageModel Dispose
