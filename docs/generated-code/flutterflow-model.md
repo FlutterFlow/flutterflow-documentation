@@ -57,7 +57,7 @@ Provides references to the associated widget and its `BuildContext`.
   BuildContext? get context => _context;
 ```
 
-`_widget` and `_context` (private fields) stores the widget and context references. `widget` and `context` (getters) are the public accessors for `_widget` and `_context`.
+`_widget` and `_context` (private fields) store the widget and context references. `widget` and `context` (getters) are the public accessors for `_widget` and `_context`.
 
 ## Disposal
 

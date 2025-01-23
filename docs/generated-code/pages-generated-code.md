@@ -9,7 +9,7 @@ sidebar_position: 5
 When you create a new Page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. So if the name of the page you created is called **ProductListPage**, FlutterFlow generation backend will automatically create **ProductListPageWidget** class and **ProductListPageModel** class. 
 
 :::info[Prerequisites]
-This guide uses example of the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
+This guide uses examples from the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
 :::
 
 ## PageModel class
@@ -77,7 +77,6 @@ When dealing with dynamic lists of components, such as those in a `ListView`, Ro
 ```js
 // Models for CategoryAvatar dynamic component.
   Map<String, FlutterFlowModel> categoryAvatarModels = {};
-
 ```
 
 #### dispose()
@@ -106,7 +105,6 @@ class ProductListPageWidget extends StatefulWidget {
     @override
     State<ProductListPageWidget> createState() => _ProductListPageWidgetState();
 }
-
 ```
 
 #### PageModel Initialization
@@ -140,7 +138,7 @@ Similarly, the [`dispose` method](#dispose) of the `PageModel` class is invoked 
 Each page includes a `GlobalKey` for the `Scaffold`, which can be used to manage the scaffold's state, such as opening or closing drawers or snackbars programmatically.
 
 ```js
-  final scaffoldKey = GlobalKey<ScaffoldState>();
+final scaffoldKey = GlobalKey<ScaffoldState>();
 
 return Scaffold(
     key: scaffoldKey,
