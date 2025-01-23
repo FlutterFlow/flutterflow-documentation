@@ -77,7 +77,6 @@ When dealing with dynamic lists of components, such as those in a `ListView`, Ro
 ```js
 // Models for CategoryAvatar dynamic component.
   Map<String, FlutterFlowModel> categoryAvatarModels = {};
-
 ```
 
 #### dispose()
@@ -106,7 +105,6 @@ class ProductListPageWidget extends StatefulWidget {
     @override
     State<ProductListPageWidget> createState() => _ProductListPageWidgetState();
 }
-
 ```
 
 #### PageModel Initialization
@@ -122,7 +120,6 @@ class _ProductListPageWidgetState extends State<ProductListPageWidget> {
         _model = createModel(context, () => ProductDetailPageModel());
 
     }
-
 ```
 
 #### PageModel Dispose
@@ -140,7 +137,7 @@ Similarly, the [`dispose` method](#dispose) of the `PageModel` class is invoked 
 Each page includes a `GlobalKey` for the `Scaffold`, which can be used to manage the scaffold's state, such as opening or closing drawers or snackbars programmatically.
 
 ```js
-  final scaffoldKey = GlobalKey<ScaffoldState>();
+final scaffoldKey = GlobalKey<ScaffoldState>();
 
 return Scaffold(
     key: scaffoldKey,
