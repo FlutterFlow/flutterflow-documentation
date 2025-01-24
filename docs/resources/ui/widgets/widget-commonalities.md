@@ -47,7 +47,7 @@ com/embed/f510565b464c4fb8903c0b6993fc8c20?sid=ceb9de2e-af71-4ba0-b888-b6d4e47d6
 
 
 
-### Responsive
+### Responsive Properties
 
 When developing user interfaces with widgets, you'll notice certain properties and features that are universally applicable. This section provides guidance on adjusting these shared attributes across different widgets.
 
@@ -75,7 +75,7 @@ Here is how it is done:
   <figcaption class="centered-caption">Responsive visibility for web</figcaption>
 </figure>
 
-#### Customize responsive breakpoint
+#### Customize Responsive Breakpoint
 
 Sometimes, you might want to override the default responsive breakpoint to suit unique requirements; whether it's accommodating a specific device or catering to a particular user experience, having the flexibility to customize breakpoints can be advantageous.
 
@@ -154,7 +154,7 @@ com/embed/iMc1m-l7eyw" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 
 
-### Adjust alignment
+### Adjust Alignment
 
 This property helps you position the widget in two ways.
 
@@ -179,11 +179,11 @@ com/embed/vuJ2fTnYyCM" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 
 
-## Testing
+## Testing Widgets
 
 This property enables you to specify the **Value Key** for the current widget, which serves as a reference point during automated test runs. Please refer to the detailed guide provided [here](../../../testing-deployment-publishing/testing/automated-tests.md).
 
-## Changing the size
+## Set Width & Height Properties
 
 To change the size, navigate to the **Width** and **Height** properties, and then you have three choices for setting the size:
 
@@ -195,7 +195,7 @@ To change the size, navigate to the **Width** and **Height** properties, and the
 com/embed/aa1755b1b7b94ef3ac3a72da431d844f?sid=982c1f26-b768-4c8d-ab77-c085219ebab6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-## Change color
+## Change Color
 
 To change color for any widget property:
 
@@ -203,13 +203,13 @@ To change color for any widget property:
 2. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
 3. By default, theme colors are displayed. Simply click on a color to apply it.
 4. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.
-5. You can also set a [color from variable](#setting-color-from-variable).
+5. You can also set a [color from variable](#set-color-from-variable).
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/7fb8cd068bbb45c9ae34cfd4f325a3dc?sid=b3559d67-9e11-4501-8a17-7f4e92bd5847" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-## Setting color from variable
+## Set Color From Variable
 
 You may want to apply dynamic colors to widget properties like Container backgrounds or Text colors, which can be achieved by assigning colors from a variable. For instance, you can display temperature color dynamically based on an app state variable, data from a Firestore document, responses from API calls, or other similar sources.
 
@@ -253,7 +253,7 @@ com/embed/6bffe7446e1d414f99baee759fda8fc0?sid=abfedd7c-3bc4-4eda-a9ab-341b72e4b
 
 You can also set the color from a [conditional value](../../../resources/control-flow/functions/conditional-logic.md#setting-widget-properties-with-conditional-logic).
 
-## Copy variable
+## Copy Variable
 
 If you have a complex variable value (e.g., using [Conditional Logic](../../../resources/control-flow/functions/conditional-logic.md)) and want to use the same logic in another variable value, you can do so by copying a variable.
 
@@ -283,7 +283,7 @@ com/embed/f3cdb87b927b46508a2f1c21c2524cfe?sid=bb94b178-cba5-4423-afd0-47a4669c2
 
 <p></p>
 
-## Add an image from Unsplash
+## Add Image from Unsplash
 
 You can also add images directly from the [Unsplash](https://unsplash.com/) right inside the properties panel. To do so, simply click on the search icon and search and select the image. **Tip**: You can also choose the size of the image to add (i.e., Small, Regular, Full).
 
@@ -292,13 +292,11 @@ com/embed/6954aafd8e494e74b52a2e89d4744e39?sid=8cd4d95b-e338-41f1-ae8a-912422f58
 
 <p></p>
 
-## UI builder display value
+## UI Builder Display Value
 
-For widgets like **Text** and **RichText**, when their content is coming from a variable, you have the option to set a placeholder value that will be displayed only in the app builder. Keep in mind that this display value is solely for visualization purposes within the canvas and will be replaced with the actual variable value when the app is running.
+For widgets like `Text` and `RichText`, when their content is set from a variable, you can set a placeholder value to be displayed only in the app builder. Keep in mind that this placeholder is solely for visualization purposes within the canvas and will be replaced by the actual variable value when the app runs.
 
-This is helpful in assessing spacing and alignment without the need to remove variable bindings.
-
-
+This feature is useful for assessing spacing and alignment without removing variable bindings.
 
 ![img_4.png](..%2Fimgs%2Fimg_4.png)
 ## Trigger action on selection change
