@@ -37,6 +37,8 @@ Use **UpperCamelCase** for all widgets, components, pages, and screen names to m
 
 Similarly, for pages and screens, include "Page" or "Screen" in the name to indicate their purpose. This approach aligns with Dart conventions for class names and ensures a well-organized project structure.
 
+![comp-style-guide.png](imgs/comp-style-guide.png)
+
 :::tip[Do's]
 - **Use UpperCamelCase for Names:** Always use **UpperCamelCase** for widgets, components, pages, and screens. Examples: `CustomButton`, `UserProfilePage`, `MainViewComponent`.
 
@@ -67,6 +69,8 @@ Note that the style guidelines for Pages and Components also apply to **[Custom 
 ### Custom Data Types & Enums
 
 When naming custom data types and enums, use **UpperCamelCase** for consistency and clarity. Ensure that names are descriptive, providing a clear representation of the entity or purpose.
+
+![dt-style-guide.png](imgs/dt-style-guide.png)
 
 :::tip[Do's]
 
@@ -122,6 +126,8 @@ This section defines naming conventions for custom functions, actions, and actio
 ### Custom Functions & Actions
 
 Custom functions and custom actions created in the Custom Code tab of FlutterFlow should follow the **lowerCamelCase** naming convention. These typically reflect an action or behavior.
+
+![func-style-guide.png](imgs/func-style-guide.png)
 
 :::tip[Do's]
 - **Be descriptive and concise:** Use clear, meaningful names that describe the action or purpose of the function (e.g., `validateForm` instead of `doCheck`, or `fetchUserData` instead of `userData`).
