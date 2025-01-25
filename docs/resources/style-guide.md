@@ -14,11 +14,11 @@ Best practices for naming conventions in app development (especially for project
 
 Various naming styles (as suggested by [Dart Effective Style Guide](https://dart.dev/effective-dart/style#identifiers)):
 
-- **UpperCamelCase** names capitalize the first letter of each word, including the first.
+- **UpperCamelCase** (also known as PascalCase) names capitalize the first letter of each word, including the first.
 
-- **lowerCamelCase** names capitalize the first letter of each word, except the first which is always lowercase, even if it's an acronym.
+- **lowerCamelCase** (also known as camelCase) names capitalize the first letter of each word, except the first which is always lowercase, even if it's an acronym.
 
-- **lowercase_with_underscores** names use only lowercase letters, even for acronyms, and separate words with _.
+- **lowercase_with_underscores** (also known as snake_case) names use only lowercase letters, even for acronyms, and separate words with _.
 
 ![various-naming-styles.png](imgs/various-naming-styles.png)
 
