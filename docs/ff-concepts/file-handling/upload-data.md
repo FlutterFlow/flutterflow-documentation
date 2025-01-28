@@ -71,7 +71,8 @@ Tap on the terminal (black screen), paste in the following command (again, repla
 ```
 touch cors.json && \
 echo [{\"origin\": [\"*\"], \"method\": [\"GET\"], \"maxAgeSeconds\": 3600}] > cors.json && \
-gsutil cors set cors.json gs://FIREBASE_PROJECT_ID.appspot.com
+//gsutil cors set cors.json gs://FIREBASE_PROJECT_ID.appspot.com --> wrong domain
+gsutil cors set cors.json gs://FIREBASE_PROJECT_ID.firebasestorage.app --> correct domain
 ```
 
 If you get a message to "Authorize Cloud Shell" make sure to hit "Authorize". Once the command runs it should give you an output similar to below. If so, it worked!
