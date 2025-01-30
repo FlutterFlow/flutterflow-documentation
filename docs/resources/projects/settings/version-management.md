@@ -76,7 +76,7 @@ To pin your project, navigate to **Settings and Integrations > General > App Det
 ![pin-version](imgs/pin-version.avif)
 
 :::info
-You can only pin a project to a stable version if you are the **Project Owner** and you are on the **main** branch.
+You can only pin a project to a stable version if you are the **Project Owner**.
 :::
 
 ### Modifying the Pinned Version
@@ -101,9 +101,9 @@ If you have a complex app with custom code that depends on specific versions of 
 
 1. If you think your project should be pinned to a stable release, choose to [pin the project to the current (if available) or next stable release](#modifying-the-pinned-version). 
 2. When a new stable version is released, you can choose when you would like to upgrade based on your own release schedule and development process. For instance, you might wait until you're not actively developing a new feature, or you could check the release notes first to see if there are must-have features that would prompt you to upgrade sooner.
-3. When you’re ready to upgrade, commit all your changes on main to save your progress and [update the pinned version](#modifying-the-pinned-version).
+3. When you’re ready to upgrade, commit all your changes on main to save your progress. Create a new branch from the main branch, [update the pinned version](#modifying-the-pinned-version), and test all functionalities to ensure compatibility. If any modifications are needed, make those changes in the new branch.
 4. Run your app on the platforms you support—using a simulator, emulator, or physical device to ensure everything works as intended. See the [Local Run documentation](https://docs.flutterflow.io/testing/local-run/) for details.
-4. If everything looks good, you're good to go! If for some reason your app is not working as expected, you can choose to revert the version and lose those testing changes until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e. upgrade dependencies/custom code).
+4. If everything looks good, you can merge the new branch into the main branch. However, to merge branches successfully, ensure that both the main branch and the new branch are pinned to the same FlutterFlow version! If for some reason your app is not working as expected, you can choose to leave or close the branch until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e. upgrade dependencies/custom code).
 
 :::tip
 See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating [**dependencies**](../../../ff-concepts/adding-customization/custom-code.md#manage-dependencies).
@@ -173,7 +173,9 @@ If critical bugs arise, we may provide hotfixes or patches for older FlutterFlow
 Can I change the pinned version to be different for various branches in my project?
 </summary>
 <p>
-Right now, we only support changing the pinned version from the main branch. When a project is pinned to a stable version, the entire project (including all of the branches within that project) will need to use the stable version that was selected.
+Yes, you can pin different versions for different branches. We recommend first creating a new branch, updating it to a later version, making any necessary changes, and verifying that everything works as expected before merging it into your main branch.
+
+However, to merge branches successfully, ensure that both the main branch and the new branch are pinned to the same FlutterFlow version.
 </p>
 </details>
 
