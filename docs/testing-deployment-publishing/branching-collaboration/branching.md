@@ -289,11 +289,17 @@ When performing a Git merge in FlutterFlow, you’ll see a screen with multiple 
 
 - **Branch Information**: At the top of the merge interface, you’ll see exactly which branches are being merged. You have two options for merging directions:
     - **Parent → Child**: Pulls changes down from the parent into the child branch, often used to keep a feature branch in sync with the parent branch.
+
     ![parent-child](imgs/parent-child.avif)
+
     - **Child → Parent**: Pushes features (or other changes) from the child branch back up to the parent, commonly done once a feature is ready to go into the parent branch.
+
     ![child-parent](imgs/child-parent.avif)
+
 - **YAML Validation Errors**: These occur when the resulting data is not in a “FlutterFlow-friendly” format—whether that’s due to manual edits or merges that generate incompatible YAML. For example, imagine you have two pages in your project, and each branch independently deletes a different one. After merging, there are zero pages left. Even though no lines of code are edited or directly have a conflict, this results in a YAML Validation Error. Clicking on these errors should redirect you to the specific file. Invalid lines will be underlined in red within the file, and, you cannot complete the merge while YAML errors exist.
+
 ![yaml-validation-error](imgs/yaml-validation-error.avif)
+
 - **Project Errors**: Project errors occur when the result of a merge creates a problem in your project. For example, this might happen if the merge results in two data types having the same name. These errors need to be resolved to ensure your project works as expected. You have several options to deal with project errors:
     - **Fix Errors During the Merge**: This approach ensures that the merged project is error-free right from the start. Here’s how you can do it:
         - **Edit the YAML files:** Update the project YAML files (in the Right Lower Panel) to fix issues, such as renaming a data type that causes a conflict.
