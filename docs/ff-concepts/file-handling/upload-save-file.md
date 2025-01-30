@@ -32,7 +32,7 @@ Using this action, you can upload any type of file to your app (e.g., PDF, MP3, 
    **Tip**: To let anyone download the uploaded media, you can enable the 'Public bucket.'
 
 <p></p>
-![img.png](imgs/img.png)
+
 <p></p>
 
 3. Apply additional [**security rules**](https://supabase.com/docs/guides/storage/quickstart#add-security-rules) which determine who can access the bucket. **Tip**: If you are uploading to a folder structure like this '*pics/uploads*,' here is how you can add a policy that allows only authenticated users to upload their profile picture.
