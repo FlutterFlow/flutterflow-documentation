@@ -538,7 +538,7 @@ Enabling this feature will refresh the page whenever a user types into TextField
 Here's an example of displaying the TextField value in a Text widget in realtime:
 
 1. Select the TextField widget, move to the **Properties Panel** **> Additional Properties >** enable the **Update Page On Change** property.
-2. Also, set the **Update Delay (ms)** after which the page will refresh its UI when the user has stopped typing. For example, If the *Update Delay (ms)* value is set to 2000 ms (2 seconds), The page will update 2 seconds after use is done typing. For this example, let's keep it to 0.
+2. Also, set the **Update Delay (ms)**, which specifies the time interval after the user stops typing before the page refreshes its UI. For example, if the *Update Delay (ms)* value is set to 2000 ms (2 seconds), the page will update 2 seconds after the user stops typing. For this example, let's set it to 0 ms.
 3. Now select the **Text** widget, move to the **Properties Panel > Set from Variable > Widget State > [TextFieldName]**. Tip: You can also set the default value to be displayed until the user has entered any text.
 
 :::tip

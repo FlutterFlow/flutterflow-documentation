@@ -29,6 +29,10 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 - **Items Spacing:** This defines the space between individual items in the ListView. You can
   specify the spacing in pixels.
 
+:::tip[Items Spacing vs Padding]
+Prefer “Items Spacing” set on the parent row or column instead of padding on individual elements. This ensures consistency, especially on non-dynamically generated lists.
+:::
+
 - **Apply to Start & End:** When enabled, the item spacing will also be applied to the start and the
   end of the ListView, adding a margin at the beginning and end of the list. This effectively adds padding at the start and end of the layout in addition to between the items.
 
@@ -47,7 +51,7 @@ Axis sets the orientation of the ListView. You can select either "Vertical" or
 
 ![listview-reverse.png](../built-in-widgets/imgs/listview-reverse.png)
 
-#### Make List Reorderable
+### Reorderable List
 Whether to allow reordering of items in the list. On Web or Desktop this will 
 add drag handles, but on mobile
   the reorder is triggerred by long pressing an item.
@@ -64,7 +68,7 @@ action trigger to make any necessary changes yourself.
 
 Here's a quick tutorial to set up your Reorderable ListView:
 
-##### Using App State variable
+#### Using App State variable
 
 1. First, create an app state variable with a few items of type String and display them on the 
 ListView widget.
@@ -116,7 +120,7 @@ return list;
 com/embed/bb961c71d11a4e7d8869170727d1423d?sid=a356162d-76df-45bb-930c-bebf8358ce6c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-##### Reordering Items in a Firebase Query
+#### Reordering Items in a Firebase Query
 
 If you want to reorder the list items retrieved via Firebase query collection, the steps are almost similar except for the following changes.
 

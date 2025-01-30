@@ -34,7 +34,7 @@ When creating variables in FlutterFlow, there are a few important considerations
 Start by giving your variable a meaningful and descriptive name that reflects its purpose. This name will be used throughout your app to reference the variable, so it's important to keep it clear and consistent with your naming conventions. 
 
 :::tip[Recommended naming convention]
-We recommend the `lowerCamelCase` naming convention for variables.
+We recommend the `lowerCamelCase` naming convention for variables. Learn more about the **[recommended naming conventions](../style-guide.md)** used in FlutterFlow and Flutter projects. 
 :::
 
 ### Assigning a Data Type to a Variable

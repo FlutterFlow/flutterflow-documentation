@@ -74,6 +74,10 @@ You can also find links to various resources to assist in building apps with Flu
 - Additionally, ensure that you have added a name to your FlutterFlow profile. The same name will be used for the community forum profile.
 :::
 
+- **URL Access (Only Available for Enterprise Users)**: You can view and copy URLs that need to be whitelisted for FlutterFlow to function correctly in enterprise environments with restricted internet access. Check out docs on **[Whitelisting URLS](../../misc/enterprise-page.md#whitelist-urls)**.
+
+    ![url-access](imgs/url-access-dashboard.avif)
+
 - **Account**: This is helpful if you want to look at your account information, upload a profile picture, reset your password, see your referrals, or delete account.
 
 - **Plan info**: See information about the current plan and eventually upgrade to access additional features.
