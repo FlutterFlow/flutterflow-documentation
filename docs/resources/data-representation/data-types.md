@@ -23,7 +23,7 @@ Composite data types are made up of primitive data types. They can hold multiple
 You can also create your own custom data types. This can be especially useful when you need a specific structure for your data that doesn't fit into the predefined types. For example, you might create a custom data type for a user profile, which includes several pieces of data like a name, an email address, and a profile picture.
 
 :::info
-Learn more about creating and using custom data types [**here**](custom-data-types).
+Learn more about creating and using [**Custom Data Types**](custom-data-types).
 :::
 
 ## Built-in Data Types

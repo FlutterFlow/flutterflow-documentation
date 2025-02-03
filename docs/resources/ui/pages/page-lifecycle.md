@@ -74,6 +74,10 @@ To add an action to **On Page Load** action trigger, follow the steps:
 
 <iframe src="https://demo.arcade.software/ii0otHqkoRtPY66n4c2y?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
 
+:::tip[Generated Code]
+When you add actions to the **on Page Load** action trigger, they are executed within a `SchedulerBinding.instance.addPostFrameCallback((_)` method. This ensures that the actions run after the widget tree is fully built. For more details, refer to the [**Page: Generated Code**](../../../generated-code/pages-generated-code.md#onpageload-action-generated-code) document.
+:::
+
 ### On Phone Shake [Action Trigger]
 
 Actions added under this trigger are triggered when the

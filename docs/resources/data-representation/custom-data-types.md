@@ -62,6 +62,10 @@ To create a custom data type, specify its name and the corresponding fields. Eac
     </iframe>
 </div>
 
+:::tip[Naming Convention]
+When naming custom data types, always use **UpperCamelCase**, as recommended by the Dart Style Guide. To learn more, refer to the guide on **[Naming Variables & Functions](../../resources/style-guide.md)**.
+:::
+
 ## Accessing Custom Data Type
 
 After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state.md#app-state-variables).
