@@ -384,6 +384,34 @@ You can modify files or edit the project directly from the lower panel at any ti
 
 After editing, click **Save Changes** to confirm your changes. A red reset button appears if you want to undo your changes and restore the file to its initial state before you began editing.
 
+For more information, check out the video below.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/r8BR248HR0U"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ### Resolve Merge Conflicts
 A merge conflict occurs when multiple team members make changes to the same part of the project.
 
@@ -526,15 +554,9 @@ To configure these permissions, navigate to **Settings & Integrations > Project 
 
 Closing a branch is a common practice after the branch has served its purpose, typically once its changes have been merged into another branch (like the `main` or `development` branch). By regularly closing inactive or merged branches, you help maintain a clean, efficient, and well-organized project.
 
-### When to Close a Branch
-
+:::info[When to Close a Branch]
 - **After a Merge:** Once the branch’s changes have been merged into the `main` branch (or another target branch), it’s safe to close the branch. This often happens after a feature is complete or a bug is fixed.
 - **Unused Branch:** If a branch is no longer needed (e.g., a feature was abandoned or changes were made in another branch), it’s a good idea to close it.
-
-:::warning
-
-Once a branch is closed, it will no longer appear in the list of active **Branches**, meaning no further changes can be made. **This action is permanent and cannot be undone**, so ensure that all necessary work is completed or merged before closing the branch.
-
 :::
 
 Here’s how you can close a branch:
@@ -570,6 +592,40 @@ Here’s how you can close a branch:
 - **Review before deletion:** Before closing a branch, ensure that all necessary changes have been merged or no longer need to be kept.
 - **Coordinate with your team:** If you’re working in a team, ensure that no one is actively using the branch before you close it, to avoid disrupting ongoing work.
 :::
+
+Once a branch is closed, it will no longer appear in the list of active branches. However, you can restore a closed branch within **30 days** of its closure.
+
+### Restore Branch
+To restore a branch, open the **Branch Filter** menu and enable **Show Closed Branches**. Search for or select the branch you want to restore, and it will open in a new browser tab. Then, within the closed branch, open the **Branching Options** menu and select **Restore Branch** to reactivate it.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/RQ8lrFH85EZr71sQ7VKN?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
 
 ## FAQs
 <details>
