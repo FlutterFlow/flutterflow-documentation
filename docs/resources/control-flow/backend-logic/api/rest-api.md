@@ -569,38 +569,70 @@ Learn more about **[JSONPath](https://www.rfc-editor.org/rfc/rfc9535.html)** and
 :::
 
 ### Adding JSON Path
+You can effortlessly define and manage **JSON Paths** for your API calls in FlutterFlow to parse and extract the data you need. Once added you can [use](#using-json-path) them as **Predefined Path** while accessing the **JSON Body**.
 
-To add JSON path:
+First, [create and test](../api/create-test-api-calls.md) your API call. Inside the **JSON Paths** section, click **+ Add JSON Path**, enter your **JSON Path**, and assign it a name. If the expression is valid, a preview of the response appears under **Response Preview**. Click the **Preview** icon to see the full response. If the response contains a list of items, the **Is List** option will be enabled automatically.
 
-1. First, [create and test](../api/create-test-api-calls.md) your API call.
+Under the **Recommended** section, you'll find suggested JSON paths that might contain the data you need.
 
-2. Inside the **JSON Paths** section, click on the **+ Add JSON Path**.
-3. Enter your **JSON Path** and give it a **Name**.
-4. If you entered the valid expression, you'll see the starting part of the response under the **Response Preview** column. To see the complete response, click on the **Preview** icon.
-5. If the returned response is a list of items, by default, **Is List** will be checked; however, if you want to convert the response into the list explicitly, checkmark it.
-6. We also recommend all the possible JSON paths (under the **Recommended** tab) that might include what you are looking for.
-
-   1. To add the recommended JSON path, checkmark the **Selected**, open the **Selected** tab, 
-   and give it a name.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/fb4f0f0cbdc64ecface05622a8b8cc37?sid=e82499c7-b581-4d62-a197-037ee31a14b0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/mJBbGANYmn6SrtrByAYf?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 
 ### Using JSON Path
 
-While accessing values from an API Call, you can either enter the custom JSON path or use the already created JSON path.
+While accessing values from an API Call, you can either enter the custom JSON path or use the [predefined JSON path](#adding-json-path).
 
-To use the already added JSON path:
+To use a predefined JSON Path, first, select your API response. Then, set the **API Response Options** to **JSON Body** and the **Available Options** to **JSON Path** or **Predefined Path**. Finally, specify the JSON Path Name or select from the predefined JSON Path to map the extracted data for use in your app.
 
-1. Select your API response.
-2. Set the **API response Options** to **JSON Body**.
-3. Set the **Available Options** to **JSON Path**.
-4. Set the **JSON Path Name** to the one that you created earlier.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/502ffe547e64486c937e74c02b28fd3a?sid=21233fb9-9782-4e2f-b04a-a888d784f62f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/gfbboO0ju21x2LhkksMy?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 
 ## Advanced Settings
@@ -739,3 +771,23 @@ If you prefer watching a video tutorial, here's the one for you:
 <div class="video-container"><iframe src="https://www.youtube.
 com/embed/L5qj2f9skt4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 :::
+
+
+## FAQs
+<details>
+<summary>
+Why is my Predefined Path not showing any options?
+</summary>
+<p>
+This often happens if you added the Predefined Path but forgot to save the API call in FlutterFlow. Ensure you click Save after making any changes to your API call so the system can properly recognize and display your predefined paths.
+</p>
+</details>
+
+<details>
+<summary>
+Why am I getting a “Current variable is not valid” error?
+</summary>
+<p>
+This error typically indicates that the widget isn’t receiving the data type it expects. For example, passing a list of colors directly to a text widget will trigger the error. In such cases, convert or supply the data as a string (or another compatible type) so the widget can properly display it.
+</p>
+</details>
