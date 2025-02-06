@@ -779,7 +779,7 @@ com/embed/L5qj2f9skt4" frameborder="0" allow="accelerometer; autoplay; clipboard
 Why is my Predefined Path not showing any options?
 </summary>
 <p>
-This often happens if you added the Predefined Path but forgot to save the API call in FlutterFlow. Ensure you click Save after making any changes to your API call so the system can properly recognize and display your predefined paths.
+This often happens if you added the Predefined Path but forgot to save the API call in FlutterFlow. Ensure you click Save after making any changes to your API call so FlutterFlow can properly recognize and display your predefined paths.
 </p>
 </details>
 
