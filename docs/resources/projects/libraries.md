@@ -81,7 +81,7 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 :::
 
 :::warning
-You cannot publish a project as a Library if it has already been deployed to the Google Play Store or the Apple App Store. Additionally, the Publish button is disabled if a deployment process was started and failed.
+You cannot publish a project as a library if it has already been deployed to the Google Play Store or the Apple App Store. Additionally, the Publish button is disabled if a deployment process has started and failed.
 :::
 
 ### Disabled Features in a Library
