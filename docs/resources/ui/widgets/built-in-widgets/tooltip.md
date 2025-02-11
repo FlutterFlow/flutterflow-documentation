@@ -83,7 +83,7 @@ To achieve this, simply set the **Tooltip Type** to **Component** and select the
 </div>
 <p></p>
 
-To display dynamic content in tooltips, you can create a wrapper component that accepts a [**WidgetBuilder**](../../components/widget-builder-parameters.md) as parameter and use this component within the tooltip.
+To display dynamic content in tooltips, you can create a wrapper component that accepts a [**WidgetBuilder**](../../components/widget-builder-parameters.md) as a parameter and use this component within the tooltip.
 
 Here’s exactly how you do it:
 
