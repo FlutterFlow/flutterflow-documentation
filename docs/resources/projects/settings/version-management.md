@@ -62,7 +62,7 @@ A **Stable Release** of FlutterFlow is released each time a new **Minor Version*
 - There has been significant changes to project code generation
 - There has been an update to the underlying Flutter or Pubspec dependency versions
 
-Stable releases are usually deployed each month. A stable release will correspond with an underlying standard release (i.e. 1.0 corresponds to 1.0.1 in the above diagram). 
+Stable releases are usually deployed each month. A stable release will correspond with an underlying standard release (i.e. 1.0 corresponds to 1.0.2 in the above diagram). 
 
 :::note
 Each stable release will be supported for **6 months** before you are forced to upgrade to the next stable version. 
