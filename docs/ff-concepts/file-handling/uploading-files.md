@@ -1,10 +1,10 @@
 ---
-slug: /concepts/media-management/uploading-files
+slug: /concepts/file-handling/uploading-files
 title: Uploading Files
 description: Learn how to upload media in FlutterFlow.
-tags: [Media, Upload Data]
+tags: [Media Files, Upload Data]
 sidebar_position: 1
-keywords: [Media, Upload Data, Media Management, Firebase, Supabase, Upload Actions]
+keywords: [Media Files, Upload Data, Media Management, Firebase, Supabase, Upload Actions]
 ---
 
 # Uploading Files

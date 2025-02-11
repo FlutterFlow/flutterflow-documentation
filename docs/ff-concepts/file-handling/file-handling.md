@@ -1,15 +1,15 @@
 ---
-slug: /concepts/media-management
-title: Media Management
-description: Learn how to manage media in FlutterFlow.
-tags: [Media, Upload Data, Download Data, Clear Delete Data]
+slug: /concepts/file-handling
+title: File Handling
+description: Learn how to handle media files in FlutterFlow.
+tags: [Media Files, Upload Data, Download Data, Clear Delete Data]
 sidebar_position: 0
-keywords: [Media, Upload Data, Download Data, Clear Delete Data, Media Management, Assets, Display Media, Media Widgets]
+keywords: [File Handling, Media Files, Upload Data, Download Data, Clear Delete Data, Media Management, Assets, Display Media, Media Widgets]
 ---
 
-# Media Management
+# File Handling
 
-FlutterFlow makes it easy to manage, upload, download, and display files within your app. It supports a variety of file types, including images, videos, and documents, and integrates seamlessly with popular storage solutions. Using built-in widgets and actions, you can effectively manage your app's media. This guide covers the following key aspects of media management in FlutterFlow.
+FlutterFlow makes it easy to manage, upload, download, and display files within your app. It supports a variety of file types, including images, videos, and documents, and integrates seamlessly with popular storage solutions. Using built-in widgets and actions, you can effectively manage your app's media. This guide covers the following key aspects of file handling in FlutterFlow.
 
 - **Media Assets**: Upload any assets you want to use in your app from the Navigation Menu > Media Assets. This also shows the media assets of the [Team](../../accounts-billing/subscriptions/flutterflow-for-teams.md).
 - [**Uploading Files**](uploading-files.md): Upload and save different file types, including images, audio, videos, and PDFs to cloud storage.

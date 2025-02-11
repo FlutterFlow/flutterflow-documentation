@@ -1,10 +1,10 @@
 ---
-slug: /concepts/media-management/download-file
+slug: /concepts/file-handling/download-file
 title: Download File
 description: Learn how to add download file action into your FlutterFlow app.
-tags: [Media, Download Data]
+tags: [Media Files, Download Data]
 sidebar_position: 3
-keywords: [Media, Download Data, Firebase Storage, Supabase Storage]
+keywords: [Media Files, Download Data, Firebase Storage, Supabase Storage]
 ---
 
 

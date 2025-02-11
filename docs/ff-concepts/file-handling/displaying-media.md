@@ -1,10 +1,10 @@
 ---
-slug: /concepts/media-management/displaying-media
+slug: /concepts/file-handling/displaying-media
 title: Displaying Media
 description: Learn how to display media in FlutterFlow.
-tags: [Media, Widget]
+tags: [Media Files, Widget]
 sidebar_position: 2
-keywords: [Media, Media Management, Assets, Network, Display Media, Media Widgets]
+keywords: [Media Files, Media Management, Assets, Network, Display Media, Media Widgets]
 ---
 
 # Displaying Media

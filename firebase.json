@@ -2320,57 +2320,47 @@
       },
       {
         "source": "/concepts/file-handling/audio-player",
-        "destination": "/concepts/media-management/displaying-media#audioplayer",
+        "destination": "/concepts/file-handling/displaying-media#audioplayer",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/audio-recording",
-        "destination": "/concepts/media-management/displaying-media#audio-recording",
+        "destination": "/concepts/file-handling/displaying-media#audio-recording",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/play-stop-sound",
-        "destination": "/concepts/media-management/displaying-media#play-or-stop-sound",
+        "destination": "/concepts/file-handling/displaying-media#play-or-stop-sound",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/video-player",
-        "destination": "/concepts/media-management/displaying-media#videoplayer",
+        "destination": "/concepts/file-handling/displaying-media#videoplayer",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/youtube-player",
-        "destination": "/concepts/media-management/displaying-media#youtubeplayer",
+        "destination": "/concepts/file-handling/displaying-media#youtubeplayer",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/pdf-viewer",
-        "destination": "/concepts/media-management/displaying-media#pdfviewer",
-        "type": 301
-      },
-      {
-        "source": "/concepts/file-handling/download-file",
-        "destination": "/concepts/media-management/download-file",
+        "destination": "/concepts/file-handling/displaying-media#pdfviewer",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/upload-data",
-        "destination": "/concepts/media-management/uploading-files",
+        "destination": "/concepts/file-handling/uploading-files",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/upload-save-file",
-        "destination": "/concepts/media-management/uploading-files#upload-or-save-file-action",
+        "destination": "/concepts/file-handling/uploading-files#upload-or-save-file-action",
         "type": 301
       },
       {
         "source": "/concepts/file-handling/upload-save-media",
-        "destination": "/concepts/media-management/uploading-files#upload-or-save-media-action",
-        "type": 301
-      },
-      {
-        "source": "/concepts/file-handling/clear-delete-media",
-        "destination": "/concepts/media-management/clear-delete-media",
+        "destination": "/concepts/file-handling/uploading-files#upload-or-save-media-action",
         "type": 301
       }
     ]
