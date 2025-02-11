@@ -231,6 +231,72 @@ To delete a Custom Action or Widget, delete the associated file.
 ### Adding New Dependencies
 You can add custom [pub.dev](https://pub.dev/) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
 
+## Using Flutter Version Management (FVM)
+If you want to manage Flutter versions with [**Flutter Version Management (FVM)**](https://fvm.app/), you need to install it and add it to your system’s PATH. Follow these steps to get started:
+
+### Install FVM
+
+To install **FVM**, run the following command in your terminal. This installs FVM globally using Dart’s package manager.
+
+```
+dart pub global activate fvm
+```
+
+### Add FVM to Your System’s PATH
+
+After installation, you need to add the directory containing FVM’s executables to your **PATH variable** so that it can be accessed globally.
+
+#### For macOS & Linux
+
+1. Open the Terminal and run the following command. It adds the `~/.pub-cache/bin` directory to your system's `PATH` permanently by updating your `~/.zshrc` file. This ensures that the FVM installed in `~/.pub-cache/bin` is accessible from anywhere in the terminal.
+    
+    ```bash
+    echo 'export PATH="$PATH":"$HOME/.pub-cache/bin"' >> ~/.zshrc  # For Zsh
+    echo 'export PATH="$PATH":"$HOME/.pub-cache/bin"' >> ~/.bashrc # For Bash
+    ```
+    
+2. Restart your terminal or run `source ~/.zshrc` (or `source ~/.bashrc`) to apply the changes.
+
+#### For Windows
+
+1. Locate the **FVM executable path**, typically:
+    
+    ```
+    C:\Users\YourUsername\AppData\Local\Pub\Cache\bin
+    ```
+    
+2. Add this path to your **System’s PATH variable**:
+    1. Open **System Properties** → **Advanced system settings**.
+    2. Click **Environment Variables**.
+    3. Under **System variables**, select **Path** → **Edit**.
+    4. Click **New** and add the above path.
+    5. Click **OK** and restart your terminal.
+
+
+### Verify the Installation
+
+To check if FVM is correctly installed and accessible, run:
+
+```bash
+fvm --version
+```
+
+If this command prints the installed version of FVM, it means FVM is successfully installed and added to PATH.
+
+
+### Configure FVM in Your Flutter Project
+
+Once FVM is installed, navigate to your Flutter project folder and set up FVM:
+
+```bash
+cd your-flutterflow-project
+fvm init
+fvm install <flutter_version>
+fvm use <flutter_version>
+```
+
+*(Replace `<flutter_version>` with the required Flutter version.)*
+
 
 ## FAQs
 <details>
