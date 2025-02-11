@@ -231,8 +231,8 @@ To delete a Custom Action or Widget, delete the associated file.
 ### Adding New Dependencies
 You can add custom [pub.dev](https://pub.dev/) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
 
-## Use with Flutter Version Management (FVM)
-If you want to manage Flutter versions with **Flutter Version Management (FVM)**, you need to install it and add it to your system’s PATH. Follow these steps to get started:
+## Using Flutter Version Management (FVM)
+If you want to manage Flutter versions with [**Flutter Version Management (FVM)**](https://fvm.app/), you need to install it and add it to your system’s PATH. Follow these steps to get started:
 
 ### Install FVM
 
