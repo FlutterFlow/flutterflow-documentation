@@ -87,8 +87,8 @@ To publish a project as a library, it must meet the following requirements:
 - **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
 - **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
 - **Main Branch Only**: You can only publish from the main branch.
-- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a library.
-- **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace project.
+- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a Library.
+- **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
 :::
 
 ### Disabled Features in a Library
