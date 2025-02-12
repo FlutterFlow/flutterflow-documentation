@@ -43,3 +43,7 @@ Constants don't change. Once you set its value (in builder), you can't change it
         allow="clipboard-write">
     </iframe>
 </div>
+
+:::tip[Naming Convention]
+Prefer using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. To learn more, refer to the guide on **[Naming Variables & Functions](../../resources/style-guide.md)**.
+:::
