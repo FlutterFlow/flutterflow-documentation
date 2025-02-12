@@ -83,6 +83,36 @@ To achieve this, simply set the **Tooltip Type** to **Component** and select the
 </div>
 <p></p>
 
+To display dynamic content in tooltips, you can create a wrapper component that accepts a [**WidgetBuilder**](../../components/widget-builder-parameters.md) as a parameter and use this component within the tooltip.
+
+Here’s exactly how you do it:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/vFDY8DNskFzGWKFFmlM4?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ### Change trigger mode
 
 On touch devices, the *Tooltip* opens on tap. To make it open on long press instead, use the **Trigger Mode** property.
