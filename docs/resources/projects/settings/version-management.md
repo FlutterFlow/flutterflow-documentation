@@ -11,7 +11,7 @@ sidebar_position: 7
 
 FlutterFlow is constantly evolving to provide new features, address bugs, and keep up-to-date with Flutter and third-party packages. However, frequent updates can introduce unwanted changes that break existing projects—especially those that rely on custom code with external dependencies.
 
-To mitigate these issues, FlutterFlow offers a **version management** system that allows you to pin your project to a particular [*stable release*](#stable-release-corresponds-to-minor-version) of FlutterFlow. Projects pinned to a stable release will **not automatically receive the latest FlutterFlow updates**, giving you more control over your development workflow.
+To mitigate these issues, FlutterFlow offers a **version management** system that allows you to pin your project to a particular [*stable release*](#stable-release) of FlutterFlow. Projects pinned to a stable release will **not automatically receive the latest FlutterFlow updates**, giving you more control over your development workflow.
 
 However, pinning to a stable release means that you will not be able to use the latest features, and there may be bugs that are not fixed until subsequent releases. **We only recommend doing this if you have a complex app with custom code dependencies.**
 
@@ -80,7 +80,7 @@ You have several options when it comes to modifying pinned version of your proje
 
 - **Upgrade to more recent Stable Version**: When a new stable version is released, you will see it as an option in the dropdown shown above. You can upgrade the pinned version to a more recent stable version whenever it becomes available. Newer stable versions will have higher numbers (i.e., 5.1 is newer than 5.0)
 - **Downgrade to a previous Stable Version:** You can downgrade to a prior stable release (i.e., downgrade from 5.1 to 5.0), however, **changes made since upgrading will be lost** (i.e., changes made after modifying pinned version from 5.0 to 5.1). Therefore, we recommend [commiting](https://docs.flutterflow.io/collaboration/branching/#create-commits) all changes on the main branch before upgrading - plus testing after upgrading so you can quickly downgrade if necessary.
-- **Set to *Latest Version* (Unpinned):**  You can unpin your project by setting it to the *Latest Version* which will use the latest [standard release](#standard-release-corresponds-to-patch-version).
+- **Set to *Latest Version* (Unpinned):**  You can unpin your project by setting it to the *Latest Version* which will use the latest [standard release](#standard-release).
 - **Opt-in to the *Next Stable*:** Your project may be on a standard version that does not have a corresponding stable version (i.e., you are on 5.0.1 but the 5.0 stable will correspond to 5.0.4). In that case, you can choose to opt-in to the *Next Stable Version*. If it is already available, it will be pinned to that version immediately.
 
 :::warning[Pinning and Unpinning Cannot Be Reversed]
@@ -182,7 +182,7 @@ However, to merge branches successfully, ensure that both the main branch and th
 What happens if there is no stable version available for me to pin my project to?
 </summary>
 <p>
-If your project was created and edited on a [standard release](#standard-release-corresponds-to-patch-version) that does not correspond to a [stable version](#stable-release-corresponds-to-minor-version), you may not see a stable version available. Instead, you can choose to opt-in to the [*next stable release*](#pinning-your-project). If set to the next stable release, a project will immediately be pinned when opened when a new stable release becomes available.
+If your project was created and edited on a [standard release](#standard-release) that does not correspond to a [stable version](#stable-release), you may not see a stable version available. Instead, you can choose to opt-in to the [*next stable release*](#pinning-your-project). If set to the next stable release, a project will immediately be pinned when opened when a new stable release becomes available.
 </p>
 </details>
 
