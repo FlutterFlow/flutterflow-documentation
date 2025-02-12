@@ -11,9 +11,9 @@ sidebar_position: 7
 
 FlutterFlow is constantly evolving to provide new features, address bugs, and keep up-to-date with Flutter and third-party packages. However, frequent updates can introduce unwanted changes that break existing projects—especially those that rely on custom code with external dependencies.
 
-To mitigate these issues, FlutterFlow offers a **version management** system that allows you to pin your project to a particular [*stable release*](#stable-release-corresponds-to-minor-version) of FlutterFlow. Projects pinned to a stable release will **not automatically receive the latest FlutterFlow updates**, giving you more control over your development workflow. 
+To mitigate these issues, FlutterFlow offers a **version management** system that allows you to pin your project to a particular [*stable release*](#stable-release-corresponds-to-minor-version) of FlutterFlow. Projects pinned to a stable release will **not automatically receive the latest FlutterFlow updates**, giving you more control over your development workflow.
 
-However, pinning to a stable release means that you will not be able to use the latest features and there may be bugs that are not fixed until subsequent releases. **We only recommend doing this if you have a complex app with custom code dependencies.**
+However, pinning to a stable release means that you will not be able to use the latest features, and there may be bugs that are not fixed until subsequent releases. **We only recommend doing this if you have a complex app with custom code dependencies.**
 
 :::info
 Currently, the ability to pin a FlutterFlow project to a stable version is only available to **Enterprise** users.
@@ -31,13 +31,13 @@ Pinning your project to a stable version of FlutterFlow offers the following ben
 
 To understand FlutterFlow's version management system, it's important to understand **Semantic Versioning**. 
 
-FlutterFlow tends to release a new version of the product each week. When a new version is released, the overall version number is incremented. 
+FlutterFlow tends to release a new version of the product each week. When a new version is released, the overall version number is incremented.
 
 The version number consists of three parts:
 
 - **Major Version:** Incremented when introducing substantial changes that significantly alter the product.
-- **Minor Version:** Incremented for changes that notably enhance or modify the FlutterFlow development experience—such as upgrading to a new Flutter version or adding a large feature.
-- **Patch Version:** Incremented with routine releases that include new features, improvements, or bug fixes. 
+- **Minor Version:** Incremented for changes that notably enhance or modify the FlutterFlow development experience—such as upgrading to a new Flutter version, making substantial modifications to generated code or project structure, or introducing major new features.
+- **Patch Version:** Incremented with routine releases that include bug fixes and minor improvements, ensuring stability without introducing breaking changes to the generated code or project structure.
 
 ![semantic_versioning](imgs/semantic-versioning.png)
 
@@ -46,23 +46,21 @@ You can see what version of FlutterFlow you are using by looking at the top left
 ![version-in-builder](imgs/version-in-builder.png)
 
 
-#### Standard Release [Corresponds to Patch Version]
+#### Standard Release
 
 A **Standard Release** of FlutterFlow is released approximately every week. However, this is subject to change based on user needs.
 
 When your project is **not pinned** to a stable release (default behavior), you will automatically use the **latest standard release.**
 
-#### Stable Release [Corresponds to Minor Version]
+#### Stable Release
 
-![standard-to-stable](imgs/standard-to-stable.png)
+A **Stable Release** of FlutterFlow is published monthly if any of the following conditions are met:
 
-A **Stable Release** of FlutterFlow is released each time a new **Minor Version** of FlutterFlow is created. This happens when:
+- Significant changes have been made to project code generation.
+- The underlying Flutter version or Pubspec dependencies in generated projects have been updated.
+- Updates affecting the project structure have been introduced (e.g., the addition of a new widget type).
 
-- New features have undergone more testing
-- There has been significant changes to project code generation
-- There has been an update to the underlying Flutter or Pubspec dependency versions
-
-Stable releases are usually deployed each month. A stable release will correspond with an underlying standard release (i.e. 1.0 corresponds to 1.0.1 in the above diagram). 
+Each stable release is assigned a unique **Major.Minor** version number. Projects that have not been edited in a FlutterFlow version with a **Major.Minor** version higher than the stable release can be pinned to that stable version.
 
 :::note
 Each stable release will be supported for **6 months** before you are forced to upgrade to the next stable version. 
@@ -71,27 +69,28 @@ Each stable release will be supported for **6 months** before you are forced to 
 
 ## Pinning Your Project
 
-To pin your project, navigate to **Settings and Integrations > General > App Details >Version Pinning** section and select the stable release you want to lock into. Once you update the pin your project to a stable version, you can only edit the project using that version of FlutterFlow.
+To pin your project, navigate to **Settings and Integrations > General > App Details >Version Pinning** section and select the stable release you want to lock into.
 
 ![pin-version](imgs/pin-version.avif)
 
-:::info
-You can only pin a project to a stable version if you are the **Project Owner**.
-:::
 
 ### Modifying the Pinned Version
 
 You have several options when it comes to modifying pinned version of your project:
 
-- **Upgrade to more recent Stable Version**: When a new stable version is released, you will see it as an option in the dropdown shown above. You can upgrade the pinned version to a more recent stable version whenever they become available. Newer stable versions will have higher numbers (i.e., 5.1 is newer than 5.0)
+- **Upgrade to more recent Stable Version**: When a new stable version is released, you will see it as an option in the dropdown shown above. You can upgrade the pinned version to a more recent stable version whenever it becomes available. Newer stable versions will have higher numbers (i.e., 5.1 is newer than 5.0)
 - **Downgrade to a previous Stable Version:** You can downgrade to a prior stable release (i.e., downgrade from 5.1 to 5.0), however, **changes made since upgrading will be lost** (i.e., changes made after modifying pinned version from 5.0 to 5.1). Therefore, we recommend [commiting](https://docs.flutterflow.io/collaboration/branching/#create-commits) all changes on the main branch before upgrading - plus testing after upgrading so you can quickly downgrade if necessary.
 - **Set to *Latest Version* (Unpinned):**  You can unpin your project by setting it to the *Latest Version* which will use the latest [standard release](#standard-release-corresponds-to-patch-version).
-- **Opt-in to the *Next Stable*:** Your project may be on a standard version that does not have a corresponding stable version (i.e., you are on 5.0.1 but the 5.0 stable will correspond to 5.0.4). In that case, you can choose to opt-in to the *Next Stable Version*. This will pin your project to the next stable version once it becomes available. 
+- **Opt-in to the *Next Stable*:** Your project may be on a standard version that does not have a corresponding stable version (i.e., you are on 5.0.1 but the 5.0 stable will correspond to 5.0.4). In that case, you can choose to opt-in to the *Next Stable Version*. If it is already available, it will be pinned to that version immediately.
+
+:::warning[Pinning and Unpinning Cannot Be Reversed]
+Once you unpin a project or pin it to a later version, this action cannot be undone. If you're unsure whether a newer FlutterFlow version will be compatible with your project, we recommend creating a new branch and updating the pinned version within that branch first. This allows you to preview changes before applying them to your main project.
+:::
 
 ### Accessing the Proper Stable Version
-As mentioned above, once you update the pin your project to a stable version, you can only edit the project using that version of FlutterFlow.
+As mentioned above, once you update your project to a stable version, you can only edit the project using that version of FlutterFlow.
 
-- **For Web**: You will be automatically redirected to the URL for the stable version that your project is pinned to when you open a project from the FlutterFlow dashboard (i.e. navigating to app.flutterflow.io or enterprise-[region].flutterflow.io).
+- **For Web**: You will be automatically redirected to the URL for the stable version that your project is pinned to when you open a project from the FlutterFlow dashboard (i.e., navigating to app.flutterflow.io or enterprise-[region].flutterflow.io).
 - **For Desktop**: You will [**install**](https://www.flutterflow.io/desktop) the dedicated desktop application for the pinned stable release. The desktop app for stable releases won’t auto-update, you will need to install a new version when you upgrade your project to a new stable version.
 
 
@@ -103,7 +102,7 @@ If you have a complex app with custom code that depends on specific versions of 
 2. When a new stable version is released, you can choose when you would like to upgrade based on your own release schedule and development process. For instance, you might wait until you're not actively developing a new feature, or you could check the release notes first to see if there are must-have features that would prompt you to upgrade sooner.
 3. When you’re ready to upgrade, commit all your changes on main to save your progress. Create a new branch from the main branch, [update the pinned version](#modifying-the-pinned-version), and test all functionalities to ensure compatibility. If any modifications are needed, make those changes in the new branch.
 4. Run your app on the platforms you support—using a simulator, emulator, or physical device to ensure everything works as intended. See the [Local Run documentation](https://docs.flutterflow.io/testing/local-run/) for details.
-4. If everything looks good, you can merge the new branch into the main branch. However, to merge branches successfully, ensure that both the main branch and the new branch are pinned to the same FlutterFlow version! If for some reason your app is not working as expected, you can choose to leave or close the branch until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e. upgrade dependencies/custom code).
+5. If everything looks good, you can merge the new branch into the main branch. However, to merge branches successfully, ensure that both the main branch and the new branch are pinned to the same FlutterFlow version! If for some reason your app is not working as expected, you can choose to leave or close the branch until you are ready to make the modifications needed to support the latest FlutterFlow version (i.e. upgrade dependencies/custom code).
 
 :::tip
 See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating [**dependencies**](../../../ff-concepts/adding-customization/custom-code.md#manage-dependencies).
@@ -111,25 +110,23 @@ See the video [**here**](https://youtu.be/8Y1uyCC_dXE) for guidance on updating 
 
 ## Version Management with Libraries
 
-[Libraries](../libraries.md) have their own versions, and each library version corresponds to a specific FlutterFlow version. The FlutterFlow version of the library version is determined by the version used (pinned or otherwise) when the project was updated.
+[Libraries](../libraries.md) have their own versions. Like projects, libraries edited in FlutterFlow can only be used in FlutterFlow versions greater than or equal to the version it was last edited in.
+
+To ensure that new versions of libraries used in a pinned project are compatible with a pinned project, we recommend pinning all libraries used in a pinned project to the same (or lower) Flutterflow version as the pinned project.
 
 Library projects can also be pinned to a specific version, ensuring that all library versions use that FlutterFlow release until the pinned version is changed.
 
 :::info
-When you import a library into a project or another library, the library’s version must be lower than the version used for the project it’s being imported into; otherwise, you will encounter an error.
+- Pinned projects cannot add a library with the version set to 'current' or to a library version that has been edited on a later release of FlutterFlow.
+
+- Projects cannot be pinned if they contain a library with the version set to 'current' or to a library version that has been edited on a later release of FlutterFlow.
+:::
+
+:::tip
+When you import a library into a project or another library, the library’s version must be lower than or equal to the version used for the project it’s being imported into; otherwise, you will encounter an error.
 :::
 
 ## FAQs
-
-<details>
-<summary>
-What happens if I downgrade to a lower version of FlutterFlow after making changes in a higher version?
-</summary>
-<p>
-Any changes made in a higher version will be lost when you revert to a lower version (e.g., you made changes when you upgraded from 5.0 to 5.1, but then you want to downgrade back to 5.0). 
-**To avoid data loss, thoroughly test your app after upgrading to ensure you want to continue with the updated version.**
-</p>
-</details>
 
 <details>
 <summary>
@@ -185,7 +182,7 @@ However, to merge branches successfully, ensure that both the main branch and th
 What happens if there is no stable version available for me to pin my project to?
 </summary>
 <p>
-If your project was created and edited on a [standard release](#standard-release-corresponds-to-patch-version) that does not correspond to a [stable version](#stable-release-corresponds-to-minor-version), you may not see an earlier stable version to downgrade to - because this would reset the state of your project. Instead, you can choose to opt-in to the [*next stable release*](#pinning-your-project). 
+If your project was created and edited on a [standard release](#standard-release-corresponds-to-patch-version) that does not correspond to a [stable version](#stable-release-corresponds-to-minor-version), you may not see a stable version available. Instead, you can choose to opt-in to the [*next stable release*](#pinning-your-project). If set to the next stable release, a project will immediately be pinned when opened when a new stable release becomes available.
 </p>
 </details>
 
