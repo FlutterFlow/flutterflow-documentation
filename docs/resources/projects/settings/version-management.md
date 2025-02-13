@@ -79,7 +79,6 @@ To pin your project, navigate to **Settings and Integrations > General > App Det
 You have several options when it comes to modifying pinned version of your project:
 
 - **Upgrade to more recent Stable Version**: When a new stable version is released, you will see it as an option in the dropdown shown above. You can upgrade the pinned version to a more recent stable version whenever it becomes available. Newer stable versions will have higher numbers (i.e., 5.1 is newer than 5.0)
-- **Downgrade to a previous Stable Version:** You can downgrade to a prior stable release (i.e., downgrade from 5.1 to 5.0), however, **changes made since upgrading will be lost** (i.e., changes made after modifying pinned version from 5.0 to 5.1). Therefore, we recommend [commiting](https://docs.flutterflow.io/collaboration/branching/#create-commits) all changes on the main branch before upgrading - plus testing after upgrading so you can quickly downgrade if necessary.
 - **Set to *Latest Version* (Unpinned):**  You can unpin your project by setting it to the *Latest Version* which will use the latest [standard release](#standard-release).
 - **Opt-in to the *Next Stable*:** Your project may be on a standard version that does not have a corresponding stable version (i.e., you are on 5.0.1 but the 5.0 stable will correspond to 5.0.4). In that case, you can choose to opt-in to the *Next Stable Version*. If it is already available, it will be pinned to that version immediately.
 
@@ -98,7 +97,7 @@ As mentioned above, once you update your project to a stable version, you can on
 
 If you have a complex app with custom code that depends on specific versions of package dependencies, it may be helpful to pin your project to a specific version. This is the workflow we recommend for managing the version of your projects.
 
-1. If you think your project should be pinned to a stable release, choose to [pin the project to the current (if available) or next stable release](#modifying-the-pinned-version). 
+1. If you think your project should be pinned to a stable release, choose to [pin a currently available stable version (if any)](#modifying-the-pinned-version).
 2. When a new stable version is released, you can choose when you would like to upgrade based on your own release schedule and development process. For instance, you might wait until you're not actively developing a new feature, or you could check the release notes first to see if there are must-have features that would prompt you to upgrade sooner.
 3. When you’re ready to upgrade, commit all your changes on main to save your progress. Create a new branch from the main branch, [update the pinned version](#modifying-the-pinned-version), and test all functionalities to ensure compatibility. If any modifications are needed, make those changes in the new branch.
 4. Run your app on the platforms you support—using a simulator, emulator, or physical device to ensure everything works as intended. See the [Local Run documentation](https://docs.flutterflow.io/testing/local-run/) for details.
