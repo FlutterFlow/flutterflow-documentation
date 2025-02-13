@@ -80,6 +80,17 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 - It's recommended to include a message that tells users what has changed in the version your are publishing.
 :::
 
+:::warning
+To publish a project as a library, it must meet the following requirements:
+
+- **No Prior Store Deployment**: The project must not have been deployed to the Google Play Store or Apple App Store.
+- **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
+- **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
+- **Main Branch Only**: You can only publish from the main branch.
+- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a Library.
+- **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
+:::
+
 ### Disabled Features in a Library
 
 When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
