@@ -604,7 +604,7 @@ Under the **Recommended** section, you'll find suggested JSON paths that might c
 
 ### Using JSON Path
 
-While accessing values from an API Call, you can either enter the custom JSON path or use the [predefined JSON path](#adding-json-path).
+While accessing values from an API Call, you can either enter the custom JSON path or use the [predefined JSON path](#add-json-predefined-path).
 
 To use a predefined JSON Path, first, select your API response. Then, set the **API Response Options** to **JSON Body** and the **Available Options** to **JSON Path** or **Predefined Path**. Finally, specify the JSON Path Name or select from the predefined JSON Path to map the extracted data for use in your app.
 
