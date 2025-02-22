@@ -568,7 +568,7 @@ with a numeric character. However, in cases where you have keys with numeric pre
 Learn more about **[JSONPath](https://www.rfc-editor.org/rfc/rfc9535.html)** and how to define a proper expression.
 :::
 
-### Adding JSON Path
+### Add JSON Predefined Path
 You can effortlessly define and manage **JSON Paths** for your API calls in FlutterFlow to parse and extract the data you need. Once added you can [use](#using-json-path) them as **Predefined Path** while accessing the **JSON Body**.
 
 First, [create and test](../api/create-test-api-calls.md) your API call. Inside the **JSON Paths** section, click **+ Add JSON Path**, enter your **JSON Path**, and assign it a name. If the expression is valid, a preview of the response appears under **Response Preview**. Click the **Preview** icon to see the full response. If the response contains a list of items, the **Is List** option will be enabled automatically.
