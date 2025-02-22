@@ -128,8 +128,7 @@ class _CustomButtonState extends State<CustomButton> {
   }
 }
 ```
-:::info
-Find the list of colors, 
+
 
 ### Manipulating AppState from Custom Code
 
