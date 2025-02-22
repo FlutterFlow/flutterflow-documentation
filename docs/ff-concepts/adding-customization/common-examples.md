@@ -358,3 +358,16 @@ Future getSchema(StateStruct? syncStatus) async {
 }
 ```
 
+### Get Dev Environment Values in Custom Code
+
+Similar to the `FFLibraryValues` class, if you are using **[Dev Environments](../../testing-deployment-publishing/development-environments/development-environments.md)** in your FlutterFlow project, a new class called `FFDevEnvironmentValues` will be created. This class can also be accessed from custom code if needed. It is generated based on the environment selected by the user at the time of code generation.
+
+To access any Dev Environment values in custom code, simply use:
+
+```js
+Future getWebhookId() async {
+  // Add your function code here!
+  return FFDevEnvironmentValues().webhookId;
+}
+```
+
