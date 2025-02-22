@@ -35,7 +35,7 @@ import '/auth/firebase_auth/auth_util.dart';
 ```
 
 ::: 
-### Accessing FlutterFlow Generated Classes
+### Access FlutterFlow Generated Classes
 
 FlutterFlow generates a complete Flutter codebase for you as you build apps in its platform. Part of this code includes custom classes that are designed to streamline common tasks and encapsulate reusable properties or logic.
 
@@ -78,7 +78,7 @@ When referencing a Component class in your code, FlutterFlow will automatically 
 ![return-widget-custom-code.png](imgs/return-widget-custom-code.png)
 
 
-### Accessing FlutterFlow Theme in Custom Widget
+### Get FlutterFlow Theme in Custom Widget
 
 When building custom widgets, you often need to style parts of the widget, such as setting colors. Instead of using hardcoded color values, you can directly access the **FlutterFlow Theme**. This theme provides consistent styling across your app and reflects colors set by you or your project developer.
 
@@ -130,15 +130,15 @@ class _CustomButtonState extends State<CustomButton> {
 ```
 
 
-### Manipulating AppState from Custom Code
+### Modifying AppState from Custom Code
 
-In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The FFAppState class also provides additional helper functions to manipulate AppState variables. Let’s look at some examples: 
+In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples: 
 
 :::tip[Imports]
 Ensure you import `import '../../flutter_flow/flutter_flow_util.dart';` when accessing `FFAppState` in custom code resources.
 :::
 
-- **Accessing AppState in Custom Code** 
+- **Get AppState value in Custom Code** 
 
 ```js
 
@@ -217,7 +217,7 @@ final newProduct = ProductStruct(
 
 ```
 
-#### Example 2: Accessing Properties of an Existing `ProductStruct` object
+#### Example 2: Get Properties of an Existing `ProductStruct` object
 
 If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. 
 
@@ -229,7 +229,7 @@ This function retrieves and returns the product's name. The return type is `Stri
 ```js
 // Function to return the product name from a ProductStruct instance
 String? getProductName(ProductStruct product) {
-    // Access and return the product name
+    // Get and return the product name
     return product.name;
 }
 ```
@@ -344,4 +344,17 @@ Here’s a list of other Firebase Auth variables that can be referenced in Custo
 - `currentUserEmailVerified` – Boolean indicating if the user’s email is verified.
 
 - These variables make it easy to integrate Firebase Auth data into custom functionality, enhancing the user experience.
+
+
+### Get Library Values in Custom Code
+
+Similar to the `FFAppState` class, FlutterFlow generates an `FFLibraryValues` class, which is also an abstract class. This class provides access to the **[Library Values](../../resources/projects/libraries.md#library-values)** if the project is a Library.
+
+To directly access the Library Values in custom code:
+
+```js
+Future getSchema(StateStruct? syncStatus) async {
+  print(FFLibraryValues().schema);
+}
+```
 
