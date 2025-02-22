@@ -203,10 +203,30 @@ A seamless and positive test experience is crucial for users to evaluate your Fl
 
 #### 4.1 Functional Run Mode Link
 
-- **Criteria:** The provided Run Mode link must be active and correctly load a working demo of your project.
-- **Why it Matters:** The Run Mode link is the primary way users can interact with your project before purchasing. A broken or inaccessible link creates a significant barrier.
+- **Criteria:** The provided Run Mode link must be active and correctly load a working demo of your project. For mobile-only features or utility libraries that cannot be demonstrated in Run Mode's web environment, you must provide alternative demonstration methods.
+- **Why it Matters:** The Run Mode link is the primary way users can interact with your project before purchasing. A broken, inaccessible, or non-demonstrative link creates a significant barrier to understanding the item's value.
 - **What To Do:**
-    - **Double-check your link:** Before submitting, test the link multiple times to confirm it showcases the experience you want potential buyers to have.
+    - **For Standard Web-Compatible Items:**
+        - Double-check your link before submitting to confirm it showcases the experience you want potential buyers to have.
+        - Test the link multiple times to ensure consistent functionality.
+    - **For Mobile-Only Features:**
+        - Create a dedicated demonstration page in your project that explains the mobile-only functionality.
+        - Include screenshots, videos, or mockups showing how the feature works on mobile devices.
+        - Clearly indicate which features are mobile-only and why they cannot be demonstrated in Run Mode.
+        - Optionally, provide a published FlutterFlow web deploy link that can be used instead of the Run Mode URL.
+    - **For Utility Libraries (e.g., Analytics, Background Services):**
+        - Create a demonstration page that explains the library's functionality.
+        - Show configuration options and expected outcomes.
+        - Include visual aids like flowcharts or diagrams to explain the library's operation.
+        - Provide example code or configuration snippets.
+        - Consider adding debug/test outputs that demonstrate the library is working.
+    - **Documentation:**
+        - Regardless of the type of item, ensure your documentation clearly explains how to implement and test the functionality in a real mobile environment.
+        - Include troubleshooting guides and common implementation scenarios.
+
+:::tip
+For items that cannot be fully demonstrated in Run Mode, focus on creating a clear, informative demonstration page that helps users understand the value and implementation of your item. Visual aids, clear explanations, and comprehensive documentation are key to helping users make informed decisions.
+:::
 
 #### 4.2 User Sign-In (Anonymous Auth)
 
@@ -251,7 +271,7 @@ Building a solid app template goes beyond surface-level design. It's about creat
 #### 5.2 No Pixel Overflow
 
 - **Criteria:** Ensure your UI elements are positioned and sized correctly to avoid content overflowing its container, leading to visual glitches / cut off content.
-- **Why It Matters:** Pixel overflows are a sign of UI inconsistencies that can negatively impact the user experience, especially on different screen sizes. Pixel overflow issues can occur in Test Mode when there’s a hardcoded pixel value and not enough space on the screen to render that exact value.
+- **Why It Matters:** Pixel overflows are a sign of UI inconsistencies that can negatively impact the user experience, especially on different screen sizes. Pixel overflow issues can occur in Test Mode when there's a hardcoded pixel value and not enough space on the screen to render that exact value.
 - **What To Do:**
     - **Preview pixel overflows:** Toggle the pixel overflow icon in the top-right of the canvas to see if there are any overflow issues.
     - **Leverage FlutterFlow's layout tools:** Use Expanded and Flex values to help prevent layout issues. Make `Columns` or `Rows` scrollable to prevent overflows. Use auto-sizing text or text clipping where it makes sense. Remove hard-coded width and height where it makes sense.
