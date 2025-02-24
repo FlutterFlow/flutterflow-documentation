@@ -13,10 +13,8 @@ keywords: [FlutterFlow, Algolia Search, Firestore Search]
 
 :::info[Prerequisites]
 
-Ensure you have:
-
-- Completed [**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md) for your FlutterFlow project.
-- **Upgraded** your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing).
+- Algolia integration is tied exclusively to Firestore collections. This means you must [**setup Firebase**](../../ff-integrations/firebase/connect-to-firebase-setup.md) to sync data from Firestore into Algolia for searching.
+- **Upgraded** your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing) for the Algolia Firebase Extension to work.
 - Have at least one **Firestore Collection** on which you want to perform the search queries.
 
 :::
@@ -130,13 +128,15 @@ To sync your data from Firebase to Algolia, you must install [Algolia Firebase E
 
 Follow these steps to set up the official Firebase extension for Algolia search:
 
-1. **Open Firebase Extensions:** In your Firebase project dashboard, go to the **Extensions** section and click [**Explore Extensions**](https://extensions.dev/extensions). Search for **"Search with Algolia"**, then click **Install**. Choose your project to proceed with the installation.
+1. **Open Firebase Extensions:** Go to the [**Search Firestore with Algolia**](https://extensions.dev/extensions/algolia/firestore-algolia-search) extension page, then click **Install in Firebase Console**. Choose your project to proceed with the installation.
+
 2. **Update Extension Instance ID (Optional)**: An extension instance ID uniquely identifies each installed instance of an extension within your Firebase project. This ID is used to manage the extension instance, including updating or uninstalling it.
 3. **Review Billing and Usage:** A summary of billing details will appear. After reviewing, click **Next**.
 4. **Review APIs Enabled and Resources Created:** This extension automatically creates some resources like Cloud Functions and APIs to interact with Algolia. Check the listed resources, then click **Next**.
 5. **Review Access Granted to this Extension:** You'll be presented with a list of specific services and resources that the extension needs access to. Review the permissions, then click **Next**.
 6. **Configure Extension:** During installation, you'll be prompted to provide the following details.
     - **Collection Path**: Specify the name of the Firestore collection you want to index for search.
+    
     - **Indexable Fields (Optional)**: You can leave this blank to index all fields or manually list fields you want indexed.
     - **Force Data Sync (Optional)**: You can enable this to ensure that the extension performs an additional read operation from Firestore before processing and sending data to Algolia. It guarantees that the most recent and accurate data is indexed.
     - **Algolia Index Name**: The name of the index you created (in [step 2](#step-2-create-an-index)) in Algolia Setup.
@@ -276,3 +276,13 @@ Here’s an example of how you can add Algolia Search Action:
     </iframe>
 </div>
 <p></p>
+
+## FAQs
+<details>
+<summary>
+Does Algolia work with other data sources like Supabase?
+</summary>
+<p>
+By default, FlutterFlow’s built-in Algolia integration only supports Firestore as the data source. If you need to use Algolia with another database—such as Supabase—you would have to manage that integration via [**custom code**](../../ff-concepts/adding-customization/custom-code.md). However, out of the box, FlutterFlow does not offer an Algolia search to databases beyond Firestore.
+</p>
+</details>
