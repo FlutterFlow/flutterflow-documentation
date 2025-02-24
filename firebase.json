@@ -2319,6 +2319,11 @@
         "type": 301
       },
       {
+        "source": "/firebase-content-manager",
+        "destination": "/integrations/database/cloud-firestore/firestore-content-manager/",
+        "type": 301
+      },
+      {
         "source": "/concepts/file-handling/audio-player",
         "destination": "/concepts/file-handling/displaying-media#audioplayer",
         "type": 301
