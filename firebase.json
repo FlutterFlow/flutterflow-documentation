@@ -2307,6 +2307,21 @@
         "source": "/concepts/multiple-languages/language-selector",
         "destination": "/concepts/localization",
         "type": 301
+      },
+      {
+        "source": "/misc/enterprise-support-policy",
+        "destination": "/misc/enterprise#enterprise-support-policy",
+        "type": 301
+      },
+      {
+        "source": "/misc/flutterflow-experts",
+        "destination": "/misc/hire-flutterflow-developer",
+        "type": 301
+      },
+      {
+        "source": "/firebase-content-manager",
+        "destination": "/integrations/database/cloud-firestore/firestore-content-manager/",
+        "type": 301
       }
     ]
   }

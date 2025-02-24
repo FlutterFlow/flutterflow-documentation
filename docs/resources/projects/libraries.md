@@ -80,6 +80,17 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 - It's recommended to include a message that tells users what has changed in the version your are publishing.
 :::
 
+:::warning
+To publish a project as a library, it must meet the following requirements:
+
+- **No Prior Store Deployment**: The project must not have been deployed to the Google Play Store or Apple App Store.
+- **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
+- **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
+- **Main Branch Only**: You can only publish from the main branch.
+- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a Library.
+- **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
+:::
+
 ### Disabled Features in a Library
 
 When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
@@ -136,7 +147,7 @@ To import a library project into another FlutterFlow project, you must go to the
 - By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
 - You can also import the `current` version of the library to use the latest state of the library on the main branch - however, this is not recommended.
 - You must have a paid plan to import a library.
-
+- When importing a library into a project or another library, the library’s version must not be set to 'current' and should be less than or equal to the FlutterFlow version of the project or library it’s being imported into. Learn more about [**managing Library’s FlutterFlow version**](../projects/settings/version-management.md#version-management-with-libraries).
 :::
 
 
@@ -231,6 +242,8 @@ You can easily upgrade to newer versions of the libraries as they become availab
 :::
 
 ![update-library](imgs/update-library.avif)
+
+
 
 ## Library Values
 

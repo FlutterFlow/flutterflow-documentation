@@ -98,7 +98,7 @@ This action is helpful when you add a custom widget or action that accesses the 
 
 :::info
 - Request permission only works on a mobile platform.
-- There won't be any dialog shown for the *Bluetooth* and *Notifications* permissions.
+- There won't be any dialog shown for the *Bluetooth* permission.
 :::
 
 <Tabs>

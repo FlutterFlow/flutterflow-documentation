@@ -1,5 +1,23 @@
+---
+slug: /misc/enterprise
+title: Enterprise
+description: Learn how to use FlutterFlow for Enterprise.
+tags: [Enterprise]
+sidebar_position: 1
+keywords: [Enterprise Support Policy, Whitelist URLs]
+---
 
-# Enterprise Support Policy
+# Enterprise
+
+## Whitelist URLs
+
+Enterprise environments often restrict internet access to enhance security and compliance. For example, they may allow access only to approved URLs that are essential for work-related tasks. FlutterFlow won't properly work in such restrictions because it accesses multiple services—Firestore, Cloud Functions, and various APIs—these URLs must be allowed in your corporate firewall for everything to function correctly.
+
+To find out which URLs need to be whitelisted, navigate to the URL Access page from the FlutterFlow [dashboard](../intro/ff-ui/dashboard.md). Any URLs marked as **Inaccessible** are currently blocked by your network, which may prevent certain features from functioning properly. You can copy these URLs individually or use the Copy All Inaccessible URLs button in the top-right corner to collect them all at once. Then, share the list with your IT team for whitelisting.
+
+![url-access](imgs/url-access.avif)
+
+## Enterprise Support Policy
 
 We understand our Enterprise customers often rely on FlutterFlow for mission critical applications. To that end, we have created a dedicated Enterprise support team to provide the highest level of service and support. This document outlines our support channels and scope for Enterprise customers.
 

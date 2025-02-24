@@ -33,6 +33,40 @@ customize the URL paths for web and mobile deep linking, set meaningful Page
 Names as unique identifiers, integrate dynamic parameters into your routes, and
 set access restrictions based on user authentication.
 
+![route-settings-configs.png](imgs/route-settings-configs.png)
+
+**Skip On Page Load When Inactive**
+
+Ensures that actions are bypassed if the Entry Page or Logged In Page is detected as inactive. This is designed specifically for entry points in the app to prevent unnecessary operations when the page is not fully active, optimizing performance and avoiding redundant executions.
+
+:::tip[Generated Code]
+When this check is enabled, the following code is added to your `initState` of your page:
+```js
+if (RootPageContext.isInactiveRootPage(context)) {
+       return;
+    }
+      // On Page Load Actions added after this
+```
+:::
+
+**Requires Authentication**
+
+When the "Requires Authentication" option is enabled for a page, it ensures that only users who are logged in can access that page. This setting is particularly useful for protecting sensitive or personalized content, as it prevents unauthorized users from viewing or interacting with the page.
+
+:::tip[Generated Code]
+When the Route object is created for this Page, setting `requireAuth: true` ensures that only authenticated users can access this page. If "Requires Authentication" is checked, the app will automatically enforce authentication checks before navigating to this page. This is automatically enabled for **Logged In Page**.
+
+```js
+FFRoute(
+    name: 'promotionPage',
+    path: '/promotionPahe',
+    requireAuth: true, 
+    builder: (context, params) => PromotionPageWidget(),
+  )
+```
+:::
+
+
 :::info[LEARN MORE]
 Learn more about Routing [**here**](../../../ff-concepts/navigation-routing/nav-overview.md).
 :::
@@ -86,8 +120,8 @@ page, submit form data, or call an API. Actions are crucial for creating
 interactive and functional apps.
 
 In the case of Scaffold (Page) actions, you can establish specific behaviors or
-functions that are triggered by certain events related to the page's lifecycle such as **On Page 
-Load** or **On Phone Shake**. 
+functions that are triggered by certain events related to the page's lifecycle such as [**On Page 
+Load**](page-lifecycle.md#on-page-load-action-trigger) or [**On Phone Shake**](page-lifecycle.md#on-phone-shake-action-trigger). 
 
 :::info[LEARN MORE]
 To learn about the page lifecycle and other methods exposed by FlutterFlow, [**refer to this resource**](page-lifecycle.md).

@@ -54,3 +54,7 @@ Here are some real-world examples where using Enums is beneficial:
 2. Access the Enum values by navigating to the **Set from Variable** menu, then selecting **Enums > [your enum name] > Values**.
 
 ![enums.avif](../imgs/enums.avif)
+
+:::tip[Naming Convention]
+When naming enums, always use **UpperCamelCase**, and for enum values, use **lowerCamelCase**, as recommended by the Dart Style Guide. To learn more, refer to the guide on **[Naming Variables & Functions](../../resources/style-guide.md)**.
+:::
