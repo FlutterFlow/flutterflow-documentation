@@ -117,7 +117,11 @@ To create a commit, follow these steps:
 
 Once the commit is created, you can see the list of all commits under the **Branch History** section. Here, each commit is displayed with a timestamp, the user who made the changes, and a commit message. You can also search and filter through commits by specific users and date range.
 
-To see the commit changes, simply click on the commit.
+To see the commit changes, simply click on the commit. You’ll then land on a **Commit View** page where you can:
+
+- **Review Changed Files**: In the left panel, files that have been modified are marked with a gray dot, making it easy to spot which parts of your project have updates.
+- **Compare Before and After**: The center pane provides a side-by-side diff of the YAML for each changed file. Lines highlighted in red indicate removed or altered content, while lines in green show newly added or updated content.
+- **Monitor Commit Statistics**: At the top of the page, you’ll see a quick summary of how many files were changed and the total lines added (+) or removed (-).
 
 <div style={{
     position: 'relative',
