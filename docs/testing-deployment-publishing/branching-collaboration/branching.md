@@ -121,7 +121,7 @@ To see the commit changes, simply click on the commit. You’ll then land on a *
 
 - **Review Changed Files**: In the left panel, files that have been modified are marked with a gray dot, making it easy to spot which parts of your project have updates.
 - **Compare Before and After**: The center pane provides a side-by-side diff of the YAML for each changed file. Lines highlighted in red indicate removed or altered content, while lines in green show newly added or updated content.
-- **Monitor Commit Statistics**: At the top of the page, you’ll see a quick summary of how many files were changed and the total lines added (+) or removed (-).
+- **See Commit Statistics**: At the top of the page, you’ll see a quick summary of how many files were changed and the total lines added (+) or removed (-).
 
 <div style={{
     position: 'relative',
