@@ -48,7 +48,7 @@ A list of all the available global properties is as follows:
 - **Current Environment**: Gives you the current [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) value.
 
 :::tip[Generated Code]
-Learn more about the [**Generated Code**](../../ff-concepts/state-management/generated-code.md#global-state) behind Global Properties.
+Learn more about the [**Generated Code**](../../generated-code/state-mgmt-gen-code.md#global-state) behind Global Properties.
 :::
 
 ### Current Time

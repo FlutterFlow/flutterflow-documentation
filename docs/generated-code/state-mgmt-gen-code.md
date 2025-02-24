@@ -1,5 +1,5 @@
 ---
-slug: /generated-code/state-management-generated-code
+slug: /generated-code/state-management
 title: FlutterFlow State Management
 description: Learn about the state management used in FlutterFlow's generated code.
 tags: [Generated Code, Concepts, State Management]

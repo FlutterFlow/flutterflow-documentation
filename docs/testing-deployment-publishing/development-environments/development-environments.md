@@ -55,7 +55,7 @@ You can create and switch environments in the **Dev Environments** page in **App
 </div>
 <p></p>
 
-The selected environment is used to generate the proper app code when you run, test, deploy or export your app. The only things that change between environment are the [Firebase Project](#configuring-firebase-or-supabase-for-each-environment) or variables that are tied to [Environment Values](#use-environment-values)
+The selected environment is used to generate the proper app code when you run, test, deploy or export your app. The only things that change between environment are the [Firebase Project](#configuring-firebase-or-supabase-for-each-environment) or variables that are tied to [Environment Values](#environment-values)
 
 
 ### Environment Values
