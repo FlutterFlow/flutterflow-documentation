@@ -217,7 +217,7 @@ call the **Update Component State** action to toggle the value of `isFavourite`.
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/Y96decdgYWVll3SP9Jk8?embed&show_copy_link=true"
+        src="https://demo.arcade.software/4tEsyMFyCxEP1tWQcPVh?embed&show_copy_link=true"
         title="Get Component State"
         style={{
             position: 'absolute',

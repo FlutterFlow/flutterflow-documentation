@@ -5,7 +5,7 @@ This section contains information on the payment methods we accept and how to ch
 
 ## Invoices
 #### Can I Add A Tax ID (e.g. VAT) to my invoice?
-Unfortunately, at this time we are not able to process Tax IDs.
+If you need to include VAT in your invoices, please reach out to our support team at support@flutterflow.io, and we’ll be happy to assist you with the process.
 
 
 ## Payment Methods
