@@ -346,18 +346,6 @@ Here’s a list of other Firebase Auth variables that can be referenced in Custo
 - These variables make it easy to integrate Firebase Auth data into custom functionality, enhancing the user experience.
 
 
-### Get Library Values in Custom Code
-
-Similar to the `FFAppState` class, FlutterFlow generates an `FFLibraryValues` class, which is also an abstract class. This class provides access to the **[Library Values](../../resources/projects/libraries.md#library-values)** if the project is a Library.
-
-To directly access the Library Values in custom code:
-
-```js
-Future getSchema(StateStruct? syncStatus) async {
-  print(FFLibraryValues().schema);
-}
-```
-
 ### Get Dev Environment Values in Custom Code
 
 Similar to the `FFLibraryValues` class, if you are using **[Dev Environments](../../testing-deployment-publishing/development-environments/development-environments.md)** in your FlutterFlow project, a new class called `FFDevEnvironmentValues` will be created. This class can also be accessed from custom code if needed. It is generated based on the environment selected by the user at the time of code generation.
@@ -368,6 +356,83 @@ To access any Dev Environment values in custom code, simply use:
 Future getWebhookId() async {
   // Add your function code here!
   return FFDevEnvironmentValues().webhookId;
+}
+```
+
+### Access Library Components in Custom Code
+
+When using a library dependency in your project, you can also access its components, such as Library App State, Library Values, and Library Widgets, in the user project's custom code. Here are a few examples:
+
+#### Get Library Values 
+
+Similar to the `FFAppState` class, FlutterFlow generates an `FFLibraryValues` class, which is also an abstract class. This class provides access to the **[Library Values](../../resources/projects/libraries.md#library-values)** if the project is a Library.
+
+To access Library Values directly in custom code:
+
+```js
+Future getSchema(StateStruct? syncStatus) async {
+  print(FFLibraryValues().schema);
+}
+```
+
+#### Get Library Custom Code 
+
+When you add a library dependency to your FlutterFlow project, FlutterFlow automatically includes necessary imports, allowing you to utilize custom code resources from the library project in your user project's custom code files.
+
+For example, if you have a library with project ID `library_hybw3o`, FlutterFlow will add the following import to your project:
+
+```js
+import 'package:library_hybw3o/flutter_flow/custom_functions.dart' as library_hybw3o_functions;
+```
+
+
+Now, let's use the library’s custom functions in the user project's custom function:
+
+```js
+int getRandomIndex(List<int> indexList) {
+    final item = library_hybw3o_functions.getRandomItem(); // Library's custom function
+    // get Random Index
+    final randomNumber = math.Random();
+    return ...
+}
+```
+
+#### Manually add Library Imports
+If you do not see a library import in your project, you can manually import it and assign a custom alias.
+
+For example, let's import the library's custom actions into the user project's Custom Widget resource.
+
+If the import is not already available, you can add it manually as follows:
+
+```js
+// Custom import
+import 'package:library_hybw3o/custom_code/actions/index.dart' as library_hybw3o_actions; // Assigning a custom alias to the import
+
+// Example Widget code
+class CustomDialog extends StatefulWidget {
+  const CustomDialog({
+    super.key,
+    this.width,
+    this.height,
+  });
+
+  final double? width;
+  final double? height;
+
+  @override
+  State<CustomDialog> createState() => _CustomDialogState();
+}
+
+class _CustomDialogState extends State<CustomDialog> {
+    @override
+    void initState() {
+        library_hybw3o_actions.getSchema(StateStruct()); // calling library custom action
+        super.initState();
+    }
+    @override
+        Widget build(BuildContext context) {
+            return Container(height: 50, width: 50);
+    }
 }
 ```
 
