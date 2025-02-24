@@ -1,7 +1,7 @@
 ---
-title: Components
+title: Component Model
 slug: /generated-code/component-model
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # Generated Code: Components

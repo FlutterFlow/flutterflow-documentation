@@ -1,5 +1,5 @@
 ---
-title: Pages
+title: Page Model
 slug: /generated-code/page-model
 sidebar_position: 5
 ---
