@@ -2322,6 +2322,21 @@
         "source": "/firebase-content-manager",
         "destination": "/integrations/database/cloud-firestore/firestore-content-manager/",
         "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/alert-dialog",
+        "destination": "/concepts/alerts/alert-dialog",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/dismiss-custom-dialog",
+        "destination": "/concepts/alerts/dismiss-custom-dialog",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/haptic-feedback",
+        "destination": "/concepts/alerts/haptic-feedback",
+        "type": 301
       }
     ]
   }

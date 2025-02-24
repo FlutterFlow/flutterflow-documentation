@@ -1,6 +1,6 @@
 ---
 title: Alert Dialog
-slug: /concepts/alerts-notification/alert-dialog
+slug: /concepts/alerts/alert-dialog
 sidebar_position: 0
 tags: [Actions, Alerts & Notifications]
 keywords: [FlutterFlow, Actions, Alerts & Notifications, Alert Dialog]

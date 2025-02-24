@@ -1,7 +1,7 @@
 ---
 title: OneSignal
-slug: /concepts/alerts-notification/one-signal
-sidebar_position: 3
+slug: /concepts/notifications/one-signal
+sidebar_position: 2
 tags: [Actions, Alerts & Notifications, Integration]
 keywords: [FlutterFlow, Actions, Alerts & Notifications, OneSignal]
 ---
