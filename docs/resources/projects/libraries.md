@@ -202,6 +202,10 @@ It's important to note that these resources show up where they are instantiated.
 
 This ensures that only relevant resources are shown where they are needed, optimizing performance and discoverability.
 
+:::tip[Access Library Components in Custom Code]
+When your project includes a library dependency, you can use its components—such as Library App State, Library Values, Library Custom Code resources, etc.—in your custom code. Explore the **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#access-library-components-in-custom-code)** directory for reference.
+:::
+
 ![access-library-resources.avif](imgs/access-library-resources.avif)
 
 ## Library Versioning
