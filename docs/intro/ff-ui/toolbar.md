@@ -263,6 +263,8 @@ The Developer Menu provides developers with access to tools such as code viewing
 _Connect GitHub Repo_, _Download Code_, and _Download APK_ features requires a [**paid plan**](https://flutterflow.io/pricing).
 :::
 
+6. **Open in VSCode**: This option lets you open your entire FlutterFlow project in a VS Code environment, offering a richer development experience. You’ll have real-time autocomplete and error detection, easier access to existing Flutter & Dart tooling, and the ability to leverage the AI ecosystem.
+
 ## Share project
 
 You can make a project public so that others can view and clone your project. Before you share your project, make sure to remove any sensitive information.
