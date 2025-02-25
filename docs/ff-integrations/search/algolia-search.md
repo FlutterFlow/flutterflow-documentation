@@ -283,6 +283,6 @@ Here’s an example of how you can add Algolia Search Action:
 Does Algolia work with other data sources like Supabase?
 </summary>
 <p>
-By default, FlutterFlow’s built-in Algolia integration only supports Firestore as the data source. If you need to use Algolia with another database—such as Supabase—you would have to manage that integration via [**custom code**](../../ff-concepts/adding-customization/custom-code.md). However, out of the box, FlutterFlow does not offer an Algolia search to databases beyond Firestore.
+By default, FlutterFlow’s built-in Algolia integration only supports Firestore as the data source. If you need to use Algolia with another database—such as Supabase—you would have to manage that integration via [**custom code**](../../ff-concepts/adding-customization/custom-code.md). However, out of the box, FlutterFlow currently does not offer an Algolia search on databases beyond Firestore.
 </p>
 </details>
