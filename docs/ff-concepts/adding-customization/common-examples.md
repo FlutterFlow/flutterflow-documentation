@@ -348,7 +348,7 @@ Here’s a list of other Firebase Auth variables that can be referenced in Custo
 
 ### Get Dev Environment Values in Custom Code
 
-Similar to the `FFLibraryValues` class, if you are using **[Dev Environments](../../testing-deployment-publishing/development-environments/development-environments.md)** in your FlutterFlow project, a new class called `FFDevEnvironmentValues` will be created. This class can also be accessed from custom code if needed. It is generated based on the environment selected by the user at the time of code generation.
+Similar to `FFAppState`, FlutterFlow generates a singleton `FFDevEnvironmentValues` class in your FlutterFlow generated codebase, if you are using **[Dev Environments](../../testing-deployment-publishing/development-environments/development-environments.md)**. This class can also be accessed from custom code if needed. It is generated based on the environment selected by the user at the time of code generation.
 
 To access any Dev Environment values in custom code, simply use:
 
@@ -365,7 +365,7 @@ When using a library dependency in your project, you can also access its compone
 
 #### Get Library Values 
 
-Similar to `FFAppState`, FlutterFlow generates an abstract `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
+Similar to `FFAppState` or `FFDevEnvironmentValues` class, FlutterFlow generates a singleton `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
 
 To access Library Values directly in custom code:
 
@@ -397,7 +397,7 @@ int getRandomIndex(List<int> indexList) {
 }
 ```
 
-#### Manually add Library Imports
+#### Manually Add Library Imports
 If the library import doesn’t appear in your project automatically, you can manually add it and assign a custom alias. For example, to import a library’s custom actions into your project’s Custom Widget resource, add the import yourself as shown below:
 
 For example, let's import the library's custom actions into the user project's Custom Widget resource.
