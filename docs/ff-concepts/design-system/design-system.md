@@ -45,13 +45,13 @@ To solve this issue, you can create a design system outlining common design guid
 
 
 ## Adding Design System
-You can add a design system from the [Library](../../resources/projects/libraries.md) added to your project. A library can serve as a central repository for your design assets, components, and styles—effectively becoming a Design Library for your application(s).
+You can add a design system from the [Library](../../resources/projects/libraries.md) dependencies added to your project. A library can serve as a central repository for your design assets, components, and styles—effectively becoming a Design Library for your application(s).
 
 :::tip[possible use cases]
 
 - **Enterprise Applications:** Large organizations can develop a centralized design system as a library to ensure all internal applications maintain a cohesive look and feel, enhancing brand identity and user experience.
-- **Startup MVPs:** Startups can expedite the development of Minimum Viable Products (MVPs) by leveraging a pre-built design library like [**shadcn**](https://marketplace.flutterflow.io/item/cNlm0zWW1Nfq11cFXBmp), allowing them to focus on functionality and user validation.
-- **Cross-Platform Consistency:** Teams aiming to deploy apps across multiple platforms (iOS, Android, Web) can use a popular design system library to ensure uniformity in design, reducing the effort required for platform-specific adjustments.
+- **Startup MVPs:** Startups can expedite the development of Minimum Viable Products (MVPs) by leveraging a pre-built design system library like [**shadcn**](https://marketplace.flutterflow.io/item/cNlm0zWW1Nfq11cFXBmp), allowing them to focus on functionality and user validation.
+- **Cross-Platform Consistency:** Teams aiming to deploy apps across multiple platforms (iOS, Android, Web) can use a popular platform based design system library to ensure uniformity in design, reducing the effort required for platform-specific adjustments.
 
 :::
 
