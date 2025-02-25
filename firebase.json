@@ -2322,6 +2322,11 @@
         "source": "/firebase-content-manager",
         "destination": "/integrations/database/cloud-firestore/firestore-content-manager/",
         "type": 301
+      },
+      {
+        "source": "/concepts/state-management/generated-code",
+        "destination": "/generated-code/state-management",
+        "type": 301
       }
     ]
   }

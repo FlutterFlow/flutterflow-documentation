@@ -639,16 +639,16 @@ To use a predefined JSON Path, first, select your API response. Then, set the **
 
 You can make the API call private and change the proxy settings using advanced settings.
 
-### Making an API call private
+### Private API Calls
 
 Making an API call private is helpful if it uses tokens or secrets you don't want to expose in your app. Enabling this setting will route this API call securely via the Firebase Cloud Functions.
 
-To make the API call private, open the **Advanced Settings** tab, turn on the **Make Private** toggle, Click **Save,** and then **Deploy APIs**.
+![private-cloud-func.png](imgs/private-cloud-func.png)
+
+To make an API Call Private, open the **Advanced Settings** tab, turn on the **Make Private** toggle, Click **Save,** and then **Deploy APIs**.
 
 Optionally, you can force a user to be authenticated via the Firebase authentication to make this API call. To do so, turn on the **Require Authentication** toggle.
 
-
-:::info
 
 Private APIs are deployed as [**Cloud Functions**](https://firebase.google.com/docs/functions) within your Firebase project. While deploying, you can configure the following options:
 
@@ -659,7 +659,7 @@ Private APIs are deployed as [**Cloud Functions**](https://firebase.google.com/d
     
     **Note**: To minimize costs, you can set the **Min Instances** value to 0. For detailed pricing information, refer to the [**Cloud Functions Pricing page**](https://cloud.google.com/functions/pricing-overview).
   
-:::
+
 
 <div style={{
     position: 'relative',

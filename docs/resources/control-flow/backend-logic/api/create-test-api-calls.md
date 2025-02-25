@@ -122,7 +122,7 @@ The PUT and PATCH API calls can be defined similarly; make sure you enter a vali
 You can create a group of API calls that share the same base URL. Grouping the API calls helps you add all request headers (e.g., auth token) at once, and they will be automatically added for all the API calls inside the group.
 
 :::warning
-For [**private APIs**](rest-api.md#making-an-api-call-private), headers defined within the group will not be automatically included. You'll need to manually add headers for APIs marked as private.
+For [**private APIs**](rest-api.md#private-api-calls), headers defined within the group will not be automatically included. You'll need to manually add headers for APIs marked as private.
 :::
 
 To create the API Group:
