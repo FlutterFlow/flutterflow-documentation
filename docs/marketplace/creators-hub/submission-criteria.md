@@ -334,7 +334,7 @@ Building a solid app template goes beyond surface-level design. It's about creat
 - **Criteria:** Implement state management effectively to ensure data is updated and reflected correctly across your application.
 - **Why it Matters:** Proper state management is crucial for building responsive and dynamic Flutter apps. It helps prevent data inconsistencies, improves performance, and makes your code easier to maintain.
 - **What To Do:**
-    - **Choose the right state management scope:** FlutterFlow supports (1) [App State](../../resources/data-representation/app-state.md) (2) [Page State](../../resources/ui/pages/page-lifecycle.md#page-state) and (3) [Component State](../../ff-concepts/state-management/generated-code.md#component-state) variables. Familiarize yourself with these options and scope any state variables to where they are needed. For instance, do not use App State to control the value of a checkbox within a component.
+    - **Choose the right state management scope:** FlutterFlow supports (1) [App State](../../resources/data-representation/app-state.md) (2) [Page State](../../resources/ui/pages/page-lifecycle.md#page-state) and (3) [Component State](../../resources/ui/components/component-lifecycle.md#creating-a-component-state) variables. Familiarize yourself with these options and scope any state variables to where they are needed. For instance, do not use App State to control the value of a checkbox within a component.
     - **Rebuild efficiently:** Ensure changes to state rebuild only the necessary scope for efficiency.
 
 #### 5.10 Organized Widget Tree
