@@ -365,7 +365,7 @@ When using a library dependency in your project, you can also access its compone
 
 #### Get Library Values 
 
-Similar to the `FFAppState` class, FlutterFlow generates an `FFLibraryValues` class, which is also an abstract class. This class provides access to the **[Library Values](../../resources/projects/libraries.md#library-values)** if the project is a Library.
+Similar to `FFAppState`, FlutterFlow generates an abstract `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
 
 To access Library Values directly in custom code:
 
@@ -398,7 +398,7 @@ int getRandomIndex(List<int> indexList) {
 ```
 
 #### Manually add Library Imports
-If you do not see a library import in your project, you can manually import it and assign a custom alias.
+If the library import doesn’t appear in your project automatically, you can manually add it and assign a custom alias. For example, to import a library’s custom actions into your project’s Custom Widget resource, add the import yourself as shown below:
 
 For example, let's import the library's custom actions into the user project's Custom Widget resource.
 
