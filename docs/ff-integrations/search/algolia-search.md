@@ -13,7 +13,7 @@ keywords: [FlutterFlow, Algolia Search, Firestore Search]
 
 :::info[Prerequisites]
 
-- Algolia integration is tied exclusively to Firestore collections. This means you must [**setup Firebase**](../../ff-integrations/firebase/connect-to-firebase-setup.md) to sync data from Firestore into Algolia for searching.
+- Algolia integration in FlutterFlow is tied exclusively to Firestore collections. This means you must [**setup Firebase**](../../ff-integrations/firebase/connect-to-firebase-setup.md) to sync data from Firestore into Algolia for searching.
 - **Upgraded** your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing) for the Algolia Firebase Extension to work.
 - Have at least one **Firestore Collection** on which you want to perform the search queries.
 
