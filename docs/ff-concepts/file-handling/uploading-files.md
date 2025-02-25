@@ -31,7 +31,15 @@ You can upload media to a **Supabase bucket** at a specified location. After the
 
 ### Local Upload (Widget State)
 
-This method saves your media to the device first. You can access it via **Widget State > Uploaded Local File**. Then, make an API call to transfer the file to your server. **Ensure** that this API call returns the URL of the uploaded file, which you can later use to preview the media.
+This method initially stores your media on the device, making it accessible via **Widget State > Uploaded Local File**. From there, you can do various things with the local file:
+
+- **Preview or Validate the Media**: Show the user an in-app preview before deciding whether to finalize or discard the upload.
+- **Editing Before Submission**: Modify the file (e.g., apply filters to an image) before saving it to permanent storage.
+- **Perform Data Operations**: Access the file bytes (e.g., for compression, transformations, or further processing).
+- **Offline Functionality**: Store the media locally and defer uploading until the user regains internet access.
+- **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL if you plan to display it later.
+
+By handling the media locally first, you gain flexibility—such as letting users confirm or edit an image—before making any final decisions on where to store or how to process it.
 
 ![upload-type-local-and-api.avif](imgs/upload-type-local-and-api.avif)
 
