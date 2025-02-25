@@ -217,7 +217,9 @@ In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within
 
 ## Web Access for PDFs and Other Files
 
-Some types of files require additional configuration to be accessed on the web. In particular, the PDF Viewer requires network files (such as uploaded PDFs) to allow what is called Cross-Origin Resource Sharing (CORS). Without diving too deep into that, the important part is that if you want users to be able to upload and view PDFs using Firebase Storage, follow the instructions below:
+Some types of files require additional configuration to be accessed on the web. In particular, the PDF Viewer requires network-hosted files (such as uploaded PDFs) to allow Cross-Origin Resource Sharing (CORS). For a deeper understanding of Cross-Origin Resource Sharing (CORS), you can refer to this guide.
+
+The key takeaway is that to allow users to upload and view PDFs using Firebase Storage, follow the steps below.
 
 
 You'll need to run a few commands to enable CORS for your Firebase project. No programming experience is required, but if you're comfortable with Firebase, you can refer to the official guide here: [Firebase CORS Configuration](https://firebase.google.com/docs/storage/web/download-files#cors_configuration).
