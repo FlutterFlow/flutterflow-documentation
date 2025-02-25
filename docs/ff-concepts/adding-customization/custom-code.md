@@ -44,6 +44,10 @@ You can use the In-App Code Editor to view and edit custom code directly in the 
 
 ![custom-code-common.png](imgs/custom-code-common.png)
 
+:::tip
+To leverage the capabilities that go beyond our in-app code editor, you can click on the icon to open and edit your custom code directly in VS Code using the FlutterFlow [**VSCode extension**](vscode-extension.md).
+:::
+
 :::warning[Using the In-App Code Editor on Desktop]
 Note that the desktop version of the In-App Code Editor is limited. We recommend using the Web editor
 or the **[VSCode Extension](vscode-extension.md)**.
