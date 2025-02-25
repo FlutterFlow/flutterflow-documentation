@@ -124,11 +124,11 @@ The Upload Media action offers various settings to control how media files are u
 
 You can also save the media file temporarily on the device before uploading it to cloud storage. This method is especially useful when you’re working with your own backend server, as it provides more control over the upload process.
 
-For example, In social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
+For example, in social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
 
 Here’s an example of how you can use this action to upload media to your server via an API:
 
-First, set the **Upload/Save Media** action with the **Local Upload (Widget State)** upload type. then, add the next action as an **API call** and select the API that will upload the file to your server. After the API call is complete, ensure your server returns the uploaded file's URL. Use this URL to save in the database or [display the uploaded image](displaying-media.md).
+First, set the **Upload/Save Media** action with the **Local Upload (Widget State)** upload type. Then, add the next action as an **API call** and select the API that will upload the file to your server. After the API call is complete, ensure your server returns the uploaded file's URL. Use this URL to save in the database or [display the uploaded image](displaying-media.md).
 
 
 <div style={{

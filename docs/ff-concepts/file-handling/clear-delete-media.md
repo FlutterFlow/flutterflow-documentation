@@ -17,7 +17,7 @@ When users upload media files, these files are first stored in a local state var
 
 :::info
 
-For this action to work, the [**Upload or Save Media**](uploading-files.md#upload-or-save-media-action) action must already be added to the workflow.
+For this action to work, the [**Upload or Save Media**](uploading-files.md#upload-or-save-media-action) action must already be added to the actions workflow.
 
 :::
 
