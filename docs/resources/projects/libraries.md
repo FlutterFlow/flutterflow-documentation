@@ -365,7 +365,7 @@ Yes, you can add and import a Marketplace project as a library.
 <details>
 <summary>How do libraries work with themes (design systems)?</summary>
 <p>
-By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#use-library-as-design-system) page.
+By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#adding-design-system) page.
 </p>
 </details>
 

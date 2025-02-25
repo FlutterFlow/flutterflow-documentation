@@ -45,61 +45,28 @@ To solve this issue, you can create a design system outlining common design guid
 
 
 ## Adding Design System
+You can add a design system from the [Library](../../resources/projects/libraries.md) dependencies added to your project. A library can serve as a central repository for your design assets, components, and styles—effectively becoming a Design Library for your application(s).
 
-To create your own design system:
+:::tip[possible use cases]
 
-1. Open the **Theme Settings > Design System**.
-2. Click **Create Design Library**.
-3. Enter the **Design Library Project Name**.
-4. Now you can configure the Colors, Typography & Icons, App Assets, NavBar & AppBar, and Theme Settings.
-5. To see how the app will look for the new design system, you can open it in preview mode (click the eye icon at the top right side).
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/7MfxqDLMHhtmen4DLo35?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-
-
-<p></p>
-
-6. To use the design system, open your project and navigate to **Theme Settings > Design System**.
-7. Click on the **No Design System Selected**.
-8. A pop will open displaying the list of the design systems, click on the newly created design system to add it to your project. **Note** that the design system created in [My Organization](../../resources/projects/how-to-collaborate-on-projects.md#sharing-a-project-with-an-organization) will also be available here.
-
-:::info
-
-After selecting the design system, you can't change the Colors, Typography, and Theme Widgets.
+- **Enterprise Applications:** Large organizations can develop a centralized design system as a library to ensure all internal applications maintain a cohesive look and feel, enhancing brand identity and user experience.
+- **Startup MVPs:** Startups can expedite the development of Minimum Viable Products (MVPs) by leveraging a pre-built design system library like [**shadcn**](https://marketplace.flutterflow.io/item/cNlm0zWW1Nfq11cFXBmp), allowing them to focus on functionality and user validation.
+- **Cross-Platform Consistency:** Teams aiming to deploy apps across multiple platforms (iOS, Android, Web) can use a popular platform based design system library to ensure uniformity in design, reducing the effort required for platform-specific adjustments.
 
 :::
 
+
+To add a design system from a library, start by creating the design system in a new FlutterFlow project and [publishing it as a library](../../resources/projects/libraries.md#publishing-a-library). Next, [import](../../resources/projects/libraries.md#importing-a-library) that library into the project where you want to use the design system. Then, navigate to **Theme Settings > Design System** and click **No Design System Selected**. From the dropdown that appears, **Select a library** you’ve just imported to apply its design system to your project.
+
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/VW1EVzUHh70WhDEDz6n7?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+        src="https://demo.arcade.software/G3PekDcZNsWYrKoz3xnE?embed&show_copy_link=true"
+        title=""
         style={{
             position: 'absolute',
             top: 0,
@@ -118,7 +85,6 @@ After selecting the design system, you can't change the Colors, Typography, and 
 </div>
 <p></p>
 
----
 
 ## Import Figma Theme
 
@@ -178,47 +144,6 @@ If you prefer watching a video tutorial, here is the guide for you:
     <iframe 
         src="https://www.youtube.com/embed/kWvWa5PSWhw"
         title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-## Use Library as Design System
-
-You can also import a design system from the [Library](../../resources/projects/libraries.md) added to your project. A library can serve as a central repository for your design assets, components, and styles—effectively becoming a Design Library for your application(s).
-
-:::tip[possible use cases]
-
-- **Enterprise Applications:** Large organizations can develop a centralized design system as a library to ensure all internal applications maintain a cohesive look and feel, enhancing brand identity and user experience.
-- **Startup MVPs:** Startups can expedite the development of Minimum Viable Products (MVPs) by leveraging a pre-built design library like [**shadcn**](https://marketplace.flutterflow.io/item/cNlm0zWW1Nfq11cFXBmp), allowing them to focus on functionality and user validation.
-- **Cross-Platform Consistency:** Teams aiming to deploy apps across multiple platforms (iOS, Android, Web) can use a popular design system library to ensure uniformity in design, reducing the effort required for platform-specific adjustments.
-
-:::
-
-To add a design system from a library, first, ensure that you [add a library dependency to your project](../../resources/projects/libraries.md#importing-a-library). Then, navigate to **Theme Settings > Design System** and click on **No Design System Selected**. From the dropdown menu, **Select a library** you want to use.
-
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G3PekDcZNsWYrKoz3xnE?embed&show_copy_link=true"
-        title=""
         style={{
             position: 'absolute',
             top: 0,
