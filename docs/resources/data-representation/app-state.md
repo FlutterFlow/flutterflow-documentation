@@ -16,7 +16,7 @@ App state variables are specific variables that hold the current state of an app
 
 App state variables should be used in scenarios where the same data needs to be accessed and modified from multiple locations within the app. For instance, in a shopping cart app, items in a user's cart are usually accessible across different pages.
 
-App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](../../resources/ui/pages/page-lifecycle.md#page-state) or [component state](../../ff-concepts/state-management/generated-code.md#component-state) variable instead.
+App state variables should not be used for temporary data that doesn't impact the overall state of the application. For instance, a user's temporary input in a form should not be stored in an app state variable. It would be more appropriate to use a [page state](../../resources/ui/pages/page-lifecycle.md#page-state) or [component state](../../generated-code/state-mgmt-gen-code.md#component-state) variable instead.
 
 ## App State Variables
 
@@ -58,7 +58,7 @@ Head over to the left-side navigation menu and follow the steps below to create 
 - **Persisted:** Whether this app state is saved to disk so that it can be loaded when the app is restarted. Otherwise the field will be reset on restart.
  
 :::tip[Generated Code]
-  Curious about what happens when the **Persisted** toggle is on? Check out the [**Generated Code**](../../ff-concepts/state-management/generated-code.md#persisting-app-state) guide.
+  Curious about what happens when the **Persisted** toggle is on? Check out the [**Generated Code**](../../generated-code/state-mgmt-gen-code.md#persisting-app-state) guide.
  :::
 
 

@@ -2367,6 +2367,11 @@
         "source": "/concepts/file-handling/upload-save-media",
         "destination": "/concepts/file-handling/uploading-files#upload-or-save-media-action",
         "type": 301
+      },
+      {
+        "source": "/concepts/state-management/generated-code",
+        "destination": "/generated-code/state-management",
+        "type": 301
       }
     ]
   }
