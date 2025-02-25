@@ -81,7 +81,7 @@ Once you have the API Call query defined, you can use the data retrieved from th
 4. Set the **API response Options** to **JSON Body**.
 5. Set the **Available Options** to **JSON Path**.
 6. Set the **JSON Path Name** to either the custom JSON path or use the already created JSON 
-   path. See how to [**create a JSON path**](../../backend-logic/api/rest-api.md#adding-json-path).
+   path. See how to [**create a JSON path**](../../backend-logic/api/rest-api.md#add-json-predefined-path).
 7. Click **Confirm**.
 
 <div class="video-container"><iframe src="https://www.loom.
