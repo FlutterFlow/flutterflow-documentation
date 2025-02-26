@@ -89,7 +89,7 @@ Cloud Functions Admin permissions are required for several FlutterFlow features 
 
 3. Return to FlutterFlow, enter your Firebase Project ID in the dialog, and click Connect. A green checkmark will appear once the connection is successful.
 
-4. Under Config Files, choose **Autogenerate Files** and then select **Generate Files**.
+4. Under Config Files, choose **Generate Config Files** and then select **Generate Files**.
 
 :::info
 Do not close or refresh the page while the files are being generated.
