@@ -2327,6 +2327,11 @@
         "source": "/concepts/state-management/generated-code",
         "destination": "/generated-code/state-management",
         "type": 301
+      },
+      {
+        "source": "/concepts/custom-code/custom-files",
+        "destination": "/concepts/custom-code/configuration-files",
+        "type": 301
       }
     ]
   }
