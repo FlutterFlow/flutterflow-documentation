@@ -19,7 +19,7 @@ There are a few different ways to make custom code accessible in FlutterFLow:
 * **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
 * **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import [custom package dependencies](#adding-a-pubspec-dependency).
 * **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets that can also import [custom package dependencies](#adding-a-pubspec-dependency) and be used in the same way as [Components](https://docs.flutterflow.io/resources/ui/components) throughout your project. 
-* **[Custom Files](custom-files.md):** Within Custom Files, you'll have the ability to edit some parts of the `main.dart` file.
+* **[Configuration Files](configuration-files.md):** You'll have the ability to edit native files for Android and iOS.
 
 
 :::tip[Why Write Custom Code?]
