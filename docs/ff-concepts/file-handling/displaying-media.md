@@ -83,7 +83,7 @@ Currently, audio recording is not supported in **Run** or **Test** modes due to 
 
 This action starts the recording. It also provides a name to the recording, which you can use later to stop the recording using the [Stop Audio Recording](#stop-audio-recording-action) *action.*
 
-Before adding this action, ensure you [request microphone permission](../../resources/projects/settings/project-setup.md#request-permission-action). Then, inside the **TRUE** section of the permission check, add the **Start Audio Recording** action. By default, the **Name** is a randomly generated string. You can change it to a more descriptive name for easier identification.
+Before adding this action, ensure you [request microphone permission](../../resources/projects/settings/project-setup.md#request-permission-action). Within the **TRUE** block of the permission condition check, add the **Start Audio Recording** action. By default, the **Name** field value is a randomly generated string. You can change it to a more descriptive name for easier identification.
 
 :::tip
 
