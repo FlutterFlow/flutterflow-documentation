@@ -110,4 +110,4 @@ To customize the widget when image is displayed, refer [here](../../widgets/basi
 
 ### Customizing Video
 
-To customize the widget when video is displayed, refer [here](../../../../ff-concepts/file-handling/displaying-media.md#customization-options-1).
+To customize the widget when video is displayed, refer [here](../../../../ff-concepts/file-handling/displaying-media.md#videoplayer).
