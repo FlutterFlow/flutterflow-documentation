@@ -11,6 +11,7 @@ keywords: [Media Files, Media Management, Assets, Network, Display Media, Media 
 
 Displaying media efficiently is crucial for enhancing user experience in your FlutterFlow app. Whether you're working with images, audio, video, or PDFs, FlutterFlow provides flexible options for integrating and managing media. This guide covers how to set media sources, customize playback settings, and implement best practices like lazy loading, caching, and BlurHash to optimize performance.
 
+## Media Types
 To display media on widgets, navigate to the **Properties Panel** and specify the media source under the **[Media] Type** option (e.g., ImageType, AudioType, VideoType). Here are the available options:
 
 ### Network
@@ -39,13 +40,17 @@ Use this option to upload media from your computer or select previously uploaded
 
 ### Uploaded File
 
-Selecting this option allows for the dynamic handling of media within your app, accommodating media uploaded by users during app usage. For example, if you simply wish to display an image within your app without uploading it anywhere, or if you'd like to preview the image before sending it to your server through an API, you can achieve this by setting the source as **Widget State -> Uploaded Local File**.
+You can access media files within your app without uploading them anywhere. For example, if you'd like to preview an image before sending it to cloud storage, you can do so by setting the source to **Widget State -> Uploaded Local File**.
 
 ![dm-local-upload.avif](imgs/dm-local-upload.avif)
 
 ## AudioPlayer
 
-The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#) section for more details on accessing media.
+The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
+
+:::tip[Generated Code]
+The AudioPlayer in FlutterFlow is powered by the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
+:::
 
 ### Customization Options
 
@@ -177,7 +182,7 @@ This action only works if you have added a [**Play Sound**](#play-sound-action)
 
 ## VideoPlayer
 
-The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#) section for more details on accessing media.
+The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
 ### Customization Options
 
@@ -207,7 +212,7 @@ The **YouTubePlayer** widget in FlutterFlow allows you to seamlessly integrate
 
 ## PdfViewer
 
-In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within your app, supporting both network URLs and locally uploaded assets. Refer to the [**Displaying Media**](#) section for more details.
+In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within your app, supporting both network URLs and locally uploaded assets. Refer to the [**Displaying Media**](#media-types) section for more details.
 
 ### Customization Options
 
