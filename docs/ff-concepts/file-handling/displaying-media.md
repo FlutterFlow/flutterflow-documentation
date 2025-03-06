@@ -49,10 +49,10 @@ You can access media files within your app without uploading them anywhere. For 
 The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
 :::tip[Generated Code]
-The AudioPlayer in FlutterFlow is powered by the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
+The AudioPlayer in FlutterFlow uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
 :::
 
-### Customization Options
+**Customization Options**
 
 - **Title:** Specify the audio title in the **Title** property. You can set this directly or bind it to a variable, such as an app state variable, API response, or Firestore document.
 - **Pause on Forward Navigation:** By default, the audio stops when navigating to another page.
@@ -113,7 +113,7 @@ Here’s how you can setup this action:
 :::tip
 
 - After stopping the recording, you might want to update the state variables to reflect changes on the UI. For instance, you can enable/disable buttons or stop recording animations.
-- It's always a good idea to have a fail-safe mechanism to ensure recordings are properly stopped, even if the user forgets to do so manually. For instance, you can trigger this action when the user closes the app without explicitly stopping it.
+- It's always a good idea to have a fail-safe mechanism to ensure recordings are properly stopped, even if the user forgets to do so manually. For example, you can use the [**On Dispose**](../../resources/ui/pages/page-lifecycle.md#on-dispose-action-trigger) action trigger to stop recording when a user closes the app without manually stopping it.
 
 :::
 
@@ -178,7 +178,7 @@ You can stop a sound that is currently playing, which was started by the [Play 
 
 :::info
 
-This action only works if you have added a [**Play Sound**](#play-sound-action) action on a page.
+This action is enabled only when you have added a [**Play Sound**](#play-sound-action) action on a page.
 
 :::
 
@@ -186,7 +186,16 @@ This action only works if you have added a [**Play Sound**](#play-sound-action)
 
 The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
-### Customization Options
+:::tip[]
+The VideoPlayer in FlutterFlow uses several packages to ensure reliable video playback across different platforms:
+
+- [**video_player**](https://pub.dev/packages/video_player): Provides core functionality for video playback from assets or network sources.
+- [**video_player_android**](https://pub.dev/packages/video_player_android): Ensures smooth playback specifically for Android devices.
+- [**video_player_avfoundation**](https://pub.dev/packages/video_player_avfoundation): Integrates with Apple's AVFoundation framework for playback on iOS devices.
+- [**video_player_web**](https://pub.dev/packages/video_player_web): Enables video playback support for web browsers.
+:::
+
+**Customization Options**
 
 The **VideoPlayer** widget includes several options to align with your app's design and functionality:
 
@@ -201,9 +210,9 @@ The **VideoPlayer** widget includes several options to align with your app's des
 
 ## YoutubePlayer
 
-The **YouTubePlayer** widget in FlutterFlow allows you to seamlessly integrate and play YouTube videos within your app. It offers customizable playback options and an intuitive interface for enhancing the user experience.
+The **YouTubePlayer** widget in FlutterFlow allows you to integrate and play YouTube videos within your app. It offers customizable playback options and an intuitive interface for enhancing the user experience.
 
-### Customization Options
+**Customization Options**
 
 - **Loop Video:** When enabled, the video will automatically replay after it finishes.
 - **Mute Video:** Starts the video in a muted state.
@@ -216,7 +225,7 @@ The **YouTubePlayer** widget in FlutterFlow allows you to seamlessly integrate
 
 In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within your app, supporting both network URLs and locally uploaded assets. Refer to the [**Displaying Media**](#media-types) section for more details.
 
-### Customization Options
+**Customization Options**
 
 - **Horizontal Scroll:** By default, the PdfViewer allows vertical scrolling through pages. Enable this option to allow horizontal scrolling.
 - **Use Proxy:** By default, FlutterFlow routes PDF fetching through a proxy in **Run Mode** and **Test Mode** to avoid CORS (Cross-Origin Resource Sharing) issues. **Switch this off** if you do not want the PDF request to be routed through the proxy.
