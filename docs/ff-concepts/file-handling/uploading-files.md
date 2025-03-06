@@ -31,15 +31,7 @@ You can upload media to a **Supabase bucket** at a specified location. After the
 
 ### Local Upload (Widget State)
 
-This method initially stores your media on the device, making it accessible via **Widget State > Uploaded Local File**. From there, you can do various things with the local file:
-
-- **Preview or Validate the Media**: Show the user an in-app preview before deciding whether to finalize or discard the upload.
-- **Editing Before Submission**: Modify the file (e.g., apply filters to an image) before saving it to permanent storage.
-- **Perform Data Operations**: Access the file bytes (e.g., for compression, transformations, or further processing).
-- **Offline Functionality**: Store the media locally and defer uploading until the user regains internet access.
-- **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL if you plan to display it later.
-
-By handling the media locally first, you gain flexibility—such as letting users confirm or edit an image—before making any final decisions on where to store or how to process it.
+This method initially stores your media on the device, making it accessible via **Widget State > Uploaded Local File**. You can preview, edit, or process the file before uploading it to a permanent storage.
 
 ![upload-type-local-and-api.avif](imgs/upload-type-local-and-api.avif)
 
@@ -57,8 +49,7 @@ This action allows you to upload a photo or video to your app. You can choose to
 
 :::info[Prerequisites for Supabase]
 1. Make sure to [**integrate Supabase**](../../ff-integrations/supabase/supabase-setup.md) into your app.
-2. [**Create a storage bucket**](https://supabase.com/docs/guides/storage/quickstart#create-a-bucket) in Supabase.
-   **Tip**: To let anyone download the uploaded media, you can enable the 'Public bucket.'
+2. [**Create a storage bucket**](https://supabase.com/docs/guides/storage/quickstart#create-a-bucket) in Supabase. By default, the **Public bucket** option is disabled, meaning uploaded media is not accessible by anyone without authentication. If needed, you can enable the Public bucket option, but this is not recommended for sensitive content.
 
 <p></p>
 ![supabase-storage-bucket.png](imgs/supabase-storage-bucket.png)
@@ -114,6 +105,19 @@ When you set **Upload Type** to:
 </div>
 <p></p>
 
+
+The Upload Media action offers various settings to control how media files are uploaded, resized, and processed in your app. Below is a breakdown of all the available properties.
+
+![configure-upload-media-action.avif](imgs/configure-upload-media-action.avif)
+
+- **Max Width** and **Max Height**: If you are uploading a photo, you can set a maximum width and height using these properties. This resizes the image while maintaining its original aspect ratio.
+- **Image Quality**: Control the image quality by adjusting the slider or entering a value between 0 and 100, where 100 retains the original quality.
+- **Include Media Dimensions**: Enable this option to retrieve the dimensions (width and height) of the uploaded media. Keep in mind that this operation is resource-intensive, so enable it only if necessary.
+- **Include Blur Hash**: Automatically generates a BlurHash for the uploaded image, allowing you to display a blurred placeholder while the full image loads. For more information, refer to the [BlurHash](displaying-media.md#blurhash) section.
+- **Source Picker Style**: Customize the appearance of the bottom sheet UI that appears when selecting a media source (e.g., Camera or Gallery).
+- **Allow Multiple Images**: Enable this option to allow users to select multiple images. Note that this requires the **Media Source** to be set to **Gallery**. Once multiple images are uploaded, you can access their URLs via **Set from Variable menu > Widget State > Uploaded File URLs (`List<String>`)**.
+- **Show Snackbar**: Enable this option to notify users about the upload progress with a snackbar message.
+
 Check out our YouTube video for a detailed explanation of the **Upload or Save Media [Action]** in FlutterFlow.
 
 <div style={{
@@ -143,29 +147,28 @@ Check out our YouTube video for a detailed explanation of the **Upload or Save M
 <p></p>
 
 
-### Configure Upload or Save Media [Action]
-
-The Upload Media action offers various settings to control how media files are uploaded, resized, and processed in your app. Below is a breakdown of all the available properties.
-
-![configure-upload-media-action.avif](imgs/configure-upload-media-action.avif)
-
-- **Max Width** and **Max Height**: If you are uploading a photo, you can set a maximum width and height using these properties. This resizes the image while maintaining its original aspect ratio.
-- **Image Quality**: Control the image quality by adjusting the slider or entering a value between 0 and 100, where 100 retains the original quality.
-- **Include Media Dimensions**: Enable this option to retrieve the dimensions (width and height) of the uploaded media. Keep in mind that this operation is resource-intensive, so enable it only if necessary.
-- **Include Blur Hash**: Automatically generates a BlurHash for the uploaded image, allowing you to display a blurred placeholder while the full image loads. For more information, refer to the [BlurHash](displaying-media.md#blurhash) section.
-- **Source Picker Style**: Customize the appearance of the bottom sheet UI that appears when selecting a media source (e.g., Camera or Gallery).
-- **Allow Multiple Images**: Enable this option to allow users to select multiple images. Note that this requires the **Media Source** to be set to **Gallery**. Once multiple images are uploaded, you can access their URLs via **Set from Variable menu > Widget State > Uploaded File URLs (`List<String>`)**.
-- **Show Snackbar**: Enable this option to notify users about the upload progress with a snackbar message.
-
 ### Store Media for Upload
 
-You can also save the media file temporarily on the device before uploading it to cloud storage. This method is especially useful when you’re working with your own backend server, as it provides more control over the upload process.
+You can also save the media file temporarily on the device before uploading it to cloud storage by setting the **Upload Type** to [**Local Upload**](#local-upload-widget-state). This saves the file in Bytes, allowing you to preview, edit, or process it before finalizing the upload.
 
-For example, in social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
+Once the file is uploaded to the device, you can do various things with it:
 
-Here’s an example of how you can use this action to upload media to your server via an API:
+- **Preview or Validate the Media**: Show the user an in-app preview before deciding whether to finalize or discard the upload.
+
+- **Editing Before Submission**: In social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
+- **Perform Data Operations**: In document scanning apps, users capture images of documents, which are temporarily stored on the device. The app accesses the file bytes to apply OCR (Optical Character Recognition), enhance contrast, or convert the image to PDF before uploading the final processed file to cloud storage.
+- **Offline Functionality**: Store the media locally and defer uploading until the user regains internet access.
+- **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL if you plan to display it later.
+
+Here are some examples of uploading a file to a device and using it in different scenarios:
+
+**Example 1: Upload to Your Backend Server via API**
 
 First, set the **Upload/Save Media** action with the **Local Upload (Widget State)** upload type. Then, add the next action as an **API call** and select the API that will upload the file to your server. After the API call is complete, ensure your server returns the uploaded file's URL. Use this URL to save in the database or [display the uploaded image](displaying-media.md).
+
+:::info
+The request body for the API must be in *Multipart* format. See how to [**configure an API for the multipart request body**](../../resources/control-flow/backend-logic/api/rest-api.md#multipart-format).
+:::
 
 
 <div style={{
@@ -194,11 +197,20 @@ First, set the **Upload/Save Media** action with the **Local Upload (Widget Stat
 </div>
 <p></p>
 
-:::info
+**Example 2: Compress Image Using Custom Action**
 
-The request body for the API must be in *Multipart* format. See how to [**configure an API for the multipart request body**](../../resources/control-flow/backend-logic/api/rest-api.md#multipart-format).
+First, configure the **Upload/Save Media** action with the **Local Upload (Widget State)** upload type. This temporarily saves the media file on the device.
 
-:::
+Next, create and add a [**Custom Action**](../../ff-concepts/adding-customization/custom-actions.md) (e.g., `compressImageAction`) that takes the locally stored file as input and compresses it using its **bytes** data. Ensure the custom action processes the image and returns a compressed file. Once compressed, the file can then be uploaded to cloud storage using another **Upload/Save Media** action.
+
+![compress-image](imgs/compress-image.avif)
+
+**Example 3: Upload to Firebase or Supabase**
+
+First, configure the **Upload/Save Media** action with the **Local Upload (Widget State)** upload type. Once the file is modified or processed, add another **Upload/Save Media** action to the widget that confirms the final upload. Set the **Upload Type** to **Firebase** or **Supabase**, choose **File Type** as the **Uploaded File**, and select **File to Upload** from **Widget State > Uploaded Local File**.
+
+![local-upload-to-firebase-supabase](imgs/local-upload-to-firebase-supabase.avif)
+
 
 ## Upload or Save File [Action]
 
