@@ -49,7 +49,7 @@ You can access media files within your app without uploading them anywhere. For 
 The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
 :::tip[Generated Code]
-The AudioPlayer in FlutterFlow uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
+The AudioPlayer uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
 :::
 
 **Customization Options**
@@ -186,8 +186,8 @@ This action is enabled only when you have added a [**Play Sound**](#play-sound-
 
 The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
-:::tip[]
-The VideoPlayer in FlutterFlow uses several packages to ensure reliable video playback across different platforms:
+:::tip[Generated Code]
+The VideoPlayer uses several packages to ensure reliable video playback across different platforms:
 
 - [**video_player**](https://pub.dev/packages/video_player): Provides core functionality for video playback from assets or network sources.
 - [**video_player_android**](https://pub.dev/packages/video_player_android): Ensures smooth playback specifically for Android devices.
@@ -212,6 +212,10 @@ The **VideoPlayer** widget includes several options to align with your app's des
 
 The **YouTubePlayer** widget in FlutterFlow allows you to integrate and play YouTube videos within your app. It offers customizable playback options and an intuitive interface for enhancing the user experience.
 
+:::tip[Generated Code]
+The YoutubePlayer uses a custom version of the [**youtube_player_iframe**](https://pub.dev/packages/youtube_player_iframe) package, hosted on FlutterFlow's GitHub repository.
+:::
+
 **Customization Options**
 
 - **Loop Video:** When enabled, the video will automatically replay after it finishes.
@@ -224,6 +228,10 @@ The **YouTubePlayer** widget in FlutterFlow allows you to integrate and play Y
 ## PdfViewer
 
 In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within your app, supporting both network URLs and locally uploaded assets. Refer to the [**Displaying Media**](#media-types) section for more details.
+
+:::tip[Generated Code]
+The PdfViewer in FlutterFlow uses the [**pdfx**](https://pub.dev/packages/pdfx) package for rendering PDFs.
+:::
 
 **Customization Options**
 
@@ -257,7 +265,7 @@ https://console.cloud.google.com/home/dashboard?cloudshell=true&project=FIREBASE
 1. If prompted, click **Continue**.
 2. You should see a terminal at the bottom of the screen. If your project ID is not displayed in yellow, click the **down arrow** (🔽) next to the project name and select the correct Firebase project.
     
-![cors-2](imgs/cors-2.png)
+![cloud-shell](imgs/cloud-shell.avif)
     
 **Step 3: Run the CORS Configuration Command**
 
