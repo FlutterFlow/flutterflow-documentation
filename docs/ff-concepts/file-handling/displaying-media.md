@@ -36,7 +36,9 @@ To handle scenarios where media takes time to load or fails to load, you can set
 
 ### Asset
 
-Use this option to upload media from your computer or select previously uploaded assets.
+You can also display media files uploaded to your [**Assets**](../../generated-code/directory-structure.md#assets). Assets are resources such as images, videos, documents, fonts, and other files that you include in your project. To upload assets, click on **Media Assets** in the left-side navigation menu and add files directly from your device. Alternatively, you can directly upload and display files when configuring media widgets by clicking the upload icon.
+
+![select-from-assets](imgs/select-from-assets.avif)
 
 ### Uploaded File
 
