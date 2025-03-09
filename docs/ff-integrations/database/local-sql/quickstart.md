@@ -56,6 +56,12 @@ com/embed/c5f43ee65e954df2856d78e035ab8bba?sid=fcaccfa1-fb0c-4f67-9953-d51e7227e
 
 <p></p>
 
+:::caution
+Use caution when defining column names in SQLite databases. Some common reserved words such as `type` and `data` will cause build errors.
+:::
+
+<p></p>
+
 :::info[Important to note]
 SQLite does not have dedicated date-time or boolean data types. For storing date-time values like `DueDate`, we use the integer data type and represent the date-time as a [**UNIX timestamp**](https://www.unixtimestamp.com/). Similarly, for boolean values, such as checking if a note is completed, SQLite uses integers where `0` represents `false` (or not completed) and `1` represents `true` (or completed).
 :::
