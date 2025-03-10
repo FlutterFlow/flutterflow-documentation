@@ -202,6 +202,10 @@ It's important to note that these resources show up where they are instantiated.
 
 This ensures that only relevant resources are shown where they are needed, optimizing performance and discoverability.
 
+:::tip[Access Library Components in Custom Code]
+When your project includes a library dependency, you can use its components—such as Library App State, Library Values, Library Custom Code resources, etc.—in your custom code. Explore the **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#access-library-components-in-custom-code)** directory for reference.
+:::
+
 ![access-library-resources.avif](imgs/access-library-resources.avif)
 
 ## Library Versioning
@@ -325,7 +329,7 @@ To set library values, navigate to **Settings and Integrations > Project Setup >
 <p></p>
 
 :::tip
-For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#use-environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
+For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
 :::
 
 ## Libraries with Firebase
@@ -365,7 +369,7 @@ Yes, you can add and import a Marketplace project as a library.
 <details>
 <summary>How do libraries work with themes (design systems)?</summary>
 <p>
-By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#use-library-as-design-system) page.
+By default, the design system of the parent project takes precedence over the imported library's design system. If you want to use a library's design system, you must [**select or set the library in the Design System**](../../ff-concepts/design-system/design-system.md#adding-design-system) page.
 </p>
 </details>
 

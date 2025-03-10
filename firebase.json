@@ -1975,7 +1975,7 @@
       },
       {
         "source": "/marketplace/creators-hub/submitting-an-item-for-review",
-        "destination": "/marketplace/creators-hub/submit-item-for-reivew",
+        "destination": "/marketplace/creators-hub/submit-item-for-review",
         "type": 301
       },
       {
@@ -2346,6 +2346,16 @@
       {
         "source": "/concepts/alerts-notification/one-signal",
         "destination": "/concepts/notifications/one-signal",
+        "type": 301
+      },
+      {
+        "source": "/concepts/state-management/generated-code",
+        "destination": "/generated-code/state-management",
+        "type": 301
+      },
+      {
+        "source": "/marketplace/creators-hub/submit-item-for-reivew",
+        "destination": "/marketplace/creators-hub/submit-item-for-review",
         "type": 301
       }
     ]

@@ -35,7 +35,7 @@ import '/auth/firebase_auth/auth_util.dart';
 ```
 
 ::: 
-### Accessing FlutterFlow Generated Classes
+### Access FlutterFlow Generated Classes
 
 FlutterFlow generates a complete Flutter codebase for you as you build apps in its platform. Part of this code includes custom classes that are designed to streamline common tasks and encapsulate reusable properties or logic.
 
@@ -78,7 +78,7 @@ When referencing a Component class in your code, FlutterFlow will automatically 
 ![return-widget-custom-code.png](imgs/return-widget-custom-code.png)
 
 
-### Accessing FlutterFlow Theme in Custom Widget
+### Get FlutterFlow Theme in Custom Widget
 
 When building custom widgets, you often need to style parts of the widget, such as setting colors. Instead of using hardcoded color values, you can directly access the **FlutterFlow Theme**. This theme provides consistent styling across your app and reflects colors set by you or your project developer.
 
@@ -128,18 +128,17 @@ class _CustomButtonState extends State<CustomButton> {
   }
 }
 ```
-:::info
-Find the list of colors, 
 
-### Manipulating AppState from Custom Code
 
-In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The FFAppState class also provides additional helper functions to manipulate AppState variables. Let’s look at some examples: 
+### Modifying AppState from Custom Code
+
+In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples: 
 
 :::tip[Imports]
 Ensure you import `import '../../flutter_flow/flutter_flow_util.dart';` when accessing `FFAppState` in custom code resources.
 :::
 
-- **Accessing AppState in Custom Code** 
+- **Get AppState value in Custom Code** 
 
 ```js
 
@@ -218,7 +217,7 @@ final newProduct = ProductStruct(
 
 ```
 
-#### Example 2: Accessing Properties of an Existing `ProductStruct` object
+#### Example 2: Get Properties of an Existing `ProductStruct` object
 
 If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. 
 
@@ -230,7 +229,7 @@ This function retrieves and returns the product's name. The return type is `Stri
 ```js
 // Function to return the product name from a ProductStruct instance
 String? getProductName(ProductStruct product) {
-    // Access and return the product name
+    // Get and return the product name
     return product.name;
 }
 ```
@@ -345,4 +344,95 @@ Here’s a list of other Firebase Auth variables that can be referenced in Custo
 - `currentUserEmailVerified` – Boolean indicating if the user’s email is verified.
 
 - These variables make it easy to integrate Firebase Auth data into custom functionality, enhancing the user experience.
+
+
+### Get Dev Environment Values in Custom Code
+
+Similar to `FFAppState`, FlutterFlow generates a singleton `FFDevEnvironmentValues` class in your FlutterFlow generated codebase, if you are using **[Dev Environments](../../testing-deployment-publishing/development-environments/development-environments.md)**. This class can also be accessed from custom code if needed. It is generated based on the environment selected by the user at the time of code generation.
+
+To access any Dev Environment values in custom code, simply use:
+
+```js
+Future getWebhookId() async {
+  // Add your function code here!
+  return FFDevEnvironmentValues().webhookId;
+}
+```
+
+### Access Library Components in Custom Code
+
+When using a library dependency in your project, you can also access its components, such as Library App State, Library Values, and Library Widgets, in the user project's custom code. Here are a few examples:
+
+#### Get Library Values 
+
+Similar to `FFAppState` or `FFDevEnvironmentValues` class, FlutterFlow generates a singleton `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
+
+To access Library Values directly in custom code:
+
+```js
+Future getSchema(StateStruct? syncStatus) async {
+  print(FFLibraryValues().schema);
+}
+```
+
+#### Get Library Custom Code 
+
+When you add a library dependency to your FlutterFlow project, FlutterFlow automatically includes necessary imports, allowing you to utilize custom code resources from the library project in your user project's custom code files.
+
+For example, if you have a library with project ID `library_hybw3o`, FlutterFlow will add the following import to your project:
+
+```js
+import 'package:library_hybw3o/flutter_flow/custom_functions.dart' as library_hybw3o_functions;
+```
+
+
+Now, let's use the library’s custom functions in the user project's custom function:
+
+```js
+int getRandomIndex(List<int> indexList) {
+    final item = library_hybw3o_functions.getRandomItem(); // Library's custom function
+    // get Random Index
+    final randomNumber = math.Random();
+    return ...
+}
+```
+
+#### Manually Add Library Imports
+If the library import doesn’t appear in your project automatically, you can manually add it and assign a custom alias. For example, to import a library’s custom actions into your project’s Custom Widget resource, add the import yourself as shown below:
+
+For example, let's import the library's custom actions into the user project's Custom Widget resource.
+
+If the import is not already available, you can add it manually as follows:
+
+```js
+// Custom import
+import 'package:library_hybw3o/custom_code/actions/index.dart' as library_hybw3o_actions; // Assigning a custom alias to the import
+
+// Example Widget code
+class CustomDialog extends StatefulWidget {
+  const CustomDialog({
+    super.key,
+    this.width,
+    this.height,
+  });
+
+  final double? width;
+  final double? height;
+
+  @override
+  State<CustomDialog> createState() => _CustomDialogState();
+}
+
+class _CustomDialogState extends State<CustomDialog> {
+    @override
+    void initState() {
+        library_hybw3o_actions.getSchema(StateStruct()); // calling library custom action
+        super.initState();
+    }
+    @override
+        Widget build(BuildContext context) {
+            return Container(height: 50, width: 50);
+    }
+}
+```
 

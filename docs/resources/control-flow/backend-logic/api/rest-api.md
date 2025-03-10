@@ -568,7 +568,7 @@ with a numeric character. However, in cases where you have keys with numeric pre
 Learn more about **[JSONPath](https://www.rfc-editor.org/rfc/rfc9535.html)** and how to define a proper expression.
 :::
 
-### Adding JSON Path
+### Add JSON Predefined Path
 You can effortlessly define and manage **JSON Paths** for your API calls in FlutterFlow to parse and extract the data you need. Once added you can [use](#using-json-path) them as **Predefined Path** while accessing the **JSON Body**.
 
 First, [create and test](../api/create-test-api-calls.md) your API call. Inside the **JSON Paths** section, click **+ Add JSON Path**, enter your **JSON Path**, and assign it a name. If the expression is valid, a preview of the response appears under **Response Preview**. Click the **Preview** icon to see the full response. If the response contains a list of items, the **Is List** option will be enabled automatically.
@@ -604,7 +604,7 @@ Under the **Recommended** section, you'll find suggested JSON paths that might c
 
 ### Using JSON Path
 
-While accessing values from an API Call, you can either enter the custom JSON path or use the [predefined JSON path](#adding-json-path).
+While accessing values from an API Call, you can either enter the custom JSON path or use the [predefined JSON path](#add-json-predefined-path).
 
 To use a predefined JSON Path, first, select your API response. Then, set the **API Response Options** to **JSON Body** and the **Available Options** to **JSON Path** or **Predefined Path**. Finally, specify the JSON Path Name or select from the predefined JSON Path to map the extracted data for use in your app.
 
@@ -639,16 +639,16 @@ To use a predefined JSON Path, first, select your API response. Then, set the **
 
 You can make the API call private and change the proxy settings using advanced settings.
 
-### Making an API call private
+### Private API Calls
 
 Making an API call private is helpful if it uses tokens or secrets you don't want to expose in your app. Enabling this setting will route this API call securely via the Firebase Cloud Functions.
 
-To make the API call private, open the **Advanced Settings** tab, turn on the **Make Private** toggle, Click **Save,** and then **Deploy APIs**.
+![private-cloud-func.png](imgs/private-cloud-func.png)
+
+To make an API Call Private, open the **Advanced Settings** tab, turn on the **Make Private** toggle, Click **Save,** and then **Deploy APIs**.
 
 Optionally, you can force a user to be authenticated via the Firebase authentication to make this API call. To do so, turn on the **Require Authentication** toggle.
 
-
-:::info
 
 Private APIs are deployed as [**Cloud Functions**](https://firebase.google.com/docs/functions) within your Firebase project. While deploying, you can configure the following options:
 
@@ -659,7 +659,7 @@ Private APIs are deployed as [**Cloud Functions**](https://firebase.google.com/d
     
     **Note**: To minimize costs, you can set the **Min Instances** value to 0. For detailed pricing information, refer to the [**Cloud Functions Pricing page**](https://cloud.google.com/functions/pricing-overview).
   
-:::
+
 
 <div style={{
     position: 'relative',

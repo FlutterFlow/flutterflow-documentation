@@ -4,6 +4,7 @@ title: Development Environments
 description: Learn how to create and leverage development environments in FlutterFlow.
 tags: [Dev Environments, Backend, Testing]
 sidebar_position: 2
+toc_max_heading_level: 4
 keywords: [Dev, Development, Environments, FlutterFlow, Backend]
 ---
 
@@ -54,14 +55,15 @@ You can create and switch environments in the **Dev Environments** page in **App
 </div>
 <p></p>
 
-The selected environment is used to generate the proper app code when you run, test, deploy or export your app. The only things that change between environment are the [Firebase Project](#configuring-firebase-or-supabase-for-each-environment) or variables that are tied to [Environment Values](#use-environment-values)
+The selected environment is used to generate the proper app code when you run, test, deploy or export your app. The only things that change between environment are the [Firebase Project](#configuring-firebase-or-supabase-for-each-environment) or variables that are tied to [Environment Values](#environment-values)
 
 
-### Use Environment Values
+### Environment Values
 Environment Values can be used to dynamically change parts of your app's code based on the environment that is being used. 
 
 For example, in an e-commerce app, you might define an `apiUrl` Environment Value that points to different API URLs for Development, Staging, and Production. This allows you to test new features without affecting the live production environment, where real customer orders are processed.
 
+#### Use Environment Value
 Let's see an example of creating and using `apiUrl`:
 
 <div style={{
@@ -90,15 +92,31 @@ Let's see an example of creating and using `apiUrl`:
 </div>
 <p></p>
 
-:::info
-After switching to an environment, FlutterFlow generates code specific to that environment, for any of the following interactions:
+:::tip[Generated Code]
+When you switch to an environment, FlutterFlow generates code specific to that environment, for any of the following interactions:
 - Test / Run mode sessions
 - Local Run
 - Code export
 - Deployment
 
-You also may see different project errors depending on which environment you have selected.
+You may also encounter different project errors depending on the selected environment.
+
+In the generated code, FlutterFlow creates two files:
+
+- `environment.json` – Stores the environment values defined by the user in FlutterFlow.
+- `FFDevEnvironmentValues` class – A singleton class that holds a single instance of the `FFDevEnvironmentValues` object. It includes initialization logic and getters for accessing these environment values. They can also be referenced in your custom code resources. See **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#get-dev-environment-values-in-custom-code)**. 
 :::
+
+#### Private Environment Values
+
+You can mark environment values as private when they contain sensitive information that should not be exposed in the client-side code. **Private** environment values are not included in the generated code.
+
+Currently, the only way to use a private environment value is as a variable in a private API call. Since private API calls are routed through a Cloud Function, the variable value remains hidden from any client-side requests made by the app.
+
+:::tip[Generated Code]
+For private environment values, the generated code does not include these values in the `environment.json` file, and no getter logic is created in the `FFDevEnvironmentValues` class.
+:::
+
 
 ### Configuring Firebase or Supabase for each Environment
 A single FlutterFlow project can have **multiple environments**, each mapped to its **own Firebase or Supabase project**. This ensures that environments like `Development`, `Staging`, and `Production` remain independent, giving you better control over your app's data and behavior throughout different stages of development.
@@ -154,6 +172,8 @@ Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, 
 It's recommended that you keep schemas consistent between the different Supabase environments. It's also recommended that you
 **Get Schema** from the Production environment and build from there.
  :::
+
+
 
 
 
