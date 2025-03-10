@@ -1,7 +1,7 @@
 ---
 title: OneSignal
-slug: /concepts/alerts-notification/one-signal
-sidebar_position: 3
+slug: /concepts/notifications/one-signal
+sidebar_position: 2
 tags: [Actions, Alerts & Notifications, Integration]
 keywords: [FlutterFlow, Actions, Alerts & Notifications, OneSignal]
 ---
@@ -50,7 +50,7 @@ To enable OneSignal in FlutterFlow:
 2. Switch on the **Enable OneSignal** toggle.
 
 3. Gather your credentials:
-   - *App ID**: Find this in your OneSignal dashboard under **Settings > Keys & IDs > 
+   - **App ID**: Find this in your OneSignal dashboard under **Settings > Keys & IDs > 
       OneSignal App ID**.
    - **API Key**: Located in the same section as the App ID, under **Rest API Key**.
    - **User Key**: Go to your user profile icon, then **Account & API Keys > User Auth Key**.

@@ -268,24 +268,6 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 <p></p>
 
 
-## Update App Badge Count (iOS only) [Action]
-This action enables you to display a badge icon with counts over iOS app icons. For example, you could use this action to show unread messages, today's reminders, or upcoming events.
-
-:::info[Platform Support]
-In Android, badges automatically appear on app icons with push notifications. We would like to add this functionality for iOS. However, we are blocked by [**this**](https://github.com/firebase/flutterfire/issues/9563) issue. Therefore, iOS badge counts need to be configured manually using the action shown below.
-:::
-![badge-count-demo.png](img%2Fbadge-count-demo.png)
-
-Follow the steps below to add this action to any widget.
-
-1. Select the Widget (e.g., Container, Button, etc.) on which you want to add the action. However, you would probably chain this action after something happens in your app. 
-2. Select Actions from the Properties panel (the right menu), and click Open. This will open an Action Flow Editor in a new popup window. 
-3. Click on the **+ Add Action**. 
-4. On the right side, search and select the Update App Badge Count (under Alerts/Notifications) action. 
-5. Set the Badget Count Value.
-
-![badge-count.png](img%2Fbadge-count.png)
-
 ## Copy to Clipboard [Action]
 Using this action, you can allow users to copy a particular text from your app. For example, copying a message or transaction ID and then pasting it into another application.
 

@@ -1,6 +1,6 @@
 ---
 title: Haptic Feedback
-slug: /concepts/alerts-notification/haptic-feedback
+slug: /concepts/alerts/haptic-feedback
 sidebar_position: 4
 tags: [Actions, Alerts & Notifications]
 keywords: [FlutterFlow, Actions, Alerts & Notifications, Haptic Feedback]
