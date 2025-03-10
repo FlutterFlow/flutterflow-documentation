@@ -231,6 +231,28 @@ In this action, you can decide who should receive the push notification by setti
 
 ![trigger push notifications](imgs/trigger-pn.avif)
 
+## Update App Badge Count (iOS only) [Action]
+
+The **Update App Badge Count** action lets you manually display a numeric badge on your **iOS app icon**. This badge typically indicates pending tasks or updates, such as unread messages, notifications, or reminders.
+
+:::info[Platform Support]
+In Android, badges automatically appear on app icons with push notifications. We would like to add this functionality for iOS. However, we are blocked by [**this**](https://github.com/firebase/flutterfire/issues/9563) issue. Therefore, it is important to note that this action **does not automatically set the badge count** when receiving a push notification in iOS—rather, it must be triggered manually while your app is running.
+
+:::
+
+![badge-count](imgs/badge-count.avif)
+
+:::tip[possible use cases]
+
+- In a **messaging app**, you might manually increment the badge count each time a new chat message arrives while the user has the app open or decrease it as they read the messages.
+- In an **email app**, you could manually update the badge count each time a new email arrives while the user is actively using the app and decrease it as emails are opened or marked as read.
+- In a **calendar app**, you might set the badge count to reflect the number of upcoming events for the day, incrementing or decrementing it based on the user's interactions or changes in their schedule.
+:::
+
+To implement, simply enter the number of **Badge Count** the app should display on the home screen icon.
+
+![set-app-badge-count-ios](imgs/set-app-badge-count-ios.avif)
+
 
 ## FAQs
 
@@ -251,7 +273,3 @@ Also, ensure that these principals (emails) and their roles are present in the p
 Below is a sample image for App Engine Default service account.
 ![pn-faq-img-2](imgs/pn-faq-img-2.png)
 </details>
-
-
-
-

@@ -2337,6 +2337,16 @@
         "source": "/concepts/alerts-notification/haptic-feedback",
         "destination": "/concepts/alerts/haptic-feedback",
         "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/push-notifications",
+        "destination": "/concepts/notifications/push-notifications",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/one-signal",
+        "destination": "/concepts/notifications/one-signal",
+        "type": 301
       }
     ]
   }
