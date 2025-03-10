@@ -104,7 +104,7 @@ You may also encounter different project errors depending on the selected enviro
 In the generated code, FlutterFlow creates two files:
 
 - `environment.json` – Stores the environment values defined by the user in FlutterFlow.
-- `FFDevEnvironmentValues` class – A singleton class that holds a single instance of the `FFDevEnvironmentValues` object. It includes initialization logic and getters for accessing these environment values. They can also be referenced in your custom code resources. See **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md)**. 
+- `FFDevEnvironmentValues` class – A singleton class that holds a single instance of the `FFDevEnvironmentValues` object. It includes initialization logic and getters for accessing these environment values. They can also be referenced in your custom code resources. See **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#get-dev-environment-values-in-custom-code)**. 
 :::
 
 #### Private Environment Values

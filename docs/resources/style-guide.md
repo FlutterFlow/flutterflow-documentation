@@ -90,6 +90,8 @@ When naming custom data types and enums, use **UpperCamelCase** for consistency 
 - **Don’t Mix Naming Conventions for Enums:** Maintain consistent capitalization between enum names and their values. Bad Example: `enum UserRole { Admin, EDITOR, viewer }`
 :::
 
+For datatype fields, we use the same convention as [State variables](#variables). 
+
 ### Constants
 
 Flutter prefers using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. Use **SCREAMING_SNAKE_CASE** only when contributing to global or legacy projects where it is already in use.
@@ -104,9 +106,9 @@ Flutter prefers using a lowercase `k` prefix for constants to indicate their imm
 - **Don’t Use Vague or Generic Names:** Avoid using names that fail to describe the purpose of the constant. Bad Examples: `VALUE`, `DATA`, `X`, `Y`.
 :::
 
-### State Variables 
+### Variables
 
-State variable names follow the **lowerCamelCase** naming style to align with Dart's conventions.
+State variable & Data Type field names follow the **lowerCamelCase** naming style to align with Dart's conventions.
 
 :::tip[Do's]
 - **Be Descriptive and Clear:** Use variable names that clearly describe their purpose, avoiding generic or vague terms. Examples: `isFormValid`, `errorMessage`, `availableProducts`.
@@ -117,7 +119,7 @@ State variable names follow the **lowerCamelCase** naming style to align with Da
 :::danger[Don'ts]
 - **Don’t Use Abbreviations or Single Letters:** Avoid abbreviations or single-character names that obscure the variable's intent. Bad Examples: `usrNm`, `f`, `cnt`.
 - **Don’t Use Generic Names:** Avoid using generic terms that do not convey the variable’s purpose. Bad Examples: `data`, `value`, `temp`.
-- **Don’t Start State Variables with Uppercase:** Follow Dart conventions by starting variable names with lowercase. Bad Examples: `UserName`, `IsLoading`.
+- **Don’t Start Variables with Uppercase:** Follow Dart conventions by starting variable names with lowercase. Bad Examples: `UserName`, `IsLoading`.
 :::
 
 ## Function Naming Convention
