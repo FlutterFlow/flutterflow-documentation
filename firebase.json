@@ -2324,6 +2324,51 @@
         "type": 301
       },
       {
+        "source": "/concepts/file-handling/audio-player",
+        "destination": "/concepts/file-handling/displaying-media#audioplayer",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/audio-recording",
+        "destination": "/concepts/file-handling/displaying-media#audio-recording",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/play-stop-sound",
+        "destination": "/concepts/file-handling/displaying-media#play-or-stop-sound",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/video-player",
+        "destination": "/concepts/file-handling/displaying-media#videoplayer",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/youtube-player",
+        "destination": "/concepts/file-handling/displaying-media#youtubeplayer",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/pdf-viewer",
+        "destination": "/concepts/file-handling/displaying-media#pdfviewer",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/upload-data",
+        "destination": "/concepts/file-handling/uploading-files",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/upload-save-file",
+        "destination": "/concepts/file-handling/uploading-files#upload-or-save-file-action",
+        "type": 301
+      },
+      {
+        "source": "/concepts/file-handling/upload-save-media",
+        "destination": "/concepts/file-handling/uploading-files#upload-or-save-media-action",
+        "type": 301
+      },
+      {
         "source": "/concepts/state-management/generated-code",
         "destination": "/generated-code/state-management",
         "type": 301
