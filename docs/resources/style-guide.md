@@ -90,7 +90,7 @@ When naming custom data types and enums, use **UpperCamelCase** for consistency 
 - **Don’t Mix Naming Conventions for Enums:** Maintain consistent capitalization between enum names and their values. Bad Example: `enum UserRole { Admin, EDITOR, viewer }`
 :::
 
-For datatype fields, we use the same convention as [State variables](#state-variables). 
+For datatype fields, we use the same convention as [State variables](#variables). 
 
 ### Constants
 
@@ -106,7 +106,7 @@ Flutter prefers using a lowercase `k` prefix for constants to indicate their imm
 - **Don’t Use Vague or Generic Names:** Avoid using names that fail to describe the purpose of the constant. Bad Examples: `VALUE`, `DATA`, `X`, `Y`.
 :::
 
-### State Variables & Data Type Fields
+### Variables
 
 State variable & Data Type field names follow the **lowerCamelCase** naming style to align with Dart's conventions.
 
