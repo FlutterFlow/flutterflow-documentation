@@ -31,7 +31,7 @@ You can upload media to a **Supabase bucket** at a specified location. After the
 
 ### Local Upload (Widget State)
 
-This method initially stores your media on the device, making it accessible via **Widget State > Uploaded Local File**. You can preview, edit, or process the file before uploading it to a permanent storage.
+This method initially stores your media on the device, making it accessible via **Widget State > Uploaded Local File**. You can preview, edit, or process the file before uploading it to a cloud storage.
 
 ![upload-type-local-and-api.avif](imgs/upload-type-local-and-api.avif)
 
@@ -151,14 +151,14 @@ Check out our YouTube video for a detailed explanation of the **Upload or Save M
 
 You can also save the media file temporarily on the device before uploading it to cloud storage by setting the **Upload Type** to [**Local Upload**](#local-upload-widget-state). This saves the file in Bytes, allowing you to preview, edit, or process it before finalizing the upload.
 
-Once the file is uploaded to the device, you can do various things with it:
+Once the file is uploaded to the device, you can do the following:
 
-- **Preview or Validate the Media**: Show the user an in-app preview before deciding whether to finalize or discard the upload.
+- **Preview or Validate the Media**: Show the user an in-app preview before they decide whether to finalize or discard the upload.
 
 - **Editing Before Submission**: In social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
 - **Perform Data Operations**: In document scanning apps, users capture images of documents, which are temporarily stored on the device. The app accesses the file bytes to apply OCR (Optical Character Recognition), enhance contrast, or convert the image to PDF before uploading the final processed file to cloud storage.
 - **Offline Functionality**: Store the media locally and defer uploading until the user regains internet access.
-- **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL if you plan to display it later.
+- **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL in your database if you plan to display it later.
 
 Here are some examples of uploading a file to a device and using it in different scenarios:
 
