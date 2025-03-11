@@ -33,6 +33,8 @@ A list of all the available global properties is as follows:
 
 - **Current Device Location:** Returns the user's current location, ideal for updating their position on Google Maps or storing it in a backend database. [Check out examples](#current-device-location) on how to retrieve and save the current device location.
 
+- **Link To Current Page:** Provides the [Deep Link](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#deep-link) of the current page.
+
 - **Current Route Path**: Provides the route name of the currently active or visible page in your app. This property is especially helpful in scenarios where you want to adjust or block specific actions if the active page isn't the one you expect. For example, if you launch the app through a push notification, the home page might still run in the background, even if the notification directs you to a different page. Using this property, you can prevent unnecessary action triggers, such as On Page Load from the home page. See details on avoiding [this issue](https://github.com/FlutterFlow/flutterflow-issues/issues/2765#issuecomment-2598915946).
 - **Current Route Stack:** Returns a list of route names representing every active page in your app’s navigation stack. It’s helpful for understanding how many pages deep the user is and what sequence of pages they’ve visited. You may need this data to manage custom back navigation, breadcrumb displays, or logging analytics. For instance, in an e-commerce app, you could examine the route stack to see if the user arrived at the checkout page from a specific page and tailor your promotional messages or apply discount accordingly.
 - **Fraction of Screen Width:** Determines the proportional width of the device's screen.
