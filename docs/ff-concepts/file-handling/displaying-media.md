@@ -36,7 +36,13 @@ To handle scenarios where media takes time to load or fails to load, you can set
 
 ### Asset
 
-You can also display media files uploaded to your [**Assets**](../../generated-code/directory-structure.md#assets). Assets are resources such as images, videos, documents, fonts, and other files that you include locally in your project. To upload assets, click on **Media Assets** in the left-side navigation menu and add files directly from your device. Alternatively, you can directly upload and display files when configuring media widgets by clicking the upload icon.
+You can also display media files uploaded to your **Assets**. Assets are resources such as images, videos, documents, fonts, and other files that you include locally in your project. To upload assets, click on **Media Assets** in the left-side navigation menu and add files directly from your device. Alternatively, you can directly upload and display files when configuring media widgets by clicking the upload icon.
+
+:::tip
+For more details on how assets are stored in your project, see the directory [**Assets**](../../generated-code/directory-structure.md#assets) in the generated code.
+:::
+
+
 
 ![select-from-assets](imgs/select-from-assets.avif)
 
@@ -51,7 +57,7 @@ You can also access media files within your app that are stored temporarily in y
 The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
 :::tip[Generated Code]
-The AudioPlayer uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for mobile and [**assets_audio_player_web**](https://pub.dev/packages/assets_audio_player_web) for web.
+The AudioPlayer widget in FlutterFlow uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for audio playback.
 :::
 
 **Customization Options**
@@ -189,12 +195,7 @@ This action is enabled only when you have added a [**Play Sound**](#play-sound-
 The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
 :::tip[Generated Code]
-The VideoPlayer uses several packages to ensure reliable video playback across different platforms:
-
-- [**video_player**](https://pub.dev/packages/video_player): Provides core functionality for video playback from assets or network sources.
-- [**video_player_android**](https://pub.dev/packages/video_player_android): Ensures smooth playback specifically for Android devices.
-- [**video_player_avfoundation**](https://pub.dev/packages/video_player_avfoundation): Integrates with Apple's AVFoundation framework for playback on iOS devices.
-- [**video_player_web**](https://pub.dev/packages/video_player_web): Enables video playback support for web browsers.
+The VideoPlayer uses the [**video_player**](https://pub.dev/packages/video_player) package for reliable video playback across different platforms.
 :::
 
 **Customization Options**
