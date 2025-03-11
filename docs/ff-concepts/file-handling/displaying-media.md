@@ -42,7 +42,7 @@ You can also display media files uploaded to your [**Assets**](../../generated-c
 
 ### Uploaded File
 
-You can access media files within your app without uploading them anywhere. For example, if you'd like to preview an image before sending it to cloud storage, you can do so by setting the source to **Widget State -> Uploaded Local File**.
+You can also access media files within your app that are stored temporarily in your application. For example, if you'd like to preview an image before sending it to cloud storage, you can do so by setting the source to **Widget State -> Uploaded Local File**.
 
 ![dm-local-upload.avif](imgs/dm-local-upload.avif)
 
