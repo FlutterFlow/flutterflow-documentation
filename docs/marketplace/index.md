@@ -14,7 +14,7 @@ FlutterFlow's Marketplace is a dynamic platform designed to enhance your app dev
 In the FlutterFlow Marketplace, you can [add and purchase](adding-purchasing-item.md) items to quickly integrate into your projects, significantly reducing development time. The Marketplace is curated to ensure high-quality resources, with contributions from a diverse community of developers and designers.
 
 ## Becoming a Contributor
-If you're interested in contributing to the Marketplace, the [creator hub](creators-hub/creators-hub.md) is your starting point. Here, you can learn about [submitting items for review](creators-hub/submit-item-for-reivew.md), [submission criteria](creators-hub/submission-criteria.md), and [legal guidelines](creators-hub/legal-guidelines-for-creators.md) for creators. Ensuring your submissions adhere to these guidelines helps maintain the quality and integrity of the Marketplace.
+If you're interested in contributing to the Marketplace, the [creator hub](creators-hub/creators-hub.md) is your starting point. Here, you can learn about [submitting items for review](creators-hub/submit-item-for-review.md), [submission criteria](creators-hub/submission-criteria.md), and [legal guidelines](creators-hub/legal-guidelines-for-creators.md) for creators. Ensuring your submissions adhere to these guidelines helps maintain the quality and integrity of the Marketplace.
 
 ## Protecting Your Work
 Understanding and navigating [copyright (DMCA process)](creators-hub/copyright-dmca-process.md) is crucial for both creators and users. The Marketplace provides clear instructions on how to handle copyright issues, ensuring that intellectual property rights are respected.
