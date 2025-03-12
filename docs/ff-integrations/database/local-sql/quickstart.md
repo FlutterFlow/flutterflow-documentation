@@ -49,18 +49,17 @@ If you don't yet have an SQLite database, you can easily create one using tools 
 
 For this example, we'll create a "Notes" table with `ID`, `Title`, `Details`, `DueDate`, and `IsCompleted` as columns.
 
+:::warning
+It is advisable to avoid using SQLite reserved keywords as column names to prevent potential build errors or unexpected behavior. SQLite reserves certain words for its SQL syntax, and using these as identifiers without proper handling may cause issues. For a comprehensive list of reserved keywords, refer to the [SQLite documentation](https://sqlite.org/lang_keywords.html).
+:::
+
 Here's how you can create and configure the database:
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/c5f43ee65e954df2856d78e035ab8bba?sid=fcaccfa1-fb0c-4f67-9953-d51e7227e596" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
 <p></p>
 
-:::caution
-Use caution when defining column names in SQLite databases. Some common reserved words such as `type` and `data` will cause build errors.
-:::
 
-<p></p>
 
 :::info[Important to note]
 SQLite does not have dedicated date-time or boolean data types. For storing date-time values like `DueDate`, we use the integer data type and represent the date-time as a [**UNIX timestamp**](https://www.unixtimestamp.com/). Similarly, for boolean values, such as checking if a note is completed, SQLite uses integers where `0` represents `false` (or not completed) and `1` represents `true` (or completed).
