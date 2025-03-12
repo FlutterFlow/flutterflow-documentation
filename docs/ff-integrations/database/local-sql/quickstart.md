@@ -50,7 +50,7 @@ If you don't yet have an SQLite database, you can easily create one using tools 
 For this example, we'll create a "Notes" table with `ID`, `Title`, `Details`, `DueDate`, and `IsCompleted` as columns.
 
 :::warning
-It is advisable to avoid using SQLite reserved keywords such as `type` and `data` as column names to prevent potential build errors or unexpected behavior. SQLite reserves certain words for its SQL syntax, and using these as identifiers without proper handling may cause issues. For a comprehensive list of reserved keywords, refer to the [**SQL reserved words**](https://en.wikipedia.org/wiki/List_of_SQL_reserved_words).
+It is advisable to avoid using any SQL reserved keywords such as `type` and `data` as column names to prevent potential build errors or unexpected behavior. SQLite reserves certain words for its SQL syntax, and using these as identifiers without proper handling may cause issues. For a comprehensive list of reserved keywords, refer to the [**SQL reserved words**](https://en.wikipedia.org/wiki/List_of_SQL_reserved_words).
 :::
 
 Here's how you can create and configure the database:
