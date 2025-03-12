@@ -155,7 +155,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 <details>
   <summary>Mac/Linux</summary>
   <div>
-   ```keytool -list -v \ -alias androiddebugkey -keystore ~/.android/debug.keystore``` 
+   ```keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore``` 
   </div>
 </details>
 
