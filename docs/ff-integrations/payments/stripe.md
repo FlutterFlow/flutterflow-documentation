@@ -266,7 +266,7 @@ Before you release the app to production, complete the following steps:
     
     1. **Stripe Settings Adjustment**: In FlutterFlow's Stripe settings, verify the Merchant country code is a 3-digit code, like "USA" instead of "US". If needed, remove previously deployed functions in the Firebase console and redeploy them after updating the country code.
     2. **User Authentication Requirement**: Stripe payments require an authenticated user session. Ensure you're attempting the Stripe action after a user has successfully logged in to the app.
-    3. **Cloud Functions Permissions**: Check that your cloud functions have the 'Cloud Functions Invoker' permission set for allUsers in the Google Cloud console. This permission is typically assigned by default, but it's good practice to double-check.
+    3. **Cloud Functions Permissions**: Check that your cloud functions have the **Cloud Functions Invoker** permission set for **allUsers** in the Google Cloud console. To do this, go to the Cloud Console, directly search for the **initStripePayment** function, open the function, switch to the **Permissions** tab, and confirm the permissions status. This permission is typically assigned by default, but it's good practice to double-check.
         
     ![unknown-error-occured](imgs/unknown-error-occured.avif)
 </p>
