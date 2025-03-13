@@ -57,7 +57,7 @@ To add a semantic label for any widget, select the widget, move to the propertie
 </div>
 <p></p>
 
-Moreover, to add a semantic label for every widget in your app that has an action trigger `OnTap` or `onLongPress`, you can enable the **Add Warning for Semactic Widgets**. By doing so, you'll get a warning if any widget has action but doesn't have a semantic label added yet.
+Moreover, to add a semantic label for every widget in your app that has an action trigger `OnTap` or `onLongPress`, you can enable the **Add Warning for Semantic Widgets**. By doing so, you'll get a warning if any widget has an action but doesn't have a semantic label added yet.
 
 :::tip
 
