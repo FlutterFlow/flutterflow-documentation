@@ -59,7 +59,7 @@ You can add a description for each of the following resources in FlutterFlow:
 - **Data Type**: Summarizes the purpose of a custom data model. Example: "Represents a user’s order including items, total cost, and status."
 - **Parameters**: Provide context for how a parameter is used, including expected data types or value ranges. Example: "String to store the user’s phone number—must include country code."
 - **Page/Component State Variables**: Clarify what state data is being stored and why. For instance, "Tracks the currently selected tab in this component."
-- **App State Variables**: Describe the global data shared across pages. Example: “Stores the user’s authentication token for all network requests”.
+- **App State Variables**: Describe the global data shared across pages. Example: "Stores the user’s authentication token for all network requests".
 - **Constant**: Add the intended purpose of any fixed value used throughout the app. Example: "Base API URL for all network calls".
 - **Enum**: Provide a rationale for the enumerated values. Example: "Defines possible user roles—admin, editor, viewer".
 - **Firestore Collection**: Explain what data the collection holds and how it relates to your app’s functionality. Example: "Stores all user profiles with fields for name, email, and profile photo URL".
