@@ -4,11 +4,11 @@ title: Resource Hierarchy Overview
 description: Explore the Resource Hierarchy Overview to understand the correlation between traditional Flutter app components and their equivalents in FlutterFlow.
 tags: [Resource Hierarchy, FlutterFlow, Project Management]
 sidebar_position: 5
-keywords: [Resource Hierarchy, FlutterFlow, Project Management]
+keywords: [Resource Hierarchy, FlutterFlow, Project Management, Resource Description]
 ---
 
 
-# Resource hierarchy overview
+# Resource Hierarchy Overview
 
 This guide aims to help you understand the structure and elements of a typical FlutterFlow project. It will walk you through some important parts of the app, from the overall project down to individual design elements, explaining their purpose and how they relate to traditional Flutter app components.
 
@@ -35,3 +35,45 @@ If you are coming from Flutter, it is beneficial for you to understand the Flutt
 3. **Column, Button, Text to Built-in widgets**: In FlutterFlow, widgets are categorized under "Built-in widgets," which users can drag and drop onto their canvas to build the UI. Learn more about widgets [here](../../resources/ui/overview.md#widgets).
 4. **Custom widget to Component**: `CustomWidget` in Flutter indicates user-defined widgets that serve specific functions not covered by built-in widgets. FlutterFlow translates this into "Component" allowing you to create and use custom components within your projects. Learn more about creating a component [here](../../resources/ui/components/intro-components.md).
 5. **Theme/style constants to Design System**: In Flutter, theme and style constants are used to ensure consistent styling across an app. FlutterFlow uses a "Design System" to manage and apply uniform styles and themes throughout the application. Learn more about design system [here](../../ff-concepts/design-system/design-system.md).
+
+## Resource Description
+
+A Resource Description is a brief text note that explains the purpose, usage, or key details of a particular resource. By supplying clear, concise descriptions, you create better project documentation and a smoother development experience—both for yourself and any collaborators.
+
+:::info
+Below are some reasons why resource descriptions can significantly enhance your FlutterFlow project:
+
+- **Better Search**: Descriptions are indexed in the FlutterFlow search. This helps locate pages, components, and other resources quickly, especially in large projects.
+- **Team Collaboration**: When multiple developers or designers work on the same project, concise descriptions help everyone understand each element’s role without guesswork.
+- **Project Documentation**: Acts as built-in documentation of your app, which makes future updates easier.
+:::
+
+You can add a description for each of the following resources in FlutterFlow:
+
+- **Project**: Use the project-level description to summarize the overall goals or scope of your app. For instance, “A delivery management app for small businesses” helps keep the team aligned on the primary objective.
+- **Page**: Explains a page’s main function. Example: “Displays the user’s shopping cart and checkout options.”
+- **Component**: Clarifies the functionality or design intention of a reusable component. Example: “Reusable card component to be used as ListTile.”
+- **Action Blocks**: Provide a concise description of what the set of actions does (e.g., “Sends a notification to the user’s email address upon form submission”).
+- **Custom Functions**: Describe the logic or purpose behind the function. Example: “Calculates shipping costs based on weight and distance.”
+- **Custom Actions**: Specify the custom behavior you’ve created, such as “Opens a QR scanner and returns the scanned value.”
+- **Custom Widgets**: Explain the widget’s purpose or structure. Example: “Carousel widget for displaying multiple images with pagination.”
+- **Data Type**: Summarizes the purpose of a custom data model. Example: “Represents a user’s order including items, total cost, and status.”
+- **Parameters**: Provide context for how a parameter is used, including expected data types or value ranges. Example: “String to store the user’s phone number—must include country code.”
+
+:::tip
+
+In the generated code, FlutterFlow inserts descriptions as docstring-like comments near the relevant classes, methods, or properties. For instance, a data type named `OrderInfo` with a description of “Represents a user’s order, including items, total cost, and status” will have that text added above the class declaration:
+
+```jsx
+/// Represents a user’s order, including items, total cost, and status.
+class OrderInfo {
+  /// The total price in USD for this order.
+  double totalAmount;
+  List<String> items;
+  // ...
+}
+```
+
+In a standard IDE (e.g., VS Code or Android Studio), if you place your mouse over a custom data type class name, the description set in FlutterFlow appears as a tooltip, helping you quickly grasp the purpose of a resource.
+
+![resource-description.avif](imgs/resource-description.avif)
