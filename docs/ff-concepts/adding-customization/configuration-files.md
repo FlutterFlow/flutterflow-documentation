@@ -42,25 +42,67 @@ FlutterFlow provides two main ways to modify native files: [**Add Individual Sni
 For Android, modifications are typically made in the `AndroidManifest.xml` file, where you can add the following tags:
 
 - **Activity Tags**: This injects code inside the `<activity> ... </activity>` block. You’d use this to declare an additional activity in an Android application. An activity represents a single screen with a user interface (UI). This tag can control the behavior, orientation, and themes, and determines how the activity interacts with other apps or system events.
-- **Application Tags**: [Add info after checking in Beta]
+- **Application Tags**: This injects code inside the `<application> ... </application>` block. You’d use this to configure `<meta-data>` entries, application-wide settings, declare app components like services, broadcast receivers, and content providers, and specify intent filters.
 
-To add a snippet in the `AndroidManifest.xml` file, open **Custom Code** (from the left side navigation menu) **> Configuration Files >** select **`AndroidManifest.xml`**. [add instructions para]
+To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from the left navigation menu, select **Configuration Files**, then choose `AndroidManifest.xml`. Click the **plus** (+) button next to either the *Activity* or *Application* tag—depending on where you'd like to insert the snippet. Provide a name (this will be included as a comment in the file) and paste your snippet code.
 
-[more info on this (after checking in beta) →When you add an XML snippet, you can give it a name; The name is added as a comment around the snippet in the file]
-
-[Arcade: use example for both the tags]
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/rM4e11x5yCTZMdAE8tqE?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 #### Snippet Placement for iOS
 
 For iOS, you can modify the `Info.plist` and `Entitlements.plist` files. There’s no nested application/activity structure like on Android. Instead, both files are dictionaries of key-value pairs. When you add a snippet, it’s placed directly under the root `<dict>` element of these plist files.
 
-[write after looking at the feature in beta]
+To add a snippet to native iOS files, navigate to **Custom Code** (from the left-side menu) > **Configuration Files**, and select the desired file (`Info.plist` or `Entitlements.plist`). Click the **plus** (+) button, provide a descriptive name (which will appear as a comment in the file), and paste your snippet code.
 
-To add a snippet in iOS native files, open **Custom Code** (from the left side navigation menu) **> Configuration Files >** select desired file (`Info.plist` or `Entitlements.plist`). [add intrunctions para]
-
-Here’s an example of adding snippet in [Info.plist] that allows [add info on what you are adding]
-
-Here’s an example of adding snippet in [Entitlements.plist] that allows [add info on what you are adding]
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/pqR3C1oSlZiPQhpeA19C?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::tip
 You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
@@ -70,11 +112,37 @@ You can also use your Development [**Environment Values**](../../testing-deploym
 
 For more complex changes, you can enable **Manual Edit Mode**, which essentially unlocks the entire file for free-form editing. This is like opening the raw file in a text editor directly within FlutterFlow. **Note that** the Manual mode is powerful but should be used carefully.
 
-To manually edit the native files, open **Custom Code** (from the left side navigation menu) **> Configuration Files >** select desired file. Now [add instructions after looking in Beta]
+To manually edit native files, navigate to **Custom Code** (from the left-side menu) > **Configuration Files**, select the file you want to edit, and click the **lock** button to unlock it. You can now freely modify the file.
 
-[more info about manual edit mode from liner ticket]
+:::tip
+Once unlocked, the file stays in manual editing mode until you lock it again. Locking it will reset the file to a version generated by FlutterFlow.
+:::
 
-[arcade]
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/gbjFJzct9J5Jh4lxOniX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 :::tip
 
@@ -103,6 +171,9 @@ Let’s say you are integrating the Mapbox package in your FlutterFlow app, and 
 
 Here, `{{MAPBOX_ACCESS_TOKEN}}` is an Environment Values that FlutterFlow replaces with the actual token at build time.
 
+![variables-in-native-code-example-1](imgs/variables-in-native-code-example-1.avif)
+
+
 **Example 2: Configuring `Info.plist` for iOS**
 
 For iOS apps, you might need to configure App Transport Security (ATS) to allow non-HTTPS connections. Instead of manually setting `NSAllowsArbitraryLoads` to `true`, you can use a FlutterFlow variable:
@@ -113,6 +184,9 @@ For iOS apps, you might need to configure App Transport Security (ATS) to allow 
 ```
 
 If `ALLOW_HTTP_TRAFFIC` is set to `true` in FlutterFlow’s Environment Value, the app will allow HTTP connections.
+
+![variables-in-native-code-example-2](imgs/variables-in-native-code-example-2.avif)
+
 
 **Example 3: Using Library Values**
 
@@ -129,6 +203,9 @@ For example, If your library requires an API key for a third-party service (e.g.
 ```
 
 The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{MAPS_API_KEY}}` with the user-defined key.
+
+![lib-values-in-native-code-example-1](imgs/lib-values-in-native-code-example-1.avif)
+
 
 ## Editable Files
 
@@ -356,7 +433,7 @@ Here are some scenarios where you may need to modify the `main.dart` file:
 
 Many packages have initialization calls. For example, if you added a custom package for analytics or error tracking (say Sentry or a logging service), you might need to call `SentryFlutter.init()` or set up an error handler at app startup. By placing that call in `main.dart` (before or right after `runApp`), you ensure it’s executed early.
 
-```dart
+```jsx
 import 'dart:async';
 
 import 'package:flutter/widgets.dart';
@@ -383,7 +460,7 @@ This ensures Sentry is ready before the app starts, just like Firebase initializ
 
 If you want to change the status bar color and adjust icon brightness for Android and iOS, you need to modify `main.dart` before calling `runApp()`.
 
-```dart
+```jsx
 
 import 'package:flutter/services.dart';
 
@@ -405,7 +482,7 @@ void main() {
 
 Some apps require landscape-only or portrait-only modes. You can enforce screen orientation in `main.dart` before launching the app.
 
-```dart
+```jsx
 import 'package:flutter/services.dart';
 
 Future<void> main() async {
@@ -426,7 +503,7 @@ This ensures the app only runs in landscape mode.
 
 If your app needs to respond to lifecycle events, such as tracking when the app goes into the background or returns to the foreground, you can attach an observer.
 
-```dart
+```jsx
 import 'package:flutter/widgets.dart';
 
 void main() {
@@ -459,7 +536,7 @@ Here are some scenarios where you may need to modify the ProGuard file:
 
 ProGuard can obfuscate critical libraries, breaking their functionality. To prevent this, you need to keep specific classes used by the library.
 
-```
+```jsx
 # Firebase
 -keep class com.google.firebase.** { *; }
 
@@ -474,7 +551,7 @@ This ensures that Firebase and Gson classes are not obfuscated, preventing seria
 
 If your app crashes in release mode but works in debug mode, ProGuard might be removing important classes. To troubleshoot, you can add logging and keep rules.
 
-```
+```jsx
 -assumenosideeffects class android.util.Log {
     public static *** d(...);
     public static *** v(...);
@@ -488,7 +565,7 @@ This removes debug logs in release builds but retains them for troubleshooting.
 
 Attackers can decompile APKs and view sensitive debug logs. To remove these debug logs, add:
 
-```
+```jsx
 -dontwarn android.util.Log
 ```
 
@@ -497,7 +574,7 @@ Attackers can decompile APKs and view sensitive debug logs. To remove these debu
 
 If your app uses native C/C++ libraries (JNI), ProGuard may mistakenly remove required components. To prevent this:
 
-```
+```jsx
 -keep class com.example.native.** { *; }
 -keepclassmembers class * {
     native <methods>;
@@ -510,7 +587,7 @@ This keeps all native methods intact.
 
 Some libraries rely on reflection to dynamically call methods, which ProGuard may remove.
 
-```
+```jsx
 -keep class * implements android.os.Parcelable { *; }
 -keepclassmembers class ** {
     @android.webkit.JavascriptInterface <methods>;
