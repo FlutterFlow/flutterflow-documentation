@@ -12,7 +12,7 @@ Welcome to the FlutterFlow Marketplace Creators' Hub! This section is designed t
 
 ### **Submitting an Item for Review**
 - Understand the [criteria](submission-criteria.md) we apply to items submitted to Marketplace.
-- Learn how to prepare and [submit](submit-item-for-reivew.md) your items to the Marketplace with our step-by-step guide.
+- Learn how to prepare and [submit](submit-item-for-review.md) your items to the Marketplace with our step-by-step guide.
 
 ### **Legal Guidelines for Creators**
 
