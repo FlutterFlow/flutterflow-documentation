@@ -686,3 +686,11 @@ This error indicates a conflict in your `AndroidManifest.xml`. Common issues inc
 </p>
 </details>
 
+<details>
+<summary>
+Why my app isn't running in Test Mode after editing the `main.dart` file with Supabase enabled?
+</summary>
+<p>
+There's a known limitation where editing the `main.dart` file with Supabase enabled prevents Test Mode from running. As a workaround, please use [**Local Run**](../../testing-deployment-publishing/running-your-app/local-run.md) to test your app instead.
+</p>
+</details>
