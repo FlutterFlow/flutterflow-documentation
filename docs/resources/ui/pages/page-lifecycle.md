@@ -158,7 +158,7 @@ To handle this, you can enable the option on the `TextField` widget to bypass ke
 
 The **On Dispose** action trigger allows you to define actions that execute when a page is navigated away from or removed from memory. It is particularly useful for stopping ongoing operations.
 
-Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/audio/audio-recroding.md) is started when the page loads using the [On Page Load](#on-page-load-action-trigger) action trigger. The recording process runs as long as the user remains on the page. However, when the user navigates away, you need to stop the recording to save resources and ensure the recorded audio is finalized. By using the On Dispose action trigger, you can safely stop the recording and save the file.
+Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/displaying-media.md#audio-recording) is started when the page loads using the [On Page Load](#on-page-load-action-trigger) action trigger. The recording process runs as long as the user remains on the page. However, when the user navigates away, you need to stop the recording to save resources and ensure the recorded audio is finalized. By using the On Dispose action trigger, you can safely stop the recording and save the file.
 
 Additionally, if you are using a third-party package that relies on persistent connections or listeners, you can leverage [Custom Actions](../../../ff-concepts/adding-customization/custom-actions.md) with the On Dispose action trigger to close streams or cancel subscriptions.
 

@@ -31,9 +31,12 @@ A list of all the available global properties is as follows:
 
 - **Current Time**: Fetches the current date and time. Explore [custom formatting](#current-time) options to tailor the DateTime display to your needs.
 
-- **Current Device Location:** Obtains he user's current location, ideal for updating their position on Google Maps or storing it in a backend database. [Check out examples](#current-device-location) on how to retrieve and save the current device location.
+- **Current Device Location:** Returns the user's current location, ideal for updating their position on Google Maps or storing it in a backend database. [Check out examples](#current-device-location) on how to retrieve and save the current device location.
+
+- **Link To Current Page:** Provides the [Deep Link](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#deep-link) of the current page.
 
 - **Current Route Path**: Provides the route name of the currently active or visible page in your app. This property is especially helpful in scenarios where you want to adjust or block specific actions if the active page isn't the one you expect. For example, if you launch the app through a push notification, the home page might still run in the background, even if the notification directs you to a different page. Using this property, you can prevent unnecessary action triggers, such as On Page Load from the home page. See details on avoiding [this issue](https://github.com/FlutterFlow/flutterflow-issues/issues/2765#issuecomment-2598915946).
+- **Current Route Stack:** Returns a list of route names representing every active page in your app’s navigation stack. It’s helpful for understanding how many pages deep the user is and what sequence of pages they’ve visited. You may need this data to manage custom back navigation, breadcrumb displays, or logging analytics. For instance, in an e-commerce app, you could examine the route stack to see if the user arrived at the checkout page from a specific page and tailor your promotional messages or apply discount accordingly.
 - **Fraction of Screen Width:** Determines the proportional width of the device's screen.
 - **Fraction of Screen Height:** Determines the proportional height of the device's screen.
 - **Screen Width:** Provides the total width of the current device's screen in pixels.
@@ -45,7 +48,7 @@ A list of all the available global properties is as follows:
 - **Is Dark Mode:** Checks if the app's current theme mode is set to dark.
 - **Is Light Mode:** Checks if the app's current theme mode is set to light.
 - **Is On-Screen Keyboard Visible:** Checks if the on-screen or soft keyboard is visible. This is helpful in making UI adjustments if keyboard is visible on screen. See a [quick example](#is-on-screen-keyboard-visible). 
-- **Current Environment**: Gives you the current [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) value.
+- **Current Environment**: Returns the current [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) value.
 
 :::tip[Generated Code]
 Learn more about the [**Generated Code**](../../generated-code/state-mgmt-gen-code.md#global-state) behind Global Properties.
