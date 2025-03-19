@@ -75,7 +75,28 @@ To use the CLI, you'll need to create an API token and use it in your requests. 
 
 ## Filtered exports
 
-We've developed [a solution](https://github.com/krabhishek/flutterflow-filtered-pull) that allows you to use the CLI tool without overwriting specific files or directories. This is especially useful if you're managing code outside of FlutterFlow and want to prevent it from being overwritten during a code export.
+If you are updating an existing project and do not want certain files to be changed during a code export, you can create a `.flutterflowignore` file in the root of your project directory. This file should contain a list of files to be ignored using globbing syntax.
+
+### **Example:**  
+If your project is located at:  
+```
+/Users/yourname/projects/my_flutterflow_app/
+```
+Then, place the `.flutterflowignore` file in:  
+```
+/Users/yourname/projects/.flutterflowignore
+```
+
+### **Example `.flutterflowignore` contents:**  
+```
+my_flutterflow_app/android/app/build.gradle    # Prevents FlutterFlow from overwriting native Android build configuration
+my_flutterflow_app/ios/Runner/Info.plist       # Keeps iOS app metadata unchanged
+my_flutterflow_app/web/index.html              # Ensures custom modifications to the web entry file are retained
+```
+This ensures that the specified files and directories are not overwritten during code export.
+
+For more details on globbing syntax, refer to [this guide](https://pub.dev/packages/glob#syntax).
+
 
 ## FAQ
 <details>
