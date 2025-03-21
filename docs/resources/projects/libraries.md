@@ -191,7 +191,8 @@ Once the library is imported, following resources are accessible for use:
 - [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned) 
 
 :::note
-Pages and Firestore Collections are still being worked on and may come in future updates.
+- Pages and Firestore Collections are still being worked on and may come in future updates.
+- Creation of [**AI Agents**](../../ff-integrations/AI/ai-agents.md) is not yet supported in the Library project
 :::
 
 It's important to note that these resources show up where they are instantiated. For example:
