@@ -2,8 +2,8 @@
 slug: /integrations/gemini
 title: Gemini
 description: Learn how to get started with the Gemini action in your FlutterFlow app to generate text, process text-and-image inputs, and count tokens.
-tags: [Gemini, Text Generation, Token Counting, Integration]
-sidebar_position: 1
+tags: [AI, Gemini, Integration]
+sidebar_position: 2
 keywords: [FlutterFlow, Gemini, Text Generation, Token Counting, Integration]
 ---
 
