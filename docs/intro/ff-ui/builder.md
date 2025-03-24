@@ -34,7 +34,7 @@ Here is a list of all the features accessible from the navigation menu:
 11. **Custom Functions**: Add custom functionalities, widgets, and actions.
 12. **Cloud Functions**: Write and deploy cloud functions for Firebase.
 13. **Tests**: Add automated tests.
-14. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/AI/ai-agents.md) to integrate conversational AI interactions into your app.
+14. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
 15. **Theme settings**: Customize visual appearance.
 16. **Settings and Integrations**: Access app-related settings and integrations.
 
