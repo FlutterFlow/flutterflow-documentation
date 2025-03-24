@@ -9,11 +9,11 @@ keywords: [FlutterFlow, Configuration Files, Customizations, Flutter, Dart, Pub.
 
 # Configuration Files
 
-FlutterFlow allows you to modify platform-specific files for Android and iOS without leaving the FlutterFlow interface. This guide explains how to edit these files, methods for adding code, using variables, and how to do it all safely.
+FlutterFlow allows you to modify configuration files for your app, and platform-specific files, without leaving the FlutterFlow interface. 
 
-In some cases, you’ll need to tweak the native Android or iOS configurations that FlutterFlow generates. This is usually required when integrating third-party packages such as analytics, ad networks, and payment solutions. These files act as a bridge between your app and the underlying OS, declaring what your app can do and access. Editing them allows you to extend FlutterFlow’s capabilities.
+In some cases, you’ll need to tweak the configuration files that FlutterFlow generates. This is usually required when integrating third-party packages such as analytics, ad networks, and payment solutions.
 
-Here are the key native files you can edit:
+Here are the key configuration files you can edit:
 
 - [**`AndroidManifest.xml`**](#androidmanifestxml-android) – Configures app permissions, metadata, and intent filters for Android.
 - [**`Info.plist`**](#infoplist-ios)– Manages iOS app settings, including permissions and configurations.
@@ -23,15 +23,15 @@ Here are the key native files you can edit:
 
 :::warning
 
-While editing native configuration files can unlock advanced functionality, it comes with risks. A small mistake (like a missing XML tag or a wrong key) can cause your app to fail compilation or crash at runtime. Incorrect changes might lead to App Store/Play Store rejections. So, it’s important to note your changes and thoroughly test your app after each edit.
+While editing configuration files can unlock advanced functionality, it comes with risks. A small mistake (like a missing XML tag or a wrong key) can cause your app to fail compilation or crash at runtime. Incorrect changes might lead to App Store/Play Store rejections. So, it’s important to note your changes and thoroughly test your app after each edit.
 
 In short, edit native code only when necessary, and do so carefully.
 
 :::
 
-## Edit Native Code
+## Editing native XML Files (AndroidManifest.xml, Info.plist, Entitlements.plist)
 
-FlutterFlow provides two main ways to modify native files: [**Add Individual Snippets**](#option-1-add-individual-snippets) and [**Manual Edit Mode**](#option-2-manual-edit-mode).
+FlutterFlow provides two main ways to modify native XML files: [**Add Individual Snippets**](#option-1-add-individual-snippets) and [**Manual Edit Mode**](#option-2-manual-edit-mode).
 
 ### Option 1: Add Individual Snippets
 
@@ -105,12 +105,14 @@ To add a snippet to native iOS files, navigate to **Custom Code** (from the left
 <p></p>
 
 :::tip
-You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
+You will soon be able to use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. 
+
+<!-- For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section. -->
 :::
 
 ### Option 2: Manual Edit Mode
 
-For more complex changes, you can enable **Manual Edit Mode**, which essentially unlocks the entire file for free-form editing. This is like opening the raw file in a text editor directly within FlutterFlow. **Note that** the Manual mode is powerful but should be used carefully.
+For more complex changes, you can enable **Manual Edit Mode**, which unlocks the entire file for free-form editing. This is like opening the raw file in a text editor directly within FlutterFlow. **Note that** the manual mode is powerful but should be used carefully.
 
 To manually edit native files, navigate to **Custom Code** (from the left-side menu) > **Configuration Files**, select the file you want to edit, and click the **lock** button to unlock it. You can now freely modify the file.
 
@@ -148,10 +150,10 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
 
 - Don’t remove FlutterFlow’s existing entries unless you are sure. It’s safer to only add or modify necessary lines and leave the rest as is.
 - Use Manual Edit Mode for bulk or complex edits that the snippet can’t easily do, like reordering tags, removing something, or pasting in a large chunk of config. Always verify that the app still builds and runs after such edits.
-- You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
+<!-- - You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section. -->
 :::
 
-##   Include Variables in Native Code
+<!-- ##   Include Variables in Native Code
 
 When editing native files in FlutterFlow, you may need to include dynamic values, such as API keys, app configurations, or environment-specific settings. Instead of hardcoding these values directly in **`AndroidManifest.xml`**, **`Info.plist`**, or other native files, you can use FlutterFlow [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) to keep your app flexible and secure.
 
@@ -171,10 +173,10 @@ Let’s say you are integrating the Mapbox package in your FlutterFlow app, and 
 
 Here, `{{MAPBOX_ACCESS_TOKEN}}` is an Environment Values that FlutterFlow replaces with the actual token at build time.
 
-![variables-in-native-code-example-1](imgs/variables-in-native-code-example-1.avif)
+![variables-in-native-code-example-1](imgs/variables-in-native-code-example-1.avif) -->
 
 
-**Example 2: Configuring `Info.plist` for iOS**
+<!-- **Example 2: Configuring `Info.plist` for iOS**
 
 For iOS apps, you might need to configure App Transport Security (ATS) to allow non-HTTPS connections. Instead of manually setting `NSAllowsArbitraryLoads` to `true`, you can use a FlutterFlow variable:
 
@@ -204,7 +206,7 @@ For example, If your library requires an API key for a third-party service (e.g.
 
 The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{MAPS_API_KEY}}` with the user-defined key.
 
-![lib-values-in-native-code-example-1](imgs/lib-values-in-native-code-example-1.avif)
+![lib-values-in-native-code-example-1](imgs/lib-values-in-native-code-example-1.avif) -->
 
 
 ## Editable Files
@@ -655,7 +657,6 @@ This ensures reflection-based code continues working.
 ## Best Practices
 
 - **Backup:** Before making native file changes, ensure you have a backup of at least the text of the original file. You could also commit your changes so you can revert if needed. This way, if things go wrong, you can manually restore.
-
 - **One Change at a Time:** Add or modify one item at a time and then test your app. If you add multiple things and something breaks, it’s harder to pinpoint which change did it.
 - **Consult Package Documentation:** When you’re making changes for third-party packages, follow their instructions exactly. Usually, package docs show a snippet – use that in FlutterFlow’s [snippet](#option-1-add-individual-snippets). Double-check official docs for Android or iOS if you’re unsure about the correct keys or tags. For example, if enabling background fetch, Apple’s docs will list the exact string to use in `Info.plist` (`fetch` in `UIBackgroundModes` array).
 - **Keep it Minimal:** Only add what you truly need. Don’t add a bunch of entitlements or permissions “just in case” as that can bloat and complicate your app, and even trigger store reviews for uses that your app doesn’t actually have.
@@ -676,7 +677,6 @@ Confirm that the entitlements in `Entitlements.plist` match your provisioning pr
 </p>
 </details>
 
-
 <details>
 <summary>
 How do I fix “Manifest merger failed” on Android?
@@ -692,5 +692,14 @@ Why my app isn't running in Test Mode after editing the `main.dart` file with Su
 </summary>
 <p>
 There's a known limitation where editing the `main.dart` file with Supabase enabled prevents Test Mode from running. As a workaround, please use [**Local Run**](../../testing-deployment-publishing/running-your-app/local-run.md) to test your app instead.
+</p>
+</details>
+
+<details>
+<summary>
+How can I create a Library that needs to edit Info.plist / Entitlements.plist / AndroidManifest.xml 
+</summary>
+<p>
+Right now, changes to the configuration files made in a Library project are not ported over to the projects that import them. This means if you create a Library that needs specific permissions added to these files, the consumers of your Library will need to edit the files in the project that imports the Library. We are hoping to have automatic import of changes to the configuration files available in the next few releases. 
 </p>
 </details>
