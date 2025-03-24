@@ -79,9 +79,11 @@ You can obtain your OpenAI API key from [**OpenAI API Keys**](https://platform.o
 Here, you specify the type of inputs users can send to the AI.
 
 - **Text**: Allows users to send text-based messages.
-- **Image**: Enables image input, allowing the AI to analyze photos.
+- **Image**: Enables image input, allowing the agent to analyze photos.
+- **Audio**: (Google Agent only) Allows to send audio messages or voice inputs.
+- **Video**: (Google Agent only) Allows users to send short video clips to analyze.
 
-Selecting both means users can send both text and/or images. For example, with an AI Stylist agent, enabling both Text and Image allows users to either describe their outfits in words or upload images of clothing items for analysis.
+Selecting multiple input types makes it easier for users to clearly communicate what they need. Instead of relying only on text descriptions, users can combine inputs—for example, uploading an image along with text to better illustrate their queries and help the agent provide more accurate responses.
 
 #### Response Options
 
@@ -89,14 +91,14 @@ Defines the type of output you want from the agent. You can select from the foll
 
 - **Text**: Returns plain text responses.
 - **Markdown**: Allows richer formatting (headings, lists, links) if you display content as markdown. For example, An FAQ chatbot that uses formatted bullet points, and bold or italic text to highlight key info.
-- **Data Type (JSON)**: Returns structured data, which can be parsed programmatically. For example, a restaurant finder app might need structured data, e.g., `{ name: 'Pizza Palace', distance: '2.4 miles' }` to display a dynamic map.
+- **JSON**: Returns structured data, which can be parsed programmatically. For example, a restaurant finder app might need structured data, e.g., `{ name: 'Pizza Palace', distance: '2.4 miles' }` to display a dynamic map.
 
 #### Model Parameters
 
 Here, you can fine-tune how the agent generates responses.
 
 - **Temperature**: Controls how creative or random the AI’s responses can be on a scale of 0 to 1. A lower value (e.g., 0.1) makes responses more factual and consistent. A higher value (e.g., 1.0) makes responses more creative and varied (e.g., brainstorming ideas).
-- **Max Tokens**: Sets the response length limit—helpful for cost control or for ensuring short, direct replies.
+- **Max Tokens**: Limits the total number of tokens used, including both the user's request and the agent's response. Adjusting this helps manage costs and ensures concise interactions.
 - **Top P**: Another technique for controlling the variety of words the AI considers. Typically kept at default unless you want fine-tuned sampling control.
 
 For example, in a **Blog-Writing Assistant**, you might set a moderate to high temperature for creative phrasing and a high max tokens limit for detailed paragraphs. Conversely, a **Financial Chatbot** would benefit from a lower temperature to deliver consistent, accurate, and stable responses without unnecessary creativity.
@@ -130,10 +132,9 @@ Once configured, click the **Publish** button to make it live.
 </div>
 <p></p>
 
-:::info
+:::info [For non Google Agents]
 
-After you successfully deploy the agent, any changes made to its configuration—such as modifying the system message, model, or temperature will require you to redeploy the Agent.
-
+After you successfully deploy the agent, any changes made to its configuration—such as modifying the system message, model, or temperature will require you to redeploy the Agent. For Google agents, the configuration is stored at client-side, so redeployment isn't necessary.
 :::
 
 Now you can use the AI agent in your FlutterFlow app logic using the following actions.
@@ -147,7 +148,15 @@ You can configure the following options for this action:
 - **Select Agent**: Here, you select the specific AI Agent you previously configured.
 - **Conversation ID**: The Conversation ID is a unique identifier you assign to maintain context and continuity across multiple interactions within the same conversation. Using a consistent ID (e.g., `user123_AIStylist_202503181200`) allows the AI to remember past interactions and keep conversations coherent and contextual.
 - **Text Input**: This is where you specify the user's message or input text that the AI agent will process. Typically, this input comes from a widget state (e.g., TextField).
-- **Image Input**: If your agent supports image processing, you can provide an image either from [local device](../../ff-concepts/file-handling/displaying-media.md#uploaded-file) storage or a [network URL](../../ff-concepts/file-handling/displaying-media.md#network).
+- **Image Input**: If your agent supports image processing, you can provide an image.
+- **Audio Input**: If your agent supports audio processing, you can pass audio files.
+- **Video Input**: If your agent can analyze video content, provide a video file.
+
+:::info
+ - You can send media files either from [**network URL**](../../ff-concepts/file-handling/displaying-media.md#network) or a [**local device**](../../ff-concepts/file-handling/displaying-media.md#uploaded-file) storage.
+ - For non-Google agents, we only support network URLs for now. To pass media files from your device, [**upload it first to cloud storage**](../../ff-concepts/file-handling/uploading-files.md#upload-or-save-media-action) and then provide its generated URL.
+ :::
+
 - **Action Output Variable Name**: This field stores the AI agent's response to let you display the response to users or process it further.
 
 ![ai-agent-send-message-action.avif](imgs/ai-agent-send-message-action.avif)
