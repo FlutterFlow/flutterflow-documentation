@@ -61,7 +61,7 @@ It is always recommended to include at least one sample conversation with both a
 #### Model Settings
 
 - **Provider**: Allows you to select the AI vendor for this agent. Currently, we support **OpenAI**, **Google,** and **Anthropic**.
-    - **OpenAI & Anthropic**: If you choose OpenAI or Anthropic, FlutterFlow will create a [Cloud Function](https://firebase.google.com/docs/functions) in Firebase to relay requests to the AI API securely. Hence, your Firebase project must be on a [Blaze](https://firebase.google.com/pricing) plan (paid) to deploy the necessary cloud function.
+    - **OpenAI & Anthropic**: If you choose OpenAI or Anthropic, FlutterFlow will create a [Cloud Function](https://firebase.google.com/docs/functions) in Firebase to relay requests to the AI API securely. Hence, your Firebase project must be on a [Blaze](https://firebase.google.com/pricing) plan (paid) to deploy the necessary cloud function. **Note that** the deployed cloud function will only be accessible to authenticated users.
     - **Google**: When selecting Google as your provider, you need to enable the following in your Firebase project.
         - [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md): This ensures secure interactions between users and your AI agents.
         - [**Vertex AI**](https://firebase.google.com/docs/vertex-ai): Vertex AI is Google's comprehensive AI platform used to manage and deploy machine learning models. FlutterFlow internally uses the [`firebase_vertexai`](https://pub.dev/packages/firebase_vertexai) package to integrate Google's AI models within your Firebase-connected project.
