@@ -1,7 +1,7 @@
 ---
 slug: /integrations/ai-agents
 title: AI Agents
-description: Learn how to an AI Agent in your FlutterFlow app.
+description: Learn how to add an AI Agent in your FlutterFlow app.
 tags: [AI, Gemini, Integration]
 sidebar_position: 1
 keywords: [FlutterFlow, AI, Gemini, Integration, OpenAI, Anthropic, Agent Builder]
