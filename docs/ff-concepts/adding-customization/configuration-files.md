@@ -105,7 +105,8 @@ To add a snippet to native iOS files, navigate to **Custom Code** (from the left
 <p></p>
 
 :::tip
-You will soon be able to use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. 
+- Snippet insertion isn't available for `main.dart`. Instead, you can directly modify the file using [**Manual Edit Mode**](#option-2-manual-edit-mode).
+- You will soon be able to use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. 
 
 <!-- For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section. -->
 :::
@@ -485,6 +486,10 @@ The `main.dart` file is the entry point of every FlutterFlow app. It is the firs
 
 If you need to execute any custom Dart code at startup — such as initializing third-party SDKs, setting global configurations, service locators, printing a debug log, or running certain functions once — `main.dart` is the place to do it.
 
+:::info
+[**Adding Snippets**](#option-1-add-individual-snippets) isn't available for `main.dart`. Instead, you can directly modify the file using [**Manual Edit Mode**](#option-2-manual-edit-mode).
+:::
+
 Here are some scenarios where you may need to modify the `main.dart` file:
 
 **Example 1: Initializing Third-Party Packages**
@@ -664,7 +669,7 @@ This ensures reflection-based code continues working.
 - **Testing on Devices:** Especially for anything related to `Info.plist` or entitlements, always test on a real iOS device if possible. Some issues (like missing entitlements or background mode usage) won’t show up in the simulator. Similarly, test Android changes on a device or emulator with a release build – because ProGuard rules effects, for example, only show in release mode.
 - **Monitoring Logs and Errors:** After making changes, monitor the Xcode console or Android logcat when running the app. If there are misconfigurations, you often get warnings.
 - **Stay Updated:** FlutterFlow may improve native editing features over time. Keep an eye on FlutterFlow’s docs or community announcements. If they introduce a new easier way, prefer that to manual editing when possible, as it will be more foolproof.
-- **Security Consideration:** Remember that anything in these files (especially `Info.plist`, `AndroidManifest.xml`) is essentially public in the distributed app. Don’t assume an API key in `Info.plist` is hidden – it’s not. For keys you must include (maps, etc.), consider using [private environment values](../../testing-deployment-publishing/development-environments/development-environments.md#private-environment-values) and monitoring their usage.
+- **Security Consideration:** Remember that anything in these files (especially `Info.plist`, `AndroidManifest.xml`) is essentially public in the distributed app. Don’t assume an API key in `Info.plist` is hidden – it’s not. For keys you must include (maps, etc.), you'll soon be able to securely manage them using [private environment values](../../testing-deployment-publishing/development-environments/development-environments.md#private-environment-values) and easily monitor their usage.
 
 ## FAQs
 
