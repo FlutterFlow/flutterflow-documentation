@@ -49,31 +49,31 @@ Integrating the RevenueCat in your app comprises the following steps:
 5. [Testing](#5-testing)
 6. [Launch](#6-launch)
 
-## 1. Setup RevenueCat
+## Setup RevenueCat
 
 To set up the RevenueCat, follow these steps carefully:
 
 1. Sign up for a new RevenueCat account [here](https://app.revenuecat.com/).
 2. [Create a project](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-create-a-project), [add your app](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-add-an-app--platform), and ensure that you [add service credentials](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-service-credentials) to help RevenueCat communicate with the app stores on your behalf.
 3. [Create subscriptions](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-store-setup) in the respective stores.
-    1. While creating subscriptions in Google Play Console, if you see a message saying '***Your app doesn't have any in-app products yet**'* like in this picture, follow the steps below:
+   1. While creating subscriptions in Google Play Console, if you see a message saying '***Your app doesn't have any in-app products yet**'* like in this picture, follow the steps below:
     <p></p>
     ![error-while-creating-sub-in-play-console.avif](imgs/error-while-creating-sub-in-play-console.avif)
-    
-    1. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
-    
-    2. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
-    
-    3. Now, from the toolbar menu, click **Download APK** 
-    
-    4. In the Play Console, create a [Closed testing](https://play.google.com/console/about/closed-testing/) track and create a new release.
-    
-    5. Upload your **App Bundle** or **APK**, enter the release name, and create the release.
-    
-    6. Open the **Subscriptions** tab again. It should let you manage subscriptions now.
+
+   1. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
+
+   2. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
+
+   3. Now, from the toolbar menu, click **Download APK**
+
+   4. In the Play Console, create a [Closed testing](https://play.google.com/console/about/closed-testing/) track and create a new release.
+
+   5. Upload your **App Bundle** or **APK**, enter the release name, and create the release.
+
+   6. Open the **Subscriptions** tab again. It should let you manage subscriptions now.
 4. [Create Products and Entitlements in RevenueCat](https://www.revenuecat.com/docs/getting-started/quickstart#%EF%B8%8F-configure-products-and-entitlements-in-revenuecat).
 
-## 2. Enable RevenueCat in FlutterFlow
+### Enable RevenueCat in FlutterFlow
 
 To enable RevenueCat in FlutterFlow, follow the steps below:
 
@@ -103,7 +103,9 @@ To enable RevenueCat in FlutterFlow, follow the steps below:
 </div>
 <p></p>
 
-## 3. Retrieving in-app purchases and subscription details
+## Displaying Subscription Details in Your App
+
+To show in-app purchase and subscription information — such as pricing, product name, and description — within your app’s UI, you'll need to fetch these details from RevenueCat using the appropriate API or method.
 
 To display the in-app purchases and subscription details, such as price, description, etc., inside the UI elements, you need to retrieve this information from RevenueCat.
 
@@ -135,7 +137,7 @@ Here is an example of retrieving monthly subscription details:
 </div>
 <p></p>
 
-## 4. Add RevenueCat actions
+## RevenueCat Actions
 
 To manage in-app purchases and subscriptions inside your FlutterFlow app, you have to use the RevenueCat Actions. Below are the types of RevenueCat actions:
 
@@ -222,15 +224,12 @@ Using this action, you can allow users to re-activate the subscription they have
 </figure>
 
 
-## 5. Testing
+## Testing Subscriptions
 
-You can test your subscriptions using sandbox environments, which simulate real store behavior without incurring costs. [This document](https://www.revenuecat.com/docs/test-and-launch/sandbox) provides detailed guidelines for testing purchases on [Android](https://www.revenuecat.com/docs/test-and-launch/sandbox/google-play-store) and [iOS devices](https://www.revenuecat.com/docs/test-and-launch/sandbox/apple-app-store).
+You can test your subscriptions using sandbox environments, which simulate real store behavior without incurring costs. Check out the full **[Sandbox Testing Guide](https://www.revenuecat.com/docs/test-and-launch/sandbox)** for more details.
 
-## 6. Launch
+Before going live, make sure to review **[RevenueCat’s Launch Checklist](https://docs.revenuecat.com/docs/launch-checklist)** to ensure everything is properly set up for production.
 
-Before launching your app to production make sure you go through the **Launch Checklist** of RevenueCat:
-
-[In-App Purchase Launch Checklist – RevenueCatRevenueCat](https://docs.revenuecat.com/docs/launch-checklist)
 
 ## FAQs
 
@@ -250,4 +249,9 @@ For Google only, ensure that the subscription product is in the Active state, yo
 See more details [here](https://community.revenuecat.com/sdks-51/why-are-offerings-or-products-empty-124).
 </p>
 </details>
+
+## Looking for other options?
+
+If you're looking for other tools to manage in-app subscriptions, [**Adapty**](https://adapty.io/) is a solid alternative to RevenueCat — it offers advanced analytics, paywall A/B testing, and seamless integration with iOS and Android apps.
+You can explore the [**Adapty Library on our Marketplace**](https://marketplace.flutterflow.io/item/Mf1oFJcqngHzERZSPNA8) — it's actively maintained by the Adapty team and always kept up to date.
 
