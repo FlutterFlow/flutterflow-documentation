@@ -1,77 +1,98 @@
 ---
-id: getting-started
-title: Getting Started
-slug: '/integrations/google-analytics'
+slug: /integrations/google-analytics
+title: Google Analytics
+description: Learn how to setup Google Analytics in FluterFlow
+tags: [Google Analytics]
+sidebar_position: 1
+keywords: [Google Analytics, Firebase, Firebase Analytics, Track App Events]
 ---
 
 # Google Analytics
 
-Google Analytics allows you to track app-related events. 
-
-## Setup 
-
-Simply navigate to **Settings and Integrations** > **Integrations** > **Google Analytics** and turn on the **Enable Google Analytics** toggle. You can see all the logged events inside the Analytics dashboard of your [Firebase console](https://console.firebase.google.com/).
-
-## Default Events
-Currently, we support automatic logging for the following events:
-
-* **On Page Load**: This logs an event when a user opens a page. It is logged with the Firebase recommended name, i.e., **screen_view,** but you will find the actual screen name, i.e., page title, inside the parameter (click on the screen_name to reveal the parameter).
-
-* **On Action Start**: This logs an event when a user interacts with widgets to trigger an action. It will be logged as
-`{WIDGET_NAME}_{TRIGGER_TYPE}` For example, when the user taps a button and navigates to the 
-  next page, the event will be logged as **Button_navigate_to**.
-
-* **On Each Individual Action**: This logs an event for every individual action or action chain for a given widget. It will be logged as `{WIDGET_NAME}_{TRIGGER_TYPE}` For example, when the user taps on a button and adds the *Upload Media* action followed by the *Update App State* action, the event will be logged as `Button_upload_media` and `Button_update_local_state`.
-
-* **On Authentication**: This logs an event for every authentication action. That means whenever you signup, log in, log out, reset your password, or delete your account. The event will be logged as `{ACTION_TYPE}` (e.g., sign_up, login, etc.).
+Integrating Google Analytics into your FlutterFlow project enables you to monitor user interactions, track app performance, and gain valuable insights to enhance user experience. Here's a comprehensive guide on setting up and utilizing Google Analytics within FlutterFlow.
 
 :::tip
-To clearly identify the widgets (on which the events are logged) in the analytics dashboard, you can rename and provide an easily recognizable name to the widget (e.g., BuyButton instead of just Button).
+
+Google Analytics is integrated into Firebase. This means you must [**set up Firebase**](../../firebase/connect-to-firebase-setup.md) to enable analytics tracking and log events from your FlutterFlow app.
+
+:::
+
+## Enable Google Analytics in Firebase
+
+To enable Google Analytics in Firebase, open the [Firebase Console](https://console.firebase.google.com/) and select your project. From the left-side menu, navigate to **Analytics > Dashboard** and click **Enable Google Analytics**. Choose an existing Google Analytics account or create a new one, then **Finish** the setup.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/QJY4MZVonDmVgIcexK6t?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Enable Google Analytics in FlutterFlow
+
+To begin collecting analytics data, navigate to **Settings and Integrations > Integrations > Google Analytics** within your FlutterFlow project and toggle on the **Enable Google Analytics** option.
+
+Once enabled, you can set the [Predefined Events](#predefined-events). You can selectively toggle these options to log specific user interactions automatically.
+
+![enable-google-analytics](imgs/enable-google-analytics.avif)
+
+### Predefined Events
+
+You can enable automatic logging for the following events:
+
+- **On Page Load**: Logs an event when a user opens a page, recorded with the Firebase-recommended name `screen_view`. The actual screen name is accessible within the `screen_name` parameter.
+- **On Action Start**: Captures events when users interact with widgets that trigger actions. Events are logged in the format `{WIDGET_NAME}_{TRIGGER_TYPE}`. For instance, if a user taps a button that navigates to another page, the event is logged as `Button_navigate_to`.
+- **On Each Individual Action**: This logs an event for every individual action or action chain for a given widget. It will be logged as `{WIDGET_NAME}_{TRIGGER_TYPE}` For example, when the user taps on a button and adds the *Upload Media* action followed by the *Update App State* action, the event will be logged as `Button_upload_media` and `Button_update_local_state`.
+- **On Authentication**: Logs events for authentication-related actions such as sign-up, login, logout, password reset, or account deletion. Events are logged using the action type, e.g., `sign_up` or `login`.
+
+:::tip
+
+To easily identify widgets in the analytics dashboard, consider giving them recognizable names, such as `BuyButton` instead of just `Button`.
+
 :::
 
 ## Google Analytics Event [Action]
 
-This action allows you to log custom events. By using this action, you can record additional information associated with the event in the form of parameters.
+In addition to predefined events, you can track specific user actions relevant to your app’s goals. This action allows you to log custom events and record additional information through parameters.
 
-Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
+For example, in an e-commerce app, you might log product purchases with parameters such as `product_category: electronics` to track item categories and `user_role: premium` vs. `user_role: guest` to differentiate user types.
 
-1. Select the **Widget** (e.g., Button) on which you want to define the action. 
+To log a custom event, add the **Google Analytics Event** action and enter a clear, descriptive **Event Name**. You can add parameters for extra context by clicking **+ Add Parameter** and providing **Key**-**Value** pairs (e.g., `product_category` as the Key and `electronics` as the Value).
 
-2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu), and click **+ Add Action**.
-	* Search and select the **Google Analytics Event** action.
-	* Enter the name of the event in the **Value** input field. This name will be displayed on 
-      the Analytics dashboard.
+![google-analytics-action](imgs/google-analytics-action.avif)
 
+## Viewing Analytics Data
 
-:::note
-All the logged events can be accessed from the Analytics dashboard of your [Firebase console](https://console.firebase.google.com/).
-:::
+To see all tracked events, both automatic and custom, open the [Firebase Console](https://console.firebase.google.com/) and select your project. From the left-side menu, navigate to **Analytics > Dashboard** to access detailed event reports.
 
-:::tip
-Event names must be 40 characters or less. Event names may only contain alphanumeric characters and underscores ("_"), and must start with an alphabetic character.
-:::
+Use this data to gain insights into app screens, which funnels convert best, and where churn or drop-offs occur. In the long run, these metrics help you make data-driven improvements that enhance the user experience and maximize the impact of your FlutterFlow app.
 
-<figure>
-    ![adding-analytics-action.gif](adding-analytics-action.gif)
-  <figcaption class="centered-caption">Adding Google Analytics Event Action</figcaption>
-</figure>
+## FAQs
 
-### Add Parameters
-
-At times, you may need to log additional details such as the time, user type, and widget placement when an event occurs.
-
-Here's how you can log an event by the tab name when a tab within the TabBar is selected or changed:
-
-1. Select the **Tab** (inside TabBar) on which you want to define the action. 
-
-2. Select **Actions** from the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu), and click **+ Add Action**.
-	* Search and select the **Google Analytics Event** action.
-	* Enter the name of the event in the **Value** input field, such as *Tabbar_On_Tap*.
-	* Click on the **+ Add Parameter** and open the **Param 1** section.
-	* Inside the **Key** section, enter **Value** as **Tab_Name**.
-	* Inside the **Value** section, enter the **Value** as the name of the tab (e.g., *Upcoming*, 
-	  *Past)*.
-   
-3. Similarly, add this action for other tabs as well.
-
-![adding-analytics-action-with-parameter.gif](adding-analytics-action-with-parameter.gif)
+<details>
+<summary>
+Why don’t I see any Analytics data yet?
+</summary>
+<p>
+Event data may not appear instantly, which can be frustrating during development. Firebase may take up to **24 hours** to display event data in the main dashboards. Ensure your device has internet access and you’ve used the app at least once since enabling Analytics.
+</p>
+</details>
