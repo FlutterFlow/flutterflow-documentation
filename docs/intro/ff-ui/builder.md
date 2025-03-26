@@ -13,7 +13,7 @@ keywords: [App Builder, FlutterFlow, UI, Design]
 On opening the project, you'll see the App Builder, which consists of four main sections: 
 [Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties Panel](#properties-panel).
 
-![app-builder](imgs/builder.avif)
+![navigation-menu.avif](imgs/navigation-menu.avif)
 
 ## Navigation Menu
 
@@ -34,8 +34,9 @@ Here is a list of all the features accessible from the navigation menu:
 11. **Custom Functions**: Add custom functionalities, widgets, and actions.
 12. **Cloud Functions**: Write and deploy cloud functions for Firebase.
 13. **Tests**: Add automated tests.
-14. **Theme settings**: Customize visual appearance.
-15. **Settings and Integrations**: Access app-related settings and integrations.
+14. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
+15. **Theme settings**: Customize visual appearance.
+16. **Settings and Integrations**: Access app-related settings and integrations.
 
 ## ToolBar
 

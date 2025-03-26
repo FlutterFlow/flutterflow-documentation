@@ -2,8 +2,8 @@
 slug: /integrations/gemini
 title: Gemini
 description: Learn how to get started with the Gemini action in your FlutterFlow app to generate text, process text-and-image inputs, and count tokens.
-tags: [Gemini, Text Generation, Token Counting, Integration]
-sidebar_position: 1
+tags: [AI, Gemini, Integration]
+sidebar_position: 2
 keywords: [FlutterFlow, Gemini, Text Generation, Token Counting, Integration]
 ---
 
@@ -11,6 +11,11 @@ keywords: [FlutterFlow, Gemini, Text Generation, Token Counting, Integration]
 # Gemini
 
 With the Gemini action, you can generate text, process text-and-image inputs, and effortlessly count tokens.
+
+:::warning[Deprecation Notice]
+The Gemini action will eventually be deprecated. We recommend transitioning to the newer and more powerful [**AI Agent**](ai-agents.md) actions.
+:::
+
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/1e7a383897334f6da96c58639e7abcfc?sid=b8363cff-ccfb-4ade-98fc-22a2a587e68e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
