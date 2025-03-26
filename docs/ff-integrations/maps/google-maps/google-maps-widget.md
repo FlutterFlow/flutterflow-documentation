@@ -23,7 +23,7 @@ ensure they meet your app development needs before integration.
 ![google-maps-widget.png](../imgs/google-maps-widget.png)
 
 :::info[Prerequisite]
-Ensure you have added the [**Google Map API keys**](generate-maps-keys#get-api-keys) before adding the Google Maps widget to your project
+Ensure you have added the [**Google Map API keys**](generate-maps-keys.md#get-api-keys) before adding the Google Maps widget to your project
 :::
 
 ## Add Google Map widget
