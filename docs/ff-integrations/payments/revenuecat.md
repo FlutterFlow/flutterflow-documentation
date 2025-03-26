@@ -40,14 +40,6 @@ The [**underlying package for RevenueCat**](https://pub.dev/packages/purchases_f
 </div>
 <p></p>
 
-Integrating the RevenueCat in your app comprises the following steps:
-
-1. [Setup RevenueCat](#1-setup-revenuecat)
-2. [Enable RevenueCat in FlutterFlow](#2-enable-revenuecat-in-flutterflow)
-3. [Retrieving in-app purchases and subscription details](#3-retrieving-in-app-purchases-and-subscription-details)
-4. [Add RevenueCat actions](#4-add-revenuecat-actions)
-5. [Testing](#5-testing)
-6. [Launch](#6-launch)
 
 ## Setup RevenueCat
 
