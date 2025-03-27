@@ -77,7 +77,7 @@ To use the CLI, you'll need to create an API token and use it in your requests. 
 
 If you are updating an existing project and do not want certain files to be changed during a code export, you can create a `.flutterflowignore` file in the root of your project directory. This file should contain a list of files to be ignored using globbing syntax.
 
-### **Example:**  
+### Example:
 If your project is located at:  
 ```
 /Users/yourname/projects/my_flutterflow_app/
