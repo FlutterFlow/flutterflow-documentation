@@ -190,8 +190,9 @@ Once the library is imported, following resources are accessible for use:
 - [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Actions](../../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../../resources/ui/widgets/intro-widgets.md)
 - [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned) 
 
-:::note
-Pages and Firestore Collections are still being worked on and may come in future updates.
+:::info
+- [**Pages**](../../resources/ui/pages/intro-pages.md), [**Firestore Collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md), and [**Cloud Functions**](../../ff-concepts/adding-customization/cloud-functions.md) are still being worked on and may come in future updates.
+- Creation of [**AI Agents**](../../ff-integrations/ai/ai-agents.md) is not yet supported in the Library project
 :::
 
 It's important to note that these resources show up where they are instantiated. For example:
