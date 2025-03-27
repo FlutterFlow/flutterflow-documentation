@@ -87,7 +87,7 @@ Then, place the `.flutterflowignore` file in:
 /Users/yourname/projects/.flutterflowignore
 ```
 
-### **Example `.flutterflowignore` contents:**  
+### Example `.flutterflowignore` contents:
 ```
 my_flutterflow_app/android/app/build.gradle    # Prevents FlutterFlow from overwriting native Android build configuration
 my_flutterflow_app/ios/Runner/Info.plist       # Keeps iOS app metadata unchanged
