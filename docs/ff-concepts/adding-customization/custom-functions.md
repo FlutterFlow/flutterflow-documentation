@@ -8,7 +8,31 @@ keywords: [FlutterFlow, Custom Functions, Customizations, Flutter, Dart, Pub.dev
 ---
 
 # Custom Functions
-Custom Functions in FlutterFlow allow you to perform simple Dart calculations and logic. These functions are ideal for tasks that require immediate results, such as data transformations, mathematical calculations, or simple logic operations. **Custom Functions** enable you to encapsulate reusable logic, making your code more organized and maintainable.
+Custom Functions in FlutterFlow allow you to perform simple Dart calculations and logic. These functions are ideal for tasks that require immediate results, such as data transformations, mathematical calculations, or simple logic operations. **Custom Functions** enable you to encapsulate reusable logic, making your code more organized and maintainable. Let's see some common examples:
+
+**To calculate discount given price and discount rate:**
+
+```js
+double calculateDiscount(double price, double discountRate) {
+    return price - (price * discountRate / 100);
+}
+```
+
+**To capitalize a String input:**
+
+```js
+String capitalize(String input) {
+    return input.isNotEmpty ? '${input[0].toUpperCase()}${input.substring(1)}' : '';
+}
+```
+
+**To convert Celsius to Fahrenheit**
+
+```js
+double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9/5) + 32;
+}
+```
 
 ## Key Use Cases
 
@@ -77,38 +101,5 @@ function code. Instead, you can pass the app state variable as a parameter and t
 </details>
 
 
-## Some common examples
-
-<details>
-<summary>Calculating Discounts:</summary>
-
-```
-double calculateDiscount(double price, double discountRate) {
-return price - (price * discountRate / 100);
-}
-```
-
-</details>
-
-
-<details>
-<summary>String Capitalization:</summary>
-
-```
-String capitalize(String input) {
-return input.isNotEmpty ? '${input[0].toUpperCase()}${input.substring(1)}' : '';
-}
-```
-</details>
-
-<details>
-<summary>Temperature Conversion:</summary>
-
-```
-double celsiusToFahrenheit(double celsius) {
-return (celsius * 9/5) + 32;
-}
-
-```
-</details>
-
+## Utility Functions Library
+Instead of building everything from scratch, explore our **[Utility Functions Library](https://marketplace.flutterflow.io/item/ZVBmWMGpXe6vqnASRHDA)** — packed with 50+ helpful functions for everyday tasks like formatting text, manipulating dates, validating input, and more. Easily plug them into your custom logic to save time and reduce errors.

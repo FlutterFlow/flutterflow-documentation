@@ -645,12 +645,12 @@ You can add the responsive style by following the instructions below:
 </div>
 <p></p>
 
-### Adding Custom Fonts
+### Custom Fonts
 
 Adding Custom Fonts to your app makes it stand out from others. This section allows you to upload your own fonts. You can upload the custom font files of types `.ttf`, `.otf`, and `.woff.` Once the font is uploaded, you can use it directly from the widget or add it to the text style section to create a general theme.
 
 :::info
-Before you upload the *Custom Fonts*, make sure you have permission to use the font in your application.
+Before you upload the Custom Fonts, make sure you have permission to use the font in your application.
 :::
 
 To add the *Custom Fonts*:
@@ -718,15 +718,18 @@ If you prefer watching a video tutorial, here's the one for you:
 <p></p>
 
 
-### Adding Custom Icons
+### Custom Icons
 
-Adding *Custom Icons* to your app helps you build the brand identity. Before you add the Custom Icons in FlutterFlow, you need to generate them from any icon generation site (like [fluttericon](https://www.fluttericon.com/) and [iconmoon](https://icomoon.io/)) and export them using appropriate settings.
+Custom icons help reinforce your brand identity and add a unique touch to your app. Before uploading icons to FlutterFlow, you’ll first need to generate them using an icon font generator like [FlutterIcon](https://www.fluttericon.com/) or [IcoMoon](https://icomoon.io/). 
+
+We’ve also built our **[own SVG to Custom Icon Generator](https://icons.flutterflow.app)** to make the process even easier — feel free to use that instead.
+
 
 :::info
-Make sure you have permission to use the icons in your application.
+Make sure you have the proper rights or licenses to use the icons in your application.
 :::
 
-To add custom icons:
+**Steps to Generate and Add Custom Icons**
 
 1. Head over to the [iconmoon](https://icomoon.io/app/#/select).
 2. Import your custom icon (.svg) or select from the free icons set.
@@ -769,8 +772,10 @@ To add custom icons:
 12. Now click on the **Upload Icon Info** button.
 13. Select and upload the `filename.dart` under the downloaded folder (besides the fonts folder).
 14. Click **Add Icons**.
-15. To use a custom icon, add the **Icon** widget, move to the properties panel, and scroll down to the **Icon** section.
-16. Click on the already selected icon, select the **Custom Icons** tab, and then select your icon.
+
+#### Use the Custom Icon
+
+To use a custom icon, add the **Icon** widget, move to the properties panel, and scroll down to the **Icon** section. Click on the already selected icon, select the **Custom Icons** tab, and then select your icon.
 
 <div style={{
     position: 'relative',
