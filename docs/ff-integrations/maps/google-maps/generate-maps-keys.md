@@ -69,10 +69,7 @@ com/embed/2c644aa950c44f76b19c6787784cf3b5?sid=3e22206e-4b4b-4734-b842-0c644d32f
 
 ## Add Places APIs
 
-To enable **Places API** in your project, please follow the steps under 
-["Add Maps API" section](#add-maps-apis) and additionally also enable Places API from the API 
-library if not 
-already enabled. 
+You can [enable the **Places API**](https://console.cloud.google.com/apis/library/places-backend.googleapis.com) from your Google Cloud Console — make sure you are in the correct Google Cloud project. **Please note** that the current [PlacePicker widget](../../maps/google-maps/place-picker-widget.md) uses the legacy Places API. We plan to update the PlacePicker widget soon to support the new API. In the meantime, ensure that the legacy Places API is enabled for full functionality.
 
 ![places-api.png](imgs/places-api.png)
 
