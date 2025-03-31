@@ -13,9 +13,8 @@ Custom Functions in FlutterFlow allow you to perform simple Dart calculations an
 **To calculate discount given price and discount rate:**
 
 ```js
-
 double calculateDiscount(double price, double discountRate) {
-return price - (price * discountRate / 100);
+    return price - (price * discountRate / 100);
 }
 ```
 
@@ -23,7 +22,7 @@ return price - (price * discountRate / 100);
 
 ```js
 String capitalize(String input) {
-return input.isNotEmpty ? '${input[0].toUpperCase()}${input.substring(1)}' : '';
+    return input.isNotEmpty ? '${input[0].toUpperCase()}${input.substring(1)}' : '';
 }
 ```
 
@@ -31,9 +30,8 @@ return input.isNotEmpty ? '${input[0].toUpperCase()}${input.substring(1)}' : '';
 
 ```js
 double celsiusToFahrenheit(double celsius) {
-return (celsius * 9/5) + 32;
+    return (celsius * 9/5) + 32;
 }
-
 ```
 
 ## Key Use Cases

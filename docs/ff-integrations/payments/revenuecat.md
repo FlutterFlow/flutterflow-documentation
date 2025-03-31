@@ -99,8 +99,6 @@ To enable RevenueCat in FlutterFlow, follow the steps below:
 
 To show in-app purchase and subscription information — such as pricing, product name, and description — within your app’s UI, you'll need to fetch these details from RevenueCat using the appropriate API or method.
 
-To display the in-app purchases and subscription details, such as price, description, etc., inside the UI elements, you need to retrieve this information from RevenueCat.
-
 Here is an example of retrieving monthly subscription details:
 
 <div style={{
