@@ -8,70 +8,39 @@ sidebar_position: 0
 ---
 # Set Form Field [Action]
 
-This action allows you to set a value for the Form widgets. For example, you could use this action to auto-populate a form based on a user's previous submission.
+The **Set Form Field** action allows you to programmatically populate or update the value of any input widget—like a TextField, Dropdown, or other form elements—at runtime. This is especially useful when you want to quickly fill or modify user input fields based on user preferences (e.g., saved addresses) or pre-stored information.
 
-You could also dynamically update a dropdown menu based on a user's previous selection, such as showing relevant cities based on a selected country.
+:::info[possible use cases]
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/7YwkCFeBsQ6rnYzr3zQh?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+- **Use Saved Address:** If a user toggles "Use Saved Address," you might set the Full Name, Street Address, City, and ZIP Code fields to values pulled from a user profile or database.
+- **Edit Existing Data:** When navigating to an "Edit Profile" page, you can auto-populate the TextFields with the current user info so they only change what’s needed.
+- **Auto select Country/State Dropdown:** Automatically select the user's country and state based on location services or their account settings.
 
-## Adding Set Form Field action
+:::
 
-Follow the steps below to add this action to any widget.
+While adding the Set Form Field action, select the target widget (e.g., `TextField`) and assign a value—this could come from a variable like `fullName` in your backend, app state, or page parameters.
 
-1. Select the **Widget** (e.g., Button, etc.) on which you want to add the action.
-2. Select **Actions** from the properties panel. If it's the first action, click the **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
-3. Search the **Set Form Field** (under *State Management*) action and select the widget you would like to set.
-4. Now, you can set its value directly or from a variable.
+![set-form-field-action.avif](imgs/set-form-field-action.avif)
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dnZobgoW5fi0Jm4OkFvL?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+If you need to update several widgets (such as a TextField and a Dropdown), use a separate Set Form Field action for each and specify the appropriate value.
+
+![multiple-set-form-field.avif](imgs/multiple-set-form-field.avif)
+
+#### Focus Field When Set
+
+You can also set additional preferences like whether the field should be focused and how the cursor should behave using the **Focus Field When Set** option. When you enable the Focus Field When Set option, it automatically sets the focus on the field once its value is assigned.
+
+It is helpful in a scenario like an “Edit Full Name” switch—when turned on, the field preloads the existing name and puts the cursor in place for immediate editing.
+
+
+When Focus Field When Set is enabled, you can set one of the following **Cursor Position**:
+
+- **End**: Places the cursor at the end of the newly filled text, letting the user continue typing from the last character.
+- **Start**: Positions the cursor at the beginning of the text.
+- **Highlight**: Selects (highlights) the entire text, letting the user immediately overwrite it.
+- **Preserve**: Maintains the cursor location as it was, if any—useful if the user was already typing and you only partially changed the text.
+
+![focus-field-when-set](imgs/focus-field-when-set.avif)
 
 :::info
 You can also set form fields that are inside the components.
