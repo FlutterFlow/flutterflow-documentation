@@ -13,6 +13,10 @@ In this section, we discuss the important concepts of saving and versioning in y
 
 ## Versions
 
+:::warning[Project Versions are now deprecated]
+You can no longer create new versions in FlutterFlow. However, any previously created versions will remain accessible. Moving forward, we recommend using [**Commits**](#commits), which provides a more robust way to track changes and manage your project history.
+:::
+
 Versions enable you to save specific named states of your project. This function is particularly useful for recovery purposes. If you accidentally delete a page or component or change settings, you can easily revert to a saved version.
 
 ### Saving a version
