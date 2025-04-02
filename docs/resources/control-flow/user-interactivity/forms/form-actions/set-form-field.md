@@ -45,5 +45,5 @@ When Focus Field When Set is enabled, you can set one of the following **Cursor 
 :::info
 You can also set form fields that are inside the components.
 <p></p>
-![set-form-field-in-component](../../imgs/set-form-field-in-component.avif)
+![set-form-field-component](imgs/set-form-field-component.avif)
 :::
