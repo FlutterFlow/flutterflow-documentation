@@ -1,8 +1,8 @@
 ---
 slug: /collaboration/saving-versioning
 title: Saving and Versioning
-description: Learn about the crucial concepts of saving and versioning in your FlutterFlow project.
-tags: [Saving, Versioning, Collaboration]
+description: Learn about versioning in your FlutterFlow.
+tags: [Versioning]
 sidebar_position: 2
 keywords: [Saving, Versioning, Collaboration, FlutterFlow, Concepts]
 ---
@@ -16,6 +16,7 @@ In this section, we discuss the important concepts of saving and versioning in y
 :::warning[Project Versions are now deprecated]
 You can no longer create new versions in FlutterFlow. However, any previously created versions will remain accessible. Moving forward, we recommend using [**Commits**](#commits), which provides a more robust way to track changes and manage your project history.
 :::
+
 
 ### Restoring a version
 
