@@ -28,22 +28,22 @@ If you need to update several widgets (such as a TextField and a Dropdown), use 
 
 #### Focus Field When Set
 
-You can also set additional preferences like whether the field should be focused and how the cursor should behave using the **Focus Field When Set** option. When you enable the Focus Field When Set option, it automatically sets the focus on the field once its value is assigned.
+You can also set additional preferences like whether the field should be focused and how the cursor should behave using the **Focus Field When Set** option. When you enable the option, it automatically sets the focus on the field once its value is assigned.
 
-It is helpful in a scenario like an “Edit Full Name” switch—when turned on, the field preloads the existing name and puts the cursor in place for immediate editing.
+This is helpful in scenarios such as an “Edit Full Name” switch—when turned on, the field preloads the existing name and positions the cursor for immediate editing.
 
 
-When Focus Field When Set is enabled, you can set one of the following **Cursor Position**:
+When **Focus Field When Set** is enabled, you can set one of the following **Cursor Position**:
 
 - **End**: Places the cursor at the end of the newly filled text, letting the user continue typing from the last character.
 - **Start**: Positions the cursor at the beginning of the text.
 - **Highlight**: Selects (highlights) the entire text, letting the user immediately overwrite it.
-- **Preserve**: Maintains the cursor location as it was, if any—useful if the user was already typing and you only partially changed the text.
+- **Preserve**: Maintains the cursor location as it was (if any), which is useful when the user is already typing and only part of the text has changed.
 
 ![focus-field-when-set](imgs/focus-field-when-set.avif)
 
 :::info
-You can also set form fields that are inside the components.
+You can also set form fields inside the current widget’s child component.
 <p></p>
 ![set-form-field-component](imgs/set-form-field-component.avif)
 :::
