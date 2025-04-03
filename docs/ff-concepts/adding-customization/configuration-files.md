@@ -17,7 +17,7 @@ Here are the key configuration files you can edit:
 
 - [**`AndroidManifest.xml`**](#androidmanifestxml-android) – Configures app permissions, metadata, and intent filters for Android.
 - [**`Info.plist`**](#infoplist-ios)– Manages iOS app settings, including permissions and configurations.
-- [**`Entitlements.plist`**](#entitlementsplist-ios) – Defines iOS app privileges such as, push notifications and Apple Pay.
+- [**`Entitlements.plist`**](#entitlementsplist-ios) – Defines iOS app privileges such as push notifications and Apple Pay.
 - [**`main.dart`**](#maindart-flutter) – The entry point of your Flutter app, where you can modify app-level logic.
 - [**ProGuard files**](#proguard-file-android) – Used for code shrinking and obfuscation in Android builds.
 
@@ -35,7 +35,7 @@ FlutterFlow provides two main ways to modify native XML files: [**Add Individual
 
 ### Option 1: Add Individual Snippets
 
-**Snippets** are small pieces of code that you can inject into the native files at predefined locations. Instead of opening the whole file to edit, you provide just the fragment you want to add, and FlutterFlow merges it into the file in the correct place. This is safer and easier for small additions such as, a permission line or a meta-data tag.
+**Snippets** are small pieces of code that you can inject into the native files at predefined locations. Instead of opening the whole file to edit, you provide just the fragment you want to add, and FlutterFlow merges it into the file in the correct place. This is safer and easier for small additions such as a permission line or a meta-data tag.
 
 #### Snippet Placement for Android
 
@@ -148,13 +148,13 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
 :::tip
 
 - Don’t remove FlutterFlow’s existing entries unless you are sure. It’s safer to only add or modify necessary lines and leave the rest as is.
-- Use Manual Edit Mode for bulk or complex edits that the snippet can’t easily do, such as, reordering tags, removing something, or pasting in a large chunk of config. Always verify that the app still builds and runs after such edits.
+- Use Manual Edit Mode for bulk or complex edits that the snippet can’t easily do, such as reordering tags, removing something, or pasting in a large chunk of config. Always verify that the app still builds and runs after such edits.
 - You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
 :::
 
 ##   Include Variables in Native Code
 
-When editing native files in FlutterFlow, you may need to include dynamic values, such as, API keys, app configurations, or environment-specific settings. Instead of hardcoding these values directly in **`AndroidManifest.xml`**, **`Info.plist`**, or other native files, you can use FlutterFlow [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) to keep your app flexible and secure.
+When editing native files in FlutterFlow, you may need to include dynamic values, such as API keys, app configurations, or environment-specific settings. Instead of hardcoding these values directly in **`AndroidManifest.xml`**, **`Info.plist`**, or other native files, you can use FlutterFlow [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) to keep your app flexible and secure.
 
 To include a variable in a configuration file, start by creating a **file-level variable** and assigning it a value from either your **environment values** or **library values**. Then, reference this variable using a placeholder format (e.g., `{{apiToken}}`) within the configuration file. These placeholders in native files are automatically replaced with their actual values during the app build process.
 
@@ -272,7 +272,7 @@ FlutterFlow allows editing several key native files. Below, we cover each file�
 
 `AndroidManifest.xml` is the master configuration file for your Android app. It is located in the root directory of the app's `android/app/src/main` folder and declares essential app information to the Android OS and Google Play. This includes your app’s package name, components (activities, services, receivers), and the permissions it needs.
 
-It defines hardware and software features the app depends on, such as, Bluetooth, GPS, or sensors. The manifest manages intents and filters, determining how the app responds to system events and deep linking. It also includes metadata and configuration for SDKs and libraries, such as API keys or feature flags.
+It defines hardware and software features the app depends on, such as Bluetooth, GPS, or sensors. The manifest manages intents and filters, determining how the app responds to system events and deep linking. It also includes metadata and configuration for SDKs and libraries, such as API keys or feature flags.
 
 In short, the manifest is like an app’s identity card and permission sheet for Android.
 
@@ -302,7 +302,7 @@ This registers `NewScreenActivity` so the system knows it exists.
 
 **Example 2: Requesting Permissions** 
 
-If your app requires access to restricted resources such as, wake locks (to keep the device awake) or audio recording, you must declare the necessary permissions in `AndroidManifest.xml` by [manually editing](#option-2-manual-edit-mode) the file. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-custom-permission) in FlutterFlow.
+If your app requires access to restricted resources such as wake locks (to keep the device awake) or audio recording, you must declare the necessary permissions in `AndroidManifest.xml` by [manually editing](#option-2-manual-edit-mode) the file. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-custom-permission) in FlutterFlow.
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -399,7 +399,7 @@ You can modify the `AndroidManifest.xml` file by either [**adding a snippet**](#
 
 `Info.plist` (Information Property List) is the configuration file for iOS apps. It’s a structured XML file that provides iOS with essential information about your app’s configuration and requirements.
 
-The `Info.plist`defines things such as, your app’s bundle identifier, display name, version, and most importantly, usage descriptions for permissions and other settings iOS needs at runtime. The file is required for every iOS app and is located in the project’s `/ios/Runner/` directory of your FlutterFlow apps.
+The `Info.plist`defines things such as your app’s bundle identifier, display name, version, and most importantly, usage descriptions for permissions and other settings iOS needs at runtime. The file is required for every iOS app and is located in the project’s `/ios/Runner/` directory of your FlutterFlow apps.
 
 Essentially, it’s the blueprint for iOS to understand your app’s capabilities and needs.
 
@@ -467,7 +467,7 @@ You can modify the `Info.plist` file by either [**adding a snippet**](#snippet-p
 
 ### `Entitlements.plist` (iOS)
 
-The `Entitlements.plist` file is a property list in iOS applications that defines the app’s security-related capabilities and permissions. It grants specific privileges to an app, allowing it to access Apple services such as, iCloud, Push Notifications, App Groups, Background Modes, and Keychain access. It is located in the **`/ios/Runner/`** directory of your FlutterFlow app and is named **`Runner.entitlements`**.
+The `Entitlements.plist` file is a property list in iOS applications that defines the app’s security-related capabilities and permissions. It grants specific privileges to an app, allowing it to access Apple services such as iCloud, Push Notifications, App Groups, Background Modes, and Keychain access. It is located in the **`/ios/Runner/`** directory of your FlutterFlow app and is named **`Runner.entitlements`**.
 
 This file ensures that only authorized apps can use these features, maintaining security and preventing unauthorized access to sensitive system functions.
 
@@ -475,7 +475,7 @@ Here are some scenarios where you may need to modify the `Entitlements.plist` fi
 
 **Example 1: Enabling iCloud Storage**
 
-If your app integrates **iCloud services**, such as, syncing user data or storing documents, you must add iCloud entitlements.
+If your app integrates **iCloud services**, such as syncing user data or storing documents, you must add iCloud entitlements.
 
 ```xml
 <key>com.apple.developer.icloud-container-identifiers</key>
@@ -538,7 +538,7 @@ You can modify the `Entitlements.plist` file by either [**adding a snippet**](#s
 
 The `main.dart` file is the entry point of every FlutterFlow app. It is the first file that runs when the app starts and is responsible for initializing the application, configuring dependencies, and defining the root widget. Located in the **`lib/`** directory, `main.dart` contains the `main()` function, which is required for every FlutterFlow app.
 
-If you need to execute any custom Dart code at startup — such as, initializing third-party SDKs, setting global configurations, service locators, printing a debug log, or running certain functions once — `main.dart` is the place to do it.
+If you need to execute any custom Dart code at startup — such as initializing third-party SDKs, setting global configurations, service locators, printing a debug log, or running certain functions once — `main.dart` is the place to do it.
 
 :::info
 [**Adding Snippets**](#option-1-add-individual-snippets) isn't available for `main.dart`. Instead, you can directly modify the file using [**Manual Edit Mode**](#option-2-manual-edit-mode).
