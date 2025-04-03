@@ -106,9 +106,7 @@ To add a snippet to native iOS files, navigate to **Custom Code** (from the left
 
 :::tip
 - Snippet insertion isn't available for `main.dart`. Instead, you can directly modify the file using [**Manual Edit Mode**](#option-2-manual-edit-mode).
-- You will soon be able to use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. 
-
-<!-- For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section. -->
+- You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
 :::
 
 ### Option 2: Manual Edit Mode
@@ -151,20 +149,83 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
 
 - Don’t remove FlutterFlow’s existing entries unless you are sure. It’s safer to only add or modify necessary lines and leave the rest as is.
 - Use Manual Edit Mode for bulk or complex edits that the snippet can’t easily do, like reordering tags, removing something, or pasting in a large chunk of config. Always verify that the app still builds and runs after such edits.
-<!-- - You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section. -->
+- You can also use your Development [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) inside snippets. For more details, refer to the [**Include Variables in Native Code**](#include-variables-in-native-code) section.
 :::
 
-<!-- ##   Include Variables in Native Code
+##   Include Variables in Native Code
 
 When editing native files in FlutterFlow, you may need to include dynamic values, such as API keys, app configurations, or environment-specific settings. Instead of hardcoding these values directly in **`AndroidManifest.xml`**, **`Info.plist`**, or other native files, you can use FlutterFlow [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) to keep your app flexible and secure.
 
-FlutterFlow allows you to use placeholders in native files that get replaced with actual values during the app build process. These placeholders help in managing different environments (development, staging, production) and keeping sensitive data out of the codebase.
+To include a variable in a configuration file, start by creating a **file-level variable** and assigning it a value from either your **environment values** or **library values**. Then, reference this variable using a placeholder format (e.g., `{{apiToken}}`) within the configuration file. These placeholders in native files are automatically replaced with their actual values during the app build process.
+
+Here’s exactly how you do it:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/srZqoYaaoVR1mCE3t8AL?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
+You can also directly insert a variable placeholder (e.g., `{{variableName}}`) into the code using a snippet or manual edit mode and FlutterFlow automatically creates the corresponding file-level variable.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/szmDUd7g9ZqX9OoNJVws?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
+:::tip
+You can use the file level variable across different snippets within the same file.
+:::
 
 Here are some examples that utilize variables in native code:
 
 **Example 1: Using API Keys in `AndroidManifest.xml`**
 
-Let’s say you are integrating the Mapbox package in your FlutterFlow app, and it requires an API Key in the form of a token inside the `AndroidManifest.xml` file. Instead of hardcoding the token, you can use an environment variable like this:
+Let’s say you are integrating the Mapbox package in your FlutterFlow app, and it requires an API Key in the form of a token inside the `AndroidManifest.xml` file. Instead of hardcoding the token, you can use a variable like this:
 
 ```xml
 <meta-data
@@ -172,14 +233,12 @@ Let’s say you are integrating the Mapbox package in your FlutterFlow app, and 
     android:value="{{MAPBOX_ACCESS_TOKEN}}"/>
 ```
 
-Here, `{{MAPBOX_ACCESS_TOKEN}}` is an Environment Values that FlutterFlow replaces with the actual token at build time.
-
-![variables-in-native-code-example-1](imgs/variables-in-native-code-example-1.avif) -->
+Here, `{{MAPBOX_ACCESS_TOKEN}}` is a file level variable that holds the Environment Value.
 
 
-<!-- **Example 2: Configuring `Info.plist` for iOS**
+**Example 2: Configuring `Info.plist` for iOS**
 
-For iOS apps, you might need to configure App Transport Security (ATS) to allow non-HTTPS connections. Instead of manually setting `NSAllowsArbitraryLoads` to `true`, you can use a FlutterFlow variable:
+For iOS apps, you might need to configure App Transport Security (ATS) to allow non-HTTPS connections. Instead of manually setting `NSAllowsArbitraryLoads` to `true`, you can use a variable:
 
 ```xml
 <key>NSAllowsArbitraryLoads</key>
@@ -188,14 +247,12 @@ For iOS apps, you might need to configure App Transport Security (ATS) to allow 
 
 If `ALLOW_HTTP_TRAFFIC` is set to `true` in FlutterFlow’s Environment Value, the app will allow HTTP connections.
 
-![variables-in-native-code-example-2](imgs/variables-in-native-code-example-2.avif)
-
 
 **Example 3: Using Library Values**
 
 If you are building a [FlutterFlow Library](../../resources/projects/libraries.md) and need to include API keys in native code without exposing them when users import the library, you can use [Library Values](../../resources/projects/libraries.md#library-values) as placeholders. This ensures that when someone installs your library, they can define their own values without seeing the actual key or credentials inside the native files.
 
-For example, If your library requires an API key for a third-party service (e.g., Google Maps or Payment Solution), you don’t want to expose it directly in the manifest file. Instead, use a Library Value like this:
+For example, if your library requires an API key for a third-party service (like Google Maps or a payment provider), it’s best not to expose the key directly in the manifest file. Instead, create a file-level variable and assign it a Library Value.
 
 ```
 <application>
@@ -206,9 +263,6 @@ For example, If your library requires an API key for a third-party service (e.g.
 ```
 
 The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{MAPS_API_KEY}}` with the user-defined key.
-
-![lib-values-in-native-code-example-1](imgs/lib-values-in-native-code-example-1.avif) -->
-
 
 ## Editable Files
 
@@ -669,7 +723,7 @@ This ensures reflection-based code continues working.
 - **Testing on Devices:** Especially for anything related to `Info.plist` or entitlements, always test on a real iOS device if possible. Some issues (like missing entitlements or background mode usage) won’t show up in the simulator. Similarly, test Android changes on a device or emulator with a release build – because ProGuard rules effects, for example, only show in release mode.
 - **Monitoring Logs and Errors:** After making changes, monitor the Xcode console or Android logcat when running the app. If there are misconfigurations, you often get warnings.
 - **Stay Updated:** FlutterFlow may improve native editing features over time. Keep an eye on FlutterFlow’s docs or community announcements. If they introduce a new easier way, prefer that to manual editing when possible, as it will be more foolproof.
-- **Security Consideration:** Remember that anything in these files (especially `Info.plist`, `AndroidManifest.xml`) is essentially public in the distributed app. Don’t assume an API key in `Info.plist` is hidden – it’s not. For keys you must include (maps, etc.), you'll soon be able to securely manage them using [private environment values](../../testing-deployment-publishing/development-environments/development-environments.md#private-environment-values) and easily monitor their usage.
+- **Security Consideration:** Remember that anything in these files (especially `Info.plist`, `AndroidManifest.xml`) is essentially public in the distributed app. Don’t assume an API key in `Info.plist` is hidden – it’s not. For keys you must include (maps, etc.), consider using [private environment values](../../testing-deployment-publishing/development-environments/development-environments.md#private-environment-values) and monitoring their usage.
 
 ## FAQs
 
