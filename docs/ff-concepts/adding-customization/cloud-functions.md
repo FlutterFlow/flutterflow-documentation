@@ -245,7 +245,9 @@ For this example, we'll use the result (i.e., generated logo image URL) and set 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
+## Testing Cloud Functions
 
+[//]: # (// Puf notes)
 
 ## FAQs
 
