@@ -1,8 +1,8 @@
 ---
 slug: /collaboration/saving-versioning
 title: Saving and Versioning
-description: Learn about the crucial concepts of saving and versioning in your FlutterFlow project.
-tags: [Saving, Versioning, Collaboration]
+description: Learn about versioning in your FlutterFlow.
+tags: [Versioning]
 sidebar_position: 2
 keywords: [Saving, Versioning, Collaboration, FlutterFlow, Concepts]
 ---
@@ -13,40 +13,10 @@ In this section, we discuss the important concepts of saving and versioning in y
 
 ## Versions
 
-Versions enable you to save specific named states of your project. This function is particularly useful for recovery purposes. If you accidentally delete a page or component or change settings, you can easily revert to a saved version.
+:::warning[Project Versions are now deprecated]
+You can no longer create new versions in FlutterFlow. However, any previously created versions will remain accessible. Moving forward, we recommend using [**Commits**](#commits), which provides a more robust way to track changes and manage your project history.
+:::
 
-### Saving a version
-
-Saving the latest changes will store the current state of your app in the version control. In the future, if anything goes wrong, you can restore your app to the currently saved state.
-
-Ideally, you should save the version whenever you accomplish something important, for example, after finishing a page, adding configuration, etc.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/nxgOUj0g3jwszbXnCSXE?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
 
 ### Restoring a version
 

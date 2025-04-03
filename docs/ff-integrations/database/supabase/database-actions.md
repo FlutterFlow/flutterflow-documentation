@@ -257,3 +257,6 @@ If you are using this trigger on a ListView, make sure to **disable** the **Infi
     </iframe>
 </div>
 <p></p>
+
+## Offline Support for Supabase Apps
+If you need offline capabilities in your Supabase-powered app, consider using the **[PowerSync Library](https://marketplace.flutterflow.io/item/dm1cuOwYzDv6yQL2QOFb)** built by the **[PowerSync](https://www.powersync.com/)** team. It's designed specifically to enable seamless offline-first experiences by syncing your Supabase data locally and keeping it up to date when the device reconnects.
