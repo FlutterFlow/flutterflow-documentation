@@ -247,7 +247,44 @@ com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e
 
 ## Testing Cloud Functions
 
-[//]: # (// Puf notes)
+### How can I test sending push notifications without writing to Firestore?
+
+The Google Cloud console has built-in functionality to allow you to trigger a Cloud Function for testing. This means that after deploying Cloud Functions, you can test them without writing to Firestore (either from FlutterFlow or otherwise).
+
+Here's how to test FlutterFlow's `sendUserPushNotificationsTrigger` function in the Google Cloud console:
+
+1. Open your browser and navigate to the following URL:
+`https://console.cloud.google.com/functions/details/us-central1/sendUserPushNotificationsTrigger?env=gen1&project=<projectID>&tab=testing`
+\
+  In here:
+  * Replace `<projectID>` with your GCP or Firebase project.
+  * If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` too.
+2. Paste the following JSON into the <kbd>Configure Triggering Event</kbd> text area.
+    ```json
+    {
+        "value": {
+            "name": "projects/<projectID>/databases/(default)/documents/sendUserPushNotificationsTrigger/<documentID>",
+            "fields": {
+                "scheduled_time": { "stringValue": "" },
+                "initial_page_name": { "stringValue": "" },
+                "notification_title": { "stringValue": "Your friends are missing you!" },
+                "notification_text": { "stringValue": "Please come back to Nanochat" },
+                "user_refs": { "stringValue": "users/VXu6EvFMl5M8KMXriYRvFEWTFHA2" }
+            }
+        }
+    }
+    ```
+3. In the `name` property:
+  * Replace `<projectID>` with your GCP or Firebase project.
+  * Replace `<documentID>` with the ID of the document. This document must already exist in Firestore.
+  * If you're testing another function than `sendUserPushNotificationsTrigger`, update `ff_user_push_notifications` with the collection where the document is written.
+4. Update the values under the `fields` property for the message you want to send.
+\
+The `fields` in the example above are for FlutterFlow's built-in `sendUserPushNotificationsTrigger` function. If you're testing a different Cloud Function, you will need to update the `fields` for the code in *that* function.
+5. Click the <kbd>TEST THE FUNCTION</kbd> button.
+
+The Cloud Function will now run and gather the relevant entries from Google Cloud Logging.
+
 
 ## FAQs
 
@@ -300,7 +337,4 @@ Follow the steps below to fix the issue:
 ![add-cf-invoker-role](imgs/add-cf-invoker-role.avif)
 </p>
 </details>
-
-
-
 
