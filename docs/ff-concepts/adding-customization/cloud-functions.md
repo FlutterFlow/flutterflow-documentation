@@ -245,9 +245,7 @@ For this example, we'll use the result (i.e., generated logo image URL) and set 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-## Testing Cloud Functions
-
-### How can I test sending push notifications without writing to Firestore?
+## Testing Cloud Functions by sending push notifications without writing to Firestore
 
 The Google Cloud console has built-in functionality to allow you to trigger a Cloud Function for testing. This means that after deploying Cloud Functions, you can test them without writing to Firestore (either from FlutterFlow or otherwise).
 
@@ -258,9 +256,9 @@ Here's how to test FlutterFlow's `sendUserPushNotificationsTrigger` function in 
 \
   In here:
    - Replace `<projectID>` with your GCP or Firebase project.
-   - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` too.
+   - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` with the relevant cloud function name.
 2. Paste the following JSON into the <kbd>Configure Triggering Event</kbd> text area.
-    ```json
+   - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` with the relevant cloud function name.
     {
         "value": {
             "name": "projects/<projectID>/databases/(default)/documents/sendUserPushNotificationsTrigger/<documentID>",
