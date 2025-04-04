@@ -79,7 +79,7 @@ It enhances accessibility by allowing users to interact without relying solely o
 
 ## Haptic Feedback
 
-Using [Haptic Feedback](../alerts-notification/haptic-feedback.md), you can vibrate the user's device, which is particularly helpful for users with visual or cognitive impairments. It provides a tactile response to indicate that an action has been completed.
+Using [Haptic Feedback](../alerts/haptic-feedback.md), you can vibrate the user's device, which is particularly helpful for users with visual or cognitive impairments. It provides a tactile response to indicate that an action has been completed.
 
 For example, vibrating the user's device when successfully submitting a form.
 
