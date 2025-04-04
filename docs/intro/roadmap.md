@@ -26,7 +26,7 @@ The UI Layer is all about the visual elements and interactions in your app. It i
   - [Responsiveness](../ff-concepts/layout/responsive-layout.md)
   - Interaction Feedback 
     - [Animations](../ff-concepts/animations/animations.md)
-    - [Haptic Feedback](../ff-concepts/alerts-notification/haptic-feedback.md)
+    - [Haptic Feedback](../ff-concepts/alerts/haptic-feedback.md)
          
 ## Logic Layer
 The Logic Layer handles your app's business logic and decision-making. This includes state management, conditional actions, and navigation logic.
@@ -51,8 +51,8 @@ The Logic Layer handles your app's business logic and decision-making. This incl
    - [Deep & Dynamic Linking](../ff-concepts/navigation-routing/deep-dynamic-linking.md)
 
 - **Notification Systems**:
-   - [Triggering Push Notifications](../ff-concepts/alerts-notification/push-notifications.md)
-   - [Alert Dialogs](../ff-concepts/alerts-notification/alert-dialog.md)
+   - [Triggering Push Notifications](../ff-concepts/notifications/push-notifications.md)
+   - [Alert Dialogs](../ff-concepts/alerts/alert-dialog.md)
 
 ## Data Layer
 The Data Layer manages data storage, retrieval, and integration with external sources like APIs and databases.
