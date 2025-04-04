@@ -259,6 +259,7 @@ Here's how to test FlutterFlow's `sendUserPushNotificationsTrigger` function in 
    - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` with the relevant cloud function name.
 2. Paste the following JSON into the <kbd>Configure Triggering Event</kbd> text area.
    - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` with the relevant cloud function name.
+    ```json
     {
         "value": {
             "name": "projects/<projectID>/databases/(default)/documents/sendUserPushNotificationsTrigger/<documentID>",
