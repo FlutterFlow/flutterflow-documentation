@@ -2369,6 +2369,31 @@
         "type": 301
       },
       {
+        "source": "/concepts/alerts-notification/alert-dialog",
+        "destination": "/concepts/alerts/alert-dialog",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/dismiss-custom-dialog",
+        "destination": "/concepts/alerts/dismiss-custom-dialog",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/haptic-feedback",
+        "destination": "/concepts/alerts/haptic-feedback",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/push-notifications",
+        "destination": "/concepts/notifications/push-notifications",
+        "type": 301
+      },
+      {
+        "source": "/concepts/alerts-notification/one-signal",
+        "destination": "/concepts/notifications/one-signal",
+        "type": 301
+      },
+      {
         "source": "/concepts/state-management/generated-code",
         "destination": "/generated-code/state-management",
         "type": 301
@@ -2377,7 +2402,7 @@
         "source": "/concepts/custom-code/custom-files",
         "destination": "/concepts/custom-code/configuration-files",
          "type": 301
-      }, 
+      },
       {
         "source": "/marketplace/creators-hub/submit-item-for-reivew",
         "destination": "/marketplace/creators-hub/submit-item-for-review",
