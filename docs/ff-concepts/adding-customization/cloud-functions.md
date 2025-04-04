@@ -257,8 +257,8 @@ Here's how to test FlutterFlow's `sendUserPushNotificationsTrigger` function in 
 `https://console.cloud.google.com/functions/details/us-central1/sendUserPushNotificationsTrigger?env=gen1&project=<projectID>&tab=testing`
 \
   In here:
-  * Replace `<projectID>` with your GCP or Firebase project.
-  * If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` too.
+   - Replace `<projectID>` with your GCP or Firebase project.
+   - If you want to test a different Cloud Function, update `sendUserPushNotificationsTrigger` too.
 2. Paste the following JSON into the <kbd>Configure Triggering Event</kbd> text area.
     ```json
     {
@@ -275,9 +275,9 @@ Here's how to test FlutterFlow's `sendUserPushNotificationsTrigger` function in 
     }
     ```
 3. In the `name` property:
-  * Replace `<projectID>` with your GCP or Firebase project.
-  * Replace `<documentID>` with the ID of the document. This document must already exist in Firestore.
-  * If you're testing another function than `sendUserPushNotificationsTrigger`, update `ff_user_push_notifications` with the collection where the document is written.
+   - Replace `<projectID>` with your GCP or Firebase project.
+   - Replace `<documentID>` with the ID of the document. This document must already exist in Firestore.
+   - If you're testing another function than `sendUserPushNotificationsTrigger`, update `ff_user_push_notifications` with the collection where the document is written.
 4. Update the values under the `fields` property for the message you want to send.
 \
 The `fields` in the example above are for FlutterFlow's built-in `sendUserPushNotificationsTrigger` function. If you're testing a different Cloud Function, you will need to update the `fields` for the code in *that* function.
