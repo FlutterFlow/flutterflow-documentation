@@ -156,7 +156,7 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
 
 When editing native files in FlutterFlow, you may need to include dynamic values, such as API keys, app configurations, or environment-specific settings. Instead of hardcoding these values directly in **`AndroidManifest.xml`**, **`Info.plist`**, or other native files, you can use FlutterFlow [**Environment Values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values) and [**Library Values**](../../resources/projects/libraries.md#library-values) to keep your app flexible and secure.
 
-To include a variable in a configuration file, start by creating a **file-level variable** and assigning it a value from either your **environment values** or **library values**. Then, reference this variable using a placeholder format (e.g., `{{apiToken}}`) within the configuration file. These placeholders in native files are automatically replaced with their actual values during the app build process.
+To include a variable in a configuration file, start by creating a **file-level variable** and assigning it a value from either your **Environment Values** or **Library Values**. Then, reference this variable using a placeholder format (e.g., `{{apiToken}}`) within the configuration file. These placeholders in native files are automatically replaced with their actual values during the code generation process.
 
 Here’s exactly how you do it:
 
