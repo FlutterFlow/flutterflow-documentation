@@ -9,7 +9,7 @@ sidebar_position: 5
 Similar to a [**Page**](pages-generated-code.md), when creating a **[component](../resources/ui/components/intro-components.md)** in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. 
 
 :::info[Prerequisites]
-This guide uses examples from the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v1)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
+This guide uses examples from the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v2)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
 :::
 
 ## ComponentModel class
