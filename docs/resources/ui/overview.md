@@ -49,7 +49,7 @@ various UI elements to form a complete screen in the app. When you create a new 
 FlutterFLow, an empty page called `HomePage` is the first thing you see on your canvas. 
 
 How you define your pages defines the flow of the app and user experience for the user. For 
-example, in our [**E-commerce Demo app**](https://bit.ly/ff-docs-demo-v1), after login, the user lands on `ProductListPage` which has a 
+example, in our [**E-commerce Demo app**](https://bit.ly/ff-docs-demo-v2), after login, the user lands on `ProductListPage` which has a 
 NavigationBar at the bottom that takes the user to different Pages in the app such as 
 `ProfilePage`, etc. 
 
@@ -98,7 +98,7 @@ you're creating an **instance** of the `Icon` widget class and providing differe
 each use.
 
 Think of classes as templates that outline the structure and features of
-something you want to create multiple times. For instance, in our demo app [EcommerceFlow](https://bit.ly/ff-docs-demo-v1), we
+something you want to create multiple times. For instance, in our demo app [EcommerceFlow](https://bit.ly/ff-docs-demo-v2), we
 have a reusable component called `ProductListCard` with specific characteristics such as image,
 product information text, and actions it should perform when clicked. Here, we've essentially
 created a **class**.

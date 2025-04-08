@@ -30,7 +30,7 @@ FlutterFlow has the following built-in functions:
 ## Combine Text
 
 Oftentimes, you will encounter scenarios where you need to show two variables in a single String or
-Text widget. For example, in our [Ecommerce Demo](https://bit.ly/ff-docs-demo-v1) app, we have a price object in the following
+Text widget. For example, in our [Ecommerce Demo](https://bit.ly/ff-docs-demo-v2) app, we have a price object in the following
 format:
 
 ```json
