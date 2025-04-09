@@ -47,7 +47,7 @@ Here's an example from the Demo app:
 
 :::info[Prerequisites]
 - The Place Picker **requires a Google Maps API key**. See how to [**create and add API keys**](generate-maps-keys.md#add-maps-apis) to FlutterFlow.
-- Ensure you have enabled **Places API** from Cloud console. [**Check out the Setup docs.**](generate-maps-keys.md#add-places-apis)
+- Ensure you have enabled the [**Places API**](generate-maps-keys.md#add-places-apis) from Cloud console.
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
 :::
 <figure>
@@ -98,9 +98,9 @@ If you retain the Text widget, the text will update to the name of the selected 
   <figcaption class="centered-caption">The widget properties of Place Picker widget</figcaption>
 </figure>
 
-## Use PlacePicker widget state values
+## Use PlacePicker Values
 
-The values associated with the selected place are stored in a `GooglePlace` custom data type exposed by FlutterFlow. It holds fields such as the selected place's Name, Address, LatLng, City, State, Country, and Zipcode. Users can use these values in any widget, either to directly set them in a Text widget or for further conditional calculations.
+The selected place’s details are stored in a `GooglePlace` custom data type provided by FlutterFlow. You can access this via **Widget State > placePickerValue**, which includes fields like name, address, latitude/longitude (LatLng), city, state, country, and ZIP code. These values can be used to display content in Text widgets or perform conditional logic based on the selected location.
 
 <div style={{
     position: 'relative',
@@ -109,7 +109,7 @@ The values associated with the selected place are stored in a `GooglePlace` cust
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/uWaLSOHPZctjnGik03Pu?embed&show_copy_link=true"
+        src="https://demo.arcade.software/oje0Gsbf9IJh7M0pb6Tv?embed&show_copy_link=true"
         title="Use PlacePicker widget state"
         style={{
             position: 'absolute',
@@ -129,31 +129,3 @@ The values associated with the selected place are stored in a `GooglePlace` cust
 </div>
 
 <p></p>
-Let's test this change in Test Mode:
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/2ncapOklwNGM3ETCntdl?embed&show_copy_link=true"
-        title="Place Picker Test"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-
