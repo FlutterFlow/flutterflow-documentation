@@ -75,7 +75,7 @@ Here’s what each option does:
 
 - **Is Container**: Indicates the widget acts as a grouping for other semantic widgets.
 - **Is Image**: Tells screen readers the widget represents an image.
-- **Is Button**: Declares the widget behaves like a button.
+- **Is Button**: Declares that the widget behaves like a button.
 - **Is Header**: Identifies a widget as a heading for better navigation.
 - **Explicit Child Nodes**: Forces semantics to include all child nodes, even if normally ignored.
 - **Exclude Semantics**: Prevents screen readers from announcing this widget.
@@ -118,7 +118,7 @@ The Semantic Announce action allows you to trigger screen reader announcements w
 
 :::info[Best Practices]
 
-- Long announcements can overwhelm the user. Aim for a concise phrase like "Search complete—3 results."
+- Long announcements can overwhelm the user. Aim for a concise phrase like "Search complete — 3 results."
 - Too many announcements can confuse or irritate the user. Only announce critical or timely changes that aren’t otherwise discoverable.
 - Use the correct language direction of the message. If your app supports multiple locales, dynamic direction binding can help.
 - Screen reader behavior can vary across Android (TalkBack) and iOS (VoiceOver). Test thoroughly on real hardware to confirm the experience.
@@ -131,7 +131,7 @@ The Semantic Announce action allows you to trigger screen reader announcements w
 
 You can control the Focus Configuration using the following properties: 
 
-- **Wrap in Focus Traversal Group**: It places a widget (and all its children) in a dedicated group so focus cycles within that region before moving on. For example, if you have a login form with two fields: Email and Password. When you enable this option in the login form, pressing <kbd>Tab</kbd> will cycle only between them (and not jump to unrelated parts of the screen).
+- **Wrap in Focus Traversal Group**: It places a widget (and all its children) in a dedicated group so focus cycles within that region before moving on. For example, if you have a login form with two fields: Email and Password, enabling this option ensures that pressing <kbd>Tab</kbd> will cycle only between them (and not jump to unrelated parts of the screen).
 - **Focus Traversal Order**: This sets the exact sequence in which widgets receive focus using numeric values (e.g., 1, 2, etc.). For example, In a sign‑up form, set `Name = 1`, `Email = 2`, and `Password = 3` so pressing <kbd>Tab</kbd> moves logically down the form rather than following the raw widget tree.
 
 Using both the properties you can create structured keyboard navigation for any complex layouts. 
