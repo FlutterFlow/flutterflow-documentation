@@ -24,7 +24,7 @@ Here are some key accessibility features you can use:
 
 ## Semantic Label
 
-You can use **Semantic Labels** to provide custom descriptions, hints, or to emphasize the importance of specific parts of the widget tree. This ensures that screen reader users receive clear and meaningful information about each widget more effectively.
+**Semantic Labels** enhance your app’s accessibility and SEO by providing meaningful context about widgets for screen readers and search engines. These descriptions are especially helpful for users relying on assistive technologies.
 
 For example, in an e-commerce app, you can add a semantic label to an '*Add to Bag*' button with a message like '*Add the selected item to cart*', which helps users better understand the button's action.
 
@@ -37,7 +37,7 @@ To add a semantic label for any widget, select the widget, move to the propertie
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/m6KHHlhnbq0NJxHqWH88?embed&show_copy_link=true"
+        src="https://demo.arcade.software/B3acoMrirCvsKl69tLH6?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -57,12 +57,36 @@ To add a semantic label for any widget, select the widget, move to the propertie
 </div>
 <p></p>
 
-Moreover, to add a semantic label for every widget in your app that has an action trigger `OnTap` or `onLongPress`, you can enable the **Add Warning for Semantic Widgets**. By doing so, you'll get a warning if any widget has an action but doesn't have a semantic label added yet.
+:::tip
+You can also dynamically set semantic labels using variables or expressions. This allows the label to change based on the app context, so screen readers announce exactly what’s on the screen instead of generic terms like "image" or "button." For example, a product image can read out the product name (e.g., "Red Running Shoes" pulled from Firestore) instead of just saying "image."
+:::
+
+### Advanced Semantic Settings (Enterprise Only)
+
+These settings help make your app more accessible by giving you better control over how screen readers interpret and describe your UI. 
+
+:::info
+
+These settings are only available to **Enterprise** users.
+
+:::
+
+Here’s what each option does:
+
+- **Is Container**: Indicates the widget acts as a grouping for other semantic widgets.
+- **Is Image**: Tells screen readers the widget represents an image.
+- **Is Button**: Declares that the widget behaves like a button.
+- **Is Header**: Identifies a widget as a heading for better navigation.
+- **Explicit Child Nodes**: Forces semantics to include all child nodes, even if normally ignored.
+- **Exclude Semantics**: Prevents screen readers from announcing this widget.
+- **Is Live Region**: Tells assistive tech that the widget’s content may change dynamically and should be re-announced.
+- **Hint Text**: Provides an additional hint for users (e.g., "Double tap to open").
+- **Tooltip Text**: Displays helpful text on long press or hover.
+- **Ordinal Sort Key**: Controls the order in which widgets are accessed by screen readers.
 
 :::tip
-
-You can click on the warning item to directly navigate to that widget.
-
+You can add a semantic label for every widget in your app that has an action trigger `OnTap` or `onLongPress`, by enabling the **Add Warning for Semantic Widgets**.
+By doing so, you'll get a warning if any widget has an action but doesn't have a semantic label added yet. You can click on the warning item to directly navigate to that widget.
 :::
 
 ![add-warning-for-semantic-widgets.avif](imgs/add-warning-for-semantic-widgets.avif)
@@ -70,6 +94,55 @@ You can click on the warning item to directly navigate to that widget.
 After you add semantic labels, enable **TalkBack** on Android or **VoiceOver** on iOS to test how screen readers interact with your app. These screen readers will help you verify that all UI elements are read clearly, descriptions are meaningful, and users can navigate logically without getting lost.
 
 Learn more about [enabling screen reader on your device](https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility#screen-readers).
+
+## Semantic Announce [Action]
+
+The **Semantic Announce** action lets you notify screen reader users about important UI changes or provide contextual updates. It sends a request to the device’s accessibility service (TalkBack/VoiceOver) to speak the text out loud.
+
+It significantly improves accessibility by allowing screen reader users to receive timely and meaningful feedback. This is especially helpful when visual feedback might be missed or unavailable.
+
+:::tip[possible use cases]
+
+- **Form Submission**: After a user submits a form, you can trigger a screen reader announcement like "Your form has been submitted successfully," giving immediate feedback without requiring visual cues.
+- **Dynamic Content Updates**: When new content is added or changed on the screen—like loading new chat messages or refreshing a feed—you can announce messages like "3 new messages loaded" to ensure screen reader users are aware of the update.
+- **Error or Validation Messages**: If a user enters invalid input, you can announce helpful validation feedback like "Please enter a valid email address".
+
+:::
+
+The Semantic Announce action allows you to trigger screen reader announcements with the following settings:
+
+- **Announcement Text**: The message you want the screen reader to speak aloud (e.g., "Item added to favorites").
+- **Is Text Right to Left**: Set this to True for right-to-left languages like Arabic or Hebrew. It defaults to False, which is appropriate for left-to-right languages like English.
+
+![semantic-announcement.avif](imgs/semantic-announcement.avif)
+
+:::info[Best Practices]
+
+- Long announcements can overwhelm the user. Aim for a concise phrase like "Search complete — 3 results."
+- Too many announcements can confuse or irritate the user. Only announce critical or timely changes that aren’t otherwise discoverable.
+- Use the correct language direction of the message. If your app supports multiple locales, dynamic direction binding can help.
+- Screen reader behavior can vary across Android (TalkBack) and iOS (VoiceOver). Test thoroughly on real hardware to confirm the experience.
+
+:::
+
+## Focus Configuration
+
+**Focus Configuration** helps improve keyboard and remote-control navigation in your app—especially important for web, desktop, TV, and kiosk apps. It controls how users move through widgets using the <kbd>Tab</kbd> key or other navigation inputs (like arrow keys or D-pad on TV or remote).
+
+You can control the Focus Configuration using the following properties: 
+
+- **Wrap in Focus Traversal Group**: It places a widget (and all its children) in a dedicated group so focus cycles within that region before moving on. For example, if you have a login form with two fields: Email and Password, enabling this option ensures that pressing <kbd>Tab</kbd> will cycle only between them (and not jump to unrelated parts of the screen).
+- **Focus Traversal Order**: This sets the exact sequence in which widgets receive focus using numeric values (e.g., 1, 2, etc.). For example, In a sign‑up form, set `Name = 1`, `Email = 2`, and `Password = 3` so pressing <kbd>Tab</kbd> moves logically down the form rather than following the raw widget tree.
+
+Using both the properties you can create structured keyboard navigation for any complex layouts. 
+
+:::warning
+
+While you can assign a value for the **Focus Traversal Order** of any widget, it won’t take effect unless you enable **Wrap in Focus Traversal Group** on the current widget or one of its parent widgets.
+
+The **Focus Traversal Group** defines a context or scope for focus traversal, and **Focus Traversal Order** only applies within that group. Without it, there's no defined order for the traversal logic to follow.
+
+:::
 
 ## Keyboard Navigation
 
