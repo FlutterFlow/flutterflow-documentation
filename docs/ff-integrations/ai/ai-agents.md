@@ -19,10 +19,11 @@ Here are some examples of AI Agents:
 - **Smart Recipe Assistant:** An AI agent in a cooking app that suggests recipes based on ingredients users have, dietary restrictions, or meal preferences, and offers interactive cooking guidance.
 - **AI Tutor or Educator:** A conversational agent within educational apps that helps users learn complex topics, providing step-by-step explanations, answering follow-up questions, or adapting content to the learner’s pace.
 
-:::info [Prerequisite]
-
-To use AI Agents in FlutterFlow, you need to [**connect your project to Firebase**](../firebase/connect-to-firebase-setup.md):
-
+:::info[Prerequisite]
+Before you begin setting up AI Agents, make sure you:
+1. Connect your project to Firebase by completing the [**Firebase Setup**](../firebase/connect-to-firebase-setup.md).
+2. Upgrade your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing), as we rely on [**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) to handle AI-related communication securely.
+3. Enable [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md). This is required because Cloud Functions can only be accessed by authenticated users.
 :::
 
 ## Create AI Agent
@@ -132,7 +133,7 @@ Once configured, click the **Publish** button to make it live.
 </div>
 <p></p>
 
-:::info [For non Google Agents]
+:::info[For non Google Agents]
 
 After you successfully deploy the agent, any changes made to its configuration—such as modifying the system message, model, or temperature will require you to redeploy the Agent. For Google agents, the configuration is stored at client-side, so redeployment isn't necessary.
 :::

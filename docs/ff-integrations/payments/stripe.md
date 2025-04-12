@@ -40,11 +40,11 @@ While using Stripe as the payment provider, users can buy products using credit 
 
 :::info[Prerequisites]
 
-Before starting to set up payments, make sure you have,
+Before starting to set up payments, make sure you:
 
 1. Complete [**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md) for your project.
-2. Enabled [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md) for your project.
-3. Upgraded your Firebase project to [**Blaze Plan**](https://firebase.google.com/pricing). We use [**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) to process a transaction.
+2. Enable [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md) for your project.
+3. Upgrade your Firebase project to [**Blaze Plan**](https://firebase.google.com/pricing). We use [**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) to process a transaction.
 :::
 
 
