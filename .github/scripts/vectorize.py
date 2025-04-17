@@ -178,7 +178,6 @@ def process_single_file(file_path: Path):
         else: 
             print(f"Skipping {file_path} because it already exists in BigQuery")
 
-backfill()
             
 
         
