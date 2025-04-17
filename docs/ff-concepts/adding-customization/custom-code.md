@@ -243,6 +243,16 @@ Here's an example of an Action that returns a _nullable_ integer.
 
 ![return-value-actions.png](imgs/return-value-actions.png)
 
+## Adding Description
+
+You can add a [**Description**](../../intro/ff-ui/resource-hierarchy.md#resource-description) note on Custom Functions and Custom Actions to briefly explain their purpose, usage, or important details. This helps clarify what the function or action is intended for, making your project more understandable and maintainable—especially in libraries and collaborative environments.
+
+![adding-description-on-custom-function-action.avif](imgs/adding-description-on-custom-function-action.avif)
+
+You can view these descriptions as tooltips by hovering over the green note icon when selecting a Custom Function or Custom Action.
+
+![view-description-custom-function-and-custom-action](imgs/view-description-custom-function-and-custom-action.avif)
+
 ## Adding a Pubspec Dependency
 To utilize community-built Flutter solutions in your FlutterFlow projects, you can add a "pubspec dependency". The **pubspec file** is the configuration file in Flutter projects that lists external packages or libraries, along with other project configurations.
 
