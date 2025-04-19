@@ -254,7 +254,9 @@ You can view these descriptions as tooltips by hovering over the green note icon
 ![view-description-custom-function-and-custom-action](imgs/view-description-custom-function-and-custom-action.avif)
 
 :::tip
-In the generated code, descriptions are added as comments above the custom code. In code editors, they appear as tooltips when you hover over the names of Custom Functions and Actions.
+In the generated code, descriptions are added as comments before the function definition, and they also appear in the custom code editor.
+
+![description-in-custom-code](imgs/description-in-custom-code.avif)
 :::
 
 ## Adding a Pubspec Dependency
