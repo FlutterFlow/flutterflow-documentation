@@ -11,11 +11,11 @@ keywords: [Loops, Backend Query, Backend Logic, Control Flow, FlutterFlow]
 
 **Loops** in FlutterFlow allow you to perform repetitive tasks without writing complex code. This is useful when working with lists of data or when you want to repeat actions a certain number of times.
 
-There are two main types of loops supported in FlutterFlow:
+There are two types of loops supported in FlutterFlow:
 
-## While Condition
+## While Condition Loops
 
-**While Condition** loop requires a condition. The actions within the loop will continue to trigger as long as the condition holds true. When the condition becomes false, the loop terminates, and the next actions in the workflow will trigger. 
+A **While Condition** loop requires a condition. The actions within the loop will continue to trigger as long as the condition holds true. When the condition becomes false, the loop terminates, and the next actions in the workflow will trigger. 
 
 For example, you can use a While Condition loop to continuously check if a user is still within a geofenced area. As long as the condition `isUserInLocation == true` holds, the app might keep checking for updates or show a live indicator.
 
