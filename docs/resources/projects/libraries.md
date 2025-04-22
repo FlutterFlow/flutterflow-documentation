@@ -111,7 +111,7 @@ When a project is converted into a library, the following features are disabled 
 
 ## Importing a Library
 
-To import a library project into another FlutterFlow project, you must go to the **Project Dependencies** page in **App Settings**. Here you can specify the library project and version you are importing.
+To import a library project into another FlutterFlow project, you must go **Settings and Integrations** > **Project Setup** > **Project Dependencies** . Here you can specify the library project and version you are importing.
 
 <div style={{
     position: 'relative',
