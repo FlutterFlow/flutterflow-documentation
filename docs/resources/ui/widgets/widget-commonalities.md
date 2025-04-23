@@ -15,7 +15,7 @@ When working with widgets in FlutterFlow, you'll encounter properties and featur
 
 Visibility settings in FlutterFlow allow you to dynamically control when and how widgets appear in your app.
 
-### Conditional Visibility
+### Conditional
 
 **Conditional** visibility allows you to control the display of UI elements (widgets) based on specific conditions or criteria. It helps you create dynamic, personalized experiences by showing or hiding certain content.
 
@@ -29,7 +29,7 @@ The **Show in UI Builder** toggle only affects visibility within the design canv
 
 ![conditional-visibility.avif](imgs/conditional-visibility.avif)
 
-### Responsive Visibility
+### Responsive
 
 The **Responsive** visibility property allows you to show or hide widgets based on device screen size—such as mobile, tablet, or desktop. By toggling each icon, you can show or hide the widget according to your design needs.
 
@@ -413,6 +413,75 @@ Use consistent border and padding styles for buttons, cards, and containers to m
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Trigger Action on Selection Change
+
+Here, you will see how to trigger an action when the selection changes for any Form widget such as Dropdown, RadioButton, ChoiceChips, Slider, and RatingBar.
+
+:::info
+To simplify, we've used the Dropdown widget as an example. However, the same instructions apply to other Form widgets as well.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1722ccd359a2401a9064f50b0ca38350?sid=9118cb06-4b88-4c69-b3ac-6ec0794b9e62"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+To do so:
+
+1. Select the widget.
+2. Select **Actions** from the properties panel, and click **+ Add Action**.
+3. You will notice that the **Type of Action** (aka callback) is already set to **On Selected**. That means actions added under this will be called whenever the selection changes.
+4. Now you can add any action here.
+
+Here is an example showing the snackbar message when the Dropdown selection changes.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.loom.com/embed/1e6748c17cbb49fe869feeff30ad3eb4?sid=cfc3fb5b-262f-4e50-8213-f23ba0610100"
         title=""
         style={{
             position: 'absolute',
