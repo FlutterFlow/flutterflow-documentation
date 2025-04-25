@@ -166,7 +166,7 @@ Here’s exactly how you do it:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/srZqoYaaoVR1mCE3t8AL?embed&show_copy_link=true"
+        src="https://demo.arcade.software/wHFUlfRHxQlbzmjR0Bfs?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -762,6 +762,8 @@ Can I modify the Configuration Files in a Library project?
 Yes, you can. When a Library Project is imported, any configuration file snippets—such as those for `AndroidManifest.xml`, `Info.plist`, or `Entitlements.plist`—are automatically merged into the importing project's configuration files.
 
 Additionally, your Library Project can pass values (like API keys) into those snippets using **Library Values**, making it easy to reuse and customize the integration across multiple apps.
+
+![config-values-in-library](imgs/config-values-in-library.avif)
 
 This makes Libraries incredibly powerful and enables seamless integration of tools like **PostHog** (analytics), **Sentry** (crash reporting), **CleverTap**, **flutter_local_notifications**, **flutter_nfc_kit**, and many more directly from the Marketplace.
 </p>
