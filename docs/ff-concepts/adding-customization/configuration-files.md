@@ -42,7 +42,7 @@ FlutterFlow provides two main ways to modify native XML files: [**Add Individual
 For Android, modifications are typically made in the `AndroidManifest.xml` file, where you can add the following tags:
 
 - **Activity Tags:** Inserts XML code inside the `MainActivity` block. This is typically used to add child XML elements within the MainActivity, such as `<intent-filter>` or `<meta-data>` to control aspects such as deep linking, theme application, or launch mode.
-- **Application Tags**: Used to inject properties or attributes directly on the `<application>` tag itself. For example, you can use this to set values like `android:icon`, `android:label`, `android:allowBackup`.
+- **Application Tags**: Used to inject properties or attributes directly on the `<application>` tag itself. For example, you can use this to set values such as `android:icon`, `android:label`, `android:allowBackup`.
 - **App Component Tags**: Inserts complete XML components inside the `<application>...</application>` block. Use this to add additional activities, services, broadcast receivers, or content providers that your app depends on.
 
 To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from the left navigation menu, select **Configuration Files**, then choose `AndroidManifest.xml`. Click the **plus (+)** button next to the tag where you want to insert the snippet. Provide a name (this will be included as a comment in the file) and paste your snippet code.
