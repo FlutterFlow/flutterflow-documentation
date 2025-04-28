@@ -761,7 +761,7 @@ Can I modify the Configuration Files in a Library project?
 <p>
 Yes, you can. When a Library Project is imported, any configuration file snippets, such as those for `AndroidManifest.xml`, `Info.plist`, or `Entitlements.plist` are automatically merged into the importing project's configuration files.
 
-Additionally, your Library Project can pass values (like API keys) into those snippets using **Library Values**, making it easy to customize.
+Additionally, your Library Project can pass values (like API keys) into those snippets using [**Library Values**](../../resources/projects/libraries.md#library-values), making it easy to customize.
 
 ![config-values-in-library](imgs/config-values-in-library.avif)
 
