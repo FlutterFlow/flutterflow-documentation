@@ -84,10 +84,13 @@ In this step, You will set the URL scheme. To do that:
    enter the **scheme** **name** (before "://") and **hostname** (after "://").
 
 4. If you want users to navigate back to the home page instead of closing the app when they press
-   the back button from a deep link page, enable the **Pages Are Subroutes of Root Page** option. *
-   *Tip**: we recommend enabling this option to increase user engagement with your app.
+   the back button from a deep link page, enable the **Pages Are Subroutes of Root Page** option.
 
 ![img_3.png](imgs/img_3.png)
+
+:::tip
+We recommend enabling this option to increase user engagement with your app
+:::
 
 #### 2. Setting page URL
 
@@ -176,7 +179,7 @@ Here is how you do it:
 </figure>
 </details>
 
-## Dynamic Link
+## Dynamic Links with Firebase Dynamic Links [Deprecated]
 
 The dynamic link opens a specific page in your app. Unlike the deep link, the dynamic link survives
 the app install. That means if the user has not installed the app, they can be taken to the
@@ -193,10 +196,7 @@ product
 from Firebase) to create dynamic links.
 :::
 
-### Adding Dynamic Link
-
-Let's build an example of sharing and opening a profile page using the dynamic link. The example
-looks like the below:
+Let’s walk through an example of sharing and opening a profile page using a dynamic link. The example will look like this:
 
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
@@ -212,7 +212,7 @@ The steps to add the dynamic link are as follows:
 5. [Sharing dynamic link](#5-sharing-dynamic-link)
 6. [Testing dynamic link](#6-testing-dynamic-link)
 
-#### 1. Setting up a domain
+### 1. Setting up a domain
 
 The dynamic link requires a domain name that will be used as the URL prefix in the link.
 
@@ -234,7 +234,7 @@ To set up the domain name, follow the steps below:
   <figcaption class="centered-caption">Setting up a domain for the dynamic link</figcaption>
 </figure>
 
-#### 2. iOS setup
+### 2. iOS setup
 
 You must complete additional configuration for the dynamic link to work on the iOS devices.
 
@@ -278,7 +278,7 @@ To add the Associated Domain capability on App Store:
   <figcaption class="centered-caption">Adding Associated Domain capability to App Store</figcaption>
 </figure>
 
-#### 3. Set URL scheme
+### 3. Set URL scheme
 
 In this step, You will set the URL scheme. To do that:
 
@@ -298,7 +298,7 @@ In this step, You will set the URL scheme. To do that:
 
 ![img_4.png](imgs/img_4.png)
 
-#### 4. Setting page URL
+### 4. Setting page URL
 
 The page URL points to the specific page in your app, which is used on the Web and for deep linking
 on mobile.
@@ -320,7 +320,7 @@ To set the page URL:
   <figcaption class="centered-caption">Setting page URL</figcaption>
 </figure>
 
-#### 5. Sharing dynamic link
+### 5. Sharing dynamic link
 
 You can share the dynamic link of the current page by adding the [**Generate Current Page Link
 **](generate-current-page-link.md)
@@ -352,7 +352,7 @@ To share the dynamic link of the page:
   <figcaption class="centered-caption">Sharing dynamic link</figcaption>
 </figure>
 
-#### 6. Testing dynamic link
+### 6. Testing dynamic link
 
 Dynamic links can not be tested in Run Mode. Instead, you will need to test the links on a real
 device/emulator.
@@ -401,3 +401,275 @@ To pass custom data with the link, you need to have the following:
 
 
 That's all you need to pass custom data with a **Deep Link** or **Dynamic Link**.
+
+## Dynamic Links with Branch.io
+
+Since **Firebase Dynamic Links** have been deprecated and can no longer be used for new Firebase projects, we can integrate a powerful alternative: **[Branch.io](https://branch.io/)** — a cross-platform solution for deep linking and deferred linking.
+
+With Branch, we can support robust deep linking inside FlutterFlow apps without writing a backend from scratch.
+
+
+### Branch.io Configuration
+
+Start by setting up your project in the [Branch Dashboard](https://dashboard.branch.io). Once you’ve created a project:
+
+**1. Note down your Branch Key**  
+
+Once you create a project, the first thing you’ll need to do is note down your **Branch Key**.  
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/7c9mN4P0ppY3qwczmMdh?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p>
+</p>
+
+This key uniquely identifies your app and will be required later when setting up your FlutterFlow configuration.
+
+**2. Set up Redirect Links**  
+
+In the Branch dashboard, you’ll find settings to define fallback URLs — these determine where users are sent if your app isn’t installed. Typically, you would redirect users to the App Store, Play Store, or a custom landing page.  
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/EtH2CeinH2NQpianzTIC?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+
+Setting up redirects is important because it ensures that your links don't break and that users always have a seamless experience, even if they need to install the app first.
+
+**3. Create a Smart Link**  
+
+After setting up your project and redirects, you can create a new Smart Link from the **Quick Links** tab in the Branch dashboard. Here you’ll be able to set a link title, alias, add analytics tags, and customize the social media preview (such as the image, title, and description).  
+
+Once saved, Branch will generate a Smart Link that’s ready to use across your campaigns and app flows.
+
+Here's a short demo:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/w2egrzVVhzlcL1hTV6x7?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+### FlutterFlow Configuration Setup
+
+To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to update the native configuration files via the **Custom Code** tab in your project.
+
+1. Firstly, create environment variables for:
+   - `branchHostUrl` (e.g. `brnch4.app.link`)
+   - `branchKey` (your Branch key)
+
+
+Use `branchKey` for production and optionally `branchKeyTest` for dev environments. You can toggle modes through Branch dashboard (and also through FlutterFlow environment toggling).
+
+2. Then navigate to:  
+FlutterFlow > Custom Code > Configuration Files.
+
+
+**🔧 Android Setup**
+
+1. Create two variables in `AndroidManifest.xml` file named `branchKey` and `branchHostUrl` and bind it to the environment variables we earlier created. 
+
+2. Add an `intent-filter` block to your **Main Activity** through the **Activity Tags hook**:
+
+```xml
+<intent-filter android:autoVerify="true">
+  <action android:name="android.intent.action.VIEW"/>
+  <category android:name="android.intent.category.DEFAULT"/>
+  <category android:name="android.intent.category.BROWSABLE"/>
+  <data android:scheme="https" android:host="{{branchHostUrl}}"/>
+</intent-filter>
+```
+
+3. Add an **App Component** block for meta-data:
+
+```xml
+<meta-data android:name="io.branch.sdk.BranchKey" android:value="{{branchKey}}"/>
+<meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+```
+
+
+
+**🍎 iOS Setup**
+
+1. In `Info.plist`, add a new variable called `branchKey` and bind it to the environment variable.
+
+2. In `Info.plist`, add:
+
+```xml
+<key>branch_key</key>
+<string>{{branchKey}}</string>
+```
+3. In `Runner.entitlements`, add a new variable called `branchHostUrl` and bind it to the environment variable. 
+
+4. In `Runner.entitlements`, add:
+
+```xml
+<key>com.apple.developer.associated-domains</key>
+<array>
+  <string>applinks:{{branchHostUrl}}</string>
+</array>
+```
+Branch automatically hosts and serves the `apple-app-site-association` file needed for Universal Links. You don’t need to manually upload it to your domain.
+
+
+**FlutterFlow Routing Setup**
+
+FlutterFlow also defines a Custom URI Scheme (like `myapp://`) by default. Even if you're using Branch for web-based Smart Links, it’s a good idea to keep this in sync.
+
+1. Go to:
+Settings & Integrations > App Settings > App Details
+
+2. Scroll to **Routing & Deep Linking** section.
+
+3. Under Custom URI Scheme, match the URI host/domain to what’s defined in your Branch dashboard (e.g. `brnch4://` or `dreambrush://`).
+
+![custom-uri.png](imgs/custom-uri.png)
+
+Even if your links mainly use `https://`, FlutterFlow's routing engine may still use the custom URI internally. Keeping this field consistent prevents confusion or route mismatches.
+
+You're now ready to use Branch Smart Links in a FlutterFlow app with seamless deferred deep linking, App/Universal Link verification, and environment-based configuration.
+
+### Integrate Flutter Branch SDK 
+To integrate Branch with your FlutterFlow app, you'll use the [`flutter_branch_sdk`](https://pub.dev/packages/flutter_branch_sdk) Dart package. This will allow your app to listen to Branch links and respond accordingly.
+
+
+1. Go to your **FlutterFlow project > Pubspec Dependencies tab**, and add:
+
+```js
+flutter_branch_sdk: ^5.0.1
+```
+(Use the latest version available from [pub.dev](https://pub.dev/packages/flutter_branch_sdk))
+
+
+2. Create a Custom Action to initialize Branch SDK. This ensures the Branch session is set up when your app starts.
+
+```js
+import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
+
+Future initBranch() async {
+  // Add your function code here!
+  await FlutterBranchSdk.init();
+}
+
+```
+
+Call this action inside the **Final Actions** of your `main.dart`. 
+
+3. Create another custom action to listen for Branch link clicks and optionally route the user:
+
+```js
+
+// Automatic FlutterFlow imports
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/custom_code/actions/index.dart'; // Imports other custom actions
+import '/flutter_flow/custom_functions.dart'; // Imports custom functions
+import 'package:flutter/material.dart';
+// Begin custom action code
+// DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+
+import 'dart:async';
+import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
+import 'package:flutter/services.dart';
+
+StreamSubscription<Map>? _branchSubscription; // stream subscription that listens for branch links
+final Set<String> _handledBranchLinks = {};
+
+Future handleBranchDeeplink(Future Function(dynamic data) onLinkOpened) async {
+   // Add your function code here!
+
+   if (_branchSubscription != null) return; // If already listening, ignore link
+
+   _branchSubscription = FlutterBranchSdk.listSession().listen(
+           (data) async {
+      final clicked = data['+clicked_branch_link'] == true;
+      if (!clicked) return;
+
+      final uniqueId = data['~referring_link'] ?? data['deeplink_path'] ?? '';
+
+      if (_handledBranchLinks.contains(uniqueId)) return;
+      _handledBranchLinks.add(uniqueId);
+
+      await onLinkOpened(Map<String, dynamic>.from(data)); // call action defined by user & pass the link data.
+   },
+   onError: (error) {
+      if (error is PlatformException) {
+         print('[Branch] PlatformException: ${error.code} - ${error.message}');
+      } else {
+         print('[Branch] Unknown error: $error');
+      }
+   },
+);
+}
+
+```
+
+You can pass custom key-value pairs like `"page": "paywall"` or `"navigation_type": "bottom_sheet"` when creating the Branch link, and retrieve them here to decide which screen to navigate to in FlutterFlow.
+
+Be sure to test both fresh installs (deferred deep links) and existing app sessions to confirm that your actions run as expected.
