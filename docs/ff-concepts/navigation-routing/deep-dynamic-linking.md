@@ -673,3 +673,31 @@ Future handleBranchDeeplink(Future Function(dynamic data) onLinkOpened) async {
 You can pass custom key-value pairs like `"page": "paywall"` or `"navigation_type": "bottom_sheet"` when creating the Branch link, and retrieve them here to decide which screen to navigate to in FlutterFlow.
 
 Be sure to test both fresh installs (deferred deep links) and existing app sessions to confirm that your actions run as expected.
+
+:::tip
+For a complete walkthrough, check out the tutorial video: 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/v=nEBot6-zhfY"
+        title="Sharing a Project with a User"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+:::
