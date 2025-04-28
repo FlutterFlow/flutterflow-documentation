@@ -188,75 +188,20 @@ During a merge, FlutterFlow compares the changes made in both branches, if the c
 
 :::
 
-### Initiating a Merge
-
-FlutterFlow currently supports **two merging approaches**: the existing “**Merge**” functionality and the new “**Git Merge**” (v2).
-
-- [**Merge (Legacy)**](#merge-legacy): The legacy merge uses a custom tool (originally built in FlutterFlow) to calculate differences and conflicts between branches.
-- [**Git Merge (New)**](#git-merge-new): The new Git Merge option leverages Git's robust repository and conflict-resolution capabilities.
-
-:::warning
-
-At present, both methods are available side by side, allowing you to either continue using the legacy merge or adopt Git Merge. Over time, as Git Merge proves its stability, the Legacy Merge option may be deprecated. 
-
-The Merge (Legacy) option has some known issues with merges being incorrectly calculated. Therefore, we **strongly recommend using [Git Merge](#git-merge-new)** whenever possible for a smoother and more accurate merge process.
-
-:::
-
-#### Merge (Legacy)
-
-You can initiate a merge in either direction—merging from a parent branch into a child branch or from a child branch back into the parent branch—by selecting the **Branch** Options button next to the current branch in the Branching Menu.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/VHuZbhTfT8Q8GbaMzMWA?embed&show_copy_link=true"
-        title="Initiating a Merge"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-
-Next, you'll see a screen that will display if there are any conflicts. If you don’t have any conflicts, you can simply go ahead and click **Merge Branch**.
-
-![merge](../imgs/merge.avif)
-
-#### Git Merge (New)
-
-The new Git Merge option uses Git under the hood to calculate differences between project files. Each project is backed by a repository of YAML files (except for custom code, which appears as Dart files). These YAML files map directly to various project properties, and Git calculates differences among these files to identify merge conflicts. This method provides clearer and more consistent conflict detection compared to [Merge (legacy)](#merge-legacy) (a custom solution).
+Merging in FlutterFlow uses Git under the hood to calculate differences between project files. Each project is backed by a repository of YAML files (except for custom code, which appears as Dart files). These YAML files map directly to various project properties, and Git calculates differences among these files to identify merge conflicts.
 
 :::info[Future Plans]
-
-This option is currently in **Beta**. In addition to fixing any issues, here’s what we have planned:
-
 - **Hover-Based Documentation**: Display helpful tooltips for YAML fields (scheduled before production release).
 - **Inline YAML Errors**: Show errors directly in the file for quicker fixes (scheduled before production release).
 - **Simplified YAML**: Make YAML files and errors more user-friendly and understandable.
 - **Enhanced Visual Diff Tools**: Provide more intuitive views for comparing changes.
 - **User Experience Improvements**: Continuously refine merging workflows and UI elements.
 - **Performance Optimizations**: Improve speed when initiating merges.
-
 :::
 
-To initiate a Git Merge, navigate to **Toolbar >** select **Branching > Branching options >** select **Git Merge**.
+### Initiating a Merge
+
+To initiate the Merge, navigate to **Toolbar >** select **Branching > Branching options >** select **Merge**.
 
 <div style={{
     position: 'relative',
@@ -285,7 +230,7 @@ To initiate a Git Merge, navigate to **Toolbar >** select **Branching > Branchin
 <p></p>
 
 
-When performing a Git merge in FlutterFlow, you’ll see a screen with multiple panels and info sections. Here are the details of it.
+When performing a merge in FlutterFlow, you’ll see a screen with multiple panels and info sections. Here are the details of it.
 
 ![merging-window](imgs/merging-window.avif)
 
@@ -430,79 +375,6 @@ For example, imagine two developers, Alice and Bob, are working on the same Flut
 
 When Alice's changes are merged into the main project first, her updates will be integrated without any issues. However, when Bob tries to merge his changes afterward, a merge conflict will occur because the changes to the button text and color have already been modified by Alice.
 
-In your project, if you get merge conflicts, here’s how you resolve them.
-
-#### Merge (Legacy)
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/Ttcvg8zDKtlQSakqppOf?embed&show_copy_link=true"
-        title="Resolving Merge Conflicts"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-For certain conflicts, such as those involving variables and API configurations, you'll see a **View Configuration** option. Enabling this option opens the split screen view displaying changes from the new branch, allowing you to easily identify what has changed.  In this view, you can see things that were removed highlighted in red, and things that were added highlighted in green.
-
-![view-configuration](../imgs/view-configuration.avif)
-
-
-If you choose to resolve manually, you can directly make changes in the **Accepted Changes** section. Note that if you cancel a manual resolution, you can choose to either keep or discard the changes you have made since starting the manual resolution.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/xZsRHG7d5rfNf5z937hZ?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-:::info
-
-If the visual editor doesn't display something in the split screen UI that you need to manage during a merge, click the **Edit Project** button and edit the project as usual.
-
-::::
-
-
-#### Git Merge (New)
 When you initiate a merge using Git, the system attempts to automatically reconcile your project files. Any conflicts that cannot be automatically resolved are flagged for your attention.
 
 You can review each file with merge conflicts and choose to:
