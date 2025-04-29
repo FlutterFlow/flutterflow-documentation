@@ -165,7 +165,7 @@ You need to create another page to verify the SMS code.  Here's how you build th
 
 ### 5. Adding phone sign-in action
 
-On click the 'sign-in' or 'send code' button, you will add the 'Phone Sing In' action, which redirects users to a page where they can enter the code received on their phone.
+On click the 'sign-in' or 'send code' button, you will add the 'Phone Sign In' action, which redirects users to a page where they can enter the code received on their phone.
 
 To add this action:
 
