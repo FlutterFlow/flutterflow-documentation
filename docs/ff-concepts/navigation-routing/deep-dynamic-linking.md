@@ -89,7 +89,7 @@ In this step, You will set the URL scheme. To do that:
 ![img_3.png](imgs/img_3.png)
 
 :::tip
-We recommend enabling this option to increase user engagement with your app
+We recommend enabling this option to increase user engagement with your app.
 :::
 
 #### 2. Setting page URL
@@ -521,7 +521,7 @@ Here's a short demo:
 To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to update the native configuration files via the **Custom Code** tab in your project.
 
 1. First, create environment variables for:
-   - `branchHostUrl` (e.g. `brnch4.app.link`)
+   - `branchHostUrl` (e.g., `brnch4.app.link`)
    - `branchKey` (your Branch key, use it for production and optionally `branchKeyTest` for dev environments. You can toggle modes through Branch dashboard and also through FlutterFlow environment toggling).
 
 2. Then navigate to, FlutterFlow > Custom Code > Configuration Files.
@@ -529,9 +529,9 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
 
 **🔧 Android Setup**
 
-1. Create two variables in `AndroidManifest.xml` file named `branchKey` and `branchHostUrl` and bind it to the environment variables we earlier created. 
+1. Create two variables in `AndroidManifest.xml` file named `branchKey` and `branchHostUrl` and bind them to the environment variables we earlier created. 
 
-2. Add an `intent-filter` block to your **Main Activity** through the **Activity Tags hook**:
+2. Add an `intent-filter` block to your **Main Activity** through the **Activity Tags** hook:
 
 ```xml
 <intent-filter android:autoVerify="true">
@@ -555,7 +555,7 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
 
 1. In `Info.plist`, add a new variable called `branchKey` and bind it to the environment variable.
 
-2. In `Info.plist`, add:
+2. In `Info.plist`, add the following code snippet.
 
 ```xml
 <key>branch_key</key>
@@ -563,7 +563,7 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
 ```
 3. In `Runner.entitlements`, add a new variable called `branchHostUrl` and bind it to the environment variable. 
 
-4. In `Runner.entitlements`, add:
+4. In `Runner.entitlements`, add the following code snippet.
 
 ```xml
 <key>com.apple.developer.associated-domains</key>
@@ -583,7 +583,7 @@ Settings & Integrations > App Settings > App Details
 
 2. Scroll to **Routing & Deep Linking** section.
 
-3. Under Custom URI Scheme, match the URI host/domain to what’s defined in your Branch dashboard (e.g. `brnch4://` or `dreambrush://`).
+3. Under Custom URI Scheme, match the URI host/domain to what’s defined in your Branch dashboard (e.g., `brnch4://` or `dreambrush://`).
 
 ![custom-uri.png](imgs/custom-uri.png)
 
@@ -595,15 +595,15 @@ You're now ready to use Branch Smart Links in a FlutterFlow app with seamless de
 To integrate Branch with your FlutterFlow app, you'll use the [`flutter_branch_sdk`](https://pub.dev/packages/flutter_branch_sdk) Dart package. This will allow your app to listen to Branch links and respond accordingly.
 
 
-1. Go to your **FlutterFlow project > Pubspec Dependencies tab**, and add:
+1. Go to your **FlutterFlow project > Settings and Integrations > Pubspec Dependencies** tab, and add the following dependency.
 
 ```js
 flutter_branch_sdk: ^5.0.1
 ```
-(Use the latest version available from [pub.dev](https://pub.dev/packages/flutter_branch_sdk))
+Make sure to use the latest version available from [pub.dev](https://pub.dev/packages/flutter_branch_sdk)
 
 
-2. Create a Custom Action to initialize Branch SDK. This ensures the Branch session is set up when your app starts.
+2. Create a Custom Action to initialize the Branch SDK. This ensures the Branch session is set up when your app starts.
 
 ```js
 import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
