@@ -239,7 +239,7 @@ In this action, you can decide who should receive the push notification by setti
 
 ## Testing Push Notifications Cloud Function
 
-You can also test the Push Notifications Cloud Function directly from the Google Cloud console—without needing to trigger from FlutterFlow. This is especially useful for debugging purposes. For step-by-step instructions, including an example and how to structure the request, refer to the [Testing Cloud Functions in Google Cloud Console](../../ff-concepts/adding-customization/cloud-functions.md#testing-cloud-functions-in-google-cloud-console) section.
+You can also test the Push Notifications Cloud Function directly from the Google Cloud console, without needing to trigger from FlutterFlow. This is especially useful for debugging purposes. For step-by-step instructions, including an example and how to structure the request, refer to the [Testing Cloud Functions in Google Cloud Console](../../ff-concepts/adding-customization/cloud-functions.md#testing-cloud-functions-in-google-cloud-console) section.
 
 ## Update App Badge Count (iOS only) [Action]
 
