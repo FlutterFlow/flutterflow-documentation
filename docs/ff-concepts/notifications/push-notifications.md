@@ -237,6 +237,10 @@ In this action, you can decide who should receive the push notification by setti
 
 ![trigger push notifications](imgs/trigger-pn.avif)
 
+## Testing Push Notifications Cloud Function
+
+You can also test the Push Notifications Cloud Function directly from the Google Cloud console—without needing to trigger from FlutterFlow. This is especially useful for debugging purposes. For step-by-step instructions, including an example and how to structure the request, refer to the [Testing Cloud Functions in Google Cloud Console](../../ff-concepts/adding-customization/cloud-functions.md#testing-cloud-functions-in-google-cloud-console) section.
+
 ## Update App Badge Count (iOS only) [Action]
 
 The **Update App Badge Count** action lets you manually display a numeric badge on your **iOS app icon**. This badge typically indicates pending tasks or updates, such as unread messages, notifications, or reminders.
