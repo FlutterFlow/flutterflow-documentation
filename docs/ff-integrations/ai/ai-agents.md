@@ -23,7 +23,6 @@ Here are some examples of AI Agents:
 Before you begin setting up AI Agents, make sure you:
 1. Connect your project to Firebase by completing the [**Firebase Setup**](../firebase/connect-to-firebase-setup.md).
 2. Upgrade your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing), as we rely on [**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) to handle AI-related communication securely.
-3. Enable [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md). This is required because Cloud Functions can only be accessed by authenticated users.
 :::
 
 ## Create AI Agent
@@ -103,6 +102,16 @@ Here, you can fine-tune how the agent generates responses.
 - **Top P**: Another technique for controlling the variety of words the AI considers. Typically kept at default unless you want fine-tuned sampling control.
 
 For example, in a **Blog-Writing Assistant**, you might set a moderate to high temperature for creative phrasing and a high max tokens limit for detailed paragraphs. Conversely, a **Financial Chatbot** would benefit from a lower temperature to deliver consistent, accurate, and stable responses without unnecessary creativity.
+
+#### Deployment Settings
+
+Here, you can fine-tune how your AI Agent is executed. These settings help balance performance, security, and cost for your use case.
+
+- **Require Authentication**: By default, this is ON to restrict access to only authenticated Firebase users. When OFF, anyone can call your agent, which may pose a security risk.
+- **Timeout (seconds)**: Defines how long the agent function can run before being terminated. For example, a value of `60` allows the function up to 60 seconds to complete. Increase if your agent performs long-running operations or processes complex logic.
+- **Memory**: Allocates memory for your agent. Higher memory improves performance for heavy workloads but may cost more. For example, choose `256MB` for standard tasks or `512MB+` for agents handling large data or complex logic.
+- **Min Instances**: The number of instances kept warm and ready at all times. Set to `0` to minimize costs. For example, setting `Min Instances` > 0 can improve response speed by avoiding cold starts, but this incurs additional cost. Set to `0` for development or low-traffic environments.
+- **Max Instances**: The maximum number of instances that can run simultaneously. Helps scale under load and avoid throttling. For example, setting `Max Instances = 10` limits concurrency to 10 requests.
 
 Once configured, click the **Publish** button to make it live.
 
