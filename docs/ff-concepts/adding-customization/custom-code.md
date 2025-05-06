@@ -117,11 +117,10 @@ Compiling Custom Functions should be pretty fast, but sometimes, compiling Custo
 The code analyzer is available in all your custom code snippets and ensures the quality and
 correctness of your custom code. It automatically checks your Dart code for errors and warnings,
 providing real-time feedback as you write.
-![code-analyzer.png](imgs/code-analyzer.png)
 
-When there is a compilation error, the code analyzer will stop running and display the errors caught
-by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
-should then be reconnected. You can also manually reconnect it if needed.
+![code-analyzer](imgs/code-analyzer.avif)
+
+When there is a compilation error, the code analyzer will stop running and display the errors caught by the compiler. Once fixed, save the code and restart the code analyzer to resume real-time analysis and receive feedback on updated code.
 
 ### Automatic FlutterFlow Imports
 
