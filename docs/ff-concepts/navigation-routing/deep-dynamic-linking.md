@@ -678,7 +678,7 @@ For a complete walkthrough, check out the tutorial video:
 
 ## Branch Deeplinking Library
 
-If you don't want to implement the Branch Library from scratch, we have introduced the Branch Deep Linking Library that you can import from the Marketplace completely free.
+If you’d prefer not to integrate Branch.io from scratch, we have introduced the **Branch Deep Linking Library** that you can import from the Marketplace completely free.
 
 This library sets up everything you need for routing users into your app using Branch’s smart links — with native configuration, link handling, and deep link helpers already wired in.
 
@@ -694,18 +694,18 @@ This installs the library into your FlutterFlow account, and you can reuse it ac
 
 ![branch-library-install.png](imgs/branch-library-install.png)
 
-To add it to a specific project, go to **Settings > Project Dependencies**, click Add Library, and search for Branch.
+To add it to a specific project, go to **Settings > Project Dependencies**, click **Add Library**, and search for Branch.
 
 ### Branch Setup 
 
 You’ll need two values from your Branch dashboard:
 
-- **Branch Live Key** – your production API key from the Branch dashboard
+- **Branch Live Key** – your production API key from the Branch dashboard.
 - **Custom Domain** – your configured link domain (e.g., yourapp.app.link)
 This is the domain used to generate and handle smart links for your app.
 
 We recommend storing these values in Environment Variables so you can:
-- Manage them per environment (e.g. dev vs prod Branch keys)
+- Manage them per environment (e.g., dev vs prod Branch keys).
 - Easily assign them to the library’s configuration when adding it to a project.
 
 **Adding Library Values**
@@ -865,9 +865,9 @@ The action accepts the following parameters:
 
 - **`canonicalIdentifier`** – A unique path for the content (e.g. `/imageDetails/:id`). This becomes the key reference used when routing the user back into the app.
 
-- **`title`** – The link's title (used in social previews or analytics)
+- **`title`** – The link's title (used in social previews or analytics).
 
-- **`description`** – (Optional) A short description of the content
+- **`description`** – (Optional) A short description of the content.
 
 - **`metadata`** – A dynamic map of custom parameters to include with the link
 (e.g. page: "imageDetails", imageRef: "abc123", etc.)
@@ -887,9 +887,9 @@ These functions help you safely work with deep link data, extract values, and co
 
 - **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g `abc123`) from a URI stored inside a link data field (e.g. `/imageDetails/abc123`). Useful for extracting the ID from a link. 
 
-- **`getLinkValue(linkData, key)`** : Safely retrieves any single value from the link data Map. Returns null if not found. (e.g retrieving `showPromo` attribute value from the `linkData`)
+- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g retrieving `showPromo` attribute value from the `linkData`).
 
-- **`createLinkProperties(...)`** : Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
+- **`createLinkProperties(...)`** - Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
 
 
 
