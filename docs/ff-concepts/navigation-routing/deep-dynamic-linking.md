@@ -34,8 +34,8 @@ requires authentication, you'll see a login page. After successful login, you ca
 shared with you.
 
 The best thing to note here is that even if the app has a different flow for accessing the page
-content (e.g. Home Page -> All Posts -> Single Post), you can bypass the flow and directly open a
-specific page (e.g. Single Post).
+content (e.g., Home Page -> All Posts -> Single Post), you can bypass the flow and directly open a
+specific page (e.g., Single Post).
 
 ## Deep Link
 
@@ -330,7 +330,7 @@ To share the dynamic link of the page:
 
 1. Select the page that you would like to open via a deep link.
 
-2. Select any widget (e.g. share button) from the widget tree or the canvas area.
+2. Select any widget (e.g., share button) from the widget tree or the canvas area.
 
 3. First, add the action
    to [Generate Current Page Link](generate-current-page-link.md#defining-generate-current-page-link-action).
@@ -799,13 +799,13 @@ the link data, allowing you to perform custom navigation or logic. You can perfo
 
 The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link:
 
-- **`$canonical_identifier`:** The original route path used when the link was generated (e.g. `/imageDetails/:id`).
+- **`$canonical_identifier`:** The original route path used when the link was generated (e.g., `/imageDetails/:id`).
 
 - **`~referring_link`:** The full Branch URL that was clicked.
 
-- **`page`:** The target page or screen the link is meant to open (e.g. paywall). This is a custom parameter set by the user when generating the link.
+- **`page`:** The target page or screen the link is meant to open (e.g., paywall). This is a custom parameter set by the user when generating the link.
 
-- Any custom parameters added during link creation (e.g. `campaign`, `productId`, `referrer`, etc.)
+- Any custom parameters added during link creation (e.g., `campaign`, `productId`, `referrer`, etc.)
 
 This lets you write flexible, conditional navigation logic based on what was shared.
 
@@ -863,17 +863,17 @@ This is especially useful when you want to let users:
 
 The action accepts the following parameters:
 
-- **`canonicalIdentifier`** – A unique path for the content (e.g. `/imageDetails/:id`). This becomes the key reference used when routing the user back into the app.
+- **`canonicalIdentifier`** – A unique path for the content (e.g., `/imageDetails/:id`). This becomes the key reference used when routing the user back into the app.
 
 - **`title`** – The link's title (used in social previews or analytics).
 
 - **`description`** – (Optional) A short description of the content.
 
 - **`metadata`** – A dynamic map of custom parameters to include with the link
-(e.g. page: "imageDetails", imageRef: "abc123", etc.)
+(e.g., page: "imageDetails", imageRef: "abc123", etc.)
 
 - **`linkProperties`** – A dynamic map for configuring how the link behaves
-(e.g. set the `feature`, `channel`, `campaign`, or `stage` for analytics).
+(e.g., set the `feature`, `channel`, `campaign`, or `stage` for analytics).
 
 ### Branch Helper Functions
 
@@ -881,13 +881,13 @@ These functions help you safely work with deep link data, extract values, and co
 
 - **`isTargetingPage(linkData, targetPage)`** - Checks whether the page value in the link data matches a specific screen name. The `page` parameter is set by the user when generating the link from Branch dashboard or FlutterFlow. 
 
-- **`getCanonicalIdentifierFromLink(linkData)`** - Returns the canonical path (e.g. `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
+- **`getCanonicalIdentifierFromLink(linkData)`** - Returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
 
 - **`getReferringLinkFromLink(linkData)`** - Retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
 
-- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g `abc123`) from a URI stored inside a link data field (e.g. `/imageDetails/abc123`). Useful for extracting the ID from a link. 
+- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). Useful for extracting the ID from a link. 
 
-- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g retrieving `showPromo` attribute value from the `linkData`).
+- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`).
 
 - **`createLinkProperties(...)`** - Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
 
