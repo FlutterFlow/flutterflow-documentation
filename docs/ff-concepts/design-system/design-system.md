@@ -571,31 +571,9 @@ You can customize the following properties of each text style:
 - **Color** - Set the color of the text using either the color picker or by specifying a Hex value.
 - **Font Family** - You can change the Font Family for any style from here. Click here to set the font family from [*Google Fonts*](https://fonts.google.com/) or choose from the uploaded Custom Fonts. You can also choose whether this style is a *Primary* or *Secondary Font Family*.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JOD7EaZpTUgqzuvLT876?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+You can also create fully custom text styles to match your design needs, going beyond the default options like Display, Headline, or Title. Simply click the **+ Add Custom Text Style** button, a new text style will be added at the bottom, then customize the style settings.
+
+![typography](imgs/typography.avif)
 
 #### Adding responsive text styles
 
