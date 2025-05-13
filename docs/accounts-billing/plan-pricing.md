@@ -29,7 +29,11 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 
 ### Detailed Plan Changes
 
-Below are the details on all the changes so you’ll know exactly what to expect:
+:::warning[Regional Pricing]
+The prices listed below are base rates. Regional pricing will continue to apply where applicable, just as before.
+:::
+
+Below are the details on all the changes, so you’ll know exactly what to expect:
 
 <table>
   <thead>
