@@ -88,25 +88,15 @@ To add a design system from a library, start by creating the design system in a 
 
 ## Import Figma Theme
 
-You might use Figma to design your app and build it accordingly in our builder. If you have a lot of colors and text styles, importing them manually can take some time. You can now import the whole Figma theme, which includes the colors and text styles, directly into our builder.
+You can bring your Figma design system directly into your FlutterFlow project. This streamlines the design-to-development process by automatically importing colors and typography from your Figma file, helping you maintain visual consistency and reduce manual effort.
+
+To import a Figma theme into your FlutterFlow project, go to **Theme Settings > Design System** and click **Connect To Figma**. Authenticate your account and grant access to Figma. Once connected, paste your Figma file URL to fetch the theme.
+
+You’ll see a list of all imported colors; start mapping them to your project colors. You can filter these colors by whether they’re mapped or unmapped, and you also have the option to bulk delete any imported colors. After that, you can customize your project typography using the imported text styles.
 
 :::info
-
-Before you import the Figma theme, ensure you have access to the Figma design file and [**generate the access token**](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens).
-
+All imported colors are accessible anytime under **Colors > Custom Colors**.
 :::
-
-To import the Figma theme:
-
-1. Open the **Theme Settings > Design System**.
-2. Click the **Import Figma Theme** button. This will open a new popup.
-3. Enter your **Figma File URL** and **Personal Access Token**. The *Personal access tokens* allow us to access all of your files and data in Figma.
-4. Click **Import Figma Theme**.
-    1. Now, you'll see a list of colors from your Figma file, and here you can decide which one to keep. If everything looks good to you, Click **Import & Continue**.
-    2. You can replace the current theme colors with new/imported ones. Click on any color, and the dropdown will display all imported colors. Click on the new color to replace it. When done, click **Save & Continue**.
-    3. If you have custom text styling in your Figma file, it will be displayed here, and you can choose which one to import. Click **Import & Continue**.
-    4. Replace any existing style with the new one and click **Save & Finish**.
-5. Finally, click **Finish & Close**.
 
 <div style={{
     position: 'relative',
@@ -114,7 +104,7 @@ To import the Figma theme:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/gEry2KO5BeoZkflYHm8f?embed&show_copy_link=true"
+        src="https://demo.arcade.software/84lqVC1ZDkq7EFFnCusm?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
