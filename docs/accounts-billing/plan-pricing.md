@@ -4,32 +4,27 @@ title: Plans & Pricing
 tags: []
 toc_max_heading_level: 5
 sidebar_position: 2
-hide_table_of_contents: true
 ---
 
 # Plans & Pricing
-:::note
+:::info
 For our most up-to-date information, please visit **[FlutterFlow pricing](https://flutterflow.io/pricing)**.
-:::
-
-:::note
 Regional discounts are available, please **[log in to FlutterFlow](https://app.flutterflow.io/)** to see the pricing for your region.
 :::
 
-## Pricing Update
+## Pricing Update [May 2025]
 
-We’re excited to announce an update to our pricing plans, making them simpler and more tailored to how you use FlutterFlow.
+FlutterFlow has evolved significantly, from a visual builder to a complete development environment with features like code export, GitHub integration, branching, AI agents, and app deployment tools. As the platform has matured, so have the ways people use it. To better reflect how teams build and scale today, we’re introducing updated pricing plans. These updates will help us continue improving the platform, supporting your workflows, and delivering the advanced features needed for building production-ready apps.
 
-[why we are doing this - intentionally left blank – to be completed]
 
 ### What's Changing?
 
-As part of a platform-wide evolution, FlutterFlow is updating its pricing and packaging model effective **July 14, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
+As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **July 14, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
 
 **Key Changes**
 
-- We're retiring our legacy plans—**Standard**, **Pro**, and **Teams**—and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**, and **Enterprise**.
-- If you're already using FlutterFlow, don’t worry—you’ll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
+- We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**, and **Enterprise**.
+- If you're already using FlutterFlow, you’ll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
 - That said, feature access will look a little different. Some users will gain powerful new capabilities, while others might see a few features move to higher tiers.
 
 ### Detailed Plan Changes
