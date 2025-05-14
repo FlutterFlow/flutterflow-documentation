@@ -35,247 +35,115 @@ The prices listed below are base rates. Regional pricing will continue to apply 
 
 Below are the details on all the changes, so you’ll know exactly what to expect:
 
-<table>
+<table border="1" cellpadding="6" cellspacing="0">
   <thead>
     <tr>
       <th>Current Plan</th>
       <th>Team Size</th>
-      <th>Current Price (USD/mo)</th>
+      <th>Current Price (USD per month)</th>
       <th>New Plan</th>
-      <th>New Price (USD/mo)</th>
-      <th>Flagship Features in New Plan</th>
-      <th>Changes from Current Plan</th>
+      <th>New Price (USD per month)</th>
+      <th>What’s Changing?</th>
     </tr>
   </thead>
   <tbody>
-      
-<tr>
-  <td valign="top">Free</td>
-  <td valign="top">1</td>
-  <td valign="top">$0</td>
-  <td valign="top">**Free**</td>
-  <td valign="top">$0</td>
-  <td valign="top">
-    <ul>
-      <li>1 editor</li>
-      <li>Access to core platform and visual drag & drop builder</li>
-      <li>Firebase and Supabase integration</li>
-      <li>1 API endpoint</li>
-      <li>1 Development Environment</li>
-      <li>20 prompts/mo AI assistant</li>
-      <li>Up to 2 subdomains</li>
-      <li>Ability to import libraries</li>
-      <li>Figma component import via AI (with some limits)</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Gains:</strong>
-    <ul><li>Ability to import libraries</li></ul>
-    <strong>Losses:</strong>
-    <ul>
-      <li>2 project limit</li>
-      <li>2 subdomains (vs. 3 prior)</li>
-      <li>No Swagger/OpenAI API imports</li>
-      <li>Only 1 API endpoint (vs. 2 prior)</li>
-      <li>Only 1 Development Environment (vs. unlimited prior)</li>
-      <li>20 prompts/mo AI assistant (vs. 5/day prior)</li>
-      <li>No debug panel access</li>
-      <li>No ability to import third-party dependencies and packages</li>
-      <li>No push notifications</li>
-      <li>No payment integration</li>
-      <li>No ads integration</li>
-      <li>No ability to snapshot</li>
-      <li>No ability to comment</li>
-      <li>No ability to make project public</li>
-      <li>No technical support</li>
-    </ul>
-  </td>
-</tr>
-<tr>
-  <td valign="top">Standard</td>
-  <td valign="top">1</td>
-  <td valign="top">$30</td>
-  <td valign="top">**Individual**</td>
-  <td valign="top">$39 ⇧</td>
-  <td valign="top">
-    <ul>
-      <li>1 editor</li>
-      <li>Unlimited project counts</li>
-      <li>Unlimited API endpoints</li>
-      <li>Code download</li>
-      <li>APK download</li>
-      <li>1 AI agent</li>
-      <li>1 Test/project</li>
-      <li>Ability to edit configuration files</li>
-      <li>Refactoring support</li>
-      <li>Push notifications</li>
-      <li>Payment integration</li>
-      <li>Ads integration</li>
-      <li>1 free custom domain</li>
-      <li>Up to 20 subdomains</li>
-      <li>Ability to publish libraries</li>
-      <li>Custom favicon in web publishing</li>
-      <li>Ability to remove watermark</li>
-      <li>Ability to make project public</li>
-      <li>Email technical support</li>
-      <li>Figma component import via AI (with some limits)</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Gains:</strong>
-    <ul>
-      <li>Unlimited API endpoints (vs. 2 prior)</li>
-      <li>Access to one-click app store deployment</li>
-      <li>Ability to publish libraries</li>
-    </ul>
-    <strong>Losses:</strong>
-    <ul>
-      <li>Only 1 Test/project (vs. 3 prior)</li>
-      <li>No ability to snapshot</li>
-      <li>Only 1 Development Environment (vs. unlimited prior)</li>
-      <li>30 prompts/mo AI assistant (vs. unlimited prior)</li>
-      <li>No in-app technical support</li>
-    </ul>
-  </td>
-</tr>
-
-<tr>
-  <td valign="top">Pro</td>
-  <td valign="top">1</td>
-  <td valign="top">$70</td>
-  <td valign="top">**Individual**</td>
-  <td valign="top">$39 ⇩</td>
-  <td valign="top">
-    <ul>
-      <li>Same as above</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Losses:</strong>
-    <ul>
-      <li>No one-click localization</li>
-      <li>No Github integration</li>
-      <li>Only 1 Test/project (vs. unlimited prior)</li>
-      <li>No ability to snapshot</li>
-      <li>No ability to comment</li>
-      <li>Only 1 Development Environment (vs. unlimited prior)</li>
-      <li>30 prompts/mo AI assistant (vs. unlimited prior)</li>
-      <li>No in-app technical support</li>
-    </ul>
-  </td>
-</tr>
-
-<tr>
-  <td valign="top">Teams</td>
-  <td valign="top">2 users</td>
-  <td valign="top">$140</td>
-  <td valign="top">**Growth**</td>
-  <td valign="top">$135 ⇩</td>
-  <td valign="top">
-    <ul>
-      <li>Up to 2 editors</li>
-      <li>Up to 2 Development Environments</li>
-      <li>Real-time collaboration</li>
-      <li>Ability to snapshot up to 1 day before</li>
-      <li>Ability to comment</li>
-      <li>One-click localization</li>
-      <li>Github integration</li>
-      <li>VScode integration</li>
-      <li>Unlimited AI agents</li>
-      <li>In-app technical support</li>
-      <li>In-line functions (FF 6.0, coming)</li>
-      <li>Figma component import via AI (with some limits)</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Losses:</strong>
-    <ul>
-      <li>No more project-level collaboration</li>
-      <li>No access to branching</li>
-      <li>No access to audit logs</li>
-      <li>Max 2 Development Environments (vs. unlimited prior)</li>
-      <li>Can only snapshot up to 1 day before (vs. unlimited prior)</li>
-      <li>50 prompts/mo AI assistant (vs. unlimited prior)</li>
-    </ul>
-  </td>
-</tr>
-
-<tr>
-  <td valign="top">Teams</td>
-  <td valign="top">3–5 users</td>
-  <td valign="top">$210–$350</td>
-  <td valign="top">**Business**</td>
-  <td valign="top">$495 ⇧</td>
-  <td valign="top">
-    <ul>
-      <li>Up to 5 editors</li>
-      <li>Up to 3 Development Environments</li>
-      <li>Ability to snapshot up to 5 days before</li>
-      <li>Git-style branching</li>
-      <li>Up to 3 tests per project</li>
-      <li>Access to FlutterFlow Experts training program</li>
-      <li>Figma component import via AI (with some limits)</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Gains:</strong>
-    <ul>
-      <li>Custom typography (FF 6.0, coming)</li>
-      <li>Figma theme import (FF 6.0, coming)</li>
-      <li>Custom class support (FF 6.0, coming)</li>
-    </ul>
-    <strong>Losses:</strong>
-    <ul>
-      <li>Branching limited to 5 open branches max</li>
-      <li>No access to audit logs</li>
-      <li>Max 3 Development Environments (vs. unlimited prior)</li>
-      <li>Can only snapshot up to 5 days before (vs. unlimited prior)</li>
-      <li>100 prompts/mo AI assistant (vs. unlimited prior)</li>
-    </ul>
-  </td>
-</tr>
-
-<tr>
-  <td valign="top">Teams</td>
-  <td valign="top">6+ users</td>
-  <td valign="top">$420+</td>
-  <td valign="top">**Business** <em>(available for a bundled pricing for 12 months post cut-over)</em></td>
-  <td valign="top">$1,000+ ⇧</td>
-  <td valign="top"><ul><li>Same as above</li></ul></td>
-  <td valign="top"><ul><li>Same as above</li></ul></td>
-</tr>
-
-<tr>
-  <td valign="top">Enterprise</td>
-  <td valign="top">Any</td>
-  <td valign="top">Custom</td>
-  <td valign="top">**Enterprise**</td>
-  <td valign="top">Custom</td>
-  <td valign="top">
-    <ul>
-      <li>Controlled FlutterFlow upgrades (Version Pinning)</li>
-      <li>Unlimited snapshotting ability</li>
-      <li>Custom SSO</li>
-      <li>Accessibility features</li>
-      <li>Audit logging</li>
-      <li>Unlimited Development Environments</li>
-      <li>Custom AI assistant prompt limits</li>
-      <li>No automatic right to logo use</li>
-      <li>Database point in time recovery</li>
-      <li>Access to custom engineering solutions</li>
-      <li>Dedicated and live technical support</li>
-      <li>Figma component import via AI (with some limits)</li>
-    </ul>
-  </td>
-  <td valign="top">
-    <strong>Gains:</strong>
-    <ul>
-      <li>Github integration unblocked (prior limited only to Retail)</li>
-      <li>Custom SSO (coming)</li>
-      <li>v0 Accessibility features (coming)</li>
-    </ul>
-  </td>
-</tr>
+    <tr>
+      <td>Free</td>
+      <td>1</td>
+      <td>$0</td>
+      <td>Free</td>
+      <td>$0</td>
+      <td>
+        <ul>
+          <li>2 count project limit</li>
+          <li>Swagger/OpenAPI imports not available</li>
+          <li>No debug panel, payments/ads integrations, or snapshots available</li>
+          <li>No access to technical support</li>
+          <li>Can now import libraries</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Standard</td>
+      <td>1</td>
+      <td>$30</td>
+      <td>Individual</td>
+      <td>$39 ⇧</td>
+      <td>
+        <ul>
+          <li>Unlimited API endpoints</li>
+          <li>One-click app store deployment available</li>
+          <li>Snapshotting not available</li>
+          <li>1 Test and 1 Development Environment per project</li>
+          <li>Email access only to technical support</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Pro</td>
+      <td>1</td>
+      <td>$70</td>
+      <td>Individual</td>
+      <td>$39 ⇩</td>
+      <td>
+        <ul>
+          <li>GitHub integration, one-click localization, commenting, and snapshotting not available</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Teams</td>
+      <td>2 users</td>
+      <td>$140</td>
+      <td>Growth</td>
+      <td>$135 ⇩</td>
+      <td>
+        <ul>
+          <li>Branching and audit logs not available</li>
+          <li>Snapshotting limited to 1 day</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Teams</td>
+      <td>3–5 users</td>
+      <td>$210–$350</td>
+      <td>Business</td>
+      <td>$495 ⇧</td>
+      <td>
+        <ul>
+          <li>Branching capped at 5 open branches</li>
+          <li>Audit logs not available</li>
+          <li>Snapshotting limited to 5 days</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Teams</td>
+      <td>6+ users</td>
+      <td>$420+</td>
+      <td>Business</td>
+      <td>$1,000+ ⇧</td>
+      <td>
+        <ul>
+          <li><em>Same as above</em></li>
+          <li>Enterprise plan required for existing users to scale beyond 5 users or 5 open branches 12-months after cutover</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Enterprise</td>
+      <td>Any</td>
+      <td>Custom</td>
+      <td>Enterprise</td>
+      <td>Custom</td>
+      <td>
+        <ul>
+          <li>Custom SSO and accessibility features coming</li>
+          <li>Ability to opt out of AI data training</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
