@@ -516,3 +516,29 @@ YAML files play a key role in managing and resolving conflicts during the merge 
 - Since YAML files are text-based, they are version-controlled effectively, enabling multiple team members to make changes and merge their work.
 </p>
 </details>
+
+<details>
+<summary>
+Why didn’t all my changes appear after merging two branches?
+</summary>
+<p>
+Merging in FlutterFlow is designed to copy only the differences (diffs) between branches, not to replicate the entire contents of one branch into another. This behavior often leads to confusion, especially if users expect merging to act like a full copy-paste of all data.
+</p>
+<p>
+Here are a few important things to know:
+</p>
+<ul>
+  <li><strong>Merging propagates changes (diffs)</strong>: it does not transfer every element from one branch to another.</li>
+  <li><strong>No conflicts ≠ no changes</strong>: “No conflicts” doesn’t mean “no changes” and it definitely doesn’t mean the project is error-free. You may still have changes merged, and you should review for project errors to ensure everything merged as expected.</li>
+  <li>If a change was previously accepted or rejected during a merge, it won’t appear as a diff the next time you merge the same branches. That’s expected behavior.</li>
+</ul>
+<p>
+For example, if you merge `Branch B` into `Branch A` and copy over `change C`, but later undo that change on `Branch A`, a future merge from `Branch B` into `Branch A` won’t re-flag `change C`. Git considers it as already merged.
+</p>
+<p>
+
+<strong>Best Practice:</strong> Keep your branch histories short and simple. After each merge, delete the merged branch to avoid unnecessary complexity. For example, if you merge `Branch B` into `Branch A`, and later want to undo or revise those changes, don’t go back and modify `Branch B`. Instead, create a new branch (e.g., `Branch C`) from `Branch A` to make your updates.
+
+This approach prevents intertwining branch histories, avoids confusing merge behavior, and ensures clean, trackable diffs. Keeping branches focused and temporary makes merging more predictable and manageable.
+</p>
+</details>
