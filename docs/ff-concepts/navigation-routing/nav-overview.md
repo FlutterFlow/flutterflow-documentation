@@ -98,6 +98,6 @@ This action involves replacing the current route with a new route. Unlike pushin
 :::info
 
 - This is useful when you want to prevent the user from navigating back to the previous screen.
-- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action [**page navigation guide**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
+- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action in the [**page navigation guide**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
 
 :::
