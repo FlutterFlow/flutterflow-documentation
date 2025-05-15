@@ -1000,4 +1000,4 @@ If you prefer watching a video tutorial, here's the one for you:
 <details>
 <summary>How is the theme widget different from creating a template and component?</summary>
 <p>The Theme Widget allows you to customize the visual appearance of a single widget, whereas templates consist of multiple widgets that create a unique UI layout with a specific purpose. On the other hand, components are fully-featured custom widgets that combine multiple widgets and actions to complete a task.</p>
-</details> 
+</details>
