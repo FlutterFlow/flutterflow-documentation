@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="730" style="background:#0f1c1d; font-family: sans-serif; color: #a8d8d1">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: white; }
+    .subtitle { font-size: 12px; fill: white; }
+    .section { font-size: 16px; font-weight: bold; fill: #7de3d3; }
+    .item { font-size: 14px; fill: #a8d8d1; }
+  </style>
+  <text x="20" y="40" class="title">Firebase Storage library</text>
+
+  <text x="20" y="60" class="subtitle">The following are imported from the library project</text>
+  <text x="20" y="75" class="subtitle"> and are available for use in this project.</text> 
+
+  <!-- App States -->
+  <text x="20" y="100" class="section">📄 App States (3)</text>
+  <text x="40" y="125" class="item">• selectedPrefix</text>
+  <text x="40" y="145" class="item">• selectedItem</text>
+  <text x="40" y="165" class="item">• currentFileIndex</text>
+
+  <!-- Enums -->
+  <text x="20" y="205" class="section">📋 Enums (1)</text>
+  <text x="40" y="230" class="item">• StorageListType</text>
+
+  <!-- Data Types -->
+  <text x="20" y="270" class="section">🗄️ Data Types (4)</text>
+  <text x="40" y="295" class="item">• FileObject</text>
+  <text x="40" y="315" class="item">• FullMetadata</text>
+  <text x="40" y="335" class="item">• SettableMetadata</text>
+  <text x="40" y="355" class="item">• KeyValuePair</text>
+
+  <!-- Custom Actions -->
+  <text x="20" y="395" class="section">🔧 Custom Actions (8)</text>
+  <text x="40" y="420" class="item">• listAllFilesInBucket</text>
+  <text x="40" y="440" class="item">• downloadFile</text>
+  <text x="40" y="460" class="item">• getDownloadUrl</text>
+  <text x="40" y="480" class="item">• getMetadataForFile</text>
+  <text x="40" y="500" class="item">• updateMetadataForFile</text>
+  <text x="40" y="520" class="item">• uploadFileToBucket</text>
+  <text x="40" y="540" class="item">• deleteFileFromBucket</text>
+  <text x="40" y="560" class="item">• getPathFromUrl</text>
+
+  <!-- Custom Functions -->
+  <text x="20" y="600" class="section">🧩 Custom Functions (5)</text>
+  <text x="40" y="625" class="item">• convertStringToListType</text>
+  <text x="40" y="645" class="item">• getInfoForFile</text>
+  <text x="40" y="665" class="item">• convertStringToImagePath</text>
+  <text x="40" y="685" class="item">• getFullMetadataAsString</text>
+  <text x="40" y="705" class="item">• createCustomMetadataFromKeyValue</text>
+</svg>
