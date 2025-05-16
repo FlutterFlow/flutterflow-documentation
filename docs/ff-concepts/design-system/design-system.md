@@ -836,7 +836,7 @@ If you prefer watching a video tutorial, here is the guide for you:
 
 Creating a theme for widgets ensures that your app looks consistent and has a cohesive design. The Theme widgets can be reused, making it easy to update the styles of your app. If you decide to change any property of the widget, such as color scheme or fonts, you can update the theme widget instead of going through every widget individually. This can save a lot of time and effort, especially in larger projects.
 
-For example, creating theme widgets for different types of buttons such as 'primary_button', 'secondary_button', and 'tertairy_button' with specific attributes like width, color, icon, border radius, and padding. Then, these widgets can be directly added to a page or applied to an existing widget.
+For example, creating theme widgets for different types of buttons such as 'primary_button', 'secondary_button', and 'tertiary_button' with specific attributes like width, color, icon, border radius, and padding. Then, these widgets can be directly added to a page or applied to an existing widget.
 
 ### Adding theme widgets
 
