@@ -41,10 +41,11 @@ FlutterFlow provides two main ways to modify native XML files: [**Add Individual
 
 For Android, modifications are typically made in the `AndroidManifest.xml` file, where you can add the following tags:
 
-- **Activity Tags**: This injects code inside the `<activity> ... </activity>` block. You’d use this to declare an additional activity in an Android application. An activity represents a single screen with a user interface (UI). This tag can control the behavior, orientation, and themes, and determines how the activity interacts with other apps or system events.
-- **Application Tags**: This injects code inside the `<application> ... </application>` block. You’d use this to configure `<meta-data>` entries, application-wide settings, declare app components like services, broadcast receivers, and content providers, and specify intent filters.
+- **Activity Tags:** Inserts XML code inside the `MainActivity` block. This is typically used to add child XML elements within the MainActivity, such as `<intent-filter>` or `<meta-data>` to control aspects such as deep linking, theme application, or launch mode.
+- **Application Tags**: Used to inject properties or attributes directly on the `<application>` tag itself. For example, you can use this to set values such as `android:icon`, `android:label`, `android:allowBackup`.
+- **App Component Tags**: Inserts complete XML components inside the `<application>...</application>` block. Use this to add additional activities, services, broadcast receivers, or content providers that your app depends on.
 
-To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from the left navigation menu, select **Configuration Files**, then choose `AndroidManifest.xml`. Click the **plus** (+) button next to either the *Activity* or *Application* tag—depending on where you'd like to insert the snippet. Provide a name (this will be included as a comment in the file) and paste your snippet code.
+To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from the left navigation menu, select **Configuration Files**, then choose `AndroidManifest.xml`. Click the **plus (+)** button next to the tag where you want to insert the snippet. Provide a name (this will be included as a comment in the file) and paste your snippet code.
 
 <div style={{
     position: 'relative',
@@ -166,7 +167,7 @@ Here’s exactly how you do it:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/srZqoYaaoVR1mCE3t8AL?embed&show_copy_link=true"
+        src="https://demo.arcade.software/wHFUlfRHxQlbzmjR0Bfs?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -756,9 +757,15 @@ There's a known limitation where editing the `main.dart` file with Supabase enab
 
 <details>
 <summary>
-How can I create a Library that needs to edit Info.plist / Entitlements.plist / AndroidManifest.xml 
+Can I modify the Configuration Files in a Library project?
 </summary>
 <p>
-Right now, changes to the configuration files made in a Library project are not ported over to the projects that import them. This means if you create a Library that needs specific permissions added to these files, the consumers of your Library will need to edit the files in the project that imports the Library. We are hoping to have automatic import of changes to the configuration files available in the next few releases. 
+Yes, you can. When a Library Project is imported, any configuration file snippets, such as those for `AndroidManifest.xml`, `Info.plist`, or `Entitlements.plist` are automatically merged into the importing project's configuration files.
+
+Additionally, your Library Project can pass values (like API keys) into those snippets using [**Library Values**](../../resources/projects/libraries.md#library-values), making it easy to customize.
+
+![config-values-in-library](imgs/config-values-in-library.avif)
+
+This makes Libraries incredibly powerful and enables easy integration of tools like **PostHog** (analytics), **Sentry** (crash reporting), **CleverTap**, **flutter_local_notifications**, **flutter_nfc_kit**, and many more directly from the Marketplace.
 </p>
 </details>
