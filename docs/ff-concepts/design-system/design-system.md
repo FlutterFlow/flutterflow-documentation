@@ -709,7 +709,7 @@ Make sure you have the proper rights or licenses to use the icons in your applic
 
 **Steps to Generate and Add Custom Icons**
 
-1. Head over to the [iconmoon](https://icomoon.io/app/#/select).
+1. Head over to the [IcoMoon](https://icomoon.io/app/#/select).
 2. Import your custom icon (.svg) or select from the free icons set.
 3. Select the **Generate Font** tab.
 4. Click on the Settings button (gear icon) beside the download text on the bottom right side.
@@ -814,7 +814,7 @@ If you prefer watching a video tutorial, here is the guide for you:
 
 Creating a theme for widgets ensures that your app looks consistent and has a cohesive design. The Theme widgets can be reused, making it easy to update the styles of your app. If you decide to change any property of the widget, such as color scheme or fonts, you can update the theme widget instead of going through every widget individually. This can save a lot of time and effort, especially in larger projects.
 
-For example, creating theme widgets for different types of buttons such as 'primary_button', 'secondary_button', and 'tertairy_button' with specific attributes like width, color, icon, border radius, and padding. Then, these widgets can be directly added to a page or applied to an existing widget.
+For example, creating theme widgets for different types of buttons such as 'primary_button', 'secondary_button', and 'tertiary_button' with specific attributes like width, color, icon, border radius, and padding. Then, these widgets can be directly added to a page or applied to an existing widget.
 
 ### Adding theme widgets
 
