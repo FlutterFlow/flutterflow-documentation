@@ -571,7 +571,7 @@ You can customize the following properties of each text style:
 - **Color** - Set the color of the text using either the color picker or by specifying a Hex value.
 - **Font Family** - You can change the Font Family for any style from here. Click here to set the font family from [*Google Fonts*](https://fonts.google.com/) or choose from the uploaded Custom Fonts. You can also choose whether this style is a *Primary* or *Secondary Font Family*.
 
-You can also create fully custom text styles to match your design needs, going beyond the default options like Display, Headline, or Title. Simply click the **+ Add Custom Text Style** button, a new text style will be added at the bottom, then customize the style settings.
+You can also create fully custom text styles to match your design needs, going beyond the default styles like Display, Headline, or Title. Simply click the **+ Add Custom Text Style** button, a new text style will be added at the bottom, then edit the style name and customize the style properties.
 
 ![typography](imgs/typography.avif)
 
