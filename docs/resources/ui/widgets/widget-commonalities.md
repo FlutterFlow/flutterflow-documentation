@@ -19,7 +19,7 @@ Visibility settings in FlutterFlow allow you to dynamically control when and how
 
 **Conditional** visibility allows you to control the display of UI elements (widgets) based on specific conditions or criteria. It helps you create dynamic, personalized experiences by showing or hiding certain content.
 
-For example, you could display specific features or actions only to users with particular roles—such as showing admin controls exclusively to administrators.
+For example, you could display specific features or actions only to users with particular roles, such as showing admin controls exclusively to administrators.
 
 :::info
 
@@ -31,7 +31,7 @@ The **Show in UI Builder** toggle only affects visibility within the design canv
 
 ### Responsive
 
-The **Responsive** visibility property allows you to show or hide widgets based on device screen size—such as mobile, tablet, or desktop. By toggling each icon, you can show or hide the widget according to your design needs.
+The **Responsive visibility** property allows you to show or hide widgets based on device screen size, such as mobile, tablet, or desktop. By toggling each icon, you can show or hide the widget according to your design needs.
 
 For example, you might create two separate navigation menus:
 
@@ -217,11 +217,11 @@ You can also drag the handle bars on the right and bottom sides of a selected wi
 
 :::tip[Responsive Width & Height]
 
-You can also use a **Responsive Value** to apply different width or height values based on screen size. To set it up, open the **Set from Variable** menu and select **Responsive Value**. Then, assign specific size values for each screen size category—such as mobile (Screen Width < Breakpoint Small), tablet (Screen Width < Breakpoint Medium), and desktop (Screen Width < Breakpoint Large).
+You can also use a **Responsive Value** to apply different width or height values based on screen size. To set it up, open the **Set from Variable** menu and select **Responsive Value**. Then, assign specific size values for each screen size category, such as mobile (Screen Width < Breakpoint Small), tablet (Screen Width < Breakpoint Medium), and desktop (Screen Width < Breakpoint Large).
 
 :::
 
-# **Use Keyboard to Adjust Property Values**
+## Use Keyboard to Adjust Property Values
 
 You can quickly increase or decrease the property value using your keyboard's up and down arrow keys. This allows for precise control without needing to type in new values each time.
 
@@ -343,7 +343,7 @@ To do this, hold down the **Shift** key and click on each widget you want to edi
 </div>
 <p></p>
 
-## Add Images from Unsplash
+## Use Images from Unsplash
 
 You can easily display high-quality images directly from [Unsplash](https://unsplash.com/) using the Properties Panel. Just click the **search icon**, type in your desired keyword, and select an image from the results.
 
@@ -380,9 +380,9 @@ You can also choose the image size (i.e., Small, Regular, or Full) before adding
 </div>
 <p></p>
 
-# **UI Builder Display Value**
+## UI Builder Display Value
 
-For widgets like `Text` and `RichText`, if the content is set from a variable, you can add a placeholder value that appears only in the FlutterFlow builder. This placeholder helps you visualize how the text will look on the canvas, but it won’t appear in the live app—it's replaced by the actual variable at runtime.
+For widgets like `Text` and `RichText`, if the content is set from a variable, you can add a placeholder value that appears only in the FlutterFlow builder. This placeholder helps you visualize how the text will look on the canvas, but it won’t appear in the live app, it's replaced by the actual variable at runtime.
 
 This is especially helpful for previewing layout, spacing, and alignment without removing or disrupting your variable bindings.
 
