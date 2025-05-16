@@ -522,13 +522,25 @@ YAML files play a key role in managing and resolving conflicts during the merge 
 Why didn’t all my changes appear after merging two branches?
 </summary>
 <p>
-In merging, Git copies only the differences (diffs) between branches, not the full content from one branch to another. This behavior often leads to confusion, especially if users expect merging to act like a full copy-paste of all data.
+Merging in Git is not like copying everything from one branch into another. It’s more like combining changes from two versions of a document based on a common starting point.
+
+Let’s say you and your friend both made changes to the same project:
+- You both started with the same original version (this is called the common ancestor).
+- You made your changes in `Branch A`.
+- Your friend made changes in `Branch B`.
+
+When you merge `Branch B` into `Branch A`, Git compares:
+- What changed in `Branch A` since the common starting point.
+- What changed in `Branch B` since the common starting point.
+
+If both of you changed different parts, Git can merge them easily. But if you both changed the same part in different ways, Git won’t know which one to keep—that's called a conflict, and you'll need to resolve it manually.
+
+![git-merging-behavior](imgs/git-merging-behavior.avif)
 </p>
 <p>
-Here are a few important things to know:
+Here are a few other things to know:
 </p>
 <ul>
-  <li><strong>Merging propagates changes (diffs)</strong>: it does not transfer every element from one branch to another.</li>
   <li><strong>No conflicts ≠ no changes</strong>: “No conflicts” doesn’t mean “no changes” and it definitely doesn’t mean the project is error-free.</li>
   <li><strong>Project errors are not bugs</strong>: Project errors let you know that you are making mistakes when merging data. Even if changes are successfully merged, project errors indicate areas you should double-check to ensure everything merged as expected.</li>
   <li>If a change was previously accepted or rejected during a merge, it won’t appear as a diff the next time you merge the same branches. That’s expected behavior.</li>
