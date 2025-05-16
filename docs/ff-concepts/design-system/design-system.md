@@ -731,7 +731,7 @@ Make sure you have the proper rights or licenses to use the icons in your applic
 
 **Steps to Generate and Add Custom Icons**
 
-1. Head over to the [iconmoon](https://icomoon.io/app/#/select).
+1. Head over to the [IcoMoon](https://icomoon.io/app/#/select).
 2. Import your custom icon (.svg) or select from the free icons set.
 3. Select the **Generate Font** tab.
 4. Click on the Settings button (gear icon) beside the download text on the bottom right side.
