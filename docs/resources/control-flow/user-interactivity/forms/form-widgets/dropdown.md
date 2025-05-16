@@ -119,9 +119,8 @@ To set an initial value:
 
 You might want to save the dropdown value as soon as the selection changes. This approach is useful when you want to ensure that the user's selection is immediately saved without having to wait for them to submit the form. By doing so, you can provide a better user experience and reduce the risk of data loss in case of any interruption.
 
-You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
+You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
 
-![Saving *DropDown* value on selection change](../../imgs/saving-dp-value-on-selection-change.webp)
 
 
 ## Customizing

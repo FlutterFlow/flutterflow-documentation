@@ -77,6 +77,10 @@ Here is a simple way to do it:
 </div>
 <p></p>
 
+### Trigger action on change
+
+See how to [trigger an action when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
+
 ### Setting initial value
 
 You might want to show the checkbox with a default value, either check or uncheck. For example, showing the checked checkbox for travel insurance.
@@ -522,6 +526,3 @@ To customize the checkbox border:
 </div>
 <p></p>
 
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
