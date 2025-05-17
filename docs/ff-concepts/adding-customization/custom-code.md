@@ -14,7 +14,7 @@ While FlutterFlow provides a wide range of pre-built components and functionalit
 times when you need to extend your app with custom logic or UI components that are not available out of the box.
 This is where writing custom code comes into play. 
 
-There are a few different ways to make custom code accessible in FlutterFLow:
+There are a few different ways to make custom code accessible in FlutterFlow:
 
 * **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
 * **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import [custom package dependencies](#adding-a-pubspec-dependency).
