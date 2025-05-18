@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Apple Login, Authentication, Firebase]
 
 # Apple Login
 
-Apple Sign-In allows users to authenticate using their Apple Accounts.
+Apple Sign-In allow users to authenticate using their Apple Accounts.
 
 :::warning[Support]
 
