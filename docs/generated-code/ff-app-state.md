@@ -34,15 +34,14 @@ class FFAppState extends ChangeNotifier {
     notifyListeners();
   }
 
-   // App State variable of primitive type with a getter and setter
-    bool _enableDarkMode = false;
+  // App State variable of primitive type with a getter and setter
+  bool _enableDarkMode = false;
 
-    bool get enableDarkMode => _enableDarkMode;
+  bool get enableDarkMode => _enableDarkMode;
 
-    set enableDarkMode(bool value) {
+  set enableDarkMode(bool value) {
     _enableDarkMode = value;
-   }
-
+  }
 }
 ```
 
@@ -52,7 +51,7 @@ The `_enableDarkMode` is an App State variable created by developer that creates
 When updating an `AppState` variable from the Action Flow Editor, you will be presented with several **[update type](../resources/data-representation/app-state.md#update-type)** options such as **Rebuild All Pages**, **Rebuild Current Page**, and **No Rebuild** in the Action Settings. Let's see how the generated code changes when these options are selected.
 
 ### Rebuild Current Page
-When a developer chooses to update App State with the update type set to **Rebuild Current Page**, the corresponding `setter` is called. Immediately after, `setState((){});` is invoked, which updates only the current page. 
+When a developer chooses to update App State with the update type set to **Rebuild Current Page**, the corresponding `setter` is called. Immediately after, `setState(() {});` is invoked, which updates only the current page. 
 
 Here's an example of the generated code when we update the App State `enableDarkMode` in the `onInitialization` action trigger of the `ProductListPage`.
 
@@ -90,7 +89,7 @@ Only the setter is called with no setState or update method invoked afterward. T
 When you add an [**Update App State**](../resources/data-representation/app-state.md#update-app-state-action) action via the Action Flow Editor, the corresponding pages will include this line within the build method:
 
 ```js
- @override
+@override
 Widget build(BuildContext context) {
     context.watch<FFAppState>();
     ...
