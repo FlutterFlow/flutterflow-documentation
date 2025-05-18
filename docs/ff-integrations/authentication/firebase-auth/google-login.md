@@ -9,7 +9,7 @@ keywords: [FlutterFlow, Google OAuth, Authentication, Firebase]
 
 # Google Login
 
-Google Sign-In allows users to authenticate using their Google Accounts.
+Google Sign-In allow users to authenticate using their Google Accounts.
 
 :::info[Prerequisites]
 
