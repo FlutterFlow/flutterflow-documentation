@@ -11,7 +11,7 @@ keywords: [FlutterFlow, Navigation, Concepts]
 
 Navigation in FlutterFlow is a crucial aspect of app development, enabling users to move between different pages or screens. This is achieved through a system of routing, where each page is assigned a unique route identifier. Understanding how navigation works and what happens to the navigation stack under the hood can help you create a seamless user experience.
 
-## What are Routes?
+## What Are Routes?
 Routes are essentially the paths that define different screens or pages within the app. Each route is associated with a specific screen and has a unique identifier that allows the app to recognize and navigate to it. For example, a route could point to the home screen, a product details page, or a user profile page.
 
 | Page          | Route            |
