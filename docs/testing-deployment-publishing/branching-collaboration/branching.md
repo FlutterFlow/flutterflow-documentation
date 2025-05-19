@@ -516,3 +516,44 @@ YAML files play a key role in managing and resolving conflicts during the merge 
 - Since YAML files are text-based, they are version-controlled effectively, enabling multiple team members to make changes and merge their work.
 </p>
 </details>
+
+<details>
+<summary>
+Why didn’t all my changes appear after merging two branches?
+</summary>
+<p>
+Merging in Git is not like copying everything from one branch into another. It’s more like combining changes from two versions of a document based on a common starting point.
+
+Let’s say you and your friend both made changes to the same project:
+- You both started with the same original version (this is called the common ancestor).
+- You made your changes in `Branch A`.
+- Your friend made changes in `Branch B`.
+
+When you merge `Branch B` into `Branch A`, Git compares:
+- What changed in `Branch A` since the common starting point.
+- What changed in `Branch B` since the common starting point.
+
+If both of you changed different parts, Git can merge them easily. But if you both changed the same part in different ways, Git won’t know which one to keep, that's called a conflict, and you'll need to resolve it manually.
+
+![git-merging-behavior](imgs/git-merging-behavior.avif)
+</p>
+<p>
+Here are a few other things to know:
+</p>
+<ul>
+  <li><strong>No conflicts ≠ no changes</strong>: “No conflicts” doesn’t mean “no changes” and it definitely doesn’t mean the project is error-free.</li>
+  <li><strong>Project errors are not bugs</strong>: Project errors let you know that you are making mistakes when merging data. Even if changes are successfully merged, project errors indicate areas you should double-check to ensure everything merged as expected.</li>
+  <li>If a change was previously accepted or rejected during a merge, it won’t appear as a diff the next time you merge the same branches. That’s expected behavior.</li>
+</ul>
+<p>
+
+For example, you merge `Branch B` into `Branch A`, and `change C` (which exists in `Branch B`) gets copied over to `Branch A`. Later, you decide to undo `change C` directly on `Branch A`. Now, if you merge `Branch B` into `Branch A` again, Git will not re-flag `change C` as a difference. This is because Git considers it already merged and no longer a diff.
+
+</p>
+<p>
+
+<strong>Best Practice:</strong> Keep your branch histories short and simple. After each merge, delete the merged branch to avoid unnecessary complexity. For example, if you merge `Branch B` into `Branch A`, and later want to undo or revise those changes, don’t go back and modify `Branch B`. Instead, create a new branch (e.g., `Branch C`) from `Branch A` to make your updates.
+
+This approach prevents intertwining branch histories, avoids confusing merge behavior, and ensures clean, trackable diffs. Keeping branches focused and temporary makes merging more predictable and manageable.
+</p>
+</details>
