@@ -533,7 +533,7 @@ When you merge `Branch B` into `Branch A`, Git compares:
 - What changed in `Branch A` since the common starting point.
 - What changed in `Branch B` since the common starting point.
 
-If both of you changed different parts, Git can merge them easily. But if you both changed the same part in different ways, Git won’t know which one to keep—that's called a conflict, and you'll need to resolve it manually.
+If both of you changed different parts, Git can merge them easily. But if you both changed the same part in different ways, Git won’t know which one to keep, that's called a conflict, and you'll need to resolve it manually.
 
 ![git-merging-behavior](imgs/git-merging-behavior.avif)
 </p>
@@ -547,7 +547,7 @@ Here are a few other things to know:
 </ul>
 <p>
 
-For example, you merge `Branch B` into `Branch A`, and `change C` gets copied over. Later, you decide to undo `change C` directly on `Branch A`. Now, if you merge `Branch B` into `Branch A` again, Git will not re-flag `change C` as a difference. This is because Git considers it already merged and no longer a diff.
+For example, you merge `Branch B` into `Branch A`, and `change C` (which exists in `Branch B`) gets copied over to `Branch A`. Later, you decide to undo `change C` directly on `Branch A`. Now, if you merge `Branch B` into `Branch A` again, Git will not re-flag `change C` as a difference. This is because Git considers it already merged and no longer a diff.
 
 </p>
 <p>
