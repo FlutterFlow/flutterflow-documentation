@@ -150,12 +150,28 @@ Below are the details on all the changes, so you’ll know exactly what to expec
 
 ## FAQS
 
+### General / Timeline
+
+<details>
+<summary>
+Why is FlutterFlow updating its pricing?
+</summary>
+<p>
+When we launched FlutterFlow, we had one goal: make it radically easier to build beautiful, powerful digital products. Four years later, we’re a full development platform that goes from idea to app store. We now have collaboration features, AI tools, lots of integrations, branching, development environments, and more, built in.
+
+Now our plans are evolving to reflect that growth. We’ve introduced new features across every tier and restructured our plans to better align with the way people build today and how their needs change as they move from MVP to scaling production apps.
+</p>
+</details>
+
+
 <details>
 <summary>
 Who is affected by this pricing change?
 </summary>
 <p>
 All FlutterFlow users will move to the new structure as of July 14, 2025.
+
+Enterprise customers on custom contracts are not affected by these changes.
 </p>
 </details>
 
@@ -164,174 +180,154 @@ All FlutterFlow users will move to the new structure as of July 14, 2025.
 When does the new pricing take effect for me?
 </summary>
 <p>
-The new pricing and packaging will go into effect for all users on July 14, 2025. Your billing and feature access will automatically update on that date.
+- For new users, the pricing and packaging will apply immediately on July 21, 2025.
+- For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a 30-day transition period where you will have the ability to elect into a new plan. On August 20, 2025, your account will be moved to one of the new plans if no action is taken.
+- **Note:** All plan updates will take effect at 12:00 AM local time on the specified effective date.
+
+![pricing-update-img](imgs/pricing-update-img.png)
 </p>
 </details>
 
+### Plans
 <details>
 <summary>
-How do I know which plan I will be moved to?
-</summary>
-<p>Your new plan will be determined based on your current <strong>team size</strong>, like this:</p>
-<ul>
-  <li>Solo users will move to the <strong>Individual</strong> plan.</li>
-  <li>Teams of 2 will move to the <strong>Growth</strong> plan.</li>
-  <li>Teams of 3–5 will move to the <strong>Business</strong> plan.</li>
-  <li>Teams with 6+ users will have a choice to stay on the <strong>Business</strong> plan for a period of 12 months as part of a bundling solution.</li>
-  <li>Users on the free plan will stay on the free plan, but with new feature restrictions.</li>
-</ul>
-<p>
-We’ll notify you directly in the app and by email before the July 14 transition, so you’ll have a chance to review or adjust your plan if needed. If you’re unsure, contact us and we’ll help you confirm your new plan.
-</p>
-</details>
-
-<details>
-<summary>
-What if I am currently on a Teams plan with 6+ users and do not want to migrate to the Enterprise plan – how will I be charged in the Business tier?
+How do the new plans differ from the current plans?
 </summary>
 <p>
-Teams with more than 5 users who do not wish to move immediately to an Enterprise contract will be priced based on bundles of 5 seats under the Business tier. For example:
+The new plans introduce pricing by team size and more structured feature access to support different types of users and teams as they grow.
 </p>
+<p>Key changes include:</p>
 <ul>
-  <li>A team with 6–10 users will be charged $500 × 2 = $1,000/month.</li>
-  <li>A team with 11–15 users will be charged $500 × 3 = $1,500/month.</li>
-</ul>
-<p>This allows larger retail teams to continue operating under the Business feature set but note:</p>
-<ul>
-  <li>No Enterprise-only features are included.</li>
-  <li>If the team exceeds Business tier limits, they will be prompted to upgrade to Enterprise.</li>
+  <li>New plan tiers based on team size, with clearer limits of number of developers that can work together.</li>
+  <li>Collaboration solely at the team level, to support scalable workflows and controls.</li>
+  <li>Updated feature access, with certain advanced features now only available in higher tiers.</li>
+  <li>Plan-based Support levels, with availability varying by plan.</li>
+  <li>Revised pricing structure, with updated USD and INR rates.</li>
 </ul>
 <p>
-This bundling option is available only to existing 6+ seat teams and for 12 months to ensure continuity without immediate contract negotiation.
+For a detailed comparison of the current and new plans, including feature breakdown and pricing, please see our Pricing Comparison Table.
 </p>
 </details>
 
 <details>
 <summary>
-What if I don’t want to switch plans?
-</summary>
-<p>
-All existing plans will be retired on July 14, 2025, and users will be automatically transitioned to the new pricing structure based on their current usage. This helps us simplify billing, improve feature alignment, and deliver a more consistent experience across all teams.
-</p>
-<p>
-If you’d like to review your options or adjust your usage ahead of time, our support team is here to help. We recommend logging into your account to see how your team maps to the new tiers and reaching out if you have specific needs.
-</p>
-</details>
-
-<details>
-<summary>
-How do I know which plan is right for me?
+Which plan is best suited for different types of users?
 </summary>
 <p>We recommend:</p>
 <ul>
-  <li><strong>Individual:</strong> Solo builders or hobbyists</li>
-  <li><strong>Growth:</strong> Two-person teams looking to quickly iterate with minimal collaboration requirements</li>
-  <li><strong>Business:</strong> Teams of 3–5 collaborating on production apps</li>
-  <li><strong>Enterprise:</strong> Larger teams needing advanced security, governance, and collaboration features</li>
+  <li><strong>Free:</strong> App builders learning and prototyping.</li>
+  <li><strong>Individual:</strong> Solo builders shipping real apps.</li>
+  <li><strong>Growth:</strong> Two-person teams launching production apps.</li>
+  <li><strong>Business:</strong> Growing teams (3–5 users) with advanced workflows.</li>
+  <li><strong>Enterprise:</strong> Larger teams needing advanced security, governance, and collaboration features.</li>
 </ul>
 </details>
 
 <details>
 <summary>
-I am a Free user and I will lose access to technical support. Where else can I look to for help when building?
+How do I know which plan I will be moved to if I do not make a selection before August 20, 2025?
 </summary>
-<p>While direct technical support will no longer be included with the Free plan, we offer a collection of self-serve resources to help you continue building with confidence:</p>
+<p>
+If you do not make a selection during the election period (July 21, 2025 – August 20, 2025), your new plan will be automatically determined based on your current <strong>team size</strong>. For example:
+</p>
 <ul>
-  <li>New troubleshooting guides and updated Help Center documentation will be available to walk you through common issues and workflows step-by-step</li>
-  <li>You can turn to our Community Forum to ask questions, share learnings, and get help from other FlutterFlow builders.</li>
-  <li>We also offer free educational content via our YouTube channel and on Coursera to support your learning and skill development.</li>
+  <li>Users on the Free plan will remain in the Free plan, but with new feature restrictions.</li>
+  <li>Solo users in Standard or Pro plans will move to the <strong>Individual</strong> plan.</li>
+  <li>Teams of 2 will move to the <strong>Growth</strong> plan.</li>
+  <li>Teams of 3–5 will move to the <strong>Business</strong> plan.</li>
+  <li>Teams with 6+ users will move to the <strong>Business</strong> plan and priced in bundles of 5 seats as one team. You will be able to remain on this price for up to 12 months, after which you will need to upgrade to an Enterprise plan to continue.</li>
+  <ul><li>We highly encourage you to begin evaluating your team’s resourcing and expansion needs early, as the bundled Business plan will not support usage growth beyond the feature limits of the tier. Early planning and engaging with our sales team can help ensure a smooth migration, avoid disruption, and prevent any risk of project or data access issues at the 12-month cut-off. To start the conversation, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a> to explore the best solution package for your team.</li></ul>
 </ul>
-<p>These resources are designed to help you succeed — even on a Free plan — without needing to rely on 1:1 support.</p>
+<p>
+
+</p>
+<p>
+We’ll notify you directly in the app and by email before the August 20, 2025 migration, so you’ll have a chance to review or adjust your plan if needed. If you’re unsure, contact us and we’ll help you confirm your new plan.
+</p>
+</details>
+
+<details>
+<summary>
+Are there any benefits to electing into a new plan vs. being auto-migrated?
+</summary>
+<p>
+Yes! By proactively choosing to move to any of the new plans with annual billing during the election period (before August 20, 2025), you will receive <strong>20% off your first year</strong>.
+</p>
+<p>
+Additionally, any existing user or team who engages with our Sales team during the election period will be eligible for 2 free months added to their Enterprise contract term, once executed.
+</p>
+</details>
+
+<details>
+<summary>
+Can I stay on my old plan?
+</summary>
+<p>
+No. All existing plans will be retired on August 20, 2025, and users will be automatically transitioned to the new plans based on their current team size. This helps us simplify billing, improve feature alignment, and deliver a more consistent experience across all teams.
+</p>
+<p>
+If you’re currently a paying user and would prefer not to be part of the migration to one of the new paid plans, you have two paths:
+</p>
+<ul>
+  <li><strong>Continue building on the Free plan:</strong> you can downgrade your plan to Free, where you will be able to view, edit, and run any 2 existing projects of your choosing inside the editor, but paid‑tier features, deployments, and team seats will be disabled until you upgrade.</li>
+  <li><strong>Export your code:</strong> download the full Flutter source and assets for each project before August 14, 2025 and continue building locally to retain full ownership of your codebase.</li>
+</ul>
+<p>
+If you’d like to review your options or adjust your usage ahead of time, our support team is here to help. You will receive an email confirming the plan your account will move to, but can also confirm by logging into your account after July 21, 2025 to see how your team maps to the new tiers.
+</p>
 </details>
 
 <details>
 <summary>
 What’s included in the Enterprise plan?
 </summary>
-<p>The Enterprise plan is built for organizations that need advanced security, scale, and white-glove support while managing production-grade apps across teams. In addition to all features available in lower tiers, Enterprise includes:</p>
+<p>
+The Enterprise plan is built for organizations that need advanced security, scale, and white-glove support while managing production-grade apps across teams. In addition to all features available in lower tiers, Enterprise includes:
+</p>
 <ul>
   <li>Controlled FlutterFlow upgrades through version pinning</li>
-  <li>Unlimited snapshotting for project history and rollback</li>
-  <li>Custom SSO and audit logging for secure, centralized access</li>
+  <li>Unlimited snapshot backups for project history and rollback</li>
+  <li>Single Sign-On (SSO) and Activity Logging for secure, centralized access</li>
   <li>Unlimited development environments to mirror staging, QA, and production workflows</li>
   <li>Advanced accessibility features to meet regulatory requirements</li>
-  <li>Ability to opt out of AI training</li>
-  <li>Custom AI assistant prompt limits for tailored automation</li>
-  <li>Database point-in-time recovery (PITR) for enterprise-grade continuity</li>
-  <li>No automatic right to use your logo</li>
+  <li>No automatic right for FlutterFlow to use your logo</li>
   <li>Live and dedicated technical support, plus access to custom engineering solutions when needed</li>
 </ul>
-<p>To learn more or explore a custom Enterprise solution for your team, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a> – we'd be happy to walk you through options that match your scale and needs.</p>
-</details>
-
-<details>
-<summary>
-What if I have projects with multiple collaborators?
-</summary>
 <p>
-Starting July 14, 2025, you will no longer be able to collaborate with other users outside of your plan (Growth or Business). All existing collaborators will convert to view-only access.
-</p>
-<p>
-To collaborate with users across multiple organizations, we encourage you to buy separate plans as appropriate.
+To learn more or explore a custom Enterprise solution for your team, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a> – we'd be happy to walk you through options that match your scale and needs.
 </p>
 </details>
 
-<details>
-<summary>
-What if I want to continue collaborating with project collaborators who are not on a Teams plan with me?
-</summary>
-<p>With the new pricing model, collaboration is only supported within shared Teams plans. This means that to work together on a project, all collaborators must be part of the same Growth, Business, or Enterprise team.</p>
-<p>Project-level collaboration (where individuals outside your team could be added to specific projects) is being phased out to simplify permissions, ensure security, and support shared billing.</p>
-<p>If you would like to continue collaborating:</p>
-<ul>
-  <li>You can invite others to join your team (additional seats may require an upgrade depending on your plan).</li>
-  <li>Or, they can create a new team and invite you, depending on who should own billing and project access.</li>
-</ul>
-<p>This change ensures that every project has clear ownership, consistent permissions, and a scalable path for team-based collaboration.</p>
-</details>
 
-<details>
-<summary>
-I’m an agency – which plan works best for me?
-</summary>
-<p>Agencies have a few options depending on their team size and how they work with clients:</p>
-<ul>
-  <li>If your agency has 5 or fewer users, we recommend the Business plan, which supports up to 5 collaborators with advanced features like branching and access control.</li>
-</ul>
-<p>If your agency has more than 10 users:</p>
-<ul>
-  <li>We recommend you to encourage your client to purchase seats in a Business plan and invite your agency team members as collaborators.</li>
-</ul>
-<p>For agencies with 10 or more developers:</p>
-<ul>
-  <li>We recommend you explore custom agency pricing tailored to your model by reaching out to us at <a href="mailto:partners@flutterflow.io">partners@flutterflow.io</a> and gain access to volume discount pricing.</li>
-</ul>
-</details>
+### Feature Access
 
 <details>
 <summary>
 Will my existing FlutterFlow apps stop working?
 </summary>
 <p>
-No, your current apps will continue to function, and you will still be able to edit all existing projects. However, access to certain features may change depending on your new plan tier starting July 14, 2025.
+No, your current apps will continue to function and remain deployed, though access to certain features may change depending on your new plan tier starting August 20, 2025.
+</p>
+<p>
+If you choose to elect into a new plan during the election period before August 20, 2025, those feature changes will take effect as soon as your new plan becomes active.
 </p>
 </details>
 
 <details>
 <summary>
-What happens to features I already use but which move to a higher tier?
+What happens to features I already use but are not part of my new plan?
 </summary>
 <p>
-Access to features will be updated according to your new plan as of July 14, 2025. If you’re currently using a feature that is moving to a higher tier, there are two possible outcomes:
+Access to features will be updated according to your new plan beginning August 20, 2025. If you’re currently using a feature that is moving to a higher tier, there are two possible outcomes:
 </p>
 <ul>
   <li>
     <strong>Build-time features</strong> (like audit logs, version pinning, or publishing new deployments) will no longer be accessible. You’ll see an upgrade prompt if you attempt to use them.
   </li>
   <li>
-    <strong>Run-time features</strong> (like API endpoints, branching, or dev environments) will be grandfathered and continue to work as-is, but you won’t be able to create additional instances beyond what you already have. For example:
+    <strong>Run-time features</strong> (like API endpoints, branching, GitHub integration, or dev environments) will be grandfathered and continue to work as-is, but you won’t be able to create additional instances beyond what you already have. For example:
     <ul>
-      <li>If you already have 3 API endpoints, you can continue editing them, but won’t be able to add a 4th without upgrading.</li>
+      <li>If you are currently building on a Free plan with 3 API endpoints, you can continue editing them, but won’t be able to add a 4th without upgrading to a paid plan.</li>
       <li>If you’ve used branching or added multiple development environments and currently exceed your new plan limits, those remain active but you’ll be prompted to upgrade if you try to add more.</li>
     </ul>
   </li>
@@ -341,71 +337,183 @@ This approach ensures existing work isn’t disrupted, while still aligning futu
 </p>
 </details>
 
+### Free Users
 
 <details>
 <summary>
-Can I switch early to benefit from lower Individual pricing?
+I’m currently a Free user – what’s changing with the new Free plan?
 </summary>
 <p>
-No, the new pricing tiers will not be available for purchase until July 14, 2025. However, to facilitate the loss of features, Free users will receive a 50% discount for the first three months when upgrading between July 14, 2025 and September 30, 2025.
+Over time, we’ve offered Free users access to an expansive set of features that were originally built to support complex, production-grade development at scale. That said, we are now realigning the new Free plan to better support what it’s truly meant for: exploring FlutterFlow and getting hands-on experience with our core platform.
 </p>
+
+<ul>
+<li>You’ll still have access to the main visual builder and back-end integrations – everything you need to explore FlutterFlow and start prototyping real ideas.</li>
+<li>However, certain premium features that were previously available on Free, including multi-project capabilities, debug panel, push notifications, payments and ads integrations, snapshot backups, and access to technical support, will now be a part of paid tiers. For a detailed list of changes, please refer to our Pricing Comparison Table.</li>
+</ul>
+
+If you’re actively building and deploying apps, we encourage you to check out our new Individual plan. It’s been purpose-built for solo developers and includes the full power to build and launch complex applications at an affordable entry price.
 </details>
 
+
 <details>
 <summary>
-I have more than 2 projects on a free plan. What happens to my projects on July 14, 2025?
+I am a Free user and I will lose access to technical support. Where else can I look to for help when building?
 </summary>
 <p>
-Starting July 14, 2025, new Free plan accounts will be limited to 2 active projects. As an existing user, if you currently have more than 2 projects:
+While 1:1 technical support will no longer be included with the Free plan, we offer a collection of self-serve resources to help you continue building with confidence:
 </p>
 <ul>
-  <li>You will still be able to edit all of your projects. No projects will be deleted or locked.</li>
-  <li>However, to create a new project, you will need to upgrade to a paid plan.</li>
+  <li>
+    Our Help Center at <a href="http://docs.flutterflow.io/">docs.flutterflow.io</a> offers a free collection of step-by-step guides on how to build, get started, and make the most of FlutterFlow’s features.
+    <ul>
+      <li>We are also launching new troubleshooting guides to help you resolve common issues and workflows.</li>
+      <li>Plus, a new AI-powered assistant will help you quickly find answers and relevant resources within the Help Center.</li>
+    </ul>
+  </li>
+  <li>You can turn to our <a href="https://community.flutterflow.io/">Community Forum</a> to ask questions, share learnings, and get help from other FlutterFlow builders.</li>
+  <li>We also offer free educational content via our <a href="https://www.youtube.com/@flutterflow">YouTube channel</a> to support your learning and skill development.</li>
 </ul>
 <p>
-Important: If you later upgrade and then downgrade back to the Free plan, only the first two projects you originally created will remain editable. All additional projects will become view-only unless you upgrade again.
+These resources are designed to help all users succeed without needing to rely on 1:1 technical support.
 </p>
 <p>
-This policy ensures long-term fairness across plans while still honoring your work as an early user.
-</p>
-</details>
-
-<details>
-<summary>
-Do my existing FF apps still deploy if I stay on Free with >2 projects?
-</summary>
-<p>
-Yes, any projects already live will remain deployable. However, on the new Free plan, you’ll be limited to maintaining and publishing up to 2 live projects. To manage more, an upgrade will be required.
+Our Support team will still be available at <a href="mailto:support@flutterflow.io">support@flutterflow.io</a> to all users to assist with billing or account-related issues.
 </p>
 </details>
 
 <details>
 <summary>
-How will prices change with respect to country discounts?
+I have more than 2 projects on Free – what will happen to them?
 </summary>
 <p>
-Localized pricing will continue where applicable. If you’re in a supported region, your billing will reflect adjusted rates at existing discounts based on your location.
-</p>
-</details>
-
-<details>
-<summary>
-I have special access. How will this change impact me?
-</summary>
-<p>
-If you currently have special access (such as through a community program, academic use, or other exception), your account will transition to the new Individual plan as part of the upcoming pricing changes.
+Between July 21, 2025 and August 20, 2025, if you’re on the Free plan and have more than two personal projects, you’ll have the opportunity to select which two projects you want to keep editable. All other projects will be archived – they’ll still appear on your dashboard, and live apps will remain live, but you won’t be able to open, edit, or publish updates unless you upgrade.
 </p>
 <p>
-Special access is designed to enable and the Individual plan best reflects that purpose. Notably, this plan includes:
+If you don’t make a selection by August 20, 2025, we’ll automatically set your two most recently edited projects as editable, and archive the rest. You will still be able to update this selection once after that date.
 </p>
 <ul>
-  <li>Unlimited projects</li>
-  <li>Code export and app store deployment</li>
-  <li>Multiple API endpoints</li>
-  <li>Technical support</li>
+  <li>However, whether you choose before or after August 20, your project selection is lifetime-limited to two projects per account. Once used, you will not be able to swap again (even if you later upgrade and return to Free).</li>
 </ul>
 <p>
-If your needs change or you begin collaborating as a team, you can always explore our team-based plans.
+For users on a Teams plan (but not on a personal paid plan), this change only applies to your personal projects. You will still be able to edit any projects that belong to your team.
+</p>
+<p>
+We’ve set this policy to ensure everyone can explore FlutterFlow for free while keeping heavy usage sustainable. We won’t remove any of your existing projects. They’re safe and accessible whenever you decide to upgrade.
+</p>
+</details>
+
+<details>
+<summary>
+Can I still deploy my existing FlutterFlow apps if I stay on the Free Plan with &gt;2 projects?
+</summary>
+<p>
+Any existing projects already live will remain deployed, even if you have more than 2 projects currently deployed. However, on the new Free plan, you’ll be limited to editing and publishing updates to at most 2 active projects. All other projects will remain deployed, but you won’t be able to make changes or redeploy them unless you upgrade to a paid plan.
+</p>
+</details>
+
+<details>
+<summary>
+What if I delete one of my 2 active projects?
+</summary>
+<p>
+If you delete one of your active projects, we’ll automatically unarchive your most recently edited archived project to replace it.
+</p>
+<p>
+If you only had 2 projects total and delete one, you’ll be able to create a new project instead.
+</p>
+</details>
+
+### Individual Users (former Standard/Pro)
+
+<details>
+<summary>
+I’m on Standard – what’s changing with the new Individual plan?
+</summary>
+<p>
+The new Individual plan priced at $39/month is a $9 increase from your current Standard plan but it delivers significantly more value and power for solo developers.
+</p>
+<p>
+This change is based on feedback we’ve heard consistently: the previous Standard plan didn’t give individual users enough capability to build and ship full-featured apps on their own.
+</p>
+<p>
+You’ll now get access to:
+</p>
+<ul>
+  <li>Unlimited API endpoints</li>
+  <li>One-click app store deployment</li>
+  <li>Ability to publish libraries</li>
+  <li>One free custom domain</li>
+</ul>
+</details>
+
+<details>
+<summary>
+I’m on Pro – what’s changing with the new Individual plan?
+</summary>
+<p>
+The new Individual plan will cost less ($39 instead of $70) and still includes all the core solo-development features you had: unlimited projects, unlimited API endpoints, code/APK download, push notifications, payments/ads integrations, etc.
+</p>
+<p>
+However, some advanced collaboration and localization features that were part of Pro are moving to higher tiers. Specifically:
+</p>
+<ul>
+  <li>GitHub integration</li>
+  <li>One-click localization</li>
+  <li>Team commenting</li>
+  <li>Unlimited automated tests</li>
+  <li>Snapshot backups</li>
+  <li>Multiple development environments</li>
+</ul>
+<p>
+These will no longer be included on Individual. If you rely on these for your workflow, consider the Growth plan (which supports two collaborators and includes GitHub integration, localization, etc.).
+</p>
+<p>
+The good news is that if you don’t need those team-oriented tools, the Individual plan gives you the same power to build and deploy apps – at nearly half the price of Pro. We want to make sure you’re on the plan that fits your needs best.
+</p>
+</details>
+
+### Teams (Growth/Business)
+
+<details>
+<summary>
+What happens to projects with multiple collaborators?
+</summary>
+<p>
+Starting August 20, 2025, all project collaboration must occur within a team (Growth or Business). This means:
+</p>
+<ul>
+  <li><strong>Team projects:</strong> Everyone on your team keeps full edit access. Any project collaborator not on your team switches to view-only until they’re added as a paid team member.</li>
+  <li><strong>Projects not associated with a team:</strong> The project owner keeps full edit access and all other project collaborators become view-only members on that project. To keep editing together, move the project into a team and invite those collaborators as team members.</li>
+  <li><strong>Solo projects:</strong> If you are the only editor, nothing changes. You retain full edit access.</li>
+</ul>
+<p>
+If you plan to continue collaborating with users outside your organization, we recommend purchasing separate team plans per organization to maintain separation between projects and collaborators.
+</p>
+<p>
+Note: If you choose to migrate to a new paid plan before August 20, 2025, any collaborators not on your team will immediately move to view-only access at the time of conversion.
+</p>
+</details>
+
+<details>
+<summary>
+I am currently on a Teams plan with 6+ users and do not want to migrate to the Enterprise plan – how do I stay on the Business tier and how will I be charged?
+</summary>
+<p>
+Teams with more than 5 users who do not wish to move yet to an Enterprise contract will be priced based on bundles of 5 seats under the Business tier based on the number of users in their Team as of August 20, 2025. For example:
+</p>
+<ul>
+  <li>A team with 6–10 users will be charged $500 × 2 = $1,000/month</li>
+  <li>A team with 11–15 users will be charged $500 × 3 = $1,500/month</li>
+</ul>
+<p>
+This option allows larger retail teams to continue operating under the Business feature set without immediate contract negotiation but will be available only to existing 6+ seat teams for 12 months to ensure continuity without immediate contract negotiation.
+</p>
+<p>
+Note: Your seat count will be locked based on your team size as of August 20, 2025. You may reduce seats later, but will not be able to add more or expand beyond the feature set and usage limits of the current Business tier (except for any run-time features already in use that are grandfathered).
+</p>
+<p>
+However, if you would like to maintain a single account, collaboration across all of your team members, enterprise level features and support, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a>.
 </p>
 </details>
 
@@ -414,16 +522,13 @@ If your needs change or you begin collaborating as a team, you can always explor
 Can I belong to multiple teams? How will that be billed?
 </summary>
 <p>
-Yes, users can belong to multiple teams in FlutterFlow. Each team is treated as a separate billing entity, with its own plan, users, and usage limits.
+Yes, users can now belong to multiple teams in FlutterFlow – this is a new capability as part of our updated team and collaboration structure. Each team is treated as a separate billing entity, with its own plan, users, and usage limits.
 </p>
 <p>
-If you are added as an editor on more than one team, you will count toward the seat total on each of those teams and will be billed separately within each team’s subscription.
+If you are added as an editor on more than one team, you will count toward the seat total on each of those teams, and each team will manage your seat and billing as part of their own subscription. You will not be billed individually – all billing remains centralized at the team level.
 </p>
 <p>
-All Teams plans (Growth, Business, Enterprise) feature centralized billing. This means a single admin manages payment, seats, and upgrades for the entire team. This setup simplifies subscription management and ensures all editors and collaborators are aligned under one payment method per team.
-</p>
-<p>
-<strong>Note:</strong> You’ll only be charged on a team if you’re assigned an editor role. Viewers do not count toward billing.
+Note: you can also be added as a view-only collaborator on projects that are a part of different teams. View-only collaborators do not count toward any seat limits or billing.
 </p>
 </details>
 
@@ -435,7 +540,7 @@ Can I share projects across multiple teams?
 No, projects cannot be shared across multiple teams. Each project belongs to a single team, and access is managed within that team’s structure.
 </p>
 <p>
-If you want someone from another team to collaborate on a project, they must be invited into your team and assigned a role (e.g., editor or viewer). They will then count toward your team’s seat usage and billing if added as an editor.
+If you want someone from another team to collaborate on a project, they must be invited into your team and assigned a role (e.g., editor or viewer). They will then count toward your team’s seat usage and billing.
 </p>
 <p>
 This approach ensures consistent permissions, secure collaboration, and clean billing across organizations.
@@ -444,9 +549,163 @@ This approach ensures consistent permissions, secure collaboration, and clean bi
 
 <details>
 <summary>
-Will the referral program still exist with the new packages, now that the Pro plan is going away?
+What if I want to continue collaborating with project collaborators who are not on a Teams plan with me?
 </summary>
 <p>
-With the retirement of the Pro plan, our current referral program will also be sunset. We’re evaluating what a future referral or incentive program could look like under the new pricing structure and would best support our community moving forward.
+With the new pricing model, collaboration is only supported within shared Teams plans. This means that to work together on a project, all collaborators must be part of the same Growth, Business, or Enterprise team.
+</p>
+<p>
+However, users can now be members of multiple teams at the same time, which allows you to create separate teams for different projects, depending on who you need to collaborate with.
+</p>
+<p>
+Project-level collaboration (where individuals outside your team could be added to specific projects) is being phased out to simplify permissions, ensure security, and support shared billing.
+</p>
+<p>If you would like to continue collaborating:</p>
+<ul>
+  <li>You can invite others to join your team (additional seats may require an upgrade depending on your plan).</li>
+  <li>Or, they can create a new team and invite you, depending on who should own billing and project access.</li>
+</ul>
+<p>
+This change ensures that every project has clear ownership, consistent permissions, and a scalable path for team-based collaboration.
+</p>
+</details>
+
+<details>
+<summary>
+I build apps for clients (agency/freelancer). What plan should I choose?
+</summary>
+<p>
+We now offer multiple plan options to support agencies of all sizes – whether you’re a solo freelancer, a fast-growing studio, or an established consultancy. We believe the best path depends on your team size and how you prefer to work with your clients:
+</p>
+<ul>
+  <li>
+    <strong>Solo freelancers or small agencies (1–5 developers):</strong>
+    <ul>
+      <li>
+        We recommend the Business plan, which supports up to 5 collaborators with advanced features like branching and access control.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Agencies with more than 5 developers:</strong>
+    <ul>
+      <li>
+        If your client plans to manage the code, we recommend encouraging your client to purchase their own Enterprise plan and inviting your agency developers as Team members on the plan. To learn more about our Enterprise offering, they can reach out to
+            <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a>.
+      </li>
+      <li>
+        If you intend to maintain the code on behalf of your client, we recommend exploring our new Application-Specific Usage (ASU) licensing model, designed for agencies managing multiple clients.
+            This offering includes MSP volume discount pricing (VDP) and is custom tailored to your multi-client business.
+            To learn more and see if you qualify, please reach out to
+            <a href="mailto:partners@flutterflow.io">partners@flutterflow.io</a>.
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>
+If you need training, consider becoming a
+<a href="https://contra.com/opportunity/sZsPE2BQ-become-flutter-flow-certified">FlutterFlow Certified</a>
+Expert Agency as part of our Experts program.
+For more information, check out our page on
+<a href="https://contra.com/flutterflow">Contra</a>.
+</p>
+</details>
+
+### Billing
+
+<details>
+<summary>
+How will my billing cycle be affected when I move to the new plan?
+</summary>
+<p>
+To ensure a smooth transition, billing changes will align with your existing billing cycle:
+</p>
+<ul>
+  <li>
+    <strong>If you are on a monthly plan</strong>, you will continue at your current pricing until your next <em>monthly</em> renewal.
+        For example, if your billing date is August 19, 2025, you will renew at your current price,
+        and your plan features will switch to the new plan on August 20, 2025.
+        Your new pricing will begin at your next billing cycle on September 19, 2025.
+  </li>
+  <li>
+    <strong>If you are on an annual plan:</strong>
+    <ul>
+      <li>
+        You will continue at your current annual pricing until your next <em>annual</em> renewal date.
+        Starting August 20, 2025, your plan will switch to the new plan structure and features,
+        but your billing will not change until your next annual renewal.
+      </li>
+      <li>
+        When your plan renews, it will automatically update to the new plan pricing for the next 12 months.
+      </li>
+    </ul>
+  </li>
+  <li>
+    You will have the option to upgrade early to the new pricing plan if you choose,
+    with any remaining credit from your current plan applied toward the new plan.
+  </li>
+</ul>
+<p>
+If you have questions about your billing, please contact support at
+<a href="mailto:support@flutterflow.io">support@flutterflow.io</a>.
+</p>
+</details>
+
+<details>
+<summary>
+How will prices change with respect to country discounts?
+</summary>
+<p>
+Localized pricing will continue where applicable.
+If you’re in a supported region, your billing will reflect adjusted rates at existing discounts based on your location.
+</p>
+</details>
+
+<details>
+<summary>
+What if I am billed in INR right now?
+</summary>
+<p>
+If your account is billed in INR, your pricing will follow our localized rates:
+</p>
+<ul>
+  <li>Individual Plan: ₹1,300 INR per seat per month, or ₹11,700 INR per seat billed annually.</li>
+  <li>Growth Plan: ₹4,500 INR per team per month, or ₹40,500 INR per team billed annually.</li>
+  <li>Business Plan: ₹16,500 INR per team per month, or ₹148,500 INR per team billed annually.</li>
+</ul>
+<p>
+All INR pricing reflects the same features and plan structures as USD pricing,
+with adjustments for local purchasing power.
+</p>
+</details>
+
+### Miscellaneous
+<details>
+<summary>
+I have special access. How will this change impact me?
+</summary>
+<p>
+If you currently have Special Access (such as through a community program, academic use, or other exception), your FlutterFlow experience will remain unchanged. You will continue to have the same benefits provided under your existing Special Access status, which is separate from the new plan structure.
+</p>
+</details>
+
+<details>
+<summary>
+Will the referral program still exist with the new plans, now that the Pro plan is going away?
+</summary>
+<p>
+With the retirement of the Pro plan, our current referral program will also be sunset. This means any active referral discounts will end at your next renewal. However, any earned referral credits will remain in your account and can be redeemed for equivalent free months of the new Individual plan.
+</p>
+<p>
+We’re evaluating what a future referral or incentive program could look like under the new pricing structure and would best support our community moving forward.
+</p>
+</details>
+
+<details>
+<summary>
+Are there any changes to DreamFlow plans as well?
+</summary>
+<p>
+DreamFlow is a separate product, and DreamFlow plans are not affected with this plan update.
 </p>
 </details>
