@@ -7,6 +7,12 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <link rel="stylesheet" href="/css/table_style.css" />
+</Head>
+
 # Plans & Pricing
 :::info
 For our most up-to-date information, please visit **[FlutterFlow pricing](https://flutterflow.io/pricing)**.
@@ -36,104 +42,102 @@ The prices listed below are base rates. Regional pricing will continue to apply 
 
 Below are the details on all the changes, so you’ll know exactly what to expect:
 
-<table border="1" cellpadding="0" cellspacing="0" style={{ tableLayout: 'fixed', width: '100%' }}>
-  <thead>
-    <tr>
-      <th>Current Plan</th>
-      <th style={{ width: '140px' }}>Team Size</th>
-      <th style={{ width: '120px' }}>Current Price (USD per month)</th>
-      <th>New Plan</th>
-      <th style={{ width: '120px' }}>New Price (USD per month)</th>
-      <th>What’s Changing?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Free</td>
-      <td>1</td>
-      <td>$0</td>
-      <td>Free</td>
-      <td>$0</td>
-      <td>
-        <ul>
-          <li>2 count project limit</li>
-          <li>Swagger/OpenAPI imports not available</li>
-          <li>No debug panel, payments/ads integrations, or snapshots available</li>
-          <li>No access to technical support</li>
-          <li>Can now import libraries</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Standard</td>
-      <td>1</td>
-      <td>$30</td>
-      <td>Individual</td>
-      <td>$39 ⇧</td>
-      <td>
-        <ul>
-          <li>Unlimited API endpoints</li>
-          <li>One-click app store deployment available</li>
-          <li>Snapshotting not available</li>
-          <li>1 Test and 1 Development Environment per project</li>
-          <li>Email access only to technical support</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Pro</td>
-      <td>1</td>
-      <td>$70</td>
-      <td>Individual</td>
-      <td>$39 ⇩</td>
-      <td>
-        <ul>
-          <li>GitHub integration, one-click localization, commenting, and snapshotting not available</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Teams</td>
-      <td>2 users</td>
-      <td>$140</td>
-      <td>Growth</td>
-      <td>$135 ⇩</td>
-      <td>
-        <ul>
-          <li>Branching and audit logs not available</li>
-          <li>Snapshotting limited to 1 day</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Teams</td>
-      <td>3–5 users</td>
-      <td>$210–$350</td>
-      <td>Business</td>
-      <td>$495 ⇧</td>
-      <td>
-        <ul>
-          <li>Branching capped at 5 open branches</li>
-          <li>Audit logs not available</li>
-          <li>Snapshotting limited to 5 days</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Teams</td>
-      <td>6+ users</td>
-      <td>$420+</td>
-      <td>Business</td>
-      <td>$1,000+ ⇧</td>
-      <td>
-        <ul>
-          <li><em>Same as above</em></li>
-          <li>Enterprise plan required for existing users to scale beyond 5 users or 5 open branches 12-months after cutover</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="pricing-table-container">
+  <div class="mobile-scroll-hint">Scroll to see all plan details →</div>
+  
+  <table class="simplified-pricing-table">
+    <thead>
+      <tr>
+        <th>Current Plan</th>
+        <th>New Plan</th>
+        <th class="whats-changing-col">What's Changing?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Solo Section Header -->
+      <tr class="section-header">
+        <td colspan="3"><strong>Solo Plans</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Free</strong> ($0)</td>
+        <td>Free ($0)</td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li>2 count project limit</li>
+            <li>Swagger/OpenAPI imports not available</li>
+            <li>No debug panel, payments/ads integrations, or snapshot backups</li>
+            <li>No access to technical support</li>
+            <li>Can now import libraries</li>
+          </ul>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><strong>Standard</strong> ($30)</td>
+        <td>Individual ($39) <span class="price-up">⇧</span></td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li>Unlimited API endpoints</li>
+            <li>One-click app store deployment available</li>
+            <li>Snapshot backups not available</li>
+            <li>1 Test and 1 Development Environment per project</li>
+            <li>Email access only to technical support</li>
+          </ul>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><strong>Pro</strong> ($70)</td>
+        <td>Individual ($39) <span class="price-down">⇩</span></td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li>GitHub sync, one-click localization, commenting, and backup snapshots not available</li>
+          </ul>
+        </td>
+      </tr>
+      
+      <!-- Teams Section Header -->
+      <tr class="section-header">
+        <td colspan="3"><strong>Collaboration Plans</strong></td>
+      </tr>
+      
+      <tr>
+        <td><strong>Teams</strong> ($140)<br />2 users</td>
+        <td>Growth ($135) <span class="price-down">⇩</span></td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li>Branching and audit logs not available</li>
+            <li>Automated backup snapshots limited to 1 day</li>
+          </ul>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><strong>Teams</strong> ($210–$350)<br />3–5 users</td>
+        <td>Business ($495) <span class="price-up">⇧</span></td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li>Branching capped at 5 open branches</li>
+            <li>Audit logs not available</li>
+            <li>Automated backup snapshots limited to 5 days</li>
+          </ul>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><strong>Teams</strong> ($420+)<br />6+ users</td>
+        <td>Business ($1,000+) <span class="price-up">⇧</span></td>
+        <td class="whats-changing-col">
+          <ul class="feature-list">
+            <li><em>Same as above</em></li>
+            <li>Enterprise plan required for existing users to scale beyond 5 users or 5 open branches 12-months after cutover</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 ## FAQS
