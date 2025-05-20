@@ -54,7 +54,7 @@ The RadioButton widget adds a single option named **Option 1** by default.
 </div>
 <p></p>
 
-### Trigger action on change
+### Trigger Action on Change
 
 See how to [trigger an action when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
 

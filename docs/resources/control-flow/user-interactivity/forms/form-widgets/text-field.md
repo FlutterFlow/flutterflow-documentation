@@ -16,7 +16,7 @@ The TextField widget allows users to enter text, numbers, and symbols in your ap
 Before diving into form widgets, check out our guide on [**Widget States**](../../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
 :::
 
-## Adding TextField widget
+## Adding TextField Widget
 
 Let's see how to add a TextField widget and see an example of displaying its value in an Alert Dialog.
 
@@ -81,11 +81,11 @@ Here are the steps:
 
 You can customize the appearance and behavior of this widget using the various properties available under the properties panel.
 
-### Changing width
+### Changing Width
 
 By default, the TextField widget takes all the available space in the horizontal direction. You might want to limit its width to match your design. See how to change the width of this widget.
 
-### Adding multiline/auto expand support
+### Adding Multiline/auto Expand Support
 
 By default, a TextField is only one line. So when you type in a long text that won't fit in one line, you'll be able to see an entire message using a horizontal scrollbar. You can change this default behavior and show the full message (without a horizontal scrollbar) by making the TextField multiline/auto-expand.
 
@@ -120,7 +120,7 @@ To make a TextField multiline/auto-expand, move the **Properties Panel *>*** fin
 </div>
 <p></p>
 
-### Setting prefilled value
+### Setting Prefilled Value
 
 You might want to display a TextField with some initial value. This can be any specific value such as "*What are you looking for*", "*Input your Email*", or a value from any variable.
 
@@ -128,7 +128,7 @@ To set the initial value, move to the **Properties Panel > TextField Properties 
 
 ![setting-prefilled-value](../../imgs/setting-prefilled-value.avif)
 
-### Adding label
+### Adding Label
 
 Showing a label helps users understand what should be entered into the TextField. If you don't have an initial value set, the *Label Text* will appear as full size in the TextField. Once the user taps the TextField, the *Label Text* will become smaller, and the *Hint Text* will appear.
 
@@ -165,7 +165,7 @@ When the TextField is set to [Multiline](#adding-multilineauto-expand-support) t
 </div>
 <p></p>
 
-### Setting hint text
+### Setting Hint Text
 
 Showing a hint text helps users know what information is needed to enter into the TextField. For example, showing hint text as "Enter Your Email Here" clearly informs the user to enter their email.
 
@@ -177,7 +177,7 @@ To set the hint text, move to the **Properties Panel > Hint Properties > enter t
 
 Various properties under the *Input Decoration Properties* allow you to customize the TextField to match your design.
 
-### Changing TextField background color
+### Changing TextField Background Color
 
 To change the background color, move to the **Properties Panel > Input Decoration Properties >** enable **Filled >** set the **Fill Color**.
 
@@ -207,7 +207,7 @@ To change the background color, move to the **Properties Panel > Input Decoratio
 </div>
 <p></p>
 
-### Adding border
+### Adding Border
 
 Here's an example of how you can add a border around the TextField:
 
@@ -245,7 +245,7 @@ Here's an example of how you can add a border around the TextField:
 </div>
 <p></p>
 
-### Add content padding
+### Add Content Padding
 
 Content Padding adds space between the test and the border of your TextField.
 
@@ -277,7 +277,7 @@ To add content padding, move to the **Properties Panel > Input Decoration Proper
 </div>
 <p></p>
 
-### Reducing TextField height
+### Reducing TextField Height
 
 To reduce TextField's height to as minimum as possible, select the TextField widget, move to the **Properties Panel >** enable the **Dense** property.
 
@@ -308,7 +308,7 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
 <p></p>
 
 
-### Changing error message styling
+### Changing Error Message Styling
 
 You can also change the text styling for the error message. To do so, head over to **Properties Panel > Input Decoration Properties >** enable **Custom Error Style** and [change the text styling](../../../../ui/widgets/basic-widgets/text.md#common-text-styling-properties).
 
@@ -324,7 +324,7 @@ You can also [customize the icon's size and color](../../../../ui/widgets/basic-
 
 ![adding-icon](../../imgs/adding-icon.avif)
 
-### Using TextField for passwords
+### Using TextField for Passwords
 
 To make a TextField a Password Field, move to the **Properties Panel > Additional Properties >** enable the **Password Field**.
 
@@ -486,7 +486,7 @@ If you *Set from Variable* and run the app in preview mode, you can try entering
 </div>
 <p></p>
 
-### Auto fill hint
+### Auto Fill Hint
 
 When *Auto Fill Hint* property is enabled, it uses the operating system's autofill service to suggest the relevant information to the user, such as usernames, passwords, or credit card numbers, based on the context of the text field.
 
@@ -527,7 +527,7 @@ The availability and behavior of the *Auto Fill Hint* may vary by platform and u
 </div>
 <p></p>
 
-### Update page on change
+### Update Page on Change
 
 You might have added the TextField widget inside the search page and want to refresh the search result as the value inside the TextField changes.
 
@@ -601,7 +601,7 @@ Sometimes you might want to restrict users from entering or updating anything in
 </div>
 <p></p>
 
-### Change cursor color
+### Change Cursor Color
 
 In a form with many text fields, changing the cursor color for the currently focused field can help the user understand where their input will go when they start typing.
 
@@ -609,7 +609,7 @@ To change the cursor color, head over to **Properties Panel** **> Additional Pro
 
 ![change-cursor-color](../../imgs/change-cursor-color.avif)
 
-### Changing keyboard type
+### Changing Keyboard Type
 
 When the keyboard opens by default, you can type any text. You might want user input in a certain format, such as a phone number, email address, website URL, etc. In this situation, you can choose a predefined keyboard type to present the appropriate key selections.
 
@@ -620,7 +620,7 @@ To change the keyboard type, select the TextField widget, move to the **Properti
 
 ![changing-keyboard-type](../../imgs/changing-keyboard-type.avif)
 
-### Masking input
+### Masking Input
 
 You might want to allow users to provide input in a specific format. For example, if you want a date in a format like MM/DD/YYYY, where all input must be a number, and its length should not exceed eight digits. You can do so by formatting the user input using the specific mask.
 
@@ -660,7 +660,7 @@ If the required format is not on the list, you can select **Custom** and specify
 </div>
 <p></p>
 
-### Filtering input
+### Filtering Input
 
 You might want to restrict the type of characters that can be entered into a TextField. Let's say you are building an app that requires its employees to enter their employee ID when they clock in and out for their shifts. The employee ID consists of only letters and numbers, and the app should only allow these characters to be entered. You can do so by filtering the user input
 
@@ -692,7 +692,7 @@ To filter the user input, select the TextField widget, move to the **Properties 
 </div>
 <p></p>
 
-### Validating input
+### Validating Input
 
 You can validate the TextField value by wrapping it inside the [Form](../form-validation.md) widget and adding the validation criteria.
 
@@ -715,7 +715,7 @@ To set the capitalization, select the TextField widget, move to the **Properties
 
 ![capitalization](../../imgs/capitalization.avif)
 
-### Submit type
+### Submit Type
 
 Showing a particular action on a keyboard can be useful in guiding users on what to do next. For example, if you have a search bar, you can display a "Search" button on the keyboard. When tapped, instead of moving to a new line or closing the keyboard, you can execute a search function. This can improve user experience by providing more intuitive keyboard actions based on the context of the input.
 
@@ -733,7 +733,7 @@ To set the submit type, select the TextField widget, move to the **Properties Pa
 ![submit-type](../../imgs/submit-type.avif)
 
 
-### Set max character length
+### Set Max Character Length
 
 Sometimes, you might want to specify the maximum number of characters users can enter into the TextField. When the user types or pastes text into the field and reaches the specified character limit, they won't be able to input more characters, or the TextField will visually indicate that the limit has been reached.
 
@@ -775,7 +775,7 @@ You can also hide the maximum character count by enabling the **Hide Max Length 
 <p></p>
 
 
-## Hiding keyboard on tap
+## Hiding Keyboard on Tap
 
 Hiding the keyboard when the user taps outside of a TextField is a common user experience pattern that many apps use to improve usability. When the keyboard is open, it can obscure important information on the screen and make it difficult for the user to interact with other parts of the app.
 
@@ -813,7 +813,7 @@ To hide/close the keyboard, select the page, move the **Properties Panel >** ena
 
 ![Hide keyboard on tap](../../imgs/hide-keyboard-tap-2.avif)
 
-## Focus change event
+## Focus Change Event
 
 Sometimes, you may need to know whether a TextField is being used or not. For example, you can turn other parts of the app *on* or *off* depending on if the TextField is active. Also, you can start animations when someone starts or stops typing in the TextField.
 
@@ -876,7 +876,7 @@ To do so:
 </div>
 <p></p>
 
-## Trigger action / Listen callback
+## Trigger Action / Listen Callback
 
 The TextField widget provides you with two types of actions (aka callbacks):
 

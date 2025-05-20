@@ -83,7 +83,7 @@ The steps to build the example are as follows:
 </div>
 <p></p>
 
-## Trigger action on change
+## Trigger Action on Change
 
 See how to [trigger an action when a selection changes](../../../control-flow/user-interactivity/forms/form-triggers.md#on-selected) on this widget.
 
