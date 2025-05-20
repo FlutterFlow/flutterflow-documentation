@@ -75,7 +75,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Standard</strong> ($30)</td>
-        <td>Individual ($39) <span class="price-up">⇧</span></td>
+        <td>Individual ($39) <span class="price-up">⬆️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>Unlimited API endpoints</li>
@@ -89,7 +89,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Pro</strong> ($70)</td>
-        <td>Individual ($39) <span class="price-down">⇩</span></td>
+        <td>Individual ($39) <span class="price-down">⬇️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>GitHub sync, one-click localization, commenting, and backup snapshots not available</li>
@@ -104,7 +104,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Teams</strong> ($140)<br />2 users</td>
-        <td>Growth ($135) <span class="price-down">⇩</span></td>
+        <td>Growth ($135) <span class="price-down">⬇️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>Branching and audit logs not available</li>
@@ -115,7 +115,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Teams</strong> ($210–$350)<br />3–5 users</td>
-        <td>Business ($495) <span class="price-up">⇧</span></td>
+        <td>Business ($495) <span class="price-up">⬆️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>Branching capped at 5 open branches</li>
@@ -127,7 +127,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Teams</strong> ($420+)<br />6+ users</td>
-        <td>Enterprise (Contact Sales) <span class="price-up">⇧</span></td>
+        <td>Enterprise (Contact Sales) <span class="price-up">⬆️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li><em>Same as above</em></li>
