@@ -1,315 +1,65 @@
 ---
 title: Common Widget Properties
+tags: [Widgets]
+keywords: [Common Widget Properties, Visibility, Opacity, Padding, Alignment, Testing Value Key, Width and Height, Color Picker, Bulk Edits, Unsplash Images, UI Builder Display Value, Border Settings]
+description: Learn how to control common widget properties in FlutterFlow
 sidebar_position: 6
 ---
 
+
 # Common Widget Properties
 
-While working with widgets, you may find some features or properties that are common across various widgets. This page will guide you on how to implement these common functionalities or modify properties that are applicable to multiple widgets.
-
-Here are the properties: you can also use the links on the right side to navigate to a property. 
-
-## Use keyboard to increase/decrease property value
-
-You can adjust the property value using your keyboard's up and down arrow keys. **Tip**: Use the shift key in combination with the arrow keys, which increments or decrements the value by 10 units at a time.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1f05c381a73d457b94d19a84eca07b05?sid=a12ead9c-f725-4147-94ca-4303f1521dc2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+When working with widgets in FlutterFlow, you'll encounter properties and features that are common across multiple widget types. Below is a detailed overview of such properties.
 
 ## Visibility
 
+Visibility settings in FlutterFlow allow you to dynamically control when and how widgets appear in your app.
+
 ### Conditional
 
-Conditional visibility allows you to control the display of UI elements (i.e., widgets) based on certain conditions or criteria. It enables you to create dynamic and personalized user experiences by showing or hiding specific content or features.
+**Conditional** visibility allows you to control the display of UI elements (widgets) based on specific conditions or criteria. It helps you create dynamic, personalized experiences by showing or hiding certain content.
 
-For example, using this, you could display features, options, or actions based on the user's role or permissions, such as admins might see admin-only controls.
+For example, you could display specific features or actions only to users with particular roles, such as showing admin controls exclusively to administrators.
 
-Let's see how to add conditional visibility with an example that allows users to add doctors to their favorites list only if logged in. In essence, the favorite icon will only be displayed for logged-in users.
+:::info
 
-Here's what the final result looks like:
+The **Show in UI Builder** toggle only affects visibility within the design canvas, giving you a quick preview of how the layout will adjust when this widget is shown or hidden.
 
-<figure>
-   ![icon-img.png](..%2Fimgs%2Ficon-img.png)
-  <figcaption class="centered-caption">Left side: user not logged in | Right side: user logged in</figcaption>
-</figure>
+:::
 
+![conditional-visibility.avif](imgs/conditional-visibility.avif)
 
-Here are the steps:
+### Responsive
 
-1. Select the widget from the widget tree or canvas area. 
-2. Move to the properties panel > enable Conditional. 
-3. Click on the Unset and provide the condition that determines whether a UI element should be displayed or hidden. For this example, we'll directly use the Is User Logged In global property. This will show the widget if the user is logged in.
+The **Responsive visibility** property allows you to show or hide widgets based on device screen size, such as mobile, tablet, or desktop. By toggling each icon, you can show or hide the widget according to your design needs.
 
-4. You can toggle Show in UI Builder to test the effect of showing/hiding that widget in the UI builder. Note that this option is only to help you visualize the effect of visibility on the widget, and it does not affect your app.
+For example, you might create two separate navigation menus:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/f510565b464c4fb8903c0b6993fc8c20?sid=ceb9de2e-af71-4ba0-b888-b6d4e47d60f6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+- **Desktop Menu**: A wider, left-aligned menu only visible on large screens by enabling the desktop icon and disabling all other screen size icons.
+- **Mobile Menu**: A compact drawer menu only visible on smaller screens by enabling the phone icon and disabling all other screen size icons.
 
-
-
-### Responsive Properties
-
-When developing user interfaces with widgets, you'll notice certain properties and features that are universally applicable. This section provides guidance on adjusting these shared attributes across different widgets.
-
-Below are the common properties; you can use the navigation links on the right to quickly access detailed information about each property.
-
-<figure>
-    ![img_1.png](..%2Fimgs%2Fimg_1.png)
-  <figcaption class="centered-caption">The navigation menu on the web and mobile</figcaption>
-</figure>
-
-
-You can achieve this by creating two separate widgets and setting their responsive visibility (under the properties panel).
-
-In the example above, the navigation menu created for the web or desktop (on the left side) is made visible only on a wider screen by enabling the desktop icon. Similarly, the navigation menu for the mobile (on the right side) is made visible only on a small screen by enabling the mobile icon.
-
-Here is how it is done:
-
-<figure>
-    ![img_2.png](..%2Fimgs%2Fimg_2.png)
-  <figcaption class="centered-caption">Responsive visibility for mobile</figcaption>
-</figure>
-
-<figure>
-    ![img_3.png](..%2Fimgs%2Fimg_3.png)
-  <figcaption class="centered-caption">Responsive visibility for web</figcaption>
-</figure>
-
-#### Customize Responsive Breakpoint
-
-Sometimes, you might want to override the default responsive breakpoint to suit unique requirements; whether it's accommodating a specific device or catering to a particular user experience, having the flexibility to customize breakpoints can be advantageous.
-
-To customize responsive breakpoints, open **Theme Settings** (from the navigation menu) **> Design System > Breakpoints** and change the values.
-
-For example, if you define a custom breakpoint at 575 pixels, positioning it between the 'Mobile' and 'Tablet' range. In this case, when your app is accessed on a screen larger than 575 pixels, the layout will be adjusted as per the Tablet configuration.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/33f17613e5704e0b9d23629c243232c0?sid=1d862e15-2047-4184-af29-a1b4676fe4ba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-Furthermore, you can utilize these breakpoint values throughout your app to tweak the widget properties based on the screen size. For example, you might set different width and height values for a Container widget depending on whether the screen size matches with small, medium, or large.
-
-You can access the breakpoint values via the *Set from Variable* menu. Here's an example of setting the Container width based on the screen size.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/0948b7c763374e3ea6aa3b995aceaab6?sid=0c1b6253-193a-4df4-85e0-ba1450165850" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
+![responsive-visibility.avif](imgs/responsive-visibility.avif)
 
 ### Opacity
 
-Controlling the opacity of any widget opens up a plethora of creative opportunities. For instance, you can create an aesthetically pleasing effect using transparent buttons, dynamic themes, overlay effects, etc.
+The **Opacity** property controls how transparent or visible a widget appears. It accepts a value between 0 and 1, where 0 means fully transparent, 1 is fully opaque, and 0.5 results in semi-transparency.
 
-You can control the transparency from **Properties Panel > Visibility > Opacity** property. It accepts value between 0 and 1. e.g., 0 means full transparency, one is opaque, and 0.5 is half transparent.
+This property enables a wide range of creative UI effects, such as translucent buttons, overlay highlights, or smooth theme transitions.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/O8ASuMBKvtS8DOuDFZVo?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
+When **Animated Opacity** is enabled, any changes to the opacity value are smoothly animated based on the specified duration and curve, enhancing visual appeal and user experience.
 
-## Padding & Alignment
+![Opacity.avif](imgs/Opacity.avif)
 
-### Add padding
+## Padding
 
-Padding is the empty space around the outer side of the widget.
+**Padding** is the space added inside a widget, between its content and its border (or edge). It ensures the content doesn't touch the borders, creating visual breathing room and contributing to a cleaner, more responsive layout across different screen sizes.
 
-To add a padding:
+To set padding, select the widget, go to the **Padding & Alignment** > **Padding** section in the **Properties Panel**, and enter the values in **pixels (px)**, which represent logical pixels.
 
-1. Select the widget from the widget tree or from the canvas area.
-2. Move to the [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) and navigate to the **Padding & Alignment** section.
-3. Enter values for Left (L), Top (T), Right (R), Bottom (B).
-4. To apply the same padding on all sides, switch to the **Uniform Padding** option. You can then adjust the padding by either moving the slider or entering the desired value directly.
-5. Use the refresh icon button to reset all values.
+You can choose from two options:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/ebe08aa5510f4acdb9915d94191a0dae?sid=477f0152-0351-47d2-a912-6631d8a36b15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-If you prefer watching a video tutorial, here is the guide for you:
-
-<div class="video-container"><iframe src="https://www.youtube.
-com/embed/iMc1m-l7eyw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-
-### Adjust Alignment
-
-This property helps you position the widget in two ways.
-
-**Horizontal Alignment** determines where the widget will be placed horizontally inside of its parent. A value of -1 will place the widget to the left, while a value of 1 will place the widget to the right.
-
-**Vertical Alignment** determines where the widget will be placed vertically inside of a parent. A value of -1 will place the widget at the top, while a value of 1 will place the widget at the bottom.
-
-To change the alignment:
-
-1. Select the widget, and head over to [Properties Panel](../../../intro/ff-ui/builder.md#properties-panel) **> Padding & Alignment** section.
-2. Use the alignment box to align the widget at a fixed position or directly enter a value in the **Horizontal** and **Vertical** input box.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7fa1d8caf5b84f7c89bc7d95ee8dbd85?sid=02ca8efe-b4d7-4e3b-b1f2-14e767f0d403" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-If you prefer watching a video tutorial, here is the guide for you:
-
-<div class="video-container"><iframe src="https://www.youtube.
-com/embed/vuJ2fTnYyCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-
-## Testing Widgets
-
-This property enables you to specify the **Value Key** for the current widget, which serves as a reference point during automated test runs. Please refer to the detailed guide provided [here](../../../testing-deployment-publishing/testing/automated-tests.md).
-
-## Set Width & Height Properties
-
-To change the size, navigate to the **Width** and **Height** properties, and then you have three choices for setting the size:
-
-* For a specific size, choose **PX** and type in the size you want.
-* For a size based on the screen, choose **%** and type in the percentage.
-* To make the widget fill the whole screen width or height, click on the infinity symbol (**∞**).
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/aa1755b1b7b94ef3ac3a72da431d844f?sid=982c1f26-b768-4c8d-ab77-c085219ebab6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-## Change Color
-
-To change color for any widget property:
-
-1. Navigate to a widget property that allows you to set a color.
-2. Click on the currently selected color to either pick a new color or enter the Hex Code directly.
-3. By default, theme colors are displayed. Simply click on a color to apply it.
-4. For a custom color, switch to the **Custom Color** tab, select your desired color, and then click **Use Color**.
-5. You can also set a [color from variable](#set-color-from-variable).
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7fb8cd068bbb45c9ae34cfd4f325a3dc?sid=b3559d67-9e11-4501-8a17-7f4e92bd5847" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-## Set Color From Variable
-
-You may want to apply dynamic colors to widget properties like Container backgrounds or Text colors, which can be achieved by assigning colors from a variable. For instance, you can display temperature color dynamically based on an app state variable, data from a Firestore document, responses from API calls, or other similar sources.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/YSGGPJy6ZpkI17JnHEEN?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-
-<p></p>
-
-To set a color from a variable:
-
-1. Navigate to a widget property that allows you to set a color.
-2. From the **Set from Variable** menu, you can select the source of your color. Below is an example of setting color from an app state variable.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/6bffe7446e1d414f99baee759fda8fc0?sid=abfedd7c-3bc4-4eda-a9ab-341b72e4b98a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-You can also set the color from a [conditional value](../../../resources/control-flow/functions/conditional-logic.md#setting-widget-properties-with-conditional-logic).
-
-## Copy Variable
-
-If you have a complex variable value (e.g., using [Conditional Logic](../../../resources/control-flow/functions/conditional-logic.md)) and want to use the same logic in another variable value, you can do so by copying a variable.
-
-To copy-paste a variable:
-
-1. Open the **Set from Variable** menu and select the **Variable Options** (three dots) icon.
-2. Select the **Copy Variable**.
-3. Move to the place where you want to paste the variable, and open the **Set from Variable** menu.
-4. Click on the **Paste Variable** icon.
-5. Click **Confirm**.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/d4a7a2a5c7aa415894dd977330c2dabe?sid=b199450c-a915-4533-828e-cf6fa9e8bbff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-## Edit multiple widgets simultaneously
-
-We also allow you to modify the properties of multiple widgets at once. This can be a time-saving and efficient way to make bulk changes to the user interface of an app.
-
-For example, imagine that you want to change the background color of multiple buttons in an app from blue to green. Without the ability to edit multiple widgets simultaneously, you would need to select and edit each button individually. However, with this feature, you can select all of the buttons at once and modify their fill color property.
-
-To edit multiple widgets simultaneously, you can select all the widgets you want to modify by clicking on each one while holding down the shift key. Once you have selected all the desired widgets, you can access and modify their common properties all at once from the properties panel.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/f3cdb87b927b46508a2f1c21c2524cfe?sid=bb94b178-cba5-4423-afd0-47a4669c2402" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-## Add Image from Unsplash
-
-You can also add images directly from the [Unsplash](https://unsplash.com/) right inside the properties panel. To do so, simply click on the search icon and search and select the image. **Tip**: You can also choose the size of the image to add (i.e., Small, Regular, Full).
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/6954aafd8e494e74b52a2e89d4744e39?sid=8cd4d95b-e338-41f1-ae8a-912422f580af" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-<p></p>
-
-## UI Builder Display Value
-
-For widgets like `Text` and `RichText`, when their content is set from a variable, you can set a placeholder value to be displayed only in the app builder. Keep in mind that this placeholder is solely for visualization purposes within the canvas and will be replaced by the actual variable value when the app runs.
-
-This feature is useful for assessing spacing and alignment without removing variable bindings.
-
-![img_4.png](..%2Fimgs%2Fimg_4.png)
-
-## Adding border
-
-To add a border to any widget:
-
-1. Find the **Border Color** property and change the color.
-2. To create the rounded border, use the **Border Radius** property.
-3. Enter values for TL (Top left), TR (top right), BL (bottom left), and BR (bottom right).
-4. To apply the same radius on all sides, switch to the **Uniform Radius** option. You can then adjust the radius by either moving the slider or entering the desired value directly.
-5. Use the refresh icon button to reset all values.
-6. To increase the border thickness, use the **Border Width** property.
+- **Uniform Padding**: Apply the same value to all four sides.
+- **Independent Padding**: Set different padding values for top, bottom, left, and right.
 
 
 <div style={{
@@ -318,7 +68,351 @@ To add a border to any widget:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/8ce81ac703a44af2a4f8fffc4eeffa1a?sid=300557b1-b922-4bb1-95c0-384302334eee"
+        src="https://demo.arcade.software/G2iYgYC3X7DrxAnQEfJU?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+If you prefer watching a video tutorial, here is the guide for you:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://www.youtube.com/embed/iMc1m-l7eyw"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Alignment
+
+**Alignment** determines how a widget is positioned within its parent container. It helps you control where your widget appears—left, right, center, top, bottom, or any point in between.
+
+To set alignment, select the widget and go to the **Padding & Alignment** > **Alignment** section in the **Properties Panel**. You'll see a 3×3 grid representing all nine positions:
+
+- Top Left
+- Top Center
+- Top Right
+- Center Left
+- Center (Default)
+- Center Right
+- Bottom Left
+- Bottom Center
+- Bottom Right
+
+Simply click the dot representing where you'd like the widget to be positioned. Alternatively, you can input a specific value (between -1 to 1) for the precise horizontal and vertical alignment.
+
+- **X (Horizontal Alignment)** controls the widget’s position along the horizontal axis within its parent. A value of `-1` aligns it to the left, `0` centers it, and `1` aligns it to the right.
+- **Y (Vertical Alignment)** controls the widget’s position along the vertical axis. A value of `-1` places it at the top, `0` centers it vertically, and `1` places it at the bottom.
+
+:::info
+
+Values beyond this range will push the widget outside the visible screen area.
+
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/qEMYOkukZVVG83LAEsTK?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Add Testing Value Key
+
+A **Value Key** is used to uniquely identify widgets during [**Automated Testing**](../../../testing-deployment-publishing/testing/automated-tests.md) in FlutterFlow. For example, on a Create Account page, you might use descriptive keys like `signupFirstNameField`, `signupEmailField`, `signupPasswordField`, and `signupSubmitButton`. This helps testing tools reliably locate and interact with the correct widgets. For more details, refer to the [complete guide here](../../../testing-deployment-publishing/testing/automated-tests.md).
+
+![test-value-keys.avif](imgs/test-value-keys.avif)
+
+## Set Width & Height
+
+To adjust a widget's size, click on the widget you wish to resize and navigate to the right-side Properties Panel. There, you can set the size in the following ways:
+
+- **PX (Pixels):** Enter a fixed size in pixels for a consistent dimension.
+- **% (Percentage):** Set the size relative to the screen or parent container.
+- **∞ (Infinity):** Make the widget expand to fill the available width or height.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/18qu2kOtCpLZfS2HhCWD?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+You can also drag the handle bars on the right and bottom sides of a selected widget to resize. The measurements appear while resizing to show the current pixel values.
+
+![use-handle-bars-to-resize.avif](imgs/use-handle-bars-to-resize.avif)
+
+:::tip[Responsive Width & Height]
+
+You can also use a **Responsive Value** to apply different width or height values based on screen size. To set it up, open the **Set from Variable** menu and select **Responsive Value**. Then, assign specific size values for each screen size category, such as mobile (Screen Width < Breakpoint Small), tablet (Screen Width < Breakpoint Medium), and desktop (Screen Width < Breakpoint Large).
+
+:::
+
+## Use Keyboard to Adjust Property Values
+
+You can quickly increase or decrease the property value using your keyboard's up and down arrow keys. This allows for precise control without needing to type in new values each time.
+
+:::tip
+
+Hold down the **Shift** key while pressing the arrow keys to change the value by 10 units at a time.
+
+:::
+
+## Change Color
+
+To change the color, navigate to a widget property that allows you to set a color, and then click on the currently selected color. This opens the **Color Picker**, where you have multiple ways to set the desired color:
+
+- **Custom Color**: Use the gradient area to select any shade and fine-tune it using:
+    - The **hue slider** (rainbow bar) to adjust the base color.
+    - The **transparency slider** (checkered bar) to control opacity (alpha value).
+- **Use RGB or HEX**: Manually input a **HEX code** (e.g., `#A489F5`) or set the **RGB values** directly for precise color control. The **Alpha (A)** value defines transparency (e.g., 100% = fully opaque).
+- **Theme Colors**: Below the picker, you’ll find a list of your app’s predefined **Theme Colors** like Primary, Secondary, and Background. Using theme colors ensures design consistency across your app and makes global updates easier.
+- **Set from Variable**: You can also dynamically assign a color based on your app logic. For example, changing the background color based on the selected item or theme.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/vPLiVGL7N0FhK3JEPSHe?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip
+
+You can also assign a color using a **String variable** that contains a **CSS-style color value** (e.g., `"#FF5733"`, `"rgba(255, 87, 51, 1)"`, or `"red"`). This is especially useful when colors are stored in a database or returned from an API. Make sure the string format follows valid CSS color syntax, as FlutterFlow uses the [**`from_css_color`**](https://pub.dev/packages/from_css_color) package under the hood to parse these values.
+
+This allows you to dynamically theme parts of your app based on user preferences or remote configurations.
+
+![color-from-string.avif](imgs/color-from-string.avif)
+
+:::
+
+## Copy Variable
+
+If you’ve created a complex variable value (e.g., using Conditional Logic) and want to reuse the same logic elsewhere, you can easily do so by copying the variable.
+
+To copy and paste a variable, open the **Set from Variable** menu, click the **three dots**, and select **Copy Variable**. Then go to the target location, open the same menu, click **Paste Variable**, and confirm.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/dLG8GPCS6fMMz6VNydIm?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Bulk Edits Properties
+
+You can easily modify the properties of multiple widgets at once. For example, if you want to change the background color of several buttons from blue to green, there's no need to edit each one individually. Simply select all the buttons and update their fill color in one go.
+
+To do this, hold down the **Shift** key and click on each widget you want to edit. Once selected, their shared properties will appear in the **Properties Panel**, where you can apply changes.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/lyNx8lyNsZN6zhicwDxp?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Use Images from Unsplash
+
+You can easily display high-quality images directly from [Unsplash](https://unsplash.com/) using the Properties Panel. Just click the **search icon**, type in your desired keyword, and select an image from the results.
+
+:::tip
+
+You can also choose the image size (i.e., Small, Regular, or Full) before adding it, depending on your layout.
+
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/0lNZalS5Tt16KHlxvzav?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## UI Builder Display Value
+
+For widgets like `Text` and `RichText`, if the content is set from a variable, you can add a placeholder value that appears only in the FlutterFlow builder. This placeholder helps you visualize how the text will look on the canvas, but it won’t appear in the live app, it's replaced by the actual variable at runtime.
+
+This is especially helpful for previewing layout, spacing, and alignment without removing or disrupting your variable bindings.
+
+![ui-builder-display-value.avif](imgs/ui-builder-display-value.avif)
+
+## Adding Border
+
+You can add a border to any widget using the following properties:
+
+- **Border Color**: Choose a color manually or bind it to a variable. You can select from your theme colors (like `Primary`) or use the color picker.
+- **Border Width**: Set the thickness of the border in pixels.
+- **Border Radius**: Adjust how rounded the corners should be using the options below:
+    - **Independent Radius**: Set different radius values for top, bottom, left, and right.
+    - **Uniform Radius**: Apply the same value to all four sides. The slider and numeric input allow you to have precise control.
+- **Button Padding**: Controls the space inside the widget (between the content and the border).
+
+:::tip
+
+Use consistent border and padding styles for buttons, cards, and containers to maintain a clean and cohesive UI.
+
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',

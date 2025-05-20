@@ -56,6 +56,6 @@ Watch this video if you prefer watching a video tutorial.
 ## FAQs
 
 <details>
-<summary>I am getting "Error: Unable to initialize Storyboard</summary>
+<summary>I am getting "Error: Unable to initialize Storyboard"</summary>
 <p>This error typically occurs because the initial page has not been set. To resolve this, please set the initial page in the [App Details](../../resources/projects/settings/general-settings.md#app-details) settings of your project.</p>
 </details>
