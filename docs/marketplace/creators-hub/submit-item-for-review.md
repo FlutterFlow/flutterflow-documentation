@@ -20,7 +20,7 @@ Please review our [**Submission Guidelines**](submission-criteria.md) and our [*
 
 ## How to Submit an Item
 
-An item can be an enitre project (in the case of Temlate Apps or Libraries), a page or a component (in the case of Template Page & Components) or a Custom Function, Action or Widget (in the case of Custom Code).
+An item can be an entire project (in the case of Temlate Apps or Libraries), a page or a component (in the case of Template Page & Components) or a Custom Function, Action or Widget (in the case of Custom Code).
 
 ### 1. Set your project as a Marketplace project
 
