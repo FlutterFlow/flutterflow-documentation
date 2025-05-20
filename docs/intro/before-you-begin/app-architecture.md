@@ -22,7 +22,7 @@ This includes:
 
 Backend usually refers to more complex logic and data storage. This includes:
 
-- Setting up a database that is capabale of storing, sending and retrieving data
+- Setting up a database that is capable of storing, sending and retrieving data
 - Leveraging off-the-shelf services, like authentication providers or payment platforms
 - Defining business logic, either by writing code or using a low-code tool
 

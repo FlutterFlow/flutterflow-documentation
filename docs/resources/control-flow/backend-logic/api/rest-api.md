@@ -343,7 +343,7 @@ Let's see how to get the JSON into the Custom Data Type using an example that fe
 Here's how you do it:
 
 1. First, ensure that you [create a custom data type](#create-custom-data-type-matching-to-json-structure) that matches your JSON structure.
-2. Open your API call definition> **Response & Test tab > Response Type >** enablethe **Parse as 
+2. Open your API call definition > **Response & Test tab > Response Type >** enable the **Parse as 
    Data Type**. Select the **Data Type** that you want to convert into. For this example, it's 'AllProducts'.
 
 ![img_1.png](../imgs/img_1.png)

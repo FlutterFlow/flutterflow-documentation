@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 # Libraries
 
-Libraries enables you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
+Libraries enable you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
 
 :::info
 A **Dependency** refers to an external library or resource that your project relies on to function correctly. When you create a new FlutterFlow project, certain dependencies are automatically added to support the generated code. Also, when you use a [**Custom Widget**](../../ff-concepts/adding-customization/custom-widgets.md), you are essentially adding dependencies to your project. Libraries take this concept further by allowing you to add entire FlutterFlow projects as dependencies.
