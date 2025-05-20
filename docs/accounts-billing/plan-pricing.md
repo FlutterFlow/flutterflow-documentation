@@ -4,6 +4,7 @@ title: Plans & Pricing
 tags: []
 toc_max_heading_level: 5
 sidebar_position: 2
+hide_table_of_contents: true
 ---
 
 # Plans & Pricing
@@ -23,7 +24,7 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 
 **Key Changes**
 
-- We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**, and **Enterprise**.
+- We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**. Our Enterprise offering will continue as is, providing advanced features and support for larger teams.
 - If you're already using FlutterFlow, you’ll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
 - That said, feature access will look a little different. Some users will gain powerful new capabilities, while others might see a few features move to higher tiers.
 
@@ -35,14 +36,14 @@ The prices listed below are base rates. Regional pricing will continue to apply 
 
 Below are the details on all the changes, so you’ll know exactly what to expect:
 
-<table border="1" cellpadding="6" cellspacing="0">
+<table border="1" cellpadding="0" cellspacing="0" style={{ tableLayout: 'fixed', width: '100%' }}>
   <thead>
     <tr>
       <th>Current Plan</th>
-      <th>Team Size</th>
-      <th>Current Price (USD per month)</th>
+      <th style={{ width: '140px' }}>Team Size</th>
+      <th style={{ width: '120px' }}>Current Price (USD per month)</th>
       <th>New Plan</th>
-      <th>New Price (USD per month)</th>
+      <th style={{ width: '120px' }}>New Price (USD per month)</th>
       <th>What’s Changing?</th>
     </tr>
   </thead>
@@ -128,19 +129,6 @@ Below are the details on all the changes, so you’ll know exactly what to expec
         <ul>
           <li><em>Same as above</em></li>
           <li>Enterprise plan required for existing users to scale beyond 5 users or 5 open branches 12-months after cutover</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Enterprise</td>
-      <td>Any</td>
-      <td>Custom</td>
-      <td>Enterprise</td>
-      <td>Custom</td>
-      <td>
-        <ul>
-          <li>Custom SSO and accessibility features coming</li>
-          <li>Ability to opt out of AI data training</li>
         </ul>
       </td>
     </tr>
