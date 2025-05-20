@@ -26,7 +26,7 @@ FlutterFlow has evolved significantly, from a visual builder to a complete devel
 
 ### What's Changing?
 
-As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **July 14, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
+As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **July 21, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
 
 **Key Changes**
 
@@ -80,7 +80,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
           <ul class="feature-list">
             <li>Unlimited API endpoints</li>
             <li>One-click app store deployment available</li>
-            <li>Snapshot backups not available</li>
+            <li>Snapshot backups are not accessible</li>
             <li>1 Test and 1 Development Environment per project</li>
             <li>Email access only to technical support</li>
           </ul>
@@ -127,7 +127,7 @@ Below are the details on all the changes, so you’ll know exactly what to expec
       
       <tr>
         <td><strong>Teams</strong> ($420+)<br />6+ users</td>
-        <td>Business ($1,000+) <span class="price-up">⇧</span></td>
+        <td>Enterprise (Contact Sales) <span class="price-up">⇧</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li><em>Same as above</em></li>
@@ -161,7 +161,7 @@ Now our plans are evolving to reflect that growth. We’ve introduced new featur
 Who is affected by this pricing change?
 </summary>
 <p>
-All FlutterFlow users will move to the new structure as of July 14, 2025.
+All FlutterFlow users will move to the new structure as of July 21, 2025.
 
 Enterprise customers on custom contracts are not affected by these changes.
 </p>
@@ -262,7 +262,7 @@ If you’re currently a paying user and would prefer not to be part of the migra
 </p>
 <ul>
   <li><strong>Continue building on the Free plan:</strong> you can downgrade your plan to Free, where you will be able to view, edit, and run any 2 existing projects of your choosing inside the editor, but paid‑tier features, deployments, and team seats will be disabled until you upgrade.</li>
-  <li><strong>Export your code:</strong> download the full Flutter source and assets for each project before August 14, 2025 and continue building locally to retain full ownership of your codebase.</li>
+  <li><strong>Export your code:</strong> download the full Flutter source and assets for each project before August 20, 2025 and continue building locally to retain full ownership of your codebase.</li>
 </ul>
 <p>
 If you’d like to review your options or adjust your usage ahead of time, our support team is here to help. You will receive an email confirming the plan your account will move to, but can also confirm by logging into your account after July 21, 2025 to see how your team maps to the new tiers.
@@ -519,9 +519,7 @@ Yes, users can now belong to multiple teams in FlutterFlow – this is a new cap
 <p>
 If you are added as an editor on more than one team, you will count toward the seat total on each of those teams, and each team will manage your seat and billing as part of their own subscription. You will not be billed individually – all billing remains centralized at the team level.
 </p>
-<p>
-Note: you can also be added as a view-only collaborator on projects that are a part of different teams. View-only collaborators do not count toward any seat limits or billing.
-</p>
+
 </details>
 
 <details>
