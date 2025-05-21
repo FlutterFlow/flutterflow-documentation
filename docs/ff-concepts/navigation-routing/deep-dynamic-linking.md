@@ -847,6 +847,9 @@ Use the link data from this callback to:
 - Load content from Firestore using a referenced ID.
 
 
+:::danger[Testing Deeplinks]
+It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators.
+:::
 
 
 
