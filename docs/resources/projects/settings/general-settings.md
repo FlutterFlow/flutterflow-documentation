@@ -77,6 +77,25 @@ If you want the improved folder organization for your project, **Enable Updated 
 
 Configure the global settings for navigation and deep link in your app. To learn, how to set up deeplinks, check out the **[Deep & Dynamic Linking](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md)** guide.
 
+### Display Settings
+
+The **Display Settings** section allows you to configure how text scales within your app. This is particularly helpful for accessibility, ensuring that users with visual impairments can comfortably read content.
+
+- **Min Text Scaling Factor**: Defines the minimum allowable scale for text. This prevents text from shrinking below a certain threshold, helping maintain legibility for all users. For example, setting this to `1` ensures text is never rendered smaller than its base size, regardless of device settings or user preferences.
+- **Max Text Scaling Factor**: Defines the maximum allowable scale for text. This limits how large text can appear, which is useful for preserving layout consistency on devices with accessibility text scaling enabled. For example, setting this to `10` allows text to scale up to 10× its original size.
+- **Persist Text Scaling Factor**: When enabled, the current text scaling factor will be stored and applied even after the app is restarted. This ensures a consistent user experience across sessions. **Note that** this setting requires both **Min** and **Max Text Scaling Factors** to be set. If either is unset, persistence will have no effect.
+
+:::info
+Once the text scaling factors are set, you can use the [**Update Text Scaling Factor**](../../../ff-concepts/localization-accessibility/accessibility.md#update-text-scaling-factor-action) action to let users dynamically adjust text size.
+:::
+
+
+Let’s understand this better with an example. Suppose the Min Text Scaling Factor is set to 1.0 and the Max Text Scaling Factor is set to 5.0. If a user's device requests a scaling factor of 2.5, FlutterFlow will accept it because it falls within the allowed range. So, if the base font size is 16.0, the final rendered size would be: `2.5 × 16.0 = 40.0`
+
+If a device requests a scaling factor higher than 5.0 (such as 6.0), it will be capped at 5.0. Thus, for a base font size of 16.0, the final rendered size will be: `5.0 × 16.0 = 80.0`.
+
+Similarly, if a device requests a scaling factor below 1.0 (for example, 0.5), it will be raised to 1.0 to ensure readability. The resulting font size would remain: `1.0 × 16.0 = 16.0`.
+
 
 ## App Assets
 
