@@ -752,9 +752,35 @@ Here’s a quick demo to show how to configure those values inside your library 
 
 <p></p>
 
-**Initialize the Branch SDK**
+#### Initialize the Branch SDK
 
 Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action under the **Final Actions** section. This ensures the **Branch SDK** is initialized when your app launches.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/sAGP2IBXMbHMPP4rXRaQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 
 ### Handle Branch Deeplink [Custom Action]
@@ -847,11 +873,11 @@ Use the link data from this callback to:
 - Load content from Firestore using a referenced ID.
 
 
+
+
 :::danger[Testing Deeplinks]
-It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators.
+It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators. We recommend using **[Local Run](../../testing-deployment-publishing/running-your-app/local-run.md)** to run your apps on physical devices.
 :::
-
-
 
 
 ### Generate Link [Custom Action]
@@ -873,10 +899,16 @@ The action accepts the following parameters:
 - **`description`** – (Optional) A short description of the content.
 
 - **`metadata`** – A dynamic map of custom parameters to include with the link
-(e.g., page: "imageDetails", imageRef: "abc123", etc.)
+(e.g., page: "imageDetails", imageRef: "abc123", etc.). 
 
 - **`linkProperties`** – A dynamic map for configuring how the link behaves
 (e.g., set the `feature`, `channel`, `campaign`, or `stage` for analytics).
+
+:::warning[JSON maps]
+Due to a limitation, if you plan to leave map-type variables (like `metadata` or `linkProperties`) empty, you must still pass them as **empty maps**, not `null`.  
+Ensure all keys and values are **plain strings**, avoid nested JSON or non-string types.  
+Incorrect structure may cause the Link Generation action to fail silently.
+:::
 
 ### Branch Helper Functions
 
