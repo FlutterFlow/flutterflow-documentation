@@ -81,7 +81,8 @@ Below are the details on all the changes, so you’ll know exactly what to expec
             <li>Unlimited API endpoints</li>
             <li>One-click app store deployment available</li>
             <li>Snapshot backups are not accessible</li>
-            <li>1 Test and 1 Development Environment per project</li>
+            <li>1 Automated Test (per project)</li>
+            <li>1 Development Environment (per project)</li>
             <li>Email access only to technical support</li>
           </ul>
         </td>
