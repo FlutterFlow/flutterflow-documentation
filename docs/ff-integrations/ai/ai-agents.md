@@ -76,14 +76,15 @@ You can obtain your OpenAI API key from [**OpenAI API Keys**](https://platform.o
 
 #### Request Options
 
-Here, you specify the type of inputs users can send to the AI.
+Define the types of inputs users can send to the AI agent. You can enable one or more of the following options:
 
-- **Text**: Allows users to send text-based messages.
-- **Image**: Enables image input, allowing the agent to analyze photos.
-- **Audio**: (Google Agent only) Allows to send audio messages or voice inputs.
-- **Video**: (Google Agent only) Allows users to send short video clips to analyze.
+- **Text**: Allows users to send written messages, questions, or prompts.
+- **Image**: Enables users to upload photos for the AI to analyze visual content, such as objects, styles, or scenes.
+- **PDF** (Anthropic and Google Agent only): Lets users submit PDF documents, allowing the AI to extract and interpret information from files like resumes, reports, or forms.
+- **Audio** (Google Agent only): Supports voice input, enabling users to record or upload audio clips for transcription, sentiment analysis, or voice-based commands.
+- **Video** (Google Agent only): Allows users to submit video files, enabling the AI to analyze visual elements.
 
-Selecting multiple input types makes it easier for users to clearly communicate what they need. Instead of relying only on text descriptions, users can combine inputs—for example, uploading an image along with text to better illustrate their queries and help the agent provide more accurate responses.
+Selecting multiple input types makes it easier for users to clearly communicate what they need. Instead of relying only on text descriptions, users can combine inputs. For instance, in an AI Stylist agent, enabling both Text and Image allows users to either describe their outfits in words or upload clothing photos for personalized analysis.
 
 #### Response Options
 
