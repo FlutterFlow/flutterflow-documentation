@@ -251,17 +251,17 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Pages
 
-You can add and manage entire pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular page in your app; they support navigation, parameters, state management, and transitions. 
+You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
 
-Publishing pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows, like onboarding and payments flow, you can build them once in a library and use them wherever needed.
+Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.```
 
 :::tip[Possible Use Cases]
 - **Super Apps** like Gojek and Uber with distinct modules such as ride booking, shopping, and payments. Each module can be developed as a separate library and imported into a single main project.
 - **Enterprise Apps** with isolated user journeys for different roles, such as admin and customer. Each role-based flow can be built as its own library and integrated into the core app as needed.
-- **White-labeled Apps** that share common onboarding flows. The onboarding process can be built once as a library and reused across all branded versions of the app.
+- **White-labeled Apps** that share common onboarding flows can benefit from libraries. The onboarding process can be built once as a library and reused across all branded versions of the app.
 :::
 
-The library author selects the pages to include in the library and publish it. When users import or update the library, they can override the default route names to avoid route name conflicts between the library and your project. Library pages then appear in the navigation actions just like any regular page.
+The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
 
 The library author selects the pages to include and publishes the library. When users import or update the library, they can override the default route names to avoid conflicts between the library and your project. Once imported, the library pages appear in navigation actions just like any other page in the project.
 
