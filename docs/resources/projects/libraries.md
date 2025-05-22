@@ -253,7 +253,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
 
-Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.```
+Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
 
 :::tip[Possible Use Cases]
 - **Super Apps** like Gojek and Uber with distinct modules such as ride booking, shopping, and payments. Each module can be developed as a separate library and imported into a single main project.
@@ -262,8 +262,6 @@ Including pages with libraries offers a modular approach to development, making 
 :::
 
 The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
-
-The library author selects the pages to include and publishes the library. When users import or update the library, they can override the default route names to avoid conflicts between the library and your project. Once imported, the library pages appear in navigation actions just like any other page in the project.
 
 <div style={{
     position: 'relative',
