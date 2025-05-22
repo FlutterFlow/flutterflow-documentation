@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
 # Deep & Dynamic Linking
 
 :::danger[Support for Dynamic Links]
-On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#deep-links-with-branchio) for link management and deep linking.
+On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#branch-deeplinking-library) for link management and deep linking.
 :::
 
 Adding deep and dynamic linking allows you to share a special type of link that takes the user right
