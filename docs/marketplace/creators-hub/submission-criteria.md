@@ -11,7 +11,7 @@ keywords: [FlutterFlow, MarketPlace, Creators Hub, Item Submission Criteria]
 
 ## Item Submission Standards
 
-Below, you'll find the criteria our Submission Review Team uses to review items submitted to FlutterFlow Marketplace.
+Below, you'll find the necessary criteria our Submission Review Team uses to review items submitted to the FlutterFlow Marketplace.
 
 ### 1. Originality and Ownership
 
