@@ -57,6 +57,64 @@ Here’s an example of adding a Review custom class:
 </div>
 <p></p>
 
+Here's the code snippet of the Review custom class:
+
+```jsx
+class Review {
+  String id;
+  String productId;
+  String userId;
+  String userName;
+  String comment;
+  double rating; // out of 5
+  ReviewStatus reviewStatus;
+  DateTime date;
+  int helpfulCount = 0;
+
+  Review(
+    this.id,
+    this.productId,
+    this.userId,
+    this.userName,
+    this.comment,
+    this.rating,
+    this.reviewStatus,
+    this.date,
+  );
+
+  // Method: Get a short version of the comment
+  String shortComment() {
+    if (comment.length <= 50) return comment;
+    return comment.substring(0, 47) + "...";
+  }
+
+  // Method: Get formatted date as string (e.g., "2024-05-22")
+  String formattedDate() {
+    return "${date.year}-${_twoDigits(date.month)}-${_twoDigits(date.day)}";
+  }
+
+  String _twoDigits(int n) {
+    return n >= 10 ? "$n" : "0$n";
+  }
+
+  // Method: Check if review is positive (4 stars or more)
+  bool isPositive() {
+    return rating >= 4.0;
+  }
+
+  // Method: Check if review is recent (within last 30 days)
+  bool isRecent() {
+    final now = DateTime.now();
+    return now.difference(date).inDays <= 30;
+  }
+
+  // Method: Mark this review as helpful
+  void markHelpful() {
+    helpfulCount += 1;
+  }
+}
+```
+
 ## Create Class Instance
 
 You need to create an instance of a class so you can work with actual data and use the class’s properties and methods in your app. Here’s a simple explanation:
