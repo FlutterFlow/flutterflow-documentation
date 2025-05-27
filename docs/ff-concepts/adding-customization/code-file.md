@@ -25,7 +25,7 @@ FlutterFlow allows you to add your own custom Dart files with [classes](https://
 
 :::
 
-## Add Custom Class
+## Create Custom Class
 
 To add a custom class, go to the **Custom Code** from the left navigation menu, click **plus (+)** button, and select **Code File**. Set the name of the file, add your code, and hit the **Save** button. Now, you must **validate** your code in the editor to catch basic syntax errors. If there are no errors, click the **Parse** button. FlutterFlow will scan your code and automatically detect supported classes and enums.
 
@@ -115,7 +115,7 @@ class Review {
 }
 ```
 
-## Create Class Instance
+## Create Custom Class Instance
 
 You need to create an instance of a class so you can work with actual data and use the class’s properties and methods in your app. Here’s a simple explanation:
 
@@ -192,7 +192,7 @@ In such cases, you can directly access the class data and methods via the **Set 
 
 Once the custom class is added successfully, you can access its fields and methods in the Variable Dialog, call its methods in the Action Flow Editor, assign instances to state variables, pass them to page or component parameters, and use enum values in dropdowns or conditionals.
 
-### Data Types
+### Custom Class as Data Type
 
 You can select your custom class as a Type for variables, state, or parameters, just like a [Custom Data Type](../../resources/data-representation/custom-data-types.md).
 
