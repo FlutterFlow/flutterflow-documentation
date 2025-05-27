@@ -251,7 +251,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Pages
 
-You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
+When you publish a library, all pages within that library become available for use in any project that imports it. This makes it easy to reuse pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
 
 Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
 
@@ -261,7 +261,7 @@ Including pages with libraries offers a modular approach to development, making 
 - **White-labeled Apps** that share common onboarding flows can benefit from libraries. The onboarding process can be built once as a library and reused across all branded versions of the app.
 :::
 
-The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
+When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
 
 <div style={{
     position: 'relative',
