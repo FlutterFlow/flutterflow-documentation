@@ -29,7 +29,7 @@ FlutterFlow allows you to add your own custom Dart files with [classes](https://
 
 To add a custom class, go to the **Custom Code** from the left navigation menu, click **plus (+)** button, and select **Code File**. Set the name of the file, add your code, and hit the **Save** button. Now, you must **validate** your code in the editor to catch basic syntax errors. If there are no errors, click the **Parse** button. FlutterFlow will scan your code and automatically detect supported classes and enums.
 
-Here’s an example of adding a Review custom class:
+Here’s an example of adding a `Review` custom class:
 
 <div style={{
     position: 'relative',
@@ -57,7 +57,7 @@ Here’s an example of adding a Review custom class:
 </div>
 <p></p>
 
-Here's the code snippet of the Review custom class:
+Here's the code snippet of the `Review` custom class:
 
 ```jsx
 class Review {
@@ -114,6 +114,9 @@ class Review {
   }
 }
 ```
+:::tip
+You can also include import statements and access generated classes within your custom class files. For more details, [**see the examples**](common-examples.md) on how to access generated classes.
+:::
 
 ## Create Custom Class Instance
 
@@ -173,7 +176,7 @@ To create an instance of a custom class, open the **Set from Variable** dialog a
 </div>
 <p></p>
 
-:::tip[When You Don't Need an Instance]
+<!-- :::tip[When You Don't Need an Instance]
 
 You can skip instance creation when everything in the class is `static`, meaning it's shared across all uses (like a utility class). For example, look at the class below:
 
@@ -186,7 +189,7 @@ class Utils {
 In such cases, you can directly access the class data and methods via the **Set from Variable** menu.
 
 ![static-class-methods.avif](imgs/static-class-methods.avif)
-:::
+::: -->
 
 ## Using Custom Class
 
@@ -208,7 +211,7 @@ You can use custom class fields to display values directly in the UI, and call i
 
 You can also add your custom class’s methods directly within an Action Flow. For example, you can trigger the `markHelpful()` method when a user taps a “Mark as Helpful” button to update a field or increment the helpful count of a review.
 
-## Enums
+## Custom Enums
 
 Similar to how you add a custom class, you can also add Custom Enums in your app. [Enums](../../resources/data-representation/enums.md) are a great way to define a fixed set of values, such as user roles, order statuses, or content types. Once parsed, these enums become available throughout your app and can be used in dropdowns, conditionals, and UI bindings.
 
