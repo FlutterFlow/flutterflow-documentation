@@ -176,21 +176,6 @@ To create an instance of a custom class, open the **Set from Variable** dialog a
 </div>
 <p></p>
 
-<!-- :::tip[When You Don't Need an Instance]
-
-You can skip instance creation when everything in the class is `static`, meaning it's shared across all uses (like a utility class). For example, look at the class below:
-
-```jsx
-class Utils {
-  static int square(int x) => x * x;
-}
-```
-
-In such cases, you can directly access the class data and methods via the **Set from Variable** menu.
-
-![static-class-methods.avif](imgs/static-class-methods.avif)
-::: -->
-
 ## Using Custom Class
 
 Once the custom class is added successfully, you can access its fields and methods in the Variable Dialog, call its methods in the Action Flow Editor, assign instances to state variables, pass them to page or component parameters, and use enum values in dropdowns or conditionals.
@@ -210,6 +195,69 @@ You can use custom class fields to display values directly in the UI, and call i
 ### Call In Action Flows
 
 You can also add your custom class’s methods directly within an Action Flow. For example, you can trigger the `markHelpful()` method when a user taps a “Mark as Helpful” button to update a field or increment the helpful count of a review.
+
+## Using Static Classes
+
+Sometimes, you just want to run a small piece of logic like formatting text or doing a calculation, without needing to set up anything extra. That’s when `static` data members are helpful. You can access static fields and methods without creating an instance of a class. You can think of them like tools that are always ready to use.
+
+This approach is typically used for **stateless utility classes** where shared functionality is needed across the app. For example, look at the class below:
+
+```jsx
+class Utils {
+  static int square(int x) => x * x;
+}
+```
+
+The `Utils` class contains a static method `square` that returns the square of a number without needing to create an object of the class.
+
+Here are couple more examples to understand it better:
+
+- This `StringFormatter` class below provides reusable static methods to capitalize text, convert it to lowercase, or format it in snake_case.
+
+  ```jsx
+  class StringFormatter {
+    static String capitalize(String input) =>
+        input[0].toUpperCase() + input.substring(1);
+
+    static String toLowerCase(String input) => input.toLowerCase();
+
+    static String toSnakeCase(String input) =>
+        input.replaceAll(' ', '_').toLowerCase();
+  }
+  ```
+
+- The `MathHelper` class offers handy static methods to calculate tax, apply discounts, find percentages, and round off numbers.
+
+  ```jsx
+  class MathHelper {
+    static double calculateTax(double amount) => amount * 0.18;
+
+    static double applyDiscount(double amount, double discountPercent) =>
+        amount - (amount * discountPercent / 100);
+
+    static double calculatePercentage(double part, double total) =>
+        (part / total) * 100;
+
+    static int roundOff(double value) => value.round();
+  }
+  ```
+
+:::warning
+
+Static classes are powerful, but they should be used carefully. Overusing static methods can lead to less flexible code and potential issues, especially when the logic requires access to state or needs to evolve over time. Stick to static methods only when the logic is truly independent and doesn’t rely on instance-specific data.
+
+:::
+
+### Access Static Fields and Methods
+
+You can access the static class data and methods directly via the ****Set from Variable**** menu.
+
+![static-class-methods.avif](imgs/static-class-methods.avif)
+
+### Call In Action Flows
+
+[To come…]
+
 
 ## Custom Enums
 
