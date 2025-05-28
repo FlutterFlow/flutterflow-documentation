@@ -144,6 +144,25 @@ The **Focus Traversal Group** defines a context or scope for focus traversal, an
 
 :::
 
+## Update Text Scaling Factor [Action]
+The **Update Text Scaling Factor** action in FlutterFlow allows you to dynamically adjust the text size across your app during runtime. This is particularly useful for improving accessibility by letting users control the size of the text without having to manually change system settings.
+
+Imagine you have a "+" and "-" button on a page to help users adjust text size. When the user taps the "+" button, the text scaling factor increases by 1, making the text larger. Tapping the "-" button decreases the text scaling factor by 1, making the text smaller. Additionally, a Reset button can be provided to return the text scaling back to its default value.
+
+:::info
+
+This action works in conjunction with the [**Display Settings**](../../resources/projects/settings/general-settings.md#display-settings) configured at the project level, such as **Min Text Scaling Factor** and **Max Text Scaling Factor**.
+
+:::
+
+When configuring the Update Text Scaling Factor action, you can choose from three update types:
+
+- **Set Value**: Directly assigns the text scaling factor to a specific value.
+- **Increment/Decrement**: Adjusts the current scaling factor by a specified amount. A positive value increases scaling, and a negative value decreases it.
+- **Reset**: Restores the text scaling factor to the project's default setting.
+
+![text-scaling-action](imgs/text-scaling-action.avif)
+
 ## Keyboard Navigation
 
 You can use the [On Shortcut Press](../../resources/ui/pages/page-lifecycle.md#on-shortcut-press-action-trigger) action trigger to bind keyboard shortcuts to specific actions. This makes it easier for users with disabilities to navigate your app, especially in web and desktop environments.

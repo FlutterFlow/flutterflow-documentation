@@ -14,7 +14,7 @@ While FlutterFlow provides a wide range of pre-built components and functionalit
 times when you need to extend your app with custom logic or UI components that are not available out of the box.
 This is where writing custom code comes into play. 
 
-There are a few different ways to make custom code accessible in FlutterFLow:
+There are a few different ways to make custom code accessible in FlutterFlow:
 
 * **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
 * **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import [custom package dependencies](#adding-a-pubspec-dependency).
@@ -117,11 +117,10 @@ Compiling Custom Functions should be pretty fast, but sometimes, compiling Custo
 The code analyzer is available in all your custom code snippets and ensures the quality and
 correctness of your custom code. It automatically checks your Dart code for errors and warnings,
 providing real-time feedback as you write.
-![code-analyzer.png](imgs/code-analyzer.png)
 
-When there is a compilation error, the code analyzer will stop running and display the errors caught
-by the compiler. Once fixed, save the code and rerun using the Compile Code button. The code analyzer
-should then be reconnected. You can also manually reconnect it if needed.
+![code-analyzer](imgs/code-analyzer.avif)
+
+When there is a compilation error, the code analyzer will stop running and display the errors caught by the compiler. Once fixed, save the code and restart the code analyzer to resume real-time analysis and receive feedback on updated code.
 
 ### Automatic FlutterFlow Imports
 

@@ -63,12 +63,12 @@ This action involves navigating to a new screen by pushing a new route onto the 
 
 **What Happens Under the Hood:**
 
-- When you push a route, a new screen is placed on top of the current stack. This means the current screen is still in the stack but is not visible to the user.
+- When you push a route, a new screen is placed on top of the current stack. This means the previous screen is still in the stack but is not visible to the user.
 - The new screen becomes the active screen that the user interacts with.
 
 :::info
 
-Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
+Learn more about adding this action in the [**page navigation guide**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
 
 :::
 
@@ -83,7 +83,7 @@ This action involves navigating back to the previous screen by popping the curre
 
 :::info
 
-Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-back-action).
+Learn more about adding this action in the [**page navigation guide**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-back-action).
 
 :::
 
@@ -98,6 +98,6 @@ This action involves replacing the current route with a new route. Unlike pushin
 :::info
 
 - This is useful when you want to prevent the user from navigating back to the previous screen.
-- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action [**here**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
+- This action is essentially the **Navigate To** action with the **Replace Route** option enabled. Learn more about adding this action in the [**page navigation guide**](../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action).
 
 :::

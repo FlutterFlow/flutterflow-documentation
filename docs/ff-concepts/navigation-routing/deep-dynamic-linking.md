@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
 # Deep & Dynamic Linking
 
 :::danger[Support for Dynamic Links]
-On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#dynamic-links-with-branchio) for link management and deep linking.
+On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#branch-deeplinking-library) for link management and deep linking.
 :::
 
 Adding deep and dynamic linking allows you to share a special type of link that takes the user right
@@ -34,8 +34,8 @@ requires authentication, you'll see a login page. After successful login, you ca
 shared with you.
 
 The best thing to note here is that even if the app has a different flow for accessing the page
-content (e.g. Home Page -> All Posts -> Single Post), you can bypass the flow and directly open a
-specific page (e.g. Single Post).
+content (e.g., Home Page -> All Posts -> Single Post), you can bypass the flow and directly open a
+specific page (e.g., Single Post).
 
 ## Deep Link
 
@@ -330,7 +330,7 @@ To share the dynamic link of the page:
 
 1. Select the page that you would like to open via a deep link.
 
-2. Select any widget (e.g. share button) from the widget tree or the canvas area.
+2. Select any widget (e.g., share button) from the widget tree or the canvas area.
 
 3. First, add the action
    to [Generate Current Page Link](generate-current-page-link.md#defining-generate-current-page-link-action).
@@ -402,7 +402,7 @@ To pass custom data with the link, you need to have the following:
 
 That's all you need to pass custom data with a **Deep Link** or **Dynamic Link**.
 
-## Dynamic Links with Branch.io
+## Deep Links with Branch.io
 
 Since **Firebase Dynamic Links** have been deprecated and can no longer be used for new Firebase projects, we can integrate a powerful alternative: **[Branch.io](https://branch.io/)** — a cross-platform solution for deep linking and deferred linking.
 
@@ -672,14 +672,67 @@ Be sure to test both fresh installs (deferred deep links) and existing app sessi
 
 :::tip
 For a complete walkthrough, check out the tutorial video: 
+<div class="video-container"><iframe src="https://www.youtube.com/embed/nEBot6-zhfY?si=y-flWx8zoGH8mgjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+:::
+
+
+## Branch Deeplinking Library
+
+If you’d prefer not to integrate Branch.io from scratch, we have introduced the **Branch Deep Linking Library** that you can import from the Marketplace completely free.
+
+This library sets up everything you need for routing users into your app using Branch’s smart links — with native configuration, link handling, and deep link helpers already wired in.
+
+### Install Library
+
+To install the Branch Deep Linking Library, open the FlutterFlow Marketplace, search for the library, and click **+ Add for Free**.
+
+:::tip[marketplace]
+You can find the [**Library here**](https://marketplace.flutterflow.io/item/oAco1HzQHxtOVE1ssTcC).
+:::
+
+This installs the library into your FlutterFlow account, and you can reuse it across any number of projects.
+
+![branch-library-install.png](imgs/branch-library-install.png)
+
+To add it to a specific project, go to **Settings > Project Dependencies**, click **Add Library**, and search for Branch.
+
+### Branch Setup 
+
+You’ll need two values from your Branch dashboard:
+
+- **Branch Live Key** – your production API key from the Branch dashboard.
+- **Custom Domain** – your configured link domain (e.g., yourapp.app.link)
+This is the domain used to generate and handle smart links for your app.
+
+We recommend storing these values in Environment Variables so you can:
+- Manage them per environment (e.g., dev vs prod Branch keys).
+- Easily assign them to the library’s configuration when adding it to a project.
+
+**Adding Library Values**
+
+When you add the Branch Deep Linking Library to your project, it will prompt you to provide three values:
+
+- `branchApiKey`
+- `branchHostUrl`
+- `isTestMode`
+
+Use the environment variables you created to populate these values.
+
+:::info
+`isTestMode` should be set to false when running your app in production.
+:::
+
+Here’s a quick demo to show how to configure those values inside your library panel.
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
-    width: '100%'}}>
+    width: '100%'
+}}>
     <iframe 
-        src="https://www.youtube.com/embed/v=nEBot6-zhfY"
-        title="Sharing a Project with a User"
+        src="https://demo.arcade.software/AWUZbgiNKpKgwKjxAM17?embed&show_copy_link=true"
+        title=""
         style={{
             position: 'absolute',
             top: 0,
@@ -696,4 +749,296 @@ For a complete walkthrough, check out the tutorial video:
         allow="clipboard-write">
     </iframe>
 </div>
+
+<p></p>
+
+#### Initialize the Branch SDK
+
+Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action under the **Final Actions** section. This ensures the **Branch SDK** is initialized when your app launches.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/sAGP2IBXMbHMPP4rXRaQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+
+### Handle Branch Deeplink [Custom Action]
+
+To receive and act on deep link data, go to your **Entry Page** or **Logged-In Page** and add the `handleBranchDeeplink` action as the first action in the page flow. 
+
+This `handleBranchDeeplink` action listens for incoming Branch Deeplinks and handles routing logic. This action should be added to your Entry Page or Logged-In Page under the **onPageLoad** trigger. It initializes a stream listener that waits
+for Branch links to be opened (either deferred or direct).
+
+When a link is received, the `onLinkOpened` callback is triggered with
+the link data, allowing you to perform custom navigation or logic. You can perform your navigation logic in this action callback. 
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/aRZju3GUJAzaqAUZs87G?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+
+**`linkData` Action Parameter**
+
+The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link:
+
+- **`$canonical_identifier`:** The original route path used when the link was generated (e.g., `/imageDetails/:id`).
+
+- **`~referring_link`:** The full Branch URL that was clicked.
+
+- **`page`:** The target page or screen the link is meant to open (e.g., paywall). This is a custom parameter set by the user when generating the link.
+
+- Any custom parameters added during link creation (e.g., `campaign`, `productId`, `referrer`, etc.). Ensure the key and value is both `String` and `String`.
+
+This lets you write flexible, conditional navigation logic based on what was shared.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/FRDKejqwWVAmS27RJeQH?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p></p>
+
+:::tip
+Keep **"Allow Navigate Back"** checked when navigating from the Home Page to ensure it stays in the stack. This is applicable to any navigation from the Home Page, not limited to deeplinking navigation logic. 
+This allows the user to return to the Home Page at any time and ensures that deep link logic defined there continues to work.
 :::
+
+
+Use the link data from this callback to:
+- Navigate to a page.
+- Show a bottom sheet.
+- Load content from Firestore using a referenced ID.
+
+
+
+
+:::danger[Testing Deeplinks]
+It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators. We recommend using **[Local Run](../../testing-deployment-publishing/running-your-app/local-run.md)** to run your apps on physical devices.
+:::
+
+
+### Generate Link [Custom Action]
+
+
+The `generateLink` action allows you to create a custom Branch Smart Link directly from your FlutterFlow app.
+
+This is especially useful when you want to let users:
+- Share app content (like a post, product, or image).
+- Invite others with referral codes.
+- Trigger deep links that take recipients to specific app screens.
+
+The action accepts the following parameters:
+
+- **`canonicalIdentifier`** – A unique path for the content (e.g., `/imageDetails/:id`). This becomes the key reference used when routing the user back into the app.
+
+- **`title`** – The link's title (used in social previews or analytics).
+
+- **`description`** – (Optional) A short description of the content.
+
+- **`metadata`** – A dynamic map of custom parameters to include with the link
+(e.g., page: "imageDetails", imageRef: "abc123", etc.) 
+
+- **`linkProperties`** – A dynamic map for configuring how the link behaves
+(e.g., set the `feature`, `channel`, `campaign`, or `stage` for analytics).
+
+:::warning[JSON maps]
+Due to a limitation, if you plan to leave map-type variables (like `metadata` or `linkProperties`) empty, you must still pass them as **empty maps**, not `null`.  
+Ensure all keys and values are **plain strings**, avoid nested JSON or non-string types.  
+Incorrect structure may cause the Link Generation action to fail silently.
+:::
+
+### Branch Helper Functions
+
+These functions help you safely work with deep link data, extract values, and conditionally navigate based on link metadata.
+
+- **`isTargetingPage(linkData, targetPage)`** - Checks whether the page value in the link data matches a specific screen name. The `page` parameter is set by the user when generating the link from Branch dashboard or FlutterFlow. 
+
+- **`getCanonicalIdentifierFromLink(linkData)`** - Returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
+
+- **`getReferringLinkFromLink(linkData)`** - Retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
+
+- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). Useful for extracting the ID from a link. 
+
+- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`).
+
+- **`createLinkProperties(...)`** - Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
+
+
+
+### DreamBrush Link Generation Example
+
+In the DreamBrush app, we can use `generateLink` after a user finishes generating an image.
+The link could include:
+- **page**: Current Page Route that is `/imageDetails/:imageRef`.
+- **title**: "Check out my AI image!"
+
+This link can then be shared via WhatsApp, email, or social media — and when clicked, it brings the recipient directly to that content inside the app.
+
+Here's a quick example of generating a Branch link from a page that uses a Firebase Document ID as a route parameter.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/SELEpnhCryYrZD7KokAl?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+<p>
+</p>
+
+Now in your `handleBranchDeeplink` action callback, add the additional logic to handle such custom links: 
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/kZ7uvnohpGIER3ZTxPR8?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
+
+### FAQs
+
+<details>
+<summary>Why isn't my deep link working when I navigate to another page from the home page?</summary>
+
+It's likely because you're navigating in a way that removes the Home Page from the stack for example, disabling "**Allow Navigate Back**" in the Navigate Actions.
+
+Since the deep link handler is defined on the Home Page, it gets disposed and can’t respond when a deep link is triggered.
+
+✅ Solution:
+
+Keep the Home Page in the stack by enabling "**Allow Navigate Back**" on any navigation actions from your home page (not limited to navigation logic in onLinkOpened action callback).
+
+This ensures the Home Page stays active and can continue handling deep links.
+
+</details>
+
+<details>
+<summary> Why is my Branch link generation failing?</summary>
+
+This often happens because one or more of the inputs passed to the action (like `metadata` or `linkProperties` or `customParams` when using `createLinkProperties` helper function) contains invalid JSON formatting.
+
+Branch expects these values to be passed as a map of plain `String` key-value pairs, not as nested JSON, objects, or dynamic types.
+
+Ensure both **Key and Value's expected type** is `String` and `String` and try again.
+</details>
+
+<details>
+<summary> Why isn’t deep linking working when testing from a simulator? </summary>
+
+Deep linking, especially Universal Links and deferred deep linking may not work reliably on iOS or Android simulators/emulators due to platform limitations.
+
+Simulator Limitations:
+- **iOS:** Simulators cannot verify Universal Links properly (no App Store, limited AASA domain support).
+
+- **Android:** Some versions fail to auto-verify App Links or handle deferred deep links without Play Services.
+
+✅ Recommended:
+
+Always test deep linking on a physical device for accurate behavior.
+
+</details>
