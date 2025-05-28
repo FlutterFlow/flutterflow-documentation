@@ -21,9 +21,7 @@ FlutterFlow has the following built-in functions:
 * **Combine Text:** A built-in function that lets you concatenate strings, making it easy to join
   multiple text elements together seamlessly.
 
-* **Code Expression:**  This feature allows you to perform simple calculations and data
-  manipulations
-  quickly and efficiently.
+* **Inline Function:**  This feature allows you to perform simple calculations and data manipulations quickly and efficiently.
 
 
 
@@ -87,34 +85,22 @@ together, with the same text style applied to all of them. If you need to combin
 values with different text styles for each, consider using the **[RichText](../../ui/widgets/basic-widgets/text.md#richtext-widget)** widget.
 :::
 
-## Code Expressions
+## Inline Function
+Oftentimes, you may need to quickly format data, convert a data type from one form to another, or perform a simple calculation before setting the variable to a data source, such as a widget value source.
 
-Oftentimes, you may need to quickly format data, convert a data type from one form to another,
-or perform a simple calculation before setting the variable to a data source, such as a widget
-value source.
+Inline Function is a piece of code that combines operators, variables, and/or values to produce a result. It can be used for arithmetic and logical operations, among other tasks.
 
-**Code Expression** built-in functions can help with
-these tasks. A code expression is a piece of code that combines operators, variables, and/or values
-to produce a result. It can be used for arithmetic and logical operations, among other tasks.
+To add inline function, open the Variable Setter dialog wherever it's possible to set a dynamic value and choose the values that will be part of the inline function.
 
-To perform a code expression, open the Variable Setter dialog wherever it's possible to set a
-dynamic value and choose the values that will be part of the code expression.
+For example, we may want to quickly calculate the discount amount of a product where the discount is 18% of the MRP of the product. The expression would be `cost - (cost * discount)`.
 
-For example, we may want to quickly calculate the discount amount of a product where the discount is
-18% of the MRP of the product.
+**Precedence of operations**
 
-The expression would be `cost - (cost * discount)`.
+Inline Function for math operations follow typical precedence (e.g., multiplication/division before addition/subtraction), but parentheses can change the order.
 
-:::warning[Precedence of operations]
-Code expressions for math operations follow typical precedence (e.g., multiplication/division before
-addition/subtraction), but parentheses can change the order.
-:::
+In this case, the variables we need are `cost` and `discount`.
 
-In this case, the variables we need are `cost` and `discount`.
-
-So, we create two arguments in the **Code Expression** dialog where they hold the value of `cost`
-and `discount`, assign the data type for each of the arguments, and define the return type of the
-final value. In this case, the return type is a `double` since it holds the **subtotal** amount.
+So, we create two arguments in the **Inline Function** dialog where they hold the value of `cost` and `discount`, assign the data type for each of the arguments, and define the return type of the final value. In this case, the return type is a `double` since it holds the **subtotal** amount.
 
 <div style={{
     position: 'relative',
@@ -123,7 +109,7 @@ final value. In this case, the return type is a `double` since it holds the **su
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/I6UcltVn7ssAIWmipeFY?embed&show_copy_link=true"
+        src="https://demo.arcade.software/qM8kjAlMJl6WyH3tXN4X?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -142,10 +128,9 @@ final value. In this case, the return type is a `double` since it holds the **su
     </iframe>
 </div>
 
-Now you can write the code expression in the **Expression** field and click on **Check Errors** to
-see if the expression is valid. If it is valid, you will see the generated code for the same.
+Now you can write the inline function in the **Expression** field and click on **Check Errors** to see if the expression is valid. If it is valid, you will see the generated code for the same.
 
-The arguments in a Code Expression can take the following properties:
+The arguments in a Inline Function can take the following properties:
 
 | DataType | Supports Nullable | Supports List |
 |----------|-------------------|---------------|
@@ -172,11 +157,9 @@ Here are some common expressions you can use for your business logic:
 
 
 
-
-
 ## Custom Functions
 
-You can also use custom functions to handle slightly more complex calculations or to process a wider range of data types that are not supported in Code Expression.
+You can also use custom functions to handle slightly more complex calculations or to process a wider range of data types that are not supported in Inline Function.
 
 :::info
 Learn more about [**Custom Functions**](../../../ff-concepts/adding-customization/custom-functions.md).

@@ -166,7 +166,7 @@ com/embed/39bb5fc9068f4a759a4b0d6fd62e3f16?sid=ed5c274e-f1e0-4830-9702-dd35ac2d6
 4. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container** 
 inside to display the list of matching contacts.
 
-    1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Code expression](../../../../resources/control-flow/functions/utility-functions.md#code-expressions).
+    1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Inline Function](../../../../resources/control-flow/functions/utility-functions.md#inline-function).
     2. Now you can display the contact's details, such as name, inside the UI.
 
 <div class="video-container"><iframe src="https://www.loom.
