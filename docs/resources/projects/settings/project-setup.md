@@ -4,7 +4,7 @@ title: Project Setup
 tags: [Setup, Permissions, Multiple Languages]
 keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
 description: Learn how to setup your project in FlutterFlow.
-sidebar_position: 0
+sidebar_position: 1
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
