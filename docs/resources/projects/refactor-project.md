@@ -9,6 +9,10 @@ sidebar_position: 7
 
 # Refactor Project
 
+:::tip[PLANS]
+Refactor Project feature is available on the **Standard** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+:::
+
 **Refactor Project** is a developer‑focused mode that opens your FlutterFlow project as a set of YAML files so you can perform large-scale edits in a single, consistent operation.
 
 For example, if you want to use a custom data type from a Library and update all references, you don’t have to manually edit each page or component. With this mode enabled, you can update all references at once using a single refactor pass.
