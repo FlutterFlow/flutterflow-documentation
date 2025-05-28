@@ -575,6 +575,10 @@ You can also create fully custom text styles to match your design needs, going b
 
 ![typography](imgs/typography.avif)
 
+:::tip[PLANS]
+Custom Text Styles are available on the **Teams** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+:::
+
 #### Adding responsive text styles
 
 When developing a mobile app, it's important to consider the different platforms on which it will run. You might notice that the text looks smaller on platforms with higher screen resolution, such as tablets, web, or desktops. This can impact the user experience and make your app difficult to read. To solve this issue, you can add responsive text that adjusts the font size based on the platform.
