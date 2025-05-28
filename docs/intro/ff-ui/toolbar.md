@@ -265,6 +265,10 @@ _Connect GitHub Repo_, _Download Code_, and _Download APK_ features requires a [
 
 6. **Open in VSCode**: This option lets you open your entire FlutterFlow project in a VS Code environment, offering a richer development experience. You’ll have real-time autocomplete and error detection, easier access to existing Flutter & Dart tooling, and the ability to leverage the AI ecosystem.
 
+7. **Refactor Project**: This option opens your FlutterFlow project in a YAML-based file editor, allowing you to perform bulk edits more efficiently. You can search, edit, and replace values across multiple files—useful for renaming keys, updating data types, or migrating resources to a Library. Check out the [**Refactor Project**](../../resources/projects/refactor-project.md) documentation for more details.
+
+
+
 ## Share project
 
 You can make a project public so that others can view and clone your project. Before you share your project, make sure to remove any sensitive information.
