@@ -1,11 +1,7 @@
 ---
 keywords: ['firebase', 'auth', 'authenticated']
-author: Unknown
-created_at: '1690181539'
 slug: /how-to-retrieve-the-authenticated-type-from-firebase-auth-in-flutterflow
 title: How to retrieve the authenticated type from Firebase auth in Flutterflow
-updated_at: '1690215728'
-url: https://intercom.help/flutterflow/en/articles/8165715-how-to-retrieve-the-authenticated-type-from-firebase-auth-in-flutterflow
 ---
 # How to retrieve the authenticated type from Firebase auth in Flutterflow
 
@@ -43,4 +39,11 @@ If the user has signed in using Facebook, the function will return: **`'facebook
 If the user has signed in using Email and Password, the function will return: **`'password'`**
 
 These are the identifiers used by Firebase to represent different sign-in methods.Please, thoroughly test this function to ensure it fits your specific requirements.
+
+:::tip[Pro Tip]
+In FlutterFlow, if you want to display or use the user's sign-in method in your UI logic (e.g., showing different UIs for Google vs. email login), you can create a custom function using the `providerId` approach shown in the article and **connect it to a custom action**. This allows you to make dynamic decisions inside your app based on how the user authenticated.
+
+Remember to return the result from the custom function and store it in an App State variable for easy access throughout your app.
+:::
+
 For more details, you can refer to Firebase's official documentation, as well as our **documentation**, **community tutorials**, **Youtube channel**, **blog**, and **intercom articles**.
