@@ -86,11 +86,11 @@ values with different text styles for each, consider using the **[RichText](../.
 :::
 
 ## Inline Function
-Oftentimes, you may need to quickly format data, convert a data type from one form to another, or perform a simple calculation before setting the variable to a data source, such as a widget value source.
+Often times, you may need to quickly format data, convert a data type from one form to another, or perform a simple calculation before setting the variable to a data source, such as a widget value source.
 
 Inline Function is a piece of code that combines operators, variables, and/or values to produce a result. It can be used for arithmetic and logical operations, among other tasks.
 
-To add inline function, open the Variable Setter dialog wherever it's possible to set a dynamic value and choose the values that will be part of the inline function.
+To add inline function, open the Set from Variable dialog wherever it's possible to set a dynamic value and choose the values that will be part of the inline function.
 
 For example, we may want to quickly calculate the discount amount of a product where the discount is 18% of the MRP of the product. The expression would be `cost - (cost * discount)`.
 
