@@ -88,6 +88,10 @@ To add a design system from a library, start by creating the design system in a 
 
 ## Import Figma Theme
 
+:::tip[PLANS]
+Import Figma Theme feature is available on the **Teams** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+:::
+
 You can bring your Figma design system directly into your FlutterFlow project. This streamlines the design-to-development process by automatically importing colors and typography from your Figma file, helping you maintain visual consistency and reduce manual effort.
 
 To import a Figma theme into your FlutterFlow project, go to **Theme Settings > Design System** and click **Connect To Figma**. Authenticate your account and grant access to Figma. Once connected, paste your Figma file URL to fetch the theme.
