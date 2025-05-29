@@ -85,6 +85,7 @@ together, with the same text style applied to all of them. If you need to combin
 values with different text styles for each, consider using the **[RichText](../../ui/widgets/basic-widgets/text.md#richtext-widget)** widget.
 :::
 
+
 ## Inline Function (Code Expressions)
 
 :::info

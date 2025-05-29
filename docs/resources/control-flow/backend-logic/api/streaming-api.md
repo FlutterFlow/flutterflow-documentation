@@ -356,7 +356,7 @@ id: 2
 ```
 The Server Sent Event Data JSON will be `null` because the data cannot be parsed as JSON.
 
-You can fix this by using the following expression inside the [Inline Function](../../../control-flow/functions/utility-functions.md#inline-function) to handle the `null` case:
+You can fix this by using the following expression inside the [Inline Function](../../../control-flow/functions/utility-functions.md#inline-function-code-expressions) to handle the `null` case:
 
 ```
 responseData ?? ''
