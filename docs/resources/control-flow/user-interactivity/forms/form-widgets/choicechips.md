@@ -52,11 +52,11 @@ To add the ChoiceChips widget to your app:
 </div>
 <p></p>
 
-## Trigger action on change
+### Trigger Action on Change
 
-See how to [trigger an action when a selection changes](../../../../../resources/ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
+See how to [trigger an action when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
 
-## Select or clear all choices [Action]
+## Select or Clear All Choices [Action]
 
 Users may need to swiftly deselect all chips or choose all available choice chips at once. You can do so by adding the **Clear All/Select All** action.
 
@@ -68,7 +68,7 @@ Before you add this action, ensure you [**allow multiselect**](#allow-multiselec
 
 You can customize the appearance and behavior of this widget using the various properties available under the properties panel.
 
-### Allow multiselect
+### Allow Multiselect
 
 You might want to allow users to select multiple choices to filter the result.
 
@@ -165,7 +165,7 @@ To add a space between the chips, you can use the **Chip Spacing** ad **Row Spac
 </div>
 <p></p>
 
-### Align chips
+### Align Chips
 
 When you have chips in multiple rows, you can align them using the **Alignment** property. This is similar to setting main axis alignment for the Row widget.
 
@@ -195,7 +195,7 @@ When you have chips in multiple rows, you can align them using the **Alignment**
 </div>
 <p></p>
 
-### Customizing selected and unselected chip style
+### Customizing Selected and Unselected Chip Style
 
 Various properties under the **Selected Chip Style** and **Unselected Chip Style** section allow you to customize chips to match your design. Here's how you do it:
 

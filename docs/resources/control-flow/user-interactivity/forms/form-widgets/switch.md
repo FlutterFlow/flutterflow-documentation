@@ -74,7 +74,7 @@ Here is a simple way to do it:
 </div>
 <p></p>
 
-### Setting initial value
+### Setting Initial Value
 
 You might want to show the switch with a default status, i.e., ON or OFF. For example, showing the location service setting with a default switch OFF.
 
@@ -109,45 +109,9 @@ To set the initial value:
 </div>
 <p></p>
 
-### Saving switch value
+### Saving Switch Value
 
-You might want to save the switch value as soon as it is toggled ON or OFF. For example, saving in an app state variable or Firestore document field. You can do so by adding the action on the switch widget.
-
-The switch widget provides you with the following types of actions (aka callbacks), which you can use to add actions under it.
-
-1. **On Toggled On**: Actions added under this will be triggered whenever the switch is ON.
-2. **On Toggled Off**: Actions added under this will be triggered whenever the switch is OFF.
-
-Here's how you do it:
-
-1. Select the **Switch** widget, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-2. Select **On Toggled On** or **On Toggled Off** and add an action that will update the value. (e.g., [update app state](../..//../../data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../ff-integrations/database/cloud-firestore/firestore-actions.md), etc.)
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/XHgeXkbmfkV2YqbV9enj?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+You may want to save the switch value as soon as it is toggled ON or OFF. To do this, [add an action using the trigger](../../forms/form-triggers.md#on-toggled-on--on-toggled-off) that responds to changes in the widget’s selection.
 
 ### Customizing
 

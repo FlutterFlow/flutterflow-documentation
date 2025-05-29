@@ -48,7 +48,7 @@ To add a PinCode widget:
 </div>
 <p></p>
 
-## Trigger action On Completed
+## Trigger Action On Completed
 
 Let's see how to trigger an action when you are done entering the value in this widget. This is helpful when you want to compare the entered value with the one stored in your backend.
 
@@ -112,69 +112,12 @@ Here is an example of displaying a snackbar message that shows the entered value
 </div>
 <p></p>
 
-## Trigger action On Change
+## Trigger Action On Change
 
-Let's see how to trigger an action whenever you enter or delete the value in each field of this widget. This is helpful when you want to provide immediate feedback to the user. For instance, you can check the validity of the entered digit as soon as the user types it in and show a message that it is not valid.
+You may want to trigger an action whenever users enter or delete the value in each field of this widget. For instance, you can check the validity of the entered digit as soon as the user types it in and show a message that it is not valid. To do this, [add an action using the trigger](../../../../resources/control-flow/user-interactivity/forms/form-triggers.md#on-change) that responds to changes in this widget.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Tu67UorxewVzqpgA5Rx8?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-To do so:
-
-1. Select the **PinCode** widget, select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
-2. Set the **Type of Action** (aka callback) to **On Change**. That means actions added under this will be called every time when a user enters each pin value.
-3. Now you can add any action here.
-
-Here is an example of displaying a snackbar message when a user enters a non-number value.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/fe5cbade24854585b3a67b09354c80f2?sid=ed9d7cf1-015f-477c-8737-1de59c985d72"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+## Trigger Action On Focus Change
+You may want to trigger an action when the user taps into or exits the Pincode field. For example, you can run a validation check once the user finishes entering the code and moves focus away from the field. To do this, [add an action using the trigger](../../../../resources/control-flow/user-interactivity/forms/form-triggers.md#on-focus-change) that responds to focus changes in this widget.
 
 ## Validation
 

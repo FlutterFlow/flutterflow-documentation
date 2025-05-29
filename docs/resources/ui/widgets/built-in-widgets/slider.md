@@ -83,6 +83,11 @@ The steps to build the example are as follows:
 </div>
 <p></p>
 
+## Trigger Action on Change
+
+See how to [trigger an action when a selection changes](../../../control-flow/user-interactivity/forms/form-triggers.md#on-selected) on this widget.
+
+
 ## Setting initial value
 
 Sometimes you might want to display the slider with the default value. For example, showing the volume slider with the audible volume value. You can do so by setting the initial value for the Slider.
@@ -302,7 +307,3 @@ To show the slider value:
 </div>
 <p></p>
 
-
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
