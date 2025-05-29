@@ -85,7 +85,12 @@ together, with the same text style applied to all of them. If you need to combin
 values with different text styles for each, consider using the **[RichText](../../ui/widgets/basic-widgets/text.md#richtext-widget)** widget.
 :::
 
-## Inline Function
+## Inline Function (Code Expressions)
+
+:::info
+**Code Expressions** was renamed to **Inline Functions** starting from FlutterFlow 6.0 version.
+:::
+
 Often times, you may need to quickly format data, convert a data type from one form to another, or perform a simple calculation before setting the variable to a data source, such as a widget value source.
 
 Inline Function is a piece of code that combines operators, variables, and/or values to produce a result. It can be used for arithmetic and logical operations, among other tasks.
