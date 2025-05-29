@@ -2407,6 +2407,11 @@
         "source": "/marketplace/creators-hub/submit-item-for-reivew",
         "destination": "/marketplace/creators-hub/submit-item-for-review",
         "type": 301
+      },
+      {
+        "source": "/resources/functions/utility/#code-expressions",
+        "destination": "/resources/functions/utility/#inline-function",
+        "type": 301
       }
     ]
   }
