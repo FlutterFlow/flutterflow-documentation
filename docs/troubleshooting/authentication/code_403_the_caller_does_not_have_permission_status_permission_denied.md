@@ -7,7 +7,7 @@ title: 'Code: 403, The caller does not have permission. status: PERMISSION_DENIE
 
 This error typically occurs when your application or service account does not have the required permissions to access a resource in Google Cloud or Firebase.
 
-## What does this error mean?
+## Code 403 Error Message
 
 You may encounter this error due to one or more of the following reasons:
 
@@ -16,11 +16,6 @@ You may encounter this error due to one or more of the following reasons:
 - **Missing or incorrect IAM roles** for the service account
 - **API not enabled** in the Google Cloud project
 
-## Example Full Error Message
-
-```
-Code: 403, The caller does not have permission. status: PERMISSION_DENIED
-```
 
 ## How to Fix
 
@@ -33,7 +28,7 @@ Code: 403, The caller does not have permission. status: PERMISSION_DENIED
 4. **Regenerate service account keys if needed**
    - If you suspect the key is invalid, generate a new one and update your application configuration.
 
-:::tip[Pro Tip: Always Use Least Privilege Principle]
+:::tip[Always Use Least Privilege Principle]
 When assigning IAM roles to your service account, follow the **principle of least privilege**—only grant the minimum permissions necessary for the task. This not only reduces the risk of misconfiguration but also enhances the overall security posture of your app.
 :::
 
