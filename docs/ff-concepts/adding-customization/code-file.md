@@ -192,11 +192,7 @@ You can use custom class fields to display values directly in the UI, and call i
 
 ![access-fields-methods.avif](imgs/access-fields-methods.avif)
 
-### Call In Action Flows
-
-You can also set fields and call methods of your custom classes directly within an Action Flow. This is useful when you want to update data or trigger custom logic as part of your app's behavior.
-
-#### Set Field [Action]
+### Set Field [Action]
 
 Use the **Set Field** action to update a specific property of a custom class instance. For example, you can set `order.status = 'shipped'` when a user confirms an order, allowing the UI to reflect the change immediately.
 
@@ -226,7 +222,7 @@ Use the **Set Field** action to update a specific property of a custom class ins
 </div>
 <p></p>
 
-#### Call Method [Action]
+### Call Method [Action]
 
 Use the **Call Method** action to invoke a method defined in your custom class. For instance, if your `Comment` class has a `markHelpful()` method, you can trigger it when a user taps a “Helpful” button to record the interaction.
 
@@ -317,11 +313,7 @@ You can access the static class data and methods directly via the ****Set from V
 
 ![static-class-methods.avif](imgs/static-class-methods.avif)
 
-### Call Static Classes in Action Flows
-
-You can interact with static classes directly in an Action Flow using both the **Set Field** and **Call Method** actions. Static methods and fields belong to the class itself, not to a specific instance, which makes them perfect for utilities, configuration helpers, or global logic.
-
-#### Set Static Field [Action]
+### Set Static Field [Action]
 
 Use the **Set Static Field** action to update a static field on a custom class. For example, if you have a class `MathHelper` with a static field `amount`, you can set it using an input value when a user enters a price. This allows you to store that value globally and use it across different calculations.
 
@@ -352,7 +344,7 @@ Use the **Set Static Field** action to update a static field on a custom class. 
 </div>
 <p></p>
 
-#### Call Static Method [Action]
+### Call Static Method [Action]
 
 Use the **Call Static Method** action to run a static method of your class. For instance, you can call `Logger.logEvent('user_login')` from an analytics helper class when a login action is triggered, without needing to create an instance of the class.
 
