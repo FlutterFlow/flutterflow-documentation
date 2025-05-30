@@ -309,7 +309,7 @@ You can now proceed to display the country list in *HomePage*. Here are the step
     <p></p>
 
 4. On ListView, [generate dynamic children](../../../ui/widgets/composing-widgets/generate-dynamic-children.md) using the page state variable.
-5. The page state variable stores the country name and code as a single string (e.g., Australia - AT). To display the name and code separately in a *ListTile*, we can use a [inline function](../../../control-flow/functions/utility-functions.md#inline-function). To display the country name, we can use `var1.split("-")[1].trim()`, where `var1` is the current item in the list. To display the country code, we can use the same expression and replace `[1]` with `[0]`.
+5. The page state variable stores the country name and code as a single string (e.g., Australia - AT). To display the name and code separately in a *ListTile*, we can use a [inline function](../../../control-flow/functions/utility-functions.md#inline-function-code-expressions). To display the country name, we can use `var1.split("-")[1].trim()`, where `var1` is the current item in the list. To display the country code, we can use the same expression and replace `[1]` with `[0]`.
 
     <div style={{
         position: 'relative',
