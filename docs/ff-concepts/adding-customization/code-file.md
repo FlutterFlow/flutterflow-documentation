@@ -194,7 +194,67 @@ You can use custom class fields to display values directly in the UI, and call i
 
 ### Call In Action Flows
 
-You can also add your custom class’s methods directly within an Action Flow. For example, you can trigger the `markHelpful()` method when a user taps a “Mark as Helpful” button to update a field or increment the helpful count of a review.
+You can also set fields and call methods of your custom classes directly within an Action Flow. This is useful when you want to update data or trigger custom logic as part of your app's behavior.
+
+#### Set Field [Action]
+
+Use the **Set Field** action to update a specific property of a custom class instance. For example, you can set `order.status = 'shipped'` when a user confirms an order, allowing the UI to reflect the change immediately.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/fpj0MWNYrIZFYe5vDAyj?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### Call Method [Action]
+
+Use the **Call Method** action to invoke a method defined in your custom class. For instance, if your `Comment` class has a `markHelpful()` method, you can trigger it when a user taps a “Helpful” button to record the interaction.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/dVK7pbda7U6B4igmNUP7?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Using Static Classes
 
@@ -216,13 +276,16 @@ Here are couple more examples to understand it better:
 
   ```jsx
   class StringFormatter {
-    static String capitalize(String input) =>
-        input[0].toUpperCase() + input.substring(1);
+  static String lastFormatted = '';
+  static int formatCount = 0;
+  
+  static String capitalize(String input) =>
+      input[0].toUpperCase() + input.substring(1);
 
-    static String toLowerCase(String input) => input.toLowerCase();
+  static String toLowerCase(String input) => input.toLowerCase();
 
-    static String toSnakeCase(String input) =>
-        input.replaceAll(' ', '_').toLowerCase();
+  static String toSnakeCase(String input) =>
+      input.replaceAll(' ', '_').toLowerCase();
   }
   ```
 
@@ -254,10 +317,70 @@ You can access the static class data and methods directly via the ****Set from V
 
 ![static-class-methods.avif](imgs/static-class-methods.avif)
 
-### Call In Action Flows
+### Call Static Classes in Action Flows
 
-[To come…]
+You can interact with static classes directly in an Action Flow using both the **Set Field** and **Call Method** actions. Static methods and fields belong to the class itself, not to a specific instance, which makes them perfect for utilities, configuration helpers, or global logic.
 
+#### Set Static Field [Action]
+
+Use the **Set Static Field** action to update a static field on a custom class. For example, if you have a class `MathHelper` with a static field `amount`, you can set it using an input value when a user enters a price. This allows you to store that value globally and use it across different calculations.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/TcYX7f2OgBZaayKFsKhN?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### Call Static Method [Action]
+
+Use the **Call Static Method** action to run a static method of your class. For instance, you can call `Logger.logEvent('user_login')` from an analytics helper class when a login action is triggered, without needing to create an instance of the class.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/TgpAbgq6mF8o1nG4sR2g?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Custom Enums
 
