@@ -194,7 +194,7 @@ You can use custom class fields to display values directly in the UI, and call i
 
 ### Set Field [Action]
 
-Use the **Set Field** action to update a specific property of a custom class instance. For example, you can set `order.status = 'shipped'` when a user confirms an order, allowing the UI to reflect the change immediately.
+Use the **Set Field** action to update a specific property of a custom class instance. For example, you can set `review.comment = 'Great fit and quality!'` when a user updates the review, allowing the UI to reflect the new comment instantly.
 
 <div style={{
     position: 'relative',
@@ -252,9 +252,9 @@ Use the **Call Method** action to invoke a method defined in your custom class. 
 </div>
 <p></p>
 
-## Using Static Classes
+## Using Static Members
 
-Sometimes, you just want to run a small piece of logic like formatting text or doing a calculation, without needing to set up anything extra. That’s when `static` data members are helpful. You can access static fields and methods without creating an instance of a class. You can think of them like tools that are always ready to use.
+Sometimes, you may want to define fields and methods that are shared across your app. In such cases, `static` fields and methods are ideal. Because they're tied to the class rather than an instance, static members are accessible globally, for example, utilities for formatting, calculations, or global configuration.
 
 This approach is typically used for **stateless utility classes** where shared functionality is needed across the app. For example, look at the class below:
 
@@ -272,16 +272,16 @@ Here are couple more examples to understand it better:
 
   ```jsx
   class StringFormatter {
-  static String lastFormatted = '';
-  static int formatCount = 0;
-  
-  static String capitalize(String input) =>
-      input[0].toUpperCase() + input.substring(1);
+    static String lastFormatted = '';
+    static int formatCount = 0;
+    
+    static String capitalize(String input) =>
+        input[0].toUpperCase() + input.substring(1);
 
-  static String toLowerCase(String input) => input.toLowerCase();
+    static String toLowerCase(String input) => input.toLowerCase();
 
-  static String toSnakeCase(String input) =>
-      input.replaceAll(' ', '_').toLowerCase();
+    static String toSnakeCase(String input) =>
+        input.replaceAll(' ', '_').toLowerCase();
   }
   ```
 
@@ -301,9 +301,43 @@ Here are couple more examples to understand it better:
   }
   ```
 
+:::tip
+
+You can mix both **static** and **instance** members in a single class. Static members are shared across all instances, while instance members hold data specific to each object. For example, look at the class below:
+
+```jsx
+class Review {
+  static List<String> flaggedWords = ['bad', 'spam', 'fake'];
+  
+  String id;
+  String userId;
+  String comment;
+  int helpfulCount = 0;
+
+  Review(
+    this.id,
+    this.userId,
+    this.comment
+  );
+
+  static bool isCommentAppropriate(String input) {
+    return !flaggedWords.any((word) => input.toLowerCase().contains(word));
+  }
+  
+  void markHelpful() {
+    helpfulCount += 1;
+  }
+}
+```
+
+- `flaggedWords` is a static list used across all reviews.
+- `isCommentAppropriate()` is a static method that can be used without creating a `Review` instance, useful for validating comments before saving them.
+
+:::
+
 :::warning
 
-Static classes are powerful, but they should be used carefully. Overusing static methods can lead to less flexible code and potential issues, especially when the logic requires access to state or needs to evolve over time. Stick to static methods only when the logic is truly independent and doesn’t rely on instance-specific data.
+Using static members are powerful, but they should be used carefully. Overusing static methods can lead to less flexible code and potential issues, especially when the logic requires access to state or needs to evolve over time. Stick to static methods only when the logic is truly independent and doesn’t rely on instance-specific data.
 
 :::
 
@@ -346,7 +380,7 @@ Use the **Set Static Field** action to update a static field on a custom class. 
 
 ### Call Static Method [Action]
 
-Use the **Call Static Method** action to run a static method of your class. For instance, you can call `Logger.logEvent('user_login')` from an analytics helper class when a login action is triggered, without needing to create an instance of the class.
+Use the **Call Static Method** action to run a static method of your class. For instance, you can call `MathHelper.calculateTax(amount)` to compute tax on a given amount during a checkout action, without needing to create an instance of the class.
 
 <div style={{
     position: 'relative',
