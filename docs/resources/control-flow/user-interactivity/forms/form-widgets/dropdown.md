@@ -244,7 +244,7 @@ You might need to disable a dropdown when certain conditions are not yet met or 
 To disable the dropdown:
 
 1. Select the **DropDown** widget, move to the **Properties Panel > DropDown Search >** enable **Disable Dropdown** option.
-2. Click on **Unset** and select the source that returns the boolean value (i.e., True or False), such as boolean variable, [Conditions](../../../../../resources/functions/conditional-logic), [Code Expression](../../../../../resources/functions/utility#code-expressions).
+2. Click on **Unset** and select the source that returns the boolean value (i.e., True or False), such as boolean variable, [Conditions](../../../../../resources/functions/conditional-logic), [Inline Function](../../../../../resources/control-flow/functions/utility-functions.md#inline-function-code-expressions).
 
 ![Disabling dropdown](../../imgs/disabling-dropdown.png)
 
