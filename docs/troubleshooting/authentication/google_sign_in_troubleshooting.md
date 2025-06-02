@@ -5,63 +5,68 @@ title: Google Sign-In Troubleshooting
 ---
 # Google Sign-In Troubleshooting
 
-If you face any issue while using the Google Sign-in feature from the exported app, then follow the given instructions to resolve them:
+If you face any issues using the Google Sign-In feature from the exported app, follow these instructions to resolve them:
 
-1. **If the App is Pushed to Play Store from FlutterFlow by using CodeMagic deployment:**
+## 1. If the App is Pushed to the Play Store from FlutterFlow using CodeMagic deployment:
 
-   Deploy the application to Google Play Store by using the CodeMagic Integration in FlutterFlow.
-   ![](../assets/20250430121439158816.png)
+- Deploy your app to the Google Play Store using the CodeMagic integration in FlutterFlow.
 
-    After this step, head over to the **Google Play Console**. Here open the app from the **All apps** list.
+    ![](../assets/20250430121439158816.png)
+
+- Go to the **Google Play Console**, open your app from the **All apps** list, and navigate to the **App Integrity** option under the **Setup** menu on the left.
+
     ![](../assets/20250430121439605476.png)
-
-    After opening the app dashboard, click on the **App Integrity** option under the **Setup** menu present on the left side of the screen.
     ![](../assets/20250430121440000724.png)
 
-    After opening the **App Integrity** section, click on the **App Signing** tab. Here you'll find the **SHA-1 certificate fingerprint** Copy this key by clicking on the **Copy** Icon. 
+- In the **App Integrity** section, click the **App Signing** tab and copy the **SHA-1 certificate fingerprint** using the **Copy** icon.
+
     ![](../assets/20250430121440426479.png)
 
-    After completing the above steps, head over to the **Firebase console** and open the project settings of the same project.
+- Next, open the **Firebase console** and go to the project settings of the same project.
 
     ![](../assets/20250430121440906814.png)
 
-    Here, scroll down to the find **Your Apps** section. Select the **Android app** and click on **Add fingerprint** You'll need to paste the copied SHA-1 Fingerprint here and then hit **Save**
+    Scroll to the **Your Apps** section, select your **Android app**, and click **Add fingerprint**. Paste the SHA-1 fingerprint and click **Save**.
+
     ![](../assets/20250430121441325585.png)
 
-    After this, you'll need to Regenerate the config files from FlutterFlow. To do this, open your app in **FlutterFlow** and then click on **Settings** **&gt;** **Firebase**.
-    ![](../assets/20250430121441664549.png)
+- To update your configuration, open your app in **FlutterFlow**, go to **Settings → Firebase**, and click **Regenerate Config Files**, then click **Generate Files**.
 
-    Here, Click on the **Regenerate Config Files** button and then Click on **Generate Files.**
+    ![](../assets/20250430121441664549.png)
     ![](../assets/20250430121442125737.png)
 
-    This issue should now be resolved. You can now re-test to confirm that the issue has been fixed.
+This should resolve the issue. Re-test to confirm that Google Sign-In works as expected.
 
-2. **If you have not yet pushed to the play store or are self-signing your app**
+---
 
-    If you're not using Play Store App Signing or haven't deployed your app yet, follow the instructions in our documentation to use Keytool or Gradle's Signing Report to obtain your SHA-1.
+## 2. If You Have Not Yet Pushed to the Play Store or Are Self-Signing Your App
 
-    After manually generating the SHA-1 please make sure to update it in Firebase and then regenerate the config files in FlutterFlow using these instructions:
+If you're not using Play Store App Signing or haven't deployed yet, follow our documentation to use **Keytool** or **Gradle's Signing Report** to get your SHA-1.
 
-    Head over to the **Firebase console** and open the project settings of your project.
+Once you’ve generated the SHA-1:
+
+- Go to your **Firebase console** and open your project settings.
 
     ![](../assets/20250430121442525774.png)
 
-    Here, scroll down to the find **Your Apps** section. Select the **Android app** and click on **Add fingerprint** You'll need to paste the copied SHA-1 Fingerprint here and then hit **Save**
+- Scroll to the **Your Apps** section, select your **Android app**, and click **Add fingerprint**. Paste the SHA-1 and click **Save**.
+
     ![](../assets/20250430121442863891.png)
 
-    After this, you'll need to Regenerate the config files from FlutterFlow. To do this, open your app in **FlutterFlow** and then click on **Settings** **&gt;** **Firebase**.
+- In **FlutterFlow**, open your app and go to **Settings → Firebase**, then click **Regenerate Config Files** and **Generate Files**.
+
     ![](../assets/20250430121443139294.png)
-
-    Here, Click on the **Regenerate Config Files** button and then Click on **Generate Files**
     ![](../assets/20250430121443525154.png)
-   
 
-    This issue should now be resolved. You can now re-test to confirm that the issue has been fixed.​
+Google Sign-In should now work correctly. Re-test to confirm.
 
-    *You can also refer to the **Google Play Services** documentation for more information.*
+*For more information, refer to the [Google Play Services documentation](https://developers.google.com/android/guides/overview).*
+
+---
 
 :::tip[Add Your Debug SHA-1 for Local Google Sign-In]
-If you're testing Google Sign-In inside FlutterFlow or using the app before deploying to the Play Store, make sure to **add your debug SHA-1 fingerprint** to Firebase. Without this, authentication won't work during development.
+If you're testing Google Sign-In inside FlutterFlow or before deploying to the Play Store, be sure to **add your debug SHA-1 fingerprint** in Firebase. Without this, authentication will fail during development.
 
-After adding it, don't forget to **regenerate your Firebase config files in FlutterFlow** under `Settings → Firebase → Regenerate Config Files → Generate Files`.
+After adding it, don’t forget to **regenerate your Firebase config files** in FlutterFlow under  
+`Settings → Firebase → Regenerate Config Files → Generate Files`.
 :::

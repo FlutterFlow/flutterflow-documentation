@@ -22,6 +22,12 @@ Keep in mind that if the same user uses the same signup method to log in again, 
 :::
 
 
-![](../assets/20250430121301101693.png)Note: the action we do in Flutterflow is exactly the same action we can do manually to delete a user from the authentication table in Firebase.
+![](../assets/20250430121301101693.png)
+
+:::note
+
+The action we do in Flutterflow is exactly the same action we can do manually to delete a user from the authentication table in Firebase.
+
+:::
 
 ​
