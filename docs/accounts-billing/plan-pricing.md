@@ -20,7 +20,7 @@ For our most up-to-date information, please visit **[FlutterFlow pricing](https:
 Regional discounts are available, please **[log in to FlutterFlow](https://app.flutterflow.io/)** to see the pricing for your region.
 :::
 
-## Pricing Update [May 2025]
+## Pricing Update [June 2025]
 
 FlutterFlow has evolved significantly, from a visual builder to a complete development environment with features like code export, GitHub integration, branching, AI agents, and app deployment tools. As the platform has matured, so have the ways people use it. To better reflect how teams build and scale today, we're introducing updated pricing plans. These updates will help us continue improving the platform, supporting your workflows, and delivering the advanced features needed for building production-ready apps.
 
