@@ -311,10 +311,10 @@ To learn more or explore a custom Enterprise solution for your team, please reac
 Will my existing FlutterFlow apps stop working?
 </summary>
 <p>
-No, your current apps will continue to function and remain deployed, though access to certain features may change depending on your new plan tier starting August 20, 2025.
+No, your current apps will continue to function and remain deployed, though access to certain features may change depending on your new plan tier starting September 4, 2025.
 </p>
 <p>
-If you choose to elect into a new plan during the election period before August 20, 2025, those feature changes will take effect as soon as your new plan becomes active.
+If you choose to elect into a new plan during the election period before September 4, 2025, those feature changes will take effect as soon as your new plan becomes active.
 </p>
 </details>
 
@@ -323,14 +323,14 @@ If you choose to elect into a new plan during the election period before August 
 What happens to features I already use but are not part of my new plan?
 </summary>
 <p>
-Access to features will be updated according to your new plan beginning August 20, 2025. If you’re currently using a feature that is moving to a higher tier, there are two possible outcomes:
+Access to features will be updated according to your new plan beginning September 4, 2025. If you’re currently using a feature that is moving to a higher tier, there are two possible outcomes:
 </p>
 <ul>
   <li>
-    <strong>Build-time features</strong> (like audit logs, version pinning, or publishing new deployments) will no longer be accessible. You’ll see an upgrade prompt if you attempt to use them.
+    <strong>Build-time features</strong> (like audit logs, version pinning, or publishing new deployments) will no longer be accessible. You'll see an upgrade prompt if you attempt to use them.
   </li>
   <li>
-    <strong>Run-time features</strong> (like API endpoints, branching, GitHub integration, or dev environments) will be grandfathered and continue to work as-is, but you won’t be able to create additional instances beyond what you already have. For example:
+    <strong>Run-time features</strong> (like API endpoints, branching, GitHub integration, or dev environments) will be grandfathered and continue to work as-is, but you won't be able to create additional instances beyond what you already have. For example:
     <ul>
       <li>If you are currently building on a Free plan with 3 API endpoints, you can continue editing them, but won’t be able to add a 4th without upgrading to a paid plan.</li>
       <li>If you’ve used branching or added multiple development environments and currently exceed your new plan limits, those remain active but you’ll be prompted to upgrade if you try to add more.</li>
