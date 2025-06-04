@@ -346,27 +346,11 @@ This approach ensures existing work isn’t disrupted, while still aligning futu
 
 <details>
 <summary>
-I’m currently a Free user – what’s changing with the new Free plan?
-</summary>
-<p>
-Over time, we’ve offered Free users access to an expansive set of features that were originally built to support complex, production-grade development at scale. That said, we are now realigning the new Free plan to better support what it’s truly meant for: exploring FlutterFlow and getting hands-on experience with our core platform.
-</p>
-
-<ul>
-<li>You’ll still have access to the main visual builder and back-end integrations – everything you need to explore FlutterFlow and start prototyping real ideas.</li>
-<li>However, certain premium features that were previously available on Free, including multi-project capabilities, debug panel, push notifications, payments and ads integrations, snapshot backups, and access to technical support, will now be a part of paid tiers. For a detailed list of changes, please refer to our Pricing Comparison Table.</li>
-</ul>
-
-If you’re actively building and deploying apps, we encourage you to check out our new Individual plan. It’s been purpose-built for solo developers and includes the full power to build and launch complex applications at an affordable entry price.
-</details>
-
-
-<details>
-<summary>
 I am a Free user and I will lose access to technical support. Where else can I look to for help when building?
 </summary>
 <p>
 While 1:1 technical support will no longer be included with the Free plan, we offer a collection of self-serve resources to help you continue building with confidence:
+Starting August 4, 2025 for new users and September 4, 2025 for existing users, 1:1 support will no longer be included with the Free plan. However, we offer a collection of self-serve resources to help you continue building with confidence:
 </p>
 <ul>
   <li>
@@ -389,20 +373,17 @@ Our Support team will still be available at <a href="mailto:support@flutterflow.
 
 <details>
 <summary>
-I have more than 2 projects on Free – what will happen to them?
+I am a Free user and have more than 2 projects – what will happen to them?
 </summary>
 <p>
-Between July 21, 2025 and August 20, 2025, if you’re on the Free plan and have more than two personal projects, you’ll have the opportunity to select which two projects you want to keep editable. All other projects will be archived – they’ll still appear on your dashboard, and live apps will remain live, but you won’t be able to open, edit, or publish updates unless you upgrade.
+Starting September 4, 2025, all personal Free plan projects will be archived until you actively select two to keep editable. This selection is lifetime and cannot be changed afterwards. All other projects will be archived – they’ll still appear on your dashboard, and live apps will remain live, but you won’t be able to open, edit, or publish updates unless you upgrade.
 </p>
 <p>
-If you don’t make a selection by August 20, 2025, we’ll automatically set your two most recently edited projects as editable, and archive the rest. You will still be able to update this selection once after that date.
+For users on a team-based plan but not on a personal paid plan, this 2-project selection requirement only applies to your personal projects. You will still be able to edit any projects that belong to your team.
 </p>
 <ul>
-  <li>However, whether you choose before or after August 20, your project selection is lifetime-limited to two projects per account. Once used, you will not be able to swap again (even if you later upgrade and return to Free).</li>
+  <li>Marketplace exception: Existing Free plan projects published to the Marketplace prior to August 4, 2025 will not count toward your 2-project limit. If a project is later removed from Marketplace and you exceed the limit, it will be automatically archived.</li>
 </ul>
-<p>
-For users on a Teams plan (but not on a personal paid plan), this change only applies to your personal projects. You will still be able to edit any projects that belong to your team.
-</p>
 <p>
 We’ve set this policy to ensure everyone can explore FlutterFlow for free while keeping heavy usage sustainable. We won’t remove any of your existing projects. They’re safe and accessible whenever you decide to upgrade.
 </p>
