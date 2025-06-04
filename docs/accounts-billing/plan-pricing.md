@@ -632,6 +632,7 @@ All INR pricing reflects the same features and plan structures as USD pricing, w
 </details>
 
 ### Miscellaneous
+
 <details>
 <summary>
 I have special access. How will this change impact me?
@@ -649,7 +650,7 @@ Will the referral program still exist with the new plans, now that the Pro plan 
 With the retirement of the Pro plan, our current referral program will also be sunset. This means any active referral discounts will end at your next renewal. However, any earned referral credits will remain in your account and can be redeemed for equivalent free months of the new Individual plan.
 </p>
 <p>
-We’re evaluating what a future referral or incentive program could look like under the new pricing structure and would best support our community moving forward.
+We’re actively exploring what a future referral or incentive program could look like under the new pricing model, with the goal of better supporting and rewarding our community as we grow.
 </p>
 </details>
 
@@ -658,6 +659,6 @@ We’re evaluating what a future referral or incentive program could look like u
 Are there any changes to DreamFlow plans as well?
 </summary>
 <p>
-DreamFlow is a separate product, and DreamFlow plans are not affected with this plan update.
+DreamFlow is a separate product and DreamFlow plans are not affected with this plan update.
 </p>
 </details>
