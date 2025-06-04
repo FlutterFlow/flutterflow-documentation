@@ -587,7 +587,7 @@ To ensure a smooth transition, billing changes will align with your existing bil
   <li>You will have the option to upgrade early to the new pricing plan if you choose, with any remaining credit from your current plan applied toward the new plan.</li>
 </ul>
 <p>
-If you are currently on an annual plan and choose to cancel your subscription during the transition period (August 4, 2025 - September 4, 2025), you will be eligible for a pro-rated refund. This is to account for any features you may have prepaid for under your current plan that will no longer be available once the new plans take effect.
+If you are currently on an annual plan and choose to cancel your subscription during the transition period (August 4, 2025 - September 4, 2025), you will be eligible for a prorated refund. This is to account for any features you may have prepaid for under your current plan that will no longer be available once the new plans take effect.
 </p>
 </details>
 
