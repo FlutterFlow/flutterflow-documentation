@@ -1,0 +1,109 @@
+---
+description: Follow these rules when using the MCP tools to work with Flutterflow Projects
+globs: 
+alwaysApply: false
+---
+## Flutterflow Project Rules
+
+### 1. Project Structure
+
+- **Purpose:** Each Flutterflow project represents a single application (mobile or web).
+
+### 2. Pages and Components
+
+- **Widget Trees:**  
+  - Every page and component has its own widget tree.
+  - Each widget in the tree is represented as a node, and each node has its own file.
+
+### 3. Updating the Project
+
+- **General Update Process:**  
+  - Always update the Flutterflow project files when making changes.
+  - Use the `file_key_to_content` format:  
+    - **Key:** Path of the file (without extension).
+    - **Value:** String content of the entire file.
+
+- **Widget Tree Outline:**  
+  - When adding or removing a widget from a page or component, you must update the `widget-tree-outline.yaml`.
+  - The outline should always use a `children` field, even if there is only one child.
+  - Only information on the children's node key can be included. Information about the node itself must be in its own separate file.
+
+- **Page Addition:**
+  - When adding a new page, add a `page/id-Scaffold_<newId>.yaml`, the `page/id-Scaffold_<newId>/page-widget-tree-outline.yaml`, the root node `page/id-Scaffold_<newId>/page-widget-tree-outline/node/id-Scaffold_<newId>.yaml`, and the other nodes
+
+- **Component Addition:**
+  - When adding a new component, add a `component/id-Container_<newId>.yaml`, the `page/id-Container_<newId>/component-widget-tree-outline.yaml`, the root node `component/id-Container_<newId>/component-widget-tree-outline/node/id-Container_<newId>.yaml`, and the other nodes
+
+- **Widget Addition/Removal:**  
+  - Add or remove at most one widget at a time.
+  - Do **not** add children directly to node files.
+
+- ***Replace Widget with Component:**
+  - Add a new node file, which references the component:
+```
+key: Container_<new_node_id>
+type: Container
+parameterValues:
+  widgetClassNodeKeyRef:
+    key: Container_<component_id>
+componentClassKeyRef: 
+  key: Container_<component_id>
+```
+  - Replace the old widget's reference in the widget tree
+
+### 4. Allowed Node Types
+
+- **Page Type**: The page's root node type MUST be Scaffold
+- **Component Type**: The component's root node type MUST be Container
+
+- **Only the following node types are allowed in the project, as descendents of root nodes:**
+
+  Container,
+  Text,
+  Row, 
+  Column,
+  Card,
+  ListView,
+  Image,
+  Icon,
+  Button,
+  Padding,
+  Scaffold,
+  Stack,
+  TextField,
+  Spacer,
+  Divider,
+  TabBar,
+  Tab,
+  AppBar,
+  DropDown,
+  RadioButton,
+  Slider,
+  RatingBar,
+  Blur,
+  Expandable,
+  Wrap,
+  ProgressBar,
+  LanguageSelector,
+  CheckboxGroup,
+  Badge,
+  StaggeredView,
+  Signature,
+  Chart,
+  Timer,
+  Checkbox,
+  Barcode,
+  VerticalDivider,
+  RichText,
+  RichTextSpan,
+  Tooltip,
+  ConditionalBuilder,
+  StickyHeader,
+  Carousel,
+  Markdown,
+  Draggable,
+  DragTarget,
+  TextEditor,
+  Flex
+
+- **No other node types are permitted.**
