@@ -409,55 +409,6 @@ If you only had 2 projects total and delete one, you’ll be able to create a ne
 </p>
 </details>
 
-### Individual Users (former Standard/Pro)
-
-<details>
-<summary>
-I’m on Standard – what’s changing with the new Individual plan?
-</summary>
-<p>
-The new Individual plan priced at $39/month is a $9 increase from your current Standard plan but it delivers significantly more value and power for solo developers.
-</p>
-<p>
-This change is based on feedback we’ve heard consistently: the previous Standard plan didn’t give individual users enough capability to build and ship full-featured apps on their own.
-</p>
-<p>
-You’ll now get access to:
-</p>
-<ul>
-  <li>Unlimited API endpoints</li>
-  <li>One-click app store deployment</li>
-  <li>Ability to publish libraries</li>
-  <li>One free custom domain</li>
-</ul>
-</details>
-
-<details>
-<summary>
-I’m on Pro – what’s changing with the new Individual plan?
-</summary>
-<p>
-The new Individual plan will cost less ($39 instead of $70) and still includes all the core solo-development features you had: unlimited projects, unlimited API endpoints, code/APK download, push notifications, payments/ads integrations, etc.
-</p>
-<p>
-However, some advanced collaboration and localization features that were part of Pro are moving to higher tiers. Specifically:
-</p>
-<ul>
-  <li>GitHub integration</li>
-  <li>One-click localization</li>
-  <li>Team commenting</li>
-  <li>Unlimited automated tests</li>
-  <li>Snapshot backups</li>
-  <li>Multiple development environments</li>
-</ul>
-<p>
-These will no longer be included on Individual. If you rely on these for your workflow, consider the Growth plan (which supports two collaborators and includes GitHub integration, localization, etc.).
-</p>
-<p>
-The good news is that if you don’t need those team-oriented tools, the Individual plan gives you the same power to build and deploy apps – at nearly half the price of Pro. We want to make sure you’re on the plan that fits your needs best.
-</p>
-</details>
-
 ### Teams (Growth/Business)
 
 <details>
@@ -465,18 +416,30 @@ The good news is that if you don’t need those team-oriented tools, the Individ
 What happens to projects with multiple collaborators?
 </summary>
 <p>
-Starting August 20, 2025, all project collaboration must occur within a team (Growth or Business). This means:
+Starting September 4, 2025, all project collaboration must occur within a team (Growth or Business). This means:
 </p>
 <ul>
-  <li><strong>Team projects:</strong> Everyone on your team keeps full edit access. Any project collaborator not on your team switches to view-only until they’re added as a paid team member.</li>
-  <li><strong>Projects not associated with a team:</strong> The project owner keeps full edit access and all other project collaborators become view-only members on that project. To keep editing together, move the project into a team and invite those collaborators as team members.</li>
+  <li><strong>Team projects.</strong> Everyone on your team keeps full edit access. Any project collaborator who is not a paid seat on your team will be switched to view-only access at the project level until they’re added as a paid team member.</li>
+  <li><strong>Projects not associated with a team.</strong> The project owner keeps full edit access and all other project collaborators become view-only members on that project. To keep editing together, move the project into a team and invite those collaborators as team members.</li>
   <li><strong>Solo projects:</strong> If you are the only editor, nothing changes. You retain full edit access.</li>
 </ul>
 <p>
 If you plan to continue collaborating with users outside your organization, we recommend purchasing separate team plans per organization to maintain separation between projects and collaborators.
 </p>
+<ul>
+<li>If you are developing for multiple clients, consider <a href="https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency">applying</a> to become a FlutterFlow Expert Agency if you haven’t already. Approved agencies may qualify for the Agencies Expansion add-on on the Business plan, which allows continued project-based collaboration with paid external users outside of your team.</li>
+</ul>
 <p>
-Note: If you choose to migrate to a new paid plan before August 20, 2025, any collaborators not on your team will immediately move to view-only access at the time of conversion.
+Note: If you choose to migrate to a new paid plan before September 4, 2025, any collaborators not on your team will immediately move to view-only access at the time of conversion.
+</p>
+</details>
+
+<details>
+<summary>
+I’m currently on a Teams plan and want to change the number of users. Can I still do this on or after August 4, 2025?
+</summary>
+<p>
+No. As a part of the existing Teams plan retirement, team size will be locked on August 4, 2025. To adjust your team size after that date, please transition to one of the new plans (Growth or Business).
 </p>
 </details>
 
@@ -485,17 +448,17 @@ Note: If you choose to migrate to a new paid plan before August 20, 2025, any co
 I am currently on a Teams plan with 6+ users and do not want to migrate to the Enterprise plan – how do I stay on the Business tier and how will I be charged?
 </summary>
 <p>
-Teams with more than 5 users who do not wish to move yet to an Enterprise contract will be priced based on bundles of 5 seats under the Business tier based on the number of users in their Team as of August 20, 2025. For example:
+Teams with more than 5 users who do not wish to move yet to an Enterprise contract will be priced in bundles of 5 seats under the Business tier, based on the number of users in their team as of September 4, 2025 and billed on a monthly basis. For example:
 </p>
 <ul>
-  <li>A team with 6–10 users will be charged $500 × 2 = $1,000/month</li>
-  <li>A team with 11–15 users will be charged $500 × 3 = $1,500/month</li>
+  <li>A team with 6-10 users will be charged $495 x 2 = $990/month</li>
+  <li>A team with 11-15 users will be charged $495 x 3 = $1,485/month</li>
 </ul>
 <p>
-This option allows larger retail teams to continue operating under the Business feature set without immediate contract negotiation but will be available only to existing 6+ seat teams for 12 months to ensure continuity without immediate contract negotiation.
+This option allows larger retail teams to continue operating under the Business feature set without immediate contract negotiation but will be available only to existing 6+ seat teams for 12 months from September 4, 2025 through September 4, 2026 to ensure continuity without immediate contract negotiation.
 </p>
 <p>
-Note: Your seat count will be locked based on your team size as of August 20, 2025. You may reduce seats later, but will not be able to add more or expand beyond the feature set and usage limits of the current Business tier (except for any run-time features already in use that are grandfathered).
+Note: Your seat count will be locked based on your team size as of September 4, 2025. You may reduce seats later, but will not be able to add more or expand beyond the feature set and usage limits of the current Business tier (except for any run-time features already in use that are grandfathered).
 </p>
 <p>
 However, if you would like to maintain a single account, collaboration across all of your team members, enterprise level features and support, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a>.
@@ -507,12 +470,14 @@ However, if you would like to maintain a single account, collaboration across al
 Can I belong to multiple teams? How will that be billed?
 </summary>
 <p>
-Yes, users can now belong to multiple teams in FlutterFlow – this is a new capability as part of our updated team and collaboration structure. Each team is treated as a separate billing entity, with its own plan, users, and usage limits.
+Yes, users will be able to belong to multiple teams in FlutterFlow in the new plans – this is a new capability as part of our updated team and collaboration structure. Each team is treated as a separate billing entity, with its own plan, users, and usage limits.
 </p>
 <p>
 If you are added as an editor on more than one team, you will count toward the seat total on each of those teams, and each team will manage your seat and billing as part of their own subscription. You will not be billed individually – all billing remains centralized at the team level.
 </p>
-
+<p>
+Note: you can also be added as a view-only collaborator on projects that are a part of different teams. View-only collaborators do not count toward any seat limits or billing.
+</p>
 </details>
 
 <details>
@@ -520,10 +485,10 @@ If you are added as an editor on more than one team, you will count toward the s
 Can I share projects across multiple teams?
 </summary>
 <p>
-No, projects cannot be shared across multiple teams. Each project belongs to a single team, and access is managed within that team’s structure.
+No, projects cannot be shared across multiple teams. Each project belongs to at most one team, and access is managed within that team’s structure.
 </p>
 <p>
-If you want someone from another team to collaborate on a project, they must be invited into your team and assigned a role (e.g., editor or viewer). They will then count toward your team’s seat usage and billing.
+If you want someone from another team to collaborate on a project, they must be invited into your team as an editor. They will then count toward your team’s seat usage and billing.
 </p>
 <p>
 This approach ensures consistent permissions, secure collaboration, and clean billing across organizations.
@@ -535,10 +500,10 @@ This approach ensures consistent permissions, secure collaboration, and clean bi
 What if I want to continue collaborating with project collaborators who are not on a Teams plan with me?
 </summary>
 <p>
-With the new pricing model, collaboration is only supported within shared Teams plans. This means that to work together on a project, all collaborators must be part of the same Growth, Business, or Enterprise team.
+With the new pricing model, collaboration is only supported within shared Teams plans. This means that to work together on a project, all collaborators must be part of the same Growth, Business, or Enterprise team. However, users can now be members of multiple teams at the same time, which allows you to create separate teams for different projects, depending on who you need to collaborate with.
 </p>
 <p>
-However, users can now be members of multiple teams at the same time, which allows you to create separate teams for different projects, depending on who you need to collaborate with.
+Project-level collaboration (where individuals outside your team could be added to specific projects) is being phased out to simplify permissions, ensure security, and support shared billing.
 </p>
 <p>
 Project-level collaboration (where individuals outside your team could be added to specific projects) is being phased out to simplify permissions, ensure security, and support shared billing.
@@ -558,7 +523,7 @@ This change ensures that every project has clear ownership, consistent permissio
 I build apps for clients (agency/freelancer). What plan should I choose?
 </summary>
 <p>
-We now offer multiple plan options to support agencies of all sizes – whether you’re a solo freelancer, a fast-growing studio, or an established consultancy. We believe the best path depends on your team size and how you prefer to work with your clients:
+We will now offer multiple plan options to support agencies of all sizes – whether you’re a solo freelancer, a fast-growing studio, or an established consultancy. We believe the best path depends on your team size and how you prefer to work with your clients:
 </p>
 <ul>
   <li>
@@ -573,26 +538,36 @@ We now offer multiple plan options to support agencies of all sizes – whether 
     <strong>Agencies with more than 5 developers:</strong>
     <ul>
       <li>
-        If your client plans to manage the code, we recommend encouraging your client to purchase their own Enterprise plan and inviting your agency developers as Team members on the plan. To learn more about our Enterprise offering, they can reach out to
-            <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a>.
+        If your client plans to manage the code:
+        <ul>
+          <li>We recommend encouraging your client to purchase their own Enterprise plan and inviting your agency developers as Team members on the plan. To learn more about our Enterprise offering, they can reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a>.</li>
+        </ul>
       </li>
       <li>
-        If you intend to maintain the code on behalf of your client, we recommend exploring our new Application-Specific Usage (ASU) licensing model, designed for agencies managing multiple clients.
-            This offering includes MSP volume discount pricing (VDP) and is custom tailored to your multi-client business.
-            To learn more and see if you qualify, please reach out to
-            <a href="mailto:partners@flutterflow.io">partners@flutterflow.io</a>.
+        If you intend to maintain the code on behalf of your client:
+        <ul>
+          <li>
+            If your agency has under 13 developers, you may qualify for our new Agencies Expansion package coming out with the Business plan, available to FlutterFlow Expert Agencies.
+            <ul>
+              <li>As part of the add-on, you can:</li>
+              <ul>
+                <li>Purchase up to 7 additional seats beyond the 5 included in Business at $65/seat/month (12 seats total per team).</li>
+                <li>Invite individual paid users to specific projects without requiring them to be team members.</li>
+              </ul>
+              <li>To become eligible, you can apply to be an Expert Agency through our <a href="https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency">Contra page</a>. Existing Expert Agencies listed on Contra will be pre-approved to select the Agencies Expansion package starting August 4, 2025, regardless of team size.</li>
+            </ul>
+          </li>
+          <li>
+            For larger agencies with more than 12 developers and managing multiple enterprise-level clients, we recommend exploring our new Application-Specific Usage (ASU) licensing model. This offering is custom tailored to your multi-client business with Enterprise features, Managed Service Provider (MSP) volume discounts, and potential for co-marketing opportunities. To learn more and see if you qualify, please reach out to
+            <a href="mailto:mspartners@flutterflow.io">mspartners@flutterflow.io</a>.
+          </li>
+        </ul>
       </li>
     </ul>
   </li>
 </ul>
-<p>
-If you need training, consider becoming a
-<a href="https://contra.com/opportunity/sZsPE2BQ-become-flutter-flow-certified">FlutterFlow Certified</a>
-Expert Agency as part of our Experts program.
-For more information, check out our page on
-<a href="https://contra.com/flutterflow">Contra</a>.
-</p>
 </details>
+
 
 ### Billing
 
