@@ -10,7 +10,7 @@ keywords: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
 # Deep & Dynamic Linking
 
 :::danger[Support for Dynamic Links]
-On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#deep-links-with-branchio) for link management and deep linking.
+On August 25th, 2025, Firebase Dynamic Links will be shut down. Read more about the [**announcement here**](https://firebase.google.com/support/dynamic-links-faq). It's recommended to start exploring alternative solutions like [**Branch.io**](#branch-deeplinking-library) for link management and deep linking.
 :::
 
 Adding deep and dynamic linking allows you to share a special type of link that takes the user right
@@ -752,9 +752,35 @@ Here’s a quick demo to show how to configure those values inside your library 
 
 <p></p>
 
-**Initialize the Branch SDK**
+#### Initialize the Branch SDK
 
 Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action under the **Final Actions** section. This ensures the **Branch SDK** is initialized when your app launches.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/sAGP2IBXMbHMPP4rXRaQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 
 
 ### Handle Branch Deeplink [Custom Action]
@@ -805,7 +831,7 @@ The `handleBranchDeeplink` action receives a `linkData` object that contains all
 
 - **`page`:** The target page or screen the link is meant to open (e.g., paywall). This is a custom parameter set by the user when generating the link.
 
-- Any custom parameters added during link creation (e.g., `campaign`, `productId`, `referrer`, etc.)
+- Any custom parameters added during link creation (e.g., `campaign`, `productId`, `referrer`, etc.). Ensure the key and value is both `String` and `String`.
 
 This lets you write flexible, conditional navigation logic based on what was shared.
 
@@ -838,7 +864,10 @@ This lets you write flexible, conditional navigation logic based on what was sha
 
 <p></p>
 
-
+:::tip
+Keep **"Allow Navigate Back"** checked when navigating from the Home Page to ensure it stays in the stack. This is applicable to any navigation from the Home Page, not limited to deeplinking navigation logic. 
+This allows the user to return to the Home Page at any time and ensures that deep link logic defined there continues to work.
+:::
 
 
 Use the link data from this callback to:
@@ -847,11 +876,11 @@ Use the link data from this callback to:
 - Load content from Firestore using a referenced ID.
 
 
+
+
 :::danger[Testing Deeplinks]
-It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators.
+It’s recommended to test deep links on a **physical device**, as link verification (especially for Universal Links or App Links) may not consistently work on emulators or simulators. We recommend using **[Local Run](../../testing-deployment-publishing/running-your-app/local-run.md)** to run your apps on physical devices.
 :::
-
-
 
 
 ### Generate Link [Custom Action]
@@ -873,10 +902,16 @@ The action accepts the following parameters:
 - **`description`** – (Optional) A short description of the content.
 
 - **`metadata`** – A dynamic map of custom parameters to include with the link
-(e.g., page: "imageDetails", imageRef: "abc123", etc.)
+(e.g., page: "imageDetails", imageRef: "abc123", etc.) 
 
 - **`linkProperties`** – A dynamic map for configuring how the link behaves
 (e.g., set the `feature`, `channel`, `campaign`, or `stage` for analytics).
+
+:::warning[JSON maps]
+Due to a limitation, if you plan to leave map-type variables (like `metadata` or `linkProperties`) empty, you must still pass them as **empty maps**, not `null`.  
+Ensure all keys and values are **plain strings**, avoid nested JSON or non-string types.  
+Incorrect structure may cause the Link Generation action to fail silently.
+:::
 
 ### Branch Helper Functions
 
@@ -965,3 +1000,45 @@ Now in your `handleBranchDeeplink` action callback, add the additional logic to 
 </div>
 
 
+### FAQs
+
+<details>
+<summary>Why isn't my deep link working when I navigate to another page from the home page?</summary>
+
+It's likely because you're navigating in a way that removes the Home Page from the stack for example, disabling "**Allow Navigate Back**" in the Navigate Actions.
+
+Since the deep link handler is defined on the Home Page, it gets disposed and can’t respond when a deep link is triggered.
+
+✅ Solution:
+
+Keep the Home Page in the stack by enabling "**Allow Navigate Back**" on any navigation actions from your home page (not limited to navigation logic in onLinkOpened action callback).
+
+This ensures the Home Page stays active and can continue handling deep links.
+
+</details>
+
+<details>
+<summary> Why is my Branch link generation failing?</summary>
+
+This often happens because one or more of the inputs passed to the action (like `metadata` or `linkProperties` or `customParams` when using `createLinkProperties` helper function) contains invalid JSON formatting.
+
+Branch expects these values to be passed as a map of plain `String` key-value pairs, not as nested JSON, objects, or dynamic types.
+
+Ensure both **Key and Value's expected type** is `String` and `String` and try again.
+</details>
+
+<details>
+<summary> Why isn’t deep linking working when testing from a simulator? </summary>
+
+Deep linking, especially Universal Links and deferred deep linking may not work reliably on iOS or Android simulators/emulators due to platform limitations.
+
+Simulator Limitations:
+- **iOS:** Simulators cannot verify Universal Links properly (no App Store, limited AASA domain support).
+
+- **Android:** Some versions fail to auto-verify App Links or handle deferred deep links without Play Services.
+
+✅ Recommended:
+
+Always test deep linking on a physical device for accurate behavior.
+
+</details>
