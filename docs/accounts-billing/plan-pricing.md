@@ -349,7 +349,6 @@ This approach ensures existing work isn’t disrupted, while still aligning futu
 I am a Free user and I will lose access to technical support. Where else can I look to for help when building?
 </summary>
 <p>
-While 1:1 technical support will no longer be included with the Free plan, we offer a collection of self-serve resources to help you continue building with confidence:
 Starting August 4, 2025 for new users and September 4, 2025 for existing users, 1:1 support will no longer be included with the Free plan. However, we offer a collection of self-serve resources to help you continue building with confidence:
 </p>
 <ul>
