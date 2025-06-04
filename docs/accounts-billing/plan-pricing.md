@@ -579,29 +579,12 @@ How will my billing cycle be affected when I move to the new plan?
 To ensure a smooth transition, billing changes will align with your existing billing cycle:
 </p>
 <ul>
-  <li>
-    <strong>If you are on a monthly plan</strong>, you will continue at your current pricing until your next <em>monthly</em> renewal.
-        For example, if your billing date is August 19, 2025, you will renew at your current price,
-        and your plan features will switch to the new plan on August 20, 2025.
-        Your new pricing will begin at your next billing cycle on September 19, 2025.
-  </li>
-  <li>
-    <strong>If you are on an annual plan:</strong>
-    <ul>
-      <li>
-        You will continue at your current annual pricing until your next <em>annual</em> renewal date.
-        Starting August 20, 2025, your plan will switch to the new plan structure and features,
-        but your billing will not change until your next annual renewal.
-      </li>
-      <li>
-        When your plan renews, it will automatically update to the new plan pricing for the next 12 months.
-      </li>
-    </ul>
-  </li>
-  <li>
-    You will have the option to upgrade early to the new pricing plan if you choose,
-    with any remaining credit from your current plan applied toward the new plan.
-  </li>
+  <li>You will stay on your current pricing until your next billing renewal (monthly or annual). For example:</li>
+  <ul>
+    <li>If your monthly billing date is September 3, 2025, your features will switch to the new plan on September 4, 2025 (or earlier if you elect to switch), but new pricing will apply starting your next billing cycle on October 3, 2025.</li>
+    <li>If you’re on an annual plan, your price won’t change until your next annual renewal. After that, the new pricing will apply for the following 12 months.</li>
+  </ul>
+  <li>You will have the option to upgrade early to the new pricing plan if you choose, with any remaining credit from your current plan applied toward the new plan.</li>
 </ul>
 <p>
 If you have questions about your billing, please contact support at
@@ -611,11 +594,22 @@ If you have questions about your billing, please contact support at
 
 <details>
 <summary>
+Will there still be a discount for paying annually on the new plans?
+</summary>
+<p>
+Yes, we will continue offering a meaningful discount on all new plans when billed annually instead of monthly – typically around 25%. This discount remains available regardless of your location or currency and reflects 12 months of service at a reduced monthly rate.
+</p>
+<p>
+<em>Note: The Business plan bundled pricing is only available on a monthly billing basis, as it is designed to support current users through their transition period.</em>
+</p>
+</details>
+
+<details>
+<summary>
 How will prices change with respect to country discounts?
 </summary>
 <p>
-Localized pricing will continue where applicable.
-If you’re in a supported region, your billing will reflect adjusted rates at existing discounts based on your location.
+Localized pricing will continue where applicable. If you’re in a supported region, your billing will reflect adjusted rates at existing discounts based on your location.
 </p>
 </details>
 
@@ -630,10 +624,10 @@ If your account is billed in INR, your pricing will follow our localized rates:
   <li>Individual Plan: ₹1,300 INR per seat per month, or ₹11,700 INR per seat billed annually.</li>
   <li>Growth Plan: ₹4,500 INR per team per month, or ₹40,500 INR per team billed annually.</li>
   <li>Business Plan: ₹16,500 INR per team per month, or ₹148,500 INR per team billed annually.</li>
+  <ul><li>Agencies Expansion: ₹2,800 INR per seat per month.</li></ul>
 </ul>
 <p>
-All INR pricing reflects the same features and plan structures as USD pricing,
-with adjustments for local purchasing power.
+All INR pricing reflects the same features and plan structures as USD pricing, with adjustments for local purchasing power.
 </p>
 </details>
 
