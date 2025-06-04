@@ -16,6 +16,16 @@
   font-size: 14px;
 }
 
+/* Light mode hint color */
+[data-theme='light'] .mobile-scroll-hint {
+  color: #666;
+}
+
+/* Dark mode hint color */
+[data-theme='dark'] .mobile-scroll-hint {
+  color: #a0a0a0;
+}
+
 /* Simplified pricing table styles */
 .simplified-pricing-table {
   width: 100%;
@@ -35,9 +45,33 @@
   vertical-align: top;
 }
 
+/* Light mode table borders */
+[data-theme='light'] .simplified-pricing-table th,
+[data-theme='light'] .simplified-pricing-table td {
+  border-bottom: 1px solid #ebeaf0;
+}
+
+/* Dark mode table borders */
+[data-theme='dark'] .simplified-pricing-table th,
+[data-theme='dark'] .simplified-pricing-table td {
+  border-bottom: 1px solid #404040;
+}
+
 .simplified-pricing-table th {
   background-color: #f5f5f5;
   font-weight: 600;
+}
+
+/* Light mode header background */
+[data-theme='light'] .simplified-pricing-table th {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* Dark mode header background */
+[data-theme='dark'] .simplified-pricing-table th {
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 
 .whats-changing-col {
@@ -49,6 +83,18 @@
   font-weight: 600;
 }
 
+/* Light mode section header */
+[data-theme='light'] .section-header {
+  background-color: #e8e8ff !important;
+  color: #000;
+}
+
+/* Dark mode section header */
+[data-theme='dark'] .section-header {
+  background-color: #3a3a5c !important;
+  color: #ffffff;
+}
+
 .section-header td {
   padding: 0.75rem 1rem;
   text-align: left;
@@ -56,6 +102,18 @@
 
 .simplified-pricing-table tbody tr:not(.section-header) {
   background-color: #ffffff;
+}
+
+/* Light mode row background */
+[data-theme='light'] .simplified-pricing-table tbody tr:not(.section-header) {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Dark mode row background */
+[data-theme='dark'] .simplified-pricing-table tbody tr:not(.section-header) {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 .feature-list {
@@ -80,12 +138,22 @@
   display: inline-block;
 }
 
+/* Dark mode price up color (slightly lighter red for better contrast) */
+[data-theme='dark'] .price-up {
+  color: #ff6b6b;
+}
+
 .price-down {
   color: #2b8a3e;
   font-weight: bold;
   margin-left: 0.3rem;
   white-space: nowrap;
   display: inline-block;
+}
+
+/* Dark mode price down color (slightly lighter green for better contrast) */
+[data-theme='dark'] .price-down {
+  color: #51cf66;
 }
 
 @media (max-width: 768px) {
