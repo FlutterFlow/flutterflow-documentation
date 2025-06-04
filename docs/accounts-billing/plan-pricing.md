@@ -8,6 +8,7 @@ hide_table_of_contents: true
 ---
 
 import Head from '@docusaurus/Head';
+import ThemedImage from '@theme/ThemedImage';
 
 <Head>
   <link rel="stylesheet" href="/css/table_style.css" />
@@ -177,7 +178,16 @@ When does the new pricing take effect for me?
 - For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a 30-day transition period where you will have the ability to elect into a new plan. On August 20, 2025, your account will be moved to one of the new plans if no action is taken.
 - **Note:** All plan updates will take effect at 12:00 AM local time on the specified effective date.
 
-![pricing-update-img](imgs/pricing-update-img.png)
+<div style={{maxWidth: '800px', margin: '0 auto'}}>
+  <ThemedImage
+    alt="Pricing Update Timeline - 2025"
+    sources={{
+      light: require('./imgs/pricing-timeline-2025-light.png').default,
+      dark: require('./imgs/pricing-timeline-2025-dark.png').default,
+    }}
+  />
+</div>
+
 </p>
 </details>
 
