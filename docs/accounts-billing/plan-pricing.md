@@ -43,6 +43,8 @@ The prices listed below are base rates. Regional pricing will continue to apply 
 
 Below are the details on all the changes, so you'll know exactly what to expect:
 
+<a id="detailed-plan-changes"></a>
+
 <div class="pricing-table-container">
   <div class="mobile-scroll-hint">Scroll to see all plan details →</div>
   
@@ -193,6 +195,7 @@ Now our plans are evolving to reflect that growth. We’ve introduced new featur
 </details>
 
 ### Plans
+
 <details>
 <summary>
 How do the new plans differ from the current plans?
@@ -209,7 +212,7 @@ The new plans introduce pricing by team size and more structured feature access 
   <li>Revised pricing structure, with updated USD and INR rates.</li>
 </ul>
 <p>
-For a detailed comparison of the current and new plans, including feature breakdown and pricing, please see our Pricing Comparison Table.
+For a detailed comparison of the current and new plans, including feature breakdown and pricing, please see the [Detailed Plan Changes](#detailed-plan-changes) table above.
 </p>
 </details>
 
@@ -220,19 +223,19 @@ Which plan is best suited for different types of users?
 <p>We recommend:</p>
 <ul>
   <li><strong>Free:</strong> App builders learning and prototyping.</li>
-  <li><strong>Individual:</strong> Solo builders shipping real apps.</li>
-  <li><strong>Growth:</strong> Two-person teams launching production apps.</li>
-  <li><strong>Business:</strong> Growing teams (3–5 users) with advanced workflows.</li>
+  <li><strong>Individual:</strong> Solo developers shipping real apps.</li>
+  <li><strong>Growth:</strong> Solo developers or small teams needing advanced functionality.</li>
+  <li><strong>Business:</strong> Established teams (3–5 users) ready for advanced development workflows.</li>
   <li><strong>Enterprise:</strong> Larger teams needing advanced security, governance, and collaboration features.</li>
 </ul>
 </details>
 
 <details>
 <summary>
-How do I know which plan I will be moved to if I do not make a selection before August 20, 2025?
+How do I know which plan I will be moved to if I do not make a selection before September 4, 2025?
 </summary>
 <p>
-If you do not make a selection during the election period (July 21, 2025 – August 20, 2025), your new plan will be automatically determined based on your current <strong>team size</strong>. For example:
+If you do not make a selection during the election period (August 4, 2025 - September 4, 2025), your new plan will be automatically determined based on your current <strong>team size</strong>. For example:
 </p>
 <ul>
   <li>Users on the Free plan will remain in the Free plan, but with new feature restrictions.</li>
@@ -241,12 +244,13 @@ If you do not make a selection during the election period (July 21, 2025 – Aug
   <li>Teams of 3–5 will move to the <strong>Business</strong> plan.</li>
   <li>Teams with 6+ users will move to the <strong>Business</strong> plan and priced in bundles of 5 seats as one team. You will be able to remain on this price for up to 12 months, after which you will need to upgrade to an Enterprise plan to continue.</li>
   <ul><li>We highly encourage you to begin evaluating your team’s resourcing and expansion needs early, as the bundled Business plan will not support usage growth beyond the feature limits of the tier. Early planning and engaging with our sales team can help ensure a smooth migration, avoid disruption, and prevent any risk of project or data access issues at the 12-month cut-off. To start the conversation, please reach out to <a href="mailto:sales@flutterflow.io">sales@flutterflow.io</a> to explore the best solution package for your team.</li></ul>
+  <li>Expert Agencies (approved via <a href="https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency">Contra</a>) will move to the <strong>Business</strong> plan with Agencies Expansion included.</li>
 </ul>
 <p>
 
 </p>
 <p>
-We’ll notify you directly in the app and by email before the August 20, 2025 migration, so you’ll have a chance to review or adjust your plan if needed. If you’re unsure, contact us and we’ll help you confirm your new plan.
+We’ll notify you directly in the app and by email before the September 4, 2025 migration, so you’ll have a chance to review or adjust your plan if needed. If you’re unsure, contact us and we’ll help you confirm your new plan.
 </p>
 </details>
 
@@ -255,10 +259,7 @@ We’ll notify you directly in the app and by email before the August 20, 2025 m
 Are there any benefits to electing into a new plan vs. being auto-migrated?
 </summary>
 <p>
-Yes! By proactively choosing to move to any of the new plans with annual billing during the election period (before August 20, 2025), you will receive <strong>20% off your first year</strong>.
-</p>
-<p>
-Additionally, any existing user or team who engages with our Sales team during the election period will be eligible for 2 free months added to their Enterprise contract term, once executed.
+Yes! By proactively choosing to move to any of the new plans with annual billing during the election period (before September 4, 2025), you will receive <strong>20% off your first year</strong>.
 </p>
 </details>
 
@@ -267,23 +268,23 @@ Additionally, any existing user or team who engages with our Sales team during t
 Can I stay on my old plan?
 </summary>
 <p>
-No. All existing plans will be retired on August 20, 2025, and users will be automatically transitioned to the new plans based on their current team size. This helps us simplify billing, improve feature alignment, and deliver a more consistent experience across all teams.
+No. All existing plans will be retired on September 4, 2025, and users will be automatically transitioned to the new plans based on their current team size. This helps us simplify billing, improve feature alignment, and deliver a more consistent experience across all teams.
 </p>
 <p>
 If you’re currently a paying user and would prefer not to be part of the migration to one of the new paid plans, you have two paths:
 </p>
 <ul>
-  <li><strong>Continue building on the Free plan:</strong> you can downgrade your plan to Free, where you will be able to view, edit, and run any 2 existing projects of your choosing inside the editor, but paid‑tier features, deployments, and team seats will be disabled until you upgrade.</li>
-  <li><strong>Export your code:</strong> download the full Flutter source and assets for each project before August 20, 2025 and continue building locally to retain full ownership of your codebase.</li>
+  <li><strong>Continue building on the Free plan:</strong> yyou can downgrade your plan to Free, where you will be able to view, edit, and run any 2 existing projects of your choosing inside the editor, but paid‑tier features, deployments, and team seats will be disabled until you upgrade.</li>
+  <li><strong>Export your code:</strong> download the full Flutter source and assets for each project before September 4, 2025 and continue building locally to retain full ownership of your codebase.</li>
 </ul>
 <p>
-If you’d like to review your options or adjust your usage ahead of time, our support team is here to help. You will receive an email confirming the plan your account will move to, but can also confirm by logging into your account after July 21, 2025 to see how your team maps to the new tiers.
+If you’d like to review your options or adjust your usage ahead of time, our support team is here to help. You will receive an email confirming the plan your account will move to, but can also confirm by logging into your account after August 4, 2025 to see how your team maps to the new tiers.
 </p>
 </details>
 
 <details>
 <summary>
-What’s included in the Enterprise plan?
+What's included in the Enterprise plan?
 </summary>
 <p>
 The Enterprise plan is built for organizations that need advanced security, scale, and white-glove support while managing production-grade apps across teams. In addition to all features available in lower tiers, Enterprise includes:
