@@ -22,7 +22,7 @@ Regional discounts are available, please **[log in to FlutterFlow](https://app.f
 
 ## Pricing Update [May 2025]
 
-FlutterFlow has evolved significantly, from a visual builder to a complete development environment with features like code export, GitHub integration, branching, AI agents, and app deployment tools. As the platform has matured, so have the ways people use it. To better reflect how teams build and scale today, we’re introducing updated pricing plans. These updates will help us continue improving the platform, supporting your workflows, and delivering the advanced features needed for building production-ready apps.
+FlutterFlow has evolved significantly, from a visual builder to a complete development environment with features like code export, GitHub integration, branching, AI agents, and app deployment tools. As the platform has matured, so have the ways people use it. To better reflect how teams build and scale today, we're introducing updated pricing plans. These updates will help us continue improving the platform, supporting your workflows, and delivering the advanced features needed for building production-ready apps.
 
 
 ### What's Changing?
@@ -32,7 +32,7 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 **Key Changes**
 
 - We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**. Our Enterprise offering will continue as is, providing advanced features and support for larger teams.
-- If you're already using FlutterFlow, you’ll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
+- If you're already using FlutterFlow, you'll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
 - That said, feature access will look a little different. Some users will gain powerful new capabilities, while others might see a few features move to higher tiers.
 
 ### Detailed Plan Changes
@@ -41,7 +41,7 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 The prices listed below are base rates. Regional pricing will continue to apply where applicable, just as before.
 :::
 
-Below are the details on all the changes, so you’ll know exactly what to expect:
+Below are the details on all the changes, so you'll know exactly what to expect:
 
 <div class="pricing-table-container">
   <div class="mobile-scroll-hint">Scroll to see all plan details →</div>
@@ -148,22 +148,10 @@ Below are the details on all the changes, so you’ll know exactly what to expec
 
 <details>
 <summary>
-Why is FlutterFlow updating its pricing?
-</summary>
-<p>
-When we launched FlutterFlow, we had one goal: make it radically easier to build beautiful, powerful digital products. Four years later, we’re a full development platform that goes from idea to app store. We now have collaboration features, AI tools, lots of integrations, branching, development environments, and more, built in.
-
-Now our plans are evolving to reflect that growth. We’ve introduced new features across every tier and restructured our plans to better align with the way people build today and how their needs change as they move from MVP to scaling production apps.
-</p>
-</details>
-
-
-<details>
-<summary>
 Who is affected by this pricing change?
 </summary>
 <p>
-All FlutterFlow users will move to the new structure as of July 21, 2025.
+All current Free, Standard, Pro, and Teams plan users will move to the new structure.
 
 Enterprise customers on custom contracts are not affected by these changes.
 </p>
@@ -174,10 +162,13 @@ Enterprise customers on custom contracts are not affected by these changes.
 When does the new pricing take effect for me?
 </summary>
 <p>
-- For new users, the pricing and packaging will apply immediately on July 21, 2025.
-- For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a 30-day transition period where you will have the ability to elect into a new plan. On August 20, 2025, your account will be moved to one of the new plans if no action is taken.
-- **Note:** All plan updates will take effect at 12:00 AM local time on the specified effective date.
+- For new users, the pricing and packaging will apply immediately on August 4, 2025. After this date, no legacy plans (Standard, Pro, Teams) can be purchased or updated.
+- For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a **30-day transition period** where you will have the ability to elect into a new plan. On September 4, 2025, your account will be moved to one of the new plans if no action is taken.
+  - **Important exception:** If you're currently on a Teams plan, you will no longer be able to use your team features on personal projects starting August 4, 2025. To maintain existing Teams plan feature access on those projects, you must either:
+    - Move your personal projects into your Team, or
+    - Convert your current Teams plan to a new Growth or Business plan and purchase a separate Individual plan for your personal work.
 
+- **Note:** All plan updates will take effect at 12:00 AM local time on the specified effective date.
 <div style={{maxWidth: '800px', margin: '0 auto'}}>
   <ThemedImage
     alt="Pricing Update Timeline - 2025"
@@ -187,7 +178,17 @@ When does the new pricing take effect for me?
     }}
   />
 </div>
+</p>
+</details>
 
+<details>
+<summary>
+Why is FlutterFlow updating its pricing?
+</summary>
+<p>
+When we launched FlutterFlow, we had one goal: make it radically easier to build beautiful, powerful digital products. Four years later, we’re a full development platform that goes from idea to app store. We now have collaboration features, AI tools, lots of integrations, branching, development environments, and more, built in.
+
+Now our plans are evolving to reflect that growth. We’ve introduced new features across every tier and restructured our plans to better align with the way people build today and how their needs change as they move from MVP to scaling production apps.
 </p>
 </details>
 
