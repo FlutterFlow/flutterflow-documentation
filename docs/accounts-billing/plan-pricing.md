@@ -27,7 +27,7 @@ FlutterFlow has evolved significantly, from a visual builder to a complete devel
 
 ### What's Changing?
 
-As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **July 21, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
+As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **August 4, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
 
 **Key Changes**
 
