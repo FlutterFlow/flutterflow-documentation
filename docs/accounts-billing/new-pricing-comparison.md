@@ -470,6 +470,14 @@ Choose the plan that fits your development needs and team size.
         <td colSpan="6"><strong>Deployment</strong></td>
       </tr>
       <tr>
+        <td>Web Deployment<br/><span className="feature-description">Deploy your app as a web application</span></td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
         <td>Free Subdomains<br/><span className="feature-description">Deploy your web app to FlutterFlow subdomains</span></td>
         <td>Up to 2</td>
         <td>Up to 20</td>
