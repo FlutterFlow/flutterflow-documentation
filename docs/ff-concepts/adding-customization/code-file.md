@@ -139,7 +139,8 @@ You need to create an instance of a class so you can work with actual data and u
     );
     ```
     
-- You can reuse the same class structure multiple times with different review data.
+- In FlutterFlow, you will store the instance of the custom class in the [state variables](../../ff-concepts/state-management/state-variables.md#state-variables) of your app, page, or component.
+- You can create multiple instances of the same class, reusing the same structure multiple times, each with different review data.
 
 When you create an instance of a class, you can:
 
@@ -412,7 +413,15 @@ Use the **Call Static Method** action to run a static method of your class. For 
 
 Similar to how you add a custom class, you can also add Custom Enums in your app. [Enums](../../resources/data-representation/enums.md) are a great way to define a fixed set of values, such as user roles, order statuses, or content types. Once parsed, these enums become available throughout your app and can be used in dropdowns, conditionals, and UI bindings.
 
-For example, you could define an enum called `ReviewStatus` with values like `pending`, `approved`, and `rejected`.
+For example, you could define an enum called `ReviewStatus` with values like `pending`, `approved`, and `rejected`. Here's the code snippet for it:
+
+```jsx
+enum ReviewStatus {
+  pending,
+  approved,
+  rejected,
+}
+```
 
 ![custom-enums.avif](imgs/custom-enums.avif)
 
