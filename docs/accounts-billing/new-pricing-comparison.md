@@ -1,7 +1,8 @@
 ---
 slug: plan-comparison
-title: "Pricing Comparison"
+title: "Plan Comparison"
 description: "Compare FlutterFlow plans and features to find the right plan for your needs"
+hide_table_of_contents: true
 ---
 
 <Head>
@@ -17,10 +18,10 @@ Choose the plan that fits your development needs and team size.
     ← Scroll horizontally to see all plans →
   </div>
 
-  <table className="simplified-pricing-table">
-    <thead>
+  <table className="simplified-pricing-table" id="pricing-table">
+    <thead id="table-header">
       <tr>
-        <th>Features</th>
+        <th>Plan</th>
         <th>Free<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>$0</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>per month</span></th>
         <th>Individual<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>$39</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>per month</span></th>
         <th>Growth<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>$135</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>per month</span></th>
@@ -397,10 +398,18 @@ Choose the plan that fits your development needs and team size.
         <td>✅</td>
       </tr>
       <tr>
-        <td>Git-Style Visual Branching<br/><span className="feature-description">Create and manage project branches visually</span></td>
-        <td>❌</td>
-        <td>❌</td>
-        <td>❌</td>
+        <td>Manual Commits<br/><span className="feature-description">Make explicit named commits to the current branch for version control</span></td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Number of Branches<br/><span className="feature-description">Create and manage multiple project branches (all plans include main branch)</span></td>
+        <td>1 (main only)</td>
+        <td>1 (main only)</td>
+        <td>1 (main only)</td>
         <td>Up to 5 open branches</td>
         <td>Unlimited</td>
       </tr>
@@ -432,7 +441,7 @@ Choose the plan that fits your development needs and team size.
         <td>Centralized Billing<br/><span className="feature-description">Manage team billing from one account</span></td>
         <td>❌</td>
         <td>❌</td>
-        <td>✅</td>
+        <td>❌</td>
         <td>✅</td>
         <td>✅</td>
       </tr>
@@ -519,6 +528,14 @@ Choose the plan that fits your development needs and team size.
 
       <tr className="section-header">
         <td colSpan="6"><strong>Support</strong></td>
+      </tr>
+      <tr>
+        <td>Account and Billing Support<br/><span className="feature-description">Help with account management and billing questions</span></td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
       </tr>
       <tr>
         <td>Community Support<br/><span className="feature-description">Access to FlutterFlow community forums</span></td>
