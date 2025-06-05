@@ -148,7 +148,7 @@ When you create an instance of a class, you can:
 - Access and update the fields (e.g., `review1.rating` or `review1.comment`).
 - Call methods that do something with that data (e.g., `review1.markHelpful()` or `review1.shortComment()`).
 
-To create an instance of a custom class, open the **Set from Variable** dialog and select **Create Custom Class Instance**. Choose the class you want to use, then select the class name from the **Constructor** dropdown. After that, set values for each of the required fields.
+To create an instance of a custom class, first you need to [create a state variable](../../ff-concepts/state-management/state-variables.md#creating-state-variables) (of type Custom Class) that will hold the instance. Then, to create and add the instance to the state variable, open the **Set from Variable** dialog and select **Create Custom Class Instance**. Choose the class you want to use, then select the class name from the **Constructor** dropdown. After that, set values for each of the required fields.
 
 
 <div style={{
