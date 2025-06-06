@@ -94,14 +94,32 @@ function handleScroll(originalHeader) {
   }
 }
 
+function findPricingTable() {
+  // Try multiple selectors to find the table
+  let table = document.getElementById("pricing-table");
+  if (!table) {
+    table = document.querySelector(".simplified-pricing-table");
+  }
+
+  let originalHeader = document.getElementById("table-header");
+  if (!originalHeader && table) {
+    originalHeader = table.querySelector("thead");
+  }
+
+  return { table, originalHeader };
+}
+
 function initFloatingHeader() {
   // Clean up any existing setup
   if (cleanup) cleanup();
 
-  const table = document.getElementById("pricing-table");
-  const originalHeader = document.getElementById("table-header");
+  const { table, originalHeader } = findPricingTable();
 
-  if (!table || !originalHeader) return;
+  if (!table || !originalHeader) {
+    // Table might not be rendered yet (React component), try again later
+    setTimeout(initFloatingHeader, 500);
+    return;
+  }
 
   const scrollHandler = () => handleScroll(originalHeader);
 
@@ -120,10 +138,23 @@ function initFloatingHeader() {
   };
   window.addEventListener("resize", resizeHandler, { passive: true });
 
+  // Listen for pricing changes from React component
+  const pricingChangeHandler = () => {
+    if (floatingHeader) {
+      // Remove and recreate floating header with updated pricing
+      if (floatingHeader.parentNode) {
+        floatingHeader.parentNode.removeChild(floatingHeader);
+      }
+      floatingHeader = null;
+    }
+  };
+  window.addEventListener("pricingChanged", pricingChangeHandler);
+
   // Cleanup function
   cleanup = () => {
     window.removeEventListener("scroll", scrollHandler);
     window.removeEventListener("resize", resizeHandler);
+    window.removeEventListener("pricingChanged", pricingChangeHandler);
     if (floatingHeader && floatingHeader.parentNode) {
       floatingHeader.parentNode.removeChild(floatingHeader);
       floatingHeader = null;
@@ -140,7 +171,7 @@ if (ExecutionEnvironment.canUseDOM) {
       !navigator.userAgent.includes("Chrome");
     const delay = isSafari ? 300 : 100;
 
-    // Initial setup
+    // Initial setup with longer delay for React rendering
     setTimeout(initFloatingHeader, delay);
 
     // Setup for route changes
