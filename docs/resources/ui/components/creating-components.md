@@ -169,7 +169,7 @@ Currently, we don't support importing SVG elements from Figma frames. However, y
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/BZD7f7OmwPdyHuOia2lY?embed&show_copy_link=true"
+        src="https://demo.arcade.software/cBQGb2T9VXneQ6gSlQMk?embed&show_copy_link=true"
         title="AI Generated Component"
         style={{
             position: 'absolute',
