@@ -290,7 +290,7 @@ export const PricingToggles = () => {
             <td>✅</td>
           </tr>
           <tr>
-            <td>Live Debugging<br/><span className="feature-description">Test your app in the brower and hot reload</span></td>
+            <td>Live Debugging<br/><span className="feature-description">Test your app in the browser and hot reload</span></td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -532,6 +532,14 @@ export const PricingToggles = () => {
             <td>Up to 2</td>
             <td>Up to 5*</td>
             <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>View-Only Project Sharing<br/><span className="feature-description">Share projects with clients and stakeholders for viewing only (no editing permissions)</span></td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <td>Real-Time Collaboration<br/><span className="feature-description">Work together on projects simultaneously</span></td>
