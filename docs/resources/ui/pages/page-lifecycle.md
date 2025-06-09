@@ -108,17 +108,17 @@ This action trigger allows you to bind keyboard shortcuts to actions. This is in
 :::
 
 :::info[important]
-- When a keyboard shortcut is created at the page level, it won't trigger if a TextField is in focus, and you also won’t be able to type the shortcut key into the TextField.
-- When a keyboard shortcut is created at the component level, it also won't trigger if a TextField is in focus, but you’ll still be able to type the shortcut key into the TextField.
+- When a keyboard shortcut is created at the page level, it won't trigger if a TextField is in focus, and you also won't be able to type the shortcut key into the TextField.
+- When a keyboard shortcut is created at the component level, it also won't trigger if a TextField is in focus, but you'll still be able to type the shortcut key into the TextField.
 - **To avoid conflicts, it's recommended to use shortcuts that users are unlikely to type, such as Command + S, instead of a single key like 'S'.**
-- There’s currently a known issue with Flutter's autofocus functionality. If a TextField inside a component has autofocus enabled, and the component has a keyboard shortcut, the TextField will not autofocus as expected.
+- There's currently a known issue with Flutter's autofocus functionality. If a TextField inside a component has autofocus enabled, and the component has a keyboard shortcut, the TextField will not autofocus as expected.
 :::
 
 
-Implementing keyboard shortcuts is a straightforward process in FlutterFlow. You can define as many shortcuts as you want, each mapped to specific actions that will trigger when the corresponding key combination is pressed. Let’s see an example of an eCommerce web app where users can quickly access the cart page by pressing the `C` key.
+Implementing keyboard shortcuts is a straightforward process in FlutterFlow. You can define as many shortcuts as you want, each mapped to specific actions that will trigger when the corresponding key combination is pressed. Let's see an example of an eCommerce web app where users can quickly access the cart page by pressing the `C` key.
 
 
-To create a shortcut, use the **On Shorcut Press** action trigger, then type the keys that you want your app to listen for.
+To create a shortcut, use the **On Shortcut Press** action trigger, then type the keys that you want your app to listen for.
 
 <div style={{
     position: 'relative',
@@ -146,12 +146,12 @@ To create a shortcut, use the **On Shorcut Press** action trigger, then type the
 </div>
 <p></p>
 
-:::warning[Keyboard Shorcuts & Text Fields]
+:::warning[Keyboard Shortcuts & Text Fields]
 When implementing keyboard shortcuts on a page or component with a text field, you may need to ensure the text field ignores those shortcuts.
 
 For instance, if you have a shortcut assigned to the letter "C" and a user tries to type "C" in the text field, you likely want the input to capture the keypress without triggering the shortcut.
 
-To handle this, you can enable the option on the `TextField` widget to bypass keyboard shortcuts. However, it’s generally better to assign more unique combinations, like Cmd + C, which are less likely to conflict with normal typing in a text field.
+To handle this, you can enable the option on the `TextField` widget to bypass keyboard shortcuts. However, it's generally better to assign more unique combinations, like Cmd + C, which are less likely to conflict with normal typing in a text field.
 :::
 
 ### On Dispose [Action Trigger]
@@ -163,10 +163,10 @@ Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/di
 Additionally, if you are using a third-party package that relies on persistent connections or listeners, you can leverage [Custom Actions](../../../ff-concepts/adding-customization/custom-actions.md) with the On Dispose action trigger to close streams or cancel subscriptions.
 
 :::tip[Possible Use Cases]
-- **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
+- **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
     - For example, real-time applications, such as stock trading platforms, rely on WebSocket connections to fetch live updates. A homepage displaying a live ticker of stock prices would require opening the WebSocket connection on page load and closing it on On Dispose. Without an On Dispose trigger, the WebSocket connection could remain open unnecessarily, leading to wasted resources and app instability.
 - **Finalizing Database Transactions**: Commit or roll back database transactions if the user leaves the page before completing the process.
-- **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
+- **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
 :::
 ![page-on-dispose.avif](imgs/page-on-dispose.avif)
 
@@ -281,7 +281,7 @@ current value of a given Page State variable, either for directly displaying it 
 transactional logic.
 
 You can set the source value of the widget wherever you see the following icon. This icon indicates
-that you can link the widget’s value to a variable.
+that you can link the widget's value to a variable.
 
 ![Page-State.png](../imgs/page-state.png)
 
