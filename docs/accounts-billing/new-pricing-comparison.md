@@ -3,6 +3,7 @@ slug: plan-comparison
 title: "Plan Comparison"
 description: "Compare FlutterFlow plans and features to find the right plan for your needs"
 hide_table_of_contents: true
+sidebar_position: 3
 ---
 
 <Head>
@@ -27,15 +28,15 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 39,
-        growth: 135,
-        business: 495,
+        growth: '1st seat: $90, 2nd seat: $45',
+        business: '1st seat: $150, \n Seats 2-5: $85 each*',
         enterprise: 'Custom'
       },
       annual: {
         free: 0,
-        individual: 30, // $360/year = $30/month effective
-        growth: 108, // $1296/year = $108/month effective  
-        business: 396, // $4752/year = $396/month effective
+        individual: 351, // $360/year = $30/month effective
+        growth: '1st seat: $810, 2nd seat: $405', 
+        business: '1st seat: $1,350, Seats 2-5: $765*', // $4752/year = $396/month effective
         enterprise: 'Custom'
       }
     },
@@ -43,23 +44,25 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 1300, // Official INR rate
-        growth: 4500, // Official INR rate
-        business: 16500, // Official INR rate
+        growth: '1st seat: ₹3,000, 2nd seat: ₹1,500', // Official INR rate
+        business: '1st seat: ₹5,100, Seats 2-5: ₹2,850 each*', // Official INR rate
         enterprise: 'Custom'
       },
       annual: {
         free: 0,
-        individual: 975, // ₹11,700/year = ₹975/month effective
-        growth: 3375, // ₹40,500/year = ₹3,375/month effective
-        business: 12375, // ₹148,500/year = ₹12,375/month effective
+        individual: 11700, // ₹11,700/year = ₹975/month effective
+        growth: '1st seat: ₹27,000, \n 2nd seat: ₹13,500',
+        business: '1st seat: ₹45,900, Seats 2-5: ₹25,650*',
         enterprise: 'Custom'
       }
     }
   };
 
   const formatPrice = (price) => {
-    if (price === 'Custom') return 'Custom';
-    
+  // Return the string directly if the price is a string
+
+   if (typeof price === 'string') return price;
+
     if (currency === 'USD') {
       return `$${price}`;
     } else {
@@ -70,9 +73,7 @@ export const PricingToggles = () => {
   const getPeriodText = () => {
     return billingPeriod === 'annual' ? (
       <>
-        per month
-        <br />
-        (billed annually)
+        billed annually
       </>
     ) : 'per month';
   };
@@ -255,7 +256,7 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>API Endpoints<br/><span className="feature-description">Connect to external APIs and services</span></td>
-            <td>1</td>
+            <td>2</td>
             <td>Unlimited</td>
             <td>Unlimited</td>
             <td>Unlimited</td>
@@ -271,11 +272,11 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>Development Environments<br/><span className="feature-description">Separate databases and configuration values for testing and production</span></td>
-            <td>1</td>
-            <td>1</td>
-            <td>Up to 2</td>
-            <td>Up to 3</td>
-            <td>Unlimited</td>
+            <td>1 (default only)</td>
+            <td>1 (default only)</td>
+            <td>Up to 2 (+default)</td>
+            <td>Up to 3 (+default)</td>
+            <td>Custom</td>
           </tr>
 
           <tr className="section-header">
@@ -475,7 +476,7 @@ export const PricingToggles = () => {
             <td>❌</td>
             <td>❌</td>
             <td>100 requests/mo</td>
-            <td>Custom (unlimited)</td>
+            <td>Custom</td>
           </tr>
 
           <tr className="section-header">
@@ -534,12 +535,12 @@ export const PricingToggles = () => {
             <td>Unlimited</td>
           </tr>
           <tr>
-            <td>View-Only Project Sharing<br/><span className="feature-description">Share projects with clients and stakeholders for viewing only (no editing permissions)</span></td>
-            <td>❌</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>Single Project Collaborator Add-Ons<br/><span className="feature-description">Allow non-team members to collaborate on a single project</span></td>
+            <td>None</td>
+            <td>None</td>
+            <td>Up to 4 collaborators</td>
+            <td>Up to 10 collaborators</td>
+            <td>N/A (unlimited team editors)</td>
           </tr>
           <tr>
             <td>Real-Time Collaboration<br/><span className="feature-description">Work together on projects simultaneously</span></td>
@@ -569,17 +570,17 @@ export const PricingToggles = () => {
             <td>Number of Branches<br/><span className="feature-description">Create and manage multiple project branches (all plans include main branch)</span></td>
             <td>1 (main only)</td>
             <td>1 (main only)</td>
-            <td>1 (main only)</td>
-            <td>Up to 5 open branches</td>
-            <td>Unlimited</td>
+            <td>Up to 2 open branches (+main)</td>
+            <td>Up to 5 open branches (+main)</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>Automated Snapshot Backups<br/><span className="feature-description">Automatic project backups and version control</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>Up to 1 day</td>
-            <td>Up to 5 days</td>
-            <td>Unlimited</td>
+            <td>Up to 1 hour prior</td>
+            <td>Up to 1 day prior</td>
+            <td>Up to 3 days prior</td>
+            <td>Up to 7 days prior</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>Activity Logging<br/><span className="feature-description">Track project changes and user activity</span></td>
@@ -591,9 +592,9 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>Project Level Access Control<br/><span className="feature-description">Manage permissions for individual projects</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
+            <td>Manage view-only collaborators only</td>
+            <td>Manage view-only collaborators only</td>
+            <td>✅</td>
             <td>✅</td>
             <td>✅</td>
           </tr>
@@ -601,7 +602,7 @@ export const PricingToggles = () => {
             <td>Centralized Billing<br/><span className="feature-description">Manage team billing from one account</span></td>
             <td>❌</td>
             <td>❌</td>
-            <td>❌</td>
+            <td>✅</td>
             <td>✅</td>
             <td>✅</td>
           </tr>
@@ -648,9 +649,9 @@ export const PricingToggles = () => {
           <tr>
             <td>Custom Domains<br/><span className="feature-description">Deploy to your own custom domain</span></td>
             <td>❌</td>
-            <td>1 free domain</td>
-            <td>1 free domain</td>
-            <td>1 free domain</td>
+            <td>1 free domain, more available for purchase</td>
+            <td>1 free domain, more available for purchase</td>
+            <td>1 free domain, more available for purchase</td>
             <td>Unlimited</td>
           </tr>
           <tr>
@@ -722,7 +723,7 @@ export const PricingToggles = () => {
             <td>✅</td>
           </tr>
           <tr>
-            <td>Priority In-App Support<br/><span className="feature-description">Priority chat support directly within FlutterFlow</span></td>
+            <td>In-App Support<br/><span className="feature-description">Chat support directly within FlutterFlow</span></td>
             <td>❌</td>
             <td>❌</td>
             <td>✅</td>
@@ -802,7 +803,7 @@ Choose the plan that fits your development needs and team size.
 ## Business Plan Extensions
 
 ### *Agencies Expansion
-*Available only to verified Expert Agencies: The Business plan can be extended with Agencies Expansion, which adds the ability to purchase up to 7 additional seats at $65/seat/month (USD) or ₹2,800/seat/month (INR) and collaborate with other paid users at the project level. Must be approved as an Expert Agency via [Contra](https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency).
+*Available only to verified Expert Agencies: The Business plan can be extended with Agencies Expansion, which adds the ability to purchase up to 7 additional seats at **$85/seat/month** (USD) or **₹2,850/seat/month** (INR) and collaborate with other paid users at the project level. Must be approved as an Expert Agency via [Contra](https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency).
 
 ### Localized Pricing
 INR pricing reflects localized rates adjusted for local purchasing power, providing the same features and plan structures as USD pricing. All plans include the same comprehensive feature set regardless of currency.
