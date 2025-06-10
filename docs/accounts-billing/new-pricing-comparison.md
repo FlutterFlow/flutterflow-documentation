@@ -28,14 +28,14 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 39,
-        growth: '1st seat: $90, 2nd seat: $45',
+        growth: '1st seat: $80, 2nd seat: $55',
         business: '1st seat: $150, \n Seats 2-5: $85 each*',
         enterprise: 'Custom'
       },
       annual: {
         free: 0,
         individual: 351, // $360/year = $30/month effective
-        growth: '1st seat: $810, 2nd seat: $405', 
+        growth: '1st seat: $720, 2nd seat: $495', 
         business: '1st seat: $1,350, Seats 2-5: $765*', // $4752/year = $396/month effective
         enterprise: 'Custom'
       }
@@ -44,7 +44,7 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 1300, // Official INR rate
-        growth: '1st seat: ₹3,000, 2nd seat: ₹1,500', // Official INR rate
+        growth: '1st seat: ₹2,650, 2nd seat: ₹1,850', // Official INR rate
         business: '1st seat: ₹5,100, Seats 2-5: ₹2,850 each*', // Official INR rate
         enterprise: 'Custom'
       },
@@ -176,7 +176,7 @@ export const PricingToggles = () => {
           <tr>
             <th>Plan</th>
             <th>Free<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.free)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>{getPeriodText()}</span></th>
-            <th>Individual<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.individual)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>{getPeriodText()}</span></th>
+            <th>Basic<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.individual)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>{getPeriodText()}</span></th>
             <th>Growth<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.growth)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>{getPeriodText()}</span></th>
             <th>Business<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.business)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>{getPeriodText()}</span></th>
             <th>Enterprise<br/><span style={{fontSize: '1.2em', fontWeight: 'bold'}}>{formatPrice(currentPrices.enterprise)}</span><br/><span style={{fontSize: '0.9em', opacity: '0.8'}}>pricing</span></th>
@@ -224,7 +224,7 @@ export const PricingToggles = () => {
             <td>50 requests/mo</td>
             <td>200 requests/mo</td>
             <td>500 requests/mo</td>
-            <td>Custom (unlimited)</td>
+            <td>Custom</td>
           </tr>
 
           <tr className="section-header">
@@ -274,8 +274,8 @@ export const PricingToggles = () => {
             <td>Development Environments<br/><span className="feature-description">Separate databases and configuration values for testing and production</span></td>
             <td>1 (default only)</td>
             <td>1 (default only)</td>
-            <td>Up to 2 (+default)</td>
-            <td>Up to 3 (+default)</td>
+            <td>Up to 1 additional (+default)</td>
+            <td>Up to 2 additional (+default)</td>
             <td>Custom</td>
           </tr>
 
@@ -538,8 +538,8 @@ export const PricingToggles = () => {
             <td>Single Project Collaborator Add-Ons<br/><span className="feature-description">Allow non-team members to collaborate on a single project</span></td>
             <td>None</td>
             <td>None</td>
-            <td>Up to 4 collaborators</td>
-            <td>Up to 10 collaborators</td>
+            <td>Up to 4 collaborators available for purchase</td>
+            <td>Up to 10 collaborators available for purchase</td>
             <td>N/A (unlimited team editors)</td>
           </tr>
           <tr>
@@ -652,7 +652,7 @@ export const PricingToggles = () => {
             <td>1 free domain, more available for purchase</td>
             <td>1 free domain, more available for purchase</td>
             <td>1 free domain, more available for purchase</td>
-            <td>Unlimited</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>Custom Web Favicon<br/><span className="feature-description">Set custom favicon for web publishing</span></td>
