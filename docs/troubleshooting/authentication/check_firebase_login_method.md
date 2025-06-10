@@ -1,13 +1,14 @@
 ---
 keywords: ['firebase', 'auth', 'authenticated']
-slug: /how-to-retrieve-the-authenticated-type-from-firebase-auth
-title: How to Retrieve the Authenticated Type from Firebase Auth
+slug: /check-firebase-login-method
+title: Check Firebase Login Method
 ---
-# Retrieve the authenticated type from Firebase auth
+# Check Firebase Login Method
 
 Understanding which authentication method a user has used can be useful for several reasons. For example, it can be leveraged for analytics, user support, and to customize the user's experience based on their login method. This method, however, is specific to Firebase Authentication.​
 
 In our Flutter app, we can find out which method a user used to authenticate by leveraging Firebase's `User.providerData` property. Let's take a closer look at how this works in the code:
+
 
 ```
 import 'package:firebase_auth/firebase_auth.dart';
@@ -51,7 +52,8 @@ Here are examples of how the return value might look:
 
 - If the user has signed in using Email and Password, the function will return: **`'password'`**
 
-These are the identifiers used by Firebase to represent different sign-in methods.Please, thoroughly test this function to ensure it fits your specific requirements.
+These are the identifiers used by Firebase to represent different sign-in methods.
+Please thoroughly test this function to ensure it fits your specific requirements
 
 :::tip[Use Sign-In Method to Drive Dynamic UI in FlutterFlow]
 In FlutterFlow, if you want to display or use the user's sign-in method in your UI logic (example, showing different UIs for Google vs. email login), you can create a custom function using the `providerId` approach shown in the article and **connect it to a custom action**. This allows you to make dynamic decisions inside your app based on how the user authenticated.

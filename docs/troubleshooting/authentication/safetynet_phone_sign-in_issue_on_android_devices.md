@@ -1,55 +1,91 @@
 ---
 keywords: ['android', 'signing', 'release']
 slug: /safetynet-phone-sign-in-issue-on-android-devices
-title: SafetyNet phone sign-in issue on android devices
+title: SafetyNet Phone Sign-In Issue on Android Devices
 ---
 
-# SafetyNet phone sign-in issue on android devices
+# SafetyNet Phone Sign-In Issue on Android Devices
 
-It looks like you are experiencing an issue with using the Firebase Phone Authentication method. To troubleshoot this issue, there are a few things you can try:
+If you're experiencing issues with Firebase Phone Authentication on Android devices, especially when using emulators or testing in release mode, this guide will help you identify and resolve common problems.
 
-- Make sure you have correctly configured the Firebase Phone Authentication method in your  app. This includes setting up a project in the Firebase console and adding the necessary dependencies to your app.
-
-- Check that you have properly implemented the phone authentication flow in your app. This includes prompting the user to enter their phone number, sending a verification code to the user's phone, and verifying the code that the user enters.
-
-- Make sure that you have correctly configured the safety net and reCAPTCHA checks in your app. This may involve adding the necessary dependencies and configuring the keys in your app.
-
-- If you are using an emulator to test your app, try testing on a physical device instead. Emulators may not always behave the same as physical devices, and this could be causing the issue you are experiencing.
-
-- If you are still experiencing issues, try reviewing the documentation and tutorials provided by Firebase to ensure that you have correctly implemented the phone authentication flow in your app.
-
-    **Solution**: Read more information [here](https://firebase.flutter.dev/docs/auth/phone/)
+Firebase uses either **SafetyNet** or **reCAPTCHA** to verify that phone number sign-in requests originate from your app. Issues typically arise when one of these verification methods is not correctly configured.
 
 
-![](../assets/20250430121259958091.png)​
+## Troubleshooting Checklist
 
-To use phone number authentication, Firebase must be able to verify that phone number sign-in requests are coming from your app. There are two ways Firebase Authentication accomplishes this:
+Ensure the following configurations are in place:
 
-## 1- SafetyNet:
-If a user has a device with Google Play Services installed, and Firebase Authentication can verify the device as legitimate with Android SafetyNet, phone number sign-in can proceed.
+- **Firebase Setup**  
+  - Your project is correctly set up in the [Firebase Console](https://console.firebase.google.com/).
+  - Firebase Authentication is enabled.
+  - The Phone Sign-In method is activated.
 
-To enable SafetyNet for use with Firebase Authentication:
+- **Phone Authentication Flow**  
+  - Prompt the user to enter their phone number.
+  - Send a verification code to the user's phone.
+  - Accept and verify the code entered by the user.
 
-    - In the Google Cloud Console, enable the Android Device Verification (DEPRECATED) API for your project. The default Firebase API Key will be used, and needs to be allowed to access the DeviceCheck API.
+- **SafetyNet / reCAPTCHA Configuration**  
+  - Your app includes the required Firebase and Play Services dependencies.
+  - SHA-1 and SHA-256 fingerprints are added to your Firebase project settings.
+  - Your API key is either unrestricted or allowlisted.
 
-    - If you haven't yet specified your app's SHA-256 fingerprint, do so from the Settings Page of the Firebase console. Refer to Authenticating Your Client for details on how to get your app's SHA-256 fingerprint.
-
-The SafetyNet Attestation API is deprecated and has been replaced by the Play Integrity API. We are working on a migration path to the Play Integrity API, which we expect to make available within the SafetyNet deprecation timeline. After 31 January 2023, you will not be able to enable the Android Device Verification (SafetyNet) API in the Google Cloud Console. To enable the Android Device Verification (SafetyNet) API in a new project after Jan 31, 2023, submit the SafetyNet Attestation API Onboarding form.
-
-SafetyNet has a default quota that is sufficient for most apps. See [SafetyNet Quota Monitoring](https://developer.android.com/google/play/safetynet/quotas)
- for more information.
-
-## 2- reCAPTCHA verification:
-In the event that SafetyNet cannot be used, such as when the user does not have Google Play Services support, or when testing your app on an emulator, Firebase Authentication uses a reCAPTCHA verification to complete the phone sign-in flow. The reCAPTCHA challenge can often be completed without the user having to solve anything. Please note that this flow requires that a SHA-1 is associated with your application. This flow also requires your API Key to be unrestricted or allow listed for "your-project-name.firebaseapp.com".
-
-The reCAPTCHA flow will only be triggered when SafetyNet is unavailable or your device does not pass suspicion checks. Nonetheless, you should ensure that both scenarios are working correctly.​
-
-:::info[Release mode]
-If you're releasing your app to the Play Store, you must add the SHA certificate fingerprints from the Play Console To get the keys for the release app, navigate to **Play Store Console &gt; Your project &gt; Release Management –&gt; App Signing** and copy the **SHA-1** and **SHA-256** keys.
-:::
+- **Testing Environment**  
+  - If you're using an emulator, test on a physical device instead. Emulators may bypass or fail certain integrity checks.
 
 
+## Firebase Verification Methods
+
+Firebase uses one of the following methods to confirm the authenticity of phone sign-in requests:
+
+### 1. SafetyNet (Deprecated)
+
+If the device supports Google Play Services, Firebase uses **SafetyNet Attestation** to confirm the device’s legitimacy.
+
+> :::warning[Deprecated API]  
+> The SafetyNet Attestation API is deprecated and has been replaced by the [Play Integrity API](https://developer.android.com/google/play/integrity).  
+> After **January 31, 2023**, you can no longer enable the SafetyNet API for new projects in the Google Cloud Console.  
+> :::
+
+#### To use SafetyNet (if still active for your project):
+- Enable **Android Device Verification (Deprecated)** in the [Google Cloud Console](https://console.cloud.google.com/).
+- Ensure your app's **SHA-256** is added in the Firebase Console under **Project Settings > General > Your Apps**.
+- Use the default Firebase API key or request onboarding for SafetyNet if needed.
+- Monitor your quota [here](https://developer.android.com/google/play/safetynet/quotas).
+
+![](../assets/20250430121259958091.png)
 
 
+### 2. reCAPTCHA Verification
+
+If SafetyNet is unavailable (e.g. device without Google Play Services or running on an emulator), Firebase falls back to **reCAPTCHA verification**.
+
+- The reCAPTCHA challenge usually completes without user interaction.
+- This flow requires:
+  - A valid **SHA-1** fingerprint added to your Firebase project.
+  - An **unrestricted** or **domain-allowlisted** API key (e.g. `your-project-name.firebaseapp.com`).
+
+> Ensure both SafetyNet and reCAPTCHA flows are working to support a wider range of Android devices.
+
+
+## Important for Release Builds
+
+> :::info[Release Mode Configuration]
+> When releasing your app to the Google Play Store, ensure you include the **SHA-1** and **SHA-256** keys from your **Play Console**:
+> 
+> Navigate to:  
+> **Play Console → Your App → Release → Setup → App Signing**  
+> Then copy both **SHA-1** and **SHA-256** fingerprints and add them to Firebase Console under **Project Settings > General > Your Apps**.
+> :::
 
 ![](../assets/20250430121300291238.png)
+
+
+## Learn More
+
+- [Firebase Phone Authentication (FlutterFire)](https://firebase.flutter.dev/docs/auth/phone/)
+- [Using Firebase Auth in FlutterFlow](https://docs.flutterflow.io/authentication)
+- [Play Integrity API Migration](https://developer.android.com/google/play/integrity)
+
+
+Still stuck? Check Firebase logs, test on a physical device, and ensure your API keys and fingerprints are correctly added. Proper configuration of SafetyNet or reCAPTCHA is critical to ensuring phone number sign-in works reliably across devices.
