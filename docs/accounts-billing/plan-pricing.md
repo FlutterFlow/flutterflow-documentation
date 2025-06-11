@@ -27,7 +27,7 @@ FlutterFlow has evolved significantly, from a visual builder to a complete devel
 
 ### What's Changing?
 
-As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **August 4, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
+As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **August 18, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
 
 **Key Changes**
 
@@ -35,113 +35,9 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 - If you're already using FlutterFlow, you'll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
 - That said, feature access will look a little different. Some users will gain powerful new capabilities, while others might see a few features move to higher tiers.
 
-### Detailed Plan Changes
 
-:::warning[Regional Pricing]
-The prices listed below are base rates. Regional pricing will continue to apply where applicable, just as before.
-:::
+To understand how each new plan compares, **[view the detailed plan comparison](new-pricing-comparison.md).**
 
-Below are the details on all the changes, so you'll know exactly what to expect:
-
-<a id="detailed-plan-changes"></a>
-
-<div class="pricing-table-container">
-  <div class="mobile-scroll-hint">Scroll to see all plan details →</div>
-  
-  <table class="simplified-pricing-table">
-    <thead>
-      <tr>
-        <th>Current Plan</th>
-        <th>New Plan</th>
-        <th class="whats-changing-col">What's Changing?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Solo Section Header -->
-      <tr class="section-header">
-        <td colspan="3"><strong>Solo Plans</strong></td>
-      </tr>
-
-      <tr>
-        <td><strong>Free</strong> ($0)</td>
-        <td>Free ($0)</td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li>2 count project limit</li>
-            <li>Swagger/OpenAPI imports not available</li>
-            <li>No debug panel, payments/ads integrations, or snapshot backups</li>
-            <li>No access to technical support</li>
-            <li>Can now import libraries</li>
-          </ul>
-        </td>
-      </tr>
-      
-      <tr>
-        <td><strong>Standard</strong> ($30)</td>
-        <td>Basic ($39) <span class="price-up">⬆️</span></td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li>Unlimited API endpoints</li>
-            <li>One-click app store deployment available</li>
-            <li>Snapshot backups are not accessible</li>
-            <li>1 Automated Test (per project)</li>
-            <li>1 Development Environment (per project)</li>
-            <li>Email access only to technical support</li>
-          </ul>
-        </td>
-      </tr>
-      
-      <tr>
-        <td><strong>Pro</strong> ($70)</td>
-        <td>Basic ($39) <span class="price-down">⬇️</span></td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li>GitHub sync, one-click localization, commenting, and backup snapshots not available</li>
-          </ul>
-        </td>
-      </tr>
-      
-      <!-- Teams Section Header -->
-      <tr class="section-header">
-        <td colspan="3"><strong>Collaboration Plans</strong></td>
-      </tr>
-      
-      <tr>
-        <td><strong>Teams</strong> ($140)<br />2 users</td>
-        <td>Growth ($135) <span class="price-down">⬇️</span></td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li>Branching and audit logs not available</li>
-            <li>Automated backup snapshots limited to 1 day</li>
-          </ul>
-        </td>
-      </tr>
-      
-      <tr>
-        <td><strong>Teams</strong> ($210–$350)<br />3–5 users</td>
-        <td>Business ($495) <span class="price-up">⬆️</span></td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li>Branching capped at 5 open branches</li>
-            <li>Audit logs not available</li>
-            <li>Automated backup snapshots limited to 5 days</li>
-          </ul>
-        </td>
-      </tr>
-      
-      <tr>
-        <td><strong>Teams</strong> ($420+)<br />6+ users</td>
-        <td>Enterprise (Contact Sales) <span class="price-up">⬆️</span></td>
-        <td class="whats-changing-col">
-          <ul class="feature-list">
-            <li><em>Same as above</em></li>
-            <li>Enterprise plan required for existing users to scale beyond 5 users or 5 open branches 12-months after cutover</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 
 ## FAQS
