@@ -31,7 +31,7 @@ As part of broader improvements to the platform, FlutterFlow is updating its pri
 
 **Key Changes**
 
-- We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Individual**, **Growth**, **Business**. Our Enterprise offering will continue as is, providing advanced features and support for larger teams.
+- We're retiring our legacy plans: **Standard**, **Pro**, and **Teams** and introducing a new, simplified lineup: **Free**, **Basic**, **Growth**, **Business**. Our Enterprise offering will continue as is, providing advanced features and support for larger teams.
 - If you're already using FlutterFlow, you'll be automatically moved to the new plan that best fits your current team size. No action needed on your part.
 - That said, feature access will look a little different. Some users will gain powerful new capabilities, while others might see a few features move to higher tiers.
 
@@ -78,7 +78,7 @@ Below are the details on all the changes, so you'll know exactly what to expect:
       
       <tr>
         <td><strong>Standard</strong> ($30)</td>
-        <td>Individual ($39) <span class="price-up">⬆️</span></td>
+        <td>Basic ($39) <span class="price-up">⬆️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>Unlimited API endpoints</li>
@@ -93,7 +93,7 @@ Below are the details on all the changes, so you'll know exactly what to expect:
       
       <tr>
         <td><strong>Pro</strong> ($70)</td>
-        <td>Individual ($39) <span class="price-down">⬇️</span></td>
+        <td>Basic ($39) <span class="price-down">⬇️</span></td>
         <td class="whats-changing-col">
           <ul class="feature-list">
             <li>GitHub sync, one-click localization, commenting, and backup snapshots not available</li>
@@ -169,7 +169,7 @@ When does the new pricing take effect for me?
 - For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a **30-day transition period** where you will have the ability to elect into a new plan. On September 17, 2025, your account will be moved to one of the new plans if no action is taken.
   - **Important exception:** If you're currently on a Teams plan, you will no longer be able to use your team features on personal projects starting August 18, 2025. To maintain existing Teams plan feature access on those projects, you must either:
     - Move your personal projects into your Team, or
-    - Convert your current Teams plan to a new Growth or Business plan and purchase a separate Individual plan for your personal work.
+    - Convert your current Teams plan to a new Growth or Business plan and purchase a separate Basic plan for your personal work.
 
 - **Note:** All plan updates will take effect at 12:00 AM local time on the specified effective date.
 <div style={{maxWidth: '800px', margin: '0 auto'}}>
@@ -519,7 +519,7 @@ What if I want to continue collaborating with project collaborators who are not 
 - If you would like to continue collaborating:
     - You can invite others to join your team (additional seats may require an upgrade depending on your plan).
     - Or, they can create a new team and invite you, depending on who should own billing and project access.
-    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must themselves have also purchased a paid individual plan to be eligible to be a single project collaborator.
+    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must themselves have also purchased a paid Basic plan to be eligible to be a single project collaborator.
 - This change ensures that every project has clear ownership, consistent permissions, and a scalable path for team-based collaboration.
 
 </p>
@@ -562,7 +562,7 @@ I build apps for clients (agency/freelancer). What plan should I choose?
                     As part of the add-on, you can:
                     <ul>
                       <li>Purchase up to 7 additional seats beyond the 5 included in Business at $85/seat/month (12 seats total per team).</li>
-                      <li>Invite up to 20 individual paid users to specific projects without requiring them to be team members via Single Project Collaborator Passes.</li>
+                      <li>Invite up to 20 Basic paid users to specific projects without requiring them to be team members via Single Project Collaborator Passes.</li>
                     </ul>
                   </li>
                   <li>
