@@ -730,42 +730,6 @@ export const PricingToggles = () => {
             <td>❌</td>
             <td>✅</td>
           </tr>
-
-          <tr className="section-header">
-            <td colSpan="6"><strong>Advanced Controls & Extensibility</strong></td>
-          </tr>
-          <tr>
-            <td>Version Pinning<br/><span className="feature-description">Control FlutterFlow platform upgrades</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Single Sign-On (SSO)<br/><span className="feature-description">Integrate with your organization's SSO provider</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Accessibility<br/><span className="feature-description">Advanced accessibility features and compliance</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Access to Custom Engineering Solutions<br/><span className="feature-description">Custom development and engineering support</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
         </tbody>
       </table>
     </div>
