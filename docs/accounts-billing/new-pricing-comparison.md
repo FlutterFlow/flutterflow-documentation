@@ -28,15 +28,15 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 39,
-        growth: '1st seat: $80, 2nd seat: $55',
+        growth: '1st seat: $80, \n 2nd seat: $55',
         business: '1st seat: $150, \n Seats 2-5: $85 each*',
         enterprise: 'Custom'
       },
-      annual: {
+      annual: { 
         free: 0,
         individual: 351, // $360/year = $30/month effective
-        growth: '1st seat: $720, 2nd seat: $495', 
-        business: '1st seat: $1,350, Seats 2-5: $765*', // $4752/year = $396/month effective
+        growth: '1st seat: $720, \n 2nd seat: $495', 
+        business: '1st seat: $1,350, \n Seats 2-5: $765*', // $4752/year = $396/month effective
         enterprise: 'Custom'
       }
     },
@@ -44,15 +44,15 @@ export const PricingToggles = () => {
       monthly: {
         free: 0,
         individual: 1300, // Official INR rate
-        growth: '1st seat: ₹2,650, 2nd seat: ₹1,850', // Official INR rate
-        business: '1st seat: ₹5,100, Seats 2-5: ₹2,850 each*', // Official INR rate
+        growth: '1st seat: ₹2,650, \n 2nd seat: ₹1,850', // Official INR rate
+        business: '1st seat: ₹5,100, \n Seats 2-5: ₹2,850 each*', // Official INR rate
         enterprise: 'Custom'
       },
       annual: {
         free: 0,
         individual: 11700, // ₹11,700/year = ₹975/month effective
         growth: '1st seat: ₹27,000, \n 2nd seat: ₹13,500',
-        business: '1st seat: ₹45,900, Seats 2-5: ₹25,650*',
+        business: '1st seat: ₹45,900, \n Seats 2-5: ₹25,650*',
         enterprise: 'Custom'
       }
     }
