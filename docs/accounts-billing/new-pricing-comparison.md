@@ -787,7 +787,7 @@ Choose the plan that fits your development needs and team size.
 ## Business Plan Extensions
 
 ### *Agencies Expansion
-*Available only to verified Expert Agencies: The Business plan can be extended with Agencies Expansion, which adds the ability to purchase up to 7 additional seats at **$85/seat/month** (USD) or **₹2,850/seat/month** (INR) and collaborate with other paid users at the project level. Must be approved as an Expert Agency via [Contra](https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency).
+*Available only to verified Expert Agencies: Includes all Business features, plus the ability to add up to 7 additional seats (12 total per team) at **$85/seat/month** (USD) or **₹2,850/seat/month** (INR) and collaborate with up to 20 other paid users at the project level via Single Project Collaborator Passes. Must be approved as an Expert Agency via [Contra](https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency).
 
 ### Localized Pricing
 INR pricing reflects localized rates adjusted for local purchasing power, providing the same features and plan structures as USD pricing. All plans include the same comprehensive feature set regardless of currency.
