@@ -165,7 +165,7 @@ export const PricingToggles = () => {
           </div>
           {billingPeriod === 'annual' && (
             <span style={{fontSize: '0.8rem', color: 'var(--ifm-color-success)', fontWeight: '500', marginLeft: '0.5rem'}}>
-              Save ~20%
+              Save ~25%
             </span>
           )}
         </div>
@@ -196,14 +196,6 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>1K+ Prebuilt Templates<br/><span className="feature-description">Ready-to-use app templates and components</span></td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Build Mobile, Web, & Desktop Applications<br/><span className="feature-description">Create apps for iOS, Android, Web, and Desktop platforms</span></td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -740,7 +732,7 @@ export const PricingToggles = () => {
           </tr>
 
           <tr className="section-header">
-            <td colSpan="6"><strong>Enterprise Features</strong></td>
+            <td colSpan="6"><strong>Advanced Controls & Extensibility</strong></td>
           </tr>
           <tr>
             <td>Version Pinning<br/><span className="feature-description">Control FlutterFlow platform upgrades</span></td>
@@ -760,14 +752,6 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>Accessibility<br/><span className="feature-description">Advanced accessibility features and compliance</span></td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Database Point-in-Time Recovery<br/><span className="feature-description">Restore database to any point in time</span></td>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
