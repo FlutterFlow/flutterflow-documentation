@@ -77,6 +77,8 @@ Firebase uses one of the following methods to confirm the authenticity of phone 
 - [Firebase Phone Authentication (FlutterFire)](https://firebase.flutter.dev/docs/auth/phone/)
 - [Using Firebase Auth in FlutterFlow](https://docs.flutterflow.io/authentication)
 - [Play Integrity API Migration](https://developer.android.com/google/play/integrity)
-:::
 
 Still stuck? Check Firebase logs, test on a physical device, and ensure your API keys and fingerprints are correctly added. Proper configuration of SafetyNet or reCAPTCHA is critical to ensuring phone number sign-in works reliably across devices.
+:::
+
+

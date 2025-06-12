@@ -14,7 +14,7 @@ Here's an example:
 
 ![](../assets/20250430121149388590.png)
 
-## How to Fix Custom Authentication Issues in FlutterFlow
+## How to Fix Custom Authentication Issues
 
 1. **Verify Server and API Endpoints**
     - Confirm that your server correctly returns JWT tokens for login and sign-up requests. The server's response should include the **authentication token**, **refresh token**, **expiration time**, and **user ID (UID)**.
