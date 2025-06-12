@@ -1,87 +1,96 @@
 ---
 keywords: ['api', 'error', 'client']
-slug: /api-troubleshooting-client-server-errors-during-the-api-call
+slug: /client-server-errors-during-the-api-call
 title: Client-Server Errors during the API call
 ---
 # Client-Server Errors During the API Call
 
 
-When working with APIs, one of the most common hurdles developers face is understanding and resolving errors that occur during the interaction between a client and a server. Whether you're building, integrating, or consuming APIs, it's important to recognize what different error codes mean and how to fix them. These errors are typically categorized as client-side or server-side, each with its own set of HTTP status codes.
+When calling an API in FlutterFlow, you may run into client-server errors. These typically come as status codes that indicate what went wrong—either on your end (the client) or on the server you're requesting data from.
 
-This guide will walk you through the most common client-server error codes encountered during API calls, explain what they mean, and offer practical tips for diagnosing and resolving them effectively. Whether you're a beginner trying to understand what a 404 error really means or an experienced developer dealing with elusive 5XX responses, this article will help you decode the problem and get your API calls back on track.
+This guide will help you understand the most common API error codes and how to fix them.
 
-## Application Programming Interfaces (APIs)
+## What is an API?
 
-APIs allow two programs to communicate and transfer data. An API call is when a client application submits a request to an API, which retrieves the requested data from an external server or program and delivers it back to the client.
+An API (Application Programming Interface) lets two systems communicate with each other. When you make an API call, you're sending a request from your app (client) to a server, which responds with data.
 
----
+## Common client-side status codes
 
-## Error Status Codes When Building APIs
+These errors are usually caused by incorrect requests from the client side.
 
-### 1. Client-Side Status Codes
+- **400 – Bad request**
 
-- #### 404 Not Found
-    This is the most common HTTP status code. It indicates that the URL used in your request doesn’t exist on the API server or origin server. While this is a 4XX error (usually meaning something on the client-side is wrong), it can also indicate a server problem. Sometimes API URL paths change after a version update, or due to server issues.
+    Your request isn’t properly formatted. This could be due to a missing parameter, a typo, or incorrect syntax.
 
     :::tip
-    Check for typos in your client code before investigating API issues.
+    Check the API documentation to ensure you're including the correct fields and headers.
+    :::
+
+    ![400 Example](../assets/20250430121351345482.png)
+
+- **401 – Unauthorized**
+
+    You didn’t provide the correct credentials (like an API key). Most APIs require authentication via headers.
+
+    ![401 Example](../assets/20250430121350799148.png)
+
+- **403 – Forbidden**
+
+    You’re authenticated, but you don’t have permission to access the resource. This could be due to API plan restrictions or role-based access.
+
+    ![403 Example](../assets/20250430121351077308.png)
+
+- **404 – Not found**
+
+    The URL you’re requesting doesn’t exist. This could be due to a typo or a deprecated API endpoint.
+
+    :::tip
+    Always double-check your request URL before troubleshooting further.
     :::
 
     ![404 Example](../assets/20250430121350517804.png)
 
-- #### 401 Unauthorized
-    This status code means you haven’t authenticated against the API. The API doesn’t know who you are and won’t serve you. For most APIs, you need to sign up and get an API key, which is used in an HTTP header field when sending a request.
+- **407 – Proxy authentication required**
 
-    This is similar to the less common **407 Proxy Authentication Required**, which means you haven’t authenticated with the proxy.
+    You haven't authenticated with the proxy server. This is less common but can happen in restricted network environments.
 
-    ![401 Example](../assets/20250430121350799148.png)
+- **422 – Unprocessable entity**
 
-- #### 403 Forbidden
-    This status indicates you don’t have permission to request that URL. You’re authenticated, but your user or role isn’t permitted to make the API request. This can also occur if you use the wrong API key or try to access features not allowed by your subscription plan.
+    Your request was well-formed but couldn’t be processed. For example, passing a `latlng` without a comma.
 
-    ![403 Example](../assets/20250430121351077308.png)
+- **429 – Too many requests**
 
-- #### 400 Bad Request
-    The *400 Bad Request* error is generic. It means your API request was not correctly formatted. If no additional error information is given in the response body, check the docs. You could be missing a query, a field in the request body, or a header field could be wrong. Incorrect syntax in your request data can also cause this.
-
-    This differs from the *422 Unprocessable Entity* error, which appears when your request is correctly formatted but cannot be processed. For example, passing a badly formatted `latlang` value to the API (e.g., missing a comma).
-
-    ![400 Example](../assets/20250430121351345482.png)
-
-- #### 429 Too Many Requests
-    Most API subscription plans have limits—the cheaper the plan, the fewer requests per second are allowed for your API key. If you send too many requests in a short time, consider throttling them in your client. This response can also indicate you hit a daily, weekly, or monthly limit on your account.
+    You’ve hit your rate limit. Most APIs restrict the number of requests you can make in a certain timeframe.
 
     :::tip
-    Check your API subscription limits before integrating, or you may run into problems later.
+    Check your API plan limits and consider throttling requests from your app.
     :::
----
 
-### 2. Server-Side Status Codes
+## Common server-side status codes
 
-Sometimes, server-side API errors occur. Here are common ones:
+These errors occur on the API server side.
 
-- #### 500 Internal Server Error
-    This code can mean anything, but usually indicates the API server crashed. It could be caused by your API call or by buggy code/data from an upstream service. Double-check the docs for correct query fields, body fields, headers, and format. If the problem persists, contact the API’s support.
+- **500 – Internal server error**
 
-- #### 502 Bad Gateway
-    This response means the server you called was a gateway or proxy, not the actual API server. The proxy tried to call the API server but didn’t get a response. This could be a network problem, server crash, or maintenance. Usually, this is temporary and should be solved by the API provider.
+    The server ran into an unexpected issue. Double-check your request, but if it looks fine, the problem is likely on the server side.
 
-- #### 503 Service Unavailable
-    This status indicates a server error—too many API requests were sent and the API can’t handle more. The problem usually resolves itself when clients send fewer requests, but it could also mean the API provider didn’t plan enough resources. If the error persists, contact the API provider.
+- **501 – Not implemented**
 
-- #### 504 Gateway Timeout
-    Like 502, this means the server you called is a proxy for the real API server, but the API server took too long to respond. This could be due to high network latency or a slow API server. Try reducing the amount of data or complexity of your request. If the error persists, contact support.
+    The HTTP method you're using (example, PUT or PATCH) isn't supported by the API yet.
 
-- #### 501 Not Implemented
-    This status code is related to the HTTP method you used. Try a different HTTP method. Usually, an inappropriate method results in a 404, but 501 means the method isn’t implemented yet and may be available in the future.
+- **502 – Bad gateway**
 
----
+    The API server is using a gateway or proxy, and it failed to get a valid response from the upstream server. Usually a temporary issue.
 
-You’ll encounter many error codes when using APIs, but most have reasonable fixes. Some are server errors, some are client-side errors, and often one can cause the other.
+- **503 – Service unavailable**
 
+    The API server is overloaded or undergoing maintenance. Try again later.
 
-:::tip
-Always read the docs and API notes thoroughly. If things are broken, contact the API provider or search for answers on the web (e.g., StackOverflow). Stay determined, and you’ll see your 200 OK status codes in no time!
+- **504 – Gateway timeout**
+
+    The API server took too long to respond. Try simplifying your request or reducing the size of the data being sent.
+
+:::tip[Final tips]
+- Always check the API documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
+- Once you fix the issue, your calls should return a `200 OK`—which means everything is working as expected!
 :::
-
-
