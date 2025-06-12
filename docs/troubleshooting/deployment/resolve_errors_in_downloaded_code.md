@@ -5,33 +5,33 @@ title: Resolve Errors in Downloaded Code
 ---
 # Resolve Errors in Downloaded Code
 
-Are you facing errors after downloading the code and testing it locally using IDE? This article covers the solution to fix issues that you experience while running the downloaded code.​
+When you download your project from FlutterFlow and run it locally in your IDE, you may encounter errors due to Flutter version mismatches. This guide outlines how to resolve these issues by ensuring your local Flutter version matches the version supported by FlutterFlow.
 
-Check the Flutter Version on Your Machine and Ensure It Matches What's Supported by FlutterFlow
+1. **Check FlutterFlow’s supported Flutter version**
 
-### Step 1: Checking FlutterFlow's Supported Version
+    To find the Flutter version currently supported by FlutterFlow:
+        - Open the FlutterFlow dashboard.
+        - Navigate to your project settings or export screen.
+        - Locate the displayed Flutter version used for your project.
 
-​First, visit the FlutterFlow website to find out which version of Flutter they currently support. To make this easier, there's a screenshot below that guides you on where to look for this information.​
+        ![](../assets/20250430121137152872.png)
 
-![](../assets/20250430121137152872.png)
+2. **Verify the Flutter version on your machine**
 
-#### Step 2: Verify the Flutter version on your machine
+    To check the Flutter version installed locally, run the following command in your terminal:
 
-​Check the version of Flutter that is currently installed on your machine by running the command:
+        ```js
+        flutter --version
+        ```
+        Here's an example of how you can do that:
 
-```
- flutter --version
-```
+        ![](../assets/20250430121137421780.png)​
 
-Here's an example of how you can do that:
+3. **Upgrading or Downgrading to the correct Flutter version**
 
-![](../assets/20250430121137421780.png)​
+    If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about upgrading our Flutter [here](https://docs.flutterflow.io/deploying-your-app/testing-your-app/testing-on-mobile-device#id-2.-verify-correct-flutter-version). ​By following these steps, you can fix the errors that you face after downloading the code and run locally. 
 
-### Step 3: Upgrading or Downgrading to the correct Flutter version
-
-If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about upgrading our Flutter [here](https://docs.flutterflow.io/deploying-your-app/testing-your-app/testing-on-mobile-device#id-2.-verify-correct-flutter-version). ​By following these steps, you can fix the errors that you face after downloading the code and run locally. 
-
-If you still face challenges, don't hesitate to reach out to our support team through Live chat or by emailing support@flutterflow.io
+If you continue to experience issues, contact the FlutterFlow support team via live chat or email at support@flutterflow.io.
 
 
 
