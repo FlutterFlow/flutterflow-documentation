@@ -1,9 +1,9 @@
 ---
 keywords: ['firebase-auth', 'delete-user', 'firestore-cleanup']
-slug: /deleting-firebase-users-and-related-data-in-flutterflow
-title: Deleting Firebase Users and Related Data in FlutterFlow
+slug: /deleting-firebase-users-and-related-data
+title: Deleting Firebase Users and Related Data
 ---
-# Deleting Firebase Users and Related Data in FlutterFlow
+# Deleting Firebase Users and Related Data
 
 ![](../assets/20250430121300815719.png "Screenshot showing the delete user action")
 
@@ -11,7 +11,7 @@ title: Deleting Firebase Users and Related Data in FlutterFlow
 
 The delete action in Firebase is designed to remove the user from the authentication table only. This means the user's document in the database will not be affected. If you want to delete the user's document from the database as well, you'll need to create a custom action with some custom code.
 
-## Logging Out After Deletion
+### Logging Out After Deletion
 
 After completing the delete action, it is important to log out the user. Since the user no longer exists in the authentication system, logging out ensures the app routes the user back to the login page, which is typically the initial page of your project.
 

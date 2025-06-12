@@ -11,7 +11,7 @@ If your app always redirects to the **HomePage** in **Run Mode**, even after a p
 
 - Clear your browser cache and history.
 
-![How to clear browser cache](../assets/20250430121300291232.png)
+    ![How to clear browser cache](../assets/20250430121300291232.png)
 
 - Try a different browser or use incognito/private browsing mode to see if the issue persists.
 
