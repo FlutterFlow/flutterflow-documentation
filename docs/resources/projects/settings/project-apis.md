@@ -5,6 +5,8 @@ tags: [APIs, Projects]
 keywords: [projects, apis, refactor code]
 sidebar_position: 5
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Project API
 
@@ -26,25 +28,70 @@ Before using the Project YAML API, make sure you have the following:
 
 :::
 
+## YAML Overview
+
+### What are FlutterFlow Project YAMLs?
+
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format commonly used for configuration files. In FlutterFlow, **Project YAMLs represent the complete structural definition of your app,** essentially exposing the full project schema that powers your FlutterFlow app.
+
+### What's Included in the Project Schema?
+
+FlutterFlow's YAML files contain a comprehensive representation of your entire project, including:
+
+- **UI Components & Pages**: Widget trees, page layouts, component hierarchies, and styling configurations.
+- **App Configuration**: Settings like app details, authentication methods, integrations (AdMob, Firebase, etc.)
+- **Data Structures**: Database collections, API schemas, app state variables, and custom data types.
+- **Business Logic**: Actions, functions, conditional logic, and workflow definitions.
+- **Assets & Resources**: Custom code files, image references, fonts, and other project assets.
+- **Project Organization**: Folder structures, component libraries, and project metadata.
+
+### YAML vs. FlutterFlow UI
+
+Every change you make in the FlutterFlow visual editor — from dragging a widget onto a page to configuring a database collection, is ultimately stored as structured data in these YAML files. The FlutterFlow UI provides an intuitive visual interface for editing this underlying schema, while the Project API gives you direct programmatic access to the same data.
+
+### File Structure
+
+FlutterFlow automatically partitions your project into logical YAML files for optimal performance and organization. Each file represents a specific aspect of your project (e.g., `app-state`, `ad-mob`, individual pages, collections, etc.), making it easy to target specific updates without affecting the entire project.
+
 ## Base URL
 
 FlutterFlow provides different API endpoints for various environments. Use the appropriate base URL below depending on your needs:
 
-#### Production:
+<Tabs>
+<TabItem value="1" label="Production" default>
 ```jsx
 https://api.flutterflow.io/v2/
 ```
-#### Beta/Staging:
+</TabItem>
+<TabItem value="2" label="Beta/Staging">
 ```jsx
 https://api.flutterflow.io/v2-staging/
 ```
+</TabItem>
+<TabItem value="3" label="Enterprise">
 
-#### Enterprise:
-    - India: `https://api-enterprise-india.flutterflow.io/v2/`
-    - APAC: `https://api-enterprise-apac.flutterflow.io/v2/`
-    - US Central: `https://api-enterprise-us-central.flutterflow.io/v2/`
-    - Europe: `https://api-enterprise-europe.flutterflow.io/v2/`
+**India**
+```jsx
+ https://api-enterprise-india.flutterflow.io/v2/
+```
 
+**APAC**
+```jsx
+https://api-enterprise-apac.flutterflow.io/v2/
+```
+
+**US Central**
+```jsx
+https://api-enterprise-us-central.flutterflow.io/v2/
+```
+
+**Europe**
+```jsx
+https://api-enterprise-europe.flutterflow.io/v2/
+```
+</TabItem>
+</Tabs>
+   
 ## Authentication
 
 All API endpoints require authentication using a Bearer token. You'll need to include your FlutterFlow API token in the Authorization header of each request. See [how to get the API Token](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token).
@@ -165,7 +212,7 @@ You must validate the YAML content before applying changes to ensure it's proper
 :::info
 
 - In the `fileContent` object, you must provide the **entire content** of the file.
-- The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for new lines and indentation. For example, in the `fileContent` object, you see the actual multiline YAML content, which is not allowed ❌.
+- The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for new lines and indentation. For example, in the following `fileContent` object, you see the actual multiline YAML content, which is not allowed ❌.
     
     ```jsx
     {
@@ -245,7 +292,7 @@ This endpoint allows you to overwrite existing files in your FlutterFlow project
 ```
 :::info
 - In the `fileKeyToContent` object, you must provide the **entire content** of the file.
-- The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for newlines and indentation. For example, in the `fileKeyToContent` object, you see the actual multiline YAML content, which is not allowed ❌.
+- The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for newlines and indentation. For example, in the following `fileKeyToContent` object, you see the actual multiline YAML content, which is not allowed ❌.
     
     ```jsx
     {
