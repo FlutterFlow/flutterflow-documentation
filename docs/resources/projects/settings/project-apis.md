@@ -143,6 +143,8 @@ Before you read or update project files, you need to know what YAML files are av
 }
 ```
 
+The `fileNames` array lists out all the available YAML files. The `versionInfo` section provides metadata about the schema version and its unique fingerprint. If any part of `versionInfo` changes, it indicates that the API or the structure of the YAML responses has been updated.
+
 #### Example Usage
 ```jsx
 curl -X GET \
