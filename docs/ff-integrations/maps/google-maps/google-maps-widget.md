@@ -5,6 +5,7 @@ description: Learn how to add and configure the Google Maps widget in your Flutt
 tags: [Google Maps, Widget, Integration]
 sidebar_position: 2
 keywords: [FlutterFlow, Google Maps, Widget, Integration]
+toc_max_heading_level: 4
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -160,8 +161,12 @@ com/embed/1b06bfc1365f4fc68f15089d4f84d798?sid=ff33ea94-cd7f-4b4e-822e-6fe0743db
 #### Map Takes Gesture Preference
 When this is turned on, any gestures, such as zooming or dragging, will only affect the map, not the rest of the page. This is helpful if your map is inside a scrollable page, so users can interact with the map without accidentally scrolling the whole page.
 
+:::info
+This setting is only available if **Allow Interacting** and **Allow Zooming** are turned on.
+:::
+
 <Tabs>
-<TabItem value="1" label="Map Takes Gesture Preference = Disabled" default>
+<TabItem value="1" label="Map Takes Gesture Preference (Disabled)" default>
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -188,7 +193,7 @@ When this is turned on, any gestures, such as zooming or dragging, will only aff
 </div>
 <p></p>
 </TabItem>
-<TabItem value="2" label="Map Takes Gesture Preference = Enabled">
+<TabItem value="2" label="Map Takes Gesture Preference (Enabled)">
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
