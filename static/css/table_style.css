@@ -1,0 +1,197 @@
+/*
+ * Pricing table styles for plan-pricing.md
+ */
+
+/* Pricing table container */
+.pricing-table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.mobile-scroll-hint {
+  display: none;
+  text-align: center;
+  margin: 15px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Light mode hint color */
+[data-theme='light'] .mobile-scroll-hint {
+  color: #666;
+}
+
+/* Dark mode hint color */
+[data-theme='dark'] .mobile-scroll-hint {
+  color: #a0a0a0;
+}
+
+/* Simplified pricing table styles */
+.simplified-pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1rem 0;
+  table-layout: fixed;
+  line-height: 1.3;
+}
+
+.simplified-pricing-table th,
+.simplified-pricing-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ebeaf0;
+  border-left: 0;
+  border-right: 0;
+  vertical-align: top;
+}
+
+.simplified-pricing-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Light mode header background */
+[data-theme='light'] .simplified-pricing-table th {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* Dark mode header background */
+[data-theme='dark'] .simplified-pricing-table th {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* Light mode table borders */
+[data-theme='light'] .simplified-pricing-table th,
+[data-theme='light'] .simplified-pricing-table td {
+  border-bottom: 1px solid #ebeaf0;
+}
+
+/* Dark mode table borders */
+[data-theme='dark'] .simplified-pricing-table th,
+[data-theme='dark'] .simplified-pricing-table td {
+  border-bottom: 1px solid #404040;
+}
+
+.whats-changing-col {
+  width: 50%;
+}
+
+.section-header {
+  background-color: #e8e8ff !important;
+  font-weight: 600;
+}
+
+/* Light mode section header */
+[data-theme='light'] .section-header {
+  background-color: #e8e8ff !important;
+  color: #000;
+}
+
+/* Dark mode section header */
+[data-theme='dark'] .section-header {
+  background-color: #3a3a5c !important;
+  color: #ffffff;
+}
+
+.section-header td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.simplified-pricing-table tbody tr:not(.section-header) {
+  background-color: #ffffff;
+}
+
+/* Light mode row background */
+[data-theme='light'] .simplified-pricing-table tbody tr:not(.section-header) {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Dark mode row background */
+[data-theme='dark'] .simplified-pricing-table tbody tr:not(.section-header) {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Feature description styling - increased specificity */
+.simplified-pricing-table td .feature-description,
+.pricing-table-container .feature-description {
+  font-size: 12px !important;
+  opacity: 0.6 !important;
+  line-height: 1.1 !important;
+  margin-top: 0.2em;
+  display: block;
+  font-weight: normal !important;
+  color: inherit !important;
+}
+
+/* Dark mode feature description */
+[data-theme='dark'] .simplified-pricing-table td .feature-description,
+[data-theme='dark'] .pricing-table-container .feature-description {
+  opacity: 0.7 !important;
+}
+
+.feature-list {
+  padding-left: 1.5rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.feature-list li {
+  margin-bottom: 0.5rem;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
+}
+
+.price-up {
+  color: #e03131;
+  font-weight: bold;
+  margin-left: 0.3rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Dark mode price up color (slightly lighter red for better contrast) */
+[data-theme='dark'] .price-up {
+  color: #ff6b6b;
+}
+
+.price-down {
+  color: #2b8a3e;
+  font-weight: bold;
+  margin-left: 0.3rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Dark mode price down color (slightly lighter green for better contrast) */
+[data-theme='dark'] .price-down {
+  color: #51cf66;
+}
+
+@media (max-width: 768px) {
+  .pricing-table-container {
+    margin: 0 -20px;
+  }
+  
+  .mobile-scroll-hint {
+    display: block;
+  }
+  
+  .simplified-pricing-table th,
+  .simplified-pricing-table td {
+    padding: 0.5rem 0.4rem;
+  }
+  
+  .whats-changing-col {
+    width: 50%;
+  }
+}
