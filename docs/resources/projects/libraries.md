@@ -249,6 +249,47 @@ You can easily upgrade to newer versions of the libraries as they become availab
 ![update-library](imgs/update-library.avif)
 
 
+## Library Pages
+
+You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
+
+Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
+
+:::tip[Possible Use Cases]
+- **Super Apps** like Gojek and Uber with distinct modules such as ride booking, shopping, and payments. Each module can be developed as a separate library and imported into a single main project.
+- **Enterprise Apps** with isolated user journeys for different roles, such as admin and customer. Each role-based flow can be built as its own library and integrated into the core app as needed.
+- **White-labeled Apps** that share common onboarding flows can benefit from libraries. The onboarding process can be built once as a library and reused across all branded versions of the app.
+:::
+
+The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/fAgLrElyGNdf82NWGJte?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
 
 ## Library Values
 
@@ -289,6 +330,7 @@ To create library values, navigate to **Settings and Integrations > App Settings
     </iframe>
 </div>
 <p></p>
+
 
 #### Use Library Values
 After setting Library Values, they function just like any other variable in FlutterFlow. You can bind them to components, actions, API calls, or any property that allows you to configure dynamic values across your library project. You can access Library Values via the ****Set from Variable**** menu.
@@ -332,6 +374,7 @@ To set library values, navigate to **Settings and Integrations > Project Setup >
 :::tip
 For different [**development environments**](../../testing-deployment-publishing/development-environments/development-environments.md) (e.g., development vs. production), you can bind Library Values to [**environment values**](../../testing-deployment-publishing/development-environments/development-environments.md#environment-values). For instance, you could have two different Library Values for an API key, such as `DEV_OPENAI_API_KEY` and `PROD_OPENAI_API_KEY`, and bind them to the development and production environments to track API usage separately.
 :::
+
 
 ## Libraries with Firebase
 You can create collections and enable various Firebase features in library projects without connecting a separate Firebase project.
