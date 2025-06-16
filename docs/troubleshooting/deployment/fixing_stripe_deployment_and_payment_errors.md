@@ -25,7 +25,7 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
 4. **Firebase Project Permissions**
 
-    Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can reference the **[setup guide](/integrations/firebase/connect-to-firebase/)**
+    Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can also reference the **[setup guide](/integrations/firebase/connect-to-firebase/)**
 .
 
     ![](../assets/20250430121145949036.png)
