@@ -698,11 +698,14 @@ To add it to a specific project, go to **Settings > Project Dependencies**, clic
 
 ### Branch Setup 
 
-You’ll need two values from your Branch dashboard:
+You’ll need three values from your Branch dashboard:
 
-- **Branch Live Key** – your production API key from the Branch dashboard.
-- **Custom Domain** – your configured link domain (e.g., yourapp.app.link)
-This is the domain used to generate and handle smart links for your app.
+- **Branch Key** – your production or test key from the Branch dashboard.
+
+- **Custom Link Domain** – your primary Branch link domain (e.g., yourapp.app.link). This is used to generate and handle smart links.
+
+- **Alternate Link Domain** – an additional Branch domain (e.g., yourapp-alternate.app.link) that points to the same link data and behavior.
+This is recommended for ensuring better deliverability across platforms and channels, and must be included in your platform configuration.
 
 We recommend storing these values in Environment Variables so you can:
 - Manage them per environment (e.g., dev vs prod Branch keys).
@@ -710,10 +713,11 @@ We recommend storing these values in Environment Variables so you can:
 
 **Adding Library Values**
 
-When you add the Branch Deep Linking Library to your project, it will prompt you to provide three values:
+When you add the **Branch Deep Linking Library** to your project (ensure you are on +0.0.7 and above), it will prompt you to provide four values:
 
 - `branchApiKey`
-- `branchHostUrl`
+- `branchLinkDomain`
+- `branchAlternateLinkDomain`
 - `isTestMode`
 
 Use the environment variables you created to populate these values.
@@ -787,11 +791,12 @@ Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action
 
 To receive and act on deep link data, go to your **Entry Page** or **Logged-In Page** and add the `handleBranchDeeplink` action as the first action in the page flow. 
 
-This `handleBranchDeeplink` action listens for incoming Branch Deeplinks and handles routing logic. This action should be added to your Entry Page or Logged-In Page under the **onPageLoad** trigger. It initializes a stream listener that waits
-for Branch links to be opened (either deferred or direct).
+This `handleBranchDeeplink` action listens for incoming Branch Deeplinks and handles routing logic. This action should be added to your **Entry Page** or **Logged-In Page** under the **onPageLoad** trigger. It initializes a stream listener that waits for Branch links to be opened (either deferred or direct). Ensure this is the first action of your **on Page Load** action trigger.
+
+**`onLinkOpened` Action Callback**
 
 When a link is received, the `onLinkOpened` callback is triggered with
-the link data, allowing you to perform custom navigation or logic. You can perform your navigation logic in this action callback. 
+the [**link data**](#linkdata-action-parameter), allowing you to perform custom navigation or logic. You can perform your navigation logic in this action callback. 
 
 <div style={{
     position: 'relative',
@@ -821,19 +826,56 @@ the link data, allowing you to perform custom navigation or logic. You can perfo
 
 <p></p>
 
-**`linkData` Action Parameter**
+#### `linkData` Action Parameter
 
-The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link:
+The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link. 
 
-- **`$canonical_identifier`:** The original route path used when the link was generated (e.g., `/imageDetails/:id`).
+In the Dreambrush app example, we get the following link data: 
+
+```json
+{
+   "$og_title": "Check out my Ai Image on DreamBrush!",
+   "$publicly_indexable": true,
+   "imageId": "QiC94EaGNoonEKzln07A",
+   "~creation_source": 4,
+   "$og_description": "This image was created with DreamBrush app. You can check it out here.",
+   "+click_timestamp": 1750099254,
+   "$match_duration": 100000,
+   "~feature": "Ai Image Creation",
+   "$tags[0]": "generation",
+   "+match_guaranteed": true,
+   "$alias": "",
+   "$canonical_identifier": "/imageDetails/QiC94EaGNoonEKzln07A",
+   "+clicked_branch_link": true,
+   "~id": "1461141612502859827",
+   "+is_first_session": false,
+   "~campaign": "Image Generation",
+   "~referring_link": "https://dreambrush.app.link/DZ9liDTc6Tb",
+   "~channel": "Share"
+}
+
+```
+
+:::warning[Link Structure]
+Your link data might not look *exactly* like the example shown above. However, it will follow a **similar structure** with comparable keys and values.
+:::
+
+Some of the important keys we should know about:
+
+- **`$canonical_identifier`:** The original route path used when the link was generated (e.g., `/imageDetails/:id`). You can explicitly set this value when creating a link through the **[Generate Link](#generate-link-custom-action)** action. If you don’t set it, Branch will infer it based on the link's destination or content metadata.
 
 - **`~referring_link`:** The full Branch URL that was clicked.
 
-- **`page`:** The target page or screen the link is meant to open (e.g., paywall). This is a custom parameter set by the user when generating the link.
+- **`$og_title`:** This is the headline that will appear in the link preview. This is set by the user through the **[Generate Link](#generate-link-custom-action)** action.
+- **`$og_description`:** This is the description text shown below the title in the link preview. This is set by the user through the **[Generate Link](#generate-link-custom-action)** action.
 
-- Any custom parameters added during link creation (e.g., `campaign`, `productId`, `referrer`, etc.). Ensure the key and value is both `String` and `String`.
+- **`~channel`**, **`~feature`**, **`~campaign`** and **`$tags[0]`** are part of Branch’s user-defined analytics and attribution metadata. These fields are explicitly set by users when creating a link (e.g., via the **[Generate Link](#generate-link-custom-action)** action), and they help organize and analyze your link performance across platforms and campaigns.  
 
-This lets you write flexible, conditional navigation logic based on what was shared.
+- **`page`:**  This is a suggested custom key that can be set by the user when generating the link. It typically defines the target page or screen the app should navigate to when the link is opened (e.g., "paywall", "productPage", "onboardingStep2"). While not a reserved Branch key, it's a commonly used naming convention for handling deep links and routing logic within the app.
+
+- Any other custom parameters added during link creation (e.g., `productId`, `referrer`, etc.). Ensure the key and value is both `String` and `String`.
+
+This lets you write flexible, conditional navigation logic based on what was shared. For example, in the following example, we can even show a bottom sheet based on the page value. 
 
 
 <div style={{
@@ -864,18 +906,19 @@ This lets you write flexible, conditional navigation logic based on what was sha
 
 <p></p>
 
-:::tip
-Keep **"Allow Navigate Back"** checked when navigating from the Home Page to ensure it stays in the stack. This is applicable to any navigation from the Home Page, not limited to deeplinking navigation logic. 
-This allows the user to return to the Home Page at any time and ensures that deep link logic defined there continues to work.
-:::
-
 
 Use the link data from this callback to:
 - Navigate to a page.
 - Show a bottom sheet.
 - Load content from Firestore using a referenced ID.
 
+#### Using Global Context to Navigate
 
+In certain app structures, especially when the home page is removed from the navigation stack early, standard navigation using the local context may fail. To ensure deep linking and routing continue to work reliably in these scenarios, you can override the local context with the global navigator context.
+
+This approach ensures that navigation logic is not tied to the widget hierarchy at the time of execution, making it more robust and flexible.
+
+See a **[detailed example](#dreambrush-example)** using the DreamBrush app. 
 
 
 :::danger[Testing Deeplinks]
@@ -917,30 +960,34 @@ Incorrect structure may cause the Link Generation action to fail silently.
 
 These functions help you safely work with deep link data, extract values, and conditionally navigate based on link metadata.
 
-- **`isTargetingPage(linkData, targetPage)`** - Checks whether the page value in the link data matches a specific screen name. The `page` parameter is set by the user when generating the link from Branch dashboard or FlutterFlow. 
+- **`isTargetingPage(linkData, targetPage)`** - Checks whether the page value in the link data matches a specific screen name. The `page` parameter is set by the user when generating the link from Branch dashboard or FlutterFlow. For example, if the target page value in your deep link is "paywall", you can use this function to check for this value and navigate accordingly.
 
-- **`getCanonicalIdentifierFromLink(linkData)`** - Returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
+- **`getCanonicalIdentifierFromLink(linkData)`** - Helper function that returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
 
-- **`getReferringLinkFromLink(linkData)`** - Retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
+- **`getReferringLinkFromLink(linkData)`** - Helper function that retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
 
-- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). Useful for extracting the ID from a link. 
+- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). This is especially useful when your deep link contains a structured path, like `/imageDetails/abc123` and you want to retrieve just the ID (`abc123`).
 
-- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`).
+- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`). 
+
+:::warning
+If you're trying to retrieve default Branch keys like `~channel` or `$canonical_identifier`, make sure to include the special character (e.g., `~` or `$`) as part of the key string.
+:::
 
 - **`createLinkProperties(...)`** - Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
 
 
 
-### DreamBrush Link Generation Example
+### DreamBrush Example
 
-In the DreamBrush app, we can use `generateLink` after a user finishes generating an image.
-The link could include:
-- **page**: Current Page Route that is `/imageDetails/:imageRef`.
+In the DreamBrush app, we can use `generateLink` after a user finishes generating an image. The link could include:
+- **canonicalIdentifier**: Current Page Route that is `/imageDetails/:imageRef`.
+- **page**: Target page name `imageDetails`.
 - **title**: "Check out my AI image!"
 
 This link can then be shared via WhatsApp, email, or social media — and when clicked, it brings the recipient directly to that content inside the app.
 
-Here's a quick example of generating a Branch link from a page that uses a Firebase Document ID as a route parameter.
+Here's a quick example of generating a Branch link from a page that uses a **Firebase Document ID** as a route parameter.
 
 <div style={{
     position: 'relative',
@@ -999,21 +1046,72 @@ Now in your `handleBranchDeeplink` action callback, add the additional logic to 
     </iframe>
 </div>
 
+<p>
+</p>
+
+To demonstrate how to use the global context for navigation, add a new **Execute Custom Code** Action just before the **Navigate To** Action, and insert the following code.
+
+```js
+final context = appNavigatorKey.currentContext!;
+```
+
+This ensures that the navigation logic uses the global navigator context, which is essential if your app structure removes the home page early in the lifecycle. In such cases, relying on a local context may cause deep linking to fail—using a global context guarantees that navigation still works reliably.
+
+:::warning[Paid Plans]
+Note: The **Execute Custom Code** Action is available only on paid plans.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'
+}}>
+    <iframe 
+        src="https://demo.arcade.software/90ZeqJ3Zp0UQo1H0cdl8?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+
 
 ### FAQs
 
 <details>
 <summary>Why isn't my deep link working when I navigate to another page from the home page?</summary>
 
-It's likely because you're navigating in a way that removes the Home Page from the stack for example, disabling "**Allow Navigate Back**" in the Navigate Actions.
+This often happens because the Home Page gets removed from the navigation stack, especially when **Allow Navigate Back** is disabled in the **Navigate To** Action.
 
-Since the deep link handler is defined on the Home Page, it gets disposed and can’t respond when a deep link is triggered.
+Since the deep link handler is typically defined on the Home Page, it gets disposed once the page is removed, causing deep links to stop working when triggered later.
 
-✅ Solution:
+✅ Preferred Solution: **Use Global Context for Navigation**
 
-Keep the Home Page in the stack by enabling "**Allow Navigate Back**" on any navigation actions from your home page (not limited to navigation logic in onLinkOpened action callback).
+Instead of relying on the Home Page's presence to handle deep links, configure your navigation logic to use the global navigator context. This ensures navigation will work even if the Home Page has been removed from the stack.
 
-This ensures the Home Page stays active and can continue handling deep links.
+You can do this by adding an **Execute Custom Code** Action before the **Navigate To** Action.
+
+See the **[complete example](#using-global-context-to-navigate)**. 
+
+✅ Alternative (but limited) Solution: **Keep the Home Page in Stack**
+
+If you're not using global context, you can prevent this issue by keeping the Home Page in memory:
+
+Enable "Allow Navigate Back" on any navigation actions from your Home Page, even if the navigation isn't triggered from deep links directly.
+
+This keeps the Home Page alive so it can continue listening for deep link events.
 
 </details>
 
