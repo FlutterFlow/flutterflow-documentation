@@ -5,7 +5,7 @@ title: Fixing Razorpay Deployment
 ---
 # Fixing Razorpay Deployment
 
-Razorpay is a major payment processor in India. Integrating [Razorpay](https://razorpay.com/) can allow users to make payments using their app. This article outlines some common scenarios and troubleshooting instructions for Razorpay deployment issues.
+Razorpay is a major payment processor in India. Integrating **[Razorpay](https://razorpay.com/)** can allow users to make payments using their app. This article outlines some common scenarios and troubleshooting instructions for Razorpay deployment issues.
 
 1. **Firebase Integration and Auth**
 
@@ -28,7 +28,7 @@ Razorpay is a major payment processor in India. Integrating [Razorpay](https://r
 
 4. **Firebase Project Permissions**
 
-    Make sure your Firebase project has the required permissions activated. Access management and service configuration are two essential permissions to focus on. For guidance on setting these up, look at the instructions in the [FlutterFlow Project Setup](https://docs.flutterflow.io/resources/projects/settings/project-setup/).
+    Make sure your Firebase project has the required permissions activated. Access management and service configuration are two essential permissions to focus on. For guidance on setting these up, look at the instructions in the **[FlutterFlow Project Setup](/resources/projects/settings/project-setup/)**.
 
 5. **Razorpay Keys Check**
 

@@ -29,7 +29,7 @@ When you download your project from FlutterFlow and run it locally in your IDE, 
 
 3. **Upgrading or Downgrading to the correct Flutter version**
 
-    If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about [**upgrading Flutter**](https://docs.flutterflow.io/deploying-your-app/testing-your-app/testing-on-mobile-device#id-2.-verify-correct-flutter-version). ​By following these steps, you can fix the errors that you face after downloading the code and run locally. 
+    If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about [**upgrading Flutter**](/testing/local-run/#4-running-app-on-device). ​By following these steps, you can fix the errors that you face after downloading the code and run locally. 
 
 If you continue to experience issues, contact the FlutterFlow support team via live chat or email at support@flutterflow.io.
 

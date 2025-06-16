@@ -11,11 +11,11 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
 1. **Firebase Connection**
 
-    Stripe integration requires a connected Firebase project. Before running through this checklist, it's important to ensure your FlutterFlow project is linked to Firebase, a crucial step for successful payment processing. Detailed guidance can be found at [FlutterFlow's Firebase Setup Guide](https://docs.flutterflow.io/data-and-backend/firebase/firebase-setup).
+    Stripe integration requires a connected Firebase project. Before running through this checklist, it's important to ensure your FlutterFlow project is linked to Firebase, a crucial step for successful payment processing. Detailed guidance can be found at **[FlutterFlow's Firebase Setup Guide](/integrations/firebase/connect-to-firebase/)**.
 
 2. **Upgrade to Firebase Blaze Plan**
 
-    Stripe functionality requires a Firebase Blaze Plan for operational capabilities. To avoid disruptions, you will need to upgrade from the Firebase Spark plan to the Blaze plan. Learn more about Google's process for upgrading [here](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans).
+    Stripe functionality requires a Firebase Blaze Plan for operational capabilities. To avoid disruptions, you will need to upgrade from the Firebase Spark plan to the Blaze plan. Learn more about **[Google's process for upgrading](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans)**.
 
 3. **Set the Google Cloud Platform (GCP) Location**
 
@@ -25,13 +25,14 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
 4. **Firebase Project Permissions**
 
-    Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can reference the [setup guide](https://docs.flutterflow.io/data-and-backend/firebase/firebase-setup) on FlutterFlow Documentation.​
+    Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can reference the **[setup guide](/integrations/firebase/connect-to-firebase/)**
+ on FlutterFlow Documentation.​
 
     ![](../assets/20250430121145949036.png)
 
 5. **Correct Merchant Code**
 
-    Use the correct 3-letter merchant country code (example., "GBR" for the United Kingdom vs. "UK"). Incorrect codes can lead to failed transactions. For accurate codes, refer to [IBAN Country Codes](https://www.iban.com/country-codes).​
+    Use the correct 3-letter merchant country code (example., "GBR" for the United Kingdom vs. "UK"). Incorrect codes can lead to failed transactions. For accurate codes, refer to **[IBAN Country Codes](https://www.iban.com/country-codes)**.​
 
     ![](../assets/20250430121146161973.png)
     

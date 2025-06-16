@@ -5,7 +5,7 @@ title: Codemagic Deployment Error Identification
 ---
 # Codemagic Deployment Error Identification
 
-## How to Identify Your Codemagic Error
+**Identifying Errors in Codemagic**
 
 Follow the steps below to identify your codemagic error:
 
@@ -29,9 +29,7 @@ Follow the steps below to identify your codemagic error:
 
 - Now, press **Cmd/Ctrl + F** to search for the term **"error"** in the logs to find the root cause of the issue. Keep pressing **"Enter"** till you find the error ( this is usually at the bottom of the logs ).
 
-  If you search for "error" and still don't find an error message that makes sense to you then you can also try with the following keyword:
-    
-    **message**
+  If you search for "error" and still don't find an error message that makes sense to you then you can also try with the following keyword "message".
 
     ![](../assets/20250430121347925706.png)
 
