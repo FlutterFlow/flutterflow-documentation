@@ -65,7 +65,7 @@ There are different types of functions you can use in your app. Some examples in
   tasks, such as 
   formatting 
 data or performing calculations. In FlutterFlow, you can use 
-[**Code Expression**](functions/utility-functions.md#code-expressions) for simple data 
+[**Inline Function**](functions/utility-functions.md#inline-function-code-expressions) for simple data 
   manipulation tasks or use the 
   **[Combine Text](functions/utility-functions.md#combine-text)** built-in 
   function to concatenate strings.
