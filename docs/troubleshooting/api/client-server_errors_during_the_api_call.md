@@ -91,6 +91,6 @@ These errors occur on the API server side.
     The API server took too long to respond. Try simplifying your request or reducing the size of the data being sent.
 
 :::tip[Final tips]
-- Always check the API documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
+- Always check the API's own documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
 - Once you fix the issue, your calls should return a `200 OK`—which means everything is working as expected!
 :::
