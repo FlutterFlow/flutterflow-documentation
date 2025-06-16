@@ -6,13 +6,11 @@ title: Client-Server Errors during the API call
 # Client-Server Errors During the API Call
 
 
-When calling an API in FlutterFlow, you may run into client-server errors. These typically come as status codes that indicate what went wrong—either on your end (the client) or on the server you're requesting data from.
+When calling an API in FlutterFlow, you may run into client-server errors. These typically come as status codes that indicate what went wrong, either on your end (the client) or on the server you're requesting data from.
 
 This guide will help you understand the most common API error codes and how to fix them.
 
-## What is an API?
-
-An API (Application Programming Interface) lets two systems communicate with each other. When you make an API call, you're sending a request from your app (client) to a server, which responds with data.
+To learn more about APIs, check out our [API documentation guide](/resources/backend-logic/rest-api/).
 
 ## Common client-side status codes
 
@@ -23,7 +21,7 @@ These errors are usually caused by incorrect requests from the client side.
     Your request isn’t properly formatted. This could be due to a missing parameter, a typo, or incorrect syntax.
 
     :::tip
-    Check the API documentation to ensure you're including the correct fields and headers.
+    Check the API's own documentation to ensure you're including the correct fields and headers.
     :::
 
     ![400 Example](../assets/20250430121351345482.png)
@@ -90,7 +88,32 @@ These errors occur on the API server side.
 
     The API server took too long to respond. Try simplifying your request or reducing the size of the data being sent.
 
+
+**Troubleshooting Steps**
+
+- **Clear Browser Cache and Cookies**
+
+    If you're encountering a 400 Bad Request error, clearing your browser's cache and cookies can resolve issues related to expired or invalid data.
+
+- **Verify the Requested URL** 
+
+    Ensure the URL or endpoint is correct. Remember, domain names are case-sensitive.
+
+- **Adjust Request Parameters**
+
+    For 400 errors, check if the file size is too large (for POST requests) or if there are any other incorrect parameters.
+
+- **Consult API Documentation**
+
+    Always refer to the API's official documentation for specific requirements and troubleshooting tips.
+
+- **Contact API Support**
+
+    If you continue to face issues, reaching out to the API's support team can provide further assistance and insights into resolving the problem.
+
+Understanding these common API error status codes and their solutions can significantly smooth the development process, ensuring more efficient and effective communication between your application and the APIs you rely on.
+
 :::tip[Final tips]
-- Always check the API documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
-- Once you fix the issue, your calls should return a `200 OK`—which means everything is working as expected!
+- Always check the API's own documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
+- Once you fix the issue, your calls should return a `200 OK`, which means everything is working as expected!
 :::

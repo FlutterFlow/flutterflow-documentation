@@ -11,7 +11,7 @@ This guide shows you how to resolve such issues and ensure your API outputs are 
 
 Follow the steps below: 
 
-- **Set Proper Request Headers**
+1. **Set Proper Request Headers**
 
     Make sure your API call includes the appropriate headers to instruct the server on how to format the response. Add the following headers to your API configuration:
 
@@ -24,7 +24,7 @@ Follow the steps below:
 
     ![Setting Content-Type and Charset headers](../assets/20250430121409119593.png)
 
-- **Enable UTF-8 Decoding in FlutterFlow**
+2. **Enable UTF-8 Decoding in FlutterFlow**
 
     If the server does not specify encoding—or if you're still getting corrupted text—you can configure FlutterFlow to decode the API response as UTF-8 manually.
 
