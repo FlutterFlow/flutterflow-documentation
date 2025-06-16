@@ -137,7 +137,7 @@ Follow the steps below to add this action:
 3. Search and select the **Razorpay Payment** (under *Integrations*) action.
 4. Enter or use a variable for specifying the total amount under the **Amount** section. **Note** that the value should be specified in the currency's smallest unit.
     - For example, *$24.99* should be passed as *2499* (as a round-off integer; otherwise, it would be automatically rounded); similarly, for an amount of ₹120.00, 12000 should be passed.
-    - Most probably, you'll specify this value from a variable. If you do so, you might need this [inline function](../../resources/control-flow/functions/utility-functions.md#inline-function) to convert the total amount in the required format: `amount.toStringAsFixed(2).replaceAll(".", "");`
+    - Most probably, you'll specify this value from a variable. If you do so, you might need this [inline function](../../resources/control-flow/functions/utility-functions.md#inline-function-code-expressions) to convert the total amount in the required format: `amount.toStringAsFixed(2).replaceAll(".", "");`
 5. Enter the **Currency Code** to be used for the amount, for example, *INR*, *USD*, *EUR*, or *BRL*. Make sure you enter a valid currency code; otherwise, the transaction won't go through. Download the complete [list of supported currencies](https://razorpay.com/docs/build/browser/assets/images/international-currency-list.xlsx).
 <p></p>
 
