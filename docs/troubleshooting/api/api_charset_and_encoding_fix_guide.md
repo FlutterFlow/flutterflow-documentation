@@ -15,9 +15,9 @@ Follow the steps below:
 
     Make sure your API call includes the appropriate headers to instruct the server on how to format the response. Add the following headers to your API configuration:
 
-    `Content-Type: application/json`
+    - `Content-Type: application/json`
 
-    `Charset: utf-8`​
+    - `Charset: utf-8`​
 
 
     These headers tell the server to return the data in JSON format using UTF-8 encoding, which is compatible with FlutterFlow.

@@ -10,7 +10,7 @@ When calling an API in FlutterFlow, you may run into client-server errors. These
 
 This guide will help you understand the most common API error codes and how to fix them.
 
-To learn more about APIs, check out our [API documentation guide](/resources/backend-logic/rest-api/).
+To learn more about APIs, check out our **[API documentation guide](/resources/backend-logic/rest-api/)**.
 
 ## Common client-side status codes
 
