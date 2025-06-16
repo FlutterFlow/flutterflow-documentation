@@ -11,6 +11,9 @@ const config: Config = {
   onBrokenMarkdownLinks: 'throw',
   onBrokenAnchors: 'throw',
   favicon: 'logos/favicon.png',
+  clientModules: [
+    require.resolve('./src/js/table-helpers.js'),
+  ],
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],

@@ -4,7 +4,7 @@ title: Pin to FlutterFlow Version
 tags: [Versioning]
 keywords: [Versioning, FlutterFlow Version Management, Pin project FlutterFlow, Downgrade FlutterFlow version, Upgrade FlutterFlow version, FlutterFlow stable releases]
 description: Learn how to manage the FlutterFlow version used for your project.
-sidebar_position: 7
+sidebar_position: 2
 ---
 
 # Pinning Projects to Stable FlutterFlow Versions
