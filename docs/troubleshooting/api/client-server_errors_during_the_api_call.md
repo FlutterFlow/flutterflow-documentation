@@ -23,7 +23,7 @@ These errors are usually caused by incorrect requests from the client side.
     Your request isn’t properly formatted. This could be due to a missing parameter, a typo, or incorrect syntax.
 
     :::tip
-    Check the API documentation to ensure you're including the correct fields and headers.
+    Check the API's own documentation to ensure you're including the correct fields and headers.
     :::
 
     ![400 Example](../assets/20250430121351345482.png)
