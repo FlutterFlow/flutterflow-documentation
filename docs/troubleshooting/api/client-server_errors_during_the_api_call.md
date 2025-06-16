@@ -12,13 +12,13 @@ This guide will help you understand the most common API error codes and how to f
 
 To learn more about APIs, check out our **[API documentation guide](/resources/backend-logic/rest-api/)**.
 
-## Common client-side status codes
+## Common Client-Side Status Codes
 
 These errors are usually caused by incorrect requests from the client side.
 
-- **400 – Bad request**
+- **400 – Bad Request**
 
-    Your request isn’t properly formatted. This could be due to a missing parameter, a typo, or incorrect syntax.
+    The 400 error is a generic response indicating that the server could not understand the request due to malformed syntax. Common causes include incorrect query parameters or missing fields in the request body. Ensure your request is correctly formatted and all required information is included.
 
     :::tip
     Check the API's own documentation to ensure you're including the correct fields and headers.
@@ -28,19 +28,19 @@ These errors are usually caused by incorrect requests from the client side.
 
 - **401 – Unauthorized**
 
-    You didn’t provide the correct credentials (like an API key). Most APIs require authentication via headers.
+    This status code appears when authentication has not yet been provided. To resolve this, ensure you have signed up for the API and included your API key in the HTTP header of your request.
 
     ![401 Example](../assets/20250430121350799148.png)
 
 - **403 – Forbidden**
-
-    You’re authenticated, but you don’t have permission to access the resource. This could be due to API plan restrictions or role-based access.
+    
+    Receiving a 403 error means you're authenticated but do not have permission to access the requested resource. This could be due to using the wrong API key or attempting to access features not available in your subscription plan.
 
     ![403 Example](../assets/20250430121351077308.png)
 
-- **404 – Not found**
+- **404 – Not Found**
 
-    The URL you’re requesting doesn’t exist. This could be due to a typo or a deprecated API endpoint.
+    The 404 error indicates that the requested URL does not exist on the server. This could be due to a typo in the URL or changes in the API endpoints. Always verify the URL and check for any recent API updates.
 
     :::tip
     Always double-check your request URL before troubleshooting further.
@@ -48,45 +48,45 @@ These errors are usually caused by incorrect requests from the client side.
 
     ![404 Example](../assets/20250430121350517804.png)
 
-- **407 – Proxy authentication required**
+- **407 – Proxy Authentication Required**
 
     You haven't authenticated with the proxy server. This is less common but can happen in restricted network environments.
 
-- **422 – Unprocessable entity**
+- **422 – Unprocessable Entity**
 
     Your request was well-formed but couldn’t be processed. For example, passing a `latlng` without a comma.
 
-- **429 – Too many requests**
+- **429 – Too Many Requests**
 
-    You’ve hit your rate limit. Most APIs restrict the number of requests you can make in a certain timeframe.
+    This error occurs when too many requests are sent in a short period, exceeding the API's rate limits. To avoid this, implement request throttling or review your API subscription plan to ensure it meets your needs.
 
     :::tip
     Check your API plan limits and consider throttling requests from your app.
     :::
 
-## Common server-side status codes
+## Common Server-Side Status Codes
 
 These errors occur on the API server side.
 
-- **500 – Internal server error**
+- **500 – Internal Server Error**
 
-    The server ran into an unexpected issue. Double-check your request, but if it looks fine, the problem is likely on the server side.
+    A 500 error can occur for various reasons, often indicating that the API server has crashed. Check your request for accuracy and consult the API documentation for any known issues.
 
-- **501 – Not implemented**
+- **501 – Not Implemented**
 
-    The HTTP method you're using (example, PUT or PATCH) isn't supported by the API yet.
+    This error occurs when the HTTP method used in the request is not supported by the server. Trying a different HTTP method or checking the API documentation for supported methods can resolve this issue.
 
-- **502 – Bad gateway**
+- **502 – Bad Gateway**
 
-    The API server is using a gateway or proxy, and it failed to get a valid response from the upstream server. Usually a temporary issue.
+    This error means that the server, acting as a gateway or proxy, received an invalid response from the upstream server. It's usually a temporary issue that should be resolved by the API provider.
 
-- **503 – Service unavailable**
+- **503 – Service Unavailable**
 
-    The API server is overloaded or undergoing maintenance. Try again later.
+    The 503 status code indicates that the server is temporarily unable to handle the request due to overload or maintenance. Waiting before sending another request is often the best approach.
 
-- **504 – Gateway timeout**
+- **504 – Gateway Timeout**
 
-    The API server took too long to respond. Try simplifying your request or reducing the size of the data being sent.
+   A 504 error suggests that the server, acting as a gateway, did not receive a timely response from the upstream server. This could be due to network latency or the API server processing the request too slowly.
 
 
 **Troubleshooting Steps**
