@@ -5,39 +5,48 @@ title: Get the Sum of Firebase Document or API Values
 ---
 # Get the Sum of Firebase Document or API Values
 
-Sometimes, when working with databases, you might need to calculate the total of all values for a certain item or category. This is especially common when using APIs or working with Firebase. If you're looking to add up values from a database, this easy-to-follow guide is for you. 
+Sometimes you need to display a total—such as a subtotal or count—based on data fetched from Firebase or an API. This guide walks you through the steps to calculate and display that sum in FlutterFlow.
 
-## Steps to Get the Sum of Firebase Document or API Values
+:::info[Prerequisites]
+- A working Firebase collection or API that returns numeric values.
+- A FlutterFlow UI component (e.g., **Text**) where the sum will be displayed.
+:::
 
-Follow this simple steps below:
+**Steps to calculate the sum**
+
+1. **Identify where to display the total**
+
+    Decide where in your app the total will appear. For example, insert a **Text** widget that will show the computed sum.
+
+    ![](../assets/20250430121219360101.png)
+
+2. **Prepare your data type**
+
+    Next, you need to specify what kind of data you're adding up. For example, if you're working with numbers with decimal points, you'll classify your data as double. Make sure to indicate that you're dealing with a list of these values.
+
+    ![](../assets/20250430121219606895.png)
 
 
-### Step 1: Identify Where You Need the Total
+3. **Retrieve and map your data**
 
-First, decide where in your code you need to display the total sum. This could be a text field or a variable in your code where the final sum will be shown.
+    When fetching data from Firebase or an API, extract the values you want to sum. Use the `map()` function to create a list of those values.
 
-![](../assets/20250430121219360101.png)
+    ![](../assets/20250430121219871237.png)
 
-### Step 2: Prepare Your Data Type
+4. **Calculate the Sum**
 
-Next, you need to specify what kind of data you're adding up. For example, if you're working with numbers with decimal points, you'll classify your data as `double`. Make sure to indicate that you're dealing with a list of these values.
+    With your list of values ready, store them in a variable (let's call it `var1`). Then, decide on the format you want for your result. Use the `reduce` function to add up all the values in your list, `var1`, to get your total sum.
 
-![](../assets/20250430121219606895.png)
+    ![](../assets/20250430121220084430.png)
 
-### Step 3: Select Your Data
+5. **Checking Your Results**
 
-Now, choose the specific data you want to sum up. You do this by picking out the documents from your database query and then mapping out the exact data field you're interested in.
+    After completing these steps, you should have the total sum displayed where you need it. If it looks right, you've successfully calculated the sum!
 
-![](../assets/20250430121219871237.png)
+    [](../assets/20250430121220338400.png)
 
-### Step 4: Calculate the Sum
-
-With your list of values ready, store them in a variable (let's call it `var1`). Then, decide on the format you want for your result. Use the `reduce` function to add up all the values in your list, `var1`, to get your total sum.
-
-![](../assets/20250430121220084430.png)
-
-### Step 5: Checking Your Results
-
-After completing these steps, you should have the total sum displayed where you need it. If it looks right, you've successfully calculated the sum!
-
-![](../assets/20250430121220338400.png)
+:::tip[Trobleshooting]
+- Use `.isNotEmpty` to prevent errors when the list is empty.
+- Format the output using `.toStringAsFixed(2)` to show 2 decimal places if needed.
+- Optional: Store the sum in a global variable for use across multiple pages.
+:::

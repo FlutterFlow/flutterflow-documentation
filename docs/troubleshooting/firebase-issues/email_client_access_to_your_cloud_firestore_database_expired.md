@@ -1,37 +1,55 @@
 ---
 keywords: ['database', 'firebase', 'client']
 slug: /email-client-access-to-your-cloud-firestore-database-expired
-title: 'Email: Client access to your Cloud Firestore database expired'
+title: 'email: client access to your cloud firestore database expired'
 ---
-# Email: Client access to your Cloud Firestore database expired
+# Email: Client Access to Your Cloud Firestore Database Expired
 
-## Background
-You've received an email from the Firebase that "Client access to your Cloud Firestore database expired"​
+You may receive an email from Firebase with the subject:
 
-### Why Am I Seeing This Message?
+**"Client access to your Cloud Firestore database expired"**
 
-When the user enables the cloud firestore, there are two rules to select in order to get started:  
+This message typically appears when your Firestore database is in **Test Mode** and the access duration has expired.
 
-![](../assets/20250430121224235710.png)
+**Why Am I Seeing This Message?**
 
-1. Test Mode (Time bounded)
-2. Production Mode (Not Time bounded but secured at the start)
+    When setting up Firestore for the first time, Firebase offers two rule options:
 
-Usually, the user selects the Test Mode and the Firestore works fine, but after the time has been completed the client access get expired. To keep using Firestore user must update the rules by using either of the solutions below.​
+        1. **Test Mode** – Temporarily allows open access (expires after 30 days).
+        2. **Production Mode** – Starts off restricted and requires secure rules.
+
+        ![](../assets/20250430121224235710.png)
+
+If you selected **Test Mode** during setup, Firestore access will automatically expire after the preset period. To continue using Firestore, you'll need to update the rules using one of the following options:
+
+- **Option 1: Manage Firestore Rules From FlutterFlow**
+
+    You can manage and deploy Firestore rules directly from FlutterFlow.
+
+    [  Read the step-by-step instructions](https://docs.flutterflow.io/integrations/database/cloud-firestore/firestore-rules/)
+
+- **Option 2: Manually Update Firestore Rules in Firebase Console**
+
+    Follow these steps to manually update the rules:
+
+        1. Go to the [Firebase Console](https://console.firebase.google.com/).
+        2. Open your project and navigate to **Firestore Database**.
+        3. Select the **Rules** tab.
+
+        From here, you have two options:
+
+            - **Option A: Extend Test Mode**
+
+                Update the expiration timestamp to a future date if you're still in development.
+
+                ![](../assets/20250430121224547832.png)
+
+            - **Option B: Secure Your Rules for Production**
+
+                Update your rules to enforce proper authentication and access controls.
 
 
-### Manage the Firestore Rules directly from FlutterFlow
-Head over to this article to see step by steps instructions about how to Manage the Firestore Rules directly from FlutterFlow.
+                ![](../assets/20250430121224874215.png)
 
-### Manually update the Firestore Rules from Firebase
-In order to keep using Firestore, User should head over to the **Firebase Firestore** section and select **Rules**. Here we can see our previously defined rules, We have **two options** here, any of these options will solve the problem.
 
-- Update the timestamp date to a future date if you still want to keep it in test mode.​
-
-    ![](../assets/20250430121224547832.png)
-
-- Update the rules with some conditions in your database to make it secure.
-
-    ![](../assets/20250430121224874215.png)
-
-After applying this solution, your problem should be resolved, if the problem still persists, feel free to contact us at support@flutterflow.io​
+If the issue persists, contact us at [support@flutterflow.io](mailto:support@flutterflow.io) for further assistance.
