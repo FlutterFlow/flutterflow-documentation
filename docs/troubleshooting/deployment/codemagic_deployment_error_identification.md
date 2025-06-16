@@ -30,10 +30,11 @@ Follow the steps below to identify your codemagic error:
 - Now, press **Cmd/Ctrl + F** to search for the term **"error"** in the logs to find the root cause of the issue. Keep pressing **"Enter"** till you find the error ( this is usually at the bottom of the logs ).
 
   If you search for "error" and still don't find an error message that makes sense to you then you can also try with the following keyword:
-    - message
+    
+    **message**
 
-      ![](../assets/20250430121347925706.png)
+    ![](../assets/20250430121347925706.png)
 
-    - Now select and copy this error message and paste it in the Help Center search in the chat icon in the bottom-right corner to search the error. This will help you find the help article for this issue and then you can find the fix for it. 
+- Now select and copy this error message and paste it in the Help Center search in the chat icon in the bottom-right corner to search the error. This will help you find the help article for this issue and then you can find the fix for it. 
 
-      ![](../assets/20250430121348293622.gif)
+  ![](../assets/20250430121348293622.gif)

@@ -9,13 +9,13 @@ Encountering a "Run mode: Build failed" error can be frustrating when you're eag
 
 This guide provides a structured approach to troubleshooting and resolving "Run mode: Build failed" errors, ensuring a smooth development process for your projects.
 
-1. **Recognizing the Error**
+- **Recognizing the Error**
 
     Here's what the "Run mode: Build failed" error looks like inside of FlutterFlow:
 
     ![](../assets/20250430121148301014.png)
 
-2. **Understanding Test Mode vs. Run Mode**
+- **Understanding Test Mode vs. Run Mode**
 
     Here's a little background on run mode vs. test mode in FlutterFlow. Test mode runs as a "test" to help you identify errors before deployment. These features include a debugger and display warnings. Alternatively, run mode attempts to run the app in **release mode** to better mimic what your users can expect in production. In release mode, **warnings are mostly suppressed**, meaning it's important to ensure you are acknowledging and addressing warnings in debug mode before you enter run mode.
 
@@ -33,7 +33,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
 ## Common Scenarios and Solutions
 
-1. **Custom Code Failures**
+- **Custom Code Failures**
 
     - **Issue**: Your project's custom code doesn't show errors within the editor, but errors appear when you try to run the app.
 
@@ -43,7 +43,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
     - **Best practice**: Consider running the code locally on a sample Flutter project before implementing the custom code inside FlutterFlow to identify possible errors logged.
 
-2. **Widget Failures**
+- **Widget Failures**
 
     - **Issue**: A widget within your app causes the build to fail due to errors.
 
@@ -57,7 +57,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
             - Verify that widgets are named clearly for easy identification
 
-3. **Build Fails Without Error Messages**
+- **Build Fails Without Error Messages**
 
     - **Issue**: The build process fails without displaying an error message, making it challenging to diagnose the problem.
 
@@ -65,7 +65,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
         ![](../assets/20250430121148811672.png)
 
-4. **Grey Screen in Run Mode**
+- **Grey Screen in Run Mode**
 
     - **Issue**: Encountering a grey screen in run mode usually indicates an error suppressed by the release mode.
 
@@ -73,27 +73,27 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
 ## Checklist for Troubleshooting
 
-1. **Identify when and where the error occurs**: 
+- **Identify when and where the error occurs**: 
 
     Determine if the error is specific to run mode, test mode, or other instances like APK download or code download.
 
-2. **Locate the source of the error**: 
+- **Locate the source of the error**: 
 
     The error message often provides clues about where the problem lies, whether in custom code, a specific widget, or elsewhere.
 
-3. **Check for platform support**:
+- **Check for platform support**:
 
     For issues related to custom code, ensure compatibility with your target platforms.
 
-4. **Examine widget configuration**: 
+- **Examine widget configuration**: 
 
     Verify that all actions and configurations associated with widgets are complete and correct.
 
-5. **Utilize local debugging**: 
+- **Utilize local debugging**: 
 
     If the error is elusive, running the debugger locally on your downloaded code can help identify the issue.
 
-6. **Leverage browser tools**: 
+- **Leverage browser tools**: 
 
     The browser's console and developer tools can offer insights, especially when dealing with errors that don't manifest in traditional debug outputs.
 
