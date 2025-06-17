@@ -27,7 +27,7 @@ You can add and send push notifications manually or trigger them based on user a
 :::info[General Prerequisites]
 Before you begin, ensure that you:
 - Complete all the steps in 
-[**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
+[**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md). Note that, while setting up, make sure to follow step number 5 and 8 carefully from [**this section**](../../ff-integrations/firebase/connect-to-firebase-setup.md#allow-flutterflow-to-access-your-project) to properly add the **Cloud Functions Admin** role to **firebase@flutterflow.io** user.
 - Upgrade your Firebase project to the [**Blaze plan**](https://firebase.google.com/pricing) to enable [**Cloud Functions**](https://firebase.google.com/docs/functions), which are required specifically for FlutterFlow’s push notification setup, such as retrieving the FCM token and sending notifications trigger from FlutterFlow.  
 :::
 
