@@ -6,23 +6,15 @@ title: Content Manager Firestore Error
 
 # Content Manager Firestore Error
 
-You may encounter the following error when trying to use the **FlutterFlow Content Management System (CMS)**:
-
-```js
-Error updating Firestore Security Rules... 
-Make sure you set up Firebase for your project under "Settings" &gt; "Firebase".
-```
-
+You may see the following error message when accessing the **FlutterFlow Content Management System (CMS)**:
 
 ![](../assets/20250430121517855306.png)
 
 This error typically occurs when Firebase permissions or authentication settings are not properly configured. Follow the steps below to resolve it.
 
-**Step-by-Step Fix**
-
 1. **Enable Email/Password Sign-In**
 
-    1. Open the [Firebase Console](https://console.firebase.google.com/).
+    1. Open the **[Firebase Console](https://console.firebase.google.com/)**.
     2. Select your project.
     3. From the left-hand menu, click **Authentication**.
     4. Click **Get started** (if not already started).
@@ -46,7 +38,7 @@ This error typically occurs when Firebase permissions or authentication settings
 
     To add these permissions:
 
-    1. In the [Firebase Console](https://console.firebase.google.com/), open your project.
+    1. In the **[Firebase Console](https://console.firebase.google.com/)**, open your project.
     2. Navigate to **Project Settings** > **Users & Permissions**.
     3. Check if `firebase@flutterflow.io` has the roles listed above.
 
@@ -73,12 +65,7 @@ This error typically occurs when Firebase permissions or authentication settings
 
 5. **Ensure You're Using the Latest FlutterFlow Version**
 
-    Press:
-
-    - `Ctrl + R` (on Windows) or  
-    - `Cmd + R` (on macOS)
-
-    ...to refresh and ensure you’re on the latest version of FlutterFlow.
+    Press `Ctrl + R` (on Windows) or `Cmd + R` (on macOS) to refresh and ensure you’re on the latest version of FlutterFlow.
 
 
 6. **Clear Cache and Re-Login**
@@ -88,7 +75,7 @@ This error typically occurs when Firebase permissions or authentication settings
     - Clear your browser cache.
     - Log out and log back into FlutterFlow.
 
-If the issue persists, [visit this guide](https://docs.flutterflow.io) for additional support.
+
 
 
 :::info[Still Not Working?]
@@ -99,7 +86,7 @@ If none of the steps resolve the issue:
 
 1. Remove existing Firebase permissions.
 2. Re-add all necessary roles from scratch.
-3. Follow the full setup instructions in the [official FlutterFlow Firebase integration guide](https://docs.flutterflow.io/integrations/firebase/overview).
+3. Follow the full setup instructions in the **[official FlutterFlow Firebase integration guide](/integrations/firebase/connect-to-firebase/)**.
 
 
 By following the steps above, you should be able to resolve the error and continue using FlutterFlow CMS without interruptions.

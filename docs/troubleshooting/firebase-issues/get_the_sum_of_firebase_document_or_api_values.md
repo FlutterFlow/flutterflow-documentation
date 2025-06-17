@@ -5,29 +5,29 @@ title: Get the Sum of Firebase Document or API Values
 ---
 # Get the Sum of Firebase Document or API Values
 
-Sometimes you need to display a total—such as a subtotal or count—based on data fetched from Firebase or an API. This guide walks you through the steps to calculate and display that sum in FlutterFlow.
+Sometimes you need to display a total, such as a subtotal or count based on data fetched from Firebase or an API. This guide walks you through the steps to calculate and display that sum in FlutterFlow.
 
 :::info[Prerequisites]
 - A working Firebase collection or API that returns numeric values.
-- A FlutterFlow UI component (e.g., **Text**) where the sum will be displayed.
+- A FlutterFlow UI component (example, **Text**) where the sum will be displayed.
 :::
 
-**Steps to calculate the sum**
+**Steps to Calculate the Sum of Firebase Document or API Values**
 
-1. **Identify where to display the total**
+1. **Identify where to Display the Total**
 
     Decide where in your app the total will appear. For example, insert a **Text** widget that will show the computed sum.
 
     ![](../assets/20250430121219360101.png)
 
-2. **Prepare your data type**
+2. **Prepare your Data Type**
 
     Next, you need to specify what kind of data you're adding up. For example, if you're working with numbers with decimal points, you'll classify your data as double. Make sure to indicate that you're dealing with a list of these values.
 
     ![](../assets/20250430121219606895.png)
 
 
-3. **Retrieve and map your data**
+3. **Retrieve and Map your Data**
 
     When fetching data from Firebase or an API, extract the values you want to sum. Use the `map()` function to create a list of those values.
 

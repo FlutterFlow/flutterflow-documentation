@@ -1,9 +1,9 @@
 ---
 keywords: ['database', 'firebase', 'client']
-slug: /email-client-access-to-your-cloud-firestore-database-expired
-title: 'email: client access to your cloud firestore database expired'
+slug: /client-access-to-firestore-expired
+title: Client Access to Firestore Expired
 ---
-# Email: Client Access to Your Cloud Firestore Database Expired
+# Client Access to Firestore Expired
 
 You may receive an email from Firebase with the subject:
 
@@ -24,15 +24,13 @@ If you selected **Test Mode** during setup, Firestore access will automatically 
 
 - **Option 1: Manage Firestore Rules From FlutterFlow**
 
-    You can manage and deploy Firestore rules directly from FlutterFlow.
-
-    [  Read the step-by-step instructions](https://docs.flutterflow.io/integrations/database/cloud-firestore/firestore-rules/)
+    You can **[manage and deploy Firestore rules](/integrations/database/cloud-firestore/firestore-rules/)** directly from FlutterFlow.
 
 - **Option 2: Manually Update Firestore Rules in Firebase Console**
 
     Follow these steps to manually update the rules:
 
-        1. Go to the [Firebase Console](https://console.firebase.google.com/).
+        1. Go to the **[Firebase Console](https://console.firebase.google.com/)**.
         2. Open your project and navigate to **Firestore Database**.
         3. Select the **Rules** tab.
 

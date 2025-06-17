@@ -1,9 +1,9 @@
 ---
 keywords: ['storage', 'firebase', 'cors']
-slug: /how-to-configure-cors-in-firebase-storage
-title: How to Configure CORS in Firebase Storage
+slug: /configuring-cors-for-firebase-storage
+title: Configuring CORS for Firebase Storage
 ---
-# How to Configure CORS in Firebase Storage
+# Configuring CORS for Firebase Storage
 
 When you deploy your web app to a custom domain, the domain and the Firebase Storage bucket are hosted on different servers. This means that the browser will block requests to the Firebase Storage bucket from your web app, because the origins (the domains and ports) of the two servers are different.
 
@@ -11,15 +11,11 @@ When you deploy your web app to a custom domain, the domain and the Firebase Sto
 
 CORS stands for **Cross-Origin Resource Sharing**. It allows you to specify which origins are allowed to access your resources. By configuring CORS, you can tell the browser that your web app is allowed to make requests to the Firebase Storage bucket, even though the two servers are hosted on different domains.
 
-## How to configure CORS in Firebase Storage
-
 Follow these steps to configure CORS for your Firebase Storage bucket:
 
-1. **Open Google Cloud Console**
+1. Open **[Google Cloud Console](https://console.cloud.google.com)**.
 
-    Go to [Google Cloud Console](https://console.cloud.google.com).
-
-2. **Launch the Cloud Shell**
+2. **Launch the Cloud Shell**:
 
     Click the **Activate Cloud Shell** icon in the top-right corner.
 
@@ -30,7 +26,7 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     ![](../assets/20250430121203911156.png)
 ​
 
-3. **Run the following command:**
+3. **Run the following Command:**
 
     ```js
     gcloud config set project &lt;your-project-id&gt;
@@ -42,7 +38,7 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     cd gs://&lt;your-bucket-name&gt;
     ```
 
-5. **Run the `cors` command to configure CORS:**
+5. **Run the `cors` Command to Configure CORS:**
 
     ```js
     gsutil cors set cors.json gs://&lt;your-bucket-name&gt;
@@ -66,6 +62,6 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     "origins": ["https://www.example.com"], "allowedHeaders": ["Content-Type", "Authorization"]
     ```
 
-For more information on configuring CORS in Firebase Storage, please see the [official documentation](https://firebase.google.com/docs/storage/web/download-files#cors_configuration).
+For more information on configuring CORS in Firebase Storage, please see the **[official documentation](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)**.
 
 

@@ -1,65 +1,52 @@
 ---
 keywords: ['firebase', 'deployed', 'firestore']
 slug: /what-to-do-if-firestore-indexes-are-not-deployed
-title: What To Do If Firestore Indexes Are Not Deployed
+title: What to Do If Firestore Indexes Are Not Deployed
 ---
-# What To Do If Firestore Indexes Are Not Deployed
+# What to Do If Firestore Indexes Are Not Deployed
 
-Properly deployed Firestore indexes are essential for your app's performance and functionality. If your Firebase indexes are not being deployed, follow this clear, step-by-step troubleshooting guide.
-
----
-
-## 1. Problem Overview
-
-- Issue: Firestore indexes are not being deployed as expected.
-- Expected Outcome:** Indexes should be successfully deployed to Firebase for optimal app performance.
+If your Firestore indexes are not being deployed as expected, follow these troubleshooting steps to resolve the issue and ensure your app performs correctly.
 
 ![](../assets/20250430121118024255.png)
 
+1. **Enable Email Sign-In**
 
-## 2. Troubleshooting Steps
+    - Open your Firebase project.
+    - Go to **Authentication** > **Sign-in method**.
+    - Enable **Email/Password** sign-in.
 
-### 🔹 Step 1: Enable Email Sign-In
-- Go to your Firebase project's **Authentication** section.
-- Ensure the **Email/Password** sign-in method is enabled.
-- **Reference:** [FlutterFlow Email Sign-In Docs](https://docs.flutterflow.io/data-and-backend/firebase/authentication/email-sign-in)
+2. **Grant Proper Permissions**
 
-### 🔹 Step 2: Grant Proper Permissions
-- Add **firebase@flutterflow.io** as a member of your Firebase project.
-- Assign the necessary permissions to manage and deploy Firestore indexes.
-- **Reference:** [Firestore Rules & Permissions Guide](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules)
+    - In your Firebase project, open **Project Settings** > **Users and permissions**.
+    - Add firebase@flutterflow.io as a member.
+    - Assign the following roles:
+        - **Editor**
+        - **Cloud Functions Admin**
+        - **Service Account User**
 
-![](../assets/20250430121118320891.png)
+    ![](../assets/20250430121118320891.png)
 
-### 🔹 Step 3: Update Firebase Rules
-- Review and update your Firestore security rules in both the Firebase console and FlutterFlow.
-- Make sure the rules are correctly set up for your app's needs.
-- **Reference:** [Firestore Rules Documentation](https://docs.flutterflow.io/data-and-backend/firebase/firestore-database-cloud-firestore/firestore-rules)
+3. **Update Firestore Rules**
 
+    - Update your Firestore rules in both Firebase Console and FlutterFlow.
+    - Ensure they match your app’s data access requirements.
+    - **[How to Update Firestore Rules](../integrations/database/cloud-firestore/firestore-rules/)**.
 
-### 🔹 Step 4: Verify Index Deployment
-- In the Firebase console, check the **Indexes** section to confirm deployment.
-    :::note
-    Deployment may take a few minutes. Refresh the console if needed.
-    :::
+    ![](../assets/20250430121118592064.png)
 
-![](../assets/20250430121118592064.png)
+4. **Verify Index Deployment**
 
----
+    - In the Firebase Console, go to **Firestore Database** > **Indexes**.
+    - Check that your indexes have been deployed.
+    
+        :::note
+        Deployment may take a few minutes. Refresh the page if you don’t see updates immediately.
+        :::
 
-## Additional Tips
+:::tip[Additional Tips]
+- Make sure you completed all the steps above before retrying deployment.
+- If the issue persists, review the **[FlutterFlow help article](https://intercom.help/flutterflow/en/articles/9127351-what-to-do-if-firestore-indexes-are-not-deployed)**.
+- For advanced troubleshooting, check Firebase logs and permissions in Google Cloud Console.
+:::
 
-- Double-check that all steps above are completed before retrying deployment.
-- If issues persist, consult the [official FlutterFlow support article](https://intercom.help/flutterflow/en/articles/9127351-what-to-do-if-firestore-indexes-are-not-deployed).
-- For advanced troubleshooting, review Firebase logs and permissions in the Google Cloud Console.
-
----
-
-Summary:
-- Enable Email Sign-In
-- Grant permissions to firebase@flutterflow.io
-- Update Firestore rules
-- Verify index deployment in the Firebase console
-
-Following these steps should resolve most issues with Firestore index deployment in FlutterFlow.
-
+Following these steps should help resolve Firestore index deployment issues in FlutterFlow.

@@ -1,43 +1,35 @@
 ---
 keywords: ['storage', 'firebase', 'missing']
 slug: /missing-firebase-storage-in-flutterflow-settings
-title: Missing Firebase storage in FlutterFlow settings
+title: Missing Firebase Storage in FlutterFlow Settings
 ---
 
-# Missing Firebase storage in FlutterFlow settings
+# Missing Firebase Storage in FlutterFlow Settings
 
-**Issue**
-
-You are trying to set up Firebase Storage in your FlutterFlow project, but the **Firebase Storage** option is missing from the **Firebase Settings** tab.
+When setting up Firebase Storage in your FlutterFlow project, you may notice that the **Firebase Storage** option is missing from the **Firebase Settings** tab.
 
     ![](../assets/20250430121309740417.png)
 
-**Why this happens**
+This usually happens when Firebase Storage has not been enabled for your project in the Firebase Console. Until it’s enabled there, the option won’t appear in FlutterFlow.
 
-    This issue occurs when Firebase Storage has not yet been enabled in the Firebase Console for your project. Until you set it up there, the option will not appear in FlutterFlow.
+Follow these steps to enable Firebase Storage and make it available in your FlutterFlow settings:
 
-**How to fix**
+1. In your FlutterFlow project, click **Firebase** from the left menu, then click **Open Firebase Console**.
 
-Follow these steps to enable Firebase Storage and make it visible in your FlutterFlow settings:
+    ![](../assets/20250430121310019673.png)
 
-    1. Inside your FlutterFlow project, click on **Firebase** from the left menu and then click **Open Firebase Console**.
+2. In the Firebase Console, go to the **Build** menu and select **Storage**.
 
-        ![](../assets/20250430121310019673.png)
+    ![](../assets/20250430121310317285.png)
 
-    2. In the Firebase Console, go to the **Build** menu and click **Storage**.
+3. Click **Get started** and complete the setup process.
 
-        ![](../assets/20250430121310317285.png)
+    ![](../assets/20250430121310619096.png)
 
-    3. Click **Get started** and complete the setup process.
-
-        ![](../assets/20250430121310619096.png)
-
-    4. Once the storage bucket is successfully created, return to FlutterFlow. You should now see the **Rules** option under Firebase Settings.
+4. After successfully creating the storage bucket, return to FlutterFlow. You should now see the **Rules** option under **Firebase Settings**.
 
     ![](../assets/20250430121310959552.png)
 
 :::note
-After creating Firebase Storage, it may take up to one hour for the changes to reflect in FlutterFlow.
+After setting up Firebase Storage, it may take up to one hour for the changes to appear in FlutterFlow.
 :::
-
-
