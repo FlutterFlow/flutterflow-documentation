@@ -700,11 +700,11 @@ To add it to a specific project, go to **Settings > Project Dependencies**, clic
 
 You’ll need three values from your Branch dashboard:
 
-- **Branch Key** – your production or test key from the Branch dashboard.
+- **Branch Key**: Your production or test key from the Branch dashboard.
 
-- **Custom Link Domain** – your primary Branch link domain (e.g., yourapp.app.link). This is used to generate and handle smart links.
+- **Custom Link Domain**: Your primary Branch link domain (e.g., yourapp.app.link). This is used to generate and handle smart links.
 
-- **Alternate Link Domain** – an additional Branch domain (e.g., yourapp-alternate.app.link) that points to the same link data and behavior.
+- **Alternate Link Domain**: An additional Branch domain (e.g., yourapp-alternate.app.link) that points to the same link data and behavior.
 This is recommended for ensuring better deliverability across platforms and channels, and must be included in your platform configuration.
 
 We recommend storing these values in Environment Variables so you can:
@@ -832,7 +832,7 @@ The `handleBranchDeeplink` action receives a `linkData` object that contains all
 
 In the Dreambrush app example, we get the following link data: 
 
-```json
+```jsx
 {
    "$og_title": "Check out my Ai Image on DreamBrush!",
    "$publicly_indexable": true,
@@ -873,7 +873,7 @@ Some of the important keys we should know about:
 
 - **`page`:**  This is a suggested custom key that can be set by the user when generating the link. It typically defines the target page or screen the app should navigate to when the link is opened (e.g., "paywall", "productPage", "onboardingStep2"). While not a reserved Branch key, it's a commonly used naming convention for handling deep links and routing logic within the app.
 
-- Any other custom parameters added during link creation (e.g., `productId`, `referrer`, etc.). Ensure the key and value is both `String` and `String`.
+- Any other custom parameters added during link creation (e.g., `productId`, `referrer`, etc.). Ensure the key and value are both `String`.
 
 This lets you write flexible, conditional navigation logic based on what was shared. For example, in the following example, we can even show a bottom sheet based on the page value. 
 
@@ -962,19 +962,19 @@ These functions help you safely work with deep link data, extract values, and co
 
 - **`isTargetingPage(linkData, targetPage)`** - Checks whether the page value in the link data matches a specific screen name. The `page` parameter is set by the user when generating the link from Branch dashboard or FlutterFlow. For example, if the target page value in your deep link is "paywall", you can use this function to check for this value and navigate accordingly.
 
-- **`getCanonicalIdentifierFromLink(linkData)`** - Helper function that returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
+- **`getCanonicalIdentifierFromLink(linkData)`**: Helper function that returns the canonical path (e.g., `/imageDetails/abc123`) that was originally attached to the smart link. Useful for extracting the base route or content reference associated with the shared link.
 
-- **`getReferringLinkFromLink(linkData)`** - Helper function that retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
+- **`getReferringLinkFromLink(linkData)`**: Helper function that retrieves the full Branch smart link URL from the data (typically under the `~referring_link` key). Useful for tracking, analytics, or verifying the source of the link.
 
-- **`getLastPathSegmentFromMap(linkData, key)`** - Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). This is especially useful when your deep link contains a structured path, like `/imageDetails/abc123` and you want to retrieve just the ID (`abc123`).
+- **`getLastPathSegmentFromMap(linkData, key)`**: Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). This is especially useful when your deep link contains a structured path, like `/imageDetails/abc123` and you want to retrieve just the ID (`abc123`).
 
-- **`getLinkValue(linkData, key)`** - Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`). 
+- **`getLinkValue(linkData, key)`**: Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`). 
 
 :::warning
 If you're trying to retrieve default Branch keys like `~channel` or `$canonical_identifier`, make sure to include the special character (e.g., `~` or `$`) as part of the key string.
 :::
 
-- **`createLinkProperties(...)`** - Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
+- **`createLinkProperties(...)`**: Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
 
 
 
@@ -1051,7 +1051,7 @@ Now in your `handleBranchDeeplink` action callback, add the additional logic to 
 
 To demonstrate how to use the global context for navigation, add a new **Execute Custom Code** Action just before the **Navigate To** Action, and insert the following code.
 
-```js
+```jsx
 final context = appNavigatorKey.currentContext!;
 ```
 
