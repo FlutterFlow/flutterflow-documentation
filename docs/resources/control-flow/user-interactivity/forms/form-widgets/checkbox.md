@@ -77,7 +77,8 @@ Here is a simple way to do it:
 </div>
 <p></p>
 
-### Setting initial value
+
+### Setting Initial Value
 
 You might want to show the checkbox with a default value, either check or uncheck. For example, showing the checked checkbox for travel insurance.
 
@@ -112,45 +113,9 @@ To set the initial value:
 </div>
 <p></p>
 
-### Saving checkbox value
+### Saving Checkbox Value
 
-You might want to save the checkbox's value as soon as it is checked or unchecked. For example, saving in an app state variable or Firestore document field. You can do so by adding the action on the checkbox widget.
-
-The checkbox widget provides you with the following types of actions (aka callbacks), and you can choose any of them to add actions under it.
-
-1. **On Toggled On**: Actions added under this will be triggered whenever the checkbox is selected/checked.
-2. **On Toggled Off**: Actions added under this will be triggered whenever the checkbox is unselected/unchecked.
-
-Here's how you do it:
-
-1. Select the **Checkbox** widget, select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-2. Select **On Toggled On** or **On Toggled Off** and add an action that will update the value. (e.g., [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../ff-integrations/database/cloud-firestore/firestore-actions.md), etc.)
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/O8U6Xv5IbVwH9qDwVVfV?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+You may want to immediately save the checkbox’s value when it is checked or unchecked. To do this, [add an action using the trigger](../../forms/form-triggers.md#on-toggled-on--on-toggled-off) that responds to changes in the widget’s selection.
 
 ### Customizing
 
@@ -310,7 +275,11 @@ Here's an example of how you can use the CheckboxGroup widget in your project:
 </div>
 <p></p>
 
-### Setting initial selection
+### Trigger Action on Change
+
+See how to [trigger an action when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
+
+### Setting Initial Selection
 
 Sometimes you might want to display the CheckboxGroup with some options already selected. For example, selecting the topping options that are already served with Pizza itself. You can do so by setting the initial selection for the CheckboxGroup.
 
@@ -522,6 +491,3 @@ To customize the checkbox border:
 </div>
 <p></p>
 
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
