@@ -11,7 +11,7 @@ You may receive an email from Firebase with the subject:
 
 This message typically appears when your Firestore database is in **Test Mode** and the access duration has expired.
 
-**Why Am I Seeing This Message?**
+Reason for This Message
 
     When setting up Firestore for the first time, Firebase offers two rule options:
 

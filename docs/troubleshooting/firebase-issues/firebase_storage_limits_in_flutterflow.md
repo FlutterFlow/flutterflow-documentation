@@ -12,7 +12,7 @@ Managing Firebase Storage properly is essential for controlling your app's file 
 
 - **Spark Plan (Free)**
 
-    - Includes up to **5 GB** of storage.
+    - Includes up to **1 GB** of storage.
     - Exceeding this limit requires upgrading to a paid plan.
 
 - **Blaze Plan (Pay-as-you-go)**

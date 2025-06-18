@@ -32,9 +32,9 @@ This error typically occurs when Firebase permissions or authentication settings
 
     FlutterFlow requires the following roles to be granted to `firebase@flutterflow.io` for proper functionality:
 
-    - **Editor**
-    - **Cloud Functions Admin**
-    - **Service Account Admin**
+    - Editor
+    - Cloud Functions Admin
+    - Service Account Admin
 
     To add these permissions:
 
@@ -78,15 +78,13 @@ This error typically occurs when Firebase permissions or authentication settings
 
 
 
-:::info[Still Not Working?]
-Try Reconfiguring Permissions from Scratch
-:::
+:::info[Still not working?]
+Try reconfiguring permissions from scratch.
 
 If none of the steps resolve the issue:
-
 1. Remove existing Firebase permissions.
 2. Re-add all necessary roles from scratch.
 3. Follow the full setup instructions in the **[official FlutterFlow Firebase integration guide](/integrations/firebase/connect-to-firebase/)**.
-
+:::
 
 By following the steps above, you should be able to resolve the error and continue using FlutterFlow CMS without interruptions.

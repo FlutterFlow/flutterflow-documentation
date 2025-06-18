@@ -28,37 +28,37 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
 
 3. **Run the following Command:**
 
-    ```js
+    ```jsx
     gcloud config set project &lt;your-project-id&gt;
     ```
 
 4. **Navigate to your Firebase Storage bucket:**
 
-    ```js
+    ```jsx
     cd gs://&lt;your-bucket-name&gt;
     ```
 
 5. **Run the `cors` Command to Configure CORS:**
 
-    ```js
+    ```jsx
     gsutil cors set cors.json gs://&lt;your-bucket-name&gt;
     ```
 
     You can also specify a list of allowed headers by running the following command:
 
-    ```js
+    ```jsx
     gsutil cors set cors.json gs://&lt;your-bucket-name&gt; --allowed-headers="Content-Type, Authorization"
     ```
 
     The `cors.json` file contains a list of origins that are allowed to access your resources. Each origin is a string that identifies a domain or port. For example, the following origin allows access from the domain `www.example.com`:
 
-    ```js
+    ```jsx
     "origins": ["https://www.example.com"]
     ```
 
     You can also specify a list of allowed headers. The following example allows access to the `Content-Type` and `Authorization` headers:
 
-    ```js
+    ```jsx
     "origins": ["https://www.example.com"], "allowedHeaders": ["Content-Type", "Authorization"]
     ```
 

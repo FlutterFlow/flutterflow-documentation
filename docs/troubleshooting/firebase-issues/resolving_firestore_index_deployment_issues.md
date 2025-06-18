@@ -1,9 +1,9 @@
 ---
-keywords: ['firebase', 'deployed', 'firestore']
-slug: /what-to-do-if-firestore-indexes-are-not-deployed
-title: What to Do If Firestore Indexes Are Not Deployed
+keywords: ['firebase', 'deployment', 'firestore']
+slug: /resolving-firestore-index-deployment-issues
+title: Resolving Firestore Index Deployment Issues
 ---
-# What to Do If Firestore Indexes Are Not Deployed
+# Resolving Firestore Index Deployment Issues
 
 If your Firestore indexes are not being deployed as expected, follow these troubleshooting steps to resolve the issue and ensure your app performs correctly.
 
@@ -30,7 +30,7 @@ If your Firestore indexes are not being deployed as expected, follow these troub
 
     - Update your Firestore rules in both Firebase Console and FlutterFlow.
     - Ensure they match your app’s data access requirements.
-    - **[How to Update Firestore Rules](../integrations/database/cloud-firestore/firestore-rules/)**.
+    - Follow the detailed steps in the **[Firestore Rules documentation](../integrations/database/cloud-firestore/firestore-rules/)** to correctly configure your rules.
 
     ![](../assets/20250430121118592064.png)
 
@@ -45,7 +45,6 @@ If your Firestore indexes are not being deployed as expected, follow these troub
 
 :::tip[Additional Tips]
 - Make sure you completed all the steps above before retrying deployment.
-- If the issue persists, review the **[FlutterFlow help article](https://intercom.help/flutterflow/en/articles/9127351-what-to-do-if-firestore-indexes-are-not-deployed)**.
 - For advanced troubleshooting, check Firebase logs and permissions in Google Cloud Console.
 :::
 
