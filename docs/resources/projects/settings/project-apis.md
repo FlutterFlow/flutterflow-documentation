@@ -351,13 +351,68 @@ curl -X POST \
 
 Let’s walk through a practical example of updating an app state variable using the Project APIs.
 
+:::info
+You can download and use <a href="../../../../static/jsons/FlutterFlow_APIs.postman_collection.json" download><strong>Postman Collection</strong></a> to quickly test all FlutterFlow Project APIs with pre-filled headers, parameters, and sample requests.
+:::
+
+
+
 First, we use the `/listPartitionedFileNames` endpoint to check if the `app-state` file exists in the project. Once confirmed, we call the `/projectYamls` endpoint to download the YAML file. The API returns a base64-encoded string representing a zip file, which we decode and download using tools like [Base64 to ZIP](https://b64encode.com/tools/base64-to-zip/).
 
-![image]
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/w2J3uhp0CbFusSBblbos?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 Next, we open the `app-state.yaml` file and update the `enableDarkMode` variable by setting its `persisted` value to `true`. We then convert the updated YAML into a properly escaped single line string and validate it using the `/validateProjectYaml` endpoint. If validation succeeds, we send the final update using the `/updateProjectYaml` endpoint.
 
-![image]
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/shyaylXuBXG6F97Pv0ir?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Error Handling
 This section outlines how the API handles errors, including common HTTP response codes and detailed validation feedback for YAML processing issues.
