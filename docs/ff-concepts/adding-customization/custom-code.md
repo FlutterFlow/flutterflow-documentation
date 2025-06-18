@@ -68,7 +68,9 @@ necessary code.
 This can significantly speed up the building process and reduce the need for in-depth programming
 knowledge, making it especially useful for custom functions and actions.
 
-**Limitation:** The prompts are limited to 100 characters currently.
+:::info[Limitation]
+Your prompt must be at least 3 words and no more than 500 characters.
+:::
 
 <div style={{
     position: 'relative',
