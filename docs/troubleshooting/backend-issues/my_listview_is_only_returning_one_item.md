@@ -1,30 +1,30 @@
 ---
 keywords: ['listview', 'returning', 'only']
 slug: /my-listview-is-only-returning-one-item
-title: My listview is only returning one item
+title: My ListView Is Only Returning One Item
 ---
-# My listview is only returning one item
+# My ListView Is Only Returning One Item
 
+If your **ListView** is only returning one item in FlutterFlow, check the following possible causes:
 
-## Things to check if you listview is only returning one item
+- **Use a Dynamic Widget**
 
-Here are the things to check if you are facing this issue:
+    Ensure you are using a dynamic widget such as **ListView**, **GridView**, **Row**, or **Column** to dynamically generate multiple children.
 
-## - Use a dynamic widget
+- **Query for a List**
 
-    Make sure you are using a **ListView**, **GridView**, **Row**, or **Column** to dynamically generate the children.
+    Confirm that your query retrieves a **list of documents** rather than a single record.
 
-## - Query for a list
-    Ensure your query is for a **list of documents** and not a single record.
+- **Check Filters**
 
-## - Check filters
-    If you are using a filter, make sure the data present in Firestore has **more than one record** that can pass through the filter.
+    If you're applying filters, make sure that your Firestore database contains **multiple records** that satisfy the filter conditions.
 
-## - Sufficient records
-    Make sure that your Firestore collection has **enough records**.
+- **Sufficient Records**
 
-## - ListType field 
+    Verify that your Firestore collection has **enough records** to display multiple items.
 
-    If you are querying a single field, make sure it’s a **ListType field** in both FlutterFlow and Firebase.
+- **List Type Field**
 
+    If you are querying a single field, ensure that it’s defined as a **ListType field** in both FlutterFlow and Firebase.
 
+By carefully reviewing these areas, you should be able to resolve the issue of your ListView returning only one item.
