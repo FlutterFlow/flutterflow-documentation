@@ -10,7 +10,7 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
 ![](../assets/20250430121304770472.png)
 
-**Troubleshooting Steps**
+**Troubleshooting Steps:**
 
 1. **Verify that you have Created a Firestore database**
 
