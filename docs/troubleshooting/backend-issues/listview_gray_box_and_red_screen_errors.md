@@ -1,10 +1,10 @@
 ---
 keywords: ['database', 'listview', 'mode']
-slug: /listview-gray-box-and-red-screen-errors-in-flutterflow
-title: ListView Gray Box and Red Screen Errors in FlutterFlow
+slug: /listview-gray-box-and-red-screen-errors
+title: ListView Gray Box and Red Screen Errors
 ---
 
-# ListView Gray Box and Red Screen Errors in FlutterFlow
+# ListView Gray Box and Red Screen Errors
 
 **Issue**
 

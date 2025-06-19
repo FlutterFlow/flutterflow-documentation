@@ -15,7 +15,7 @@ When performing the **Update Document** action, you may encounter a situation wh
 After performing the update action, always verify that the data has been correctly updated in your database. If your document is not streamed in real-time within your app, the updated data may not immediately appear. Check the data in FlutterFlow CMS or directly in Firebase to confirm the update.
 :::
 
-**Causes of Document Update Failures**
+**Causes of Document Update Failures:**
 
 When the update action fails, the action flow stops, preventing any subsequent actions from executing.
 

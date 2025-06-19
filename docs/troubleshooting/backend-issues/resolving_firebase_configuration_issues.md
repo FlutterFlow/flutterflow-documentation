@@ -1,9 +1,9 @@
 ---
-keywords: ['backend', 'issues', 'configuration']
-slug: /resolving-backend-configuration-issues
-title: Resolving Backend Configuration Issues
+keywords: ['firebase', 'issues', 'configuration']
+slug: /resolving-firebase-configuration-issues
+title: Resolving Firebase Configuration Issues
 ---
-# Resolving Backend Configuration Issues
+# Resolving Firebase Configuration Issues
 
 If you are facing issues related to the backend in FlutterFlow, follow these steps to ensure your Firebase setup is correctly configured:
 
@@ -39,7 +39,7 @@ If you are facing issues related to the backend in FlutterFlow, follow these ste
 
     If you have already completed the Firebase setup but continue to experience issues, remove existing permissions and complete the setup process from scratch.
 
-    **[Follow Firebase setup instructions](/integrations/firebase/connect-to-firebase/)**.
+    Follow **[Firebase setup](/integrations/firebase/connect-to-firebase/)** instructions.
 
 - **Authorized Domains**
 
