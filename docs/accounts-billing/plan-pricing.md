@@ -299,6 +299,9 @@ I am a Free user and have more than 2 projects – what will happen to them?
       <li>
         **Marketplace exception:** Existing Free plan projects published to the Marketplace prior to August 18, 2025 will not count toward your 2-project limit. If a project is later removed from Marketplace and you exceed the limit, it will be automatically archived.
       </li>
+      <li>
+        Archived projects are never deleted. If you later upgrade to a paid plan, you'll regain full access to edit and publish them.
+      </li>
     </ul>
   </li>
   <li>
