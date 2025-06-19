@@ -1,9 +1,9 @@
 ---
-keywords: ['backend', 'issues', 'troubleshooting']
-slug: /troubleshooting-backend-issues-in-flutterflow
-title: Troubleshooting Backend Issues in FlutterFlow
+keywords: ['backend', 'issues', 'configuration']
+slug: /resolving-backend-configuration-issues
+title: Resolving Backend Configuration Issues
 ---
-# Troubleshooting Backend Issues in FlutterFlow
+# Resolving Backend Configuration Issues
 
 If you are facing issues related to the backend in FlutterFlow, follow these steps to ensure your Firebase setup is correctly configured:
 
@@ -15,13 +15,11 @@ If you are facing issues related to the backend in FlutterFlow, follow these ste
         - **Cloud Functions Admin**
         - **Service Account User**
 
-    **[Learn how to assign Firebase permissions.](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**. 
+    Learn how to **[assign Firebase permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**. 
 
 - **Update Firebase Rules**
 
-    Ensure that your Firebase Firestore security rules are updated correctly.
-
-    **[See how to update Firebase rules.](/integrations/database/cloud-firestore/firestore-rules/)**.
+    Ensure that your Firebase Firestore security rules are updated correctly. See how to **[update Firebase rules](/integrations/database/cloud-firestore/firestore-rules/)**.
 
     After updating the rules, delete **firebase@flutterflow.io** from your authenticated users, redeploy the Firestore rules, and validate the schema again.
 
@@ -41,7 +39,7 @@ If you are facing issues related to the backend in FlutterFlow, follow these ste
 
     If you have already completed the Firebase setup but continue to experience issues, remove existing permissions and complete the setup process from scratch.
 
-    **[Follow Firebase setup instructions.](/integrations/firebase/connect-to-firebase/)**.
+    **[Follow Firebase setup instructions](/integrations/firebase/connect-to-firebase/)**.
 
 - **Authorized Domains**
 

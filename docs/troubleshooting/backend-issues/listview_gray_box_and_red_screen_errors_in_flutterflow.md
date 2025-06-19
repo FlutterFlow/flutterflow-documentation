@@ -1,10 +1,10 @@
 ---
 keywords: ['database', 'listview', 'mode']
-slug: /why-your-listview-shows-a-gray-box-or-red-screen-in-flutterflow
-title: Why Your ListView Shows a Gray Box or Red Screen in FlutterFlow
+slug: /listview-gray-box-and-red-screen-errors-in-flutterflow
+title: ListView Gray Box and Red Screen Errors in FlutterFlow
 ---
 
-# Why Your ListView Shows a Gray Box or Red Screen in FlutterFlow
+# ListView Gray Box and Red Screen Errors in FlutterFlow
 
 **Issue**
 
@@ -14,7 +14,7 @@ When trying to load a list of items from the database, the list doesn't load and
 
 A gray box means the backend query failed and couldn't return any result.
 
-**How to Know if Your Query is Working**
+**Verifying Query Functionality**
 
     - If the query is successful and returns items, you will see the list populated.
     - If there are no records matching the query, but the query itself is successful, you will see the **empty state** that you have configured for your list.
@@ -42,13 +42,13 @@ The behavior may differ depending on whether you are in **Run** or **Test** mode
 
 **Troubleshooting Steps**
 
-    If you are seeing a gray box and no filters or ordering are applied to your query, the issue is likely with the data itself — specifically, **null values** in your database.
+    If you are seeing a gray box and no filters or ordering are applied to your query, the issue is likely with the data itself, specifically **null values** in your database.
 
     Null values can cause FlutterFlow queries to fail.
 
     ![](../assets/20250430121239967301.png)
 
-    **How to check for null values**
+    **How to Check for Null Values**
 
         - Inspect your data in Firebase for any fields that have null values.
         - If your dataset is small, you can use the FlutterFlow CMS to review the data.
