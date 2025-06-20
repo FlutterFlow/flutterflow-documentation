@@ -114,3 +114,17 @@ Here's a quick guide to updating the app state variable. We need to add an actio
     </iframe>
 </div>
 
+## FAQs
+
+<details>
+<summary>
+Why are some variable types not available in App State?
+</summary>
+<p>
+Certain variable types, e.g., **Firestore Documents** and **Supabase Row**, can be used in Page State or Component State, but not in App State. This is because App State variables are designed to be global, meaning they stay in memory throughout the app. When App State variables are marked as persisted, the variable’s value is saved to the device’s local storage.
+
+Storing large or complex data types like documents in App State could lead to **performance or size issues**, especially on lower-end devices. For this reason, FlutterFlow limits App State to lightweight types, while Page/Component State allows for more flexibility since their scope is smaller and temporary.
+
+If you need to work with such data types, it's recommended to store them in Page or Component state instead.
+</p>
+</details>
