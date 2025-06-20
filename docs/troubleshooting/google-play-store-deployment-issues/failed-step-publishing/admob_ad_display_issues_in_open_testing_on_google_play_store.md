@@ -1,41 +1,58 @@
 ---
 keywords: ['testing', 'configuration', 'display']
-slug: /admob-ad-display-issues-in-open-testing-on-google-play-store
-title: AdMob Ad Display Issues in Open Testing on Google Play Store
+slug: /admob-ads-not-displaying-in-google-play-testing
+title: AdMob Ads Not Displaying in Google Play Testing
 ---
-# AdMob Ad Display Issues in Open Testing on Google Play Store
+# AdMob Ads Not Displaying in Google Play Testing
 
-If you’re experiencing issues with AdMob ads not displaying during open testing on the Google Play Store, you’re not alone. A common concern is that ads initially show but then suddently stops, and starts displaying only as "**Ad Loading**."
+:::info[Prerequisites]
+Before you proceed, ensure:
 
-The primary reason for ads not displaying during open testing is often the use of live ads instead of test ads, as well as proper configuration of AdMob and advertising IDs. 
+- You have an active **AdMob** account.
+- Your app is properly linked to **AdMob**.
+- Your app is uploaded to **Google Play Console** under Open Testing.
+:::
 
-Don't forget about the **Ad Approval Process**. After moving your app to production and receiving approval from AdMob, it can take a few days for ads to start appearing in your app. This delay is normal and should be expected.
+If your AdMob ads are not displaying during Open Testing on the **Google Play Store**, this may be due to configuration issues or missing approvals.
 
-## Steps to Ensure Ad Functionality:
+---
 
-Here are a few steps to take to make sure your ads are functioning properly in your app.
+**Use Test Ads During Testing**
 
-### 1. Use Test Ads During App Testing
+    When testing your app, always use **test ads** to avoid policy violations or issues during the testing phase. **Live ads** are designed to function primarily in production.
 
-When testing your app, always use test ads — this will help to avoid issues. Live ads are designed to show only when the app is in production.
-
-### 2. Check AdMob Settings
-
-Verify that your AdMob settings reflect the correct release status of your app. If your app is marked as not released in AdMob, your live ads will not display.
-
-### 3. Advertising ID Declaration
-
-For apps targeting Android 13 (API 33) or above, you must declare the use of the advertising ID in the Google Play Console. Ensure all information is complete and accurate to prevent ads from not loading.
-
-## Additional Tips
-
-### APP-ADS.TXT
-
-While optional, setting up the APP-ADS.TXT file can improve ad quality and security.
-
-### Connectivity and Ad Unit Configuration: 
-
-Ensure there are no issues with internet connectivity or ad unit configurations.
+    For more information, refer to **[Google AdMob Test Ads](https://developers.google.com/admob/android/test-ads)**.
 
 
-For additional guidance, visit FlutterFlow Documentation and the FlutterFlow Community.
+**Verify AdMob Account Configuration**
+
+    Check that:
+
+        - Your app is correctly registered in **AdMob**.
+        - The app’s release status in AdMob reflects its actual status on **Google Play Console**.
+
+    If your app is marked as **not released** in AdMob, live ads may not appear during testing.
+
+**Declare Advertising ID in Google Play Console**
+
+    For apps targeting **Android 13 (API 33)** or higher:
+
+        1. Navigate to your app in **Google Play Console**.
+        2. Under **App Content**, declare the use of the **Advertising ID**.
+        3. Provide all required information accurately.
+
+        Failure to declare this can prevent ads from loading during testing or after release.
+
+:::tip[Additional Configuration Tips]
+
+- **Connectivity:** Ensure stable internet connectivity on the device.
+- **Ad Unit Configuration:** Double-check that your **Ad Unit IDs** are correct in FlutterFlow.
+- **APP-ADS.TXT:**  
+  While optional, setting up an **app-ads.txt** file can improve ad quality and protect against unauthorized ad traffic. **[Learn more](https://support.google.com/admob/answer/10299703)**.
+:::
+
+:::info[Ad Approval Process]
+Even after moving your app to production and receiving **AdMob** approval, it can take a few days for live ads to start appearing fully. This delay is normal.
+:::
+
+If you continue to experience issues, please contact **FlutterFlow Support** at [support@flutterflow.io](mailto:support@flutterflow.io).
