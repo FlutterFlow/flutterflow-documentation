@@ -7,7 +7,7 @@ title: Cancel FlutterFlow Subscription
 
 You can cancel your FlutterFlow subscription at any time. After cancelation, you will continue to have access to paid features until the end of your current billing cycle.
 
-## Steps to Cancel Your Subscription
+## Steps to Cancel Your Subscription:
 
 1. Log in to FlutterFlow and click your name in the bottom-right corner to access your **My Account** page.
 

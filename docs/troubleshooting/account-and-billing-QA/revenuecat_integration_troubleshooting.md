@@ -11,14 +11,14 @@ Integrating RevenueCat adds in-app purchasing and subscription management to you
 
 RevenueCat requires that your app is published on the Google Play Store and Apple App Store to test in-app purchases.
 
-**Google Play Store**
+**Google Play Store:**
 
     - Create and submit a release in Google Play Console.
     - Use the Internal Testing track for faster testing.
     - Upload your APK or App Bundle and submit it for review.
     - Learn how to **[set up a Flutter environment](https://youtu.be/mMeQhLGD-og?si=9GW39cvNNYvV9it4)** on macOS.
 
-**Apple App Store**
+**Apple App Store:**
 
     - Submit your app using App Store Connect.
     - Use TestFlight for beta testing without full App Store review.
@@ -62,7 +62,7 @@ RevenueCat integration works only in native environments. It does not function i
 
         - Access error logs from TestFlight testers to help diagnose issues.
 
-**Error Handling and Analysis**
+**Error Handling and Analysis:**
 
     - Review error messages from Crashlytics or during testing.
     - Enable debug logging in FlutterFlow for detailed error reports.
