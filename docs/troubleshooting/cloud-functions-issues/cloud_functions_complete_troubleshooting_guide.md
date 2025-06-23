@@ -1,6 +1,6 @@
 ---
-keywords: ['cloud functions', 'firebase', 'deployment', 'error', 'flutterflow']
-slug: /flutterflow-cloud-functions-complete-troubleshooting-guide
+keywords: ['cloud functions', 'firebase', 'deployment', 'error']
+slug: /cloud-functions-complete-troubleshooting-guide
 title: Cloud Functions Complete Troubleshooting Guide
 ---
 
