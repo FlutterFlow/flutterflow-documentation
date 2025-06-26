@@ -5,56 +5,67 @@ title: Resolving Firebase Configuration Issues
 ---
 # Resolving Firebase Configuration Issues
 
-If you are facing issues related to the backend in FlutterFlow, follow these steps to ensure your Firebase setup is correctly configured:
+If you're experiencing backend errors, failed schema validation, or data sync issues, this guide will help you verify and fix your Firebase setup in FlutterFlow.
 
-- **Add Proper Cloud Permissions**
+:::info[Prerequisites]
+- You must have already connected your Firebase project to FlutterFlow.
+- You should have access to your Firebase console with admin rights.
+:::
 
-    Grant the following permissions to **firebase@flutterflow.io** in your Firebase project:
+Follow the steps below to fix firebase configuration:
 
-        - **Editor**
-        - **Cloud Functions Admin**
-        - **Service Account User**
+1. **Grant Required Permissions**
 
-    Learn how to **[assign Firebase permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**. 
+   Assign the following permissions to `firebase@flutterflow.io` in your Firebase project:
+    - Editor  
+    - Cloud Functions Admin  
+    - Service Account User
 
-- **Update Firebase Rules**
+    Learn how to **[assign Firebase permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**.
 
-    Ensure that your Firebase Firestore security rules are updated correctly. See how to **[update Firebase rules](/integrations/database/cloud-firestore/firestore-rules/)**.
+2. **Update Firestore Rules**
 
-    After updating the rules, delete **firebase@flutterflow.io** from your authenticated users, redeploy the Firestore rules, and validate the schema again.
+   Update your Firestore security rules to allow access for FlutterFlow.
 
-    ![](../assets/20250430121532523511.png)
+   After making changes:
+        - Remove `firebase@flutterflow.io` from your authenticated users.
+        - Redeploy your Firestore rules.
+        - Validate your schema again.
 
-- **Match Data Field Types and Names**
+        ![](../assets/20250430121532523511.png)
 
-    Verify that all data field types and field names match between **Firestore** and **FlutterFlow**.
+3. **Match Field Types and Names**
 
-- **Validate Firestore Schema**
+   Check that data field types and names match between Firestore and FlutterFlow exactly. Mismatches will cause query errors.
 
-    Use the **Validate** button in **Firestore → Settings** inside FlutterFlow to confirm that the Firestore collection schema matches the FlutterFlow configuration.
+4. **Validate Firestore Schema in FlutterFlow**
 
-    ![](../assets/20250430121532793176.png)
+   Use the **Validate** button under **Firestore → Settings** in FlutterFlow to confirm that your collection schema matches your Firestore structure.
 
-- **Reset Firebase Setup (If Needed)**
+   ![](../assets/20250430121532793176.png)
 
-    If you have already completed the Firebase setup but continue to experience issues, remove existing permissions and complete the setup process from scratch.
+5. **Reset Firebase Setup (If Needed)**
 
-    Follow **[Firebase setup](/integrations/firebase/connect-to-firebase/)** instructions.
+   If issues persist after following the steps above:
+        - Revoke the current setup.
+        - Reconnect your Firebase project using the **[Firebase setup instructions](/integrations/firebase/connect-to-firebase/)**.
 
-- **Authorized Domains**
+6. **Add Authorized Domains**
 
-    Add `app.flutterflow.io` to your **Authorized Domains** under the **Authentication** tab in Firebase.
+   In the Firebase console, go to **Authentication → Sign-in Method → Authorized Domains** and add: `app.flutterflow.io`
 
-- **Refresh FlutterFlow**
+7. **Refresh FlutterFlow**
 
-    Make sure you are using the latest version of FlutterFlow:
+    Make sure you're using the latest version of the platform:
 
-    - Press **Ctrl/Cmd + Shift + R** to refresh.
-    - Clear your browser cache.
-    - Log out and back into FlutterFlow.
+        - Press `Ctrl`/`Cmd + Shift + R`
+        - Clear your browser cache
+        - Log out and back in to FlutterFlow
 
-- **Use Blaze Plan for Cloud Functions**
+8. **Upgrade to Blaze Plan (If Using Cloud Functions)**
 
-    To use Cloud Functions like Push Notifications, Payments, and other features, ensure your Firebase project is on the **Blaze Plan**.
+    Cloud Functions such as Push Notifications and Payments require a billing-enabled Firebase project. Make sure you’re on the **Blaze Plan**.
 
-By following these steps, most backend issues in FlutterFlow can be resolved effectively.
+:::tip
+After updating Firestore rules, always validate the schema using the **Validate** button before proceeding with other fixes.
+:::

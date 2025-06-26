@@ -21,7 +21,7 @@ When the update action fails, the action flow stops, preventing any subsequent a
 
 There are two common reasons why the update action may fail:
 
-1. **Permission Issue in Firestore**
+- **Permission Issue in Firestore**
 
     The user may not have the necessary permission to write to the document.
 
@@ -33,7 +33,7 @@ There are two common reasons why the update action may fail:
     **Solution:**  
     Review and configure your Firestore rules to grant write permission. For example, allowing write access to authenticated users is often sufficient if your app requires user authentication.
 
-2. **Data Type Mismatch**
+- **Data Type Mismatch**
 
     The values you are attempting to write may not match the expected field types.
 

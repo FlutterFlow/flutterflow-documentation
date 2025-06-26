@@ -3,18 +3,33 @@ keywords: ['listview', 'returning', 'only']
 slug: /listview-returning-only-one-item
 title: ListView Returning Only One Item
 ---
-# ListView Returning Only One Item
+# Fix ListView Only Returning One Item
 
-If your **ListView** is only returning one item in FlutterFlow, check the following possible causes:
+If your **ListView** is only showing one item, this guide will walk you through the common reasons and how to resolve the issue.
 
-- **Use a Dynamic Widget**: Ensure you are using a dynamic widget such as **ListView**, **GridView**, **Row**, or **Column** to dynamically generate multiple children.
+:::info[Prerequisites]
+- A working Firebase or CMS integration.
+- A dynamic layout widget such as `ListView`, `GridView`, or `Column`.
+- At least two documents in your Firestore collection for testing.
+:::
 
-- **Query for a List**: Confirm that your query retrieves a **list of documents** rather than a single record.
+Follow the steps below to resolve the issue:
 
-- **Check Filters**: If you're applying filters, make sure that your Firestore database contains **multiple records** that satisfy the filter conditions.
+1. **Use a Dynamic Widget**  
+   Make sure you're using a widget like `ListView`, `GridView`, or `Column` that supports dynamic content.
 
-- **Sufficient Records**: Verify that your Firestore collection has **enough records** to display multiple items.
+2. **Confirm the Query Type**  
+   Ensure the query is set to return a **list of documents**, not a single document.
 
-- **List Type Field**: If you are querying a single field, ensure that it’s defined as a **ListType field** in both FlutterFlow and Firebase.
+3. **Review Applied Filters**  
+   If you are using filters, check that multiple records in your database satisfy those filter conditions.
 
-By carefully reviewing these areas, you should be able to resolve the issue of your ListView returning only one item.
+4. **Check Firestore Data**  
+   Open your Firestore collection and verify that it contains **multiple records**.
+
+5. **Verify List Type Fields**  
+   If querying a single field, confirm it's defined as a **List** in both Firebase and FlutterFlow.
+
+:::tip
+To test your setup, remove all filters temporarily and use a basic list query. This helps isolate whether the issue is with filtering or the query type.
+:::

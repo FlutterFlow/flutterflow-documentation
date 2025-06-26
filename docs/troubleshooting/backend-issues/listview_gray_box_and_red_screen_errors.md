@@ -6,73 +6,76 @@ title: ListView Gray Box and Red Screen Errors
 
 # ListView Gray Box and Red Screen Errors
 
-**Issue**
+When loading a list of items from the database, you might encounter a gray box or red error screen. This article explains the possible causes and how to resolve them.
 
-When trying to load a list of items from the database, the list doesn't load and displays a gray box.
-
-**Cause**
-
-A gray box means the backend query failed and couldn't return any result.
-
-**Verifying Query Functionality**
-
-    - If the query is successful and returns items, you will see the list populated.
-    - If there are no records matching the query, but the query itself is successful, you will see the **empty state** that you have configured for your list.
-
-    ![](../assets/20250430121239249713.png)
-
-:::tip
-Always configure an empty state for lists. This helps differentiate between an empty dataset and a failed query.
+:::info[Prerequisites]
+- Ensure your query is correctly connected to a Firestore collection or CMS.
+- Confirm that your app builds and runs correctly in **Run** and **Test** modes.
 :::
 
-**Behavior in Different Modes**
+**Understanding the Error:**
 
-The behavior may differ depending on whether you are in **Run** or **Test** mode:
+A **gray box** usually indicates that the backend query failed to return results. A **red screen** in Test mode suggests a runtime error caused by invalid data or query failure.
 
-    - **Run mode**: A gray box is displayed.
-    - **Test mode**: A red screen with an error message appears.
+**Step-by-Step Troubleshooting:**
 
-    **Working Query with no Results**
+1. **Verify Query Results**
 
-    ![](../assets/20250430121239492027.png)
+    - If the query is successful and returns items, the list will populate as expected.
+    - If there are no records matching the query, you will see the **empty state** you configured.
+    - If the query fails, a gray box (in Run mode) or a red error screen (in Test mode) will appear.
 
-    **Failed query**
+    ![Empty State](../assets/20250430121239249713.png)
 
-    ![](../assets/20250430121239708989.png)
+    :::tip
+    Always configure an empty state for lists. This helps distinguish between a failed query and an empty dataset.
+    :::
 
-**Troubleshooting Steps**
+2. **Behavior by Mode**
 
-    If you are seeing a gray box and no filters or ordering are applied to your query, the issue is likely with the data itself, specifically **null values** in your database.
+    - **Run mode**: Displays a gray box when the query fails.
+    - **Test mode**: Shows a red screen with a specific error message.
 
-    Null values can cause FlutterFlow queries to fail.
+        **Example: Working Query with No Results**  
+        ![Working Query](../assets/20250430121239492027.png)
 
-    ![](../assets/20250430121239967301.png)
+        **Example: Failed Query**  
+        ![Failed Query](../assets/20250430121239708989.png)
 
-    **How to Check for Null Values**
+3. **Check for Null Values in the Data**
 
-        - Inspect your data in Firebase for any fields that have null values.
-        - If your dataset is small, you can use the FlutterFlow CMS to review the data.
+    Null values in critical fields may cause queries or widgets to fail.
 
-        For example, in the image below, the `created_time` field is null. If your widget relies on this field (e.g., formatting the date), the query will fail.
+    Here is how to check for null values:
 
-        ![](../assets/20250430121240227391.png)
-        ![](../assets/20250430121240508011.png)
+        1. Inspect your data in **Firebase** or **CMS** for any fields with `null` values.
+        2. Pay attention to fields used in filters, formatting, or conditional visibility.
+        3. For example, if `created_time` is null and you are formatting a date from this field, the query may fail.
 
-:::note 
-When unsure if a value is null, use **visibility rules** to hide widgets that depend on potentially null data.
-:::
+        **Example: Null Field Causing Error**
 
-![](../assets/20250430121240818334.png)
+        ![Null Field Example](../assets/20250430121240227391.png)  
+        ![Date Formatting Error](../assets/20250430121240508011.png)
 
-:::note 
-If you are performing document-from-reference queries inside an item widget, always add a visibility rule to that widget. This prevents the query from breaking if the reference field is empty.
-:::
+    :::note
+    Use **visibility rules** to hide widgets that depend on potentially null values.
+    :::
+
+4. **Handle Document-From-Reference Queries Safely**
+
+    If you use document references inside a list item widget, and the reference is null or missing, it will break the query.
+
+    ![Broken Reference Example](../assets/20250430121240818334.png)
+
+    :::note
+    Always add a visibility rule to any widget performing document-from-reference queries. This ensures the widget is only visible when the reference is valid.
+    :::
 
 
 :::info[Summary]
-- A gray box means the query failed.
-- A red screen means an error occurred in test mode.
-- Null values in your data are a common cause.
-- Always configure empty states and use visibility rules to handle null data safely.
+- A **gray box** means the backend query failed.
+- A **red screen** indicates a runtime error in **Test mode**.
+- **Null values** in your database are a common cause of failure.
+- Always configure **empty states** and apply **visibility rules** to handle null or missing data gracefully.
 :::
 
