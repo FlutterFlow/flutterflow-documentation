@@ -265,7 +265,3 @@ To change the Axis:
     </iframe>
 </div>
 <p></p>
-
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
