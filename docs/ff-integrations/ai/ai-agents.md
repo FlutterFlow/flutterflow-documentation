@@ -21,7 +21,7 @@ Here are some examples of AI Agents:
 
 :::info[Prerequisite]
 Before you begin setting up AI Agents, make sure you:
-1. Connect your project to Firebase by completing the [**Firebase Setup**](../firebase/connect-to-firebase-setup.md).
+1. Complete all the steps in [**Firebase Setup**](../firebase/connect-to-firebase-setup.md). Note that, while setting up, make sure to follow step number 5 and 8 carefully from [**Allow FlutterFlow to Access Your Project**](../firebase/connect-to-firebase-setup.md#allow-flutterflow-to-access-your-project) section to properly add the **Cloud Functions Admin** role to **firebase@flutterflow.io** user.
 2. Upgrade your Firebase project to the [**Blaze Plan**](https://firebase.google.com/pricing), as we rely on [**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) to handle AI-related communication securely.
 :::
 

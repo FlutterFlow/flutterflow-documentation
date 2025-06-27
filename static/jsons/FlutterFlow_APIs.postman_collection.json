@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "1dd71b5a-8093-4892-94d3-968c581bb105",
+		"name": "FlutterFlow APIs",
+		"description": "The FlutterFlow Project APIs allow you to programmatically read, write, and validate YAML configuration files for FlutterFlow projects through REST endpoints. Using these APIs, you can automate project management tasks, integrate continuous integration and delivery (CI/CD) workflows, and apply bulk configuration updates without manual interactions with the FlutterFlow user interface.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "494689"
+	},
+	"item": [
+		{
+			"name": "List all Files",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ff-url}}/listPartitionedFileNames?projectId={{project-id}}",
+					"host": [
+						"{{ff-url}}"
+					],
+					"path": [
+						"listPartitionedFileNames"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "{{project-id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download File",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ff-url}}/projectYamls?projectId={{project-id}}&fileName={{filename}}",
+					"host": [
+						"{{ff-url}}"
+					],
+					"path": [
+						"projectYamls"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "{{project-id}}"
+						},
+						{
+							"key": "fileName",
+							"value": "{{filename}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ff-url}}/projectYamls?projectId={{project-id}}",
+					"host": [
+						"{{ff-url}}"
+					],
+					"path": [
+						"projectYamls"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "{{project-id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate YAML",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"projectId\": \"ecommerce-flow-n0vjps\",\n  \"fileKey\": \"app-state\",\n  \"fileContent\": \"fields:\\n  - parameter:\\n      identifier:\\n        name: enableDarkMode\\n        key: k3xdwhny\\n      dataType:\\n        scalarType: Boolean\\n      description: \\\"\\\"\\n    persisted: true\\n  - parameter:\\n      identifier:\\n        name: orders\\n        key: hskfzqii\\n      dataType:\\n        scalarType: String\\n      description: \\\"\\\"\\n    persisted: true\\n  - parameter:\\n      identifier:\\n        name: totalAmount\\n        key: lf9puz1e\\n      dataType:\\n        scalarType: Double\\n      description: \\\"\\\"\\n    persisted: false\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ff-url}}/validateProjectYaml",
+					"host": [
+						"{{ff-url}}"
+					],
+					"path": [
+						"validateProjectYaml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"projectId\": \"ecommerce-flow-n0vjps\",\n  \"fileKeyToContent\": {\n    \"app-state\": \"fields:\\n  - parameter:\\n      identifier:\\n        name: enableDarkMode\\n        key: k3xdwhny\\n      dataType:\\n        scalarType: Boolean\\n      description: \\\"\\\"\\n    persisted: true\\n  - parameter:\\n      identifier:\\n        name: orders\\n        key: hskfzqii\\n      dataType:\\n        scalarType: String\\n      description: \\\"\\\"\\n    persisted: true\\n  - parameter:\\n      identifier:\\n        name: totalAmount\\n        key: lf9puz1e\\n      dataType:\\n        scalarType: Double\\n      description: \\\"\\\"\\n    persisted: false\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ff-url}}/updateProjectYaml",
+					"host": [
+						"{{ff-url}}"
+					],
+					"path": [
+						"updateProjectYaml"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "ff-url",
+			"value": "https://api.flutterflow.io/v2",
+			"type": "default"
+		},
+		{
+			"key": "api-key",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "project-id",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "filename",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
