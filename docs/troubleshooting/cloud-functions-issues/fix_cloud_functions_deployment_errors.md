@@ -1,10 +1,15 @@
 ---
 keywords: ['cloud functions', 'firebase', 'deployment', 'error']
-slug: /cloud-functions-complete-troubleshooting-guide
+slug: /fix-cloud-functions-deployment-errors
 title: Cloud Functions Complete Troubleshooting Guide
 ---
 
-# Cloud Functions Complete Troubleshooting Guide
+# Fixing Cloud Functions Deployment Errors
+
+:::info[Prerequisites]
+- You must have a Firebase project connected to FlutterFlow.
+- Ensure your project is on the Blaze Plan.
+::: 
 
 Cloud Functions allow you to execute backend code in response to events triggered by Firebase features or HTTPS requests. Various situations might cause Cloud Functions to malfunction, often stemming from setup problems or coding mistakes within the Cloud Function's script.
 
@@ -175,9 +180,9 @@ You may encounter the following errors in the FlutterFlow Builder:
 
     ![](../assets/20250430121134509618.png)
 
-    :::note
-    Longer timeouts may increase Firebase costs.
-    :::
+:::note
+Longer timeouts may increase Firebase costs.
+:::
 
 ## Cold Start Delays
 
