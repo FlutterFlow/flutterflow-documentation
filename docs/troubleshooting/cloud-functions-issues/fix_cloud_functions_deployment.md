@@ -154,7 +154,9 @@ You may encounter the following errors in the FlutterFlow Builder:
         - Make sure all rules and indexes have been deployed from FlutterFlow.
 
 
-## Trigger Configuration Issues
+**Additional Troubleshooting and Optimization:**
+
+- **Trigger Configuration Issues**
 
     If your Cloud Functions are not being triggered:
 
@@ -167,7 +169,7 @@ You may encounter the following errors in the FlutterFlow Builder:
 
         - Firebase security rules and project permissions must allow the Cloud Function operations.
 
-## Execution Timeouts
+- **Execution Timeouts**
 
     - Cloud Functions may fail if execution time exceeds limits.
     - Set a custom timeout duration in FlutterFlow:
@@ -180,11 +182,11 @@ You may encounter the following errors in the FlutterFlow Builder:
 
         ![](../assets/20250430121134509618.png)
 
-:::note
-Longer timeouts may increase Firebase costs.
-:::
+        :::note
+        Longer timeouts may increase Firebase costs.
+        :::
 
-## Cold Start Delays
+- **Cold Start Delays**
 
     Cloud Functions may respond slower after periods of inactivity:
         - Use **Cloud Scheduler** to periodically invoke functions and keep them warm.
