@@ -430,3 +430,14 @@ We're working on Library Values, which will allow users to set specific values w
 Projects can import libraries that themselves have imported other Libraries as dependencies. However, if the project and the library share the same dependency, the version must match exactly to avoid conflicts.
 </p>
 </details>
+
+<details>
+<summary>Why do I get collision errors when importing a duplicated project as a library?</summary>
+<p>
+When you duplicate a project and publish it as a library, the unique identifiers (keys) for components and other resources are not automatically changed. If you then import this library back into the original project, it causes key collisions between the original and duplicated resources.
+
+To help with this, FlutterFlow shows a dialog that offers to automatically delete the original resources in your base project and update all references to point to the library versions.
+
+If you prefer to resolve this manually, you can duplicate individual components within the library after importing, this will generate new keys and avoid the collision.
+</p>
+</details>
