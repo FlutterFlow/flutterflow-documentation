@@ -6,12 +6,12 @@ title: Custom Actions Errors
 # Custom Actions Errors
 
 :::info[Prerequisites]
-- A basic understanding of how custom actions work in FlutterFlow.
+- A basic understanding of how custom actions work.
 - A FlutterFlow project with a custom action already created.
 :::
 
 
-Custom actions in FlutterFlow are powerful, but troubleshooting them can be tricky. This guide will help you systematically resolve common issues.
+Custom actions are powerful, but troubleshooting them can be tricky. This guide will help you systematically resolve common issues.
 
 
 - **Read the Error Message**
@@ -119,7 +119,7 @@ Custom actions in FlutterFlow are powerful, but troubleshooting them can be tric
 
     - **Duplicate Data Types/Structs**
 
-        Do not redefine data types or structs already defined in FlutterFlow's data schema panel.
+        Do not redefine data types or structs already defined in the data schema panel.
 
             ![](../assets/20250430121144853131.png)
 
