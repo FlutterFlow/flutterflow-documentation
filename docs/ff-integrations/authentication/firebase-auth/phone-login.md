@@ -306,7 +306,7 @@ While releasing the app, make sure to [**get the key from the Play Console**](au
 
 
 1. Open the [Google Developers Console](https://console.developers.google.com/) (Make sure your project is selected in the dropdown at the top), Click on the **Library** menu on the left, search for the **Google Play Integrity API,** and enable it.
-2. Now, download and test the app using the instructions [here](../../../testing-deployment-publishing/exporting-code/ff-cli.md).
+2. Now, you can test your app on a real device using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
 
 <div style={{
     position: 'relative',

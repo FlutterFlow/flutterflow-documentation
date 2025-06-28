@@ -99,7 +99,11 @@ If you haven’t already, see how to [create *users* collection](auth-initial-se
 To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
 :::
 
-## Test Google Login in various platforms
+## Test Google Login
+
+### Running on Device
+To test during development, you can run your app locally using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
+
 
 ### Running on Test Mode/Run Mode
 

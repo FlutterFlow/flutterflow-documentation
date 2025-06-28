@@ -269,10 +269,11 @@ For testing your app on a real device, you must configure the project in Xcode. 
 
 Here's how you configure your project in Xcode:
 
-1. Open your project in Xcode. If you are using Android Studio, right-click on the **ios** folder, find **Flutter,** and then click on the **Open iOS module in Xcode**.
+1. From the Local Run, [open your project in Xcode](../../../testing-deployment-publishing/running-your-app/local-run.md#access-project-code). **Tip**: If you are using Android Studio, right-click on the **ios** folder, find **Flutter,** and then click on the **Open iOS module in Xcode**.
 2. In Xcode, click on **Runner** (left side menu) and then select the **Signing and Capabilities** tab.
 3. We recommend choosing the **Automatically manage signing** option. This will auto-create the profiles, app ID, and certificates required to build and run your app. If you don't, you'll have to [manually create a 'provisioning profile'](https://blog.codemagic.io/distributing-native-ios-sdk-with-flutter-module-using-codemagic/) and then add it in the Xcode.
 4. Under the **Signing** section, find the **Team** dropdown and select your team.
+5. Now use [Local Run](../../../testing-deployment-publishing/running-your-app/local-run.md) to test the app on a real device.
 
 <div style={{
     position: 'relative',

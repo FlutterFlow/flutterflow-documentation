@@ -392,7 +392,7 @@ To let users log out of your app, you can use [this](auth-actions.md#log-out-act
 
 Currently, testing the Supabase Google login feature isn't possible in Run or Test modes due to certain restrictions. But, for web platform testing, you can publish your app with a subdomain using our [web publishing](../../../testing-deployment-publishing/publishing/web-publishing.md) feature.
 
-For testing on mobile, you can use our [Local Run](../../../testing-deployment-publishing/running-your-app/local-run.md) feature.
+You can test your app on a real device or emulator using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
 
 
 ### 9. Verify user creation
