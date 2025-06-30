@@ -101,7 +101,7 @@ To add inline function, open the Set from Variable dialog wherever it's possible
 For example, we may want to quickly calculate the discount amount of a product where the discount is 18% of the MRP of the product. The expression would be `cost - (cost * discount)`.
 
 :::tip
-Looking for more power and flexibility? Use a new [**Code Expression**](#code-expression). It’s a more advanced version of Inline Functions that lets you access FlutterFlow generated resources without passing them as arguments. You also get real-time autocomplete and inline error checking for faster, more accurate logic.
+Looking for more power and flexibility? Use the new [**Custom Code Expression**](#code-expression). It’s a more advanced version of Inline Functions that lets you access FlutterFlow generated resources without passing them as arguments. You also get real-time autocomplete and inline error checking for faster, more accurate logic.
 :::
 
 **Precedence of operations**
