@@ -1,10 +1,10 @@
 ---
 keywords: ['translation', 'localization', 'google']
-slug: /resolve-google-translate-errors
-title: Resolve Google Translate Errors
+slug: /fix-google-translate-errors
+title: Fix Google Translate Errors
 ---
 
-# Resolve Google Translate Errors
+# Fix Google Translate Errors
 
 FlutterFlow integrates with Google Translate to help localize your app automatically. This guide outlines how to identify and resolve common issues with the translation integration.
 
@@ -16,13 +16,13 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
 
 ## Common Translation Issues:
 
-    - Long text blocks can exceed Google Translate limits or cause timeouts. When translating such content, consider translating the text externally and pasting it manually into FlutterFlow after clearing the original input.
+   - Long text blocks can exceed Google Translate limits or cause timeouts. When translating such content, consider translating the text externally and pasting it manually into FlutterFlow after clearing the original input.
 
-    - Text that contains unsupported characters such as emojis or non-standard symbols may cause translation errors. These characters should be removed or replaced before attempting translation again.
+   - Text that contains unsupported characters such as emojis or non-standard symbols may cause translation errors. These characters should be removed or replaced before attempting translation again.
 
-    - The integration supports a maximum of 10 languages. If more than 10 languages are configured in your project, reduce the number to resolve translation failures.
+   - The integration supports a maximum of 10 languages. If more than 10 languages are configured in your project, reduce the number to resolve translation failures.
 
-## Steps to Troubleshoot Translation Failures
+## Steps to Troubleshoot Translation Failures:
 
 1. **Locate the Problem Area**  
    Identify whether the error occurs on a specific widget, page, or text field to narrow down the source of the issue.
