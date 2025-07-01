@@ -33,9 +33,15 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 
     Run the following command in your project directory:
 
-       ```js
+       ```bash
         flutter clean
+        ```
+
+        ```bash
         flutter pub get
+        ```
+
+        ```bash
         flutter run
         ```
 
@@ -45,14 +51,21 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 3. **Upgrade Flutter (If Problem Persists)**
 
     If the issue continues, upgrading Flutter may help. Run the command below to upgrade:
-        ```js
+        ```bash
         flutter upgrade
         ```
 
     Ensure your Flutter SDK is up to date. You can verify the version with:
 
-        ```js
+        ```bash
         flutter --version
         ```
 
+    :::note
     This error is often related to Google Play Services not being properly initialized on the emulator. If you're still encountering issues, consider creating a new emulator using a system image that includes the Play Store.
+    :::
+
+:::info[Additional Resources]
+- Read the official **[Flutter Build Documentation](https://docs.flutter.dev/testing/build-modes)**.
+- Check **[Android Emulator System Images](https://developer.android.com/studio/run/managing-avds#system-images)**.
+:::

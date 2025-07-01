@@ -13,7 +13,7 @@ If Test Mode takes several minutes to load or fails entirely, the issue may stem
 - You have already deployed or previewed a version of your app.
 :::
 
-Below are the common causes and fixes:
+**Steps to Resolve Slow Loading:**
 
 - **Check Your Internet Connection**
 
@@ -36,7 +36,7 @@ Below are the common causes and fixes:
     Extensions like ad blockers or privacy tools can interfere with FlutterFlow’s platform. Temporarily disable them to check for improvement.
 
 :::tip[Optimize Your Project]
-Projects with many pages, assets, or custom code can take longer to compile.
+Projects with many pages, assets, or custom code may take longer to compile. Follow these steps to optimize your project:
 - Remove unused images, fonts, or icons.
 - Consolidate or simplify custom code.
 - Limit the number of pages in a single testing session.
