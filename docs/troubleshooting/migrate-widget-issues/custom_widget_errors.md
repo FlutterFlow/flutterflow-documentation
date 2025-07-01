@@ -1,10 +1,10 @@
 ---
 keywords: ['custom widget', 'widget errors', 'widget troubleshooting', 'flutterflow']
-slug: /troubleshooting-custom-widgets
-title: Troubleshooting Custom Widgets
+slug: /custom-widget-errors
+title: Custom Widget Errors
 ---
 
-# Troubleshooting Custom Widgets
+# Custom Widget Errors
 
 This article demonstrates common errors and issues that may occur when creating a `Custom Widget` in FlutterFlow, along with steps to resolve them. In this example, an `Animated Text Widget` is used.
 
@@ -14,18 +14,22 @@ This article demonstrates common errors and issues that may occur when creating 
 
 **Run Mode URL:** [Animated Kit Widget Run Mode](https://app.flutterflow.io/run/QP62FwanUTRs7O3HJzdo)
 
+:::info[Prerequisites]
+- A custom widget has been added to your project.
+- Necessary packages have been added to **Custom Code > Packages**.
+:::
 
 :::tip[Best Practices Before Creating a Custom Widget]
 - Set a unique name for the custom widget in the left panel `Side Widget` field.
 - Start with the boilerplate code template provided by FlutterFlow. Copy it and modify your code from there.
-:::
 
 ![](../assets/20250430121323364253.gif)
+:::
 
 
 **Common Errors and Solutions:**
 
-    1. **Widget Name Conflicts with Package Name**
+    - **Widget Name Conflicts with Package Name**
 
         One common issue is using a widget name that conflicts with the name of a package you have imported as a dependency.
 
@@ -35,11 +39,13 @@ This article demonstrates common errors and issues that may occur when creating 
 
         Avoid using generic or conflicting names like `main` or `widget`. Always use unique widget names that do not overlap with any package names.
 
-    2. **Missing Package Imports in Code**
+    - **Missing Package Imports in Code**
 
         After adding an external package as a dependency, it is required to import the package at the top of your code. If you forget to do this, you may encounter errors such as:
 
-        "The method X isn't defined..."
+        ```js
+        The method 'AnimatedText' isn't defined...
+        ```
 
         ![](../assets/20250430121324695186.png)
 
@@ -48,26 +54,22 @@ This article demonstrates common errors and issues that may occur when creating 
             - Visit the package page on **[pub.dev](https://pub.dev/)** and locate the import line in the package details section.
             - Copy and paste the correct import statement into your custom widget code.
 
-                Example:
-
                 ![](../assets/20250430121324981835.png)  
                 ![](../assets/20250430121325311155.png)
 
 
-    3. **Missing Indirect Dependencies**
+    - **Missing Indirect Dependencies**
 
         Some packages may rely on additional external packages. Ensure that all required dependencies are also imported in your code.
 
         ![](../assets/20250430121325659677.png)
 
-        In this example, the package depends on another package named `silver_tools`, which must also be imported:
+        In this example, the package depends on another package named `silver_tools`, which must also be imported. Always review the dependency chain for any external packages you add.
 
         ![](../assets/20250430121325972589.png)
 
-        Always review the dependency chain for any external packages you add.
-
-
-    4. **Widget Name Mismatch Between UI and Code**
+        
+    - **Widget Name Mismatch Between UI and Code**
 
         If you forget to update the widget name in the boilerplate code, a mismatch may occur between the widget name defined in FlutterFlow and the class name in your code. This will lead to compilation errors.
 
