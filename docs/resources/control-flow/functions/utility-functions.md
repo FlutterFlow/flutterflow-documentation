@@ -238,6 +238,7 @@ To use a Custom Code Expression when triggering actions in FlutterFlow (i.e., in
 
 ![execute-custom-code.avif](img/execute-custom-code.avif)
 
+The Execute Custom Code action can be really helpful in scenarios where the home page is removed early from the navigation stack and standard navigation using the local context may fail. To prevent this, you can [use the global navigator context](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md#using-global-context-to-navigate) inside a code expression.
 
 ## Custom Functions
 
