@@ -58,7 +58,7 @@ Integrating the Stripe Payments in your app comprises the following steps:
 4. [Testing](#4-testing)
 5. [Releasing to production](#5-releasing-to-production)
 
-### 1. Setup Stripe payment
+### 1. Setup Stripe Payment
 
 Setting up the Stripe payment includes acquiring the keys from your Stripe account and adding them to FlutterFlow.
 
@@ -76,7 +76,7 @@ Follow the steps below to set up payment using Stripe:
 6. Copy the **Publishable Key** and **Secret Key** from the Stripe API keys page and paste them into the respective fields inside FlutterFlow. If you are using Stripe in test mode, make sure you paste them inside the **Test Credentials** section.
 7. Under the **Additional Settings**, you need to specify the following:
     1. **Merchant Display Name** (*Required*): Enter a name for the merchant (you) that the user will see while performing the payment.
-    2. **Merchant Country Code** (*Required*): Enter your country code. This must be the 3-digit ISO country code, such as USA, IND, and NGA.
+    2. **Merchant Country Code** (*Required*): Enter your country code. This must be the 2 digit ISO country code, such as US, IN, and AU.
     3. **Apple Merchant ID** (*Optional*): You need to enter this if you want to accept payments through Apple Pay as well. The instructions for using Apple Pay are in [this section](#2-apple-pay-setup-optional).
 8. Click **Deploy**.
 
@@ -86,7 +86,7 @@ Follow the steps below to set up payment using Stripe:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/0e4ba1f7f055433e96a7fa6cede2c127?sid=400ef912-1580-44ad-81a9-25051bed0256"
+        src="https://demo.arcade.software/PcikYUtB8cSug9CyUAOv?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -108,7 +108,7 @@ Follow the steps below to set up payment using Stripe:
 
 This would deploy the Stripe payment service as a Firebase Cloud Function. Now, you are ready to trigger payments inside your app.
 
-### 2. Apple Pay setup (optional)
+### 2. Apple Pay Setup (optional)
 
 Setting up Apple Pay comprises the following steps:
 
@@ -185,7 +185,7 @@ To add Apple Merchant ID in FlutterFlow:
 
 ![Adding Apple Merchant ID in FlutterFlow](imgs/adding-apple-merchant-id.png)
 
-### 3. Trigger Stripe payment [Action]
+### 3. Trigger Stripe Payment [Action]
 
 In order to initiate a payment using Stripe, you have to use the **Stripe Payment** action.
 
@@ -244,7 +244,7 @@ You can test Stripe payments on mobile and the Web before deployment. To do that
 4. [Download](../../testing-deployment-publishing/exporting-code/ff-cli.md) and [run](../../testing-deployment-publishing/running-your-app/run-your-app.md) your project..
 5. To test the purchase, you can use any of these [basic test card numbers](https://stripe.com/docs/testing#cards).
 
-### 5. Releasing to production
+### 5. Releasing to Production
 
 Before you release the app to production, complete the following steps:
 
