@@ -68,7 +68,42 @@ When naming custom data types, always use **UpperCamelCase**, as recommended by 
 
 ## Accessing Custom Data Type
 
-After creating the custom data type, you can use it to create variables, such as an app state variable, and then access them. Here's an [example](app-state.md#app-state-variables).
+After creating a custom data type, it’s treated internally as a [Dart class](https://dart.dev/language/classes). However, just defining the custom data type doesn’t hold any real data. To work with actual data, such as storing a user profile or a review, you need to create an **instance** of custom data type.
+
+Creating an instance allows you to:
+
+- Assign specific values to each field in your custom data type.
+- Store the instance in app state, page state, or pass it between widgets.
+- Access individual fields wherever needed.
+
+To create an instance of a custom data type, first you need to [create a state variable](../../ff-concepts/state-management/state-variables.md#creating-state-variables) (of type **Data Type**) that will hold the instance. Then, to create and add the instance to the state variable, open the **Set from Variable** dialog and select **Create Data Type Object > Project Data Type**. Choose the data type you want to use. After that, set values for each of the required fields.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/qNNwqEm7vrvuWszmhf9R?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Custom Data Type in Custom Code
 Sometimes, you might want to access the custom data type in your custom code. Our custom code editor allows you to receive and pass data into a variable of a custom data type. For example, you could manipulate or analyze the data as needed, and then return the modified result in the custom data type. 
