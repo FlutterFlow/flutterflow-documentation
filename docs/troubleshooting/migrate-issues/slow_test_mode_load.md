@@ -43,8 +43,8 @@ Projects with many pages, assets, or custom code can take longer to compile.
 :::
 
 :::info[Additional Resources]
-If the issue persists after following the steps above, check the official support article:  
-**[FlutterFlow: Test Mode Is Not Loading or Is Very Slow](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**
+If the issue persists after following the steps above, check the
+**[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article. 
 :::
 
 Following these steps should resolve most Test Mode performance issues and reduce load times for future previews.
