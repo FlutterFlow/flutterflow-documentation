@@ -16,11 +16,9 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
 
 ## Common Translation Issues:
 
-   - Long text blocks can exceed Google Translate limits or cause timeouts. When translating such content, consider translating the text externally and pasting it manually into FlutterFlow after clearing the original input.
-
-   - Text that contains unsupported characters such as emojis or non-standard symbols may cause translation errors. These characters should be removed or replaced before attempting translation again.
-
-   - The integration supports a maximum of 10 languages. If more than 10 languages are configured in your project, reduce the number to resolve translation failures.
+   - **Long Text Blocks:** Exceeding limits or timeouts — translate externally if needed.  
+   - **Unsupported Characters:** Emojis or symbols may cause errors. Remove or replace.  
+   - **Language Limits:** Max 10 languages supported. Reduce if necessary.  
 
 ## Steps to Troubleshoot Translation Failures:
 
