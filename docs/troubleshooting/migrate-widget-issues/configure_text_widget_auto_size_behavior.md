@@ -48,8 +48,3 @@ The `Auto Size` option allows the `Text` widget to automatically reduce its font
   :::note
   The `Auto Size` feature has a minimum font size threshold. If the container becomes too small, text may clip or overflow when resizing is no longer possible.
   :::
-
-
-  :::info[Additional Resources]
-  For more information, refer to the **[Text Widget Configuration Guide](/ui-builder/text-widget)**.
-  :::

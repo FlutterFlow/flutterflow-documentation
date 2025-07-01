@@ -10,7 +10,7 @@ To use the output from a custom widget elsewhere in your project, you can store 
 
 :::info[Prerequisites]
 - You have created a custom widget in your project.
-- You are familiar with the **[App State management](/state-management/app-state)** system in FlutterFlow.
+- You are familiar with the **[App State management](/concepts/state-management)** system in FlutterFlow.
 :::
 
 ## Steps to Store Output from a Custom Widget
