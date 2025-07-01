@@ -31,7 +31,9 @@ This article demonstrates common errors and issues that may occur when creating 
 
     - **Widget Name Conflicts with Package Name**
 
-        One common issue is using a widget name that conflicts with the name of a package you have imported as a dependency.
+        A common issue is using a widget name that conflicts with the name of an imported package.
+
+        Avoid generic or conflicting names like `main` or `widget`. Use unique widget names that do not overlap with package names.
 
         ![](../assets/20250430121324152439.png)
 
@@ -41,7 +43,7 @@ This article demonstrates common errors and issues that may occur when creating 
 
     - **Missing Package Imports in Code**
 
-        After adding an external package as a dependency, it is required to import the package at the top of your code. If you forget to do this, you may encounter errors such as:
+        After adding an external package as a dependency, you must import it at the top of your custom widget code. Failure to do so results in errors such as:
 
         ```js
         The method 'AnimatedText' isn't defined...
@@ -71,7 +73,7 @@ This article demonstrates common errors and issues that may occur when creating 
         
     - **Widget Name Mismatch Between UI and Code**
 
-        If you forget to update the widget name in the boilerplate code, a mismatch may occur between the widget name defined in FlutterFlow and the class name in your code. This will lead to compilation errors.
+        A mismatch between the widget name in FlutterFlow and the class name in your code will cause compilation errors.
 
         Incorrect example:
 

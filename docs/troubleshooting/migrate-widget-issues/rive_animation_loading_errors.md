@@ -18,7 +18,7 @@ Rive animations may fail to render when the source file is incorrectly linked. T
 1. **Verify the Rive File URL**  
    Ensure the file URL ends with `.riv` and points directly to a hosted Rive file.
 
-   ```js
+   ```text
    https://public.rive.app/community/runtime-files/1199-2317-jack-olantern.riv
     ```
 
@@ -27,7 +27,7 @@ Rive animations may fail to render when the source file is incorrectly linked. T
 2. **Copy the Correct Link from Rive Community:**
 
     - Go to the animation page on the **[Rive Community](https://rive.app/community/)**.
-    - Right-click the Download button.
+    - Right-click the **Download** button.
     - Select Copy Link Address.
 
         The copied link must end with `.riv`. Any URL that redirects to a webpage or file viewer will fail to render.

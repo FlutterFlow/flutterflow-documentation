@@ -13,14 +13,14 @@ If a `ListView` with **Infinite Scroll** enabled loads all items at once instead
 - The widget is placed inside a layout that allows height constraints to be respected.
 :::
 
-Follow the steps below to configure listView for pagination:
+Follow the steps below to configure ListView for pagination:
 
 1. **Ensure ListView Has a Defined Height**  
    A `ListView` must have a height constraint to determine the viewport size and paginate correctly. Without a defined height, it will attempt to load all items.
 
 2. **Let ListView Handle Its Own Scrolling**  
    - Disable scrolling in any parent `Column` or scrollable container.  
-   - Enable the **Primary** option and wrap `ListView` in an `Expanded` widget.  
+   - Enable the **Primary** option, and wrap `ListView` in an `Expanded` widget.  
    - This allows `ListView` to control scroll behavior and calculate items to load per page.
 
       ![](../assets/20250430121248035007.png)

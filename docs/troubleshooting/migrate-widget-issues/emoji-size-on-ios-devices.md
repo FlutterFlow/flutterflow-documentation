@@ -32,11 +32,11 @@ On iOS devices, emojis can appear oversized when rendered inside text widgets, d
    This ensures that the emoji will resize according to the container's constraints and not exceed the intended bounds.
 
    :::tip
-   Auto-sizing works best when paired with fixed dimensions. This combination allows the emoji to scale appropriately while avoiding oversized rendering.
+   Auto-Size works best when combined with fixed container dimensions. This approach prevents oversized emojis and supports responsive layouts.
    :::
 
    ![](../assets/20250430121252902305.png)
 
 :::info
-For more context and support, refer to the **[official FlutterFlow guide on emoji rendering](https://intercom.help/flutterflow/en/articles/7044370-text-emoji-is-very-large-on-some-ios-devices)**.
+For more details and troubleshooting, see the **[official FlutterFlow guide on emoji rendering](https://intercom.help/flutterflow/en/articles/7044370-text-emoji-is-very-large-on-some-ios-devices)**.
 :::

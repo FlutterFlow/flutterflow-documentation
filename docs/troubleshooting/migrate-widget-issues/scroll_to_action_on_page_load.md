@@ -16,7 +16,7 @@ When a `Scroll To Action` fails to trigger during a page load, it is often becau
 ## Steps to Ensure Reliable Scroll Behavior:
 
 1. **Add a Delay Before the Scroll Action**  
-   Insert a `Delay Action` before the `Scroll To Action` to allow the widget tree to complete rendering. Recommended delay duration is `500–700 ms`.
+   Insert a `Delay Action` before the `Scroll To Action` to allow the widget tree to complete rendering. Recommended delay duration is 500 to 700 ms.
 
    ![](../assets/20250430121250453056.png)
 
@@ -33,5 +33,5 @@ When a `Scroll To Action` fails to trigger during a page load, it is often becau
    :::
 
 :::info[Additional Resources]
-**[Scroll To Action Failing on Page Load](https://intercom.help/flutterflow/en/articles/7047006-scroll-to-action-is-not-working-when-used-on-page-load)**
+Refer to **[Scroll To Action Failing on Page Load](https://intercom.help/flutterflow/en/articles/7047006-scroll-to-action-is-not-working-when-used-on-page-load)** for more troubleshooting help.
 :::

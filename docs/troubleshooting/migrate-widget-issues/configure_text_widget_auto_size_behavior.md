@@ -21,23 +21,21 @@ The `Auto Size` option allows the `Text` widget to automatically reduce its font
   2. Check its parent widget.
   3. Ensure both width and height are explicitly defined.
 
+  :::warning
   Without defined dimensions, the `Auto Size` feature may not behave as expected.
+  :::
 
   **Behavior Scenarios:**
 
     The following examples illustrate how `Auto Size` behaves under different container configurations:
 
-      - Container with width set to `infinity` and height set to `100px`, `Auto Size` disabled.  
-        The text may overflow beyond the container.
+      - Container with width set to `infinity` and height set to `100px`, `Auto Size` disabled. The text may overflow beyond the container.
 
-      - Container with width set to `infinity` and height set to `100px`, `Auto Size` enabled.  
-        The font size adjusts to fit the defined height.
+      - Container with width set to `infinity` and height set to `100px`, `Auto Size` enabled. The font size adjusts to fit the defined height.
 
-      - Container with width set to `30%` and no height defined, `Auto Size` enabled.  
-        The feature has no visible effect due to missing height constraint.
+      - Container with width set to `30%` and no height defined, `Auto Size` enabled. The feature has no visible effect due to missing height constraint.
 
-      - Container with width set to `70%` and height set to `50px`, `Auto Size` enabled.  
-        The text is resized to the minimum allowed font size to remain within the container.
+      - Container with width set to `70%` and height set to `50px`, `Auto Size` enabled. The text is resized to the minimum allowed font size to remain within the container.
 
         ![](../assets/20250430121459696014.png)
 
