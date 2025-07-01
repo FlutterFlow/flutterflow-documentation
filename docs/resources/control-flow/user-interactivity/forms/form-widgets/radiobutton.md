@@ -54,6 +54,10 @@ The RadioButton widget adds a single option named **Option 1** by default.
 </div>
 <p></p>
 
+### Trigger Action on Change
+
+See how to [trigger an action when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
+
 ### Changing Option Name
 
 To change the name of the option:
@@ -487,8 +491,3 @@ To change the color of selected and unselected options:
     </iframe>
 </div>
 <p></p>
-
-
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
