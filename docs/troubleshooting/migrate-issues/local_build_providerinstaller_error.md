@@ -54,5 +54,5 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
         ```js
         flutter --version
         ```
-        
+
     This error is often related to Google Play Services not being properly initialized on the emulator. If you're still encountering issues, consider creating a new emulator using a system image that includes the Play Store.

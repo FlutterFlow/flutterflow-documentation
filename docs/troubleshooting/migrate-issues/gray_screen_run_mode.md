@@ -6,7 +6,7 @@ title: Gray Screen in Run Mode
 
 # Gray Screen in Run Mode
 
-Seeing a gray screen in FlutterFlow’s Run Mode usually points to a configuration issue in your Firebase or project settings. Follow these steps to diagnose and resolve the issue.
+Seeing a gray screen in Run Mode usually points to a configuration issue in your Firebase or project settings. Follow these steps to diagnose and resolve the issue.
 
 :::info[Prerequisites]
 - You have integrated Firebase with your FlutterFlow project.

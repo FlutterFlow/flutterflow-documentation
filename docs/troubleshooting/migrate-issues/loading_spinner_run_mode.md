@@ -17,7 +17,7 @@ Here are the steps to fix this error:
 
 1. **Copy Firestore Rules from FlutterFlow**
 
-    1. Open your FlutterFlow project.
+    1. Open your project.
     2. Navigate to **Firestore** → **Settings**.
     3. Click the **Copy** icon to copy the default Firestore rules.
 

@@ -9,8 +9,8 @@ title: Black Screen During Run Mode
 If your app screen appears blank during Run Mode, follow these steps to resolve the issue:
 
 :::info[Prerequisites]
-- You have already built and deployed at least one screen in your FlutterFlow project.
-- You are running the app in **Run Mode** within the FlutterFlow editor.
+- You have already built and deployed at least one screen in your project.
+- You are running the app in **Run Mode** within the editor.
 :::
 
 1. **Reload the Frame**
@@ -27,7 +27,7 @@ If your app screen appears blank during Run Mode, follow these steps to resolve 
 
 4. **Update FlutterFlow and Clear Cache**
 
-    - Ensure you are using the latest version of FlutterFlow.
+    - Ensure you are using the latest version.
     - Clear your browser cache.
     - Log out and back in to your FlutterFlow account.
 
