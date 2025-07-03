@@ -50,7 +50,7 @@ Follow the steps below to fix the error:
             image_path_ios: "assets/images/launcher/ios.png"
             image_path_android: "assets/images/launcher/android.png"
             ```
-            - `flutter_launcher_icons`: "^0.10.0" specifies the package version.
+            - **flutter_launcher_icons*: "^0.10.0" specifies the package version.
             - `image_path_ios` and `image_path_android` specify the paths to your launcher icon images.
             - Ensure the image files exist at the specified paths.
 
