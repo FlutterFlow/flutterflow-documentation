@@ -1,58 +1,66 @@
 ---
 keywords: ['error', 'custom', 'domains']
-slug: custom_domain_connection_issues
+slug: custom-domain-connection-issues
 title: Custom Domain Connection Issues
 ---
+
 # Custom Domain Connection Issues
 
 This article provides solutions for common problems encountered when connecting custom domains.
 
-**DNS Records Not Found During Connection**
+:::info[Prerequisites]
+- Access to your domain registrar or DNS provider dashboard.
+- DNS management permissions to add or modify DNS records.
+- Familiarity with DNS record types (A, CNAME, CAA).
+:::
 
-When setting up a custom domain, FlutterFlow requires specific DNS records. If you receive an error stating **"Expected DNS records not found"**, follow these steps:
+**Steps to Resolve DNS Record Errors:**
 
 1. **Verify DNS Records**
 
    - Use tools like **[nslookup.io](https://www.nslookup.io)** to verify that your DNS A and CNAME records match the configuration provided in FlutterFlow.
    - Ensure no conflicting A, AAAA, or CNAME records exist.
-   
+
    ![](../../assets/20250430121150651702.png)
 
+2. **Allow Time for DNS Propagation**
 
-2. **Allow time for DNS propagation**: DNS updates may take up to 24 hours. Wait at least one hour after making changes before attempting to reconnect.
+   - DNS updates may take up to 24 hours.
+   - Wait at least one hour after making changes before attempting to reconnect your domain.
 
-3. **Retry connection**: After verifying and waiting, attempt to reconnect your domain.
+3. **Retry Connection**
 
-4. **Contact registrar support if necessary**
+   - After verifying DNS settings and allowing propagation, attempt to reconnect your domain.
 
-   - If all settings are correct and the issue persists after 48 hours, contact your domain registrar to confirm DNS configuration.
+4. **Contact Registrar Support If Necessary**
 
-**Difficulty Creating DNS Records**
+   - If settings are correct and the issue persists after 48 hours, contact your domain registrar to confirm DNS configuration.
 
-Each domain registrar may handle DNS record formats differently. Consider the following:
+**Handling Difficulty Creating DNS Records:**
 
-   - For root domains (e.g., example.com), some registrars require an empty name field, some require `"@"`, and others require the full domain name.
-   - For subdomains (e.g., test.example.com), some registrars require just `"test"`, while others require `"test.example.com"`.
-   - Refer to your registrar’s documentation for details on creating DNS records.
+- Different registrars require different formats for DNS record names:
+  - For root domains (e.g., `example.com`), some require an empty name, others `"@"`, or the full domain name.
+  - For subdomains (e.g., `test.example.com`), some require just `"test"`, others `"test.example.com"`.
+- Consult your registrar’s documentation for exact instructions.
 
-**404 Error After Connecting Domain**
+**Resolving 404 Errors After Domain Connection:**
 
-If you receive a **404 error** after connecting your domain:
+   - Publish the project again after connecting the domain.
+   - This usually resolves most 404 errors related to domain connections.
 
-   - Publish the project again after connecting the domain. This will resolve most 404 errors related to domain connection.
+**Fixing DNS Restrictions for SSL Certificates:**
 
-**DNS Restrictions for SSL Certificates**
+1. **Check for CAA Records**
 
-Sometimes, DNS restrictions prevent FlutterFlow from generating SSL certificates due to CAA record limitations. To resolve this:
+   - Use **[nslookup.io](https://www.nslookup.io/domains/your-site-name/dns-records/caa/)** (replace `your-site-name` with your domain) to check CAA records.
 
-   1. **Check for CAA Records**
+2. **Adjust CAA Records**
 
-      - Use **[nslookup.io](https://www.nslookup.io/domains/your-site-name/dns-records/caa/)** (replace `your-site-name` with your actual domain name).
+   - Add `"letsencrypt.org"` to your allowed certificate authorities.
+   - Remove any conflicting CAA records.
 
-   2. **Adjust CAA Records**
+      :::note
+      Once CAA records allow `"letsencrypt.org"`, FlutterFlow will be able to generate SSL certificates and complete the domain connection.
+      :::
 
-      - Add `"letsencrypt.org"` to your allowed certificate authorities, or remove conflicting CAA records.
-
-         Once the CAA records allow Let's Encrypt, FlutterFlow should be able to complete the domain connection process.
-
-If you continue to face challenges, contact FlutterFlow support through Live Chat or email support@flutterflow.io for further assistance.
+If issues persist after following these steps, contact FlutterFlow support via Live Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io).

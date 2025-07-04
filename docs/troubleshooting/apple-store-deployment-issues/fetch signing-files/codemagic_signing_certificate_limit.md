@@ -6,31 +6,41 @@ title: Codemagic Signing Certificate Limit
 
 # Codemagic Signing Certificate Limit
 
-During deployment, Codemagic attempts to create distribution certificates in your Apple Developer Account. If you have reached the maximum number of allowed distribution certificates, this process will fail, preventing a successful build.
+During iOS deployment, Codemagic attempts to create distribution certificates in your Apple Developer Account. If the maximum number of certificates has already been reached, the build will fail with a certificate creation error.
 
-**Full Error Message**
+## Error Message
 
+```bash
+Build failed :|Step 3 script `Fetch signing files` exited with status code 1
+Returned 409: There is a problem with the request entity - You already have a current Distribution certificate or a pending certificate request.
 ```
-Build failed :|Step 3 script `Fetch signing files` exited with status code 1Returned 409: There is a problem with the request entity - You already have a current Distribution certificate or a pending certificate request.
-```
 
-This error indicates that Codemagic cannot create a new certificate because existing certificates or pending certificate requests are already using the available slots.
+This message indicates that Codemagic cannot proceed because no additional distribution certificates can be created.
 
-**Solution**
+:::info[Prerequisites]
+- You are deploying an iOS app using Codemagic.
+- Your Apple Developer Program account is active and linked.
+:::
 
-To resolve this issue, delete unused distribution certificates from your Apple Developer account to free up space for new certificates.
+**Steps to Resolve Certificate Limit Error:**
 
-    **Steps to Delete Certificates**
+1. **Access Your Apple Developer Account**  
+   Log into your Apple Developer account to manage certificates:
 
-        - Open your **[Apple Developer Account](https://developer.apple.com/account/resources/certificates/list)**.
-        - Navigate to **Certificates, Identifiers & Profiles**.
-        - Under **Certificates**, review the list of existing certificates.
-        - Locate and delete any unused or expired **Distribution Certificates**.
+        - Go to the **[Apple Developer Certificates List](https://developer.apple.com/account/resources/certificates/list)**.
 
-    After removing unnecessary certificates, re-run the deployment from FlutterFlow.
-    
+2. **Navigate to the Certificates Section**  
+   In the **Certificates, Identifiers & Profiles** section:
+
+        - Click on **Certificates**.
+        - Locate all existing **Distribution Certificates**.
+
+3. **Remove Unused or Expired Certificates**  
+   Review and delete any unused, expired, or redundant distribution certificates to free up space.
+
+4. **Re-run Deployment**  
+   After deleting the certificates, initiate the build process again in FlutterFlow. Codemagic will automatically generate a new certificate as needed.
+
     :::note
-    The deleted certificates will be recreated automatically by Codemagic during the next build process.
+    The deleted distribution certificates will be recreated automatically by Codemagic during the next build.
     :::
-
-    

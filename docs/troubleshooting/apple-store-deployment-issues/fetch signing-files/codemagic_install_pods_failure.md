@@ -6,58 +6,51 @@ title: Codemagic Install Pods Failure
 
 # Codemagic Install Pods Failure
 
-During Codemagic deployment, errors may occur at the **Install Pods** step due to issues related to iOS dependency management. This article outlines common causes and solutions to resolve these errors.
+During Codemagic deployment, errors may occur at the **Install Pods** step due to iOS dependency conflicts, unstable code branches, or pod version mismatches. This guide outlines steps to identify and resolve these issues effectively.
 
-## Custom Code Package Conflicts
+:::info[Prerequisites]
+- You are deploying an iOS app using Codemagic.
+- Your project includes custom code or third-party packages.
+:::
 
-Conflicts between custom code packages and existing project dependencies can prevent pods from installing correctly. Flutter dependencies have version constraints, and introducing new packages or updating versions without checking compatibility may cause version conflicts.
+## Fix Dependency Conflicts from Custom Code
 
-**Solution:**
+Custom code or third-party packages may introduce conflicting versions of dependencies that prevent CocoaPods from resolving successfully.
 
-  - Check package documentation for compatibility issues.
-  - Update package versions in `pubspec.yaml` to versions known to be compatible.
-  - Run `flutter pub get` to refresh dependencies.
+**Steps to Resolve Install Pods Failure:**
 
-    For example, the package `platform_device_id` may cause conflicts:
+- **Check for Dependency Conflicts from Custom Code**  
+   Custom or third-party packages may cause version mismatches with FlutterFlow-supported dependencies.
 
-    ![](../../assets/20250430121132533922.png)
+   - Review documentation to ensure package compatibility.
+   - Adjust versions in your `pubspec.yaml` file accordingly.
+   - Run:
 
-## Deployment from an Incompatible GitHub Branch
+     ```bash
+     flutter pub get
+     ```
 
-Deploying from a GitHub branch that contains untested custom code or recent dependency changes may result in deployment failures.
+      ![](../../assets/20250430121132533922.png)
 
-  **Solution:**
+- **Use a Stable GitHub Branch for Deployment**  
+   Deploying from unstable branches can introduce unexpected errors during pod installation.
 
-    - Use a stable, fully tested branch for deployment.
-    - Merge the latest stable changes into the deployment branch.
-    - Remove experimental or untested code that may affect deployment.
+   - Ensure you're using a branch that passed previous Codemagic deployments.
+   - Remove untested or experimental code.
+   - Revert or refactor recent commits that might break dependencies.
 
-      For example, the branch `dungtienle/folhavpnV3` may contain unstable code:
+   ![](../../assets/20250430121132883140.png)
 
-      ![](../../assets/20250430121132883140.png)
+- **Fix Pod Version Compatibility Issues**  
+   CocoaPods may fail to resolve dependencies due to incompatible versions or incorrect iOS deployment targets.
 
-    - Review recent commits to identify and address changes affecting pod installation.
-    - Revert problematic commits if necessary.
+   - Update packages like `app_settings` in `pubspec.yaml` to versions compatible with your Flutter version.
+   - Raise the iOS minimum deployment target in Xcode if necessary.
 
-## Incompatible Pod Versions
+   ![](../../assets/20250430121133219967.png)
 
-CocoaPods may fail to resolve compatible versions for specific pods, such as `app_settings`, especially if the pod version conflicts with other pods or the iOS deployment target.
-
-  **Solution:**
-
-    - Update the version of `app_settings` in `pubspec.yaml` to a compatible version.
-    - If necessary, increase the iOS minimum deployment target using Xcode.
-
-      For example, the engineering team identified `app_settings` as the cause:
-
-      ![](../../assets/20250430121133219967.png)
-
-    - Adjust the iOS deployment target following Apple's or Amplify’s iOS platform setup guidance.
-
-  :::info[Deployment Best Practices]
-  - Verify package compatibility before adding new dependencies or upgrading existing ones.
-  - Always deploy from stable, tested branches.
-  - Ensure the iOS deployment target version meets the requirements of all packages and pods.
-  :::
-
-  By following these steps, you can resolve the **Install Pods** error and successfully deploy your app with Codemagic in FlutterFlow.
+:::tip[Deployment Best Practices]
+- Confirm dependency compatibility before pushing changes.
+- Always deploy from tested GitHub branches.
+- Verify your deployment target supports all pods used.
+:::
