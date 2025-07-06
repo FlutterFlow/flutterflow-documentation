@@ -1,6 +1,6 @@
 ---
 keywords: ['failed', 'card', 'payment']
-slug: update-payment-method
+slug: update-payment-method-after-failed-payment
 title: Update Payment Method After Failed Payment
 ---
 
@@ -19,7 +19,7 @@ The most common causes of failed payments include:
 - Payment blocked by your credit card provider.
 - Expired or invalid credit card.
 
-Contact your card issuer if the reason is unclear.
+    Contact your card issuer if the reason is unclear.
 :::
 
 **Steps to Update Credit Card and Retry Payment:**
@@ -40,6 +40,6 @@ Contact your card issuer if the reason is unclear.
 
     Once the payment is successful, your subscription will be restored automatically.
 
-    :::note
-    If the payment continues to fail after updating your card, contact support at [support@flutterflow.io](mailto:support@flutterflow.io) for further assistance.
-    :::
+:::note
+If the payment continues to fail after updating your card, contact support at [support@flutterflow.io](mailto:support@flutterflow.io) for further assistance.
+:::

@@ -26,7 +26,7 @@ You must have an active Teams plan subscription in FlutterFlow.
 
    ![Subscription expiration date](imgs/20250430121154120311.png)
 
-## Downgrading After Expiration
+**Downgrading After Expiration**
 
     Once your Teams plan expires, your account will automatically downgrade to the Free plan.
 
@@ -35,6 +35,6 @@ You must have an active Teams plan subscription in FlutterFlow.
         - Click the **Upgrade** button in the bottom-right corner of the FlutterFlow editor.
         - Select the plan that fits your needs.
 
-        :::tip[Need to Downgrade Immediately?]
-        To switch from the Teams plan to another plan (e.g., Pro) without waiting for the current subscription to expire, contact support at [support@flutterflow.io](mailto:support@flutterflow.io).
-        :::
+            :::tip
+            To switch from the Teams plan to another plan (e.g., Pro) without waiting for the current subscription to expire, contact support at [support@flutterflow.io](mailto:support@flutterflow.io).
+            :::

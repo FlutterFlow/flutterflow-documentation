@@ -31,11 +31,11 @@ When a Stripe payment is initiated in FlutterFlow, an output variable named `pay
    - If `paymentId` is empty, the payment failed.
 
    ![Checking paymentId is not empty](imgs/20250430121315556496.png) 
-    
+
    ![Condition block using paymentId](imgs/20250430121315814333.png)
 
 3. **Trigger Conditional Actions**  
-   Based on the result of the payment check:
+   Based on the result of the payment, check:
 
    - **If Successful**  
      - Display a confirmation message.
@@ -47,6 +47,6 @@ When a Stripe payment is initiated in FlutterFlow, an output variable named `pay
      - Clear payment input fields.
      - Provide feedback to guide the user.
 
-   ![Example of a successful payment flow](imgs/20250430121316063461.png)
+        ![Example of a successful payment flow](imgs/20250430121316063461.png)
 
-By implementing this logic, you can create a responsive and user-friendly Stripe payment flow in your FlutterFlow app.
+    By implementing this logic, you can create a responsive and user-friendly Stripe payment flow in your FlutterFlow app.

@@ -28,10 +28,10 @@ You can cancel your FlutterFlow subscription at any time. After cancellation, yo
    Complete the cancellation survey and click **Cancel Subscription** to confirm.  
    A confirmation message will appear.
 
-:::note
-Your account remains active with paid features until your current billing period ends. After that, it automatically switches to the free plan.
-:::
+   :::note
+   Your account remains active with paid features until your current billing period ends. After that, it automatically switches to the free plan.
+   :::
 
-You can verify the cancellation in the **My Plan** section. It will display **Active until [x date]**.  
+   You can verify the cancellation in the **My Plan** section. It will display **Active until [x date]**.  
 
-![](imgs/20250430121447869708.png)
+   ![](imgs/20250430121447869708.png)
