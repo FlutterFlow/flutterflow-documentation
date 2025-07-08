@@ -9,32 +9,51 @@ title: Fix Google Translate Errors
 FlutterFlow integrates with Google Translate to help localize your app automatically. This guide outlines how to identify and resolve common issues with the translation integration.
 
 :::info[Prerequisites]
-- Google Translate integration has been added to the project.
-- At least one supported language has been configured under **App Settings > Localization**.
-- Refer to the **[Google Translate Integration](/concepts/localization/#add-multi-language-support)** guide.
+- Google Translate integration must be enabled for the project.
+- At least one supported language must be added in **App Settings > Localization**.
+- Review the [Google Translate Integration](/concepts/localization/#add-multi-language-support) guide for setup instructions.
 :::
 
-## Common Translation Issues:
+## Common Translation Issues and Fixes:
 
-   - **Long Text Blocks:** Exceeding limits or timeouts — translate externally if needed.  
-   - **Unsupported Characters:** Emojis or symbols may cause errors. Remove or replace.  
-   - **Language Limits:** Max 10 languages supported. Reduce if necessary.  
+- **Long Text Forms**  
+   **Problem:** Attempting to translate long blocks of text in forms or widgets can lead to API timeouts or failures.  
+   **Solution:** Remove long text elements and translate them outside of FlutterFlow using external tools like Google Translate. Once translated, manually paste the content back into your project. Ensure the input field is empty before retrying automatic translation.
+
+- **Special Characters**  
+   **Problem:** Some special characters—such as emojis, accented symbols, or non-Latin characters—may not be supported by the Google Translate API and can cause translation to fail.  
+   **Solution:** Review the text and replace or remove any unsupported special characters. Then attempt the translation again.
+
+- **Exceeding Language Limit**  
+   **Problem:** Adding more than 10 language options in your project may result in translation failure.  
+   **Solution:** Limit your project to a maximum of 10 supported languages for translation to work reliably with Google Translate.
 
 ## Steps to Troubleshoot Translation Failures:
 
 1. **Locate the Problem Area**  
-   Identify whether the error occurs on a specific widget, page, or text field to narrow down the source of the issue.
+   Identify the specific widget, page, or field where translation fails. Focusing on the problematic component will make resolution faster.
 
-2. **Check the Browser Console**  
-   Use Chrome DevTools to inspect the console for errors related to failed translation requests.
+2. **Use the Translate All Button**  
+   In **App Settings > Localization**, click the **Translate All** button. The process will stop at the first failure, indicating the field or element causing the issue.
 
-3. **Use the Translate All Button**  
-   Clicking **Translate All** will begin the process and stop at the first problematic field, helping you identify where the issue occurs.
+3. **Check Chrome Developer Console**  
+   Open the Chrome DevTools console and monitor for any error logs related to translation requests. This can help identify issues such as invalid characters, request failures, or unsupported content.
 
-4. **Temporarily Remove Problem Text**  
-   If a specific field is causing an issue, delete the content, run the translation process, and then re-add the translated content manually.
+4. **Remove and Isolate Problematic Text**  
+   Temporarily delete the suspected text and retry the translation. If the translation proceeds successfully, that text is likely causing the failure. Manually translate and reinsert it.
 
+   :::note
+   Using shorter, plain-text strings without special characters improves success rates with the Google Translate API.
+   :::
 
-If issues persist after following the steps above, contact [support@flutterflow.io](mailto:support@flutterflow.io) for assistance.
+:::info[Additional Help]
+If the issue persists after troubleshooting, reach out to [support@flutterflow.io](mailto:support@flutterflow.io) with the following:
+
+   - Screenshot or screen recording of the failure
+   - Console error logs (if available)
+   - A description of where the failure occurs (page/widget/text field)
+
+      This will help the support team resolve the issue faster.
+:::
 
 
