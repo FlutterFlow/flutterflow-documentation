@@ -76,7 +76,7 @@ Let's see how to add a *DropDown* widget and build an example that shows the sel
 </div>
 <p></p>
 
-### Setting initial value
+### Setting Initial Value
 
 Setting a default or initial value for the DropDown is a common requirement for many apps. It can provide a better user experience by pre-selecting the most likely option.
 
@@ -115,20 +115,19 @@ To set an initial value:
 </div>
 <p></p>
 
-### Saving DropDown value on selection change
+### Saving DropDown Value on Selection Change
 
 You might want to save the dropdown value as soon as the selection changes. This approach is useful when you want to ensure that the user's selection is immediately saved without having to wait for them to submit the form. By doing so, you can provide a better user experience and reduce the risk of data loss in case of any interruption.
 
-You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
+You can do so by adding an action such as [update app state](../../../../../resources/data-representation/app-state.md#update-app-state-action), [update Firestore record](../../../../../integrations/database/cloud-firestore/firestore-actions#update-document-action) that [triggers when a selection changes](../../forms/form-triggers.md#on-selected) on this widget.
 
-![Saving *DropDown* value on selection change](../../imgs/saving-dp-value-on-selection-change.webp)
 
 
 ## Customizing
 
 You can customize the appearance and behavior of this widget using the various properties available under the properties panel.
 
-### Showing option label
+### Showing Option Label
 
 The dropdown widget allows you to show a label than the actual option value. By adding the option label, you can have a simple/short name or abbreviation (which is quite easy to compare and process in the backend) instead of a tricky name (e.g., Falkland Islands (the) [Malvinas]).
 
@@ -172,7 +171,7 @@ To show option label:
 </div>
 <p></p>
 
-### Searchable dropdown
+### Searchable Dropdown
 
 The *DropDown* widget is a good choice when you have a small number of options, up to around 10-20; however, If you have more options than that, consider using a searchable dropdown.
 
@@ -211,7 +210,7 @@ To make the dropdown widget a searchable one:
 
 ![Making dropdown searchable](../../imgs/making-dd-searchable.png)
 
-### Disable dropdown
+### Disable Dropdown
 
 You might need to disable a dropdown when certain conditions are not yet met or need to be fulfilled. For example, when the dropdown options are dependent on other fields, and those fields are not filled yet.
 
@@ -248,7 +247,7 @@ To disable the dropdown:
 
 ![Disabling dropdown](../../imgs/disabling-dropdown.png)
 
-### Allow multi select
+### Allow Multi Select
 
 You might want to allow users to select multiple options from the dropdown list. For example, on an e-commerce app, users might want to filter products based on multiple attributes, such as t-shirts in both 'blue' and 'red' colors.
 
@@ -284,12 +283,11 @@ To clear the selection, you can use the [Reset Form Fields](../form-actions/rese
 </div>
 <p></p>
 
-
-### Changing dropdown size
+### Changing Dropdown Size
 
 To change the height and width of the dropdown, select the **DropDown** widget, move to the **Properties Panel > DropDown Properties > enter the Width and Height value**.
 
-### Set max height
+### Set Max Height
 
 If needed, you can also control the dropdown height using the **Max Height** property.
 
@@ -319,7 +317,7 @@ If needed, you can also control the dropdown height using the **Max Height** pro
 </div>
 <p></p>
 
-### Adding margin
+### Adding Margin
 
 Margin adds a space between the DropDown's text and its border. To change the margin, select the **DropDown** widget, move to the **Properties Panel > DropDown Properties >** find the **Margin** property, and change the values.
 
@@ -349,13 +347,13 @@ Margin adds a space between the DropDown's text and its border. To change the ma
 </div>
 <p></p>
 
-### Changing background color
+### Changing Background Color
 
 To change the background color, move to the **Properties Panel > DropDown Style > set the Fill Color**.
 
 ![Changing background color](../../imgs/changing-background-color.png)
 
-### Changing menu elevation
+### Changing Menu Elevation
 
 Menu elevation adds a shadow to the dropdown, giving it a sense of depth and making it appear above the surface it is placed on.
 
@@ -365,11 +363,11 @@ To change the menu elevation (depth or Z-axis), move the **Properties Panel >** 
 The higher value draws the bigger size of the shadow.
 :::
 
-### Adding border
+### Adding Border
 
 See how to [add a border](../../../../ui/widgets/widget-commonalities.md#adding-border).
 
-### Show/hide underline
+### Show/hide Underline
 
 To show or hide the dropdown underline, move the **Properties Panel >** **DropDown Style** > use the **Hides Underline** toggle.
 
@@ -399,12 +397,8 @@ To show or hide the dropdown underline, move the **Properties Panel >** **DropDo
 </div>
 <p></p>
 
-### Fix position
+### Fix Position
 
 By default, the dropdown options are displayed over/above the dropdown button. To display beneath/below the button, move the **Properties Panel >** **DropDown Style** > switch on the **Fix Position** toggle.
 
 ![Fix position for dropdown options](../../imgs/fix-position.webp)
-
-:::info[Trigger action on change]
-See how to [**trigger an action when a selection changes**](../../../../ui/widgets/widget-commonalities.md#trigger-action-on-selection-change) on this widget.
-:::
