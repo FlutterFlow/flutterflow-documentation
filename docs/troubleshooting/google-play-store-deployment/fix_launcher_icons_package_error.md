@@ -6,7 +6,7 @@ title: Fix Flutter Launcher Icons Package Error
 
 # Fix Flutter Launcher Icons Package Error
 
-This article describes how to resolve the **flutter_launcher_icons** package error that may occur during app build or deployment.
+This article describes how to resolve the **[flutter_launcher_icons package](https://pub.dev/packages/flutter_launcher_icons)** error that may occur during app build or deployment.
 
 :::info[Prerequisites]
 - Access to your FlutterFlow project.

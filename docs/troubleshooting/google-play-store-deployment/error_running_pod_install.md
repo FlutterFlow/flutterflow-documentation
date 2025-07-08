@@ -18,7 +18,7 @@ This article addresses the common **Error Running Pod Install** issue, which typ
 
 1. Verify Flutter is set up correctly by following the official guide: **[Flutter - Get Started: Install on macOS](https://docs.flutter.dev/get-started/install/macos)**.
 
-2. For troubleshooting specific to macOS, consult this guide: **[Troubleshooting Flutter on macOS](https://intercom.help/flutterflow/en/articles/6156947-i-get-this-error-error-running-pod-install)**.
+2. For troubleshooting specific to macOS, consult this guide: **[Troubleshooting Flutter on macOS](https://docs.flutter.dev/get-started/install/macos/mobile-ios#install-cocoapods)**.
 
 3. Run `flutter doctor` in the terminal to check for missing dependencies or configuration issues.
 

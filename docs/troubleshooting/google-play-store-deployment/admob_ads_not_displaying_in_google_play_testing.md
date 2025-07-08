@@ -26,9 +26,9 @@ If your AdMob ads are not showing during **Open Testing** via the Google Play St
     2. Confirm that your app is registered and linked to your Google Play listing.
     3. Ensure the app’s release status in AdMob matches its status in the **Google Play Console**.
 
-    :::note
-    If your app is listed as `not released` in AdMob, live ads may not load during testing.
-    :::
+        :::note
+        If your app is listed as `not released` in AdMob, live ads may not load during testing.
+        :::
 
 - **Declare Use of Advertising ID**
 
