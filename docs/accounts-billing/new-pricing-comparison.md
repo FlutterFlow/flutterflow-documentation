@@ -380,7 +380,7 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>Cloud Functions<br/><span className="feature-description">Write and deploy Firebase Cloud Functions directly from FlutterFlow</span></td>
-            <td>❌</td>
+            <td>✅</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>

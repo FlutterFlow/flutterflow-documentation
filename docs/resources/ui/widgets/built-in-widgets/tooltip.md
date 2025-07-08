@@ -151,7 +151,7 @@ By default, the *Tooltip* appears below the target widget. You can change this s
 
 ### Customize tail size
 
-To change the tail's size, you can use the **Tail Width** and **Tail Lenght** properties.
+To change the tail's size, you can use the **Tail Width** and **Tail Length** properties.
 
 <div style={{
     position: 'relative',
