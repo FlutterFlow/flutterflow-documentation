@@ -50,6 +50,6 @@ Follow the steps below to initialize a GitHub repository:
       :::
 
 :::info[Additional Resources]
-- **[GitHub FlutterFlow Integration Guide](/flutterflow-ui/toolbar/#developer-menu)**
+- **[Connect a GitHub Repo](/exporting/push-to-github/#connect-a-github-repo)**
 - **[State Management](/concepts/state-management/)**
 :::
