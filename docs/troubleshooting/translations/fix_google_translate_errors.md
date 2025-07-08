@@ -34,6 +34,7 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
 4. **Temporarily Remove Problem Text**  
    If a specific field is causing an issue, delete the content, run the translation process, and then re-add the translated content manually.
 
-:::tip
-If translation issues persist, check the **[FlutterFlow support article](https://intercom.help/flutterflow/en/articles/7850610-troubleshooting-flutterflow-google-translation-issues)** or contact support for further help.
-:::
+
+If issues persist after following the steps above, contact [support@flutterflow.io](mailto:support@flutterflow.io) for assistance.
+
+
