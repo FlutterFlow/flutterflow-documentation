@@ -342,7 +342,7 @@ export const PricingToggles = () => {
             <td>Automated Testing<br/><span className="feature-description">Run automated tests on your applications</span></td>
             <td>❌</td>
             <td>❌</td>
-            <td>❌</td>
+            <td>1 test per project</td>
             <td>Up to 3 tests per project</td>
             <td>Unlimited tests</td>
           </tr>
@@ -380,7 +380,7 @@ export const PricingToggles = () => {
           </tr>
           <tr>
             <td>Cloud Functions<br/><span className="feature-description">Write and deploy Firebase Cloud Functions directly from FlutterFlow</span></td>
-            <td>❌</td>
+            <td>✅</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>

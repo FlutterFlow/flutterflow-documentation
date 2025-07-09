@@ -46,7 +46,7 @@ Lastly, you can connect with a [FlutterFlow Expert](https://experts.flutterflow.
 
 We regularly release feature updates and bug releases. To make sure you are on the most recent version of FlutterFlow select Ctrl/Cmd + R.
 
-If you think you've found a bug, please submit an [in-app bug report](../intro/ff-ui/toolbar.md#help) or let us know via chat (Standard and Pro users only). Please make sure to include:
+If you think you've found a bug, please submit an [in-app bug report](../intro/ff-ui/toolbar.md#help-menu) or let us know via chat (Standard and Pro users only). Please make sure to include:
 
 * A link to your project
 * The page(s) effected

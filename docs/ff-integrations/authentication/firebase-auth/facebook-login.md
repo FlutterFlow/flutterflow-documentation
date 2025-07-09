@@ -270,7 +270,7 @@ To let users log out of your app, you can use the [Logout](auth-actions.md#logou
 
 ### 9. Prepare to test the app
 
-Facebook Sign-In functionality does not work in Run or Test Mode and can only be tested on a real device or emulator.
+Facebook Sign-In functionality does not work in Run or Test Mode. You can test your app on a real device or emulator using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
 
 ### 10. Verify user creation
 

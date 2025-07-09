@@ -460,3 +460,14 @@ You can access the custom enums from **Set from Variable** menu > **Custom Enum*
 - Avoid advanced Dart features that are not supported by FlutterFlow’s parser, such as generics or function-typed fields.
 - Re-parse your code after making changes to ensure FlutterFlow updates the parsed structure correctly.
 - Document your code with comments to make your custom classes easier to understand and maintain over time.
+
+## FAQs
+
+<details>
+<summary>
+Can I add Custom Classes (Code Files) in a Library Project?
+</summary>
+<p>
+Yes, you can. When a Library Project is imported, any custom code files you’ve defined will be parsed, and the resulting classes will be available for use in the consuming project.
+</p>
+</details>
