@@ -14,7 +14,7 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
 - Review the [Google Translate Integration](/concepts/localization/#add-multi-language-support) guide for setup instructions.
 :::
 
-## Common Translation Issues and Fixes:
+## Common Translation Issues and Fixes
 
 - **Long Text Forms**  
    **Problem:** Attempting to translate long blocks of text in forms or widgets can lead to API timeouts or failures.  
