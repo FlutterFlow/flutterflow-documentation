@@ -105,10 +105,11 @@ Below is a list of available API endpoints with their methods and usage descript
 
 | Endpoint                    | Method | Purpose                                       |
 | --------------------------- | ------ | --------------------------------------------- |
-| `/listPartitionedFileNames` | GET    | List available YAML file names for a project  |
-| `/projectYamls`             | GET    | Export/download YAML files from a project     |
-| `/validateProjectYaml`      | POST   | Validate YAML content before applying changes |
-| `/updateProjectYaml`        | POST   | Update project configuration via YAML         |
+| `/listPartitionedFileNames` | GET    | List available YAML file names for a project.  |
+| `/l/listProjects`           | POST   | Retrieve metadata for all projects.            |
+| `/projectYamls`             | GET    | Export/download YAML files from a project.     |
+| `/validateProjectYaml`      | POST   | Validate YAML content before applying changes. |
+| `/updateProjectYaml`        | POST   | Update project configuration via YAML.         |
 
 
 ### List File Names
@@ -152,7 +153,83 @@ curl -X GET \
   -H 'Authorization: Bearer YOUR_API_TOKEN'
 ```
 
+### List Projects
 
+This endpoint retrieves a list of FlutterFlow projects associated with your account, including detailed metadata such as project name, owner email, team info, collaboration settings, and versioning data.
+
+#### Endpoint
+
+`POST /l/listProjects`
+
+#### Request Body
+
+```jsx
+{
+  "project_type": "ALL",
+  "deserialize_response": true
+}
+```
+- **`project_type: "ALL"`**: Use "ALL" to include personal, team, and shared projects, or "TEAM_RESOURCE" to include only team-associated projects.
+
+- **`deserialize_response: true`**: Ensures the response is returned as human-readable JSON instead of a base64-encoded protobuf.
+
+:::tip
+It’s recommended to use the default options: `"ALL"` for `project_type` and `true` for `deserialize_response` for the most complete and readable results.
+:::
+
+#### Response
+
+Returns a JSON object containing an array of projects under the `entries` key. Each entry contains the project ID and rich metadata, including collaborators, app icons, sessions, and branching information.
+
+```jsx
+{
+  "success": true,
+  "reason": null,
+  "value": {
+    "entries": [
+      {
+        "id": "XXXXXXXXXXXXXXX",
+        "project": {
+          "name": "Sample Project A",
+          "ownerEmail": "user1@example.com",
+          "createdAt": "2024-08-08T11:01:12.427Z",
+          "updatedAt": "2024-08-08T11:01:18.669Z",
+          "teamRef": {
+            "path": "teams/TEAM_ID_1"
+          },
+          "mainBranchRef": {
+            "path": "projects/sample-project-id"
+          },
+          "numBranches": 2,
+          "otherMembers": {
+            "USER_XYZ": {
+              "email": "editor1@example.com",
+              "accessLevel": "EDITOR"
+            }
+          },
+          "activeSessions": {
+            "SESSION_ID_1": {
+              "lastSuccessfulUpdate": "2024-08-06T18:41:56.569Z"
+            }
+          },
+          "totalNumUpdates": 2177
+        }
+      }
+    ]
+  }
+}
+```
+
+#### Example Usage
+
+```jsx
+curl 'https://api.flutterflow.io/v2/l/listProjects' \
+  -H 'authorization: Bearer YOUR_API_TOKEN' \
+  --data-raw '{
+    "project_type": "ALL",
+    "deserialize_response": true
+  }'
+```
 
 ### Download Project YAML
 
