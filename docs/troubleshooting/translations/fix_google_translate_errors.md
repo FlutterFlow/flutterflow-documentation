@@ -28,7 +28,7 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
    **Problem:** Adding more than 10 language options in your project may result in translation failure.  
    **Solution:** Limit your project to a maximum of 10 supported languages for translation to work reliably with Google Translate.
 
-## Steps to Troubleshoot Translation Failures:
+## Steps to Troubleshoot Translation Failures
 
 1. **Locate the Problem Area**  
    Identify the specific widget, page, or field where translation fails. Focusing on the problematic component will make resolution faster.
