@@ -188,7 +188,8 @@ Once the library is imported, following resources are accessible for use:
 - [API Calls](../../resources/control-flow/backend-logic/api/rest-api.md)
 - [Action Blocks](../../resources/control-flow/functions/action-blocks.md)
 - [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Actions](../../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../../resources/ui/widgets/intro-widgets.md)
-- [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned) 
+- [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned)
+- [Code Files](../../ff-concepts/adding-customization/code-file.md) 
 
 :::info
 - [**Pages**](../../resources/ui/pages/intro-pages.md), [**Firestore Collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md), and [**Cloud Functions**](../../ff-concepts/adding-customization/cloud-functions.md) are still being worked on and may come in future updates.
@@ -199,7 +200,8 @@ It's important to note that these resources show up where they are instantiated.
 
 - **Components** appear in the widget palette.
 - **API calls** appear when making API calls in the action flow editor.
-- **Custom functions** are available when setting up actions or functions within the app.
+- **Custom Functions** are available when setting up actions or functions within the app.
+- **Code Files** (Dart files containing classes or enums) become available when [creating instances](../../ff-concepts/adding-customization/code-file.md#create-custom-class-instance), allowing you to access their fields and methods. They also appear in the action flow editor when adding [custom class actions](../../ff-concepts/adding-customization/code-file.md#set-field-action).
 
 This ensures that only relevant resources are shown where they are needed, optimizing performance and discoverability.
 

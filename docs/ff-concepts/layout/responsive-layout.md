@@ -197,3 +197,57 @@ To implement this, we can go to its widget properties and toggle the device icon
 And now you have a more responsive screen for this shopping app use case that looks good in both mobile and desktop formats.
 
 With these adjustments, your shopping app now boasts a highly responsive screen that seamlessly adapts to both mobile and desktop formats. This ensures an optimal user experience across all devices, maintaining both functionality and aesthetic appeal.
+
+## Responsive Value
+
+**Responsive Values** allow you to define different property values, such as widths, heights, font sizes, or padding, for different device sizes (mobile, tablet, desktop, and wide). At runtime, your app evaluates the screen width and automatically applies the appropriate value based on your configurations.
+
+:::info[possible use cases]
+
+- **Adaptive Layouts**: Automatically adjust element sizes to deliver a consistent UI across devices.
+- **Better Readability**: Increase font size on larger screens to improve legibility.
+- **Improved Spacing**: Use different padding or margins on tablets and desktops to optimize content flow.
+
+:::
+
+To set a responsive value, select a widget and choose a property that supports responsiveness. Click **Set from Variable > Responsive Value**, then enter different values for each screen size:
+
+- Mobile (below `Breakpoint Small`)
+- Tablet (below `Breakpoint Medium`)
+- Desktop (below `Breakpoint Large`)
+- Wide (above `Breakpoint Large`)
+
+As you preview on different devices, the property will automatically adjust based on the selected screen size.
+
+:::tip[Customizing Breakpoints]
+
+You can adjust the default screen size breakpoints (mobile, tablet, desktop, wide) in FlutterFlow’s Theme Settings. See how to [**Customize Breakpoints**](#customize-responsive-breakpoints).
+
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/0XfY0BCqlcIrsXhOGlCh?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
