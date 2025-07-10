@@ -100,6 +100,10 @@ To add inline function, open the Set from Variable dialog wherever it's possible
 
 For example, we may want to quickly calculate the discount amount of a product where the discount is 18% of the MRP of the product. The expression would be `cost - (cost * discount)`.
 
+:::tip
+Looking for more power and flexibility? Use the new [**Custom Code Expression**](#custom-code-expression). It’s a more advanced version of Inline Functions that lets you access FlutterFlow generated resources without passing them as arguments. You also get real-time autocomplete and inline error checking for faster, more accurate logic.
+:::
+
 **Precedence of operations**
 
 Inline Function for math operations follow typical precedence (e.g., multiplication/division before addition/subtraction), but parentheses can change the order.
@@ -162,6 +166,79 @@ Here are some common expressions you can use for your business logic:
 | `int.parse(s)`                     | Convert the **String** into an **integer.**             | `int.parse(stringValue)`   | `int`            |
 
 
+## Custom Code Expression
+
+**Custom Code Expression** lets you write short Dart code directly in widget property fields and action flows in FlutterFlow. It’s a more powerful version of [**Inline Function**](#inline-function-code-expressions), allowing you to directly access FlutterFlow generated classes, global variables, widget properties, parameters, and more without needing to manually pass them as inputs.
+
+Custom Code Expressions also support real-time autocomplete, making it easy to discover available fields as you type. For example, when you type `FFAppState().`, it will suggest all available app state variables along with their types.
+
+In addition, inline validation provides immediate feedback as you write, helping you catch syntax errors or invalid property references.
+
+:::info
+To use Custom Code Expression, you must have an active [**FlutterFlow paid plan**](https://www.flutterflow.io/pricing).
+:::
+
+:::tip
+- To explore what you can access within a Custom code expression, refer to the [**Common Examples**](../../../ff-concepts/adding-customization/common-examples.md) page.
+- Press `^ + Space` (or `Ctrl + Space`) while typing to see suggestions for what you can access in your Custom code expression.
+- You can access values inside custom structs. For example, you can use `FFAppState().localDeviceInfo.osVersion` if that field exists in your app state.
+- To use Custom code expressions better, it's helpful to understand how FlutterFlow builds your project behind the scenes. You can check the [**State Management**](../../../generated-code/state-mgmt-gen-code.md) page and other **Generated Code** sections to learn how everything is set up.
+
+:::
+
+Here are a couple of examples showing how to access App State and Page State within a Custom code expression:
+
+- **App State Access:** For example, to check if dark mode is enabled using an App State variable:
+
+    ```jsx
+    FFAppState().enableDarkMode ? 'Dark Mode On' : 'Light Mode Off'
+    ```
+
+    This accesses the global `enableDarkMode` boolean stored in `FFAppState`, and returns a string based on its value.
+
+- **Page and Component State Access:** For example, to access a page or component state variable like `searchText`, you start with `_model.` and then select the variable from the autocomplete suggestions.
+
+    ```jsx
+    _model.searchText.isEmpty ? '' : 'Searching for "${_model.searchText}"'
+    ```
+
+    This expression checks if the `searchText` variable (defined as a page state) is empty, and returns an appropriate message. The `_model` object refers to the current page’s generated state model.
+
+Here's an example of adding a Custom Code Expression:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/6RV03v2ByVqRgCTeg3QF?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Execute Custom Code [Action]
+
+To use a Custom Code Expression when triggering actions in FlutterFlow (i.e., inside an Action Flow), you can use the **Execute Custom Code** action. This allows you to run a Dart expression when something happens, such as tapping a button or after a page loads.
+
+![execute-custom-code.avif](img/execute-custom-code.avif)
+
+The Execute Custom Code action can be really helpful in scenarios where the home page is removed early from the navigation stack and standard navigation using the local context may fail. To prevent this, you can [use the global navigator context](../../../ff-concepts/navigation-routing/deep-dynamic-linking.md#using-global-context-to-navigate) inside a code expression.
 
 ## Custom Functions
 
@@ -170,3 +247,18 @@ You can also use custom functions to handle slightly more complex calculations o
 :::info
 Learn more about [**Custom Functions**](../../../ff-concepts/adding-customization/custom-functions.md).
 :::
+
+## FAQS
+<details>
+<summary>
+How is a Custom Code Expression different from an Inline Function?
+</summary>
+<p>
+Custom Code Expression is a more advanced and flexible version of Inline Function.
+
+With Inline Functions, you had to manually pass values as arguments. In contrast, Custom Code Expressions let you directly reference FlutterFlow generated resources (such as `FFAppState()`, `_model`, context, and more) without needing to pass them in.
+
+You can write any valid Dart expression in a Custom code expression, even multi-line logic using anonymous functions. Plus, Custom Code Expressions support real-time autocomplete and inline error validation, making it much easier to discover available variables and avoid mistakes.
+
+</p>
+</details>
