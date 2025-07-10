@@ -1,9 +1,9 @@
 ---
-slug: /concepts/existing-flutter/method-channels
-title: Implementing Third-Party SDKs with Method Channels
-description: Implementing Third-Party SDKs with Method Channels
+slug: /concepts/advanced/method-channels
+title: Integrating Native SDKs Using Method Channels
+description: Learn how to integrate third-party native SDKs into your FlutterFlow project using Method Channels. This guide walks through setting up channels, writing native code, and connecting it back to FlutterFlow.
 tags: [Flutter]
-sidebar_position: 4
+sidebar_position: 1
 keywords: [FlutterFlow, Flutter, Method Channels, Existing Flutter Codebases,]
 ---
 
@@ -35,7 +35,7 @@ You’re not limited by what Flutter provides out of the box. MethodChannels let
 
 ## What is a MethodChannel?
 
-A **[MethodChannel](https://docs.flutter.dev/platform-integration/platform-channels)** or Platform Channels is Flutter’s core mechanism for integrating platform-specific functionality. It allows Dart code to send messages to, and receive responses from, the host platform’s native code \- Android (written in Kotlin or Java) or iOS (written in Swift or Objective-C). This enables your Flutter app to access device features and third-party native libraries that are outside the scope of the Flutter framework or its plugin ecosystem. Here is an example of MethodChannel.
+A **[MethodChannel](https://docs.flutter.dev/platform-integration/platform-channels)** or **Platform Channels** is Flutter’s core mechanism for integrating platform-specific functionality. It allows Dart code to send messages to, and receive responses from, the host platform’s native code \- Android (written in Kotlin or Java) or iOS (written in Swift or Objective-C). This enables your Flutter app to access device features and third-party native libraries that are outside the scope of the Flutter framework or its plugin ecosystem. Here is an example of MethodChannel.
 
 ```js
 class _BatteryLevelScreenState extends State<BatteryLevelScreen> {
