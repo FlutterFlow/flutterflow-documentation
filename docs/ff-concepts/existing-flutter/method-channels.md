@@ -80,28 +80,14 @@ This message flow is asynchronous and decoupled:
 * **Method Handler**: Native code uses a handler (e.g., `setMethodCallHandler` on Android) to listen for calls and run logic when the specified method name is matched.  
 * **Result Callback**: The native handler must return a result via `result.success(...)`, `result.error(...)`, or `result.notImplemented()`. These responses are passed back to Dart, completing the `Future`.
 
-### Example Message Flow {#example-message-flow}
+### Example Message Flow 
 
-```
-Flutter (Dart)
-   |
-   |  invokeMethod('getBatteryLevel')
-   v
-Native (Kotlin/Swift)
-   - Listens on 'com.example/battery'
-   - Matches method name 'getBatteryLevel'
-   - Executes logic to read battery level
-   - Sends result back: success(85) or error(...)
-   ^
-   |  Future in Dart completes with 85 or throws PlatformException
-   |
-Flutter (Dart)
-```
+![method-channels.png](imgs/method-channels.png)
 
 This design ensures clear separation between platform and UI logic, and it keeps the UI thread non-blocking for both Dart and native sides. It also makes the communication extensible—you can define as many methods as you need over a single channel or use multiple channels for modular organization.
 
 
-### When to Use a MethodChannel {#when-to-use-a-methodchannel}
+### When to Use a MethodChannel 
 
 MethodChannel is most appropriate when:
 
@@ -110,7 +96,7 @@ MethodChannel is most appropriate when:
 * You need to launch a platform-native UI (e.g., a full-screen scanner or a native file picker).  
 * You’re bridging a legacy native feature into a Flutter app or gradually migrating a native app to Flutter.
 
-### What MethodChannels Are Not {#what-methodchannels-are-not}
+### What MethodChannels Are Not 
 
 * They are not **shared memory** \- All data is copied through serialization, not shared by reference. Only standard types are supported (primitives, lists, maps, typed data). Large data transfers require full serialization/deserialization.  
 * They are **not synchronous** \- Calls return Futures immediately without blocking. Results arrive asynchronously via the event loop. Platform errors surface as PlatformExceptions when the Future completes.  
@@ -118,13 +104,13 @@ MethodChannel is most appropriate when:
 
 By understanding these characteristics, you can create robust, maintainable bridges between Dart and native code. You can write minimal, purpose-driven native handlers and keep the rest of your app in Flutter, achieving both deep platform access and cross-platform speed.
 
-## Real-World Use Cases for MethodChannels {#real-world-use-cases-for-methodchannels}
+## Real-World Use Cases for MethodChannels 
 
 While Flutter plugins cover many common platform integrations, there are frequent scenarios where you require direct access to native SDKs or platform-specific APIs. MethodChannels offer a direct path for these integrations without waiting for third-party plugin support.
 
 Ultimately, method channel integration is essentially plugin development \- you're writing the same native bridge packaged for your app instead of as a public package. Once complete, it can be imported into FlutterFlow. The following examples show when building your own native integration is more practical than waiting for or wrestling with existing plugins. The following examples outline situations where MethodChannels are suitable. 
 
-1. **Accessing Device Hardware Not Exposed by Plugins** 
+### Accessing Device Hardware Not Exposed by Plugins
 
 **Example:** Retrieve mobile network signal strength, advanced battery metrics, or thermal status.
 
@@ -134,7 +120,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Benefit:** Access hardware-level telemetry or diagnostics crucial for field-service apps, testing tools, or enterprise reporting.
 
-2. **Integrating Proprietary SDKs or Vendor Libraries** 
+### Integrating Proprietary SDKs or Vendor Libraries
 
 **Example:** Use a third-party identity verification SDK, document scanner, or encrypted storage SDK.
 
@@ -144,7 +130,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Benefit:** Unlocks core business features (KYC, biometrics, payments) without dependency on plugin authors or external wrappers.
 
-3. **Embedding Native UI Views Temporarily** 
+### Embedding Native UI Views Temporarily
 
 **Example:** Show a native PDF viewer, a camera UI from a vendor SDK, or an AR interface.
 
@@ -153,7 +139,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Benefit:** Delivers platform-native experiences where needed while preserving Flutter’s rendering pipeline elsewhere.
 
-4. **Background Tasks and Event-Driven Native APIs** 
+### Background Tasks and Event-Driven Native APIs
 
 **Example:** Respond to geofencing events, push token refresh, or Bluetooth device state changes.
 
@@ -163,7 +149,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Benefit:** Achieves OS-level integration (e.g., location, power, Bluetooth) without polling or Dart-side complexity.
 
-5. **Secure Device Data Retrieval** 
+### Secure Device Data Retrieval
 
 **Example:** Fetch IMEI, MAC address, device fingerprint, or system identifiers.
 
@@ -267,21 +253,23 @@ class MainActivity: FlutterActivity() {
 
 **Notes:** 
 
-* Always return a result using one of the following:  
+- Always return a result using one of the following:  
   * `result.success(data)` — returns data to Dart  
   * `result.error(code, message, details)` — throws `PlatformException` in Dart  
   * `result.notImplemented()` — throws `MissingPluginException` in Dart  
-* Do **not** call `result` multiple times. Flutter expects a one-time, one-result reply per method call.  
-* If your native call involves I/O, network, or anything that blocks, use a background thread:
-
+- Do **not** call `result` multiple times. Flutter expects a one-time, one-result reply per method call.  
+- If your native call involves I/O, network, or anything that blocks, use a background thread:
 ```js
-Thread(Runnable {
-  val resultData = longRunningOperation()
-  runOnUiThread {
-    result.success(resultData)
-  }
-}).start()
+    Thread(Runnable {
+        val resultData = longRunningOperation()
+        runOnUiThread {
+            result.success(resultData)
+        }
+    }).start()
 ```
+
+
+
 
 ---
 
