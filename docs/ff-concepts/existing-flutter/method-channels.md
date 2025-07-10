@@ -35,7 +35,7 @@ You’re not limited by what Flutter provides out of the box. MethodChannels let
 
 ## What is a MethodChannel?
 
-A **MethodChannel** is Flutter’s core mechanism for integrating platform-specific functionality. It allows Dart code to send messages to, and receive responses from, the host platform’s native code \- Android (written in Kotlin or Java) or iOS (written in Swift or Objective-C). This enables your Flutter app to access device features and third-party native libraries that are outside the scope of the Flutter framework or its plugin ecosystem. Here is an example of MethodChannel.
+A **[MethodChannel](https://docs.flutter.dev/platform-integration/platform-channels)** or Platform Channels is Flutter’s core mechanism for integrating platform-specific functionality. It allows Dart code to send messages to, and receive responses from, the host platform’s native code \- Android (written in Kotlin or Java) or iOS (written in Swift or Objective-C). This enables your Flutter app to access device features and third-party native libraries that are outside the scope of the Flutter framework or its plugin ecosystem. Here is an example of MethodChannel.
 
 ```js
 class _BatteryLevelScreenState extends State<BatteryLevelScreen> {
