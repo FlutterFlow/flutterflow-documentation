@@ -1,10 +1,10 @@
 ---
 keywords: ['subscription', 'upgrade', 'cancel', 'downgrade', 'teams']
-slug: manage-flutterflow-subscription
-title: Manage FlutterFlow Subscription
+slug: manage-subscription
+title: Manage Subscription
 ---
 
-# Manage FlutterFlow Subscription
+# Manage Subscription
 
 This guide covers everything you need to know about managing your FlutterFlow subscription, including starting a trial, upgrading to a paid or Teams plan, downgrading to the free plan, and canceling your subscription.
 
