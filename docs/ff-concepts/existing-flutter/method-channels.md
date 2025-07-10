@@ -159,7 +159,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 **Benefit:** Ensures security-sensitive operations remain native-controlled, supporting enterprise, regulated, or BYOD environments.
 
 
-## Implementing a MethodChannel: Step-by-Step
+## Implementing a MethodChannel
 
 This section walks through the complete implementation of a MethodChannel, showing how to define the channel in Flutter (Dart), connect it to native platform code, and properly exchange messages, arguments, and results. For native developers used to Android or iOS, this breakdown will show how to bridge Dart and native code in a way that is robust, testable, and production-ready.
 
@@ -169,7 +169,7 @@ This section walks through the complete implementation of a MethodChannel, showi
 
 In Flutter, you use the `MethodChannel` class from the `services` package to create a communication path. The Dart side always initiates the call, and the native side responds.
 
-- **Define and Use a Channel:**
+**Define and Use a Channel:**
 
 ```js
 import 'package:flutter/services.dart';
@@ -204,7 +204,6 @@ Future<String> getBatteryLevel() async {
 * You can pass arguments to `invokeMethod()` as the second parameter (e.g., a `Map<String, dynamic>`).  
 * The result can be any JSON-compatible Dart type: `int`, `String`, `bool`, `double`, `List`, or `Map`.
 
----
 
 ### 2. Android Side (Kotlin)
 
@@ -271,7 +270,6 @@ class MainActivity: FlutterActivity() {
 
 
 
----
 
 ### 3. iOS Side (Swift)
 
@@ -322,7 +320,6 @@ import Flutter
 * Use `FlutterError` to send detailed error info to Dart.  
 * If needed, use `DispatchQueue.global().async` to run long tasks in the background, then return via `DispatchQueue.main.async`.
 
----
 
 ### Best Practices on MethodChannels
 
@@ -336,7 +333,7 @@ To implement **MethodChannels** successfully:
 
 By following these steps and patterns, you’ll be able to bridge Flutter with native code cleanly—supporting deep platform integrations while maintaining a smooth UI and maintainable codebase.
 
-## Integrating MethodChannels in FlutterFlow Projects
+## Integrating MethodChannels in FlutterFlow
 
 FlutterFlow is a visual development platform that generates complete Flutter applications. While it supports writing custom Dart code through **Custom Actions** and **Custom Functions**, it does not allow direct editing of platform-native code (Kotlin, Swift) through its web UI. This introduces some important considerations when integrating Flutter’s `MethodChannel` API for platform-specific functionality.
 
@@ -345,7 +342,8 @@ FlutterFlow is a visual development platform that generates complete Flutter app
 **1.1 Initialize the Plugin**
 
 Use the Flutter CLI to create a new plugin:  
-`flutter create --template=plugin --platforms=android,ios my_custom_plugin`
+```jsx
+flutter create --template=plugin --platforms=android,ios my_custom_plugin
 
 This command sets up a plugin project with the necessary structure for both Android and iOS platforms.
 
@@ -360,9 +358,9 @@ Within the generated plugin, navigate to the platform-specific directories (`and
 
 After implementing and testing your plugin:
 
-* Initialize a Git repository in your plugin directory.  
-* Commit your changes.  
-* Push the repository to GitHub.
+1. Initialize a Git repository in your plugin directory.  
+2. Commit your changes.  
+3. Push the repository to GitHub.
 
 Ensure your `pubspec.yaml` is correctly configured, and consider tagging releases for versioning.
 
@@ -376,15 +374,17 @@ To integrate your custom plugin into a FlutterFlow project:
 3. In the **Settings** panel on the right, scroll to **Dependencies**.  
 4. Add your plugin using the Git URL:
 
-```yaml
-   my_custom_plugin:  
-     git:  
-       url: https://github.com/yourusername/my_custom_plugin.git
-   ```
+  ```yaml
+     my_custom_plugin:  
+       git:  
+         url: https://github.com/yourusername/my_custom_plugin.git
+    ```
 
 5. In the code editor, import your plugin:
 
-    `import 'package:my_custom_plugin/my_custom_plugin.dart';`
+    ```jsx
+    import 'package:my_custom_plugin/my_custom_plugin.dart';`
+    ```
 
 
 
@@ -417,13 +417,13 @@ This approach allows you to encapsulate complex logic within reusable actions, e
 
 ### Managing Private Repositories
 
-If your plugin repository is private, FlutterFlow needs access to it. As per FlutterFlow's documentation, you may need to provide authentication credentials or use SSH keys. Refer to the [FlutterFlow documentation](https://docs.flutterflow.io/concepts/custom-code/#using-unpublished-or-private-packages) for detailed instructions on integrating private packages.
+If your plugin repository is private, FlutterFlow needs access to it. As per FlutterFlow's documentation, you may need to provide authentication credentials or use SSH keys. Refer to the [FlutterFlow documentation](../../ff-concepts/adding-customization/custom-code.md#using-unpublished-or-private-packages) for detailed instructions on integrating private packages.
 
 
 
-## Common Pitfalls and Debugging MethodChannels
+## Common Pitfalls and Debugging
 
-MethodChannels are powerful but require careful implementation. When the Dart and native sides are not aligned, or error handling is overlooked, it often leads to runtime issues or silent failures. This section outlines the most common problems developers face with MethodChannels—especially in projects generated by tools like FlutterFlow—and provides actionable solutions to help you debug effectively and write resilient platform-channel integrations.
+MethodChannels are powerful but require careful implementation. When the Dart and native sides are not aligned, or error handling is overlooked, it often leads to runtime issues or silent failures. This section outlines the most common problems developers face with MethodChannels, especially in projects generated by tools like FlutterFlow, and provides actionable solutions to help you debug effectively and write resilient platform-channel integrations.
 
 
 ### MissingPluginException
@@ -538,7 +538,9 @@ By understanding and anticipating these pitfalls, developers can avoid common er
 
 Integrating native functionality through MethodChannels can bring significant value to your app \- but only if it’s done with performance and maintainability in mind. Below are the five most important best practices engineers should apply in real-world production apps, along with deeper insights into why each one matters.
 
-**Important Context for FlutterFlow Users:** FlutterFlow generates clean Dart code and supports Custom Actions for inserting Dart logic, but it does not currently support inline native (Kotlin/Swift) editing.
+:::info[Important Context for FlutterFlow Users] 
+FlutterFlow generates clean Dart code and supports Custom Actions for inserting Dart logic, but it does not currently support inline native (Kotlin/Swift) editing.
+:::
 
 ### Don’t Block the Main Thread
 
@@ -549,7 +551,9 @@ Integrating native functionality through MethodChannels can bring significant va
 
 Blocking the UI thread for even a few milliseconds can cause dropped frames, janky animations, and a visibly unresponsive app, especially on mid-range devices.
 
-**FlutterFlow Tip:** While UI interactions and workflows look smooth inside FlutterFlow, once you export and test the app on a real device, slow operations in Kotlin or Swift can still freeze the app. Always delegate those tasks to background threads before calling back into Dart.
+:::tip
+While UI interactions and workflows look smooth inside FlutterFlow, once you export and test the app on a real device, slow operations in Kotlin or Swift can still freeze the app. Always delegate those tasks to background threads before calling back into Dart.
+:::
 
 ### Keep MethodChannel Code Minimal
 
@@ -571,7 +575,9 @@ Clean separation of concerns leads to better test coverage, easier onboarding, a
 
 Type mismatches across the bridge don’t fail at compile time—they crash at runtime. Keeping your types simple prevents hard-to-diagnose issues.
 
-**FlutterFlow Tip:** When using Dart Custom Actions that invoke MethodChannels, ensure the return values can be used in FlutterFlow bindings. Only supported types (like `String` or `int`) can be stored in App State or used in conditions or widgets.
+:::tip
+When using Dart Custom Actions that invoke MethodChannels, ensure the return values can be used in FlutterFlow bindings. Only supported types (like `String` or `int`) can be stored in App State or used in conditions or widgets.
+:::
 
 ### Validate and Sanitize Dart Inputs
 
@@ -587,7 +593,9 @@ val timeout = call.argument<Int>("timeout") ?: return result.error("INVALID", "M
 
 Dart developers might call your method incorrectly. Native code must fail safely and visibly.
 
-**FlutterFlow Tip:** Custom Actions in FlutterFlow can include parameters from the UI, but if the parameter isn’t set or passed correctly in a workflow, the Dart code will still execute. Validate these inputs natively before use.
+:::tip
+Custom Actions in FlutterFlow can include parameters from the UI, but if the parameter isn’t set or passed correctly in a workflow, the Dart code will still execute. Validate these inputs natively before use.
+:::
 
 ### Log Clearly on Both Sides
 
@@ -600,10 +608,11 @@ Dart developers might call your method incorrectly. Native code must fail safely
 
 When something goes wrong in production, good logs make the difference between a 10-minute fix and a multi-day investigation.
 
-**FlutterFlow Tip:** Use `debugPrint()` inside Dart Custom Actions to log output alongside platform logs. In test builds, these logs help verify whether native results are arriving as expected.
+:::tip
+Use `debugPrint()` inside Dart Custom Actions to log output alongside platform logs. In test builds, these logs help verify whether native results are arriving as expected.
+:::
 
 
-By applying these best practices, you can ensure your MethodChannel integrations remain robust, secure, and maintainable across app updates and platform development.
 
 ## Summary & Guidance
 
