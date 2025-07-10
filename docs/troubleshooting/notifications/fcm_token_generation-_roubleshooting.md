@@ -70,7 +70,7 @@ Here are the steps to verify user eligibility for push notifications:
                     3. Locate the `firebase@flutterflow.io` service account.
                     4. Assign any missing roles.
 
-                    Refer to **[this guide](https://intercom.help/flutterflow/en/articles/6570547-setting-up-service-account-permissions-for-push-notifications)** for full instructions.
+                    Refer to **[this guide](/resolving-firestore-index-deployment-issues)** for full instructions.
 
     3. **Validate Input Data Passed to Cloud Function**
 
