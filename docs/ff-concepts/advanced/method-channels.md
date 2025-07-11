@@ -82,7 +82,7 @@ This message flow is asynchronous and decoupled:
 
 ### Example Message Flow 
 
-![method-channels.png](imgs/method-channels.png)
+![method-channels.avif](imgs/method-channels.avif)
 
 This design ensures clear separation between platform and UI logic, and it keeps the UI thread non-blocking for both Dart and native sides. It also makes the communication extensible—you can define as many methods as you need over a single channel or use multiple channels for modular organization.
 
@@ -341,9 +341,11 @@ FlutterFlow is a visual development platform that generates complete Flutter app
 
 **1.1 Initialize the Plugin**
 
-Use the Flutter CLI to create a new plugin:  
+Use the Flutter CLI to create a new plugin:
+
 ```jsx
 flutter create --template=plugin --platforms=android,ios my_custom_plugin
+```
 
 This command sets up a plugin project with the necessary structure for both Android and iOS platforms.
 
@@ -374,11 +376,11 @@ To integrate your custom plugin into a FlutterFlow project:
 3. In the **Settings** panel on the right, scroll to **Dependencies**.  
 4. Add your plugin using the Git URL:
 
-  ```yaml
-     my_custom_plugin:  
-       git:  
-         url: https://github.com/yourusername/my_custom_plugin.git
-    ```
+    ```yaml
+      my_custom_plugin:  
+        git:  
+          url: https://github.com/yourusername/my_custom_plugin.git
+      ```
 
 5. In the code editor, import your plugin:
 
@@ -400,13 +402,12 @@ With the plugin integrated, you can now create Custom Actions to leverage its fu
 1. Define a new Custom Action in FlutterFlow.  
 2. In the code editor, implement the action using your plugin. For example:
 
-```js
-   Future<int> getBatteryLevel() async { 
-     final batteryLevel = await MyCustomPlugin.getBatteryLevel();  
-     return batteryLevel;  
-   }
-
-```
+    ```jsx
+      Future<int> getBatteryLevel() async { 
+        final batteryLevel = await MyCustomPlugin.getBatteryLevel();  
+        return batteryLevel;  
+      }
+    ```
 
 
 3. Compile the custom code to ensure there are no errors.  
