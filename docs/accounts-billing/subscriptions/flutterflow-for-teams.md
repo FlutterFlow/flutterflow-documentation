@@ -61,7 +61,7 @@ You can see how many seats you have used here
 ### 2. Inviting users to your Team
 
 :::warning
-If you add an existing Flutterflow user to your Teams plan, they will need to manually cancel their subscription using these [**instructions**](subscriptions.md#cancel-my-plan). Once this is completed, please reach out to support@flutterflow.io or chat to process the refund for any remaining time on your monthly plan. We're working on automating this process soon!
+If you add an existing Flutterflow user to your Teams plan, they will need to manually cancel their subscription using these [**instructions**](/accounts-billing/subscriptions/manage-subscription). Once this is completed, please reach out to support@flutterflow.io or chat to process the refund for any remaining time on your monthly plan. We're working on automating this process soon!
 :::
 
 1. After you've purchased your seats, this will be reflected in the **Seats** section under **My Organization** (example below).
