@@ -133,8 +133,7 @@ You can control the Focus Configuration using the following properties:
 
 - **Wrap in Focus Traversal Group**: It places a widget (and all its children) in a dedicated group so focus cycles within that region before moving on. For example, if you have a login form with two fields: Email and Password, enabling this option ensures that pressing <kbd>Tab</kbd> will cycle only between them (and not jump to unrelated parts of the screen).
 - **Focus Traversal Order**: This sets the exact sequence in which widgets receive focus using numeric values (e.g., 1, 2, etc.). For example, In a sign‑up form, set `Name = 1`, `Email = 2`, and `Password = 3` so pressing <kbd>Tab</kbd> moves logically down the form rather than following the raw widget tree.
-
-Using both the properties you can create structured keyboard navigation for any complex layouts. 
+- **Show Border on Focus**: Enabling this toggle highlights the widget with a visible border when it receives focus, making navigation clearer. Once enabled, you can customize the border’s appearance using **Border Width**, **Border Color**, and **Border Radius** to match your design.
 
 :::warning
 
