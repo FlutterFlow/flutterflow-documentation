@@ -295,7 +295,7 @@ The library author selects which pages to include and publishes the library. Whe
 
 ## Library Values
 
-**Library values** are essentially variables created and used by a library author and intended to have their values set by the library user. These values allow library author to create configurable variables that are useful in different contexts, such as public API keys, global settings, or other project-specific configurations. These values allow library users to input specific data required for the library to function properly in their project.
+**Library values** are essentially variables created and used by a library author and intended to have their values set by the library user. These values allow library author to create configurable variables that are useful in different contexts, such as public or client-side API keys, global settings, or other project-specific configurations. These values allow library users to input specific data required for the library to function properly in their project.
 
 For example, if someone builds a library with a paginated list or a tabbed interface, they can define Library Values for display settings like `Items per page: 10` or `Initial tab index: 0`. This allows the library user to easily customize the UI behavior to fit their project’s needs without modifying the library’s internal logic.
 
