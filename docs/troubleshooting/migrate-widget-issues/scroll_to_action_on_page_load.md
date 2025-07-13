@@ -31,7 +31,3 @@ When a `Scroll To Action` fails to trigger during a page load, it is often becau
    :::tip
    Combining a delay with animation prevents the scroll action from executing before the widget appears, creating a smoother transition.
    :::
-
-:::info[Additional Resources]
-Refer to **[Scroll To Action Failing on Page Load](https://intercom.help/flutterflow/en/articles/7047006-scroll-to-action-is-not-working-when-used-on-page-load)** for more troubleshooting help.
-:::

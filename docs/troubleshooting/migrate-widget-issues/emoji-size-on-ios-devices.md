@@ -37,6 +37,3 @@ On iOS devices, emojis can appear oversized when rendered inside text widgets, d
 
    ![](../assets/20250430121252902305.png)
 
-:::info
-For more details and troubleshooting, see the **[official FlutterFlow guide on emoji rendering](https://intercom.help/flutterflow/en/articles/7044370-text-emoji-is-very-large-on-some-ios-devices)**.
-:::
