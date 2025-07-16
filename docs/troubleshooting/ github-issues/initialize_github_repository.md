@@ -1,6 +1,6 @@
 ---
 keywords: ['github', 'push', 'repository', 'initialize', 'error']
-slug: /initialize-github-repository
+slug: troubleshooting/github-issues/initialize-github-repository
 title: Initialize GitHub Repository
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['api', 'android', 'error']
-slug: /declare-advertising-id-android-13-play-console
+slug: troubleshooting/google-play-store-deployment/declare-advertising-id-android-13-play-console
 title: Declare Advertising ID for Android 13+ in Play Console
 ---
 # Declare Advertising ID for Android 13+ in Play Console

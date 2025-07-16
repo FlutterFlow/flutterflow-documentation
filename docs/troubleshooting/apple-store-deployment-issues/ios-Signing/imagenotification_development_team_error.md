@@ -1,6 +1,6 @@
 ---
 keywords: ['requires', 'sign', 'team']
-slug: /imagenotification-development-team-error
+slug: troubleshooting/apple-store-deployment-issues/ios-Signing/imagenotification-development-team-error
 title: ImageNotification Development Team Error
 ---
 

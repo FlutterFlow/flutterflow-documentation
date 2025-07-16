@@ -1,6 +1,6 @@
 ---
 keywords: ['connect', 'download', 'store']
-slug: /download-dsym-file-from-app-store-connect
+slug: troubleshooting/apple-store-deployment-issues/ios-Signing/download-dsym-file-from-app-store-connect
 title: Download dSYM File from App Store Connect
 ---
 

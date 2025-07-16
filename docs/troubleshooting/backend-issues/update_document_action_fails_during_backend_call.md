@@ -1,6 +1,6 @@
 ---
 keywords: ['call', 'document', 'backend']
-slug: /update-document-action-fails-during-backend-call
+slug: troubleshooting/backend-issues/update-document-action-fails-during-backend-call
 title: Update Document Action Fails During Backend Call
 ---
 # Update Document Action Fails During Backend Call

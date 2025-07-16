@@ -1,6 +1,6 @@
 ---
 keywords: ['faqs', 'publishing', 'web']
-slug: web-publishing-faqs
+slug: troubleshooting/apple-store-deployment-issues/publishing/web-publishing-faqs
 title: Web Publishing FAQs
 ---
 

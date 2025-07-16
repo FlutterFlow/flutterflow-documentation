@@ -1,6 +1,6 @@
 ---
 keywords: ['signing', 'codemagic', 'certificate']
-slug: /codemagic-signing-certificate-limit
+slug: troubleshooting/apple-store-deployment-issues/fetch-signing-files/codemagic-signing-certificate-limit
 title: Codemagic Signing Certificate Limit
 ---
 

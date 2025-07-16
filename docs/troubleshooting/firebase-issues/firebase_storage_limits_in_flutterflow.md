@@ -1,6 +1,6 @@
 ---
 keywords: ['storage', 'firebase', 'flutterflow']
-slug: /firebase-storage-limits-in-flutterflow
+slug: troubleshooting/firebase-issues/firebase-storage-limits-in-flutterflow
 title: Firebase Storage Limits in FlutterFlow
 ---
 

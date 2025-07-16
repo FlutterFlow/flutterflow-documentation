@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'listview', 'mode']
-slug: /listview-gray-box-and-red-screen-errors
+slug: troubleshooting/backend-issues/listview-gray-box-and-red-screen-errors
 title: ListView Gray Box and Red Screen Errors
 ---
 

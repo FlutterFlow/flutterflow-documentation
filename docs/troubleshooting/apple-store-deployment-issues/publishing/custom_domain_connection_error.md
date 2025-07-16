@@ -1,6 +1,6 @@
 ---
 keywords: ['configuration', 'connect', 'domain']
-slug: custom-domain-connection-error
+slug: troubleshooting/apple-store-deployment-issues/publishing/custom-domain-connection-error
 title: Custom Domain Connection Error
 ---
 
