@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'error', 'identification']
-slug: troubleshooting/deployment/codemagic-deployment-error-identification
+slug: /troubleshooting/deployment/codemagic-deployment-error-identification
 title: Codemagic Deployment Error Identification
 ---
 # Codemagic Deployment Error Identification
