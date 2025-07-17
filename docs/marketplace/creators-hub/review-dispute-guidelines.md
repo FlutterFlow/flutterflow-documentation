@@ -13,17 +13,20 @@ At FlutterFlow Marketplace, we believe in transparent and honest feedback. Revie
 
 However, not all reviews are created equal. Sometimes feedback is based on misunderstandings, irrelevant factors, or issues unrelated to the quality of the item itself. This guideline outlines when and how we handle review disputes.
 
-### When We *Will* Remove a Review
+### Criteria for Removing a Review
 
 We may remove a review if it meets **one or more** of the following criteria:
 
 - **Spam or Abuse:** The review contains offensive language, harassment, or unrelated spam content.
 - **Misuse of the Review System:** The review is about unrelated topics (e.g., FlutterFlow features, pricing, unrelated bugs).
 - **Critical Misunderstanding:** The review is based on a clear misunderstanding of the item's purpose or scope, despite the listing being accurate and transparent.
-- **Irrelevant to the Current Version:** The review references issues that have since been resolved, and the creator has updated the item significantly.  
-    *Note: We may remove outdated reviews in cases where leaving them would misrepresent the current product.*
+- **Irrelevant to the Current Version:** The review references issues that have since been resolved, and the creator has updated the item significantly.
 
-### When We *Will Not* Remove a Review
+:::note
+We may remove outdated reviews in cases where leaving them would misrepresent the current product.
+:::
+
+### Reviews That Meet Our Standards
 
 We **will not remove** a review just because it is negative if it:
 
@@ -40,8 +43,7 @@ If you believe a review on your item qualifies for removal:
    - A link to the item and review
    - A short explanation of why you believe it qualifies for removal
 
+:::info Decision
 Our team will review each case individually and respond within **10 business days**.
-
-### Future Improvements
-
-We are actively working on better creator tools to allow creators to reply directly to reviews.
+Please note we are actively working on better creator tools to allow creators to reply directly to reviews.
+:::
