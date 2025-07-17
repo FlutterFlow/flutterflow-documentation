@@ -1,6 +1,6 @@
 ---
 keywords: ['test mode', 'slow load', 'run mode']
-slug: /slow-test-mode-load
+slug: troubleshooting/test-mode/slow-test-mode-load
 title: Slow Loading in Test Mode
 ---
 

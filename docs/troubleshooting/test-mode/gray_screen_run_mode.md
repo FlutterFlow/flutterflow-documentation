@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'configuration', 'gray-screen']
-slug: /gray-screen-run-mode
+slug: troubleshooting/test-mode/gray-screen-run-mode
 title: Gray Screen in Run Mode
 ---
 
