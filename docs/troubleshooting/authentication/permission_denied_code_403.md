@@ -1,6 +1,6 @@
 ---
 keywords: ['permission', 'permission_denied', 'code']
-slug: /permission-denied-code-403
+slug: troubleshooting/authentication/permission-denied-code-403
 title: 'Permission Denied: Code 403'
 ---
 
