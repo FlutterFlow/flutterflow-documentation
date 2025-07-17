@@ -13,7 +13,7 @@ At FlutterFlow Marketplace, we believe in transparent and honest feedback. Revie
 
 However, not all reviews are created equal. Sometimes feedback is based on misunderstandings, irrelevant factors, or issues unrelated to the quality of the item itself. This guideline outlines when and how we handle review disputes.
 
-### When We *Will* Remove a Review
+### Criteria for Removing a Review
 
 We may remove a review if it meets **one or more** of the following criteria:
 
