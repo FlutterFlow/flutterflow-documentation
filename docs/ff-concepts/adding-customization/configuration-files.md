@@ -254,19 +254,19 @@ If `ALLOW_HTTP_TRAFFIC` is set to `true` in FlutterFlow’s Environment Value, t
 
 **Example 3: Using Library Values**
 
-If you are building a [FlutterFlow Library](../../resources/projects/libraries.md) and need to include API keys in native code without exposing them when users import the library, you can use [Library Values](../../resources/projects/libraries.md#library-values) as placeholders. This ensures that when someone installs your library, they can define their own values without seeing the actual key or credentials inside the native files.
+If you are building a [FlutterFlow Library](../../resources/projects/libraries.md) and need to include public API keys in native code, you can use [Library Values](../../resources/projects/libraries.md#library-values) as placeholders. This ensures that when someone installs your library, they can define their own values.
 
-For example, if your library requires an API key for a third-party service (e.g., Google Maps or a payment provider), it’s best not to expose the key directly in the manifest file. Instead, create a file-level variable and assign it a Library Value.
+For example, if your library integrates with a public weather API that requires an API key (such as Open-Meteo or WeatherAPI for general use), it’s best not to add the key directly in the manifest file. Instead, create a file-level variable and assign it a Library Value.
 
-```
+```jsx
 <application>
     <meta-data 
         android:name="com.google.android.geo.API_KEY" 
-        android:value="{{MAPS_API_KEY}}" />
+        android:value="{{WEATHER_API_KEY}}" />
 </application>
 ```
 
-The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{MAPS_API_KEY}}` with the user-defined key.
+The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{WEATHER_API_KEY}}` with the user-defined key.
 
 ## Editable Files
 

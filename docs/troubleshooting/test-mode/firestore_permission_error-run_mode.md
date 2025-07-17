@@ -1,6 +1,6 @@
 ---
 keywords: ['notification', 'security', 'permissions']
-slug: /firestore-permission-error-run-mode
+slug: troubleshooting/test-mode/firestore-permission-error-run-mode
 title: Firestore Permission Error in Run Mode
 ---
 

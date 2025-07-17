@@ -295,11 +295,25 @@ The library author selects which pages to include and publishes the library. Whe
 
 ## Library Values
 
-**Library values** are essentially variables created and used by a library author and intended to have their values set by the library user. These values allow library author to create configurable variables that are useful in different contexts, such as API keys, global settings, or other project-specific configurations. These values allow library users to input specific data required for the library to function properly in their project.
+**Library values** are essentially variables created and used by a library author and intended to have their values set by the library user. These values allow library author to create configurable variables that are useful in different contexts, such as public or client-side API keys, global settings, or other project-specific configurations. These values allow library users to input specific data required for the library to function properly in their project.
 
-For example, If someone has built a library that uses OpenAI API, they would define a Library Value for the OpenAI API key. As the user of the library, when you import, you must provide your own API key to ensure the library functions properly.
+For example, if someone builds a payment gateway library, they might define Library Values for configuration settings, such as:
 
-By using Library Values, the library author allows users to adapt the library to their own configurations without hardcoding sensitive or project-specific data, like API keys, into the library itself.
+- Default currency: USD
+- Region: US
+- Default Payment method: Card
+
+This allows the user importing the library to provide their own payment preferences without modifying the internal code of the library.
+
+:::danger
+**Library Values should not be used to store private or sensitive data**, such as secret API keys or credentials. These values are not currently designed to securely store or handle sensitive information.
+
+The use of *client-side* or *publishable* API key is generally acceptable, because the keys often have limited permissions, rate limits, or are intended for public use. For instance, if someone creates a library that connects to a public weather API, they might define a Library Value for the API key. Users of that library can then input their own API key to make it work.
+:::
+
+:::tip
+To avoid misuse on any type credential, make sure to apply appropriate restrictions to limit its usage. For example, see how to [**restrict a Google Maps API key**](../../ff-integrations/google-cloud/secure-keys.md#add-restrictions-to-your-api-key) in the Google Cloud Console.
+:::
 
 ### Create Library Values as Author
 
