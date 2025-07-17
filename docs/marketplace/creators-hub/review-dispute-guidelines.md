@@ -23,7 +23,7 @@ We may remove a review if it meets **one or more** of the following criteria:
 - **Irrelevant to the Current Version:** The review references issues that have since been resolved, and the creator has updated the item significantly.  
     *Note: We may remove outdated reviews in cases where leaving them would misrepresent the current product.*
 
-### When We *Will Not* Remove a Review
+### Reviews That Meet Our Standards
 
 We **will not remove** a review just because it is negative if it:
 
