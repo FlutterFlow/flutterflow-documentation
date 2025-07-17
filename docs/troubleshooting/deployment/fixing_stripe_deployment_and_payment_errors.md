@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'payment', 'issues']
-slug: /fixing-stripe-deployment-and-payment-errors
+slug: troubleshooting/deployment/fixing-stripe-deployment-and-payment-errors
 title: Fixing Stripe Deployment & Payment Errors
 ---
 # Fixing Stripe Deployment & Payment Errors

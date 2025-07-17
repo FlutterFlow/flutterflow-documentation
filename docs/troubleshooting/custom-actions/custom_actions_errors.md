@@ -1,6 +1,6 @@
 ---
 keywords: ['troubleshooting', 'actions', 'custom']
-slug: /custom-actions-errors
+slug: troubleshooting/custom-actions/custom-actions-errors
 title: Custom Actions Errors
 ---
 # Custom Actions Errors
