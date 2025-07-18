@@ -29,6 +29,10 @@ The FlutterFlow application can be accessed from your browser or installed as a 
 - **macOS**: While FlutterFlow should work on 10.13 or higher, we recommend using 13 or higher
 - **Windows**: While FlutterFlow should work on 7 or higher, we recommend using 10 or higher
 
+:::info
+Some Windows users may experience a crash. To fix this, install the [**Microsoft Visual C++ 2015–2022 Redistributable (both x64 and x86)**](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) from the official Microsoft site.
+:::
+
 For details on target platform system requirements, please see the [Flutter documentation](https://docs.flutter.dev/reference/supported-platforms).
 
 ### Desktop vs Web:
