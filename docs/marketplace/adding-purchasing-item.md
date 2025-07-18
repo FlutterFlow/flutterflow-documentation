@@ -11,49 +11,28 @@ import TabItem from '@theme/TabItem';
 
 # Adding & Purchasing Items
 
-## Adding a Marketplace Item
+The **FlutterFlow Marketplace** lets you add new features to your app in just a few clicks. It includes ready-made components, templates, and libraries built by other users. These items can help you add things that are not yet available in FlutterFlow or would take more time to build from scratch.
 
-Add new functionality to your app in seconds! The FlutterFlow Marketplace features user-built components and templates that you can add directly to your FlutterFlow project. These items allow you to add functionality that is not currently available or easy to build in FlutterFlow.
+To add a Marketplace item, go to your FlutterFlow dashboard and click **Marketplace**, or visit [marketplace.flutterflow.io](https://marketplace.flutterflow.io/) directly. Click on any item to view its details.
 
-### 1. Open FlutterFlow Marketplace
+- For **free items**, click **+ Clone for Free**, then choose the project you want to add it to.
+- For **paid items**, click **Buy Now** and complete the purchase.
 
-To add a Marketplace Item to your project, head to your FlutterFlow dashboard and select **Marketplace** or head over to [marketplace.flutterflow.io](https://marketplace.flutterflow.io/). In Marketplace, click on any item to learn more about it. 
-
-![img.png](imgs/img.png)
-
-:::tip
-You can directly search for an item or filter by item type at the top (e.g., Template Apps).
-:::
-
-:::warning[Important]
-You must view item details to see supported platforms (iOS, Android, Web).
-:::
-
-
-### 2. Add an item to your FlutterFlow project
-To add a Marketplace item to your project, go to the item details page.
+Once added, the item will be available in your selected project for immediate use.
 
 <Tabs>
-<TabItem value="1" label="Free Items" default>
-
-![free-items](imgs/free-items.webp)
-1. Click **+ Add Now**
-2. Navigate to the **Owned Items** tab in your [dashboard](https://marketplace.flutterflow.io/dashboard)
-3. Click **+ Add to Project** next to the item
-4. Select the project you'd like to add the item to, and FlutterFlow will automatically import the item
-
-:::tip
-You will need to add the item to each individual project that you want to use the item in.
-:::
+<TabItem value="1" label="Free Item" default>
+![free-item](imgs/free-item.avif)
 </TabItem>
-<TabItem value="2" label="Paid Items">
-![paid-items](imgs/paid-items.webp)
-
-1. Click **+ Buy Now**
-2. You will be redirected to Stripe for check out. Fill in payment details and click **Pay**.
-3. Upon successful payment, navigate to the **Owned Items** tab in your [dashboard](https://marketplace.flutterflow.io/dashboard)
-4. You can now start a new project using the template
-
-**Note:** Template App purchases are single-use only and non-refundable. See [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) and our [Refund Policy](refund-policy.md) for details.
+<TabItem value="2" label="Paid Item">
+![paid-item](imgs/paid-item.avif)
 </TabItem>
 </Tabs>
+
+## Add Library Item
+
+To install a library item from the Marketplace, search for the library, open its details page, and click **+ Add for Free**. This adds the library to your FlutterFlow account, meaning you can reuse it in any of your projects.
+
+To add it to a specific project, go to **Settings > Project Dependencies**, click **Add Library**, and search for your library.
+
+![branch-library-install](imgs/branch-library-install.png)
