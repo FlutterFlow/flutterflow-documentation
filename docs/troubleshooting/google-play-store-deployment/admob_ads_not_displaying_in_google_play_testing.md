@@ -1,6 +1,6 @@
 ---
 keywords: ['testing', 'configuration', 'display']
-slug: /admob-ads-not-displaying-in-google-play-testing
+slug: troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing
 title: AdMob Ads Not Displaying in Google Play Testing
 ---
 

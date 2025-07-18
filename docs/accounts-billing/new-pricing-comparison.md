@@ -208,7 +208,7 @@ export const PricingToggles = () => {
             <td>Unlimited</td>
             <td>Unlimited</td>
             <td>Unlimited</td>
-            <td>Unlimited</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>AI Generation<br/><span className="feature-description">AI-powered assistance for building and coding</span></td>
@@ -252,7 +252,7 @@ export const PricingToggles = () => {
             <td>Unlimited</td>
             <td>Unlimited</td>
             <td>Unlimited</td>
-            <td>Unlimited</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>Swagger/OpenAPI Imports<br/><span className="feature-description">Import API specifications automatically</span></td>
@@ -524,7 +524,7 @@ export const PricingToggles = () => {
             <td>1</td>
             <td>Up to 2</td>
             <td>Up to 5*</td>
-            <td>Unlimited</td>
+            <td>Custom</td>
           </tr>
           <tr>
             <td>Single Project Collaborator Add-Ons<br/><span className="feature-description">Allow non-team members to collaborate on a single project</span></td>
@@ -532,7 +532,7 @@ export const PricingToggles = () => {
             <td>None</td>
             <td>Up to 4 collaborators available for purchase</td>
             <td>Up to 10 collaborators available for purchase</td>
-            <td>N/A (unlimited team editors)</td>
+            <td>N/A</td>
           </tr>
           <tr>
             <td>Real-Time Collaboration<br/><span className="feature-description">Work together on projects simultaneously</span></td>
