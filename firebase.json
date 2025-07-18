@@ -2412,6 +2412,16 @@
         "source": "/resources/functions/utility/#code-expressions",
         "destination": "/resources/functions/utility/#inline-function",
         "type": 301
+      },
+      {
+        "source": "/integrations/mux/initial-setup",
+        "destination": "/integrations/mux",
+        "type": 301
+      },
+      {
+        "source": "/integrations/mux/getting-started",
+        "destination": "/integrations/mux",
+        "type": 301
       }
     ]
   }
