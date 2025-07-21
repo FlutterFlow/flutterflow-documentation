@@ -1,6 +1,6 @@
 ---
 keywords: ['build', 'configuration', 'release']
-slug: /run-mode-build-failure
+slug: /troubleshooting/deployment/run-mode-build-failure
 title: 'Run Mode: Build Failure'
 ---
 # Run Mode: Build Failure

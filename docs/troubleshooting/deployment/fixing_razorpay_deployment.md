@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'firebase', 'razorpay']
-slug: /fixing-razorpay-deployment
+slug: /troubleshooting/deployment/fixing-razorpay-deployment
 title: Fixing Razorpay Deployment
 ---
 # Fixing Razorpay Deployment

@@ -16,10 +16,13 @@ In some cases, you’ll need to tweak the configuration files that FlutterFlow g
 Here are the key configuration files you can edit:
 
 - [**`AndroidManifest.xml`**](#androidmanifestxml-android) – Configures app permissions, metadata, and intent filters for Android.
+- [**`build.gradle`**](#buildgradle-android) – Defines Android specific build configurations such as compile SDK version, dependencies, build types, and signing configurations.
+- [**ProGuard files**](#proguard-file-android) – Used for code shrinking and obfuscation in Android builds.
 - [**`Info.plist`**](#infoplist-ios)– Manages iOS app settings, including permissions and configurations.
 - [**`Entitlements.plist`**](#entitlementsplist-ios) – Defines iOS app privileges such as push notifications and Apple Pay.
+- [**`AppDelegate.swift`**](#appdelegateswift-ios) – Manages iOS app launch behavior and runtime configuration. It registers Flutter plugins, initializes services like Firebase, and handles app lifecycle events and deep linking.
 - [**`main.dart`**](#maindart-flutter) – The entry point of your Flutter app, where you can modify app-level logic.
-- [**ProGuard files**](#proguard-file-android) – Used for code shrinking and obfuscation in Android builds.
+
 
 :::warning
 
@@ -29,9 +32,9 @@ In short, edit native code only when necessary, and do so carefully.
 
 :::
 
-## Editing native XML Files (AndroidManifest.xml, Info.plist, Entitlements.plist)
+## Editing Files
 
-FlutterFlow provides two main ways to modify native XML files: [**Add Individual Snippets**](#option-1-add-individual-snippets) and [**Manual Edit Mode**](#option-2-manual-edit-mode).
+FlutterFlow provides two main ways to modify native files: [**Add Individual Snippets**](#option-1-add-individual-snippets) and [**Manual Edit Mode**](#option-2-manual-edit-mode).
 
 ### Option 1: Add Individual Snippets
 
@@ -39,7 +42,7 @@ FlutterFlow provides two main ways to modify native XML files: [**Add Individual
 
 #### Snippet Placement for Android
 
-For Android, modifications are typically made in the `AndroidManifest.xml` file, where you can add the following tags:
+Let’s see how to add a snippet for the `AndroidManifest.xml` file, where you can add the following tags:
 
 - **Activity Tags:** Inserts XML code inside the `MainActivity` block. This is typically used to add child XML elements within the MainActivity, such as `<intent-filter>` or `<meta-data>` to control aspects such as deep linking, theme application, or launch mode.
 - **Application Tags**: Used to inject properties or attributes directly on the `<application>` tag itself. For example, you can use this to set values such as `android:icon`, `android:label`, `android:allowBackup`.
@@ -75,9 +78,9 @@ To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from
 
 #### Snippet Placement for iOS
 
-For iOS, you can modify the `Info.plist` and `Entitlements.plist` files. There’s no nested application/activity structure like on Android. Instead, both files are dictionaries of key-value pairs. When you add a snippet, it’s placed directly under the root `<dict>` element of these plist files.
+For iOS, let’s see how to add a snippet for the `Info.plist` and `Entitlements.plist` files. There’s no nested application/activity structure like on Android. Instead, both files are dictionaries of key-value pairs. When you add a snippet, it’s placed directly under the root `<dict>` element of these plist files.
 
-To add a snippet to native iOS files, navigate to **Custom Code** (from the left-side menu) > **Configuration Files**, and select the desired file (`Info.plist` or `Entitlements.plist`). Click the **plus** (+) button, provide a descriptive name (which will appear as a comment in the file), and paste your snippet code.
+To add a snippet to native iOS files, navigate to **Custom Code** (from the left-side menu) > **Configuration Files**, and select the desired file. Click the **plus** (+) button, provide a descriptive name (which will appear as a comment in the file), and paste your snippet code.
 
 <div style={{
     position: 'relative',
@@ -251,19 +254,19 @@ If `ALLOW_HTTP_TRAFFIC` is set to `true` in FlutterFlow’s Environment Value, t
 
 **Example 3: Using Library Values**
 
-If you are building a [FlutterFlow Library](../../resources/projects/libraries.md) and need to include API keys in native code without exposing them when users import the library, you can use [Library Values](../../resources/projects/libraries.md#library-values) as placeholders. This ensures that when someone installs your library, they can define their own values without seeing the actual key or credentials inside the native files.
+If you are building a [FlutterFlow Library](../../resources/projects/libraries.md) and need to include public API keys in native code, you can use [Library Values](../../resources/projects/libraries.md#library-values) as placeholders. This ensures that when someone installs your library, they can define their own values.
 
-For example, if your library requires an API key for a third-party service (e.g., Google Maps or a payment provider), it’s best not to expose the key directly in the manifest file. Instead, create a file-level variable and assign it a Library Value.
+For example, if your library integrates with a public weather API that requires an API key (such as Open-Meteo or WeatherAPI for general use), it’s best not to add the key directly in the manifest file. Instead, create a file-level variable and assign it a Library Value.
 
-```
+```jsx
 <application>
     <meta-data 
         android:name="com.google.android.geo.API_KEY" 
-        android:value="{{MAPS_API_KEY}}" />
+        android:value="{{WEATHER_API_KEY}}" />
 </application>
 ```
 
-The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{MAPS_API_KEY}}` with the user-defined key.
+The library user will define their own API key under Library Values when importing your library. At build time, FlutterFlow replaces `{{WEATHER_API_KEY}}` with the user-defined key.
 
 ## Editable Files
 
@@ -395,6 +398,161 @@ If your app needs to communicate over HTTP (unencrypted) for testing or legacy r
 :::tip
 You can modify the `AndroidManifest.xml` file by either [**adding a snippet**](#snippet-placement-for-android) or [**editing it manually**](#option-2-manual-edit-mode).
 :::
+
+### `build.gradle` (Android)
+
+The `build.gradle` file is the main Gradle build script for your Android app module. It resides in the `android/app/` directory and controls how your Android app is compiled, packaged, and built. This file defines critical configuration such as:
+
+- SDK versions (`compileSdkVersion`, `minSdkVersion`, `targetSdkVersion`)
+- Dependencies for third-party libraries
+- Build types (like debug vs. release)
+- Signing configurations for release builds
+- Kotlin and Flutter settings
+- MultiDex and ProGuard rules
+- Android packaging options
+
+In short, the `build.gradle` file acts as the blueprint for how your Android app is built and prepared for distribution.
+
+**Example 1: Changing SDK Versions**
+
+To set which Android SDK your app compiles with, update the following section in `build.gradle`:
+
+```jsx
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.myapp"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+}
+```
+
+Use this when you want to upgrade to a newer Android API level or need compatibility with certain libraries.
+
+
+**Example 2: Adding Third-Party Libraries**
+
+To use Android-specific libraries (such as Play Services or Jetpack), add them in the `dependencies` section:
+
+```jsx
+dependencies {
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'androidx.work:work-runtime:2.7.1'
+}
+```
+
+Use this when integrating services like Google Maps, Firebase Messaging, or WorkManager.
+
+
+**Example 3: Adding ProGuard Rules for Release Build**
+
+If your app uses ProGuard (code shrinking/obfuscation), you can define custom rules or reference a rules file:
+
+```jsx
+android {
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+```
+
+Use this to reduce APK size and protect code in production.
+
+**Example 4: Enabling MultiDex for Large Apps**
+
+If your app exceeds the 64K method limit (common when using many dependencies), enable MultiDex support:
+
+```jsx
+defaultConfig {
+    ...
+    multiDexEnabled true
+}
+```
+
+Use this when your build fails with `Too many methods` errors or when integrating large libraries like Firebase.
+
+:::tip
+You can modify the `build.gradle` file by either [**adding a snippet**](#snippet-placement-for-ios) or [**editing it manually**](#option-2-manual-edit-mode).
+:::
+
+### ProGuard File (Android)
+
+The **ProGuard file (`proguard-rules.pro`)** is a configuration file used in Android projects to optimize, shrink, and obfuscate the app’s code. It helps reduce APK or AAB size, improves performance, and protects the app’s code from reverse engineering by making it difficult to decompile.
+
+The ProGuard files allow you to specify rules to keep certain classes or methods (prevent them from being removed or renamed), or to tweak the obfuscation behavior. Located in the **`android/app/proguard-rules.pro`** directory of an Android project, the ProGuard rules are applied when code shrinking is enabled in a release build.
+
+Here are some scenarios where you may need to modify the ProGuard file:
+
+**Example 1: Preventing Issues with Third-Party Libraries**
+
+ProGuard can obfuscate critical libraries, breaking their functionality. To prevent this, you need to keep specific classes used by the library.
+
+```jsx
+# Firebase
+-keep class com.google.firebase.** { *; }
+
+# Gson (JSON Serialization)
+-keep class com.google.gson.** { *; }
+-keepattributes *Annotation*
+```
+
+This ensures that Firebase and Gson classes are not obfuscated, preventing serialization errors.
+
+**Example 2: Debugging ProGuard Issues**
+
+If your app crashes in release mode but works in debug mode, ProGuard might be removing important classes. To troubleshoot, you can add logging and keep rules.
+
+```jsx
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** v(...);
+    public static *** i(...);
+}
+```
+
+This removes debug logs in release builds but retains them for troubleshooting.
+
+**Example 3: Improving Security by Removing Debug Information**
+
+Attackers can decompile APKs and view sensitive debug logs. To remove these debug logs, add:
+
+```jsx
+-dontwarn android.util.Log
+```
+
+
+**Example 4: Keeping Native Libraries (JNI) Safe**
+
+If your app uses native C/C++ libraries (JNI), ProGuard may mistakenly remove required components. To prevent this:
+
+```jsx
+-keep class com.example.native.** { *; }
+-keepclassmembers class * {
+    native <methods>;
+}
+```
+
+This keeps all native methods intact.
+
+**Example 5: Preventing Issues with Reflection-Based Code**
+
+Some libraries rely on reflection to dynamically call methods, which ProGuard may remove.
+
+```jsx
+-keep class * implements android.os.Parcelable { *; }
+-keepclassmembers class ** {
+    @android.webkit.JavascriptInterface <methods>;
+}
+```
+
+This ensures reflection-based code continues working.
 
 ### `Info.plist` (iOS)
 
@@ -535,6 +693,34 @@ This enables your app to create, manage, and present passes in Apple Wallet.
 You can modify the `Entitlements.plist` file by either [**adding a snippet**](#snippet-placement-for-ios) or [**editing it manually**](#option-2-manual-edit-mode).
 :::
 
+### `AppDelegate.swift` (iOS)
+
+The `AppDelegate.swift` file is the entry point for your iOS application. It plays a crucial role in setting up your app’s runtime environment and handling app lifecycle events such as launching, backgrounding, and termination. This file is also where you register Flutter plugins and initialize SDKs like Firebase or Branch.
+
+It’s located at: `ios/Runner/AppDelegate.swift`
+
+**Example: Registering Custom iOS Plugins**
+
+For custom native iOS plugins that aren’t auto-registered, you can manually register them inside `AppDelegate.swift`.
+
+```jsx
+override func application(
+  _ application: UIApplication,
+  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+) -> Bool {
+  let controller: FlutterViewController = window?.rootViewController as! FlutterViewController
+  let myPlugin = CustomPlugin()
+  myPlugin.register(with: controller)
+  return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+}
+```
+
+Use this for custom iOS integrations that require manual setup.
+
+:::tip
+You can modify the `AppDelegate.swift` file by either [**adding a snippet**](#snippet-placement-for-ios) or [**editing it manually**](#option-2-manual-edit-mode).
+:::
+
 ### `main.dart` (Flutter)
 
 The `main.dart` file is the entry point of every FlutterFlow app. It is the first file that runs when the app starts and is responsible for initializing the application, configuring dependencies, and defining the root widget. Located in the **`lib/`** directory, `main.dart` contains the `main()` function, which is required for every FlutterFlow app.
@@ -642,77 +828,6 @@ class AppLifecycleObserver with WidgetsBindingObserver {
 }
 ```
 
-### ProGuard File (Android)
-
-The **ProGuard file (`proguard-rules.pro`)** is a configuration file used in Android projects to optimize, shrink, and obfuscate the app’s code. It helps reduce APK or AAB size, improves performance, and protects the app’s code from reverse engineering by making it difficult to decompile.
-
-The ProGuard files allow you to specify rules to keep certain classes or methods (prevent them from being removed or renamed), or to tweak the obfuscation behavior. Located in the **`android/app/proguard-rules.pro`** directory of an Android project, the ProGuard rules are applied when code shrinking is enabled in a release build.
-
-Here are some scenarios where you may need to modify the ProGuard file:
-
-**Example 1: Preventing Issues with Third-Party Libraries**
-
-ProGuard can obfuscate critical libraries, breaking their functionality. To prevent this, you need to keep specific classes used by the library.
-
-```jsx
-# Firebase
--keep class com.google.firebase.** { *; }
-
-# Gson (JSON Serialization)
--keep class com.google.gson.** { *; }
--keepattributes *Annotation*
-```
-
-This ensures that Firebase and Gson classes are not obfuscated, preventing serialization errors.
-
-**Example 2: Debugging ProGuard Issues**
-
-If your app crashes in release mode but works in debug mode, ProGuard might be removing important classes. To troubleshoot, you can add logging and keep rules.
-
-```jsx
--assumenosideeffects class android.util.Log {
-    public static *** d(...);
-    public static *** v(...);
-    public static *** i(...);
-}
-```
-
-This removes debug logs in release builds but retains them for troubleshooting.
-
-**Example 3: Improving Security by Removing Debug Information**
-
-Attackers can decompile APKs and view sensitive debug logs. To remove these debug logs, add:
-
-```jsx
--dontwarn android.util.Log
-```
-
-
-**Example 4: Keeping Native Libraries (JNI) Safe**
-
-If your app uses native C/C++ libraries (JNI), ProGuard may mistakenly remove required components. To prevent this:
-
-```jsx
--keep class com.example.native.** { *; }
--keepclassmembers class * {
-    native <methods>;
-}
-```
-
-This keeps all native methods intact.
-
-**Example 5: Preventing Issues with Reflection-Based Code**
-
-Some libraries rely on reflection to dynamically call methods, which ProGuard may remove.
-
-```jsx
--keep class * implements android.os.Parcelable { *; }
--keepclassmembers class ** {
-    @android.webkit.JavascriptInterface <methods>;
-}
-```
-
-This ensures reflection-based code continues working.
 
 ## Best Practices
 

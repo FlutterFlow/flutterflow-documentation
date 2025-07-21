@@ -1,6 +1,6 @@
 ---
 keywords: ['api', 'encoding', 'charset']
-slug: /api-charset-and-encoding-fix-guide
+slug: /troubleshooting/api/api-charset-and-encoding-fix-guide
 title: API Charset and Encoding Fix Guide
 ---
 # API Charset and Encoding Fix Guide

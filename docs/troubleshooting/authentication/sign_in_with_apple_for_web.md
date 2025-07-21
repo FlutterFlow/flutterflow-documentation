@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'sign', 'apple']
-slug: /sign-in-with-apple-for-web
+slug: /troubleshooting/authentication/sign-in-with-apple-for-web
 title: Sign in With Apple (for Web)
 ---
 
