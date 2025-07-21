@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'api', 'document']
-slug: troubleshooting/firebase/get-the-sum-of-firebase-document-or-api-values
+slug: /troubleshooting/firebase/get-the-sum-of-firebase-document-or-api-values
 title: Get the Sum of Firebase Document or API Values
 ---
 # Get the Sum of Firebase Document or API Values

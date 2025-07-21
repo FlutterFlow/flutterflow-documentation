@@ -1,6 +1,6 @@
 ---
 keywords: ['cloud functions', 'firebase', 'deployment', 'error']
-slug: troubleshooting/cloud-functions/fix-cloud-functions-deployment
+slug: /troubleshooting/cloud-functions/fix-cloud-functions-deployment
 title: Fix Cloud Functions Deployment
 ---
 

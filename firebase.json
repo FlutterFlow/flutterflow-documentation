@@ -2412,6 +2412,11 @@
         "source": "/resources/functions/utility/#code-expressions",
         "destination": "/resources/functions/utility/#inline-function",
         "type": 301
+      },
+      {
+        "source": "/configuring-cors-for-firebase-storage",
+        "destination": "/troubleshooting/firebase/configuring-cors-for-firebase-storage",
+        "type": 301
       }
     ]
   }

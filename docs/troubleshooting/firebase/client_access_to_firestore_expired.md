@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'firebase', 'client']
-slug: troubleshooting/firebase/client-access-to-firestore-expired
+slug: /troubleshooting/firebase/client-access-to-firestore-expired
 title: Client Access to Firestore Expired
 ---
 # Client Access to Firestore Expired

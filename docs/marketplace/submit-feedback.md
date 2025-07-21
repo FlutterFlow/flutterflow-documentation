@@ -4,7 +4,7 @@ title: Submit Feedback
 description: Learn more about the submitting feedback on FlutterFlow marketplace items.
 tags: [MarketPlace, Submit Feedback]
 sidebar_position: 2
-keywords: [FlutterFlow, MarketPlace, Submit Feedback]
+keywords: [FlutterFlow, MarketPlace, Submit Feedback, Review Dispute Guidelines]
 ---
 
 # Submitting Feedback for Items
@@ -57,3 +57,7 @@ If you encounter any issues with an item that may require our attention, such as
 :::tip
 If you are the original author or copyright holder of content that has been uploaded to the FlutterFlow Marketplace without your permission, you can file DMCA takedown request following the instructions in [**FlutterFlow's Terms of Service**](https://flutterflow.io/tos).
 :::
+
+## Review Disputes
+
+If you're a creator and believe a review on your item was submitted inappropriately, you can learn about our review dispute process in our [Review Dispute Guidelines](creators-hub/review-dispute-guidelines.md). This covers when reviews may be removed and how to submit a dispute.
