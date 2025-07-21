@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'deployment', 'firestore']
-slug: troubleshooting/firebase/resolving-firestore-index-deployment-issues
+slug: /troubleshooting/firebase/resolving-firestore-index-deployment-issues
 title: Resolving Firestore Index Deployment Issues
 ---
 # Resolving Firestore Index Deployment Issues

@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'flutter', 'exited']
-slug: troubleshooting/apple-store-deployment/codemagic-install-pods-failure
+slug: /troubleshooting/apple-store-deployment/codemagic-install-pods-failure
 title: Codemagic Install Pods Failure
 ---
 

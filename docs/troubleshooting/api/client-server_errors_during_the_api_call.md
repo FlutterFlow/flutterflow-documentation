@@ -1,6 +1,6 @@
 ---
 keywords: ['api', 'error', 'client']
-slug: troubleshooting/api/client-server-errors-during-the-api-call
+slug: /troubleshooting/api/client-server-errors-during-the-api-call
 title: Client-Server Errors during the API call
 ---
 # Client-Server Errors During the API Call

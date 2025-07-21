@@ -1,6 +1,6 @@
 ---
 keywords: ['build', 'android', 'emulator']
-slug: troubleshooting/test-mode/local-build-providerinstaller-error
+slug: /troubleshooting/test-mode/local-build-providerinstaller-error
 title: Local Build ProviderInstaller Error
 ---
 
