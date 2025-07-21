@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'custom', 'domains']
-slug: troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues
+slug: /troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues
 title: Custom Domain Connection Issues
 ---
 

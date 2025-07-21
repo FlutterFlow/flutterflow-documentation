@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'firestore', 'loading']
-slug: troubleshooting/test-mode/loading-spinner-run-mode
+slug: /troubleshooting/test-mode/loading-spinner-run-mode
 title: Loading Spinner in Run Mode
 ---
 

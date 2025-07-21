@@ -1,6 +1,6 @@
 ---
 keywords: ['testing', 'debug', 'console']
-slug: troubleshooting/custom-actions/testing-custom-actions-using-debug-console
+slug: /troubleshooting/custom-actions/testing-custom-actions-using-debug-console
 title: Testing Custom Actions Using Debug Console
 ---
 # Testing Custom Actions using Debug Console

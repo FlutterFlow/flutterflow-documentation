@@ -1,6 +1,6 @@
 ---
 keywords: ['storage', 'firebase', 'cors']
-slug: troubleshooting/firebase/configuring-cors-for-firebase-storage
+slug: /troubleshooting/firebase/configuring-cors-for-firebase-storage
 title: Configuring CORS for Firebase Storage
 ---
 # Configuring CORS for Firebase Storage
