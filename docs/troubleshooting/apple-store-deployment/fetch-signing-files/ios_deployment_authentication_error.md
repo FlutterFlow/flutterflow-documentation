@@ -1,6 +1,6 @@
 ---
 keywords: ['authentication', 'deployment', 'ios']
-slug: troubleshooting/apple-store-deployment/ios-deployment-authentication-error
+slug: /troubleshooting/apple-store-deployment/ios-deployment-authentication-error
 title: iOS Deployment Authentication Error
 ---
 

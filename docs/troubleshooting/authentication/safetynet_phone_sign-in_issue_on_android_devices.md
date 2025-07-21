@@ -1,6 +1,6 @@
 ---
 keywords: ['android', 'signing', 'release']
-slug: troubleshooting/authentication/safetynet-phone-sign-in-issue-on-android-devices
+slug: /troubleshooting/authentication/safetynet-phone-sign-in-issue-on-android-devices
 title: SafetyNet Phone Sign-In Issue on Android Devices
 ---
 

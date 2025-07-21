@@ -1,6 +1,6 @@
 ---
 keywords: ['flutter', 'downloaded', 'code']
-slug: troubleshooting/deployment/resolve-errors-in-downloaded-code
+slug: /troubleshooting/deployment/resolve-errors-in-downloaded-code
 title: Resolve Errors in Downloaded Code
 ---
 # Resolve Errors in Downloaded Code

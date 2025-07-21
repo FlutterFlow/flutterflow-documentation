@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'auth', 'authenticated']
-slug: troubleshooting/authentication/check-firebase-login-method
+slug: /troubleshooting/authentication/check-firebase-login-method
 title: Check Firebase Login Method
 ---
 # Check Firebase Login Method
