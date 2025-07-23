@@ -70,7 +70,7 @@ Here are the steps to verify user eligibility for push notifications:
                     3. Locate the `firebase@flutterflow.io` service account.
                     4. Assign any missing roles.
 
-                    Refer to **[this guide](/resolving-firestore-index-deployment-issues)** for full instructions.
+                    Refer to **[this guide](/integrations/firebase/connect-to-firebase#connect-an-existing-firebase-project-manually)** for full instructions.
 
     3. **Validate Input Data Passed to Cloud Function**
 
