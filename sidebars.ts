@@ -26,7 +26,7 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'FlutterFlow Platform',
+            label: 'Basics',
             collapsed: true,
             items: [
                 {
