@@ -1,6 +1,6 @@
 ---
 keywords: ['push notifications', 'firebase', 'cloud functions', 'troubleshooting']
-slug: /fix-push-notifications-sent-to-zero-devices
+slug: /troubleshooting/notifications/fix-push-notifications-sent-to-zero-devices
 title: Fix Push Notifications Sent to Zero Devices
 ---
 

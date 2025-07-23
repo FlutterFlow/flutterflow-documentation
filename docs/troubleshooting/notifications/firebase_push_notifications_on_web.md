@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'web push', 'notifications', 'custom actions']
-slug: /firebase-push-notifications-on-web
+slug: /troubleshooting/notifications/firebase-push-notifications-on-web
 title: Firebase Push Notifications on Web
 ---
 

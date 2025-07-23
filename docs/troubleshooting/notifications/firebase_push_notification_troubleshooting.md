@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'push notifications', 'troubleshooting', 'permissions']
-slug: /firebase-push-notification-troubleshooting
+slug: /troubleshooting/notifications/firebase-push-notification-troubleshooting
 title: Firebase Push Notification Troubleshooting
 ---
 

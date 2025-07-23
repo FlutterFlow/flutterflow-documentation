@@ -1,6 +1,6 @@
 ---
 keywords: ['push notifications', 'fcm token', 'troubleshooting', 'cloud functions']
-slug: /fcm-token-generation-troubleshooting
+slug: /troubleshooting/notifications/fcm-token-generation-troubleshooting
 title: FCM Token Generation Troubleshooting
 ---
 

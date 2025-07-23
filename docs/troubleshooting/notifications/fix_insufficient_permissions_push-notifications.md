@@ -1,6 +1,6 @@
 ---
 keywords: ['permissions', 'firebase', 'push']
-slug: /fix-insufficient-permissions-push-notifications
+slug: /troubleshooting/notifications/fix-insufficient-permissions-push-notifications
 title: Fix Insufficient Permissions for Push Notifications
 ---
 
