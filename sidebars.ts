@@ -132,11 +132,6 @@ const sidebars: SidebarsConfig = {
                     dirName: 'misc'
                 }
             ],
-        },
-        {
-            type: 'doc',
-            id: 'intro/chatbot',
-            label: 'Documentation Chatbot',
         }
     ]
 };
