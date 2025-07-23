@@ -9,22 +9,13 @@ keywords: [Wait Action, Time-Based Logic, FlutterFlow]
 
 # Wait [Action]
 
-**"Waiting"** on an action or function is a fundamental concept in time-based logic, allowing developers to introduce intentional pauses within a sequence of actions. This is also known as delaying execution of logic, where the execution of a sequence of actions is paused for a specified period. This action is particularly useful when there is a need to synchronize events, manage the timing of operations, or ensure that certain conditions are met before proceeding further in a workflow.
+The **Wait** action is used to pause the execution of a workflow for a specific amount of time. This is helpful when you want to delay the next step in a sequence, for example, to synchronize events, allow animations to complete, or ensure a condition is met before continuing. It’s a key concept in managing time-based logic within action flows.
 
-## Delayed Execution of Logic
-Delaying execution of logic involves pausing the execution of a sequence of actions for a specified period. This is useful when you need to introduce a time delay before proceeding to the next step in a workflow or process.
-
-## Use-cases
-
-- When you need to wait for a certain condition to be met (e.g., waiting for data to load or a 
-user to complete an action).
-- To create pauses between actions for better user experience (e.g., displaying messages 
-  sequentially).
-- Waiting before performing an animation. 
-
-## How to?
-
-To implement a Wait Action in your Action Flows, follow this simple tutorial: 
+:::tip[Possible use cases]
+- **Show Splash Screen:** Delay the transition to the next page to allow the splash screen to be visible for a few seconds.
+- **Step-by-Step Tutorials:** Introduce timed delays between steps to guide users through a tutorial or onboarding flow.
+- **Chain Animations:** Add pauses between multiple animations for a more fluid and organized visual effect.
+:::
 
 <div style={{
     position: 'relative',
@@ -33,7 +24,7 @@ To implement a Wait Action in your Action Flows, follow this simple tutorial:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/ou0tecrBVViOqy74U9nE?embed&show_copy_link=true"
+        src="https://demo.arcade.software/84gU4TTmjwX3STESd5z9?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
