@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'debug', 'android']
-slug: /google-play-store-debug-signing-error
+slug: /troubleshooting/google-play-store-deployment/google-play-store-debug-signing-error
 title: Google Play Store Debug Signing Error
 ---
 # Google Play Store Debug Signing Error

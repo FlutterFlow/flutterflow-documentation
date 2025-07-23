@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'package', 'icon']
-slug: /fix-launcher-icons-package-error
+slug: /troubleshooting/google-play-store-deployment/fix-launcher-icons-package-error
 title: Fix Flutter Launcher Icons Package Error
 ---
 

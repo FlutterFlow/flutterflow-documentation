@@ -1,6 +1,6 @@
 ---
 keywords: ['authentication', 'api', 'configuration']
-slug: /troubleshooting-authentication
+slug: /troubleshooting/authentication/troubleshooting-authentication
 title: Troubleshooting Custom Authentication
 ---
 # Troubleshooting Custom Authentication

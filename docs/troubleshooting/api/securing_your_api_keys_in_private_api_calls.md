@@ -1,6 +1,6 @@
 ---
 keywords: ['api', 'calls', 'private']
-slug: /securing-your-api-keys-in-private-api-calls
+slug: /troubleshooting/api/securing-your-api-keys-in-private-api-calls
 title: Securing Your API Keys in Private API Calls
 ---
 # Securing Your API Keys in Private API Calls

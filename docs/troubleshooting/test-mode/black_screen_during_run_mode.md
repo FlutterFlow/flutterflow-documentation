@@ -1,6 +1,6 @@
 ---
 keywords: ['run-mode', 'black-screen', 'preview']
-slug: /black-screen-during-run-mode
+slug: /troubleshooting/test-mode/black-screen-during-run-mode
 title: Black Screen During Run Mode
 ---
 

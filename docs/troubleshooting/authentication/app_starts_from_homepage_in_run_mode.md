@@ -1,6 +1,6 @@
 ---
 keywords: ['homepage', 'run mode', 'authentication state', 'session data']
-slug: /app-starts-from-homepage-in-run-mode
+slug: /troubleshooting/authentication/app-starts-from-homepage-in-run-mode
 title: App Starts from HomePage in Run Mode
 ---
 # App Starts from HomePage in Run Mode
