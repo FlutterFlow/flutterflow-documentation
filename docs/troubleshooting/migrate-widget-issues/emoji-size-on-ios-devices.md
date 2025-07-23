@@ -1,6 +1,6 @@
 ---
 keywords: ['ios', 'emoji', 'text', 'size']
-slug: /emoji-size-on-ios-devices
+slug: /troubleshooting/migrate-widget-issues/emoji-size-on-ios-devices
 title: Emoji Size on iOS Devices
 ---
 

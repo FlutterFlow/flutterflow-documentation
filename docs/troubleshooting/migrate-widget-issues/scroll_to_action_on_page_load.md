@@ -1,6 +1,6 @@
 ---
 keywords: ['scroll to action', 'page load', 'delay', 'animation']
-slug: /scroll-to-action-on-page-load
+slug: /troubleshooting/migrate-widget-issues/scroll-to-action-on-page-load
 title: Scroll To Action on Page Load
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['custom', 'widgets', 'app state', 'output']
-slug: /store-custom-widget-output-using-app-state
+slug: /troubleshooting/migrate-widget-issues/store-custom-widget-output-using-app-state
 title: Store Custom Widget Output Using App State
 ---
 

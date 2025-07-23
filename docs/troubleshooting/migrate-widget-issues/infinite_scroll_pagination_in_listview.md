@@ -1,6 +1,6 @@
 ---
 keywords: ['listview', 'infinite scroll', 'pagination']
-slug: /infinite-scroll-pagination-in-listview
+slug: /troubleshooting/migrate-widget-issues/infinite-scroll-pagination-in-listview
 title: Infinite Scroll Pagination in ListView
 ---
 
