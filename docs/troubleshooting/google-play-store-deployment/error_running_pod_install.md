@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'running', 'install']
-slug: /error-running-pod-install
+slug: /troubleshooting/google-play-store-deployment/error-running-pod-install
 title: Error Running Pod Install
 ---
 

@@ -684,17 +684,7 @@ This library sets up everything you need for routing users into your app using B
 
 ### Install Library
 
-To install the Branch Deep Linking Library, open the FlutterFlow Marketplace, search for the library, and click **+ Add for Free**.
-
-:::tip[marketplace]
-You can find the [**Library here**](https://marketplace.flutterflow.io/item/oAco1HzQHxtOVE1ssTcC).
-:::
-
-This installs the library into your FlutterFlow account, and you can reuse it across any number of projects.
-
-![branch-library-install.png](imgs/branch-library-install.png)
-
-To add it to a specific project, go to **Settings > Project Dependencies**, click **Add Library**, and search for Branch.
+You can install the [Branch Deeplinking Library from the Marketplace](https://marketplace.flutterflow.io/item/oAco1HzQHxtOVE1ssTcC). Refer to the [Add Library Item](../../marketplace/adding-purchasing-item.md#add-library-item) instructions to see how to add it to your account.
 
 ### Branch Setup 
 

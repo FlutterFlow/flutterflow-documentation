@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'deployment', 'android', 'google-sign-in']
-slug: /fix-google-sign-in-issues
+slug: /troubleshooting/authentication/fix-google-sign-in-issues
 title: Fix Google Sign-In Issues
 ---
 # Fix Google Sign-In Issues

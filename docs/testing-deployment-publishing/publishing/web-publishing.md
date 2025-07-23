@@ -40,13 +40,23 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 
 #### Advanced Web Settings
 
-1. **Use Original Engine Initialization**: This uses original Flutter web engine initialization, which sometimes helps in better loading time in the deployed web app.
+1. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. 
 
-2. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. **Note** that when using CanvasKit, some images can be blocked from loading if the server is not configured to allow loading them from other websites. To deal with this issue, you can set any of the following options, depending on where the images are hosted.
-    - **None:** If you are only loading images from your Firebase Storage, select this option and follow the steps [here](#). <!--pinkesh add link-->
-    - **Deploy with Firebase**: If images are not hosted on Firebase Storage *but you use Firebase to build your app*, choose this option and hit Deploy button.
-    - **Custom Proxy URL**: If you are not using Firebase or prefer to set up your own CORS proxy, you can specify your own Custom Proxy URL. If you don't have one, you can create one by following the steps [here](https://github.com/Rob--W/cors-anywhere).
-3. **Import Emoji library**: Importing the Emoji library is necessary if your app may use emojis anywhere in any text widget. However, this will increase the size of your app on web.
+2. **CORS Proxy for Images (Optional)**: When using CanvasKit, some images can be blocked from loading if the server is not configured to allow loading them from other websites. This happens because Flutter web uses WebGL for rendering, which requires access to raw image data and is subject to browser security restrictions called [Cross-Origin Resource Sharing (CORS)](https://docs.flutter.dev/platform-integration/web/web-images#cross-origin-resource-sharing-cors).
+
+   Choose the appropriate option based on where your images are hosted:
+
+   - **None**: If you are only loading images from your Firebase Storage, select this option and configure Firebase Storage for web access. FlutterFlow automatically excludes Firebase Storage images from CORS proxy requirements.
+   
+   - **Deploy with Firebase**: If images are hosted on external servers (not Firebase Storage) *but you use Firebase for your app*, choose this option. FlutterFlow will automatically deploy a regional CORS proxy function to your Firebase project for optimal performance. Simply click the **Deploy** button that appears below this option.
+   
+   - **Custom Proxy URL**: If you're not using Firebase or prefer to manage your own CORS proxy, specify your custom proxy URL here. If you don't have one, you can create one using services like [cors-anywhere](https://github.com/Rob--W/cors-anywhere) or CloudFlare Workers.
+
+   :::warning
+   **Performance Note**: Using a CORS proxy adds a network hop for external images, which may slightly increase loading times. For best performance, host images on Firebase Storage or a CORS-enabled CDN when possible.
+   :::
+
+3. **Import Emoji Library**: Importing the Emoji library is necessary if your app may use emojis anywhere in any text widget. However, this will increase the size of your app on web.
 
 :::info
 
@@ -54,6 +64,15 @@ Enabling web support automatically enables
 [**deep linking**](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for your project. This helps in creating URLs for every page of your app.
 
 :::
+
+#### Troubleshooting CORS Issues
+
+If you're experiencing image loading issues on web:
+
+1. **Check browser console**: Look for CORS-related error messages
+2. **Verify image sources**: Ensure external image servers allow cross-origin requests
+3. **Test proxy configuration**: Verify your custom proxy URL is accessible and functioning
+4. **Firebase Storage setup**: Confirm Firebase Storage rules allow public read access for web
 
 ### 2. Make design adjustments (optional)
 
