@@ -1,6 +1,6 @@
 ---
 keywords: ['custom widget', 'widget errors', 'widget troubleshooting', 'flutterflow']
-slug: /troubleshooting/migrate-widget-issues/custom-widget-errors
+slug: /troubleshooting/widget/custom-widget-errors
 title: Custom Widget Errors
 ---
 

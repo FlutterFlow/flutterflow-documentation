@@ -1,6 +1,6 @@
 ---
 keywords: ['rive', 'animation', 'loading', 'error']
-slug: /troubleshooting/migrate-widget-issues/rive-animation-loading-errors
+slug: /troubleshooting/widget/rive-animation-loading-errors
 title: Rive Animation Loading Errors
 ---
 
