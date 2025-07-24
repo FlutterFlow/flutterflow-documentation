@@ -55,7 +55,7 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'Building Concepts',
+            label: 'ts',
             collapsed: true,
             link: {
                 type: 'generated-index',
