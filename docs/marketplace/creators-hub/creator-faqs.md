@@ -79,11 +79,11 @@ We strive to maintain a high standard, but some items may not meet these expecta
 
 ### What is the criteria for getting my item approved for Marketplace?
 
-Please see our [Item Submission Criteria](submission-criteria.md).
+Please see our [Item Submission Criteria](docs/marketplace/creators-hub/submission-criteria.md).
 
 ### What happens if my item is rejected?
 
-If your item is not approved, it will be returned to draft status, allowing you to make the required edits. We will provide you with detailed feedback via email, specifying the criteria it did not meet. You can see more details about our criteria and suggested actions [here](submission-criteria.md). You can then make the necessary adjustments and resubmit it for review.
+If your item is not approved, it will be returned to draft status, allowing you to make the required edits. We will provide you with detailed feedback via email, specifying the criteria it did not meet. You can see more details about our criteria and suggested actions [here](docs/marketplace/creators-hub/submission-criteria.md). You can then make the necessary adjustments and resubmit it for review.
 
 ### When will my template be reviewed?
 

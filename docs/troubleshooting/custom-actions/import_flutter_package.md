@@ -49,8 +49,3 @@ Follow the steps below to import a Flutter package into FlutterFlow:
     - **Correct Format**: Use the correct format: `package_name: ^version_number`. Not including a version may result in outdated or unstable dependencies.
     - **Recompile**: Always recompile your custom widget or action after adding new parameters.
     - **Safe Deletion**: You cannot delete a custom widget or action if it's currently in use. Remove it from all screens first.
-
-:::info[Additional Resources]
-- [Create a Custom Widget](/custom-code/widgets)
-- [Create a Custom Action](/custom-code/actions)
-:::

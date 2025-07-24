@@ -36,5 +36,5 @@ If enabling pop-ups doesn’t resolve the issue:
     - Ensure no browser extensions are blocking authentication.
     - Restart the browser and attempt login again.
 
-If the issue persists, [contact FlutterFlow support](support@flutterflow.io) for further assistance.
+If the issue persists, [contact FlutterFlow support](mailto:support@flutterflow.io) for further assistance.
 

@@ -27,7 +27,7 @@ You must be a registered FlutterFlow user to join the community.
   ![](imgs/20250430121510782041.png)
 
   **Use the same email** associated with your FlutterFlow account to receive the invitation.  
-  You can verify your email on your **[FlutterFlow Account Settings](/settings/account)**.
+  You can verify your email on your FlutterFlow Account Settings.
 
 **Common Issues:**
 
