@@ -97,7 +97,9 @@ com/embed/v_hR4K4auoQ" frameborder="0" allow="accelerometer; autoplay; clipboard
 
 ## Manage Databases
 
-You can also create multiple Firestore databases within a single Firebase project. This makes it easy to set up separate data environments, such as development, staging, and production, without needing to create and manage multiple Firebase projects.
+You can also create multiple Firestore databases within a single Firebase project. This is especially useful for enterprise use cases, for example, when managing region-based databases or supporting multiple clients with isolated data stores.
+
+Additionally, you can use multiple databases to simulate different environments such as development, staging, and production. **However, note that** this setup is not directly related to the [Development Environments](../../../testing-deployment-publishing/development-environments/development-environments.md) in FlutterFlow, which operates independently of Firebase's multi-database configuration. This means that you’ll need to manually switch Firestore Database ID when switching Development Environments.
 
 To create a new database, go to the **Firebase Console > Firestore Database** section. Click the button next to the default database, i.e, **Add database**. Choose a region and configure your security rules. Once the new database is created, you can switch between databases using the dropdown.
 
