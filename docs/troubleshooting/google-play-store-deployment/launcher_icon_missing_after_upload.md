@@ -1,6 +1,6 @@
 ---
 keywords: ["icon", "added", "launcher"]
-slug: /launcher-icon-missing-after-upload
+slug: /troubleshooting/google-play-store-deployment/launcher-icon-missing-after-upload
 title: Launcher Icon Missing After Upload
 ---
 

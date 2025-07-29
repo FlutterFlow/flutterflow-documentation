@@ -1,6 +1,6 @@
 ---
 keywords: ['api', 'attestation', 'migration']
-slug: /migrate-to-play-integrity-api-from-safetynet-attestation
+slug: /troubleshooting/google-play-store-deployment/migrate-to-play-integrity-api-from-safetynet-attestation
 title: Migrate to Play Integrity API From SafetyNet Attestation
 ---
 

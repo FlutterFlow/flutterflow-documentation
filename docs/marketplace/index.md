@@ -4,7 +4,7 @@ title: FlutterFlow Marketplace
 description: Discover how to explore, purchase, and contribute to the FlutterFlow Marketplace, including guidelines for submissions and handling copyrights.
 tags: [Marketplace , Creator Hub]
 sidebar_position: 0
-keywords: [FlutterFlow, Marketplace, Add and Purchase Items, Refund Policy, Submit Feedback, Creator Hub, Submission Criteria, Legal Guidelines, Copyright, DMCA Process, External Licensing, Creators FAQs]
+keywords: [FlutterFlow, Marketplace, Add and Purchase Items, Refund Policy, Submit Feedback, Review Dispute Guidelines, Creator Hub, Submission Criteria, Legal Guidelines, Copyright, DMCA Process, External Licensing, Creators FAQs]
 ---
 
 # FlutterFlow Marketplace
@@ -20,6 +20,14 @@ If you're interested in contributing to the Marketplace, the [creator hub](creat
 Understanding and navigating [copyright (DMCA process)](creators-hub/copyright-dmca-process.md) is crucial for both creators and users. The Marketplace provides clear instructions on how to handle copyright issues, ensuring that intellectual property rights are respected.
 
 For those dealing with third-party resources, [navigating external licensing](creators-hub/navigating-external-licenses.md) is essential. The Marketplace offers guidelines to help you understand and comply with various licensing agreements.
+
+## Marketplace Policies and Guidelines
+
+Understanding our marketplace policies helps ensure a positive experience for all users:
+
+- [Refund Policy](refund-policy.md) - Learn about our refund policy and exceptional circumstances
+- [Review Dispute Guidelines](creators-hub/review-dispute-guidelines.md) - Understanding when and how reviews may be disputed
+- [Submit Feedback](submit-feedback.md) - Learn how to rate items and provide feedback
 
 ## FAQs
 Our [Creators FAQs](creators-hub/creators-hub.md) section provides answers to common questions, supporting you throughout your journey in the Marketplace.

@@ -1,6 +1,6 @@
 ---
 keywords: ['apis', 'test-api', 'api-call']
-slug: /test-api-calls
+slug: /troubleshooting/test-mode/test-api-calls
 title: Test API Calls
 ---
 

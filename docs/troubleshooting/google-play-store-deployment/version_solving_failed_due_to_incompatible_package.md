@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'version', 'failed']
-slug: /version-solving-failed-due-to-incompatible-package
+slug: /troubleshooting/google-play-store-deployment/version-solving-failed-due-to-incompatible-package
 title: Version Solving Failed Due to Incompatible Package
 ---
 
