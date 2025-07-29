@@ -11,7 +11,7 @@ toc_max_heading_level: 4
 # Branching
 Branching creates a separate copy of your work, so you can add new features without disrupting your current progress. It enables multiple developers or teams to work simultaneously on different features without interfering with each other.
 
-Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your `main` branch and potentially causing problems, you can create a branch to work on this new feature in isolation. Once it's complete, you can integrate it back into the `main` branch.
+Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your existing `main` branch and potentially causing problems, you can create a branch to work on this new feature in isolation. Once it's complete, you can integrate it back into the `main` branch.
 
 :::info
 While all users can access the branching menu and create commits, only **Pro**, **Teams**, and **Enterprise** plans support creating new branches.
@@ -28,12 +28,18 @@ FlutterFlow. You can also learn more about
 ## Branching Overview
 Before you create and merge a branch, it is essential to understand the general workflow. Here's what it looks like:
 
-![branching](../imgs/branching.avif)
+![branching](imgs/branching-overview.avif)
 
-First, create a new branch from the `main` branch. After making your changes and finalizing the 
-feature, merge this new branch back into the `main` branch. If there are any conflicts, 
+First, create a new branch from the `main` branch. After making your changes in a new branch and finalizing the feature, merge this new branch back into the `main` branch. If there are any conflicts, 
 you must resolve them first.
 
+:::note
+It’s important to understand what merging actually means. Merging does not perform a "union" of data between branches. Instead, Git merge reconciles differences (diffs) between the branches. When you merge, Git compares the changes made in the new branch with the main branch and applies these changes directly.
+
+For instance, if a branch is created and all existing data is deleted before new content is added, Git interprets this as a replacement. When the branch is merged back into the main branch, those deletions will also be applied removing the original data. This behaviour can be surprising to those expecting Git to automatically preserve all content from both branches. Learn more about [**Merging**](#merging).
+
+To avoid accidental data loss, ensure that your branch workflow involves incremental and intentional changes rather than deleting and replacing all existing content unless that's specifically your goal.
+:::
 
 ## Creating a New Branch
 To create a new branch from the current branch, simply go to the **Branching Options** button next to current branch in the **Branching menu.**
@@ -177,12 +183,12 @@ You can also merge changes from the parent branch, into the current branch. For 
 
 ![after-merging-2](../imgs/after-merging-2.png)
 
-During a merge, FlutterFlow compares the changes made in both branches, if the changes don't overlap or conflict then the branches are automatically combined. If there are conflicts (for example, both branches modified the same widget property) you'll need to resolve these before the merge can be completed.
+During a merge, Git compares the changes made in both branches, if the changes don't overlap or conflict then the branches are automatically combined. If there are conflicts (for example, both branches modified the same widget property) you'll need to resolve these before the merge can be completed.
 
 :::note Few things to note here
 
-- At the moment, FlutterFlow only supports merging into the parent branch, or the branch that the current branch was created from (usually `main`)
-- Only the user who initiated the merge can access both the `main` branch and the branch during an ongoing merge.
+- At the moment, FlutterFlow only supports merging into the parent branch, or the branch that the current branch was created from.
+- Only the user who initiated the merge can access both the branches during an ongoing merge.
 - Merges result in a merge [commit](#commits), which means you can undo a merge by restoring the branch to a prior commit
 - If you leave the project during the merge and come back, the progress you have made on the merge will be preserved.
 
