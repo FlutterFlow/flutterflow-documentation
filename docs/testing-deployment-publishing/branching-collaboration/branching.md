@@ -36,7 +36,7 @@ you must resolve them first.
 :::note
 It’s important to understand what merging actually means. Merging does not perform a "union" of data between branches. Instead, Git merge reconciles differences (diffs) between the branches. When you merge, Git compares the changes made in the new branch with the main branch and applies these changes directly.
 
-Some users mistakenly assume merging works like combining data from both branches. For example, if you create a new branch, delete all existing data, and then add new data to that branch, Git will interpret these actions as deleting the original data and replacing it entirely with new content. If you merge this branch back into the main branch, Git will apply these deletions as well, effectively deleting all the project's previous data. Learn more about [**Merging**](#merging).
+For instance, if a branch is created and all existing data is deleted before new content is added, Git interprets this as a replacement. When the branch is merged back into the main branch, those deletions will also be applied removing the original data. This behaviour can be surprising to those expecting Git to automatically preserve all content from both branches. Learn more about [**Merging**](#merging).
 
 To avoid accidental data loss, ensure that your branch workflow involves incremental and intentional changes rather than deleting and replacing all existing content unless that's specifically your goal.
 :::
