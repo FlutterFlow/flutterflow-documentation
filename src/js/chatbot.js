@@ -18,11 +18,11 @@
   style.textContent = `
     #dify-chatbot-bubble-button {
       background-color: #4B39EF !important;
-      bottom: 0.25rem !important;
-      right: 0.25rem !important;
+      bottom: 0.80rem !important;
+      right: 0.80rem !important;
       border-radius: 50% !important;
-      width: 50px !important;
-      height: 50px !important;
+      width: 45px !important;
+      height: 45px !important;
     }
     
     /* Make the main chat window background more translucent to show rounded corners */
