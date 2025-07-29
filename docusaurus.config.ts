@@ -11,8 +11,10 @@ const config: Config = {
   onBrokenMarkdownLinks: 'throw',
   onBrokenAnchors: 'throw',
   favicon: 'logos/favicon.png',
+
   clientModules: [
     require.resolve('./src/js/table-helpers.js'),
+    require.resolve('./src/js/chatbot.js'),
   ],
   i18n: {
     defaultLocale: 'en',
