@@ -410,6 +410,15 @@ To autofocus a TextField, select the TextField widget, move to the **Properties 
 </div>
 <p></p>
 
+### Enable Interactive Selection
+
+The **Enable Interactive Selection** toggle controls whether users can interact with the text selection features, such as long-press selection, copy/paste menus, and selection handles.
+
+By default, this property is set to **True**, allowing users to select, copy, and paste text using the platform's built-in text selection controls. Disabling this can help prevent unintended text copying or editing, especially in sensitive fields.
+
+
+![interactive-selection](../imgs/interactive-selection.avif)
+
 ### Autocomplete a TextField
 
 You might want to allow users to enter the text by suggesting them a list of items. The suggested items are shown if it contains the currently entered text from TextField. For example, using autocomplete to get the *Country* *name*, *Fruit* *name*, etc.
