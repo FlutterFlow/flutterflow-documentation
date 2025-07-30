@@ -1,28 +1,45 @@
 ---
-keywords: ['database', 'clear', 'before']
-slug: clear-database-before-running-tests
-title: Clear Database Before Running Tests
+keywords: ['database', 'clear', 'testing']
+slug: troubleshooting/test-mode/prepare-database-before-tests
+title: Prepare Database Before Running Tests
 ---
 
-# Clear Database Before Running Tests
+# Prepare Database Before Running Tests
 
-When testing or developing your application, previously added records in your database can lead to inconsistencies if the data schema has changed.
+When preparing for major testing or app updates, it's important to ensure that all records in the Firestore database are aligned with the latest data model. Outdated entries may lack newly added fields, leading to potential runtime issues.
 
-## Problem
+## The Issue with Outdated Records
 
-As your app evolves, you may add new fields to your database collections. Older records might not include these new fields. When the app expects those fields and they are missing, it can lead to errors or unexpected behavior.
+As new fields are introduced to collections, existing records may become incomplete. This can cause:
 
-## Solution
+    - Runtime errors
+    - Inconsistent or missing UI elements
+    - Unexpected test behavior or broken features
 
-:::tip
-Clear your database before running significant tests or after making changes to the data schema. This ensures all records follow the latest structure and prevents issues with missing data.
+:::info[Prerequisites]
+Ensure that you have access to the Firestore database and understand the current schema changes made in the project.
 :::
 
-## Example Scenario
+The steps below are the recommended practices:
+1. **Clear the Database Before Testing**  
+   Remove old data to ensure that only current, schema-compliant records are present.
 
-1. A new field such as `profilePicture` is added to a collection.
-2. Older records do not contain this field.
-3. The app expects the `profilePicture` field for all records.
-4. Attempting to display or process old records results in errors or incomplete data.
+2. **Migrate Old Records**  
+   Use a script or manual update to add missing fields to existing documents.
 
-To resolve this, either update all records to match the new schema or remove outdated entries before running tests or deploying the app.
+These steps help maintain consistency across your data and avoid unexpected failures during testing or deployment.
+
+Here is an example scenario:
+
+    1. A new field called `profilePicture` is added to the `Users` collection.
+    2. Existing user records do not include the `profilePicture` field.
+    3. The app assumes all users have a `profilePicture` value.
+    4. Displaying or processing these records causes errors or incomplete rendering.
+
+Solution:
+    - Use a Cloud Function, script, or manual update to add default values to existing documents.
+    - Alternatively, delete non-compliant test data before starting major testing workflows.
+
+:::tip
+Always validate the database structure after schema changes by running test queries to confirm that all expected fields exist across documents.
+:::
