@@ -117,6 +117,12 @@ Here’s exactly how you do it:
 
 On touch devices, the *Tooltip* opens on tap. To make it open on long press instead, use the **Trigger Mode** property.
 
+### Show Tooltip on Focus
+
+The **Show Tooltip on Focus** toggle controls whether the tooltip is displayed when the child widget receives keyboard focus. This is particularly useful for improving accessibility and keyboard navigation, as it ensures users see helpful information when they tab through form fields, interactive elements or any important information.
+
+![tooltip-on-focus](imgs/tooltip-on-focus.avif)
+
 ### Change tooltip alignment
 
 By default, the *Tooltip* appears below the target widget. You can change this setting using the **Preferred Direction** property. This allows you to open the Tooltip **Above**, **Left,** and **Right** directions in addition to the **Below**.
