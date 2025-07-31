@@ -103,13 +103,13 @@ Authorization: Bearer YOUR_API_TOKEN_HERE
 ## API Endpoints
 Below is a list of available API endpoints with their methods and usage descriptions.
 
-| Endpoint                    | Method | Purpose                                       |
-| --------------------------- | ------ | --------------------------------------------- |
-| `/listPartitionedFileNames` | GET    | List available YAML file names for a project.  |
-| `/l/listProjects`           | POST   | Retrieve metadata for all projects.            |
-| `/projectYamls`             | GET    | Export/download YAML files from a project.     |
-| `/validateProjectYaml`      | POST   | Validate YAML content before applying changes. |
-| `/updateProjectYaml`        | POST   | Update project configuration via YAML.         |
+| Endpoint                      | Method | Purpose                                       |
+| ---------------------------   | ------ | --------------------------------------------- |
+| `/listPartitionedFileNames`   | GET    | List available YAML file names for a project.  |
+| `/l/listProjects`             | POST   | Retrieve metadata for all projects.            |
+| `/projectYamls`               | GET    | Export/download YAML files from a project.     |
+| `/validateProjectYaml`        | POST   | Validate YAML content before applying changes. |
+| `/updateProjectByYaml`        | POST   | Update project configuration via YAML.         |
 
 
 ### List File Names
