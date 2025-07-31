@@ -167,6 +167,33 @@ To view the live version of your app, click the **eye icon** next to the 'Publis
 
 ---
 
+## Embedding a FlutterFlow App in an Iframe
+
+You can embed a published FlutterFlow web app in an `iframe`, but this comes with limitations due to browser security policies and localStorage restrictions.
+
+:::warning
+Embedding may cause **limited functionality** if the browser blocks third-party cookies or `localStorage` access.
+:::
+
+Follow the steps below to embed:
+
+    1. **Enable Third-Party Cookies**  
+    Ensure the browser allows third-party cookies for your app's domain.
+
+    2. **Use the Embed Code**
+    ```html
+    <iframe
+        src="https://your-flutterflow-app.web.app"
+        width="100%"
+        height="1000px"
+        style="border: none;">
+    </iframe>
+        ```
+        Replace your-flutterflow-app.web.app with your actual hosted app URL:
+            - Embedding may break features that rely on session/local storage.
+            - Server headers like X-Frame-Options or Content-Security-Policy can prevent iframe usage.
+            - Major platforms like Google and LinkedIn block iframe embedding for security reasons.
+
 ## Adding custom domain
 
 Adding a custom domain to your web app can give it a more professional look and feel and make it easier for your users to remember and find. FlutterFlow allows you to connect your own domain name to your web app and have it up and running in no time. This feature is perfect for those wanting to establish a strong online presence and increase brand awareness.

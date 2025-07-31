@@ -127,4 +127,23 @@ Storing large or complex data types like documents in App State could lead to **
 
 If you need to work with such data types, it's recommended to store them in Page or Component state instead.
 </p>
+
+<summary>
+Why is the data type list empty when creating an App State variable?
+</summary>
+<p>
+If you don’t see any data types when trying to create an App State variable, it's likely because <strong>Deep Linking is disabled</strong> in your project settings.
+
+To fix this:
+
+1. Open your FlutterFlow project.
+2. Go to <strong>Settings > App Details</strong>.
+3. Scroll to the <strong>Deep Linking & Route</strong> section.
+4. Enable the <strong>Deep Linking</strong> toggle.
+
+<img src="../assets/20250430121217509964.png" alt="Enable Deep Linking" />
+
+Once Deep Linking is enabled, the list of available data types should appear when creating or editing an App State variable.
+</p>
+
 </details>
