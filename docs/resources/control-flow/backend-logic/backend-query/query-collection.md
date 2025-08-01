@@ -177,3 +177,92 @@ Additionally, you can enable real-time updates when creating a new table.
 ![enable-realtime-updates-sb-table.avif](../imgs/enable-realtime-updates-sb-table-2.avif)
 </p>
 </details>
+
+## Example: Filter One Dropdown by Another
+
+You can filter one dropdown based on the selected value of another. This is useful in nested selection scenarios like choosing a vehicle **make** first, then filtering the **model** dropdown accordingly.
+
+1. **Set Up Firestore Collections**
+
+    - **`make` Collection**
+    - Field: `name` (String) — the vehicle make (e.g., BMW)
+
+    - **`model` Collection**
+    - Fields:
+        - `name` (String) — model name
+        - `make_name` (String) — should match the `name` from the `make` collection
+
+2. **Create the Dropdown UI**
+
+    Add two `Dropdown` widgets:
+        - **First dropdown** → queries `make`
+        - **Second dropdown** → queries `model`, filtered by the selected `make`
+
+3. **Query the First Dropdown**
+
+    - Select the **first dropdown**
+    - Set the data source to a query on `make`
+    - Bind the `name` field to the dropdown options
+
+4. **Filter the Second Dropdown**
+
+    - Select the **second dropdown**
+    - Set its data source to query the `model` collection
+    - Add a filter:
+    - **Field**: `make_name`
+    - **Condition**: `is equal to`
+    - **Value**: the selected item from the first dropdown (via `Widget State`)
+
+    :::tip
+    This method can be extended to chains of 3+ dropdowns using additional filters.
+    :::
+
+## Example: Filter Records by Selected Calendar Date
+
+You can use a `Calendar` widget to dynamically filter query results by date. This is useful when showing time-sensitive records such as appointments or events.
+
+:::info[Requirements]
+- A Firebase collection with a date field (e.g., `eventDate`)
+- A `Calendar` widget on the page
+- A `ListView` bound to a Firebase query
+:::
+
+1. **Add Date Filters to the Query**
+
+    Apply two filters to your `ListView` query:
+
+        - **Start of the day** – `eventDate` **≥** selected date (start)
+        - **End of the day** – `eventDate` **≤** selected date (end)
+
+    Steps:
+
+        1. Select the `ListView` widget.
+        2. In the **Backend Query** section, click **+ Filter** twice.
+        3. For both filters, use:
+        - **Field Name**: `eventDate`
+        - **Relation**: 
+            - First filter: `Greater Than or Equal`
+            - Second filter: `Less Than or Equal`
+        - **Value Source**: `From Variable` → `Widget State` → `calendarSelectedDay`
+        - Set **Range Part**:
+            - First filter: `Start`
+            - Second filter: `End`
+
+2. **Set the Initial Calendar Date**
+
+    To avoid loading issues:
+
+        1. Select the `Calendar` widget.
+        2. Under **Initial Date**, choose:
+        - **Source**: `Global Properties`
+        - **Option**: `Current Timestamp`
+
+        :::warning
+        Not setting an initial date can lead to a blank screen in Run Mode.
+        :::
+
+**Test the Result:**
+
+    - Run the app.
+    - Select a date on the calendar.
+    - The `ListView` will update to show only records from that date.
