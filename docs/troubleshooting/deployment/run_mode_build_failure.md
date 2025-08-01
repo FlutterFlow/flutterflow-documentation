@@ -93,6 +93,23 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
     If the error is elusive, running the debugger locally on your downloaded code can help identify the issue.
 
+    **Use Device Logs in the FlutterFlow Desktop App**
+
+        If you're using the FlutterFlow Desktop App and running the app with a local run, you can access detailed logs that may point directly to the problem. These logs are especially helpful for catching runtime issues that might not appear in the FlutterFlow UI.
+
+        You can learn how to access these logs in this guide:  
+        [Access Device Logs in Local Run](../testing-deployment-publishing/running-your-app/local-run.md#access-device-logs-in-local-run)
+
+        For example, if a user enters a character instead of a numeric value for a quantity field, and that type mismatch causes an error, it will be captured in the logs — allowing you to identify and fix it quickly.
+
+        ![Desktop app's device logs](imgs/desktop-app-device-logs.avif)
+
+        :::tip
+        Not sure what the error means? Just copy and paste the full error message into ChatGPT and ask for help understanding it.
+        :::
+
+        In fact, for the error shown above, **[we asked ChatGPT](https://chat.openai.com/share/77f3ceb5-6b2f-4f94-b85c-e01a1fce002a)** to explain and resolve the issue — and the solution turned out to be quick and simple.
+
 - **Leverage browser tools**: 
 
     The browser's console and developer tools can offer insights, especially when dealing with errors that don't manifest in traditional debug outputs.

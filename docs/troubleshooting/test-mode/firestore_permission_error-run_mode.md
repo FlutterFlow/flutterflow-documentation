@@ -50,6 +50,16 @@ This error is typically triggered when:
 
     Descriptive widget names can help you quickly identify which query or widget is triggering the permission issue. In the example above, the error message references a widget named Container. Renaming it to something like UserQueryContainer can make debugging easier.
 
+**Runtime errors (Run mode-only notification)**
+
+  Runtime errors in app development are errors that occur during the execution of the app. Unlike the errors that we display while you build the app, runtime errors occur while the app is running.
+
+  For instance, if Firestore security rules aren't properly configured, the app might run into permission issues at runtime, leading to failures in data retrieval or display. This kind of error might not be evident during app building but becomes apparent only when the app interacts with the Firestore database during actual operation.
+
+  We display such errors as *Run mode-only notification* in a snack bar. Here's what it might look like:
+
+  ![Runtime errors](imgs/runtime-errors.avif)
+
 Take the steps below to fix this error:
   
   - **Review Firestore Rules**

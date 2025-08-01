@@ -42,6 +42,51 @@ Projects with many pages, assets, or custom code may take longer to compile. Fol
 - Limit the number of pages in a single testing session.
 :::
 
+## Open Debug Logs to Check for Errors
+
+    If none of the above steps resolve the issue, checking your browser’s debug console may reveal loading errors or script issues.
+
+    To open the debug logs, run your app in Run/Test mode and use the shortcut:
+
+    **For Google Chrome**
+
+        - **Windows**: `F12` or `Ctrl + Shift + J`  
+        - **Mac**: `F12` or `⌘ + Option + J`
+
+    **For Safari:**
+
+        1. Go to **Preferences** > **Advanced**
+        2. Enable **Show Develop menu**
+        3. Use `⌘ + Option + C` to open the console
+
+        Any loading or runtime errors will appear in red in the console.
+
+        <div style={{
+            position: 'relative',
+            paddingBottom: 'calc(56.67989417989418% + 41px)',
+            height: 0,
+            width: '100%'}}>
+            <iframe 
+                src="https://demo.arcade.software/c0I844oLVtAR0e7YSbhC?embed&show_copy_link=true"
+                title=""
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    colorScheme: 'light'
+                }}
+                frameborder="0"
+                loading="lazy"
+                webkitAllowFullScreen
+                mozAllowFullScreen
+                allowFullScreen
+                allow="clipboard-write">
+            </iframe>
+        </div>
+        <p></p>
+
 :::info[Additional Resources]
 If the issue persists after following the steps above, check the
 **[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article. 

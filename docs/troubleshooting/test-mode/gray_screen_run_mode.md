@@ -97,6 +97,48 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
 
     If the issue persists, download your FlutterFlow code and run the project locally to diagnose further.
 
+10. **Use Debug Info Panel in Test Mode**
+
+    If the issue is not visible in the console or config, the Debug Info panel can help you identify runtime logic or variable-related problems.
+
+    The Debug Info panel provides a real-time view of all the variables in your app along with their current values. It’s especially helpful to pinpoint unexpected values or missing data that might cause a blank or gray screen.
+
+    To use it:
+
+        1. Run your app in **Test mode**.
+        2. Open the **Debug Info** panel on the left.
+        3. Interact with your app and monitor the variables in real time.
+
+        ![null](imgs/null.png)
+
+        For instance, if a dropdown variable is unexpectedly `null`, the Debug Info panel can help you trace and correct it. Once fixed, re-test the app to confirm resolution.
+
+        <div style={{
+            position: 'relative',
+            paddingBottom: 'calc(50.67989417989418% + 41px)',
+            height: 0,
+            width: '100%'}}>
+            <iframe 
+                src="https://demo.arcade.software/TgIsoAjlnDiHaafypnpV?embed&show_copy_link=true"
+                title=""
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    colorScheme: 'light'
+                }}
+                frameborder="0"
+                loading="lazy"
+                webkitAllowFullScreen
+                mozAllowFullScreen
+                allowFullScreen
+                allow="clipboard-write">
+            </iframe>
+        </div>
+        <p></p>
+
 :::info[Additional Resources]
 - **[Run Flutter App Locally](/testing/local-run)**
 - **[FlutterFlow Firebase Integration Guide](/integrations/firebase/connect-to-firebase/#step-1-set-up-your-project)**
