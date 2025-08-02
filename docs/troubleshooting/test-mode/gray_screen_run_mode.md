@@ -109,7 +109,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
         2. Open the **Debug Info** panel on the left.
         3. Interact with your app and monitor the variables in real time.
 
-        ![null](imgs/null.png)
+        ![null](../assets/null.png)
 
         For instance, if a dropdown variable is unexpectedly `null`, the Debug Info panel can help you trace and correct it. Once fixed, re-test the app to confirm resolution.
 

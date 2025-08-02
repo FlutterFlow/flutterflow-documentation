@@ -58,7 +58,7 @@ This error is typically triggered when:
 
   We display such errors as *Run mode-only notification* in a snack bar. Here's what it might look like:
 
-  ![Runtime errors](imgs/runtime-errors.avif)
+  ![Runtime errors](../assets/runtime-errors.avif)
 
 Take the steps below to fix this error:
   

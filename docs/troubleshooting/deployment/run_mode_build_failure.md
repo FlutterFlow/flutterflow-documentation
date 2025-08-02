@@ -98,11 +98,11 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
         If you're using the FlutterFlow Desktop App and running the app with a local run, you can access detailed logs that may point directly to the problem. These logs are especially helpful for catching runtime issues that might not appear in the FlutterFlow UI.
 
         You can learn how to access these logs in this guide:  
-        [Access Device Logs in Local Run](../testing-deployment-publishing/running-your-app/local-run.md#access-device-logs-in-local-run)
+        [Access Device Logs in Local Run](../../testing-deployment-publishing/running-your-app/local-run.md#access-device-logs-in-local-run)
 
         For example, if a user enters a character instead of a numeric value for a quantity field, and that type mismatch causes an error, it will be captured in the logs — allowing you to identify and fix it quickly.
 
-        ![Desktop app's device logs](imgs/desktop-app-device-logs.avif)
+        ![Desktop app's device logs](../assets/desktop-app-device-logs.avif)
 
         :::tip
         Not sure what the error means? Just copy and paste the full error message into ChatGPT and ask for help understanding it.

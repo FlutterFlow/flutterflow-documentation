@@ -45,23 +45,23 @@ When you download your project from FlutterFlow and run it locally in your IDE, 
     
         Suppose you have a Text widget and added an action that is incomplete. When you try to download the project in such a situation, you might see the following:
     
-        ![Detecting issue -1](imgs/detecting-issue-1.avif)
+        ![Detecting issue -1](../assets/detecting-issue-1.avif)
     
         To track down the error-causing widget in the widget tree, start reading the widget list (from top to bottom in a popup) and locate the widget using its child number. For example, when a widget is displayed as *Child 1*, it will be the first child of its previous widget (see the widget in a popup). And when it is shown as *Child 2,3*, and so on, it will be the sibling widget of *Child 1*.
     
         If you have a practice of naming the widget, it will be straightforward to track it down (as we'll display the exact widget name). Here is how it looks:
     
-        ![Detecting issue -2](imgs/detecting-issue-2.avif)
+        ![Detecting issue -2](../assets/detecting-issue-2.avif)
     
         :::info
-        To find out what caused the widget to fail, you can check errors in the [project issues](../intro/ff-ui/toolbar.md#project-issues).
+        To find out what caused the widget to fail, you can check errors in the [project issues](../../intro/ff-ui/toolbar.md#project-issues).
         :::
     
         **Example 2**
     
         Let's say you have added a custom widget that works fine. But while modifying it, you made some typo in the code, and now it shows this:
         
-        ![Error while building the app](imgs/error-while-building-app.png)
+        ![Error while building the app](../assets/error-while-building-app.png)
         
         The second "**Error:"** line clearly mentions that there is some issue with a method name in a custom code.
 
