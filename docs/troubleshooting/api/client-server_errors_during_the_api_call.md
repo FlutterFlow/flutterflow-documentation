@@ -42,9 +42,30 @@ These errors are usually caused by incorrect requests from the client side.
 
     The 404 error indicates that the requested URL does not exist on the server. This could be due to a typo in the URL or changes in the API endpoints. Always verify the URL and check for any recent API updates.
 
-    :::tip
-    Always double-check your request URL before troubleshooting further.
-    :::
+    **Common Reasons for 404 Errors:**
+
+        1. **Incorrect Endpoint URL**  
+        Double-check that the base URL and endpoint path are spelled correctly and match what’s defined in the API documentation.
+
+        2. **Missing or Incorrect Parameters**  
+        Some APIs require specific query or path parameters. Ensure that all required parameters are included and correctly formatted.
+
+        3. **Trailing Slashes**  
+        Some endpoints treat URLs with trailing slashes (e.g., `/users/`) differently than without (e.g., `/users`). Try removing or adding the trailing slash to see if it resolves the issue.
+
+        4. **Authorization or Access Restrictions**  
+        If the endpoint exists but is protected, ensure that the correct headers (e.g., `Authorization`) are added to the request.
+
+        Example Error Message:
+
+            ![](../assets/20250430121358370953.png)
+
+            The error message typically includes the requested URL and response code, which can help narrow down the issue.
+
+        :::tip
+        - Always compare the URL structure in your FlutterFlow API call to the official documentation of the API provider. Use tools like **[Postman](https://www.postman.com/)** to test endpoints independently before implementing them in FlutterFlow.
+        - Always double-check your request URL before troubleshooting further.
+        :::
 
     ![404 Example](../assets/20250430121350517804.png)
 

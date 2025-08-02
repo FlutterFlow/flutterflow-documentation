@@ -73,6 +73,26 @@ For the **iOS** platform, it uses the [**KeyChain**](https://developer.apple.com
 In the case of the **Web**, it uses the [**Web Cryptography**](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) (Web Crypto) API.
 :::
 
+## Example: Check Onboarding Completion Using App State
+
+Use a persisted app state variable to ensure users complete onboarding before accessing certain parts of your app (e.g., home screen, checkout).
+
+Follow the steps below:
+
+    1. **Create a Boolean Variable**
+    - Go to **App Settings > State Management > Persisted Values**.
+    - Create a boolean variable like `hasCompletedOnboarding`, default: `false`.
+
+    2. **Update After Onboarding**
+    - On the final onboarding screen, add an **Update Persisted Value** action to set `hasCompletedOnboarding = true`.
+
+    3. **Add Conditional Navigation**
+    - On the target page’s **Page Load**, add a **Conditional Action**:
+        - If `hasCompletedOnboarding == false` → Navigate to the onboarding page.
+
+    :::tip
+    Use `Local State` for session-only checks; use `Persisted` for cross-session logic.
+    :::
 
 ## Global State
 
