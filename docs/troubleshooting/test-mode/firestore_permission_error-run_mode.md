@@ -25,9 +25,9 @@ This error is typically triggered when:
 
   Example:
 
-  - If Firestore rules are configured as:
+  - If Firestore rules are configured as:  
 
-    ```js
+  ```js
     rules_version = '2';
     service cloud.firestore {
       match /databases/{database}/documents {
@@ -37,28 +37,17 @@ This error is typically triggered when:
       }
     }
     ```
-
+    
     Any Firestore query will fail because no read or write access is allowed.
 
   - If rules allow only authenticated access:
 
-      ```js
+    ```js
       allow read, write: if request.auth != null;
-      ```
-
+    ```
     And a query is placed on a page before the user signs in (e.g., on the login screen), it will trigger this error.
 
     Descriptive widget names can help you quickly identify which query or widget is triggering the permission issue. In the example above, the error message references a widget named Container. Renaming it to something like UserQueryContainer can make debugging easier.
-
-**Runtime errors (Run mode-only notification)**
-
-  Runtime errors in app development are errors that occur during the execution of the app. Unlike the errors that we display while you build the app, runtime errors occur while the app is running.
-
-  For instance, if Firestore security rules aren't properly configured, the app might run into permission issues at runtime, leading to failures in data retrieval or display. This kind of error might not be evident during app building but becomes apparent only when the app interacts with the Firestore database during actual operation.
-
-  We display such errors as *Run mode-only notification* in a snack bar. Here's what it might look like:
-
-  ![Runtime errors](../assets/runtime-errors.avif)
 
 Take the steps below to fix this error:
   
