@@ -72,6 +72,4 @@ Check the browser console for CORS-related errors.
 
 ![](../assets/20250430121238656194.png)
 
-If CORS errors are present, refer to the [CORS Troubleshooting Guide](/deployment/cors-troubleshooting) to resolve the issue.
-
 

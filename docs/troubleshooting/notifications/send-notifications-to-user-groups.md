@@ -20,7 +20,7 @@ You can review the full working example in this **[sample FlutterFlow project](h
 **Configure the Project:**
 
 1. Ensure Firebase is set up correctly in your FlutterFlow project.  
-   → **See**: **[Firebase Integration Guide](/integrations/firebase/overview)**
+   → **See**: **[Firebase Integration Guide](/integrations/firebase/connect-to-firebase/)**
 
 2. Make sure push notifications are enabled and deployed from **Settings > Notifications**.
 

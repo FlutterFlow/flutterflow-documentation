@@ -52,7 +52,7 @@ Follow the steps below to enable the **Push Notifications** capability for your 
    - Rebuild and deploy your app using the updated provisioning profile.
 
 :::tip
-Need help setting up push notifications from scratch? See the **[Push Notifications Setup Guide](/notifications/push-notifications)** for a full walkthrough.
+Need help setting up push notifications from scratch? See the **[Push Notifications Setup Guide](/concepts/notifications/push-notifications/#push-notifications-setup)** for a full walkthrough.
 :::
 
 
