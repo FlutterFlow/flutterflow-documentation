@@ -35,7 +35,7 @@ Follow the steps below to resolve this error:
 4. If the issue persists:
    - Try incrementing both the **version number** (e.g., `1.0.2`) and **build number**, or just leave build number empty to auto-increment.
 
-   ![](../assets/20250430121110741307.png)
+   ![](../../assets/20250430121110741307.png)
 
 Follow the steps below to prevent future errors:
 

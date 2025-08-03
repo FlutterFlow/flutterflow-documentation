@@ -29,7 +29,7 @@ Follow these steps to enable clipboard access in Chrome:
     3. Set clipboard access to **Allow**.
     4. Refresh the page and try again.
 
-    ![](../imgs/20250430121511630414.png)
+    ![](imgs/20250430121511630414.png)
 
     :::tip
     If you're using Firefox, Safari, or Edge, check that browser’s permission settings to enable clipboard access.

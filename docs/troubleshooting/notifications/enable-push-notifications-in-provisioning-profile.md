@@ -28,7 +28,7 @@ Follow the steps below to enable the **Push Notifications** capability for your 
    - Go to the **[Apple Developer Portal](https://developer.apple.com/account)**.
    - Navigate to **Certificates, Identifiers & Profiles** > **Identifiers**.
 
-      ![](../../assets/20250430121236782215.png)
+      ![](../assets/20250430121236782215.png)
 
 2. **Select Your App Identifier**
 
@@ -40,7 +40,7 @@ Follow the steps below to enable the **Push Notifications** capability for your 
    - In the **Capabilities** section, check the box for **Push Notifications**.
    - There is no need to modify the primary App ID or generate a new key for first-time setup.
 
-      ![](../../assets/20250430121236976235.png)
+      ![](../assets/20250430121236976235.png)
 
 4. **Save Changes**
 

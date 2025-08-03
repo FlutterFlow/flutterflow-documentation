@@ -20,17 +20,17 @@ Follow the steps below to resolve the issue:
       - Review your FlutterFlow project for validation errors or configuration issues.
       - Fix any errors displayed in the UI.
 
-      ![](../imgs/20250430121526027709.png)
+      ![](../assets/20250430121526027709.png)
 
    2. **Save the Project**
       - Before exporting your build, press `Ctrl + S` or `Cmd + S` to ensure all changes are saved.
 
-      ![](../imgs/20250430121526232282.png)
+      ![](../assets/20250430121526232282.png)
 
    3. **Rebuild and Download the APK**
       - Once the project is saved and issues are resolved, trigger a rebuild and download the APK file.
 
-      ![](../imgs/20250430121526436202.png)
+      ![](../assets/20250430121526436202.png)
 
    4. **Run the APK Locally**
       - Run the exported APK locally using an emulator or a physical device to view any compiler errors.

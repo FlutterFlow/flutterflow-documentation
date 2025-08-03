@@ -142,7 +142,7 @@ When building responsive layouts, text may overflow its container if not properl
 6. **Optional: Handle Overflow Gracefully**  
    You can set the **Overflow** property to values like `ellipsis`, `clip`, or `fade` to determine how excess text is handled.
 
-    ![wrap-text-inside-containers](imgs/20250430121501151202.png)
+    ![wrap-text-inside-containers](../built-in-widgets/imgs/20250430121501151202.png)
 
     :::tip
     Wrapping long text in a `Row` requires the Text widget to be inside an `Expanded` or `Flexible` widget.

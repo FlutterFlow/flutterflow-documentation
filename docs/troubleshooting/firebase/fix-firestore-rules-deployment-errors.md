@@ -40,7 +40,9 @@ To verify or update permissions:
 - Confirm the required roles are assigned.
 
 ![](../assets/20250430121312626400.png)
+
 ![](../assets/20250430121312919242.png)
+
 ![](../assets/20250430121313117339.png)
 
 3. Select a GCP Location

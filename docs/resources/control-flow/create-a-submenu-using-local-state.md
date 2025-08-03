@@ -43,4 +43,4 @@ The `Stack` widget allows placing widgets on top of each other, which is essenti
 - [Run Mode Preview](https://app.flutterflow.io/run/LfzBGTaef8WldndHa2x4)
 :::
 
-![](imgs/20250430121319778896.gif)
+![](functions/img/20250430121319778896.gif)

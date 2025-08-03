@@ -32,7 +32,7 @@ Follow the steps below to enable push Notifications for iOS Devices:
         2. Navigate to **Certificates, Identifiers & Profiles > Keys**.
         3. If no push key is listed, create one.
 
-        ![](imgs/20250430121405271522.png)
+        ![](../assets/20250430121405271522.png)
 
         :::tip
         Make sure to download the `.p8` file and note your **Key ID** and **Team ID** after generating the key.
@@ -44,7 +44,7 @@ Follow the steps below to enable push Notifications for iOS Devices:
     3. Scroll to the **iOS app configuration** section.
     4. If no APNs key is listed, upload the `.p8` file you downloaded earlier.
 
-    ![](imgs/20250430121405587477.png)
+    ![](../assets/20250430121405587477.png)
 
     :::tip
     This step connects your Firebase backend to Apple’s notification system.
@@ -57,7 +57,7 @@ Follow the steps below to enable push Notifications for iOS Devices:
     3. Select your app’s identifier.
     4. Enable the **Push Notifications** capability.
 
-    ![](imgs/20250430121405921022.png)
+    ![](../assets/20250430121405921022.png)
 
     If this step is skipped, push notifications will not be delivered to iOS devices after deployment.
 

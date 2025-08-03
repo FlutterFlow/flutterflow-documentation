@@ -18,7 +18,7 @@ Explore a live example in this **[FlutterFlow sample project](https://app.flutte
       2. Select your project.
       3. Search for and enable the **Geocoding API**.
 
-         ![](../assets/20250430121231440026.gif)
+         ![](imgs/20250430121231440026.gif) 
 
    2. **Add API Key to App State**
 
@@ -27,7 +27,7 @@ Explore a live example in this **[FlutterFlow sample project](https://app.flutte
          - `apiKey` → Type: `String`
       3. Paste your Geocoding API key as the default value.
 
-         ![](../assets/20250430121231812590.png)
+         ![](imgs/20250430121231812590.png)
 
    3. **Create the API Call**
 
@@ -44,7 +44,7 @@ Explore a live example in this **[FlutterFlow sample project](https://app.flutte
          - `latlng` → Type: `String`
          - `apiKey` → Type: `String`
 
-         ![](../assets/20250430121232082585.png)
+         ![](imgs/20250430121232082585.png)
 
    4. Create a Custom Function (LatLng → String)
 
@@ -52,7 +52,7 @@ Explore a live example in this **[FlutterFlow sample project](https://app.flutte
 
       This will be used to populate the `latlng` variable in your API call.
 
-         ![](../assets/20250430121232452872.png)
+         ![](imgs/20250430121232452872.png)
 
    5. **Run the API and Display the Result**
 
