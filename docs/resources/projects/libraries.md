@@ -295,9 +295,20 @@ When users import or update the library, they can override the default route nam
 
 Library pages can also be used in the NavBar, allowing users to add reusable flows into the app’s primary navigation structure. For example, in a Super App, you can import ride booking, food delivery, or payment pages from separate libraries and add them directly to the bottom navigation, giving users quick access to each module.
 
-To display a library page on the NavBar, navigate to **Project Dependencies > FlutterFlow Libraries**, then click on **Pages** for the relevant library to open its resources. In the list of pages, locate the desired page and click **Nav Bar Settings**, then enable **Show on NavBar**. You can also customize additional settings, such as label and icon, as needed.
+:::tip
+Want to learn more about building modular Super Apps using libraries? Check out our [**blog post**](https://blog.flutterflow.io/scaling-super-apps-modular-architecture-with-flutterflow-libraries/).
+:::
+
+To display a library page on the NavBar, navigate to **Project Dependencies > FlutterFlow Libraries**, then click on **Pages** for the relevant library to open its details. In the list of pages, locate the desired page and click **Nav Bar Settings**, then enable **Show on NavBar**. You can also customize additional settings, such as label and icon, as needed.
 
 To confirm, go to the **Nav Bar & App Bar** section, where you’ll see the library page listed as part of the NavBar items.
+
+:::info
+NavBar settings for regular pages are available directly within the Page Settings panel in the builder. However, for library pages, these settings are managed through the Library Details dialog.
+
+![NavBar-settings-for-regular-and-library-page](imgs/NavBar-settings-for-regular-and-library-page.avif)
+:::
+
 
 <div style={{
     position: 'relative',
