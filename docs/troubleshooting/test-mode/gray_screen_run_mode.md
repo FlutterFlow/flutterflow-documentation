@@ -15,7 +15,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
 
 1. **Check Firebase Permissions**
 
-    Ensure that `firebase@flutterflow.io` has the following roles:
+    Ensure that firebase@flutterflow.io has the following roles:
 
     - **Editor**
     - **Cloud Functions Admin**
@@ -26,7 +26,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
         1. Go to the **Firebase Console**.
         2. Select your project → **Project Overview**.
         3. Navigate to **Users and permissions** → **Advanced permissions**.
-        4. Locate `firebase@flutterflow.io` and ensure it has the roles listed above.
+        4. Locate firebase@flutterflow.io and ensure it has the roles listed above.
 
             ![](../assets/20250430121529462395.png)
 
@@ -81,7 +81,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
 
 7. **Refresh FlutterFlow Environment**
 
-    - Press `Ctrl + R` (Windows) or `Cmd + R` (Mac) to refresh FlutterFlow.
+    - Press Ctrl + R (Windows) or Cmd + R (Mac) to refresh FlutterFlow.
     - Clear your browser cache.
     - Log out and back in.
 
