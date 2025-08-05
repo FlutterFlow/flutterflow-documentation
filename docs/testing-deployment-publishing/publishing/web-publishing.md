@@ -143,7 +143,7 @@ When you are ready to deploy, click **Publish.** This will take approximately 2-
 
 By default, you will publish to a subdomain based on your project id. These default subdomain addresses do not count toward the subdomain quota, and you can deploy as many projects as you'd like. The URL would look like this: `your-project-id-1234.flutterflow.app`
 
-You can also modify the address by specifying a custom subdomain address, in the **Settings > Web Publishing** tab's **Site URL** field, as long as it's available. You can have up to **2** custom subdomain URLs on the Free plan, and up to **20** custom subdomain URLs on any of our Paid plans.
+You can also modify the address by specifying a custom subdomain address, in the **Settings > Web Publishing** tab's **Site URL** field, as long as it's available. You can have up to **2** custom subdomain URLs on the Free plan, up to **20** on any of our Paid plans, and **unlimited** custom subdomain URLs on the Enterprise plan.
 
 :::info
 
