@@ -205,7 +205,7 @@ Here’s how you do it:
 
 :::warning
 
-- This feature is only included in our *Standard* and *Pro* plans.
+- Project code download is available only on paid plans.
 - Make sure to address any project issues before downloading the code.
 
 :::

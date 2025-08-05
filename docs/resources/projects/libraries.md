@@ -87,7 +87,7 @@ To publish a project as a library, it must meet the following requirements:
 - **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
 - **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
 - **Main Branch Only**: You can only publish from the main branch.
-- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a Library.
+- [**Paid Plan**](https://www.flutterflow.io/pricing): A Paid Plan is required to publish a project as a Library.
 - **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
 :::
 
@@ -146,7 +146,6 @@ To import a library project into another FlutterFlow project, you must go **Sett
 - You can import publicly accessible libraries by specifying the project ID in the text field when adding a library dependency.
 - By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
 - You can also import the `current` version of the library to use the latest state of the library on the main branch - however, this is not recommended.
-- You must have a paid plan to import a library.
 - When importing a library into a project or another library, the library’s version must not be set to 'current' and should be less than or equal to the FlutterFlow version of the project or library it’s being imported into. Learn more about [**managing Library’s FlutterFlow version**](../projects/settings/version-management.md#version-management-with-libraries).
 :::
 

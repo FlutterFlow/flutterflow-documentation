@@ -1048,7 +1048,7 @@ final context = appNavigatorKey.currentContext!;
 This ensures that the navigation logic uses the global navigator context, which is essential if your app structure removes the home page early in the lifecycle. In such cases, relying on a local context may cause deep linking to fail—using a global context guarantees that navigation still works reliably.
 
 :::warning[Paid Plans]
-Note: The **Execute Custom Code** Action is available only on paid plans.
+Note: The **Execute Custom Code** Action is available only on [**paid plans**](https://www.flutterflow.io/pricing).
 :::
 
 <div style={{

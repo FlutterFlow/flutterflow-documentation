@@ -6,7 +6,7 @@ Everyone with a FlutterFlow account has a personal referral code to share with f
 In order to receive this reward, the person you referred will need to:
 
 1. Click your referral link and create a FlutterFlow account.
-2. Complete purchase of a FlutterFlow Standard or Pro Plan (after their trial period ends).
+2. Complete purchase of a FlutterFlow Paid Plan (after their trial period ends).
 
 You are only eligible for one referral reward per individual. If your referral has already signed up for FlutterFlow, this will not be eligible for a reward.
 
@@ -28,7 +28,7 @@ Your personal referral code is listed on your [My Account Page](https://app.flut
 You can track your referrals in the **Referrals** section on the [My Account Page](https://app.flutterflow.io/account). Here you will see:
 
 * **Signed Up:** How many people have signed up for FluterFlow using your referral link.
-* **Subscribed:** How many people have subscribed to FlutterFlow Pro or Standard using your referral link.
+* **Subscribed:** How many people have subscribed to FlutterFlow Paid Plan using your referral link.
 
 ![track-referrals.png](imgs/track-referral.avif)
 

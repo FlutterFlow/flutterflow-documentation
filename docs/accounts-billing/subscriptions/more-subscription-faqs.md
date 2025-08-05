@@ -29,11 +29,11 @@ We are unable to transfer a paid FlutterFlow subscription to another FlutterFlow
 
 FlutterFlow subscriptions are seat based. A user added to your project will only have access to the features of their account plan. In order to access paid features, each individual user will need to have a paid plan.
 
-### If I upgrade from Standard Plan to Pro Plan in the middle of my billing cycle, will I be charged for both plans?
+### If I upgrade from Basic to Growth Plan in the middle of my billing cycle, will I be charged for both plans?
 
-Upgrades are automatic, so the system will count the remaining days from the Standard, and reduce it from the Pro Plan price.
+No, you won’t be charged for both plans. FlutterFlow applies a prorated credit for the unused portion of your current plan and deducts it from the cost of the new plan.
 
-For example, if you have paid $42 for Standard and you have 15 days remaining in the billing cycle, then on upgrading to Pro(let's say priced at $70) you will eventually pay $(70-21) = $49.
+For example, if you're on the Basic plan ($39/month) and decide to upgrade to the Growth plan (1st seat: $80/month) halfway through your billing cycle, you’ll receive a credit of about $19.50 for the unused Basic days. This credit will be applied to the new plan, so you’ll only be charged $60.50 for the Growth plan for the rest of the current cycle. On your next billing cycle, you'll be charged the full Growth plan price.
 
 :::info
 FlutterFlow provides different pricing options depending on your region. To see the exact prices for your area, visit the [**Plans & Pricing**](../plan-pricing.md) page in our documentation.

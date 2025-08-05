@@ -20,7 +20,7 @@ While you can edit custom code inside FlutterFlow's in-app code editor, editing 
 4. **Leverage the AI Ecosystem**: Additionally, you can easily utilize AI tools available in the Visual Studio ecosystem, such as Copilot.
 
 :::info
-The VS Code extension requires downloading code, for which you must be on the [**paid plan**](https://www.flutterflow.io/pricing).
+The VS Code extension is only available on the Growth, Business, and Enterprise plans. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
 :::
 
 ## Installation

@@ -98,10 +98,10 @@ To remove a user from the teams, click on the **red cancel button** and select *
 
 ---
 
-## FAQs
+<!-- ## FAQs
 
 #### Can I reduce my Teams plan to one seat?
 
-No, you can't. The minimum requirement is two seats, which includes one for the owner's pro plan + an additional team seat.
+No, you can't. The minimum requirement is two seats, which includes one for the owner's pro plan + an additional team seat. -->
 
 

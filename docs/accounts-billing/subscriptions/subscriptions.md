@@ -49,7 +49,7 @@ For information on the Teams plan, please use [**this link**](flutterflow-for-te
 
 ## Downgrade Plan
 ### How to downgrade?
-If you wish to downgrade from Pro to Standard or from Teams to Pro or Standard, you should cancel your existing plan and then sign up for the new one after it expires.
+To downgrade, you should cancel your existing plan and then sign up for the new one after it expires.
 
 ### What happens when I downgrade to the free plan? Will my apps be deleted?
 You will still be able to access the apps you created and make changes inside FlutterFlow.
