@@ -304,7 +304,7 @@ To display a library page on the NavBar, navigate to **Project Dependencies > Fl
 To confirm, go to the **Nav Bar & App Bar** section, where you’ll see the library page listed as part of the NavBar items.
 
 :::info
-NavBar settings for regular pages are available directly within the Page Settings panel in the builder. However, for library pages, these settings are managed through the Library Details dialog.
+NavBar settings for regular pages are available directly within the Page Settings panel in the builder. However, for Library pages, these settings are managed through the Library Details dialog.
 
 ![NavBar-settings-for-regular-and-library-page](imgs/NavBar-settings-for-regular-and-library-page.avif)
 :::
