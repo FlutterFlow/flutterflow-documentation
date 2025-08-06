@@ -306,7 +306,7 @@ Webhooks are **only available** to users on the **Enterprise** plan.
 
 :::
 
-:::tip [Possible Use Cases]
+:::tip Possible Use Cases
 
 - **CI/CD Integration:** Automatically trigger build or deployment pipelines whenever a new commit is made to a branch.
 - **Audit Logging:** Log events to an internal system for compliance and audit tracking.
@@ -320,19 +320,39 @@ Webhooks are **only available** to users on the **Enterprise** plan.
 
 FlutterFlow supports webhook notifications for the following events:
 
-- **Branch Created**: Triggered whenever a new branch is created within the project.
-- **Commit Created**: Triggered when a commit is created on any branch.
-- **User Info:**
+- **Branch Created**: Triggered whenever a new branch is created within the project. The following is an example of the webhook payload sent when this event occurs:
+    ```jsx
+    {
+    "branch_id": "mmtQj1gtGuxohyNsAUSs",
+    "branch_name": "Hello World",
+    "created_by": {
+        "user_id": "TeneO93LdQfQQdN4RDfSB0eIXPu2"
+    },
+    "eventType": "branch.created",
+    "project_id": "test-delete-me-wvv2hr"
+    }
+    ```
+- **Commit Created**: Triggered when a commit is created on any branch. Below is an example of the webhook payload sent for this event:
+    ```jsx
+    {
+    "commit_id": "a1b2c3d4e5",
+    "commit_message": "Initial commit for login feature",
+    "branch_id": "mmtQj1gtGuxohyNsAUSs",
+    "branch_name": "feature/login",
+    "created_by": {
+        "user_id": "TeneO93LdQfQQdN4RDfSB0eIXPu2"
+    },
+    "eventType": "commit.created",
+    "project_id": "test-delete-me-wvv2hr"
+    }
+    ```
 
-[docusourous]
 
 ### Set Up Webhook
 
 To start receiving webhook events, go to your **FlutterFlow Dashboard**, then navigate to **My Teams > Webhook URLs**. Click **+ Add URL**, enter your webhook endpoint, and click **Save**.
 
 Once saved, FlutterFlow will automatically send POST requests to the provided URL whenever supported events occur.
-
-[image]
 
 :::tip[Allowlist IP Addresses]
 
