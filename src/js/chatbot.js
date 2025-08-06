@@ -3,7 +3,7 @@
   if (typeof window === 'undefined') return;
 
   // TEMPORARY DISABLE FLAG - Set to false to disable chatbot
-  const CHATBOT_ENABLED = false;
+  const CHATBOT_ENABLED = true;
   
   if (!CHATBOT_ENABLED) {
     console.log('Chatbot is temporarily disabled');
