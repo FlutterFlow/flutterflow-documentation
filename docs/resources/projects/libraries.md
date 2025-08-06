@@ -253,9 +253,9 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Pages
 
-You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
+When you publish a library, all the pages included in the library become available for use in the consumer project. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
 
-Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
+Library Pages offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
 
 :::tip[Possible Use Cases]
 - **Super Apps** like Gojek and Uber with distinct modules such as ride booking, shopping, and payments. Each module can be developed as a separate library and imported into a single main project.
@@ -263,7 +263,7 @@ Including pages with libraries offers a modular approach to development, making 
 - **White-labeled Apps** that share common onboarding flows can benefit from libraries. The onboarding process can be built once as a library and reused across all branded versions of the app.
 :::
 
-The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
+When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
 
 <div style={{
     position: 'relative',
@@ -291,7 +291,50 @@ The library author selects which pages to include and publishes the library. Whe
 </div>
 <p></p>
 
+### Library Pages in NavBar
 
+Library pages can also be used in the NavBar, allowing users to add reusable flows into the app’s primary navigation structure. For example, in a Super App, you can import ride booking, food delivery, or payment pages from separate libraries and add them directly to the bottom navigation, giving users quick access to each module.
+
+:::tip
+Want to learn more about building modular Super Apps using libraries? Check out our [**blog post**](https://blog.flutterflow.io/scaling-super-apps-modular-architecture-with-flutterflow-libraries/).
+:::
+
+To display a library page on the NavBar, navigate to **Project Dependencies > FlutterFlow Libraries**, then click on **Pages** for the relevant library to open its details. In the list of pages, locate the desired page and click **Nav Bar Settings**, then enable **Show on NavBar**. You can also customize additional settings, such as label and icon, as needed.
+
+To confirm, go to the **Nav Bar & App Bar** section, where you’ll see the library page listed as part of the NavBar items.
+
+:::info
+NavBar settings for regular pages are available directly within the Page Settings panel in the builder. However, for Library pages, these settings are managed through the Library Details dialog.
+
+![NavBar-settings-for-regular-and-library-page](imgs/NavBar-settings-for-regular-and-library-page.avif)
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/BDac382RQTHTKFhtZcsc?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Library Values
 

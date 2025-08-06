@@ -2,6 +2,14 @@
 (function() {
   if (typeof window === 'undefined') return;
 
+  // TEMPORARY DISABLE FLAG - Set to false to disable chatbot
+  const CHATBOT_ENABLED = false;
+  
+  if (!CHATBOT_ENABLED) {
+    console.log('Chatbot is temporarily disabled');
+    return;
+  }
+
   // Set configuration
   window.difyChatbotConfig = {
     token: 'bYIppJMzMieMPDHm'
@@ -64,12 +72,13 @@
 
   // Function to force positioning
   function forceChatbotPosition() {
-    // Handle all possible widget states
-    const allWidgets = document.querySelectorAll('.dify-chatbot-widget, [class*="dify"], [id*="dify"]');
-    const allWindows = document.querySelectorAll('#dify-chatbot-bubble-window, [class*="chat"], [class*="window"]');
+    // Only target specific chatbot elements with very specific selectors
+    const chatbotWidgets = document.querySelectorAll('.dify-chatbot-widget, #dify-chatbot-widget');
+    const chatbotWindows = document.querySelectorAll('#dify-chatbot-bubble-window, .dify-chatbot-bubble-window');
+    const chatbotButtons = document.querySelectorAll('#dify-chatbot-bubble-button, .dify-chatbot-bubble-button');
     
-    // Position all widget containers
-    allWidgets.forEach(widget => {
+    // Position chatbot widget containers only
+    chatbotWidgets.forEach(widget => {
       widget.style.position = 'fixed';
       widget.style.bottom = '0';
       widget.style.right = '0';
@@ -80,8 +89,8 @@
       widget.style.transform = 'none';
     });
     
-    // Position all window elements
-    allWindows.forEach(window => {
+    // Position chatbot window elements only
+    chatbotWindows.forEach(window => {
       window.style.position = 'fixed';
       window.style.bottom = '0';
       window.style.right = '0';
@@ -91,9 +100,9 @@
       window.style.transform = 'none';
     });
     
-    // Also handle any iframe that might be created
-    const iframes = document.querySelectorAll('iframe[src*="dify"], iframe[src*="udify"]');
-    iframes.forEach(iframe => {
+    // Handle chatbot iframes specifically
+    const chatbotIframes = document.querySelectorAll('iframe[src*="dify"], iframe[src*="udify"]');
+    chatbotIframes.forEach(iframe => {
       iframe.style.position = 'fixed';
       iframe.style.bottom = '0';
       iframe.style.right = '0';
@@ -103,9 +112,9 @@
       iframe.style.transform = 'none';
     });
     
-    // Special handling for expanded state - target any element that might be the expanded window
-    const expandedElements = document.querySelectorAll('[data-state="expanded"], [class*="expanded"], [style*="position: fixed"]');
-    expandedElements.forEach(element => {
+    // Only target expanded chatbot elements
+    const expandedChatbotElements = document.querySelectorAll('.dify-chatbot-widget[data-state="expanded"], .dify-chatbot-widget .expanded');
+    expandedChatbotElements.forEach(element => {
       element.style.position = 'fixed';
       element.style.bottom = '0';
       element.style.right = '0';
@@ -116,9 +125,9 @@
       element.style.zIndex = '1000';
     });
     
-    // Also force any element with a high z-index to stay at bottom
-    const highZIndexElements = document.querySelectorAll('[style*="z-index: 999"], [style*="z-index: 1000"], [style*="z-index: 1001"]');
-    highZIndexElements.forEach(element => {
+    // Only force positioning on chatbot elements with high z-index
+    const highZIndexChatbotElements = document.querySelectorAll('.dify-chatbot-widget[style*="z-index: 999"], .dify-chatbot-widget[style*="z-index: 1000"], .dify-chatbot-widget[style*="z-index: 1001"]');
+    highZIndexChatbotElements.forEach(element => {
       if (element.style.position === 'fixed') {
         element.style.bottom = '0';
         element.style.right = '0';
@@ -127,9 +136,9 @@
       }
     });
     
-    // Make background elements more translucent to show rounded corners
-    const allElements = document.querySelectorAll('.dify-chatbot-widget *');
-    allElements.forEach(element => {
+    // Make chatbot background elements more translucent to show rounded corners
+    const chatbotElements = document.querySelectorAll('.dify-chatbot-widget *');
+    chatbotElements.forEach(element => {
       const computedStyle = window.getComputedStyle(element);
       // Look for dark backgrounds that are likely the main content area
       if (computedStyle.backgroundColor && 
@@ -147,8 +156,7 @@
     });
     
     // Ensure chat button is circular
-    const chatButtons = document.querySelectorAll('[id*="bubble-button"], [class*="bubble-button"]');
-    chatButtons.forEach(button => {
+    chatbotButtons.forEach(button => {
       button.style.borderRadius = '50%';
       button.style.width = '60px';
       button.style.height = '60px';
