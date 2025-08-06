@@ -31,7 +31,7 @@ To create an AI agent, select the **Agents** tab from the left-side navigation m
 
 :::info
 
-You can create one AI Agent on the Standard plan and unlimited AI Agents on the Pro & Teams plans.
+You can create one AI Agent on the Basic plan and unlimited AI Agents on the Growth plan and higher.
 
 :::
 
