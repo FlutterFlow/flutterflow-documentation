@@ -23,6 +23,8 @@ To use the output from a custom widget elsewhere in your project, you can store 
 2. **Update the App State Variable from the Custom Widget**  
    In your custom widget code, use `FFAppState()` to set the value of the app state variable.
 
+   ![](../assets/20250430121221066642.png)
+   
    ```js
    FFAppState().update(() {
      FFAppState().localvalue = 'setvalue';
