@@ -55,30 +55,31 @@ The instructions to query a Supabase table are almost the same, except that for 
 :::
 
 <div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
+  position: 'relative',
+  paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+  height: 0,
+  width: '100%',
 }}>
-    <iframe 
-        src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
+  <iframe
+    src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
+    title=""
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      colorScheme: 'light',
+    }}
+    frameBorder="0"
+    loading="lazy"
+    allow="clipboard-write"
+    allowFullScreen
+    webkitAllowFullScreen
+    mozAllowFullScreen
+  />
 </div>
+
 
 :::warning[Limitations of Supabase Streaming with Filters]
 When using Supabase query with real-time updates enabled, you have the following limitations:
@@ -108,61 +109,63 @@ present inside. Follow the steps below to use the document record data:
 You can follow similar steps for using the record data on the other widgets as well.
 
 <Tabs>
-<TabItem value="1" label="Display Data from Firestore Collection" default>
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
+  <TabItem value="1" label="Display Data from Firestore Collection" default>
+    <div style={{
+      position: 'relative',
+      paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+      height: 0,
+      width: '100%',
+    }}>
+      <iframe
         src="https://demo.arcade.software/lduCQak3hFCUC1xNVP1c?embed&show_copy_link=true"
-        title=""
+        title="Display Data from Firestore Collection"
         style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          colorScheme: 'light',
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
+        allow="clipboard-write"
+        allowFullScreen
         webkitAllowFullScreen
         mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-</TabItem>
-<TabItem value="2" label="Display Data from Supabase Table">
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
+      />
+    </div>
+  </TabItem>
+
+  <TabItem value="2" label="Display Data from Supabase Table">
+    <div style={{
+      position: 'relative',
+      paddingBottom: 'calc(56.67989417989418% + 41px)',
+      height: 0,
+      width: '100%',
+    }}>
+      <iframe
         src="https://demo.arcade.software/utIKpcL7km05zSnZvLaz?embed&show_copy_link=true"
-        title=""
+        title="Display Data from Supabase Table"
         style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          colorScheme: 'light',
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
+        allow="clipboard-write"
+        allowFullScreen
         webkitAllowFullScreen
         mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-</TabItem>
+      />
+    </div>
+  </TabItem>
 </Tabs>
+
 
 ## FAQs
 <details>

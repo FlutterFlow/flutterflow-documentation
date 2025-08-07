@@ -8,7 +8,7 @@ title: Create a Custom Loading Animation Using a Bottom Sheet
 
 Use a custom `Bottom Sheet` to display a loading animation while performing long-running actions such as API calls, database writes, or chained workflows. This guide walks through how to build a non-blocking custom loading indicator.
 
-![](../assets/20250430121406506215.gif)
+![](animation_gifs/20250430121406506215.gif)
 
 :::info[Prerequisites]
 - A `Bottom Sheet` component with a loading animation (e.g., Lottie, GIF, or static image)
@@ -23,7 +23,7 @@ Use a custom `Bottom Sheet` to display a loading animation while performing long
       - Use a **Lottie** animation, **GIF**, or any custom UI for the loading indicator.
       - You can also include a `Text` widget to display a status message.
 
-      ![](../assets/20250430121406885071.png)
+      ![](animation_gifs/20250430121406885071.png)
 
    This component will serve as the visual loading indicator during your action chain.
 
@@ -35,9 +35,9 @@ Use a custom `Bottom Sheet` to display a loading animation while performing long
       2. Add a `Delay` action to simulate a task (optional).
       3. Add the `Open Bottom Sheet` action and configure it to be **non-blocking**.
 
-      ![](../assets/20250430121407233519.png)
+      ![](animation_gifs/20250430121407233519.png)
 
-      ![](../assets/20250430121407654843.png)
+      ![](animation_gifs/20250430121407654843.png)
 
       :::warning
       Enable the **Non Blocking** option in the `Open Bottom Sheet` action. This allows the workflow to continue running while the bottom sheet is visible.
@@ -55,7 +55,7 @@ Use a custom `Bottom Sheet` to display a loading animation while performing long
 
       1. Add a `Close Bottom Sheet` action to remove the loading indicator.
 
-      ![](../assets/20250430121407938780.png)
+      ![](animation_gifs/20250430121407938780.png)
 
 5. **Show a Confirmation Message**
 
@@ -63,7 +63,7 @@ Use a custom `Bottom Sheet` to display a loading animation while performing long
 
    This confirms that the actions are complete and the bottom sheet has been dismissed.
 
-   ![](../assets/20250430121408203472.gif)
+   ![](animation_gifs/20250430121408203472.gif)
 
 You can test this implementation in the public project:
    - Navigate to the **CustomLoading** page

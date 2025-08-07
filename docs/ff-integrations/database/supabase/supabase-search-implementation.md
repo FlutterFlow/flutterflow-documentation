@@ -21,8 +21,9 @@ Follow the steps below to implement Supabase Search:
       2. Select the relevant table.
       3. Enable **Realtime** updates from the table settings.
 
-      ![](../assets/20250430121159260138.png)
-      ![](../assets/20250430121159528641.png)
+      ![](imgs/20250430121159260138.png)
+
+      ![](imgs/20250430121159528641.png)
 
    - **Filter Query Data Using an Input Field**
 
@@ -30,7 +31,7 @@ Follow the steps below to implement Supabase Search:
       5. Configure your **Query Collection** to apply a filter using the input value.
          - Set the filter condition to `is equal to`.
 
-         ![](../assets/20250430121159842724.png)
+         ![](imgs/20250430121159842724.png)
 
    - **Choose a Trigger Method for Search**
 
@@ -39,13 +40,13 @@ Follow the steps below to implement Supabase Search:
       6. Enable **Update Page on Change**.
       7. Set the update frequency to your desired interval.
 
-      ![](../assets/20250430121200086333.png)
+      ![](imgs/20250430121200086333.png)
 
    - **Manual Search on Submit**
 
       8. Refresh the query manually when the input text is submitted.
 
-      ![](../assets/20250430121200394549.png)
+      ![](imgs/20250430121200394549.png)
 
 :::warning
 Using real-time updates for live search may incur higher costs compared to performing a search on submission.

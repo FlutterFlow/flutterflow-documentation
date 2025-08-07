@@ -8,7 +8,7 @@ title: Custom Navigation Bars
 
 Build a custom `Navigation Bar` (NavBar) to support dynamic views, role-based access, or complex widget layouts such as embedded cart counters or animated icons. Unlike the default NavBar widget, this approach gives full control over design and visibility.
 
-![](../assets/20250430121449657102.png)
+![](imgs/20250430121449657102.png)
 
 :::info[Prerequisites]
 - A component to be used as the custom NavBar.
@@ -43,7 +43,7 @@ Follow the steps below:
 
    1. Add `Bottom Padding` to your main page content equal to the NavBar’s height. This prevents the NavBar from overlapping other widgets.
 
-   ![](../assets/20250430121450015102.png)
+   ![](imgs/20250430121450015102.png)
 
    2. Use `Local State`, `App State`, or conditional logic from a database (e.g., `is_admin`) to control:
       - Which version of the NavBar appears.
@@ -75,8 +75,8 @@ Follow the steps below:
             - **Conditional NavBar** to explore role-based NavBar behavior.
             - Toggle the `is_admin` field to test both states.
 
-         ![](../assets/20250430121450326812.png)
+         ![](imgs/20250430121450326812.png)
 
-         ![](../assets/20250430121450591399.png)
+         ![](imgs/20250430121450591399.png)
          
-         ![](../assets/20250430121450801118.png)
+         ![](imgs/20250430121450801118.png)
