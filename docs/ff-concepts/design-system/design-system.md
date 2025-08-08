@@ -256,7 +256,7 @@ Here are all the properties you can customize:
         
     ![main-axis-margin](../imgs/main-axis-margin.avif)
 
-6. **Cross Axis Maring:** This refers to the space or gap along the cross direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the left and right spacing, and in a horizontally scrolling list, it refers to the top and bottom spacing.
+6. **Cross Axis Margin:** This refers to the space or gap along the cross direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the left and right spacing, and in a horizontally scrolling list, it refers to the top and bottom spacing.
 
     ![cross-axis-margin](../imgs/cross-axis-margin.avif)
 
