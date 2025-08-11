@@ -1,10 +1,10 @@
 .infoCard {
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-100);
   border-radius: 8px;
   padding: 24px;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  background: var(--ifm-background-color);
+  background: var(--custom-background-light);
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -40,6 +40,11 @@
     border-color: var(--ifm-color-primary);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   }
+}
+
+/* Dark mode background */
+[data-theme='dark'] .infoCard {
+  background: var(--custom-background-dark);
 }
 
 .infoCardIcon {

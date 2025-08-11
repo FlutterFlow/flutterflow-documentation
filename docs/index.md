@@ -4,7 +4,7 @@ custom_edit_url: null
 showLastUpdateTime: false
 hide_title: true
 slug: /
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 import InfoCard from '@site/src/components/InfoCard';
@@ -20,17 +20,21 @@ import BranchIcon from '@site/static/icons/branch_New.png';
 
 
 
-<FlutterFlowLogo></FlutterFlowLogo>
 
-# Visual Development Environment
-FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing quality or features. 
+# Getting started with FlutterFlow
+FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing on app quality or features. 
 
 <div class="video-container small"><iframe src="https://www.youtube.com/embed/gYOrgBrX4jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <InfoCards>
     <InfoCard title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
-    <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/>
-    <InfoCard   title="Start Building" description="Jump right into a quick start on how to build a simple app." pagePath="/quickstart"/>
+    <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/> 
+    
+
+</InfoCards>
+
+
+<InfoCards>
     <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
     <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
     <InfoCard title="Submit Bug Report" description="Encountered a bug in FlutterFlow? Help us improve by submitting a bug report." pagePath="/misc/submit-bug-report" />
