@@ -249,6 +249,10 @@ Type** property in your Action properties. Here's what it means:
 - **No Rebuild:** Choose this option when you need to update the state value without
   immediately reflecting the changes in the UI.
 
+:::tip
+If you want to rebuild a component without updating any state variables, use the [**Rebuild**](../../../ff-concepts/state-management/state-variables.md#rebuild-action) state action.
+:::
+
 :::warning[Expensive Rebuilds]
 Too many rebuilds can impact performance because rebuilding the widget tree
 frequently consumes resources and may lead to decreased responsiveness and
