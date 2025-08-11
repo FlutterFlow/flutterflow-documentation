@@ -235,3 +235,13 @@ code {
 .navbar-flutterflow-button:hover {
   background-color: #3B39EFFF; /* Slightly darker purple on hover */
 }
+
+.theme-doc-sidebar-container {
+  border-right: none !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}

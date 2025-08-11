@@ -42,3 +42,27 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
 ### FlutterFlow Tour
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+## Key Features
+
+<InfoCards>
+  <InfoCard 
+    icon="🚀" 
+    title="Build your first app" 
+    description="Learn how everything fits together and our top tips for creating stunning, powerful websites and apps." 
+    pagePath="/quickstart"
+    isLarge={true}
+  />
+  <InfoCard 
+    icon="🔧" 
+    title="Troubleshooting" 
+    description="Resolve login issues and other known FlutterFlow issues." 
+    pagePath="/troubleshooting"
+  />
+  <InfoCard 
+    icon="🔗" 
+    title="Integrations" 
+    description="Connect to tools like Github, Netlify, Figma, Supabase, Stripe, and more." 
+    pagePath="/ff-integrations"
+  />
+</InfoCards>

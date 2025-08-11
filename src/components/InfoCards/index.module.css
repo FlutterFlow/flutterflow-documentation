@@ -1,22 +1,23 @@
 
 .cardContainer {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to three columns */
-    grid-auto-rows: 1fr; /* Each row has equal height, adjusting to content */
-    gap: 20px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 
 /* Responsive adjustments */
-@media (max-width: 1024px) { /* For tablets and smaller desktops */
-    .cardContainer {
-      grid-template-columns: repeat(2, 1fr); /* Two columns */
-    }
+@media (max-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-@media (max-width: 768px) { /* For landscape phones and smaller tablets */
-.cardContainer {
-    grid-template-columns: 1fr; /* Single column for small devices */
 }
+
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
 }
