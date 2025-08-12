@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'clear', 'testing']
-slug: troubleshooting/test-mode/prepare-database-before-tests
+slug: /running-your-app/prepare-database-before-tests
 title: Prepare Database Before Running Tests
 ---
 

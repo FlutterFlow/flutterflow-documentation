@@ -1,6 +1,6 @@
 ---
 keywords: ['notification', 'firebase', 'ios', 'push']
-slug: /enable-ios-push-notifications-for-ios-devices
+slug: /troubleshooting/notifications//enable-ios-push-notifications-for-ios-devices
 title: Enable Push Notifications for iOS Devices
 ---
 

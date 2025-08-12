@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'firebase', 'unknown']
-slug: troubleshooting/backend/stripe-payment-error-cors-region-mismatch
+slug: /troubleshooting/firebase/stripe-payment-error-cors-region-mismatch
 title: Resolve Stripe Payment Error Caused by CORS Region Mismatch
 ---
 

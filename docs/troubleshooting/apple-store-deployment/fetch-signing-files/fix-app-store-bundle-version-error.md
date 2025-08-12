@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'deployment', 'previously']
-slug: troubleshooting/app-store-deployment/fix-app-store-bundle-version-error
+slug: /troubleshooting/app-store-deployment/fix-app-store-bundle-version-error
 title: Fix App Bundle Version Error on App Store
 ---
 

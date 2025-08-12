@@ -1,6 +1,6 @@
 ---
 keywords: ['device', 'svg', 'color']
-slug: troubleshooting/test-mode/fix-svg-color-not-showing-on-devices
+slug: /troubleshooting/test-mode/fix-svg-color-not-showing-on-devices
 title: Fix SVG Color Not Showing on Devices
 ---
 

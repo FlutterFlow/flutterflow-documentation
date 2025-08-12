@@ -1,6 +1,6 @@
 ---
 keywords: ['storage', 'upload', 'image']
-slug: troubleshooting/backend/fix-image-upload-failure-from-action
+slug: /troubleshooting/firebase/fix-image-upload-failure-from-action
 title: Fix Image Upload Failure from Action
 ---
 

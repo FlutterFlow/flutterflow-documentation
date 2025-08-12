@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'error', 'store']
-slug: troubleshooting/google-play-store-deployment/fix-keystore-read-error-on-google-play
+slug: /troubleshooting/google-play-store-deployment/fix-keystore-read-error-on-google-play
 title: Fix Keystore Read Error on Google Play
 ---
 

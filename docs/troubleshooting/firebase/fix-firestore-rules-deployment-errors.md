@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'firebase', 'permissions']
-slug: troubleshooting/firebase/fix-firestore-rules-deployment-errors
+slug: /troubleshooting/firebase/fix-firestore-rules-deployment-errors
 title: Fix Firestore Database Rules Deployment Errors
 ---
 

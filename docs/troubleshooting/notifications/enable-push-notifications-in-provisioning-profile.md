@@ -1,6 +1,6 @@
 ---
 keywords: ['push notifications', 'provisioning profile', 'apple developer']
-slug: troubleshooting/notifications/enable-push-notifications-in-provisioning-profile
+slug: /troubleshooting/notifications/enable-push-notifications-in-provisioning-profile
 title: Enable Push Notifications in Provisioning Profile
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'configuration', 'troubleshooting']
-slug: /resolve-firebase-sign-in-email-configuration
+slug: /troubleshooting/authentication/resolve-firebase-sign-in-email-configuration
 title: Enable Email Sign-In to Resolve Firebase Authentication Issues
 ---
 

@@ -6,6 +6,7 @@ tags: [Auth Actions, Authentication, Firebase]
 sidebar_position: 1
 keywords: [FlutterFlow, Auth Actions, Authentication, Firebase]
 ---
+
 # Common Auth Actions
 
 Here's a list of common authentication actions:
@@ -22,6 +23,12 @@ Follow the steps below to add this action:
 
 ![logout](../imgs/logout-action.png)
 
+## Login [Action]
+
+The Login action allows users to authenticate and gain access to your app. Login behavior can differ based on the provider you configure (e.g., email/password, Google, Apple, phone number). Each provider has its own setup, but they all share the same underlying action to sign in users.
+
+You typically add the login action to a button (e.g., "Login" or "Sign In") that collects user credentials via TextFields or third-party authentication triggers.
+
 ## Handling Invalid Login Credentials
 
 When a user enters incorrect login credentials, FlutterFlow automatically displays a `SnackBar` with an error message. This helps users understand why their login attempt failed without needing custom logic.
@@ -34,7 +41,7 @@ When the **Login Action** fails, a `SnackBar` is shown with the relevant error (
 There is no need to manually add alert dialogs for failed login attempts. FlutterFlow handles `SnackBar` display automatically when authentication fails.
 :::
 
-### Customize the SnackBar (Optional)
+**Customize the SnackBar (Optional)**
 
 1. Select the **Login Action** from your button or trigger.
 2. In the **Actions tab**, open the **Action Output** section.

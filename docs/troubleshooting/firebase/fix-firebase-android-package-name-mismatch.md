@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'android', 'error']
-slug: troubleshooting/firebase/fix-firebase-android-package-name-mismatch
+slug: /troubleshooting/firebase/fix-firebase-android-package-name-mismatch
 title: Fix Firebase Android Package Name Mismatch
 ---
 

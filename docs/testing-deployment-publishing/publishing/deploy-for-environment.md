@@ -1,5 +1,5 @@
 ---
-slug: /deployment/deploy-for-environments
+slug: /publishing/deploy-for-environments
 title: Deploy for Development Environments
 description: Learn how to deploy your apps for development environments.
 tags: [Apple App Store, Google Play Store, Deployment, Dev Environments]

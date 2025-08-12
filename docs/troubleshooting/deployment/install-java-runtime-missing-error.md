@@ -1,6 +1,6 @@
 ---
 keywords: ['java', 'runtime', 'error']
-slug: /install-java-runtime-missing-error
+slug: /troubleshooting/deployment/install-java-runtime-missing-error
 title: Install Java Runtime Missing Error
 ---
 

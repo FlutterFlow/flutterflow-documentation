@@ -62,12 +62,12 @@ These errors are usually caused by incorrect requests from the client side.
 
             The error message typically includes the requested URL and response code, which can help narrow down the issue.
 
-        :::tip
-        - Always compare the URL structure in your FlutterFlow API call to the official documentation of the API provider. Use tools like **[Postman](https://www.postman.com/)** to test endpoints independently before implementing them in FlutterFlow.
-        - Always double-check your request URL before troubleshooting further.
-        :::
+            :::tip
+            - Always compare the URL structure in your FlutterFlow API call to the official documentation of the API provider. Use tools like **[Postman](https://www.postman.com/)** to test endpoints independently before implementing them in FlutterFlow.
+            - Always double-check your request URL before troubleshooting further.
+            :::
 
-    ![404 Example](../assets/20250430121350517804.png)
+            ![404 Example](../assets/20250430121350517804.png)
 
 - **407 – Proxy Authentication Required**
 

@@ -1,6 +1,7 @@
 ---
 tags: [Base Elements]
 slug: /resources/ui/widgets/text
+title: Text
 ---
 
 # Text
@@ -153,7 +154,7 @@ When building responsive layouts, text may overflow its container if not properl
     :::
 
     :::info[Additional Resources]
-    - [Flutter TextOverflow Class](https://api.flutter.dev/flutter/widgets/TextOverflow-class.html)
+    - [Flutter Text Class](https://api.flutter.dev/flutter/widgets/Text-class.html)
     :::
 
 

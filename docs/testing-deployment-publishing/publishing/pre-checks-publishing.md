@@ -1,5 +1,5 @@
 ---
-slug: /deployment/pre-checks-before-publishing
+slug: /publishing/pre-checks-before-publishing
 title: Pre-checks Before Publishing
 description: Ensure your app is ready for launch with this detailed guide on essential pre-publishing checks.
 tags: [Pre-checks, Publishing, Deployment]

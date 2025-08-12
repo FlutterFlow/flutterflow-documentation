@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'error', 'value']
-slug: troubleshooting/deployment/invalid-pem-private-key-error
+slug: /troubleshooting/deployment/invalid-pem-private-key-error
 title: Invalid PEM Private Key Error
 ---
 

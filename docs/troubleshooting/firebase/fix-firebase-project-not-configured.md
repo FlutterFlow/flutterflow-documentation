@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'configuration', 'settings', 'cms', 'firestore']
-slug: troubleshooting/firebase/fix-firebase-project-not-configured
+slug: /troubleshooting/firebase/fix-firebase-project-not-configured
 title: Fix Firebase Project Not Configured Error
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['sign-in', 'apple', 'provisioning']
-slug: troubleshooting/apple-store-deployment/sign-in-with-apple-provisioning-error
+slug: /troubleshooting/apple-store-deployment/sign-in-with-apple-provisioning-error
 title: Sign in with Apple Provisioning Profile Error
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['content', 'upload', 'photo']
-slug: troubleshooting/backend/fix-photo-upload-to-content-manager
+slug: /troubleshooting/firebase/fix-photo-upload-to-content-manager
 title: Fix Photo Upload to Content Manager
 ---
 

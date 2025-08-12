@@ -1,6 +1,6 @@
 ---
 keywords: ['associated domains', 'provisioning profile', 'apple developer', 'deployment error']
-slug: troubleshooting/apple-store-deployment/provisioning-profile-error-associated-domains
+slug: /troubleshooting/apple-store-deployment/provisioning-profile-error-associated-domains
 title: Provisioning Profile Error Associated Domains
 ---
 

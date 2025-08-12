@@ -1,6 +1,6 @@
 ---
 keywords: ['upload', 'existing', 'file']
-slug: troubleshooting/google-play-store-deployment/upload-keystore-existing-google-play-flutterflow
+slug: /troubleshooting/google-play-store-deployment/upload-keystore-existing-google-play-flutterflow
 title: Upload an Existing Keystore File to FlutterFlow for a Google Play Project
 ---
 

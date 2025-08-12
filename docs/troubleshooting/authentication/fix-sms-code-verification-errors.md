@@ -1,6 +1,6 @@
 ---
 keywords: ['sms', 'verification', 'text field']
-slug: troubleshooting/deployment/fix-sms-code-verification-errors
+slug: /troubleshooting/authentication/fix-sms-code-verification-errors
 title: Fix SMS Code Verification Errors
 ---
 

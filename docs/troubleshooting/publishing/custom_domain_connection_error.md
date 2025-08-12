@@ -1,6 +1,6 @@
 ---
 keywords: ['custom domain', 'dns', 'connection error']
-slug: /fix-custom-domain-connection-error
+slug: /troubleshooting/publishing/fix-custom-domain-connection-error
 title: Fix Custom Domain Connection Error
 ---
 
@@ -18,7 +18,7 @@ This article outlines common causes and solutions for custom domain connection e
 
 If you see the error message below after clicking **Connect**, follow the steps in this article to resolve it.
 
-![](../../assets/20250430121243410633.png)
+![](../assets/20250430121243410633.png)
 
 ## Steps to Resolve Domain Connection Issues
 
@@ -31,7 +31,7 @@ If you see the error message below after clicking **Connect**, follow the steps 
     If your DNS provider requires a name for the record and none is shown in FlutterFlow, use `"@"`, which refers to the root domain (e.g., `example.com`).
     :::
 
-    ![](../../assets/20250430121243684493.png)
+    ![](../assets/20250430121243684493.png)
 
 2. **Check for Conflicting Records**
 
@@ -44,9 +44,9 @@ If you see the error message below after clicking **Connect**, follow the steps 
 
     Examples of correct configurations:
 
-    ![](../../assets/20250430121243982678.png)
+    ![](../assets/20250430121243982678.png)
 
-    ![](../../assets/20250430121244255037.png)
+    ![](../assets/20250430121244255037.png)
 
 3. **Allow Time for DNS Propagation**
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['menu', 'submenu', 'local state']
-slug: /create-a-submenu-using-local-state
+slug: /resources/create-a-submenu-using-local-state
 title: Create a Submenu Using Local State
 ---
 
@@ -43,4 +43,4 @@ The `Stack` widget allows placing widgets on top of each other, which is essenti
 - [Run Mode Preview](https://app.flutterflow.io/run/LfzBGTaef8WldndHa2x4)
 :::
 
-![](functions/img/20250430121319778896.gif)
+![](imgs/20250430121319778896.gif)

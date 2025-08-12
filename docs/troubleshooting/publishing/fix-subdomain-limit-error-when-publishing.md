@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'exceeded', 'subdomains']
-slug: troubleshooting/deployment/fix-subdomain-limit-error-when-publishing
+slug: /troubleshooting/deployment/fix-subdomain-limit-error-when-publishing
 title: Fix Subdomain Limit Error When Publishing
 ---
 

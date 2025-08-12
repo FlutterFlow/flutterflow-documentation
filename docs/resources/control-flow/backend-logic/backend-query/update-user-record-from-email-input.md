@@ -1,6 +1,6 @@
 ---
 keywords: ['email', 'input', 'update']
-slug: /update-user-record-from-email-input
+slug: /resources/backend-query/update-user-record-from-email-input
 title: Update a User Record Using Email Input
 ---
 

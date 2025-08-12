@@ -1,6 +1,6 @@
 ---
 keywords: ['release', 'build', 'deployment']
-slug: troubleshooting/apple-store-deployment/update-version-to-fix-pre-release-train-error
+slug: /troubleshooting/apple-store-deployment/update-version-to-fix-pre-release-train-error
 title: Update Version to Fix Pre-Release Train Error
 ---
 

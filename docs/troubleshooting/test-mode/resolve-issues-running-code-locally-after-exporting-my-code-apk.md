@@ -1,6 +1,6 @@
 ---
 keywords: ['build', 'locally', 'after']
-slug: /resolve-issues-running-code-locally-after-exporting-my-code-apk
+slug: /troubleshooting/test-mode/resolve-issues-running-code-locally-after-exporting-my-code-apk
 title: Resolve Issues Running Code Locally After Exporting Code or APK
 ---
 

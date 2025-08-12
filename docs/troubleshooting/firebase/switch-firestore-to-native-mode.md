@@ -1,6 +1,6 @@
 ---
 keywords: ['mode', 'firestore', 'datastore']
-slug: troubleshooting/firebase/switch-firestore-to-native-mode
+slug: /troubleshooting/firebase/switch-firestore-to-native-mode
 title: Switch Firestore to Native Mode
 ---
 

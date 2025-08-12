@@ -1,6 +1,6 @@
 ---
 keywords: ['permissions', 'download', 'code']
-slug: troubleshooting/deployment/fix-apk-code-download-permissions
+slug: /troubleshooting/deployment/fix-apk-code-download-permissions
 title: Fix Download Issues for APK or Code in FlutterFlow
 ---
 

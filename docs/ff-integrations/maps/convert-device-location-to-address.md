@@ -1,12 +1,18 @@
 ---
 keywords: ['device', 'address', 'current']
-slug: /convert-device-location-to-address
+slug: /integrations/maps/convert-device-location-to-address
 title: Convert Device Location to Address
 ---
 
 # Convert Device Location to Address in FlutterFlow
 
-This guide explains how to convert a user's device location (latitude and longitude) into a readable address (such as city or street name) in FlutterFlow. You can do this using either the **Google Maps Geocoding API** or the **`geocoding` Dart package** via a custom action.
+This guide is part of the **[Geocoding in FlutterFlow](/geocoding)** series.  
+It focuses on **reverse geocoding**—turning a device’s latitude and longitude into a readable address (such as city or street name).
+
+You can achieve this in FlutterFlow using either:
+
+- **The Google Maps Geocoding API** (via API Calls)
+- **The `geocoding` Dart package** (via a Custom Action)
 
 Explore a live example in this **[FlutterFlow sample project](https://app.flutterflow.io/project/geo-track-rvndye)**.
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'users', 'group']
-slug: troubleshooting/notifications/send-notifications-to-user-groups
+slug: /troubleshooting/notifications/send-notifications-to-user-groups
 title: Send Notifications to Specific User Groups
 ---
 

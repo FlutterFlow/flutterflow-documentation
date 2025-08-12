@@ -1,6 +1,6 @@
 ---
 keywords: ['application', 'device', 'real']
-Slug: /app-colors-wrong-on-real-device
+Slug: /troubleshooting/test-mode/app-colors-wrong-on-real-device
 Title: App Colors Display Incorrectly on Real Device
 ---
 

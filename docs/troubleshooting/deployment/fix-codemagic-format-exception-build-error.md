@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'build', 'format']
-slug: troubleshooting/deployment/fix-codemagic-format-exception-build-error
+slug: /troubleshooting/deployment/fix-codemagic-format-exception-build-error
 title: Fix Codemagic Format Exception Build Error
 ---
 

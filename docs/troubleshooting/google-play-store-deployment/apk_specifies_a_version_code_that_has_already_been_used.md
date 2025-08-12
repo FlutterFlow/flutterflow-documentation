@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'deployment', 'build']
-slug: /fix-version-code-conflict-apk-upload
+slug: /troubleshooting/google-play-store-deployment/fix-version-code-conflict-apk-upload
 title: Fix Version Code Conflict When Uploading APK to Google Play
 ---
 

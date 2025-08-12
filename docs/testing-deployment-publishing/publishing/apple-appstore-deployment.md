@@ -1,5 +1,5 @@
 ---
-slug: /deployment/apple-app-store-deployment
+slug: /publishing/apple-app-store-deployment
 title: Apple App Store Deployment
 description: Learn how to seamlessly deploy your apps to the Apple App Store using FlutterFlow.
 tags: [Apple App Store, Deployment, FlutterFlow, iOS]

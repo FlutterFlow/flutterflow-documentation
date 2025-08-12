@@ -1,6 +1,6 @@
 ---
 keywords: ['android', 'release', 'build']
-slug: troubleshooting/google-play-store-deployment/android-app-bundle-wrong-key-error
+slug: /troubleshooting/google-play-store-deployment/android-app-bundle-wrong-key-error
 title: App Bundle Signed with Wrong Key on Google Play
 ---
 

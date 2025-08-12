@@ -1,6 +1,6 @@
 ---
 keywords: ['error', 'build', 'failed']
-slug: /resolve-build-failed-error-run-test-mode
+slug: /troubleshooting/test-mode/resolve-build-failed-error-run-test-mode
 title: Resolve Build Failed Error for Test or Run Mode
 ---
 
@@ -39,14 +39,13 @@ If you're experiencing this issue, try the following steps:
    - Check all attached actions, visibility conditions, and variables.
    - Open each action or condition fully, even if no error is visibly flagged.
 
-   :::note[Example]
-   The visibility rule below does not appear to contain an error at first glance:
+   **Example**
+      The visibility rule below does not appear to contain an error at first glance:
 
-      ![](../assets/20250430121246143405.png)
+         ![](../assets/20250430121246143405.png)
 
-   However, once the condition is expanded, you can see that one of the values is unset and displayed in red:
+      However, once the condition is expanded, you can see that one of the values is unset and displayed in red:
 
-      ![](../assets/20250430121246510364.png)
+         ![](../assets/20250430121246510364.png)
 
-   This type of hidden issue can prevent your project from building.
-   :::
+         This type of hidden issue can prevent your project from building.

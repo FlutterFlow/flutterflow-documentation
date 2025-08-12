@@ -1,5 +1,5 @@
 ---
-slug: /testing/local-run
+slug: /running-your-app/local-run
 title: Local Run
 description: Local Run downloads the code locally and gives you the option to use Flutter's Hot Reload to see your changes instantly on a device.
 tags: [Local Run, Testing, Hot Reload]

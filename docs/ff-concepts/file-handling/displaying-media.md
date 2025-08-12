@@ -50,6 +50,8 @@ For more details on how assets are stored in your project, see the directory [**
 
 You can also access media files within your app that are stored temporarily in your application. For example, if you'd like to preview an image before sending it to cloud storage, you can do so by setting the source to **Widget State -> Uploaded Local File**.
 
+![dm-local-upload.avif](imgs/dm-local-upload.avif)
+
 :::info[Image Uploads via WebView May Fail on Real Devices]
 Image uploads inside a WebView may fail on physical devices even if they work in Run/Test mode. This happens because FlutterFlow doesn't auto-request Photo Library permissions at runtime.
 
@@ -60,8 +62,6 @@ To fix this:
 
 If permissions aren’t granted, the upload will silently fail. Users may have to manually allow access via their device’s app settings.
 :::
-
-![dm-local-upload.avif](imgs/dm-local-upload.avif)
 
 ## AudioPlayer
 

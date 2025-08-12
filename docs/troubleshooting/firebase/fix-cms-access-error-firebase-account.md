@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'error', 'content']
-slug: troubleshooting/firebase/fix-cms-access-error-firebase-account
+slug: /troubleshooting/firebase/fix-cms-access-error-firebase-account
 title: Fix CMS Access Error with firebase@flutterflow.io Account
 ---
 

@@ -1,6 +1,6 @@
 ---
 keywords: ['database', 'query', 'though']  
-slug: backend-query-not-returning-results-despite-existing-data  
+slug: /troubleshooting/backend/backend-query-not-returning-results-despite-existing-data  
 title: Backend Query Not Returning Results Despite Existing Data  
 ---
 

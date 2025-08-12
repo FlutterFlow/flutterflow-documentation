@@ -1,6 +1,6 @@
 ---
 keywords: ['android', 'release', 'error']
-slug: troubleshooting/google-play-store-deployment/play-store-ad-id-permission-error
+slug: /troubleshooting/google-play-store-deployment/play-store-ad-id-permission-error
 title: Play Store AD_ID Permission Error
 ---
 # Play Store AD_ID Permission Error

@@ -1,6 +1,6 @@
 ---
 keywords: ['app store', 'deploy', 'codemagic', '503 error', 'large assets']
-slug: /fix-app-store-deploy-button-not-working
+slug: /troubleshooting/app-store-deployment/fix-app-store-deploy-button-not-working
 title: Fix App Store Deploy Button Not Working
 ---
 

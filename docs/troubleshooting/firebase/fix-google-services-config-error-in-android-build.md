@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'error', 'failed']
-slug: /fix-google-services-config-error-in-android-build
+slug: /troubleshooting/firebase/fix-google-services-config-error-in-android-build
 title: Fix Google Services Config Error in Android Build
 ---
 

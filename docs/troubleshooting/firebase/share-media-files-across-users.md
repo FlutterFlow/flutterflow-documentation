@@ -1,6 +1,6 @@
 ---
 keywords: ['storage', 'users', 'upload']
-slug: troubleshooting/backend/share-media-files-across-users
+slug: /troubleshooting/firebase/share-media-files-across-users
 title: Share Media Files Across Users Using Firebase Storage
 ---
 

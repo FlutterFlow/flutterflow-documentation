@@ -1,6 +1,6 @@
 ---
 keywords: ['signing', 'ios', 'error']
-slug: /fix-ios-signing-error-for-imagenotification
+slug: /troubleshooting/app-store-deployment/fix-ios-signing-error-for-imagenotification
 title: Fix iOS Signing Error for ImageNotification
 ---
 

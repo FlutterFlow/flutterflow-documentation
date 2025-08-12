@@ -1,20 +1,14 @@
 ---
 keywords: ['error', 'verify']
-author: Unknown
-created_at: '1651736299'
-slug: /error-in-verify-sms
+slug: /troubleshooting/authentication/error-in-verify-sms
 title: Error in Verify SMS
-updated_at: '1651736360'
-url: None
 ---
 
 # Error in Verify SMS
 
-## What Does This Error Mean?
-
 This error occurs during the SMS authorization verification process in FlutterFlow, typically on the page where the user enters the confirmation code. A common error message is:
 
-> **SMS code field must be provided when verifying SMS code**
+**SMS code field must be provided when verifying SMS code**
 
 ## Common Cause
 
@@ -33,6 +27,3 @@ Follow these steps to fix the error:
    - If the widget name is incorrect or was duplicated from another page, rename it to the correct field name expected by the action.
    - Save your changes and retest the verification process.
 
-## Still Experiencing Issues?
-
-If the issue persists after renaming the widget, contact [FlutterFlow Support](mailto:support@flutterflow.io) or refer to your [Intercom support conversation](https://app.intercom.com/a/apps/w66h9try/inbox/inbox/unassigned/conversations/796) for further assistance.
