@@ -21,25 +21,35 @@ import BranchIcon from '@site/static/icons/branch_New.png';
 
 
 
-# Getting started with FlutterFlow
+# Getting Started with FlutterFlow
 FlutterFlow is a visual development environment that lets you build mobile, web, and desktop apps incredibly fast, without sacrificing on app quality or features. 
 
-<div class="video-container small"><iframe src="https://www.youtube.com/embed/gYOrgBrX4jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 
 <InfoCards>
-    <InfoCard title="Before You Begin" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
+    <InfoCard 
+      icon="🚀" 
+      title="Build your first app" 
+      description="Get started with FlutterFlow by building your first FlutterFlow app step-by-step." 
+      pagePath="/quickstart" 
+    />
+</InfoCards>
+
+<p></p>
+
+### Explore Other Resources
+
+Discover additional tools, tutorials, and references to enhance your FlutterFlow development experience: 
+<InfoCards>
+    <InfoCard title="System Requirements" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
     <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/> 
-    
-
-</InfoCards>
-
-
-<InfoCards>
+         <InfoCard  title="App Development Roadmap" description="Learn the three essential layers of app development: UI Layer, Logic Layer, and Data Layer for building FlutterFlow applications." pagePath="/roadmap"/>
     <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
-    <InfoCard   title="Community Forum" description="Join discussions, ask questions, and share insights with the FlutterFlow community." pagePath="https://community.flutterflow.io"/>
-    <InfoCard title="Submit Bug Report" description="Encountered a bug in FlutterFlow? Help us improve by submitting a bug report." pagePath="/misc/submit-bug-report" />
 
 </InfoCards>
+
+
+
 
 <p></p>
 
@@ -47,26 +57,38 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-## Key Features
+### Best Practices
+
+Essential guidelines and recommendations for building robust FlutterFlow applications. Discover security best practices and performance optimization techniques to ensure your apps are production-ready, scalable, and maintainable.
 
 <InfoCards>
   <InfoCard 
-    icon="🚀" 
-    title="Build your first app" 
-    description="Learn how everything fits together and our top tips for creating stunning, powerful websites and apps." 
-    pagePath="/quickstart"
+    icon="🔐" 
+    title="Secure your API Key" 
+    description="Learn best practices for keeping your API keys created in Google Cloud Console safe and secure in production applications." 
+    pagePath="/best-practices/secure-api-keys"
     isLarge={true}
   />
   <InfoCard 
-    icon="🔧" 
-    title="Troubleshooting" 
-    description="Resolve login issues and other known FlutterFlow issues." 
-    pagePath="/troubleshooting"
+    icon="🧪" 
+    title="Test your apps locally" 
+    description="Set up Local Run to debug and validate your app in physical devices." 
+    pagePath="/testing/local-run"
   />
-  <InfoCard 
-    icon="🔗" 
-    title="Integrations" 
-    description="Connect to tools like Github, Netlify, Figma, Supabase, Stripe, and more." 
-    pagePath="/ff-integrations"
+  <InfoCard
+  icon="📝"
+  title="How to name variables?"
+  description="Learn FlutterFlow naming conventions and best practices for variables, functions, and components to maintain clean, readable code."
+  pagePath="/resources/style-guide"
   />
 </InfoCards>
+
+## Still Have Problems?
+
+If you're still experiencing issues or need additional help, here are some resources to get you back on track:
+
+- **[Submit Bug Report](/misc/submit-bug-report)** - Report bugs or issues you've encountered
+- **[Community Forum](https://community.flutterflow.io)** - Ask questions and get help from the community
+- **[Reddit Community](https://www.reddit.com/r/FlutterFlow/)** - Join discussions on Reddit
+- **[GitHub Issues](https://github.com/FlutterFlow/flutterflow-documentation/issues)** - Report documentation issues
+- **[FlutterFlow Support](mailto:support@flutterflow.io)** - Get direct support from the FlutterFlow support team.
