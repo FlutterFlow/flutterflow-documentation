@@ -142,12 +142,6 @@ h1 {
   --sidebar-level3-color: var(--ifm-text-sidebar-text-color); /* Custom sidebar text color for dark mode level 3 */
   
  }
-/* 
-.card {
-  background-color: var(--ifm-card-background-color) !important;
-  color: var(--ifm-card-text-color) !important;
-} 
-*/
 
 /* Card hover effects */
 .card:hover {
