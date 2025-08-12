@@ -1,6 +1,7 @@
 ---
 tags: [Base Elements]
 slug: /resources/ui/widgets/text
+title: Text
 ---
 
 # Text
@@ -119,6 +120,43 @@ value for **Max character** to limit the number of characters.
 2. Set the **Text Overflow Replacement** to either **Clip/Cutoff** or **Ellipsis (...)**
 
 ![text-overflow.png](imgs/text-overflow.png)
+
+### Wrapping Text Inside Containers
+
+When building responsive layouts, text may overflow its container if not properly configured. This section explains how to ensure your text wraps correctly within containers like Columns, Rows, or ListViews.
+
+1. **Select the Text Widget**  
+   Choose the text element you want to wrap inside a container.
+
+2. **Enable Soft Wrap**  
+   In the **Properties Panel**, enable **Soft Wrap** under the Text Styling section. This allows long text to break into multiple lines.
+
+3. **Set Max Lines (Optional)**  
+   Use the **Max Lines** property to limit how many lines the text can wrap into before being truncated.
+
+4. **Use `Expanded` or `Flexible` in a Row**  
+   If your Text widget is inside a `Row`, wrap it inside an `Expanded` or `Flexible` widget to allow it to take up available space and wrap correctly.
+
+5. **Ensure Container Has Constrained Width**  
+   Wrapping only works if the parent widget or container has a limited width. Otherwise, the text may keep expanding instead of wrapping.
+
+6. **Optional: Handle Overflow Gracefully**  
+   You can set the **Overflow** property to values like `ellipsis`, `clip`, or `fade` to determine how excess text is handled.
+
+    ![wrap-text-inside-containers](../built-in-widgets/imgs/20250430121501151202.png)
+
+    :::tip
+    Wrapping long text in a `Row` requires the Text widget to be inside an `Expanded` or `Flexible` widget.
+    :::
+
+    :::note
+    Soft wrap only works when the parent container has width constraints. Avoid wrapping long text directly in a Row with unbounded width.
+    :::
+
+    :::info[Additional Resources]
+    - [Flutter Text Class](https://api.flutter.dev/flutter/widgets/Text-class.html)
+    :::
+
 
 
 ### Adding Gradient color

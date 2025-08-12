@@ -52,6 +52,17 @@ You can also access media files within your app that are stored temporarily in y
 
 ![dm-local-upload.avif](imgs/dm-local-upload.avif)
 
+:::info[Image Uploads via WebView May Fail on Real Devices]
+Image uploads inside a WebView may fail on physical devices even if they work in Run/Test mode. This happens because FlutterFlow doesn't auto-request Photo Library permissions at runtime.
+
+To fix this:
+    - Enable Photo Library in Settings > Permissions.
+    - Add a Get Permission action to request access before uploading.
+    - Reinstall the app on the device after adding the permission.
+
+If permissions aren’t granted, the upload will silently fail. Users may have to manually allow access via their device’s app settings.
+:::
+
 ## AudioPlayer
 
 The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.

@@ -1,5 +1,5 @@
 ---
-slug: /deployment/google-playstore-deployment
+slug: /publishing/google-playstore-deployment
 title: Google Play Store Deployment
 description: Learn how to seamlessly deploy your apps to the Google Play Store using FlutterFlow.
 tags: [Google Play Store, Deployment, FlutterFlow, Android]

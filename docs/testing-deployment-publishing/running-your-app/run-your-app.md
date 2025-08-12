@@ -1,5 +1,5 @@
 ---
-slug: /testing/run-your-app
+slug: /running-your-app/run-your-app
 title: Run your App
 description: Discover the essentials of running and testing your FlutterFlow app with this comprehensive guide.
 tags: [Run, Testing, FlutterFlow]
