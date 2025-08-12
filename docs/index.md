@@ -77,10 +77,31 @@ Essential guidelines and recommendations for building robust FlutterFlow applica
   />
   <InfoCard
   icon="📝"
-  title="How to name variables?"
+  title="Naming variables"
   description="Learn FlutterFlow naming conventions and best practices for variables, functions, and components to maintain clean, readable code."
   pagePath="/resources/style-guide"
   />
+</InfoCards>
+
+### Scaling FlutterFlow Apps
+
+Learn advanced techniques and strategies to scale your FlutterFlow applications from simple prototypes to enterprise-grade solutions with native integrations and modular architecture.
+
+<InfoCards>
+  <InfoCard 
+    icon="🔌" 
+    title="Integrating Native Plugins in FlutterFlow" 
+    description="Extend FlutterFlow's capabilities by integrating native platform plugins and custom functionality using method channels for advanced app development." 
+    pagePath="/concepts/advanced/method-channels"
+    isLarge={true}
+  />
+  <InfoCard 
+    icon="🏗️" 
+    title="Building Super Apps using Libraries" 
+    description="Discover how to create scalable, modular applications using FlutterFlow libraries to build complex, maintainable super apps with independent feature libraries." 
+    pagePath="https://blog.flutterflow.io/scaling-super-apps-modular-architecture-with-flutterflow-libraries/"
+  />
+  
 </InfoCards>
 
 ## Still Have Problems?
