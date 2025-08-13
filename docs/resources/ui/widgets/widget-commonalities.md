@@ -172,7 +172,7 @@ Values beyond this range will push the widget outside the visible screen area.
 
 ## Add Testing Value Key
 
-A **Value Key** is used to uniquely identify widgets during [**Automated Testing**](../../../testing-deployment-publishing/testing/automated-tests.md) in FlutterFlow. For example, on a Create Account page, you might use descriptive keys like `signupFirstNameField`, `signupEmailField`, `signupPasswordField`, and `signupSubmitButton`. This helps testing tools reliably locate and interact with the correct widgets. For more details, refer to the [complete guide here](../../../testing-deployment-publishing/testing/automated-tests.md).
+A **Value Key** is used to uniquely identify widgets during [**Automated Testing**](../../../testing-deployment-publishing/running-your-app/automated-tests.md) in FlutterFlow. For example, on a Create Account page, you might use descriptive keys like `signupFirstNameField`, `signupEmailField`, `signupPasswordField`, and `signupSubmitButton`. This helps testing tools reliably locate and interact with the correct widgets. For more details, refer to the [complete guide here](../../../testing-deployment-publishing/running-your-app/automated-tests.md).
 
 ![test-value-keys.avif](imgs/test-value-keys.avif)
 

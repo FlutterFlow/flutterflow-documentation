@@ -396,7 +396,7 @@ Stay tuned for an upcoming "style guide" we're publishing that goes into deeper 
 - **Criteria:** Projects should include automated tests that verify core functionality and key user workflows. While not required for approval, this is strongly recommended for libraries and will positively impact visibility.
 - **Why It Matters:** Automated tests help ensure reliability, catch regressions, and demonstrate your commitment to quality. They also improve your item's visibility.
 - **What To Do:**
-    - **Add Integration Tests:** Use FlutterFlow's [automated testing](../../testing-deployment-publishing/testing/automated-tests.md) features to verify your item's core functionality.
+    - **Add Integration Tests:** Use FlutterFlow's [automated testing](../../testing-deployment-publishing/running-your-app/automated-tests.md) features to verify your item's core functionality.
     - **Test Key Workflows:** Focus on testing critical user paths and features that users will rely on.
     - **For Libraries:** Since libraries are often used as building blocks in larger applications, thorough testing is particularly important to:
         - Verify that Library Values are properly implemented
