@@ -29,7 +29,7 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
 <InfoCards>
     <InfoCard 
       icon="🚀" 
-      title="Build your first app" 
+      title="Build Your First App" 
       description="Get started with FlutterFlow by building your first FlutterFlow app step-by-step." 
       pagePath="/quickstart"
       isLarge={true}
@@ -95,13 +95,13 @@ Essential guidelines and recommendations for building robust FlutterFlow applica
   />
   <InfoCard 
     icon="🧪" 
-    title="Test your apps locally" 
+    title="Test Your Apps Locally" 
     description="Set up Local Run to debug and validate your app in physical devices." 
     pagePath="/testing/local-run"
   />
   <InfoCard
   icon="📝"
-  title="Naming variables"
+  title="Naming Variables"
   description="Learn FlutterFlow naming conventions and best practices for variables, functions, and components to maintain clean, readable code."
   pagePath="/resources/style-guide"
   />
