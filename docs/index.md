@@ -31,31 +31,55 @@ FlutterFlow is a visual development environment that lets you build mobile, web,
       icon="🚀" 
       title="Build your first app" 
       description="Get started with FlutterFlow by building your first FlutterFlow app step-by-step." 
-      pagePath="/quickstart" 
+      pagePath="/quickstart"
+      isLarge={true}
     />
+     <InfoCard 
+       icon="🗺️" 
+       title="App Development Roadmap" 
+       description="Learn the three essential layers of app development: UI Layer, Logic Layer, and Data Layer for building FlutterFlow applications." 
+       pagePath="/roadmap"
+       isLarge={true}
+     />
+
 </InfoCards>
 
 <p></p>
-
-### Explore Other Resources
-
-Discover additional tools, tutorials, and references to enhance your FlutterFlow development experience: 
-<InfoCards>
-    <InfoCard title="System Requirements" description="Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow." pagePath="/before-you-begin/setup-flutterflow" />
-    <InfoCard   title="Explore FlutterFlow" description="Dive into the building blocks of the platform: projects, widgets, functions and more." pagePath="/resources"/> 
-         <InfoCard  title="App Development Roadmap" description="Learn the three essential layers of app development: UI Layer, Logic Layer, and Data Layer for building FlutterFlow applications." pagePath="/roadmap"/>
-    <InfoCard  title="What's New in FlutterFlow" description="Updates, features, and the latest enhancements in FlutterFlow." pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"/>
-
-</InfoCards>
-
-
 
 
 <p></p>
 
 ### FlutterFlow Tour
 
+<InfoCards>
+
+ <InfoCard 
+      icon="🏗️" 
+      title="FlutterFlow Builder" 
+      description="Explore the FlutterFlow Builder interface, learn about the dashboard, widgets panel, and how to navigate the visual development environment." 
+      pagePath="/flutterflow-ui/dashboard"
+      isLarge={true}
+    />
+
+ <InfoCard 
+      icon="🔍" 
+      title="Building Blocks" 
+      description="Dive into the building blocks of the platform: projects, widgets, functions and more." 
+      pagePath="/resources"
+      isLarge = {true}
+    />
+
+
+</InfoCards>
+
+<p></p>
+
 <div class="video-container"><iframe src="https://www.youtube.com/embed/GpXjU-ieAKU?si=moIEUUGry24CdSJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+
+
 
 ### Best Practices
 
@@ -104,6 +128,25 @@ Learn advanced techniques and strategies to scale your FlutterFlow applications 
   
 </InfoCards>
 
+### Additional Tools
+
+Discover additional tools and references to enhance your FlutterFlow development experience: 
+<InfoCards>
+    <InfoCard 
+      icon="⚙️" 
+      title="System Requirements" 
+      description="Ensure you meet system requirements required to smoothly run FlutterFlow application on the web & desktop." 
+      pagePath="/before-you-begin/setup-flutterflow" 
+    />
+    <InfoCard 
+      icon="🆕" 
+      title="What's New in FlutterFlow" 
+      description="Follow latest updates, features, and the latest enhancements in FlutterFlow." 
+      pagePath="https://community.flutterflow.io/c/whats-new-in-flutterflow"
+    />
+
+</InfoCards>
+
 ## Still Have Problems?
 
 If you're still experiencing issues or need additional help, here are some resources to get you back on track:
@@ -111,5 +154,6 @@ If you're still experiencing issues or need additional help, here are some resou
 - **[Submit Bug Report](/misc/submit-bug-report)** - Report bugs or issues you've encountered
 - **[Community Forum](https://community.flutterflow.io)** - Ask questions and get help from the community
 - **[Reddit Community](https://www.reddit.com/r/FlutterFlow/)** - Join discussions on Reddit
-- **[GitHub Issues](https://github.com/FlutterFlow/flutterflow-documentation/issues)** - Report documentation issues
+- **[Documentation Bug](https://github.com/FlutterFlow/flutterflow-documentation/issues)** - Report documentation issues
+- **[Contribute to Documentation](https://github.com/FlutterFlow/flutterflow-documentation?tab=readme-ov-file#how-to-contribute)** - Contribution guidelines for contributing to the FlutterFlow documentation site. 
 - **[FlutterFlow Support](mailto:support@flutterflow.io)** - Get direct support from the FlutterFlow support team.
