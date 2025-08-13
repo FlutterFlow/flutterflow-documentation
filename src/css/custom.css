@@ -34,6 +34,7 @@
   --sidebar-selected-text-color: var(--sidebar-level1-color); /* Use level 1 color for selected text */
   --sidebar-selected-bg-color: rgba(239, 136, 57, 0.95); /* More visible purple background for light mode */
   --sidebar-hover-bg-color: rgba(75, 57, 239, 0.95); /* More visible hover background for light mode */
+  --ifm-color-emphasis-100: #ebebeb;
 }
 
 
