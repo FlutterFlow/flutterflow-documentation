@@ -1,17 +1,15 @@
 ---
 slug: /troubleshooting
-title: Troubleshooting Guide
+title: Detecting Issues
 description: A guide to troubleshoot or debug issues that occur within FlutterFlow project.
 tags: [Troubleshooting]
 sidebar_position: 0
 keywords: [Troubleshooting, Debugging, Detect Issues, Runtime Errors]
 ---
 
-# Troubleshooting Guide
+# Detecting Issues
 
-This is a general troubleshooting guide for any issues that occur within FlutterFlow projects.
-
-## Detecting issues
+This is a general troubleshooting guide for detecting any issues that occur within FlutterFlow projects.
 
 We've improved our issue detection capabilities and added features to provide clearer insights into what might be causing these problems. Here are some options you can use to troubleshoot the issue.
 
