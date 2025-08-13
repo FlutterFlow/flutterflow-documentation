@@ -35,5 +35,4 @@ On iOS devices, emojis can appear oversized when rendered inside text widgets, d
    Auto-Size works best when combined with fixed container dimensions. This approach prevents oversized emojis and supports responsive layouts.
    :::
 
-   ![](../assets/20250430121252902305.png)
 

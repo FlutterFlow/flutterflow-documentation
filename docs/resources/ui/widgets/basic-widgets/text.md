@@ -121,13 +121,13 @@ com/embed/62fd114580c94b0e84e837f19e5b57f8?sid=002d6a75-25c0-426f-9b09-9300f0cd5
 
                 ![](../built-in-widgets/imgs/20250430121459696014.png)
 
-                :::tip
+:::tip
                 Use `Auto Size` with percentage-based dimensions for better responsiveness. For example, set the container width to `30%` and enable `Auto Size` to allow the text size to adjust as the screen size changes.
-                :::
+:::
 
-                :::note
+:::note
                 The `Auto Size` feature has a minimum font size threshold. If the container becomes too small, text may clip or overflow when resizing is no longer possible.
-                :::
+:::
 
 
 
