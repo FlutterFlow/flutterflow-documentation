@@ -1,5 +1,5 @@
 ---
-slug: submission-criteria
+slug: resources/projects/submission-criteria
 title: Submission Criteria
 description: Learn about marketplace item submission criteria.
 tags: [MarketPlace, Creators Hub]
@@ -22,7 +22,7 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
 - **What To Do:**
     - **If you're the sole creator:** Great! Make sure you're submitting the project from your own FlutterFlow account.
     - **If you're collaborating:** The project owner should be the one to submit it to Marketplace. Discuss this with your collaborators beforehand.
-    - **If you've acquired a project:** Ensure the original creator has officially [transferred ownership](../../resources/projects/how-to-collaborate-on-projects.md#transferring-project) rights to you. This may involve legal documentation, so it's important to handle it properly.
+    - **If you've acquired a project:** Ensure the original creator has officially rights to you. This may involve legal documentation, so it's important to handle it properly.
 
 #### 1.2 Significant Edits Made
 
