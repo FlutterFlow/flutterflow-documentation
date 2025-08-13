@@ -439,49 +439,6 @@ code {
   box-shadow: none !important;
 }
 
-/* Light mode sidebar background consistency */
-[data-theme='light'] .theme-doc-sidebar-container {
-  background-color: #ffffff !important; /* Pure white background */
-}
-
-[data-theme='light'] .menu__list-item {
-  background-color: #ffffff !important; /* Pure white for all menu items */
-}
-
-[data-theme='light'] .menu__link {
-  background-color: #ffffff !important; /* Pure white for all menu links */
-}
-
-[data-theme='light'] .menu__link--sublist {
-  background-color: #ffffff !important; /* Pure white for sublist links */
-}
-
-/* Remove any hover/active background colors in light mode */
-[data-theme='light'] .menu__link:hover,
-[data-theme='light'] .menu__link--sublist:hover,
-[data-theme='light'] .menu__link--active,
-[data-theme='light'] .menu__link--sublist--active {
-  background-color: #ffffff !important; /* Keep white background on hover/active */
-}
-
-/* Ensure consistent spacing and borders */
-[data-theme='light'] .menu__list-item {
-  border: none !important;
-  background: transparent !important;
-}
-
-/* More aggressive targeting for light mode sidebar */
-[data-theme='light'] .theme-doc-sidebar-container * {
-  background-color: #ffffff !important; /* Force white background on all sidebar elements */
-}
-
-/* Target specific problematic elements */
-[data-theme='light'] .theme-doc-sidebar-container .menu__list-item,
-[data-theme='light'] .theme-doc-sidebar-container .menu__link,
-[data-theme='light'] .theme-doc-sidebar-container .menu__link--sublist {
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-}
 
 /* Sidebar font sizes for all levels */
 .theme-doc-sidebar-container {
