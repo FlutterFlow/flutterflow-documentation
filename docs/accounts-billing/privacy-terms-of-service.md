@@ -12,7 +12,7 @@ To request deletion of your personal data, please reach out to our support team 
 To unsubscribe from FlutterFlow emails, please click the “Unsubscribe” link in the footer of our emails.
 
 ### Where can I view your Privacy Policy?
-You can review the most recent version of our Privacy Policy here.
+You can review the most recent version of our Privacy Policy [on the website](https://www.flutterflow.io/privacy).
 
 ### Where can I view your Terms of Service (ToS)?
-You can review the most recent version of our Terms of Service here.
+You can review the most recent version of our Terms of Service [linked on the website](https://www.flutterflow.io/tos).

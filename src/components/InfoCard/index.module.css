@@ -1,57 +1,94 @@
 .infoCard {
-  border: var(--border);
-  border-radius: 4px;
-  padding: 30px;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  box-sizing: border-box; /* Ensures padding is included in width/height */
-  box-shadow: none; /* Initial shadow */
+  border: 1px solid var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: var(--custom-background-light);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 768px) { /* For landscape phones and smaller tablets */
+.largeCard {
+  grid-column: span 2; /* Makes the card span 2 columns */
+}
+
+@media (max-width: 768px) {
   .infoCard {
-    padding: 20px; /* Smaller padding on smaller screens */
+    padding: 20px;
+  }
+  
+  .largeCard {
+    grid-column: span 1; /* Reset on mobile */
   }
 }
 
 .infoCard:hover {
-  border: var(--selected-border); /* Keep the initial border */
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8); /* Elevation effect for light mode */
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 @media (prefers-color-scheme: dark) {
-  .infoCard:hover {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Elevation effect for dark mode */
+  .infoCard {
+    border-color: var(--card-border-light 100%);
   }
+  
+  .infoCard:hover {
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Dark mode background */
+[data-theme='dark'] .infoCard {
+  background: var(--custom-background-dark);
 }
 
 .infoCardIcon {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-right: 12px;
+  color: var(--ifm-color-primary);
+  display: flex;
+  align-items: center;
 }
 
 .infoCardTitle {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--ifm-color-primary);
+  margin: 0;
 }
 
 .titleContainer {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .logo {
-  height: 1.5em; /* 1em typically equals the font-size of the parent, which is the h2 in this case */
+  height: 1.5em;
   padding-right: 10px;
-  width: auto; /* Maintain the aspect ratio of the image */
+  width: auto;
+}
+
+.infoCardDescription {
+  color: var(--ifm-color-content);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .infoCardLink {
-  display: flex;
-  color: var(--primary-texr);
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .infoCardLink:hover {
-  color: var(--primary-texr);
+  color: inherit;
   text-decoration: none;
 }

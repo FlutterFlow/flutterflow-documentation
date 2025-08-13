@@ -2401,7 +2401,7 @@
       {
         "source": "/concepts/custom-code/custom-files",
         "destination": "/concepts/custom-code/configuration-files",
-         "type": 301
+        "type": 301
       },
       {
         "source": "/marketplace/creators-hub/submit-item-for-reivew",
@@ -2416,6 +2416,11 @@
       {
         "source": "/configuring-cors-for-firebase-storage",
         "destination": "/troubleshooting/firebase/configuring-cors-for-firebase-storage",
+        "type": 301
+      },
+      {
+        "source": "/accounts-billing/refunds",
+        "destination": "/accounts-billing/subscriptions/refunds",
         "type": 301
       }
     ]
