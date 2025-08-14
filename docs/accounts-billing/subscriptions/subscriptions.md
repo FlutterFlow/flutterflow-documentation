@@ -3,7 +3,7 @@ slug: subscriptions
 title: Subscriptions
 tags: []
 toc_max_heading_level: 5
-sidebar_position: 3
+sidebar_position: 0
 ---
 
 

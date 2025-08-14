@@ -1,4 +1,7 @@
-
+---
+toc_max_heading_level: 5
+sidebar_position: 2
+---
 
 # Other Subscription Questions
 
