@@ -18,24 +18,6 @@ It allows zoom level adjustments and previews in light or dark mode. It also inc
 
 This is the canvas of the device screen where you can build the user interface. You can customize the screen by adding widgets using drag and drop from the [Widget Palette](../../intro/ff-ui/widget-palette.md) and by applying properties present in the [Properties Panel](../../intro/ff-ui/builder.md#properties-panel).
 
-### Troubleshooting Copy-Paste Issues
-
-If you're unable to copy and paste widgets on the Canvas, the issue may be due to clipboard permissions in your browser.
-
-Follow these steps to enable clipboard access in Chrome:
-
-    1. Click the **lock icon** in the address bar next to `flutterflow.io`.
-    2. In the permissions popup, locate **Clipboard**.
-    3. Set clipboard access to **Allow**.
-    4. Refresh the page and try again.
-
-    ![](imgs/20250430121511630414.png)
-
-    :::tip
-    If you're using Firefox, Safari, or Edge, check that browser’s permission settings to enable clipboard access.
-    :::
-
-
 ## Show or hide Navigation Menu
 
 From here, you can open or close the 
@@ -162,3 +144,24 @@ Watch this video if you prefer watching a video tutorial.
 <div class="video-container"><iframe width="760" height="428" src="https://www.youtube.com/embed/NDrte4nOXYc" title="The Canvas | FlutterFlow University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ---
+
+<details>
+<summary>Why can’t I copy and paste widgets on the Canvas?</summary>
+
+If you're unable to copy and paste widgets on the Canvas, the issue may be due to clipboard permissions in your browser.
+
+**Follow these steps to enable clipboard access in Chrome:**
+
+1. Click the **lock icon** in the address bar next to `flutterflow.io`.
+2. In the permissions popup, locate **Clipboard**.
+3. Set clipboard access to **Allow**.
+4. Refresh the page and try again.
+
+![](imgs/20250430121511630414.png)
+
+:::tip
+If you're using Firefox, Safari, or Edge, check that browser’s permission settings to enable clipboard access.
+:::
+
+</details>
+
