@@ -37,6 +37,38 @@ You can implement geocoding in FlutterFlow in two main ways:
 
   See: **[Google Maps Geocoding API Documentation](https://developers.google.com/maps/documentation/geocoding)**
 
+  Example: Forward Geocoding API Call
+
+  **Endpoint:** 
+    ```js 
+    GET https://maps.googleapis.com/maps/api/geocode/json?address=Paris,France&key=YOUR_API_KEY
+    ```
+
+    **Sample Response**
+    ```json
+    {
+      "results": [
+        {
+          "formatted_address": "Paris, France",
+          "geometry": {
+            "location": {
+              "lat": 48.856614,
+              "lng": 2.3522219
+            }
+          }
+        }
+      ],
+      "status": "OK"
+    }
+
+  **FlutterFlow API Call Setup**
+
+    - Method: GET
+    - URL: `https://maps.googleapis.com/maps/api/geocode/json`
+    - Query Parameters:
+      - address → `Paris`,`France` (or variable)
+      - `key` → your Google Maps API key
+
 2. **`geocoding` Dart Package (Custom Code)**
 
   - Uses Flutter’s [`geocoding`](https://pub.dev/packages/geocoding) package for native geocoding.
@@ -45,6 +77,39 @@ You can implement geocoding in FlutterFlow in two main ways:
   - Best for:
     - Apps that don’t want to rely on external APIs.
     - Simpler geocoding needs.
+  
+  **Example: Forward Geocoding with geocoding package**
+  
+    ```dart
+      import 'package:geocoding/geocoding.dart';
+      Future<void> getCoordinatesFromAddress(String address) async {
+        try {
+          List<Location> locations = await locationFromAddress(address);
+          if (locations.isNotEmpty) {
+            print('Latitude: ${locations.first.latitude}');
+            print('Longitude: ${locations.first.longitude}');
+          }
+        } catch (e) {
+          print('Error: $e');
+        }
+      }
+    ```
+  **Example: Reverse Geocoding with geocoding package**
+  
+    ```dart
+      import 'package:geocoding/geocoding.dart';
+      Future<void> getAddressFromCoordinates(double lat, double lng) async {
+        try {
+          List<Placemark> placemarks = await placemarkFromCoordinates(lat, lng);
+          if (placemarks.isNotEmpty) {
+            final place = placemarks.first;
+            print('${place.street}, ${place.locality}, ${place.country}');
+          }
+        } catch (e) {
+          print('Error: $e');
+        }
+      }
+    ```
 
 :::tip[Related Guides]
 - [Convert Device Location to Address](/convert-device-location-to-address) — Step-by-step guide for reverse geocoding a device’s coordinates.
