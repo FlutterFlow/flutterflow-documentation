@@ -10,7 +10,7 @@ sidebar_position: 7
 # Refactor Project
 
 :::tip[PLANS]
-Refactor Project feature is available on the **Standard** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+Refactor Project is only available on the Paid Plans. Check our [**pricing plans**](https://flutterflow.io/pricing).
 :::
 
 **Refactor Project** is a developer‑focused mode that opens your FlutterFlow project as a set of YAML files so you can perform large-scale edits in a single, consistent operation.
