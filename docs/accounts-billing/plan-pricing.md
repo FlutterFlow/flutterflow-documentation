@@ -130,7 +130,7 @@ Which plan is best suited for different types of users?
 
 <details>
 <summary>
-How do I know which plan I will be moved to if I do not make a selection before September 17, 2025??
+How do I know which plan I will be moved to if I do not make a selection before September 17, 2025?
 </summary>
 <p>
 If you do not make a selection during the election period (August 18, 2025 - September 17, 2025), your new plan will be automatically determined based on your current **team size**. For example:
