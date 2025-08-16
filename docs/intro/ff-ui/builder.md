@@ -13,8 +13,9 @@ keywords: [App Builder, FlutterFlow, UI, Design]
 On opening the project, you'll see the App Builder, which consists of four main sections: 
 [Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties Panel](#properties-panel).
 
-:::warning[Editor Performance Does Not Affect App Builds]
+![navigation-menu.avif](imgs/navigation-menu.avif)
 
+:::warning[Editor Performance Does Not Affect App Builds]
 Slow performance in the FlutterFlow editor, such as UI lag or long loading times, may occur in large projects or long sessions, but **this does not impact the performance of your final app build**.
 
 Editor slowness is typically caused by:
@@ -29,11 +30,7 @@ To improve responsiveness:
 - Close unused pages or widgets to free up memory.
 
 The compiled app’s performance depends on your app logic, code efficiency, and device resources—not the speed of the editor environment.
-
 :::
-
-
-![navigation-menu.avif](imgs/navigation-menu.avif)
 
 ## Navigation Menu
 

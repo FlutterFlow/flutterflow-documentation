@@ -155,3 +155,28 @@ These functions are automatically generated to provide a convenient and consiste
 :::info[How to create App State variables]
 To learn more about creating and using App State variables in FlutterFlow's UI, check out the[ **App State**](../resources/data-representation/app-state.md) guide.
 :::
+
+**Practical Example: Using Persisted App State for Onboarding**
+
+  You can use Persisted App State variables to control access to certain parts of your app until specific steps are completed.
+
+  For example, you might want to ensure users complete an onboarding flow before they can access the home screen or checkout page.
+
+  1. **Create a Boolean Variable**
+
+    - Go to App Settings > State Management > Persisted Values.
+    - Add a boolean variable, e.g., `hasCompletedOnboarding`, and set its default value to false.
+
+  2. **Update After Onboarding**
+
+    - On the final screen of the onboarding flow, add an Update Persisted Value action.
+    - Set `hasCompletedOnboarding` to `true` when the user finishes onboarding.
+
+  3. **Add Conditional Navigation**
+
+    - On the target page (e.g., Home), add a Page Load action.
+    - Create a Conditional Action:
+      - If `hasCompletedOnboarding == false` → Navigate to the onboarding page.
+    
+    Use Local State for checks that only apply during the current session.
+    Use Persisted App State for checks that should work across multiple sessions.

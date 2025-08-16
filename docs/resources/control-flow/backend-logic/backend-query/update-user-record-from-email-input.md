@@ -38,6 +38,10 @@ Follow the steps below to update User Record using Email input:
 
         ![](../imgs/20250430121458204938.png)
 
+    :::note
+    Backend Queries can be triggered automatically on page load and used to manage state across widget trees. However, the widget-level query approach you're using gives more control and is appropriate for your use case—especially since FlutterFlow doesn’t support asynchronous filters directly in actions yet.
+    :::
+    
 :::tip
 Instead of using **Update Page on Change**, you can:
 - Store the text field value in a `localState` variable using a button action.
@@ -48,3 +52,5 @@ Instead of using **Update Page on Change**, you can:
 Explore this setup in the following FlutterFlow project:
 **[UpdateUser Page – FlutterFlow Project](https://app.flutterflow.io/project/flutterflow-adcdi2)**
 :::
+
+
