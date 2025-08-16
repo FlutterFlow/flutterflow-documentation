@@ -1,4 +1,11 @@
-
+---
+slug: payment-billing
+title: Payments and Billing
+tags: []
+toc_max_heading_level: 5
+sidebar_position: 2
+hide_table_of_contents: true
+---
 
 # Payments & Billing
 This section contains information on the payment methods we accept and how to change your payment method.
@@ -51,3 +58,48 @@ You can change your default payment method for next month's purchase using these
 :::note
 You can change the default payment method by selecting the three dots next to the payment method and then selecting **Make Default.**
 :::
+
+## FAQs
+
+<details>
+<summary>Can I add a Tax ID (e.g. VAT) to my invoice?</summary>
+
+Yes! You can add a Tax Identification Number (VAT ID) to your FlutterFlow account so that it appears on **all future invoices**.
+
+To do this, please contact our support team at [support@flutterflow.io](mailto:support@flutterflow.io) with the following information:
+
+- VAT ID  
+- Company Name  
+- Company Address  
+
+Our team will verify your details and confirm once the VAT ID has been applied.
+
+:::note
+Due to Stripe’s current limitations, we cannot update past invoices with your VAT ID. It will only apply to **future invoices**.
+:::
+
+</details>
+
+<details>
+<summary>My payment failed, how can I change to a different credit card?</summary>
+
+Failed subscription payments happen from time to time. These steps will help you troubleshoot the issue and update your payment method.
+
+:::tip
+The most common causes for failed payments are insufficient funds, payment blocked by your credit card provider, or an expired card. If your payment fails, please reach out to your credit card provider for more details on why the payment failed.
+:::
+
+### Steps to update your payment method:
+
+1. Go to the **My Account** page.  
+2. Select **Manage Billing**.  
+3. Scroll to **Invoice History**.  
+4. Locate the invoice that failed (it should be at the top) and click the **edit icon**. 
+
+   ![](imgs/20250430121458849389.png)  
+
+5. Enter your updated payment information.  
+
+    Once the transaction is successfully completed, your account access will be restored.
+
+</details>

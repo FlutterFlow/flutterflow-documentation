@@ -100,8 +100,66 @@ To remove a user from the teams, click on the **red cancel button** and select *
 
 ## FAQs
 
-#### Can I reduce my Teams plan to one seat?
+<details>
+<summary><strong>Can I reduce my Teams plan to one seat?</strong></summary>  
 
-No, you can't. The minimum requirement is two seats, which includes one for the owner's pro plan + an additional team seat.
+No, you can't. The minimum requirement is two seats, which includes one for the owner's pro plan + an additional team seat. 
+
+</details>  
+
+<details>
+<summary><strong>How do I upgrade my FlutterFlow account from Pro to Teams?</strong></summary>  
+
+To upgrade from a Pro account to a Teams account, follow these steps:  
+
+1. **Navigate to My Organization**  
+   - Log into your FlutterFlow account.  
+   - On the left-hand side of your dashboard, click **My Organization**.  
+
+2. **Create a Team**  
+   - Inside **My Organization**, select **Create Team**.  
+   - Follow the prompts to set up your team (e.g., choose a name).  
+
+3. **Subscribe to a Teams Account**  
+   - Once your team is created, click **Subscribe** within the same section.  
+
+4. **Select the Number of Seats**  
+   - Choose the number of team members (seats) you want.  
+   - You can add more seats later if your team grows.  
+
+5. **Complete the Upgrade**  
+   - Confirm your details and complete payment.  
+
+</details>  
+
+<details>
+<summary><strong>Who becomes the team owner after upgrading?</strong></summary>  
+
+The person who initiates the upgrade from Pro to Teams becomes the **team owner**.  
+
+The owner can:  
+- Set permissions  
+- Manage billing  
+- Invite or manage members  
+
+</details>  
+
+<details>
+<summary><strong>What are the benefits of upgrading to Teams?</strong></summary>  
+
+- Collaboration tools designed for teams  
+- Ability to invite and manage multiple members  
+- Centralized billing and permissions control  
+- Scalable seat-based subscription (grow with your team)  
+
+</details>  
+
+<details>
+<summary><strong>Where can I get help if I run into issues upgrading?</strong></summary>  
+
+If you encounter problems upgrading, reach out to the **FlutterFlow Support Team** for assistance.  
+
+</details>  
+
 
 

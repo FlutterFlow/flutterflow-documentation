@@ -271,3 +271,44 @@ Before you release the app to production, complete the following steps:
     ![unknown-error-occured](imgs/unknown-error-occured.avif)
 </p>
 </details>
+
+<details>
+<summary>How do I check if a Stripe Payment succeeds or fails?</summary>
+
+### Understanding Action Output Variables in FlutterFlow
+FlutterFlow actions allow you to define an **action output variable**, which stores the return value after execution. This is especially useful for tracking the status of payment operations.
+
+### Default `paymentId` in Stripe Actions
+When you use Stripe payment actions, FlutterFlow automatically assigns a default variable named **`paymentId`**.  
+This variable indicates the payment’s status.  
+
+- **Non-empty `paymentId`** → Payment succeeded.  
+- **Empty `paymentId`** → Payment failed.  
+
+![](imgs/20250430121315284187.png)
+
+### Checking Payment Status
+After a Stripe payment action runs:
+- If `paymentId` is **set and non-empty**, it means Stripe returned a valid identifier and the transaction succeeded.  
+- If `paymentId` is **empty**, the transaction failed.
+
+![](imgs/20250430121315556496.png) 
+
+![](imgs/20250430121315814333.png)
+
+### Next Steps Based on Status
+**If Payment Succeeds:**
+- Show a confirmation message (e.g., Snack Bar).  
+- Navigate the user to a **success screen**.  
+- Trigger additional success actions like updating a database or sending an email.  
+
+**If Payment Fails:**
+- Prompt the user to retry payment.  
+- Reset payment inputs or guide them through the process again.  
+- Provide feedback to help them understand what went wrong.  
+
+![](imgs/20250430121316063461.png)
+
+By leveraging FlutterFlow’s **action output variables**, you can handle Stripe payment outcomes gracefully. This ensures your app delivers clear feedback and a smooth payment experience for your users.
+
+</details>
