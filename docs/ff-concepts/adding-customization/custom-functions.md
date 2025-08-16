@@ -100,6 +100,5 @@ function code. Instead, you can pass the app state variable as a parameter and t
 
 </details>
 
-
 ## Utility Functions Library
 Instead of building everything from scratch, explore our **[Utility Functions Library](https://marketplace.flutterflow.io/item/ZVBmWMGpXe6vqnASRHDA)** — packed with 50+ helpful functions for everyday tasks like formatting text, manipulating dates, validating input, and more. Easily plug them into your custom logic to save time and reduce errors.

@@ -283,3 +283,39 @@ Also, ensure that these principals (emails) and their roles are present in the p
 Below is a sample image for App Engine Default service account.
 ![pn-faq-img-2](imgs/pn-faq-img-2.png)
 </details>
+
+<details>
+<summary>How do I test push notifications locally in FlutterFlow?</summary>
+
+Push notifications cannot be fully tested in a browser or most emulators — they require a real device with proper push notification service configuration.
+
+**To Test lLcally:**
+
+1. **Use a Physical Device**  
+   - Connect an Android or iOS device via USB or Wi-Fi.  
+   - Notifications do not work reliably in Flutter web builds or most simulators.
+
+2. **Set Up Your Push Notification Service**  
+   - **For Firebase Cloud Messaging (FCM):**  
+     - Add your Android package name and/or iOS bundle ID in Firebase Console.  
+     - Download `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) and add it to your project.  
+   - **For OneSignal:**  
+     - Create an app in OneSignal Dashboard.  
+     - Configure the app ID and platform keys in FlutterFlow.
+
+3. **Run the App Locally**  
+   - Use FlutterFlow **Run Mode** or `flutter run` after exporting code.  
+   - Ensure push notification permissions are requested on launch.
+
+4. **Send a Test Notification**  
+   - **Firebase Console:** Go to **Cloud Messaging** → **Send message** → target your device.  
+   - **OneSignal Dashboard:** Go to **Messages** → **New Push**.
+
+5. **Grant Notification Permissions on Device**  
+   - iOS will prompt the first time; make sure to allow.  
+   - Android 13+ will also prompt for permission.
+
+    :::tip
+    Keep your device connected and reuse the same build for repeated tests to avoid re-granting permissions each time.
+    :::
+</details>
