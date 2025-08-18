@@ -173,7 +173,7 @@ Adding a custom domain to your web app can give it a more professional look and 
 
 :::info[Important]
 
-- All paid plans include one free custom domain, with the option to purchase more if needed.
+- All our paid plans include one free custom domain, with the option to purchase more if needed.
 - A single custom domain slot can be linked to only one domain or subdomain.
 - You can connect only one domain to a project, which can be either a root domain (like 'myapp.com') or a subdomain (such as 'beta.myapp.com'). That means if you connect a root domain, none of the subdomains under it will connected to the project. This leads to the rule of '*One project => One domain OR subdomain'*.
 
