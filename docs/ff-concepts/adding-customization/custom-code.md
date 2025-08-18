@@ -263,14 +263,7 @@ In the generated code, descriptions are added as comments before the function de
 :::
 
 ## Adding a Pubspec Dependency
-To utilize community-built Flutter solutions in your FlutterFlow projects, you can add a "pubspec dependency". The **pubspec file** is the configuration file in Flutter projects that lists external packages or libraries, along with other project configurations.
 
-
-:::tip[Scope]
-You can only add a pubspec dependency to [**Custom Actions**](custom-actions.md) & [**Custom Widgets**](custom-widgets.md).
-:::
-
-####  Pub.dev
 [Pub.dev](https://pub.dev) is the official package repository for Dart and Flutter. It hosts a wide range of packages, libraries, and tools that developers can use to extend the functionality of their Dart and Flutter applications.
 
 :::info[Flutter Favorite Packages]
@@ -281,17 +274,33 @@ You can explore the Flutter Favorite packages on **[pub.dev's Flutter Favorites 
 
 :::
 
-To add a pubspec dependency from [**pub.dev**](#pubdev), follow these steps:
+To add a pubspec dependency from pub.dev, go to **Settings and Integrations > Project Dependencies**, then open the **Custom Dependencies** tab. Click **Add Pub Dependency**, enter the **package name** and **version**, and click **Add** to include it in your project.
 
-1. Create a new Custom Widget or Custom Action resource file, and be sure to give it a meaningful name.
-
-2. [**Generate the boilerplate code**](#generate-boilerplate-code) and copy the basic widget or function structure into the code editor.
-
-3. Select the [**package you want from pub.dev**](#choosing-the-correct-package-from-pubdev) and review its details.
-
-4. Copy the package name and version, and add them to the Custom Code settings in FlutterFlow. Then, copy the import statement and add it to the list of imports in the Custom Code resource. You can also copy example code from the Example tab on the package’s pub.dev page and modify it as needed — see more in the **[Setup Code](#setup-code)** section.
-
-5. Click "Save & **[Compile Code](#compile-code)**" to apply the changes.
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/oRtb2mYzh1fdRcgeoQjZ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Choosing the correct package from pub.dev
 
@@ -376,14 +385,13 @@ dependencies:
 
 Here’s exactly how you do it:
 
-
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/CgLCKJzdiCuaxMF04pg6?embed&show_copy_link=true"
+        src="https://demo.arcade.software/KUqOcYwnQQ77uAcTA1dw?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -424,7 +432,7 @@ To configure your custom code with the package, copy and paste the following ite
 
 To use the dependency in your Custom Action or Custom Widget resource file, go to the package's pub.dev page and click the **Copy to Clipboard** icon next to the package name and version. Then, paste it into the **Pubspec Dependency** section (bottom right) of the FlutterFlow code editor. 
 
-![package-dependency-version-copy.png](imgs/package-dependency-version-copy.png)
+![package-dependency-version-copy](imgs/package-dependency-version-copy.avif)
 
 
 See **[example](#add-pubspec-dependency-to-custom-code-example-guide)** for more information.
@@ -469,7 +477,7 @@ FlutterFlow:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/EAqWwTSfjumXzJ3xB6FX?embed&show_copy_link=true"
+        src="https://demo.arcade.software/e8vTIcA4EPju5XntsGiD?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
