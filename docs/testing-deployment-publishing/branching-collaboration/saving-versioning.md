@@ -36,7 +36,9 @@ Snapshots are automatic saves of your project's state as you build it. They allo
 ![snapshots](../imgs/snapshots.avif)
 
 :::info
-
-Users on the *Free* and *Standard* plans can access only one day of snapshots.
-
+- Users on the **Free** plan can access automated snapshot backups from **up to 1 hour prior**.
+- The **Basic** plan allows access to backups from **up to 1 day prior**.
+- The **Growth** plan provides access to backups from **up to 3 days prior**.
+- The **Business** plan extends this to **up to 7 days prior**.
+- For **Enterprise** users, snapshot retention is **customized**.
 :::

@@ -13,8 +13,7 @@ The Firestore Content Manager provides an easy way to visually create, edit, and
 to your [**Firestore database**](getting-started.md).
 
 :::info
-* Subcollections are not supported in Content Manager at this time.
-* Firestore Content Manager is included in the **Pro plan**.
+Subcollections are not supported in Content Manager at this time.
 :::
 
 :::note[Prerequisites]
