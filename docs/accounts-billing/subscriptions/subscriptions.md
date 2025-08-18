@@ -56,7 +56,7 @@ To view your plan details, go to the [**FlutterFlow Account Page**](https://app.
 
 If you wish to downgrade from Growth to Basic or from Business to Growth or Basic, you should cancel your existing plan and then sign up for the new one after it expires.
 
-### What happens when I downgrade to the free plan? Will my apps be deleted?
+### What happens when I downgrade to the free plan? Will my projects be deleted?
 
 On the free plan, you will be restricted to two projects. Any other applications won't be deleted, but will be archived and made accessible if you return to any paid plan.
 
