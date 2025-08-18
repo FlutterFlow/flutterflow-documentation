@@ -1,4 +1,4 @@
----
+- If a user isn't alr---
 slug: /resources/projects/collaboration
 title: Collaborate on Projects
 description: Learn how to collaborate effectively on projects in FlutterFlow, including best practices for teamwork and project management.
@@ -34,7 +34,7 @@ control.
 - Read-only users added to *Teams*/*Organization* will not count against your
   *Teams* seat count.
 - You must verify your email before inviting users.
-- If a user isn't already a FlutterFlow user, we will send them an invite email.
+eady a FlutterFlow user, we will send them an invite email.
   Their status will be shown as **Pending** until they create an account.
 - FlutterFlow subscriptions are seat based. A user added to your project will
   only have access to the features of their account plan.
