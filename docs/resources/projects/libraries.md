@@ -87,7 +87,7 @@ To publish a project as a library, it must meet the following requirements:
 - **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
 - **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
 - **Main Branch Only**: You can only publish from the main branch.
-- [**Paid Plan**](https://www.flutterflow.io/pricing): A Paid Plan is required to publish a project as a Library.
+- [**Paid Plan**](https://www.flutterflow.io/pricing): Subscription to one the paid plans is required to publish a project as a Library.
 - **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
 :::
 
