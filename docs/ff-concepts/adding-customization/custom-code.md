@@ -504,11 +504,9 @@ This example demonstrates how to add a [**pub.dev**](https://pub.dev) package to
 
 ## Manage Dependencies
 
-You can also add packages directly on the **Dependencies** page (at **Settings and Integrations > Project Setup > Project Dependencies**) and they will be reflected in your custom actions or custom widgets, because packages are managed at the project level.
+You can manage dependencies directly from **Settings and Integrations > Project Dependencies** > **Custom Dependencies** tab.
 
-Additionally, when you create a new custom action or widget, all previously added custom dependencies will be listed on the **Pubspec** **Dependencies** list on the right side. This ensures that you can easily track all custom dependencies in the project, avoiding duplication or conflicts that could override each other or cause project errors.
-
-If any project errors related to packages arise, they will be displayed in both the custom code editor and the Dependencies page. You can also update the version numbers of custom packages directly from the Dependencies page. This streamlined process helps maintain consistency and reduces potential issues related to custom packages.
+If version conflicts occur, warnings will appear in both the **Custom Dependencies** tab and the **Custom Code** editor. You can also bump package versions directly from the list, making it easier to resolve issues and keep dependencies consistent.
 
 <div style={{
     position: 'relative',
