@@ -641,9 +641,9 @@ export const PricingToggles = () => {
           <tr>
             <td>Custom Domains<br/><span className="feature-description">Deploy to your own custom domain</span></td>
             <td>❌</td>
-            <td>1 free domain, more available for purchase</td>
-            <td>1 free domain, more available for purchase</td>
-            <td>1 free domain, more available for purchase</td>
+            <td>Connect 1 domain for free, additional connections will be charged</td>
+            <td>Connect 1 domain for free, additional connections will be charged</td>
+            <td>Connect 1 domain for free, additional connections will be charged</td>
             <td>Custom</td>
           </tr>
           <tr>

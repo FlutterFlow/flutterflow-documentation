@@ -2422,6 +2422,16 @@
         "source": "/accounts-billing/refunds",
         "destination": "/accounts-billing/subscriptions/refunds",
         "type": 301
+      },
+      {
+        "source": "/accounts-billing/subscriptions/subscriptions/flutterflow-teams",
+        "destination": "/accounts-billing/subscriptions/subscriptions",
+        "type": 301
+      },
+      {
+        "source": "/accounts-billing/subscriptions/more-subscription-faqs",
+        "destination": "/accounts-billing/subscriptions",
+        "type": 301
       }
     ]
   }

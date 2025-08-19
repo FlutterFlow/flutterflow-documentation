@@ -18,10 +18,10 @@ FlutterFlow doesn’t support running tests on the platform yet.
 :::
 
 :::info[Pricing Details]
-
-- **Free users:** This feature is not available.
-- **Standard plan:** Limited to creating up to 3 tests (Note: Limit may vary).
-- **Pro and Team plan:** Unlimited test creation allowed.
+- **Free and Basic plans:** Automated testing is not available.
+- **Growth plan:** Includes **1 test per project**.
+- **Business plan:** Allows **up to 3 tests per project**.
+- **Enterprise plan:** Supports **unlimited automated tests**.
 :::
 
 ## Basics

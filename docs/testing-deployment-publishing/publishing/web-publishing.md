@@ -131,7 +131,7 @@ Inside the **General Information** section, enter the following details:
 
 :::info
 
-Tip: Only *Standard*, *Pro*, and *Teams* users can remove the FlutterFlow watermark.
+Tip: Only users on the paid plans can remove the FlutterFlow watermark.
 
 :::
 
@@ -143,7 +143,7 @@ When you are ready to deploy, click **Publish.** This will take approximately 2-
 
 By default, you will publish to a subdomain based on your project id. These default subdomain addresses do not count toward the subdomain quota, and you can deploy as many projects as you'd like. The URL would look like this: `your-project-id-1234.flutterflow.app`
 
-You can also modify the address by specifying a custom subdomain address, in the **Settings > Web Publishing** tab's **Site URL** field, as long as it's available. You can have up to **3** custom subdomain URLs on the Free plan, and up to **20** custom subdomain URLs on any of our Paid plans.
+You can also modify the address by specifying a custom subdomain address, in the **Settings > Web Publishing** tab's **Site URL** field, as long as it's available. You can have up to **2** custom subdomain URLs on the Free plan, up to **20** on any of our Paid plans, and **unlimited** custom subdomain URLs on the Enterprise plan.
 
 :::info
 
@@ -173,8 +173,7 @@ Adding a custom domain to your web app can give it a more professional look and 
 
 :::info[Important]
 
-- Only *Pro* and *Teams* plans include **one** free custom domain. The *Teams* plan comes with one custom domain for the whole team. If you are on the *Standard* plan, you will need to purchase a custom domain, as it is not included in the plan for free.
-- Only paid plans can purchase domains. *Standard* and *Pro* users can buy from their *Account* page, and Teams owners can buy it from **[My Organization](../../resources/projects/how-to-collaborate-on-projects.md#sharing-a-project-with-an-organization)**.
+- All our paid plans include one free custom domain, with the option to purchase more if needed.
 - A single custom domain slot can be linked to only one domain or subdomain.
 - You can connect only one domain to a project, which can be either a root domain (like 'myapp.com') or a subdomain (such as 'beta.myapp.com'). That means if you connect a root domain, none of the subdomains under it will connected to the project. This leads to the rule of '*One project => One domain OR subdomain'*.
 
