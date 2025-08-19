@@ -15,23 +15,6 @@ On opening the project, you'll see the App Builder, which consists of four main 
 
 ![navigation-menu.avif](imgs/navigation-menu.avif)
 
-:::warning[Editor Performance Does Not Affect App Builds]
-Slow performance in the FlutterFlow editor, such as UI lag or long loading times, may occur in large projects or long sessions, but **this does not impact the performance of your final app build**.
-
-Editor slowness is typically caused by:
-- Large projects with many pages or custom functions.
-- Long text blocks typed directly into the editor.
-- Accumulated browser cache from extended sessions.
-
-To improve responsiveness:
-- Draft long content externally before pasting into the editor.
-- Restart your browser regularly.
-- Use the macOS app version for better UI performance.
-- Close unused pages or widgets to free up memory.
-
-The compiled app’s performance depends on your app logic, code efficiency, and device resources—not the speed of the editor environment.
-:::
-
 ## Navigation Menu
 
 The Navigation Menu, located on the left side of the builder, allows you to switch between various FlutterFlow features. These include designing the UI, managing databases, setting up API, adjusting app settings, adding integrations, and more.
@@ -73,3 +56,19 @@ The Properties Panel will vary slightly depending on the entity you have selecte
 - **[Page Properties](../../resources/ui/pages/pages-properties.md)** (when you have selected a Page)
 - **[Widget Properties](../../resources/ui/widgets/widget-properties.md)** (when you have selected any widget, including built-in components)
 
+:::warning[Editor Performance Does Not Affect App Builds]
+Slow performance in the FlutterFlow editor, such as UI lag or long loading times, may occur in large projects or long sessions, but **this does not impact the performance of your final app build**.
+
+Editor slowness is typically caused by:
+- Large projects with many pages or custom functions.
+- Long text blocks typed directly into the editor.
+- Accumulated browser cache from extended sessions.
+
+To improve responsiveness:
+- Draft long content externally before pasting into the editor.
+- Restart your browser regularly.
+- Use the macOS app version for better UI performance.
+- Close unused pages or widgets to free up memory.
+
+The compiled app’s performance depends on your app logic, code efficiency, and device resources—not the speed of the editor environment.
+:::

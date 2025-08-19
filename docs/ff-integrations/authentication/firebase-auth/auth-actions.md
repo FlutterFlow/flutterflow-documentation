@@ -29,6 +29,24 @@ The Login action allows users to authenticate and gain access to your app. Login
 
 You typically add the login action to a button (e.g., "Login" or "Sign In") that collects user credentials via TextFields or third-party authentication triggers.
 
+**Supported Providers**
+    The following authentication providers can be used with the **Login [Action]**. Each link will guide you to the setup and usage details:
+
+        - **[Email Login](/integrations/authentication/firebase/email-login)**  
+        - **[Google OAuth Login](/integrations/authentication/firebase/google-oauth-login#enable-google-sign-in-provider-in-firebase)**  
+        - **[Apple Login (Supabase)](/integrations/authentication/supabase/apple)**  
+        - **[Phone Login](/integrations/authentication/firebase/phone)**  
+        - **[Facebook Login](/integrations/authentication/firebase/facebook)**  
+        - **[Anonymous Login](/integrations/authentication/firebase/anonymous-login)**  
+        - **[GitHub Login](/integrations/authentication/firebase/github#2-adding-github-login-action)**  
+        - **[JWT Token Login](/integrations/authentication/firebase/jwt-auth#1-add-login-api)**  
+        - **[Custom Auth Login](/integrations/authentication/custom-authentication)**  
+        - **[Supabase Auth Login](/integrations/authentication/supabase/initial-setup)**  
+
+:::note
+Each provider requires its own initial setup (e.g., enabling in Firebase or Supabase, configuring OAuth keys). Once configured, all providers use the same **Login [Action]** to sign in the user.
+:::
+
 ## Handling Invalid Login Credentials
 
 When a user enters incorrect login credentials, FlutterFlow automatically displays a `SnackBar` with an error message. This helps users understand why their login attempt failed without needing custom logic.
