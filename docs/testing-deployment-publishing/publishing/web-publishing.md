@@ -69,7 +69,7 @@ Enabling web support automatically enables
 
     :::warning
     - This feature is currently in *Beta*, so it should be used with caution.
-    - The WASM is not supported in *Test Mode* yet.
+    - Wasm is not supported in *Test Mode*.
     :::
 
 
