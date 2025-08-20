@@ -65,7 +65,7 @@ Enabling web support automatically enables
 
 3. **Import Emoji Library**: Importing the Emoji library is necessary if your app may use emojis anywhere in any text widget. However, this will increase the size of your app on web.
 
-4. **Use WASM (Beta)**: Enabling this option will build your app using Flutter’s **WASM (WebAssembly) web renderer**. For more details, see the [Flutter Documentation on WASM](https://docs.flutter.dev/platform-integration/web/wasm).
+4. **Use Wasm (Beta)**: Enabling this option will build your app using Flutter’s **Wasm (WebAssembly) web renderer**. For more details, see the [Flutter Documentation on Wasm](https://docs.flutter.dev/platform-integration/web/wasm).
 
     :::warning
     - This feature is currently in *Beta*, so it should be used with caution.
