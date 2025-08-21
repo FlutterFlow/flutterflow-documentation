@@ -38,6 +38,13 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 
 ![enable-web](../imgs/enable-web.avif)
 
+:::info
+
+Enabling web support automatically enables 
+[**deep linking**](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for your project. This helps in creating URLs for every page of your app.
+
+:::
+
 #### Advanced Web Settings
 
 1. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. 
@@ -58,12 +65,14 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 
 3. **Import Emoji Library**: Importing the Emoji library is necessary if your app may use emojis anywhere in any text widget. However, this will increase the size of your app on web.
 
-:::info
+4. **Use Wasm (Beta)**: Enabling this option will build your app using Flutter’s **Wasm (WebAssembly) web renderer**. For more details, see the [Flutter Documentation on Wasm](https://docs.flutter.dev/platform-integration/web/wasm).
 
-Enabling web support automatically enables 
-[**deep linking**](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for your project. This helps in creating URLs for every page of your app.
+    :::warning
+    - This feature is currently in *Beta*, so it should be used with caution.
+    - Wasm is not supported in *Test Mode*.
+    :::
 
-:::
+
 
 #### Troubleshooting CORS Issues
 
