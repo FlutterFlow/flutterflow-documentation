@@ -20,7 +20,7 @@ You can review the full working example in this **[sample FlutterFlow project](h
 **Configure the Project:**
 
 1. Ensure Firebase is set up correctly in your FlutterFlow project.  
-   → **See**: **[Firebase Integration Guide](/integrations/firebase/connect-to-firebase/)**
+   **See**: **[Firebase Integration Guide](/integrations/firebase/connect-to-firebase/)**
 
 2. Make sure push notifications are enabled and deployed from **Settings > Notifications**.
 
@@ -44,9 +44,9 @@ You can review the full working example in this **[sample FlutterFlow project](h
    - Choose **User Document**.
    - Select **Filter List Items**.
 
-   :::note
-   To filter a specific group, such as premium users, ensure the users collection includes a boolean attribute like `isPremium`.
-   :::
+      :::note
+      To filter a specific group, such as premium users, ensure the users collection includes a boolean attribute like `isPremium`.
+      :::
 
 6. In the filter condition popup:
    - Select **Items in list**
