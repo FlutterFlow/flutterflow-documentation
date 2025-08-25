@@ -11,33 +11,55 @@ keywords: [Collaboration, FlutterFlow, Project Management]
 FlutterFlow allows for multiple ways to collaborate on a project as well as the
 ability to manage the collaboration through permissions.
 
-## Sharing a Project with a User
+## Adding Collaborator
 
 You can invite users to your project who are not part of your organization.
 For instance, you might want to share your work with clients, stakeholders, or
 team members of the client.
 
-![](imgs/invite-users.avif)
+To add an external user as a collaborator to any project, go to the [My Teams](https://app.flutterflow.io/team) page and, under the **Collaborator Passes** section, click **Add Pass** and complete the checkout process. Once the pass is created, enter the user’s details and select the project you’d like to grant them access to.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/s5nU2VYbrMppj4CRxiGZ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 When you invite users to your project, you have the flexibility to assign them
 different roles depending on their level of involvement. For example, you can
-grant **editing** privileges to collaborators who are actively working on the
-project while assigning **read-only access** who need to view the progress.
-Alternatively, you can also make them the **owner** of the project, giving them full
-control.
-:::info
+grant **Editor** privileges to collaborators who are actively working on the
+project while assigning **Read-only** access who need to view the progress.
+Alternatively, you can also make them the **Manager** and **Owner** of the project, giving them more control.
 
+:::info
+- Once a collaborator is added, they’ll have the same level of access as the team that issued the pass (either Growth or Business, depending on the plan).
 - When you add a user, the default role assigned is the *Editor* role.
 - Users with read-only access will only be able to access that specific project
   and won't be able to access any shared *Teams* libraries (e.g., custom code,
   design system).
-- Read-only users added to *Teams*/*Organization* will not count against your
-  *Teams* seat count.
 - You must verify your email before inviting users.
 - If a user isn't already a FlutterFlow user, we will send them an invite email.
   Their status will be shown as **Pending** until they create an account.
-- FlutterFlow subscriptions are seat based. A user added to your project will
-  only have access to the features of their account plan.
   :::
 
 
