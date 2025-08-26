@@ -11,7 +11,7 @@ keywords: [Collaboration, FlutterFlow, Project Management]
 FlutterFlow allows for multiple ways to collaborate on a project as well as the
 ability to manage the collaboration through permissions.
 
-## Adding Collaborator
+## Adding Collaborators
 
 You can invite users to your project who are not part of your organization.
 For instance, you might want to share your work with clients, stakeholders, or
@@ -52,6 +52,8 @@ project while assigning **Read-only** access who need to view the progress.
 Alternatively, you can also make them the **Manager** and **Owner** of the project, giving them more control.
 
 :::info
+- Growth and Business owners can purchase and assign Collaborator passes.
+- Collaborator Passes can only be assigned to users who have a paid plan (Basic, Growth, or Business).
 - Once a collaborator is added, they’ll have the same level of access as the team that issued the pass (either Growth or Business, depending on the plan).
 - When you add a user, the default role assigned is the *Editor* role.
 - Users with read-only access will only be able to access that specific project
