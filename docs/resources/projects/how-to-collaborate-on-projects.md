@@ -52,7 +52,7 @@ project while assigning **Read-only** access who need to view the progress.
 Alternatively, you can also make them the **Manager** and **Owner** of the project, giving them more control.
 
 :::info
-- Growth and Business owners can purchase and assign Collaborator passes.
+- Only Growth and Business owners can purchase and assign Collaborator passes.
 - Collaborator Passes can only be assigned to users who have a paid plan (Basic, Growth, or Business).
 - Once a collaborator is added, they’ll have the same level of access as the team that issued the pass (either Growth or Business, depending on the plan).
 - When you add a user, the default role assigned is the *Editor* role.
@@ -65,11 +65,15 @@ Alternatively, you can also make them the **Manager** and **Owner** of the proje
   :::
 
 
-## Sharing a Project with an Organization
+## Sharing with Team
 
 To share a project with all current and future team members in your organization, enable the **Grant team members access** option.
 
 ![share-with-team](imgs/share-with-team.avif)
+
+:::info
+Sharing a project with team members is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
+:::
 
 ## Real-Time Collaboration
 
@@ -87,9 +91,8 @@ When multiple builders are on the same page, it looks like this:
 ![real-time-collaboration.gif](../../../static/img/real-time-collaboration.gif)
 
 :::info
-
-Real-Time collaboration is a feature of our Teams and Enterprise plans.
-  :::
+Real-Time collaboration is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
+:::
 
 ## Transferring Project
 
@@ -105,13 +108,10 @@ To transfer ownership to another user, navigate to **Settings & Integrations > P
 ## Project Activity
 
 You can see a running history of changes made while building that helps you
-track progress and stay up to date on project changes. This feature allows team
-members to see all the updates made to a project in real-time, enabling them to
-understand how the project is evolving and collaborate more efficiently.
-
-![project-activity](imgs/project-activity.avif)
+track progress and stay up to date on project changes.
 
 :::info
-Teams users can access the last 7 days of project edits, while FlutterFlow
-Enterprise users can access and download all previous project edits.
+Project Activity is only available to **Enterprise** users. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
 :::
+
+![project-activity](imgs/project-activity.avif)
