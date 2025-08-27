@@ -65,7 +65,7 @@ Alternatively, you can also make them the **Manager** and **Owner** of the proje
   :::
 
 
-## Sharing with Team
+## Sharing a Project with Team
 
 To share a project with all current and future team members in your organization, enable the **Grant team members access** option.
 
