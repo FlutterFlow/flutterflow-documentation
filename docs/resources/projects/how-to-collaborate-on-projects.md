@@ -67,9 +67,19 @@ Alternatively, you can also make them the **Manager** and **Owner** of the proje
 
 ## Sharing a Project with Team
 
-To share a project with all current and future team members in your organization, enable the **Grant team members access** option.
+To share a project with team members, use the **Share with team** dropdown and select how you want the project to be shared:
 
-![share-with-team](imgs/share-with-team.avif)
+- **Team project:** A project associated with your team and automatically visible to all team members.
+- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly and to the team owner. After selecting this option, you’ll need to manually choose the team members you want to share the project with.
+- **Personal project:** A project not associated with any team, where editing capabilities depend on the type of personal plan you have.
+
+:::info[For Restricted team project]
+- The Team owner always has access to the project, regardless of who created or shared it, and retains full team plan capabilities.
+- The Team owner can also selectively share the project with any number of team members.
+- A [**Library**](../../resources/projects/libraries.md) project will not have the *Restricted Team Project* option.
+:::
+
+ TODO add new image
 
 :::info
 Sharing a project with team members is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
