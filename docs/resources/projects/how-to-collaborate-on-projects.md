@@ -61,7 +61,7 @@ Alternatively, you can also make them the **Manager** and **Owner** of the proje
   design system).
 - You must verify your email before inviting users.
 - If a user isn't already a FlutterFlow user, we will send them an invite email.
-  Their status will be shown as **Pending** until they create an account.
+  Their status will be shown as Pending until they create an account.
   :::
 
 
