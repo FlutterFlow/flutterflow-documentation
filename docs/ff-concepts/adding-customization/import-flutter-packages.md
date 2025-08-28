@@ -1,7 +1,7 @@
 ---
-title: Import Flutter Packages
-slug: /import-flutter-packages
 keywords: ['flutter', 'package', 'import', 'custom code', 'pub.dev']
+slug: /concepts/custom-code/import-flutter-packages
+title: Import Flutter Packages
 ---
 
 # Import Flutter Packages

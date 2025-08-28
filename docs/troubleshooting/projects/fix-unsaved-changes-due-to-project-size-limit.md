@@ -1,6 +1,6 @@
 ---
 keywords: ['project size', 'unsaved changes', 'optimize project']
-slug: /fix-unsaved-changes-due-to-project-size-limit
+slug: /troubleshooting/projects/fix-unsaved-changes-due-to-project-size-limit
 title: Fix Unsaved Changes Due to Project Size Limit
 ---
 
