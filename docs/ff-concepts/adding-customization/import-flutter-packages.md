@@ -6,7 +6,7 @@ title: Import Flutter Packages
 
 # Import Flutter Packages
 
-Flutter packages extend app functionality by adding dependencies hosted on [pub.dev](https://pub.dev). These can be used in [Custom Widgets](/custom-widgets) and [Custom Actions](/custom-actions) to introduce new features or libraries into a project.  
+Flutter packages extend app functionality by adding dependencies hosted on **[pub.dev](https://pub.dev)**. These can be used in Custom Widgets and Custom Actions to introduce new features or libraries into a project.  
 
 This guide explains how to add a package dependency and import it into your custom code.  
 
