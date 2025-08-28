@@ -301,4 +301,27 @@ Here are the steps you can take to resolve this issue:
 </p>
 </details>
 
+<details>
+<summary>Why am I seeing an error about watchOS when deploying to the App Store?</summary>
+
+This error occurs when the **watchOS build option** is enabled for your app’s App ID in the Apple Developer Console. By default, some App IDs may have the **WatchKit App** option checked, which causes deployment issues if your app doesn’t support watchOS.
+
+</details>
+
+<details>
+<summary>How do I turn off the watchOS option for my app?</summary>
+
+To disable the watchOS option for a specific app:
+
+1. Go to the **[Apple Developer website](https://developer.apple.com/)** and sign in to your account.  
+2. Click **Certificates, Identifiers & Profiles**.  
+3. In the left-hand menu, select **App IDs**.  
+4. Find your app’s **App ID** and click **Edit**.  
+5. Scroll down to the **WatchKit App** section.  
+6. Uncheck **Enable for this App ID**.  
+7. Click **Continue** to save your changes.  
+
+</details>
+
+
 

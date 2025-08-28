@@ -83,3 +83,25 @@ To create an API token tied to your account:
 
 1. Navigate to your [account page in FlutterFlow](https://app.flutterflow.io/account).
 2. Near the bottom of the page, click **Create Token**
+
+## FAQs
+
+<details>
+<summary>Why can't I log in to the FlutterFlow community with my FlutterFlow account?</summary>
+
+The FlutterFlow community is hosted on a separate platform and requires its own login credentials.  
+Your FlutterFlow account does not automatically grant access to the community.
+
+</details>
+
+<details>
+<summary>How do I join the FlutterFlow community?</summary>
+
+1. On the **Dashboard** screen, click **Resources**.  
+2. Select **Join Community**.  
+3. Check your inbox for an invitation email from **no-reply@circle.so**.  
+4. Select **Accept the invitation** in the email and complete the account setup.
+  
+   ![Community Invitation Email](imgs/20250430121510782041.png)
+
+</details>

@@ -211,6 +211,27 @@ Follow the steps below to add this action to any widget.
 ## Platforms
 By default, the generated project can run on Android, iOS, and the Web without any additional effort. However, to run your app on the desktop, you need to enable a platform (e.g., MacOS, Windows, Linux) from this page.
 
+### FAQs
+
+<details>
+<summary>How do I enable FlutterFlow support for Windows?</summary>
+<p>
+To run your FlutterFlow app on Windows, you must enable Windows platform support inside your project settings.
+
+**Steps:**
+1. Navigate to **Settings & Integrations** from the left navigation menu.
+2. Under **Project Setup**, go to **Platforms**.
+3. Toggle **Windows** support to enable it.
+4. Re-generate and download your FlutterFlow project.
+5. Open the project in your local development environment and ensure the Windows target runs successfully.
+
+:::note
+- Ensure you have the necessary Windows build tools installed (**[Flutter Windows setup guide](https://docs.flutter.dev/platform-integration/windows)**).
+- Enabling Windows may slightly increase your project size due to additional desktop libraries.
+:::
+</p>
+</details>
+
 ### Advanced Android Settings
 
 - **Kotlin Version**: There are various situations where you may need to modify or configure the Kotlin version in your Android project. This could include updating to the latest version, adapting the version to accommodate a specific library or tool, or other specific requirements. To change the default version, enter the value here.
@@ -534,3 +555,52 @@ We are aware of a limitation where widgets that are not visible on a page (i.e.,
 </p>
 </details>
 
+<details>
+<summary>How do I change the package name of an application in FlutterFlow?</summary>
+
+When you change the package name of your app in **Firebase**, you also need to update it in **FlutterFlow** to keep everything synchronized.
+
+Follow these steps:
+
+1. Go to the **Settings and Integrations** page in FlutterFlow.  
+   
+   ![Settings and Integrations](imgs/20250430121448708197.png)
+
+2. Click the **edit icon** next to the app and package name field.  
+   
+   ![Edit Package Name](imgs/20250430121448932578.png)
+
+3. Enter the new package name or app name, then click the **checkmark icon** to save your changes.  
+   
+   ![Save Package Name](imgs/20250430121449131367.png)
+
+    :::warning
+    Make sure the package name in FlutterFlow matches the one registered in Firebase.  
+    If they don’t match, you may run into errors when connecting services.
+    :::
+
+</details>
+
+<details>
+<summary>Can I transfer a FlutterFlow project to another user?</summary>
+
+Yes. You can transfer ownership of a project in FlutterFlow to another active user.  
+
+**Important:** This action **cannot be undone**. If you want to regain ownership, the new project owner must transfer the project back to you.
+
+</details>
+
+<details>
+<summary>How do I transfer a project to another user?</summary>
+
+Follow these steps:
+
+1. Open your project and select **Settings & Integrations** from the left Navigation Menu.  
+2. Under **Project Setup**, select **Team**.  
+3. Find the teammate you want to transfer ownership to (they must have an **Active** status).  
+4. Click on their current role (e.g., **Editor**).  
+5. In the popup, confirm the transfer by selecting **Yes**.  
+
+![](imgs/20250430121454192491.gif)
+
+</details>

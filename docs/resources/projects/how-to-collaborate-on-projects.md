@@ -91,3 +91,26 @@ understand how the project is evolving and collaborate more efficiently.
 Teams users can access the last 7 days of project edits, while FlutterFlow
 Enterprise users can access and download all previous project edits.
 :::
+
+## FAQ
+
+<details>
+<summary>How do I add collaborators or team members to my project?</summary>
+
+It is possible to invite collaborators and manage project team members directly within a project.
+
+:::warning
+A user added to a project will only have access to the features available in their own account plan.
+:::
+
+**Steps to add a team member:**
+
+1. Select **Settings & Integrations** from the left navigation menu.  
+2. Under **Project Setup**, select **Team**.  
+3. Click **Invite User**. A popup will appear to enter the teammate’s email.  
+4. Enter the **email address** and select **Invite**.  
+5. If the user is not a FlutterFlow user yet, an invite email will be sent. Their status will remain **Pending** until they create an account.  
+
+![](imgs/20250430121506784010.gif)
+
+</details>
