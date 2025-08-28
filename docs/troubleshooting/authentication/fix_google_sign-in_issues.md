@@ -57,3 +57,24 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
 - When testing Google Sign-In in FlutterFlow before publishing, add your **debug SHA-1** in Firebase.  
 - Then go to `Settings → Firebase` in FlutterFlow and regenerate your config files.
 :::
+
+
+## FAQs
+
+<details>
+<summary>Why do I get the error "Cross-Origin-Opener-Policy policy would block the window.closed call." when signing up with Google in FlutterFlow?</summary>
+
+This error usually occurs because your browser is blocking pop-ups. It is common in newly created Chrome profiles or freshly installed Chrome browsers.
+</details>
+
+<details>
+<summary>How can I fix the error "Cross-Origin-Opener-Policy policy would block the window.closed call." when signing up with Google in FlutterFlow?</summary>
+
+You need to allow pop-ups and redirects for your domain in the browser settings.
+
+Steps in Chrome:
+1. Click the **lock icon** next to the project URL in the address bar.  
+2. Select **Site settings**.  
+3. Scroll to **Pop-ups and redirects**.  
+4. Change the setting to **Allow**.
+</details>

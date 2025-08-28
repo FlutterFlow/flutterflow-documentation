@@ -275,3 +275,66 @@ It also display the status of each deployment (e.g., successful, failed). This h
 Click **View Full History** to review the previous successful version.
 
 ![view-deploy-history.avif](../imgs/view-deploy-history.avif)
+
+## FAQs
+
+<details>
+<summary>Can I build a web app with FlutterFlow?</summary>
+
+Yes. FlutterFlow generates code that can run as a **Flutter Web application**.  
+
+However, web support in FlutterFlow is **not officially supported yet**, so you may encounter limitations.  
+
+</details>
+
+<details>
+<summary>What are the known issues with Flutter Web?</summary>
+
+When running your FlutterFlow project as a web app, you may experience the following issues:
+
+- Scrolling issues on **iOS Web**.  
+- **iOS video player** and **YouTube player** may not work correctly.  
+
+</details>
+
+<details>
+<summary>Can I deploy a web app directly from FlutterFlow?</summary>
+
+No. You **cannot deploy a web app directly within FlutterFlow**.  
+
+To deploy your project, you’ll need to follow Flutter’s official documentation:  
+👉 [Deploying Flutter apps to the web](https://flutter.dev/docs/deployment/web#deploying-to-the-web)
+
+</details>
+
+<details>
+<summary>Can you build a PWA or scalable web application with FlutterFlow?</summary>
+
+FlutterFlow enables you to build client-side applications—including dashboards and PWAs—quickly and efficiently. Here’s what you need to know about scalability, reusability, and deployment.
+
+1. **What is Possible with FlutterFlow?**
+
+    - **Build any client-side app:** Dashboards, internal/external apps, and more.  
+    - **Cross-platform:** Target Android, iOS, Web, macOS, Windows, and Linux thanks to Flutter’s cross-platform capabilities.  
+    - **No vendor lock-in:** Export your code and continue development outside FlutterFlow at any time.  
+
+2. **Productivity & Reusability**
+
+    - **Low-code builder:** Drag-and-drop interface lets you build apps up to 10x faster than traditional development.  
+    - **Design System:** Build themes and reusable components once, then use them across multiple projects.  
+    - **Shared libraries:** Reuse custom code and APIs across projects by adding them to your organization’s shared library.  
+
+3. **Integration & Extensibility**
+
+    - **Third-party integrations:** Use REST APIs or custom code to connect with any service.  
+    - **Reusable components:** Create simple or complex components in the design system and drag them into any project.  
+
+4. **Subscription & Pricing Model**
+
+    - **Developer-based pricing:** Subscription is based on the number of developers, not end users.  
+    - **No runtime charges:** You can have 10 or 10 million users—FlutterFlow does not charge for app usage.  
+    - **Backend costs:** If you use services like Firebase or Supabase, those providers may charge for infrastructure and usage.  
+
+</details>
+
+

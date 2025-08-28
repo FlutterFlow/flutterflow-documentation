@@ -177,3 +177,25 @@ If you want to deploy [Cloud Functions](https://firebase.google.com/products/fun
 2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a new page to provide your payment information. Otherwise, you can set a project budget. Please see [this link](https://firebase.google.com/pricing) for additional information on Firebase pricing.
 
 <img src="/img/firebase/billing.png" alt="Alt text"  />
+
+
+## FAQs
+
+<details>
+<summary>Does FlutterFlow generate SHA certificates automatically?</summary>
+
+Yes. When using the **Automatic Firebase Setup** feature, FlutterFlow automatically generates the required **SHA certificates** and stores them in your project's app settings within Firebase.
+
+</details>
+
+<details>
+<summary>Can I manually generate and replace SHA certificates?</summary>
+
+Yes. If you prefer to manage certificates manually, you can generate and replace SHA certificates by following Firebase's official instructions:
+
+1. Open your **Firebase Project Settings**.  
+2. Navigate to the **Your apps** section.  
+3. Add or replace the **SHA-1** and **SHA-256** keys.  
+4. Re-download the updated `google-services.json` or `GoogleService-Info.plist` and upload it to your FlutterFlow project.
+
+</details>
