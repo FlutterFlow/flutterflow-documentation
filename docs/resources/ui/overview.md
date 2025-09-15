@@ -46,7 +46,7 @@ Now let's apply the above concepts to what we see in FlutterFlow as we create ou
 
 In FlutterFlow projects, a **Page** is essentially a new section or feature of your app that combines 
 various UI elements to form a complete screen in the app. When you create a new project in 
-FlutterFLow, an empty page called `HomePage` is the first thing you see on your canvas. 
+FlutterFlow, an empty page called `HomePage` is the first thing you see on your canvas. 
 
 How you define your pages defines the flow of the app and user experience for the user. For 
 example, in our [**E-commerce Demo app**](https://bit.ly/ff-docs-demo-v2), after login, the user lands on `ProductListPage` which has a 
