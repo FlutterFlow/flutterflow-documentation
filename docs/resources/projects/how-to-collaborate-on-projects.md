@@ -11,41 +11,79 @@ keywords: [Collaboration, FlutterFlow, Project Management]
 FlutterFlow allows for multiple ways to collaborate on a project as well as the
 ability to manage the collaboration through permissions.
 
-## Sharing a Project with a User
+## Adding Collaborators
 
 You can invite users to your project who are not part of your organization.
 For instance, you might want to share your work with clients, stakeholders, or
 team members of the client.
 
-![](imgs/invite-users.avif)
+To add an external user as a collaborator to any project, go to the [My Teams](https://app.flutterflow.io/team) page and, under the **Collaborator Passes** section, click **Add Pass** and complete the checkout process. Once the pass is created, enter the user’s details and select the project you’d like to grant them access to.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/s5nU2VYbrMppj4CRxiGZ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 When you invite users to your project, you have the flexibility to assign them
 different roles depending on their level of involvement. For example, you can
-grant **editing** privileges to collaborators who are actively working on the
-project while assigning **read-only access** who need to view the progress.
-Alternatively, you can also make them the **owner** of the project, giving them full
-control.
-:::info
+grant **Editor** privileges to collaborators who are actively working on the
+project while assigning **Read-only** access who need to view the progress.
+Alternatively, you can also make them the **Manager** and **Owner** of the project, giving them more control.
 
+:::info
+- Only Growth and Business owners can purchase and assign Collaborator passes.
+- Collaborator Passes can only be assigned to users who have a paid plan (Basic, Growth, or Business).
+- Once a collaborator is added, they’ll have the same level of access as the team that issued the pass (either Growth or Business, depending on the plan).
 - When you add a user, the default role assigned is the *Editor* role.
 - Users with read-only access will only be able to access that specific project
   and won't be able to access any shared *Teams* libraries (e.g., custom code,
   design system).
-- Read-only users added to *Teams*/*Organization* will not count against your
-  *Teams* seat count.
 - You must verify your email before inviting users.
 - If a user isn't already a FlutterFlow user, we will send them an invite email.
-  Their status will be shown as **Pending** until they create an account.
-- FlutterFlow subscriptions are seat based. A user added to your project will
-  only have access to the features of their account plan.
+  Their status will be shown as Pending until they create an account.
   :::
 
 
-## Sharing a Project with an Organization
+## Sharing a Project with Team
 
-To share a project with all current and future team members in your organization, enable the **Grant team members access** option.
+To share a project with team members, use the **Share with team** dropdown and select how you want the project to be shared:
 
-![share-with-team](imgs/share-with-team.avif)
+- **Team project:** A project associated with your team and automatically visible to all team members.
+- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly and to the team owner. After selecting this option, you’ll need to manually choose the team members you want to share the project with.
+- **Personal project:** A project not associated with any team, where editing capabilities depend on the type of personal plan you have.
+
+:::info[For Restricted team project]
+- The Team owner always has access to the project, regardless of who created or shared it, and retains full team plan capabilities.
+- The Team owner can also selectively share the project with any number of team members.
+- A [**Library**](../../resources/projects/libraries.md) project will not have the *Restricted Team Project* option.
+:::
+
+ TODO add new image
+
+:::info
+Sharing a project with team members is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
+:::
 
 ## Real-Time Collaboration
 
@@ -63,9 +101,8 @@ When multiple builders are on the same page, it looks like this:
 ![real-time-collaboration.gif](../../../static/img/real-time-collaboration.gif)
 
 :::info
-
-Real-Time collaboration is a feature of our Teams and Enterprise plans.
-  :::
+Real-Time collaboration is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
+:::
 
 ## Transferring Project
 
@@ -81,13 +118,10 @@ To transfer ownership to another user, navigate to **Settings & Integrations > P
 ## Project Activity
 
 You can see a running history of changes made while building that helps you
-track progress and stay up to date on project changes. This feature allows team
-members to see all the updates made to a project in real-time, enabling them to
-understand how the project is evolving and collaborate more efficiently.
-
-![project-activity](imgs/project-activity.avif)
+track progress and stay up to date on project changes.
 
 :::info
-Teams users can access the last 7 days of project edits, while FlutterFlow
-Enterprise users can access and download all previous project edits.
+Project Activity is only available to **Enterprise** users. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
 :::
+
+![project-activity](imgs/project-activity.avif)
