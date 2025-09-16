@@ -16,7 +16,7 @@ To mitigate these issues, FlutterFlow offers a **version management** system tha
 However, pinning to a stable release means that you will not be able to use the latest features, and there may be bugs that are not fixed until subsequent releases. **We only recommend doing this if you have a complex app with custom code dependencies.**
 
 :::info
-Currently, the ability to pin a FlutterFlow project to a stable version is only available to **Enterprise** users.
+Currently, the ability to pin a FlutterFlow project to a stable version is available to **Growth**, **Business**, and **Enterprise** users.
 :::
 
 ## When should you pin your project to a stable version?
