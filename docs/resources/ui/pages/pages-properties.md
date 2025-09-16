@@ -59,7 +59,7 @@ When the Route object is created for this Page, setting `requireAuth: true` ensu
 ```js
 FFRoute(
     name: 'promotionPage',
-    path: '/promotionPahe',
+    path: '/promotionPage',
     requireAuth: true, 
     builder: (context, params) => PromotionPageWidget(),
   )
