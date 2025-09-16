@@ -8,16 +8,51 @@ sidebar_position: 3
 keywords: [Collaboration, FlutterFlow, Project Management]
 ---
 
-FlutterFlow allows for multiple ways to collaborate on a project as well as the
-ability to manage the collaboration through permissions.
+In FlutterFlow you can share projects with your entire organization (team), with individual users within your organization, or external users. 
 
-## Adding Collaborators
+## Sharing a Project with Team
+
+To share a project with team members, use the **Share with team** dropdown in the **Collaboration** page of your project's settings, and select how you want the project to be shared:
+
+![share_with_team.png](imgs/share_with_team.png)
+
+- **Team project:** A project associated with your team and automatically visible to all team members. When a project is a Team Project, team members are automatically added as Editors. You can specifically designate team members as Viewers, but you cannot remove them. 
+- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly. After selecting this option, you’ll need to manually choose the team members you want to share the project with. 
+- **Personal project:** A project not associated with any team, where editing capabilities depend on the type of personal plan you have.
+
+:::info
+- The Team owner always has edit access to the project, regardless of who created or shared it, and retains full team plan capabilities.
+- The Team owner can also selectively share the project with any number of team members.
+- A [**Library**](../../resources/projects/libraries.md) project will not have the *Restricted Team Project* option.
+- Sharing a project with team members is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
+:::
+
+
+## Sharing a Project with External Collaborators
 
 You can invite users to your project who are not part of your organization.
 For instance, you might want to share your work with clients, stakeholders, or
 team members of the client.
 
-To add an external user as a collaborator to any project, go to the [My Teams](https://app.flutterflow.io/team) page and, under the **Collaborator Passes** section, click **Add Pass** and complete the checkout process. Once the pass is created, enter the user’s details and select the project you’d like to grant them access to.
+You can add users as Read Only users to any project regardless of your pricing plan in the **Collaborators** page of your project's settings.
+
+:::info
+- Users with read-only access will only be able to access that specific project
+  and won't be able to access any shared *Teams* libraries (e.g., custom code,
+  design system).
+- You must verify your email before inviting users.
+- If a user isn't already a FlutterFlow user, we will send them an invite email. Their status will be shown as Pending until they create an account.
+:::
+
+To add an external user as a collaborator as an Editor to a project, you first need to purchase a collaborator pass. 
+
+To purchase a collaborator pass, go to the [My Teams](https://app.flutterflow.io/team) page and, under the **Collaborator Passes** section, click **Add Pass** and complete the checkout process. Once the pass is created, enter the user email and select the project (Team Project or Restricted Team Project) you’d like to grant them access to.
+
+:::info
+- You must be a Team Owner to purchase and assign a Collaboration Pass.
+- Collaborator Passes can only be assigned to users who have a paid plan (Basic, Growth, or Business).
+:::
+
 
 <div style={{
     position: 'relative',
@@ -45,45 +80,20 @@ To add an external user as a collaborator to any project, go to the [My Teams](h
 </div>
 <p></p>
 
-When you invite users to your project, you have the flexibility to assign them
-different roles depending on their level of involvement. For example, you can
-grant **Editor** privileges to collaborators who are actively working on the
-project while assigning **Read-only** access who need to view the progress.
-Alternatively, you can also make them the **Manager** and **Owner** of the project, giving them more control.
 
-:::info
-- Only Growth and Business owners can purchase and assign Collaborator passes.
-- Collaborator Passes can only be assigned to users who have a paid plan (Basic, Growth, or Business).
-- Once a collaborator is added, they’ll have the same level of access as the team that issued the pass (either Growth or Business, depending on the plan).
-- When you add a user, the default role assigned is the *Editor* role.
-- Users with read-only access will only be able to access that specific project
-  and won't be able to access any shared *Teams* libraries (e.g., custom code,
-  design system).
-- You must verify your email before inviting users.
-- If a user isn't already a FlutterFlow user, we will send them an invite email.
-  Their status will be shown as Pending until they create an account.
-  :::
+## Transferring Project
 
-
-## Sharing a Project with Team
-
-To share a project with team members, use the **Share with team** dropdown and select how you want the project to be shared:
-
-- **Team project:** A project associated with your team and automatically visible to all team members.
-- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly and to the team owner. After selecting this option, you’ll need to manually choose the team members you want to share the project with.
-- **Personal project:** A project not associated with any team, where editing capabilities depend on the type of personal plan you have.
-
-:::info[For Restricted team project]
-- The Team owner always has access to the project, regardless of who created or shared it, and retains full team plan capabilities.
-- The Team owner can also selectively share the project with any number of team members.
-- A [**Library**](../../resources/projects/libraries.md) project will not have the *Restricted Team Project* option.
+:::danger
+This step can not be undone. If you want to regain project ownership, the new
+project owner will need to transfer ownership back to you.
 :::
 
- TODO add new image
+To transfer ownership to another user, navigate to **Settings & Integrations > Project Setup > Collaboration > Project-Level Access**, click on the current role and select **Owner**.
 
-:::info
-Sharing a project with team members is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.
-:::
+Note that users must be a part of your Team or be added through a Collaborator pass to be transferred ownership.
+
+![transfer-ownership.avif](imgs/transfer-ownership.avif)
+
 
 ## Real-Time Collaboration
 
