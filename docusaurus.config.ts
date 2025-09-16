@@ -25,13 +25,15 @@ const config: Config = {
       'classic',
       {
         docs: {
-          breadcrumbs: false,
+          breadcrumbs: true,
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           exclude: ['docs/index.md'],
+          sidebarCollapsible: true, /* Keep sidebar expanded by default */
+          sidebarCollapsed: true, /* Start with sidebar expanded */
           // lastVersion: 'current',
           // versions: {
           //   current: {
