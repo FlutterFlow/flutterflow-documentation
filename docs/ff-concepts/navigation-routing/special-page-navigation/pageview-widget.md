@@ -391,3 +391,54 @@ If you prefer watching a video tutorial, here's the one for you:
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Use Case: Image Carousel with Auto-Scroll
+
+You can build an image carousel using the `PageView` widget combined with the `Control Page View` action. This allows users to scroll through images either manually or automatically.
+
+**Steps Overview:**
+
+    1. **Add a PageView Widget**
+        - From the **Widget Panel**, drag the `PageView` widget onto the canvas.
+        - Populate it with your image widgets or bind it to a dynamic image list.
+
+    2. **Set Up Page Load Action**
+        - Select the `Scaffold` or main container.
+        - Add a `Page Load` action to trigger carousel behavior.
+
+    3. **Add `Control Page View` Action**
+        - Use the `Control Page View` action to control transitions:
+            - `Next`, `Previous`, `First`, or `Last`.
+
+    4. **Auto-Scroll Behavior (Optional)**
+        - Add a sequence of:
+            - `Control Page View` → `Wait` → `Control Page View` (Next)
+        - Loop this logic to create a smooth, timed carousel experience.
+
+            ![Carousel Example](imgs/20250430121318472792.gif)
+
+## Use Case: Image Slider from List of Image URLs
+
+This example demonstrates how to build a dynamic image slider using a list of image URLs—ideal for product detail screens or galleries.
+
+Follow the steps below:
+
+1. **Add a PageView Widget**
+   - Place a `PageView` on your screen.
+
+2. **Bind to the Image List**
+   - Generate dynamic children from your list of image URLs.
+
+3. **Add a Repeating Child**
+   - Use a single `Image` widget inside the `PageView`.
+   - Bind the `Image URL` to the current list item.
+
+    :::tip
+    You only need one child inside the PageView. When bound to a list, it automatically repeats for each item.
+    :::
+
+    :::tip
+    - Use horizontal scroll for carousels and onboarding pages.
+    - Combine with indicators or swipe gestures for a richer UX.
+    - Use `Wait` and `Control Page View` actions to create auto-scroll behavior.
+    :::

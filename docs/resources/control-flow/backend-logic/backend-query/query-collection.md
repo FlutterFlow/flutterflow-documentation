@@ -55,30 +55,31 @@ The instructions to query a Supabase table are almost the same, except that for 
 :::
 
 <div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
+  position: 'relative',
+  paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+  height: 0,
+  width: '100%',
 }}>
-    <iframe 
-        src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
+  <iframe
+    src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
+    title=""
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      colorScheme: 'light',
+    }}
+    frameBorder="0"
+    loading="lazy"
+    allow="clipboard-write"
+    allowFullScreen
+    webkitAllowFullScreen
+    mozAllowFullScreen
+  />
 </div>
+
 
 :::warning[Limitations of Supabase Streaming with Filters]
 When using Supabase query with real-time updates enabled, you have the following limitations:
@@ -108,61 +109,63 @@ present inside. Follow the steps below to use the document record data:
 You can follow similar steps for using the record data on the other widgets as well.
 
 <Tabs>
-<TabItem value="1" label="Display Data from Firestore Collection" default>
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
+  <TabItem value="1" label="Display Data from Firestore Collection" default>
+    <div style={{
+      position: 'relative',
+      paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+      height: 0,
+      width: '100%',
+    }}>
+      <iframe
         src="https://demo.arcade.software/lduCQak3hFCUC1xNVP1c?embed&show_copy_link=true"
-        title=""
+        title="Display Data from Firestore Collection"
         style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          colorScheme: 'light',
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
+        allow="clipboard-write"
+        allowFullScreen
         webkitAllowFullScreen
         mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-</TabItem>
-<TabItem value="2" label="Display Data from Supabase Table">
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
+      />
+    </div>
+  </TabItem>
+
+  <TabItem value="2" label="Display Data from Supabase Table">
+    <div style={{
+      position: 'relative',
+      paddingBottom: 'calc(56.67989417989418% + 41px)',
+      height: 0,
+      width: '100%',
+    }}>
+      <iframe
         src="https://demo.arcade.software/utIKpcL7km05zSnZvLaz?embed&show_copy_link=true"
-        title=""
+        title="Display Data from Supabase Table"
         style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          colorScheme: 'light',
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
+        allow="clipboard-write"
+        allowFullScreen
         webkitAllowFullScreen
         mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-</TabItem>
+      />
+    </div>
+  </TabItem>
 </Tabs>
+
 
 ## FAQs
 <details>
@@ -177,3 +180,92 @@ Additionally, you can enable real-time updates when creating a new table.
 ![enable-realtime-updates-sb-table.avif](../imgs/enable-realtime-updates-sb-table-2.avif)
 </p>
 </details>
+
+## Example: Filter One Dropdown by Another
+
+You can filter one dropdown based on the selected value of another. This is useful in nested selection scenarios like choosing a vehicle **make** first, then filtering the **model** dropdown accordingly.
+
+1. **Set Up Firestore Collections**
+
+    - **`make` Collection**
+    - Field: `name` (String) — the vehicle make (e.g., BMW)
+
+    - **`model` Collection**
+    - Fields:
+        - `name` (String) — model name
+        - `make_name` (String) — should match the `name` from the `make` collection
+
+2. **Create the Dropdown UI**
+
+    Add two `Dropdown` widgets:
+        - **First dropdown** → queries `make`
+        - **Second dropdown** → queries `model`, filtered by the selected `make`
+
+3. **Query the First Dropdown**
+
+    - Select the **first dropdown**
+    - Set the data source to a query on `make`
+    - Bind the `name` field to the dropdown options
+
+4. **Filter the Second Dropdown**
+
+    - Select the **second dropdown**
+    - Set its data source to query the `model` collection
+    - Add a filter:
+    - **Field**: `make_name`
+    - **Condition**: `is equal to`
+    - **Value**: the selected item from the first dropdown (via `Widget State`)
+
+    :::tip
+    This method can be extended to chains of 3+ dropdowns using additional filters.
+    :::
+
+## Example: Filter Records by Selected Calendar Date
+
+You can use a `Calendar` widget to dynamically filter query results by date. This is useful when showing time-sensitive records such as appointments or events.
+
+:::info[Requirements]
+- A Firebase collection with a date field (e.g., `eventDate`)
+- A `Calendar` widget on the page
+- A `ListView` bound to a Firebase query
+:::
+
+1. **Add Date Filters to the Query**
+
+    Apply two filters to your `ListView` query:
+
+        - **Start of the day** – `eventDate` **≥** selected date (start)
+        - **End of the day** – `eventDate` **≤** selected date (end)
+
+    Steps:
+
+        1. Select the `ListView` widget.
+        2. In the **Backend Query** section, click **+ Filter** twice.
+        3. For both filters, use:
+        - **Field Name**: `eventDate`
+        - **Relation**: 
+            - First filter: `Greater Than or Equal`
+            - Second filter: `Less Than or Equal`
+        - **Value Source**: `From Variable` → `Widget State` → `calendarSelectedDay`
+        - Set **Range Part**:
+            - First filter: `Start`
+            - Second filter: `End`
+
+2. **Set the Initial Calendar Date**
+
+    To avoid loading issues:
+
+        1. Select the `Calendar` widget.
+        2. Under **Initial Date**, choose:
+        - **Source**: `Global Properties`
+        - **Option**: `Current Timestamp`
+
+        :::warning
+        Not setting an initial date can lead to a blank screen in Run Mode.
+        :::
+
+**Test the Result:**
+
+    - Run the app.
+    - Select a date on the calendar.
+    - The `ListView` will update to show only records from that date.
