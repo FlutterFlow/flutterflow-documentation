@@ -418,7 +418,7 @@ What if I want to continue collaborating with project collaborators who are not 
 - If you would like to continue collaborating:
     - You can invite others to join your team (additional seats may require an upgrade depending on your plan).
     - Or, they can create a new team and invite you, depending on who should own billing and project access.
-    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must themselves have also purchased a paid Basic plan to be eligible to be a single project collaborator.
+    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must be a part of a paid plan - either Basic, or as an owner or member of a Growth or Business plan, to have a pass assigned to them.
 - This change ensures that every project has clear ownership, consistent permissions, and a scalable path for team-based collaboration.
 
 </p>
