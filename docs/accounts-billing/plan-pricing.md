@@ -62,7 +62,7 @@ When does the new pricing take effect for me?
 </summary>
 <p>
 - For new users, the pricing and packaging will apply immediately on August 18, 2025. After this date, no legacy plans (Standard, Pro, Teams) can be purchased or updated.
-- For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a **30-day transition period** where you will have the ability to select into a new plan. On September 18, 2025, your account will be moved to one of the new plans if no action is taken.
+- For existing Free, Standard, Pro, and Teams plan users, billing and feature access will remain unchanged during a **30-day transition period** where you will have the ability to select a new plan. On September 18, 2025, your account will be moved to one of the new plans if no action is taken.
   - **Important exception:** If you're currently on a Teams plan, you will no longer be able to use your team features on personal projects starting August 18, 2025. To maintain existing Teams plan feature access on those projects, you must either:
     - Move your personal projects into your Team, or
     - Convert your current Teams plan to a new Growth or Business plan and purchase a separate Basic plan for your personal work.
@@ -441,7 +441,7 @@ What if I want to continue collaborating with project collaborators who are not 
 - If you would like to continue collaborating:
     - You can invite others to join your team (additional seats may require an upgrade depending on your plan).
     - Or, they can create a new team and invite you, depending on who should own billing and project access.
-    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must themselves also be on a paid plan to be eligible to be a single project collaborator.
+    - **New:** If you're on a Growth or Business plan, you may also purchase Single Project Collaborator passes, which allows you to grant another paid user access to a single project without adding them to your full team. Each pass is $15/month and can be reassigned to different collaborators or projects as needed. You can purchase up to 4 (Growth) or up to 10 (Business). This collaborator must also be on a paid plan to be eligible to be a single project collaborator.
 - This change ensures that every project has clear ownership, consistent permissions, and a scalable path for team-based collaboration.
 
 </p>
@@ -604,6 +604,6 @@ Will the referral program still exist with the new plans, now that the Pro plan 
 Are there any changes to DreamFlow plans as well?
 </summary>
 <p>
-Dreamflow is a separate product and Dreamflow plans are not affected with this plan update.
+Dreamflow is a separate product and Dreamflow plans are not affected by this plan update.
 </p>
 </details>
