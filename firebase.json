@@ -2432,6 +2432,11 @@
         "source": "/accounts-billing/subscriptions/more-subscription-faqs",
         "destination": "/accounts-billing/subscriptions",
         "type": 301
+      },
+      {
+        "source": "/resources/projects/settings/mcp-server",
+        "destination": "/",
+        "type": 301
       }
     ]
   }
