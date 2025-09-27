@@ -292,3 +292,105 @@ We allow you to add more custom domains and share them with all team members. Th
 To do so, click on **Add Domains** (under My Organization).
 
 ![Add custom domain](imgs/add-custom-domain.avif)
+
+## Webhooks
+Webhooks allow Enterprise users to receive real-time notifications about project updates and team events. When a specific event occurs, for example, creating a branch or pushing a commit, FlutterFlow sends a structured HTTP POST request to the webhook URL you've configured. This enables you to trigger custom workflows or sync updates across your internal systems.
+
+:::info
+
+Webhooks are **only available** to users on the **Enterprise** plan.
+
+:::
+
+:::tip Possible Use Cases
+
+- **CI/CD Integration:** Automatically trigger build or deployment pipelines whenever a new commit is made to a branch.
+- **Audit Logging:** Log events to an internal system for compliance and audit tracking.
+- **Custom Notifications:** Send alerts to Slack, email, or internal tools when critical changes are made.
+- **Analytics & Reporting:** Track development activity across teams by capturing and analyzing webhook events.
+- **Dashboard Updates:** Reflect real-time project activity on internal dashboards to give stakeholders visibility into progress.
+
+:::
+
+### Supported Events
+
+FlutterFlow supports webhook notifications for the following events:
+
+- **Branch Created**: Triggered whenever a new branch is created within the project. The following is an example of the webhook payload sent when this event occurs:
+    ```jsx
+    {
+    "branch_id": "mmtQj1gtGuxohyNsAUSs",
+    "branch_name": "Hello World",
+    "created_by": {
+        "user_id": "TeneO93LdQfQQdN4RDfSB0eIXPu2"
+    },
+    "eventType": "branch.created",
+    "project_id": "test-delete-me-wvv2hr"
+    }
+    ```
+- **Commit Created**: Triggered when a commit is created on any branch. Below is an example of the webhook payload sent for this event:
+    ```jsx
+    {
+    "commit_id": "a1b2c3d4e5",
+    "commit_message": "Initial commit for login feature",
+    "branch_id": "mmtQj1gtGuxohyNsAUSs",
+    "branch_name": "feature/login",
+    "created_by": {
+        "user_id": "TeneO93LdQfQQdN4RDfSB0eIXPu2"
+    },
+    "eventType": "commit.created",
+    "project_id": "test-delete-me-wvv2hr"
+    }
+    ```
+
+
+### Set Up Webhook
+
+To start receiving webhook events, go to your **FlutterFlow Dashboard**, then navigate to **My Teams > Webhook URLs**. Click **+ Add URL**, enter your webhook endpoint, and click **Save**.
+
+Once saved, FlutterFlow will automatically send POST requests to the provided URL whenever supported events occur.
+
+:::tip[Allowlist IP Addresses]
+
+If your webhook endpoint is hosted behind a firewall or NAT, you’ll need to allow incoming traffic from the following static IP addresses to ensure event delivery.
+
+```jsx
+{
+  "us": [
+    "44.228.126.217",
+    "50.112.21.217",
+    "52.24.126.164",
+    "54.148.139.208",
+    "2600:1f24:64:8000::/56"
+  ],
+  "us-east": [
+    "54.164.207.221",
+    "54.90.7.123",
+    "2600:1f28:37:4000::/56"
+  ],
+  "eu": [
+    "52.215.16.239",
+    "54.216.8.72",
+    "63.33.109.123",
+    "2a05:d028:17:8000::/56"
+  ],
+  "in": [
+    "13.126.41.108",
+    "15.207.218.84",
+    "65.2.133.31"
+  ],
+  "au": [ 
+    "13.239.204.236",
+    "54.66.246.217",
+    "54.252.65.96",
+    "2406:da2c:13:4000::/56"
+  ],
+  "ca": [ 
+    "52.60.44.49",
+    "3.98.68.230",
+    "3.96.105.27",
+    "2600:1f21:1c:4000::/56"
+  ]
+}
+```
+:::
