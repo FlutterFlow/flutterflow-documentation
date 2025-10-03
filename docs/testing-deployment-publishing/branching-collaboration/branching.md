@@ -14,7 +14,7 @@ Branching creates a separate copy of your work, so you can add new features with
 Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your existing `main` branch and potentially causing problems, you can create a branch to work on this new feature in isolation. Once it's complete, you can integrate it back into the `main` branch.
 
 :::info
-While all users can access the branching menu and create commits, only **Pro**, **Teams**, and **Enterprise** plans support creating new branches.
+While all users can access the branching menu and create commits, only **Growth** plan and above support creating new branches.
 :::
 
 

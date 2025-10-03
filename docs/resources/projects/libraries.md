@@ -74,7 +74,7 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 <p></p>
 
 :::info
-- You can only publish libraries if you have access to branching, which is available to Pro+ users.
+- You can only publish libraries if you have access to [**branching**](../../testing-deployment-publishing/branching-collaboration/branching.md), which is available to users on **Growth** plan and above.
 - Libraries can only be published from the main branch, and each published version is linked to a specific commit, ensuring robust version control.
 - You must commit your changes before publishing a new version of the library.
 - It's recommended to include a message that tells users what has changed in the version your are publishing.

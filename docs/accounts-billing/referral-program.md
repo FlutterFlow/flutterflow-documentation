@@ -1,6 +1,12 @@
 
 # Referral Program
 
+:::warning
+With the retirement of the Pro plan, the current referral program will also be discontinued. Any active referral discounts will end at your next renewal. However, referral credits you’ve already earned will remain in your account and can be redeemed for free months on the new Growth plan.
+
+We are also exploring new referral and incentive programs to better support and reward our community under the updated pricing model.
+:::
+
 Everyone with a FlutterFlow account has a personal referral code to share with friends and colleagues. For every referral that subscribes, you will receive one month of FlutterFlow Pro credited to your account.
 
 In order to receive this reward, the person you referred will need to:
