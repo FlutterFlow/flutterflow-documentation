@@ -153,7 +153,7 @@ Which plan is best suited for different types of users?
 
 <details>
 <summary>
-How do I know which plan I will be moved to if I do not make a selection before September 17, 2025?
+How do I know which plan I will be moved to if I do not make a selection before September 18, 2025?
 </summary>
 <p>
 If you do not make a selection during the election period (August 18, 2025 - September 17, 2025), your new plan will be automatically determined based on your current **team size**. For example:
@@ -322,18 +322,13 @@ I am a Free user and have more than 2 projects – what will happen to them?
       <li>
         **Marketplace exception:** Existing Free plan projects published to the Marketplace prior to August 18, 2025 will not count toward your 2-project limit. If a project is later removed from Marketplace and you exceed the limit, it will be automatically archived.
       </li>
-      <li>
-        Archived projects are never deleted. If you later upgrade to a paid plan, you'll regain full access to edit and publish them.
-      </li>
     </ul>
   </li>
   <li>
     For users on a team-based plan but not on a personal paid plan, this 2-project selection requirement only applies to your personal projects. You will still be able to edit any projects that belong to your team.
-    <ul>
-      <li>
-        We’ve set this policy to ensure everyone can explore FlutterFlow for free while keeping heavy usage sustainable. We won’t remove any of your existing projects. They’re safe and accessible whenever you decide to upgrade.
-      </li>
-    </ul>
+  </li>
+  <li>
+    We've set this policy to ensure everyone can explore FlutterFlow for free while keeping heavy usage sustainable. We won't remove any of your existing projects. They're safe and accessible whenever you decide to upgrade.
   </li>
 </ul>
 </details>
@@ -456,7 +451,7 @@ I build apps for clients (agency/freelancer). What plan should I choose?
     We will now offer multiple plan options to support agencies of all sizes – whether you’re a solo freelancer, a fast-growing studio, or an established consultancy. We believe the best path depends on your team size and how you prefer to work with your clients:
     <ul>
       <li>
-        Solo freelancers or small agencies (1–5 developers)
+        Solo freelancers or small agencies (1-5 developers)
         <ul>
           <li>
             We recommend the Business plan, which supports up to 5 team members with advanced features like branching and access control.
@@ -478,7 +473,7 @@ I build apps for clients (agency/freelancer). What plan should I choose?
             If you intend to maintain the code on behalf of your client:
             <ul>
               <li>
-                If your agency has under 13 developers, you may qualify for our new Agencies Expansion package coming out with the Business plan, available to all verified FlutterFlow Expert Agencies.
+                You may qualify for our new Agencies Expansion package, coming out with the Business plan and available to all verified FlutterFlow Expert Agencies.
                 <ul>
                   <li>
                     As part of the add-on, you can:
@@ -491,9 +486,6 @@ I build apps for clients (agency/freelancer). What plan should I choose?
                     To become eligible now, you can apply to be an Expert Agency on our <a href="https://contra.com/opportunity/rWlmk2Yv-become-a-flutter-flow-agency">Contra</a> page. Existing Expert Agencies listed on Contra will be pre-approved to select the Agencies Expansion package starting August 18, 2025.
                   </li>
                 </ul>
-              </li>
-              <li>
-                For larger agencies with more than 12 developers and managing multiple enterprise-level clients, we recommend exploring our new Application-Specific Usage (ASU) licensing model. This offering is custom tailored to your multi-client business with Enterprise features, Managed Service Provider (MSP) volume discounts, and potential for co-marketing opportunities. To learn more and see if you qualify, please reach out to <a href="mailto:mspartners@flutterflow.io">mspartners@flutterflow.io</a>.
               </li>
             </ul>
           </li>
