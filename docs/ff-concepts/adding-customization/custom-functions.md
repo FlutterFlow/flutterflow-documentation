@@ -100,6 +100,32 @@ function code. Instead, you can pass the app state variable as a parameter and t
 
 </details>
 
+<details> 
+<summary>How do I convert a string to a double in FlutterFlow using a custom function?</summary>
+
+If you need to convert a string (for example, `"123.45"`) into a `double` in FlutterFlow, you can do this with a Custom Function.
+
+Below is a simple Dart example:
+
+```dart
+double stringToDouble(String value) {
+return double.tryParse(value) ?? 0.0;
+}
+```
+Steps to use in FlutterFlow:
+
+- Go to Custom Functions in the left panel.
+- Click + Add Function.
+- Name the function (e.g., stringToDouble).
+- Add a String parameter (e.g., value).
+- Paste the code above.
+- Save and use the function anywhere in your app (such as in a binding or conditional logic).
+
+:::tip
+- You don’t always need to write your own function — FlutterFlow’s **[Utility Functions Library](https://marketplace.flutterflow.io/item/ZVBmWMGpXe6vqnASRHDA)** already contains a stringToDouble method (and many others) that can save you time.
+- You can install it from the Marketplace and use it immediately without creating custom code.
+:::
+</details>
 
 ## Utility Functions Library
 Instead of building everything from scratch, explore our **[Utility Functions Library](https://marketplace.flutterflow.io/item/ZVBmWMGpXe6vqnASRHDA)** — packed with 50+ helpful functions for everyday tasks like formatting text, manipulating dates, validating input, and more. Easily plug them into your custom logic to save time and reduce errors.
