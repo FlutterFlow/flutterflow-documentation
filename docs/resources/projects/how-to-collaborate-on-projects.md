@@ -90,7 +90,9 @@ project owner will need to transfer ownership back to you.
 
 To transfer ownership to another user, navigate to **Settings & Integrations > Project Setup > Collaboration > Project-Level Access**, click on the current role and select **Owner**.
 
-Note that users must be a part of your Team or be added through a Collaborator pass to be transferred ownership.
+:::info
+You can transfer a project to any FlutterFlow user (including [external collaborators](#sharing-a-project-with-external-collaborators)) as long as they have an active paid plan.
+:::
 
 ![transfer-ownership.avif](imgs/transfer-ownership.avif)
 
