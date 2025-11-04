@@ -495,7 +495,7 @@ I build apps for clients (agency/freelancer). What plan should I choose?
   </li>
 </ul>
 <p>
-You can transfer ownership of projects between yourself and your client to anyone who has edit access, this includes paying team members or collaborators on collaborator passes. To transfer a project to a client, simply add them as a collaborator using a pass, transfer ownership, and then remove them and the pass if no longer needed after the handoff.
+You can transfer ownership of projects between yourself and your client. To transfer a project to a client, simply add them as a collaborator using a pass, transfer ownership, and then remove them and the pass if no longer needed after the handoff.
 </p>
 </details>
 
