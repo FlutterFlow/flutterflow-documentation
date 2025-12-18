@@ -2,16 +2,16 @@
 slug: /integrations/ai-agents
 title: AI Agents
 description: Learn how to add an AI Agent in your FlutterFlow app.
-tags: [AI, Gemini, Integration]
+tags: [AI, Cerebras, Gemini, Integration]
 sidebar_position: 1
-keywords: [FlutterFlow, AI, Gemini, Integration, OpenAI, Anthropic, Agent Builder]
+keywords: [FlutterFlow, AI, Cerebras, Gemini, Integration, OpenAI, Anthropic, Agent Builder]
 ---
 
 # AI Agents
 
 AI Agents in FlutterFlow enable you to integrate AI-powered interactions using advanced LLMs (Large Language Models) directly into your app. An AI Agent is essentially a configurable chatbot or AI-powered service defined and managed within FlutterFlow.
 
-By selecting a provider (Google, OpenAI, or Anthropic), choosing the model (e.g., GPT-4, Claude, Gemini), and specifying system instructions and preloaded messages, you can create an agent to handle user input in a context-aware way.
+By selecting a provider (Google, OpenAI, Anthropic, or an OpenAI-compatible provider like Cerebras), choosing the model (e.g., GPT-4, Claude, Gemini, Llama), and specifying system instructions and preloaded messages, you can create an agent to handle user input in a context-aware way.
 
 Here are some examples of AI Agents:
 
@@ -60,17 +60,28 @@ It is always recommended to include at least one sample conversation with both a
 
 #### Model Settings
 
-- **Provider**: Allows you to select the AI vendor for this agent. Currently, we support **OpenAI**, **Google,** and **Anthropic**.
-    - **OpenAI & Anthropic**: If you choose OpenAI or Anthropic, FlutterFlow will create a [Cloud Function](https://firebase.google.com/docs/functions) in Firebase to relay requests to the AI API securely. Hence, your Firebase project must be on a [Blaze](https://firebase.google.com/pricing) plan (paid) to deploy the necessary cloud function. **Note that** the deployed cloud function will only be accessible to authenticated users.
+- **Provider**: Allows you to select the AI vendor for this agent. FlutterFlow supports **OpenAI**, **Google,** and **Anthropic**. You can also use **Cerebras** via the **OpenAI** provider because Cerebras offers an OpenAI-compatible API.
+    - **OpenAI, Anthropic, and OpenAI-compatible providers (e.g., Cerebras)**: FlutterFlow will create a [Cloud Function](https://firebase.google.com/docs/functions) in Firebase to relay requests to the AI API securely. Hence, your Firebase project must be on a [Blaze](https://firebase.google.com/pricing) plan (paid) to deploy the necessary cloud function. **Note that** the deployed cloud function will only be accessible to authenticated users.
     - **Google**: When selecting Google as your provider, you need to enable the following in your Firebase project.
         - [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md): This ensures secure interactions between users and your AI agents.
         - [**Vertex AI**](https://firebase.google.com/docs/vertex-ai): Vertex AI is Google's comprehensive AI platform used to manage and deploy machine learning models. FlutterFlow internally uses the [`firebase_vertexai`](https://pub.dev/packages/firebase_vertexai) package to integrate Google's AI models within your Firebase-connected project.
 - **Model**: Choose from the list of available models for the given provider. Models differ in capabilities, supported parameters, and cost structure.
-- **API Key:** Enter your provider’s API key here when using **OpenAI** or **Anthropic**. FlutterFlow securely stores this key within the deployed cloud function to ensure it remains hidden from end-users and network requests. If you're using **Google,** you won't see the API Key field, as authentication is managed through Vertex AI in your Firebase project.
+- **API Key:** Enter your provider’s API key here when using **OpenAI**, **Anthropic**, or an OpenAI-compatible provider like **Cerebras**. FlutterFlow securely stores this key within the deployed cloud function to ensure it remains hidden from end-users and network requests. If you're using **Google,** you won't see the API Key field, as authentication is managed through Vertex AI in your Firebase project.
+
+**Using Cerebras (OpenAI-compatible)**
+
+To use Cerebras inside FlutterFlow AI Agents:
+
+- Set **Provider** to **OpenAI**.
+- Set **OpenAI base URL** to `https://api.cerebras.ai/v1`.
+- Set **API Key** to your Cerebras API key.
+- Choose a model that is available on Cerebras (see [Models](/models/overview)).
 
 :::tip
 
 You can obtain your OpenAI API key from [**OpenAI API Keys**](https://platform.openai.com/api-keys) page and your Anthropic API key from [**Anthropic Console**](https://console.anthropic.com/settings/keys).
+
+You can obtain your Cerebras API key from [cloud.cerebras.ai](https://cloud.cerebras.ai/).
 
 :::
 
@@ -145,7 +156,7 @@ Once configured, click the **Publish** button to make it live.
 
 :::info[For non Google Agents]
 
-After you successfully deploy the agent, any changes made to its configuration—such as modifying the system message, model, or temperature will require you to redeploy the Agent. For Google agents, the configuration is stored at client-side, so redeployment isn't necessary.
+After you successfully deploy the agent, any changes made to its configuration—such as modifying the system message, model, or temperature will require you to redeploy the Agent for OpenAI, Anthropic, and OpenAI-compatible providers (including Cerebras). For Google agents, the configuration is stored at client-side, so redeployment isn't necessary.
 :::
 
 Now you can use the AI agent in your FlutterFlow app logic using the following actions.
