@@ -12,8 +12,17 @@ Our support team is available from 5 AM to 5 PM Eastern Time, Monday through Fri
 
 ### How To Reach Us
 
-* **Pro** and **Teams** users can reach us using the in-app chat inside FlutterFlow
-* We can also be reached at support@flutterflow.io
+Depending on your plan, there are multiple ways you can get support when using FlutterFlow:
+
+- **Account and Billing Support**: Available for all plans. You can always reach out for help with managing your account or billing-related questions.
+
+- **Community Support**: All users have access to the FlutterFlow Community Forums, where you can ask questions, share knowledge, and connect with other builders.
+
+- **Email Support**: Available starting from the **Basic** plan and above. Get direct help from our support team via email.
+
+- **In-App Support**: Available starting from the **Growth** plan and above. Chat directly with support specialists from within FlutterFlow for faster assistance.
+
+- **Dedicated Live Support**: Exclusive to the **Enterprise** plan. Gain direct access to dedicated support specialists for priority, hands-on help.
 
 ### What We Can Help With
 

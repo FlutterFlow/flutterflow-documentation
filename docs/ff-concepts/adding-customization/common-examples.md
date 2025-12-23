@@ -67,7 +67,7 @@ Use this approach only when the component is a fixed element that does not chang
 :::
 
 In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from 
-[pub.dev](custom-code.md#pubdev), you can simply return an existing Component created on the canvas, rather than coding a new one from scratch.
+[pub.dev](https://pub.dev/), you can simply return an existing Component created on the canvas, rather than coding a new one from scratch.
 
 :::tip[Imports]
 When referencing a Component class in your code, FlutterFlow will automatically add the necessary import statement.
