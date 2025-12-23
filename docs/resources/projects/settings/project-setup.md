@@ -229,7 +229,7 @@ By default, the generated project can run on Android, iOS, and the Web without a
 - **Use CanvasKit**: CanvasKit provides better performance and fidelity for rendering on the web by leveraging WebAssembly. This setting can improve the visual quality and performance of your app, especially for complex graphics and animations. Enable this option to use CanvasKit for rendering on the web.
 
 :::warning
-While FlutterFlow can generate project code for **macOS** and **Windows**, these platform targets are **currently in Alpha** and provided as-is. FlutterFlow does not provide infrastructure for building, debugging, or running apps on these platforms, and our **Support team is unable to assist** with issues related to macOS or Windows builds.
+While FlutterFlow can generate project code for **macOS** and **Windows**, these platform targets are **currently in Alpha** and provided as-is. FlutterFlow does not provide infrastructure for building, debugging, or running apps on these platforms, and our **Support team is unable to assist** with issues related to macOS or Windows builds. However, the generated code can still be opened, built, and debugged using standard Flutter tooling such as Android Studio or VS Code.
 
 This applies only to the deployment platform options, not to the FlutterFlow Desktop application itself.
 :::
