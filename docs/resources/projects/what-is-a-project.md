@@ -1,4 +1,5 @@
----
+-versionCode 1
+versionName "1.0.0"--
 slug: /resources/projects
 title: What is a Project?
 authors: john
