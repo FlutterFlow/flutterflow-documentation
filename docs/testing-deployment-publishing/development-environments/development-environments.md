@@ -109,7 +109,11 @@ In the generated code, FlutterFlow creates two files:
 
 #### Private Environment Values
 
-You can mark environment values as private when they contain sensitive information that should not be exposed in the client-side code. **Private** environment values are not included in the generated code.
+You can mark environment values as private when they contain sensitive information that should not be exposed in the client-side code.
+
+:::warning
+Private environment values are not included in the compiled application code and are never exposed to end users. However, if a private environment value is used in a private API call that runs through a generated cloud function, the value may appear in the cloud function’s code. When exporting or pushing your project to GitHub, you must review and manage these cloud function files—for example, excluding them with `.gitignore` if they contain sensitive information.
+:::
 
 Currently, the only way to use a private environment value is as a variable in a private API call. Since private API calls are routed through a Cloud Function, the variable value remains hidden from any client-side requests made by the app.
 
