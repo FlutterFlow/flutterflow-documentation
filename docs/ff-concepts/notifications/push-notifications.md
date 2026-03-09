@@ -237,6 +237,31 @@ In this action, you can decide who should receive the push notification by setti
 
 ![trigger push notifications](imgs/trigger-pn.avif)
 
+### Send Notifications to Multiple Users (Dynamic)
+
+To notify a group of users when a document is created (e.g., group chat, announcement, or event), follow this flow:
+
+1. **Add a Backend Query**
+   - Add an **Action** → **Backend Query** before sending the notification.
+   - Set **Query Type** to `Query Collection` and select your users collection (e.g., `users`).
+   - Set **Return Type** to `List of Documents`.
+
+2. **Create a Document**
+   - Add an **Action** → **Create Document** to store the submitted content (e.g., a post or message).
+
+3. **Trigger Notification**
+   - Add an **Action** → **Trigger Push Notification**.
+   - Set the **audience** to **Multiple Recipients**.
+   - Under **Recipients**:
+     - Select **Filter List Items** → **Items in List > Document Exists** to apply conditions.
+     - Then choose **Map List Items** → `Document Properties` → `Reference` to get user document references.
+
+    The notification will be sent to all users matching your filters, using the queried list.
+
+    :::tip
+    Use this approach for dynamic group-based notifications tied to app activity, like chat, announcements, or tasks.
+    :::
+
 ## Testing Push Notifications Cloud Function
 
 You can also test the Push Notifications Cloud Function directly from the Google Cloud console, without needing to trigger from FlutterFlow. This is especially useful for debugging purposes. For step-by-step instructions, including an example and how to structure the request, refer to the [Testing Cloud Functions in Google Cloud Console](../../ff-concepts/adding-customization/cloud-functions.md#testing-cloud-functions-in-google-cloud-console) section.
