@@ -17,7 +17,7 @@ FlutterFlow Designer helps you with:
 - **Easy Integration:** Designs can be exported directly to visual builders like FlutterFlow, used as visual references, or converted into an agent-ready prompt.
 - **Auto Theming and Storyboard Generation:** Generate complete user flow in one go, with consistent color schemes and typography applied automatically.
 
-Because FlutterFlow Designer is built to quickly turn ideas into fully editable screens, it empowers both non-technical creators and development teams to move faster during early UX and UI exploration.
+Because FlutterFlow Designer is built to quickly turn ideas into fully editable designs, it empowers both non-technical creators and development teams to move faster during early UX and UI exploration.
 
 ![ff-designer.avif](imgs/ff-designer.avif)
 
