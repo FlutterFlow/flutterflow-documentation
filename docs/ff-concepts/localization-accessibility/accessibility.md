@@ -81,7 +81,7 @@ Here’s what each option does:
 - **Exclude Semantics**: Prevents screen readers from announcing this widget.
 - **Is Live Region**: Tells assistive tech that the widget’s content may change dynamically and should be re-announced.
 - **Hint Text**: Provides an additional hint for users (e.g., "Double tap to open").
-- **Tooltip Text**: Displays helpful text on long press or hover.
+- **Tooltip Text**: Provides descriptive text about the widget to screen readers, giving extra context beyond the primary label.
 - **Ordinal Sort Key**: Controls the order in which widgets are accessed by screen readers.
 
 :::tip
