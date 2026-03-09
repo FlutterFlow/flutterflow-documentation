@@ -87,6 +87,12 @@ const config: Config = {
           label: 'Troubleshooting',
         },
         {
+          type: 'doc',
+          docId: 'ff-designer/index',
+          position: 'left',
+          label: 'Designer',
+        },
+        {
           href: 'https://github.com/FlutterFlow/flutterflow-documentation',
           label: 'GitHub',
           position: 'right',
