@@ -1,6 +1,6 @@
 ---
 keywords: ['security', 'error', 'firebase', 'permissions']
-slug: troubleshooting/firebase/content-manager-firestore-error
+slug: /troubleshooting/firebase/content-manager-firestore-error
 title: Content Manager Firestore Error
 ---
 

@@ -88,10 +88,6 @@ To add a design system from a library, start by creating the design system in a 
 
 ## Import Figma Theme
 
-:::tip[PLANS]
-Import Figma Theme feature is available on the **Teams** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
-:::
-
 You can bring your Figma design system directly into your FlutterFlow project. This streamlines the design-to-development process by automatically importing colors and typography from your Figma file, helping you maintain visual consistency and reduce manual effort.
 
 To import a Figma theme into your FlutterFlow project, go to **Theme Settings > Design System** and click **Connect To Figma**. Authenticate your account and grant access to Figma. Once connected, paste your Figma file URL to fetch the theme.
@@ -256,7 +252,7 @@ Here are all the properties you can customize:
         
     ![main-axis-margin](../imgs/main-axis-margin.avif)
 
-6. **Cross Axis Maring:** This refers to the space or gap along the cross direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the left and right spacing, and in a horizontally scrolling list, it refers to the top and bottom spacing.
+6. **Cross Axis Margin:** This refers to the space or gap along the cross direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the left and right spacing, and in a horizontally scrolling list, it refers to the top and bottom spacing.
 
     ![cross-axis-margin](../imgs/cross-axis-margin.avif)
 
@@ -570,7 +566,7 @@ You can also create fully custom text styles to match your design needs, going b
 ![typography](imgs/typography.avif)
 
 :::tip[PLANS]
-Custom Text Styles are available on the **Teams** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+Custom Text Styles are available on the **Business** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
 :::
 
 #### Adding responsive text styles

@@ -1,6 +1,6 @@
 ---
 keywords: ['debug', 'android', 'release']
-slug: troubleshooting/google-play-store-deployment/signed-in-debug-mode-error
+slug: /troubleshooting/google-play-store-deployment/signed-in-debug-mode-error
 title: Signed in Debug Mode Error
 ---
 

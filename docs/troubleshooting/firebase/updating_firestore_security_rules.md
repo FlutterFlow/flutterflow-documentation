@@ -1,6 +1,6 @@
 ---
 keywords: ['rules', 'firestore', 'updating']
-slug: troubleshooting/firebase/updating-firestore-security-rules
+slug: /troubleshooting/firebase/updating-firestore-security-rules
 title: Updating Firestore Security Rules
 ---
 # Updating Firestore Security Rules

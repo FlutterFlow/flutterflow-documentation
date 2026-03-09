@@ -103,13 +103,13 @@ Authorization: Bearer YOUR_API_TOKEN_HERE
 ## API Endpoints
 Below is a list of available API endpoints with their methods and usage descriptions.
 
-| Endpoint                    | Method | Purpose                                       |
-| --------------------------- | ------ | --------------------------------------------- |
-| `/listPartitionedFileNames` | GET    | List available YAML file names for a project.  |
-| `/l/listProjects`           | POST   | Retrieve metadata for all projects.            |
-| `/projectYamls`             | GET    | Export/download YAML files from a project.     |
-| `/validateProjectYaml`      | POST   | Validate YAML content before applying changes. |
-| `/updateProjectYaml`        | POST   | Update project configuration via YAML.         |
+| Endpoint                      | Method | Purpose                                       |
+| ---------------------------   | ------ | --------------------------------------------- |
+| `/listPartitionedFileNames`   | GET    | List available YAML file names for a project.  |
+| `/l/listProjects`             | POST   | Retrieve metadata for all projects.            |
+| `/projectYamls`               | GET    | Export/download YAML files from a project.     |
+| `/validateProjectYaml`        | POST   | Validate YAML content before applying changes. |
+| `/updateProjectByYaml`        | POST   | Update project configuration via YAML.         |
 
 
 ### List File Names
@@ -358,7 +358,7 @@ curl -X POST \
 This endpoint allows you to overwrite existing files in your FlutterFlow project by submitting updated YAML content.
 
 #### Endpoint
-`POST /updateProjectYaml`
+`POST /updateProjectByYaml`
 
 #### Request Body
 ```jsx
@@ -413,7 +413,7 @@ This example updates the `ad-mob` file and adds/updates app state variables.
 
 ```jsx
 curl -X POST \
-  'https://api.flutterflow.io/v2/updateProjectYaml' \
+  'https://api.flutterflow.io/v2/updateProjectByYaml' \
   -H 'Authorization: Bearer YOUR_API_TOKEN' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -462,7 +462,7 @@ First, we use the `/listPartitionedFileNames` endpoint to check if the `app-stat
 </div>
 <p></p>
 
-Next, we open the `app-state.yaml` file and update the `enableDarkMode` variable by setting its `persisted` value to `true`. We then convert the updated YAML into a properly escaped single line string and validate it using the `/validateProjectYaml` endpoint. If validation succeeds, we send the final update using the `/updateProjectYaml` endpoint.
+Next, we open the `app-state.yaml` file and update the `enableDarkMode` variable by setting its `persisted` value to `true`. We then convert the updated YAML into a properly escaped single line string and validate it using the `/validateProjectYaml` endpoint. If validation succeeds, we send the final update using the `/updateProjectByYaml` endpoint.
 
 
 <div style={{
@@ -535,7 +535,7 @@ When YAML validation fails, you'll receive detailed error information:
     -d '{"projectId": "project-id", "fileKey": "ad-mob", "fileContent": "showTestAds: false"}'
 
   # 2. If validation passes, apply the changes
-  curl -X POST 'https://api.flutterflow.io/v2/updateProjectYaml' \
+  curl -X POST 'https://api.flutterflow.io/v2/updateProjectByYaml' \
     -H 'Authorization: Bearer YOUR_API_KEY' \
     -H 'Content-Type: application/json' \
     -d '{"projectId": "project-id", "fileKeyToContent": {"ad-mob": "showTestAds: false"}}'

@@ -1,6 +1,6 @@
 ---
 keywords: ['notification', 'security', 'permissions']
-slug: troubleshooting/test-mode/firestore-permission-error-run-mode
+slug: /troubleshooting/test-mode/firestore-permission-error-run-mode
 title: Firestore Permission Error in Run Mode
 ---
 
@@ -25,9 +25,9 @@ This error is typically triggered when:
 
   Example:
 
-  - If Firestore rules are configured as:
+  - If Firestore rules are configured as:  
 
-    ```js
+  ```js
     rules_version = '2';
     service cloud.firestore {
       match /databases/{database}/documents {
@@ -37,15 +37,14 @@ This error is typically triggered when:
       }
     }
     ```
-
+    
     Any Firestore query will fail because no read or write access is allowed.
 
   - If rules allow only authenticated access:
 
-      ```js
+    ```js
       allow read, write: if request.auth != null;
-      ```
-
+    ```
     And a query is placed on a page before the user signs in (e.g., on the login screen), it will trigger this error.
 
     Descriptive widget names can help you quickly identify which query or widget is triggering the permission issue. In the example above, the error message references a widget named Container. Renaming it to something like UserQueryContainer can make debugging easier.

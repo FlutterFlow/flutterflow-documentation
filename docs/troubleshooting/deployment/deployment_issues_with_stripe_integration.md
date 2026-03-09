@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'issues', 'integration']
-slug: troubleshooting/deployment/deployment-issues-with-stripe-integration
+slug: /troubleshooting/deployment/deployment-issues-with-stripe-integration
 title: Deployment Issues with Stripe Integration
 ---
 # Deployment Issues with Stripe Integration

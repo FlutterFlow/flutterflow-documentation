@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'error', 'releases']
-slug: troubleshooting/google-play-store-deployment/google-play-draft-release-error
+slug: /troubleshooting/google-play-store-deployment/google-play-draft-release-error
 title: Google Play Draft Release Error
 ---
 

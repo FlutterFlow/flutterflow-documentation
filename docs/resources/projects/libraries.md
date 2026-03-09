@@ -74,7 +74,7 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
 <p></p>
 
 :::info
-- You can only publish libraries if you have access to branching, which is available to Pro+ users.
+- You can only publish libraries if you have access to [**branching**](../../testing-deployment-publishing/branching-collaboration/branching.md), which is available to users on **Growth** plan and above.
 - Libraries can only be published from the main branch, and each published version is linked to a specific commit, ensuring robust version control.
 - You must commit your changes before publishing a new version of the library.
 - It's recommended to include a message that tells users what has changed in the version your are publishing.
@@ -87,7 +87,7 @@ To publish a project as a library, it must meet the following requirements:
 - **No Failed Deployments**: The Publish button remains disabled if a deployment process was started and failed.
 - **No Errors or Warnings**: All project errors or warnings must be addressed beforehand.
 - **Main Branch Only**: You can only publish from the main branch.
-- **Pro Plan Subscription**: A Pro Plan is required to publish a project as a Library.
+- [**Paid Plan**](https://www.flutterflow.io/pricing): Subscription to one of the paid plans is required to publish a project as a Library.
 - **Not Cloned from Marketplace**: The project cannot be a clone of a Marketplace item.
 :::
 
@@ -146,7 +146,6 @@ To import a library project into another FlutterFlow project, you must go **Sett
 - You can import publicly accessible libraries by specifying the project ID in the text field when adding a library dependency.
 - By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
 - You can also import the `current` version of the library to use the latest state of the library on the main branch - however, this is not recommended.
-- You must have a paid plan to import a library.
 - When importing a library into a project or another library, the library’s version must not be set to 'current' and should be less than or equal to the FlutterFlow version of the project or library it’s being imported into. Learn more about [**managing Library’s FlutterFlow version**](../projects/settings/version-management.md#version-management-with-libraries).
 :::
 
@@ -253,9 +252,9 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Pages
 
-You can also add and manage pages within a library, making it easy to reuse those pages across multiple projects. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
+When you publish a library, all the pages included in the library become available for use in the consumer project. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
 
-Including pages with libraries offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
+Library Pages offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
 
 :::tip[Possible Use Cases]
 - **Super Apps** like Gojek and Uber with distinct modules such as ride booking, shopping, and payments. Each module can be developed as a separate library and imported into a single main project.
@@ -263,7 +262,7 @@ Including pages with libraries offers a modular approach to development, making 
 - **White-labeled Apps** that share common onboarding flows can benefit from libraries. The onboarding process can be built once as a library and reused across all branded versions of the app.
 :::
 
-The library author selects which pages to include and publishes the library. When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
+When users import or update the library, they can override the default route names to prevent conflicts between the library and their project. Library pages then appear in navigation actions just like any regular page.
 
 <div style={{
     position: 'relative',
@@ -291,7 +290,50 @@ The library author selects which pages to include and publishes the library. Whe
 </div>
 <p></p>
 
+### Library Pages in NavBar
 
+Library pages can also be used in the NavBar, allowing users to add reusable flows into the app’s primary navigation structure. For example, in a Super App, you can import ride booking, food delivery, or payment pages from separate libraries and add them directly to the bottom navigation, giving users quick access to each module.
+
+:::tip
+Want to learn more about building modular Super Apps using libraries? Check out our [**blog post**](https://blog.flutterflow.io/scaling-super-apps-modular-architecture-with-flutterflow-libraries/).
+:::
+
+To display a library page on the NavBar, navigate to **Project Dependencies > FlutterFlow Libraries**, then click on **Pages** for the relevant library to open its details. In the list of pages, locate the desired page and click **Nav Bar Settings**, then enable **Show on NavBar**. You can also customize additional settings, such as label and icon, as needed.
+
+To confirm, go to the **Nav Bar & App Bar** section, where you’ll see the library page listed as part of the NavBar items.
+
+:::info
+NavBar settings for regular pages are available directly within the Page Settings panel in the builder. However, for Library pages, these settings are managed through the Library Details dialog.
+
+![NavBar-settings-for-regular-and-library-page](imgs/NavBar-settings-for-regular-and-library-page.avif)
+:::
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/BDac382RQTHTKFhtZcsc?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Library Values
 

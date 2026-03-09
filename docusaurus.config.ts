@@ -11,8 +11,10 @@ const config: Config = {
   onBrokenMarkdownLinks: 'throw',
   onBrokenAnchors: 'throw',
   favicon: 'logos/favicon.png',
+
   clientModules: [
     require.resolve('./src/js/table-helpers.js'),
+    require.resolve('./src/js/chatbot.js'),
   ],
   i18n: {
     defaultLocale: 'en',
@@ -23,13 +25,15 @@ const config: Config = {
       'classic',
       {
         docs: {
-          breadcrumbs: false,
+          breadcrumbs: true,
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/FlutterFlow/flutterflow-documentation/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           exclude: ['docs/index.md'],
+          sidebarCollapsible: true, /* Keep sidebar expanded by default */
+          sidebarCollapsed: true, /* Start with sidebar expanded */
           // lastVersion: 'current',
           // versions: {
           //   current: {
@@ -81,6 +85,12 @@ const config: Config = {
           docId: 'troubleshooting/index',
           position: 'left',
           label: 'Troubleshooting',
+        },
+        {
+          type: 'doc',
+          docId: 'ff-designer/index',
+          position: 'left',
+          label: 'Designer',
         },
         {
           href: 'https://github.com/FlutterFlow/flutterflow-documentation',

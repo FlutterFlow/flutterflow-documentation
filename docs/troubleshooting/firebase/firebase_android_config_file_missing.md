@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'android', 'configuration']
-slug: troubleshooting/firebase/firebase-android-config-file-missing
+slug: /troubleshooting/firebase/firebase-android-config-file-missing
 title: Firebase Android Config File Missing
 ---
 

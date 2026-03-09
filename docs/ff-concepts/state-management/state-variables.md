@@ -49,5 +49,14 @@ You can learn more about state management from this video:
 :::
 
 
+## Rebuild [Action]
 
+The **Rebuild** action allows you to refresh a page or a component’s UI. This is especially useful when data changes dynamically; for example, after an API call, a database update, a custom action, or a class method modifies the internal state, and you want the latest data or UI state to be reflected instantly.
 
+The Rebuild action provides different update types depending on where it is used:
+
+- **Rebuild Page:** When on a page, you will see the **Rebuild Current Page** option, which refreshes the entire page’s UI.
+- **Rebuild Component:** When on a component, you will see the **Rebuild Current Component** option, which refreshes only that specific component.
+    - **Rebuild Containing Page:** When on a component, you will see this option as well, which refreshes the entire page that contains the component. For example, if you have a **"Confirm"** button inside a dialog component that updates an order’s status, selecting this action will refresh the parent page to instantly show the updated order list.
+
+![rebuild](imgs/rebuild.avif)

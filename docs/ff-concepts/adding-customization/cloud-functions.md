@@ -90,7 +90,7 @@ On the right side, you can configure the following Boilerplate Settings:
 3. **Require Authentication**: Turn on this setting if you want users to be authenticated to execute this cloud function.
 4. **Cloud Function Region**: This determines the geographical location of the servers where your functions are hosted and executed. Ideally, you should keep this same as your *Default GCP resource location* and the Cloud Function Region specified in the Firebase Advanced Settings.
 
-![img_8.png](imgs/img_8.png)
+![cf-region.avif](imgs/cf-region.avif)
 
 #### Configuring Input & Output
 

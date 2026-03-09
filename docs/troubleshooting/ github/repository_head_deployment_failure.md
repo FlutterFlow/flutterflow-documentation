@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'github', 'repository', 'codemagic']
-slug: troubleshooting/github/repository-head-deployment-failure
+slug: /troubleshooting/github/repository-head-deployment-failure
 title: Repository Head Deployment Failure
 ---
 

@@ -94,8 +94,42 @@ com/embed/62fd114580c94b0e84e837f19e5b57f8?sid=002d6a75-25c0-426f-9b09-9300f0cd5
 <p></p>
 <p></p>
 
-- **Auto Size:** This automatically adjusts the font size of the text to fit the space 
-available within the widget boundaries. It ensures that the text remains legible without overflowing its container, making it especially handy for responsive designs where the display may vary across different devices.
+- **Auto Size** 
+
+    The `Auto Size` option allows the `Text` widget to automatically reduce its font size to fit within its parent widget. This ensures that the text remains legible without overflowing its container, making it especially handy for responsive designs where the display may vary across different devices.
+
+        - **Configure Parent Widget Dimensions**
+
+            To enable `Auto Size`, the `Text` widget must be inside a widget that has both defined width and height. Without these constraints, the font size cannot be adjusted automatically.
+
+            1. Select the `Text` widget.
+            2. Check its parent widget.
+            3. Ensure both width and height are explicitly defined.
+
+                :::warning
+                Without defined dimensions, the `Auto Size` feature may not behave as expected.
+                :::
+
+        - **Behavior Scenarios**
+
+            The following examples illustrate how `Auto Size` behaves under different container configurations:
+
+            - Container with width set to `infinity` and height set to `100px`, `Auto Size` disabled. The text may overflow beyond the container.
+            - Container with width set to `infinity` and height set to `100px`, `Auto Size` enabled. The font size adjusts to fit the defined height.
+            - Container with width set to `30%` and no height defined, `Auto Size` enabled. The feature has no visible effect due to missing height constraint.
+            - Container with width set to `70%` and height set to `50px`, `Auto Size` enabled. The text is resized to the minimum allowed font size to remain within the container.
+
+                ![](../built-in-widgets/imgs/20250430121459696014.png)
+
+:::tip
+                Use `Auto Size` with percentage-based dimensions for better responsiveness. For example, set the container width to `30%` and enable `Auto Size` to allow the text size to adjust as the screen size changes.
+:::
+
+:::note
+                The `Auto Size` feature has a minimum font size threshold. If the container becomes too small, text may clip or overflow when resizing is no longer possible.
+:::
+
+
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/caf1377d41d44238996fa66d06d63cb4?sid=f05598ca-e44f-4db6-bb72-82692de0ffc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

@@ -10,11 +10,11 @@ keywords: [FlutterFlow, MarketPlace, Creators Hub]
 # Creators Hub
 Welcome to the FlutterFlow Marketplace Creators' Hub! This section is designed to provide you with all the necessary information to contribute effectively and responsibly to Marketplace. Whether you are submitting your first item or looking to understand the legal nuances, you'll find detailed guidelines and helpful tips here.
 
-### **Submitting an Item for Review**
+### Submitting an Item for Review
 - Understand the [criteria](submission-criteria.md) we apply to items submitted to Marketplace.
 - Learn how to prepare and [submit](submit-item-for-review.md) your items to the Marketplace with our step-by-step guide.
 
-### **Legal Guidelines for Creators**
+### Legal Guidelines for Creators
 
 A user-friendly [guide](legal-guidelines-for-creators.md) outlining what content can and cannot be published on our Marketplace.
 

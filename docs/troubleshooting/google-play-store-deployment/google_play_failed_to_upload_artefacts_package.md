@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'error', 'package']
-slug: troubleshooting/google-play-store-deployment/google-play-failed-to-upload-artefacts-package
+slug: /troubleshooting/google-play-store-deployment/google-play-failed-to-upload-artefacts-package
 title: Google Play Failed to Upload Artefacts
 ---
 

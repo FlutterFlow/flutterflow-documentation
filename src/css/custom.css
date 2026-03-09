@@ -15,6 +15,67 @@
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
   --inline-code-bg-color: #fafafa; /* Light mode background */
   --inline-code-text-color: #aa54bf; /* Light mode text color */
+  
+  /* Custom background colors for main site and cards */
+  --custom-background-light: rgba(255, 255, 255, 0.95);
+  --custom-background-dark: rgba(10, 9, 9, 1);
+
+  --ifm-card-text-color: #333333;
+  --ifm-card-background-color: #000171717;
+  --ifm-border-color: #cdcdcd; /* Border color */
+  --ifm-background-color: #f5f5f5; /* Dark background color */
+
+  /* Sidebar color variables for both themes */
+  --sidebar-level1-color: #333333; /* Dark color for light mode level 1 */
+  --sidebar-level2-color: #6b6b6b; /* Medium gray for light mode level 2 */
+  --sidebar-level3-color: #6b6b6b; /* Light gray for light mode level 3 */
+  
+  /* Sidebar selected/active state variables */
+  --sidebar-selected-text-color: var(--sidebar-level1-color); /* Use level 1 color for selected text */
+  --sidebar-selected-bg-color: rgba(239, 136, 57, 0.95); /* More visible purple background for light mode */
+  --sidebar-hover-bg-color: rgba(75, 57, 239, 0.95); /* More visible hover background for light mode */
+  --ifm-color-emphasis-100: #ebebeb;
+}
+
+
+/* Direct body text styling that will override Docusaurus */
+body {
+  color: #d7d7d7 !important; 
+}
+
+/* Light mode body text */
+[data-theme='light'] body {
+  color: #333333 !important; /* Dark text for light mode */
+}
+
+/* Dark mode body text */
+[data-theme='dark'] body {
+  color: #d7d7d7 !important; 
+}
+
+/* Global background pattern for all pages */
+html {
+  background-image: url('/img/grid-pattern.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 500px 500px;
+  background-position: calc(100% - 20px) 20px;
+  background-color: transparent;
+  position: relative;
+}
+
+
+/* Light mode background with opacity */
+html[data-theme='light'] {
+  background-color: var(--custom-background-light);
+  background-blend-mode: multiply;
+}
+
+/* Dark mode background with opacity */
+html[data-theme='dark'] {
+  background-color: var(--custom-background-dark);
+  background-image: url('/img/grid-pattern-dark.png');
+  /* background-blend-mode: soft-light; */
 }
 
 html[data-theme='dark'] {
@@ -31,6 +92,20 @@ html[data-theme='dark'] {
   --ifm-color-primary-lighter: #6050f6; /* Even lighter shade for backgrounds (Adjusted) */
   --ifm-color-primary-lightest: #6c5cfa; /* Lightest primary shade (Adjusted) */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Line highlighting in code */
+  /* Appbar background using our custom variable */
+  --ifm-navbar-background-color: var(--custom-background-light);
+  --ifm-card-border-color: var(--ifm-color-primary);
+
+  /* Text colors for light mode */
+  --ifm-text-color: #2b2b2b; /* Primary text color */
+  --ifm-text-secondary-color: #666666; /* Secondary text color */
+
+}
+
+h1 {
+  font-size: 2.5rem !important; /* Adjust this value as needed */
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 [data-theme='dark'] {
@@ -47,14 +122,133 @@ html[data-theme='dark'] {
   --ifm-background-secondary-color: #2a2a2a; /* Slightly lighter background for contrast */
   --ifm-background-code-color: #2a2a2a; /* Background for code blocks */
   --ifm-background-code-line-color: #333; /* Background for highlighted lines in code blocks */
-  --ifm-text-color: #e0e0e0; /* Primary text color */
-  --ifm-text-secondary-color: #c0c0c0; /* Secondary text color */
+  --ifm-text-color: #dfdfdf; /* Primary text color */
+  --ifm-text-secondary-color: #ffffff; /* Secondary text color */
+  --ifm-text-sidebar-text-color: #888888; /* Secondary text color */
+
   --ifm-border-color: #444; /* Border color */
   --ifm-hover-color: #555; /* Hover color for interactive elements */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
   --inline-code-bg-color: #464752; /* Dark mode background */
   --inline-code-text-color: #eca1ff; /* Dark mode text color */
+  
+  /* Appbar background using our custom variable */
+  --ifm-navbar-background-color: var(--custom-background-dark);
+  --ifm-card-border-color: var(--ifm-color-primary);
+  --ifm-card-text-color: #ffffff;
+
+  /* Dark mode sidebar color variables */
+  --sidebar-level1-color: #ffffff; /* White color for dark mode level 1 */
+  --sidebar-level2-color: var(--ifm-text-sidebar-text-color); /* Custom sidebar text color for dark mode level 2 */
+  --sidebar-level3-color: var(--ifm-text-sidebar-text-color); /* Custom sidebar text color for dark mode level 3 */
+  
+ }
+
+/* Card hover effects */
+.card:hover {
+  border-color: var(--ifm-card-border-color) !important;
+  transform: translateY(-2px) !important;
+  transition: transform 0.2s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
 }
+
+[data-theme='dark'] .card:hover {
+  border-color: var(--ifm-card-border-color) !important;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
+/* Level 1: Main category headers (only the top level) */
+.menu__list-item:first-child .menu__link--sublist,
+.menu__list-item .menu__link--sublist:first-child {
+  color: var(--sidebar-level1-color) !important; /* Uses theme-appropriate color */
+  font-weight: 600;
+}
+
+/* Level 2: Sub-category items (items within categories) */
+.menu__list-item .menu__list-item .menu__link--sublist {
+  color: var(--sidebar-level2-color) !important; /* Uses theme-appropriate color */
+  font-weight: 500;
+}
+
+/* Level 3: Individual page links (deepest level) - using the correct class */
+.menu__list-item .menu__list-item .menu__list-item a.menu__link {
+  color: var(--sidebar-level3-color) !important; /* Uses theme-appropriate color */
+  font-weight: 500;
+}
+
+/* Also target individual page links that might be at different nesting levels */
+a.menu__link {
+  color: var(--sidebar-level3-color) !important; /* Uses theme-appropriate color */
+  font-weight: 500;
+}
+
+.theme-doc-sidebar-menu
+  > li.theme-doc-sidebar-item-link-level-1:not(.theme-doc-sidebar-item-category):nth-of-type(-n+4)
+  > a.menu__link { color: var(--sidebar-level1-color) !important; 
+  font-weight: 600 !important;
+  }
+
+/* Selected/Active state styling for all sidebar items */
+.menu__link--active,
+.menu__link--sublist--active {
+  color: var(--ifm-text-sidebar-text-color) !important; /* Selected text color */
+  font-weight: 600 !important;
+}
+
+
+/* Target parent categories when they contain the active page */
+.menu__list-item--active .menu__link--sublist {
+  color: var(--ifm-text-sidebar-text-color) !important; /* Selected text color */
+  background-color: var(--sidebar-selected-bg-color) !important; /* Selected background color */
+  font-weight: 600 !important;
+}
+
+
+
+
+/* Hover state styling for all sidebar items */
+.menu__link:hover,
+.menu__link--sublist:hover {
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+
+
+/* Even more general sidebar text targeting */
+.theme-doc-sidebar-container * {
+  font-size: 14px !important;
+}
+
+/* Add spacing between parent sidebar categories */
+.theme-doc-sidebar-item-category-level-1 {
+  margin-bottom: 0.5rem !important; /* Space between main categories */
+  padding-bottom: 1rem !important; /* Internal padding */
+}
+
+/* Special spacing for troubleshooting section */
+.theme-doc-sidebar-item-category-level-1:has(.menu__link[href*="troubleshooting"]) {
+  padding-bottom: 0px !important; /* Reduced padding for troubleshooting */
+}
+
+/* Add space after the last category */
+.theme-doc-sidebar-item-category-level-1:last-child {
+  margin-bottom: 0 !important; /* No margin after the last category */
+}
+
+/* Add space between sub-items within each category */
+.theme-doc-sidebar-item-category-level-2,
+.theme-doc-sidebar-item-link-level-3 {
+  margin-bottom: 0rem !important; /* Space between sub-items */
+}
+
+
+
 .small-image {
   width: 400px;
   height: auto;
@@ -235,3 +429,76 @@ code {
 .navbar-flutterflow-button:hover {
   background-color: #3B39EFFF; /* Slightly darker purple on hover */
 }
+
+.theme-doc-sidebar-container {
+  border-right: none !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Sidebar font sizes for all levels */
+.theme-doc-sidebar-container {
+  font-size: 14px !important; /* Base font size for sidebar */
+}
+
+/* Level 1 (Parent categories) */
+.theme-doc-sidebar-item-category-level-1 .menu__link--sublist,
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item > .menu__link--sublist {
+  font-size: 14px !important; /* Larger for main categories */
+  font-weight: 600 !important;
+}
+
+/* Level 2 (Subcategories) */
+.theme-doc-sidebar-item-category-level-2 .menu__link--sublist,
+.theme-doc-sidebar-item-category-level-2 > .menu__list-item > .menu__link--sublist {
+  font-size: 14px !important; /* Medium for subcategories */
+  font-weight: 500 !important;
+}
+
+/* Level 3 (Individual pages) */
+.theme-doc-sidebar-item-link-level-3 .menu__link,
+.menu__list-item .menu__list-item .menu__link {
+  font-size: 13px !important; /* Smaller for individual pages */
+  font-weight: 400 !important;
+}
+
+/* All sidebar links general sizing */
+.menu__link,
+.menu__link--sublist {
+  font-size: 14px !important; /* Default size for all sidebar links */
+}
+
+/* Caret icon sizing */
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+
+/* Different padding for different sidebars */
+
+/* Main Documentation Sidebar */
+.theme-doc-sidebar-container {
+  padding: 10px !important; /* Default padding for main docs */
+}
+
+/* Marketplace Sidebar - target by URL or specific class */
+[data-theme='light'] .theme-doc-sidebar-container:has(.menu__link[href*="marketplace"]),
+[data-theme='dark'] .theme-doc-sidebar-container:has(.menu__link[href*="marketplace"]) {
+  padding: 10px !important; /* More padding for marketplace */
+}
+
+/* Troubleshooting Sidebar - target by URL or specific class */
+[data-theme='light'] .theme-doc-sidebar-container:has(.menu__link[href*="troubleshooting"]),
+[data-theme='dark'] .theme-doc-sidebar-container:has(.menu__link[href*="troubleshooting"]) {
+  padding: 10px !important; /* Medium padding for troubleshooting */
+  margin-bottom: 2px !important;
+}
+
+
+
+

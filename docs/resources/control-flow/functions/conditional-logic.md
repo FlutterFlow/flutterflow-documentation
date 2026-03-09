@@ -94,7 +94,7 @@ Here's a quick demo to illustrate a simple Single Condition Action flow:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/SPvvln7RqEx25mL9eQ4t?embed&show_copy_link=true"
+        src="https://demo.arcade.software/Fq8aWMfDhT6W6NztdkMb?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -125,7 +125,7 @@ enabling the Multiple Conditions toggle. Here's how:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/sSiA90fRKnsZkTLOyPFg?embed&show_copy_link=true"
+        src="https://demo.arcade.software/XgXNr05yL21n3IgZPsxS?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',

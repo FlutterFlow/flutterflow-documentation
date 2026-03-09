@@ -114,6 +114,10 @@ Here's a quick guide to updating the app state variable. We need to add an actio
     </iframe>
 </div>
 
+:::tip
+If you want to rebuild a page or component without updating any state variables, use the [**Rebuild**](../../ff-concepts/state-management/state-variables.md#rebuild-action) state action.
+:::
+
 ## FAQs
 
 <details>

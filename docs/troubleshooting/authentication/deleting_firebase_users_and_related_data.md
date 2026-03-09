@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase-auth', 'delete-user', 'firestore-cleanup']
-slug: troubleshooting/authentication/deleting-firebase-users-and-related-data
+slug: /troubleshooting/authentication/deleting-firebase-users-and-related-data
 title: Deleting Firebase Users and Related Data
 ---
 # Deleting Firebase Users and Related Data

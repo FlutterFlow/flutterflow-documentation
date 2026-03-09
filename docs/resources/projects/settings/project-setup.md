@@ -218,21 +218,21 @@ By default, the generated project can run on Android, iOS, and the Web without a
 - **Compile SDK Version**: This refers to the version of Android that your code is compiled against. It determines the APIs your app can use. To change it, enter the desired SDK version here.
 - **Target SDK Version**: This is the version of Android that your app is intended to run on. It helps Android ensure forward compatibility by applying certain behavior changes only if the target SDK is high enough. To adjust this, enter the desired version here.
 
----
-
 ### Advanced iOS Settings
 
 - **Disable iPad Support:** If the app is specifically designed for an iPhone and doesn't provide a good user experience on an iPad, you might want to trun on this setting.
 - **Minimum iOS Version**: This specifies the lowest version of iOS that your app can run on.
-
----
 
 ### Advanced Web Settings
 
 - **Use Original Engine Initialization**: This setting uses the original Flutter web engine initialization, which can sometimes improve loading times in deployed web apps. Enable this option if you experience performance issues with the custom initialization process.
 - **Use CanvasKit**: CanvasKit provides better performance and fidelity for rendering on the web by leveraging WebAssembly. This setting can improve the visual quality and performance of your app, especially for complex graphics and animations. Enable this option to use CanvasKit for rendering on the web.
 
----
+:::warning
+While FlutterFlow can generate project code for **macOS** and **Windows**, these platform targets are **currently in Alpha** and provided as-is. FlutterFlow does not provide infrastructure for building, debugging, or running apps on these platforms, and our **Support team is unable to assist** with issues related to macOS or Windows builds. However, the generated code can still be opened, built, and debugged using standard Flutter tooling such as Android Studio or VS Code.
+
+This applies only to the deployment platform options, not to the FlutterFlow Desktop application itself.
+:::
 
 ## Multiple Languages
 To support multiple languages in your app, refer [here](../../../ff-concepts/localization-accessibility/localization.md).

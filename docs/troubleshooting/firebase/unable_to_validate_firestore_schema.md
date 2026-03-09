@@ -1,6 +1,6 @@
 ---
 keywords: ['schema', 'database', 'firestore']
-slug: troubleshooting/firebase/unable-to-validate-firestore-schema
+slug: /troubleshooting/firebase/unable-to-validate-firestore-schema
 title: Unable to Validate Firestore Schema
 ---
 

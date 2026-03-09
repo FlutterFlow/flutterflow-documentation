@@ -1,6 +1,6 @@
 ---
 keywords: ['firebase', 'issues', 'configuration']
-slug: troubleshooting/backend/resolving-firebase-configuration-issues
+slug: /troubleshooting/backend/resolving-firebase-configuration-issues
 title: Resolving Firebase Configuration Issues
 ---
 # Resolving Firebase Configuration Issues

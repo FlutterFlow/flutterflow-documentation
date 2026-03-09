@@ -1,6 +1,6 @@
 ---
 keywords: ['listview', 'returning', 'only']
-slug: troubleshooting/backend/listview-returning-only-one-item
+slug: /troubleshooting/backend/listview-returning-only-one-item
 title: ListView Returning Only One Item
 ---
 # Fix ListView Only Returning One Item

@@ -13,10 +13,6 @@ From here, you can manage billing for your team, edit projects simultaneously, a
 
 With the ability to easily collaborate and share resources, you can create amazing apps faster than ever before.
 
-:::info
-Learn [**how to create a team**](../../accounts-billing/subscriptions/flutterflow-for-teams.md) to get started.
-:::
-
 
 
 <figure>

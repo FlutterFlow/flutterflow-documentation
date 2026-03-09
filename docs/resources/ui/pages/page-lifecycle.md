@@ -327,12 +327,16 @@ update, create a new Action called **Update Page State**.
 When updating your page state in Flutter, you'll often come across the **Update
 Type** property in your Action properties. Here's what it means:
 
-**Rebuild Current Type:** This option triggers a re-rendering of the page,
+**Rebuild Current Page:** This option triggers a re-rendering of the page,
 ensuring
 that any changes to the state are reflected in the user interface (UI).
 
 **No Rebuild:** Choose this option when you need to update the state without
 immediately reflecting the changes in the UI.
+
+:::tip
+If you want to rebuild a page without updating any state variables, use the [**Rebuild**](../../../ff-concepts/state-management/state-variables.md#rebuild-action) state action.
+:::
 
 :::warning[Expensive Rebuilds]
 Too many rebuilds can impact performance because rebuilding the widget tree

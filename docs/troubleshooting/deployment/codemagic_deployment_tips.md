@@ -1,6 +1,6 @@
 ---
 keywords: ['deployment', 'tips', 'codemagic']
-slug: troubleshooting/deployment/codemagic-deployment-tips
+slug: /troubleshooting/deployment/codemagic-deployment-tips
 title: CodeMagic Deployment Tips
 ---
 # CodeMagic Deployment Tips

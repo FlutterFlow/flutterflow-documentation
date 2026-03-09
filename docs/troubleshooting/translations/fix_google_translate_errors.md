@@ -1,6 +1,6 @@
 ---
 keywords: ['translation', 'localization', 'google']
-slug: troubleshooting/translations/fix-google-translate-errors
+slug: /troubleshooting/translations/fix-google-translate-errors
 title: Fix Google Translate Errors
 ---
 

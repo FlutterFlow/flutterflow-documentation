@@ -1,6 +1,6 @@
 ---
 keywords: ['storage', 'firebase', 'missing']
-slug: troubleshooting/firebase/missing-firebase-storage-in-flutterflow-settings
+slug: /troubleshooting/firebase/missing-firebase-storage-in-flutterflow-settings
 title: Missing Firebase Storage in FlutterFlow Settings
 ---
 
