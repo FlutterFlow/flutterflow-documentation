@@ -2414,6 +2414,16 @@
         "type": 301
       },
       {
+        "source": "/integrations/mux/initial-setup",
+        "destination": "/integrations/mux",
+        "type": 301
+      },
+      {
+        "source": "/integrations/mux/getting-started",
+        "destination": "/integrations/mux",
+        "type": 301
+      },
+      {
         "source": "/configuring-cors-for-firebase-storage",
         "destination": "/troubleshooting/firebase/configuring-cors-for-firebase-storage",
         "type": 301

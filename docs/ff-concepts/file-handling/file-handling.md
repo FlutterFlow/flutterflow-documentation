@@ -19,7 +19,7 @@ FlutterFlow makes it easy to manage, upload, download, and display files within 
 
 :::info[Also see]
 
-- **Stream Media with Mux**: [**Integrate Mux's broadcasting**](../../ff-integrations/streaming/mux/initial-setup.md) services in FlutterFlow by using the MuxBroadcast widget for live streaming.
+- **Stream Media with Mux**: [**Integrate Mux's broadcasting**](../../ff-integrations/streaming/integrate-mux.md) services in FlutterFlow by using the MuxBroadcast widget for live streaming.
 - **Request Permissions**: [**Request user permissions**](../../resources/projects/settings/project-setup.md#request-permission-action) when implementing custom widgets or actions that access personal information, such as capturing photos or selecting images, especially if no built-in permission mechanism is available.
 
 :::
