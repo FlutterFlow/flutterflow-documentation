@@ -25,10 +25,10 @@ For example, imagine a user adds a product to the cart from a product detail she
 
 An **Event** is a named signal that indicates something happened in your app. For example:
 
-- `internetConnectionChanged` : The device’s network connectivity status changed (e.g., went offline or came back online)
-- `cartUpdated` : An item was added to or removed from the cart
+- `Internet Connection Changed` : The device’s network connectivity status changed (e.g., went offline or came back online)
+- `Cart Updated` : An item was added to or removed from the cart
 
-You can also pass relevant details along with an event. For example, a `cartUpdated` event might include information about the specific product that was added or removed. This data can be defined using a **FlutterFlow [DataType](../../resources/data-representation/data-types.md)** to ensure the event carries structured and consistent information.
+You can also pass relevant details along with an event. For example, a `Cart Updated` event might include information about the specific product that was added or removed. This data can be defined using a **FlutterFlow [DataType](../../resources/data-representation/data-types.md)** to ensure the event carries structured and consistent information.
 
 ### Event Handlers
 
@@ -44,6 +44,7 @@ App Events can be scoped as **Global** or **Local**, which determines **where th
 | **Number of handlers** | Exactly one (the assigned Action Block) | Many — any page or component can add a handler |
 | **Subscription management** | Automatic — always active | Manual — handlers are added and cancelled using actions |
 | **Best for** | App-wide concerns such as analytics, logging, authentication state, or global notifications | Page or component reactions such as refreshing lists, updating widgets, or syncing UI elements |
+| **Processing** | Sequential queue (events processed one at a time) | Broadcast stream (all subscribers notified immediately) |
 
 
 ### Actions
@@ -62,14 +63,14 @@ Follow the steps below to use App Events in your app:
 
 1. Open the **App Events** page from the left sidebar.
 2. Click the **+** button to create a new event.
-3. Enter a name of the event (for example, `CartUpdated`).
+3. Enter a name of the event.
 4. Configure the event settings:
     - **Description** *(optional):* Add a short explanation of when and why this event fires. This description appears as a comment in the generated Dart code.
     - **Scope:** Choose **Global** or **Local** depending on where the event should be handled.
     - **Include Event Data:** Enable this if the event needs to pass additional information when it fires.
     - **Data Type:** If event data is enabled, select the **DataType** that defines the structure of the event payload.
     - **Nullable:** Specify whether the event data can be `null`.
-5. **If the scope is Global**, assign a handler **Action Block**. This Action Block runs automatically whenever the event is triggered and must accept the required parameters (context and, if enabled, the event data).
+5. **If the scope is Global**, assign a handler **Action Block**. This Action Block runs automatically whenever the event is triggered. If the event includes data, the Action Block must have a parameter matching the event's Data Type.
 
 <div style={{
     position: 'relative',
@@ -104,7 +105,7 @@ Follow the steps below to use App Events in your app:
 3. Configure the action:
     - **Event to Trigger:** Select the app event you created.
     - **App Event Data:** If the event includes data, provide the values to pass with the event.
-    - **Wait for Completion:** If enabled (default), the action chain waits until the event finishes handling before continuing. Disable it for fire-and-forget behavior.
+    - **Wait for Completion (Global events only):** If enabled (default), the event queue waits until the handler Action Block completes before processing the next queued event. Disable it for fire-and-forget behavior. This option is not shown for local events.
     - **Debug ID** *(optional):* Add a label to help identify this trigger during debugging.
 
 
@@ -146,7 +147,7 @@ No additional setup is required. The Action Block you created in [Step 1](#1-cre
 2. Add a new action as **Add Local App Event Handler**.
 3. Configure the handler as per the following:
     - **Local App Event to Handle:** Select the event you want this page or component to listen for.
-    - **Handler Action Block:** Choose the Action Block that should run when the event is triggered.
+    - **Handler Action Block:** Choose the Action Block that should run when the event is triggered. If the event includes data, the Action Block must have a parameter matching the event's Data Type.
 
 
 <div style={{
@@ -175,7 +176,7 @@ No additional setup is required. The Action Block you created in [Step 1](#1-cre
 </div>
 <p></p>
 
-*(Optional)* If you want to stop listening later (for example, before navigating away), add a **Cancel Local App Event Handler** action and select the same event.
+*(Optional)* If you want to stop listening later (for example, after a certain condition is met or a toggle is switched off), add a **Cancel Local App Event Handler** action and select the same event.
 
 <div style={{
     position: 'relative',
@@ -235,7 +236,7 @@ Here’s the complete setup:
 1. Create a **DataType** called `ConnectivityStatus` with the following fields:
     - `isConnected` (Boolean)
     - `connectionType` (String) → `wifi`, `mobile`, or `none`
-2. Create a **Global App Event** called `InternetConnectionChanged` with the following configurations:
+2. Create a **Global App Event** called `Internet Connection Changed` with the following configurations:
     - Scope: **Global**
     - Include Event Data: **On**
     - Data Type: `ConnectivityStatus`
@@ -267,7 +268,7 @@ Because this is a **local event**, only the pages or components that subscribe t
 
 Here’s the complete setup:
 
-1. Create a **Local App Event** called `DashboardDataChanged`  with the following configurations:
+1. Create a **Local App Event** called `Dashboard Data Changed`  with the following configurations:
     - Scope: **Local**
     - Include Event Data: **Off**
 2. On each **dashboard tab component** (typically on **On Component Load**):
@@ -290,10 +291,11 @@ Understanding the event lifecycle helps you design reliable event-driven flows. 
 
 Here are a few things to remember:
 
-- Events are **queued and processed sequentially**. If multiple events are triggered quickly, they run **one after another**, not in parallel.
-- **Wait for Completion** (enabled by default) pauses the action flow until the event handler finishes. Disable it if you want **fire-and-forget** behavior.
-- **Global events** always run their assigned handler, no matter where the event is triggered in the app.
-- **Local event handlers** exist only while their page or component is active. When the page is disposed, the event subscription is automatically removed.
+- **Global events** are queued and processed sequentially. If multiple global events are triggered quickly, they run one after another, not in parallel.
+- **Local events** are broadcast to all active subscribers immediately when triggered.
+- **Wait for Completion** (Global events only, enabled by default) makes the event queue wait until the handler Action Block completes before processing the next event. Disable it for fire-and-forget behavior.
+- **Global events** always run their assigned handler, no matter where the event is triggered.
+- **Local event** handlers exist only while their page or component is active. When the page is disposed, the subscription is automatically removed.
 
 ## Best Practices
 
@@ -325,6 +327,12 @@ Examples:
 
 This makes action flows read naturally, for example, “When `Cart Updated` is triggered, refresh the product list.”
 
+:::info
+FlutterFlow automatically generates a camelCase identifier from this name behind the scenes, which is used internally in code. Examples:
+- `User Logged In` → `userLoggedIn`
+- `Cart Updated` → `cartUpdated`
+- `Payment Completed` → `paymentCompleted`
+:::
 
 ### Keep Handlers Focused
 
@@ -420,6 +428,8 @@ Why are events firing in an unexpected order?
 App Events are processed sequentially through an event queue. If <b>Wait for Completion</b> is enabled (<code>true</code>), each event finishes handling before the next one starts.
 
 If the order seems unexpected, check whether some triggers have <b>Wait for Completion</b> set to <code>false</code>, which allows subsequent events to start before the previous event finishes.
+
+**Also note** that global events are processed sequentially through a queue, while local events are broadcast immediately to all active subscribers and do not go through the queue.
 </p>
 
 </details>
