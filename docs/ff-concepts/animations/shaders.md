@@ -228,6 +228,8 @@ Provides full control over the animation timeline. You can define how the animat
 
 Some shader presets support touch and tap interactions, allowing users to directly influence the visual effect. When **Interactive** is enabled, users can tap or drag on the shader to trigger dynamic responses such as ripples, burn marks, distortions, or smearing effects, making the UI feel more engaging and responsive.
 
+![st](animation_gifs/st.gif)
+
 **The following presets are Interactive:**
 
 - **Fill:** Marble Smear (drag to smear)
