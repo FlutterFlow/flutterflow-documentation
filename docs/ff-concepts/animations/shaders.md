@@ -252,3 +252,108 @@ The **Cache** option improves performance by storing the shader’s rendered out
 Disable caching if your shader needs to update continuously, such as in animations or real-time interactive effects that change every frame.
 
 :::
+
+## Custom Shaders
+
+Custom Shaders allow you to create fully custom visual effects by uploading your own `.frag` (fragment shader) file. This gives you complete control over how pixels are rendered.
+
+Here’s how to add a custom shader:
+
+1. Create a Flutter-compatible `.frag` (fragment shader) file. You can generate it using ChatGPT or Claude by describing the effect you want. You can also start from an [existing shader](https://github.com/FlutterFlow/material_palette/blob/main/lib/shaders/perlin_gradient.frag) and modify it. Example Prompt: 
+    
+    ```
+    Create a Flutter-compatible GLSL .frag shader for a soft animated onboarding background using Flutter runtime effect format. {describe your effect here} Return complete shader code and a downloadable .frag file.
+    ```
+
+1. Upload the `.frag` file using the **Shader Asset** picker in FlutterFlow.
+2. After uploading, use **Add Uniform** to define input values for your shader. Each uniform is a slider value from 0 to 10.
+
+In the builder, custom shaders appear as a checkerboard placeholder. To view the actual rendered effect, run or test your app.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/uTnN9k6o22rVN0g25Wde?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Adding Uniforms
+
+Uniforms are simply input parameters that you pass to a custom shader. In FlutterFlow, they appear as sliders in the UI, similar to how you adjust settings (like speed, colors, or intensity) in preset shaders.
+
+#### Order is everything
+
+Uniforms are not matched by name. They are passed strictly in the order they are declared in the shader. This means the first uniform you declare receives the first value from the UI, the second uniform receives the next values, and so on.
+
+Example:
+
+```
+uniform float speed;   // 1st
+uniform vec4 color;    // 2nd
+```
+
+In the UI, you must provide values in this exact sequence:
+
+- Uniform 1 → `speed`
+- Uniform 2 → `color` (since `vec4` = 4 float values)
+
+![uniform](animation_gifs/uniform.avif)
+
+:::warning
+If the order does not match, the shader will receive incorrect values, which can result in broken visuals or unexpected behavior.
+:::
+
+#### Everything becomes floats
+
+When you have the following uniform in shader file:
+
+```
+uniform vec4 color;
+```
+
+FlutterFlow treats it as:
+
+```
+float r
+float g
+float b
+float a
+```
+
+#### Default uniforms
+
+Even if you don’t write them, FlutterFlow **always passes these first**:
+
+```
+uniform vec2 uSize;
+uniform float uTime;
+```
+
+So your shader MUST assume these exist at the top. Meaning your file should start like:
+
+```
+uniform vec2 uSize;
+uniform float uTime;
+
+uniform float speed;
+uniform vec4 color;
+```
