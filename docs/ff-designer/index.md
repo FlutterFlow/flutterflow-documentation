@@ -36,20 +36,21 @@ Because FlutterFlow Designer is built to quickly turn ideas into fully editable 
 
 Here’s how you generate an initial screen design, refine, and export it:
 
-1. Go to the **main prompt box** and write your app vision with important details (e.g., app type, target users, key screens, primary actions, and any must-have features). For example: *"Design a travel planning app with a modern card-based layout, destination image grids, a bottom navigation bar with Explore, Trips, Bookings, and Account tabs, saved itineraries, map integration, and a trip detail screen with timeline and booking information."*
-2. Optionally, [**attach an image**](#add-image-attachments) such as a sketch, wireframe, or screenshot using the image attachment button below the prompt field. The Designer will use it as a reference to transform it into a fully editable design.
-3. Use the mobile and desktop toggle to set your target platform. This ensures your designs are generated with the correct layout and screen dimensions for your intended device.
-4. Click the **submit** (up-arrow) button to generate your design storyboard.
-5. Review the generated screens. Scan through the generated frames to confirm:
+1. You can select [**Explore Styles**](#explore-styles) to first browse and refine design ideas, or choose **Instant Generation** to skip that step and quickly create designs from your prompt.
+2. Go to the **main prompt box** and write your app vision with important details (e.g., app type, target users, key screens, primary actions, and any must-have features). For example: *"Design a travel planning app with a modern card-based layout, destination image grids, a bottom navigation bar with Explore, Trips, Bookings, and Account tabs, saved itineraries, map integration, and a trip detail screen with timeline and booking information."*
+3. Optionally, [**attach an image**](#add-image-attachments) such as a sketch, wireframe, or screenshot using the image attachment button below the prompt field. The Designer will use it as a reference to transform it into a fully editable design.
+4. Use the mobile and desktop toggle to set your target platform. This ensures your designs are generated with the correct layout and screen dimensions for your intended device.
+5. Click the **submit** (up-arrow) button to generate your design storyboard.
+6. Review the generated screens. Scan through the generated frames to confirm:
     - The right screens exist (and no critical screens are missing)
     - The overall flow makes sense
     - The UI direction matches your intent
-6. Select a screen to refine. You can [**use the prompt bar**](#use-ai-prompt) to request changes to the selected screen.
-7. You can also make precise tweaks from the [**Properties panel**](#use-properties-panel). Select an element and adjust its properties on the right side , such as text, typography, spacing, styling,.
-8. To add a new screen, click on an empty area of the canvas, then in the bottom prompt input, describe the screen you want to add. Include its purpose, key UI elements, and how it connects to the overall flow, then submit.
-9. Open the **Theme** tab to edit global styling like colors, typography, spacing, and radius so the entire design stays consistent.
-10. You can generate a **shareable link** for feedback and review.
-11. To export your design, open the top-left app menu (FF Designer) and choose an **export option**.
+7. Select a screen to refine. You can [**use the prompt bar**](#use-ai-prompt) to request changes to the selected screen.
+8. You can also make precise tweaks from the [**Properties panel**](#use-properties-panel). Select an element and adjust its properties on the right side , such as text, typography, spacing, styling,.
+9. To add a new screen, click on an empty area of the canvas, then in the bottom prompt input, describe the screen you want to add. Include its purpose, key UI elements, and how it connects to the overall flow, then submit.
+10. Open the **Theme** tab to edit global styling like colors, typography, spacing, and radius so the entire design stays consistent.
+11. You can generate a **shareable link** for feedback and review.
+12. To export your design, open the top-left app menu (FF Designer) and choose an **export option**.
 
 <div style={{
     position: 'relative',
@@ -58,6 +59,48 @@ Here’s how you generate an initial screen design, refine, and export it:
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/hGR4rvYpgDskcypTW1Er?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Explore Styles
+
+**Explore Styles** helps you try different visual directions for your app before generating the final design. Instead of going straight to a full build, you can first browse style variations, compare layouts, adjust colors, and guide the design toward the look you want.
+
+This is useful when you already know what your app should do, but want help deciding how it should look.
+
+Once the styles are generated, browse through the generated variants and look for the one that feels closest to your vision. Each style gives you a different take on the same app idea, such as a different layout, spacing, typography, or visual mood.
+
+When you hover over a style, you can use the following options:
+
+- **Regenerate**: Recreates the style if something looks off or needs improvement.
+- **More Like This**: Generates more variations similar to the selected style.
+- **Remix Colors**: Keeps the overall style but changes the color palette.
+- **Prompt for Changes**: Lets you describe specific updates you want for that style.
+- **Use This Style**: Selects that style and starts the full generation process.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Y1d6tFGz5LQnrsuXZPoV?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -163,6 +206,125 @@ Unlike AI-driven changes, edits made here are exact and predictable, making it i
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+## Components
+
+A **component** is a reusable UI building block that you can use across your app design. Instead of creating the same UI again and again, you build it once as a component and reuse it wherever needed. This helps keep your app design consistent and easier to maintain.
+
+When you update a component, all places where it is used automatically get updated.
+
+Imagine you are having a settings screen with multiple rows, such as:
+
+- Notification toggle
+- Privacy option
+- Account settings
+
+Each row has a similar layout with an icon, text, and an action such as switch or arrow. Instead of having each row separately, you can create one **Settings Item component** and reuse it multiple times with different content.
+
+### Creating Component
+
+To create a new component, start by selecting an existing UI block on the canvas. Then click **Create Component** from the right-side panel, give your component a name, and choose the parameters you want to include (such as text, image, or icon). Once you confirm, the component is created and opens in Component Studio.
+
+Inside Component Studio, you can bind these parameters to different UI elements. Select an element, then connect its properties (like text or image) to a parameter from the right panel. You can also add new parameters if needed. This allows each instance of the component to display different content while keeping the same structure and design.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/UL7BkkQMcum84CQnfFAT?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip
+
+Once the component is created, you can also use AI to quickly update your component by describing the changes instead of manually editing everything.
+
+:::
+
+### Create Variants
+
+A **variant** is a different version of the same component that allows you to change its appearance without creating a new component. Variants help you manage multiple styles, states, or layouts in one place to make your components more flexible and reusable. For example, a button component can have variants like **Filled** and **Outlined**.
+
+To create a variant, first open your component and click **Add variant**. This creates a new option for the current component, such as an alternate style or layout. Once the new variant appears, select it and customize its properties to make it visually different from the default version, such as changing borders, spacing, colors, or other styling details.
+
+If you want to introduce a completely new category of variation, click **+ Add variant** again to create a new dimension for the component.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/KBmUhJavLxBjxwA8IqjE?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Add Toggle
+
+A **toggle** lets you switch between two states of a component, such as on/off or active/inactive, within the same component. For example, a settings item can have a toggle to show **enabled** or **disabled** states, or a card can toggle between **selected** and **unselected** styles.
+
+To add a toggle, open your component and click **Add toggle** from the variants panel. This creates a new toggle dimension for your component. Once added, you’ll see two states (i.e., true/false). Select each state and customize the component to define how it should look in each case.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/fN1S8VFY034VMJU0vJ0p?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
