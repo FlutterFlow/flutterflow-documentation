@@ -84,7 +84,7 @@ The **ShaderWrapper** widget automatically takes the size of the child widget it
 
 :::
 
-For example, instead of instantly removing UI elements, you can use the **Shader Wrapper** widget to create a visual effect showing that something has been removed.
+For example, instead of abruptly removing a UI element, wrap it with a **Shader Wrapper** to apply a visual effect that gradually fades or distorts it, helping users understand that it’s being removed.
 
 
 <div style={{
