@@ -14,7 +14,7 @@ Enhancing your app with animations significantly improves the user experience, m
 - [**Hero Animations**](hero_animations.md): Animate a widget that transitions smoothly between screens, also known as shared element transitions.
 - [**Page Transition Animations**](page_transitions.md): Specify transitions between pages within your app.
 - **Import Animations**: Import animations you've created using other tools such [lottiefiles](import-animations/lottie-animation.md) and [Rive](import-animations/rive-animation.md).
-
+- [**Shaders**](shaders.md): Add GPU-powered visual effects like animated backgrounds, distortions, and interactive touch-based visuals to enhance your UI.
 
 To learn more about animations in FlutterFlow, check out this video:
 <div class="video-container"><iframe src="https://www.youtube.com/embed/-quxi_t0eWU?si=GdZBMFcuEZEyFplB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
