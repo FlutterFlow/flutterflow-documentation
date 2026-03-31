@@ -405,6 +405,22 @@ To add a toggle, open your component and click **Add toggle** from the variants 
 </div>
 <p></p>
 
+#### The `Has` Expression
+
+The `Has` expression lets you automatically control a Boolean property based on whether a component parameter has been provided. This is useful when you want part of a component to appear only when data exists, without manually setting a separate true/false value each time.
+
+For example:
+
+- Show an image only when `image_url` is set
+- Show a subtitle only when `subtitle` is set
+- Show a time row only when `time` is set
+
+A `Has` expression checks whether a parameter contains a value. If it does, the result is `true`. If it does not, the result is `false`.
+
+Suppose you have a flight booking card component with an optional image on the right side. Instead of adding both `image_url` and a separate `show_image` flag, you can just use `image_url` and bind the **Visible** property to `has(image_url)`. If an image is provided, the card displays the image, and if not, it just appears as a text-only layout.
+
+![control-using-has-expression](imgs/control-using-has-expression.avif)
+
 ## Edit Theme
 
 Editing a **Theme** allows you to modify the global design system of your entire storyboard at once. Instead of adjusting individual widgets, you can change core styling elements such as brand colors, typography, spacing, corner radius, and text scaling. Any updates made in the Theme Editor automatically apply across all screens, ensuring visual consistency without manual updates on each page.
