@@ -156,16 +156,13 @@ For example, you might upload a rough wireframe of a food delivery app showing a
 
 ## Iterate Designs
 
-After generating your initial storyboard, you can refine and improve your screens in two ways: using AI prompts or directly editing components from the Properties panel. Both methods are useful depending on the type of change you want to make.
+After generating your initial storyboard, you can refine and improve your screens in two ways: [editing visually](#edit-visually) on the canvas and [using AI prompts](#use-ai-prompt). Each method is useful depending on the type of change you want to make.
 
-### Use AI Prompt
+### Edit Visually
 
-This method is best for structural, layout, or multi-element changes. To make a change using AI Prompt:
+This is useful when you want precise control over layout and structure. It makes it easy to quickly add or adjust elements exactly where you want them.
 
-1. Click on the screen (frame) you want to update from the canvas or Frames panel.
-2. Use the prompt bar at the bottom to clearly describe what you want to modify.
-3. If you’re not satisfied with the result, use the regenerate option to explore a new variation of the same instruction.
-4. You can click directly on a widget. The selected widget will automatically be added to the prompt bar as context for your next instruction, allowing more precise AI updates.
+To start, click on any UI element in the canvas. The selected element will be highlighted, and small dots will appear around it. You can click any of these dots to add a new UI element at that position. When you click a dot, a selector pop-up opens, allowing you to choose and insert a new element.
 
 <div style={{
     position: 'relative',
@@ -173,7 +170,7 @@ This method is best for structural, layout, or multi-element changes. To make a 
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/baHBozUa0iwMy6WQON49?embed&show_copy_link=true"
+        src="https://demo.arcade.software/AcWFYJYNcqzMDoNEngxx?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -193,7 +190,8 @@ This method is best for structural, layout, or multi-element changes. To make a 
 </div>
 <p></p>
 
-### Use Properties Panel
+
+#### Use Properties Panel
 
 The Properties Panel allows you to make precise adjustments to any selected widget. When you click on an element in the canvas, its editable properties appear on the right side. From there, you can modify properties such as text content, typography settings, spacing, alignment, colors, borders, and other styling attributes. This gives you direct control over how each element looks and behaves without needing to regenerate the entire screen.
 
@@ -206,6 +204,42 @@ Unlike AI-driven changes, edits made here are exact and predictable, making it i
     width: '100%'}}>
     <iframe 
         src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+
+### Use AI Prompt
+
+This method is best for structural, layout, or multi-element changes. To make a change using AI Prompt:
+
+1. Click on the screen (frame) you want to update from the canvas or Frames panel.
+2. Use the prompt bar at the bottom to clearly describe what you want to modify.
+3. If you’re not satisfied with the result, use the regenerate option to explore a new variation of the same instruction.
+4. You can click directly on a widget. The selected widget will automatically be added to the prompt bar as context for your next instruction, allowing more precise AI updates.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/baHBozUa0iwMy6WQON49?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
