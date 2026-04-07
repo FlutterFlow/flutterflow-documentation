@@ -40,7 +40,7 @@ GenUI introduces three core pillars that work together to transform your app int
 
 Follow the steps below to add GenUI Chat to your app:
 
-1. Make sure you’ve completed the [Firebase integration](../../ff-integrations/firebase/connect-to-firebase-setup.md), including the [initial setup](../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) and configuration files.
+1. Make sure you’ve completed the [Firebase integration](../../../ff-integrations/firebase/connect-to-firebase-setup.md), including the [initial setup](../../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) and configuration files.
 2. Go to **Firebase Console > AI Logic** and enable it.
 3. In your FlutterFlow project, place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
 4. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
@@ -49,8 +49,8 @@ Follow the steps below to add GenUI Chat to your app:
     `You are a helpful AI shopping assistant for an e-commerce app. Help users discover products, compare options, track orders, and complete purchases.`
 
 5. Select the components that the AI is allowed to render in responses. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
-6. If needed, add the [Action Blocks](../../resources/control-flow/functions/action-blocks.md) that the AI can call. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
-7. If needed, choose Local [App Events](../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
+6. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
+7. If needed, choose Local [App Events](../app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
 
 <div style={{
     position: 'relative',
