@@ -286,6 +286,34 @@ This method is best for structural, layout, or multi-element changes. To make a 
 </div>
 <p></p>
 
+You can also select a page and ask the AI to generate variations of it. This helps you quickly explore different design directions.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/aWwn7YP7dyz99oDWqWHQ?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ## Components
 
 A **component** is a reusable UI building block that you can use across your app design. Instead of creating the same UI again and again, you build it once as a component and reuse it wherever needed. This helps keep your app design consistent and easier to maintain.
