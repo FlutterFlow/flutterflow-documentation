@@ -501,3 +501,36 @@ To export the entire storyboard, open the top-left **FF Designer** menu and choo
 To export a single frame, select a specific frame and use the **Export** section in the right panel. Use this when you only need to implement a particular screen.
 
 ![export-single-screen.avif](imgs/export-single-screen.avif)
+
+## Import from FlutterFlow
+
+Importing from FlutterFlow allows you to bring your existing app screens directly into the Designer environment. Instead of rebuilding UI from scratch, you can enhance layouts, explore new styles, and refine user experience faster. This is especially helpful when you want to modernize an existing app, experiment with different design directions, or quickly generate improved versions of your current screens.
+
+To import screens from FlutterFlow, select **Export to Designer** from the canvas menu options, then choose the pages you want to send in the export dialog. Once selected, click the export button to transfer them. After the process completes, the selected pages will open in FF Designer, where you can continue customizing and iterating on them.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/uP7GVnLeypzWRm4fkqQg?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
