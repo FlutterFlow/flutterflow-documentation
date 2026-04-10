@@ -50,7 +50,7 @@ Follow the steps below to add GenUI Chat to your app:
 
 5. Select the components that the AI is allowed to render in responses. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
 6. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
-7. If needed, choose Local [App Events](../app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
+7. If needed, choose Local [App Events](../../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
 
 <div style={{
     position: 'relative',
