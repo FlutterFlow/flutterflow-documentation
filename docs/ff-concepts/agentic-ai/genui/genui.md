@@ -14,14 +14,25 @@ Usually, applications follow a fixed model: developers design screens, define na
 
 With GenUI, your app provides agent-driven experiences. Instead of relying on rigid flows, an AI agent can assemble user journeys dynamically in real time. Developers no longer need to predict every scenario. Instead, they define the building blocks and the AI orchestrates them into meaningful, context-aware experiences for the user.
 
-This represents a fundamental shift, from building fixed applications to building flexible capabilities that an agent can compose on demand.
+This represents a fundamental shift, from building fixed applications to building flexible capabilities that an agent can compose on demand. Think of it as building the components, and AI decides when to use them.
+
+**Traditional App:** The user clicks 'View Order' → navigates to `OrderDetailPage` → sees order info + tracking + items list. The flow is fixed, and every interaction must be pre-built.
+
+**With GenUI:** Build `OrderSummaryCard`, `TrackingStatusCard`, `OrderItemsList` as separate components. Build `getOrderDetails` as a tool. The AI decides what to show based on what the user asks.
 
 For example, a user asks, “Show my recent orders.” Instead of responding with text, the agent renders **order card components** with details like items, price, and delivery status. The user then asks, “Where is my latest order?” Now, instead of showing another block of text, the agent switches to a **map component** to display the live delivery location. This demonstrates how the agent dynamically selects the most relevant UI component based on the user’s intent.
 
 ![personal-shopper.avif](imgs/personal-shopper.avif)
 
+:::tip[GenUI is not a chatbot]
+
+GenUI may look like a chat interface, but it is fundamentally different from traditional chatbots. Instead of responding with text messages, the AI renders real UI components—such as cards, lists, forms, and maps—directly in the interface. Users don’t just read responses; they interact with fully functional UI.
+
+This means GenUI is not about conversations, it’s about dynamically composing application experiences using your actual app components.
+:::
+
 :::note
-This doesn’t replace traditional UI. Navigation, dashboards, and structured flows still play an important role. GenUI introduces a **new layer,** dynamic, adaptive, and conversational, that handles the long tail of use cases traditional interfaces can’t efficiently cover.
+This doesn’t replace traditional UI. Navigation, dashboards, and structured flows still play an important role. GenUI introduces a **new layer** — dynamic, adaptive, and conversational — that handles the long tail of use cases traditional interfaces can’t efficiently cover.
 :::
 
 ## Three Pillars of GenUI
@@ -34,14 +45,17 @@ GenUI introduces three core pillars that work together to transform your app int
 
 **3. App Event Integration:** Your app’s events provide real-time context to the AI. Things like user actions, state changes, or backend updates can trigger responses. With auto-response enabled, the AI doesn’t wait for input; it proactively reacts and updates the experience as things happen.
 
-![three-pillers.avif](imgs/three-pillers.avif)
+![three-pillars.avif](imgs/three-pillars.avif)
 
 ## Adding GenUI
 
 Follow the steps below to add GenUI Chat to your app:
 
 1. Make sure you’ve completed the [Firebase integration](../../../ff-integrations/firebase/connect-to-firebase-setup.md), including the [initial setup](../../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) and configuration files.
-2. Go to **Firebase Console > AI Logic** and enable it.
+2. Go to **Firebase Console > AI Logic** and enable it. GenUI is powered by **Google Gemini** via [**Firebase AI Logic**](https://firebase.google.com/products/firebase-ai-logic) and uses a **usage-based pricing model**. You can get started on the **Spark (free)** plan for testing and low usage, but for production or higher usage, you’ll need to upgrade to the **Blaze (pay-as-you-go)** plan, where costs depend on AI requests and token usage.
+    :::tip
+    We recommend monitoring your usage in the Firebase Console, setting up budget alerts to avoid unexpected charges, and upgrading to Blaze before moving to production.
+    :::
 3. In your FlutterFlow project, place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
 4. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
 
@@ -80,7 +94,26 @@ Follow the steps below to add GenUI Chat to your app:
 
 ### Customization
 
-You can fully customize the chat interface using the options available in the Properties panel.
+You can fully customize the chat interface using the following options available in the Properties panel:
+
+- **Layout & container:** Background, border radius, padding, message spacing, and max message width
+- **Header:** Visibility, title, background color, and text color
+- **Avatars:** Visibility, size, and image sources for both user and AI
+- **Message bubbles: Background c**olors, text colors, and border radii for user and AI messages
+- **Input field:** Placeholder text, background, border radius, and padding
+- **Send button:**  Icon and background styling
+- **Welcome state:** Visibility, title, and subtitle shown when the chat is empty
+- **Scrolling behavior:** Auto-scroll to new messages and animation duration
+- **Thinking/status message:** Aext displayed while the AI is generating a response
+
+**Default Behavior:**
+
+- Header is shown by default
+- Avatars are enabled by default
+- Auto-scroll is enabled
+- Input placeholder defaults to “Type a message…”
+- Thinking message defaults to “Thinking…”
+- Welcome state is shown when there are no messages
 
 <div style={{
     position: 'relative',
@@ -145,40 +178,10 @@ Here are some important limitations and considerations to keep in mind:
 - The only supported backend today is **Firebase AI Logic**.
 - App event listeners currently work only with **LOCAL** app events.
 - Catalog components cannot expose action parameters.
-- Avatar images are passed to the generated widget as string URLs and rendered using `NetworkImage`.
+- Avatar images must be valid network URLs (local asset paths are not supported).
 - Each rendered surface supports only a single catalog component as its root.
 
-## Behind the Scenes
-A high-level overview of the underlying architecture and systems that power GenUI.
-
-### Architecture
-
-GenUI is powered by [**Firebase AI Logic**](https://firebase.google.com/products/firebase-ai-logic) (Google Gemini) as its LLM backend. The architecture flows from proto definitions through codegen to a generated runtime:
-
-- **Proto schema** (`FFGenUIChatWidgetProperties`) defines the widget's configuration: backend type, system prompt, catalog component keys, function configs, app event listener configs, and styling.
-- **Codegen pipeline** (the `GenUIModule`) generates two types of files per project:
-    - A **shared widget** (`ff_genui_chat.dart`) containing the `FFGenUIChatConfig` class and `FFGenUIChat` StatefulWidget, generated once and reused by all GenUI chat instances.
-    - **Per-widget tools files** (`<widget_name>_tools.dart`) containing `DynamicAiTool<JsonMap>` definitions for each action block exposed to the AI.
-- **Widget generator** (`GenUIChatCodeGen`) produces the per-widget instance code: building the `FFGenUIChatConfig` with resolved system prompt, component docs, function docs, app event docs, catalog, content generator factory, and styling options.
-- **Runtime** uses the [`genui`](https://pub.dev/packages/genui) and [`genui_firebase_ai`](https://pub.dev/packages/genui_firebase_ai) packages:
-    - `GenUiConversation` manages conversation state (ValueNotifier-based).
-    - `A2uiMessageProcessor` parses AI tool calls into widget renders.
-    - `FirebaseAiContentGenerator` handles LLM streaming via Firebase AI Logic.
-    - `Catalog` / `CatalogItem` provide the component registry with JSON schemas and widget builders.
-
-### GenUI Is Built on A2UI
-
-GenUI is FlutterFlow's implementation of [**A2UI (Agent-to-UI)**](https://a2ui.org/). An [open project by Google](https://github.com/google/A2UI) that defines a declarative UI protocol for agent-driven interfaces. A2UI allows AI agents to generate rich, interactive UIs that render natively across platforms (web, mobile, desktop) without executing arbitrary code.
-
 ## Best Practices
-
-#### Build Primitives, Not Paths
-
-Build **self-contained components** that represent a single unit of information or interaction, and **tools** that represent a single operation. The AI will compose them into paths you never anticipated.
-
-**Before:** The user clicks 'View Order' -> navigates to OrderDetailPage -> sees order info + tracking + items list
-
-**After:** Build `OrderSummaryCard`, `TrackingStatusCard`, `OrderItemsList` as separate catalog components. Build `getOrderDetails` as a tool. The AI decides what to show based on what the user asks.
 
 #### Describe Everything
 
@@ -218,6 +221,22 @@ The system prompt is the AI's job description. Write it like you are onboarding 
 - What business rules must they follow?
 
 A great system prompt makes the difference between a useful assistant and a generic chatbot.
+
+
+## Behind the Scenes
+A high-level overview of the underlying architecture and systems that power GenUI.
+
+### Architecture
+
+GenUI is powered by [**Firebase AI Logic**](https://firebase.google.com/products/firebase-ai-logic) (Google Gemini) as its LLM backend. At a high level, the system works as:
+
+**Your configuration → code generation → runtime widget powered by Firebase AI Logic and the [GenUI](https://pub.dev/packages/genui) package**.
+
+You define components, tools, and events in FlutterFlow, and GenUI automatically generates the necessary code and runtime behavior to render dynamic UI experiences.
+
+### GenUI Is Built on A2UI
+
+GenUI is FlutterFlow's implementation of [**A2UI (Agent-to-UI)**](https://a2ui.org/). An [open project by Google](https://github.com/google/A2UI) that defines a declarative UI protocol for agent-driven interfaces. A2UI allows AI agents to generate rich, interactive UIs that render natively across platforms (web, mobile, desktop) without executing arbitrary code.
 
 ## FAQS
 
