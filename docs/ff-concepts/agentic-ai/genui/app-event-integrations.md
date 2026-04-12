@@ -29,15 +29,10 @@ GenUI automatically listens for matching local events and converts them into hid
 
 ## Message Construction
 
-Each listener has a `message_template`. GenUI resolves it in this order:
+You can either enter a custom message directly in the **Message Template** field or bind it to a variable for dynamic content.
 
-1. FlutterFlow variable binding, if configured
-2. Literal input value, if configured
-3. Fallback text: `App event "<eventName>" was triggered.`
+If the event includes payload data, GenUI automatically appends it. For example, entering “Your order status is:” and triggering the event which includes event data such as `pending` or `in transit` will result in messages such as “Your order status is pending.”
 
-If the event carries payload data, GenUI automatically appends it to the message sent to the model.
-
-This means the message template is not string interpolation syntax like `{sensorName}`. It is either a literal string or a FlutterFlow variable-bound value, and event payload data is appended separately by the generated listener code.
 
 ## Pending Context Queue
 For `auto_respond: false`, GenUI stores pending event messages in memory until the user sends the next message. The queue has a maximum size of 50, and if it overflows, the oldest messages are dropped first. Before the next user request is sent, these messages are injected directly into the conversation history as InternalMessages, allowing the model to use them as context without triggering additional model calls.
