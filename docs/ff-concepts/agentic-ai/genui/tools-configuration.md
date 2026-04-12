@@ -37,6 +37,10 @@ For each tool, GenUI includes:
 
 That means the Action Block name and description matter. They are part of the tool-selection signal the model sees.
 
+:::note
+If a tool throws an exception, the error is caught and sent back to the model as a structured error payload. The UI remains stable and the model can explain the failure or suggest alternatives.
+:::
+
 ## Tool Requirements
 
 #### The Action Block must return a value
@@ -81,15 +85,14 @@ This is separate from the widget-level thinking message, which defaults to `Thi
 
 The generated code serializes common FlutterFlow data types into model-friendly JSON:
 
-- `Color` -> CSS color string
-- `DateTime` -> ISO 8601 string
-- `TimestampRange` -> `start|end` milliseconds string
-- `LatLng` -> serialized string form
-- `GooglePlace` -> serialized place payload
-- `DataStruct` -> `toMap()`
-- `Enum` -> serialized enum string
+- **Color**: CSS color string. e.g., `Color(0xFF4CAF50)` → `"#4CAF50"`
+- **DateTime**: ISO 8601 string. e.g., `DateTime(2024, 3, 15)` → `"2024-03-15T00:00:00.000"`
+- **TimestampRange**: start|end milliseconds string. e.g., `TimestampRange(1700000000000, 1700086400000)` → `"1700000000000|1700086400000"`
+- **LatLng**: serialized string form. e.g., `LatLng(37.7749, -122.4194)` → `"37.7749,-122.4194"`
+- **GooglePlace**: serialized place payload (JSON object with place details)
+- **DataStruct**: converted using `toMap()`. e.g., `Product(name: "Shoes", price: 99)` → `{ "name": "Shoes", "price": 99 }`
+- **Enum**: serialized enum string. e.g., `OrderStatus.delivered` → `"delivered"`
 
-List return values are serialized item-by-item using the same rules.
 
 ## Best Practices
 

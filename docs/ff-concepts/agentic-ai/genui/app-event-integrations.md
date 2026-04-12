@@ -19,7 +19,7 @@ This is how GenUI becomes aware of things the user did not explicitly type:
 - Navigation context
 - Device or sensor updates
 
-The runtime listens on `FFAppEventService.instance.localEventsStream` and converts matching events into hidden `InternalMessage`s.
+GenUI automatically listens for matching local events and converts them into hidden context messages for the conversation.
 
 ## Two Integration Modes
 
@@ -35,7 +35,7 @@ Each listener has a `message_template`. GenUI resolves it in this order:
 2. Literal input value, if configured
 3. Fallback text: `App event "<eventName>" was triggered.`
 
-If the event carries data, GenUI appends: `Event data: ${event.data?.toMap()}`
+If the event carries payload data, GenUI automatically appends it to the message sent to the model.
 
 This means the message template is not string interpolation syntax like `{sensorName}`. It is either a literal string or a FlutterFlow variable-bound value, and event payload data is appended separately by the generated listener code.
 

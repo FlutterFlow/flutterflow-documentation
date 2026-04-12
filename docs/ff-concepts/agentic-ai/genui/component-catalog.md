@@ -64,6 +64,8 @@ then you should either:
 - set an explicit default value, or
 - make the parameter optional
 
+For instance, if your **EventCard** component has a required `eventDate: DateTime` parameter, you must either set a default value in the component editor or make the parameter optional. Without this, GenUI validation will reject the component.
+
 GenUI validation enforces this because those types do not have a safe implicit fallback in generated constructor code.
 
 ## Runtime Rules
@@ -118,7 +120,7 @@ Weak:
 
 Use clear, descriptive names that reflect the component’s purpose.
 
-Googe:
+Good:
 
 - `OrderStatusCard`
 - `SensorAlertSummary`

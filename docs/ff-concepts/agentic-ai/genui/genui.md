@@ -35,6 +35,11 @@ This means GenUI is not about conversations, it’s about dynamically composing 
 This doesn’t replace traditional UI. Navigation, dashboards, and structured flows still play an important role. GenUI introduces a **new layer** — dynamic, adaptive, and conversational — that handles the long tail of use cases traditional interfaces can’t efficiently cover.
 :::
 
+## GenUI Is Built on A2UI
+
+GenUI is FlutterFlow's implementation of [**A2UI (Agent-to-UI)**](https://a2ui.org/). An [**open project by Google**](https://github.com/google/A2UI) that defines a declarative UI protocol for agent-driven interfaces. A2UI allows AI agents to generate rich, interactive UIs that render natively across platforms (web, mobile, desktop) without executing arbitrary code.
+
+
 ## Three Pillars of GenUI
 
 GenUI introduces three core pillars that work together to transform your app into an agent-driven experience:
@@ -49,22 +54,24 @@ GenUI introduces three core pillars that work together to transform your app int
 
 ## Adding GenUI
 
-Follow the steps below to add GenUI Chat to your app:
+Let’s walk through how to add a GenUI Chat by building a simple product lookup assistant. Follow the steps below:
 
 1. Make sure you’ve completed the [Firebase integration](../../../ff-integrations/firebase/connect-to-firebase-setup.md), including the [initial setup](../../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) and configuration files.
 2. Go to **Firebase Console > AI Logic** and enable it. GenUI is powered by **Google Gemini** via [**Firebase AI Logic**](https://firebase.google.com/products/firebase-ai-logic) and uses a **usage-based pricing model**. You can get started on the **Spark (free)** plan for testing and low usage, but for production or higher usage, you’ll need to upgrade to the **Blaze (pay-as-you-go)** plan, where costs depend on AI requests and token usage.
     :::tip
     We recommend monitoring your usage in the Firebase Console, setting up budget alerts to avoid unexpected charges, and upgrading to Blaze before moving to production.
     :::
-3. In your FlutterFlow project, place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
-4. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
+3. In your FlutterFlow project, create a **`ProductListCard`** component, which displays product details such as the image, name, and description. This component accepts a parameter of Data Type **`Product`**.
+4. Create an Action Block named **`getProductDetails`**, which retrieves the details of a single product and returns it as a **`Product`** data type.
+4. Place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
+5. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
 
     **Example System Prompt:**
     `You are a helpful AI shopping assistant for an e-commerce app. Help users discover products, compare options, track orders, and complete purchases.`
 
-5. Select the components that the AI is allowed to render in responses. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
-6. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
-7. If needed, choose Local [App Events](../../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
+6. Select the components that the AI is allowed to render in responses. For this example, select the `ProductListCard` component created in step 3. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
+7. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. For this example, select the action block named `getProductDetails`, created in step 4. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
+8. If needed, choose Local [App Events](../../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
 
 <div style={{
     position: 'relative',
@@ -224,19 +231,12 @@ A great system prompt makes the difference between a useful assistant and a gene
 
 
 ## Behind the Scenes
-A high-level overview of the underlying architecture and systems that power GenUI.
-
-### Architecture
 
 GenUI is powered by [**Firebase AI Logic**](https://firebase.google.com/products/firebase-ai-logic) (Google Gemini) as its LLM backend. At a high level, the system works as:
 
 **Your configuration → code generation → runtime widget powered by Firebase AI Logic and the [GenUI](https://pub.dev/packages/genui) package**.
 
 You define components, tools, and events in FlutterFlow, and GenUI automatically generates the necessary code and runtime behavior to render dynamic UI experiences.
-
-### GenUI Is Built on A2UI
-
-GenUI is FlutterFlow's implementation of [**A2UI (Agent-to-UI)**](https://a2ui.org/). An [open project by Google](https://github.com/google/A2UI) that defines a declarative UI protocol for agent-driven interfaces. A2UI allows AI agents to generate rich, interactive UIs that render natively across platforms (web, mobile, desktop) without executing arbitrary code.
 
 ## FAQS
 
