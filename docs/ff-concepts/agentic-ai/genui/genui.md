@@ -26,7 +26,7 @@ For example, a user asks, “Show my recent orders.” Instead of responding wit
 
 :::tip[GenUI is not a chatbot]
 
-GenUI may look like a chat interface, but it is fundamentally different from traditional chatbots. Instead of responding with text messages, the AI renders real UI components—such as cards, lists, forms, and maps—directly in the interface. Users don’t just read responses; they interact with fully functional UI.
+GenUI may look like a chat interface, but it is fundamentally different from traditional chatbots. Instead of responding with text messages, the AI renders real UI components, such as cards, lists, forms, and maps—directly in the interface. Users don’t just read responses; they interact with fully functional UI.
 
 This means GenUI is not about conversations, it’s about dynamically composing application experiences using your actual app components.
 :::
@@ -285,7 +285,6 @@ Make sure the following are correctly set:
 - The event is LOCAL scope.
 - The right event is being triggered at runtime.
 - `auto_respond` is set the way you expect.
-- You are looking at GenUI logs when debugging.
 </p> 
 </details>
 
@@ -399,3 +398,18 @@ Can one GenUI widget listen to the same event twice?
 No. Duplicate listeners for the same event on the same widget are rejected during validation.
 </p> 
 </details>
+
+<details>
+<summary>
+Do conversations persist across app restarts?
+</summary>
+
+<p>
+No. Conversations do not persist across app restarts. If a user closes and reopens the app, the chat history is reset.
+</p> 
+</details>
+
+<details> <summary> Can I choose the Gemini model or adjust parameters like temperature? </summary> <p> GenUI uses Firebase AI Logic, which manages the underlying Gemini model and its configuration. At the moment, you cannot directly select specific model variants or adjust parameters like temperature or top_p. The system is designed to provide a simplified, managed experience without requiring manual tuning. </p> </details>
+
+<details> <summary> What happens when Firebase AI Logic quota or rate limits are exceeded? </summary> <p> If you exceed Firebase AI Logic or Gemini free-tier limits, requests will fail with a 429 quota-exceeded error. This typically means you’ve hit limits such as requests per minute or free-tier usage caps. In some cases, the error will include a retry time, after which you can try again. While the Spark plan works for testing, it is subject to strict free-tier limits, so for higher usage or production apps, you should expect to upgrade to a paid plan and monitor usage closely. </p> </details>
+
