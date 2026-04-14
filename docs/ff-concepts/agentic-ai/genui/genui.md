@@ -63,15 +63,15 @@ Let’s walk through how to add a GenUI Chat by building a simple product lookup
     :::
 3. In your FlutterFlow project, create a **`ProductListCard`** component, which displays product details such as the image, name, and description. This component accepts a parameter of Data Type **`Product`**.
 4. Create an Action Block named **`getProductDetails`**, which retrieves the details of a single product and returns it as a **`Product`** data type.
-4. Place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
-5. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
+5. Place the **GenUI Chat** widget on a page or component like any other FlutterFlow widget.
+6. Go to the Properties panel and define domain instructions to guide how the assistant behaves and communicates in your app. These instructions help the AI understand your app’s context, tone, and what it should prioritize. If left empty, it defaults to a generic assistant that builds UI in response to user requests.
 
     **Example System Prompt:**
     `You are a helpful AI shopping assistant for an e-commerce app. Help users discover products, compare options, track orders, and complete purchases.`
 
-6. Select the components that the AI is allowed to render in responses. For this example, select the `ProductListCard` component created in step 3. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
-7. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. For this example, select the action block named `getProductDetails`, created in step 4. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
-8. If needed, choose Local [App Events](../../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
+7. Select the components that the AI is allowed to render in responses. For this example, select the `ProductListCard` component created in step 3. To learn how to configure components for GenUI, refer to the [Component Catalog](component-catalog.md) documentation.
+8. If needed, add the [Action Blocks](../../../resources/control-flow/functions/action-blocks.md) that the AI can call. For this example, select the action block named `getProductDetails`, created in step 4. Note that only Action Blocks that return a value can be added. To learn how to configure them for GenUI, refer to the [Tools Configuration](tools-configuration.md) documentation.
+9. If needed, choose Local [App Events](../../app-events/app-events.md) to connect to the conversation. To learn how to configure app events for GenUI, refer to the [App Events Integrations](app-event-integrations.md) documentation.
 
 <div style={{
     position: 'relative',
@@ -106,12 +106,12 @@ You can fully customize the chat interface using the following options available
 - **Layout & container:** Background, border radius, padding, message spacing, and max message width
 - **Header:** Visibility, title, background color, and text color
 - **Avatars:** Visibility, size, and image sources for both user and AI
-- **Message bubbles: Background c**olors, text colors, and border radii for user and AI messages
+- **Message bubbles:** Background colors, text colors, and border radii for user and AI messages
 - **Input field:** Placeholder text, background, border radius, and padding
 - **Send button:**  Icon and background styling
 - **Welcome state:** Visibility, title, and subtitle shown when the chat is empty
 - **Scrolling behavior:** Auto-scroll to new messages and animation duration
-- **Thinking/status message:** Aext displayed while the AI is generating a response
+- **Thinking/status message:** Text displayed while the AI is generating a response
 
 **Default Behavior:**
 
@@ -409,7 +409,22 @@ No. Conversations do not persist across app restarts. If a user closes and reope
 </p> 
 </details>
 
-<details> <summary> Can I choose the Gemini model or adjust parameters like temperature? </summary> <p> GenUI uses Firebase AI Logic, which manages the underlying Gemini model and its configuration. At the moment, you cannot directly select specific model variants or adjust parameters like temperature or top_p. The system is designed to provide a simplified, managed experience without requiring manual tuning. </p> </details>
+<details>
+<summary>
+Can I choose the Gemini model or adjust parameters like temperature?
+</summary>
 
-<details> <summary> What happens when Firebase AI Logic quota or rate limits are exceeded? </summary> <p> If you exceed Firebase AI Logic or Gemini free-tier limits, requests will fail with a 429 quota-exceeded error. This typically means you’ve hit limits such as requests per minute or free-tier usage caps. In some cases, the error will include a retry time, after which you can try again. While the Spark plan works for testing, it is subject to strict free-tier limits, so for higher usage or production apps, you should expect to upgrade to a paid plan and monitor usage closely. </p> </details>
+<p>
+GenUI uses Firebase AI Logic, which manages the underlying Gemini model and its configuration. At the moment, you cannot directly select specific model variants or adjust parameters like temperature or top_p. The system is designed to provide a simplified, managed experience without requiring manual tuning.
+</p> 
+</details>
 
+<details>
+<summary>
+What happens when Firebase AI Logic quota or rate limits are exceeded?
+</summary>
+
+<p>
+If you exceed Firebase AI Logic or Gemini free-tier limits, requests will fail with a 429 quota-exceeded error. This typically means you’ve hit limits such as requests per minute or free-tier usage caps. In some cases, the error will include a retry time, after which you can try again. While the Spark plan works for testing, it is subject to strict free-tier limits, so for higher usage or production apps, you should expect to upgrade to a paid plan and monitor usage closely
+</p> 
+</details>
