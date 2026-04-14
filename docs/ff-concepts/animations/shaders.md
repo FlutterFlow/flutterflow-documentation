@@ -216,9 +216,67 @@ Time Animation Behavior controls how a shader animates over time. It defines whe
 
 The shader animates automatically in a smooth, endless loop with no setup required. This is ideal for ambient effects like animated backgrounds, gradients, or subtle motion that should always be running.
 
+:::tip
+
+You can have the **Time Animation Behavior** set to **Continuous** while the widget is [**Implicit Animated**](#implicit-animated). This allows the animation to run continuously while still enabling you to control specific parameters when needed.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/SghJGpZwuglC7HPwfhUz?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::
+
 ### Implicit
 
 You control the shader’s animation manually using a **Time** slider [0–10]. This is useful when you want to connect the animation to app state or user interaction, such as syncing it with scroll position, triggering it through actions, or freezing the effect at a specific point in time.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/0DRRv5qFpgdbFHyz989C?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Explicit
 
