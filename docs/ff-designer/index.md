@@ -156,7 +156,100 @@ For example, you might upload a rough wireframe of a food delivery app showing a
 
 ## Iterate Designs
 
-After generating your initial storyboard, you can refine and improve your screens in two ways: using AI prompts or directly editing components from the Properties panel. Both methods are useful depending on the type of change you want to make.
+After generating your initial storyboard, you can refine and improve your screens in two ways: [editing visually](#edit-visually) on the canvas and [using AI prompts](#use-ai-prompt). Each method is useful depending on the type of change you want to make.
+
+### Edit Visually
+
+This is useful when you want precise control over layout and structure. It makes it easy to quickly add or adjust elements exactly where you want them.
+
+To start, click on any UI element in the canvas. The selected element will be highlighted, and small dots will appear around it. You can click any of these dots to add a new UI element at that position. When you click a dot, a selector pop-up opens, allowing you to choose and insert a new element.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/AcWFYJYNcqzMDoNEngxx?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+You can also rearrange elements using drag and drop. Simply select an element and move it to a new position within the layout.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/6EktGdKPOazdR6fwXFg5?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### Use Properties Panel
+
+The Properties Panel allows you to make precise adjustments to any selected widget. When you click on an element in the canvas, its editable properties appear on the right side. From there, you can modify properties such as text content, typography settings, spacing, alignment, colors, borders, and other styling attributes. This gives you direct control over how each element looks and behaves without needing to regenerate the entire screen.
+
+Unlike AI-driven changes, edits made here are exact and predictable, making it ideal for polishing the design once the overall layout and structure are already in place.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 
 ### Use AI Prompt
 
@@ -193,11 +286,7 @@ This method is best for structural, layout, or multi-element changes. To make a 
 </div>
 <p></p>
 
-### Use Properties Panel
-
-The Properties Panel allows you to make precise adjustments to any selected widget. When you click on an element in the canvas, its editable properties appear on the right side. From there, you can modify properties such as text content, typography settings, spacing, alignment, colors, borders, and other styling attributes. This gives you direct control over how each element looks and behaves without needing to regenerate the entire screen.
-
-Unlike AI-driven changes, edits made here are exact and predictable, making it ideal for polishing the design once the overall layout and structure are already in place.
+You can also select a page and ask the AI to generate variations of it. This helps you quickly explore different design directions.
 
 <div style={{
     position: 'relative',
@@ -205,7 +294,7 @@ Unlike AI-driven changes, edits made here are exact and predictable, making it i
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true"
+        src="https://demo.arcade.software/aWwn7YP7dyz99oDWqWHQ?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -344,6 +433,88 @@ To add a toggle, open your component and click **Add toggle** from the variants 
 </div>
 <p></p>
 
+#### The `Has` Expression
+
+The `Has` expression lets you automatically control a Boolean property based on whether a component parameter has been provided. This is useful when you want part of a component to appear only when data exists, without manually setting a separate true/false value each time.
+
+For example:
+
+- Show an image only when `image_url` is set
+- Show a subtitle only when `subtitle` is set
+- Show a time row only when `time` is set
+
+A `Has` expression checks whether a parameter contains a value. If it does, the result is `true`. If it does not, the result is `false`.
+
+Suppose you have a flight booking card component with an optional image on the right side. Instead of adding both `image_url` and a separate `show_image` flag, you can just use `image_url` and bind the **Visible** property to `has(image_url)`. If an image is provided, the card displays the image, and if not, it just appears as a text-only layout.
+
+![control-using-has-expression](imgs/control-using-has-expression.avif)
+
+## Integrations
+
+You can connect FlutterFlow Designer with external AI agents and developer tools. This enables you to generate, edit, and inspect designs directly from your preferred coding or AI environment instead of working only inside the Designer UI.
+
+For example, you can use an agent like Claude or Gemini to open your design, make layout changes, add components, or iterate on styles just by describing what you want in natural language.
+
+:::info[Prerequisites]
+
+Before using integrations, make sure the following are set up:
+
+- [**FlutterFlow Designer Desktop App**](https://storage.googleapis.com/flutterflow-downloads/designer/macos/prod/flutterflow-designer-latest-macos.dmg) is installed (currently available only on macOS)
+- **Agent MCPs** are installed via CLI. The install commands are:
+    - **Claude Code:** `npm install -g @anthropic-ai/claude-code`
+    - **Gemini CLI:** `npm install -g @google/gemini-cli`
+    - **Codex CLI:** `npm install -g @openai/codex`
+- Supported **IDEs** are installed on your system. To download, use the official links:
+    - **Cursor:** [https://cursor.com/download](https://cursor.com/download)
+    - **Antigravity:** [https://antigravity.google/download](https://cursor.com/download)
+:::
+
+To add integrations, go to the **Integrations** section inside FlutterFlow Designer. Here you will see available integrations under **Agent MCPs** (such as Claude Code, Gemini CLI) and **IDEs** (such as Cursor, Antigravity). Click **Install** next to any integration you want to use.
+
+Once installed, open the respective tool (for example, Claude Code). Start by asking something:
+
+```
+Open FlutterFlow Designer tool, I want to make some changes.
+```
+
+After the Designer context loads, describe the change you want. For example:
+
+```
+Update the booking card layout to have a larger image and add a status badge.
+```
+
+The agent will connect to your Designer canvas, understand your project structure, and apply the requested changes directly. This allows you to iterate on designs faster without manually navigating the UI.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/wCdp0Edg8MkH5Nylflsn?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip
+For IDE-based integrations, you can interact via **Agent Mode** inside the IDE.
+:::
+
 ## Edit Theme
 
 Editing a **Theme** allows you to modify the global design system of your entire storyboard at once. Instead of adjusting individual widgets, you can change core styling elements such as brand colors, typography, spacing, corner radius, and text scaling. Any updates made in the Theme Editor automatically apply across all screens, ensuring visual consistency without manual updates on each page.
@@ -396,3 +567,36 @@ To export the entire storyboard, open the top-left **FF Designer** menu and choo
 To export a single frame, select a specific frame and use the **Export** section in the right panel. Use this when you only need to implement a particular screen.
 
 ![export-single-screen.avif](imgs/export-single-screen.avif)
+
+## Import from FlutterFlow
+
+Importing from FlutterFlow allows you to bring your existing app screens directly into the Designer environment. Instead of rebuilding UI from scratch, you can enhance layouts, explore new styles, and refine user experience faster. This is especially helpful when you want to modernize an existing app, experiment with different design directions, or quickly generate improved versions of your current screens.
+
+To import screens from FlutterFlow, select **Export to Designer** from the canvas menu options, then choose the pages you want to send in the export dialog. Once selected, click the export button to transfer them. After the process completes, the selected pages will open in FF Designer, where you can continue customizing and iterating on them.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/uP7GVnLeypzWRm4fkqQg?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
