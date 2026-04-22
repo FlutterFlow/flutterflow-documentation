@@ -63,7 +63,7 @@ To connect using Supabase API Keys, you will manually link your Supabase project
 Please note that this method is only intended for **self-hosted Supabase databases**.
 :::
 
-1. First, create a project in Supabase from the Supabase dashboard.
+1. First, create a project in Supabase from the [Supabase dashboard](https://supabase.com/dashboard).
 2. In your Supabase project, navigate to [Project Settings > API](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api). Copy the **Project URL**.
 3. Return to FlutterFlow, navigate to **Settings and Integrations > Integrations > Supabase**. Turn on the toggle (i.e., enable Supabase) and paste the **API URL**.
 4. Similarly, from the Supabase [API section](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api), copy the **anon key** (under **Project API keys**) and paste it inside the **FlutterFlow > Settings and Integrations > Integrations > Supabase > Anon Key.**
