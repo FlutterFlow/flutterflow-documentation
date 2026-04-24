@@ -9,26 +9,78 @@ keywords: [FlutterFlow, Supabase, Setup, Integration]
 
 # Supabase Setup
 
-Connecting your FlutterFlow app to Supabase is quick and easy. Simply add your Supabase **API 
-URL** and **Anon Key** in the **Settings & Integrations** section, and your data will be ready to 
-use in FlutterFlow. With this integration, you can authenticate users and store and retrieve data from Supabase.
+You can either use [Supabase OAuth](#connect-with-supabase-oauth) for a quick and secure setup or [connect using API Keys](#connect-with-supabase-api-keys) for self-hosted setups.
 
-Follow the steps below to setup the Supabase:
-## Create Keys
+## Connect with Supabase OAuth
 
-- Create a new [**Supabase account**](https://app.supabase.com/sign-up). If you already 
-have an account, [login](https://app.supabase.com/sign-in).
+To connect with Supabase using the OAuth method, follow the steps below:
 
-- To use Supabase with your FlutterFlow project, you'll need to create a project in Supabase 
-first. If you haven't done so already, simply click on **+ New Project**, fill in the required information, and wait a few minutes for the process to complete.
+1. Open **Settings & Integrations** and go to the **Supabase** section.
+2. Select the **Connect with Supabase OAuth** tab.
+3. Click **Connect to Supabase** to start the connection flow.
+4. Choose your Supabase organization and authorize access.
+5. After authorization, either select an existing Supabase project or click **Create New Project** to make a new one.
+6. If creating a new project, enter the project name and region, then click **Create**.
+7. Copy and save the database password, since it will not be shown again.
+8. Click **Done** to finish the setup.
+9. Once connected, you can view and manage the Supabase project from the Supabase settings, switch projects, or open it in a new browser tab.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/4RrHnQSlk7xXhbf1WMWn?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip
+After [**creating**](#create-tables-in-supabase) or updating tables in your Supabase database, make sure to click **Get Schema** to refresh and sync the latest table structure in FlutterFlow.
+:::
+
+## Connect with Supabase API Keys
+
+To connect using Supabase API Keys, you will manually link your Supabase project with FlutterFlow by providing the required credentials. 
+
+:::warning
+Please note that this method is only intended for **self-hosted Supabase databases**.
+:::
+
+1. First, create a project in Supabase from the Supabase dashboard.
+2. In your Supabase project, navigate to [Project Settings > API](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api). Copy the **Project URL**.
+3. Return to FlutterFlow, navigate to **Settings and Integrations > Integrations > Supabase**. Turn on the toggle (i.e., enable Supabase) and paste the **API URL**.
+4. Similarly, from the Supabase [API section](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api), copy the **anon key** (under **Project API keys**) and paste it inside the **FlutterFlow > Settings and Integrations > Integrations > Supabase > Anon Key.**
+5. Click on the **Get Schema** button. This will show the list of all tables with their schema (structure) created in Supabase.
+6. (Optional) If you have defined an *Array* for any *Column Data Type* in Supabase, you must set its type here. To do so, tap the "**Click to set Array type**" and choose the right one.
+
+:::tip
+After [**creating**](#create-tables-in-supabase) or updating tables in your Supabase database, make sure to click **Get Schema** to refresh and sync the latest table structure in FlutterFlow.
+:::
 
 <figure>
-    <div class="video-container"><iframe src="https://www.loom.
-com/embed/19ede54035c54b88bb07e043c5c0d60e?sid=dc8e9438-ffc9-4b51-ab44-02ed4931224c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+   <div class="video-container"><iframe src="https://www.loom.
+   com/embed/47e1478146f04e83a9cfef5a873ad49b?sid=dea01d9a-7262-4fdd-9cbe-4d7bc50f9ff3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+   
+   
   <figcaption class="centered-caption"></figcaption>
 </figure>
-
 
 ## Create Tables in Supabase
 
@@ -54,28 +106,3 @@ To use Supabase authentication, you must
 
 :::
 
-## Add Keys to FlutterFlow
-
-
-Follow the steps below to add the API URL and Anon key:
-
-1. In your Supabase project, navigate to [Project Settings > API](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api). Copy the **Project URL**.
-2. Return to FlutterFlow, navigate to **Settings and Integrations > Integrations > Supabase**. Turn on the toggle (i.e., enable Supabase) and paste the **API URL**.
-3. Similarly, from the Supabase [API section](https://app.supabase.com/project/cwnjvtflygqlpxdpsujv/settings/api), copy the **anon key** (under **Project API keys**) and paste it inside the **FlutterFlow > Settings and Integrations > Integrations > Supabase > Anon Key.**
-4. Click on the **Get Schema** button. This will show the list of all tables with their schema (structure) created in Supabase.
-5. (Optional) If you have defined an *Array* for any *Column Data Type* in Supabase, you must set its type here. To do so, tap the "**Click to set Array type**" and choose the right one.
-
-:::note
-Whenever you make changes related to tables in Supabase, hit the **Get Schema** button again to reflect the changes here.
-:::
-
-<figure>
-   <div class="video-container"><iframe src="https://www.loom.
-   com/embed/47e1478146f04e83a9cfef5a873ad49b?sid=dea01d9a-7262-4fdd-9cbe-4d7bc50f9ff3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-   
-   
-  <figcaption class="centered-caption"></figcaption>
-</figure>
-
-
-Now you have completed the Supabase Setup! You can continue to learn about how to add Supabase [Authentication](../authentication/supabase-auth/initial-setup.md) and [Database](../database/supabase/database-actions.md).
