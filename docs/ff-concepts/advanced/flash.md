@@ -147,11 +147,21 @@ Copy the example environment file:
 cp .env.example .env
 ```
 
-Edit `.env` and paste your FlutterFlow API key:
+Edit `.env` and paste your FlutterFlow API key. You can get the API key from your [FlutterFlow Account](https://app.flutterflow.io/account) — look for the API Token section.
 
 ```bash
 FF_API_KEY=your-key-here
 ```
+
+:::tip You can also pass your key at init
+You can skip this step by passing `--api-key` when you run `flash init` in [**step 1**](#1-create-a-workspace):
+
+```bash
+flash init hello-flash --api-key <your-key>
+```
+
+Flash will set up the workspace with your key already in place, so you don't need to edit `.env` yourself. Useful for quick one-off workspaces. For anything you'll keep around, the `.env` approach is safer — it keeps the key out of your shell history.
+:::
 
 Install Dart dependencies:
 
@@ -269,7 +279,7 @@ Flash workspaces are designed to hand off to AI agents. Here's the same tutorial
 
 1. Complete [step 1](#1-create-a-workspace) and [step 2](#2-add-your-api-key) from the Create New App section.
 2. You open the workspace in Claude Code (or any agent that can read `AGENTS.md`).
-3. You prompt: *"Read AGENTS.md, then edit flash/app.dart to create a single-page starter app with a title, description, and a snackbar button. Validate before telling me you're done."*
+3. You prompt: *"Read AGENTS.md, then create a futurstic meditation app"*
 4. The agent reads `AGENTS.md`, browses `references/` for similar DSLs, edits `flash/app.dart`, runs `flash validate`, and reports back.
 5. You run `flash run` yourself.
 
