@@ -1,13 +1,15 @@
 ---
-slug: /designer
-title: FlutterFlow Designer
-description: Generate, refine, and export multi-screen app designs using AI-powered prompts, visual editing tools, and automatic theming.
-tags: [designer, export, flutterflow]
+slug: /welcome
+title: Welcome
+description: Discover FlutterFlow Designer—the fastest way to design apps. Explore its key features, understand how it works, and start designing your first app with ease.
+tags: [FlutterFlow Designer, FlutterFlow, Design]
 sidebar_position: 0
-keywords: [flutterflow designer, ai app design, screen storyboard generation, ui design tool, export to flutterflow, design to code, auto theming, multi screen design]
+keywords: [flutterflow designer, ai app design, screen storyboard generation, ui design tool]
 ---
 
-# FlutterFlow Designer
+# Welcome to FlutterFlow Designer
+
+**The Fastest Way to Design Apps**
 
 The FlutterFlow [**Designer**](https://designer.flutterflow.io/) is an AI-powered app design tool that lets you generate UI screens from natural language prompts. It creates high-quality, editable UI layouts in seconds, so you can design a user interface quickly and iterate visually before building the full app.
 
@@ -447,7 +449,7 @@ A `Has` expression checks whether a parameter contains a value. If it does, the 
 
 Suppose you have a flight booking card component with an optional image on the right side. Instead of adding both `image_url` and a separate `show_image` flag, you can just use `image_url` and bind the **Visible** property to `has(image_url)`. If an image is provided, the card displays the image, and if not, it just appears as a text-only layout.
 
-![control-using-has-expression](imgs/control-using-has-expression.avif)
+
 
 ## Integrations
 
@@ -560,13 +562,11 @@ Once your screens are finalized, you can export your design for implementation. 
 
 To export the entire storyboard, open the top-left **FF Designer** menu and choose one of the export options (PNGs, Agent Prompt, or FlutterFlow). This method is best when your full flow is ready for implementation.
 
-![export-all.avif](imgs/export-all.avif)
 
 ### Export Individual Frames
 
 To export a single frame, select a specific frame and use the **Export** section in the right panel. Use this when you only need to implement a particular screen.
 
-![export-single-screen.avif](imgs/export-single-screen.avif)
 
 ## Import from FlutterFlow
 
