@@ -199,7 +199,7 @@ Follow the steps below to export your project.
 | --[no]-parent-folder | Option to download the code into a subfolder instead of directly into the directory. | False |
 | --[no]-as-module | Whether to generate the project as a Flutter module. | False |
 | --[no]-as-debug | Whether to generate the project with debug logging to be able to use FlutterFlow Debug Panel inside the DevTools. | False |
-| --project-environment | Which [development environment](../development-environments/development-environments.md) to be used. If empty, the current environment in the project will be downloaded. | Current environment |
+| --project-environment | Which [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) to be used. If empty, the current environment in the project will be downloaded. | Current environment |
 
 ### Filtered exports
 
