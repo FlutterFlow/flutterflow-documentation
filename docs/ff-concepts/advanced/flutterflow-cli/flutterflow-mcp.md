@@ -13,11 +13,6 @@ The FlutterFlow CLI lets you create and edit FlutterFlow apps from the terminal 
 
 A FlutterFlow project is the source of truth. The CLI is how you create or edit it from your local workspace.
 
-:::info[Remember]
-- **FF CLI is not a replacement for the visual builder.** FlutterFlow is still faster for most visual work. FF CLI is for precision, repeatability, and automation.
-- **FF CLI doesn't execute your app.** It produces a FlutterFlow project, which you can test and run inside the FlutterFlow visual builder.
-:::
-
 ![ff-cli-ff-builder-using-same-ff-app.avif](../imgs/ff-cli-ff-builder-using-same-ff-app.avif)
 
 ## Architecture
@@ -29,10 +24,15 @@ A FlutterFlow project is the source of truth. The CLI is how you create or edit 
 3. The MCP server applies those changes to your FlutterFlow project.
 4. You verify the result in the FlutterFlow visual builder.
 
-The workspace is just a folder on your disk. The actual project lives in FlutterFlow.
+The workspace is just a folder on your disk. The actual project lives in FlutterFlow server.
 
 :::tip[What is MCP?] 
 The [Model Context Protocol](https://modelcontextprotocol.io) is an open standard that lets AI agents call external tools. The FlutterFlow AI MCP server exposes FlutterFlow's project APIs to your agent so it can read and modify your project on your behalf.
+:::
+
+:::info[Remember]
+- **FF CLI is not a replacement for the visual builder.** FlutterFlow is still faster for most visual work. FF CLI is for precision, repeatability, and automation.
+- **FF CLI doesn't execute your app.** It produces a FlutterFlow project, which you can test and run inside the FlutterFlow visual builder.
 :::
 
 :::info[Prerequisites]
