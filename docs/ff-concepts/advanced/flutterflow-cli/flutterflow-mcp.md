@@ -13,7 +13,7 @@ The FlutterFlow CLI lets you create and edit FlutterFlow apps from the terminal 
 
 A FlutterFlow project is the source of truth. The CLI is how you create or edit it from your local workspace.
 
-![ff-cli-ff-builder-using-same-ff-app.avif](../imgs/ff-cli-ff-builder-using-same-ff-app.avif)
+![flutterflow-cli-ff-builder-using-same-ff-app](../imgs/flutterflow-ff-builder-using-same-ff-app.avif)
 
 ## Architecture
 
@@ -27,21 +27,21 @@ A FlutterFlow project is the source of truth. The CLI is how you create or edit 
 The workspace is just a folder on your disk. The actual project lives in FlutterFlow server.
 
 :::tip[What is MCP?] 
-The [Model Context Protocol](https://modelcontextprotocol.io) is an open standard that lets AI agents call external tools. The FlutterFlow AI MCP server exposes FlutterFlow's project APIs to your agent so it can read and modify your project on your behalf.
+The [**Model Context Protocol**](https://modelcontextprotocol.io) is an open standard that lets AI agents call external tools. The FlutterFlow AI MCP server exposes FlutterFlow's project APIs to your agent so it can read and modify your project on your behalf.
 :::
 
 :::info[Remember]
-- **FF CLI is not a replacement for the visual builder.** FlutterFlow is still faster for most visual work. FF CLI is for precision, repeatability, and automation.
-- **FF CLI doesn't execute your app.** It produces a FlutterFlow project, which you can test and run inside the FlutterFlow visual builder.
+- **FlutterFlow CLI is not a replacement for the visual builder.** FlutterFlow is still faster for most visual work. FlutterFlow CLI is for precision, repeatability, and automation.
+- **FlutterFlow CLI doesn't execute your app.** It produces a FlutterFlow project, which you can test and run inside the FlutterFlow visual builder.
 :::
 
 :::info[Prerequisites]
 
 Before you start, make sure you have:
 
-- **FlutterFlow CLI installed.** See [Installation](./overview.md).
-- **A FlutterFlow API key.** See [generating an API token](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token).
-- **An MCP-compatible AI agent installed locally** — for example, [Claude Code](https://www.claude.com/product/claude-code), [Gemini CLI](https://github.com/google-gemini/gemini-cli), or [Codex](https://github.com/openai/codex).
+- **FlutterFlow CLI installed.** See [**Installation**](./overview.md).
+- **A FlutterFlow API key.** See [**generating an API token**](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token).
+- **An MCP-compatible AI agent installed locally** — for example, [**Claude Code**](https://www.claude.com/product/claude-code), [**Gemini CLI**](https://github.com/google-gemini/gemini-cli), or [**Codex**](https://github.com/openai/codex).
 - **A FlutterFlow project ID** (only if you're editing an existing project).
 ::: 
 
