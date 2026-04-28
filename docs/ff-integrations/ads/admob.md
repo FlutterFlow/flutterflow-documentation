@@ -159,7 +159,7 @@ While building your app, clicking on too many ads may cause your AdMob account t
 
 ### Testing AdBanner
 
-Ads cannot be tested in Test or Run Mode. They can only be tested on a real device or emulator. To do this, you can use [Local run](../../testing-deployment-publishing/running-your-app/local-run.md) or [download the code](../../testing-deployment-publishing/exporting-code/ff-cli.md) and run it in your IDE.
+Ads cannot be tested in Test or Run Mode. They can only be tested on a real device or emulator. To do this, you can use [Local run](../../testing-deployment-publishing/running-your-app/local-run.md) or [download the code](../../ff-concepts/advanced/ff-cli.md#download-projects) and run it in your IDE.
 
 ## Interstitial Ad
 

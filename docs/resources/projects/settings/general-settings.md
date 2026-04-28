@@ -132,7 +132,7 @@ To add the app launcher icon:
 2. Under the **General** section, select **App Assets**.
 3. Under the **Launcher Icon** section, click on the **Upload Image** button.
 4. By clicking on the **Unset** dropdown menu, you can also select from the already uploaded images to the Project Media/Assets.
-5. [Download the project](../../../testing-deployment-publishing/exporting-code/ff-cli.md) and run the following command in your terminal to generate the launcher icon:
+5. [Download the project](../../../ff-concepts/advanced/ff-cli.md#download-projects) and run the following command in your terminal to generate the launcher icon:
     
     `flutter pub run flutter_launcher_icons:main`
     
@@ -151,7 +151,7 @@ Here are the steps to add adaptive icons:
 2. Return to FlutterFlow and navigate to **Setting and Integrations > General** > **App Assets > Android Adaptive Icon.**
     1. Upload the **Foreground Icon**. If you use the online tool, you'll find it inside the `IconKitchen-Output > android > res > mipmap-xxxhdpi > ic_launcher_foreground.png`.
     2. For **Background Type**, you can either set the **Color** or **Image**. It's recommended to use a color that aligns with your app's branding for a cohesive look.
-3. [Download the project](../../../testing-deployment-publishing/exporting-code/ff-cli.md) and run the following command in your terminal to generate the launcher icon:
+3. [Download the project](../../../ff-concepts/advanced/ff-cli.md#download-projects) and run the following command in your terminal to generate the launcher icon:
     
     `flutter pub run flutter_launcher_icons:main`
     

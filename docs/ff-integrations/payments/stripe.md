@@ -241,7 +241,7 @@ You can test Stripe payments on mobile and the Web before deployment. To do that
 1. Go to the FlutterFlow project and navigate to **Settings and Integrations** > **In App Purchases & Subscriptions** > **Stripe**.
 2. Make sure the **Is Production** is disabled.
 3. Make sure you have entered the correct **Test Credentials,** such as **Publishable Key** and **Secret Key**.
-4. [Download](../../testing-deployment-publishing/exporting-code/ff-cli.md) and [run](../../testing-deployment-publishing/running-your-app/run-your-app.md) your project..
+4. [Download](../../ff-concepts/advanced/ff-cli.md#download-projects) and [run](../../testing-deployment-publishing/running-your-app/run-your-app.md) your project..
 5. To test the purchase, you can use any of these [basic test card numbers](https://stripe.com/docs/testing#cards).
 
 ### 5. Releasing to Production

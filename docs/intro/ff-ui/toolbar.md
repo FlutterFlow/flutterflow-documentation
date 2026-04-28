@@ -102,7 +102,7 @@ The Developer Menu provides developers with access to tools such as code viewing
 
 4. **Download APK**: Use this to generate a release build of your Android app. It will automatically download the `.apk` file after the building process is complete.
 
-5. **FlutterFlow CLI**: You can also download the code using *[FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli)*. See instructions [here](../../testing-deployment-publishing/exporting-code/ff-cli.md).
+5. **FlutterFlow CLI**: You can also download the code using *[FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli)*. See instructions [here](../../ff-concepts/advanced/ff-cli.md#download-projects).
 
 :::note
 _Connect GitHub Repo_, _Download Code_, and _Download APK_ features requires a [**paid plan**](https://flutterflow.io/pricing).
