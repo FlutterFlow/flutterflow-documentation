@@ -212,7 +212,7 @@ Here’s how you do it:
 
 To download your app code, you have two options:
 
-- Use the [FlutterFlow CLI](../../ff-concepts/advanced/ff-cli.md#download-projects). (Recommended)
+- Use the [FlutterFlow CLI](../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md). (Recommended)
 - Alternatively, from the **Toolbar**, click on the **Developer Menu** > **Download Code**. This will download the *.zip* file. Extract the *.zip* file to view the contents of the project.
 
 ### 2. Setup Flutter SDK

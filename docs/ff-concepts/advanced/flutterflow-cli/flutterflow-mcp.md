@@ -144,7 +144,7 @@ From that point on, the same rules apply as when [editing an existing project](#
 Have your **project ID** ready. Open the project in the FlutterFlow editor. The project ID is the path segment after `/project/` in the URL.
 :::
 
-Editing an existing project follows the same flow as [creating a new one](#set-up-a-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks **Link to an existing FlutterFlow project?**, answer `y` and paste your project ID:
+Editing an existing project follows the same flow as [creating a new one](#setup-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks **Link to an existing FlutterFlow project?**, answer `y` and paste your project ID:
 
 ```dart
 Link to an existing FlutterFlow project? [y/N] y
