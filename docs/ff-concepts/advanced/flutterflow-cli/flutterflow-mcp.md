@@ -190,7 +190,6 @@ A workspace is bound to one project. To work on a different project, run `flutte
 
 **Out of scope**
 
-- A few DSL gaps that may close over time — shaders, and parameter types like `Document`, `SQLiteRow`, `WidgetBuilder`, `ChildSlotParam`, `ApiResponse`, `TimestampRange`, `GooglePlace`, `RevenueCat` types, `CustomCloudFunctionResponse`, and `ResponseStreamMessage`.
 - Anything outside the FlutterFlow project itself — running the app, deploying it, creating Firebase projects, managing secrets, App Store submissions.
 
 ## MCP server tools
