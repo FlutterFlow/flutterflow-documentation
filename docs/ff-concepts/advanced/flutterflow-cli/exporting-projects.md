@@ -8,8 +8,7 @@ keywords: [CLI, Collaboration, FlutterFlow, Projects, Local Management]
 ---
 
 
-# Download Projects with FlutterFlow CLI
-
+# Exporting Projects
 Follow the steps below to export your project.
 
 <div style={{
