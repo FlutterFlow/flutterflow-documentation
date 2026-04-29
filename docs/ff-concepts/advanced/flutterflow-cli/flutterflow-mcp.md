@@ -160,26 +160,8 @@ You can edit visually while an agent is working, but writes use **optimistic con
 
 So nothing gets silently overwritten, but expect occasional retries when you and the agent are editing the same project at once.
 
-## Branches and Rollback
 
-:::warning[Agents commit to main]
-Workspaces always target the project's **main branch**. There's no flag to point them at a feature branch. Every successful push creates a commit on main, so for high-stakes projects, work on a clone, make sure version history is enabled, or coordinate with your team before letting an agent run.
-:::
-
-To roll back, use FlutterFlow's project version history in the visual builder — the same mechanism you'd use for visual edits. Each agent push lands as a commit there with whatever commit message the agent supplied.
-
-## Refreshing Stale Context
-
-If you've made visual edits since the agent last read the project, the agent's local snapshot is stale. Two ways to fix it:
-
-- **Ask the agent to refresh.** Most agents call the MCP `refreshContext` tool on their own when they detect drift, but you can prompt explicitly: "refresh the project context."
-- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest.
-
-## Switching Projects
-
-A workspace is bound to one project. To work on a different project, run `flutterflow ai init` in a **new** folder and link it to the new project ID. `init` refuses to run in a non-empty directory, so it won't re-bind an existing workspace.
-
-## Agent Edit Scope
+### Agent Edit Scope
 
 **In scope**
 
@@ -194,6 +176,28 @@ A workspace is bound to one project. To work on a different project, run `flutte
 
 ## MCP Server Tools
 
+### Refreshing Stale Context
+
+If you've made visual edits since the agent last read the project, the agent's local snapshot is stale. Two ways to fix it:
+
+- **Ask the agent to refresh.** Most agents call the MCP `refreshContext` tool on their own when they detect drift, but you can prompt explicitly: "refresh the project context."
+- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest.
+
+## Branches and Rollback
+
+:::warning[Agents commit to main]
+Workspaces always target the project's **main branch**. There's no flag to point them at a feature branch. Every successful push creates a commit on main, so for high-stakes projects, work on a clone, make sure version history is enabled, or coordinate with your team before letting an agent run.
+:::
+
+To roll back, use FlutterFlow's project version history in the visual builder — the same mechanism you'd use for visual edits. Each agent push lands as a commit there with whatever commit message the agent supplied.
+
+
+## Switching Projects
+
+A workspace is bound to one project. To work on a different project, run `flutterflow ai init` in a **new** folder and link it to the new project ID. `init` refuses to run in a non-empty directory, so it won't re-bind an existing workspace.
+
+## MCP server tools
+
 Once approved, the FlutterFlow AI MCP server gives your agent the following tools.
 
 **Core actions**
@@ -202,12 +206,12 @@ Once approved, the FlutterFlow AI MCP server gives your agent the following tool
 | --- | --- |
 | `run` | Applies a planned set of changes to your FlutterFlow project. This is how edits get pushed. |
 | `validate` | Dry-runs a change without pushing it, so the agent can catch errors before committing. |
-| `inspect` | Reads project structure — either a whole-project summary or a scoped view. |
+| `inspect` | Reads project structure either a whole-project summary or a scoped view. |
 | `resources` | Lists reusable project and library resources (components, custom code, etc.). |
 | `init` | Scaffolds a new FlutterFlow AI workspace. |
 
 **Supporting**
 
-`status`, `search`, `refreshContext`, `contextCheck`, `docs`, `history` — used by the agent for project metadata, searching, refreshing its context, looking up FlutterFlow documentation, and reviewing prior tool calls.
+`status`, `search`, `refreshContext`, `contextCheck`, `docs`, `history` used by the agent for project metadata, searching, refreshing its context, looking up FlutterFlow documentation, and reviewing prior tool calls.
 
 The agent calls these tools on your behalf based on your prompts. Every tool call is subject to your agent's approval rules.
