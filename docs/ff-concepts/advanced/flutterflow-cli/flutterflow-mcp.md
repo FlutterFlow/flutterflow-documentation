@@ -30,7 +30,7 @@ The workspace is just a folder on your disk. The actual project lives in Flutter
 The [**Model Context Protocol**](https://modelcontextprotocol.io) is an open standard that lets AI agents call external tools. The FlutterFlow AI MCP server exposes FlutterFlow's project APIs to your agent so it can read and modify your project on your behalf.
 :::
 
-:::info[Remember]
+:::note[Remember]
 - **FlutterFlow CLI is not a replacement for the visual builder.** FlutterFlow is still faster for most visual work. FlutterFlow CLI is for precision, repeatability, and automation.
 - **FlutterFlow CLI doesn't execute your app.** It produces a FlutterFlow project, which you can test and run inside the FlutterFlow visual builder.
 :::
