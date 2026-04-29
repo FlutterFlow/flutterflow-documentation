@@ -279,14 +279,15 @@ So nothing gets silently overwritten, but expect occasional retries when you and
 
 - Anything outside the FlutterFlow project itself — running the app, deploying it, creating Firebase projects, managing secrets, App Store submissions.
 
-## MCP Server Tools
 
 ### Refreshing Stale Context
 
 If you've made visual edits since the agent last read the project, the agent's local snapshot is stale. Two ways to fix it:
 
-- **Ask the agent to refresh.** Most agents call the MCP `refreshContext` tool on their own when they detect drift, but you can prompt explicitly: "refresh the project context."
-- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest.
+- **Ask the agent to refresh.** Most agents call the [`refresh-context`](#mcp-tools) tool on their own when they detect drift, but you can prompt explicitly: "refresh the project context."
+- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest. 
+
+See [MCP tools](#mcp-tools) for the full command list.
 
 ## Branches and Rollback
 
