@@ -13,9 +13,9 @@ FF Designer lets you generate complete app designs from simple text prompts. Jus
 
 Ready to design your app? Simply:
 
-1. Open FF Designer and click the prompt bar that says “Describe your app”
-2. Enter your app idea and press Enter to generate designs
-3. Browse style variants and click “Use This Style”
+1. Open FF Designer and click the prompt bar that says **Describe your app**
+2. Enter your app idea and press **Enter** to generate designs
+3. Browse style variants and click **Use This Style**
 4. Review the generated screens in the canvas
 5. Edit using AI or manually adjust elements and properties
 6. Export your design to FlutterFlow, PNG, or Agent Prompt
@@ -59,12 +59,6 @@ Here are some prompts you can try in FF Designer to quickly generate complete ap
 
 Design a personal finance app that helps users track expenses and manage budgets. Show a dashboard with total balance, recent transactions, and spending categories. Include detailed views for transaction history and budget insights. Make the UI clean, modern, and easy to understand.
 
-**Next steps**
-
-- Add expense categorization and filters
-- Include charts for spending trends
-- Add reminders for bills and recurring payments
-
 ![finance-app.avif](imgs/finance-app.avif)
 
 ### Fitness Workout App
@@ -73,12 +67,6 @@ Design a personal finance app that helps users track expenses and manage budgets
 
 Create a fitness app with a home screen showing daily workouts, progress stats, and streaks. Include workout detail screens with exercises, sets, and timers. Make the design energetic, modern, and easy to follow.
 
-**Next steps**
-
-- Add personalized workout recommendations
-- Include progress charts and analytics
-- Add reminders and notifications for workouts
-
 ![fitness-tracking-app.avif](imgs/fitness-tracking-app.avif)
 
 ### Food Delivery App
@@ -86,11 +74,5 @@ Create a fitness app with a home screen showing daily workouts, progress stats, 
 **Prompt**
 
 Design a food delivery app with a home screen showing nearby restaurants, categories, and featured items. Include restaurant detail pages, menu listings, and a checkout flow. Make the UI modern, colorful, and easy to navigate.
-
-**Next steps**
-
-- Add order tracking with live status updates
-- Include user reviews and ratings
-- Add favorites and reorder feature designs
 
 ![food-delivery-app.avif](imgs/food-delivery-app.avif)
