@@ -227,7 +227,7 @@ Editing an existing project follows the same flow as [creating a new one](#setup
 ```dart
 Link to an existing FlutterFlow project? [y/N] y
 Project ID
-> my-meditation-app-x7k2p9
+> mindfly-c9lbgr
 ```
 
 The workspace is now bound to that project. `cd` into the workspace folder, [launch your agent](#launch-your-agent), and describe the changes you want — "add a profile screen", "switch the primary color to teal", "wire up the login form to Firebase Auth". The agent reads the current project, plans the change, and pushes it through the MCP server. Open FlutterFlow in your browser to verify.
