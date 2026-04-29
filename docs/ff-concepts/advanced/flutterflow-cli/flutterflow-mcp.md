@@ -62,9 +62,10 @@ This launches an interactive setup wizard. Walk through the prompts:
    > mindfly
    ```
 2. **Environment.** Use ↑ / ↓ to highlight the FlutterFlow environment you want this workspace to target, then press **Enter**.
-3. **Link to an existing FlutterFlow project?** Press **Enter** (default `N`) to create a new app. Answer `y` to bind the workspace to an existing project — the wizard will then ask for the project ID.
+3. **Existing project ID.** Press **Enter** with no input to create a new app, or paste an existing project ID to bind the workspace to it.
    ```
-   Link to an existing FlutterFlow project? [y/N]
+   Existing project ID to edit (press Enter to create a new app)
+   >
    ```
 4. **FlutterFlow API key.** Paste your API key and press **Enter**. Input is masked.
 5. **Register MCP server with detected coding CLIs.** The wizard scans your `PATH` and offers to register the FlutterFlow AI MCP server with each agent it finds (Claude Code, Gemini CLI, Codex). Answer `Y` (default) for each one you plan to use.
@@ -222,11 +223,10 @@ From that point on, the same rules apply as when [editing an existing project](#
 Have your **project ID** ready. Open the project in the FlutterFlow editor. The project ID is the path segment after `/project/` in the URL.
 :::
 
-Editing an existing project follows the same flow as [creating a new one](#setup-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks **Link to an existing FlutterFlow project?**, answer `y` and paste your project ID:
+Editing an existing project follows the same flow as [creating a new one](#setup-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks for an **existing project ID**, paste yours instead of pressing Enter:
 
-```dart
-Link to an existing FlutterFlow project? [y/N] y
-Project ID
+```
+Existing project ID to edit (press Enter to create a new app)
 > mindfly-c9lbgr
 ```
 
