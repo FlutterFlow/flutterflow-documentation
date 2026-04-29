@@ -28,6 +28,21 @@ You may want to run the docs site locally to test and visualize changes you are 
 1. **Install Dependencies:** Run **`npm install`** in your terminal to install the necessary dependencies.
 2. **Preview Changes:** To see your changes in real-time as you edit the files, you can run a local development server. This server will host your website and reflect the latest changes. Use the command **`npm run start`**.
 
+## Deploying a Staging Preview
+To share your branch with reviewers before merging, deploy it to a Firebase Hosting preview channel. This builds the site and publishes it to a temporary URL (defaults to a 7-day expiry).
+
+```bash
+make staging                              # channel name = current git branch
+make staging CHANNEL=my-channel           # custom channel name
+make staging CHANNEL=my-channel EXPIRES=14d
+```
+
+Other targets:
+- `make build` — build the site only
+- `make deploy-staging` — deploy without rebuilding
+
+Requires the Firebase CLI (`npm install -g firebase-tools`) and access to the `flutterflow-docs-82026` Firebase project.
+
 ## Ready to Contribute?
 Your contributions are vital to keeping FlutterFlow's documentation clear, up-to-date, and helpful. We look forward to seeing your pull requests and are excited to welcome you into our community of contributors!
 
