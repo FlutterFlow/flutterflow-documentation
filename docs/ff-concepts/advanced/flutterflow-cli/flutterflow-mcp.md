@@ -179,7 +179,7 @@ If you've made visual edits since the agent last read the project, the agent's l
 
 A workspace is bound to one project. To work on a different project, run `flutterflow ai init` in a **new** folder and link it to the new project ID. `init` refuses to run in a non-empty directory, so it won't re-bind an existing workspace.
 
-## Agent edit scope
+## Agent Edit Scope
 
 **In scope**
 
@@ -192,7 +192,7 @@ A workspace is bound to one project. To work on a different project, run `flutte
 
 - Anything outside the FlutterFlow project itself — running the app, deploying it, creating Firebase projects, managing secrets, App Store submissions.
 
-## MCP server tools
+## MCP Server Tools
 
 Once approved, the FlutterFlow AI MCP server gives your agent the following tools.
 
