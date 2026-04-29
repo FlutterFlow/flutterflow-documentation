@@ -93,6 +93,32 @@ When the wizard finishes, you'll have a workspace folder ready for your agent. D
 
 Each file points the corresponding agent at the FlutterFlow AI MCP server.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/mBJK3OJs4yg0WY3GxSU0?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ## Launch your Agent
 
 Move into the workspace and start your agent. The example below uses Claude Code; the same pattern applies to any agent you registered in the wizard — `cd` into the workspace and launch the agent's CLI.
@@ -119,6 +145,32 @@ Choose **option 1** to approve the FlutterFlow AI MCP server (and any others add
 
 > **Why approve?** Without the MCP server, the agent can edit local files but can't push changes to your FlutterFlow project. With it approved, the agent has the same tools you'd run yourself from the CLI.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/wPBM094bg4iDSWblXpnG?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ## Generate a New App
 
 With the agent connected, describe the app you want at the prompt:
@@ -138,6 +190,32 @@ Let me check the workspace and read the edit template.
 
 From that point on, the same rules apply as when [editing an existing project](#edit-an-existing-project) - concurrency, branches, scope, and refreshing context.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/RnNngmhVpZflzDWqsDBA?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ## Edit an Existing Project
 
 :::info[Prerequisite]
@@ -153,6 +231,33 @@ Project ID
 ```
 
 The workspace is now bound to that project. `cd` into the workspace folder, [launch your agent](#launch-your-agent), and describe the changes you want — "add a profile screen", "switch the primary color to teal", "wire up the login form to Firebase Auth". The agent reads the current project, plans the change, and pushes it through the MCP server. Open FlutterFlow in your browser to verify.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/VNb9xlkwjZGrdaeIpUb1?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Concurrent Edits with Builder
 
