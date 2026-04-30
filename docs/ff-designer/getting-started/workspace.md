@@ -14,6 +14,7 @@ The workspace is organized into panels that work together to provide a complete 
 ![ff-designer.avif](../imgs/ff-designer.avif)
 
 - **Frames Panel**: Displays all screens of the app and allows quick navigation between them.
+- **Components Panel**: Create reusable UI elements.
 - **Theme Panel**: Make global theme customization.
 - **Layers Panel**: Shows the hierarchical structure of widgets within the selected screen.
 - **Canvas Area**: Visual preview of all screens in storyboard layout.
