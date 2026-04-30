@@ -53,6 +53,13 @@ Open your terminal in the folder where you want the workspace to live, then run:
 flutterflow ai init
 ```
 
+By default, `flutterflow ai init` targets the production FlutterFlow environment. To initialize a workspace against a non-production environment, pass the environment explicitly:
+
+```bash
+flutterflow ai init --env beta
+flutterflow ai init --env enterprise-india
+```
+
 This launches an interactive setup wizard. Walk through the prompts:
 
 1. **Workspace name.** A short, lowercase name with no spaces. This becomes the folder name for your project.
@@ -61,20 +68,19 @@ This launches an interactive setup wizard. Walk through the prompts:
      Directory to scaffold the FlutterFlow AI workspace in.
    > mindfly
    ```
-2. **Environment.** Use ↑ / ↓ to highlight the FlutterFlow environment you want this workspace to target, then press **Enter**.
-3. **Existing project ID.** Press **Enter** with no input to create a new app, or paste an existing project ID to bind the workspace to it.
+2. **Existing project ID.** Press **Enter** with no input to create a new app, or paste an existing project ID to bind the workspace to it.
    ```
    Existing project ID to edit (press Enter to create a new app)
    >
    ```
-4. **FlutterFlow API key.** Paste your API key and press **Enter**. Input is masked.
-5. **Register MCP server with detected coding CLIs.** The wizard scans your `PATH` and offers to register the FlutterFlow AI MCP server with each agent it finds (Claude Code, Gemini CLI, Codex). Answer `Y` (default) for each one you plan to use.
+3. **FlutterFlow API key.** Paste your API key and press **Enter**. Input is masked.
+4. **Register MCP server with detected coding CLIs.** The wizard scans your `PATH` and offers to register the FlutterFlow AI MCP server with each agent it finds (Claude Code, Gemini CLI, Codex). Answer `Y` (default) for each one you plan to use.
    ```
    Register FlutterFlow AI MCP server with coding CLIs
      Detected: claude, gemini, codex
      Register with claude? [Y/n]
    ```
-6. **Confirm.** The wizard prints a summary. Review it and press **Enter** (default `Y`) to proceed.
+5. **Confirm.** The wizard prints a summary. Review it and press **Enter** (default `Y`) to proceed.
    ```
    Ready to create:
      Workspace:  mindfly
