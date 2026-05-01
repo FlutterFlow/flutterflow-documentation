@@ -297,7 +297,7 @@ See [MCP tools](#mcp-tools) for the full command list.
 
 ## Branches and Rollback
 
-The CLI can target any branch of a FlutterFlow project. To work on a branch, open that branch in the FlutterFlow editor, copy the project ID from the URL, and paste it when `flutterflow ai init` asks for an **existing project ID**.
+The CLI can point to any branch of a FlutterFlow project. Since each branch is accessed through its own URL, it has its own project ID. To work on a specific branch, open it in the FlutterFlow editor, copy the project ID from the URL, and paste it when `flutterflow ai init` prompts for an existing project ID.
 
 To roll back, use FlutterFlow's project version history in the visual builder — the same mechanism you'd use for visual edits. Each agent push lands as a commit there with whatever commit message the agent supplied.
 
