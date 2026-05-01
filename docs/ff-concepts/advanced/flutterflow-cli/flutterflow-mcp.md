@@ -227,8 +227,6 @@ From that point on, the same rules apply as when [editing an existing project](#
 
 :::info[Prerequisite]
 Have your **project ID** ready. Open the project in the FlutterFlow editor. The project ID is the path segment after `/project/` in the URL.
-
-**To work on any branch of the project**, open that branch in the FlutterFlow editor and copy the project ID from URL.
 :::
 
 Editing an existing project follows the same flow as [creating a new one](#setup-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks for an **existing project ID**, paste yours instead of pressing Enter:
@@ -299,9 +297,7 @@ See [MCP tools](#mcp-tools) for the full command list.
 
 ## Branches and Rollback
 
-:::warning[Agents commit to main]
-Workspaces always target the project's **main branch**. There's no flag to point them at a feature branch. Every successful push creates a commit on main, so for high-stakes projects, work on a clone, make sure version history is enabled, or coordinate with your team before letting an agent run.
-:::
+Workspaces can target any branch of a FlutterFlow project. To work on a branch, open that branch in the FlutterFlow editor, copy the project ID from the URL, and paste it when `flutterflow ai init` asks for an **existing project ID**.
 
 To roll back, use FlutterFlow's project version history in the visual builder — the same mechanism you'd use for visual edits. Each agent push lands as a commit there with whatever commit message the agent supplied.
 
