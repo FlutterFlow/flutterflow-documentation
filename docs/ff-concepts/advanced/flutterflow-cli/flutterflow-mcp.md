@@ -227,6 +227,8 @@ From that point on, the same rules apply as when [editing an existing project](#
 
 :::info[Prerequisite]
 Have your **project ID** ready. Open the project in the FlutterFlow editor. The project ID is the path segment after `/project/` in the URL.
+
+**To work on any branch of the project**, open that branch in the FlutterFlow editor and copy the project ID from URL.
 :::
 
 Editing an existing project follows the same flow as [creating a new one](#setup-workspace) — you run `flutterflow ai init` to scaffold a workspace, then drive changes from your agent. The only difference is one step in the wizard: when it asks for an **existing project ID**, paste yours instead of pressing Enter:
