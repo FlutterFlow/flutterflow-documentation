@@ -68,7 +68,7 @@ import InfoCards from '@site/src/components/InfoCards';
       iconBg="#FFE5D9"
       title="Quickstart"
       description="Generate your first app design from a simple text prompt and export it in just a few steps."
-      pagePath="/flutterflow-designer-quickstart"
+      pagePath="/designer/quickstart"
       fullWidth={true}
       tags={["Prompting", "Style exploration", "Export"]}
     />
@@ -77,7 +77,7 @@ import InfoCards from '@site/src/components/InfoCards';
       iconBg="#E0EAFF"
       title="Tour the workspace"
       description="Get familiar with the panels, canvas, and tools that make up the Designer environment."
-      pagePath="/workspace"
+      pagePath="/designer/workspace"
       fullWidth={true}
       tags={["Canvas", "Panels", "Theme", "Components"]}
     />
@@ -93,7 +93,7 @@ import InfoCards from '@site/src/components/InfoCards';
       iconBg="#DCFCE7"
       title="Components"
       description="Build reusable UI blocks with variants and parameters to keep your design system consistent across screens."
-      pagePath="/components"
+      pagePath="/designer/components"
       fullWidth={true}
       tags={["Reusable UI", "Variants", "Parameters", "Has expression"]}
     />
@@ -111,7 +111,7 @@ import InfoCards from '@site/src/components/InfoCards';
       iconBg="#FFE4E6"
       title="Integrations"
       description="Integrated with agents for a seamless design-to-code experience. Connect Designer with Claude, Gemini, and other AI tools to edit designs in natural language."
-      pagePath="/integrations"
+      pagePath="/designer/integrations"
       fullWidth={true}
       tags={["Claude", "Gemini", "MCP", "Natural language editing"]}
     />

@@ -1,5 +1,5 @@
 ---
-slug: /integrations
+slug: /designer/integrations
 title: Integrations
 description: Connect FlutterFlow Designer with AI agents and developer tools to generate, edit, and update designs using natural language from your preferred environment.
 tags: [Integrations, FlutterFlow Designer, FlutterFlow, Design]
