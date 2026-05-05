@@ -1,5 +1,5 @@
 ---
-slug: /designer/welcome
+slug: /designer
 title: Welcome
 description: Discover FlutterFlow Designer—the fastest way to design apps. Explore its key features, understand how it works, and start designing your first app with ease.
 tags: [FlutterFlow Designer, FlutterFlow, Design]
