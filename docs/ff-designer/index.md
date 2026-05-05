@@ -102,7 +102,7 @@ import InfoCards from '@site/src/components/InfoCards';
       iconBg="#FEF3C7"
       title="Import & Export"
       description="Bring existing FlutterFlow screens into Designer or hand off designs back to FlutterFlow, PNG, or agent-ready prompts."
-      pagePath="/import-export"
+      pagePath="/designer/import"
       fullWidth={true}
       tags={["Import", "Export to FlutterFlow", "PNG", "Agent prompts"]}
     />
