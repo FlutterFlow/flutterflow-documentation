@@ -45,10 +45,10 @@ const config: Config = {
         //   blogSidebarTitle: 'FlutterFlow Blog',
         //   blogSidebarCount: 'ALL'
         // },
-        gtag: {
+        gtag: process.env.NODE_ENV === 'production' ? {
           trackingID: 'G-LC4SC6JY70',
           anonymizeIP: true,
-        },
+        } : undefined,
         theme: {
           customCss: './src/css/custom.css',
         },

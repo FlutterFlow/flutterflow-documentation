@@ -180,7 +180,7 @@ To add *Firebase App Check* to your app:
 
 5. You might want to see if it works on a real device or an emulator. To run on a real device, you can set the **Android Provider** to **Play Integrity** and to run on an emulator, set it to **Debug,** and then try checking it by downloading the APK.
     1. If it doesn't work for *Play Integrity*, ensure you have enabled the Play Integrity API. See how to do it in step 2 [here](https://firebase.google.com/docs/app-check/android/play-integrity-provider?authuser=1&hl=en#project-setup).
-    2. If it doesn't work for *Debug*, you can try [downloading the code](../../testing-deployment-publishing/exporting-code/ff-cli.md), following the instructions [here](https://firebase.google.com/docs/app-check/flutter/debug-provider#android), and running it locally.
+    2. If it doesn't work for *Debug*, you can try [downloading the code](../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md), following the instructions [here](https://firebase.google.com/docs/app-check/flutter/debug-provider#android), and running it locally.
 
 :::tip
 To add the App Check on the app with the non-Firebase (i.e., your self-hosted) backend, follow the instructions [**here**](https://firebase.google.com/docs/app-check/flutter/custom-resource).
