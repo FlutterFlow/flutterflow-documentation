@@ -19,6 +19,6 @@ You can see all the logged errors/crashes inside the Crashlytics dashboard of yo
 ![Crashlytics dashboard](imgs/crashlytics-dashboard.avif)
 
 1. Click on the issue name to see its details.
-2. To test the crash on your app, [download the app](../../testing-deployment-publishing/exporting-code/ff-cli.md), add a code that throws an error, and run it on a mobile device or emulator with an active internet connection.
+2. To test the crash on your app, [download the app](../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md), add a code that throws an error, and run it on a mobile device or emulator with an active internet connection.
 
 ![Test crash](imgs/test-crash.avif)

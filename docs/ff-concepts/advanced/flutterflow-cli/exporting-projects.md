@@ -1,27 +1,14 @@
 ---
-slug: /exporting/ff-cli
-title: FlutterFlow CLI
+slug: /flutterflow-cli/exporting
+title: Exporting Projects
 description: Learn how to download and manage your FlutterFlow projects locally using the FlutterFlow CLI.
 tags: [CLI, Collaboration, FlutterFlow]
-sidebar_position: 1
+sidebar_position: 2
 keywords: [CLI, Collaboration, FlutterFlow, Projects, Local Management]
 ---
 
 
-# FlutterFlow CLI
-
-The [FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli) tool allows you to quickly and easily download your project files directly from FlutterFlow to your local machine.
-
-## Installation
-
-To use the FlutterFlow CLI, you first need to install it globally using Dart's package manager with the following command:
-
-```
-dart pub global activate flutterflow_cli
-```
-
-## Usage
-
+# Exporting Projects
 Follow the steps below to export your project.
 
 <div style={{
@@ -51,10 +38,8 @@ Follow the steps below to export your project.
 </div>
 <p></p>
 
-### API Token
-To use the CLI, you'll need to create an API token and use it in your requests. See the documentation [here on how to generate an API token.](/accounts-billing/account-management)
 
-### CLI command details
+### Command Details
 
 - If you wish to exclude assets from the download, use `-no-include-assets` in your command. This will download the project code without the assets. For example: `flutterflow export-code --project your_project_id --dest path_to_output_folde --no-include-assets --token your_token`
     
@@ -71,13 +56,13 @@ To use the CLI, you'll need to create an API token and use it in your requests. 
 | --[no]-parent-folder | Option to download the code into a subfolder instead of directly into the directory. | False |
 | --[no]-as-module | Whether to generate the project as a Flutter module. | False |
 | --[no]-as-debug | Whether to generate the project with debug logging to be able to use FlutterFlow Debug Panel inside the DevTools. | False |
-| --project-environment | Which [development environment](../development-environments/development-environments.md) to be used. If empty, the current environment in the project will be downloaded. | Current environment |
+| --project-environment | Which [development environment](../../../testing-deployment-publishing/development-environments/development-environments.md) to be used. If empty, the current environment in the project will be downloaded. | Current environment |
 
-## Filtered exports
+### Filtered exports
 
 If you are updating an existing project and do not want certain files to be overwritten during a code export, you can create a `.flutterflowignore` file in the root of your project directory. This file should contain a list of files to be ignored using globbing syntax.
 
-### Example:
+#### Example:
 If your project is located at:  
 ```
 /Users/yourname/projects/my_flutterflow_app/
@@ -87,7 +72,7 @@ Then, place the `.flutterflowignore` file in:
 /Users/yourname/projects/.flutterflowignore
 ```
 
-### Example `.flutterflowignore` contents:
+#### Example `.flutterflowignore` contents:
 ```
 my_flutterflow_app/android/app/build.gradle    # Prevents FlutterFlow from overwriting native Android build configuration
 my_flutterflow_app/ios/Runner/Info.plist       # Keeps iOS app metadata unchanged

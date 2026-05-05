@@ -164,7 +164,7 @@ You can run tests on local devices or use the services like [Firebase Test Lab](
 
 To run the tests locally:
 
-1. [Download the project code](../exporting-code/ff-cli.md).
+1. [Download the project code](../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md).
 2. Go to `your_project/integration_test/test.dart`.
 3. To run a specific test, click the play button next to it. To execute all tests at once, double-click the play button next to `void main`.
 4. Alternatively, you can use the terminal and enter the command: `flutter test integration_test/test.dart`."
