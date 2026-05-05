@@ -15,13 +15,22 @@
   grid-column: span 2; /* Makes the card span 2 columns */
 }
 
+.fullWidthCard {
+  grid-column: 1 / -1; /* Spans the entire row */
+  padding: 28px 32px;
+}
+
 @media (max-width: 768px) {
   .infoCard {
     padding: 20px;
   }
-  
+
   .largeCard {
     grid-column: span 1; /* Reset on mobile */
+  }
+
+  .fullWidthCard {
+    padding: 22px;
   }
 }
 
@@ -53,6 +62,16 @@
   color: var(--ifm-color-primary);
   display: flex;
   align-items: center;
+}
+
+.infoCardIconBubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 0;
+  margin-bottom: 16px;
+  font-size: 22px;
 }
 
 .infoCardTitle {
@@ -91,4 +110,28 @@
 .infoCardLink:hover {
   color: inherit;
   text-decoration: none;
+}
+
+.infoCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.infoCardTag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .infoCardTag {
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-300);
 }
