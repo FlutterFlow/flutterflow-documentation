@@ -34,6 +34,19 @@ const config: Config = {
           exclude: ['docs/index.md'],
           sidebarCollapsible: true, /* Keep sidebar expanded by default */
           sidebarCollapsed: true, /* Start with sidebar expanded */
+          sidebarItemsGenerator: async ({defaultSidebarItemsGenerator, ...args}) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            if (args.item.dirName === 'ff-designer') {
+              const expandCategories = (items: any[]): any[] =>
+                items.map((item) =>
+                  item.type === 'category'
+                    ? {...item, collapsed: false, items: expandCategories(item.items)}
+                    : item,
+                );
+              return expandCategories(items);
+            }
+            return items;
+          },
           // lastVersion: 'current',
           // versions: {
           //   current: {
