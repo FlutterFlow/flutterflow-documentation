@@ -29,9 +29,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 64px 24px 32px;
+  overflow: hidden;
+  padding: 32px 24px;
   background: rgba(0, 0, 0, 0.88);
   cursor: zoom-out;
+  overscroll-behavior: none;
 }
 
 .fullscreenImage {
@@ -60,17 +62,4 @@
 .closeButton:hover,
 .closeButton:focus-visible {
   background: rgba(255, 255, 255, 0.18);
-}
-
-.caption {
-  position: fixed;
-  top: 24px;
-  left: 24px;
-  right: 76px;
-  overflow: hidden;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.4;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }

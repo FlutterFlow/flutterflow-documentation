@@ -1,4 +1,4 @@
-import React, {useEffect, useId, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import clsx from 'clsx';
 import type {Props} from '@theme/MDXComponents/Img';
 
@@ -11,7 +11,6 @@ function transformImgClassName(className?: string): string {
 export default function MDXImg(props: Props): JSX.Element {
   const {alt, className, src} = props;
   const [isOpen, setIsOpen] = useState(false);
-  const titleId = useId();
 
   useEffect(() => {
     if (!isOpen) {
@@ -53,7 +52,7 @@ export default function MDXImg(props: Props): JSX.Element {
           className={styles.overlay}
           role="dialog"
           aria-modal="true"
-          aria-labelledby={alt ? titleId : undefined}
+          aria-label={alt ? `Fullscreen image: ${alt}` : 'Fullscreen image'}
           onClick={() => setIsOpen(false)}>
           <button
             type="button"
@@ -62,11 +61,6 @@ export default function MDXImg(props: Props): JSX.Element {
             onClick={() => setIsOpen(false)}>
             ×
           </button>
-          {alt && (
-            <div id={titleId} className={styles.caption}>
-              {alt}
-            </div>
-          )}
           <img
             src={src}
             alt={alt}
