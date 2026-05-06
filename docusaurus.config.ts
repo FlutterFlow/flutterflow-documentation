@@ -69,6 +69,40 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@signalwire/docusaurus-plugin-llms-txt',
+      {
+        siteTitle: 'FlutterFlow Documentation',
+        siteDescription:
+          'Learn how to build mobile, web and desktop apps incredibly fast — without sacrificing on app quality or features',
+        content: {
+          enableMarkdownFiles: true,
+          enableLlmsFullTxt: true,
+          includeDocs: true,
+          includeBlog: false,
+          includePages: false,
+          includeGeneratedIndex: false,
+          excludeRoutes: [
+            '/',
+            '/marketplace',
+            '/troubleshooting',
+            '/designer/welcome',
+          ],
+        },
+        copyPageContent: {
+          buttonLabel: 'Copy for LLM',
+          actions: {
+            markdown: true,
+            ai: {chatGPT: true, claude: true},
+          },
+        },
+      },
+    ],
+  ],
+
+  themes: ['./src/theme-llms-txt.js'],
+
   stylesheets: [
     {
       href: 'https://fonts.googleapis.com/css?family=Product+Sans',
