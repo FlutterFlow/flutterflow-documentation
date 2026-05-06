@@ -2447,6 +2447,16 @@
         "source": "/resources/projects/settings/mcp-server",
         "destination": "/",
         "type": 301
+      },
+      {
+        "source": "/exporting/ff-cli",
+        "destination": "/flutterflow-cli",
+        "type": 301
+      },
+      {
+        "source": "/exporting/ff-cli#usage",
+        "destination": "/flutterflow-cli/exporting",
+        "type": 301
       }
     ]
   }

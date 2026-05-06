@@ -1,5 +1,5 @@
 ---
-slug: /workspace
+slug: /designer/workspace
 title: Workspace
 description: Learn about FlutterFlow Designer's workspace that provide a complete design environment with specialized tools.
 tags: [FlutterFlow Designer, FlutterFlow, Design, Workspace]

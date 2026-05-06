@@ -1,10 +1,10 @@
 ---
-slug: /integrations
+slug: /designer/integrations
 title: Integrations
 description: Connect FlutterFlow Designer with AI agents and developer tools to generate, edit, and update designs using natural language from your preferred environment.
-tags: [AI Agent, MCP, FlutterFlow Designer]
+tags: [Integrations, FlutterFlow Designer, FlutterFlow, Design]
 sidebar_position: 0
-keywords: [ai agent, mcp, integrations, flutterflow designer, ai app design]
+keywords: [integrations, flutterflow designer, ai app design]
 ---
 
 # Integrations

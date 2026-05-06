@@ -1,5 +1,5 @@
 ---
-slug: /components
+slug: /designer/components
 title: Components
 description: Learn how to create reusable UI components, add variants and toggles, and manage dynamic behavior using parameters and expressions in FlutterFlow Designer.
 tags: [Components, FlutterFlow Designer, FlutterFlow, Design]

@@ -1,5 +1,5 @@
 ---
-slug: /flutterflow-designer-quickstart
+slug: /designer/quickstart
 title: Quickstart
 description: Get started with designing your first app quickly.
 tags: [FlutterFlow Designer, FlutterFlow, Design, Quickstart]

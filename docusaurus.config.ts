@@ -34,6 +34,19 @@ const config: Config = {
           exclude: ['docs/index.md'],
           sidebarCollapsible: true, /* Keep sidebar expanded by default */
           sidebarCollapsed: true, /* Start with sidebar expanded */
+          sidebarItemsGenerator: async ({defaultSidebarItemsGenerator, ...args}) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            if (args.item.dirName === 'ff-designer') {
+              const expandCategories = (items: any[]): any[] =>
+                items.map((item) =>
+                  item.type === 'category'
+                    ? {...item, collapsed: false, items: expandCategories(item.items)}
+                    : item,
+                );
+              return expandCategories(items);
+            }
+            return items;
+          },
           // lastVersion: 'current',
           // versions: {
           //   current: {
@@ -45,16 +58,50 @@ const config: Config = {
         //   blogSidebarTitle: 'FlutterFlow Blog',
         //   blogSidebarCount: 'ALL'
         // },
-        gtag: {
+        gtag: process.env.NODE_ENV === 'production' ? {
           trackingID: 'G-LC4SC6JY70',
           anonymizeIP: true,
-        },
+        } : undefined,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [
+    [
+      '@signalwire/docusaurus-plugin-llms-txt',
+      {
+        siteTitle: 'FlutterFlow Documentation',
+        siteDescription:
+          'Learn how to build mobile, web and desktop apps incredibly fast — without sacrificing on app quality or features',
+        content: {
+          enableMarkdownFiles: true,
+          enableLlmsFullTxt: true,
+          includeDocs: true,
+          includeBlog: false,
+          includePages: false,
+          includeGeneratedIndex: false,
+          excludeRoutes: [
+            '/',
+            '/marketplace',
+            '/troubleshooting',
+            '/designer/welcome',
+          ],
+        },
+        copyPageContent: {
+          buttonLabel: 'Copy for LLM',
+          actions: {
+            markdown: true,
+            ai: {chatGPT: true, claude: true},
+          },
+        },
+      },
+    ],
+  ],
+
+  themes: ['./src/theme-llms-txt.js'],
 
   stylesheets: [
     {

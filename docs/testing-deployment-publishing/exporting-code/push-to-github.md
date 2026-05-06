@@ -152,5 +152,5 @@ After testing the changes in `develop`:
 2. Once reviewed and merged, deploy your application from the `main` branch using FlutterFlow’s deployment features.
 
 :::tip
-Also, see how you can download the code using [**FlutterFlow CLI**](ff-cli) and [**Local Run**](../running-your-app/local-run.md).
+Also, see how you can download the code using [**FlutterFlow CLI**](../../ff-concepts/advanced/flutterflow-cli/overview.md) and [**Local Run**](../running-your-app/local-run.md).
 :::
