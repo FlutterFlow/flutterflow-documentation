@@ -415,3 +415,173 @@ uniform float uTime;
 uniform float speed;
 uniform vec4 color;
 ```
+
+## Use Shadertoy Shaders
+
+[Shadertoy](https://www.shadertoy.com/) hosts thousands of community-made GLSL fragment shaders such as animated backgrounds, glowing effects, liquid simulations, and more. Flutter supports custom fragment shaders through its `FragmentProgram` API, but Shadertoy shaders can't be dropped in directly: they use a different entry point, different uniform names, and several built-ins that Flutter doesn't recognize.
+
+The [Shadertoy to Flutter skill](https://github.com/FlutterFlow/shadertoy_to_flutter_skill) helps convert Shadertoy GLSL into Flutter-compatible `.frag` shaders. It rewrites the shader structure, maps Shadertoy uniforms to Flutter uniforms, handles texture/audio channels where possible, and produces a `.frag` file that can be uploaded into your FlutterFlow project.
+
+#### Step 1: Download Skill
+
+The skill teaches AI Agents how to convert Shadertoy shaders accurately and safely for Flutter. The skill used for this workflow is: **`shadertoy-to-flutter`**. Download it from the [GitHub repo](https://github.com/FlutterFlow/shadertoy_to_flutter_skill).
+
+The skill contains the following files:
+
+- `SKILL.md`: Main instruction file containing the shader conversion workflow and rules.
+- `references/flutter_glsl_constraints.md`: Flutter GLSL limitations, unsupported features, uniform rules, and texture handling.
+- `references/uniform_mapping.md`: Maps Shadertoy uniforms to Flutter equivalents (e.g. `iTime → uTime`).
+- `references/templates.md`: Example fill/wrap shader templates and sample conversions.
+- `references/noise_library.md`: Noise/hash helper functions for replacing Shadertoy noise textures.
+- `scripts/package-skill.sh`: Packages the skill into a distributable zip file.
+
+#### Step 2: Install Skill
+
+You can use this skill with AI agents such as Claude, Codex, or another AI assistant that can read `SKILL.md` and follow its instructions.
+
+**Install in Claude**
+
+1. Open the **Claude Desktop app**.
+2. Go to **Customize**. Select **Skills** from the left sidebar.
+3. Click the **+** button at the top of the Skills panel. Choose **Upload a skill**.
+4. Upload the Shadertoy skill as a .zip file or skill folder.
+
+The uploaded skill must include:`SKILL.md`. It can also include supporting folders such as: `references/` and `scripts/`
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/rAA7cg7SbMubCpyBErNC?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+**Install in Codex**
+
+1. Open the **Codex Desktop app**.
+2. In the message box, type: `/sk`
+3. Select **Skill Installer** from the skill suggestions list.
+4. Ask Codex to install the Shadertoy skill directly from GitHub:
+
+```
+Install this skill https://github.com/FlutterFlow/shadertoy_to_flutter_skill
+```
+
+Codex will run the Skill Installer and install the skill into your local Codex folder. After installation finishes, restart Codex.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/cGbr1t7Oo2XJv5bp88J5?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### Step 3: Using Skill
+
+You can use the skill with either a Shadertoy URL or a local .glsl file.
+
+**Option A: Convert a Shadertoy URL**
+
+In the prompt, provide the Shadertoy URL and ask to convert into `.frag` file, for example:
+
+```
+[invoke shadertoy-to-flutter skill] convert this Shadertoy shader into a Flutter .frag file:
+[shadertoy-url]
+```
+
+![convert-via-url.avif](imgs/convert-via-url.avif)
+
+**Option B: Convert a Local .glsl File**
+
+Open the Shadertoy shader you want to use, copy the shader code, and save it as a `.glsl` file. Then attach the file and use a prompt such as:
+
+```
+[invoke shadertoy-to-flutter skill] convert this file into a Flutter .frag file
+```
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/b9lZQ81Fq3tHpq5N50Z6?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip
+
+You can also paste the shader code directly into the prompt, for example:
+
+```
+Use the /shadertoy-to-flutter skill and convert this shader to a Flutter .frag file:
+
+[paste shader code]
+```
+
+:::
+
+#### Step 4: Upload .frag File to FlutterFlow Project
+
+Upload the `.frag` file generated in the previous step to the **Shader Asset** picker in FlutterFlow and run your app. If required, also [add Uniform](#adding-uniforms) to define input values for your shader.
+
+### Best Practices
+
+- Keep the generated .frag file unchanged unless you know GLSL well.
+- Always check the uniform order before wiring values in FlutterFlow or Dart.
+- Prefer fill shaders when possible because they are easier to use.
+- Use wrap shaders only when the shader needs an image, scene, or app UI texture.
+- Avoid adding extra uniforms unless you really need user control.
