@@ -9,16 +9,22 @@ keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
 
 # Cloud Functions
 
-[**Cloud Functions**](https://firebase.google.com/docs/functions) allows you to run backend code in response to events triggered by Firebase features and HTTPS requests. For example, you want to automatically send a welcome email to users when they sign up for your app. You can do this using a Cloud Function that triggers on Firebase Authentication's user creation event.
+Cloud Functions let you run backend code in response to events and API requests without managing your own servers. They are commonly used for tasks such as processing data, calling external APIs, sending notifications, running AI workflows, or securely handling secrets and business logic.
 
-We allow you to write and deploy Firebase Cloud Functions directly within the platform. With an integrated code editor, writing JavaScript cloud functions is quick and user-friendly. Each function has customizable boilerplate settings, including pre-configured essentials like memory, region, and timeout.
+FlutterFlow supports both Firebase Cloud Functions and Supabase Edge Functions, allowing you to build scalable backend workflows.
+
+## Firebase Cloud Functions
+
+[**Firebase Cloud Functions**](https://firebase.google.com/docs/functions) allow you to run server-side Node.js code triggered by Firebase services and HTTPS requests. For example, you can automatically send emails, process uploads, generate AI content, or react to database changes.
+
+FlutterFlow includes built-in support for creating, editing, deploying, and triggering Firebase Cloud Functions directly from the platform.
 
 :::note
 Read up on some interesting use cases of 
 [**Cloud Functions**](https://firebase.google.com/docs/functions/use-cases).
 :::
 
-## Adding Cloud Functions
+### Adding Cloud Functions
 
 Let's see how to add a *Cloud Function* by building an example that generates logos based on user prompts. Here's how it looks:
 
@@ -31,13 +37,6 @@ The Cloud Function takes input from a TextField widget and initiates an API call
 
 Here are the step-by-step instructions to build such an example:
 
-1. [Add page state variables](#1-add-page-state-variables)
-2. [Build a page](#2-build-a-page)
-3. [Create and deploy Cloud Function](#3-create-and-deploy-cloud-function)
-4. [Optional: Add package](#4-optional-add-package)
-5. [Trigger Cloud Function](#5-trigger-cloud-function)
-6. [Optional: Use Cloud Function result](#6-optional-use-cloud-function-result)
-
 :::info[Before you Begin]
 
 * Make sure the project is on Blaze plan on Firebase.
@@ -45,7 +44,7 @@ Here are the step-by-step instructions to build such an example:
 [**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 :::
 
-### 1. Add page state variables
+#### 1. Add page state variables
 
 For this example, you'll need to set up two 
 [Page State variables](../../resources/ui/pages/page-lifecycle.md#creating-a-page-state):
@@ -57,7 +56,7 @@ loading indicator during the logo creation process. Its value is set to *True* b
 <p></p>
 ![img_6.png](imgs/img_6.png)
 
-### 2. Build a page
+#### 2. Build a page
 
 Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the template or use [AI Page Gen](../../resources/ui/pages/intro-pages.md#create-an-ai-generated-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
 
@@ -70,7 +69,7 @@ Few things to note here:
 * We use the [**ConditionalBuilder**](../layout/responsive-widgets/conditional-builder-widget.md) widget to show/hide the loading indicator based on the *generatingImage* variable. **Tip**: The Else branch of this widget is nothing but a ProgressBar inside the Container with a [rotating loop animation](../animations/widget_animations.md).
 * The Image widget uses the *logoImage* variable to display the logo.
 
-### 3. Create and deploy Cloud Function
+#### 3. Create and deploy Cloud Function
 
 To create and deploy a *Cloud Function* :
 
@@ -80,7 +79,7 @@ To create and deploy a *Cloud Function* :
 2. Click **+ Add**. This will add the default `newCloudFunction`.
 3. Set the **Cloud Function Name**.
 
-#### Boilerplate Settings
+##### Boilerplate Settings
 
 On the right side, you can configure the following Boilerplate Settings:
 1. **Memory Allocation**: You can specify the amount of memory your function should have when 
@@ -92,7 +91,7 @@ On the right side, you can configure the following Boilerplate Settings:
 
 ![cf-region.avif](imgs/cf-region.avif)
 
-#### Configuring Input & Output
+##### Configuring Input & Output
 
 Your cloud function might need some data to process and return the result. You can do so 
 by configuring the input and output.
@@ -131,7 +130,7 @@ For a list, the function should return:
         });
 ```
     
-#### To deploy
+##### To deploy
 1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated 
 code, and then click **`</> Copy to Editor`**. **Tip**: To see if you are able to deploy the cloud function (before adding your own code), proceed directly with steps 8 and 9.
 
@@ -220,7 +219,7 @@ com/embed/1dc13a747b6b4f6d9c9f6d3e1721e488?sid=a756ed68-f20a-4723-8a89-bc1462ede
 
 
 
-### 4. Optional: Add package
+#### 4. Optional: Add package
 
 Your cloud function may require third-party packages to work. You can include any npm package (dependency) by listing it in the `package.json` file. This file not only manages the npm package dependencies for your functions but also holds project metadata, sets up scripts for tasks such as deployment and outlines the compatible Node.js versions.
 
@@ -228,7 +227,7 @@ To add a dependency, open the `package.json` file and specify your package in th
 
 ![img_9.png](imgs/img_9.png)
 
-### 5. Trigger Cloud Function
+#### 5. Trigger Cloud Function
 
 The newly created *Cloud Function* will be available as an action when you are adding one. For this example, on click of a button, we'll first set the *generatingImage*to *True* and then trigger the **Cloud Function Action**.
 
@@ -236,7 +235,7 @@ The newly created *Cloud Function* will be available as an action when you are a
 com/embed/5c712863f95c4fcabd5c3851a3cbe56b?sid=a7ac875f-11b5-4b5a-b3e2-8ae03ce49571" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
-### 6. Optional: Use Cloud Function result
+#### 6. Optional: Use Cloud Function result
 
 To use the *Could Function* result, ensure you provide the *Action Output Variable Name* while adding the action, and then you can access it via the **Set from Variable menu > Action Outputs > [Action Output Variable Name]**.
 
@@ -245,7 +244,7 @@ For this example, we'll use the result (i.e., generated logo image URL) and set 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-## Testing Cloud Functions in Google Cloud console
+### Testing Cloud Functions in Google Cloud console
 
 The Google Cloud console has built-in functionality to allow you to trigger a Cloud Function for testing. This means that after deploying Cloud Functions, you can test them without writing to Firestore (either from FlutterFlow or otherwise).
 
@@ -285,7 +284,7 @@ The `fields` in the example above are for FlutterFlow's built-in `sendUserPushNo
 The Cloud Function will now run and gather the relevant entries from Google Cloud Logging.
 
 
-## FAQs
+### FAQs
 
 <details>
 <summary>Why do cloud function deployments fail on newly created projects?</summary>
@@ -337,3 +336,159 @@ Follow the steps below to fix the issue:
 </p>
 </details>
 
+## Supabase Edge Functions
+
+[**Supabase Edge Functions**](https://supabase.com/docs/guides/functions) let you run secure backend logic using Deno and TypeScript directly on Supabase infrastructure. They are ideal for AI integrations, secure API wrappers, webhooks, payments, and server-side processing.
+
+Unlike Firebase Cloud Functions, Supabase Edge Functions are tightly integrated with your Supabase project and run closer to users for lower latency.
+
+:::info[Prerequisite]
+Before using Supabase Edge Functions, make sure your FlutterFlow project is connected to Supabase. See the [**Supabase Setup**](../../ff-integrations/supabase/supabase-setup.md#connect-with-supabase-oauth) guide.
+:::
+
+### Adding Edge Functions
+
+Let's see how to add an Edge Function by building an example that generates an AI summary of product reviews.
+
+The Edge Function takes a list of reviews as input, sends them to an AI model, and returns a JSON response containing a summary and overall sentiment. This example demonstrates a key benefit of Edge Functions: securely storing the Anthropic API key on the Supabase backend instead of exposing it inside the app.
+
+Here's how it looks:
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/S5sKmWGzxHcPuxZOQWG6?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+#### 1. Create and Deploy Edge Functions
+
+1. Open the **Cloud Functions** section from the Navigation Menu.
+2. Click the **+** button and select **Supabase Edge Function**.
+3. Give the Edge Function a name. In this example, we use `getAIReviewsSummary`.
+4. Configure the function settings. In this example, the function accepts a list of reviews as input and returns a JSON response containing the AI-generated summary and sentiment.
+
+    You can also configure additional settings:
+
+    - **Verify JWT**: Verifies the JWT token from the request header. Disable this if you want to allow unauthenticated access.
+    - **Enable CORS**: Automatically adds CORS headers and preflight request handling. Required when calling the Edge Function from web apps.
+    - **Return Value**: Defines the response type returned by the function.
+    - **Define Parameters**: Configure the request body parameters accepted by the function.
+5. Click the code-generation button to generate and copy the boilerplate code into the editor. Copy the boilerplate code and use any AI assistant to generate the implementation for your specific use case. For example, you can ask the AI assistant to complete the function for generating AI-powered review summaries using the Anthropic API. Review the generated implementation and verify it matches your expected logic and response format.
+6. Paste the generated code back into the Edge Function editor.
+7. Click **Save Edge Function**.
+8. Once saved, click **Deploy**.
+9. FlutterFlow will show a deployment dialog listing the available Supabase Edge Functions for deployment.
+10. Click **Deploy** for the selected Edge Function to deploy it to your connected Supabase project.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/gxwBKzt11FhLjifCUdWV?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+:::tip[Add Package]
+
+You can add external Deno, npm, or JSR packages using the `Dependencies (deno.json)` tab if your Edge Function requires additional libraries or SDKs.
+
+For example, to add the `lodash` npm package:
+
+```json
+{
+  "imports": {
+    "lodash": "npm:lodash@4.17.21"
+  }
+}
+```
+
+You can then use it inside your Edge Function:
+
+```jsx
+import _ from "lodash"
+```
+
+![add-packge-edge-function](imgs/add-packge-edge-function.avif)
+
+:::
+
+#### 2. Handling Secrets
+
+When your Edge Function needs credentials, API keys, or tokens, do not hardcode them in the function code. Store them as Supabase Edge Function secrets so they remain encrypted and are not exposed in your app or repository.
+
+To add a secret, open your Supabase project, go to **Edge Functions > Secrets**, enter the secret name and value, then click **Save**. For example, you can add an any API key as:
+
+```
+ANTHROPIC_KEY=your-api-key
+```
+
+Then reference it inside your Edge Function using `Deno.env.get()`:
+
+```tsx
+const apiKey = Deno.env.get("ANTHROPIC_KEY")
+
+if (!apiKey) {
+  return new Response("Missing ANTHROPIC_KEY", {
+    status: 500,
+    headers: { ...corsHeaders, "Content-Type": "text/plain" },
+  })
+}
+```
+
+![edge-functions-handle-secrets.avif](imgs/edge-functions-handle-secrets.avif)
+
+This keeps sensitive values on the Supabase backend while allowing your function to securely use them at runtime.
+
+#### 3. Trigger Edge Functions and Use Result
+
+Once the Edge Function is deployed, you can trigger it from an action in your app.
+
+For example, on a button tap or page load, add the **Edge Function** action and select the function you created. Pass the required input parameters, such as the list of reviews.
+
+![trigger-edge-function](imgs/trigger-edge-function.avif)
+
+If the function returns a value, provide an **Action Output Variable Name** while configuring the action. You can then use the returned data from:
+
+**Set from Variable > Action Outputs > [Action Output Variable Name]**
+
+For this example, you can use the returned JSON values, such as `summary` and `sentiment`, to update page state variables or display the AI-generated review summary directly in your UI.
+
+![use-edge-function-result](imgs/use-edge-function-result.avif)
