@@ -426,9 +426,9 @@ Here's how it looks:
 </div>
 <p></p>
 
-:::tip[Add Package]
+:::tip[Optional - Add Package]
 
-You can add external Deno, npm, or JSR packages using the `Dependencies (deno.json)` tab if your Edge Function requires additional libraries or SDKs.
+You can also add external Deno, npm, or JSR packages using the `Dependencies (deno.json)` tab if your Edge Function requires additional libraries or SDKs.
 
 For example, to add the `lodash` npm package:
 
