@@ -48,17 +48,25 @@ functionality.
 
 ## Test Mode
 
-The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
-emulator or on-device. Running your app in Test Mode helps you experiment,
-test UIs, and fix bugs faster.
+The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an emulator or on-device. Running your app in Test Mode helps you experiment, test UIs, and fix bugs faster.
 
 To run your app in Test Mode:
 
-1. Click on the **Test icon** or press **Cmd/Ctrl + I** (a keyboard shortcut).
-   This will run your app in a new browser window.
-2. Switch to the app builder and make some changes, such as changing colors and
-   alignment.
-3. Now switch to the Test Mode tab and click **Instant Reload** or press **Cmd/Ctrl + J** to see the changes in under 10 seconds.
+1. Click the **Test** icon or press `Cmd/Ctrl + I`. This launches your app in a new browser window.
+
+2. Make changes in the FlutterFlow builder, such as updating colors, layouts, or widgets.
+
+3. In Test Mode, **Sync changes automatically** is enabled by default, so changes made in FlutterFlow are automatically synced to the running app. 
+
+![test-mode-sync](imgs/test-mode-sync.avif)
+
+4. If you disable auto-sync, click **Hot Reload** or press `Cmd/Ctrl + J` whenever you want to manually sync and preview the latest changes.
+
+![test-mode-sync-off](imgs/test-mode-sync-off.avif)
+
+5. Use **Hot Restart** when changes require a full restart, such as dependency updates or certain state model changes.
+
+
 
 :::info[Test Mode Button Colors]
 The test mode button color indicates the following status:
