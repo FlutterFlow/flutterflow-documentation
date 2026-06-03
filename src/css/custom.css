@@ -185,7 +185,7 @@ a.menu__link {
 }
 
 .theme-doc-sidebar-menu
-  > li.theme-doc-sidebar-item-link-level-1:not(.theme-doc-sidebar-item-category):nth-of-type(-n+4)
+  > li.theme-doc-sidebar-item-link-level-1:not(.theme-doc-sidebar-item-category):nth-of-type(-n+10)
   > a.menu__link { color: var(--sidebar-level1-color) !important; 
   font-weight: 600 !important;
   }
