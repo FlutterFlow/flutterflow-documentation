@@ -422,7 +422,7 @@ uniform vec4 color;
 
 The [Shadertoy to Flutter skill](https://github.com/FlutterFlow/shadertoy_to_flutter_skill) helps convert Shadertoy GLSL into Flutter-compatible `.frag` shaders. It rewrites the shader structure, maps Shadertoy uniforms to Flutter uniforms, handles texture/audio channels where possible, and produces a `.frag` file that can be uploaded into your FlutterFlow project.
 
-#### Step 1: Download Skill
+**Step 1: Download Skill**
 
 The skill teaches AI Agents how to convert Shadertoy shaders accurately and safely for Flutter. The skill used for this workflow is: **`shadertoy-to-flutter`**. Download it from the [GitHub repo](https://github.com/FlutterFlow/shadertoy_to_flutter_skill).
 
@@ -435,7 +435,7 @@ The skill contains the following files:
 - `references/noise_library.md`: Noise/hash helper functions for replacing Shadertoy noise textures.
 - `scripts/package-skill.sh`: Packages the skill into a distributable zip file.
 
-#### Step 2: Install Skill
+**Step 2: Install Skill**
 
 You can use this skill with AI agents such as Claude, Codex, or another AI assistant that can read `SKILL.md` and follow its instructions.
 
@@ -513,7 +513,7 @@ Codex will run the Skill Installer and install the skill into your local Codex f
 </div>
 <p></p>
 
-#### Step 3: Using Skill
+**Step 3: Using Skill**
 
 You can use the skill with either a Shadertoy URL or a local .glsl file.
 
@@ -574,7 +574,7 @@ Use the /shadertoy-to-flutter skill and convert this shader to a Flutter .frag f
 
 :::
 
-#### Step 4: Upload .frag File to FlutterFlow Project
+**Step 4: Upload .frag File to FlutterFlow Project**
 
 Upload the `.frag` file generated in the previous step to the **Shader Asset** picker in FlutterFlow and run your app. If required, also [add Uniform](#adding-uniforms) to define input values for your shader.
 
