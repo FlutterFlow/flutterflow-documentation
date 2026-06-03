@@ -11,11 +11,14 @@ function transformImgClassName(className?: string): string {
 export default function MDXImg(props: Props): JSX.Element {
   const {alt, className, src} = props;
   const [isOpen, setIsOpen] = useState(false);
+  const lastActiveElementRef = React.useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (!isOpen) {
       return undefined;
     }
+
+    lastActiveElementRef.current = document.activeElement as HTMLElement | null;
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
@@ -26,11 +29,31 @@ export default function MDXImg(props: Props): JSX.Element {
     document.body.classList.add(styles.fullscreenOpen);
     window.addEventListener('keydown', handleKeyDown);
 
+    // Ensure keyboard focus enters the modal.
+    requestAnimationFrame(() => {
+      document
+        .querySelector<HTMLButtonElement>(`.${styles.closeButton}`)
+        ?.focus();
+    });
+
     return () => {
       document.body.classList.remove(styles.fullscreenOpen);
       window.removeEventListener('keydown', handleKeyDown);
+      lastActiveElementRef.current?.focus();
+      lastActiveElementRef.current = null;
     };
   }, [isOpen]);
+
+  if (!alt?.trim() && !props.title?.trim()) {
+    return (
+      <img
+        decoding="async"
+        loading="lazy"
+        {...props}
+        className={transformImgClassName(className)}
+      />
+    );
+  }
 
   return (
     <>
@@ -43,6 +66,7 @@ export default function MDXImg(props: Props): JSX.Element {
           decoding="async"
           loading="lazy"
           {...props}
+          alt={alt ?? ''}
           className={transformImgClassName(className)}
         />
       </button>
@@ -63,9 +87,10 @@ export default function MDXImg(props: Props): JSX.Element {
           </button>
           <img
             src={src}
-            alt={alt}
+            alt={alt ?? ''}
             className={styles.fullscreenImage}
             onClick={(event) => event.stopPropagation()}
+          />
           />
         </div>
       )}
