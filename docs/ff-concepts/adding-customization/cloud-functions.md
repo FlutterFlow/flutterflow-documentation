@@ -44,7 +44,7 @@ Here are the step-by-step instructions to build such an example:
 [**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 :::
 
-#### 1. Add page state variables
+**1. Add page state variables**
 
 For this example, you'll need to set up two 
 [Page State variables](../../resources/ui/pages/page-lifecycle.md#creating-a-page-state):
@@ -56,7 +56,7 @@ loading indicator during the logo creation process. Its value is set to *True* b
 <p></p>
 ![img_6.png](imgs/img_6.png)
 
-#### 2. Build a page
+**2. Build a page**
 
 Let's add a page that allows users to enter the prompt. To speed up, you can add a page from the template or use [AI Page Gen](../../resources/ui/pages/intro-pages.md#create-an-ai-generated-page). Here is the page added using AI Page Gen, and after some modification, it looks the below:
 
@@ -69,7 +69,7 @@ Few things to note here:
 * We use the [**ConditionalBuilder**](../layout/responsive-widgets/conditional-builder-widget.md) widget to show/hide the loading indicator based on the *generatingImage* variable. **Tip**: The Else branch of this widget is nothing but a ProgressBar inside the Container with a [rotating loop animation](../animations/widget_animations.md).
 * The Image widget uses the *logoImage* variable to display the logo.
 
-#### 3. Create and deploy Cloud Function
+**3. Create and deploy Cloud Function**
 
 To create and deploy a *Cloud Function* :
 
@@ -79,7 +79,7 @@ To create and deploy a *Cloud Function* :
 2. Click **+ Add**. This will add the default `newCloudFunction`.
 3. Set the **Cloud Function Name**.
 
-##### Boilerplate Settings
+#### Boilerplate Settings
 
 On the right side, you can configure the following Boilerplate Settings:
 1. **Memory Allocation**: You can specify the amount of memory your function should have when 
@@ -91,7 +91,7 @@ On the right side, you can configure the following Boilerplate Settings:
 
 ![cf-region.avif](imgs/cf-region.avif)
 
-##### Configuring Input & Output
+#### Configuring Input & Output
 
 Your cloud function might need some data to process and return the result. You can do so 
 by configuring the input and output.
@@ -130,7 +130,7 @@ For a list, the function should return:
         });
 ```
     
-##### To deploy
+#### To deploy
 1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated 
 code, and then click **`</> Copy to Editor`**. **Tip**: To see if you are able to deploy the cloud function (before adding your own code), proceed directly with steps 8 and 9.
 
@@ -218,33 +218,36 @@ Always regenerate and use the updated boilerplate code or adjust your own code a
 com/embed/1dc13a747b6b4f6d9c9f6d3e1721e488?sid=a756ed68-f20a-4723-8a89-bc1462ede168" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
+<p></p>
 
-#### 4. Optional: Add package
+:::tip[Optional: Add package]
 
 Your cloud function may require third-party packages to work. You can include any npm package (dependency) by listing it in the `package.json` file. This file not only manages the npm package dependencies for your functions but also holds project metadata, sets up scripts for tasks such as deployment and outlines the compatible Node.js versions.
 
 To add a dependency, open the `package.json` file and specify your package in the `dependencies` section.
 
 ![img_9.png](imgs/img_9.png)
+:::
 
-#### 5. Trigger Cloud Function
+**4. Trigger Cloud Function**
 
 The newly created *Cloud Function* will be available as an action when you are adding one. For this example, on click of a button, we'll first set the *generatingImage*to *True* and then trigger the **Cloud Function Action**.
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/5c712863f95c4fcabd5c3851a3cbe56b?sid=a7ac875f-11b5-4b5a-b3e2-8ae03ce49571" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
+<br></br>
 
-#### 6. Optional: Use Cloud Function result
+**5. Optional: Use Cloud Function result**
 
 To use the *Could Function* result, ensure you provide the *Action Output Variable Name* while adding the action, and then you can access it via the **Set from Variable menu > Action Outputs > [Action Output Variable Name]**.
 
-For this example, we'll use the result (i.e., generated logo image URL) and set it to *logoImage*variable. Here's how you do it:
+For this example, we'll use the result (i.e., generated logo image URL) and set it to *logoImage* variable. Here's how you do it:
 
 <div class="video-container"><iframe src="https://www.loom.
 com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-### Testing Cloud Functions in Google Cloud console
+### Testing Cloud Functions
 
 The Google Cloud console has built-in functionality to allow you to trigger a Cloud Function for testing. This means that after deploying Cloud Functions, you can test them without writing to Firestore (either from FlutterFlow or otherwise).
 
@@ -350,7 +353,7 @@ Before using Supabase Edge Functions, make sure your FlutterFlow project is conn
 
 Let's see how to add an Edge Function by building an example that generates an AI summary of product reviews.
 
-The Edge Function takes a list of reviews as input, sends them to an AI model, and returns a JSON response containing a summary and overall sentiment. This example demonstrates a key benefit of Edge Functions: securely storing the Anthropic API key on the Supabase backend instead of exposing it inside the app.
+The Edge Function takes a list of reviews as input, sends them to an AI model, and returns a JSON response containing a summary and overall sentiment. This example demonstrates a key benefit of Edge Functions: securely storing API key on the Supabase backend instead of exposing it inside the app.
 
 Here's how it looks:
 
@@ -380,7 +383,7 @@ Here's how it looks:
 </div>
 <p></p>
 
-#### 1. Create and Deploy Edge Functions
+**1. Create and Deploy Edge Functions**
 
 1. Open the **Cloud Functions** section from the Navigation Menu.
 2. Click the **+** button and select **Supabase Edge Function**.
@@ -450,7 +453,7 @@ import _ from "lodash"
 
 :::
 
-#### 2. Handling Secrets
+**2. Handling Secrets**
 
 When your Edge Function needs credentials, API keys, or tokens, do not hardcode them in the function code. Store them as Supabase Edge Function secrets so they remain encrypted and are not exposed in your app or repository.
 
@@ -477,7 +480,7 @@ if (!apiKey) {
 
 This keeps sensitive values on the Supabase backend while allowing your function to securely use them at runtime.
 
-#### 3. Trigger Edge Functions and Use Result
+**3. Trigger Edge Functions and Use Result**
 
 Once the Edge Function is deployed, you can trigger it from an action in your app.
 
