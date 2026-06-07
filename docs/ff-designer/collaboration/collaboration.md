@@ -97,7 +97,32 @@ Everyone with Edit access works on the same canvas at the same time. Changes app
 
 Because changes are merged automatically as they're made, multiple people can edit at the same time without overwriting each other's work or running into "who saved last" conflicts.
 
-{/* 🎬 CLIP: One person edits a frame's layout while another watches it update live. ~8s */}
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/CZmMPbzFNK5tQL4pAWur?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 Active collaborators are shown on the canvas as you work, so you always know who else is in the design and what they're focused on:
 
@@ -145,6 +170,31 @@ Comments let you leave feedback directly on a design — pinned to a frame, an e
 2. The thread shows the original comment and all replies, oldest to newest. Long threads load more replies as you scroll.
 3. Type in the **Write a reply** field at the bottom and press Enter or select **Send**.
 
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/BnmXUeybhTMlQov08Dor?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Edit or Delete Your Own Comment
 
@@ -152,7 +202,7 @@ These actions appear only on comments you authored.
 
 1. Hover the comment you wrote and select the **⋯** menu (tooltip: *Comment actions*).
 2. Choose **Edit**, change the text in place, and send. The comment is marked **Edited**.
-3. Choose **Delete** to remove the comment. To remove an entire thread you started, use the **Delete thread** action in the thread header.
+3. Choose **Delete** to remove the comment. 
 
 ### Ask the Designer Agent
 
