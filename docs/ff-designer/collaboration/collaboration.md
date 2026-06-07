@@ -11,7 +11,6 @@ keywords: [collaboration, share design, real-time editing, presence, comments, l
 
 Collaboration lets multiple people work on the same design at once. Edits, cursors, and comments all stay in sync, so a team can explore and refine a design together without passing files back and forth.
 
-{/* 🎬 CLIP: Two editors on one canvas — live cursors moving, a frame updating for both. ~8s */}
 
 ## Sharing & Access
 
