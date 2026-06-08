@@ -132,3 +132,16 @@ For example, you might upload a rough wireframe of a food delivery app showing a
     </iframe>
 </div>
 <p></p>
+
+## FAQ
+<details>
+<summary>
+Are charts from Designer converted into FlutterFlow chart widgets?
+</summary>
+
+<p>
+Yes. Bar charts, line charts, and pie charts created in the Designer are automatically converted into fully functional FlutterFlow chart widgets.
+</p>
+
+![ff-designer-chart-conversion](imgs/ff-designer-chart-conversion.avif)
+</details>
