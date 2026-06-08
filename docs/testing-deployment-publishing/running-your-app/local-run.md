@@ -61,9 +61,19 @@ Here are the steps to use local run:
 ![config-IDE](../imgs/config-IDE.avif)
 
 
-6. You can also specify whether the code exported by local run should be formatted. Disabling code formatting improves the export speed which helps in faster iteration. But if you want to look into the code or make changes, it's recommended to keep this enabled.
-    
-![code-export](../imgs/code-export.avif)
+6. In the **Code Export** section, you can configure how Local Run exports and updates your FlutterFlow project code.
+
+    - **Experimental Speed Up**: Uses an optimized export pipeline to significantly reduce export times. When enabled, Local Run can also work offline for faster iteration. If you experience export-related issues, you can disable this option.
+
+    - **Format Exported Code**: Controls whether the exported code should be automatically formatted. Disabling formatting improves export speed, which helps during rapid iteration. However, if you plan to inspect or modify the generated code, it’s recommended to keep this enabled.
+
+    - **Enable Debug Logging**: Includes logging support in the exported app. Keeping this enabled allows you to use the FlutterFlow Debug Panel inside DevTools for debugging and inspection.
+
+    - **Auto Hot Reload**: Automatically triggers a hot reload whenever changes are made in FlutterFlow. This removes the need to manually trigger hot reload after every update.
+
+    - **Auto Hot Restart**: Automatically performs a full app restart when changes require more than a hot reload, such as new dependencies or state model updates. This is disabled by default because full restarts are slower than hot reloads.
+
+    ![local-run-code-export](imgs/local-run-code-export.avif)
 
 7. From the test menu, click on the **Get Devices** button. This will list devices connected to your system. You can add or remove devices from the list by clicking on the **+** and **-** buttons, respectively. Once you've finalized your selection, simply click on the **Test** button to see your app running on selected devices. **Tip**: In the Mac OS desktop app, you can directly open the simulator by clicking on the **Launch iOS Simulator** text. To test app on a real device, see how to [setup a physical device](#setup-physical-device).
 
