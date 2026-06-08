@@ -96,7 +96,7 @@ To run your app in Test Mode:
 
 ### Floating Window
 
-A Floating Window displays the running app on top of the builder, allowing you to design and test at the same time without switching between browser tabs.
+A Floating Window displays the running app on top of the builder, allowing you to design and test at the same time without switching between tabs.
 
 The Floating Window makes iteration much faster because you can immediately see the impact of your changes while working in the builder. It makes it easier to fine-tune layouts, styling, and interactions.
 
@@ -136,7 +136,7 @@ To use Inspect Mode, click the **Inspect Mode** icon in the Test Mode toolbar. O
 
 When you're finished, click the Inspect Mode icon again to exit inspection mode and continue interacting with the app normally.
 
-### Open Test Mode on Your Phone
+### Test Mode on Mobile
 
 You can open the current Test Mode session directly on a physical mobile device. This allows you to test your app on actual hardware and verify touch interactions, layouts, scrolling behavior, and overall user experience.
 
