@@ -32,6 +32,13 @@ import InfoCards from '@site/src/components/InfoCards';
   }}>
     <a href="https://designer.flutterflow.io/"><strong>FlutterFlow Designer</strong></a> provides the fastest UI generation in the world, without sacrificing quality or control integrated with agents for a seamless design-to-code experience.
   </p>
+  <p style={{
+    fontSize: '0.95rem',
+    color: 'var(--ifm-color-emphasis-600)',
+    marginTop: '12px',
+  }}>
+    Available on the web and as a desktop app for macOS and Windows.
+  </p>
 </div>
 
 <div style={{
