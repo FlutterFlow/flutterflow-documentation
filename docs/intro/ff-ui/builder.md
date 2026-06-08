@@ -26,18 +26,19 @@ Here is a list of all the features accessible from the navigation menu:
 3. **Page Selector**: Manage pages and components, create folders as needed.
 4. **Widget Tree**: Get an overview of all widgets on a selected page.
 5. **Storyboard**: Visualize app's design and navigation.
-6. **Firestore**: Create collections and adjust Firestore-related settings.
-7. **Data Types**: Create custom data types for your app.
-8. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
-9. **API Calls**: Define API calls.
-10. **Media Assets**: Upload assets for your app and team.
-11. **Custom Functions**: Add custom functionalities, widgets, and actions.
-12. **Cloud Functions**: Write and deploy cloud functions for Firebase.
-13. **Tests**: Add automated tests.
-14. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
-15. **App Events**: Define and manage [App Events](../../ff-concepts/app-events/app-events.md) that allow different parts of your app to communicate without being directly connected.
-16. **Theme settings**: Customize visual appearance.
-17. **Settings and Integrations**: Access app-related settings and integrations.
+6. **Test Mode**: [Test your app](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) in a live debugging environment.
+7. **Firestore**: Create collections and adjust Firestore-related settings.
+8. **Data Types**: Create custom data types for your app.
+9. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
+10. **API Calls**: Define API calls.
+12. **Media Assets**: Upload assets for your app and team.
+13. **Custom Functions**: Add custom functionalities, widgets, and actions.
+14. **Cloud Functions**: Write and deploy cloud functions for Firebase.
+15. **Tests**: Add automated tests.
+16. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
+17. **App Events**: Define and manage [App Events](../../ff-concepts/app-events/app-events.md) that allow different parts of your app to communicate without being directly connected.
+18. **Theme settings**: Customize visual appearance.
+19. **Settings and Integrations**: Access app-related settings and integrations.
 
 ## ToolBar
 
