@@ -209,9 +209,6 @@ These actions appear only on comments you authored.
 2. The agent reads the full thread, original comment and replies and applies the requested change to the target frame or element. It's unavailable while the editor is already busy.
 3. When it finishes, the agent posts a reply in the thread confirming the change. 
 
-:::info
-For comments on the canvas, this action instead creates a new frame from the comment.
-:::
 
 <div style={{
     position: 'relative',
@@ -238,5 +235,9 @@ For comments on the canvas, this action instead creates a new frame from the com
     </iframe>
 </div>
 <p></p>
+
+:::info
+For comments on the canvas, this action instead creates a new frame from the comment.
+:::
 
 
