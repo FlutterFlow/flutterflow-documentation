@@ -142,7 +142,9 @@ You can open the current Test Mode session directly on a physical mobile device.
 
 To open the session on your phone, click the **QR Code** icon in the Test Mode toolbar. FlutterFlow will generate a QR code and a unique session link. Scan the QR code using your phone's camera or open the generated link on your mobile device. The app will load the same active Test Mode session that is running in your browser.
 
+:::warning
 The generated link is tied to the current Test Mode session and will stop working when the session ends.
+:::
 
 ![test-mode-in-phone](imgs/test-mode-in-phone.avif)
 
