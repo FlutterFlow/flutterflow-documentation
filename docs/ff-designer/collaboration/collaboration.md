@@ -123,7 +123,7 @@ Because changes are merged automatically as they're made, multiple people can ed
 </div>
 <p></p>
 
-Active collaborators are shown on the canvas as you work, so you always know who else is in the design and what they're focused on:
+Active collaborators are shown on the canvas as you work, so you always know who else is in the design and what they're focused on.
 
 ## Comments
 
