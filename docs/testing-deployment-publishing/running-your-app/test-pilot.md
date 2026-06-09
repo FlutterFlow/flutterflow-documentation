@@ -13,7 +13,7 @@ Test Pilot in FlutterFlow allows you to run AI-powered tests for your app. Inste
 
 This is useful when you want to validate important user journeys before publishing or sharing a new build. For example, you can ask Test Pilot to sign in with test credentials, add an item to a cart, open the profile page, or confirm that a checkout flow lands on the expected success screen.
 
-At a high level, Test Pilot creates a web build snapshot of your project, launches the app in a browser-based QA environment, and uses an AI agent to follow each test's instructions. After the run completes, you can review pass or fail status, per-test summaries, screenshots, playback, actions taken, and test usage.
+At a high level, Test Pilot creates a web build snapshot of your project, launches the app in a browser-based QA environment, and uses an AI agent to follow each test's instructions. After the run completes, you can review pass or fail status, per-test summaries, screenshots, playback, actions taken, and credit usage.
 
 ## Create Test
 
@@ -213,32 +213,43 @@ Each test result can include:
 
 ## Test Pilot Credits
 
-Test Pilot is available on paid plans and uses test-based billing. If free trial runs are available, the Test Pilot sidebar shows the remaining free runs. Otherwise, runs use tests from an assigned Test Pilot pass.
+Test Pilot uses Test Pilot credits. Each project gets **5 free credits**, which equals **5 single-test runs**. After the free credits are used, runs use credits from an assigned Test Pilot Credits Pass.
 
-A Test Pilot pass is a paid add-on that includes a fixed number of tests. The current price is **$5 for 100 tests**.
+A Test Pilot Credits Pass is a paid add-on. Passes start at **$5/month for 100 credits**. One credit represents one single test being run.
+
+Credit usage is based on the number of tests, devices, and brightness modes included in the run. For example, if a test run includes **3 tests**, runs on **2 devices**, and uses both **light and dark mode**, it uses `3 * 2 * 2 = 12` credits.
 
 Before you start a run, FlutterFlow shows how many credits the run will use. This lets you review the cost of running the selected test group before you click **Run Tests**.
+
+Pricing:
+
+- **USD**: `$5/month` per pass unit. Each unit grants `100` credits per reset cycle. You can buy multiple units. For example, `10` units cost `$50/month` and grant `1000` credits.
+- **INR**: The same pricing applies.
+- **Regional discounts**: None.
+- **Annual discount**: Approximately 25%.
 
 Pass types:
 
 - **Personal pass**: Purchased from Account billing and assignable to one personal project owned by that user.
-- **Team pass**: Purchased from Teams billing and assignable to one project in the same team.
+- **Team pass**: Purchased from Teams billing and assignable to one project belonging to the same team.
 
-Pass assignment is permanent. You can assign an unassigned pass to a matching project, but you cannot manually clear, update, transfer, or switch it afterward. If the assigned project is deleted or moved into a scope that no longer matches the pass, the pass may become unassigned.
+Pass assignment is permanent. You can assign an unassigned pass to a matching project, but you cannot manually clear, update, transfer, or switch it afterward. If the assigned project is deleted, the pass becomes unassigned. If a project changes owner or team scope and the assigned pass no longer matches that scope, the pass should be unassigned automatically. For example, if a team project with an assigned team pass is moved to become a personal project, the mismatched team pass should be unassigned.
+
+Deleting or canceling a purchased pass is a billing action and is separate from pass assignment.
 
 ## FAQs
 
 <details>
 <summary>Why can't I run tests?</summary>
 <p>
-Check that the project has available tests or free runs, at least one enabled test, editor access, no active Test Pilot run, a valid environment, and no blocking project errors.
+Check that the project has available Test Pilot credits or free runs, at least one enabled test, editor access, no active Test Pilot run, a valid environment, and no blocking project errors.
 </p>
 </details>
 
 <details>
-<summary>Why do I see 0 tests available?</summary>
+<summary>Why do I see 0 credits?</summary>
 <p>
-This can happen when no Test Pilot pass is assigned to the project, the assigned pass has used all included tests, the assigned pass no longer matches the project scope, or test availability failed to load.
+This can happen when no Test Pilot Credits Pass is assigned to the project, the assigned pass has used all credits for the cycle, the assigned pass no longer matches the project scope, or credit status failed to load.
 </p>
 </details>
 
@@ -257,15 +268,15 @@ Pass assignment is intended to be permanent. Contact support if you suspect a da
 </details>
 
 <details>
-<summary>Do beta, special-access, or enterprise users get free tests?</summary>
+<summary>How many free credits do projects get?</summary>
 <p>
-Do not assume free tests are included. Customers need available free runs or an assigned Test Pilot pass unless their plan or contract states otherwise.
+Each project gets 5 free Test Pilot credits. Since 1 credit equals 1 single test run, this gives each project 5 free tests. After those credits are used, the project needs an assigned Test Pilot Credits Pass unless its plan or contract states otherwise.
 </p>
 </details>
 
 <details>
 <summary>Why doesn't my pass have a regional discount?</summary>
 <p>
-Test Pilot passes do not use regional discounts. The billing page shows the price that applies to your account.
+Test Pilot Credits Passes do not use regional discounts. The billing page shows the price that applies to your account.
 </p>
 </details>
