@@ -291,6 +291,14 @@ export const PricingToggles = () => {
             <td>✅</td>
           </tr>
           <tr>
+            <td>Test Mode Session Expiration<br/><span className="feature-description">How long a Test Mode session remains active before expiring</span></td>
+            <td>20 minutes</td>
+            <td>No expiration</td>
+            <td>No expiration</td>
+            <td>No expiration</td>
+            <td>No expiration</td>
+          </tr>
+          <tr>
             <td>Visual Logic Builder<br/><span className="feature-description">Create app logic with a visual editor</span></td>
             <td>✅</td>
             <td>✅</td>

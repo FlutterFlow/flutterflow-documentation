@@ -48,47 +48,117 @@ functionality.
 
 ## Test Mode
 
-The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's [Hot Reload](https://docs.flutter.dev/tools/hot-reload) feature, which lets you immediately see any changes made to code in an
-emulator or on-device. Running your app in Test Mode helps you experiment,
-test UIs, and fix bugs faster.
+The **Test Mode** runs a web version of your FlutterFlow app and uses Flutter's Hot Reload feature, which lets you immediately see any changes made to code in an emulator or on-device. Running your app in Test Mode helps you experiment, test UIs, and fix bugs faster.
 
 To run your app in Test Mode:
 
-1. Click on the **Test icon** or press **Cmd/Ctrl + I** (a keyboard shortcut).
-   This will run your app in a new browser window.
-2. Switch to the app builder and make some changes, such as changing colors and
-   alignment.
-3. Now switch to the Test Mode tab and click **Instant Reload** or press **Cmd/Ctrl + J** to see the changes in under 10 seconds.
+1. Select **Test Mode** from the left-side menu. The test environment will launch and be ready to use within a few minutes.
+2. Once Test Mode is running, make changes in the FlutterFlow builder, such as updating colors, layouts, or widgets.
+3. In Test Mode, **Sync changes automatically** is enabled by default, so changes made in FlutterFlow are automatically synced to the running app.
+4. If you disable auto-sync, click **Hot Reload** or press `Cmd/Ctrl + J` whenever you want to manually sync and preview the latest changes.
+5. Use **Hot Restart** when changes require a full restart, such as dependency updates or certain state model changes.
 
-:::info[Test Mode Button Colors]
-The test mode button color indicates the following status:
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/95jxxYi1bzeY27KUek50?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
-- **Orange**: Building
-- **Green**: Ready
-- **Yellow**: Expiring Soon
-- **Red**: Expired
+:::note
+
+**For users on a paid plan**, Test Mode sessions do not expire and can remain active indefinitely until manually stopped.
+
+**For users on the Free plan**, Test Mode sessions expire after 20 minutes. Once a session expires, you can start a new one by clicking the **New Session** button.
+
+![new-session](imgs/new-session.avif)
+
 :::
 
-### When to use Test Mode
+### Floating Window
 
-When designing and developing your app, Test Mode is the second most common
-testing mode (next to Local Run).
-Its "Hot Reloading" allows for fast
-iteration and testing. Its downsides compared to Local Run are its restricted
-time (30 min.) and lack of access to some features (e.g. camera).
+A Floating Window displays the running app on top of the builder, allowing you to design and test at the same time without switching between tabs.
 
-:::danger[Troubleshooting – Slow Loading]
-If you see a progress bar at the top of the device running for over 15 seconds,
-try refreshing the page.
+The Floating Window makes iteration much faster because you can immediately see the impact of your changes while working in the builder. It makes it easier to fine-tune layouts, styling, and interactions.
+
+To open the Floating Window, start a Test Mode session and click the **Floating Window** icon in the Test Mode toolbar. A movable preview of your app will appear over the builder, allowing you to keep the live app and editor visible at the same time. You can drag the window anywhere on the screen and resize it as needed while continuing to edit your app.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/LQBn8B4PGst1MKD6QVIm?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Inspect Mode
+
+Inspect Mode helps you quickly locate widgets in the FlutterFlow builder while testing your app. This is especially useful when working with large pages or deeply nested layouts. Instead of manually searching through the Widget Tree to find a specific button, image, text, or container, you can simply click it in the running app and jump directly to its location in the builder.
+
+To use Inspect Mode, click the **Inspect Mode** icon in the Test Mode toolbar. Once enabled, select any widget in the running app preview. FlutterFlow will automatically navigate to and highlight the corresponding widget in the builder, allowing you to inspect or edit it immediately. 
+
+When you're finished, click the Inspect Mode icon again to exit inspection mode and continue interacting with the app normally.
+
+### Test Mode on Mobile
+
+You can open the current Test Mode session directly on a physical mobile device. This allows you to test your app on actual hardware and verify touch interactions, layouts, scrolling behavior, and overall user experience.
+
+To open the session on your phone, click the **QR Code** icon in the Test Mode toolbar. FlutterFlow will generate a QR code and a unique session link. Scan the QR code using your phone's camera or open the generated link on your mobile device. The app will load the same active Test Mode session that is running in your browser.
+
+:::warning
+The generated link is tied to the current Test Mode session and will stop working when the session ends.
 :::
+
+![test-mode-in-phone](imgs/test-mode-in-phone.avif)
+
+
+### Debug info
+Test mode also includes a **Debug Info** panel, which provides a real-time view of all variables with their current values. It includes search and filter options, allowing you to find variables based on type or nullability. This is particularly useful for developers who need to track the state of the app and diagnose issues efficiently.
+
+![deubg-info](../imgs/deubg-info.avif)
 
 :::caution[Test Mode Limitations]
 **Test Mode** has certain limitations because some packages are not supported on
 the web and because of the way FlutterFlow configures your project to run in the
 cloud.
 
-- 30 minute testing time. After the 30 minutes has expired, you can start
-  another test mode session.
 - If you see a grey "broken" screen with a sad face, it may be a DNS server
   issue with your network provider. We recommend using CloudFlare's 1.1.1.1 DNS
   server. [**Click here**](https://developers.cloudflare.com/1.1.1.1/setup/) to see instructions.
@@ -105,11 +175,6 @@ cloud.
 - Audio Recording actions do not work in Test Mode; use web publishing in
   Settings to test recording audio or test it on emulator via Local Run.
   :::
-
-### Debug info
-Test mode also includes a **Debug Info** panel, which provides a real-time view of all variables with their current values. It includes search and filter options, allowing you to find variables based on type or nullability. This is particularly useful for developers who need to track the state of the app and diagnose issues efficiently.
-
-![deubg-info](../imgs/deubg-info.avif)
 
 ## Run Mode
 
@@ -144,3 +209,7 @@ Local Run downloads the code locally and gives you the option to use [Flutter's 
 :::info
 Please note that Local Run is currently available only on the [**Paid Plans**](https://flutterflow.io/pricing).
 :::
+
+## FAQ
+
+<details> <summary> I don't see the new Test Mode option in the left sidebar.</summary> <p> If the new Test Mode option is not visible in the left sidebar, open the test menu and enable the <strong>Use new test mode</strong> option. Once enabled, the new Test Mode option will appear in the navigation menu. </p> </details>
