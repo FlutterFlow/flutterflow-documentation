@@ -216,7 +216,7 @@ Speech-to-text settings include:
 
 ### Transcribe Audio [Action]
 
-The **Transcribe Audio** action allows your app to send audio to a Speech-to-Text agent and receive a text transcription. You can configure the following options for this action:
+The **Transcribe Audio** action allows your app to send audio to a Speech-to-Text agent and receive the transcribed text. You can configure the following options for this action:
 
 - **Select STT Agent**: Select the Speech-to-Text agent you previously configured.
 - **Audio Source**: Choose where the audio comes from. Supported sources include **Audio URL** and **Uploaded Audio File**.
