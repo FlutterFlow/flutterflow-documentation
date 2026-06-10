@@ -54,8 +54,10 @@
       overflow: hidden !important;
     }
     
-    /* Target any chat window elements */
-    [id*="chat"], [class*="chat-window"], [class*="bubble-window"] {
+    /* Target Dify chat window elements only */
+    #dify-chatbot-bubble-window,
+    .dify-chatbot-widget [class*="chat-window"],
+    .dify-chatbot-widget [class*="bubble-window"] {
       background-color: rgba(51, 51, 51, 0.6) !important;
       border-radius: 12px !important;
       overflow: hidden !important;
