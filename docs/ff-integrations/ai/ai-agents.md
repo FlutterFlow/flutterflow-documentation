@@ -249,7 +249,7 @@ The **Generate Image** action allows your app to send a prompt to an Image Gener
 
 - **Select Image Generation Agent**: Select the Image Generation agent you previously configured.
 - **Prompt**: The text prompt that describes the image to generate.
-- **Size Override**: Optionally override the agent's default image size for this call. You can use the agent default or choose a supported size such as **Square (1024 x 1024)**, **Portrait (1024 x 1536)**, or **Landscape (1536 x 1024)**.
+- **Size Override**: Optionally override the agent's default image size for this call. You can select **Use Agent Default** or choose a supported size such as **Square (1024 x 1024)**, **Portrait (1024 x 1536)**, or **Landscape (1536 x 1024)**.
 - **Action Output Variable Name**: Stores the generated image result so you can display it or use it in later actions.
 
 ![AI Agent generate image action](imgs/ai-agent-image-gen-action.avif)
