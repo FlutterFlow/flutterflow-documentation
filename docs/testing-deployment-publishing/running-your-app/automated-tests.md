@@ -3,7 +3,7 @@ slug: /testing/automated-tests
 title: Automated Tests
 description: Discover how to effectively utilize automated testing in FlutterFlow to ensure your app performs as intended.
 tags: [Automated Tests, Testing]
-sidebar_position: 2
+sidebar_position: 3
 keywords: [Automated Tests, Testing, FlutterFlow]
 ---
 
@@ -13,9 +13,10 @@ Automated Tests allow you to test the behavior and appearance of your app to ens
 
 Internally, when you write tests, FlutterFlow generates code for the [Flutter integration testing framework](https://docs.flutter.dev/testing/integration-tests), which you can download and test locally or through services like [Firebase Test Lab](https://firebase.google.com/docs/test-lab). 
 
-:::note
-FlutterFlow doesn’t support running tests on the platform yet.
+:::warning[Legacy testing]
+Automated Tests are now considered a legacy testing option in FlutterFlow. For new testing workflows, we recommend using [**Test Pilot**](test-pilot.md), which lets you create and run AI-powered QA tests using natural-language instructions.
 :::
+
 
 :::info[Pricing Details]
 - **Free and Basic plans:** Automated testing is not available.

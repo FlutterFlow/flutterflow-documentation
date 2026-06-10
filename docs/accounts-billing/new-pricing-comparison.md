@@ -355,6 +355,14 @@ export const PricingToggles = () => {
             <td>Unlimited tests</td>
           </tr>
           <tr>
+            <td>Test Pilot<br/><span className="feature-description">AI-powered QA testing with additional credits</span></td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
             <td>Custom Classes<br/><span className="feature-description">Bring custom Dart classes into your app</span></td>
             <td>❌</td>
             <td>✅</td>
