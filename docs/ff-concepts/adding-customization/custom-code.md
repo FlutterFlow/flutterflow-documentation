@@ -22,8 +22,6 @@ There are a few different ways to make custom code accessible in FlutterFlow:
 * **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets that can also import [custom package dependencies](#adding-a-pubspec-dependency) and be used in the same way as [Components](https://docs.flutterflow.io/resources/ui/components) throughout your project. 
 * **[Configuration Files](configuration-files.md):** You'll have the ability to edit native files for Android and iOS.
 
-
-
 :::tip[Why Write Custom Code?]
 
 - **Extend Functionality:** Add features that are not included in the standard FlutterFlow
@@ -33,8 +31,95 @@ There are a few different ways to make custom code accessible in FlutterFlow:
 - **Unique UI Elements:** Create unique user interface elements that require custom rendering or
   interactions.
   :::
+  
+## Access Custom Code in New Project Layout
 
-# Writing Custom Code
+New projects use the new layout by default. Existing projects can switch from the classic Custom Code editor by clicking **Try New Layout** in the toolbar.
+
+### Switch to New Layout
+
+To switch an existing project, open the project and go to the **Custom Code** tab from the left navigation menu. Click **Try New Layout** in the toolbar, then confirm the switch. 
+
+In the new project layout, all Custom Code live in the new tab alongside **Pages / Components** panel in the Widget Tree. Use the **Custom Code** tab in the panel to view only custom code resources.
+
+:::warning
+Switching to the new project layout is one-way for that project. After you switch, you cannot go back to the classic Custom Code editor for the same project. **To safely try the new custom code layout** first, create another branch, switch to that branch, and then click **Try New Layout** there.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/FqnozpYV5bMsP2eyIABH?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Organize Custom Code
+
+Pages, components, and custom code can be grouped together in the same user folders. This makes it easier to organize a feature in one place instead of keeping its UI and custom code separate.
+
+For example, if you have a **Cart** folder that contains cart pages and components, you can drag a related custom function, such as `calculateCartTotals`, into the same folder. This keeps the page, component, and custom logic for that feature together in the widget tree.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/0D0EpoylXpD3Ml9WNN9f?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
+### Redesigned Custom Code Editor
+
+The custom code editor has also been redesigned. The editor header includes a breadcrumb so you can see where the current file belongs, and the settings are organized into collapsible property-style sections. Use **Save** to keep your changes or **Cancel** to discard them.
+
+The previous **Validate** and **Compile-for-Preview** actions are now combined into **Check Errors**. Use **Check Errors** to validate the custom code resource before using it in your app.
+
+Custom functions are now generated as one file per function. Existing `custom_functions.dart` imports continue to work, so this change should not break existing custom function references.
+
+![Redesigned custom code editor](imgs/redesigned-custom-code-editor.avif)
+
+## Writing Custom Code
+
+:::warning
+Instructions and visuals on this page show the classic Custom Code editor. They still apply to existing projects that have not switched to the [**new project layout**](#access-custom-code-in-new-project-layout).
+:::
+
 There are two main ways to write custom code in FlutterFlow:
 
 1. Using the [**In-App Code Editor**](#using-the-in-app-code-editor)
