@@ -289,7 +289,7 @@ The **Generate Video** action allows your app to send a prompt to a Video Genera
 
 Here, you can fine-tune how your AI Agent is executed. These settings help balance performance, security, and cost for your use case.
 
-- **Require Authentication**: By default, this is ON to restrict access to only authenticated Firebase users. When OFF, anyone can call your agent, which may pose a security risk.
+- **Require Authentication**: By default, this is set to ON to restrict access to only authenticated Firebase users. When set to OFF, anyone can call your agent, which may pose a security risk.
 - **Timeout (seconds)**: Defines how long the agent function can run before being terminated. For example, a value of `60` allows the function up to 60 seconds to complete. Increase if your agent performs long-running operations or processes complex logic.
 - **Memory**: Allocates memory for your agent. Higher memory improves performance for heavy workloads but may cost more. For example, choose `256MB` for standard tasks or `512MB+` for agents handling large data or complex logic.
 - **Min Instances**: The number of instances kept warm and ready at all times. Set to `0` to minimize costs. For example, setting `Min Instances` > 0 can improve response speed by avoiding cold starts, but this incurs additional cost. Set to `0` for development or low-traffic environments.
