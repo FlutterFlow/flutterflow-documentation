@@ -17,9 +17,6 @@ Internally, when you write tests, FlutterFlow generates code for the [Flutter in
 Automated Tests are now considered a legacy testing option in FlutterFlow. For new testing workflows, we recommend using [**Test Pilot**](test-pilot.md), which lets you create and run AI-powered QA tests using natural-language instructions.
 :::
 
-:::note
-FlutterFlow doesn’t support running tests on the platform yet.
-:::
 
 :::info[Pricing Details]
 - **Free and Basic plans:** Automated testing is not available.

@@ -223,7 +223,7 @@ Before you start a run, FlutterFlow shows how many credits the run will use. Thi
 
 Pricing:
 
-- **USD**: `$5/month` per pass unit. Each unit grants `100` credits per reset cycle. You can buy multiple units. For example, `10` units cost `$50/month` and grant `1000` credits.
+- **USD**: `$5/month` per pass unit. Each unit grants `100` credits per reset cycle. You can buy multiple units. For example, `10` units cost `$50/month` and grants `1000` credits.
 - **INR**: The same pricing applies.
 - **Regional discounts**: None.
 - **Annual discount**: Approximately 25%.
@@ -233,9 +233,9 @@ Pass types:
 - **Personal pass**: Purchased from Account billing and assignable to one personal project owned by that user.
 - **Team pass**: Purchased from Teams billing and assignable to one project belonging to the same team.
 
-Pass assignment is permanent. You can assign an unassigned pass to a matching project, but you cannot manually clear, update, transfer, or switch it afterward. If the assigned project is deleted, the pass becomes unassigned. If a project changes owner or team scope and the assigned pass no longer matches that scope, the pass should be unassigned automatically. For example, if a team project with an assigned team pass is moved to become a personal project, the mismatched team pass should be unassigned.
+Pass assignment is permanent. You cannot manually clear, update or transfer the pass while the project still exists. If the assigned project is deleted, the pass becomes unassigned. If a project changes owner or team scope and the assigned pass no longer matches that scope, the pass should be unassigned automatically. For example, if a team project with an assigned team pass is moved to become a personal project, the team pass will be unassigned.
 
-Deleting or canceling a purchased pass is a billing action and is separate from pass assignment.
+Deleting or canceling a purchased pass is a billing action. Like other subscriptions and add-ons, when you delete a Test Pilot pass, you can continue to use it until the end of your current billing cycle.
 
 ## FAQs
 
@@ -270,7 +270,7 @@ Pass assignment is intended to be permanent. Contact support if you suspect a da
 <details>
 <summary>How many free credits do projects get?</summary>
 <p>
-Each project gets 5 free Test Pilot credits. Since 1 credit equals 1 single test run, this gives each project 5 free tests. After those credits are used, the project needs an assigned Test Pilot Credits Pass unless its plan or contract states otherwise.
+Each project gets 5 free Test Pilot credits. Since 1 credit equals 1 single test run, this gives each project 5 free tests. After those credits are used, the project needs an assigned Test Pilot Credits Pass.
 </p>
 </details>
 
@@ -278,5 +278,12 @@ Each project gets 5 free Test Pilot credits. Since 1 credit equals 1 single test
 <summary>Why doesn't my pass have a regional discount?</summary>
 <p>
 Test Pilot Credits Passes do not use regional discounts. The billing page shows the price that applies to your account.
+</p>
+</details>
+
+<details>
+<summary>Do I get free credits if I have an educational account?</summary>
+<p>
+Educational accounts get 5 free tests per project, and are able to purchase Test Pilot passes for further credits.
 </p>
 </details>
