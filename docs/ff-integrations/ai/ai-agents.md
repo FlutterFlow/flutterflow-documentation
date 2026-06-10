@@ -79,13 +79,13 @@ The selected agent kind determines which model settings and app actions are avai
 
 Use a **Chat** agent when your app needs a conversational assistant that can respond to users with text, markdown, or structured JSON. Chat agents are useful for support bots, tutors, product recommenders, content assistants, and agents that analyze user-provided text, images, PDFs, audio, or video.
 
-### Chat Settings
+The chat settings are as follows:
 
-#### System Message
+**System Message**
 
 Defines the AI’s role and how it should behave when responding to users. For instance, “You are an AI fashion stylist…” tells the agent to respond like a professional stylist, focusing on outfits, colors, and suggested combinations.
 
-#### Preloaded Messages
+**Preloaded Messages**
 
 Preloaded messages allow you to set predefined interactions between the AI and users. It is useful for training the agent with example responses to ensure it understands the expected format of answers.
 
@@ -101,7 +101,7 @@ It is always recommended to include at least one sample conversation with both a
 
 :::
 
-#### Model Settings
+**Model Settings**
 
 - **Provider**: Allows you to select the AI vendor for this agent. Supported chat providers include **OpenAI**, **Google**, and **Anthropic**.
     - **OpenAI & Anthropic**: If you choose OpenAI or Anthropic, FlutterFlow will create a [Cloud Function](https://firebase.google.com/docs/functions) in Firebase to relay requests to the AI API securely. Hence, your Firebase project must be on a [Blaze](https://firebase.google.com/pricing) plan (paid) to deploy the necessary cloud function. **Note that** the deployed cloud function will only be accessible to authenticated users.
@@ -112,7 +112,7 @@ It is always recommended to include at least one sample conversation with both a
 - **API Key:** Enter your provider’s API key when the selected provider or model requires one. FlutterFlow securely stores this key within the deployed cloud function to ensure it remains hidden from end-users and network requests.
 
 
-#### Request Options
+**Request Options**
 
 Define the types of inputs users can send to the AI agent. You can enable one or more of the following options:
 
@@ -124,7 +124,7 @@ Define the types of inputs users can send to the AI agent. You can enable one or
 
 Selecting multiple input types makes it easier for users to clearly communicate what they need. Instead of relying only on text descriptions, users can combine inputs. For instance, in an AI Stylist agent, enabling both Text and Image allows users to either describe their outfits in words or upload clothing photos for personalized analysis.
 
-#### Response Options
+**Response Options**
 
 Defines the type of output you want from the agent. You can select from the following options:
 
@@ -132,7 +132,7 @@ Defines the type of output you want from the agent. You can select from the foll
 - **Markdown**: Allows richer formatting (headings, lists, links) if you display content as markdown. For example, an FAQ chatbot can use formatted bullet points, bold text, or italic text to highlight key information.
 - **JSON**: Returns structured data, which can be parsed programmatically. For example, a restaurant finder app might need structured data, e.g., `{ name: 'Pizza Palace', distance: '2.4 miles' }` to display a dynamic map.
 
-#### Model Parameters
+**Model Parameters**
 
 Here, you can fine-tune how the agent generates responses.
 
@@ -174,8 +174,6 @@ The **Clear Chat History** action allows you to clear the remembered context for
 
 Use a **Text-to-Speech** agent when your app needs to convert text into spoken audio. This is useful for reading messages aloud, generating narration, creating voiceovers, or helping users hear content in a selected voice.
 
-### Text-to-Speech Settings
-
 Text-to-speech settings include:
 
 - **Provider**: The text-to-speech provider, such as ElevenLabs.
@@ -204,8 +202,6 @@ The **Generate Speech** action allows your app to send text to a Text-to-Speech 
 
 Use a **Speech-to-Text** agent when your app needs to convert audio into text. This is useful for transcribing voice notes, meeting recordings, support messages, uploaded audio files, or audio from a URL.
 
-### Speech-to-Text Settings
-
 Speech-to-text settings include:
 
 - **Provider**: The transcription provider, such as ElevenLabs.
@@ -229,8 +225,6 @@ The **Transcribe Audio** action allows your app to send audio to a Speech-to-Tex
 ## Image Generation
 
 Use an **Image Generation** agent when your app needs to create images from a text prompt. This is useful for generating product thumbnails, profile artwork, backgrounds, campaign visuals, or other app-specific images.
-
-### Image Generation Settings
 
 You can configure image generation with supported providers such as **Google** or **OpenAI**, choose the model, add the API key, and set a default image size.
 
@@ -258,8 +252,6 @@ The **Generate Image** action allows your app to send a prompt to an Image Gener
 
 Use a **Video Generation** agent when your app needs to generate video from a text prompt. This is useful for creating short clips, campaign visuals, animated concepts, visual storyboards, or social media assets.
 
-### Video Generation Settings
-
 Video generation settings include:
 
 - **Provider**: The video generation provider, such as Google.
@@ -280,7 +272,7 @@ The **Generate Video** action allows your app to send a prompt to a Video Genera
 
 - **Select Video Generation Agent**: Select the Video Generation agent you previously configured.
 - **Prompt**: The text prompt that describes the video to generate.
-- **Aspect Ratio Override**: Optionally override the agent's default aspect ratio for this call. You can use the agent default or choose a supported aspect ratio such as **Landscape (16:9)**, **Portrait (9:16)**, or **Square (1:1)**.
+- **Aspect Ratio Override**: Optionally override the agent's default aspect ratio for this call. You can select **Use Agent Default** or choose a supported aspect ratio such as **Landscape (16:9)**, **Portrait (9:16)**, or **Square (1:1)**.
 - **Action Output Variable Name**: Stores the generated video result so you can display it or use it in later actions.
 
 ![AI Agent generate video action](imgs/ai-agent-video-gen-action.avif)
