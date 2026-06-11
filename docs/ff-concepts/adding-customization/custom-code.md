@@ -32,19 +32,12 @@ There are a few different ways to make custom code accessible in FlutterFlow:
   interactions.
   :::
   
-## Access Custom Code in New Project Layout
-
-New projects use the new layout by default. Existing projects can switch from the classic Custom Code editor by clicking **Try New Layout** in the toolbar.
-
-### Switch to New Layout
-
-To switch an existing project, open the project and go to the **Custom Code** tab from the left navigation menu. Click **Try New Layout** in the toolbar, then confirm the switch. 
-
-In the new project layout, all Custom Code live in the new tab alongside **Pages / Components** panel in the Widget Tree. Use the **Custom Code** tab in the panel to view only custom code resources.
+## Writing Custom Code
 
 :::warning
-Switching to the new project layout is one-way for that project. After you switch, you cannot go back to the classic Custom Code editor for the same project. **To safely try the new custom code layout** first, create another branch, switch to that branch, and then click **Try New Layout** there.
-:::
+Some instructions and visuals on this page show the new Custom Code layout. You can switch from from the classic Custom Code editor by clicking **Try New Layout** in the toolbar.
+
+Switching to the new Custom Code layout is one-way for that project. After you switch, you cannot go back to the classic Custom Code editor for the same project. To safely try the new custom code layout first, create another branch, switch to that branch, and then click Try New Layout there.
 
 <div style={{
     position: 'relative',
@@ -72,52 +65,6 @@ Switching to the new project layout is one-way for that project. After you switc
 </div>
 <p></p>
 
-### Organize Custom Code
-
-Pages, components, and custom code can be grouped together in the same user folders. This makes it easier to organize a feature in one place instead of keeping its UI and custom code separate.
-
-For example, if you have a **Cart** folder that contains cart pages and components, you can drag a related custom function, such as `calculateCartTotals`, into the same folder. This keeps the page, component, and custom logic for that feature together in the widget tree.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0D0EpoylXpD3Ml9WNN9f?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-### Redesigned Custom Code Editor
-
-The custom code editor has also been redesigned. The editor header includes a breadcrumb so you can see where the current file belongs, and the settings are organized into collapsible property-style sections. Use **Save** to keep your changes or **Cancel** to discard them.
-
-The previous **Validate** and **Compile-for-Preview** actions are now combined into **Check Errors**. Use **Check Errors** to validate the custom code resource before using it in your app.
-
-Custom functions are now generated as one file per function. Existing `custom_functions.dart` imports continue to work, so this change should not break existing custom function references.
-
-![Redesigned custom code editor](imgs/redesigned-custom-code-editor.avif)
-
-## Writing Custom Code
-
-:::warning
-Instructions and visuals on this page show the classic Custom Code editor. They still apply to existing projects that have not switched to the [**new project layout**](#access-custom-code-in-new-project-layout).
 :::
 
 There are two main ways to write custom code in FlutterFlow:
@@ -129,7 +76,7 @@ There are two main ways to write custom code in FlutterFlow:
 ### Using the In-App Code Editor
 You can use the In-App Code Editor to view and edit custom code directly in the FlutterFlow application. 
 
-![custom-code-common.png](imgs/custom-code-common.png)
+![custom-code-common.avif](imgs/custom-code-common.avif)
 
 :::tip
 To leverage the capabilities that go beyond our in-app code editor, you can click on the **VS Code icon** to open and edit your custom code directly in VS Code using the FlutterFlow [**VSCode extension**](vscode-extension.md).
@@ -164,7 +111,7 @@ Your prompt must be at least 3 words and no more than 500 characters.
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/nHrVL2cgyzjIgoSUu36F?embed&show_copy_link=true"
+        src="https://demo.arcade.software/fxfIEVOrAXu2SuKg8XWb?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -191,7 +138,7 @@ compilation errors and that your code can be transformed into something that can
 To do so, click the **Compile Code** button.
 
 <figure>
-    ![compile-errors.png](imgs/compile-errors.png)
+    ![compile-errors.avif](imgs/compile-errors.avif)
   <figcaption class="centered-caption">How to recognize compile time errors</figcaption>
 </figure>
 
@@ -228,6 +175,15 @@ This setting allows you to generate boilerplate code, providing a structured sta
 
 After creating a new resource file, click the code icon on the Widget Settings menu to generate the boilerplate code. Then, click "Copy to Editor" to add the boilerplate to your resource file’s code editor, where you can further customize it.
 
+#### References
+
+The References helps you understand where your custom code is being used throughout the project. When enabled, FlutterFlow scans your app and displays all locations where a custom function, custom action, or custom widget is referenced.
+
+:::warning
+Enabling References may increase the loading time of the Custom Code editor because FlutterFlow needs to scan the project and map all usage locations.
+:::
+
+![references](imgs/references.avif)
 
 #### Exclude From Compilation
 
@@ -239,7 +195,7 @@ compile process.
 
 This option is only available for Custom Widgets and Custom Actions.
 :::
-![action-settings.png](imgs/action-settings.png)
+![action-settings.avif](imgs/action-settings.avif)
 
 #### Include BuildContext
 
@@ -335,17 +291,49 @@ Here's an example of an Action that returns a _nullable_ integer.
 
 You can add a [**Description**](../../intro/ff-ui/resource-hierarchy.md#resource-description) note on Custom Functions and Custom Actions to briefly explain their purpose, usage, or important details. This helps clarify what the function or action is intended for, making your project more understandable and maintainable—especially in libraries and collaborative environments.
 
-![adding-description-on-custom-function-action.avif](imgs/adding-description-on-custom-function-action.avif)
+![adding-description.avif](imgs/adding-description.avif)
 
 You can view these descriptions as tooltips by hovering over the green note icon when selecting a Custom Function or Custom Action.
 
-![view-description-custom-function-and-custom-action](imgs/view-description-custom-function-and-custom-action.avif)
+![description-note](imgs/description-note.avif)
 
 :::tip
 In the generated code, descriptions are added as comments before the function definition, and they also appear in the custom code editor.
 
 ![description-in-custom-code](imgs/description-in-custom-code.avif)
 :::
+
+## Organize Custom Code
+
+Pages, components, and custom code can be grouped together in the same user folders. This makes it easier to organize a feature in one place instead of keeping its UI and custom code separate.
+
+For example, if you have a **Cart** folder that contains cart pages and components, you can drag a related custom function, such as `calculateCartTotals`, into the same folder. This keeps the page, component, and custom logic for that feature together in the widget tree.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/0D0EpoylXpD3Ml9WNN9f?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Adding a Pubspec Dependency
 
