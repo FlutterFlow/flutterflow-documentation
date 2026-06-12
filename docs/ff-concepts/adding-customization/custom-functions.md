@@ -54,7 +54,7 @@ Custom Functions are typically straightforward input-output expressions designed
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/BnrHbpxrV7WaNtmn1HLB?embed&show_copy_link=true"
+        src="https://demo.arcade.software/upVgF0cZTJY49tn0Qkdo?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
