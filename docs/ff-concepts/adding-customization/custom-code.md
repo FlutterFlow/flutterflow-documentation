@@ -34,8 +34,36 @@ There are a few different ways to make custom code accessible in FlutterFlow:
   
 ## Writing Custom Code
 
+Custom Code lets you add app-specific logic, custom widget, and native configuration directly in FlutterFlow. You can keep functions, actions, widgets, and code files organized with the pages and components they support, so each feature's files are easier to find and manage.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/epngZPIsKoxNi8rBEZZm?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 :::warning
-Some instructions and visuals on this page show the new Custom Code layout. You can switch from from the classic Custom Code editor by clicking **Try New Layout** in the toolbar.
+Instructions and visuals on this page show the new Custom Code layout. You can switch from from the classic Custom Code editor by clicking **Try New Layout** in the toolbar.
 
 Switching to the new Custom Code layout is one-way for that project. After you switch, you cannot go back to the classic Custom Code editor for the same project. To safely try the new custom code layout first, create another branch, switch to that branch, and then click Try New Layout there.
 
