@@ -56,7 +56,7 @@ To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/rM4e11x5yCTZMdAE8tqE?embed&show_copy_link=true"
+        src="https://demo.arcade.software/8moo0Vp14Ax8k0udjkh0?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -88,7 +88,7 @@ To add a snippet to native iOS files, navigate to **Custom Code** (from the left
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/pqR3C1oSlZiPQhpeA19C?embed&show_copy_link=true"
+        src="https://demo.arcade.software/ty5w49xRqiqDjFA3GffY?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -129,7 +129,7 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/gbjFJzct9J5Jh4lxOniX?embed&show_copy_link=true"
+        src="https://demo.arcade.software/iWDmQGzmkEX9Gu9GpxlY?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -170,37 +170,7 @@ Here’s exactly how you do it:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/wHFUlfRHxQlbzmjR0Bfs?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-
-You can also directly insert a variable placeholder (e.g., `{{variableName}}`) into the code using a snippet or manual edit mode and FlutterFlow automatically creates the corresponding file-level variable.
-
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/szmDUd7g9ZqX9OoNJVws?embed&show_copy_link=true"
+        src="https://demo.arcade.software/aKLSHioNBUzAGk7L2FiX?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -222,8 +192,10 @@ You can also directly insert a variable placeholder (e.g., `{{variableName}}`) i
 
 
 :::tip
-You can use the file level variable across different snippets within the same file.
+- You can also directly insert a variable placeholder (e.g., `{{variableName}}`) into the code using a snippet or manual edit mode and FlutterFlow automatically creates the corresponding file-level variable.
+- You can use the file level variable across different snippets within the same file.
 :::
+
 
 Here are some examples that utilize variables in native code:
 
