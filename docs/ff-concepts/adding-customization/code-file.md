@@ -37,7 +37,7 @@ Here’s an example of adding a `Review` custom class:
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://demo.arcade.software/sX8BKGhdsUGj7IZJCSpN?embed&show_copy_link=true"
+        src="https://demo.arcade.software/fyUgEFvpqTrpXTWtmDp1?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',

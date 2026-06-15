@@ -31,6 +31,7 @@ FlutterFlow. However, when you want to include a UI package from [**pub.dev**](h
 To create a new custom widget, add a new Custom Code snippet and follow the quick guide below. In 
 this example, we will create a `ProductRatingBar` widget that uses a pub.dev dependency to display the rating bar UI. It will also take a callback action to provide the rating value back to the caller.
 
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -38,7 +39,7 @@ this example, we will create a `ProductRatingBar` widget that uses a pub.dev dep
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/zBBJiIaTBpoBWErwvpbd?embed&show_copy_link=true"
+        src="https://demo.arcade.software/8Gi8bElib2Lsy12J9Sww?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -80,7 +81,7 @@ FlutterFlow:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/e8vTIcA4EPju5XntsGiD?embed&show_copy_link=true"
+        src="https://demo.arcade.software/SnBLPmzwrGSwnx3gNqAJ?embed&show_copy_link=true"
         title=""
         style={{
             position: 'absolute',
@@ -171,7 +172,7 @@ variable `userRating`.
 
 FlutterFlow also allows you to view your custom widget once it is successfully compiled. 
 
-![preview-widget.png](imgs/preview-widget.png)
+![preview-custom-widget.avif](imgs/preview-custom-widget.avif)
 
 :::tip[LOOKING for other CUSTOM action properties?]
 To learn more about Custom Widget settings, such as the
