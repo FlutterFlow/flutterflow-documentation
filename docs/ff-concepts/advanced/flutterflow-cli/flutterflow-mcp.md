@@ -265,6 +265,38 @@ The workspace is now bound to that project. `cd` into the workspace folder, [lau
 </div>
 <p></p>
 
+### Copy AI Selector
+
+You can right-click any widget in the builder and select **Copy AI Selector** when you want the agent to update a specific widget in your app. This copies a precise location for the selected widget, which you can paste into your prompt so the agent knows exactly which widget to inspect or modify.
+
+This is helpful when a page has repeated widgets, nested components, or similar labels. Instead of describing the widget only by its position or text, you can give the agent the copied selector and ask for a targeted change, such as updating that widget's style, action, visibility, or data binding.
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/Jx4zuTngeaDsJ3ZPKkNI?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
+
 ### Concurrent Edits with Builder
 
 You can edit visually while an agent is working, but writes use **optimistic concurrency**: when the agent pushes, the server checks the project's last-modified timestamp against the agent's snapshot. If anyone else (you in the visual builder, a teammate, or another agent) modified the project in between, the push is rejected. The agent will re-read the latest state and retry — which may also mean re-planning, if your change conflicts with what it was about to do.
@@ -294,6 +326,42 @@ If you've made visual edits since the agent last read the project, the agent's l
 - **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest. 
 
 See [MCP tools](#mcp-tools) for the full command list.
+
+## Live Sessions
+
+Live Sessions let your AI agent apply changes to a running FlutterFlow app and show those updates directly on the connected device. This is useful when you want to iterate quickly. You can ask the agent to update screens, fix issues, inspect logs, trigger hot reloads or hot restarts, capture screenshots, and then immediately review the results on your running devices.
+
+To use Live Sessions, run your app from the FlutterFlow desktop app on a connected device or simulator, then activate your agent. Confirm in the desktop app that the live session has started, ask the agent to make changes, and review those changes as they appear in the running app. 
+
+:::info
+Keep the desktop app and the running app session open for as long as you want live updates to continue.
+:::
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/YFO4oGfSMWHGKqaEHRCy?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Branches and Rollback
 
