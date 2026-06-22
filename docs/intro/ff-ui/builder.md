@@ -23,7 +23,7 @@ Here is a list of all the features accessible from the navigation menu:
 
 1. **Dashboard**: Manage projects, access account info, and FlutterFlow resources.
 2. **Widget Palette**: Access all widgets for your app.
-3. **Page Selector**: Manage pages and components, create folders as needed.
+3. **Page Selector**: Manage pages, components, and custom code files, and organize them using folders.
 4. **Widget Tree**: Get an overview of all widgets on a selected page.
 5. **Storyboard**: Visualize app's design and navigation.
 6. **Test Mode**: [Test your app](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) in a live debugging environment.
@@ -32,13 +32,12 @@ Here is a list of all the features accessible from the navigation menu:
 9. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
 10. **API Calls**: Define API calls.
 12. **Media Assets**: Upload assets for your app and team.
-13. **Custom Functions**: Add custom functionalities, widgets, and actions.
-14. **Cloud Functions**: Write and deploy cloud functions for Firebase.
-15. **Tests**: Add automated tests.
-16. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
-17. **App Events**: Define and manage [App Events](../../ff-concepts/app-events/app-events.md) that allow different parts of your app to communicate without being directly connected.
-18. **Theme settings**: Customize visual appearance.
-19. **Settings and Integrations**: Access app-related settings and integrations.
+13. **Cloud Functions**: Write and deploy cloud functions for Firebase.
+14. **Tests**: Add automated tests.
+15. **Agents**: Create, configure, and manage [AI Agents](../../ff-integrations/ai/ai-agents.md) to integrate conversational AI interactions into your app.
+16. **App Events**: Define and manage [App Events](../../ff-concepts/app-events/app-events.md) that allow different parts of your app to communicate without being directly connected.
+17. **Theme settings**: Customize visual appearance.
+18. **Settings and Integrations**: Access app-related settings and integrations.
 
 ## ToolBar
 

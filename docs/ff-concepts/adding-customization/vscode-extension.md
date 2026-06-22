@@ -153,10 +153,10 @@ It’s recommended that you install the [**Flutter & Dart Extensions**](https://
 After successfully [installing](#installation) the Visual Studio Code extension and [downloading the code](#downloading-code), you can [initialize your session](#initializing-a-code-editing-session) to start adding or editing custom code.
 
 Currently, the following resources are available for customization:
-- **Custom Actions**: in the `lib/custom_code/actions` directory 
-- **Custom Widgets**: in the `lib/custom_code/widgets` directory
-- **Custom Functions**: in `lib/flutter_flow/custom_functions.dart`
-- **Package Dependencies**: in `pubspec.yaml`
+- **Custom Actions**
+- **Custom Widgets**
+- **Custom Functions**
+- **Package Dependencies** in `pubspec.yaml`
 
 ### Testing Changes Locally
 When working with custom code, it's important to test your implementations. We recommend integrating your Custom Function, Action, or Widget directly within your FlutterFlow project—for example, by adding the Custom Widget to a FlutterFlow Page.

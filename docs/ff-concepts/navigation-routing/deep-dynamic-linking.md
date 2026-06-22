@@ -524,7 +524,7 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
    - `branchHostUrl` (e.g., `brnch4.app.link`)
    - `branchKey` (your Branch key, use it for production and optionally `branchKeyTest` for dev environments. You can toggle modes through Branch dashboard and also through FlutterFlow environment toggling).
 
-2. Then navigate to, FlutterFlow > Custom Code > Configuration Files.
+2. Then navigate to, FlutterFlow > Custom Code
 
 
 **🔧 Android Setup**
