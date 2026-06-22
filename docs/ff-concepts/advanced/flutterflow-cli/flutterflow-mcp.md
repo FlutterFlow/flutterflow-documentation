@@ -269,7 +269,7 @@ The workspace is now bound to that project. `cd` into the workspace folder, [lau
 
 You can right-click any widget in the builder and select **Copy AI Selector** when you want the agent to update a specific widget in your app. This copies a precise location for the selected widget, which you can paste into your prompt so the agent knows exactly which widget to inspect or modify.
 
-This is helpful when a page has repeated widgets, nested components, or similar labels. Instead of describing the widget only by its position or text, you can give the agent the copied selector and ask for a targeted change, such as updating that widget's style, action, visibility, or data binding.
+This is helpful when a page has repeated widgets, nested components, or similar labels. Instead of describing the widget only by its position or text, you can give the agent the copied selector value and ask for a targeted change, such as updating that widget's style, action, visibility, or data binding.
 
 <div style={{
     position: 'relative',
@@ -329,9 +329,9 @@ See [MCP tools](#mcp-tools) for the full command list.
 
 ## Live Sessions
 
-Live Sessions let your AI agent apply changes to a running FlutterFlow app and show those updates directly on the connected device. This is useful when you want to iterate quickly. You can ask the agent to update screens, fix issues, inspect logs, trigger hot reloads or hot restarts, capture screenshots, and then immediately review the results on your running devices.
+Live Sessions let your AI agent apply changes to a running FlutterFlow app and display those updates directly on the connected device. This is useful when you want to iterate quickly. You can ask the agent to update screens, fix issues, inspect logs, trigger hot reloads or hot restarts, capture screenshots, and then immediately review the results on your running devices.
 
-To use Live Sessions, run your app from the FlutterFlow desktop app on a connected device or simulator, then activate your agent. Confirm in the desktop app that the live session has started, ask the agent to make changes, and review those changes as they appear in the running app. 
+To use Live Sessions, run your app from the FlutterFlow desktop app on a connected device or simulator, then activate your agent. Once the live session starts, confirm its status in the desktop app, ask the agent to make changes, and review those updates as they appear in the running app.
 
 :::info
 Keep the desktop app and the running app session open for as long as you want live updates to continue.
