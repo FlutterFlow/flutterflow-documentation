@@ -86,7 +86,7 @@ The "Show Default Button" toggle in the **AppBar** Properties Panel controls whe
 
 However, it's important to note that this default icon won't appear in the FlutterFlow canvas during the design stage. It only becomes visible when the app is running, and the conditions for showing the button are met.
 
-If you wish to replace the default icon with another icon in the leading space, follow the [guide on adding an AppBar](#add-an-appbar-to-your-page).
+If you wish to replace the default icon with another icon in the leading space, follow the [guide on adding an AppBar](#add-an-appbar).
 
 :::tip[Generated Code]
 In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if back navigation is enabled or Drawer is detected when you run the app. 
@@ -479,7 +479,6 @@ This can be useful in scenarios where an immediate update to the user feedback i
 as correcting a message or providing new information. By using these methods, you can control the
 flow of information via SnackBars, ensuring that user feedback is timely, relevant, and not
 overwhelming.
-
 
 
 
