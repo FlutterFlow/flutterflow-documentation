@@ -7,12 +7,12 @@ toc_max_heading_level: 5
 
 # Page Lifecycle
 
-In FlutterFlow and Flutter, understanding the page lifecycle or simply the stages a page goes
-through from creation to disposal is essential for managing resources and data effectively.
+In FlutterFlow and Flutter, understanding the page lifecycle, or the stages a page goes
+through from creation to disposal, is essential for managing resources and data effectively.
 
 Let's delve into the key moments in the lifecycle of a **Page**:
 
-- **Initialization**: This is the first phase where the page is set up. Here the initial data is 
+- **Initialization**: This is the first phase where the page is set up. Here, the initial data is
   loaded. This might involve setting up the necessary state or defaults for the
   page.
 - **Rendering**: Here, the page is actually drawn or rendered on the screen. This includes
@@ -20,26 +20,25 @@ Let's delve into the key moments in the lifecycle of a **Page**:
   initial [state](#page-state).
 - **Updating:** After rendering, the page becomes interactive and can respond to user inputs such as
   clicks, typing, or other gestures. It may re-render parts of the page or the entire page to
-  reflect the changes due to interaction or new data.
+  reflect changes from user interaction or new data.
 - **Disposal**: When the page is no longer needed, or the user navigates away, this phase is
-  triggered. This is where resources related to the page are released from memory and are no longer
-  accessible. 
+  triggered. This is where resources related to the page are released from memory.
 
 In FlutterFlow, most of these lifecycle phases are handled internally by FlutterFlow's architecture.
-However, we expose some of the methods so that you, as a developer, can decide what additional
+However, FlutterFlow exposes some lifecycle methods so that you, as a developer, can decide what additional
 configurations to load upon initialization and when to re-render the UI based on interactions. 
 
 
 ## Page-Level Action Triggers
 
-There are several **[Action Triggers](../../control-flow/functions/action-flow-editor.md#action-triggers)** that are accessible at the root-level of a page. 
+There are several **[Action Triggers](../../control-flow/functions/action-flow-editor.md#action-triggers)** that are accessible at the root level of a page.
 
 :::info[What are Action Triggers?]
 **Action Triggers** serve as event listeners or handlers that respond to
 specific events or user interactions within an application. FlutterFlow provides
 developers with a way to define logic that responds to various events, such as
 button clicks, page loads, form submissions, or data changes.
-To learn more, head over to **[Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md)** section.
+To learn more, see the **[Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md)** section.
 :::
 
 As you open the [Action Flow Editor](../../../resources/control-flow/functions/action-flow-editor.md) for your Page, you can see the following Action
@@ -52,9 +51,9 @@ Triggers exposed for your Page.
 This allows you to set actions when the page loads or
 initializes. It enables developers to perform tasks or execute logic at
 specific points in the page lifecycle, such as fetching data from an API, initializing
-variables or updating UI elements.
+variables, or updating UI elements.
 
-:::tip[Possible usecases]
+:::tip[Possible use cases]
 
 - **Initializing Data:** You can use the **On Page Load** action trigger to initiate API calls,
 database queries, or read from local storage, setting up the data that the page
@@ -80,11 +79,11 @@ When you add actions to the **on Page Load** action trigger, they are executed w
 
 ### On Phone Shake [Action Trigger]
 
-Actions added under this trigger are triggered when the
+Actions added under this trigger run when the
 user shakes their phone. This is useful when you want to perform certain tasks or
 trigger specific actions in response to a phone shake gesture.
 
-:::tip[Possible usecases]
+:::tip[Possible use cases]
 
 - **Randomizing content:** Shake the phone to generate a random number, display a random quote, or
   change the background image.
@@ -98,7 +97,7 @@ trigger specific actions in response to a phone shake gesture.
 
 ### On Shortcut Press [Action Trigger]
 
-This action trigger allows you to bind keyboard shortcuts to actions. This is incredibly helpful for improving accessibility and enhancing user experience, especially in web and desktop apps.
+This action trigger lets you bind keyboard shortcuts to actions. This is incredibly helpful for improving accessibility and enhancing user experience, especially in web and desktop apps.
 
 :::tip[Possible usecases]
 
@@ -110,7 +109,7 @@ This action trigger allows you to bind keyboard shortcuts to actions. This is in
 :::info[important]
 - When a keyboard shortcut is created at the page level, it won't trigger if a TextField is in focus, and you also won't be able to type the shortcut key into the TextField.
 - When a keyboard shortcut is created at the component level, it also won't trigger if a TextField is in focus, but you'll still be able to type the shortcut key into the TextField.
-- **To avoid conflicts, it's recommended to use shortcuts that users are unlikely to type, such as Command + S, instead of a single key like 'S'.**
+- **To avoid conflicts, use shortcuts that users are unlikely to type, such as Command + S, instead of a single key like 'S'.**
 - There's currently a known issue with Flutter's autofocus functionality. If a TextField inside a component has autofocus enabled, and the component has a keyboard shortcut, the TextField will not autofocus as expected.
 :::
 
@@ -118,7 +117,7 @@ This action trigger allows you to bind keyboard shortcuts to actions. This is in
 Implementing keyboard shortcuts is a straightforward process in FlutterFlow. You can define as many shortcuts as you want, each mapped to specific actions that will trigger when the corresponding key combination is pressed. Let's see an example of an eCommerce web app where users can quickly access the cart page by pressing the `C` key.
 
 
-To create a shortcut, use the **On Shortcut Press** action trigger, then type the keys that you want your app to listen for.
+To create a shortcut, use the **On Shortcut Press** action trigger, then enter the keys your app should listen for.
 
 <div style={{
     position: 'relative',
@@ -158,23 +157,23 @@ To handle this, you can enable the option on the `TextField` widget to bypass ke
 
 The **On Dispose** action trigger allows you to define actions that execute when a page is navigated away from or removed from memory. It is particularly useful for stopping ongoing operations.
 
-Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/displaying-media.md#audio-recording) is started when the page loads using the [On Page Load](#on-page-load-action-trigger) action trigger. The recording process runs as long as the user remains on the page. However, when the user navigates away, you need to stop the recording to save resources and ensure the recorded audio is finalized. By using the On Dispose action trigger, you can safely stop the recording and save the file.
+Imagine a scenario where [audio recording](../../../ff-concepts/file-handling/displaying-media.md#audio-recording) is started when the page loads using the [On Page Load](#on-page-load-action-trigger) action trigger. The recording process runs as long as the user remains on the page. However, when the user navigates away, you need to stop the recording to save resources and ensure the recorded audio is finalized. By using the **On Dispose** action trigger, you can safely stop the recording and save the file.
 
 Additionally, if you are using a third-party package that relies on persistent connections or listeners, you can leverage [Custom Actions](../../../ff-concepts/adding-customization/custom-actions.md) with the On Dispose action trigger to close streams or cancel subscriptions.
 
 :::tip[Possible Use Cases]
 - **Cleaning Up Resources:** Use this action trigger to cancel timers, close database connections, or unsubscribe from streams to prevent memory leaks and unnecessary processing.
-    - For example, real-time applications, such as stock trading platforms, rely on WebSocket connections to fetch live updates. A homepage displaying a live ticker of stock prices would require opening the WebSocket connection on page load and closing it on On Dispose. Without an On Dispose trigger, the WebSocket connection could remain open unnecessarily, leading to wasted resources and app instability.
+    - For example, real-time applications, such as stock trading platforms, rely on WebSocket connections to fetch live updates. A homepage displaying a live ticker of stock prices would require opening the WebSocket connection on page load and closing it when **On Dispose** runs. Without an On Dispose trigger, the WebSocket connection could remain open unnecessarily, leading to wasted resources and app instability.
 - **Finalizing Database Transactions**: Commit or roll back database transactions if the user leaves the page before completing the process.
 - **Logging or Analytics:** Track user behavior or log events (e.g., page exit or time spent on a page) to monitor user engagement and improve the application experience.
 :::
 ![page-on-dispose.avif](imgs/page-on-dispose.avif)
 
-## Page state
+## Page State
 
 :::note[State Variables]
 A state variable holds information or data about your UI at any given moment. To learn more
-about **states and state management, [refer here](../../../ff-concepts/state-management/state-variables.md)**
+about **states and state management, [refer to this guide](../../../ff-concepts/state-management/state-variables.md)**
 :::
 
 
@@ -185,7 +184,7 @@ crucial for dynamic pages that interact with user inputs or load varying data. P
 variables are only accessible within the given Page scope. 
 
 This type of variable can be useful for storing data that needs to be shared between different
-widgets on the page, such as saving form data, a search query, and filtering and sorting options.
+widgets on the page, such as form data, a search query, and filtering or sorting options.
 
 For example,
 
@@ -197,13 +196,13 @@ For example,
 This allows you to maintain the state of the page as the user interacts with different widgets and
 components.
 
-When the value of a **Page State** variable is changed, you can choose to re-render the page with
+When a **Page State** variable changes, you can choose to re-render the page with
 the
 updated values, and it will display a new version of the page with these updates.
 
 ### Creating a Page State
 
-To create a new Page State variable in your page, follow the steps:
+To create a new Page State variable on your page, follow the steps:
 
 <div style={{
     position: 'relative',
@@ -268,16 +267,16 @@ the above example:
   performed yet.
 
 :::note
-You can set the Data Type of your Page State variable to any primitive data types such as **String,
-Integer, Boolean, Double** or to any other complex built-in data types such as **Enum, Custom Data
-Type, Document,** etc. To learn more about the available data types, refer the [**Data
-Representation Section.** ](../../data-representation/overview.md)
+You can set the Data Type of your Page State variable to primitive data types such as **String,
+Integer, Boolean,** or **Double**, or complex built-in data types such as **Enum, Custom Data
+Type,** or **Document**. To learn more about the available data types, refer to the [**Data
+Representation Section.**](../../data-representation/overview.md)
 :::
 
 ### Get Page State value
 
 You can access the **Page State** value anywhere on the current page. Any widget can hold the
-current value of a given Page State variable, either for directly displaying it in the UI or for
+current value of a Page State variable, either to display it in the UI or for
 transactional logic.
 
 You can set the source value of the widget wherever you see the following icon. This icon indicates
@@ -289,7 +288,7 @@ that you can link the widget's value to a variable.
 
 Page State values can only be updated via **Actions**. Whenever you want to
 update the page state, such as through a button click, user interaction, or form
-update, create a new Action called **Update Page State**.
+update, add an **Update Page State** action.
 
 <div style={{
     position: 'relative',
@@ -324,7 +323,7 @@ update, create a new Action called **Update Page State**.
 
 #### Rebuild on Update
 
-When updating your page state in Flutter, you'll often come across the **Update
+When updating page state in FlutterFlow, you'll often come across the **Update
 Type** property in your Action properties. Here's what it means:
 
 **Rebuild Current Page:** This option triggers a re-rendering of the page,
@@ -345,7 +344,5 @@ increased battery usage. Therefore, it's essential to consider the trade-offs
 and use rebuilds judiciously to maintain optimal app performance.
 
 To learn more about what happens behind the scenes, refer to
-the [Generated Page] section.
+the [Generated Page](../../../generated-code/pages-generated-code.md) section.
 :::
-
-

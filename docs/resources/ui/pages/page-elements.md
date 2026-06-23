@@ -12,7 +12,7 @@ Page elements in FlutterFlow are the key elements that define the structure and 
 
 Here's how the `Scaffold` contributes to page design in FlutterFlow:
 
-- **[AppBar](page-elements.md#appbar)** : Scaffold allows you to easily include an `AppBar` at the top of the
+- **[AppBar](page-elements.md#appbar)**: Scaffold allows you to easily include an `AppBar` at the top of the
   page,
   which can house the title, navigation controls, and other actions.
 
@@ -22,7 +22,7 @@ Here's how the `Scaffold` contributes to page design in FlutterFlow:
 - **[Drawer & End-Drawer](page-elements.md#drawers)**: A slide-out menu for app navigation, accessible from
   the `AppBar` or by swiping from the side.
 
-- **Body:** The main content area where you place your widgets for the body of the Page.
+- **Body:** The main content area where you place the widgets for the page.
 
 :::note[PLEASE NOTE]
 In FlutterFlow, you won't find a section explicitly labeled as "Body". For example, in the
@@ -41,7 +41,7 @@ FlutterFlow Page**](#) section.
 ## AppBar
 
 **AppBar** is a widget that displays a toolbar at the top of the screen, typically used for
-branding, navigation, and actions related to the current screen. It supports title and icons, 
+branding, navigation, and actions related to the current screen. It supports a title and icons, 
 and offers customization with a variety of styles and functionalities.
 
 The AppBar is divided into the following sections:
@@ -53,7 +53,7 @@ The AppBar is divided into the following sections:
 - **Actions:** Hosts icon buttons for various operations like search, share, and more, situated on
   the right end.
 
-### Add an AppBar to your Page
+### Add an AppBar
 
 <div style={{
     position: 'relative',
@@ -94,7 +94,7 @@ In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`
 
 ## Floating Action Button (FAB)
 
-**Floating Action Button (FAB)** is a distinctive circular button that hovers over content, commonly
+A **Floating Action Button (FAB)** is a distinctive circular button that hovers over content, commonly
 used for a primary action within an app, like adding a new item or composing a message.
 
 ### Extended Property
@@ -103,7 +103,7 @@ This variant of the `FAB` includes both an icon and a label, making it larger th
 circular `FAB`. It is useful when you want the action button to convey more information than just the
 icon can provide, such as text explaining the action ("Add Task", "Create Post", etc.).
 
-**Use-cases**
+**Use cases**
 
 The **extended** `FAB` is particularly beneficial in applications where the action needs clear and
 immediate recognition from the user, which cannot be fully achieved by an icon alone. It is also
@@ -180,79 +180,15 @@ Using a similar approach, you can also add an End Drawer to your page.
 
 ### Drawer [Action]
 
-Using this action, you can open and close the drawers with a tap of a button. For example, opening the drawer from the widget placed outside the Appbar and closing it from the widget placed inside the drawer.
+Using this action, you can open and close the drawers with a tap of a button. For example, opening the drawer from a widget placed outside the Appbar and closing it from the widget placed inside the drawer.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/1kiL82Ri7aIzIn0TyHGy?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-
-#### Types of drawer action
+#### Types of drawer actions
 
 There are three types of actions you can add to the drawer.
 
 - **Open Drawer**: Opens the regular drawer.
 - **Open End Drawer**: Opens the end drawer.
 - **Close Drawers**: Closes all the open drawers.
-
-
-Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
-
-1. Select the **Widget** (e.g. IconButton, Button) on which you want to define the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
-    1. Click on the **+ Add Action**.
-    2. On the right side, search and select the **Drawer** action.
-    3. Select the **Drawer Action Type** among the **Open Drawer**, **Open End Drawer**, and **Close Drawers.**
-    4. Click **Close**.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/b1KwyEEqfqH7orND2mkc?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
 
 ## Nav Bar
 
@@ -329,7 +265,7 @@ bar and then add them. Here's how you can do it:
   choose its **size**.
 
 :::info
-Please note that the NavBar will only appear on the canvas if you have added at
+The NavBar will only appear on the canvas if you have added at
 least two pages to it.
 :::
 
@@ -339,17 +275,38 @@ To reorder the Nav Bar items:
 
 - Navigate to the **Setting and Integrations > General > NavBar & AppBar > Nav Bar**.
 
-- Under the **Re-Order Page Icons**, identify the page that you want to reorder, click on the
-  hamburger
-  icon (icon with three lines ) beside it and drag it in an upward or downward direction.
+- Under the **Re-Order Page Icons**, identify the page that you want to reorder, click on the hamburger icon (icon with three lines ) beside it and drag it in an upward or downward direction.
 
-<iframe src="https://www.loom.com/embed/f6f8c35c38e54b429c89249b90320ffe"frameborder="0"
-allowFullScreen style={{ width: '100%', height: '300px' }}></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/AP66BpoOXuYnmrndPShX?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ### Modifying NavBar Style
 
 When you enable the NavBar, it initially adopts the Flutter Default Nav Bar
-style. However, if you seek more customization options, you can set the Nav Bar
+style. However, if you need more customization options, you can set the Nav Bar
 Style dropdown to one of the following:
 
 #### Flutter Default Nav Bar
@@ -389,9 +346,7 @@ but only displays the label for the selected item.
 - **Border Color:** Alters the color of the borders around NavBar item buttons.
 - **Nav Button Padding:** Adjusts the padding inside each nav button.
 - **Nav Button Margin:** Controls the margin around each nav button.
-- **Nav Button Alignment:** Allows customization of how nav buttons align within the NavBar. Options
-  like
-  center, space-between, etc., are given.
+- **Nav Button Alignment:** Allows customization of how nav buttons align within the NavBar. Options include center, space-between, etc., are given.
 - **Gap Between Icon and Text:** Specifies the spacing between the icon and text within nav buttons.
 - **Animation Duration (ms):** Defines how long animations take when switching between items.
 - **Haptic Feedback:** A toggle that enables or disables haptic feedback when interacting with
@@ -427,9 +382,9 @@ present in the NavBar.
 **SnackBar** is a temporary, lightweight notification that briefly appears at the bottom of the
 screen to provide feedback about an operation.
 
-### When to use Snackbar?
+### When to Use Snackbar?
 
-Here are some common usages of a SnackBar in an app:
+Here are some common uses of a SnackBar in an app:
 
 - **User Feedback:** Notifies users about the success or failure of actions like submitting a
   form or uploading a file.
@@ -503,7 +458,7 @@ a more dynamic user interaction model where feedback and actions are closely lin
 ### Hide SnackBar [Action]
 
 Managing multiple SnackBar instances efficiently is crucial because showing them all at once can
-overwhelm the user interface and confuse the user. To address this, Flutter apps uses a queuing
+overwhelm the user interface and confuse the user. To address this, Flutter apps use a queuing
 system for `SnackBars`:
 
 **Snackbar Queue:** When multiple SnackBars are triggered in succession, they are queued to be
