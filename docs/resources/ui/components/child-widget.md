@@ -11,9 +11,9 @@ keywords: [FlutterFlow, Child Widget, Components, UI, Reusable Components]
 
 Child Widget allows you to create reusable components while keeping part of the layout flexible. Instead of building multiple variations of the same component, you define a fixed structure and leave a specific area open for customization.
 
-- The position is fixed within the component layout
-- It accepts any widget (text, button, image, custom widget, and components, etc.)
-- Each instance of the component can have different content inside it
+- Its position is fixed within the component layout.
+- It accepts any widget, such as text, buttons, images, custom widgets, and components.
+- Each component instance can contain different content.
 - The overall structure of the component remains consistent
 
 This allows you to reuse the same component while adapting its content as needed.
@@ -35,7 +35,7 @@ Let’s see how to use the Child Widget by building a simple example of displayi
 1. In your Component, add a new parameter and give it a clear name (e.g., `childWidget`).
 2. Set the parameter **Type** to **Child Widget**.
 3. In the component layout, add a **Child Widget placeholder** where you want dynamic content to appear.
-4. Now go to the component instance (the place where you add this component), locate the Child Widget area, and add any widget into it.
+4. Go to the component instance (the place where you add this component), locate the Child Widget area, and add any widget to it.
 
 <div style={{
     position: 'relative',
@@ -66,9 +66,9 @@ Let’s see how to use the Child Widget by building a simple example of displayi
 
 ### Child Widget vs Widget Builder Parameter
 
-Both let you insert custom UI into a component, but they are designed for different workflows. One focuses on visual flexibility, while the other focuses on structured and scalable component design.
+Both options let you insert custom UI into a component, but they are designed for different workflows. One focuses on visual flexibility, while the other focuses on structured and scalable component design.
 
-**Child Widget**: A Child Widget allows you to drag and drop any widget directly into a component instance. It requires no setup from the component creator and is handled entirely in the visual editor. Each instance can have different content, making it ideal for quick, flexible customization.
+**Child Widget**: A Child Widget allows you to drag and drop any widget directly into a component instance. It does not require setup from the component creator and is handled entirely in the visual editor. Each instance can have different content, making it ideal for quick, flexible customization.
 
 [**Widget Builder Parameter**](widget-builder-parameters.md): A Widget Builder Parameter is defined by the component creator and lets you pass UI into a component as a parameter. It works like a function input, providing a more structured and controlled way to customize components, especially for reusable and scalable designs.
 
@@ -76,13 +76,13 @@ Both let you insert custom UI into a component, but they are designed for differ
 ### Best Practices
 
 - Place the Child Widget in a predictable area of the layout, such as a trailing section, content block, or action area. Avoid placing it in positions that affect the overall structure (e.g., between tightly coupled layout elements).
-- Keep the role of the Child Widget clear. It should represent a specific purpose (e.g. “action area”, “content area”), not a random insertion point.
-- Avoid adding too many Child Widgets in a single component, as it can make the component harder to understand and use.
+- Keep the role of the Child Widget clear. It should represent a specific purpose, such as "action area" or "content area", not a random insertion point.
+- Avoid adding too many Child Widget placeholders in a single component, as it can make the component harder to understand and use.
 - Test the component with different widget types (small, large, interactive) to ensure the layout remains stable across variations.
 
 ### Limitations
 
 - The Child Widget position is fixed inside the component. You cannot move or reposition it differently for each instance.
-- It does not enforce any structure on what gets inserted, so inconsistent widgets across instances can lead to inconsistent UI if not carefully designed.
+- It does not enforce any structure on what is inserted, so inconsistent widgets across instances can lead to inconsistent UI if not carefully designed.
 - It is not ideal for highly dynamic, repeated layouts such as product lists or grids, where content is driven entirely by data.
-- It relies on manual placement per instance, which can be less efficient for large-scale or system-driven designs.
+- It relies on manual placement per instance, which can be less efficient for larger or system-driven designs.
