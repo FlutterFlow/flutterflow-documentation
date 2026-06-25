@@ -88,9 +88,7 @@ When you have a component in a dynamically generated list, you have an option to
 If it’s a list of Documents the unique key might be the Document ID.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/61d061adf14741bbb25178b439b50b4f?sid=8277e59a-effe-4cf8-a3f6-3f81a7e2a690" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+![component-unique-id.avif](imgs/component-unique-id.avif)
 
 ## Recursive Components
 
