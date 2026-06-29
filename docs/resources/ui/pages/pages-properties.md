@@ -6,18 +6,18 @@ sidebar_position: 1
 
 # Properties Panel
 
-In FlutterFlow, the properties panel on the right helps you set up and manage your pages. It opens when you click on the root element in the [Widget Tree](../widgets/intro-widgets.md#widget-tree) (on the left).
+In FlutterFlow, the Properties panel on the right helps you set up and manage your pages. It opens when you select the root element in the [Widget Tree](../widgets/intro-widgets.md#widget-tree) (on the left).
 
 The panel is organized into sections, each focusing on different settings to customize your pages.
 
-Here’s a detailed look at what you can typically find and modify in this panel:
+Here’s what you can typically find and modify in this panel:
 ![page-properties-panel.png](../imgs/page-properties-panel.png)
 
 ### Page Parameters
 
-This section allows you to define and manage parameters that your page can
-receive from other pages of the app. Parameters are essentially variables that
-hold values which can be passed between pages. For example, you might pass a
+This section lets you define and manage parameters that your page can
+receive from other pages in the app. Parameters are essentially variables that
+hold values that can be passed between pages. For example, you might pass a
 user ID from a list page to a detail page to display specific information about
 that user.
 
@@ -40,7 +40,7 @@ set access restrictions based on user authentication.
 Ensures that actions are bypassed if the Entry Page or Logged In Page is detected as inactive. This is designed specifically for entry points in the app to prevent unnecessary operations when the page is not fully active, optimizing performance and avoiding redundant executions.
 
 :::tip[Generated Code]
-When this check is enabled, the following code is added to your `initState` of your page:
+When this option is enabled, the following code is added to your page’s `initState`:
 ```js
 if (RootPageContext.isInactiveRootPage(context)) {
        return;
@@ -75,7 +75,7 @@ Learn more about Routing [**here**](../../../ff-concepts/navigation-routing/nav-
 
 For more advanced customization and functionality within your FlutterFlow
 projects, the **Properties Panel** offers various configuration settings. These settings allow
-for appearance modification, greater interactivity, dynamic data handling, and more tailored user
+for modifying appearance, greater interactivity, dynamic data handling, and more tailored user
 experiences.
 
 Here's an overview of these additional configurations:
@@ -89,14 +89,14 @@ Here's an overview of these additional configurations:
 
 ### Page (Scaffold) Properties
 
-This section is where you set the fundamental aspects of a page’s layout and
+This section lets you set the fundamental aspects of a page’s layout and
 behavior, including:
 
 - **Background Color:** This property allows you to set a background color for the
 entire page. You can choose a color that fits the theme and design of your app.
 
 - **Safe Area:** When this toggle is enabled, the page content will be
-automatically adjusted to not overlap with the system status bar, navigation
+automatically adjusted so it does not overlap with the system status bar, navigation
 bar, and other critical device UI elements. This ensures that all elements of
 the page are visible and accessible on different devices.
 
@@ -106,7 +106,7 @@ user taps anywhere outside the keyboard area on the screen. This is particularly
 useful for improving user experience by preventing the keyboard from obscuring
 content.
 
-- **Disable Android Back Button:** This toggle, when activated, prevents the
+- **Disable Android Back Button:** When enabled, this toggle prevents the
 Android
 back button from affecting the navigation on this particular page. This can be
 useful in scenarios where you don't want users to navigate back to the previous
@@ -119,8 +119,8 @@ user actions. For example, you can configure a button to navigate to another
 page, submit form data, or call an API. Actions are crucial for creating
 interactive and functional apps.
 
-In the case of Scaffold (Page) actions, you can establish specific behaviors or
-functions that are triggered by certain events related to the page's lifecycle such as [**On Page 
+For Scaffold (Page) actions, you can establish specific behaviors or
+functions that are triggered by certain events related to the page's lifecycle, such as [**On Page 
 Load**](page-lifecycle.md#on-page-load-action-trigger) or [**On Phone Shake**](page-lifecycle.md#on-phone-shake-action-trigger). 
 
 :::info[LEARN MORE]
