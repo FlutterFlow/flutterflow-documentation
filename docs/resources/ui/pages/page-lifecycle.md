@@ -99,7 +99,7 @@ trigger specific actions in response to a phone shake gesture.
 
 This action trigger lets you bind keyboard shortcuts to actions. This is incredibly helpful for improving accessibility and enhancing user experience, especially in web and desktop apps.
 
-:::tip[Possible usecases]
+:::tip[Possible use cases]
 
 - **Create New Issues in Project Management Apps:** In project management apps like Linear, users can press `C` to quickly open a form for creating a new issue or task.
 - **Form Submission:** Users can press a key combination (e.g., `Ctrl + Enter`) to submit a form.
