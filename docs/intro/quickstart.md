@@ -7,9 +7,7 @@ description: Build your first interactive FlutterFlow app by creating a layout, 
 
 # Quickstart Guide
 
-Welcome to the FlutterFlow Quickstart Guide! This guide is tailored for those eager to dive right into building their first FlutterFlow application. Here, you'll build a screen that lets users adjust the quantity of a product before adding it to their shopping cart.
-
-This quickstart is designed to be straightforward and accessible, introducing you to basic FlutterFlow concepts quickly. For those seeking a deeper understanding of FlutterFlow's capabilities, we recommend reading through the FlutterFlow concepts pages.
+Welcome to the FlutterFlow Quickstart Guide! This guide introduces the basic FlutterFlow concepts through a short, hands-on exercise. You'll build a product quantity selector that allows users to adjust the quantity of an item before adding it to their shopping cart.
 
 :::info[Before You Begin]
 To complete this guide, you need:
@@ -19,7 +17,7 @@ To complete this guide, you need:
 - About 15-20 minutes.
 :::
 
-Below is a preview of what your app will look like once completed:
+Below is a preview of what your completed app will look like:
 
 ![Quick start demo app](../../static/img/flutterflow-quick-start-app-demo.avif)
 
@@ -41,13 +39,13 @@ Follow these steps to build the app:
 
 ## 1. Clone the Starter Project {#clone-project}
 
-This guide uses a prepared starter app so you can focus on building the interaction. Open the [FlutterFlow Quickstart project](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click **Clone**, and the project will be instantly added to your account.
+This guide uses a prepared starter app so you can focus on building the interaction. Open the [FlutterFlow Quickstart project](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click **Clone**, and the project will be added to your account.
 
 To begin with a separate project instead, see [Create a Project](../resources/projects/how-to-create-find-organize-projects.md#how-to-create-a-project).
 
 ![clone-project.avif](imgs/clone-project.avif)
 
-After cloning the project, you’ll see a page with product images and descriptions. You’ll add a feature that allows users to update the product quantity.
+After cloning the project, you’ll see a page with product images and a description. You’ll add a feature that allows users to update the product quantity.
 
 ![final-quick-start.avif](imgs/final-quick-start.avif)
 
@@ -97,7 +95,7 @@ To learn more, see [**Building Layouts**](../ff-concepts/layout/building-layout.
 Next, style the quantity control to match the rest of the product page. Use the [Properties Panel](../intro/ff-ui/builder.md#properties-panel) to adjust each selected widget.
 
 1. Adjust the spacing and alignment of the Row. 
-2. Select the quantity Container and adjust its background color, padding, size, and corner radius.
+2. Select the Container that holds the quantity control and adjust its background color, padding, size, and corner radius.
 3. Style the "Quantity" label and value so they are easy to read.
 4. Customize the decrease and increase controls with suitable icons, colors, and sizes. 
 5. Compare the result with the completed preview and make any final visual adjustments.
@@ -130,13 +128,11 @@ Next, style the quantity control to match the rest of the product page. Use the 
 
 ## 4. Manage State {#manage-state}
 
-Once your UI is set up, it's time to make your app interactive by adding a state. This means setting up your app to respond to user interactions. For example, when a user clicks the button to increase the quantity, the number displayed on the label should increase accordingly.
+Once your UI is set up, make your app interactive by adding a page state variable. A state variable stores data that can change as users interact with the page. In this exercise, it stores the current product quantity and updates the displayed value when users select the increase or decrease control.
 
 ### 4.1 Add a State Variable
 
-We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](../resources/ui/pages/page-lifecycle.md) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
-
-Here's how to add and use state variables:
+Add a [page state variable](../resources/ui/pages/page-lifecycle.md) that will hold the current quantity value. Here's how to add and use the state variable:
 
 1. Select the page's root widget in the Widget Tree.
 2. Open the page's state management settings and add a new field.
@@ -220,7 +216,7 @@ Use [**Test Mode**](../testing-deployment-publishing/running-your-app/run-your-a
 
 1. Select **Test Mode** from the left-side menu.
 2. Wait for the test session to start.
-3. Select the increase and decrease controls and confirm that the displayed quantity changes.
+3. Click or tap the increase and decrease controls and confirm that the displayed quantity changes.
 
 [**Run Mode**](../testing-deployment-publishing/running-your-app/run-your-app.md#run-mode) creates a fully functional build that can include live data and be shared with project members. Because it creates a new build, it typically takes longer and does not support hot reload.
 
@@ -274,6 +270,6 @@ Continue learning with these guides:
 
 ## Need Help?
 
-If you're experiencing any issues with the app, ensure that you have followed the instructions correctly.
+If you're experiencing any issues with the app, review the steps above and verify that each widget and action is configured as described.
 
 For additional help, ask a question in the [Community Forum](https://community.flutterflow.io/) or contact FlutterFlow Support.
