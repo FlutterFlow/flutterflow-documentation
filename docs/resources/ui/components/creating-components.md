@@ -15,7 +15,7 @@ time, and simplifies maintenance across your project.
 
 ## Creating a Component from Scratch
 
-To create a component from scratch, click the **Add Button** in the **Page Selector** or **Widget Tree** tab. Then choose **New Component.**
+To create a component from scratch, click the **Add Button** in the **Page Selector** or **Widget Tree** tab. Then choose **Add Component > Create Blank Component**.
 
 <div style={{
     position: 'relative',
@@ -24,7 +24,7 @@ To create a component from scratch, click the **Add Button** in the **Page Selec
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/h9WUKl6igLbyoCPewFLr?embed&show_copy_link=true"
+        src="https://demo.arcade.software/shoUH86rXsdpAxtlCOKq?embed&show_copy_link=true"
         title="Create Component From Scratch"
         style={{
             position: 'absolute',
@@ -43,11 +43,11 @@ To create a component from scratch, click the **Add Button** in the **Page Selec
     </iframe>
 </div>
 
-## Convert into a Component
+## Convert to a Component
 
 If you have already built a complex widget in your page, you can convert that entire widget into a component and reuse it throughout your app.
 
-To convert a complex widget into a reusable component, right click on the root widget that contains the
+To convert a complex widget into a reusable component, right-click on the root widget that contains the
 entire widget tree you want to convert, then select **Convert to Component.**
 
 <div style={{
@@ -76,10 +76,10 @@ entire widget tree you want to convert, then select **Convert to Component.**
     </iframe>
 </div>
 
-## Creating a Component from a Popular Template
+## Creating Component from Template
 
 FlutterFlow offers multiple popular templates for components across various use cases that you can
-apply to your project in seconds, saving you a lot of time.
+apply to your project in seconds, saving time.
 
 <div style={{
     position: 'relative',
@@ -88,7 +88,7 @@ apply to your project in seconds, saving you a lot of time.
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/z3yZcGihUz7yGc3jgIbK?embed&show_copy_link=true"
+        src="https://demo.arcade.software/z4aoeN7TK0Zxp6EseLuD?embed&show_copy_link=true"
         title="Create from template"
         style={{
             position: 'absolute',
@@ -107,20 +107,9 @@ apply to your project in seconds, saving you a lot of time.
     </iframe>
 </div>
 
-## Create an AI Generated Component
+## Generate with Designer
 
-You can quickly create a component using FlutterFlow AI by describing what you want in natural language. The AI uses your description or visual reference, along with your project context, to build the component.
-
-To create and add an AI-generated component, open the **Widget Tree**, click **Generate with AI** (magic wand) button and select the **Component** tab. Next, describe the component you want to build, and hit the **Send** (up arrow) button.
-
-FlutterFlow will process your request and display progress in the **AI Generation History** panel in the toolbar. Once the component is ready, you can preview it in both light and dark themes and apply various color schemes. If you're happy with the result, give it a name and add it to your project.
-
-:::tip
-
-- You can also upload a screenshot or image of the component you want to build. FlutterFlow AI will use it as a reference to generate the layout.
-- While the AI is generating your component, you can continue working on other tasks within FlutterFlow, but make sure you don’t close the FlutterFlow app.
-
-:::
+You can quickly create a component with [FlutterFlow Designer](https://designer.flutterflow.io/) by describing what you want in natural language. Designer uses your description along with your project context, to build the component with relevant widgets. 
 
 <div style={{
     position: 'relative',
@@ -129,8 +118,8 @@ FlutterFlow will process your request and display progress in the **AI Generatio
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/BZD7f7OmwPdyHuOia2lY?embed&show_copy_link=true"
-        title="AI Generated Component"
+        src="https://demo.arcade.software/VAsk3ElbFb9ehAV2e94k?embed&show_copy_link=true"
+        title="Generate with Designer"
         style={{
             position: 'absolute',
             top: 0,
@@ -148,17 +137,16 @@ FlutterFlow will process your request and display progress in the **AI Generatio
     </iframe>
 </div>
 
-#### Import from Figma Frame
+## Import from Figma Frame
+You can quickly turn your Figma designs into functional FlutterFlow components using **Import from Figma**. Provide a Figma Frame URL, and FlutterFlow AI will analyze the design and generate a UI layout that closely matches your mockup.
 
-You can also quickly turn your Figma designs into functional components in FlutterFlow. By providing a Figma Frame URL, FlutterFlow AI will analyze the design and automatically generate UI layouts that closely match your mockup.
+To get started, first [connect your Figma account](../../../ff-concepts/design-system/design-system.md#import-figma-theme). Then, when creating a new component, select **Import from Figma** from the available options. Paste the Figma Frame URL and click **Import**.
 
-To import from a Figma Frame, first, connect your Figma account, [import the Figma theme](../../../ff-concepts/design-system/design-system.md#import-figma-theme), and map your colors and typography accordingly. Next, open the **Generate with AI** dialog and click the **Plus (+)** button. Select **Import from Figma**, enter your **Figma frame URL**, and press **Send**.
-
-A preview of the frame you are importing will appear. To finalize the import, click **Send** again. Once completed, the component will appear in the AI Generation History, where you can preview and add it to your project.
+FlutterFlow will display a preview of the selected frame. Review the preview, then click **Generate** to create the component. Once completed, the component will appear in the **AI Generation History**, where you can preview and add it to your project.
 
 :::warning
 
-Currently, we don't support importing SVG elements from Figma frames. However, you can manually add the SVGs directly to your project [**assets**](../../../generated-code/directory-structure.md#assets) after generation is complete, or replace them in Figma with supported image formats like PNG or JPEG.
+Currently, FlutterFlow doesn't support importing SVG elements from Figma frames. However, you can manually add the SVGs directly to your project [**assets**](../../../generated-code/directory-structure.md#assets) after generation is complete, or replace them in Figma with supported image formats like PNG or JPEG.
 
 :::
 
@@ -169,8 +157,8 @@ Currently, we don't support importing SVG elements from Figma frames. However, y
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/cBQGb2T9VXneQ6gSlQMk?embed&show_copy_link=true"
-        title="AI Generated Component"
+        src="https://demo.arcade.software/V4kUtFFezchW03HIeqyY?embed&show_copy_link=true"
+        title="Import from Figma"
         style={{
             position: 'absolute',
             top: 0,
@@ -190,11 +178,11 @@ Currently, we don't support importing SVG elements from Figma frames. However, y
 
 ## Component Properties Panel
 
-When you select a component from the widget tree, the properties panel opens up on the right
-side of the interface. It plays a crucial role in configuring and managing the various aspects of
+When you select a component from the widget tree, the Properties panel opens on the right
+side of the interface. Use it to configure and manage the various aspects of
 your components.
 
-Here’s a detailed look at what you can typically find and modify in this panel:
+Here’s what you can typically find and modify in this panel:
 
 ![components-configurations.png](../imgs/components-configurations.png)
 
@@ -270,11 +258,11 @@ respective widgets and action triggers.
 </div>
 
 
-Aside from standard data types used throughout FlutterFlow, you can also create parameters that are of type:
+Aside from standard data types used throughout FlutterFlow, you can also create parameters of the following types:
 
-- **Action (callback)**: This allows you to pass in actions into the component. The component can then invoke the action, usually referred to as a callback, in its own action flows. Callbacks are often using to handle events, like updating a parent's state when a button has been pressed. [You can learn more about how to use callbacks here.](/resources/ui/components/callbacks)
+- **Action (callback)**: This allows you to pass actions into the component. The component can then invoke the action, usually referred to as a callback, in its own action flows. Callbacks are often used to handle events, like updating a parent's state when a button has been pressed. [You can learn more about how to use callbacks here.](/resources/ui/components/callbacks)
 
-- **Widget Builders**: Widget builders allows you to pass in widgets to be used within the component's widget tree. This is especially useful when you want to dynamically substitute content for some part of a component - like displaying an item in a custom dropdown, or creating a component for some consistent layout. [You can learn more about how to use Widget Builders here.](widget-builder-parameters.md)
+- **Widget Builders**: Widget builders allows you to pass in widgets to be used within the component's widget tree. This is especially useful when you want to dynamically substitute content for part of a component, such as displaying an item in a custom dropdown, or creating a component for some consistent layout. [You can learn more about how to use Widget Builders here.](widget-builder-parameters.md)
 
 
 ### Actions
@@ -283,7 +271,7 @@ This tab allows you to define and manage interactions or events triggered by use
 example, you can configure a button to navigate to another page or execute a callback action from
 the page using the current component.
 
-Adding an action to a component element is exactly the same experience as adding actions to any page elements. Here's a quick overview:
+Adding an action to a component element is exactly the same experience as adding actions to any page element. Here's a quick overview:
 
 ![component-actions.png](../imgs/component-actions.png)
 

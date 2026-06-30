@@ -6,12 +6,12 @@ slug: /resources/ui/components
 
 # Components
 
-Components in FlutterFlow are reusable widgets. You design the widget once and can use it throughout your app
+Components in FlutterFlow are reusable widgets. You design a widget once and can reuse it throughout your app
 to save time, ensure consistency, and make it easier to maintain.
 
 When you add a component to a [**Page**](../pages/intro-pages.md), it becomes part of that page's **[Widget Tree](../widgets/intro-widgets.md#widget-tree)**. This allows the component to interact with other widgets, inherit properties, and respond to state changes as part of the page's structure.
 
-Components help in the following ways:
+Components help in several ways:
 
 - **Consistency:** Components provide a consistent look and behavior, reducing the likelihood of
   discrepancies that can occur when the same UI elements are created multiple times.
@@ -22,7 +22,7 @@ Components help in the following ways:
   app automatically reflect those changes. This significantly reduces the effort required to
   maintain and update the app.
 
-  :::info[CLasses vs Instances]
+  :::info[Classes vs. Instances]
   Learn more about **[Classes and their Instances](../overview.md)** and what they mean in
   FlutterFlow.
   :::
@@ -43,19 +43,19 @@ Components help in the following ways:
 Leveraging components effectively helps you build a consistent, efficient, and maintainable app.
 
 
-## Common Use-cases
+## Common Use Cases
 
 Components can be used in various scenarios to accelerate your app development process. Here are
-some common use-cases.
+some common use cases:
 
 - Design a **standard button once** and reuse it across multiple screens to maintain a cohesive
    look.
 
-- Utilize components for **card designs** frequently used in your app, such as product cards, user
+- Use components for **card designs** frequently used in your app, such as product cards, user
    profiles, or news articles.
 
 - **Standardize input forms** for tasks like user registration, login, or feedback collection,
-   ensuring
+   to ensure
    a consistent user experience.
 
 - Design **pop-up messages or dialogs** that match the overall theme of your app, enhancing visual
@@ -67,11 +67,10 @@ some common use-cases.
 - Design sections of a screen that are frequently repeated, such as testimonials, image galleries,
    or feature highlights, and reuse them to maintain a cohesive layout.
 
-Here's an example of all the widely used components used in the [EcommerceFlow demo](https://bit.ly/ff-docs-demo-v2) app.
+Here's an example of commonly used components in the [EcommerceFlow demo](https://bit.ly/ff-docs-demo-v2) app.
 
 
 <figure>
     ![custom-components-demo-list.png](../imgs/custom-components-demo-list.png)
   <figcaption class="centered-caption">Some of the custom components from the Ecommerce Demo App</figcaption>
 </figure>
-

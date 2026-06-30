@@ -27,7 +27,7 @@ Previously, FlutterFlow offered several methods to share resources between proje
 
 With Libraries, you can publish the complete FlutterFlow project as a library and import it as a dependency into other projects.
 
-:::tip[possible usecases]
+:::tip[possible use cases]
 
 - **Modular Development**: Build large-scale apps by separating them into smaller, independently managed projects (e.g., UI library, backend integrations, etc.).
 - **Team Collaboration**: Share reusable UI components, custom functions, or API integrations across multiple apps within a team.
