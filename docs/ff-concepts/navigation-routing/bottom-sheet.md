@@ -49,7 +49,7 @@ Follow the steps below to add an action that opens the bottom sheet:
 
 1. First, create a bottom sheet [component](../../resources/ui/components/intro-components.md).
 :::tip
-You can also create one from the 'BottomSheet' [**templates**](../../resources/ui/components/creating-components.md#creating-a-component-from-a-popular-template).
+You can also create one from the 'BottomSheet' [**templates**](../../resources/ui/components/creating-components.md#creating-component-from-template).
 :::
     
 <div style={{

@@ -23,7 +23,7 @@ For more details on how to use Scaffold and the various Page Elements in Flutter
 
 ## Creating a Page
 
-In FlutterFlow, you can seamlessly craft a page tailored to your needs and design preferences.
+In FlutterFlow, you can craft a page tailored to your needs and design preferences.
 Whether you're starting from scratch, using a template, or leveraging AI tools,
 there are several pathways to achieve the desired functionality and aesthetic of your desired Page.
 
@@ -31,24 +31,46 @@ there are several pathways to achieve the desired functionality and aesthetic of
 When you create a page in FlutterFlow, a `Widget` class and a corresponding `Model` class are automatically generated. You can view these in the Code Viewer. To explore the details of the generated `Model` class, take a closer [**look at the code**](../../../generated-code/pages-generated-code.md).
 :::
 
-FlutterFlow allows you to easily create new pages using the **Add Page, Component, or Flow** button, 
-which is available from the **Page Selector** tab in the **Navigation Menu**. This will help you
-quickly start and add new pages to your app.
+FlutterFlow allows you to easily create new pages from the **Page Selector** tab in the **Navigation Menu**.
 
-<img src="/img/page-selector.png" width="50%" />
+![create-new-page.avif](imgs/create-new-page.avif)
 
-### Create an Empty Page
+### Create Empty Page
 
 When creating your page in FlutterFlow, one option is to start with an empty page, providing you
 with a blank canvas. This approach allows you to build your UI from the ground up by composing
 widgets and components together according to your specific design vision and functional
 requirements.
 
-To create an empty FlutterFlow Page from scratch, follow the steps:
+To create an empty FlutterFlow Page from scratch, follow these steps:
 
-<iframe src="https://demo.arcade.software/rtOPRXVUByUAXxUynd8T?embed&show_copy_link=true" title="app.flutterflow.io/authentication" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ocBbnPspp26FKv75YggO?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
-### Create a Page from a Popular Template
+### Create Page from Template
 
 FlutterFlow simplifies the process of page creation by offering a variety of
 popular template use cases. These templates provide a basic structure for your
@@ -63,7 +85,7 @@ To utilize a template from FlutterFlow, follow these steps:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/bkaz68ipgi497Pf4v8EB?embed&show_copy_link=true"
+        src="https://demo.arcade.software/JBhxcBBPb7r1Yk6YwehS?embed&show_copy_link=true"
         title="Create a page from a popular template"
         style={{
             position: 'absolute',
@@ -82,20 +104,9 @@ To utilize a template from FlutterFlow, follow these steps:
     </iframe>
 </div>
 
-### Create an AI Generated Page
+### Generate with Designer
 
-You can quickly create a page using FlutterFlow AI by describing what you want in natural language. The AI uses your description or visual reference, along with your project context, to build the page with relevant widgets. This is especially helpful when you're starting from scratch or prototyping ideas rapidly. 
-
-To create and add an AI-generated page, open the **Widget Tree**, click **Generate with AI** (magic wand) button, and select the **Page** tab. Next, describe the page you want to build, and hit the **Send** (up arrow) button.
-
-FlutterFlow will process your request and display progress in the **AI Generation History** panel in the toolbar. Once the page is ready, you can preview it in both light and dark themes and apply various color schemes. If you're happy with the result, give it a name and add it to your project.
-
-:::tip
-
-- You can also upload a screenshot or image of the page you want to build. FlutterFlow AI will use it as a reference to generate the layout.
-- While the AI is generating your page, you can continue working on other tasks within FlutterFlow, but make sure you don’t close the FlutterFlow app.
-
-:::
+You can quickly create a page with [FlutterFlow Designer](https://designer.flutterflow.io/) by describing what you want in natural language. Designer uses your description along with your project context, to build the page with relevant widgets. This is especially helpful when you're starting from scratch or prototyping ideas rapidly.
 
 <div style={{
     position: 'relative',
@@ -104,8 +115,8 @@ FlutterFlow will process your request and display progress in the **AI Generatio
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/DScLZeZG1NbGxO3Dufr3?embed&show_copy_link=true"
-        title="Create an AI generated page"
+        src="https://demo.arcade.software/oRmGZOkvdnM844VZfHLq?embed&show_copy_link=true"
+        title="Generate with Designer"
         style={{
             position: 'absolute',
             top: 0,
@@ -123,17 +134,17 @@ FlutterFlow will process your request and display progress in the **AI Generatio
     </iframe>
 </div>
 
-#### Import from Figma Frame
+### Import from Figma Frame
 
-You can also quickly turn your Figma designs into functional pages in FlutterFlow. By providing a Figma Frame URL, FlutterFlow AI will analyze the design and automatically generate UI layouts that closely match your mockup.
+You can quickly turn your Figma designs into functional FlutterFlow pages using **Import from Figma**. Simply provide a Figma Frame URL, and FlutterFlow AI will analyze the design and generate a UI layout that closely matches your mockup.
 
-To import from a Figma Frame, first, connect your Figma account, [import the Figma theme](../../../ff-concepts/design-system/design-system.md#import-figma-theme), and map your colors and typography accordingly. Next, open the **Generate with AI** dialog and click the **Plus (+)** button. Select **Import from Figma**, enter your **Figma frame URL**, and press **Send**.
+To get started, first [connect your Figma account](../../../ff-concepts/design-system/design-system.md#import-figma-theme). Then, when creating a new page, select **Import from Figma** from the available options. Paste the Figma Frame URL and click **Import**.
 
-A preview of the frame you are importing will appear. To finalize the import, click **Send** again. Once completed, the page will appear in the AI Generation History, where you can preview and add it to your project.
+FlutterFlow will display a preview of the selected frame. Review the preview, then click **Generate** to create the page. Once completed, the page will appear in the **AI Generation History**, where you can preview and add it to your project.
 
 :::warning
 
-Currently, we don't support importing SVG elements from Figma frames. However, you can manually add the SVGs directly to your project [**assets**](../../../generated-code/directory-structure.md#assets) after generation is complete, or replace them in Figma with supported image formats like PNG or JPEG.
+Currently, FlutterFlow doesn't support importing SVG elements from Figma frames. However, you can manually add the SVGs directly to your project [**assets**](../../../generated-code/directory-structure.md#assets) after generation is complete, or replace them in Figma with supported image formats like PNG or JPEG.
 
 :::
 
@@ -144,8 +155,8 @@ Currently, we don't support importing SVG elements from Figma frames. However, y
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/fPKzHNv7avhcUJ7IZ5hm?embed&show_copy_link=true"
-        title="Create an AI generated page"
+        src="https://demo.arcade.software/3JLrZYc1ZgRp6upm087m?embed&show_copy_link=true"
+        title=""
         style={{
             position: 'absolute',
             top: 0,
