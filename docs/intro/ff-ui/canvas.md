@@ -12,11 +12,8 @@ The Canvas shows the screen of the device, which could be mobile, iPad, web, or 
 
 It allows zoom level adjustments and previews in light or dark mode. It also includes features for multi-language preview, adding App Bar and Nav Bar, simulating larger font visualization, and more.
 
-![canvas area](imgs/canvas-new.avif)
+![canvas area](imgs/canvas.avif)
 
-## Preview Screen
-
-This is the canvas of the device screen where you can build the user interface. You can customize the screen by adding widgets using drag and drop from the [Widget Palette](../../intro/ff-ui/widget-palette.md) and by applying properties present in the [Properties Panel](../../intro/ff-ui/builder.md#properties-panel).
 
 ## Show or hide Navigation Menu
 
@@ -27,19 +24,60 @@ From here, you can open or close the
 
 There's a zoom in ( + ) and a zoom out ( - ) button to control the zoom level of the canvas. While working on complex user interface designs, this comes in handy to give you a better preview of the widgets by zooming in to a particular area and then zooming out to have an overview.
 
-## AI Generated Page
 
-From here, you can [create a page using AI](../../resources/ui/pages/intro-pages.md#generate-with-designer).
+## Preview Screen
+
+This is the canvas of the device screen where you can build the user interface. You can customize the screen by adding widgets using drag and drop from the [Widget Palette](../../intro/ff-ui/widget-palette.md) and by applying properties present in the [Properties Panel](../../intro/ff-ui/builder.md#properties-panel).
+
+## Set Preview Screen Size
+
+Use the screen size controls at the top of the Canvas to preview your app at different dimensions. Select the mobile, tablet, or desktop icon to switch between device types and test how your layout responds on each screen size.
+
+You can also set a custom preview size by clicking the current size box, entering the desired **Width (px)** and **Height (px)** values, and then clicking **Save**.
+
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/DfBQoBkkkRX68CIYoWwD?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Add App Bar
 
 From here, you can add an [App Bar](../../resources/ui/pages/page-elements.md#appbar) to your page. Clicking this button opens a popup displaying different App Bar styles for you to choose from. Just select any App Bar style from the list and it will appear in the Preview Screen.
 
-![AddAppBar.avif](imgs/AddAppBar.avif)
+![appbar-style.avif](imgs/appbar-style.avif)
+
+## Designer Import/Export
+
+Use this menu to copy screens between FlutterFlow and FlutterFlow Designer.
+
+- **Export to Designer:** Send pages from your FlutterFlow project to Designer, where you can explore new styles and continue refining the layouts. See [Import from FlutterFlow](../../ff-designer/import-export/import.md) for detailed instructions.
+- **Paste from Designer:** Add designs copied from Designer to your FlutterFlow project. In Designer, use **Export to FlutterFlow** to copy the frames, then select **Paste from Designer** on the Canvas. See [Export from Designer](../../ff-designer/import-export/export.md#export-options) for more information.
 
 ## Multi-Language Preview
 
-If you've enabled the multi-language feature for your project, you can use this to preview your app in different languages. Just select the language from the dropdown menu, and the text in your app will be translated accordingly.
+If you've enabled the multi-language feature for your project, you can use this to preview your app in different languages. Open **Canvas Settings** and change the **Display Language** to preview the translated text in your app.
 
 :::tip
 This feature is valuable for testing your app across multiple locales without needing to run your app.
@@ -52,7 +90,7 @@ This feature is valuable for testing your app across multiple locales without ne
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/E6otMpbcKewMYCfkjl9d?embed&show_copy_link=true"
+        src="https://demo.arcade.software/Wt1s0IIxQXNQ5cdAMIIf?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -99,7 +137,7 @@ The Safe Area is a concept in mobile design that prevents content from being obs
 
 ### Resize Snapping
 
-When resizing a widget, you can snap its size to the specific pixel values or a percentage of the screen size.
+When resizing a widget, you can snap its size to the specific pixel values.
 
 <div style={{
     position: 'relative',
@@ -108,7 +146,7 @@ When resizing a widget, you can snap its size to the specific pixel values or a 
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/1IOtwXpNus8W4dLgdHsm?embed&show_copy_link=true"
+        src="https://demo.arcade.software/xdE4cilXUV1P7krYEJFg?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -134,13 +172,10 @@ Changing the canvas color can be helpful when creating components, especially wh
 
 This button allows you to add the [Nav Bar](../../resources/ui/pages/page-elements.md#nav-bar) to your page. Clicking on this button opens the popup that allows you to enable Nav Bar for your project. Once the Nav Bar is enabled, you can customize it to match your design.
 
-![AddNavBar.avif](imgs/AddNavBar.avif)
+![add-navbar.avif](imgs/add-navbar.avif)
 
----
 
 ## Video guide
 
 Watch this video if you prefer watching a video tutorial.
 <div class="video-container"><iframe width="760" height="428" src="https://www.youtube.com/embed/NDrte4nOXYc" title="The Canvas | FlutterFlow University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
----
