@@ -29,7 +29,7 @@ You can also find links to various resources to assist in building apps with Flu
 
 - **Tag project**: You can create and add a tag to projects, providing a quick and organized way to classify and identify projects based on their characteristics, purpose, or status.
 
-    To tag a project, simply click the three dots option menu on the project tile, select **Add Tag,** and then click on the tag you want to set. Later, you can search and filter the projects based on the tags.
+    For detailed steps, see [Create and Add Tags to Projects](../../resources/projects/how-to-create-find-organize-projects.md#create-and-add-tags-to-projects).
 
     <div style={{
         position: 'relative',
@@ -38,7 +38,7 @@ You can also find links to various resources to assist in building apps with Flu
         width: '100%'}}>
         <iframe 
             src="https://www.loom.com/embed/2e545489cfe14e97ae44b6a747410ae0?sid=b9a93abe-7fb7-4e16-a014-6477543c4460"
-            title=""
+            title="Tag Projects"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -83,4 +83,3 @@ You can also find links to various resources to assist in building apps with Flu
 - **Plan info**: See information about the current plan and eventually upgrade to access additional features.
 
 - **Logout**: Safely log out from your FlutterFlow account.
-
