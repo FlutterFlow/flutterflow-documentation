@@ -31,35 +31,7 @@ You can also find links to various resources to help you build apps with Flutter
 
 - **Filter Projects**: Filter projects by privacy setting: private, shared by you, or shared with you.
 
-- **Tag Projects**: You can create and add a tag to projects, providing a quick and organized way to classify and identify projects based on their characteristics, purpose, or status.
-
-    To tag a project, open the three-dot overflow menu on the project tile, select **Add Tag**, and then select the tag you want to set. Later, you can search and filter projects based on their tags.
-
-    <div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe
-        src="https://demo.arcade.software/RVgwXtGKdY9bb7WSZjpw?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-    </div>
-    <p></p>
+- **Tag Projects**: You can create and add a tag to projects, providing a quick and organized way to classify and identify projects based on their characteristics, purpose, or status. For detailed steps, see [Creating and Managing Tags](../../resources/projects/how-to-create-find-organize-projects.md#creating-and-managing-tags).
 
 - **Create a New Project**: To create a new project, use the **+ Create New** button. Learn more about [creating a new project](../../resources/projects/how-to-create-find-organize-projects.md#how-to-create-a-project).
 
