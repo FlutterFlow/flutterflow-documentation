@@ -1,5 +1,5 @@
 ---
-slug: /flutterflow-ui/my-organization
+slug: /flutterflow-ui/my-teams
 title: My Teams
 tags: [My Teams, FlutterFlow, UI, Design]
 keywords: [Accounts, Billing, My Teams, Team Code, Team Media Assets, Team Design Library, Team API Library, Adding Domains]

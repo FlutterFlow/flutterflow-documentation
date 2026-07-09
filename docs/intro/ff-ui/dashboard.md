@@ -61,7 +61,7 @@ You can also find links to various resources to assist in building apps with Flu
 
 - **Notifications Center**: The notification center simplify how you manage comments and invites across various projects. It conveniently centralizes all your project communications. And when you're ready to address a comment, tap on it and you'll be taken directly to the relevant section of the project.
 
-- **My organization** From the [**My Organization tab**](my-organization.md), you can share custom code, assets, design systems, and APIs between your team users and across projects.
+- **My Teams**: From the [**My Teams tab**](my-organization.md), you can share custom code, assets, design systems, and APIs between your team users and across projects.
 
 - **Marketplace**: Enhance your FlutterFlow app effortlessly with the [**FlutterFlow Marketplace**](../../marketplace/index.md); access pre-built components and templates created by other users for seamless integration of new functionalities.
 
@@ -83,4 +83,3 @@ You can also find links to various resources to assist in building apps with Flu
 - **Plan info**: See information about the current plan and eventually upgrade to access additional features.
 
 - **Logout**: Safely log out from your FlutterFlow account.
-
