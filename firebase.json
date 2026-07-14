@@ -25,7 +25,17 @@
       },
       {
         "source": "/getting-started/dashboard/my-organization",
-        "destination": "/flutterflow-ui/my-organization",
+        "destination": "/flutterflow-ui/my-teams",
+        "type": 301
+      },
+      {
+        "source": "/flutterflow-ui/my-organization",
+        "destination": "/flutterflow-ui/my-teams",
+        "type": 301
+      },
+      {
+        "source": "/flutterflow-ui/my-organization/",
+        "destination": "/flutterflow-ui/my-teams",
         "type": 301
       },
       {
@@ -2215,7 +2225,7 @@
       },
       {
         "source": "/settings-and-integrations/project-setup/team",
-        "destination": "/flutterflow-ui/my-organization/",
+        "destination": "/flutterflow-ui/my-teams",
         "type": 301
       },
       {

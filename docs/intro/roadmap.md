@@ -7,7 +7,7 @@ slug: /roadmap
 This roadmap guides you through the key layers of app development: the **UI Layer, Logic Layer,** and **Data Layer**. Understanding these layers is essential for creating apps that are visually appealing, functionally robust, and secure. 
 
 
-![layers.avif](layers.avif)
+![layers.avif](imgs/layers.avif)
 
 ## UI Layer
 The UI Layer is all about the visual elements and interactions in your app. It includes widgets for buttons, forms, navigation, and layouts. In FlutterFlow, this layer also covers customization options like themes and responsive design, ensuring your app looks great and is easy to use.
