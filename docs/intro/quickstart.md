@@ -2,50 +2,63 @@
 slug: /quickstart
 title: Quickstart Guide
 tags: []
-description: Jumpstart your FlutterFlow journey with our Quick Start Guide. Learn to build a dynamic app and explore essential FlutterFlow features like UI building, state management, and app execution.
+description: Build your first interactive FlutterFlow app by creating a layout, customizing its style, managing state, and testing the result.
 ---
 
-# **Quick Start Guide**
+# Quickstart Guide
 
-Welcome to the FlutterFlow Quickstart Guide! This guide is tailored for those eager to dive right into building their first FlutterFlow application. Here, you'll build a screen that lets users adjust the quantity of a product before adding it to their shopping cart.
+Welcome to the FlutterFlow Quickstart Guide! This guide introduces the basic FlutterFlow concepts through a short, hands-on exercise. You'll build a product quantity selector that allows users to adjust the quantity of an item before adding it to their shopping cart.
 
-This quickstart is designed to be straightforward and accessible, introducing you to basic FlutterFlow concepts quickly. For those seeking a deeper understanding of FlutterFlow's capabilities, we recommend reading through the FlutterFlow concepts pages.
-<!-- TO DO: add links to resource section later on -->
+:::info[Before You Begin]
+To complete this guide, you need:
 
-Below is a preview of what your app will look like once completed:
+- A [**FlutterFlow account**](https://app.flutterflow.io/).
+- A web browser.
+- About 15-20 minutes.
+:::
+
+Below is a preview of what your completed app will look like:
 
 ![Quick start demo app](../../static/img/flutterflow-quick-start-app-demo.avif)
 
-## **What you'll learn**
-- Creating layouts (add widgets)
-- Adding interactivity to UI elements
-- Handle app behavior in response to user interactions (manage state).
-- Running your app
+## What You'll Learn
 
-<br/>
-The steps to build the app are as follows:
+- Build a layout with widgets.
+- Customize widget styles.
+- Add interactivity with actions.
+- Manage page state in response to user input.
+- Run and test your app.
 
-1. [Clone or create project](#1-clone-or-create-project)
-2. [Building UI](#build-ui)
-3. [Customize style](#customize-style)
+Follow these steps to build the app:
+
+1. [Clone the starter project](#clone-project)
+2. [Build the UI](#build-ui)
+3. [Customize styles](#customize-style)
 4. [Manage state](#manage-state)
 5. [Run the app](#run-app)
 
-## 1. Clone or create project
+## 1. Clone the Starter Project {#clone-project}
 
-To kick off your project, the first step is to [create a new project](../resources/projects/how-to-create-find-organize-projects.md#how-to-create-a-project). However, to make things easier, we've already created a starter app for you. Simply open [this link](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click the '**Clone**' button, and the project will be instantly added to your account. 
+This guide uses a prepared starter app so you can focus on building the interaction. Open the [FlutterFlow Quickstart project](https://app.flutterflow.io/project/f-f-quick-start-app-umu392), click **Clone**, and the project will be added to your account.
 
-![clone-project.png](clone-project.png)
+To begin with a separate project instead, see [Create a Project](../resources/projects/how-to-create-find-organize-projects.md#how-to-create-a-project).
 
-After cloning the project, you’ll see a page with product images and descriptions. You’ll add a feature that allows users to update the product quantity.
+![clone-project.avif](imgs/clone-project.avif)
 
-![zero-to-final.png](../../static/img/zero-to-final.png)
+After cloning the project, you’ll see a page with product images and a description. You’ll add a feature that allows users to update the product quantity.
 
-## 2. Building UI {#build-ui}
+![final-quick-start.avif](imgs/final-quick-start.avif)
 
-In this section, we'll see how to build the user interface (UI) for this feature. This involves creating a layout and adding various widgets to our page.
+## 2. Build the UI {#build-ui}
 
-To build the UI:
+Build the quantity control by combining layout and display widgets in the product page's Widget Tree.
+
+1. Open the product page and locate the content below the product description.
+2. Add a **Container** to hold the quantity control.
+3. Add a **Row** inside the Container.
+4. Add a **Text** widget for the "Quantity" label.
+5. Add controls for decreasing the quantity, displaying its current value, and increasing it.
+6. Arrange the widgets so the label appears on the left and the quantity controls appear on the right.
 
 <div style={{
     position: 'relative',
@@ -54,7 +67,7 @@ To build the UI:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/5CNFKTzhvnHPrLyZNzgZ?embed&show_copy_link=true"
+        src="https://demo.arcade.software/13kkejiZuiFeo9Fj8aWz?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -74,14 +87,18 @@ To build the UI:
 </div>
 
 :::info
-You can learn more about creating layouts [here](../ff-concepts/layout/building-layout.md).
+To learn more, see [**Building Layouts**](../ff-concepts/layout/building-layout.md) and the [**Widget Overview**](../resources/ui/widgets/intro-widgets.md).
 :::
 
-## 3. Customize Style {#customize-style}
+## 3. Customize Styles {#customize-style}
 
-The next step is to customize the style of UI elements. This includes changing the colors, fonts, and sizes of your buttons and labels. In FlutterFlow, you can do this via the [Properties Panel](../intro/ff-ui/builder.md#properties-panel) which provides a range of options for customization.
+Next, style the quantity control to match the rest of the product page. Use the [Properties Panel](../intro/ff-ui/builder.md#properties-panel) to adjust each selected widget.
 
-To customize the style:
+1. Adjust the spacing and alignment of the Row. 
+2. Select the Container that holds the quantity control and adjust its background color, padding, size, and corner radius.
+3. Style the "Quantity" label and value so they are easy to read.
+4. Customize the decrease and increase controls with suitable icons, colors, and sizes. 
+5. Compare the result with the completed preview and make any final visual adjustments.
 
 <div style={{
     position: 'relative',
@@ -90,7 +107,7 @@ To customize the style:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/MGpg8TSzMGBusCGyOk89?embed&show_copy_link=true"
+        src="https://demo.arcade.software/mA0EGCPhuyJ6UUQFPDUP?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -111,13 +128,21 @@ To customize the style:
 
 ## 4. Manage State {#manage-state}
 
-Once your UI is set up, it's time to make your app interactive by adding a state. This means setting up your app to respond to user interactions. For example, when a user clicks the button to increase the quantity, the number displayed on the label should increase accordingly.
+Once your UI is set up, make your app interactive by adding a page state variable. A state variable stores data that can change as users interact with the page. In this exercise, it stores the current product quantity and updates the displayed value when users select the increase or decrease control.
 
-### 4.1 Add state variable
+### 4.1 Add a State Variable
 
-We can achieve this behavior by adding state variables. A state variable stores data that can change over time. For this specific use case, let's add a [page state variable](../resources/ui/pages/page-lifecycle.md) that will hold the current quantity value. When a user interacts with the buttons, we update this variable, which in turn updates the UI.
+Add a [page state variable](../resources/ui/pages/page-lifecycle.md) that will hold the current quantity value. Here's how to add and use the state variable:
 
-Here's how to add and use state variables:
+1. Select the page's root widget in the Widget Tree.
+2. Open the page's state management settings and add a new field.
+3. Name the field `quantity`, set its data type to **Integer**, and give it an initial value of `1`.
+4. Select the Text widget that displays the quantity.
+5. Set its value from **Page State > quantity**.
+
+:::info
+To learn more about this workflow, see [**Creating a Page State**](../resources/ui/pages/page-lifecycle.md#creating-a-page-state).
+:::
 
 <div style={{
     position: 'relative',
@@ -126,7 +151,7 @@ Here's how to add and use state variables:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/UI92tJF6DX0lOVuidaSH?embed&show_copy_link=true"
+        src="https://demo.arcade.software/T8dg4g238t37cct3vrD2?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -145,11 +170,19 @@ Here's how to add and use state variables:
     </iframe>
 </div>
 
-### 4.2 Update state variable
+### 4.2 Update the State Variable
 
-To update the state variable, we will need to add actions. Actions are essentially functions that are triggered by the user's interaction, in this case, by clicking either the "Increase" or "Decrease" buttons. You can add actions to your buttons via the [Actions Panel](../resources/control-flow/functions/action-flow-editor.md). 
+Use actions to change `quantity` when a user selects the increase or decrease control:
 
-Here's how to add actions to your buttons and update the state variable:
+1. Select the increase control and add an **On Tap** action.
+2. Choose **Update Page State**, select `quantity`, and set it to its current value plus `1`.
+3. Select the decrease control and add another **On Tap** action.
+4. Update `quantity` to its current value minus `1`.
+5. Confirm that both controls update the Text widget bound to `quantity`.
+
+:::info
+See the [**Action Flow Editor**](../resources/control-flow/functions/action-flow-editor.md) and [**Update Page State**](../resources/ui/pages/page-lifecycle.md#update-page-state-action) guides for more details.
+:::
 
 <div style={{
     position: 'relative',
@@ -158,7 +191,7 @@ Here's how to add actions to your buttons and update the state variable:
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/6UIpWtPzuhEmK3rdZ7QI?embed&show_copy_link=true"
+        src="https://demo.arcade.software/rmxuLzwsP7uGgGQUI4YO?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -179,7 +212,13 @@ Here's how to add actions to your buttons and update the state variable:
 
 ## 5. Run the App {#run-app}
 
-Now that you've built and customized your app, it's time to run it. FlutterFlow allows you to test a fully-functional version of your app in [**Test**](../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) and [**Run**](../testing-deployment-publishing/running-your-app/run-your-app.md#run-mode) mode. The Run mode requires 2-4 minutes (or more, depending on the size of your project). However, to see your changes immediately, you can run your app in a Test mode that uses Flutter's "[**Hot Reload**](https://docs.flutter.dev/tools/hot-reload)" feature.
+Use [**Test Mode**](../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) to try the interaction and see changes quickly. Test Mode runs a web version of your app and can automatically sync changes from the FlutterFlow builder.
+
+1. Select **Test Mode** from the left-side menu.
+2. Wait for the test session to start.
+3. Click or tap the increase and decrease controls and confirm that the displayed quantity changes.
+
+[**Run Mode**](../testing-deployment-publishing/running-your-app/run-your-app.md#run-mode) creates a fully functional build that can include live data and be shared with project members. Because it creates a new build, it typically takes longer and does not support hot reload.
 
 <div style={{
     position: 'relative',
@@ -188,7 +227,7 @@ Now that you've built and customized your app, it's time to run it. FlutterFlow 
     width: '100%'
 }}>
     <iframe 
-        src="https://demo.arcade.software/TxetiPgtHe50ZcLsHyFH?embed&show_copy_link=true"
+        src="https://demo.arcade.software/hdpwwkbCYcvsjsrkygDX?embed&show_copy_link=true"
         title="Sharing a Project with a User"
         style={{
             position: 'absolute',
@@ -209,8 +248,28 @@ Now that you've built and customized your app, it's time to run it. FlutterFlow 
 
 Congratulations! You've built your first app with FlutterFlow.
 
-## **Problems?**
+## Verify the Result
 
-If you're experiencing any issues with the app, ensure that you have followed the instructions correctly. 
-<!-- For troubleshooting, refer to our comprehensive guide or -->
-To seek assistance from the [Community Forum](https://community.flutterflow.io/). If you're still encountering problems, don't hesitate to report the issue to our support team.
+Before moving on, confirm that:
+
+- The initial quantity is displayed correctly.
+- The increase control raises the quantity.
+- The decrease control lowers the quantity.
+- The layout remains aligned as the value changes.
+- The interaction works in Test Mode.
+
+## Next Steps
+
+Continue learning with these guides:
+
+- [Building Layouts](../ff-concepts/layout/building-layout.md)
+- [Widget Overview](../resources/ui/widgets/intro-widgets.md)
+- [Page State](../resources/ui/pages/page-lifecycle.md#page-state)
+- [Action Flow Editor](../resources/control-flow/functions/action-flow-editor.md)
+- [Run and Test Your App](../testing-deployment-publishing/running-your-app/run-your-app.md)
+
+## Need Help?
+
+If you're experiencing any issues with the app, review the steps above and verify that each widget and action is configured as described.
+
+For additional help, ask a question in the [Community Forum](https://community.flutterflow.io/) or contact FlutterFlow Support.
