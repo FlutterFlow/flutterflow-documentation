@@ -1,5 +1,5 @@
 ---
-slug: /flutterflow-cli/build-with-claude-code
+slug: /flutterflow-cli/claude-code
 title: Build with Claude Code
 description: Use the FlutterFlow plugin in the Claude Code terminal or desktop app to build and edit FlutterFlow apps with AI — automatic CLI install, secure API key setup, and a guided build workflow.
 tags: [CLI, AI, Claude Code]
