@@ -69,24 +69,17 @@ If Claude Code was already running when you installed the plugin, start a new se
 
 ### Claude Code Desktop App
 
-Use this path when you work in the [Claude Code desktop app](https://www.claude.com/product/claude-code) on macOS or Windows.
+Use this path when you work in the [Claude Code desktop app](https://www.claude.com/product/claude-code) on macOS or Windows. Installation happens entirely in the app — no terminal commands required.
 
-1. Install the plugin. The desktop app and the terminal CLI share plugin state, so the same install works for both — run this once from any terminal:
+1. In the **Code** tab, start a new session: choose **Local** as the environment, click **Select folder**, and pick the folder where you want to work — an existing FlutterFlow AI workspace, or the parent folder where a new one should be created.
 
-   ```bash
-   claude plugin marketplace add FlutterFlow/flutterflow-claude
-   claude plugin install flutterflow@flutterflow
-   ```
+2. Click the **+** button next to the prompt box and select **Plugins**, then **Add plugin**. This opens the plugin browser — find the **FlutterFlow** plugin and install it. (**Manage plugins** in the same menu lets you enable, disable, or uninstall it later.)
 
-   To confirm the install — or to manage plugins later — click the **+** button next to the prompt box and select **Plugins**. The `flutterflow` plugin should appear as installed and enabled.
-
-2. Start a new session with **Local** as the environment, then click **Select folder** and choose the folder where you want to work — an existing FlutterFlow AI workspace, or the parent folder where a new one should be created.
-
-3. Describe the FlutterFlow outcome you want in the prompt box.
+3. Start a new session so the plugin's automatic setup runs, then describe the FlutterFlow outcome you want in the prompt box.
 
 :::note[Desktop app specifics]
 
-- Plugins are available in the desktop app's **Local** (and SSH) sessions — not in cloud sessions.
+- Plugins are available in the desktop app's **Local** and **SSH** sessions — not in cloud or WSL sessions.
 - The desktop app reads your `PATH` when it launches. If Dart or the FlutterFlow CLI was installed while the app was open and a session can't find them, quit and reopen the app.
 :::
 
