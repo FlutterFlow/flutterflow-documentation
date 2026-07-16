@@ -1,15 +1,15 @@
 ---
 slug: /flutterflow-cli/build-with-claude-code
 title: Build with Claude Code
-description: Install the FlutterFlow plugin for Claude Code to build and edit FlutterFlow apps with AI — automatic CLI install, secure API key setup, and a guided build workflow.
+description: Use the FlutterFlow plugin in the Claude Code terminal or desktop app to build and edit FlutterFlow apps with AI — automatic CLI install, secure API key setup, and a guided build workflow.
 tags: [CLI, AI, Claude Code]
 sidebar_position: 5
-keywords: [Claude Code, Plugin, CLI, Agentic AI, FlutterFlow AI, FlutterFlow Plugin]
+keywords: [Claude Code, Plugin, CLI, Desktop App, Agentic AI, FlutterFlow AI, FlutterFlow Plugin]
 ---
 
 # Build with Claude Code
 
-The **FlutterFlow plugin for [Claude Code](https://www.claude.com/product/claude-code)** packages FlutterFlow's agentic building experience as a Claude Code plugin. Once installed, it:
+The **FlutterFlow plugin for [Claude Code](https://www.claude.com/product/claude-code)** packages FlutterFlow's agentic building experience as a Claude Code plugin, and works in both the **Claude Code terminal (CLI)** and the **Claude Code desktop app**. Once installed, it:
 
 - **Installs the FlutterFlow CLI automatically** when a session starts — and if the Dart SDK is missing, points you to the installer instead of failing.
 - **Stores your API key securely** — read once from your clipboard, so the key never appears in the chat.
@@ -21,7 +21,7 @@ The plugin drives the same [FlutterFlow CLI](https://pub.dev/packages/flutterflo
 
 Before you start, make sure you have:
 
-- **Claude Code** installed and signed in. Get it from [claude.com](https://www.claude.com/product/claude-code).
+- **Claude Code** installed and signed in — the terminal CLI, the desktop app, or both. Get them from [claude.com](https://www.claude.com/product/claude-code).
 - **Git**, which Claude Code uses to install the plugin.
 - **Dart**, bundled with [Flutter](https://docs.flutter.dev/get-started/install) — required by the FlutterFlow CLI. If it's missing, the plugin detects it and links you to the installer.
 :::
@@ -30,29 +30,69 @@ Before you start, make sure you have:
 macOS and Linux work out of the box. On **Windows**, the plugin's automatic setup requires a `bash` on your PATH (from Git Bash or WSL); without one, install the CLI manually (see [Installation](./overview.md)) and let `flutterflow ai` prompt for your API key — the CLI itself supports Windows end-to-end.
 :::
 
-## Install the Plugin
+## Choose Your Claude Code Surface
 
-Run these two slash commands inside Claude Code:
+The plugin behaves the same in the Claude Code terminal and the Claude Code desktop app — the FlutterFlow workflow after installation is identical. Only plugin installation and session startup differ. Both surfaces read the same Claude Code configuration, so installing the plugin once makes it available in both.
 
-```
-/plugin marketplace add FlutterFlow/flutterflow-claude
-/plugin install flutterflow@flutterflow
-```
+### Claude Code Terminal (CLI)
 
-Or the equivalent from a terminal — the Claude Code CLI and desktop app share plugin state:
+Use this path when you run `claude` from a terminal.
 
-```bash
-claude plugin marketplace add FlutterFlow/flutterflow-claude
-claude plugin install flutterflow@flutterflow
-```
+1. Install the plugin with two slash commands inside a Claude Code session:
+
+   ```
+   /plugin marketplace add FlutterFlow/flutterflow-claude
+   /plugin install flutterflow@flutterflow
+   ```
+
+   Or run the equivalent commands from your shell:
+
+   ```bash
+   claude plugin marketplace add FlutterFlow/flutterflow-claude
+   claude plugin install flutterflow@flutterflow
+   ```
+
+2. Start a new session from the folder where you want to work — an existing FlutterFlow AI workspace, or the parent folder where a new one should be created:
+
+   ```bash
+   cd /path/to/your/projects
+   claude
+   ```
+
+3. Describe the FlutterFlow outcome you want at the prompt.
+
+If Claude Code was already running when you installed the plugin, start a new session so the build skill and automatic setup load.
 
 :::note
-`FlutterFlow/flutterflow-claude` is the GitHub repository the plugin installs from; `flutterflow` after the `@` is the marketplace name. To update the plugin later, run `/plugin marketplace update flutterflow`.
+`FlutterFlow/flutterflow-claude` is the GitHub repository the plugin installs from; `flutterflow` after the `@` is the marketplace name.
+:::
+
+### Claude Code Desktop App
+
+Use this path when you work in the [Claude Code desktop app](https://www.claude.com/product/claude-code) on macOS or Windows.
+
+1. Install the plugin. The desktop app and the terminal CLI share plugin state, so the same install works for both — run this once from any terminal:
+
+   ```bash
+   claude plugin marketplace add FlutterFlow/flutterflow-claude
+   claude plugin install flutterflow@flutterflow
+   ```
+
+   To confirm the install — or to manage plugins later — click the **+** button next to the prompt box and select **Plugins**. The `flutterflow` plugin should appear as installed and enabled.
+
+2. Start a new session with **Local** as the environment, then click **Select folder** and choose the folder where you want to work — an existing FlutterFlow AI workspace, or the parent folder where a new one should be created.
+
+3. Describe the FlutterFlow outcome you want in the prompt box.
+
+:::note[Desktop app specifics]
+
+- Plugins are available in the desktop app's **Local** (and SSH) sessions — not in cloud sessions.
+- The desktop app reads your `PATH` when it launches. If Dart or the FlutterFlow CLI was installed while the app was open and a session can't find them, quit and reopen the app.
 :::
 
 ## Set Up Your API Key
 
-The plugin authenticates with your FlutterFlow API key. Until one is configured, it prints a reminder when a session starts:
+The plugin authenticates with your FlutterFlow API key, and key setup works the same on both surfaces. Until a key is configured, the plugin prints a reminder when a session starts:
 
 ```
 [flutterflow] No FlutterFlow API key configured.
@@ -79,7 +119,7 @@ Avoid entering the key through `/plugin configure` for now — its input dialog 
 
 ## Build with FlutterFlow
 
-Start a new Claude Code session. On the first session after setup, the plugin installs the FlutterFlow CLI automatically — you'll see a short notice while it works:
+Start a new Claude Code session in your working folder — `claude` in the terminal, or a **Local** session in the desktop app. On the first session after setup, the plugin installs the FlutterFlow CLI automatically — you'll see a short notice while it works:
 
 ```
 [flutterflow] Installing the FlutterFlow CLI…
@@ -123,6 +163,14 @@ flutterflow ai logout --all
 
 **If a key ever appears in the chat**, treat it as compromised: delete it on your [account page](https://app.flutterflow.io/account) and create a new one.
 
+## Update the Plugin
+
+Plugin installs track the latest version of the FlutterFlow marketplace. To update, run this from a terminal (or `/plugin marketplace update flutterflow` inside a terminal session), then start a new session — the update applies to the terminal and the desktop app alike:
+
+```bash
+claude plugin marketplace update flutterflow
+```
+
 ## Troubleshooting
 
 <details>
@@ -140,6 +188,13 @@ echo 'export PATH="$HOME/.pub-cache/bin:$PATH"' >> ~/.zshrc
 <summary>The CLI didn't install because Dart is missing</summary>
 <p>
 The FlutterFlow CLI requires the Dart SDK, which ships with Flutter. Install <a href="https://docs.flutter.dev/get-started/install">Flutter</a> (recommended) or <a href="https://dart.dev/get-dart">Dart on its own</a>, then start a new Claude Code session — the plugin retries the install automatically.
+</p>
+</details>
+
+<details>
+<summary>The desktop app can't find the dart or flutterflow command</summary>
+<p>
+The desktop app reads your PATH once, when it launches. If Dart or the FlutterFlow CLI was installed while the app was open, quit and reopen the desktop app. On macOS, make sure your shell profile (for example <code>~/.zshrc</code>) exports the path; on Windows, add it to your user PATH.
 </p>
 </details>
 
