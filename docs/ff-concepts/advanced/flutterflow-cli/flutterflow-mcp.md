@@ -46,7 +46,7 @@ Before you start, make sure you have:
 ::: 
 
 :::tip[Using Claude Code?]
-The [**FlutterFlow plugin for Claude Code**](./build-with-claude-code.md) can handle the CLI install and API key setup for you — an alternative to the manual setup below.
+The [**FlutterFlow plugin for Claude Code**](./build-with-claude-code.md) can handle the CLI install and API key setup for you, as an alternative to the manual setup below.
 :::
 
 ## Setup Workspace
