@@ -17,9 +17,9 @@ The **FlutterFlow plugin for [Claude Code](https://www.claude.com/product/claude
 
 The plugin drives the same [FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli) described in [Build with AI Agents](./flutterflow-mcp.md). If you use a different agent (such as Gemini CLI or Codex), or prefer to install the CLI and configure the MCP server yourself, follow that page instead. Both paths produce the same result.
 
-<div style={{border: '2px dashed var(--ifm-color-emphasis-400)', borderRadius: '8px', padding: '1rem', margin: '1rem 0', background: 'var(--ifm-color-emphasis-100)'}}>
-📸 <strong>Image placeholder: hero.</strong> Side-by-side screenshot: a Claude Code session (terminal or desktop app) that has just applied a change with <code>flutterflow ai run</code> on the left, and the same app open in the FlutterFlow visual builder on the right, showing the plugin editing a real FlutterFlow project. Format: <code>.avif</code> in this folder's <code>imgs/</code>, mirroring the hero on the Build with AI Agents page.
-</div>
+:::tip[Open source]
+The plugin is open source. Browse the code, releases, and issues on GitHub at [FlutterFlow/flutterflow-claude](https://github.com/FlutterFlow/flutterflow-claude).
+:::
 
 :::info[Prerequisites]
 
@@ -68,7 +68,7 @@ Use this path when you run `claude` from a terminal.
 If Claude Code was already running when you installed the plugin, start a new session so the build skill and automatic setup load.
 
 :::note
-`FlutterFlow/flutterflow-claude` is the GitHub repository the plugin installs from; `flutterflow` after the `@` is the marketplace name.
+[`FlutterFlow/flutterflow-claude`](https://github.com/FlutterFlow/flutterflow-claude) is the GitHub repository the plugin installs from; `flutterflow` after the `@` is the marketplace name.
 :::
 
 <div style={{border: '2px dashed var(--ifm-color-emphasis-400)', borderRadius: '8px', padding: '1rem', margin: '1rem 0', background: 'var(--ifm-color-emphasis-100)'}}>
@@ -79,15 +79,31 @@ If Claude Code was already running when you installed the plugin, start a new se
 
 Use this path when you work in the [Claude Code desktop app](https://www.claude.com/product/claude-code) on macOS or Windows. Installation happens entirely in the app, with no terminal commands required.
 
-1. In the **Code** tab, start a new session: choose **Local** as the environment, click **Select folder**, and pick the folder where you want to work. This can be an existing FlutterFlow AI workspace or the parent folder where a new one should be created.
+1. Open the account menu in the lower-left corner of the app and select **Settings**.
 
-2. Click the **+** button next to the prompt box and select **Plugins**, then **Add plugin**. This opens the plugin browser. Find the **FlutterFlow** plugin and install it. (**Manage plugins** in the same menu lets you enable, disable, or uninstall it later.)
+   <img src={require('./imgs/claude-code-desktop/01-open-settings.png').default} alt="Open Settings from the account menu in the Claude desktop app." style={{borderRadius: '8px'}} />
 
-3. Start a new session so the plugin's automatic setup runs, then describe the FlutterFlow outcome you want in the prompt box.
+2. Under **Customize**, select **Plugins**.
 
-<div style={{border: '2px dashed var(--ifm-color-emphasis-400)', borderRadius: '8px', padding: '1rem', margin: '1rem 0', background: 'var(--ifm-color-emphasis-100)'}}>
-🎬 <strong>Arcade placeholder: desktop app install.</strong> Arcade walkthrough of the desktop flow: Code tab → new session with <strong>Local</strong> environment and <strong>Select folder</strong> → the <strong>+</strong> button next to the prompt box → <strong>Plugins</strong> → <strong>Add plugin</strong> → finding and installing the FlutterFlow plugin in the plugin browser → starting a new session.
-</div>
+   <img src={require('./imgs/claude-code-desktop/02-plugins-settings.png').default} alt="Open the Plugins settings page under Customize." style={{borderRadius: '8px'}} />
+
+3. Select **Add**, then **Add marketplace**.
+
+   <img src={require('./imgs/claude-code-desktop/03-add-marketplace.png').default} alt="Open the Add menu and select Add marketplace." style={{borderRadius: '8px'}} />
+
+4. In **URL**, enter `https://github.com/FlutterFlow/flutterflow-claude`, then select **Use "https://github.com/FlutterFlow/flutterflow-claude"**.
+
+   <img src={require('./imgs/claude-code-desktop/04-marketplace-url.png').default} alt="Add the FlutterFlow plugin marketplace by its GitHub URL." style={{borderRadius: '8px'}} />
+
+5. In the plugin directory, select **Code**. Under the `flutterflow` marketplace, find the **FlutterFlow** plugin and select the **+** button on its card.
+
+   <img src={require('./imgs/claude-code-desktop/05-install-flutterflow.png').default} alt="Find the FlutterFlow plugin in the Code directory and select its plus button." style={{borderRadius: '8px'}} />
+
+6. Wait for the **FlutterFlow is installed and ready to use.** confirmation.
+
+   <img src={require('./imgs/claude-code-desktop/06-installed-toast.png').default} alt="Confirmation that FlutterFlow is installed and ready to use." style={{borderRadius: '8px'}} />
+
+7. Close Settings, open the **Code** tab, and start a new session. Choose **Local** as the environment, select the folder where you want to work, and describe the FlutterFlow outcome you want in the prompt box. The folder can be an existing FlutterFlow AI workspace or the parent folder where a new one should be created.
 
 :::note[Desktop app specifics]
 
@@ -111,10 +127,6 @@ The plugin authenticates with your FlutterFlow API key, and key setup works the 
 2. Come back to Claude Code and say: **"I copied my FlutterFlow API key"**.
 
 Claude runs a script bundled with the plugin that reads the clipboard once, validates the key, stores it in `~/.config/flutterflow/claude-env.sh` with owner-only permissions, and clears the clipboard. The key itself never enters the conversation. If validation fails (for example, you copied something else in the meantime), Claude asks you to copy the key again and retry.
-
-<div style={{border: '2px dashed var(--ifm-color-emphasis-400)', borderRadius: '8px', padding: '1rem', margin: '1rem 0', background: 'var(--ifm-color-emphasis-100)'}}>
-🎬 <strong>Arcade placeholder: API key hand-off.</strong> Recording of the key setup end to end: copying the API key on the FlutterFlow account page, telling Claude "I copied my FlutterFlow API key", and Claude's confirmation showing <code>key: STORED (clipboard cleared)</code>. Record with a throwaway key and revoke it afterward; the key value itself must never be visible at any point in the recording.
-</div>
 
 :::warning[Clipboard history managers]
 Tools like Raycast, Alfred, Windows clipboard history (Win + V), and Apple's Universal Clipboard keep their own copy of everything you copy, even after the system clipboard is cleared. If you use one, purge the key from its history after setup.
@@ -141,10 +153,6 @@ After that, describe what you want to build. The build skill triggers on Flutter
 > Add a profile page with an avatar, display name, and a settings list
 > Change the primary color to teal and update the home page title
 ```
-
-<div style={{border: '2px dashed var(--ifm-color-emphasis-400)', borderRadius: '8px', padding: '1rem', margin: '1rem 0', background: 'var(--ifm-color-emphasis-100)'}}>
-🎬 <strong>Arcade placeholder: build workflow.</strong> Arcade of a full build: prompting Claude for a small app or page change, the skill creating the workspace and running <code>flutterflow ai validate</code> then <code>run</code>, and the finished result opened in the FlutterFlow visual builder.
-</div>
 
 Under the hood, the skill follows a disciplined workflow:
 
