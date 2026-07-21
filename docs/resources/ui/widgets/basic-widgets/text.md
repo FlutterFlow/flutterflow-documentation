@@ -5,14 +5,11 @@ slug: /resources/ui/widgets/text
 
 # Text
 
-Text is a fundamental element in any user interface, used to convey information and interact 
-with users. In app development, effectively presenting text can significantly enhance the user 
-experience, making information accessible and interactions intuitive. Two common widgets used 
-for displaying text in FlutterFlow are the Text widget and the RichText widget. Each serves a 
-distinct purpose and offers different capabilities for integrating text into an application.
+Text is a fundamental element in any user interface. It conveys information and guides users through interactions. In app development, presenting text effectively can significantly enhance the user experience by making information accessible and interactions intuitive. Two common widgets used for displaying text in FlutterFlow are the Text widget and the RichText widget. Each serves a distinct purpose and offers different capabilities for integrating text into an application.
 
 ## Text Widget
-The Text widget is used to display a piece of text on the screen. It's one of the most commonly used widgets in app development.
+
+The Text widget is used to display a piece of text on the screen. It is one of the most commonly used widgets in app development.
 
 ![text-example.png](../built-in-widgets/imgs/text-example.png)
 
@@ -21,13 +18,13 @@ clearly and effectively. The Text widgets display the product name, "Men's Harri
 
 The Text widget can be found under the **Base Elements** tab in the **Widget Palette**. You can either drag it to your desired location on the screen or insert it directly via the widget tree.
 
-Once the Text widget is selected, the Properties Panel on the right side becomes active, allowing you to customize the styling of your Text widget. Here, you can adjust various attributes such as font size, color, alignment, and more to tailor the appearance to fit your design needs.
+Once the Text widget is selected, the Properties Panel on the right side becomes active, allowing you to customize its style. Here, you can adjust attributes such as font size, color, alignment, and more to tailor the appearance to your design needs.
 
 ## RichText Widget
 
-The **RichText** widget offers more elaborate formatting capabilities compared to the basic Text widget. It allows for the mixing of multiple styles within a single text sequence, enabling the creation of stylized textual content. 
+The **RichText** widget offers more formatting options than the basic Text widget. It allows you to mix multiple styles within a single text sequence, enabling the creation of stylized textual content. 
 
-This widget uses a tree of **TextSpan** objects to define the rich formatting options, including different fonts, sizes, and colors for various parts of the text. RichText is particularly useful for text-heavy applications that need inline styling and linking, like in a formatted article or a document viewer.
+This widget uses a tree of **TextSpan** objects to define the rich formatting options, including different fonts, sizes, and colors for various parts of the text. RichText is particularly useful for text-heavy applications that need inline styling and linking, such as in a formatted article or a document viewer.
 
 The RichText widget can be found under the **Base Elements** tab in the **Widget Palette**. You can 
 either drag it to your desired location on the screen or insert it directly via the widget tree.
@@ -75,12 +72,11 @@ For consistency, we recommend defining your Typography and custom text styles fr
 Settings > Typography & Icons** before creating any screens.
 :::
 
-Few things to note:
+A few things to note:
 
-- **Line Height:** Sets the height of the text (e.g. a value of 1.5 would make the line height 50% 
-larger than the font size.
+- **Line Height:** Sets the height of the text (e.g., a value of 1.5 makes the line height 50% larger than the font size).
 
-- **Text Align:** Define how text is positioned within a container, typically as left-aligned, right-aligned, centered, or justified
+- **Text Align:** Defines how text is positioned within a container, such as left-aligned, right-aligned, centered, or justified.
 
 
 ## Advanced Properties for Text Widget
@@ -88,99 +84,166 @@ larger than the font size.
 - **Max Lines:** This property specifies the maximum number of lines that the text can occupy. If the 
 content exceeds the set number of lines, it will be truncated or end with an ellipsis, depending on the configuration. This is useful for maintaining a clean and consistent layout where text space is limited.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/62fd114580c94b0e84e837f19e5b57f8?sid=002d6a75-25c0-426f-9b09-9300f0cd5658" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/EpkK0Vq4HzxDUe9lXoJT?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 <p></p>
-<p></p>
 
-- **Auto Size** 
 
-    The `Auto Size` option allows the `Text` widget to automatically reduce its font size to fit within its parent widget. This ensures that the text remains legible without overflowing its container, making it especially handy for responsive designs where the display may vary across different devices.
+- **Auto Size:**
 
-        - **Configure Parent Widget Dimensions**
+  The `Auto Size` option allows the `Text` widget to automatically reduce its font size to fit within its parent widget. This ensures that the text remains legible without overflowing its container, making it especially useful for responsive designs where the display may vary across different devices.
 
-            To enable `Auto Size`, the `Text` widget must be inside a widget that has both defined width and height. Without these constraints, the font size cannot be adjusted automatically.
+  **Configure Parent Widget Dimensions**
 
-            1. Select the `Text` widget.
-            2. Check its parent widget.
-            3. Ensure both width and height are explicitly defined.
+  To enable `Auto Size`, the `Text` widget must be inside a widget that has both a defined width and height. Without these constraints, the font size cannot be adjusted automatically.
 
-                :::warning
-                Without defined dimensions, the `Auto Size` feature may not behave as expected.
-                :::
+  1. Select the `Text` widget.
+  2. Check its parent widget.
+  3. Ensure both width and height are explicitly defined.
 
-        - **Behavior Scenarios**
+  :::warning
+  Without defined dimensions, the `Auto Size` feature may not behave as expected.
+  :::
 
-            The following examples illustrate how `Auto Size` behaves under different container configurations:
+  **Behavior Scenarios**
 
-            - Container with width set to `infinity` and height set to `100px`, `Auto Size` disabled. The text may overflow beyond the container.
-            - Container with width set to `infinity` and height set to `100px`, `Auto Size` enabled. The font size adjusts to fit the defined height.
-            - Container with width set to `30%` and no height defined, `Auto Size` enabled. The feature has no visible effect due to missing height constraint.
-            - Container with width set to `70%` and height set to `50px`, `Auto Size` enabled. The text is resized to the minimum allowed font size to remain within the container.
+  The following examples illustrate how `Auto Size` behaves under different container configurations:
 
-                ![](../built-in-widgets/imgs/20250430121459696014.png)
+  - When the container width is set to `infinity`, the height is set to `100px`, and `Auto Size` is disabled, the text may overflow beyond the container.
+  - When the container width is set to `infinity`, the height is set to `100px`, and `Auto Size` is enabled, the font size adjusts to fit the defined height.
+  - When the container width is set to `30%`, no height is defined, and `Auto Size` is enabled, the feature has no visible effect because the height constraint is missing.
+  - When the container width is set to `70%`, the height is set to `50px`, and `Auto Size` is enabled, the text is resized to the minimum allowed font size to remain within the container.
+
+  ![](../built-in-widgets/imgs/20250430121459696014.png)
 
 :::tip
-                Use `Auto Size` with percentage-based dimensions for better responsiveness. For example, set the container width to `30%` and enable `Auto Size` to allow the text size to adjust as the screen size changes.
+Use `Auto Size` with percentage-based dimensions for better responsiveness. For example, set the container width to `30%` and enable `Auto Size` to allow the text size to adjust as the screen size changes.
 :::
 
 :::note
-                The `Auto Size` feature has a minimum font size threshold. If the container becomes too small, text may clip or overflow when resizing is no longer possible.
+The `Auto Size` feature has a minimum font size threshold. If the container becomes too small, text may clip or overflow when resizing is no longer possible.
 :::
 
 
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/caf1377d41d44238996fa66d06d63cb4?sid=f05598ca-e44f-4db6-bb72-82692de0ffc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/ZzDQ5rt6AdNbUGlb1oDd?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 <p></p>
 
 
-### Setting Text Overflow replacement
+### Setting Text Overflow Replacement
 
-You may want to limit the number of characters shown inside the Text widget and replace the extra characters with the ellipsis or completely hide them.
+You may want to limit the number of characters shown inside the Text widget and control how the remaining text appears when it exceeds the limit.
 
 :::note[Important]
-This option is only available if the value is set from the variable.
+This option is only available when the Text value is set from a variable.
 :::
 
 To set the text overflow replacement:
 
-1. Select the **Text** widget, navigate to the **Properties Panel > Text Properties >** enter the 
-value for **Max character** to limit the number of characters.
+1. Select the **Text** widget, go to **Properties Panel > Text Properties**, and enter a value for **Max Character** to limit the number of characters.
 
-2. Set the **Text Overflow Replacement** to either **Clip/Cutoff** or **Ellipsis (...)**
+2. Set the **Text Overflow Replacement** to the behavior you want:
 
-![text-overflow.png](imgs/text-overflow.png)
+   - **Unspecified**: Uses the default overflow behavior.
+   - **Clip**: Cuts off the extra text without showing any visual indicator.
+   - **Ellipsis (...)**: Replaces the extra text with an ellipsis.
+   - **Fade**: Fades out the overflowing text at the edge.
+   - **Visible**: Allows the overflowing text to remain visible. Use this carefully, as it may overlap nearby widgets.
 
+![overflow-options](imgs/overflow-options.avif)
 
-### Adding Gradient color
+### Adding Gradient Color
 
 :::caution[Conditional Properties]
-Note that enabling the Gradient option disables AutoSize and setting Max Lines for your Text.
+Note that enabling the Gradient option disables Auto Size and Max Lines for your Text widget.
 :::
 
-Adding a gradient color to the text gives it a modern look and feel. You can either use our ready-made templates or create it from scratch.
+Adding a gradient color to the text gives it a modern look and feel. You can either use our ready-made templates or create one from scratch.
 
 Here's how you do it:
 
-1. Select the **Text** widget, navigate to the **Properties Panel > Text Properties >** enable the 
-**Gradient** toggle.
+1. Select the **Text** widget, go to **Properties Panel > Text Properties**, and enable the **Gradient** toggle.
 
 2. To add your own colors:
-    1. Select the **Type** among the **Linear** and **Radial**. The *Linear* distributes the 
-   colors horizontally, whereas the *Radial* circularly spreads the color.
-   
-    2. If you choose *Linear*, specify the **Direction,** and for *Radial*, specify the **Radius**.
-    3. Add/Remove or customize the existing colors.
+   1. Select the **Type**: **Linear** or **Radial**. **Linear** distributes the colors horizontally, while **Radial** spreads the colors in a circular pattern.
+   2. If you choose **Linear**, specify the **Direction**. If you choose **Radial**, specify the **Radius**.
+   3. Add, remove, or customize the existing colors.
 
 :::info
 You can also add gradient colors from a preset template as shown in the video demo.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/259549fd8258455293eefda40b12852e?sid=6f0061cb-8241-47dc-b680-34c59c18b66c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/z9dSmohqEETCJRCRRQ4U?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
+<p></p>
 
 ## Formatting numbers
 
@@ -197,7 +260,7 @@ Below are the types of formatting that we support:
 - **Scientific**: Shows numbers in scientific format (e.g., 1e3, 1E6).
 - **Compact**: Shows numbers in compact format (e.g., 2.1K, 2.3M, 5B).
 - **Compact Long**: Shows numbers in compact long format (e.g., 2.1 thousand, 2.3 million, 5 billion).
-- **Custom**: If the given formatting options do not fit your requirement, you can use specify a 
+- **Custom**: If the given formatting options do not fit your requirement, you can specify a 
   custom format.
 
 
@@ -205,28 +268,44 @@ Below are the types of formatting that we support:
 
 Use the instructions below to format a number:
 
-1. Select the **Text** widget, move to the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) > **Set from Variable >** 
-   display the value from a variable of type **Integer** or **Double**. (e.g., **App State > App 
-   State Variable Name**).
-2. After selecting a variable, set the **Available Options** to **Number Format** and **Number 
-   Format Options** to the required [type](#types-of-formatting).
+1. Select the **Text** widget, go to [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) > **Set from Variable**, and display the value from a variable of type **Integer** or **Double** (e.g., **App State > App State Variable Name**).
+2. After selecting a variable, set **Available Options** to **Number Format** and **Number Format Options** to the required [type](#types-of-formatting).
 
-    1. If you choose **Decimal**, you must set the **Decimal Type** as well. The decimal values 
-   can be shown in two ways, i.e., 1,200 (with a comma) and 1.200 (with a period). 
+   1. If you choose **Decimal**, you must set the **Decimal Type** as well. Decimal values can be shown in two ways: `1,200` with a comma or `1.200` with a period.
 
-        1. Select **Automatic** to show decimal value based on the user's country.
+      1. Select **Automatic** to show the decimal value based on the user's country.
+      2. Select **Period for Decimal** to show the decimal value with a period (e.g., `1.200`).
+      3. Select **Comma for Decimal** to show the decimal value with a comma (e.g., `1,200`).
+   2. If you choose **Custom**:
+
+      1. Find the **Custom Format** box, and enter your format. For example, entering `###,###.###` will convert the number `123456.789` into `123,456.789`, and `000.00` will convert the number `12.786` into `012.79`.
        
-        5. Select **Period for Decimal** to show decimal value with a period (e.g., 1.200).
-        8. Select **Comma for Decimal** to show decimal value with a comma (e.g., 1,200).
-    5. If you choose **Custom**:
-
-        1. Find the **Custom Format** box, and enter your format. For example, entering `###,###.###` will convert the number 123456.789 into 123,456.789, and 000.00 will convert the number 12.786 into 012.79.
-       
-        5. In the **Locale** input box, enter the locale in which you want to display the number. (If you leave this property empty, the locale is automatically set as per the user's location). Learn more about how to format a number [here](https://pub.dev/documentation/intl/latest/intl/NumberFormat-class.html).
+      2. In the **Locale** input box, enter the locale in which you want to display the number. If you leave this property empty, the locale is automatically set based on the user's location. Learn more about how to format a number [here](https://pub.dev/documentation/intl/latest/intl/NumberFormat-class.html).
 3. To display this number as currency, enable the **Display as Currency** toggle and specify the **Currency Symbol**.
 4. Click **Confirm**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/3aa929751ba9406fb4b3198176c5183b?sid=cb7697c6-5053-4c2c-a936-fe22579ba4a5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe 
+        src="https://demo.arcade.software/GeWRQ2ZGo4en9Y9blXvY?embed&show_copy_link=true"
+        title=""
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameborder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 <p></p>
