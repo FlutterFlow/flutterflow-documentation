@@ -321,13 +321,17 @@ dart pub global activate flutterflow_cli
 
 ## Troubleshooting
 
-### The plugin is not available in Codex CLI
+<details>
+<summary>The plugin is not available in Codex CLI</summary>
 
 Enter `/plugins` and look for `flutterflow@flutterflow`. Confirm that it is
 installed and enabled. If you installed or updated it while Codex CLI was
 running, exit and relaunch Codex, then start a new task.
 
-### The plugin is not available in the ChatGPT desktop app
+</details>
+
+<details>
+<summary>The plugin is not available in the ChatGPT desktop app</summary>
 
 Open **Plugins** from the main Codex sidebar, not from Settings. Open the
 **Create** menu and select **Add marketplace**, then add the
@@ -340,7 +344,10 @@ https://github.com/FlutterFlow/flutterflow-codex
 Open the FlutterFlow plugin details and select the plus button to install it.
 Then start a new task so the FlutterFlow skill loads.
 
-### The `flutterflow` command is not found
+</details>
+
+<details>
+<summary>The <code>flutterflow</code> command is not found</summary>
 
 Install or update the CLI:
 
@@ -351,7 +358,10 @@ dart pub global activate flutterflow_cli
 Restart your terminal or Codex if the Dart global executable directory was
 added to `PATH` during installation.
 
-### Authentication is missing or rejected
+</details>
+
+<details>
+<summary>Authentication is missing or rejected</summary>
 
 Copy a current token from your
 [FlutterFlow account](https://app.flutterflow.io/account), return to Codex, and
@@ -360,7 +370,10 @@ type `copied` when the plugin asks. Do not paste the token into the chat.
 If FlutterFlow rejects a saved credential, generate a replacement token and
 repeat the secure clipboard hand-off.
 
-### Codex cannot find the FlutterFlow workspace
+</details>
+
+<details>
+<summary>Codex cannot find the FlutterFlow workspace</summary>
 
 Run the task from the initialized workspace directory. Its root contains:
 
@@ -372,13 +385,19 @@ Do not initialize a new workspace inside a populated, unrelated directory. If a
 workspace already exists for the project, open that folder instead of creating
 another one.
 
-### MCP tools do not appear
+</details>
+
+<details>
+<summary>MCP tools do not appear</summary>
 
 Confirm that the workspace contains `.codex/config.toml`, then start a new Codex
 task from that workspace. Codex loads project-scoped MCP configuration at the
 start of a task.
 
-### The visual builder changed after Codex inspected the project
+</details>
+
+<details>
+<summary>The visual builder changed after Codex inspected the project</summary>
 
 Ask Codex to refresh the project context before applying another edit:
 
@@ -388,6 +407,8 @@ FlutterFlow uses optimistic concurrency to prevent Codex from silently
 overwriting a newer visual-builder or teammate edit. See
 [Concurrent Edits with Builder](./flutterflow-mcp.md#concurrent-edits-with-builder)
 for details.
+
+</details>
 
 ## Support
 
