@@ -45,6 +45,10 @@ Before you start, make sure you have:
 - **A FlutterFlow project ID** (only if you're editing an existing project).
 ::: 
 
+:::tip[Using Claude Code?]
+The [**FlutterFlow plugin for Claude Code**](./build-with-claude-code.md) can handle the CLI install and API key setup for you, as an alternative to the manual setup below.
+:::
+
 ## Setup Workspace
 
 Open your terminal in the folder where you want the workspace to live, then run:
