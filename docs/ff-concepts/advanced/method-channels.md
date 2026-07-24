@@ -3,7 +3,7 @@ slug: /concepts/advanced/method-channels
 title: Integrating Native SDKs Using Method Channels
 description: Learn how to integrate third-party native SDKs into your FlutterFlow project using Method Channels. This guide walks through setting up channels, writing native code, and connecting it back to FlutterFlow.
 tags: [Flutter]
-sidebar_position: 1
+sidebar_position: 3
 keywords: [FlutterFlow, Flutter, Method Channels, Existing Flutter Codebases,]
 ---
 

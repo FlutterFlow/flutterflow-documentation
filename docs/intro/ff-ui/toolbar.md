@@ -44,10 +44,13 @@ Open the Command Palette by selecting the search button or pressing **Cmd/Ctrl +
 
 ![command-palette.avif](imgs/command-palette.avif)
 
+## AI Agent
+
+[AI Agent](../../ff-concepts/ai-agent.md) lets you work with AI coding agents directly from the FlutterFlow desktop app. It is helpful for making project updates with natural-language prompts, such as creating pages, adjusting widgets, wiring actions, or reviewing your project structure.
+
 ## AI Generation History
 
 The **AI Generation History** panel lets you track the status of your AI-generated items. It provides a list of all previously generated pages and components, and you can easily preview them in the panel.
-
 
 ## Project Comments
 
@@ -58,6 +61,8 @@ Project Comments let you leave thoughts, questions, or feedback on a specific wi
 To tag users, select the **@** symbol and choose the project team member(s).
 
 :::
+
+
 
 ## Project Suggestions
 

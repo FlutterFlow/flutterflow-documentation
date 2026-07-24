@@ -4,8 +4,7 @@ title: GenUI Chat
 description: Add a conversational AI surface to your FlutterFlow app that can render catalog components, call action blocks as tools, and react to local app events.
 tags: [AI, Chat, Conversational UI]
 sidebar_position: 1
-keywords: [FlutterFlow, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling
-]
+keywords: [FlutterFlow, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling]
 ---
 
 # GenUI Chat
