@@ -59,7 +59,7 @@ To set up AI Agent:
 6. After installing tools or signing in, click **Re-check** to refresh the setup status.
 7. When prompted, sign in with the account for the selected agent, such as your Anthropic account for Claude or your ChatGPT account for Codex.
 
-The selected agent runs on your own account and follows that account's usage and limits. Your conversations are processed by the local coding CLI and stored only on your Mac. FlutterFlow does not receive or store them.
+The selected agent runs on your own account and follows that account's usage and limits. The coding CLI runs locally on your Mac and sends prompts, relevant project context, and model responses through your selected agent provider. Data handling and retention follow your provider account's policies and data controls. FlutterFlow does not receive or store your conversations.
 
 <div style={{
     position: 'relative',
@@ -136,7 +136,7 @@ Select the **Settings** icon in the AI Agent panel to manage how FlutterFlow con
 - **Terminal:** Selects which terminal app FlutterFlow uses when you choose **Open in terminal** to resume an agent session.
 - **Show conversation recap:** Turns the conversation recap on or off. When enabled, FlutterFlow shows a one-line recap above the prompt after a few exchanges in a thread.
 - **Troubleshooting:** Lets you download diagnostic logs for AI Agent setup and conversations, including tool installs, workspace initialization, CLI launches, and errors. Conversations and personal data are not included in these logs.
-- **Privacy:** Confirms that conversations are processed by the coding CLI on your Mac and stored locally. FlutterFlow does not receive or store them.
+- **Privacy:** Confirms that the coding CLI runs locally and that conversations are handled according to your selected agent provider's policies and data controls. FlutterFlow does not receive or store your conversations.
 :::tip
 If the setup status does not update after installing tools or signing in, click **Re-check**. If it still does not update, restart the FlutterFlow desktop app and open the AI Agent panel again.
 :::
