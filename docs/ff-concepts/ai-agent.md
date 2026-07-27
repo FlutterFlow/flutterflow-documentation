@@ -9,6 +9,8 @@ keywords: [FlutterFlow, AI Agent, desktop app, Codex, Claude, FlutterFlow CLI, M
 
 # AI Agent
 
+![AI Agent in FlutterFlow with Codex and Claude Code](imgs/product-update.png)
+
 AI Agent lets you work with AI coding agents directly from the FlutterFlow desktop app. Instead of manually opening a terminal, navigating to your project, and configuring command-line tools yourself, FlutterFlow checks the required setup and helps prepare the tools needed to work with your project.
 
 After you choose an agent, FlutterFlow launches it with the correct project context. Depending on your selected agent, FlutterFlow may also install or verify the required CLI, initialize or reuse a local FlutterFlow AI workspace, register the FlutterFlow MCP server, and guide the agent through authentication. Once connected, you can describe the change you want, review the agent's plan, and apply updates to your project.
