@@ -1,4 +1,4 @@
----
+---cryat new project 
 slug: /before-you-begin/setup-flutterflow
 title: Setting Up FlutterFlow
 description: Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow.
