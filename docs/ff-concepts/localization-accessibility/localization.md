@@ -26,7 +26,9 @@ FlutterFlow enables you to translate all text in your app at once using Google T
 
 Adding multi-language support is essential for making your app accessible to a wider audience. For instance, if your app provides exercise instructions only in English, non-English speakers may find it hard to understand and might choose a different app, even if it’s less effective, simply because it’s available in their language. Implementing a multi-language feature helps your app succeed globally by offering a user-friendly experience for diverse audiences.
 
-To add multi-language support in FlutterFlow, navigate to **Settings and Integrations** > **Languages**, add the languages to support, set a primary language as a fallback, and optionally choose a display language. Then, use **Translate All** for automatic translations and adjust them if needed. Finally, verify translations on different pages by changing the language dropdown in the canvas.
+To add multi-language support in FlutterFlow, navigate to **Settings and Integrations** > **Languages**, add the languages to support, and set a primary language. Then, use **Translate All** for automatic translations and adjust them if needed.
+
+To preview translated content without running your app, open **Canvas Settings** next to the light and dark mode control and choose a **Display Language**. This selector is available after you add multiple languages to your project.
 
 :::warning
 
@@ -115,6 +117,14 @@ You can also add or update translations for individual text directly inside the 
 - To auto-translate for all languages, click on **Google Translate**.
 
 ![manage-translation-in-properties-panel.avif](imgs/manage-translation-in-properties-panel.avif)
+
+:::note[RichText and Combine Text]
+
+Static text in each **RichTextSpan** is translatable and appears in the Languages table like text from a standard Text widget.
+
+Text assembled with the **Combine Text** function does not appear in the Languages table and is not included in **Translate All**. If you need separately styled translatable text, use a [**RichText** widget](../../resources/ui/widgets/basic-widgets/text.md#richtext-widget) and enter the text in its RichTextSpan children.
+
+:::
 
 ## Translating Predefined Messages
 
