@@ -278,7 +278,7 @@ This registers `NewScreenActivity` so the system knows it exists.
 
 **Example 2: Requesting Permissions** 
 
-If your app requires access to restricted resources such as wake locks (to keep the device awake) or audio recording, you must declare the necessary permissions in `AndroidManifest.xml` by [manually editing](#option-2-manual-edit-mode) the file. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-custom-permission) in FlutterFlow.
+If your app requires access to restricted resources such as wake locks (to keep the device awake) or audio recording, you must declare the necessary permissions in `AndroidManifest.xml` by [manually editing](#option-2-manual-edit-mode) the file. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-a-custom-permission) in FlutterFlow.
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -538,7 +538,7 @@ Here are some scenarios where you may need to modify the `Info.plist` file:
 
 **Example 1: Requesting Permissions**
 
-If your app requires location access both while in use and in the background, you must declare the appropriate permissions in `Info.plist`. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-custom-permission) in FlutterFlow.
+If your app requires location access both while in use and in the background, you must declare the appropriate permissions in `Info.plist`. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-a-custom-permission) in FlutterFlow.
 
 ```xml
 <key>NSLocationWhenInUseUsageDescription</key>
