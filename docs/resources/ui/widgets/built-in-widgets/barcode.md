@@ -2,63 +2,57 @@
 tags: [Base Elements]
 ---
 
-
-
 # Barcode
 
-The Barcode widget is used to embed the information inside the series of lines and patterns. The data inside the barcode can be easily retried with a scanner machine, an app like [Google Lens](https://lens.google/) (Android), [Apple Camera](https://support.apple.com/en-in/HT208843) (iOS), or your [own app](#scan-barcode--qr-code-action) created using FlutterFlow.
+The **Barcode** widget converts a value into a scannable 1D or 2D barcode, such as a QR code. Use it for product identifiers, inventory labels, URLs, tickets, or onboarding links.
 
+Users can scan the generated code with a camera app or supported barcode scanner. You can also let users scan codes inside your FlutterFlow app with the [**Scan Barcode / QR Code** action](#scan-barcode--qr-code-action).
 
-It is typically used to retrieve product information quickly and accurately. For example, you could track the inventory/books (e.g., price, description, location, etc.), share website/app URL, quick onboarding process, and so on.
+![barcode-qr-code-scanning](imgs/barcode-qr-code-scanning.webp)
 
-![img_4.png](imgs/img_4.png)
+## Adding the Barcode Widget
 
+To add and configure a barcode:
 
-## Adding Barcode widget
+1. Add the **Barcode** widget from the **Base Elements** section of the Widget Palette.
+2. Set **Barcode Dimensions** to **1D Barcode** for linear formats or **2D Barcode** for formats such as QR Code, PDF417, Data Matrix, Aztec, and RM4SCC.
+3. Choose a **Barcode Type**. The available types depend on the selected **Barcode Dimensions** option. See [**Barcode Types**](#barcode-types) for a brief description of each option.
+4. Enter the data to encode under **Barcode Value**, or use **Set from Variable** to supply a dynamic value from your app state, backend, or another source.
 
-To add a Barcode widget to your app:
+Ensure that the value matches the requirements of the selected barcode type. For example, UPC formats accept specific numeric values, while QR codes can contain text or URLs.
 
-1. First, click on the **+ Add Widget**, drag the **Barcode** widget from the **Base Elements** 
-tab, or add it directly from the widget tree.
+### Barcode Types
 
-2. By default, the barcode is displayed in a linear fashion called **1D Barcode**. (i.e., a series of lines and space of various widths). To display the barcode in a matrix form, such as QR-Code, move to the properties panel and set the **Barcode Dimensions** to the **2D Barcode**.
-3. Now, you'll need to figure out the type of information you want to embed and select the **Barcode Type**. The barcode type options are available based on the *Barcode Dimensions* you selected in the previous step. For example, to label the retail products (i.e., 12 digits numeric only number), you can set it to *UPC-A* or *UPC-E*, and to embed the URL, you can set it to the *QR-Code*. If you are unsure which type to choose, [here](https://packagex.io/blog/barcode-types) is a guide to help.
-4. Finally, you can provide the data/information into the **Barcode Value** property. You can also click **Set from Variable** to set it based on the value from the app state, your backend, or any other source.
+When **1D Barcode** is selected, you can use the following types:
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/BzaX87aGYVZJgZYTYQ1d?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
+| Type | Common use |
+| --- | --- |
+| **ITF-16** | Encodes 16-digit numeric values for packaging and distribution. |
+| **ITF-14** | Identifies cartons and shipping containers using a 14-digit GTIN. |
+| **EAN 13** | Identifies retail products internationally using 13 digits. |
+| **EAN 8** | Provides a compact eight-digit product code for small packages. |
+| **EAN 5** | Adds a five-digit supplemental code, commonly used for book prices. |
+| **EAN 2** | Adds a two-digit supplemental code, often used for magazine issues. |
+| **ISBN** | Encodes an International Standard Book Number for books and publications. |
+| **Code 39** | Encodes uppercase letters, numbers, and a limited set of symbols. |
+| **Code 93** | Provides a denser, more reliable alternative to Code 39. |
+| **UPC-A** | Identifies retail products in North America using 12 digits. |
+| **UPC-E** | Provides a compact version of UPC-A for smaller packages. |
+| **Code 128** | Encodes letters, numbers, and symbols in a compact format. |
+| **GS1-128** | Encodes supply-chain data such as product, batch, and expiration details. |
+| **Telepen** | Encodes numeric or ASCII data, commonly for inventory and library systems. |
+| **Codabar** | Encodes numbers and a few symbols for libraries, blood banks, and logistics. |
+| **Interleaved 2 of 5 (ITF)** | Encodes pairs of digits for warehouse, distribution, and packaging labels. |
 
-## Customizing
+When **2D Barcode** is selected, the following types are available:
 
-You can customize the appearance and behavior of this widget using the various properties 
-available under the **Properties Panel**.
-
-### Changing size
-
-To change the size of the barcode widget, select the **Barcode** widget, move to the properties panel, find the **Width** and **Height** property and enter the values.
+| Type | Common use |
+| --- | --- |
+| **RM4SCC** | Encodes postal routing information for Royal Mail. FlutterFlow lists this format under **2D Barcode**. |
+| **QR-Code** | Stores text, URLs, contact details, and other data for quick scanning. |
+| **PDF417** | Stores larger amounts of data on IDs, tickets, and transport documents. |
+| **Data Matrix** | Encodes data in a compact square code for small items and industrial parts. |
+| **Aztec** | Stores data in a compact code that does not require a surrounding blank area. |
 
 <div style={{
     position: 'relative',
@@ -66,9 +60,9 @@ To change the size of the barcode widget, select the **Barcode** widget, move to
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/VvvoHWVQHbs2Bbe9spPy?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vdQDrbX7ITbVJBFUhA8V?embed&show_copy_link=true"
+        title="Add and Configure the Barcode Widget"
         style={{
             position: 'absolute',
             top: 0,
@@ -77,7 +71,7 @@ To change the size of the barcode widget, select the **Barcode** widget, move to
             height: '100%',
             colorScheme: 'light'
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
         webkitAllowFullScreen
         mozAllowFullScreen
@@ -86,113 +80,25 @@ To change the size of the barcode widget, select the **Barcode** widget, move to
     </iframe>
 </div>
 
-### Changing color
-
-To change barcode colors, select the **Barcode** widget, move to the properties panel, and [change the colors](../../widgets/widget-commonalities.md#change-color) for the following properties:
-
-* **Foreground Color**: This sets the line or pattern color.
-* **Background Color**: This sets the background color behind the line or pattern.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'
-}}>
-    <iframe 
-        src="https://demo.arcade.software/SWE9YosOBiXigQRbFcdl?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-
-### Show barcode text
-
-You can also display the actual data below the barcode by enabling the **Show Text** property. 
-
-:::info[Note]
-This option is only available when using the *1D Barcode*.
-:::
-
-
-## Scan Barcode / QR code [Action]
-
-Using this Action, you open a barcode or QR code interface and scan a code using the device camera.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tI9UOnpYhVyOrvxhmAuo?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
 <p></p>
 
-Follow the steps below to define a Scan Action to any widget.
+## Customizing the Barcode Widget
 
-1. Select **Actions** from the Properties panel (the right menu)
-2. Click **+ Add Action** button
-3. Choose a gesture from the dropdown among ***On Tap**, **On Double Tap**, or* **On Long Press**
-4. Select the **Action Type** as ***Scan Barcode/QR code**.*
-5. If you check the **Barcode Mode** checkbox then the UI will look like a barcode scanner. Otherwise, the UI will be like a QR code scanner.
-6. **Cancel button text** would be ***Cancel*** by default, but you can specify any other text if you want.
-7. In the **Output Variable Name** field, you can specify the name of the variable where the scanned text would be saved and then you can access it via the **Set from Variable menu > Action Outputs > [Action Output Variable Name]**.
+Select the **Barcode** widget and use the Properties panel to customize its appearance:
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Uk6JLbnrMDFFAACn5No6?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+- **Width and Height:** Set the widget's dimensions.
+- **Foreground Color:** Set the color of the barcode lines or pattern.
+- **Background Color:** Set the color behind the barcode.
+- **Show Text:** Display the encoded value below a 1D barcode. This option is not available for 2D barcodes.
 
+## Scan Barcode / QR Code [Action]
 
+The **Scan Barcode / QR Code** action opens a camera interface that lets users scan a code and use its value in your app.
 
+To configure the action:
+
+1. Select the widget that should start the scan and open the [**Action Flow Editor**](../../../control-flow/functions/action-flow-editor.md).
+2. Add the **Scan Barcode / QR Code** action to the desired trigger.
+3. Enable **Barcode Mode** to display a barcode-style scanner overlay, or leave it disabled to display a QR code-style scanner overlay.
+4. Optionally, customize the **Cancel Button Text**. The default text is **Cancel**.
+5. Enter an **Output Variable Name** to store the scanned value. You can access it in subsequent actions by selecting **Set from Variable > Action Outputs**.
