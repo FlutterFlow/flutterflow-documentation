@@ -22,6 +22,13 @@ dart pub global activate flutterflow_cli
 ### Get API Token
 To use the CLI, you'll need to create an API token and use it in your requests. See the documentation [here on how to generate an API token.](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token)
 
+:::tip[Building with Codex?]
+
+Install the FlutterFlow plugin for secure onboarding and a guided create, edit,
+and export workflow. See [Build with Codex](./build-with-codex.md).
+
+:::
+
 
 ## FAQ
 <details>

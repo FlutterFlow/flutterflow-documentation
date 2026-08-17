@@ -33,6 +33,8 @@ either drag it to your desired location on the screen or insert it directly via 
 
 When the RichText widget is added to your widget tree, FlutterFlow automatically creates two RichTextSpan child objects. You can modify the text value and styling of each object to create multiple styles within your paragraph.
 
+Static text entered in a RichTextSpan is translatable and appears in the Languages table. In contrast, text assembled with the [**Combine Text** function](../../../control-flow/functions/utility-functions.md#combine-text) does not appear in the Languages table or **Translate All**.
+
 To modify the RichTextSpan objects, see the quick demo below: 
 
 

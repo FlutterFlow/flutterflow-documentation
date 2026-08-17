@@ -83,6 +83,9 @@ The **Combine Text** built-in function only allows you to combine multiple value
 static)
 together, with the same text style applied to all of them. If you need to combine multiple String
 values with different text styles for each, consider using the **[RichText](../../ui/widgets/basic-widgets/text.md#richtext-widget)** widget.
+
+Text assembled with **Combine Text** does not appear in the Languages table and is not included in
+**Translate All**. Static text in RichTextSpan children is translatable.
 :::
 
 
