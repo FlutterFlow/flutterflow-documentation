@@ -2,112 +2,48 @@
 slug: datatable
 title: DataTable
 tags: [Layout Elements]
-description: Learn how to add DataTable widget in your FlutterFlow project.
+description: Learn how to add, populate, sort, search, select, paginate, and style a DataTable widget in FlutterFlow.
 ---
 
-# DataTable (Paginated)
+# DataTable
 
-The DataTable is a widget used to display data in a table format. It organizes information into rows and columns, similar to a spreadsheet, making it easier to read and understand large amounts of data.
+The DataTable widget displays structured data in rows and columns. It is useful for presenting datasets such as employee directories, inventories, orders, and reports.
 
-For example, you could use it to display a list of employees in a company, with each row representing an individual employee and the columns showing the employee's name, age, department, and salary.
+The DataTable can be configured with pagination, sorting, searching, row selection, and horizontal scrolling for smaller screens.
 
-Additionally, this widget supports pagination, which can handle large datasets by displaying them in manageable chunks.
+![A paginated DataTable displaying employee records](imgs/paginated-data-table-fi.avif)
 
-![paginated-data-table-fi](imgs/paginated-data-table-fi.avif)
+## Adding the DataTable Widget
 
-## Adding DataTable widget
+1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate **DataTable** under **Layout Elements**.
+2. Drag the widget onto the canvas or add it from the Widget Tree.
+3. Configure the two predefined child widgets:
+   - **DataTableHeader** defines a column heading. Select its **Text** widget to change the heading.
+   - **DataTableCell** displays a value in each generated row. It contains a Text widget by default, but you can replace it with another widget.
+4. To change the number of columns, select the DataTable and set **Paginated Data Table Properties > Number of Columns**.
 
-Let's see how to add a DataTable widget by building an example that shows a list of all employees in a company. Here's how it looks:
+![DataTableHeader and DataTableCell widgets identified with arrows](imgs/data-table-header.avif)
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/d1f36643d8694242b5b049cc9c8b5a28?sid=efbfc0e4-5e26-47e5-a23b-cc7b6a8ecd74"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+### Populating the DataTable with Data
 
-The steps to add DataTable and display the employees' details are:
+The following example displays employee records retrieved from Firestore:
 
-1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DataTable** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
-2. It adds two types of predefined widgets:
-    1. **DataTableHeader**: This refers to the top row of the table, which displays the names of the columns. To change its text, click on the **DataTableHeader > Text** widget, move to the properties panel and give it a name.
-    2. **DataTableCell**: This displays the actual data. By default, it comes with the Text widget. However, you can replace it with any other widget based on your requirements.
-    ![data-table-header](imgs/data-table-header.avif)
-        
-3. By default, it shows three columns. To show more, select the **DataTable** widget, move to the **properties panel > Paginated Data Table Properties >** enter the **Number of Columns** you want.
-4. For the demonstration purpose, let's display data from Firestore:
-    1. First, ensure you have created a collection.
-    2. *It's **important to note** that, unlike other widgets, you cannot directly have a backend query on the DataTable widget. Because if you do so, you won't have access to the query result (list of employees) for further use, such as sorting and searching. Hence, getting the backend query result on a parent widget and then using that result to populate DataTable is advisable.*
-    3. For this example, on page load, we'll add a Query Collection action and save the result in a page state variable.
-    4. On the **DataTable** widget, generate dynamic children using the page state variable (which holds a list of employees).
-    5. Display data in the **DataTableCell > Text**.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b2482c7f3fbe422890bd66756cd8ed79?sid=d9c6844c-2ad7-4134-bc2f-d950220adf2d"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-## Sorting
-
-The way sorting works in a DataTable is as follows: first, you mark the column to sort. Then, whenever a user clicks on a header, you receive an *OnSortChanged* callback with two properties: `Sorted Column Index` and `Is Ascending`. You consume both properties in a custom function to write a sorting logic.
-
-- **`Sorted Column Index`** specifies the column by which the data should be sorted (0 for first column, 1 for the second column and so on).
-- **`Is Ascending`** determines the sort direction (true for ascending order, false for descending order).
+1. Retrieve the records by adding a [Query Collection](../../../../resources/control-flow/backend-logic/backend-query/query-collection.md) to a parent widget, such as the Page or Column. Alternatively, run a **Query Collection** action when the page loads and store its result in [page state](../../../../resources/ui/pages/page-lifecycle.md#page-state).
+2. Select the DataTable and [generate dynamic children](../composing-widgets/generate-dynamic-children.md) from the retrieved list.
+3. Select each **DataTableCell > Text** widget and bind it to the appropriate field in the current record.
 
 :::info
-**Remember**, sorting is not performed automatically by the DataTable widget. It provides you the flexibility to implement your own sorting logic through a Custom Function.
+Retrieve the data from a parent widget or an action instead of querying directly on the DataTable. This keeps the complete list available for operations such as sorting, searching, and row selection. See [**Backend Query**](../../../../resources/control-flow/backend-logic/backend-query/backend-query.md) for more information.
 :::
-
-Let's extend the previous example and see how you can enable sorting on columns. Here's how it looks:
 
 <div style={{
     position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    paddingBottom: 'calc(56.67989417989418% + 41px)',
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/51a2638b7cb6449db8781b00dc10cb74?sid=ad7e146a-fef0-43e5-a53d-1d60271298a8"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dOEkowW7SmuMOZ0J8gCS?embed&show_copy_link=true"
+        title="Populate a DataTable with Firestore records"
         style={{
             position: 'absolute',
             top: 0,
@@ -126,40 +62,102 @@ Let's extend the previous example and see how you can enable sorting on columns.
 </div>
 <p></p>
 
-To enable sorting:
+:::tip[Tables on smaller screens]
+Set **Min Width** when the columns need more space than the available width of the screen. This enables horizontal scrolling and prevents cell content from becoming too narrow. See [**Setting a Minimum Width**](#setting-a-minimum-width) for details.
+:::
 
-1. Select the **DataTableHeader**, move to the **Properties Panel**, and turn on the **Sortable** toggle. Apply this to each column you want to sort
-2. Select the DataTable widget, select **Actions** from the Properties panel, and open **Action Flow Editor**.
-3. Select the **On Sort Changed**. Actions added under this will be triggered whenever the user clicks on any column header that has sorting enabled.
-4. For this example, we update the same page state variable (that populates the DataTable) with the sorted data using the following custom function.
+## Searching the DataTable
 
+Use [Simple Search](../../../../ff-integrations/search/simple-search.md) to filter records that are already available on the device:
 
-```dart
-List<EmployeesRecord> sortMyData(
-  List<EmployeesRecord> listToSort,
-  bool isAsc,
-  int sortColumIndex,
+1. Add a TextField where users can enter a search term.
+2. Add the **Simple Search** action to an appropriate TextField event, such as **On Changed** or **On Submit**.
+3. Select **Documents** as the search type and use the complete list of records as the source.
+4. Set **Search Term** from the TextField's widget state and choose the fields that users can search.
+5. Store the search result in page state.
+6. When generating the DataTable rows, use a [Conditional Value](../../../../resources/control-flow/functions/conditional-logic.md#conditional-value-ifthenelse) to display the complete list when the search term is empty and the filtered list otherwise.
+7. When the user clears the TextField, clear the stored search result so the DataTable displays the complete list again.
+
+:::warning
+Simple Search is intended for smaller datasets that have already been retrieved. For large datasets, perform the search through your backend or a dedicated search service.
+:::
+
+## Selecting Rows
+
+Enable row selection when users need to perform an action on one or more records, such as editing, deleting, or exporting them.
+
+1. Create a [page state](../../../../resources/ui/pages/page-lifecycle.md#creating-a-page-state) variable that stores a list of the selected records.
+2. Select the DataTable and enable **Paginated Data Table Properties > Selectable**.
+3. On the button that processes the selection, add an [Update Page State](../../../../resources/ui/pages/page-lifecycle.md#update-page-state-action) action.
+4. Get the selected indices from **Widget State > DataTable Selected Rows**. Pass them and the list currently generating the DataTable rows to a [custom function](../../../../ff-concepts/adding-customization/custom-functions.md). If the table is filtered or sorted, use that filtered or sorted list rather than the original list.
+
+For example, the following function returns the employee records at the selected indices:
+
+```jsx
+List<EmployeesRecord> getSelectedEmployees(
+  List<EmployeesRecord> employees,
+  List<int> selectedIndices,
 ) {
   /// MODIFY CODE ONLY BELOW THIS LINE
 
-  // Sort by 'name' for 0, 'age' for 1, 'position' for 2 in code.
-  switch (sortColumIndex) {
+  return selectedIndices
+      .where((index) => index >= 0 && index < employees.length)
+      .map((index) => employees[index])
+      .toList();
+
+  /// MODIFY CODE ONLY ABOVE THIS LINE
+}
+```
+
+## Handling DataTable Events
+
+Add actions to DataTable events from the **Actions** tab in the Properties Panel.
+
+### On Sort Changed
+
+**On Sort Changed** runs when a user selects a column header that has sorting enabled. It provides:
+
+- **Sorted Column Index**: The zero-based index of the selected column. For example, `0` represents the first column.
+- **Is Ascending**: Whether the selected sort direction is ascending.
+
+To add sorting:
+
+1. Select each **DataTableHeader** that users can sort and enable **Sortable**.
+2. Select the DataTable and add an action under **On Sort Changed**.
+3. Pass **Sorted Column Index**, **Is Ascending**, and the list currently generating the DataTable rows to a custom function.
+4. Update the page state variable that generates the DataTable rows with the function result.
+
+:::info
+The DataTable reports the selected column and direction but does not sort the records automatically. Your action must update the list used to generate the rows.
+:::
+
+The following example sorts a copy of the employee list without modifying the input list:
+
+```jsx
+List<EmployeesRecord> sortEmployees(
+  List<EmployeesRecord> employees,
+  bool isAscending,
+  int sortColumnIndex,
+) {
+  /// MODIFY CODE ONLY BELOW THIS LINE
+
+  final sortedEmployees = List<EmployeesRecord>.from(employees);
+
+  switch (sortColumnIndex) {
     case 0:
-      listToSort.sort((a, b) => a.name.compareTo(b.name));
+      sortedEmployees.sort((a, b) => a.name.compareTo(b.name));
       break;
     case 1:
-      listToSort.sort((a, b) => a.age.compareTo(b.age));
+      sortedEmployees.sort((a, b) => a.age.compareTo(b.age));
       break;
     case 2:
-      listToSort.sort((a, b) => a.position.compareTo(b.position));
-      break;
-    default:
+      sortedEmployees.sort((a, b) => a.position.compareTo(b.position));
       break;
   }
-  if (!isAsc) {
-    listToSort = listToSort.reversed.toList();
-  }
-  return listToSort;
+
+  return isAscending
+      ? sortedEmployees
+      : sortedEmployees.reversed.toList();
 
   /// MODIFY CODE ONLY ABOVE THIS LINE
 }
@@ -167,12 +165,12 @@ List<EmployeesRecord> sortMyData(
 
 <div style={{
     position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    paddingBottom: 'calc(56.67989417989418% + 41px)',
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/986d4e2234c0439186461643067eca03?sid=b1de27ba-8f84-43e8-93c9-819f0d38cbbd"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iVqvQIIwJqEQgvhQCoCu?embed&show_copy_link=true"
+        title="Sort records in a DataTable"
         style={{
             position: 'absolute',
             top: 0,
@@ -191,15 +189,57 @@ List<EmployeesRecord> sortMyData(
 </div>
 <p></p>
 
-## Searching
+### On Page Changed
 
-You can add search functionality to the DataTable widget using our Simple Search feature. However, for this specific widget, instead of using a [Conditional Builder](../../../../ff-concepts/layout/responsive-widgets/conditional-builder-widget.md) widget, you can directly utilize the [Conditional Value](../../../../resources/control-flow/functions/conditional-logic.md#conditional-value-ifthenelse) to determine which result to display based on the `IsShowFullList` variable.
+**On Page Changed** runs when a user navigates to another table page. It provides **Current Row Index**, the zero-based index of the first row on the new table page. For example, when each table page contains 25 rows, the second table page starts at index `25`.
 
-![searching-through-table](imgs/searching-through-table.avif)
+For an API that uses offset-based pagination:
 
-## Selecting rows
+1. Add an API call action under **On Page Changed**.
+2. Pass **Current Row Index** as the API's `offset` query parameter.
+3. Pass the configured rows-per-page value as the API's `limit` query parameter.
+4. Use the API result to update the list displayed by the DataTable.
 
-You might want to allow users to select one or more of its rows for tasks like editing, deleting, or performing specific actions on the selected data. For example, preparing a list of promoted employees from the main employee listing.
+See [Query Parameters](../../../../resources/control-flow/backend-logic/api/rest-api.md#query-parameters) for information about passing dynamic values to an API call.
+
+### On Rows Per Page Changed
+
+**On Rows Per Page Changed** runs when a user changes how many rows the DataTable displays on each page.
+
+For an API-backed DataTable:
+
+1. Select the DataTable and add an action under **On Rows Per Page Changed**.
+2. Use the event's rows-per-page value to update the API's `limit` or the corresponding page state variable.
+3. Reset the stored pagination offset to `0`.
+4. Call the API again and update the list displayed by the DataTable.
+
+## Customizing the DataTable
+
+Select the DataTable and use the Properties Panel to configure the following options.
+
+### Paginated Data Table Properties
+
+- **Number of Columns** sets the number of columns in the table.
+- **Number of Rows (Optional)** sets the total number of rows in the DataTable. Leave it unset to use the number of generated rows.
+- **UI Builder Number of Rows (Optional)** sets how many sample rows appear on the canvas while designing the page. It does not limit the rows displayed in the running app.
+- **Paginated** displays the rows across multiple pages. Disable it to use a regular DataTable without pagination.
+    - **Hide Paginator** hides the pagination controls.
+    - **Show First And Last Buttons** adds shortcuts to the first and last pages.
+- **Selectable** allows users to select one or more rows.
+    - **Rebuild Page on Select** appears when **Selectable** is enabled. Enable it to rebuild the page whenever the row selection changes, allowing other widgets that depend on the selection to update immediately.
+
+### Layout Properties
+
+- **Table Width** and **Table Height** control the overall table dimensions. You can set these values in pixels or as percentages.
+- **Header Row Height** controls the height of the column-header row.
+- **Data Row Height** controls the height of each data row.
+- **Column Spacing** controls the horizontal space between columns.
+
+### Setting a Minimum Width
+
+Under **Layout Properties**, set **Min Width** to define the minimum width of the DataTable. You can enter the value in pixels or as a percentage.
+
+If the DataTable's minimum width exceeds the available screen width, the table becomes horizontally scrollable. This prevents column content from being compressed or wrapped excessively on smaller screens.
 
 <div style={{
     position: 'relative',
@@ -207,8 +247,8 @@ You might want to allow users to select one or more of its rows for tasks like e
     height: 0,
     width: '100%'}}>
     <iframe 
-        src="https://www.loom.com/embed/4bf473b71fee46dc988647b035fe469e?sid=7bbbf2a8-5d03-4eb8-b356-1e660ed09b67"
-        title=""
+        src="https://demo.arcade.software/GTTHfFdAgxi7gpKG2YBA?embed&show_copy_link=true"
+        title="Set a minimum width for a DataTable"
         style={{
             position: 'absolute',
             top: 0,
@@ -227,316 +267,32 @@ You might want to allow users to select one or more of its rows for tasks like e
 </div>
 <p></p>
 
-To achieve this, create a page state variable to store the selected list. Upon button click, update this variable with the chosen selections from the DataTable. **Note that** the DataTable provides a list of selected row indices; you'll need a [custom function](../../../../ff-concepts/adding-customization/cloud-functions.md) to retrieve the actual rows corresponding to these indices.
+### Style Properties
 
-Here are the exact steps:
+- **Header Row Color** sets the background color of the header row.
+- **Row Color** sets the background color of the data rows.
+- **Alternate Row Color** applies a different background color to alternating rows.
+- **Sort Icon Color** sets the color of the icon displayed on sortable columns.
+- **Border Radius** sets the radius of each corner. Use the uniform option to apply the same value to every corner.
 
-1. First, create a [page state](../../../../resources/ui/pages/page-lifecycle.md#creating-a-page-state) variable that will hold the list of selected rows.
-2. Select the **DataTable**, move to the **Properties Panel > Paginated Data Table Properties >** turn on the **Selectable** toggle.
-3. On button click, [update the page state](../../../../resources/ui/pages/page-lifecycle.md#update-page-state-action) variable with the selected rows. While adding this action, use the following custom function to retrieve the selected items based on the indices. You can get the list of selected rows indices via **Widget State > DataTable Selected Rows**.
-4. Optionally, you could pass this variable to a new page to display the selection.
+### Dividers
 
-Custom function:
+- Enable **Hide Default Dividers** to remove the DataTable's default row dividers.
+- Enable **Add Horizontal Dividers** or **Add Vertical Dividers** to add custom separators between rows or columns. After enabling either option, configure its **Color** and **Thickness**.
 
-```dart
-List<EmployeesRecord> findPromotedEmps(
-  List<EmployeesRecord> allEmps,
-  List<int> selecteEmpsIndex,
-) {
-  // MODIFY CODE ONLY BELOW THIS LINE
-  // return allEmps based on selecteEmpsIndex
-  List<EmployeesRecord> promotedEmps = [];
-  for (int i = 0; i < selecteEmpsIndex.length; i++) {
-    int index = selecteEmpsIndex[i];
-    if (index >= 0 && index < allEmps.length) {
-      EmployeesRecord emp = allEmps[index];
-      promotedEmps.add(emp);
-    }
-  }
-  return promotedEmps;
-  /// MODIFY CODE ONLY ABOVE THIS LINE
- }
-```
+### Checkbox Colors
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/3cb325a0fd7e4dc486bcaffe8493c40b?sid=8bcfb4fb-45f7-46d7-8077-6f5c7b9ff543"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+When **Selectable** is enabled, configure:
 
-## Get notified on page changed
+- **Selected Fill Color** sets the checkbox background when a row is selected.
+- **Unselected Fill Color** sets the checkbox background when a row is not selected.
+- **Selected Border Color** sets the checkbox border when a row is selected.
+- **Unselected Border Color** sets the checkbox border when a row is not selected.
+- **Check Color** sets the color of the checkmark inside a selected checkbox.
 
-You might want to get a callback whenever a user taps on the next page of the DataTable. For example, to make an API call to retrieve the data for the next page.
+## Best Practices
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f9d6fe3e1aab4699bd72f8adb4112adc?sid=ffdf6a9a-4fb0-491e-a486-25a5f205eb9d"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-To do so:
-
-1. Select the **DataTable** widget.
-2. Select **Actions** from the Properties panel and open **Action Flow Editor**.
-3. Select **On Page Changed**. This callback gives you the **Current Row Index**, which is the index of the first row of a new page. For example, if you have 25 items (0-24) on the current page, the **Current Row Index** value will be 25. This is helpful in APIs that fetch a fixed set of data by specifying a starting position ([offset](https://developer.box.com/guides/api-calls/pagination/offset-based/)).
-4. Now, add an action to call the paginated API (that returns the result in chunks). See [how to add the paginated API](../../../../resources/control-flow/backend-logic/api/rest-api.md#query-parameters) call by adding query parameters. For this example, we use this API: https://reqres.in/api/users?per_page=7&page=1. **Note**: this API uses page-based rather than offset-based pagination, requiring manual adjustment of the page variable.
-5. On the success of the API call, you can add an action to append the new data in the current list. For this, you can add the following custom function to add new results to existing data.
-
-```dart
-List<UserStruct> addAlldatatoList(
-  List<UserStruct> currentUsersList,
-  List<UserStruct> newUsersList,
-) {
-  /// MODIFY CODE ONLY BELOW THIS LINE
-
-  // add all newUsersList to currentUsersList
-  currentUsersList.addAll(newUsersList);
-  return currentUsersList;
-
-  /// MODIFY CODE ONLY ABOVE THIS LINE
-}
-```
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/cd394eb88b6a45c098303c8ec18e860f?sid=19940ba6-ec30-456d-a506-614f516f0d34"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-## Get notified on rows per page changed
-
-Sometimes, you might want to get a callback when a user changes the number of rows to display on a page. This is helpful for dynamically adjusting data fetch requests based on user preferences.
-
-This is how you do it:
-
-1. Select the **DataTable** widget.
-2. Select **Actions** from the **Properties panel** and open **Action Flow Editor**.
-3. Select **On Rows Per Page Changed**. Any actions added under this will be triggered when the number of displayed rows is changed.
-4. Now, you can add any action here.
-
-![get-notified-on-row-changed-per-page](imgs/get-notified-on-row-changed-per-page.avif)
-
-## Customizing
-
-You can customize the appearance and behavior of this widget using the various properties available under the properties panel.
-
-### Configure paginated DataTable
-
-To configure the paginated DataTable, move to the **Properties Panel > Paginated Data Table Properties** and then:
-
-- To hide the pagination, turn on the **Hide Paginator** toggle.
-- To display buttons to navigate to the first and last page of the DataTable, turn on the **Show First And Last Buttons**.
-- To have a normal DataTable without pagination, turn off the **Paginated** toggle.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/74fe050b18c84201b93ecf02638ba24a?sid=b627f723-944e-4c32-a992-0c0b61b0d1fe"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-
-:::info
-Typically, setting the size explicitly isn't necessary for a DataTable, as it's designed to showcase large datasets and should utilize all available space. However, to enable horizontal scrolling in the DataTable (when content exceeds screen width), you must specify the **Min Width**.
-:::
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/8becc08d97a5406c9dc7dea965b3f900?sid=6636dbbf-533c-432e-a522-cf6570c16d1e"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-### Adjust row and column spacing
-
-To modify the row and column spacing, move to the **Properties Panel > Layout Properties** and then tweak the following properties:
-
-- **Header Row Height**: This changes the height of the header.
-- **Data Row Height**: This changes the height of all the rows.
-- **Column Spacing**: This changes the distance between columns.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/d228893463584bdca8c40d5ecf7e0d82?sid=78a089f6-c5e3-4112-888c-341caeb3f288"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-### Customize DataTable color
-
-To modify the DataTable color, navigate to the **Properties Panel > Style Properties**, where you can set colors for various elements:
-
-- **Header Row Color**: This changes the background color of the header row.
-- **Row Color**: This sets the background color for all rows.
-- **Alternate Row Color**: This allows for a different background color for alternate rows.
-- **Sort Icon Color**: This alters the color of the sort icon used in sortable columns.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b6c3b63f18474f2bb806da541c94e18c?sid=b9bdc710-f032-4154-a5ec-eb0cafa4fb28"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-### Adjust border radius
-
-To add the rounded corner to the DataTable, navigate to the **Properties Panel > Style Properties > Border Radius** and then:
-
-1. Enter values for TL (Top left), TR (top right), BL (bottom left), and BR (bottom right).
-2. To apply the same radius on all sides, switch to the **Uniform Radius** option. You can then adjust the radius by either moving the slider or entering the desired value directly.
-
-![adjust-row-border](imgs/adjust-row-border.avif)
-
-### Add dividers
-
-To add horizontal and vertical dividers inside the DataTable, navigate to the **Properties Panel > Style Properties >** turn on the **Horizontal** and **Vertical Dividers**.
-
-After enabling, you can also change its **Color** and **Thickness**.
-
-![add-dividers](imgs/add-dividers.avif)
-
-### Customize checkbox colors
-
-When rows are selectable, you can customize the appearance of the checkbox by adjusting the following color properties:
-
-- **Selected Fill Color**: Sets the background color of the checkbox when it is selected.
-- **Unselected Fill Color**: Sets the background color of the checkbox when it is not selected.
-- **Unselected Border Color**: Changes the border color of the checkbox when it is not selected.
-- **Selected Border Color**: Changes the border color of the checkbox when it is selected.
-- **Check Color**: Alters the color of the checkbox mark itself when selected, providing visual feedback to users about their selection status.
+- Keep column headings short and descriptive.
+- Align numeric values consistently so users can scan and compare them quickly.
+- Limit the number of visible columns on smaller screens. For complex mobile layouts, consider displaying each record in a **ListView** or **Card** instead.
+- Choose a rows-per-page value that keeps the table readable without requiring excessive navigation.
