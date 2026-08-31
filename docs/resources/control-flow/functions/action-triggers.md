@@ -68,7 +68,7 @@ Certain widgets offer specific triggers that activate based on user interactions
 - **On Page Swipe**: Available on the PageView widget to trigger actions when the page is swiped.
 - **On Toggle**: Available on the ToggleIcon widget, this trigger responds each time the toggle is activated.
 - **On Completed, On Change**: Specific to the PinCode widget, these triggers activate when the user completes or alters a pin entry.
-- **On Count Changed**: Present in the CountController widget, this trigger responds to changes in the count.
+- **On Count Changed**: Present in the Count Controller widget, this trigger responds to changes in the count.
 
 ## Gesture Detector Triggers
 
