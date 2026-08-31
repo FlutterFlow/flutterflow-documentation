@@ -1,47 +1,61 @@
 ---
 slug: card
 tags: [Layout Elements]
+description: Learn how to add and customize a Card widget in FlutterFlow.
 ---
 
 # Card
 
-The [Card](https://api.flutter.dev/flutter/material/Card-class.html) widget is used to represent some related information in a box with rounded corners and a slight shadow for a 3D effect. For example, you can use a Card widget to show a Business card, restaurant information, movie details, etc.
+The [Card](https://api.flutter.dev/flutter/material/Card-class.html) widget displays related content on a surface with rounded corners and a shadow. Use it for product details, restaurant details, profiles, or other content that should appear as a single item.
 
-The Card widget is often used with a List to display the item information for a specific record.
+![Card widgets used for products and team profiles](imgs/card-widget-use-cases.avif)
 
-![img.png](imgs/img.png)
+## Adding a Card Widget
 
-## Adding Card Widget
+To add a Card widget:
 
-Here's an example of how you can use a Card widget in your project:
+1. Add the **Card** widget from the **Layout Elements** section of the [Widget Palette](../../../../intro/ff-ui/widget-palette.md).
+2. Add a layout widget, such as a **Row** or **Column**, as its child.
+3. Add and arrange the content inside the layout widget.
 
-1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **Card** 
-   widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
-2. Start with adding a `Row` or `Column` widget inside the Card and build the UI as per your requirements.
-
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/c2827a818b9549da997adf5e45e85f0f?sid=555f628d-9dbd-4874-9237-2c2b9b679c84" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-
-## Customizing
-
-You can customize the appearance and behavior of this widget using the various properties 
-available under the Properties Panel.
-
-### Styling the Card
-
-Styling helps you customize a widget that matches your design. The Card widget allows you to customize the background color, elevation, and rounded corners.
-
-Here's how you stylize the Card widget:
-
-1. Select the **Card** widget and move to the **Properties Panel > Card Properties**.
-2. To change the background color, [modify the Color](../../widgets/widget-commonalities.md#change-color) property.
-3. To change the elevation (depth or Z-axis), enter the value in the **Elevation** property.
-4. To create the rounded border, use the **Border Radius** property. For uniform curvature on all sides, use the **Uniform Radius** option by sliding the adjustment bar or inputting your preferred value directly.
-
+<div style={{
+    position: 'relative',
+    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    height: 0,
+    width: '100%'}}>
+    <iframe
+        src="https://demo.arcade.software/qKDu4ZWB9UbIk1lMlp9a?embed&show_copy_link=true"
+        title="Add a Card Widget"
+        style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            colorScheme: 'light'
+        }}
+        frameBorder="0"
+        loading="lazy"
+        webkitAllowFullScreen
+        mozAllowFullScreen
+        allowFullScreen
+        allow="clipboard-write">
+    </iframe>
+</div>
 <p></p>
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/8a33e1d3778d4d5ca35419966364b576?sid=6cde742f-b0b4-4385-bdf0-8d499df04c29" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+## Card vs Container
 
+Use a **Card** when you want a Material-style surface with built-in elevation, rounded corners, and a background color. Use a [**Container**](../basic-widgets/container.md) when you need more control over dimensions, alignment, borders, gradients, or other decorations.
+
+## Using Cards with Dynamic Data
+
+To display repeated records, place a **Card** inside a **ListView** or **GridView**, then [**generate dynamic children**](../composing-widgets/generate-dynamic-children.md) from a list or backend query. Bind the widgets inside the Card to the current item to show information such as a product image, name, price, or user profile.
+
+## Customizing a Card Widget
+
+Select the **Card** widget and use the **Card Properties** section to customize its appearance:
+
+- **Color:** Sets the card's background color.
+- **Elevation:** Controls the card's shadow and visual depth. Use `0` to remove the shadow.
+- **Border Radius:** Rounds the card's corners. Apply one value to every corner or configure each corner separately.
