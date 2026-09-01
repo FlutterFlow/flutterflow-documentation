@@ -1,213 +1,116 @@
 ---
+slug: draggable
+title: Draggable and DragTarget
 tags: [Base Elements]
+description: Learn how to build drag-and-drop interactions with the Draggable and DragTarget widgets in FlutterFlow.
 ---
 
-# Draggable + DragTarget
+# Draggable and DragTarget
 
-The Draggable widget is used to make a widget that can be dragged and dropped to a different location within the app. It allows users to interact with the app by moving an item using touch gestures or a mouse. The DragTarget widget is used in conjunction with the Draggable widget to specify where a dragged item can be dropped. It creates a region that can accept the data carried by the Draggable widget.
-
-When an item is dragged over a DragTarget, the DragTarget has the opportunity to determine whether it can accept the item. If it accepts, it can then trigger actions such as updating the app's state to reflect the change.
-
-For example, in a shopping cart app, you could use these widgets together to allow users to add items to their cart by dragging and dropping them onto a cart icon.
-
-## Adding Draggable and DragTarget Widgets
-
-Let's see how to add a drag-and-drop functionality by building an example that allows users to put only plants on the shelf. Here's how it looks:
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/68dcc413ad664a7e887e4e305aaec6c2?sid=59c1dcf4-2b71-4dd4-9f13-4cee933bcaf4"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-<p></p>
-
-The steps to build such an example are as follows:
-
-### 1. Create page state variable
-
-In this example, we have two images of a shelf: one with empty space for one plant and another 
-with all plants on the shelf. To control which image to show based on whether the correct item 
-is dropped on the shelf, we need a 
-[page state variable](../../pages/page-lifecycle.md#page-state). 
-Therefore, 
-[create a page state variable](../../pages/page-lifecycle.md#creating-a-page-state)
-named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
+The **Draggable** and **DragTarget** widgets let users move items from one place to another in your app. Use **Draggable** for the item that can be moved and **DragTarget** for the area where it can be dropped. For example, users can sort items, move tasks between columns, or drag products into a cart.
 
 <figure>
-    ![img_1.png](imgs/img_1.png)
-  <figcaption class="centered-caption">Control image display based on page state variable</figcaption>
+  ![A task card moving from a Draggable widget to a highlighted DragTarget area.](imgs/draggable-dragtarget-overview.png)
+  <figcaption class="centered-caption">A Draggable item moving to a DragTarget</figcaption>
 </figure>
 
-### 2. Add Draggable widgets
+## How Draggable and DragTarget Work
 
-Let's add the draggable widgets and specify the data for each widget. This data will later be used to determine if the correct item is being dropped on the shelf. For instance, you can assign a unique identifier or a type attribute (e.g., plant, spoon, toy) to each draggable widget.
+A drag-and-drop interaction has three parts:
 
-:::note
-As we proceed in this section, you'll learn how this information is crucial for the DragTarget widget to evaluate whether the item being dropped matches the expected type for the shelf.
-:::
+1. The user starts dragging the child of a **Draggable** widget.
+2. The Draggable carries its configured data **Value**.
+3. A **DragTarget** with a matching data **Type** receives the value and runs the appropriate event actions.
 
-In this example, the draggable items are a plant, a spoon, and a football. Let's see how to add them:
+The data type controls compatibility between the widgets. The value identifies the dragged item and can be validated before the app updates its state.
 
-1. Inside the **Row** widget, add 
-**Draggable** widgets directly from the widget tree or canvas area.
-2. Inside the **Draggable** widget, you can add any widget as a child widget. For this example, we use the **Image** widget.
-3. To add data to draggable widgets, select the **Draggable widget > Properties Panel > Draggable Properties >** specify the **Type** of the data and its **Value**.
+## Adding a Draggable Widget
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/09755c639a8f4aaaa2ea2df8bb8b0324?sid=c4738082-d7ee-4e9b-8940-e887334e476b"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+1. Add a **Draggable** widget from the [Widget Palette](../../../../intro/ff-ui/widget-palette.md).
+2. Add the widget that users should drag, such as an **Image**, **Container**, or **Card**, as its child.
 
-:::info
-The Draggable widget also provides you with various drag events (as [**Action Triggers**](../../../control-flow/functions/action-triggers.md)) that you might want to use to customize the drag experience. These include:
+### Setting the Draggable Data
 
-- **On Drag Started**: Gets triggered when the user initiates a drag operation.
-- **On Drag Update**: Gets triggered when the drag is currently in progress, allowing you to track its movement or update other UI elements accordingly.
-- **On Drag Completed**: Gets triggered when the user successfully drags and drops the widget into [**DragTarget**](#3-add-dragtarget-widget) widget.
-- **On Drag Cancelled**: Gets triggered when the drag operation is aborted, such as when the user releases the widget outside a **DragTarget** or the DragTarget rejects the widget.
-- **On Drag End**: Gets triggered when the drag operation finishes, regardless of whether it was completed or cancelled.
-:::
+- **Type:** Defines the kind of data carried by the widget. This must match the Type configured on the intended DragTarget.
+- **Value:** Contains the data passed to the DragTarget. It can be static or set from a variable.
 
-### 3. Add DragTarget widget
+For simple interactions, the value can be a string or number that identifies the item. Use a custom data type when the target needs multiple related values, such as a product ID, name, and price.
 
-The DragTarget widget in this example allows users to drop items onto the shelf. We utilize the Stack widget to layer the DragTarget widget over the shelf image. Moreover, the display of the shelf image is controlled by the [ConditionalBuilder](../../../../ff-concepts/layout/responsive-widgets/conditional-builder-widget.md) widget, which uses the `isShelfFull` variable to determine which image to show. This widget arrangement ensures that the shelf image updates dynamically based on whether the shelf is full or not.
+## Adding a DragTarget Widget
 
-Let's see how to add DragTarget widget:
+1. Add a **DragTarget** where users should drop an item.
+2. Add a child widget to define its visible content and drop area. For example, use a [Container](../../widgets/basic-widgets/container.md) to create a clearly sized target.
+3. In the DragTarget properties, set **Type** to the data type used by the corresponding Draggable widgets.
 
-1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **DragTarget** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree.
-2. Inside the **DragTarget** widget, add a [**Container**](../../widgets/basic-widgets/container.md) widget, preferably of the same size as the image, and set its background color to transparent. This will serve as the drop zone for draggable items.
-3. Now, you need to specify the type of data this target will receive. To do so select the **DragTarget widget > Properties Panel > Draggable Properties >** specify the **Type** of the data. This is crucial for ensuring that only the correct items can be dropped on the target.
+The size of the DragTarget determines the area that can detect the dragged item. Make this area large enough to use comfortably, especially on touchscreens.
 
+## Passing and Validating Data
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/ffe78e15510d4cf2b34c1bbe0a54bad2?sid=97dadbab-779b-41ac-a23f-4f8d42e067b3"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+Matching the data **Type** makes a Draggable compatible with a DragTarget. It does not check whether the DragTarget should process a particular **Value**.
 
-### 4. Get notified on drag events
+<figure>
+  ![Three Draggable widgets pass data to a String DragTarget. String plant and String spoon are accepted, while Integer 10 is rejected because its type does not match.](imgs/draggable-data-flow.svg)
+  <figcaption class="centered-caption">A DragTarget accepts data with a matching type</figcaption>
+</figure>
 
-The DragTarget widget provides you with the various drag events (aka callbacks) which are essential in building drag and drop functionalities.
+To validate the value after it is dropped:
 
-Here are they:
+1. Select the **DragTarget** and open the **Actions** tab.
+2. Select **On Drag Accept**, and add a **Conditional Action**.
+3. Set the first value to **Drag Target > Dragged Data**.
+4. Configure the condition for the value the target should process.
+5. Add the required actions to the **TRUE** branch. In the **FALSE** branch, optionally notify the user that the item is not valid for that target.
 
-- **On Drag Accept:** Actions under this are triggered when the data is dropped over the DragTarget.
-- **On Drag Enter:** Actions under this are triggered when the data is being dragged over 
-  DragTarget.
-- **On Drag Exit:** Actions under this are triggered when a draggable item that was previously 
-  over the DragTarget leaves its area. For example, In the shopping app, if the user decides not to drop the item into the cart and moves it away, this event callback can be used to remove the highlight from the shopping cart.
+For example, several Draggable widgets can use the **String** type while carrying different values. A DragTarget can receive all of them because their types match, then use a conditional action to process only a value such as `plant`.
 
-:::tip
-You can use On Drag Accept or On Drag Enter to determine if DragTarget can receive the 
-data and accordingly update the app state.
+## Handling Drag Events
 
-It's crucial to think about the user experience you wish to create. For instance, if you aim to trigger an action as soon as an item enters the drop area, utilize On Drag Enter along with On Drag Exit. Conversely, if your action should occur only after the item has been dropped, then On Drag Accept, paired with On Drag Exit, is your go-to option.
-:::
+You can use [Action Triggers](../../../control-flow/functions/action-triggers.md) on both widgets to customize the drag-and-drop experience.
 
-Let's see how to add drag events for this example:
+### Draggable Events
 
-1. Select **DragTarget** widget, select **Actions** from the Properties Panel (the right menu), 
-and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-2. To ensure that only a plant item is being dropped:
+- **On Drag Started:** Runs when the user starts dragging the widget.
+- **On Drag Update:** Runs as the widget moves during the drag.
+- **On Drag Completed:** Runs when a DragTarget accepts the dropped data.
+- **On Drag Cancelled:** Runs when the item is released without being accepted.
+- **On Drag End:** Runs when the drag finishes, whether it is completed or cancelled.
 
-    1. Select the **On Drag Accept** and select **+ Add Conditional Action**.
-    5. From the **set variable** menu, select **Drag Target > Dragged Data**. This captures the data of the draggable item that we added in [step 2](#2-add-draggable-widgets).
-    8. Check if the captured data matches the expected item, i.e., plant.
-    11. In the **TRUE** branch, you can add a [snackbar message](../../pages/page-elements.md#snackbar) and [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to True. This will create an effect like the user has actually dragged and dropped the item onto the shelf.
+### DragTarget Events
 
+- **On Drag Enter:** Runs when compatible dragged data enters the target. Use it to highlight the drop area.
+- **On Drag Exit:** Runs when dragged data leaves the target. Use it to remove temporary hover feedback.
+- **On Drag Accept:** Runs when the data is dropped and accepted. Use it to validate the value and update persistent state.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-  com/embed/53acd90e5f394581951173d4626c68a9?sid=0438be54-ed23-46e8-9f45-2cc36974037d"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+## Customizing the Drag Experience
 
-3. Now, select the **On Drag Exit** andadd an action to [update](../../pages/page-lifecycle.md#page-state) the `isShelfFull` variable to False. This ensures that if the user decides not to drop the item and moves it away, the shelf image reverts to the empty one.
+Use the drag events with state variables and conditional styling to make the interaction clear:
 
-  ![img_2.png](imgs/img_2.png)
+- Set a temporary state variable with **On Drag Enter** to highlight an active drop area.
+- Reset the temporary state with **On Drag Exit** when the item leaves the area.
+- Update persistent app or page state only after **On Drag Accept** runs.
+- Use **On Drag Started** and **On Drag End** to change the appearance of the draggable item or surrounding interface during the interaction.
+- Show a message when a dropped value does not meet the target's conditions.
+
+Keep hover state separate from accepted-drop state. Resetting persistent state with **On Drag Exit** can undo a completed interaction when the pointer leaves the target.
+
+## Example: Accepting a Specific Item
+
+Suppose an interface contains Draggable images of a plant, spoon, and football, but a shelf should accept only the plant:
+
+1. Set every Draggable to the **String** type, and assign the values `plant`, `spoon`, and `football`.
+2. Set the shelf's DragTarget to the **String** type.
+3. Create a Boolean [Page State variable](../../pages/page-lifecycle.md#creating-a-page-state) named `isShelfFull` with a default value of `false`.
+4. In the **On Drag Accept** action flow, check whether **Drag Target > Dragged Data** equals `plant`.
+5. In the **TRUE** branch, use [Update Page State](../../pages/page-lifecycle.md#update-page-state-action) to set `isShelfFull` to `true`.
+6. Use a [ConditionalBuilder](../../../../ff-concepts/layout/responsive-widgets/conditional-builder-widget.md) to display the appropriate shelf image based on `isShelfFull`.
+
+You can optionally show a [Snackbar](../../pages/page-elements.md#snackbar) when the plant is accepted or when another item is rejected.
+
+## Best Practices
+
+- Use the same data type for each Draggable and its intended DragTarget.
+- Give users clear visual feedback when an item is draggable and when it enters a valid drop area.
+- Make drop targets large enough to use comfortably on touchscreens.
+- Keep temporary hover state separate from state changed by an accepted drop.
+- Provide a tap or button-based alternative when drag-and-drop is the only way to complete an important task.
+- Validate the dragged value before updating persistent state.

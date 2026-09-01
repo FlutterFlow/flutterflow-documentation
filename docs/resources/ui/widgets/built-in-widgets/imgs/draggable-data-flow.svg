@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Draggable data type compatibility</title>
+  <desc id="desc">Three Draggable widgets send data to a String DragTarget. String plant and String spoon are accepted because their types match, while Integer 10 is rejected because its type does not match.</desc>
+
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#22a559"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#f06445"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <!-- Draggable widgets panel -->
+  <rect x="50" y="65" width="550" height="770" rx="24" fill="#ffffff" stroke="#b8c1d1" stroke-width="3"/>
+  <path d="M74 65h502a24 24 0 0 1 24 24v96H50V89a24 24 0 0 1 24-24z" fill="#f1f4fa"/>
+  <text x="325" y="132" text-anchor="middle" fill="#111827" font-family="Arial" font-size="44" font-weight="700" letter-spacing="0">Draggable widgets</text>
+
+  <!-- String / plant -->
+  <rect x="82" y="220" width="486" height="155" rx="18" fill="#ffffff" stroke="#22a559" stroke-width="3"/>
+  <rect x="105" y="251" width="88" height="88" rx="14" fill="#f5fcf7" stroke="#22a559" stroke-width="3"/>
+  <text x="149" y="308" text-anchor="middle" fill="#168245" font-family="Arial" font-size="34" font-weight="700" letter-spacing="0">Aa</text>
+  <text x="220" y="277" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Type:</text>
+  <text x="310" y="277" fill="#168245" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">String</text>
+  <text x="220" y="329" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Value:</text>
+  <text x="324" y="329" fill="#168245" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">plant</text>
+
+  <!-- String / spoon -->
+  <rect x="82" y="407" width="486" height="155" rx="18" fill="#ffffff" stroke="#22a559" stroke-width="3"/>
+  <rect x="105" y="438" width="88" height="88" rx="14" fill="#f5fcf7" stroke="#22a559" stroke-width="3"/>
+  <text x="149" y="495" text-anchor="middle" fill="#168245" font-family="Arial" font-size="34" font-weight="700" letter-spacing="0">Aa</text>
+  <text x="220" y="464" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Type:</text>
+  <text x="310" y="464" fill="#168245" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">String</text>
+  <text x="220" y="516" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Value:</text>
+  <text x="324" y="516" fill="#168245" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">spoon</text>
+
+  <!-- Integer / 10 -->
+  <rect x="82" y="594" width="486" height="155" rx="18" fill="#ffffff" stroke="#d2d8e3" stroke-width="3"/>
+  <rect x="105" y="625" width="88" height="88" rx="14" fill="#fff9f7" stroke="#f06445" stroke-width="3"/>
+  <text x="149" y="682" text-anchor="middle" fill="#d94f32" font-family="Arial" font-size="34" font-weight="700" letter-spacing="0">123</text>
+  <text x="220" y="651" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Type:</text>
+  <text x="310" y="651" fill="#d94f32" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">Integer</text>
+  <text x="220" y="703" fill="#111827" font-family="Arial" font-size="30" font-weight="700" letter-spacing="0">Value:</text>
+  <text x="324" y="703" fill="#d94f32" font-family="Arial" font-size="30" font-weight="500" letter-spacing="0">10</text>
+
+  <!-- Connectors -->
+  <text x="773" y="272" text-anchor="middle" fill="#168245" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type matches</text>
+  <path d="M600 297h326" fill="none" stroke="#22a559" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+
+  <text x="773" y="459" text-anchor="middle" fill="#168245" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type matches</text>
+  <path d="M600 484h326" fill="none" stroke="#22a559" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+
+  <text x="773" y="646" text-anchor="middle" fill="#d94f32" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type mismatch</text>
+  <path d="M600 671h326" fill="none" stroke="#f06445" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+
+  <!-- DragTarget panel -->
+  <rect x="950" y="65" width="600" height="770" rx="24" fill="#ffffff" stroke="#b8c1d1" stroke-width="3"/>
+  <path d="M974 65h552a24 24 0 0 1 24 24v96H950V89a24 24 0 0 1 24-24z" fill="#f1f4fa"/>
+  <text x="1250" y="122" text-anchor="middle" fill="#111827" font-family="Arial" font-size="44" font-weight="700" letter-spacing="0">DragTarget</text>
+  <text x="1250" y="164" text-anchor="middle" fill="#4b39ef" font-family="Arial" font-size="27" font-weight="600" letter-spacing="0">Type: String</text>
+
+  <!-- Accepted result -->
+  <rect x="980" y="220" width="540" height="155" rx="18" fill="#f5fcf7" stroke="#22a559" stroke-width="3"/>
+  <text x="1015" y="278" fill="#111827" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">String / plant</text>
+  <text x="1015" y="326" fill="#52606f" font-family="Arial" font-size="25" font-weight="500" letter-spacing="0">Type matches the target</text>
+  <rect x="1303" y="257" width="181" height="80" rx="14" fill="#ffffff" stroke="#22a559" stroke-width="3"/>
+  <text x="1394" y="309" text-anchor="middle" fill="#168245" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">Accepted</text>
+
+  <!-- Second accepted result -->
+  <rect x="980" y="407" width="540" height="155" rx="18" fill="#f5fcf7" stroke="#22a559" stroke-width="3"/>
+  <text x="1015" y="465" fill="#111827" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">String / spoon</text>
+  <text x="1015" y="513" fill="#52606f" font-family="Arial" font-size="25" font-weight="500" letter-spacing="0">Type matches the target</text>
+  <rect x="1303" y="444" width="181" height="80" rx="14" fill="#ffffff" stroke="#22a559" stroke-width="3"/>
+  <text x="1394" y="496" text-anchor="middle" fill="#168245" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">Accepted</text>
+
+  <!-- Type mismatch result -->
+  <rect x="980" y="594" width="540" height="155" rx="18" fill="#fff9f7" stroke="#f06445" stroke-width="3"/>
+  <text x="1015" y="652" fill="#111827" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">Integer / 10</text>
+  <text x="1015" y="700" fill="#52606f" font-family="Arial" font-size="25" font-weight="500" letter-spacing="0">Type does not match</text>
+  <rect x="1303" y="631" width="181" height="80" rx="14" fill="#ffffff" stroke="#f06445" stroke-width="3"/>
+  <text x="1394" y="683" text-anchor="middle" fill="#d94f32" font-family="Arial" font-size="31" font-weight="700" letter-spacing="0">Rejected</text>
+</svg>
