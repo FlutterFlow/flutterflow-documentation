@@ -34,8 +34,8 @@ To add a Firestore collection or Supabase table query:
 5. Under **Ordering**, click **+ Order By** for Firestore or **+ Add Order** for Supabase. Select the field and choose **Increasing** or **Decreasing**.
 6. Configure the available optional settings:
    - **Hide Widget If No Match** (Firestore): Hides the queried widget when the query returns no matching documents.
-   - **Ignore Empty Filter Values** (Firestore): Ignores a filter when its supplied value is empty.
-   - **Filter on Null Values** (Firestore): Includes filters whose supplied value is null.
+   - **Ignore Empty Filter Values** (Firestore): Disabled by default, meaning the query will attempt to find documents with empty text fields if any filter value is empty. When enabled, the query will ignore fields with empty filter values instead.
+   - **Filter on Null Values** (Firestore): By default, if any filter value is null, the query will ignore that filter. Enabling this option will include null filters in the query.
    - [**Enable Infinite Scroll**](../../../ui/widgets/composing-widgets/list-grid.md#infinite-scroll-on-a-list-from-a-firestore-collection-or-supabase-table): Loads list results in pages as the user scrolls. Set the number of records loaded per page using **Page Size**. For Supabase, the table must have a primary key and the query must be ordered by it.
    - **Listen For Changes** (Firestore): Updates displayed documents when their data changes. This is enabled automatically when infinite scroll is turned on.
 7. Click **Confirm**.
