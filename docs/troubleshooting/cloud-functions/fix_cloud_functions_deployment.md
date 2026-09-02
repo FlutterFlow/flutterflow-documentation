@@ -11,6 +11,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Cloud Functions
+last_verified: 2026-09-02
 ---
 # Fix Cloud Functions Deployment
 
@@ -93,17 +94,17 @@ You may encounter the following errors in the FlutterFlow Builder:
         - Focus on inspecting your specific function code and configuration.
 
 
-    6. **Ensure Region Selection Matches Firebase Project:**
+    6. **Verify Region Selection:**
 
-        - The region set for your Cloud Function in FlutterFlow should match your Firebase project's region.
-        - Do not leave the region as `[default]`.
+        - Choose a region supported by the trigger and close to the data or calling users. Some Firebase resources have fixed locations, so cross-region calls can add latency and cost.
+        - Compare the selected region with an already deployed function of the same name before redeploying.
 
             ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121128170242.png)
 
             ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121128453683.png)
 
         :::tip
-        If you previously deployed functions in the wrong region, delete them, set the correct region, and re-deploy.
+        Moving a function creates a new regional resource. Deploy and validate the replacement before deleting the old function, update callers or triggers, and account for duplicate event processing during migration.
         :::
 
     7. **Protocol Conflicts: HTTP vs Callable Functions**
@@ -114,32 +115,16 @@ You may encounter the following errors in the FlutterFlow Builder:
 
         Follow the steps below to fix this error:
 
-            - Delete the existing function in Firebase Console.
-            - Modify the protocol type in FlutterFlow.
-            - Redeploy the function.
+            - Deploy the new trigger type under a new function name.
+            - Update and test callers.
+            - Delete the old function only after traffic has moved and rollback is no longer needed.
 
     8. **Verify `package.json` Integrity**
 
-        - Use the generated `package.json` file as-is unless you need to add extra packages.
+        - Start from FlutterFlow's current generated `package.json`, then review every deliberate dependency or runtime change.
         - Ensure it’s not blank and doesn’t contain invalid characters.
 
-            **Recommended structure:**
-
-                ```js
-                {
-                "name": "functions",
-                "description": "Firebase Custom Cloud Functions",
-                "engines": {
-                    "node": "18"
-                },
-                "main": "index.js",
-                "dependencies": {
-                    "firebase-admin": "^11.8.0",
-                    "firebase-functions": "^4.3.1"
-                },
-                "private": true
-                }
-                ```
+        - Check the [currently supported Firebase runtimes](https://firebase.google.com/docs/functions/manage-functions#set_node.js_version). Node.js 18 is deprecated; do not copy an old runtime or dependency version from a screenshot or troubleshooting article.
 
 
     9. **Ensure Packages Are Included in `package.json`**
@@ -175,12 +160,12 @@ You may encounter the following errors in the FlutterFlow Builder:
 
     **Check Permissions and Rules:**
 
-        - Firebase security rules and project permissions must allow the Cloud Function operations.
+        - Verify the trigger's IAM identity and runtime permissions. Firestore and Storage Security Rules govern client SDK requests, but trusted Admin SDK calls normally use IAM instead.
 
 - **Execution Timeouts**
 
     - Cloud Functions may fail if execution time exceeds limits.
-    - Set a custom timeout duration in FlutterFlow:
+    - Set an appropriate timeout, but first bound external calls, add retries only for safe/idempotent work, and move long-running jobs to an asynchronous design when needed:
 
         ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121134186956.png)
 
@@ -197,8 +182,8 @@ You may encounter the following errors in the FlutterFlow Builder:
 - **Cold Start Delays**
 
     Cloud Functions may respond slower after periods of inactivity:
-        - Use **Cloud Scheduler** to periodically invoke functions and keep them warm.
-        - Minimize dependencies to reduce cold start delays.
+        - Minimize initialization work and dependencies.
+        - For latency-critical functions, consider supported minimum-instance settings after estimating the continuous cost. Do not create synthetic scheduler traffic solely to bypass scale-to-zero behavior.
 
 Following this comprehensive troubleshooting guide should help you resolve most issues encountered when working with Cloud Functions.
 

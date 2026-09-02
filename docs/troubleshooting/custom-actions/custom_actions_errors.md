@@ -10,6 +10,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Custom Actions
+last_verified: 2026-09-02
 ---
 # Custom Actions Errors
 
@@ -79,7 +80,7 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
 
     - **Internal Library Imports**
 
-        - If importing internal libraries (example, `../../flutterflow`), set **Exclude from compilation** to `true` if needed.
+        - Avoid brittle relative imports into generated implementation files. Use FlutterFlow's supported imports and custom-code dependency settings. **Exclude from compilation** hides code from the generated build; it is not a way to make an unsupported import work at runtime.
 
     - **Pubspec Dependencies**
 
@@ -107,11 +108,11 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
                 ```
         - **Correct data types:**
 
-            Convert data types explicitly.
+            Parse data types explicitly and handle failure.
 
                 ```js
                 String str = "5";
-                int result = int.parse(str); // ✅
+                int? result = int.tryParse(str);
                 ```
                 Use `.toString()`, `.toInt()`, `.toDouble()` as needed.
 
@@ -121,7 +122,7 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
 
     - **Exclude from Compilation**
 
-        If this option is enabled, the code won’t be checked during build but can still run during test..
+        If this option is enabled, the code is omitted from compilation and cannot provide working runtime behavior in that build. Use it only to isolate unfinished code, then re-enable compilation and test every target platform before release.
 
             ![Custom Actions Errors in FlutterFlow](../assets/20250430121144509497.png)
 
@@ -139,7 +140,7 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
 
 
 :::info[Additional Resources]
-- **Debugging with the Browser Console:** Use the browser debug console for logic errors.
+- **Debugging with the Browser Console:** Use the browser console for web logic errors, but redact tokens, API payloads, user data, and proprietary code before sharing logs.
 - **FlutterFlow University Video**: [Custom Actions Video](https://www.youtube.com/watch?v=rKaD9eKuZkY).
 - **Official Docs:** [Custom Actions | FlutterFlow Docs](/concepts/custom-code/custom-actions/)
 :::

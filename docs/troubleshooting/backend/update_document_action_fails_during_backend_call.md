@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Backend
+last_verified: 2026-09-02
 ---
 # Update Document Action Fails During Backend Call
 
@@ -42,7 +43,7 @@ There are two common reasons why the update action may fail:
     The Firestore security rules may not allow the current user to write (edit) documents.
 
     **Solution:**
-    Review and configure your Firestore rules to grant write permission. For example, allowing write access to authenticated users is often sufficient if your app requires user authentication.
+    Review the rule denial and make the query, document path, and authenticated claims satisfy the intended least-privilege rule. A blanket write grant to every authenticated user is usually too broad; enforce ownership, roles, immutable ownership fields, and permitted field changes as appropriate.
 
 - **Data Type Mismatch**
 
@@ -56,14 +57,14 @@ There are two common reasons why the update action may fail:
     Attempting to write a value of the wrong type, such as assigning text to a number field.
 
     **Solution:**
-    Verify that the values being written match the expected data types for each field. If the data comes from an API call or form input, consider using custom actions to convert the value to the appropriate type before performing the update.
+    Verify that the values match the expected types and validation rules. Parse untrusted API or form input with an explicit failure path rather than silently coercing a malformed value.
 
     :::note
     If you want to save a text field value as a number, ensure that the text field input type is set to **Number**.
     :::
 
 :::info[Additional Troubleshooting]
-You can check for error details in your browser's developer console (F12). For example, permission errors will typically appear in the console logs, as shown below:
+Check the first error in the browser or device logs and the corresponding backend logs. Redact tokens, document contents, user identifiers, and personal data before sharing an excerpt with support or an AI assistant.
 
 ![Update Document Action Fails During Backend Call in FlutterFlow](../assets/20250430121242814005.png)
 :::

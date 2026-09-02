@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Authentication
+last_verified: 2026-09-02
 ---
 # Fix Google Sign-In Issues
 
@@ -41,6 +42,8 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
 
     Re-test your app. Google Sign-In should now work correctly.
 
+    Play App Signing uses a different certificate from many local or upload-key builds. Add the fingerprints for every signing certificate that actually signs a tested build; do not replace a working fingerprint blindly.
+
 
 2. **If Not Yet Published or Using Manual Signing**
 
@@ -67,6 +70,7 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
 :::tip[Add Debug SHA-1 for Local Testing]
 - When testing Google Sign-In in FlutterFlow before publishing, add your **debug SHA-1** in Firebase.
 - Then go to `Settings → Firebase` in FlutterFlow and regenerate your config files.
+- Keep debug and release fingerprints distinct, and never publish a build signed with a debug key.
 :::
 
 ## Related documentation

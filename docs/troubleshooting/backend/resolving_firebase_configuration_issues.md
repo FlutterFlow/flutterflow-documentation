@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Backend
+last_verified: 2026-09-02
 ---
 # Resolving Firebase Configuration Issues
 
@@ -27,20 +28,15 @@ Follow the steps below to fix firebase configuration:
 
 1. **Grant Required Permissions**
 
-   Assign the following permissions to `firebase@flutterflow.io` in your Firebase project:
-    - Editor
-    - Cloud Functions Admin
-    - Service Account User
-
-    Learn how to **[assign Firebase permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**.
+   Follow the current **[Firebase permission instructions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)** for `firebase@flutterflow.io`. Use the documented roles for the features you deploy; do not add Owner or unrelated roles as a generic fix. Organization policies can still deny an operation even when an IAM role appears present.
 
 2. **Update Firestore Rules**
 
-   Update your Firestore security rules to allow access for FlutterFlow.
+   Deploy the project's intended Firestore security rules and test them with representative signed-in, signed-out, owner, and non-owner cases. Do not publish an allow-all rule to make schema validation pass.
 
    After making changes:
-        - Remove `firebase@flutterflow.io` from your authenticated users.
-        - Redeploy your Firestore rules.
+        - Confirm the FlutterFlow service account and your app users are not being confused; IAM and Firebase Authentication are separate systems.
+        - Redeploy the reviewed Firestore rules.
         - Validate your schema again.
 
         ![Resolving Firebase Configuration Issues in FlutterFlow](../assets/20250430121532523511.png)
@@ -58,8 +54,8 @@ Follow the steps below to fix firebase configuration:
 5. **Reset Firebase Setup (If Needed)**
 
    If issues persist after following the steps above:
-        - Revoke the current setup.
-        - Reconnect your Firebase project using the **[Firebase setup instructions](/integrations/firebase/connect-to-firebase/)**.
+        - Record the current project ID, app IDs, authorized domains, rules, indexes, and deployed resources.
+        - Reconnect using the **[Firebase setup instructions](/integrations/firebase/connect-to-firebase/)** only after you understand what the reset changes and have a rollback plan.
 
 6. **Add Authorized Domains**
 
@@ -70,8 +66,7 @@ Follow the steps below to fix firebase configuration:
     Make sure you're using the latest version of the platform:
 
         - Press `Ctrl`/`Cmd + Shift + R`
-        - Clear your browser cache
-        - Log out and back in to FlutterFlow
+        - Sign out and back in only when the error indicates an expired account session. Clearing all browser data is not a substitute for checking the exact validation error.
 
 8. **Upgrade to Blaze Plan (If Using Cloud Functions)**
 

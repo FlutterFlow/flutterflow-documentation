@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Authentication
+last_verified: 2026-09-02
 ---
 # Troubleshooting Custom Authentication
 
@@ -47,7 +48,7 @@ Here's an example:
       - `refresh token`
       - `expiration time`
       - `user ID (UID)`
-    - Store these values in local state or secure app storage.
+    - Use FlutterFlow's custom-auth session fields or platform-appropriate secure storage. Do not put bearer or refresh tokens in App State, page state, query parameters, analytics, snack bars, or ordinary logs.
 
   ![Troubleshooting Custom Authentication in FlutterFlow](../assets/20250430121149749937.png)
 
@@ -58,8 +59,9 @@ Here's an example:
 
 :::tip[General Tips]
 - Test your flow with **dummy credentials** before using real user data. This helps debug token handling, API responses, and navigation.
-- Add **logging** on both the server and in FlutterFlow (example, using snack bars or alerts) to monitor each step of the flow.
+- Add redacted diagnostic logging on the server and log only status, request IDs, and safe error codes in the client. Never display or record passwords, tokens, cookies, or complete personal records.
 - Verify the full flow—from login to protected pages—to ensure everything works as expected.
+- The server must validate token signatures, issuer, audience, expiry, and authorization on every protected request. Rotate refresh tokens where supported and make logout/revocation behavior explicit.
 :::
 
 :::info[More Resources]

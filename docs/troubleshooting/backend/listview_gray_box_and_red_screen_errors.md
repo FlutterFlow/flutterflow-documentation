@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Backend
+last_verified: 2026-09-02
 ---
 # ListView Gray Box and Red Screen Errors
 
@@ -24,7 +25,7 @@ When loading a list of items from the database, you might encounter a gray box o
 
 **Understanding the Error:**
 
-A **gray box** usually indicates that the backend query failed to return results. A **red screen** in Test mode suggests a runtime error caused by invalid data or query failure.
+A gray placeholder or red error surface means rendering failed, but it does not identify the cause by itself. Capture the first runtime error and stack trace; common causes include a denied or invalid query, an unexpected null/type, a missing referenced document, or a widget layout constraint.
 
 **Step-by-Step Troubleshooting:**
 
@@ -32,7 +33,7 @@ A **gray box** usually indicates that the backend query failed to return results
 
     - If the query is successful and returns items, the list will populate as expected.
     - If there are no records matching the query, you will see the **empty state** you configured.
-    - If the query fails, a gray box (in Run mode) or a red error screen (in Test mode) will appear.
+    - If rendering fails, inspect the browser or device log for the exact exception instead of diagnosing from the color alone.
 
     ![Empty State](../assets/20250430121239249713.png)
 
@@ -67,7 +68,7 @@ A **gray box** usually indicates that the backend query failed to return results
         ![Date Formatting Error](../assets/20250430121240508011.png)
 
     :::note
-    Use **visibility rules** to hide widgets that depend on potentially null values.
+    Check for null before formatting or dereferencing a value, and provide an explicit fallback. Visibility alone is not an authorization boundary and may not prevent every upstream query from running.
     :::
 
 4. **Handle Document-From-Reference Queries Safely**
@@ -77,13 +78,12 @@ A **gray box** usually indicates that the backend query failed to return results
     ![Broken Reference Example](../assets/20250430121240818334.png)
 
     :::note
-    Always add a visibility rule to any widget performing document-from-reference queries. This ensures the widget is only visible when the reference is valid.
+    Check that the reference is non-null before issuing the document query, then handle a nonexistent or unauthorized target as a separate empty/error state.
     :::
 
 
 :::info[Summary]
-- A **gray box** means the backend query failed.
-- A **red screen** indicates a runtime error in **Test mode**.
+- Gray and red error surfaces are symptoms; use the first logged exception to find the cause.
 - **Null values** in your database are a common cause of failure.
 - Always configure **empty states** and apply **visibility rules** to handle null or missing data gracefully.
 :::

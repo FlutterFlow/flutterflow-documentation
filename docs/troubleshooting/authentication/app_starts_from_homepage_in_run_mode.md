@@ -14,6 +14,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Authentication
+last_verified: 2026-09-02
 ---
 # App Starts from HomePage in Run Mode
 
@@ -21,11 +22,11 @@ If your app always redirects to the **HomePage** in **Run Mode**, even after a p
 
 ## Troubleshooting Steps
 
-- Clear your browser cache and history.
+- Use the app's **Sign Out** action, then start a new Run Mode session. This tests the same sign-out path that users will rely on.
 
     ![How to clear browser cache](../assets/20250430121300291232.png)
 
-- Try a different browser or use incognito/private browsing mode to see if the issue persists.
+- Try a private browsing window to isolate the test from an existing Firebase or custom-auth session. Avoid clearing all browser history unless you have ruled out the app's own sign-out and redirect configuration.
 
 If the problem continues, consider checking your authentication flow and session management in your app settings.
 
