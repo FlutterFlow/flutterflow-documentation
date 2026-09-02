@@ -13,6 +13,7 @@ keywords:
   - make a FlutterFlow layout responsive across screen sizes
 ai_queries:
   - make a FlutterFlow layout responsive across screen sizes
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -205,7 +206,7 @@ With these adjustments, your shopping app now boasts a highly responsive screen 
 
 ## Responsive Value
 
-**Responsive Values** allow you to define different property values, such as widths, heights, font sizes, or padding, for different device sizes (mobile, tablet, desktop, and wide). At runtime, your app evaluates the screen width and automatically applies the appropriate value based on your configurations.
+**Responsive Values** allow you to define different property values, such as widths, heights, font sizes, or padding, for FlutterFlow's four screen categories: mobile, tablet, tablet landscape, and desktop. At runtime, your app evaluates the screen width and applies the value for the matching category.
 
 :::info[possible use cases]
 
@@ -217,10 +218,10 @@ With these adjustments, your shopping app now boasts a highly responsive screen 
 
 To set a responsive value, select a widget and choose a property that supports responsiveness. Click **Set from Variable > Responsive Value**, then enter different values for each screen size:
 
-- Mobile (below `Breakpoint Small`)
-- Tablet (below `Breakpoint Medium`)
-- Desktop (below `Breakpoint Large`)
-- Wide (above `Breakpoint Large`)
+- Mobile (below **Breakpoint Small**)
+- Tablet (from **Breakpoint Small** up to **Breakpoint Medium**)
+- Tablet landscape (from **Breakpoint Medium** up to **Breakpoint Large**)
+- Desktop (at or above **Breakpoint Large**)
 
 As you preview on different devices, the property will automatically adjust based on the selected screen size.
 

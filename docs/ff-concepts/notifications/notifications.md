@@ -12,6 +12,7 @@ keywords:
   - FlutterFlow
   - Notifications
   - Concepts
+last_verified: 2026-09-02
 ---
 # Notifications
 
@@ -29,4 +30,4 @@ Generally, notifications can be divided into two main categories: **Local Notifi
 
 **Local Notifications** are scheduled directly on the device and do not require a server component. They are commonly used for time-based reminders or location-based triggers, such as a daily workout reminder at 7:00 AM. To implement local notifications in FlutterFlow, you can integrate the [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications) package using [custom actions](../../ff-concepts/adding-customization/custom-actions.md).
 
-**[Push Notifications](push-notifications.md)**, on the other hand, are delivered from a remote server through a platform-specific push notification service. They are primarily used for real-time updates, such as chat messages, social media alerts, or news updates. In FlutterFlow, [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) (FCM) is used to handle push notifications, enabling seamless communication between your app and users.
+**[Push Notifications](push-notifications.md)** are delivered from a remote server through a platform-specific push service. They are commonly used for chat messages, alerts, and news updates. FlutterFlow's built-in push-notification flow uses [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) (FCM); using another push provider requires its own integration or custom code.

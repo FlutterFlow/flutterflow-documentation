@@ -271,4 +271,4 @@ Run the page and select several ratings. Confirm that **Widget State** and the *
 
 ## Related documentation
 
-See [Widget State](/concepts/state-management/widget-state) for using the selected value and [Form Actions](/resources/forms/form-actions) for submitting form data.
+See [Widget State](/concepts/state-management/widget-state) for using the selected value and [Forms](/resources/forms) for validating and submitting form data.

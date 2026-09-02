@@ -16,6 +16,7 @@ keywords:
   - Colors
   - Typography & Icons
   - Theme Widgets
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -562,8 +563,8 @@ You can also create fully custom text styles to match your design needs, going b
 
 ![typography](imgs/typography.avif)
 
-:::tip[PLANS]
-Custom Text Styles are available on the **Business** plan and higher. Check our [**pricing plans**](https://flutterflow.io/pricing).
+:::tip[Plans]
+Custom Text Styles are available on the **Business** plan. Because plan entitlements can change, confirm availability for your account on the current [pricing page](https://flutterflow.io/pricing) or in the editor before relying on it.
 :::
 
 #### Adding responsive text styles

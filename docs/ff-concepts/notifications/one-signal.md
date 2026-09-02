@@ -13,6 +13,7 @@ keywords:
 description: >-
   Integrating OneSignal lets you send emails and SMS (text messages) to your
   users.
+last_verified: 2026-09-02
 ---
 # OneSignal
 
@@ -23,7 +24,7 @@ be able to easily add users to or remove them from OneSignal's subscription list
 ![img.png](imgs/os-img.png)
 
 :::note[Prerequisites]
-- Before you begin, make sure the project is on **Blaze plan** on Firebase.
+- Before you begin, make sure the Firebase project is on the **Blaze** pay-as-you-go plan because FlutterFlow deploys Cloud Functions for this integration. Configure Firebase budgets and alerts before deploying.
 - [**Create an Account**](https://dashboard.onesignal.com/signup) on OneSignal
 :::
 
@@ -57,11 +58,12 @@ To enable OneSignal in FlutterFlow:
 2. Switch on the **Enable OneSignal** toggle.
 
 3. Gather your credentials:
-   - **App ID**: Find this in your OneSignal dashboard under **Settings > Keys & IDs >
-      OneSignal App ID**.
-   - **API Key**: Located in the same section as the App ID, under **Rest API Key**.
-   - **User Key**: Go to your user profile icon, then **Account & API Keys > User Auth Key**.
+   - **App ID**: Find this in your OneSignal app under **Settings > Keys & IDs**. The App ID is a public identifier.
+   - **API Key**: Create or copy an **App API Key** from the same page.
+   - **Organization API Key**: Open **Organizations > your organization > Keys & IDs** and create or copy an Organization API Key.
    - Click **Deploy**.
+
+   The App API Key and Organization API Key are secrets. Enter them only in the FlutterFlow integration fields, restrict them where possible, rotate them if exposed, and never place them in client-side custom code or a public repository. See OneSignal's [Keys & IDs](https://documentation.onesignal.com/docs/en/keys-and-ids) guide.
 
 <figure>
     <div class="video-container"><iframe title="OneSignal interactive tutorial" src="https://www.loom.com/embed/55a72de8e15e418581cc8b49fc108b12?sid=052ead4c-96e4-4e9a-95c5-40162eb0d5fc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -80,8 +82,8 @@ To enable OneSignal in FlutterFlow:
 
 There are two main actions you can utilize in OneSignal:
 
-- **Add**: This lets you add users with their details like Email Address, Phone Number, and Tags.
-- **Dismiss**: Use this to remove a user from the subscription list.
+- **Add User**: Add the authenticated user with an email address, phone number, and optional tags.
+- **Delete User**: Remove the user from the OneSignal integration.
 
 ### Adding OneSignal action
 
@@ -91,14 +93,12 @@ To add a OneSignal action, such as adding a user, follow these steps:
 
 2. Select **Actions** from the Properties Panel (the right menu).
 
-3. Search and select the **OneSignal** (under Integration) action.
+3. Search for **OneSignal** under **Integrations**, then select **Add User** or **Delete User**.
 
-4. Select the [Type](#types-of-onesignal-action) of the action.
-
-5. To add a user, enable the subscription options you want. You can set the value directly or use
+4. For **Add User**, enable the subscription options you want. You can set the value directly or use
 a variable. Remember, phone numbers should be in the [E.164 format](https://documentation.onesignal.com/docs/sms-faq#what-is-the-e164-format).
 
-6. Optionally, add Tags for more personalized messaging. For example, you could tag users based on
+5. Optionally, add Tags for more personalized messaging. For example, you could tag users based on
 their spending amount to target them with specific emails or SMS messages about their purchases.
 
 <figure>
@@ -109,7 +109,7 @@ their spending amount to target them with specific emails or SMS messages about 
 
 
 
-You can find out if the user was successfuly added to the subscription by navigating to **OneSignal dashboard > App > Audience > Subscriptions**.
+You can confirm whether the user was successfully added by navigating to **OneSignal dashboard > App > Audience > Subscriptions**.
 
 ![img_2.png](imgs/os-img_2.png)
 

@@ -47,4 +47,4 @@ Run the page at narrow and wide sizes. Confirm that each Spacer expands only alo
 
 ## Related documentation
 
-See [Rows, Columns, and Stacks](/resources/ui/widgets/composing-widgets/rows-column-stack) for main-axis layout and [Responsive Layout](/concepts/layouts/responsive-layout) for adapting spacing across breakpoints.
+See [Rows, Columns, and Stacks](/resources/ui/widgets/composing-widgets/rows-column-stack) for main-axis layout and [Responsive Layout](/concepts/layouts/responsive) for adapting spacing across breakpoints.

@@ -18,6 +18,7 @@ keywords:
   - Assets
   - Display Media
   - Media Widgets
+last_verified: 2026-09-02
 ---
 # File Handling
 
@@ -27,7 +28,7 @@ FlutterFlow makes it easy to manage, upload, download, and display files within 
 - [**Uploading Files**](uploading-files.md): Upload and save different file types, including images, audio, videos, and PDFs to cloud storage.
 - [**Displaying Media**](displaying-media.md): Fetch files from cloud storage or external URLs and display them in your app.
 - [**Download Files**](download-file.md): Allow users to download files directly to their devices.
-- [**Clear or Delete Media**](clear-delete-media.md): Allow users to delete uploaded files from their devices and cloud storage.
+- [**Clear or Delete Media**](clear-delete-media.md): Clear an upload action's temporary widget state or permanently delete a stored Firebase or Supabase object.
 
 :::info[Also see]
 

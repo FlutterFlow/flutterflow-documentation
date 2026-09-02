@@ -10,6 +10,7 @@ keywords:
   - FlutterFlow
   - Building Layout
   - Concepts
+last_verified: 2026-09-02
 ---
 # Building Layout
 
