@@ -15,6 +15,7 @@ keywords:
   - Guidelines
   - Feedback
   - Reviews
+last_verified: 2026-09-02
 ---
 # FlutterFlow Marketplace Review Dispute Guidelines
 
@@ -53,8 +54,7 @@ If you believe a review on your item qualifies for removal:
    - A short explanation of why you believe it qualifies for removal
 
 :::info Decision
-Our team will review each case individually and respond within **10 business days**.
-Please note we are actively working on better creator tools to allow creators to reply directly to reviews.
+Our team reviews each case individually. The current response target is **10 business days**, but it is not a guaranteed deadline. Keep the acknowledgement email and use it for any case-specific instructions or timing.
 :::
 
 ## Related documentation

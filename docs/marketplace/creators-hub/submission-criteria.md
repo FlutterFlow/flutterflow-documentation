@@ -13,12 +13,15 @@ keywords:
   - MarketPlace
   - Creators Hub
   - Item Submission Criteria
+last_verified: 2026-09-02
 ---
 # Item Submission Criteria
 
 ## Item Submission Standards
 
 Below, you'll find the criteria our Submission Review Team uses to review items submitted to FlutterFlow Marketplace.
+
+The submission form and [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) are authoritative if a field, item type, license, price, or requirement differs from this guide.
 
 ### 1. Originality and Ownership
 
@@ -64,12 +67,12 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
     - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
     - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](legal-guidelines-for-creators.md#open-source-licenses) and [Navigating External Licenses](navigating-external-licenses.md).
 
-#### 1.6 No Library Dependencies (Libraries Only)
+#### 1.6 No Library Dependencies in Marketplace Submissions (Libraries Only)
 
-- **Criteria:** Libraries cannot depend on other libraries.
+- **Criteria:** A library submitted to Marketplace must not depend on another Marketplace or personal library. This is a Marketplace submission rule, not a general limitation of FlutterFlow Libraries, which otherwise support nested dependencies.
 - **Why It Matters:** Dependencies between libraries create complexity in permissions management and version control, potentially leading to compatibility issues or broken functionality.
 - **What To Do:**
-    - **Build Self-Contained:** Ensure your library contains all necessary functionality without requiring other libraries (from Marketplace or personal libraries).
+    - **Build Self-Contained:** Ensure the submitted library contains all necessary functionality without requiring another Marketplace or personal library. Confirm this requirement in the current submission form before submitting.
 
 :::info
 When you publish a free item to Marketplace, you agree to license it under the [MIT License](https://opensource.org/licenses/MIT), which grants users perpetual rights to use, modify, and distribute the project. Paid items are subject to the license terms specified in our [Marketplace Terms of Service](https://www.flutterflow.io/tos-marketplace).

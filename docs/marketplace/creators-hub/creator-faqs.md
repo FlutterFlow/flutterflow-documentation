@@ -12,6 +12,7 @@ keywords:
   - Creators Hub
   - Creators
   - Creators FAQs
+last_verified: 2026-09-02
 ---
 # Creator FAQs
 
@@ -32,9 +33,7 @@ Yes, in all cases, you will be notified if your item is removed from FlutterFlow
 
 ### Can I list my item on other marketplaces?
 
-No. You cannot sell FlutterFlow projects on other marketplaces. Please see the non-circumvention clause in our [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace).
-
-This policy helps ensure that all interactions with FlutterFlow templates are safe, compliant, and effectively managed for our users.
+The [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) include non-circumvention rules for Marketplace seller content and transactions, while also addressing content you independently own and make available elsewhere. Review the current terms for your situation instead of relying on a blanket yes-or-no summary, and obtain legal advice if the rights or distribution arrangement is unclear.
 
 ### What licenses are granted to users of my item?
 
@@ -96,7 +95,7 @@ If your item is not approved, it will be returned to draft status, allowing you 
 
 We have significantly improved our review wait time recently! ⚡
 
-We aim to review your template within 7 days. However, depending on the volume of submissions or the complexity of your submission, the review process can take up to 30 days (20 business days).
+The current target is review within 7 days, but complex submissions or high volume can extend the process to approximately 30 calendar days. This is an estimate, not a guaranteed deadline; use the status in your Marketplace dashboard and any review email as the source of truth.
 
 ## 🖐️ Other Questions?
 

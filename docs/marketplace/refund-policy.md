@@ -10,12 +10,15 @@ keywords:
   - FlutterFlow
   - MarketPlace
   - Refund Policy
+last_verified: 2026-09-02
 ---
 # Refund Policy
 
 :::note
 Please note that this policy does not override the local laws concerning refunds in your country, which remain applicable where necessary.
 :::
+
+The current [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) and the terms shown at purchase control. This page is a support summary and is not legal advice.
 
 At FlutterFlow, we're committed to ensuring that Marketplace offers high-quality templates that meet the diverse needs of our users. We understand the importance of finding the right tools to accelerate your app development, and we strive to ensure our Marketplace reflects the high standards you expect.
 
@@ -30,7 +33,7 @@ While our policy is to not offer refunds, we are committed to the satisfaction o
 1. **Major Defects:** All the items are thoroughly tested before being published, but unexpected errors may occur. Such issues must be submitted for verification. If any deficiency is confirmed, we will reach out to the item creator to address the issue and may issue a refund if we fail to address the defect within a reasonable time frame.
 2. **Purchased with Incorrect Account:** If you purchased an item with a different account than you intended and have not yet used the item, we can help transfer the item to the correct account.
 
-If you believe an item qualifies, please contact us directly by emailing [marketplace@flutterflow.io](mailto:marketplace@flutterflow.io). Each request will be considered on a case-by-case basis, and in exceptional circumstances, we may issue a refund. Such cases are handled manually and may take 5-10 days to process.
+If you believe an item qualifies, email [marketplace@flutterflow.io](mailto:marketplace@flutterflow.io) with the account, order, item, and issue details, but never include full payment-card data. Requests are considered case by case. Manual processing is commonly estimated at 5–10 days, but the acknowledgement for your request is the source of truth.
 
 ## Feedback and Resolution
 

@@ -14,10 +14,8 @@ keywords:
   - Dependency
 description: Learn how to share and reuse entire FlutterFlow projects using libraries.
 sidebar_position: 6
+last_verified: 2026-09-02
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Libraries
 
 Libraries enable you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
@@ -196,12 +194,14 @@ Once the library is imported, following resources are accessible for use:
 - [API Calls](../../resources/control-flow/backend-logic/api/rest-api.md)
 - [Action Blocks](../../resources/control-flow/functions/action-blocks.md)
 - [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Actions](../../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../../resources/ui/widgets/intro-widgets.md)
+- [Pages](../../resources/ui/pages/intro-pages.md)
+- [Firestore Collections](../../ff-integrations/database/cloud-firestore/creating-collections.md)
 - [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned)
 - [Code Files](../../ff-concepts/adding-customization/code-file.md)
 
 :::info
-- [**Pages**](../../resources/ui/pages/intro-pages.md), [**Firestore Collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md), and [**Cloud Functions**](../../ff-concepts/adding-customization/cloud-functions.md) are still being worked on and may come in future updates.
-- Creation of [**AI Agents**](../../ff-integrations/ai/ai-agents.md) is not yet supported in the Library project
+- [Cloud Functions](../../ff-concepts/adding-customization/cloud-functions.md) and creation of [AI Agents](../../ff-integrations/ai/ai-agents.md) are not currently supported in Library projects.
+- Firebase Auth and Firebase Storage are not directly supported in Library projects. See [Libraries with Firebase](#libraries-with-firebase) for the supported model and workaround.
 :::
 
 It's important to note that these resources show up where they are instantiated. For example:
@@ -460,9 +460,9 @@ Here are some examples of library projects you can build with Firebase:
 ## FAQs
 
 <details>
-<summary>What will happen to existing team libraries?</summary>
+<summary>How are legacy team libraries represented?</summary>
 <p>
-Team code and API libraries will be migrated to library Projects. These projects will be imported as a library with the latest version specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
+Legacy team code and API libraries are represented as Library Projects and imported using a published version. Components from legacy team design systems are represented in their own projects, while the design system retains its theme settings.
 </p>
 </details>
 
@@ -483,12 +483,12 @@ By default, the design system of the parent project takes precedence over the im
 <details>
 <summary>How are API keys shared?</summary>
 <p>
-We're working on Library Values, which will allow users to set specific values when they import a library. This feature will be available soon.
+Define a Library Value, then have each importing project provide the value under **Settings and Integrations > Project Setup > Project Dependencies**. Library Values are client-visible configuration and must not contain secret API keys or credentials. Use a server-side or private API path for secrets.
 </p>
 </details>
 
 <details>
-<summary>How does nested dependencies work?</summary>
+<summary>How do nested dependencies work?</summary>
 <p>
 Projects can import libraries that themselves have imported other Libraries as dependencies. However, if the project and the library share the same dependency, the version must match exactly to avoid conflicts.
 </p>
