@@ -15,10 +15,15 @@ keywords:
   - Database
   - Actions
 toc_max_heading_level: 5
+last_verified: 2026-09-02
 ---
 # Supabase Database Actions
 
 The Supabase Database Actions allow you to **Insert, Update**, or **Delete a Row** from a Supabase table.
+
+:::warning[Secure every table with Row Level Security]
+FlutterFlow client apps use a public Supabase key, so database authorization must be enforced with [Row Level Security (RLS)](https://supabase.com/docs/guides/database/postgres/row-level-security) policies. UI visibility and query filters are not security controls. Enable RLS, write least-privilege policies for `select`, `insert`, `update`, and `delete`, and test as anonymous, authenticated, owner, and non-owner users. Never put a Supabase `service_role` key in a client app.
+:::
 
 Note that beyond actions, you can also setup [**Backend Queries**](../../../resources/control-flow/backend-logic/backend-query/backend-query.md) for Supabase. This includes realtime streaming queries.
 
@@ -89,6 +94,8 @@ While adding this action, you can leave the **id** (if marked as *Primary*) and
        2. Click on **UNSET** and select **Widget State > Name** of the TextField.
     8. Similarly, add the field for the other UI elements.
 
+Use a unique key in **Matching Rows** whenever you intend to change one row. A broad or missing filter can update every row the current RLS policy permits.
+
 
 :::tip[How to & Tips]
 
@@ -120,6 +127,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
        **id** column.
        2. Set the **Relation** to **Equal To** because you want to find a row with the exact id.
        3. Into the **Value Source**, you can select the **From Variable** and provide the id of the row you want to delete.
+
+Confirm destructive actions where appropriate and use a unique key in **Matching Rows**. A broad or missing filter can delete every row the current RLS policy permits.
 
 <div class="video-container"><iframe title="Database Actions interactive tutorial" src="https://www.loom.com/embed/309e0e40832146df8909c2e533e9b11e?sid=34f4ba89-cc53-47c3-8b8d-8859c03a0f6f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
@@ -215,10 +224,6 @@ You could choose the order based on your requirements. For example, to show assi
 <div class="video-container"><iframe title="Database Actions interactive tutorial" src="https://www.loom.com/embed/244eea2a4f694120b08524b7b8cf67de?sid=13d47ef5-5d48-4986-88da-d335ce23bd06" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
-:::info
-Additional Note: Currently, you can only add "and" conditions to Supabase query filters. If you want to add an "or" filter like "status == 5 or status == 8", you can consider logic to apply "status in (5,8)" or any other logic. Fully customizable using API calls or custom actions.
-:::
-
 ## Trigger Action On Data Change
 
 Sometimes, you may want to trigger an action whenever data changes in a Supabase table. For instance, in an ecommerce app, you might want to notify users on the orders page when the status of their order is updated.
@@ -228,6 +233,8 @@ To respond to data changes in a Supabase table:
 1. Ensure you have added a **Supabase Query** to a widget (e.g., a ListView) with **Single Time Query** disabled to enable real-time updates.
 2. On the widget with the **Supabase Query**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
 3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
+
+Supabase Realtime must be enabled for the table, and the signed-in user must pass the applicable RLS policies. Streaming queries have stricter filter support than one-time queries. Design the action to be idempotent because reconnects or writes made by the action itself can produce repeated events or loops. Review Supabase's [Postgres Changes](https://supabase.com/docs/guides/realtime/postgres-changes) behavior and limits before using the trigger at scale.
 
 :::info
 If you are using this trigger on a ListView, make sure to **disable** the **Infinite Scroll**.
@@ -259,4 +266,4 @@ If you are using this trigger on a ListView, make sure to **disable** the **Infi
 <p></p>
 
 ## Offline Support for Supabase Apps
-If you need offline capabilities in your Supabase-powered app, consider using the **[PowerSync Library](https://marketplace.flutterflow.io/item/dm1cuOwYzDv6yQL2QOFb)** built by the **[PowerSync](https://www.powersync.com/)** team. It's designed specifically to enable seamless offline-first experiences by syncing your Supabase data locally and keeping it up to date when the device reconnects.
+If you need offline capabilities in a Supabase-powered app, you can evaluate the third-party **[PowerSync Library](https://marketplace.flutterflow.io/item/dm1cuOwYzDv6yQL2QOFb)** built by the **[PowerSync](https://www.powersync.com/)** team. It is not a FlutterFlow or Supabase service. Review its security model, pricing, data processing, conflict behavior, platform support, and maintenance status before adopting it.

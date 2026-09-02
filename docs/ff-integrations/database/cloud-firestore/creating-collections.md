@@ -15,10 +15,11 @@ keywords:
   - Database
   - Collections
   - Cloud Firestore
+last_verified: 2026-09-02
 ---
 # Creating Collections
 
-A collection is a group of documents. For example, you could have a 'users*'* collection that contains a list of documents, each representing a single user.
+A collection is a group of documents. For example, you could have a `users` collection that contains a list of documents, each representing one user.
 
 <figure>
     ![img_20.png](img_20.png)
@@ -54,12 +55,16 @@ A collection will only appear on [**Firebase Console**](https://console.firebase
 
 ### Define Schema (Creating Fields)
 
-A document represents a single item or entity, such as a user, post, animal, etc. To add data inside the document, you must define the document schema by creating Fields. Creating Fields helps you know what kind of data a document can contain.
+A document represents a single item or entity, such as a user, post, or animal. Firestore itself permits documents in the same collection to contain different fields. FlutterFlow's collection schema describes the fields and types the builder and generated app expect, so keep stored documents compatible with that schema.
 
 Although you can add more fields later on, it's always a good idea to add fields from the start.
 
 :::caution
-Field names cannot be changed, so ensure that you have used the correct Field names.
+FlutterFlow does not provide an in-place field rename. Choose field names carefully. Changing a field name later requires adding the replacement field, migrating existing documents, updating every reference, and then removing the old field only after the migration is complete.
+:::
+
+:::tip[Plan before production]
+Decide which fields are required, how documents relate, and which queries the app needs. Then configure and test [Firestore Security Rules](firestore-rules.md) and deploy any required indexes. A FlutterFlow schema is not an authorization boundary, and every read can affect Firestore usage and cost.
 :::
 
 To define the schema (create fields) for the document:
@@ -111,3 +116,4 @@ Example prompts:
 
 :::note
 To learn more about custom data types within FlutterFlow, [check this doc](../../../resources/data-representation/data-types#built-in-data-types)
+:::

@@ -15,13 +15,14 @@ keywords:
   - Database
   - Subcollections
   - Cloud Firestore
+last_verified: 2026-09-02
 ---
 # Creating Subcollections
 
 [Collections](creating-collections.md) that are created inside the document are called subcollections. For example,
 you could have a 'comments' subcollection inside the 'posts' collection to store a post's comments.
 
-Subcollection is best when you have several queries/filters or search on a collection based on the other collection. For example, loading or searching the comments of a specific post. (i.e., show all comments of a post with more likes.)
+A subcollection is useful when child records naturally belong to a parent document, such as comments for one post. Use a top-level collection with a parent reference instead when most queries need to search across all parents.
 
 :::caution[Feature Completion]
 At this time, FlutterFlow supports one level of nesting (e.g., collection -> subcollection). Second-level nesting is not currently supported ( e.g., collection -> subcollection 1 -> subcollection 2.)
@@ -45,6 +46,10 @@ In this section, you'll learn to work with subcollections by building an example
 * You can create a subcollection document under an existing reference if there is a subcollection defined.
 * You can either specify the reference to query a subcollection (UserA -> favorites) or can do a “collectionGroup” query across all subcollections (all Users -> Favorites) by not specifying the reference.
 
+:::
+
+:::warning[Deletion and collection-group queries]
+Deleting a parent document does **not** delete its subcollections. Implement and test an explicit cleanup process when child data must be removed. A collection-group query searches every subcollection with the same collection ID and can require a collection-group index and compatible version 2 security rules.
 :::
 
 Before we begin, we need to identify the collections and define the database structure. So looking at the requirements, it's very clear that we'll need two collections. One for storing chat room details and another for storing its messages. And we need to display the messages only for a specific chat room. So, having the message collection as a subcollection of the chat rooms seems to be a good option.

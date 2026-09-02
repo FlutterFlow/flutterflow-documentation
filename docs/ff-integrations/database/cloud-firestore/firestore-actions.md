@@ -16,10 +16,15 @@ keywords:
   - Actions
   - Cloud Firestore
 toc_max_heading_level: 5
+last_verified: 2026-09-02
 ---
 # Firestore Actions
 
 The Firestore action allows you to create, update, or delete a record from a Firestore Collection.
+
+:::warning[Security comes from rules]
+Every mobile or web client request is evaluated by deployed [Firestore Security Rules](firestore-rules.md). Hiding an action in the UI, filtering a query, or defining a FlutterFlow schema does not authorize access. Test allowed and denied reads and writes before publishing.
+:::
 
 :::info[Prerequisites]
 
@@ -59,6 +64,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 8. Similarly, add the field for the other UI elements.
 9. By default, documents are added with an auto-generated ID. However, if you prefer to use your own ID for the document, you can enable the **Custom ID** toggle.
 
+Custom IDs must be unique within the collection. Creating a document at an existing custom ID can overwrite or fail according to the generated operation and deployed rules, so validate the ID and prevent accidental reuse.
+
 <div class="video-container"><iframe title="Firestore Actions interactive tutorial" src="https://www.loom.com/embed/cb4db8e0ec364d63ade1c8ddb8f40e49?sid=c4b45e2d-4d89-4544-a7f9-86c6bd11566a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
@@ -92,6 +99,8 @@ Follow the steps below to define this action to any widget:
 4. On the right side, search and select the **Firestore** > **Read Document** action.
 5. Now, **Select Reference to Read** data from.
 6. Provide the **Action Output Variable Name**. This will be used to store the document data.
+
+Handle the case where the reference does not exist or the read is denied. Do not assume the action output is populated until the action completes successfully.
 
 <p></p>
 
@@ -164,6 +173,8 @@ To manually query a collection, follow the steps below to define this action to 
 7. You can also [Filter](#filtering-a-collection-query) and [Order](#ordering-a-collection-query) the query result.
 8. Provide the **Action Output Variable Name**. This will be used to store the query result.
 
+Keep result sets bounded with filters and limits. Firestore charges for reads and evaluates queries against security rules; rules are not post-query filters. Some compound queries require an index, and the Firebase error includes a link for creating a missing index.
+
 <div class="video-container"><iframe title="Firestore Actions interactive tutorial" src="https://www.loom.com/embed/f416df1ad705467780a389c6381eae77?sid=776597d6-4574-40f1-8339-d5aedb0acf92" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
@@ -231,6 +242,8 @@ When working with databases, you often need to create, update, or delete data. T
 
 By enabling Firestore batch write, you can group multiple operations and send them to the database as a single request. With this, either all the operations within the batch will succeed or none of them will be applied. This guarantees data consistency, so you don't end up with a partially updated state if something goes wrong during the process.
 
+All operations in the batch must pass security rules, and the complete batch is subject to Firestore request, write, and payload limits. Split large workloads and use a trusted backend for privileged or high-volume processing.
+
 :::tip
 * You can learn more about
 [**Firestore Batch Write**](https://firebase.google.com/docs/firestore/manage-data/transactions#batched-writes).
@@ -261,6 +274,8 @@ To do so:
 1. Ensure you have added a **Query Collection** or **Document from Reference** on a widget with **Single Time Query** disabled.
 2. Now, on the widget with **Query Collection** or **Document from Reference**, open the **Action Flow Editor** and set **On Data Change** as the [Action Trigger](../../../resources/control-flow/functions/action-triggers.md). This ensures that any actions you add will be triggered whenever the data is updated, added, or deleted.
 3. You can now [add any action](../../../resources/control-flow/functions/action-flow-editor.md#adding-an-action-example) you want to perform, such as showing a notification, refreshing the UI, or fetching related data.
+
+Design this flow to be idempotent. A listener can emit more than once, reconnect, or receive a change caused by the action itself; writing back to the watched data without a guard can create an action loop.
 
 :::info
 If you are using this trigger on a ListView, make sure to **disable** the **Infinite Scroll**.

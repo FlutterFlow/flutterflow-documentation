@@ -15,12 +15,17 @@ keywords:
   - Database
   - Quickstart
   - Local Storage
+last_verified: 2026-09-02
 ---
 # SQLite
 
 SQLite is a compact, efficient database management system. Unlike conventional databases that require a server, SQLite is serverless and embeds directly into applications.
 
-It's perfect for mobile apps where resources are limited, and a full-fledged database server is impractical. For example, it's ideal for a mobile app that needs to store data locally, such as a personal finance tracker or a health record app, especially when offline functionality is required.
+It is useful for mobile apps that need structured local data and offline access without a database server. SQLite is local storage, not a synchronization service: it does not automatically share data between devices, back up user records, resolve conflicts, or restore data after the app's storage is cleared.
+
+:::warning[Sensitive local data]
+The database file is not encrypted by default. Do not assume that SQLite alone protects financial, health, authentication, or other sensitive data. Apply platform-appropriate encryption, secure key management, access controls, retention, backup, and privacy design for your risk model.
+:::
 
 :::caution
 Currently, we don't support SQLite on Web-based apps.
@@ -50,7 +55,9 @@ To enable SQLite in FlutterFlow, navigate to Settings and Integrations > Integra
 
 ## 2. Database configuration
 
-In the database configuration step, you'll need to upload your SQLite database file and assign a name to it. This process is crucial for initializing the database when your app launches.
+In the database configuration step, upload your SQLite database file and assign a name to it. The file provides the initial database installed with the app.
+
+Plan schema migrations before changing that file for an app users have already installed. Replacing the bundled database in a later build does not by itself guarantee that each device's existing writable database will be upgraded or that user-created data will be preserved.
 
 If you don't yet have an SQLite database, you can easily create one using tools like
 [sqlitebrowser](https://sqlitebrowser.org/). Simply download [sqlitebrowser](https://sqlitebrowser.org/dl/), create a new database, set up your tables, and optionally add some data. After preparing your database, upload the file to FlutterFlow to integrate it with your app.
@@ -58,7 +65,7 @@ If you don't yet have an SQLite database, you can easily create one using tools 
 For this example, we'll create a "Notes" table with `ID`, `Title`, `Details`, `DueDate`, and `IsCompleted` as columns.
 
 :::warning
-It is advisable to avoid using any SQL reserved keywords such as `type` and `data` as column names to prevent potential build errors or unexpected behavior. SQLite reserves certain words for its SQL syntax, and using these as identifiers without proper handling may cause issues. For a comprehensive list of reserved keywords, refer to the [**SQL reserved words**](https://en.wikipedia.org/wiki/List_of_SQL_reserved_words).
+Avoid SQL keywords such as `type` and `data` as column names because they can cause build errors or unexpected behavior when they are not quoted correctly. See the authoritative [SQLite Keywords](https://www.sqlite.org/lang_keywords.html) list and quoting rules.
 :::
 
 Here's how you can create and configure the database:
@@ -99,6 +106,10 @@ In general, to add any query, you need to provide a name, the query statement, a
 * To use variables, simply use the syntax `${variableName}`. For example: `SELECT \* FROM Notes WHERE id = ${noteId}`
 * When passing string or text data in queries, enclose variables in single quotes, like `${title}`, to signify them as strings.
 ![img_1.png](imgs/img_1.png)
+:::
+
+:::danger[Query variables are not prepared parameters]
+FlutterFlow's `${variableName}` syntax inserts values into the generated SQL string. Do not let untrusted input supply SQL fragments, identifiers, sort directions, or raw expressions. Validate numeric and identifier-like inputs against strict allowlists. For arbitrary user-entered text or other sensitive queries, use custom code that calls SQLite with bound `?` arguments rather than manual quoting; simply surrounding a value with single quotes does not prevent SQL injection.
 :::
 
 Below are the queries that we'll require for this example:
@@ -251,7 +262,7 @@ Check out the complete [**example project**](https://app.flutterflow.io/project/
 <summary>Can SQLite handle complex data structures compared to App State Variables?</summary>
 
 
-Yes, SQLite can handle complex data structures much more effectively. It allows for structured data storage, complex queries, sorting, and filtering, which are challenging to implement with app state variables.
+SQLite is usually a better fit for relational, structured datasets that need queries, sorting, filtering, indexes, or transactions. App State is simpler for small UI or session values. Choose based on lifecycle, query needs, sensitivity, and data volume rather than assuming one is always better.
 
 
 </details>
@@ -259,7 +270,7 @@ Yes, SQLite can handle complex data structures much more effectively. It allows 
 <details>
 <summary>Is SQLite a good choice for apps that require offline functionality?</summary>
 
-Absolutely. SQLite stores data locally, making it an excellent choice for apps that need to operate offline. Users can access and manipulate data without needing an internet connection.
+SQLite can read and write local data without an internet connection. If the app also needs cloud backup or cross-device state, you must design and test a separate synchronization layer, conflict policy, authentication model, and retry behavior.
 
 </details>
 
@@ -267,7 +278,7 @@ Absolutely. SQLite stores data locally, making it an excellent choice for apps t
 <summary>Will using SQLite affect my app's performance compared to using App State Variables?</summary>
 
 
-SQLite is designed to be lightweight and efficient, so it generally won't negatively impact your app's performance. In fact, for larger data sets, it's more efficient than storing data in app state variables.
+SQLite is lightweight, but performance depends on schema design, indexes, query shape, result size, transactions, and device storage. Measure representative data on target devices and avoid loading unbounded result sets into the UI.
 
 </details>
 
@@ -275,7 +286,7 @@ SQLite is designed to be lightweight and efficient, so it generally won't negati
 <summary>How does SQLite ensure data security and integrity?</summary>
 
 
-SQLite maintains data integrity and supports transactional operations. This means it ensures the database state remains consistent even in cases of unexpected interruptions, like app crashes or power failures.
+SQLite supports constraints and transactions that can preserve database consistency when they are used correctly. It does not automatically validate business rules, encrypt the database, authenticate users, or prevent an authorized device user from accessing the file. Define constraints and transactions explicitly and test interruption and migration scenarios.
 
 
 </details>

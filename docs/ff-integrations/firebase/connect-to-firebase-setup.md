@@ -19,6 +19,7 @@ keywords:
   - connect a FlutterFlow project to Firebase
 ai_queries:
   - connect a FlutterFlow project to Firebase
+last_verified: 2026-09-02
 ---
 # Connect to Firebase
 
@@ -36,7 +37,7 @@ Hit **+ Create Project**. You’ll see a popup where you can confirm your projec
 
 #### Step 3: Connect Your Google Account
 Choose **Create** or **Sign in with Google** to link your Firebase account.
-If asked, you must grant the access requested from 'flutterflow.io' to be able to create and configure the Firebase project on your behalf. Here, you can **Select all** and click **Continue**.
+If Google asks for permission, review the requested scopes and grant the access required for FlutterFlow to create and configure the project on your behalf. Use an account and organization policy appropriate for the project; do not grant access from an unrelated or personal production account without reviewing the permissions.
 
 <img src="/img/firebase/warning-firebase.png" alt="Alt text" class="small-image"/>
 
@@ -48,7 +49,7 @@ As soon as the process is completed, you will see the following view in your Fir
 <img src="/img/firebase/firebase-created-managed.png" alt="Firebase Project Created" class="landscape-image"  />
 
 #### Enable Firebase Authentication
-If you want to use the Firebase Authentication in your app or the Firebase Content Manager, you must enable the authentication in the Firebase console and enable the 'Email/Password' sign-in.
+If your app uses Firebase Authentication, enable Authentication in the Firebase console and configure only the sign-in providers your app needs. The Firestore Content Manager connection also requires Email/Password sign-in to be enabled for its managed access flow.
 
 #### Enable Firebase Storage
 If you plan to use Firebase storage in your app, click on the Enable Storage on Firebase and enable it on Firebase console.
@@ -90,8 +91,11 @@ In the dialog, scroll down to **Setup Firebase**, check that option, and click *
 8. Select **+ Add Another Role** again. Under **Select A Role**, search for **Cloud Functions Admin**. Select **Cloud Functions Admin**.
 
 :::info
-Note: The option to add Cloud Functions Admin may only show up if you are on a Firebase Blaze plan. In addition, you may need to  [enable cloud functions](https://console.cloud.google.com/marketplace/product/google/cloudfunctions.googleapis.com) first.
-Cloud Functions Admin permissions are required for several FlutterFlow features (e.g., Push Notifications). Adding this Cloud Functions Admin is optional, but not doing so will prevent you from using any functions that require Cloud Functions.
+Cloud Functions Admin permissions are required for FlutterFlow features that deploy Cloud Functions, such as Push Notifications. This role is optional if you do not use those features. Enabling the Cloud Functions API and upgrading the Firebase project to the Blaze plan are separate prerequisites for deploying functions; the billing plan does not control whether the IAM role appears.
+:::
+
+:::caution[Grant only required project access]
+These roles let FlutterFlow configure resources in this Firebase project. Grant them only to the documented FlutterFlow principal and only on the intended project. Periodically review project members and remove access when FlutterFlow no longer needs to manage the project.
 :::
 
 #### Connect and autogenerate files
@@ -143,14 +147,12 @@ To configure Firestore Database:
 
 <img src="/img/firebase/firebase-db-enable.png" alt="Alt text"  />
 
-2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next.
+2. Next, set your **Firebase security rules**. Prefer production mode and deploy rules that match your app's access model. If you temporarily select **Start in test mode** for a disposable prototype, treat the database as publicly accessible during the test window and replace those rules before adding real user data or sharing the app.
 
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
-:::info
-We recommend updating your Firebase security rules before deploying your app. Please see [this
-link](../database/cloud-firestore/firestore-rules.md) for additional information on
-Firestore security rules.
+:::warning
+Test-mode rules are not production security. Configure, test, and deploy [Firestore Security Rules](../database/cloud-firestore/firestore-rules.md) before storing sensitive data. Authentication alone does not restrict a collection unless the rules enforce the intended authorization.
 :::
 
 3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.
@@ -182,11 +184,11 @@ If you add a filtering/ordering on the query or change the existing filtering/or
 
 ## Enable Billing
 
-If you want to deploy [Cloud Functions](https://firebase.google.com/products/functions) (e.g., Braintree payments, Push Notifications) or use [Firebase Cloud Storage](https://firebase.google.com/products/storage), you will need to enable billing for your Firebase project. Please follow these steps to enable billing:
+To deploy [Cloud Functions](https://firebase.google.com/products/functions) used by features such as Braintree payments or Push Notifications, or to use [Cloud Storage for Firebase](https://firebase.google.com/products/storage), place the project on the pay-as-you-go Blaze plan. Since February 3, 2026, Cloud Storage for Firebase requires Blaze to provision or retain access to buckets; eligible no-cost usage can still apply on Blaze.
 
 1. From the Firebase dashboard of your project, navigate to the far left menu. Under Build, select **Functions** and then select **Upgrade project**.
 
-2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a new page to provide your payment information. Otherwise, you can set a project budget. Please see [this link](https://firebase.google.com/pricing) for additional information on Firebase pricing.
+2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a page to provide payment information. Otherwise, you can select an existing billing account. Configure budgets and alerts, but remember that budget alerts notify you and do not automatically cap usage or charges. Review [Firebase pricing](https://firebase.google.com/pricing) and the [current Cloud Storage billing requirements](https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024).
 
 <img src="/img/firebase/billing.png" alt="Alt text"  />
 

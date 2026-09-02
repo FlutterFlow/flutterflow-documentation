@@ -15,11 +15,16 @@ keywords:
   - Database
   - Content Manager
   - Cloud Firestore
+last_verified: 2026-09-02
 ---
 # Firestore Content Manager
 
 The Firestore Content Manager provides an easy way to visually create, edit, and add documents
 to your [**Firestore database**](getting-started.md).
+
+:::warning[Production data]
+Content Manager changes live Firestore documents. Confirm that you selected the intended Firebase project and database, restrict project access, and back up important data before bulk imports or destructive edits. The schema shown in FlutterFlow is a typing aid, not a substitute for security rules or data validation.
+:::
 
 :::info
 Subcollections are not supported in Content Manager at this time.
@@ -76,6 +81,8 @@ To successfully upload the data:
 * Ensure you have header rows in your CSV file. The header should contain the exact name of the fields you have in your collection.
 * If you are uploading lat-long data, make sure you format it like (lat, lng) or [lat,lng].
 * Dates must be in a format like YYYY-MM-DD HH:MM:SS, where hours should be in 24hrs format (e.g., 2022-11-07 13:05:32).
+* Test the import with a small row count first. Validate types, references, timestamps, list values, and missing fields before importing the complete file.
+* Keep a recoverable copy of the source data. A successful import can create many live documents and is not an automatic migration rollback.
 :::
 
 To better understand, here is the sample places collection and CSV file:
@@ -109,7 +116,7 @@ will open.
 
 <p></p>
 
-If your CSV file contains additional fields, you'll go through a quick *field import process* that will add the new fields with their data in your collection.
+If your CSV file contains additional fields, you'll go through a *field import process* that can add those fields to the FlutterFlow schema and imported documents. Review every inferred field name and type before confirming; inconsistent types can break queries or generated field access later.
 
 <div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/52e2f2afce104f63a87e1e935ebd8e1f?sid=435a3702-a1cf-4a60-a97c-5b8d0f2a55f2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
