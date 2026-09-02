@@ -2,8 +2,19 @@
 title: Introduction to Components
 sidebar_position: 0
 slug: /resources/ui/components
+description: >-
+  Components in FlutterFlow are reusable widgets. You design a widget once and
+  can reuse it throughout your app to save time, ensure consistency, and make it
+  easier to maintain.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Introduction to Components
+  - Components
+  - Ui
 ---
-
 # Components
 
 Components in FlutterFlow are reusable widgets. You design a widget once and can reuse it throughout your app

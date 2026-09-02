@@ -3,8 +3,19 @@ title: Page Actions & Lifecycle
 slug: page-lifecycle
 sidebar_position: 5
 toc_max_heading_level: 5
+description: >-
+  In FlutterFlow and Flutter, understanding the page lifecycle, or the stages a
+  page goes through from creation to disposal, is essential for managing
+  resources and data effectively.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Page Actions & Lifecycle
+  - Page Lifecycle
+  - Pages
 ---
-
 # Page Lifecycle
 
 In FlutterFlow and Flutter, understanding the page lifecycle, or the stages a page goes
@@ -26,7 +37,7 @@ Let's delve into the key moments in the lifecycle of a **Page**:
 
 In FlutterFlow, most of these lifecycle phases are handled internally by FlutterFlow's architecture.
 However, FlutterFlow exposes some lifecycle methods so that you, as a developer, can decide what additional
-configurations to load upon initialization and when to re-render the UI based on interactions. 
+configurations to load upon initialization and when to re-render the UI based on interactions.
 
 
 ## Page-Level Action Triggers
@@ -124,9 +135,8 @@ To create a shortcut, use the **On Shortcut Press** action trigger, then enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ABFMLi4ozS0u5xKOTjwi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ABFMLi4ozS0u5xKOTjwi?embed&show_copy_link=true" title="Page Actions & Lifecycle interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -180,8 +190,8 @@ about **states and state management, [refer to this guide](../../../ff-concepts/
 **Page state** refers to the information that a page tracks about its current
 condition or the data it displays. This can include things like which tabs are
 active, the contents of a form, or any user interactions. Managing state is
-crucial for dynamic pages that interact with user inputs or load varying data. Page State 
-variables are only accessible within the given Page scope. 
+crucial for dynamic pages that interact with user inputs or load varying data. Page State
+variables are only accessible within the given Page scope.
 
 This type of variable can be useful for storing data that needs to be shared between different
 widgets on the page, such as form data, a search query, and filtering or sorting options.
@@ -210,7 +220,7 @@ To create a new Page State variable on your page, follow the steps:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/Qhg62nqMjhg8973XPQhb?embed&show_copy_link=true"
         title="Create Page State"
         style={{
@@ -296,7 +306,7 @@ update, add an **Update Page State** action.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/ezZO22YHQDqTHeg0uQ8Q?embed&show_copy_link=true"
         title="Update Page State"
         style={{
@@ -317,7 +327,7 @@ update, add an **Update Page State** action.
 </div>
 
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 

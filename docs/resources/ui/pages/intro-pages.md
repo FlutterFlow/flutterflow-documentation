@@ -2,19 +2,27 @@
 title: Introduction to Pages
 slug: /resources/ui/pages
 sidebar_position: 1
+description: 'In FlutterFlow, a Page represents a single screen in your app.'
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Introduction to Pages
+  - Pages
+  - Ui
 ---
-
 # Introduction to Pages
 
 In FlutterFlow, a **Page** represents a single screen in your app. Under-the-hood pages use a **Scaffold**, a [foundational widget from Flutter](https://api.flutter.dev/flutter/material/Scaffold-class.html) that provides a structured layout for a screen within your app. The Scaffold offers essential elements like the AppBar and Body, allowing you to easily build screens.
 
-Pages are composed of various UI elements, or widgets. Widgets are added to a page when they are added to the page's **Widget Tree**. 
+Pages are composed of various UI elements, or widgets. Widgets are added to a page when they are added to the page's **Widget Tree**.
 
 :::note[Widget Tree]
 The **Widget Tree** is a structural representation of how widgets are organized within a Page. To learn more, check out the [**Widget Overview**](../widgets/intro-widgets.md#widget-tree) documentation.
 :::
 
-In FlutterFlow, pages are automatically configured to handle [routing](https://docs.flutterflow.io/resources/ui/pages/properties#route-settings). Additionally, pages can have [input parameters](https://docs.flutterflow.io/resources/ui/pages/properties#page-parameters) and [state variables](https://docs.flutterflow.io/resources/ui/pages/page-lifecycle#page-state). 
+In FlutterFlow, pages are automatically configured to handle [routing](https://docs.flutterflow.io/resources/ui/pages/properties#route-settings). Additionally, pages can have [input parameters](https://docs.flutterflow.io/resources/ui/pages/properties#page-parameters) and [state variables](https://docs.flutterflow.io/resources/ui/pages/page-lifecycle#page-state).
 
 :::info
 For more details on how to use Scaffold and the various Page Elements in FlutterFlow, see the dedicated **[Page Elements](page-elements.md)** guide.
@@ -49,9 +57,8 @@ To create an empty FlutterFlow Page from scratch, follow these steps:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ocBbnPspp26FKv75YggO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ocBbnPspp26FKv75YggO?embed&show_copy_link=true" title="Introduction to Pages interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -84,7 +91,7 @@ To utilize a template from FlutterFlow, follow these steps:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/JBhxcBBPb7r1Yk6YwehS?embed&show_copy_link=true"
         title="Create a page from a popular template"
         style={{
@@ -114,7 +121,7 @@ You can quickly create a page with [FlutterFlow Designer](https://designer.flutt
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/oRmGZOkvdnM844VZfHLq?embed&show_copy_link=true"
         title="Generate with Designer"
         style={{
@@ -154,9 +161,8 @@ Currently, FlutterFlow doesn't support importing SVG elements from Figma frames.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/3JLrZYc1ZgRp6upm087m?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/3JLrZYc1ZgRp6upm087m?embed&show_copy_link=true" title="Introduction to Pages interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -173,8 +179,3 @@ Currently, FlutterFlow doesn't support importing SVG elements from Figma frames.
         allow="clipboard-write">
     </iframe>
 </div>
-
-
-
-
-	

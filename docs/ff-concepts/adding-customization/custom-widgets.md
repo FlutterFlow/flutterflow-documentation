@@ -1,12 +1,21 @@
 ---
 slug: /concepts/custom-code/custom-widgets
 title: Custom Widgets
-description: Learn how to create and use custom widgets in your FlutterFlow app to enhance its user interface.
-tags: [Custom Widgets, Custom Code]
+description: >-
+  Learn how to create and use custom widgets in your FlutterFlow app to enhance
+  its user interface.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [FlutterFlow, Custom Widgets, Customizations, Flutter, Dart, Pub.dev]
+keywords:
+  - FlutterFlow
+  - Custom Widgets
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
 ---
-
 # Custom Widgets
 
 Custom Widgets allow you to create unique and reusable UI components that extend beyond the
@@ -28,7 +37,7 @@ FlutterFlow. However, when you want to include a UI package from [**pub.dev**](h
 
 ## Creating a New Custom Widget
 
-To create a new custom widget, add a new Custom Code snippet and follow the quick guide below. In 
+To create a new custom widget, add a new Custom Code snippet and follow the quick guide below. In
 this example, we will create a `ProductRatingBar` widget that uses a pub.dev dependency to display the rating bar UI. It will also take a callback action to provide the rating value back to the caller.
 
 
@@ -38,9 +47,8 @@ this example, we will create a `ProductRatingBar` widget that uses a pub.dev dep
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/8Gi8bElib2Lsy12J9Sww?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/8Gi8bElib2Lsy12J9Sww?embed&show_copy_link=true" title="Custom Widgets interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -68,11 +76,11 @@ For custom widgets, it is mandatory to specify both width and height. These prop
 
 ## Add Dependency to Custom Widgets
 
-In this example, we are using the 
-[**flutter_rating_bar**](https://pub.dev/packages/flutter_rating_bar) dependency to create a 
-`ProductRatingBar` widget for our 
-Product pages. See how we utilize the example code from pub.dev and add the customized widget in 
-FlutterFlow: 
+In this example, we are using the
+[**flutter_rating_bar**](https://pub.dev/packages/flutter_rating_bar) dependency to create a
+`ProductRatingBar` widget for our
+Product pages. See how we utilize the example code from pub.dev and add the customized widget in
+FlutterFlow:
 
 <div style={{
     position: 'relative',
@@ -80,9 +88,8 @@ FlutterFlow:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/SnBLPmzwrGSwnx3gNqAJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SnBLPmzwrGSwnx3gNqAJ?embed&show_copy_link=true" title="Custom Widgets interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -115,9 +122,8 @@ To add a custom widget to your page, you can drag and drop it from the Widget Pa
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/9xerjlQ5oweTvZwEYFpC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9xerjlQ5oweTvZwEYFpC?embed&show_copy_link=true" title="Custom Widgets interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -138,9 +144,9 @@ To add a custom widget to your page, you can drag and drop it from the Widget Pa
 
 ### Providing the Callback Actions
 
-Since we created the `onRating` callback action in our custom widget, we must provide an action 
-when setting the widget in page. In this example, we set the `ratingValue` to the page state 
-variable `userRating`. 
+Since we created the `onRating` callback action in our custom widget, we must provide an action
+when setting the widget in page. In this example, we set the `ratingValue` to the page state
+variable `userRating`.
 
 <div style={{
     position: 'relative',
@@ -148,9 +154,8 @@ variable `userRating`.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/GB1Y3wH0MeIvJcu9EL4S?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/GB1Y3wH0MeIvJcu9EL4S?embed&show_copy_link=true" title="Custom Widgets interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -170,7 +175,7 @@ variable `userRating`.
 
 ## Preview Widget
 
-FlutterFlow also allows you to view your custom widget once it is successfully compiled. 
+FlutterFlow also allows you to view your custom widget once it is successfully compiled.
 
 ![preview-custom-widget.avif](imgs/preview-custom-widget.avif)
 
@@ -181,10 +186,3 @@ and other properties like [**Callback Actions**](custom-code.md#callback-action-
 [**Pub Dependencies**](custom-code.md#adding-a-pubspec-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::
-
-
-
-
-
-
-

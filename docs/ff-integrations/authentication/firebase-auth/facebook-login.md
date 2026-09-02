@@ -2,11 +2,18 @@
 slug: /integrations/authentication/firebase/facebook
 title: Facebook Login
 description: Learn how to add Facebook login in your FlutterFlow app.
-tags: [Facebook Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 4
-keywords: [FlutterFlow, Facebook Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Facebook Login
+  - Authentication
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -40,7 +47,11 @@ Adding Facebook sign-in comprises the following steps:
 
 ### 1. Create app on Facebook
 
-When you create an app on the [Facebook Developer Console](https://developers.facebook.com/), you are given a unique *App ID* and *App secret*, ensuring secure communication between your app and Facebook's servers. Additionally, it lets you define required permissions and user data access and also restricts login origins for enhanced security.
+When you create an app on the [Meta for Developers dashboard](https://developers.facebook.com/), you receive an *App ID* and *App Secret*. The App ID identifies the integration; the App Secret is a server credential and must remain confidential.
+
+:::danger[Protect the App Secret]
+Paste the App Secret only into Firebase's Facebook provider configuration. Never put it in FlutterFlow app state, generated client code, screenshots, logs, analytics, or source control. Rotate it in Meta and update Firebase immediately if it is exposed.
+:::
 
 Here's is how you create app on Facebook:
 <div style={{
@@ -48,9 +59,8 @@ Here's is how you create app on Facebook:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/e6gys6yiCM1xiUNLBHdD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/e6gys6yiCM1xiUNLBHdD?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -82,9 +92,8 @@ To do so follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/96Nf3RC4DAW1kOvdZ7yA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/96Nf3RC4DAW1kOvdZ7yA?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -109,9 +118,8 @@ To do so follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wiYI8lcR2fTZ7EfSLR1S?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wiYI8lcR2fTZ7EfSLR1S?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -136,7 +144,7 @@ To do so follow the steps below:
 
 ### 3. Add email permission
 
-When users log in using third-party providers (like Google or Facebook), fetching their email addresses reduces the steps they need to take during sign-up. For Facebook sign-in, to access a user's email, you must add email permission in Firebase developer console.
+When users log in using third-party providers, fetching an email address can reduce signup steps. For Facebook sign-in, request the `email` permission in the Meta app configuration. A user's email still might be unavailable, so do not make your login flow depend on that field being present.
 
 Here's how you do it:
 <div style={{
@@ -144,9 +152,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vqXHHDgwcplEd8uAlRov?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vqXHHDgwcplEd8uAlRov?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -175,9 +182,8 @@ Here's how you enable Facebook auth in Firebase:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/yYIIFNIz6VnggYUX9KXL?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/yYIIFNIz6VnggYUX9KXL?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -205,9 +211,8 @@ To enable the Facebook authentication in FlutterFlow, follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DLMx6pvF6QltUf8edST8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DLMx6pvF6QltUf8edST8?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -239,9 +244,8 @@ When you click the sign-in button, it will trigger the 'Log In' action, promptin
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jexLJMpednsmFGACA0AB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jexLJMpednsmFGACA0AB?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -270,7 +274,9 @@ To let users log out of your app, you can use the [Logout](auth-actions.md#logou
 
 ### 9. Prepare to test the app
 
-Facebook Sign-In functionality does not work in Run or Test Mode. You can test your app on a real device or emulator using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
+FlutterFlow's Firebase Facebook action currently targets native Android and iOS builds, not web Preview, Run, or Test Mode. Configure every target platform in Meta, then test a signed native build on a device or emulator using FlutterFlow's Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and [physical-device setup](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device).
+
+Before moving the Meta app to production, complete its privacy-policy, data-deletion, business-verification, permission-review, and test-user requirements as applicable. Request only permissions your app actually uses and retest after any Meta SDK or policy change.
 
 ### 10. Verify user creation
 

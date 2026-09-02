@@ -1,12 +1,21 @@
 ---
 slug: /designer/export
 title: Export
-description: Export your FlutterFlow Designer designs as PNGs, agent-ready prompts, or directly into a FlutterFlow project.
-tags: [Export, FlutterFlow Designer, FlutterFlow]
+description: >-
+  Export your FlutterFlow Designer designs as PNGs, agent-ready prompts, or
+  directly into a FlutterFlow project.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 1
-keywords: [export design, FlutterFlow Designer export, export PNG, agent prompt export, export to FlutterFlow]
+keywords:
+  - export design
+  - FlutterFlow Designer export
+  - export PNG
+  - agent prompt export
+  - export to FlutterFlow
 ---
-
 # Export
 
 Once your screens are finalized, you can export your design for implementation. FlutterFlow Designer provides flexible export options depending on whether you want static assets, reusable prompts, or direct integration into FlutterFlow.
@@ -28,3 +37,7 @@ To export the entire storyboard, open the top-left **FF Designer** menu and choo
 To export a single frame, select a specific frame and use the **Export** section in the right panel. Use this when you only need to implement a particular screen.
 
 ![export-single-screen.avif](imgs/export-single-screen.avif)
+
+## Related documentation
+
+See [Import from FlutterFlow](/designer/import) for a related FlutterFlow workflow.

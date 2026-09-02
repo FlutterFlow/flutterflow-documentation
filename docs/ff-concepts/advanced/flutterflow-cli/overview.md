@@ -1,13 +1,21 @@
 ---
 slug: /flutterflow-cli
 title: Installation
-description: Learn how to download and manage your FlutterFlow projects locally using the FlutterFlow CLI.
-tags: [CLI, Collaboration, FlutterFlow]
+description: >-
+  Learn how Installation is represented in FlutterFlow generated code and where
+  it fits in an exported app.
+tags:
+  - FlutterFlow
+  - CLI
+  - AI
 sidebar_position: 1
-keywords: [CLI, Collaboration, FlutterFlow, Projects, Local Management]
+keywords:
+  - CLI
+  - Collaboration
+  - FlutterFlow
+  - Projects
+  - Local Management
 ---
-
-
 # FlutterFlow CLI
 The [FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli) lets you manage FlutterFlow projects from the command line. You can create new projects, modify existing ones using AI agents, and download them to your local machine.
 

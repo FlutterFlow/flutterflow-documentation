@@ -2,22 +2,30 @@
 title: Alert Dialog
 slug: /concepts/alerts/alert-dialog
 sidebar_position: 0
-tags: [Actions, Alerts & Notifications]
-keywords: [FlutterFlow, Actions, Alerts & Notifications, Alert Dialog]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Actions
+  - Alerts & Notifications
+  - Alert Dialog
+description: >-
+  Learn how to show informational, confirmation, and custom dialogs in
+  FlutterFlow, return a result, and control dismissal and positioning.
+last_verified: 2026-09-01
 ---
-
 # Alert Dialog
 
-The action allows you to alert the user of important situations that require acknowledgment in the form of a pop-up or custom-designed dialog. With this feature, you can choose to display a pre-built pop-up or create a custom design that suits your specific requirements.
+Use the **Alert Dialog** action to pause an action flow and show an informational, confirmation, or custom dialog. Informational and confirmation dialogs use FlutterFlow's built-in layout. A custom dialog displays one of your components and can return a value to the action flow that opened it.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/i3HbwgcbqbLyJQPRjr8a?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/i3HbwgcbqbLyJQPRjr8a?embed&show_copy_link=true" title="Alert Dialog interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -38,11 +46,11 @@ The action allows you to alert the user of important situations that require ack
 
 ### Types of Alert Dialog
 
-We allow you to define two types of Alert Dialog Actions:
+FlutterFlow provides three alert dialog types:
 
 - **Informational Dialog:** To show some information the user should be aware of before interacting with the app. Contains only a single action button.
-- **Confirm Dialog:** This dialog can contain two action buttons. It can trigger the subsequent action based on whether a user confirms the action. It can also be used before performing any non-revertable user action, for example, before deleting a user account.
-- **Custom Dialog**: This is a fully customizable dialog that you can create using [components](../../resources/ui/components/intro-components.md).
+- **Confirm Dialog:** Shows dismiss and confirm buttons and produces a Boolean **Confirm Dialog Response** for a following conditional action. Use it before a consequential operation, such as deleting an account.
+- **Custom Dialog:** Displays a reusable [component](../../resources/ui/components/intro-components.md). The component can dismiss itself and optionally return a typed value.
 
 ### Adding Informational Dialog [Action]
 
@@ -60,9 +68,8 @@ Follow the steps below to add this type of action to any widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/99GFeVxk2dvIX7kFatOP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/99GFeVxk2dvIX7kFatOP?embed&show_copy_link=true" title="Alert Dialog interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -86,26 +93,20 @@ Follow the steps below to add this type of action to any widget:
 Follow the steps below to add this type of action to any widget:
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
-2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
-    1. Click on the **+ Add Action**.
-    2. On the right side, search and select **Alert Dialog**.
-    3. Set the **Alert Dialog Type** to **Confirm Dialog**.
-    4. Provide the **Title** and **Message** for the dialog. Note: You can also set it from a variable; for example, a combined text with a value from a variable.
-    5. Now, enter a **Dismiss Text** (shown on the action button that will cancel the Action) and a **Confirm Text** (shown on the action button that will trigger the Action that you will define in the next step).
-    6. Now, click on the **+** button and select **Add Conditional**.
-    7. On the right side (**Set Condition for Action**), set the **Source** to **Confirm Dialog Response**.
-        1. Under the **TRUE** section, add an action that will be triggered if a user gives confirmation.
-        2. Under the **FALSE** section, add an action that will be triggered if a user cancels this dialog.
-3. Click **Close**.
+2. Select **Actions** in the Properties panel and open the **Action Flow Editor**.
+3. Select **+ Add Action**, search for **Alert Dialog**, and choose **Confirm Dialog**.
+4. Set the **Title**, **Message**, **Dismiss Text**, and **Confirm Text**. Text values can be set from variables.
+5. Add a **Conditional** action immediately after the dialog.
+6. Set the condition **Source** to **Confirm Dialog Response**.
+7. Add confirmed actions under **TRUE** and canceled actions under **FALSE**. Closing the dialog without confirming also produces `false`.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/zlP2hl64nrid2ODbN8wb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/zlP2hl64nrid2ODbN8wb?embed&show_copy_link=true" title="Alert Dialog interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -131,23 +132,21 @@ Before you add this action, ensure you [create a component](../../resources/ui/c
 1. Select the **Widget** (e.g., Button) on which you want to add the action.
 2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
 3. Search and select the **Alert Dialog** (under *Alerts/Notifications*) action.
-4. Set the **Alert Dialog Type** to **Custom Dialog** and **Select Component**.
-5. It is recommended to set the appropriate **Width** and **Height** for the custom dialog.
-6. Optionally, you can set the **Background** and **Barrier Color** for this dialog.
-    
+4. Set **Alert Dialog Type** to **Custom Dialog**, then choose the component under **Display Component**. Supply any required component parameters.
+5. Optionally set the dialog **Width** and **Height**. The displayed component controls its own background; **Barrier Color** controls the modal overlay behind it.
+
     ![Setting background color and barrier color](imgs/custom-dialog.avif)
-    
-7. By default, this type of action blocks the following action (if any) from triggering while this action is in progress, meaning the dialog is present on the screen. However, in some cases, you might want to allow the next action (after this) to execute, for example, making an API call immediately after showing the custom loading dialog. To do so, enable **Non Blocking** option.
-8. By default, **Non Dismissble** option closes the dialog when you click outside of it. To disable this behavior, enable this option.
+
+6. Leave **Non-Blocking** off when later actions must wait for the dialog to close or read its returned value. Enable it only when the action flow should continue immediately after opening the dialog, such as when displaying a loading component while another action starts.
+7. By default, tapping the barrier outside the component dismisses the dialog. Enable **Non Dismissible** to prevent dismissal by a barrier tap. This setting does not add a close control; add a button with the [Dismiss Custom Dialog](dismiss-custom-dialog.md) action when the user needs an explicit way to close it.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/F5SinThEDKDwc337AM60?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/F5SinThEDKDwc337AM60?embed&show_copy_link=true" title="Alert Dialog interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -165,21 +164,20 @@ Before you add this action, ensure you [create a component](../../resources/ui/c
     </iframe>
 </div>
 <p></p>
-    
-9. By default, the custom dialog appears in the center of the screen. However, you can use the **Dialog Alignment** property to decide where to position the dialog on the screen.
-    
+
+8. Use **Dialog Alignment** to position a global custom dialog within the screen. Its default alignment is centered.
+
     ![Align custom dialog](imgs/align-custom-dialog.avif)
-    
-10. To position the dialog around the widget that opened it, enable the **Align with the Target Widget**, and then align using the **Target Alignment** property. **Tip**: If dialog goes out of the screen, enable **Avoid Overflow**.
+
+9. To position the dialog relative to the widget that opened it, enable **Align with the Target Widget**, then combine **Target Alignment** with **Dialog Alignment**. Enable **Avoid Overflow** if the aligned dialog would extend beyond the screen.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DwufbH1LAEpjw1dBSRYX?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DwufbH1LAEpjw1dBSRYX?embed&show_copy_link=true" title="Alert Dialog interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -197,3 +195,9 @@ Before you add this action, ensure you [create a component](../../resources/ui/c
     </iframe>
 </div>
 <p></p>
+
+### Returning a value from a custom dialog
+
+Add **Dismiss Custom Dialog** to a widget inside the displayed component and enable its **Has Value** option. FlutterFlow derives the custom dialog's output type from that dismiss action. Back on the opening **Custom Dialog** action, set **Action Output Variable Name** and use that output in later actions.
+
+All value-returning dismiss actions in the same component must use the same type. Keep **Non-Blocking** off when the next action depends on the returned value. See [Dismiss Custom Dialog](dismiss-custom-dialog.md) for the complete workflow.

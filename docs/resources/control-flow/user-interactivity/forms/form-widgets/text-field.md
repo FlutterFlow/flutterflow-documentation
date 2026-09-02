@@ -1,14 +1,27 @@
 ---
 slug: /resources/forms/textfield
 title: TextField
-tags: [Widget, TextField, Form]
-keywords: [FlutterFlow, TextField, form input, user interface, mobile app development, Flutter widget, text input]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - TextField
+  - form input
+  - user interface
+  - mobile app development
+  - Flutter widget
+  - text input
 description: Learn how to add TextField widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # TextField
+
+Use **TextField** to collect editable text. Choose the keyboard, capitalization, obscuring, formatting, and validation rules for the data you actually expect; these settings improve input but do not replace validation and authorization in your backend.
 
 The TextField widget allows users to enter text, numbers, and symbols in your app. You can use the TextField widget to build forms, send messages, dialogs, search, etc.
 
@@ -25,9 +38,8 @@ Let's see how to add a TextField widget and see an example of displaying its val
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c0a3d51c02fe4f91a1d136c857c7cd3c?sid=c05f925d-e273-4757-bac1-2e93541751d2"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c0a3d51c02fe4f91a1d136c857c7cd3c?sid=c05f925d-e273-4757-bac1-2e93541751d2" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -56,9 +68,8 @@ Here are the steps:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b210a57244004fa0b16c5cd2509ef535?sid=8041f3f7-0ca1-44aa-9916-e29ff1a89329"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b210a57244004fa0b16c5cd2509ef535?sid=8041f3f7-0ca1-44aa-9916-e29ff1a89329" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -99,9 +110,8 @@ To make a TextField multiline/auto-expand, move the **Properties Panel *>*** fin
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/2ad884402733417fb11273c89af295ed?sid=765e411d-03c1-497e-a582-90b12d613b32"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/2ad884402733417fb11273c89af295ed?sid=765e411d-03c1-497e-a582-90b12d613b32" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -144,9 +154,8 @@ When the TextField is set to [Multiline](#adding-multilineauto-expand-support) t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/76db0b318f6147bfb054da3d4d052914?sid=790ae806-7926-43d0-a602-313a6d49d492"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/76db0b318f6147bfb054da3d4d052914?sid=790ae806-7926-43d0-a602-313a6d49d492" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -186,9 +195,8 @@ To change the background color, move to the **Properties Panel > Input Decoratio
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/zOtPaZynB58l96G3MSBa?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/zOtPaZynB58l96G3MSBa?embed&show_copy_link=true" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -218,15 +226,14 @@ Here's an example of how you can add a border around the TextField:
 2. You can also set a color to the border for various states, such as when TextField is in a *Focused* or *Error* state. To do so, use the **Border Color**, **Focused Border Color**, and **Error Border Color**.
 3. To increase the border thickness, use the **Border Width** property.
 4. To create the rounded border, use the **Border Radius** property. By default, any value your enter will be set for all corners, which are TL (Top left), TR (top right), BL (bottom left), and BR (bottom right). Click on the lock icon to change each corner separately. Use the refresh icon to reset the values.
-    
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/a9db6ae4640f4e76b33e072f33faaa8f?sid=bc1c63d1-81ac-4caa-bd90-e6648e5c2184"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/a9db6ae4640f4e76b33e072f33faaa8f?sid=bc1c63d1-81ac-4caa-bd90-e6648e5c2184" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -256,9 +263,8 @@ To add content padding, move to the **Properties Panel > Input Decoration Proper
     paddingBottom: 'calc(30.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/mBq1PctGYmIc8QmHWq9R?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/mBq1PctGYmIc8QmHWq9R?embed&show_copy_link=true" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -286,9 +292,8 @@ To reduce TextField's height to as minimum as possible, select the TextField wid
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/WWXkpIT3KV8HH10v8BYp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/WWXkpIT3KV8HH10v8BYp?embed&show_copy_link=true" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -345,9 +350,8 @@ To clear a TextField, move to the **Properties Panel > Additional Properties >**
     paddingBottom: 'calc(30.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9rfrbl4Up6MHN56l4abD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9rfrbl4Up6MHN56l4abD?embed&show_copy_link=true" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -389,9 +393,8 @@ To autofocus a TextField, select the TextField widget, move to the **Properties 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/a132920158124583b7bf9182c4fe8cf3?sid=07b63ef3-135f-489b-832b-204615a43aa5"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/a132920158124583b7bf9182c4fe8cf3?sid=07b63ef3-135f-489b-832b-204615a43aa5" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -443,9 +446,8 @@ If you *Set from Variable* and run the app in preview mode, you can try entering
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/71040a89d60c4bd5b73cc66eca816497?sid=4c94a656-ce7c-4eeb-8ca8-b29ce1232b8a"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/71040a89d60c4bd5b73cc66eca816497?sid=4c94a656-ce7c-4eeb-8ca8-b29ce1232b8a" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -474,9 +476,8 @@ If you *Set from Variable* and run the app in preview mode, you can try entering
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/e3eb493f36fe4b4d93885efedd0013e3?sid=932ec328-db33-43c1-bf33-c352afe40aa1"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/e3eb493f36fe4b4d93885efedd0013e3?sid=932ec328-db33-43c1-bf33-c352afe40aa1" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -515,9 +516,8 @@ The availability and behavior of the *Auto Fill Hint* may vary by platform and u
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/5945e65f1e6d4fdeb715d80a99732340?sid=1c05a55d-6e96-4561-8282-dc85dcbb4a00"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/5945e65f1e6d4fdeb715d80a99732340?sid=1c05a55d-6e96-4561-8282-dc85dcbb4a00" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -559,9 +559,8 @@ We advise setting the delay value if you make an API call that accepts the input
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/9b17497dea6e468dae26233f43c35caf?sid=613db26e-a5e6-48f5-845d-6f5555856d91"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/9b17497dea6e468dae26233f43c35caf?sid=613db26e-a5e6-48f5-845d-6f5555856d91" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -589,9 +588,8 @@ Sometimes you might want to restrict users from entering or updating anything in
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/7e353a0effab4515a3e56aba766e66ca?sid=c0e1c60f-2128-48d7-8a54-f50447a24f43"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/7e353a0effab4515a3e56aba766e66ca?sid=c0e1c60f-2128-48d7-8a54-f50447a24f43" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -648,9 +646,8 @@ If the required format is not on the list, you can select **Custom** and specify
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/0cd7c15b38c445a9b1e3925decec1136?sid=20edc912-33c2-41cd-a099-05613848e9ab"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/0cd7c15b38c445a9b1e3925decec1136?sid=20edc912-33c2-41cd-a099-05613848e9ab" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -680,9 +677,8 @@ To filter the user input, select the TextField widget, move to the **Properties 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4b102cf593424b4fa38f5dd859354612?sid=6e577435-1bb9-41ac-b295-0968d80d61b1"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4b102cf593424b4fa38f5dd859354612?sid=6e577435-1bb9-41ac-b295-0968d80d61b1" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -762,9 +758,8 @@ You can also hide the maximum character count by enabling the **Hide Max Length 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6df473c6cfef47c1945bccdd2ee031e4?sid=f12db8d3-f900-41e1-a3ad-e8afc7598109"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6df473c6cfef47c1945bccdd2ee031e4?sid=f12db8d3-f900-41e1-a3ad-e8afc7598109" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -795,9 +790,8 @@ Adding this behavior in your app can make it easier for these users to interact 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/j0PLaEFMcsV2QBB9R9AV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/j0PLaEFMcsV2QBB9R9AV?embed&show_copy_link=true" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -833,9 +827,8 @@ Let's see an example of controlling the visibility of a Text widget based on the
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4aae5ba5664046e8bcd48ad66393373e?sid=c1757f02-81c2-4618-97f5-839807b2cb80"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4aae5ba5664046e8bcd48ad66393373e?sid=c1757f02-81c2-4618-97f5-839807b2cb80" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -864,9 +857,8 @@ To do so:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c7fc9490c8c94f068ce0c162787ccad6?sid=c08138ea-ae27-430f-b70c-0206ad31454d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c7fc9490c8c94f068ce0c162787ccad6?sid=c08138ea-ae27-430f-b70c-0206ad31454d" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -904,9 +896,8 @@ Be careful about adding the actions under the **On Change**. Specifically, you s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ea761141fe8e40d6a0a9afe31f68c931?sid=de4881b3-895a-44c0-bbb0-b9cc615e117d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ea761141fe8e40d6a0a9afe31f68c931?sid=de4881b3-895a-44c0-bbb0-b9cc615e117d" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -931,9 +922,8 @@ Be careful about adding the actions under the **On Change**. Specifically, you s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/604e57b1286e45aa99badc38a5490e74?sid=6e8e1918-2bb7-4058-9dc5-b1c9f8ccbac5"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/604e57b1286e45aa99badc38a5490e74?sid=6e8e1918-2bb7-4058-9dc5-b1c9f8ccbac5" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -958,9 +948,8 @@ Be careful about adding the actions under the **On Change**. Specifically, you s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f2c67f417df341baa84081d315b9215f?sid=0757c723-6d02-4f83-a716-7d23f769fef0"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/f2c67f417df341baa84081d315b9215f?sid=0757c723-6d02-4f83-a716-7d23f769fef0" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -995,9 +984,8 @@ To trigger an action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/28a8f3a8e4fa4ac6bdf847bd90272ec1?sid=c71d6f61-d2ab-482b-9c0d-75cce5d9a645"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/28a8f3a8e4fa4ac6bdf847bd90272ec1?sid=c71d6f61-d2ab-482b-9c0d-75cce5d9a645" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -1027,9 +1015,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/RCLMIyuJoL4"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/RCLMIyuJoL4" title="TextField interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -1047,3 +1034,12 @@ If you prefer watching a video tutorial, here's the one for you:
     </iframe>
 </div>
 <p></p>
+
+## Verify TextField behavior
+
+- Test empty, valid, invalid, minimum, maximum, pasted, and autofilled values.
+- Treat input filtering as a typing aid, not validation. Validate again before submission and on the server for security-sensitive data.
+- Confirm the keyboard type, capitalization, submit action, focus order, and autofill hint on real Android and iOS devices.
+- For password fields, verify obscuring and reveal behavior and never log or persist the password in app state.
+- If **Update Page on Change** or an **On Change** action performs expensive work, debounce the operation or move it to an explicit submit action.
+- Test read-only, disabled, multiline, maximum-length, and error states with screen readers and large text.

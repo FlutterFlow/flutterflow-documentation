@@ -1,22 +1,30 @@
 ---
 slug: subscriptions
 title: Subscriptions
-tags: []
+tags:
+  - FlutterFlow
+  - Accounts & Billing
 toc_max_heading_level: 5
 sidebar_position: 0
+description: >-
+  This section provides information on free trials, plan changes, and other
+  subscription-related questions.
+keywords:
+  - Subscriptions
+  - Accounts Billing
+  - FlutterFlow
+last_verified: 2026-09-02
 ---
-
-
 # Subscriptions
 This section provides information on free trials, plan changes, and other subscription-related questions.
 
 ## Free Trials
 
-The first paid plan you purchase will come with a free 14-day trial. For 14 days, you will have access to the features of the plan you selected before you are charged. If you can cancel your subscription during this 14-day trial, you will not be charged.
+When the checkout offers a 14-day free trial for your first paid plan, you can use that plan's features during the trial and cancel before the displayed charge date to avoid the first subscription charge. Confirm the offer and charge date shown at checkout because promotions and eligibility can change.
 
 :::info
 
-The 14-day trial applies only to your first paid plan. Any later plan (Basic, Growth, or Business) won’t include a trial, even if the first plan is still in trial.
+The standard trial is limited to the first eligible paid-plan purchase. Do not assume a later Basic, Growth, or Business subscription includes another trial; the checkout is authoritative for your account.
 
 :::
 
@@ -32,7 +40,7 @@ To start a free trial, please follow these steps:
 
 ### What happens at the end of the trial period?
 
-At the end of your trial period, your payment method will be charged. You can cancel at any time during the trial period.
+Unless you cancel before the charge date displayed in billing, the selected subscription renews into a paid plan at the end of the trial.
 
 ## Upgrade Plan
 
@@ -84,7 +92,7 @@ You can view the next billing cycle date in the "My Plan" section of the [Flutte
 
 ![renew](../imgs/renew.png)
 
-The next billing cycle date for this plan is September 12, 2025.
+The date in the screenshot is an example. Use the renewal date shown in your own billing portal.
 
 ### Do subscriptions renew automatically?
 
@@ -100,13 +108,11 @@ We are unable to transfer a paid FlutterFlow subscription to another FlutterFlow
 
 ### If I have a paid plan, will project collaborators be able to use paid features?
 
-No. Having a paid plan yourself does not give your project collaborators access to paid features. Starting **September 17, 2025**, all collaboration must happen within a **Growth, Business, or Enterprise plan**, and every collaborator must have a **paid seat** in that team to have full edit access. Anyone not on your team will be switched to **view-only** until added as a paid team member.
+No. A personal paid plan does not give project collaborators paid features. Full team edit access uses a **Growth**, **Business**, or **Enterprise** team plan, and each editor needs the appropriate paid team seat or eligible project-collaborator access. A collaborator without that access is view-only.
 
 ### If I upgrade from the Growth Plan to the Business Plan in the middle of my billing cycle, will I be charged for both plans?
 
-Upgrades are automatic, so the system will count the remaining days from the Growth plan and reduce it from the Business Plan price.
-
-For example, if you paid $80 for Growth and you have 15 days remaining in the billing cycle, then on upgrading to Business (let's say priced at $150), you will eventually pay $(150-40) = $110.
+The billing portal calculates the upgrade charge and any credit for the unused portion of the current plan. Review the invoice preview before confirming; do not calculate the final charge from documentation examples because pricing, tax, currency, and remaining time vary.
 
 :::info
 

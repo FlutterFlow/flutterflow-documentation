@@ -1,10 +1,18 @@
 ---
 slug: /flutterflow-ui/dashboard
 title: Dashboard
-description: Explore the dashboard in FlutterFlow, a centralized location for managing projects and your account.
-tags: [FlutterFlow, UI, Design]
+description: >-
+  Explore the dashboard in FlutterFlow, a centralized location for managing
+  projects and your account.
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
 sidebar_position: 0
-keywords: [Dashboard, FlutterFlow, UI, Design]
+keywords:
+  - Dashboard
+  - FlutterFlow
+  - UI
+  - Design
 ---
 # Dashboard
 When you log in to FlutterFlow, the first page you’ll see is the **Dashboard**. It serves as a central hub for managing your projects, including creating, searching for, deleting, and duplicating projects. The Dashboard also lets you choose your preferred theme—dark or light—for a more comfortable viewing experience.
@@ -41,7 +49,7 @@ You can also find links to various resources to help you build apps with Flutter
 
 - **Resources**: From the **Resources tab**, you can find various useful links that can help you build apps on FlutterFlow. [Video tutorials](https://www.youtube.com/@FlutterFlow/videos) are extremely helpful for learning about concepts visually.
 
-- **Community**: The **Community tab** redirects you to our [Community Forum](https://community.flutterflow.io/home), a place for you to share ideas, ask questions, and troubleshoot issues with other FlutterFlow builders. The community shares a lot of amazing ideas!
+- **Community**: The **Community tab** redirects you to our [Community Forum](https://community.flutterflow.io/), a place for you to share ideas, ask questions, and troubleshoot issues with other FlutterFlow builders. The community shares a lot of amazing ideas!
 
 :::warning[Creating a Forum Account]
 - When you select the [**Community**](https://app.flutterflow.io/community) tab, FlutterFlow automatically creates a forum account and redirects you to the Community Forum. To add a password to your forum account, go to the forum [**settings**](https://community.flutterflow.io/settings/account) and select **Forgot Password**.

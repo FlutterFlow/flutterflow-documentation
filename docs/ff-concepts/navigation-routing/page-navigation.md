@@ -2,11 +2,20 @@
 slug: /concepts/navigation/page-navigation
 title: Page Navigation
 description: Learn how to navigate between pages in FlutterFlow.
-tags: [Page Navigation, Navigation, Concepts]
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Page Navigation, Navigation, Concepts]
+keywords:
+  - FlutterFlow
+  - Page Navigation
+  - Navigation
+  - Concepts
+  - navigate from one FlutterFlow page to another
+ai_queries:
+  - navigate from one FlutterFlow page to another
 ---
-
 # Page Navigation
 
 Page Navigation in FlutterFlow is handled through routing, where each page is identified by a unique route.
@@ -23,7 +32,7 @@ Let's see how to do that in FlutterFlow:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/EwmbXvNO5SvWtQdQyTBK?embed&show_copy_link=true"
         title="Navigate"
         style={{
@@ -50,10 +59,10 @@ navigation-related properties:
 
 | Action Property Name      | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Allow Back Navigation** | Toggle    | Toggle this to prevent the user from navigating back to this page after moving to the next page                                                                                                                                                                                                                                                                                                 |
+| **Allow Back Navigation** | Toggle    | When enabled, keeps the existing route history so the user can navigate back. When disabled, FlutterFlow clears the previous route stack during this navigation.                                                                                                                                                                                                                                |
 | **Replace Route**         | Toggle    | Use this option to replace the current page in the navigation stack. For example, if a user navigates from Page A to Page B and then to Page C, pressing the back button on Page C would normally return to Page B. However, if **Replace Route** is enabled on Page B, the route changes to Page A -> Page C; therefore, pressing the back button on Page C will take the user back to Page A. |
-| **Transition Type**       | Drop Down | This allows you to specify an animation that will be applied while navigating away from a screen. Options include **Default, Instant, Fade In, Slide Up, Slide Down, Slide Left, Slide Right,** and **Scale**.                                                                                                                                                                                  |
-| **Transition Duration**   | Double    | Set the duration of the transition animation in milliseconds                                                                                                                                                                                                                                                                                                                                    |
+| **Transition Type**       | Drop Down | Select **Default, Instant, Fade, Slide Up, Slide Down, Slide Left, Slide Right,** or **Scale**.                                                                                                                                                                                                                                                                                                    |
+| **Duration (ms)**         | Integer   | Set the transition duration in milliseconds. It is not shown for an Instant transition.                                                                                                                                                                                                                                                                                                         |
 | **Page Parameters**       |          | Use this to send data to the next page during navigation.                                                                                                                                                                                                                                                                                                                                       |
 
 :::info[Note]
@@ -80,9 +89,8 @@ previous section:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/SmD3l5fyhjR21ZYPntal?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SmD3l5fyhjR21ZYPntal?embed&show_copy_link=true" title="Page Navigation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -99,3 +107,9 @@ previous section:
         allow="clipboard-write">
     </iframe>
 </div>
+
+When routing is enabled, **Navigate Back** can also expose **Navigate to Root Page on Failure**. Enable it when pressing Back with no previous route should return to the root page instead of doing nothing.
+
+## Related documentation
+
+See [Bottom Sheet](/concepts/navigation/bottom-sheet) for a related FlutterFlow workflow.

@@ -1,12 +1,21 @@
 ---
 slug: /designer/iterate
 title: Iterate
-description: Refine and improve your generated screens visually, with AI prompts, or by editing the global theme.
-tags: [Iterate, FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Refine and improve your generated screens visually, with AI prompts, or by
+  editing the global theme.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 1
-keywords: [iterate design, edit visually, ai prompt, properties panel, theme editor]
+keywords:
+  - iterate design
+  - edit visually
+  - ai prompt
+  - properties panel
+  - theme editor
 ---
-
 # Iterate
 
 After generating your initial storyboard, you can refine and improve your screens in two ways: [editing visually](#edit-visually) on the canvas and [using AI prompts](#use-ai-prompt). Each method is useful depending on the type of change you want to make.
@@ -23,8 +32,7 @@ To start, click on any UI element in the canvas. The selected element will be hi
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/AcWFYJYNcqzMDoNEngxx?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/AcWFYJYNcqzMDoNEngxx?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -51,8 +59,7 @@ You can also rearrange elements using drag and drop. Simply select an element an
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/6EktGdKPOazdR6fwXFg5?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/6EktGdKPOazdR6fwXFg5?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -83,8 +90,7 @@ Unlike AI-driven changes, edits made here are exact and predictable, making it i
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/p6jxl3xcPgjPIZckXwNV?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -118,8 +124,7 @@ This method is best for structural, layout, or multi-element changes. To make a 
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/baHBozUa0iwMy6WQON49?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/baHBozUa0iwMy6WQON49?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -146,8 +151,7 @@ You can also select a page and ask the AI to generate variations of it. This hel
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/aWwn7YP7dyz99oDWqWHQ?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/aWwn7YP7dyz99oDWqWHQ?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,8 +180,7 @@ Editing a **Theme** allows you to modify the global design system of your entire
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/m9gaNdcurgtuh5xnw0YP?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/m9gaNdcurgtuh5xnw0YP?embed&show_copy_link=true" title="Iterate interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -195,3 +198,7 @@ Editing a **Theme** allows you to modify the global design system of your entire
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [Prompting](/designer/prompting) for a related FlutterFlow workflow.

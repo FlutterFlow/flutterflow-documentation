@@ -15,12 +15,16 @@ jobs:
           fetch-depth: 0
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
 
       - name: Build
         run: npm run build
 
+      - name: Audit SEO and agent artifacts
+        run: npm run audit:seo-agent:built
 
-
-
-
+      - name: Evaluate agent retrieval
+        run: npm run eval:agent-retrieval

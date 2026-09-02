@@ -1,7 +1,18 @@
 ---
-keywords: ['storage', 'firebase', 'cors']
+keywords:
+  - storage
+  - firebase
+  - cors
 slug: /troubleshooting/firebase/configuring-cors-for-firebase-storage
 title: Configuring CORS for Firebase Storage
+description: >-
+  When you deploy your web app to a custom domain, the domain and the Firebase
+  Storage bucket are hosted on different servers.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
+last_verified: 2026-09-02
 ---
 # Configuring CORS for Firebase Storage
 
@@ -19,11 +30,11 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
 
     Click the **Activate Cloud Shell** icon in the top-right corner.
 
-    ![](../assets/20250430121203371000.png)
+    ![Configuring CORS for Firebase Storage in FlutterFlow](../assets/20250430121203371000.png)
 
     Wait for the terminal to load.
 
-    ![](../assets/20250430121203911156.png)
+    ![Configuring CORS for Firebase Storage in FlutterFlow](../assets/20250430121203911156.png)
 ​
 
 3. **Run the following Command:**
@@ -33,7 +44,7 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     ```
 
 4. **Define and upload your cors.json file:**
-   
+
    The `cors.json` file contains a list of origins that are allowed to access your resources. Each origin is a string that identifies a domain or port. For example, the following origin allows access from the domain `www.example.com`:
 
     ```jsx
@@ -46,7 +57,7 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     "origins": ["https://www.example.com"], "allowedHeaders": ["Content-Type", "Authorization"]
     ```
 
-    To allow any origin to access your resource, you can use `*`. The `cors.json` file below allows any origin to access, but not modify your resources. 
+    For a deliberately public download bucket, `*` permits browser reads from any origin. For app-specific content, list exact production and development origins instead; avoid `*` when requests use credentials or when the content should not be broadly embeddable.
 
     ```jsx
     [
@@ -58,9 +69,9 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     ]
     ```
 
-    Once you have defined your `cors.json` file, upload it to Google Cloud Console. 
+    Once you have defined your `cors.json` file, upload it to Google Cloud Console.
 
-    ![](../assets/uploadToGCC.png)
+    ![UploadToGCC in FlutterFlow](../assets/uploadToGCC.png)
 
     To confirm that you have uploaded it correctly, you can run `ls` in your console and you should see your `cors.json` file listed.
 
@@ -72,13 +83,17 @@ Follow these steps to configure CORS for your Firebase Storage bucket:
     ```
 
 6. **(Optional) Confirm success by viewing the CORS of your bucket**
-   
-   Run the following command to confirm that the rules from your `cors.json` file were applied. 
+
+   Run the following command to confirm that the rules from your `cors.json` file were applied.
    ```jsx
    gcloud storage buckets describe gs://your-google-storage-bucket-name --format="default(cors_config)"
    ```
-   You should see the same allowed origins and any other info defined in your `cors.json` file. 
+   You should see the same allowed origins and any other info defined in your `cors.json` file.
+
+CORS controls which browser origins may read a response; it is not authentication or authorization. Keep Firebase Storage Security Rules least-privilege, never make a bucket public merely to fix CORS, and save the previous CORS configuration so the change can be rolled back.
 
 For more information on configuring CORS in Firebase Storage, please see the **[official documentation](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)**.
 
+## Related documentation
 
+See [Client Access to Firestore Expired](/troubleshooting/firebase/client-access-to-firestore-expired) for a related FlutterFlow workflow.

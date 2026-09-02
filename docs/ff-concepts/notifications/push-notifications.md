@@ -2,11 +2,21 @@
 title: Push Notifications
 slug: /concepts/notifications/push-notifications
 sidebar_position: 1
-tags: [Actions, Notifications, Integration]
-keywords: [FlutterFlow, Actions, Notifications, Push Notifications]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Actions
+  - Notifications
+  - Push Notifications
+  - configure push notifications in FlutterFlow
+description: >-
+  Push Notifications let you deliver time-sensitive, real-time messages to users
+  even when the app isn’t active.
+ai_queries:
+  - configure push notifications in FlutterFlow
 ---
-
-
 # Push Notifications
 
 **Push Notifications** let you deliver time-sensitive, real-time messages to users even when the app isn’t active. These notifications rely on [**Firebase Cloud Messaging (FCM)**](https://firebase.google.com/docs/cloud-messaging) behind the scenes, which routes messages to both Android and iOS devices. When integrated correctly, you can use push notifications to:
@@ -26,9 +36,9 @@ You can add and send push notifications manually or trigger them based on user a
 
 :::info[General Prerequisites]
 Before you begin, ensure that you:
-- Complete all the steps in 
+- Complete all the steps in
 [**Firebase Setup**](../../ff-integrations/firebase/connect-to-firebase-setup.md). Note that, while setting up, make sure to follow step number 5 and 8 carefully from [**Allow FlutterFlow to Access Your Project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#allow-flutterflow-to-access-your-project) section to properly add the **Cloud Functions Admin** role to **firebase@flutterflow.io** user.
-- Upgrade your Firebase project to the [**Blaze plan**](https://firebase.google.com/pricing) to enable [**Cloud Functions**](https://firebase.google.com/docs/functions), which are required specifically for FlutterFlow’s push notification setup, such as retrieving the FCM token and sending notifications trigger from FlutterFlow.  
+- Upgrade your Firebase project to the [**Blaze plan**](https://firebase.google.com/pricing) to enable [**Cloud Functions**](https://firebase.google.com/docs/functions), which are required specifically for FlutterFlow’s push notification setup, such as retrieving the FCM token and sending notifications trigger from FlutterFlow.
 :::
 
 :::info[iOS Prerequisites]
@@ -49,7 +59,7 @@ To send push notifications to iOS devices, you must:
 
 To enable push notifications:
 
-1. Navigate to the **Settings and Integrations > Push Notifications** and 
+1. Navigate to the **Settings and Integrations > Push Notifications** and
 **Enable Push Notifications**.
 2. Now, click on the **Deploy** button. This will create and deploy the *Cloud Functions* in your Firebase project that are necessary for push notifications to work.
 3. Optionally, you can enable **Allow Scheduling** to send push notifications at a later time. Once enabled, you can select **Scheduler Granularity**, which determines how precisely the notifications will be sent. You can choose the granularity based on how time-sensitive your notifications are; For example:
@@ -93,9 +103,8 @@ After testing push notifications in the development environment, it's advisable 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/x4nbnTorUddFfuEzYiuU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/x4nbnTorUddFfuEzYiuU?embed&show_copy_link=true" title="Push Notifications interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -116,7 +125,7 @@ After testing push notifications in the development environment, it's advisable 
 
 #### Step 2: Add APNs Key to Firebase Project
 
-To add the **APNs** key to your Firebase project, navigate to your **Firebase Project Dashboard > Project Settings** and select the **Cloud Messaging** tab. Scroll down to the **Apple app configuration** section and locate the **APNs Authentication Key**. 
+To add the **APNs** key to your Firebase project, navigate to your **Firebase Project Dashboard > Project Settings** and select the **Cloud Messaging** tab. Scroll down to the **Apple app configuration** section and locate the **APNs Authentication Key**.
 
 Click **Upload** and select your APNs auth key file (that you downloaded in the [previous step](#step-1-creating-a-key)). Enter the **Key ID**, which can be found inside the key entry in [Keys](https://developer.apple.com/account/resources/authkeys/list). Finally, enter the **Team ID**, available in the [**Apple Developer Account**](https://developer.apple.com/account) inside the **Membership details** section.
 
@@ -126,9 +135,8 @@ Click **Upload** and select your APNs auth key file (that you downloaded in the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oxt6ehoUBv46Kh3W54j6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oxt6ehoUBv46Kh3W54j6?embed&show_copy_link=true" title="Push Notifications interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -164,7 +172,7 @@ To send push notifications, you need to provide the following details:
 
     :::tip
     You can easily copy and paste the document reference directly from the [**Firestore Data Manager**](../../ff-integrations/database/cloud-firestore/firebase-content-manager.md) in FlutterFlow.
-    
+
     ![pn-with-data-2](imgs/pn-with-data-2.avif)
     :::
 - **Initial Page (Optional):** Choose the page the app should open when the user taps the notification.
@@ -174,9 +182,8 @@ To send push notifications, you need to provide the following details:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/OwaxQqQZqrBLPzTkLFDh?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/OwaxQqQZqrBLPzTkLFDh?embed&show_copy_link=true" title="Push Notifications interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

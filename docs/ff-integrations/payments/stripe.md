@@ -2,10 +2,19 @@
 slug: /integrations/payments/stripe
 title: Stripe
 description: Learn how to integrate Stripe in your FlutterFlow app.
-tags: [Stripe, Payments, Integration]
-keywords: [FlutterFlow, Stripe, Payments, Integration]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Payments
+keywords:
+  - FlutterFlow
+  - Stripe
+  - Payments
+  - Integration
+  - accept Stripe payments in FlutterFlow
+ai_queries:
+  - accept Stripe payments in FlutterFlow
 ---
-
 # Stripe
 
 Stripe helps integrate payment processing into your FlutterFlow app. Using this payment service, you can easily sell products directly inside your application and manage transactions easily.
@@ -17,9 +26,8 @@ While using Stripe as the payment provider, users can buy products using credit 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/9ee91ed7807d4b3d81b8cb1c87a8bed2?sid=fe448cd6-e92b-4dad-b696-aad9a5452c60"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/9ee91ed7807d4b3d81b8cb1c87a8bed2?sid=fe448cd6-e92b-4dad-b696-aad9a5452c60" title="Stripe interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -85,9 +93,8 @@ Follow the steps below to set up payment using Stripe:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/PcikYUtB8cSug9CyUAOv?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/PcikYUtB8cSug9CyUAOv?embed&show_copy_link=true" title="Stripe interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -139,9 +146,8 @@ To create Apple Merchant ID:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/705e799700de453cab3a0157ac4eecdd?sid=9f65c690-de5d-4b7e-b1ae-d9b056d2f805"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/705e799700de453cab3a0157ac4eecdd?sid=9f65c690-de5d-4b7e-b1ae-d9b056d2f805" title="Stripe interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -213,9 +219,8 @@ Make sure the user is authenticated before triggering the Stripe Payment Action.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/88bebdf2381547659f542a42726a7b72?sid=bd1fb3e3-8cca-43da-9a13-7a59ef00e457"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/88bebdf2381547659f542a42726a7b72?sid=bd1fb3e3-8cca-43da-9a13-7a59ef00e457" title="Stripe interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -263,11 +268,11 @@ Before you release the app to production, complete the following steps:
 <summary>I am getting "Error: Unknown error occurred"</summary>
 <p>
     When encountering the "Error: Unknown error occurred" message, consider these troubleshooting steps:
-    
+
     1. **Stripe Settings Adjustment**: In FlutterFlow's Stripe settings, verify the Merchant country code is a 3-digit code, like "USA" instead of "US". If needed, remove previously deployed functions in the Firebase console and redeploy them after updating the country code.
     2. **User Authentication Requirement**: Stripe payments require an authenticated user session. Ensure you're attempting the Stripe action after a user has successfully logged in to the app.
     3. **Cloud Functions Permissions**: Check that your cloud functions have the **Cloud Functions Invoker** permission set for **allUsers** in the Google Cloud console. To do this, go to the Cloud Console, directly search for the **initStripePayment** function, open the function, switch to the **Permissions** tab, and confirm the permissions status. This permission is typically assigned by default, but it's good practice to double-check.
-        
+
     ![unknown-error-occured](imgs/unknown-error-occured.avif)
 </p>
 </details>

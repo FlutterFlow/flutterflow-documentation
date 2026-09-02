@@ -1,11 +1,22 @@
 ---
-keywords: ['build', 'configuration', 'release']
+keywords:
+  - build
+  - configuration
+  - release
 slug: /troubleshooting/deployment/run-mode-build-failure
 title: 'Run Mode: Build Failure'
+description: >-
+  Encountering a "Run mode: Build failed" error can be frustrating when you're
+  eager to see your app in action.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
+last_verified: 2026-09-02
 ---
 # Run Mode: Build Failure
 
-Encountering a "Run mode: Build failed" error can be frustrating when you're eager to see your app in action. This error typically signifies a project issue that prevents a successful build. Addressing these errors promptly ensures your app's functionality and performance. 
+Encountering a "Run mode: Build failed" error can be frustrating when you're eager to see your app in action. This error typically signifies a project issue that prevents a successful build. Addressing these errors promptly ensures your app's functionality and performance.
 
 This guide provides a structured approach to troubleshooting and resolving "Run mode: Build failed" errors, ensuring a smooth development process for your projects.
 
@@ -13,7 +24,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
     Here's what the "Run mode: Build failed" error looks like inside of FlutterFlow:
 
-    ![](../assets/20250430121148301014.png)
+    ![Run Mode: Build Failure in FlutterFlow](../assets/20250430121148301014.png)
 
 - **Understanding Test Mode vs. Run Mode**
 
@@ -63,7 +74,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
     - **Solution**: Download and run the project code locally with a debugger to identify and resolve the issue. If downloading the code is problematic, check your browser's console for errors that might indicate the cause.
 
-        ![](../assets/20250430121148811672.png)
+        ![Run Mode: Build Failure in FlutterFlow](../assets/20250430121148811672.png)
 
 - **Grey Screen in Run Mode**
 
@@ -73,11 +84,11 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
 ## Checklist for Troubleshooting
 
-- **Identify when and where the error occurs**: 
+- **Identify when and where the error occurs**:
 
     Determine if the error is specific to run mode, test mode, or other instances like APK download or code download.
 
-- **Locate the source of the error**: 
+- **Locate the source of the error**:
 
     The error message often provides clues about where the problem lies, whether in custom code, a specific widget, or elsewhere.
 
@@ -85,15 +96,15 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 
     For issues related to custom code, ensure compatibility with your target platforms.
 
-- **Examine widget configuration**: 
+- **Examine widget configuration**:
 
     Verify that all actions and configurations associated with widgets are complete and correct.
 
-- **Utilize local debugging**: 
+- **Utilize local debugging**:
 
     If the error is elusive, running the debugger locally on your downloaded code can help identify the issue.
-    
-- **Leverage browser tools**: 
+
+- **Leverage browser tools**:
 
     The browser's console and developer tools can offer insights, especially when dealing with errors that don't manifest in traditional debug outputs.
 
@@ -101,3 +112,7 @@ This guide provides a structured approach to troubleshooting and resolving "Run 
 :::info[Additional Resources]
 [Basic Troubleshooting Guide – FlutterFlow Documentation](https://docs.flutterflow.io/troubleshooting/basic-troubleshooting-guide)
 :::
+
+## Related documentation
+
+See [Codemagic Deployment Error Identification](/troubleshooting/deployment/codemagic-deployment-error-identification) for a related FlutterFlow workflow.

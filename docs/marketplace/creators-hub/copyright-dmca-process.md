@@ -2,11 +2,19 @@
 slug: copyright-dmca-process
 title: Copyright (DMCA) Process
 description: Understand the copyright (DMCA) process on FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 3
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines, Copyright (DMCA) Process]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Legal Guidelines
+  - Copyright (DMCA) Process
+last_verified: 2026-09-02
 ---
-
 # Copyright (DMCA) Process
 
 :::danger
@@ -15,9 +23,13 @@ This guide is meant for creators of items on FlutterFlow Marketplace. If you wan
 
 As a valued creator on the FlutterFlow Marketplace, it's important to understand the process that unfolds when an item you've submitted receives an infringement report. Our approach distinguishes between two main types of allegations: DMCA infringement claims and other types of infringement allegations.
 
+:::note[Controlling terms]
+This page is a practical summary, not legal advice. The current [FlutterFlow Terms of Service](https://flutterflow.io/tos) and [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace), plus instructions in the notice you receive, control the process.
+:::
+
 ### DMCA Infringement Claims
 
-The [DMCA (Digital Millennium Copyright Act)](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) is a US copyright law that provides a mechanism for copyright owners to request the removal of content they believe infringes on their copyright. Here's how we handle these specific claims:
+The DMCA is a US copyright law that provides a notice-and-counter-notice process for qualifying claims. FlutterFlow evaluates notices under the applicable law and its current terms.
 
 1. **Immediate Action**: If an infringement report is classified as a DMCA claim and the reporter provides adequate proof of ownership or authorized representation, we are legally required to act quickly. In such cases, the reported item is immediately removed from FlutterFlow Marketplace.
 2. **Notification Email**: Upon removal, you will receive an email notification outlining the details of the claim and the steps you can take if you believe the item was wrongly removed.

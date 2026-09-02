@@ -2,9 +2,17 @@
 slug: creator-faqs
 title: Creator FAQs
 description: Learn about creator's FAQs in FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 5
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Creators FAQs]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Creators FAQs
+last_verified: 2026-09-02
 ---
 # Creator FAQs
 
@@ -16,7 +24,7 @@ Your item might be removed from the Marketplace under several circumstances, mai
 
 - **DMCA Takedown Notices:** If we receive a DMCA takedown notice claiming that your item infringes on someone else's copyright, we are legally required to remove the item immediately. We will notify you of the takedown, and you will have the opportunity to respond or counter-claim according to the legal processes set out by the DMCA. Please see [Copyright (DMCA) Process](copyright-dmca-process.md) for details.
 - **Other IP Violations:** If your item is found to violate IP laws outside of a formal DMCA complaint—i.e. if filed by someone other than the original author or their representative—we will inform you of the specific violation. You will be given a chance to provide proof of licensing or to correct the issue within **48 hours**. If satisfactory proof or corrections are not provided, the item may be removed to comply with legal standards. Please see [Copyright (DMCA) Process](copyright-dmca-process.md) for details.
-- **Violation of Marketplace Policies:** Aside from copyright issues, if your item violates other Marketplace policies, such as those related to quality, accuracy, or ethical standards, you will be notified of the specific issues. We will provide you with details about the violation and, depending on the severity, you may be asked to modify the item or it might be removed. Please see [Marketplace Item Submission Guidelines](https://flutterflow.io/flutterflow-marketplace-item-submission-guidelines) for more details.
+- **Violation of Marketplace Policies:** Aside from copyright issues, if your item violates other Marketplace policies, such as those related to quality, accuracy, or ethical standards, you will be notified of the specific issues. We will provide you with details about the violation and, depending on the severity, you may be asked to modify the item or it might be removed. Please see [Marketplace Item Submission Guidelines](/marketplace/creators-hub/submission-criteria) for more details.
 - **Critical Item Reports:** If we receive reports from users or other creators that critically challenge the legality or appropriateness of your item (e.g., reports of plagiarism, false advertising, or severe quality issues), these will be thoroughly investigated. Based on the findings, and in accordance with our commitment to maintaining a trustworthy and high-quality Marketplace, your item might be subject to removal. We will communicate with you throughout this process, offering details of the report and an opportunity to respond.
 
 ### Will I be notified if my item is removed from Marketplace?
@@ -25,9 +33,7 @@ Yes, in all cases, you will be notified if your item is removed from FlutterFlow
 
 ### Can I list my item on other marketplaces?
 
-No. You cannot sell FlutterFlow projects on other marketplaces. Please see the non-circumvention clause in our [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace).
-
-This policy helps ensure that all interactions with FlutterFlow templates are safe, compliant, and effectively managed for our users.
+The [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) include non-circumvention rules for Marketplace seller content and transactions, while also addressing content you independently own and make available elsewhere. Review the current terms for your situation instead of relying on a blanket yes-or-no summary, and obtain legal advice if the rights or distribution arrangement is unclear.
 
 ### What licenses are granted to users of my item?
 
@@ -89,7 +95,7 @@ If your item is not approved, it will be returned to draft status, allowing you 
 
 We have significantly improved our review wait time recently! ⚡
 
-We aim to review your template within 7 days. However, depending on the volume of submissions or the complexity of your submission, the review process can take up to 30 days (20 business days).
+The current target is review within 7 days, but complex submissions or high volume can extend the process to approximately 30 calendar days. This is an estimate, not a guaranteed deadline; use the status in your Marketplace dashboard and any review email as the source of truth.
 
 ## 🖐️ Other Questions?
 

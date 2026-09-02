@@ -1,8 +1,18 @@
 ---
 title: Using Components
 sidebar_position: 2
+description: >-
+  Components in FlutterFlow can be added to the widget tree of a page or another
+  component.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Using Components
+  - Components
+  - Ui
 ---
-
 # Using Components
 
 Components in FlutterFlow can be added to the widget tree of a page or another component. They help streamline
@@ -22,7 +32,7 @@ To add a component to the widget tree of a page or another component, choose the
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/EBpdB2PtNGPGzKh7O2eQ?embed&show_copy_link=true"
         title="Add component to Page"
         style={{
@@ -53,7 +63,7 @@ When you add a component to the widget tree, you can set the parameter values by
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/t4r4TKLGrRvdthCZYdvm?embed&show_copy_link=true"
         title="Pass Down Values"
         style={{
@@ -97,4 +107,3 @@ You can create a recursive component, which means the component can include an i
 For example, in social media applications or forums, comments can have replies, and each reply can have further replies. A recursive component can display this nested structure effectively.
 
 ![recursive-comp.png](../imgs/recursive-comp.png)
-

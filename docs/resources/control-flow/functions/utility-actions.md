@@ -1,10 +1,22 @@
 ---
 slug: /resources/functions/utility-actions
 title: Utility Actions
-description: Learn about the built-in utility Actions available in FlutterFlow to enhance your app's UI logic.
-tags: [Functions]
+description: >-
+  Learn about the built-in utility Actions available in FlutterFlow to enhance
+  your app's UI logic.
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 sidebar_position: 6
-keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow, pub.dev]
+keywords:
+  - Built-in Functions
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
+  - pub.dev
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -25,9 +37,8 @@ When this action is triggered, it opens the color picker, where users can custom
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/5lUa4lK1SgPUQvkM6Kqj?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/5lUa4lK1SgPUQvkM6Kqj?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -73,9 +84,8 @@ Here's an example of adding the color picker action and updating the selected co
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BHfN2umFDQgL0upiZUaz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BHfN2umFDQgL0upiZUaz?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -110,9 +120,8 @@ When this action is triggered, it opens the graphical calendar and clock interfa
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HyKZpuo986EOfdG7IrQC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/HyKZpuo986EOfdG7IrQC?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -170,9 +179,8 @@ Here's an example of adding the date time picker action and displaying the value
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ffcbf0422511433b93bef7b08f7501a5?sid=cebeb57a-5bbc-41c4-9604-c9ba2b1aad32"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ffcbf0422511433b93bef7b08f7501a5?sid=cebeb57a-5bbc-41c4-9604-c9ba2b1aad32" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -206,9 +214,8 @@ A common use case of this action is to allow only the intended user to open an a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/nzMmo0lGgvZ4LybXBSy2?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/nzMmo0lGgvZ4LybXBSy2?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -246,9 +253,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/87E8n4OAqZWl6pVqMeyp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/87E8n4OAqZWl6pVqMeyp?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -278,9 +284,8 @@ When this action is triggered, the data is stored temporarily in a special part 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/R5Qqlm6UXicmBBgwBJH5?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/R5Qqlm6UXicmBBgwBJH5?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -316,9 +321,8 @@ At present, testing this action isn't possible in Test mode, but you can use the
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/m5IDs1JW299lokr3kvhN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/m5IDs1JW299lokr3kvhN?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -337,7 +341,7 @@ At present, testing this action isn't possible in Test mode, but you can use the
 </div>
 <p></p>
 
-## Set Dark Mode Setting [Action]
+## Set Dark Mode Settings [Action]
 
 Using this Action, you can set the app theme to Light/Dark or set it as per the system.
 
@@ -348,9 +352,8 @@ Using this Action, you can set the app theme to Light/Dark or set it as per the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wtG5H6CD2K0bAB0SSuTW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wtG5H6CD2K0bAB0SSuTW?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -375,9 +378,8 @@ Using this Action, you can set the app theme to Light/Dark or set it as per the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/kIk9WQB7Y0EigQsJzyxB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/kIk9WQB7Y0EigQsJzyxB?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -407,12 +409,12 @@ There are three types of the mode you can set:
 - **Dark Mode**: Set the theme mode to Dark.
 
 
-Go to your project page on FlutterFlow and follow the steps below to define the Set Dark Mode Setting Action to any widget.
+Go to your project page on FlutterFlow and follow the steps below to define the **Set Dark Mode Settings** action on a widget.
 
 1. Select **Actions** from the [properties panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu)
 2. Click **+ Add Action** button
 3. Choose a gesture from the dropdown among **On Tap**, **On Double Tap**, or **On Long Press**.
-4. Select the **Action Type** as **Set Dark Mode Setting**.
+4. Select the **Action Type** as **Set Dark Mode Settings**.
 5. Set the **Setting Source** to **Select Setting**.
 6. Set the **Dark Mode Setting** to any amongst the **From System**, **Light Mode**, **Dark Mode**.
 
@@ -421,9 +423,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Xcb0FwRDqEBLwu3VWqQr?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Xcb0FwRDqEBLwu3VWqQr?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -451,9 +452,8 @@ Using this action, you can send an Email to the specified email Id. This action 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TmrSeayVTqMK1fpQd6xb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TmrSeayVTqMK1fpQd6xb?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -485,9 +485,8 @@ Follow the steps below to add this action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4wvjE3fIJ2vErnB9FTMY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4wvjE3fIJ2vErnB9FTMY?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -515,9 +514,8 @@ Using this action, you can make a call to the specified number. This action does
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oLWgwLfwPRH7kuS75NXE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oLWgwLfwPRH7kuS75NXE?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -548,9 +546,8 @@ Follow the steps below to add this action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DfvPa2xvLDixvM08rTq2?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DfvPa2xvLDixvM08rTq2?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -578,9 +575,8 @@ Using this action, you can send an SMS to the specified number. This action does
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/cUs9dsVARZWhoDPA61mb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/cUs9dsVARZWhoDPA61mb?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -612,9 +608,8 @@ Follow the steps below to add this action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/51SGElsPLws7p7kCeIJH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/51SGElsPLws7p7kCeIJH?embed&show_copy_link=true" title="Utility Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -632,3 +627,13 @@ Follow the steps below to add this action to any widget.
     </iframe>
 </div>
 <p></p>
+
+## Verify utility actions
+
+Test utility actions on every target platform before release:
+
+- Confirm picker cancellation as well as selection, and handle a null or unchanged picker state when the user dismisses the dialog.
+- For **Biometric Verification**, test a successful match, a failed match, a device with no enrolled biometric, and the **Allow Biometric Only** setting. Branch on the action output rather than assuming authentication succeeded.
+- **Copy to Clipboard** is not supported in Test Mode; use Run Mode or a built app.
+- **Send Email**, **Call Number**, and **Send SMS** open an external OS application. A simulator, browser, or device without a configured handler may not complete the handoff, and the action cannot guarantee that the user sends the message or places the call.
+- Verify **Set Dark Mode Settings** with **From System**, explicit light and dark modes, and—if used—a Boolean variable (`true` for dark and `false` for light).

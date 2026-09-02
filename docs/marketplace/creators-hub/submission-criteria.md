@@ -1,17 +1,27 @@
 ---
 slug: submission-criteria
 title: Submission Criteria
-description: Learn about marketplace item submission criteria.
-tags: [MarketPlace, Creators Hub]
+description: >-
+  Item Submission Standards Below, you'll find the criteria our Submission
+  Review Team uses to review items submitted to FlutterFlow Marketplace.
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 1
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Item Submission Criteria]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Item Submission Criteria
+last_verified: 2026-09-02
 ---
-
 # Item Submission Criteria
 
 ## Item Submission Standards
 
 Below, you'll find the criteria our Submission Review Team uses to review items submitted to FlutterFlow Marketplace.
+
+The submission form and [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace) are authoritative if a field, item type, license, price, or requirement differs from this guide.
 
 ### 1. Originality and Ownership
 
@@ -57,12 +67,12 @@ Below, you'll find the criteria our Submission Review Team uses to review items 
     - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
     - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](legal-guidelines-for-creators.md#open-source-licenses) and [Navigating External Licenses](navigating-external-licenses.md).
 
-#### 1.6 No Library Dependencies (Libraries Only)
+#### 1.6 No Library Dependencies
 
-- **Criteria:** Libraries cannot depend on other libraries.
+- **Criteria:** A library submitted to Marketplace must not depend on another Marketplace or personal library. This is a Marketplace submission rule, not a general limitation of FlutterFlow Libraries, which otherwise support nested dependencies.
 - **Why It Matters:** Dependencies between libraries create complexity in permissions management and version control, potentially leading to compatibility issues or broken functionality.
 - **What To Do:**
-    - **Build Self-Contained:** Ensure your library contains all necessary functionality without requiring other libraries (from Marketplace or personal libraries).
+    - **Build Self-Contained:** Ensure the submitted library contains all necessary functionality without requiring another Marketplace or personal library. Confirm this requirement in the current submission form before submitting.
 
 :::info
 When you publish a free item to Marketplace, you agree to license it under the [MIT License](https://opensource.org/licenses/MIT), which grants users perpetual rights to use, modify, and distribute the project. Paid items are subject to the license terms specified in our [Marketplace Terms of Service](https://www.flutterflow.io/tos-marketplace).
@@ -380,7 +390,7 @@ Stay tuned for an upcoming "style guide" we're publishing that goes into deeper 
     - **Leverage Components:** Create reusable components for elements that repeat throughout your project (e.g., product cards, list items, headers, footers).
     - **Utilize Parameters:** Pass data and customize component instances using parameters instead of duplicating and hardcoding values.
     - **Review for Redundancies:** Before submitting, carefully examine your project for any unnecessarily duplicated pages, widgets, or action chains that could be consolidated or streamlined.
-  
+
 #### 5.15 Library Values Implementation (Libraries Only)
 
 - **Criteria:** Libraries must use [Library Values](../../resources/projects/libraries.md) for sensitive keys and customizable elements that users need to configure.
@@ -418,7 +428,7 @@ A successful Marketplace item goes beyond just a functional app—it provides re
     - **Justify Your Pricing**: Make sure the pricing of your item reflects its true value and stands in fair comparison to similar offerings. Ensure it offers enough depth and uniqueness to warrant the minimum price point.
     - **For Paid Libraries**: Libraries should excel in at least one of these areas:
         - 🧘 Simplifying technical complexity (ease)
-        - ⚡️ Enabling quick and seamless integrations (speed)  
+        - ⚡️ Enabling quick and seamless integrations (speed)
         - 🎛️ Offering diverse reusable components and features (quantity)
         - 🛠️ Providing robust, reliable functionality (quality)
         - 🙋‍♂️ Addressing specific, high-demand use cases with thoughtful solutions (relevance)

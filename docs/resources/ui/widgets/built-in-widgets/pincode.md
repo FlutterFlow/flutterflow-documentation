@@ -1,9 +1,19 @@
 ---
 slug: pincode
 title: PinCode
-tags: [PinCode, Form Elements]
-keywords: [FlutterFlow, PinCode, Form Widget, App Development, Input Field, Flutter]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - FlutterFlow
+  - PinCode
+  - Form Widget
+  - App Development
+  - Input Field
+  - Flutter
 description: Learn how to add the PinCode widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # PinCode
 
@@ -18,8 +28,8 @@ Before diving into form widgets, check out our guide on [**Widget States**](../.
 To add a PinCode widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
-2. To increase the pin length (number of values users can enter), move to the properties panel, see the **Pin Length** property, and enter the value. **Note**: You can only set this value up to 8.
-3. If you are using this widget to get a secret PIN from users, you can obscure it with a special character. To do so, enable the **Obscure Text** toggle and select the **Obscuring Character** among the *,-,?, and •.
+2. Set **Pin Length** to a value from 3 through 8. A newly added PinCode uses six characters.
+3. To hide entered characters visually, enable **Obscure Text** and select `*`, `-`, `?`, or `●` as the **Obscuring Character**.
 4. You can also enable/disable the **Hint Text** toggle and select the **Hint Character** displayed when you haven't entered anything.
 
 <div style={{
@@ -27,9 +37,8 @@ To add a PinCode widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/53ecfeb06e064a7ebd5994cbb9cc7fc5?sid=31c72410-7e5a-41d5-af86-a4504e5e6f8b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/53ecfeb06e064a7ebd5994cbb9cc7fc5?sid=31c72410-7e5a-41d5-af86-a4504e5e6f8b" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -57,9 +66,8 @@ Let's see how to trigger an action when you are done entering the value in this 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZFvwMLCJxOUTDKX7j7KR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZFvwMLCJxOUTDKX7j7KR?embed&show_copy_link=true" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -86,14 +94,17 @@ To do so:
 
 Here is an example of displaying a snackbar message that shows the entered value in the PinCode widget.
 
+:::warning
+Do not display, log, or persist a real OTP or secret PIN in plaintext. **Obscure Text** only changes what is drawn on screen; it does not encrypt the value. Send the entered value to the intended verification service over a secure connection and avoid storing it in client state.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/1fbb9539456947eba6036c6247542e25?sid=28f3f788-0111-4184-88ab-c3ee95351509"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/1fbb9539456947eba6036c6247542e25?sid=28f3f788-0111-4184-88ab-c3ee95351509" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -121,7 +132,7 @@ You may want to trigger an action when the user taps into or exits the Pincode f
 
 ## Validation
 
-You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](../../../../resources/forms/form-validation#adding-form-widget) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](../../../../resources/forms/form-validation#3-adding-validate-action) action. This will display an error message when a user tries to submit the form without a pincode value.
+You can validate whether a user entered a value by placing PinCode inside a [**Form**](../../../../resources/forms/form-validation#adding-form-widget), configuring the field's validation message, and running the [**Validate Form**](../../../../resources/forms/form-validation#3-adding-validate-action) action. The form displays the error when submission does not meet the configured requirement.
 
 
 <div style={{
@@ -129,9 +140,8 @@ You can validate the Pincode widget to see if a user has entered any value. To d
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/iIPpBcXSnv1z3rcC6Qtf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iIPpBcXSnv1z3rcC6Qtf?embed&show_copy_link=true" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,9 +186,8 @@ To make a *PinCode* a secret pin field, move to the **Properties Panel > Pin Cod
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b52e810f937d4ea5bcdec5807e7a5623?sid=3ac617d6-3b3c-4277-88ab-bf560f06aed8"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b52e810f937d4ea5bcdec5807e7a5623?sid=3ac617d6-3b3c-4277-88ab-bf560f06aed8" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -208,9 +217,8 @@ To set the hint text, move to the **Properties Panel > Pin Code Properties > ena
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/700003546e2f48d3b2ee8450da5c88a0?sid=f934a291-81be-40b8-b851-fc5a6e7bd4a6"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/700003546e2f48d3b2ee8450da5c88a0?sid=f934a291-81be-40b8-b851-fc5a6e7bd4a6" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -238,9 +246,8 @@ When enabled, it mimics the tap event and immediately shows the keyboard. This m
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4e492e55a3014319b3b82a67fa416856?sid=8acc9ff5-4313-4d01-a065-aa38163830b4"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4e492e55a3014319b3b82a67fa416856?sid=8acc9ff5-4313-4d01-a065-aa38163830b4" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -261,7 +268,7 @@ When enabled, it mimics the tap event and immediately shows the keyboard. This m
 
 ### Auto Fill
 
-When this is enabled, it can read and auto fill the code from your messages app.
+When **Auto Fill** is enabled, the operating system may offer a one-time-code suggestion from a supported SMS or credential provider. Availability and behavior depend on the platform, message format, permissions, and keyboard; it is not guaranteed and does not give the app general access to the user's messages.
 
 ![Auto Fill enabled](../../../control-flow/user-interactivity/imgs/auto-fill-enabled.png)
 
@@ -271,7 +278,7 @@ By default, all the pin fields are aligned to *Space Evenly*. Meaning there will
 
 The following options help you align the pin code fields:
 
-- **Start**: Place pin code fields as close to the beginning as possible. 
+- **Start**: Place pin code fields as close to the beginning as possible.
 - **Center**: Place pin code fields as close to the middle as possible.
 - **End**: Place pin code fields as close to the end as possible.
 - **Space Evenly**: Evenly space pin code fields.
@@ -284,9 +291,8 @@ To configure the space between and around the pin fields, select the **PinCode**
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wibrITSlEuquRbg68w2B?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wibrITSlEuquRbg68w2B?embed&show_copy_link=true" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -318,9 +324,8 @@ To change the pin field shape and size:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/fa11e65c9c0a413fbae2f271bc9d4333?sid=77905cea-5db6-4d7b-8927-d70f0daaa3ed"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/fa11e65c9c0a413fbae2f271bc9d4333?sid=77905cea-5db6-4d7b-8927-d70f0daaa3ed" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -353,9 +358,8 @@ You can change colors for the different states of the pin fields. To do so:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/d8ccff9efd844c50a006b5004f09fd15?sid=f568dd9e-3adc-45c3-a6d5-88cdfb0b76db"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/d8ccff9efd844c50a006b5004f09fd15?sid=f568dd9e-3adc-45c3-a6d5-88cdfb0b76db" title="PinCode interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -381,3 +385,7 @@ You can show/hide the cursor using the **Show Cursor** toggle and change the col
 :::info[Clear pin code value]
 See how to [**reset the pin code value**](../../../../resources/control-flow/user-interactivity/forms/form-actions/reset-form-field.md).
 :::
+
+## Verify the interaction
+
+Run the page on each target platform. Confirm that numeric mode rejects non-digits, **On Change** runs for edits, **On Completed** runs only after the configured length is reached, and **Widget State** returns the entered String. Test validation, focus changes, obscuring, and autofill separately; do not use a production secret in previews or recordings.

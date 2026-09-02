@@ -1,14 +1,19 @@
 ---
 slug: /concepts/navigation/special-page-navigations
-title: Overview
+title: 'Overview: Special Page Navigation'
 description: Learn how to add Special Page Navigations in FlutterFlow.
-tags: [Special Page Navigations, FlutterFlow, Navigation]
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 0
-keywords: [Special Page Navigations, FlutterFlow, Navigation]
+keywords:
+  - Special Page Navigations
+  - FlutterFlow
+  - Navigation
 ---
-
 # Overview
-FlutterFlow provides special navigation widgets like Tab Bar, NavBar, and PageView for advanced navigation scenarios:
+FlutterFlow provides navigation widgets for switching content without pushing a conventional full-page route:
 
 - **Tab Bar**: Used for navigating between different sections of your app with tabs, ideal for organizing content into categories. Learn more [here](tabbar).
 - **NavBar**: A bottom navigation bar that helps users switch between major sections of your app seamlessly. Learn more [here](../../../resources/ui/pages/page-elements.md#nav-bar).

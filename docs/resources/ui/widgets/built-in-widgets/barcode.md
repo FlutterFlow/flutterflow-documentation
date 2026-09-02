@@ -1,7 +1,17 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Barcode
+description: >-
+  The Barcode widget converts a value into a scannable 1D or 2D barcode, such as
+  a QR code.
+keywords:
+  - Barcode
+  - Built In Widgets
+  - Widgets
 ---
-
 # Barcode
 
 The **Barcode** widget converts a value into a scannable 1D or 2D barcode, such as a QR code. Use it for product identifiers, inventory labels, URLs, tickets, or onboarding links.

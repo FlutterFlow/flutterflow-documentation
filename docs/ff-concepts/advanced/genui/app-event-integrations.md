@@ -1,12 +1,24 @@
 ---
 slug: /concepts/app-event-integration
 title: App Event Integration
-description: Feed local app events into GenUI so the conversation can react to live app state and time-sensitive signals.
-tags: [AI, Chat, App Events]
+description: >-
+  Feed local app events into GenUI so the conversation can react to live app
+  state and time-sensitive signals.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 4
-keywords: [FlutterFlow, App Events, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling]
+keywords:
+  - FlutterFlow
+  - App Events
+  - GenUI
+  - Conversational AI
+  - Chat widget
+  - AI agent
+  - A2UI protocol
+  - Component rendering
+  - Tool calling
 ---
-
 # App Events Integrations
 
 App Event Integration lets GenUI listen to FlutterFlow **LOCAL** app events and turn them into conversation context.
@@ -81,3 +93,7 @@ Each cart update quietly enriches the pending context so the next time the user 
 Use a `TemperatureAlert` local event with `auto_respond: true`.
 
 When the event fires, GenUI immediately triggers inference and the model can warn the user and render a supporting UI component if the catalog contains one.
+
+## Related documentation
+
+See [Component Catalog](/concepts/component-catalog) for a related FlutterFlow workflow.

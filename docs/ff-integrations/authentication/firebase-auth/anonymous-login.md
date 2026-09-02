@@ -2,11 +2,18 @@
 slug: /integrations/authentication/firebase/anonymous-login
 title: Anonymous Login
 description: Learn how to implement anonymous login in your FlutterFlow app.
-tags: [Anonymous Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 6
-keywords: [FlutterFlow, Anonymous Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Anonymous Login
+  - Authentication
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 # Anonymous Login
 
 :::info[Prerequisites]
@@ -29,9 +36,8 @@ the authentication provider:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/rzWEzk1DdYGG7V5AA8pd?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/rzWEzk1DdYGG7V5AA8pd?embed&show_copy_link=true" title="Anonymous Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -62,7 +68,11 @@ the authentication provider:
 4. Enable the **Create User Document** toggle and set the Collection to _users_. This action will
    create an entry for the user in the database without any details upon successful login.
 
-   
+Creating a user document is optional. If you enable it, protect anonymous-user data with ownership checks in your Firestore and Storage rules. Anonymous authentication does not isolate data by itself.
+
+If the user later chooses a permanent provider, use an account-linking flow when your implementation supports it so the permanent credential stays attached to the existing Firebase user and data. Creating an unrelated account can orphan the anonymous user's records. See Firebase's [anonymous authentication guidance](https://firebase.google.com/docs/auth/flutter/anonymous-auth).
+
+
 :::info
 To let users log out of your app, you can use the [**Logout**](auth-actions.md#logout-action) action.
 :::

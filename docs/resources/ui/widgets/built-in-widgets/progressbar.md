@@ -1,10 +1,17 @@
 ---
 slug: progressbar
 title: ProgressBar
-tags: [Form Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add ProgressBar widget in your FlutterFlow project.
+keywords:
+  - ProgressBar
+  - Built In Widgets
+  - Widgets
+last_verified: 2026-09-02
 ---
-
 # ProgressBar
 The ProgressBar widget is used to represent the progress of any task. You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
 
@@ -17,8 +24,10 @@ Here's how you can add the ProgressBar widget to your project:
 3. Find the **Progress Bar Shape** dropdown and set it to either **Circular** or **Linear**.
     - **Circular**: The ProgressBar is displayed in a Circle shape. This is the default shape set to the ProgressBar.
     - **Linear**: The ProgressBar is displayed in a rectangular shape and laid out horizontally on the screen.
-4. To set the progress, find the **Progress Value** input box and enter the value between 0 and 1.0. For example, a value of 0.3 will fill 30% of the portion on the ProgressBar.
-5. To change the progress text (displayed in the center), scroll down to the **Text** section, find the Text property, and enter the value.
+4. Set **Progress Value** to a number from 0 through 1, or bind it to a numeric variable. For example, `0.3` fills 30% of the indicator. FlutterFlow constrains literal values to this range.
+5. To add centered text, configure the **Text** section. The text is independent of **Progress Value**, so bind or update both when the label must stay synchronized with changing progress.
+
+A newly added ProgressBar is circular, starts at 50%, displays `50%`, and has **Animate Progress** enabled.
 
 
 <div style={{
@@ -26,9 +35,8 @@ Here's how you can add the ProgressBar widget to your project:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/i5mkJlJMbyZb4LiZQFkf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/i5mkJlJMbyZb4LiZQFkf?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -68,9 +76,8 @@ To change the size of the Circular progress bar:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fj6FUOogYFAxJG7nfAuO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fj6FUOogYFAxJG7nfAuO?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,9 +109,8 @@ Changing the thickness property allows you to change the size of the progress ba
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jeAyY0xdzi3INgac33it?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jeAyY0xdzi3INgac33it?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -138,9 +144,8 @@ To change the start angle:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/99JpuWlT7fQidzQ6BwqW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/99JpuWlT7fQidzQ6BwqW?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -180,9 +185,8 @@ To change the size of the Linear Progress Bar:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9xNRyCbbIRZXu3xFDXcQ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9xNRyCbbIRZXu3xFDXcQ?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -214,9 +218,8 @@ Changing the thickness property allows you to change the height of the progress 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/u7enthjVYkwcKPG3ofJR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/u7enthjVYkwcKPG3ofJR?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,9 +253,8 @@ To change the end radius:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZTLozkXuPWEUEOXx4IX9?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZTLozkXuPWEUEOXx4IX9?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -270,3 +272,11 @@ To change the end radius:
     </iframe>
 </div>
 <p></p>
+
+## Verify the result
+
+Run the page and test progress values `0`, `0.5`, and `1`. Confirm that the fill, optional text, animation, colors, and selected shape match the configured values. For dynamic progress, also test loading and error states so the interface does not imply completion while the underlying task has failed.
+
+## Related documentation
+
+See [Widget State](/concepts/state-management/widget-state) for reading widget values and [File Handling](/concepts/file-handling) for upload and download workflows that can use a progress indicator.

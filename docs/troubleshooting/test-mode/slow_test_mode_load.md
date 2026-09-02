@@ -1,9 +1,19 @@
 ---
-keywords: ['test mode', 'slow load', 'run mode']
+keywords:
+  - test mode
+  - slow load
+  - run mode
 slug: /troubleshooting/test-mode/slow-test-mode-load
 title: Slow Loading in Test Mode
+description: >-
+  If Test Mode takes several minutes to load or fails entirely, the issue may
+  stem from your browser, network, or project configuration.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
+last_verified: 2026-09-02
 ---
-
 # Slow Loading in Test Mode
 
 If Test Mode takes several minutes to load or fails entirely, the issue may stem from your browser, network, or project configuration. This guide walks you through the most common causes and how to resolve them.
@@ -23,9 +33,9 @@ If Test Mode takes several minutes to load or fails entirely, the issue may stem
 
     Ensure your device’s time and date settings are accurate. An incorrect clock can cause authentication issues and impact performance.
 
-- **Clear Browser Cache**
+- **Use a Private Window to Isolate Browser State**
 
-    Browsers store temporary files that may interfere with page loading. Clearing your cache can resolve stale resource conflicts and improve speed.
+    A private window can isolate extensions and stale authenticated state without deleting all site data. Use the browser network panel to distinguish queue/build time from asset, API, or runtime loading.
 
 - **Try a Different Browser**
 
@@ -44,7 +54,11 @@ Projects with many pages, assets, or custom code may take longer to compile. Fol
 
 :::info[Additional Resources]
 If the issue persists after following the steps above, check the
-**[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article. 
+**[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article.
 :::
 
 Following these steps should resolve most Test Mode performance issues and reduce load times for future previews.
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

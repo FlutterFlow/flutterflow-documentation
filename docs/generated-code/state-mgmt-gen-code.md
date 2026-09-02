@@ -2,12 +2,18 @@
 slug: /generated-code/state-management
 title: FlutterFlow State Management
 description: Learn about the state management used in FlutterFlow's generated code.
-tags: [Generated Code, Concepts, State Management]
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Generated Code
 toc_max_heading_level: 4
 sidebar_position: 3
-keywords: [FlutterFlow, Generated Code, State Management, Concepts]
+keywords:
+  - FlutterFlow
+  - Generated Code
+  - State Management
+  - Concepts
 ---
-
 # FlutterFlow State Management
 
 :::warning[Correct topic?]
@@ -57,22 +63,13 @@ Variables required across multiple pages of the app, such as a username, should 
 
 All defined variables within the app state are components of the `FFAppState` class, which functions as a ChangeNotifier. This means listeners can subscribe and receive notifications when any changes occur.
 
-On each page that requires access to app state variables, the method ```context.watch<AppState>()``` is called to initialize a listener for that page. This ```watch()``` method, provided by the Provider package, facilitates access to inherited widgets and acts as an effective wrapper.
+On each page or component that must rebuild when App State changes, generated code calls `context.watch<FFAppState>()`. This `watch()` method is provided by the Provider package and subscribes the widget to `FFAppState` notifications.
 
 ## Persisting App State
 
 When an app state variable is created, selecting the "Persisted" option enables FlutterFlow to save it on the device using the [**Shared Preferences**](https://pub.dev/packages/shared_preferences) package. This ensures the variable remains available even after the app is restarted, making it ideal for persisting settings such as login status or a user's choice between light and dark modes.
 
-If the "**Secure Persisted Fields**" option is enabled in the app state settings, FlutterFlow utilizes the [**Flutter Secure Storage**](https://pub.dev/packages/flutter_secure_storage) package to encrypt the data. 
-
-:::tip[Platform Differences]
-If the platform is **Android**, then `flutter_secure_storage` stores data in [**`encryptedSharedPreference`**](https://developer.android.com/reference/androidx/security/crypto/EncryptedSharedPreferences), which are shared preferences that encrypt keys and values. It handles [**AES Encryption**](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) to generate a secret key encrypted with [**RSA**](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) and stored in [**KeyStore**](https://developer.android.com/reference/java/security/KeyStore).
-
-For the **iOS** platform, it uses the [**KeyChain**](https://developer.apple.com/documentation/security/keychain_services) which is an iOS-specific secure storage used to store and access cryptographic keys only in your app.
-
-In the case of the **Web**, it uses the [**Web Cryptography**](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) (Web Crypto) API.
-:::
-
+If the **Secure Persisted Fields** option is enabled in App State settings, FlutterFlow uses the [**Flutter Secure Storage**](https://pub.dev/packages/flutter_secure_storage) package instead of Shared Preferences. The package delegates storage to platform-appropriate secure storage; consult its current platform documentation for implementation and availability details.
 
 ## Global State
 

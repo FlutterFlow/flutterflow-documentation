@@ -1,9 +1,16 @@
 ---
 slug: pie-chart
 title: Pie Chart
-tags: [Charts, Data Visualization]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add a Pie Chart widget in your FlutterFlow project.
 sidebar_position: 2
+keywords:
+  - Pie Chart
+  - Chart
+  - Built In Widgets
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

@@ -1,12 +1,24 @@
 ---
 slug: /integrations/database/cloud-firestore/getting-started
-title: Getting Started
-description: Learn how to get started with Cloud Firestore in your FlutterFlow app to manage your app's data.
-tags: [Cloud Firestore, Database, Getting Started]
+title: 'Getting Started: Cloud Firestore'
+description: >-
+  Learn how to get started with Cloud Firestore in your FlutterFlow app to
+  manage your app's data.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 1
-keywords: [FlutterFlow, Cloud Firestore, Database, Getting Started]
+keywords:
+  - FlutterFlow
+  - Cloud Firestore
+  - Database
+  - Getting Started
+  - set up Cloud Firestore in FlutterFlow
+ai_queries:
+  - set up Cloud Firestore in FlutterFlow
+last_verified: 2026-09-02
 ---
-
 # Cloud Firestore
 
 [Firestore Database](https://firebase.google.com/docs/firestore) is a product from Google's [Firebase](https://firebase.google.com/). It's a flexible, scalable, NoSQL cloud database. It allows you to store your app data and uses real-time listeners to keep the data in sync.
@@ -15,7 +27,7 @@ Let's understand the Firestore database (Cloud Firestore, a NoSQL Database) in m
 
 ## What is a NoSQL Database
 
-The NoSQL database is a schema-less database. That means the data is NOT stored in the table format. You actually don't have any restrictions on how you store your data. The Firestore database uses the collection-document model to store the data.
+A NoSQL database does not store data in relational tables. Cloud Firestore uses a collection-and-document model and permits documents in one collection to contain different fields. It still enforces supported value types, document and request limits, indexes, and security rules. FlutterFlow also uses the collection schema you define to type fields in the builder and generated code, so keep documents consistent with that schema.
 
 Key terms to remember:
 
@@ -72,14 +84,13 @@ For example, you create the top-level collection, such as posts, and then create
 </figure>
 
 :::tip[Pro Tip]
-Subcollection is best when you have several queries or filters or search on a collection that 
+Subcollection is best when you have several queries or filters or search on a collection that
 is based on the other collection. For example, loading or searching the comments of a specific post (i.e., show all comments of a specific post that have more likes.)
 :::
 
 
-:::info
-
-You can secure the data using the [**Firestore Rules**](firestore-rules.md).
+:::warning[Secure and cost-aware design]
+Before using real user data, configure and test [Firestore Security Rules](firestore-rules.md). Rules are authorization, not query filters: the query itself must be compatible with the permitted result set. Also review Firestore pricing, indexes, and limits; listeners and repeated queries can generate billable reads.
 :::
 
 
@@ -90,8 +101,7 @@ You can secure the data using the [**Firestore Rules**](firestore-rules.md).
 
 If you are a visual learner, you can check out the video:
 
-<div class="video-container"><iframe src="https://www.youtube.
-com/embed/v_hR4K4auoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Getting Started: Cloud Firestore interactive tutorial" src="https://www.youtube.com/embed/v_hR4K4auoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 :::
 
@@ -103,7 +113,7 @@ Additionally, you can use multiple databases to simulate different environments 
 
 To create a new database, go to the **Firebase Console > Firestore Database** section. Click the button next to the default database, i.e, **Add database**. Choose a region and configure your security rules. Once the new database is created, you can switch between databases using the dropdown.
 
-Next, copy the new **Database ID** and navigate to **FlutterFlow > Settings and Integrations > Firebase > Advanced Settings**. Paste the ID into the **Firestore Database ID** input field. Finally, regenerate the config file. Your app will now use the newly created database.
+Next, copy the new **Database ID** and navigate to **FlutterFlow > Settings and Integrations > Firebase > Advanced Settings**. Paste the ID into the **Firestore Database ID** input field. Finally, regenerate the config file. Your app will now use the selected database. Deploy and test security rules and indexes for that database separately.
 
 
 <div style={{
@@ -111,9 +121,8 @@ Next, copy the new **Database ID** and navigate to **FlutterFlow > Settings and 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/f2lDuL0yk5UlrjkNnfRF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/f2lDuL0yk5UlrjkNnfRF?embed&show_copy_link=true" title="Getting Started: Cloud Firestore interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

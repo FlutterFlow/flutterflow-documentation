@@ -1,10 +1,17 @@
 ---
 slug: swipeable-stack
 title: SwipeableStack
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add SwipeableStack widget in your FlutterFlow project.
+keywords:
+  - SwipeableStack
+  - Swipeable Stack
+  - Built In Widgets
+last_verified: 2026-09-02
 ---
-
 # SwipeableStack
 
 The SwipeableStack is a widget designed to stack cards or content layers that users can swipe in any direction. It is commonly used in dating apps like Tinder for profile browsing.
@@ -14,9 +21,8 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/e7f59a4565084bda8b1fd8182bb5b169?sid=d0489d7a-c9b2-46ba-b63a-e944b09633e0"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/e7f59a4565084bda8b1fd8182bb5b169?sid=d0489d7a-c9b2-46ba-b63a-e944b09633e0" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -37,7 +43,7 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
 
 ## Adding SwipeableStack widget
 
-To add a Stack widget:
+To add a SwipeableStack widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **SwipeableStack** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. By default, it adds four cards and is represented as **SwipeableStack Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the card you want to see.
@@ -50,9 +56,8 @@ To add a Stack widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c07a029c001c4a0faf4413f91246b310?sid=b79a41bb-e067-4dbd-9be2-a7819567c2ce"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c07a029c001c4a0faf4413f91246b310?sid=b79a41bb-e067-4dbd-9be2-a7819567c2ce" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -81,9 +86,8 @@ You might want to allow users to swipe the cards with a button press—for insta
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/5e6d86f975f64f4b81b80109426c77e2?sid=4fbae627-da87-423d-8c41-4bfa9301b5b0"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/5e6d86f975f64f4b81b80109426c77e2?sid=4fbae627-da87-423d-8c41-4bfa9301b5b0" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -116,7 +120,7 @@ Here is how you can get a callback when the child widgets get swiped:
 
 1. Select the **SwipeableStack** widget.
 2. Select **Actions** from the Properties panel and open **Action Flow Editor**.
-3. Select the swipe type (among the **OnWidgetSwipe, OnLeftSwipe, OnRightSwipe, OnUpSwipe, On Down Swipe**) on which you would like to get a callback. If the swipe direction is not important to you, select **On Widget Swipe**.
+3. Select **On Widget Swipe**, **On Left Swipe**, **On Right Swipe**, **On Up Swipe**, or **On Down Swipe**. Use **On Widget Swipe** when the direction is not important.
 4. Now you can add any action that will be triggered upon receiving the selected callback—for example, showing the Snackbar message on swipe.
 
 <div style={{
@@ -124,9 +128,8 @@ Here is how you can get a callback when the child widgets get swiped:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/73536e21a77e4fa1924dd48974e6eed1?sid=c765ff28-ce65-4eac-9cec-d370c8cff581"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/73536e21a77e4fa1924dd48974e6eed1?sid=c765ff28-ce65-4eac-9cec-d370c8cff581" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -184,9 +187,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/06113eea1f6345788c66e330a3f2612a?sid=72b3decd-cffd-461d-b2bf-e5ec9a61b9cb"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/06113eea1f6345788c66e330a3f2612a?sid=72b3decd-cffd-461d-b2bf-e5ec9a61b9cb" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -216,9 +218,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c97977ee73624ddc94f6f53b1f26a3d3?sid=341b96e9-3793-48e8-a08f-c1e49f663f85"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c97977ee73624ddc94f6f53b1f26a3d3?sid=341b96e9-3793-48e8-a08f-c1e49f663f85" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -248,9 +249,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b1c95dd80bde49fb8ced6e53d67ea610?sid=4a47662d-0cfb-4f0a-a92d-1c5bb0d6c688"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b1c95dd80bde49fb8ced6e53d67ea610?sid=4a47662d-0cfb-4f0a-a92d-1c5bb0d6c688" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -280,9 +280,8 @@ To change the offset of the back cards move to the **Properties Panel > Swipeabl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6239da42312b46c489ee2a45739d526d?sid=30d5ff46-e468-4596-ba7e-fe0bd48261f4"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6239da42312b46c489ee2a45739d526d?sid=30d5ff46-e468-4596-ba7e-fe0bd48261f4" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -314,3 +313,13 @@ There are the following types of card swipes you can add:
 - **Trigger Right Swipe**: Moves the current card from left to right.
 - **Trigger Up Swipe**: Moves the current card upwards from bottom to top.
 - **Trigger Down Swipe**: Moves the current card downwards from top to bottom.
+
+The action can control a SwipeableStack in the same page or component scope. A programmatic swipe uses the same direction callbacks as a gesture, so avoid wiring a callback back to the same control action without a stopping condition.
+
+## Dynamic children and widget state
+
+SwipeableStack can generate cards from a list. For a dynamically generated stack, **Widget State > Swipeable Stack Current Element** exposes the source item for the current card. Direction-specific triggers also run in the swiped item's context, which lets you update the corresponding backend record.
+
+## Verify the interaction
+
+Run the page and swipe once in every allowed direction. Confirm the general and direction-specific triggers, current item, loop behavior, and backend updates. Test button-driven swipes as well as gestures. If looping is disabled, verify the empty/end state after the final card.

@@ -2,11 +2,21 @@
 title: Page Model
 slug: /generated-code/page-model
 sidebar_position: 5
+description: >-
+  Learn how FlutterFlow generates widget and model files for a page, including
+  local state, child models, lifecycle actions, and disposal.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Generated Code
+keywords:
+  - Page Model
+  - Generated Code
+  - FlutterFlow
 ---
-
 # Generated Code: Pages
 
-When you create a new Page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. So if the name of the page you created is called **ProductListPage**, FlutterFlow generation backend will automatically create **ProductListPageWidget** class and **ProductListPageModel** class. 
+When you create a new Page in FlutterFlow, it automatically generates two files: a `Widget` class and a `Model` class. So if the name of the page you created is called **ProductListPage**, FlutterFlow generation backend will automatically create **ProductListPageWidget** class and **ProductListPageModel** class.
 
 :::info[Prerequisites]
 This guide uses examples from the generated code of the **[EcommerceFlow demo app](https://bit.ly/ff-docs-demo-v2)**. To view the generated code directly, check out the **[Github repository](https://github.com/FlutterFlow/sample-apps/tree/main/ecommerce_flow)**.
@@ -16,20 +26,20 @@ This guide uses examples from the generated code of the **[EcommerceFlow demo ap
 
  The `PageModel` classes are responsible for managing the state of individual pages and initializing the components used in these Pages. These classes extend the `FlutterFlowModel` class, which provides a consistent structure and shared functionality across all page models.
 
-The following diagram shows how FlutterFlow generates the model and widget class when you create a new Page in FlutterFlow: 
+The following diagram shows how FlutterFlow generates the model and widget class when you create a new Page in FlutterFlow:
 ![page-generation-initial.png](imgs/page-generation-initial.png)
 
 :::tip[FlutterFlow Model]
-To learn more about the utility classes and methods that FlutterFlow generates for all pages & components, see [**the FlutterFlowModel document**](flutterflow-model.md). 
+To learn more about the utility classes and methods that FlutterFlow generates for all pages & components, see [**the FlutterFlowModel document**](flutterflow-model.md).
 :::
 
 
 
 #### Managing Local State
 
-A `PageModel` class typically holds local state fields specific to the page, which correspond to the **[Page State variables](../resources/ui/pages/page-lifecycle.md#page-state)**. 
+A `PageModel` class typically holds local state fields specific to the page, which correspond to the **[Page State variables](../resources/ui/pages/page-lifecycle.md#page-state)**.
 
-For example, in the ProductListPage, user may create a Page State variable called `searchString`. Correspondingly, in the `product_list_page_model.dart` [file](https://github.com/FlutterFlow/sample-apps/blob/main/ecommerce_flow/lib/product/product_list_page/product_list_page_model.dart) (which is the `Model` file for the `ProductListPage`), the corresponding state field would be `_searchString`. This private field stores the current search string and includes a getter and setter to manage its value while logging any changes.
+For example, a `ProductListPage` can define a Page State variable named `searchString` in `product_list_page_model.dart`. In debug-enabled generated code, the field can use a private backing field with getter and setter logging as shown below. Production exports may emit a simpler public field while preserving the same Page State behavior.
 
 ```js
 String? _searchString;
@@ -65,7 +75,7 @@ The `PageModel` class is also responsible for initializing the models of compone
 @override
 void initState(BuildContext context) {
     cartCounterModel = createModel(context, () => CartCounterModel()..parentModel = this);
-    
+
 }
 ```
 :::info
@@ -117,7 +127,7 @@ class _ProductListPageWidgetState extends State<ProductListPageWidget> {
     @override
     void initState() {
         super.initState();
-        _model = createModel(context, () => ProductDetailPageModel());
+        _model = createModel(context, () => ProductListPageModel());
 
     }
 
@@ -175,7 +185,7 @@ When you define actions for the `onPageLoad` action trigger of a Page, these act
       safeSetState(() {});
       ... // more actions
     });
-    
+
   }
 ```
 

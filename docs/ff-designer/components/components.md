@@ -1,12 +1,27 @@
 ---
 slug: /designer/components
 title: Components
-description: Learn how to create reusable UI components, add variants and toggles, and manage dynamic behavior using parameters and expressions in FlutterFlow Designer.
-tags: [Components, FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Learn how to create reusable UI components, add variants and toggles, and
+  manage dynamic behavior using parameters and expressions in FlutterFlow
+  Designer.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [FlutterFlow components, reusable UI, component variants, toggles, has expression, design system, UI components]
+keywords:
+  - FlutterFlow components
+  - reusable UI
+  - component variants
+  - toggles
+  - has expression
+  - design system
+  - UI components
+  - create reusable components in FlutterFlow Designer
+ai_queries:
+  - create reusable components in FlutterFlow Designer
 ---
-
 # Components
 
 A **component** is a reusable UI building block that you can use across your app design. Instead of creating the same UI again and again, you build it once as a component and reuse it wherever needed. This helps keep your app design consistent and easier to maintain.
@@ -32,9 +47,8 @@ Inside Component Studio, you can bind these parameters to different UI elements.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/UL7BkkQMcum84CQnfFAT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/UL7BkkQMcum84CQnfFAT?embed&show_copy_link=true" title="Components interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -73,9 +87,8 @@ If you want to introduce a completely new category of variation, click **+ Add v
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/KBmUhJavLxBjxwA8IqjE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/KBmUhJavLxBjxwA8IqjE?embed&show_copy_link=true" title="Components interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -105,9 +118,8 @@ To add a toggle, open your component and click **Add toggle** from the variants 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fN1S8VFY034VMJU0vJ0p?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fN1S8VFY034VMJU0vJ0p?embed&show_copy_link=true" title="Components interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -141,3 +153,7 @@ A `Has` expression checks whether a parameter contains a value. If it does, the 
 Suppose you have a flight booking card component with an optional image on the right side. Instead of adding both `image_url` and a separate `show_image` flag, you can just use `image_url` and bind the **Visible** property to `has(image_url)`. If an image is provided, the card displays the image, and if not, it just appears as a text-only layout.
 
 ![control-using-has-expression](imgs/control-using-has-expression.avif)
+
+## Related documentation
+
+See [Collaboration](/designer/collaboration) for a related FlutterFlow workflow.

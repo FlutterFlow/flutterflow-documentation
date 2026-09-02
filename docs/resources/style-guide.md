@@ -1,11 +1,19 @@
 ---
 slug: /resources/style-guide
 title: Naming Variables & Functions
-description: Naming conventions for FlutterFlow, including guidelines for widgets, components, state variables, constants, and more.
-tags: [Style Guide, Variables]
-keywords: [Style Guide, Variables]
+description: >-
+  Naming conventions for FlutterFlow, including guidelines for widgets,
+  components, state variables, constants, and more.
+tags:
+  - FlutterFlow
+  - Resources
+  - Style Guide
+keywords:
+  - Style Guide
+  - Variables
+  - Naming Variables & Functions
+last_verified: 2026-09-02
 ---
-
 # Naming Variables & Functions
 
 To make your code more maintainable, readable, and consistent, it’s essential to adopt clear naming conventions for variables, functions, and components.
@@ -33,7 +41,7 @@ This section outlines naming conventions for pages, components, state variables,
 
 
 ### Pages & Components
-Use **UpperCamelCase** for all widgets, components, pages, and screen names to maintain consistency and readability. FlutterFlow ensures clarity by automatically adding "Widget" to widget names when generating code. For components, you can suffix the name with "Component" to clearly distinguish them. 
+Use **UpperCamelCase** for all widgets, components, pages, and screen names to maintain consistency and readability. FlutterFlow ensures clarity by automatically adding "Widget" to widget names when generating code. For components, you can suffix the name with "Component" to clearly distinguish them.
 
 Similarly, for pages and screens, include "Page" or "Screen" in the name to indicate their purpose. This approach aligns with Dart conventions for class names and ensures a well-organized project structure.
 
@@ -90,15 +98,15 @@ When naming custom data types and enums, use **UpperCamelCase** for consistency 
 - **Don’t Mix Naming Conventions for Enums:** Maintain consistent capitalization between enum names and their values. Bad Example: `enum UserRole { Admin, EDITOR, viewer }`
 :::
 
-For datatype fields, we use the same convention as [State variables](#variables). 
+For datatype fields, we use the same convention as [State variables](#variables).
 
 ### Constants
 
-Flutter prefers using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. Use **SCREAMING_SNAKE_CASE** only when contributing to global or legacy projects where it is already in use.
+Follow Dart's [lowerCamelCase guidance](https://dart.dev/effective-dart/style#do-name-other-identifiers-using-lowercamelcase) for constants. A leading `k` is an optional project convention, not a Dart requirement. Use **SCREAMING_SNAKE_CASE** only where an existing external or legacy convention requires it.
 
 :::tip[Do's]
-- **Start Constants with a k Prefix:** Always use a lowercase `k` followed by **UpperCamelCase** for constants in FlutterFlow projects.
-- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid using abbreviations unless they are widely understood. Examples: `kDefaultPadding`, `kMaxUploadSizeMb`
+- **Use lowerCamelCase:** Name constants like other Dart identifiers.
+- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid abbreviations unless they are widely understood. Examples: `defaultPadding`, `maxUploadSizeMb`.
 :::
 
 :::danger[Don'ts]

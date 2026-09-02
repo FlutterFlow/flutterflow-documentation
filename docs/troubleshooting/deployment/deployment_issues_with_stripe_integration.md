@@ -1,7 +1,18 @@
 ---
-keywords: ['deployment', 'issues', 'integration']
+keywords:
+  - deployment
+  - issues
+  - integration
 slug: /troubleshooting/deployment/deployment-issues-with-stripe-integration
 title: Deployment Issues with Stripe Integration
+description: >-
+  Integrating Stripe in your FlutterFlow project can help you accept payments
+  efficiently.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
+last_verified: 2026-09-02
 ---
 # Deployment Issues with Stripe Integration
 
@@ -19,36 +30,38 @@ Integrating Stripe in your FlutterFlow project can help you accept payments effi
 
     A defined Google Cloud Platform (GCP) location for your Firebase project ensures the correct regional operation of services. The absence of a set location can hinder the deployment process.​
 
-    ![](../assets/20250430121121827511.png)
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121121827511.png)
 
 4. **Firebase Project Permissions**
 
     Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can also reference the **[setup guide](/integrations/firebase/connect-to-firebase/#step-1-set-up-your-project)** as well.​
 
-    ![](../assets/20250430121122068343.png)
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122068343.png)
 
 5. **Correct Merchant Code**
 
     Use the correct 3-letter merchant country code (e.g., "GBR" for the United Kingdom vs. "UK"). Incorrect codes can lead to failed transactions. For accurate codes, refer to **[IBAN Country Codes](https://www.iban.com/country-codes)**.​
 
-    ![](../assets/20250430121122307123.png)
-    
-    ![](../assets/20250430121122597517.png)
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122307123.png)
 
-6.  **Test and Live Keys**
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122597517.png)
 
-    For deployment, both Test and Live Stripe keys must be configured in your project settings, regardless of the development stage. This ensures Stripe's API can properly interact with your application.​
+6.  **Use the Key for the Active Mode**
 
-    ![](../assets/20250430121122925141.png)
+    Keep test and live credentials separated and select the intended mode. Secret keys belong only in FlutterFlow's dedicated server-side configuration or an approved secret manager—never in client code, app state, screenshots, logs, or chat.
+
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122925141.png)
 
 7. **Consistent Region Settings**
 
     Align your Firebase project's region with that of your FlutterFlow settings to prevent deployment failures. Inconsistencies can cause function deployment issues.​
-    
-    ![](../assets/20250430121123230941.png)
-    
-    ![](../assets/20250430121123502329.png)
+
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121123230941.png)
+
+    ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121123502329.png)
 
 If you find that this article hasn't fully addressed your concerns or if you have more questions, please don't hesitate to reach out to us at support@flutterflow.io
+
+After deployment succeeds, verify a complete test-mode payment, failed/cancelled payment, authenticated server-side amount calculation, webhook signature verification, and idempotent fulfillment before enabling live mode. A client success screen is not proof of payment.
 
 ​

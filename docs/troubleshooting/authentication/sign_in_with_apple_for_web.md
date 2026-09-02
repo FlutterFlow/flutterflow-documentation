@@ -1,9 +1,19 @@
 ---
-keywords: ['firebase', 'sign', 'apple']
+keywords:
+  - firebase
+  - sign
+  - apple
 slug: /troubleshooting/authentication/sign-in-with-apple-for-web
 title: Sign in With Apple (for Web)
+description: >-
+  To enable Sign in with Apple on the web, you must complete additional steps in
+  both your Apple Developer Account and Firebase Console .
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
+last_verified: 2026-09-02
 ---
-
 # Sign in With Apple (for Web)
 
 To enable **Sign in with Apple** on the web, you must complete additional steps in both your **Apple Developer Account** and **Firebase Console**. These steps allow Apple to identify your website and authorize the use of Apple login on web platforms.
@@ -12,27 +22,29 @@ To enable **Sign in with Apple** on the web, you must complete additional steps 
 The **Sign in with Apple (Web)** functionality cannot be tested in Test/Run Mode. You must **deploy** your app to a live domain before testing.
 :::
 
-Take the following steps to set up Sign in with App (for Web):
+Take the following steps to set up Sign in with Apple (for Web):
 
 1. **Configure Apple Developer Account**
 
    Follow these steps in your [Apple Developer Account](https://developer.apple.com/account/):
 
-   1. **Register a New Identifier**  
-      - Select **App IDs** and fill in the required details.  
+   1. **Register a New Identifier**
+      - Select **App IDs** and fill in the required details.
       - Enable the **Sign in with Apple** capability.
 
-   2. **Create a New Service ID**  
-      - Provide a name and a unique identifier.  
+   2. **Create a New Service ID**
+      - Provide a name and a unique identifier.
       - This will be used as the **Service ID** in Firebase.
 
-   3. **Configure Sign in With Apple**  
-      - Add your domain and return URL (from Firebase).  
+   3. **Configure Sign in With Apple**
+      - Add your domain and return URL (from Firebase).
       - Save the configuration.
 
-   4. **Create a New Key**  
-      - Enable **Sign in with Apple**.  
+   4. **Create a New Key**
+      - Enable **Sign in with Apple**.
       - Download the generated private key (`.p8` file).
+
+      Apple lets you download this private key only once. Store it in an approved secret manager or FlutterFlow's dedicated configuration field; never commit it, paste it into chat, or add it to app assets.
 
 
 2. **Set Up in Firebase Console**
@@ -48,6 +60,8 @@ Take the following steps to set up Sign in with App (for Web):
 
       Once these steps are completed, your **Sign in with Apple (Web)** setup should be active.
 
+      Confirm that the exact production domain is authorized in Firebase Authentication and that Apple's return URL exactly matches Firebase's handler URL. A domain alias, path, scheme, or trailing-slash mismatch can cause the callback to fail.
+
 :::note[Still Not Working?]
 If the sign-in process fails after completing these steps, please contact [FlutterFlow Support](mailto:support@flutterflow.io) via Chat or Email.
 :::
@@ -58,3 +72,7 @@ If the sign-in process fails after completing these steps, please contact [Flutt
 - [Firebase Authentication - Apple Provider](https://firebase.google.com/docs/auth/web/apple)
 - [FlutterFlow Authentication Docs](https://docs.flutterflow.io/authentication)
 :::
+
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

@@ -1,23 +1,31 @@
 ---
 slug: /resources/data-representation/data-types
 title: Data Types
-description: Dive into the diverse range of data types supported by FlutterFlow, from basic primitives like integers and strings to complex composite types and built-in functionalities tailored for app development.
-tags: [Data Types, FlutterFlow, Data Representation]
+description: >-
+  FlutterFlow supports a variety of data types to accommodate different needs in
+  your app.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
 sidebar_position: 2
-keywords: [Data Types, FlutterFlow, Data Representation]
+keywords:
+  - Data Types
+  - FlutterFlow
+  - Data Representation
 ---
-
 # Data Types
 
-FlutterFlow supports a variety of data types to accommodate different needs in your app. These data types range from the basic, such as integers and strings, to more complex types like lists, maps, and built-in data types.
+FlutterFlow uses data types to determine which values a variable, field, parameter, or action input can accept. The available type picker is context-sensitive: App State, component parameters, backend fields, custom code, and action outputs do not all expose the same set of types.
 
 ## Primitive Data Types
 
-Primitive data types are the most basic data types. They include **integers**, **doubles**, **booleans**, and **strings**. These are the building blocks and are essential in any kind of app development.
+Primitive data types are the basic value types: **Integer**, **Double**, **Boolean**, and **String**. FlutterFlow's picker uses **String**, not a separate Text data type.
 
 ## Composite Data Types
 
-Composite data types are made up of primitive data types. They can hold multiple values and can be used to structure and organize data in a more meaningful way. Examples of composite data types include **lists** and **custom data types**.
+Composite data types organize multiple values. A variable can be configured as a **List**, and a **Data Type** can contain multiple named fields. Backend records and JSON values are also structured values, but their fields and operations depend on their source.
 
 ### Custom Data Types
 You can also create your own custom data types. This can be especially useful when you need a specific structure for your data that doesn't fit into the predefined types. For example, you might create a custom data type for a user profile, which includes several pieces of data like a name, an email address, and a profile picture.
@@ -28,29 +36,32 @@ Learn more about creating and using [**Custom Data Types**](custom-data-types.md
 
 ## Built-in Data Types
 
-FlutterFlow's built-in data types are essential for effectively managing and organizing diverse information. They ensure data consistency and easy data retrieval. They handle functionalities from storing simple color values and media URLs to complex geographical data.
+Common built-in types include:
 
-For instance, the **GooglePlace** data type manages location data like coordinates, place name, and address, while the **Uploaded File** type handles uploaded file data, including file name, binary data, and image dimensions. This standardization is crucial as it allows you to focus on higher-level application logic without worrying about the underlying data handling specifics.
-Below is a list of all supported built-in data types:
+- **Color:** A Flutter color value.
+- **Image Path**, **Video Path**, and **Audio Path:** A path or URL for the corresponding media type.
+- **Date Time:** A date and time value.
+- **JSON:** A JSON value, such as `{"firstName":"John","lastName":"Doe"}`.
+- **LatLng:** A latitude and longitude pair.
+- **TimestampRange:** A start and end date-time value.
+- **GooglePlace:** Place details returned by Google Places workflows.
+- **Data Type:** An instance of a project-defined [custom data type](custom-data-types.md).
+- **Enum:** One value from a project-defined [enum](enums.md).
 
-- **Color**: Stores color values.
-- **Image Path**: Stores the URL of uploaded images.
-- **Video Path**: Stores the URL of uploaded videos.
-- **Audio Path**: Stores the URL of uploaded audio files.
-- **Document Reference**: Stores references to documents, simplifying data fetching.
-- **Document**: Stores actual Firestore documents.
-- **Date Time**: Stores date and time values.
-- **Json**: Stores JSON values, such as `{"firstName":"John", "lastName":"Doe"}`.
-- **LatLng**: Stores the latitude and longitude of specific locations, aiding Google Maps integration.
-- **TimestampRange**: Stores start and end date-time values.
-- **GooglePlace**: Stores GooglePlace data.
-- **Data Type**: Stores custom data types.
-- **Supabase Row**: Stores actual row data from a Supabase table.
-- **Uploaded File (Bytes)**: Stores uploaded files in Bytes.
+Additional types appear only where their backing feature or value source is available:
+
+- **Document Reference** and **Document** for Cloud Firestore references and records.
+- **Supabase Row** or another Postgres row type when the project uses a supported Postgres database.
+- **SQLite Row** when the project uses SQLite.
+- **Uploaded File (Bytes)** for an uploaded file's bytes and metadata.
+- **API Response**, **RevenueCat Package**, **RevenueCat Offering**, **Custom Cloud Function Response**, and **Response Stream Message** for outputs produced by those integrations or actions.
+- **Action**, **Widget Builder**, **Child Widget**, **Custom Class**, and **Custom Enum** in the specific parameter or custom-code contexts that support them.
+
+If a type does not appear in a picker, first check the variable's scope and whether the required backend or integration is enabled. Do not substitute a similarly named type: for example, a Firestore **Document** and **Document Reference** have different behavior.
 
 ## Enums
 
-Enums, or enumerated types, are a special kind of data type that consists of a set of related values. They can be used to create a type-safe way of dealing with a specific set of values. For instance, you may have an enum for user roles, such as 'admin', 'user', and 'guest'.
+Enums consist of a fixed set of named values. They provide a type-safe choice for concepts such as a user role (`admin`, `user`, or `guest`) or order status, avoiding misspelled free-form strings.
 
 :::info
 

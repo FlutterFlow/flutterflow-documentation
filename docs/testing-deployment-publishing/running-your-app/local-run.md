@@ -1,13 +1,22 @@
 ---
 slug: /testing/local-run
 title: Local Run
-description: Local Run downloads the code locally and gives you the option to use Flutter's Hot Reload to see your changes instantly on a device.
-tags: [Local Run, Testing, Hot Reload]
+description: >-
+  Local Run downloads the code locally and gives you the option to use Flutter's
+  Hot Reload to see your changes instantly on a device.
+tags:
+  - FlutterFlow
+  - Testing
 sidebar_position: 1
-keywords: [Local Run, Testing, FlutterFlow, Hot Reload]
+keywords:
+  - Local Run
+  - Testing
+  - FlutterFlow
+  - Hot Reload
+  - run and test a FlutterFlow app locally
+ai_queries:
+  - run and test a FlutterFlow app locally
 ---
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -21,11 +30,11 @@ Testing on mobile devices requires downloading code, for which you must be on [*
 
 ### iOS Setup
 
-For iOS app testing on a device or simulator, you need a Mac with Xcode. Follow [**these instructions**](https://docs.flutter.dev/get-started/install/macos/mobile-ios?tab=download#configure-ios-development) to set up your Mac, which includes [**setting up your device for testing**](https://docs.flutter.dev/get-started/install/macos/mobile-ios?tab=download#configure-your-target-ios-device).
+For iOS app testing on a device or simulator, you need a Mac with Xcode. Follow [**these instructions**](https://docs.flutter.dev/platform-integration/ios/setup) to set up your Mac, which includes [**setting up your device for testing**](https://docs.flutter.dev/platform-integration/ios/setup).
 
 ### Android Setup
 
-For Android app testing on a device or emulator, configure your machine ([**Windows**](https://docs.flutter.dev/get-started/install/windows/mobile?tab=virtual), [**Mac**](https://docs.flutter.dev/get-started/install/macos/mobile-android?tab=virtual), [**Linux**](https://docs.flutter.dev/get-started/install/linux#android-setup)) by following [**these instructions**](https://docs.flutter.dev/get-started/install/macos/mobile-android?tab=virtual#configure-android-development), which include [**setting up your device for testing**](https://docs.flutter.dev/get-started/install/macos/mobile-android?tab=virtual#configure-your-target-android-device).
+For Android app testing on a device or emulator, configure your machine ([**Windows**](https://docs.flutter.dev/platform-integration/android/setup), [**Mac**](https://docs.flutter.dev/platform-integration/android/setup), [**Linux**](https://docs.flutter.dev/platform-integration/android/setup)) by following [**these instructions**](https://docs.flutter.dev/platform-integration/android/setup), which include [**setting up your device for testing**](https://docs.flutter.dev/platform-integration/android/setup).
 
 :::
 
@@ -35,16 +44,16 @@ Here are the steps to use local run:
 
 1. Download the [desktop](https://flutterflow.io/desktop) app and open your project.
 2. In the [Toolbar](../../intro/ff-ui/toolbar.md), click on the **dropdown** next to the *Test Mode* button and click **Setup Local Run**. This will open the setup wizard.
-    
+
 ![setup-local-run](../imgs/setup-local-run.avif)
-    
+
 3. To run the app locally, you'll need the Flutter SDK. Click the **Download** button to download it. **Note** that for iOS, ensure you have *Xcode* and *CocoaPods* installed, select the checkmark, and then click **Download**.
-    
+
 ![download-flutter-sdk](../imgs/download-flutter-sdk.avif)
 
 4. Once it's ready to use, click the **Continue** button. This will run the **`Flutter Doctor`** command to check your environment for any issues that might prevent you from running the applications. It performs a series of checks to verify that the necessary tools and dependencies are correctly installed and configured on your system.
-    
-    
+
+
 ![doctor-output](../imgs/doctor-output.avif)
 
 5. Optional: You can set up your preferred IDE to open the project code directly from the local run. To do this, select your IDE, **Select Path**, and click **Save**. This feature is useful for debugging and understanding your project code. For this step, ensure you have setup [Flutter SDK](#2-setup-flutter-sdk) and [IDE](#3-installing-ide-and-plugins).
@@ -83,9 +92,8 @@ Here are the steps to use local run:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/PdTDtCPA6dmY2N4ziJ1A?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/PdTDtCPA6dmY2N4ziJ1A?embed&show_copy_link=true" title="Local Run interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -104,9 +112,9 @@ Here are the steps to use local run:
 </div>
 <p></p>
 
-8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device. 
+8. After you make a change in your app, open the test menu to access options like **hot reload**, **hot restart**, and **stopping** your app. You'll notice that the test mode button has now changed to the **Hot Reload** button, which you can click anytime to instantly see your changes reflected on your device.
 
-**Hot Reload** updates UI instantly without losing its state, while **Hot Restart** recompiles 
+**Hot Reload** updates UI instantly without losing its state, while **Hot Restart** recompiles
 and reloads the entire app, resetting its state. For more info, you can visit [Flutter's Hot Reload documentation](https://docs.flutter.dev/tools/hot-reload).
 
 ![run-controls](../imgs/run-controls.avif)
@@ -121,11 +129,11 @@ Testing your app on physical devices is essential to ensure it performs as expec
 
 To setup Android physical device, first enable Developer Options and USB Debugging in your Android device. Navigate to **Settings > About phone**, tap **Build number** seven times to activate Developer Options, then go to **Settings > System > Developer options** and enable **USB debugging**.
 
-Connect your device to your computer via USB, authorizing the connection if prompted. Verify the setup by running `flutter devices` in Android Studio’s terminal; your device should appear in the list of connected devices. 
+Connect your device to your computer via USB, authorizing the connection if prompted. Verify the setup by running `flutter devices` in Android Studio’s terminal; your device should appear in the list of connected devices.
 
 :::info
 
-For more detailed guidance, refer to the [**Android Flutter documentation**](https://docs.flutter.dev/get-started/install/macos/mobile-android#configure-your-target-android-device).
+For more detailed guidance, refer to the [**Android Flutter documentation**](https://docs.flutter.dev/platform-integration/android/setup).
 
 :::
 
@@ -139,7 +147,7 @@ Finally, configure code signing to allow your app to run on a real device. Ensur
 
 :::info
 
-For more detailed guidance, refer to the [**iOS Flutter documentation**](https://docs.flutter.dev/get-started/install/macos/mobile-ios#configure-your-target-ios-device).
+For more detailed guidance, refer to the [**iOS Flutter documentation**](https://docs.flutter.dev/platform-integration/ios/setup).
 
 :::
 
@@ -162,9 +170,8 @@ The console input in local run is particularly useful for performing hot reload 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/fraMoCbFDhzunNgBN852?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/fraMoCbFDhzunNgBN852?embed&show_copy_link=true" title="Local Run interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -227,9 +234,9 @@ To download your app code, you have two options:
 
 ### 2. Setup Flutter SDK
 
-You can download the latest Flutter SDK from [here](https://docs.flutter.dev/get-started/install). However, we recommend using the Flutter SDK downloaded by the [local run](#using-local-run), whether you have already downloaded the Flutter SDK or not. This approach ensures compatibility with FlutterFlow projects and helps you avoid issues arising from version differences.
+You can download the latest Flutter SDK from [here](https://docs.flutter.dev/install/quick). However, we recommend using the Flutter SDK downloaded by the [local run](#using-local-run), whether you have already downloaded the Flutter SDK or not. This approach ensures compatibility with FlutterFlow projects and helps you avoid issues arising from version differences.
 
-To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it 
+To do this, copy the Flutter SDK path (click 'this path' button) from the local run and [add it
 to your system path](#troubleshooting).
 
 ![setup-flutter-SDK](../imgs/setup-flutter-SDK.avif)
@@ -237,7 +244,7 @@ to your system path](#troubleshooting).
 If you prefer to use your existing Flutter SDK, you can follow the steps below to avoid any versioning issues:
 
 1. Take note of your FlutterFlow project version.
-    
+
 ![check-flutter-version.avif](../imgs/check-flutter-version-2.avif)
 
 1. Check your current Flutter SDK version by entering the following command in the terminal. `flutter --version`
@@ -247,18 +254,18 @@ If you prefer to use your existing Flutter SDK, you can follow the steps below t
         ```
         flutter downgrade <version_number>
         ```
-        
-    2. To **upgrade** flutter version:
-        
 
-        
+    2. To **upgrade** flutter version:
+
+
+
         ```
         flutter upgrade --force <version_number>
         ```
-        
-    
+
+
     Replace `<version_number>` with the version supported by FlutterFlow.
-    
+
 
 ### 3. Installing IDE and Plugins
 
@@ -283,7 +290,7 @@ To run your app on a device:
     2. Run the command `flutter pub get`.
     3. Now, enter the command `flutter run`. VS Code will build and run your app. You'll see the output in the terminal, and the app should launch in the selected emulator or physical device.
 3. For **Android Studio**:
-    1. Open the terminal within Android Studio by clicking **"View" -> "Tool Windows" -> 
+    1. Open the terminal within Android Studio by clicking **"View" -> "Tool Windows" ->
        "Terminal"**.
     2. Run the command `flutter pub get`.
     3. Click the green "Run" button (a right-facing triangle) located in the top toolbar. Choose the target device (emulator or physical device) where you want to run the app. Android Studio will build and run your app. You'll see the output in the "Run" panel at the bottom, and the app should launch in the selected emulator or device.
@@ -298,9 +305,9 @@ To run your app on a device:
 Running your app on a Desktop involves:
 
 1. **Adding platforms**: Navigate to **Setting and Integrations** from the Navigation Menu > **Project Setup** > **Platforms** and enable your desired platform.
-2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users, 
-   some design adjustments may be necessary to ensure that the UI is optimized for both 
-   platforms. You can create separate widgets for different platforms and control their 
+2. **Make design adjustments (optional)**: If you plan to target both mobile and desktop users,
+   some design adjustments may be necessary to ensure that the UI is optimized for both
+   platforms. You can create separate widgets for different platforms and control their
    visibility using [Responsive Visibility](../../ff-concepts/layout/responsive-layout.md#responsive-visibility).
 3. **Run the app on a desktop**: Use the Local Run feature in the FlutterFlow Desktop app or manually download and run the code, choosing your target device (e.g., macOS) before running.
 
@@ -324,30 +331,30 @@ If you downloaded Flutter via local run, it might not be added to your system's 
         1. From the [local run](#using-local-run) wizard, open the **Configure IDE** step and click on **this path** to get the Flutter SDK path.
         ![get path](../imgs/get-path.avif)
         2. Open the Terminal and run the following command to open your `.zshrc` file (or `.bash_profile` if you're using Bash):
-            
-            
-            
+
+
+
             ```
             open -e ~/.zshrc
             ```
-            
+
         3. Add path at the end of the file. It should look something like this:
-            
-            
-            
+
+
+
             ```
             export PATH="$PATH:$HOME/Library/Application Support/io.flutterflow.prod.mac/flutter/bin"
             ```
-            
+
         4. Save and close the file.
         5. Run the following command to apply the changes:
-            
-            
-            
+
+
+
             ```
             source ~/.zshrc
             ```
-            
+
         6. Restart your terminal and try running the `flutter` command again.
   </TabItem>
 
@@ -376,31 +383,31 @@ If you don't see your device in the list after refreshing, follow these steps:
 2. Open the Terminal and run the following command:
 
 
-    
+
     ```
     flutter devices
     ```
-    
+
     This will list all connected devices that the Local Run recognizes.
-    
+
 3. If you still don't see your device, try restarting it.
     1. **For iOS**: Open Xcode, go to the "Window" menu, select "Devices and Simulators," choose your simulator, and click "Restart."
     2. **For Android**: Open the Android Studio > Device Manager, choose your emulator, and click the "Play" button.
     3. You can also restart the emulator directly from the command line using Flutter:
-        
-    
-        
+
+
+
         ```
         flutter emulators --launch <emulator_id>
         ```
-        
+
         **Note** that replace `<emulator_id>` with the ID of your emulator. You can find the ID by running `flutter emulators`.
-        
+
 4. Try running `flutter devices` again.
 </p>
 </details>
 
- 
+
 <details>
 <summary>Xcode warning "Runner.xcworkspace modified"</summary>
 <p>

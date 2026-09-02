@@ -1,12 +1,22 @@
 ---
 slug: /integrations/google-maps/place-picker-widget
 title: Place Picker Widget
-description: Learn how to add and configure the Place Picker widget in your FlutterFlow app.
-tags: [Google Maps, Place Picker, Widget, Integration]
+description: >-
+  Learn how to add and configure the Place Picker widget in your FlutterFlow
+  app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Google Maps
 sidebar_position: 3
-keywords: [FlutterFlow, Google Maps, Place Picker, Widget, Integration]
+keywords:
+  - FlutterFlow
+  - Google Maps
+  - Place Picker
+  - Widget
+  - Integration
+last_verified: 2026-09-02
 ---
-
 # Place Picker Widget
 
 The `PlacePicker` widget is designed to retrieve information about places, such as establishments (e.g., buildings, parks, museums) and geographic features (e.g., roads, lakes, mountains). It provides details like name, address, city, state, country, zip code, and latitude-longitude coordinates.
@@ -23,7 +33,7 @@ Here's an example from the Demo app:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/EQ4xhHBgjMp4wbm3aTin?embed&show_copy_link=true"
         title="Place Picker Widget"
         style={{
@@ -50,8 +60,12 @@ Here's an example from the Demo app:
 - Ensure you have enabled the [**Places API**](generate-maps-keys.md#add-places-apis) from Cloud console.
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
 :::
+
+:::warning[API compatibility and user data]
+The current widget uses legacy Places API endpoints; enabling **Places API (New)** alone is not sufficient. Confirm that the legacy API is available to your Google Cloud project. Place searches and selected location data are sent to Google and may reveal user intent or precise location, so provide appropriate disclosure/consent, minimize storage, and review Google Maps Platform terms and attribution requirements.
+:::
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -65,7 +79,7 @@ To add the PlacePicker widget to your project:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/uWaLSOHPZctjnGik03Pu?embed&show_copy_link=true"
         title="Add Place Picker widget"
         style={{
@@ -87,8 +101,8 @@ To add the PlacePicker widget to your project:
 
 <p></p>
 
-By default, the `Place Picker` widget features an icon and the text "Select Location" on the 
-button. You can modify the styling and properties of these elements from the Properties Panel on 
+By default, the `Place Picker` widget features an icon and the text "Select Location" on the
+button. You can modify the styling and properties of these elements from the Properties Panel on
 the right.
 
 If you retain the Text widget, the text will update to the name of the selected location when a user makes a selection. Both the icon and text are optional; adjust them according to your design requirements.
@@ -102,13 +116,15 @@ If you retain the Text widget, the text will update to the name of the selected 
 
 The selected place’s details are stored in a `GooglePlace` custom data type provided by FlutterFlow. You can access this via **Widget State > placePickerValue**, which includes fields like name, address, latitude/longitude (LatLng), city, state, country, and ZIP code. These values can be used to display content in Text widgets or perform conditional logic based on the selected location.
 
+Treat fields as optional and validate them before use. A place may not provide a postal code, city, formatted address, or precise geometry, and the user can dismiss the picker without selecting a result.
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/oje0Gsbf9IJh7M0pb6Tv?embed&show_copy_link=true"
         title="Use PlacePicker widget state"
         style={{

@@ -1,12 +1,26 @@
 ---
 title: Mouse Region
 slug: mouse-region
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  The widget lets you know whenever the mouse pointer enters or exits from a
+  widget.
+keywords:
+  - Mouse Region
+  - Built In Widgets
+  - Widgets
+last_verified: 2026-09-02
 ---
+# Mouse Region
 
-# MouseRegion
+The Mouse Region widget detects when a mouse or trackpad pointer enters or exits its child. Use it for pointer-hover experiences such as changing a cursor, animating a button, or revealing desktop navigation.
 
-The `MouseRegion` widget lets you know whenever the mouse pointer enters or exits from a widget. You could use it to build a user experience (UX), such as animating buttons when a user hovers over them and revealing or hiding menu items when a user hovers over the menu icon.
+:::note
+Hover is primarily a desktop and web pointer interaction. Touch-only devices generally do not produce mouse-enter and mouse-exit events, so essential actions and information must remain available through taps, focus, or another touch-friendly interaction.
+:::
 
 On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#showhide-elements-using-mouseregion), and [customize](#customizing) it.
 
@@ -14,9 +28,9 @@ On this page, you will learn how to [add the MouseRegion widget](#adding-mousere
 
 Here are the step-by-step instructions to build such an example:
 
-1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base 
+1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base
 Elements** tab or add it directly from the widget tree.
-2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion) 
+2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion)
    with [**On Action Trigger**](../../../../ff-concepts/animations/widget_animations.md#animation-on-action-trigger) animation.
 3. Select the **MouseRegion** widget, select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegion widget.
@@ -30,9 +44,8 @@ Elements** tab or add it directly from the widget tree.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/fyWTrN674CtK5JKZi8jA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fyWTrN674CtK5JKZi8jA?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -52,7 +65,7 @@ Elements** tab or add it directly from the widget tree.
 
 ## Show/hide elements using MouseRegion
 
-Using the callbacks provided by the MouseRgion widget, you can show or hide a widget. The idea is to update the *App State* variable when the mouse pointer enters or exits the widget. And then use the same app state variable to add *Conditional Visibility* on a widget.
+Using the triggers provided by Mouse Region, you can show or hide another widget. Update a Boolean Page State or Component State value when the pointer enters or exits, then use that value for [Conditional Visibility](../../widgets/widget-commonalities.md#conditional). Use App State only when the hover state genuinely needs to be shared across the app.
 
 Let's see how to build the following example:
 
@@ -62,9 +75,8 @@ Let's see how to build the following example:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/nFzYivGMxumu0IsrPn4b?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/nFzYivGMxumu0IsrPn4b?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -86,23 +98,25 @@ Let's see how to build the following example:
 
 Here are the step-by-step instructions:
 
-1. First, add the Stack **>** **Container** **> MouseRegion >** **IconButton** to display the menu 
+1. First, add the Stack **>** **Container** **> MouseRegion >** **IconButton** to display the menu
 icon.
 2. Add the **Container > MouseRegion >** **Column** (with some menu items/options) inside the same Stack widget.
 
-:::info[Note] 
-Note that we wrapped the menu icon and its options inside the MouseRegion widget. In 
+:::info[Note]
+Note that we wrapped the menu icon and its options inside the MouseRegion widget. In
 the next step, we will add the same actions for both MouseRegion widgets so that the menu options stay visible as long as you hover over them.
 :::
 
 ![img_9.png](imgs/img_9.png)
 
-3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
-   and use it 
-to 
-[add conditional visibility](../../widgets/widget-commonalities.md#conditional) 
+3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md)
+   and use it
+to
+[add conditional visibility](../../widgets/widget-commonalities.md#conditional)
    on menu options.
 4. On both MouseRegion widgets, add an [update app state variable](../../../../resources/data-representation/app-state.md#update-app-state-action) action to set **True** when the mouse enters and **False** when the mouse exit.
+
+Mouse Region also exposes a Boolean **Hovered** value through **Widget State**. Use it when an action only needs to read the current hover state and you do not need a separate state variable.
 
 <figure>
     <div style={{
@@ -111,9 +125,8 @@ to
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/QsKNBHezCkCylYsY6lDB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QsKNBHezCkCylYsY6lDB?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -136,14 +149,16 @@ to
 
 ## Customizing
 
-You can customize the appearance and behavior of this widget using the various properties 
+You can customize the appearance and behavior of this widget using the various properties
 available under the **Properties Panel**.
 
 ### Customize mouse cursor
 
 When a mouse enters the widget, its cursor will change to the appropriate one by default. However, you can also set it to a custom one if you wish to.
 
-To customize the mouse cursor, select the **MouseRegion** widget, move to the properties panel, find the **Mouse Cursor** dropdown select the one you think fits best.
+To customize the mouse cursor, select **Mouse Region**, then choose a value from **Mouse Region Properties > Mouse Cursor**. **Automatic** defers to the surrounding widget; other choices include Click, Text, Move, Grab, resize cursors, and accessibility-related states such as Forbidden or Wait.
+
+Enable **Opaque** when this region should prevent Mouse Region widgets behind it from receiving pointer events for the same position. A newly added Mouse Region uses **Automatic** and leaves **Opaque** disabled.
 
 <div style={{
     position: 'relative',
@@ -151,9 +166,8 @@ To customize the mouse cursor, select the **MouseRegion** widget, move to the pr
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/vTu0IFhJzyfqHryY0GHU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vTu0IFhJzyfqHryY0GHU?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -171,3 +185,6 @@ To customize the mouse cursor, select the **MouseRegion** widget, move to the pr
     </iframe>
 </div>
 
+## Verify the interaction
+
+Run the page on web or desktop with a mouse. Enter and leave the child's visible bounds and confirm that **On Mouse Enter**, **On Mouse Exit**, the cursor, and any conditional visibility update exactly once per boundary crossing. Then test the same feature on a touch device and confirm that the non-hover alternative remains usable.

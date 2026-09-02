@@ -2,21 +2,31 @@
 slug: /integrations/firebase/remote-config
 title: Remote Config
 description: Learn how to integrate Firebase Remote Config in your FlutterFlow app.
-tags: [Firebase, Remote Config]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 1
-keywords: [FlutterFlow, Firebase, Remote Config]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Remote Config
+last_verified: 2026-09-02
 ---
-
 # Remote Config
 
-[Firebase remote config](https://firebase.google.com/docs/remote-config) allows you to control your app's behavior and appearance without pushing an app update. For example, you could use it to change or show/hide certain elements of your app, such as a promo banner and Santa hat, or use it as a feature flag (payments, food delivery) with no need to publish an app update.
+[Firebase Remote Config](https://firebase.google.com/docs/remote-config) lets you change supported app behavior and appearance without publishing a new app build. For example, you can show a promotional banner or gradually expose a non-security-sensitive feature.
+
+:::danger[Remote Config is not secret or authorization storage]
+Users can inspect values delivered to a client app. Never store API secrets, credentials, private endpoints, entitlement decisions, prices that must be enforced, or authorization rules in Remote Config. Enforce security-sensitive decisions on a trusted backend and use Remote Config only to adjust the client experience.
+:::
 
 ![Using Firebase Remote Config to show/hide a feature](imgs/show-hide-fi.avif)
 
-When you enable the Remote Config, you must specify the parameter in our builder (called 'in-app defaults') and inside the Remote Config dashboard of your [Firebase console](https://console.firebase.google.com/). When the app starts, it fetches config values from the Firebase console, and for any reason, if it fails, your app will use the in-app defaults.
+When you enable Remote Config, define each parameter in FlutterFlow as an **in-app default** and define the corresponding key in your [Firebase console](https://console.firebase.google.com/). On startup, the generated app fetches and activates eligible remote values. If no fetched value is available or activation fails, the app uses the in-app default, so every default must be safe and usable on its own.
 
 :::warning
-The app will try to fetch values every time it starts. However, due to the minimum fetch interval of 1 hour (set by default), the values won't be fetched more than once in 1 hour.
+The app attempts a fetch at startup, but FlutterFlow configures a one-hour minimum fetch interval. Starting the app repeatedly within that interval generally reuses the last activated value. Published changes are therefore not an instant-delivery or emergency kill-switch mechanism.
 :::
 
 ## Using Firebase Remote Config
@@ -35,15 +45,17 @@ You will be able to dynamically control your app using the parameters created in
 
 To create the parameter:
 
-1. Navigate to the [Firebase Console](https://console.firebase.google.com/u/0/) > Enagage > Remote Config** page.
+1. Open your project in the [Firebase console](https://console.firebase.google.com/u/0/) and navigate to **Remote Config** (currently under **DevOps & Engagement**).
 2. If this is the first time, click **Create configuration** button.
 3. Click **Add parameter**. This will open the **Create parameter** section on the right side.
 4. Enter the **Parameter name** (e.g., *show_promo_banner*, *primary_color*, etc.).
 5. Set the **Data type** among the *String*, *Number*, *Boolean*, and *JSON*.
 6. Set the **Default value**.
-7. If you enable the **Use in-app default** toggle, any change made to this parameter from here won't be reflected in your app. Instead, your app will use values from the parameters defined in our builder (see how to create it in the [next step](#3-add-parameter-in-flutterflow)).
+7. If you select **Use in-app default**, Firebase sends no backend value for that parameter and the app uses the default defined in FlutterFlow. Otherwise, set a backend default and any conditional values you need.
 8. Click **Save**.
 9. Click **Publish Changes** to make this parameter immediately available to your app.
+
+If several conditions match, the first condition in Firebase's ordered list takes precedence. Test default, conditional, offline, and failed-fetch behavior before relying on a parameter in production.
 
 
 <div style={{
@@ -51,9 +63,8 @@ To create the parameter:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/xTbhNczhOdJfzpeSBv7e?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/xTbhNczhOdJfzpeSBv7e?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -85,9 +96,8 @@ Parameters added to your FlutterFlow project are called in-app defaults. To add 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LPFTBWYk2GIQ2TZzpZzF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LPFTBWYk2GIQ2TZzpZzF?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -117,9 +127,8 @@ Here's an example of using the remote config parameter to set the [conditional v
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BXpPxrWjncgJ5QqqhCTW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BXpPxrWjncgJ5QqqhCTW?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -145,9 +154,8 @@ Here's another example that changes the app's background using the color value f
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4RHPm1hnQpL7kpN2NcRB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4RHPm1hnQpL7kpN2NcRB?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -165,4 +173,3 @@ Here's another example that changes the app's background using the color value f
     </iframe>
 </div>
 <p></p>
-

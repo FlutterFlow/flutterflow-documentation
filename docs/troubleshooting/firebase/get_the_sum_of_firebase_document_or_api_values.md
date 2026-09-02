@@ -1,7 +1,18 @@
 ---
-keywords: ['firebase', 'api', 'document']
+keywords:
+  - firebase
+  - api
+  - document
 slug: /troubleshooting/firebase/get-the-sum-of-firebase-document-or-api-values
 title: Get the Sum of Firebase Document or API Values
+description: >-
+  Sometimes you need to display a total, such as a subtotal or count based on
+  data fetched from Firebase or an API.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
+last_verified: 2026-09-02
 ---
 # Get the Sum of Firebase Document or API Values
 
@@ -18,26 +29,26 @@ Sometimes you need to display a total, such as a subtotal or count based on data
 
     Decide where in your app the total will appear. For example, insert a **Text** widget that will show the computed sum.
 
-    ![](../assets/20250430121219360101.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219360101.png)
 
 2. **Prepare your Data Type**
 
     Next, you need to specify what kind of data you're adding up. For example, if you're working with numbers with decimal points, you'll classify your data as double. Make sure to indicate that you're dealing with a list of these values.
 
-    ![](../assets/20250430121219606895.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219606895.png)
 
 
 3. **Retrieve and Map your Data**
 
     When fetching data from Firebase or an API, extract the values you want to sum. Use the `map()` function to create a list of those values.
 
-    ![](../assets/20250430121219871237.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219871237.png)
 
 4. **Calculate the Sum**
 
-    With your list of values ready, store them in a variable (let's call it `var1`). Then, decide on the format you want for your result. Use the `reduce` function to add up all the values in your list, `var1`, to get your total sum.
+    With your list ready, use FlutterFlow's aggregate/sum option when available. If you use `reduce`, guard the empty-list case first; a fold with an explicit zero value is safer for an empty result.
 
-    ![](../assets/20250430121220084430.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121220084430.png)
 
 5. **Checking Your Results**
 
@@ -49,4 +60,5 @@ Sometimes you need to display a total, such as a subtotal or count based on data
 - Use `.isNotEmpty` to prevent errors when the list is empty.
 - Format the output using `.toStringAsFixed(2)` to show 2 decimal places if needed.
 - Optional: Store the sum in a global variable for use across multiple pages.
+- For money, store integer minor units or use a deliberate decimal strategy; binary floating-point totals can produce rounding errors. Calculate security-sensitive totals on a trusted server rather than accepting a client-computed amount.
 :::

@@ -1,12 +1,28 @@
 ---
 slug: /flutterflow-cli/codex
 title: Build with Codex
-description: Use the FlutterFlow plugin in Codex CLI or the ChatGPT desktop app to create, edit, and export FlutterFlow projects with natural-language prompts.
-tags: [CLI, AI, Codex, MCP]
+description: >-
+  Use the FlutterFlow plugin in Codex CLI or the ChatGPT desktop app to create,
+  edit, and export FlutterFlow projects with natural-language prompts.
+tags:
+  - FlutterFlow
+  - CLI
+  - AI
 sidebar_position: 4
-keywords: [FlutterFlow, CLI, Codex, AI Agent, MCP, Project Editing, Code Export]
+keywords:
+  - FlutterFlow
+  - CLI
+  - Codex
+  - AI Agent
+  - MCP
+  - Project Editing
+  - Code Export
+  - use Codex in the ChatGPT desktop app to edit a FlutterFlow project
+  - install the FlutterFlow plugin in Codex CLI
+ai_queries:
+  - use Codex in the ChatGPT desktop app to edit a FlutterFlow project
+  - install the FlutterFlow plugin in Codex CLI
 ---
-
 # Build with Codex
 
 The [FlutterFlow plugin for Codex](https://github.com/FlutterFlow/flutterflow-codex)
@@ -55,7 +71,7 @@ Use this path when you run Codex from a terminal.
 Before you begin, make sure you have:
 
 - [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) installed.
-- [Dart and Flutter](https://docs.flutter.dev/get-started/install) available on
+- [Dart and Flutter](https://docs.flutter.dev/install/quick) available on
   your `PATH`.
 - A FlutterFlow API token available from your
   [FlutterFlow account](https://app.flutterflow.io/account). You only need to

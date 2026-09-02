@@ -2,9 +2,16 @@
 slug: adding-purchasing-item
 title: Adding & Purchasing Items
 description: Learn how to add and purchase FlutterFlow marketplace items.
-tags: [MarketPlace, Add Item, Purchase Item]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 1
-keywords: [FlutterFlow, MarketPlace, Add Item, Purchase Item]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Add Item
+  - Purchase Item
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -36,3 +43,7 @@ To install a library item from the Marketplace, search for the library, open its
 To add it to a specific project, go to **Settings > Project Dependencies**, click **Add Library**, and search for your library.
 
 ![branch-library-install](imgs/branch-library-install.png)
+
+## Related documentation
+
+See [FlutterFlow Marketplace](/marketplace) for a related FlutterFlow workflow.

@@ -1,12 +1,24 @@
 ---
 title: Create & Test API Calls
 slug: /resources/backend-logic/create-test-api
-tag: [API Calls]
-keywords: [API Calls, FlutterFlow]
+tag:
+  - API Calls
+keywords:
+  - API Calls
+  - FlutterFlow
+  - Create & Test API Calls
+  - create and test a REST API call in FlutterFlow
 sidebar_position: 2
+description: 'In this guide, you''ll learn how to create and test API calls in FlutterFlow.'
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Logic
+ai_queries:
+  - create and test a REST API call in FlutterFlow
+last_verified: 2026-09-02
 ---
-
-# Create & Test API Call
+# Create & Test API Calls
 
 In this guide, you'll learn how to create and test API calls in FlutterFlow. Integrating API calls allows your app to interact with external services, bringing in real-time data and functionality that enhances your app's capabilities.
 
@@ -21,9 +33,8 @@ Simply select API Calls from the left navigation menu, click the **+ Add** butto
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/JbgiAq8d2VzqYHuXH4DN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JbgiAq8d2VzqYHuXH4DN?embed&show_copy_link=true" title="Create & Test API Calls interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -55,10 +66,10 @@ The Method Type specifies the type of operation the API call will perform. Here�
 
 ### Dynamic API URLs
 
-If you want to use a dynamic URL, for example, `<https://reqres.in/api/users/2>` where 2 is dynamic and `<https://reqres.in/api/users?page=5>` where 5 is dynamic:
+If you want to use a dynamic URL, for example, `https://example.com/api/users/2` where `2` is dynamic:
 
-1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
-2. And then, [**create a new variable**](rest-api.md#creating-variables) with the same name you provided inside the brackets.
+1. Replace the hard-coded path value with a meaningful name in square brackets (for example, `https://example.com/api/users/[user_id]`). Use the **Query Parameters** section instead for values after `?`.
+2. [Create a variable](rest-api.md#creating-variables) with the same name and a compatible data type.
 
 The further instructions are based on the **Method Type** you selected.
 
@@ -74,8 +85,7 @@ If you selected `GET` or `DELETE` as the method type, follow the steps below:
 After making any changes, you must save the API call.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/ec61a02366504d12a3200426d4738c54?sid=3f41c946-6e53-4e0b-97e2-878178e546bd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/ec61a02366504d12a3200426d4738c54?sid=3f41c946-6e53-4e0b-97e2-878178e546bd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -84,15 +94,14 @@ In the above demo, a `GET` API call is defined to fetch users' data from [REQ 
 
 A demo of using a dynamic URL in a GET request is as follows:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e19f05e3fc6542b78c2871bff1997033?sid=d688dbb6-dc4d-4dc1-bb3f-438069b5f6cb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/e19f05e3fc6542b78c2871bff1997033?sid=d688dbb6-dc4d-4dc1-bb3f-438069b5f6cb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
 To add such an API call:
 
-1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
-2. And then, [create a new variable](rest-api.md#creating-variables) with the same name you provided inside the brackets.
+1. Replace the hard-coded value with a meaningful name inside square brackets (for example, change `https://example.com/api/users/2` to `https://example.com/api/users/[user_id]`).
+2. [Create a variable](rest-api.md#creating-variables) with the same name.
 
 The DELETE API Call can also be defined similarly; just make sure you select the **Method Type** as ***DELETE***.
 
@@ -108,8 +117,7 @@ If you have selected **POST request**, follow the steps below:
 After making any changes, you must save the API call.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4d421b9a216d4655aed57fb63a963dc3?sid=1a86b3dd-4f06-43e8-a771-3e35a6fb2308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/4d421b9a216d4655aed57fb63a963dc3?sid=1a86b3dd-4f06-43e8-a771-3e35a6fb2308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -121,10 +129,6 @@ The PUT and PATCH API calls can be defined similarly; make sure you enter a vali
 
 You can create a group of API calls that share the same base URL. Grouping the API calls helps you add all request headers (e.g., auth token) at once, and they will be automatically added for all the API calls inside the group.
 
-:::warning
-For [**private APIs**](rest-api.md#private-api-calls), headers defined within the group will not be automatically included. You'll need to manually add headers for APIs marked as private.
-:::
-
 To create the API Group:
 
 1. Click on the **+** button (top left side) and select the **Create API Group**.
@@ -135,8 +139,7 @@ To create the API Group:
 6. Open the newly created API group, and click on the **+ Add API Call**.
 7. Add the API call as you would normally do. **Note**: Inside the API endpoint, enter the URL portion that starts after the base URL.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/081572e9e1a94d1ea83bee59f87a5125?sid=6ddb47aa-0054-47e8-8a5b-4bc03c8fb0c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/081572e9e1a94d1ea83bee59f87a5125?sid=6ddb47aa-0054-47e8-8a5b-4bc03c8fb0c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -162,8 +165,7 @@ To import API call definitions:
 
 Here's an example of importing API calls in bulk, taken from [here](https://editor.swagger.io/).
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/074601859ba4430e97047dcdc60eabf6?sid=0446b026-eb75-4a3d-bb51-543668a06bfe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/074601859ba4430e97047dcdc60eabf6?sid=0446b026-eb75-4a3d-bb51-543668a06bfe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 ## Testing API calls
@@ -175,11 +177,14 @@ To test the API call along with its response, follow the steps below:
 1. Select an API call you have already created or are currently defining, and go to the **Response & Test** tab.
 2. On the left side, you will see the **Variables** section, where you can enter the values for the variables defined for your API call.
 3. On the right, the **Preview** section lets you check the API URL, request headers, request body, and response. In the **Test Response** tab, you can view the full API response, including both the JSON format and raw body text, as well as the response header.
-4. Click **Test API Call** to trigger the API call. You'll notice that the status of the GET request is displayed, and if it's successful (status code `200`), the result returned from that request will also be displayed below.
+4. Click **Test API Call** to send the request. The response shows the HTTP status, headers, JSON representation when available, and raw body. FlutterFlow treats status codes from `200` through `299` as successful.
 5. Any value of the JSON result can be accessed by [defining the JSON path](rest-api.md#json-path).
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7b84e0e372924547b4779bfae3c4daeb?sid=22f42516-d522-4362-9ae4-b4aac4947fc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+:::warning
+**Test API Call sends a real request.** A POST, PUT, PATCH, or DELETE test can create, change, or delete data. Use test credentials and a non-production endpoint or payload whenever the operation has side effects. Never paste a production secret into a client-visible variable.
+:::
+
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/7b84e0e372924547b4779bfae3c4daeb?sid=22f42516-d522-4362-9ae4-b4aac4947fc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -190,8 +195,7 @@ The demo below shows the testing of creating a new user using a POST request. Th
 The testing of `PUT` and `PATCH` requests would also be similar to this.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931ef08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931ef08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -217,18 +221,17 @@ Go to your project and follow the steps below to define the Action to any widget
     1. Select the **Group or Call Name** from the dropdown.
     2. Optional: If your API call requires variables (e.g., auth token, query parameters, user id, etc.), pass their value by clicking on the **+ Variable** button.
     3. The **Action Output Variable Name** helps you retrieve the response of an API call. By default, we set it to any random name. However, you can change it to a meaningful name if you wish to. (e.g., loginResponse).
-    4. You can add a conditional action that checks if the API call is succeeded.
-    5. If the API call is succeeded, all actions under the TRUE path will be executed. For example, [navigate](../../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) to the home page if the login is successful.
-    6. If the API call is failed, all actions under the FALSE path will be executed. For example, [showing a snackbar](../../../ui/pages/page-elements.md#snackbar) if the login is unsuccessful.
+    4. Add a conditional action that checks the API response's **Succeeded** value.
+    5. Under the TRUE path, handle successful `2xx` responses—for example, [navigate](../../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) after a successful login.
+    6. Under the FALSE path, handle non-`2xx` responses—for example, [show a Snackbar](../../../ui/pages/page-elements.md#snackbar). Also design for timeouts and malformed response data.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4c3412e806844b048dc8eb388bca45e0?sid=1408359c-f167-4b21-a8b4-d5803a21adb1"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4c3412e806844b048dc8eb388bca45e0?sid=1408359c-f167-4b21-a8b4-d5803a21adb1" title="Create & Test API Calls interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -246,3 +249,7 @@ Go to your project and follow the steps below to define the Action to any widget
     </iframe>
 </div>
 <p></p>
+
+## Verify an API definition
+
+Test representative valid, invalid, unauthenticated, non-`2xx`, empty, malformed, and slow responses. Confirm URL and query substitution, headers, body encoding, response types, JSON paths, and every success/error branch. For grouped calls, verify the shared base URL, variables, and headers on more than one endpoint.

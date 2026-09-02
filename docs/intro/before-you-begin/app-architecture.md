@@ -1,19 +1,29 @@
 ---
 slug: /before-you-begin/app-architecture
 title: App Architecture
+description: >-
+  Before you jump in and start using FlutterFlow, it's helpful to have an idea
+  of how app development works more broadly.
+tags:
+  - FlutterFlow
+  - Getting Started
+keywords:
+  - App Architecture
+  - Before You Begin
+  - FlutterFlow
+last_verified: 2026-09-02
 ---
-
 # App Development
 
-Before you jump in and start using FlutterFlow, it's helpful to have an idea of how app development works more broadly. 
+Before you jump in and start using FlutterFlow, it's helpful to have an idea of how app development works more broadly.
 
-Traditionally, developing an app required writing a lot of code. You can think of code as a set of instructions for the computer, or device, executing the code. 
+Traditionally, developing an app required writing a lot of code. You can think of code as a set of instructions for the computer, or device, executing the code.
 
-The codebase is usually divided up into two pieces: instructions for the frontend, and instructions for the backend. 
+The codebase is usually divided up into two pieces: instructions for the frontend, and instructions for the backend.
 
-# Frontend vs Backend
+## Frontend vs Backend
 
-Frontend development deals with creating the parts of an application that users interact with directly. 
+Frontend development deals with creating the parts of an application that users interact with directly.
 This includes:
 
 - Defining the visual pieces of your app, like text or buttons
@@ -27,19 +37,19 @@ Backend usually refers to more complex logic and data storage. This includes:
 - Defining business logic, either by writing code or using a low-code tool
 
 
-The interaction between frontend and backend often occurs through APIs (Application Programming Interfaces). 
-In most cases, the backend exposes endpoints for the frontend to send requests to. 
-The backend handles the request, and sends some data back in response - which the frontend can use to change its visual appearance. 
+The interaction between frontend and backend often occurs through APIs (Application Programming Interfaces).
+In most cases, the backend exposes endpoints for the frontend to send requests to.
+The backend handles the request, and sends some data back in response - which the frontend can use to change its visual appearance.
 
 
-# Where does the code execute?
+## Code execution locations
 
 Backend code runs on a server, which could be located in a data center or hosted on a cloud platform like AWS, Google Cloud, or Azure. The server is responsible for handling requests, processing data, and sending responses back to the frontend.
 
 Frontend code runs on the user's device. This could be a web browser for web applications or the operating system for mobile applications. The frontend code is responsible for displaying the user interface and handling user interactions.
 
 
-# Frontend architecture 
+## Frontend architecture
 
 When it comes to developing the frontend of your application, there are several key architectural patterns and best practices to consider. These include:
 
@@ -50,3 +60,7 @@ When it comes to developing the frontend of your application, there are several 
 
 
 By understanding these concepts and implementing best practices, you can create robust and user-friendly applications with FlutterFlow.
+
+## Related documentation
+
+See [Setting Up FlutterFlow](/before-you-begin/setup-flutterflow) for a related FlutterFlow workflow.

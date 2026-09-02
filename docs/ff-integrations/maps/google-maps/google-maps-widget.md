@@ -2,10 +2,18 @@
 slug: /integrations/google-maps/google-maps-widget
 title: Google Maps Widget
 description: Learn how to add and configure the Google Maps widget in your FlutterFlow app.
-tags: [Google Maps, Widget, Integration]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Google Maps
 sidebar_position: 2
-keywords: [FlutterFlow, Google Maps, Widget, Integration]
+keywords:
+  - FlutterFlow
+  - Google Maps
+  - Widget
+  - Integration
 toc_max_heading_level: 4
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -27,6 +35,10 @@ ensure they meet your app development needs before integration.
 
 :::info[Prerequisite]
 Ensure you have added the [**Google Map API keys**](generate-maps-keys.md#get-api-keys) before adding the Google Maps widget to your project
+:::
+
+:::warning[Location privacy]
+Request device location only when the user invokes a feature that needs it, explain the purpose, and handle denied, restricted, unavailable, and approximate-location states. Minimize retention of precise coordinates and update privacy disclosures and store declarations where required.
 :::
 
 ## Add Google Map widget
@@ -51,12 +63,11 @@ Ensure you have added the [**Google Map API keys**](generate-maps-keys.md#get-ap
 
 5. To customize the visual appearance of your map, navigate to the **Properties Panel > Map Style**.
 
-6. To set the **initial zoom level** of the map, go to the **Properties Panel > Initial Zoom** 
+6. To set the **initial zoom level** of the map, go to the **Properties Panel > Initial Zoom**
    of Map and enter the desired value. Note that a higher value will zoom in on the map while a lower value will
   zoom out.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/11c929da4a82492fb2d9e690779051d8?sid=477a3de8-3f0c-42e1-a8b6-7556c3e72e96" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/11c929da4a82492fb2d9e690779051d8?sid=477a3de8-3f0c-42e1-a8b6-7556c3e72e96" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <figure>
 
@@ -67,6 +78,8 @@ If you don't see your current location while testing, make sure you have enabled
 
 ![location-browser.png](../imgs/location-browser.png)
 :::
+
+Do not assume **Current Device Location** is immediately available. Provide a fallback location or loading/error state before using it as the initial map center.
 
 ## Markers
 
@@ -85,16 +98,16 @@ A marker is an icon that appears over the map, indicating a location. To add mar
 
 - In Marker Document, set the source of markers as shown in the following video.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/265b96cfd3554ce5b7516650b950b303?sid=83b3f4bd-8470-4307-9cbe-b742681c383f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/265b96cfd3554ce5b7516650b950b303?sid=83b3f4bd-8470-4307-9cbe-b742681c383f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Set Markers from List of LatLng
 
 If you choose **LatLng**, you must provide a source that contains a list of locations as Data Type
 (LatLng) (e.g., App State > [variable_name] (List of **LatLng**)).
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e0cf2e67ab0e45b7aedc3bb96b212d73?sid=38a4bdce-89f5-4278-aaa2-4ad8e859f925" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+Keep marker lists bounded. Large dynamic marker sets increase query cost, memory use, and rendering work; filter to the visible or relevant data and test on representative devices.
+
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/e0cf2e67ab0e45b7aedc3bb96b212d73?sid=38a4bdce-89f5-4278-aaa2-4ad8e859f925" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Changing Marker Color
 
@@ -115,16 +128,14 @@ engaging, while also aligning with your app's branding. To set an image as a mar
       Path field.
     - To provide an image from your system, set the Image Type to **Asset** and upload the image.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/0655708e67db4b5c8798820b7d12dc5f?sid=fff3c351-e8e7-4879-9c78-0510057a7b6a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/0655708e67db4b5c8798820b7d12dc5f?sid=fff3c351-e8e7-4879-9c78-0510057a7b6a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Centering map on marker tap
 
 To center a map on a marker tap, move to the **Properties Panel > Google Map > enable the Centering
 Map on Marker Tap toggle**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/3f069a4c31fa45b99e52ebc56a992876?sid=6cafde11-c24f-4a79-915b-2dc158b5f680" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/3f069a4c31fa45b99e52ebc56a992876?sid=6cafde11-c24f-4a79-915b-2dc158b5f680" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ## On Marker Tap [Action Trigger]
 
@@ -155,8 +166,7 @@ if you wish to restrict the zoom functionality.
 To access these settings, navigate to the **Properties Panel > Google Map > Allows Interacting with
 the Map**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1b06bfc1365f4fc68f15089d4f84d798?sid=ff33ea94-cd7f-4b4e-822e-6fe0743dbd27" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/1b06bfc1365f4fc68f15089d4f84d798?sid=ff33ea94-cd7f-4b4e-822e-6fe0743dbd27" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 #### Map Takes Gesture Preference
 When this is turned on, any gestures, such as zooming or dragging, will only affect the map, not the rest of the page. This is helpful if your map is inside a scrollable page, so users can interact with the map without accidentally scrolling the whole page.
@@ -172,9 +182,8 @@ This setting is only available if **Allow Interacting** and **Allow Zooming** ar
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JC6AnbIQpfSPfENrbd6s?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JC6AnbIQpfSPfENrbd6s?embed&show_copy_link=true" title="Google Maps Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -199,9 +208,8 @@ This setting is only available if **Allow Interacting** and **Allow Zooming** ar
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/m5EdLhn4tlkjfRhhquqg?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/m5EdLhn4tlkjfRhhquqg?embed&show_copy_link=true" title="Google Maps Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -235,8 +243,7 @@ When you enable this option, make sure to set the **Initial Location to Global P
 Device Location**.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/97a4aca1b5e84313b106f9c98aa15957?sid=5340a30a-fb0f-43bf-92e1-bf305b0630b7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/97a4aca1b5e84313b106f9c98aa15957?sid=5340a30a-fb0f-43bf-92e1-bf305b0630b7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Showing Compass
 
@@ -246,8 +253,7 @@ Enabling compass will allow users to bring the map to its original direction.
 To enable the compass, navigate to the **Properties Panel > Google Map > enable the Show Compass
 toggle**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/53822c6ac9fa4455b43748c46f127ebb?sid=ac9ac978-03f5-49e3-b627-43c6dee5c6b0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/53822c6ac9fa4455b43748c46f127ebb?sid=ac9ac978-03f5-49e3-b627-43c6dee5c6b0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Enabling map toolbar
 
@@ -257,8 +263,7 @@ It offers quick access to either a map view or directions in the Google Maps mob
 To enable the toolbar, navigate to the **Properties Panel > Google Map > enable the Show Map Toolbar
 toggle**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/890f12d9134f4c8793cc6dce17ce0929?sid=cefa00a8-680a-4871-a18a-5586a33c65a5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/890f12d9134f4c8793cc6dce17ce0929?sid=cefa00a8-680a-4871-a18a-5586a33c65a5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Showing Traffic on Map
 
@@ -268,8 +273,7 @@ decide on a better route.
 To show live traffic on a map, navigate to the Properties Panel > Google Map > enable the Show
 Traffic on Map toggle.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/8cf915f27803412cb9b2247b5cfb257a?sid=45dac67a-0f2d-4f7d-a390-25b2ce8bc16f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/8cf915f27803412cb9b2247b5cfb257a?sid=45dac67a-0f2d-4f7d-a390-25b2ce8bc16f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ## FAQ
 <details>

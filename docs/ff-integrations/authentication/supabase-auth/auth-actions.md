@@ -1,12 +1,19 @@
 ---
 slug: /integrations/authentication/supabase/auth-actions
-title: Common Auth Actions
+title: 'Common Auth Actions: Supabase Auth'
 description: Learn how to add Supabase Authentication actions in your FlutterFlow app.
-tags: [Auth Actions, Authentication, Supabase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 1
-keywords: [FlutterFlow, Auth Actions, Authentication, Supabase]
+keywords:
+  - FlutterFlow
+  - Auth Actions
+  - Authentication
+  - Supabase
+last_verified: 2026-09-02
 ---
-
 # Authentication Actions
 Currently FlutterFlow supports the following Actions for Supabase Authentication:
 
@@ -23,7 +30,7 @@ Follow the steps below to add Email Login action:
 5. Set the **Email Field** dropdown to the widget name that accepts email (e.g., *TextFieldEmail*).
 6. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
 
-<img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/supabase-login-action.gif?alt=media&token=a4aa0271-50b9-450f-b1e0-69860f0e66b3"></img>
+<img alt="Supabase Login Action in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/supabase-login-action.gif?alt=media&token=a4aa0271-50b9-450f-b1e0-69860f0e66b3"></img>
 
 
 ## Create Account [Action]
@@ -45,7 +52,7 @@ Follow the steps below to add email signup action:
 6. Set the **Password Field** dropdown to the widget name that accepts a password (e.g., *TextFieldPassword*).
 7. Similarly, If you have a confirm password field in your UI, set the **Confirm Password Field** to the appropriate one.
 
-<img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/create-account-action.gif?alt=media&token=372a8285-bd24-4279-b141-4a02085168c0"></img>
+<img alt="Create Account Action in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/create-account-action.gif?alt=media&token=372a8285-bd24-4279-b141-4a02085168c0"></img>
 
 ## Log out [Action]
 
@@ -55,8 +62,8 @@ Follow the steps below to add this action:
 
 1. Select the widget (e.g., Button) on which you want to add the action.
 
-2. Select **Actions** from the Properties Panel (the right menu), If it's the first action, 
-   click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action 
+2. Select **Actions** from the Properties Panel (the right menu), If it's the first action,
+   click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action
    tile (inside **Action Flow Editor**) and select **Add Action**.
 3. Search and select the **Log Out** (under **Backend/Database > Supabase Authentication**) action.
 
@@ -71,9 +78,8 @@ This action allows users to reset their password by sending a reset link to thei
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/PkAwpUU2WsXbG1DpzNCX?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/PkAwpUU2WsXbG1DpzNCX?embed&show_copy_link=true" title="Common Auth Actions: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -119,9 +125,8 @@ Here’s how you can add the Supabase reset password feature to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/GqayWApqWV2xInXc1SUO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/GqayWApqWV2xInXc1SUO?embed&show_copy_link=true" title="Common Auth Actions: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -150,14 +155,15 @@ To configure a custom redirect URL:
 2. Whitelist this custom URL by navigating to **Supabase Dashboard > Authentication > URL Configuration > Redirect URL**, and click **Add URL** to include it.
 3. Update the reset password template. Go to **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source** and ensure only `{{ .ConfirmationURL }}` is present in the template (remove any appended route names).
 
+The **Redirect To** value must match an entry in Supabase's redirect allow list. Set **Site URL** to the canonical production URL, prefer exact production redirect paths, and reserve wildcard patterns for controlled preview or local-development URLs. See [Supabase redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls).
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TaAYPINhn20QEgR6TR5F?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TaAYPINhn20QEgR6TR5F?embed&show_copy_link=true" title="Common Auth Actions: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,9 +182,8 @@ To configure a custom redirect URL:
 </div>
 <p></p>
 
-## Delete User 
+## Delete User
 
-At present, we do not support deleting Supabase user action. However, you can refer to this community video for guidance on how to do so.
+FlutterFlow does not currently expose a Supabase **Delete User** action. Deleting an Auth user is an administrative operation: perform it in a trusted backend with appropriate authorization, never by shipping a Supabase `service_role` key in the app. The community video below is an implementation example, not an official security guarantee; review it against current [Supabase user-management guidance](https://supabase.com/docs/guides/auth/managing-user-data).
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/PNBvc35CDAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-

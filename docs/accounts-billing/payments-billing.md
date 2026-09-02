@@ -1,19 +1,31 @@
-
-
+---
+title: Payments & Billing
+description: >-
+  This section contains information on the payment methods we accept and how to
+  change your payment method.
+tags:
+  - FlutterFlow
+  - Accounts & Billing
+keywords:
+  - Payments & Billing
+  - Payments Billing
+  - Accounts Billing
+last_verified: 2026-09-02
+---
 # Payments & Billing
 This section contains information on the payment methods we accept and how to change your payment method.
 
 ## Invoices
-#### Can I Add A Tax ID (e.g. VAT) to my invoice?
-If you need to include VAT in your invoices, please reach out to our support team at support@flutterflow.io, and we’ll be happy to assist you with the process.
+### Add a tax ID
+If the billing portal does not let you add the required tax information, contact [FlutterFlow support](mailto:support@flutterflow.io) before the invoice is issued. Tax treatment depends on your billing country and account details.
 
 
 ## Payment Methods
 ### What payment methods do you accept?
-We currently accept Visa, Mastercard, American Express, and JCB.
+The billing checkout displays the payment methods currently available for your account and region. Commonly supported cards include Visa, Mastercard, American Express, and JCB.
 
 ### Can I use a gift card in addition to my credit card?
-At this time we are unable to process Gift Card payments.
+Gift cards are not supported as a second payment method for a subscription.
 
 ### My payment failed, how can I change to a different credit card?
 
@@ -34,11 +46,11 @@ You can use these steps to update your payment method on an open invoice (where 
 
 5. Enter your updated payment information
 
-Once your updated transaction is successfully completed, your system access will be restored.
+After the outstanding transaction succeeds, allow the account page to refresh. If paid access is not restored, contact support with the invoice identifier—never send full card details.
 
 ### I used the wrong credit card, can I change it?
 
-Once your subscription has been purchased, we unfortunately are unable to change your payment method for this month.
+Changing the default payment method applies to future charges; it does not move a charge that has already completed to a different card.
 
 You can change your default payment method for next month's purchase using these steps:
 
@@ -51,3 +63,7 @@ You can change your default payment method for next month's purchase using these
 :::note
 You can change the default payment method by selecting the three dots next to the payment method and then selecting **Make Default.**
 :::
+
+## Related documentation
+
+See [Account Management](/accounts-billing/account-management) for a related FlutterFlow workflow.

@@ -1,29 +1,38 @@
 ---
-keywords: ['storage', 'firebase', 'flutterflow']
+keywords:
+  - storage
+  - firebase
+  - flutterflow
 slug: /troubleshooting/firebase/firebase-storage-limits-in-flutterflow
 title: Firebase Storage Limits in FlutterFlow
+description: >-
+  Managing Firebase Storage properly is essential for controlling your app's
+  file storage and associated costs in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 # Firebase Storage Limits in FlutterFlow
 
-Managing Firebase Storage properly is essential for controlling your app's file storage and associated costs in FlutterFlow. This article summarizes the current limits and best practices following Firebase’s September 2024 changes.
+Managing Firebase Storage properly is essential for controlling your app's files and costs in FlutterFlow. Firebase completed the announced pricing-plan change on **February 3, 2026**; verify current eligibility and quotas on Firebase's official pages rather than relying on an older project-creation date.
 
 ## Firebase Storage Plans and Limits
 
 - **Blaze Plan (Pay-as-you-go)**
 
-    - Firebase Storage (Cloud Storage for Firebase) is only available on the Blaze plan for new Firebase projects.
+    - Maintaining access to Cloud Storage for Firebase requires the Blaze plan, subject to Firebase's current exceptions and product terms.
     - Storage charges are based on usage volume.
     - The price per GB/TB decreases as your usage increases.
     - Refer to the **[Firebase Pricing page](https://firebase.google.com/pricing)** for current rates.
 
 - **Spark Plan (Free Tier)**
 
-    - For projects created after September 2024, Cloud Storage for Firebase is **no longer available** on the Spark plan.
-    - To use file storage (uploads, images, videos, etc.) with Firebase Storage, you must upgrade to the Blaze plan.
+    - Projects that remain on Spark can lose Storage access under Firebase's completed plan transition. Consult the linked FAQ for any current default-bucket exception or migration path.
 
 :::info
-If your Firebase project was created before the September 2024 policy change, you may still have limited access to Firebase Storage under legacy conditions. However, new projects must follow the updated Blaze-only policy.
+Budget alerts are notifications, not hard spending caps. Restrict upload size and type, enforce Storage Rules, use App Check where appropriate, and monitor operations and egress as well as stored bytes.
 :::
 
 ## Firebase Storage Operations Limits

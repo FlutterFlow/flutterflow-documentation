@@ -1,9 +1,16 @@
 ---
 slug: line-chart
 title: Line Chart
-tags: [Charts, Data Visualization]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add a Line Chart widget in your FlutterFlow project.
 sidebar_position: 0
+keywords:
+  - Line Chart
+  - Chart
+  - Built In Widgets
 ---
 # Line Chart
 

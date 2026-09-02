@@ -1,22 +1,32 @@
 ---
 slug: /integrations/authentication-types
 title: Auth Services
-description: Learn about integrating various authentication services like Firebase, Supabase, and Custom Authentication in FlutterFlow.
-keywords: [FlutterFlow, Authentication, Firebase, Supabase, Custom Authentication, App Settings]
+description: >-
+  Learn about integrating various authentication services like Firebase,
+  Supabase, and Custom Authentication in FlutterFlow.
+keywords:
+  - FlutterFlow
+  - Authentication
+  - Firebase
+  - Supabase
+  - Custom Authentication
+  - App Settings
 sidebar_position: 1
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication Types
+last_verified: 2026-09-02
 ---
-
 # Overview
-FlutterFlow provides native support for a variety of Authentication Services, including **Firebase**, **Supabase**, and **Custom Authentication** options. To integrate these services into your app, simply navigate to 'App Settings,' select 'Authentication,' and then choose your preferred service. From there, you can set up initial pages for both entry and logged-in states. Follow any additional steps as necessary to complete the setup.
+FlutterFlow supports **Firebase**, **Supabase**, and **Custom Authentication**. In your project, open **Settings and Integrations > App Settings > Authentication**, enable authentication, choose the authentication type, and configure the entry and logged-in pages. Then complete the provider-specific setup before adding authentication actions.
 
 ## Firebase Authentication
 
 In FlutterFlow, you can seamlessly connect with **Firebase** and utilize the available authentication
 methods.
 
-Firebase Authentication integrates tightly with other Firebase services, leveraging industry
-standards like OAuth 2.0 and OpenID Connect. This makes it highly adaptable for use with your custom
-backend, ensuring a secure and scalable solution.
+Firebase Authentication integrates with other Firebase services and supports standards and provider flows such as OAuth 2.0 and OpenID Connect. If your own backend participates in authentication, mint or verify tokens only in a trusted server environment and follow Firebase's server-side guidance.
 
 :::info
 Learn how to enable [**Firebase Authentication**](../authentication/firebase-auth/auth-initial-setup.md) and integrate popular auth providers in your FlutterFlow

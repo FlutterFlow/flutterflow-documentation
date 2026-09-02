@@ -1,10 +1,21 @@
 ---
 slug: datatable
 title: DataTable
-tags: [Layout Elements]
-description: Learn how to add, populate, sort, search, select, paginate, and style a DataTable widget in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  Learn how to add, populate, sort, search, select, paginate, and style a
+  DataTable widget in FlutterFlow.
+keywords:
+  - DataTable
+  - Built In Widgets
+  - Widgets
+  - display records in a DataTable widget
+ai_queries:
+  - display records in a DataTable widget
 ---
-
 # DataTable
 
 The DataTable widget displays structured data in rows and columns. It is useful for presenting datasets such as employee directories, inventories, orders, and reports.
@@ -246,7 +257,7 @@ If the DataTable's minimum width exceeds the available screen width, the table b
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/GTTHfFdAgxi7gpKG2YBA?embed&show_copy_link=true"
         title="Set a minimum width for a DataTable"
         style={{

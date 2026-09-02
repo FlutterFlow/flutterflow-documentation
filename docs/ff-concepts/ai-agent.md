@@ -1,12 +1,26 @@
 ---
 slug: /concepts/ai-agent
 title: AI Agent
-description: Use AI Agent from the FlutterFlow desktop app to set up supported AI agent CLI tools, connect them to your project, and build with natural-language prompts.
-tags: [AI, AI Agent, Desktop App, FlutterFlow CLI]
+description: >-
+  Use AI Agent from the FlutterFlow desktop app to set up supported AI agent CLI
+  tools, connect them to your project, and build with natural-language prompts.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 11
-keywords: [FlutterFlow, AI Agent, desktop app, Codex, Claude, FlutterFlow CLI, MCP, live sessions]
+keywords:
+  - FlutterFlow
+  - AI Agent
+  - desktop app
+  - Codex
+  - Claude
+  - FlutterFlow CLI
+  - MCP
+  - live sessions
+  - launch Codex from AI Agent in the FlutterFlow desktop app
+ai_queries:
+  - launch Codex from AI Agent in the FlutterFlow desktop app
 ---
-
 # AI Agent
 
 AI Agent lets you work with AI coding agents directly from the FlutterFlow desktop app. Instead of manually opening a terminal, navigating to your project, and configuring command-line tools yourself, FlutterFlow checks the required setup and helps prepare the tools needed to work with your project.
@@ -66,7 +80,7 @@ The selected agent runs on your own account and follows that account's usage and
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/iB9pUVMMLggNDnJmL0Hl?embed&show_copy_link=true"
         title="Set up AI Agent"
         style={{
@@ -104,7 +118,7 @@ For targeted widget updates, right-click the widget in the builder and select [*
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/jJPRPlsUJoFKIj0nuQT4?embed&show_copy_link=true"
         title="Use AI Agent"
         style={{

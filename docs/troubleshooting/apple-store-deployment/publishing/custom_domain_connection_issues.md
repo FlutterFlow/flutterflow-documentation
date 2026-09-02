@@ -1,9 +1,22 @@
 ---
-keywords: ['error', 'custom', 'domains']
+keywords:
+  - error
+  - custom
+  - domains
+  - fix DNS issues while connecting a custom domain to a FlutterFlow web app
 slug: /troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues
 title: Custom Domain Connection Issues
+description: >-
+  This article provides solutions for common problems encountered when
+  connecting custom domains.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment Issues
+ai_queries:
+  - fix DNS issues while connecting a custom domain to a FlutterFlow web app
+last_verified: 2026-09-02
 ---
-
 # Custom Domain Connection Issues
 
 This article provides solutions for common problems encountered when connecting custom domains.
@@ -19,9 +32,9 @@ This article provides solutions for common problems encountered when connecting 
 1. **Verify DNS Records**
 
    - Use tools like **[nslookup.io](https://www.nslookup.io)** to verify that your DNS A and CNAME records match the configuration provided in FlutterFlow.
-   - Ensure no conflicting A, AAAA, or CNAME records exist.
+   - Ensure no conflicting A, AAAA, or CNAME records exist for the exact host being connected. Preserve unrelated DNS records.
 
-   ![](../../assets/20250430121150651702.png)
+   ![Custom Domain Connection Issues in FlutterFlow](../../assets/20250430121150651702.png)
 
 2. **Allow Time for DNS Propagation**
 
@@ -56,11 +69,15 @@ This article provides solutions for common problems encountered when connecting 
 
 2. **Adjust CAA Records**
 
-   - Add `"letsencrypt.org"` to your allowed certificate authorities.
-   - Remove any conflicting CAA records.
+   - Add the certificate authority value currently required by FlutterFlow's connection UI if your organization uses restrictive CAA records.
+   - CAA records can be inherited from a parent domain. Coordinate any change with the domain owner and security team; do not remove existing CAA policy blindly.
 
       :::note
-      Once CAA records allow `"letsencrypt.org"`, FlutterFlow will be able to generate SSL certificates and complete the domain connection.
+      DNS propagation and certificate issuance are asynchronous. A compatible CAA policy is one prerequisite, not a guarantee that connection will immediately complete.
       :::
 
 If issues persist after following these steps, contact FlutterFlow support via Live Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io).
+
+## Related documentation
+
+See [Custom Domain Connection Error](/troubleshooting/apple-store-deployment-issues/custom-domain-connection-error) for a related FlutterFlow workflow.

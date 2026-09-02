@@ -1,10 +1,25 @@
 ---
 slug: project-setup
 title: Project Setup
-tags: [Setup, Permissions, Multiple Languages]
-keywords: [permission message, enabling platforms, support multiple languages, adding custom permissions, walkthrough, development environments]
-description: Learn how to set up your project in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - permission message
+  - enabling platforms
+  - support multiple languages
+  - adding custom permissions
+  - walkthrough
+  - development environments
+  - configure the initial settings for a FlutterFlow project
+description: >-
+  Setting up a project in FlutterFlow ensures that your app is prepared to
+  provide a robust and user-friendly experience across different platforms and
+  regions.
 sidebar_position: 1
+ai_queries:
+  - configure the initial settings for a FlutterFlow project
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,7 +35,7 @@ In your app, you must be transparent and get upfront consent before using the us
 We automatically add permissions whenever you add features that access the user's private data. You still need to add permission messages. These messages help users clearly understand how your app will use the data it is requesting.
 
 :::info
-- You cannot show custom permission messages on Android, so the messages added here are displayed only on iOS devices. To write a clear permission message, see [**Apple's Human Interface Guidelines**](https://developer.apple.com/design/human-interface-guidelines/patterns/accessing-private-data/#requesting-permission).
+- You cannot show custom permission messages on Android, so the messages added here are displayed only on iOS devices. To write a clear permission message, see [**Apple's Human Interface Guidelines**](https://developer.apple.com/design/human-interface-guidelines/privacy).
 - You cannot turn off permissions (with messages) added by FlutterFlow. This helps prevent issues during app review.
 - See how to [**request permission**](#request-permission-action).
 :::
@@ -58,16 +73,15 @@ To add a custom permission:
 5. Enter the **Android Permission name** value, such as *RECORD_AUDIO* or *CAMERA*.
 6. Enter the **Permission Message** that describes exactly how the data is used.
 7. Click the Done icon on the right.
-    
+
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/AuxM1ChTm1v5mh59LfYK?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/AuxM1ChTm1v5mh59LfYK?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -108,9 +122,8 @@ This action is helpful when you add a custom widget or action that accesses the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/EbHqL6taiZfjFhxrQsJK?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EbHqL6taiZfjFhxrQsJK?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -135,9 +148,8 @@ This action is helpful when you add a custom widget or action that accesses the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6L0VxKxig1wu3uBLoGZq?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/6L0VxKxig1wu3uBLoGZq?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -173,9 +185,8 @@ To add this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ou5BU61S0RQE3pRFkWNw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ou5BU61S0RQE3pRFkWNw?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -235,9 +246,8 @@ For example, consider a news article app. When a new user opens the app for the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Hlmx2NL3oci23dKTPyjF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Hlmx2NL3oci23dKTPyjF?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -277,7 +287,7 @@ To create a walkthrough:
     6. Pick an **Overlay Color** that you want to display when the widget is highlighted.
     7. By default, we also add a skip button on the screen, and you can align it using the **Skip Alignment** option.
     8. Add additional steps by repeating the process for all UI elements you wish to feature.
-        
+
 4. To preview the walkthrough, click the **Start Preview** button and use the arrows to navigate through the steps.
 5. To rearrange the steps, enable the **Reorder** option and then use the arrows to adjust their sequence.
 6. Click **Add Walkthrough** to save.
@@ -287,9 +297,8 @@ To create a walkthrough:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6rIFN4jqc7NjL05gMaIX?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/6rIFN4jqc7NjL05gMaIX?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -323,9 +332,8 @@ After creating a walkthrough, you can display it on a page using the Start Walkt
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/lf5ih1Hu2a6VChqMWXIm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/lf5ih1Hu2a6VChqMWXIm?embed&show_copy_link=true" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -363,9 +371,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/FFpR1SDrZEQ"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/FFpR1SDrZEQ" title="Project Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

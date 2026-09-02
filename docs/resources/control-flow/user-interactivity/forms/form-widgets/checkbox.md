@@ -1,11 +1,25 @@
 ---
 slug: /resources/forms/checkbox
 title: Checkbox
-tags: [Widgets, Form Elements]
-keywords: [FlutterFlow, Checkbox, CheckboxGroup, CheckboxListTile, Multiple Choice]
-description: Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - Checkbox
+  - CheckboxGroup
+  - CheckboxListTile
+  - Multiple Choice
+description: >-
+  Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your
+  FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # Checkbox
+
+Use **Checkbox** for one Boolean choice, **CheckboxListTile** when the label and control should be one tappable row, and **CheckboxGroup** when the user may select zero or more values from a list. Read the current value from **Widget State** and use **On Change** when another action must run after the selection changes.
+
 In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: **Checkbox**, [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
 
 :::tip[Widget State]
@@ -25,9 +39,8 @@ Let's see how to add a checkbox widget and build an example that shows its value
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ASigXrEGittr1CUCHTYT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ASigXrEGittr1CUCHTYT?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -56,9 +69,8 @@ Here is a simple way to do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/t0To7Y1A8jE1Mr1ksVUe?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/t0To7Y1A8jE1Mr1ksVUe?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,9 +104,8 @@ To set the initial value:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/yq3JT22j4wf1lkkiW93p?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/yq3JT22j4wf1lkkiW93p?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -141,9 +152,8 @@ To change the rounded corner for this widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/U132zGTV1KhnLNSZxQIe?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/U132zGTV1KhnLNSZxQIe?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -177,9 +187,8 @@ You may need to disable a checkbox if certain conditions aren't met. For instanc
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/8c69f44814ff492f81c85ddb670beb73?sid=361442f7-9d26-4fb0-a4aa-86d9fece59db"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/8c69f44814ff492f81c85ddb670beb73?sid=361442f7-9d26-4fb0-a4aa-86d9fece59db" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -205,9 +214,8 @@ To disable a checkbox, move to the **Properties Panel** **>** turn on the **Chec
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/fcacb70c575541a08dceef5487ff9a8a?sid=824f6560-e8e1-488a-86e4-1ee6e9a07465"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/fcacb70c575541a08dceef5487ff9a8a?sid=824f6560-e8e1-488a-86e4-1ee6e9a07465" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -254,9 +262,8 @@ Here's an example of how you can use the CheckboxGroup widget in your project:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BivwFwCwbnuPjT1qotFD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BivwFwCwbnuPjT1qotFD?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -295,9 +302,8 @@ To set initial selection manually:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/eMhn9p6EcEzpXDyu0JiR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/eMhn9p6EcEzpXDyu0JiR?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -325,9 +331,8 @@ You might want to allow users to clear or select all items in one go. You can do
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tD2lM1FUYmHHCvCTdirJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tD2lM1FUYmHHCvCTdirJ?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -359,9 +364,8 @@ Follow the steps below to add this action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/7BS0z0v8um66Bk7tkgjf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/7BS0z0v8um66Bk7tkgjf?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -392,16 +396,15 @@ To create empty space around the checkbox:
 1. Select the **CheckboxGroup** from the widget tree or the canvas area.
 2. Move to the properties panel and find the **Item Padding** property.
 3. Set the padding for the L(Left), T(Top), R(Right), and B(Bottom) sides. Use the  Lock button to change all values at the same time. Unlocking will allow you to modify each value separately.
-    
+
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/iynhZSd2TAW2xVjZEoy3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iynhZSd2TAW2xVjZEoy3?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -434,9 +437,8 @@ To change the checkbox color:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Wjf3hh1DVpcpx0q7ETY4?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Wjf3hh1DVpcpx0q7ETY4?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -463,16 +465,15 @@ To customize the checkbox border:
 2. Move to the properties panel and scroll down to the **Checkbox Style** section.
 3. To change the checkbox border color, find the **Check Border Color** property, click on the box next to the already selected color, select the color, and then click **Use Color** or click on **Unset** and enter a Hex Code directly. You can also choose the color by clicking the **Palette** and **Simple** button.
 4. To adjust the border corner, find the **Border Radius** property and enter the values in the TL (Top left), TR (top right), BL (bottom left), and BR (bottom right) boxes. Use the  Lock button to change all values at the same time. Unlocking will allow you to modify each value separately.
-    
+
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DXD3GgcFS4vk95v82NTa?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DXD3GgcFS4vk95v82NTa?embed&show_copy_link=true" title="Checkbox interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -491,3 +492,10 @@ To customize the checkbox border:
 </div>
 <p></p>
 
+## Verify checkbox behavior
+
+- Confirm the initial value or initial selections are valid for the options currently supplied.
+- Test both selection and deselection, including a disabled state.
+- For a dynamic CheckboxGroup, test an empty options list and options that change after the page loads.
+- When saving a value, branch or write from the widget's current state after **On Change**; do not hard-code the value you expect the user to choose.
+- If the checkbox participates in a Form, test validation and reset behavior together with the other form fields.

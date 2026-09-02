@@ -2,11 +2,22 @@
 title: FlutterFlow Model
 slug: /generated-code/flutterflow-model
 sidebar_position: 4
+description: >-
+  The class is an abstract class used in FlutterFlow to provide a unified and
+  extensible structure for managing state and behavior of widgets (both pages
+  and components).
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Generated Code
+keywords:
+  - FlutterFlow Model
+  - Generated Code
+  - FlutterFlow
 ---
-
 # FlutterFlow Model
 
-The `FlutterFlowModel` class is an abstract class used in FlutterFlow to provide a unified and extensible structure for managing state and behavior of widgets (both pages and components). It encapsulates **initialization, state management,** and **disposal** logic, making it easier to handle the lifecycle of widgets and their models. 
+The `FlutterFlowModel` class is an abstract class used in FlutterFlow to provide a unified and extensible structure for managing state and behavior of widgets (both pages and components). It encapsulates **initialization, state management,** and **disposal** logic, making it easier to handle the lifecycle of widgets and their models.
 
 FlutterFlow automatically generates the `flutter_flow_model.dart` file, which contains the `FlutterFlowModel` class and utility methods like `wrapWithModel()` and `createModel()`.
 
@@ -42,7 +53,7 @@ abstract class FlutterFlowModel<W extends Widget> {
 ```
 
 
-## Widget & Context references 
+## Widget & Context references
 
 Provides references to the associated widget and its `BuildContext`.
 
@@ -88,7 +99,7 @@ Allows the model to notify the associated widget or parent component/page when u
   // Function to call when the model receives an update.
   VoidCallback _updateCallback = () {};
   void onUpdate() => updateOnChange ? _updateCallback() : () {};
-  
+
   FlutterFlowModel setOnUpdate({
     bool updateOnChange = false,
     required VoidCallback onUpdate,
@@ -96,7 +107,7 @@ Allows the model to notify the associated widget or parent component/page when u
       this
         .._updateCallback = onUpdate
         ..updateOnChange = updateOnChange;
-  
+
   // Update the containing page when this model received an update.
   void updatePage(VoidCallback callback) {
     callback();
@@ -104,6 +115,6 @@ Allows the model to notify the associated widget or parent component/page when u
   }
 ```
 
-## wrapWithModel() 
+## wrapWithModel()
 
 The `wrapWithModel()` method in FlutterFlow links a model to a widget and its child widgets, allowing them to access and manage state. It wraps the widget with a Provider, making the model available throughout the widget tree.

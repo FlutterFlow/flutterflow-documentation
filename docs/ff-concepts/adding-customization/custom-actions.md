@@ -1,12 +1,25 @@
 ---
 slug: /concepts/custom-code/custom-actions
 title: Custom Actions
-description: Learn how to create and use custom actions in your FlutterFlow app to enhance functionality.
-tags: [Custom Actions, Custom Code]
+description: >-
+  Learn how to create and use custom actions in your FlutterFlow app to enhance
+  functionality.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 4
-keywords: [FlutterFlow, Custom Actions, Customizations, Flutter, Dart, Pub.dev]
+keywords:
+  - FlutterFlow
+  - Custom Actions
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - write a custom action in FlutterFlow
+ai_queries:
+  - write a custom action in FlutterFlow
+last_verified: 2026-09-02
 ---
-
 # Custom Actions
 
 Custom Actions in FlutterFlow differ from custom functions in that they always return a `Future`.
@@ -47,9 +60,8 @@ app's `HomePage`.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/ZwlkhlPX867DW6cPQxKk?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZwlkhlPX867DW6cPQxKk?embed&show_copy_link=true" title="Custom Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -72,17 +84,18 @@ app's `HomePage`.
 In our previous example, we enabled the **Return Value** of the Custom Action to return a
 `List<Product>` when the search keyword is valid. With this change the code will change from
 
-```js
-Future executeSearch(String searchItem) async {
+```jsx
+Future<void> executeSearch(String searchItem) async {
   // Add your function code here!
 }
 ```
 
 to
 
-```js
+```jsx
 Future<List<ProductStruct>> executeSearch(String searchItem) async {
-// Add your function code here!
+  // Add your search logic here.
+  return <ProductStruct>[];
 }
 ```
 
@@ -96,9 +109,8 @@ Flow.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Phny5irmH6G2A2TJili0?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Phny5irmH6G2A2TJili0?embed&show_copy_link=true" title="Custom Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -120,16 +132,10 @@ Flow.
 
 
 :::tip[LOOKING for other CUSTOM action properties?]
-To learn more about Custom Action settings, such as the 
-[**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation), 
-[**Include Build Context toggle**](custom-code.md#include-buildcontext), 
-and other properties like [**Callback Actions**](custom-code.md#callback-action-as-parameter), 
+To learn more about Custom Action settings, such as the
+[**Exclude From Compilation toggle**](custom-code.md#exclude-from-compilation),
+[**Include Build Context toggle**](custom-code.md#include-buildcontext),
+and other properties like [**Callback Actions**](custom-code.md#callback-action-as-parameter),
 [**Pubspec Dependencies**](custom-code.md#adding-a-pubspec-dependency), please check out this
 [**comprehensive guide**](custom-code.md).
 :::
-
-
-
-
-
-

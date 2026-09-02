@@ -2,11 +2,17 @@
 slug: /troubleshooting
 title: Detecting Issues
 description: A guide to troubleshoot or debug issues that occur within FlutterFlow project.
-tags: [Troubleshooting]
+tags:
+  - FlutterFlow
+  - Troubleshooting
 sidebar_position: 0
-keywords: [Troubleshooting, Debugging, Detect Issues, Runtime Errors]
+keywords:
+  - Troubleshooting
+  - Debugging
+  - Detect Issues
+  - Runtime Errors
+last_verified: 2026-09-02
 ---
-
 # Detecting Issues
 
 This is a general troubleshooting guide for detecting any issues that occur within FlutterFlow projects.
@@ -37,9 +43,8 @@ Using the Debug Info panel, you can easily trace that the dropdown variable is s
     paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TgIsoAjlnDiHaafypnpV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TgIsoAjlnDiHaafypnpV?embed&show_copy_link=true" title="Detecting Issues interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -78,9 +83,8 @@ This will open the console log, and any errors will be highlighted in red color.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/c0I844oLVtAR0e7YSbhC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/c0I844oLVtAR0e7YSbhC?embed&show_copy_link=true" title="Detecting Issues interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -106,10 +110,10 @@ If you're using our Desktop App and running the app with a local run, you might 
 For example, if a user enters a character instead of a numeric value for the product quantity, which is not allowed, the error will be logged in the device logs, highlighting the exact issue.
 
 :::tip
-If you're unsure about the meaning of an error message, you can copy and paste the entire error text into ChatGPT and ask for an explanation or solution.
+If you ask ChatGPT or another assistant about an error, provide the exact stable error code, affected FlutterFlow feature, target platform, and a minimal redacted excerpt. Remove API keys, tokens, cookies, signing credentials, user data, project exports, private URLs, and proprietary source first. Treat the proposed fix as a hypothesis and verify it against the current FlutterFlow and upstream product documentation.
 :::
 
-For this specific error, [we asked ChatGPT](https://chat.openai.com/share/77f3ceb5-6b2f-4f94-b85c-e01a1fce002a) to explain and guide us on fixing the issue, and the fix was super simple!
+Start with the first causal error and the operation that emitted it. Later errors are often consequences, so pasting an entire unfiltered log can make an assistant focus on the wrong line and can disclose sensitive information.
 
 ![Desktop app's device logs](imgs/desktop-app-device-logs.avif)
 
@@ -152,4 +156,3 @@ For instance, if Firestore security rules aren't properly configured, the app mi
 We display such errors as *Run mode-only notification* in a snack bar. Here's what it might look like:
 
 ![Runtime errors](imgs/runtime-errors.avif)
-

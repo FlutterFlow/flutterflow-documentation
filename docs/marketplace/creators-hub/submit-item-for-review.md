@@ -2,16 +2,25 @@
 slug: submit-item-for-review
 title: Submitting Item for Review
 description: Learn how to submit an item to the FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 0
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Submit Item]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Submit Item
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Submitting Item for Review
 
-All items submitted to the Marketplace are subject to a comprehensive review process prior to publication. While we have recently significantly improved review times, please note that the review period can take up to 30 days depending on the complexity and volume of submissions.
+All items submitted to the Marketplace are reviewed before publication. Plan for review to take up to 30 days; actual timing depends on submission volume and item complexity and is not guaranteed.
+
+The Marketplace submission form controls the item types, monetization options, minimum prices, and required fields currently available to your account. Treat values on this page as guidance if the form differs.
 
 :::danger[Important: Review Submission Policies]
 
@@ -20,7 +29,7 @@ Please review our [**Submission Guidelines**](submission-criteria.md) and our [*
 
 ## How to Submit an Item
 
-An item can be an entire project (in the case of Temlate Apps or Libraries), a page or a component (in the case of Template Page & Components) or a Custom Function, Action or Widget (in the case of Custom Code).
+An item can be an entire project (for Template Apps or Libraries), a page or component (for Template Pages and Components), or a Custom Function, Action, or Widget (for Custom Code).
 
 ### 1. Set your project as a Marketplace project
 
@@ -44,8 +53,7 @@ You can also clone an existing project and then set it as a Marketplace Project.
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324"
-        title=""
+        src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324" title="Submitting Item for Review interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -78,7 +86,7 @@ The cover photo should be **1200x800 pixels** and help the users understand the 
 
 #### Gallery Photos (optional)
 
-Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. 
+Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform.
 
 Each should be should be **1200x800 pixels**.
 
@@ -88,7 +96,7 @@ The item name should be professional, unique, and help the users understand the 
 
 #### Description
 
-The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. 
+The description should provide an overview of the key features, helping users determine if the item aligns with their requirements.
 
 If the item includes any third-party paid services or pub.dev packages/dependencies, those should also be mentioned in the description. Please use correct grammar and capitalization.
 
@@ -109,12 +117,12 @@ Four types of items can be submitted:
 <TabItem value="1" label="Libraries" default>
 Libraries allow you to share resources like API endpoints, UI components, custom data types, custom code, action blocks and more with complete version control.
 
-To submit a Library to the Marketplace, first publish your project as a Library. Note that there are some limitations on Library projects - most notably there is currently no support for Firebase or Pages.
+To submit a Library to the Marketplace, first publish your project as a Library. Library Pages and several Firebase capabilities are supported, but some features remain unavailable or limited. Review the current supported resources, disabled features, Firebase limitations, and publishing prerequisites before submitting.
 
-For more details, see the [documentation on Libraries](/docs/resources/projects/libraries.md).
+For details, see [Libraries](../../resources/projects/libraries.md).
 
 :::note
-*Libraries* can be monetized. The minimum price for Libraries is $50.
+*Libraries* can be monetized. At the time this page was verified, the displayed minimum price was $50; confirm the current minimum in the submission form.
 :::
 </TabItem>
 <TabItem value="2" label="Template App" default>
@@ -124,7 +132,7 @@ Template apps contain multiple screens. There are 2 sub-types:
 - **UI Kit**: purely design-based templates and layouts
 
 :::note
-*Template Apps* can be monetized. The minimum price for Full Apps is $400 while the minimum for UI Kits is $50.
+*Template Apps* can be monetized. At the time this page was verified, the displayed minimum was $400 for Full Apps and $50 for UI Kits; confirm current values in the submission form.
 :::
 </TabItem>
 <TabItem value="3" label="Page or Component">
@@ -134,7 +142,7 @@ Pages or Components are assembled modules that can be used within FlutterFlow. T
 - **Component:** a reusable UI element that can be integrated into any part of your application
 
 :::warning
-*Pages and Components* cannot be monetized at this time.
+At the time this page was verified, *Pages and Components* could not be monetized. Confirm the current option in the submission form.
 :::
 </TabItem>
 <TabItem value="4" label="Custom Code">
@@ -147,7 +155,7 @@ Custom Code is Dart code that can be used within FlutterFlow projects. There are
 *Please note that each custom code item needs to be submitted separately.*
 
 :::warning
-*Custom Code* cannot be monetized at this time.
+At the time this page was verified, *Custom Code* could not be monetized. Confirm the current option in the submission form.
 :::
 </TabItem>
 </Tabs>
@@ -186,5 +194,5 @@ Your item will be shown in your [Dashboard](https://marketplace.flutterflow.io/d
 ### 4. Edit an approved item
 
 :::info
-At this time, it is not possible to edit an approved Marketplace Item. We are working to add this functionality soon.
+If the Marketplace dashboard does not offer an edit action for an approved item, contact [Marketplace support](mailto:marketplace@flutterflow.io) before attempting to replace or resubmit it. Do not assume that editing a source project automatically updates an approved listing.
 :::

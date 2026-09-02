@@ -1,12 +1,23 @@
 ---
 slug: /deployment/web-publishing
 title: Web Publishing
-description: Discover how to effortlessly publish your applications on the web with FlutterFlow. This guide covers everything from enabling web support to deploying your app and adding custom domains.
-tags: [Web Publishing, Deployment]
+description: >-
+  FlutterFlow supports web publishing, allowing you to build and publish web
+  applications in addition to your mobile apps.
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 2
-keywords: [Web Publishing, Deployment, FlutterFlow, Custom Domains]
+keywords:
+  - Web Publishing
+  - Deployment
+  - FlutterFlow
+  - Custom Domains
+  - publish a FlutterFlow app to the web
+ai_queries:
+  - publish a FlutterFlow app to the web
+last_verified: 2026-09-02
 ---
-
 # Web Publishing
 
 FlutterFlow supports web publishing, allowing you to build and publish web applications in addition to your mobile apps. This guide provides details on how to use FlutterFlow for web publishing. From enabling web support and making design adjustments to deploying your app and adding custom domains.
@@ -40,24 +51,24 @@ To add platform support, navigate to the **Setting and Integrations > Project Se
 
 :::info
 
-Enabling web support automatically enables 
+Enabling web support automatically enables
 [**deep linking**](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for your project. This helps in creating URLs for every page of your app.
 
 :::
 
 #### Advanced Web Settings
 
-1. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms. 
+1. **Use CanvasKit**: Enabling this option can provide high-quality graphics and text rendering on web platforms.
 
 2. **CORS Proxy for Images (Optional)**: When using CanvasKit, some images can be blocked from loading if the server is not configured to allow loading them from other websites. This happens because Flutter web uses WebGL for rendering, which requires access to raw image data and is subject to browser security restrictions called [Cross-Origin Resource Sharing (CORS)](https://docs.flutter.dev/platform-integration/web/web-images#cross-origin-resource-sharing-cors).
 
    Choose the appropriate option based on where your images are hosted:
 
    - **None**: If you are only loading images from your Firebase Storage, select this option and configure Firebase Storage for web access. FlutterFlow automatically excludes Firebase Storage images from CORS proxy requirements.
-   
+
    - **Deploy with Firebase**: If images are hosted on external servers (not Firebase Storage) *but you use Firebase for your app*, choose this option. FlutterFlow will automatically deploy a regional CORS proxy function to your Firebase project for optimal performance. Simply click the **Deploy** button that appears below this option.
-   
-   - **Custom Proxy URL**: If you're not using Firebase or prefer to manage your own CORS proxy, specify your custom proxy URL here. If you don't have one, you can create one using services like [cors-anywhere](https://github.com/Rob--W/cors-anywhere) or CloudFlare Workers.
+
+   - **Custom Proxy URL**: If you're not using Firebase or prefer to manage your own proxy, specify a proxy you operate and secure. Allowlist trusted origins and destinations, block private or internal network targets, limit response size and content types, authenticate where appropriate, and rate-limit requests. Do not send user credentials or private URLs through a public shared CORS proxy.
 
    :::warning
    **Performance Note**: Using a CORS proxy adds a network hop for external images, which may slightly increase loading times. For best performance, host images on Firebase Storage or a CORS-enabled CDN when possible.
@@ -81,7 +92,7 @@ If you're experiencing image loading issues on web:
 1. **Check browser console**: Look for CORS-related error messages
 2. **Verify image sources**: Ensure external image servers allow cross-origin requests
 3. **Test proxy configuration**: Verify your custom proxy URL is accessible and functioning
-4. **Firebase Storage setup**: Confirm Firebase Storage rules allow public read access for web
+4. **Firebase Storage setup**: Configure bucket CORS for the deployed origin and confirm authenticated Storage Rules allow only the intended objects. Do not make private files public merely to fix CORS.
 
 ### 2. Make design adjustments (optional)
 
@@ -117,13 +128,13 @@ In this step, you must provide general information about your web app by followi
 
 Inside the **General Information** section, enter the following details:
 - **Site URL**: You can define the *Site URL* by adding the subdomain, for example, *mywebapp.flutterflow.app*. You can only change the subdomain, i.e., the part before *flutterflow.app*.
-    
+
     :::warning
     - You can remove or change the existing subdomain by simply entering the new one and hitting the publish button. Note that when you change your subdomain, it only takes effect the next time you deploy.
     - Old addresses can stop working anytime and be given to another user.
-    - There is a limit on the number of subdomains you can register per user. *Paying users can register up to 20 subdomains*. You will receive an in-app warning if you are approaching the limit.
+    - Subdomain limits depend on the current plan. Use the limit shown in FlutterFlow and the current pricing page rather than relying on a hard-coded quota.
     :::
-    
+
 - **SEO Title**: This appears in social sharing previews and search results.
 - **Site Description**: A text that you would like to appear in the social sharing preview card and search results.
 - **Page Title**: This appears in the browsers tab for all pages of your app.
@@ -134,7 +145,7 @@ Inside the **General Information** section, enter the following details:
 - **Show Watermark**: By default, a button with 'Built in FlutterFlow' text appears as a watermark at the bottom right side of your page. To remove, disable the **Show watermark** toggle.
 - **Allow Showcasing**: If enabled, we may feature your project on our website.
 - **Allows Search Engine Indexing**: This is to let people discover your site via search engines.
-- **Enabling PWA**: Enabling this can provide an app-like experience right in the browser. PWA app can be installed on the device, supports offline functionality, sends push notifications, and can be accessed without the need to go through an app store.
+- **Enabling PWA**: Enables installable-app metadata and supporting web behavior. Actual installation, offline behavior, background features, and push notification support vary by browser and platform and still require compatible app logic, service-worker behavior, permissions, and testing.
 - **Use CanvasKit**: Enabling this can provide high-quality graphics and text rendering on web platforms. CanvasKit can be used as an alternative to the default HTML renderer when higher graphical fidelity is needed in Flutter web apps.
 - **Use Original Engine Initialization**: This uses original Flutter web engine initialization, which sometimes helps in better loading time in the deployed web app.
 
@@ -152,7 +163,7 @@ When you are ready to deploy, click **Publish.** This will take approximately 2-
 
 By default, you will publish to a subdomain based on your project id. These default subdomain addresses do not count toward the subdomain quota, and you can deploy as many projects as you'd like. The URL would look like this: `your-project-id-1234.flutterflow.app`
 
-You can also modify the address by specifying a custom subdomain address, in the **Settings > Web Publishing** tab's **Site URL** field, as long as it's available. You can have up to **2** custom subdomain URLs on the Free plan, up to **20** on any of our Paid plans, and **unlimited** custom subdomain URLs on the Enterprise plan.
+You can also modify the address by specifying an available custom subdomain in **Settings > Web Publishing > Site URL**. Limits vary by plan and are shown in FlutterFlow and on the current pricing page.
 
 :::info
 
@@ -193,7 +204,7 @@ To add a custom domain:
 1. Enter your **Custom Domain URL**. Ensure you only enter the domain name (without www) and extension (e.g.,*mywebapp.com* and not *www.mywebapp.com*).
 2. Now, you must set up the DNS. To do so:
     1. Visit the website from where you bought the domain.
-    2. Open the DNS manager and create the records as per displayed in UI. **Note** that there should not be other A or AAA records after adding this. Here are quick links on how to do this on popular domain-selling websites. 1) [Godaddy](https://in.godaddy.com/help/add-an-a-record-19238) 2) [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain/) 3) [Google Domains](https://support.google.com/a/answer/2579934?hl=en). Here's an example of how it looks in Godaddy.
+    2. Open the DNS manager and create the exact records displayed in FlutterFlow. Remove only records for the same host that conflict with those instructions; unrelated records can serve email or other subdomains and should not be deleted. DNS changes can take time to propagate.
     ![custom-domain-listing.avif](../imgs/custom-domain-listing.avif)
     3. Click **Connect**.
     4. Once the domain is connected, hit the **Publish** button again.
@@ -207,7 +218,7 @@ If you are familiar with HTML, you may set any additional headers (e.g., [style]
 
 :::warning
 
-These headers are used directly in the `index.html` of your site, so malformed headers may cause unexpected behavior (just as directly editing `index.html` would).
+These headers are inserted directly into `index.html`. Malformed or untrusted HTML or JavaScript can break the app, expose user data, weaken Content Security Policy, or enable account compromise. Add only reviewed code from trusted sources, avoid embedding secrets, pin third-party resources where possible, and retest privacy consent and security headers after every change.
 
 :::
 
@@ -224,11 +235,9 @@ You can verify the added custom header by opening the inspect element window (**
 ---
 
 
-## Changing Firebase dynamic link
+## Replace legacy Firebase Dynamic Links
 
-If you do web deployment and utilize Firebase dynamic links in your app, it's recommended that you update your Firebase Dynamic Links URL scheme. This adjustment is necessary to ensure shared links open correctly on the web. By doing so, your dynamic links will function properly for users across all platforms.
-
-![update-firebase-dynamic-link.avif](../imgs/update-firebase-dynamic-link.avif)
+Firebase Dynamic Links shut down on August 25, 2025. Do not configure it for a new deployment, and do not assume an old Dynamic Links URL will continue routing. Migrate existing links to supported web and app deep links, update associated domains and Android App Links, replace links in campaigns and stored content, and test installed and uninstalled flows before removing the legacy domain. See [Deep and Dynamic Linking](../../ff-concepts/navigation-routing/deep-dynamic-linking.md) for FlutterFlow's current routing options.
 
 ---
 
@@ -244,9 +253,8 @@ To enable your subdomain as an authorized domain:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/lT8TyH1hZARTobmthlwI?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/lT8TyH1hZARTobmthlwI?embed&show_copy_link=true" title="Web Publishing interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

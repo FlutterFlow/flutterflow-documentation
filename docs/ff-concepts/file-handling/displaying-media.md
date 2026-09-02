@@ -1,12 +1,22 @@
 ---
 slug: /concepts/file-handling/displaying-media
 title: Displaying Media
-description: Learn how to display media in FlutterFlow.
-tags: [Media Files, Widget]
+description: >-
+  Displaying media efficiently is crucial for enhancing user experience in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [Media Files, Media Management, Assets, Network, Display Media, Media Widgets]
+keywords:
+  - Media Files
+  - Media Management
+  - Assets
+  - Network
+  - Display Media
+  - Media Widgets
+last_verified: 2026-09-02
 ---
-
 # Displaying Media
 
 Displaying media efficiently is crucial for enhancing user experience in your FlutterFlow app. Whether you're working with images, audio, video, or PDFs, FlutterFlow provides flexible options for integrating and managing media. This guide covers how to set media sources, customize playback settings, and implement best practices like lazy loading, caching, and BlurHash to optimize performance.
@@ -56,10 +66,6 @@ You can also access media files within your app that are stored temporarily in y
 
 The **AudioPlayer** widget allows you to integrate audio playback into your apps. You can play audio from both uploaded assets and external URLs. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
 
-:::tip[Generated Code]
-The AudioPlayer widget in FlutterFlow uses the [**assets_audio_player**](https://pub.dev/packages/assets_audio_player) package for audio playback.
-:::
-
 **Customization Options**
 
 - **Title:** Specify the audio title in the **Title** property. You can set this directly or bind it to a variable, such as an app state variable, API response, or Firestore document.
@@ -83,7 +89,7 @@ You can implement audio recording functionality using the **Start Audio Recordin
 
 :::warning
 
-Currently, audio recording is not supported in **Run** or **Test** modes due to certain limitations.
+Audio Recording actions do not work in browser-based **Test Mode** or **Run Mode**. Test them with **Local Run** on an emulator or device, or in a deployed app. See [Run your App](../../testing-deployment-publishing/running-your-app/run-your-app.md) for mode-specific limitations.
 
 :::
 
@@ -131,9 +137,8 @@ Here’s how you can setup this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/QCY6j8EesBXaT4YZ5VNE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QCY6j8EesBXaT4YZ5VNE?embed&show_copy_link=true" title="Displaying Media interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -192,11 +197,7 @@ This action is enabled only when you have added a [**Play Sound**](#play-sound-
 
 ## VideoPlayer
 
-The **VideoPlayer** widget is used to show a video from uploaded assets or the URL link. The VideoPlayer widget can play various video formats such as MP4, MOV, WAV, MPEG, and JPEG motion photos. Refer to the [**Displaying Media**](#media-types) section for more details on accessing media.
-
-:::tip[Generated Code]
-The VideoPlayer uses the [**video_player**](https://pub.dev/packages/video_player) package for reliable video playback across different platforms.
-:::
+The **VideoPlayer** widget shows a video from an uploaded asset or network URL. Actual format and codec support varies by target platform and browser, so test each format on every platform you publish. Refer to [Media Types](#media-types) for source configuration.
 
 **Customization Options**
 
@@ -215,10 +216,6 @@ The **VideoPlayer** widget includes several options to align with your app's des
 
 The **YouTubePlayer** widget in FlutterFlow allows you to integrate and play YouTube videos within your app. It offers customizable playback options and an intuitive interface for enhancing the user experience.
 
-:::tip[Generated Code]
-The YoutubePlayer uses a custom version of the [**youtube_player_iframe**](https://pub.dev/packages/youtube_player_iframe) package, hosted on FlutterFlow's GitHub repository.
-:::
-
 **Customization Options**
 
 - **Loop Video:** When enabled, the video will automatically replay after it finishes.
@@ -232,15 +229,13 @@ The YoutubePlayer uses a custom version of the [**youtube_player_iframe**](https
 
 In FlutterFlow, the **PdfViewer** widget enables you to display PDF files within your app, supporting both network URLs and locally uploaded assets. Refer to the [**Displaying Media**](#media-types) section for more details.
 
-:::tip[Generated Code]
-The PdfViewer in FlutterFlow uses the [**pdfx**](https://pub.dev/packages/pdfx) package for rendering PDFs.
-:::
-
 **Customization Options**
 
 - **Horizontal Scroll:** By default, the PdfViewer allows vertical scrolling through pages. Enable this option to allow horizontal scrolling.
 - **Use Proxy:** By default, FlutterFlow routes PDF fetching through a proxy in **Run Mode** and **Test Mode** to avoid CORS (Cross-Origin Resource Sharing) issues. **Switch this off** if you do not want the PDF request to be routed through the proxy.
 - **Use Custom Proxy URL:** If you need a specific proxy, enable this option and provide your own proxy URL instead of using FlutterFlow’s default proxy.
+
+For private or authenticated PDFs, confirm that the selected proxy model is appropriate for your data. Prefer a short-lived signed URL or an authenticated backend rather than making a storage bucket public solely to display a PDF.
 
 ## Web Access for PDFs and Other Files
 
@@ -267,28 +262,29 @@ https://console.cloud.google.com/home/dashboard?cloudshell=true&project=FIREBASE
 
 1. If prompted, click **Continue**.
 2. You should see a terminal at the bottom of the screen. If your project ID is not displayed in yellow, click the **down arrow** (🔽) next to the project name and select the correct Firebase project.
-    
+
 ![cloud-shell](imgs/cloud-shell.avif)
-    
+
 **Step 3: Run the CORS Configuration Command**
 
 1. Click on the **Cloud Shell terminal** (the black screen).
-2. Copy and paste the following command and replace `<your-cloud-storage-bucket>` with your actual storage bucket. To locate your Firebase Storage bucket name, navigate to Firebase Console > Storage > at top left side, you'll see your bucket's URL, which typically follows the format `your-project-id.appspot.com`. 
+2. Copy and paste the following command and replace `<your-cloud-storage-bucket>` with the exact bucket name shown in **Firebase Console > Storage**. Bucket suffixes vary, so copy the value rather than assuming an `appspot.com` name. Replace `https://your-app.example` with each published web origin that should be allowed.
 
-```jsx
-touch cors.json && \
-echo '[{"origin": ["*"], "method": ["GET"], "maxAgeSeconds": 3600}]' > cors.json && \
+```bash
+echo '[{"origin": ["https://your-app.example"], "method": ["GET"], "maxAgeSeconds": 3600}]' > cors.json
 gsutil cors set cors.json gs://<your-cloud-storage-bucket>
 ```
-    
+
+Use `"*"` only when every website should be allowed to make cross-origin `GET` requests to the bucket. CORS is not authorization; keep Firebase Storage Security Rules restrictive as well.
+
 ![storage-bucket.avif](imgs/storage-bucket.avif)
 
 3. Press **Enter** (or **Return**) to execute the command.
 4. If prompted, click **Authorize** to allow Cloud Shell to access your Firebase project.
 5. Once the command executes successfully, you should see a confirmation message.
-    
+
 ![cors-3](imgs/cors-3.png)
-    
+
 
 ## BlurHash
 

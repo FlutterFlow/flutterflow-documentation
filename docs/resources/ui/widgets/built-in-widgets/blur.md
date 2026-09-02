@@ -1,11 +1,17 @@
 ---
 slug: blur
 title: Blur
-tags: [Base Elements, Components]
-keywords: [Blur, Base Element, Component, Widget]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Blur
+  - Base Element
+  - Component
+  - Widget
 description: Learn how to use the Blur widget in your FlutterFlow app.
 ---
-
 # Blur
 
 The **Blur** widget applies a blur effect to its child or to the content behind it. Use it to soften images, obscure sensitive content, or create effects such as frosted glass.
@@ -94,3 +100,7 @@ Select the **Blur** widget and use the following settings under **Blur Propertie
 - **Border Radius:** Rounds the corners of the rectangular clip. This setting is available when **Apply Clip** uses the rectangular shape.
 
 Higher **Sigma X** and **Sigma Y** values produce a stronger blur. Setting both values to `0` removes the blur.
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

@@ -2,8 +2,21 @@
 slug: /concepts/state-management/widget-state
 title: Widget State
 sidebar_position: 1
+description: >-
+  Widget state refers to the data or information that a widget holds, which can
+  change over time and affect the widget's appearance or behavior.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - Widget State
+  - State Management
+  - Concepts
+  - read the current state of a FlutterFlow widget
+ai_queries:
+  - read the current state of a FlutterFlow widget
 ---
-
 # Widget State
 
 **Widget state** refers to the data or information that a widget holds, which can change over time and affect the widget's appearance or behavior. In FlutterFlow, the state is particularly important for form widgets, such as text fields, checkboxes, and radio buttons, as it allows these widgets to respond to user interactions.
@@ -14,7 +27,7 @@ Additionally, **Widget Focus State** refers to the state that indicates whether 
 
 - **Dynamic Data:** Represents values that change over time (e.g., user input in a text field).
 - **Automatic Management:** FlutterFlow handles the state, so developers do not need to write explicit state management code.
-- **Reactive Updates:** Changes in the state automatically update the widget's display. 
+- **Readable runtime values:** Other widgets and actions can read compatible Widget State values through **Set from Variable**.
 
 ![widget-state.png](imgs/widget-state.png)
 
@@ -22,7 +35,7 @@ Additionally, **Widget Focus State** refers to the state that indicates whether 
 
 FlutterFlow simplifies state management by providing built-in support for handling widget states. This means developers do not need to manually create or manage the state of form widgets. Instead, FlutterFlow automatically manages the state for these widgets, ensuring a seamless and intuitive experience.
 
-Some examples of widget states exposed by FlutterFlow: 
+Some examples of widget states exposed by FlutterFlow:
 
   - **Text Fields:** The state of text fields is automatically managed, including the input text and validation states.
   - **Checkboxes:** The state of checkboxes is managed, indicating whether they are checked or unchecked.
@@ -40,8 +53,7 @@ For instance, consider a component with two `TextFields` – one for the usernam
 
 You can access the widget state of a component's widgets on your page, just as you would for other widgets. Simply navigate to the **Set Variable menu > Widget State > [component_name] > [your_widget]**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4dca7e59da1643629dcbb7cd2065580d?sid=3f2cd864-7d72-41ee-adc2-bb96e3ddc1b5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Widget State interactive tutorial" src="https://www.loom.com/embed/4dca7e59da1643629dcbb7cd2065580d?sid=3f2cd864-7d72-41ee-adc2-bb96e3ddc1b5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 :::
 
 FlutterFlow allows you to update the state of these widgets through actions exposed by the platform. For example, if you want to clear a TextField when the Send button is clicked on a form-like page, then in the Actions Flow, you can find relevant actions such as **Clear TextField**. This enables dynamic interaction and state management directly within the visual development environment.
@@ -52,7 +64,7 @@ FlutterFlow allows you to update the state of these widgets through actions expo
 ## Action Triggers for Form Widgets
 FlutterFlow allows you to bind action triggers to widget states, such as calling an API on focus change of a textfield or changing the appearance of a button when a checkbox is checked.
 
-**Most common Action Triggers exposed by form widgets:**
+Available triggers vary by widget. Common form-widget triggers include:
 
 - **On Focus Change:** Triggered when a widget, such as a text field, gains or loses focus.
 For example, showing additional tips or validation messages when the user starts typing in a text field.
@@ -64,12 +76,12 @@ For example, showing additional tips or validation messages when the user starts
 - **On Completed:** Triggered when a specific input is completed, such as entering a pincode.
 For example, automatically moving to the next step in a process after a complete and valid pincode is entered.
 
-- **On Selected:** Triggered when an option is selected in widgets like choice chips, checkboxes, radio buttons, or sliders. For example, updating the UI or performing actions based on the selected option.
+- **On Selected:** Triggered by supported selection widgets when an option is selected. Other controls, including sliders, may expose **On Change** instead.
 
 These triggers allow developers to create interactive and responsive applications by defining specific actions that occur in response to user interactions with form widgets.
 
 ![action-triggers-widget-state.png](imgs/action-triggers-widget-state.png)
 
+## Related documentation
 
-
-
+See [State Variables](/concepts/state-management) for a related FlutterFlow workflow.

@@ -3,17 +3,24 @@ slug: /concepts/file-handling/clear-delete-media
 title: Clear or Delete Media
 description: Learn how to add clear and delete file actions into your FlutterFlow app.
 sidebar_position: 4
-tags: [Media Files, Clear Delete Data]
-keywords: [Media Files, Clear Data, Delete Data, Firebase Storage, Supabase Storage]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - Media Files
+  - Clear Data
+  - Delete Data
+  - Firebase Storage
+  - Supabase Storage
+last_verified: 2026-09-02
 ---
-
 # Clear or Delete Media
 
 The **Clear** and **Delete** **Media** actions provide essential functionalities for managing media files efficiently.
 
 ## Clear Uploaded Data [Action]
 
-When users upload media files, these files are first stored in a local state variable, i.e., *Uploaded File URL* for immediate access and display. This action is helpful when you want to offer users a straightforward method to remove any uploaded media, such as images or recordings.
+The **Clear Uploaded Data** action clears the widget-state output associated with an earlier upload action. Choose the matching upload action by its **Name**. Clearing this state does not delete a file that has already been uploaded to Firebase Storage or Supabase Storage.
 
 :::info
 
@@ -23,9 +30,9 @@ For this action to work, the [**Upload or Save Media**](uploading-files.md#uploa
 
 ## Delete Data [Action]
 
-The **Delete Data** action permanently removes uploaded media—such as images, videos, and PDF files—from external storage platforms like [Firebase Storage](https://firebase.google.com/docs/storage) and [Supabase Storage](https://supabase.com/storage).
+The **Delete Data** action permanently removes uploaded media—such as images, videos, and PDF files—from [Firebase Storage](https://firebase.google.com/docs/storage) or [Supabase Storage](https://supabase.com/storage).
 
-Inside the **URL** section, provide a valid media URL. This must be either the direct **Uploaded File URL** or a variable that holds the URL.
+Select the correct **Upload Type**, then provide the file's **Public Storage URL** directly or from a variable. The URL normally comes from the corresponding upload action. The authenticated user must also be allowed to delete that object by your Firebase Storage rules or Supabase Storage policies.
 
 :::tip
 

@@ -1,12 +1,29 @@
 ---
 slug: /marketplace
 title: FlutterFlow Marketplace
-description: Discover how to explore, purchase, and contribute to the FlutterFlow Marketplace, including guidelines for submissions and handling copyrights.
-tags: [Marketplace , Creator Hub]
+description: >-
+  Discover how to explore, purchase, and contribute to the FlutterFlow
+  Marketplace, including guidelines for submissions and handling copyrights.
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 0
-keywords: [FlutterFlow, Marketplace, Add and Purchase Items, Refund Policy, Submit Feedback, Review Dispute Guidelines, Creator Hub, Submission Criteria, Legal Guidelines, Copyright, DMCA Process, External Licensing, Creators FAQs]
+keywords:
+  - FlutterFlow
+  - Marketplace
+  - Add and Purchase Items
+  - Refund Policy
+  - Submit Feedback
+  - Review Dispute Guidelines
+  - Creator Hub
+  - Submission Criteria
+  - Legal Guidelines
+  - Copyright
+  - DMCA Process
+  - External Licensing
+  - Creators FAQs
+last_verified: 2026-09-02
 ---
-
 # FlutterFlow Marketplace
 FlutterFlow's Marketplace is a dynamic platform designed to enhance your app development experience by providing a vast array of pre-built templates, components, and other resources.
 

@@ -1,12 +1,22 @@
 ---
 slug: /testing/test-pilot
 title: Test Pilot
-description: Learn how to create and run AI-powered QA tests for your FlutterFlow app using Test Pilot.
-tags: [Automated Tests, Testing]
+description: >-
+  Learn how to create and run AI-powered QA tests for your FlutterFlow app using
+  Test Pilot.
+tags:
+  - FlutterFlow
+  - Testing
 sidebar_position: 2
-keywords: [Test Pilot, AI Testing, QA Testing, Testing, FlutterFlow, Automated Tests, Testing]
+keywords:
+  - Test Pilot
+  - AI Testing
+  - QA Testing
+  - Testing
+  - FlutterFlow
+  - Automated Tests
+  - Testing
 ---
-
 # Test Pilot
 
 Test Pilot in FlutterFlow allows you to run AI-powered tests for your app. Instead of building step-by-step integration tests manually, you create natural-language tests, group related tests together, and ask Test Pilot to interact with your app like a QA tester.
@@ -48,9 +58,8 @@ Here's how to create tests:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0KwB1z9CjwGPNHmUoRGz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0KwB1z9CjwGPNHmUoRGz?embed&show_copy_link=true" title="Test Pilot interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,9 +101,8 @@ To use a parameter, create it from **Test Parameters**, then reference it in ins
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dvPY8TXg5kjxfVCvF5Jv?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dvPY8TXg5kjxfVCvF5Jv?embed&show_copy_link=true" title="Test Pilot interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -135,9 +143,8 @@ Before starting a run, make sure the selected group has at least one enabled tes
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/RhNbcACfh114Eu4nP6cZ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/RhNbcACfh114Eu4nP6cZ?embed&show_copy_link=true" title="Test Pilot interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -179,9 +186,8 @@ Each test result can include:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZLSPxm78ch2Tc0eDL6TE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZLSPxm78ch2Tc0eDL6TE?embed&show_copy_link=true" title="Test Pilot interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

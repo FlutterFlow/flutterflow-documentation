@@ -1,12 +1,17 @@
 ---
 slug: /concepts/animations/shaders
 title: Shaders
-description: Learn how to add visual effects using Shaders in your FlutterFlow app.
-tags: [Animations, Concepts]
+description: Configure ShaderFill and ShaderWrapper presets, animation modes, touch effects, actions, and custom Flutter fragment shaders in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 5
-keywords: [FlutterFlow, Shaders, Concepts]
+keywords:
+  - FlutterFlow
+  - Shaders
+  - Concepts
+last_verified: 2026-09-02
 ---
-
 # Shaders
 
 Shaders let you add rich visual effects to your app, such as animated gradients, ripple distortions, dissolve transitions, and interactive touch effects. Instead of using static images or simple color backgrounds, shaders generate visuals in real time using the device’s graphics processor (GPU). This makes it possible to create smooth animations and procedural textures that feel dynamic and alive.
@@ -16,9 +21,8 @@ Shaders let you add rich visual effects to your app, such as animated gradients,
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/u8ydfkhmQQBEWppH87Sf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/u8ydfkhmQQBEWppH87Sf?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -41,6 +45,11 @@ Shaders let you add rich visual effects to your app, such as animated gradients,
 
 FlutterFlow provides two shader widgets, each designed for a different purpose. Choose the one that best matches how you want to apply the visual effect in your UI.
 
+| If you want to... | Use |
+| --- | --- |
+| Draw a procedural background or standalone effect | **ShaderFill** |
+| Distort, filter, reveal, or dissolve an existing widget | **ShaderWrapper** |
+
 ### ShaderFill
 
 The **ShaderFill** widget creates a standalone shader effect that fills a rectangular area. It does not contain any child widgets and works as its own visual element in the UI. This makes it ideal for decorative effects such as animated gradients, procedural textures, or dynamic backgrounds. You can control its size directly using the width and height properties.
@@ -53,9 +62,8 @@ For example, you can use the **ShaderFill** widget to create a visually engaging
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/cdXDHhay4ItCe6Y2i64m?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/cdXDHhay4ItCe6Y2i64m?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,9 +100,8 @@ For example, instead of abruptly removing a UI element, wrap it with a **Shader 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/x5Pt3n7yNA1IGnnfchKb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/x5Pt3n7yNA1IGnnfchKb?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -124,7 +131,7 @@ Internally, it uses the [**material_palette**](https://github.com/FlutterFlow/ma
 Every shader widget includes a **Shader Mode** setting that lets you choose how the shader is defined and applied. You can either use ready-made effects or bring your own custom shader.
 
 - **Preset:** Select from a library of built-in shader effects. Each preset includes adjustable parameters such as colors, speed, intensity, and more, allowing you to easily customize the look and behavior directly from the properties panel.
-- **Custom:** Upload your own `.frag` (fragment shader) file to create fully custom effects. You can define and control inputs using uniform values, which are exposed as sliders in FlutterFlow. Custom shaders appear as a checkerboard placeholder in the builder, but render with full visuals in Test or Run mode.
+- **Custom:** Upload a local `.frag` (fragment shader) asset and control its float uniforms from FlutterFlow. In the builder, a custom ShaderFill displays a placeholder; a custom ShaderWrapper displays its child without the effect. Run or test the app to see the shader output.
 
 ## Preset
 
@@ -136,77 +143,40 @@ You can explore and try out all available [**presets here**](https://flutterflow
 
 :::
 
-### ShaderFill Preset
+### ShaderFill presets
 
-The following presets are available on the ShaderFill Widget:
+ShaderFill offers these standalone effects:
 
-#### Gradient Presets
+| Family | Presets |
+| --- | --- |
+| Linear gradients | **Gritty Gradient**, **Perlin Gradient**, **Simplex Gradient**, **FBM Gradient**, **Turbulence Gradient**, **Voronoi Gradient**, **Voronoise Gradient** |
+| Radial gradients | **Radial Gritty Gradient**, **Radial Perlin Gradient**, **Radial Simplex Gradient**, **Radial FBM Gradient**, **Radial Turbulence Gradient**, **Radial Voronoi Gradient**, **Radial Voronoise Gradient** |
+| Organic and material effects | **Marble Smear**, **Fur**, **Iridescent Liquid**, **Liquid Patina**, **Metal Smoke** |
 
-Gradient presets combine color transitions with procedural noise to create rich, animated visuals. Each gradient type is available in both **linear** and **radial** variants, and all share a common set of customizable property groups for fine-tuning the look and motion via the properties panel.
+Gradient presets combine color transitions with procedural noise. The radial variants spread the effect around a center instead of along a linear direction. **Marble Smear** and **Fur** can react to pointer input when **Interactive** is enabled.
 
-| Gradient Type | Description | Example |
-| --- | --- | --- |
-| **Gritty Gradient** | A rough, grainy gradient with a textured, stippled feel | ![gritty-gradient](animation_gifs/gritty-gradient.png) |
-| **Perlin Gradient** | Smooth, natural-looking noise blended into a gradient | ![sf1](animation_gifs/sf1.gif) |
-| **Simplex Gradient** | Similar to Perlin, but sharper and more structured | ![sf2](animation_gifs/sf2.gif) |
-| **FBM Gradient** | Layered noise that creates soft, cloud-like detail | ![sf3](animation_gifs/sf3.gif) |
-| **Turbulence Gradient** | A more chaotic, high-energy version of FBM | ![sf4](animation_gifs/sf4.gif) |
-| **Voronoi Gradient** | Distinct cell-like patterns based on geometric regions | ![sf5](animation_gifs/sf5.gif) |
-| **Voronoise Gradient** | A hybrid of cell structures and smooth noise | ![sf6-6](animation_gifs/sf6-6.png) |
+### ShaderWrapper presets
 
-#### Marble Smear Preset
+ShaderWrapper offers these child-processing effects:
 
-A procedural marble texture that reacts to user input. When **Interactive** is enabled, users can drag or touch the surface to smear and distort the marble pattern in real time, creating a fluid, organic visual effect. This is ideal for playful backgrounds, creative demos, or experiences where you want users to directly interact with the visuals.
+| Family | Presets |
+| --- | --- |
+| Ripple | **Ripple**, **Clickable Ripple** |
+| Burn | **Burn**, **Radial Burn**, **Tappable Burn** |
+| Smoke | **Smoke**, **Radial Smoke**, **Tappable Smoke** |
+| Dissolve | **Pixel Dissolve**, **Radial Pixel Dissolve**, **Tappable Pixel Dissolve** |
+| Touch distortions | **Tappable Slurp**, **Fur Mask** |
+| Filters and material effects | **Iridescent Liquid**, **Kuwahara**, **Crepuscular Rays**, **Dither**, **Peel**, **Turbulence** |
 
-<center>
-![marble-smear](animation_gifs/marble-smear.png)
-</center>
-
-### ShaderWrapper Preset
-
-The following presets are available on the ShaderWrapper Widget:
-
-#### Ripple / Clickable Ripple
-
-Creates a wave-like distortion on the child widget, similar to water ripples. The standard ripple animates continuously, while the clickable version triggers ripples from the user’s tap location, adding responsive visual feedback to interactions.
-
-<center>
-![sw1](animation_gifs/sw1.gif)
-</center>
-
-#### Burn / Radial Burn / Tappable Burn
-
-A dramatic dissolve effect that makes the widget appear to burn away. It can progress in a direction, radiate from a center point, or originate from user taps, with glowing edges that resemble fire.
-
-<center>
-![sw11](animation_gifs/sw11.gif)
-</center>
-
-#### Smoke / Radial Smoke / Tappable Smoke
-
-A softer version of the burn effect, where the widget fades away like drifting smoke. It supports directional, radial, and tap-based variations for smooth and subtle transitions.
-
-<center>
-![sw3](animation_gifs/sw3.gif)
-</center>
-
-#### Pixel Dissolve / Radial Pixel Dissolve / Tappable Pixel Dissolve
-
-Breaks the widget into pixel blocks that scatter and disappear. This effect works for directional, radial, or tap-based dissolves, making it ideal for stylized removal or transition animations.
-
-<center>
-![sw4](animation_gifs/sw4.gif)
-</center>
-
-#### Tappable Slurp
-
-A playful distortion effect that pulls the widget toward tap points, like a whirlpool. Each interaction creates a dynamic suction effect, adding a fun and interactive feel to the UI.
+**Kuwahara** and **Dither** are time-independent filters and default to **Implicit** time behavior. **Peel** is a transition effect and defaults to **Explicit**. Other presets default to **Continuous** when selected.
 
 
 
 ## Implicit Animated
 
-When [**Implicit Animated**](implicit_animations.md) is enabled, changes to shader parameters (such as colors or slider values) animate smoothly instead of updating instantly. This is especially helpful when parameters are driven by app state, allowing for seamless transitions like gradually shifting gradient colors or intensities.
+For a **preset** shader, enabling [**Implicit Animated**](implicit_animations.md) makes changes to supported preset parameters and the background color transition smoothly instead of updating instantly. This is useful when those values come from app state. Configure the animation duration and curve in the same property section; the defaults are 500 ms and Linear.
+
+Implicit animation does not currently interpolate the extra float uniforms added to a **custom** shader. Those values still update directly.
 
 ## Time Animation Behavior
 
@@ -225,9 +195,8 @@ You can have the **Time Animation Behavior** set to **Continuous** while the wid
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/SghJGpZwuglC7HPwfhUz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SghJGpZwuglC7HPwfhUz?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,16 +219,15 @@ You can have the **Time Animation Behavior** set to **Continuous** while the wid
 
 ### Implicit
 
-You control the shader’s animation manually using a **Time** slider [0–10]. This is useful when you want to connect the animation to app state or user interaction, such as syncing it with scroll position, triggering it through actions, or freezing the effect at a specific point in time.
+You control the shader's time input using a **Time** value from 0 through 10. Bind it to state or another numeric source to scrub the effect, or use a fixed value to freeze the shader at a particular point. The Shader Animation action is for **Explicit** mode; it does not drive this value for you.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0DRRv5qFpgdbFHyz989C?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0DRRv5qFpgdbFHyz989C?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -280,34 +248,46 @@ You control the shader’s animation manually using a **Time** slider [0–10]. 
 
 ### Explicit
 
-Provides full control over the animation timeline. You can define how the animation plays by configuring properties like duration, delay, easing curve, looping, and direction. This mode is useful for choreographed animations that need to start, stop, or respond to events using a **Shader Animation** action.
+Provides a configured timeline with curve, duration, delay, loop, reverse, invert, and range start/end controls. Duration defaults to 2000 ms. **Reverse** is available with looping and plays the timeline back and forth. Use this mode when an action should start, stop, or reset the shader.
+
+### Control an explicit shader with an action
+
+1. Set the shader widget's **Time Animation Behavior** to **Explicit**.
+2. Select the button or other widget that should control it, then open the **Actions** panel.
+3. Add a **Shader Animation** action.
+4. Under **Choose Shader Widget**, select a shader on the same page or component.
+5. Choose **Start Animation**, **Stop Animation**, or **Reset Animation**.
+
+**Start Animation** lets the configured time source run. **Stop Animation** returns the shader to its implicit time value, which is 0 unless that value is configured. **Reset Animation** stops it for one frame and then starts it again from the beginning. A shader targeted by this action is initially held until **Start Animation** runs. Shader Animation actions cannot currently be used inside an Action Block.
 
 ## Interactive Mode
 
 Some shader presets support touch and tap interactions, allowing users to directly influence the visual effect. When **Interactive** is enabled, users can tap or drag on the shader to trigger dynamic responses such as ripples, burn marks, distortions, or smearing effects, making the UI feel more engaging and responsive.
 
-![st](animation_gifs/st.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Interactive shader responding to pointer input"}><source src={require("./animation_gifs/st.mp4").default} type="video/mp4" /></video>
 
-**The following presets are Interactive:**
+The following presets expose **Interactive**:
 
-- **Fill:** Marble Smear (drag to smear)
-- **Wrap:** Clickable Ripple, Tappable Burn, Tappable Smoke, Tappable Pixel Dissolve, Tappable Slurp
+- **Fill:** Marble Smear and Fur
+- **Wrapper:** Clickable Ripple, Tappable Burn, Tappable Smoke, Tappable Pixel Dissolve, Tappable Slurp, and Fur Mask
+
+Use **Continuous** time behavior for pointer-driven presets. A non-continuous time source can prevent their interaction simulation from advancing.
 
 ### Persist Taps
 
-Available for tappable wrap presets. When enabled, the effects created by taps remain visible even after the user lifts their finger. When disabled, the effects gradually fade away, creating a more temporary interaction.
+Available for presets that support tap effects. When enabled, earlier tap effects remain in the shader's interaction history; when disabled, the shader can replace or clear prior taps according to the preset's behavior.
 
 ### Tap Animation
 
-For interactive wrap presets, you can control how each tap effect animates. This is separate from the main time animation and lets you define properties like curve, duration, delay, and playback behavior for each interaction, giving you finer control over how tap responses feel.
+For presets that support taps, this configures the tap timeline separately from the main shader timeline, including curve, duration, delay, loop, reverse, invert, and range.
 
 ## Cache
 
-The **Cache** option improves performance by storing the shader’s rendered output. When enabled, the shader is rendered once and reused until its parameters change. This is enabled by default for ShaderFill.
+The **Cache** option adds a repaint boundary around the shader. It can reuse the shader subtree's composited layer when an ancestor repaints, instead of walking into the shader subtree. It does not turn a continuously animated shader into a one-time render. Cache is enabled by default for ShaderFill and disabled by default for ShaderWrapper.
 
 :::tip
 
-Disable caching if your shader needs to update continuously, such as in animations or real-time interactive effects that change every frame.
+Enable Cache when a static or slow-moving shader sits inside a frequently repainting parent, such as a scrolling or otherwise animated layout. It may not help when the shader itself is the main source of per-frame updates, so test on representative devices.
 
 :::
 
@@ -317,25 +297,28 @@ Custom Shaders allow you to create fully custom visual effects by uploading your
 
 Here’s how to add a custom shader:
 
-1. Create a Flutter-compatible `.frag` (fragment shader) file. You can generate it using ChatGPT or Claude by describing the effect you want. You can also start from an [existing shader](https://github.com/FlutterFlow/material_palette/blob/main/lib/shaders/perlin_gradient.frag) and modify it. Example Prompt: 
-    
+1. Create a Flutter-compatible `.frag` fragment shader. You can ask an AI assistant to draft it or start from an [existing Flutter shader](https://github.com/FlutterFlow/material_palette/blob/main/lib/shaders/perlin_gradient.frag). For example:
+
     ```
-    Create a Flutter-compatible GLSL .frag shader for a soft animated onboarding background using Flutter runtime effect format. {describe your effect here} Return complete shader code and a downloadable .frag file.
+    Create a Flutter-compatible GLSL .frag shader for a soft animated
+    onboarding background. Use Flutter runtime-effect syntax. Declare uSize
+    first and uTime second, followed only by float-based uniforms. Return the
+    complete shader and explain the required FlutterFlow uniform order.
     ```
 
-1. Upload the `.frag` file using the **Shader Asset** picker in FlutterFlow.
-2. After uploading, use **Add Uniform** to define input values for your shader. Each uniform is a slider value from 0 to 10.
+2. Upload the `.frag` file with the **Shader Asset** picker. Custom shaders must be local, build-compiled assets; a network URL cannot be used as the shader asset.
+3. Use **Add Uniform** once for every additional float slot your shader declares. Each entry accepts or binds a Double value from 0 through 10.
+4. Run or test the app to compile and view the effect.
 
-In the builder, custom shaders appear as a checkerboard placeholder. To view the actual rendered effect, run or test your app.
+In the builder, a custom ShaderFill displays a placeholder. A custom ShaderWrapper leaves its child visible without applying the custom effect.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/uTnN9k6o22rVN0g25Wde?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/uTnN9k6o22rVN0g25Wde?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -358,63 +341,50 @@ In the builder, custom shaders appear as a checkerboard placeholder. To view the
 
 Uniforms are simply input parameters that you pass to a custom shader. In FlutterFlow, they appear as sliders in the UI, similar to how you adjust settings (like speed, colors, or intensity) in preset shaders.
 
-#### Order is everything
+#### Required float-uniform order
 
-Uniforms are not matched by name. They are passed strictly in the order they are declared in the shader. This means the first uniform you declare receives the first value from the UI, the second uniform receives the next values, and so on.
+FlutterFlow binds float uniforms by position, not by name. Your shader must declare this prefix before its custom float uniforms:
 
-Example:
-
-```
-uniform float speed;   // 1st
-uniform vec4 color;    // 2nd
+```glsl
+uniform vec2 uSize; // float slots 0 and 1: rendered width and height
+uniform float uTime; // float slot 2: shader time
 ```
 
-In the UI, you must provide values in this exact sequence:
+After that prefix, FlutterFlow sends the **Add Uniform** values in list order. For example:
 
-- Uniform 1 → `speed`
-- Uniform 2 → `color` (since `vec4` = 4 float values)
+```glsl
+uniform vec2 uSize;
+uniform float uTime;
+uniform float speed;
+uniform vec4 tint;
+```
+
+Configure the values in this sequence:
+
+1. One **Add Uniform** entry for `speed`.
+2. Four consecutive entries for `tint.r`, `tint.g`, `tint.b`, and `tint.a`.
 
 ![uniform](animation_gifs/uniform.avif)
 
 :::warning
-If the order does not match, the shader will receive incorrect values, which can result in broken visuals or unexpected behavior.
+The names do not control binding. If the number or order of float slots differs, values reach the wrong uniforms and the shader may render incorrectly or fail.
 :::
 
-#### Everything becomes floats
+#### ShaderWrapper texture sampler
 
-When you have the following uniform in shader file:
+In addition to the float prefix, a custom ShaderWrapper needs an image sampler for its child texture. Declare the first sampler using the conventional name `uTexture`:
 
-```
-uniform vec4 color;
-```
-
-FlutterFlow treats it as:
-
-```
-float r
-float g
-float b
-float a
+```glsl
+uniform sampler2D uTexture;
 ```
 
-#### Default uniforms
+FlutterFlow binds the rendered child image to sampler index 0. A ShaderFill has no child texture and does not require this sampler.
 
-Even if you don’t write them, FlutterFlow **always passes these first**:
+:::note
 
-```
-uniform vec2 uSize;
-uniform float uTime;
-```
+Uniform vectors occupy multiple float slots: `vec2` uses two, `vec3` uses three, and `vec4` uses four. FlutterFlow's custom-uniform controls provide Double values, so add one entry per slot.
 
-So your shader MUST assume these exist at the top. Meaning your file should start like:
-
-```
-uniform vec2 uSize;
-uniform float uTime;
-
-uniform float speed;
-uniform vec4 color;
-```
+:::
 
 ## Use Shadertoy Shaders
 
@@ -422,107 +392,24 @@ uniform vec4 color;
 
 The [Shadertoy to Flutter skill](https://github.com/FlutterFlow/shadertoy_to_flutter_skill) helps convert Shadertoy GLSL into Flutter-compatible `.frag` shaders. It rewrites the shader structure, maps Shadertoy uniforms to Flutter uniforms, handles texture/audio channels where possible, and produces a `.frag` file that can be uploaded into your FlutterFlow project.
 
-**Step 1: Download Skill**
+**Step 1: Get the conversion skill**
 
-The skill teaches AI Agents how to convert Shadertoy shaders accurately and safely for Flutter. The skill used for this workflow is: **`shadertoy-to-flutter`**. Download it from the [GitHub repo](https://github.com/FlutterFlow/shadertoy_to_flutter_skill).
+Open the [`shadertoy-to-flutter` repository](https://github.com/FlutterFlow/shadertoy_to_flutter_skill) and follow its current README. Keep `SKILL.md` together with its `references` and `scripts` directories; those files contain the Flutter GLSL constraints, uniform mappings, templates, and validation workflow.
 
-The skill contains the following files:
+If your AI agent supports packaged `SKILL.md` instructions, install or add the repository using that agent's current supported mechanism. Product menus and commands change, so use the agent vendor's current documentation rather than relying on a copied UI sequence. If installation is unavailable, attach the repository files to the conversation and explicitly ask the agent to follow `SKILL.md`.
 
-- `SKILL.md`: Main instruction file containing the shader conversion workflow and rules.
-- `references/flutter_glsl_constraints.md`: Flutter GLSL limitations, unsupported features, uniform rules, and texture handling.
-- `references/uniform_mapping.md`: Maps Shadertoy uniforms to Flutter equivalents (e.g. `iTime → uTime`).
-- `references/templates.md`: Example fill/wrap shader templates and sample conversions.
-- `references/noise_library.md`: Noise/hash helper functions for replacing Shadertoy noise textures.
-- `scripts/package-skill.sh`: Packages the skill into a distributable zip file.
+**Step 2: Ask the agent to convert the shader**
 
-**Step 2: Install Skill**
-
-You can use this skill with AI agents such as Claude, Codex, or another AI assistant that can read `SKILL.md` and follow its instructions.
-
-**Install in Claude**
-
-1. Open the **Claude Desktop app**.
-2. Go to **Customize**. Select **Skills** from the left sidebar.
-3. Click the **+** button at the top of the Skills panel. Choose **Upload a skill**.
-4. Upload the Shadertoy skill as a .zip file or skill folder.
-
-The uploaded skill must include:`SKILL.md`. It can also include supporting folders such as: `references/` and `scripts/`
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/rAA7cg7SbMubCpyBErNC?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-**Install in Codex**
-
-1. Open the **Codex Desktop app**.
-2. In the message box, type: `/sk`
-3. Select **Skill Installer** from the skill suggestions list.
-4. Ask Codex to install the Shadertoy skill directly from GitHub:
-
-```
-Install this skill https://github.com/FlutterFlow/shadertoy_to_flutter_skill
-```
-
-Codex will run the Skill Installer and install the skill into your local Codex folder. After installation finishes, restart Codex.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/cGbr1t7Oo2XJv5bp88J5?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
-
-**Step 3: Using Skill**
-
-You can use the skill with either a Shadertoy URL or a local .glsl file.
+Provide either a Shadertoy URL or a local `.glsl` file. Explicitly ask the agent to use the `shadertoy-to-flutter` instructions and to report whether it produced a ShaderFill or ShaderWrapper shader.
 
 **Option A: Convert a Shadertoy URL**
 
 In the prompt, provide the Shadertoy URL and ask to convert into `.frag` file, for example:
 
 ```
-[invoke shadertoy-to-flutter skill] convert this Shadertoy shader into a Flutter .frag file:
+Use the shadertoy-to-flutter skill to convert this Shadertoy shader into a
+Flutter .frag file. Validate the result and list its FlutterFlow uniforms in
+binding order:
 [shadertoy-url]
 ```
 
@@ -533,7 +420,9 @@ In the prompt, provide the Shadertoy URL and ask to convert into `.frag` file, f
 Open the Shadertoy shader you want to use, copy the shader code, and save it as a `.glsl` file. Then attach the file and use a prompt such as:
 
 ```
-[invoke shadertoy-to-flutter skill] convert this file into a Flutter .frag file
+Use the shadertoy-to-flutter skill to convert the attached file into a Flutter
+.frag file. Validate the result and list its FlutterFlow uniforms in binding
+order.
 ```
 
 <div style={{
@@ -541,9 +430,8 @@ Open the Shadertoy shader you want to use, copy the shader code, and save it as 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/b9lZQ81Fq3tHpq5N50Z6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/b9lZQ81Fq3tHpq5N50Z6?embed&show_copy_link=true" title="Shaders interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -567,21 +455,35 @@ Open the Shadertoy shader you want to use, copy the shader code, and save it as 
 You can also paste the shader code directly into the prompt, for example:
 
 ```
-Use the /shadertoy-to-flutter skill and convert this shader to a Flutter .frag file:
+Use the shadertoy-to-flutter skill and convert this shader to a Flutter .frag
+file. Validate the result and list its FlutterFlow uniforms in binding order:
 
 [paste shader code]
 ```
 
 :::
 
-**Step 4: Upload .frag File to FlutterFlow Project**
+**Step 3: Upload the `.frag` file**
 
-Upload the `.frag` file generated in the previous step to the **Shader Asset** picker in FlutterFlow and run your app. If required, also [add Uniform](#adding-uniforms) to define input values for your shader.
+Upload the generated file with the **Shader Asset** picker, reproduce the reported custom values with [Add Uniform](#adding-uniforms), and run the app. If compilation or rendering fails, give the exact error and generated file back to the agent for another validation pass.
 
 ### Best Practices
 
-- Keep the generated .frag file unchanged unless you know GLSL well.
+- Keep the generated `.frag` file unchanged unless you know GLSL well.
 - Always check the uniform order before wiring values in FlutterFlow or Dart.
-- Prefer fill shaders when possible because they are easier to use.
+- Prefer ShaderFill when the effect does not need to sample existing UI.
 - Use wrap shaders only when the shader needs an image, scene, or app UI texture.
 - Avoid adding extra uniforms unless you really need user control.
+- Test animation smoothness and memory use on representative low- and high-end devices. Shader cost depends on resolution, frame rate, effect complexity, and target GPU.
+- Do not use motion, distortion, or color alone to communicate essential state. Provide a readable static state or another accessible cue when the effect is unavailable or unsuitable.
+
+### Troubleshooting custom shaders
+
+| Symptom | What to check |
+| --- | --- |
+| The app reports a shader compilation error | Confirm Flutter runtime-effect syntax and unsupported GLSL features against the conversion skill references. Give the complete compiler message to the agent that generated the file. |
+| The effect renders with incorrect values | Confirm `uSize`, then `uTime`, then every custom float slot in exact order. A vector needs one FlutterFlow entry per component. |
+| A ShaderWrapper renders no child content | Confirm the shader declares a sampler and samples the child texture bound at sampler index 0. |
+| The custom effect does not appear in the builder | This is expected. Use Test or Run mode; ShaderFill shows a placeholder and ShaderWrapper shows its unmodified child in the builder. |
+| A touch effect does not advance | Use a preset that supports **Interactive**, enable it, and set time behavior to **Continuous**. |
+| A Shader Animation action appears to do nothing | Select a shader on the same page or component, use an animating configured mode, and run **Start Animation**. The action is not available in Action Blocks. |

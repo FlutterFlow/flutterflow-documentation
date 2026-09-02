@@ -1,12 +1,26 @@
 ---
 slug: /integrations/firebase/connect-to-firebase
 title: Connect to Firebase
-description: Learn how to integrate Firebase with your FlutterFlow app to add user authentication, cloud storage, real-time databases, and more.
-tags: [Firebase, Integration, Cloud Storage, Real-Time Database]
+description: >-
+  Learn how to integrate Firebase with your FlutterFlow app to add user
+  authentication, cloud storage, real-time databases, and more.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 0
-keywords: [FlutterFlow, Firebase, Integration, User Authentication, Cloud Storage, Real-Time Database]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Integration
+  - User Authentication
+  - Cloud Storage
+  - Real-Time Database
+  - connect a FlutterFlow project to Firebase
+ai_queries:
+  - connect a FlutterFlow project to Firebase
+last_verified: 2026-09-02
 ---
-
 # Connect to Firebase
 
 Firebase integration in FlutterFlow provides an effortless way to enhance your apps with powerful features such as user authentication, cloud storage, real-time databases, and more. This setup guide will walk you through integrating Firebase with FlutterFlow, empowering you to easily create feature-rich, scalable applications.
@@ -23,7 +37,7 @@ Hit **+ Create Project**. You’ll see a popup where you can confirm your projec
 
 #### Step 3: Connect Your Google Account
 Choose **Create** or **Sign in with Google** to link your Firebase account.
-If asked, you must grant the access requested from 'flutterflow.io' to be able to create and configure the Firebase project on your behalf. Here, you can **Select all** and click **Continue**.
+If Google asks for permission, review the requested scopes and grant the access required for FlutterFlow to create and configure the project on your behalf. Use an account and organization policy appropriate for the project; do not grant access from an unrelated or personal production account without reviewing the permissions.
 
 <img src="/img/firebase/warning-firebase.png" alt="Alt text" class="small-image"/>
 
@@ -31,11 +45,11 @@ Once initiated, FlutterFlow will handle the rest of the project creation in the 
 
 Here's a quick walkthrough:
 <iframe src="https://demo.arcade.software/C4Db1hkZU3Dyqd5VmY99?embed&show_copy_link=true" title="Shopping App - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
-As soon as the process is completed, you will see the following view in your Firebase Settings dashboard. 
+As soon as the process is completed, you will see the following view in your Firebase Settings dashboard.
 <img src="/img/firebase/firebase-created-managed.png" alt="Firebase Project Created" class="landscape-image"  />
 
 #### Enable Firebase Authentication
-If you want to use the Firebase Authentication in your app or the Firebase Content Manager, you must enable the authentication in the Firebase console and enable the 'Email/Password' sign-in.
+If your app uses Firebase Authentication, enable Authentication in the Firebase console and configure only the sign-in providers your app needs. The Firestore Content Manager connection also requires Email/Password sign-in to be enabled for its managed access flow.
 
 #### Enable Firebase Storage
 If you plan to use Firebase storage in your app, click on the Enable Storage on Firebase and enable it on Firebase console.
@@ -77,8 +91,11 @@ In the dialog, scroll down to **Setup Firebase**, check that option, and click *
 8. Select **+ Add Another Role** again. Under **Select A Role**, search for **Cloud Functions Admin**. Select **Cloud Functions Admin**.
 
 :::info
-Note: The option to add Cloud Functions Admin may only show up if you are on a Firebase Blaze plan. In addition, you may need to  [enable cloud functions](https://console.cloud.google.com/marketplace/product/google/cloudfunctions.googleapis.com) first.
-Cloud Functions Admin permissions are required for several FlutterFlow features (e.g., Push Notifications). Adding this Cloud Functions Admin is optional, but not doing so will prevent you from using any functions that require Cloud Functions.
+Cloud Functions Admin permissions are required for FlutterFlow features that deploy Cloud Functions, such as Push Notifications. This role is optional if you do not use those features. Enabling the Cloud Functions API and upgrading the Firebase project to the Blaze plan are separate prerequisites for deploying functions; the billing plan does not control whether the IAM role appears.
+:::
+
+:::caution[Grant only required project access]
+These roles let FlutterFlow configure resources in this Firebase project. Grant them only to the documented FlutterFlow principal and only on the intended project. Periodically review project members and remove access when FlutterFlow no longer needs to manage the project.
 :::
 
 #### Connect and autogenerate files
@@ -98,7 +115,7 @@ Do not close or refresh the page while the files are being generated.
 
 ## Connect to Firebase on Creating a New FlutterFlow Project
 
-If you know you'll be integrating Firebase as you create your project, you can do the following: 
+If you know you'll be integrating Firebase as you create your project, you can do the following:
 
 #### Step 1: Create a new project and enable Firebase
 
@@ -106,21 +123,21 @@ First, create a new project, and while doing so, keep the Setup Firebase option 
 
 <img src="/img/firebase/create-project-enable-firebase.png" alt="Alt text" class="small-image"/>
 
-#### Step 2: Connect to Firebase  
+#### Step 2: Connect to Firebase
 
-If you'd like FlutterFlow to create a Firebase project for you, click **"+ Create Project"** and follow the [related steps](#create-a-new-firebase-project-from-flutterflow). Alternatively, if you wish to connect an existing Firebase project manually, please follow the [manual steps here](#connect-an-existing-firebase-project-manually). 
+If you'd like FlutterFlow to create a Firebase project for you, click **"+ Create Project"** and follow the [related steps](#create-a-new-firebase-project-from-flutterflow). Alternatively, if you wish to connect an existing Firebase project manually, please follow the [manual steps here](#connect-an-existing-firebase-project-manually).
 
 
 #### Step 3: Enable Authentication
 
-Turn on the Enable Authentication to allow users to log into your app using various sign-in methods, including email and password, social media providers, and even phone number. 
+Turn on the Enable Authentication to allow users to log into your app using various sign-in methods, including email and password, social media providers, and even phone number.
 
-**Note:** this step only enables authentication. You will need to complete an additional setup to implement authentication logic later. 
+**Note:** this step only enables authentication. You will need to complete an additional setup to implement authentication logic later.
 
 <img src="/img/firebase/enable-auth-option.png" alt="Enable Authentication During Project Creation" class="small-image"  />
 
 
-## Enable Firestore for Database Access 
+## Enable Firestore for Database Access
 
 If you plan to use Firestore Database as your backend, follow these additional steps to enable Firestore. This will allow you to create collections and add documents directly from FlutterFlow.
 
@@ -130,14 +147,12 @@ To configure Firestore Database:
 
 <img src="/img/firebase/firebase-db-enable.png" alt="Alt text"  />
 
-2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next. 
+2. Next, set your **Firebase security rules**. Prefer production mode and deploy rules that match your app's access model. If you temporarily select **Start in test mode** for a disposable prototype, treat the database as publicly accessible during the test window and replace those rules before adding real user data or sharing the app.
 
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
-:::info
-We recommend updating your Firebase security rules before deploying your app. Please see [this 
-link](../database/cloud-firestore/firestore-rules.md) for additional information on 
-Firestore security rules.
+:::warning
+Test-mode rules are not production security. Configure, test, and deploy [Firestore Security Rules](../database/cloud-firestore/firestore-rules.md) before storing sensitive data. Authentication alone does not restrict a collection unless the rules enforce the intended authorization.
 :::
 
 3. Next, you will need to choose the location where your Firestore data will be stored. From the dropdown, select a location and then select Enable. Please see this link for additional information on Firebase locations.
@@ -162,18 +177,21 @@ Here are the steps to deploy indexes.
 If you add a filtering/ordering on the query or change the existing filtering/ordering settings, you should deploy the Firestore Indexes again.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1abddd1120db477da2c085dbc6b7a742?sid=5b161c8b-3957-4ac9-b27f-dc5ebc03f550" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Connect to Firebase interactive tutorial" src="https://www.loom.com/embed/1abddd1120db477da2c085dbc6b7a742?sid=5b161c8b-3957-4ac9-b27f-dc5ebc03f550" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
 
 ## Enable Billing
 
-If you want to deploy [Cloud Functions](https://firebase.google.com/products/functions) (e.g., Braintree payments, Push Notifications) or use [Firebase Cloud Storage](https://firebase.google.com/products/storage), you will need to enable billing for your Firebase project. Please follow these steps to enable billing:
+To deploy [Cloud Functions](https://firebase.google.com/products/functions) used by features such as Braintree payments or Push Notifications, or to use [Cloud Storage for Firebase](https://firebase.google.com/products/storage), place the project on the pay-as-you-go Blaze plan. Since February 3, 2026, Cloud Storage for Firebase requires Blaze to provision or retain access to buckets; eligible no-cost usage can still apply on Blaze.
 
 1. From the Firebase dashboard of your project, navigate to the far left menu. Under Build, select **Functions** and then select **Upgrade project**.
 
-2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a new page to provide your payment information. Otherwise, you can set a project budget. Please see [this link](https://firebase.google.com/pricing) for additional information on Firebase pricing.
+2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a page to provide payment information. Otherwise, you can select an existing billing account. Configure budgets and alerts, but remember that budget alerts notify you and do not automatically cap usage or charges. Review [Firebase pricing](https://firebase.google.com/pricing) and the [current Cloud Storage billing requirements](https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024).
 
 <img src="/img/firebase/billing.png" alt="Alt text"  />
+
+## Related documentation
+
+See [App Check](/integrations/firebase/app-check) for a related FlutterFlow workflow.

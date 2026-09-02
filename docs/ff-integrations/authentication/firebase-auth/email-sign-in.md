@@ -2,11 +2,18 @@
 slug: /integrations/authentication/firebase/email-login
 title: Email Login
 description: Learn how to add Email Login in your FlutterFlow app.
-tags: [Email Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 3
-keywords: [FlutterFlow, Email Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Email Login
+  - Authentication
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 # Email Login using Firebase
 
 :::info[Prerequisites]
@@ -33,7 +40,7 @@ Before getting started with this section:
 
 In FlutterFlow, you can utilize the Page Templates feature to create a new
 authentication page that includes both a "Create Account" component and a "Log
-In" component. 
+In" component.
 
 This setup aligns with Firebase's authentication process, which
 requires users to first create an account using their email and then allows them
@@ -46,10 +53,9 @@ It's about establishing a user's credentials and granting them access for the
 first time. This action involves collecting necessary information such as email,
 password, and potentially other user-specific details like name or phone number.
 
-The primary goal is to register and store new user data securely in your backend
-or authentication service (like Firebase). This process typically includes steps
-like validating the data format (e.g., email format), checking for unique
-usernames or email addresses etc.
+The primary goal is to register credentials with Firebase Authentication. Never
+write passwords to Firestore, App State, logs, analytics, or your own user-profile
+document. Firebase handles password storage and credential validation.
 
 To enable this in FlutterFlow, follow these steps:
 
@@ -95,7 +101,7 @@ to [**Authentication Methods**](../authentication-methods.md)
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true"
         title="Send Email Verification Link"
         style={{
@@ -116,11 +122,13 @@ to [**Authentication Methods**](../authentication-methods.md)
 </div>
 
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 The user should receive an email verification link in their inbox. Upon successful verification,
 they will see a success message.
+
+Email verification confirms access to the mailbox; it does not by itself establish a person's real-world identity. Enforce any `emailVerified` requirement in both the user experience and the backend authorization rules that protect sensitive operations.
 
 ## Log In [Action]
 
@@ -157,12 +165,3 @@ To let users log out of your app, you can use the [**Logout**](auth-actions.md#l
 To verify that you have successfully added the email authentication and that
 users are being created, you can head over to your **Firebase project >
 Authentication > Users** and verify the user entries.
-
-
-
-
-
-
-
-
-

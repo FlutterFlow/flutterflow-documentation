@@ -2,8 +2,20 @@
 title: Creating a Component
 sidebar_position: 1
 slug: creating-components
-keywords: [Custom Components]
-tags: [Components]
+keywords:
+  - Custom Components
+  - Creating a Component
+  - Creating Components
+  - create and reuse a component in FlutterFlow
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  Components are reusable widgets you create to meet the specific needs of your
+  app.
+ai_queries:
+  - create and reuse a component in FlutterFlow
 ---
 import setComponentParam from '@site/static/img/set-component-parameter.png';
 import levComponentParam from '@site/static/img/leverage-component-parameter.png';
@@ -23,7 +35,7 @@ To create a component from scratch, click the **Add Button** in the **Page Selec
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/shoUH86rXsdpAxtlCOKq?embed&show_copy_link=true"
         title="Create Component From Scratch"
         style={{
@@ -56,7 +68,7 @@ entire widget tree you want to convert, then select **Convert to Component.**
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/if0fCrWpn6wVDdcGbW0E?embed&show_copy_link=true"
         title="Convert into a component"
         style={{
@@ -87,7 +99,7 @@ apply to your project in seconds, saving time.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/z4aoeN7TK0Zxp6EseLuD?embed&show_copy_link=true"
         title="Create from template"
         style={{
@@ -109,7 +121,7 @@ apply to your project in seconds, saving time.
 
 ## Generate with Designer
 
-You can quickly create a component with [FlutterFlow Designer](https://designer.flutterflow.io/) by describing what you want in natural language. Designer uses your description along with your project context, to build the component with relevant widgets. 
+You can quickly create a component with [FlutterFlow Designer](https://designer.flutterflow.io/) by describing what you want in natural language. Designer uses your description along with your project context, to build the component with relevant widgets.
 
 <div style={{
     position: 'relative',
@@ -117,7 +129,7 @@ You can quickly create a component with [FlutterFlow Designer](https://designer.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/VAsk3ElbFb9ehAV2e94k?embed&show_copy_link=true"
         title="Generate with Designer"
         style={{
@@ -156,7 +168,7 @@ Currently, FlutterFlow doesn't support importing SVG elements from Figma frames.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/V4kUtFFezchW03HIeqyY?embed&show_copy_link=true"
         title="Import from Figma"
         style={{
@@ -203,7 +215,7 @@ To create a component parameter, go to the root widget in the component's widget
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/chgEkWJpUFAIUzoB0LuG?embed&show_copy_link=true"
         title="Adding a Parameter"
         style={{
@@ -237,7 +249,7 @@ respective widgets and action triggers.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/ixR32sxe5W97bEaS1hTt?embed&show_copy_link=true"
         title="Bind Parameters in Components"
         style={{
@@ -279,7 +291,7 @@ For component actions, you can establish specific behaviors or functions that ar
 certain events related to the component's lifecycle, such as **On Initialization**.
 
 :::info
-To learn more about component lifecycle and adding **On Initialization** action to your component 
+To learn more about component lifecycle and adding **On Initialization** action to your component
 [**refer here.**](component-lifecycle.md)
 :::
 
@@ -292,8 +304,8 @@ actions (e.g., clicking a button) or external events (e.g., receiving new data f
 Effective state management ensures that components dynamically update their UI to reflect changes in
 state, providing a responsive user experience.
 
-:::info 
-Learn how to **[Create a State variable](component-lifecycle.md#creating-a-component-state)** 
-for your components and how to 
+:::info
+Learn how to **[Create a State variable](component-lifecycle.md#creating-a-component-state)**
+for your components and how to
 **[Update them](component-lifecycle.md#update-component-state-action)**.
 :::

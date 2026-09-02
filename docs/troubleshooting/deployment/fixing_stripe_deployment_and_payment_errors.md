@@ -1,7 +1,18 @@
 ---
-keywords: ['deployment', 'payment', 'issues']
+keywords:
+  - deployment
+  - payment
+  - issues
 slug: /troubleshooting/deployment/fixing-stripe-deployment-and-payment-errors
 title: Fixing Stripe Deployment & Payment Errors
+description: >-
+  Integrating Stripe for payment processing in FlutterFlow can significantly
+  simplify monetization.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
+last_verified: 2026-09-02
 ---
 # Fixing Stripe Deployment & Payment Errors
 
@@ -21,35 +32,35 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
     A defined Google Cloud Platform (GCP) location for your Firebase project ensures the correct regional operation of services. The absence of a set location can hinder the deployment process.​
 
-    ![](../assets/20250430121145711998.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121145711998.png)
 
 4. **Firebase Project Permissions**
 
     Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can also reference the **[setup guide](/integrations/firebase/connect-to-firebase/)**.​
 
-    ![](../assets/20250430121145949036.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121145949036.png)
 
 5. **Correct Merchant Code**
 
     Use the correct 3-letter merchant country code (example., "GBR" for the United Kingdom vs. "UK"). Incorrect codes can lead to failed transactions. For accurate codes, refer to **[IBAN Country Codes](https://www.iban.com/country-codes)**.​
 
-    ![](../assets/20250430121146161973.png)
-    
-    ![](../assets/20250430121146400049.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146161973.png)
 
-6. **Test and Live Keys**
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146400049.png)
 
-    Both Test and Live Stripe keys must be configured in your project settings, regardless of the development stage. This ensures Stripe's API can properly interact with your application.​
+6. **Test and Live Modes**
 
-    ![](../assets/20250430121146604033.png)
+    Configure and test in Stripe test mode first, then add live credentials only when you are ready to release. Keep secret keys in FlutterFlow's server-side integration field or an approved secret manager, never in client code or logs.
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146604033.png)
 
 7. **Consistent Region Settings**
 
     Align your Firebase project's region with that of your FlutterFlow settings to prevent deployment failures. Inconsistencies can cause function deployment issues.​
 
-    ![](../assets/20250430121146854018.png)
-    
-    ![](../assets/20250430121147068781.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146854018.png)
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147068781.png)
 
 ## Addressing Payment Transaction Issues
 
@@ -63,42 +74,26 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
 3. **Price Format**
 
-    Prices should be submitted to Stripe in **cents**, not **dollars**. Utilize a custom function to convert dollar values to cents for accurate transaction processing.​To set a price in cents to Stripe, you can simply use a custom function that takes the price in dollars and returns it as cents.​
-
-    Here is a custom code you can use to make this calculation in a custom function: 
-
-    ```js
-    int dollarToCent(double amount) {
-    // Convert the amount to a string
-    String st = amount.toString();
-
-    // Remove any dots or commas
-    st = st.replaceAll('.', '');
-    st = st.replaceAll(',', '');
-
-    // Convert the cleaned string to an integer
-    return int.parse(st);
-    }
-    ```
-
-    // Input: 14.99
-
-    // Output: 1499 cents
+    Stripe expects an integer in the currency's smallest unit. Do not remove punctuation from a floating-point string: that breaks values such as `14.9`, locale-formatted input, and zero-decimal currencies. Select a server-owned product/Price ID where possible, or parse a validated decimal amount and convert according to the currency's exponent on a trusted server.
 
 
 4. **CORS Error Resolution**
 
-    A CORS error during payment initiation often indicates a permissions issue with your Firebase function. Verify and adjust the `allUsers` permission for your Stripe function in the Firebase console to resolve this error.​
+    CORS and IAM are different controls. First verify the exact origin, preflight response, callable-versus-HTTP protocol, authentication token, and function logs. Do not grant `allUsers` merely to silence a CORS error; expose only the endpoint intended to be public and enforce authentication, authorization, validation, rate limits, and server-side price calculation.
 
-    ![](../assets/20250430121147385978.png)
-    
-    ![](../assets/20250430121147683388.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147385978.png)
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147683388.png)
 
 5. **Subscriptions**
 
     Currently, Apple and Google restrict Stripe subscriptions on mobile platforms. To expand your subscription capabilities, you can use alternative solutions like RevenueCat for mobile apps and direct API calls for web applications.​
 
-:::info[**For further information and troubleshooting:**] 
+6. **Verify Fulfillment**
+
+    Verify Stripe webhook signatures and retrieve authoritative payment state on the server. Make order fulfillment idempotent and never trust the client success callback as proof that funds settled.
+
+:::info[**For further information and troubleshooting:**]
 - [Stripe Documentation](https://stripe.com/docs)
 - [Stripe Payments](https://stripe.com/payments)
 - [FlutterFlow University](https://university.flutterflow.io/)

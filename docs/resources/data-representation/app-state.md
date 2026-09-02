@@ -1,16 +1,28 @@
 ---
 slug: /resources/data-representation/app-state
 title: App State
-description: Learn how to effectively utilize App State Variables in FlutterFlow to maintain and manage global application states across all pages and components.
-tags: [App State, FlutterFlow, Data Representation]
+description: >-
+  Learn how to effectively utilize App State Variables in FlutterFlow to
+  maintain and manage global application states across all pages and components.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
 sidebar_position: 5
-keywords: [App State, FlutterFlow, Data Representation]
+keywords:
+  - App State
+  - FlutterFlow
+  - Data Representation
+  - store a global value in FlutterFlow app state
+ai_queries:
+  - store a global value in FlutterFlow app state
 ---
-
-
 # App State
 
-App state variables are specific variables that hold the current state of an application. They can be accessed and modified throughout the entire application across all pages and components. This type of variable can be useful for storing data that needs to be shared between different parts of the app, such as user preferences and authentication tokens.
+App State variables hold values that need to be read or changed across pages and components. Good examples include a shopping cart, an onboarding-complete flag, or a user-selected display preference.
+
+Do not put API keys, passwords, access tokens, or other secrets in App State. Persisted values are stored on the user's device, and values can still be exposed while the app is running or making network requests. Use a backend or another purpose-built secret-management mechanism for secrets.
 
 ![app-state-variables.avif](../imgs/app-state-variables.avif)
 
@@ -20,11 +32,11 @@ App state variables should not be used for temporary data that doesn't impact th
 
 ## App State Variables
 
-Let’s see how you can manage the app state variable using an example of adding items to a cart in a shopping app. 
+Let’s see how you can manage the app state variable using an example of adding items to a cart in a shopping app.
 
 ### Create App State variable
 
-Head over to the left-side navigation menu and follow the steps below to create a variable.
+Open **App Values > App State** from the left-side navigation menu, then select **Add App State Variable**.
 
 <div style={{
     position: 'relative',
@@ -32,9 +44,8 @@ Head over to the left-side navigation menu and follow the steps below to create 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/QjdQ0cTmGDqUeG6F1JMh?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/QjdQ0cTmGDqUeG6F1JMh?embed&show_copy_link=true" title="App State interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -54,9 +65,13 @@ Head over to the left-side navigation menu and follow the steps below to create 
 
 #### App State Properties
 
-- **isList:** Whether this field is a list type (e.g List of String or List of Custom Data Type)
-- **Persisted:** Whether this app state is saved to disk so that it can be loaded when the app is restarted. Otherwise the field will be reset on restart.
- 
+- **Field Type:** The kind of value the variable stores. The available types are intentionally narrower than Page or Component State types.
+- **Is List:** Whether the variable stores one value or a list of values, such as a list of strings or custom data type objects.
+- **Persisted:** Whether the value is saved on the device and restored after the app restarts. If this is off, the variable resets when the app restarts.
+- **Initial Value:** The value used before any action updates the variable or, for a persisted variable, when no stored value exists.
+
+When at least one field is persisted, **Secure persisted fields** can store persisted App State in encrypted local storage. This protects data at rest only; it does not make secrets safe to embed in a client app or send over the network. Custom Class and Custom Enum App State fields cannot be persisted.
+
 :::tip[Generated Code]
   Curious about what happens when the **Persisted** toggle is on? Check out the [**Generated Code**](../../generated-code/state-mgmt-gen-code.md#persisting-app-state) guide.
  :::
@@ -64,7 +79,7 @@ Head over to the left-side navigation menu and follow the steps below to create 
 
 ### Use App State
 
-The variable can now be accessed via set from variable menu. For example, on the cart page, you can loop through the app state variable to display each item.
+The variable can now be accessed through **Set from Variable > App State**. For example, on the cart page, you can generate children from a cart list and display each item.
 
 ![access-app-state-variable.avif](../imgs/access-app-state-variable.avif)
 
@@ -78,9 +93,9 @@ When you update the app state via the Action Flow Editor, you will find the foll
 #### Update Type
 How this app state update will affect your app.
 
-- **Rebuild All Pages:** Rebuilds all pages in the app when this app state is updated. 
-- **Rebuild Current Page:** Rebuilds only the current page when this app state is updated. 
-- **No Rebuild:** No rebuild is required. 
+- **Rebuild All Pages:** Rebuilds the active pages that listen to App State.
+- **Rebuild Current Page** or **Rebuild Current Component:** Rebuilds the page or component containing the action, depending on where the action runs.
+- **No Rebuild:** Updates the field without rebuilding a page or component. Use this only when the UI does not need to react immediately or another event will trigger the required rebuild.
 
 :::tip[Generated Code]
 Curious about how state changes are handled internally when you choose different **Update Type** options? Explore the detailed [**FFAppState**](../../generated-code/ff-app-state.md) guide.
@@ -94,9 +109,8 @@ Here's a quick guide to updating the app state variable. We need to add an actio
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/FKv2dXq4jTjjJVLy6nxu?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/FKv2dXq4jTjjJVLy6nxu?embed&show_copy_link=true" title="App State interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -125,7 +139,7 @@ If you want to rebuild a page or component without updating any state variables,
 Why are some variable types not available in App State?
 </summary>
 <p>
-Certain variable types, e.g., **Firestore Documents** and **Supabase Row**, can be used in Page State or Component State, but not in App State. This is because App State variables are designed to be global, meaning they stay in memory throughout the app. When App State variables are marked as persisted, the variable’s value is saved to the device’s local storage.
+Certain variable types, such as **Firestore Document**, **Supabase Row**, and **SQLite Row**, can be used in Page State or Component State but not in App State. App State is global and remains in memory while the app runs; persisted fields are also serialized to device storage.
 
 Storing large or complex data types like documents in App State could lead to **performance or size issues**, especially on lower-end devices. For this reason, FlutterFlow limits App State to lightweight types, while Page/Component State allows for more flexibility since their scope is smaller and temporary.
 

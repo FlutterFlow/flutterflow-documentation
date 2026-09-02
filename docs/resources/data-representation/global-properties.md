@@ -1,15 +1,24 @@
 ---
 slug: /resources/data-representation/global-properties
 title: Global Properties
-description: Discover the role of Global Properties in FlutterFlow, which provide universal access across all pages of your app to facilitate common tasks and enhance functionality.
-tags: [Global Properties, FlutterFlow, Data Representation]
+description: >-
+  Discover the role of Global Properties in FlutterFlow, which provide universal
+  access across all pages of your app to facilitate common tasks and enhance
+  functionality.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
 sidebar_position: 7
-keywords: [Global Properties, FlutterFlow, Data Representation]
+keywords:
+  - Global Properties
+  - FlutterFlow
+  - Data Representation
 ---
-
 # Global Properties
 
-Global properties are **built-in variable**s in FlutterFlow that you can use across all pages of your app. These properties are predefined by FlutterFlow, meaning you cannot create or modify them yourself. They are designed to help you perform common tasks efficiently, no matter what type of app you’re developing.
+Global properties are **built-in variables** that FlutterFlow exposes through **Set from Variable**. You cannot create, rename, or update them. Their values come from the running app, device, router, authentication configuration, or project settings.
 
 For example, global properties can be used to redirect users to another page if they are not logged in or to enable specific functionality based on the platform your app is running on.
 
@@ -25,7 +34,7 @@ Global properties are built-in variables exposed by FlutterFlow. You can't creat
 
 ## List of Global Properties
 
-A list of all the available global properties is as follows:
+The complete set of global properties is below. Some entries appear only when the corresponding project feature is enabled.
 
 - **Is User Logged In:** Indicates whether a user is currently logged into the app. Useful for providing exclusive features to registered users or adjusting UI elements based on login status. This property is only accessible if you have enabled authentication of any type.
 
@@ -33,22 +42,29 @@ A list of all the available global properties is as follows:
 
 - **Current Device Location:** Returns the user's current location, ideal for updating their position on Google Maps or storing it in a backend database. [Check out examples](#current-device-location) on how to retrieve and save the current device location.
 
-- **Link To Current Page:** Provides the [Deep Link](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#deep-link) of the current page.
+- **Link To Current Page:** Provides the [Deep Link](../../ff-concepts/navigation-routing/deep-dynamic-linking.md#deep-link) of the current page. It is available for routed projects when Firebase Dynamic Links is not enabled.
 
 - **Current Route Path**: Provides the route name of the currently active or visible page in your app. This property is especially helpful in scenarios where you want to adjust or block specific actions if the active page isn't the one you expect. For example, if you launch the app through a push notification, the home page might still run in the background, even if the notification directs you to a different page. Using this property, you can prevent unnecessary action triggers, such as On Page Load from the home page. See details on avoiding [this issue](https://github.com/FlutterFlow/flutterflow-issues/issues/2765#issuecomment-2598915946).
 - **Current Route Stack:** Returns a list of route names representing every active page in your app’s navigation stack. It’s helpful for understanding how many pages deep the user is and what sequence of pages they’ve visited. You may need this data to manage custom back navigation, breadcrumb displays, or logging analytics. For instance, in an e-commerce app, you could examine the route stack to see if the user arrived at the checkout page from a specific page and tailor your promotional messages or apply discount accordingly.
 - **Fraction of Screen Width:** Determines the proportional width of the device's screen.
 - **Fraction of Screen Height:** Determines the proportional height of the device's screen.
-- **Screen Width:** Provides the total width of the current device's screen in pixels.
-- **Screen Height:** Provides the total height of the current device's screen in pixels.
+- **Screen Width:** Provides the current screen width in Flutter logical pixels.
+- **Screen Height:** Provides the current screen height in Flutter logical pixels.
 - **Is Android:** Determines if the user is accessing the app on an Android device. See [example](#is-androidiosweb).
 - **Is iOS:** Determines if the user is accessing the app on an iOS device. See [example](#is-androidiosweb).
 - **Is Web:** Determines if the user is accessing the app through a web browser. See [example](#is-androidiosweb).
 - **Is Debug Mode:** Indicates if the app is currently running in debug mode, useful for displaying features or performing actions only during debugging.
 - **Is Dark Mode:** Checks if the app's current theme mode is set to dark.
 - **Is Light Mode:** Checks if the app's current theme mode is set to light.
-- **Is On-Screen Keyboard Visible:** Checks if the on-screen or soft keyboard is visible. This is helpful in making UI adjustments if keyboard is visible on screen. See a [quick example](#is-on-screen-keyboard-visible). 
-- **Current Environment**: Returns the current [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) value.
+- **Is On-Screen Keyboard Visible:** Checks if the on-screen or soft keyboard is visible. This is helpful in making UI adjustments if keyboard is visible on screen. See a [quick example](#is-on-screen-keyboard-visible).
+- **Current Environment**: Returns the current [development environment](../../testing-deployment-publishing/development-environments/development-environments.md) value. It appears when the project defines more than one environment.
+
+Availability rules to remember:
+
+- **Is User Logged In** requires an authentication configuration.
+- **Current Route Path** requires routing.
+- **Is Dark Mode** and **Is Light Mode** require dark mode in the project theme.
+- **Current Device Location** causes the generated app to request location permission where required by the platform.
 
 :::tip[Generated Code]
 Learn more about the [**Generated Code**](../../generated-code/state-mgmt-gen-code.md#global-state) behind Global Properties.
@@ -138,7 +154,7 @@ This property is used to get the current device location (aka geolocation). You 
 You can use this property to get the user's current location to update on Google Maps or store it in the backend database.
 
 :::warning
-At present, testing this property isn't possible in Test mode, but you can use the Run mode for this purpose. To run it on Android, iOS or desktop platforms, use [Local Run](../../testing-deployment-publishing/running-your-app/local-run.md).
+Location depends on device or browser permission. Test this flow on each platform you support, handle denied permission, and provide a fallback when a location is unavailable. For device testing, use [Local Run](../../testing-deployment-publishing/running-your-app/local-run.md).
 :::
 
 
@@ -161,9 +177,8 @@ Here is an example of how you can retrieve the current device location:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Ab5qrwm0dPxrU8VfZYXr?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Ab5qrwm0dPxrU8VfZYXr?embed&show_copy_link=true" title="Global Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -195,9 +210,8 @@ Here's how you can save the user's current location (Geolocation) in the Firesto
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/iUAVKZ8OwWDlRZ6H8LbT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iUAVKZ8OwWDlRZ6H8LbT?embed&show_copy_link=true" title="Global Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -225,9 +239,8 @@ Here's how you can save the user's current location (Geolocation) in the Firesto
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/qoVy38WlG6zrHHv3PRHQ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qoVy38WlG6zrHHv3PRHQ?embed&show_copy_link=true" title="Global Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -247,9 +260,9 @@ Here's how you can save the user's current location (Geolocation) in the Firesto
 
 ### Is Android/iOS/Web
 
-Use these properties when you want to tailor the user experience for specific platforms. These properties determine whether the user is accessing the app on Android, iOS, or the Web. Knowing the user's platform is essential for customizing functionality to suit each environment. For instance, certain custom widgets or actions might be exclusive to Android. 
+Use these properties when you want to tailor the user experience for specific platforms. These properties determine whether the user is accessing the app on Android, iOS, or the Web. Knowing the user's platform is essential for customizing functionality to suit each environment. For instance, certain custom widgets or actions might be exclusive to Android.
 
-These properties allow you to implement platform-specific features and ensure your app behaves optimally across different devices. Some examples: 
+These properties allow you to implement platform-specific features and ensure your app behaves optimally across different devices. Some examples:
 
 - **Is Android**: Enable a custom push notification feature that only works on Android devices. By checking if the platform is Android, you can conditionally display a setup screen for this feature.
 
@@ -266,14 +279,11 @@ Consider an app where users can input dog details, and a custom bottom navigatio
 
 Here's how it looks:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/25c52f020c154bf8a8e8acb3b138677e?sid=8670a445-a2fe-4996-81bd-36fea5ac8117" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Global Properties interactive tutorial" src="https://www.loom.com/embed/25c52f020c154bf8a8e8acb3b138677e?sid=8670a445-a2fe-4996-81bd-36fea5ac8117" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
 To build such behavior, you can add [Conditional Visibility](../../resources/ui/widgets/widget-commonalities.md#conditional) on the bottom navigation. While adding, use the "Is On-Screen Keyboard Visible" that will hide the bottom navigation bar whenever the keyboard is displayed.
 Using "Is On-Screen Keyboard Visible" to hide bottom navigation
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/8458a825c31c4f18951a8351ee9e408d?sid=f92c9cad-1c4f-4431-8854-bfe648996731" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div class="video-container"><iframe title="Global Properties interactive tutorial" src="https://www.loom.com/embed/8458a825c31c4f18951a8351ee9e408d?sid=f92c9cad-1c4f-4431-8854-bfe648996731" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

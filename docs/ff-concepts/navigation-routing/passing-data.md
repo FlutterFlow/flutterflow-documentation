@@ -2,11 +2,20 @@
 slug: /concepts/navigation/passing-data
 title: Passing Data
 description: Learn how to pass data between pages in FlutterFlow.
-tags: [Passing Data, Navigation, Concepts]
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [FlutterFlow, Passing Data, Navigation, Concepts]
+keywords:
+  - FlutterFlow
+  - Passing Data
+  - Navigation
+  - Concepts
+  - pass data or parameters between FlutterFlow pages
+ai_queries:
+  - pass data or parameters between FlutterFlow pages
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -28,7 +37,7 @@ To create a page parameter, follow the steps:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/oZV2X0pKNYO61p1jhY22?embed&show_copy_link=true"
         title="Create Page Parameters"
         style={{
@@ -49,14 +58,9 @@ To create a page parameter, follow the steps:
 </div>
 <p></p>
 
-When a page parameter is set to Required, it indicates that this parameter is
-mandatory when navigating to this page. Users must provide this value;
-otherwise, FlutterFlow will throw errors. However, if you are creating an
-optional parameter, please ensure this option is unchecked.
+When a page parameter is **Required**, every navigation to that page must supply a compatible value unless the parameter has a default. FlutterFlow reports a project error when a required parameter with no default is missing. Leave **Required** off when the destination can handle no value.
 
-Additionally, you can specify a default value in the Default Parameter Value
-field to safeguard against incoming values that are empty or null. This step is
-optional.
+You can set **Default Parameter Value (Optional)** as a fallback when the navigation does not supply a value. A default also satisfies the requirement for a non-nullable parameter.
 
 ![Page-Params.png](imgs/Page-Params.png)
 
@@ -71,7 +75,7 @@ required parameter has not yet been sent from the previous page. Let's fix that:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/kp34JJipEW24hz0u5RsW?embed&show_copy_link=true"
         title="Send Page Parameters"
         style={{
@@ -92,14 +96,14 @@ required parameter has not yet been sent from the previous page. Let's fix that:
 </div>
 
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
 :::info
 Passing data can only be tested in **Run** and **Test** Mode (it can not be tested in Preview Mode).
 :::
- 
+
 ## When to use Page Parameters?
 Page parameters are used to pass essential data between pages that is not
 persisted in the app’s global state but is necessary for specific
@@ -129,10 +133,12 @@ inputs from a previous interaction.
 
 ## Allowed Data Types
 
-You can pass any supported data from one page to another via *page parameter(s)*. You can think of a *page parameter* as a variable that holds the value being passed from one page to another.
+Page parameter types include the primitive and built-in types supported by the page parameter picker: Integer, Double, String and media paths, Boolean, Color, Date Time, JSON, Timestamp Range, LatLng, Google Place, Enum, Data Type, Uploaded File (Bytes), and supported backend record/reference types when their integration is configured. The picker is the authority for the current project because database-specific types appear conditionally.
+
+Pass the smallest stable value the destination needs. For a details page, an ID or document reference is often safer than copying a large mutable record. Do not pass API keys, passwords, or access tokens in page parameters; routed apps may serialize supported parameter values into navigation state or URLs.
 
 :::info
-If you are using Firestore Database, most of the time, you would pass the *Document* (an actual record inside the Firestore collection) and *Document Reference (points to actual document)* between the pages.
+For Firestore, **Document** passes an available record value, while **Document Reference** passes a reference that the destination can use to fetch the current record. Choose based on whether the destination needs the existing snapshot or should retrieve fresh data.
 :::
 ---
 
@@ -144,9 +150,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/F_4O1uWm22g"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/F_4O1uWm22g" title="Passing Data interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -163,3 +168,7 @@ If you prefer watching a video tutorial, here's the one for you:
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Related documentation
+
+See [Bottom Sheet](/concepts/navigation/bottom-sheet) for a related FlutterFlow workflow.

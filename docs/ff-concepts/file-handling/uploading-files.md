@@ -1,13 +1,26 @@
 ---
 slug: /concepts/file-handling/uploading-files
-title: Uploading Files
-description: Learn how to upload media in FlutterFlow.
-tags: [Media Files, Upload Data]
+title: Upload a File from Your FlutterFlow App
+description: >-
+  Uploading files is an essential feature for many apps, enabling users to share
+  images, videos, documents, and more.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [Media Files, Upload Data, Media Management, Firebase, Supabase, Upload Actions]
+keywords:
+  - Media Files
+  - Upload Data
+  - Media Management
+  - Firebase
+  - Supabase
+  - Upload Actions
+  - upload a file from a FlutterFlow app
+ai_queries:
+  - upload a file from a FlutterFlow app
+last_verified: 2026-09-02
 ---
-
-# Uploading Files
+# Upload a File from Your FlutterFlow App
 
 Uploading files is an essential feature for many apps, enabling users to share images, videos, documents, and more. FlutterFlow offers flexible actions to handle file uploads, whether you’re using Firebase, Supabase, or your own backend server. You can customize the upload process to suit your app’s needs, such as resizing media, setting quality, or temporarily storing files locally before uploading.
 
@@ -40,10 +53,10 @@ This method initially stores your media on the device, making it accessible via 
 This action allows you to upload a photo or video to your app. You can choose to store the file on [Firebase](#firebase), [Supabase](#supabase) storage, or your own server using an API. Once uploaded, you can access the file through its generated URL. This URL can be used to display the content immediately or store it in a database for future retrieval.
 
 :::info[Prerequisites for Firebase]
-1. **Firebase** should be connected to your project. Follow the instructions on [**this page**](../../ff-integrations/database/cloud-firestore/getting-started.md) for integrating Firebase with FlutterFlow.
+1. **Firebase** should be connected to your project. Follow [Connect to Firebase](../../ff-integrations/firebase/connect-to-firebase-setup.md).
 2. **Firebase Authentication** must be properly configured. Check out [**this page**](../../ff-integrations/authentication/firebase-auth/auth-initial-setup.md) for setting up authentication.
 3. **Firebase Storage** must be set up and properly configured. It takes just a second! Follow the instructions on [**this page**](../../ff-integrations/storage/firebase-storage/storage-rules.md).
-4. At least one **Firebase Collection** should be configured for the project so that you can store the generated URL.
+4. A Firestore collection is optional. Create one only if your workflow needs to persist the uploaded file URL or metadata.
 :::
 
 
@@ -57,8 +70,7 @@ This action allows you to upload a photo or video to your app. You can choose to
 
 3. Apply additional [**security rules**](https://supabase.com/docs/guides/storage/quickstart#add-security-rules) which determine who can access the bucket. **Tip**: If you are uploading to a folder structure like this '*pics/uploads*,' here is how you can add a policy that allows only authenticated users to upload their profile picture.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/963ac14f47de43a6b1d77ec1fd2b7228?sid=bced0a6b-4d0c-4b56-9886-5845319b2f9e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Uploading Files interactive tutorial" src="https://www.loom.com/embed/963ac14f47de43a6b1d77ec1fd2b7228?sid=bced0a6b-4d0c-4b56-9886-5845319b2f9e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 :::
 
@@ -84,9 +96,8 @@ When you set **Upload Type** to:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Pu6LihtPxFTaT5tI3srn?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Pu6LihtPxFTaT5tI3srn?embed&show_copy_link=true" title="Uploading Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -125,9 +136,8 @@ Check out our YouTube video for a detailed explanation of the **Upload or Save M
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/cKDuIZNdbh8"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/cKDuIZNdbh8" title="Uploading Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -155,9 +165,9 @@ Once the file is uploaded to the device, you can do the following:
 
 - **Preview or Validate the Media**: Show the user an in-app preview before they decide whether to finalize or discard the upload.
 
-- **Editing Before Submission**: In social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage. 
+- **Editing Before Submission**: In social media apps, users upload photos for posts or stories. The app temporarily saves the image on the device while users edit or apply filters, and then uploads the final image to cloud storage.
 - **Perform Data Operations**: In document scanning apps, users capture images of documents, which are temporarily stored on the device. The app accesses the file bytes to apply OCR (Optical Character Recognition), enhance contrast, or convert the image to PDF before uploading the final processed file to cloud storage.
-- **Offline Functionality**: Store the media locally and defer uploading until the user regains internet access.
+- **Deferred Uploads**: Keep the media in widget state while the current app session remains active, then upload it when appropriate. Widget state is not a durable offline queue; use persistent local storage or custom code if the upload must survive navigation, app termination, or a device restart.
 - **Upload to Server**: When you want to store the file externally, you can then make an API call (e.g., multipart form data) to transfer the local file. Be sure to retrieve and save the resulting file URL in your database if you plan to display it later.
 
 Here are some examples of uploading a file to a device and using it in different scenarios:
@@ -176,9 +186,8 @@ The request body for the API must be in *Multipart* format. See how to [**con
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/aGtMNp5Gz0H9PuncokfT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/aGtMNp5Gz0H9PuncokfT?embed&show_copy_link=true" title="Uploading Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

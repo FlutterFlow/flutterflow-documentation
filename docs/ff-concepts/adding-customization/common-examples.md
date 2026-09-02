@@ -1,12 +1,23 @@
 ---
 slug: /concepts/custom-code/common-examples
 title: Common Examples
-description: Learn about the common custom code examples and use it directly in your project.
-tags: [Custom Actions, Custom Code]
+description: >-
+  Learn about the common custom code examples and use it directly in your
+  project.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 6
-keywords: [FlutterFlow, Custom Actions, Customizations, Flutter, Dart, Pub.dev, Examples]
+keywords:
+  - FlutterFlow
+  - Custom Actions
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - Examples
+last_verified: 2026-09-02
 ---
-
 # Common Code Examples
 
 The custom code feature in FlutterFlow allows you to extend functionality by accessing generated classes and modifying global variables like App States and FlutterFlow themes. This guide covers common scenarios where you can leverage custom code to enhance your project by working directly with data models and other resources within your code.
@@ -14,9 +25,9 @@ The custom code feature in FlutterFlow allows you to extend functionality by acc
 :::warning[Disclaimer]
 Custom Functions cannot import new files or packages outside of the default dedicated imports. Therefore, most of the suggestions below that involve adding a new import will not work in Custom Functions due to this restriction. However, they will work for Custom Widgets and Custom Actions.
 
-For example, a new [**Custom Function**](custom-functions.md) typically includes the following packages and files. Your custom function code changes should use only these packages & files:
+For example, a new [**Custom Function**](custom-functions.md) can include imports like the following. The exact generated imports depend on the features enabled in your project; use the imports already present in your own editor rather than copying this list blindly.
 
-```js
+```jsx
 import 'dart:convert';
 import 'dart:math' as math;
 
@@ -34,25 +45,25 @@ import '/backend/schema/enums/enums.dart';
 import '/auth/firebase_auth/auth_util.dart';
 ```
 
-::: 
+:::
 ### Access FlutterFlow Generated Classes
 
 FlutterFlow generates a complete Flutter codebase for you as you build apps in its platform. Part of this code includes custom classes that are designed to streamline common tasks and encapsulate reusable properties or logic.
 
 For example:
 
-- **Button Widgets:** FlutterFlow provides custom button classes like `FFButton` that come with built-in styling and behaviors.
+- **Button Widgets:** FlutterFlow provides generated classes such as `FFButtonWidget` and `FFButtonOptions` for FlutterFlow-styled buttons.
 - **Google Places:** The `FFPlace` class encapsulates properties of a Google Place, such as name, address, and coordinates.
 - **File Uploads:** The `FFUploadedFile` class represents files uploaded to your app, encapsulating properties like the file name, bytes, and URL.
 
 
 :::tip[What is a Class?]
-In programming, a class is a blueprint for creating objects. It defines properties (data) and methods (functions) that belong to objects of that type. 
+In programming, a class is a blueprint for creating objects. It defines properties (data) and methods (functions) that belong to objects of that type.
 
 For example,
 
 - A `Car` class might have properties like `color` and `speed` and methods like `drive()` and `stop()`.
-- In FlutterFlow, a class like `FFPlace` might have properties like `address` and `latLng`, and methods to manipulate or retrieve these values. 
+- In FlutterFlow, a class like `FFPlace` might have properties like `address` and `latLng`, and methods to manipulate or retrieve these values.
 :::
 
 These custom FlutterFlow classes in the generated code are mostly prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them quick.
@@ -60,13 +71,13 @@ These custom FlutterFlow classes in the generated code are mostly prefixed with 
 
 ![suggestions-dropdown.png](imgs/suggestions-dropdown.png)
 
-### Leveraging Components in Custom Widget 
+### Leveraging Components in Custom Widget
 
 :::warning[Static Components vs Dynamic]
 Use this approach only when the component is a fixed element that does not change across different use cases. If the child component needs to change based on user choices, pass it directly [**as a parameter**](custom-widgets.md#creating-a-new-custom-widget).
 :::
 
-In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from 
+In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from
 [pub.dev](https://pub.dev/), you can simply return an existing Component created on the canvas, rather than coding a new one from scratch.
 
 :::tip[Imports]
@@ -87,11 +98,11 @@ To access theme colors in your custom widget, use the `FlutterFlowTheme.of(conte
 Here’s an example of how to use the primary color from FlutterFlow Theme in a custom widget:
 
 :::tip[Imports]
-Ensure you import `import '../flutter_flow/flutter_flow_theme.dart';` when accessing `FlutterFlowTheme` in your custom widgets.
+Ensure you import `import '../../flutter_flow/flutter_flow_theme.dart';` when accessing `FlutterFlowTheme` from a file under `lib/custom_code/widgets/`.
 :::
 
 
-```js
+```jsx
 class CustomButton extends StatefulWidget {
   final String label;
 
@@ -122,7 +133,7 @@ class _CustomButtonState extends State<CustomButton> {
       onPressed: toggleButton,
       child: Text(
         widget.label,
-        style: FlutterFlowTheme.of(context).bodyText1, // Themed text style
+        style: FlutterFlowTheme.of(context).bodyMedium,
       ),
     );
   }
@@ -132,15 +143,15 @@ class _CustomButtonState extends State<CustomButton> {
 
 ### Modifying AppState from Custom Code
 
-In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples: 
+In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples:
 
 :::tip[Imports]
 Ensure you import `import '../../flutter_flow/flutter_flow_util.dart';` when accessing `FFAppState` in custom code resources.
 :::
 
-- **Get AppState value in Custom Code** 
+- **Get AppState value in Custom Code**
 
-```js
+```jsx
 
 Future getCartItems() async {
   // Retrieve the current cart items from AppState
@@ -151,7 +162,7 @@ Future getCartItems() async {
 
 - **Updating AppState Values in Custom Code**
 
-```js
+```jsx
 Future enableDarkMode() async {
   // Enable dark mode in AppState
   FFAppState().update(() {
@@ -165,7 +176,7 @@ Future enableDarkMode() async {
 
 The `FFAppState` class offers a variety of helper functions to easily manage list variables in AppState. For a detailed overview of this generated class, check out **[this guide](../../generated-code/ff-app-state.md#managing-appstatelist)**. Here are some examples of how to use these helper functions to modify an AppState list variable:
 
-```js
+```jsx
 Future addLocation(LatLng value) async {
   // Add a new location to the LatLng list
   FFAppState().addToLatLngList(value);
@@ -196,10 +207,12 @@ Future insertLocationAtIndex(int index, LatLng value) async {
 ### Leverage Custom Data Types
 When you create a custom data type in FlutterFlow, it **[generates a corresponding `<Name>Struct` class](../../generated-code/custom-data-type-gen.md)**. In FlutterFlow's custom code, you can create new instances of such data types, pass instances back into an action, or manipulate and retrieve information from existing objects. Here are some examples to help illustrate working with an example `ProductStruct` class.
 
+The types and fields below are illustrative. Replace `ProductStruct`, its nested Struct types, and every field with the names and nullability generated from your own Data Schema.
+
 #### Example 1: Creating a new Instance of `ProductStruct`
 To create a new `ProductStruct` instance, initialize it with the required properties:
 
-```js
+```jsx
 // Create a new instance of ProductStruct
 final newProduct = ProductStruct(
     productId: '123',
@@ -212,21 +225,21 @@ final newProduct = ProductStruct(
     colors: [ColorsStruct(colorName: 'Red', colorHex: '#FF0000')],
     images: [ImagesStruct(thumbnail: 'https://example.com/image.jpg')],
     stockStatus: StockStatusStruct(xs: 0, small: 2),
-    reviews: [ReviewsStruct(rating: 4, comment: 'Great product!')],
+    reviews: [ReviewStruct(rating: 4, comment: 'Great product!')],
 );
 
 ```
 
 #### Example 2: Get Properties of an Existing `ProductStruct` object
 
-If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. 
+If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action.
 
 Let's assume you have an Action that calls a Custom Action to retrieve a field value from the provided `ProductStruct` object.
 
 - **Returning a Single Field from ProductStruct**
 
 This function retrieves and returns the product's name. The return type is `String?` to account for the possibility of a null value.
-```js
+```jsx
 // Function to return the product name from a ProductStruct instance
 String? getProductName(ProductStruct product) {
     // Get and return the product name
@@ -237,11 +250,10 @@ String? getProductName(ProductStruct product) {
 - **Checking if a Field Exists in a `ProductStruct` Object**
 This function determines whether the `ProductStruct` object contains a non-null value for a specific field, such as `description`. It returns `true` if the field exists and is not null, and `false` otherwise.
 
-```js
+```jsx
 // Function to check if the description field exists in a ProductStruct instance
 bool hasDescription(ProductStruct product) {
-    // Return true if the description is not null, false otherwise
-    return product.description != null;
+  return product.hasDescription();
 }
 ```
 
@@ -249,7 +261,7 @@ bool hasDescription(ProductStruct product) {
 
 This function retrieves a list of review comments from the reviews field in the `ProductStruct`. The return type is `List<String>` as it returns a list of comments (or an empty list if there are no reviews).
 
-```js
+```jsx
 // Function to return a list of review comments from a ProductStruct instance
 List<String> getProductReviewComments(ProductStruct product) {
   // Check if reviews are present and return a list of review comments
@@ -261,56 +273,63 @@ List<String> getProductReviewComments(ProductStruct product) {
 You can also modify the properties of an existing `ProductStruct` object. This can be helpful if you want to update a field before saving the data back to Firebase or passing it into an action.
 
 - **Simple Property Modification**
-In this example, we’ll modify a single property, like `productName`, of an existing `ProductStruct` object. This example is straightforward and demonstrates how to update a basic field in the object.
+In this example, we’ll modify the `name` property of an existing `ProductStruct` object.
 
-```js
+```jsx
 // Function to update the product name of a ProductStruct instance
-Future updateProductName(ProductStruct product, String newProductName) {
+Future<void> updateProductName(
+  ProductStruct product,
+  String newProductName,
+) async {
   // Update the product name with the new value
-  product.productName = newProductName;
+  product.name = newProductName;
 }
 ```
 
 - **Complex Property Modification - Nested Object Update**
 In this more complex example, we’ll modify a nested property within the `ProductStruct`, such as updating the price (which itself is a `PriceStruct` object). This shows how to update a property that itself contains multiple fields.
 
-```js
+```jsx
 // Function to update the price of a ProductStruct instance
-Future updateProductPrice(ProductStruct product, double newAmount, String currency) {
-// Check if price is not null
-    if (product.price != null) {
-        // Update only the amount field
-        product.price!.amount = newAmount;
-    } else {
-        // If price is null, optionally initialize it if needed
-        product.price = PriceStruct(
-            amount: newAmount,
-            currency: currency,
+Future<void> updateProductPrice(
+  ProductStruct product,
+  double newAmount,
+  String currency,
+) async {
+  if (product.price != null) {
+    product.price!.amount = newAmount;
+  } else {
+    product.price = PriceStruct(
+      amount: newAmount,
+      currency: currency,
     );
-    }
+  }
 }
 ```
 
 - **Complex Property Modification - Updating a List Property**
 In this example, we’ll add new items to a list property, like adding new review comments to the `reviews` list in `ProductStruct`. This example shows how to work with a list of nested objects.
 
-```js
-Future addNewReviews(ProductStruct product) {
-  product.reviews ??= []; // Initialize the reviews list if it's null
-  product.reviews!.addAll([
-    ReviewStruct(rating: 5, comment: 'Excellent product!'),
-    ReviewStruct(rating: 4, comment: 'Good quality, but a bit expensive.'),
-    ReviewStruct(rating: 3, comment: 'Satisfactory, meets expectations.'),
-  ]);
+```jsx
+Future<void> addNewReviews(ProductStruct product) async {
+  product.updateReviews(
+    (reviews) => reviews.addAll([
+      ReviewStruct(rating: 5, comment: 'Excellent product!'),
+      ReviewStruct(rating: 4, comment: 'Good quality, but a bit expensive.'),
+      ReviewStruct(rating: 3, comment: 'Satisfactory, meets expectations.'),
+    ]),
+  );
 }
 ```
 
-or if the new list of reviews is being provided to the Custom Action, then: 
+or if the new list of reviews is being provided to the Custom Action, then:
 
-```js
-Future addDynamicReviews(ProductStruct product, List<ReviewStruct> newReviews) {
-  product.reviews ??= []; // Initialize the reviews list if it's null
-  product.reviews!.addAll(newReviews); // Add the new reviews
+```jsx
+Future<void> addDynamicReviews(
+  ProductStruct product,
+  List<ReviewStruct> newReviews,
+) async {
+  product.updateReviews((reviews) => reviews.addAll(newReviews));
 }
 
 ```
@@ -322,14 +341,14 @@ When using Firebase Authentication for your app, FlutterFlow provides access to 
 
 For example, you can check if a user’s email is verified before proceeding with certain actions:
 
-```js
+```jsx
 if (currentUserEmailVerified) {
   // Perform action for verified users
 }
 ```
 
 Or, if you need to create a directory path that includes the user’s unique ID:
-```js
+```jsx
 String directoryPath = '/users/' + currentUserUid + '/files';
 ```
 
@@ -343,7 +362,7 @@ Here’s a list of other Firebase Auth variables that can be referenced in Custo
 - `currentJwtToken` – The current user’s JWT token for secure requests.
 - `currentUserEmailVerified` – Boolean indicating if the user’s email is verified.
 
-- These variables make it easy to integrate Firebase Auth data into custom functionality, enhancing the user experience.
+Treat `currentJwtToken` as a credential: do not log it, persist it in public storage, or send it anywhere except a trusted backend over HTTPS.
 
 
 ### Get Dev Environment Values in Custom Code
@@ -352,7 +371,7 @@ Similar to `FFAppState`, FlutterFlow generates a singleton `FFDevEnvironmentValu
 
 To access any Dev Environment values in custom code, simply use:
 
-```js
+```jsx
 Future getWebhookId() async {
   // Add your function code here!
   return FFDevEnvironmentValues().webhookId;
@@ -363,37 +382,34 @@ Future getWebhookId() async {
 
 When using a library dependency in your project, you can also access its components, such as Library App State, Library Values, and Library Widgets, in the user project's custom code. Here are a few examples:
 
-#### Get Library Values 
+#### Get Library Values
 
 Similar to `FFAppState` or `FFDevEnvironmentValues` class, FlutterFlow generates a singleton `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
 
 To access Library Values directly in custom code:
 
-```js
+```jsx
 Future getSchema(StateStruct? syncStatus) async {
   print(FFLibraryValues().schema);
 }
 ```
 
-#### Get Library Custom Code 
+#### Get Library Custom Code
 
 When you add a library dependency to your FlutterFlow project, FlutterFlow automatically includes necessary imports, allowing you to utilize custom code resources from the library project in your user project's custom code files.
 
 For example, if you have a library with project ID `library_hybw3o`, FlutterFlow will add the following import to your project:
 
-```js
+```jsx
 import 'package:library_hybw3o/flutter_flow/custom_functions.dart' as library_hybw3o_functions;
 ```
 
 
 Now, let's use the library’s custom functions in the user project's custom function:
 
-```js
-int getRandomIndex(List<int> indexList) {
-    final item = library_hybw3o_functions.getRandomItem(); // Library's custom function
-    // get Random Index
-    final randomNumber = math.Random();
-    return ...
+```jsx
+dynamic getLibraryItem() {
+  return library_hybw3o_functions.getRandomItem();
 }
 ```
 
@@ -404,7 +420,7 @@ For example, let's import the library's custom actions into the user project's C
 
 If the import is not already available, you can add it manually as follows:
 
-```js
+```jsx
 // Custom import
 import 'package:library_hybw3o/custom_code/actions/index.dart' as library_hybw3o_actions; // Assigning a custom alias to the import
 
@@ -426,13 +442,13 @@ class CustomDialog extends StatefulWidget {
 class _CustomDialogState extends State<CustomDialog> {
     @override
     void initState() {
-        library_hybw3o_actions.getSchema(StateStruct()); // calling library custom action
-        super.initState();
+      super.initState();
+      library_hybw3o_actions.getSchema(StateStruct());
     }
+
     @override
-        Widget build(BuildContext context) {
-            return Container(height: 50, width: 50);
+    Widget build(BuildContext context) {
+      return Container(height: 50, width: 50);
     }
 }
 ```
-

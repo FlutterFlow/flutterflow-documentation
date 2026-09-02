@@ -2,19 +2,25 @@
 slug: /resources/backend-logic/streaming-api
 title: Streaming APIs
 description: Learn how to use streaming APIs in your backend logic with FlutterFlow.
-tags: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Logic
 sidebar_position: 4
-keywords: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Streaming APIs
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
+last_verified: 2026-09-02
 ---
-
-
 # Streaming APIs
 
 Streaming APIs provide a continuous flow of data over a long-lived HTTP connection, enabling real-time updates for your application.
 
 Unlike REST APIs, which deliver data in response to specific requests, streaming APIs are designed to maintain an open connection between the client and the server, continuously sending data as it becomes available. This is particularly useful for applications that require live updates, such as live sports scores, stock market tickers, chat applications, and real-time notifications.
 
-This reduces latency and improves the user experience by providing immediate feedback. The most common protocol used for streaming APIs is Server Sent Events (SSE), but others like WebSockets can also be used depending on the application's requirements.
+This reduces perceived latency by displaying partial results as they arrive. FlutterFlow's **Process Streaming Response** setting handles long-lived HTTP responses such as **Server-Sent Events (SSE)**. It is not a general WebSocket client; use a dedicated integration or custom code when an API requires WebSockets.
 
 ### Difference between REST APIs and Streaming APIs
 
@@ -27,7 +33,7 @@ The primary difference between REST APIs and Streaming APIs lies in their data d
 	+ **Example response**:
 
 	```
-	{  
+	{
 	  "event": "match_score",
 	  "data": {
 	    "team1": "Red Dragons",
@@ -45,15 +51,15 @@ The primary difference between REST APIs and Streaming APIs lies in their data d
 	```
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "2-1"}
-	
+
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "3-1"}
-	
+
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "3-2"}
 	```
 
-## Example: AI Review Summary 
+## Example: AI Review Summary
 
 Let's see how you can use streaming APIs in FlutterFlow by building an example that allows users to see an AI summary of product reviews. On page load, the app displays the AI summary in real-time, letting users watch the analysis unfold as it's being generated.
 
@@ -65,9 +71,8 @@ The final app looks like this:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/EPHAltGtmoefX2QTXb0H?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EPHAltGtmoefX2QTXb0H?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -99,8 +104,8 @@ The steps to build the app are as follows:
 
 The user interface includes a section for the average rating, and number of reviews, followed by a detailed summary of the reviews including pros, cons, and sentiment distribution visualization. Here are key widgets to build the page:
 
-* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md): 
-  Displays 
+* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md):
+  Displays
   the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
 * [**Chart (Bar chart) Widget**](../../../ui/widgets/built-in-widgets/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
 
@@ -109,9 +114,15 @@ The user interface includes a section for the average rating, and number of revi
 
 ### 2. Create API
 
-For building this app, we will use [OpenAI's Chat Completion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) to generate a summary based on given reviews. Before you build anything related to APIs in your app, it's essential to create and test the APIs to ensure they work correctly. So let's [create and test](../api/create-test-api-calls.md) the Chat Completion API in our project.
+For building this app, you can use an API that returns an SSE stream. If you use OpenAI, the current [Responses API](https://developers.openai.com/api/reference/cli/resources/responses/methods/create) supports streaming when `stream` is `true`. Create and [test the API definition](../api/create-test-api-calls.md) with non-production data before wiring it into the page.
+
+:::warning[Protect API credentials]
+Do not ship an OpenAI API key or another provider secret in the generated client. Configure the call as a FlutterFlow **Private API**, require authentication when appropriate, and deploy the private API before testing the app flow.
+:::
 
 Once created, open the **Advanced Settings** and **enable** the **Process Streaming Response** toggle.
+
+A streaming API can be invoked only as an **API Call action**, not as a Backend Query.
 
 Here's how you do it:
 
@@ -123,9 +134,8 @@ Here's how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/erzDAcLQ1mR7coF28oFi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/erzDAcLQ1mR7coF28oFi?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -163,7 +173,7 @@ You can trigger the streaming API just like any other regular API. However, the 
 
 Whenever the data is received, you can access the response body via the **OnMessage > Set Variable menu > Action Parameters > OnMessageInput**. and then use the [**Response Stream Message Options**](#response-stream-message-options) to extract the data.
 
-For this specific example, we use the *Server Sent Event Stream Data JSON* option and then use this JSON path `$['choices'][0]['delta']['content']` to retrieve the story data.
+For a current OpenAI Responses API stream, inspect **Server Sent Event Name** and process text when it equals `response.output_text.delta`. Read **Server Sent Event Data JSON** with JSON path `$.delta`, then append that delta to the accumulated summary. Event types and payloads vary by provider, so confirm them in **Response & Test** instead of reusing a JSON path from another API.
 
 Here's how exactly you do it:
 
@@ -173,9 +183,8 @@ Here's how exactly you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/hWI8Kin5EcytoC3Pk4Vj?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/hWI8Kin5EcytoC3Pk4Vj?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -205,9 +214,8 @@ Here's how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/U0TB9ENX5xSdfAVCB2BW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/U0TB9ENX5xSdfAVCB2BW?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -310,7 +318,7 @@ id: 2
 ```
 The Server Sent Event Name would be `ping`.
 
-### Server Sent Event ID (Type: Integer)
+### Server Sent Event ID (Type: String)
 
 This field contains the text of the "id" field from the SSE, typically used to keep track of the last sent item from the server. For example:
 
@@ -323,7 +331,7 @@ id: 2
 ```
 The Server Sent Event ID would be `2`.
 
-### Server Sent Event Retry (Type: String?)
+### Server Sent Event Retry (Type: Integer?)
 
 This field contains the "retry" field from the SSE, typically used to communicate to the client when to try reconnecting to the server.
 
@@ -338,6 +346,14 @@ data: Server time is 2024-06-28T11:52:56+00:00
 
 id: 2
 ```
+
+## Cancel a stream
+
+Set a non-empty **Stream Subscription Key** on the API Call action when the user may cancel or replace an active stream. Use **Cancel Streaming Response Subscription** with the same key, for example when the user taps Stop or starts a new request. Also handle **On Error** and **On Close** so loading state is always cleared.
+
+## Verify a streaming API
+
+Test a normal stream, non-`2xx` response, malformed event, non-JSON `data`, server disconnect, user cancellation, and two rapid starts. Confirm chunks are appended once and in order, errors clear loading UI, closed subscriptions stop updating state, secrets remain server-side, and web builds meet the endpoint's CORS requirements.
 ## FAQs
 
 <details>
@@ -365,5 +381,3 @@ This expression ensures that if `responseData` is `null`, it will return an empt
 </p>
 
 </details>
-
-

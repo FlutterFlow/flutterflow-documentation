@@ -2,15 +2,22 @@
 slug: /testing/dev-environments
 title: Development Environments
 description: Learn how to create and leverage development environments in FlutterFlow.
-tags: [Dev Environments, Backend, Testing]
+tags:
+  - FlutterFlow
+  - Testing
 sidebar_position: 2
 toc_max_heading_level: 4
-keywords: [Dev, Development, Environments, FlutterFlow, Backend]
+keywords:
+  - Dev
+  - Development
+  - Environments
+  - FlutterFlow
+  - Backend
+last_verified: 2026-09-02
 ---
-
 # Development Environments
 
-Development Environments in FlutterFlow allow you to set up multiple environments for your apps, such as `Development`, `Staging`, and `Production`. For each environment, you can create environment-specific values and databases. This allows you to easily point to different backends depending on where you are in your development lifecycle. 
+Development Environments in FlutterFlow allow you to set up multiple environments for your apps, such as `Development`, `Staging`, and `Production`. For each environment, you can create environment-specific values and databases. This allows you to easily point to different backends depending on where you are in your development lifecycle.
 
 
 :::note
@@ -34,7 +41,7 @@ You can create and switch environments in the **Dev Environments** page in **App
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/yR8P5pFPOKtuQ0jFSOJ7?embed&show_copy_link=true"
         title="Creating and Switching Development Environments"
         style={{
@@ -57,9 +64,13 @@ You can create and switch environments in the **Dev Environments** page in **App
 
 The selected environment is used to generate the proper app code when you run, test, deploy or export your app. The only things that change between environment are the [Firebase Project](#configuring-firebase-or-supabase-for-each-environment) or variables that are tied to [Environment Values](#environment-values)
 
+An environment label does not create isolation by itself. Confirm the selected backend project, API base URLs, public client keys, package or bundle identifier, signing configuration, payment mode, analytics destination, push setup, and deployment target before running or releasing a build.
+
 
 ### Environment Values
-Environment Values can be used to dynamically change parts of your app's code based on the environment that is being used. 
+Environment Values can be used to dynamically change parts of your app's code based on the environment that is being used.
+
+Non-private environment values are compiled into or delivered with the client and can be inspected. Use them for public configuration such as base URLs and public client keys, not passwords, service-role keys, signing material, or other secrets.
 
 For example, in an e-commerce app, you might define an `apiUrl` Environment Value that points to different API URLs for Development, Staging, and Production. This allows you to test new features without affecting the live production environment, where real customer orders are processed.
 
@@ -71,7 +82,7 @@ Let's see an example of creating and using `apiUrl`:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/bAVpkNAanVDlBTyeRwJy?embed&show_copy_link=true"
         title="Creating and Using Environment Values"
         style={{
@@ -104,7 +115,7 @@ You may also encounter different project errors depending on the selected enviro
 In the generated code, FlutterFlow creates two files:
 
 - `environment.json` – Stores the environment values defined by the user in FlutterFlow.
-- `FFDevEnvironmentValues` class – A singleton class that holds a single instance of the `FFDevEnvironmentValues` object. It includes initialization logic and getters for accessing these environment values. They can also be referenced in your custom code resources. See **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#get-dev-environment-values-in-custom-code)**. 
+- `FFDevEnvironmentValues` class – A singleton class that holds a single instance of the `FFDevEnvironmentValues` object. It includes initialization logic and getters for accessing these environment values. They can also be referenced in your custom code resources. See **[Common Custom Code Examples](../../ff-concepts/adding-customization/common-examples.md#get-dev-environment-values-in-custom-code)**.
 :::
 
 #### Private Environment Values
@@ -112,7 +123,7 @@ In the generated code, FlutterFlow creates two files:
 You can mark environment values as private when they contain sensitive information that should not be exposed in the client-side code.
 
 :::warning
-Private environment values are not included in the compiled application code and are never exposed to end users. However, if a private environment value is used in a private API call that runs through a generated cloud function, the value may appear in the cloud function’s code. When exporting or pushing your project to GitHub, you must review and manage these cloud function files—for example, excluding them with `.gitignore` if they contain sensitive information.
+Private environment values are excluded from the compiled client. When one is used in a private API call, it is consumed by generated server-side code. Treat generated server artifacts and exports as sensitive: inspect them before sharing or committing, keep the repository private when secrets may be present, and move long-lived production credentials to the deployment platform's supported secret manager when maintaining exported code. `.gitignore` alone does not remove a secret already committed to Git history.
 :::
 
 Currently, the only way to use a private environment value is as a variable in a private API call. Since private API calls are routed through a Cloud Function, the variable value remains hidden from any client-side requests made by the app.
@@ -130,19 +141,21 @@ A single FlutterFlow project can have **multiple environments**, each mapped to
 You must complete the Firebase or Supabase setup for an environment before you can test your app using that environment. However, this doesn't stop you from continuing to run and test your app in other environments. Just switch back to Production, and you can keep testing while finishing the setup for the new environment.
 
 #### Configuring Firebase
-If your project uses Firebase, you'll need to create a separate Firebase project in the Firebase Console for each environment. Then, you can change the selected environment in the Firebase settings page (see below), and follow the steps to [**manually configure the Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each one. 
+If your project uses Firebase, you'll need to create a separate Firebase project in the Firebase Console for each environment. Then, you can change the selected environment in the Firebase settings page (see below), and follow the steps to [**manually configure the Firebase project**](../../ff-integrations/firebase/connect-to-firebase-setup.md#connect-an-existing-firebase-project-manually) for each one.
 
 
 ![firebase-dev-env-config.png](../imgs/firebase-dev-env-config.png)
 
 Additionally, you must manually set up [**Firestore rules**](../../ff-integrations/database/cloud-firestore/firestore-rules.md) and [**collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md) for the new environment.
 
+Also configure and test environment-specific indexes, Storage Rules, authentication providers and authorized domains, Cloud Functions, App Check, API-key restrictions, analytics, push credentials, billing alerts, and backups where used. Never copy production user data into a lower environment without an approved, minimized, and anonymized process.
+
 :::info
 The data that you add to Firebase through the Content Manager is specific to the Firebase project, and environment, that you have selected.
 :::
 
 #### Configuring Supabase
-If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment. 
+If your project uses Supabase, you'll need to [**set up a new Supabase project**](../../ff-integrations/supabase/supabase-setup.md) for each environment.
 
 Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, and then configure the Supabase properties to point to these newly created values. Below is an example of how it would look like.
 
@@ -151,9 +164,8 @@ Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/VxEaC6uxhnB4zzluIE9i?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/VxEaC6uxhnB4zzluIE9i?embed&show_copy_link=true" title="Development Environments interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,6 +188,8 @@ Create environment-specific values like `SupabaseAPIURL` and `SupabaseAnonKey`, 
 It's recommended that you keep schemas consistent between the different Supabase environments. It's also recommended that you
 **Get Schema** from the Production environment and build from there.
  :::
+
+Keep migrations under version control and apply them forward through development and staging before production. Each Supabase project needs its own RLS policies, authentication redirect URLs, storage policies, secrets, webhooks, and backups; matching table names alone does not make environments equivalent.
 
 
 

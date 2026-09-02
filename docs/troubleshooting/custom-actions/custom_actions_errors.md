@@ -1,7 +1,16 @@
 ---
-keywords: ['troubleshooting', 'actions', 'custom']
+keywords:
+  - troubleshooting
+  - actions
+  - custom
 slug: /troubleshooting/custom-actions/custom-actions-errors
 title: Custom Actions Errors
+description: '- A basic understanding of how custom actions work.'
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Custom Actions
+last_verified: 2026-09-02
 ---
 # Custom Actions Errors
 
@@ -24,7 +33,7 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
 
         Ensure the name in the action matches the custom action in your code.
 
-        ![](../assets/20250430121138021235.png)
+        ![Custom Actions Errors in FlutterFlow](../assets/20250430121138021235.png)
 
         :::tip
         Use the `Add BoilerPlate Code` option to generate code with the correct action name.
@@ -35,7 +44,7 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
         - Check that all required imports are present.
         - Ensure arguments are defined in both the action settings and your code.
 
-            ![](../assets/20250430121138830209.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121138830209.png)
 
             Example:
 
@@ -48,13 +57,13 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
                         1. Manually update arguments in both the settings panel and your code.
                         2. Use the `Add BoilerPlate Code` option (on web, copy only what you need; on desktop, it may replace all code).
 
-                        ![](../assets/20250430121139816551.gif)
+                        <video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Correcting argument types in a FlutterFlow Custom Action"}><source src={require("../assets/20250430121139816551.mp4").default} type="video/mp4" /></video>
 
     - **Name Conflicts**
 
         - Avoid using the same name for an action and its argument.
 
-            ![](../assets/20250430121142594662.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121142594662.png)
 
     - **Reserved Keywords**
 
@@ -65,33 +74,33 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
 
         - Ensure the custom action returns the correct data type as defined in the settings.
 
-            ![](../assets/20250430121143268592.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121143268592.png)
 
             *The function should return the type specified in the settings panel.*
 
     - **Internal Library Imports**
 
-        - If importing internal libraries (example, `../../flutterflow`), set **Exclude from compilation** to `true` if needed.
+        - Avoid brittle relative imports into generated implementation files. Use FlutterFlow's supported imports and custom-code dependency settings. **Exclude from compilation** hides code from the generated build; it is not a way to make an unsupported import work at runtime.
 
     - **Pubspec Dependencies**
 
         - Ensure your dependencies are declared in your code and are compatible with FlutterFlow.
 
-            ![](../assets/20250430121143614166.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121143614166.png)
 
             Check for:
                 - Version conflicts (check on **[pub.dev](https://pub.dev)**)
                 - Multiple versions of the same dependency
                 - Conflicts with FlutterFlow's auto-imported dependencies
 
-                    ![](../assets/20250430121143935249.png)
+                    ![Custom Actions Errors in FlutterFlow](../assets/20250430121143935249.png)
 
-                    ![](../assets/20250430121144228150.png)
+                    ![Custom Actions Errors in FlutterFlow](../assets/20250430121144228150.png)
 
     - **Code Errors:**
 
         - **Null values:**
-            
+
             Handle null values safely.
 
                 ```js
@@ -99,39 +108,39 @@ Custom actions are powerful, but troubleshooting them can be tricky. This guide 
                 ```
         - **Correct data types:**
 
-            Convert data types explicitly.
+            Parse data types explicitly and handle failure.
 
                 ```js
                 String str = "5";
-                int result = int.parse(str); // ✅
+                int? result = int.tryParse(str);
                 ```
                 Use `.toString()`, `.toInt()`, `.toDouble()` as needed.
 
         - **Single elements** vs **arrays:**
-            
+
             Ensure you are not passing a single element where a list is expected, or vice versa.
 
     - **Exclude from Compilation**
 
-        If this option is enabled, the code won’t be checked during build but can still run during test..
+        If this option is enabled, the code is omitted from compilation and cannot provide working runtime behavior in that build. Use it only to isolate unfinished code, then re-enable compilation and test every target platform before release.
 
-            ![](../assets/20250430121144509497.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121144509497.png)
 
     - **Duplicate Data Types/Structs**
 
         Do not redefine data types or structs already defined in the data schema panel.
 
-            ![](../assets/20250430121144853131.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121144853131.png)
 
     - **Callback Data Types**
 
         Ensure callback actions return the correct data type.
 
-            ![](../assets/20250430121145202849.png)
+            ![Custom Actions Errors in FlutterFlow](../assets/20250430121145202849.png)
 
 
 :::info[Additional Resources]
-- **Debugging with the Browser Console:** Use the browser debug console for logic errors.
+- **Debugging with the Browser Console:** Use the browser console for web logic errors, but redact tokens, API payloads, user data, and proprietary code before sharing logs.
 - **FlutterFlow University Video**: [Custom Actions Video](https://www.youtube.com/watch?v=rKaD9eKuZkY).
 - **Official Docs:** [Custom Actions | FlutterFlow Docs](/concepts/custom-code/custom-actions/)
 :::

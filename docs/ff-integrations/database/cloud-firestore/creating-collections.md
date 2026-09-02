@@ -1,15 +1,25 @@
 ---
 slug: /integrations/database/cloud-firestore/creating-collections
 title: Creating Collections
-description: Learn how to create collections in Firestore for your FlutterFlow app, including organizing documents within collections.
-tags: [Firestore, Database, Collections, Cloud Firestore]
+description: >-
+  Learn how to create collections in Firestore for your FlutterFlow app,
+  including organizing documents within collections.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 3
-keywords: [FlutterFlow, Firestore, Database, Collections, Cloud Firestore]
+keywords:
+  - FlutterFlow
+  - Firestore
+  - Database
+  - Collections
+  - Cloud Firestore
+last_verified: 2026-09-02
 ---
-
 # Creating Collections
 
-A collection is a group of documents. For example, you could have a 'users*'* collection that contains a list of documents, each representing a single user.
+A collection is a group of documents. For example, you could have a `users` collection that contains a list of documents, each representing one user.
 
 <figure>
     ![img_20.png](img_20.png)
@@ -19,8 +29,8 @@ A collection is a group of documents. For example, you could have a 'users*'* co
 :::info[Getting Started: Things to Know First]
 
 - Get to know how to [**structure the Firebase Database**](getting-started.md#structuring-the-database).
-- Ensure you've gone through and completed every step in the 
-[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md) 
+- Ensure you've gone through and completed every step in the
+[**Firebase Setup**](../../firebase/connect-to-firebase-setup.md)
   for your project.
 :::
 
@@ -32,26 +42,29 @@ Here are the steps to create a collection:
 
 2. Click on the **(+)** Plus sign button.
 3. A popup will appear, Enter the collection name and click **Create** Button.
-4. Next, [define the collection schema](#define-schema-creating-fields) (create Fields) and 
+4. Next, [define the collection schema](#define-schema-creating-fields) (create Fields) and
 [add some data](firestore-actions.md#create-document-action) to the collection.
 
 :::info
 A collection will only appear on [**Firebase Console**](https://console.firebase.google.com/u/0/) if it contains at least one document.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/14d7680203494e2bbbffef58535a6499?sid=6a4620bc-0195-4c24-93b3-e5bcd9fd4c94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Creating Collections interactive tutorial" src="https://www.loom.com/embed/14d7680203494e2bbbffef58535a6499?sid=6a4620bc-0195-4c24-93b3-e5bcd9fd4c94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
 ### Define Schema (Creating Fields)
 
-A document represents a single item or entity, such as a user, post, animal, etc. To add data inside the document, you must define the document schema by creating Fields. Creating Fields helps you know what kind of data a document can contain.
+A document represents a single item or entity, such as a user, post, or animal. Firestore itself permits documents in the same collection to contain different fields. FlutterFlow's collection schema describes the fields and types the builder and generated app expect, so keep stored documents compatible with that schema.
 
 Although you can add more fields later on, it's always a good idea to add fields from the start.
 
 :::caution
-Field names cannot be changed, so ensure that you have used the correct Field names.
+FlutterFlow does not provide an in-place field rename. Choose field names carefully. Changing a field name later requires adding the replacement field, migrating existing documents, updating every reference, and then removing the old field only after the migration is complete.
+:::
+
+:::tip[Plan before production]
+Decide which fields are required, how documents relate, and which queries the app needs. Then configure and test [Firestore Security Rules](firestore-rules.md) and deploy any required indexes. A FlutterFlow schema is not an authorization boundary, and every read can affect Firestore usage and cost.
 :::
 
 To define the schema (create fields) for the document:
@@ -59,7 +72,7 @@ To define the schema (create fields) for the document:
 1. Select your collection from the list on the left side.
 2. If you haven't added any fields yet:
 
-    1. You can choose from the template collections that have common fields needed in most 
+    1. You can choose from the template collections that have common fields needed in most
        applications. This will auto-add all the fields.
     5. Click on **Start from scratch** to define your own schema.
     8. Or, use [AI Gen Schema](#create-schema-using-ai-gen).
@@ -75,13 +88,12 @@ To define the schema (create fields) for the document:
 You can also use *Tab* and *Enter* keys to navigate quickly while creating fields.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7e7f80567cae477fbf97d937a76c4042?sid=84cbccd3-d084-4f9c-8dae-eff833cd2310" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Creating Collections interactive tutorial" src="https://www.loom.com/embed/7e7f80567cae477fbf97d937a76c4042?sid=84cbccd3-d084-4f9c-8dae-eff833cd2310" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 ### Create schema using AI Gen
 
-With **AI Gen Schema**, you can automatically generate a schema for your Firebase collection from a 
+With **AI Gen Schema**, you can automatically generate a schema for your Firebase collection from a
 simple prompt.
 
 :::tip[To get better results...]
@@ -96,8 +108,7 @@ Example prompts:
 - Create a collection for art exhibits, visitor reviews, and ticket bookings.
 - Generate a collection for online courses, student feedback, and enrollment records.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/f3a3c7ad69194342926f83036f07b243?sid=e4ed8f7c-6465-42c3-a46e-0e80a4d1e202" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Creating Collections interactive tutorial" src="https://www.loom.com/embed/f3a3c7ad69194342926f83036f07b243?sid=e4ed8f7c-6465-42c3-a46e-0e80a4d1e202" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 ---
@@ -105,3 +116,4 @@ com/embed/f3a3c7ad69194342926f83036f07b243?sid=e4ed8f7c-6465-42c3-a46e-0e80a4d1e
 
 :::note
 To learn more about custom data types within FlutterFlow, [check this doc](../../../resources/data-representation/data-types#built-in-data-types)
+:::

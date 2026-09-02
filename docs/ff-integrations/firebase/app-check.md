@@ -2,9 +2,15 @@
 slug: /integrations/firebase/app-check
 title: App Check
 description: Learn how to integrate Firebase App Check in your FlutterFlow app.
-tags: [Firebase, App Check]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 3
-keywords: [FlutterFlow, Firebase, App Check]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - App Check
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,9 +26,9 @@ To add *Firebase App Check* to your app:
 
 1. Navigate to the [Firebase Console](https://console.firebase.google.com/u/0/) > Build > App Check page.
 2. If this is the first time, click the **Get started** button.
-    
+
     ![Get started with App Check](imgs/get-started.avif)
-    
+
 3. Now, you'll see the list of apps you have added to this Firebase project. To register attestation service(s), select the project, click **Register,** and then select attestation service.
     1. For Android, you can select [Play Integrity](https://developer.android.com/google/play/integrity?authuser=1) and then follow step number 2 and 3 from [here](https://firebase.google.com/docs/app-check/android/play-integrity-provider?authuser=2#project-setup).
     2. For iOS, you can choose from [Device Check](https://developer.apple.com/documentation/devicecheck) or [App Attest](https://developer.apple.com/documentation/devicecheck/establishing_your_app_s_integrity) and then follow step number 2 and 3 from [here](https://firebase.google.com/docs/app-check/ios/devicecheck-provider?authuser=2).
@@ -36,9 +42,8 @@ To add *Firebase App Check* to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/3c1d6253d401446dafaf0de1b160b24a?sid=ec114490-1733-4d3c-bc88-b29f32a3838d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/3c1d6253d401446dafaf0de1b160b24a?sid=ec114490-1733-4d3c-bc88-b29f32a3838d" title="App Check interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -63,9 +68,8 @@ To add *Firebase App Check* to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/995f650448784ea9bc9f567e3558f24a?sid=888de56a-ca4f-4621-bf7f-eab50a69746f"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/995f650448784ea9bc9f567e3558f24a?sid=888de56a-ca4f-4621-bf7f-eab50a69746f" title="App Check interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -90,9 +94,8 @@ To add *Firebase App Check* to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/643864fcb5434e379d3e0cf32ebaebaf?sid=7c782d8e-e64d-40ea-afd6-bf339c1b6d6b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/643864fcb5434e379d3e0cf32ebaebaf?sid=7c782d8e-e64d-40ea-afd6-bf339c1b6d6b" title="App Check interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -121,9 +124,8 @@ To add *Firebase App Check* to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/44403c744f854314926bdd1f5d70f017?sid=49037d52-e362-4ada-8e9a-009578b32237"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/44403c744f854314926bdd1f5d70f017?sid=49037d52-e362-4ada-8e9a-009578b32237" title="App Check interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -157,9 +159,8 @@ To add *Firebase App Check* to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/aa543bffaed347659e99c6554c9a89ef?sid=8e2ad513-65c1-4114-9aec-032a6b7b0c36"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/aa543bffaed347659e99c6554c9a89ef?sid=8e2ad513-65c1-4114-9aec-032a6b7b0c36" title="App Check interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

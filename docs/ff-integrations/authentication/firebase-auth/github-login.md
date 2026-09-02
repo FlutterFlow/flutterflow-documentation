@@ -2,11 +2,18 @@
 slug: /integrations/authentication/firebase/github
 title: GitHub Login
 description: Learn how to add GitHub authentication in your FlutterFlow app.
-tags: [GitHub Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 7
-keywords: [FlutterFlow, GitHub Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - GitHub Login
+  - Authentication
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 # GitHub Login
 The GitHub auth provides a convenient way for users to authenticate and log in to your application using their GitHub accounts.
 
@@ -38,14 +45,17 @@ To enable GitHub authentication in the Firebase:
 3. To get the **Client ID** and **Client Secret**, [register your app](https://github.com/settings/applications/new) as a developer application on GitHub, and while doing so, paste the authorization callback URL to your GitHub app configuration.
 4. Click **Save**.
 
+:::danger[Protect the GitHub client secret]
+The Client Secret belongs only in the Firebase provider configuration. Never place it in FlutterFlow app state, client code, screenshots, logs, or source control. Copy the exact callback URL shown by Firebase, avoid wildcard callback matching unless it is strictly required, and rotate the secret immediately if it is exposed. See GitHub's [OAuth app security guidance](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/best-practices-for-creating-an-oauth-app).
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b970983169dc4240a979a2d74ec63450?sid=8a91fa0b-eabd-4e76-bfaf-37011c807421"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b970983169dc4240a979a2d74ec63450?sid=8a91fa0b-eabd-4e76-bfaf-37011c807421" title="GitHub Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -65,9 +75,9 @@ To enable GitHub authentication in the Firebase:
 <p></p>
 
 5. To test the app in Run Mode, add our domain to **Authorized domains**.
-    
+
 ![adding-authorized-domain-2.png](../imgs/adding-authorized-domain-2.png)
-    
+
 
 ### 2. Adding GitHub Login Action
 

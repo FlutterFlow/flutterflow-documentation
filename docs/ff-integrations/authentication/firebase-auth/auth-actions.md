@@ -1,10 +1,18 @@
 ---
 slug: /integrations/authentication/firebase/auth-actions
-title: Common Auth Actions
+title: 'Common Auth Actions: Firebase Auth'
 description: Learn how to add Firebase Authentication actions in your FlutterFlow app.
-tags: [Auth Actions, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 1
-keywords: [FlutterFlow, Auth Actions, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Auth Actions
+  - Authentication
+  - Firebase
+last_verified: 2026-09-02
 ---
 # Common Auth Actions
 
@@ -22,7 +30,7 @@ Follow the steps below to add this action:
 
 ![logout](../imgs/logout-action.png)
 
-## Reset Password 
+## Reset Password
 
 With Firebase Authentication, there are two ways you can allow users to reset their password in your FlutterFlow app:
 
@@ -51,9 +59,8 @@ This allows users who are logged out to reset their password. It sends a passwor
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/5hyA37XqJy6mrl7Onc8e?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/5hyA37XqJy6mrl7Onc8e?embed&show_copy_link=true" title="Common Auth Actions: Firebase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -90,9 +97,8 @@ This is helpful in scenarios where a user may have changed their primary email a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/x75bnI7YFjRxDaiQ0Jng?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/x75bnI7YFjRxDaiQ0Jng?embed&show_copy_link=true" title="Common Auth Actions: Firebase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -116,7 +122,7 @@ Follow the steps below to add this action to any widget.
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Update Email** (under *Backend/Database > Firebase Authentication*) action.
-4. As a best practice, it's also recommended to send the email verification link to the new email (using the [e-mail verification](../firebase-auth/email-sign-in.md#send-email-verification-link-action) action) followed by this action.
+4. Firebase may require the user to have signed in recently before changing a sensitive credential. If the action returns `requires-recent-login`, prompt the user to authenticate again and then retry. The current Firebase SDK sends verification to the new address as part of the update-email flow.
 
 ![adding-update-email-action](../imgs/adding-update-email-action.avif)
 
@@ -130,9 +136,8 @@ Using this action, you can delete the user account created using the [Firebase a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/E0u5FdA1wYzoON3CDMLO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/E0u5FdA1wYzoON3CDMLO?embed&show_copy_link=true" title="Common Auth Actions: Firebase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -156,10 +161,10 @@ Follow the steps below to add this action to any widget.
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Delete User** (under *Backend/Database > Firebase Authentication*) action.
-4. As a best practice, it's also recommended to log out the user (using the [logout](#) action) following this action.
+4. Firebase may require recent authentication before deletion. If the action returns `requires-recent-login`, reauthenticate the user and then retry. A successful deletion ends the Firebase account session, so a separate logout action is unnecessary.
 
     ![adding-delete-action](../imgs/adding-delete-action.avif)
-    
+
 5. To delete all records and data associated with that user's account:
     1. Navigate to the **Firestore** (from the Navigation Menu) > switch to **Firestore Settings** > **Firestore Rules**.
     2. Identify the collection from which you want to delete the user's data and ensure the **Delete** rule is set to **Tagged Users**. This will open the 'Tag Users' popup; here you can select the field that contains the document reference. See how to [setup a rule](../../database/cloud-firestore/firestore-rules.md).
@@ -167,14 +172,17 @@ Follow the steps below to add this action to any widget.
     4. See the **Delete User References** section and click on **Preview** to verify the generated rule.
     5. Click the **Deploy** button.
 
+:::warning
+Deleting a Firebase Authentication account does not automatically delete all of that user's Firestore documents, Storage objects, third-party records, or backups. Configure and test every required cleanup path before production, and provide a clear confirmation step because account deletion is destructive.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/23g4Kq2yX8t7wuI1VzdA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/23g4Kq2yX8t7wuI1VzdA?embed&show_copy_link=true" title="Common Auth Actions: Firebase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

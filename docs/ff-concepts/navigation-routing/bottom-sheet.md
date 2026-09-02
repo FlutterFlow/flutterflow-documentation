@@ -2,11 +2,20 @@
 title: Bottom Sheet
 slug: /concepts/navigation/bottom-sheet
 sidebar_position: 7
-tags: [Navigation, Actions]
-keywords: [FlutterFlow, Bottom Sheet, Navigation]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Bottom Sheet
+  - Navigation
+description: >-
+  Show and dismiss a FlutterFlow bottom sheet component, configure its modal
+  behavior, pass parameters, and return a typed result to the opening action.
+last_verified: 2026-09-01
 ---
 # Bottom Sheet
-A Bottom Sheet is an alternative to a menu or a dialog. It opens from bottom to top and can be dismissed by swiping it from top to bottom. When it opens, it prevents the user from interacting with the rest of the app. 
+A Bottom Sheet is a modal surface that presents a component from the bottom of the screen. By default, its barrier prevents interaction with the page behind it, a barrier tap dismisses it, and the user can drag it downward to close it. The **Non Dismissible** and **Enable Drag** settings control those two dismissal paths separately.
 
 You can use the bottom sheet when you want to perform a small action without creating a separate screen.
 
@@ -15,9 +24,8 @@ You can use the bottom sheet when you want to perform a small action without cre
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4GbJ3ujPrnvX6MwYiGdY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4GbJ3ujPrnvX6MwYiGdY?embed&show_copy_link=true" title="Bottom Sheet interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -40,8 +48,8 @@ You can use the bottom sheet when you want to perform a small action without cre
 
 Below are the types of Bottom Sheet actions:
 
-1. **Show**: This opens the bottom sheet.
-2. **Dismiss**: This closes the bottom sheet.
+1. **Show:** Opens a selected component as a modal bottom sheet.
+2. **Dismiss:** Closes the active bottom sheet and can optionally return a typed value.
 
 ## Opening Bottom Sheet
 
@@ -51,15 +59,14 @@ Follow the steps below to add an action that opens the bottom sheet:
 :::tip
 You can also create one from the 'BottomSheet' [**templates**](../../resources/ui/components/creating-components.md#creating-component-from-template).
 :::
-    
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/OfBRZFRhgkbMjHmXfEyo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/OfBRZFRhgkbMjHmXfEyo?embed&show_copy_link=true" title="Bottom Sheet interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -77,31 +84,29 @@ You can also create one from the 'BottomSheet' [**templates**](../../resources/u
     </iframe>
 </div>
 <p></p>
-    
+
 2. Select the **Widget** (e.g., Button) from where you want to open the bottom sheet.
 3. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
-4. Search and select the **Bottom Sheet** (under *Widget/UI Interactions*) action.
-5. To open the bottom sheet, select **Show**.
-6. **Select Component** as the component you created for the bottom sheet.
-7. (Optional) set the **Height** value. You should set the height if you want the bottom sheet to appear only up to some portion of the screen.
-8. You can set the **Background** and **Barrier Color** for the bottom sheet.
-    
+4. Search for **Bottom Sheet** under *Widget/UI Interactions*, then select **Show**.
+5. Choose the component under **Display Component** and supply any required component parameters.
+6. Optionally set **Height (Optional)** to override the component's inherent height. A bottom sheet cannot be taller than the presenting page.
+7. Use **Background Color (Optional)** for the sheet surface and **Barrier Color (Optional)** for the overlay over the page behind it.
+
     ![Set Background and Barrier color](imgs/bottom-sheet-background-color.png)
-    
-9. You can also [pass parameters](../../resources/ui/components/creating-components.md#creating-a-component-parameter) to a bottom sheet component.
-10. By default, this type of action blocks the following action (if any) from triggering while this action is in progress. (i.e., meaning the bottom sheet is present on the screen). However, in some cases, you might want to allow the next action (after this) to execute, for example, making an API call immediately after showing the bottom sheet. To do so, enable **Non Blocking** option.
-11. By default, **Non Dismissble** option closes the bottom sheet when you click outside of it. To disable this behavior, enable this option.
-12. With **Enable Drag** option, you can open and close the bottom sheet using a swipe gesture.
-13. Optional: If you are returning any value from the bottom sheet, provide the **Action Output Variable Name**. The result will be stored in this variable.
+
+8. Leave **Non-Blocking** off when later actions must wait for the sheet to close or use its result. Enable **Non-Blocking** only when the flow should continue immediately after opening the sheet.
+9. Enable **Non Dismissible** to prevent a tap on the barrier (scrim) from closing the sheet.
+10. **Enable Drag** allows the user to drag the sheet and dismiss it by swiping downward. Turn it off as well as enabling **Non Dismissible** if the sheet must close only through an explicit action inside the component.
+11. Enable **Use Safe Area** when the sheet's content should avoid operating-system intrusions at the top, left, and right edges.
+12. If the component has a **Dismiss Bottom Sheet** action with **Has Value** enabled, set **Action Output Variable Name** on this opening action. Later actions can read the result under **Action Outputs**.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/def8de637f1a43f1bd5f443d59ba5c29?sid=ab58e43b-e6d0-49e9-a536-e349885b6e63"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/def8de637f1a43f1bd5f443d59ba5c29?sid=ab58e43b-e6d0-49e9-a536-e349885b6e63" title="Bottom Sheet interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -126,11 +131,15 @@ Follow the steps below to add an action that closes the bottom sheet:
 
 1. Select the **Widget** (e.g., Button, ListTile, Container) on which you want to add the action.
 2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
-3. Search and select the **Bottom Sheet** (under *Widget/UI Interactions*) action.
-4. To close the bottom sheet, select **Dismiss**.
-5. If you want to return a value from the current bottom sheet, enable the **Has Value** toggle and pass the value by setting its *Data Type* and *Value Source*.
-    1. If you enable the *Has Value* option, you must come back to the action that opens this bottom sheet and provide the **Action Output Variable Name**. This will be used to retrieve the value from the bottom sheet.
-    2. Now you can use the *Action Output Variable Name* to get the data.
+3. Search for **Bottom Sheet** under *Widget/UI Interactions*, then select **Dismiss**.
+4. To return data, enable **Has Value**, select its data type, and set the value. This value is passed to the action that opened the sheet.
+5. Return to the **Show Bottom Sheet** action, set **Action Output Variable Name**, and use that variable from **Action Outputs** in a later action.
+
+All value-returning **Dismiss Bottom Sheet** actions in the same component must use the same data type. A barrier tap or drag dismissal does not execute one of those configured dismiss actions, so do not assume those paths return the same value. Keep **Non-Blocking** off if the next action needs the result.
+
+:::note
+Dismiss actions are not supported inside action blocks. Place **Dismiss Bottom Sheet** on a widget action within the displayed component.
+:::
 
 Here is an example of returning the selected user name back to the page.
 
@@ -139,9 +148,8 @@ Here is an example of returning the selected user name back to the page.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/KDaNgnasSA3pZ9fxjBF5?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/KDaNgnasSA3pZ9fxjBF5?embed&show_copy_link=true" title="Bottom Sheet interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

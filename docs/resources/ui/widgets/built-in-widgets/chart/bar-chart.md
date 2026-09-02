@@ -1,9 +1,16 @@
 ---
 slug: bar-chart
 title: Bar Chart
-tags: [Charts, Data Visualization]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add a Bar Chart widget in your FlutterFlow project.
 sidebar_position: 1
+keywords:
+  - Bar Chart
+  - Chart
+  - Built In Widgets
 ---
 # Bar Chart
 

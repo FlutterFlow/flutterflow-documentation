@@ -1,12 +1,24 @@
 ---
 slug: /resources/forms/radiobutton
 title: RadioButton
-tags: [Widget, RadioButton, Form]
-keywords: [FlutterFlow, RadioButton, form input, user interface, mobile app development, Flutter widget, selection control]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - RadioButton
+  - form input
+  - user interface
+  - mobile app development
+  - Flutter widget
+  - selection control
 description: Learn how to add RadioButton widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
-
 # RadioButton
+
+Use **RadioButton** when users must choose one value from a small set of options that should remain visible. Read the selected option from **Widget State**, and use **On Change** when the rest of the action flow depends on the new selection.
 
 The RadioButton widget is used to allow a user to select one option from multiple selections.
 
@@ -33,9 +45,8 @@ The RadioButton widget adds a single option named **Option 1** by default.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/uwTpWnFeSb9XfXbLwnmq?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/uwTpWnFeSb9XfXbLwnmq?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -71,9 +82,8 @@ To change the name of the option:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dWJ8ApFRyGHK6QJwYQRT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dWJ8ApFRyGHK6QJwYQRT?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -101,16 +111,15 @@ To add or remove an option from the RadioButton:
 3. Click on the **Add Option** text.
 4. Enter the name in **Option 2 Text**.
 5. To remove the option, simply click on the cancel icon () displayed in the **Option name** property.
-    
+
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dwOVrA7UXfNYNCJU2niE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dwOVrA7UXfNYNCJU2niE?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -144,9 +153,8 @@ To set the initial option:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/q2WMmLXgDBHxa8Q2ToHV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/q2WMmLXgDBHxa8Q2ToHV?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -179,9 +187,8 @@ To change the text style of the selected option:
     paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/on8RaGEIy2DoY9DkGBv8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/on8RaGEIy2DoY9DkGBv8?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -209,9 +216,8 @@ Let's build an example of showing the selected option in a Text widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/SrCgHmkDwxuUnnL7CISA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SrCgHmkDwxuUnnL7CISA?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -248,9 +254,8 @@ To retrieve the user's selection:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/pOctjajxyXfATzcV4mIx?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/pOctjajxyXfATzcV4mIx?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -287,9 +292,8 @@ To change the height of all options:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/CJW7yVt563za26klU2Mb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/CJW7yVt563za26klU2Mb?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -316,7 +320,7 @@ To add some space around the option text:
 2. Move to the Property Editor (on the right side of your screen) and scroll down to the **Radio Button Properties** section.
 3. Find the **Margin** property and enter the values.
 4. Click on the Refresh icon to reset the values.
-    
+
 :::info
 Use the Lock button to change the Left, Top, Right and Bottom padding all at the same time. Unlocking will allow you to modify each value separately.
 :::
@@ -326,9 +330,8 @@ Use the Lock button to change the Left, Top, Right and Bottom padding all at the
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6Pm0bPjJG6wMMDblFXFM?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/6Pm0bPjJG6wMMDblFXFM?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -362,9 +365,8 @@ To display all options horizontally:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/o4YRXamuP9uJxZNNFLkJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/o4YRXamuP9uJxZNNFLkJ?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -399,9 +401,8 @@ To change the option alignment:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/likoUqGPJhPJsUhu57jJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/likoUqGPJhPJsUhu57jJ?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -436,9 +437,8 @@ To change the button position:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/kWA0nm3WfmJIhm0oAeCJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/kWA0nm3WfmJIhm0oAeCJ?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -471,9 +471,8 @@ To change the color of selected and unselected options:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Wgs9lGUinPRvTGaOM0j0?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Wgs9lGUinPRvTGaOM0j0?embed&show_copy_link=true" title="RadioButton interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -491,3 +490,11 @@ To change the color of selected and unselected options:
     </iframe>
 </div>
 <p></p>
+
+## Verify RadioButton behavior
+
+- Ensure the initial option exactly matches an available option.
+- Keep option values unique, especially when they are created dynamically.
+- Test selection changes, an empty options list, and any disabled state.
+- Confirm the selected and unselected styles remain distinguishable in light and dark themes.
+- Before saving or comparing the widget state, verify its type matches the destination field or condition.

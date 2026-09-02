@@ -1,16 +1,27 @@
 ---
-keywords: ['permissions', 'firebase', 'push']
+keywords:
+  - permissions
+  - firebase
+  - push
 slug: /troubleshooting/notifications/fix-insufficient-permissions-push-notifications
 title: Fix Insufficient Permissions for Push Notifications
+description: >-
+  If you encounter an "Insufficient Permissions" error when deploying push
+  notifications from FlutterFlow to Firebase, it usually means the service
+  account does not have the neces...
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Notifications
+last_verified: 2026-09-02
 ---
-
 # Fix Insufficient Permissions for Push Notifications
 
 If you encounter an **"Insufficient Permissions"** error when deploying push notifications from FlutterFlow to Firebase, it usually means the `firebase@flutterflow.io` service account does not have the necessary permissions in your Firebase project. This guide will walk you through how to resolve this issue.
 
 :::info[Prerequisites]
 Before proceeding, ensure you have:
-- Connected your Firebase project to FlutterFlow.  
+- Connected your Firebase project to FlutterFlow.
 - Completed the steps in **[Connect to Firebase](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**.
 :::
 
@@ -26,7 +37,7 @@ Before proceeding, ensure you have:
         - In the Firebase project dashboard, click on the gear icon (⚙️) to open **Project Settings**.
         - From the left sidebar, select **Users & Permissions**.
 
-            ![](../assets/20250430121228826304.png)
+            ![Fix Insufficient Permissions for Push Notifications in FlutterFlow](../assets/20250430121228826304.png)
 
     3. **Locate the `firebase@flutterflow.io` Account**
 
@@ -34,18 +45,14 @@ Before proceeding, ensure you have:
         - If this account is missing, click **Add User**, enter `firebase@flutterflow.io` as the email address, and continue.
 
 
-    4. **Assign the Required Permissions**
+    4. **Compare the Required Permissions**
 
         - Click on `firebase@flutterflow.io` to open the user details.
-        - Ensure the following roles are assigned:
+        - Follow the current roles in [Connect to Firebase](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project) for push-function deployment. Start from the exact denied permission and do not add Owner, Editor, or service-account administration as a generic fix.
 
-            - **Editor**
-            - **Cloud Functions Admin**
-            - **Service Account User**
+                ![Fix Insufficient Permissions for Push Notifications in FlutterFlow](../assets/20250430121229163844.png)
 
-                ![](../assets/20250430121229163844.png)
-
-            - If any permissions are missing, click **Add Permissions** and select the missing roles.
+            - If a documented role is missing, add only that role, retry, and retain the error/request ID for auditability.
 
 
 5. **Save Changes:**
@@ -63,7 +70,7 @@ Before proceeding, ensure you have:
 :::note
 Granting the correct permissions to `firebase@flutterflow.io` is essential for FlutterFlow to deploy push notifications and access Firebase resources correctly.
 
-![](../assets/20250430121229476348.png)
+![Fix Insufficient Permissions for Push Notifications in FlutterFlow](../assets/20250430121229476348.png)
 :::
 
 
@@ -71,4 +78,3 @@ Granting the correct permissions to `firebase@flutterflow.io` is essential for F
 - [Connect FlutterFlow to Firebase](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)
 - [Firebase Roles and Permissions](https://firebase.google.com/docs/projects/iam/roles)
 :::
-

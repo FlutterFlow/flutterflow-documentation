@@ -1,12 +1,22 @@
 ---
 slug: /concepts/localization
 title: Localization
-tags: [Localization, Internationalization]
-keywords: [FlutterFlow, multiple languages, app localization, internationalization, multilingual support, Language Selector]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - multiple languages
+  - app localization
+  - internationalization
+  - multilingual support
+  - Language Selector
+  - translate and localize a FlutterFlow app
 description: Learn how to make your app work for different languages.
 sidebar_position: 1
+ai_queries:
+  - translate and localize a FlutterFlow app
 ---
-
 # Localization
 
 **Localization** (often abbreviated as **l10n**) is the process of making your app work for different languages, regions, and cultures. It involves translating the app's text, adapting date and number formats, and adjusting other elements to meet the cultural expectations of a particular locale.
@@ -42,9 +52,8 @@ Changing the primary language after translating all of your text will clear the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/po8PphcS06ljCvKsTG76?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/po8PphcS06ljCvKsTG76?embed&show_copy_link=true" title="Localization interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -148,9 +157,8 @@ Permission messages are displayed based on the features included in your app. Fo
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tTmqFpnDLdCgVXHl9kDz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tTmqFpnDLdCgVXHl9kDz?embed&show_copy_link=true" title="Localization interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

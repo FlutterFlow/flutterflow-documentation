@@ -1,12 +1,31 @@
 ---
 slug: /integrations/ai-agents
 title: AI Agents
-description: Learn how to add AI Agents for chat, image generation, video generation, text-to-speech, and speech-to-text in your FlutterFlow app.
-tags: [AI, Gemini, OpenAI, ElevenLabs, Integration]
+description: >-
+  Learn how to add AI Agents for chat, image generation, video generation,
+  text-to-speech, and speech-to-text in your FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Ai Agents
 sidebar_position: 1
-keywords: [FlutterFlow, AI, Gemini, Integration, OpenAI, Anthropic, ElevenLabs, Agent Builder, image generation, video generation, text-to-speech, speech-to-text]
+keywords:
+  - FlutterFlow
+  - AI
+  - Gemini
+  - Integration
+  - OpenAI
+  - Anthropic
+  - ElevenLabs
+  - Agent Builder
+  - image generation
+  - video generation
+  - text-to-speech
+  - speech-to-text
+  - add an AI chatbot or image generator inside my FlutterFlow app
+ai_queries:
+  - add an AI chatbot or image generator inside my FlutterFlow app
 ---
-
 # AI Agents
 
 AI Agents in FlutterFlow enable you to integrate AI-powered chat, image generation, video generation, text-to-speech, and speech-to-text directly into your app. An AI Agent is a configurable AI service that you define in FlutterFlow and then call from your app actions.
@@ -50,9 +69,8 @@ After creating the agent, start with the common agent settings:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Vi9UpfINWa0V6uXZG0v2?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Vi9UpfINWa0V6uXZG0v2?embed&show_copy_link=true" title="AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

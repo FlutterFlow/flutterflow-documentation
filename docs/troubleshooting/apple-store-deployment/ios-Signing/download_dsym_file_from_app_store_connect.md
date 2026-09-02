@@ -1,9 +1,20 @@
 ---
-keywords: ['connect', 'download', 'store']
-slug: /troubleshooting/apple-store-deployment/download-dsym-file-from-app-store-connect
+keywords:
+  - connect
+  - download
+  - store
+slug: >-
+  /troubleshooting/apple-store-deployment/download-dsym-file-from-app-store-connect
 title: Download dSYM File from App Store Connect
+description: >-
+  To download the dSYM file from the App Store Connect Developer Console, follow
+  these steps.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment
+last_verified: 2026-09-02
 ---
-
 # Download dSYM File from App Store Connect
 
 To download the dSYM file from the App Store Connect Developer Console, follow these steps.
@@ -15,21 +26,26 @@ To download the dSYM file from the App Store Connect Developer Console, follow t
 
 **Steps to Download the dSYM File:**
 
-1. **Sign in** to **[App Store Connect](https://appstoreconnect.apple.com/)** with your Apple Developer account.  
-2. Open your app.  
-3. Select a build from the **TestFlight** tab on your project page.  
-4. Open the **Build Metadata** tab.  
-5. Under **Include Symbols**, download the dSYM file.  
+1. **Sign in** to **[App Store Connect](https://appstoreconnect.apple.com/)** with your Apple Developer account.
+2. Open your app.
+3. Select a build from the **TestFlight** tab on your project page.
+4. Open the **Build Metadata** tab.
+5. Under **Include Symbols**, download the dSYM file.
 
-    ![](../../assets/20250430121257965718.png)
+    ![Download dSYM File from App Store Connect in FlutterFlow](../../assets/20250430121257965718.png)
 
     :::note
-    The dSYM file is only available for builds that have been successfully uploaded to App Store Connect and are in a "processing" or "ready for submission" state.
+    Symbol availability depends on how the build was produced and processed. Preserve the dSYM from the original archive or CI artifact whenever possible; App Store Connect is not a universal backup for locally generated symbols.
     :::
 
-    If the **Download dSYM file** link is not visible, it indicates that the build submission did not complete successfully. In this case:
+    If the **Download dSYM file** link is not visible, first confirm the selected build finished processing and whether App Store Connect generated downloadable symbols for it. A missing link does not always mean the upload failed. In this case:
 
-        1. Redeploy the build to the App Store.  
-        2. After successful processing, return to the **Build Metadata** tab and download the dSYM file.  
+        1. Check the original FlutterFlow/Codemagic build artifacts for the matching UUID.
+        2. Verify UUIDs with the crash report or crash service before uploading symbols.
+        3. Redeploy only when the original build itself failed or a corrected new build is required; a new build's dSYM does not symbolicate crashes from an older binary.
 
-            ![](../../assets/20250430121258232331.png)
+            ![Download dSYM File from App Store Connect in FlutterFlow](../../assets/20250430121258232331.png)
+
+## Related documentation
+
+See [ImageNotification Development Team Error](/troubleshooting/apple-store-deployment/imagenotification-development-team-error) for a related FlutterFlow workflow.

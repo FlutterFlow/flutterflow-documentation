@@ -1,9 +1,16 @@
 ---
 slug: chart
 title: Chart
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn about chart types and how to customize the Chart widget in FlutterFlow.
 sidebar_position: 1
+keywords:
+  - Chart
+  - Built In Widgets
+  - Widgets
 ---
 # Chart
 The **Chart** widget presents data visually, making complex information easier to understand and compare.
@@ -49,7 +56,7 @@ The **Chart** widget uses a white background by default. To change it, select th
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/MZdYeM0mCJQF56GRK2yy?embed&show_copy_link=true"
         title="Change the Chart Background Color"
         style={{
@@ -144,7 +151,7 @@ This example shows how to customize the X-axis title and labels.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/VsUdrZf0rMINaY9e1LhV?embed&show_copy_link=true"
         title="Customize the Chart's X-axis"
         style={{
@@ -185,7 +192,7 @@ This example shows how to customize the Y-axis title and labels.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/gvIZcHFr8TWJ9a3FlkJ5?embed&show_copy_link=true"
         title="Customize the Chart's Y-axis"
         style={{

@@ -1,14 +1,21 @@
 ---
 slug: libraries
 title: Libraries
-tags: [Libraries]
-keywords: [Libraries, Share, Reuse, Collaborate, Modularize, Dependency]
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - Libraries
+  - Share
+  - Reuse
+  - Collaborate
+  - Modularize
+  - Dependency
 description: Learn how to share and reuse entire FlutterFlow projects using libraries.
 sidebar_position: 6
+last_verified: 2026-09-02
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Libraries
 
 Libraries enable you to share and reuse entire FlutterFlow projects as dependencies across multiple projects. This allows teams and developers to modularize their apps by creating shared libraries that include components, API calls, custom code, and more. By using libraries, development becomes more efficient and scalable.
@@ -37,11 +44,11 @@ With Libraries, you can publish the complete FlutterFlow project as a library an
 
 ## Publishing a Library
 
-To make the resources in your project available for others to use, publish your project as Library. 
+To make the resources in your project available for others to use, publish your project as Library.
 
-When you publish your project as a Library, your project will become a **Library Project**, and [certain features](#disabled-features-in-a-library) will no longer be available. 
+When you publish your project as a Library, your project will become a **Library Project**, and [certain features](#disabled-features-in-a-library) will no longer be available.
 
-:::note 
+:::note
 When you publish your project as Library, it can not be reverted. If you want to restore your project so that it is no longer a Library, you can clone the project. However, things like your deployment and Firestore settings will be cleared. If you want to preserve the state of your project before turning it into a Library, you should clone it first and then publish.
 :::
 
@@ -52,7 +59,7 @@ To publish a FlutterFlow project as a library, start by creating a FlutterFlow p
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/CTuBPgISjpRWy5TT6rRD?embed&show_copy_link=true"
         title="Publishing a Library"
         style={{
@@ -95,19 +102,19 @@ To publish a project as a library, it must meet the following requirements:
 
 When a project is converted into a library, the following features are disabled to ensure compatibility and functionality limitations:
 
-- App settings 
+- App settings
   - Supabase
   - Development environments
   - Authentication
-  - Push notifications 
-  - Mobile deployment 
-  - Web deployment 
-  - Stripe 
-  - Braintree 
-  - Razorpay 
-  - Google Analytics 
-  - OneSignal 
-  - Mux 
+  - Push notifications
+  - Mobile deployment
+  - Web deployment
+  - Stripe
+  - Braintree
+  - Razorpay
+  - Google Analytics
+  - OneSignal
+  - Mux
 
 ## Importing a Library
 
@@ -118,7 +125,7 @@ To import a library project into another FlutterFlow project, you must go **Sett
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/DrzjKuhTWZXOxBB5yGJn?embed&show_copy_link=true"
         title="Importing a Library"
         style={{
@@ -141,7 +148,7 @@ To import a library project into another FlutterFlow project, you must go **Sett
 
 :::info
 
-- You can only select a library if you have at least read access on the library project. 
+- You can only select a library if you have at least read access on the library project.
 - For a library project to show in the drop down, you must be added as a collaborator on the project and the library project must have a published version.
 - You can import publicly accessible libraries by specifying the project ID in the text field when adding a library dependency.
 - By default, the latest published version of the library is imported, but you can choose to depend on an earlier version if needed.
@@ -187,12 +194,14 @@ Once the library is imported, following resources are accessible for use:
 - [API Calls](../../resources/control-flow/backend-logic/api/rest-api.md)
 - [Action Blocks](../../resources/control-flow/functions/action-blocks.md)
 - [Custom Functions](../../ff-concepts/adding-customization/custom-functions.md), [Actions](../../resources/control-flow/functions/action-flow-editor.md), and [Widgets](../../resources/ui/widgets/intro-widgets.md)
+- [Pages](../../resources/ui/pages/intro-pages.md)
+- [Firestore Collections](../../ff-integrations/database/cloud-firestore/creating-collections.md)
 - [Assets](../../resources/projects/settings/general-settings.md#app-assets) (Note: These are not versioned)
-- [Code Files](../../ff-concepts/adding-customization/code-file.md) 
+- [Code Files](../../ff-concepts/adding-customization/code-file.md)
 
 :::info
-- [**Pages**](../../resources/ui/pages/intro-pages.md), [**Firestore Collections**](../../ff-integrations/database/cloud-firestore/creating-collections.md), and [**Cloud Functions**](../../ff-concepts/adding-customization/cloud-functions.md) are still being worked on and may come in future updates.
-- Creation of [**AI Agents**](../../ff-integrations/ai/ai-agents.md) is not yet supported in the Library project
+- [Cloud Functions](../../ff-concepts/adding-customization/cloud-functions.md) and creation of [AI Agents](../../ff-integrations/ai/ai-agents.md) are not currently supported in Library projects.
+- Firebase Auth and Firebase Storage are not directly supported in Library projects. See [Libraries with Firebase](#libraries-with-firebase) for the supported model and workaround.
 :::
 
 It's important to note that these resources show up where they are instantiated. For example:
@@ -252,7 +261,7 @@ You can easily upgrade to newer versions of the libraries as they become availab
 
 ## Library Pages
 
-When you publish a library, all the pages included in the library become available for use in the consumer project. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions. 
+When you publish a library, all the pages included in the library become available for use in the consumer project. These pages function like any regular project page in your app; they support navigation, parameters, state management, and transitions.
 
 Library Pages offers a modular approach to development, making it ideal for large teams and complex, multi-feature apps. For example, instead of recreating common flows like onboarding and payment flows, you can build them in a library once and use them wherever needed.
 
@@ -269,9 +278,8 @@ When users import or update the library, they can override the default route nam
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fAgLrElyGNdf82NWGJte?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fAgLrElyGNdf82NWGJte?embed&show_copy_link=true" title="Libraries interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -314,9 +322,8 @@ NavBar settings for regular pages are available directly within the Page Setting
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BDac382RQTHTKFhtZcsc?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BDac382RQTHTKFhtZcsc?embed&show_copy_link=true" title="Libraries interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -361,16 +368,15 @@ To avoid misuse on any type credential, make sure to apply appropriate restricti
 
 The library author defines the variable name, data type (e.g., string, enum), whether the variable is nullable, and an optional default value.
 
-To create library values, navigate to **Settings and Integrations > App Settings > Publish as Library > Library Values** section and click **+ Add Value**. 
+To create library values, navigate to **Settings and Integrations > App Settings > Publish as Library > Library Values** section and click **+ Add Value**.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vGIveMr1UmSlaiOreYmR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vGIveMr1UmSlaiOreYmR?embed&show_copy_link=true" title="Libraries interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -408,9 +414,8 @@ To set library values, navigate to **Settings and Integrations > Project Setup >
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JG68MN6oBpZpPvHnKDmh?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JG68MN6oBpZpPvHnKDmh?embed&show_copy_link=true" title="Libraries interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -442,7 +447,7 @@ In library projects, you won’t see an option to link to a Firebase project. In
 Any indexes or security rules defined in the library are recognized by the importing project and deployed accordingly.
 
 :::warning[Limitations]
-Libraries work with Firebase but have **some limitations**. The **Firebase Auth** and **Firebase Storage** are not directly supported in library projects at this time. If you need these features in your library’s functionality, you can include an action that accomplishes this task as a [**callback**](../../resources/ui/components/callbacks.md). 
+Libraries work with Firebase but have **some limitations**. The **Firebase Auth** and **Firebase Storage** are not directly supported in library projects at this time. If you need these features in your library’s functionality, you can include an action that accomplishes this task as a [**callback**](../../resources/ui/components/callbacks.md).
 :::
 
 If your team has multiple projects that share a common Firebase feature, turning it into a library is a great idea. This ensures the same logic is used and connects to the same Firestore project across all apps.
@@ -455,9 +460,9 @@ Here are some examples of library projects you can build with Firebase:
 ## FAQs
 
 <details>
-<summary>What will happen to existing team libraries?</summary>
+<summary>How are legacy team libraries represented?</summary>
 <p>
-Team code and API libraries will be migrated to library Projects. These projects will be imported as a library with the latest version specified as the version. The components within team design systems will move into their own projects, while design systems will continue to exist but only containing the theme settings.
+Legacy team code and API libraries are represented as Library Projects and imported using a published version. Components from legacy team design systems are represented in their own projects, while the design system retains its theme settings.
 </p>
 </details>
 
@@ -478,12 +483,12 @@ By default, the design system of the parent project takes precedence over the im
 <details>
 <summary>How are API keys shared?</summary>
 <p>
-We're working on Library Values, which will allow users to set specific values when they import a library. This feature will be available soon.
+Define a Library Value, then have each importing project provide the value under **Settings and Integrations > Project Setup > Project Dependencies**. Library Values are client-visible configuration and must not contain secret API keys or credentials. Use a server-side or private API path for secrets.
 </p>
 </details>
 
 <details>
-<summary>How does nested dependencies work?</summary>
+<summary>How do nested dependencies work?</summary>
 <p>
 Projects can import libraries that themselves have imported other Libraries as dependencies. However, if the project and the library share the same dependency, the version must match exactly to avoid conflicts.
 </p>

@@ -1,12 +1,19 @@
 ---
 slug: /flutterflow-ui/canvas
 title: Canvas
-description: Dive into the versatile Canvas in FlutterFlow, where you can effortlessly design and preview your app’s interface.
-tags: [Canvas, FlutterFlow, UI, Design]
+description: >-
+  Dive into the versatile Canvas in FlutterFlow, where you can effortlessly
+  design and preview your app’s interface.
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
 sidebar_position: 2
-keywords: [Canvas, FlutterFlow, UI, Design]
+keywords:
+  - Canvas
+  - FlutterFlow
+  - UI
+  - Design
 ---
-
 # Canvas
 The Canvas shows the selected device screen, such as mobile, tablet, web, or desktop. It allows you to add widgets via drag-and-drop. You can select, move, and position widgets anywhere on the Canvas.
 
@@ -17,7 +24,7 @@ The Canvas also includes zoom controls, light and dark previews, multi-language 
 
 ## Show or Hide Navigation Menu
 
-From here, you can open or close the 
+From here, you can open or close the
 [Navigation Menu](../../../docs/intro/ff-ui/builder.md#navigation-menu).
 
 ## Zoom Controls
@@ -41,7 +48,7 @@ You can also set a custom preview size by clicking the current size box, enterin
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/DfBQoBkkkRX68CIYoWwD?embed&show_copy_link=true"
         title="Set Preview Screen Size"
         style={{
@@ -98,7 +105,7 @@ Use this option to switch the FlutterFlow builder between light and dark mode. T
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/95jb2CKZJKfviZqPsXKt?embed&show_copy_link=true"
         title="Set Builder to Dark Mode"
         style={{
@@ -131,7 +138,7 @@ Enable snapping to make widget width and height snap to multiples of the specifi
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/xdE4cilXUV1P7krYEJFg?embed&show_copy_link=true"
         title="Enable Snapping"
         style={{
@@ -156,7 +163,7 @@ Enable snapping to make widget width and height snap to multiples of the specifi
 
 Show resize bars to display handles on the right and bottom sides of the preview screen. You can use them to resize the preview screen to a custom size and test how your layout responds at different screen sizes.
 
-![handle-bars](imgs/handle-bars.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Resizing a widget with Canvas handles"}><source src={require("./imgs/handle-bars.mp4").default} type="video/mp4" /></video>
 
 
 #### Set Canvas Color
@@ -169,7 +176,7 @@ Use this option to change the background color of the Canvas. This can be helpfu
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/XoUnydzOgh3Uc2EruRo0?embed&show_copy_link=true"
         title="Set Canvas Color"
         style={{
@@ -206,7 +213,7 @@ If the device bezel is displayed, the safe area is always enabled in the preview
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/mhjqT9pmmyxEprnF5YOY?embed&show_copy_link=true"
         title="Show Safe Area"
         style={{
@@ -236,7 +243,7 @@ Use this option to preview your app with different text scale settings. This hel
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/uodCNZIibPCNQIfXPSKg?embed&show_copy_link=true"
         title="Adjust Text Sizing"
         style={{
@@ -266,7 +273,7 @@ Enable this option to show the keyboard on the preview screen. This is useful fo
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/xoat6tc8gNwwPPWsHG0t?embed&show_copy_link=true"
         title="Display Keyboard"
         style={{
@@ -297,7 +304,7 @@ Use this option to show the device frame in the preview. This is particularly us
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/pCZChdW9S252zmOfnD2t?embed&show_copy_link=true"
         title="Display Device Bezel"
         style={{
@@ -328,7 +335,7 @@ Enable this option to show overflow errors in the builder as they will appear in
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/dXXZAlLs0wMEj1E5SBAX?embed&show_copy_link=true"
         title="Show Overflows"
         style={{
@@ -363,7 +370,7 @@ This feature is valuable for testing your app across multiple locales without ne
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/Wt1s0IIxQXNQ5cdAMIIf?embed&show_copy_link=true"
         title="Display Language"
         style={{
@@ -396,7 +403,7 @@ Enable this option to keep common sections in the Property Panel collapsed by de
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/iXj6ebaDiAZjr0WLSzkQ?embed&show_copy_link=true"
         title="Keep Common Properties Collapsed"
         style={{

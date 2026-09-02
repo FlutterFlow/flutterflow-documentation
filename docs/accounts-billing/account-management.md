@@ -1,11 +1,19 @@
 ---
 slug: account-management
 title: Account Management
-tags: []
+tags:
+  - FlutterFlow
+  - Accounts & Billing
 toc_max_heading_level: 5
 sidebar_position: 1
+description: >-
+  This section contains information on changing your password, verifying your
+  email, and deleting your account.
+keywords:
+  - Account Management
+  - Accounts Billing
+  - FlutterFlow
 ---
-
 # Account Management
 This section contains information on changing your password, verifying your email, and deleting your account.
 
@@ -41,7 +49,7 @@ To check if you have verified your account:
 If you did not receive a verification email, please follow these steps:
 
 1. Navigate to your [account page in FlutterFlow](https://app.flutterflow.io/account).
-2. Check that your email address is correct. If your email is incorrect, please reach out to `support@flutterflow.io` to correct this. 
+2. Check that your email address is correct. If your email is incorrect, please reach out to `support@flutterflow.io` to correct this.
 3. From the **Profile Information** section, select **Verify Email**.
 
 You should receive a new confirmation email. If you do not receive the verification email, please contact us at support@flutterflow.io.
@@ -62,13 +70,13 @@ This step can not be undone. We will not be able to recover your projects.
 ### How do I change or update my email address?
 To change your login email in FlutterFlow:
 
-1. Log into your FlutterFlow account. 
-2. Go to the dashboard and select your account tile (showing your name and email). 
-3. Click on **Update Email**. 
-4. Enter your current email and password. 
-5. Input your new email and click **Confirm & Log Out**. 
-6. Verify the new email via the link sent to it. 
-7. Now, you need to create a new password for your new email address. To do so, click on the **Forgot Password** on the login page and enter your new email address. 
+1. Log into your FlutterFlow account.
+2. Go to the dashboard and select your account tile (showing your name and email).
+3. Click on **Update Email**.
+4. Enter your current email and password.
+5. Input your new email and click **Confirm & Log Out**.
+6. Verify the new email via the link sent to it.
+7. Now, you need to create a new password for your new email address. To do so, click on the **Forgot Password** on the login page and enter your new email address.
 8. You'll receive the password reset link at your new email address. Click the link and reset the password.
 
 Now, you are ready to log in with your new email address and password.

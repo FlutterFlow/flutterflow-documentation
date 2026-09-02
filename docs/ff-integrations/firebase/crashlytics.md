@@ -2,11 +2,16 @@
 slug: /integrations/firebase/crashlytics
 title: Crashlytics
 description: Learn how to integrate Firebase Crashlytics in your FlutterFlow app.
-tags: [Firebase, Crashlytics]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 2
-keywords: [FlutterFlow, Firebase, Crashlytics]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Crashlytics
 ---
-
 # Firebase Crashlytics
 [Firebase Crashlytics](https://firebase.google.com/products/crashlytics) is a crash-reporting tool that helps you catch errors. It enables you to troubleshoot the issue by logging the details, such as the exact line number that caused the error, device name, OS version, and time when the crash happened.
 

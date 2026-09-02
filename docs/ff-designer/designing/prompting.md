@@ -1,12 +1,21 @@
 ---
 slug: /designer/prompting
 title: Prompting
-description: Generate your first app design from a prompt. Explore styles, attach reference images, and create a complete storyboard from a single description.
-tags: [Prompting, FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Generate your first app design from a prompt. Explore styles, attach reference
+  images, and create a complete storyboard from a single description.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [flutterflow prompting, ai prompt design, generate app, explore styles, image attachments]
+keywords:
+  - flutterflow prompting
+  - ai prompt design
+  - generate app
+  - explore styles
+  - image attachments
 ---
-
 # Prompting
 
 Prompting is how you turn an idea into screens. Describe your app in the main prompt box, optionally attach a reference image, and the Designer generates a complete editable storyboard for you.
@@ -37,8 +46,7 @@ Here's how you generate an initial screen design, refine, and export it:
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/hGR4rvYpgDskcypTW1Er?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/hGR4rvYpgDskcypTW1Er?embed&show_copy_link=true" title="Prompting interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -79,8 +87,7 @@ When you hover over a style, you can use the following options:
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/Y1d6tFGz5LQnrsuXZPoV?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/Y1d6tFGz5LQnrsuXZPoV?embed&show_copy_link=true" title="Prompting interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -113,8 +120,7 @@ For example, you might upload a rough wireframe of a food delivery app showing a
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://demo.arcade.software/9MbETqOaPUXR5yctP5B2?embed&show_copy_link=true"
-        title=""
+        src="https://demo.arcade.software/9MbETqOaPUXR5yctP5B2?embed&show_copy_link=true" title="Prompting interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

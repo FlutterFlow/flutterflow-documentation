@@ -1,12 +1,21 @@
 ---
 slug: /integrations/mapbox/staticmap-widget
 title: Static Map Widget
-description: Learn how to add and configure the StaticMap (Mapbox) widget in your FlutterFlow app.
-tags: [Widget, Integration]
+description: >-
+  Learn how to add and configure the StaticMap (Mapbox) widget in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Mapbox
 sidebar_position: 2
-keywords: [StaticMap, Mapbox, Widget, Integration]
+keywords:
+  - StaticMap
+  - Mapbox
+  - Widget
+  - Integration
+last_verified: 2026-09-02
 ---
-
 # Static Map Widget
 The StaticMap widget shows an image of the map from the [mapbox](https://www.mapbox.com/). This widget is a good choice when you want to display a location on a map without interactivity or controls such as zoom-in, zoom-out, and map scrolling.
 
@@ -20,11 +29,15 @@ To display a map with interactivity or controls, use the [**GoogleMaps**](../goo
 Here's an example of how you can add the StaticMap widget to your project:
 
 1. First, drag the **StaticMap** widget from the **Base Elements** tab (in the Widget Panel) or add it directly from the widget tree.
-2. You'll need the Mapbox API key to render the map image. Get the API key by creating the [Mapbox account](https://account.mapbox.com/auth/signup/) and then return to FlutterFlow, move to the properties panel, scroll down to the Static Map section and enter the key into the **Mapbox API Key** input box.
+2. You'll need a Mapbox public access token to render the map image. Create or select a token in your [Mapbox account](https://account.mapbox.com/), give it only the scopes required by the Static Images API, and apply allowed-URL restrictions for web use where applicable. Return to FlutterFlow, open the properties panel, scroll to **Static Map**, and enter the token in **Mapbox API Key**.
 3. To display your location on the map, enter the **Latitude** and **Longitude** values inside the **Lat** and **Lng** input boxes.
 
 :::tip
 To get the lat long values for any location, open to Google Map, right-click on any place and click on the first item from the list. It should look like this `19.080045795863743`, `72.8794235725136`.
+:::
+
+:::warning[Public token, billing, and privacy]
+A token embedded in a client app or image URL can be inspected. Never use a Mapbox secret token here. Monitor token usage and Mapbox billing, and rotate a token if it is abused. Coordinates and other URL parameters are sent to Mapbox; avoid exposing sensitive user locations without an appropriate privacy basis and disclosure.
 :::
 
 <div style={{
@@ -32,9 +45,8 @@ To get the lat long values for any location, open to Google Map, right-click on 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/z1kDG18cXxXzIiddhQFP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/z1kDG18cXxXzIiddhQFP?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -72,9 +84,8 @@ To change the map style:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LYxQn4Fx5msgR68Di4cr?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LYxQn4Fx5msgR68Di4cr?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -110,9 +121,8 @@ To set the zoom, tilt, and rotation value for the map:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/e2jMy8ZdRYCmmmdEIx2C?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/e2jMy8ZdRYCmmmdEIx2C?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -149,9 +159,8 @@ This widget does not resize the marker image from the URL link. Make sure you pr
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/05eD7crtpMH3QiD2ibk8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/05eD7crtpMH3QiD2ibk8?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -174,6 +183,8 @@ This widget does not resize the marker image from the URL link. Make sure you pr
 
 Enabling the cache will store the map image and display it when the internet is unavailable.
 
+Caching does not guarantee permanent offline availability and must comply with Mapbox's current terms. Treat the cached image as stale until refreshed, and do not rely on it for time-sensitive routing, safety, or availability information.
+
 To cache the map image:
 
 1. Select **StaticMap** from the widget tree or the canvas area.
@@ -185,9 +196,8 @@ To cache the map image:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9xLVUrfd9LNufOxX5EfI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9xLVUrfd9LNufOxX5EfI?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -221,9 +231,8 @@ To change the box fit value:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/I9UHGeEUeFKMZiSSP70p?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/I9UHGeEUeFKMZiSSP70p?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

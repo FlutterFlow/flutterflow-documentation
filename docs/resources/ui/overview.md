@@ -1,10 +1,23 @@
 ---
-title: Overview
+title: 'Overview: Ui'
 sidebar_position: 1
-keywords: [Widget, Widget Tree, Components, Page, UI Building Blocks, Atoms, Molecules, Atomic Design]
-tags: [Widget, UI, Widget Tree]
+keywords:
+  - Widget
+  - Widget Tree
+  - Components
+  - Page
+  - UI Building Blocks
+  - Atoms
+  - Molecules
+  - Atomic Design
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  When designing user interfaces in FlutterFlow, understanding the fundamental
+  building blocks—ranging from atomic to more complex structures—is crucial.
 ---
-
 # UI Building Blocks
 
 When designing user interfaces in FlutterFlow, understanding the fundamental building
@@ -44,14 +57,14 @@ Now let's apply the above concepts to what we see in FlutterFlow as we create ou
 
 ## Pages
 
-In FlutterFlow projects, a **Page** is essentially a new section or feature of your app that combines 
-various UI elements to form a complete screen in the app. When you create a new project in 
-FlutterFlow, an empty page called `HomePage` is the first thing you see on your canvas. 
+In FlutterFlow projects, a **Page** is essentially a new section or feature of your app that combines
+various UI elements to form a complete screen in the app. When you create a new project in
+FlutterFlow, an empty page called `HomePage` is the first thing you see on your canvas.
 
-How you define your pages defines the flow of the app and user experience for the user. For 
-example, in our [**E-commerce Demo app**](https://bit.ly/ff-docs-demo-v2), after login, the user lands on `ProductListPage` which has a 
-NavigationBar at the bottom that takes the user to different Pages in the app such as 
-`ProfilePage`, etc. 
+How you define your pages defines the flow of the app and user experience for the user. For
+example, in our [**E-commerce Demo app**](https://bit.ly/ff-docs-demo-v2), after login, the user lands on `ProductListPage` which has a
+NavigationBar at the bottom that takes the user to different Pages in the app such as
+`ProfilePage`, etc.
 
 :::info
 Learn more about creating a new [**Page**](pages/intro-pages.md) and using its [**Page Elements**](pages/page-elements.md) like AppBar, Drawer, etc.
@@ -59,14 +72,14 @@ Learn more about creating a new [**Page**](pages/intro-pages.md) and using its [
 
 ## Widgets
 
-A Page usually contains a combination of widgets and components. 
+A Page usually contains a combination of widgets and components.
 ![everything-widget.png](imgs%2Feverything-widget.png)
 
-Let's talk about widgets first, 
-which are the atomic elements or building blocks of the UI structure in FlutterFlow. 
+Let's talk about widgets first,
+which are the atomic elements or building blocks of the UI structure in FlutterFlow.
 
 Each widget can be thought of as an atom or a molecule, depending on its complexity and its parent-child
-relationship. For example, an atomic widget (such as `TextField`) cannot hold a child element, but 
+relationship. For example, an atomic widget (such as `TextField`) cannot hold a child element, but
 molecular widgets (such as `Column` or `Row`) can.
 
 :::info
@@ -76,7 +89,7 @@ Learn more about the [**basic widgets**](widgets/intro-widgets.md) and how to [*
 ## Components
 
 In the idea of atomic design, components in FlutterFlow are similar to "organisms." These
-organisms are made up of simpler parts called _atoms_ and _molecules_, or simply widgets, which 
+organisms are made up of simpler parts called _atoms_ and _molecules_, or simply widgets, which
 together form useful and reusable parts of the user interface.
 
 These components are designed to be reusable, meaning they can be utilized across different screens
@@ -84,7 +97,7 @@ and projects to provide consistent functionality and aesthetics without the need
 from scratch everytime.
 
 :::info
-Learn more about [**components**](components/intro-components.md) and [**how to use them**](components/using-components.md) in pages. 
+Learn more about [**components**](components/intro-components.md) and [**how to use them**](components/using-components.md) in pages.
 :::
 
 
@@ -115,5 +128,3 @@ actions or to fit different parts of your app, but they all start from the
 template you created (**the class**). This means you only need to design the `ProductListCard`
 once and then can reuse and adapt it as needed, simplifying your app development
 process and ensuring consistency across your project.
-
-

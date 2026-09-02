@@ -1,11 +1,21 @@
 ---
 title: Variables
-description: Variables
+description: >-
+  Variables in FlutterFlow let you store and manage dynamic data, which is
+  essential for creating interactive and responsive applications.
+last_verified: 2026-09-01
 sidebar_position: 1
 slug: /resources/data-representation/variables
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
+keywords:
+  - Variables
+  - Data Representation
+  - Resources
 ---
-
-# Variable
+# Variables
 
 Variables in FlutterFlow let you store and manage dynamic data, which is essential for creating interactive and responsive applications. By using variables, you can capture user inputs, track states, and manipulate data across different parts of your app.
 
@@ -31,14 +41,14 @@ Variables are used in practically all areas of the app, from the user interface 
 When creating variables in FlutterFlow, there are a few important considerations regarding their name, data type, nullability, and initial values. The specific _process_ for creating variables differs depending on whether you are working with App State, Page State, or Component State variables, and you can find detailed instructions linked below.
 
 ### Naming Variable
-Start by giving your variable a meaningful and descriptive name that reflects its purpose. This name will be used throughout your app to reference the variable, so it's important to keep it clear and consistent with your naming conventions. 
+Start by giving your variable a meaningful and descriptive name that reflects its purpose. This name will be used throughout your app to reference the variable, so it's important to keep it clear and consistent with your naming conventions.
 
 :::tip[Recommended naming convention]
-We recommend the `lowerCamelCase` naming convention for variables. Learn more about the **[recommended naming conventions](../style-guide.md)** used in FlutterFlow and Flutter projects. 
+We recommend the `lowerCamelCase` naming convention for variables. Learn more about the **[recommended naming conventions](../style-guide.md)** used in FlutterFlow and Flutter projects.
 :::
 
 ### Assigning a Data Type to a Variable
-Next, you need to select the appropriate data type for your variable. FlutterFlow offers several data types, such as **Text, Integer, Boolean,** or **String**. Refer to the **[Data Types guide](data-types.md)** to learn more about the available data types.
+Next, select the appropriate data type. Common choices include **String**, **Integer**, **Double**, and **Boolean**; structured and integration-specific types appear only in compatible contexts. Refer to the **[Data Types guide](data-types.md)** for the full model and availability rules.
 
 Choosing the correct data type is crucial, as it determines how the variable can be used and what kind of data it can store.
 
@@ -48,7 +58,7 @@ Enable the **Is List** toggle to indicate that this field should be of the **lis
 
 :::info[Example]
 
-If the data type selected is `String` and the `Is List` toggle is enabled, FlutterFlow will create a **list of String variables**. This list can hold multiple string values, such as a list of city names.
+If the selected data type is `String` and **Is List** is enabled, FlutterFlow creates one variable whose value is a list of strings. It can hold multiple values, such as a list of city names.
 :::
 
 ### Nullable & Initial Value
@@ -90,7 +100,7 @@ When setting variables via the **Set Variable** menu, you have the ability to ma
 
 For instance, you can:
 
-- **[Concatenate or Combine Strings:](../control-flow/functions/utility-functions.md#combine-text)** Combine multiple text values into a single string. To learn how to manipulate strings before setting variables, see the [Utility Functions](../control-flow/functions/utility-functions.md#combine-text) guide. 
+- **[Concatenate or Combine Strings:](../control-flow/functions/utility-functions.md#combine-text)** Combine multiple text values into a single string. To learn how to manipulate strings before setting variables, see the [Utility Functions](../control-flow/functions/utility-functions.md#combine-text) guide.
 - **[Filter or Sort Lists](#list-options):** Organize or refine data in lists to display only what’s relevant or in a specific order.
 - [**Convert DateTime to UNIX:**](global-properties.md#current-time) Change a DateTime object into a UNIX timestamp for compatibility or calculation purposes.
 - [**Apply Conditional Logic:**](../control-flow/functions/conditional-logic.md) Use If/Then/Else statements to set different values based on specific conditions.
@@ -109,8 +119,7 @@ The option **Map List Items** allows you to prepare a list of specific fields fr
 
 Here's an example of preparing a list of only cat names from Firebase documents (that contain other fields like name, age, and breed) and displaying them on dropdown.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/744716b1b4d640bc8a18c2fc4c7a2a25?sid=2f642f76-4a6b-4f39-a62f-3cec58953a07" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/744716b1b4d640bc8a18c2fc4c7a2a25?sid=2f642f76-4a6b-4f39-a62f-3cec58953a07" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -118,8 +127,7 @@ com/embed/744716b1b4d640bc8a18c2fc4c7a2a25?sid=2f642f76-4a6b-4f39-a62f-3cec58953
 
 The **Filter List Items** option allows you to create a list of items based on specific criteria, generating a sublist of items that match. For example, you might want to create a list of users over a certain age from a larger user database or perhaps compile a list of products within a specific price range from an extensive inventory.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/2a68084cc58c4c5c9bf636b3b31ad1f8?sid=d7fe9782-86f9-4d88-82e7-0db46b402c4a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/2a68084cc58c4c5c9bf636b3b31ad1f8?sid=d7fe9782-86f9-4d88-82e7-0db46b402c4a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -135,13 +143,12 @@ If your list contains "native data types" (like numbers or strings), we can auto
 
 Here's an example of displaying random names in alphabetical order:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/bcc3f1e72e8247a48826a2dc891153b1?sid=1a4bf7d3-4e39-4e5a-81bd-9d4ade00155d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/bcc3f1e72e8247a48826a2dc891153b1?sid=1a4bf7d3-4e39-4e5a-81bd-9d4ade00155d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
-:::info[Reversing a list]
-To reverse sort a list, first sort it using the sort option, then apply the listView's [reverse option](../ui/widgets/composing-widgets/list-grid.md#advanced-functionalities) for descending order.
+:::info[Descending order]
+In **Sort List Items**, set **Sort Order** to **Descending**. A ListView's [Reverse](../ui/widgets/composing-widgets/list-grid.md#advanced-functionalities) setting changes its layout and scroll direction; it is not a substitute for sorting the data.
 :::
 
 For lists with [Custom Data Types](custom-data-types.md), you need to tell which field to use for sorting by specifying it in the **Sort Key**, and this field should be a standard data type that has a clear, natural way to be ordered.
@@ -149,8 +156,7 @@ For lists with [Custom Data Types](custom-data-types.md), you need to tell which
 Here's how you can display a list of items (of the custom data type 'Product') in order, sorted by their price.
 
 <p></p>
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4d505788441745c490a69687628f4126?sid=cdca45e3-bd8f-40fc-bd1f-c9e6a7f6a57a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/4d505788441745c490a69687628f4126?sid=cdca45e3-bd8f-40fc-bd1f-c9e6a7f6a57a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -160,8 +166,7 @@ This option helps you create a list with unique items, such as extracting distin
 
 Here's an example of displaying a list of unique cat breeds:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/02bab8cf7a4c48228700b2493c155f7d?sid=a7fb6c23-31c4-4bed-a590-011aaca6d71f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/02bab8cf7a4c48228700b2493c155f7d?sid=a7fb6c23-31c4-4bed-a590-011aaca6d71f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -169,8 +174,7 @@ To get a list of unique items from a list of custom data type, first map the lis
 
 <p></p>
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/92db0dff32734c44b6f2b31e2538ec99?sid=7c632af2-c196-43c3-8ad0-9d61570a0be6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/92db0dff32734c44b6f2b31e2538ec99?sid=7c632af2-c196-43c3-8ad0-9d61570a0be6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -178,23 +182,20 @@ com/embed/92db0dff32734c44b6f2b31e2538ec99?sid=7c632af2-c196-43c3-8ad0-9d61570a0
 
 Choose the **Number of Items** option if you want to get the count of the total elements in the list.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/08db976f668e4e4b9195c7f75b702858?sid=da81e4d3-b841-4611-932f-352bfe3ad7f3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/08db976f668e4e4b9195c7f75b702858?sid=da81e4d3-b841-4611-932f-352bfe3ad7f3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 #### Item at Index
 
-The **Item at Index** option allows you to access a specific item by its position in the list. For instance, you could retrieve the third item from a list of customer names, or select the fifth product in a catalog list. This is especially useful in scenarios where the order of items carries significance, such as fetching the latest entry in a time-ordered log, or simply when you need to pinpoint a specific item without filtering through the entire list.
+The **Item at Index** option accesses an item by its zero-based position: index `0` is the first item, index `1` is the second, and so on. Ensure the index is within the list's bounds before relying on the result.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/d34a200a3fc04563838482d1898d2ceb?sid=106b3d89-751b-45dc-9277-d800391ffb89" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/d34a200a3fc04563838482d1898d2ceb?sid=106b3d89-751b-45dc-9277-d800391ffb89" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 #### Is Set and Not Empty
 
 To determine, if any value is present in the list or if the list is not empty, choose the **Is Set And Not Empty** option. For example, it can be used to check if a search query returned any results or to verify that a data collection process has successfully captured entries.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/472d32c902a94b338aee5d7cca905517?sid=0745b640-715d-49d5-86eb-9250decb4aea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Variables interactive tutorial" src="https://www.loom.com/embed/472d32c902a94b338aee5d7cca905517?sid=0745b640-715d-49d5-86eb-9250decb4aea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 

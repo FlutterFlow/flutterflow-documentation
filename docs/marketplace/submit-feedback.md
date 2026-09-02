@@ -2,11 +2,17 @@
 slug: submit-feedback
 title: Submit Feedback
 description: Learn more about the submitting feedback on FlutterFlow marketplace items.
-tags: [MarketPlace, Submit Feedback]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 2
-keywords: [FlutterFlow, MarketPlace, Submit Feedback, Review Dispute Guidelines]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Submit Feedback
+  - Review Dispute Guidelines
+last_verified: 2026-09-02
 ---
-
 # Submitting Feedback for Items
 
 At FlutterFlow Marketplace, your feedback is crucial to improving the quality and reliability of the items available. There are three main ways to submit feedback:

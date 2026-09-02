@@ -1,12 +1,23 @@
 ---
 slug: /deployment/apple-app-store-deployment
 title: Apple App Store Deployment
-description: Learn how to seamlessly deploy your apps to the Apple App Store using FlutterFlow.
-tags: [Apple App Store, Deployment, FlutterFlow, iOS]
+description: >-
+  Learn how to seamlessly deploy your apps to the Apple App Store using
+  FlutterFlow.
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 4
-keywords: [Apple App Store, Deployment, FlutterFlow, iOS]
+keywords:
+  - Apple App Store
+  - Deployment
+  - FlutterFlow
+  - iOS
+  - deploy a FlutterFlow app to the Apple App Store
+ai_queries:
+  - deploy a FlutterFlow app to the Apple App Store
+last_verified: 2026-09-02
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -20,6 +31,8 @@ FlutterFlow allows you to deploy your apps directly to the App Store from within
 - Set an App Launcher Icon for your app under **Settings & Integrations > General > App Assets**. **Note**: The launcher icon cannot be transparent or contain an alpha channel.
 - It's recommended to test your app on a real device before deployment. Follow [**these instructions**](../testing/local-run) to test your app locally.
 :::
+
+Before uploading, complete Apple's current app privacy details, required-reason API declarations, export-compliance questions, age rating, account-deletion flow when accounts can be created, and any Sign in with Apple requirement. Test purchases, subscriptions, push notifications, universal links, permissions, and login on a release build and a real device.
 
 ## Deploy to App Store
 
@@ -40,9 +53,8 @@ To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://deve
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JGwpUcUjVTiFSfc3kGef?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JGwpUcUjVTiFSfc3kGef?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -70,9 +82,8 @@ To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://deve
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tVasNWruqpZg01we8gap?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tVasNWruqpZg01we8gap?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,9 +113,8 @@ To add your App ID to FlutterFlow, go to **[App Store Connect](https://appstorec
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oWMQvIeQfAbGIvMEm4XR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oWMQvIeQfAbGIvMEm4XR?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -129,14 +139,17 @@ To generate your API Key, go to [**App Store Connect**](https://appstoreconnect.
 
 Generate a new API key by selecting **Add (+)**, entering a name, and assigning the **App Manager** role. Once the key is generated, download it and upload it to **FlutterFlow** under **Settings & Integrations > App Settings > Mobile Deployment > App Store > Private Key**.
 
+:::danger[Protect the App Store Connect private key]
+The downloaded `.p8` file is a credential that can perform the key's App Store Connect actions. Upload it only to the dedicated FlutterFlow deployment setting. Never add it to app assets, source control, client code, shared chat, or general cloud storage. Limit who can access the FlutterFlow project, keep a controlled credential inventory, and revoke and replace the key immediately after suspected exposure or when it is no longer needed.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/x2X1EcIYLpmDAE7Fn08h?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/x2X1EcIYLpmDAE7Fn08h?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -164,9 +177,8 @@ Copy the **Issuer ID** from [**App Store Connect**](https://appstoreconnect.appl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LVqjJmapbZeK7gY1cYmo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LVqjJmapbZeK7gY1cYmo?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -194,9 +206,8 @@ Return to **[App Store Connect](https://appstoreconnect.apple.com/) >** **Users 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/qQdK8wDgQyxHplVt4LyP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qQdK8wDgQyxHplVt4LyP?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -236,6 +247,8 @@ If you prefer to manage your deployment process outside of FlutterFlow, such as 
 
 From [**App Store Connect**](https://appstoreconnect.apple.com/), select **My Apps** and choose your app. Select **Prepare for Submission**, add the app assets and metadata, and then click **Add for Review**.
 
+Select the exact uploaded build and verify the version, bundle ID, privacy policy and support URLs, review contact, review notes and demo credentials, screenshots, in-app purchases, content rights, encryption/export compliance, and release option. Never give reviewers production administrator credentials; provide a least-privilege review account with representative data.
+
 ![add-for-review.avif](../imgs/add-for-review.avif)
 
 Your app will now be reviewed by Apple. For additional information on Apple's review guidelines, please see [this link](https://developer.apple.com/app-store/review/guidelines/).
@@ -250,9 +263,8 @@ Watch this video if you prefer watching a video tutorial.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/4GFMsYep_S0"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/4GFMsYep_S0" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -281,7 +293,7 @@ Watch this video if you prefer watching a video tutorial.
 <details>
 <summary>After submitting my iOS app to the App Store, I am getting an 'ITMS-91053: Missing API declaration' issue. What should I do?</summary>
 <p>
-Apple requires that apps using certain APIs have a Privacy Manifest file that declares the [**reason for using the API**](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api). Apple will begin requiring this file for App Store approval on May 1, 2024.
+Apple requires apps using certain APIs to include a Privacy Manifest that declares an approved [**reason for using the API**](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing-use-of-required-reason-api). This requirement has applied to App Store submissions since May 1, 2024.
 
 Most packages that FlutterFlow uses already have a Privacy Manifest created by the package author or FlutterFlow team. However, there may be some cases where packages don't have the necessary privacy manifest needed.
 
@@ -291,7 +303,7 @@ Here are the steps you can take to resolve this issue:
 
 1. See if the custom package you use is listed [here](https://developer.apple.com/support/third-party-SDK-requirements/); ensure to use the latest version if you are using any of these.
 2. If unsure which package is using protected APIs, you may be able to use a tool like [this](https://github.com/crasowas/app_store_required_privacy_manifest_analyser) to identify them. Once identified, update to the latest versions, as the package author may have addressed compliance issues.
-    1. To verify, look into the package's changelog or source code for a `PrivacyInfo.privacy` file, which indicates compliance (examples [here](https://github.com/fluttercommunity/plus_plugins/blob/main/packages/share_plus/share_plus/ios/PrivacyInfo.xcprivacy) and [here](https://github.com/flutter/packages/blob/main/packages/url_launcher/url_launcher_ios/ios/Resources/PrivacyInfo.xcprivacy)).
+    1. To verify, look into the package's changelog or source code for a `PrivacyInfo.privacy` file, which indicates compliance (examples [here](https://github.com/fluttercommunity/plus_plugins/tree/main/packages/share_plus/share_plus) and [here](https://github.com/flutter/packages/tree/main/packages/url_launcher/url_launcher_ios)).
     2. If the current package hasn’t resolved the issue, consider using an alternative package that complies, or contact the package's maintainer for a fix.
 3. If you have written a custom iOS code that is accessing the APIs:
     1. In FlutterFlow, navigate to **Settings & Integrations > App Settings > Privacy Manifest Configuration**.
@@ -300,5 +312,3 @@ Here are the steps you can take to resolve this issue:
 ![privacy-manifest-configuration](../imgs/privacy-manifest-configuration.avif)
 </p>
 </details>
-
-

@@ -1,14 +1,26 @@
 ---
-keywords: ['security', 'error', 'firebase', 'permissions']
+keywords:
+  - security
+  - error
+  - firebase
+  - permissions
 slug: /troubleshooting/firebase/content-manager-firestore-error
 title: Content Manager Firestore Error
+description: >-
+  You may see the following error message when accessing the FlutterFlow Content
+  Management System (CMS) : This error typically occurs when Firebase
+  permissions or authentication...
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
+last_verified: 2026-09-02
 ---
-
 # Content Manager Firestore Error
 
 You may see the following error message when accessing the **FlutterFlow Content Management System (CMS)**:
 
-![](../assets/20250430121517855306.png)
+![Content Manager Firestore Error in FlutterFlow](../assets/20250430121517855306.png)
 
 This error typically occurs when Firebase permissions or authentication settings are not properly configured. Follow the steps below to resolve it.
 
@@ -21,7 +33,7 @@ This error typically occurs when Firebase permissions or authentication settings
     5. Go to the **Sign-in method** tab.
     6. Ensure **Email/Password** is listed and marked as **Enabled** ✅.
 
-    ![](../assets/20250430121518159572.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518159572.png)
 
     :::note
     If Email/Password is not enabled, turn it on by clicking the pencil icon and toggling the setting.
@@ -30,22 +42,18 @@ This error typically occurs when Firebase permissions or authentication settings
 
 2. **Add Required Firebase Project Permissions**
 
-    FlutterFlow requires the following roles to be granted to `firebase@flutterflow.io` for proper functionality:
-
-    - Editor
-    - Cloud Functions Admin
-    - Service Account Admin
+    Follow the current [Firebase connection permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project) for `firebase@flutterflow.io`. Do not add Owner, Service Account Admin, or other broad roles as a generic Content Manager fix unless the current setup guide explicitly requires them for the operation.
 
     To add these permissions:
 
     1. In the **[Firebase Console](https://console.firebase.google.com/)**, open your project.
     2. Navigate to **Project Settings** > **Users & Permissions**.
-    3. Check if `firebase@flutterflow.io` has the roles listed above.
+    3. Check whether the service account has the documented roles and whether an organization-policy denial is shown in the exact error.
 
-    ![](../assets/20250430121518370897.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518370897.png)
 
     :::info
-    If these roles are missing, the integration is incomplete. Make sure to add all three roles.
+    Grant only the roles required by the current connection workflow and your enabled features.
     :::
 
 
@@ -55,7 +63,7 @@ This error typically occurs when Firebase permissions or authentication settings
     2. Scroll down to the **Firestore Rules** section.
     3. Click **Deploy/Redeploy** to apply your latest rules.
 
-    ![](../assets/20250430121518594245.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518594245.png)
 
 
 4. **Define Your Firebase Schema**
@@ -68,23 +76,21 @@ This error typically occurs when Firebase permissions or authentication settings
     Press `Ctrl + R` (on Windows) or `Cmd + R` (on macOS) to refresh and ensure you’re on the latest version of FlutterFlow.
 
 
-6. **Clear Cache and Re-Login**
+6. **Refresh the Account Session When Indicated**
 
     After completing the above steps:
 
-    - Clear your browser cache.
-    - Log out and log back into FlutterFlow.
+    - If the error indicates an expired FlutterFlow session, log out and back in.
+    - Otherwise, preserve the error and request ID; clearing all browser data does not fix IAM, rules, schema, or Firebase Auth configuration.
 
 
 
 
 :::info[Still not working?]
-Try reconfiguring permissions from scratch.
-
 If none of the steps resolve the issue:
-1. Remove existing Firebase permissions.
-2. Re-add all necessary roles from scratch.
-3. Follow the full setup instructions in the **[official FlutterFlow Firebase integration guide](/integrations/firebase/connect-to-firebase/)**.
+1. Compare the current roles with the **[official FlutterFlow Firebase integration guide](/integrations/firebase/connect-to-firebase/)**.
+2. Review Firestore Rules and the authenticated Content Manager user separately from Google Cloud IAM.
+3. Do not remove working roles or production rules without a rollback plan.
 :::
 
 By following the steps above, you should be able to resolve the error and continue using FlutterFlow CMS without interruptions.

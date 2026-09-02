@@ -1,12 +1,26 @@
 ---
 title: Common Widget Properties
-tags: [Widgets]
-keywords: [Common Widget Properties, Visibility, Opacity, Padding, Alignment, Testing Value Key, Width and Height, Color Picker, Bulk Edits, Unsplash Images, UI Builder Display Value, Border Settings]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Common Widget Properties
+  - Visibility
+  - Opacity
+  - Padding
+  - Alignment
+  - Testing Value Key
+  - Width and Height
+  - Color Picker
+  - Bulk Edits
+  - Unsplash Images
+  - UI Builder Display Value
+  - Border Settings
 description: Learn how to control common widget properties in FlutterFlow
 sidebar_position: 6
+last_verified: 2026-09-02
 ---
-
-
 # Common Widget Properties
 
 When working with widgets in FlutterFlow, you'll encounter properties and features that are common across multiple widget types. Below is a detailed overview of such properties.
@@ -44,6 +58,8 @@ For example, you might create two separate navigation menus:
 
 The **Opacity** property controls how transparent or visible a widget appears. It accepts a value between 0 and 1, where 0 means fully transparent, 1 is fully opaque, and 0.5 results in semi-transparency.
 
+Setting opacity to `0` makes a widget visually transparent but does not remove its layout space. Use **Conditional** visibility when the widget should not participate in the layout while hidden.
+
 This property enables a wide range of creative UI effects, such as translucent buttons, overlay highlights, or smooth theme transitions.
 
 When **Animated Opacity** is enabled, any changes to the opacity value are smoothly animated based on the specified duration and curve, enhancing visual appeal and user experience.
@@ -67,9 +83,8 @@ You can choose from two options:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G2iYgYC3X7DrxAnQEfJU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G2iYgYC3X7DrxAnQEfJU?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -95,9 +110,8 @@ If you prefer watching a video tutorial, here is the guide for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/iMc1m-l7eyw"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/iMc1m-l7eyw" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -149,9 +163,8 @@ Values beyond this range will push the widget outside the visible screen area.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/qEMYOkukZVVG83LAEsTK?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qEMYOkukZVVG83LAEsTK?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -181,7 +194,7 @@ A **Value Key** is used to uniquely identify widgets during [**Automated Testing
 To adjust a widget's size, click on the widget you wish to resize and navigate to the right-side Properties Panel. There, you can set the size in the following ways:
 
 - **PX (Pixels):** Enter a fixed size in pixels for a consistent dimension.
-- **% (Percentage):** Set the size relative to the screen or parent container.
+- **% (Percentage):** Set the size as a percentage of the screen dimension.
 - **∞ (Infinity):** Make the widget expand to fill the available width or height.
 
 
@@ -190,9 +203,8 @@ To adjust a widget's size, click on the widget you wish to resize and navigate t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/18qu2kOtCpLZfS2HhCWD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/18qu2kOtCpLZfS2HhCWD?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -248,9 +260,8 @@ To change the color, navigate to a widget property that allows you to set a colo
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vPLiVGL7N0FhK3JEPSHe?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vPLiVGL7N0FhK3JEPSHe?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -271,7 +282,7 @@ To change the color, navigate to a widget property that allows you to set a colo
 
 :::tip
 
-You can also assign a color using a **String variable** that contains a **CSS-style color value** (e.g., `"#FF5733"`, `"rgba(255, 87, 51, 1)"`, or `"red"`). This is especially useful when colors are stored in a database or returned from an API. Make sure the string format follows valid CSS color syntax, as FlutterFlow uses the [**`from_css_color`**](https://pub.dev/packages/from_css_color) package under the hood to parse these values.
+You can also assign a color using a **String variable** that contains a supported CSS-style color value (for example, `"#FF5733"`, `"rgba(255, 87, 51, 1)"`, or `"red"`). This is especially useful when colors are stored in a database or returned from an API. Validate remote values and provide a fallback because an invalid color string cannot be displayed as intended.
 
 This allows you to dynamically theme parts of your app based on user preferences or remote configurations.
 
@@ -290,9 +301,8 @@ To copy and paste a variable, open the **Set from Variable** menu, click the **t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dLG8GPCS6fMMz6VNydIm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dLG8GPCS6fMMz6VNydIm?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -322,9 +332,8 @@ To do this, hold down the **Shift** key and click on each widget you want to edi
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/lyNx8lyNsZN6zhicwDxp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/lyNx8lyNsZN6zhicwDxp?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -359,9 +368,8 @@ You can also choose the image size (i.e., Small, Regular, or Full) before adding
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0lNZalS5Tt16KHlxvzav?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0lNZalS5Tt16KHlxvzav?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -390,7 +398,7 @@ This is especially helpful for previewing layout, spacing, and alignment without
 
 ## Adding Border
 
-You can add a border to any widget using the following properties:
+For widgets that expose border settings, you can configure the following properties:
 
 - **Border Color**: Choose a color manually or bind it to a variable. You can select from your theme colors (like `Primary`) or use the color picker.
 - **Border Width**: Set the thickness of the border in pixels.
@@ -411,9 +419,8 @@ Use consistent border and padding styles for buttons, cards, and containers to m
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -431,3 +438,7 @@ Use consistent border and padding styles for buttons, cards, and containers to m
     </iframe>
 </div>
 <p></p>
+
+## Verify common properties
+
+Run the page in **Test Mode** at mobile, tablet, and desktop widths. Confirm that conditional and responsive visibility behave independently, percentage dimensions scale with the screen, opacity does not unexpectedly leave unusable layout space, dynamic colors have a valid fallback, and testing keys uniquely identify their intended widgets.

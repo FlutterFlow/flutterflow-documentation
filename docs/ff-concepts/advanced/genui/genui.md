@@ -1,12 +1,24 @@
 ---
 slug: /concepts/genui-chat
 title: GenUI Chat
-description: Add a conversational AI surface to your FlutterFlow app that can render catalog components, call action blocks as tools, and react to local app events.
-tags: [AI, Chat, Conversational UI]
+description: >-
+  Add a conversational AI surface to your FlutterFlow app that can render
+  catalog components, call action blocks as tools, and react to local app
+  events.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling]
+keywords:
+  - FlutterFlow
+  - GenUI
+  - Conversational AI
+  - Chat widget
+  - AI agent
+  - A2UI protocol
+  - Component rendering
+  - Tool calling
 ---
-
 # GenUI Chat
 
 Usually, applications follow a fixed model: developers design screens, define navigation, and hard-code interactions. Users are limited to these predefined flows, and anything outside those paths simply isn’t supported.
@@ -77,9 +89,8 @@ Let’s walk through how to add a GenUI Chat by building a simple product lookup
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9bwXhFVcecHENfcx4RBe?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9bwXhFVcecHENfcx4RBe?embed&show_copy_link=true" title="GenUI Chat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -126,9 +137,8 @@ You can fully customize the chat interface using the following options available
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/awKKg13Nn4M0QZc6X4SI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/awKKg13Nn4M0QZc6X4SI?embed&show_copy_link=true" title="GenUI Chat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -246,7 +256,7 @@ The widget builds but the AI only sends text
 
 <p>
 Check the catalog first. If no component fits the request, text is the expected fallback. Also, confirm that your system prompt and component descriptions make it clear when each component should be used.
-</p> 
+</p>
 </details>
 
 <details>
@@ -260,7 +270,7 @@ The most common causes are:
 - The component has an action parameter.
 - A required complex parameter is missing a default value.
 - The component was deleted or renamed after being configured.
-</p> 
+</p>
 </details>
 
 <details>
@@ -270,7 +280,7 @@ I can't add an Action Block as a tool
 
 <p>
 The Action Block must return a value, and every parameter, plus the return type, must be supported by the tool serializer.
-</p> 
+</p>
 </details>
 
 <details>
@@ -284,7 +294,7 @@ Make sure the following are correctly set:
 - The event is LOCAL scope.
 - The right event is being triggered at runtime.
 - `auto_respond` is set the way you expect.
-</p> 
+</p>
 </details>
 
 <details>
@@ -299,7 +309,7 @@ Common reasons include:
 - It is configured twice in the same catalog.
 - A required complex parameter is missing a default value.
 - The configured component no longer exists.
-</p> 
+</p>
 </details>
 
 <details>
@@ -314,7 +324,7 @@ Usually one of these is true:
 - Parameter descriptions are weak.
 - Multiple catalog components overlap too much in purpose.
 - The system prompt does not explain how the assistant should prioritize them.
-</p> 
+</p>
 </details>
 
 <details>
@@ -324,7 +334,7 @@ Can the model render multiple items?
 
 <p>
 Yes, but the reliable pattern is to use a single catalog component that accepts a list rather than expecting the model to assemble multiple independent sibling components on its own.
-</p> 
+</p>
 </details>
 
 <details>
@@ -339,7 +349,7 @@ Usually, the issue is not codegen. It is tool discoverability:
 - The description is weak
 - The system prompt does not make it clear when the tool should be used
 - The model already has enough context to answer without calling it
-</p> 
+</p>
 </details>
 
 <details>
@@ -349,7 +359,7 @@ What happens when a tool fails?
 
 <p>
 The generated tool code catches the exception, clears the loading state, and sends an error payload back to the model. The UI should remain stable, and the model can decide how to explain or recover.
-</p> 
+</p>
 </details>
 
 <details>
@@ -359,7 +369,7 @@ Why can't I select my event?
 
 <p>
 The event must be <strong>LOCAL</strong> scope and must still exist in the project or dependency where it was defined.
-</p> 
+</p>
 </details>
 
 <details>
@@ -375,7 +385,7 @@ Check the following:
 - whether the system prompt tells the model to react visibly
 
 Note: Even with immediate inference, not every event will result in a visible response.
-</p> 
+</p>
 </details>
 
 <details>
@@ -385,7 +395,7 @@ Why does the assistant only react on the next user message?
 
 <p>
 That is the expected behavior for `auto_respond: false`. The listener queues hidden context instead of triggering a separate inference call.
-</p> 
+</p>
 </details>
 
 <details>
@@ -395,7 +405,7 @@ Can one GenUI widget listen to the same event twice?
 
 <p>
 No. Duplicate listeners for the same event on the same widget are rejected during validation.
-</p> 
+</p>
 </details>
 
 <details>
@@ -405,7 +415,7 @@ Do conversations persist across app restarts?
 
 <p>
 No. Conversations do not persist across app restarts. If a user closes and reopens the app, the chat history is reset.
-</p> 
+</p>
 </details>
 
 <details>
@@ -415,7 +425,7 @@ Can I choose the Gemini model or adjust parameters like temperature?
 
 <p>
 GenUI uses Firebase AI Logic, which manages the underlying Gemini model and its configuration. At the moment, you cannot directly select specific model variants or adjust parameters like temperature or top_p. The system is designed to provide a simplified, managed experience without requiring manual tuning.
-</p> 
+</p>
 </details>
 
 <details>
@@ -425,5 +435,5 @@ What happens when Firebase AI Logic quota or rate limits are exceeded?
 
 <p>
 If you exceed Firebase AI Logic or Gemini free-tier limits, requests will fail with a 429 quota-exceeded error. This typically means you’ve hit limits such as requests per minute or free-tier usage caps. In some cases, the error will include a retry time, after which you can try again. While the Spark plan works for testing, it is subject to strict free-tier limits, so for higher usage or production apps, you should expect to upgrade to a paid plan and monitor usage closely
-</p> 
+</p>
 </details>

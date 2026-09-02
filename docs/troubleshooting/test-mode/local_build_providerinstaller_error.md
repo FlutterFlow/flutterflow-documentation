@@ -1,9 +1,17 @@
 ---
-keywords: ['build', 'android', 'emulator']
+keywords:
+  - build
+  - android
+  - emulator
 slug: /troubleshooting/test-mode/local-build-providerinstaller-error
 title: Local Build ProviderInstaller Error
+description: This error commonly occurs when building Flutter apps on Android emulators.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
+last_verified: 2026-09-02
 ---
-
 # Local Build ProviderInstaller Error
 
 This error commonly occurs when building Flutter apps on Android emulators. It is related to the `ProviderInstaller` service and can typically be resolved through basic cleanup and Flutter version upgrades.
@@ -28,7 +36,7 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
             Replace com.yourcompany.yourapp with your actual app ID.
 
 2. **Rebuild the App**
-    
+
     After uninstalling:
 
     Run the following command in your project directory:
@@ -48,14 +56,9 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 
             This will remove cached data and reinstall the app on the emulator.
 
-3. **Upgrade Flutter (If Problem Persists)**
+3. **Match the Project Flutter Version**
 
-    If the issue continues, upgrading Flutter may help. Run the command below to upgrade:
-        ```bash
-        flutter upgrade
-        ```
-
-    Ensure your Flutter SDK is up to date. You can verify the version with:
+    Use the Flutter SDK version declared by the exported FlutterFlow project. Upgrading a shared SDK to latest can introduce a different incompatibility; prefer a version manager or isolated SDK. Verify with:
 
         ```bash
         flutter --version
@@ -69,3 +72,7 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 - Read the official **[Flutter Build Documentation](https://docs.flutter.dev/testing/build-modes)**.
 - Check **[Android Emulator System Images](https://developer.android.com/studio/run/managing-avds#system-images)**.
 :::
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

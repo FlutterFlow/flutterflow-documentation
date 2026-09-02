@@ -1,12 +1,24 @@
 ---
 slug: /concepts/custom-code/custom-functions
 title: Custom Functions
-description: Learn how to create and use custom functions in your FlutterFlow app to add custom functionalities.
-tags: [Custom Functions, Custom Code]
+description: >-
+  Learn how to create and use custom functions in your FlutterFlow app to add
+  custom functionalities.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [FlutterFlow, Custom Functions, Customizations, Flutter, Dart, Pub.dev]
+keywords:
+  - FlutterFlow
+  - Custom Functions
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - write a custom function in FlutterFlow
+ai_queries:
+  - write a custom function in FlutterFlow
 ---
-
 # Custom Functions
 Custom Functions in FlutterFlow allow you to perform simple Dart calculations and logic. These functions are ideal for tasks that require immediate results, such as data transformations, mathematical calculations, or simple logic operations. **Custom Functions** enable you to encapsulate reusable logic, making your code more organized and maintainable. Let's see some common examples:
 
@@ -53,9 +65,8 @@ Custom Functions are typically straightforward input-output expressions designed
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/upVgF0cZTJY49tn0Qkdo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/upVgF0cZTJY49tn0Qkdo?embed&show_copy_link=true" title="Custom Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -95,7 +106,7 @@ You can't have imports in a custom function. To be able to add imports, consider
 <details>
 <summary>Getting error: The function 'FFAppState' isn't defined.</summary>
 
-You can't use the app state variable (i.e., `FFAppState().variablename`) directly in your custom 
+You can't use the app state variable (i.e., `FFAppState().variablename`) directly in your custom
 function code. Instead, you can pass the app state variable as a parameter and then use it in your code.
 
 </details>

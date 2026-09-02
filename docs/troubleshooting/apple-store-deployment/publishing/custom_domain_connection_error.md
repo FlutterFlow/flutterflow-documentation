@@ -1,14 +1,25 @@
 ---
-keywords: ['configuration', 'connect', 'domain']
+keywords:
+  - configuration
+  - connect
+  - domain
 slug: /troubleshooting/apple-store-deployment-issues/custom-domain-connection-error
 title: Custom Domain Connection Error
+description: >-
+  If you encounter the error shown below after clicking Connect , follow these
+  steps to resolve it: - Access to your domain registrar or DNS provider
+  dashboard.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment Issues
+last_verified: 2026-09-02
 ---
-
 # Custom Domain Connection Error
 
 If you encounter the error shown below after clicking **Connect**, follow these steps to resolve it:
 
-![](../../assets/20250430121243410633.png)
+![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243410633.png)
 
 :::info[Prerequisites]
 - Access to your domain registrar or DNS provider dashboard.
@@ -26,12 +37,12 @@ If you encounter the error shown below after clicking **Connect**, follow these 
         For A records, if your DNS provider requires a name, you can use `"@"`. When you see an empty value, it typically refers to `"@"`.
         :::
 
-        ![](../../assets/20250430121243684493.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243684493.png)
 
 2. **Check for Conflicting Records**
 
     - Review your DNS configuration to ensure there are no extra or unnecessary records that conflict with the FlutterFlow-provided keys.
-    - For example, if you already have an A record using `"@"`, remove it to avoid conflicts.
+    - For example, an existing A or AAAA record for the same root host can conflict with the values FlutterFlow displays. Remove or replace a record only after confirming its current service and saving a rollback copy. Do not delete MX, TXT, CAA, or unrelated subdomain records.
 
         :::note
         Before removing any existing DNS records, take screenshots and save them for reference.
@@ -40,8 +51,12 @@ If you encounter the error shown below after clicking **Connect**, follow these 
 
         Below are examples of correct configurations in FlutterFlow and your DNS provider:
 
-        ![](../../assets/20250430121243982678.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243982678.png)
 
-        ![](../../assets/20250430121244255037.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121244255037.png)
 
         By following these steps, you can ensure your custom domain is connected correctly.
+
+## Related documentation
+
+See [Custom Domain Connection Issues](/troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues) for a related FlutterFlow workflow.

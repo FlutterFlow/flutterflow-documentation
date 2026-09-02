@@ -2,11 +2,19 @@
 slug: /concepts/custom-code/code-file
 title: Code File
 description: Learn how to create and use custom classes and enums in FlutterFlow.
-tags: [Code File, Custom Code]
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 5
-keywords: [FlutterFlow, Custom Classes, Custom Enums, Customizations, Flutter, Dart, Pub.dev]
+keywords:
+  - FlutterFlow
+  - Custom Classes
+  - Custom Enums
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
 ---
-
 # Code File
 
 FlutterFlow allows you to add your own custom Dart files with [classes](https://dart.dev/language/classes) and [enums](https://dart.dev/language/enums). This means you can create reusable building blocks to manage your app’s data and logic more easily. Using custom classes, you can create custom data types, use their properties in the UI, call methods in action flows, and much more.
@@ -36,9 +44,8 @@ Here’s an example of adding a `Review` custom class:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fyUgEFvpqTrpXTWtmDp1?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fyUgEFvpqTrpXTWtmDp1?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -124,7 +131,7 @@ You need to create an instance of a class so you can work with actual data and u
 
 - A **class** is like a blueprint or template. For example, the `Review` class describes what a review is, but doesn’t hold any real review information itself.
 - An **instance** (or “object”) is a real, usable item made from that blueprint. See the code snippet below:
-    
+
     ```jsx
     Review review1 = Review(
       'r001',
@@ -138,7 +145,7 @@ You need to create an instance of a class so you can work with actual data and u
       ReviewStatus.approved,
     );
     ```
-    
+
 - In FlutterFlow, you will store the instance of the custom class in the [state variables](../../ff-concepts/state-management/state-variables.md#state-variables) of your app, page, or component.
 - You can create multiple instances of the same class, reusing the same structure multiple times, each with different review data.
 
@@ -156,9 +163,8 @@ To create an instance of a custom class, first you need to [create a state varia
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0CQju0ZUuhOEnkRhbxP4?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0CQju0ZUuhOEnkRhbxP4?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -202,9 +208,8 @@ Use the **Set Field** action to update a specific property of a custom class ins
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fpj0MWNYrIZFYe5vDAyj?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fpj0MWNYrIZFYe5vDAyj?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -232,9 +237,8 @@ Use the **Call Method** action to invoke a method defined in your custom class. 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dVK7pbda7U6B4igmNUP7?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dVK7pbda7U6B4igmNUP7?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -275,7 +279,7 @@ Here are couple more examples to understand it better:
   class StringFormatter {
     static String lastFormatted = '';
     static int formatCount = 0;
-    
+
     static String capitalize(String input) =>
         input[0].toUpperCase() + input.substring(1);
 
@@ -309,7 +313,7 @@ You can mix both **static** and **instance** members in a single class. Static m
 ```jsx
 class Review {
   static List<String> flaggedWords = ['bad', 'spam', 'fake'];
-  
+
   String id;
   String userId;
   String comment;
@@ -324,7 +328,7 @@ class Review {
   static bool isCommentAppropriate(String input) {
     return !flaggedWords.any((word) => input.toLowerCase().contains(word));
   }
-  
+
   void markHelpful() {
     helpfulCount += 1;
   }
@@ -358,9 +362,8 @@ Use the **Set Static Field** action to update a static field on a custom class. 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TcYX7f2OgBZaayKFsKhN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TcYX7f2OgBZaayKFsKhN?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -388,9 +391,8 @@ Use the **Call Static Method** action to run a static method of your class. For 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TgpAbgq6mF8o1nG4sR2g?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TgpAbgq6mF8o1nG4sR2g?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -433,9 +435,8 @@ You can access the custom enums from **Set from Variable** menu > **Custom Enum*
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wFd9NKYGdb2Jp7ZYkaR8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wFd9NKYGdb2Jp7ZYkaR8?embed&show_copy_link=true" title="Code File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

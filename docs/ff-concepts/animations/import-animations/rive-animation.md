@@ -1,23 +1,33 @@
 ---
 slug: /concepts/animations/rive-animation
 title: Rive Animation
-description: Learn how to add Rive animation in your FlutterFlow app.
-tags: [Rive Animation, FlutterFlow, Animations]
+description: Import a Rive runtime file into FlutterFlow, select its artboard and linear animations, and control playback with an Animation action.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [Rive Animation, FlutterFlow, Animations]
+keywords:
+  - Rive Animation
+  - FlutterFlow
+  - Animations
+last_verified: 2026-09-02
 ---
-
 # Rive Animation
-[Rive](https://rive.app/) is a real-time interactive design and animation tool. Using the **RiveAnimation** widget you can easily import your Rive assets to FlutterFlow and use them inside your app.
+[Rive](https://rive.app/) is a design and animation tool. The **RiveAnimation** widget loads a `.riv` runtime file, displays a selected artboard, and plays one or more linear animations from that artboard.
+
+:::warning
+
+FlutterFlow's RiveAnimation widget currently supports linear animations, not Rive state-machine animations. If the selected artboard contains no linear animations, FlutterFlow asks you to select a different file or artboard.
+
+:::
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4J9fgyM4CwQA4tC0HrQ8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4J9fgyM4CwQA4tC0HrQ8?embed&show_copy_link=true" title="Rive Animation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -38,54 +48,46 @@ keywords: [Rive Animation, FlutterFlow, Animations]
 
 ## Designing Animation
 
-You can create an animation from scratch by using [Rive Editor](https://editor.rive.app/).
+You can create an animation in the [Rive editor](https://rive.app/editor). Follow Rive's current editor documentation to create a file and artboard; the FlutterFlow-specific requirements are described below.
 
-1. Click **+ New File**.
-2. Specify the **Artboard dimensions** (Width and Height).
-3. Click **Create**.
-
-Use the Rive [design tools](https://help.rive.app/editor/fundamentals/shapes-and-paths) or import image files to start designing your animation. Once your design is ready you can use the [Timeline](https://help.rive.app/editor/animate-mode/timeline) and use keying to easily animate your design.
+Use Rive's design and animation tools to create at least one artboard and one linear animation.
 
 :::info
-You should have at least one [**Artboard**](https://help.rive.app/editor/fundamentals/artboards) inside your Rive file but you can add an infinite amount of Artboards.
+The file must contain an [**Artboard**](https://rive.app/docs/editor/fundamentals/artboards) with a linear animation for FlutterFlow to expose an animation selection.
 :::
 
 
-After you have completed designing your animation, you can either download it as an asset (having `.riv` extension) or you can share it with others by publishing it to the Rive community.
-
-To download the Rive file, click the **Export icon** (top-left corner of the Rive toolbar), and select **Download -> For newest runtime**.
-
-To publish the file to the community, click the **Export icon** (top-left corner of the Rive toolbar), and select **Publish to Community**. Give a **title** and **description** to your animation and click **Publish to Community**.
+After completing the animation, export a `.riv` runtime file. In the current Rive editor, use the blue **Publish** button or **Export > For runtime**. Rive controls the plan requirements for runtime export, so check its current documentation if the option is unavailable.
 
 :::warning
-For using a Rive animation file inside FlutterFlow, you should either download or publish the file to the community.
+Use only assets that you have permission to publish and distribute with your app.
 :::
 
-Instead of creating an animation from scratch, you can also use any Rive asset shared in the [Community](https://rive.app/community/).
+Instead of creating an animation from scratch, you can also use any Rive asset shared in the [Community](https://rive.app/marketplace).
 
 ## Adding RiveAnimation widget
 
 Follow the steps below to use a Rive animation:
 
-1. Drag and drop the **RiveAnimation** widget onto the canvas.
-2. Select the **Animation Source** as either ***Network*** or ***Asset***.
-3. If you have selected ***Network***, enter the **Path** (download URL) ****of the animation. Get the path by navigating to the Rive animation published in the community, right-click on the **Download** button and copy the link address.
-4. If you have selected ***Asset***,
-5. Choose an **Artboard** from the dropdown list.
-6. Select the **Animations** that you want to use (these are imported from the Rive asset). After selecting one or more animation(s), you can use the **Preview Animations** button to play it.
-7. The **Animation Type** is selected as ***Once*** by default. If the selected animations contain a loop or boomerang, you will have an option to select ***Continuous***. On choosing this option, if the animation contains a loop it will play continuously.
-8. By default, the **Auto Animate** checkbox remains checked, which means that the animation will play as soon as the page loads. But if you want to use an Action to trigger the animation, uncheck this.
-9. Specify the **Width** and **Height** of the RiveAnimation widget, and select a **Box Fit** type.
-10. (Optional) If you plan to use an Action to trigger the animation, you can give an appropriate **Name** to this *RiveAnimation* widget for it to be easily identifiable.
+1. Add a **RiveAnimation** widget to the canvas.
+2. Set **Animation Source** to **Network** or **Asset**.
+3. For **Network**, set **Path** to a direct URL for the `.riv` file. The path can also be bound to a String value. For **Asset**, upload or select a file under **Asset Animation**.
+4. After the file loads, choose an **Artboard**.
+5. Under **Animations**, select one or more linear animations from that artboard. Use **Preview Animations** to check the selection in the builder.
+6. Choose **Animation Type**, set **Auto Animate**, and configure **Width**, **Height**, and **Box Fit**.
+7. Test the animation on every target platform.
+
+**Once** is the default. If any selected animation uses Rive Loop or Ping Pong behavior, FlutterFlow also offers **Continuous**. In Continuous mode, only selected animations authored to loop or ping-pong continue indefinitely; a one-shot animation in the same selection still completes once.
+
+Changing the artboard clears the previous animation selection. If the remaining properties do not appear, FlutterFlow has not loaded a valid Rive file; recheck the path or reselect the asset.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/rbKXOTaDS8aVCS26oeS0?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/rbKXOTaDS8aVCS26oeS0?embed&show_copy_link=true" title="Rive Animation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -106,22 +108,28 @@ Follow the steps below to use a Rive animation:
 
 ## Control animation using action
 
-To trigger a RiveAnimation to start playing using an Action, you can use the **Rive** **Animation Action**. 
+Use an **Animation** action to replay a one-shot Rive animation or control a continuous one.
 
-### Adding Rive Animation [Action]
+### Add the action
 
 Follow the steps below to define an action to start the animation:
 
-1. Select the **widget** (eg., `Button`) on which you want to define the action.
-2. Select **Actions** from the Properties Panel.
-3. Click **+ Add Action** button.
-4. Choose a gesture from the dropdown among **On Tap, On Double Tap,** or **On Long Press**.
-5. Select the **Action Type** as ***Animation**.*
-6. Set **Choose Animation Type** to ***Rive Animation***.
-7. Under **Choose Rive Animation**, select the `RiveAnimation` widget (If you have given your `RiveAnimation` widget a name, that will be displayed here).
+1. Disable **Auto Animate** when this action should start the target animation.
+2. Select the button or other trigger widget and open the **Actions** panel.
+3. Add an **Animation** action and choose **Rive Animation**.
+4. Under **Choose Rive Animation**, select a RiveAnimation on the same page or component.
+5. For a **Continuous** target, optionally enable **Allow Play/Pause**.
+
+The action behaves as follows:
+
+- **Once:** Reactivates every selected animation so it can play from the beginning again.
+- **Continuous**, with **Allow Play/Pause** enabled: Toggles the currently playing loop and ping-pong animations. Non-looping selections are not toggled by this control.
+- **Continuous**, with **Allow Play/Pause** disabled: Starts the selected animations when **Auto Animate** is off. If Auto Animate is on, the action stops them.
+
+Animation actions can target only widgets on the same page or component and cannot be used inside an Action Block.
 
 :::info
-You should have the **Auto Animate** unchecked inside the properties of `RiveAnimation` widget to take advantage of this action.
+Disable **Auto Animate** when the action should start playback. Leave it enabled only when the action is intended to stop an already-running continuous animation.
 :::
 
 <div style={{
@@ -129,9 +137,8 @@ You should have the **Auto Animate** unchecked inside the properties of `RiveAni
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/J2r1YaFGhp1CbmEcfBpl?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/J2r1YaFGhp1CbmEcfBpl?embed&show_copy_link=true" title="Rive Animation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -149,3 +156,17 @@ You should have the **Auto Animate** unchecked inside the properties of `RiveAni
     </iframe>
 </div>
 <p></p>
+
+## Troubleshooting
+
+| Symptom | What to check |
+| --- | --- |
+| Artboard and animation controls never appear | Confirm that the path returns a valid `.riv` runtime file directly, or reselect the uploaded asset. |
+| FlutterFlow reports no linear animations | The artboard may contain only a state machine. Add a linear animation or select another artboard. |
+| Continuous is not available | At least one selected animation must be authored with Loop or Ping Pong behavior. |
+| An action does not start playback | Disable **Auto Animate**, confirm the same-page target, and check the animation type and selected animation list. |
+| A network file works in one target but not another | Check HTTPS access, redirects, authorization, browser CORS, and whether the URL returns the `.riv` bytes directly. |
+
+## Related documentation
+
+See [Lottie Animation](/concepts/animations/lottie-animation) for a related FlutterFlow workflow.

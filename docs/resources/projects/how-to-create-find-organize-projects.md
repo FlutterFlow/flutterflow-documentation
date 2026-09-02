@@ -1,15 +1,27 @@
 ---
 slug: /resources/projects/how-to-create-find-organize-projects
-title: Create, Find, and Organize Projects
-description: Learn how to create, find, and organize projects in FlutterFlow to streamline your app development process.
-tags: [Project Management, FlutterFlow, Organization, Projects]
+title: 'Create, Find, and Organize Projects'
+description: >-
+  Learn how to create, find, and organize projects in FlutterFlow to streamline
+  your app development process.
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
 toc_max_heading_level: 5
 sidebar_position: 1
-keywords: [Project Management, FlutterFlow, Organization, Projects]
+keywords:
+  - Project Management
+  - FlutterFlow
+  - Organization
+  - Projects
+  - create find and organize FlutterFlow projects
+ai_queries:
+  - create find and organize FlutterFlow projects
 ---
+# Create, Find, and Organize Projects
 
-#
-## How to Create a Project
+## Create a Project {#how-to-create-a-project}
 To create a new project, go to the Dashboard and click **+ New Project** in the upper-right corner. This opens a window where you can start with a template app or a blank project.
 
 <div style={{
@@ -17,7 +29,7 @@ To create a new project, go to the Dashboard and click **+ New Project** in the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/s8Pwq75FDwnaLyt6pQvZ?embed&show_copy_link=true"
         title="Create a Project"
         style={{
@@ -47,7 +59,7 @@ Go to the Project Dashboard to view all your projects. You can search for specif
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/GonI3mWkBe7xg98MvA0J?embed&show_copy_link=true"
         title="Projects - FlutterFlow"
         style={{
@@ -97,7 +109,7 @@ Add a tag to a project by opening the three-dot menu on the project card and sel
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/ltenHF4tRtLi4zEX0QS4?embed&show_copy_link=true"
         title="Create and Add Tags to Projects"
         style={{
@@ -126,7 +138,7 @@ When a tag is selected, the project list filters to show only projects associate
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/85XUoxRUK2ZxbWgBr95M?embed&show_copy_link=true"
         title="Search and Filter Projects by Tag"
         style={{
@@ -151,3 +163,7 @@ When a tag is selected, the project list filters to show only projects associate
 Modify or remove tags by clicking the gear icon within the orange Tag button. This lets you quickly update tag names and assignments.
 
 ![edit-tags](imgs/edit-tags.avif)
+
+## Related documentation
+
+See [What is a Project?](/resources/projects) for a related FlutterFlow workflow.

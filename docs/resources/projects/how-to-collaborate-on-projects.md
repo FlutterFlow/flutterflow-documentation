@@ -1,14 +1,26 @@
 ---
 slug: /resources/projects/collaboration
 title: Collaborate on Projects
-description: Learn how to collaborate effectively on projects in FlutterFlow, including best practices for teamwork and project management.
-tags: [Collaboration, Project Management]
+description: >-
+  Learn how to collaborate effectively on projects in FlutterFlow, including
+  best practices for teamwork and project management.
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
 toc_max_heading_level: 5
 sidebar_position: 3
-keywords: [Collaboration, FlutterFlow, Project Management]
+keywords:
+  - Collaboration
+  - FlutterFlow
+  - Project Management
+  - invite teammates to collaborate on a FlutterFlow project
+ai_queries:
+  - invite teammates to collaborate on a FlutterFlow project
 ---
+# Collaborate on Projects
 
-In FlutterFlow you can share projects with your entire organization (team), with individual users within your organization, or external users. 
+In FlutterFlow you can share projects with your entire organization (team), with individual users within your organization, or external users.
 
 ## Sharing a Project with Team
 
@@ -16,8 +28,8 @@ To share a project with team members, use the **Share with team** dropdown in th
 
 ![share_with_team.png](imgs/share_with_team.png)
 
-- **Team project:** A project associated with your team and automatically visible to all team members. When a project is a Team Project, team members are automatically added as Editors. You can specifically designate team members as Viewers, but you cannot remove them. 
-- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly. After selecting this option, you’ll need to manually choose the team members you want to share the project with. 
+- **Team project:** A project associated with your team and automatically visible to all team members. When a project is a Team Project, team members are automatically added as Editors. You can specifically designate team members as Viewers, but you cannot remove them.
+- **Restricted team project:** A project associated with your team but only visible to specific team members who are added directly. After selecting this option, you’ll need to manually choose the team members you want to share the project with.
 - **Personal project:** A project not associated with any team, where editing capabilities depend on the type of personal plan you have.
 
 :::info
@@ -44,7 +56,7 @@ You can add users as Read Only users to any project regardless of your pricing p
 - If a user isn't already a FlutterFlow user, we will send them an invite email. Their status will be shown as Pending until they create an account.
 :::
 
-To add an external user as a collaborator as an Editor to a project, you first need to purchase a collaborator pass. 
+To add an external user as a collaborator as an Editor to a project, you first need to purchase a collaborator pass.
 
 To purchase a collaborator pass, go to the [My Teams](https://app.flutterflow.io/team) page and, under the **Collaborator Passes** section, click **Add Pass** and complete the checkout process. Once the pass is created, enter the user email and select the project (Team Project or Restricted Team Project) you’d like to grant them access to.
 
@@ -59,9 +71,8 @@ To purchase a collaborator pass, go to the [My Teams](https://app.flutterflow.io
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/s5nU2VYbrMppj4CRxiGZ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/s5nU2VYbrMppj4CRxiGZ?embed&show_copy_link=true" title="Collaborate on Projects interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -110,7 +121,7 @@ various aspects of the project or together on the same page at the same time.
 
 When multiple builders are on the same page, it looks like this:
 
-![real-time-collaboration.gif](../../../static/img/real-time-collaboration.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Real-time collaboration in a FlutterFlow project"}><source src={require("../../../static/img/real-time-collaboration.mp4").default} type="video/mp4" /></video>
 
 :::info
 Real-Time collaboration is only available on the **Growth** plan and **higher**. Check out our [**pricing**](https://www.flutterflow.io/pricing) section.

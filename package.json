@@ -6,6 +6,15 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "postbuild": "node scripts/postbuild-seo-agent.mjs",
+    "audit:seo-agent": "node scripts/audit-seo-agent.mjs",
+    "audit:seo-agent:built": "node scripts/audit-seo-agent.mjs --built",
+    "audit:seo-agent:strict": "node scripts/audit-seo-agent.mjs --built --strict-freshness",
+    "eval:agent-retrieval": "node scripts/evaluate-agent-retrieval.mjs",
+    "capture:freshness-baseline": "node scripts/capture-freshness-baseline.mjs",
+    "audit:external-links": "node scripts/audit-external-links.mjs",
+    "optimize:animated-media": "node scripts/optimize-animated-media.mjs",
+    "remediate:docs": "node scripts/remediate-docs.mjs --from-head --write",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -35,6 +44,7 @@
     "@docusaurus/module-type-aliases": "3.1.1",
     "@docusaurus/tsconfig": "3.1.1",
     "@docusaurus/types": "3.1.1",
+    "gray-matter": "^4.0.3",
     "typescript": "~5.2.2"
   },
   "browserslist": {

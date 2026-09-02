@@ -2,12 +2,20 @@
 slug: /resources/functions/action-triggers
 title: Action Triggers
 description: Explore the action triggers available in FlutterFlow.
-tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, Actions]
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 toc_max_heading_level: 5
 sidebar_position: 2
-keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Action Flow Editor
+  - Actions
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Action Triggers
 
 **Action Triggers** represent specific events that occur when a user interacts with the app, such as tapping a button, selecting an option from a dropdown, or loading a new page. When an Action Trigger is invoked by one of these interactions, it initiates a corresponding **Action**—a task or operation that responds to the event.
@@ -17,7 +25,7 @@ In essence, Action Triggers are the '_listeners_' in your app, keeping an eye ou
 ## Types of Action Triggers
 
 ### Page & Component Root Level Triggers
-FlutterFlow provides several action triggers that allow you to respond to a page or component being initialized, or things like a key press event. 
+FlutterFlow provides several action triggers that allow you to respond to a page or component being initialized, or things like a key press event.
 
 For more information on these triggers, see the [Page Actions & Lifecycle](/resources/ui/pages/page-lifecycle) and [Components Actions & Lifecycle](/resources/ui/components/component-lifecycle) pages.
 
@@ -36,9 +44,8 @@ Here’s an example of showing a message on button click using the **On Tap** tr
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/uI8KTjnmre4Cx901b6ws?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/uI8KTjnmre4Cx901b6ws?embed&show_copy_link=true" title="Action Triggers interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -177,7 +184,7 @@ Below is a complete list of available gesture detector triggers in FlutterFlow t
 
 ### Accessing Gesture Detector Data
 
-Gesture detectors not only recognize types of gestures but also provide relevant data based on the trigger. For example, the exact location (XY coordinates) where a drag event occurs. 
+Gesture detectors not only recognize types of gestures but also provide relevant data based on the trigger. For example, the exact location (XY coordinates) where a drag event occurs.
 
 Examples of using gesture data include:
 
@@ -208,9 +215,8 @@ Let's walk through an example that demonstrates how to implement a "Swipe to Del
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Oh2BywKkUPHOmF4RmttY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Oh2BywKkUPHOmF4RmttY?embed&show_copy_link=true" title="Action Triggers interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -249,9 +255,8 @@ Here’s how you do it:
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/E3H0XAAY1AO7VaoZbNHw?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/E3H0XAAY1AO7VaoZbNHw?embed&show_copy_link=true" title="Action Triggers interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -277,9 +282,8 @@ Here’s how you do it:
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/HQOWI06X33hGFms27T4G?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/HQOWI06X33hGFms27T4G?embed&show_copy_link=true" title="Action Triggers interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,

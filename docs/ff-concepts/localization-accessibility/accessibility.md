@@ -1,10 +1,19 @@
 ---
 slug: /concepts/accessibility
 title: Accessibility
-tags: [Accessibility]
-keywords: [FlutterFlow, Accessibility, Screen Reader Support, Semantic Labels]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Accessibility
+  - Screen Reader Support
+  - Semantic Labels
+  - make a FlutterFlow app accessible
 description: Learn how to make your app accessible to everyone.
 sidebar_position: 0
+ai_queries:
+  - make a FlutterFlow app accessible
 ---
 # Accessibility
 
@@ -36,9 +45,8 @@ To add a semantic label for any widget, select the widget, move to the propertie
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/B3acoMrirCvsKl69tLH6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/B3acoMrirCvsKl69tLH6?embed&show_copy_link=true" title="Accessibility interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -63,7 +71,7 @@ You can also dynamically set semantic labels using variables or expressions. Thi
 
 ### Advanced Semantic Settings (Enterprise Only)
 
-These settings help make your app more accessible by giving you better control over how screen readers interpret and describe your UI. 
+These settings help make your app more accessible by giving you better control over how screen readers interpret and describe your UI.
 
 :::info
 
@@ -129,7 +137,7 @@ The Semantic Announce action allows you to trigger screen reader announcements w
 
 **Focus Configuration** helps improve keyboard and remote-control navigation in your app—especially important for web, desktop, TV, and kiosk apps. It controls how users move through widgets using the <kbd>Tab</kbd> key or other navigation inputs (like arrow keys or D-pad on TV or remote).
 
-You can control the Focus Configuration using the following properties: 
+You can control the Focus Configuration using the following properties:
 
 - **Wrap in Focus Traversal Group**: It places a widget (and all its children) in a dedicated group so focus cycles within that region before moving on. For example, if you have a login form with two fields: Email and Password, enabling this option ensures that pressing <kbd>Tab</kbd> will cycle only between them (and not jump to unrelated parts of the screen).
 - **Focus Traversal Order**: This sets the exact sequence in which widgets receive focus using numeric values (e.g., 1, 2, etc.). For example, In a sign‑up form, set `Name = 1`, `Email = 2`, and `Password = 3` so pressing <kbd>Tab</kbd> moves logically down the form rather than following the raw widget tree.

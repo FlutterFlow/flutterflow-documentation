@@ -1,9 +1,22 @@
 ---
-keywords: ['github', 'push', 'repository', 'initialize', 'error']
+keywords:
+  - github
+  - push
+  - repository
+  - initialize
+  - error
 slug: /troubleshooting/github/initialize-github-repository
 title: Initialize GitHub Repository
+description: >-
+  When pushing code to GitHub, the following error may occur: This typically
+  happens if the GitHub repository was not initialized correctly or if the
+  project exceeds GitHub’s file...
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - GitHub
+last_verified: 2026-09-02
 ---
-
 # Initialize GitHub Repository
 
 When pushing code to GitHub, the following error may occur:
@@ -31,16 +44,16 @@ Follow the steps below to initialize a GitHub repository:
    - Open your FlutterFlow project.
    - Navigate to **GitHub Integration** and follow the instructions to connect the new repository.
 
-      ![](../assets/20250430121522561282.gif)
+      <video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Initializing a GitHub repository from FlutterFlow"}><source src={require("../assets/20250430121522561282.mp4").default} type="video/mp4" /></video>
 
 3. **Download and Inspect Your Project**
 
    - Download the full source code from FlutterFlow.
    - Navigate to the `assets` folder.
-   - Identify any files larger than **25MB**.
+   - Identify large generated assets. GitHub warns for files over 50 MiB and blocks regular Git objects over 100 MiB; the 25 MiB limit applies to files uploaded through the browser UI. FlutterFlow or an integration can impose an additional limit, so inspect the exact error and build logs.
 
       :::warning[Check Your Asset Size]
-      GitHub does not allow individual files larger than 25MB. Large image or video files may cause push failures.
+      Do not commit large generated media merely to bypass an integration error. Optimize it, host it through an appropriate asset service, or use Git LFS only if the FlutterFlow workflow and deployment support LFS end to end.
       :::
 
 

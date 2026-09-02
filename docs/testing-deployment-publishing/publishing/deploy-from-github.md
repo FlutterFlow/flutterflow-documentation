@@ -2,10 +2,18 @@
 slug: /deployment/deploy-from-github
 title: Deploy from GitHub
 description: Learn how to deploy your apps directly from GitHub branch.
-tags: [Apple App Store, Google Play Store, Deployment, GitHub]
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 5
-keywords: [Apple App Store, Google Play Store, Deployment, GitHub]
+keywords:
+  - Apple App Store
+  - Google Play Store
+  - Deployment
+  - GitHub
+last_verified: 2026-09-02
 ---
+# Deploy from GitHub
 
 If your FlutterFlow project is connected to a GitHub repository, the generated code can be pushed to GitHub, giving you full control over your project’s code. Then, you can deploy your app directly from the same repository, rather than deploying through FlutterFlow.
 
@@ -15,6 +23,8 @@ Deploying from GitHub is particularly beneficial when:
 - You want to manage the source code in an external GitHub repository for better version control.
 - You want to automate the process of deploying your app directly from GitHub to the Play Store or App Store after modifying the code.
 - You want to deploy from a specific branch of your GitHub repository.
+
+Treat the selected branch as production input. Protect it with reviews and required checks, pin or review dependency changes, scan for secrets, and ensure only trusted collaborators and workflows can modify deployment code. Never commit keystores, signing passwords, service-account files, API secrets, or production environment files.
 
 ## Steps to Deploy
 
@@ -37,38 +47,14 @@ When deploying from your GitHub branch, you will need to manage the app versioni
 
 :::
 
+The store build number must increase for every submitted build. Verify that the branch's bundle or package identifier, environment, signing configuration, backend endpoints, and production flags match the intended listing before deployment.
+
 ## FAQs
 
 <details>
 <summary>I am having an issue while Deploying from a GitHub branch. Error: *You uploaded an APK or Android App Bundle that was signed in debug mode. You need to sign your APK or Android App Bundle in release mode.*</summary>
 <p>
 
-If you are experiencing problems deploying or uploading to the Google Play Store from a Github branch, check to make sure your `build.gradle` file is correct.
-
-1. Open your `android/app/build.gradle` file.
-2. Ensure your file has these lines of code:
-
-    ```
-    def keystoreProperties = new Properties()
-    def keystorePropertiesFile = rootProject.file('key.properties')
-    if (keystorePropertiesFile.exists()) {
-        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-    }
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
-        }
-    }
-    ```
-
-3. Newer Flutterflow code will automatically have these lines added. If yours doesn't, you can push it to your `flutterflow` branch on GitHub and merge in the changes or add them like so:
-
-    ![deploy-github-issue](../imgs/deploy-github-issue.avif)
-
-
-4. Lastly, change `debug` (shown in the red box above) to `release` before deploying.
+Confirm that the branch still contains FlutterFlow's generated release signing configuration and that deployment credentials are configured through the approved FlutterFlow deployment flow. Do not hard-code keystore passwords or commit `key.properties` or a keystore to the repository. If generated Android build files were customized, compare them with a fresh export and restore the release build type carefully, preserving intentional changes. Then build an Android App Bundle locally or in CI and verify that it is release-signed before uploading again.
 </p>
 </details>

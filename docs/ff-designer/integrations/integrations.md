@@ -1,12 +1,20 @@
 ---
 slug: /designer/integrations
 title: Integrations
-description: Connect FlutterFlow Designer with AI agents and developer tools to generate, edit, and update designs using natural language from your preferred environment.
-tags: [Integrations, FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Connect FlutterFlow Designer with AI agents and developer tools to generate,
+  edit, and update designs using natural language from your preferred
+  environment.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [integrations, flutterflow designer, ai app design]
+keywords:
+  - integrations
+  - flutterflow designer
+  - ai app design
 ---
-
 # Integrations
 
 You can connect FlutterFlow Designer with external AI agents and developer tools. This enables you to generate, edit, and inspect designs directly from your preferred AI environment instead of working only inside the Designer UI.
@@ -36,9 +44,8 @@ To add integrations, go to the **Integrations** section inside FlutterFlow Des
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/bqLiI2baEv7gksJob02J?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/bqLiI2baEv7gksJob02J?embed&show_copy_link=true" title="Integrations interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -74,9 +81,8 @@ To launch an agent and update the design:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/eOAIy1Hup8TfUJO4QIDp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/eOAIy1Hup8TfUJO4QIDp?embed&show_copy_link=true" title="Integrations interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -118,3 +124,7 @@ Using MCP Calls, an assistant can work with:
 - **History**: Undo, redo, and review changes
 
 The assistant operates directly on your design, making it easy to iterate quickly and visually.
+
+## Related documentation
+
+See [Collaboration](/designer/collaboration) for a related FlutterFlow workflow.

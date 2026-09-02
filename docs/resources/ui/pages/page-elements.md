@@ -3,8 +3,18 @@ title: Page Elements
 slug: /resources/ui/pages/scaffold
 sidebar_position: 2
 toc_max_heading_level: 5
+description: >-
+  Page elements in FlutterFlow are the key elements that define the structure
+  and functionality of each page in your app.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Page Elements
+  - Scaffold
+  - Pages
 ---
-
 # Page Elements
 
 Page elements in FlutterFlow are the key elements that define the structure and functionality of each page in your app. Understanding these elements is crucial for building intuitive and effective user interfaces. From navigational elements like the **AppBar** and Drawer to interactive components like **Floating Action Buttons (FABs)**, each element plays a specific role in shaping the user experience.
@@ -41,7 +51,7 @@ FlutterFlow Page**](#) section.
 ## AppBar
 
 **AppBar** is a widget that displays a toolbar at the top of the screen, typically used for
-branding, navigation, and actions related to the current screen. It supports a title and icons, 
+branding, navigation, and actions related to the current screen. It supports a title and icons,
 and offers customization with a variety of styles and functionalities.
 
 The AppBar is divided into the following sections:
@@ -61,7 +71,7 @@ The AppBar is divided into the following sections:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/Gviwe4k9svWyMBr6NLCP?embed&show_copy_link=true"
         title="Add AppBar"
         style={{
@@ -89,7 +99,7 @@ However, it's important to note that this default icon won't appear in the Flutt
 If you wish to replace the default icon with another icon in the leading space, follow the [guide on adding an AppBar](#add-an-appbar).
 
 :::tip[Generated Code]
-In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if back navigation is enabled or Drawer is detected when you run the app. 
+In the generated code, when this toggle is enabled, [`automaticallyImplyLeading`](https://api.flutter.dev/flutter/material/AppBar/automaticallyImplyLeading.html) property in the **AppBar** widget is set to `true`. This means that the appropriate default button will be displayed if back navigation is enabled or Drawer is detected when you run the app.
 :::
 
 ## Floating Action Button (FAB)
@@ -120,7 +130,7 @@ the UI.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/TfHpfAQYIc5iaALgbK2O?embed&show_copy_link=true"
         title="Add FAB"
         style={{
@@ -154,7 +164,7 @@ of an app without cluttering the main interface.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/jTl8VlxxDxmhyms7YEVS?embed&show_copy_link=true"
         title="Scaffold - Add Drawer"
         style={{
@@ -205,7 +215,7 @@ appearance, and more.
 
 <!---TODO Image from demo app--->
 
- 
+
 
 ### Enable Nav Bar in settings
 
@@ -238,7 +248,7 @@ bar and then add them. Here's how you can do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/ShQiuWlUfEbCT29G6nyJ?embed&show_copy_link=true"
         title="Nav Bar Add Pages"
         style={{
@@ -282,9 +292,8 @@ To reorder the Nav Bar items:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/AP66BpoOXuYnmrndPShX?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/AP66BpoOXuYnmrndPShX?embed&show_copy_link=true" title="Page Elements interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -404,7 +413,7 @@ Here are some common uses of a SnackBar in an app:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/wSnox6aBYylpdh2qx1JJ?embed&show_copy_link=true"
         title="Show a snackbar"
         style={{
@@ -479,8 +488,3 @@ This can be useful in scenarios where an immediate update to the user feedback i
 as correcting a message or providing new information. By using these methods, you can control the
 flow of information via SnackBars, ensuring that user feedback is timely, relevant, and not
 overwhelming.
-
-
-
-
-

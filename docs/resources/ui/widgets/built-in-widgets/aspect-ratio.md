@@ -1,11 +1,17 @@
 ---
 slug: aspect-ratio
 title: AspectRatio
-tags: [Base Elements]
-keywords: [AspectRatio, Aspect Ratio, Base Element, Widget]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - AspectRatio
+  - Aspect Ratio
+  - Base Element
+  - Widget
 description: Learn how to add an AspectRatio widget in your FlutterFlow app.
 ---
-
 # AspectRatio
 
 The `AspectRatio` widget lets you maintain a consistent width-to-height ratio for its child widget. Instead of setting fixed pixel dimensions, you define a ratio, and the widget calculates the height automatically based on the available width. This keeps your UI proportionally consistent across all screen sizes without manual math.
@@ -17,9 +23,8 @@ Use it whenever a child widget needs to maintain a predictable shape, regardless
     paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/FI8IKwnZpiO9d3ujpk5I?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/FI8IKwnZpiO9d3ujpk5I?embed&show_copy_link=true" title="AspectRatio interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -98,3 +103,7 @@ When AspectRatio is placed inside a parent that provides tight constraints in bo
 
 - Remove the fixed height from the parent `Container` and let AspectRatio drive the height.
 - If inside a `Row`, wrap AspectRatio in an `Expanded` widget so it receives unconstrained width first.
+
+## Related documentation
+
+See [Badge](/resources/ui/widgets/built-in-widgets/badge) for a related FlutterFlow workflow.

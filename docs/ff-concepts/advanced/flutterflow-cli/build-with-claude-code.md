@@ -1,12 +1,27 @@
 ---
 slug: /flutterflow-cli/claude-code
 title: Claude Code Plugin
-description: Use the FlutterFlow plugin in the Claude Code terminal or desktop app to build and edit FlutterFlow apps with AI, including automatic CLI install, secure API key setup, and a guided build workflow.
-tags: [CLI, AI, Claude Code]
+description: >-
+  The FlutterFlow plugin for Claude Code packages FlutterFlow's agentic building
+  experience as a Claude Code plugin, and works in both the Claude Code terminal
+  (CLI) and the Claud...
+tags:
+  - FlutterFlow
+  - CLI
+  - AI
 sidebar_position: 5
-keywords: [Claude Code, Plugin, CLI, Desktop App, Agentic AI, FlutterFlow AI, FlutterFlow Plugin]
+keywords:
+  - Claude Code
+  - Plugin
+  - CLI
+  - Desktop App
+  - Agentic AI
+  - FlutterFlow AI
+  - FlutterFlow Plugin
+  - build a FlutterFlow project with Claude Code
+ai_queries:
+  - build a FlutterFlow project with Claude Code
 ---
-
 # Claude Code Plugin
 
 The **FlutterFlow plugin for [Claude Code](https://www.claude.com/product/claude-code)** packages FlutterFlow's agentic building experience as a Claude Code plugin, and works in both the **Claude Code terminal (CLI)** and the **Claude Code desktop app**. Once installed, it:
@@ -27,7 +42,7 @@ Before you start, make sure you have:
 
 - **Claude Code** installed and signed in (the terminal CLI, the desktop app, or both). Get them from [claude.com](https://www.claude.com/product/claude-code).
 - **Git**, which Claude Code uses to install the plugin.
-- **Dart**, bundled with [Flutter](https://docs.flutter.dev/get-started/install), which the FlutterFlow CLI requires. If it's missing, the plugin detects it and links you to the installer.
+- **Dart**, bundled with [Flutter](https://docs.flutter.dev/install/quick), which the FlutterFlow CLI requires. If it's missing, the plugin detects it and links you to the installer.
 :::
 
 :::note[Platform support]
@@ -207,7 +222,7 @@ echo 'export PATH="$HOME/.pub-cache/bin:$PATH"' >> ~/.zshrc
 <details>
 <summary>The CLI didn't install because Dart is missing</summary>
 <p>
-The FlutterFlow CLI requires the Dart SDK, which ships with Flutter. Install <a href="https://docs.flutter.dev/get-started/install">Flutter</a> (recommended) or <a href="https://dart.dev/get-dart">Dart on its own</a>, then start a new Claude Code session. The plugin retries the install automatically.
+The FlutterFlow CLI requires the Dart SDK, which ships with Flutter. Install <a href="https://docs.flutter.dev/install/quick">Flutter</a> (recommended) or <a href="https://dart.dev/get-dart">Dart on its own</a>, then start a new Claude Code session. The plugin retries the install automatically.
 </p>
 </details>
 

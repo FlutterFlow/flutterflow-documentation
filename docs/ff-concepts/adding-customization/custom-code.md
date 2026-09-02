@@ -1,25 +1,34 @@
 ---
 slug: /concepts/custom-code
 title: Writing Custom Code
-description: Learn how to write and integrate custom code in your FlutterFlow app to add custom functionalities.
-tags: [Custom Code, Customizations]
+description: >-
+  Learn how to write and integrate custom code in your FlutterFlow app to add
+  custom functionalities.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Custom Code, Customizations, Flutter, Dart, Pub.dev]
+keywords:
+  - FlutterFlow
+  - Custom Code
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
 toc_max_heading_level: 4
 ---
-
 # Custom Code
 
 While FlutterFlow provides a wide range of pre-built components and functionalities, there may be
 times when you need to extend your app with custom logic or UI components that are not available out of the box.
-This is where writing custom code comes into play. 
+This is where writing custom code comes into play.
 
 There are a few different ways to make custom code accessible in FlutterFlow:
 
-* **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties. 
+* **[Custom Functions](custom-functions.md):** Custom Dart functions that can be used to set Widget or Action properties.
 * **[Custom Actions](custom-actions.md):** Custom Dart functions that can be triggered by [Action Triggers](https://docs.flutterflow.io/resources/functions/action-triggers/) or used as nodes in an [Action Flow](https://docs.flutterflow.io/resources/functions/action-flow-editor#action-flow-editor). These are usually `async` functions and are able to import [custom package dependencies](#adding-a-pubspec-dependency).
 * **[Code File](code-file.md):** You can define custom classes, enums, and logic to manage your app’s data and behavior.
-* **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets that can also import [custom package dependencies](#adding-a-pubspec-dependency) and be used in the same way as [Components](https://docs.flutterflow.io/resources/ui/components) throughout your project. 
+* **[Custom Widgets](custom-widgets.md):** Custom Flutter widgets that can also import [custom package dependencies](#adding-a-pubspec-dependency) and be used in the same way as [Components](https://docs.flutterflow.io/resources/ui/components) throughout your project.
 * **[Configuration Files](configuration-files.md):** You'll have the ability to edit native files for Android and iOS.
 
 :::tip[Why Write Custom Code?]
@@ -31,7 +40,7 @@ There are a few different ways to make custom code accessible in FlutterFlow:
 - **Unique UI Elements:** Create unique user interface elements that require custom rendering or
   interactions.
   :::
-  
+
 ## Writing Custom Code
 
 Custom Code lets you add app-specific logic, custom widget, and native configuration directly in FlutterFlow. You can keep functions, actions, widgets, and code files organized with the pages and components they support, so each feature's files are easier to find and manage.
@@ -41,9 +50,8 @@ Custom Code lets you add app-specific logic, custom widget, and native configura
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/epngZPIsKoxNi8rBEZZm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/epngZPIsKoxNi8rBEZZm?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -72,9 +80,8 @@ Switching to the new Custom Code layout is one-way for that project. After you s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/FqnozpYV5bMsP2eyIABH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/FqnozpYV5bMsP2eyIABH?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,7 +109,7 @@ There are two main ways to write custom code in FlutterFlow:
 
 
 ### Using the In-App Code Editor
-You can use the In-App Code Editor to view and edit custom code directly in the FlutterFlow application. 
+You can use the In-App Code Editor to view and edit custom code directly in the FlutterFlow application.
 
 ![custom-code-common.avif](imgs/custom-code-common.avif)
 
@@ -138,9 +145,8 @@ Your prompt must be at least 3 words and no more than 500 characters.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/fxfIEVOrAXu2SuKg8XWb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fxfIEVOrAXu2SuKg8XWb?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -170,11 +176,11 @@ To do so, click the **Compile Code** button.
   <figcaption class="centered-caption">How to recognize compile time errors</figcaption>
 </figure>
 
-To run your app, you must make sure **Custom Functions** are compiled. 
+To run your app, you must make sure **Custom Functions** are compiled.
 
 Custom Widgets and Actions don't need to be compiled to export code or test your app. However, you won't be able to preview Custom Widgets in the builder until they are compiled.  You'll see a project warning if you don't compile Custom Widgets or Actions.
 
-Compiling Custom Functions should be pretty fast, but sometimes, compiling Custom Actions and Widgets takes a while. 
+Compiling Custom Functions should be pretty fast, but sometimes, compiling Custom Actions and Widgets takes a while.
 
 ### Code Analyzer
 
@@ -264,8 +270,8 @@ This is especially helpful when you want to trigger actions from within the cust
 In programming, callbacks are functions passed to other functions to be called when a specific event
 occurs.
 :::
-In the following example, we have a Custom Action that takes an `onError(searchKeyword)` callback 
-action with an Action Parameter `searchKeyword`. This means that the custom action will provide this search keyword back to the callback action when it calls it. 
+In the following example, we have a Custom Action that takes an `onError(searchKeyword)` callback
+action with an Action Parameter `searchKeyword`. This means that the custom action will provide this search keyword back to the callback action when it calls it.
 
 ![explain-callback-action.png](imgs/explain-callback-action.png)
 
@@ -280,9 +286,8 @@ To provide a callback action to your main custom action, check out this quick gu
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/AwtMj7Y1J8A43ht9BuQI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/AwtMj7Y1J8A43ht9BuQI?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -342,9 +347,8 @@ For example, if you have a **Cart** folder that contains cart pages and componen
     paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0D0EpoylXpD3Ml9WNN9f?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0D0EpoylXpD3Ml9WNN9f?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -382,9 +386,8 @@ To add a pubspec dependency from pub.dev, go to **Settings and Integrations > Pr
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oRtb2mYzh1fdRcgeoQjZ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oRtb2mYzh1fdRcgeoQjZ?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -491,9 +494,8 @@ Here’s exactly how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/KUqOcYwnQQ77uAcTA1dw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/KUqOcYwnQQ77uAcTA1dw?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -529,9 +531,9 @@ Replace `<username>` with your GitHub username and `<personal-access-token>` wit
 ### Setup Code
 To configure your custom code with the package, copy and paste the following items from the package's pub.dev page:
 
-1. **Copy Package Name & Version** 
+1. **Copy Package Name & Version**
 
-To use the dependency in your Custom Action or Custom Widget resource file, go to the package's pub.dev page and click the **Copy to Clipboard** icon next to the package name and version. Then, paste it into the **Pubspec Dependency** section (bottom right) of the FlutterFlow code editor. 
+To use the dependency in your Custom Action or Custom Widget resource file, go to the package's pub.dev page and click the **Copy to Clipboard** icon next to the package name and version. Then, paste it into the **Pubspec Dependency** section (bottom right) of the FlutterFlow code editor.
 
 ![package-dependency-version-copy](imgs/package-dependency-version-copy.avif)
 
@@ -542,7 +544,7 @@ See **[example](#add-pubspec-dependency-to-custom-code-example-guide)** for more
 
 :::warning
 The current dependency might depend on other dependencies to work. So make sure you also copy the
-name and version of all the additional dependencies to specify in the code 
+name and version of all the additional dependencies to specify in the code
 
 You can check if the current dependency has any additional dependencies inside the '*Dependencies'*
 section at the bottom right side.
@@ -577,9 +579,8 @@ FlutterFlow:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/e8vTIcA4EPju5XntsGiD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/e8vTIcA4EPju5XntsGiD?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -614,9 +615,8 @@ If version conflicts occur, warnings will appear in both the **Custom Dependenci
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/aaX1a8s4Z1xytVa2DYd5?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/aaX1a8s4Z1xytVa2DYd5?embed&show_copy_link=true" title="Writing Custom Code interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

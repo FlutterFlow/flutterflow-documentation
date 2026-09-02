@@ -1,12 +1,21 @@
 ---
 slug: /resources/functions/utility
 title: Utility Functions
-description: Learn about the built-in utility functions available in FlutterFlow to enhance your app's UI logic.
-tags: [Functions]
+description: >-
+  Learn about the built-in utility functions available in FlutterFlow to enhance
+  your app's UI logic.
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 sidebar_position: 1
-keywords: [Built-in Functions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Built-in Functions
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Utility Functions
 
 Utility functions are crucial for simplifying common tasks in app development, such as performing
@@ -56,9 +65,8 @@ Here is a quick demo:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/v6bfWg0Nfpd1K5RjrTNx?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/v6bfWg0Nfpd1K5RjrTNx?embed&show_copy_link=true" title="Utility Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -121,9 +129,8 @@ So, we create two arguments in the **Inline Function** dialog where they hold 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/qM8kjAlMJl6WyH3tXN4X?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qM8kjAlMJl6WyH3tXN4X?embed&show_copy_link=true" title="Utility Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -154,9 +161,9 @@ The arguments in a Inline Function can take the following properties:
 | Colors   | ✅                 | ✅             |
 
 
-### Common Examples 
+### Common Examples
 
-Here are some common expressions you can use for your business logic: 
+Here are some common expressions you can use for your business logic:
 
 | Expression                         | Description                                             | Example                    | Return Type    |
 |------------------------------------|---------------------------------------------------------|----------------------------|----------------|
@@ -214,9 +221,8 @@ Here's an example of adding a Custom Code Expression:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6RV03v2ByVqRgCTeg3QF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/6RV03v2ByVqRgCTeg3QF?embed&show_copy_link=true" title="Utility Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

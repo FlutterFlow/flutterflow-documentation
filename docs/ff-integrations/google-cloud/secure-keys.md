@@ -1,20 +1,28 @@
 ---
 slug: /best-practices/secure-api-keys
 title: Secure API Keys
-description: Learn best practices for securing API keys in your FlutterFlow app, including key restrictions, geographical restrictions, IP address binding, and service-specific limitations.
-tags: [API Keys, Security, Best Practices, Google Cloud]
+description: >-
+  Learn best practices for securing API keys in your FlutterFlow app, including
+  key restrictions, geographical restrictions, IP address binding, and
+  service-specific limitations.
+tags:
+  - FlutterFlow
+  - Best Practices
 sidebar_position: 1
-keywords: [FlutterFlow, API Keys, Security, Best Practices, Google Cloud]
+keywords:
+  - FlutterFlow
+  - API Keys
+  - Security
+  - Best Practices
+  - Google Cloud
+  - restrict a Google Cloud API key used by FlutterFlow
+ai_queries:
+  - restrict a Google Cloud API key used by FlutterFlow
+last_verified: 2026-09-02
 ---
-
 # Best Practices: Secure API Keys
 
-Google Cloud API key restriction is essential for managing access and enhancing security when
-working with Google Cloud services. This overview explains how to effectively restrict API keys,
-allowing developers to control how and where their keys can be used. Developers can set geographical
-restrictions, bind keys to specific IP addresses, or limit usage to particular services. These
-measures ensure that API keys are secured, helping to protect projects and maintain optimal
-functionality.
+Google Cloud API key restrictions reduce how an exposed key can be abused. Client API keys embedded in Android, iOS, or web builds can be inspected, so do not treat them as secrets. Create separate keys for each platform and environment, apply both an application restriction and API restrictions, and monitor usage and billing.
 
 To minimize potential damage from compromised API keys:
 
@@ -24,15 +32,13 @@ To minimize potential damage from compromised API keys:
 - **Delete unnecessary API keys:** Remove any API keys that are no longer required to reduce
   exposure to attacks.
 
-- **Rotate your API keys periodically:** Regularly create new API keys, delete the old ones, and
-  update your applications to use the new keys. This practice helps maintain security and limit the
-  lifespan of any single key.
+- **Rotate safely when needed:** Create and restrict the replacement, update and release every consumer, verify traffic on the new key, and only then revoke the old key. Rotate immediately after suspected compromise.
+
+- **Keep server credentials off clients:** A key or credential that grants privileged or billable server access must stay behind a trusted backend. Do not put service-account keys, unrestricted server keys, or secrets in FlutterFlow client state, custom code, assets, or Remote Config.
 
 ## Add restrictions to your API key
 
-API keys are unrestricted by default. Unrestricted keys are insecure because they can be used by anyone, from anywhere. You can add either [application restrictions](https://cloud.google.com/docs/authentication/api-keys?#adding-application-restrictions) or [API restrictions](https://cloud.google.com/docs/authentication/api-keys?#api_key_restrictions) to
-enhance
-security.
+API keys are unrestricted by default. Apply both [application restrictions](https://cloud.google.com/docs/authentication/api-keys#adding-application-restrictions) and [API restrictions](https://cloud.google.com/docs/authentication/api-keys#api_key_restrictions) whenever the target service supports them. Use HTTP referrers for a web key, Android app restrictions with the package name and signing-certificate fingerprint for Android, iOS app restrictions with the bundle identifier for iOS, and IP restrictions only for calls from servers with stable egress addresses.
 
 In the following example, we will use the **Map API keys** and restrict them to specific platforms
 using
@@ -54,7 +60,7 @@ Follow the steps below to enable the iOS key exclusively for iOS apps with a uni
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/givOcppDSZHXzWJDloWj?embed&show_copy_link=true"
         title="Restrict API Keys"
         style={{
@@ -74,9 +80,7 @@ Follow the steps below to enable the iOS key exclusively for iOS apps with a uni
     </iframe>
 </div>
 
-Now your iOS API Key will only work when accessed from your app with the given unique identifier.
-You can also restrict the API keys by **HTTP referrers** or **IP addresses**. Here's a quick
-overview from the official docs:
+Now the iOS key is restricted to the configured bundle identifier. Add API restrictions as a separate step so the key can call only the required services. Test release-signed builds and every allowed web origin; an incorrect application restriction commonly produces authorization failures.
 
 ![app-restriction.png](app-restriction.png)
 
@@ -84,3 +88,5 @@ overview from the official docs:
 Learn more about **securing API keys for all platforms and restricting API usage** by visiting
 the official [**Google Cloud Docs**](https://cloud.google.com/docs/authentication/api-keys?#securing).
 :::
+
+If a key is exposed, review its usage, restrict or rotate it, and investigate unexpected charges. Restrictions reduce risk but do not replace quotas, budget alerts, App Check where supported, backend authorization, or credential monitoring.

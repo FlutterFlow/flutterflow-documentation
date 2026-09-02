@@ -1,7 +1,18 @@
 ---
-keywords: ['flutter', 'downloaded', 'code']
+keywords:
+  - flutter
+  - downloaded
+  - code
 slug: /troubleshooting/deployment/resolve-errors-in-downloaded-code
 title: Resolve Errors in Downloaded Code
+description: >-
+  When you download your project from FlutterFlow and run it locally in your
+  IDE, you may encounter errors due to Flutter version mismatches.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
+last_verified: 2026-09-02
 ---
 # Resolve Errors in Downloaded Code
 
@@ -14,7 +25,7 @@ When you download your project from FlutterFlow and run it locally in your IDE, 
         - Navigate to your project settings or export screen.
         - Locate the displayed Flutter version used for your project.
 
-        ![](../assets/20250430121137152872.png)
+        ![Resolve Errors in Downloaded Code in FlutterFlow](../assets/20250430121137152872.png)
 
 2. **Verify the Flutter version on your machine**
 
@@ -25,11 +36,11 @@ When you download your project from FlutterFlow and run it locally in your IDE, 
         ```
         Here's an example of how you can do that:
 
-        ![](../assets/20250430121137421780.png)​
+        ![Resolve Errors in Downloaded Code in FlutterFlow](../assets/20250430121137421780.png)​
 
 3. **Upgrading or Downgrading to the correct Flutter version**
 
-    If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about [**upgrading Flutter**](/testing/local-run/#4-running-app-on-device). ​By following these steps, you can fix the errors that you face after downloading the code and run locally. 
+    Use a version manager or an isolated SDK checkout to select the project version rather than changing a shared system SDK blindly. Then run dependency resolution and inspect the first analyzer or compiler error. A matching Flutter version removes one variable but does not prove dependencies, native tooling, signing, or custom code are valid. See [**running locally**](/testing/local-run/#4-running-app-on-device).
 
 
 If you continue to experience issues, contact the FlutterFlow support team via live chat or email at support@flutterflow.io.
