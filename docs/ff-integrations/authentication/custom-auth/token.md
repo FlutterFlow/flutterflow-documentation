@@ -14,6 +14,7 @@ keywords:
   - Tokens
   - Authentication
   - Custom Authentication
+last_verified: 2026-09-02
 ---
 # Tokens: Types and Lifespans
 
@@ -33,7 +34,9 @@ Here are some key terms we'll encounter in [**Custom Authentication**](custom-au
   It defines the period during which the token remains valid. This is a critical security measure to
   prevent unauthorized access, ensuring that tokens are regularly refreshed and authenticated.
 
-Developers must save these values in the persisted app state to keep it secure.
+FlutterFlow's custom-authentication actions provide dedicated fields for these values. If you enable **Persist Auth Sessions**, also keep **Store Auth Session Securely** enabled. Do not copy tokens into ordinary App State, page state, user profile fields, logs, analytics, URLs, or error messages.
+
+Use HTTPS for every token exchange. Access tokens should be short-lived and scoped to the minimum required access. Treat refresh tokens as higher-value credentials: rotate or revoke them according to your backend's protocol and clear the entire session on logout. Your backend must validate each token's signature, issuer, audience, expiry, and authorization claims before serving protected data.
 
 :::warning[Remember]
 Not all login APIs will return an Auth Token, Refresh Token, and Token Expiry Time. The details of
@@ -62,12 +65,15 @@ to the API with a header that includes an Authorization header containing the au
 sends a Authorization Bearer Token that uses the saved Auth Token</figcaption>
 </figure>
 
-After an hour, or as determined by the token's expiry time, the authentication token expires. Any
-attempt to access another post with the expired token will result in a 401 Unauthorized response.
+After an hour, or as determined by the token's expiry time, the authentication token expires. A
+protected endpoint commonly returns `401 Unauthorized` for an expired token, but it can use the same
+status for other credential failures. Use the backend's error contract rather than assuming every
+`401` means the token should be refreshed.
 
-To retrieve a new token, a common practice involves the client app making a request to a specific
-endpoint, submitting the saved refresh token in the request body. The server then validates the
-refresh token and responds with a new authentication token.
+To retrieve a new token, follow the backend's documented refresh flow. The client sends the refresh
+credential only to the trusted refresh endpoint, and the server validates it before issuing a new
+access token. If the server rotates refresh tokens, replace the stored refresh token atomically and
+invalidate the old one. Limit retries and require a new login when refresh is rejected.
 
 ![token-fail-request.png](../imgs/token-fail-request.png)
 

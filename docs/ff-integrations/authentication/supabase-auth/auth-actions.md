@@ -12,6 +12,7 @@ keywords:
   - Auth Actions
   - Authentication
   - Supabase
+last_verified: 2026-09-02
 ---
 # Authentication Actions
 Currently FlutterFlow supports the following Actions for Supabase Authentication:
@@ -154,6 +155,8 @@ To configure a custom redirect URL:
 2. Whitelist this custom URL by navigating to **Supabase Dashboard > Authentication > URL Configuration > Redirect URL**, and click **Add URL** to include it.
 3. Update the reset password template. Go to **Supabase Dashboard > Authentication > Email Templates > Reset Password > Source** and ensure only `{{ .ConfirmationURL }}` is present in the template (remove any appended route names).
 
+The **Redirect To** value must match an entry in Supabase's redirect allow list. Set **Site URL** to the canonical production URL, prefer exact production redirect paths, and reserve wildcard patterns for controlled preview or local-development URLs. See [Supabase redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls).
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -181,6 +184,6 @@ To configure a custom redirect URL:
 
 ## Delete User
 
-At present, we do not support deleting Supabase user action. However, you can refer to this community video for guidance on how to do so.
+FlutterFlow does not currently expose a Supabase **Delete User** action. Deleting an Auth user is an administrative operation: perform it in a trusted backend with appropriate authorization, never by shipping a Supabase `service_role` key in the app. The community video below is an implementation example, not an official security guarantee; review it against current [Supabase user-management guidance](https://supabase.com/docs/guides/auth/managing-user-data).
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/PNBvc35CDAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

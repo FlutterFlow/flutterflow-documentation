@@ -12,6 +12,7 @@ keywords:
   - GitHub Login
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # GitHub Login
 The GitHub auth provides a convenient way for users to authenticate and log in to your application using their GitHub accounts.
@@ -43,6 +44,10 @@ To enable GitHub authentication in the Firebase:
 2. Select the **Sign-in method** tab, and select **GitHub**. If you have already added another provider, click on the **Add new provider**, select **GitHub**, and **Enable** it.
 3. To get the **Client ID** and **Client Secret**, [register your app](https://github.com/settings/applications/new) as a developer application on GitHub, and while doing so, paste the authorization callback URL to your GitHub app configuration.
 4. Click **Save**.
+
+:::danger[Protect the GitHub client secret]
+The Client Secret belongs only in the Firebase provider configuration. Never place it in FlutterFlow app state, client code, screenshots, logs, or source control. Copy the exact callback URL shown by Firebase, avoid wildcard callback matching unless it is strictly required, and rotate the secret immediately if it is exposed. See GitHub's [OAuth app security guidance](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/best-practices-for-creating-an-oauth-app).
+:::
 
 <div style={{
     position: 'relative',

@@ -15,6 +15,7 @@ keywords:
   - Firebase
   - Firebase Analytics
   - Track App Events
+last_verified: 2026-09-02
 ---
 # Google Analytics
 
@@ -86,6 +87,8 @@ For example, in an e-commerce app, you might log product purchases with paramete
 
 To log a custom event, add the **Google Analytics Event** action and enter a clear, descriptive **Event Name**. You can add parameters for extra context by clicking **+ Add Parameter** and providing **Key**-**Value** pairs (e.g., `product_category` as the Key and `electronics` as the Value).
 
+Event names are case-sensitive. Follow the current [Firebase Analytics event naming rules](https://firebase.google.com/docs/analytics/events) and avoid reserved prefixes. Do not send personally identifiable information, authentication tokens, passwords, or other secrets in event names, parameters, or user properties. Obtain any consent required for analytics in the regions where your app operates.
+
 ![google-analytics-action](imgs/google-analytics-action.avif)
 
 ## Viewing Analytics Data
@@ -101,6 +104,6 @@ Use this data to gain insights into app screens, which funnels convert best, and
 Why don’t I see any Analytics data yet?
 </summary>
 <p>
-Event data may not appear instantly, which can be frustrating during development. Firebase may take up to **24 hours** to display event data in the main dashboards. Ensure your device has internet access and you’ve used the app at least once since enabling Analytics.
+Event data may not appear instantly. Use Analytics **Realtime** or **DebugView** while validating an implementation; standard processed reports can take **24–48 hours**. Ensure the device has internet access and that you have used the app since enabling Analytics. See Google's [data freshness reference](https://support.google.com/analytics/answer/9333790) for current processing expectations.
 </p>
 </details>

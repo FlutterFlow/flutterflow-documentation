@@ -12,14 +12,15 @@ keywords:
   - Apple Login
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # Apple Login
 
 Apple Sign-In allows users to authenticate using their Apple Accounts.
 
-:::warning[Support]
+:::info[Platform support]
 
-Apple sign-in functionality is only supported for iOS.
+FlutterFlow's Firebase Apple provider supports iOS and web. The web flow requires additional Apple Services ID, return URL, key, and Firebase OAuth-code-flow configuration; complete the [Sign in with Apple for web guide](../../../troubleshooting/authentication/sign_in_with_apple_for_web.md) before testing a web build. This FlutterFlow action does not currently configure the Android-specific Apple web-authentication flow.
 
 :::
 
@@ -58,8 +59,7 @@ Before getting started with this section:
 3. Created an [**Apple account**](https://appleid.apple.com/account?appId=632&returnUrl=https%3A//developer.apple.com/account/).
 4. [**Purchased an Apple Developer membership**](https://developer.apple.com/programs/enroll/).
    Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.
-5. Apple sign-In can not be tested in Run Mode. You will need to test it on a real device or
-   emulator. Try with Local Run!
+5. Test native Apple sign-in with [Local Run](../../../testing-deployment-publishing/running-your-app/local-run.md) on an Apple simulator or device. Test the web flow on an authorized deployed domain after completing the web configuration; Preview Mode is not a substitute for either provider flow.
 :::
 
 ## Adding Apple sign-in
@@ -163,7 +163,8 @@ To enable Apple authentication in the Firebase:
 3. Select the **Sign-in method** tab.
 4. Click on **Apple** (Under the 'Additional Providers' section). If you have already added any other provider, click on the **Add new provider** and then click on **Apple**.
 5. Find the **Apple** switch and enable it.
-6. Click on the **Save** button.
+6. For web, also provide the Services ID, Apple Team ID, Key ID, and private key required by Firebase's OAuth code-flow section. Copy the exact Firebase return URL into the Apple Services ID configuration. Keep the `.p8` private key only in Apple/Firebase's trusted configuration; never add it to FlutterFlow client code, app state, screenshots, or source control. See [Firebase's Apple web setup](https://firebase.google.com/docs/auth/web/apple).
+7. Click **Save**.
 
 <div style={{
     position: 'relative',
@@ -232,6 +233,8 @@ To add login action:
 3. Search and select the **Log in** (under *Backend/Database > Firebase Authentication*) action.
 4. Set **Auth Provider** to **Apple**.
 5. Tick the **Create User Document** and set the **Collection** to **users**. After successful login, this will insert the user's email address into the 'users' collection. If a user already exists, it won't add details again.
+
+Apple supplies the user's name only during the first authorization. Save it when it is available or collect a display name during onboarding; subsequent sign-ins may not return it. If the user selects **Hide My Email**, respect the relay address and configure Apple's private email relay before sending Firebase emails.
 
 <div style={{
     position: 'relative',

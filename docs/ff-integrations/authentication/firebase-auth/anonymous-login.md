@@ -12,6 +12,7 @@ keywords:
   - Anonymous Login
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # Anonymous Login
 
@@ -66,6 +67,10 @@ the authentication provider:
 
 4. Enable the **Create User Document** toggle and set the Collection to _users_. This action will
    create an entry for the user in the database without any details upon successful login.
+
+Creating a user document is optional. If you enable it, protect anonymous-user data with ownership checks in your Firestore and Storage rules. Anonymous authentication does not isolate data by itself.
+
+If the user later chooses a permanent provider, use an account-linking flow when your implementation supports it so the permanent credential stays attached to the existing Firebase user and data. Creating an unrelated account can orphan the anonymous user's records. See Firebase's [anonymous authentication guidance](https://firebase.google.com/docs/auth/flutter/anonymous-auth).
 
 
 :::info

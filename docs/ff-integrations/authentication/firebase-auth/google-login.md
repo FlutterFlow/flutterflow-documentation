@@ -15,6 +15,7 @@ keywords:
   - add Google sign in with Firebase
 ai_queries:
   - add Google sign in with Firebase
+last_verified: 2026-09-02
 ---
 # Google Login
 
@@ -114,18 +115,12 @@ To test during development, you can run your app locally using FlutterFlow’s L
 
 ### Running on Test Mode/Run Mode
 
-1. To test Google sign-in in Test or Run mode, you must add the authorized
-   domain in the Firebase console and Google cloud console.
-
-    - **For Test mode**, you can open the browser console, try logging in, and
-      get the domain from the browser console. It should look like `ff-debug-service-frontend-ygxkweukma-uc.a.run.app`. For *Pro* users, the above URL will also include `-pro`, such as `ff-debug-service-frontend-pro-ygxkweukma-uc.a.run.app`.
-
-    - **For Run mode**, you can simply use 'app.flutterflow.io'.
+1. To test Google sign-in in Test or Run mode, copy the exact current web origin from the browser address bar. FlutterFlow preview hosts can change; do not reuse a historical example domain. Add only domains you explicitly trust, and remove temporary preview entries when testing is complete.
 
 2. To add in Firebase console:
 
     1. Open the Firebase console and click on Authentication and select the
-      Setting tab.
+      **Settings** tab.
 
     2. Select **Authorized domains** from the left side menu.
 
@@ -144,10 +139,8 @@ To test during development, you can run your app locally using FlutterFlow’s L
     3. Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
       Google Service)'.
 
-    4. Under the '**Authorized JavaScript origins**', click ADD URI and add both the
-      URL.
-    5. Similarly, under the '**Authorized redirect URIs**', click ADD URI, add both
-      the URL and append '/__/auth/handler' at the end.
+    4. Under **Authorized JavaScript origins**, add each complete origin: scheme, hostname, and port when present, with no path.
+    5. Under **Authorized redirect URIs**, add the exact Firebase handler URL for each origin: `https://YOUR_HOST/__/auth/handler`. Redirect URIs are exact-match values, including scheme, host, path, case, and any trailing slash.
 
 <iframe title="Google OAuth Login interactive tutorial" src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0"
 allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
@@ -160,6 +153,8 @@ allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
 4. If you don't see the Web client created yet, you can create new one by
    clicking **+ CREATE CREDENTIALS**, selecting OAuth client ID and then select
    Application type to Web application.
+
+For production, use domains you own or are authorized to use, configure accurate OAuth branding, publish a privacy policy and terms as applicable, and request only the minimum scopes. See Google's [OAuth 2.0 policies](https://developers.google.com/identity/protocols/oauth2/policies) and Firebase's [Google web sign-in guidance](https://firebase.google.com/docs/auth/web/google-signin).
 
 
 ![add-app.gif](../imgs/add-app.gif)

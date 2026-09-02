@@ -12,10 +12,15 @@ keywords:
   - Phone Login
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # Phone Login
 
 Phone login allows a user to sign in by sending an SMS message to the user's phone. The user login in using a one-time code contained in the SMS message.
+
+:::warning[Security and consent]
+Phone-number sign-in verifies possession of a number, not a person's real-world identity. Numbers can be recycled or transferred and SMS is vulnerable to SIM-swap and social-engineering attacks, so offer a stronger method for high-risk accounts or operations. Firebase sends and stores submitted phone numbers for spam and abuse prevention; obtain appropriate user consent, disclose possible SMS charges, review supported regions, and monitor SMS quotas and abuse.
+:::
 
 <div style={{
     position: 'relative',
@@ -67,7 +72,7 @@ Adding Phone sign-in comprises the following steps:
 
 ### 1. Setting up phone sign-in
 
-To use phone sign-in, you must [get the SHA-1 key](auth-initial-setup.md#generate-the-sha-1-key) and [regenerate the configuration files](auth-initial-setup.md#regenerate-config-files). You can find the detailed instructions [here](auth-initial-setup.md). **Note** that this step is often missed, so ensure you must complete this step before you proceed further.
+For Android, register the signing-certificate fingerprints used by each build and [regenerate the configuration files](auth-initial-setup.md#regenerate-config-files). Play Integrity requires SHA-256; Firebase's reCAPTCHA fallback requires SHA-1. Follow the [certificate fingerprint instructions](auth-initial-setup.md#generate-the-sha-1-key) before continuing.
 
 ### 2. Enabling phone authentication in Firebase
 
@@ -79,7 +84,8 @@ To enable authentication in the Firebase:
 3. Select the **Sign-in method** tab.
 4. Click on **Phone** (Under the 'Native Providers' section). If you have already added any other provider, click on the **Add new provider** and then click on **Phone**.
 5. Find the **Phone** switch and enable it.
-6. Click on the **Save** button.
+6. Configure **SMS region policy** for only the regions your app serves. New Firebase projects may deny all regions until you set this policy.
+7. Click **Save**.
 
 <div style={{
     position: 'relative',
@@ -250,11 +256,13 @@ To test phone sign-in in *Test* or *Run* mode, you must add the authorized domai
 
 Here's how you add the authorized domain:
 
-1. For **Test mode**, you can open the browser console, try logging in, and get the domain from the browser console, and for **Run mode**, you can simply use '*app.flutterflow.io*.'
+1. Copy the exact hostname shown in the browser for the current Test or Run session. FlutterFlow preview hosts can change, so do not rely on a hardcoded historical domain.
 2. Now open the [Firebase console](https://console.firebase.google.com/) and click on **Authentication**.
-3. Select the **Setting** tab.
+3. Select the **Settings** tab.
 4. Select **Authorized domains** from the left side menu.
 5. Click **Add domain**.
+
+Add only hostnames you control or explicitly trust, without a scheme or path, and remove temporary preview hosts when they are no longer needed. Authorized domains participate in authentication redirects and should not be treated as a harmless allow list.
 
 <div style={{
     position: 'relative',
@@ -285,11 +293,11 @@ Here's how it should look:
 
 ![adding-authorized-domain](../imgs/adding-authorized-domain.png)
 
-#### 8.2 Test on a real device
+#### 8.2 Test Android builds
 
-Phone Sign In ***does not*** work in an Android emulator. You can only test it on a real device.
+Firebase supports real SMS phone authentication on physical devices and the web. For an Android emulator, use Firebase's fictional test phone numbers; no SMS is sent. Do not use real phone numbers for automated or repeated tests.
 
-To test on a real device, add the SHA-256 key in the Firebase console and enable the 'Google Play Integrity API' in Google Cloud.
+For Play Integrity verification, add the SHA-256 fingerprint for the certificate that signs the installed build. Firebase Authentication enables Play Integrity through a Google-managed project; do **not** enable a separate Play Integrity API in your own Google Cloud project for this flow. If Play Integrity is unavailable, Firebase can use a reCAPTCHA fallback, which requires SHA-1 and a compatible API-key/domain configuration. See Firebase's [Android phone-auth app verification](https://firebase.google.com/docs/auth/android/phone-auth#enable-app-verification).
 
 :::info
 Skip if you find the below steps already completed by our automated Firebase integration.
@@ -304,8 +312,7 @@ While releasing the app, make sure to [**get the key from the Play Console**](au
 ![SHA-256 key](../imgs/sha-256-key.png)
 
 
-1. Open the [Google Developers Console](https://console.developers.google.com/) (Make sure your project is selected in the dropdown at the top), Click on the **Library** menu on the left, search for the **Google Play Integrity API,** and enable it.
-2. Now, you can test your app on a real device using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
+2. Test the signed build on a physical device using FlutterFlow's Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and [physical-device setup](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device).
 
 <div style={{
     position: 'relative',
@@ -342,7 +349,7 @@ To confirm the successful integration and the creation of users, navigate to you
 <summary>How do I test with dummy numbers?</summary>
 <p>
 
-To try phone sign-in without any limitations, you can add some fictitious numbers to the Firebase console.
+Use Firebase fictional phone numbers to test without sending an SMS or consuming normal SMS quota. These numbers are for development only; never use a real person's number as a test fixture.
 
 To add the fictitious number:
 

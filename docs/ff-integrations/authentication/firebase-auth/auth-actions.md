@@ -12,6 +12,7 @@ keywords:
   - Auth Actions
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # Common Auth Actions
 
@@ -121,7 +122,7 @@ Follow the steps below to add this action to any widget.
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Update Email** (under *Backend/Database > Firebase Authentication*) action.
-4. As a best practice, it's also recommended to send the email verification link to the new email (using the [e-mail verification](../firebase-auth/email-sign-in.md#send-email-verification-link-action) action) followed by this action.
+4. Firebase may require the user to have signed in recently before changing a sensitive credential. If the action returns `requires-recent-login`, prompt the user to authenticate again and then retry. The current Firebase SDK sends verification to the new address as part of the update-email flow.
 
 ![adding-update-email-action](../imgs/adding-update-email-action.avif)
 
@@ -160,7 +161,7 @@ Follow the steps below to add this action to any widget.
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Delete User** (under *Backend/Database > Firebase Authentication*) action.
-4. As a best practice, it's also recommended to log out the user (using the [logout](#) action) following this action.
+4. Firebase may require recent authentication before deletion. If the action returns `requires-recent-login`, reauthenticate the user and then retry. A successful deletion ends the Firebase account session, so a separate logout action is unnecessary.
 
     ![adding-delete-action](../imgs/adding-delete-action.avif)
 
@@ -170,6 +171,10 @@ Follow the steps below to add this action to any widget.
     3. Tick the checkbox.
     4. See the **Delete User References** section and click on **Preview** to verify the generated rule.
     5. Click the **Deploy** button.
+
+:::warning
+Deleting a Firebase Authentication account does not automatically delete all of that user's Firestore documents, Storage objects, third-party records, or backups. Configure and test every required cleanup path before production, and provide a clear confirmation step because account deletion is destructive.
+:::
 
 <div style={{
     position: 'relative',

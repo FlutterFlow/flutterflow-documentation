@@ -12,6 +12,7 @@ keywords:
   - Apple Authentication
   - Authentication
   - Supabase
+last_verified: 2026-09-02
 ---
 # Apple Login
 
@@ -136,7 +137,15 @@ If you haven't created an App ID yet, follow the instructions provided by Apple 
 
 ## Configure Apple Auth in Supabase
 
-To enable and configure Apple authentication in your Supabase project, open the [Supabase dashboard](https://supabase.com/dashboard/project/_/auth/providers), select your project, enable **Sign in with Apple** under the **Apple** section, enter the **Client ID** and **Secret Key**, and click **Save**.
+To enable Apple authentication, open the [Supabase dashboard](https://supabase.com/dashboard/project/_/auth/providers), select your project, and open **Authentication > Providers > Apple**.
+
+- For native Apple sign-in, add the App ID/bundle identifier used by the app.
+- For web OAuth, create an Apple **Services ID**, configure its website domain and the exact Supabase callback URL (`https://YOUR_PROJECT_REF.supabase.co/auth/v1/callback`), and place that Services ID first when Supabase accepts multiple Client IDs.
+- Generate the Apple client secret from the Team ID, Key ID, Services ID, and signing key, then enter it in Supabase and enable the provider.
+
+:::danger[Apple signing-key maintenance]
+The `.p8` signing key is a private credential. Store it in an approved secret manager or other protected location; never upload it to FlutterFlow, app state, client code, screenshots, logs, or source control. Apple's OAuth client secret expires after six months, so schedule rotation before expiry. If the `.p8` file is lost or exposed, revoke it in Apple Developer and create a new key immediately. See the current [Supabase Apple guide](https://supabase.com/docs/guides/auth/social-login/auth-apple).
+:::
 
 :::tip
 
@@ -173,7 +182,7 @@ To obtain the secret key, use the tool provided under [**Configuration section**
 
 ## Enable Apple Auth in FlutterFlow
 
-To enable Supabase Apple authentication in FlutterFlow, go to **Settings and Integrations** > **Supabase** > **Supabase Authentication**, and toggle on **Enable Apple Authentication**.
+To enable Supabase Apple authentication in FlutterFlow, go to **Settings and Integrations > App Settings > Authentication > Supabase Authentication**, and toggle on **Enable Apple Authentication**.
 
 ![enable-apple-auth-flutterflow.avif](imgs/enable-apple-auth-flutterflow.avif)
 
@@ -182,7 +191,9 @@ To enable Supabase Apple authentication in FlutterFlow, go to **Settings and Int
 Now, proceed to add an account creation flow, which consists of the following two actions:
 
 1. **Create Account Action**: Add the **Create Account** action (under Supabase Authentication). This will create an account in Supabase and add the user details to **Supabase Dashboard > Authentication > Users**.
-2. [**Insert Row Action**](../../database/supabase/database-actions.md#insert-row-action): The previous action does not automatically create an entry in the public "users" table you created [here](initial-setup.md#1-creating-a-users-table). To do this, add a **Supabase Insert Row** action, to log the user's details, such as their email.
+2. Optional [**Insert Row Action**](../../database/supabase/database-actions.md#insert-row-action): The previous action does not automatically create an entry in a public profile table. Add this only if your app needs one, and protect it with Row Level Security. A reviewed database trigger can provide more reliable profile creation than a second client action.
+
+Apple supplies a user's full name only during the first authorization, and the OAuth web flow may not expose it at all. Save the name when available or collect it in onboarding; do not overwrite an existing value with `null`. Respect private relay email addresses and configure Apple's email relay before sending mail to them.
 
 ![create-account.avif](imgs/create-account.avif)
 
@@ -198,7 +209,7 @@ To let users log out of your app, you can use [this](auth-actions.md#log-out-ac
 
 ## Prepare to Test
 
-To test your app on a real device, you must configure the project in Xcode. This includes adding a team to your project and setting an appropriate signing certificate.
+For native iOS testing, configure the project in Xcode with the correct team, bundle identifier, capability, and signing certificate. For web testing, deploy to an HTTPS domain present in Supabase's redirect allow list and complete the Apple Services ID configuration; native Xcode setup alone is not sufficient for web.
 
 Here's how you configure your project in Xcode:
 
@@ -239,6 +250,6 @@ If you are using Android Studio, right-click on the **ios** folder, find **Fl
 
 ## Verify User Creation
 
-To verify that you have successfully added the Apple authentication, you can come over to your **Supabase project > Authentication > Users** and verify the user entries. Also, verify entries in your public `users` table.
+To verify the integration, open **Supabase Dashboard > Authentication > Users** and confirm the Auth user. If your app intentionally creates a public profile row, verify that separately and confirm its Row Level Security policies prevent access by other users.
 
 ![user-entries-in-supabase-auth](imgs/user-entries-in-supabase-auth.avif)

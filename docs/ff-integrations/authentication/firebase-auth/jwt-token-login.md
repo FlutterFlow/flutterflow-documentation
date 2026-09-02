@@ -12,14 +12,19 @@ keywords:
   - JWT
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # JWT Token Authentication
 
-[JWT](https://jwt.io/introduction) token sign-in allows you to log in and use the Firebase services such as Firebase Database and push notifications using the account created on your own server/backend.
+Firebase custom-token sign-in lets your trusted backend authenticate a user in its own identity system and then issue a short-lived Firebase custom token. The app exchanges that one-time sign-in assertion with Firebase Authentication and receives the Firebase session used for Firestore, Storage, and other Firebase services.
+
+:::warning[Firebase custom token, not an arbitrary JWT]
+The action requires a Firebase custom token with Firebase's required claims and signature. A JWT issued by Supabase, Okta, your normal API, or another identity provider cannot be passed through unchanged. Your trusted backend must verify the upstream identity and mint the Firebase custom token with the Firebase Admin SDK or an implementation that follows Firebase's specification exactly.
+:::
 
 ![JWT-login-flow.avif](../imgs/JWT-login-flow.avif)
 
-In JWT token authentication, you send login credentials, like email and password, to your server through an API endpoint. The server then creates a user account, generates a custom JWT token, and returns it to your app. This JWT token allows you to log in to Firebase and access its services.
+The app sends credentials or an upstream identity assertion to your server over HTTPS. The server authenticates the request, chooses a stable Firebase UID, applies any approved custom claims, and returns a Firebase custom token. Never send a service-account key or signing credential to the app.
 
 :::info
 You can learn more about Firebase and JWT tokens [**here**](https://firebase.google.com/docs/auth/admin/create-custom-tokens).
@@ -52,11 +57,9 @@ Adding JWT token authentication comprises the following steps:
 
 You must [create an API](../../../resources/control-flow/backend-logic/api/create-test-api-calls.md) endpoint on your server that accepts email/username and password. If the credentials are valid, it generates the JWT token and passes it back in response.
 
-At your server, you can generate the JWT token either using the [Firebase Admin SDK](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_the_firebase_admin_sdk) or a [third-party JWT library](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_a_third-party_jwt_library). You can find the detailed instructions [here](https://firebase.google.com/docs/auth/admin/create-custom-tokens).
+At your server, generate the custom token with the [Firebase Admin SDK](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_the_firebase_admin_sdk) whenever possible. A third-party JWT library is appropriate only if your server implements Firebase's [documented custom-token format](https://firebase.google.com/docs/auth/admin/create-custom-tokens#create_custom_tokens_using_a_third-party_jwt_library), protects the signing key, and validates the caller before minting a token.
 
-:::info
-Alternatively, you can integrate Supabase authentication into your app and use the JWT token generated after [**account creation**](../supabase-auth/auth-actions.md#log-in-action).
-:::
+Rate-limit the login endpoint, avoid account-enumeration responses, do not log credentials or tokens, and authorize custom claims from server-side data rather than trusting values submitted by the client.
 
 The API endpoint should be similar to the following (Tip: Expand and see the '200 OK' section):
 
@@ -83,17 +86,12 @@ The API endpoint should be similar to the following (Tip: Expand and see the '20
     },
     "token_type": "Bearer",
     "expires_in": 3600,
-    "jwt_token": "eyJraWQiOiItSE5TUmtwMWdXcG9QcC1wWVBmU1U4UW1fdng4Q0VwdzRSdTZTQU9WLThRIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULi1PaG5EdWREUG9qWklsZjMtVDRVWHlTWW5ERElHQ3dYTUdQcXk1c1JUbjAub2FydGh3ZmxpbzhZOVZJbHc0eDYiLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNjU5MDAyOTQ5LCJleHAiOjE2NTkwMDY1NDksImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVuaDFwVkRNZzJ1ZXg0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNjU5MDAyOTQ5LCJzdWIiOiJhcGktdXNlcjRAaXd0Lm5ldCJ9.g2TyTQECo-HCSjn58Fmazki8DBCtCq2hkG6OGQOJgr0JUq3uHgj8ulojoBI5ckv3e3TcVGFg1x9KknSwgiZo0LxRpbAdbF27hfF8truExjEv7hGKoV_oAOaiD56be5K-HjYkp6j-b5S6gXe4N10T1NtovLI7L6MZvmqCL_26qzXni5hNkCjgRm8Rd6GnJwbjDLpV3snp51bVNYNqhoAhOPBqjmOErFQvO2Wmfkj8DuVXzsvRqm_xfb8-7Oosx5oGVMVR3liXW5NZsRWes4TXXwsEou3qCyVy5fAhzm7rKjIk1zWv9vm0IOWMFwHHYTgEc_LTYWMovWtkuBx4ia546Q",
-    "refresh_token": "dlIOQHHAmweyOrVkDlpNYpi1XM-DwX5Cgx70LoKIbTI"
+    "firebase_custom_token": "[FIREBASE_CUSTOM_TOKEN]"
 }
 ```
 
 :::warning
 In most cases, you would make the app content available right after creating a new account. Hence, you should also generate and return the JWT token on the success of create account API and use it to login into the Firebase.
-:::
-
-:::info
-If you want to try the JWT token authentication without creating an API endpoint right now, you can [**generate the JWT token locally**](#create-a-jwt-token-locally) for testing.
 :::
 
 ### 2. Adding login page
@@ -118,7 +116,7 @@ Here are the step by step instructions:
 7. Now, you must provide the actual JWT token. To set the token from an API response:
     1. Click on the **UNSET** and select the **Action Outputs -> Action Output Variable Name** (that you specified in the API call section.)
     2. Set the **API Response Options** to **JSON Body** and **Available Options** to **JSON Path**.
-    3. Enter the **JSON Path** to locate the token in API response, such as `$.token,` and click **Confirm**.
+    3. Enter the **JSON Path** that locates the token in your response, such as `$.firebase_custom_token`, and click **Confirm**.
 8. (Optional) add the [snackbar action](../../../resources/ui/pages/page-elements.md#show-snackbar-action) to display the success message.
 9. (Optional) Inside the **False** section, add the snackbar action to display the failure message.
 
@@ -155,70 +153,11 @@ To let users log out of your app, you can use the [Logout](auth-actions.md#logou
 
 To confirm the successful integration and the creation of users, navigate to your **Firebase project > Authentication > Users** and check the user entries. Tip: Notice the 'userid' (originally created by your server) is added inside the **User UID** column.
 
-## Create a JWT token locally
+## Testing before the backend is complete
 
-Sometimes you might want to build and test the JWT authentication before the login or create account API is ready. You can achieve this by creating the JWT token locally and passing it inside the [login action](#3-add-login-action).
+Do not mint Firebase custom tokens in FlutterFlow, client-side custom code, or a public API call. For development, use a temporary trusted backend or a local Admin SDK helper that authenticates test requests before minting tokens. Prefer Application Default Credentials or a managed workload identity. If you must download a service-account JSON key for a controlled local test, keep it outside the project and source control, restrict access to it, delete it after the test, and revoke it immediately if it is exposed.
 
-:::warning
-Use this method only for testing purposes. Ideally, you should be doing this on the server side.
-:::
-
-Below are steps to create a JWT token locally using Node.js:
-
-1. In the Firebase dashboard of your project, navigate to the far left menu. Select **Project Settings( )** -> **Service accounts**.
-
-2. Select **Generate new private key**. This will open a new popup. Again, click **Generate key** and save the `.json` file in some folder. You will need it while generating the token.
-3. Now, download and Install [node.js](https://nodejs.org/en/download/).
-4. Open a terminal at the folder where you have saved the `.json` file and enter this command: `npm install firebase-admin`. This will install Firebase Admin SDK inside the folder.
-5. In the same folder, create an `index.js` file and add the below content.
-
-```
-const admin = require('firebase-admin');
-const ServiceAccount = require('./[YOUR_SERVICE_ACCOUNT_JSON_FILE_NAME].json');
-admin.initializeApp({
-	credential: admin.credential.cert(ServiceAccount)
-});
-
-const uid= 'userid1'; // This user id will be stored in Firebase.
-
-admin.auth().createCustomToken(uid)
-  .then((customToken) => {
-    console.log(customToken);
-  })
-  .catch((error) => {
-    console.log('Error creating custom token:', error);
-  });
-```
-
-1. To run this `index.js` file inside the terminal (at the same location where this file is located), hit this command: `node index.js`. This will print the JWT token in the console.
-
-2. Copy this JWT token, return to FlutterFlow, and save it in the **app state variable** (String Datatype).
-3. Open the JWT token action, click on **UNSET** (or a variable if you have already set it), and select the **App State -> variableName** (that holds the JWT token).
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe
-        src="https://www.loom.com/embed/4a42974fd2f0447f9c701db81d5de485?sid=5cba6c8d-742d-4165-8c94-47e348118992" title="JWT Token interactive tutorial"
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+Pass the temporary custom token directly from the test endpoint's action output to **Log In**. Do not persist it in App State, page state, logs, analytics, or a public decoder. Firebase custom tokens expire after a short period and are intended only for exchange with Firebase Authentication, not as bearer tokens for your own APIs.
 
 ## Accessing Firebase Database
 

@@ -12,6 +12,7 @@ keywords:
   - Email Login
   - Authentication
   - Firebase
+last_verified: 2026-09-02
 ---
 # Email Login using Firebase
 
@@ -52,10 +53,9 @@ It's about establishing a user's credentials and granting them access for the
 first time. This action involves collecting necessary information such as email,
 password, and potentially other user-specific details like name or phone number.
 
-The primary goal is to register and store new user data securely in your backend
-or authentication service (like Firebase). This process typically includes steps
-like validating the data format (e.g., email format), checking for unique
-usernames or email addresses etc.
+The primary goal is to register credentials with Firebase Authentication. Never
+write passwords to Firestore, App State, logs, analytics, or your own user-profile
+document. Firebase handles password storage and credential validation.
 
 To enable this in FlutterFlow, follow these steps:
 
@@ -127,6 +127,8 @@ to [**Authentication Methods**](../authentication-methods.md)
 </figure>
 The user should receive an email verification link in their inbox. Upon successful verification,
 they will see a success message.
+
+Email verification confirms access to the mailbox; it does not by itself establish a person's real-world identity. Enforce any `emailVerified` requirement in both the user experience and the backend authorization rules that protect sensitive operations.
 
 ## Log In [Action]
 

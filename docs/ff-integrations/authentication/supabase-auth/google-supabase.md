@@ -14,6 +14,7 @@ keywords:
   - Google Authentication
   - Authentication
   - Supabase
+last_verified: 2026-09-02
 ---
 # Google Login
 
@@ -123,7 +124,7 @@ Here's how you do it:
     2. Set **Application type** to **Web Application**.
     3. Below, under the **Authorized redirect URIs**, click **+ ADD URI**. To get this URI, open your **Supbase project > Authentication > Providers**. Open the **Google** section, copy the **Callback URL**, and paste it here.
     4. Click **CREATE**.
-    5. Copy the **Client ID** and **Client secret**; you'll need this in the next step.
+    5. Copy the **Client ID** and **Client secret**; you'll need them in the next step. Treat the Client Secret as a server credential and paste it only into Supabase. Never put it in FlutterFlow app state, generated client code, screenshots, logs, or source control.
 
 <div style={{
     position: 'relative',
@@ -208,11 +209,11 @@ Here's how you do it:
 
 This step involes enabling Google login and providing the client IDs and secret in Supabase. Here's how you do it:
 
-1. Head over to [Supabase project dashboard](https://supabase.com/dashboard/) **> Authentication > Providers**.
-2. Open the **Google** section and turn on the **Enable Sign in with Google**.
-3. Paste the **Client ID** and **Client secret** from the **Web** credential.
-4. Paste the **Authorized Client IDs** from the **Android** credential.
-5. Turn on the **Skip nonce checks** to support **iOS** platform.
+1. Open the [Supabase dashboard](https://supabase.com/dashboard/) and go to **Authentication > Providers > Google**.
+2. Enable **Sign in with Google**.
+3. Add the OAuth client IDs accepted by your web, iOS, and Android builds. If the dashboard accepts them as one comma-separated value, put the **Web client ID first**, followed by the iOS and Android IDs.
+4. Add the **Web client secret**. Keep nonce checking enabled unless current Supabase documentation for your exact client flow explicitly requires otherwise; disabling nonce verification weakens replay protection.
+5. Save the provider configuration.
 
 <div style={{
     position: 'relative',
@@ -239,7 +240,9 @@ This step involes enabling Google login and providing the client IDs and secret 
 </div>
 <p></p>
 
-6. Now, you must specify the redirect URL in [Supabase project dashboard](https://supabase.com/dashboard/) **> Authentication > URL Configuration**. It is the URL to which a user is sent after successful authentication. Here's how you do it for both web and mobile.
+6. In **Authentication > URL Configuration**, set **Site URL** to the canonical production destination and add every web or mobile callback used by the app to **Redirect URLs**. The redirect supplied by the app must match the allow list. Prefer exact production paths; use narrowly scoped wildcards only for controlled preview environments. See [Supabase redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls).
+
+The Google OAuth client's authorized redirect URI is the Supabase callback URL shown on the Google provider page. Your application's post-authentication destination belongs in Supabase **URL Configuration**; these are different URLs and should not be interchanged. See the current [Supabase Google guide](https://supabase.com/docs/guides/auth/social-login/auth-google).
 
 <div style={{
     position: 'relative',
@@ -270,7 +273,7 @@ This step involes enabling Google login and providing the client IDs and secret 
 
 To enable Supabase Google auth in FlutterFlow:
 
-1. In FlutterFlow, navigate to the **Setting and Integrations** **>** **App Settings > Authentication**.
+1. In FlutterFlow, navigate to **Settings and Integrations > App Settings > Authentication**.
 2. Open the **Supabase Authentication** section and turn on the **Enable Google Authentication** toggle.
 3. Paste the **iOS** and **Web Client ID** obtained in step 1.
 
@@ -330,9 +333,9 @@ Here's how you can add the Google sign-in button from our page template:
 </div>
 <p></p>
 
-### 5. Adding create account action
+### 5. Add first-time sign-in and profile creation
 
-Now, you can proceed to add an account creation flow, which basically consists of two actions in the following order:
+Google uses the same **Log In** provider action for new and returning users. On the first successful sign-in, Supabase creates the Auth user. Add a separate profile row only if your app uses an optional public profile table:
 
 1. Supabase create account action. Here's how you add it:
     1. Select the widget (e.g., Button) on which you want to add the action.
@@ -340,9 +343,9 @@ Now, you can proceed to add an account creation flow, which basically consists o
     3. Click on the **+ Add Action**.
     4. Search and select the **Log in** (under *Backend/Database > Supabase Authentication*) action.
     5. Set **Auth Provider** to **Google**.
-2. Supabase [insert row action](../../database/supabase/database-actions.md#insert-row-action)
+2. Optional: a Supabase [Insert Row action](../../database/supabase/database-actions.md#insert-row-action) for a profile table.
 
-The first one creates an account in Supabase and adds the user details at *Supabase Dashboard > Authentication > Users*. However, this action does not create an entry in the "users" table you created [here](initial-setup.md#1-creating-a-users-table). To do so, you need to add another action called Supabase *insert row* action with the user's details, such as email.
+The login action creates the Auth user but does not automatically insert a row in a public table. If you add the client-side insert, make the user ID unique, enable Row Level Security, allow only the signed-in user to create the intended row, and handle retries safely. For stronger consistency, create profiles with a reviewed database trigger as described by [Supabase user management](https://supabase.com/docs/guides/auth/managing-user-data).
 
 <div style={{
     position: 'relative',
@@ -388,7 +391,7 @@ To let users log out of your app, you can use [this](auth-actions.md#log-out-act
 
 ### 8. Preparing to test the app
 
-Currently, testing the Supabase Google login feature isn't possible in Run or Test modes due to certain restrictions. But, for web platform testing, you can publish your app with a subdomain using our [web publishing](../../../testing-deployment-publishing/publishing/web-publishing.md) feature.
+FlutterFlow's Supabase Google flow cannot currently be validated reliably in web Run or Test modes. For web testing, publish to a controlled subdomain, add its exact callback to the Supabase redirect allow list, and add its origin to the Google OAuth client.
 
 You can test your app on a real device or emulator using FlutterFlow’s Local Run. Follow the [Local Run documentation](../../../testing-deployment-publishing/running-your-app/local-run.md) and see [how to set up a physical device](../../../testing-deployment-publishing/running-your-app/local-run.md#setup-physical-device) to start testing.
 

@@ -17,6 +17,7 @@ keywords:
   - set up Firebase email authentication
 ai_queries:
   - set up Firebase email authentication
+last_verified: 2026-09-02
 ---
 # Enabling Firebase Auth in FlutterFlow
 
@@ -28,7 +29,7 @@ To enable authentication in FlutterFlow:
 
 1. Open your FlutterFlow project where you are planning to use Firebase
   Authentication.
-2. Open **Setting and Integrations > App Settings > Authentication**.
+2. Open **Settings and Integrations > App Settings > Authentication**.
 3. Turn on the Enable Authentication toggle and select **Authentication Type** to
   **Firebase**.
 4. To ensure that your users are directed to the appropriate pages based on their
@@ -48,7 +49,7 @@ page.
 your app. Users are automatically navigated to the page you specify here on a
 successful sign-in attempt.
 
-## Creating the 'users' collection
+## Creating the `users` collection (optional) {#creating-the-users-collection}
 
 :::info[Prerequisities]
 To allow FlutterFlow to create user documents during authentication steps, it is
@@ -56,7 +57,9 @@ important to enable Firestore Access in Firebase. Follow this section to enable
 it first.
 :::
 
-The 'users' collection stores the information for authenticated users.
+Firebase Authentication does not require a Firestore `users` collection. Create one when your app needs profile or application data beyond Firebase Auth's user record, or when you enable **Create User Document** on a FlutterFlow authentication action.
+
+Protect the collection with Firestore Security Rules that enforce ownership and validate allowed fields. Never add password, provider client secret, service-account key, refresh token, or other credential fields; Firebase Authentication manages credentials separately.
 
 :::tip[Skip if...]
 You have already enabled 'Create User Collection' while creating a new
@@ -130,9 +133,7 @@ If you aren't planning to use **Google** or **Phone Sign-In**, you can skip thes
 
 ### Generate the SHA-1 key
 
-An SHA-1 key (aka the 'Secure Hash Algorithm') is required if you want to use
-Google Sign-in and Phone Sign-in. To learn more about the SHA-1 key, see
-this [link](https://developers.google.com/android/guides/client-auth).
+Register the certificate fingerprints for every Android signing identity that will run the app. Google sign-in requires the relevant SHA-1 fingerprint; phone authentication and related anti-abuse checks may also require SHA-256. Add debug fingerprints for local builds and the Google Play app-signing fingerprints for Play-distributed builds. See [Authenticating your client](https://developers.google.com/android/guides/client-auth).
 
 :::warning[Release Guidelines]
 While releasing the app, make sure to [**get the key from Play Console**](#getting-sha-keys-for-release-mode).
@@ -171,7 +172,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 
 3. After being prompted for the key password, type 'android' and press 'Enter'.
    Note: For security reasons, you won't see the password as you type it.
-4. Copy the SHA1 key.
+4. Copy the SHA-1 and SHA-256 fingerprints you need for the provider and build type.
 
 #### Add the SHA-1 key in the Firebase Console
 
@@ -180,19 +181,19 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 2. Select your Android App from the left side menu.
 3. Find the SHA certificate fingerprints section and click on the Add
   fingerprint.
-4. Enter the copied SHA-1 into the input box and click on Save.
+4. Add each required SHA-1 or SHA-256 fingerprint and click **Save**.
 
 #### Getting SHA keys for release mode
 
 If you're releasing your app to the Play Store, you must add the SHA certificate fingerprints from the Play Console.
 
-To get the keys for the release app, navigate to **Play Store Console > Your project > Release Setup > App Signing** and copy the **SHA-1** and **SHA-256** keys.
+In Play Console, open your app's **App signing** page (the navigation label can vary as Play Console evolves) and copy the **SHA-1** and **SHA-256** fingerprints under **App signing key certificate**. Do not substitute the upload-key certificate: Google Play signs the APKs installed by users with the app-signing key. See Android's [Play App Signing documentation](https://developer.android.com/studio/publish/app-signing#app-signing-google-play).
 
 ![release-sha1-key](../imgs/release-sha1-key.avif)
 
 ### Regenerate config files
 
-After adding the SHA-1 key you must re-generate the config files in FlutterFlow.
+After adding or changing certificate fingerprints, regenerate the Firebase configuration files in FlutterFlow.
 
 To regenerate the config files:
 1. Return to FlutterFlow. From the Navigation Menu, select **Settings &

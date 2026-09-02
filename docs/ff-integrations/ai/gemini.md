@@ -15,13 +15,14 @@ keywords:
   - Text Generation
   - Token Counting
   - Integration
+last_verified: 2026-09-02
 ---
 # Gemini
 
 With the Gemini action, you can generate text, process text-and-image inputs, and effortlessly count tokens.
 
-:::warning[Deprecation Notice]
-The Gemini action will eventually be deprecated. We recommend transitioning to the newer and more powerful [**AI Agent**](ai-agents.md) actions.
+:::warning[Legacy integration]
+The Gemini action is retained only for projects that enabled it previously. For new integrations, use [**AI Agent**](ai-agents.md), which supports current model providers and managed server-side credentials.
 :::
 
 
@@ -36,10 +37,10 @@ Integrating [Gemini AI](https://gemini.google.com/app) into FlutterFlow unlocks 
 1. Visit [**Google AI Studio**.](https://aistudio.google.com/) and click on **Get API Key** >
    **Create API key**. You can create an API key within a new Google Cloud project by selecting *Create API key in new project*, or choose an existing Google Cloud project.
 
-2. Once the API key is generated, copy it.
+2. Once the API key is generated, copy it. Google is migrating Gemini API access from standard keys to authorization keys; follow the current key type and migration guidance shown in AI Studio.
 
-:::tip
-To secure your API keys, refer to the Best Practices guide: [Secure API Keys](../google-cloud/secure-keys.md)
+:::danger[Protect the API key]
+Treat the Gemini API key as a secret. Never hardcode it in a web or mobile client, commit it to source control, or place it in public app state. For production, route Gemini requests through a trusted server or use the recommended [AI Agent](ai-agents.md) integration. Restrict the key, configure billing alerts, and rotate it immediately if it is exposed. See [Secure API Keys](../google-cloud/secure-keys.md) and Google's [Gemini API key security guidance](https://ai.google.dev/gemini-api/docs/api-key).
 :::
 
 1. Go back to FlutterFlow and navigate to **Settings and Integrations > Integrations > Gemini**.
@@ -50,7 +51,7 @@ To secure your API keys, refer to the Best Practices guide: [Secure API Keys](..
 3. Now, you can add [Gemini actions](#gemini-action) at appropriate events
 within your app.
 
-With these steps, you’re all set to enhance your FlutterFlow app with powerful AI features.
+The legacy settings and action are available only in projects that had already enabled this integration. If they do not appear in your project, use [AI Agent](ai-agents.md).
 
 
 ## Gemini [Action]
@@ -88,7 +89,7 @@ This action allows you to create natural language text based on the text prompts
 
 With this action, you can analyze the number of tokens in a given text prompt. This is particularly useful for applications that need to monitor or restrict the length of text inputs, ensuring that content stays within desired limits or quotas.
 
-A token can be a word, but it can also be a part of a word or even punctuation. The division of text into tokens depends on the tokenization algorithm being used. For Gemini models, a token is equivalent to about 4 characters. 100 tokens are about 60-80 English words.
+A token can be a word, part of a word, or punctuation. Tokenization varies by model and language, so use the **Count Tokens** action for an exact count instead of estimating from characters or words.
 
 **Example**:
 
