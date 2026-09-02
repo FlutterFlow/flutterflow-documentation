@@ -12,10 +12,11 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Loading Spinner in Run Mode
 
-A persistent loading spinner in FlutterFlow's Run Mode usually indicates an issue with your Firestore rules configuration. Updating your rules can resolve this issue.
+A persistent spinner means an expected completion state was never reached. Firestore rules are one possible cause; unresolved futures, repeated actions, a missing error branch, connectivity, and null-dependent UI can look the same.
 
 :::info[Prerequisites]
 - You have already connected your FlutterFlow project to Firebase.
@@ -43,7 +44,7 @@ Here are the steps to fix this error:
 
 3. **Retest Your Project in FlutterFlow**
 
-    Return to FlutterFlow and run your project again in **Run Mode**. The loading spinner should no longer appear if the Firestore rules were configured correctly.
+    Review the rule diff and test it before publishing. Never deploy a permissive rule merely to remove the spinner. Then reproduce in Run Mode and inspect the first error plus network/backend logs.
 
 :::tip
 Always keep your Firestore rules up to date after making structural changes to your database in FlutterFlow.

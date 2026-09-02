@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Firebase
+last_verified: 2026-09-02
 ---
 # Client Access to Firestore Expired
 
@@ -46,15 +47,17 @@ If you selected **Test Mode** during setup, Firestore access will automatically 
 
         From here, you have two options:
 
-            - **Option A: Extend Test Mode**
+            - **Option A: Replace Test Rules in Development**
 
-                Update the expiration timestamp to a future date if you're still in development.
+                Write least-privilege development rules for the signed-in users and data you actually test. Do not keep extending a public time-based allow rule; anyone who discovers the project can access data while it remains open.
 
                 ![Client Access to Firestore Expired in FlutterFlow](../assets/20250430121224547832.png)
 
             - **Option B: Secure Your Rules for Production**
 
                 Update your rules to enforce proper authentication and access controls.
+
+Test the final rules with the Firebase Emulator Suite or Rules Playground for signed-out, owner, non-owner, create, update, and delete cases. Security Rules are not filters, and server Admin SDK access is governed by IAM rather than these client rules.
 
 
                 ![Client Access to Firestore Expired in FlutterFlow](../assets/20250430121224874215.png)

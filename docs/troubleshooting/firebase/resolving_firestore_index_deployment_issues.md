@@ -16,6 +16,7 @@ tags:
   - Firebase
 ai_queries:
   - fix a missing Firestore index deployment error
+last_verified: 2026-09-02
 ---
 # Resolving Firestore Index Deployment Issues
 
@@ -23,27 +24,21 @@ If your Firestore indexes are not being deployed as expected, follow these troub
 
 ![Resolving Firestore Index Deployment Issues in FlutterFlow](../assets/20250430121118024255.png)
 
-1. **Enable Email Sign-In**
+1. **Capture the Exact Index Error**
 
-    - Open your Firebase project.
-    - Go to **Authentication** > **Sign-in method**.
-    - Enable **Email/Password** sign-in.
+    - A failed query often includes a Firebase Console link that describes the required composite index. Confirm the project, collection/query scope, fields, and sort directions before creating it.
 
 2. **Grant Proper Permissions**
 
     - In your Firebase project, open **Project Settings** > **Users and permissions**.
     - Add firebase@flutterflow.io as a member.
-    - Assign the following roles:
-        - **Editor**
-        - **Cloud Functions Admin**
-        - **Service Account User**
+    - Follow the current [Firebase connection permission guide](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project). Index deployment needs the relevant datastore index permissions; do not grant Cloud Functions or broad Editor access merely because an index failed.
 
     ![Resolving Firestore Index Deployment Issues in FlutterFlow](../assets/20250430121118320891.png)
 
-3. **Update Firestore Rules**
+3. **Review Firestore Rules Separately**
 
-    - Update your Firestore rules in both Firebase Console and FlutterFlow.
-    - Ensure they match your app’s data access requirements.
+    - Rules can deny an otherwise indexed query, but deploying an index does not change authorization. Ensure rules match the app's access requirements and keep one declared source of truth to avoid overwriting manual changes.
     - Follow the detailed steps in the **[Firestore Rules documentation](/integrations/database/cloud-firestore/firestore-rules/)** to correctly configure your rules.
 
     ![Resolving Firestore Index Deployment Issues in FlutterFlow](../assets/20250430121118592064.png)

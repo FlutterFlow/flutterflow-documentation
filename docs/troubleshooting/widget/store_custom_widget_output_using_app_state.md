@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Widget
+last_verified: 2026-09-02
 ---
 # Store Custom Widget Output Using App State
 
@@ -42,3 +43,5 @@ To use the output from a custom widget elsewhere in your project, you can store 
    ```
 
    App state variables can be accessed anywhere in your FlutterFlow project, making them useful for sharing data between custom widgets and other parts of the app.
+
+Use the narrowest state scope that needs the value, and avoid writing on every widget build because that can cause rebuild loops. Do not store passwords, access tokens, payment details, or sensitive personal data in App State; persisted client state is not a secret store. For event-like output, prefer a supported callback/action parameter when available.

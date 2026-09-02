@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Deployment
+last_verified: 2026-09-02
 ---
 # Fixing Razorpay Deployment
 
@@ -42,7 +43,7 @@ Razorpay is a major payment processor in India. Integrating **[Razorpay](https:/
 
 5. **Razorpay Keys Check**
 
-    Make sure to copy and paste the correct Key ID and Key Secret from Razorpay for testing and production, respectively. For testing, make sure "Is Production" is turned off.
+    Use a test key pair when **Is Production** is off and a live key pair when it is on. Store the Key Secret only in FlutterFlow's dedicated server-side field or an approved secret manager; never put it in generated client code, app state, logs, screenshots, or chat.
 
     ![Fixing Razorpay Deployment in FlutterFlow](../assets/20250430121120324713.png)
 
@@ -62,5 +63,7 @@ Razorpay currently works only on mobile (Android and iOS). This is due to a limi
 ![Fixing Razorpay Deployment in FlutterFlow](../assets/20250430121121294657.png)
 
 :::
+
+Deployment success does not validate payment security. Calculate the amount on a trusted server, verify Razorpay signatures or webhooks, and make fulfillment idempotent before releasing. Never fulfill an order solely from a client callback.
 
 If you are still facing issue with deploying Razorpay on Flutterflow, please feel free to reach out to support@flutterflow.io

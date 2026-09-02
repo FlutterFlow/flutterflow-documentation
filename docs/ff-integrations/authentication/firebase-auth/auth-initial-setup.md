@@ -1,6 +1,6 @@
 ---
 slug: /integrations/authentication/firebase/initial-setup
-title: 'Initial Setup: Firebase Auth'
+title: Set Up Firebase Email Authentication
 description: >-
   Learn how to perform the initial setup for Firebase authentication in your
   FlutterFlow app.
@@ -19,7 +19,7 @@ ai_queries:
   - set up Firebase email authentication
 last_verified: 2026-09-02
 ---
-# Enabling Firebase Auth in FlutterFlow
+# Set Up Firebase Email Authentication
 
 :::tip[Skip if...]
 You have already enabled authentication while creating a [**new project with Firebase setup.**](../../firebase/connect-to-firebase-setup.md)

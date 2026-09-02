@@ -1,6 +1,6 @@
 ---
 slug: /concepts/file-handling/uploading-files
-title: Uploading Files
+title: Upload a File from Your FlutterFlow App
 description: >-
   Uploading files is an essential feature for many apps, enabling users to share
   images, videos, documents, and more.
@@ -20,7 +20,7 @@ ai_queries:
   - upload a file from a FlutterFlow app
 last_verified: 2026-09-02
 ---
-# Uploading Files
+# Upload a File from Your FlutterFlow App
 
 Uploading files is an essential feature for many apps, enabling users to share images, videos, documents, and more. FlutterFlow offers flexible actions to handle file uploads, whether you’re using Firebase, Supabase, or your own backend server. You can customize the upload process to suit your app’s needs, such as resizing media, setting quality, or temporarily storing files locally before uploading.
 

@@ -1,6 +1,6 @@
 ---
 slug: /collaboration/branching
-title: Branching
+title: Use Branches in a FlutterFlow Project
 description: >-
   Branching creates a separate copy of your work, so you can add new features
   without disrupting your current progress.
@@ -18,7 +18,7 @@ toc_max_heading_level: 4
 ai_queries:
   - use branches in a FlutterFlow project
 ---
-# Branching
+# Use Branches in a FlutterFlow Project
 Branching creates a separate copy of your work, so you can add new features without disrupting your current progress. It enables multiple developers or teams to work simultaneously on different features without interfering with each other.
 
 Suppose you have an eCommerce app and you want to add a new feature, such as a product recommendation system. Instead of incorporating it directly into your existing `main` branch and potentially causing problems, you can create a branch to work on this new feature in isolation. Once it's complete, you can integrate it back into the `main` branch.

@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Firebase
+last_verified: 2026-09-02
 ---
 # Unable to Validate Firestore Schema
 
@@ -29,7 +30,7 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
 2. **Check the Database Mode**
 
-    A database in Test Mode may not work properly for FlutterFlow integration.
+    Test versus Production mode is only the initial Security Rules template; it is not a permanent database mode. Validation problems should be diagnosed from the current rules and exact error.
 
     :::note
     After creating the database in Test Mode, there is no direct visual option to switch to Production Mode. You need to update the Firebase security rules manually. However, if you deploy the rules from FlutterFlow, this step is handled automatically.
@@ -57,11 +58,7 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
 3. Assign the necessary permissions to `firebase@flutterflow.io`
 
-    You must grant the required cloud permissions to `firebase@flutterflow.io`:
-
-    - **Editor**
-    - **Cloud Functions Admin**
-    - **Service Account**
+    Compare `firebase@flutterflow.io` with the current [Firebase connection permission guide](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project). Do not add broad Editor, Cloud Functions, or service-account administration roles unless the documented operation requires them.
 
     In the Firebase Console:
 

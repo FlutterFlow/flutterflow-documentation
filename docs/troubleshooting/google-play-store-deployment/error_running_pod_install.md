@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Error Running Pod Install
 
@@ -37,6 +38,9 @@ This article addresses the common **Error Running Pod Install** issue, which typ
    ```bash
    sudo gem install cocoapods
    pod repo update
+   ```
+
+   Prefer the installation method supported by your macOS/Ruby environment; do not run arbitrary copied commands with `sudo` until you understand which Ruby installation they modify.
 
 5. If the problem persists, try deleting the CocoaPods cache and reinstalling:
 
@@ -52,7 +56,7 @@ This article addresses the common **Error Running Pod Install** issue, which typ
   ```bash
   pod install
   ```
-  Deleting the `ios/Pods` directory and `ios/Podfile.lock` file before running `pod install` can help resolve lingering CocoaPods issues.
+  Preserve `Podfile.lock` by default because it records the resolved native dependency set. Delete and regenerate it only after the first CocoaPods error shows a resolution problem and you have reviewed the resulting version changes.
 
 ## Related documentation
 

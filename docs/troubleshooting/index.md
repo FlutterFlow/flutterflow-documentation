@@ -11,6 +11,7 @@ keywords:
   - Debugging
   - Detect Issues
   - Runtime Errors
+last_verified: 2026-09-02
 ---
 # Detecting Issues
 
@@ -109,10 +110,10 @@ If you're using our Desktop App and running the app with a local run, you might 
 For example, if a user enters a character instead of a numeric value for the product quantity, which is not allowed, the error will be logged in the device logs, highlighting the exact issue.
 
 :::tip
-If you're unsure about the meaning of an error message, you can copy and paste the entire error text into ChatGPT and ask for an explanation or solution.
+If you ask ChatGPT or another assistant about an error, provide the exact stable error code, affected FlutterFlow feature, target platform, and a minimal redacted excerpt. Remove API keys, tokens, cookies, signing credentials, user data, project exports, private URLs, and proprietary source first. Treat the proposed fix as a hypothesis and verify it against the current FlutterFlow and upstream product documentation.
 :::
 
-For this specific error, [we asked ChatGPT](https://chat.openai.com/share/77f3ceb5-6b2f-4f94-b85c-e01a1fce002a) to explain and guide us on fixing the issue, and the fix was super simple!
+Start with the first causal error and the operation that emitted it. Later errors are often consequences, so pasting an entire unfiltered log can make an assistant focus on the wrong line and can disclose sensitive information.
 
 ![Desktop app's device logs](imgs/desktop-app-device-logs.avif)
 

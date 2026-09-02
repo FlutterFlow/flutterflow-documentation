@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Google Play Failed to Upload Artefacts
 
@@ -34,9 +35,7 @@ Google Play failed to upload artefacts. Package not found: com.flutterflow.appna
 }
 ```
 
-This error usually occurs in two scenarios:
-- Deploying the app to Google Play for the first time.
-- Changing the app’s `Package Name` in FlutterFlow without regenerating the Firebase configuration files.
+This error usually means the Play Developer API cannot find that exact package in the authorized Play account, the app has not received its required first manual upload/setup, or the service account lacks access to the app. Firebase config can break app services, but it does not create or rename a Play listing.
 
 **First Time Deployment to Google Play**
 
@@ -51,7 +50,7 @@ Follow these steps to upload your app for the first time:
 
 **Updating Package Name and Regenerating Config Files**
 
-If you have updated your app’s `Package Name` in FlutterFlow, follow these steps:
+If you changed the package name before the first release, follow these steps:
     1. Open your project in FlutterFlow.
     2. Navigate to **Settings** > **Firebase**.
     3. Click **Regenerate Config Files**.
@@ -63,6 +62,8 @@ If you have updated your app’s `Package Name` in FlutterFlow, follow these ste
         ![Google Play Failed to Upload Artefacts in FlutterFlow](../assets/20250430121331069027.png)
 
     5. Rebuild and redeploy your app to confirm the error is resolved.
+
+An existing Google Play app's package name is immutable. To update that listing, restore its original package name and signing lineage; a different package name requires a separate app listing and does not update existing users.
 
 If the error persists after completing these steps:
     - Verify the `Package Name` matches exactly between FlutterFlow and Google Play Console.

@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Black Screen During Preview
 
@@ -35,11 +36,11 @@ If your app screen appears blank during Run Mode, follow these steps to resolve 
 
     Press `Ctrl + R` (Windows) or `Cmd + R` (Mac) to refresh the browser.
 
-4. **Update FlutterFlow and Clear Cache**
+4. **Inspect the Runtime Error**
 
-    - Ensure you are using the latest version.
-    - Clear your browser cache.
-    - Log out and back in to your FlutterFlow account.
+    - Open the Run Mode console and capture the first exception, failing request, and affected widget/action.
+    - Test the configured initial page, authentication redirect, required route parameters, backend query, and custom code.
+    - Redact credentials and user data before sharing logs.
 
 5. **Submit a Bug Report**
 
@@ -48,7 +49,7 @@ If your app screen appears blank during Run Mode, follow these steps to resolve 
     ![Black Screen During Run Mode in FlutterFlow](../assets/20250430121528287666.png)
 
 :::tip
-Blank screens are often temporary. Try switching devices or reloading before making major changes to your project.
+Reloading is a useful isolation step, but a repeatable blank screen usually has a deterministic runtime cause. Avoid changing Firebase rules, IAM, or dependencies until the first error supports that diagnosis.
 :::
 
 ## Related documentation

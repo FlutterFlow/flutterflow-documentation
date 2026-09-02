@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Fix Flutter Launcher Icons Package Error
 
@@ -43,15 +44,15 @@ Follow the steps below to fix the error:
 
         ![Fix Flutter Launcher Icons Package Error in FlutterFlow](../assets/20250430121327988277.gif)
 
-2. **`Add flutter_launcher_icons` Package in GitHub Deployment**
-    If you are deploying via GitHub and encounter this error, add the package to your `pubspec.yaml` file:
+2. **Verify `flutter_launcher_icons` in a GitHub Deployment**
+    If you deploy exported code via GitHub, inspect the generated `pubspec.yaml` and the failed command. Add the tool only if the project intentionally manages launcher-icon generation there:
 
         - Open your `pubspec.yaml` file.
         - Add the following under `dev_dependencies`:
 
             ```js
             dev_dependencies:
-            flutter_launcher_icons: "^0.10.0"
+            flutter_launcher_icons: <compatible-current-version>
 
             flutter_icons:
             android: true
@@ -59,7 +60,7 @@ Follow the steps below to fix the error:
             image_path_ios: "assets/images/launcher/ios.png"
             image_path_android: "assets/images/launcher/android.png"
             ```
-            - **flutter_launcher_icons*: "^0.10.0" specifies the package version.
+            - Select a version compatible with the project's Flutter/Dart SDK and use the configuration keys documented for that version; do not copy the obsolete example version literally.
             - `image_path_ios` and `image_path_android` specify the paths to your launcher icon images.
             - Ensure the image files exist at the specified paths.
 
@@ -69,14 +70,14 @@ Follow the steps below to fix the error:
     flutter pub get
     ```
     ```bash
-    flutter pub run flutter_launcher_icons:main
+    dart run flutter_launcher_icons
     ```
     ```bash
     flutter run
     ```
     `flutter pub get` fetches packages.
 
-    `flutter pub run flutter_launcher_icons:main` generates launcher icons.
+    `dart run flutter_launcher_icons` generates launcher icons for current package versions.
 
     `flutter run` builds and runs the app.
 

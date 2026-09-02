@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Test API Calls
 
@@ -20,6 +21,7 @@ Verifying an API response before integrating it into your app helps prevent runt
 :::info[Prerequisites]
 - A project is open in FlutterFlow.
 - An API key or endpoint is available if required by the API.
+- Use test credentials and synthetic data. Never paste production secrets or personal data into a client-visible call or a screenshot.
 :::
 
 **Steps to Test API Calls:**
@@ -60,6 +62,7 @@ Verifying an API response before integrating it into your app helps prevent runt
 
 :::tip
 Use **[JSONPath](https://jsonpath.com/)** to validate and extract values from the returned JSON structure during testing.
+Test documented non-2xx responses, empty/null fields, timeouts, pagination, and malformed payloads as well as the happy path. A successful test call does not prove the endpoint enforces authentication or authorization; private credentials and trusted validation belong on the server.
 :::
 
 ## Related documentation

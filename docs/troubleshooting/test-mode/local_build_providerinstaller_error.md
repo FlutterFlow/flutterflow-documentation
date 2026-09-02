@@ -10,6 +10,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Local Build ProviderInstaller Error
 
@@ -55,14 +56,9 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 
             This will remove cached data and reinstall the app on the emulator.
 
-3. **Upgrade Flutter (If Problem Persists)**
+3. **Match the Project Flutter Version**
 
-    If the issue continues, upgrading Flutter may help. Run the command below to upgrade:
-        ```bash
-        flutter upgrade
-        ```
-
-    Ensure your Flutter SDK is up to date. You can verify the version with:
+    Use the Flutter SDK version declared by the exported FlutterFlow project. Upgrading a shared SDK to latest can introduce a different incompatibility; prefer a version manager or isolated SDK. Verify with:
 
         ```bash
         flutter --version

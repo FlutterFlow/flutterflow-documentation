@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Notifications
+last_verified: 2026-09-02
 ---
 # Firebase Push Notification Troubleshooting
 
@@ -24,7 +25,7 @@ Before troubleshooting, ensure the following:
 - The FlutterFlow app is connected to Firebase.
 - The app is installed on a physical device (push notifications do not work on simulators).
 - The user is logged in to the app.
-- The app is not currently open when testing notifications.
+- Test foreground, background, and terminated states separately; each platform can present or route notifications differently.
 :::
 
 1. **Verify Firebase Blaze Plan Subscription**
@@ -73,11 +74,7 @@ Before troubleshooting, ensure the following:
 
     - Go to **Firebase Console > Project Settings > Users & Permissions**.
     - Locate the **firebase@flutterflow.io** service account.
-    - Ensure the following roles are assigned:
-
-      - Editor
-      - Cloud Functions Admin
-      - Service Account User
+    - Compare the account's roles with the current linked setup guide. Use the documented deployment permissions rather than adding Owner, Editor, or unrelated roles as a generic fix.
 
     ![Firebase Push Notification Troubleshooting in FlutterFlow](../assets/20250430121515666267.png)
 
@@ -100,7 +97,7 @@ Before troubleshooting, ensure the following:
       - On Windows: Press `Ctrl + R`.
       - On Mac: Press `Cmd + R`.
 
-    **Clear Browser Cache:** Clear the browser cache to ensure the latest version loads properly.
+    Refresh the FlutterFlow session when its UI is stale; clearing all browser data does not fix APNs, FCM, IAM, token, or device-permission errors.
 
 
 7. **Resolve FlutterFlow Insufficient Permissions Error**
@@ -109,11 +106,7 @@ Before troubleshooting, ensure the following:
 
       1. Open **Firebase Console > Project Settings > Users & Permissions**.
       2. Verify the **firebase@flutterflow.io** account exists.
-      3. Assign the following permissions:
-
-        - Editor
-        - Cloud Functions Admin
-        - Service Account User
+      3. Identify the denied permission and compare it with the current connection guide before changing IAM.
 
       ![Firebase Push Notification Troubleshooting in FlutterFlow](../assets/20250430121516955662.png)
 

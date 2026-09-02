@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Widget
+last_verified: 2026-09-02
 ---
 # Emoji Size on iOS Devices
 

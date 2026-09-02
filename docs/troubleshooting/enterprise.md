@@ -13,6 +13,7 @@ keywords:
   - Detect Issues
   - Runtime Errors
   - Enterprise
+last_verified: 2026-09-02
 ---
 # Enterprise
 
@@ -22,8 +23,8 @@ Few enterprise customers might have restrictions in accessing the internet. For 
 
 Allowlist of URLs:
 
-- [app.flutterflow.io](http://app.flutterflow.io/)
-- [flutterflow-io-6f20.firebaseapp.com](http://flutterflow-io-6f20.firebaseapp.com/)
+- [app.flutterflow.io](https://app.flutterflow.io/)
+- [flutterflow-io-6f20.firebaseapp.com](https://flutterflow-io-6f20.firebaseapp.com/)
 - [https://flutterflow-io-6f20.firebaseio.com](https://flutterflow-io-6f20.firebaseio.com/)
 - `flutterflow-io-6f20.appspot.com`
 - [https://storage.googleapis.com](https://storage.googleapis.com/)
@@ -37,6 +38,8 @@ Allowlist of URLs:
 - https://www.googletagmanager.com/
 - https://www.gstatic.com/
 - https://docs.flutterflow.io/
+
+This list can change as platform services evolve. Treat it as a starting point, prefer hostname/SNI-aware HTTPS rules over fixed IP addresses, and request the current enterprise allowlist from FlutterFlow Support before enforcing a production egress policy. Do not disable TLS inspection or broaden access to all Google-owned domains unless your security team has reviewed the impact.
 
 ## Related documentation
 

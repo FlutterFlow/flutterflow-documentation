@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Firebase
+last_verified: 2026-09-02
 ---
 # Get the Sum of Firebase Document or API Values
 
@@ -45,7 +46,7 @@ Sometimes you need to display a total, such as a subtotal or count based on data
 
 4. **Calculate the Sum**
 
-    With your list of values ready, store them in a variable (let's call it `var1`). Then, decide on the format you want for your result. Use the `reduce` function to add up all the values in your list, `var1`, to get your total sum.
+    With your list ready, use FlutterFlow's aggregate/sum option when available. If you use `reduce`, guard the empty-list case first; a fold with an explicit zero value is safer for an empty result.
 
     ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121220084430.png)
 
@@ -59,4 +60,5 @@ Sometimes you need to display a total, such as a subtotal or count based on data
 - Use `.isNotEmpty` to prevent errors when the list is empty.
 - Format the output using `.toStringAsFixed(2)` to show 2 decimal places if needed.
 - Optional: Store the sum in a global variable for use across multiple pages.
+- For money, store integer minor units or use a deliberate decimal strategy; binary floating-point totals can produce rounding errors. Calculate security-sensitive totals on a trusted server rather than accepting a client-computed amount.
 :::

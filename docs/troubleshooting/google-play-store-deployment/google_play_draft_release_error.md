@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Google Play Draft Release Error
 
@@ -67,7 +68,7 @@ Follow these steps to fix the issue:
 
             ![Google Play Draft Release Error in FlutterFlow](../assets/20250430121321051936.png)
 
-            This allows you to submit your release as a draft until all Google Play requirements are fully satisfied.
+            This keeps the release in draft; it does not satisfy missing Play Console declarations, testing eligibility, signing, target API, privacy, or store-listing requirements. Resolve every item shown by Play Console before promotion.
 
 
 If you’ve followed all steps and still encounter the issue, contact **FlutterFlow Support** via Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io) for additional assistance.

@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Translations
+last_verified: 2026-09-02
 ---
 # Fix Google Translate Errors
 
@@ -30,12 +31,12 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
    **Solution:** Remove long text elements and translate them outside of FlutterFlow using external tools like Google Translate. Once translated, manually paste the content back into your project. Ensure the input field is empty before retrying automatic translation.
 
 - **Special Characters**
-   **Problem:** Some special characters—such as emojis, accented symbols, or non-Latin characters—may not be supported by the Google Translate API and can cause translation to fail.
-   **Solution:** Review the text and replace or remove any unsupported special characters. Then attempt the translation again.
+   **Problem:** A particular string can fail because of malformed markup, an unsupported control character, size, quota, or a transient request error. Accented and non-Latin text is not inherently unsupported.
+   **Solution:** Capture the exact error, isolate the smallest failing string, preserve the original copy, and remove only the confirmed invalid character or markup.
 
 - **Exceeding Language Limit**
-   **Problem:** Adding more than 10 language options in your project may result in translation failure.
-   **Solution:** Limit your project to a maximum of 10 supported languages for translation to work reliably with Google Translate.
+   **Problem:** Large translation batches can encounter product, request, or quota limits.
+   **Solution:** Check the current FlutterFlow UI and returned error for the applicable limit; do not assume a universal ten-language maximum. Translate in smaller reviewed batches when possible.
 
 ## Steps to Troubleshoot Translation Failures
 
@@ -52,7 +53,7 @@ FlutterFlow integrates with Google Translate to help localize your app automatic
    Temporarily delete the suspected text and retry the translation. If the translation proceeds successfully, that text is likely causing the failure. Manually translate and reinsert it.
 
    :::note
-   Using shorter, plain-text strings without special characters improves success rates with the Google Translate API.
+   Keep strings structurally simple while diagnosing, but restore required punctuation, names, placeholders, and locale-specific characters and have a fluent reviewer check the result.
    :::
 
 :::info[Additional Help]
@@ -63,4 +64,6 @@ If the issue persists after troubleshooting, reach out to [support@flutterflow.i
    - A description of where the failure occurs (page/widget/text field)
 
       This will help the support team resolve the issue faster.
+
+Redact API credentials, user data, unreleased copy, and proprietary project details from screenshots and logs before sharing them.
 :::

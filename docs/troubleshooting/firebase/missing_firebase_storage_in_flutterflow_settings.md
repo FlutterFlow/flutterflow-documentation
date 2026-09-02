@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Firebase
+last_verified: 2026-09-02
 ---
 # Missing Firebase Storage in FlutterFlow Settings
 
@@ -41,6 +42,7 @@ Follow these steps to enable Firebase Storage and make it available in your Flut
 
 :::note
 After setting up Firebase Storage, it may take up to one hour for the changes to appear in FlutterFlow.
+Cloud Storage for Firebase requires an eligible billing plan under the policy completed on February 3, 2026. If the bucket exists but the option remains missing, verify the active Firebase project/environment, billing status, FlutterFlow permissions, and exact error before recreating the bucket.
 :::
 
 ## Related documentation

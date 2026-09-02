@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Slow Loading in Test Mode
 
@@ -32,9 +33,9 @@ If Test Mode takes several minutes to load or fails entirely, the issue may stem
 
     Ensure your device’s time and date settings are accurate. An incorrect clock can cause authentication issues and impact performance.
 
-- **Clear Browser Cache**
+- **Use a Private Window to Isolate Browser State**
 
-    Browsers store temporary files that may interfere with page loading. Clearing your cache can resolve stale resource conflicts and improve speed.
+    A private window can isolate extensions and stale authenticated state without deleting all site data. Use the browser network panel to distinguish queue/build time from asset, API, or runtime loading.
 
 - **Try a Different Browser**
 

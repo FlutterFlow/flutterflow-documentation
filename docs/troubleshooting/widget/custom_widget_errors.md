@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Widget
+last_verified: 2026-09-02
 ---
 # Custom Widget Errors
 
@@ -70,13 +71,13 @@ This article demonstrates common errors and issues that may occur when creating 
                 ![Custom Widget Errors in FlutterFlow](../assets/20250430121325311155.png)
 
 
-    - **Missing Indirect Dependencies**
+    - **Dependency and Import Errors**
 
-        Some packages may rely on additional external packages. Ensure that all required dependencies are also imported in your code.
+        Dart's package resolver installs transitive dependencies, but your code must directly import every library whose symbols it uses. Do not add or import a transitive package merely because it appears in another package's dependency graph; add a direct compatible dependency when your code uses that package's public API.
 
         ![Custom Widget Errors in FlutterFlow](../assets/20250430121325659677.png)
 
-        In this example, the package depends on another package named `silver_tools`, which must also be imported. Always review the dependency chain for any external packages you add.
+        Review the compiler's missing-library or missing-symbol error, the package's current documentation, platform support, license, and dependency constraints before changing imports.
 
         ![Custom Widget Errors in FlutterFlow](../assets/20250430121325972589.png)
 
@@ -97,6 +98,8 @@ This article demonstrates common errors and issues that may occur when creating 
 
 
 By following these best practices and carefully reviewing package imports, dependencies, and widget names, most common issues with `Custom Widgets` in FlutterFlow can be avoided.
+
+Test web, Android, and iOS separately when the package uses platform plugins. Never embed server secrets in custom-widget code; exported Flutter code and browser bundles are client-visible.
 
 ## Related documentation
 

@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Declare Advertising ID for Android 13+ in Play Console
 
@@ -55,11 +56,11 @@ Follow the steps below to fix this error:
 
 2. **Declare Advertising ID Usage**
 
-    - If your app **does not contain ads**, select **No** under the "Advertising ID" section.
+    - Inspect the final merged manifest and every included SDK. If the app and its SDKs do not use the Advertising ID permission, select **No** and remove the permission if present.
 
     ![Declare Advertising ID for Android 13+ in Play Console in FlutterFlow](../assets/20250430121230823138.png)
 
-    - If your app **contains ads**, select **Yes** and provide the necessary details about how ads are used.
+    - If the final app uses the Advertising ID—including through an advertising or analytics SDK—select **Yes** and provide accurate usage details. “Contains ads” alone is not the technical test; the declaration must match the shipped manifest and behavior.
 
         This Declaration is important because Google Play uses this information to:
 

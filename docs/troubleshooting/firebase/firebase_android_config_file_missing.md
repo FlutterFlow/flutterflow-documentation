@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Firebase
+last_verified: 2026-09-02
 ---
 # Firebase Android Config File Missing
 
@@ -45,4 +46,5 @@ Follow the steps below to fix the issue:
 
 :::note
 The configuration file is required for successful builds and deployment on Android. Make sure it remains up-to-date if you make changes in your Firebase project.
+Confirm that its package name and Firebase project match the active FlutterFlow environment. The file contains client configuration, not a server secret, but you should still avoid posting a complete project configuration or unrelated project identifiers in public support threads.
 :::

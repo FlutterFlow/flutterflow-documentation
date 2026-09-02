@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Notifications
+last_verified: 2026-09-02
 ---
 # Fix Push Notifications Sent to Zero Devices
 
@@ -27,7 +28,7 @@ This means that the notification was attempted, but no eligible devices received
 Here are the causes:
 
   - No registered devices have generated FCM tokens.
-  - Target devices were offline at the time of sending.
+  - The audience query matched no current token records.
   - Misconfiguration in Firebase or FlutterFlow settings.
   - Missing permissions or API configuration.
   - Recipient devices have blocked push notifications.
@@ -42,9 +43,9 @@ The following steps below outline how to troubleshoot and resolve this issue:
       ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121213011292.png)
 
 
-  2. **Delete and Redeploy Firebase Cloud Functions**
+  2. **Inspect Before Redeploying Firebase Cloud Functions**
 
-      - Manually delete the Cloud Functions related to push notifications from Firebase.
+      - Check the send-function logs, audience query, deployment revision, and first error. Do not delete a working production function before a replacement is deployed and validated.
 
         ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121213284704.png)
 
@@ -74,7 +75,7 @@ The following steps below outline how to troubleshoot and resolve this issue:
 
         ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121214790195.png)
 
-      - Make sure that a valid server key is available in Firebase Console. If missing, create one through Google Cloud Console.
+      - Use the current FCM HTTP v1/Admin SDK credential flow. Do not put legacy server keys or service-account JSON in app code, screenshots, logs, or chat.
 
   5. **Verify Cloud Permissions for flutterflow.io Service Account**
 
@@ -95,22 +96,13 @@ The following steps below outline how to troubleshoot and resolve this issue:
       - Step 3: Verify Existing Permissions
 
         - Locate the `firebase@flutterflow.io` service account.
-        - Verify the following roles are assigned:
-          - `Editor`
-          - `Cloud Functions Admin`
-          - `Service Account User`
+        - Compare the roles with the current FlutterFlow Firebase setup guide and identify the exact denied permission.
 
           ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121215442199.png)
 
-      - Step 4: Add Missing Permissions
+      - Step 4: Add Only Documented Missing Permissions
 
-        - If any roles are missing:
-          - Click **Add Member**.
-          - Enter `firebase@flutterflow.io`.
-          - Select missing roles from the dropdown:
-            - `Editor`
-            - `Cloud Functions Admin`
-            - `Service Account User`
+        - Use the current [Firebase connection instructions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project). Do not broaden IAM to fix an audience or device-token problem.
 
         ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121215729191.png)
 
@@ -119,6 +111,8 @@ The following steps below outline how to troubleshoot and resolve this issue:
         - Confirm that all required roles now appear next to the service account.
 
 Following these steps should resolve most push notification delivery issues.
+
+“Sent to 0 devices” is an audience/token result, not evidence that offline devices rejected a valid send. Verify notification permission, current token records, token refresh, target-user selection, and cleanup of permanently invalid tokens.
 
 ## Related documentation
 

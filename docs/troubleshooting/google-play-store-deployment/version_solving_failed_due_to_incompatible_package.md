@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Version Solving Failed Due to Incompatible Package
 
@@ -38,6 +39,8 @@ pub finished with exit code 1
 - Verify that all packages used in custom actions or widgets are compatible with FlutterFlow's Flutter version.
 
 - Before adding a new dependency in your custom widget or action, check if the package already exists in `pubspec.yaml`. If it does, only import the package in your code without adding it again as a dependency.
+
+- Read the complete solver explanation from the first `Because...` line, then compare Dart/Flutter SDK constraints and direct dependency ranges. Avoid forcing `dependency_overrides` as a first fix; it can select a combination the packages did not declare compatible.
 
 - If no custom widgets or actions are used and the error persists, contact FlutterFlow Support at support@flutterflow.io for assistance.
 

@@ -14,6 +14,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # AdMob Ads Not Displaying in Google Play Testing
 
@@ -29,7 +30,7 @@ If your AdMob ads are not showing during **Open Testing** via the Google Play St
 
     Always use test ads during development to avoid policy violations or ad-serving issues:
         - Refer to the **[Google AdMob Test Ads](https://developers.google.com/admob/android/test-ads)** guide for appropriate test ad unit IDs.
-        - Live ads should be used only after your app is published to production and approved.
+        - Use Google's test ad units or mark the device as a test device. Do not repeatedly click live ads you own; invalid traffic can suspend ad serving.
 
 - **Verify AdMob Account Setup**
 
@@ -43,7 +44,7 @@ If your AdMob ads are not showing during **Open Testing** via the Google Play St
 
 - **Declare Use of Advertising ID**
 
-    Apps targeting **Android 13 (API 33)** or above must declare use of the **Advertising ID**:
+    Apps targeting **Android 13 (API 33)** or above must complete Google Play's Advertising ID declaration consistently with whether the final manifest includes the permission:
 
     1. Open the **Google Play Console**.
     2. Go to **Policy > App Content**.
@@ -79,6 +80,8 @@ If your AdMob ads are not showing during **Open Testing** via the Google Play St
     - This delay is expected.
 
 If ads still aren’t appearing, contact FlutterFlow Support at [support@flutterflow.io](mailto:support@flutterflow.io)
+
+Before sharing diagnostics, redact device identifiers, ad request IDs tied to users, account data, and unreleased app details. Check the AdMob policy center and returned load error; lack of inventory, consent, account review, and configuration errors require different fixes.
 
 ## Related documentation
 

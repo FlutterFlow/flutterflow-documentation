@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Test Mode
+last_verified: 2026-09-02
 ---
 # Firestore Permission Error in Run Mode
 
@@ -68,13 +69,14 @@ Take the steps below to fix this error:
 
     Ensure that queries requiring authentication are not used on screens accessible to unauthenticated users.
 
-  - **Use Conditional Visibility**
+  - **Condition the Query, Not Only Its Visibility**
 
-    If a query must exist on a pre-login screen, wrap it in conditional logic to only execute when the user is signed in.
+    If a query is on a pre-login screen, configure it so it does not execute until the required auth state exists. Hiding a child widget is not an authorization control and may not prevent its upstream query from running.
 
 :::tip
 Test queries using the Run Mode Console and check the browser logs for more specific errors.
 Use Firestore Schema Validation in FlutterFlow to ensure your rules are properly deployed.
+Do not loosen rules to match a query. Security Rules are not filters: make the query constraints provably satisfy the intended rule, then test both allowed and denied users.
 :::
 
 ## Related documentation

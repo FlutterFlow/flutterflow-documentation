@@ -10,6 +10,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Signed in Debug Mode Error
 
@@ -27,12 +28,12 @@ You uploaded an APK or Android App Bundle that was signed in debug mode. You nee
 
 This error indicates that the build was signed with a debug configuration, which is only for internal testing and not valid for production release.
 
-To fix this, update the `build.gradle` file to use the release signing configuration.
+To fix this, create a release build with a release signing configuration.
 
 **Steps to Update Build Configuration:**
 1. Open the `android/app/build.gradle` file in your project folder.
-2. Locate the `debug` keyword under `buildTypes`.
-3. Replace the `debug` keyword with `release` and save the file.
+2. Configure `signingConfigs.release` using secrets supplied outside Git, then reference it from `buildTypes.release`.
+3. Do not rename the debug build type, reuse the debug keystore, or commit the keystore/passwords. Preserve the signing lineage for an existing Play app.
 
 If the issue persists, contact FlutterFlow Support at support@flutterflow.io.
 

@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Notifications
+last_verified: 2026-09-02
 ---
 # FCM Token Generation Troubleshooting
 
@@ -39,7 +40,7 @@ Here are the steps to verify user eligibility for push notifications:
         3. Locate the user document.
         4. Verify that the `fcm_token` sub-collection exists.
 
-        If present, the user is eligible to receive push notifications.
+        If present, the device has registered a token record; delivery is still not guaranteed. Tokens rotate and can become invalid, users can revoke permission, and platform delivery is best effort.
 
         ![FCM Token Generation Troubleshooting in FlutterFlow](../assets/20250430121302960895.png)
 
@@ -61,17 +62,13 @@ Here are the steps to verify user eligibility for push notifications:
 
         Proper permissions are required to allow the Cloud Function to write FCM tokens to Firestore.
 
-            **Verify Firebase Security Rules**
+            **Verify the Actual Write Identity**
 
-                - Ensure your Firebase security rules permit writing to the `users` collection and its sub-collections.
+                - If the client writes the token, its Firestore rules must allow only the authenticated user to manage that user's token records. If a Cloud Function uses the Admin SDK, diagnose its IAM and application authorization instead; Admin SDK writes do not use client Security Rules.
 
             **Verify FlutterFlow Service Account Permissions**
 
-                The `firebase@flutterflow.io` service account must have the following roles:
-
-                    - `Editor`
-                    - `Cloud Functions Admin`
-                    - `Service Account User`
+                Compare `firebase@flutterflow.io` with the current roles in the linked setup guide. Do not grant broad Editor or unrelated roles solely because a runtime token write failed.
 
                 **How to Assign Roles**:
 
@@ -89,7 +86,7 @@ Here are the steps to verify user eligibility for push notifications:
         - Verify that your authentication flow correctly retrieves the user ID before calling the function.
         - Ensure the user ID is not `null`, empty, or malformed.
         - Implement conditional validation before invoking the function.
-        - Add logging to your authentication code and Cloud Functions to trace failures.
+        - Add redacted status and request-ID logging. Never log the FCM token, auth token, phone number, or complete user document.
 
         This is especially important if you are using custom authentication logic. If you are using FlutterFlow's built-in authentication, this issue is unlikely.
 
@@ -105,5 +102,7 @@ Here are the steps to verify user eligibility for push notifications:
         If server issues persist, consider contacting Firebase support for assistance.
 
 By following this complete troubleshooting process, you can ensure your users successfully receive push notifications.
+
+Delete token records when FCM reports them permanently unregistered or invalid, and update the record when the client token refreshes. Protect notification targeting and send operations with server-side authorization.
 
 ---

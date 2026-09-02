@@ -1,6 +1,6 @@
 ---
 slug: /integrations/authentication/supabase/initial-setup
-title: 'Initial Setup: Supabase Auth'
+title: Set Up Supabase Email Authentication
 description: >-
   Learn how to perform the initial setup for Supabase Authentication in your
   FlutterFlow app.
@@ -19,7 +19,7 @@ ai_queries:
   - set up Supabase email authentication
 last_verified: 2026-09-02
 ---
-# Initial Setup
+# Set Up Supabase Email Authentication
 
 To use authentication, you will need to complete the following initial setup:
 

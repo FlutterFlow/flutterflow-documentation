@@ -14,6 +14,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Google Play Store Deployment
+last_verified: 2026-09-02
 ---
 # Google Play Store Debug Signing Error
 
@@ -30,13 +31,13 @@ This error indicates the app must be signed with a release key before uploading.
 :::
 
 **Steps to Fix Debug Signing Error:**
-    1. Open the `android/app/build.gradle` file in your project folder.
-    2. Locate the `buildTypes` section and find the configuration labeled `debug`.
-    3. Replace the `debug` keyword with `release` in the relevant signing configuration.
+    1. Generate a release AAB through FlutterFlow's supported store-deployment or release-build workflow.
+    2. For exported code, configure a separate `release` signing configuration and reference it from the release build type. Do not rename the debug build type or point release signing at the debug keystore.
+    3. Keep the keystore, passwords, service-account JSON, and populated signing properties out of Git. Back up the release/upload key securely and preserve the existing app's signing lineage.
 
         ![Google Play Store Debug Signing Error in FlutterFlow](../assets/20250430121513060363.png)
 
-    4. Save the file.
+    4. Build the release AAB and verify its certificate before uploading.
 
         ![Google Play Store Debug Signing Error in FlutterFlow](../assets/20250430121513225263.png)
 

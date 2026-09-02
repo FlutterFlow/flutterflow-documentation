@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Deployment
+last_verified: 2026-09-02
 ---
 # Resolve Errors in Downloaded Code
 
@@ -39,7 +40,7 @@ When you download your project from FlutterFlow and run it locally in your IDE, 
 
 3. **Upgrading or Downgrading to the correct Flutter version**
 
-    If the current version on your machine is different than what is currently supported by FlutterFlow, you can downgrade or upgrade to the supported version. You can learn more about [**upgrading Flutter**](/testing/local-run/#4-running-app-on-device). ​By following these steps, you can fix the errors that you face after downloading the code and run locally.
+    Use a version manager or an isolated SDK checkout to select the project version rather than changing a shared system SDK blindly. Then run dependency resolution and inspect the first analyzer or compiler error. A matching Flutter version removes one variable but does not prove dependencies, native tooling, signing, or custom code are valid. See [**running locally**](/testing/local-run/#4-running-app-on-device).
 
 
 If you continue to experience issues, contact the FlutterFlow support team via live chat or email at support@flutterflow.io.

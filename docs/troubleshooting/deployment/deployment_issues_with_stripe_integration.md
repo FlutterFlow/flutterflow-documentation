@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Deployment
+last_verified: 2026-09-02
 ---
 # Deployment Issues with Stripe Integration
 
@@ -45,9 +46,9 @@ Integrating Stripe in your FlutterFlow project can help you accept payments effi
 
     ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122597517.png)
 
-6.  **Test and Live Keys**
+6.  **Use the Key for the Active Mode**
 
-    For deployment, both Test and Live Stripe keys must be configured in your project settings, regardless of the development stage. This ensures Stripe's API can properly interact with your application.​
+    Keep test and live credentials separated and select the intended mode. Secret keys belong only in FlutterFlow's dedicated server-side configuration or an approved secret manager—never in client code, app state, screenshots, logs, or chat.
 
     ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121122925141.png)
 
@@ -60,5 +61,7 @@ Integrating Stripe in your FlutterFlow project can help you accept payments effi
     ![Deployment Issues with Stripe Integration in FlutterFlow](../assets/20250430121123502329.png)
 
 If you find that this article hasn't fully addressed your concerns or if you have more questions, please don't hesitate to reach out to us at support@flutterflow.io
+
+After deployment succeeds, verify a complete test-mode payment, failed/cancelled payment, authenticated server-side amount calculation, webhook signature verification, and idempotent fulfillment before enabling live mode. A client success screen is not proof of payment.
 
 ​

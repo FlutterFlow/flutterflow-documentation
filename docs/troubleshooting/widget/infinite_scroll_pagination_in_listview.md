@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Widget
+last_verified: 2026-09-02
 ---
 # Infinite Scroll Pagination in ListView
 
@@ -53,6 +54,7 @@ Follow the steps below to configure ListView for pagination:
 
 :::tip
 To optimize pagination, define consistent item heights and test using varying screen sizes.
+Also verify that the backend query has a page size and stable ordering. Layout constraints determine when the next page is requested; they do not reduce an unpaginated backend query by themselves.
 :::
 
 :::info[Additional Resources]
