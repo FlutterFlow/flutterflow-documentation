@@ -205,7 +205,7 @@ This custom action parses the result of [getCountries](#21-getcountries) API and
 
 Here's the code with an explanation in the comments:
 
-```dart
+```jsx
 // Automatic FlutterFlow imports
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -249,7 +249,7 @@ This custom action parses the result of [**getCountryFlag**](#22-getcountryflag)
 Here's the code with an explanation in the comments:
 
 
-```dart
+```jsx
 // Automatic FlutterFlow imports
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';

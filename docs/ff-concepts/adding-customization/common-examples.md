@@ -27,7 +27,7 @@ Custom Functions cannot import new files or packages outside of the default dedi
 
 For example, a new [**Custom Function**](custom-functions.md) can include imports like the following. The exact generated imports depend on the features enabled in your project; use the imports already present in your own editor rather than copying this list blindly.
 
-```dart
+```jsx
 import 'dart:convert';
 import 'dart:math' as math;
 
@@ -102,7 +102,7 @@ Ensure you import `import '../../flutter_flow/flutter_flow_theme.dart';` when ac
 :::
 
 
-```dart
+```jsx
 class CustomButton extends StatefulWidget {
   final String label;
 
@@ -151,7 +151,7 @@ Ensure you import `import '../../flutter_flow/flutter_flow_util.dart';` when acc
 
 - **Get AppState value in Custom Code**
 
-```dart
+```jsx
 
 Future getCartItems() async {
   // Retrieve the current cart items from AppState
@@ -162,7 +162,7 @@ Future getCartItems() async {
 
 - **Updating AppState Values in Custom Code**
 
-```dart
+```jsx
 Future enableDarkMode() async {
   // Enable dark mode in AppState
   FFAppState().update(() {
@@ -176,7 +176,7 @@ Future enableDarkMode() async {
 
 The `FFAppState` class offers a variety of helper functions to easily manage list variables in AppState. For a detailed overview of this generated class, check out **[this guide](../../generated-code/ff-app-state.md#managing-appstatelist)**. Here are some examples of how to use these helper functions to modify an AppState list variable:
 
-```dart
+```jsx
 Future addLocation(LatLng value) async {
   // Add a new location to the LatLng list
   FFAppState().addToLatLngList(value);
@@ -212,7 +212,7 @@ The types and fields below are illustrative. Replace `ProductStruct`, its nested
 #### Example 1: Creating a new Instance of `ProductStruct`
 To create a new `ProductStruct` instance, initialize it with the required properties:
 
-```dart
+```jsx
 // Create a new instance of ProductStruct
 final newProduct = ProductStruct(
     productId: '123',
@@ -239,7 +239,7 @@ Let's assume you have an Action that calls a Custom Action to retrieve a field v
 - **Returning a Single Field from ProductStruct**
 
 This function retrieves and returns the product's name. The return type is `String?` to account for the possibility of a null value.
-```dart
+```jsx
 // Function to return the product name from a ProductStruct instance
 String? getProductName(ProductStruct product) {
     // Get and return the product name
@@ -250,7 +250,7 @@ String? getProductName(ProductStruct product) {
 - **Checking if a Field Exists in a `ProductStruct` Object**
 This function determines whether the `ProductStruct` object contains a non-null value for a specific field, such as `description`. It returns `true` if the field exists and is not null, and `false` otherwise.
 
-```dart
+```jsx
 // Function to check if the description field exists in a ProductStruct instance
 bool hasDescription(ProductStruct product) {
   return product.hasDescription();
@@ -261,7 +261,7 @@ bool hasDescription(ProductStruct product) {
 
 This function retrieves a list of review comments from the reviews field in the `ProductStruct`. The return type is `List<String>` as it returns a list of comments (or an empty list if there are no reviews).
 
-```dart
+```jsx
 // Function to return a list of review comments from a ProductStruct instance
 List<String> getProductReviewComments(ProductStruct product) {
   // Check if reviews are present and return a list of review comments
@@ -275,7 +275,7 @@ You can also modify the properties of an existing `ProductStruct` object. This c
 - **Simple Property Modification**
 In this example, we’ll modify the `name` property of an existing `ProductStruct` object.
 
-```dart
+```jsx
 // Function to update the product name of a ProductStruct instance
 Future<void> updateProductName(
   ProductStruct product,
@@ -289,7 +289,7 @@ Future<void> updateProductName(
 - **Complex Property Modification - Nested Object Update**
 In this more complex example, we’ll modify a nested property within the `ProductStruct`, such as updating the price (which itself is a `PriceStruct` object). This shows how to update a property that itself contains multiple fields.
 
-```dart
+```jsx
 // Function to update the price of a ProductStruct instance
 Future<void> updateProductPrice(
   ProductStruct product,
@@ -310,7 +310,7 @@ Future<void> updateProductPrice(
 - **Complex Property Modification - Updating a List Property**
 In this example, we’ll add new items to a list property, like adding new review comments to the `reviews` list in `ProductStruct`. This example shows how to work with a list of nested objects.
 
-```dart
+```jsx
 Future<void> addNewReviews(ProductStruct product) async {
   product.updateReviews(
     (reviews) => reviews.addAll([
@@ -324,7 +324,7 @@ Future<void> addNewReviews(ProductStruct product) async {
 
 or if the new list of reviews is being provided to the Custom Action, then:
 
-```dart
+```jsx
 Future<void> addDynamicReviews(
   ProductStruct product,
   List<ReviewStruct> newReviews,
@@ -341,14 +341,14 @@ When using Firebase Authentication for your app, FlutterFlow provides access to 
 
 For example, you can check if a user’s email is verified before proceeding with certain actions:
 
-```dart
+```jsx
 if (currentUserEmailVerified) {
   // Perform action for verified users
 }
 ```
 
 Or, if you need to create a directory path that includes the user’s unique ID:
-```dart
+```jsx
 String directoryPath = '/users/' + currentUserUid + '/files';
 ```
 
@@ -371,7 +371,7 @@ Similar to `FFAppState`, FlutterFlow generates a singleton `FFDevEnvironmentValu
 
 To access any Dev Environment values in custom code, simply use:
 
-```dart
+```jsx
 Future getWebhookId() async {
   // Add your function code here!
   return FFDevEnvironmentValues().webhookId;
@@ -388,7 +388,7 @@ Similar to `FFAppState` or `FFDevEnvironmentValues` class, FlutterFlow generates
 
 To access Library Values directly in custom code:
 
-```dart
+```jsx
 Future getSchema(StateStruct? syncStatus) async {
   print(FFLibraryValues().schema);
 }
@@ -400,14 +400,14 @@ When you add a library dependency to your FlutterFlow project, FlutterFlow autom
 
 For example, if you have a library with project ID `library_hybw3o`, FlutterFlow will add the following import to your project:
 
-```dart
+```jsx
 import 'package:library_hybw3o/flutter_flow/custom_functions.dart' as library_hybw3o_functions;
 ```
 
 
 Now, let's use the library’s custom functions in the user project's custom function:
 
-```dart
+```jsx
 dynamic getLibraryItem() {
   return library_hybw3o_functions.getRandomItem();
 }
@@ -420,7 +420,7 @@ For example, let's import the library's custom actions into the user project's C
 
 If the import is not already available, you can add it manually as follows:
 
-```dart
+```jsx
 // Custom import
 import 'package:library_hybw3o/custom_code/actions/index.dart' as library_hybw3o_actions; // Assigning a custom alias to the import
 

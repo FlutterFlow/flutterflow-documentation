@@ -13,6 +13,8 @@ keywords:
   - Testing
   - FlutterFlow
 ---
+# Run your App
+
 Running and testing your app is a crucial part of the app development process. This page provides a comprehensive guide on how to run and test your FlutterFlow app. It covers various modes of testing, including [Preview](#preview-mode), [Test](#test-mode), [Run](#run-mode), and [Local Run](#local-run) modes, with detailed steps and indications of when to use each mode.
 
 :::info

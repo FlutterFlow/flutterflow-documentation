@@ -16,7 +16,7 @@ last_verified: 2026-09-02
 This section contains information on the payment methods we accept and how to change your payment method.
 
 ## Invoices
-### Can I add a tax ID (for example, VAT) to my invoice?
+### Add a tax ID
 If the billing portal does not let you add the required tax information, contact [FlutterFlow support](mailto:support@flutterflow.io) before the invoice is issued. Tax treatment depends on your billing country and account details.
 
 

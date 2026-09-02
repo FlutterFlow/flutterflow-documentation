@@ -2,8 +2,8 @@
 slug: /concepts/advanced/method-channels
 title: Integrating Native SDKs Using Method Channels
 description: >-
-  Flutter lets you build one app that runs on mobile, web, desktop, and embedded
-  experiences from a single codebase.
+  Integrate native Android and iOS SDKs with FlutterFlow-generated apps by using
+  Flutter MethodChannels across Dart, Kotlin, and Swift.
 tags:
   - FlutterFlow
   - Concepts
@@ -14,6 +14,8 @@ keywords:
   - Method Channels
   - Existing Flutter Codebases
 ---
+# Integrating Native SDKs Using Method Channels
+
 Flutter lets you build one app that runs on mobile, web, desktop, and embedded experiences from a single codebase. You write your app logic in Dart once, which is then compiled natively for the target platform. This is a big advantage for teams that want to reduce duplication between Android and iOS apps while maintaining great performance and flexibility.
 
 For native developers accustomed to Kotlin, Java, Swift, or Objective-C, Flutter provides access to platform-specific functionality. The bridge between Dart and native code is called a **MethodChannel**.

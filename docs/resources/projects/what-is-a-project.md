@@ -17,6 +17,8 @@ keywords:
   - Projects
 last_verified: 2026-09-02
 ---
+# What is a Project?
+
 A **Project** in FlutterFlow represents one Flutter application and its FlutterFlow configuration. It contains the pages, components, widget trees, actions, state, backend configuration, theme, assets, custom code, and platform settings needed to generate that app.
 
 ## FlutterFlow project versus generated code
@@ -25,7 +27,7 @@ The FlutterFlow project is the editable source used by the visual builder. When 
 
 Generated dependencies vary by project features, integrations, FlutterFlow release, and packages you add. Do not rely on a static documentation list of packages or versions. Inspect the generated `pubspec.yaml` for the project you are building, keep its lockfile when appropriate, and retest after changing FlutterFlow or dependency versions.
 
-## What changes the generated application
+## Generated application changes
 
 Pages, widgets, actions, backend integrations, custom code, assets, and project settings can all change generated files. If you edit exported code directly, those edits are not automatically represented in the FlutterFlow project and may be replaced by a later export. Put reusable changes into supported FlutterFlow custom-code and configuration features whenever possible.
 

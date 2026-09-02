@@ -84,7 +84,7 @@ app's `HomePage`.
 In our previous example, we enabled the **Return Value** of the Custom Action to return a
 `List<Product>` when the search keyword is valid. With this change the code will change from
 
-```dart
+```jsx
 Future<void> executeSearch(String searchItem) async {
   // Add your function code here!
 }
@@ -92,7 +92,7 @@ Future<void> executeSearch(String searchItem) async {
 
 to
 
-```dart
+```jsx
 Future<List<ProductStruct>> executeSearch(String searchItem) async {
   // Add your search logic here.
   return <ProductStruct>[];

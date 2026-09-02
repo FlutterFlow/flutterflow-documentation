@@ -19,7 +19,9 @@ keywords:
 ai_queries:
   - create find and organize FlutterFlow projects
 ---
-## How to Create a Project
+# Create, Find, and Organize Projects
+
+## Create a Project {#how-to-create-a-project}
 To create a new project, go to the Dashboard and click **+ New Project** in the upper-right corner. This opens a window where you can start with a template app or a blank project.
 
 <div style={{

@@ -16,7 +16,7 @@ last_verified: 2026-09-02
 
 Paid plans include one custom-domain connection. Additional connections may be purchased; check the current [plan comparison](./new-pricing-comparison.md) and the billing screen for availability and regional pricing. You must obtain the domain itself from a domain registrar.
 
-### How do I purchase additional domain connections?
+### Purchase domain connections
 
 For a personal plan, go to your [**Account**](https://app.flutterflow.io/account), find **Custom Domains**, and select **Add Domains**.
 

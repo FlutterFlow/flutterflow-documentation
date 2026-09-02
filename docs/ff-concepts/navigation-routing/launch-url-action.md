@@ -15,6 +15,8 @@ keywords:
   - Action
   - Concepts
 ---
+# Launch URL [Action]
+
 The **Launch URL** action passes a URI to the operating system or browser. The result depends on whether the current platform has an app or handler registered for that URI scheme.
 
 ## Adding Launch URL Action

@@ -21,7 +21,7 @@ last_verified: 2026-09-02
 
 Conditional logic is a fundamental concept in programming and software development. It involves making decisions in code based on certain conditions. This is achieved using conditional statements, which evaluate expressions to determine whether they are true or false. Depending on the result, different actions or outcomes are executed.
 
-## How conditional logic works
+## Conditional logic behavior
 
 - **Condition:** An expression that evaluates to either true or false.
 - **True Path:** The set of actions to execute if the condition is true.

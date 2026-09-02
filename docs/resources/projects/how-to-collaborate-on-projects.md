@@ -18,6 +18,8 @@ keywords:
 ai_queries:
   - invite teammates to collaborate on a FlutterFlow project
 ---
+# Collaborate on Projects
+
 In FlutterFlow you can share projects with your entire organization (team), with individual users within your organization, or external users.
 
 ## Sharing a Project with Team

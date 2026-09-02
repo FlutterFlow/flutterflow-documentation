@@ -67,7 +67,7 @@ The submission form and [Marketplace Terms of Service](https://flutterflow.io/to
     - **Use royalty-free resources and properly licensed code:** Several websites offer high-quality, free-to-use assets. See also our guidance on [Open Source Licenses](legal-guidelines-for-creators.md#open-source-licenses).
     - **Purchase commercial licenses:** If you choose to use paid assets, secure the appropriate license for commercial distribution. This can be really tricky, so please review [Licenses from Other Marketplaces](legal-guidelines-for-creators.md#open-source-licenses) and [Navigating External Licenses](navigating-external-licenses.md).
 
-#### 1.6 No Library Dependencies in Marketplace Submissions (Libraries Only)
+#### 1.6 No Library Dependencies
 
 - **Criteria:** A library submitted to Marketplace must not depend on another Marketplace or personal library. This is a Marketplace submission rule, not a general limitation of FlutterFlow Libraries, which otherwise support nested dependencies.
 - **Why It Matters:** Dependencies between libraries create complexity in permissions management and version control, potentially leading to compatibility issues or broken functionality.

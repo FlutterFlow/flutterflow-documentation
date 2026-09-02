@@ -13,6 +13,8 @@ keywords:
   - GitHub
 last_verified: 2026-09-02
 ---
+# Deploy from GitHub
+
 If your FlutterFlow project is connected to a GitHub repository, the generated code can be pushed to GitHub, giving you full control over your project’s code. Then, you can deploy your app directly from the same repository, rather than deploying through FlutterFlow.
 
 Deploying from GitHub is particularly beneficial when:

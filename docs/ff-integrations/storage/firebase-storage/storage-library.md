@@ -17,6 +17,8 @@ keywords:
   - Security
 last_verified: 2026-09-02
 ---
+# Firebase Storage Library
+
 The [Firebase Storage Library][storage-library-item] provides access to the files in Cloud Storage through the Firebase SDK beyond what [FlutterFlow's built-in support](/concepts/file-handling) provides.
 
 This is an imported FlutterFlow Library. Review its current Marketplace version and changes before upgrading, and test the imported actions in a non-production project.

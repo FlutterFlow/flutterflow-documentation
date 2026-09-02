@@ -13,6 +13,8 @@ keywords:
   - List Grid
   - Composing Widgets
 ---
+# Lists & Grids
+
 In FlutterFlow, `ListView` and `GridView` are versatile widgets designed for displaying lists and grids of elements, respectively. Both are highly customizable and optimized for dynamic content, making them essential for any app that requires scrolling through a collection of items such as images, text, or interactive elements.
 
 ## ListView Widget

@@ -42,7 +42,7 @@ In most cases, the backend exposes endpoints for the frontend to send requests t
 The backend handles the request, and sends some data back in response - which the frontend can use to change its visual appearance.
 
 
-## Where does the code execute?
+## Code execution locations
 
 Backend code runs on a server, which could be located in a data center or hosted on a cloud platform like AWS, Google Cloud, or Azure. The server is responsible for handling requests, processing data, and sending responses back to the frontend.
 

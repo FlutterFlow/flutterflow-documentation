@@ -119,7 +119,7 @@ asynchronous function until the operation completes before proceeding to the nex
 function. This approach is commonly used to handle asynchronous functions, ensuring that each operation finishes before the subsequent one begins.
 
 In the following simplified example, the generated code waits for an asynchronous action before using its result:
-```dart
+```jsx
     _model.result = await actions.getRandomIntAfterWait();
     _model.text1Value = _model.result.toString();
 ```

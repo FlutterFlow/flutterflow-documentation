@@ -17,6 +17,8 @@ keywords:
   - Projects
 last_verified: 2026-09-02
 ---
+# Run and Test Projects
+
 There are 4 ways to test your project in FlutterFlow.
 
 - **[Preview](../../testing-deployment-publishing/running-your-app/run-your-app.md#preview-mode)**: This mode allows for quick testing of the user interface on a virtual device without requiring a full build.
