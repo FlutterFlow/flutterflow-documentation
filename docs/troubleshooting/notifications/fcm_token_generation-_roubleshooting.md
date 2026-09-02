@@ -1,9 +1,19 @@
 ---
-keywords: ['push notifications', 'fcm token', 'troubleshooting', 'cloud functions']
+keywords:
+  - push notifications
+  - fcm token
+  - troubleshooting
+  - cloud functions
 slug: /troubleshooting/notifications/fcm-token-generation-troubleshooting
 title: FCM Token Generation Troubleshooting
+description: >-
+  When a user does not have an sub-collection in their Firestore document, push
+  notifications cannot be delivered to their device.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Notifications
 ---
-
 # FCM Token Generation Troubleshooting
 
 When a user does not have an `fcm_token` sub-collection in their Firestore document, push notifications cannot be delivered to their device. This guide outlines the possible causes and solutions for resolving missing `fcm_token` sub-collections in FlutterFlow apps.
@@ -31,7 +41,7 @@ Here are the steps to verify user eligibility for push notifications:
 
         If present, the user is eligible to receive push notifications.
 
-        ![](../assets/20250430121302960895.png)
+        ![FCM Token Generation Troubleshooting in FlutterFlow](../assets/20250430121302960895.png)
 
 
 ### Troubleshooting Missing FCM Token Generation
@@ -45,7 +55,7 @@ Here are the steps to verify user eligibility for push notifications:
         3. Locate the `addFcmToken` function.
         4. Open its **Logs** to review errors or warnings.
 
-        ![](../assets/20250430121303270464.png)
+        ![FCM Token Generation Troubleshooting in FlutterFlow](../assets/20250430121303270464.png)
 
     2. **Resolve Permission Errors**
 

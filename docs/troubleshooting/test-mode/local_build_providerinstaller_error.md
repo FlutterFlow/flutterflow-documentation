@@ -1,9 +1,16 @@
 ---
-keywords: ['build', 'android', 'emulator']
+keywords:
+  - build
+  - android
+  - emulator
 slug: /troubleshooting/test-mode/local-build-providerinstaller-error
 title: Local Build ProviderInstaller Error
+description: This error commonly occurs when building Flutter apps on Android emulators.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Local Build ProviderInstaller Error
 
 This error commonly occurs when building Flutter apps on Android emulators. It is related to the `ProviderInstaller` service and can typically be resolved through basic cleanup and Flutter version upgrades.
@@ -28,7 +35,7 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
             Replace com.yourcompany.yourapp with your actual app ID.
 
 2. **Rebuild the App**
-    
+
     After uninstalling:
 
     Run the following command in your project directory:
@@ -69,3 +76,7 @@ This error commonly occurs when building Flutter apps on Android emulators. It i
 - Read the official **[Flutter Build Documentation](https://docs.flutter.dev/testing/build-modes)**.
 - Check **[Android Emulator System Images](https://developer.android.com/studio/run/managing-avds#system-images)**.
 :::
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

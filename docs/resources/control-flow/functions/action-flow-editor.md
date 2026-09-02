@@ -1,13 +1,23 @@
 ---
 slug: /resources/functions/action-flow-editor
 title: Actions
-description: Learn how to use the Action Flow Editor in your FlutterFlow app to manage and streamline your backend logic.
-tags: [Action Flow Editor, Backend Query, Backend Logic, Control Flow, Actions]
+description: >-
+  Learn how to use the Action Flow Editor in your FlutterFlow app to manage and
+  streamline your backend logic.
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 toc_max_heading_level: 5
 sidebar_position: 2
-keywords: [Action Flow Editor, Actions, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Action Flow Editor
+  - Actions
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Actions
 
 Effectively managing user interactions is essential for developing interactive applications.
@@ -45,9 +55,8 @@ To learn more about **Action Triggers** and its types, refer [**here**](action-t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/2kuQfhvjyPnW8PvbsaUw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/2kuQfhvjyPnW8PvbsaUw?embed&show_copy_link=true" title="Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -81,7 +90,7 @@ specific to the selected trigger.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/IazHon14tfvS4UljRsqu?embed&show_copy_link=true"
         title="Switching Triggers"
         style={{
@@ -151,7 +160,7 @@ the function body with the desired logic.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/I9valjo4KqgEs8qol2Wp?embed&show_copy_link=true"
         title="Create New Action"
         style={{
@@ -185,7 +194,7 @@ The Right Panel serves two main purposes:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/oHXsShi0Kyo5hbOIYZL5?embed&show_copy_link=true"
         title="Arcade Flow (Fri May 10 2024)"
         style={{
@@ -246,9 +255,8 @@ Here's a quick demo of how you can add an action or multiple sequential actions 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/pzHtQyaiPVeLC01vbgbs?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/pzHtQyaiPVeLC01vbgbs?embed&show_copy_link=true" title="Actions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

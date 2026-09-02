@@ -1,12 +1,19 @@
 ---
 slug: refunds
 title: Refunds
-tags: []
+tags:
+  - FlutterFlow
+  - Accounts & Billing
 toc_max_heading_level: 5
 sidebar_position: 4
+description: >-
+  If you're not happy with your FlutterFlow subscription, you can cancel at any
+  time.
+keywords:
+  - Refunds
+  - Subscriptions
+  - Accounts Billing
 ---
-
-
 # Refunds
 If you're not happy with your FlutterFlow subscription, you can [cancel at any time](./subscriptions.md#cancel-my-plan).
 

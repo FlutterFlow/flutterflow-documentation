@@ -1,7 +1,15 @@
 ---
-keywords: ['api', 'error', 'client']
+keywords:
+  - api
+  - error
+  - client
 slug: /troubleshooting/api/client-server-errors-during-the-api-call
 title: Client-Server Errors during the API call
+description: 'When calling an API in FlutterFlow, you may run into client-server errors.'
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - API
 ---
 # Client-Server Errors During the API Call
 
@@ -33,7 +41,7 @@ These errors are usually caused by incorrect requests from the client side.
     ![401 Example](../assets/20250430121350799148.png)
 
 - **403 – Forbidden**
-    
+
     Receiving a 403 error means you're authenticated but do not have permission to access the requested resource. This could be due to using the wrong API key or attempting to access features not available in your subscription plan.
 
     ![403 Example](../assets/20250430121351077308.png)
@@ -95,7 +103,7 @@ These errors occur on the API server side.
 
     If you're encountering a 400 Bad Request error, clearing your browser's cache and cookies can resolve issues related to expired or invalid data.
 
-- **Verify the Requested URL** 
+- **Verify the Requested URL**
 
     Ensure the URL or endpoint is correct. Remember, domain names are case-sensitive.
 

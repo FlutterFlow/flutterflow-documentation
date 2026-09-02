@@ -1,12 +1,19 @@
 ---
 slug: /concepts/navigation/overview
-title: Overview
-description: Learn how to add navigation in FlutterFlow.
-tags: [Navigation, Concepts]
+title: 'Overview: Navigation Routing'
+description: >-
+  Navigation in FlutterFlow is a crucial aspect of app development, enabling
+  users to move between different pages or screens.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 0
-keywords: [FlutterFlow, Navigation, Concepts]
+keywords:
+  - FlutterFlow
+  - Navigation
+  - Concepts
 ---
-
 # Overview
 
 Navigation in FlutterFlow is a crucial aspect of app development, enabling users to move between different pages or screens. This is achieved through a system of routing, where each page is assigned a unique route identifier. Understanding how navigation works and what happens to the navigation stack under the hood can help you create a seamless user experience.
@@ -16,7 +23,7 @@ Routes are essentially the paths that define different screens or pages within t
 
 | Page          | Route            |
 |------------------|------------------|
-| Home             | /home            | 
+| Home             | /home            |
 | Product Details  | /product-details |
 | Cart             | /cart            |
 
@@ -29,29 +36,29 @@ Here’s how the navigation stack logic works in FlutterFlow:
 
 ### 1. Pushing a Route
 When you navigate to a new screen, that route is pushed onto the top of the stack.
-    
+
 For example, if you are on the home screen and navigate to the profile screen, the profile screen route is pushed onto the stack.
-    
+
 ![pushroute.avif](imgs/pushroute.avif)
-    
+
 ### 2. Popping a Route
 When you navigate back, the topmost route is popped off the stack, and the previous screen becomes visible.
-    
+
 For example, if you are on the profile screen and press the back button, the profile screen route is popped off, revealing the home screen.
-    
+
 ![poproute.avif](imgs/poproute.avif)
-    
-### 3. Replacing a Route 
+
+### 3. Replacing a Route
 Sometimes, you might want to replace the current route with a new one without adding to the stack. This is useful for actions like logging in, where you don’t want users to navigate back to the login screen after they have logged in.
-    
+
 For example, after a successful login, replace the login screen route with the home screen route.
-    
+
 ![replaceroute.avif](imgs/replaceroute.avif)
-    
+
 
 ## Navigation Actions
 
-In FlutterFlow, there are three main navigation actions you can use to navigate between different screens in your app. Here are they:
+For page-to-page navigation, the three core behaviors are:
 
 1. [Navigate To (Push a Route)](#1-navigate-to-push-a-route)
 2. [Navigate Back (Pop a Route)](#2-navigate-back-pop-a-route)
@@ -89,7 +96,7 @@ Learn more about adding this action in the [**page navigation guide**](../../ff-
 
 ### 3. Replace Route
 
-This action involves replacing the current route with a new route. Unlike pushing a route, replacing a route does not add to the stack but swaps the current route with the new one.
+This behavior replaces the current route with a new route. Unlike pushing a route, it swaps the current entry instead of adding another entry above it.
 
 **What Happens Under the Hood:**
 

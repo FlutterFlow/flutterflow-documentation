@@ -2,12 +2,17 @@
 slug: /resources/backend-logic/streaming-api
 title: Streaming APIs
 description: Learn how to use streaming APIs in your backend logic with FlutterFlow.
-tags: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Logic
 sidebar_position: 4
-keywords: [Streaming APIs, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Streaming APIs
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
-
 # Streaming APIs
 
 Streaming APIs provide a continuous flow of data over a long-lived HTTP connection, enabling real-time updates for your application.
@@ -27,7 +32,7 @@ The primary difference between REST APIs and Streaming APIs lies in their data d
 	+ **Example response**:
 
 	```
-	{  
+	{
 	  "event": "match_score",
 	  "data": {
 	    "team1": "Red Dragons",
@@ -45,15 +50,15 @@ The primary difference between REST APIs and Streaming APIs lies in their data d
 	```
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "2-1"}
-	
+
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "3-1"}
-	
+
 	event: match_score
 	data: {"team1": "Red Dragons", "team2": "Silver Sharks", "score": "3-2"}
 	```
 
-## Example: AI Review Summary 
+## Example: AI Review Summary
 
 Let's see how you can use streaming APIs in FlutterFlow by building an example that allows users to see an AI summary of product reviews. On page load, the app displays the AI summary in real-time, letting users watch the analysis unfold as it's being generated.
 
@@ -65,9 +70,8 @@ The final app looks like this:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/EPHAltGtmoefX2QTXb0H?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EPHAltGtmoefX2QTXb0H?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -99,8 +103,8 @@ The steps to build the app are as follows:
 
 The user interface includes a section for the average rating, and number of reviews, followed by a detailed summary of the reviews including pros, cons, and sentiment distribution visualization. Here are key widgets to build the page:
 
-* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md): 
-  Displays 
+* [**Text Widget**](../../../ui/widgets/basic-widgets/text.md):
+  Displays
   the AI-generated summary of the reviews and a list of the positive and negative points mentioned in the reviews.
 * [**Chart (Bar chart) Widget**](../../../ui/widgets/built-in-widgets/chart/bar-chart.md): Visual representation of the sentiment distribution (positive, neutral, negative) in a bar chart.
 
@@ -123,9 +127,8 @@ Here's how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/erzDAcLQ1mR7coF28oFi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/erzDAcLQ1mR7coF28oFi?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -173,9 +176,8 @@ Here's how exactly you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/hWI8Kin5EcytoC3Pk4Vj?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/hWI8Kin5EcytoC3Pk4Vj?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -205,9 +207,8 @@ Here's how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/U0TB9ENX5xSdfAVCB2BW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/U0TB9ENX5xSdfAVCB2BW?embed&show_copy_link=true" title="Streaming APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -365,5 +366,3 @@ This expression ensures that if `responseData` is `null`, it will return an empt
 </p>
 
 </details>
-
-

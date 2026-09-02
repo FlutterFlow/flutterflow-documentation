@@ -1,12 +1,18 @@
 ---
 slug: submit-bug-report
 title: Submit Bug Reports
-description: Learn how to submit bug report.
-tags: [Issue, Troubleshooting]
+description: >-
+  This page guides you on submitting the bug reports in the GitHub issue
+  tracker.
+tags:
+  - FlutterFlow
+  - Policies & Support
 sidebar_position: 0
-keywords: [Submit Bug Reports, Issue, Troubleshooting]
+keywords:
+  - Submit Bug Reports
+  - Issue
+  - Troubleshooting
 ---
-
 # Submit Bug Reports
 
 This page guides you on submitting the bug reports in the GitHub issue tracker.
@@ -17,7 +23,7 @@ This will enable us to track, triage, and resolve issues in a timely and efficie
 
 :::info
 - You should use this only for reporting **FlutterFlow bugs**.
-- Any new features, suggestions, and questions should be discussed in the [**community**](https://community.flutterflow.io/home) or submitted through our user feedback form.
+- Any new features, suggestions, and questions should be discussed in the [**community**](https://community.flutterflow.io/) or submitted through our user feedback form.
 :::
 
 Here is the simple flow you can refer to submit the bug report:
@@ -37,7 +43,7 @@ Here are the step-by-step instructions:
     ![get-started](imgs/get-started.avif)
 
 3. When describing your issue in the **Title** box, be as specific and concise as possible. Use descriptive words that accurately convey the problem. For example, instead of simply writing "*DatePicker issue*," provide more details such as "*Disabled future dates in the Date/Time picker action, still shows*". This will help us and others quickly understand the issue and can also help with searchability in case someone else has experienced the same problem.
-    
+
     ![disabled-future](imgs/disabled-future.avif)
 
 
@@ -64,9 +70,8 @@ Here are the step-by-step instructions:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/on7fLcv4OGR3yDqeTv9v?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/on7fLcv4OGR3yDqeTv9v?embed&show_copy_link=true" title="Submit Bug Reports interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -97,9 +102,8 @@ You can attach any media by dragging it here.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/reBJv5XiQSESfEOFVgFc?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/reBJv5XiQSESfEOFVgFc?embed&show_copy_link=true" title="Submit Bug Reports interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -130,3 +134,7 @@ You can attach any media by dragging it here.
 Once done, your issue will be listed on the issues list, and our team will assign the appropriate label.
 
 ![submitted](imgs/submitted.avif)
+
+## Related documentation
+
+See [Additional Resources To Get Help](/misc/additional-resources) for a related FlutterFlow workflow.

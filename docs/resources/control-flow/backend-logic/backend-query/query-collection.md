@@ -2,9 +2,17 @@
 slug: /resources/backend-query/query-collection
 title: Query Collection / Table
 description: Learn how to query a collection in your FlutterFlow app.
-tags: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Query
 sidebar_position: 2
-keywords: [Query Collection, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Query Collection
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -60,9 +68,8 @@ The instructions to query a Supabase table are almost the same, except that for 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/gnze0w6tZ9INvYmqO6SS?embed&show_copy_link=true" title="Query Collection / Table interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -114,9 +121,8 @@ You can follow similar steps for using the record data on the other widgets as w
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/lduCQak3hFCUC1xNVP1c?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/lduCQak3hFCUC1xNVP1c?embed&show_copy_link=true" title="Query Collection / Table interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -141,9 +147,8 @@ You can follow similar steps for using the record data on the other widgets as w
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/utIKpcL7km05zSnZvLaz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/utIKpcL7km05zSnZvLaz?embed&show_copy_link=true" title="Query Collection / Table interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

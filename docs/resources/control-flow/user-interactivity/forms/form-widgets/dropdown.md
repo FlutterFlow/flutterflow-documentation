@@ -1,11 +1,20 @@
 ---
 slug: /resources/forms/dropdown
 title: Dropdown
-tags: [Widget, Dropdown, Form]
-keywords: [FlutterFlow, Dropdown, form input, user interface, mobile app development, Flutter widget, selection menu]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - Dropdown
+  - form input
+  - user interface
+  - mobile app development
+  - Flutter widget
+  - selection menu
 description: Learn how to add Dropdown widget in your FlutterFlow app.
 ---
-
 # Dropdown
 
 The DropDown widget enables users to choose from a list of options. It requires a set of items to display and an initial value to indicate the current selection. When a user selects an item from the dropdown list, the value is updated to reflect the selected item.
@@ -25,9 +34,8 @@ Let's see how to add a *DropDown* widget and build an example that shows the sel
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/W83rbxwxh8Bru695kqOs?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/W83rbxwxh8Bru695kqOs?embed&show_copy_link=true" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -55,9 +63,8 @@ Let's see how to add a *DropDown* widget and build an example that shows the sel
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/5317999e08a54ce0ae91d98228e88be0?sid=baf7b3d9-67b1-4a02-83cd-32b7f78d6e53"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/5317999e08a54ce0ae91d98228e88be0?sid=baf7b3d9-67b1-4a02-83cd-32b7f78d6e53" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -94,9 +101,8 @@ To set an initial value:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ff9b49636f634064b22a4b7e66c3de23?sid=d2282e8e-2f2f-4bd2-8fb6-44c33bced294"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ff9b49636f634064b22a4b7e66c3de23?sid=d2282e8e-2f2f-4bd2-8fb6-44c33bced294" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -150,9 +156,8 @@ To show option label:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/317159e4b34041a49498af7fccdd1256?sid=b7144c2d-e4a6-42e8-9b2e-13a0ebf45180"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/317159e4b34041a49498af7fccdd1256?sid=b7144c2d-e4a6-42e8-9b2e-13a0ebf45180" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -182,9 +187,8 @@ A searchable dropdown allows users to search and filter options by typing in a s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/43fc4e965b18469399a2cfa90a1226e6?sid=977c9928-283f-4793-b497-c3a8a299eb72"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/43fc4e965b18469399a2cfa90a1226e6?sid=977c9928-283f-4793-b497-c3a8a299eb72" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -219,9 +223,8 @@ You might need to disable a dropdown when certain conditions are not yet met or 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/42Bn1gyDN1eCHCk4kXZ8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/42Bn1gyDN1eCHCk4kXZ8?embed&show_copy_link=true" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -262,9 +265,8 @@ To clear the selection, you can use the [Reset Form Fields](../form-actions/rese
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/da8f8e2b0ceb4509a2d69dd25e2d94e2?sid=2df82d07-a178-495c-ba7c-ec2ed059c649"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/da8f8e2b0ceb4509a2d69dd25e2d94e2?sid=2df82d07-a178-495c-ba7c-ec2ed059c649" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -296,9 +298,8 @@ If needed, you can also control the dropdown height using the **Max Height** pro
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/06fb6dfef8304bb5b3a2d1be4e8fe6b0?sid=80820c77-9ea4-4024-8af2-df09ce978f5c"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/06fb6dfef8304bb5b3a2d1be4e8fe6b0?sid=80820c77-9ea4-4024-8af2-df09ce978f5c" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -326,9 +327,8 @@ Margin adds a space between the DropDown's text and its border. To change the ma
     paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/3U91Y8JXTXXvKUyxlCoC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/3U91Y8JXTXXvKUyxlCoC?embed&show_copy_link=true" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -376,9 +376,8 @@ To show or hide the dropdown underline, move the **Properties Panel >** **DropDo
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/SireMWgr1E8ADdHlz5cu?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SireMWgr1E8ADdHlz5cu?embed&show_copy_link=true" title="Dropdown interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

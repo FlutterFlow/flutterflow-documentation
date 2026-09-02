@@ -2,11 +2,17 @@
 slug: legal-guidelines-for-creators
 title: Legal Guidelines for Creators
 description: Understand the legal guidlines for creating marketplace items.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 2
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Legal Guidelines
 ---
-
 # Legal Guidelines for Creators
 
 As part of our creative community, your contributions are invaluable in helping others build amazing apps. To ensure a smooth experience for everyone and to adhere to legal requirements, we've outlined what types of content you can publish on Marketplace. This guide is designed to be user-friendly and straightforward, focusing on the legal aspects of your submissions. For a more detailed view of our policies, please review the [Marketplace Terms of Service](https://flutterflow.io/tos-marketplace).

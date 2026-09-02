@@ -2,8 +2,15 @@
 slug: /integrations/payments/razorpay
 title: Razorpay
 description: Learn how to integrate Razorpay in your FlutterFlow app.
-tags: [Razorpay, Payments, Integration]
-keywords: [FlutterFlow, Razorpay, Payments, Integration]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Payments
+keywords:
+  - FlutterFlow
+  - Razorpay
+  - Payments
+  - Integration
 ---
 # RazorPay
 
@@ -20,9 +27,8 @@ Currently, publishing to the web with Razorpay enabled is restricted due to some
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/02447248672c41c29abc5d7477296aa3?sid=10f5f200-c4d0-4160-a81c-356485c60914"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/02447248672c41c29abc5d7477296aa3?sid=10f5f200-c4d0-4160-a81c-356485c60914" title="Razorpay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -95,9 +101,8 @@ Here are the steps:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6ccda9493cae46198027b357afcda521?sid=91f61c5c-50dc-4c77-a5a6-11d613507eb4"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6ccda9493cae46198027b357afcda521?sid=91f61c5c-50dc-4c77-a5a6-11d613507eb4" title="Razorpay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -148,9 +153,8 @@ Follow the steps below to add this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/1405bb45c9734f4abba2ba123949fb0c?sid=0215e670-70b5-49ed-adae-a86d65b261e7"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/1405bb45c9734f4abba2ba123949fb0c?sid=0215e670-70b5-49ed-adae-a86d65b261e7" title="Razorpay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,9 +180,8 @@ Follow the steps below to add this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/291c0d50a2d54c3a8af8eddbaa2e9058?sid=2cf88f42-0716-4e86-80cd-9074aa3cf64f"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/291c0d50a2d54c3a8af8eddbaa2e9058?sid=2cf88f42-0716-4e86-80cd-9074aa3cf64f" title="Razorpay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -217,9 +220,8 @@ Follow the steps below to add this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/9f9aea02e2db4c4fa3ea14f480567650?sid=d780d458-5970-4bbb-b10a-08ff6e4dab1b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/9f9aea02e2db4c4fa3ea14f480567650?sid=d780d458-5970-4bbb-b10a-08ff6e4dab1b" title="Razorpay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -252,7 +254,7 @@ To test payments in Test or Run mode:
 2. Make sure the **Is Production** is disabled.
 3. Make sure you have entered the correct **Test Credentials**.
 4. Run your app in [Test mode](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode).
-5. To test the purchase, you can try any method from [here](https://razorpay.com/docs/payments/payments/test-card-upi-details/#test-card-for-international-payments).
+5. To test the purchase, you can try any method from [here](https://razorpay.com/docs/payments/payment-gateway/quick-integration/integration-steps/).
 
 ### 4. Releasing to production
 

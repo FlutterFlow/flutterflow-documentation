@@ -1,12 +1,25 @@
 ---
 title: Common Widget Properties
-tags: [Widgets]
-keywords: [Common Widget Properties, Visibility, Opacity, Padding, Alignment, Testing Value Key, Width and Height, Color Picker, Bulk Edits, Unsplash Images, UI Builder Display Value, Border Settings]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Common Widget Properties
+  - Visibility
+  - Opacity
+  - Padding
+  - Alignment
+  - Testing Value Key
+  - Width and Height
+  - Color Picker
+  - Bulk Edits
+  - Unsplash Images
+  - UI Builder Display Value
+  - Border Settings
 description: Learn how to control common widget properties in FlutterFlow
 sidebar_position: 6
 ---
-
-
 # Common Widget Properties
 
 When working with widgets in FlutterFlow, you'll encounter properties and features that are common across multiple widget types. Below is a detailed overview of such properties.
@@ -67,9 +80,8 @@ You can choose from two options:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G2iYgYC3X7DrxAnQEfJU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G2iYgYC3X7DrxAnQEfJU?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -95,9 +107,8 @@ If you prefer watching a video tutorial, here is the guide for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/iMc1m-l7eyw"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/iMc1m-l7eyw" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -149,9 +160,8 @@ Values beyond this range will push the widget outside the visible screen area.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/qEMYOkukZVVG83LAEsTK?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qEMYOkukZVVG83LAEsTK?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -190,9 +200,8 @@ To adjust a widget's size, click on the widget you wish to resize and navigate t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/18qu2kOtCpLZfS2HhCWD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/18qu2kOtCpLZfS2HhCWD?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -248,9 +257,8 @@ To change the color, navigate to a widget property that allows you to set a colo
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vPLiVGL7N0FhK3JEPSHe?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vPLiVGL7N0FhK3JEPSHe?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -290,9 +298,8 @@ To copy and paste a variable, open the **Set from Variable** menu, click the **t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dLG8GPCS6fMMz6VNydIm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dLG8GPCS6fMMz6VNydIm?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -322,9 +329,8 @@ To do this, hold down the **Shift** key and click on each widget you want to edi
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/lyNx8lyNsZN6zhicwDxp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/lyNx8lyNsZN6zhicwDxp?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -359,9 +365,8 @@ You can also choose the image size (i.e., Small, Regular, or Full) before adding
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0lNZalS5Tt16KHlxvzav?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0lNZalS5Tt16KHlxvzav?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -411,9 +416,8 @@ Use consistent border and padding styles for buttons, cards, and containers to m
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/gXt6qXe9yQHwboFAmXxM?embed&show_copy_link=true" title="Common Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

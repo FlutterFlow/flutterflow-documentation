@@ -1,12 +1,26 @@
 ---
 slug: /concepts/app-events
 title: App Events
-description: Learn how to use App Events in FlutterFlow.
-tags: [App Events, Concepts, State Management]
+description: >-
+  App Events allow different parts of your app to communicate without being
+  directly connected.
+last_verified: 2026-09-02
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, App Events, FlutterFlow events, global events, local events, event handlers, event-driven architecture]
+keywords:
+  - FlutterFlow
+  - App Events
+  - FlutterFlow events
+  - global events
+  - local events
+  - event handlers
+  - event-driven architecture
+  - trigger and listen for an app event
+ai_queries:
+  - trigger and listen for an app event
 ---
-
 # App Events
 
 **App Events** allow different parts of your app to communicate without being directly connected. Instead of tightly coupling pages and components together, you can trigger an event in one place and handle it somewhere else. This helps keep your app more modular, easier to maintain, and simpler to scale as new features are added.
@@ -28,7 +42,7 @@ An **Event** is a named signal that indicates something happened in your app. Fo
 - `Internet Connection Changed` : The device’s network connectivity status changed (e.g., went offline or came back online)
 - `Cart Updated` : An item was added to or removed from the cart
 
-You can also pass relevant details along with an event. For example, a `Cart Updated` event might include information about the specific product that was added or removed. This data can be defined using a **FlutterFlow [DataType](../../resources/data-representation/data-types.md)** to ensure the event carries structured and consistent information.
+You can also pass relevant details along with an event. For example, a `Cart Updated` event might include information about the specific product that was added or removed. Event data uses a FlutterFlow [Custom Data Type](../../resources/data-representation/custom-data-types.md), giving the payload a consistent structure.
 
 ### Event Handlers
 
@@ -44,7 +58,7 @@ App Events can be scoped as **Global** or **Local**, which determines **where th
 | **Number of handlers** | Exactly one (the assigned Action Block) | Many — any page or component can add a handler |
 | **Subscription management** | Automatic — always active | Manual — handlers are added and cancelled using actions |
 | **Best for** | App-wide concerns such as analytics, logging, authentication state, or global notifications | Page or component reactions such as refreshing lists, updating widgets, or syncing UI elements |
-| **Processing** | Sequential queue (events processed one at a time) | Broadcast stream (all subscribers notified immediately) |
+| **Processing** | The shared event queue invokes the assigned handler | When the event reaches the shared queue, it is emitted to all active matching subscriptions |
 
 
 ### Actions
@@ -68,7 +82,7 @@ Follow the steps below to use App Events in your app:
     - **Description** *(optional):* Add a short explanation of when and why this event fires. This description appears as a comment in the generated Dart code.
     - **Scope:** Choose **Global** or **Local** depending on where the event should be handled.
     - **Include Event Data:** Enable this if the event needs to pass additional information when it fires.
-    - **Data Type:** If event data is enabled, select the **DataType** that defines the structure of the event payload.
+    - **Data Type:** If event data is enabled, select the **Custom Data Type** that defines the event payload.
     - **Nullable:** Specify whether the event data can be `null`.
 5. **If the scope is Global**, assign a handler **Action Block**. This Action Block runs automatically whenever the event is triggered. If the event includes data, the Action Block must have a parameter matching the event's Data Type.
 
@@ -77,9 +91,8 @@ Follow the steps below to use App Events in your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DSQXo5fstLDgcwl5bkRY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DSQXo5fstLDgcwl5bkRY?embed&show_copy_link=true" title="App Events interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -103,9 +116,9 @@ Follow the steps below to use App Events in your app:
 1. Open the **Action Flow Editor** on the widget or page where the event should be triggered.
 2. Add a new action as **Trigger App Event** (under the **App Events** group).
 3. Configure the action:
-    - **Event to Trigger:** Select the app event you created.
+    - **Select App Event:** Select the app event you created under **Event to Trigger**.
     - **App Event Data:** If the event includes data, provide the values to pass with the event.
-    - **Wait for Completion (Global events only):** If enabled (default), the event queue waits until the handler Action Block completes before processing the next queued event. Disable it for fire-and-forget behavior. This option is not shown for local events.
+    - **Wait for Completion (Global events only):** If enabled (default), the app-event queue waits for this global handler before processing the next queued event. If disabled, the queue starts the handler and moves on. This option does **not** pause the action flow that contains **Trigger App Event**, and it is not shown for local events.
     - **Debug ID** *(optional):* Add a label to help identify this trigger during debugging.
 
 
@@ -114,9 +127,8 @@ Follow the steps below to use App Events in your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Vft1pYNblnmFEPYzAzCm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Vft1pYNblnmFEPYzAzCm?embed&show_copy_link=true" title="App Events interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -155,9 +167,8 @@ No additional setup is required. The Action Block you created in [Step 1](#1-cre
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/2npZxP8oHFmVLEkdR1OG?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/2npZxP8oHFmVLEkdR1OG?embed&show_copy_link=true" title="App Events interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -183,9 +194,8 @@ No additional setup is required. The Action Block you created in [Step 1](#1-cre
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/j4WFc46YbfaqeLqq7h6Z?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/j4WFc46YbfaqeLqq7h6Z?embed&show_copy_link=true" title="App Events interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -206,7 +216,7 @@ No additional setup is required. The Action Block you created in [Step 1](#1-cre
 
 :::tip
 
-Local event subscriptions are automatically cleaned up when the page or component is disposed (removed from the widget tree). You only need to manually cancel if you want to stop listening *before* the page closes.
+Local event subscriptions are automatically canceled when the page or component model is disposed (removed from the widget tree). You only need to manually cancel if you want to stop listening *before* that page or component closes.
 
 :::
 
@@ -291,9 +301,10 @@ Understanding the event lifecycle helps you design reliable event-driven flows. 
 
 Here are a few things to remember:
 
-- **Global events** are queued and processed sequentially. If multiple global events are triggered quickly, they run one after another, not in parallel.
-- **Local events** are broadcast to all active subscribers immediately when triggered.
-- **Wait for Completion** (Global events only, enabled by default) makes the event queue wait until the handler Action Block completes before processing the next event. Disable it for fire-and-forget behavior.
+- **All events** enter one app-event queue. A local event can therefore wait behind an earlier global event whose handler is still running with **Wait for Completion** enabled.
+- **Global events** invoke their single assigned Action Block. With **Wait for Completion** enabled, the queue does not advance until that handler completes.
+- **Local events** are emitted on a broadcast stream when they reach the front of the queue. Every active subscription for that event is notified, but the queue does not wait for asynchronous local handler Action Blocks to finish.
+- **Wait for Completion** affects event-queue ordering only. It never makes **Trigger App Event** wait before the next action in the current action flow runs.
 - **Global events** always run their assigned handler, no matter where the event is triggered.
 - **Local event** handlers exist only while their page or component is active. When the page is disposed, the subscription is automatically removed.
 

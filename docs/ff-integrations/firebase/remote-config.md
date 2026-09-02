@@ -2,11 +2,16 @@
 slug: /integrations/firebase/remote-config
 title: Remote Config
 description: Learn how to integrate Firebase Remote Config in your FlutterFlow app.
-tags: [Firebase, Remote Config]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 1
-keywords: [FlutterFlow, Firebase, Remote Config]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Remote Config
 ---
-
 # Remote Config
 
 [Firebase remote config](https://firebase.google.com/docs/remote-config) allows you to control your app's behavior and appearance without pushing an app update. For example, you could use it to change or show/hide certain elements of your app, such as a promo banner and Santa hat, or use it as a feature flag (payments, food delivery) with no need to publish an app update.
@@ -51,9 +56,8 @@ To create the parameter:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/xTbhNczhOdJfzpeSBv7e?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/xTbhNczhOdJfzpeSBv7e?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -85,9 +89,8 @@ Parameters added to your FlutterFlow project are called in-app defaults. To add 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LPFTBWYk2GIQ2TZzpZzF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LPFTBWYk2GIQ2TZzpZzF?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -117,9 +120,8 @@ Here's an example of using the remote config parameter to set the [conditional v
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BXpPxrWjncgJ5QqqhCTW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BXpPxrWjncgJ5QqqhCTW?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -145,9 +147,8 @@ Here's another example that changes the app's background using the color value f
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4RHPm1hnQpL7kpN2NcRB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4RHPm1hnQpL7kpN2NcRB?embed&show_copy_link=true" title="Remote Config interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -165,4 +166,3 @@ Here's another example that changes the app's background using the color value f
     </iframe>
 </div>
 <p></p>
-

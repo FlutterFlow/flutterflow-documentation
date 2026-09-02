@@ -1,9 +1,18 @@
 ---
-keywords: ['storage', 'firebase', 'flutterflow']
+keywords:
+  - storage
+  - firebase
+  - flutterflow
 slug: /troubleshooting/firebase/firebase-storage-limits-in-flutterflow
 title: Firebase Storage Limits in FlutterFlow
+description: >-
+  Managing Firebase Storage properly is essential for controlling your app's
+  file storage and associated costs in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
 ---
-
 # Firebase Storage Limits in FlutterFlow
 
 Managing Firebase Storage properly is essential for controlling your app's file storage and associated costs in FlutterFlow. This article summarizes the current limits and best practices following Firebase’s September 2024 changes.

@@ -1,9 +1,17 @@
 ---
-keywords: ['rive', 'animation', 'loading', 'error']
+keywords:
+  - rive
+  - animation
+  - loading
+  - error
 slug: /troubleshooting/widget/rive-animation-loading-errors
 title: Rive Animation Loading Errors
+description: Rive animations may fail to render when the source file is incorrectly linked.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Widget
 ---
-
 # Rive Animation Loading Errors
 
 Rive animations may fail to render when the source file is incorrectly linked. This guide outlines how to provide a valid `.riv` file URL for successful animation loading.
@@ -15,7 +23,7 @@ Rive animations may fail to render when the source file is incorrectly linked. T
 
 ## Steps to Fix Rive Animation Not Loading
 
-1. **Verify the Rive File URL**  
+1. **Verify the Rive File URL**
    Ensure the file URL ends with `.riv` and points directly to a hosted Rive file.
 
    ```text
@@ -26,8 +34,12 @@ Rive animations may fail to render when the source file is incorrectly linked. T
 
 2. **Copy the Correct Link from Rive Community:**
 
-    - Go to the animation page on the **[Rive Community](https://rive.app/community/)**.
+    - Go to the animation page on the **[Rive Community](https://rive.app/marketplace)**.
     - Right-click the **Download** button.
     - Select Copy Link Address.
 
         The copied link must end with `.riv`. Any URL that redirects to a webpage or file viewer will fail to render.
+
+## Related documentation
+
+See [Custom Widget Errors](/troubleshooting/widget/custom-widget-errors) for a related FlutterFlow workflow.

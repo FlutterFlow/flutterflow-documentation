@@ -1,7 +1,17 @@
 ---
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Spacer
+description: >-
+  The Spacer widget is used to insert a flexible empty space between the
+  children of the Column and Row widget.
+keywords:
+  - Spacer
+  - Built In Widgets
+  - Widgets
 ---
-
 # Spacer
 
 The [Spacer widget](https://www.youtube.com/watch?v=7FJgd7QN1zI) is used to insert a flexible empty
@@ -26,3 +36,7 @@ To use the Spacer widget, add it between the children of your Row or Column wher
 </figure>
 
 In the example above, we have added two Spacer widgets between the Row children. One is set to 3, therefore taking up three times more space than the other Spacer widget, which is set to 1.
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

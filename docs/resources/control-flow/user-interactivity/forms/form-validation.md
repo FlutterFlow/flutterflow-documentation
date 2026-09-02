@@ -1,13 +1,21 @@
 ---
 slug: /resources/forms/form-validation
 title: Form Validation
-tags: [Form, Validation, Error Handling]
-keywords: [FlutterFlow, form validation, input validation, error handling, user interface, mobile app development, data integrity]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - form validation
+  - input validation
+  - error handling
+  - user interface
+  - mobile app development
+  - data integrity
 description: Learn how to add Form Validation widget in your FlutterFlow app.
 sidebar_position: 2
 ---
-
-
 # Form Validation
 
 You can add validations to input fields by wrapping them inside the Form widget. The Form widget enables you to validate user inputs and display appropriate messages when validation criteria are not met.
@@ -23,9 +31,8 @@ Let's see how to add a *Form* widget by building a signup example. Here's how it
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/O4QCIh6cr0s5NBSa3v6U?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/O4QCIh6cr0s5NBSa3v6U?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -84,9 +91,8 @@ After adding input fields, they will be available to be validated using the form
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HYbrOKwrI671of7LfRvf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/HYbrOKwrI671of7LfRvf?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -107,8 +113,8 @@ After adding input fields, they will be available to be validated using the form
 
 3. You can also choose to validate the input using our predefined validators or by creating the custom one. To do so, you can set the **Text Validator** to the one you need.
     1. If the required validation is not on the list, you can select **Custom Regex** and specify your own **Regex (Dart/JS)**. Here are some examples of *Custom Regex*:
-        
-        
+
+
         | Examples | Regex (Dart/JS) |
         | --- | --- |
         | IP address (e.g., 192.168.1.1) | ^\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}$ |
@@ -136,9 +142,8 @@ Follow the steps below to add this action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/rMFiIB9NYEird1QfKfP3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/rMFiIB9NYEird1QfKfP3?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -168,9 +173,8 @@ To auto validate a form, select **TextField >** move to the **Properties Panel >
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ina1dmwmKmL1WAHSQClx?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ina1dmwmKmL1WAHSQClx?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -201,9 +205,8 @@ You can also validate a form when you are done entering a value inside the *Text
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/t2NPQ2ze94DPSXJnLcVU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/t2NPQ2ze94DPSXJnLcVU?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -235,9 +238,8 @@ To validate a form on *TextField* *On Submit*:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/r1HoR4uC99HcxnqqCmGB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/r1HoR4uC99HcxnqqCmGB?embed&show_copy_link=true" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -267,9 +269,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/RCLMIyuJoL4"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/RCLMIyuJoL4" title="Form Validation interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

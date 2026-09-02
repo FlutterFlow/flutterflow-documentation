@@ -1,12 +1,19 @@
 ---
 slug: /resources/time-based-logic/periodic-action
-title: Periodic [Action]
-description: Learn how to use the Periodic Action in your FlutterFlow app to perform actions at regular intervals.
-tags: [Periodic Action, Time-Based Logic, FlutterFlow]
+title: 'Periodic [Action]'
+description: >-
+  Learn how to use the Periodic Action in your FlutterFlow app to perform
+  actions at regular intervals.
+tags:
+  - FlutterFlow
+  - Resources
+  - Time Based Logic
 sidebar_position: 3
-keywords: [Periodic Action, Time-Based Logic, FlutterFlow]
+keywords:
+  - Periodic Action
+  - Time-Based Logic
+  - FlutterFlow
 ---
-
 # Periodic Action
 
 Periodic execution of logic refers to running a specific block of code or a set of actions at
@@ -61,3 +68,7 @@ longer needed, which can help maintain the efficiency and responsiveness of your
 | **Control**               | Can be started and stopped easily, allowing for controlled execution.       | Runs until a break condition is met or the loop is explicitly stopped. |
 | **Resource Management**   | Efficient, as it allows idle time between executions.                       | Can be resource-intensive if not managed properly, as it runs continuously. |
 | **Examples**              | Fetching new offers from a server every 5 minutes.                          | Iterating over a list of items to process them one by one.             |
+
+## Related documentation
+
+See [Timer Widget](/resources/time-based-logic/timer-widget) for a related FlutterFlow workflow.

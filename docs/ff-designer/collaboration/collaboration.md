@@ -1,12 +1,22 @@
 ---
 slug: /designer/collaboration
 title: Collaboration
-description: Work on the same design together — in real time, with comments and shared access.
-tags: [Collaboration, FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Work on the same design together — in real time, with comments and shared
+  access.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [collaboration, share design, real-time editing, presence, comments, live cursors]
+keywords:
+  - collaboration
+  - share design
+  - real-time editing
+  - presence
+  - comments
+  - live cursors
 ---
-
 # Collaboration
 
 Collaboration lets multiple people work on the same design at once. Edits, cursors, and comments all stay in sync, so a team can explore and refine a design together without passing files back and forth.
@@ -35,9 +45,8 @@ The owner manages who has access and can add, change a role, or remove collabora
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ayByDYPuSd7gotwlbgGE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ayByDYPuSd7gotwlbgGE?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -65,9 +74,8 @@ In the **Shared with** list, open the role dropdown on that person's row and swi
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LNyH0fGNgGrCHh1d5wvE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LNyH0fGNgGrCHh1d5wvE?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,9 +110,8 @@ Because changes are merged automatically as they're made, multiple people can ed
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/CZmMPbzFNK5tQL4pAWur?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/CZmMPbzFNK5tQL4pAWur?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -141,9 +148,8 @@ Comments let you leave feedback directly on a design — pinned to a frame, an e
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/X3GbUt5WHU9ZetKXMPQN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/X3GbUt5WHU9ZetKXMPQN?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -174,9 +180,8 @@ Comments let you leave feedback directly on a design — pinned to a frame, an e
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BnmXUeybhTMlQov08Dor?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BnmXUeybhTMlQov08Dor?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -201,13 +206,13 @@ These actions appear only on comments you authored.
 
 1. Hover the comment you wrote and select the **⋯** menu (tooltip: *Comment actions*).
 2. Choose **Edit**, change the text in place, and send. The comment is marked **Edited**.
-3. Choose **Delete** to remove the comment. 
+3. Choose **Delete** to remove the comment.
 
 ### Ask the Designer Agent
 
 1. Hover a comment or open its thread, then select **Ask agent to fix** (the sparkles action). It's available from a comment row, the thread header, and individual messages.
 2. The agent reads the full thread, original comment and replies and applies the requested change to the target frame or element. It's unavailable while the editor is already busy.
-3. When it finishes, the agent posts a reply in the thread confirming the change. 
+3. When it finishes, the agent posts a reply in the thread confirming the change.
 
 
 <div style={{
@@ -215,9 +220,8 @@ These actions appear only on comments you authored.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/mDkGWhglYCynNSOYkCWD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/mDkGWhglYCynNSOYkCWD?embed&show_copy_link=true" title="Collaboration interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -240,4 +244,6 @@ These actions appear only on comments you authored.
 For comments on the canvas, this action instead creates a new frame from the comment.
 :::
 
+## Related documentation
 
+See [Components](/designer/components) for a related FlutterFlow workflow.

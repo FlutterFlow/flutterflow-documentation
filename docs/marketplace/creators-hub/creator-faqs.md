@@ -2,9 +2,16 @@
 slug: creator-faqs
 title: Creator FAQs
 description: Learn about creator's FAQs in FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 5
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Creators FAQs]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Creators FAQs
 ---
 # Creator FAQs
 
@@ -16,7 +23,7 @@ Your item might be removed from the Marketplace under several circumstances, mai
 
 - **DMCA Takedown Notices:** If we receive a DMCA takedown notice claiming that your item infringes on someone else's copyright, we are legally required to remove the item immediately. We will notify you of the takedown, and you will have the opportunity to respond or counter-claim according to the legal processes set out by the DMCA. Please see [Copyright (DMCA) Process](copyright-dmca-process.md) for details.
 - **Other IP Violations:** If your item is found to violate IP laws outside of a formal DMCA complaint—i.e. if filed by someone other than the original author or their representative—we will inform you of the specific violation. You will be given a chance to provide proof of licensing or to correct the issue within **48 hours**. If satisfactory proof or corrections are not provided, the item may be removed to comply with legal standards. Please see [Copyright (DMCA) Process](copyright-dmca-process.md) for details.
-- **Violation of Marketplace Policies:** Aside from copyright issues, if your item violates other Marketplace policies, such as those related to quality, accuracy, or ethical standards, you will be notified of the specific issues. We will provide you with details about the violation and, depending on the severity, you may be asked to modify the item or it might be removed. Please see [Marketplace Item Submission Guidelines](https://flutterflow.io/flutterflow-marketplace-item-submission-guidelines) for more details.
+- **Violation of Marketplace Policies:** Aside from copyright issues, if your item violates other Marketplace policies, such as those related to quality, accuracy, or ethical standards, you will be notified of the specific issues. We will provide you with details about the violation and, depending on the severity, you may be asked to modify the item or it might be removed. Please see [Marketplace Item Submission Guidelines](/marketplace/creators-hub/submission-criteria) for more details.
 - **Critical Item Reports:** If we receive reports from users or other creators that critically challenge the legality or appropriateness of your item (e.g., reports of plagiarism, false advertising, or severe quality issues), these will be thoroughly investigated. Based on the findings, and in accordance with our commitment to maintaining a trustworthy and high-quality Marketplace, your item might be subject to removal. We will communicate with you throughout this process, offering details of the report and an opportunity to respond.
 
 ### Will I be notified if my item is removed from Marketplace?

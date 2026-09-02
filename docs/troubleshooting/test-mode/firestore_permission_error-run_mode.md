@@ -1,9 +1,18 @@
 ---
-keywords: ['notification', 'security', 'permissions']
+keywords:
+  - notification
+  - security
+  - permissions
 slug: /troubleshooting/test-mode/firestore-permission-error-run-mode
 title: Firestore Permission Error in Run Mode
+description: >-
+  Learn how to diagnose and resolve Firestore Permission Error in Run Mode in
+  FlutterFlow with symptom, cause, and recovery guidance.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Firestore Permission Error in Run Mode
 
 When previewing your app in Run Mode, you may encounter the following error message:
@@ -25,7 +34,7 @@ This error is typically triggered when:
 
   Example:
 
-  - If Firestore rules are configured as:  
+  - If Firestore rules are configured as:
 
   ```js
     rules_version = '2';
@@ -37,7 +46,7 @@ This error is typically triggered when:
       }
     }
     ```
-    
+
     Any Firestore query will fail because no read or write access is allowed.
 
   - If rules allow only authenticated access:
@@ -50,7 +59,7 @@ This error is typically triggered when:
     Descriptive widget names can help you quickly identify which query or widget is triggering the permission issue. In the example above, the error message references a widget named Container. Renaming it to something like UserQueryContainer can make debugging easier.
 
 Take the steps below to fix this error:
-  
+
   - **Review Firestore Rules**
 
     Go to Firestore → Settings → Rules and verify that your access rules align with how and when your app queries the database.
@@ -67,3 +76,7 @@ Take the steps below to fix this error:
 Test queries using the Run Mode Console and check the browser logs for more specific errors.
 Use Firestore Schema Validation in FlutterFlow to ensure your rules are properly deployed.
 :::
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

@@ -1,4 +1,17 @@
-
+---
+title: Application & Data Ownership
+description: >-
+  Intellectual Property At FlutterFlow, we champion the principle of "Own Your
+  Code," reflecting our commitment to enabling creators to retain ownership of
+  their work.
+tags:
+  - FlutterFlow
+  - Policies & Support
+keywords:
+  - Application & Data Ownership
+  - Application Data Ownership
+  - Misc
+---
 # Application & Data Ownership
 
 ## Intellectual Property
@@ -25,3 +38,7 @@ FlutterFlow maintains a strict policy of non-interference with your end-users' d
 :::info
 Please read our [**Privacy Policy**](https://flutterflow.io/privacy) for full details.
 :::
+
+## Related documentation
+
+See [Additional Resources To Get Help](/misc/additional-resources) for a related FlutterFlow workflow.

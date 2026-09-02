@@ -1,0 +1,5 @@
+.icon {
+  width: var(--llms-copy-icon-size);
+  height: var(--llms-copy-icon-size);
+  fill: none;
+}

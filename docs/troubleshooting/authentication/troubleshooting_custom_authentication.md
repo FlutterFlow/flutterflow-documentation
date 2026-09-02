@@ -1,7 +1,17 @@
 ---
-keywords: ['authentication', 'api', 'configuration']
+keywords:
+  - authentication
+  - api
+  - configuration
 slug: /troubleshooting/authentication/troubleshooting-authentication
 title: Troubleshooting Custom Authentication
+description: >-
+  - Ensure you have a custom server with login and sign-up endpoints that return
+  a JWT token upon success.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
 # Troubleshooting Custom Authentication
 
@@ -12,7 +22,7 @@ title: Troubleshooting Custom Authentication
 
 Here's an example:
 
-![](../assets/20250430121149388590.png)
+![Troubleshooting Custom Authentication in FlutterFlow](../assets/20250430121149388590.png)
 
 ## How to Fix Custom Authentication Issues
 
@@ -39,7 +49,7 @@ Here's an example:
       - `user ID (UID)`
     - Store these values in local state or secure app storage.
 
-  ![](../assets/20250430121149749937.png)
+  ![Troubleshooting Custom Authentication in FlutterFlow](../assets/20250430121149749937.png)
 
 6. **Navigation**
     - If navigation does not occur automatically after login/signup:
@@ -57,3 +67,7 @@ Here's an example:
 - **Sample project:** [Custom Auth Checklist](https://app.flutterflow.io/project/custom-auth-checklist-fdjkno)
 - [FlutterFlow Custom Authentication Documentation](https://docs.flutterflow.io/data-and-backend/custom-authentication)
 :::
+
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

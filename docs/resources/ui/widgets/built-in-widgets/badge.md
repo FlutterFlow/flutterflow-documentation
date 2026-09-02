@@ -1,7 +1,15 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Badge
+description: The Badge widget displays a small indicator over a child widget.
+keywords:
+  - Badge
+  - Built In Widgets
+  - Widgets
 ---
-
 # Badge
 
 The **Badge** widget displays a small indicator over a child widget. It commonly shows a numeric count, but it can also display short text. For example, use it to show the number of unread notifications or items in a shopping cart.
@@ -23,7 +31,7 @@ To add the Badge widget:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/asTJy8XhRUHkcMdDnePw?embed&show_copy_link=true"
         title="Add a Badge Widget"
         style={{
@@ -56,3 +64,7 @@ Select the **Badge** widget and use **Badge Properties** to customize its conten
 - **Position (Start or End):** Positions the badge on the start or end side of its child widget.
 - **Padding:** Adjusts the space around the badge to fine-tune its position over the child widget.
 - **Animate:** Controls whether the badge animates when its value changes.
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

@@ -1,12 +1,20 @@
 ---
 slug: /concepts/navigation/pageview
 title: PageView
-description: Learn how to use the PageView widget for creating swipeable pages, perfect for creating onboarding screens or multi-step forms.
-tags: [PageView, FlutterFlow, UI, Widgets, Layout Elements]
+description: >-
+  Learn how to use the PageView widget for creating swipeable pages, perfect for
+  creating onboarding screens or multi-step forms.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [PageView, FlutterFlow, UI, Widgets]
+keywords:
+  - PageView
+  - FlutterFlow
+  - UI
+  - Widgets
 ---
-
 # PageView
 The PageView widget is used to create swipeable pages. In page view, you can add multiple child widgets, each of which is considered a page and can be scrolled horizontally or vertically.
 
@@ -22,16 +30,15 @@ To add the PageView widget to your app:
 2. By default, it adds three pages and shows the first one in the canvas. In the widget tree, it is represented as **PageView Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the page you want to see.
 3. To add a new page, move to the **Properties Panel > Active Page >** click **+ Add Page**.
 4. To delete any page, select the **PageView Page** (which you want to delete) from the widget tree or the canvas area and press the **Delete** key on the keyboard.
-5. By default, PageView Page contains an [Image](../../../resources/ui/widgets/basic-widgets/image.md) widget; however, you can customize it as per your requirement. For example, if you want to use the PageView widget to create an onboarding experience, you could wrap (`⌘` + B) the default image widget inside the Stack widget and then add some more widgets.
+5. Each default PageView Page contains a Column placeholder. Replace or populate it with the layout you need. For an onboarding flow, for example, each page might contain an image, text, and controls arranged in a Column or Stack.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/q5j4curqL6RymQkAR7HD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/q5j4curqL6RymQkAR7HD?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -70,9 +77,8 @@ By default, the PageView comes with a horizontal scroll for the pages. To change
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0BwCT3CCM40u2yHzr5jP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0BwCT3CCM40u2yHzr5jP?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,7 +98,7 @@ By default, the PageView comes with a horizontal scroll for the pages. To change
 
 ### Enable/disable swipe to scroll
 
-This widget allows you to change the page using a swipe gesture as well as clicking on the indicator (3 dots at the bottom indicate which page is being viewed). You can change this behavior and only allow changing the page on click of the indicator.
+This widget allows you to change pages with a swipe or by selecting an indicator dot. You can disable swipe gestures while leaving indicator navigation available.
 
 To do so, move to the **Properties Panel > Page View Properties >** disable **Allow swipe scrolling**.
 
@@ -101,9 +107,8 @@ To do so, move to the **Properties Panel > Page View Properties >** disable **Al
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/eFNWiP3YP6jU2Do68JBy?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/eFNWiP3YP6jU2Do68JBy?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -125,7 +130,7 @@ To do so, move to the **Properties Panel > Page View Properties >** disable **Al
 
 Sometimes you might want to rebuild the page on which the PageView widget is contained. i.e., rebuilding the outside of the page view widget. You might want to load data or show/hide UI elements based on the page currently being displayed. For example, you could display a floating action button only on a certain page or show/hide certain widgets based on the page index.
 
-To do so, move to the **Properties Panel > Page View Properties >** turn on the **Update Page on Swipe**.
+Enable **Update Page on Swipe** or **Update Component on Swipe** under **Page View Properties**, depending on whether the PageView is in a page or component. This toggle is replaced by the more flexible **On Page Swipe** trigger after that trigger has actions attached.
 
 Here's an example of displaying the current page index on a page that contains the PageView widget.
 
@@ -134,9 +139,8 @@ Here's an example of displaying the current page index on a page that contains t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/KLXXBsYf8Fx7bnbrRuIk?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/KLXXBsYf8Fx7bnbrRuIk?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -172,9 +176,8 @@ Here is an example showing the [snackbar](../../../resources/ui/pages/page-eleme
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/gHg7V0y3lQtetLDuMCgY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/gHg7V0y3lQtetLDuMCgY?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -207,9 +210,8 @@ Margin adds a space between the PageView content and its border. To change the m
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wDvEcRb70O3Wzqvnm2iZ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wDvEcRb70O3Wzqvnm2iZ?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -234,9 +236,7 @@ The Indicator helps you identify which page is currently being viewed. You can c
 To customize the indicator:
 
 1. Select the **PageView** widget, and move to the **Properties Panel > Indicator Properties**.
-2. To change the indicator position,
-    1. Find the **Horizontal Alignment** property and adjust the value by using the slider or entering a value. A value of -1 will place the Indicator all the way to the left, while a value of 1 will place the Indicator all the way to the right.
-    2. Similarly, you can also change the indicator position vertically using the **Vertical Alignment** property. A value of -1 will place the Indicator all the way to the top, while a value of 1 will place the Indicator all the way to the bottom.
+2. Use **Indicator Alignment** to set the indicator's horizontal and vertical position within the PageView.
 3. To add padding around the indicator, find the **Padding** property and enter the values in L (Left), T (Top), R (Right), and B (Bottom) properties to get the desired result.
 4. To change the active and inactive color, use the **Active Color** and **Inactive Color** properties to change the color.
 5. To change the indicator dot size, use the **Dot Width** and **Dot height** properties.
@@ -256,9 +256,8 @@ The width of the active dot is calculated by multiplying the value of the **Dot 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/V4Sl8N3DOMqZpAvP6F5U?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/V4Sl8N3DOMqZpAvP6F5U?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -285,9 +284,8 @@ If you use the PageView widget to create the onboarding experience, you may prob
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/WOqGJeiT2HU8lMq47soV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/WOqGJeiT2HU8lMq47soV?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -325,7 +323,7 @@ These are the types of actions you can add to the pageview.
 - **Previous**: Scroll to the previous page in the pageview.
 - **Next**: Scroll to the next page in the pageview.
 - **First**: Scroll to the first page in the pageview.
-- **Last**: Scroll to the last page in the pageview.
+- **Last**: Scroll to the last statically defined page. This option is not offered when the PageView generates dynamic children.
 - **Jump to**: Scroll to a specific page in the pageview. Please note that the page index starts from 0. So, if you want to jump to page 1, you should enter 0. If you want to jump to page 2, you should enter 1, and so on.
 
 ### Adding Control Page View action
@@ -335,17 +333,18 @@ Follow the steps below to add this action to any widget.
 1. Select the **Widget** (e.g., Container, Button, etc.) on which you want to add the action.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Control Page View** (under *Widget/UI Interactions*) action.
-4. Set the **Page View to Control** to the **name** of the page view added to your page.
+4. Set **Page View to Control** to a PageView in the same page or component as the action. A Control Page View action cannot target a PageView in another scope.
 5. Select the [**Page View Action Type**](#types-of-page-view-action).
+
+The PageView also exposes **Widget State > [PageView name] Current Index**, a zero-based Integer you can use for visibility, labels, and conditions.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/io0ECo1Q53Z2l50rgDJV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/io0ECo1Q53Z2l50rgDJV?embed&show_copy_link=true" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -372,9 +371,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/rFvIjpvMneI"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/rFvIjpvMneI" title="PageView interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

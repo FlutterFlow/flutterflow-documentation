@@ -1,9 +1,18 @@
 ---
-keywords: ['firebase', 'sign', 'apple']
+keywords:
+  - firebase
+  - sign
+  - apple
 slug: /troubleshooting/authentication/sign-in-with-apple-for-web
 title: Sign in With Apple (for Web)
+description: >-
+  To enable Sign in with Apple on the web, you must complete additional steps in
+  both your Apple Developer Account and Firebase Console .
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
-
 # Sign in With Apple (for Web)
 
 To enable **Sign in with Apple** on the web, you must complete additional steps in both your **Apple Developer Account** and **Firebase Console**. These steps allow Apple to identify your website and authorize the use of Apple login on web platforms.
@@ -18,20 +27,20 @@ Take the following steps to set up Sign in with App (for Web):
 
    Follow these steps in your [Apple Developer Account](https://developer.apple.com/account/):
 
-   1. **Register a New Identifier**  
-      - Select **App IDs** and fill in the required details.  
+   1. **Register a New Identifier**
+      - Select **App IDs** and fill in the required details.
       - Enable the **Sign in with Apple** capability.
 
-   2. **Create a New Service ID**  
-      - Provide a name and a unique identifier.  
+   2. **Create a New Service ID**
+      - Provide a name and a unique identifier.
       - This will be used as the **Service ID** in Firebase.
 
-   3. **Configure Sign in With Apple**  
-      - Add your domain and return URL (from Firebase).  
+   3. **Configure Sign in With Apple**
+      - Add your domain and return URL (from Firebase).
       - Save the configuration.
 
-   4. **Create a New Key**  
-      - Enable **Sign in with Apple**.  
+   4. **Create a New Key**
+      - Enable **Sign in with Apple**.
       - Download the generated private key (`.p8` file).
 
 
@@ -58,3 +67,7 @@ If the sign-in process fails after completing these steps, please contact [Flutt
 - [Firebase Authentication - Apple Provider](https://firebase.google.com/docs/auth/web/apple)
 - [FlutterFlow Authentication Docs](https://docs.flutterflow.io/authentication)
 :::
+
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

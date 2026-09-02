@@ -1,7 +1,18 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: StickyHeader
+description: >-
+  The StickyHeader widget is a special type of widget that allows the top part
+  of a scrollable list to "stick" or remain visible at the top of a viewport
+  while the rest of the con...
+keywords:
+  - StickyHeader
+  - Sticky Header
+  - Built In Widgets
 ---
-
 # StickyHeader
 
 The StickyHeader widget is a special type of widget that allows the top part of a scrollable list to "stick" or remain visible at the top of a viewport while the rest of the content can be scrolled. As users scroll down, the sticky header remains fixed at the top, providing consistent context or navigation cues.
@@ -15,9 +26,8 @@ For instance, In data-heavy applications where users scroll through large data t
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/QBOHjQRfLrn1tCofcQdP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QBOHjQRfLrn1tCofcQdP?embed&show_copy_link=true" title="StickyHeader interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -67,9 +77,8 @@ Here's how it looks:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/cvvFDg8mw7qcQmeQF06Q?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/cvvFDg8mw7qcQmeQF06Q?embed&show_copy_link=true" title="StickyHeader interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -97,8 +106,7 @@ Here are the steps to build such an example:
 4. Inside the **StickyHeader Content**, add the **ListView > Container** widgets to display a list of users.
 5. Query and display a list of users in a ListView.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/fb1aa4fcb11240ce95f5e4539ee0c224?sid=c1e3773c-993d-4752-a5ff-770dde87545b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="StickyHeader interactive tutorial" src="https://www.loom.com/embed/fb1aa4fcb11240ce95f5e4539ee0c224?sid=c1e3773c-993d-4752-a5ff-770dde87545b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -117,9 +125,8 @@ Here's how it looks when completed:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/of8foZd2MMR5kMoq9IKa?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/of8foZd2MMR5kMoq9IKa?embed&show_copy_link=true" title="StickyHeader interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -158,17 +165,14 @@ Here are the steps to build such an example:
     1. In ListView, generate dynamic children from a variable that holds the letters.
     2. Inside the `StickyHeader` section, add a widget to display the current letter.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/39bb5fc9068f4a759a4b0d6fd62e3f16?sid=ed5c274e-f1e0-4830-9702-dd35ac2d6d51" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="StickyHeader interactive tutorial" src="https://www.loom.com/embed/39bb5fc9068f4a759a4b0d6fd62e3f16?sid=ed5c274e-f1e0-4830-9702-dd35ac2d6d51" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
-4. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container** 
+4. Now, inside the *StickyHeader* *Content* section, add the **ListView** with a **Container**
 inside to display the list of matching contacts.
 
     1. On this ListView, generate dynamic children from a variable that holds all the contacts. But while doing so, filter the list and extract only matching contacts using [Inline Function](../../../../resources/control-flow/functions/utility-functions.md#inline-function-code-expressions).
     2. Now you can display the contact's details, such as name, inside the UI.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/990913b5d2ce4ae9b3884519d661ad5b?sid=74fb34c2-f08b-40e2-b0df-d0d42aa30f2b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div class="video-container"><iframe title="StickyHeader interactive tutorial" src="https://www.loom.com/embed/990913b5d2ce4ae9b3884519d661ad5b?sid=74fb34c2-f08b-40e2-b0df-d0d42aa30f2b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

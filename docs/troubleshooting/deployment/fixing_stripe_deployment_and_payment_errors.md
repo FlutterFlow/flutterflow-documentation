@@ -1,7 +1,17 @@
 ---
-keywords: ['deployment', 'payment', 'issues']
+keywords:
+  - deployment
+  - payment
+  - issues
 slug: /troubleshooting/deployment/fixing-stripe-deployment-and-payment-errors
 title: Fixing Stripe Deployment & Payment Errors
+description: >-
+  Integrating Stripe for payment processing in FlutterFlow can significantly
+  simplify monetization.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
 ---
 # Fixing Stripe Deployment & Payment Errors
 
@@ -21,35 +31,35 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
     A defined Google Cloud Platform (GCP) location for your Firebase project ensures the correct regional operation of services. The absence of a set location can hinder the deployment process.​
 
-    ![](../assets/20250430121145711998.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121145711998.png)
 
 4. **Firebase Project Permissions**
 
     Ensure you have the necessary permissions enabled for your Firebase project. Two critical permissions involve access management and service configuration. You can also reference the **[setup guide](/integrations/firebase/connect-to-firebase/)**.​
 
-    ![](../assets/20250430121145949036.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121145949036.png)
 
 5. **Correct Merchant Code**
 
     Use the correct 3-letter merchant country code (example., "GBR" for the United Kingdom vs. "UK"). Incorrect codes can lead to failed transactions. For accurate codes, refer to **[IBAN Country Codes](https://www.iban.com/country-codes)**.​
 
-    ![](../assets/20250430121146161973.png)
-    
-    ![](../assets/20250430121146400049.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146161973.png)
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146400049.png)
 
 6. **Test and Live Keys**
 
     Both Test and Live Stripe keys must be configured in your project settings, regardless of the development stage. This ensures Stripe's API can properly interact with your application.​
 
-    ![](../assets/20250430121146604033.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146604033.png)
 
 7. **Consistent Region Settings**
 
     Align your Firebase project's region with that of your FlutterFlow settings to prevent deployment failures. Inconsistencies can cause function deployment issues.​
 
-    ![](../assets/20250430121146854018.png)
-    
-    ![](../assets/20250430121147068781.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121146854018.png)
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147068781.png)
 
 ## Addressing Payment Transaction Issues
 
@@ -65,7 +75,7 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
     Prices should be submitted to Stripe in **cents**, not **dollars**. Utilize a custom function to convert dollar values to cents for accurate transaction processing.​To set a price in cents to Stripe, you can simply use a custom function that takes the price in dollars and returns it as cents.​
 
-    Here is a custom code you can use to make this calculation in a custom function: 
+    Here is a custom code you can use to make this calculation in a custom function:
 
     ```js
     int dollarToCent(double amount) {
@@ -90,15 +100,15 @@ Integrating Stripe for payment processing in FlutterFlow can significantly simpl
 
     A CORS error during payment initiation often indicates a permissions issue with your Firebase function. Verify and adjust the `allUsers` permission for your Stripe function in the Firebase console to resolve this error.​
 
-    ![](../assets/20250430121147385978.png)
-    
-    ![](../assets/20250430121147683388.png)
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147385978.png)
+
+    ![Fixing Stripe Deployment & Payment Errors in FlutterFlow](../assets/20250430121147683388.png)
 
 5. **Subscriptions**
 
     Currently, Apple and Google restrict Stripe subscriptions on mobile platforms. To expand your subscription capabilities, you can use alternative solutions like RevenueCat for mobile apps and direct API calls for web applications.​
 
-:::info[**For further information and troubleshooting:**] 
+:::info[**For further information and troubleshooting:**]
 - [Stripe Documentation](https://stripe.com/docs)
 - [Stripe Payments](https://stripe.com/payments)
 - [FlutterFlow University](https://university.flutterflow.io/)

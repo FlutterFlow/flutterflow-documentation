@@ -1,13 +1,23 @@
 ---
 slug: /collaboration/branching
 title: Branching
-description: Learn how branching in FlutterFlow allows you to add new features without disrupting your current progress. Understand the workflow of creating and merging branches, resolving conflicts, and the difference between merging and rebasing, with practical examples and tips.
-tags: [Branching, Collaboration]
+description: >-
+  Branching creates a separate copy of your work, so you can add new features
+  without disrupting your current progress.
+tags:
+  - FlutterFlow
+  - Collaboration
 sidebar_position: 1
-keywords: [Branching, Collaboration, FlutterFlow, Concepts]
+keywords:
+  - Branching
+  - Collaboration
+  - FlutterFlow
+  - Concepts
+  - use branches in a FlutterFlow project
 toc_max_heading_level: 4
+ai_queries:
+  - use branches in a FlutterFlow project
 ---
-
 # Branching
 Branching creates a separate copy of your work, so you can add new features without disrupting your current progress. It enables multiple developers or teams to work simultaneously on different features without interfering with each other.
 
@@ -20,8 +30,8 @@ While all users can access the branching menu and create commits, only **Growth*
 
 :::warning
 
-Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within 
-FlutterFlow. You can also learn more about 
+Creating a branch here doesn't create one on GitHub. Branches stay and are managed solely within
+FlutterFlow. You can also learn more about
 [**managing custom code on GitHub**](../exporting-code/push-to-github.md#manage-custom-code-on-github).
 :::
 
@@ -30,7 +40,7 @@ Before you create and merge a branch, it is essential to understand the general 
 
 ![branching](imgs/branching-overview.avif)
 
-First, create a new branch from the `main` branch. After making your changes in a new branch and finalizing the feature, merge this new branch back into the `main` branch. If there are any conflicts, 
+First, create a new branch from the `main` branch. After making your changes in a new branch and finalizing the feature, merge this new branch back into the `main` branch. If there are any conflicts,
 you must resolve them first.
 
 :::note
@@ -50,9 +60,8 @@ To create a new branch from the current branch, simply go to the **Branching Opt
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/5n61rPZR7WuWxs0lTFkE?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/5n61rPZR7WuWxs0lTFkE?embed&show_copy_link=true" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,9 +101,8 @@ To create a commit, follow these steps:
     paddingBottom: 'calc(53.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/bfqijjODDijWLszOOQqV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/bfqijjODDijWLszOOQqV?embed&show_copy_link=true" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -134,7 +142,7 @@ To see the commit changes, simply click on the commit. You’ll then land on a *
     paddingBottom: 'calc(53.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/RwImFTtbmT0hkxj1RtuF?embed&show_copy_link=true"
         title="Viewing Commits"
         style={{
@@ -169,7 +177,7 @@ FlutterFlow offers multiple ways to save the state of your project at specific p
 - **Snapshots** are automatically created as you edit your project. Think of them as automatic backups that you can revert to whenever needed.
 - **Versions and commits**, on the other hand, are manually created checkpoints. While both serve a similar purpose, commits offer more flexibility by allowing you to view the specific changes made in each commit. If you're using a plan that supports branching, it's recommended to use commits for better tracking and version control.
 
-You can learn more about [snapshots and versions here](/collaboration/saving-versioning). 
+You can learn more about [snapshots and versions here](/collaboration/saving-versioning).
 
 ## Merging
 
@@ -214,9 +222,8 @@ To initiate the Merge, navigate to **Toolbar >** select **Branching > Branching 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/8RY2cm1vYI5waxHLGImY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/8RY2cm1vYI5waxHLGImY?embed&show_copy_link=true" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -252,15 +259,14 @@ When performing a merge in FlutterFlow, you’ll see a screen with multiple pane
 - **Project Errors**: Project errors occur when the result of a merge creates a problem in your project. For example, this might happen if the merge results in two data types having the same name. These errors need to be resolved to ensure your project works as expected. You have several options to deal with project errors:
     - **Fix Errors During the Merge**: This approach ensures that the merged project is error-free right from the start. Here’s how you can do it:
         - **Edit the YAML files:** Update the project YAML files (in the Right Lower Panel) to fix issues, such as renaming a data type that causes a conflict.
-        
+
             <div style={{
                 position: 'relative',
                 paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
                 height: 0,
                 width: '100%'}}>
-                <iframe 
-                    src="https://demo.arcade.software/nMguF4fBc0xk27yLd1rw?embed&show_copy_link=true"
-                    title=""
+                <iframe
+                    src="https://demo.arcade.software/nMguF4fBc0xk27yLd1rw?embed&show_copy_link=true" title="Branching interactive tutorial"
                     style={{
                         position: 'absolute',
                         top: 0,
@@ -291,7 +297,7 @@ When performing a merge in FlutterFlow, you’ll see a screen with multiple pane
 The left-hand side panel displays all the project files in YAML format. YAML (Yet Another Markup Language) files use a simple, human-readable format to define configuration data. They are particularly useful during a merge because they allow you to directly review, understand, and resolve any changes or conflicts in your project’s file.
 
 - **Filter Files:** You can use filters to narrow down the list of YAML files based on specific criteria:
-    
+
     - **All Files (Unchanged Files)**: Shows every YAML file in the project that has no changes.
     - **Files with Changes**: Displays only files where a change has been made on either branch.
     - **Files with Conflicts**: Shows only files that have merge conflicts, where the changes in one branch directly contradict the changes in the other.
@@ -302,11 +308,11 @@ The left-hand side panel displays all the project files in YAML format. YAML (Ye
         - A **conflict** occurs when the same part of a file has been changed in both branches, making it unclear which version to keep. For instance, if one branch changes the color of the Container to blue and the other changes it to red, this creates a conflict.
         ![conflict](imgs/conflict.avif)
         :::
-    
+
 - **Search File:** If you’re looking for a particular file, you can use the search bar to locate it quickly. This is especially useful in larger projects with many files.
-    
+
 Clicking on a file in the panel opens it in the editor, allowing you to view, edit, and resolve issues directly.
-    
+
 **Right Upper Panel**
 
 The Upper Right Panel offers a quick, side-by-side comparison of file changes from both branches, along with easy one-click accept buttons and previews. This panel makes it simple to decide which changes to keep or discard.
@@ -346,9 +352,8 @@ For more information, check out the video below.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/r8BR248HR0U"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/r8BR248HR0U" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -395,9 +400,8 @@ You can review each file with merge conflicts and choose to:
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/P5NM88UwmeiZ1PHwcnp6?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/P5NM88UwmeiZ1PHwcnp6?embed&show_copy_link=true" title="Branching interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -429,7 +433,7 @@ To configure these permissions, navigate to **Settings & Integrations > Project 
 
 ![branch-permission](../imgs/branch-permission.png)
 
-- **Editors** assigned to a branch have the authority to make direct modifications to the project while working within that branch. 
+- **Editors** assigned to a branch have the authority to make direct modifications to the project while working within that branch.
 - **Mergers** on the other hand, are only allowed to merge other branches into that branch. This is especially useful for protected branches where you don't want any users to make direct modifications. Instead, users should only merge other branches into that branch.
 
 ## Closing Branch
@@ -448,9 +452,8 @@ Here’s how you can close a branch:
     paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4k3cjnyfVo8uHtjC2PR2?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4k3cjnyfVo8uHtjC2PR2?embed&show_copy_link=true" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -486,9 +489,8 @@ To restore a branch, open the **Branch Filter** menu and enable **Show Closed Br
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/RQ8lrFH85EZr71sQ7VKN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/RQ8lrFH85EZr71sQ7VKN?embed&show_copy_link=true" title="Branching interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -517,7 +519,7 @@ How YAML files are helpful during a merge?
 <p>
 YAML files play a key role in managing and resolving conflicts during the merge process because:
 - YAML files hold important configuration data, such as settings, resource definitions, and project properties. During a merge, changes in these files reflect modifications to the structure or behavior of the project.
-- The simple and hierarchical nature of YAML makes it easy to spot changes or conflicts, even in complex files. 
+- The simple and hierarchical nature of YAML makes it easy to spot changes or conflicts, even in complex files.
 - YAML files allow you to manually edit and resolve conflicts during the merge process.
 - Since YAML files are text-based, they are version-controlled effectively, enabling multiple team members to make changes and merge their work.
 </p>

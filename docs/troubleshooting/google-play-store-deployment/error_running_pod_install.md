@@ -1,9 +1,19 @@
 ---
-keywords: ['error', 'running', 'install']
+keywords:
+  - error
+  - running
+  - install
 slug: /troubleshooting/google-play-store-deployment/error-running-pod-install
 title: Error Running Pod Install
+description: >-
+  This article addresses the common Error Running Pod Install issue, which
+  typically occurs due to misconfiguration of Flutter or CocoaPods on macOS
+  devices.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Error Running Pod Install
 
 This article addresses the common **Error Running Pod Install** issue, which typically occurs due to misconfiguration of Flutter or CocoaPods on macOS devices.
@@ -16,9 +26,9 @@ This article addresses the common **Error Running Pod Install** issue, which typ
 
 ## Steps to Fix Error Running Pod Install:
 
-1. Verify Flutter is set up correctly by following the official guide: **[Flutter - Get Started: Install on macOS](https://docs.flutter.dev/get-started/install/macos)**.
+1. Verify Flutter is set up correctly by following the official guide: **[Flutter - Get Started: Install on macOS](https://docs.flutter.dev/install/quick)**.
 
-2. For troubleshooting specific to macOS, consult this guide: **[Troubleshooting Flutter on macOS](https://docs.flutter.dev/get-started/install/macos/mobile-ios#install-cocoapods)**.
+2. For troubleshooting specific to macOS, consult this guide: **[Troubleshooting Flutter on macOS](https://docs.flutter.dev/platform-integration/ios/setup)**.
 
 3. Run `flutter doctor` in the terminal to check for missing dependencies or configuration issues.
 
@@ -43,3 +53,7 @@ This article addresses the common **Error Running Pod Install** issue, which typ
   pod install
   ```
   Deleting the `ios/Pods` directory and `ios/Podfile.lock` file before running `pod install` can help resolve lingering CocoaPods issues.
+
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

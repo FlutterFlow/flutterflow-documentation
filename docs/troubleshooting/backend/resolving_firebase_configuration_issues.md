@@ -1,7 +1,18 @@
 ---
-keywords: ['firebase', 'issues', 'configuration']
+keywords:
+  - firebase
+  - issues
+  - configuration
 slug: /troubleshooting/backend/resolving-firebase-configuration-issues
 title: Resolving Firebase Configuration Issues
+description: >-
+  If you're experiencing backend errors, failed schema validation, or data sync
+  issues, this guide will help you verify and fix your Firebase setup in
+  FlutterFlow.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Backend
 ---
 # Resolving Firebase Configuration Issues
 
@@ -17,8 +28,8 @@ Follow the steps below to fix firebase configuration:
 1. **Grant Required Permissions**
 
    Assign the following permissions to `firebase@flutterflow.io` in your Firebase project:
-    - Editor  
-    - Cloud Functions Admin  
+    - Editor
+    - Cloud Functions Admin
     - Service Account User
 
     Learn how to **[assign Firebase permissions](/integrations/firebase/connect-to-firebase/#allow-flutterflow-to-access-your-project)**.
@@ -32,7 +43,7 @@ Follow the steps below to fix firebase configuration:
         - Redeploy your Firestore rules.
         - Validate your schema again.
 
-        ![](../assets/20250430121532523511.png)
+        ![Resolving Firebase Configuration Issues in FlutterFlow](../assets/20250430121532523511.png)
 
 3. **Match Field Types and Names**
 
@@ -42,7 +53,7 @@ Follow the steps below to fix firebase configuration:
 
    Use the **Validate** button under **Firestore → Settings** in FlutterFlow to confirm that your collection schema matches your Firestore structure.
 
-   ![](../assets/20250430121532793176.png)
+   ![Resolving Firebase Configuration Issues in FlutterFlow](../assets/20250430121532793176.png)
 
 5. **Reset Firebase Setup (If Needed)**
 

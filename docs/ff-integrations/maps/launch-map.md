@@ -1,11 +1,16 @@
 ---
-
 title: Launch Map
 slug: /integrations/maps/launch-map
 description: Learn how to open Map app installed on your device from your FlutterFlow app.
 sidebar_position: 2
-tags: [Maps, Action]
-keywords: [FlutterFlow, Launch Maps, Action,]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Maps
+keywords:
+  - FlutterFlow
+  - Launch Maps
+  - Action
 ---
 # Launch Map
 Using this action, you can open the Map app installed on your device. For example, you could add this action on an event page to let users know more about the place inside the map apps like Google Maps, Apple Maps, and Waze app.
@@ -17,9 +22,8 @@ You can specify the Lat Long details or full address of any place to access the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/g8KeY6nO6mdwNP7wUdJA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/g8KeY6nO6mdwNP7wUdJA?embed&show_copy_link=true" title="Launch Map interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -73,9 +77,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/QYMvBgTlTwlYUVmh24L6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QYMvBgTlTwlYUVmh24L6?embed&show_copy_link=true" title="Launch Map interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -93,3 +96,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [AdMob](/integrations/ads/admob) for a related FlutterFlow workflow.

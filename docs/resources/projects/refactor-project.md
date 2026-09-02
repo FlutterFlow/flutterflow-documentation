@@ -1,12 +1,21 @@
 ---
 slug: refactor-project
 title: Refactor Project
-tags: [Refactor]
-keywords: [FlutterFlow, Refactor Project, developer tools, large-scale edits, rename , key reference search, developer menu]
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - FlutterFlow
+  - Refactor Project
+  - developer tools
+  - large-scale edits
+  - rename
+  - key reference search
+  - developer menu
 description: Learn how to refactor your project in FlutterFlow.
 sidebar_position: 7
 ---
-
 # Refactor Project
 
 :::tip[PLANS]
@@ -48,9 +57,8 @@ You can exclude any item from the replacement by right-clicking on it and select
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Uy4bDoJSGEIJtm4an8G6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Uy4bDoJSGEIJtm4an8G6?embed&show_copy_link=true" title="Refactor Project interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -68,3 +76,7 @@ You can exclude any item from the replacement by right-clicking on it and select
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [What is a Project?](/resources/projects) for a related FlutterFlow workflow.

@@ -1,22 +1,36 @@
 ---
 slug: /resources/data-representation/constants
 title: Constants
-description: Explore the importance of using Constants in FlutterFlow to define unchanging values throughout your application.
-tags: [Constants, FlutterFlow, Data Representation]
+description: >-
+  Explore the importance of using Constants in FlutterFlow to define unchanging
+  values throughout your application.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
 sidebar_position: 6
-keywords: [Constants, FlutterFlow, Data Representation]
+keywords:
+  - Constants
+  - FlutterFlow
+  - Data Representation
 ---
-
 # Constants
-Constants are used to define values that remain unchanged throughout the lifetime of an application. Using constants is a good practice for values that do not need to be recalculated or reassigned.
+Constants define app-wide values that cannot be changed by actions at runtime. Use them for values you configure once in the builder and reuse in widgets, actions, or expressions.
 
-Constants are used to define values that you believe are fixed, like API endpoints, standard mathematical values, maximum size limits set by business rules, etc.
+Examples include a public API base URL, a standard mathematical value, or a maximum size imposed by a business rule. A project constant is compiled into the exported app, so never use it for API keys, passwords, or other secrets.
 
 :::tip[When to use Constants vs **[App state variables](app-state)?**]
-Constants don't change. Once you set its value (in builder), you can't change it from within the app. On the other hand, app state variables are dynamic. They can be updated in response to interactions in the application, such as a user clicking a button or entering data.
+Constants don't change. Once you set a constant's value in the builder, the running app cannot reassign it. App State variables are dynamic and can be updated in response to interactions such as a button tap.
 :::
 
 ## Create and use Constants
+
+1. Open **App Values > Constants** from the left-side navigation menu.
+2. Select **Add App Constant**, then enter its name, optional description, type, list setting, and value.
+3. In a compatible property or action input, open **Set from Variable > Constants > Project Constants** and select it.
+
+Project constants currently support Integer, Double, String, Color, Image Path, Video Path, Audio Path, and Boolean values; each can also be configured as a list. Exported code emits them as `static const` fields in `lib/app_constants.dart` when the project defines constants.
 
 <div style={{
     position: 'relative',
@@ -24,9 +38,8 @@ Constants don't change. Once you set its value (in builder), you can't change it
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Dftl0AAL3w3fw6TjaiBR?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/Dftl0AAL3w3fw6TjaiBR?embed&show_copy_link=true" title="Constants interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -45,5 +58,5 @@ Constants don't change. Once you set its value (in builder), you can't change it
 </div>
 
 :::tip[Naming Convention]
-Prefer using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. To learn more, refer to the guide on **[Naming Variables & Functions](../../resources/style-guide.md)**.
+Prefer a lowercase `k` prefix for constants, such as `kMaximumUploadSize`, to signal immutability. To learn more, refer to **[Naming Variables & Functions](../../resources/style-guide.md)**.
 :::

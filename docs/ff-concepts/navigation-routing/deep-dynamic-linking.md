@@ -2,11 +2,19 @@
 slug: /concepts/navigation/deep-dynamic-linking
 title: Deep & Dynamic Linking
 description: Learn how to implement deep and dynamic linking in your FlutterFlow app.
-tags: [Deep Linking, Dynamic Linking, Concepts]
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 4
-keywords: [FlutterFlow, Deep Linking, Dynamic Linking, Concepts]
+keywords:
+  - FlutterFlow
+  - Deep Linking
+  - Dynamic Linking
+  - Concepts
+  - configure deep links for a FlutterFlow app
+ai_queries:
+  - configure deep links for a FlutterFlow app
 ---
-
 # Deep & Dynamic Linking
 
 :::danger[Support for Dynamic Links]
@@ -60,7 +68,7 @@ Let's build an example of sharing and opening a profile page using the deep link
 like the below:
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
+    <img alt="Deep Link Example in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
   <figcaption class="centered-caption">Sharing and opening a deep link</figcaption>
 </figure>
 
@@ -110,7 +118,7 @@ To set the page URL:
    checkmark the **Requires Authentication** if your app works only after login.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-page-url.gif?alt=media&token=4ec81b75-a5b0-4130-8e3c-dda9aacd1c84"></img>
+    <img alt="Set Page Url in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-page-url.gif?alt=media&token=4ec81b75-a5b0-4130-8e3c-dda9aacd1c84"></img>
   <figcaption class="centered-caption">Setting page URL</figcaption>
 </figure>
 
@@ -135,7 +143,7 @@ To share the deep link of the current page:
     5. Set the **Available Options** to **Link To Current Page** and click **Close**.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/sharing-deep-link.gif?alt=media&token=05521a84-43e4-4c21-869c-5ecdcd1e34c6"></img>
+    <img alt="Sharing Deep Link in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/sharing-deep-link.gif?alt=media&token=05521a84-43e4-4c21-869c-5ecdcd1e34c6"></img>
   <figcaption class="centered-caption">Sharing deep link</figcaption>
 </figure>
 
@@ -174,7 +182,7 @@ URL in the search bar, open the options menu and click on the **Open in app**.
 Here is how you do it:
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
+    <img alt="Deep Link Example in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
   <figcaption class="centered-caption">Using Firefox mobile browser to open the deep link</figcaption>
 </figure>
 </details>
@@ -199,7 +207,7 @@ from Firebase) to create dynamic links.
 Let’s walk through an example of sharing and opening a profile page using a dynamic link. The example will look like this:
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
+    <img alt="Deep Link Example in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/deep-link-example.gif?alt=media&token=d6f40d74-f510-4f49-8026-9ccc87896ff4"></img>
   <figcaption class="centered-caption">Dynamic link example</figcaption>
 </figure>
 
@@ -230,7 +238,7 @@ To set up the domain name, follow the steps below:
 4. If you chose Google Provided Domain, you could **Finish** the setup.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-up-domain.gif?alt=media&token=219b0780-3632-478b-918c-05fba91508a3"></img>>
+    <img alt="Set Up Domain in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-up-domain.gif?alt=media&token=219b0780-3632-478b-918c-05fba91508a3"></img>>
   <figcaption class="centered-caption">Setting up a domain for the dynamic link</figcaption>
 </figure>
 
@@ -258,7 +266,7 @@ To add the App Store and Team ID to the Firebase project:
    click **Save**. To know where is your Team ID, click on the question mark icon beside the label.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/add-app-store-team-id.gif?alt=media&token=116cb42a-9bc6-4af5-a9d6-cc5a8a5906f7"></img>
+    <img alt="Add App Store Team Id in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/add-app-store-team-id.gif?alt=media&token=116cb42a-9bc6-4af5-a9d6-cc5a8a5906f7"></img>
   <figcaption class="centered-caption">Adding App Store and Team ID to the Firebase project</figcaption>
 </figure>
 
@@ -274,7 +282,7 @@ To add the Associated Domain capability on App Store:
 3. Checkmark the **Associated Domains** and click **Save**.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/add-capability.gif?alt=media&token=90315580-9480-40d4-a85b-1957c6d759e2"></img>
+    <img alt="Add Capability in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/add-capability.gif?alt=media&token=90315580-9480-40d4-a85b-1957c6d759e2"></img>
   <figcaption class="centered-caption">Adding Associated Domain capability to App Store</figcaption>
 </figure>
 
@@ -316,7 +324,7 @@ To set the page URL:
    However, checkmark the **Requires Authentication** if your app works only after login.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-page-url-dynamic-link.gif?alt=media&token=537674be-d58e-431f-940d-59afda3089d6"></img>
+    <img alt="Set Page Url Dynamic Link in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/set-page-url-dynamic-link.gif?alt=media&token=537674be-d58e-431f-940d-59afda3089d6"></img>
   <figcaption class="centered-caption">Setting page URL</figcaption>
 </figure>
 
@@ -348,7 +356,7 @@ To share the dynamic link of the page:
 9. Set the **Available Options** to the **Current Page Link** and click **Close**.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/sharing-dynamic-link.gif?alt=media&token=f9caa24f-efbf-47f2-af9c-ee1172de5863"></img>
+    <img alt="Sharing Dynamic Link in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/sharing-dynamic-link.gif?alt=media&token=f9caa24f-efbf-47f2-af9c-ee1172de5863"></img>
   <figcaption class="centered-caption">Sharing dynamic link</figcaption>
 </figure>
 
@@ -366,7 +374,7 @@ into the search bar.
 Here is how you do it:
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/dynamic-link-demo-testing.gif?alt=media&token=5b218ef8-198d-4941-be12-640e9babb3e4"></img>
+    <img alt="Dynamic Link Demo Testing in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/dynamic-link-demo-testing.gif?alt=media&token=5b218ef8-198d-4941-be12-640e9babb3e4"></img>
   <figcaption class="centered-caption">Testing Dynamic Link</figcaption>
 </figure>
 
@@ -377,7 +385,7 @@ page link with a discount code and share the profile page with its profile ID. P
 with the link can be used to retrieve the information required to display on the page.
 
 <figure>
-    <img src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/pasing-data.gif?alt=media&token=2fc5c267-fc68-4f4f-aa39-41597a5b5e48"></img>
+    <img alt="Pasing Data in FlutterFlow" src="https://firebasestorage.googleapis.com/v0/b/ecommerceflow-docs/o/pasing-data.gif?alt=media&token=2fc5c267-fc68-4f4f-aa39-41597a5b5e48"></img>
   <figcaption class="centered-caption">Passing profile id in the link</figcaption>
 </figure>
 
@@ -395,7 +403,7 @@ To pass custom data with the link, you need to have the following:
 
 
 <figure>
-   ![img_6.png](imgs/img_6.png) 
+   ![img_6.png](imgs/img_6.png)
   <figcaption class="centered-caption">Including a parameter in the route</figcaption>
 </figure>
 
@@ -413,9 +421,9 @@ With Branch, we can support robust deep linking inside FlutterFlow apps without 
 
 Start by setting up your project in the [Branch Dashboard](https://dashboard.branch.io). Once you’ve created a project:
 
-**1. Note down your Branch Key**  
+**1. Note down your Branch Key**
 
-Once you create a project, the first thing you’ll need to do is note down your **Branch Key**.  
+Once you create a project, the first thing you’ll need to do is note down your **Branch Key**.
 
 <div style={{
     position: 'relative',
@@ -423,9 +431,8 @@ Once you create a project, the first thing you’ll need to do is note down your
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/7c9mN4P0ppY3qwczmMdh?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/7c9mN4P0ppY3qwczmMdh?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -448,9 +455,9 @@ Once you create a project, the first thing you’ll need to do is note down your
 
 This key uniquely identifies your app and will be required later when setting up your FlutterFlow configuration.
 
-**2. Set up Redirect Links**  
+**2. Set up Redirect Links**
 
-In the Branch dashboard, you’ll find settings to define fallback URLs — these determine where users are sent if your app isn’t installed. Typically, you would redirect users to the App Store, Play Store, or a custom landing page.  
+In the Branch dashboard, you’ll find settings to define fallback URLs — these determine where users are sent if your app isn’t installed. Typically, you would redirect users to the App Store, Play Store, or a custom landing page.
 
 <div style={{
     position: 'relative',
@@ -458,9 +465,8 @@ In the Branch dashboard, you’ll find settings to define fallback URLs — thes
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/EtH2CeinH2NQpianzTIC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EtH2CeinH2NQpianzTIC?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -482,9 +488,9 @@ In the Branch dashboard, you’ll find settings to define fallback URLs — thes
 
 Setting up redirects is important because it ensures that your links don't break and that users always have a seamless experience, even if they need to install the app first.
 
-**3. Create a Smart Link**  
+**3. Create a Smart Link**
 
-After setting up your project and redirects, you can create a new Smart Link from the **Quick Links** tab in the Branch dashboard. Here you’ll be able to set a link title, alias, add analytics tags, and customize the social media preview (such as the image, title, and description).  
+After setting up your project and redirects, you can create a new Smart Link from the **Quick Links** tab in the Branch dashboard. Here you’ll be able to set a link title, alias, add analytics tags, and customize the social media preview (such as the image, title, and description).
 
 Once saved, Branch will generate a Smart Link that’s ready to use across your campaigns and app flows.
 
@@ -496,9 +502,8 @@ Here's a short demo:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/w2egrzVVhzlcL1hTV6x7?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/w2egrzVVhzlcL1hTV6x7?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -529,7 +534,7 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
 
 **🔧 Android Setup**
 
-1. Create two variables in `AndroidManifest.xml` file named `branchKey` and `branchHostUrl` and bind them to the environment variables we earlier created. 
+1. Create two variables in `AndroidManifest.xml` file named `branchKey` and `branchHostUrl` and bind them to the environment variables we earlier created.
 
 2. Add an `intent-filter` block to your **Main Activity** through the **Activity Tags** hook:
 
@@ -561,7 +566,7 @@ To make **Branch Smart Links** work in your FlutterFlow app, you’ll need to up
 <key>branch_key</key>
 <string>{{branchKey}}</string>
 ```
-3. In `Runner.entitlements`, add a new variable called `branchHostUrl` and bind it to the environment variable. 
+3. In `Runner.entitlements`, add a new variable called `branchHostUrl` and bind it to the environment variable.
 
 4. In `Runner.entitlements`, add the following code snippet.
 
@@ -591,7 +596,7 @@ Even if your links mainly use `https://`, FlutterFlow's routing engine may still
 
 You're now ready to use Branch Smart Links in a FlutterFlow app with seamless deferred deep linking, App/Universal Link verification, and environment-based configuration.
 
-### Integrate Flutter Branch SDK 
+### Integrate Flutter Branch SDK
 To integrate Branch with your FlutterFlow app, you'll use the [`flutter_branch_sdk`](https://pub.dev/packages/flutter_branch_sdk) Dart package. This will allow your app to listen to Branch links and respond accordingly.
 
 
@@ -615,7 +620,7 @@ Future initBranch() async {
 
 ```
 
-Call this action inside the **Final Actions** of your `main.dart`. 
+Call this action inside the **Final Actions** of your `main.dart`.
 
 3. Create another custom action to listen for Branch link clicks and optionally route the user:
 
@@ -671,7 +676,7 @@ You can pass custom key-value pairs like `"page": "paywall"` or `"navigation_typ
 Be sure to test both fresh installs (deferred deep links) and existing app sessions to confirm that your actions run as expected.
 
 :::tip
-For a complete walkthrough, check out the tutorial video: 
+For a complete walkthrough, check out the tutorial video:
 <div class="video-container"><iframe src="https://www.youtube.com/embed/nEBot6-zhfY?si=y-flWx8zoGH8mgjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 :::
 
@@ -686,7 +691,7 @@ This library sets up everything you need for routing users into your app using B
 
 You can install the [Branch Deeplinking Library from the Marketplace](https://marketplace.flutterflow.io/item/oAco1HzQHxtOVE1ssTcC). Refer to the [Add Library Item](../../marketplace/adding-purchasing-item.md#add-library-item) instructions to see how to add it to your account.
 
-### Branch Setup 
+### Branch Setup
 
 You’ll need three values from your Branch dashboard:
 
@@ -724,9 +729,8 @@ Here’s a quick demo to show how to configure those values inside your library 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/AWUZbgiNKpKgwKjxAM17?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/AWUZbgiNKpKgwKjxAM17?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -756,9 +760,8 @@ Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/sAGP2IBXMbHMPP4rXRaQ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/sAGP2IBXMbHMPP4rXRaQ?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -779,14 +782,14 @@ Open your `main.dart` file in FlutterFlow and add the `initBranch` custom action
 
 ### Handle Branch Deeplink [Custom Action]
 
-To receive and act on deep link data, go to your **Entry Page** or **Logged-In Page** and add the `handleBranchDeeplink` action as the first action in the page flow. 
+To receive and act on deep link data, go to your **Entry Page** or **Logged-In Page** and add the `handleBranchDeeplink` action as the first action in the page flow.
 
 This `handleBranchDeeplink` action listens for incoming Branch Deeplinks and handles routing logic. This action should be added to your **Entry Page** or **Logged-In Page** under the **onPageLoad** trigger. It initializes a stream listener that waits for Branch links to be opened (either deferred or direct). Ensure this is the first action of your **on Page Load** action trigger.
 
 **`onLinkOpened` Action Callback**
 
 When a link is received, the `onLinkOpened` callback is triggered with
-the [**link data**](#linkdata-action-parameter), allowing you to perform custom navigation or logic. You can perform your navigation logic in this action callback. 
+the [**link data**](#linkdata-action-parameter), allowing you to perform custom navigation or logic. You can perform your navigation logic in this action callback.
 
 <div style={{
     position: 'relative',
@@ -794,9 +797,8 @@ the [**link data**](#linkdata-action-parameter), allowing you to perform custom 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/aRZju3GUJAzaqAUZs87G?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/aRZju3GUJAzaqAUZs87G?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -818,9 +820,9 @@ the [**link data**](#linkdata-action-parameter), allowing you to perform custom 
 
 #### `linkData` Action Parameter
 
-The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link. 
+The `handleBranchDeeplink` action receives a `linkData` object that contains all the metadata sent with the link. The `linkData` parameter is a Map containing useful information from the Branch link.
 
-In the Dreambrush app example, we get the following link data: 
+In the Dreambrush app example, we get the following link data:
 
 ```jsx
 {
@@ -859,13 +861,13 @@ Some of the important keys we should know about:
 - **`$og_title`:** This is the headline that will appear in the link preview. This is set by the user through the **[Generate Link](#generate-link-custom-action)** action.
 - **`$og_description`:** This is the description text shown below the title in the link preview. This is set by the user through the **[Generate Link](#generate-link-custom-action)** action.
 
-- **`~channel`**, **`~feature`**, **`~campaign`** and **`$tags[0]`** are part of Branch’s user-defined analytics and attribution metadata. These fields are explicitly set by users when creating a link (e.g., via the **[Generate Link](#generate-link-custom-action)** action), and they help organize and analyze your link performance across platforms and campaigns.  
+- **`~channel`**, **`~feature`**, **`~campaign`** and **`$tags[0]`** are part of Branch’s user-defined analytics and attribution metadata. These fields are explicitly set by users when creating a link (e.g., via the **[Generate Link](#generate-link-custom-action)** action), and they help organize and analyze your link performance across platforms and campaigns.
 
 - **`page`:**  This is a suggested custom key that can be set by the user when generating the link. It typically defines the target page or screen the app should navigate to when the link is opened (e.g., "paywall", "productPage", "onboardingStep2"). While not a reserved Branch key, it's a commonly used naming convention for handling deep links and routing logic within the app.
 
 - Any other custom parameters added during link creation (e.g., `productId`, `referrer`, etc.). Ensure the key and value are both `String`.
 
-This lets you write flexible, conditional navigation logic based on what was shared. For example, in the following example, we can even show a bottom sheet based on the page value. 
+This lets you write flexible, conditional navigation logic based on what was shared. For example, in the following example, we can even show a bottom sheet based on the page value.
 
 
 <div style={{
@@ -874,9 +876,8 @@ This lets you write flexible, conditional navigation logic based on what was sha
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/FRDKejqwWVAmS27RJeQH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/FRDKejqwWVAmS27RJeQH?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -908,7 +909,7 @@ In certain app structures, especially when the home page is removed from the nav
 
 This approach ensures that navigation logic is not tied to the widget hierarchy at the time of execution, making it more robust and flexible.
 
-See a **[detailed example](#dreambrush-example)** using the DreamBrush app. 
+See a **[detailed example](#dreambrush-example)** using the DreamBrush app.
 
 
 :::danger[Testing Deeplinks]
@@ -935,14 +936,14 @@ The action accepts the following parameters:
 - **`description`** – (Optional) A short description of the content.
 
 - **`metadata`** – A dynamic map of custom parameters to include with the link
-(e.g., page: "imageDetails", imageRef: "abc123", etc.) 
+(e.g., page: "imageDetails", imageRef: "abc123", etc.)
 
 - **`linkProperties`** – A dynamic map for configuring how the link behaves
 (e.g., set the `feature`, `channel`, `campaign`, or `stage` for analytics).
 
 :::warning[JSON maps]
-Due to a limitation, if you plan to leave map-type variables (like `metadata` or `linkProperties`) empty, you must still pass them as **empty maps**, not `null`.  
-Ensure all keys and values are **plain strings**, avoid nested JSON or non-string types.  
+Due to a limitation, if you plan to leave map-type variables (like `metadata` or `linkProperties`) empty, you must still pass them as **empty maps**, not `null`.
+Ensure all keys and values are **plain strings**, avoid nested JSON or non-string types.
 Incorrect structure may cause the Link Generation action to fail silently.
 :::
 
@@ -958,13 +959,13 @@ These functions help you safely work with deep link data, extract values, and co
 
 - **`getLastPathSegmentFromMap(linkData, key)`**: Extracts the last path segment (e.g., `abc123`) from a URI stored inside a link data field (e.g., `/imageDetails/abc123`). This is especially useful when your deep link contains a structured path, like `/imageDetails/abc123` and you want to retrieve just the ID (`abc123`).
 
-- **`getLinkValue(linkData, key)`**: Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`). 
+- **`getLinkValue(linkData, key)`**: Safely retrieves any single value from the link data Map. Returns null if not found. (e.g., retrieving `showPromo` attribute value from the `linkData`).
 
 :::warning
 If you're trying to retrieve default Branch keys like `~channel` or `$canonical_identifier`, make sure to include the special character (e.g., `~` or `$`) as part of the key string.
 :::
 
-- **`createLinkProperties(...)`**: Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals. 
+- **`createLinkProperties(...)`**: Returns a Branch Link Properties map used when generating a smart link. You can define values like: feature, campaign, stage, channel, alias or tags or custom fallback URLs. Useful for organizing and tracking generated links for marketing or referrals.
 
 
 
@@ -985,9 +986,8 @@ Here's a quick example of generating a Branch link from a page that uses a **Fir
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/SELEpnhCryYrZD7KokAl?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SELEpnhCryYrZD7KokAl?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -1008,7 +1008,7 @@ Here's a quick example of generating a Branch link from a page that uses a **Fir
 <p>
 </p>
 
-Now in your `handleBranchDeeplink` action callback, add the additional logic to handle such custom links: 
+Now in your `handleBranchDeeplink` action callback, add the additional logic to handle such custom links:
 
 <div style={{
     position: 'relative',
@@ -1016,9 +1016,8 @@ Now in your `handleBranchDeeplink` action callback, add the additional logic to 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/kZ7uvnohpGIER3ZTxPR8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/kZ7uvnohpGIER3ZTxPR8?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -1057,9 +1056,8 @@ Note: The **Execute Custom Code** Action is available only on the [**paid plans*
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/90ZeqJ3Zp0UQo1H0cdl8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/90ZeqJ3Zp0UQo1H0cdl8?embed&show_copy_link=true" title="Deep & Dynamic Linking interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -1093,7 +1091,7 @@ Instead of relying on the Home Page's presence to handle deep links, configure y
 
 You can do this by adding an **Execute Custom Code** Action before the **Navigate To** Action.
 
-See the **[complete example](#using-global-context-to-navigate)**. 
+See the **[complete example](#using-global-context-to-navigate)**.
 
 ✅ Alternative (but limited) Solution: **Keep the Home Page in Stack**
 

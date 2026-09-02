@@ -1,9 +1,21 @@
 ---
-keywords: ['error', 'custom', 'domains']
+keywords:
+  - error
+  - custom
+  - domains
+  - fix DNS issues while connecting a custom domain to a FlutterFlow web app
 slug: /troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues
 title: Custom Domain Connection Issues
+description: >-
+  This article provides solutions for common problems encountered when
+  connecting custom domains.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment Issues
+ai_queries:
+  - fix DNS issues while connecting a custom domain to a FlutterFlow web app
 ---
-
 # Custom Domain Connection Issues
 
 This article provides solutions for common problems encountered when connecting custom domains.
@@ -21,7 +33,7 @@ This article provides solutions for common problems encountered when connecting 
    - Use tools like **[nslookup.io](https://www.nslookup.io)** to verify that your DNS A and CNAME records match the configuration provided in FlutterFlow.
    - Ensure no conflicting A, AAAA, or CNAME records exist.
 
-   ![](../../assets/20250430121150651702.png)
+   ![Custom Domain Connection Issues in FlutterFlow](../../assets/20250430121150651702.png)
 
 2. **Allow Time for DNS Propagation**
 
@@ -64,3 +76,7 @@ This article provides solutions for common problems encountered when connecting 
       :::
 
 If issues persist after following these steps, contact FlutterFlow support via Live Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io).
+
+## Related documentation
+
+See [Custom Domain Connection Error](/troubleshooting/apple-store-deployment-issues/custom-domain-connection-error) for a related FlutterFlow workflow.

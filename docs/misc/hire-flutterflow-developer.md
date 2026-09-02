@@ -1,11 +1,18 @@
 ---
 slug: /misc/hire-flutterflow-developer
 title: Hire FlutterFlow Developer
-description: Learn how to hire a FlutterFlow Developer.
+description: >-
+  You can hire a skilled FlutterFlow Developer to build your app at:
+  https://flutterflow.io/work-with-developers.
 sidebar_position: 1
-keywords: [Hire FlutterFlow Developer, FlutterFlow Expert]
+keywords:
+  - Hire FlutterFlow Developer
+  - FlutterFlow Expert
+  - Misc
+tags:
+  - FlutterFlow
+  - Policies & Support
 ---
-
 # Hire FlutterFlow Developer
 
 You can hire a skilled FlutterFlow Developer to build your app at: https://flutterflow.io/work-with-developers.
@@ -38,19 +45,19 @@ To get matched with developers based on your project requirements, follow the st
 1. Create or log into your FlutterFlow account.
 
     ![login-ff-2.png](imgs/login-ff-2.png)
-    
+
 2. Fill out your project details, including features, budget, geo, and language preferences.
-    
+
     ![project-details.png](imgs/project-details.png)
-    
+
 3. Review your project proposal for accuracy and completeness.
-    
+
     ![review-project-proposal.png](imgs/review-project-proposal.png)
-    
+
 4. Confirm your project details to get matched with Developers based on your requirements.
-    
+
    ![confirm-developers.png](imgs/confirm-developers.png)
-    
+
 
 :::info[Please Note]
 
@@ -99,3 +106,7 @@ How are contracts and payments managed?
 Contracts and payments are directly negotiated between you and the Developer. FlutterFlow does not handle contracts or payments. All terms, including scope, costs, and timelines, are agreed upon by both parties. Payments are processed through the Developer’s preferred billing system.
 </p>
 </details>
+
+## Related documentation
+
+See [Additional Resources To Get Help](/misc/additional-resources) for a related FlutterFlow workflow.

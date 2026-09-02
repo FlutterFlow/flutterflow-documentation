@@ -1,9 +1,18 @@
 ---
-keywords: ['database', 'listview', 'mode']
+keywords:
+  - database
+  - listview
+  - mode
 slug: /troubleshooting/backend/listview-gray-box-and-red-screen-errors
 title: ListView Gray Box and Red Screen Errors
+description: >-
+  When loading a list of items from the database, you might encounter a gray box
+  or red error screen.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Backend
 ---
-
 # ListView Gray Box and Red Screen Errors
 
 When loading a list of items from the database, you might encounter a gray box or red error screen. This article explains the possible causes and how to resolve them.
@@ -36,10 +45,10 @@ A **gray box** usually indicates that the backend query failed to return results
     - **Run mode**: Displays a gray box when the query fails.
     - **Test mode**: Shows a red screen with a specific error message.
 
-        **Example: Working Query with No Results**  
+        **Example: Working Query with No Results**
         ![Working Query](../assets/20250430121239492027.png)
 
-        **Example: Failed Query**  
+        **Example: Failed Query**
         ![Failed Query](../assets/20250430121239708989.png)
 
 3. **Check for Null Values in the Data**
@@ -54,7 +63,7 @@ A **gray box** usually indicates that the backend query failed to return results
 
         **Example: Null Field Causing Error**
 
-        ![Null Field Example](../assets/20250430121240227391.png)  
+        ![Null Field Example](../assets/20250430121240227391.png)
         ![Date Formatting Error](../assets/20250430121240508011.png)
 
     :::note
@@ -79,3 +88,6 @@ A **gray box** usually indicates that the backend query failed to return results
 - Always configure **empty states** and apply **visibility rules** to handle null or missing data gracefully.
 :::
 
+## Related documentation
+
+See [ListView Returning Only One Item](/troubleshooting/backend/listview-returning-only-one-item) for a related FlutterFlow workflow.

@@ -1,11 +1,17 @@
 ---
 slug: flippable-card
 title: Flippable Card
-tags: [Layout Elements, Components]
-keywords: [Flippable Card, Layout Element, Component, Widget]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Flippable Card
+  - Layout Element
+  - Component
+  - Widget
 description: Learn how to add Flippable Card widget in your FlutterFlow app.
 ---
-
 # FlippableCard
 The FlippableCard widget provides the visual interaction called 'Flip card animation'. Initially, it shows the front side of the card, and when you tap on it, it shows the back side.
 
@@ -16,9 +22,8 @@ You could use this widget to show and hide details of an item (e.g., credit card
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LZAcR5zEXTZKvOpNEWWx?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LZAcR5zEXTZKvOpNEWWx?embed&show_copy_link=true" title="Flippable Card interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -51,9 +56,8 @@ To add the FlippableCard widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/bflCPrd9dwZZH7rrDDU4?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/bflCPrd9dwZZH7rrDDU4?embed&show_copy_link=true" title="Flippable Card interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -91,9 +95,8 @@ To change the flip direction:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/GnyuJgdxLVatkROyWGEk?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/GnyuJgdxLVatkROyWGEk?embed&show_copy_link=true" title="Flippable Card interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -127,9 +130,8 @@ To change the flip animation duration:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BUNRQ05cQIv4eAW8QZpk?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BUNRQ05cQIv4eAW8QZpk?embed&show_copy_link=true" title="Flippable Card interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -151,3 +153,7 @@ To change the flip animation duration:
 ### Disable flip on tap
 
 By default, the card flips when you tap on it. To disable this behavior, move to the **properties panel > Flippable Card Properties** > disable **Flip on Tap** toggle.
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

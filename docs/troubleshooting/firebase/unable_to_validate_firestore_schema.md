@@ -1,14 +1,23 @@
 ---
-keywords: ['schema', 'database', 'firestore']
+keywords:
+  - schema
+  - database
+  - firestore
 slug: /troubleshooting/firebase/unable-to-validate-firestore-schema
 title: Unable to Validate Firestore Schema
+description: >-
+  When trying to validate your Firestore Schema, you may encounter the error as
+  seen in the image below: Troubleshooting Steps: 1.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
 ---
-
 # Unable to Validate Firestore Schema
 
-When trying to validate your Firestore Schema, you may encounter the error as seen in the image below:  
+When trying to validate your Firestore Schema, you may encounter the error as seen in the image below:
 
-![](../assets/20250430121304770472.png)
+![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121304770472.png)
 
 **Troubleshooting Steps:**
 
@@ -16,13 +25,13 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
     Ensure that you have already created a Firestore database in your Firebase project.
 
-    ![](../assets/20250430121305056379.png)
+    ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121305056379.png)
 
 2. **Check the Database Mode**
 
     A database in Test Mode may not work properly for FlutterFlow integration.
 
-    :::note 
+    :::note
     After creating the database in Test Mode, there is no direct visual option to switch to Production Mode. You need to update the Firebase security rules manually. However, if you deploy the rules from FlutterFlow, this step is handled automatically.
     :::
 
@@ -34,15 +43,15 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
       You will see something like this:
 
-      ![](../assets/20250430121305295728.png)
+      ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121305295728.png)
 
       Update the rules as needed.
 
-      :::note 
+      :::note
       Ensure that you specify the correct `rules_version` and verify your configuration.
       :::
 
-      ![](../assets/20250430121305526883.png)
+      ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121305526883.png)
 
       4. Click **Publish** to apply the changes.
 
@@ -62,13 +71,13 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
       If you don't see these roles assigned, you need to complete this step:
 
-      ![](../assets/20250430121305771267.png)
+      ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121305771267.png)
 
 4. Ensure you have at least one collection created in FlutterFlow
 
     In FlutterFlow, select the **Firestore** tab from the left menu. If no collections are listed, create at least one collection.
 
-    ![](../assets/20250430121306066982.png)
+    ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121306066982.png)
 
 5. **Confirm that your collections have documents**
 
@@ -79,9 +88,9 @@ When trying to validate your Firestore Schema, you may encounter the error as se
 
     If no documents exist, add at least one:
 
-    ![](../assets/20250430121306294908.png)
+    ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121306294908.png)
 
-    ![](../assets/20250430121306553330.png)
+    ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121306553330.png)
 
 6. **Deploy Firestore rules from FlutterFlow**
 
@@ -91,6 +100,8 @@ When trying to validate your Firestore Schema, you may encounter the error as se
       2. Scroll down to **Firestore Rules**.
       3. Select **Deploy** (or **Redeploy** if needed).
 
-      ![](../assets/20250430121306835223.png)
+      ![Unable to Validate Firestore Schema in FlutterFlow](../assets/20250430121306835223.png)
 
+## Related documentation
 
+See [Client Access to Firestore Expired](/troubleshooting/firebase/client-access-to-firestore-expired) for a related FlutterFlow workflow.

@@ -1,12 +1,19 @@
 ---
 slug: /concepts/custom-code/cloud-functions
 title: Cloud Functions
-description: Learn how to use Cloud Functions in your FlutterFlow app for serverless backend functionality.
-tags: [Cloud Functions, Serverless, Integration]
+description: >-
+  Learn how to use Cloud Functions in your FlutterFlow app for serverless
+  backend functionality.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 7
-keywords: [FlutterFlow, Cloud Functions, Serverless, Integration]
+keywords:
+  - FlutterFlow
+  - Cloud Functions
+  - Serverless
+  - Integration
 ---
-
 # Cloud Functions
 
 Cloud Functions let you run backend code in response to events and API requests without managing your own servers. They are commonly used for tasks such as processing data, calling external APIs, sending notifications, running AI workflows, or securely handling secrets and business logic.
@@ -20,7 +27,7 @@ FlutterFlow supports both Firebase Cloud Functions and Supabase Edge Functions, 
 FlutterFlow includes built-in support for creating, editing, deploying, and triggering Firebase Cloud Functions directly from the platform.
 
 :::note
-Read up on some interesting use cases of 
+Read up on some interesting use cases of
 [**Cloud Functions**](https://firebase.google.com/docs/functions/use-cases).
 :::
 
@@ -28,8 +35,7 @@ Read up on some interesting use cases of
 
 Let's see how to add a *Cloud Function* by building an example that generates logos based on user prompts. Here's how it looks:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/9ccf3523d9ce4564a712b6abad926b30?sid=ca4872c1-4cdb-4ea4-8b60-7d9011bef33e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Cloud Functions interactive tutorial" src="https://www.loom.com/embed/9ccf3523d9ce4564a712b6abad926b30?sid=ca4872c1-4cdb-4ea4-8b60-7d9011bef33e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -46,10 +52,10 @@ Here are the step-by-step instructions to build such an example:
 
 **1. Add page state variables**
 
-For this example, you'll need to set up two 
+For this example, you'll need to set up two
 [Page State variables](../../resources/ui/pages/page-lifecycle.md#creating-a-page-state):
 
-1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a 
+1. **generatingImage (*****Type: Boolean*****)**: This is used to control the visibility of a
 loading indicator during the logo creation process. Its value is set to *True* before initiating the API call and switched to *False* once the logo generation is complete.
 2. **logoImage (*****Type: ImagePath*****)**: This is used to hold the generated logo image. After a successful API call, the retrieved image URL is stored here, allowing the logo to be displayed in the Image widget.
 
@@ -73,8 +79,8 @@ Few things to note here:
 
 To create and deploy a *Cloud Function* :
 
-1. Click on the **Cloud Functions** from the 
-[**Navigation Menu**](../../../docs/intro/ff-ui/builder.md#navigation-menu) (left side of your 
+1. Click on the **Cloud Functions** from the
+[**Navigation Menu**](../../../docs/intro/ff-ui/builder.md#navigation-menu) (left side of your
    screen).
 2. Click **+ Add**. This will add the default `newCloudFunction`.
 3. Set the **Cloud Function Name**.
@@ -82,7 +88,7 @@ To create and deploy a *Cloud Function* :
 #### Boilerplate Settings
 
 On the right side, you can configure the following Boilerplate Settings:
-1. **Memory Allocation**: You can specify the amount of memory your function should have when 
+1. **Memory Allocation**: You can specify the amount of memory your function should have when
     it's executed based on its complexity and needs. This setting is crucial as it influences the function's performance and the cost of running it. More memory can enhance performance for intensive tasks but also increase costs.
 
 2. **Timeout (s)**: This refers to the maximum amount of time, in seconds, that a function is allowed to run before it is automatically terminated. If your function takes longer to execute, increasing the timeout setting may be necessary. However, be aware that longer timeouts can incur higher costs since billing is based on execution time.
@@ -93,20 +99,20 @@ On the right side, you can configure the following Boilerplate Settings:
 
 #### Configuring Input & Output
 
-Your cloud function might need some data to process and return the result. You can do so 
+Your cloud function might need some data to process and return the result. You can do so
 by configuring the input and output.
 
-1. To receive output from a Cloud Function, enable the **Return Value** and choose an 
+1. To receive output from a Cloud Function, enable the **Return Value** and choose an
         appropriate Type for the output, like 'String' for text. For this example, set it to *ImagePath* to get the URL of the generated logo.
 
 2. To input data: Click **+ Add parameters**. **Name** the parameter, select its **Type**, choose single or multiple items (**Is List** option), and uncheck **Nullable** if the value can be null. For this example, add a parameter 'prompt' with *Type* set to *String*.
-3. When using [Custom Data Types](../../resources/data-representation/custom-data-types.md), 
+3. When using [Custom Data Types](../../resources/data-representation/custom-data-types.md),
    Cloud Function expects JSON, matching each field in the Data Type to a key-value pair in the JSON. If the Data Type is a list, the function expects a list of JSONs. For example, for a custom data type named 'Person' with fields 'Name' and 'Age,' the function should return:
 
  ```
         //JSON:
         { "Name": "John", "Age": 30 }
-		
+
         //Example Cloud Function Code:
         return {
           "name": person.name,
@@ -115,12 +121,12 @@ by configuring the input and output.
 ```
 
 For a list, the function should return:
-		
-        
+
+
 ```
         //JSON
          [ { "Name": "John", "Age": 30 }, { "Name": "Jane", "Age": 25 } ]
-		 
+
         //Example Cloud Function Code:
         return filteredpersons.map(filteredpersons => {
           return {
@@ -129,12 +135,12 @@ For a list, the function should return:
           };
         });
 ```
-    
+
 #### To deploy
-1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated 
+1. Click the `[</>]` icon to view the boilerplate code; a popup will open with the updated
 code, and then click **`</> Copy to Editor`**. **Tip**: To see if you are able to deploy the cloud function (before adding your own code), proceed directly with steps 8 and 9.
 
-2. Inside the code editor, add the cloud function code. **Tip**: You can copy the boilerplate code 
+2. Inside the code editor, add the cloud function code. **Tip**: You can copy the boilerplate code
    to [ChatGPT](https://chat.openai.com/) and ask it to write the desired code based on that.
 3. Click **Save Cloud Function**.
 4. Click **Deploy**.
@@ -214,8 +220,7 @@ exports.logoMaker = functions.region('us-central1')
 Always regenerate and use the updated boilerplate code or adjust your own code accordingly whenever there are changes in the code, boilerplate settings, or input/output parameters.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1dc13a747b6b4f6d9c9f6d3e1721e488?sid=a756ed68-f20a-4723-8a89-bc1462ede168" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Cloud Functions interactive tutorial" src="https://www.loom.com/embed/1dc13a747b6b4f6d9c9f6d3e1721e488?sid=a756ed68-f20a-4723-8a89-bc1462ede168" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 <p></p>
@@ -233,8 +238,7 @@ To add a dependency, open the `package.json` file and specify your package in th
 
 The newly created *Cloud Function* will be available as an action when you are adding one. For this example, on click of a button, we'll first set the *generatingImage*to *True* and then trigger the **Cloud Function Action**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/5c712863f95c4fcabd5c3851a3cbe56b?sid=a7ac875f-11b5-4b5a-b3e2-8ae03ce49571" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Cloud Functions interactive tutorial" src="https://www.loom.com/embed/5c712863f95c4fcabd5c3851a3cbe56b?sid=a7ac875f-11b5-4b5a-b3e2-8ae03ce49571" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <br></br>
 
@@ -244,8 +248,7 @@ To use the *Could Function* result, ensure you provide the *Action Output Variab
 
 For this example, we'll use the result (i.e., generated logo image URL) and set it to *logoImage* variable. Here's how you do it:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Cloud Functions interactive tutorial" src="https://www.loom.com/embed/0c4306c1951a4d9099aa96324c7561af?sid=69709110-ad60-4e98-bf53-36a50a99e425" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ### Testing Cloud Functions
 
@@ -362,9 +365,8 @@ Here's how it looks:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/S5sKmWGzxHcPuxZOQWG6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/S5sKmWGzxHcPuxZOQWG6?embed&show_copy_link=true" title="Cloud Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -408,9 +410,8 @@ Here's how it looks:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/gxwBKzt11FhLjifCUdWV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/gxwBKzt11FhLjifCUdWV?embed&show_copy_link=true" title="Cloud Functions interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

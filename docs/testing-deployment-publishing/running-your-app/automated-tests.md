@@ -1,17 +1,26 @@
 ---
 slug: /testing/automated-tests
 title: Automated Tests
-description: Discover how to effectively utilize automated testing in FlutterFlow to ensure your app performs as intended.
-tags: [Automated Tests, Testing]
+description: >-
+  Discover how to effectively utilize automated testing in FlutterFlow to ensure
+  your app performs as intended.
+tags:
+  - FlutterFlow
+  - Testing
 sidebar_position: 3
-keywords: [Automated Tests, Testing, FlutterFlow]
+keywords:
+  - Automated Tests
+  - Testing
+  - FlutterFlow
+  - create an automated test for a FlutterFlow app
+ai_queries:
+  - create an automated test for a FlutterFlow app
 ---
-
 # Automated Tests
 
 Automated Tests allow you to test the behavior and appearance of your app to ensure all features are working as expected. It’s essentially like testing a real application without human intervention.
 
-Internally, when you write tests, FlutterFlow generates code for the [Flutter integration testing framework](https://docs.flutter.dev/testing/integration-tests), which you can download and test locally or through services like [Firebase Test Lab](https://firebase.google.com/docs/test-lab). 
+Internally, when you write tests, FlutterFlow generates code for the [Flutter integration testing framework](https://docs.flutter.dev/testing/integration-tests), which you can download and test locally or through services like [Firebase Test Lab](https://firebase.google.com/docs/test-lab).
 
 :::warning[Legacy testing]
 Automated Tests are now considered a legacy testing option in FlutterFlow. For new testing workflows, we recommend using [**Test Pilot**](test-pilot.md), which lets you create and run AI-powered QA tests using natural-language instructions.
@@ -105,9 +114,8 @@ Here are the step-by-step instructions on adding tests:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/RjJPy7zOBCu1QAVi8h0p?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/RjJPy7zOBCu1QAVi8h0p?embed&show_copy_link=true" title="Automated Tests interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -134,9 +142,8 @@ Here are the step-by-step instructions on adding tests:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/GF5My9t7gjEGfSEdgSXR?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/GF5My9t7gjEGfSEdgSXR?embed&show_copy_link=true" title="Automated Tests interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

@@ -1,0 +1,167 @@
+{
+  "siteUrl": "https://docs.flutterflow.io",
+  "maximumTopicPackCharacters": 500000,
+  "performance": {
+    "maximumJavaScriptGzipBytes": 250000,
+    "maximumHtmlBytes": 250000,
+    "maximumReferencedMediaBytes": 2000000
+  },
+  "excludedRoutePrefixes": ["/blog", "/search", "/tags"],
+  "slugOverrides": {
+    "docs/resources/ui/widgets/composing-widgets/composing-widgets.md": "/resources/ui/widgets/composing-widgets"
+  },
+  "titleOverrides": {
+    "/": "Getting Started with FlutterFlow",
+    "/misc/enterprise": "FlutterFlow Enterprise",
+    "/resources/control-flow-overview": "Control Flow Overview",
+    "/resources/data-representation": "Data Representation Overview",
+    "/resources/ui": "FlutterFlow UI Overview",
+    "/troubleshooting/enterprise": "Enterprise Troubleshooting"
+  },
+  "tagTaxonomy": {
+    "/accounts-billing": ["FlutterFlow", "Accounts & Billing"],
+    "/best-practices": ["FlutterFlow", "Best Practices"],
+    "/before-you-begin": ["FlutterFlow", "Getting Started"],
+    "/collaboration": ["FlutterFlow", "Collaboration"],
+    "/concepts": ["FlutterFlow", "Concepts"],
+    "/deployment": ["FlutterFlow", "Deployment"],
+    "/designer": ["FlutterFlow", "Designer", "AI"],
+    "/exporting": ["FlutterFlow", "Code Export"],
+    "/flutterflow-cli": ["FlutterFlow", "CLI", "AI"],
+    "/flutterflow-ui": ["FlutterFlow", "FlutterFlow UI"],
+    "/generated-code": ["FlutterFlow", "Generated Code"],
+    "/integrations": ["FlutterFlow", "Integrations"],
+    "/marketplace": ["FlutterFlow", "Marketplace"],
+    "/misc": ["FlutterFlow", "Policies & Support"],
+    "/quickstart": ["FlutterFlow", "Getting Started"],
+    "/resources": ["FlutterFlow", "Resources"],
+    "/roadmap": ["FlutterFlow", "Getting Started"],
+    "/testing": ["FlutterFlow", "Testing"],
+    "/troubleshooting": ["FlutterFlow", "Troubleshooting"],
+    "/": ["FlutterFlow", "Getting Started"]
+  },
+  "generatedIndexes": [
+    {
+      "route": "/concepts",
+      "title": "FlutterFlow concepts",
+      "description": "Conceptual guides for designing application behavior, state, navigation, custom code, and advanced FlutterFlow workflows."
+    },
+    {
+      "route": "/integrations",
+      "title": "FlutterFlow integrations",
+      "description": "Guides for connecting FlutterFlow projects to authentication, databases, payments, AI services, analytics, and other third-party products."
+    },
+    {
+      "route": "/resources",
+      "title": "FlutterFlow resources",
+      "description": "Reference documentation for FlutterFlow projects, user interface elements, data, actions, and platform capabilities."
+    }
+  ],
+  "topicPacks": [
+    {
+      "slug": "getting-started",
+      "title": "Getting started and platform basics",
+      "description": "Create a first project and learn the FlutterFlow builder, project model, and essential workflows.",
+      "prefixes": ["/", "/quickstart", "/roadmap", "/before-you-begin", "/flutterflow-ui"]
+    },
+    {
+      "slug": "ai-and-agent-development",
+      "title": "AI and agent-assisted development",
+      "description": "Use FlutterFlow with Codex, Claude, MCP, the FlutterFlow CLI, Designer, GenUI, and runtime AI Agents.",
+      "prefixes": ["/flutterflow-cli", "/concepts/ai-agent", "/concepts/genui", "/designer", "/integrations/ai-agents"]
+    },
+    {
+      "slug": "ui-design-and-navigation",
+      "title": "UI, design systems, responsive layout, and navigation",
+      "description": "Build pages and widgets, apply themes, create responsive layouts, and configure navigation and routing.",
+      "exactRoutes": ["/concepts"],
+      "prefixes": ["/concepts/design-system", "/concepts/layouts", "/concepts/navigation", "/concepts/animations"]
+    },
+    {
+      "slug": "widget-and-component-reference",
+      "title": "Widget, page, and component reference",
+      "description": "Reference for FlutterFlow pages, components, layout widgets, form widgets, charts, media, and other user-interface elements.",
+      "prefixes": ["/resources/ui"]
+    },
+    {
+      "slug": "data-backends-and-auth",
+      "title": "Data, backends, state, and authentication",
+      "description": "Model data, manage state, call APIs, and connect Firebase, Supabase, authentication, and backend services.",
+      "prefixes": ["/resources/data-representation", "/resources/backend-logic", "/resources/backend-query", "/concepts/state-management", "/integrations/firebase", "/integrations/supabase", "/integrations/authentication", "/integrations/api"]
+    },
+    {
+      "slug": "actions-custom-code-and-integrations",
+      "title": "Actions, custom code, and integrations",
+      "description": "Configure action flows, extend FlutterFlow with custom code, and connect third-party services.",
+      "prefixes": ["/resources/control-flow-concepts", "/resources/control-flow-overview", "/resources/forms", "/resources/functions", "/resources/time-based-logic", "/concepts/custom-code", "/concepts/app-event-integration", "/concepts/component-catalog", "/concepts/genui-chat", "/concepts/tools", "/concepts/advanced", "/best-practices"]
+    },
+    {
+      "slug": "app-behavior-and-platform-concepts",
+      "title": "App behavior and platform concepts",
+      "description": "Work with alerts, app events, file handling, accessibility, localization, notifications, and other application behavior.",
+      "prefixes": ["/concepts/alerts", "/concepts/app-events", "/concepts/file-handling", "/concepts/accessibility", "/concepts/localization", "/concepts/notifications"]
+    },
+    {
+      "slug": "integrations-reference",
+      "title": "Integrations reference",
+      "description": "Connect FlutterFlow with Firebase, Supabase, authentication, payments, AI, analytics, search, ads, maps, and other services.",
+      "prefixes": ["/integrations"]
+    },
+    {
+      "slug": "projects-and-settings-reference",
+      "title": "Projects, settings, and style reference",
+      "description": "Manage FlutterFlow projects, project settings, project APIs, libraries, assets, and style conventions.",
+      "exactRoutes": ["/resources"],
+      "prefixes": ["/resources/projects", "/resources/style-guide"]
+    },
+    {
+      "slug": "testing-export-and-deployment",
+      "title": "Testing, export, generated code, and deployment",
+      "description": "Test FlutterFlow apps, inspect or export generated code, and deploy to web and app stores.",
+      "prefixes": ["/testing", "/exporting", "/generated-code", "/deployment"]
+    },
+    {
+      "slug": "troubleshooting",
+      "title": "Troubleshooting",
+      "description": "Diagnose FlutterFlow build, backend, authentication, API, notification, and deployment problems.",
+      "prefixes": ["/troubleshooting"]
+    },
+    {
+      "slug": "accounts-collaboration-and-marketplace",
+      "title": "Accounts, collaboration, marketplace, and policies",
+      "description": "Manage billing and teams, collaborate on projects, use the Marketplace, and find policy and support information.",
+      "prefixes": ["/accounts-billing", "/collaboration", "/marketplace", "/misc"]
+    }
+  ],
+  "metadata": {
+    "titleMinCharacters": 3,
+    "titleMaxCharacters": 65,
+    "descriptionMinCharacters": 50,
+    "descriptionMaxCharacters": 180,
+    "minimumTags": 2,
+    "minimumKeywords": 3
+  },
+  "freshness": {
+    "defaultMaximumAgeDays": 365,
+    "volatileMaximumAgeDays": 180,
+    "volatilePrefixes": [
+      "/accounts-billing",
+      "/deployment",
+      "/flutterflow-cli",
+      "/integrations",
+      "/testing",
+      "/troubleshooting"
+    ],
+    "owners": [
+      {"prefix": "/troubleshooting", "owner": "Support documentation"},
+      {"prefix": "/integrations", "owner": "Integrations documentation"},
+      {"prefix": "/deployment", "owner": "Release documentation"},
+      {"prefix": "/testing", "owner": "Quality documentation"},
+      {"prefix": "/flutterflow-cli", "owner": "Developer tools documentation"},
+      {"prefix": "/designer", "owner": "Designer documentation"},
+      {"prefix": "/accounts-billing", "owner": "Growth documentation"},
+      {"prefix": "/marketplace", "owner": "Marketplace documentation"},
+      {"prefix": "/", "owner": "Product documentation"}
+    ]
+  }
+}

@@ -2,11 +2,17 @@
 slug: /integrations/authentication/firebase/email-login
 title: Email Login
 description: Learn how to add Email Login in your FlutterFlow app.
-tags: [Email Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 3
-keywords: [FlutterFlow, Email Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Email Login
+  - Authentication
+  - Firebase
 ---
-
 # Email Login using Firebase
 
 :::info[Prerequisites]
@@ -33,7 +39,7 @@ Before getting started with this section:
 
 In FlutterFlow, you can utilize the Page Templates feature to create a new
 authentication page that includes both a "Create Account" component and a "Log
-In" component. 
+In" component.
 
 This setup aligns with Firebase's authentication process, which
 requires users to first create an account using their email and then allows them
@@ -95,7 +101,7 @@ to [**Authentication Methods**](../authentication-methods.md)
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/3aDUDdUKXWmpBPiTO5oe?embed&show_copy_link=true"
         title="Send Email Verification Link"
         style={{
@@ -116,7 +122,7 @@ to [**Authentication Methods**](../authentication-methods.md)
 </div>
 
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 The user should receive an email verification link in their inbox. Upon successful verification,
@@ -157,12 +163,3 @@ To let users log out of your app, you can use the [**Logout**](auth-actions.md#l
 To verify that you have successfully added the email authentication and that
 users are being created, you can head over to your **Firebase project >
 Authentication > Users** and verify the user entries.
-
-
-
-
-
-
-
-
-

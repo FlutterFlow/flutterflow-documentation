@@ -1,7 +1,19 @@
 ---
-keywords: ['homepage', 'run mode', 'authentication state', 'session data']
+keywords:
+  - homepage
+  - run mode
+  - authentication state
+  - session data
 slug: /troubleshooting/authentication/app-starts-from-homepage-in-run-mode
 title: App Starts from HomePage in Run Mode
+description: >-
+  If your app always redirects to the HomePage in Run Mode , even after a
+  previous login, it's likely caused by retained authentication state or cached
+  session data in your browser.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
 # App Starts from HomePage in Run Mode
 
@@ -21,6 +33,6 @@ If the problem continues, consider checking your authentication flow and session
 When using **Run Mode**, FlutterFlow preserves your **authentication state** across sessions. To test your app from a clean state, add a **"Log Out"** button on your HomePage that triggers the `Sign Out` action. This ensures the app starts from the login screen during your next test.
 :::
 
+## Related documentation
 
-
-
+See [Check Firebase Login Method](/troubleshooting/authentication/check-firebase-login-method) for a related FlutterFlow workflow.

@@ -1,12 +1,18 @@
 ---
 slug: /integrations/authentication/supabase/apple
-title: Apple Login
+title: 'Apple Login: Supabase Auth'
 description: Learn how to integrate Apple Login of Supabase Auth into your FlutterFlow app.
-tags: [Apple Authentication, Authentication, Supabase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 4
-keywords: [FlutterFlow, Apple Authentication, Authentication, Supabase]
+keywords:
+  - FlutterFlow
+  - Apple Authentication
+  - Authentication
+  - Supabase
 ---
-
 # Apple Login
 
 Adding Apple Sign-In with Supabase offers a convenient, secure, and privacy-friendly way for users to sign up or log in to your app using their Apple ID.
@@ -18,9 +24,8 @@ This guide will walk you through the steps necessary to integrate Apple login wi
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/U7LeqAqnvkWOTQ5yl4zw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/U7LeqAqnvkWOTQ5yl4zw?embed&show_copy_link=true" title="Apple Login: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -44,7 +49,7 @@ This guide will walk you through the steps necessary to integrate Apple login wi
 Before adding Apple Sign-In to your FlutterFlow project, make sure you have:
 
 1. Completed all steps in the [**Supabase setup**](../../supabase/supabase-setup.md)
-2. Completed [**Initial setup**](initial-setup.md) 
+2. Completed [**Initial setup**](initial-setup.md)
    required for authentication.
 3. Created an [**Apple account**](https://account.apple.com/account).
 4. An active [**Apple Developer Account**](https://developer.apple.com/programs/enroll/). Read more about the [**Apple Developer Program**](https://developer.apple.com/programs/) and how to sign up.
@@ -73,9 +78,8 @@ To register email sources, open the [**Services**](https://developer.apple.com/a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/UbuCINcuJsBBFv2plsqE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/UbuCINcuJsBBFv2plsqE?embed&show_copy_link=true" title="Apple Login: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -110,9 +114,8 @@ If you haven't created an App ID yet, follow the instructions provided by Apple 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4iw5sP7Qe6ALupzII7qO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4iw5sP7Qe6ALupzII7qO?embed&show_copy_link=true" title="Apple Login: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -148,9 +151,8 @@ To obtain the secret key, use the tool provided under [**Configuration section**
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ycK9sSxVusys6jZUpDvt?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ycK9sSxVusys6jZUpDvt?embed&show_copy_link=true" title="Apple Login: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -215,9 +217,8 @@ If you are using Android Studio, right-click on the **ios** folder, find **Fl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/cb9e1e3605d94636bb7893e23043b3a8?sid=99c30fc5-8db1-4f72-a937-341a772c3290"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/cb9e1e3605d94636bb7893e23043b3a8?sid=99c30fc5-8db1-4f72-a937-341a772c3290" title="Apple Login: Supabase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

@@ -2,19 +2,27 @@
 slug: /resources/backend-query/document-from-reference
 title: Document From Reference
 description: Learn how to retrieve a document from a reference in your FlutterFlow app.
-tags: [Document, Reference, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Query
 sidebar_position: 3
-keywords: [Document, Reference, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Document
+  - Reference
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Document from Reference
 
 This backend query would help you in retrieving information from a document reference. You will require the **Document from Reference** query if you have passed a document reference to a different page of the app and want to retrieve the actual document information from the reference.
 
 :::info[Prerequisites]
 In order to use this backend query, you should have:
-* Completed all the steps of 
-[**Firebase Setup**](../../../../../docs/ff-integrations/firebase/connect-to-firebase-setup.md) for 
+* Completed all the steps of
+[**Firebase Setup**](../../../../../docs/ff-integrations/firebase/connect-to-firebase-setup.md) for
   your project.
 * At least one **Firestore Collection** is defined in your project.
 :::
@@ -35,9 +43,8 @@ Go to your project page on FlutterFlow and follow the steps below to define a **
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/JysXfUz97eaNKO3IIunP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JysXfUz97eaNKO3IIunP?embed&show_copy_link=true" title="Document From Reference interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -74,9 +81,8 @@ You can follow similar steps for using the record data on the other widgets as w
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/4g6osWEytpPIaVkc3uCZ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4g6osWEytpPIaVkc3uCZ?embed&show_copy_link=true" title="Document From Reference interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

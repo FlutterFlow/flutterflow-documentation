@@ -1,11 +1,22 @@
 ---
 title: Create & Test API Calls
 slug: /resources/backend-logic/create-test-api
-tag: [API Calls]
-keywords: [API Calls, FlutterFlow]
+tag:
+  - API Calls
+keywords:
+  - API Calls
+  - FlutterFlow
+  - Create & Test API Calls
+  - create and test a REST API call in FlutterFlow
 sidebar_position: 2
+description: 'In this guide, you''ll learn how to create and test API calls in FlutterFlow.'
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Logic
+ai_queries:
+  - create and test a REST API call in FlutterFlow
 ---
-
 # Create & Test API Call
 
 In this guide, you'll learn how to create and test API calls in FlutterFlow. Integrating API calls allows your app to interact with external services, bringing in real-time data and functionality that enhances your app's capabilities.
@@ -21,9 +32,8 @@ Simply select API Calls from the left navigation menu, click the **+ Add** butto
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/JbgiAq8d2VzqYHuXH4DN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JbgiAq8d2VzqYHuXH4DN?embed&show_copy_link=true" title="Create & Test API Calls interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -74,8 +84,7 @@ If you selected `GET` or `DELETE` as the method type, follow the steps below:
 After making any changes, you must save the API call.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/ec61a02366504d12a3200426d4738c54?sid=3f41c946-6e53-4e0b-97e2-878178e546bd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/ec61a02366504d12a3200426d4738c54?sid=3f41c946-6e53-4e0b-97e2-878178e546bd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -84,8 +93,7 @@ In the above demo, a `GET` API call is defined to fetch users' data from [REQ 
 
 A demo of using a dynamic URL in a GET request is as follows:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e19f05e3fc6542b78c2871bff1997033?sid=d688dbb6-dc4d-4dc1-bb3f-438069b5f6cb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/e19f05e3fc6542b78c2871bff1997033?sid=d688dbb6-dc4d-4dc1-bb3f-438069b5f6cb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -108,8 +116,7 @@ If you have selected **POST request**, follow the steps below:
 After making any changes, you must save the API call.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4d421b9a216d4655aed57fb63a963dc3?sid=1a86b3dd-4f06-43e8-a771-3e35a6fb2308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/4d421b9a216d4655aed57fb63a963dc3?sid=1a86b3dd-4f06-43e8-a771-3e35a6fb2308" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -135,8 +142,7 @@ To create the API Group:
 6. Open the newly created API group, and click on the **+ Add API Call**.
 7. Add the API call as you would normally do. **Note**: Inside the API endpoint, enter the URL portion that starts after the base URL.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/081572e9e1a94d1ea83bee59f87a5125?sid=6ddb47aa-0054-47e8-8a5b-4bc03c8fb0c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/081572e9e1a94d1ea83bee59f87a5125?sid=6ddb47aa-0054-47e8-8a5b-4bc03c8fb0c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -162,8 +168,7 @@ To import API call definitions:
 
 Here's an example of importing API calls in bulk, taken from [here](https://editor.swagger.io/).
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/074601859ba4430e97047dcdc60eabf6?sid=0446b026-eb75-4a3d-bb51-543668a06bfe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/074601859ba4430e97047dcdc60eabf6?sid=0446b026-eb75-4a3d-bb51-543668a06bfe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 ## Testing API calls
@@ -178,8 +183,7 @@ To test the API call along with its response, follow the steps below:
 4. Click **Test API Call** to trigger the API call. You'll notice that the status of the GET request is displayed, and if it's successful (status code `200`), the result returned from that request will also be displayed below.
 5. Any value of the JSON result can be accessed by [defining the JSON path](rest-api.md#json-path).
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7b84e0e372924547b4779bfae3c4daeb?sid=22f42516-d522-4362-9ae4-b4aac4947fc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/7b84e0e372924547b4779bfae3c4daeb?sid=22f42516-d522-4362-9ae4-b4aac4947fc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -190,8 +194,7 @@ The demo below shows the testing of creating a new user using a POST request. Th
 The testing of `PUT` and `PATCH` requests would also be similar to this.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931ef08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/4cd816e67a044604b80fb83748312a03?sid=e4ffd651-f97c-4478-94a4-e81f0931ef08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -226,9 +229,8 @@ Go to your project and follow the steps below to define the Action to any widget
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4c3412e806844b048dc8eb388bca45e0?sid=1408359c-f167-4b21-a8b4-d5803a21adb1"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4c3412e806844b048dc8eb388bca45e0?sid=1408359c-f167-4b21-a8b4-d5803a21adb1" title="Create & Test API Calls interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

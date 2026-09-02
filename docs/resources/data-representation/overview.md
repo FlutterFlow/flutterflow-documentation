@@ -1,17 +1,28 @@
 ---
 slug: /resources/data-representation
-title: Overview
-description: Explore the essentials of data representation in app development, focusing on the use of variables in FlutterFlow.
-tags: [Data Representation, FlutterFlow, Variables]
+title: Data Representation Overview
+description: >-
+  Explore the essentials of data representation in app development, focusing on
+  the use of variables in FlutterFlow.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Resources
+  - Data
 sidebar_position: 0
-keywords: [Data Representation, FlutterFlow, Variables, Data Types, Global Data, Encapsulation]
+keywords:
+  - Data Representation
+  - FlutterFlow
+  - Variables
+  - Data Types
+  - Global Data
+  - Encapsulation
 ---
-
 # Overview
-Data representation is a fundamental concept in app development. It refers to the methods and structures used to store and manipulate the data. The way data is structured can greatly influence how efficiently an app performs tasks.
+Data representation describes how an app models, stores, reads, and changes values. In FlutterFlow, the main choices are a value's data type, where it comes from, and the scope in which it can be used.
 
 ## Variable
-In FlutterFlow, variables are key to managing dynamic data, ensuring your app remains interactive and responsive. They enable you to capture user inputs, track changes, and share data across different parts of your app.
+Variables store or expose values used by widgets and actions. State variables are user-defined and scoped to the app, page, or component. Other values can come from widget state, action outputs, backend queries, parameters, global properties, or constants.
 
 :::info
 Dig deeper into **[variables and variable scopes](variables.md)**.
@@ -29,11 +40,11 @@ Learn more about primitive and composite data types in this [**detailed guide**]
 
 ## Data mutability
 
-All variables in FlutterFlow are mutable. This means you can change their values at runtime based on user interactions or other events in your app. FlutterFlow also supports immutable data, such as [**Constants**](constants.md) that cannot be changed once they have been set.
+User-defined App, Page, and Component State variables are mutable through their corresponding update actions. Parameters, action outputs, backend-query results, and Global Properties are values you read rather than state you update directly. [**Constants**](constants.md) are configured in the builder and cannot be reassigned by the running app.
 
 ## Global Properties
 
-Global properties in FlutterFlow are built-in variables that you can use across your app, but they cannot be created or modified by users. Learn how to leverage these [**predefined properties**](global-properties.md) to simplify common tasks.
+Global properties are built-in, read-only values supplied by FlutterFlow, such as the current time, platform, route, or screen size. Learn how to use these [**predefined properties**](global-properties.md).
 
 ## Encapsulation
 
@@ -46,11 +57,11 @@ FlutterFlow supports the principles of encapsulation through its visual developm
 1. **Custom Widgets and Components**: In FlutterFlow, you can create custom widgets or use built-in widgets that encapsulate specific functionalities. These widgets can include both logic and UI elements that are bundled together.
 
     For example, if you are creating a user profile page, you can create a custom component that includes the user's photo, name, and contact button. This component can be reused wherever a user profile needs to be displayed in the app, ensuring that changes to the profile layout or functionality are centralized within this widget.
-    
+
 2. **Backend Actions**: FlutterFlow allows you to define backend actions that can be called from different parts of your app. These actions can encapsulate complex logic, such as processing user input, interacting with databases, or calling external APIs.
-    
+
     By defining such actions, you can manage how data is processed and passed around in your applications. This helps in maintaining a clear separation between the UI and business logic, which is a core principle of encapsulation.
-    
+
 ### Benefits of Encapsulation in FlutterFlow
 
 - **Reusability**: Encapsulated components are reusable across different parts of the application without requiring duplication of widgets.

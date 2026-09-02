@@ -2,11 +2,18 @@
 slug: /integrations/designer/import-from-ff-designer
 title: Import from FF Designer
 description: Learn how to export screens from FF Designer and import them into FlutterFlow.
-tags: [designer, import, export, flutterflow]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Designer
 sidebar_position: 0
-keywords: [import from ff designer, export to flutterflow, copy design to flutterflow, ff designer workflow, design to flutterflow]
+keywords:
+  - import from ff designer
+  - export to flutterflow
+  - copy design to flutterflow
+  - ff designer workflow
+  - design to flutterflow
 ---
-
 # Import from FF Designer
 You can quickly bring your generated designs from [FF Designer](https://designer.flutterflow.io/) into FlutterFlow to continue building with real widgets, actions, and logic. This allows you to transform visual storyboards into fully functional app screens without recreating layouts manually.
 
@@ -37,9 +44,8 @@ FlutterFlow will recreate the layout structure using real widgets, preserving hi
     paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/YwyfxNr8bKWFpnYQacGp?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/YwyfxNr8bKWFpnYQacGp?embed&show_copy_link=true" title="Import from FF Designer interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -65,9 +71,8 @@ To import a single component, copy the component’s root element and paste it i
     paddingBottom: 'calc(52.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ls6ZG1o43pbinySRmzXV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ls6ZG1o43pbinySRmzXV?embed&show_copy_link=true" title="Import from FF Designer interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -86,4 +91,6 @@ To import a single component, copy the component’s root element and paste it i
 </div>
 <p></p>
 
+## Related documentation
 
+See [AdMob](/integrations/ads/admob) for a related FlutterFlow workflow.

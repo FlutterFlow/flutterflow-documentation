@@ -2,10 +2,16 @@
 slug: /integrations/payments/braintree
 title: Braintree
 description: Learn how to integrate Braintree payments in your FlutterFlow app.
-tags: [Payments, Integration]
-keywords: [FlutterFlow, Braintree, Payments, Integration]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Payments
+keywords:
+  - FlutterFlow
+  - Braintree
+  - Payments
+  - Integration
 ---
-
 # Braintree
 
 You can accept payments in your app using [Braintree](https://developer.paypal.com/braintree/docs/start/overview) (a service provided by PayPal) integration. This will also allow your users to pay directly using a credit card or using a service like PayPal, Google Pay, or Apple Pay
@@ -15,9 +21,8 @@ You can accept payments in your app using [Braintree](https://developer.paypal.c
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/cqy5e5piyZEodvs9Lrn5?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/cqy5e5piyZEodvs9Lrn5?embed&show_copy_link=true" title="Braintree interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -76,9 +81,8 @@ Follow the steps below to set up using Braintree:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G0nRJVKRvk8spKsyLeiq?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G0nRJVKRvk8spKsyLeiq?embed&show_copy_link=true" title="Braintree interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -104,9 +108,8 @@ Finally, click **Deploy** to upload the Cloud Functions required for processing 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/bEnzFFkVe3SR8FDLPkQi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/bEnzFFkVe3SR8FDLPkQi?embed&show_copy_link=true" title="Braintree interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -157,9 +160,8 @@ Make sure the user is authenticated before triggering the Braintree Payment Acti
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BiF5CcHTJBcU2brcLVVT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BiF5CcHTJBcU2brcLVVT?embed&show_copy_link=true" title="Braintree interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -193,9 +195,8 @@ If you want to keep only the Credit Card option on your checkout page, you'll ne
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/SMD1vtLJFXxG5AuJrgQS?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/SMD1vtLJFXxG5AuJrgQS?embed&show_copy_link=true" title="Braintree interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

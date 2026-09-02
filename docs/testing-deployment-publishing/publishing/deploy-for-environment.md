@@ -2,9 +2,15 @@
 slug: /deployment/deploy-for-environments
 title: Deploy for Development Environments
 description: Learn how to deploy your apps for development environments.
-tags: [Apple App Store, Google Play Store, Deployment, Dev Environments]
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 6
-keywords: [Apple App Store, Google Play Store, Deployment, Dev Environments]
+keywords:
+  - Apple App Store
+  - Google Play Store
+  - Deployment
+  - Dev Environments
 ---
 # Deploy for Development Environments
 
@@ -27,9 +33,8 @@ For example, in an ecommerce app, you can set package names such as `io.flutterf
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/WecD2unE4ERmisWzAVgz?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/WecD2unE4ERmisWzAVgz?embed&show_copy_link=true" title="Deploy for Development Environments interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

@@ -1,9 +1,22 @@
 ---
 slug: /flutterflow-ui/my-teams
 title: My Teams
-tags: [My Teams, FlutterFlow, UI, Design]
-keywords: [Accounts, Billing, My Teams, Team Code, Team Media Assets, Team Design Library, Team API Library, Adding Domains]
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
+keywords:
+  - Accounts
+  - Billing
+  - My Teams
+  - Team Code
+  - Team Media Assets
+  - Team Design Library
+  - Team API Library
+  - Adding Domains
 sidebar_position: 5
+description: >-
+  On the My Teams page, you can manage billing for your team, edit projects
+  simultaneously, and share code, design systems, APIs, and assets.
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -61,7 +74,7 @@ Here's how you can share the design library:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/Dammx5Es92gc1hbdU31p?embed&show_copy_link=true"
         title="Create Team Design Library"
         style={{
@@ -91,7 +104,7 @@ Here's how you can share the design library:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/lIKiqtfucQxC9HLLKNTS?embed&show_copy_link=true"
         title="Use Team Design Library"
         style={{

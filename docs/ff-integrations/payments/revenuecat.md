@@ -2,10 +2,16 @@
 slug: /integrations/payments/revenuecat
 title: RevenueCat
 description: Learn how to integrate RevenueCat payments in your FlutterFlow app.
-tags: [RevenueCat, Payments, Integration]
-keywords: [FlutterFlow, RevenueCat, Payments, Integration]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Payments
+keywords:
+  - FlutterFlow
+  - RevenueCat
+  - Payments
+  - Integration
 ---
-
 # RevenueCat
 
 [RevenueCat](https://www.revenuecat.com/) simplifies implementing in-app purchases and subscriptions by handling all purchase validation operations.
@@ -19,9 +25,8 @@ The [**underlying package for RevenueCat**](https://pub.dev/packages/purchases_f
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/z3Fw57EiyR05PY6OPMG6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/z3Fw57EiyR05PY6OPMG6?embed&show_copy_link=true" title="RevenueCat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -74,9 +79,8 @@ To enable RevenueCat in FlutterFlow, follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/sKSpoidCReEDlikhUbs3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/sKSpoidCReEDlikhUbs3?embed&show_copy_link=true" title="RevenueCat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -106,9 +110,8 @@ Here is an example of retrieving monthly subscription details:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/r5RpyXZaWp7n6DTikrHx?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/r5RpyXZaWp7n6DTikrHx?embed&show_copy_link=true" title="RevenueCat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -146,9 +149,8 @@ Follow the steps below to see if a user is subscribed and take action accordingl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0m0oeM9PRbe7e5JbapCf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0m0oeM9PRbe7e5JbapCf?embed&show_copy_link=true" title="RevenueCat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,9 +178,8 @@ This action allows you to purchase the item. Here’s how you add it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/95HnVG5vM9J7gi73vjxW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/95HnVG5vM9J7gi73vjxW?embed&show_copy_link=true" title="RevenueCat interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -245,3 +246,6 @@ See more details [here](https://community.revenuecat.com/sdks-51/why-are-offerin
 If you're looking for other tools to manage in-app subscriptions, [**Adapty**](https://adapty.io/) is a solid alternative to RevenueCat — it offers advanced analytics, paywall A/B testing, and seamless integration with iOS and Android apps.
 You can explore the [**Adapty Library on our Marketplace**](https://marketplace.flutterflow.io/item/Mf1oFJcqngHzERZSPNA8) — it's actively maintained by the Adapty team and always kept up to date.
 
+## Related documentation
+
+See [Braintree](/integrations/payments/braintree) for a related FlutterFlow workflow.

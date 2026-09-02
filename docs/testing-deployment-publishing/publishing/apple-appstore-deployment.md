@@ -1,12 +1,22 @@
 ---
 slug: /deployment/apple-app-store-deployment
 title: Apple App Store Deployment
-description: Learn how to seamlessly deploy your apps to the Apple App Store using FlutterFlow.
-tags: [Apple App Store, Deployment, FlutterFlow, iOS]
+description: >-
+  Learn how to seamlessly deploy your apps to the Apple App Store using
+  FlutterFlow.
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 4
-keywords: [Apple App Store, Deployment, FlutterFlow, iOS]
+keywords:
+  - Apple App Store
+  - Deployment
+  - FlutterFlow
+  - iOS
+  - deploy a FlutterFlow app to the Apple App Store
+ai_queries:
+  - deploy a FlutterFlow app to the Apple App Store
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -40,9 +50,8 @@ To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://deve
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JGwpUcUjVTiFSfc3kGef?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JGwpUcUjVTiFSfc3kGef?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -70,9 +79,8 @@ To create a Bundle ID, visit the [**Certificates, IDs & Profiles**](https://deve
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tVasNWruqpZg01we8gap?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tVasNWruqpZg01we8gap?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,9 +110,8 @@ To add your App ID to FlutterFlow, go to **[App Store Connect](https://appstorec
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oWMQvIeQfAbGIvMEm4XR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oWMQvIeQfAbGIvMEm4XR?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -134,9 +141,8 @@ Generate a new API key by selecting **Add (+)**, entering a name, and assigning 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/x2X1EcIYLpmDAE7Fn08h?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/x2X1EcIYLpmDAE7Fn08h?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -164,9 +170,8 @@ Copy the **Issuer ID** from [**App Store Connect**](https://appstoreconnect.appl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LVqjJmapbZeK7gY1cYmo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LVqjJmapbZeK7gY1cYmo?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -194,9 +199,8 @@ Return to **[App Store Connect](https://appstoreconnect.apple.com/) >** **Users 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/qQdK8wDgQyxHplVt4LyP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/qQdK8wDgQyxHplVt4LyP?embed&show_copy_link=true" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,9 +254,8 @@ Watch this video if you prefer watching a video tutorial.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/4GFMsYep_S0"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/4GFMsYep_S0" title="Apple App Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -291,7 +294,7 @@ Here are the steps you can take to resolve this issue:
 
 1. See if the custom package you use is listed [here](https://developer.apple.com/support/third-party-SDK-requirements/); ensure to use the latest version if you are using any of these.
 2. If unsure which package is using protected APIs, you may be able to use a tool like [this](https://github.com/crasowas/app_store_required_privacy_manifest_analyser) to identify them. Once identified, update to the latest versions, as the package author may have addressed compliance issues.
-    1. To verify, look into the package's changelog or source code for a `PrivacyInfo.privacy` file, which indicates compliance (examples [here](https://github.com/fluttercommunity/plus_plugins/blob/main/packages/share_plus/share_plus/ios/PrivacyInfo.xcprivacy) and [here](https://github.com/flutter/packages/blob/main/packages/url_launcher/url_launcher_ios/ios/Resources/PrivacyInfo.xcprivacy)).
+    1. To verify, look into the package's changelog or source code for a `PrivacyInfo.privacy` file, which indicates compliance (examples [here](https://github.com/fluttercommunity/plus_plugins/tree/main/packages/share_plus/share_plus) and [here](https://github.com/flutter/packages/tree/main/packages/url_launcher/url_launcher_ios)).
     2. If the current package hasn’t resolved the issue, consider using an alternative package that complies, or contact the package's maintainer for a fix.
 3. If you have written a custom iOS code that is accessing the APIs:
     1. In FlutterFlow, navigate to **Settings & Integrations > App Settings > Privacy Manifest Configuration**.
@@ -300,5 +303,3 @@ Here are the steps you can take to resolve this issue:
 ![privacy-manifest-configuration](../imgs/privacy-manifest-configuration.avif)
 </p>
 </details>
-
-

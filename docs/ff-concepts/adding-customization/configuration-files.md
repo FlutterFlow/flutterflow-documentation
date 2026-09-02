@@ -1,15 +1,32 @@
 ---
 slug: /concepts/custom-code/configuration-files
 title: Configuration Files
-description: Learn how to modify platform-specific files for Android and iOS to extend your app's capabilities.
-tags: [Configuration Files, Custom Code]
+description: >-
+  Learn how to modify platform-specific files for Android and iOS to extend your
+  app's capabilities.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 5
-keywords: [FlutterFlow, Configuration Files, Customizations, Flutter, Dart, Pub.dev, Edit Native Files, Android, iOS, AndroidManifest.xml, Info.plist, Entitlements.plist, main.dart, proguard]
+keywords:
+  - FlutterFlow
+  - Configuration Files
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - Edit Native Files
+  - Android
+  - iOS
+  - AndroidManifest.xml
+  - Info.plist
+  - Entitlements.plist
+  - main.dart
+  - proguard
 ---
-
 # Configuration Files
 
-FlutterFlow allows you to modify configuration files for your app, and platform-specific files, without leaving the FlutterFlow interface. 
+FlutterFlow allows you to modify configuration files for your app, and platform-specific files, without leaving the FlutterFlow interface.
 
 In some cases, you’ll need to tweak the configuration files that FlutterFlow generates. This is usually required when integrating third-party packages such as analytics, ad networks, and payment solutions.
 
@@ -55,9 +72,8 @@ To add a snippet to your `AndroidManifest.xml`, navigate to **Custom Code** from
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/8moo0Vp14Ax8k0udjkh0?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/8moo0Vp14Ax8k0udjkh0?embed&show_copy_link=true" title="Configuration Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -87,9 +103,8 @@ To add a snippet to native iOS files, navigate to **Custom Code** (from the left
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ty5w49xRqiqDjFA3GffY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ty5w49xRqiqDjFA3GffY?embed&show_copy_link=true" title="Configuration Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -128,9 +143,8 @@ Once unlocked, the file stays in manual editing mode until you lock it again. Re
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/iWDmQGzmkEX9Gu9GpxlY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iWDmQGzmkEX9Gu9GpxlY?embed&show_copy_link=true" title="Configuration Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -169,9 +183,8 @@ Here’s exactly how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/aKLSHioNBUzAGk7L2FiX?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/aKLSHioNBUzAGk7L2FiX?embed&show_copy_link=true" title="Configuration Files interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -232,8 +245,8 @@ For example, if your library integrates with a public weather API that requires 
 
 ```jsx
 <application>
-    <meta-data 
-        android:name="com.google.android.geo.API_KEY" 
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
         android:value="{{WEATHER_API_KEY}}" />
 </application>
 ```
@@ -268,7 +281,7 @@ For including additional screens (activities), background processes (services), 
 
         <!-- Add your activity here -->
         <activity android:name=".NewScreenActivity" />
-        
+
     </application>
 
 </manifest>
@@ -276,7 +289,7 @@ For including additional screens (activities), background processes (services), 
 
 This registers `NewScreenActivity` so the system knows it exists.
 
-**Example 2: Requesting Permissions** 
+**Example 2: Requesting Permissions**
 
 If your app requires access to restricted resources such as wake locks (to keep the device awake) or audio recording, you must declare the necessary permissions in `AndroidManifest.xml` by [manually editing](#option-2-manual-edit-mode) the file. **Tip:** You can also add custom permissions directly through the [**Permission Settings**](../../resources/projects/settings/project-setup.md#adding-a-custom-permission) in FlutterFlow.
 
@@ -302,7 +315,7 @@ If your app requires access to restricted resources such as wake locks (to keep 
 
 Without these, the app cannot keep the device awake or record audio.
 
-**Example 3: Adding Metadata for SDKs and Libraries** 
+**Example 3: Adding Metadata for SDKs and Libraries**
 
 Many third-party packages (Google Maps, Firebase, AdMob, etc.) require `<meta-data>` tag in `AndroidManifest.xml` to pass configuration values. For example, the [**Mapbox Flutter**](https://pub.dev/packages/mapbox_flutter) plugin requires adding your Mapbox access token as a metadata entry for initialization. A real example: to initialize Mapbox, you’d add:
 
@@ -337,7 +350,7 @@ You can specify device hardware requirements (e.g., GPS, camera, touchscreen) to
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
-        
+
         <!-- other components -->
 
     </application>
@@ -467,10 +480,10 @@ Here are some scenarios where you may need to modify the ProGuard file:
 ProGuard can obfuscate critical libraries, breaking their functionality. To prevent this, you need to keep specific classes used by the library.
 
 ```jsx
-# Firebase
+## Firebase
 -keep class com.google.firebase.** { *; }
 
-# Gson (JSON Serialization)
+## Gson (JSON Serialization)
 -keep class com.google.gson.** { *; }
 -keepattributes *Annotation*
 ```

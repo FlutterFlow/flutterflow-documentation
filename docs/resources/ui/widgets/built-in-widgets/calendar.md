@@ -1,10 +1,16 @@
 ---
 slug: calendar
 title: Calendar
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to use the Calendar widget in your FlutterFlow project.
+keywords:
+  - Calendar
+  - Built In Widgets
+  - Widgets
 ---
-
 # Calendar
 
 The **Calendar** widget allows users to view and select dates, making it ideal for booking appointments, managing schedules, displaying events, or filtering records by date.
@@ -76,3 +82,7 @@ Select the **Calendar** widget and use the **Calendar Properties** section to cu
 - **Date Style:** Customizes the appearance of regular dates.
 - **Selected Date Style:** Customizes the appearance of the currently selected date.
 - **Inactive Date Style:** Customizes inactive dates, such as dates outside the currently displayed month.
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

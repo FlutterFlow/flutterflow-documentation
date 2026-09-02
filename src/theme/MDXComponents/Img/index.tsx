@@ -91,7 +91,6 @@ export default function MDXImg(props: Props): JSX.Element {
             className={styles.fullscreenImage}
             onClick={(event) => event.stopPropagation()}
           />
-          />
         </div>
       )}
     </>

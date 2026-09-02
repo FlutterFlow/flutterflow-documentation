@@ -1,12 +1,19 @@
 ---
 slug: /integrations/firebase/performance-monitoring
 title: Performance Monitoring
-description: Learn how to integrate Firebase Performance Monitoring in your FlutterFlow app.
-tags: [Firebase, Performance Monitoring]
+description: >-
+  Learn how to integrate Firebase Performance Monitoring in your FlutterFlow
+  app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 4
-keywords: [FlutterFlow, Firebase, Performance Monitoring]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Performance Monitoring
 ---
-
 # Performance Monitoring
 
 [Firebase Performance Monitoring](https://firebase.google.com/docs/perf-mon) is a tool that *automatically* collects performance data from your app and provides insights through the Firebase console. It can monitor both network requests and specific parts of your code.
@@ -19,3 +26,7 @@ Enabling performance monitoring is beneficial for:
 - **Monitor Network Calls**: See how long network requests take, helping identify slow APIs or network issues.
 
 To enable performance monitoring, navigate to Settings and Integrations > Project Setup > Firebase > Open the Performance Monitoring section and Enable Performance Monitoring toggle.
+
+## Related documentation
+
+See [App Check](/integrations/firebase/app-check) for a related FlutterFlow workflow.

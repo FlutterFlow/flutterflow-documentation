@@ -1,9 +1,19 @@
 ---
-keywords: ['permission', 'permission_denied', 'code']
+keywords:
+  - permission
+  - permission_denied
+  - code
 slug: /troubleshooting/authentication/permission-denied-code-403
 title: 'Permission Denied: Code 403'
+description: >-
+  This error typically occurs when your application or service account does not
+  have the required permissions to access a resource in Google Cloud or
+  Firebase.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
-
 # Permission Denied: Code 403
 
 This error typically occurs when your application or service account does not have the required permissions to access a resource in Google Cloud or Firebase.
@@ -33,7 +43,7 @@ Do the following to fix this error:
     Go to the [Google Cloud Console](https://console.cloud.google.com/apis/library) and ensure all necessary APIs are enabled for your project.
 
 - **Regenerate the Service Account Key if Needed**
-    
+
     If you suspect the key is invalid, generate a new one and update your application configuration accordingly.
 
 :::tip[Always Use Least Privilege Principle]
@@ -41,3 +51,7 @@ When assigning IAM roles to your service account, follow the **principle of leas
 :::
 
 If you continue to experience issues, consult the [Google Cloud IAM documentation](https://cloud.google.com/iam/docs/troubleshooting-access) or contact [FlutterFlow Support](mailto:support@flutterflow.io) for further assistance.
+
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

@@ -1,5 +1,16 @@
-
-
+---
+title: Customer Support Policy
+description: >-
+  We love connecting with our users and supporting you as you build your
+  application!
+tags:
+  - FlutterFlow
+  - Policies & Support
+keywords:
+  - Customer Support Policy
+  - Misc
+  - FlutterFlow
+---
 # Customer Support Policy
 
 We love connecting with our users and supporting you as you build your application! However, there are a few things that fall outside the scope of our support team. To avoid confusion, we've created this document to outline our Customer Support Policy.

@@ -1,12 +1,19 @@
 ---
 slug: subscriptions
 title: Subscriptions
-tags: []
+tags:
+  - FlutterFlow
+  - Accounts & Billing
 toc_max_heading_level: 5
 sidebar_position: 0
+description: >-
+  This section provides information on free trials, plan changes, and other
+  subscription-related questions.
+keywords:
+  - Subscriptions
+  - Accounts Billing
+  - FlutterFlow
 ---
-
-
 # Subscriptions
 This section provides information on free trials, plan changes, and other subscription-related questions.
 

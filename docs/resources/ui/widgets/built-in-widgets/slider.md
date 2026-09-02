@@ -1,12 +1,19 @@
 ---
 slug: slider
 title: Slider
-tags: [Slider, Form Elements]
-keywords: [FlutterFlow, Slider, Form Widget, App Development, Input Field, Flutter]
-description: Learn how to add Slider in your FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - FlutterFlow
+  - Slider
+  - Form Widget
+  - App Development
+  - Input Field
+  - Flutter
+description: The Slider widget is used to select a single value from a range of values.
 ---
-
-
 # Slider
 
 The Slider widget is used to select a single value from a range of values. You define the min and max value for the slider, and users can choose the value between the specified range by dragging the slider thumb (sliding circle).
@@ -26,9 +33,8 @@ Let's build an example of using the Slider widget and retrieve its value in a Te
     paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G5dcYFeajqmKcN5a68Fu?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G5dcYFeajqmKcN5a68Fu?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -62,9 +68,8 @@ The steps to build the example are as follows:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/7pg64sKF7KzKK1TzmY8a?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/7pg64sKF7KzKK1TzmY8a?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -97,9 +102,8 @@ Sometimes you might want to display the slider with the default value. For examp
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dwdXqb2mLwZ3ShwQdjN1?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dwdXqb2mLwZ3ShwQdjN1?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -137,9 +141,8 @@ To set the platform type:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/S15LCQAKU5VvcgDZOXVA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/S15LCQAKU5VvcgDZOXVA?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -174,9 +177,8 @@ To set the min and max values:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Z4sBW9iUwIOB4as0y3XH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Z4sBW9iUwIOB4as0y3XH?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -215,9 +217,8 @@ To set the step size:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vcXVcyvrLoDeTKHacqaj?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vcXVcyvrLoDeTKHacqaj?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,9 +251,8 @@ To change the slider colors:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/GTK1gx13TYLBuowLjTk6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/GTK1gx13TYLBuowLjTk6?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -286,9 +286,8 @@ To show the slider value:
     paddingBottom: 'calc(35.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/yZO6X8ExdIErBNwv0lrb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/yZO6X8ExdIErBNwv0lrb?embed&show_copy_link=true" title="Slider interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -306,4 +305,3 @@ To show the slider value:
     </iframe>
 </div>
 <p></p>
-

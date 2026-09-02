@@ -1,7 +1,15 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Markdown
+description: The Markdown widget is used to input and display text using Markdown syntax.
+keywords:
+  - Markdown
+  - Built In Widgets
+  - Widgets
 ---
-
 # Markdown
 
 The Markdown widget is used to input and display text using [Markdown syntax](https://www.markdownguide.org/basic-syntax/). It allows you to format text easily, without the complexity of a full-fledged WYSIWYG (What You See Is What You Get) editor or the need to write HTML code.
@@ -18,6 +26,4 @@ To add a Markdown widget:
 2. To display the markdown content, move to the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) and enter the text inside the **Data** section.
 3. Optionally, you have the choice to make your Markdown content selectable. This can be adjusted using the **Selectable** property.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e4c33cdb4bbf44e194dccbb3c357a317?sid=24c80624-af62-47d4-a60f-53b5f1faeaec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
+<div class="video-container"><iframe title="Markdown interactive tutorial" src="https://www.loom.com/embed/e4c33cdb4bbf44e194dccbb3c357a317?sid=24c80624-af62-47d4-a60f-53b5f1faeaec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

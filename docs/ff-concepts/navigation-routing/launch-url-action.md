@@ -1,13 +1,21 @@
 ---
 slug: /concepts/navigation/launch-url
-title: Launch URL [Action]
-description: Learn how to use the Launch URL Action in FlutterFlow to open URLs with supporting apps.
-tags: [Launch URL, Action, Concepts]
+title: 'Launch URL [Action]'
+description: >-
+  Learn how to use the Launch URL Action in FlutterFlow to open URLs with
+  supporting apps.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 9
-keywords: [FlutterFlow, Launch URL, Action, Concepts]
+keywords:
+  - FlutterFlow
+  - Launch URL
+  - Action
+  - Concepts
 ---
-
-The Launch URL Action lets you specify a URL that will be opened using an app supporting it. If there is more than one app that can handle the specified URL, the user will be presented with a dialog from where one of the apps can be selected.
+The **Launch URL** action passes a URI to the operating system or browser. The result depends on whether the current platform has an app or handler registered for that URI scheme.
 
 ## Adding Launch URL Action
 
@@ -19,7 +27,9 @@ Follow the steps below to add this action to any widget.
 4. On the right side, search and select the **Launch URL** (under widget/UI Interactions) action.
 5. In the *URL Value Type* property, select either **Specify URL** (to add the URL as a String) or **From Variable** (to use the value stored in a String variable).
 6. If using **Specify URL**, enter the URL that you want to use in the **URL** field. For example, you can enter "[https://flutter.dev](https://flutter.dev/)" to open the Flutter webpage.
-7. If using **From Variable**, select the **Source** from which to fetch the URL value. You can also specify a **Default Value** that will be used when the variable value is not set (i.e. null).
+7. If using **From Variable**, select a compatible String, Image Path, Video Path, or Audio Path value.
+
+The generated action parses the value as a URI and attempts to launch it. Provide the complete scheme (`https:`, `tel:`, `sms:`, or `mailto:`), URL-encode dynamic query values, and test every target platform. An invalid URI or a missing platform handler causes the launch to fail.
 
 ![launch-url.avif](imgs/launch-url.avif)
 
@@ -34,9 +44,9 @@ This URL scheme for loading up a webpage can be defined in this format:
 
 #### Scheme
 
-`http:<webpage URL link>`
+`http://<host>/<path>`
 
-`https:<webpage URL link>`
+`https://<host>/<path>`
 
 #### Example
 
@@ -89,3 +99,7 @@ This will pass the following details to the email app:
 ***mailto:*** name@example.org, ***subject:*** Welcome to FlutterFlow, ***body:*** Hey there
 
 ![ceate-email.gif](imgs/ceate-email.gif)
+
+## Related documentation
+
+See [Bottom Sheet](/concepts/navigation/bottom-sheet) for a related FlutterFlow workflow.

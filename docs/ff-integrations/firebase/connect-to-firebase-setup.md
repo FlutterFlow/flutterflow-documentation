@@ -1,12 +1,25 @@
 ---
 slug: /integrations/firebase/connect-to-firebase
 title: Connect to Firebase
-description: Learn how to integrate Firebase with your FlutterFlow app to add user authentication, cloud storage, real-time databases, and more.
-tags: [Firebase, Integration, Cloud Storage, Real-Time Database]
+description: >-
+  Learn how to integrate Firebase with your FlutterFlow app to add user
+  authentication, cloud storage, real-time databases, and more.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Firebase
 sidebar_position: 0
-keywords: [FlutterFlow, Firebase, Integration, User Authentication, Cloud Storage, Real-Time Database]
+keywords:
+  - FlutterFlow
+  - Firebase
+  - Integration
+  - User Authentication
+  - Cloud Storage
+  - Real-Time Database
+  - connect a FlutterFlow project to Firebase
+ai_queries:
+  - connect a FlutterFlow project to Firebase
 ---
-
 # Connect to Firebase
 
 Firebase integration in FlutterFlow provides an effortless way to enhance your apps with powerful features such as user authentication, cloud storage, real-time databases, and more. This setup guide will walk you through integrating Firebase with FlutterFlow, empowering you to easily create feature-rich, scalable applications.
@@ -31,7 +44,7 @@ Once initiated, FlutterFlow will handle the rest of the project creation in the 
 
 Here's a quick walkthrough:
 <iframe src="https://demo.arcade.software/C4Db1hkZU3Dyqd5VmY99?embed&show_copy_link=true" title="Shopping App - FlutterFlow" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" width="100%" height="600"></iframe>
-As soon as the process is completed, you will see the following view in your Firebase Settings dashboard. 
+As soon as the process is completed, you will see the following view in your Firebase Settings dashboard.
 <img src="/img/firebase/firebase-created-managed.png" alt="Firebase Project Created" class="landscape-image"  />
 
 #### Enable Firebase Authentication
@@ -98,7 +111,7 @@ Do not close or refresh the page while the files are being generated.
 
 ## Connect to Firebase on Creating a New FlutterFlow Project
 
-If you know you'll be integrating Firebase as you create your project, you can do the following: 
+If you know you'll be integrating Firebase as you create your project, you can do the following:
 
 #### Step 1: Create a new project and enable Firebase
 
@@ -106,21 +119,21 @@ First, create a new project, and while doing so, keep the Setup Firebase option 
 
 <img src="/img/firebase/create-project-enable-firebase.png" alt="Alt text" class="small-image"/>
 
-#### Step 2: Connect to Firebase  
+#### Step 2: Connect to Firebase
 
-If you'd like FlutterFlow to create a Firebase project for you, click **"+ Create Project"** and follow the [related steps](#create-a-new-firebase-project-from-flutterflow). Alternatively, if you wish to connect an existing Firebase project manually, please follow the [manual steps here](#connect-an-existing-firebase-project-manually). 
+If you'd like FlutterFlow to create a Firebase project for you, click **"+ Create Project"** and follow the [related steps](#create-a-new-firebase-project-from-flutterflow). Alternatively, if you wish to connect an existing Firebase project manually, please follow the [manual steps here](#connect-an-existing-firebase-project-manually).
 
 
 #### Step 3: Enable Authentication
 
-Turn on the Enable Authentication to allow users to log into your app using various sign-in methods, including email and password, social media providers, and even phone number. 
+Turn on the Enable Authentication to allow users to log into your app using various sign-in methods, including email and password, social media providers, and even phone number.
 
-**Note:** this step only enables authentication. You will need to complete an additional setup to implement authentication logic later. 
+**Note:** this step only enables authentication. You will need to complete an additional setup to implement authentication logic later.
 
 <img src="/img/firebase/enable-auth-option.png" alt="Enable Authentication During Project Creation" class="small-image"  />
 
 
-## Enable Firestore for Database Access 
+## Enable Firestore for Database Access
 
 If you plan to use Firestore Database as your backend, follow these additional steps to enable Firestore. This will allow you to create collections and add documents directly from FlutterFlow.
 
@@ -130,13 +143,13 @@ To configure Firestore Database:
 
 <img src="/img/firebase/firebase-db-enable.png" alt="Alt text"  />
 
-2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next. 
+2. Next, you will need to set your **Firebase security rules**. To get started quickly, you can select Start in test mode and select Next.
 
 <img src="/img/firebase/firebase-security.png" alt="Alt text"  />
 
 :::info
-We recommend updating your Firebase security rules before deploying your app. Please see [this 
-link](../database/cloud-firestore/firestore-rules.md) for additional information on 
+We recommend updating your Firebase security rules before deploying your app. Please see [this
+link](../database/cloud-firestore/firestore-rules.md) for additional information on
 Firestore security rules.
 :::
 
@@ -162,8 +175,7 @@ Here are the steps to deploy indexes.
 If you add a filtering/ordering on the query or change the existing filtering/ordering settings, you should deploy the Firestore Indexes again.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1abddd1120db477da2c085dbc6b7a742?sid=5b161c8b-3957-4ac9-b27f-dc5ebc03f550" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Connect to Firebase interactive tutorial" src="https://www.loom.com/embed/1abddd1120db477da2c085dbc6b7a742?sid=5b161c8b-3957-4ac9-b27f-dc5ebc03f550" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -177,3 +189,7 @@ If you want to deploy [Cloud Functions](https://firebase.google.com/products/fun
 2. Select **Purchase**. If this is your first time enabling billing, you will be taken to a new page to provide your payment information. Otherwise, you can set a project budget. Please see [this link](https://firebase.google.com/pricing) for additional information on Firebase pricing.
 
 <img src="/img/firebase/billing.png" alt="Alt text"  />
+
+## Related documentation
+
+See [App Check](/integrations/firebase/app-check) for a related FlutterFlow workflow.

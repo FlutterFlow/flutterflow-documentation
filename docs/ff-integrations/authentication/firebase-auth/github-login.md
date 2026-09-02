@@ -2,11 +2,17 @@
 slug: /integrations/authentication/firebase/github
 title: GitHub Login
 description: Learn how to add GitHub authentication in your FlutterFlow app.
-tags: [GitHub Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 7
-keywords: [FlutterFlow, GitHub Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - GitHub Login
+  - Authentication
+  - Firebase
 ---
-
 # GitHub Login
 The GitHub auth provides a convenient way for users to authenticate and log in to your application using their GitHub accounts.
 
@@ -43,9 +49,8 @@ To enable GitHub authentication in the Firebase:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b970983169dc4240a979a2d74ec63450?sid=8a91fa0b-eabd-4e76-bfaf-37011c807421"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b970983169dc4240a979a2d74ec63450?sid=8a91fa0b-eabd-4e76-bfaf-37011c807421" title="GitHub Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -65,9 +70,9 @@ To enable GitHub authentication in the Firebase:
 <p></p>
 
 5. To test the app in Run Mode, add our domain to **Authorized domains**.
-    
+
 ![adding-authorized-domain-2.png](../imgs/adding-authorized-domain-2.png)
-    
+
 
 ### 2. Adding GitHub Login Action
 

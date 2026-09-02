@@ -2,11 +2,20 @@
 slug: /integrations/authentication/firebase/google-oauth-login
 title: Google OAuth Login
 description: Learn how to add Google OAuth login in your FlutterFlow app.
-tags: [Google OAuth, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 1
-keywords: [FlutterFlow, Google OAuth, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Google OAuth
+  - Authentication
+  - Firebase
+  - add Google sign in with Firebase
+ai_queries:
+  - add Google sign in with Firebase
 ---
-
 # Google Login
 
 Google Sign-In allows users to authenticate using their Google Accounts.
@@ -30,9 +39,8 @@ Open the **Firebase Console**, click on **Authentication** and then follow the s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/I50vTFEEyhXfU82yLick?embed&show_copy_link=true" title="Google OAuth Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -74,9 +82,8 @@ If you haven’t already, see how to [create *users* collection](auth-initial-se
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/CBVoec46awMc3yNGLuVJ?embed&show_copy_link=true" title="Google OAuth Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -128,10 +135,10 @@ To test during development, you can run your app locally using FlutterFlow’s L
 
     1. Head over to
       your [Project Credentials](https://console.cloud.google.com/apis/credentials?project=_) page.
-   
+
     2. Ensure you are on the correct project. In our case, we are using the
       [EcommerceFlow demo project](https://bit.ly/ff-docs-demo-v2), it will be different for you.
-   
+
     ![credential-page.png](../imgs/credential-page.png)
 
     3. Under the '**OAuth 2.0 Client IDs**', select '**Web client** (auto created by
@@ -142,11 +149,11 @@ To test during development, you can run your app locally using FlutterFlow’s L
     5. Similarly, under the '**Authorized redirect URIs**', click ADD URI, add both
       the URL and append '/__/auth/handler' at the end.
 
-<iframe src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0"
+<iframe title="Google OAuth Login interactive tutorial" src="https://www.loom.com/embed/efd5b99b858d4de8bca55452c6e1d20c" frameborder="0"
 allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
 
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 

@@ -1,12 +1,23 @@
 ---
 slug: /integrations/authentication/supabase/initial-setup
-title: Initial Setup
-description: Learn how to perform the initial setup for Supabase Authentication in your FlutterFlow app.
-tags: [Initial Setup, Authentication, Supabase]
+title: 'Initial Setup: Supabase Auth'
+description: >-
+  Learn how to perform the initial setup for Supabase Authentication in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 0
-keywords: [FlutterFlow, Initial Setup, Authentication, Supabase]
+keywords:
+  - FlutterFlow
+  - Initial Setup
+  - Authentication
+  - Supabase
+  - set up Supabase email authentication
+ai_queries:
+  - set up Supabase email authentication
 ---
-
 # Initial Setup
 
 To use authentication, you will need to complete the following initial setup:
@@ -16,7 +27,7 @@ To use authentication, you will need to complete the following initial setup:
 
 
 :::info[Prerequisites]
-Before you begin, make sure you have completed the 
+Before you begin, make sure you have completed the
 [**Supabase Setup**](../../supabase/supabase-setup.md).
 :::
 
@@ -29,10 +40,9 @@ Also, it's recommended to create a [foreign key relationship](https://supabase.c
 Here's how you do it:
 
 <figure>
-    <div class="video-container"><iframe src="https://www.loom.
-    com/embed/430d196461b7466283a069de9ff7e707?sid=7ccb937f-f711-4a55-b1c5-f65a8515fa94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    
-    
+    <div class="video-container"><iframe title="Initial Setup: Supabase Auth interactive tutorial" src="https://www.loom.com/embed/430d196461b7466283a069de9ff7e707?sid=7ccb937f-f711-4a55-b1c5-f65a8515fa94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -47,7 +57,7 @@ To enable authentication in FlutterFlow:
 
 1. Open your FlutterFlow project.
 
-2. Navigate to the Setting and Integrations () from the Navigation Menu > App Settings > 
+2. Navigate to the Setting and Integrations () from the Navigation Menu > App Settings >
    Authentication.
 
 3. Turn on the **Enable Authentication** toggle and select **Authentication Type** to **Supabase**.

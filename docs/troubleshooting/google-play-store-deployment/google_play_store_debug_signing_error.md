@@ -1,7 +1,19 @@
 ---
-keywords: ['deployment', 'debug', 'android']
-slug: /troubleshooting/google-play-store-deployment/google-play-store-debug-signing-error
+keywords:
+  - deployment
+  - debug
+  - android
+slug: >-
+  /troubleshooting/google-play-store-deployment/google-play-store-debug-signing-error
 title: Google Play Store Debug Signing Error
+description: >-
+  When uploading your Android App Bundle (AAB) or APK to Google Play, you might
+  encounter this error: This error indicates the app must be signed with a
+  release key before uploading.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
 # Google Play Store Debug Signing Error
 
@@ -22,11 +34,11 @@ This error indicates the app must be signed with a release key before uploading.
     2. Locate the `buildTypes` section and find the configuration labeled `debug`.
     3. Replace the `debug` keyword with `release` in the relevant signing configuration.
 
-        ![](../assets/20250430121513060363.png)
+        ![Google Play Store Debug Signing Error in FlutterFlow](../assets/20250430121513060363.png)
 
     4. Save the file.
 
-        ![](../assets/20250430121513225263.png)
+        ![Google Play Store Debug Signing Error in FlutterFlow](../assets/20250430121513225263.png)
 
         :::note
         Make sure that you fill out all the information in the play store including the store listing information and the setup information.
@@ -34,3 +46,7 @@ This error indicates the app must be signed with a release key before uploading.
 
 
 ​
+
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

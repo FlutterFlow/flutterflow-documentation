@@ -1,12 +1,20 @@
 ---
 slug: /integrations/google-maps/generate-maps-keys
 title: Generate Maps Keys
-description: Learn how to generate and use Maps keys for Google Maps integration in your FlutterFlow app.
-tags: [Google Maps, API Keys, Integration]
+description: >-
+  Learn how to generate and use Maps keys for Google Maps integration in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Google Maps
 sidebar_position: 1
-keywords: [FlutterFlow, Google Maps, API Keys, Integration]
+keywords:
+  - FlutterFlow
+  - Google Maps
+  - API Keys
+  - Integration
 ---
-
 # Maps & Places APIs
 
 FlutterFlow natively supports **Google Maps**, providing a seamless and efficient way to embed
@@ -32,12 +40,11 @@ Cloud Console](https://console.cloud.google.com/).
   Javascript API**. Select the platform you wish to support and then click **Enable**.
   If you are running on Run Mode, ensure that your Maps Javascript API is enabled.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Generate Maps Keys interactive tutorial" src="https://www.loom.com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 :::warning
-To secure your API keys, refer to the 
+To secure your API keys, refer to the
 [**Best Practices guide: Secure API Keys**](../../google-cloud/secure-keys.md)
 :::
 
@@ -63,8 +70,7 @@ Firebase) in the Google developer console, here are the steps to create one:
 - Click on the **API Key** to create a new key for the Android app. Similarly, create one for
   iOS and Web.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/2c644aa950c44f76b19c6787784cf3b5?sid=3e22206e-4b4b-4734-b842-0c644d32f344" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Generate Maps Keys interactive tutorial" src="https://www.loom.com/embed/2c644aa950c44f76b19c6787784cf3b5?sid=3e22206e-4b4b-4734-b842-0c644d32f344" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 ## Add Places APIs
@@ -72,5 +78,3 @@ com/embed/2c644aa950c44f76b19c6787784cf3b5?sid=3e22206e-4b4b-4734-b842-0c644d32f
 You can [enable the **Places API**](https://console.cloud.google.com/apis/library/places-backend.googleapis.com) from your Google Cloud Console — make sure you are in the correct Google Cloud project. **Please note** that the current [PlacePicker widget](../../maps/google-maps/place-picker-widget.md) uses the legacy Places API. We plan to update the PlacePicker widget soon to support the new API. In the meantime, ensure that the legacy Places API is enabled for full functionality.
 
 ![places-api.png](imgs/places-api.png)
-
-

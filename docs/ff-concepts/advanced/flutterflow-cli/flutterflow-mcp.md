@@ -1,12 +1,24 @@
 ---
 slug: /flutterflow-cli/build
 title: Build with AI Agents
-description: Create and edit FlutterFlow projects from your terminal using your preferred AI coding agent.
-tags: [CLI, AI, MCP]
+description: >-
+  Create and edit FlutterFlow projects from your terminal using your preferred
+  AI coding agent.
+tags:
+  - FlutterFlow
+  - CLI
+  - AI
 sidebar_position: 3
-keywords: [CLI, Agentic AI, Projects, Local Management, MCP]
+keywords:
+  - CLI
+  - Agentic AI
+  - Projects
+  - Local Management
+  - MCP
+  - connect an AI coding agent to FlutterFlow with MCP
+ai_queries:
+  - connect an AI coding agent to FlutterFlow with MCP
 ---
-
 # Build with AI Agents
 
 The [FlutterFlow CLI](https://pub.dev/packages/flutterflow_cli) lets you create and edit FlutterFlow apps from the terminal using your own AI coding agent, such as Claude Code, Gemini CLI, Codex, or any MCP-compatible client. You describe what you want in plain English, the agent plans and applies the changes, and the result lands as a real FlutterFlow project you can open in the visual builder.
@@ -30,7 +42,7 @@ troubleshooting.
 
 The workspace is just a folder on your disk. The actual project lives in FlutterFlow server.
 
-:::tip[What is MCP?] 
+:::tip[What is MCP?]
 The [**Model Context Protocol**](https://modelcontextprotocol.io) is an open standard that lets AI agents call external tools. The FlutterFlow AI MCP server exposes FlutterFlow's project APIs to your agent so it can read and modify your project on your behalf.
 :::
 
@@ -47,7 +59,7 @@ Before you start, make sure you have:
 - **A FlutterFlow API key.** See [**generating an API token**](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token).
 - **An MCP-compatible AI agent installed locally**, such as [**Claude Code**](https://www.claude.com/product/claude-code), [**Gemini CLI**](https://github.com/google-gemini/gemini-cli), or [**Codex**](https://github.com/openai/codex).
 - **A FlutterFlow project ID** (only if you're editing an existing project).
-::: 
+:::
 
 :::tip[Using Claude Code?]
 The [**FlutterFlow plugin for Claude Code**](./build-with-claude-code.md) can handle the CLI install and API key setup for you, as an alternative to the manual setup below.
@@ -113,9 +125,8 @@ Each file points the corresponding agent at the FlutterFlow AI MCP server.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/mBJK3OJs4yg0WY3GxSU0?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/mBJK3OJs4yg0WY3GxSU0?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -168,9 +179,8 @@ Choose **option 1** to approve the FlutterFlow AI MCP server (and any others add
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wPBM094bg4iDSWblXpnG?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wPBM094bg4iDSWblXpnG?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -213,9 +223,8 @@ From that point on, the same rules apply as when [editing an existing project](#
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/RnNngmhVpZflzDWqsDBA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/RnNngmhVpZflzDWqsDBA?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -255,9 +264,8 @@ The workspace is now bound to that project. `cd` into the workspace folder, [lau
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/VNb9xlkwjZGrdaeIpUb1?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/VNb9xlkwjZGrdaeIpUb1?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -287,9 +295,8 @@ This is helpful when a page has repeated widgets, nested components, or similar 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Jx4zuTngeaDsJ3ZPKkNI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Jx4zuTngeaDsJ3ZPKkNI?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -334,7 +341,7 @@ So nothing gets silently overwritten, but expect occasional retries when you and
 If you've made visual edits since the agent last read the project, the agent's local snapshot is stale. Two ways to fix it:
 
 - **Ask the agent to refresh.** Most agents call the [`refresh-context`](#mcp-tools) tool on their own when they detect drift, but you can prompt explicitly: "refresh the project context."
-- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest. 
+- **Run it from the CLI.** `flutterflow ai context-check` reports whether the local snapshot is behind, and `flutterflow ai refresh-context <project-id>` pulls the latest.
 
 See [MCP tools](#mcp-tools) for the full command list.
 
@@ -353,9 +360,8 @@ Keep the desktop app and the running app session open for as long as you want li
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/YFO4oGfSMWHGKqaEHRCy?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/YFO4oGfSMWHGKqaEHRCy?embed&show_copy_link=true" title="Build with AI Agents interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

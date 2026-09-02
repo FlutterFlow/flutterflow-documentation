@@ -2,12 +2,19 @@
 slug: /concepts/file-handling/download-file
 title: Download File
 description: Learn how to add download file action into your FlutterFlow app.
-tags: [Media Files, Download Data]
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 3
-keywords: [Media Files, Download Data, Firebase Storage, Supabase Storage]
+keywords:
+  - Media Files
+  - Download Data
+  - Firebase Storage
+  - Supabase Storage
+  - download a file in a FlutterFlow app
+ai_queries:
+  - download a file in a FlutterFlow app
 ---
-
-
 # Download File
 
 The **Download File** action allows you to enable users to download or save files locally on their devices.
@@ -17,9 +24,8 @@ The **Download File** action allows you to enable users to download or save file
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dhlZ7J8kDFNDypyv5TcO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dhlZ7J8kDFNDypyv5TcO?embed&show_copy_link=true" title="Download File interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

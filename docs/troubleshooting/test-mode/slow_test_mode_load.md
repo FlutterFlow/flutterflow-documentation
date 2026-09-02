@@ -1,9 +1,18 @@
 ---
-keywords: ['test mode', 'slow load', 'run mode']
+keywords:
+  - test mode
+  - slow load
+  - run mode
 slug: /troubleshooting/test-mode/slow-test-mode-load
 title: Slow Loading in Test Mode
+description: >-
+  If Test Mode takes several minutes to load or fails entirely, the issue may
+  stem from your browser, network, or project configuration.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Slow Loading in Test Mode
 
 If Test Mode takes several minutes to load or fails entirely, the issue may stem from your browser, network, or project configuration. This guide walks you through the most common causes and how to resolve them.
@@ -44,7 +53,11 @@ Projects with many pages, assets, or custom code may take longer to compile. Fol
 
 :::info[Additional Resources]
 If the issue persists after following the steps above, check the
-**[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article. 
+**[official support](https://intercom.help/flutterflow/en/articles/7052737-test-mode-is-not-loading-or-is-very-slow-it-takes-a-long-time-to-load-the-app)**  article.
 :::
 
 Following these steps should resolve most Test Mode performance issues and reduce load times for future previews.
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

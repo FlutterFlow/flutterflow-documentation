@@ -1,12 +1,19 @@
 ---
 slug: /exporting/push-to-github
 title: Push to GitHub Repo
-description: Learn how to connect your FlutterFlow project to a GitHub repository and manage custom code.
-tags: [GitHub, Custom Code]
+description: >-
+  Learn how to connect your FlutterFlow project to a GitHub repository and
+  manage custom code.
+tags:
+  - FlutterFlow
+  - Code Export
 sidebar_position: 0
-keywords: [GitHub, Collaboration, FlutterFlow, Custom Code]
+keywords:
+  - GitHub
+  - Collaboration
+  - FlutterFlow
+  - Custom Code
 ---
-
 # Push to GitHub Repo
 
 This guide provides instructions on how to connect your FlutterFlow project to a GitHub repository and manage custom code.
@@ -25,9 +32,8 @@ Here’s how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/UhBD10h3wufXyozCBFhK?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/UhBD10h3wufXyozCBFhK?embed&show_copy_link=true" title="Push to GitHub Repo interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -47,16 +53,15 @@ Here’s how you do it:
 <p></p>
 
 2. Once the repository is created, install the [FlutterFlow GitHub App](https://github.com/apps/flutterflow-github-app) in your GitHub account.
-    
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/bxvvWOrBV7RFzfa2lEDP?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/bxvvWOrBV7RFzfa2lEDP?embed&show_copy_link=true" title="Push to GitHub Repo interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -83,9 +88,8 @@ Here’s how you do it:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/f6L33Z7nNg7QNKeWQMWg?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/f6L33Z7nNg7QNKeWQMWg?embed&show_copy_link=true" title="Push to GitHub Repo interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

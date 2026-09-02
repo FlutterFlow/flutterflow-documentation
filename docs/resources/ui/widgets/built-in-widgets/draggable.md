@@ -1,7 +1,17 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Draggable + DragTarget
+description: >-
+  The Draggable widget is used to make a widget that can be dragged and dropped
+  to a different location within the app.
+keywords:
+  - Draggable + DragTarget
+  - Draggable
+  - Built In Widgets
 ---
-
 # Draggable + DragTarget
 
 The Draggable widget is used to make a widget that can be dragged and dropped to a different location within the app. It allows users to interact with the app by moving an item using touch gestures or a mouse. The DragTarget widget is used in conjunction with the Draggable widget to specify where a dragged item can be dropped. It creates a region that can accept the data carried by the Draggable widget.
@@ -19,10 +29,8 @@ Let's see how to add a drag-and-drop functionality by building an example that a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/68dcc413ad664a7e887e4e305aaec6c2?sid=59c1dcf4-2b71-4dd4-9f13-4cee933bcaf4"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/68dcc413ad664a7e887e4e305aaec6c2?sid=59c1dcf4-2b71-4dd4-9f13-4cee933bcaf4" title="Draggable + DragTarget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -47,11 +55,11 @@ The steps to build such an example are as follows:
 
 ### 1. Create page state variable
 
-In this example, we have two images of a shelf: one with empty space for one plant and another 
-with all plants on the shelf. To control which image to show based on whether the correct item 
-is dropped on the shelf, we need a 
-[page state variable](../../pages/page-lifecycle.md#page-state). 
-Therefore, 
+In this example, we have two images of a shelf: one with empty space for one plant and another
+with all plants on the shelf. To control which image to show based on whether the correct item
+is dropped on the shelf, we need a
+[page state variable](../../pages/page-lifecycle.md#page-state).
+Therefore,
 [create a page state variable](../../pages/page-lifecycle.md#creating-a-page-state)
 named `isShelfFull` with the datatype *Boolean* and set its default value to *False*.
 
@@ -70,7 +78,7 @@ As we proceed in this section, you'll learn how this information is crucial for 
 
 In this example, the draggable items are a plant, a spoon, and a football. Let's see how to add them:
 
-1. Inside the **Row** widget, add 
+1. Inside the **Row** widget, add
 **Draggable** widgets directly from the widget tree or canvas area.
 2. Inside the **Draggable** widget, you can add any widget as a child widget. For this example, we use the **Image** widget.
 3. To add data to draggable widgets, select the **Draggable widget > Properties Panel > Draggable Properties >** specify the **Type** of the data and its **Value**.
@@ -80,10 +88,8 @@ In this example, the draggable items are a plant, a spoon, and a football. Let's
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/09755c639a8f4aaaa2ea2df8bb8b0324?sid=c4738082-d7ee-4e9b-8940-e887334e476b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/09755c639a8f4aaaa2ea2df8bb8b0324?sid=c4738082-d7ee-4e9b-8940-e887334e476b" title="Draggable + DragTarget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -128,10 +134,8 @@ Let's see how to add DragTarget widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-com/embed/ffe78e15510d4cf2b34c1bbe0a54bad2?sid=97dadbab-779b-41ac-a23f-4f8d42e067b3"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ffe78e15510d4cf2b34c1bbe0a54bad2?sid=97dadbab-779b-41ac-a23f-4f8d42e067b3" title="Draggable + DragTarget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -157,13 +161,13 @@ The DragTarget widget provides you with the various drag events (aka callbacks) 
 Here are they:
 
 - **On Drag Accept:** Actions under this are triggered when the data is dropped over the DragTarget.
-- **On Drag Enter:** Actions under this are triggered when the data is being dragged over 
+- **On Drag Enter:** Actions under this are triggered when the data is being dragged over
   DragTarget.
-- **On Drag Exit:** Actions under this are triggered when a draggable item that was previously 
+- **On Drag Exit:** Actions under this are triggered when a draggable item that was previously
   over the DragTarget leaves its area. For example, In the shopping app, if the user decides not to drop the item into the cart and moves it away, this event callback can be used to remove the highlight from the shopping cart.
 
 :::tip
-You can use On Drag Accept or On Drag Enter to determine if DragTarget can receive the 
+You can use On Drag Accept or On Drag Enter to determine if DragTarget can receive the
 data and accordingly update the app state.
 
 It's crucial to think about the user experience you wish to create. For instance, if you aim to trigger an action as soon as an item enters the drop area, utilize On Drag Enter along with On Drag Exit. Conversely, if your action should occur only after the item has been dropped, then On Drag Accept, paired with On Drag Exit, is your go-to option.
@@ -171,7 +175,7 @@ It's crucial to think about the user experience you wish to create. For instance
 
 Let's see how to add drag events for this example:
 
-1. Select **DragTarget** widget, select **Actions** from the Properties Panel (the right menu), 
+1. Select **DragTarget** widget, select **Actions** from the Properties Panel (the right menu),
 and click **Open**. This will open an **Action Flow Editor** in a new popup window.
 2. To ensure that only a plant item is being dropped:
 
@@ -186,10 +190,8 @@ and click **Open**. This will open an **Action Flow Editor** in a new popup wind
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.
-  com/embed/53acd90e5f394581951173d4626c68a9?sid=0438be54-ed23-46e8-9f45-2cc36974037d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/53acd90e5f394581951173d4626c68a9?sid=0438be54-ed23-46e8-9f45-2cc36974037d" title="Draggable + DragTarget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

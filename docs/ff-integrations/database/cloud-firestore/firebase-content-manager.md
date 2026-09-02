@@ -1,15 +1,24 @@
 ---
 slug: /integrations/database/cloud-firestore/firestore-content-manager
 title: Firestore Content Manager
-description: Learn how to use the Firestore Content Manager in your FlutterFlow app to manage Firestore data efficiently.
-tags: [Firestore, Database, Content Manager, Cloud Firestore]
+description: >-
+  Learn how to use the Firestore Content Manager in your FlutterFlow app to
+  manage Firestore data efficiently.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 5
-keywords: [FlutterFlow, Firestore, Database, Content Manager, Cloud Firestore]
+keywords:
+  - FlutterFlow
+  - Firestore
+  - Database
+  - Content Manager
+  - Cloud Firestore
 ---
-
 # Firestore Content Manager
 
-The Firestore Content Manager provides an easy way to visually create, edit, and add documents 
+The Firestore Content Manager provides an easy way to visually create, edit, and add documents
 to your [**Firestore database**](getting-started.md).
 
 :::info
@@ -23,8 +32,8 @@ Before getting started with this section, ensure you:
 1. Become familiar with [**Structuring the Firebase Database**](getting-started.md#structuring-the-database).
 2. Completed all steps in the [**Firebase Setup**](../../firebase/connect-to-firebase-setup.md).
 3. Create a [**Collection**](creating-collections.md).
-4. [**Defined the Fields**](creating-collections.md#define-schema-creating-fields) for the collection. Only fields defined in 
-   your Firebase schema are 
+4. [**Defined the Fields**](creating-collections.md#define-schema-creating-fields) for the collection. Only fields defined in
+   your Firebase schema are
    shown in the Firebase Content Manager.
 :::
 
@@ -39,22 +48,21 @@ Before you add a new document to the collection, make sure you have some Fields 
 
 To add a document:
 
-1. Head to the **Firestore** (left side Navigation Menu) and click **Manage Content**. This will 
+1. Head to the **Firestore** (left side Navigation Menu) and click **Manage Content**. This will
 open up a new browser window.
 2. Select the **Collection** to which you want to add a document and then select + **Add Document.** A popup will appear.
 3. Enter the information for the record and click **Add Document**.
 
 :::caution
-If you get this error "**Could not create an account as firebase@flutterflow.io to your Firebase 
-project**", just enable the '[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md)' in your 
-Firebase 
+If you get this error "**Could not create an account as firebase@flutterflow.io to your Firebase
+project**", just enable the '[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md)' in your
+Firebase
 project.
 
 ![img_13.png](img_13.png)
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/a9a406bd5ee140a9bd0570d0dc013314?sid=6e1d5fc4-063f-4bb9-8732-524abebfbc09" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/a9a406bd5ee140a9bd0570d0dc013314?sid=6e1d5fc4-063f-4bb9-8732-524abebfbc09" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -83,7 +91,7 @@ Zoo,"(40.85452267684994, -73.8774290321384)",2022-11-04 03:05:54
 ```
 Here's how you upload the CSV file:
 
-1. Select the **Collection** and click the **Upload CSV** button (see top right side). A popup 
+1. Select the **Collection** and click the **Upload CSV** button (see top right side). A popup
 will open.
 2. Click **Select File** and upload your CSV file.
 3. Now, you can choose the **Separator Type** and enter the **Number of Rows to Upload**. If you leave this empty, all records will be imported.
@@ -97,15 +105,13 @@ will open.
   <figcaption class="centered-caption">Formatting issue</figcaption>
 </figure>
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/483f870f1c3142fbbf51044a90528dd2?sid=94dbe172-ce4f-42e2-8606-904be1e36225" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/483f870f1c3142fbbf51044a90528dd2?sid=94dbe172-ce4f-42e2-8606-904be1e36225" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
 If your CSV file contains additional fields, you'll go through a quick *field import process* that will add the new fields with their data in your collection.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/52e2f2afce104f63a87e1e935ebd8e1f?sid=435a3702-a1cf-4a60-a97c-5b8d0f2a55f2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/52e2f2afce104f63a87e1e935ebd8e1f?sid=435a3702-a1cf-4a60-a97c-5b8d0f2a55f2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -135,8 +141,7 @@ To add a document reference:
     1. Find the **Field** that accepts document reference and **paste** it
     2. Click **Add Document**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/4a967e69a73f4654a14e208ba2c599fb?sid=38acc42c-2df2-4acd-a16b-c6b67ae6d786" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/4a967e69a73f4654a14e208ba2c599fb?sid=38acc42c-2df2-4acd-a16b-c6b67ae6d786" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -160,8 +165,7 @@ Select the **Collection** you would like to add a document to and then select + 
 To modify the given Date Time, click on the Date Time Field again to open the Date Picker dialog.
 :::
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/60bccdc46f4d4f41a5daae3176c10a14?sid=2742657c-a1ac-418f-b790-48ca15d95cf6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/60bccdc46f4d4f41a5daae3176c10a14?sid=2742657c-a1ac-418f-b790-48ca15d95cf6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -181,8 +185,7 @@ Select the **Collection** you would like to add a document to and then select + 
    * Click on the icon to find the place and get the LatLng.
 2. Click **Add Document**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1f0d58f3d1f64f6ab5e40fe34d49fc39?sid=de5cd66e-2b99-4fea-8fb1-8c5eb2c5008a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/1f0d58f3d1f64f6ab5e40fe34d49fc39?sid=de5cd66e-2b99-4fea-8fb1-8c5eb2c5008a" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -210,14 +213,13 @@ To add data to a custom data type field:
 
 Select the **Collection** you would like to add a document to and then select + **Add Document**.A popup will appear.
 1. Find the **Field** that accepts a custom data type.
-2. Select **Tap to Set Fields (Unset)** or **Tap to Edit Fields** (based on whether you are 
+2. Select **Tap to Set Fields (Unset)** or **Tap to Edit Fields** (based on whether you are
    creating or updating the document). This will open a new popup.
 3. Enter the values for the fields of the custom data type.
 4. Select **Save Data**.
 5. Click **Add Document**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/f16b8393e86342848b5c2d361f184956?sid=05f7a626-6de1-49cb-a730-73ee74e8473d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/f16b8393e86342848b5c2d361f184956?sid=05f7a626-6de1-49cb-a730-73ee74e8473d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -228,13 +230,12 @@ com/embed/f16b8393e86342848b5c2d361f184956?sid=05f7a626-6de1-49cb-a730-73ee74e84
 
 To update a document:
 
-1. Select the **pencil icon** in the row of the Document you want to update**.** You can also open 
+1. Select the **pencil icon** in the row of the Document you want to update**.** You can also open
 the record by long-pressing any field in the Document (excluding the ID).
 2. A popup will appear. Update the document as needed and then select **Update Document.**
 3. You will now see the updated information displayed in your collection.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/7d528b68a69346f2bdd51b7c5152d695?sid=5021b80a-ebe2-44cd-a0f6-87bb008a9497" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Firestore Content Manager interactive tutorial" src="https://www.loom.com/embed/7d528b68a69346f2bdd51b7c5152d695?sid=5021b80a-ebe2-44cd-a0f6-87bb008a9497" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 ---
@@ -258,7 +259,7 @@ To fix this issue, you must [**deploy the Firestore Rules**](firestore-rules.md#
 <details>
 <summary>Getting the error "Could not create an account as firebase@flutterflow.io to your Firebase project.</summary>
 
-If you encounter such an issue, you just need to enable the 
-[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md) in your 
+If you encounter such an issue, you just need to enable the
+[**Email Sign-In**](../../authentication/firebase-auth/email-sign-in.md) in your
 Firebase project.
 </details>

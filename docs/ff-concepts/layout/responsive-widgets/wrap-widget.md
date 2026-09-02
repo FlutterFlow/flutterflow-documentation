@@ -1,15 +1,20 @@
 ---
 slug: /concepts/layouts/wrap
 title: Wrap
-description: Learn how to add the Wrap widget in your FlutterFlow app.
-tags: [Wrap, Widget, Concepts]
+description: Arrange FlutterFlow widgets into automatically wrapping horizontal or vertical runs and configure spacing, alignment, direction, and clipping.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Wrap, Concepts]
+keywords:
+  - FlutterFlow
+  - Wrap
+  - Concepts
+last_verified: 2026-09-02
 ---
-
 # Wrap
 
-The Wrap widget is similar to Row and Column as it shows its children one after another. If there is not enough space to show your item, the Wrap widget will automatically place it in a new row or column.
+The **Wrap** widget lays out children in runs. When the current run has insufficient room, the next child moves to a new row for a horizontal Wrap or a new column for a vertical Wrap. Unlike a Row or Column, Wrap is designed to create additional runs rather than keep every child on one line.
 
 ## Adding Wrap widget
 
@@ -38,9 +43,9 @@ To change the direction in which the items are added:
 2. Move to the Property Editor and scroll down to the **Wrap Properties** section.
 3. Spot the **Direction** dropdown, change it to **Vertical**.
 
-The Horizontal Direction makes the Wrap widget work like a Row while the Vertical Direction makes the Wrap widget work like a Column.
+**Horizontal** fills a row and then creates another row. **Vertical** fills a column and then creates another column.
 
-![wrap-change-direction.gif](imgs/wrap-change-direction.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Changing the Wrap widget direction"}><source src={require("./imgs/wrap-change-direction.mp4").default} type="video/mp4" /></video>
 
 ### Adding Space Between Items
 
@@ -49,14 +54,14 @@ To add space between items:
 1. Select the **Wrap** from the widget tree or from the canvas area.
 
 2. Move to the Property Editor and scroll down to the **Wrap Properties** section.
-3. In the **Spacing** input box, enter the value as 10. If the **Direction** is set to **Horizontal**, Wrap will insert the empty space of 10px vertically between the items. and If the **Direction** is set to **Vertical**, Wrap will insert the empty space of 10px horizontally between the items.
-4. In the **Run** **Spacing** input box, enter the value as 15. If the **Direction** is set to **Horizontal**, Wrap will insert the empty space of 15px horizontally between the items. and If the **Direction** is set to **Vertical**, Wrap will insert the empty space of 15px vertically between the items.
+3. In **Spacing**, enter the distance between children within each run. For a horizontal Wrap this is horizontal space; for a vertical Wrap it is vertical space.
+4. In **Run Spacing**, enter the distance between runs. For a horizontal Wrap this is vertical space between rows; for a vertical Wrap it is horizontal space between columns.
 
 ![wrap-space-between-items.gif](imgs/wrap-space-between-items.gif)
 
 ### Adjust Alignment
 
-The default Main Axis for a Wrap Widget is the horizontal axis, so adjusting this will change how the child widgets are horizontally distributed in the Wrap widget.
+**Alignment** distributes children within each run on the main axis. That axis is horizontal when **Direction** is Horizontal and vertical when Direction is Vertical.
 
 To change the Alignment:
 
@@ -65,11 +70,11 @@ To change the Alignment:
 2. Move to the Property Editor and scroll down to **Alignment**.
 3. Select from the options displayed including **Start**, **Center**, **End**, **Space** **evenly**, **Space** **between**, and **Space** **around**.
 
-![wrap-adjust-alignment.gif](imgs/wrap-adjust-alignment.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Adjusting Wrap widget alignment"}><source src={require("./imgs/wrap-adjust-alignment.mp4").default} type="video/mp4" /></video>
 
 ### Adjust Run Alignment
 
-The default Run Axis for a Wrap Widget is the vertical axis, so adjusting this will change how the child widgets are vertically distributed in the Wrap widget.
+**Run Alignment** distributes the runs on the cross axis. That axis is vertical when **Direction** is Horizontal and horizontal when Direction is Vertical.
 
 To change the Run Alignment:
 
@@ -80,9 +85,13 @@ To change the Run Alignment:
 
 ![wrap-run-alignment.gif](imgs/wrap-run-alignment.gif)
 
+### Adjust Cross Axis Alignment
+
+**Cross Axis Alignment** aligns children relative to one another within the same run. Choose **Start**, **Center**, or **End**. The cross axis is vertical for a horizontal Wrap and horizontal for a vertical Wrap.
+
 ### Adding Items From Bottom
 
-By default, the new items are always added from top to bottom direction. In a very rare case, you may need to change this behavior.
+**Vertical Direction** defaults to **Down**. It controls the order of layout on the vertical axis and how vertical Start and End are interpreted. Choose **Up** when the vertical order should be reversed.
 
 To add items from the bottom to top:
 
@@ -96,14 +105,14 @@ To add items from the bottom to top:
 
 ### Clipping The Items
 
-If you add several items to the Wrap widget that exceed the size of the patent widget, the Wrap widget will continue to display the overflowing items. However, you can choose to hide the overflowing items using the Clip Behaviour property:
+If the Wrap exceeds the bounds of its parent, its default **No clip** behavior can paint content outside those bounds. Use **Clip Behavior** when that overflow must be hidden:
 
 To clip the overflowing items:
 
 1. Select the **Wrap** from the widget tree or from the canvas area.
 
-2. Move to the Property Editor and scroll down to **Clip Behaviour**.
-3. Change it to **Clip Content**.
+2. Move to the Property Editor and scroll down to **Clip Behavior**.
+3. Change it to **Clip content**.
 
 ![wrap-clip-items.gif](imgs/wrap-clip-items.gif)
 
@@ -118,9 +127,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/Ameag92MqTw"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/Ameag92MqTw" title="Wrap interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -138,4 +146,3 @@ If you prefer watching a video tutorial, here's the one for you:
     </iframe>
 </div>
 <p></p>
-

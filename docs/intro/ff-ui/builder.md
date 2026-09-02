@@ -1,16 +1,23 @@
 ---
 slug: /flutterflow-ui/builder
 title: App Builder
-description: Explore the App Builder in FlutterFlow, featuring a comprehensive interface with 
-  four main sections-Navigation Menu, Toolbar, Canvas, and Properties Panel.
-tags: [App Builder, FlutterFlow, UI, Design]
+description: >-
+  Explore the App Builder in FlutterFlow, featuring a comprehensive interface
+  with four main sections-Navigation Menu, Toolbar, Canvas, and Properties
+  Panel.
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
 sidebar_position: 1
-keywords: [App Builder, FlutterFlow, UI, Design]
+keywords:
+  - App Builder
+  - FlutterFlow
+  - UI
+  - Design
 ---
-
 # App Builder
 
-On opening the project, you'll see the App Builder, which consists of four main sections: 
+On opening the project, you'll see the App Builder, which consists of four main sections:
 [Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties Panel](#properties-panel).
 
 ![navigation-menu.avif](imgs/navigation-menu.avif)
@@ -49,7 +56,7 @@ In the [Canvas Area](canvas.md), you can see a preview of a device's screen and 
 
 ## Properties Panel
 
-The Properties Panel lets you modify both the visual appearance and interactive behavior of UI 
+The Properties Panel lets you modify both the visual appearance and interactive behavior of UI
 elements on the canvas. It allows you to add [Actions](../../resources/control-flow/functions/action-flow-editor.md), set up a [Backend Query](../../resources/control-flow/backend-logic/backend-query/backend-query.md), add [Animations](../../ff-concepts/animations/animations.md) and more.
 
 The Properties Panel will vary slightly depending on the entity you have selected. To explore the details of each Properties Panel, click on the following:

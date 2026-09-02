@@ -1,5 +1,16 @@
-
-
+---
+title: Payments & Billing
+description: >-
+  This section contains information on the payment methods we accept and how to
+  change your payment method.
+tags:
+  - FlutterFlow
+  - Accounts & Billing
+keywords:
+  - Payments & Billing
+  - Payments Billing
+  - Accounts Billing
+---
 # Payments & Billing
 This section contains information on the payment methods we accept and how to change your payment method.
 
@@ -51,3 +62,7 @@ You can change your default payment method for next month's purchase using these
 :::note
 You can change the default payment method by selecting the three dots next to the payment method and then selecting **Make Default.**
 :::
+
+## Related documentation
+
+See [Account Management](/accounts-billing/account-management) for a related FlutterFlow workflow.

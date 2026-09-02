@@ -1,10 +1,17 @@
 ---
 slug: /before-you-begin/setup-flutterflow
 title: Setting Up FlutterFlow
-description: Ensure you meet system requirements and grasp technical concepts for smooth building in FlutterFlow.
+description: >-
+  Ensure you meet system requirements and grasp technical concepts for smooth
+  building in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Getting Started
+keywords:
+  - Setting Up FlutterFlow
+  - Setup Flutterflow
+  - Before You Begin
 ---
-
-
 # Create an account
 
 Create your free account to get started with FlutterFlow. After you've set up your account, you'll be able to create as many projects as you like.
@@ -16,10 +23,10 @@ You can [**sign up**](https://app.flutterflow.io/create-account) via Apple, Goog
 The FlutterFlow application can be accessed from your browser or installed as a desktop app.
 
 ### General recommendations:
-- Use a screen that is at least **1280 x 1024** 
+- Use a screen that is at least **1280 x 1024**
 
 ### Browser recommendations:
-- FlutterFlow works best on **Google Chrome** 
+- FlutterFlow works best on **Google Chrome**
 - We recommend keeping your browser up-to-date, specifically within the latest two versions
 - You should allow pop-up and redirects and ClipBoard from _app.flutterflow.io_.
 
@@ -36,9 +43,6 @@ Some Windows users may experience a crash. To fix this, install the [**Microsoft
 For details on target platform system requirements, please see the [Flutter documentation](https://docs.flutter.dev/reference/supported-platforms).
 
 ### Desktop vs Web:
-We recommend using the desktop application for improved performance and access to features like [**local run**](../../testing-deployment-publishing/running-your-app/local-run.md). 
+We recommend using the desktop application for improved performance and access to features like [**local run**](../../testing-deployment-publishing/running-your-app/local-run.md).
 
-However, our desktop applications are currently in a preview phase, which may result in some instability. 
-
-
-
+However, our desktop applications are currently in a preview phase, which may result in some instability.

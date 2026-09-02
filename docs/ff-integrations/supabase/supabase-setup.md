@@ -1,12 +1,23 @@
 ---
 slug: /integrations/supabase/setup
 title: Supabase Setup
-description: Learn how to set up Supabase in your FlutterFlow app for database and authentication functionalities.
-tags: [Supabase, Setup, Integration]
+description: >-
+  Learn how to set up Supabase in your FlutterFlow app for database and
+  authentication functionalities.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Supabase
 sidebar_position: 1
-keywords: [FlutterFlow, Supabase, Setup, Integration]
+keywords:
+  - FlutterFlow
+  - Supabase
+  - Setup
+  - Integration
+  - connect FlutterFlow to Supabase
+ai_queries:
+  - connect FlutterFlow to Supabase
 ---
-
 # Supabase Setup
 
 You can either use [Supabase OAuth](#connect-with-supabase-oauth) for a quick and secure setup or [connect using API Keys](#connect-with-supabase-api-keys) for self-hosted setups.
@@ -30,9 +41,8 @@ To connect with Supabase using the OAuth method, follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4RrHnQSlk7xXhbf1WMWn?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4RrHnQSlk7xXhbf1WMWn?embed&show_copy_link=true" title="Supabase Setup interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -57,7 +67,7 @@ After [**creating**](#create-tables-in-supabase) or updating tables in your Supa
 
 ## Connect with Supabase API Keys
 
-To connect using Supabase API Keys, you will manually link your Supabase project with FlutterFlow by providing the required credentials. 
+To connect using Supabase API Keys, you will manually link your Supabase project with FlutterFlow by providing the required credentials.
 
 :::warning
 Please note that this method is only intended for **self-hosted Supabase databases**.
@@ -75,10 +85,9 @@ After [**creating**](#create-tables-in-supabase) or updating tables in your Supa
 :::
 
 <figure>
-   <div class="video-container"><iframe src="https://www.loom.
-   com/embed/47e1478146f04e83a9cfef5a873ad49b?sid=dea01d9a-7262-4fdd-9cbe-4d7bc50f9ff3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-   
-   
+   <div class="video-container"><iframe title="Supabase Setup interactive tutorial" src="https://www.loom.com/embed/47e1478146f04e83a9cfef5a873ad49b?sid=dea01d9a-7262-4fdd-9cbe-4d7bc50f9ff3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -93,16 +102,14 @@ It's important to note that while disabling Row Level Security (RLS) can be usef
 Here's an example of creating an "assignments" table with a [foreign key relationship](https://supabase.com/docs/guides/database/tables#joining-tables-with-foreign-keys) from `created_by` column to `public.users.id` with `on delete cascade`. This ensures that if a user is deleted from the "public.users" table, any data related to that user stored in your "assignments" table will also be deleted.
 
 <figure>
-    <div class="video-container"><iframe src="https://www.loom.
-com/embed/048ec7fadee04a11acab7c0ff65e0593?sid=3a429983-8512-4d60-af85-f2ffc1bac862" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="video-container"><iframe title="Supabase Setup interactive tutorial" src="https://www.loom.com/embed/048ec7fadee04a11acab7c0ff65e0593?sid=3a429983-8512-4d60-af85-f2ffc1bac862" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
 
 
 :::note
-To use Supabase authentication, you must 
+To use Supabase authentication, you must
 [**create a "users" table**](../authentication/supabase-auth/initial-setup.md#1-creating-a-users-table).
 
 :::
-

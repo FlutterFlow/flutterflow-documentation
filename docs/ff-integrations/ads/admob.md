@@ -1,10 +1,19 @@
 ---
 slug: /integrations/ads/admob
 title: AdMob
-description: Learn how to add AdMob in your FlutterFlow app.
-tags: [AdMob, AdBanner, Interstitial Ad]
+description: >-
+  Adding ads to your FlutterFlow project can be a powerful way to monetize your
+  app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Ads
 sidebar_position: 1
-keywords: [FlutterFlow, AdMob, AdBanner, Interstitial Ad]
+keywords:
+  - FlutterFlow
+  - AdMob
+  - AdBanner
+  - Interstitial Ad
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -31,9 +40,8 @@ You should create two AdMob apps to display ads in both Android and iOS versions
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/xFOz1T9ksdXL3ElhtMW3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/xFOz1T9ksdXL3ElhtMW3?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -63,9 +71,8 @@ To do so, get the app key from the AdMob App Settings, navigate to **Settings an
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZCwInN2vMMPBAknkR5yL?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZCwInN2vMMPBAknkR5yL?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -97,9 +104,9 @@ Below are some AdMob settings (under **Settings and Integrations** menu) that yo
 - **Child-Directed Settings**: To indicate that your content is directed towards children, enable this option. This will ensure that Google treats your content as child-directed when making ad requests.
 - **Users Under the Age of Consent**: This setting allows you to comply with privacy regulations for users in the European Economic Area (EEA) who are under the age of consent. It ensures that ad requests are appropriately handled, limiting data collection and targeting to meet legal requirements. This is important to protect user privacy and to avoid penalties for non-compliance.
 - **Ad Content Filtering**: To filter the type of ads displayed, select the appropriate content rating. AdMob will ensure that ads returned for these requests have a content rating at or below the level selected.
-    
+
     These are the levels you can set:
-    
+
     - **G (General Audience)**: Suitable for all audiences, with no adult content or explicit themes.
     - **PG (Parental Guidance)**: Ads may contain mild content, suitable for children with parental supervision.
     - **T (Teen)**: Ads with content appropriate for teenagers; may include some mature topics.
@@ -131,9 +138,8 @@ By default, ad banners are set to a dimension of 100 (width) x 50 (height).
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vlm11muoQuU7YRS2AzQW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vlm11muoQuU7YRS2AzQW?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -154,7 +160,7 @@ By default, ad banners are set to a dimension of 100 (width) x 50 (height).
 
 :::tip
 
-While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development. 
+While building your app, clicking on too many ads may cause your AdMob account to be flagged for invalid activity. To avoid this, it's recommended to enable **Test Ads** during development.
 :::
 
 ### Testing AdBanner
@@ -200,9 +206,8 @@ To get the ad unit ID, go to the AdMob dashboard, select your app under **Apps**
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/2wSXjAoYe6V4y1pZKLyB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/2wSXjAoYe6V4y1pZKLyB?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -238,9 +243,8 @@ While building your app, clicking on too many ads may cause your AdMob account t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6EsZj1z7A2tUSOnYUzrw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/6EsZj1z7A2tUSOnYUzrw?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -268,9 +272,8 @@ Now, you can display the ad using the **Show Interstitial Ad** action. This acti
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4DUgIr5gJGDY7P6yixLH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4DUgIr5gJGDY7P6yixLH?embed&show_copy_link=true" title="AdMob interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

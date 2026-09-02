@@ -1,7 +1,17 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Tooltip
+description: >-
+  The Tooltip widget provides additional information or visual cues of a widget
+  in a small popup box.
+keywords:
+  - Tooltip
+  - Built In Widgets
+  - Widgets
 ---
-
 # Tooltip
 
 The Tooltip widget provides additional information or visual cues of a widget in a small popup box. It appears when the user taps or long-presses the widget or hovers over it. It's typically used to provide an explanation about the function of a widget.
@@ -16,7 +26,7 @@ It is not frequently used on touch devices where tapping or long-pressing can in
 
 To add the *Tooltip* widget to your app:
 
-1. Identify the widget you want to provide a description for and right-click on it. Select **Wrap 
+1. Identify the widget you want to provide a description for and right-click on it. Select **Wrap
 Widget** and then select **Tooltip** widget.
 2. Now select the **Tooltip** widget, move to the **Properties Panel > Message > Text**, and enter the message you want to display.
 
@@ -26,9 +36,8 @@ Widget** and then select **Tooltip** widget.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/DKBr9UPnDliuVPrekbuW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DKBr9UPnDliuVPrekbuW?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -48,7 +57,7 @@ Widget** and then select **Tooltip** widget.
 
 ## Customizing
 
-You can customize the appearance and behavior of this widget using the various properties 
+You can customize the appearance and behavior of this widget using the various properties
 available under the Properties Panel.
 
 ### Component as Tooltip
@@ -62,9 +71,8 @@ To achieve this, simply set the **Tooltip Type** to **Component** and select the
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jnFUZZQ9pmCH5vgvhVVA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jnFUZZQ9pmCH5vgvhVVA?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -92,9 +100,8 @@ Here’s exactly how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vFDY8DNskFzGWKFFmlM4?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vFDY8DNskFzGWKFFmlM4?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -133,9 +140,8 @@ By default, the *Tooltip* appears below the target widget. You can change this s
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/m3AvKjAFREonuvITk9Sw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/m3AvKjAFREonuvITk9Sw?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -165,9 +171,8 @@ To change the tail's size, you can use the **Tail Width** and **Tail Length** pr
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/FjlmVtguwO4OjyB2BdtE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/FjlmVtguwO4OjyB2BdtE?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -225,9 +230,8 @@ The wait duration specifies the amount of time that the Tooltip widget waits bef
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/1QNwHqcvgzN1HGZRS1WT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/1QNwHqcvgzN1HGZRS1WT?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -257,9 +261,8 @@ To change the default duration, move to the **Properties Panel >** set the **Sho
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/k3vqhFfHRAcDgcvzPVde?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/k3vqhFfHRAcDgcvzPVde?embed&show_copy_link=true" title="Tooltip interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

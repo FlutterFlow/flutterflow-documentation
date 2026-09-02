@@ -1,5 +1,16 @@
-
-
+---
+title: Manage Custom Domains
+description: >-
+  All paid plans include one free custom domain, with the option to purchase
+  more if needed.
+tags:
+  - FlutterFlow
+  - Accounts & Billing
+keywords:
+  - Manage Custom Domains
+  - Accounts Billing
+  - FlutterFlow
+---
 # Manage Custom Domains
 
 All paid plans include one free custom domain, with the option to purchase more if needed.
@@ -28,3 +39,7 @@ To remove the custom domain, paid users can go to their [**account**](https://ap
 The **Team** owner can remove domain from the **My Team** page. In the **Custom Domains** section, click **Remove Domains**.
 
 ![remove-domain-team](imgs/remove-domain-team.avif)
+
+## Related documentation
+
+See [Account Management](/accounts-billing/account-management) for a related FlutterFlow workflow.

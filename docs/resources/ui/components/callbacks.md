@@ -1,11 +1,17 @@
 ---
 title: Action Parameters (Callbacks)
 sidebar_position: 4
-tags: [Components, Actions]
-keywords: [Components, Actions, Action Parameter, Callbacks]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Components
+  - Actions
+  - Action Parameter
+  - Callbacks
 description: Learn how to add action parameters or callbacks to custom components.
 ---
-
 # Action Parameters (Callbacks)
 
 In FlutterFlow, callbacks are a way to pass down actions from parent entities (like pages or other
@@ -51,9 +57,8 @@ Now, the page or component that uses this button can use this parameter in its o
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BRHcXG6zWBYLCxaa9ifG?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BRHcXG6zWBYLCxaa9ifG?embed&show_copy_link=true" title="Action Parameters (Callbacks) interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -84,9 +89,8 @@ For example, you can execute the above callback after the image is successfully 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/XEap1vCGTJ4x9Y1lswe3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/XEap1vCGTJ4x9Y1lswe3?embed&show_copy_link=true" title="Action Parameters (Callbacks) interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -123,9 +127,8 @@ You can access the value passed to the callback by navigating to the **Set Varia
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/61EV732tfLpqQAIzLP8G?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/61EV732tfLpqQAIzLP8G?embed&show_copy_link=true" title="Action Parameters (Callbacks) interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -171,3 +174,7 @@ Here, the navigation bar doesn’t require hardcoded routes. Instead, the naviga
 For example, in an **ecommerce mini-app**, the home button navigates to the product listing page, while the main (middle) button opens the shopping cart. In contrast, in a **cab booking mini-app**, the home button navigates to the dashboard, and the main (middle) button opens the quick booking page.
 
 ![navigation-bar-action-parameters.avif](imgs/navigation-bar-action-parameters.avif)
+
+## Related documentation
+
+See [Introduction to Components](/resources/ui/components) for a related FlutterFlow workflow.

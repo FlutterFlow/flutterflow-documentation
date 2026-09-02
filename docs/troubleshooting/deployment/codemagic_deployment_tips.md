@@ -1,7 +1,17 @@
 ---
-keywords: ['deployment', 'tips', 'codemagic']
+keywords:
+  - deployment
+  - tips
+  - codemagic
 slug: /troubleshooting/deployment/codemagic-deployment-tips
 title: CodeMagic Deployment Tips
+description: >-
+  Here are some tips to avoid Deployment issues: - Make sure you've followed all
+  the steps for setting up deployment in your project.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Deployment
 ---
 # CodeMagic Deployment Tips
 

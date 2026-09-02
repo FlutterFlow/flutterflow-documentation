@@ -1,12 +1,18 @@
 ---
 slug: /misc/enterprise
-title: Enterprise
-description: Learn how to use FlutterFlow for Enterprise.
-tags: [Enterprise]
+title: FlutterFlow Enterprise
+description: >-
+  Whitelist URLs Enterprise environments often restrict internet access to
+  enhance security and compliance.
+tags:
+  - FlutterFlow
+  - Policies & Support
 sidebar_position: 1
-keywords: [Enterprise Support Policy, Whitelist URLs]
+keywords:
+  - Enterprise Support Policy
+  - Whitelist URLs
+  - FlutterFlow Enterprise
 ---
-
 # Enterprise
 
 ## Whitelist URLs

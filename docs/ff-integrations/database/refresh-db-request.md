@@ -1,13 +1,20 @@
 ---
 slug: /integrations/database/refresh-db-request
 title: Refresh DB Request Action
-description: Learn how to use the Refresh DB Request action in your FlutterFlow app to refresh your database content.
-tags: [Database, Refresh, Action]
+description: >-
+  Learn how to use the Refresh DB Request action in your FlutterFlow app to
+  refresh your database content.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 4
-keywords: [FlutterFlow, Database, Refresh, Action]
+keywords:
+  - FlutterFlow
+  - Database
+  - Refresh
+  - Action
 ---
-
-
 # Refresh Database Request [Action]
 
 Using this action, you can see the updated values of an item inside the scrollable widgets such as ListView, GridView, StaggeredView, Row, and Column.
@@ -18,9 +25,8 @@ Using this action, you can see the updated values of an item inside the scrollab
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/RHeXnnQJzE4LsuzxJQTE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/RHeXnnQJzE4LsuzxJQTE?embed&show_copy_link=true" title="Refresh DB Request Action interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -51,13 +57,13 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 3. Click on the **+ Add Action**.
 4. On the right side, search and select the **Refresh Database Request** (under *Backend/Database*) action.
 
-   1. From the dropdown, select the widget (e.g., ListView, GridView, etc.) on which you have 
+   1. From the dropdown, select the widget (e.g., ListView, GridView, etc.) on which you have
    added the backend query.
-    
+
    2. By default, the **Wait for Result** option is enabled. That means the subsequent action(s) will only trigger after this action is finished. If any subsequent action is not dependent on this action or you want to trigger them regardless of the completion of this action, you can turn off this option.
    3. When the **Wait for Result** is enabled, you can specify the **Min Wait Time** and **Max Wait Time** in ms (e.g., 1000ms = 1 second).
        * **Min Wait Time**: Time before triggering the following action(s) or refreshing the UI.
-       
+
        * **Max Wait Time**: Time after which the subsequent action(s) will trigger regardless of the completion of this action.
 5. Click **Close**.
 
@@ -70,9 +76,8 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Jd0cQRUg50L0WXNJd56y?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Jd0cQRUg50L0WXNJd56y?embed&show_copy_link=true" title="Refresh DB Request Action interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -91,3 +96,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 </div>
 
 <p></p>
+
+## Related documentation
+
+See [AdMob](/integrations/ads/admob) for a related FlutterFlow workflow.

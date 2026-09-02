@@ -2,11 +2,17 @@
 slug: /integrations/authentication/supabase/email
 title: Email Authentication
 description: Learn how to integrate Email Login of Supabase Auth into your FlutterFlow app.
-tags: [Email Authentication, Authentication, Supabase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 2
-keywords: [FlutterFlow, Email Authentication, Authentication, Supabase]
+keywords:
+  - FlutterFlow
+  - Email Authentication
+  - Authentication
+  - Supabase
 ---
-
 # Email Authentication
 
 Supabase email authentication is a secure and easy way to allow users to sign up and log in to your application using their email and password.
@@ -15,7 +21,7 @@ Supabase email authentication is a secure and easy way to allow users to sign up
 Before getting started with this section, ensure you have,
 
 1. Completed all steps in the [**Supabase setup**](../../supabase/supabase-setup.md)
-2. Completed [**Initial setup**](initial-setup.md) 
+2. Completed [**Initial setup**](initial-setup.md)
    required for authentication.
 :::
 
@@ -25,10 +31,9 @@ Before getting started with this section, ensure you have,
 Let's see how to add a Supabase email authentication by building an example that looks like this:
 
 <figure>
-    <div class="video-container"><iframe src="https://www.loom.
-    com/embed/7d789e3520fd47e38f06a2f9404d04a5?sid=ec15e6af-084e-47c6-8c14-fbb36f1fc174" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    
-    
+    <div class="video-container"><iframe title="Email Authentication interactive tutorial" src="https://www.loom.com/embed/7d789e3520fd47e38f06a2f9404d04a5?sid=ec15e6af-084e-47c6-8c14-fbb36f1fc174" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -70,10 +75,9 @@ The first one creates an account in Supabase and adds an email and password in t
 Here's how it looks:
 
 <figure>
-    <div class="video-container"><iframe src="https://www.loom.
-    com/embed/054ccddb5ed54aaf98a45fd2384525ba?sid=eade0c13-727a-47f5-95b0-d7d66168b694" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-    
-    
+    <div class="video-container"><iframe title="Email Authentication interactive tutorial" src="https://www.loom.com/embed/054ccddb5ed54aaf98a45fd2384525ba?sid=eade0c13-727a-47f5-95b0-d7d66168b694" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -91,8 +95,8 @@ To verify that you have successfully added the email authentication, you can com
 
 <figure>
    ![img_5.png](img_5.png)
-    
-    
+
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -102,9 +106,4 @@ Now that you have successfully added the Supabase email authentication in your a
 
 Here's an example of filtering the to-do list based on the logged-in user using the **Set Variable menu > Authenticated User > User ID** property.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/9a62d44880264177a5ed6d52b78330c8?sid=a52506a8-1f4b-467d-bf41-f30f98361a48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-
-
+<div class="video-container"><iframe title="Email Authentication interactive tutorial" src="https://www.loom.com/embed/9a62d44880264177a5ed6d52b78330c8?sid=a52506a8-1f4b-467d-bf41-f30f98361a48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

@@ -1,10 +1,21 @@
 ---
 slug: /concepts/design-system
 title: Design System
-description: Discover how to create a consistent UI/UX across your app with a design system in FlutterFlow.
-tags: [Design System, UI/UX, Concepts]
+description: >-
+  Discover how to create a consistent UI/UX across your app with a design system
+  in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Design System, UI/UX, Concepts, Colors, Typography & Icons, Theme Widgets]
+keywords:
+  - FlutterFlow
+  - Design System
+  - UI/UX
+  - Concepts
+  - Colors
+  - Typography & Icons
+  - Theme Widgets
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -22,9 +33,8 @@ To solve this issue, you can create a design system outlining common design guid
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/moP9VtkoyjY"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/moP9VtkoyjY" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -64,9 +74,8 @@ To add a design system from a library, start by creating the design system in a 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G3PekDcZNsWYrKoz3xnE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G3PekDcZNsWYrKoz3xnE?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -103,9 +112,8 @@ All imported colors are accessible anytime under **Colors > Custom Colors**.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/84lqVC1ZDkq7EFFnCusm?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/84lqVC1ZDkq7EFFnCusm?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -131,9 +139,8 @@ If you prefer watching a video tutorial, here is the guide for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/kWvWa5PSWhw"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/kWvWa5PSWhw" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -163,9 +170,8 @@ To customize the **Loading Indicators** used in the app, you can make changes in
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/6OiSlYPiCEY1p3fg0kpG?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/6OiSlYPiCEY1p3fg0kpG?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -195,9 +201,8 @@ If you prefer watching a video tutorial, here is the guide for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/3sG-O1lkv0M"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/3sG-O1lkv0M" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -233,23 +238,23 @@ You can modify its color, adjust its thickness, give it a rounded border, and mo
 Here are all the properties you can customize:
 
 1. **Thumb Color:** This changes the color of the draggable portion of the scrollbar, often called the "thumb".
-    
+
     ![thumb-color](../imgs/thumb-color.avif)
-    
+
 2. **Thickness:** This increases width (in a vertical scrollbar) or height (in a horizontal scrollbar).
-    
+
     ![thickness](../imgs/thickness.avif)
 
 3. **Border Radius:** This sets the curvature of the scrollbar's corners. By adjusting the border-radius, you can give the scrollbar a more rounded appearance (higher values) or a more squared appearance (lower values).
-    
+
     ![border-radius](../imgs/border-radius.avif)
 
 4. **Min Thumb Length:** This refers to the smallest size that the draggable portion (thumb) of a scrollbar can be. This ensures that users can always see and interact with the thumb, even when the content is very long.
-    
+
     ![min-thumb-length](../imgs/min-thumb-length.avif)
 
 5. **Main Axis Margin:** This refers to the space or gap along the primary direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the top and bottom spacing, and in a horizontally scrolling list, it refers to the left and right spacing.
-        
+
     ![main-axis-margin](../imgs/main-axis-margin.avif)
 
 6. **Cross Axis Margin:** This refers to the space or gap along the cross direction of the scrollbar. For instance, in a vertically scrolling list, it refers to the left and right spacing, and in a horizontally scrolling list, it refers to the top and bottom spacing.
@@ -258,7 +263,7 @@ Here are all the properties you can customize:
 
 7. **Thumb Always Visible:** This determines whether the draggable "thumb" element of the scrollbar constantly remains visible or fades out when not in use. When enabled, you can also specify whether to show the track as well with custom color and border color.
 8. **Interactive**: Using this property, you can set different colors for different states of the thumb, including when it's hovered over or being dragged.
-    
+
     ![interactive](../imgs/interactive.gif)
 
 ---
@@ -274,9 +279,8 @@ You can modify its color, background color, and stroke width. In the 'Preview' s
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/KHdvetH4Eg46TfDmZQUJ?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/KHdvetH4Eg46TfDmZQUJ?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -315,9 +319,8 @@ To add a new color:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TM3a3VZXOAqip3SiayYS?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TM3a3VZXOAqip3SiayYS?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -343,9 +346,8 @@ To update an existing color in a light and dark mode theme, click on the color a
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/l7w7ZcWyULeWPZ3isSSf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/l7w7ZcWyULeWPZ3isSSf?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -382,9 +384,8 @@ To do so:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/hisiTB9yPaaJCYQmHowL?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/hisiTB9yPaaJCYQmHowL?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -420,9 +421,8 @@ To import from Coolors:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/3DVzE5PVlDbxEm77zvI6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/3DVzE5PVlDbxEm77zvI6?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -458,9 +458,8 @@ To extract and use color from the image:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ASEzke6PpaugRWSqRh3X?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ASEzke6PpaugRWSqRh3X?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -489,9 +488,8 @@ With 'AI Gen Theme,' simply describe the desired color theme for your app, such 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/629f5ee88e26466eaa07b956a7c8a963?sid=38a0ec79-0fa6-4de6-a5fe-58a016f40921"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/629f5ee88e26466eaa07b956a7c8a963?sid=38a0ec79-0fa6-4de6-a5fe-58a016f40921" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -518,9 +516,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/FEulLd7YaNc"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/FEulLd7YaNc" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -596,9 +593,8 @@ You can add the responsive style by following the instructions below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/dVqO19q7mZlQZLpkdW9r?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/dVqO19q7mZlQZLpkdW9r?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -641,9 +637,8 @@ To add the *Custom Fonts*:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Gdq0Nfk15VFWuQT6Evsb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Gdq0Nfk15VFWuQT6Evsb?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -668,9 +663,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/NsR7f1OZeSY"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/NsR7f1OZeSY" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -692,7 +686,7 @@ If you prefer watching a video tutorial, here's the one for you:
 
 ### Custom Icons
 
-Custom icons help reinforce your brand identity and add a unique touch to your app. Before uploading icons to FlutterFlow, you’ll first need to generate them using an icon font generator like [FlutterIcon](https://www.fluttericon.com/) or [IcoMoon](https://icomoon.io/). 
+Custom icons help reinforce your brand identity and add a unique touch to your app. Before uploading icons to FlutterFlow, you’ll first need to generate them using an icon font generator like [FlutterIcon](https://www.fluttericon.com/) or [IcoMoon](https://icomoon.io/).
 
 We’ve also built our **[own SVG to Custom Icon Generator](https://icons.flutterflow.app)** to make the process even easier — feel free to use that instead.
 
@@ -715,9 +709,8 @@ Make sure you have the proper rights or licenses to use the icons in your applic
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oMAqsibJi8B9EdLgVanQ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oMAqsibJi8B9EdLgVanQ?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -754,9 +747,8 @@ To use a custom icon, add the **Icon** widget, move to the properties panel, and
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DYKzHIQ27EaCiQArRlCT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DYKzHIQ27EaCiQArRlCT?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -781,9 +773,8 @@ If you prefer watching a video tutorial, here is the guide for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/rlGkbnhP75g"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/rlGkbnhP75g" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -826,9 +817,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Os2t1MTQEeyJ0CfSfpSJ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Os2t1MTQEeyJ0CfSfpSJ?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -854,9 +844,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/2zr01BrhFOXNYpNDhv85?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/2zr01BrhFOXNYpNDhv85?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -882,9 +871,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/bILuxIsASoJTFyUflxYD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/bILuxIsASoJTFyUflxYD?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -914,9 +902,8 @@ After applying theme widget styling, any previously set properties will be overr
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JlRWSMnrxi5ehHvkRrVH?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JlRWSMnrxi5ehHvkRrVH?embed&show_copy_link=true" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -944,9 +931,8 @@ If you prefer watching a video tutorial, here's the one for you:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/Wcg3FVNkon8"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/Wcg3FVNkon8" title="Design System interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

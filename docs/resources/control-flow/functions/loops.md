@@ -1,12 +1,21 @@
 ---
 slug: /resources/functions/loops
 title: Loops
-description: Learn how to implement loops in your FlutterFlow app to iterate over data and perform repeated actions.
-tags: [Loops, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+description: >-
+  Learn how to implement loops in your FlutterFlow app to iterate over data and
+  perform repeated actions.
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 sidebar_position: 5
-keywords: [Loops, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Loops
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Loops
 
 **Loops** in FlutterFlow allow you to perform repetitive tasks without writing complex code. This is useful when working with lists of data or when you want to repeat actions a certain number of times.
@@ -15,7 +24,7 @@ There are two types of loops supported in FlutterFlow:
 
 ## While Condition Loops
 
-A **While Condition** loop requires a condition. The actions within the loop will continue to trigger as long as the condition holds true. When the condition becomes false, the loop terminates, and the next actions in the workflow will trigger. 
+A **While Condition** loop requires a condition. The actions within the loop will continue to trigger as long as the condition holds true. When the condition becomes false, the loop terminates, and the next actions in the workflow will trigger.
 
 For example, you can use a While Condition loop to continuously check if a user is still within a geofenced area. As long as the condition `isUserInLocation == true` holds, the app might keep checking for updates or show a live indicator.
 
@@ -47,7 +56,7 @@ You can also add a loop inside another loop to handle related data structures. F
 :::
 
 
-## Loop Breaks 
+## Loop Breaks
 
 :::danger[AVOID an INFINITE LOOP]
 Be careful with loop actions, as they can cause your app to enter an infinite loop if the condition never becomes false. Always ensure that the condition will be met at some point so the loop can exit.
@@ -55,9 +64,9 @@ Be careful with loop actions, as they can cause your app to enter an infinite lo
 
 If the intended operation is completed before the condition becomes false, you must add a **Loop Break** action in your workflow to exit the loop.
 
-**Loop Breaks** are statements used to exit a loop prematurely, before the loop's normal termination 
+**Loop Breaks** are statements used to exit a loop prematurely, before the loop's normal termination
 condition is met. They are typically used to stop the loop when a certain condition is satisfied,
-preventing unnecessary iterations and allowing the program to proceed to the next section of 
+preventing unnecessary iterations and allowing the program to proceed to the next section of
 actions.
 
 **Key Points:**
@@ -67,3 +76,7 @@ actions.
 - **Usage:** Commonly used to avoid infinite loops or to stop looping once a desired result is achieved.
 
 ![loop-block-return.png](img/loop-block-return.png)
+
+## Related documentation
+
+See [Action Blocks](/resources/functions/action-blocks) for a related FlutterFlow workflow.

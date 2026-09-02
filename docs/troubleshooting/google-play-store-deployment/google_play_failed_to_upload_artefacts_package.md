@@ -1,9 +1,19 @@
 ---
-keywords: ['firebase', 'error', 'package']
-slug: /troubleshooting/google-play-store-deployment/google-play-failed-to-upload-artefacts-package
+keywords:
+  - firebase
+  - error
+  - package
+slug: >-
+  /troubleshooting/google-play-store-deployment/google-play-failed-to-upload-artefacts-package
 title: Google Play Failed to Upload Artefacts
+description: >-
+  - Ensure your app’s in FlutterFlow matches the package name in Google Play
+  Console.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Google Play Failed to Upload Artefacts
 
 :::info[Prerequisites]
@@ -37,7 +47,7 @@ Follow these steps to upload your app for the first time:
     3. Navigate to your app project and upload the **AAB** file as a new release in the appropriate track (Internal, Closed, Open, or Production).
     4. After this initial upload, future deployments should proceed without this error.
 
-        ![](../assets/20250430121330484821.png)
+        ![Google Play Failed to Upload Artefacts in FlutterFlow](../assets/20250430121330484821.png)
 
 **Updating Package Name and Regenerating Config Files**
 
@@ -46,11 +56,11 @@ If you have updated your app’s `Package Name` in FlutterFlow, follow these ste
     2. Navigate to **Settings** > **Firebase**.
     3. Click **Regenerate Config Files**.
 
-        ![](../assets/20250430121330727549.png)
+        ![Google Play Failed to Upload Artefacts in FlutterFlow](../assets/20250430121330727549.png)
 
     4. Enter the new `Package Name` and click Generate File to download the updated configuration files.
 
-        ![](../assets/20250430121331069027.png)
+        ![Google Play Failed to Upload Artefacts in FlutterFlow](../assets/20250430121331069027.png)
 
     5. Rebuild and redeploy your app to confirm the error is resolved.
 
@@ -59,3 +69,6 @@ If the error persists after completing these steps:
     - Confirm that Firebase configuration files have been updated correctly.
     - Contact FlutterFlow Support via Chat or email at support@flutterflow.io.
 
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

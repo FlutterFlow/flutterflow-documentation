@@ -1,14 +1,23 @@
 ---
 slug: /deployment/google-playstore-deployment
 title: Google Play Store Deployment
-description: Learn how to seamlessly deploy your apps to the Google Play Store using FlutterFlow.
-tags: [Google Play Store, Deployment, FlutterFlow, Android]
+description: >-
+  Learn how to seamlessly deploy your apps to the Google Play Store using
+  FlutterFlow.
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 3
 toc_max_heading_level: 4
-keywords: [Google Play Store, Deployment, FlutterFlow, Android]
+keywords:
+  - Google Play Store
+  - Deployment
+  - FlutterFlow
+  - Android
+  - deploy a FlutterFlow app to Google Play
+ai_queries:
+  - deploy a FlutterFlow app to Google Play
 ---
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -49,9 +58,8 @@ Follow the steps below to create an app on Google Play Store:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f7060474fd3741cbbff64e885751d1ed?sid=75eb6e5e-7bcf-4ed8-9480-42bfc46ef622"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.loom.com/embed/f7060474fd3741cbbff64e885751d1ed?sid=75eb6e5e-7bcf-4ed8-9480-42bfc46ef622" title="Google Play Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -90,9 +98,9 @@ To create the Service Account, you can follow the instructions from [here](https
 
 1. If you haven't set up Firebase in your app, you'll need to [create a Google Cloud Project](https://developers.google.com/android-publisher/getting_started#creating).
 2. Then, head over to the [Google Play Developer API page](https://console.developers.google.com/apis/api/androidpublisher.googleapis.com/) in Google Cloud Console and click **Enable**.
-    
+
     ![enable-play-api](../imgs/enable-play-api.avif)
-    
+
 3. In Google Cloud Console, go to [Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts), click + **CREATE SERVICE ACCOUNT,** and follow the steps as per in the visual below.
 <p></p>
     <div style={{
@@ -100,9 +108,8 @@ To create the Service Account, you can follow the instructions from [here](https
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/221b44ff1f21449191ad400c368c98c1?sid=1d157ef4-8255-45f9-b313-b19c94fc4323"
-            title="Sharing a Project with a User"
+        <iframe
+            src="https://www.loom.com/embed/221b44ff1f21449191ad400c368c98c1?sid=1d157ef4-8255-45f9-b313-b19c94fc4323" title="Google Play Store Deployment interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -130,9 +137,8 @@ To create the Service Account, you can follow the instructions from [here](https
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/ddacc773f607466dacda84d2bc5a65d3?sid=99860215-0e37-412d-bfb3-5f04791a7c11"
-            title="Sharing a Project with a User"
+        <iframe
+            src="https://www.loom.com/embed/ddacc773f607466dacda84d2bc5a65d3?sid=99860215-0e37-412d-bfb3-5f04791a7c11" title="Google Play Store Deployment interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -168,9 +174,8 @@ To create the Service Account, you can follow the instructions from [here](https
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/c0df78e3c850419787559a399ca5eebd?sid=429452db-f87d-46af-8d80-c6d64d400dc6"
-            title="Sharing a Project with a User"
+        <iframe
+            src="https://www.loom.com/embed/c0df78e3c850419787559a399ca5eebd?sid=429452db-f87d-46af-8d80-c6d64d400dc6" title="Google Play Store Deployment interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -204,9 +209,8 @@ To upload the service account credentials on FlutterFlow:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/a59cb331fc6944af97249dd6aec378bc?sid=62fd1920-4994-45e3-abba-e84f75a8f705"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.loom.com/embed/a59cb331fc6944af97249dd6aec378bc?sid=62fd1920-4994-45e3-abba-e84f75a8f705" title="Google Play Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,9 +254,8 @@ You need to perform this step only for fresh deployment (i.e., first-time setup)
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://www.loom.com/embed/2c432b6bc4ba41d0bf7ec0db3912a0bd?sid=7f8df4ca-107a-4e82-aa34-06194c188ed9"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.loom.com/embed/2c432b6bc4ba41d0bf7ec0db3912a0bd?sid=7f8df4ca-107a-4e82-aa34-06194c188ed9" title="Google Play Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -288,9 +291,8 @@ Inside the [Google Play Console](https://play.google.com/console), create a test
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://www.loom.com/embed/01500472234942f78af65b48d1f6eacf?sid=fb31285c-b957-4011-ad0a-8285b7c553b8"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.loom.com/embed/01500472234942f78af65b48d1f6eacf?sid=fb31285c-b957-4011-ad0a-8285b7c553b8" title="Google Play Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -387,9 +389,8 @@ Watch this video if you prefer watching a video tutorial.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/kLfcAzAHA6o"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://www.youtube.com/embed/kLfcAzAHA6o" title="Google Play Store Deployment interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -406,4 +407,3 @@ Watch this video if you prefer watching a video tutorial.
         allow="clipboard-write">
     </iframe>
 </div>
-

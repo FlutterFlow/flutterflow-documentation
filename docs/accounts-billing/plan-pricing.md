@@ -1,12 +1,18 @@
 ---
 slug: plan-pricing
 title: Plans & Pricing
-tags: []
+tags:
+  - FlutterFlow
+  - Accounts & Billing
 toc_max_heading_level: 5
 sidebar_position: 2
 hide_table_of_contents: true
+description: 'For our most up-to-date information, please visit FlutterFlow pricing .'
+keywords:
+  - Plans & Pricing
+  - Plan Pricing
+  - Accounts Billing
 ---
-
 import Head from '@docusaurus/Head';
 import ThemedImage from '@theme/ThemedImage';
 
@@ -388,7 +394,7 @@ No. As a part of the existing Teams plan retirement, team size will be locked on
 I am currently on a Teams plan with 6+ users and do not want to migrate to the Enterprise plan – how do I stay on the Business tier and how will I be charged?
 </summary>
 <p>
-- Teams with more than 5 users who do not wish to move yet to an Enterprise contract can continue on the Business tier under a transitional pricing structure. These teams will be billed at the standard Business tier seat pricing and then $85/seat/month for each additional seat over 5. Pricing will be based on the number of users in the team as of September 18, 2025 and billed on a monthly basis. 
+- Teams with more than 5 users who do not wish to move yet to an Enterprise contract can continue on the Business tier under a transitional pricing structure. These teams will be billed at the standard Business tier seat pricing and then $85/seat/month for each additional seat over 5. Pricing will be based on the number of users in the team as of September 18, 2025 and billed on a monthly basis.
 </p>
 <p>
 - This option allows larger retail teams to continue operating under the Business feature set without immediate contract negotiation, but will be available only to existing 6+ seat teams for 12 months from September 18, 2025 through September 18, 2026 to ensure continuity without immediate contract negotiation.
@@ -406,7 +412,7 @@ However, if you would like to maintain a single account, collaboration across al
 Can I belong to multiple teams? How will that be billed?
 </summary>
 <p>
-Yes, starting August 18, 2025, users will be able to belong to multiple teams in FlutterFlow in the new plans – this is a new capability as part of our updated team and collaboration structure. Each team is treated as a separate billing entity, with its own plan, users, and usage limits. 
+Yes, starting August 18, 2025, users will be able to belong to multiple teams in FlutterFlow in the new plans – this is a new capability as part of our updated team and collaboration structure. Each team is treated as a separate billing entity, with its own plan, users, and usage limits.
 </p>
 <p>
 If you are added as an editor on more than one team, you will count toward the seat total on each of those teams, and each team will manage your seat and billing as part of their own subscription. You will not be billed individually – all billing remains centralized at the team level.

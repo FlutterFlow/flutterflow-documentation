@@ -2,12 +2,18 @@
 slug: /concepts/layouts/responsive
 title: Responsive Layout
 description: Learn how to create responsive layout in your FlutterFlow app.
-tags: [Responsive Layout, Concepts]
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Responsive Layout, Concepts]
+keywords:
+  - FlutterFlow
+  - Responsive Layout
+  - Concepts
+  - make a FlutterFlow layout responsive across screen sizes
+ai_queries:
+  - make a FlutterFlow layout responsive across screen sizes
 ---
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -15,14 +21,14 @@ import TabItem from '@theme/TabItem';
 
 FlutterFlow is great at creating applications adaptable to a wide range of screen sizes, devices, and platforms. Ensuring that our screens maintain their aesthetic appeal across all these variations is crucial. Below, we outline various methods to enhance the responsiveness of your UI screens.
 
-**Note:** 
-Please check out the examples in the order they're given, as they use the same 
+**Note:**
+Please check out the examples in the order they're given, as they use the same
 example. Jumping to sections might make things confusing.
 
 
 ### Global Properties
 
-Let's start by demonstrating how screen width and height values change when you switch between devices in Test Mode. 
+Let's start by demonstrating how screen width and height values change when you switch between devices in Test Mode.
 
 First, create a new project. In the Home Page, under a Column parent, add two Text widgets. Label one "Screen Width" and the other "Screen Height."
 
@@ -114,14 +120,14 @@ Let's consider a scenario with a Row of category cards.
 
 You might observe that when the screen size is adjusted to resemble mobile dimensions, the cards begin to get cut off at the edges.
 
-![row-card-resize.gif](imgs/row-card-resize.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Category cards overflowing as the viewport narrows"}><source src={require("./imgs/row-card-resize.mp4").default} type="video/mp4" /></video>
 
 To resolve this issue, simply replace the parent Row widget with a Wrap widget.
 
 Make sure to set the Wrap Direction to 'Horizontal' in the Wrap properties. You'll then see that the previously overflowing cards neatly move to the next line, as illustrated in the example.
 
 
-![row-card-resize.gif](imgs/row-card-resize-2.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Wrap widget moving category cards onto new rows"}><source src={require("./imgs/row-card-resize-2.mp4").default} type="video/mp4" /></video>
 
 
 The Wrap widget efficiently manages layout for varying screen sizes by automatically adjusting its children into multiple rows or columns. It prevents overflow and ensures a clean, responsive design, especially useful for adapting content like category cards from desktop to mobile views.
@@ -154,7 +160,7 @@ Generally, it's advisable to enable it only for mobile, or mobile and tablet. Le
 
 Now, when testing directly in our editor, observe how the navbar appears only for mobile and tablet screen sizes. This same approach can be applied to the App bar as well.
 
-![appbar-navbar-visibility-resize.gif](imgs/appbar-navbar-visibility-resize.gif)
+<video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Nav Bar visibility changing across responsive breakpoints"}><source src={require("./imgs/appbar-navbar-visibility-resize.mp4").default} type="video/mp4" /></video>
 
 ## Responsive Visibility
 
@@ -173,9 +179,8 @@ To implement this, we can go to its widget properties and toggle the device icon
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/5ef35754c19c427997eefb3182b0b28a?sid=c1ac1ef9-de7d-4517-b86f-df5f8ba5f1e6"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/5ef35754c19c427997eefb3182b0b28a?sid=c1ac1ef9-de7d-4517-b86f-df5f8ba5f1e6" title="Responsive Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -231,9 +236,8 @@ You can adjust the default screen size breakpoints (mobile, tablet, desktop, wid
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0XfY0BCqlcIrsXhOGlCh?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0XfY0BCqlcIrsXhOGlCh?embed&show_copy_link=true" title="Responsive Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -251,3 +255,7 @@ You can adjust the default screen size breakpoints (mobile, tablet, desktop, wid
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [Building Layout](/concepts/layouts) for a related FlutterFlow workflow.

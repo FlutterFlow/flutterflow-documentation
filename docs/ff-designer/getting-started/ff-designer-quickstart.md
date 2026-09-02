@@ -2,11 +2,20 @@
 slug: /designer/quickstart
 title: Quickstart
 description: Get started with designing your first app quickly.
-tags: [FlutterFlow Designer, FlutterFlow, Design, Quickstart]
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [flutterflow designer, ai app design, screen storyboard generation, ui design tool]
+keywords:
+  - flutterflow designer
+  - ai app design
+  - screen storyboard generation
+  - ui design tool
+  - generate my first app design with FlutterFlow Designer
+ai_queries:
+  - generate my first app design with FlutterFlow Designer
 ---
-
 # Quickstart
 
 FF Designer lets you generate complete app designs from simple text prompts. Just describe what you want to build, explore different style directions, and the Designer will create a full set of screens for you. From there, you can refine the design using AI or manual editing and export it directly to continue building.
@@ -28,9 +37,8 @@ The Designer generates complete app screens in seconds, giving you a strong star
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/oxgN9GPZRxkKekuTdu14?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/oxgN9GPZRxkKekuTdu14?embed&show_copy_link=true" title="Quickstart interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -76,3 +84,7 @@ Create a fitness app with a home screen showing daily workouts, progress stats, 
 Design a food delivery app with a home screen showing nearby restaurants, categories, and featured items. Include restaurant detail pages, menu listings, and a checkout flow. Make the UI modern, colorful, and easy to navigate.
 
 ![food-delivery-app.avif](imgs/food-delivery-app.avif)
+
+## Related documentation
+
+See [Workspace](/designer/workspace) for a related FlutterFlow workflow.

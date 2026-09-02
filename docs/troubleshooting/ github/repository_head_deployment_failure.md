@@ -1,9 +1,19 @@
 ---
-keywords: ['deployment', 'github', 'repository', 'codemagic']
+keywords:
+  - deployment
+  - github
+  - repository
+  - codemagic
 slug: /troubleshooting/github/repository-head-deployment-failure
 title: Repository Head Deployment Failure
+description: >-
+  This error may occur when deploying your FlutterFlow app to GitHub using
+  Codemagic.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - GitHub
 ---
-
 # Repository Head Deployment Failure
 
 This error may occur when deploying your FlutterFlow app to GitHub using Codemagic. The message `Failed to set the repository head` indicates a problem with repository access, configuration, or connectivity.

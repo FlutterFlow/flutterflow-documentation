@@ -1,13 +1,21 @@
 ---
 slug: /resources/functions/conditional-logic
 title: Conditional Logic
-description: Learn how to implement conditional logic in your FlutterFlow app to control the 
-  flow of actions or generate properties based on certain conditions.
-tags: [Conditional Logic, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+description: >-
+  Learn how to implement conditional logic in your FlutterFlow app to control
+  the flow of actions or generate properties based on certain conditions.
+tags:
+  - FlutterFlow
+  - Resources
+  - Functions
 sidebar_position: 4
-keywords: [Conditional Logic, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Conditional Logic
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 Conditional logic is a fundamental concept in programming and software development. It involves making decisions in code based on certain conditions. This is achieved using conditional statements, which evaluate expressions to determine whether they are true or false. Depending on the result, different actions or outcomes are executed.
 
 #### How Conditional Logic Works
@@ -52,13 +60,12 @@ Here's an example where we use Conditional Logic to determine the value of a Tex
 
 <div style={{
     position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', 
+    paddingBottom: 'calc(56.67989417989418% + 41px)',
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/zTJw7GmAolmmE1S6vTvv?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/zTJw7GmAolmmE1S6vTvv?embed&show_copy_link=true" title="Conditional Logic interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -93,9 +100,8 @@ Here's a quick demo to illustrate a simple Single Condition Action flow:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Fq8aWMfDhT6W6NztdkMb?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Fq8aWMfDhT6W6NztdkMb?embed&show_copy_link=true" title="Conditional Logic interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -115,8 +121,8 @@ Here's a quick demo to illustrate a simple Single Condition Action flow:
 
 <p></p>
 
-You can easily convert a single condition action flow into a multiple condition action flow by 
-enabling the Multiple Conditions toggle. Here's how: 
+You can easily convert a single condition action flow into a multiple condition action flow by
+enabling the Multiple Conditions toggle. Here's how:
 
 <div style={{
     position: 'relative',
@@ -124,9 +130,8 @@ enabling the Multiple Conditions toggle. Here's how:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/XgXNr05yL21n3IgZPsxS?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/XgXNr05yL21n3IgZPsxS?embed&show_copy_link=true" title="Conditional Logic interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -143,3 +148,7 @@ enabling the Multiple Conditions toggle. Here's how:
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Related documentation
+
+See [Action Blocks](/resources/functions/action-blocks) for a related FlutterFlow workflow.

@@ -1,12 +1,20 @@
 ---
 slug: /designer/workspace
 title: Workspace
-description: Learn about FlutterFlow Designer's workspace that provide a complete design environment with specialized tools.
-tags: [FlutterFlow Designer, FlutterFlow, Design, Workspace]
+description: >-
+  Learn about FlutterFlow Designer's workspace that provide a complete design
+  environment with specialized tools.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [flutterflow designer, ai app design, screen storyboard generation, ui design tool]
+keywords:
+  - flutterflow designer
+  - ai app design
+  - screen storyboard generation
+  - ui design tool
 ---
-
 # Workspace
 
 The workspace is organized into panels that work together to provide a complete design experience.
@@ -25,3 +33,6 @@ The workspace is organized into panels that work together to provide a complete 
 - **Properties Panel**: Edit properties of the selected widget such as layout, content, and styling.
 - **Prompt Bar**: Use AI commands to describe changes and modify the selected screen or widget.
 
+## Related documentation
+
+See [Quickstart](/designer/quickstart) for a related FlutterFlow workflow.

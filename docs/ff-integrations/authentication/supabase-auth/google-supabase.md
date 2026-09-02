@@ -1,10 +1,19 @@
 ---
 slug: /integrations/authentication/supabase/google
 title: Google Login
-description: Learn how to integrate Google Login of Supabase Auth into your FlutterFlow app.
-tags: [Google Authentication, Authentication, Supabase]
+description: >-
+  Learn how to integrate Google Login of Supabase Auth into your FlutterFlow
+  app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 3
-keywords: [FlutterFlow, Google Authentication, Authentication, Supabase]
+keywords:
+  - FlutterFlow
+  - Google Authentication
+  - Authentication
+  - Supabase
 ---
 # Google Login
 
@@ -14,7 +23,7 @@ Google Authentication with Supabase offers a secure and convenient method for us
 Before getting started with this section, ensure you have,
 
 1. Completed all steps in the [**Supabase setup**](../../supabase/supabase-setup.md)
-2. Completed [**Initial setup**](initial-setup.md) 
+2. Completed [**Initial setup**](initial-setup.md)
    required for authentication.
 :::
 
@@ -27,9 +36,8 @@ Let's see how to add a Supabase Google authentication by building an example tha
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6f249c8f55144c28a328a09c714856a5?sid=d07370c9-e73b-4c42-be0f-de89af96f8cf"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6f249c8f55144c28a328a09c714856a5?sid=d07370c9-e73b-4c42-be0f-de89af96f8cf" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -63,9 +71,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/a9cfdda1706341579296649ec073470d?sid=38969d2a-0fe8-47fd-8539-e6df66c9fa30"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/a9cfdda1706341579296649ec073470d?sid=38969d2a-0fe8-47fd-8539-e6df66c9fa30" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -91,9 +98,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ff266d3093c84d3ab1e93255482e19ad?sid=b776ef9d-9e27-4b4f-a748-ebe222183092"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ff266d3093c84d3ab1e93255482e19ad?sid=b776ef9d-9e27-4b4f-a748-ebe222183092" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -124,9 +130,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ac19280f576e479f997ba3a531b8a4b4?sid=4e5e69b7-d389-4ff6-8419-5a0f88558f05"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ac19280f576e479f997ba3a531b8a4b4?sid=4e5e69b7-d389-4ff6-8419-5a0f88558f05" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -152,9 +157,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6d98dc33a23541468388642e849e7e04?sid=59563c8e-f60a-4b76-81af-43ddeea21744"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6d98dc33a23541468388642e849e7e04?sid=59563c8e-f60a-4b76-81af-43ddeea21744" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -180,9 +184,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f7721c4382ee43599f49ea1c066e234b?sid=5948a122-cf26-4f8a-b104-0ecd3a0688b9"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/f7721c4382ee43599f49ea1c066e234b?sid=5948a122-cf26-4f8a-b104-0ecd3a0688b9" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -216,9 +219,8 @@ This step involes enabling Google login and providing the client IDs and secret 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c425e1098ebd43a49feacd709051e6e7?sid=e7c16c3f-5e0d-4d4c-b389-22c7fb2c676b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c425e1098ebd43a49feacd709051e6e7?sid=e7c16c3f-5e0d-4d4c-b389-22c7fb2c676b" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -244,9 +246,8 @@ This step involes enabling Google login and providing the client IDs and secret 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6d3fbf775a87431d8fd93ee0a6a190ae?sid=5cbe8e06-9604-41fd-abcc-a729b0205ef1"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6d3fbf775a87431d8fd93ee0a6a190ae?sid=5cbe8e06-9604-41fd-abcc-a729b0205ef1" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -278,9 +279,8 @@ To enable Supabase Google auth in FlutterFlow:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/e5ddd71aef2e43afa42b06bd68b3a301?sid=27bc6900-dabd-46f4-ae90-16174e271d0c"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/e5ddd71aef2e43afa42b06bd68b3a301?sid=27bc6900-dabd-46f4-ae90-16174e271d0c" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -310,9 +310,8 @@ Here's how you can add the Google sign-in button from our page template:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/d8359478b2c94526bd8feb27e6daf4cd?sid=6e0b51dd-56cd-48bc-9837-3a0a5804dc82"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/d8359478b2c94526bd8feb27e6daf4cd?sid=6e0b51dd-56cd-48bc-9837-3a0a5804dc82" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -350,9 +349,8 @@ The first one creates an account in Supabase and adds the user details at *Supab
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f5ce53baa6ce4c7d95f99ad3fe06ed70?sid=7f8d0916-741d-4085-b793-ea5066b54b63"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/f5ce53baa6ce4c7d95f99ad3fe06ed70?sid=7f8d0916-741d-4085-b793-ea5066b54b63" title="Google Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

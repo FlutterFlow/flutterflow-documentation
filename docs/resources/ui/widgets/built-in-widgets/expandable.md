@@ -1,8 +1,18 @@
 ---
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+title: Expandable
+description: >-
+  An Expandable widget is a user interface component used to show or hide
+  content dynamically.
+keywords:
+  - Expandable
+  - Built In Widgets
+  - Widgets
 ---
-
-# Expandable 
+# Expandable
 
 An Expandable widget is a user interface component used to show or hide content dynamically. It consists of a header that can be tapped to reveal or collapse additional content. This functionality is particularly useful in interfaces where space is at a premium, such as in mobile applications or complex forms, enabling users to access information on demand without overwhelming the screen with too much content all at once.
 
@@ -24,11 +34,11 @@ When you add an **Expandable** widget, the default widget tree typically include
   - **Initially Expanded:** Determines if the widget should be expanded by default when the view is first loaded.
   - **Tap Header to Toggle:** Allows the user to expand or collapse the content by tapping the header.
   - **Tap Body to Expand/Collapse:** Defines whether tapping on the body of the expanded content can toggle its state.
-  
+
 - **Style Properties:**
   - **Width & Height:** Dimensions of the widget, which can be set to infinity to take full width or height.
   - **Background Color:** The color behind the expandable content.
   - **Header Alignment:** Aligns the header content such as left, center, or right.
-  
+
 ### Practical Use of Expanded
 This setup allows for a highly customizable Expandable widget, making it suitable for FAQs, forms, lists, or other content that benefits from a clean, compact initial appearance with options for more detailed information. The ability to fine-tune how and where icons appear, along with the behavior of the widget's expandability, gives developers significant control over user experience and interface design.

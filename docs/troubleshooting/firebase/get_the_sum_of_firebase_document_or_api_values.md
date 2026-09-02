@@ -1,7 +1,17 @@
 ---
-keywords: ['firebase', 'api', 'document']
+keywords:
+  - firebase
+  - api
+  - document
 slug: /troubleshooting/firebase/get-the-sum-of-firebase-document-or-api-values
 title: Get the Sum of Firebase Document or API Values
+description: >-
+  Sometimes you need to display a total, such as a subtotal or count based on
+  data fetched from Firebase or an API.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
 ---
 # Get the Sum of Firebase Document or API Values
 
@@ -18,26 +28,26 @@ Sometimes you need to display a total, such as a subtotal or count based on data
 
     Decide where in your app the total will appear. For example, insert a **Text** widget that will show the computed sum.
 
-    ![](../assets/20250430121219360101.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219360101.png)
 
 2. **Prepare your Data Type**
 
     Next, you need to specify what kind of data you're adding up. For example, if you're working with numbers with decimal points, you'll classify your data as double. Make sure to indicate that you're dealing with a list of these values.
 
-    ![](../assets/20250430121219606895.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219606895.png)
 
 
 3. **Retrieve and Map your Data**
 
     When fetching data from Firebase or an API, extract the values you want to sum. Use the `map()` function to create a list of those values.
 
-    ![](../assets/20250430121219871237.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121219871237.png)
 
 4. **Calculate the Sum**
 
     With your list of values ready, store them in a variable (let's call it `var1`). Then, decide on the format you want for your result. Use the `reduce` function to add up all the values in your list, `var1`, to get your total sum.
 
-    ![](../assets/20250430121220084430.png)
+    ![Get the Sum of Firebase Document or API Values in FlutterFlow](../assets/20250430121220084430.png)
 
 5. **Checking Your Results**
 

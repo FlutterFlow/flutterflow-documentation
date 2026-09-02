@@ -1,9 +1,19 @@
 ---
-keywords: ['deployment', 'error', 'releases']
+keywords:
+  - deployment
+  - error
+  - releases
 slug: /troubleshooting/google-play-store-deployment/google-play-draft-release-error
 title: Google Play Draft Release Error
+description: >-
+  When uploading an app to Google Play, you may encounter the following error:
+  This error occurs because Google Play only allows creating a Draft Release if
+  your app is still mark...
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Google Play Draft Release Error
 
 When uploading an app to Google Play, you may encounter the following error:
@@ -47,18 +57,21 @@ Follow these steps to fix the issue:
 
         - **Open Settings and Integrations**: From your FlutterFlow project dashboard, navigate to **Settings > Integrations**.
 
-            ![](../assets/20250430121320431269.png)
+            ![Google Play Draft Release Error in FlutterFlow](../assets/20250430121320431269.png)
 
         - **Navigate to Mobile Deployment**: Select **Mobile Deployment**.
 
-            ![](../assets/20250430121320759595.png)
+            ![Google Play Draft Release Error in FlutterFlow](../assets/20250430121320759595.png)
 
         - **Enable Submit As Draft**: Under **Google Play Store Deployment**, toggle on **Submit as Draft**.
 
-            ![](../assets/20250430121321051936.png)
+            ![Google Play Draft Release Error in FlutterFlow](../assets/20250430121321051936.png)
 
             This allows you to submit your release as a draft until all Google Play requirements are fully satisfied.
 
 
 If you’ve followed all steps and still encounter the issue, contact **FlutterFlow Support** via Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io) for additional assistance.
 
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

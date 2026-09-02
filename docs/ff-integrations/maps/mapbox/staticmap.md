@@ -1,12 +1,20 @@
 ---
 slug: /integrations/mapbox/staticmap-widget
 title: Static Map Widget
-description: Learn how to add and configure the StaticMap (Mapbox) widget in your FlutterFlow app.
-tags: [Widget, Integration]
+description: >-
+  Learn how to add and configure the StaticMap (Mapbox) widget in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Mapbox
 sidebar_position: 2
-keywords: [StaticMap, Mapbox, Widget, Integration]
+keywords:
+  - StaticMap
+  - Mapbox
+  - Widget
+  - Integration
 ---
-
 # Static Map Widget
 The StaticMap widget shows an image of the map from the [mapbox](https://www.mapbox.com/). This widget is a good choice when you want to display a location on a map without interactivity or controls such as zoom-in, zoom-out, and map scrolling.
 
@@ -32,9 +40,8 @@ To get the lat long values for any location, open to Google Map, right-click on 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/z1kDG18cXxXzIiddhQFP?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/z1kDG18cXxXzIiddhQFP?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -72,9 +79,8 @@ To change the map style:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LYxQn4Fx5msgR68Di4cr?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LYxQn4Fx5msgR68Di4cr?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -110,9 +116,8 @@ To set the zoom, tilt, and rotation value for the map:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/e2jMy8ZdRYCmmmdEIx2C?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/e2jMy8ZdRYCmmmdEIx2C?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -149,9 +154,8 @@ This widget does not resize the marker image from the URL link. Make sure you pr
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/05eD7crtpMH3QiD2ibk8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/05eD7crtpMH3QiD2ibk8?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -185,9 +189,8 @@ To cache the map image:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9xLVUrfd9LNufOxX5EfI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9xLVUrfd9LNufOxX5EfI?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -221,9 +224,8 @@ To change the box fit value:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/I9UHGeEUeFKMZiSSP70p?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/I9UHGeEUeFKMZiSSP70p?embed&show_copy_link=true" title="Static Map Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

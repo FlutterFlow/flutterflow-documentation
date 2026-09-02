@@ -1,10 +1,16 @@
 ---
 slug: swipeable-stack
 title: SwipeableStack
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add SwipeableStack widget in your FlutterFlow project.
+keywords:
+  - SwipeableStack
+  - Swipeable Stack
+  - Built In Widgets
 ---
-
 # SwipeableStack
 
 The SwipeableStack is a widget designed to stack cards or content layers that users can swipe in any direction. It is commonly used in dating apps like Tinder for profile browsing.
@@ -14,9 +20,8 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/e7f59a4565084bda8b1fd8182bb5b169?sid=d0489d7a-c9b2-46ba-b63a-e944b09633e0"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/e7f59a4565084bda8b1fd8182bb5b169?sid=d0489d7a-c9b2-46ba-b63a-e944b09633e0" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -50,9 +55,8 @@ To add a Stack widget:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c07a029c001c4a0faf4413f91246b310?sid=b79a41bb-e067-4dbd-9be2-a7819567c2ce"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c07a029c001c4a0faf4413f91246b310?sid=b79a41bb-e067-4dbd-9be2-a7819567c2ce" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -81,9 +85,8 @@ You might want to allow users to swipe the cards with a button press—for insta
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/5e6d86f975f64f4b81b80109426c77e2?sid=4fbae627-da87-423d-8c41-4bfa9301b5b0"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/5e6d86f975f64f4b81b80109426c77e2?sid=4fbae627-da87-423d-8c41-4bfa9301b5b0" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -124,9 +127,8 @@ Here is how you can get a callback when the child widgets get swiped:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/73536e21a77e4fa1924dd48974e6eed1?sid=c765ff28-ce65-4eac-9cec-d370c8cff581"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/73536e21a77e4fa1924dd48974e6eed1?sid=c765ff28-ce65-4eac-9cec-d370c8cff581" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -184,9 +186,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/06113eea1f6345788c66e330a3f2612a?sid=72b3decd-cffd-461d-b2bf-e5ec9a61b9cb"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/06113eea1f6345788c66e330a3f2612a?sid=72b3decd-cffd-461d-b2bf-e5ec9a61b9cb" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -216,9 +217,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c97977ee73624ddc94f6f53b1f26a3d3?sid=341b96e9-3793-48e8-a08f-c1e49f663f85"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c97977ee73624ddc94f6f53b1f26a3d3?sid=341b96e9-3793-48e8-a08f-c1e49f663f85" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -248,9 +248,8 @@ To do so, move to the **Properties Panel > SwipeableStack Properties >** enter t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/b1c95dd80bde49fb8ced6e53d67ea610?sid=4a47662d-0cfb-4f0a-a92d-1c5bb0d6c688"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/b1c95dd80bde49fb8ced6e53d67ea610?sid=4a47662d-0cfb-4f0a-a92d-1c5bb0d6c688" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -280,9 +279,8 @@ To change the offset of the back cards move to the **Properties Panel > Swipeabl
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6239da42312b46c489ee2a45739d526d?sid=30d5ff46-e468-4596-ba7e-fe0bd48261f4"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6239da42312b46c489ee2a45739d526d?sid=30d5ff46-e468-4596-ba7e-fe0bd48261f4" title="SwipeableStack interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

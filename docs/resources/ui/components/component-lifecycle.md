@@ -2,8 +2,21 @@
 title: Component Actions & Lifecycle
 sidebar_position: 3
 toc_max_heading_level: 5
+description: >-
+  In FlutterFlow, understanding the component lifecycle is crucial for managing
+  state and optimizing your app's performance.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Component Actions & Lifecycle
+  - Component Lifecycle
+  - Components
+  - run actions during a FlutterFlow component lifecycle
+ai_queries:
+  - run actions during a FlutterFlow component lifecycle
 ---
-
 # Component Actions & Lifecycle
 
 In FlutterFlow, understanding the component lifecycle is crucial for managing state and optimizing your
@@ -68,7 +81,7 @@ created.
 
 ### On Shortcut Press [Action Trigger]
 
-Your component can also respond to certain keypress events. For more details on setting this up, see [this section on 
+Your component can also respond to certain keypress events. For more details on setting this up, see [this section on
 keyboard shortcuts](/resources/ui/pages/page-lifecycle#on-shortcut-press-action-trigger).
 
 ### On Dispose [Action Trigger]
@@ -119,7 +132,7 @@ To create a new **Component State variable** in your component, follow these ste
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/nEmCDqupF7YHUTi4hKvW?embed&show_copy_link=true"
         title="Create Component State"
         style={{
@@ -181,7 +194,7 @@ Follow these steps:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/Y96decdgYWVll3SP9Jk8?embed&show_copy_link=true"
         title="Get Component State"
         style={{
@@ -216,7 +229,7 @@ call the **Update Component State** action to toggle the value of `isFavourite`.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/4tEsyMFyCxEP1tWQcPVh?embed&show_copy_link=true"
         title="Get Component State"
         style={{
@@ -262,6 +275,3 @@ and use rebuilds judiciously to maintain optimal app performance.
 To learn more about what happens behind the scenes, refer to
 the [**Generated Code: Components**](../../../generated-code/component-gen-code.md) section.
 :::
-
-
-

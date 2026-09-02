@@ -1,11 +1,16 @@
 ---
 slug: /resources/forms/choice-chips
 title: ChoiceChips
-tags: [Form Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
 description: Learn how to add ChoiceChips in your FlutterFlow app.
+keywords:
+  - ChoiceChips
+  - Choice Chips
+  - Forms
 ---
-
-
 # ChoiceChips
 The ChoiceChips widget allows users to select a single option from a group of chips. Each chip is presented with an icon and accompanying text, making it easy to represent various choices.
 
@@ -31,9 +36,8 @@ To add the ChoiceChips widget to your app:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/16bb138384864990ae6991f477589d13?sid=1b31ba9a-2d8b-4b74-9640-746f1d93960d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/16bb138384864990ae6991f477589d13?sid=1b31ba9a-2d8b-4b74-9640-746f1d93960d" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -79,9 +83,8 @@ To allow multiselect, select the **ChoiceChips** widget, move to the properties 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/VqGnacSdCkjlgUEKxxpy?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/VqGnacSdCkjlgUEKxxpy?embed&show_copy_link=true" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -111,9 +114,8 @@ To do so, move to the **Properties Panel** **>** turn on **Disable >** click **U
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/6521e458211b4250b1376f8462a9cce2?sid=23586025-bed2-4cf2-869f-1c54eea5d59b"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/6521e458211b4250b1376f8462a9cce2?sid=23586025-bed2-4cf2-869f-1c54eea5d59b" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -144,9 +146,8 @@ To add a space between the chips, you can use the **Chip Spacing** ad **Row Spac
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/AfcL6FJqajdK1lTNm1me?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/AfcL6FJqajdK1lTNm1me?embed&show_copy_link=true" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -174,9 +175,8 @@ When you have chips in multiple rows, you can align them using the **Alignment**
     paddingBottom: 'calc(45.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DgiJyfeuWqactFYVKd1v?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DgiJyfeuWqactFYVKd1v?embed&show_copy_link=true" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -211,9 +211,8 @@ Various properties under the **Selected Chip Style** and **Unselected Chip Style
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/75141dcf90cd4d1a8e22dd288a7e9dee?sid=2e289300-60a6-4d99-ab66-1e38baf5265f"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/75141dcf90cd4d1a8e22dd288a7e9dee?sid=2e289300-60a6-4d99-ab66-1e38baf5265f" title="ChoiceChips interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

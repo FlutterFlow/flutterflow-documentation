@@ -1,12 +1,23 @@
 ---
 slug: /integrations/authentication/firebase/initial-setup
-title: Initial Setup
-description: Learn how to perform the initial setup for Firebase authentication in your FlutterFlow app.
-tags: [Initial Setup, Authentication, Firebase]
+title: 'Initial Setup: Firebase Auth'
+description: >-
+  Learn how to perform the initial setup for Firebase authentication in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 0
-keywords: [FlutterFlow, Initial Setup, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Initial Setup
+  - Authentication
+  - Firebase
+  - set up Firebase email authentication
+ai_queries:
+  - set up Firebase email authentication
 ---
-
 # Enabling Firebase Auth in FlutterFlow
 
 :::tip[Skip if...]
@@ -52,7 +63,7 @@ You have already enabled 'Create User Collection' while creating a new
 project with [Firebase Setup](../../firebase/connect-to-firebase-setup.md).
 :::
 
-1. Click on the Firestore tab from the 
+1. Click on the Firestore tab from the
 [**Navigation Menu**](../../../intro/ff-ui/builder.md#navigation-menu).
 2. Click on the **+ Create Collection** button. If you have any other collection
   already added, you can click on the Plus button.
@@ -69,9 +80,8 @@ Follow the quicklink to see the steps
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/89TZAX3avXKxRpdZH3bK?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/89TZAX3avXKxRpdZH3bK?embed&show_copy_link=true" title="Initial Setup: Firebase Auth interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -100,7 +110,7 @@ Follow the quicklink to see the steps
 4. Now switch to the **Collection** tab. Now you should see all the default
   fields.
 
-<iframe src="https://www.loom.com/embed/ba977f72f606497b92ee9ff45c620451"
+<iframe title="Initial Setup: Firebase Auth interactive tutorial" src="https://www.loom.com/embed/ba977f72f606497b92ee9ff45c620451"
 frameborder="0" allowFullScreen style={{ width: '100%', height: '600px' }}></iframe>
 :::
 
@@ -155,7 +165,7 @@ While releasing the app, make sure to [**get the key from Play Console**](#getti
 <details>
   <summary>Mac/Linux</summary>
   <div>
-   ```keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore``` 
+   ```keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore```
   </div>
 </details>
 
@@ -190,5 +200,3 @@ To regenerate the config files:
 2. Click on the Regenerate Config Files.
 
 ![regerenate](../imgs/regerenate.png)
-
-

@@ -1,10 +1,16 @@
 ---
 slug: carousel
 title: Carousel
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add and customize a Carousel widget in your FlutterFlow project.
+keywords:
+  - Carousel
+  - Built In Widgets
+  - Widgets
 ---
-
 # Carousel
 
 The **Carousel** widget displays a sequence of images or other content within a limited area. Use it for product highlights, onboarding steps, featured articles, testimonials, and other content that users can browse horizontally or vertically.

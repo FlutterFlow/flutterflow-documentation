@@ -2,11 +2,20 @@
 slug: /concepts/custom-code/vscode-extension
 title: Visual Studio Code Extension
 description: Learn how to leverage the Visual Studio Code Extension to write custom code.
-tags: [Custom Code, Customizations]
-keywords: [FlutterFlow, Custom Code, Customizations, Flutter, Dart, Pub.dev, Visual Studio Code, Visual Studio, IDE]
-# toc_max_heading_level: 4
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Custom Code
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - Visual Studio Code
+  - Visual Studio
+  - IDE
 ---
-
 # FlutterFlow Visual Studio Extension
 
 The **Visual Studio Code (VSCode) extension** allows you to work with your FlutterFlow project’s custom code directly in [Visual Studio Code](https://code.visualstudio.com/) (a local code editor). This extension facilitates easy editing, pushing, and pulling of custom code changes between FlutterFlow and your local development environment.
@@ -15,8 +24,8 @@ While you can edit custom code inside FlutterFlow's in-app code editor, editing 
 
 1. **Access to the Entire Codebase**: When writing custom code in Visual Studio Code, you'll have full access to your app's entire codebase, making it easier to reference component widget classes, custom data types, enums, and more.
 
-2. **Real-time Autocomplete and Error Detection**: Working on a local machine typically provides more reliable access to real-time error detection and autocomplete features within the code editor, which can make your development process more efficient. 
-3. **Leverage Flutter & Dart Tooling**: Using Visual Studio Code allows you to take advantage of existing Flutter and Dart tools, making it easier to develop and refactor your custom code. 
+2. **Real-time Autocomplete and Error Detection**: Working on a local machine typically provides more reliable access to real-time error detection and autocomplete features within the code editor, which can make your development process more efficient.
+3. **Leverage Flutter & Dart Tooling**: Using Visual Studio Code allows you to take advantage of existing Flutter and Dart tools, making it easier to develop and refactor your custom code.
 4. **Leverage the AI Ecosystem**: Additionally, you can easily utilize AI tools available in the Visual Studio ecosystem, such as Copilot.
 
 :::info
@@ -25,12 +34,12 @@ The VS Code extension is only available on the Growth plan and higher. Check out
 
 ## Installation
 
-To fully leverage the Flutter, Dart, and AI tools in Visual Studio Code while editing your FlutterFlow custom code files, you can install the 	
+To fully leverage the Flutter, Dart, and AI tools in Visual Studio Code while editing your FlutterFlow custom code files, you can install the
 **FlutterFlow: Custom Code Editor** extension. Here are a few easy methods to set it up.
 
 ### Install from Marketplace
 
-You can install the FlutterFlow extension from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=FlutterFlow.flutterflow-custom-code-editor&ssr=false#overview) site. 
+You can install the FlutterFlow extension from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=FlutterFlow.flutterflow-custom-code-editor&ssr=false#overview) site.
 
 To install the extension directly from Visual Studio Code, open the editor, click on the **Extensions** icon (or press `Ctrl + Shift + X` / `Cmd + Shift + X`), search for "**FlutterFlow: Custom Code Editor**," and click **Install** to add the extension to your workspace.
 
@@ -39,9 +48,8 @@ To install the extension directly from Visual Studio Code, open the editor, clic
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/MXKy9ufwjxNYoYcJuBiI?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/MXKy9ufwjxNYoYcJuBiI?embed&show_copy_link=true" title="Visual Studio Code Extension interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -69,9 +77,8 @@ To use the extension, you must set your **API key** in the editor's **Extension 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/JdhNiXWDLVCw3h0cB2E6?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/JdhNiXWDLVCw3h0cB2E6?embed&show_copy_link=true" title="Visual Studio Code Extension interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -100,22 +107,21 @@ You can configure optional settings such as specifying the **Project ID** and **
 ### Downloading Code
 The first step in editing custom code for your FlutterFlow project is to download its code. To download the code for your project, use the  Visual Studio Code command palette (`cmd` + `shift` + `p` or `ctrl` + `shift` + `p`).
 
-In the command palette, you can use the `FlutterFlow: Download Code` command. 
+In the command palette, you can use the `FlutterFlow: Download Code` command.
 
 This command will prompt you for three pieces of information:
 - **Project ID**: This is the Project ID, or unique identifier, for your FlutterFlow project. You can find the Project ID by hovering over the Project Name in the top left corner inside the FlutterFlow builder.
 - **Branch Name:** The name of the FlutterFlow project branch you want to work on. You can leave this blank to work on the main branch.
-- **Download Location:** A file picker will be presented for you to choose where to download your project code, the code will be downloaded to 
-`thisdirectory`/`projectID`. 
+- **Download Location:** A file picker will be presented for you to choose where to download your project code, the code will be downloaded to
+`thisdirectory`/`projectID`.
 
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tRbwCQRIHtyiSHn9HujN?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tRbwCQRIHtyiSHn9HujN?embed&show_copy_link=true" title="Visual Studio Code Extension interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -135,7 +141,7 @@ This command will prompt you for three pieces of information:
 <p></p>
 
 ### Initializing a Code Editing Session
-After the code has been downloaded, you will need to initiate a **Code Editing** session using the extension. When a Code Editing session has been initiated, you’ll be able to pull and push code from Visual Studio Code to FlutterFlow. 
+After the code has been downloaded, you will need to initiate a **Code Editing** session using the extension. When a Code Editing session has been initiated, you’ll be able to pull and push code from Visual Studio Code to FlutterFlow.
 
 ![extension-overview.png](imgs/extension-overview.png)
 
@@ -148,7 +154,7 @@ This command will also automatically run `flutter pub get`.
 It’s recommended that you install the [**Flutter & Dart Extensions**](https://docs.flutter.dev/tools/vs-code) which will make it easier to edit Flutter and Dart code.
 :::
 
-## Editing Custom Code 
+## Editing Custom Code
 
 After successfully [installing](#installation) the Visual Studio Code extension and [downloading the code](#downloading-code), you can [initialize your session](#initializing-a-code-editing-session) to start adding or editing custom code.
 
@@ -183,7 +189,7 @@ To push changes click the `Push to FlutterFlow` status bar icon, or run the `Flu
 
 
 :::warning
-This action can’t be undone. Make sure you don’t overwrite any changes in FlutterFlow that you want to keep. 
+This action can’t be undone. Make sure you don’t overwrite any changes in FlutterFlow that you want to keep.
 
 To avoid this, pull the latest changes from FlutterFlow before editing in Visual Studio Code, and push your updates once you're done.
 :::
@@ -226,7 +232,7 @@ To add a new Custom Function, simply create a new Dart function in the `lib/flut
 
 
 ### Deleting Files
-To delete a Custom Action or Widget, delete the associated file. 
+To delete a Custom Action or Widget, delete the associated file.
 
 ### Adding New Dependencies
 You can add custom [pub.dev](https://pub.dev/) package dependencies with the `Dart: Add Dependency` command from the Visual Studio Code command palette. This will update the `pubspec.yaml` file.
@@ -249,22 +255,22 @@ After installation, you need to add the directory containing FVM’s executables
 #### For macOS & Linux
 
 1. Open the Terminal and run the following command. It adds the `~/.pub-cache/bin` directory to your system's `PATH` permanently by updating your `~/.zshrc` file. This ensures that the FVM installed in `~/.pub-cache/bin` is accessible from anywhere in the terminal.
-    
+
     ```bash
     echo 'export PATH="$PATH":"$HOME/.pub-cache/bin"' >> ~/.zshrc  # For Zsh
     echo 'export PATH="$PATH":"$HOME/.pub-cache/bin"' >> ~/.bashrc # For Bash
     ```
-    
+
 2. Restart your terminal or run `source ~/.zshrc` (or `source ~/.bashrc`) to apply the changes.
 
 #### For Windows
 
 1. Locate the **FVM executable path**, typically:
-    
+
     ```
     C:\Users\YourUsername\AppData\Local\Pub\Cache\bin
     ```
-    
+
 2. Add this path to your **System’s PATH variable**:
     1. Open **System Properties** → **Advanced system settings**.
     2. Click **Environment Variables**.
@@ -314,9 +320,8 @@ For example:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/nt5zn8DE5GxLPbKeZVL3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/nt5zn8DE5GxLPbKeZVL3?embed&show_copy_link=true" title="Visual Studio Code Extension interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -337,3 +342,7 @@ For example:
 
 </p>
 </details>
+
+## Related documentation
+
+See [Writing Custom Code](/concepts/custom-code) for a related FlutterFlow workflow.

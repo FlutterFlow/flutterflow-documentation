@@ -2,8 +2,18 @@
 title: Widget Properties
 slug: /resources/ui/widgets/properties
 sidebar_position: 2
+description: >-
+  In FlutterFlow, the Properties Panel on the right helps you configure and
+  manage your widgets.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Widget Properties
+  - Properties
+  - Widgets
 ---
-
 # Properties Panel
 
 In FlutterFlow, the Properties Panel on the right helps you configure and manage your widgets. It opens when you click on a widget or [component](../components/intro-components.md) in the [**Widget Tree**](../widgets/intro-widgets.md#widget-tree).
@@ -16,9 +26,8 @@ Here's a quick demo showing how to add a widget to the canvas, which opens the w
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/pHghP4lV54SC3RqwCWBt?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/pHghP4lV54SC3RqwCWBt?embed&show_copy_link=true" title="Widget Properties interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -81,15 +90,15 @@ To learn more about [**Generating Dynamic Children**](composing-widgets/generate
 :::
 
 ## Animations
-You can apply animations to a widget to enhance the visual appeal and user experience. Animations can be used to draw attention to important elements, provide feedback on user interactions, or create visually engaging transitions between states. 
+You can apply animations to a widget to enhance the visual appeal and user experience. Animations can be used to draw attention to important elements, provide feedback on user interactions, or create visually engaging transitions between states.
 
 :::info
 Learn more about adding **[animations](../../../ff-concepts/animations/animations.md)** here
 :::
 
 ## Documentation and Semantic Labels
-**Documentation** helps developers understand the purpose and function of a widget within the app, 
+**Documentation** helps developers understand the purpose and function of a widget within the app,
 making maintenance and future updates easier.
 
-**Semantic labels** are crucial for accessibility, allowing screen readers to accurately describe 
+**Semantic labels** are crucial for accessibility, allowing screen readers to accurately describe
 the widget's function to users with visual impairments.

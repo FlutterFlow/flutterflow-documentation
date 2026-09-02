@@ -1,8 +1,16 @@
 ---
 title: MediaDisplay
 slug: media-display
-tags: [Components, Base Elements]
-keywords: [Media, Image, Video, Widget, Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Media
+  - Image
+  - Video
+  - Widget
+  - Base Elements
 description: Learn how to add MediaDisplay widget in your FlutterFlow app.
 ---
 # MediaDisplay
@@ -19,9 +27,8 @@ Let's build an example of using the MediaDisplay widget inside the ListView and 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/cTIAYlFFDrAl5YV3KDtn?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/cTIAYlFFDrAl5YV3KDtn?embed&show_copy_link=true" title="MediaDisplay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -49,9 +56,8 @@ The steps to add and use the MediaDisplay are as follows:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/UPaIcU5AojvqG0MTP374?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/UPaIcU5AojvqG0MTP374?embed&show_copy_link=true" title="MediaDisplay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -79,9 +85,8 @@ The steps to add and use the MediaDisplay are as follows:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/1IREtjiFSv5HyQbjhsOo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/1IREtjiFSv5HyQbjhsOo?embed&show_copy_link=true" title="MediaDisplay interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

@@ -2,11 +2,18 @@
 slug: copyright-dmca-process
 title: Copyright (DMCA) Process
 description: Understand the copyright (DMCA) process on FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 3
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines, Copyright (DMCA) Process]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Legal Guidelines
+  - Copyright (DMCA) Process
 ---
-
 # Copyright (DMCA) Process
 
 :::danger

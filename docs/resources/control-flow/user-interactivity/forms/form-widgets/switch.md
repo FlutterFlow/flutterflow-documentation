@@ -1,8 +1,14 @@
 ---
 slug: /resources/forms/switch
 title: Switch
-tags: [Widgets, Form Elements]
-keywords: [FlutterFlow, Switch, SwitchListTile]
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - Switch
+  - SwitchListTile
 description: Learn how to add Switch and SwitchListTile widget in your FlutterFlow app.
 ---
 # Switch Widgets
@@ -22,9 +28,8 @@ Let's see how to add a switch widget and build an example that shows its value o
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9tTHM9wMjDmENmJTLWly?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9tTHM9wMjDmENmJTLWly?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -53,9 +58,8 @@ Here is a simple way to do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/UJblv7iLnarIVQ249J3I?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/UJblv7iLnarIVQ249J3I?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -88,9 +92,8 @@ To set the initial value:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/5g70NiKx0Mb5gS2VZ50q?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/5g70NiKx0Mb5gS2VZ50q?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -137,9 +140,8 @@ To disable a switch, move to the **Properties Panel** **>** turn on the **Switch
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/66f9aceda7dd45509119c54812236120?sid=d9b31cc8-7f6b-4191-8638-7dc37ac414df"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/66f9aceda7dd45509119c54812236120?sid=d9b31cc8-7f6b-4191-8638-7dc37ac414df" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -160,7 +162,7 @@ To disable a switch, move to the **Properties Panel** **>** turn on the **Switch
 
 ## SwitchListTile
 
-The **SwitchListTile** widget combines the functionality of a switch with a **[ListTile](../../../../ui/widgets/composing-widgets/list-grid.md#listtile-widget)**, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element. 
+The **SwitchListTile** widget combines the functionality of a switch with a **[ListTile](../../../../ui/widgets/composing-widgets/list-grid.md#listtile-widget)**, providing a more comprehensive option for displaying toggle switches alongside additional information. This widget includes a switch, a title, and an optional subtitle, all within a single, cohesive element.
 
 SwitchListTile is ideal for use cases where you want to provide more context or descriptive text alongside the switch, such as in a settings menu or a form with detailed options.
 
@@ -180,9 +182,8 @@ Here's an example of how you can use a SwitchListTile widget in your project:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/WkDIpdSWS8sNlazx6ySM?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/WkDIpdSWS8sNlazx6ySM?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -216,9 +217,8 @@ To set the platform type:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/xhXW6D8ECPtXXNgS8OOw?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/xhXW6D8ECPtXXNgS8OOw?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -256,9 +256,8 @@ To change the switch color:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/Bmg3s6E4HB03OfHbBCV8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Bmg3s6E4HB03OfHbBCV8?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -292,9 +291,8 @@ To make the switch appear before the title:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/l9WoMbxvJ5QOzEguXUw1?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/l9WoMbxvJ5QOzEguXUw1?embed&show_copy_link=true" title="Switch interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

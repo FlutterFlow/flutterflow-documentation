@@ -1,12 +1,22 @@
 ---
 slug: /concepts/custom-code/common-examples
 title: Common Examples
-description: Learn about the common custom code examples and use it directly in your project.
-tags: [Custom Actions, Custom Code]
+description: >-
+  Learn about the common custom code examples and use it directly in your
+  project.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 6
-keywords: [FlutterFlow, Custom Actions, Customizations, Flutter, Dart, Pub.dev, Examples]
+keywords:
+  - FlutterFlow
+  - Custom Actions
+  - Customizations
+  - Flutter
+  - Dart
+  - Pub.dev
+  - Examples
 ---
-
 # Common Code Examples
 
 The custom code feature in FlutterFlow allows you to extend functionality by accessing generated classes and modifying global variables like App States and FlutterFlow themes. This guide covers common scenarios where you can leverage custom code to enhance your project by working directly with data models and other resources within your code.
@@ -34,7 +44,7 @@ import '/backend/schema/enums/enums.dart';
 import '/auth/firebase_auth/auth_util.dart';
 ```
 
-::: 
+:::
 ### Access FlutterFlow Generated Classes
 
 FlutterFlow generates a complete Flutter codebase for you as you build apps in its platform. Part of this code includes custom classes that are designed to streamline common tasks and encapsulate reusable properties or logic.
@@ -47,12 +57,12 @@ For example:
 
 
 :::tip[What is a Class?]
-In programming, a class is a blueprint for creating objects. It defines properties (data) and methods (functions) that belong to objects of that type. 
+In programming, a class is a blueprint for creating objects. It defines properties (data) and methods (functions) that belong to objects of that type.
 
 For example,
 
 - A `Car` class might have properties like `color` and `speed` and methods like `drive()` and `stop()`.
-- In FlutterFlow, a class like `FFPlace` might have properties like `address` and `latLng`, and methods to manipulate or retrieve these values. 
+- In FlutterFlow, a class like `FFPlace` might have properties like `address` and `latLng`, and methods to manipulate or retrieve these values.
 :::
 
 These custom FlutterFlow classes in the generated code are mostly prefixed with `FF<ClassName>` or `FlutterFlow<ClassName>`. If you need to access these classes in your custom code, simply type "FF" or "FlutterFlow" in the code editor to locate them quick.
@@ -60,13 +70,13 @@ These custom FlutterFlow classes in the generated code are mostly prefixed with 
 
 ![suggestions-dropdown.png](imgs/suggestions-dropdown.png)
 
-### Leveraging Components in Custom Widget 
+### Leveraging Components in Custom Widget
 
 :::warning[Static Components vs Dynamic]
 Use this approach only when the component is a fixed element that does not change across different use cases. If the child component needs to change based on user choices, pass it directly [**as a parameter**](custom-widgets.md#creating-a-new-custom-widget).
 :::
 
-In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from 
+In a **[Custom Widget](custom-widgets.md)**, you can integrate a previously built **[FlutterFlow Component](../../resources/ui/components/intro-components.md)** directly, saving you from recreating child content in code. For example, if you’re building a Custom Widget to display custom dialog boxes or bottom sheets using a package from
 [pub.dev](https://pub.dev/), you can simply return an existing Component created on the canvas, rather than coding a new one from scratch.
 
 :::tip[Imports]
@@ -132,13 +142,13 @@ class _CustomButtonState extends State<CustomButton> {
 
 ### Modifying AppState from Custom Code
 
-In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples: 
+In FlutterFlow, you can access or update AppState directly from the Action Flow Editor. However, certain scenarios may require you to access or modify AppState within custom code for more control over the operation flow. The `FFAppState` class also provides additional helper functions to modify AppState values. Let’s look at some examples:
 
 :::tip[Imports]
 Ensure you import `import '../../flutter_flow/flutter_flow_util.dart';` when accessing `FFAppState` in custom code resources.
 :::
 
-- **Get AppState value in Custom Code** 
+- **Get AppState value in Custom Code**
 
 ```js
 
@@ -219,7 +229,7 @@ final newProduct = ProductStruct(
 
 #### Example 2: Get Properties of an Existing `ProductStruct` object
 
-If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action. 
+If you have an existing `ProductStruct` object (e.g., retrieved from a list of products), you can access its properties or return specific values back to the calling Action.
 
 Let's assume you have an Action that calls a Custom Action to retrieve a field value from the provided `ProductStruct` object.
 
@@ -305,7 +315,7 @@ Future addNewReviews(ProductStruct product) {
 }
 ```
 
-or if the new list of reviews is being provided to the Custom Action, then: 
+or if the new list of reviews is being provided to the Custom Action, then:
 
 ```js
 Future addDynamicReviews(ProductStruct product, List<ReviewStruct> newReviews) {
@@ -363,7 +373,7 @@ Future getWebhookId() async {
 
 When using a library dependency in your project, you can also access its components, such as Library App State, Library Values, and Library Widgets, in the user project's custom code. Here are a few examples:
 
-#### Get Library Values 
+#### Get Library Values
 
 Similar to `FFAppState` or `FFDevEnvironmentValues` class, FlutterFlow generates a singleton `FFLibraryValues` class for library projects, which provides direct access to **[Library Values](../../resources/projects/libraries.md#library-values)**.
 
@@ -375,7 +385,7 @@ Future getSchema(StateStruct? syncStatus) async {
 }
 ```
 
-#### Get Library Custom Code 
+#### Get Library Custom Code
 
 When you add a library dependency to your FlutterFlow project, FlutterFlow automatically includes necessary imports, allowing you to utilize custom code resources from the library project in your user project's custom code files.
 
@@ -435,4 +445,3 @@ class _CustomDialogState extends State<CustomDialog> {
     }
 }
 ```
-

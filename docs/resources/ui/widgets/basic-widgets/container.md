@@ -1,10 +1,18 @@
 ---
 slug: /resources/ui/widgets/container
 title: Container
-tags: [Layout Elements]
-description: Learn how to use the Container widget to structure, style, and animate layouts in FlutterFlow.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  Learn how to use the Container widget to structure, style, and animate layouts
+  in FlutterFlow.
+keywords:
+  - Container
+  - Widgets
+  - Ui
 ---
-
 # Container
 
 The Container widget is a highly versatile widget that functions much like a multi-purpose box in your app's
@@ -40,9 +48,8 @@ For example, in a responsive design, you might want a button to grow with the sc
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jkwIBttsFSSWjahRGvuG?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jkwIBttsFSSWjahRGvuG?embed&show_copy_link=true" title="Container interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -72,9 +79,8 @@ This property determines whether the content inside the Container should be clip
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/CE10WcMhXUDysN5lwOWt?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/CE10WcMhXUDysN5lwOWt?embed&show_copy_link=true" title="Container interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -114,9 +120,8 @@ Here's a quick demo to show the Box Shadow properties on a Container:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ARcQ5JOhZ2xX8ldP0ZZ3?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ARcQ5JOhZ2xX8ldP0ZZ3?embed&show_copy_link=true" title="Container interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -161,7 +166,7 @@ In the example above:
   halfway point.
 - The transition point for Color 3 is 1, which places the start of this color's transition at the
   end of the gradient.
-  
+
 
 ## Background Image Properties
 The Background Image properties provide options for setting an image as the background of a
@@ -191,9 +196,8 @@ Here's an example of a Container's width and color changing without Implicit Ani
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/EBns8ZWuzwID6WX2lNln?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EBns8ZWuzwID6WX2lNln?embed&show_copy_link=true" title="Container interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -221,9 +225,8 @@ Next, enable **Implicit Animation** for this Container and see the difference:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/4IM7pmYzWfBJmjqFX2Um?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4IM7pmYzWfBJmjqFX2Um?embed&show_copy_link=true" title="Container interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -271,7 +274,7 @@ If you prefer watching a video tutorial, watch this guide:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
+    <iframe
         src="https://www.youtube.com/embed/EQgUvPEMd2E"
         title="Containers"
         style={{

@@ -2,8 +2,18 @@
 title: Page Properties
 slug: /resources/ui/pages/properties
 sidebar_position: 1
+description: >-
+  In FlutterFlow, the Properties panel on the right helps you set up and manage
+  your pages.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Page Properties
+  - Properties
+  - Pages
 ---
-
 # Properties Panel
 
 In FlutterFlow, the Properties panel on the right helps you set up and manage your pages. It opens when you select the root element in the [Widget Tree](../widgets/intro-widgets.md#widget-tree) (on the left).
@@ -60,7 +70,7 @@ When the Route object is created for this Page, setting `requireAuth: true` ensu
 FFRoute(
     name: 'promotionPage',
     path: '/promotionPage',
-    requireAuth: true, 
+    requireAuth: true,
     builder: (context, params) => PromotionPageWidget(),
   )
 ```
@@ -120,8 +130,8 @@ page, submit form data, or call an API. Actions are crucial for creating
 interactive and functional apps.
 
 For Scaffold (Page) actions, you can establish specific behaviors or
-functions that are triggered by certain events related to the page's lifecycle, such as [**On Page 
-Load**](page-lifecycle.md#on-page-load-action-trigger) or [**On Phone Shake**](page-lifecycle.md#on-phone-shake-action-trigger). 
+functions that are triggered by certain events related to the page's lifecycle, such as [**On Page
+Load**](page-lifecycle.md#on-page-load-action-trigger) or [**On Phone Shake**](page-lifecycle.md#on-phone-shake-action-trigger).
 
 :::info[LEARN MORE]
 To learn about the page lifecycle and other methods exposed by FlutterFlow, [**refer to this resource**](page-lifecycle.md).
@@ -144,7 +154,7 @@ To learn more about how to connect to a backend source, refer to our [**Database
 State management configurations are essential for maintaining the state or
 status of a page across user interactions or app sessions. This can include
 tracking user inputs, remembering user choices, or preserving the app's state
-during navigation between pages. 
+during navigation between pages.
 
 :::info[LEARN MORE]
 Learn how to create and **[manage the update lifecycle](page-lifecycle.md)** of Page State variables.

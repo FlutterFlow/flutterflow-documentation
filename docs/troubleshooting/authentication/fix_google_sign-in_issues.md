@@ -1,7 +1,18 @@
 ---
-keywords: ['firebase', 'deployment', 'android', 'google-sign-in']
+keywords:
+  - firebase
+  - deployment
+  - android
+  - google-sign-in
 slug: /troubleshooting/authentication/fix-google-sign-in-issues
 title: Fix Google Sign-In Issues
+description: >-
+  If Google Sign-In isn’t working after exporting your FlutterFlow app, follow
+  these steps based on how you’re deploying your app.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
 # Fix Google Sign-In Issues
 
@@ -15,18 +26,18 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
     - Go to **Setup → App Integrity**.
     - Under the **App Signing** tab, copy the **SHA-1 certificate fingerprint**.
 
-    ![](../assets/20250430121440426479.png)
+    ![Fix Google Sign-In Issues in FlutterFlow](../assets/20250430121440426479.png)
 
     - In the **Firebase console**, open the same project, scroll to **Your Apps**, and select your Android app.
     - Click **Add fingerprint**, paste the SHA-1, then click **Save**.
 
-    ![](../assets/20250430121441325585.png)
+    ![Fix Google Sign-In Issues in FlutterFlow](../assets/20250430121441325585.png)
 
     - In FlutterFlow, go to **Settings → Firebase** and click:
     - **Regenerate Config Files**
     - **Generate Files**
 
-    ![](../assets/20250430121442125737.png)
+    ![Fix Google Sign-In Issues in FlutterFlow](../assets/20250430121442125737.png)
 
     Re-test your app. Google Sign-In should now work correctly.
 
@@ -39,13 +50,13 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
     - In **Firebase**, open your project settings.
     - Under **Your Apps**, select the Android app and add the SHA-1 fingerprint.
 
-    ![](../assets/20250430121442863891.png)
+    ![Fix Google Sign-In Issues in FlutterFlow](../assets/20250430121442863891.png)
 
     - In FlutterFlow, go to **Settings → Firebase**, then:
     - **Regenerate Config Files**
     - **Generate Files**
 
-    ![](../assets/20250430121443525154.png)
+    ![Fix Google Sign-In Issues in FlutterFlow](../assets/20250430121443525154.png)
 
     Test the app again to confirm Google Sign-In works.
 
@@ -54,6 +65,10 @@ If Google Sign-In isn’t working after exporting your FlutterFlow app, follow t
 
 
 :::tip[Add Debug SHA-1 for Local Testing]
-- When testing Google Sign-In in FlutterFlow before publishing, add your **debug SHA-1** in Firebase.  
+- When testing Google Sign-In in FlutterFlow before publishing, add your **debug SHA-1** in Firebase.
 - Then go to `Settings → Firebase` in FlutterFlow and regenerate your config files.
 :::
+
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

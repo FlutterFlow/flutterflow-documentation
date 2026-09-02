@@ -1,24 +1,30 @@
 ---
 slug: /concepts/advanced/method-channels
 title: Integrating Native SDKs Using Method Channels
-description: Learn how to integrate third-party native SDKs into your FlutterFlow project using Method Channels. This guide walks through setting up channels, writing native code, and connecting it back to FlutterFlow.
-tags: [Flutter]
+description: >-
+  Flutter lets you build one app that runs on mobile, web, desktop, and embedded
+  experiences from a single codebase.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 3
-keywords: [FlutterFlow, Flutter, Method Channels, Existing Flutter Codebases,]
+keywords:
+  - FlutterFlow
+  - Flutter
+  - Method Channels
+  - Existing Flutter Codebases
 ---
-
-
 Flutter lets you build one app that runs on mobile, web, desktop, and embedded experiences from a single codebase. You write your app logic in Dart once, which is then compiled natively for the target platform. This is a big advantage for teams that want to reduce duplication between Android and iOS apps while maintaining great performance and flexibility.
 
-For native developers accustomed to Kotlin, Java, Swift, or Objective-C, Flutter provides access to platform-specific functionality. The bridge between Dart and native code is called a **MethodChannel**. 
+For native developers accustomed to Kotlin, Java, Swift, or Objective-C, Flutter provides access to platform-specific functionality. The bridge between Dart and native code is called a **MethodChannel**.
 
 You can think of it as a two-way door: Dart can ask Android or iOS to run some code, and the platform can send results back. The two sides communicate using messages, rather than shared memory, which makes the system simple and secure.
 
 With MethodChannels, you can:
 
-* Call Android and iOS APIs that aren’t built into Flutter.  
-* Use advanced third‑party SDKs (e.g., barcode scanners, Bluetooth libraries, custom UI components).  
-* Perform operations that need native performance or device-specific access.  
+* Call Android and iOS APIs that aren’t built into Flutter.
+* Use advanced third‑party SDKs (e.g., barcode scanners, Bluetooth libraries, custom UI components).
+* Perform operations that need native performance or device-specific access.
 * Return data from the native side into Flutter with low latency.
 
 **Why this matters for native engineers**
@@ -70,52 +76,52 @@ MethodChannels operate over a named channel using a message-passing model. You d
 
 This message flow is asynchronous and decoupled:
 
-* Dart code doesn’t block while the native code runs; it returns a `Future` that resolves when the result is ready.  
+* Dart code doesn’t block while the native code runs; it returns a `Future` that resolves when the result is ready.
 * Native code must explicitly return a result using either `success`, `error`, or `notImplemented`, ensuring consistent feedback.
 
 ### Key Concepts {#key-concepts}
 
-* **Channel Name**: A unique identifier string that both Flutter and native code must use. Example: `'com.example/platform'`. Naming collisions should be avoided by namespacing based on your app or organization.  
-* **Method Invocation**: Flutter calls `invokeMethod('methodName', arguments)`. The method name is a simple string. Arguments can be null or any value supported by Flutter’s `StandardMessageCodec` (bool, int, double, string, List, Map).  
-* **Method Handler**: Native code uses a handler (e.g., `setMethodCallHandler` on Android) to listen for calls and run logic when the specified method name is matched.  
+* **Channel Name**: A unique identifier string that both Flutter and native code must use. Example: `'com.example/platform'`. Naming collisions should be avoided by namespacing based on your app or organization.
+* **Method Invocation**: Flutter calls `invokeMethod('methodName', arguments)`. The method name is a simple string. Arguments can be null or any value supported by Flutter’s `StandardMessageCodec` (bool, int, double, string, List, Map).
+* **Method Handler**: Native code uses a handler (e.g., `setMethodCallHandler` on Android) to listen for calls and run logic when the specified method name is matched.
 * **Result Callback**: The native handler must return a result via `result.success(...)`, `result.error(...)`, or `result.notImplemented()`. These responses are passed back to Dart, completing the `Future`.
 
-### Example Message Flow 
+### Example Message Flow
 
 ![method-channels.avif](imgs/method-channels.avif)
 
 This design ensures clear separation between platform and UI logic, and it keeps the UI thread non-blocking for both Dart and native sides. It also makes the communication extensible—you can define as many methods as you need over a single channel or use multiple channels for modular organization.
 
 
-### When to Use a MethodChannel 
+### When to Use a MethodChannel
 
 MethodChannel is most appropriate when:
 
-* You need to use Android/iOS APIs not available in Flutter or plugins (e.g., access to specific hardware sensors, native storage APIs).  
-* You need to integrate a proprietary or vendor SDK (e.g., analytics, payment, OCR) written for the platform.  
-* You need to launch a platform-native UI (e.g., a full-screen scanner or a native file picker).  
+* You need to use Android/iOS APIs not available in Flutter or plugins (e.g., access to specific hardware sensors, native storage APIs).
+* You need to integrate a proprietary or vendor SDK (e.g., analytics, payment, OCR) written for the platform.
+* You need to launch a platform-native UI (e.g., a full-screen scanner or a native file picker).
 * You’re bridging a legacy native feature into a Flutter app or gradually migrating a native app to Flutter.
 
-### What MethodChannels Are Not 
+### What MethodChannels Are Not
 
-* They are not **shared memory** \- All data is copied through serialization, not shared by reference. Only standard types are supported (primitives, lists, maps, typed data). Large data transfers require full serialization/deserialization.  
-* They are **not synchronous** \- Calls return Futures immediately without blocking. Results arrive asynchronously via the event loop. Platform errors surface as PlatformExceptions when the Future completes.  
+* They are not **shared memory** \- All data is copied through serialization, not shared by reference. Only standard types are supported (primitives, lists, maps, typed data). Large data transfers require full serialization/deserialization.
+* They are **not synchronous** \- Calls return Futures immediately without blocking. Results arrive asynchronously via the event loop. Platform errors surface as PlatformExceptions when the Future completes.
 * They are **not opinionated** \- You define the API contract (method names, arguments, types) on both sides. There's no compile-time validation across the boundary \- mismatches fail at runtime. Document your contract and validate inputs since type safety isn't enforced.
 
 By understanding these characteristics, you can create robust, maintainable bridges between Dart and native code. You can write minimal, purpose-driven native handlers and keep the rest of your app in Flutter, achieving both deep platform access and cross-platform speed.
 
-## Real-World Use Cases for MethodChannels 
+## Real-World Use Cases for MethodChannels
 
 While Flutter plugins cover many common platform integrations, there are frequent scenarios where you require direct access to native SDKs or platform-specific APIs. MethodChannels offer a direct path for these integrations without waiting for third-party plugin support.
 
-Ultimately, method channel integration is essentially plugin development \- you're writing the same native bridge packaged for your app instead of as a public package. Once complete, it can be imported into FlutterFlow. The following examples show when building your own native integration is more practical than waiting for or wrestling with existing plugins. The following examples outline situations where MethodChannels are suitable. 
+Ultimately, method channel integration is essentially plugin development \- you're writing the same native bridge packaged for your app instead of as a public package. Once complete, it can be imported into FlutterFlow. The following examples show when building your own native integration is more practical than waiting for or wrestling with existing plugins. The following examples outline situations where MethodChannels are suitable.
 
 ### Accessing Device Hardware Not Exposed by Plugins
 
 **Example:** Retrieve mobile network signal strength, advanced battery metrics, or thermal status.
 
-* Low-level APIs like Android's `TelephonyManager` or iOS's `CoreTelephony` are rarely exposed through Flutter plugins.  
-* These require direct permission management and native invocation.  
+* Low-level APIs like Android's `TelephonyManager` or iOS's `CoreTelephony` are rarely exposed through Flutter plugins.
+* These require direct permission management and native invocation.
 * With MethodChannels, you can call only what you need, without waiting for a plugin update or writing one from scratch.
 
 **Benefit:** Access hardware-level telemetry or diagnostics crucial for field-service apps, testing tools, or enterprise reporting.
@@ -124,8 +130,8 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Example:** Use a third-party identity verification SDK, document scanner, or encrypted storage SDK.
 
-* Many vendors distribute Android/iOS SDKs only and have no Flutter wrappers.  
-* A minimal native wrapper and MethodChannel interface let you expose only the needed functionality.  
+* Many vendors distribute Android/iOS SDKs only and have no Flutter wrappers.
+* A minimal native wrapper and MethodChannel interface let you expose only the needed functionality.
 * Native SDK updates remain decoupled from Flutter UI changes.
 
 **Benefit:** Unlocks core business features (KYC, biometrics, payments) without dependency on plugin authors or external wrappers.
@@ -134,7 +140,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Example:** Show a native PDF viewer, a camera UI from a vendor SDK, or an AR interface.
 
-* `PlatformView` allows embedding native UI, but it requires more setup and introduces performance tradeoffs.  
+* `PlatformView` allows embedding native UI, but it requires more setup and introduces performance tradeoffs.
 * If the native UI is temporary or full-screen, you can invoke it via MethodChannel and return control to Flutter afterward.
 
 **Benefit:** Delivers platform-native experiences where needed while preserving Flutter’s rendering pipeline elsewhere.
@@ -143,8 +149,8 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Example:** Respond to geofencing events, push token refresh, or Bluetooth device state changes.
 
-* These use cases originate in native services or background tasks.  
-* You can queue or debounce events on the native side and send them to Flutter via MethodChannel when the app is active.  
+* These use cases originate in native services or background tasks.
+* You can queue or debounce events on the native side and send them to Flutter via MethodChannel when the app is active.
 * For continuous updates, use `EventChannel`, as MethodChannel is ideal for transactional or one-off data transfers.
 
 **Benefit:** Achieves OS-level integration (e.g., location, power, Bluetooth) without polling or Dart-side complexity.
@@ -153,7 +159,7 @@ Ultimately, method channel integration is essentially plugin development \- you'
 
 **Example:** Fetch IMEI, MAC address, device fingerprint, or system identifiers.
 
-* These APIs often require special entitlements and native-side permission prompts.  
+* These APIs often require special entitlements and native-side permission prompts.
 * Native logic can validate permissions, sanitize data, and decide what’s safe to return.
 
 **Benefit:** Ensures security-sensitive operations remain native-controlled, supporting enterprise, regulated, or BYOD environments.
@@ -176,10 +182,10 @@ import 'package:flutter/services.dart';
 const platform = MethodChannel('com.example/device');
 ```
 
-* The channel name `'com.example/device'` must match **exactly** with the one used on the native side.  
+* The channel name `'com.example/device'` must match **exactly** with the one used on the native side.
 * Channel names should follow a reverse-domain convention to avoid collisions.
 
-**Sending a Method Call:** 
+**Sending a Method Call:**
 
 ```js
 Future<String> getBatteryLevel() async {
@@ -192,16 +198,16 @@ Future<String> getBatteryLevel() async {
 }
 ```
 
-* `invokeMethod` sends a string method name and optional arguments to native code.  
-* The result comes back asynchronously via a `Future`.  
-* Always wrap the call in a `try-catch` block to handle `PlatformException`, which may occur if:  
-  * The native method throws an error  
-  * The method is not implemented  
+* `invokeMethod` sends a string method name and optional arguments to native code.
+* The result comes back asynchronously via a `Future`.
+* Always wrap the call in a `try-catch` block to handle `PlatformException`, which may occur if:
+  * The native method throws an error
+  * The method is not implemented
   * Data serialization fails
 
-**Notes:** 
+**Notes:**
 
-* You can pass arguments to `invokeMethod()` as the second parameter (e.g., a `Map<String, dynamic>`).  
+* You can pass arguments to `invokeMethod()` as the second parameter (e.g., a `Map<String, dynamic>`).
 * The result can be any JSON-compatible Dart type: `int`, `String`, `bool`, `double`, `List`, or `Map`.
 
 
@@ -209,7 +215,7 @@ Future<String> getBatteryLevel() async {
 
 The Android side handles Dart calls using a `MethodChannel` registered in `MainActivity`. This handler runs on the **main thread** by default, so long-running work should be offloaded to a background thread.
 
-**Setting Up the Channel:** 
+**Setting Up the Channel:**
 
 ```js
 import io.flutter.embedding.android.FlutterActivity
@@ -219,7 +225,7 @@ import android.os.BatteryManager
 import android.content.Context
 ```
 
-**Handling the Method Call:** 
+**Handling the Method Call:**
 
 ```js
 class MainActivity: FlutterActivity() {
@@ -250,13 +256,13 @@ class MainActivity: FlutterActivity() {
 
 
 
-**Notes:** 
+**Notes:**
 
-- Always return a result using one of the following:  
-  * `result.success(data)` — returns data to Dart  
-  * `result.error(code, message, details)` — throws `PlatformException` in Dart  
-  * `result.notImplemented()` — throws `MissingPluginException` in Dart  
-- Do **not** call `result` multiple times. Flutter expects a one-time, one-result reply per method call.  
+- Always return a result using one of the following:
+  * `result.success(data)` — returns data to Dart
+  * `result.error(code, message, details)` — throws `PlatformException` in Dart
+  * `result.notImplemented()` — throws `MissingPluginException` in Dart
+- Do **not** call `result` multiple times. Flutter expects a one-time, one-result reply per method call.
 - If your native call involves I/O, network, or anything that blocks, use a background thread:
 ```js
     Thread(Runnable {
@@ -275,7 +281,7 @@ class MainActivity: FlutterActivity() {
 
 In iOS, the platform channel is handled via `FlutterMethodChannel` in `AppDelegate.swift`. Similar to Android, the method call handler runs on the **main thread** by default.
 
-**Setting Up the Channel:** 
+**Setting Up the Channel:**
 
 ```js
 import UIKit
@@ -291,7 +297,7 @@ import Flutter
     binaryMessenger: controller.binaryMessenger)
 ```
 
-**Handling the Method Call:** 
+**Handling the Method Call:**
 
 ```js
     batteryChannel.setMethodCallHandler { (call: FlutterMethodCall, result: @escaping FlutterResult) in
@@ -316,8 +322,8 @@ import Flutter
 
 **Notes:**
 
-* Always return exactly one response per method call.  
-* Use `FlutterError` to send detailed error info to Dart.  
+* Always return exactly one response per method call.
+* Use `FlutterError` to send detailed error info to Dart.
 * If needed, use `DispatchQueue.global().async` to run long tasks in the background, then return via `DispatchQueue.main.async`.
 
 
@@ -325,10 +331,10 @@ import Flutter
 
 To implement **MethodChannels** successfully:
 
-* **Use consistent channel and method names** between Dart and native code.  
-* **Use standard types** for data exchange (prefer `String`, `int`, `bool`, `List`, `Map`).  
-* **Always handle errors** clearly on both sides.  
-* **Offload long-running native logic** to background threads.  
+* **Use consistent channel and method names** between Dart and native code.
+* **Use standard types** for data exchange (prefer `String`, `int`, `bool`, `List`, `Map`).
+* **Always handle errors** clearly on both sides.
+* **Offload long-running native logic** to background threads.
 * **Keep the native side minimal and testable**, separating SDK logic from channel code where appropriate.
 
 By following these steps and patterns, you’ll be able to bridge Flutter with native code cleanly—supporting deep platform integrations while maintaining a smooth UI and maintainable codebase.
@@ -337,7 +343,7 @@ By following these steps and patterns, you’ll be able to bridge Flutter with n
 
 FlutterFlow is a visual development platform that generates complete Flutter applications. While it supports writing custom Dart code through **Custom Actions** and **Custom Functions**, it does not allow direct editing of platform-native code (Kotlin, Swift) through its web UI. This introduces some important considerations when integrating Flutter’s `MethodChannel` API for platform-specific functionality.
 
-**Step 1: Create a Custom Flutter Plugin** 
+**Step 1: Create a Custom Flutter Plugin**
 
 **1.1 Initialize the Plugin**
 
@@ -353,32 +359,32 @@ This command sets up a plugin project with the necessary structure for both Andr
 
 Within the generated plugin, navigate to the platform-specific directories (`android` and `ios`) to implement the desired functionality. For example, to retrieve the device's battery level:
 
-* **Android (Kotlin):** Modify `MyCustomPlugin.kt` to access the battery information using Android's `BatteryManager`.  
+* **Android (Kotlin):** Modify `MyCustomPlugin.kt` to access the battery information using Android's `BatteryManager`.
 * **iOS (Swift):** Update `MyCustomPlugin.swift` to utilize `UIDevice` for battery level retrieval.
 
 **1.3 Publish to GitHub**
 
 After implementing and testing your plugin:
 
-1. Initialize a Git repository in your plugin directory.  
-2. Commit your changes.  
+1. Initialize a Git repository in your plugin directory.
+2. Commit your changes.
 3. Push the repository to GitHub.
 
 Ensure your `pubspec.yaml` is correctly configured, and consider tagging releases for versioning.
 
 
-**Step 2: Add the Plugin as a Dependency in FlutterFlow** 
+**Step 2: Add the Plugin as a Dependency in FlutterFlow**
 
 To integrate your custom plugin into a FlutterFlow project:
 
-1. Navigate to **Custom Code \> Custom Actions** or **Custom Widgets** in FlutterFlow.  
-2. Create a new Custom Action or Widget.  
-3. In the **Settings** panel on the right, scroll to **Dependencies**.  
+1. Navigate to **Custom Code \> Custom Actions** or **Custom Widgets** in FlutterFlow.
+2. Create a new Custom Action or Widget.
+3. In the **Settings** panel on the right, scroll to **Dependencies**.
 4. Add your plugin using the Git URL:
 
     ```yaml
-      my_custom_plugin:  
-        git:  
+      my_custom_plugin:
+        git:
           url: https://github.com/yourusername/my_custom_plugin.git
       ```
 
@@ -399,18 +405,18 @@ For detailed guidance, refer to FlutterFlow's documentation on [using unpublishe
 
 With the plugin integrated, you can now create Custom Actions to leverage its functionality:
 
-1. Define a new Custom Action in FlutterFlow.  
+1. Define a new Custom Action in FlutterFlow.
 2. In the code editor, implement the action using your plugin. For example:
 
     ```jsx
-      Future<int> getBatteryLevel() async { 
-        final batteryLevel = await MyCustomPlugin.getBatteryLevel();  
-        return batteryLevel;  
+      Future<int> getBatteryLevel() async {
+        final batteryLevel = await MyCustomPlugin.getBatteryLevel();
+        return batteryLevel;
       }
     ```
 
 
-3. Compile the custom code to ensure there are no errors.  
+3. Compile the custom code to ensure there are no errors.
 4. Use this Custom Action within your FlutterFlow project's action flows, just like any built-in action.
 
 This approach allows you to encapsulate complex logic within reusable actions, enhancing modularity and maintainability.
@@ -435,23 +441,23 @@ MethodChannels are powerful but require careful implementation. When the Dart an
 
     **Common causes:**
 
-  * Dart `MethodChannel` name does not match the native channel name.  
-  * Native code handler (`setMethodCallHandler`) was never set up or was incorrectly placed.  
-  * Custom native code was overwritten when re-downloading a FlutterFlow project without preserving changes.  
-  * The method was invoked before the Flutter engine or the channel was fully initialized.  
-  * Hot reload only updates Dart code, but not with native channel implementations. 
+  * Dart `MethodChannel` name does not match the native channel name.
+  * Native code handler (`setMethodCallHandler`) was never set up or was incorrectly placed.
+  * Custom native code was overwritten when re-downloading a FlutterFlow project without preserving changes.
+  * The method was invoked before the Flutter engine or the channel was fully initialized.
+  * Hot reload only updates Dart code, but not with native channel implementations.
 
   **How to fix:**
 
-  * Confirm that the channel name is **identical** in Dart and native code (case-sensitive).  
-  * On Android, ensure the channel is registered inside `configureFlutterEngine()`.  
-  * On iOS, set up the `FlutterMethodChannel` inside `didFinishLaunchingWithOptions()`.  
-  * Log the available channels/methods to confirm registration during app startup.  
+  * Confirm that the channel name is **identical** in Dart and native code (case-sensitive).
+  * On Android, ensure the channel is registered inside `configureFlutterEngine()`.
+  * On iOS, set up the `FlutterMethodChannel` inside `didFinishLaunchingWithOptions()`.
+  * Log the available channels/methods to confirm registration during app startup.
   * Native channel implementations require a full restart because the platform-specific code must be recompiled and relinked.
 
 
 
-### Incorrect Argument or Result Types 
+### Incorrect Argument or Result Types
 
     **Symptom:** App crashes with type casting errors or returns `null` unexpectedly.
 
@@ -459,15 +465,15 @@ MethodChannels are powerful but require careful implementation. When the Dart an
 
     **Common causes:**
 
-  * Dart sends an argument as a Map but native expects a String, or vice versa.  
-  * Native code returns a platform object that can't be serialized by Flutter.  
+  * Dart sends an argument as a Map but native expects a String, or vice versa.
+  * Native code returns a platform object that can't be serialized by Flutter.
   * The return value is not compatible with `StandardMessageCodec`.
 
   **How to fix:**
 
-  * Only use standard types: `int`, `double`, `String`, `bool`, `List`, or `Map` with JSON-safe contents.  
-  * On Dart side, specify the expected return type with generics: `invokeMethod<int>(...)`.  
-  * On native side, validate input types before using them. Consider using try/catch or safe casting.  
+  * Only use standard types: `int`, `double`, `String`, `bool`, `List`, or `Map` with JSON-safe contents.
+  * On Dart side, specify the expected return type with generics: `invokeMethod<int>(...)`.
+  * On native side, validate input types before using them. Consider using try/catch or safe casting.
   * Avoid sending complex objects like native SDK responses directly—convert to a simple dictionary or string.
 
 
@@ -479,15 +485,15 @@ MethodChannels are powerful but require careful implementation. When the Dart an
 
 **Common causes:**
 
-* Native method handler fails to call `result.success`, `result.error`, or `result.notImplemented`.  
-* The method call handler throws an exception that prevents the response from being sent.  
+* Native method handler fails to call `result.success`, `result.error`, or `result.notImplemented`.
+* The method call handler throws an exception that prevents the response from being sent.
 * Heavy logic (e.g., file I/O, network calls) is blocking the main thread.
 
 **How to fix:**
 
-* Always call one—and only one—of the result callbacks.  
-* Wrap native code in try/catch blocks to catch and report any exceptions.  
-* Offload slow operations to a background thread or coroutine (Kotlin) or dispatch queue (Swift).  
+* Always call one—and only one—of the result callbacks.
+* Wrap native code in try/catch blocks to catch and report any exceptions.
+* Offload slow operations to a background thread or coroutine (Kotlin) or dispatch queue (Swift).
 * Use Dart timeouts or loading indicators to keep the UI responsive while waiting.
 
 ### Calling `result` Multiple Times
@@ -498,38 +504,38 @@ MethodChannels are powerful but require careful implementation. When the Dart an
 
 **Common causes:**
 
-* Both success and error branches are executed due to logic errors.  
-* Async operations or callbacks race to return multiple responses.  
+* Both success and error branches are executed due to logic errors.
+* Async operations or callbacks race to return multiple responses.
 * A timeout, retry, or exception causes unintended second calls.
 
 **How to fix:**
 
-* Track whether a response has been sent using a flag (e.g., `var responded = false`).  
-* Use return statements or guards to prevent multiple result calls.  
+* Track whether a response has been sent using a flag (e.g., `var responded = false`).
+* Use return statements or guards to prevent multiple result calls.
 * Structure async callbacks carefully to ensure only one callback path runs.
 
 
 ### Debugging Tips by Platform
 
-**Flutter/Dart:** 
+**Flutter/Dart:**
 
-* Use `print()` or `debugPrint()` to log method calls and results.  
-* Always wrap `invokeMethod` in `try/catch` and log exceptions.  
-* Add logs before and after `invokeMethod()` to verify flow.  
+* Use `print()` or `debugPrint()` to log method calls and results.
+* Always wrap `invokeMethod` in `try/catch` and log exceptions.
+* Add logs before and after `invokeMethod()` to verify flow.
 * Use Flutter DevTools to inspect console logs and application state.
 
-**Android (Kotlin/Java):** 
+**Android (Kotlin/Java):**
 
-* Use `Log.d("MethodChannel", "Received: ${call.method}")` inside the handler.  
-* Use `adb logcat | grep flutter` to filter platform logs.  
-* Ensure `configureFlutterEngine()` is actually called—older project setups may require manual configuration.  
+* Use `Log.d("MethodChannel", "Received: ${call.method}")` inside the handler.
+* Use `adb logcat | grep flutter` to filter platform logs.
+* Ensure `configureFlutterEngine()` is actually called—older project setups may require manual configuration.
 * Use breakpoints in Android Studio for step-by-step inspection.
 
 **iOS (Swift/Objective-C):**
 
-* Use `print()` or `NSLog()` to trace handler execution.  
-* Watch the Xcode console for startup logs or channel registration issues.  
-* Ensure you're calling `result(...)` correctly and only once.  
+* Use `print()` or `NSLog()` to trace handler execution.
+* Watch the Xcode console for startup logs or channel registration issues.
+* Ensure you're calling `result(...)` correctly and only once.
 * Check if the `AppDelegate` is properly casting `window?.rootViewController` to `FlutterViewController`.
 
 
@@ -539,15 +545,15 @@ By understanding and anticipating these pitfalls, developers can avoid common er
 
 Integrating native functionality through MethodChannels can bring significant value to your app \- but only if it’s done with performance and maintainability in mind. Below are the five most important best practices engineers should apply in real-world production apps, along with deeper insights into why each one matters.
 
-:::info[Important Context for FlutterFlow Users] 
+:::info[Important Context for FlutterFlow Users]
 FlutterFlow generates clean Dart code and supports Custom Actions for inserting Dart logic, but it does not currently support inline native (Kotlin/Swift) editing.
 :::
 
 ### Don’t Block the Main Thread
 
-* By default, all MethodChannel calls are handled on the **main UI thread**, which is also responsible for rendering the app.  
-* Native operations like database access, file I/O, Bluetooth scanning, or network requests **must** be moved off the main thread.  
-* Use background threads (e.g., `Executors` or `coroutines` on Android, `DispatchQueue.global()` on iOS) to perform long-running tasks.  
+* By default, all MethodChannel calls are handled on the **main UI thread**, which is also responsible for rendering the app.
+* Native operations like database access, file I/O, Bluetooth scanning, or network requests **must** be moved off the main thread.
+* Use background threads (e.g., `Executors` or `coroutines` on Android, `DispatchQueue.global()` on iOS) to perform long-running tasks.
 * Return results on the main thread using `runOnUiThread` (Android) or `DispatchQueue.main.async` (iOS).
 
 Blocking the UI thread for even a few milliseconds can cause dropped frames, janky animations, and a visibly unresponsive app, especially on mid-range devices.
@@ -558,9 +564,9 @@ While UI interactions and workflows look smooth inside FlutterFlow, once you exp
 
 ### Keep MethodChannel Code Minimal
 
-* Your MethodChannel handler should act like a **controller**, not a service. It should delegate execution to well-structured, modular native components.  
-* This keeps the interface between Dart and native thin and easy to maintain.  
-* For example, `getBatteryLevel` in Kotlin should just delegate to `BatteryService().getLevel()`.  
+* Your MethodChannel handler should act like a **controller**, not a service. It should delegate execution to well-structured, modular native components.
+* This keeps the interface between Dart and native thin and easy to maintain.
+* For example, `getBatteryLevel` in Kotlin should just delegate to `BatteryService().getLevel()`.
 * This separation helps native teams evolve platform code independently of Flutter UI updates.
 
 Clean separation of concerns leads to better test coverage, easier onboarding, and avoids hard-to-debug cross-layer bugs.
@@ -569,9 +575,9 @@ Clean separation of concerns leads to better test coverage, easier onboarding, a
 
 ### Use Only JSON-Compatible Data
 
-* The Flutter engine uses `StandardMessageCodec` for MethodChannel communication.  
-* It supports only a limited set of Dart-native types: `int`, `double`, `bool`, `String`, `List`, `Map`, and `null`.  
-* Any native types (e.g., `Bitmap`, `Bundle`, `NSData`, `UIColor`) must be converted to a JSON-friendly structure first.  
+* The Flutter engine uses `StandardMessageCodec` for MethodChannel communication.
+* It supports only a limited set of Dart-native types: `int`, `double`, `bool`, `String`, `List`, `Map`, and `null`.
+* Any native types (e.g., `Bitmap`, `Bundle`, `NSData`, `UIColor`) must be converted to a JSON-friendly structure first.
 * If data is complex (e.g., a barcode result or device info), serialize it to a flat Map or a JSON string before sending it across.
 
 Type mismatches across the bridge don’t fail at compile time—they crash at runtime. Keeping your types simple prevents hard-to-diagnose issues.
@@ -582,8 +588,8 @@ When using Dart Custom Actions that invoke MethodChannels, ensure the return val
 
 ### Validate and Sanitize Dart Inputs
 
-* Treat incoming Dart method calls like external API requests. Assume they can be malformed.  
-* Use pattern matching (switch/case or `when`) to route and verify each method call.  
+* Treat incoming Dart method calls like external API requests. Assume they can be malformed.
+* Use pattern matching (switch/case or `when`) to route and verify each method call.
 * Validate presence and type of arguments before using them. For example:
 
 ```js
@@ -600,11 +606,11 @@ Custom Actions in FlutterFlow can include parameters from the UI, but if the par
 
 ### Log Clearly on Both Sides
 
-* Add logging on both Dart and native layers for every MethodChannel call:  
-  * What method was called?  
-  * What were the arguments?  
-  * What was returned, and how long did it take?  
-* Use structured logs (`Log.d("MethodChannel", "method=... args=... result=...")` on Android, `NSLog` or `print()` on iOS).  
+* Add logging on both Dart and native layers for every MethodChannel call:
+  * What method was called?
+  * What were the arguments?
+  * What was returned, and how long did it take?
+* Use structured logs (`Log.d("MethodChannel", "method=... args=... result=...")` on Android, `NSLog` or `print()` on iOS).
 * Align log timestamps across layers to help trace issues during debugging sessions.
 
 When something goes wrong in production, good logs make the difference between a 10-minute fix and a multi-day investigation.
@@ -621,9 +627,9 @@ MethodChannels are a foundational tool for extending the power of your app beyon
 
 But like any system boundary, MethodChannels require disciplined design. Misuse can lead to fragile bridges, performance bottlenecks, and increased maintenance overhead. When implemented thoughtfully, MethodChannels provide:
 
-* A clean interface between Dart and native layers  
-* Strategic reuse of platform-optimized SDKs and APIs  
-* A clear path to ship advanced features without waiting on plugin ecosystems  
+* A clean interface between Dart and native layers
+* Strategic reuse of platform-optimized SDKs and APIs
+* A clear path to ship advanced features without waiting on plugin ecosystems
 * A sustainable integration model that scales with your team and product
 
 Flutter will continue to evolve with innovative solutions for platform interoperability in the future through two key tools: FFIgen and JNIgen. FFIgen automates the creation of Objective-C and Swift API bindings, while JNIgen handles Java and Kotlin API connections, making native code integration more streamlined and maintainable across platforms.

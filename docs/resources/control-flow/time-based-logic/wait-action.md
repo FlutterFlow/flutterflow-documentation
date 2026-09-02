@@ -1,12 +1,19 @@
 ---
 slug: /resources/time-based-logic/wait-action
-title: Wait [Action]
-description: Learn how to use the Wait Action in your FlutterFlow app to pause actions for a specified duration.
-tags: [Wait Action, Time-Based Logic, FlutterFlow]
+title: 'Wait [Action]'
+description: >-
+  Learn how to use the Wait Action in your FlutterFlow app to pause actions for
+  a specified duration.
+tags:
+  - FlutterFlow
+  - Resources
+  - Time Based Logic
 sidebar_position: 1
-keywords: [Wait Action, Time-Based Logic, FlutterFlow]
+keywords:
+  - Wait Action
+  - Time-Based Logic
+  - FlutterFlow
 ---
-
 # Wait [Action]
 
 The **Wait** action is used to pause the execution of a workflow for a specific amount of time. This is helpful when you want to delay the next step in a sequence, for example, to synchronize events, allow animations to complete, or ensure a condition is met before continuing. It’s a key concept in managing time-based logic within action flows.
@@ -23,9 +30,8 @@ The **Wait** action is used to pause the execution of a workflow for a specific 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/84gU4TTmjwX3STESd5z9?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/84gU4TTmjwX3STESd5z9?embed&show_copy_link=true" title="Wait [Action] interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -42,3 +48,7 @@ The **Wait** action is used to pause the execution of a workflow for a specific 
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Related documentation
+
+See [Periodic Action](/resources/time-based-logic/periodic-action) for a related FlutterFlow workflow.

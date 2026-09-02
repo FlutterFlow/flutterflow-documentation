@@ -3,10 +3,16 @@ slug: /concepts/file-handling/clear-delete-media
 title: Clear or Delete Media
 description: Learn how to add clear and delete file actions into your FlutterFlow app.
 sidebar_position: 4
-tags: [Media Files, Clear Delete Data]
-keywords: [Media Files, Clear Data, Delete Data, Firebase Storage, Supabase Storage]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - Media Files
+  - Clear Data
+  - Delete Data
+  - Firebase Storage
+  - Supabase Storage
 ---
-
 # Clear or Delete Media
 
 The **Clear** and **Delete** **Media** actions provide essential functionalities for managing media files efficiently.

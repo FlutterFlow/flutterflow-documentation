@@ -1,9 +1,18 @@
 ---
-keywords: ['error', 'package', 'icon']
+keywords:
+  - error
+  - package
+  - icon
 slug: /troubleshooting/google-play-store-deployment/fix-launcher-icons-package-error
 title: Fix Flutter Launcher Icons Package Error
+description: >-
+  This article describes how to resolve the flutter launcher icons package error
+  that may occur during app build or deployment.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Fix Flutter Launcher Icons Package Error
 
 This article describes how to resolve the **[flutter_launcher_icons package](https://pub.dev/packages/flutter_launcher_icons)** error that may occur during app build or deployment.
@@ -32,7 +41,7 @@ Follow the steps below to fix the error:
         - Clear both assets.
         - Re-upload the launcher icons.
 
-        ![](../assets/20250430121327988277.gif)
+        ![Fix Flutter Launcher Icons Package Error in FlutterFlow](../assets/20250430121327988277.gif)
 
 2. **`Add flutter_launcher_icons` Package in GitHub Deployment**
     If you are deploying via GitHub and encounter this error, add the package to your `pubspec.yaml` file:
@@ -73,3 +82,6 @@ Follow the steps below to fix the error:
 
 If the issue persists after following these steps, contact FlutterFlow Support at support@flutterflow.io.
 
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

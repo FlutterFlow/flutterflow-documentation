@@ -1,10 +1,18 @@
 ---
 slug: count-controller
 title: Count Controller
-tags: [Form Elements]
-description: Learn how to add, configure, and use a Count Controller widget in your FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  Learn how to add, configure, and use a Count Controller widget in your
+  FlutterFlow app.
+keywords:
+  - Count Controller
+  - Built In Widgets
+  - Widgets
 ---
-
 # Count Controller
 
 The **Count Controller** widget lets users increase or decrease a numeric value. Use it for product quantities, guest counts, ticket selections, or any input that must stay within a defined range.

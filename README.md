@@ -12,6 +12,8 @@ Either way, you'll need to open up a pull request and get approval from at least
 ## Contribution Guidelines
 Before you start contributing, please take a moment to review our [Contribution Guidelines](https://flutterflow.notion.site/Docs-Contribution-Guidelines-42829c305df441f6b061b4095abac8a8). This document outlines the process and expectations for contributions to ensure a smooth collaboration.
 
+All changes must also follow the repository's [documentation search and agent quality standard](CONTENT_QUALITY.md). New task pages should start from [the task-guide template](templates/task-guide.md). Include public evidence in the pull request when appropriate, and keep any private implementation evidence in an approved private system rather than this public repository.
+
 ## How to Contribute
 1. **Editing Existing Pages**:
    To make edits to an existing page in [docs.flutterflow.io](https://docs.flutterflow.io), you can use the "Edit this page" button that appears at the bottom of each page. This button will bring you straight to the source of the page in GitHub.
@@ -27,6 +29,7 @@ You may want to run the docs site locally to test and visualize changes you are 
 
 1. **Install Dependencies:** Run **`npm install`** in your terminal to install the necessary dependencies.
 2. **Preview Changes:** To see your changes in real-time as you edit the files, you can run a local development server. This server will host your website and reflect the latest changes. Use the command **`npm run start`**.
+3. **Validate Search and Agent Quality:** Run **`npm run typecheck`**, **`npm run build`**, and **`npm run audit:seo-agent:built`** before opening a pull request.
 
 ## Deploying a Staging Preview
 To share your branch with reviewers before merging, deploy it to a Firebase Hosting preview channel. This builds the site and publishes it to a temporary URL (defaults to a 7-day expiry).

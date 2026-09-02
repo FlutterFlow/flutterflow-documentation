@@ -1,15 +1,23 @@
 ---
-keywords: ['cloud functions', 'firebase', 'deployment', 'error']
+keywords:
+  - cloud functions
+  - firebase
+  - deployment
+  - error
 slug: /troubleshooting/cloud-functions/fix-cloud-functions-deployment
 title: Fix Cloud Functions Deployment
+description: '- You must have a Firebase project connected to FlutterFlow.'
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Cloud Functions
 ---
-
 # Fix Cloud Functions Deployment
 
 :::info[Prerequisites]
 - You must have a Firebase project connected to FlutterFlow.
 - Ensure your project is on the Blaze Plan.
-::: 
+:::
 
 Cloud Functions allow you to execute backend code in response to events triggered by Firebase features or HTTPS requests. Various situations might cause Cloud Functions to malfunction, often stemming from setup problems or coding mistakes within the Cloud Function's script.
 
@@ -26,11 +34,11 @@ You may encounter the following errors in the FlutterFlow Builder:
 
     **Out of Date Error**
 
-    ![](../assets/20250430121126719355.png)
+    ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121126719355.png)
 
     **Not Deployed Error**
 
-    ![](../assets/20250430121126936614.png)
+    ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121126936614.png)
 
 
 ## Key Checks for Resolving Deployment Errors
@@ -49,9 +57,9 @@ You may encounter the following errors in the FlutterFlow Builder:
             - Open your project and go to **Project Settings > Users and Permissions**.
             - Under **Advanced Settings Permissions**, locate `firebase@flutterflow.io`, click **Edit**, and add the required roles.
 
-                ![](../assets/20250430121127218829.png)
+                ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121127218829.png)
 
-                ![](../assets/20250430121127501343.png)
+                ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121127501343.png)
 
 
     2. **Check for Function Name Mismatch**
@@ -60,7 +68,7 @@ You may encounter the following errors in the FlutterFlow Builder:
 
         For example, in this case, FlutterFlow expects `logoMaker`, but the code incorrectly uses `data`.
 
-        ![](../assets/20250430121133833159.png)
+        ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121133833159.png)
 
 
     3. **Validate Custom Code for Cloud Functions**
@@ -70,7 +78,7 @@ You may encounter the following errors in the FlutterFlow Builder:
             - Double-check your code for errors.
             - Test locally using an IDE or Firebase CLI.
 
-                ![](../assets/20250430121127844921.png)
+                ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121127844921.png)
 
 
     4. **Verify Firebase Billing Plan (Blaze Plan Required):**
@@ -79,7 +87,7 @@ You may encounter the following errors in the FlutterFlow Builder:
         - Check billing status on GCP. Even if Firebase shows Blaze, GCP billing issues may still block deployments.
 
 
-    5. **Check if Other Cloud Functions Are Deploying:** 
+    5. **Check if Other Cloud Functions Are Deploying:**
 
         - If some Cloud Functions (like Push Notification or Stripe) are deploying successfully, it indicates your Firebase setup is mostly correct.
         - Focus on inspecting your specific function code and configuration.
@@ -90,9 +98,9 @@ You may encounter the following errors in the FlutterFlow Builder:
         - The region set for your Cloud Function in FlutterFlow should match your Firebase project's region.
         - Do not leave the region as `[default]`.
 
-            ![](../assets/20250430121128170242.png)
+            ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121128170242.png)
 
-            ![](../assets/20250430121128453683.png)
+            ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121128453683.png)
 
         :::tip
         If you previously deployed functions in the wrong region, delete them, set the correct region, and re-deploy.
@@ -138,14 +146,14 @@ You may encounter the following errors in the FlutterFlow Builder:
 
         If you are using third-party packages (e.g., `axios`), make sure they are properly added to the `dependencies` section in `package.json`:
 
-        ![](../assets/20250430121128741407.png)
+        ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121128741407.png)
 
 
     10. **Validate Third-Party Package Versions**
 
         The versions specified in your `package.json` should match available versions listed on **[npmjs.com](https://www.npmjs.com/package/axios?activeTab=versions)**.
 
-        ![](../assets/20250430121129014430.png)
+        ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121129014430.png)
 
 
     11. **Check for Undeployed Firebase Rules and Indexes:**
@@ -174,13 +182,13 @@ You may encounter the following errors in the FlutterFlow Builder:
     - Cloud Functions may fail if execution time exceeds limits.
     - Set a custom timeout duration in FlutterFlow:
 
-        ![](../assets/20250430121134186956.png)
+        ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121134186956.png)
 
         For longer processing tasks, increase the timeout duration in your Cloud Function configuration.
 
         Configuring Cloud Function regions in FlutterFlow can also optimize performance:
 
-        ![](../assets/20250430121134509618.png)
+        ![Fix Cloud Functions Deployment in FlutterFlow](../assets/20250430121134509618.png)
 
         :::note
         Longer timeouts may increase Firebase costs.
@@ -193,3 +201,7 @@ You may encounter the following errors in the FlutterFlow Builder:
         - Minimize dependencies to reduce cold start delays.
 
 Following this comprehensive troubleshooting guide should help you resolve most issues encountered when working with Cloud Functions.
+
+## Related documentation
+
+See [Initialize GitHub Repository](/troubleshooting/github/initialize-github-repository) for a related FlutterFlow workflow.

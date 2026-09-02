@@ -2,11 +2,17 @@
 slug: /integrations/authentication/firebase/phone
 title: Phone Login
 description: Learn how to add phone login in your FlutterFlow app.
-tags: [Phone Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 5
-keywords: [FlutterFlow, Phone Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Phone Login
+  - Authentication
+  - Firebase
 ---
-
 # Phone Login
 
 Phone login allows a user to sign in by sending an SMS message to the user's phone. The user login in using a one-time code contained in the SMS message.
@@ -16,9 +22,8 @@ Phone login allows a user to sign in by sending an SMS message to the user's pho
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/0243f18a21ca415f8258fb87012c0e73?sid=3c77fe9d-e3f8-4506-9f6b-e1b8eb66b44c"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/0243f18a21ca415f8258fb87012c0e73?sid=3c77fe9d-e3f8-4506-9f6b-e1b8eb66b44c" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -81,9 +86,8 @@ To enable authentication in the Firebase:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/413d6b11eeee40bf89e6876dd3450ba1?sid=dbfaee96-df96-45b6-9ec3-72a44d30ca90"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/413d6b11eeee40bf89e6876dd3450ba1?sid=dbfaee96-df96-45b6-9ec3-72a44d30ca90" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -112,9 +116,8 @@ Here is the page added from the templates, and after some modification, it looks
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/413d6b11eeee40bf89e6876dd3450ba1?sid=dbfaee96-df96-45b6-9ec3-72a44d30ca90"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/413d6b11eeee40bf89e6876dd3450ba1?sid=dbfaee96-df96-45b6-9ec3-72a44d30ca90" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -142,9 +145,8 @@ You need to create another page to verify the SMS code.  Here's how you build th
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/cca3060818714423a71b3e02971bf80c?sid=ad97b77a-f04b-4aec-8676-9fed80c437c2"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/cca3060818714423a71b3e02971bf80c?sid=ad97b77a-f04b-4aec-8676-9fed80c437c2" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -181,9 +183,8 @@ To add this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/1a3a9006185a454c909dbfc804008e81?sid=21c6f4b1-adee-4e85-8ef3-1989c48a4e9d"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/1a3a9006185a454c909dbfc804008e81?sid=21c6f4b1-adee-4e85-8ef3-1989c48a4e9d" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -217,9 +218,8 @@ On click of the 'Verify Code' button, you will add the 'Verify SMS Code' action,
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/f69f311ade1d447c9cd74baa011acee2?sid=690b44dc-e876-41c3-8e92-b650bc7578ad"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/f69f311ade1d447c9cd74baa011acee2?sid=690b44dc-e876-41c3-8e92-b650bc7578ad" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -261,9 +261,8 @@ Here's how you add the authorized domain:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/3ab8a727da4e46188e052504eb95974c?sid=2116ea6a-bf42-4cc1-9028-bb79704394a2"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/3ab8a727da4e46188e052504eb95974c?sid=2116ea6a-bf42-4cc1-9028-bb79704394a2" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -313,9 +312,8 @@ While releasing the app, make sure to [**get the key from the Play Console**](au
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/09187b83b2bb498eaf067224ae4dcdd6?sid=e6aeae30-e964-4a55-b878-d800aa81426c"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/09187b83b2bb498eaf067224ae4dcdd6?sid=e6aeae30-e964-4a55-b878-d800aa81426c" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -361,9 +359,8 @@ To add the fictitious number:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4bd4663ef068492ab51042362193c80a?sid=3d4242fc-e0a9-4b30-a4b6-b1d2d8a100b8"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4bd4663ef068492ab51042362193c80a?sid=3d4242fc-e0a9-4b30-a4b6-b1d2d8a100b8" title="Phone Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -389,13 +386,11 @@ To add the fictitious number:
 <summary>Getting this error: "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth Section."</summary>
 <p>
 1. First, ensure you have clicked the "Save" button while [Enabling phone authentication in Firebase](#2-enabling-phone-authentication-in-firebase).
-    
+
 ![Enabling phone authentication in Firebase](../imgs/adding-authorized-domain.png)
 
 1. If this is already enabled, head over to **Settings > SMS region policy >** select **Allow > Select regions** you want to support and click **Save**.
-    
+
 ![SMS region](../imgs/sms-region.webp)
 </p>
 </details>
-
-

@@ -1,11 +1,17 @@
 ---
 slug: plan-comparison
-title: "Plan Comparison"
-description: "Compare FlutterFlow plans and features to find the right plan for your needs"
+title: Plan Comparison
+description: Compare FlutterFlow plans and features to find the right plan for your needs
 hide_table_of_contents: true
 sidebar_position: 3
+tags:
+  - FlutterFlow
+  - Accounts & Billing
+keywords:
+  - Plan Comparison
+  - Accounts Billing
+  - FlutterFlow
 ---
-
 <Head>
   <link rel="stylesheet" href="/css/table_style.css" />
 </Head>
@@ -15,14 +21,14 @@ import {useState, useEffect} from 'react';
 export const PricingToggles = () => {
   const [currency, setCurrency] = useState('USD');
   const [billingPeriod, setBillingPeriod] = useState('monthly');
-  
+
   // Update sticky header when pricing changes
   useEffect(() => {
     // Trigger sticky header recreation when pricing data changes
     const event = new CustomEvent('pricingChanged');
     window.dispatchEvent(event);
   }, [currency, billingPeriod]);
-  
+
   const pricingData = {
     USD: {
       monthly: {
@@ -32,10 +38,10 @@ export const PricingToggles = () => {
         business: '1st seat: $150, \n Seats 2-5: $85 each*',
         enterprise: 'Custom'
       },
-      annual: { 
+      annual: {
         free: 0,
         individual: 351, // $360/year = $30/month effective
-        growth: '1st seat: $720, \n 2nd seat: $495', 
+        growth: '1st seat: $720, \n 2nd seat: $495',
         business: '1st seat: $1,350, \n Seats 2-5: $765*', // $4752/year = $396/month effective
         enterprise: 'Custom'
       }
@@ -771,3 +777,7 @@ Includes all Business features, plus the ability to add up to 7 additional seats
 
 ### Localized Pricing
 INR pricing reflects localized rates adjusted for local purchasing power, providing the same features and plan structures as USD pricing. All plans include the same comprehensive feature set regardless of currency.
+
+## Related documentation
+
+See [Account Management](/accounts-billing/account-management) for a related FlutterFlow workflow.

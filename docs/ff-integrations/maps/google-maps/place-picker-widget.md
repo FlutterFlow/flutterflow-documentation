@@ -1,12 +1,21 @@
 ---
 slug: /integrations/google-maps/place-picker-widget
 title: Place Picker Widget
-description: Learn how to add and configure the Place Picker widget in your FlutterFlow app.
-tags: [Google Maps, Place Picker, Widget, Integration]
+description: >-
+  Learn how to add and configure the Place Picker widget in your FlutterFlow
+  app.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Google Maps
 sidebar_position: 3
-keywords: [FlutterFlow, Google Maps, Place Picker, Widget, Integration]
+keywords:
+  - FlutterFlow
+  - Google Maps
+  - Place Picker
+  - Widget
+  - Integration
 ---
-
 # Place Picker Widget
 
 The `PlacePicker` widget is designed to retrieve information about places, such as establishments (e.g., buildings, parks, museums) and geographic features (e.g., roads, lakes, mountains). It provides details like name, address, city, state, country, zip code, and latitude-longitude coordinates.
@@ -23,7 +32,7 @@ Here's an example from the Demo app:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/EQ4xhHBgjMp4wbm3aTin?embed&show_copy_link=true"
         title="Place Picker Widget"
         style={{
@@ -51,7 +60,7 @@ Here's an example from the Demo app:
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
 :::
 <figure>
-    
+
   <figcaption class="centered-caption"></figcaption>
 </figure>
 
@@ -65,7 +74,7 @@ To add the PlacePicker widget to your project:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/uWaLSOHPZctjnGik03Pu?embed&show_copy_link=true"
         title="Add Place Picker widget"
         style={{
@@ -87,8 +96,8 @@ To add the PlacePicker widget to your project:
 
 <p></p>
 
-By default, the `Place Picker` widget features an icon and the text "Select Location" on the 
-button. You can modify the styling and properties of these elements from the Properties Panel on 
+By default, the `Place Picker` widget features an icon and the text "Select Location" on the
+button. You can modify the styling and properties of these elements from the Properties Panel on
 the right.
 
 If you retain the Text widget, the text will update to the name of the selected location when a user makes a selection. Both the icon and text are optional; adjust them according to your design requirements.
@@ -108,7 +117,7 @@ The selected place’s details are stored in a `GooglePlace` custom data type pr
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/oje0Gsbf9IJh7M0pb6Tv?embed&show_copy_link=true"
         title="Use PlacePicker widget state"
         style={{

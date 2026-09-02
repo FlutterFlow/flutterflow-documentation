@@ -1,7 +1,17 @@
 ---
-keywords: ['api', 'calls', 'private']
+keywords:
+  - api
+  - calls
+  - private
 slug: /troubleshooting/api/securing-your-api-keys-in-private-api-calls
 title: Securing Your API Keys in Private API Calls
+description: >-
+  Ensuring the security of API keys is a critical aspect of building and
+  maintaining a safe and reliable application.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - API
 ---
 # Securing Your API Keys in Private API Calls
 
@@ -35,16 +45,20 @@ Many users assume that simply marking an API call as 'private' is enough to prot
 
     Example: Not Secure
 
-    ![](../assets/20250430121157297846.png)
+    ![Securing Your API Keys in Private API Calls in FlutterFlow](../assets/20250430121157297846.png)
 
     Example: More Secure
 
-    ![](../assets/20250430121157601185.png)
+    ![Securing Your API Keys in Private API Calls in FlutterFlow](../assets/20250430121157601185.png)
 
 
-By adhering to these best practices, you can increase the safety of your API keys even while making private API calls. 
+By adhering to these best practices, you can increase the safety of your API keys even while making private API calls.
 
 :::info
 The goal is to keep all sensitive data, including API keys, away from the client side of the application to ensure optimal security.
 :::
 ​
+
+## Related documentation
+
+See [API Charset and Encoding Fix Guide](/troubleshooting/api/api-charset-and-encoding-fix-guide) for a related FlutterFlow workflow.

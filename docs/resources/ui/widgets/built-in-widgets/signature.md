@@ -1,11 +1,17 @@
 ---
 slug: signature
 title: Signature
-tags: [Form Elements, Components]
-keywords: [Signature, Form Element, Component, Widget]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Signature
+  - Form Element
+  - Component
+  - Widget
 description: Learn how to add Signature widget in your FlutterFlow app.
 ---
-
 # Signature
 
 The signature widget allows you to capture a signature. This widget tracks your finger or mouse pointer on a screen and draws the line accordingly on a signature pad.
@@ -24,9 +30,8 @@ Here's an example of how you can add the Signature widget to your project:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/4huLa1RkIgZCItrdOyKG?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/4huLa1RkIgZCItrdOyKG?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -54,9 +59,8 @@ You might be using the Firestore database to store your app data in the collecti
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vjJ0MSgwTU633CviGIhq?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vjJ0MSgwTU633CviGIhq?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -111,9 +115,8 @@ Follow the steps below to define the Action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/BwGSm5VOzeXSNdI9Wu65?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/BwGSm5VOzeXSNdI9Wu65?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -158,9 +161,8 @@ Here are the steps in detail:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HaeRTfVwkdJR0tG85A5w?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/HaeRTfVwkdJR0tG85A5w?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -196,9 +198,8 @@ Follow the steps below to define the Action to any widget.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/I4OJh5NBzqn1iBFD30uU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/I4OJh5NBzqn1iBFD30uU?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -235,9 +236,8 @@ To change the pen color and stroke width:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/0BgwEMjdDmtyjOIhbjqD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/0BgwEMjdDmtyjOIhbjqD?embed&show_copy_link=true" title="Signature interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

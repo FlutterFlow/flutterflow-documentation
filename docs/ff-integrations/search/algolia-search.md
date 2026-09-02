@@ -2,11 +2,16 @@
 slug: /integrations/search/algolia-search
 title: Algolia Search
 description: Learn how to implement algolia search functionality in your FlutterFlow app.
-tags: [Algolia, Firestore Search]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Search
 sidebar_position: 1
-keywords: [FlutterFlow, Algolia Search, Firestore Search]
+keywords:
+  - FlutterFlow
+  - Algolia Search
+  - Firestore Search
 ---
-
 # Algolia
 
 [Algolia](https://www.algolia.com/) is a powerful search-as-a-service platform that provides lightning-fast and highly relevant search capabilities. Integrating Algolia into your FlutterFlow app allows you to implement real-time search functionality, making it easier for users to find relevant information within your app.
@@ -39,9 +44,8 @@ Next, name your application by navigating to **Settings > Applications** in the 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wQwIe7gxylgICytgLS4k?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wQwIe7gxylgICytgLS4k?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -70,9 +74,8 @@ An **index** in Algolia is like a **database table** where your searchable data 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/MxI0L4zldY8smKJhMs4j?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/MxI0L4zldY8smKJhMs4j?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -101,9 +104,8 @@ To integrate Algolia, you need an **API key** with the correct permissions. In t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/IUGq5TFoMK8sdww1qhYi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/IUGq5TFoMK8sdww1qhYi?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -136,7 +138,7 @@ Follow these steps to set up the official Firebase extension for Algolia search:
 5. **Review Access Granted to this Extension:** You'll be presented with a list of specific services and resources that the extension needs access to. Review the permissions, then click **Next**.
 6. **Configure Extension:** During installation, you'll be prompted to provide the following details.
     - **Collection Path**: Specify the name of the Firestore collection you want to index for search.
-    
+
     - **Indexable Fields (Optional)**: You can leave this blank to index all fields or manually list fields you want indexed.
     - **Force Data Sync (Optional)**: You can enable this to ensure that the extension performs an additional read operation from Firestore before processing and sending data to Algolia. It guarantees that the most recent and accurate data is indexed.
     - **Algolia Index Name**: The name of the index you created (in [step 2](#step-2-create-an-index)) in Algolia Setup.
@@ -151,9 +153,8 @@ Follow these steps to set up the official Firebase extension for Algolia search:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/xPGV609lNwqYS0T6Ftd1?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/xPGV609lNwqYS0T6Ftd1?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -183,9 +184,8 @@ Once done, click **Review and Save Settings**, then confirm by clicking **Save S
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/iQFkL4qm4JE7iT6MPqGs?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iQFkL4qm4JE7iT6MPqGs?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -215,9 +215,8 @@ Here’s exactly how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/k3hZtbA1Y7W7Z8obJryV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/k3hZtbA1Y7W7Z8obJryV?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -245,7 +244,7 @@ You can use Algolia Search in your app using two methods:
 
 ### Algolia Search [Action]
 
-To configure the **Algolia Search** action in FlutterFlow, begin by selecting the widget that will trigger the search, such as an **IconButton**. In the **Properties Panel**, navigate to the **Actions** tab and click on **+ Add Action**, choose the appropriate gesture, like **On Tap**. Search and select the **Algolia Search** action. 
+To configure the **Algolia Search** action in FlutterFlow, begin by selecting the widget that will trigger the search, such as an **IconButton**. In the **Properties Panel**, navigate to the **Actions** tab and click on **+ Add Action**, choose the appropriate gesture, like **On Tap**. Search and select the **Algolia Search** action.
 
 Next, configure the search parameters: for **Firebase Collection**, select the Firestore collection you intend to search; for **Search Term**, choose **From Variable** and select the TextField's value (e.g., **Widget State > [Your TextField]**); and specify the optional **Max Results** to determine the number of search results.
 
@@ -256,9 +255,8 @@ Here’s an example of how you can add Algolia Search Action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/n270CWDA7psWmrXEV1Wo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/n270CWDA7psWmrXEV1Wo?embed&show_copy_link=true" title="Algolia Search interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

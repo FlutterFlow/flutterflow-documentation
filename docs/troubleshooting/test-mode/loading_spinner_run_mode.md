@@ -1,9 +1,18 @@
 ---
-keywords: ['database', 'firestore', 'loading']
+keywords:
+  - database
+  - firestore
+  - loading
 slug: /troubleshooting/test-mode/loading-spinner-run-mode
 title: Loading Spinner in Run Mode
+description: >-
+  A persistent loading spinner in FlutterFlow's Run Mode usually indicates an
+  issue with your Firestore rules configuration.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Loading Spinner in Run Mode
 
 A persistent loading spinner in FlutterFlow's Run Mode usually indicates an issue with your Firestore rules configuration. Updating your rules can resolve this issue.
@@ -21,7 +30,7 @@ Here are the steps to fix this error:
     2. Navigate to **Firestore** → **Settings**.
     3. Click the **Copy** icon to copy the default Firestore rules.
 
-    ![](../assets/20250430121355282620.gif)
+    ![Loading Spinner in Run Mode in FlutterFlow](../assets/20250430121355282620.gif)
 
 2. **Paste the Rules in Firebase Console**
 
@@ -30,7 +39,7 @@ Here are the steps to fix this error:
     3. Open the **Rules** tab.
     4. Paste the copied rules into the editor and click **Publish**.
 
-    ![](../assets/20250430121355575413.gif)
+    ![Loading Spinner in Run Mode in FlutterFlow](../assets/20250430121355575413.gif)
 
 3. **Retest Your Project in FlutterFlow**
 
@@ -39,3 +48,7 @@ Here are the steps to fix this error:
 :::tip
 Always keep your Firestore rules up to date after making structural changes to your database in FlutterFlow.
 :::
+
+## Related documentation
+
+See [Black Screen During Run Mode](/troubleshooting/test-mode/black-screen-during-run-mode) for a related FlutterFlow workflow.

@@ -1,12 +1,19 @@
 ---
 slug: /deployment/pre-checks-before-publishing
 title: Pre-checks Before Publishing
-description: Ensure your app is ready for launch with this detailed guide on essential pre-publishing checks.
-tags: [Pre-checks, Publishing, Deployment]
+description: >-
+  Ensure your app is ready for launch with this detailed guide on essential
+  pre-publishing checks.
+tags:
+  - FlutterFlow
+  - Deployment
 sidebar_position: 1
-keywords: [Pre-checks, Publishing, Deployment, FlutterFlow]
+keywords:
+  - Pre-checks
+  - Publishing
+  - Deployment
+  - FlutterFlow
 ---
-
 # Pre-checks Before Publishing
 
 This page outlines the important steps and checks to be made before publishing your app. These steps are crucial to ensure that your app works as expected, meets platform guidelines, and to gather preliminary feedback.
@@ -45,9 +52,8 @@ Let's explore how to generate screenshots for your app:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/PgdOhHS8UBVdVTrem2Fy?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/PgdOhHS8UBVdVTrem2Fy?embed&show_copy_link=true" title="Pre-checks Before Publishing interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

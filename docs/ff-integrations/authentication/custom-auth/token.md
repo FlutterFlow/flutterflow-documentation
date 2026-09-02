@@ -3,12 +3,18 @@ id: auth-token
 slug: /integrations/authentication/tokens
 title: Tokens
 description: Learn about the types and lifespans of tokens in custom authentication.
-tags: [Tokens, Authentication, Custom Authentication]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_label: Tokens
 sidebar_position: 1
-keywords: [FlutterFlow, Tokens, Authentication, Custom Authentication]
+keywords:
+  - FlutterFlow
+  - Tokens
+  - Authentication
+  - Custom Authentication
 ---
-
 # Tokens: Types and Lifespans
 
 Here are some key terms we'll encounter in [**Custom Authentication**](custom-auth.md).
@@ -36,7 +42,7 @@ understand what is returned upon successful authentication.
 :::
 <figure>
     ![login-request.png](../imgs/login-request.png)
-  <figcaption class="centered-caption">1.1 An example of a Login API transaction that 
+  <figcaption class="centered-caption">1.1 An example of a Login API transaction that
 returns the above values in its response</figcaption>
 </figure>
 
@@ -52,7 +58,7 @@ accessing a list of users available only to logged-in users. In this case, the a
 to the API with a header that includes an Authorization header containing the authentication token.
 <figure>
     ![token-success-request.png](../imgs/token-success-request.png)
-  <figcaption class="centered-caption">An example of an Authenticated API request that 
+  <figcaption class="centered-caption">An example of an Authenticated API request that
 sends a Authorization Bearer Token that uses the saved Auth Token</figcaption>
 </figure>
 
@@ -68,4 +74,3 @@ refresh token and responds with a new authentication token.
 Thanks to the refresh token, users can continue accessing the app without needing to log in again.
 This process enhances security by limiting the lifespan of each token while ensuring a seamless
 experience for the user.
-

@@ -1,12 +1,22 @@
 ---
 slug: /integrations/mux
 title: Mux Livestream
-description: Learn how to get started with MuxBroadcast in your FlutterFlow app for live video broadcasting.
-tags: [MuxBroadcast, Integration, Setup]
+description: >-
+  Learn how to get started with MuxBroadcast in your FlutterFlow app for live
+  video broadcasting.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Mux
 sidebar_position: 2
-keywords: [FlutterFlow, MuxBroadcast, Integration, Setup, Mux, LiveStream]
+keywords:
+  - FlutterFlow
+  - MuxBroadcast
+  - Integration
+  - Setup
+  - Mux
+  - LiveStream
 ---
-
 # Mux Livestream
 
 Mux Livestream allows you to integrate live video streaming capabilities directly into your FlutterFlow app. It leverages Mux’s powerful streaming API, providing real-time broadcasting features. For a deeper understanding, check out [how live streaming works](https://blog.flutterflow.io/flutter-mux-live-streaming/#how-does-live-streaming-work).
@@ -32,9 +42,8 @@ Then, create a Mux account and go to **Settings > API Access Tokens**. Click **G
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/RF81sxAhJB2Ot4ZHSx4l?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/RF81sxAhJB2Ot4ZHSx4l?embed&show_copy_link=true" title="Mux Livestream interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -113,9 +122,8 @@ To display the livestream:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/l1y5UxJYN4tWQBesZDUO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/l1y5UxJYN4tWQBesZDUO?embed&show_copy_link=true" title="Mux Livestream interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

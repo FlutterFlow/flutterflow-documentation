@@ -2,8 +2,18 @@
 title: Widget Builder Parameters
 sidebar_position: 6
 slug: widget-builder
+description: >-
+  Sometimes, you want to create a component that offers some consistent design,
+  while also allowing for customization.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Widget Builder Parameters
+  - Widget Builder
+  - Components
 ---
-
 # Widget Builder Parameters
 
 Sometimes, you want to create a component that offers some consistent design, while also allowing for customization. This is where passing widget builders as parameters becomes valuable.
@@ -24,7 +34,7 @@ Let’s see an example from an ecommerce app. On the shipping address page, you 
 
 ## Creating Widget Builders as Parameters
 
-To create a component with a widget builder as a parameter, use the steps outlined below. 
+To create a component with a widget builder as a parameter, use the steps outlined below.
 
 ### Create a Parameter of Type Widget Builder
 Create a new component and add the base widgets that will be unchanged. Next, define a parameter and set its type to **Widget Builder**. To pass data from the current component to the widget builder, you can specify a parameter for the widget builder.
@@ -34,9 +44,8 @@ Create a new component and add the base widgets that will be unchanged. Next, de
         paddingBottom: 'calc(55.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/4JjEozeplDTGYYr1pqnF?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/4JjEozeplDTGYYr1pqnF?embed&show_copy_link=true" title="Widget Builder Parameters interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -63,9 +72,8 @@ Add the widget builder placeholder to the desired spot in the component’s widg
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/WIQE90y3f14ajwx2Wy7H?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/WIQE90y3f14ajwx2Wy7H?embed&show_copy_link=true" title="Widget Builder Parameters interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -94,9 +102,8 @@ Here’s how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/eNz0LKXEpeh90p9qNIyU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/eNz0LKXEpeh90p9qNIyU?embed&show_copy_link=true" title="Widget Builder Parameters interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -116,7 +123,7 @@ Here’s how you do it:
 <p></p>
 
 #### Preview the Widget Builder Using Different Components
-You can select different components to use as a preview while building the component that has a widget builder parameter. 
+You can select different components to use as a preview while building the component that has a widget builder parameter.
 
 To select a component to use in the preview, select the Widget Builder, then go to the **Widget Builder UI Properties** section of the **Properties panel**.
 
@@ -125,16 +132,15 @@ To select a component to use in the preview, select the Widget Builder, then go 
 ## Using Components with Widget Builders as Parameters
 When you use a component that has a widget builder parameter, you can pass [components](/resources/ui/components) to customize the content according to your needs.
 
-In this example, we create two additional components for `TextField` and `Dropdown` — and pass them as widget builders. 
+In this example, we create two additional components for `TextField` and `Dropdown` — and pass them as widget builders.
 
     <div style={{
         position: 'relative',
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://demo.arcade.software/zlTGZrEymy56lONPvSn5?embed&show_copy_link=true"
-            title=""
+        <iframe
+            src="https://demo.arcade.software/zlTGZrEymy56lONPvSn5?embed&show_copy_link=true" title="Widget Builder Parameters interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,

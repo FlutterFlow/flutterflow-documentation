@@ -1,9 +1,18 @@
 ---
-keywords: ['authentication', 'deployment', 'ios']
+keywords:
+  - authentication
+  - deployment
+  - ios
 slug: /troubleshooting/apple-store-deployment/ios-deployment-authentication-error
 title: iOS Deployment Authentication Error
+description: >-
+  During iOS deployment using Codemagic, an authentication credentials error can
+  occur due to misconfigured or expired API tokens for App Store deployment.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment
 ---
-
 # iOS Deployment Authentication Error
 
 During iOS deployment using Codemagic, an authentication credentials error can occur due to misconfigured or expired API tokens for App Store deployment.
@@ -18,7 +27,7 @@ Here is the error message:
 
 ```bash
 Failed Step: Fetch signing files
-GET https://api.appstoreconnect.apple.com/v1/bundleIds?limit=100&sort=name&filter%5Bidentifier%5D=appname.com&filter%5Bplatform%5D=IOS returned 401: Authentication credentials are missing or invalid. Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens 
+GET https://api.appstoreconnect.apple.com/v1/bundleIds?limit=100&sort=name&filter%5Bidentifier%5D=appname.com&filter%5Bplatform%5D=IOS returned 401: Authentication credentials are missing or invalid. Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens
 ```
 
 :::info[Prerequisites]
@@ -52,8 +61,12 @@ GET https://api.appstoreconnect.apple.com/v1/bundleIds?limit=100&sort=name&filte
 
 9. Retry your iOS deployment.
 
-   ![](../../assets/20250430121336383410.gif)
+   <video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Resolving an iOS deployment authentication error"}><source src={require("../../assets/20250430121336383410.mp4").default} type="video/mp4" /></video>
 
 :::note
 If the error persists after completing these steps, contact FlutterFlow support via in-app messenger or email at [support@flutterflow.io](mailto:support@flutterflow.io).
 :::
+
+## Related documentation
+
+See [Codemagic Install Pods Failure](/troubleshooting/apple-store-deployment/codemagic-install-pods-failure) for a related FlutterFlow workflow.

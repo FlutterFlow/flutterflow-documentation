@@ -1,12 +1,21 @@
 ---
 slug: /resources/ui/components/child-widget
 title: Child Widget
-description: Learn how to use Child Widget to add flexible, customizable content inside components.
-tags: [Components, Child Widget]
+description: >-
+  Learn how to use Child Widget to add flexible, customizable content inside
+  components.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 sidebar_position: 5
-keywords: [FlutterFlow, Child Widget, Components, UI, Reusable Components]
+keywords:
+  - FlutterFlow
+  - Child Widget
+  - Components
+  - UI
+  - Reusable Components
 ---
-
 # Child Widget
 
 Child Widget allows you to create reusable components while keeping part of the layout flexible. Instead of building multiple variations of the same component, you define a fixed structure and leave a specific area open for customization.
@@ -42,9 +51,8 @@ Let’s see how to use the Child Widget by building a simple example of displayi
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/2NhpVlBgLyoEWvzikyqo?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/2NhpVlBgLyoEWvzikyqo?embed&show_copy_link=true" title="Child Widget interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

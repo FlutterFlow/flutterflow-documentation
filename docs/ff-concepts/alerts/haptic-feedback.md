@@ -2,46 +2,56 @@
 title: Haptic Feedback
 slug: /concepts/alerts/haptic-feedback
 sidebar_position: 4
-tags: [Actions, Alerts & Notifications]
-keywords: [FlutterFlow, Actions, Alerts & Notifications, Haptic Feedback]
+tags:
+  - FlutterFlow
+  - Concepts
+keywords:
+  - FlutterFlow
+  - Actions
+  - Alerts & Notifications
+  - Haptic Feedback
+description: >-
+  Add light, medium, heavy, selection, or vibration haptic feedback to a
+  FlutterFlow action flow and understand platform and Preview Mode limits.
+last_verified: 2026-09-01
 ---
 # Haptic Feedback
-Using this action, you can vibrate the user's device. Typically this is used to draw users' attention to the action they have performed. For example, vibrating the user's device on setting the alarm.
+Use the **Haptic Feedback** action to request tactile feedback from a user's device after an interaction, such as selecting an item or completing an important action. FlutterFlow generates calls to Flutter's `HapticFeedback` API; the exact sensation depends on the operating system, device hardware, and user settings.
 
 ## Types of Haptic Feedback
 
-Depending on the action a user has performed (e.g., bookmark an item, on-off flashlight), you can set the different vibration intensity and duration types.
+Choose the feedback type that communicates the meaning of the interaction:
 
-Here are the types of haptic feedback:
+| FlutterFlow option | Generated Flutter call | Intended use |
+| --- | --- | --- |
+| **Light** | `HapticFeedback.lightImpact()` | A light impact. |
+| **Medium** | `HapticFeedback.mediumImpact()` | A medium impact. |
+| **Heavy** | `HapticFeedback.heavyImpact()` | A heavy impact. |
+| **Selection Click** | `HapticFeedback.selectionClick()` | Moving between discrete selections, such as picker values. |
+| **Vibrate** | `HapticFeedback.vibrate()` | The platform's short, standard vibration. |
 
-1. **Light**: This creates a very low-intensity vibration similar to pressing a virtual on-screen key.
-2. **Medium**: This creates a medium-intensity vibration similar to pressing a key on a keyboard.
-3. **Heavy**: This creates a high-intensity vibration similar to clicking an item.
-4. **Selection Click**: This vibrates the device when selection changes through discrete values. Similar to changing hours and minutes on the clock app.
-5. **Vibrate**: This creates a vibration for a short duration.
-
-:::warning
-- The *Light*, *Medium*, *Heavy*, and *Selection Click*, these types of haptic feedback only work on iOS version 10 and above.
-- The *Selection Click* type only works on Android API levels 23 and above.
+:::note Platform support
+Flutter's impact and selection APIs have no effect on iOS versions below 10. Android maps each option to a platform haptic constant; **Heavy** has no effect below Android API 23. Other results can still vary by device and system settings. See Flutter's [HapticFeedback API](https://api.flutter.dev/flutter/services/HapticFeedback-class.html) for current platform mappings.
 :::
 
 ## Adding Haptic Feedback [Action]
 
-Go to your project page on FlutterFlow and follow the steps below to define the Action to any widget.
+To add the action:
 
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
 2. Select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
 3. Search and select the **Haptic Feedback** (under *Alerts/Notifications*) action.
 4. Set the **Feedback Type** among the **Light**, **Medium**, **Heavy**, **Selection Click**, and **Vibrate**.
 
+Haptic feedback does not run in FlutterFlow Preview Mode; the editor displays a warning instead. Test the behavior on the target platform and, preferably, a physical device. Do not use haptics as the only signal for critical state—pair them with visible or accessible feedback.
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/MfWI3yPIBv4WmHTl99Iq?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/MfWI3yPIBv4WmHTl99Iq?embed&show_copy_link=true" title="Haptic Feedback interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -59,3 +69,7 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [Alert Dialog](/concepts/alerts/alert-dialog) for a related FlutterFlow workflow.

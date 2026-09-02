@@ -2,11 +2,16 @@
 slug: /troubleshooting
 title: Detecting Issues
 description: A guide to troubleshoot or debug issues that occur within FlutterFlow project.
-tags: [Troubleshooting]
+tags:
+  - FlutterFlow
+  - Troubleshooting
 sidebar_position: 0
-keywords: [Troubleshooting, Debugging, Detect Issues, Runtime Errors]
+keywords:
+  - Troubleshooting
+  - Debugging
+  - Detect Issues
+  - Runtime Errors
 ---
-
 # Detecting Issues
 
 This is a general troubleshooting guide for detecting any issues that occur within FlutterFlow projects.
@@ -37,9 +42,8 @@ Using the Debug Info panel, you can easily trace that the dropdown variable is s
     paddingBottom: 'calc(50.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/TgIsoAjlnDiHaafypnpV?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/TgIsoAjlnDiHaafypnpV?embed&show_copy_link=true" title="Detecting Issues interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -78,9 +82,8 @@ This will open the console log, and any errors will be highlighted in red color.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/c0I844oLVtAR0e7YSbhC?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/c0I844oLVtAR0e7YSbhC?embed&show_copy_link=true" title="Detecting Issues interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -152,4 +155,3 @@ For instance, if Firestore security rules aren't properly configured, the app mi
 We display such errors as *Run mode-only notification* in a snack bar. Here's what it might look like:
 
 ![Runtime errors](imgs/runtime-errors.avif)
-

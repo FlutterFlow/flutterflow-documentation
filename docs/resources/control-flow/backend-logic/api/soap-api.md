@@ -2,9 +2,16 @@
 slug: /resources/backend-logic/soap-api
 title: SOAP APIs
 description: Learn how to use SOAP APIs in your backend logic with FlutterFlow.
-tags: [SOAP APIs, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Logic
 sidebar_position: 3
-keywords: [SOAP APIs, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - SOAP APIs
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -66,9 +73,8 @@ The final app looks like this:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/tbf3GWI6ElhejYAuJXBv?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/tbf3GWI6ElhejYAuJXBv?embed&show_copy_link=true" title="SOAP APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -148,9 +154,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/0c0ebd8acb9f40a8b739f3940e772c24?sid=f88b7899-df56-47b3-b29a-e582cdfad2e9"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/0c0ebd8acb9f40a8b739f3940e772c24?sid=f88b7899-df56-47b3-b29a-e582cdfad2e9" title="SOAP APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -287,9 +292,8 @@ You can now proceed to display the country list in *HomePage*. Here are the step
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/f009aef15a2046e2ab7dd68143937cbf?sid=31fb7af7-f347-4902-8de9-ee2b74be1426"
-            title=""
+        <iframe
+            src="https://www.loom.com/embed/f009aef15a2046e2ab7dd68143937cbf?sid=31fb7af7-f347-4902-8de9-ee2b74be1426" title="SOAP APIs interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -316,9 +320,8 @@ You can now proceed to display the country list in *HomePage*. Here are the step
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/933dbf3f9f394d929174e09efb97410d?sid=4d010707-fa5a-4648-b8a4-49d93d95c9ce"
-            title=""
+        <iframe
+            src="https://www.loom.com/embed/933dbf3f9f394d929174e09efb97410d?sid=4d010707-fa5a-4648-b8a4-49d93d95c9ce" title="SOAP APIs interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,
@@ -377,9 +380,8 @@ Here are the step-by-step instructions:
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
         height: 0,
         width: '100%'}}>
-        <iframe 
-            src="https://www.loom.com/embed/634936ad3557402a8ee60c5ece8fe0a4?sid=6e2ab70b-2432-4f79-a43d-73b1de5bc2a5"
-            title=""
+        <iframe
+            src="https://www.loom.com/embed/634936ad3557402a8ee60c5ece8fe0a4?sid=6e2ab70b-2432-4f79-a43d-73b1de5bc2a5" title="SOAP APIs interactive tutorial"
             style={{
                 position: 'absolute',
                 top: 0,

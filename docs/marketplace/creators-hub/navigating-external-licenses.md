@@ -1,10 +1,20 @@
 ---
 slug: navigating-external-licenses
 title: Navigating External Licenses
-description: Understand the key concepts that will assist you in creating unique and compliant content for FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+description: >-
+  Understand the key concepts that will assist you in creating unique and
+  compliant content for FlutterFlow Marketplace.
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 4
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Creators, Legal Guidelines, Navigating External Licenses]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Creators
+  - Legal Guidelines
+  - Navigating External Licenses
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -65,10 +75,10 @@ Also, individual items sold on:
 **Excerpts** *(as of April 22, 2024)*
 
 > You can’t re-distribute the Item as stock, in a tool or template, or with source files. You can’t do this with an Item either on its own or bundled with other items, and even if you modify the Item. You can’t re-distribute or make available the Item as-is or with superficial modifications.
-> 
+>
 
 > You can’t use the Item in any application allowing an end user to customise a digital or physical product to their specific needs, such as an “on demand”, “made to order” or “build it yourself” application. You can use the Item in this way only if you purchase a separate license for each final product incorporating the Item that is created using the application.
-> 
+>
 
 **Legal Contact:** [legal@envato.com](mailto:legal@envato.com)
 
@@ -84,7 +94,7 @@ Also, individual items sold on:
 **Excerpt** *(as of April 22, 2024)*
 
 > Resale or Sub-Licensing of the Licensed Asset or any modification of it in a way that is directly competitive with the original Licensed Asset is strictly prohibited (e.g., as a stock asset or template).
-> 
+>
 
 **Legal Contact:** [ip@creativemarket.com](mailto:ip@creativemarket.com)
 
@@ -100,7 +110,7 @@ Also, individual items sold on:
 **Excerpt** *(as of April 22, 2024)*
 
 > Unless it’s a template created for use on Canva, you can’t use Pro content in templates of any nature.
-> 
+>
 
 **Legal Contact:** [legal@canva.com](mailto:legal@canva.com)
 
@@ -116,3 +126,7 @@ Also, individual items sold on:
 In situations where standard licensing does not meet the specific needs of your project or where the terms seem restrictive, **obtaining explicit permission from the original content creators can be a viable solution.** This allows for flexibility and ensures that your use of the assets is legally sound.
 
 We encourage reaching out directly to copyright holders whenever you are considering uses that are not clearly allowed under the standard license terms. Documenting such permissions in writing is essential to avoid any future misunderstandings or legal disputes.
+
+## Related documentation
+
+See [Creators Hub](/marketplace/creators-hub) for a related FlutterFlow workflow.

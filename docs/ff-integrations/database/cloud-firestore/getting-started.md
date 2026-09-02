@@ -1,12 +1,23 @@
 ---
 slug: /integrations/database/cloud-firestore/getting-started
-title: Getting Started
-description: Learn how to get started with Cloud Firestore in your FlutterFlow app to manage your app's data.
-tags: [Cloud Firestore, Database, Getting Started]
+title: 'Getting Started: Cloud Firestore'
+description: >-
+  Learn how to get started with Cloud Firestore in your FlutterFlow app to
+  manage your app's data.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 1
-keywords: [FlutterFlow, Cloud Firestore, Database, Getting Started]
+keywords:
+  - FlutterFlow
+  - Cloud Firestore
+  - Database
+  - Getting Started
+  - set up Cloud Firestore in FlutterFlow
+ai_queries:
+  - set up Cloud Firestore in FlutterFlow
 ---
-
 # Cloud Firestore
 
 [Firestore Database](https://firebase.google.com/docs/firestore) is a product from Google's [Firebase](https://firebase.google.com/). It's a flexible, scalable, NoSQL cloud database. It allows you to store your app data and uses real-time listeners to keep the data in sync.
@@ -72,7 +83,7 @@ For example, you create the top-level collection, such as posts, and then create
 </figure>
 
 :::tip[Pro Tip]
-Subcollection is best when you have several queries or filters or search on a collection that 
+Subcollection is best when you have several queries or filters or search on a collection that
 is based on the other collection. For example, loading or searching the comments of a specific post (i.e., show all comments of a specific post that have more likes.)
 :::
 
@@ -90,8 +101,7 @@ You can secure the data using the [**Firestore Rules**](firestore-rules.md).
 
 If you are a visual learner, you can check out the video:
 
-<div class="video-container"><iframe src="https://www.youtube.
-com/embed/v_hR4K4auoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Getting Started: Cloud Firestore interactive tutorial" src="https://www.youtube.com/embed/v_hR4K4auoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 :::
 
@@ -111,9 +121,8 @@ Next, copy the new **Database ID** and navigate to **FlutterFlow > Settings and 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/f2lDuL0yk5UlrjkNnfRF?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/f2lDuL0yk5UlrjkNnfRF?embed&show_copy_link=true" title="Getting Started: Cloud Firestore interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

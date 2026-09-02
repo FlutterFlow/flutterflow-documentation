@@ -1,12 +1,21 @@
 ---
 slug: /concepts/file-handling/displaying-media
 title: Displaying Media
-description: Learn how to display media in FlutterFlow.
-tags: [Media Files, Widget]
+description: >-
+  Displaying media efficiently is crucial for enhancing user experience in your
+  FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [Media Files, Media Management, Assets, Network, Display Media, Media Widgets]
+keywords:
+  - Media Files
+  - Media Management
+  - Assets
+  - Network
+  - Display Media
+  - Media Widgets
 ---
-
 # Displaying Media
 
 Displaying media efficiently is crucial for enhancing user experience in your FlutterFlow app. Whether you're working with images, audio, video, or PDFs, FlutterFlow provides flexible options for integrating and managing media. This guide covers how to set media sources, customize playback settings, and implement best practices like lazy loading, caching, and BlurHash to optimize performance.
@@ -131,9 +140,8 @@ Here’s how you can setup this action:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/QCY6j8EesBXaT4YZ5VNE?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QCY6j8EesBXaT4YZ5VNE?embed&show_copy_link=true" title="Displaying Media interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -267,28 +275,28 @@ https://console.cloud.google.com/home/dashboard?cloudshell=true&project=FIREBASE
 
 1. If prompted, click **Continue**.
 2. You should see a terminal at the bottom of the screen. If your project ID is not displayed in yellow, click the **down arrow** (🔽) next to the project name and select the correct Firebase project.
-    
+
 ![cloud-shell](imgs/cloud-shell.avif)
-    
+
 **Step 3: Run the CORS Configuration Command**
 
 1. Click on the **Cloud Shell terminal** (the black screen).
-2. Copy and paste the following command and replace `<your-cloud-storage-bucket>` with your actual storage bucket. To locate your Firebase Storage bucket name, navigate to Firebase Console > Storage > at top left side, you'll see your bucket's URL, which typically follows the format `your-project-id.appspot.com`. 
+2. Copy and paste the following command and replace `<your-cloud-storage-bucket>` with your actual storage bucket. To locate your Firebase Storage bucket name, navigate to Firebase Console > Storage > at top left side, you'll see your bucket's URL, which typically follows the format `your-project-id.appspot.com`.
 
 ```jsx
 touch cors.json && \
 echo '[{"origin": ["*"], "method": ["GET"], "maxAgeSeconds": 3600}]' > cors.json && \
 gsutil cors set cors.json gs://<your-cloud-storage-bucket>
 ```
-    
+
 ![storage-bucket.avif](imgs/storage-bucket.avif)
 
 3. Press **Enter** (or **Return**) to execute the command.
 4. If prompted, click **Authorize** to allow Cloud Shell to access your Firebase project.
 5. Once the command executes successfully, you should see a confirmation message.
-    
+
 ![cors-3](imgs/cors-3.png)
-    
+
 
 ## BlurHash
 

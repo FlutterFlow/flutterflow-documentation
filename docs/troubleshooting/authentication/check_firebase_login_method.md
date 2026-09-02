@@ -1,7 +1,17 @@
 ---
-keywords: ['firebase', 'auth', 'authenticated']
+keywords:
+  - firebase
+  - auth
+  - authenticated
 slug: /troubleshooting/authentication/check-firebase-login-method
 title: Check Firebase Login Method
+description: >-
+  Understanding which authentication method a user has used can be useful for
+  several reasons.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Authentication
 ---
 # Check Firebase Login Method
 
@@ -35,13 +45,13 @@ Here's a breakdown of the code:
   - Inside the function, we obtain the current user from FirebaseAuth using `FirebaseAuth.instance.currentUser`.
 
   - We then declare a string `signInMethod` that will store the name of the provider used for sign-in.
-  
+
   - `user.providerData` is an iterable that provides UserInfo for each sign-in method used by the user. We loop over this iterable using a `for` loop.
-  
+
   - In each iteration, we assign the `providerId` to our `signInMethod` string. The `providerId` can be 'google.com' for Google, 'facebook.com' for Facebook, and 'password' for email and password.
-  
+
   - After the loop is done, the function returns `signInMethod` string which indicates the sign-in method the user used.
-  
+
   - The function `getUserSignInMethod()` returns a String value which corresponds to the providerId of the user's sign-in method.
 
 Here are examples of how the return value might look like:
@@ -60,3 +70,6 @@ In FlutterFlow, if you want to display or use the user's sign-in method in your 
 Remember to return the result from the custom function and store it in an App State variable for easy access throughout your app.
 :::
 
+## Related documentation
+
+See [App Starts from HomePage in Run Mode](/troubleshooting/authentication/app-starts-from-homepage-in-run-mode) for a related FlutterFlow workflow.

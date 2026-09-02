@@ -1,12 +1,17 @@
 ---
 slug: /integrations/authentication/custom-authentication
 title: Custom Authentication
-tags: [Custom Authentication, Authentication]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 description: Learn how to add custom authentication in your FlutterFlow app.
 sidebar_position: 1
-keywords: [FlutterFlow, Custom Authentication, Authentication]
+keywords:
+  - FlutterFlow
+  - Custom Authentication
+  - Authentication
 ---
-
 # Custom Authentication
 
 Custom authentication allows you to manage auth-related data (login details) while utilizing your own backend to authenticate users.
@@ -26,9 +31,8 @@ Let's see how to add custom authentication by building an example that looks lik
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/8252c2d3d18a4da7a660ae29695d1b5f?sid=281d547c-6f07-4bbe-96df-fd267926f2b6"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/8252c2d3d18a4da7a660ae29695d1b5f?sid=281d547c-6f07-4bbe-96df-fd267926f2b6" title="Custom Authentication interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -61,7 +65,7 @@ The steps to add custom authentication are as follows:
 
 To enable custom authentication in FlutterFlow:
 
-1. Open **Setting and Integrations** () **>** **App Settings > Authentication**.  
+1. Open **Setting and Integrations** () **>** **App Settings > Authentication**.
 
 2. Turn on the **Enable Authentication** toggle and set **Authentication Type** to **Custom**.
 3. To ensure that your users are directed to the appropriate pages based on their login status, you must set the initial pages.
@@ -73,9 +77,8 @@ To enable custom authentication in FlutterFlow:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/ffcacb70ae6741728a15c17790b95435?sid=bdd85bca-61a3-434d-aa50-c6428b9f3bd6"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/ffcacb70ae6741728a15c17790b95435?sid=bdd85bca-61a3-434d-aa50-c6428b9f3bd6" title="Custom Authentication interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -111,9 +114,8 @@ On each page, on click of a button, you can add appropriate authentication relat
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/e4cfee83343f4e2a9e39d4f4227d6f92?sid=f6068d52-1293-47cc-b263-c29dec5ec844"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/e4cfee83343f4e2a9e39d4f4227d6f92?sid=f6068d52-1293-47cc-b263-c29dec5ec844" title="Custom Authentication interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -146,9 +148,8 @@ After successful authentication, you can save the auth related data using the 'L
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/88bffb563e8c47b7a5d103a5f513f8ce?sid=358b4a16-1482-48a9-9046-7cf106040f79"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/88bffb563e8c47b7a5d103a5f513f8ce?sid=358b4a16-1482-48a9-9046-7cf106040f79" title="Custom Authentication interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -176,9 +177,8 @@ To access the auth data after a user logs in, open the **set from variable** men
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/165e3f5cdd46441b8bdadd4d46ac0a13?sid=28a57da0-49a9-4adb-9f65-e0af6f57f447"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/165e3f5cdd46441b8bdadd4d46ac0a13?sid=28a57da0-49a9-4adb-9f65-e0af6f57f447" title="Custom Authentication interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

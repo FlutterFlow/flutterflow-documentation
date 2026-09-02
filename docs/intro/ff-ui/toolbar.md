@@ -1,12 +1,20 @@
 ---
 slug: /flutterflow-ui/toolbar
 title: Toolbar
-description: Learn how to use the FlutterFlow Toolbar to access project management, version control, help, testing, and development tools.
-tags: [Toolbar, FlutterFlow, UI, Tools, Project Management]
+description: >-
+  Learn how to use the FlutterFlow Toolbar to access project management, version
+  control, help, testing, and development tools.
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
 sidebar_position: 1
-keywords: [Toolbar, FlutterFlow, UI, Tools, Project Management]
+keywords:
+  - Toolbar
+  - FlutterFlow
+  - UI
+  - Tools
+  - Project Management
 ---
-
 # Toolbar
 
 The Toolbar, located at the top of the app builder, provides easy access to numerous tools and features. It includes options for project configuration, saving versions of your app, accessing help, reporting or debugging issues, viewing project comments, downloading your app code, and running your app directly in FlutterFlow.

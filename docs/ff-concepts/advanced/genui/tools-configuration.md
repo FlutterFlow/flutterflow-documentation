@@ -1,12 +1,25 @@
 ---
 slug: /concepts/tools
 title: Tools Configuration
-description: Expose Action Blocks to GenUI so the model can fetch data, run workflows, and use real results in its responses.
-tags: [AI, Chat, Actions]
+description: >-
+  Expose Action Blocks to GenUI so the model can fetch data, run workflows, and
+  use real results in its responses.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 3
-keywords: [FlutterFlow, Actions, Actions Block, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling]
+keywords:
+  - FlutterFlow
+  - Actions
+  - Actions Block
+  - GenUI
+  - Conversational AI
+  - Chat widget
+  - AI agent
+  - A2UI protocol
+  - Component rendering
+  - Tool calling
 ---
-
 # Tools Configuration
 
 In GenUI, **Tools** are Action Blocks that the model can call during a conversation. A tool is appropriate when the model needs fresh data or needs to perform work before it can answer.
@@ -153,3 +166,7 @@ The model calls the tool and then renders a list-style catalog component using t
 `calculateMonthlyPayment(amount: double, rate: double, termMonths: int) -> PaymentQuoteStruct`
 
 The model uses the result to explain the output and optionally render a quote component.
+
+## Related documentation
+
+See [App Event Integration](/concepts/app-event-integration) for a related FlutterFlow workflow.

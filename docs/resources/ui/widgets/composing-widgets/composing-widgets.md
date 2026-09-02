@@ -1,11 +1,22 @@
 ---
 title: Composing Widgets
 sidebar_position: 0
+description: >-
+  In FlutterFlow, creating a complex user interface often involves combining
+  simpler widgets into more intricate layouts.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+keywords:
+  - Composing Widgets
+  - Widgets
+  - Ui
+slug: /resources/ui/widgets/composing-widgets
 ---
-
 # Composing Widgets
 
-In FlutterFlow, creating a complex user interface often involves combining simpler widgets into more intricate layouts. While atomic widgets like **Text, Button, Image**, and **Icon** form the building blocks of your UI, you’ll use molecular widgets like **Row**, **Column**, and **Stack** to arrange these atomic widgets into a structured layout. 
+In FlutterFlow, creating a complex user interface often involves combining simpler widgets into more intricate layouts. While atomic widgets like **Text, Button, Image**, and **Icon** form the building blocks of your UI, you’ll use molecular widgets like **Row**, **Column**, and **Stack** to arrange these atomic widgets into a structured layout.
 
 As you grow more comfortable with these, you can advance to using **Lists** and **Grids** for even more dynamic and complex compositions.
 
@@ -27,7 +38,7 @@ Learn more about how to compose widgets with **[Row, Column & Stack](rows-column
 
 As you become more familiar with using molecular widgets like **Row**, **Column**, and **Stack**, you can begin working with **Lists** and **Grids**. These widgets are specifically designed to handle large sets of data or dynamic content, making them essential for more complex layouts.
 
-- **Lists:** While a `Column` is useful for stacking a few items vertically, a `ListView` is designed to handle potentially infinite items by allowing the content to scroll. This makes it ideal for things like a chat app, news feed, or any list that can grow beyond the screen size. One of the key advantages of using a ListView is also its built-in support for **lazy loading**. 
+- **Lists:** While a `Column` is useful for stacking a few items vertically, a `ListView` is designed to handle potentially infinite items by allowing the content to scroll. This makes it ideal for things like a chat app, news feed, or any list that can grow beyond the screen size. One of the key advantages of using a ListView is also its built-in support for **lazy loading**.
 
 :::tip[Lazy Loading]
 Lazy loading means that the `ListView` only builds and renders the items that are currently visible on the screen. As the user scrolls, `ListView` dynamically loads additional items just in time. This significantly improves performance, especially when dealing with long lists of data, by conserving memory and processing resources.
@@ -36,5 +47,5 @@ Lazy loading means that the `ListView` only builds and renders the items that ar
 - **Grids:** A GridView organizes items into a two-dimensional grid. It's perfect for displaying items like photos, products, or any other type of content that benefits from being presented in a grid format, making it visually appealing and easy to navigate.
 
 :::info[List & Grids]
-Learn about the advanced properties of **[Lists & Grids](list-grid.md)**. 
+Learn about the advanced properties of **[Lists & Grids](list-grid.md)**.
 :::

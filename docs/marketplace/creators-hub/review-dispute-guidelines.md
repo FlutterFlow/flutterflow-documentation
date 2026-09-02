@@ -1,12 +1,21 @@
 ---
 slug: review-dispute-guidelines
 title: Review Dispute Guidelines
-description: Learn about FlutterFlow Marketplace review dispute process and when reviews may be removed or modified.
-tags: [MarketPlace, Review Dispute, Guidelines]
+description: >-
+  Learn about FlutterFlow Marketplace review dispute process and when reviews
+  may be removed or modified.
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 3
-keywords: [FlutterFlow, MarketPlace, Review Dispute, Guidelines, Feedback, Reviews]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Review Dispute
+  - Guidelines
+  - Feedback
+  - Reviews
 ---
-
 # FlutterFlow Marketplace Review Dispute Guidelines
 
 At FlutterFlow Marketplace, we believe in transparent and honest feedback. Reviews are an essential part of helping buyers make informed decisions and helping creators improve their work.
@@ -47,3 +56,7 @@ If you believe a review on your item qualifies for removal:
 Our team will review each case individually and respond within **10 business days**.
 Please note we are actively working on better creator tools to allow creators to reply directly to reviews.
 :::
+
+## Related documentation
+
+See [Creators Hub](/marketplace/creators-hub) for a related FlutterFlow workflow.

@@ -1,9 +1,16 @@
 ---
 slug: card
-tags: [Layout Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add and customize a Card widget in FlutterFlow.
+title: Card
+keywords:
+  - Card
+  - Built In Widgets
+  - Widgets
 ---
-
 # Card
 
 The [Card](https://api.flutter.dev/flutter/material/Card-class.html) widget displays related content on a surface with rounded corners and a shadow. Use it for product details, restaurant details, profiles, or other content that should appear as a single item.

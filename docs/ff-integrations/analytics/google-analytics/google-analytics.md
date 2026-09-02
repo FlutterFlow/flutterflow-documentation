@@ -1,12 +1,21 @@
 ---
 slug: /integrations/google-analytics
 title: Google Analytics
-description: Learn how to setup Google Analytics in FluterFlow
-tags: [Google Analytics]
+description: >-
+  Integrating Google Analytics into your FlutterFlow project enables you to
+  monitor user interactions, track app performance, and gain valuable insights
+  to enhance user experience.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Google Analytics
 sidebar_position: 1
-keywords: [Google Analytics, Firebase, Firebase Analytics, Track App Events]
+keywords:
+  - Google Analytics
+  - Firebase
+  - Firebase Analytics
+  - Track App Events
 ---
-
 # Google Analytics
 
 Integrating Google Analytics into your FlutterFlow project enables you to monitor user interactions, track app performance, and gain valuable insights to enhance user experience. Here's a comprehensive guide on setting up and utilizing Google Analytics within FlutterFlow.
@@ -26,9 +35,8 @@ To enable Google Analytics in Firebase, open the [Firebase Console](https://cons
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/QJY4MZVonDmVgIcexK6t?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QJY4MZVonDmVgIcexK6t?embed&show_copy_link=true" title="Google Analytics interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

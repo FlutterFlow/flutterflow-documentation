@@ -2,11 +2,17 @@
 slug: /integrations/authentication/firebase/jwt-auth
 title: JWT Token
 description: Learn how to implement JWT authentication in your FlutterFlow app.
-tags: [JWT, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 6
-keywords: [FlutterFlow, JWT, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - JWT
+  - Authentication
+  - Firebase
 ---
-
 # JWT Token Authentication
 
 [JWT](https://jwt.io/introduction) token sign-in allows you to log in and use the Firebase services such as Firebase Database and push notifications using the account created on your own server/backend.
@@ -121,9 +127,8 @@ Here are the step by step instructions:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/c905b00428f045dc9d8d7d92ea4413db?sid=61ab89e3-5933-41ec-ae09-8a4fe19be459"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/c905b00428f045dc9d8d7d92ea4413db?sid=61ab89e3-5933-41ec-ae09-8a4fe19be459" title="JWT Token interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -195,9 +200,8 @@ admin.auth().createCustomToken(uid)
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.loom.com/embed/4a42974fd2f0447f9c701db81d5de485?sid=5cba6c8d-742d-4165-8c94-47e348118992"
-        title=""
+    <iframe
+        src="https://www.loom.com/embed/4a42974fd2f0447f9c701db81d5de485?sid=5cba6c8d-742d-4165-8c94-47e348118992" title="JWT Token interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

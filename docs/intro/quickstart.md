@@ -1,10 +1,20 @@
 ---
 slug: /quickstart
 title: Quickstart Guide
-tags: []
-description: Build your first interactive FlutterFlow app by creating a layout, customizing its style, managing state, and testing the result.
+tags:
+  - FlutterFlow
+  - Getting Started
+description: >-
+  Build your first interactive FlutterFlow app by creating a layout, customizing
+  its style, managing state, and testing the result.
+keywords:
+  - Quickstart Guide
+  - Quickstart
+  - FlutterFlow
+  - create my first FlutterFlow app
+ai_queries:
+  - create my first FlutterFlow app
 ---
-
 # Quickstart Guide
 
 Welcome to the FlutterFlow Quickstart Guide! This guide introduces the basic FlutterFlow concepts through a short, hands-on exercise. You'll build a product quantity selector that allows users to adjust the quantity of an item before adding it to their shopping cart.
@@ -66,9 +76,8 @@ Build the quantity control by combining layout and display widgets in the produc
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/13kkejiZuiFeo9Fj8aWz?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/13kkejiZuiFeo9Fj8aWz?embed&show_copy_link=true" title="Quickstart Guide interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -94,10 +103,10 @@ To learn more, see [**Building Layouts**](../ff-concepts/layout/building-layout.
 
 Next, style the quantity control to match the rest of the product page. Use the [Properties Panel](../intro/ff-ui/builder.md#properties-panel) to adjust each selected widget.
 
-1. Adjust the spacing and alignment of the Row. 
+1. Adjust the spacing and alignment of the Row.
 2. Select the Container that holds the quantity control and adjust its background color, padding, size, and corner radius.
 3. Style the "Quantity" label and value so they are easy to read.
-4. Customize the decrease and increase controls with suitable icons, colors, and sizes. 
+4. Customize the decrease and increase controls with suitable icons, colors, and sizes.
 5. Compare the result with the completed preview and make any final visual adjustments.
 
 <div style={{
@@ -106,9 +115,8 @@ Next, style the quantity control to match the rest of the product page. Use the 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/mA0EGCPhuyJ6UUQFPDUP?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/mA0EGCPhuyJ6UUQFPDUP?embed&show_copy_link=true" title="Quickstart Guide interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -150,9 +158,8 @@ To learn more about this workflow, see [**Creating a Page State**](../resources/
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/T8dg4g238t37cct3vrD2?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/T8dg4g238t37cct3vrD2?embed&show_copy_link=true" title="Quickstart Guide interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -190,9 +197,8 @@ See the [**Action Flow Editor**](../resources/control-flow/functions/action-flow
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/rmxuLzwsP7uGgGQUI4YO?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/rmxuLzwsP7uGgGQUI4YO?embed&show_copy_link=true" title="Quickstart Guide interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -226,9 +232,8 @@ Use [**Test Mode**](../testing-deployment-publishing/running-your-app/run-your-a
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/hdpwwkbCYcvsjsrkygDX?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/hdpwwkbCYcvsjsrkygDX?embed&show_copy_link=true" title="Quickstart Guide interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

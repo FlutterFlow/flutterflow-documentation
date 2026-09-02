@@ -1,7 +1,17 @@
 ---
-keywords: ['database', 'firebase', 'client']
+keywords:
+  - database
+  - firebase
+  - client
 slug: /troubleshooting/firebase/client-access-to-firestore-expired
 title: Client Access to Firestore Expired
+description: >-
+  Learn how to diagnose and resolve Client Access to Firestore Expired in
+  FlutterFlow with symptom, cause, and recovery guidance.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
 ---
 # Client Access to Firestore Expired
 
@@ -18,7 +28,7 @@ You are seeing this error message because of the following:
         1. **Test Mode** – Temporarily allows open access (expires after 30 days).
         2. **Production Mode** – Starts off restricted and requires secure rules.
 
-        ![](../assets/20250430121224235710.png)
+        ![Client Access to Firestore Expired in FlutterFlow](../assets/20250430121224235710.png)
 
 If you selected **Test Mode** during setup, Firestore access will automatically expire after the preset period. To continue using Firestore, you'll need to update the rules using one of the following options:
 
@@ -40,14 +50,14 @@ If you selected **Test Mode** during setup, Firestore access will automatically 
 
                 Update the expiration timestamp to a future date if you're still in development.
 
-                ![](../assets/20250430121224547832.png)
+                ![Client Access to Firestore Expired in FlutterFlow](../assets/20250430121224547832.png)
 
             - **Option B: Secure Your Rules for Production**
 
                 Update your rules to enforce proper authentication and access controls.
 
 
-                ![](../assets/20250430121224874215.png)
+                ![Client Access to Firestore Expired in FlutterFlow](../assets/20250430121224874215.png)
 
 
 If the issue persists, contact us at [support@flutterflow.io](mailto:support@flutterflow.io) for further assistance.

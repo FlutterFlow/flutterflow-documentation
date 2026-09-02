@@ -2,9 +2,15 @@
 slug: submit-item-for-review
 title: Submitting Item for Review
 description: Learn how to submit an item to the FlutterFlow Marketplace.
-tags: [MarketPlace, Creators Hub]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 0
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Submit Item]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Submit Item
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -44,8 +50,7 @@ You can also clone an existing project and then set it as a Marketplace Project.
     height: 0,
     width: '100%'}}>
     <iframe
-        src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324"
-        title=""
+        src="https://www.loom.com/embed/238389017ff242db9e1e81c665f0dd16?sid=c227f4ad-9851-4a79-acde-2ff0b6fa6324" title="Submitting Item for Review interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -78,7 +83,7 @@ The cover photo should be **1200x800 pixels** and help the users understand the 
 
 #### Gallery Photos (optional)
 
-Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform. 
+Include up to 4 additional photos that showcase your item's features. GIFs are allowed but should not be distracting, focus solely on the use and/or usability of the template, and be highly optimized to ensure a smooth load on the platform.
 
 Each should be should be **1200x800 pixels**.
 
@@ -88,7 +93,7 @@ The item name should be professional, unique, and help the users understand the 
 
 #### Description
 
-The description should provide an overview of the key features, helping users determine if the item aligns with their requirements. 
+The description should provide an overview of the key features, helping users determine if the item aligns with their requirements.
 
 If the item includes any third-party paid services or pub.dev packages/dependencies, those should also be mentioned in the description. Please use correct grammar and capitalization.
 

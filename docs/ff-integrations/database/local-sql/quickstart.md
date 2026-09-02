@@ -1,12 +1,21 @@
 ---
 slug: /integrations/database/sqlite
 title: SQLite Quickstart
-description: Learn how to quickly get started with SQLite in your FlutterFlow app for local data storage.
-tags: [SQLite, Database, Quickstart, Local Storage]
+description: >-
+  Learn how to quickly get started with SQLite in your FlutterFlow app for local
+  data storage.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 1
-keywords: [FlutterFlow, SQLite, Database, Quickstart, Local Storage]
+keywords:
+  - FlutterFlow
+  - SQLite
+  - Database
+  - Quickstart
+  - Local Storage
 ---
-
 # SQLite
 
 SQLite is a compact, efficient database management system. Unlike conventional databases that require a server, SQLite is serverless and embeds directly into applications.
@@ -19,8 +28,7 @@ Currently, we don't support SQLite on Web-based apps.
 
 Let's understand how you can utilize SQLite in your app with an example. An app where users can add, update, and delete Notes. Here's how it looks when completed:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/a35c0fab4b9b4c2ba4f479d82e402f44?sid=f5fb3f4e-c4bb-4ec5-a5b5-60f6aed47d5d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/a35c0fab4b9b4c2ba4f479d82e402f44?sid=f5fb3f4e-c4bb-4ec5-a5b5-60f6aed47d5d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -44,7 +52,7 @@ To enable SQLite in FlutterFlow, navigate to Settings and Integrations > Integra
 
 In the database configuration step, you'll need to upload your SQLite database file and assign a name to it. This process is crucial for initializing the database when your app launches.
 
-If you don't yet have an SQLite database, you can easily create one using tools like 
+If you don't yet have an SQLite database, you can easily create one using tools like
 [sqlitebrowser](https://sqlitebrowser.org/). Simply download [sqlitebrowser](https://sqlitebrowser.org/dl/), create a new database, set up your tables, and optionally add some data. After preparing your database, upload the file to FlutterFlow to integrate it with your app.
 
 For this example, we'll create a "Notes" table with `ID`, `Title`, `Details`, `DueDate`, and `IsCompleted` as columns.
@@ -55,8 +63,7 @@ It is advisable to avoid using any SQL reserved keywords such as `type` and `dat
 
 Here's how you can create and configure the database:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/c5f43ee65e954df2856d78e035ab8bba?sid=fcaccfa1-fb0c-4f67-9953-d51e7227e596" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/c5f43ee65e954df2856d78e035ab8bba?sid=fcaccfa1-fb0c-4f67-9953-d51e7227e596" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 
@@ -104,8 +111,7 @@ This will retrieve all notes from the database.
 ```
 Select * from Notes
 ```
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/b4f1e7961d7144d894ec399bb5b13053?sid=383a4e77-a394-4372-a01e-d66918167ebe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/b4f1e7961d7144d894ec399bb5b13053?sid=383a4e77-a394-4372-a01e-d66918167ebe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -118,8 +124,7 @@ This will add a new note to the database.
 INSERT INTO Notes (Title, Details, DueDate, IsCompleted) VALUES ('${title}', '${details}', ${dueDate}, 0);
 ```
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/a3870b604d8a41f98e49e925f0dac23c?sid=2e5452ad-893b-4cb3-9e92-042b5ee1d20f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/a3870b604d8a41f98e49e925f0dac23c?sid=2e5452ad-893b-4cb3-9e92-042b5ee1d20f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -130,7 +135,7 @@ This will update the existing note based on the note ID.
 
 ```
 UPDATE Notes
-SET 
+SET
     Title = '${title}',
     Details = '${details}',
     DueDate = ${dueDate},
@@ -138,8 +143,7 @@ SET
 WHERE ID = ${id};
 ```
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e87e63de285543ecbd50ada0cfd4577b?sid=a76bb4a8-b434-45ce-bd0b-7d9e8a7daa93" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/e87e63de285543ecbd50ada0cfd4577b?sid=a76bb4a8-b434-45ce-bd0b-7d9e8a7daa93" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -151,8 +155,7 @@ This will delete the note based on the note ID.
 DELETE FROM Notes WHERE ID = ${id};
 ```
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/aa0bb7bea67145c8b0b61ce57485a5c2?sid=9d950aba-c498-484c-8507-c795bee7459f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/aa0bb7bea67145c8b0b61ce57485a5c2?sid=9d950aba-c498-484c-8507-c795bee7459f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 ## 4. Display all notes
@@ -172,8 +175,7 @@ Go to your project page and follow the steps below to define an SQLite query:
 - Click **Add Query** and set the Query Type to **SQLite Query**.
 - Select the **Query Name**. (Only Read Queries will be displayed here.) and click **Confirm**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=b20e4978-c0c5-446a-88f8-222ffba42879" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=b20e4978-c0c5-446a-88f8-222ffba42879" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -181,11 +183,10 @@ Once you have the SQLite query defined, you can use the data retrieved from the 
 
 - Select the widget (e.g., Text) on which you want to display the data.
 
-- From the Properties Panel, open the Set from Variable menu > select [your query name] Row > 
+- From the Properties Panel, open the Set from Variable menu > select [your query name] Row >
 select the column data that you want display here and click **Confirm**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1cf9df4d871948c1b6513587c05d9040?sid=aae128a2-0066-433c-a34d-fad4031bb11b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/1cf9df4d871948c1b6513587c05d9040?sid=aae128a2-0066-433c-a34d-fad4031bb11b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 
@@ -195,28 +196,26 @@ In our example, the due date is stored as a Unix timestamp, which isn't user-fri
 
 ## 5. Add note
 
-You can add a new note in the database using the SQLite query Action with the type set to 
+You can add a new note in the database using the SQLite query Action with the type set to
 **Update Query** and Query Name to [AddNote](#2-addnote).
 
 Here's how you do it:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/bb775d5da5614117ac6fbe6542b6c29f?sid=877e565c-be16-4c77-a92c-9a6a9540860d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/bb775d5da5614117ac6fbe6542b6c29f?sid=877e565c-be16-4c77-a92c-9a6a9540860d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
 ## 6. Update note
 
-For updating note values, like marking a note as completed or modifying other fields, utilize 
-the SQLite Query Action and set the type to **Update Query**. Here, set the Query Name to 
+For updating note values, like marking a note as completed or modifying other fields, utilize
+the SQLite Query Action and set the type to **Update Query**. Here, set the Query Name to
 [Update Note](#3-updatenote).
 
 
 
 Here's how you do it:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 :::info
 
@@ -231,14 +230,13 @@ com/embed/35564ad5e8be4f58aa72527bc6818183?sid=2740d823-df42-49c3-ae54-8e0e95a72
 
 You can delete an existing note from the database using the [SQLite query action](../../../resources/control-flow/backend-logic/backend-query/sqlite-query.md) with the type set to *Update Query* and Query Name to **Delete Note**.
 
-:::tip[Pro Tip] 
-To refresh the page, simply add an [**Update App State Action**](../../../resources/data-representation/app-state.md) Action with the Update Type set 
+:::tip[Pro Tip]
+To refresh the page, simply add an [**Update App State Action**](../../../resources/data-representation/app-state.md) Action with the Update Type set
 to 'Rebuild Current Page'.
 :::
 Here's how you do it:
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/e8369eeccc1740628a988c064d9e1713?sid=f51569d4-ff45-4834-b9d8-f4cc6d776361" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Quickstart interactive tutorial" src="https://www.loom.com/embed/e8369eeccc1740628a988c064d9e1713?sid=f51569d4-ff45-4834-b9d8-f4cc6d776361" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 <p></p>
 

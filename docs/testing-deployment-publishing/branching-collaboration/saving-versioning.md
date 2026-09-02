@@ -1,12 +1,20 @@
 ---
 slug: /collaboration/saving-versioning
 title: Saving and Versioning
-description: Learn about versioning in your FlutterFlow.
-tags: [Versioning]
+description: >-
+  In this section, we discuss the important concepts of saving and versioning in
+  your project.
+tags:
+  - FlutterFlow
+  - Collaboration
 sidebar_position: 2
-keywords: [Saving, Versioning, Collaboration, FlutterFlow, Concepts]
+keywords:
+  - Saving
+  - Versioning
+  - Collaboration
+  - FlutterFlow
+  - Concepts
 ---
-
 # Saving and Versioning
 
 In this section, we discuss the important concepts of saving and versioning in your project. Understanding how to use versions, snapshots and commits can be crucial in preventing loss of work and maintaining progress.

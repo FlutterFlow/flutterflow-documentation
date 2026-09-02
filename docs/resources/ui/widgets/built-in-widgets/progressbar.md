@@ -1,10 +1,16 @@
 ---
 slug: progressbar
 title: ProgressBar
-tags: [Form Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 description: Learn how to add ProgressBar widget in your FlutterFlow project.
+keywords:
+  - ProgressBar
+  - Built In Widgets
+  - Widgets
 ---
-
 # ProgressBar
 The ProgressBar widget is used to represent the progress of any task. You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
 
@@ -26,9 +32,8 @@ Here's how you can add the ProgressBar widget to your project:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/i5mkJlJMbyZb4LiZQFkf?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/i5mkJlJMbyZb4LiZQFkf?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -68,9 +73,8 @@ To change the size of the Circular progress bar:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/fj6FUOogYFAxJG7nfAuO?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fj6FUOogYFAxJG7nfAuO?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -102,9 +106,8 @@ Changing the thickness property allows you to change the size of the progress ba
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jeAyY0xdzi3INgac33it?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jeAyY0xdzi3INgac33it?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -138,9 +141,8 @@ To change the start angle:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/99JpuWlT7fQidzQ6BwqW?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/99JpuWlT7fQidzQ6BwqW?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -180,9 +182,8 @@ To change the size of the Linear Progress Bar:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/9xNRyCbbIRZXu3xFDXcQ?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/9xNRyCbbIRZXu3xFDXcQ?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -214,9 +215,8 @@ Changing the thickness property allows you to change the height of the progress 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/u7enthjVYkwcKPG3ofJR?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/u7enthjVYkwcKPG3ofJR?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -250,9 +250,8 @@ To change the end radius:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZTLozkXuPWEUEOXx4IX9?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZTLozkXuPWEUEOXx4IX9?embed&show_copy_link=true" title="ProgressBar interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -270,3 +269,7 @@ To change the end radius:
     </iframe>
 </div>
 <p></p>
+
+## Related documentation
+
+See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.

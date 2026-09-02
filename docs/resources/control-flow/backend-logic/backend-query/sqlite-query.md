@@ -2,11 +2,19 @@
 slug: /resources/backend-query/sqlite-query
 title: SQLite Query
 description: Learn how to perform SQLite queries in your FlutterFlow app.
-tags: [SQLite, Query, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Query
 sidebar_position: 6
-keywords: [SQLite, Query, Backend Query, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - SQLite
+  - Query
+  - Backend Query
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # SQLite Query
 
 SQLite Query can be set up to automatically execute SQL statements as soon as a page or widget loads. This feature is useful for fetching data from the database to display on a page or widget, such as populating a ListView with items or showing user preferences in Text widgets.
@@ -35,8 +43,7 @@ Go to your project page and follow the steps below to define an SQLite query:
 4. Select the **Query Name**. (Only *Read Queries* will be displayed here.)
 5. Click **Confirm**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=d5be04cc-1ce3-4f16-98e1-5b929c0f6673" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="SQLite Query interactive tutorial" src="https://www.loom.com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=d5be04cc-1ce3-4f16-98e1-5b929c0f6673" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -48,9 +55,4 @@ Once you have the SQLite query defined, you can use the data retrieved from the 
 2. From the Properties Panel, open the **Set from Variable** menu **>** select **[your query name] Row** **>** select the column data that you want display here.
 3. Click **Confirm**.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1cf9df4d871948c1b6513587c05d9040?sid=c77df270-a91b-40da-b796-05f243ae9d15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-
-
-
-
+<div class="video-container"><iframe title="SQLite Query interactive tutorial" src="https://www.loom.com/embed/1cf9df4d871948c1b6513587c05d9040?sid=c77df270-a91b-40da-b796-05f243ae9d15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>

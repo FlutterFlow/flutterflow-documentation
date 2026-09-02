@@ -1,12 +1,18 @@
 ---
 slug: /concepts/notifications
 title: Notifications
-description: Learn how to add notifications in FlutterFlow.
-tags: [Notifications, Concepts]
+description: >-
+  Notifications are alerts or messages that appear on a user's device outside
+  the normal UI flow of an app.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 0
-keywords: [FlutterFlow, Notifications, Concepts]
+keywords:
+  - FlutterFlow
+  - Notifications
+  - Concepts
 ---
-
 # Notifications
 
 **Notifications** are alerts or messages that appear on a user's device outside the normal UI flow of an app. They can inform the user of time-sensitive or high-priority messages, events, or actions that require attention. Notifications may appear as banners, alerts, pop-ups, or lock-screen notifications, depending on user preferences and platform design guidelines.

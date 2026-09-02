@@ -1,7 +1,18 @@
 ---
-keywords: ['api', 'android', 'error']
-slug: /troubleshooting/google-play-store-deployment/declare-advertising-id-android-13-play-console
+keywords:
+  - api
+  - android
+  - error
+slug: >-
+  /troubleshooting/google-play-store-deployment/declare-advertising-id-android-13-play-console
 title: Declare Advertising ID for Android 13+ in Play Console
+description: >-
+  If your app targets Android 13 (API 33) or higher, Google Play requires that
+  you declare whether your app uses the Advertising ID .
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
 # Declare Advertising ID for Android 13+ in Play Console
 
@@ -40,13 +51,13 @@ Follow the steps below to fix this error:
     - Log into your **Google Play Console**.
     - Navigate to your app's **App Content** section.
 
-        ![](../assets/20250430121230522324.png)
+        ![Declare Advertising ID for Android 13+ in Play Console in FlutterFlow](../assets/20250430121230522324.png)
 
 2. **Declare Advertising ID Usage**
 
     - If your app **does not contain ads**, select **No** under the "Advertising ID" section.
 
-    ![](../assets/20250430121230823138.png)
+    ![Declare Advertising ID for Android 13+ in Play Console in FlutterFlow](../assets/20250430121230823138.png)
 
     - If your app **contains ads**, select **Yes** and provide the necessary details about how ads are used.
 
@@ -59,3 +70,6 @@ Follow the steps below to fix this error:
 
 If the issue persists after following these steps, please contact FlutterFlow Support via Chat or email at [support@flutterflow.io](mailto:support@flutterflow.io).
 
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

@@ -1,9 +1,19 @@
 ---
-keywords: ["icon", "added", "launcher"]
-slug: /troubleshooting/google-play-store-deployment/launcher-icon-missing-after-upload
+keywords:
+  - icon
+  - added
+  - launcher
+slug: >-
+  /troubleshooting/google-play-store-deployment/launcher-icon-missing-after-upload
 title: Launcher Icon Missing After Upload
+description: >-
+  Custom app launcher icons may fail to appear after being added in the project
+  settings due to missing icon generation steps.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Launcher Icon Missing After Upload
 
 Custom app launcher icons may fail to appear after being added in the project settings due to missing icon generation steps.
@@ -23,8 +33,12 @@ Custom app launcher icons may fail to appear after being added in the project se
    ```
     This generates the necessary launcher icon assets for your app.
 
-2. Ensure your Flutter environment is properly set up. If needed, follow the official **[Flutter installation guide](https://docs.flutter.dev/get-started/install)**.
+2. Ensure your Flutter environment is properly set up. If needed, follow the official **[Flutter installation guide](https://docs.flutter.dev/install/quick)**.
 
     - Verify your icon files are named correctly and placed in the appropriate directory.
     - Check that your `pubspec.yaml` includes the correct `flutter_launcher_icons` configuration.
     - Run `flutter clean` in your project directory before rerunning the icon generation command to clear caches.
+
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

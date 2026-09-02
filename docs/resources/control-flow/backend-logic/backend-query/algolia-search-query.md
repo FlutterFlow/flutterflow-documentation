@@ -2,11 +2,19 @@
 slug: /resources/backend-query/algolia-search-query
 title: Algolia Search Query
 description: Learn how to perform an Algolia search query in your FlutterFlow app.
-tags: [Algolia, Search, API, Backend Logic, Control Flow, FlutterFlow]
+tags:
+  - FlutterFlow
+  - Resources
+  - Backend Query
 sidebar_position: 5
-keywords: [Algolia, Search, API, Backend Logic, Control Flow, FlutterFlow]
+keywords:
+  - Algolia
+  - Search
+  - API
+  - Backend Logic
+  - Control Flow
+  - FlutterFlow
 ---
-
 # Algolia Search Query
 
 You can set up an **Algolia Search Backend Query** to automatically trigger a search as soon as the user navigates to the page. This allows users to find documents within a Firestore Collection by simply providing a search term.
@@ -26,9 +34,8 @@ Next, configure the search parameters: for **Firebase Collection**, select the F
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/iGWZLhKhNild9c9lNwJt?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/iGWZLhKhNild9c9lNwJt?embed&show_copy_link=true" title="Algolia Search Query interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

@@ -1,12 +1,24 @@
 ---
 slug: /integrations/database/cloud-firestore/firestore-rules
 title: Deploy Firestore Rules
-description: Learn how to deploy Firestore rules in your FlutterFlow app to manage data access and security.
-tags: [Firestore, Database, Rules, Cloud Firestore]
+description: >-
+  Learn how to deploy Firestore rules in your FlutterFlow app to manage data
+  access and security.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Database
 sidebar_position: 2
-keywords: [FlutterFlow, Firestore, Database, Rules, Cloud Firestore]
+keywords:
+  - FlutterFlow
+  - Firestore
+  - Database
+  - Rules
+  - Cloud Firestore
+  - deploy Firestore security rules from FlutterFlow
+ai_queries:
+  - deploy Firestore security rules from FlutterFlow
 ---
-
 # Firestore Rules
 
 Firestore security rules are essential in safeguarding your Firebase data from potential malicious users. These rules not only enhance security but also give you control over data access within your application. With Firestore rules, you can enforce restrictions, ensuring that only authorized users can interact with specific data.
@@ -48,7 +60,7 @@ We provide various levels of access control that allow you to define user permis
 
 * **Authenticated Users**: Access is limited to authenticated users only, such as those who have signed in through Email, Google Sign-in, etc. Any user logged into the app can now create, read, write, and delete documents.
 
-* **Tagged Users**: Allow users to read/update/delete a document if they are tagged in that 
+* **Tagged Users**: Allow users to read/update/delete a document if they are tagged in that
   document. For example, say there is a "posts" collection with a `created_by` field representing the user who created the post. Then the "Tagged User" rule can be set on the `created_by` field to only allow accessing (read/update/delete) the post if the logged-in user is the one who created it.
 
 <figure>
@@ -79,9 +91,9 @@ When you create a new collection inside the [Firestore Content Manager](../../da
 
 The default rule is suitable while you are getting started, but before the app goes live, please think about limiting access to any collections that potentially include the user's private information. To help you with that, we mark it as 'Has Private Data'. This will show you a warning to update the rule and restrict access.
 
-For example, a newly created 'notes' collection allows everyone to read all notes by default. In 
-reality, only the user who created it should be able to read it. But because we have marked it 
-as '**Has Private Data**' it will show a warning like the one below, and you can modify the 
+For example, a newly created 'notes' collection allows everyone to read all notes by default. In
+reality, only the user who created it should be able to read it. But because we have marked it
+as '**Has Private Data**' it will show a warning like the one below, and you can modify the
 rules that allow only a user to read notes who created it.
 
 <figure>
@@ -92,14 +104,13 @@ rules that allow only a user to read notes who created it.
 If you want more control over a specific collection, you can remove the FlutterFlow generated rule by checking the **Exclude** option. And then, you can set up advanced or custom security rules using the Firestore Database console.
 
 :::info
-To bring the rules into effect, you must deploy them. Click the **Deploy** button from here, and 
+To bring the rules into effect, you must deploy them. Click the **Deploy** button from here, and
 you will see the deployed rules at **Firebase Console > Firebase Database > Rules.**
 :::
 
 When a user is deleted from your app, you might want to delete all records and data associated with that user as well. To do so, first set the 'Tagged Users' for the delete rule, and then check the () option.
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/583cfc171fac4f589330b64742f96cd2?sid=ef8957e2-d66a-46b8-be10-4b8a9735f153" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Deploy Firestore Rules interactive tutorial" src="https://www.loom.com/embed/583cfc171fac4f589330b64742f96cd2?sid=ef8957e2-d66a-46b8-be10-4b8a9735f153" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -131,9 +142,8 @@ The rules set in the above examples are for simplification purposes. You should 
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/jyev2F2KqwIlZEFU6zJl?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jyev2F2KqwIlZEFU6zJl?embed&show_copy_link=true" title="Deploy Firestore Rules interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -164,7 +174,7 @@ Let's take an example to set up the rules on a *todos* collection for the follow
 
 To set up the Firestore Rules for the above requirements:
 
-1. Open the Firebase console of your project, and click on the **Firestore Database** in the left 
+1. Open the Firebase console of your project, and click on the **Firestore Database** in the left
 side menu.
 2. Select the **Rules** tab.
 3. Paste the following code and click on **Publish**.
@@ -174,22 +184,22 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    
+
     // 1.
     function isSignedIn() {
       return request.auth != null;
     }
-    
+
     // 2.
     function verified() {
       return request.auth.token.email_verified || request.auth.token.phone_number;
     }
-    
+
     // 3.
     function isValidItem() {
       return request.resource.data.name.size() > 0 ;
     }
-  
+
     match /todos/{document} {
       // 4.
       allow create: if isSignedIn() && verified() && isValidItem();
@@ -231,9 +241,8 @@ Here’s a quick rundown of what’s going on in the code above:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/kzuJJDsEaahl4oxQKipi?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/kzuJJDsEaahl4oxQKipi?embed&show_copy_link=true" title="Deploy Firestore Rules interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -268,7 +277,7 @@ Before you finally deploy the new rules, a popup asks you to review your changes
 
 You can go back to the previous rule state with Firebase Cloud Firestore Console:
 
-1. Open the Firebase console of your project, and click on the **Firestore Database** in the left 
+1. Open the Firebase console of your project, and click on the **Firestore Database** in the left
 side menu.
 2. Select the **Rules** tab.
 3. Select and copy the previous rule from the left-side menu.
@@ -276,7 +285,7 @@ side menu.
 5. Click on **Publish**.
 
 :::tip[Learn More]
-Learn more about [**creating custom Firestore Rules**](https://fireship.io/snippets/firestore-rules-recipes/).
+Learn more about [**creating custom Firestore Rules**](https://firebase.google.com/docs/firestore/security/rules-conditions).
 :::
 
 ## FAQs
@@ -294,7 +303,7 @@ Learn more about [**creating custom Firestore Rules**](https://fireship.io/snipp
 
 If you encounter such issues, the 'Default GCP resource location" is probably not set in your Firebase project. To fix this issue:
 
-1. First, ensure that you have 
+1. First, ensure that you have
 [**configured the Cloud Firestore**](../../firebase/connect-to-firebase-setup.md#enable-firestore-for-database-access)
 2. And then, head over to the second link (from the error) and set the GCP resource location.
 
@@ -305,12 +314,8 @@ If you encounter such issues, the 'Default GCP resource location" is probably no
 
 <figure>
     ![img_11.png](img_11.png)
-  <figcaption class="centered-caption">Set the link to Firebase Console > General 
+  <figcaption class="centered-caption">Set the link to Firebase Console > General
 Settings > Default GCP Resource Location </figcaption>
 </figure>
 
 </details>
-
-
-
-

@@ -1,9 +1,18 @@
 ---
 title: Mouse Region
 slug: mouse-region
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  The widget lets you know whenever the mouse pointer enters or exits from a
+  widget.
+keywords:
+  - Mouse Region
+  - Built In Widgets
+  - Widgets
 ---
-
 # MouseRegion
 
 The `MouseRegion` widget lets you know whenever the mouse pointer enters or exits from a widget. You could use it to build a user experience (UX), such as animating buttons when a user hovers over them and revealing or hiding menu items when a user hovers over the menu icon.
@@ -14,9 +23,9 @@ On this page, you will learn how to [add the MouseRegion widget](#adding-mousere
 
 Here are the step-by-step instructions to build such an example:
 
-1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base 
+1. First, click on the **+ Add Widget** and drag the **MouseRegion** widget from the **Base
 Elements** tab or add it directly from the widget tree.
-2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion) 
+2. Add a [**Button**](../basic-widgets/button.md) (inside MouseRegion)
    with [**On Action Trigger**](../../../../ff-concepts/animations/widget_animations.md#animation-on-action-trigger) animation.
 3. Select the **MouseRegion** widget, select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action flow Editor** in a new popup window.
 4. Select the **On Mouse Enter** tab. Actions added under this will be triggered whenever the mouse enters the MouseRegion widget.
@@ -30,9 +39,8 @@ Elements** tab or add it directly from the widget tree.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/fyWTrN674CtK5JKZi8jA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/fyWTrN674CtK5JKZi8jA?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -62,9 +70,8 @@ Let's see how to build the following example:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/nFzYivGMxumu0IsrPn4b?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/nFzYivGMxumu0IsrPn4b?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -86,21 +93,21 @@ Let's see how to build the following example:
 
 Here are the step-by-step instructions:
 
-1. First, add the Stack **>** **Container** **> MouseRegion >** **IconButton** to display the menu 
+1. First, add the Stack **>** **Container** **> MouseRegion >** **IconButton** to display the menu
 icon.
 2. Add the **Container > MouseRegion >** **Column** (with some menu items/options) inside the same Stack widget.
 
-:::info[Note] 
-Note that we wrapped the menu icon and its options inside the MouseRegion widget. In 
+:::info[Note]
+Note that we wrapped the menu icon and its options inside the MouseRegion widget. In
 the next step, we will add the same actions for both MouseRegion widgets so that the menu options stay visible as long as you hover over them.
 :::
 
 ![img_9.png](imgs/img_9.png)
 
-3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md) 
-   and use it 
-to 
-[add conditional visibility](../../widgets/widget-commonalities.md#conditional) 
+3. Create a boolean [App State variable](../../../../resources/data-representation/app-state.md)
+   and use it
+to
+[add conditional visibility](../../widgets/widget-commonalities.md#conditional)
    on menu options.
 4. On both MouseRegion widgets, add an [update app state variable](../../../../resources/data-representation/app-state.md#update-app-state-action) action to set **True** when the mouse enters and **False** when the mouse exit.
 
@@ -111,9 +118,8 @@ to
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/QsKNBHezCkCylYsY6lDB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/QsKNBHezCkCylYsY6lDB?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -136,7 +142,7 @@ to
 
 ## Customizing
 
-You can customize the appearance and behavior of this widget using the various properties 
+You can customize the appearance and behavior of this widget using the various properties
 available under the **Properties Panel**.
 
 ### Customize mouse cursor
@@ -151,9 +157,8 @@ To customize the mouse cursor, select the **MouseRegion** widget, move to the pr
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/vTu0IFhJzyfqHryY0GHU?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vTu0IFhJzyfqHryY0GHU?embed&show_copy_link=true" title="Mouse Region interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -170,4 +175,3 @@ To customize the mouse cursor, select the **MouseRegion** widget, move to the pr
         allow="clipboard-write">
     </iframe>
 </div>
-

@@ -1,12 +1,23 @@
 ---
 slug: /designer/slides
 title: Slides
-description: Turn a FlutterFlow Designer project into a presentation deck. Design 16:9 slides, present with presenter view, and import or export PowerPoint files.
-tags: [Slides, Presentation, FlutterFlow Designer, PowerPoint]
+description: >-
+  Turn a FlutterFlow Designer project into a presentation deck. Design 16:9
+  slides, present with presenter view, and import or export PowerPoint files.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 6
-keywords: [slides, presentation, pptx, powerpoint, presenter view, speaker notes, deck]
+keywords:
+  - slides
+  - presentation
+  - pptx
+  - powerpoint
+  - presenter view
+  - speaker notes
+  - deck
 ---
-
 # Slides
 
 **Slides** turns a FlutterFlow Designer project into a presentation deck. Instead of designing phone, tablet, or desktop screens, each frame becomes a 16:9 slide. You get speaker notes, a real present-with-presenter-view mode, and two-way PowerPoint support: import an existing `.pptx` to edit, or export your deck back out to `.pptx`.
@@ -24,9 +35,8 @@ keywords: [slides, presentation, pptx, powerpoint, presenter view, speaker notes
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/kLxWDk3C9ljvrF6gpsDd?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/kLxWDk3C9ljvrF6gpsDd?embed&show_copy_link=true" title="Slides interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -56,9 +66,8 @@ Each slide gets its own **speaker notes** field in the right-hand panel. These n
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/1jvNbr0CcofNvzXvhW5J?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/1jvNbr0CcofNvzXvhW5J?embed&show_copy_link=true" title="Slides interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -94,9 +103,8 @@ You get a two-window setup:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/98HnO7uCcjcrLiHFYqLm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/98HnO7uCcjcrLiHFYqLm?embed&show_copy_link=true" title="Slides interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -132,3 +140,7 @@ You can keep editing slides while presenting, and changes sync live into the pre
 In the left panel, choose **Export to PowerPoint**, or use the **Export presentation (.pptx)** button in the right panel.
 
 The result is a real, editable PowerPoint file: text stays as editable text and shapes stay as shapes (not flattened images) wherever possible. Charts export as native charts; icons that can't be represented natively are rendered as images.
+
+## Related documentation
+
+See [Welcome](/designer) for a related FlutterFlow workflow.

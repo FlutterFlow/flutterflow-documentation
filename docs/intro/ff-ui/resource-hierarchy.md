@@ -1,13 +1,19 @@
 ---
 slug: /flutterflow-ui/resource-hierarchy
 title: Resource Hierarchy Overview
-description: Explore the Resource Hierarchy Overview to understand the correlation between traditional Flutter app components and their equivalents in FlutterFlow.
-tags: [Resource Hierarchy, FlutterFlow, Project Management]
+description: >-
+  Explore the Resource Hierarchy Overview to understand the correlation between
+  traditional Flutter app components and their equivalents in FlutterFlow.
+tags:
+  - FlutterFlow
+  - FlutterFlow UI
 sidebar_position: 5
-keywords: [Resource Hierarchy, FlutterFlow, Project Management, Resource Description]
+keywords:
+  - Resource Hierarchy
+  - FlutterFlow
+  - Project Management
+  - Resource Description
 ---
-
-
 # Resource Hierarchy Overview
 
 This guide aims to help you understand the structure and elements of a typical FlutterFlow project. It will walk you through some important parts of the app, from the overall project down to individual design elements, explaining their purpose and how they relate to traditional Flutter app components.
@@ -26,7 +32,7 @@ The diagram below illustrates how a FlutterFlow app is structured.
 
 ## Flutter to FlutterFlow
 
-If you are coming from Flutter, it is beneficial for you to understand the Flutter to FlutterFlow mapping. The diagram below illustrates the correlation between traditional Flutter app components and their equivalents within FlutterFlow. 
+If you are coming from Flutter, it is beneficial for you to understand the Flutter to FlutterFlow mapping. The diagram below illustrates the correlation between traditional Flutter app components and their equivalents within FlutterFlow.
 
 ![Flutter to FlutterFlow app parts](imgs/flutter-to-flutterflow.avif)
 

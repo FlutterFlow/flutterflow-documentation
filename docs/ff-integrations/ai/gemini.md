@@ -1,13 +1,21 @@
 ---
 slug: /integrations/gemini
 title: Gemini
-description: Learn how to get started with the Gemini action in your FlutterFlow app to generate text, process text-and-image inputs, and count tokens.
-tags: [AI, Gemini, Integration]
+description: >-
+  Learn how to get started with the Gemini action in your FlutterFlow app to
+  generate text, process text-and-image inputs, and count tokens.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Gemini
 sidebar_position: 2
-keywords: [FlutterFlow, Gemini, Text Generation, Token Counting, Integration]
+keywords:
+  - FlutterFlow
+  - Gemini
+  - Text Generation
+  - Token Counting
+  - Integration
 ---
-
-
 # Gemini
 
 With the Gemini action, you can generate text, process text-and-image inputs, and effortlessly count tokens.
@@ -17,8 +25,7 @@ The Gemini action will eventually be deprecated. We recommend transitioning to t
 :::
 
 
-<div class="video-container"><iframe src="https://www.loom.
-com/embed/1e7a383897334f6da96c58639e7abcfc?sid=b8363cff-ccfb-4ade-98fc-22a2a587e68e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe title="Gemini interactive tutorial" src="https://www.loom.com/embed/1e7a383897334f6da96c58639e7abcfc?sid=b8363cff-ccfb-4ade-98fc-22a2a587e68e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 
 
@@ -26,8 +33,8 @@ com/embed/1e7a383897334f6da96c58639e7abcfc?sid=b8363cff-ccfb-4ade-98fc-22a2a587e
 
 Integrating [Gemini AI](https://gemini.google.com/app) into FlutterFlow unlocks Google's advanced AI capabilities right within your app. Follow this guide to integrate Gemini AI:
 
-1. Visit [**Google AI Studio**.](https://aistudio.google.com/) and click on **Get API Key** > 
-   **Create API key**. You can create an API key within a new Google Cloud project by selecting *Create API key in new project*, or choose an existing Google Cloud project. 
+1. Visit [**Google AI Studio**.](https://aistudio.google.com/) and click on **Get API Key** >
+   **Create API key**. You can create an API key within a new Google Cloud project by selecting *Create API key in new project*, or choose an existing Google Cloud project.
 
 2. Once the API key is generated, copy it.
 
@@ -35,12 +42,12 @@ Integrating [Gemini AI](https://gemini.google.com/app) into FlutterFlow unlocks 
 To secure your API keys, refer to the Best Practices guide: [Secure API Keys](../google-cloud/secure-keys.md)
 :::
 
-1. Go back to FlutterFlow and navigate to **Settings and Integrations > Integrations > Gemini**. 
+1. Go back to FlutterFlow and navigate to **Settings and Integrations > Integrations > Gemini**.
 
-2. Toggle on the **Enable Gemini** option and paste the copied **API key** into the designated 
-   field. 
+2. Toggle on the **Enable Gemini** option and paste the copied **API key** into the designated
+   field.
 
-3. Now, you can add [Gemini actions](#gemini-action) at appropriate events 
+3. Now, you can add [Gemini actions](#gemini-action) at appropriate events
 within your app.
 
 With these steps, you’re all set to enhance your FlutterFlow app with powerful AI features.
@@ -54,11 +61,11 @@ To add a Gemini Action, follow these steps:
 
 2. Select **Actions** from the Properties Panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window. Click on the **+ Add Action**.
 
-3. On the right side, search and select the **Gemini** (under *Integrations*) action. 
+3. On the right side, search and select the **Gemini** (under *Integrations*) action.
 
 4. Set the [**Action Type**](#types-of-gemini-action). **Note** that If you set this type to *Text from Image*, you must provide the image as well.
 
-5. Provide the **Text prompt** that will be used to generate the result from the Gemini AI model. For this example, we use this prompt: `When users upload a photo, you analyze the food in the photo and tell if it is healthy to eat`. 
+5. Provide the **Text prompt** that will be used to generate the result from the Gemini AI model. For this example, we use this prompt: `When users upload a photo, you analyze the food in the photo and tell if it is healthy to eat`.
 
 6. Provide the **Action Output Variable Name** where the result of the generation will be stored. Later, you can access this variable from anywhere on the page.
 
@@ -100,7 +107,3 @@ This action enables your app to analyze images and generate descriptive text abo
 	+ **Image Network URL**: You can provide the URL of the image hosted on the internet. If you upload an image to **Firebase** or **Supabase**, you can provide the image via ***Widget State > Uploaded File URL****.*
 	+ **Uploaded Image File**: You can also provide an image file directly [from your device](#) via ***Widget State > Uploaded Local File****.*
 * **Output**: *Action Output Variable Name* - "This is a pipe organ. It is a large musical instrument that is used in churches, concert halls, and other large buildings. The sound of a pipe organ is very powerful and can be used to create a wide variety of music."
-
-
-
- 

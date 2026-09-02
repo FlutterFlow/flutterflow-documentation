@@ -1,9 +1,19 @@
 ---
-keywords: ['run-mode', 'black-screen', 'preview']
+keywords:
+  - run-mode
+  - black-screen
+  - preview
 slug: /troubleshooting/test-mode/black-screen-during-run-mode
 title: Black Screen During Run Mode
+description: >-
+  If your app screen appears blank during Run Mode, follow these steps to
+  resolve the issue: - You have already built and deployed at least one screen
+  in your project.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Black Screen During Preview
 
 If your app screen appears blank during Run Mode, follow these steps to resolve the issue:
@@ -35,8 +45,12 @@ If your app screen appears blank during Run Mode, follow these steps to resolve 
 
     If none of the steps work, submit a bug report using the **Send Feedback** button in FlutterFlow.
 
-    ![](../assets/20250430121528287666.png)
+    ![Black Screen During Run Mode in FlutterFlow](../assets/20250430121528287666.png)
 
 :::tip
 Blank screens are often temporary. Try switching devices or reloading before making major changes to your project.
 :::
+
+## Related documentation
+
+See [Firestore Permission Error in Run Mode](/troubleshooting/test-mode/firestore-permission-error-run-mode) for a related FlutterFlow workflow.

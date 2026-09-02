@@ -1,14 +1,25 @@
 ---
-keywords: ['security', 'error', 'firebase', 'permissions']
+keywords:
+  - security
+  - error
+  - firebase
+  - permissions
 slug: /troubleshooting/firebase/content-manager-firestore-error
 title: Content Manager Firestore Error
+description: >-
+  You may see the following error message when accessing the FlutterFlow Content
+  Management System (CMS) : This error typically occurs when Firebase
+  permissions or authentication...
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Firebase
 ---
-
 # Content Manager Firestore Error
 
 You may see the following error message when accessing the **FlutterFlow Content Management System (CMS)**:
 
-![](../assets/20250430121517855306.png)
+![Content Manager Firestore Error in FlutterFlow](../assets/20250430121517855306.png)
 
 This error typically occurs when Firebase permissions or authentication settings are not properly configured. Follow the steps below to resolve it.
 
@@ -21,7 +32,7 @@ This error typically occurs when Firebase permissions or authentication settings
     5. Go to the **Sign-in method** tab.
     6. Ensure **Email/Password** is listed and marked as **Enabled** ✅.
 
-    ![](../assets/20250430121518159572.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518159572.png)
 
     :::note
     If Email/Password is not enabled, turn it on by clicking the pencil icon and toggling the setting.
@@ -42,7 +53,7 @@ This error typically occurs when Firebase permissions or authentication settings
     2. Navigate to **Project Settings** > **Users & Permissions**.
     3. Check if `firebase@flutterflow.io` has the roles listed above.
 
-    ![](../assets/20250430121518370897.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518370897.png)
 
     :::info
     If these roles are missing, the integration is incomplete. Make sure to add all three roles.
@@ -55,7 +66,7 @@ This error typically occurs when Firebase permissions or authentication settings
     2. Scroll down to the **Firestore Rules** section.
     3. Click **Deploy/Redeploy** to apply your latest rules.
 
-    ![](../assets/20250430121518594245.png)
+    ![Content Manager Firestore Error in FlutterFlow](../assets/20250430121518594245.png)
 
 
 4. **Define Your Firebase Schema**

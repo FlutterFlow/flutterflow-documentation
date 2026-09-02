@@ -1,8 +1,16 @@
 ---
-tags: [Base Elements]
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
 slug: /resources/ui/widgets/text
+title: Text
+description: Text is a fundamental element in any user interface.
+keywords:
+  - Text
+  - Widgets
+  - Ui
 ---
-
 # Text
 
 Text is a fundamental element in any user interface. It conveys information and guides users through interactions. In app development, presenting text effectively can significantly enhance the user experience by making information accessible and interactions intuitive. Two common widgets used for displaying text in FlutterFlow are the Text widget and the RichText widget. Each serves a distinct purpose and offers different capabilities for integrating text into an application.
@@ -13,7 +21,7 @@ The Text widget is used to display a piece of text on the screen. It is one of t
 
 ![text-example.png](../built-in-widgets/imgs/text-example.png)
 
-For example, in this screen, the Text widget is used to present different pieces of information 
+For example, in this screen, the Text widget is used to present different pieces of information
 clearly and effectively. The Text widgets display the product name, "Men's Harrington Jacket," its price, "$148," and a detailed description of the product. These Text widgets are styled differently to emphasize specific pieces of information.
 
 The Text widget can be found under the **Base Elements** tab in the **Widget Palette**. You can either drag it to your desired location on the screen or insert it directly via the widget tree.
@@ -22,11 +30,11 @@ Once the Text widget is selected, the Properties Panel on the right side becomes
 
 ## RichText Widget
 
-The **RichText** widget offers more formatting options than the basic Text widget. It allows you to mix multiple styles within a single text sequence, enabling the creation of stylized textual content. 
+The **RichText** widget offers more formatting options than the basic Text widget. It allows you to mix multiple styles within a single text sequence, enabling the creation of stylized textual content.
 
 This widget uses a tree of **TextSpan** objects to define the rich formatting options, including different fonts, sizes, and colors for various parts of the text. RichText is particularly useful for text-heavy applications that need inline styling and linking, such as in a formatted article or a document viewer.
 
-The RichText widget can be found under the **Base Elements** tab in the **Widget Palette**. You can 
+The RichText widget can be found under the **Base Elements** tab in the **Widget Palette**. You can
 either drag it to your desired location on the screen or insert it directly via the widget tree.
 
 ![richtext-eg.png](../built-in-widgets/imgs/richtext-eg.png)
@@ -35,7 +43,7 @@ When the RichText widget is added to your widget tree, FlutterFlow automatically
 
 Static text entered in a RichTextSpan is translatable and appears in the Languages table. In contrast, text assembled with the [**Combine Text** function](../../../control-flow/functions/utility-functions.md#combine-text) does not appear in the Languages table or **Translate All**.
 
-To modify the RichTextSpan objects, see the quick demo below: 
+To modify the RichTextSpan objects, see the quick demo below:
 
 
 <div style={{
@@ -44,9 +52,8 @@ To modify the RichTextSpan objects, see the quick demo below:
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Jm4t61jo3xd3e12Q5958?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/Jm4t61jo3xd3e12Q5958?embed&show_copy_link=true" title="Text interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -83,7 +90,7 @@ A few things to note:
 
 ## Advanced Properties for Text Widget
 
-- **Max Lines:** This property specifies the maximum number of lines that the text can occupy. If the 
+- **Max Lines:** This property specifies the maximum number of lines that the text can occupy. If the
 content exceeds the set number of lines, it will be truncated or end with an ellipsis, depending on the configuration. This is useful for maintaining a clean and consistent layout where text space is limited.
 
 <div style={{
@@ -91,9 +98,8 @@ content exceeds the set number of lines, it will be truncated or end with an ell
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/EpkK0Vq4HzxDUe9lXoJT?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/EpkK0Vq4HzxDUe9lXoJT?embed&show_copy_link=true" title="Text interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -138,7 +144,7 @@ content exceeds the set number of lines, it will be truncated or end with an ell
   - When the container width is set to `30%`, no height is defined, and `Auto Size` is enabled, the feature has no visible effect because the height constraint is missing.
   - When the container width is set to `70%`, the height is set to `50px`, and `Auto Size` is enabled, the text is resized to the minimum allowed font size to remain within the container.
 
-  ![](../built-in-widgets/imgs/20250430121459696014.png)
+  ![Text in FlutterFlow](../built-in-widgets/imgs/20250430121459696014.png)
 
 :::tip
 Use `Auto Size` with percentage-based dimensions for better responsiveness. For example, set the container width to `30%` and enable `Auto Size` to allow the text size to adjust as the screen size changes.
@@ -154,9 +160,8 @@ The `Auto Size` feature has a minimum font size threshold. If the container beco
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/ZzDQ5rt6AdNbUGlb1oDd?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/ZzDQ5rt6AdNbUGlb1oDd?embed&show_copy_link=true" title="Text interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -226,9 +231,8 @@ You can also add gradient colors from a preset template as shown in the video de
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/z9dSmohqEETCJRCRRQ4U?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/z9dSmohqEETCJRCRRQ4U?embed&show_copy_link=true" title="Text interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -262,7 +266,7 @@ Below are the types of formatting that we support:
 - **Scientific**: Shows numbers in scientific format (e.g., 1e3, 1E6).
 - **Compact**: Shows numbers in compact format (e.g., 2.1K, 2.3M, 5B).
 - **Compact Long**: Shows numbers in compact long format (e.g., 2.1 thousand, 2.3 million, 5 billion).
-- **Custom**: If the given formatting options do not fit your requirement, you can specify a 
+- **Custom**: If the given formatting options do not fit your requirement, you can specify a
   custom format.
 
 
@@ -281,7 +285,7 @@ Use the instructions below to format a number:
    2. If you choose **Custom**:
 
       1. Find the **Custom Format** box, and enter your format. For example, entering `###,###.###` will convert the number `123456.789` into `123,456.789`, and `000.00` will convert the number `12.786` into `012.79`.
-       
+
       2. In the **Locale** input box, enter the locale in which you want to display the number. If you leave this property empty, the locale is automatically set based on the user's location. Learn more about how to format a number [here](https://pub.dev/documentation/intl/latest/intl/NumberFormat-class.html).
 3. To display this number as currency, enable the **Display as Currency** toggle and specify the **Currency Symbol**.
 4. Click **Confirm**.
@@ -291,9 +295,8 @@ Use the instructions below to format a number:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/GeWRQ2ZGo4en9Y9blXvY?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/GeWRQ2ZGo4en9Y9blXvY?embed&show_copy_link=true" title="Text interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

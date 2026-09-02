@@ -1,15 +1,26 @@
 ---
-keywords: ['api', 'encoding', 'charset']
+keywords:
+  - api
+  - encoding
+  - charset
 slug: /troubleshooting/api/api-charset-and-encoding-fix-guide
 title: API Charset and Encoding Fix Guide
+description: >-
+  When working with API calls in FlutterFlow, you might encounter issues where
+  the response returns with strange characters, incorrect formatting, or
+  unreadable content.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - API
 ---
 # API Charset and Encoding Fix Guide
 
 When working with API calls in FlutterFlow, you might encounter issues where the response returns with strange characters, incorrect formatting, or unreadable content. These problems are often caused by improper charset or encoding settings either in the API request or the server response.
 
-This guide shows you how to resolve such issues and ensure your API outputs are correctly displayed in your FlutterFlow project. 
+This guide shows you how to resolve such issues and ensure your API outputs are correctly displayed in your FlutterFlow project.
 
-Follow the steps below: 
+Follow the steps below:
 
 1. **Set Proper Request Headers**
 
@@ -53,3 +64,7 @@ These simple steps will help you get accurate and readable data from your APIs, 
 :::
 
 If you still face challenges, don't hesitate to reach out to our support team through Live chat or by emailing support@flutterflow.io
+
+## Related documentation
+
+See [Client-Server Errors during the API call](/troubleshooting/api/client-server-errors-during-the-api-call) for a related FlutterFlow workflow.

@@ -2,11 +2,15 @@
 slug: refund-policy
 title: Refund Policy
 description: Learn more about the refund policy of FlutterFlow marketplace.
-tags: [MarketPlace, Refund Policy]
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 2
-keywords: [FlutterFlow, MarketPlace, Refund Policy]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Refund Policy
 ---
-
 # Refund Policy
 
 :::note

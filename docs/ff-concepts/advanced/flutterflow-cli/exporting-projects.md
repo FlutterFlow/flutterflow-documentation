@@ -1,13 +1,21 @@
 ---
 slug: /flutterflow-cli/exporting
 title: Exporting Projects
-description: Learn how to download and manage your FlutterFlow projects locally using the FlutterFlow CLI.
-tags: [CLI, Collaboration, FlutterFlow]
+description: >-
+  Learn how Exporting Projects is represented in FlutterFlow generated code and
+  where it fits in an exported app.
+tags:
+  - FlutterFlow
+  - CLI
+  - AI
 sidebar_position: 2
-keywords: [CLI, Collaboration, FlutterFlow, Projects, Local Management]
+keywords:
+  - CLI
+  - Collaboration
+  - FlutterFlow
+  - Projects
+  - Local Management
 ---
-
-
 # Exporting Projects
 Follow the steps below to export your project.
 
@@ -17,9 +25,8 @@ Follow the steps below to export your project.
     height: 0,
     width: '100%'
 }}>
-    <iframe 
-        src="https://demo.arcade.software/Rc3s1P8DFypUKoPzVITL?embed&show_copy_link=true"
-        title="Sharing a Project with a User"
+    <iframe
+        src="https://demo.arcade.software/Rc3s1P8DFypUKoPzVITL?embed&show_copy_link=true" title="Exporting Projects interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -42,7 +49,7 @@ Follow the steps below to export your project.
 ### Command Details
 
 - If you wish to exclude assets from the download, use `-no-include-assets` in your command. This will download the project code without the assets. For example: `flutterflow export-code --project your_project_id --dest path_to_output_folde --no-include-assets --token your_token`
-    
+
 - You can download code from a specific branch by switching to that branch and using the toolbar command, or by including the `-branch-name` or `-b` flag in your command and specifying the branch you wish to download from.
 
 #### All supported command options
@@ -63,11 +70,11 @@ Follow the steps below to export your project.
 If you are updating an existing project and do not want certain files to be overwritten during a code export, you can create a `.flutterflowignore` file in the root of your project directory. This file should contain a list of files to be ignored using globbing syntax.
 
 #### Example:
-If your project is located at:  
+If your project is located at:
 ```
 /Users/yourname/projects/my_flutterflow_app/
 ```
-Then, place the `.flutterflowignore` file in:  
+Then, place the `.flutterflowignore` file in:
 ```
 /Users/yourname/projects/.flutterflowignore
 ```

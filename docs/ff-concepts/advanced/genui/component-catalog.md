@@ -1,12 +1,24 @@
 ---
 slug: /concepts/component-catalog
 title: Component Catalog
-description: Configure the FlutterFlow components that GenUI is allowed to render inside the chat surface.
-tags: [AI, Chat, Components, Widgets]
+description: >-
+  Configure the FlutterFlow components that GenUI is allowed to render inside
+  the chat surface.
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 2
-keywords: [FlutterFlow, Components, GenUI, Conversational AI, Chat widget, AI agent, A2UI protocol, Component rendering, Tool calling]
+keywords:
+  - FlutterFlow
+  - Components
+  - GenUI
+  - Conversational AI
+  - Chat widget
+  - AI agent
+  - A2UI protocol
+  - Component rendering
+  - Tool calling
 ---
-
 # Component Catalog
 
 The **Component Catalog** is the list of FlutterFlow components that GenUI can render inline in the conversation. Without a catalog, GenUI can still chat and call tools, but it has no specific UI to render.
@@ -135,3 +147,7 @@ Weak:
 #### Avoid ambiguous overlap
 
 If two components do roughly the same thing, the model has to guess. Either merge them, rename them more clearly, or narrow their intended use.
+
+## Related documentation
+
+See [App Event Integration](/concepts/app-event-integration) for a related FlutterFlow workflow.

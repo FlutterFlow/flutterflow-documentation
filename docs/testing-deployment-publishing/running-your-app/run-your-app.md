@@ -1,13 +1,19 @@
 ---
 slug: /testing/run-your-app
 title: Run your App
-description: Discover the essentials of running and testing your FlutterFlow app with this comprehensive guide.
-tags: [Run, Testing, FlutterFlow]
+description: >-
+  Discover the essentials of running and testing your FlutterFlow app with this
+  comprehensive guide.
+tags:
+  - FlutterFlow
+  - Testing
 sidebar_position: 0
-keywords: [Run, Testing, FlutterFlow]
+keywords:
+  - Run
+  - Testing
+  - FlutterFlow
 ---
-
-Running and testing your app is a crucial part of the app development process. This page provides a comprehensive guide on how to run and test your FlutterFlow app. It covers various modes of testing, including [Preview](#preview-mode), [Test](#test-mode), [Run](#run-mode), and [Local Run](#local-run) modes, with detailed steps and indications of when to use each mode. 
+Running and testing your app is a crucial part of the app development process. This page provides a comprehensive guide on how to run and test your FlutterFlow app. It covers various modes of testing, including [Preview](#preview-mode), [Test](#test-mode), [Run](#run-mode), and [Local Run](#local-run) modes, with detailed steps and indications of when to use each mode.
 
 :::info
 You can access various modes of running your app from the [**Toolbar**](../../intro/ff-ui/toolbar.md).
@@ -63,9 +69,8 @@ To run your app in Test Mode:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/95jxxYi1bzeY27KUek50?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/95jxxYi1bzeY27KUek50?embed&show_copy_link=true" title="Run your App interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -107,9 +112,8 @@ To open the Floating Window, start a Test Mode session and click the **Floating 
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/LQBn8B4PGst1MKD6QVIm?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/LQBn8B4PGst1MKD6QVIm?embed&show_copy_link=true" title="Run your App interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -132,7 +136,7 @@ To open the Floating Window, start a Test Mode session and click the **Floating 
 
 Inspect Mode helps you quickly locate widgets in the FlutterFlow builder while testing your app. This is especially useful when working with large pages or deeply nested layouts. Instead of manually searching through the Widget Tree to find a specific button, image, text, or container, you can simply click it in the running app and jump directly to its location in the builder.
 
-To use Inspect Mode, click the **Inspect Mode** icon in the Test Mode toolbar. Once enabled, select any widget in the running app preview. FlutterFlow will automatically navigate to and highlight the corresponding widget in the builder, allowing you to inspect or edit it immediately. 
+To use Inspect Mode, click the **Inspect Mode** icon in the Test Mode toolbar. Once enabled, select any widget in the running app preview. FlutterFlow will automatically navigate to and highlight the corresponding widget in the builder, allowing you to inspect or edit it immediately.
 
 When you're finished, click the Inspect Mode icon again to exit inspection mode and continue interacting with the app normally.
 

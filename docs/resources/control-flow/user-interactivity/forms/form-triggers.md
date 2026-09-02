@@ -1,12 +1,27 @@
 ---
 slug: /resources/forms/form-triggers
 title: Form Triggers
-tags: [Form, Actions, Triggers]
-keywords: [FlutterFlow, Form Triggers, User Interactivity, Dropdown, Slider, Toggle, TextField, On Selected, On Toggled, On Change, On Focus Change]
-description: Learn how to use Form Triggers in FlutterFlow to create dynamic, interactive user experiences by responding to user input on widgets like dropdowns, sliders, toggles, and text fields.
+tags:
+  - FlutterFlow
+  - Resources
+  - Forms
+keywords:
+  - FlutterFlow
+  - Form Triggers
+  - User Interactivity
+  - Dropdown
+  - Slider
+  - Toggle
+  - TextField
+  - On Selected
+  - On Toggled
+  - On Change
+  - On Focus Change
+description: >-
+  Form Triggers in FlutterFlow allow you to respond dynamically to user input on
+  widgets like dropdowns, sliders, toggles, and text fields.
 sidebar_position: 4
 ---
-
 # Form Triggers
 
 **Form Triggers** in FlutterFlow allow you to respond dynamically to user input on widgets like dropdowns, sliders, toggles, and text fields. Whether it’s selecting an option, toggling a switch, or typing in a field, these triggers help you create interactive, responsive experiences by executing actions based on user interaction.

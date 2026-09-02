@@ -1,12 +1,19 @@
 ---
 slug: submission-criteria
 title: Submission Criteria
-description: Learn about marketplace item submission criteria.
-tags: [MarketPlace, Creators Hub]
+description: >-
+  Item Submission Standards Below, you'll find the criteria our Submission
+  Review Team uses to review items submitted to FlutterFlow Marketplace.
+tags:
+  - FlutterFlow
+  - Marketplace
 sidebar_position: 1
-keywords: [FlutterFlow, MarketPlace, Creators Hub, Item Submission Criteria]
+keywords:
+  - FlutterFlow
+  - MarketPlace
+  - Creators Hub
+  - Item Submission Criteria
 ---
-
 # Item Submission Criteria
 
 ## Item Submission Standards
@@ -380,7 +387,7 @@ Stay tuned for an upcoming "style guide" we're publishing that goes into deeper 
     - **Leverage Components:** Create reusable components for elements that repeat throughout your project (e.g., product cards, list items, headers, footers).
     - **Utilize Parameters:** Pass data and customize component instances using parameters instead of duplicating and hardcoding values.
     - **Review for Redundancies:** Before submitting, carefully examine your project for any unnecessarily duplicated pages, widgets, or action chains that could be consolidated or streamlined.
-  
+
 #### 5.15 Library Values Implementation (Libraries Only)
 
 - **Criteria:** Libraries must use [Library Values](../../resources/projects/libraries.md) for sensitive keys and customizable elements that users need to configure.
@@ -418,7 +425,7 @@ A successful Marketplace item goes beyond just a functional app—it provides re
     - **Justify Your Pricing**: Make sure the pricing of your item reflects its true value and stands in fair comparison to similar offerings. Ensure it offers enough depth and uniqueness to warrant the minimum price point.
     - **For Paid Libraries**: Libraries should excel in at least one of these areas:
         - 🧘 Simplifying technical complexity (ease)
-        - ⚡️ Enabling quick and seamless integrations (speed)  
+        - ⚡️ Enabling quick and seamless integrations (speed)
         - 🎛️ Offering diverse reusable components and features (quantity)
         - 🛠️ Providing robust, reliable functionality (quality)
         - 🙋‍♂️ Addressing specific, high-demand use cases with thoughtful solutions (relevance)

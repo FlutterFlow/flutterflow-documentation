@@ -1,12 +1,22 @@
 ---
 slug: general-settings
 title: General Settings
-tags: [Project, Assets]
-keywords: [project name, package name, asset, download settings, assets, splash screen, launcher icon, adaptive icon]
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - project name
+  - package name
+  - asset
+  - download settings
+  - assets
+  - splash screen
+  - launcher icon
+  - adaptive icon
 description: Learn how to configure general settings for your FlutterFlow app.
 sidebar_position: 0
 ---
-
 # General Settings
 General Settings serve as the control center for configuring essential aspects of your app.
 
@@ -127,9 +137,9 @@ To add the app launcher icon:
 3. Under the **Launcher Icon** section, click **Upload Image**.
 4. Use the **Unset** dropdown menu to select from images already uploaded to Project Media/Assets.
 5. [Download the project](../../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md) and run the following command in your terminal to generate the launcher icon:
-    
+
     `flutter pub run flutter_launcher_icons:main`
-    
+
 6. [Run your app](../../../testing-deployment-publishing/running-your-app/run-your-app.md) on a real device or emulator to see the app launcher icon.
 
 ### Android Adaptive Icon
@@ -146,9 +156,9 @@ Here are the steps to add adaptive icons:
     1. Upload the **Foreground Icon**. If you use the online tool, you'll find it inside the `IconKitchen-Output > android > res > mipmap-xxxhdpi > ic_launcher_foreground.png`.
     2. For **Background Type**, you can either set the **Color** or **Image**. Use a color that aligns with your app's branding for a cohesive look.
 3. [Download the project](../../../ff-concepts/advanced/flutterflow-cli/exporting-projects.md) and run the following command in your terminal to generate the launcher icon:
-    
+
     `flutter pub run flutter_launcher_icons:main`
-    
+
 4. [Run your app](../../../testing-deployment-publishing/running-your-app/run-your-app.md) on a real device or emulator to see the app launcher icon.
 
 ![adaptive-icons](imgs/adaptive-icons.avif)
@@ -160,8 +170,6 @@ See the following resources for more information on Android adaptive icons.
 #### Create Adaptive Icon
 
 - [Create app icons in Android Studio](https://developer.android.com/studio/write/create-app-icons#create-adaptive)
-- [Figma template](https://material.uplabs.com/posts/adaptive-icon-sticker-sheet) (requires login)
-- [Affinity Designer template](https://cyrilmottier.com/2017/07/06/adaptive-icon-template/)
 - [Bjango templates](https://github.com/bjango/Bjango-Templates) include adaptive icons
 - [Adobe XD template](https://github.com/faizmalkani/adaptive-icon-template-xd)
 

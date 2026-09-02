@@ -2,9 +2,18 @@
 title: Auth Methods
 sidebar_position: 1
 slug: /integrations/authentication-methods
-
+description: >-
+  Authentication enables users to create accounts and log into your app,
+  establishing a secure, verified connection.
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication Methods
+keywords:
+  - Auth Methods
+  - Authentication Methods
+  - Integrations
 ---
-
 # Authentication Methods Overview
 
 Authentication enables users to create accounts and log into your app, establishing a secure,
@@ -69,6 +78,10 @@ transition.
 
 Each authentication method aims to balance user convenience with high security,
 ensuring that personal and sensitive data remains protected while providing a
-seamless user experience. 
+seamless user experience.
 
 ![anon-user.png](imgs/anon-user.png)
+
+## Related documentation
+
+See [Auth Services](/integrations/authentication-types) for a related FlutterFlow workflow.

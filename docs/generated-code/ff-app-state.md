@@ -1,8 +1,18 @@
 ---
 title: FFAppState
 sidebar_position: 4
+description: >-
+  Learn how FFAppState is represented in FlutterFlow generated code and where it
+  fits in an exported app.
+last_verified: 2026-09-01
+tags:
+  - FlutterFlow
+  - Generated Code
+keywords:
+  - FFAppState
+  - Ff App State
+  - Generated Code
 ---
-
 # FFAppState
 
 :::info[Prerequisites]
@@ -45,20 +55,20 @@ class FFAppState extends ChangeNotifier {
 }
 ```
 
-The `_enableDarkMode` is an App State variable created by developer that creates its own corresponding getter and setter. 
+The `_enableDarkMode` is an App State variable created by developer that creates its own corresponding getter and setter.
 
 ## Rebuild on Updating AppState
 When updating an `AppState` variable from the Action Flow Editor, you will be presented with several **[update type](../resources/data-representation/app-state.md#update-type)** options such as **Rebuild All Pages**, **Rebuild Current Page**, and **No Rebuild** in the Action Settings. Let's see how the generated code changes when these options are selected.
 
 ### Rebuild Current Page
-When a developer chooses to update App State with the update type set to **Rebuild Current Page**, the corresponding `setter` is called. Immediately after, `setState(() {});` is invoked, which updates only the current page. 
+When a developer chooses to update App State with the update type set to **Rebuild Current Page**, the corresponding setter is called. Immediately after, `safeSetState(() {});` is invoked, which updates only the current page when its State object is still mounted.
 
 Here's an example of the generated code when we update the App State `enableDarkMode` in the `onInitialization` action trigger of the `ProductListPage`.
 
 ```js
 SchedulerBinding.instance.addPostFrameCallback((_) async {
   FFAppState().enableDarkMode = !(FFAppState().enableDarkMode ?? true);
-  setState(() {});
+  safeSetState(() {});
 });
 ```
 
@@ -97,7 +107,7 @@ Widget build(BuildContext context) {
 By using `context.watch<FFAppState>()`, the widget effectively subscribes to any changes in the `FFAppState` class. Whenever there's a change in the `FFAppState` object, this widget automatically rebuilds to reflect those changes. This ensures that your widget always displays the most current data and state of the app, maintaining an up-to-date and responsive user interface.
 
 ## Managing AppState\<List\>
-When you add an App State variable of `List` type in FlutterFlow, several utility functions are automatically generated to help you manage this list. These functions include a getter, a setter, and methods for adding, removing, and updating items in the list. This setup ensures that you can easily interact with the list while keeping the app state consistent and responsive. Below is an explanation of these generated functions using the specific example of a LatLngList.
+When you add an App State variable of `List` type in FlutterFlow, utility methods are generated for adding, removing, inserting, and updating items. The following `LoggableList` example reflects debug-enabled generated code; production exports may use a regular `List` while retaining the same public state operations.
 
 ```js
 

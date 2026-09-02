@@ -1,14 +1,23 @@
 ---
 slug: /designer
 title: Welcome
-description: Discover FlutterFlow Designer—the fastest way to design apps. Explore its key features, understand how it works, and start designing your first app with ease.
-tags: [FlutterFlow Designer, FlutterFlow, Design]
+description: >-
+  Discover FlutterFlow Designer—the fastest way to design apps. Explore its key
+  features, understand how it works, and start designing your first app with
+  ease.
+tags:
+  - FlutterFlow
+  - Designer
+  - AI
 sidebar_position: 0
-keywords: [flutterflow designer, ai app design, screen storyboard generation, ui design tool]
+keywords:
+  - flutterflow designer
+  - ai app design
+  - screen storyboard generation
+  - ui design tool
 hide_title: true
 hide_table_of_contents: false
 ---
-
 import InfoCard from '@site/src/components/InfoCard';
 import InfoCards from '@site/src/components/InfoCards';
 
@@ -127,3 +136,7 @@ import InfoCards from '@site/src/components/InfoCards';
 <p></p>
 
 FlutterFlow Designer empowers both non-technical creators and development teams to move faster during early UX and UI exploration, then hand off straight to code.
+
+## Related documentation
+
+See [Slides](/designer/slides) for a related FlutterFlow workflow.

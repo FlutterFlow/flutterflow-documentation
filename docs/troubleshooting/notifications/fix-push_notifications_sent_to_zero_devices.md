@@ -1,9 +1,19 @@
 ---
-keywords: ['push notifications', 'firebase', 'cloud functions', 'troubleshooting']
+keywords:
+  - push notifications
+  - firebase
+  - cloud functions
+  - troubleshooting
 slug: /troubleshooting/notifications/fix-push-notifications-sent-to-zero-devices
 title: Fix Push Notifications Sent to Zero Devices
+description: >-
+  Push notifications allow apps to send updates, alerts, and messages directly
+  to users.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Notifications
 ---
-
 # Fix Push Notifications Sent to Zero Devices
 
 Push notifications allow apps to send updates, alerts, and messages directly to users. In some cases, after triggering a push notification, FlutterFlow displays the following message:
@@ -29,18 +39,18 @@ The following steps below outline how to troubleshoot and resolve this issue:
       - Ensure that Firebase Functions are enabled in the Firebase Console.
       - Confirm that your project is on the Blaze Plan.
 
-      ![](../assets/20250430121213011292.png)
+      ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121213011292.png)
 
 
   2. **Delete and Redeploy Firebase Cloud Functions**
 
       - Manually delete the Cloud Functions related to push notifications from Firebase.
 
-        ![](../assets/20250430121213284704.png)
+        ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121213284704.png)
 
       - After deletion, redeploy Push Notifications from FlutterFlow:
 
-        ![](../assets/20250430121213612267.png)
+        ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121213612267.png)
 
   3. **Verify Server Region Configuration**
 
@@ -50,19 +60,19 @@ The following steps below outline how to troubleshoot and resolve this issue:
         In FlutterFlow:
           Navigate to **Settings > Firebase > Advanced Settings** and set the correct region.
 
-          ![](../assets/20250430121214190877.png)
+          ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121214190877.png)
 
         In Firebase:
           Verify that Cloud Functions are deployed to the same region.
 
-          ![](../assets/20250430121214486513.png)
+          ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121214486513.png)
 
   4. **Check FCM API Settings in Google Cloud Console**
 
       - Open the **[Google Cloud Console](https://console.cloud.google.com/)**.
       - Search for `FCM API` and ensure it is enabled.
 
-        ![](../assets/20250430121214790195.png)
+        ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121214790195.png)
 
       - Make sure that a valid server key is available in Firebase Console. If missing, create one through Google Cloud Console.
 
@@ -80,7 +90,7 @@ The following steps below outline how to troubleshoot and resolve this issue:
         - Open **Project Settings** via the gear icon (⚙️).
         - Select **Users & Permissions**.
 
-          ![](../assets/20250430121215127010.png)
+          ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121215127010.png)
 
       - Step 3: Verify Existing Permissions
 
@@ -90,7 +100,7 @@ The following steps below outline how to troubleshoot and resolve this issue:
           - `Cloud Functions Admin`
           - `Service Account User`
 
-          ![](../assets/20250430121215442199.png)
+          ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121215442199.png)
 
       - Step 4: Add Missing Permissions
 
@@ -102,7 +112,7 @@ The following steps below outline how to troubleshoot and resolve this issue:
             - `Cloud Functions Admin`
             - `Service Account User`
 
-        ![](../assets/20250430121215729191.png)
+        ![Fix Push Notifications Sent to Zero Devices in FlutterFlow](../assets/20250430121215729191.png)
 
       - Step 5: Verify All Permissions Are Applied
 
@@ -110,3 +120,6 @@ The following steps below outline how to troubleshoot and resolve this issue:
 
 Following these steps should resolve most push notification delivery issues.
 
+## Related documentation
+
+See [FCM Token Generation Troubleshooting](/troubleshooting/notifications/fcm-token-generation-troubleshooting) for a related FlutterFlow workflow.

@@ -1,9 +1,16 @@
 ---
-keywords: ['debug', 'android', 'release']
+keywords:
+  - debug
+  - android
+  - release
 slug: /troubleshooting/google-play-store-deployment/signed-in-debug-mode-error
 title: Signed in Debug Mode Error
+description: '- Generated an APK or Android App Bundle via FlutterFlow → Build → Android .'
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Signed in Debug Mode Error
 
 :::info[Prerequisites]
@@ -28,3 +35,7 @@ To fix this, update the `build.gradle` file to use the release signing configura
 3. Replace the `debug` keyword with `release` and save the file.
 
 If the issue persists, contact FlutterFlow Support at support@flutterflow.io.
+
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

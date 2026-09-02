@@ -1,9 +1,18 @@
 ---
-keywords: ['firebase', 'configuration', 'gray-screen']
+keywords:
+  - firebase
+  - configuration
+  - gray-screen
 slug: /troubleshooting/test-mode/gray-screen-run-mode
 title: Gray Screen in Run Mode
+description: >-
+  Seeing a gray screen in Run Mode usually points to a configuration issue in
+  your Firebase or project settings.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Test Mode
 ---
-
 # Gray Screen in Run Mode
 
 Seeing a gray screen in Run Mode usually points to a configuration issue in your Firebase or project settings. Follow these steps to diagnose and resolve the issue.
@@ -28,7 +37,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
         3. Navigate to **Users and permissions** → **Advanced permissions**.
         4. Locate firebase@flutterflow.io and ensure it has the roles listed above.
 
-            ![](../assets/20250430121529462395.png)
+            ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121529462395.png)
 
         If missing, click the pencil icon and assign the roles.
 
@@ -38,7 +47,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
     2. Click **Regenerate Config Files**.
     3. In the popup, click **Generate Files**.
 
-        ![](../assets/20250430121530070855.png)
+        ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121530070855.png)
 
         :::tip
         You must regenerate config files if you change your project name in FlutterFlow or Firebase.
@@ -50,7 +59,7 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
     2. Scroll to **Firestore Rules** and click **Deploy**.
     3. Confirm by selecting **Deploy Now** in the popup.
 
-    ![](../assets/20250430121530401837.jpg)
+    ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121530401837.jpg)
 
     A green checkmark indicates success.
 
@@ -59,23 +68,23 @@ Seeing a gray screen in Run Mode usually points to a configuration issue in your
     1. In **Firestore** → **Settings**, scroll to **Firebase Schema Validation**.
     2. Click **Validate**.
 
-        ![](../assets/20250430121530999303.jpg)
+        ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121530999303.jpg)
 
         If the schema is valid, you’ll see a success message. If not, review the identified issues.
 
-        ![](../assets/20250430121531448037.png)
+        ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121531448037.png)
 
 5. **Ensure Collections Have Data**
 
     An empty Firestore collection can result in a gray screen. Visit the Firebase Console → **Firestore Database** to confirm your collections contain documents.
 
-    ![](../assets/20250430121531723554.png)
+    ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121531723554.png)
 
 6. **Verify Custom Widget Compatibility**
 
     If your app uses a custom widget, make sure its package supports web. On **[pub.dev](https://pub.dev)**, check that **WEB** is listed under platforms.
 
-    ![](../assets/20250430121531973906.png)
+    ![Gray Screen in Run Mode in FlutterFlow](../assets/20250430121531973906.png)
 
     If not, choose an alternative package.
 

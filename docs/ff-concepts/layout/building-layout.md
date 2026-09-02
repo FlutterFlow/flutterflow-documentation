@@ -2,17 +2,21 @@
 slug: /concepts/layouts
 title: Building Layout
 description: Learn how to build layout in your FlutterFlow app.
-tags: [Building Layout, Concepts]
+tags:
+  - FlutterFlow
+  - Concepts
 sidebar_position: 1
-keywords: [FlutterFlow, Building Layout, Concepts]
+keywords:
+  - FlutterFlow
+  - Building Layout
+  - Concepts
 ---
-
 # Building Layout
 
 In FlutterFlow, you build a page layout using Widgets. **Widgets**, such as [Text](../../resources/ui/widgets/basic-widgets/text.md), [Buttons](../../resources/ui/widgets/basic-widgets/button.md), [Images](../../resources/ui/widgets/basic-widgets/image.md), and [Icons](../../resources/ui/widgets/basic-widgets/icons.md), are visible on the screen. Others, like [Containers](../../resources/ui/widgets/basic-widgets/container.md), Rows, Columns, and Stacks, are not directly visible but help arrange and position the visible elements on the page.
 
-These widgets are categorized into four main types: [Layout Elements](/tags/layout-elements), [Base Elements](/tags/base-elements), 
-[Page Elements](../../resources/ui/pages/page-elements.md), and [Form Elements](/tags/form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
+These widgets are categorized into four main types: [Layout Elements](/resources/ui/widgets#layout-elements), [Base Elements](/resources/ui/widgets#base-elements),
+[Page Elements](../../resources/ui/pages/page-elements.md), and [Form Elements](/resources/ui/widgets#form-elements). To build a page, you combine different widgets from these categories to get the desired look and feel of your app.
 
 ## Understanding Layout Concept
 
@@ -70,9 +74,8 @@ The top section includes the Image and IconButton widgets. To place the IconButt
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/a4smfd758Oe1RLVUp24V?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/a4smfd758Oe1RLVUp24V?embed&show_copy_link=true" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -100,9 +103,8 @@ The info section consists of a few Text widgets inside the Column.
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/G3Z0YSwwQbJgaeZ1qEGL?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/G3Z0YSwwQbJgaeZ1qEGL?embed&show_copy_link=true" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -130,9 +132,8 @@ The review section consists of multiple different widgets. First, add a Column t
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/q50gJ2Unh0gJ0CGigzDM?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/q50gJ2Unh0gJ0CGigzDM?embed&show_copy_link=true" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -172,9 +173,8 @@ To learn more about building layout, watch our videos:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/vQ4dAa8swzU"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/vQ4dAa8swzU" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -198,9 +198,8 @@ To learn more about building layout, watch our videos:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/glit6YCj0B0"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/glit6YCj0B0" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -224,9 +223,8 @@ To learn more about building layout, watch our videos:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://www.youtube.com/embed/8O4mQKxPn9c"
-        title=""
+    <iframe
+        src="https://www.youtube.com/embed/8O4mQKxPn9c" title="Building Layout interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

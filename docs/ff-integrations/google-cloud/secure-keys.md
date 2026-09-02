@@ -1,12 +1,24 @@
 ---
 slug: /best-practices/secure-api-keys
 title: Secure API Keys
-description: Learn best practices for securing API keys in your FlutterFlow app, including key restrictions, geographical restrictions, IP address binding, and service-specific limitations.
-tags: [API Keys, Security, Best Practices, Google Cloud]
+description: >-
+  Learn best practices for securing API keys in your FlutterFlow app, including
+  key restrictions, geographical restrictions, IP address binding, and
+  service-specific limitations.
+tags:
+  - FlutterFlow
+  - Best Practices
 sidebar_position: 1
-keywords: [FlutterFlow, API Keys, Security, Best Practices, Google Cloud]
+keywords:
+  - FlutterFlow
+  - API Keys
+  - Security
+  - Best Practices
+  - Google Cloud
+  - restrict a Google Cloud API key used by FlutterFlow
+ai_queries:
+  - restrict a Google Cloud API key used by FlutterFlow
 ---
-
 # Best Practices: Secure API Keys
 
 Google Cloud API key restriction is essential for managing access and enhancing security when
@@ -54,7 +66,7 @@ Follow the steps below to enable the iOS key exclusively for iOS apps with a uni
     height: 0,
     width: '100%'
 }}>
-    <iframe 
+    <iframe
         src="https://demo.arcade.software/givOcppDSZHXzWJDloWj?embed&show_copy_link=true"
         title="Restrict API Keys"
         style={{

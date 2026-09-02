@@ -1,9 +1,19 @@
 ---
-keywords: ['firebase', 'web push', 'notifications', 'custom actions']
+keywords:
+  - firebase
+  - web push
+  - notifications
+  - custom actions
 slug: /troubleshooting/notifications/firebase-push-notifications-on-web
 title: Firebase Push Notifications on Web
+description: >-
+  FlutterFlow currently does not support sending Firebase push notifications on
+  web apps natively.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Notifications
 ---
-
 # Firebase Push Notifications on Web
 
 FlutterFlow currently does not support sending Firebase push notifications on web apps natively. However, Firebase itself supports this capability. This guide outlines alternative approaches to enable Firebase push notifications on web projects built with FlutterFlow.
@@ -34,4 +44,6 @@ There are two primary methods to implement Firebase web push notifications in Fl
 - FlutterFlow may add native support for web push notifications in future updates as the platform evolves.
 :::
 
+## Related documentation
 
+See [FCM Token Generation Troubleshooting](/troubleshooting/notifications/fcm-token-generation-troubleshooting) for a related FlutterFlow workflow.

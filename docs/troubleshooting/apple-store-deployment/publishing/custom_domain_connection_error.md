@@ -1,14 +1,24 @@
 ---
-keywords: ['configuration', 'connect', 'domain']
+keywords:
+  - configuration
+  - connect
+  - domain
 slug: /troubleshooting/apple-store-deployment-issues/custom-domain-connection-error
 title: Custom Domain Connection Error
+description: >-
+  If you encounter the error shown below after clicking Connect , follow these
+  steps to resolve it: - Access to your domain registrar or DNS provider
+  dashboard.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Apple Store Deployment Issues
 ---
-
 # Custom Domain Connection Error
 
 If you encounter the error shown below after clicking **Connect**, follow these steps to resolve it:
 
-![](../../assets/20250430121243410633.png)
+![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243410633.png)
 
 :::info[Prerequisites]
 - Access to your domain registrar or DNS provider dashboard.
@@ -26,7 +36,7 @@ If you encounter the error shown below after clicking **Connect**, follow these 
         For A records, if your DNS provider requires a name, you can use `"@"`. When you see an empty value, it typically refers to `"@"`.
         :::
 
-        ![](../../assets/20250430121243684493.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243684493.png)
 
 2. **Check for Conflicting Records**
 
@@ -40,8 +50,12 @@ If you encounter the error shown below after clicking **Connect**, follow these 
 
         Below are examples of correct configurations in FlutterFlow and your DNS provider:
 
-        ![](../../assets/20250430121243982678.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121243982678.png)
 
-        ![](../../assets/20250430121244255037.png)
+        ![Custom Domain Connection Error in FlutterFlow](../../assets/20250430121244255037.png)
 
         By following these steps, you can ensure your custom domain is connected correctly.
+
+## Related documentation
+
+See [Custom Domain Connection Issues](/troubleshooting/apple-store-deployment-issues/custom-domain-connection-issues) for a related FlutterFlow workflow.

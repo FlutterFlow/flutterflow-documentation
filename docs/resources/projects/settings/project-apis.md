@@ -1,9 +1,18 @@
 ---
 slug: project-apis
 title: Project APIs
-tags: [APIs, Projects]
-keywords: [projects, apis, refactor code]
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - projects
+  - apis
+  - refactor code
 sidebar_position: 5
+description: >-
+  The FlutterFlow Project APIs allow you to programmatically read, write, and
+  validate YAML configuration files through REST endpoints.
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -91,7 +100,7 @@ https://api-enterprise-europe.flutterflow.io/v2/
 ```
 </TabItem>
 </Tabs>
-   
+
 ## Authentication
 
 All API endpoints require authentication using a Bearer token. You'll need to include your FlutterFlow API token in the Authorization header of each request. See [how to get the API Token](../../../accounts-billing/account-management.md#how-do-i-generate-an-api-token).
@@ -116,7 +125,7 @@ Below is a list of available API endpoints with their methods and usage descript
 
 Before you read or update project files, you need to know what YAML files are available. This endpoint returns a full list of file names associated with your FlutterFlow project.
 
-#### Endpoint 
+#### Endpoint
 `GET /listPartitionedFileNames`
 
 #### Query Parameters
@@ -129,7 +138,7 @@ Before you read or update project files, you need to know what YAML files are av
   "reason":null,
   "value":{
     "versionInfo": {
-      "partitionerVersion": 6, 
+      "partitionerVersion": 6,
       "projectSchemaFingerprint": "abc123"
     },
     "fileNames": [
@@ -261,12 +270,12 @@ Returns a zip file encoded as a base64 string. You will need to manually decode 
 
 #### Example Usage
 ```jsx
-# Export all YAML files
+## Export all YAML files
 curl -X GET \
   'https://api.flutterflow.io/v2/projectYamls?projectId=your-project-id' \
   -H 'Authorization: Bearer YOUR_API_TOKEN'
 
-# Export specific file
+## Export specific file
 curl -X GET \
   'https://api.flutterflow.io/v2/projectYamls?projectId=your-project-id&fileName=ad-mob' \
   -H 'Authorization: Bearer YOUR_API_TOKEN'
@@ -292,7 +301,7 @@ You must validate the YAML content before applying changes to ensure it's proper
 
 - In the `fileContent` object, you must provide the **entire content** of the file.
 - The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for new lines and indentation. For example, in the following `fileContent` object, you see the actual multiline YAML content, which is not allowed ❌.
-    
+
     ```jsx
     {
       "projectId": "ecommerce-flow-app-ie7nl6",
@@ -308,7 +317,7 @@ You must validate the YAML content before applying changes to ensure it's proper
         persisted: false"
     }
     ```
-    
+
   Now, here’s how the YAML content should be passed (i.e., as single line string ✅).
 
   ```jsx
@@ -347,7 +356,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
     "projectId": "your-project-id",
-    "fileKey": "ad-mob", 
+    "fileKey": "ad-mob",
     "fileContent": "showTestAds: false"
   }'
 ```
@@ -372,7 +381,7 @@ This endpoint allows you to overwrite existing files in your FlutterFlow project
 :::info
 - In the `fileKeyToContent` object, you must provide the **entire content** of the file.
 - The YAML content must be passed as a **single-line string** with correct formatting and appropriate escaping for newlines and indentation. For example, in the following `fileKeyToContent` object, you see the actual multiline YAML content, which is not allowed ❌.
-    
+
     ```jsx
     {
       "projectId": "ecommerce-flow-app-ie7nl6",
@@ -441,9 +450,8 @@ First, we use the `/listPartitionedFileNames` endpoint to check if the `app-stat
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/w2J3uhp0CbFusSBblbos?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/w2J3uhp0CbFusSBblbos?embed&show_copy_link=true" title="Project APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -470,9 +478,8 @@ Next, we open the `app-state.yaml` file and update the `enableDarkMode` variable
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/shyaylXuBXG6F97Pv0ir?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/shyaylXuBXG6F97Pv0ir?embed&show_copy_link=true" title="Project APIs interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -561,5 +568,3 @@ When YAML validation fails, you'll receive detailed error information:
 ## Rate Limits
 
 Please be mindful of API rate limits. If you're making many requests, implement appropriate delays between calls to avoid being rate-limited.
-
-

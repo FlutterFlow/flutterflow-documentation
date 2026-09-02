@@ -1,10 +1,18 @@
 ---
 slug: credit-card-form
 title: Credit Card Form
-tags: [Form Elements]
-description: Learn how to add, use, and customize a Credit Card Form widget in your FlutterFlow app.
+tags:
+  - FlutterFlow
+  - Resources
+  - UI
+description: >-
+  Learn how to add, use, and customize a Credit Card Form widget in your
+  FlutterFlow app.
+keywords:
+  - Credit Card Form
+  - Built In Widgets
+  - Widgets
 ---
-
 # Credit Card Form
 
 The **Credit Card Form** widget lets users enter a card number, expiration date, and card verification value (CVV). Use it when accepting credit card payments through the [**Braintree integration**](../../../../ff-integrations/payments/braintree.md).

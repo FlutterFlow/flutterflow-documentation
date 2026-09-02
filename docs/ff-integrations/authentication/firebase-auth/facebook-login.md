@@ -2,11 +2,17 @@
 slug: /integrations/authentication/firebase/facebook
 title: Facebook Login
 description: Learn how to add Facebook login in your FlutterFlow app.
-tags: [Facebook Login, Authentication, Firebase]
+tags:
+  - FlutterFlow
+  - Integrations
+  - Authentication
 sidebar_position: 4
-keywords: [FlutterFlow, Facebook Login, Authentication, Firebase]
+keywords:
+  - FlutterFlow
+  - Facebook Login
+  - Authentication
+  - Firebase
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -48,9 +54,8 @@ Here's is how you create app on Facebook:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/e6gys6yiCM1xiUNLBHdD?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/e6gys6yiCM1xiUNLBHdD?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -82,9 +87,8 @@ To do so follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/96Nf3RC4DAW1kOvdZ7yA?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/96Nf3RC4DAW1kOvdZ7yA?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -109,9 +113,8 @@ To do so follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/wiYI8lcR2fTZ7EfSLR1S?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/wiYI8lcR2fTZ7EfSLR1S?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -144,9 +147,8 @@ Here's how you do it:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/vqXHHDgwcplEd8uAlRov?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/vqXHHDgwcplEd8uAlRov?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -175,9 +177,8 @@ Here's how you enable Facebook auth in Firebase:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/yYIIFNIz6VnggYUX9KXL?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/yYIIFNIz6VnggYUX9KXL?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -205,9 +206,8 @@ To enable the Facebook authentication in FlutterFlow, follow the steps below:
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/DLMx6pvF6QltUf8edST8?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/DLMx6pvF6QltUf8edST8?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,
@@ -239,9 +239,8 @@ When you click the sign-in button, it will trigger the 'Log In' action, promptin
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
     height: 0,
     width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/jexLJMpednsmFGACA0AB?embed&show_copy_link=true"
-        title=""
+    <iframe
+        src="https://demo.arcade.software/jexLJMpednsmFGACA0AB?embed&show_copy_link=true" title="Facebook Login interactive tutorial"
         style={{
             position: 'absolute',
             top: 0,

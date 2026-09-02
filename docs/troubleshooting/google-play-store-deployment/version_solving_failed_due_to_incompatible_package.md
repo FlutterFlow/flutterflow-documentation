@@ -1,9 +1,19 @@
 ---
-keywords: ['error', 'version', 'failed']
-slug: /troubleshooting/google-play-store-deployment/version-solving-failed-due-to-incompatible-package
+keywords:
+  - error
+  - version
+  - failed
+slug: >-
+  /troubleshooting/google-play-store-deployment/version-solving-failed-due-to-incompatible-package
 title: Version Solving Failed Due to Incompatible Package
+description: >-
+  A version solving failed error may occur when running if package versions in
+  the project conflict with FlutterFlow's supported Flutter version.
+tags:
+  - FlutterFlow
+  - Troubleshooting
+  - Google Play Store Deployment
 ---
-
 # Version Solving Failed Due to Incompatible Package
 
 A **version solving failed** error may occur when running `flutter pub get` if package versions in the project conflict with FlutterFlow's supported Flutter version.
@@ -30,3 +40,7 @@ pub finished with exit code 1
 - Before adding a new dependency in your custom widget or action, check if the package already exists in `pubspec.yaml`. If it does, only import the package in your code without adding it again as a dependency.
 
 - If no custom widgets or actions are used and the error persists, contact FlutterFlow Support at support@flutterflow.io for assistance.
+
+## Related documentation
+
+See [AdMob Ads Not Displaying in Google Play Testing](/troubleshooting/google-play-store-deployment/admob-ads-not-displaying-in-google-play-testing) for a related FlutterFlow workflow.

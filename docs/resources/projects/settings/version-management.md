@@ -1,12 +1,20 @@
 ---
 slug: flutterflow-version-management
 title: Pin to FlutterFlow Version
-tags: [Versioning]
-keywords: [Versioning, FlutterFlow Version Management, Pin project FlutterFlow, Downgrade FlutterFlow version, Upgrade FlutterFlow version, FlutterFlow stable releases]
+tags:
+  - FlutterFlow
+  - Resources
+  - Projects
+keywords:
+  - Versioning
+  - FlutterFlow Version Management
+  - Pin project FlutterFlow
+  - Downgrade FlutterFlow version
+  - Upgrade FlutterFlow version
+  - FlutterFlow stable releases
 description: Learn how to manage the FlutterFlow version used for your project.
 sidebar_position: 2
 ---
-
 # Pinning Projects to Stable FlutterFlow Versions
 
 FlutterFlow is constantly evolving to provide new features, address bugs, and keep up-to-date with Flutter and third-party packages. However, frequent updates can introduce unwanted changes that break existing projects—especially those that rely on custom code with external dependencies.
@@ -29,7 +37,7 @@ Pinning your project to a stable version of FlutterFlow offers the following ben
 
 ## Key Concepts
 
-To understand FlutterFlow's version management system, it's important to understand **Semantic Versioning**. 
+To understand FlutterFlow's version management system, it's important to understand **Semantic Versioning**.
 
 FlutterFlow tends to release a new version of the product each week. When a new version is released, the overall version number is incremented.
 
@@ -41,7 +49,7 @@ The version number consists of three parts:
 
 ![semantic_versioning](imgs/semantic-versioning.png)
 
-You can see what version of FlutterFlow you are using by looking at the top left hand corner of the builder. 
+You can see what version of FlutterFlow you are using by looking at the top left hand corner of the builder.
 
 ![version-in-builder](imgs/version-in-builder.png)
 
@@ -63,7 +71,7 @@ A **Stable Release** of FlutterFlow is published monthly if any of the following
 Each stable release is assigned a unique **Major.Minor** version number. Projects that have not been edited in a FlutterFlow version with a **Major.Minor** version higher than the stable release can be pinned to that stable version.
 
 :::note
-Each stable release will be supported for **6 months** before you are forced to upgrade to the next stable version. 
+Each stable release will be supported for **6 months** before you are forced to upgrade to the next stable version.
 :::
 
 
@@ -190,6 +198,6 @@ If your project was created and edited on a [standard release](#standard-release
 What is the recommended approach if I have multiple projects and libraries that I am working on?
 </summary>
 <p>
-If you choose to pin your project to a stable version of FlutterFlow, we recommend pinning all your projects and dependencies to the same version - and trying to upgrade all projects to the next version around the same time. This makes it easier to ensure compatibilities between projects and libraries that depend on each other. Additionally, this makes it easier to have a single FlutterFlow desktop environment that you are working within. 
+If you choose to pin your project to a stable version of FlutterFlow, we recommend pinning all your projects and dependencies to the same version - and trying to upgrade all projects to the next version around the same time. This makes it easier to ensure compatibilities between projects and libraries that depend on each other. Additionally, this makes it easier to have a single FlutterFlow desktop environment that you are working within.
 </p>
 </details>
