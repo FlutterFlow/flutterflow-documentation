@@ -30,7 +30,15 @@ To add a Firestore collection or Supabase table query:
 3. Choose the backend source and records to return:
    - **Firestore:** Set the query type to **Query Collection**, select a **Collection**, then choose **List of Documents** or **Single Document**.
    - **Supabase:** Set the query type to **Supabase Query**, select a **Table**, then choose **List of Rows** or **Single Row**.
-4. Under **Filters**, click **+ Filter** for Firestore or **+ Add Filter** for Supabase. Select a field, relation, and comparison value.
+4. Configure any filters required by the query:
+   - **Firestore:** Under **Filters**, click **+ Filter**, then select a field, relation, and comparison value.
+   - **Supabase:** Under **Filters**, click **+ Add Filter**, then select a field, relation, and comparison value. To use the [full-text search](https://supabase.com/docs/guides/database/full-text-search), set **Relation** to **Search (Full-Text)**. Then choose a **Search Type**:
+      - **Websearch (Recommended):** Supports user-friendly search syntax, including quoted phrases, `OR`, and excluding terms with a minus sign (`-`).
+      - **All Words:** Returns rows that contain every search term.
+      - **Phrase:** Returns rows that contain the search terms as a phrase.
+      - **Raw tsquery:** Accepts PostgreSQL text-search operators for advanced queries.
+
+      You can optionally, set **Language**, leave it empty to use the database's default configuration. Under **Value**, enter the text you want to find.
 5. Under **Ordering**, click **+ Order By** for Firestore or **+ Add Order** for Supabase. Select the field and choose **Increasing** or **Decreasing**.
 6. Configure the available optional settings:
    - **Hide Widget If No Match** (Firestore): Hides the queried widget when the query returns no matching documents.
