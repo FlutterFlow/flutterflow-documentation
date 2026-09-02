@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Apple Store Deployment Issues
+last_verified: 2026-09-02
 ---
 # Custom Domain Connection Error
 
@@ -41,7 +42,7 @@ If you encounter the error shown below after clicking **Connect**, follow these 
 2. **Check for Conflicting Records**
 
     - Review your DNS configuration to ensure there are no extra or unnecessary records that conflict with the FlutterFlow-provided keys.
-    - For example, if you already have an A record using `"@"`, remove it to avoid conflicts.
+    - For example, an existing A or AAAA record for the same root host can conflict with the values FlutterFlow displays. Remove or replace a record only after confirming its current service and saving a rollback copy. Do not delete MX, TXT, CAA, or unrelated subdomain records.
 
         :::note
         Before removing any existing DNS records, take screenshots and save them for reference.

@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Apple Store Deployment
+last_verified: 2026-09-02
 ---
 # Codemagic Install Pods Failure
 
@@ -32,7 +33,7 @@ Custom code or third-party packages may introduce conflicting versions of depend
    Custom or third-party packages may cause version mismatches with FlutterFlow-supported dependencies.
 
    - Review documentation to ensure package compatibility.
-   - Adjust versions in your `pubspec.yaml` file accordingly.
+   - Adjust dependency constraints deliberately and keep them compatible with the Flutter/Dart version used by the build. Do not edit generated constraints blindly; compare with a fresh FlutterFlow export and preserve intentional overrides.
    - Run:
 
      ```bash
@@ -54,7 +55,9 @@ Custom code or third-party packages may introduce conflicting versions of depend
    CocoaPods may fail to resolve dependencies due to incompatible versions or incorrect iOS deployment targets.
 
    - Update packages like `app_settings` in `pubspec.yaml` to versions compatible with your Flutter version.
-   - Raise the iOS minimum deployment target in Xcode if necessary.
+   - Raise the iOS minimum deployment target only after checking your supported-device policy and all native targets/extensions. A higher target drops older iOS versions and must remain consistent in generated project and Pod configuration.
+
+After each change, reproduce with the same Flutter and CocoaPods environment as deployment and inspect the first dependency-resolution error, not only the final `pod install` failure.
 
    ![Codemagic Install Pods Failure in FlutterFlow](../../assets/20250430121133219967.png)
 

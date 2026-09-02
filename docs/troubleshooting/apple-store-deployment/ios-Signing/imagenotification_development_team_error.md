@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Apple Store Deployment
+last_verified: 2026-09-02
 ---
 # ImageNotification Development Team Error
 
@@ -36,6 +37,8 @@ This error occurs when the **ImageNotification** entitlement is missing in your 
 9. Click **Continue** and then **Register** to complete the setup.
 
 Once this Identifier is added, the signing process should proceed without requiring a development team selection.
+
+The identifier must belong to the same Apple Developer team as the main app and match the extension bundle identifier generated for the build. If it already exists, do not create a duplicate; verify its team, capabilities, provisioning profile, and the main app's package name. Treat the exact signing-log identifier as authoritative.
 
 ## Related documentation
 

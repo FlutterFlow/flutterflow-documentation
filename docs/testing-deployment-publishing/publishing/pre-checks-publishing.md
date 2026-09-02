@@ -7,6 +7,7 @@ description: >-
 tags:
   - FlutterFlow
   - Deployment
+last_verified: 2026-09-02
 sidebar_position: 1
 keywords:
   - Pre-checks
@@ -26,11 +27,13 @@ Here’s a comprehensive list of these prechecks:
 3. **Optimizations & Enhancements**: Improve performance by implementing [optimization and enhancement](../../intro/ff-ui/toolbar.md#project-suggestions) suggestions. Ensure that images are properly sized, consider using higher compression for assets, and remove unused assets and custom widgets. These will help improve your app's speed and size.
 4. **User Interface:** Check UI consistency across different screen sizes and resolutions using the [Canvas Size](../../intro/ff-ui/canvas.md) option.
 5. **Accessibility Checks**: Add semantic labels to make the app more accessible to users with disabilities by providing meaningful descriptions.
-6. **Security Measures**: Make sure all data handling practices comply with legal standards, including GDPR if applicable. Use HTTPS for all network connections and ensure that sensitive data is encrypted.
+6. **Security and Privacy**: Test least-privilege database and storage rules, authentication and authorization, private APIs, secret handling, account deletion, abuse controls, dependency risk, and data retention. HTTPS and encryption are necessary but do not replace authorization or secure backend design. Complete accurate privacy disclosures, consent flows, data-safety forms, and deletion mechanisms for every SDK and data flow.
 7. **Compliance with Store Guidelines**: Review the submission guidelines for [Apple’s App Store](https://developer.apple.com/app-store/review/guidelines/) and [Google Play Store](https://play.google/developer-content-policy/). Check for any specific requirements such as app metadata, privacy policies, and minimum functionality.
 8. **Localization and Internationalization**: If your app targets users in multiple countries, consider [adding multi-language](../../ff-concepts/localization-accessibility/localization.md) support.
 9. **License and Third-Party Attributions**: Adhere to licenses and include necessary attributions for third-party libraries and assets.
 10. **Prepare Marketing Assets**: Prepare all the necessary marketing assets, such as screenshots, app icons, and promotional text. You can easily [generate screenshots](../publishing/pre-checks-publishing.md#generate-screenshots) right within FlutterFlow.
+11. **Release Operations**: Verify production environment selection, package or bundle ID, version and build number, signing, billing mode, store products, OAuth redirect URLs, deep links, push credentials, analytics, crash reporting, alerts, backups, rollback, and support contact details.
+12. **Adversarial and Failure Testing**: Test slow or offline networks, denied permissions, expired sessions, duplicate taps and webhooks, interrupted purchases, empty and error states, large data, rate limits, and owner versus non-owner access on release builds.
 
 ---
 

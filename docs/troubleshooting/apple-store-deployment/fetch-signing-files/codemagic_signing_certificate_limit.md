@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Apple Store Deployment
+last_verified: 2026-09-02
 ---
 # Codemagic Signing Certificate Limit
 
@@ -47,11 +48,15 @@ This message indicates that Codemagic cannot proceed because no additional distr
 3. **Remove Unused or Expired Certificates**
    Review and delete any unused, expired, or redundant distribution certificates to free up space.
 
+   :::warning
+   Revoking a certificate can break signing for other apps, CI systems, extensions, or team members that still depend on its private key. Identify its owners and consumers, preserve required signing assets, and coordinate the revocation with your Apple Developer Account Holder or administrator. Do not delete certificates solely because their names look unfamiliar.
+   :::
+
 4. **Re-run Deployment**
    After deleting the certificates, initiate the build process again in FlutterFlow. Codemagic will automatically generate a new certificate as needed.
 
     :::note
-    The deleted distribution certificates will be recreated automatically by Codemagic during the next build.
+    Codemagic can request a replacement when account permissions and limits allow, but revoking an in-use certificate is not automatically harmless. Verify the affected provisioning profiles and subsequent release signing.
     :::
 
 ## Related documentation

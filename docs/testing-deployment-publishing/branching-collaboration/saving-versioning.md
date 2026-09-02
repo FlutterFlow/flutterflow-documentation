@@ -14,6 +14,7 @@ keywords:
   - Collaboration
   - FlutterFlow
   - Concepts
+last_verified: 2026-09-02
 ---
 # Saving and Versioning
 
@@ -37,6 +38,8 @@ Restoring the previous version will preserve the current version, then load the 
 
 Commits are similar to versions in that you can save the state of your project at a point in time. Commits are saved to a specific branch's history. With commits you can view the specific changes made in that commit and restore a branch to the state of a specific commit. For more details see this page on [Branching and Commits](../branching-collaboration/branching.md#commits).
 
+Create commits at meaningful checkpoints and describe the user-visible change. Before restoring or merging, inspect the diff and confirm the current branch and environment. FlutterFlow project commits are separate from commits in an exported GitHub repository.
+
 ## Snapshots
 
 Snapshots are automatic saves of your project's state as you build it. They allow you to **Peek** or **Revert** to a previous state of the project if needed.
@@ -50,3 +53,5 @@ Snapshots are automatic saves of your project's state as you build it. They allo
 - The **Business** plan extends this to **up to 7 days prior**.
 - For **Enterprise** users, snapshot retention is **customized**.
 :::
+
+Snapshots are recovery aids, not a substitute for deliberate commits, exported backups, or backend backups. Snapshot retention depends on the current plan and can change; confirm the retention shown in your workspace before relying on a recovery point.

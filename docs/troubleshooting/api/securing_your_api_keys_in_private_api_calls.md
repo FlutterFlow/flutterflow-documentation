@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - API
+last_verified: 2026-09-02
 ---
 # Securing Your API Keys in Private API Calls
 
@@ -20,11 +21,11 @@ Ensuring the security of API keys is a critical aspect of building and maintaini
 
 **The Misconception: Private API Calls Secure Everything**
 
-Many users assume that simply marking an API call as 'private' is enough to protect all associated data. However, this is not the case. Private API calls run in a Cloud Function, which means any keys or sensitive data in the body will be secure, as long as they're not passed in from the frontend. Even in private API calls, if you're loading an API key from the frontend (like from Firebase remote configs), then you're still exposing it.​
+Many users assume that simply marking an API call as private protects every value. A private call moves the provider request to a generated Cloud Function, but values supplied by the app are still known to the app and user. Remote Config is client-readable and is not secret storage. The backend must also authenticate the caller, authorize the requested operation, validate inputs, limit abuse, and avoid returning the provider credential in errors or responses.
 
 ## Secure Placement of API Keys in Your Project
 
-    The ideal way to secure an API key is to include it in a request header or directly within the API endpoint URL. This ensures that it is never passed in from the client, thereby maintaining its confidentiality.​
+    Put the credential in the private call's server-side header configuration or a supported private environment value. Prefer the deployment platform's secret manager when maintaining exported server code. Do not place secrets in URLs: URLs commonly appear in logs, analytics, browser history, proxies, and error reports.​
 
     For example, you can hard-code the key directly into your API call header like this:​
 
@@ -32,16 +33,11 @@ Many users assume that simply marking an API call as 'private' is enough to prot
     { "Authorization": "Bearer YOUR_API_KEY_HERE" }
     ```
 
-    Or directly within the API endpoint URL:​
-
-    ```js
-    https://api.example.com/resource?api_key=YOUR_API_KEY_HERE
-    ```
     The key should never be a variable that gets passed in from the frontend, as that would make it accessible via the client-side code, defeating the purpose of using private API calls for secure operations.
 
 ## Verifying the Security of Your API Key
 
-    After implementing these changes, a straightforward way to verify that your key is secured is by downloading your application code and checking to make sure the API key doesn’t appear in any frontend files.​
+    Downloading the client and confirming the key is absent is one check, not proof of security. Also inspect generated server exports and Git history, network traffic, logs and error responses; verify caller authentication and authorization; restrict the provider key by API, environment, origin or IP where supported; set quotas and alerts; and rotate the key after exposure.​
 
     Example: Not Secure
 

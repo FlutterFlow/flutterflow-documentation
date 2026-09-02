@@ -17,6 +17,7 @@ keywords:
   - deploy a FlutterFlow app to Google Play
 ai_queries:
   - deploy a FlutterFlow app to Google Play
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -32,6 +33,8 @@ FlutterFlow allows you to seamlessly deploy your apps directly to the Google Pla
 4. Set an [**App Launcher Icon**](../../resources/projects/settings/general-settings.md#launcher-icon). The App Launcher icon can't be transparent or contain an alpha channel.
 
 :::
+
+Before uploading, complete Google Play's current target API, Data safety, content rating, ads, app access, privacy policy, account-deletion, permissions, and other policy declarations. New personal developer accounts can have testing requirements before production access; follow the requirements shown for your account in Play Console because eligibility rules can change.
 
 ## Deploy to Google Play Store
 
@@ -132,6 +135,10 @@ To create the Service Account, you can follow the instructions from [here](https
 
 4. On the right side of the newly created service account, click the action menu (three dots) icon and select **Manage keys**. Then, click **ADD Key > Create new key > select JSON > CREATE**. Keep the downloaded file at a safe place.
 
+    :::danger[Protect the service-account JSON]
+    This file contains a private key. Upload it only to FlutterFlow's dedicated Play deployment credential field. Never commit it, add it to app assets, paste it into client code or chat, or store it in an broadly shared folder. Grant only the Play Console permissions required for deployment, limit FlutterFlow project access, rotate the key after suspected exposure, and delete unused keys and service-account access.
+    :::
+
     <div style={{
         position: 'relative',
         paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -230,7 +237,7 @@ To upload the service account credentials on FlutterFlow:
 
 ### 4. Deploy to Google Play Store
 
-To enable FlutterFlow to deploy your app to the Google Play Store on your behalf for the first time, you have to download the [`.AAB`](https://chat.openai.com/share/6f5714c1-eb13-428b-b9ee-9772f2810284) file from FlutterFlow and upload it to the [Internal Testing](https://play.google.com/console/about/internal-testing/) Track on the Google Play Store.
+To enable FlutterFlow to deploy your app to Google Play on your behalf for the first time, download the [Android App Bundle (`.aab`)](https://developer.android.com/guide/app-bundle) from FlutterFlow and upload it to an [Internal Testing](https://play.google.com/console/about/internal-testing/) track in Play Console.
 
 Once the Internal Testing track is ready (with `.AAB` file), FlutterFlow can handle the subsequent releases.
 
@@ -238,7 +245,7 @@ Once the Internal Testing track is ready (with `.AAB` file), FlutterFlow can han
 
 To get the AAB file:
 
-1. Set the **Google Play Track** to **Internal** and hit **Deloy to Play Store**.
+1. Set the **Google Play Track** to **Internal** and click **Deploy to Play Store**.
 2. Wait for a couple of minutes and then click **Check Build Status**. If you don't see the **AAB APK** options yet, wait for some time.
 3. Click on the **AAB** to download the `.aab` file.
 
@@ -321,7 +328,7 @@ You can now deploy directly from FlutterFlow or from your GitHub repository.
 
 :::
 
-Ensure the **Google Play Track** is set to **Internal** and hit the **Deloy to Play Store** again. On successful deployment, you will see the status as 'finished'.
+Ensure the **Google Play Track** is set to **Internal** and click **Deploy to Play Store** again. On successful deployment, you will see the status as **Finished**.
 
 ![deploy-flutterflow](../imgs/deploy-flutterflow.avif)
 
@@ -349,6 +356,8 @@ To deploy your app to production:
 2. Under the **Releases** section, find and click on the **Promote Release** dropdown.
 3. Select the **Production**. This will create the Production track and you can continue to release your app from there onwards.
 4. Next time onwards in FlutterFlow, you can publish directly to the Production track by setting the **Google Play Track** to **Production**.
+
+Before rollout, select the exact artifact and verify version code, app signing and upload key ownership, package name, production backend, release notes, country availability, pricing, store listing, Data safety answers, tester results, pre-launch report, crashes and ANRs, and staged-rollout/rollback plan. Promote the tested artifact rather than rebuilding different code for production.
 
 <Tabs>
 <TabItem value="Google" label="Google Play Console: Promote to production" default>

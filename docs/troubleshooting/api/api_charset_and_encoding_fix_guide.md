@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - API
+last_verified: 2026-09-02
 ---
 # API Charset and Encoding Fix Guide
 
@@ -26,18 +27,16 @@ Follow the steps below:
 
     Make sure your API call includes the appropriate headers to instruct the server on how to format the response. Add the following headers to your API configuration:
 
-    - `Content-Type: application/json`
+    - `Accept: application/json` when you expect JSON.
+    - `Content-Type: application/json; charset=utf-8` only when the request actually sends a JSON body.
 
-    - `Charset: utf-8`​
-
-
-    These headers tell the server to return the data in JSON format using UTF-8 encoding, which is compatible with FlutterFlow.
+    `Content-Type` describes the request body; it does not force the server's response encoding. A standalone `Charset` request header is not the standard way to declare JSON encoding. The server should return an accurate response `Content-Type`, such as `application/json; charset=utf-8`.
 
     ![Setting Content-Type and Charset headers](../assets/20250430121409119593.png)
 
 2. **Enable UTF-8 Decoding in FlutterFlow**
 
-    If the server does not specify encoding—or if you're still getting corrupted text—you can configure FlutterFlow to decode the API response as UTF-8 manually.
+    If the server omits or mislabels its response encoding but the response bytes are known to be UTF-8, you can configure FlutterFlow to decode the response as UTF-8 manually.
 
     To do this:
 
@@ -54,11 +53,12 @@ Follow the steps below:
 - Always test your API calls in FlutterFlow’s API Test tab to ensure the response is properly formatted.
 - Confirm that the external API supports UTF-8 and returns a valid JSON response.
 - Review your server settings if you control the backend, to ensure it sends the correct headers.
+- Do not force UTF-8 when the server actually returns a different encoding or compressed/binary data; correct the server or decode according to its documented format.
 :::
 
 :::note
 Incorrect API call outputs due to charset or encoding can be quickly resolved by:
-- Adding proper headers like `Content-Type: application/json` and `Charset: utf-8`.
+- Sending an appropriate `Accept` header and an accurate request `Content-Type` when the request has a body.
 - Enabling **Force response decoding as UTF-8** in FlutterFlow’s API advanced settings.
 These simple steps will help you get accurate and readable data from your APIs, resulting in a smoother app development experience.
 :::

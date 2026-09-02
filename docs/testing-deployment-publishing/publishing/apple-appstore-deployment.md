@@ -16,6 +16,7 @@ keywords:
   - deploy a FlutterFlow app to the Apple App Store
 ai_queries:
   - deploy a FlutterFlow app to the Apple App Store
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -30,6 +31,8 @@ FlutterFlow allows you to deploy your apps directly to the App Store from within
 - Set an App Launcher Icon for your app under **Settings & Integrations > General > App Assets**. **Note**: The launcher icon cannot be transparent or contain an alpha channel.
 - It's recommended to test your app on a real device before deployment. Follow [**these instructions**](../testing/local-run) to test your app locally.
 :::
+
+Before uploading, complete Apple's current app privacy details, required-reason API declarations, export-compliance questions, age rating, account-deletion flow when accounts can be created, and any Sign in with Apple requirement. Test purchases, subscriptions, push notifications, universal links, permissions, and login on a release build and a real device.
 
 ## Deploy to App Store
 
@@ -136,6 +139,10 @@ To generate your API Key, go to [**App Store Connect**](https://appstoreconnect.
 
 Generate a new API key by selecting **Add (+)**, entering a name, and assigning the **App Manager** role. Once the key is generated, download it and upload it to **FlutterFlow** under **Settings & Integrations > App Settings > Mobile Deployment > App Store > Private Key**.
 
+:::danger[Protect the App Store Connect private key]
+The downloaded `.p8` file is a credential that can perform the key's App Store Connect actions. Upload it only to the dedicated FlutterFlow deployment setting. Never add it to app assets, source control, client code, shared chat, or general cloud storage. Limit who can access the FlutterFlow project, keep a controlled credential inventory, and revoke and replace the key immediately after suspected exposure or when it is no longer needed.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -240,6 +247,8 @@ If you prefer to manage your deployment process outside of FlutterFlow, such as 
 
 From [**App Store Connect**](https://appstoreconnect.apple.com/), select **My Apps** and choose your app. Select **Prepare for Submission**, add the app assets and metadata, and then click **Add for Review**.
 
+Select the exact uploaded build and verify the version, bundle ID, privacy policy and support URLs, review contact, review notes and demo credentials, screenshots, in-app purchases, content rights, encryption/export compliance, and release option. Never give reviewers production administrator credentials; provide a least-privilege review account with representative data.
+
 ![add-for-review.avif](../imgs/add-for-review.avif)
 
 Your app will now be reviewed by Apple. For additional information on Apple's review guidelines, please see [this link](https://developer.apple.com/app-store/review/guidelines/).
@@ -284,7 +293,7 @@ Watch this video if you prefer watching a video tutorial.
 <details>
 <summary>After submitting my iOS app to the App Store, I am getting an 'ITMS-91053: Missing API declaration' issue. What should I do?</summary>
 <p>
-Apple requires that apps using certain APIs have a Privacy Manifest file that declares the [**reason for using the API**](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api). Apple will begin requiring this file for App Store approval on May 1, 2024.
+Apple requires apps using certain APIs to include a Privacy Manifest that declares an approved [**reason for using the API**](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing-use-of-required-reason-api). This requirement has applied to App Store submissions since May 1, 2024.
 
 Most packages that FlutterFlow uses already have a Privacy Manifest created by the package author or FlutterFlow team. However, there may be some cases where packages don't have the necessary privacy manifest needed.
 

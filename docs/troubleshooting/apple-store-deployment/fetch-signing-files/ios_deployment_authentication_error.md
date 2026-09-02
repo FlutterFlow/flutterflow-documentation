@@ -12,6 +12,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - Apple Store Deployment
+last_verified: 2026-09-02
 ---
 # iOS Deployment Authentication Error
 
@@ -52,7 +53,7 @@ GET https://api.appstoreconnect.apple.com/v1/bundleIds?limit=100&sort=name&filte
 6. Download the newly created API Key by selecting **Download API Key**.
 
    :::note
-   If the download option does not appear immediately, refresh the page.
+   App Store Connect private keys can be downloaded only once. If the private key is no longer available, revoke the unusable key if appropriate and create a replacement rather than searching browser downloads or asking someone to share it insecurely.
    :::
 
 7. In **FlutterFlow**, go to **Settings & Integrations → Deployment**.
@@ -60,6 +61,8 @@ GET https://api.appstoreconnect.apple.com/v1/bundleIds?limit=100&sort=name&filte
 8. Under **Private Key**, click **Upload Private Key**, select the downloaded API Key file, and click **Open**.
 
 9. Retry your iOS deployment.
+
+Protect the `.p8` file as a deployment credential: never commit it, add it to app assets, paste it into chat, or upload it outside FlutterFlow's dedicated field. Confirm the Issuer ID, Key ID, key role, team, bundle ID, and Apple agreements, then revoke the old key after the replacement works.
 
    <video className="docs-video" autoPlay loop muted playsInline controls aria-label={"Resolving an iOS deployment authentication error"}><source src={require("../../assets/20250430121336383410.mp4").default} type="video/mp4" /></video>
 

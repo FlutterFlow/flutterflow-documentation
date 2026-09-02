@@ -10,6 +10,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - API
+last_verified: 2026-09-02
 ---
 # Client-Server Errors During the API Call
 
@@ -36,7 +37,7 @@ These errors are usually caused by incorrect requests from the client side.
 
 - **401 – Unauthorized**
 
-    This status code appears when authentication has not yet been provided. To resolve this, ensure you have signed up for the API and included your API key in the HTTP header of your request.
+    This status code means authentication is missing, invalid, or expired. Follow the API's documented authentication scheme; do not assume every API uses a client-visible API key.
 
     ![401 Example](../assets/20250430121350799148.png)
 
@@ -82,7 +83,7 @@ These errors occur on the API server side.
 
 - **501 – Not Implemented**
 
-    This error occurs when the HTTP method used in the request is not supported by the server. Trying a different HTTP method or checking the API documentation for supported methods can resolve this issue.
+    This means the server does not implement the requested functionality. An unsupported HTTP method is normally `405 Method Not Allowed`; check the response body and API documentation before changing the request.
 
 - **502 – Bad Gateway**
 
@@ -99,13 +100,13 @@ These errors occur on the API server side.
 
 **Troubleshooting Steps**
 
-- **Clear Browser Cache and Cookies**
+- **Inspect the exact request and response**
 
-    If you're encountering a 400 Bad Request error, clearing your browser's cache and cookies can resolve issues related to expired or invalid data.
+    In the FlutterFlow API test, browser developer tools, or backend logs, capture the status, response body, request method, URL, headers, and a redacted body. Never paste tokens, cookies, personal data, or secrets into tickets or public logs.
 
 - **Verify the Requested URL**
 
-    Ensure the URL or endpoint is correct. Remember, domain names are case-sensitive.
+    Ensure the URL or endpoint is correct. Domain names are case-insensitive, but URL paths and query parameter names can be case-sensitive.
 
 - **Adjust Request Parameters**
 
@@ -123,5 +124,5 @@ Understanding these common API error status codes and their solutions can signif
 
 :::tip[Final tips]
 - Always check the API's own documentation, inspect your request, and look up error messages. If the issue persists, contact the API provider.
-- Once you fix the issue, your calls should return a `200 OK`, which means everything is working as expected!
+- A successful API can return any documented `2xx` status, such as `200`, `201`, or `204`. Validate the response body and business result rather than checking only for `200`.
 :::

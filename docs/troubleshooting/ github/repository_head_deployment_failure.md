@@ -13,6 +13,7 @@ tags:
   - FlutterFlow
   - Troubleshooting
   - GitHub
+last_verified: 2026-09-02
 ---
 # Repository Head Deployment Failure
 
@@ -52,6 +53,8 @@ Below are the possible causes of this error:
 
    Confirm that your GitHub account or connected GitHub App has push/write access to the repository and branch.
 
+   Also review branch protection and rulesets. Do not disable protections broadly; authorize the intended integration or use the documented reviewed-merge workflow.
+
 4. **Check Network Access**
 
    Make sure your environment is not blocking GitHub via VPN, firewall, or DNS restrictions.
@@ -59,6 +62,8 @@ Below are the possible causes of this error:
 5. **Validate the Codebase Locally**
 
    Run the downloaded Flutter project locally to confirm that it builds without errors.
+
+If the repository was renamed, transferred, archived, made private, or moved to an organization with SSO, reconnect the GitHub integration and approve the current organization access. Revoke stale integration access after recovery.
 
 :::info[Additional Resources]
 - **[GitHub Deployment Overview](/deployment/deploy-from-github/#steps-to-deploy)**
