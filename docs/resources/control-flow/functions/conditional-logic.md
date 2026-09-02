@@ -15,10 +15,14 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
+# Conditional Logic
+
 Conditional logic is a fundamental concept in programming and software development. It involves making decisions in code based on certain conditions. This is achieved using conditional statements, which evaluate expressions to determine whether they are true or false. Depending on the result, different actions or outcomes are executed.
 
-#### How Conditional Logic Works
+## How conditional logic works
+
 - **Condition:** An expression that evaluates to either true or false.
 - **True Path:** The set of actions to execute if the condition is true.
 - **False Path:** The set of actions to execute if the condition is false.
@@ -30,7 +34,7 @@ Conditional flows enhance basic true-false logic by handling multiple conditions
 ### Single Condition
 This flow allows you to define a condition based on the comparison of two values, which can be set manually or derived from variables. The condition will return **True** or **False**.
 
-**Comparison Operators:**
+Available comparison operators depend on the value's data type. Common operators include:
 
 - Equal To
 - Not Equal To
@@ -41,14 +45,23 @@ This flow allows you to define a condition based on the comparison of two values
 - Is Set
 - Is Not Set
 
+For strings and lists, the picker can also distinguish an unset value from an empty value. Choose the operator that matches your data contract; `null`, an empty string, and an empty list are different states.
+
 ![single-condition.png](img/single-condition.png)
 ### Multiple Conditions (AND/OR)
 This flow lets you combine multiple single conditions using logical AND or OR operators. It is useful for more complex decision-making processes.
+
+- **AND** is true only when every child condition is true.
+- **OR** is true when at least one child condition is true.
+
+Group mixed AND/OR rules explicitly and test each branch; changing the group structure can change the result even when the individual comparisons stay the same.
 
 ![multiple-condition.png](img/multiple-condition.png)
 
 ### Conditional Value (If/Then/Else)
 Conditional Value allows you to set a dynamic variable based on different conditions. For each condition, you can specify a value that will be assigned if the condition is true. A default value can be provided if none of the conditions are met.
+
+Conditions are evaluated in order, and the first matching branch supplies the value. Every branch and the default must produce a value compatible with the destination property.
 
 See the example **[below](#setting-widget-properties-with-conditional-logic).**
 
@@ -152,3 +165,7 @@ enabling the Multiple Conditions toggle. Here's how:
 ## Related documentation
 
 See [Action Blocks](/resources/functions/action-blocks) for a related FlutterFlow workflow.
+
+## Verify conditional logic
+
+Create test cases for every branch, including null, empty, boundary, and unexpected values. In **Test Mode**, confirm only the intended action branch runs and each conditional property resolves to the expected type. Pay particular attention to the first matching condition when rules overlap.

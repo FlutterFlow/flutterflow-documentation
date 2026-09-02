@@ -17,6 +17,7 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
 # Actions
 
@@ -29,9 +30,9 @@ Designing interactivity involves two steps:
 **Action Triggers** represent a specific event, while **Actions** are functions executed in response to the
 triggered event. Common triggers are:
 
-- **On Tap**: Triggered on tapping on a widget or specifically buttons.
-- **On Selected:** Triggered on selecting an option from a dropdown list.
-- **On Page Load:** Triggered on loading a page
+- **On Tap:** Triggered when a user taps a supported widget.
+- **On Selected:** Triggered when a value changes in a supported selection widget.
+- **On Page Load:** Triggered when a page loads.
 
 Actions are tasks or operations that are performed in response to an event detected by a trigger.
 
@@ -73,6 +74,7 @@ To learn more about **Action Triggers** and its types, refer [**here**](action-t
         allow="clipboard-write">
     </iframe>
 </div>
+
 <p></p>
 
 :::warning[Exposed by FlutterFlow]
@@ -123,36 +125,26 @@ This central area of the editor is where you define and visualize the logic/acti
 execute in response to the selected trigger. The actions are laid out in a flowchart-like manner,
 making it easy to understand and modify the flow of actions.
 
-Actions in the Node Editor are executed synchronously. This means that if an action returns a value,
-it will be available to subsequent actions within the flow.
+Actions in an ordinary path execute sequentially. FlutterFlow waits for a blocking asynchronous action before starting the next action, so a named action output is available to later actions in that path.
 
 :::tip[Synchronous vs Asynchronous]
-**Synchronous actions** are executed one after another, with each action waiting for the previous
-one to complete.
-**Asynchronous actions** are executed independently and can run concurrently, allowing other
-following tasks to proceed without waiting for them to finish.
+**Synchronous actions** finish immediately in the current sequence. A blocking **asynchronous action** is awaited before the sequence continues. Enable **Non-Blocking** only when following actions do not depend on its output or side effects. Use **Parallel Actions** for independent branches that should start concurrently and rejoin after every branch completes.
 :::
 
 ### Creating Action
 
-If there is no initial action or if there is an action,and you want to add another one and press the
-plus icon, the following options will be available:
+Select the plus icon at the start of a flow or after an existing node to choose one of the available structures:
 
-1. **Add Action**: Adds a single action node to the flow. You can add multiple synchronous actions
-   one after another.
+1. **Add Action**: Adds a single action node to the flow. Add more nodes to create a sequential path.
 
 2. **Add Conditional Action**: Adds a conditional node with an input for a boolean expression and
    two action branches. The actions in each branch will be executed based on the evaluation of the
    boolean expression.
-3. **Add Loop**: Adds a loop flow that contains an input boolean expression and an action flow. The
-   actions within the loop will be executed repeatedly as long as the expression evaluates to true (
-  similar to a while loop).
-4. **Add Parallel**: Adds two action flow branches that will be executed in parallel.
+3. **Add Loop**: Adds either a **While Condition** loop or an **Over List** loop. Add a break node and a finite bound where needed.
+4. **Add Parallel Action**: Adds independent branches that start concurrently. The flow after the parallel block waits for all branches.
 5. **Paste Action(s)**: Allows you to paste actions previously copied to the clipboard.
 
-After creating an action node, you need to specify the action type in the Right Panel. Creating a
-node is equivalent to creating an empty function, and specifying the action type is like filling out
-the function body with the desired logic.
+After creating an action node, select and configure its action in the right panel. Rename outputs when a clear name will make later bindings easier to understand.
 
 <div className="arcade-container" style={{
     position: 'relative',
@@ -185,7 +177,7 @@ the function body with the desired logic.
 The Right Panel serves two main purposes:
 
 1. **Selecting Actions**: Choose the specific actions you want to add to your action flow.
-2. **Configuring Actions**: Configure the properties, parameters, and return names of the selected
+2. **Configuring Actions**: Configure the properties, parameters, and output names of the selected
    action.
 
 <div className="arcade-container" style={{
@@ -273,3 +265,7 @@ Here's a quick demo of how you can add an action or multiple sequential actions 
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Verify an action flow
+
+Run each trigger in **Test Mode** with success, empty, cancel, and error inputs. Confirm actions execute in the intended order, conditional branches are mutually correct, loops terminate, parallel branches are independent, and non-blocking actions do not supply values to immediate follow-up actions. Review the action-flow issue indicator before publishing.

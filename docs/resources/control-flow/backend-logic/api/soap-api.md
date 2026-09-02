@@ -12,17 +12,18 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # SOAP APIs
 
-SOAP APIs (Simple Object Access Protocol) provide a standardized way to communicate between systems, typically using XML as the message format and operating over protocols such as HTTP, SMTP, and more.
+SOAP APIs (Simple Object Access Protocol) provide a standardized XML message format. In FlutterFlow, configure a SOAP operation as an HTTP API call using the endpoint, headers, envelope, and SOAP version required by the service's WSDL or provider documentation.
 
-Unlike REST APIs, which use a flexible request/response model and typically exchange data in JSON, SOAP APIs are built around a formal contract defined by WSDL. This contract ensures strict adherence to communication standards, making SOAP APIs more rigid but also more reliable and secure—ideal for enterprise applications requiring transactional integrity and guaranteed message delivery.
+Unlike many REST APIs, which commonly exchange JSON, SOAP services often publish a formal WSDL contract. SOAP does not guarantee security, delivery, or transactional behavior by itself; those properties depend on the service, transport, authentication, and any WS-* extensions it implements.
 
-SOAP APIs are particularly well-suited for scenarios where robust security and detailed error handling are required, such as in financial services or telecommunications.
+SOAP remains common in enterprise systems that require contract-driven XML messages and structured SOAP Fault responses.
 
 ### Difference between SOAP APIs and REST APIs:
 
@@ -64,7 +65,7 @@ SOAP APIs are particularly well-suited for scenarios where robust security and d
 
 ## Building an App
 
-This guide provides a step-by-step instructions on how to add and use SOAP APIs to build an example app that displays a list of countries. Upon tapping on a country name, the user is taken to a details page where the country flag is displayed. By following these instructions, you can learn how to add SOAP APIs into your app and create a basic navigation flow.
+This guide provides step-by-step instructions for adding and using SOAP APIs in an example app that displays a list of countries. When the user taps a country, the app navigates to a details page and displays its flag.
 
 The final app looks like this:
 
@@ -132,10 +133,10 @@ This page shows the country flag using the [**Image**](../../../ui/widgets/basic
 
 ### 2. Create APIs
 
-For building this example, we will use two APIs from Postman's [**Public SOAP APIs**](https://www.postman.com/cs-demo/workspace/public-soap-apis). Here are they:
+For this example, use two requests from Postman's current [**Public SOAP APIs**](https://www.postman.com/cs-demo/public-soap-apis/overview) workspace:
 
-1. [**getCountries**](https://www.postman.com/cs-demo/workspace/public-soap-apis/request/8854915-96a53688-6305-45be-ab8b-ca1d1c88f830)
-2. [**getCountryFlag**](https://www.postman.com/cs-demo/workspace/public-soap-apis/request/8854915-4f5fae60-9ae1-4b77-8518-59e9143b8fb4)
+1. [**List of Countries by Name**](https://www.postman.com/cs-demo/public-soap-apis/request/g7lkg0j/list-of-countries-by-name)
+2. [**Flag for a Country**](https://www.postman.com/cs-demo/public-soap-apis/request/6nzydtw/flag-for-a-country)
 
 Before you build anything related to APIs in your app, you must create and test the APIs to make sure all the APIs are working correctly. So let's [create and test](create-test-api-calls.md) these APIs in our project.
 
@@ -146,6 +147,8 @@ This API retrieves a list of all countries' names and codes. You can add this AP
 :::info
 It's **important** to note that you need to include the proper *Header* in your requests, such as "**Content-Type: text/xml; charset=utf-8**", and set the request *Body* type to "**Text**".
 :::
+
+Use the exact `Content-Type`, optional `SOAPAction`, namespace URIs, and envelope version required by the service. SOAP 1.1 and SOAP 1.2 use different media types and envelope namespaces.
 
 Here's how you do it:
 
@@ -191,6 +194,8 @@ This API gets you the country's flag based on its code. You can pass the country
 ### 3. Create custom actions
 
 The APIs you added in the previous step return the result in [XML](https://www.w3schools.com/xml/xml_whatis.asp) format, which needs to be parsed to extract relevant data or information. This can be accomplished using a [custom action](../../../../ff-concepts/adding-customization/custom-actions.md). The custom action can utilize the '[xml](https://pub.dev/packages/xml)' package to parse the XML response and retrieve data in a format that can be easily displayed on UI widgets.
+
+Pass **Raw Body Text** to the parser. Production parsing should account for XML namespaces, missing elements, invalid XML, and a SOAP `Fault`; namespace prefixes such as `soap` or `m` are aliases and may differ even when the namespace URI is the same.
 
 For this example, you need to create two custom actions that parse the result for two APIs. Here are they:
 
@@ -407,3 +412,7 @@ Here are the step-by-step instructions:
 ## Get the example app
 
 Get the clonable version of this app [here](https://app.flutterflow.io/project/soap-countries-4tbmom).
+
+## Verify a SOAP integration
+
+Test a valid response, SOAP Fault, non-`2xx` HTTP response, invalid XML, missing element, timeout, and an alternate namespace prefix. Confirm the request matches the provider's current WSDL, no credentials are exposed in the client, parser failures follow an error path, and navigation occurs only after both the HTTP call and XML parsing succeed.

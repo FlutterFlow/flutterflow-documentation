@@ -14,6 +14,7 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
 # SQLite Query
 
@@ -40,7 +41,7 @@ Go to your project page and follow the steps below to define an SQLite query:
 1. Select the **widget** (or page) on which to apply the query.
 2. Select **Backend Query** from the Properties Panel (the right menu).
 3. Click **Add Query** and set the **Query Type** to **SQLite Query**.
-4. Select the **Query Name**. (Only *Read Queries* will be displayed here.)
+4. Select the **Query Name**. Only configured *Read Queries* are available as backend queries; use an action for a write query.
 5. Click **Confirm**.
 
 <div class="video-container"><iframe title="SQLite Query interactive tutorial" src="https://www.loom.com/embed/29001cdee28d4d058dd711b3bbb70b7e?sid=d5be04cc-1ce3-4f16-98e1-5b929c0f6673" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -52,7 +53,11 @@ Go to your project page and follow the steps below to define an SQLite query:
 Once you have the SQLite query defined, you can use the data retrieved from the query to display on widgets present inside. Follow the steps below:
 
 1. Select the **widget** (e.g., `Text`) on which you want to display the data.
-2. From the Properties Panel, open the **Set from Variable** menu **>** select **[your query name] Row** **>** select the column data that you want display here.
+2. From the Properties Panel, open **Set from Variable**, select **[your query name] Row**, and select the column value to display.
 3. Click **Confirm**.
 
 <div class="video-container"><iframe title="SQLite Query interactive tutorial" src="https://www.loom.com/embed/1cf9df4d871948c1b6513587c05d9040?sid=c77df270-a91b-40da-b796-05f243ae9d15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+## Verify the SQLite query
+
+Test a fresh local database, no matching rows, one row, multiple rows, null columns, and a failed query. Confirm query parameters have compatible types, list results generate the expected children, single-row UI handles no result, and a write action refreshes or rebuilds the read query when the screen must show the new data.

@@ -2,7 +2,7 @@
 slug: /resources/functions/action-blocks
 title: Action Blocks
 description: >-
-  Learn how to use Action Blocks in your FlutterFlow app to and create reusable
+  Learn how to use Action Blocks in your FlutterFlow app to create reusable
   actions.
 tags:
   - FlutterFlow
@@ -15,19 +15,21 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
+# Action Blocks
+
 An Action Block is a set of actions that perform a specific task and can be reused in different parts of the app. If you find yourself repeatedly performing a particular set of operations in your app, it may be helpful to create an Action Block. This allows you to break down complex actions into smaller, more manageable units, making them easier to understand and modify in the future.
 
 Action Blocks have different scopes, which determine their availability:
 | **Action Block Type**            | **Description**                                                                                                                                                          | **Scope**                                                                                                                                                     |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **App Level Action Blocks**      | Usable across the entire app. You can create an App Level Action Block from any page or component, and it will be accessible for viewing or editing from any page or component as well. | Internally, an App Level Action Block can only access the state variables available in its scope (e.g., app state variables).                                  |
-| **Page Level Action Blocks**     | Restricted to the page in which they were created. These can access the state variables available in their scope, such as page state variables, as well as variables above their scope, such as [App State variables](../../../resources/data-representation/app-state.md). | Page Level Action Blocks can access page state variables and App State variables.                                                                              |
-| **Component Level Action Blocks**| Restricted to the component in which they were created. These can access the state variables available in their scope, such as component state variables, as well as variables from higher scopes, like page and App State variables. | Component Level Action Blocks can access component state variables, page state variables, and App State variables.                                             |
+| **App Level Action Blocks**      | Usable across the entire app. Create one from a page or component, then select **App Level** to view or edit it from other pages and components. | App-scoped values, including [App State](../../../resources/data-representation/app-state.md), plus explicit Action Parameters. |
+| **Page Level Action Blocks**     | Restricted to the page where they were created. | That page's state and other page-scoped values, App State, plus explicit Action Parameters. |
+| **Component Level Action Blocks**| Restricted to the component where they were created. | That component's state and parameters, App State, plus explicit Action Parameters. Pass caller-page values into the block instead of assuming it can read arbitrary Page State. |
 
 :::note[Unsupported Actions in Action Blocks]
-Some actions are not supported and cannot be used in an Action Block. By default, these actions are hidden in the Action Block Editor.
-For example, actions under the **Firebase Authentication** category, **Start Periodic Action**, **Upload Data**, and others.
+Some actions are not supported in Action Blocks. The editor hides unavailable actions for the selected scope. Availability can change as capabilities are added, so use the action picker as the current source of truth.
 :::
 
 ## Action Blocks Structure
@@ -80,6 +82,8 @@ In this example, we add an item to the wishlist of an e-commerce app. Let's say 
     </iframe>
 </div>
 
+Callers must supply every required Action Parameter with a type-compatible value. Prefer parameters for values that differ between callers; this keeps an App Level block reusable and prevents hidden dependencies on local state.
+
 
 
 ### Return Values
@@ -110,3 +114,9 @@ Often, your Action Block may return a value. For example, in our Product Cart Pa
         allow="clipboard-write">
     </iframe>
 </div>
+
+Use **Add Return Value** to terminate the block with a value that matches its declared return type. A caller can use that output only after the Action Block completes; keep the call blocking when a later action depends on the result.
+
+## Verify an Action Block
+
+Run the block from at least two intended callers with normal, empty, null, and error inputs. Confirm required parameters are supplied, the block reads only values available in its declared scope, every return path produces a compatible value, and caller actions that use the output wait for completion.

@@ -16,8 +16,9 @@ tags:
   - Backend Logic
 ai_queries:
   - create and test a REST API call in FlutterFlow
+last_verified: 2026-09-02
 ---
-# Create & Test API Call
+# Create & Test API Calls
 
 In this guide, you'll learn how to create and test API calls in FlutterFlow. Integrating API calls allows your app to interact with external services, bringing in real-time data and functionality that enhances your app's capabilities.
 
@@ -65,10 +66,10 @@ The Method Type specifies the type of operation the API call will perform. Here�
 
 ### Dynamic API URLs
 
-If you want to use a dynamic URL, for example, `<https://reqres.in/api/users/2>` where 2 is dynamic and `<https://reqres.in/api/users?page=5>` where 5 is dynamic:
+If you want to use a dynamic URL, for example, `https://example.com/api/users/2` where `2` is dynamic:
 
-1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
-2. And then, [**create a new variable**](rest-api.md#creating-variables) with the same name you provided inside the brackets.
+1. Replace the hard-coded path value with a meaningful name in square brackets (for example, `https://example.com/api/users/[user_id]`). Use the **Query Parameters** section instead for values after `?`.
+2. [Create a variable](rest-api.md#creating-variables) with the same name and a compatible data type.
 
 The further instructions are based on the **Method Type** you selected.
 
@@ -99,8 +100,8 @@ A demo of using a dynamic URL in a GET request is as follows:
 
 To add such an API call:
 
-1. Replace the hard-coded value with a meaningful name inside the brackets (e.g., from `https://reqres.in/api/users/2`to `https://reqres.in/api/users/[user_id]`).
-2. And then, [create a new variable](rest-api.md#creating-variables) with the same name you provided inside the brackets.
+1. Replace the hard-coded value with a meaningful name inside square brackets (for example, change `https://example.com/api/users/2` to `https://example.com/api/users/[user_id]`).
+2. [Create a variable](rest-api.md#creating-variables) with the same name.
 
 The DELETE API Call can also be defined similarly; just make sure you select the **Method Type** as ***DELETE***.
 
@@ -127,10 +128,6 @@ The PUT and PATCH API calls can be defined similarly; make sure you enter a vali
 ## Grouping API calls
 
 You can create a group of API calls that share the same base URL. Grouping the API calls helps you add all request headers (e.g., auth token) at once, and they will be automatically added for all the API calls inside the group.
-
-:::warning
-For [**private APIs**](rest-api.md#private-api-calls), headers defined within the group will not be automatically included. You'll need to manually add headers for APIs marked as private.
-:::
 
 To create the API Group:
 
@@ -180,8 +177,12 @@ To test the API call along with its response, follow the steps below:
 1. Select an API call you have already created or are currently defining, and go to the **Response & Test** tab.
 2. On the left side, you will see the **Variables** section, where you can enter the values for the variables defined for your API call.
 3. On the right, the **Preview** section lets you check the API URL, request headers, request body, and response. In the **Test Response** tab, you can view the full API response, including both the JSON format and raw body text, as well as the response header.
-4. Click **Test API Call** to trigger the API call. You'll notice that the status of the GET request is displayed, and if it's successful (status code `200`), the result returned from that request will also be displayed below.
+4. Click **Test API Call** to send the request. The response shows the HTTP status, headers, JSON representation when available, and raw body. FlutterFlow treats status codes from `200` through `299` as successful.
 5. Any value of the JSON result can be accessed by [defining the JSON path](rest-api.md#json-path).
+
+:::warning
+**Test API Call sends a real request.** A POST, PUT, PATCH, or DELETE test can create, change, or delete data. Use test credentials and a non-production endpoint or payload whenever the operation has side effects. Never paste a production secret into a client-visible variable.
+:::
 
 <div class="video-container"><iframe title="Create & Test API Calls interactive tutorial" src="https://www.loom.com/embed/7b84e0e372924547b4779bfae3c4daeb?sid=22f42516-d522-4362-9ae4-b4aac4947fc7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
@@ -220,9 +221,9 @@ Go to your project and follow the steps below to define the Action to any widget
     1. Select the **Group or Call Name** from the dropdown.
     2. Optional: If your API call requires variables (e.g., auth token, query parameters, user id, etc.), pass their value by clicking on the **+ Variable** button.
     3. The **Action Output Variable Name** helps you retrieve the response of an API call. By default, we set it to any random name. However, you can change it to a meaningful name if you wish to. (e.g., loginResponse).
-    4. You can add a conditional action that checks if the API call is succeeded.
-    5. If the API call is succeeded, all actions under the TRUE path will be executed. For example, [navigate](../../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) to the home page if the login is successful.
-    6. If the API call is failed, all actions under the FALSE path will be executed. For example, [showing a snackbar](../../../ui/pages/page-elements.md#snackbar) if the login is unsuccessful.
+    4. Add a conditional action that checks the API response's **Succeeded** value.
+    5. Under the TRUE path, handle successful `2xx` responses—for example, [navigate](../../../../ff-concepts/navigation-routing/page-navigation.md#navigate-to-action) after a successful login.
+    6. Under the FALSE path, handle non-`2xx` responses—for example, [show a Snackbar](../../../ui/pages/page-elements.md#snackbar). Also design for timeouts and malformed response data.
 
 <div style={{
     position: 'relative',
@@ -248,3 +249,7 @@ Go to your project and follow the steps below to define the Action to any widget
     </iframe>
 </div>
 <p></p>
+
+## Verify an API definition
+
+Test representative valid, invalid, unauthenticated, non-`2xx`, empty, malformed, and slow responses. Confirm URL and query substitution, headers, body encoding, response types, JSON paths, and every success/error branch. For grouped calls, verify the shared base URL, variables, and headers on more than one endpoint.
