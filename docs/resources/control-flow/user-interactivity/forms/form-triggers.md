@@ -21,6 +21,7 @@ description: >-
   Form Triggers in FlutterFlow allow you to respond dynamically to user input on
   widgets like dropdowns, sliders, toggles, and text fields.
 sidebar_position: 4
+last_verified: 2026-09-02
 ---
 # Form Triggers
 
@@ -57,7 +58,7 @@ These triggers are especially useful when you want to conditionally execute diff
 
 - **Switch – Enable Dark Mode:** User toggles a Switch to enable Dark Mode. Action under the *On Toggled On* trigger sets the dark mode.
 - **Checkbox – Agree to Terms:** User checks a Checkbox labeled “I agree to the terms and conditions.” The *On Toggled On* trigger enables the Submit button. If the user unchecks it, the *On Toggled Off* trigger disables the button again.
-- **CheckboxListTile – Select Notification Channels:** User checks or unchecks options like Email, SMS, or Push Notifications. Each toggle fires either *On Toggled O*n or *On Toggled Off* to update selected preferences in the backend.
+- **CheckboxListTile – Select Notification Channels:** User checks or unchecks options like Email, SMS, or Push Notifications. Each toggle fires either *On Toggled On* or *On Toggled Off* to update selected preferences in the backend.
 
 :::
 
@@ -79,7 +80,7 @@ It’s ideal for enabling live form validations, updating app state as the user 
 :::tip[Possible use cases]
 
 - **TextField – Enable Button When Email Is Entered:** As the user types in an email TextField, action under the *On Change* trigger checks if the input is a valid email. If it is, it enables the Continue button.
-- **Pincode – Auto Submit When Complete:** When a user finishes entering a 6-digit code in a Pincode widget, action under the *On Change* trigger checks if the full code is entered and triggers form submission or a backend call.
+- **Pincode – Update While Typing:** As the user enters a code, an action under *On Change* can update helper UI. Use the Pincode widget's **On Completed** trigger when an action should run only after the configured number of characters has been entered.
 
 :::
 
@@ -113,3 +114,11 @@ To use the **On Focus Change** trigger:
 4. Define the actions to trigger, such as showing helper text, validating input, or updating the UI based on focus.
 
 ![on-focus-change](imgs/on-focus-change.avif)
+
+## Read the current value
+
+Within a trigger's action flow, select **Widget State** and then the triggering form widget to read its current value. Treat **On Change** as a high-frequency event: avoid unnecessary backend requests on every keystroke, or add debouncing where the widget provides it.
+
+## Verify form triggers
+
+Run the page in **Test Mode** and exercise each transition twice. Confirm that **On Selected** runs after a value changes, toggle-on and toggle-off flows remain distinct, **On Change** receives the current text, **On Completed** waits for a complete PIN, and **On Focus Change** handles both gaining and losing focus using the current focus state.

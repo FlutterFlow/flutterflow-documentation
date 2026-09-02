@@ -15,10 +15,11 @@ keywords:
   - data integrity
 description: Learn how to add Form Validation widget in your FlutterFlow app.
 sidebar_position: 2
+last_verified: 2026-09-02
 ---
 # Form Validation
 
-You can add validations to input fields by wrapping them inside the Form widget. The Form widget enables you to validate user inputs and display appropriate messages when validation criteria are not met.
+You can validate supported input fields by placing them inside the **Form Validation** widget. The widget coordinates validation and displays the messages you configure when input does not meet the required criteria.
 
 For example, you could use it to check if a user has given a valid email and password. This makes it easy to handle user input and ensure that the data is correct before it is submitted to the server or stored locally.
 
@@ -61,7 +62,7 @@ Building and validating a *Form* includes the following steps:
 
 A form widget can only validate if there are any input fields. Here's an example of adding input fields for the signup form.
 
-1. First, add the **Form** widget itself from the **Form Elements**.
+1. First, add the **Form Validation** widget from **Form Elements**.
 2. Inside the form, add the **Column** widget from the **Layout Elements** tab.
 3. Now, add two [**TextFields**](form-widgets/text-field.md) (one for email and one for password).
 4. Add a [**Button**](../../../ui/widgets/basic-widgets/button.md) widget and then add **Date/Time Picker** action to get the date of birth.
@@ -111,13 +112,13 @@ After adding input fields, they will be available to be validated using the form
 </div>
 <p></p>
 
-3. You can also choose to validate the input using our predefined validators or by creating the custom one. To do so, you can set the **Text Validator** to the one you need.
+3. You can also choose a predefined validator or create a custom one with **Text Validator**.
     1. If the required validation is not on the list, you can select **Custom Regex** and specify your own **Regex (Dart/JS)**. Here are some examples of *Custom Regex*:
 
 
         | Examples | Regex (Dart/JS) |
         | --- | --- |
-        | IP address (e.g., 192.168.1.1) | ^\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}$ |
+        | Four dot-separated numeric groups (structural check only) | ^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$ |
         | Time in the 24-hour format (e.g., 13:45) | ^([01]?[0-9]|2[0-3]):[0-5][0-9]$ |
     2. Also, provide a message in **Invalid Text Error Text**. This will be displayed If validation for the *Custom Regex* fails.
 4. You can also add validation on certain actions that can be used inside the form, such as *Date/Time Picke*r and *PlacePicker*. To do so, find the action name and tick the box on the right side.
@@ -134,7 +135,12 @@ Follow the steps below to add this action to any widget.
 2. Select **Actions** from the properties panel (the right menu), If it's the first action, click **+ Add Action** button. Otherwise, click the "**+**" button below the previous action tile (inside *Action Flow Editor*) and select **Add Action**.
 3. Search and select the **Validate Form** (under *Widget/UI Interactions*) action.
 4. Set the **Select Form to Validate** to your **Form name**.
-5. You can chain the next action that will be triggered if the validation passes.
+5. Leave **Terminate if Validation Fails** enabled when subsequent actions should run only after valid input. Disable it only when you need the validation action output for your own conditional branch.
+6. Add the submission action after validation or in the valid branch.
+
+:::warning
+The regex example above checks the shape of an IPv4-like string; it does not restrict each group to the valid `0`–`255` range. Use a stricter expression or a custom function when range validation matters.
+:::
 
 
 <div style={{
@@ -166,7 +172,7 @@ Follow the steps below to add this action to any widget.
 
 Rather than displaying an error message after the user submits the form, you can provide real-time feedback as they type in the *TextField* widget to indicate validation errors. This feature can be particularly useful for lengthy forms where it can save the user's time and effort.
 
-To auto validate a form, select **TextField >** move to the **Properties Panel > Add validations >** and then enable the **Automatically Validate**.
+To auto validate a form, select the **Form Validation** widget, open **Validation** in the Properties Panel, and enable **Automatically Validate**. This validates text fields as their values change instead of waiting for a **Validate Form** action.
 
 <div style={{
     position: 'relative',
@@ -233,6 +239,10 @@ To validate a form on *TextField* *On Submit*:
 3. Search, and select the **Validate Form** (under UI Interactions) action.
 4. Set the **Select Form to Validate** to your **Form name**.
 
+:::note
+Form validation cannot be evaluated in Preview Mode. Use **Test Mode**, **Run Mode**, or a deployed build to verify validation behavior.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -288,3 +298,7 @@ If you prefer watching a video tutorial, here's the one for you:
     </iframe>
 </div>
 <p></p>
+
+## Verify form validation
+
+Test every rule at its boundary: empty input, one character below and above length limits, valid and invalid pattern values, and required action-based fields. Confirm that invalid input blocks the submission path, each error message appears next to the intended field, auto-validation occurs at the expected time, and a valid submission runs exactly once.

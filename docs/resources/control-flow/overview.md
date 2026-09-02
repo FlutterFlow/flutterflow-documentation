@@ -21,6 +21,7 @@ sidebar_position: 1
 description: >-
   Control flow in programming refers to the order in which individual
   statements, instructions, or function calls are executed or evaluated.
+last_verified: 2026-09-02
 ---
 # Control Flow & Logic
 
@@ -58,7 +59,7 @@ and deleting data from databases or via APIs.
 
 
 
-Let's dive into few more key concepts:
+Let's examine a few more key concepts:
 
 ## Functions
 
@@ -113,3 +114,16 @@ data or performing calculations. In FlutterFlow, you can use
   manipulation code written in **Dart**, used to set
   properties of a
   widget or an action.
+
+## Choose the right logic tool
+
+| Goal | FlutterFlow tool |
+| --- | --- |
+| Calculate or format a value without side effects | Built-in utility or Custom Function |
+| Respond to a tap, page event, or data change | Action trigger and action flow |
+| Choose between paths | Conditional Action |
+| Repeat actions for each item | Loop action |
+| Run independent branches concurrently and wait for all branches | Parallel Actions |
+| Start work without waiting for its result | **Non-Blocking** action setting |
+
+Use **Test Mode** to verify the order of visible effects and backend calls. If a later action needs an earlier action's output, keep the earlier action blocking and place the dependent action after it.

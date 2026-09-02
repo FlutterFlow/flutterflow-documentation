@@ -11,6 +11,7 @@ keywords:
   - Expandable
   - Built In Widgets
   - Widgets
+last_verified: 2026-09-02
 ---
 # Expandable
 
@@ -30,15 +31,28 @@ When you add an **Expandable** widget, the default widget tree typically include
 
 - **Icon Properties:** For Icon Properties, check out the **[Icon](../../widgets/basic-widgets/icons.md)** guide.
 - **Expandable Properties:**
-  - **Active View:** Specifies whether the widget is currently in the collapsed or expanded state.
+  - **Active View:** Chooses whether the UI Builder is editing the Collapsed or Expanded child. It does not set the initial state in the running app.
   - **Initially Expanded:** Determines if the widget should be expanded by default when the view is first loaded.
   - **Tap Header to Toggle:** Allows the user to expand or collapse the content by tapping the header.
-  - **Tap Body to Expand/Collapse:** Defines whether tapping on the body of the expanded content can toggle its state.
+  - **Tap Body to Expand:** Allows a tap on the Collapsed child to expand the panel.
+  - **Tap Body to Collapse:** Allows a tap on the Expanded child to collapse the panel.
 
 - **Style Properties:**
   - **Width & Height:** Dimensions of the widget, which can be set to infinity to take full width or height.
   - **Background Color:** The color behind the expandable content.
-  - **Header Alignment:** Aligns the header content such as left, center, or right.
+  - **Header Alignment:** Vertically aligns the header and toggle icon at the top, center, or bottom.
 
-### Practical Use of Expanded
+- **Icon Properties:** Use **Has Icon** to show or hide the control. When enabled, you can choose separate **Collapsed Icon** and **Expanded Icon** values, plus icon size, color, and padding.
+
+By default, a new Expandable starts collapsed, toggles when its header is tapped, shows an icon, and uses centered header alignment. Body-tap expansion and collapse are off until enabled.
+
+## Respond to expansion changes
+
+Use the **On Toggle** action trigger when another part of the app should respond after the panel opens or closes. For a non-dynamic Expandable, its Boolean expanded state is also available from **Widget State**. Instances created as dynamic children manage their state independently and do not expose one shared controller state.
+
+## Verify the interaction
+
+Run the page and tap the header. The Collapsed child should be replaced by the Expanded child and the icon should change. Reload the page to confirm **Initially Expanded** controls the starting view. If body taps should toggle the panel, test the Collapsed and Expanded children separately because they use different properties.
+
+### Practical use of Expandable
 This setup allows for a highly customizable Expandable widget, making it suitable for FAQs, forms, lists, or other content that benefits from a clean, compact initial appearance with options for more detailed information. The ability to fine-tune how and where icons appear, along with the behavior of the widget's expandability, gives developers significant control over user experience and interface design.

@@ -13,6 +13,7 @@ keywords:
   - Input Field
   - Flutter
 description: Learn how to add RatingBar in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # RatingBar
 
@@ -53,7 +54,7 @@ Here's an example of how you can use the RatingBar widget in your project:
 </div>
 <p></p>
 
-### Collectings Ratings from Users (Interactive RatingBar)
+### Collect ratings from users (interactive RatingBar)
 
 To collect ratings from users:
 
@@ -88,7 +89,7 @@ To collect ratings from users:
 
 ### Setting The Rating Value
 
-The Rating can be set by inputting an amount or set from a variable. This is only for a RatingBar that is not interactive.
+For an interactive RatingBar, **Initial Rating** sets the starting value before the user makes a selection. For a non-interactive RatingBar, **Rating** controls the displayed value and can include a decimal such as `1.5` for a partially filled icon.
 
 To manually set the Rating value for the RatingBar:
 
@@ -96,9 +97,7 @@ To manually set the Rating value for the RatingBar:
 2. Move to the Property Editor and scroll down to the **Rating Bar Properties** section.
 3. Find the **Rating** property and change the default value.
 
-:::info
-You can also enter the value in decimal such as 1.5. When a decimal is used, a portion of the icon will be colored.
-:::
+An interactive RatingBar stores the user's current selection as a Double in **Widget State**. Add an **On Change** action to save or respond to the new value. A non-interactive bar is display-only and does not expose a changing widget-state value.
 
 <div style={{
     position: 'relative',
@@ -266,6 +265,10 @@ To change the Axis:
 </div>
 <p></p>
 
+## Verify the interaction
+
+Run the page and select several ratings. Confirm that **Widget State** and the **On Change** action receive the selected value. Turn off **Interactive** and verify that the same bar no longer accepts input and displays the configured **Rating**, including any intended partial icon.
+
 ## Related documentation
 
-See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.
+See [Widget State](/concepts/state-management/widget-state) for using the selected value and [Form Actions](/resources/forms/form-actions) for submitting form data.

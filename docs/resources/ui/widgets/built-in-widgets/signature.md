@@ -11,6 +11,7 @@ keywords:
   - Component
   - Widget
 description: Learn how to add Signature widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # Signature
 
@@ -23,7 +24,7 @@ You can use this widget to get the user consent on an agreement or contract in d
 Here's an example of how you can add the Signature widget to your project:
 
 1. First, drag the **Signature** widget from the **Form Elements** tab (in the Widget Panel) or add it directly from the widget tree.
-2. Move to the properties panel, scroll down to the **Signature** section and adjust the **width** and **height** of the widget.
+2. In **Properties > Signature**, set the canvas width and height, **Pen Color**, **Pen Stroke Width**, visible **Background Color**, and **Export Background Color** used in the saved PNG. A new Signature is 120 pixels high, uses the available width, and exports on a white background.
 
 <div style={{
     position: 'relative',
@@ -106,8 +107,8 @@ Follow the steps below to define the Action to any widget.
 1. Select the **Widget** (e.g., Button) on which you want to define the action.
 2. Select **Actions** from the Properties panel (the right menu), and click **Open**. This will open an **Action Flow Editor** in a new popup window.
     1. Click on the **+ Add Action**.
-    2. On the right side, search and select **Upload Signature**.
-    3. Set the **Signature to Upload** to the name of the signature widget. (i.e., Signature by default).
+    2. Search for and select **Upload Signature**.
+    3. Set **Signature to Upload** to the Signature widget. Optionally enable **Crop Exported Image** to crop the PNG to the drawn area instead of keeping the full canvas.
 3. Click **Close**.
 
 <div style={{
@@ -153,7 +154,7 @@ Here are the steps in detail:
     6. Click on the Field name until you see the fields that store the slider value.
         1. Set the **Value Source** to **From Variable**.
         2. Click on the **UNSET** (this will open a popup on the left side).
-        3. Select the **Widget State** and then select **Uploaded Signature URL**.
+        3. Select **Widget State**, then choose the **Uploaded Signature URL** created by the specific Upload Signature action.
     7. **Close** the action flow editor.
 
 <div style={{
@@ -193,6 +194,10 @@ Follow the steps below to define the Action to any widget.
     2. Select the **Signature Fields** from the list below. This helps when you have multiple signature widgets on a page and want to clear only selected one(s).
 3. Click **Close**.
 
+:::note
+**Upload Signature** requires Firebase Authentication and Firebase Storage, and it does not upload in Preview Mode. Test it in Run Mode or a deployed build with an authenticated user. **Clear Signatures** only clears the selected canvases; it does not delete an image that was already uploaded or remove a URL stored in Firestore.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -217,6 +222,10 @@ Follow the steps below to define the Action to any widget.
     </iframe>
 </div>
 <p></p>
+
+## Verify the workflow
+
+In Run Mode or a deployed build, submit an empty canvas and confirm the empty-signature message appears. Then draw, upload, and verify that the action's **Uploaded Signature URL** opens the expected PNG and is saved to the intended record. Clear the canvas and confirm previously uploaded storage objects and database fields are handled according to your retention policy.
 
 ## Customization
 

@@ -15,10 +15,11 @@ keywords:
   - form management
 description: Learn how to add Set Form Field action in your FlutterFlow app.
 sidebar_position: 0
+last_verified: 2026-09-02
 ---
 # Set Form Field [Action]
 
-The **Set Form Field** action allows you to programmatically populate or update the value of any input widget—like a TextField, Dropdown, or other form elements—at runtime. This is especially useful when you want to quickly fill or modify user input fields based on user preferences (e.g., saved addresses) or pre-stored information.
+The **Set Form Field** action programmatically updates a supported input widget at runtime. Supported targets include Dropdown, ChoiceChips, Checkbox, CheckboxGroup, RadioButton, TextField, Switch, Pincode, Slider, RatingBar, and CountController. This is useful when you want to populate or modify input from saved preferences, page parameters, state, or backend data.
 
 :::info[possible use cases]
 
@@ -29,6 +30,8 @@ The **Set Form Field** action allows you to programmatically populate or update 
 :::
 
 While adding the Set Form Field action, select the target widget (e.g., `TextField`) and assign a value—this could come from a variable like `fullName` in your backend, app state, or page parameters.
+
+The selected value must match the target field's data type. Dynamically generated fields are not selectable targets, and a RatingBar target must be interactive.
 
 ![set-form-field-action.avif](imgs/set-form-field-action.avif)
 
@@ -50,6 +53,8 @@ When **Focus Field When Set** is enabled, you can set one of the following **Cur
 - **Highlight**: Selects (highlights) the entire text, letting the user immediately overwrite it.
 - **Preserve**: Maintains the cursor location as it was (if any), which is useful when the user is already typing and only part of the text has changed.
 
+For fields with a text controller, **Rebuild Type** controls whether the action also rebuilds the surrounding widget tree. Use **Rebuild** when other visible widgets depend on the new value; use **No Rebuild** when only the field needs to update.
+
 ![focus-field-when-set](imgs/focus-field-when-set.avif)
 
 :::info
@@ -57,6 +62,14 @@ You can also set form fields inside the current widget’s child component.
 <p></p>
 ![set-form-field-component](imgs/set-form-field-component.avif)
 :::
+
+:::note
+This action does not execute in Preview Mode. Use **Test Mode**, **Run Mode**, or a deployed build for verification.
+:::
+
+## Verify the field update
+
+Test the action with the target's minimum, maximum, empty, and null cases where applicable. Confirm the new value appears, focus and cursor placement match the selected option, dependent UI rebuilds when required, and a later **Reset Form Fields** action returns the field to its configured initial value.
 
 ## Related documentation
 

@@ -10,6 +10,7 @@ keywords:
   - SwipeableStack
   - Swipeable Stack
   - Built In Widgets
+last_verified: 2026-09-02
 ---
 # SwipeableStack
 
@@ -42,7 +43,7 @@ The SwipeableStack is a widget designed to stack cards or content layers that us
 
 ## Adding SwipeableStack widget
 
-To add a Stack widget:
+To add a SwipeableStack widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **SwipeableStack** widget under the **Layout Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
 2. By default, it adds four cards and is represented as **SwipeableStack Page**. To see another page in the canvas, move to the **Properties Panel >** set the **Active Page** to the card you want to see.
@@ -119,7 +120,7 @@ Here is how you can get a callback when the child widgets get swiped:
 
 1. Select the **SwipeableStack** widget.
 2. Select **Actions** from the Properties panel and open **Action Flow Editor**.
-3. Select the swipe type (among the **OnWidgetSwipe, OnLeftSwipe, OnRightSwipe, OnUpSwipe, On Down Swipe**) on which you would like to get a callback. If the swipe direction is not important to you, select **On Widget Swipe**.
+3. Select **On Widget Swipe**, **On Left Swipe**, **On Right Swipe**, **On Up Swipe**, or **On Down Swipe**. Use **On Widget Swipe** when the direction is not important.
 4. Now you can add any action that will be triggered upon receiving the selected callback—for example, showing the Snackbar message on swipe.
 
 <div style={{
@@ -312,3 +313,13 @@ There are the following types of card swipes you can add:
 - **Trigger Right Swipe**: Moves the current card from left to right.
 - **Trigger Up Swipe**: Moves the current card upwards from bottom to top.
 - **Trigger Down Swipe**: Moves the current card downwards from top to bottom.
+
+The action can control a SwipeableStack in the same page or component scope. A programmatic swipe uses the same direction callbacks as a gesture, so avoid wiring a callback back to the same control action without a stopping condition.
+
+## Dynamic children and widget state
+
+SwipeableStack can generate cards from a list. For a dynamically generated stack, **Widget State > Swipeable Stack Current Element** exposes the source item for the current card. Direction-specific triggers also run in the swiped item's context, which lets you update the corresponding backend record.
+
+## Verify the interaction
+
+Run the page and swipe once in every allowed direction. Confirm the general and direction-specific triggers, current item, loop behavior, and backend updates. Test button-driven swipes as well as gestures. If looping is disabled, verify the empty/end state after the final card.

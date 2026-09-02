@@ -11,6 +11,7 @@ keywords:
   - Transform
   - Built In Widgets
   - Widgets
+last_verified: 2026-09-02
 ---
 # Transform
 
@@ -26,13 +27,12 @@ To add a Transform widget to your app:
 tab, or add it directly from the widget tree.
 
 2. Add a child widget inside the Transform widget that you want to transform.
-3. By default, the transformation applied to a child widget is the **Skew** transformation. This type of transformation allows you to tilt the child widget, i.e., top and bottom or the left and right sides no longer remain to be parallel. To add/customize tilt to the child widget:
+3. A new Transform starts as **Rotate** with an angle of 0 degrees, so it does not initially change the child. To apply a skew instead, set **Transform Type** to **Skew**, then configure it:
 
-    1. Select the **Transform** widget and move to the properties panel.
-    5. To add tilt in the horizontal direction, find the **Skew X** property and use the slider or directly enter the value into the box. The positive value will move the top side to the left and the bottom side to the right.
-    8. To add tilt in the vertical direction, use the **Skew Y** property. The positive value will move the left side in an upward direction and the right side in a downward direction.
-    11. The negative value will move the sides in the opposite direction.
-4. Optional: To change the position of the origin (a center of the transform widget), you can use the **Transform Orgin and Alignment** options.
+    1. Select the **Transform** widget and open the Properties panel.
+    2. Set **Skew X** for horizontal skew and **Skew Y** for vertical skew. These values are angular inputs; small values produce the most predictable result.
+    3. Use negative values to reverse the direction.
+4. For Scale, Skew, or Rotate, use **Transform Origin and Alignment** to change the pivot alignment and its horizontal or vertical offset. Translate does not expose origin controls because it moves the whole painted child.
 
 <div style={{
     position: 'relative',
@@ -98,7 +98,7 @@ To change the transform type, select the **Transform** widget, move to the prope
 
 <p></p>
 
-* For **Rotate** type, use the **Rotate (degree)** property to turn the widget. The value must be in degrees (i.e., 0 to 360). By default, the widget rotates in a clockwise direction. To turn the widget anticlockwise, enter the negative value.
+* For **Rotate**, use **Rotate (degree)**. The editor slider covers 0–360 degrees; a value supplied through a variable may also be negative to rotate in the opposite direction.
 
 <div style={{
     position: 'relative',
@@ -124,6 +124,16 @@ To change the transform type, select the **Transform** widget, move to the prope
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Layout, hit testing, and animation
+
+Transform changes how its child is painted; the parent still lays out the widget at its original size and position. Leave enough surrounding space to avoid visual clipping or overlap, and test taps after translating, rotating, or scaling an interactive child.
+
+**Implicit Animation** is available for Scale and Rotate. Enabling it defaults to an ease-in-out curve over 300 milliseconds and animates later value changes. Animated Scale is uniform and uses **Scale X** as its scale value; keep Scale X and Scale Y equal when animation is enabled. Skew and Translate do not support Transform's implicit-animation option.
+
+## Verify the result
+
+Run the page and test the transform at its minimum, maximum, and neutral values. Confirm the pivot, direction, clipping, hit target, and any implicit animation. For responsive screens, test multiple sizes because a visual translation does not reserve new layout space.
 
 <p></p>
 

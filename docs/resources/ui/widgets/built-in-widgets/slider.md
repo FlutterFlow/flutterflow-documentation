@@ -13,6 +13,7 @@ keywords:
   - Input Field
   - Flutter
 description: The Slider widget is used to select a single value from a range of values.
+last_verified: 2026-09-02
 ---
 # Slider
 
@@ -92,6 +93,8 @@ The steps to build the example are as follows:
 
 See how to [trigger an action when a selection changes](../../../control-flow/user-interactivity/forms/form-triggers.md#on-selected) on this widget.
 
+After adding the action, enable **Action On Change End** to run it only when the user finishes dragging. When that option is off, **Update Delay (ms)** debounces the action while the value changes; leave it empty or set it to `0` for no delay. The Slider's **Widget State** updates to the new value before the action runs.
+
 
 ## Setting initial value
 
@@ -128,7 +131,7 @@ You can customize the appearance and behavior of the widget using the various pr
 
 ### Setting platform type
 
-You can set the platform type to *Adaptive or Android* for this widget. Selecting the Adaptive type will display the widget in its native style. That means the widget will show iOS-style rendering when running on iOS devices and Android-style rendering when running on Android devices.
+You can set the platform type to **Android** or **Adaptive**. **Adaptive** uses the platform-specific slider presentation where supported; **Android** keeps the Material presentation. A newly added Slider uses Android/Material styling.
 
 To set the platform type:
 
@@ -305,3 +308,14 @@ To show the slider value:
     </iframe>
 </div>
 <p></p>
+
+## Additional behavior
+
+- A new Slider ranges from `0` to `10` and starts at `5`.
+- If **Minimum** or **Maximum** comes from a variable, configure **Num Divisions** instead of a literal step size. Leaving divisions blank makes the slider continuous.
+- **Round Value** controls the number of decimal places exposed by the slider value and label.
+- Enable **Disable** and provide a condition to make the Slider read-only.
+
+## Verify the interaction
+
+Run the page and test the minimum, maximum, and at least one intermediate value. Confirm that **Widget State**, rounding, the displayed value indicator, and the action timing match the configuration. If the range comes from variables, test invalid or reversed bounds before publishing.

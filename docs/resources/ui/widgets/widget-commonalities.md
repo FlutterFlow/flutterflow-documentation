@@ -19,6 +19,7 @@ keywords:
   - Border Settings
 description: Learn how to control common widget properties in FlutterFlow
 sidebar_position: 6
+last_verified: 2026-09-02
 ---
 # Common Widget Properties
 
@@ -56,6 +57,8 @@ For example, you might create two separate navigation menus:
 ### Opacity
 
 The **Opacity** property controls how transparent or visible a widget appears. It accepts a value between 0 and 1, where 0 means fully transparent, 1 is fully opaque, and 0.5 results in semi-transparency.
+
+Setting opacity to `0` makes a widget visually transparent but does not remove its layout space. Use **Conditional** visibility when the widget should not participate in the layout while hidden.
 
 This property enables a wide range of creative UI effects, such as translucent buttons, overlay highlights, or smooth theme transitions.
 
@@ -191,7 +194,7 @@ A **Value Key** is used to uniquely identify widgets during [**Automated Testing
 To adjust a widget's size, click on the widget you wish to resize and navigate to the right-side Properties Panel. There, you can set the size in the following ways:
 
 - **PX (Pixels):** Enter a fixed size in pixels for a consistent dimension.
-- **% (Percentage):** Set the size relative to the screen or parent container.
+- **% (Percentage):** Set the size as a percentage of the screen dimension.
 - **∞ (Infinity):** Make the widget expand to fill the available width or height.
 
 
@@ -279,7 +282,7 @@ To change the color, navigate to a widget property that allows you to set a colo
 
 :::tip
 
-You can also assign a color using a **String variable** that contains a **CSS-style color value** (e.g., `"#FF5733"`, `"rgba(255, 87, 51, 1)"`, or `"red"`). This is especially useful when colors are stored in a database or returned from an API. Make sure the string format follows valid CSS color syntax, as FlutterFlow uses the [**`from_css_color`**](https://pub.dev/packages/from_css_color) package under the hood to parse these values.
+You can also assign a color using a **String variable** that contains a supported CSS-style color value (for example, `"#FF5733"`, `"rgba(255, 87, 51, 1)"`, or `"red"`). This is especially useful when colors are stored in a database or returned from an API. Validate remote values and provide a fallback because an invalid color string cannot be displayed as intended.
 
 This allows you to dynamically theme parts of your app based on user preferences or remote configurations.
 
@@ -395,7 +398,7 @@ This is especially helpful for previewing layout, spacing, and alignment without
 
 ## Adding Border
 
-You can add a border to any widget using the following properties:
+For widgets that expose border settings, you can configure the following properties:
 
 - **Border Color**: Choose a color manually or bind it to a variable. You can select from your theme colors (like `Primary`) or use the color picker.
 - **Border Width**: Set the thickness of the border in pixels.
@@ -435,3 +438,7 @@ Use consistent border and padding styles for buttons, cards, and containers to m
     </iframe>
 </div>
 <p></p>
+
+## Verify common properties
+
+Run the page in **Test Mode** at mobile, tablet, and desktop widths. Confirm that conditional and responsive visibility behave independently, percentage dimensions scale with the screen, opacity does not unexpectedly leave unusable layout space, dynamic colors have a valid fallback, and testing keys uniquely identify their intended widgets.

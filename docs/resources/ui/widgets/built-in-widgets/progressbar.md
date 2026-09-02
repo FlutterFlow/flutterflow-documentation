@@ -10,6 +10,7 @@ keywords:
   - ProgressBar
   - Built In Widgets
   - Widgets
+last_verified: 2026-09-02
 ---
 # ProgressBar
 The ProgressBar widget is used to represent the progress of any task. You can use the ProgressBar widget to build a UI that shows the downloading or uploading of files, sales this week, hours spent, overall score, etc.
@@ -23,8 +24,10 @@ Here's how you can add the ProgressBar widget to your project:
 3. Find the **Progress Bar Shape** dropdown and set it to either **Circular** or **Linear**.
     - **Circular**: The ProgressBar is displayed in a Circle shape. This is the default shape set to the ProgressBar.
     - **Linear**: The ProgressBar is displayed in a rectangular shape and laid out horizontally on the screen.
-4. To set the progress, find the **Progress Value** input box and enter the value between 0 and 1.0. For example, a value of 0.3 will fill 30% of the portion on the ProgressBar.
-5. To change the progress text (displayed in the center), scroll down to the **Text** section, find the Text property, and enter the value.
+4. Set **Progress Value** to a number from 0 through 1, or bind it to a numeric variable. For example, `0.3` fills 30% of the indicator. FlutterFlow constrains literal values to this range.
+5. To add centered text, configure the **Text** section. The text is independent of **Progress Value**, so bind or update both when the label must stay synchronized with changing progress.
+
+A newly added ProgressBar is circular, starts at 50%, displays `50%`, and has **Animate Progress** enabled.
 
 
 <div style={{
@@ -270,6 +273,10 @@ To change the end radius:
 </div>
 <p></p>
 
+## Verify the result
+
+Run the page and test progress values `0`, `0.5`, and `1`. Confirm that the fill, optional text, animation, colors, and selected shape match the configured values. For dynamic progress, also test loading and error states so the interface does not imply completion while the underlying task has failed.
+
 ## Related documentation
 
-See [AspectRatio](/resources/ui/widgets/built-in-widgets/aspect-ratio) for a related FlutterFlow workflow.
+See [Widget State](/concepts/state-management/widget-state) for reading widget values and [File Handling](/concepts/file-handling) for upload and download workflows that can use a progress indicator.

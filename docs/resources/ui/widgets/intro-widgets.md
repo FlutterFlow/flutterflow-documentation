@@ -11,10 +11,11 @@ tags:
   - FlutterFlow
   - Resources
   - UI
+last_verified: 2026-09-02
 ---
 # Introduction to Widgets
 
-Widgets are the building blocks of your app's user interface in FlutterFlow. Each widget represents a fundamental UI element that contributes to the overall layout and functionality of your app. In FlutterFlow, you create your app's UI by combining basic widgets like **Text, Button** and **Container** with more complex, multi-child widgets like **Rows, Column, Lists**.
+Widgets are the building blocks of your app's user interface in FlutterFlow. Each widget represents a UI element that contributes to the layout or behavior of your app. You create an interface by combining basic widgets such as **Text**, **Button**, and **Container** with layout and multi-child widgets such as **Row**, **Column**, **ListView**, and **GridView**.
 
 Understanding the parent-child relationship between widgets is crucial, as it forms the foundation of the [**Widget Tree**](#widget-tree), which defines the structure and hierarchy of your app's UI.
 
@@ -31,7 +32,8 @@ Understanding the parent-child relationship between widgets is crucial, as it fo
 - **[Theme Widgets](../../../ff-concepts/design-system/design-system.md#theme-widgets)**: Themed widgets can be reused across your app, making it easy to update styles universally. If you decide to change any properties, such as color schemes or fonts, you can update the theme widget instead of modifying each widget individually.
 
 ## Widget Tree
-The Widget Tree is a structural representation of how widgets—ranging from [atomic elements](../overview.md) like Text and Button to more [complex molecules and organisms](../overview.md)—organized within a Page. It outlines the parent-child relationships that define the layout and functionality of your UI. This hierarchy is similar to the concept of atomic design, where atoms and molecules combine to form more complex structures, ultimately creating a cohesive interface.
+
+The Widget Tree is a structural representation of how widgets—ranging from [atomic elements](../overview.md) like Text and Button to more [complex molecules and organisms](../overview.md)—are organized within a Page. It shows the parent-child relationships that define the layout and functionality of your UI. This hierarchy is similar to atomic design, where atoms and molecules combine to form more complex structures and, ultimately, a complete interface.
 
 :::info[WIDGET TREE BREAKDOWN]
 ![tree.png](../imgs/tree.png)
@@ -71,6 +73,7 @@ complete pages.
 
 In FlutterFlow, we have the following categories of widgets:
 
+- **Commonly Used Elements:** A convenient collection of widgets you use frequently. This section can overlap with the categories below.
 - [Layout Elements](#layout-elements)
 - [Base Elements](#base-elements)
 - [Page Elements](#page-elements)
@@ -135,3 +138,7 @@ Find the entire list on this [**index page**](/resources/ui/widgets#form-element
 
 Each category in FlutterFlow serves distinct purposes, helping you design both
 the appearance and functionality of your app more efficiently.
+
+## Verify a widget hierarchy
+
+Select a widget on the canvas and locate the same widget in the **Widget Tree**. Move or nest it, then confirm its indentation and parent change in the tree. Run the page in **Test Mode** to verify that the resulting layout and interactions match the hierarchy you created.

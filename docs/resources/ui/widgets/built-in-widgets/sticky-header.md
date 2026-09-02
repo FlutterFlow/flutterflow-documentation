@@ -12,6 +12,7 @@ keywords:
   - StickyHeader
   - Sticky Header
   - Built In Widgets
+last_verified: 2026-09-02
 ---
 # StickyHeader
 
@@ -51,10 +52,10 @@ For instance, In data-heavy applications where users scroll through large data t
 The StickyHeader widget consists of two primary sections: the *StickyHeader Header* and the *StickyHeader Content*.
 
 * **StickyHeader Header**: This section contains the widget that remains fixed at the top while scrolling. It is typically used to display headers, titles, or important information that should stay visible at all times.
-* **StickyHeader Content**: This section contains the scrollable widget, such as ListView or GridView, that holds the main content. It allows users to scroll through the content while the header remains in place.
+* **StickyHeader Content**: This section contains the content associated with the header. The surrounding parent performs the scrolling.
 
-:::caution[Please note]
-For the StickyHeader widget to work, you must add it inside the scrollable widget, such as Column and ListView, and make them the **Primary** scrollable widget. **Note**: When you add it inside the Column, make sure you make the column **scrollable**. This enables the desired behavior of the header to stick at the top while the content scrolls.
+:::caution[Required parent]
+StickyHeader must be a direct child of a vertically scrollable **ListView**, **GridView**, **StaggeredView**, or a **Column** with scrolling enabled. The parent does not need to be marked Primary. Avoid placing another independently scrolling list inside **StickyHeader Content** unless nested scrolling is intentional.
 :::
 
 <figure>
@@ -100,7 +101,7 @@ Here's how it looks:
 
 Here are the steps to build such an example:
 
-1. First, ensure you have a Column widget on a page. if not, add it. Also, make the Column widget **scrollable** and **Primary**.
+1. Add a Column to the page and enable scrolling, or use another supported vertically scrollable parent.
 2. Add the **StickyHeader** widget from the **Base Elements** tab.
 3. Inside the **StickyHeader Header**, add a widget that you want to stay at the top when scrolling. For this example, it's the search bar.
 4. Inside the **StickyHeader Content**, add the **ListView > Container** widgets to display a list of users.
@@ -176,3 +177,11 @@ inside to display the list of matching contacts.
     2. Now you can display the contact's details, such as name, inside the UI.
 
 <div class="video-container"><iframe title="StickyHeader interactive tutorial" src="https://www.loom.com/embed/990913b5d2ce4ae9b3884519d661ad5b?sid=74fb34c2-f08b-40e2-b0df-d0d42aa30f2b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+## Header overlap
+
+Enable **Sticky Header Properties > Allow Header Overlap** when a later sticky header may move over an earlier one. It is disabled on a newly added StickyHeader. Test the visual stacking and background opacity carefully when enabling it.
+
+## Verify the layout
+
+Run the page, scroll through the entire parent, and confirm that the header sticks only while its associated content is in view. Test more than one StickyHeader, with and without overlap, and check that no nested scroll area traps touch or wheel input.

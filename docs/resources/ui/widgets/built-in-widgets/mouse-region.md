@@ -12,10 +12,15 @@ keywords:
   - Mouse Region
   - Built In Widgets
   - Widgets
+last_verified: 2026-09-02
 ---
-# MouseRegion
+# Mouse Region
 
-The `MouseRegion` widget lets you know whenever the mouse pointer enters or exits from a widget. You could use it to build a user experience (UX), such as animating buttons when a user hovers over them and revealing or hiding menu items when a user hovers over the menu icon.
+The Mouse Region widget detects when a mouse or trackpad pointer enters or exits its child. Use it for pointer-hover experiences such as changing a cursor, animating a button, or revealing desktop navigation.
+
+:::note
+Hover is primarily a desktop and web pointer interaction. Touch-only devices generally do not produce mouse-enter and mouse-exit events, so essential actions and information must remain available through taps, focus, or another touch-friendly interaction.
+:::
 
 On this page, you will learn how to [add the MouseRegion widget](#adding-mouseregion-widget), use it to [show/hide elements](#showhide-elements-using-mouseregion), and [customize](#customizing) it.
 
@@ -60,7 +65,7 @@ Elements** tab or add it directly from the widget tree.
 
 ## Show/hide elements using MouseRegion
 
-Using the callbacks provided by the MouseRgion widget, you can show or hide a widget. The idea is to update the *App State* variable when the mouse pointer enters or exits the widget. And then use the same app state variable to add *Conditional Visibility* on a widget.
+Using the triggers provided by Mouse Region, you can show or hide another widget. Update a Boolean Page State or Component State value when the pointer enters or exits, then use that value for [Conditional Visibility](../../widgets/widget-commonalities.md#conditional). Use App State only when the hover state genuinely needs to be shared across the app.
 
 Let's see how to build the following example:
 
@@ -111,6 +116,8 @@ to
    on menu options.
 4. On both MouseRegion widgets, add an [update app state variable](../../../../resources/data-representation/app-state.md#update-app-state-action) action to set **True** when the mouse enters and **False** when the mouse exit.
 
+Mouse Region also exposes a Boolean **Hovered** value through **Widget State**. Use it when an action only needs to read the current hover state and you do not need a separate state variable.
+
 <figure>
     <div style={{
     position: 'relative',
@@ -149,7 +156,9 @@ available under the **Properties Panel**.
 
 When a mouse enters the widget, its cursor will change to the appropriate one by default. However, you can also set it to a custom one if you wish to.
 
-To customize the mouse cursor, select the **MouseRegion** widget, move to the properties panel, find the **Mouse Cursor** dropdown select the one you think fits best.
+To customize the mouse cursor, select **Mouse Region**, then choose a value from **Mouse Region Properties > Mouse Cursor**. **Automatic** defers to the surrounding widget; other choices include Click, Text, Move, Grab, resize cursors, and accessibility-related states such as Forbidden or Wait.
+
+Enable **Opaque** when this region should prevent Mouse Region widgets behind it from receiving pointer events for the same position. A newly added Mouse Region uses **Automatic** and leaves **Opaque** disabled.
 
 <div style={{
     position: 'relative',
@@ -175,3 +184,7 @@ To customize the mouse cursor, select the **MouseRegion** widget, move to the pr
         allow="clipboard-write">
     </iframe>
 </div>
+
+## Verify the interaction
+
+Run the page on web or desktop with a mouse. Enter and leave the child's visible bounds and confirm that **On Mouse Enter**, **On Mouse Exit**, the cursor, and any conditional visibility update exactly once per boundary crossing. Then test the same feature on a touch device and confirm that the non-hover alternative remains usable.

@@ -14,6 +14,7 @@ keywords:
   - Control Flow
   - FlutterFlow
   - Concepts
+last_verified: 2026-09-02
 ---
 # Control Flow Concepts
 
@@ -37,8 +38,6 @@ these evaluations, different logic sequences are executed.
 The primary conditional statements are `if`, `if-else`, and `else`.
 
 - **`if` Statement:** The if statement evaluates a condition and executes a block of code if the condition is true.
-
-The if statement evaluates a condition and executes a block of code if the condition is true.
 
 
 ![if-condition.png](functions/img/if-condition.png)
@@ -90,12 +89,14 @@ previous one to complete before starting. This is useful for tasks that depend o
   **Example:** Submitting a form, waiting for a server response, and then showing a confirmation message.
 
 
-- **Parallel Logic Flow**
+- **Parallel Logic Flow**:
   Multiple actions are executed at the **same time**, independently of each
 other. This is useful for tasks that can be done simultaneously and do not depend on each other's outcomes.
 
   **Example:** Loading data from multiple sources simultaneously to speed up the data fetching process.
+
 ![parallel-sequential.png](functions/img/parallel-sequential.png)
+
 ## Asynchronous Functions
 
 Asynchronous functions are operations that do not complete immediately and may finish at a
@@ -117,14 +118,13 @@ In the **generated code**, FlutterFlow uses the `await` keyword to pause the exe
 asynchronous function until the operation completes before proceeding to the next
 function. This approach is commonly used to handle asynchronous functions, ensuring that each operation finishes before the subsequent one begins.
 
-In the following example from **generated code**, the code **awaits** on `actions.getRandomIntAfterWait()` because it is an asynchronous function that takes around 2 seconds to complete and provide a result (in this case, a random integer).
+In the following simplified example, the generated code waits for an asynchronous action before using its result:
 ```dart
     _model.result = await actions.getRandomIntAfterWait();
     _model.text1Value = _model.result.toString();
 ```
 
-The result of the `actions.getRandomIntAfterWait()` is stored in `model.result` variable and
-then the result then set to a Text widget using the Page State variable `text1Value`.
+The result of `actions.getRandomIntAfterWait()` is stored before the page state value is updated.
 :::
 
 
@@ -133,18 +133,9 @@ Non-blocking actions, on the other hand, allow the program to continue executing
 subsequent tasks while waiting for the initial actions to complete in the background.
 
 :::tip[Generated Code]
-In the **generated code**, when an asynchronous function is made **non-blocking**, FlutterFlow removes the `await` keyword. This means the subsequent function will not wait for the asynchronous action to complete and will move to the next action immediately.
+In generated code, FlutterFlow starts a **Non-Blocking** action without awaiting its completion. The next action in the main flow can therefore run immediately. Outputs and completion-dependent side effects from the non-blocking action are not safe inputs for that next action.
 
-The previous example will no longer work because it doesn't await the asynchronous function
-`actions.getRandomIntAfterWait()`. As a result, the variable `model.result` may not be
-ready or available when `_model.text1Value = _model.result.toString();` is executed.
-
-```
-_model.result = actions.getRandomIntAfterWait();
-_model.text1Value = _model.result.toString(); // will throw errors
-```
-
-To ensure proper execution, make only those actions non-blocking whose subsequent actions do not depend on the results from these initial functions.
+Use **Non-Blocking** only when later actions do not depend on its result. Also handle failures within the detached work where possible; the main flow has already continued.
 
 :::
 
@@ -156,5 +147,11 @@ To ensure proper execution, make only those actions non-blocking whose subsequen
 | Allows the subsequent action to run **immediately** after the current one without waiting for the current action to complete. | Allows users to run two or more actions at the **same time** independently.               |
 | **Only asynchronous** functions can be made non-blocking.                  | **Both asynchronous and synchronous** functions can be included in parallel actions.      |
 | Ideal for tasks where the result of the action is not immediately needed by the next action. | Ideal for independent tasks that can be executed simultaneously to improve efficiency. |
-| Ensures the app remains responsive by not waiting for long-running tasks. | Helps in reducing overall execution time by performing multiple tasks concurrently.   |
-| **Example**: Fetching data in the background while allowing user interaction. | **Example**: Loading data from two APIs simultaneously to save time.                     |
+| Lets the configured flow continue without waiting; it does not move work to an operating-system background service. | Helps reduce overall execution time by performing multiple branches concurrently. |
+| **Example**: Starting independent analytics logging without delaying navigation. | **Example**: Loading data from two APIs simultaneously to save time. |
+
+Parallel branches run concurrently, and the action flow waits for all of them before continuing after the parallel block. Keep dependent steps in sequence rather than placing them in separate branches.
+
+## Verify execution order
+
+Add temporary UI updates before and after each action, then run the flow in **Test Mode** with fast, slow, successful, and failed responses. Confirm sequential dependencies retain their order, parallel branches do not depend on one another, and non-blocking work is not expected to provide an output to the next action.

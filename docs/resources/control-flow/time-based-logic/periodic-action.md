@@ -13,6 +13,7 @@ keywords:
   - Periodic Action
   - Time-Based Logic
   - FlutterFlow
+last_verified: 2026-09-02
 ---
 # Periodic Action
 
@@ -24,14 +25,21 @@ specific time intervals.
 
 - For tasks that need regular updates, such as fetching data from a server, monitoring system
   health, or updating a user interface.
-- In scenarios where periodic checks or maintenance tasks are required (e.g., cleaning up
-  temporary files, sending periodic notifications).
+- For in-app periodic checks while the page or component is active.
 - Implementing polling mechanisms for checking changes in state or data.
 
 ## Start Periodic Action
 
 To create a periodic action workflow, add the **Start Periodic Action** action either on the **On
 Page Load** action trigger of your page or on any widget that should start the periodic action.
+
+Configure:
+
+- **Timer Interval (ms):** Time between executions.
+- **Start Action immediately:** Run once when started instead of waiting for the first interval.
+- **Periodic Timer Name:** A unique name used to identify this periodic action.
+
+Add the actions that should repeat after the **Start Periodic Action** tile. Those attached actions become the periodic body; they are not also executed as the ordinary next step in the original flow.
 
 The properties of the Periodic Action look like this:
 
@@ -43,18 +51,18 @@ You can call the **Stop Periodic Action** action from anywhere on the page or co
 one or multiple
 periodic actions.
 
-:::danger[Dont forget to stop the Periodic Actions]
-Stopping a periodic action is crucial to prevent unnecessary resource consumption and potential
-performance issues. It ensures that tasks do not continue running in the background when they are no
-longer needed, which can help maintain the efficiency and responsiveness of your application.
+:::warning[Stop periodic work when it is no longer needed]
+Use **Stop Periodic Action** and **Choose Timer to Cancel** when the work should end before its owning page or component is disposed. FlutterFlow cancels the periodic timer when that owner is disposed, but leaving unnecessary polling active while the user remains on the page wastes network and processing resources.
 :::
+
+A Periodic Action is in-app timer logic, not an operating-system background task. Mobile platforms can pause or terminate the app, so do not use it for guaranteed background jobs, scheduled notifications, or server maintenance.
 
 ### Periodic Action vs Timer
 
 | Feature     | Timer Widget                                                                                                    | Periodic Action                                                         |
 |-------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **Purpose** | Used for single or non-repetitive timing events, often within user interfaces.                                  | Used for repetitive tasks that need to run at regular intervals.        |
-| **Usage**   | To set a countdown timer, start/stop actions based on user input, or trigger actions after a specific duration. | For background tasks, monitoring, regular updates, and periodic checks. |
+| **Usage**   | To set a countdown timer, start/stop actions based on user input, or trigger actions after a specific duration. | For repeated in-app actions, polling, or UI refreshes while the owner is active. |
 | **Example** | Countdown timer in a quiz application.                                                                          | Fetching new messages from a server every 5 minutes.                    |
 
 
@@ -72,3 +80,7 @@ longer needed, which can help maintain the efficiency and responsiveness of your
 ## Related documentation
 
 See [Timer Widget](/resources/time-based-logic/timer-widget) for a related FlutterFlow workflow.
+
+## Verify a periodic action
+
+Use a short interval in **Test Mode** and display the periodic action's tick count or another visible result. Confirm the immediate-run setting, interval, stop target, navigation/disposal behavior, overlapping-request behavior, and recovery from a failed request before increasing the production interval.

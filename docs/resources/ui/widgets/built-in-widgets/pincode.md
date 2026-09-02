@@ -13,6 +13,7 @@ keywords:
   - Input Field
   - Flutter
 description: Learn how to add the PinCode widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # PinCode
 
@@ -27,8 +28,8 @@ Before diving into form widgets, check out our guide on [**Widget States**](../.
 To add a PinCode widget:
 
 1. Open the [Widget Palette](../../../../intro/ff-ui/widget-palette.md) and locate the **PinCode** widget under the **Base Elements** tab. You can drag it into your desired location or add it directly from the widget tree or canvas area.
-2. To increase the pin length (number of values users can enter), move to the properties panel, see the **Pin Length** property, and enter the value. **Note**: You can only set this value up to 8.
-3. If you are using this widget to get a secret PIN from users, you can obscure it with a special character. To do so, enable the **Obscure Text** toggle and select the **Obscuring Character** among the *,-,?, and •.
+2. Set **Pin Length** to a value from 3 through 8. A newly added PinCode uses six characters.
+3. To hide entered characters visually, enable **Obscure Text** and select `*`, `-`, `?`, or `●` as the **Obscuring Character**.
 4. You can also enable/disable the **Hint Text** toggle and select the **Hint Character** displayed when you haven't entered anything.
 
 <div style={{
@@ -93,6 +94,10 @@ To do so:
 
 Here is an example of displaying a snackbar message that shows the entered value in the PinCode widget.
 
+:::warning
+Do not display, log, or persist a real OTP or secret PIN in plaintext. **Obscure Text** only changes what is drawn on screen; it does not encrypt the value. Send the entered value to the intended verification service over a secure connection and avoid storing it in client state.
+:::
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -127,7 +132,7 @@ You may want to trigger an action when the user taps into or exits the Pincode f
 
 ## Validation
 
-You can validate the Pincode widget to see if a user has entered any value. To do so, wrap the Pincode widget inside the [**Form**](../../../../resources/forms/form-validation#adding-form-widget) widget, In the *Form* widget, enter the error message you want to display and then trigger the [**Validate Form**](../../../../resources/forms/form-validation#3-adding-validate-action) action. This will display an error message when a user tries to submit the form without a pincode value.
+You can validate whether a user entered a value by placing PinCode inside a [**Form**](../../../../resources/forms/form-validation#adding-form-widget), configuring the field's validation message, and running the [**Validate Form**](../../../../resources/forms/form-validation#3-adding-validate-action) action. The form displays the error when submission does not meet the configured requirement.
 
 
 <div style={{
@@ -263,7 +268,7 @@ When enabled, it mimics the tap event and immediately shows the keyboard. This m
 
 ### Auto Fill
 
-When this is enabled, it can read and auto fill the code from your messages app.
+When **Auto Fill** is enabled, the operating system may offer a one-time-code suggestion from a supported SMS or credential provider. Availability and behavior depend on the platform, message format, permissions, and keyboard; it is not guaranteed and does not give the app general access to the user's messages.
 
 ![Auto Fill enabled](../../../control-flow/user-interactivity/imgs/auto-fill-enabled.png)
 
@@ -380,3 +385,7 @@ You can show/hide the cursor using the **Show Cursor** toggle and change the col
 :::info[Clear pin code value]
 See how to [**reset the pin code value**](../../../../resources/control-flow/user-interactivity/forms/form-actions/reset-form-field.md).
 :::
+
+## Verify the interaction
+
+Run the page on each target platform. Confirm that numeric mode rejects non-digits, **On Change** runs for edits, **On Completed** runs only after the configured length is reached, and **Widget State** returns the entered String. Test validation, focus changes, obscuring, and autofill separately; do not use a production secret in previews or recordings.
