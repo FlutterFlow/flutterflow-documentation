@@ -11,6 +11,7 @@ keywords:
   - Privacy And Terms Of Service
   - Privacy Terms Of Service
   - Accounts Billing
+last_verified: 2026-09-02
 ---
 # Privacy And Terms Of Service
 
@@ -18,7 +19,7 @@ keywords:
 To request deletion of your personal data, please reach out to our support team at support@flutterflow.io
 
 ### How do I request a copy of my personal data?
-To request deletion of your personal data, please reach out to our support team at support@flutterflow.io.
+To request a copy of your personal data, contact [FlutterFlow support](mailto:support@flutterflow.io) from the email address associated with your account. FlutterFlow may need to verify your identity before fulfilling the request.
 
 ### How do I unsubscribe from email communications / marketing emails?
 To unsubscribe from FlutterFlow emails, please click the “Unsubscribe” link in the footer of our emails.

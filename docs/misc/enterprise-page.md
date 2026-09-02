@@ -12,6 +12,7 @@ keywords:
   - Enterprise Support Policy
   - Whitelist URLs
   - FlutterFlow Enterprise
+last_verified: 2026-09-02
 ---
 # Enterprise
 
@@ -49,7 +50,7 @@ Depending on your Enterprise support subscription, we may also provide advisory 
 
 ### FlutterFlow Bug Policy
 
-We know that bugs can be frustrating and we work to fix these on an ongoing basis. If you think you've found a bug, please [submit an bug report](https://github.com/FlutterFlow/flutterflow-issues/issues).
+We know that bugs can be frustrating and we work to fix these on an ongoing basis. If you think you've found a bug, please [submit a bug report](https://github.com/FlutterFlow/flutterflow-issues/issues).
 
 #### **Our Approach To Fixing Bugs**
 

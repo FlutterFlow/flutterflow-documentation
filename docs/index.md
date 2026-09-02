@@ -16,6 +16,7 @@ keywords:
   - Getting Started with FlutterFlow
   - FlutterFlow
   - Getting Started with FlutterFlow guide
+last_verified: 2026-09-02
 ---
 import InfoCard from '@site/src/components/InfoCard';
 import InfoCards from '@site/src/components/InfoCards';

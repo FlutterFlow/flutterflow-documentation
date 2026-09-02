@@ -15,6 +15,7 @@ keywords:
   - developer menu
 description: Learn how to refactor your project in FlutterFlow.
 sidebar_position: 7
+last_verified: 2026-09-02
 ---
 # Refactor Project
 

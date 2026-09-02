@@ -11,10 +11,11 @@ keywords:
   - Setting Up FlutterFlow
   - Setup Flutterflow
   - Before You Begin
+last_verified: 2026-09-02
 ---
 # Create an account
 
-Create your free account to get started with FlutterFlow. After you've set up your account, you'll be able to create as many projects as you like.
+Create a free account to get started with FlutterFlow. The number of editable projects and available features depends on your current plan; see [Plans & Pricing](../../accounts-billing/plan-pricing.md) before relying on a specific limit.
 
 You can [**sign up**](https://app.flutterflow.io/create-account) via Apple, Google, or Github.
 
@@ -22,19 +23,20 @@ You can [**sign up**](https://app.flutterflow.io/create-account) via Apple, Goog
 
 The FlutterFlow application can be accessed from your browser or installed as a desktop app.
 
-### General recommendations:
+### General recommendations
 - Use a screen that is at least **1280 x 1024**
 
-### Browser recommendations:
+### Browser recommendations
 - FlutterFlow works best on **Google Chrome**
 - We recommend keeping your browser up-to-date, specifically within the latest two versions
 - You should allow pop-up and redirects and ClipBoard from _app.flutterflow.io_.
 
 <!---link to /troubleshooting/miscellaneous#i-cant-copy-paste-widgets-->
 
-### Desktop recommendations:
-- **macOS**: While FlutterFlow should work on 10.13 or higher, we recommend using 13 or higher
-- **Windows**: While FlutterFlow should work on 7 or higher, we recommend using 10 or higher
+### Desktop recommendations
+
+- Download the macOS or Windows app only from the official [FlutterFlow Desktop Apps](https://flutterflow.io/desktop) page.
+- Keep the desktop app and operating system updated. Confirm current operating-system requirements on the download page before installation.
 
 :::info
 Some Windows users may experience a crash. To fix this, install the [**Microsoft Visual C++ 2015–2022 Redistributable (both x64 and x86)**](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) from the official Microsoft site.
@@ -42,7 +44,7 @@ Some Windows users may experience a crash. To fix this, install the [**Microsoft
 
 For details on target platform system requirements, please see the [Flutter documentation](https://docs.flutter.dev/reference/supported-platforms).
 
-### Desktop vs Web:
+### Desktop vs Web
 We recommend using the desktop application for improved performance and access to features like [**local run**](../../testing-deployment-publishing/running-your-app/local-run.md).
 
-However, our desktop applications are currently in a preview phase, which may result in some instability.
+Use the web app when you do not need desktop-only capabilities. Browser permissions, local toolchains, and device access can make behavior differ between the two surfaces.

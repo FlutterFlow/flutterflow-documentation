@@ -11,16 +11,15 @@ keywords:
   - Application & Data Ownership
   - Application Data Ownership
   - Misc
+last_verified: 2026-09-02
 ---
 # Application & Data Ownership
 
 ## Intellectual Property
 
-At FlutterFlow, we champion the principle of "Own Your Code," reflecting our commitment to enabling creators to retain ownership of their work. As you develop using FlutterFlow, you own the output of your work.
+FlutterFlow is designed around the principle that customers own the applications they create and can export generated Flutter code. The current [Terms of Service](https://flutterflow.io/tos) control the legal details and take precedence over this summary.
 
-FlutterFlow incorporates open-source packages which are included in the code you export. We are diligent in our selection of packages, opting for those with commercially friendly licenses, and any FlutterFlow-generated helpers or libraries will consistently adhere to permissive licenses such as MIT or BSD-3-Clause.
-
-Please be aware that third-party Flutter packages may undergo license changes or have dependencies that are not as commercially permissive. We recommend adhering to industry-standard practices to ensure compliance with all relevant licensing requirements.
+Exported projects can include open-source packages and packages you add. Each dependency remains subject to its own license, notices, and downstream dependencies. Inspect the generated `pubspec.yaml`, resolved dependency graph, and license notices for the exact project and version you distribute; do not assume every dependency uses the same license.
 
 :::info
 Please read our [**Terms of Service**](https://flutterflow.io/tos) for full details on our Intellectual Property policies.
@@ -28,11 +27,9 @@ Please read our [**Terms of Service**](https://flutterflow.io/tos) for full deta
 
 ## Data Handling and Privacy
 
-The mobile applications you create with FlutterFlow are designed to operate independently of FlutterFlow's services, ensuring that your end-users' data remains exclusively within your application's ecosystem and does not interact with our servers.
+Generated applications connect to the services you configure, such as Firebase, Supabase, APIs, analytics, authentication, notifications, payments, and hosting. Some FlutterFlow features also use FlutterFlow-managed infrastructure. Your actual data flow therefore depends on the project configuration and deployed services; do not assume that end-user data can never pass through a particular provider.
 
-In instances where you utilize FlutterFlow's hosting services for web applications, either through our subdomain or your custom domain, we are responsible solely for delivering the frontend of the compiled Flutter web application to your end-users.
-
-FlutterFlow maintains a strict policy of non-interference with your end-users' data; we do not access, store, or collect any such data through our hosting infrastructure.
+Before release, inventory every processor and data destination, configure access controls and retention, review each provider's terms, and publish the notices and consent flows required for your users and jurisdictions. The current FlutterFlow [Privacy Policy](https://flutterflow.io/privacy) describes FlutterFlow's own processing and takes precedence over this summary.
 
 
 :::info

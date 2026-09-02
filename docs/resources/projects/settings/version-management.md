@@ -14,6 +14,7 @@ keywords:
   - FlutterFlow stable releases
 description: Learn how to manage the FlutterFlow version used for your project.
 sidebar_position: 2
+last_verified: 2026-09-02
 ---
 # Pinning Projects to Stable FlutterFlow Versions
 
@@ -24,7 +25,7 @@ To mitigate these issues, FlutterFlow offers a **version management** system tha
 However, pinning to a stable release means that you will not be able to use the latest features, and there may be bugs that are not fixed until subsequent releases. **We only recommend doing this if you have a complex app with custom code dependencies.**
 
 :::info
-Currently, the ability to pin a FlutterFlow project to a stable version is only available to **Enterprise** users.
+Version pinning is available on eligible team plans, including **Growth**, **Business**, and **Enterprise**. Check the current [plan comparison](../../../accounts-billing/new-pricing-comparison.md) because plan entitlements can change.
 :::
 
 ## When should you pin your project to a stable version?
@@ -158,7 +159,7 @@ We aim to release new stable versions of FlutterFlow approximately once a month.
 How can I see what's included in a new stable version?
 </summary>
 <p>
-We’re currently working on displaying release notes directly in the product, so you can easily review what’s been added or changed in each new stable version.
+Review the [FlutterFlow Changelog](https://flutterflow.io/flutterflow-changelog) and any migration guidance linked from the relevant release. Also compare generated dependencies and test your own project; general release notes cannot cover every custom package or platform configuration.
 </p>
 </details>
 

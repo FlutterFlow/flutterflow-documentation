@@ -12,6 +12,7 @@ keywords:
   - Style Guide
   - Variables
   - Naming Variables & Functions
+last_verified: 2026-09-02
 ---
 # Naming Variables & Functions
 
@@ -101,11 +102,11 @@ For datatype fields, we use the same convention as [State variables](#variables)
 
 ### Constants
 
-Flutter prefers using a lowercase `k` prefix for constants to indicate their immutability, especially for project-specific constants. This approach is more concise and aligns with Dart's common practices. Use **SCREAMING_SNAKE_CASE** only when contributing to global or legacy projects where it is already in use.
+Follow Dart's [lowerCamelCase guidance](https://dart.dev/effective-dart/style#do-name-other-identifiers-using-lowercamelcase) for constants. A leading `k` is an optional project convention, not a Dart requirement. Use **SCREAMING_SNAKE_CASE** only where an existing external or legacy convention requires it.
 
 :::tip[Do's]
-- **Start Constants with a k Prefix:** Always use a lowercase `k` followed by **UpperCamelCase** for constants in FlutterFlow projects.
-- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid using abbreviations unless they are widely understood. Examples: `kDefaultPadding`, `kMaxUploadSizeMb`
+- **Use lowerCamelCase:** Name constants like other Dart identifiers.
+- **Use Descriptive and Contextual Names:** Clearly describe the purpose of the constant. Avoid abbreviations unless they are widely understood. Examples: `defaultPadding`, `maxUploadSizeMb`.
 :::
 
 :::danger[Don'ts]

@@ -11,6 +11,7 @@ keywords:
   - FlutterFlow
   - UI
   - Widgets
+last_verified: 2026-09-02
 ---
 # Widget Palette
 

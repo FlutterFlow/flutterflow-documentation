@@ -12,6 +12,7 @@ keywords:
   - Plans & Pricing
   - Plan Pricing
   - Accounts Billing
+last_verified: 2026-09-02
 ---
 import Head from '@docusaurus/Head';
 import ThemedImage from '@theme/ThemedImage';
@@ -22,18 +23,21 @@ import ThemedImage from '@theme/ThemedImage';
 
 # Plans & Pricing
 :::info
-For our most up-to-date information, please visit **[FlutterFlow pricing](https://flutterflow.io/pricing)**.
-Regional discounts are available, please **[log in to FlutterFlow](https://app.flutterflow.io/)** to see the pricing for your region.
+For current prices and features, use the [FlutterFlow pricing page](https://flutterflow.io/pricing), the [plan comparison](./new-pricing-comparison.md), and the checkout shown after you [log in to FlutterFlow](https://app.flutterflow.io/). Prices, taxes, currencies, promotions, and regional discounts can vary; the checkout for your account is authoritative.
 :::
 
-## Pricing Update [June 2025]
+## 2025 pricing migration archive
 
-FlutterFlow has evolved significantly, from a visual builder to a complete development environment with features like code export, GitHub integration, branching, AI agents, and app deployment tools. As the platform has matured, so have the ways people use it. To better reflect how teams build and scale today, we're introducing updated pricing plans. These updates will help us continue improving the platform, supporting your workflows, and delivering the advanced features needed for building production-ready apps.
+:::warning[Historical information]
+The remainder of this page records the 2025 migration from the legacy Standard, Pro, and Teams plans to Free, Basic, Growth, and Business. Its deadlines and transition offers have passed. Do not use this archive to quote current prices, limits, discounts, or eligibility.
+:::
+
+FlutterFlow announced an updated pricing and packaging model in June 2025 as the platform expanded beyond its earlier plan structure.
 
 
 ### What's Changing?
 
-As part of broader improvements to the platform, FlutterFlow is updating its pricing and packaging model effective **August 18, 2025**. The update introduces new plan tiers aligned with team size, simplifies billing, and ensures better alignment between user needs and platform capabilities.
+The pricing and packaging model took effect for new users on **August 18, 2025**, followed by the documented migration period for existing users.
 
 **Key Changes**
 

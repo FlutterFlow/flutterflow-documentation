@@ -13,6 +13,7 @@ sidebar_position: 5
 description: >-
   The FlutterFlow Project APIs allow you to programmatically read, write, and
   validate YAML configuration files through REST endpoints.
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,6 +21,8 @@ import TabItem from '@theme/TabItem';
 # Project API
 
 The FlutterFlow **Project APIs** allow you to programmatically read, write, and validate YAML configuration files through REST endpoints. Using these APIs, you can automate project management tasks, integrate continuous integration and delivery (CI/CD) workflows, and apply bulk configuration updates without manual interactions with the FlutterFlow user interface.
+
+For a safe update, export the current file, preserve its version information, change only the intended fields, call **Validate Project YAML**, and apply the update only after validation succeeds. Fetch the project again before writing if another person or automation may have edited it.
 
 :::warning
 
@@ -108,6 +111,10 @@ All API endpoints require authentication using a Bearer token. You'll need to in
 ```jsx
 Authorization: Bearer YOUR_API_TOKEN_HERE
 ```
+
+:::warning[Protect project data and tokens]
+An API token can provide access to private project configuration. Keep it in a secret manager or protected environment variable, never commit it, and never include it in screenshots, logs, public bug reports, or AI prompts. Project YAML can contain proprietary configuration and references to services; handle exports as confidential project data.
+:::
 
 ## API Endpoints
 Below is a list of available API endpoints with their methods and usage descriptions.
@@ -252,7 +259,7 @@ You can download specific or all YAML configuration files from your FlutterFlow 
 - `fileName` (optional): Specific file to export (without extension). If not provided, all files are exported.
 
 #### Response
-Returns a zip file encoded as a base64 string. You will need to manually decode this base64 data into a downloadable .zip file. To do so, copy the value of `projectYamlBytes` and then you can use online tools such as [base64.guru](https://base64.guru/converter/decode/file) or [b64encode.com](https://b64encode.com/tools/base64-to-zip/) to convert and download the files.
+Returns a ZIP archive encoded as a base64 string in `projectYamlBytes`. Decode it locally; do not paste a private project export into an online converter. For example, after extracting only the base64 value to a protected local file named `project-yaml.b64`, run `base64 --decode project-yaml.b64 > project-yaml.zip` on systems that support that command. Your operating system may use a different base64 flag.
 
 ```jsx
 {
@@ -283,7 +290,7 @@ curl -X GET \
 
 ### Validate Project YAML
 
-You must validate the YAML content before applying changes to ensure it's properly formatted and contains valid values.
+Validate the complete replacement content before applying changes. A successful syntax validation does not prove that the update matches your intent, so review the diff and test the project afterward.
 
 #### Endpoint
 `POST /validateProjectYaml`
@@ -352,7 +359,7 @@ You must validate the YAML content before applying changes to ensure it's proper
 ```jsx
 curl -X POST \
   'https://api.flutterflow.io/v2/validateProjectYaml' \
-  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -H 'Authorization: Bearer YOUR_API_TOKEN' \
   -H 'Content-Type: application/json' \
   -d '{
     "projectId": "your-project-id",
@@ -443,7 +450,7 @@ You can download and use <a href="../../../../static/jsons/FlutterFlow_APIs.post
 
 
 
-First, we use the `/listPartitionedFileNames` endpoint to check if the `app-state` file exists in the project. Once confirmed, we call the `/projectYamls` endpoint to download the YAML file. The API returns a base64-encoded string representing a zip file, which we decode and download using tools like [Base64 to ZIP](https://b64encode.com/tools/base64-to-zip/).
+First, use `/listPartitionedFileNames` to check whether the `app-state` file exists. Then call `/projectYamls`, decode the returned ZIP [locally](#download-project-yaml), and inspect the current file before editing it.
 
 <div style={{
     position: 'relative',
@@ -537,13 +544,13 @@ When YAML validation fails, you'll receive detailed error information:
   ```jsx
   # 1. Validate the YAML
   curl -X POST 'https://api.flutterflow.io/v2/validateProjectYaml' \
-    -H 'Authorization: Bearer YOUR_API_KEY' \
+    -H 'Authorization: Bearer YOUR_API_TOKEN' \
     -H 'Content-Type: application/json' \
     -d '{"projectId": "project-id", "fileKey": "ad-mob", "fileContent": "showTestAds: false"}'
 
   # 2. If validation passes, apply the changes
   curl -X POST 'https://api.flutterflow.io/v2/updateProjectByYaml' \
-    -H 'Authorization: Bearer YOUR_API_KEY' \
+    -H 'Authorization: Bearer YOUR_API_TOKEN' \
     -H 'Content-Type: application/json' \
     -d '{"projectId": "project-id", "fileKeyToContent": {"ad-mob": "showTestAds: false"}}'
   ```
@@ -567,4 +574,6 @@ When YAML validation fails, you'll receive detailed error information:
 
 ## Rate Limits
 
-Please be mindful of API rate limits. If you're making many requests, implement appropriate delays between calls to avoid being rate-limited.
+The service may rate-limit requests. Avoid tight retry loops, batch related updates where supported, and use bounded exponential backoff with jitter for retryable failures. Do not retry validation or authorization errors without correcting the request.
+
+After an update, export the affected file again, compare it with the intended content, open the project in the compatible FlutterFlow version, and run the app or relevant tests. Treat a successful HTTP response as confirmation that the request was accepted—not as proof that the application still behaves correctly.

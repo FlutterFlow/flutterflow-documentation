@@ -13,8 +13,9 @@ keywords:
   - Refunds
   - Subscriptions
   - Accounts Billing
+last_verified: 2026-09-02
 ---
 # Refunds
 If you're not happy with your FlutterFlow subscription, you can [cancel at any time](./subscriptions.md#cancel-my-plan).
 
-However, there are no refunds for cancellation. In the event that the Company suspends or terminates your Account or these Terms, you understand and agree that you shall receive no refund, whether for any unused time on a subscription, any license or subscription fees for any portion of the Service, any content or data associated with your User Account, or for anything else.
+Cancellation does not ordinarily provide a refund for unused subscription time or prepaid fees. The controlling policy is the current [FlutterFlow Terms of Service](https://flutterflow.io/tos); contact [FlutterFlow support](mailto:support@flutterflow.io) for account-specific questions or where applicable law may require different treatment.
