@@ -14,8 +14,11 @@ keywords:
   - Flutter widget
   - selection menu
 description: Learn how to add Dropdown widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # Dropdown
+
+Use **DropDown** to select one value from a list, or enable **Allow Multi Select** when the destination expects a list. Option labels control what users see; option values are what the widget state returns and what you should save or compare.
 
 The DropDown widget enables users to choose from a list of options. It requires a set of items to display and an initial value to indicate the current selection. When a user selects an item from the dropdown list, the value is updated to reflect the selected item.
 
@@ -401,3 +404,12 @@ To show or hide the dropdown underline, move the **Properties Panel >** **DropDo
 By default, the dropdown options are displayed over/above the dropdown button. To display beneath/below the button, move the **Properties Panel >** **DropDown Style** > switch on the **Fix Position** toggle.
 
 ![Fix position for dropdown options](../../imgs/fix-position.webp)
+
+## Verify DropDown behavior
+
+- Ensure the initial option value matches an available option value—not merely its display label.
+- Keep option values unique when labels and values are configured separately.
+- For dynamic options, test loading, empty, error, and refreshed states.
+- If search is enabled, verify case, whitespace, and no-result behavior with realistic options.
+- If multiselect is enabled, use a list-typed destination and test reset behavior.
+- Confirm the menu is visible and correctly positioned inside scrollable, clipped, and responsive layouts on every target platform.

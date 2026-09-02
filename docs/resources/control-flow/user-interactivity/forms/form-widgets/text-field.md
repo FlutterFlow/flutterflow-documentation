@@ -14,11 +14,14 @@ keywords:
   - Flutter widget
   - text input
 description: Learn how to add TextField widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # TextField
+
+Use **TextField** to collect editable text. Choose the keyboard, capitalization, obscuring, formatting, and validation rules for the data you actually expect; these settings improve input but do not replace validation and authorization in your backend.
 
 The TextField widget allows users to enter text, numbers, and symbols in your app. You can use the TextField widget to build forms, send messages, dialogs, search, etc.
 
@@ -1031,3 +1034,12 @@ If you prefer watching a video tutorial, here's the one for you:
     </iframe>
 </div>
 <p></p>
+
+## Verify TextField behavior
+
+- Test empty, valid, invalid, minimum, maximum, pasted, and autofilled values.
+- Treat input filtering as a typing aid, not validation. Validate again before submission and on the server for security-sensitive data.
+- Confirm the keyboard type, capitalization, submit action, focus order, and autofill hint on real Android and iOS devices.
+- For password fields, verify obscuring and reveal behavior and never log or persist the password in app state.
+- If **Update Page on Change** or an **On Change** action performs expensive work, debounce the operation or move it to an explicit submit action.
+- Test read-only, disabled, multiline, maximum-length, and error states with screen readers and large text.

@@ -16,6 +16,7 @@ keywords:
   - Control Flow
   - FlutterFlow
   - pub.dev
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -340,7 +341,7 @@ At present, testing this action isn't possible in Test mode, but you can use the
 </div>
 <p></p>
 
-## Set Dark Mode Setting [Action]
+## Set Dark Mode Settings [Action]
 
 Using this Action, you can set the app theme to Light/Dark or set it as per the system.
 
@@ -408,12 +409,12 @@ There are three types of the mode you can set:
 - **Dark Mode**: Set the theme mode to Dark.
 
 
-Go to your project page on FlutterFlow and follow the steps below to define the Set Dark Mode Setting Action to any widget.
+Go to your project page on FlutterFlow and follow the steps below to define the **Set Dark Mode Settings** action on a widget.
 
 1. Select **Actions** from the [properties panel](../../../intro/ff-ui/builder.md#properties-panel) (the right menu)
 2. Click **+ Add Action** button
 3. Choose a gesture from the dropdown among **On Tap**, **On Double Tap**, or **On Long Press**.
-4. Select the **Action Type** as **Set Dark Mode Setting**.
+4. Select the **Action Type** as **Set Dark Mode Settings**.
 5. Set the **Setting Source** to **Select Setting**.
 6. Set the **Dark Mode Setting** to any amongst the **From System**, **Light Mode**, **Dark Mode**.
 
@@ -626,3 +627,13 @@ Follow the steps below to add this action to any widget.
     </iframe>
 </div>
 <p></p>
+
+## Verify utility actions
+
+Test utility actions on every target platform before release:
+
+- Confirm picker cancellation as well as selection, and handle a null or unchanged picker state when the user dismisses the dialog.
+- For **Biometric Verification**, test a successful match, a failed match, a device with no enrolled biometric, and the **Allow Biometric Only** setting. Branch on the action output rather than assuming authentication succeeded.
+- **Copy to Clipboard** is not supported in Test Mode; use Run Mode or a built app.
+- **Send Email**, **Call Number**, and **Send SMS** open an external OS application. A simulator, browser, or device without a configured handler may not complete the handoff, and the action cannot guarantee that the user sends the message or places the call.
+- Verify **Set Dark Mode Settings** with **From System**, explicit light and dark modes, and—if used—a Boolean variable (`true` for dark and `false` for light).

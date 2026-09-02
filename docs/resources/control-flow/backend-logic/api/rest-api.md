@@ -13,12 +13,15 @@ keywords:
   - Backend Logic
   - Control Flow
   - FlutterFlow
+last_verified: 2026-09-02
 ---
 # API Calls
 
-On this page, you will learn the most basic knowledge on various concepts for adding an API call to your project. They are the building blocks of adding an API call. Depending on the API's definition, you may utilize some or all of these concepts to successfully implement the API call in your project.
+Use **API Calls** to connect a FlutterFlow app to an HTTP endpoint. Define the method and URL, add any headers, query parameters, variables, or body required by the provider, then test the call and map the response before using it in an action or backend query.
 
-Here are they:
+Always follow the API provider's contract. FlutterFlow configures the request, but it does not determine which method, authentication scheme, content type, parameters, or response shape the endpoint accepts.
+
+This guide covers:
 
 * [Headers](#headers)
 * [Query Parameters](#query-parameters)
@@ -120,8 +123,8 @@ To pass the static auth token:
 
 You would probably want to pass the auth token returned as a response in the login API call. Such a token changes every time when you log in. Hence, you need a way to pass the dynamic token.
 
-:::warning[How to save an authentication token?]
-After the login call is succeeded, ensure you save the authentication token in an app state variable (with Persisted -> True). Check the visuals below:
+:::warning[Store authentication tokens carefully]
+After a successful login call, save the token only for as long as your authentication design requires. Do not enable **Persisted** merely for convenience: persisted app state is client-side storage and must not be treated as a place for server secrets. Prefer the authentication provider's supported session handling where available, and use a [private API call](#private-api-calls) for credentials that must never reach the client.
 
 ![api-token-variable.png](../imgs/api-token-variable.png)
 :::
@@ -161,7 +164,7 @@ An example of an URL with query parameters looks like this ([NASA Open API](http
 
 Here, `start_date`, `end_date`, and `api_key` are the query parameters passed to receive the specific data.
 
-Here's another example, this API call `<https://www.breakingbadapi.com/api/characters?limit=20&offset=0>` has two query parameters. The `limit` parameter specifies 20 items to load per page, and the `offset` specifies the number of items to skip. This is called offset-based pagination.
+For an offset-based pagination endpoint, a URL such as `https://api.example.com/items?limit=20&offset=40` asks for 20 items after skipping the first 40. Parameter names and pagination behavior vary by provider.
 
 ### Passing query parameters
 
@@ -243,7 +246,7 @@ Here's how you can use a variable to create a dynamic base URL:
 
 ## Body
 
-You can send data (as a request body) while calling the API of methods POST, PUT, or PATCH by defining them inside **Body**. The most common type is JSON format which is the easiest way of passing data inside the body of the reqest.
+You can send data in a request body for methods such as POST, PUT, or PATCH by defining it inside **Body**. JSON is a common format, but use the content type required by the API provider.
 
 ### Creating Request Body
 
@@ -552,9 +555,8 @@ This will return the email of all the objects inside the data.
 </details>
 
 :::warning[Important]
-JSON keys must start with a letter, an underscore, or a dollar sign. They
-cannot begin
-with a numeric character. However, in cases where you have keys with numeric prefixes, such as `$.0_image`, you can access them using bracket notation, like this: `$.["0_image"]`.
+JSON object keys may contain characters that do not work with JSONPath dot notation. For keys
+with spaces, punctuation, or numeric prefixes, use bracket notation with a quoted member name—for example, `$['0_image']`.
 :::
 
 :::info
@@ -628,11 +630,15 @@ To use a predefined JSON Path, first, select your API response. Then, set the **
 
 ## Advanced Settings
 
-You can make the API call private and change the proxy settings using advanced settings.
+You can protect secrets, process streaming responses, configure testing proxies, cache responses, force UTF-8 decoding, and attach interceptors in advanced settings.
 
 ### Private API Calls
 
-Making an API call private is helpful if it uses tokens or secrets you don't want to expose in your app. Enabling this setting will route this API call securely via the Firebase Cloud Functions.
+Making an API call private is appropriate when it uses tokens or secrets that must not be included in the generated client app. FlutterFlow deploys a server-side function that performs the request on the app's behalf.
+
+:::warning[Private does not mean unauthenticated]
+**Make Private** keeps configured secrets out of the client bundle, but it does not by itself restrict who can invoke the deployed endpoint. Enable **Require Authentication** when callers must be signed in, and enforce any additional authorization required by your application.
+:::
 
 ![private-cloud-func.png](imgs/private-cloud-func.png)
 
@@ -694,7 +700,7 @@ When working with APIs that send data continuously, like Server Sent Events (SSE
 Imagine you're building a live sports score application. The API provides real-time updates on match scores. To handle this continuous stream of data, you need to enable this option.
 
 :::info
-You can usually determine if an API supports streaming by checking its documentation. Look for keywords like "event stream" or "processing chunks.
+You can determine whether an API supports streaming from its documentation. Look for terms such as "server-sent events," `text/event-stream`, or "streaming response." This setting is for a long-lived HTTP response; it does not turn an arbitrary WebSocket API into an SSE API.
 :::
 
 :::note[Learn More]
@@ -737,14 +743,14 @@ Let's see how to add an interceptor:
 3. Enter the **Action Name**.
 4. In the boilerplate code, add your custom code within the `onRequest` function for request interception and modification and within the `onResponse` function for response interception and modification.
 
-:::tip
-You can copy the boilerplate code into ChatGPT and request the completion for the specific interceptor code. Here is an [example](https://chat.openai.com/share/9fec2562-4a17-4b4c-8bf2-88043c9dae57). However, final adjustments may be needed.
+:::tip[Using an AI assistant]
+When asking an AI assistant to help complete an interceptor, include the provider's request and response contract, the intended header or transformation, and the generated function signature. Remove API keys, tokens, customer data, and other secrets from the prompt. Review the result and test both successful and failing responses before publishing.
 :::
 
 1. **Save Action** and check for any errors.
 2. The newly created interceptor will be added to the **API interceptors** list.
 
-:::tip[Additonally]
+:::tip[Additionally]
 * You can add multiple interceptors to any API call.
 * When the same interceptor is used by multiple APIs, you can create an [**API group**](../api/create-test-api-calls.md#grouping-api-calls) and
   add the interceptor under the **Advanced Group Settings**. However, you can override the interceptor for any API within the group if you wish to.
@@ -779,3 +785,14 @@ Why am I getting a “Current variable is not valid” error?
 This error typically indicates that the widget isn’t receiving the data type it expects. For example, passing a list of colors directly to a text widget will trigger the error. In such cases, convert or supply the data as a string (or another compatible type) so the widget can properly display it.
 </p>
 </details>
+
+## Verify your API call
+
+Before relying on an API call in your app:
+
+1. Use **Response & Test** with representative, non-secret values and confirm the HTTP status, response body, and response headers.
+2. Test missing, invalid, empty, and expired inputs—not only the success case.
+3. Confirm every variable's FlutterFlow type matches the value sent by the app.
+4. Validate JSON Paths and **Parse as Data Type** mappings against the provider's current response schema.
+5. For private calls, deploy the APIs, verify unauthenticated behavior, and confirm secrets are absent from the generated client.
+6. Test from the same platform and mode you will publish. CORS, network policy, OS handlers, and streaming behavior can differ between the builder test, Run/Test Mode, web, and mobile builds.

@@ -10,8 +10,11 @@ keywords:
   - Switch
   - SwitchListTile
 description: Learn how to add Switch and SwitchListTile widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # Switch Widgets
+
+Use **Switch** for one Boolean setting. Use **SwitchListTile** when the text and switch should form one tappable row. Read the current Boolean from **Widget State**, and use **On Change** when the new value must trigger an action.
 
 In FlutterFlow, **Switch** widgets provide an intuitive way for users to toggle between two states, such as on/off or enabled/disabled. They are useful for settings, preferences, and other scenarios where a simple binary choice is required. FlutterFlow offers two primary switch widgets: [**Switch**](#switch) and [**SwitchListTile**](#switchlisttile). Each of these widgets provides unique features and use cases, making it easy to incorporate toggle functionality into your app's interface.
 
@@ -310,3 +313,11 @@ To make the switch appear before the title:
     </iframe>
 </div>
 <p></p>
+
+## Verify switch behavior
+
+- Test both on and off initial values and confirm the saved destination is Boolean.
+- Test the disabled state and make it visually clear that the control is unavailable.
+- If the value is loaded asynchronously, verify that the switch does not briefly display or save the wrong default.
+- On SwitchListTile, confirm tapping the label and control produces the intended behavior and remains accessible.
+- Test light, dark, Android, and iOS/adaptive styling when those targets are supported.

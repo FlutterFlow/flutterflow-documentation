@@ -14,8 +14,11 @@ keywords:
   - Flutter widget
   - selection control
 description: Learn how to add RadioButton widget in your FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # RadioButton
+
+Use **RadioButton** when users must choose one value from a small set of options that should remain visible. Read the selected option from **Widget State**, and use **On Change** when the rest of the action flow depends on the new selection.
 
 The RadioButton widget is used to allow a user to select one option from multiple selections.
 
@@ -487,3 +490,11 @@ To change the color of selected and unselected options:
     </iframe>
 </div>
 <p></p>
+
+## Verify RadioButton behavior
+
+- Ensure the initial option exactly matches an available option.
+- Keep option values unique, especially when they are created dynamically.
+- Test selection changes, an empty options list, and any disabled state.
+- Confirm the selected and unselected styles remain distinguishable in light and dark themes.
+- Before saving or comparing the widget state, verify its type matches the destination field or condition.

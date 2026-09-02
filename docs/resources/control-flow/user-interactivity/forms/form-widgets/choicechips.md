@@ -10,8 +10,12 @@ keywords:
   - ChoiceChips
   - Choice Chips
   - Forms
+last_verified: 2026-09-02
 ---
 # ChoiceChips
+
+Use **ChoiceChips** for a compact set of visible choices. Keep multiselect disabled for exactly one selection, or enable **Allow Multiselect** when users may choose several values. The widget state is a single value in single-select mode and a list in multiselect mode, so downstream variables and conditions must use the matching type.
+
 The ChoiceChips widget allows users to select a single option from a group of chips. Each chip is presented with an icon and accompanying text, making it easy to represent various choices.
 
 You could use this widget to implement a filter feature in an e-commerce app to let users select different product attributes like size, color, or price range.
@@ -234,3 +238,11 @@ Various properties under the **Selected Chip Style** and **Unselected Chip Style
 7. Similarly, you can customize the properties under the **Unselected Chip Style**.
 
 ![Customizing unselected chip style](../../imgs/customize-unselected-choice.png)
+
+## Verify ChoiceChips behavior
+
+- Ensure every initial option exactly matches one of the current option values.
+- Test empty and dynamically changing option lists.
+- If **Allow Multiselect** is enabled, make every destination variable and backend field accept a list.
+- Confirm disabled chips cannot be changed and that selected and unselected styles remain distinguishable in light and dark themes.
+- Exercise **Select All** and **Clear All** only in multiselect mode, then verify the resulting widget state before saving it.

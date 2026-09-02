@@ -14,8 +14,12 @@ keywords:
 description: >-
   Learn how to add Checkbox, CheckboxGroup, and CheckboxListTile widget in your
   FlutterFlow app.
+last_verified: 2026-09-02
 ---
 # Checkbox
+
+Use **Checkbox** for one Boolean choice, **CheckboxListTile** when the label and control should be one tappable row, and **CheckboxGroup** when the user may select zero or more values from a list. Read the current value from **Widget State** and use **On Change** when another action must run after the selection changes.
+
 In FlutterFlow, a checkbox is a versatile input widget used to capture binary choices from users, such as true/false or yes/no options. It is ideal for situations where you need to present users with options that can be individually selected or deselected. FlutterFlow provides three primary variations of the checkbox widget: **Checkbox**, [**CheckboxListTile**](#checkboxlisttile), and [**CheckboxGroup**](#checkboxgroup). Each of these widgets offers distinct features and use cases, making it easy to tailor your app's interface to your specific needs.
 
 :::tip[Widget State]
@@ -487,3 +491,11 @@ To customize the checkbox border:
     </iframe>
 </div>
 <p></p>
+
+## Verify checkbox behavior
+
+- Confirm the initial value or initial selections are valid for the options currently supplied.
+- Test both selection and deselection, including a disabled state.
+- For a dynamic CheckboxGroup, test an empty options list and options that change after the page loads.
+- When saving a value, branch or write from the widget's current state after **On Change**; do not hard-code the value you expect the user to choose.
+- If the checkbox participates in a Form, test validation and reset behavior together with the other form fields.
