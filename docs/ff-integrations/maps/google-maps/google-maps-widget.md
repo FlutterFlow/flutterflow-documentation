@@ -13,6 +13,7 @@ keywords:
   - Widget
   - Integration
 toc_max_heading_level: 4
+last_verified: 2026-09-02
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -34,6 +35,10 @@ ensure they meet your app development needs before integration.
 
 :::info[Prerequisite]
 Ensure you have added the [**Google Map API keys**](generate-maps-keys.md#get-api-keys) before adding the Google Maps widget to your project
+:::
+
+:::warning[Location privacy]
+Request device location only when the user invokes a feature that needs it, explain the purpose, and handle denied, restricted, unavailable, and approximate-location states. Minimize retention of precise coordinates and update privacy disclosures and store declarations where required.
 :::
 
 ## Add Google Map widget
@@ -74,6 +79,8 @@ If you don't see your current location while testing, make sure you have enabled
 ![location-browser.png](../imgs/location-browser.png)
 :::
 
+Do not assume **Current Device Location** is immediately available. Provide a fallback location or loading/error state before using it as the initial map center.
+
 ## Markers
 
 A marker is an icon that appears over the map, indicating a location. To add markers:
@@ -97,6 +104,8 @@ A marker is an icon that appears over the map, indicating a location. To add mar
 
 If you choose **LatLng**, you must provide a source that contains a list of locations as Data Type
 (LatLng) (e.g., App State > [variable_name] (List of **LatLng**)).
+
+Keep marker lists bounded. Large dynamic marker sets increase query cost, memory use, and rendering work; filter to the visible or relevant data and test on representative devices.
 
 <div class="video-container"><iframe title="Google Maps Widget interactive tutorial" src="https://www.loom.com/embed/e0cf2e67ab0e45b7aedc3bb96b212d73?sid=38a4bdce-89f5-4278-aaa2-4ad8e859f925" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 

@@ -15,6 +15,7 @@ keywords:
   - Place Picker
   - Widget
   - Integration
+last_verified: 2026-09-02
 ---
 # Place Picker Widget
 
@@ -58,6 +59,10 @@ Here's an example from the Demo app:
 - The Place Picker **requires a Google Maps API key**. See how to [**create and add API keys**](generate-maps-keys.md#add-maps-apis) to FlutterFlow.
 - Ensure you have enabled the [**Places API**](generate-maps-keys.md#add-places-apis) from Cloud console.
 - Enable **Google Maps Platform Billing** via your Cloud console. Please note: Failing to enable the Google Maps Platform Billing will not show any place in an autocomplete list.
+:::
+
+:::warning[API compatibility and user data]
+The current widget uses legacy Places API endpoints; enabling **Places API (New)** alone is not sufficient. Confirm that the legacy API is available to your Google Cloud project. Place searches and selected location data are sent to Google and may reveal user intent or precise location, so provide appropriate disclosure/consent, minimize storage, and review Google Maps Platform terms and attribution requirements.
 :::
 <figure>
 
@@ -110,6 +115,8 @@ If you retain the Text widget, the text will update to the name of the selected 
 ## Use PlacePicker Values
 
 The selected place’s details are stored in a `GooglePlace` custom data type provided by FlutterFlow. You can access this via **Widget State > placePickerValue**, which includes fields like name, address, latitude/longitude (LatLng), city, state, country, and ZIP code. These values can be used to display content in Text widgets or perform conditional logic based on the selected location.
+
+Treat fields as optional and validate them before use. A place may not provide a postal code, city, formatted address, or precise geometry, and the user can dismiss the picker without selecting a result.
 
 <div style={{
     position: 'relative',

@@ -8,6 +8,7 @@ tags:
   - FlutterFlow
   - Integrations
   - Google Maps
+last_verified: 2026-09-02
 sidebar_position: 3
 keywords:
   - FlutterFlow
@@ -32,5 +33,7 @@ Assuming you've set up the Place Picker widget on your Google Maps widget view, 
 In our example, we've added an IconButton with a location pin icon. For the button's OnTap
 action trigger, we'll add the Move Map Center action and set the LatLng to the LatLng of the
 Place Picker's selected place. You must check if the PlacePicker value (or the variable holding your new LatLng) is set before calling the Move Map Center action.
+
+Also validate that latitude is between -90 and 90 and longitude is between -180 and 180. The action moves the existing widget's camera; it does not request location permission, geocode an address, or wait for a map widget that has not mounted.
 
 ![move-map.png](imgs/move-map.png)

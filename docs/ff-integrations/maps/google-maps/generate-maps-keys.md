@@ -14,6 +14,7 @@ keywords:
   - Google Maps
   - API Keys
   - Integration
+last_verified: 2026-09-02
 ---
 # Maps & Places APIs
 
@@ -40,12 +41,13 @@ Cloud Console](https://console.cloud.google.com/).
   Javascript API**. Select the platform you wish to support and then click **Enable**.
   If you are running on Run Mode, ensure that your Maps Javascript API is enabled.
 
+Enable only the APIs the app actually uses. Google Maps Platform requires a billing account, even when usage remains within an applicable no-cost threshold. Configure quotas, budgets, and billing alerts; budget alerts do not automatically stop charges.
+
 <div class="video-container"><iframe title="Generate Maps Keys interactive tutorial" src="https://www.loom.com/embed/b1f6d8ddcc44492a92f833dafa619ec0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p></p>
 
 :::warning
-To secure your API keys, refer to the
-[**Best Practices guide: Secure API Keys**](../../google-cloud/secure-keys.md)
+Create a separate key for web, Android, and iOS. Apply the correct application restriction and restrict each key to only the Maps Platform APIs that platform uses. Client map keys are visible in the distributed app, so restrictions—not secrecy—are the primary control. See [Secure API Keys](../../google-cloud/secure-keys.md).
 :::
 
 - Click on the Credentials menu from the left panel.
@@ -75,6 +77,6 @@ Firebase) in the Google developer console, here are the steps to create one:
 
 ## Add Places APIs
 
-You can [enable the **Places API**](https://console.cloud.google.com/apis/library/places-backend.googleapis.com) from your Google Cloud Console — make sure you are in the correct Google Cloud project. **Please note** that the current [PlacePicker widget](../../maps/google-maps/place-picker-widget.md) uses the legacy Places API. We plan to update the PlacePicker widget soon to support the new API. In the meantime, ensure that the legacy Places API is enabled for full functionality.
+You can [enable the **Places API**](https://console.cloud.google.com/apis/library/places-backend.googleapis.com) from Google Cloud Console—make sure you selected the same project as the API key. The current [PlacePicker widget](../../maps/google-maps/place-picker-widget.md) uses the legacy Places API endpoints, so the legacy **Places API** must be available for the project. **Places API (New)** alone is not a drop-in replacement for this widget. Google restricts new access to legacy services, so confirm availability in your project before committing to the PlacePicker for a new production app.
 
 ![places-api.png](imgs/places-api.png)

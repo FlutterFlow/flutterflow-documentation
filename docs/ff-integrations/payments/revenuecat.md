@@ -11,10 +11,13 @@ keywords:
   - RevenueCat
   - Payments
   - Integration
+last_verified: 2026-09-02
 ---
 # RevenueCat
 
 [RevenueCat](https://www.revenuecat.com/) simplifies implementing in-app purchases and subscriptions by handling all purchase validation operations.
+
+Use only the platform-specific **public SDK key** in a client app. RevenueCat secret API keys and store service credentials must remain in RevenueCat or a trusted backend and must never be added to FlutterFlow client code, App State, assets, or API calls.
 
 :::warning[Pub.Dev package and Limitations]
 The [**underlying package for RevenueCat**](https://pub.dev/packages/purchases_flutter) does not support web. Any functionality related to in-app purchases or subscriptions managed through RevenueCat will not be available on web platforms.
@@ -59,7 +62,7 @@ To set up the RevenueCat, follow these steps carefully:
 
    1. Return to FlutterFlow and navigate to **Settings & Integrations >** **In App Purchases & Subscriptions >** **RevenueCat**.
 
-   2. Switch on the **Enable RevenueCat**. For now, just enter any random string as your API Key (eg. `testkey`). We’ll update this later.
+   2. Switch on **Enable RevenueCat**. Use the correct RevenueCat public SDK key for the app platform before testing purchase behavior. If the immediate goal is only to produce an artifact that unlocks Play Console product setup, do not attempt purchases until the real configuration is in place.
 
    3. Now, from the toolbar menu, click **Download APK**
 
@@ -134,6 +137,8 @@ Here is an example of retrieving monthly subscription details:
 
 To manage in-app purchases and subscriptions inside your FlutterFlow app, you have to use the RevenueCat Actions. Below are the types of RevenueCat actions:
 
+Identify signed-in customers with a stable, non-guessable app user ID and define how anonymous purchases are merged when users log in. Do not use an email address as the RevenueCat user ID. For server-enforced access, verify entitlement state through RevenueCat's trusted server APIs or signed webhooks; a client-side paywall check is a user-experience control, not a general authorization boundary.
+
 - **Paywall**
 - **Purchase**
 - **Restore Purchases**
@@ -201,6 +206,8 @@ This action allows you to purchase the item. Here’s how you add it:
 ### Restore Purchases [Action]
 
 Using this action, you can allow users to re-activate the subscription they have already paid for. This is helpful when a user has reinstalled the app or logged in to a new device.
+
+Restore can transfer or alias purchases according to the RevenueCat project's configured restore behavior. Choose that behavior deliberately, disclose the account effect, and test anonymous, logged-in, reinstall, family-sharing, refund, expiration, grace-period, and cross-device scenarios.
 
 :::info
 

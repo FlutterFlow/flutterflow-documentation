@@ -15,8 +15,11 @@ keywords:
   - Cloud Storage
   - Integration
   - Security
+last_verified: 2026-09-02
 ---
 The [Firebase Storage Library][storage-library-item] provides access to the files in Cloud Storage through the Firebase SDK beyond what [FlutterFlow's built-in support](/concepts/file-handling) provides.
+
+This is an imported FlutterFlow Library. Review its current Marketplace version and changes before upgrading, and test the imported actions in a non-production project.
 
 
 [storage-library-item]: https://marketplace.flutterflow.io/item/Ec3NWw8sxqJ1tbriOIEE
@@ -30,6 +33,8 @@ To start using this library:
    The library will default to using the default bucket of your associated Firebase project. You can override this behavior by passing an explicit bucket URL to any of the actions.
 3. [Use the Custom Actions](/concepts/custom-code/custom-actions/#using-a-custom-action) and Custom Functions in your Action Flows.
 
+All client operations are constrained by the selected bucket's deployed Storage Rules. A bucket URL does not grant access to another bucket. Since February 3, 2026, Cloud Storage for Firebase requires the project to be on the Blaze plan to provision or retain bucket access, although eligible no-cost usage may still apply.
+
 
 ### Custom actions
 
@@ -42,7 +47,7 @@ To start using this library:
   * **Action result:**
     * If successful, the action result is a `fileObject` containing the full path of the uploaded file.
 
-* `listAllFilesInBucket` \- List all files in any bucket that you have read access to.
+* `listAllFilesInBucket` \- List all files in any bucket that you have read access to. Avoid listing a large bucket root from a client; use narrow prefixes and account for Storage operation cost and memory.
   * **Parameters:**
     * The `bucketName` (`String?`) to list the files from. If you leave this empty, it uses the default bucket of the associated Firebase project.
     * The `listType` (`StorageListType?`) of the items to list (files, directories, both). If left empty, the action will list both files and prefixes (folders/directories).
@@ -50,14 +55,14 @@ To start using this library:
   * **Action result:**
     * If successful, the action results in a `List` of `fileObject` elements.
 
-* `downloadFile` \- Download the data for a file that you have read access to. This downloads the actual data into your application code. If you instead want a public URL to the data, use `getDownloadUrl` instead.
+* `downloadFile` \- Download the data for a file that you have read access to. This loads the file into application memory, so enforce size and content-type limits and avoid unbounded downloads. If you instead need a shareable URL, use `getDownloadUrl` and understand its access model.
   * **Parameters:**
     * The `bucketName` (`String?`) to download the file from. If you leave this empty, it uses the default bucket of the associated Firebase project.
     * The `fullPath` (`String`) of the file whose data will be read from the bucket.
   * **Action result:**
     * If successful, the action result is an `FFUploadedFile` with the data of the file that was read from the bucket.
 
-* `getDownloadUrl` \- Get the download URL for a file in a bucket that you have read access to. This URL then provides public, read-only access to the file
+* `getDownloadUrl` \- Get a long-lived, bearer-style download URL for a file you can currently read. Anyone who obtains the URL can fetch the object without another Storage Rules check until its download token is revoked or the object/token changes. Do not use it for confidential files; keep the object private and download through authenticated SDK access instead.
   * **Parameters:**
     * The `bucketName` (`String?`) that contains the file. If you leave this empty, it uses the default bucket of the associated Firebase project.
     * The `fullPath` (`String`) of the file for which to get the download URL.
@@ -87,7 +92,7 @@ To start using this library:
   * **Action result:**
     * The action result is a `fileObject` derived from the URL.
 
-* `deleteFileFromBucket` \- Deletes a file from any bucket you have write access to.
+* `deleteFileFromBucket` \- Deletes a file from any bucket you have write access to. Confirm the exact normalized path and provide recovery or object versioning where required; this action has no application-level undo.
   * **Parameters:**
     * The `bucketName` (`String?`) that contains the file. If you leave this empty, it uses the default bucket of the associated Firebase project.
     * The `fullPath` (`String`) of the file to delete from the bucket.

@@ -16,6 +16,7 @@ keywords:
   - Setup
   - Mux
   - LiveStream
+last_verified: 2026-09-02
 ---
 # Mux Livestream
 
@@ -35,6 +36,10 @@ Mux Livestream allows you to integrate live video streaming capabilities directl
 To get started, go to **Settings and Integrations > Integrations > Mux Livestream** in FlutterFlow and enable **Mux Broadcast**.
 
 Then, create a Mux account and go to **Settings > API Access Tokens**. Click **Generate new token**, choose an environment (Development or Production), check **Mux Video** with **Write** access, name the token, and generate it. Copy the **Access Token ID** and **Secret Key**, paste them into FlutterFlow, and click **Deploy**.
+
+:::danger[Keep the Mux secret server-side]
+The Secret Key grants privileged API access. Enter it only in the dedicated FlutterFlow integration so the deployed backend can use it. Never expose it in client custom code, App State, assets, Remote Config, a playback URL, or a direct client API call. Use separate development and production tokens, grant only required permissions, restrict project access, and rotate a token after suspected exposure.
+:::
 
 
 <div style={{
@@ -72,6 +77,8 @@ The MuxBroadcast widget comes with three key properties to control the live stre
 - **Broadcast Latency**: Choose between **Standard**, **Reduced**, and **Low** latency modes. Lower latency provides faster interaction but may reduce video quality or reliability depending on the network.
 - **Broadcast Audio Channel**: Select **Stereo** or **Mono** audio. Stereo provides richer sound with left and right audio separation, while Mono offers broader device compatibility and lower bandwidth usage.
 
+Request camera and microphone access only when broadcasting begins, explain why it is needed, and handle denial or interruption. Before launch, define recording consent, retention, moderation, abuse reporting, copyright, privacy, and age-safety policies appropriate to your app.
+
 ![muxbroadcast-widget.avif](imgs/muxbroadcast-widget.avif)
 
 You can also customize the **MuxBroadcast** widget to match your app's design using various styling properties. These include:
@@ -93,6 +100,8 @@ You can manage livestreaming using the built-in action triggers available on the
 ### On Broadcast Start [Action Trigger]
 
 The actions under this trigger execute when the user clicks the **Start Stream** button. From here, you can access the livestream URL via **Widget State → Mux Playback URL** and perform tasks such as creating a new database record to indicate the livestream has started.
+
+Treat the trigger as a UI event, not authoritative delivery state. For durable state, process authenticated Mux webhooks on a trusted backend and make updates idempotent. Protect private streams with Mux's signed playback mechanism; an unsigned public playback ID or URL can be shared and viewed by anyone who has it.
 
 ![on-broadcast-start.avif](imgs/on-broadcast-start.avif)
 
@@ -144,7 +153,7 @@ To display the livestream:
 
 ### Viewing Past Livestream
 
-When a livestream ends, its original **Mux Playback URL** becomes invalid. To replay an ended session, you need to fetch the archived asset's playback URL that was automatically created during the livestream.
+After a livestream ends, the recorded asset is prepared asynchronously. To replay the archived session reliably, wait for the relevant Mux asset-ready event and store its playback ID rather than assuming an archive is immediately available.
 
 To achieve this, you will need to retrieve the live stream ID from its playback ID, then get the associated asset's playback ID from the livestream's recent assets.
 
@@ -160,4 +169,4 @@ The flow involves using three Mux APIs in sequence:
 - [**GET /video/v1/live-streams/`{LIVE_STREAM_ID}`**](https://www.mux.com/docs/api-reference/video/live-streams/get-live-stream): Retrieves the livestream details including `recent_asset_ids` array. Extract the Asset ID from this api response.
 - [**GET /video/v1/assets/`{ASSET_ID}`**](https://www.mux.com/docs/api-reference/video/assets/get-asset): Fetches the asset details to get its playback ID from the `playback_ids` array.
 
-Now, use conditional logic to check the livestream status and pass the appropriate playback URL. For example, if the broadcast is live, use the current livestream playback URL directly. If the livestream has ended, call the APIs in sequence to get the asset's playback ID and construct the archived stream's playback URL.
+Call these privileged APIs only from a private FlutterFlow API call or another trusted backend; never send the Mux Secret Key to the app. Prefer authenticated webhooks to polling the sequence. Then use conditional logic to select the live playback URL while broadcasting and the stored asset playback URL after the asset becomes ready.

@@ -15,6 +15,7 @@ keywords:
   - Storage Rules
   - Integration
   - Security
+last_verified: 2026-09-02
 ---
 # Storage Rules
 
@@ -40,6 +41,14 @@ To deploy the storage rules:
 5. To only allow accessing the images, videos, files, etc., to the users who uploaded it, enable **Make Users Uploads Private**.
 6. Click the **Deploy** button.
 7. A pop-up will open. Click **Yes** to continue and click **Deploy Now**.
+
+:::warning[Review the generated rules]
+**Make Users Uploads Private** depends on FlutterFlow's upload path conventions. Review the complete generated rules and test that owners, non-owners, unauthenticated users, and unexpected paths behave as intended. Authentication alone does not prove ownership. Add validation for allowed path, maximum size, content type, and any metadata your app relies on.
+:::
+
+If you select **Manage Outside of FlutterFlow**, keep the Firebase console or a version-controlled rules file as the source of truth. A later deployment from a different source can overwrite the active rules. Test changes with the Firebase Emulator Suite or Rules Playground before production, and remember that trusted Admin SDK code bypasses Storage Rules and needs backend authorization and IAM.
+
+Cloud Storage for Firebase requires the Blaze plan for bucket access as of February 3, 2026. Budget alerts are notifications rather than hard spending caps.
 
 <div class="video-container"><iframe title="Deploy Storage Rules interactive tutorial" src="https://www.loom.com/embed/b8c1267bb2d048308c506ee6721001da?sid=8c88648a-5980-4961-907c-2f2e0c0c4ab9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 

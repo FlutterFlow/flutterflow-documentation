@@ -11,6 +11,7 @@ keywords:
   - Razorpay
   - Payments
   - Integration
+last_verified: 2026-09-02
 ---
 # RazorPay
 
@@ -19,7 +20,7 @@ keywords:
 It provides a platform for merchants and businesses to integrate payment solutions into their websites and mobile apps. It allows customers to make online payments using various payment methods such as credit cards, debit cards, net banking, UPI (Unified Payments Interface), and digital wallets.
 
 :::warning
-Currently, publishing to the web with Razorpay enabled is restricted due to some regulations.
+FlutterFlow-hosted web publishing is unavailable when production Razorpay is enabled. Turn off the integration or deploy the exported web app outside FlutterFlow, then verify that your independent deployment and Razorpay account satisfy all applicable eligibility and compliance requirements.
 :::
 
 <div style={{
@@ -127,6 +128,8 @@ Here are the steps:
 8. Set your **Business Name**.
 9. Click the **Deploy** button.
 
+The Key Secret is a server credential. Enter it only in the dedicated FlutterFlow Razorpay settings so it can be used by the deployed payment functions. Never copy it into App State, client custom code, an API call made directly from the app, assets, or Remote Config. Restrict access to the FlutterFlow project and rotate the secret after suspected exposure.
+
 <p></p>
 
 ![deploy](imgs/deploy.png)
@@ -140,9 +143,9 @@ Follow the steps below to add this action:
 1. Select the widget (e.g., checkout button) on which you want to add the action.
 2. Select **Actions** from the Properties panel (the right menu), and click Open. This will open an **Action Flow Editor** in a new popup window. Click on the **+ Add Action**.
 3. Search and select the **Razorpay Payment** (under *Integrations*) action.
-4. Enter or use a variable for specifying the total amount under the **Amount** section. **Note** that the value should be specified in the currency's smallest unit.
+4. Enter or use a variable for specifying the total amount under the **Amount** section. The value must be an integer in the currency's smallest unit.
     - For example, *$24.99* should be passed as *2499* (as a round-off integer; otherwise, it would be automatically rounded); similarly, for an amount of ₹120.00, 12000 should be passed.
-    - Most probably, you'll specify this value from a variable. If you do so, you might need this [inline function](../../resources/control-flow/functions/utility-functions.md#inline-function-code-expressions) to convert the total amount in the required format: `amount.toStringAsFixed(2).replaceAll(".", "");`
+    - Do not calculate a trusted charge from a client-provided total. Recalculate product prices, discounts, taxes, currency, and the minor-unit amount on a trusted backend. Currency minor units vary, so a hard-coded two-decimal string conversion is not correct for every currency.
 5. Enter the **Currency Code** to be used for the amount, for example, *INR*, *USD*, *EUR*, or *BRL*. Make sure you enter a valid currency code; otherwise, the transaction won't go through. Download the complete [list of supported currencies](https://razorpay.com/docs/build/browser/assets/images/international-currency-list.xlsx).
 <p></p>
 
@@ -215,6 +218,8 @@ Follow the steps below to add this action:
 11. Under the **TRUE** section, add an action that will be triggered if the payment is successful.
 12. Under the **FALSE** section, add an action that will be triggered if payment is failed.
 
+The action output is useful for UI flow, but do not grant inventory, credits, downloads, or another valuable entitlement only because a client output is nonempty. Persist and fulfill the order on a trusted backend after signature verification or an authenticated Razorpay webhook, check the expected order ID, currency, and amount, and make fulfillment idempotent so retries cannot deliver twice.
+
 <div style={{
     position: 'relative',
     paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
@@ -268,3 +273,5 @@ Once you are done testing your Razorpay integration and you are ready to go **li
 6. Under **Production Credentials**, paste the **Key ID** and **Key Secret** obtained in the previous step.
 7. Click the **Deploy** button.
 8. [Test](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) your app.
+
+Before taking live payments, configure webhook signature verification, replay-safe and idempotent processing, refunds and disputes, failure recovery, monitoring, privacy disclosures, and any tax or regulatory requirements. Perform a small real transaction and refund in the production environment without exposing live credentials.

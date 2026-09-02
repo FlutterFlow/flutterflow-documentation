@@ -11,11 +11,12 @@ keywords:
   - FlutterFlow
   - Launch Maps
   - Action
+last_verified: 2026-09-02
 ---
 # Launch Map
 Using this action, you can open the Map app installed on your device. For example, you could add this action on an event page to let users know more about the place inside the map apps like Google Maps, Apple Maps, and Waze app.
 
-You can specify the Lat Long details or full address of any place to access the additional information such as directions, call details, timings, photos, street view, reviews, and more.
+You can specify coordinates or an address. The receiving map app decides which location details and actions it displays; availability varies by provider, platform, region, and installed app.
 
 <div style={{
     position: 'relative',
@@ -45,6 +46,8 @@ You can specify the Lat Long details or full address of any place to access the 
 ## Types of Map apps
 
 This action lets you specify the type of map app to open. If it's not installed, the default map app of the platform will be used. For example, opening the Google Maps on iOS devices. If not installed, it will open the default Apple Maps app.
+
+Fallback behavior can vary, so test every target platform and handle launch failure. Validate coordinate ranges and avoid placing secrets or unnecessary personal data in an address or title passed to an external app.
 
 You can launch the following types of maps apps:
 
@@ -99,4 +102,4 @@ Go to your project page on FlutterFlow and follow the steps below to define the 
 
 ## Related documentation
 
-See [AdMob](/integrations/ads/admob) for a related FlutterFlow workflow.
+See [Google Maps Widget](/integrations/google-maps/google-maps-widget) to display an interactive map inside the app instead.

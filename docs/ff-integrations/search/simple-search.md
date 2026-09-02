@@ -14,15 +14,20 @@ keywords:
   - Simple Search
   - Local Search
   - Firestore
+last_verified: 2026-09-02
 ---
 # Simple Search
 
 The simple search allows you to search the data present locally on a device. For example, you could search from the list of strings (stored in a variable) and from the Firestore collection and documents already retrieved on the user's device (displayed on the screen).
 
+Simple Search does not issue a server-side full-text query. The app must first load the candidate records, so Firestore rules, query cost, memory use, and data exposure apply to that initial dataset even when the search results show only a subset.
+
 :::caution[When to use Simple Search vs Algolia]
 We advise using a simple search only for the smaller Firestore collection (with limited records).
 Otherwise, it can be slow and/or expensive. For a more extensive collection, consider using the
 [**Algolia search**](../search/algolia-search.md).
+
+Do not broaden a backend query merely to make private records searchable on-device. Retrieve only the records the current user is authorized to access and keep the list bounded.
 :::
 
 <div class="video-container"><iframe title="Simple Search interactive tutorial" src="https://www.loom.com/embed/af535343b8b648c8b0bdaf29911e2eb3?sid=f842a537-14fa-42a5-b6bf-56fb714458a5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
