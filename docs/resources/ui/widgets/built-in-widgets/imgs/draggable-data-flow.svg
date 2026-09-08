@@ -2,15 +2,6 @@
   <title id="title">Draggable data type compatibility</title>
   <desc id="desc">Three Draggable widgets send data to a String DragTarget. String plant and String spoon are accepted because their types match, while Integer 10 is rejected because its type does not match.</desc>
 
-  <defs>
-    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M0 0L10 5L0 10Z" fill="#22a559"/>
-    </marker>
-    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M0 0L10 5L0 10Z" fill="#f06445"/>
-    </marker>
-  </defs>
-
   <rect width="1600" height="900" fill="#ffffff"/>
 
   <!-- Draggable widgets panel -->
@@ -47,13 +38,16 @@
 
   <!-- Connectors -->
   <text x="773" y="272" text-anchor="middle" fill="#168245" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type matches</text>
-  <path d="M600 297h326" fill="none" stroke="#22a559" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+  <rect x="600" y="293" width="307" height="8" rx="4" fill="#22a559"/>
+  <path d="M928 297L904 283V311Z" fill="#22a559"/>
 
   <text x="773" y="459" text-anchor="middle" fill="#168245" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type matches</text>
-  <path d="M600 484h326" fill="none" stroke="#22a559" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+  <rect x="600" y="480" width="307" height="8" rx="4" fill="#22a559"/>
+  <path d="M928 484L904 470V498Z" fill="#22a559"/>
 
   <text x="773" y="646" text-anchor="middle" fill="#d94f32" font-family="Arial" font-size="25" font-weight="700" letter-spacing="0">Type mismatch</text>
-  <path d="M600 671h326" fill="none" stroke="#f06445" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+  <rect x="600" y="667" width="307" height="8" rx="4" fill="#f06445"/>
+  <path d="M928 671L904 657V685Z" fill="#f06445"/>
 
   <!-- DragTarget panel -->
   <rect x="950" y="65" width="600" height="770" rx="24" fill="#ffffff" stroke="#b8c1d1" stroke-width="3"/>
