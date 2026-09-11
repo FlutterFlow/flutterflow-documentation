@@ -1,38 +1,37 @@
 ---
 slug: count-controller
-title: CountController
+title: Count Controller
 tags: [Form Elements]
-description: Learn how to add CountController in your FlutterFlow app.
+description: Learn how to add, configure, and use a Count Controller widget in your FlutterFlow app.
 ---
 
-# CountController
+# Count Controller
 
-The CountController widget is used to increment and decrement the count or number.
+The **Count Controller** widget lets users increase or decrease a numeric value. Use it for product quantities, guest counts, ticket selections, or any input that must stay within a defined range.
 
-You could use the CountController widget to set the quantity of any product when buying in an e-commerce app.
+## Adding a Count Controller Widget
 
-:::tip[Widget State]
-Before diving into form widgets, check out our guide on [**Widget States**](../../../../ff-concepts/state-management/widget-state.md) to efficiently manage the state and behavior of your form elements.
-:::
+To add a Count Controller widget:
 
-## Adding CountController to your project
+1. Add the **Count Button** widget from **Form Elements** in the **Widget Palette**.
+2. To configure the count behavior, use the following options:
 
-Here's an example of how you can use a CountController widget in your project:
+    - **Initial Count:** Sets the value displayed when the widget loads. The default is `0`. To set this value dynamically, select **Set from Variable**.
+    - **Step Size:** Sets how much the value increases or decreases with each tap. The default is `1`.
+    - **Minimum:** Sets the lowest value users can select.
+    - **Maximum:** Sets the highest value users can select.
 
-1. First, drag the **CountController** widget from the **Form Elements** tab (in the Widget Panel) or add it directly from the widget tree.
-2. Move to the properties panel (in the right) and scroll down to the **Count Controller Properties**.
-3. The number on CountController appears as soon as it is loaded, called the Initial Count, 0 by default. To change this initial count, enter the value in the **Initial Count** input box. You can also set this value dynamically by having it **Set from Variable**. This can be used to display the default quantity of a product in an E-commerce app.
-4. The Step Size property sets the value by which the count should be increased or decreased. The default value is 1. To change this, enter the value in the **Step Size** input box.
-5. To allow users to set the valid count or quantity, you can limit the CountController range (min and max count) by specifying the value in the **Minimum** and **Maximum** input boxes.
+For an inventory selector, you might set **Initial Count**, **Step Size**, and **Minimum** to `1`, and set **Maximum** to the available stock.
 
 <div style={{
     position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
+    paddingBottom: 'calc(56.67989417989418% + 41px)',
     height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/QxOXTN0E8F6GO608EikB?embed&show_copy_link=true"
-        title=""
+    width: '100%'
+}}>
+    <iframe
+        src="https://demo.arcade.software/qg0cKxDggM5svqebUoK4?embed&show_copy_link=true"
+        title="Add and configure a Count Controller widget"
         style={{
             position: 'absolute',
             top: 0,
@@ -41,7 +40,7 @@ Here's an example of how you can use a CountController widget in your project:
             height: '100%',
             colorScheme: 'light'
         }}
-        frameborder="0"
+        frameBorder="0"
         loading="lazy"
         webkitAllowFullScreen
         mozAllowFullScreen
@@ -49,108 +48,41 @@ Here's an example of how you can use a CountController widget in your project:
         allow="clipboard-write">
     </iframe>
 </div>
+
 <p></p>
 
-## Trigger action on count change
+## Accessing the Current Count
 
-Let's see how to trigger an action when the count changes on this widget. This is helpful when you want to update the latest count in your backend (make API call, create/update Firestore document) as the count changes.
+The Count Controller stores its latest value in its [**widget state**](../../../../ff-concepts/state-management/widget-state.md). To use the value in another widget or action, select **Set from Variable > Widget State > [Count Controller name]**.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/HmJC32jKu1Ha2DvUDGQX?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+You can use this value to calculate a total price, control conditional visibility, pass a quantity to an action, or save the selection to your backend.
 
-To do so:
+## Triggering an Action When the Count Changes
 
-1. Select **CountController**, select **Actions** from the Properties panel (the right menu), and click **+ Add Action**.
-2. You will notice that the **Type of Action** (aka callback) is already set to **On Count Changed**. That means actions added under this will be called whenever the count changes.
-3. Now you can add any action here.
+Use the **On Count Changed** trigger to run an action whenever the user increases or decreases the value:
 
-Here is an example of updating the count in an [app state variable](../../../../resources/data-representation/app-state).
+1. Select the Count Controller widget and open the **Actions** tab in the **Properties Panel**.
+2. Select **On Count Changed** and add the action you want to run.
+3. Use the Count Controller's current widget state value wherever the action requires the latest count.
 
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/55UjuTZTlCQEI1ZibV7R?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+## Customizing a Count Controller Widget
 
-## Customizing CountController
+Select the Count Controller in the **Widget Tree** or on the canvas, then use the following sections in the **Properties Panel**.
 
-The Properties Panel can be used to customize the appearance and behavior of your widget.
+### Style Properties
 
-### Customizing icon
+- **Decrement Icon:** Select the icon used to decrease the count, then set its **Icon Size** and **Icon Color**.
+- **Increment Icon:** Select the icon used to increase the count, then set its **Icon Size** and **Icon Color**.
+- **Disabled Icon Color:** Sets the color of the decrement icon when the count reaches its minimum value and the increment icon when it reaches its maximum value.
+- **Count Text Style:** Controls the appearance of the count using **Theme Text Style**, **Font Family**, **Font Weight**, **Font Size**, **Text Color**, **Line Height**, **Letter Spacing**, and **Text Align**.
 
-To customize the decrement icon:
+### Container Properties
 
-1. Select the **CountController** widget from the widget tree or the canvas area.
-2. Move to the properties panel, and find the **Style Properties** section.
-3. To change the icon, click on the already selected icon and then search and select the new icon.
-4. To change the icon size, enter the value in the **Icon Size** property.
-5. To change the icon color, find the **Icon Color** property, click on the box next to the selected color, select the color, and click **Use Color** or click on **Unset** and enter a Hex Code directly.
-
-<div style={{
-    position: 'relative',
-    paddingBottom: 'calc(56.67989417989418% + 41px)', // Keeps the aspect ratio and additional padding
-    height: 0,
-    width: '100%'}}>
-    <iframe 
-        src="https://demo.arcade.software/YBrT2IY4lwjbYPOpSRif?embed&show_copy_link=true"
-        title=""
-        style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            colorScheme: 'light'
-        }}
-        frameborder="0"
-        loading="lazy"
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        allow="clipboard-write">
-    </iframe>
-</div>
-<p></p>
+- **Shape:** Displays the Count Controller in a rectangular or circular container.
+- **Width and Height:** Sets the container dimensions using pixels or percentages.
+- **Fill Color:** Sets the container's background color.
+- **Border Color:** Sets the container border color.
+- **Border Radius:** Rounds the container corners. You can apply the same value to every corner or configure each corner separately.
+- **Border Width:** Sets the thickness of the container border.
+- **Elevation:** Adds a shadow beneath the container to create visual depth.
+- **Gradient:** Applies a gradient to the container background.

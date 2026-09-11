@@ -8,31 +8,7 @@ sidebar_position: 0
 
 
 # Subscriptions
-This section provides information on free trials, plan changes, and other subscription-related questions.
-
-## Free Trials
-
-The first paid plan you purchase will come with a free 14-day trial. For 14 days, you will have access to the features of the plan you selected before you are charged. If you can cancel your subscription during this 14-day trial, you will not be charged.
-
-:::info
-
-The 14-day trial applies only to your first paid plan. Any later plan (Basic, Growth, or Business) won’t include a trial, even if the first plan is still in trial.
-
-:::
-
-### How do I start a free trial?
-
-To start a free trial, please follow these steps:
-
-1. Navigate to [app.flutterflow.io](http://app.flutterflow.io/)
-2. Click the “Create Account” text and enter your name, email address, and password. Then press the “Create Account” button to create your account.
-3. Validate your email address by clicking on the link in the message sent to the email address you provided.
-4. To start trialing on a **Basic** plan, click on your profile picture in the bottom left corner, then click “Upgrade Plan.” Select “Start Free Trial” and fill out and submit the form with your payment information.
-5. To instead start trialing on a **Growth** or **Business** plan, click “My Team”, and create a team. Then press the “Subscribe” button, select your desired plan and number of seats, click on “Start Free Trial”, and fill out and submit the form with your payment information.
-
-### What happens at the end of the trial period?
-
-At the end of your trial period, your payment method will be charged. You can cancel at any time during the trial period.
+This section provides information on plan changes and other subscription-related questions.
 
 ## Upgrade Plan
 
