@@ -9,6 +9,7 @@ keywords: [Query Collection, Backend Query, Backend Logic, Control Flow, Flutter
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
 # Query Collection / Table
 
 Quering Firestore Collection or Supabase Table helps you to retrieve a record (or a list of records) automatically whenever a
@@ -22,37 +23,31 @@ be used to update any widget present inside.
 
 ## Defining the Query
 
-Go to your project page on FlutterFlow and follow the steps below to define a **Query Collection**
-backend query:
+To add a Firestore collection or Supabase table query:
 
-1. Select the **widget** (or page) on which to apply the query.
-2. Select **Backend Query** from
-   the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) (the right menu).
-3. Select the **Query Type** as ***Query Collection***.
-4. Choose the Firestore **Collection** to use for performing the query.
-5. Under **Query Type**, select either ***List of Documents*** (returns a list of document
-   references) or ***Single Document*** (returns only one document reference).
-6. If you have selected the **List of Documents**in the previous step, you can set a **Limit** to
-   the maximum number of documents returned.
-7. If you want to apply any **filter** for retrieving the documents, click **+ Filter** button.
-   Select a **Field Name** that you want to use as the filter, choose a **Relation** (
-   eg, `Equal To`, `Greater Than`), and then select the **Value Source** (either as
-   a `Specific Value` or `From Variable`) with which the relation is to be checked.
-8. You can also set the **order** in which the documents should be returned, click **+ Order By**
-   button. Select a **Field Name** to be used for ordering, and choose the **Order** to be
-   either `Increasing` or `Decreasing`.
-9. Below are some optional settings that you can configure based on your requirements:
-    - **Single Time Query**: When this is disabled, the query results will automatically refresh whenever documents or rows are created, updated, or deleted. However, for **Supabase**, this option is enabled by default, meaning the query will run only once. To enable real-time updates, you must turn it off.
-    - **Ignore Empty Filter Values**: Disabled by default, meaning the query will attempt to find documents with empty text fields if any filter value is empty. When enabled, the query will ignore fields with empty filter values instead.
-    - **Filter on Null Values**: By default, if any filter value is null, the query will ignore that filter. Enabling this option will include null filters in the query.
-    - **Enable Infinite Scroll**: To implement infinite scrolling, enable this option and follow the instructions here.
-10. Click **Confirm**.
-11. If the selected query returns a list of documents and if it's applied to any flexible widget (like `Column`, `Row`, or `ListView`) then FlutterFlow will generate the children widgets
-    dynamically. A dialog will be displayed with a similar message, click **Confirm**.
+1. Select the widget or page where you want to run the query.
+2. Open **Backend Query** from the [Properties Panel](../../../../intro/ff-ui/builder.md#properties-panel) and click **Add Query**.
+3. Choose the backend source and records to return:
+   - **Firestore:** Set the query type to **Query Collection**, select a **Collection**, then choose **List of Documents** or **Single Document**.
+   - **Supabase:** Set the query type to **Supabase Query**, select a **Table**, then choose **List of Rows** or **Single Row**.
+4. Configure any filters required by the query:
+   - **Firestore:** Under **Filters**, click **+ Filter**, then select a field, relation, and comparison value.
+   - **Supabase:** Under **Filters**, click **+ Add Filter**, then select a field, relation, and comparison value. To use the [full-text search](https://supabase.com/docs/guides/database/full-text-search), set **Relation** to **Search (Full-Text)**. Then choose a **Search Type**:
+      - **Websearch (Recommended):** Supports user-friendly search syntax, including quoted phrases, `OR`, and excluding terms with a minus sign (`-`).
+      - **All Words:** Returns rows that contain every search term.
+      - **Phrase:** Returns rows that contain the search terms as a phrase.
+      - **Raw tsquery:** Accepts PostgreSQL text-search operators for advanced queries.
 
-:::info
-The instructions to query a Supabase table are almost the same, except that for **Query Type**, you should select **Supabase Query**.
-:::
+      You can optionally, set **Language**, leave it empty to use the database's default configuration. Under **Value**, enter the text you want to find.
+5. Under **Ordering**, click **+ Order By** for Firestore or **+ Add Order** for Supabase. Select the field and choose **Increasing** or **Decreasing**.
+6. Configure the available optional settings:
+   - **Hide Widget If No Match** (Firestore): Hides the queried widget when the query returns no matching documents.
+   - **Ignore Empty Filter Values** (Firestore): Disabled by default, meaning the query will attempt to find documents with empty text fields if any filter value is empty. When enabled, the query will ignore fields with empty filter values instead.
+   - **Filter on Null Values** (Firestore): By default, if any filter value is null, the query will ignore that filter. Enabling this option will include null filters in the query.
+   - [**Enable Infinite Scroll**](../../../ui/widgets/composing-widgets/list-grid.md#infinite-scroll-on-a-list-from-a-firestore-collection-or-supabase-table): Loads list results in pages as the user scrolls. Set the number of records loaded per page using **Page Size**. For Supabase, the table must have a primary key and the query must be ordered by it.
+   - **Listen For Changes** (Firestore): Updates displayed documents when their data changes. This is enabled automatically when infinite scroll is turned on.
+7. Click **Confirm**.
+8. When a list query is applied to a flexible widget such as a **Column**, **Row**, or **ListView**, confirm that you want to generate dynamic children from the returned documents or rows when prompted.
 
 <div style={{
     position: 'relative',
