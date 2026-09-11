@@ -13,7 +13,7 @@ keywords: [App Builder, FlutterFlow, UI, Design]
 On opening the project, you'll see the App Builder, which consists of four main sections: 
 [Navigation Menu](#navigation-menu), [Toolbar](#toolbar), [Canvas](#canvas-area), and [Properties Panel](#properties-panel).
 
-![navigation-menu.avif](imgs/navigation-menu.avif)
+![App Builder](imgs/navigation-menu.avif)
 
 ## Navigation Menu
 
@@ -26,11 +26,12 @@ Here is a list of all the features accessible from the navigation menu:
 3. **Page Selector**: Manage pages, components, and custom code files, and organize them using folders.
 4. **Widget Tree**: Get an overview of all widgets on a selected page.
 5. **Storyboard**: Visualize app's design and navigation.
-6. **Test Mode**: [Test your app](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) in a live debugging environment.
-7. **Firestore**: Create collections and adjust Firestore-related settings.
-8. **Data Types**: Create custom data types for your app.
-9. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
-10. **API Calls**: Define API calls.
+6. **Search**: Search across your project and filter results by Data, Design, State, Code, or Pages & Components.
+7. **Test Mode**: [Test your app](../../testing-deployment-publishing/running-your-app/run-your-app.md#test-mode) in a live debugging environment.
+8. **Firestore**: Create collections and adjust Firestore-related settings.
+9. **Data Types**: Create custom data types for your app.
+10. **App Values**: Manage [App State variables](../../resources/data-representation/app-state.md) and Constants.
+11. **API Calls**: Define API calls.
 12. **Media Assets**: Upload assets for your app and team.
 13. **Cloud Functions**: Write and deploy cloud functions for Firebase.
 14. **Tests**: Add automated tests.
