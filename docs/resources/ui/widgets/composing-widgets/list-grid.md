@@ -3,6 +3,9 @@ title: Lists & Grids
 tags: [Layout Elements]
 sidebar_position: 2
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 In FlutterFlow, `ListView` and `GridView` are versatile widgets designed for displaying lists and grids of elements, respectively. Both are highly customizable and optimized for dynamic content, making them essential for any app that requires scrolling through a collection of items such as images, text, or interactive elements.
 
 ## ListView Widget
@@ -312,25 +315,43 @@ Infinite scroll automatically loads new items as you scroll down the list. It in
 
 Infinite scroll improves the user experience by reducing the initial loading time and loading additional items only when required.
 
-You can enable infinite scroll for items retrieved from two sources:
+You can enable infinite scroll for items retrieved from the following sources:
 
-- [Infinite scroll on a list from a Firestore collection](#infinite-scroll-on-a-list-from-a-firestore-collection)
+- [Infinite scroll on a list from a Firestore collection or Supabase table](#infinite-scroll-on-a-list-from-a-firestore-collection-or-supabase-table)
 - [Infinite scroll on a list from an API call](#infinite-scroll-on-a-list-from-an-api-call)
 
-### Infinite Scroll on a List from a Firestore Collection
+### Infinite Scroll on a List from a Firestore Collection or Supabase Table
 
-In FlutterFlow, you can enable infinite scroll for a list of items retrieved from a Firestore collection.
+You can enable infinite scroll for a ListView that retrieves records from a Firestore collection or a Supabase table. FlutterFlow loads the records in pages and requests the next page as the user scrolls.
 
 To enable infinite scroll:
 
-1. [Query a collection](../../../control-flow/backend-logic/backend-query/query-collection.md) on a ListView (skip if you have already done so).
-2. Select the ListView and open the **Backend Query** section in the properties panel.
-3. Find the configured query and turn on **Enable Infinite Scroll**.
-4. Enabling infinite scroll also enables **Listen For Changes**, which updates displayed items when their data changes. It does not update the list when items are added or deleted. If you do not need real-time updates, disable this property.
-5. Items are loaded in chunks called pages. The **Page Size** property determines how many items are loaded on each page. Its default value is 25. The ListView loads the first page when it becomes visible and loads subsequent pages as you scroll. Adjust this value according to your requirements.
-6. Click **Save**.
+1. Select the ListView and open the **Backend Query** section in the **Properties Panel**.
+2. Add a [collection or table query](../../../control-flow/backend-logic/backend-query/query-collection.md), or open an existing one:
+   - For Firestore, select **Query Collection** and **List of Documents**.
+   - For Supabase, select **Supabase Query** and **List of Rows**.
+3. Configure any required filters.
+4. Configure the ordering:
+   - For Firestore, add any ordering required for the list.
+   - For Supabase, ensure the imported table schema includes a primary key. Under **Ordering**, add an order using the primary-key field, such as `id`, and select **Increasing** or **Decreasing**. This gives FlutterFlow a stable, unique order for loading each page and prevents rows from repeating or being skipped.
+5. Turn on **Enable Infinite Scroll**.
+6. Set the **Page Size**. This determines how many records FlutterFlow loads per page. The default value is 25.
+7. Click **Confirm**.
 
-![enable-infinite-list](imgs/enable-infinite-list.avif)
+For Firestore queries, enabling infinite scroll also enables **Listen For Changes**. This updates documents already displayed when their data changes, but it does not add or remove list items when documents are created or deleted. Disable **Listen For Changes** if real-time updates are not required.
+
+<Tabs>
+<TabItem value="firestore" label="Firestore" default>
+
+![A Firestore collection query with infinite scroll enabled.](imgs/enable-infinite-list.avif)
+
+</TabItem>
+<TabItem value="supabase" label="Supabase">
+
+![A Supabase List of Rows query ordered by its primary key with infinite scroll enabled.](imgs/enable-infinite-list-supabase.avif)
+
+</TabItem>
+</Tabs>
 
 ### Infinite Scroll on a List from an API Call
 
